@@ -1,0 +1,97 @@
+{
+  "source": "Safaricom M-Pesa Tariff Schedule",
+  "lastUpdated": "2024-01-01",
+  "transactionTypes": {
+    "sendRegistered": {
+      "label": "Send Money (to Registered User)",
+      "bands": [
+        { "min": 1, "max": 49, "fee": 0 },
+        { "min": 50, "max": 100, "fee": 0 },
+        { "min": 101, "max": 500, "fee": 7 },
+        { "min": 501, "max": 1000, "fee": 13 },
+        { "min": 1001, "max": 1500, "fee": 23 },
+        { "min": 1501, "max": 2500, "fee": 33 },
+        { "min": 2501, "max": 3500, "fee": 53 },
+        { "min": 3501, "max": 5000, "fee": 57 },
+        { "min": 5001, "max": 7500, "fee": 78 },
+        { "min": 7501, "max": 10000, "fee": 90 },
+        { "min": 10001, "max": 15000, "fee": 100 },
+        { "min": 15001, "max": 20000, "fee": 105 },
+        { "min": 20001, "max": 25000, "fee": 108 },
+        { "min": 25001, "max": 30000, "fee": 108 },
+        { "min": 30001, "max": 35000, "fee": 108 },
+        { "min": 35001, "max": 50000, "fee": 108 },
+        { "min": 50001, "max": 150000, "fee": 108 }
+      ]
+    },
+    "sendUnregistered": {
+      "label": "Send Money (to Unregistered User)",
+      "bands": [
+        { "min": 101, "max": 500, "fee": 45 },
+        { "min": 501, "max": 1000, "fee": 49 },
+        { "min": 1001, "max": 1500, "fee": 59 },
+        { "min": 1501, "max": 2500, "fee": 69 },
+        { "min": 2501, "max": 3500, "fee": 89 },
+        { "min": 3501, "max": 5000, "fee": 99 },
+        { "min": 5001, "max": 7500, "fee": 114 },
+        { "min": 7501, "max": 10000, "fee": 130 },
+        { "min": 10001, "max": 15000, "fee": 145 },
+        { "min": 15001, "max": 20000, "fee": 153 },
+        { "min": 20001, "max": 25000, "fee": 163 },
+        { "min": 25001, "max": 30000, "fee": 163 },
+        { "min": 30001, "max": 35000, "fee": 163 }
+      ]
+    },
+    "withdrawAgent": {
+      "label": "Withdraw at Agent",
+      "bands": [
+        { "min": 50, "max": 100, "fee": 11 },
+        { "min": 101, "max": 500, "fee": 29 },
+        { "min": 501, "max": 1000, "fee": 29 },
+        { "min": 1001, "max": 1500, "fee": 29 },
+        { "min": 1501, "max": 2500, "fee": 29 },
+        { "min": 2501, "max": 3500, "fee": 52 },
+        { "min": 3501, "max": 5000, "fee": 69 },
+        { "min": 5001, "max": 7500, "fee": 87 },
+        { "min": 7501, "max": 10000, "fee": 115 },
+        { "min": 10001, "max": 15000, "fee": 167 },
+        { "min": 15001, "max": 20000, "fee": 185 },
+        { "min": 20001, "max": 25000, "fee": 197 },
+        { "min": 25001, "max": 30000, "fee": 220 },
+        { "min": 30001, "max": 35000, "fee": 300 },
+        { "min": 35001, "max": 50000, "fee": 300 },
+        { "min": 50001, "max": 150000, "fee": 300 }
+      ]
+    },
+    "withdrawATM": {
+      "label": "Withdraw at ATM",
+      "bands": [
+        { "min": 200, "max": 2500, "fee": 35 },
+        { "min": 2501, "max": 5000, "fee": 65 },
+        { "min": 5001, "max": 10000, "fee": 100 },
+        { "min": 10001, "max": 20000, "fee": 200 }
+      ]
+    },
+    "buyGoods": {
+      "label": "Buy Goods (Lipa Na M-Pesa)",
+      "bands": [
+        { "min": 1, "max": 150000, "fee": 0, "note": "Free for all amounts" }
+      ]
+    },
+    "payBill": {
+      "label": "Pay Bill",
+      "bands": [
+        { "min": 1, "max": 150000, "fee": 0, "note": "Free for all amounts" }
+      ]
+    }
+  },
+  "limits": {
+    "maxBalance": 300000,
+    "maxTransactionPerDay": 300000,
+    "maxSingleTransaction": 150000,
+    "minSendRegistered": 1,
+    "minSendUnregistered": 101,
+    "minWithdrawAgent": 50,
+    "minWithdrawATM": 200
+  }
+}

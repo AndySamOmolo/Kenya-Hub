@@ -1,0 +1,128 @@
+{
+  "source": "Kenya Institute of Curriculum Development (KICD)",
+  "lastUpdated": "2025-01-01",
+  "levels": [
+    {
+      "id": "pp",
+      "name": "Pre-Primary",
+      "grades": ["PP1", "PP2"],
+      "ageRange": "4–5 years",
+      "duration": "2 years",
+      "previousSystem": "Nursery / KG",
+      "learningAreas": [
+        { "name": "Language Activities", "description": "Developing communication skills in English and Kiswahili through stories, songs, and play" },
+        { "name": "Mathematical Activities", "description": "Number recognition, counting, sorting, and basic spatial awareness" },
+        { "name": "Environmental Activities", "description": "Exploring the immediate environment — plants, animals, weather, and community" },
+        { "name": "Psychomotor & Creative Activities", "description": "Art, craft, music, movement, and physical development" },
+        { "name": "Religious Education Activities", "description": "Moral values, simple Bible/Quran stories, and social responsibility" }
+      ]
+    },
+    {
+      "id": "lower-primary",
+      "name": "Lower Primary",
+      "grades": ["Grade 1", "Grade 2", "Grade 3"],
+      "ageRange": "6–8 years",
+      "duration": "3 years",
+      "previousSystem": "Standard 1–3 (8-4-4)",
+      "learningAreas": [
+        { "name": "Literacy", "description": "Reading and writing skills in mother tongue / language of the catchment area" },
+        { "name": "English Language", "description": "Listening, speaking, reading, and writing in English" },
+        { "name": "Kiswahili Language / KSL", "description": "Kiswahili literacy and communication; Kenyan Sign Language for learners with hearing impairment" },
+        { "name": "Mathematics", "description": "Numbers, measurement, geometry, and data handling" },
+        { "name": "Environmental Activities", "description": "Science and social studies integrated — health, safety, environment" },
+        { "name": "Hygiene & Nutrition", "description": "Personal hygiene, healthy eating, disease prevention" },
+        { "name": "Religious Education (CRE/IRE/HRE)", "description": "Christian, Islamic, or Hindu religious education" },
+        { "name": "Creative Arts", "description": "Art, craft, music, and performing arts" },
+        { "name": "Physical & Health Education", "description": "Games, sports, and physical fitness" }
+      ]
+    },
+    {
+      "id": "upper-primary",
+      "name": "Upper Primary",
+      "grades": ["Grade 4", "Grade 5", "Grade 6"],
+      "ageRange": "9–11 years",
+      "duration": "3 years",
+      "previousSystem": "Standard 4–6 (8-4-4)",
+      "learningAreas": [
+        { "name": "English Language", "description": "Advanced reading comprehension, composition, grammar" },
+        { "name": "Kiswahili Language / KSL", "description": "Kiswahili composition, comprehension, and grammar" },
+        { "name": "Mathematics", "description": "Fractions, decimals, algebra basics, geometry, data representation" },
+        { "name": "Science & Technology", "description": "Living things, matter, energy, and basic technology" },
+        { "name": "Social Studies", "description": "Kenyan history, geography, government, citizenship" },
+        { "name": "Religious Education (CRE/IRE/HRE)", "description": "Deeper study of religious texts and moral reasoning" },
+        { "name": "Creative Arts & Sports", "description": "Visual arts, performing arts, games, and athletics" },
+        { "name": "Agriculture", "description": "Basic farming practices, soil, crops, and livestock" },
+        { "name": "Home Science", "description": "Nutrition, cooking, clothing, care of the home" },
+        { "name": "Pre-Technical Studies", "description": "Introduction to tools, materials, design, and construction" }
+      ]
+    },
+    {
+      "id": "jss",
+      "name": "Junior Secondary School (JSS)",
+      "grades": ["Grade 7", "Grade 8", "Grade 9"],
+      "ageRange": "12–14 years",
+      "duration": "3 years",
+      "previousSystem": "Standard 7–8 / Form 1 (8-4-4)",
+      "learningAreas": [
+        { "name": "English Language", "description": "Literature, advanced grammar, public speaking, writing" },
+        { "name": "Kiswahili Language / KSL", "description": "Kiswahili literature, advanced grammar, creative writing" },
+        { "name": "Mathematics", "description": "Algebra, trigonometry basics, statistics, probability" },
+        { "name": "Integrated Science", "description": "Biology, Chemistry, Physics integrated into one subject" },
+        { "name": "Social Studies", "description": "History, geography, government, economics at regional and continental level" },
+        { "name": "Pre-Technical & Pre-Career Education", "description": "Exploration of career pathways through practical subjects" },
+        { "name": "Religious Education (CRE/IRE/HRE)", "description": "Advanced religious studies and ethical reasoning" },
+        { "name": "Business Studies", "description": "Entrepreneurship, trade, financial literacy" },
+        { "name": "Agriculture", "description": "Crop and animal husbandry, agricultural economics" },
+        { "name": "Computer Science", "description": "Digital literacy, coding basics, information technology" },
+        { "name": "Creative Arts & Sports", "description": "Specialized arts and competitive sports" },
+        { "name": "Home Science", "description": "Advanced nutrition, textiles, consumer education" },
+        { "name": "Physical Education", "description": "Sports science, fitness, health education" }
+      ]
+    },
+    {
+      "id": "sss",
+      "name": "Senior Secondary School (SSS)",
+      "grades": ["Grade 10", "Grade 11", "Grade 12"],
+      "ageRange": "15–17 years",
+      "duration": "3 years",
+      "previousSystem": "Form 2–4 (8-4-4)",
+      "note": "Students choose ONE of three pathways based on aptitude and career interest.",
+      "pathways": [
+        {
+          "name": "STEM Pathway",
+          "description": "Science, Technology, Engineering, and Mathematics",
+          "coreSubjects": ["Mathematics", "English", "Kiswahili"],
+          "electiveSubjects": ["Physics", "Chemistry", "Biology", "Computer Science", "Agriculture", "Mathematics (Advanced)"]
+        },
+        {
+          "name": "Arts & Sports Science Pathway",
+          "description": "Creative arts, performing arts, and sports science",
+          "coreSubjects": ["Mathematics", "English", "Kiswahili"],
+          "electiveSubjects": ["Fine Art", "Music", "Theatre Arts", "Sports Science", "Film & Media"]
+        },
+        {
+          "name": "Social Sciences Pathway",
+          "description": "Humanities, business, and social studies",
+          "coreSubjects": ["Mathematics", "English", "Kiswahili"],
+          "electiveSubjects": ["History", "Geography", "Business Studies", "Economics", "Government", "Religious Studies"]
+        }
+      ]
+    }
+  ],
+  "gradeAgeMapping": [
+    { "grade": "PP1", "turnsAge": 4, "level": "Pre-Primary", "previousEquivalent": "Nursery" },
+    { "grade": "PP2", "turnsAge": 5, "level": "Pre-Primary", "previousEquivalent": "KG / Pre-Unit" },
+    { "grade": "Grade 1", "turnsAge": 6, "level": "Lower Primary", "previousEquivalent": "Standard 1" },
+    { "grade": "Grade 2", "turnsAge": 7, "level": "Lower Primary", "previousEquivalent": "Standard 2" },
+    { "grade": "Grade 3", "turnsAge": 8, "level": "Lower Primary", "previousEquivalent": "Standard 3" },
+    { "grade": "Grade 4", "turnsAge": 9, "level": "Upper Primary", "previousEquivalent": "Standard 4" },
+    { "grade": "Grade 5", "turnsAge": 10, "level": "Upper Primary", "previousEquivalent": "Standard 5" },
+    { "grade": "Grade 6", "turnsAge": 11, "level": "Upper Primary", "previousEquivalent": "Standard 6" },
+    { "grade": "Grade 7", "turnsAge": 12, "level": "Junior Secondary (JSS)", "previousEquivalent": "Standard 7" },
+    { "grade": "Grade 8", "turnsAge": 13, "level": "Junior Secondary (JSS)", "previousEquivalent": "Standard 8" },
+    { "grade": "Grade 9", "turnsAge": 14, "level": "Junior Secondary (JSS)", "previousEquivalent": "Form 1" },
+    { "grade": "Grade 10", "turnsAge": 15, "level": "Senior Secondary (SSS)", "previousEquivalent": "Form 2" },
+    { "grade": "Grade 11", "turnsAge": 16, "level": "Senior Secondary (SSS)", "previousEquivalent": "Form 3" },
+    { "grade": "Grade 12", "turnsAge": 17, "level": "Senior Secondary (SSS)", "previousEquivalent": "Form 4" }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "source": "Communications Authority of Kenya (CA) — Number Allocation Plan",
+  "lastUpdated": "2025-01-01",
+  "countryCode": "+254",
+  "networks": [
+    {
+      "name": "Safaricom",
+      "prefixes": [
+        "0700", "0701", "0702", "0703", "0704", "0705", "0706", "0707", "0708", "0709",
+        "0710", "0711", "0712", "0713", "0714", "0715", "0716", "0717", "0718", "0719",
+        "0720", "0721", "0722", "0723", "0724", "0725", "0726", "0727", "0728", "0729",
+        "0740", "0741", "0742", "0743", "0745",
+        "0746", "0748",
+        "0757", "0758", "0759",
+        "0768", "0769",
+        "0790", "0791", "0792", "0793", "0794", "0795", "0796", "0797", "0798", "0799",
+        "0110", "0111", "0112", "0113", "0114", "0115", "0116", "0117", "0118", "0119"
+      ],
+      "color": "#4CAF50",
+      "ussdCodes": [
+        { "code": "*100#", "description": "Check balance" },
+        { "code": "*234#", "description": "M-Pesa menu" },
+        { "code": "*544#", "description": "Data bundles" },
+        { "code": "*456#", "description": "Customer care" },
+        { "code": "*126#", "description": "Bonga points" },
+        { "code": "*141#", "description": "Reverse call" }
+      ]
+    },
+    {
+      "name": "Airtel Kenya",
+      "prefixes": [
+        "0730", "0731", "0732", "0733", "0734", "0735", "0736", "0737", "0738", "0739",
+        "0750", "0751", "0752", "0753", "0754", "0755", "0756",
+        "0780", "0781", "0782", "0783", "0784", "0785", "0786", "0787", "0788", "0789",
+        "0100", "0101", "0102", "0103", "0104", "0105", "0106", "0107", "0108", "0109"
+      ],
+      "color": "#E53935",
+      "ussdCodes": [
+        { "code": "*334#", "description": "Check balance" },
+        { "code": "*130#", "description": "Airtel Money" },
+        { "code": "*544#", "description": "Data bundles" },
+        { "code": "*100#", "description": "Me2U credit transfer" }
+      ]
+    },
+    {
+      "name": "Telkom Kenya",
+      "prefixes": [
+        "0770", "0771", "0772", "0773", "0774", "0775", "0776", "0777", "0778", "0779",
+        "0120", "0121", "0122", "0123", "0124", "0125", "0126", "0127", "0128", "0129"
+      ],
+      "color": "#2196F3",
+      "ussdCodes": [
+        { "code": "*100#", "description": "Check balance" },
+        { "code": "*234#", "description": "T-Kash (mobile money)" },
+        { "code": "*544#", "description": "Data bundles" }
+      ]
+    },
+    {
+      "name": "Faiba (Jamii Telecoms)",
+      "prefixes": [
+        "0747"
+      ],
+      "color": "#FF9800",
+      "ussdCodes": [
+        { "code": "*111#", "description": "Check balance" },
+        { "code": "*544#", "description": "Data bundles" }
+      ]
+    }
+  ],
+  "emergencyNumbers": [
+    { "number": "999", "service": "Police Emergency" },
+    { "number": "112", "service": "Emergency (all networks)" },
+    { "number": "114", "service": "Child Helpline" },
+    { "number": "0800 723 253", "service": "Kenya Red Cross" },
+    { "number": "0722 178 177", "service": "St John Ambulance" }
+  ],
+  "internationalDialing": {
+    "fromKenya": "Replace leading 0 with +254 when calling from abroad. Example: 0722 123 456 → +254 722 123 456",
+    "toKenya": "Dial your country's exit code + 254 + number (without leading 0). Example from UK: 00 254 722 123 456"
+  }
+}

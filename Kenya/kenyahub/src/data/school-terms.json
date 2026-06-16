@@ -1,0 +1,78 @@
+{
+  "source": "Ministry of Education, Kenya",
+  "lastUpdated": "2025-01-01",
+  "years": {
+    "2025": {
+      "terms": [
+        {
+          "term": 1,
+          "name": "Term 1",
+          "openingDate": "2025-01-06",
+          "closingDate": "2025-04-04",
+          "midTermBreak": { "start": "2025-02-17", "end": "2025-02-21" },
+          "weeks": 13,
+          "notes": "Schools open for first term. KCPE/KCSE registration begins."
+        },
+        {
+          "term": 2,
+          "name": "Term 2",
+          "openingDate": "2025-04-28",
+          "closingDate": "2025-08-01",
+          "midTermBreak": { "start": "2025-06-09", "end": "2025-06-13" },
+          "weeks": 14,
+          "notes": "Madaraka Day (June 1) falls within this term."
+        },
+        {
+          "term": 3,
+          "name": "Term 3",
+          "openingDate": "2025-08-25",
+          "closingDate": "2025-10-31",
+          "midTermBreak": null,
+          "weeks": 10,
+          "notes": "Shortest term. KCSE exams typically begin late October. KCPE in late October."
+        }
+      ],
+      "holidays": [
+        { "start": "2025-04-05", "end": "2025-04-27", "name": "April Holiday (Term 1-2 break)", "weeks": 3 },
+        { "start": "2025-08-02", "end": "2025-08-24", "name": "August Holiday (Term 2-3 break)", "weeks": 3 },
+        { "start": "2025-11-01", "end": "2026-01-04", "name": "December Holiday (long break)", "weeks": 9 }
+      ]
+    },
+    "2026": {
+      "terms": [
+        {
+          "term": 1,
+          "name": "Term 1",
+          "openingDate": "2026-01-05",
+          "closingDate": "2026-04-03",
+          "midTermBreak": { "start": "2026-02-16", "end": "2026-02-20" },
+          "weeks": 13,
+          "notes": "First year with full Senior Secondary School (SSS) cohort."
+        },
+        {
+          "term": 2,
+          "name": "Term 2",
+          "openingDate": "2026-04-27",
+          "closingDate": "2026-07-31",
+          "midTermBreak": { "start": "2026-06-08", "end": "2026-06-12" },
+          "weeks": 14,
+          "notes": "Madaraka Day (June 1) falls within this term."
+        },
+        {
+          "term": 3,
+          "name": "Term 3",
+          "openingDate": "2026-08-24",
+          "closingDate": "2026-10-30",
+          "midTermBreak": null,
+          "weeks": 10,
+          "notes": "National exams period."
+        }
+      ],
+      "holidays": [
+        { "start": "2026-04-04", "end": "2026-04-26", "name": "April Holiday (Term 1-2 break)", "weeks": 3 },
+        { "start": "2026-08-01", "end": "2026-08-23", "name": "August Holiday (Term 2-3 break)", "weeks": 3 },
+        { "start": "2026-10-31", "end": "2027-01-03", "name": "December Holiday (long break)", "weeks": 9 }
+      ]
+    }
+  }
+}
