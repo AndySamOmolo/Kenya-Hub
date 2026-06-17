@@ -55,7 +55,7 @@ export default function Navbar() {
                 </button>
 
                 {toolsOpen && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[720px] rounded-2xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/30 p-6 animate-fade-in-up">
+                  <div className="absolute top-full right-0 mt-2 w-[720px] rounded-2xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/30 p-6 animate-fade-in-up">
                     <div className="maasai-border-top rounded-2xl" />
 
                     <div className="grid grid-cols-3 gap-x-6 gap-y-4 pt-1">
