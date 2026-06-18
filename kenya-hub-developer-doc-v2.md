@@ -71,7 +71,7 @@ KenyaHub is a Kenya-first web platform and Android APK providing practical tools
 | Language | TypeScript | Safety across all packages |
 | Styling | Tailwind CSS | Mobile-first, fast iteration |
 | Components | shadcn/ui | Accessible, copy-paste |
-| DB | Supabase (PostgreSQL) | Free tier, built-in auth, REST API |
+| DB | Appwrite | Free tier, built-in auth, Document DB, REST API |
 | Blog CMS | MDX files in `/content/` | Version-controlled, no cost |
 | Maps | Leaflet.js + OpenStreetMap | 100% free tile server |
 | Charts | Chart.js or Recharts | Lightweight, AdSense-compatible |
@@ -88,9 +88,8 @@ KenyaHub is a Kenya-first web platform and Android APK providing practical tools
 ### Infrastructure — All Free Tier
 | Service | Use |
 |---------|-----|
-| Vercel | Hosting + Edge Functions |
-| Supabase | Database + Auth |
-| Cloudflare | DNS + CDN + DDoS |
+| Cloudflare Pages | Hosting + CDN + DNS + DDoS |
+| Appwrite | Database + Auth |
 | GitHub Actions | CI/CD + cron scrapers |
 
 ---
@@ -140,7 +139,7 @@ kenyahub/
 │   │   │   └── ads/
 │   │   │       └── AdSenseSlot.tsx
 │   │   ├── lib/
-│   │   │   ├── supabase.ts
+│   │   │   ├── appwrite.ts
 │   │   │   ├── tools-registry.ts     ← Central list of all tools + metadata
 │   │   │   └── scrapers/
 │   │   │       ├── kplc.ts
@@ -1277,7 +1276,7 @@ Number plate (new): KES 3,000
 **Keywords:** "NHIF accredited hospitals Kenya", "NHIF hospital near me", "NHIF clinic Nairobi"
 **Data Source:** NHIF accredited providers list (nhif.or.ke — downloadable PDF, free)
 
-**Implementation:** Parse quarterly NHIF hospital PDF → store in Supabase → searchable by county, subcounty, and level (Level 2 dispensary → Level 6 national referral hospital).
+**Implementation:** Parse quarterly NHIF hospital PDF → store in Appwrite → searchable by county, subcounty, and level (Level 2 dispensary → Level 6 national referral hospital).
 
 ---
 
@@ -1943,7 +1942,7 @@ on:
 ```typescript
 // scripts/scrape-kplc-outages.ts
 import * as cheerio from 'cheerio';
-import { createClient } from '@supabase/supabase-js';
+import { Client, Databases, ID } from 'node-appwrite';
 
 const KPLC_URL = 'https://www.kplc.co.ke/category/view/50/planned-outages';
 
@@ -2022,13 +2021,16 @@ function inferRegion(title: string, text: string): string {
 }
 
 async function upsertOutages(outages: KPLCOutage[]) {
-  const supabase = createClient(
-    process.env.SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_KEY!
-  );
+  const client = new Client()
+    .setEndpoint(process.env.APPWRITE_ENDPOINT!)
+    .setProject(process.env.APPWRITE_PROJECT_ID!)
+    .setKey(process.env.APPWRITE_API_KEY!);
+  
+  const databases = new Databases(client);
 
   for (const o of outages) {
-    await supabase.from('power_outages').upsert({
+    // Note: Use Appwrite's query to check for existence and then create/update
+    await databases.createDocument('DATABASE_ID', 'power_outages', ID.unique(), {
       title: o.title,
       outage_date: o.date.toISOString().split('T')[0],
       start_time: o.startTime,
@@ -2038,7 +2040,7 @@ async function upsertOutages(outages: KPLCOutage[]) {
       raw_text: o.rawText,
       source_url: o.sourceUrl,
       is_active: o.date >= new Date(),
-    }, { onConflict: 'title,outage_date' });
+    });
   }
 }
 ```
@@ -2090,8 +2092,11 @@ async function scrapeFuelPrices() {
     };
   }).filter(p => !isNaN(p.petrol));
 
-  // Step 4: Insert to Supabase
-  await supabase.from('fuel_prices').insert(prices);
+  // Step 4: Insert to Appwrite
+  // Assuming databases initialized as in kplc scraper
+  for (const p of prices) {
+    await databases.createDocument('DATABASE_ID', 'fuel_prices', ID.unique(), p);
+  }
 }
 ```
 
@@ -2389,34 +2394,42 @@ Capacitor wraps the Next.js PWA into a native Android shell. ~98% code reuse.
 ### Push Notifications for KPLC
 
 When a new outage is scraped:
-1. Scraper upserts to Supabase
-2. Supabase Edge Function triggers
-3. Edge Function queries users subscribed to affected areas
+1. Scraper upserts to Appwrite
+2. Appwrite Function triggers
+3. Function queries users subscribed to affected areas
 4. Sends FCM notification to their device tokens
 
 ```typescript
-// supabase/functions/kplc-notify/index.ts
-// Triggered by Supabase DB webhook on INSERT to power_outages
+// appwrite/functions/kplc-notify/src/main.js
+// Triggered by Appwrite DB event on documents.create in power_outages
 
-Deno.serve(async (req) => {
-  const { record } = await req.json();          // New outage row
+export default async ({ req, res, log, error }) => {
+  const record = req.body; // New outage row
   const affectedAreas = record.areas_affected;  // string[]
 
-  // Find subscribed users
-  const { data: subs } = await supabase
-    .from('area_subscriptions')
-    .select('user_fcm_token, area')
-    .in('area', affectedAreas);
+  // Setup Appwrite client
+  const client = new Client()
+    .setEndpoint(process.env.APPWRITE_ENDPOINT)
+    .setProject(process.env.APPWRITE_PROJECT_ID)
+    .setKey(process.env.APPWRITE_API_KEY);
+  const databases = new Databases(client);
+
+  // Query subscribed users
+  const subs = await databases.listDocuments('DB_ID', 'area_subscriptions', [
+    Query.equal('area', affectedAreas)
+  ]);
 
   // Send FCM notifications
-  for (const sub of subs) {
+  for (const sub of subs.documents) {
     await sendFCM(sub.user_fcm_token, {
       title: `⚡ KPLC Outage: ${record.region}`,
       body: `Power interruption on ${record.outage_date} from ${record.start_time} to ${record.end_time}. Areas: ${affectedAreas.slice(0, 3).join(', ')}...`,
-      data: { outageId: record.id },
+      data: { outageId: record.$id },
     });
   }
-});
+  
+  return res.json({ success: true });
+};
 ```
 
 ### APK Build Pipeline (GitHub Actions)
@@ -2527,7 +2540,7 @@ const faqSchema = {
 Build the highest-traffic static/annual tools first. Target AdSense approval before adding live scrapers.
 
 - [ ] Next.js project setup (TypeScript, Tailwind, shadcn/ui)
-- [ ] Supabase schema + seed scripts
+- [ ] Appwrite collections + seed scripts
 - [ ] Navigation (mega-menu desktop, bottom tab mobile)
 - [ ] Tools hub page (`/tools/`) with category cards
 - [ ] **T01** PAYE Calculator
@@ -2607,37 +2620,31 @@ Build the highest-traffic static/annual tools first. Target AdSense approval bef
 
 ## 17. Deployment
 
-### Web (Vercel)
+### Web (Cloudflare Pages)
 
 ```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Link repo
-vercel link
-
-# Deploy (or just push to GitHub — auto-deploys)
-git push origin main
+# Wrangler CLI is used for deployment
+npm run deploy
 ```
 
-**Vercel Settings:**
-- Root directory: `apps/web`
-- Build command: `pnpm build`
-- Output: `.next`
-- Node version: 20.x
-- Environment variables: set in Vercel dashboard
+**Cloudflare Pages Settings:**
+- Framework preset: `Next.js (Static HTML Export)`
+- Build command: `npm run build`
+- Output directory: `out`
+- Environment variables: set in Cloudflare dashboard
 
 ### DNS (Cloudflare)
 
+Cloudflare automatically manages the DNS for Pages projects within the same account. Just ensure you link the custom domain in the Pages dashboard:
+
 ```
 Type    Name                   Value
-A       kenyahub.co.ke         76.76.21.21  (Vercel)
-CNAME   www                    cname.vercel-dns.com
-TXT     kenyahub.co.ke         "google-site-verification=..."
-TXT     kenyahub.co.ke         "v=spf1 include:_spf.google.com ~all"
+CNAME   kenyahub.me            kenyahub.pages.dev
+TXT     kenyahub.me            "google-site-verification=..."
+TXT     kenyahub.me            "v=spf1 include:_spf.google.com ~all"
 ```
 
-Enable Cloudflare proxy (orange cloud) on all DNS records for CDN + DDoS.
+Enable Cloudflare proxy (orange cloud) on the CNAME record for full CDN + DDoS protection.
 
 ---
 
