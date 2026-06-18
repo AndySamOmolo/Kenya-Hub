@@ -19,6 +19,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kenyahub.me"),
   title: {
     default: "KenyaHub — Free Tools & Data for Every Kenyan",
     template: "%s | KenyaHub",
@@ -85,6 +86,14 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5895990873842803"
+          crossOrigin="anonymous"
+        />
+        {/* Google Search Console verification (update the content value with your verification code) */}
+        <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
       </head>
       <body className="min-h-screen flex flex-col">
         <ThemeProvider>

@@ -28,11 +28,37 @@ export default function ToolShell({ tool, children, faq }: ToolShellProps) {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: tool.title,
+    url: `https://kenyahub.me/tools/${tool.slug}/`,
     applicationCategory: "UtilityApplication",
     operatingSystem: "Web Browser",
     description: tool.description,
     offers: { "@type": "Offer", price: "0", priceCurrency: "KES" },
     provider: { "@type": "Organization", name: "KenyaHub" },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://kenyahub.me/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Tools",
+        item: "https://kenyahub.me/tools/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: tool.shortTitle,
+        item: `https://kenyahub.me/tools/${tool.slug}/`,
+      },
+    ],
   };
 
   return (
@@ -41,6 +67,10 @@ export default function ToolShell({ tool, children, faq }: ToolShellProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {faqSchema && (
         <script
