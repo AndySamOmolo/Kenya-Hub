@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <span className="text-xl">🇰🇪</span>
+              <img src="/kenya-flag.svg" alt="Kenya Flag" className="w-5 h-auto rounded-[1px] shadow-sm" />
               <span className="text-base font-extrabold font-[family-name:var(--font-outfit)] gradient-text-kenya">
                 KenyaHub
               </span>

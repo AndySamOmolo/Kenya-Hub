@@ -22,7 +22,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-2.5 group shrink-0">
               <div className="relative w-8 h-8 flex items-center justify-center">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-kenya-green via-gold to-kenya-red opacity-20 group-hover:opacity-40 transition-opacity" />
-                <span className="relative text-lg">🇰🇪</span>
+                <img src="/kenya-flag.svg" alt="Kenya Flag" className="relative w-5 h-auto rounded-[1px] shadow-sm" />
               </div>
               <span className="text-lg font-extrabold font-[family-name:var(--font-outfit)] gradient-text-kenya tracking-tight">
                 KenyaHub
