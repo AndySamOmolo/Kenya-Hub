@@ -1,0 +1,109 @@
+{
+  "source": "NTSA (ntsa.go.ke) + Traffic Act",
+  "lastUpdated": "2024",
+  "licenseClasses": [
+    {
+      "class": "A",
+      "name": "Motorcycles & Tricycles",
+      "description": "All motorcycles (including boda bodas) and three-wheeled vehicles",
+      "minimumAge": 18,
+      "fee": 1750,
+      "requirements": ["Valid medical (DL Form 1)", "Driving school certificate (min 10 hours)", "Theory test pass", "Practical test pass"]
+    },
+    {
+      "class": "B",
+      "name": "Light Motor Vehicles",
+      "description": "Cars, SUVs, pick-ups — vehicles not exceeding 3,500 kg GVW",
+      "minimumAge": 18,
+      "fee": 1750,
+      "requirements": ["Valid medical (DL Form 1)", "Driving school certificate (min 40 hours)", "Theory test pass", "Practical test pass"]
+    },
+    {
+      "class": "C",
+      "name": "Heavy Motor Vehicles",
+      "description": "Trucks, lorries, buses — vehicles exceeding 3,500 kg GVW",
+      "minimumAge": 21,
+      "fee": 1750,
+      "requirements": ["Must already hold Class B for 2+ years", "Driving school certificate for Class C", "Theory test pass", "Practical test pass"]
+    },
+    {
+      "class": "BCE",
+      "name": "Articulated Vehicles",
+      "description": "Trailers, tankers, heavy combination vehicles",
+      "minimumAge": 24,
+      "fee": 1750,
+      "requirements": ["Must hold Class C for 2+ years", "Driving school certificate for BCE", "Theory test pass", "Practical test pass"]
+    },
+    {
+      "class": "DL",
+      "name": "Driving Instructor",
+      "description": "Licensed driving instructors — authorized to train learners",
+      "minimumAge": 25,
+      "fee": 2500,
+      "requirements": ["Must hold Class B for 5+ years", "Clean driving record (no serious offences)", "Instructor training course certificate", "NTSA instructor exam pass"]
+    },
+    {
+      "class": "G",
+      "name": "Tractors & Special Vehicles",
+      "description": "Agricultural tractors, forklifts, and other special-purpose vehicles",
+      "minimumAge": 18,
+      "fee": 1750,
+      "requirements": ["Valid medical (DL Form 1)", "Training certificate", "Practical test pass"]
+    }
+  ],
+  "applicationProcess": [
+    {
+      "step": 1,
+      "title": "Medical Examination (DL Form 1)",
+      "description": "Visit any registered medical practitioner for eyesight and general fitness examination",
+      "cost": "KES 500 – 1,500 (doctor's fee)",
+      "documents": ["National ID", "Passport photo"]
+    },
+    {
+      "step": 2,
+      "title": "Enrol at a Driving School",
+      "description": "Attend an NTSA-licensed driving school for practical training",
+      "cost": "KES 8,000 – 25,000 (depending on class and school)",
+      "documents": ["Medical form (DL Form 1)", "National ID"]
+    },
+    {
+      "step": 3,
+      "title": "Apply for Provisional License",
+      "description": "Apply on eCitizen for an Interim Driving License (IDL) / provisional license",
+      "cost": "KES 600",
+      "documents": ["DL Form 1", "Driving school enrollment letter", "National ID"]
+    },
+    {
+      "step": 4,
+      "title": "Theory Test (Highway Code)",
+      "description": "Computer-based theory test at NTSA testing centre. Covers road signs, rules, and safety",
+      "cost": "KES 600",
+      "documents": ["Provisional license", "National ID"]
+    },
+    {
+      "step": 5,
+      "title": "Practical Test",
+      "description": "Driving test at NTSA-designated testing ground. Includes road driving, parking, reversing",
+      "cost": "KES 800",
+      "documents": ["Theory test pass certificate", "Provisional license", "Driving school completion certificate"]
+    },
+    {
+      "step": 6,
+      "title": "Collect Driving License",
+      "description": "Pay for and collect your driving license from NTSA or Huduma Centre",
+      "cost": "KES 1,750 (license fee)",
+      "documents": ["Practical test pass certificate", "All previous documents"]
+    }
+  ],
+  "renewalProcess": {
+    "renewalPeriod": "Every 3 years from date of issue",
+    "renewalFee": 1750,
+    "lateRenewalPenalty": "KES 100 per month of delay",
+    "requirements": ["Valid National ID", "Current driving license", "Recent passport photo", "Medical form (DL Form 1) for Class C and above"]
+  },
+  "totalEstimatedCost": {
+    "classA": { "min": 5000, "max": 12000, "label": "Class A (Motorcycle)" },
+    "classB": { "min": 12000, "max": 30000, "label": "Class B (Car)" },
+    "classC": { "min": 15000, "max": 35000, "label": "Class C (Heavy Vehicle)" }
+  }
+}

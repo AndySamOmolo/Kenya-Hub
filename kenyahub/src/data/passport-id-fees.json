@@ -1,0 +1,97 @@
+{
+  "source": "Department of Immigration & National Registration Bureau (NRB)",
+  "lastUpdated": "2024",
+  "passport": {
+    "types": [
+      {
+        "type": "Ordinary Passport (32 pages, 5 years)",
+        "fee": 4550,
+        "processingTime": "10 – 15 working days",
+        "eligibility": "All Kenyan citizens aged 18+"
+      },
+      {
+        "type": "Ordinary Passport (32 pages, 10 years)",
+        "fee": 6550,
+        "processingTime": "10 – 15 working days",
+        "eligibility": "All Kenyan citizens aged 18+"
+      },
+      {
+        "type": "Ordinary Passport (48 pages / Jumbo, 5 years)",
+        "fee": 6050,
+        "processingTime": "10 – 15 working days",
+        "eligibility": "Frequent travelers"
+      },
+      {
+        "type": "Ordinary Passport (48 pages / Jumbo, 10 years)",
+        "fee": 8050,
+        "processingTime": "10 – 15 working days",
+        "eligibility": "Frequent travelers"
+      },
+      {
+        "type": "Emergency / Expedited Passport",
+        "fee": 8000,
+        "processingTime": "1 – 3 working days",
+        "eligibility": "Emergency travel — medical, bereavement, etc."
+      },
+      {
+        "type": "East African Passport",
+        "fee": 3000,
+        "processingTime": "10 – 15 working days",
+        "eligibility": "For travel within EAC member states"
+      },
+      {
+        "type": "Child Passport (under 18)",
+        "fee": 4550,
+        "processingTime": "10 – 15 working days",
+        "eligibility": "Kenyan citizens under 18 — application by parent/guardian"
+      }
+    ],
+    "requiredDocuments": [
+      "Original and copy of National ID (or birth certificate for minors)",
+      "2 recent passport-size photos (white background)",
+      "Old passport (if renewing)",
+      "Payment receipt from eCitizen",
+      "Birth certificate (for first-time applicants)"
+    ],
+    "applicationProcess": [
+      "Create account on eCitizen (ecitizen.go.ke)",
+      "Fill in passport application form online",
+      "Pay fees via M-Pesa, bank, or card on eCitizen",
+      "Book appointment at Immigration office or Huduma Centre",
+      "Visit with original documents for biometric capture",
+      "Collect passport after processing (SMS notification sent)"
+    ]
+  },
+  "nationalId": {
+    "types": [
+      { "type": "First Application (age 18+)", "fee": 0, "processingTime": "30 – 60 working days", "notes": "Free for all Kenyan citizens turning 18" },
+      { "type": "Replacement (Lost ID)", "fee": 300, "processingTime": "30 – 60 working days", "notes": "Requires police abstract report" },
+      { "type": "Replacement (Damaged ID)", "fee": 100, "processingTime": "30 – 60 working days", "notes": "Bring the damaged ID" },
+      { "type": "Waiting Card (Interim)", "fee": 0, "processingTime": "Same day", "notes": "Temporary ID while waiting for the permanent card" }
+    ],
+    "requiredDocuments": [
+      "Birth certificate (original and copy)",
+      "Parents' ID copies (both parents)",
+      "School leaving certificate or letter from chief/assistant chief",
+      "2 passport-size photos",
+      "Police abstract (for lost ID replacement only)"
+    ]
+  },
+  "otherDocuments": [
+    { "type": "Alien Certificate", "fee": 1000, "description": "For foreign nationals resident in Kenya" },
+    { "type": "Foreign Nationals Registration", "fee": 1000, "description": "Registration of foreign nationals" },
+    { "type": "Birth Certificate (late registration)", "fee": 150, "description": "For births registered after 6 months" },
+    { "type": "Death Certificate", "fee": 50, "description": "Registration of death" },
+    { "type": "Marriage Certificate", "fee": 600, "description": "Civil marriage registration" }
+  ],
+  "hudumaLocations": [
+    "Nairobi — Huduma Centre GPO, Makadara, Kibera",
+    "Mombasa — Huduma Centre Mombasa",
+    "Kisumu — Huduma Centre Kisumu",
+    "Nakuru — Huduma Centre Nakuru",
+    "Eldoret — Huduma Centre Eldoret",
+    "Nyeri — Huduma Centre Nyeri",
+    "Thika — Huduma Centre Thika",
+    "And 30+ other Huduma Centres across the country"
+  ]
+}

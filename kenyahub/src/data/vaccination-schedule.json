@@ -1,0 +1,125 @@
+{
+  "source": "MOH Kenya Expanded Programme on Immunization (KEPI) + WHO Child Growth Standards",
+  "lastUpdated": "2024",
+  "vaccinationSchedule": [
+    {
+      "age": "At Birth",
+      "ageWeeks": 0,
+      "vaccines": [
+        { "name": "BCG", "fullName": "Bacillus Calmette-Guérin", "protectsAgainst": "Tuberculosis", "route": "Intradermal (left upper arm)" },
+        { "name": "OPV 0", "fullName": "Oral Polio Vaccine (birth dose)", "protectsAgainst": "Poliomyelitis", "route": "Oral drops" },
+        { "name": "HBV Birth Dose", "fullName": "Hepatitis B Birth Dose", "protectsAgainst": "Hepatitis B", "route": "Intramuscular (thigh)" }
+      ]
+    },
+    {
+      "age": "6 Weeks",
+      "ageWeeks": 6,
+      "vaccines": [
+        { "name": "OPV 1", "fullName": "Oral Polio Vaccine (1st dose)", "protectsAgainst": "Poliomyelitis", "route": "Oral drops" },
+        { "name": "Pentavalent 1", "fullName": "DPT-HepB-Hib (1st dose)", "protectsAgainst": "Diphtheria, Pertussis, Tetanus, Hepatitis B, Haemophilus influenzae type b", "route": "Intramuscular (thigh)" },
+        { "name": "PCV 1", "fullName": "Pneumococcal Conjugate Vaccine (1st dose)", "protectsAgainst": "Pneumococcal diseases (pneumonia, meningitis)", "route": "Intramuscular (thigh)" },
+        { "name": "Rotavirus 1", "fullName": "Rotavirus Vaccine (1st dose)", "protectsAgainst": "Rotavirus diarrhoea", "route": "Oral drops" }
+      ]
+    },
+    {
+      "age": "10 Weeks",
+      "ageWeeks": 10,
+      "vaccines": [
+        { "name": "OPV 2", "fullName": "Oral Polio Vaccine (2nd dose)", "protectsAgainst": "Poliomyelitis", "route": "Oral drops" },
+        { "name": "Pentavalent 2", "fullName": "DPT-HepB-Hib (2nd dose)", "protectsAgainst": "Diphtheria, Pertussis, Tetanus, Hepatitis B, Haemophilus influenzae type b", "route": "Intramuscular (thigh)" },
+        { "name": "PCV 2", "fullName": "Pneumococcal Conjugate Vaccine (2nd dose)", "protectsAgainst": "Pneumococcal diseases", "route": "Intramuscular (thigh)" },
+        { "name": "Rotavirus 2", "fullName": "Rotavirus Vaccine (2nd dose)", "protectsAgainst": "Rotavirus diarrhoea", "route": "Oral drops" }
+      ]
+    },
+    {
+      "age": "14 Weeks",
+      "ageWeeks": 14,
+      "vaccines": [
+        { "name": "OPV 3", "fullName": "Oral Polio Vaccine (3rd dose)", "protectsAgainst": "Poliomyelitis", "route": "Oral drops" },
+        { "name": "Pentavalent 3", "fullName": "DPT-HepB-Hib (3rd dose)", "protectsAgainst": "Diphtheria, Pertussis, Tetanus, Hepatitis B, Haemophilus influenzae type b", "route": "Intramuscular (thigh)" },
+        { "name": "PCV 3", "fullName": "Pneumococcal Conjugate Vaccine (3rd dose)", "protectsAgainst": "Pneumococcal diseases", "route": "Intramuscular (thigh)" },
+        { "name": "IPV", "fullName": "Inactivated Polio Vaccine", "protectsAgainst": "Poliomyelitis (injectable booster)", "route": "Intramuscular (thigh)" }
+      ]
+    },
+    {
+      "age": "6 Months",
+      "ageWeeks": 26,
+      "vaccines": [
+        { "name": "Vitamin A (1st dose)", "fullName": "Vitamin A Supplementation", "protectsAgainst": "Vitamin A deficiency, reduces child mortality", "route": "Oral drops" }
+      ]
+    },
+    {
+      "age": "9 Months",
+      "ageWeeks": 39,
+      "vaccines": [
+        { "name": "Measles-Rubella 1", "fullName": "Measles-Rubella Vaccine (1st dose)", "protectsAgainst": "Measles, Rubella", "route": "Subcutaneous (upper arm)" },
+        { "name": "Yellow Fever", "fullName": "Yellow Fever Vaccine", "protectsAgainst": "Yellow Fever", "route": "Subcutaneous (upper arm)" },
+        { "name": "Vitamin A (2nd dose)", "fullName": "Vitamin A Supplementation", "protectsAgainst": "Vitamin A deficiency", "route": "Oral drops" }
+      ]
+    },
+    {
+      "age": "12 Months",
+      "ageWeeks": 52,
+      "vaccines": [
+        { "name": "Vitamin A (3rd dose)", "fullName": "Vitamin A Supplementation", "protectsAgainst": "Vitamin A deficiency", "route": "Oral drops" }
+      ]
+    },
+    {
+      "age": "18 Months",
+      "ageWeeks": 78,
+      "vaccines": [
+        { "name": "Measles-Rubella 2", "fullName": "Measles-Rubella Vaccine (2nd dose / booster)", "protectsAgainst": "Measles, Rubella", "route": "Subcutaneous (upper arm)" },
+        { "name": "Vitamin A (4th dose)", "fullName": "Vitamin A Supplementation", "protectsAgainst": "Vitamin A deficiency", "route": "Oral drops" }
+      ]
+    }
+  ],
+  "growthStandards": {
+    "source": "WHO Child Growth Standards (2006)",
+    "weightForAge": {
+      "boys": [
+        { "ageMonths": 0, "median": 3.3, "sd1low": 2.5, "sd1high": 4.2, "sd2low": 2.1, "sd2high": 4.9 },
+        { "ageMonths": 1, "median": 4.5, "sd1low": 3.4, "sd1high": 5.5, "sd2low": 2.9, "sd2high": 6.3 },
+        { "ageMonths": 2, "median": 5.6, "sd1low": 4.3, "sd1high": 6.8, "sd2low": 3.8, "sd2high": 7.8 },
+        { "ageMonths": 3, "median": 6.4, "sd1low": 5.0, "sd1high": 7.7, "sd2low": 4.4, "sd2high": 8.6 },
+        { "ageMonths": 4, "median": 7.0, "sd1low": 5.6, "sd1high": 8.4, "sd2low": 4.9, "sd2high": 9.3 },
+        { "ageMonths": 5, "median": 7.5, "sd1low": 6.0, "sd1high": 8.9, "sd2low": 5.3, "sd2high": 9.8 },
+        { "ageMonths": 6, "median": 7.9, "sd1low": 6.4, "sd1high": 9.3, "sd2low": 5.7, "sd2high": 10.2 },
+        { "ageMonths": 9, "median": 8.9, "sd1low": 7.1, "sd1high": 10.5, "sd2low": 6.4, "sd2high": 11.4 },
+        { "ageMonths": 12, "median": 9.6, "sd1low": 7.7, "sd1high": 11.4, "sd2low": 6.9, "sd2high": 12.4 },
+        { "ageMonths": 18, "median": 10.9, "sd1low": 8.8, "sd1high": 13.0, "sd2low": 7.8, "sd2high": 14.2 },
+        { "ageMonths": 24, "median": 12.2, "sd1low": 9.7, "sd1high": 14.5, "sd2low": 8.6, "sd2high": 15.9 },
+        { "ageMonths": 36, "median": 14.3, "sd1low": 11.3, "sd1high": 17.2, "sd2low": 10.0, "sd2high": 18.9 },
+        { "ageMonths": 48, "median": 16.3, "sd1low": 12.7, "sd1high": 19.8, "sd2low": 11.0, "sd2high": 22.0 },
+        { "ageMonths": 60, "median": 18.3, "sd1low": 14.1, "sd1high": 22.6, "sd2low": 12.1, "sd2high": 25.5 }
+      ],
+      "girls": [
+        { "ageMonths": 0, "median": 3.2, "sd1low": 2.4, "sd1high": 4.0, "sd2low": 2.0, "sd2high": 4.7 },
+        { "ageMonths": 1, "median": 4.2, "sd1low": 3.2, "sd1high": 5.2, "sd2low": 2.7, "sd2high": 5.9 },
+        { "ageMonths": 2, "median": 5.1, "sd1low": 3.9, "sd1high": 6.3, "sd2low": 3.4, "sd2high": 7.1 },
+        { "ageMonths": 3, "median": 5.8, "sd1low": 4.5, "sd1high": 7.2, "sd2low": 3.9, "sd2high": 8.0 },
+        { "ageMonths": 4, "median": 6.4, "sd1low": 5.0, "sd1high": 7.8, "sd2low": 4.4, "sd2high": 8.6 },
+        { "ageMonths": 5, "median": 6.9, "sd1low": 5.4, "sd1high": 8.4, "sd2low": 4.8, "sd2high": 9.2 },
+        { "ageMonths": 6, "median": 7.3, "sd1low": 5.7, "sd1high": 8.8, "sd2low": 5.1, "sd2high": 9.6 },
+        { "ageMonths": 9, "median": 8.2, "sd1low": 6.5, "sd1high": 9.9, "sd2low": 5.8, "sd2high": 10.9 },
+        { "ageMonths": 12, "median": 8.9, "sd1low": 7.0, "sd1high": 10.9, "sd2low": 6.3, "sd2high": 11.9 },
+        { "ageMonths": 18, "median": 10.2, "sd1low": 8.1, "sd1high": 12.5, "sd2low": 7.2, "sd2high": 13.8 },
+        { "ageMonths": 24, "median": 11.5, "sd1low": 9.0, "sd1high": 14.2, "sd2low": 8.0, "sd2high": 15.7 },
+        { "ageMonths": 36, "median": 13.9, "sd1low": 10.8, "sd1high": 17.2, "sd2low": 9.6, "sd2high": 19.2 },
+        { "ageMonths": 48, "median": 16.1, "sd1low": 12.3, "sd1high": 20.4, "sd2low": 10.8, "sd2high": 23.1 },
+        { "ageMonths": 60, "median": 18.2, "sd1low": 13.7, "sd1high": 23.5, "sd2low": 11.8, "sd2high": 27.1 }
+      ]
+    }
+  },
+  "milestones": [
+    { "ageMonths": 1, "milestone": "Lifts head briefly, responds to sounds, follows objects with eyes" },
+    { "ageMonths": 3, "milestone": "Holds head steady, smiles socially, brings hands together" },
+    { "ageMonths": 6, "milestone": "Sits with support, rolls over, reaches for objects, babbles" },
+    { "ageMonths": 9, "milestone": "Sits without support, crawls, responds to own name, says 'mama/dada'" },
+    { "ageMonths": 12, "milestone": "Stands alone, may walk, says 1-3 words, uses pincer grasp" },
+    { "ageMonths": 18, "milestone": "Walks well, says 6-10 words, feeds self with spoon, points to wants" },
+    { "ageMonths": 24, "milestone": "Runs, says 2-word sentences, follows simple instructions, kicks ball" },
+    { "ageMonths": 36, "milestone": "Climbs stairs, speaks in sentences, knows own name and age, dresses with help" },
+    { "ageMonths": 48, "milestone": "Hops on one foot, tells stories, plays cooperatively, draws circles" },
+    { "ageMonths": 60, "milestone": "Skips, counts to 10, writes some letters, ready for school" }
+  ]
+}

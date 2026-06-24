@@ -1,0 +1,29 @@
+{
+  "interestRate": 4,
+  "interestType": "simple",
+  "gracePeriodYears": 1,
+  "maxRepaymentYears": 15,
+  "minimumMonthly": 1500,
+  "minimumSalaryPercent": 10,
+  "latePenaltyPercent": 5,
+  "loanAmounts": {
+    "undergraduate": {
+      "publicUniversity": { "min": 38000, "max": 60000, "label": "Public University (per year)" },
+      "privateUniversity": { "min": 30000, "max": 40000, "label": "Private University (per year)" },
+      "tvet": { "min": 30000, "max": 37000, "label": "TVET Institution (per year)" }
+    },
+    "postgraduate": {
+      "masters": { "amount": 200000, "label": "Masters (total)" },
+      "phd": { "amount": 300000, "label": "PhD (total)" }
+    }
+  },
+  "repaymentNotes": [
+    "Interest starts accruing from the date of first disbursement at 4% per annum simple interest",
+    "Grace period of 1 year after completion of studies before repayment begins",
+    "Minimum monthly repayment is KES 1,500 or 10% of gross salary, whichever is higher",
+    "Late payment attracts a 5% penalty on outstanding amount",
+    "Maximum repayment period is 15 years from the start of repayment",
+    "Employers are required to deduct HELB repayments from salary (statutory deduction)",
+    "Lump sum payments can be made to reduce the principal and shorten the repayment period"
+  ]
+}

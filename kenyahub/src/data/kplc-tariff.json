@@ -1,0 +1,40 @@
+{
+  "source": "EPRA/KPLC Electricity Tariff — Domestic Consumer (DC) Category",
+  "lastUpdated": "2024",
+  "fixedCharge": 150,
+  "fixedChargeNote": "KES 150/month billed through prepaid token purchases until fully paid each month",
+  "energyBands": [
+    { "min": 0, "max": 10, "rate": 2.50, "label": "Lifeline (0 – 10 kWh)" },
+    { "min": 11, "max": 50, "rate": 12.75, "label": "11 – 50 kWh" },
+    { "min": 51, "max": 1500, "rate": 15.80, "label": "51 – 1,500 kWh" },
+    { "min": 1501, "max": null, "rate": 17.63, "label": "Above 1,500 kWh" }
+  ],
+  "levies": {
+    "vat": 16,
+    "repLevy": 0.12,
+    "repLevyLabel": "Rural Electrification Programme Levy (per kWh)",
+    "refLevy": 0.03,
+    "refLevyLabel": "REP Fund Levy (per kWh)",
+    "epraLevy": 0.10,
+    "epraLevyLabel": "EPRA Levy (per kWh)",
+    "warcLevy": 0.03,
+    "warcLevyLabel": "WARMA Levy (per kWh)"
+  },
+  "fuelCostCharge": {
+    "rate": 3.87,
+    "label": "Fuel Cost Charge (FCC) per kWh — varies monthly",
+    "note": "This rate changes monthly based on fuel costs; hardcoded as approximate average"
+  },
+  "forexAdjustment": {
+    "rate": 0.67,
+    "label": "Foreign Exchange Rate Fluctuation Adjustment (FERFA) per kWh — varies monthly"
+  },
+  "notes": [
+    "Prepaid token purchases first deduct outstanding fixed charges before allocating to units",
+    "The lifeline tariff (first 10 kWh) is heavily subsidized for low-income households",
+    "FCC and FERFA are variable surcharges that change monthly — shown here as approximate averages",
+    "VAT at 16% is applied to the total of energy charges + levies",
+    "Tariff bands are progressive — only units within each band are charged at that rate",
+    "Commercial and industrial tariffs have different rate structures (CI and IT categories)"
+  ]
+}

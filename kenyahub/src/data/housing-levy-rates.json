@@ -1,0 +1,17 @@
+{
+  "effectiveDate": "2023-07-01",
+  "legalBasis": "Finance Act 2023, Section 84A",
+  "employeeRate": 1.5,
+  "employerRate": 1.5,
+  "taxReliefApplicable": true,
+  "taxReliefDescription": "The employee's Housing Levy contribution qualifies as a tax relief, effectively reducing PAYE payable",
+  "notes": [
+    "The Affordable Housing Levy (AHL) was introduced by the Finance Act 2023",
+    "The Supreme Court of Kenya upheld the levy's constitutionality in November 2023",
+    "Both employer and employee each contribute 1.5% of gross salary",
+    "The employee's contribution qualifies for tax relief against PAYE",
+    "Contributions are remitted through the eCitizen/i-Tax platform by the 9th of the following month",
+    "Self-employed persons also contribute 1.5% of their declared income",
+    "The levy funds the Affordable Housing Programme aimed at delivering 250,000 housing units"
+  ]
+}

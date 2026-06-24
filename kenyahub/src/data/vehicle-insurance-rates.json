@@ -1,0 +1,92 @@
+{
+  "source": "Insurance Regulatory Authority (IRA) — Motor Insurance Minimum Premium Rates",
+  "lastUpdated": "2024",
+  "vehicleClasses": [
+    {
+      "id": "private",
+      "name": "Private Motor Vehicle",
+      "description": "Privately owned vehicles for personal use",
+      "thirdParty": {
+        "minimumPremium": 7500,
+        "description": "Third Party Only — minimum legal requirement",
+        "coverageNotes": "Covers injury/death to third parties and damage to third party property up to KES 20 million"
+      },
+      "comprehensive": {
+        "rateMin": 4.0,
+        "rateMax": 6.0,
+        "minimumPremium": 35000,
+        "description": "Comprehensive cover — percentage of vehicle value",
+        "coverageNotes": "Covers own damage, theft, fire, third party liability, and windscreen"
+      }
+    },
+    {
+      "id": "commercial",
+      "name": "Commercial Vehicle",
+      "description": "Goods-carrying vehicles (trucks, vans, lorries)",
+      "thirdParty": {
+        "minimumPremium": 10000,
+        "description": "Third Party Only for commercial vehicles",
+        "rateByTonnage": [
+          { "maxTonnage": 3, "premium": 10000, "label": "Up to 3 tonnes" },
+          { "maxTonnage": 8, "premium": 15000, "label": "3 – 8 tonnes" },
+          { "maxTonnage": 20, "premium": 20000, "label": "8 – 20 tonnes" },
+          { "maxTonnage": null, "premium": 25000, "label": "Over 20 tonnes" }
+        ]
+      },
+      "comprehensive": {
+        "rateMin": 5.0,
+        "rateMax": 8.0,
+        "minimumPremium": 50000,
+        "description": "Comprehensive cover — higher rates due to commercial risk"
+      }
+    },
+    {
+      "id": "psv",
+      "name": "Public Service Vehicle (PSV)",
+      "description": "Matatus, buses, taxis — licensed for passenger transport",
+      "thirdParty": {
+        "minimumPremium": 15000,
+        "description": "Third Party Only for PSVs",
+        "rateBySeating": [
+          { "maxSeats": 14, "premium": 15000, "label": "Up to 14 seats (matatu)" },
+          { "maxSeats": 33, "premium": 25000, "label": "15 – 33 seats (minibus)" },
+          { "maxSeats": null, "premium": 35000, "label": "Over 33 seats (bus)" }
+        ]
+      },
+      "comprehensive": {
+        "rateMin": 6.0,
+        "rateMax": 10.0,
+        "minimumPremium": 60000,
+        "description": "Comprehensive cover — highest risk class"
+      }
+    },
+    {
+      "id": "motorcycle",
+      "name": "Motorcycle (Boda Boda)",
+      "description": "Two-wheeled motor vehicles including boda bodas",
+      "thirdParty": {
+        "minimumPremium": 4000,
+        "description": "Third Party Only for motorcycles"
+      },
+      "comprehensive": {
+        "rateMin": 8.0,
+        "rateMax": 12.0,
+        "minimumPremium": 8000,
+        "description": "Comprehensive cover — high theft/accident rate for boda bodas"
+      }
+    }
+  ],
+  "additionalCovers": [
+    { "name": "Personal Accident", "premium": "KES 1,000 – 3,000/year", "description": "Covers the driver for injury/death" },
+    { "name": "Windscreen Cover", "premium": "Usually included in comprehensive", "description": "Separate cover available for third party policies" },
+    { "name": "Political Violence & Terrorism (PVT)", "premium": "0.25% of vehicle value", "description": "Optional add-on, recommended for commercial vehicles" },
+    { "name": "Excess Protector", "premium": "KES 2,000 – 5,000/year", "description": "Covers the excess/deductible amount in case of a claim" }
+  ],
+  "notes": [
+    "Third Party Only insurance is the minimum legal requirement under the Insurance (Motor Vehicle Third Party Risks) Act (Cap 405)",
+    "Driving without valid insurance is a criminal offence with a fine of up to KES 100,000 or imprisonment",
+    "IRA sets minimum premium rates — actual premiums from insurers may be higher based on risk assessment",
+    "Comprehensive premiums depend on vehicle value, age, driver history, and insurer's underwriting criteria",
+    "PSV vehicles must additionally have a valid NTSA inspection certificate and PSV badge"
+  ]
+}

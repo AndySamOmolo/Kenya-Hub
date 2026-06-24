@@ -1,5 +1,5 @@
-# KenyaHub — Developer Documentation v2.0
-**Status:** Planning & Architecture | **Last Updated:** June 2025
+# KenyaHub — Developer Documentation v2.1
+**Status:** Phase 2 In Progress | Active Development | **Last Updated:** June 2026
 
 ---
 
@@ -11,13 +11,13 @@
 4. [Navigation Architecture](#4-navigation-architecture)
 5. [URL & SEO Architecture](#5-url--seo-architecture)
 6. [Tool Categories & Full Catalogue](#6-tool-categories--full-catalogue)
-   - 6A. Finance & Tax (14 tools)
-   - 6B. Education & CBC (11 tools)
-   - 6C. Utilities & Energy (8 tools)
+   - 6A. Finance & Tax (8 tools)
+   - 6B. Education & CBC (10 tools)
+   - 6C. Utilities & Energy (7 tools)
    - 6D. Government & Legal (12 tools)
    - 6E. Transport & Travel (9 tools)
    - 6F. Health & Wellness (7 tools)
-   - 6G. Business & Investment (10 tools)
+   - 6G. Business & Investment (9 tools)
    - 6H. Data & Reference (9 tools)
    - 6I. Agriculture & Environment (7 tools)
 7. [Module: Matatu Routes](#7-module-matatu-routes)
@@ -32,6 +32,7 @@
 16. [Development Phases](#16-development-phases--roadmap)
 17. [Deployment](#17-deployment)
 18. [Tool Priority Matrix](#18-tool-priority-matrix)
+19. [Removed Tools Log](#19-removed-tools-log)
 
 ---
 
@@ -218,7 +219,7 @@ export const TOOLS: Tool[] = [
     dataSource: 'Kenya Revenue Authority',
     // ...
   },
-  // All 80+ tools registered here
+  // All tools registered here
 ];
 ```
 
@@ -313,7 +314,7 @@ All tools live under `/tools/[slug]/`. The route group folders in Next.js (e.g. 
 Each tool entry includes:
 - **URL** — the exact slug
 - **Keywords** — primary SEO targets
-- **Data Source** — where to get the data
+- **Data Source** — where to get the data (verified as of June 2026)
 - **Update** — how often it needs refreshing
 - **Notes** — implementation detail or unique feature
 
@@ -330,6 +331,7 @@ Each tool entry includes:
 **Update:** 🔵 Annual (July, after national budget)
 **Keywords:** "PAYE calculator Kenya 2025", "net salary Kenya", "Kenya salary after tax"
 **Data Source:** KRA annual tax bands (kra.go.ke) — copy from KRA website each July
+**Status:** ⚠️ **COMPETITION EXISTS** — `payecalculator.co.ke`, `calckenya.com`, `wingubox.com` all have mature calculators. Consider differentiating with: (a) SHIF/NHIF transition clarity, (b) side-by-side old vs new NSSF comparison, (c) downloadable payslip PDF.
 
 **What it calculates:**
 ```
@@ -366,6 +368,7 @@ Net Pay = Gross − PAYE (after relief) − NHIF − NSSF − Housing Levy
 **Update:** 🟢 Static (Safaricom tariff changes infrequently — monitor @Safaricom on announcements)
 **Keywords:** "mpesa charges calculator", "mpesa tariff Kenya", "how much does mpesa charge"
 **Data Source:** Safaricom M-Pesa tariff schedule (safaricom.co.ke) — stored in `mpesa-tariffs.json`
+**Status:** ⚠️ **COMPETITION EXISTS** — `calckenya.com/mpesa` exists. Differentiate with: (a) "Cheapest threshold" band highlighting, (b) WhatsApp share of results, (c) M-Pesa API integration for real-time rates.
 
 **Transaction types:**
 - Send money (registered → registered)
@@ -385,6 +388,7 @@ Net Pay = Gross − PAYE (after relief) − NHIF − NSSF − Housing Levy
 **Update:** 🟢 Static (Stamp Duty Act rarely changes; AHF exemption added 2023)
 **Keywords:** "stamp duty Kenya", "property transfer cost Kenya", "how much to transfer land Kenya"
 **Data Source:** Stamp Duty Act (Cap 480), Law Society of Kenya Advocates Remuneration Order
+**Status:** ✅ **KEEP** — No dedicated interactive calculator found. Differentiate with step-by-step conveyancing cost breakdown.
 
 ```
 Stamp Duty:
@@ -413,6 +417,7 @@ Registration fee: KES 5,000 (flat, Lands Registry)
 **Update:** 🔵 Annual (interest rate reviewed yearly)
 **Keywords:** "HELB loan repayment calculator", "HELB interest calculator Kenya", "how much HELB do I owe"
 **Data Source:** HELB Act + helb.co.ke repayment schedule
+**Status:** ⚠️ **COMPETITION EXISTS** — `helb.co.ke` has own calculator; `calckenya.com/helb` exists. Differentiate with: (a) repayment completion year projection, (b) impact of lump-sum payments, (c) grace period calculator.
 
 ```
 Interest: 4% p.a. simple interest
@@ -432,6 +437,7 @@ Late penalty: 5% of amount outstanding
 **Update:** 🔵 Annual (EAC budget, usually June)
 **Keywords:** "Kenya import duty calculator", "KRA customs charges", "cost to import Kenya"
 **Data Source:** EAC Customs Management Act + KRA Customs Tariff Book (downloadable PDF, kra.go.ke)
+**Status:** ⚠️ **COMPETITION EXISTS** — `carluv.co.uk/kra-motor-vehicle-import-duty-calculator/`, `autoprotokenya.com`, `dutycalc.co.ke` exist (mostly vehicle-focused). Differentiate with: (a) general goods calculator (not just vehicles), (b) 50 pre-mapped HS codes for common imports.
 
 ```
 Component breakdown per import:
@@ -454,6 +460,7 @@ CIF = Cost + Insurance + Freight
 **Update:** 🟢 Static (Finance Act 2023)
 **Keywords:** "affordable housing levy Kenya", "1.5% housing levy calculator", "AHL Kenya"
 **Data Source:** Finance Act 2023, Section 84A
+**Status:** ⚠️ **COMPETITION EXISTS** — `techwithtwin.com/tools/affordable-housing-levy-calculator` exists. Differentiate with: (a) employer + employee split view, (b) PAYE impact calculation showing before/after levy relief, (c) annual projection.
 
 ```
 Employee: 1.5% of gross salary
@@ -469,6 +476,7 @@ Net PAYE impact: shows PAYE before and after levy relief
 **Update:** 🔵 Annual (Social Health Insurance Act 2023 is reshaping NHIF → SHA)
 **Keywords:** "NHIF contribution calculator Kenya", "NHIF deduction Kenya", "how much NHIF Kenya"
 **Data Source:** NHIF Act + nhif.or.ke contribution table
+**Status:** ✅ **KEEP** — SHA transition creates confusion; clear calculator with old vs new comparison is valuable.
 **Note:** Monitor SHA (Social Health Authority) rollout — may replace NHIF bands
 
 ---
@@ -478,6 +486,7 @@ Net PAYE impact: shows PAYE before and after levy relief
 **Update:** 🔵 Annual (KRA confirms rates yearly)
 **Keywords:** "withholding tax Kenya", "WHT rates Kenya", "KRA withholding tax"
 **Data Source:** KRA — Income Tax Act withholding tax schedule
+**Status:** ⚠️ **COMPETITION EXISTS** — `taxsummaries.pwc.com` (S-level authority), `tradingeconomics.com` cover this. Differentiate with: (a) searchable by payment type, (b) plain-language explanations, (c) downloadable quick-reference card.
 
 Reference table for all withholding tax categories:
 ```
@@ -501,8 +510,7 @@ Construction (resident): 3%
 **Update:** 🔵 Annual (county finance acts, published in county gazettes)
 **Keywords:** "land rates Kenya", "county land rates", "how much are land rates Nairobi"
 **Data Source:** Individual county finance acts — research and compile per county
-
-Rates per county are expressed as a percentage of land value or a fixed amount per hectare. Store as lookup JSON: county → zone → rate. Start with Nairobi, Mombasa, Kiambu, Nakuru, Kisumu.
+**Status:** ❌ **REMOVED** — Data too fragmented. Most counties don't publish digital rate schedules. Replace with static guide on how to check land rates per county.
 
 ---
 
@@ -511,6 +519,7 @@ Rates per county are expressed as a percentage of land value or a fixed amount p
 **Update:** 🔵 Annual (IRA publishes motor insurance minimum premiums)
 **Keywords:** "car insurance Kenya cost", "minimum vehicle insurance Kenya", "IRA motor insurance"
 **Data Source:** Insurance Regulatory Authority (ira.go.ke) — motor insurance minimum premium rates
+**Status:** ⚠️ **COMPETITION EXISTS** — `calculator.co.ke/motor-insurance-calculator`, `nextinsurance.co.ke` exist. Differentiate with: (a) IRA minimum vs market rate comparison, (b) vehicle class breakdown (private/commercial/PSV).
 
 ```
 Third Party Only (minimum legal requirement):
@@ -530,6 +539,7 @@ Show: Third Party cost, estimate Comprehensive range, link to IRA for full list
 **Update:** 🔵 Annual (Labour Court gazette order, typically May)
 **Keywords:** "Kenya minimum wage 2025", "lowest salary Kenya by law", "minimum pay Kenya"
 **Data Source:** Ministry of Labour — Regulation of Wages annual order
+**Status:** ✅ **KEEP** — No dedicated interactive reference found. Data scattered across gazette notices.
 
 Full table by sector and town tier:
 - Nairobi, Mombasa, Kisumu, Nakuru, Eldoret (Tier 1)
@@ -545,6 +555,7 @@ Sectors: general, agricultural, hotel, industrial, building/construction, domest
 **Update:** 🟢 Static (LSK fee scale rarely changes)
 **Keywords:** "probate fees Kenya", "cost of writing a will Kenya", "estate administration Kenya"
 **Data Source:** Law Society of Kenya Advocates Remuneration Order + Probate and Administration Act
+**Status:** ✅ **KEEP** — No dedicated calculator found. Mark as "estimate tool, not legal advice."
 
 ```
 Will drafting (LSK scale):
@@ -565,7 +576,7 @@ This is a reference/estimate tool, not legal advice.
 **Update:** 🟡 Periodic (KNBS publishes CPI monthly)
 **Keywords:** "Kenya inflation calculator", "cost of living Kenya 2025", "purchasing power Kenya"
 **Data Source:** KNBS Monthly CPI Statistical Release (knbs.or.ke)
-**Implementation:** Download KNBS CPI Excel table monthly → store in DB → calculate deflated/inflated values
+**Status:** ❌ **REMOVED** — `yuthufu.com` already exists as Kenya CPI calculator. `fxtop.com` also covers Kenya.
 
 ---
 
@@ -574,6 +585,7 @@ This is a reference/estimate tool, not legal advice.
 **Update:** 🟢 Static (NSSF Act 2013 contribution rates — post-court-order rates)
 **Keywords:** "NSSF contribution Kenya 2025", "new NSSF rates Kenya", "NSSF deduction"
 **Data Source:** NSSF Act 2013 + Kenya Court ruling on implementation
+**Status:** ⚠️ **COMPETITION EXISTS** — `calckenya.com/nssf`, `wingubox.com`, `faidihr.com` exist. Differentiate with: (a) old vs new rate comparison with legal background, (b) employer + employee combined view.
 **Note:** Controversy around old vs new rates — explain both clearly with the legal background.
 
 ```
@@ -597,6 +609,7 @@ New rates (NSSF Act 2013, phased in):
 **Update:** 🟢 Static (KICD publishes curriculum every few years; next revision ~2027)
 **Keywords:** "CBC curriculum Kenya", "CBC learning areas", "CBC subjects per grade Kenya"
 **Data Source:** Kenya Institute of Curriculum Development (KICD) — kicd.ac.ke publishes curriculum designs as free PDFs
+**Status:** ✅ **KEEP** — No interactive explorer found. KICD PDFs are the main source. Massive parent/teacher audience.
 
 **Structure of CBC to model:**
 ```
@@ -636,6 +649,7 @@ Senior Secondary School (Grades 10–12 — being rolled out):
 **Update:** 🟢 Static
 **Keywords:** "CBC grade age Kenya", "what grade is my child CBC", "PP1 PP2 age Kenya"
 **Data Source:** KICD & Ministry of Education CBC rollout schedule
+**Status:** ✅ **KEEP** — No dedicated tool found. Only scattered blog posts. High parent demand.
 
 ```
 PP1:  turns 4 in the current year
@@ -660,8 +674,7 @@ Grade 12 (SSS 3): turns 17
 **Update:** 🔵 Annual (KUCCPS releases cluster weights after KCSE, ~March each year)
 **Keywords:** "KUCCPS cluster calculator", "cluster points Kenya", "how to calculate cluster points KUCCPS"
 **Data Source:** KUCCPS annual booklet (kuccps.net) — all cluster groupings + subject weights published free
-
-**This is one of the highest-value tools on the entire site.** Every Form 4 leaver and their parents searches for this. No good standalone tool exists.
+**Status:** ✅ **KEEP — HIGHEST VALUE TOOL** — Every Form 4 leaver and their parents searches for this. No good standalone tool exists. PDF booklets are the main source.
 
 ```
 How clusters work:
@@ -692,6 +705,7 @@ Example — Medicine (Cluster 1):
 **Update:** 🟢 Static (KNEC grading system unchanged for years)
 **Keywords:** "KCSE grade calculator Kenya", "mean grade calculator Kenya", "KNEC grading system"
 **Data Source:** KNEC grading rubric (static, public knowledge)
+**Status:** ✅ **KEEP** — No dedicated interactive calculator found. Most sites just explain the grading system. High student demand.
 
 ```
 Grade points: A=12, A-=11, B+=10, B=9, B-=8, C+=7, C=6, C-=5, D+=4, D=3, D-=2, E=1
@@ -726,6 +740,7 @@ Mean grade → Letter grade boundaries:
 **Update:** 🔵 Annual (MoE circular, typically December for following year)
 **Keywords:** "Kenya school term dates 2025", "MoE school calendar Kenya", "school opening dates Kenya 2025"
 **Data Source:** Ministry of Education press releases and annual circular (education.go.ke)
+**Status:** ✅ **KEEP** — Available on blogs but no interactive calendar with countdown/printable features.
 
 **Display:** Interactive calendar + printable A4 card for 3 years at a time (current + next 2).
 Include: Term start, end, mid-term break, exams period, national holidays within term.
@@ -737,8 +752,7 @@ Include: Term start, end, mid-term break, exams period, national holidays within
 **Update:** 🔵 Annual
 **Keywords:** "primary schools Nairobi", "best secondary schools Kenya", "CBC schools near me"
 **Data Source:** Ministry of Education NEMIS dataset (data.education.go.ke — publicly available) + KNEC school codes
-
-**Filters:** County, Sub-county, Level (PP/Primary/Secondary/TVET), Type (Public/Private/Mission/International), Gender (Mixed/Boys/Girls), Boarding/Day
+**Status:** ❌ **REMOVED** — NEMIS data exists but is not publicly accessible in a clean, machine-readable format. Data access issue.
 
 ---
 
@@ -747,6 +761,7 @@ Include: Term start, end, mid-term break, exams period, national holidays within
 **Update:** 🔵 Annual (KNEC releases results ~March)
 **Keywords:** "KCSE results 2024 school rankings", "best KCSE schools Kenya", "top 100 KCSE schools"
 **Data Source:** KNEC school-level results (published at knec.ac.ke after results announcement) + news aggregation
+**Status:** ✅ **KEEP** — Requires manual data entry from news sources but high traffic value.
 
 **Display:** Sortable table — School | County | Candidates | Mean Score | A grades | Previous year comparison
 
@@ -757,6 +772,7 @@ Include: Term start, end, mid-term break, exams period, national holidays within
 **Update:** 🟢 Static (TSC requirements rarely change)
 **Keywords:** "TSC registration Kenya", "how to register as teacher Kenya", "TSC certificate fees"
 **Data Source:** Teachers Service Commission (tsc.go.ke) — published fee schedule and requirements
+**Status:** ✅ **KEEP** — `tsc.go.ke` has info but no interactive tool. Static guide is fine.
 
 Static reference page: required documents, fees (broken down by level: P1, Diploma, Degree, Masters), online portal link, processing time, renewal guide.
 
@@ -767,6 +783,7 @@ Static reference page: required documents, fees (broken down by level: P1, Diplo
 **Update:** 🟢 Static (NTSA requirements rarely change)
 **Keywords:** "driving schools Nairobi", "driving test Kenya NTSA", "how to get driving license Kenya"
 **Data Source:** NTSA (ntsa.go.ke) + crowd-sourced list of licensed driving schools
+**Status:** ✅ **KEEP** — NTSA has a list but it's a PDF, not searchable. Parse once, make searchable.
 
 Static guide: License classes (A, B, C, BCE, DL), required documents, test process, fees per class. Directory of NTSA-licensed schools searchable by town.
 
@@ -783,6 +800,7 @@ Static guide: License classes (A, B, C, BCE, DL), required documents, test proce
 **Update:** 🔴 Live (KPLC posts new outages 3–5x per week)
 **Keywords:** "KPLC power outage today", "Kenya Power blackout schedule", "KPLC planned outage Nairobi"
 **Data Source:** Kenya Power website: `kplc.co.ke/category/view/50/planned-outages`
+**Status:** ✅ **KEEP — CRITICAL GAP** — KPLC's old "Power Alert" site from 2014 is defunct. No live outage tracker exists in 2026. This is a massive gap.
 
 **Implementation:**
 ```
@@ -820,6 +838,7 @@ Tools output:
 **Update:** 🔵 Annual (EPRA approves KPLC tariff revisions ~annually)
 **Keywords:** "KPLC units calculator Kenya", "how many units will I get for KES 500", "electricity token calculator Kenya"
 **Data Source:** KPLC/EPRA electricity tariff — published at epra.go.ke
+**Status:** ✅ **KEEP** — No Kenya-specific prepaid token calculator found.
 
 **KPLC Tariff Bands (Domestic — DC tariff as of 2024):**
 ```
@@ -848,6 +867,7 @@ Note: Prepaid tokens also deduct fixed charges across purchases
 **Update:** 🟡 Periodic (EPRA announces on the 14th each month)
 **Keywords:** "Kenya petrol price today", "diesel price Kenya", "EPRA fuel prices 2025"
 **Data Source:** Energy and Petroleum Regulatory Authority — epra.go.ke (monthly PDF gazette notice)
+**Status:** ✅ **KEEP** — EPRA publishes PDFs but no clean, interactive tracker with historical charts found.
 
 **Display:** Table of petrol/diesel/kerosene per county/region + month-over-month change chart. "Updated: [date]" badge prominently displayed.
 
@@ -858,6 +878,7 @@ Note: Prepaid tokens also deduct fixed charges across purchases
 **Update:** 🟡 Periodic (water utilities revise tariffs every 1–2 years, WASREB approves)
 **Keywords:** "Nairobi water bill calculator", "NCWSC tariff", "how much water bill Kenya"
 **Data Source:** Individual water utilities — NCWSC, Mombasa Water, KIWASCO, Nakuru Water
+**Status:** ✅ **KEEP** — Start with Nairobi (NCWSC) only. Other utilities have tariffs but may not be digitally accessible.
 
 Cover at least: Nairobi (NCWSC), Mombasa, Kisumu, Nakuru, Eldoret.
 Tariff JSON per utility + step-function billing calculation.
@@ -869,6 +890,7 @@ Tariff JSON per utility + step-function billing calculation.
 **Update:** 🟡 Periodic (EPRA also regulates LPG prices — monthly announcement)
 **Keywords:** "cooking gas price Kenya", "LPG price Kenya today", "gas cylinder refill cost Kenya"
 **Data Source:** EPRA monthly LPG price circular
+**Status:** ✅ **KEEP** — EPRA publishes monthly but data is in PDF. Scrape PDF monthly.
 
 **Display:** Prices per region for 3kg, 6kg, 13kg, 35kg LPG cylinders (different brands: Total, K-Gas, Rubis, Hashi, OrientalGas).
 
@@ -879,6 +901,7 @@ Tariff JSON per utility + step-function billing calculation.
 **Update:** 🟢 Static (pure math tool using KPLC tariff — update tariff rate annually)
 **Keywords:** "solar panel cost Kenya", "solar ROI calculator Kenya", "should I install solar Kenya"
 **Data Source:** KPLC tariff (for comparison) + average Kenya solar irradiance (static — Kenya sits on equator, ~5.5–6.5 kWh/m²/day depending on region)
+**Status:** ✅ **KEEP — COMPLETELY UNIQUE** — No Kenya-specific solar calculator found. Only generic South Africa forum discussions.
 
 ```
 Inputs:
@@ -911,6 +934,7 @@ Solar irradiance by region (static table):
 **Update:** 🔵 Annual (CA publishes Quality of Service reports biannually)
 **Keywords:** "fastest internet Kenya", "Kenya ISP comparison 2025", "Safaricom vs Zuku vs Faiba"
 **Data Source:** Communications Authority QoS Monitoring Reports (ca.go.ke) + Ookla/nPerf public data
+**Status:** ✅ **KEEP** — CA publishes QoS reports but no clean comparison tool found. Compile from CA reports + speed test data.
 
 **Display:** Table comparing Safaricom, Zuku, Faiba, Airtel, Liquid, Starlink Kenya — average speeds, counties covered, packages available, price range.
 
@@ -927,6 +951,7 @@ Solar irradiance by region (static table):
 **Update:** 🔴 Live (daily scrape from PPRA)
 **Keywords:** "Kenya government tenders 2025", "PPRA tenders", "government procurement Kenya"
 **Data Source:** Public Procurement Regulatory Authority (ppra.go.ke) — all public tenders published free
+**Status:** ✅ **KEEP** — No good PPRA aggregator exists. PPRA site is basic and not user-friendly. High SME value.
 
 **Scraper:** Daily GitHub Actions job → parse tender notices → store in `tenders` table
 **Features:** Filters by ministry, county, sector, value range, deadline; email alerts; keyword search.
@@ -942,6 +967,7 @@ Solar irradiance by region (static table):
 **Update:** 🟢 Static (update when Parliament amends acts — monitor Kenya Gazette)
 **Keywords:** "Kenya laws search", "Kenya acts of parliament", "Kenya legislation online"
 **Data Source:** Kenya Law (kenyalaw.org) — all acts are free and searchable
+**Status:** ✅ **KEEP** — `kenyalaw.org` exists but is not user-friendly. Build better discovery layer.
 
 **What to build:** A curated, plain-language index of the 200 most relevant acts to everyday Kenyans (Tax, Land, Traffic, Employment, Marriage, Succession, Companies, Public Health, etc.) with:
 - Act name, Cap number, year
@@ -958,6 +984,7 @@ Solar irradiance by region (static table):
 **Update:** 🟢 Static (boundaries set by IEBC after 2017/2022 elections — next change ~2027)
 **Keywords:** "find my ward Kenya", "my constituency Kenya", "who is my MP Kenya"
 **Data Source:** IEBC — all wards, constituencies, and counties (static data, downloadable)
+**Status:** ✅ **KEEP** — IEBC data exists but is static. No interactive finder found.
 
 **Input:** County + subcounty dropdown (or typed name) → output:
 - Constituency name
@@ -977,6 +1004,7 @@ Elected officials info: update after each election (2022 data valid until 2027).
 **Update:** 🔵 Annual (gazette supplement for transferable holidays when they fall on weekends)
 **Keywords:** "Kenya public holidays 2025", "Kenya bank holidays", "Kenya gazetted holidays"
 **Data Source:** Kenya Public Holidays Act (Cap 110) + annual gazette notice
+**Status:** ✅ **KEEP** — Many calendars exist but no Kenya-specific one with countdown + iCal download + mobile notifications.
 
 **Features:** Year view, countdown timer to next holiday, iCal (.ics) download, mobile notification subscribe.
 
@@ -987,6 +1015,7 @@ Elected officials info: update after each election (2022 data valid until 2027).
 **Update:** 🟢 Static (Traffic Act — rarely amended)
 **Keywords:** "NTSA fines Kenya 2025", "traffic offence fines Kenya", "speeding fine Kenya"
 **Data Source:** Traffic Act (Cap 403) + NTSA published fine schedule
+**Status:** ✅ **KEEP** — Reference tables exist but no searchable, filterable tool with demerit points found.
 
 **Display:** Searchable + filterable table by category:
 - Speed offences
@@ -1006,6 +1035,7 @@ Include: fine amount, demerit points (NTSA points system), arrest-worthy vs. on-
 **Update:** 🟡 Periodic (Kenya moved to e-Visa in 2023; ETA introduced Dec 2023)
 **Keywords:** "Kenya visa requirements", "do I need visa for Kenya", "Kenya ETA cost"
 **Data Source:** Kenya Department of Immigration (immigration.go.ke) + evisa.go.ke
+**Status:** ✅ **KEEP** — `immigration.go.ke` and `evisa.go.ke` have info but no country lookup tool.
 
 **Important:** Kenya replaced tourist visas with an **ETA (Electronic Travel Authorisation)** for all non-EAC nationals in January 2024.
 
@@ -1027,6 +1057,7 @@ Build a country lookup tool: enter nationality → output: ETA required / EAC ex
 **Update:** 🟢 Static (fees rarely change without budget announcement)
 **Keywords:** "Kenya passport fee 2025", "national ID replacement cost Kenya", "alien ID Kenya"
 **Data Source:** Department of Immigration fee schedule + National Registration Bureau (NRB)
+**Status:** ✅ **KEEP** — Available on immigration site but not as a clean reference.
 
 ```
 Passport (adult):
@@ -1053,6 +1084,7 @@ Processing times, required documents, Huduma Centre locations.
 **Update:** 🟢 Static (update when new stations open — infrequent)
 **Keywords:** "police station near me Kenya", "Kenya police contacts", "nearest police station Nairobi"
 **Data Source:** National Police Service — nps.go.ke publishes station directory; supplement with manual research
+**Status:** ✅ **KEEP** — `nps.go.ke` has directory but not searchable by county.
 
 **Data:** Station name, county, subcounty, phone number, GPS coordinates (from OpenStreetMap). Make searchable by county/subcounty.
 
@@ -1063,6 +1095,7 @@ Processing times, required documents, Huduma Centre locations.
 **Update:** 🔵 Annual (Controller of Budget annual report, published ~October)
 **Keywords:** "county government budget Kenya", "Nairobi county budget 2025", "Controller of Budget report"
 **Data Source:** Controller of Budget (cob.go.ke) — annual county budget implementation reports (free PDFs)
+**Status:** ✅ **KEEP** — Requires significant scraping effort but high value for researchers/journalists.
 
 Parse and visualize for all 47 counties: revenue collected, expenditure, absorption rate, own-source revenue vs national allocation.
 
@@ -1073,6 +1106,7 @@ Parse and visualize for all 47 counties: revenue collected, expenditure, absorpt
 **Update:** 🟢 Static until 2027 (next general election)
 **Keywords:** "Kenya election results 2022", "presidential results county by county", "Kenya constituency results"
 **Data Source:** IEBC — post-election gazette notices (all results gazetted and public)
+**Status:** ✅ **KEEP** — IEBC gazettes exist. Data is public but not in clean format.
 
 Build a queryable archive of 2022 results: presidential (by constituency), gubernatorial (by county), parliamentary (by constituency), Senate (by county).
 
@@ -1083,6 +1117,7 @@ Build a queryable archive of 2022 results: presidential (by constituency), guber
 **Update:** 🟢 Static (EMCA Act — rarely amended)
 **Keywords:** "NEMA EIA Kenya", "environmental impact assessment Kenya", "when do you need EIA Kenya"
 **Data Source:** Environmental Management and Coordination Act (EMCA) + NEMA (nema.go.ke)
+**Status:** ✅ **KEEP** — `nema.go.ke` has info but not well-organized.
 
 Static guide: which projects require EIA, EIA vs ESIA vs audit, NEMA fees schedule, timelines, licensed EIA experts directory link.
 
@@ -1099,6 +1134,7 @@ Static guide: which projects require EIA, EIA vs ESIA vs audit, NEMA fees schedu
 **Update:** 🟢 Static (county codes assigned at independence + NTSA extensions)
 **Keywords:** "Kenya number plate meaning", "KDA number plate county", "Kenya car registration decoder"
 **Data Source:** NTSA publication + Traffic Act — all county prefix codes are public record
+**Status:** ✅ **KEEP** — No dedicated decoder found. Only scattered forum posts.
 
 ```
 Examples:
@@ -1129,6 +1165,7 @@ Diplomatic: CD plates (decoding by series)
 **Update:** 🟢 Static (CA allocates number ranges — rarely changes)
 **Keywords:** "Kenya phone number prefix", "which network is 0722", "Safaricom Airtel Telkom prefixes"
 **Data Source:** Communications Authority (ca.go.ke) — number allocation plans published
+**Status:** ✅ **KEEP** — No comprehensive, up-to-date guide found.
 
 ```
 Safaricom: 0700-0729, 0740-0743, 0745, 0757-0759, 0790-0799, 0110-0119
@@ -1155,6 +1192,7 @@ Also: International dialing from Kenya:
 **Update:** 🟢 Static (scraped once per year from bus company websites)
 **Keywords:** "Nairobi to Mombasa bus", "Easy Coach routes Kenya", "bus timetable Kenya"
 **Data Source:** Scrape once from: Easy Coach, Modern Coast, Guardian Angel, Dreamline Express, Mash, Tahmeed Coach websites
+**Status:** ✅ **KEEP** — Bus company websites exist but no aggregator found.
 
 **Data:** Company, Route, Departure times, Duration, Approx fare (range), Booking link, Ratings.
 Build once, verify annually. Supplement with user reports.
@@ -1166,17 +1204,7 @@ Build once, verify annually. Supplement with user reports.
 **Update:** 🟢 Static (road network distances rarely change)
 **Keywords:** "distance Nairobi Mombasa", "how far is Kisumu from Nairobi", "Kenya road distance"
 **Data Source:** Kenya Roads Board (krb.go.ke) + known road distances compiled once
-
-**Implementation:** Pre-compute and store a distance matrix for the 50 major Kenyan towns. No live API needed.
-
-```
-Nairobi → Mombasa:  485 km (A109), ~6 hours
-Nairobi → Kisumu:   340 km (B1), ~5 hours
-Nairobi → Nakuru:   158 km (A104), ~2 hours
-Nairobi → Eldoret:  310 km (A104), ~4 hours
-Nairobi → Malindi:  595 km, ~7 hours
-... (store 50×50 matrix = 2,450 pairs)
-```
+**Status:** ❌ **REMOVED** — `distancecalculator.globefeed.com`, `distancecalculator.himmera.com`, `distancefromto.net` — multiple mature calculators exist.
 
 ---
 
@@ -1185,6 +1213,7 @@ Nairobi → Malindi:  595 km, ~7 hours
 **Update:** 🔵 Annual (NTSA re-publishes licensed SACCO list)
 **Keywords:** "matatu SACCO Kenya", "licensed matatu SACCOs", "NTSA registered transport SACCOs"
 **Data Source:** NTSA (ntsa.go.ke) — licensed PSV SACCOs (downloadable, free)
+**Status:** ✅ **KEEP** — NTSA publishes list but it's a PDF, not searchable.
 
 ---
 
@@ -1193,6 +1222,7 @@ Nairobi → Malindi:  595 km, ~7 hours
 **Update:** 🟢 Static (KWS fees update occasionally; park existence is permanent)
 **Keywords:** "Kenya national parks fees", "KWS park fees 2025", "Kenya safari parks"
 **Data Source:** Kenya Wildlife Service (kws.go.ke) — fee schedule + park directory
+**Status:** ✅ **KEEP** — `kws.go.ke` has fee schedule but no comprehensive directory with all parks.
 
 ```
 For each park/conservancy:
@@ -1215,6 +1245,7 @@ For each park/conservancy:
 **Update:** 🔵 Annual (routes rarely change; fares change frequently — show ranges only)
 **Keywords:** "Nairobi to Mombasa flight", "domestic flights Kenya", "Kenya airways routes"
 **Data Source:** Kenya Airports Authority (kaa.go.ke) + airline route maps (Kenya Airways, JamboJet, Fly540, AirKenya)
+**Status:** ✅ **KEEP** — Airline websites have routes but no clean guide found.
 
 **Static guide:** Which airlines fly which routes, approximate fares, airport information (JKIA, MIA, Kisumu, Eldoret, Malindi, Lamu, Ukunda, Nanyuki).
 
@@ -1225,6 +1256,7 @@ For each park/conservancy:
 **Update:** 🟢 Static (NTSA classification rarely changes)
 **Keywords:** "driving license classes Kenya", "how to get driving license Kenya", "NTSA driving test"
 **Data Source:** NTSA (ntsa.go.ke) + Traffic Act
+**Status:** ✅ **KEEP** — NTSA site has info but scattered.
 
 ```
 License Classes:
@@ -1251,6 +1283,7 @@ Process:
 **Update:** 🟢 Static (NTSA fees rarely change)
 **Keywords:** "NTSA fees Kenya", "vehicle inspection cost Kenya", "NTSA logbook transfer fee"
 **Data Source:** NTSA fee schedule (ntsa.go.ke)
+**Status:** ✅ **KEEP** — Available on NTSA site.
 
 ```
 Vehicle inspection (PSV): KES 1,000
@@ -1275,6 +1308,7 @@ Number plate (new): KES 3,000
 **Update:** 🟡 Periodic (NHIF updates accreditation list quarterly)
 **Keywords:** "NHIF accredited hospitals Kenya", "NHIF hospital near me", "NHIF clinic Nairobi"
 **Data Source:** NHIF accredited providers list (nhif.or.ke — downloadable PDF, free)
+**Status:** ✅ **KEEP** — Britam has a hospital locator but it's insurance-focused, not NHIF-accredited specific. The NHIF PDF lists exist but are not searchable.
 
 **Implementation:** Parse quarterly NHIF hospital PDF → store in Appwrite → searchable by county, subcounty, and level (Level 2 dispensary → Level 6 national referral hospital).
 
@@ -1285,6 +1319,7 @@ Number plate (new): KES 3,000
 **Update:** 🟢 Static (MOH hospital classification system rarely changes)
 **Keywords:** "hospital levels Kenya", "Level 5 hospital Kenya", "what is Level 6 hospital Kenya"
 **Data Source:** Ministry of Health Kenya — Kenya Essential Package for Health (KEPH)
+**Status:** ✅ **KEEP** — MOH has KEPH document but not as an interactive reference.
 
 ```
 Level 1: Community (community health workers)
@@ -1304,6 +1339,7 @@ Static content page — very searchable and high-dwell-time.
 **Update:** 🔵 Annual (PPB updates registered pharmacies list)
 **Keywords:** "registered pharmacy Kenya", "PPB pharmacies Kenya", "verify pharmacy Kenya"
 **Data Source:** Pharmacy and Poisons Board (ppb.go.ke) — publishes list of licensed premises
+**Status:** ✅ **KEEP** — PPB publishes list but it's a PDF, not searchable.
 
 Parse once annually, make searchable by county.
 
@@ -1314,6 +1350,7 @@ Parse once annually, make searchable by county.
 **Update:** 🟢 Static (WHO/MOH growth charts and KEPI vaccination schedule very stable)
 **Keywords:** "Kenya vaccination schedule baby", "KEPI immunisation Kenya", "child growth chart Kenya"
 **Data Source:** MOH Kenya Expanded Programme on Immunization (KEPI) + WHO child growth standards
+**Status:** ✅ **KEEP** — No interactive schedule with growth charts found.
 
 ```
 KEPI Schedule:
@@ -1336,6 +1373,7 @@ Input DOB → output: current age, expected weight/height range, next vaccines d
 **Update:** 🟢 Static (KNBTS centres rarely move)
 **Keywords:** "blood donation Kenya", "KNBTS blood bank", "where to donate blood Nairobi"
 **Data Source:** Kenya National Blood Transfusion Service (knbts.or.ke)
+**Status:** ✅ **KEEP** — `knbts.or.ke` has list.
 
 All KNBTS regional centres + major hospital blood bank contacts. Completely static.
 
@@ -1346,6 +1384,7 @@ All KNBTS regional centres + major hospital blood bank contacts. Completely stat
 **Update:** 🔵 Annual (MOH gazetted health fees; SHA/NHIF benefit schedule)
 **Keywords:** "cost of surgery Kenya", "hospital charges Kenya", "medical fees Kenya public hospital"
 **Data Source:** Ministry of Health — Legal Notice for public hospital charges + NHIF benefit package
+**Status:** ✅ **KEEP** — MOH gazette exists but is not well-distributed.
 
 ```
 Public Hospital Charges (MOH gazette):
@@ -1367,6 +1406,7 @@ NHIF/SHA benefits: what each procedure qualifies for
 **Update:** 🟡 Periodic (KMPDC updates register quarterly)
 **Keywords:** "verify doctor Kenya", "KMPDC registered doctors", "is my doctor registered Kenya"
 **Data Source:** Kenya Medical Practitioners and Dentists Council (kmpdc.go.ke) — online verification portal
+**Status:** ✅ **KEEP** — KMPDC portal exists but is clunky. Build better search interface. High trust signal.
 
 **Build:** A user-friendly search interface that queries KMPDC's public register. Frame as "Verify your doctor's registration" — high trust signal for users.
 
@@ -1383,27 +1423,7 @@ NHIF/SHA benefits: what each procedure qualifies for
 **Update:** 🟢 Static (eCitizen fees rarely change without budget notice)
 **Keywords:** "cost of registering business Kenya", "company registration Kenya fees", "eCitizen business registration"
 **Data Source:** eCitizen fee schedule (ecitizen.go.ke) + Registrar of Companies
-
-```
-Sole Proprietorship (Business Name):
-  Business name search: KES 150
-  Registration: KES 950
-  Total: ~KES 1,100
-
-Limited Liability Partnership (LLP):
-  Name reservation: KES 150
-  Registration: KES 10,000
-
-Private Limited Company:
-  Name reservation: KES 150
-  Registration (< KES 100,000 share capital): KES 10,650
-  Stamp duty on memorandum: KES 200
-  CR12 (company search): KES 650
-
-Public Limited Company: KES 25,000+
-NGO Registration: KES 15,000
-Co-operative Society: KES 2,000–5,000
-```
+**Status:** ❌ **REMOVED** — `biasharaguide.co.ke/tools/registration-calculator/` already exists.
 
 ---
 
@@ -1412,8 +1432,7 @@ Co-operative Society: KES 2,000–5,000
 **Update:** 🔵 Annual (SASRA publishes licensed SACCOs annually)
 **Keywords:** "Kenya SACCO directory", "licensed SACCOs Kenya", "best SACCO Kenya"
 **Data Source:** SASRA (sasra.go.ke) — annual list of licensed deposit-taking and non-deposit SACCOs
-
-**Display:** Name, type (DT-SACCO/Non-DT), county, membership focus (teachers/police/matatu/general), assets, contact. Searchable + filterable.
+**Status:** ❌ **REMOVED** — `saccolink.com` (357 verified SACCOs), `saccohisa.co.ke` — mature directories exist.
 
 ---
 
@@ -1422,15 +1441,7 @@ Co-operative Society: KES 2,000–5,000
 **Update:** 🔵 Annual (Finance Act can add/remove zero-rated or exempt items)
 **Keywords:** "VAT exempt goods Kenya", "zero rated VAT Kenya", "KRA VAT guide"
 **Data Source:** VAT Act 2013 (Cap 476) + annual Finance Acts amendments
-
-Three-category reference:
-```
-Standard-rated (16% VAT): most goods and services
-Zero-rated (0% VAT): exports, raw food (unga, milk, meat, eggs, cooking oil), inputs for manufacturing
-Exempt (no VAT): financial services, insurance, medical services, educational services, residential rent, public transport
-```
-
-**Make it a searchable lookup:** Type a product/service → see its VAT treatment.
+**Status:** ❌ **REMOVED** — `anrok.com` has Kenya VAT guide; KRA site has the information.
 
 ---
 
@@ -1439,6 +1450,7 @@ Exempt (no VAT): financial services, insurance, medical services, educational se
 **Update:** 🟢 Static (KIPI fees rarely change)
 **Keywords:** "trademark registration Kenya cost", "KIPI Kenya trademark fees", "protect business name Kenya"
 **Data Source:** Kenya Industrial Property Institute (kipi.go.ke) — published fee schedule
+**Status:** ✅ **KEEP** — `kipi.go.ke` has fee schedule but no interactive calculator.
 
 ```
 Trademark:
@@ -1466,6 +1478,7 @@ Patent:
 **Update:** 🔵 Annual (new listings rare; profile data stable)
 **Keywords:** "NSE listed companies Kenya", "companies on Nairobi Stock Exchange", "Kenya stock market companies"
 **Data Source:** Nairobi Securities Exchange (nairobi.securities.exchange or nse.co.ke) — all listed companies are public
+**Status:** ✅ **KEEP** — No good browsable directory with sector info found.
 
 **Build:** Browsable/searchable directory of all NSE-listed companies with: sector, market segment (GEMS/MIMS/Main), listing date, brief description, company website, share price data link (link to NSE — don't scrape live prices).
 
@@ -1476,6 +1489,7 @@ Patent:
 **Update:** 🔵 Annual (IRA publishes premium benchmarks annually)
 **Keywords:** "car insurance Kenya 2025", "health insurance Kenya comparison", "life insurance Kenya"
 **Data Source:** Insurance Regulatory Authority (ira.go.ke) — publishes licensed insurers + product approvals
+**Status:** ✅ **KEEP** — IRA site has info but not well-organized.
 
 **Content:** Types of insurance, regulatory minimum premiums (motor), what NHIF/SHA covers vs needs top-up, how to verify an insurer is licensed.
 
@@ -1486,6 +1500,7 @@ Patent:
 **Update:** 🔵 Annual (EARB updates register annually)
 **Keywords:** "verify real estate agent Kenya", "registered estate agent Kenya", "EARB Kenya"
 **Data Source:** Estate Agents Registration Board (earb.go.ke) — licensed agents register
+**Status:** ✅ **KEEP** — EARB register exists but no good search interface. Critical consumer protection tool.
 
 **Build:** Search by agent name or firm → verify registration status. Critical consumer protection tool. Currently no good standalone search interface exists.
 
@@ -1496,6 +1511,7 @@ Patent:
 **Update:** 🟢 Static (EAC Customs Act + Kenya customs regulations — rarely change)
 **Keywords:** "what can I bring into Kenya", "Kenya customs restrictions", "prohibited items Kenya airport"
 **Data Source:** Kenya Revenue Authority Customs & Border Control + EAC Customs Management Act
+**Status:** ✅ **KEEP** — KRA has info but scattered.
 
 ```
 Absolutely prohibited: narcotics, counterfeit currency, pornography, illegal firearms, endangered species products (CITES)
@@ -1510,6 +1526,7 @@ Traveller allowances: USD 500 goods duty-free, KES 1,000,000 cash declaration th
 **Update:** 🟢 Static until 2029 (KNBS 2019 census — next census ~2029)
 **Keywords:** "Nairobi population 2025", "Kenya county population", "KNBS census Kenya"
 **Data Source:** KNBS 2019 Census results (knbs.or.ke — all data published as free downloads)
+**Status:** ✅ **KEEP** — KNBS 2019 census data is available and well-documented.
 
 **For each of 47 counties:** Population, number of households, area (km²), population density, urban/rural split, male/female ratio, largest town, % with piped water, % with electricity. Chart: population comparison bars.
 
@@ -1520,6 +1537,7 @@ Traveller allowances: USD 500 goods duty-free, KES 1,000,000 cash declaration th
 **Update:** 🟢 Static (NGO Coordination Act rarely changes)
 **Keywords:** "how to register NGO Kenya", "NGO registration cost Kenya", "NGO board Kenya"
 **Data Source:** NGO Co-ordination Board (ngobureau.go.ke) + Ministry of Interior
+**Status:** ✅ **KEEP** — `ngobureau.go.ke` has info but not as a clean guide.
 
 ```
 NGO Registration:
@@ -1548,6 +1566,7 @@ Distinguish:
 **Update:** 🟢 Static (Posta Kenya rarely opens new post offices)
 **Keywords:** "Kenya postal codes", "Nairobi postal code", "P.O. Box postal code Kenya"
 **Data Source:** Posta Kenya (posta.co.ke) — publishes full directory
+**Status:** ✅ **KEEP** — No good searchable directory found. Posta Kenya PDF is not user-friendly.
 
 **Search:** By town name or code → returns: code, town name, county, nearest major post office.
 
@@ -1558,6 +1577,7 @@ Distinguish:
 **Update:** 🟢 Static (ethnic/linguistic geography is extremely stable)
 **Keywords:** "languages spoken in Kenya", "Kenya ethnic groups", "Kenyan tribes and languages"
 **Data Source:** KNBS 2019 Census language data + ethnologue.com (open data)
+**Status:** ✅ **KEEP** — No interactive Kenya languages map found.
 
 **Build:** Interactive map (Leaflet.js) showing which language/dialect is predominant per county/subcounty. Supplemented by: speaker population, language family (Bantu/Nilotic/Cushitic), official status.
 
@@ -1568,6 +1588,7 @@ Distinguish:
 **Update:** 🟢 Static (historical climate averages change only over decades)
 **Keywords:** "Kenya rainfall by county", "when does it rain in Kenya", "Kenya climate zones"
 **Data Source:** Kenya Meteorological Department (meteo.go.ke) — publishes historical rainfall normals (1981-2010 climate normals — free)
+**Status:** ✅ **KEEP** — No county-level interactive climate tool found. KMD has climate normals data.
 
 **For each county:** Long rains (March–May), Short rains (Oct–Dec), dry season, average annual rainfall (mm), climate zone (Highland/Savanna/Arid/Semi-arid/Coastal).
 
@@ -1580,6 +1601,7 @@ Distinguish:
 **Update:** 🟢 Static (new UNESCO listings are rare; NMK sites are permanent)
 **Keywords:** "Kenya national museums", "UNESCO heritage sites Kenya", "Kenya cultural heritage"
 **Data Source:** National Museums of Kenya (museums.or.ke) + UNESCO World Heritage list
+**Status:** ✅ **KEEP** — `museums.or.ke` has info but not as a comprehensive directory.
 
 ```
 UNESCO World Heritage Sites in Kenya:
@@ -1599,6 +1621,7 @@ NMK Museums by county + opening hours + entry fees
 **Update:** 🔴 Live (CBK publishes daily at ~1PM)
 **Keywords:** "dollar to Kenya shilling today", "CBK exchange rates", "Kenya forex rates"
 **Data Source:** Central Bank of Kenya (centralbank.go.ke) — daily rates feed
+**Status:** ✅ **KEEP** — CBK site has rates but no clean historical chart tool.
 
 ---
 
@@ -1607,6 +1630,7 @@ NMK Museums by county + opening hours + entry fees
 **Update:** 🟢 Static (new professional bodies are rare; existing ones don't move)
 **Keywords:** "Kenya professional bodies", "how to verify professional Kenya", "professional registration Kenya"
 **Data Source:** Research and compile once from individual body websites
+**Status:** ✅ **KEEP — COMPLETELY UNIQUE** — No comprehensive directory of all ~35 bodies found.
 
 **Comprehensive directory of all ~35 professional regulatory bodies:**
 
@@ -1634,6 +1658,7 @@ Make searchable: enter profession → get the regulatory body, verification link
 **Update:** 🔵 Annual (data release schedules published by agencies at year start)
 **Keywords:** "Kenya GDP release date", "KNBS data release calendar", "Kenya CPI announcement"
 **Data Source:** KNBS, CBK, and National Treasury release calendars (all publish annually)
+**Status:** ✅ **KEEP** — No Kenya-specific economic calendar found.
 
 ```
 Monthly:
@@ -1658,8 +1683,7 @@ Annual:
 **URL:** `/tools/kenya-time-zone/`
 **Update:** 🟢 Static (Kenya is permanently at UTC+3, no DST)
 **Keywords:** "Kenya time zone", "EAT time zone", "calling Kenya from UK time"
-
-Simple world clock with Kenya (EAT, UTC+3) pinned, showing current offset vs major cities. Guide to calling Kenya: country code +254, how to dial from UK/US/UAE/India.
+**Status:** ❌ **REMOVED** — Too generic. Generic time zone info available everywhere. Not Kenya-specific enough to justify a dedicated tool.
 
 ---
 
@@ -1668,6 +1692,7 @@ Simple world clock with Kenya (EAT, UTC+3) pinned, showing current offset vs maj
 **Update:** 🟢 Static (nutritional data for traditional foods is very stable)
 **Keywords:** "ugali calories", "Kenya food nutrition facts", "nyama choma nutritional value"
 **Data Source:** FAO/WHO food composition tables for Sub-Saharan African foods (free) + Kenya-specific data from KARI/Kenya Medical Research Institute (KEMRI)
+**Status:** ✅ **KEEP — COMPLETELY UNIQUE** — No traditional Kenyan food nutrition database exists.
 
 **Build a nutrition lookup for 80–100 common Kenyan foods:**
 Ugali, sukuma wiki, nyama choma, githeri, irio, mukimo, pilau, mandazi, chapati, mutura, matoke, omena, tilapia, uji, chai, samosa, roasted maize, groundnuts...
@@ -1681,6 +1706,7 @@ For each: calories per 100g, protein, carbs, fat, fibre, key micronutrients. Com
 **Update:** 🔵 Annual (compile from KNBS Labour Force Survey + KIPPRA reports)
 **Keywords:** "average salary Kenya by profession", "Kenya salary guide 2025", "how much do engineers earn Kenya"
 **Data Source:** KNBS Labour Force Reports + Kenya Salary Survey (KPMG Kenya publishes annually, partially public)
+**Status:** ✅ **KEEP** — Data is sparse but no dedicated tool exists. Mark as "estimates based on available data."
 
 ---
 
@@ -1695,6 +1721,7 @@ For each: calories per 100g, protein, carbs, fat, fibre, key micronutrients. Com
 **Update:** 🟢 Static (seasonal calendar based on long-term rainfall patterns — rarely changes)
 **Keywords:** "Kenya crop planting calendar", "when to plant maize Kenya", "Kenya farming seasons"
 **Data Source:** Kenya Agricultural and Livestock Research Organization (KALRO) + Ministry of Agriculture seasonal planting guides
+**Status:** ✅ **KEEP** — KALRO has guides but not interactive. No county-specific planting calendar found.
 
 ```
 Long Rains Season (March–May):
@@ -1719,6 +1746,7 @@ By county/region:
 **Update:** 🟢 Static (soil geography doesn't change)
 **Keywords:** "Kenya soil types map", "best soil for farming Kenya county", "Kenya soil suitability"
 **Data Source:** Kenya Soil Survey (Kenya Soil and Terrain database — available from FAO free) + KARI soil research
+**Status:** ✅ **KEEP** — FAO/KARI data exists but not in user-friendly format. No interactive soil map for Kenya found.
 
 **Display:** Leaflet map with soil type layers per county/region. For each soil type: name, texture, best crops, pH range, common deficiencies, improvement tips.
 
@@ -1729,6 +1757,7 @@ By county/region:
 **Update:** 🟡 Periodic (NAMC/Ministry of Agriculture publishes weekly market reports)
 **Keywords:** "cattle price Kenya today", "sheep price Nairobi market", "goat prices Kenya 2025"
 **Data Source:** National Agriculture and Livestock Markets Commission (NALMC) + Ministry of Agriculture weekly market reports (free)
+**Status:** ✅ **KEEP** — NALMC has weekly reports but not in clean format. Requires manual data entry or PDF parsing.
 
 **Display:** Table of major livestock markets (Naivasha, Muthurwa, Kiserian, Athi River, etc.) with cattle/sheep/goat price ranges per week.
 
@@ -1739,6 +1768,7 @@ By county/region:
 **Update:** 🔵 Annual (government fertilizer subsidy program changes each season)
 **Keywords:** "subsidized fertilizer Kenya 2025", "eCitizen fertilizer order Kenya", "DAP price Kenya"
 **Data Source:** National Cereals and Produce Board (NCPB) + Ministry of Agriculture
+**Status:** ✅ **KEEP** — NCPB has info but not well-distributed.
 
 ```
 Subsidized fertilizer program:
@@ -1755,6 +1785,7 @@ Subsidized fertilizer program:
 **Update:** 🔵 Annual
 **Keywords:** "agrovet near me Kenya", "vet shops Kenya", "where to buy seeds Kenya"
 **Data Source:** PCPB (Pest Control Products Board) licensed agrovets list + KEPHIS registered seed merchants
+**Status:** ✅ **KEEP** — PCPB has list but it's a PDF, not searchable. Currently no good online directory exists — farmers rely on word of mouth.
 
 Searchable directory of licensed agrovets by county. Currently no good online directory exists — farmers rely on word of mouth.
 
@@ -1765,6 +1796,7 @@ Searchable directory of licensed agrovets by county. Currently no good online di
 **Update:** 🔵 Annual
 **Keywords:** "fish farming Kenya guide", "tilapia price Kenya", "fish market prices Nairobi"
 **Data Source:** Kenya Fisheries Service (fisheries.go.ke) + State Department of Fisheries reports
+**Status:** ✅ **KEEP** — Fisheries department has reports but not as an interactive guide.
 
 Static guide: tilapia vs catfish vs trout, pond construction costs, stocking rates, feed requirements, expected yield. Supplement with fish market price table.
 
@@ -1775,6 +1807,7 @@ Static guide: tilapia vs catfish vs trout, pond construction costs, stocking rat
 **Update:** 🟢 Static (gazetted reserves are permanent; degazettement is rare and controversial)
 **Keywords:** "Kenya forests list", "Kenya forest reserve map", "forests in Kenya hiking"
 **Data Source:** Kenya Forest Service (kenyaforestservice.go.ke) — gazetted forests list (public)
+**Status:** ✅ **KEEP** — KFS has gazetted list but not as a searchable directory.
 
 All ~1,200 gazetted forest reserves with: name, county, size (ha), ecosystem type, biodiversity notes, hiking access (yes/no), contact. Useful for hikers, researchers, and ecotourism.
 
@@ -1845,78 +1878,78 @@ Every tool page links to a related blog post. Example: PAYE Calculator → blog 
 
 ## 10. Data Sources Master Table
 
-| # | Tool(s) | Source | URL | Format | Update | Cost |
-|---|---------|--------|-----|--------|--------|------|
-| 1 | PAYE, NSSF, Housing Levy | KRA | kra.go.ke | Web page | Annual | Free |
-| 2 | NHIF bands | NHIF / SHA | nhif.or.ke | Web page | Annual | Free |
-| 3 | M-Pesa tariff | Safaricom | safaricom.co.ke | Web page | Infrequent | Free |
-| 4 | Fuel prices | EPRA | epra.go.ke | PDF gazette | Monthly | Free |
-| 5 | LPG prices | EPRA | epra.go.ke | PDF gazette | Monthly | Free |
-| 6 | Exchange rates | CBK | centralbank.go.ke | HTML table | Daily | Free |
-| 7 | KPLC tariff | EPRA | epra.go.ke | PDF/web | Annual | Free |
-| 8 | KPLC outages | Kenya Power | kplc.co.ke/category/view/50 | HTML scrape | 3×/day | Free |
-| 9 | Water tariffs | NCWSC, others | ncwsc.co.ke | Web page | Periodic | Free |
-| 10 | HELB rates | HELB | helb.co.ke | Web page | Annual | Free |
-| 11 | Stamp duty | Legislation | kenyalaw.org | Act (static) | Rarely | Free |
-| 12 | Import duty | KRA / EAC | kra.go.ke | PDF tariff book | Annual | Free |
-| 13 | IHF vehicle insurance min | IRA | ira.go.ke | PDF circular | Annual | Free |
-| 14 | NHIF hospitals | NHIF | nhif.or.ke | PDF download | Quarterly | Free |
-| 15 | PPB pharmacies | PPB | ppb.go.ke | PDF list | Annual | Free |
-| 16 | CBC curriculum | KICD | kicd.ac.ke | PDF documents | Every 3–5 yrs | Free |
-| 17 | KUCCPS clusters | KUCCPS | kuccps.net | PDF booklet | Annual | Free |
-| 18 | School term dates | MoE | education.go.ke | Press release | Annual | Free |
-| 19 | KCSE rankings | KNEC | knec.ac.ke | Press release | Annual | Free |
-| 20 | TSC registration | TSC | tsc.go.ke | Web page | Rarely | Free |
-| 21 | Matatu SACCOs | NTSA | ntsa.go.ke | PDF list | Annual | Free |
-| 22 | Driving license | NTSA | ntsa.go.ke | Web page | Rarely | Free |
-| 23 | KWS parks & fees | KWS | kws.go.ke | Web page | Annual | Free |
-| 24 | IEBC wards | IEBC | iebc.or.ke | Dataset | Every 5 yrs | Free |
-| 25 | Police stations | NPS | nps.go.ke | Web directory | Rarely | Free |
-| 26 | PPRA tenders | PPRA | ppra.go.ke | Web scrape | Daily | Free |
-| 27 | Minimum wage | Ministry of Labour | labourbulletin.go.ke | Gazette order | Annual | Free |
-| 28 | CPI inflation data | KNBS | knbs.or.ke | Excel/PDF | Monthly | Free |
-| 29 | LSK fee schedule | LSK | lsk.or.ke | PDF | Rarely | Free |
-| 30 | NTSA fees | NTSA | ntsa.go.ke | Web page | Rarely | Free |
-| 31 | COB county budgets | Controller of Budget | cob.go.ke | PDF reports | Annual | Free |
-| 32 | IEBC election results | IEBC | iebc.or.ke | Gazette | Per election | Free |
-| 33 | KIPI IP fees | KIPI | kipi.go.ke | Fee schedule | Rarely | Free |
-| 34 | eCitizen biz fees | Registrar of Companies | ecitizen.go.ke | Web page | Rarely | Free |
-| 35 | SASRA SACCO list | SASRA | sasra.go.ke | PDF annual list | Annual | Free |
-| 36 | NSE companies | NSE | nse.co.ke | Web directory | Periodic | Free |
-| 37 | EARB agents | EARB | earb.go.ke | PDF register | Annual | Free |
-| 38 | Postal codes | Posta Kenya | posta.co.ke | PDF/spreadsheet | Rarely | Free |
-| 39 | Mobile prefixes | CA | ca.go.ke | Number plan PDF | Rarely | Free |
-| 40 | Heritage sites | NMK / UNESCO | museums.or.ke | Web directory | Rarely | Free |
-| 41 | Rainfall normals | KMD | meteo.go.ke | PDF climate data | Every 10 yrs | Free |
-| 42 | Census demographics | KNBS | knbs.or.ke | Excel downloads | Every 10 yrs | Free |
-| 43 | Crop calendar | KALRO | kalro.org | PDF guides | Annual | Free |
-| 44 | Soil types | FAO/KARI | fao.org | Free GIS data | Very rarely | Free |
-| 45 | Forest reserves | KFS | kenyaforestservice.go.ke | Web directory | Rarely | Free |
-| 46 | Fisheries data | KFS | fisheries.go.ke | PDF reports | Annual | Free |
-| 47 | Livestock prices | NALMC / MoA | agriculture.go.ke | Weekly bulletin | Weekly | Free |
-| 48 | Fertilizer subsidies | NCPB | ncpb.go.ke | Web page | Per season | Free |
-| 49 | Agrovets (PCPB) | PCPB | pcpb.or.ke | PDF list | Annual | Free |
-| 50 | NEMA EIA guide | NEMA | nema.go.ke | Legislation | Rarely | Free |
-| 51 | Vaccination schedule | MOH | health.go.ke | PDF/web | Annual | Free |
-| 52 | Public holidays | Kenya Gazette | kenyagazette.go.ke | Gazette notice | Annual | Free |
-| 53 | Kenya Acts | Kenya Law | kenyalaw.org | Web (legal database) | Per amendment | Free |
-| 54 | Traffic fines | Traffic Act / NTSA | kenyalaw.org | Act (static) | Rarely | Free |
-| 55 | Passport/ID fees | Immigration | immigration.go.ke | Web page | Rarely | Free |
-| 56 | NGO registration | NGO Board | ngobureau.go.ke | Web page | Rarely | Free |
-| 57 | Food nutrition | FAO / KEMRI | fao.org | Open dataset | Rarely | Free |
-| 58 | Professional bodies | Individual bodies | various | Research once | Rarely | Free |
-| 59 | Hospital levels | MOH | health.go.ke | MOH guidelines | Rarely | Free |
-| 60 | ETA/visa | Immigration | immigration.go.ke | Web page | Periodic | Free |
-| 61 | ISP speeds | CA QoS reports | ca.go.ke | PDF report | Biannual | Free |
-| 62 | Number plate codes | NTSA/Traffic Act | ntsa.go.ke | Legislation | Rarely | Free |
-| 63 | Blood bank | KNBTS | knbts.or.ke | Web directory | Rarely | Free |
-| 64 | Distance matrix | KRB road data | krb.go.ke | Research once | Rarely | Free |
-| 65 | Long distance buses | Bus company sites | various | Annual scrape | Annual | Free |
-| 66 | Languages | KNBS census | knbs.or.ke | Census dataset | Every 10 yrs | Free |
-| 67 | Economic calendar | KNBS/CBK | various | Annual release | Annual | Free |
-| 68 | Solar irradiance | NASA POWER | power.larc.nasa.gov | Free REST API | Never (historical) | Free |
-| 69 | Medical procedure costs | MOH gazette | kenyalaw.org | Gazette notice | Annual | Free |
-| 70 | Trademark/IP fees | KIPI | kipi.go.ke | Web page | Rarely | Free |
+| # | Tool(s) | Source | URL | Format | Update | Cost | Status |
+|---|---------|--------|-----|--------|--------|------|--------|
+| 1 | PAYE, NSSF, Housing Levy | KRA | kra.go.ke | Web page | Annual | Free | ⚠️ Competition exists |
+| 2 | NHIF bands | NHIF / SHA | nhif.or.ke | Web page | Annual | Free | ✅ Verified |
+| 3 | M-Pesa tariff | Safaricom | safaricom.co.ke | Web page | Infrequent | Free | ⚠️ Competition exists |
+| 4 | Fuel prices | EPRA | epra.go.ke | PDF gazette | Monthly | Free | ✅ Verified |
+| 5 | LPG prices | EPRA | epra.go.ke | PDF gazette | Monthly | Free | ✅ Verified |
+| 6 | Exchange rates | CBK | centralbank.go.ke | HTML table | Daily | Free | ✅ Verified |
+| 7 | KPLC tariff | EPRA | epra.go.ke | PDF/web | Annual | Free | ✅ Verified |
+| 8 | KPLC outages | Kenya Power | kplc.co.ke/category/view/50 | HTML scrape | 3×/day | Free | ✅ Verified — critical gap |
+| 9 | Water tariffs | NCWSC, others | ncwsc.co.ke | Web page | Periodic | Free | ✅ Verified (Nairobi) |
+| 10 | HELB rates | HELB | helb.co.ke | Web page | Annual | Free | ⚠️ Competition exists |
+| 11 | Stamp duty | Legislation | kenyalaw.org | Act (static) | Rarely | Free | ✅ Verified |
+| 12 | Import duty | KRA / EAC | kra.go.ke | PDF tariff book | Annual | Free | ⚠️ Competition exists |
+| 13 | IHF vehicle insurance min | IRA | ira.go.ke | PDF circular | Annual | Free | ⚠️ Competition exists |
+| 14 | NHIF hospitals | NHIF | nhif.or.ke | PDF download | Quarterly | Free | ✅ Verified |
+| 15 | PPB pharmacies | PPB | ppb.go.ke | PDF list | Annual | Free | ✅ Verified |
+| 16 | CBC curriculum | KICD | kicd.ac.ke | PDF documents | Every 3–5 yrs | Free | ✅ Verified |
+| 17 | KUCCPS clusters | KUCCPS | kuccps.net | PDF booklet | Annual | Free | ✅ Verified — highest value |
+| 18 | School term dates | MoE | education.go.ke | Press release | Annual | Free | ✅ Verified |
+| 19 | KCSE rankings | KNEC | knec.ac.ke | Press release | Annual | Free | ✅ Verified |
+| 20 | TSC registration | TSC | tsc.go.ke | Web page | Rarely | Free | ✅ Verified |
+| 21 | Matatu SACCOs | NTSA | ntsa.go.ke | PDF list | Annual | Free | ✅ Verified |
+| 22 | Driving license | NTSA | ntsa.go.ke | Web page | Rarely | Free | ✅ Verified |
+| 23 | KWS parks & fees | KWS | kws.go.ke | Web page | Annual | Free | ✅ Verified |
+| 24 | IEBC wards | IEBC | iebc.or.ke | Dataset | Every 5 yrs | Free | ✅ Verified |
+| 25 | Police stations | NPS | nps.go.ke | Web directory | Rarely | Free | ✅ Verified |
+| 26 | PPRA tenders | PPRA | ppra.go.ke | Web scrape | Daily | Free | ✅ Verified |
+| 27 | Minimum wage | Ministry of Labour | labourbulletin.go.ke | Gazette order | Annual | Free | ✅ Verified |
+| 28 | CPI inflation data | KNBS | knbs.or.ke | Excel/PDF | Monthly | Free | ❌ Removed (competition) |
+| 29 | LSK fee schedule | LSK | lsk.or.ke | PDF | Rarely | Free | ✅ Verified |
+| 30 | NTSA fees | NTSA | ntsa.go.ke | Web page | Rarely | Free | ✅ Verified |
+| 31 | COB county budgets | Controller of Budget | cob.go.ke | PDF reports | Annual | Free | ✅ Verified |
+| 32 | IEBC election results | IEBC | iebc.or.ke | Gazette | Per election | Free | ✅ Verified |
+| 33 | KIPI IP fees | KIPI | kipi.go.ke | Fee schedule | Rarely | Free | ✅ Verified |
+| 34 | eCitizen biz fees | Registrar of Companies | ecitizen.go.ke | Web page | Rarely | Free | ❌ Removed (competition) |
+| 35 | SASRA SACCO list | SASRA | sasra.go.ke | PDF annual list | Annual | Free | ❌ Removed (competition) |
+| 36 | NSE companies | NSE | nse.co.ke | Web directory | Periodic | Free | ✅ Verified |
+| 37 | EARB agents | EARB | earb.go.ke | PDF register | Annual | Free | ✅ Verified |
+| 38 | Postal codes | Posta Kenya | posta.co.ke | PDF/spreadsheet | Rarely | Free | ✅ Verified |
+| 39 | Mobile prefixes | CA | ca.go.ke | Number plan PDF | Rarely | Free | ✅ Verified |
+| 40 | Heritage sites | NMK / UNESCO | museums.or.ke | Web directory | Rarely | Free | ✅ Verified |
+| 41 | Rainfall normals | KMD | meteo.go.ke | PDF climate data | Every 10 yrs | Free | ✅ Verified |
+| 42 | Census demographics | KNBS | knbs.or.ke | Excel downloads | Every 10 yrs | Free | ✅ Verified |
+| 43 | Crop calendar | KALRO | kalro.org | PDF guides | Annual | Free | ✅ Verified |
+| 44 | Soil types | FAO/KARI | fao.org | Free GIS data | Very rarely | Free | ✅ Verified |
+| 45 | Forest reserves | KFS | kenyaforestservice.go.ke | Web directory | Rarely | Free | ✅ Verified |
+| 46 | Fisheries data | KFS | fisheries.go.ke | PDF reports | Annual | Free | ✅ Verified |
+| 47 | Livestock prices | NALMC / MoA | agriculture.go.ke | Weekly bulletin | Weekly | Free | ✅ Verified |
+| 48 | Fertilizer subsidies | NCPB | ncpb.go.ke | Web page | Per season | Free | ✅ Verified |
+| 49 | Agrovets (PCPB) | PCPB | pcpb.or.ke | PDF list | Annual | Free | ✅ Verified |
+| 50 | NEMA EIA guide | NEMA | nema.go.ke | Legislation | Rarely | Free | ✅ Verified |
+| 51 | Vaccination schedule | MOH | health.go.ke | PDF/web | Annual | Free | ✅ Verified |
+| 52 | Public holidays | Kenya Gazette | kenyagazette.go.ke | Gazette notice | Annual | Free | ✅ Verified |
+| 53 | Kenya Acts | Kenya Law | kenyalaw.org | Web (legal database) | Per amendment | Free | ✅ Verified |
+| 54 | Traffic fines | Traffic Act / NTSA | kenyalaw.org | Act (static) | Rarely | Free | ✅ Verified |
+| 55 | Passport/ID fees | Immigration | immigration.go.ke | Web page | Rarely | Free | ✅ Verified |
+| 56 | NGO registration | NGO Board | ngobureau.go.ke | Web page | Rarely | Free | ✅ Verified |
+| 57 | Food nutrition | FAO / KEMRI | fao.org | Open dataset | Rarely | Free | ✅ Verified |
+| 58 | Professional bodies | Individual bodies | various | Research once | Rarely | Free | ✅ Verified |
+| 59 | Hospital levels | MOH | health.go.ke | MOH guidelines | Rarely | Free | ✅ Verified |
+| 60 | ETA/visa | Immigration | immigration.go.ke | Web page | Periodic | Free | ✅ Verified |
+| 61 | ISP speeds | CA QoS reports | ca.go.ke | PDF report | Biannual | Free | ✅ Verified |
+| 62 | Number plate codes | NTSA/Traffic Act | ntsa.go.ke | Legislation | Rarely | Free | ✅ Verified |
+| 63 | Blood bank | KNBTS | knbts.or.ke | Web directory | Rarely | Free | ✅ Verified |
+| 64 | Distance matrix | KRB road data | krb.go.ke | Research once | Rarely | Free | ❌ Removed (competition) |
+| 65 | Long distance buses | Bus company sites | various | Annual scrape | Annual | Free | ✅ Verified |
+| 66 | Languages | KNBS census | knbs.or.ke | Census dataset | Every 10 yrs | Free | ✅ Verified |
+| 67 | Economic calendar | KNBS/CBK | various | Annual release | Annual | Free | ✅ Verified |
+| 68 | Solar irradiance | NASA POWER | power.larc.nasa.gov | Free REST API | Never (historical) | Free | ✅ Verified |
+| 69 | Medical procedure costs | MOH gazette | kenyalaw.org | Gazette notice | Annual | Free | ✅ Verified |
+| 70 | Trademark/IP fees | KIPI | kipi.go.ke | Web page | Rarely | Free | ✅ Verified |
 
 ---
 
@@ -2025,7 +2058,7 @@ async function upsertOutages(outages: KPLCOutage[]) {
     .setEndpoint(process.env.APPWRITE_ENDPOINT!)
     .setProject(process.env.APPWRITE_PROJECT_ID!)
     .setKey(process.env.APPWRITE_API_KEY!);
-  
+
   const databases = new Databases(client);
 
   for (const o of outages) {
@@ -2076,7 +2109,8 @@ async function scrapeFuelPrices() {
 
   // Step 3: Parse text to extract county-level prices
   // EPRA format: "Nairobi    XXX.XX    YYY.YY    ZZZ.ZZ"
-  const rows = text.split('\n').filter(line =>
+  const rows = text.split('
+').filter(line =>
     /\d+\.\d+/.test(line) && /[A-Z][a-z]/.test(line)
   );
 
@@ -2282,7 +2316,7 @@ CREATE TABLE blog_posts (
 ### Strategy
 
 The site's tool-first, static-data approach is ideal for AdSense because:
-- High page count (85+ unique tool/route URLs indexed)
+- High page count (70+ unique tool/route URLs indexed)
 - High dwell time (interactive calculators keep users engaged)
 - Relevant audience (Kenyans with financial/consumer intent = premium advertisers)
 - No thin content (every page has 300+ words of supporting content)
@@ -2427,7 +2461,7 @@ export default async ({ req, res, log, error }) => {
       data: { outageId: record.$id },
     });
   }
-  
+
   return res.json({ success: true });
 };
 ```
@@ -2536,44 +2570,38 @@ const faqSchema = {
 
 ## 16. Development Phases & Roadmap
 
-### Phase 1 — Foundation + Top Tools (Weeks 1–6)
+### Phase 1 — Foundation + Top Tools (Weeks 1–6) ✅ COMPLETE
 Build the highest-traffic static/annual tools first. Target AdSense approval before adding live scrapers.
 
-- [ ] Next.js project setup (TypeScript, Tailwind, shadcn/ui)
-- [ ] Appwrite collections + seed scripts
-- [ ] Navigation (mega-menu desktop, bottom tab mobile)
-- [ ] Tools hub page (`/tools/`) with category cards
-- [ ] **T01** PAYE Calculator
-- [ ] **T02** M-Pesa Fee Calculator
-- [ ] **T17** KUCCPS Cluster Calculator ← high-traffic, zero competition
-- [ ] **T18** KCSE Grade Calculator ← zero competition
-- [ ] **T15** CBC Curriculum Explorer ← zero competition
-- [ ] **T16** CBC Grade-Age Checker
-- [ ] **T35** Public Holidays 2025
-- [ ] **T43** Number Plate Decoder ← unique, zero competition
-- [ ] **T44** Mobile Number Prefix Guide ← static, unique
-- [ ] **T19** School Term Dates
-- [ ] Privacy Policy + Terms of Service pages
-- [ ] Submit to Google Search Console + Analytics
-- [ ] **Apply for AdSense** (need ~20 quality pages)
+- [x] Next.js project setup (TypeScript, Tailwind, shadcn/ui)
+- [x] Appwrite collections + seed scripts
+- [x] Navigation (mega-menu desktop, bottom tab mobile)
+- [x] Tools hub page (`/tools/`) with category cards
+- [x] **T01** PAYE Calculator
+- [x] **T02** M-Pesa Fee Calculator
+- [x] **T17** KUCCPS Cluster Calculator ← high-traffic, zero competition
+- [x] **T18** KCSE Grade Calculator ← zero competition
+- [x] **T15** CBC Curriculum Explorer ← zero competition
+- [x] **T16** CBC Grade-Age Checker
+- [x] **T35** Public Holidays 2025
+- [x] **T43** Number Plate Decoder ← unique, zero competition
+- [x] **T44** Mobile Number Prefix Guide ← static, unique
+- [x] **T19** School Term Dates
+- [x] Privacy Policy + Terms of Service pages
+- [x] Submit to Google Search Console + Analytics
+- [x] **Apply for AdSense** (need ~20 quality pages)
 
-### Phase 2 — More Tools + Matatu (Weeks 7–12)
-- [ ] **T24** KPLC Outage Tracker (scraper live)
-- [ ] **T25** KPLC Token Calculator
-- [ ] **T26** Fuel Prices (EPRA scraper)
-- [ ] **T73** CBK Forex Rates
+### Phase 2 — More Tools (Weeks 7–12)
 - [ ] **T03** Stamp Duty Calculator
 - [ ] **T04** HELB Calculator
 - [ ] **T06** Housing Levy Calculator
-- [ ] **T10** Business Registration Cost
+- [ ] **T10** Vehicle Insurance Calculator
+- [ ] **T25** KPLC Token Calculator
 - [ ] **T36** NTSA Traffic Fines
 - [ ] **T38** Passport & ID Fees Guide
-- [ ] **T45** Distance Between Towns
-- [ ] **T46** Long Distance Bus Routes
 - [ ] **T50** Driving License Guide
 - [ ] **T55** Child Growth & Vaccination Schedule
 - [ ] **T69** Postal Codes Directory
-- [ ] Matatu module — Nairobi routes (import OSM data)
 - [ ] 10 blog posts published
 
 ### Phase 3 — County Module + More Tools (Weeks 13–18)
@@ -2581,11 +2609,9 @@ Build the highest-traffic static/annual tools first. Target AdSense approval bef
 - [ ] **T27** Water Bill Calculator
 - [ ] **T29** Solar ROI Calculator
 - [ ] **T34** Ward & Constituency Finder
-- [ ] **T31** Tender Watch (PPRA scraper)
 - [ ] **T40** County Budget Tracker
 - [ ] **T48** KWS National Parks Directory
 - [ ] **T52** NHIF Hospital Finder
-- [ ] **T60** SACCO Directory
 - [ ] **T62** Trademark Cost Guide
 - [ ] **T65** Real Estate Agent Checker
 - [ ] **T66** Customs Restricted Items
@@ -2650,44 +2676,65 @@ Enable Cloudflare proxy (orange cloud) on the CNAME record for full CDN + DDoS p
 
 ## 18. Tool Priority Matrix
 
-| # | Tool | Category | Update | Traffic Potential | Maintenance | Build Priority |
-|---|------|----------|--------|-------------------|-------------|----------------|
-| T17 | KUCCPS Cluster Calculator | Education | Annual | ⭐⭐⭐⭐⭐ | Low | 🔴 P0 |
-| T18 | KCSE Grade Calculator | Education | Static | ⭐⭐⭐⭐⭐ | None | 🔴 P0 |
-| T01 | PAYE Calculator | Finance | Annual | ⭐⭐⭐⭐⭐ | Low | 🔴 P0 |
-| T24 | KPLC Outage Tracker | Utilities | Live | ⭐⭐⭐⭐⭐ | Medium | 🔴 P0 |
-| T15 | CBC Curriculum Explorer | Education | Static | ⭐⭐⭐⭐ | None | 🔴 P0 |
-| T02 | M-Pesa Fee Calculator | Finance | Static | ⭐⭐⭐⭐ | None | 🔴 P0 |
-| T26 | Fuel Prices | Utilities | Periodic | ⭐⭐⭐⭐ | Low | 🟡 P1 |
-| T25 | KPLC Token Calculator | Utilities | Annual | ⭐⭐⭐⭐ | None | 🟡 P1 |
-| T03 | Stamp Duty Calculator | Finance | Static | ⭐⭐⭐ | None | 🟡 P1 |
-| T43 | Number Plate Decoder | Transport | Static | ⭐⭐⭐ | None | 🟡 P1 |
-| T44 | Mobile Prefix Guide | Reference | Static | ⭐⭐⭐ | None | 🟡 P1 |
-| T16 | CBC Grade-Age Checker | Education | Static | ⭐⭐⭐ | None | 🟡 P1 |
-| T04 | HELB Calculator | Finance | Annual | ⭐⭐⭐ | None | 🟡 P1 |
-| T31 | Tender Watch | Government | Live | ⭐⭐⭐ | Medium | 🟡 P1 |
-| T19 | School Term Dates | Education | Annual | ⭐⭐⭐ | None | 🟡 P1 |
-| T35 | Public Holidays | Government | Annual | ⭐⭐⭐ | None | 🟡 P1 |
-| T36 | Traffic Fines | Government | Static | ⭐⭐ | None | 🟢 P2 |
-| T45 | Distance Between Towns | Transport | Static | ⭐⭐ | None | 🟢 P2 |
-| T48 | National Parks | Transport | Annual | ⭐⭐ | None | 🟢 P2 |
-| T52 | NHIF Hospital Finder | Health | Periodic | ⭐⭐ | Low | 🟢 P2 |
-| T29 | Solar ROI Calculator | Utilities | Static | ⭐⭐ | None | 🟢 P2 |
-| T77 | Kenyan Food Nutrition | Reference | Static | ⭐⭐ | None | 🟢 P2 |
-| T67 | County Demographics | Reference | Static | ⭐⭐ | None | 🟢 P2 |
-| T74 | Professional Bodies | Reference | Static | ⭐⭐ | None | 🟢 P2 |
-| T79 | Crop Planting Calendar | Agriculture | Static | ⭐⭐ | None | 🟢 P2 |
-| T27 | Water Bill Calculator | Utilities | Periodic | ⭐⭐ | Low | 🟢 P2 |
-| T22 | KCSE School Rankings | Education | Annual | ⭐⭐⭐ | Low | 🟢 P2 |
-| T70 | Languages Map | Reference | Static | ⭐ | None | 🔵 P3 |
-| T80 | Soil Types Map | Agriculture | Static | ⭐ | None | 🔵 P3 |
-| T85 | Forest Reserves | Agriculture | Static | ⭐ | None | 🔵 P3 |
-| All others | Various | Various | Static | ⭐ | None | 🔵 P3 |
+| # | Tool | Category | Update | Traffic Potential | Maintenance | Build Priority | Status |
+|---|------|----------|--------|-------------------|-------------|----------------|--------|
+| T17 | KUCCPS Cluster Calculator | Education | Annual | ⭐⭐⭐⭐⭐ | Low | 🔴 P0 | ✅ Built |
+| T18 | KCSE Grade Calculator | Education | Static | ⭐⭐⭐⭐⭐ | None | 🔴 P0 | ✅ Built |
+| T01 | PAYE Calculator | Finance | Annual | ⭐⭐⭐⭐⭐ | Low | 🔴 P0 | ✅ Built |
+| T15 | CBC Curriculum Explorer | Education | Static | ⭐⭐⭐⭐ | None | 🔴 P0 | ✅ Built |
+| T02 | M-Pesa Fee Calculator | Finance | Static | ⭐⭐⭐⭐ | None | 🔴 P0 | ✅ Built |
+| T25 | KPLC Token Calculator | Utilities | Annual | ⭐⭐⭐⭐ | None | 🟡 P1 | 🔜 Phase 2 |
+| T03 | Stamp Duty Calculator | Finance | Static | ⭐⭐⭐ | None | 🟡 P1 | 🔜 Phase 2 |
+| T43 | Number Plate Decoder | Transport | Static | ⭐⭐⭐ | None | 🟡 P1 | ✅ Built |
+| T44 | Mobile Prefix Guide | Reference | Static | ⭐⭐⭐ | None | 🟡 P1 | ✅ Built |
+| T16 | CBC Grade-Age Checker | Education | Static | ⭐⭐⭐ | None | 🟡 P1 | ✅ Built |
+| T04 | HELB Calculator | Finance | Annual | ⭐⭐⭐ | None | 🟡 P1 | 🔜 Phase 2 |
+| T19 | School Term Dates | Education | Annual | ⭐⭐⭐ | None | 🟡 P1 | ✅ Built |
+| T35 | Public Holidays | Government | Annual | ⭐⭐⭐ | None | 🟡 P1 | ✅ Built |
+| T36 | Traffic Fines | Government | Static | ⭐⭐ | None | 🟢 P2 | 🔜 Phase 2 |
+| T45 | Long Distance Bus Routes | Transport | Static | ⭐⭐ | None | 🟢 P2 | 🔜 Phase 2 |
+| T48 | National Parks | Transport | Annual | ⭐⭐ | None | 🟢 P2 | 🔜 Phase 3 |
+| T52 | NHIF Hospital Finder | Health | Periodic | ⭐⭐ | Low | 🟢 P2 | 🔜 Phase 3 |
+| T29 | Solar ROI Calculator | Utilities | Static | ⭐⭐ | None | 🟢 P2 | 🔜 Phase 3 |
+| T77 | Kenyan Food Nutrition | Reference | Static | ⭐⭐ | None | 🟢 P2 | 🔜 Phase 3 |
+| T67 | County Demographics | Reference | Static | ⭐⭐ | None | 🟢 P2 | 🔜 Phase 3 |
+| T74 | Professional Bodies | Reference | Static | ⭐⭐ | None | 🟢 P2 | 🔜 Phase 5 |
+| T79 | Crop Planting Calendar | Agriculture | Static | ⭐⭐ | None | 🟢 P2 | 🔜 Phase 5 |
+| T27 | Water Bill Calculator | Utilities | Periodic | ⭐⭐ | Low | 🟢 P2 | 🔜 Phase 3 |
+| T22 | KCSE School Rankings | Education | Annual | ⭐⭐⭐ | Low | 🟢 P2 | 🔜 Phase 5 |
+| T70 | Languages Map | Reference | Static | ⭐ | None | 🔵 P3 | 🔜 Phase 5 |
+| T80 | Soil Types Map | Agriculture | Static | ⭐ | None | 🔵 P3 | 🔜 Phase 5 |
+| T85 | Forest Reserves | Agriculture | Static | ⭐ | None | 🔵 P3 | 🔜 Phase 5 |
+| All others | Various | Various | Static | ⭐ | None | 🔵 P3 | Backlog |
 
 **Key insight:** The top 6 P0 tools (KUCCPS, KCSE grader, PAYE, KPLC outages, CBC, M-Pesa) collectively cover the most-searched Kenyan topics online — **education results + electricity + salary + mobile money** — and 4 of them are pure static logic with no scraping needed.
 
 ---
 
-*KenyaHub Developer Documentation v2.0 — June 2025*
+## 19. Removed Tools Log
+
+The following tools were removed from the catalogue after competitive analysis and data source verification (June 2026):
+
+| Tool # | Name | Reason for Removal | Replacement/Note |
+|--------|------|-------------------|------------------|
+| T09 | Land Rates Calculator | Data too fragmented; most counties don't publish digital rate schedules | Replaced with static guide on how to check land rates per county |
+| T13 | Inflation Calculator | `yuthufu.com` and `fxtop.com` already exist as Kenya CPI calculators | — |
+| T20 | School Finder | NEMIS data not publicly accessible in clean format | — |
+| T24 | KPLC Outage Tracker | Requires live scraper (3×/day from kplc.co.ke); cannot maintain without server-side scraping infrastructure | — |
+| T26 | Fuel Prices Tracker | Requires monthly EPRA PDF gazette scraper; cannot maintain without automated parsing | — |
+| T31 | Tender Watch | Requires daily live scraper from PPRA website; cannot maintain without server-side scraping | — |
+| T45 | Long Distance Bus Routes | Data requires scraping 6+ bus company websites; no reliable single data source | — |
+| T46 | Distance Between Towns | `distancecalculator.globefeed.com`, `distancefromto.net` exist | — |
+| T59 | Business Registration Cost | `biasharaguide.co.ke/tools/registration-calculator/` exists | — |
+| T60 | SACCO Directory | `saccolink.com` (357 verified SACCOs) exists | — |
+| T61 | VAT Guide | `anrok.com` has Kenya VAT guide; KRA site has info | — |
+| T73 | CBK Forex Rates | Requires daily live scraper from centralbank.go.ke; cannot maintain without server-side scraping | — |
+| T76 | Time Zone Guide | Too generic; not Kenya-specific enough | — |
+
+**Net reduction:** 13 tools removed from original 85 → **72 tools remaining** (65 active + 7 Matatu/County/Blog modules)
+
+---
+
+*KenyaHub Developer Documentation v2.1 — June 2026*
 *This document is the single source of truth for site architecture, tool catalogue, and data sources.*
 *Update this doc whenever a new tool is added, a data source changes, or architecture evolves.*
