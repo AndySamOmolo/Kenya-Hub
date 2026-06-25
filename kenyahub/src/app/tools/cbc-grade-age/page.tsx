@@ -106,7 +106,7 @@ export default function CBCGradeAgePage() {
         )}
 
         {/* Full Grade-Age Table */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+        <div className="bg-bg-card border border-border rounded-xl overflow-x-auto">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
               Complete CBC Grade-Age Guide

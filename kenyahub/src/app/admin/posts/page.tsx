@@ -59,7 +59,7 @@ export default function AdminPostsPage() {
           <p className="text-text-muted">Manage your blog content</p>
         </div>
         <div className="flex items-center gap-3">
-          <Link href="/admin/settings" className="px-4 py-2 rounded-lg bg-bg-card border border-border text-sm font-medium text-text-primary hover:text-gold transition-colors">
+          <Link href="/admin/settings" className="btn-outline shrink-0">
             ⚙️ Settings
           </Link>
           <Link href="/admin/posts/new" className="btn-primary shrink-0">

@@ -75,11 +75,11 @@ export default function BlogPage() {
         <div className="flex flex-wrap gap-2 mb-8">
           <button
             onClick={() => setSelectedTag(null)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+            className={
               selectedTag === null
-                ? "bg-gold text-kenya-black"
-                : "bg-bg-card border border-border text-text-secondary hover:text-gold"
-            }`}
+                ? "btn-gold !px-3 !py-1.5 !text-xs !rounded-lg"
+                : "btn-outline !px-3 !py-1.5 !text-xs !rounded-lg"
+            }
           >
             All Posts
           </button>
@@ -87,11 +87,11 @@ export default function BlogPage() {
             <button
               key={tag}
               onClick={() => setSelectedTag(tag)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+              className={
                 selectedTag === tag
-                  ? "bg-gold text-kenya-black"
-                  : "bg-bg-card border border-border text-text-secondary hover:text-gold"
-              }`}
+                  ? "btn-gold !px-3 !py-1.5 !text-xs !rounded-lg"
+                  : "btn-outline !px-3 !py-1.5 !text-xs !rounded-lg"
+              }
             >
               {tag}
             </button>

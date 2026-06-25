@@ -28,11 +28,11 @@ export default function CBCCurriculumPage() {
             <button
               key={l.id}
               onClick={() => setSelectedLevel(l.id)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              className={
                 selectedLevel === l.id
-                  ? "bg-gold text-kenya-black"
-                  : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
-              }`}
+                  ? "btn-gold !py-2 !px-4 !text-sm"
+                  : "btn-outline !py-2 !px-4 !text-sm"
+              }
             >
               {l.name}
             </button>
@@ -125,7 +125,7 @@ export default function CBCCurriculumPage() {
         )}
 
         {/* CBC vs 8-4-4 Comparison */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+        <div className="bg-bg-card border border-border rounded-xl overflow-x-auto">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
               CBC vs 8-4-4 Comparison
