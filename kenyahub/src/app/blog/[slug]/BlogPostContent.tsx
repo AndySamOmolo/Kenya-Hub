@@ -18,69 +18,7 @@ interface BlogPost {
   content?: string;
 }
 
-function markdownToHtml(content: string): string {
-  let html = content;
-
-  // Code blocks (fenced) — process first to protect from other transforms
-  html = html.replace(/```(\w*)\n([\s\S]*?)```/gm, (_match, lang, code) => {
-    const escaped = code.replace(/</g, '&lt;').replace(/>/g, '&gt;').trim();
-    return `<pre><code class="language-${lang || 'text'}">${escaped}</code></pre>`;
-  });
-
-  // Images (before links to avoid conflict)
-  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/gm, '<img src="$2" alt="$1" loading="lazy" class="rounded-xl my-6" />');
-
-  // Links
-  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/gm, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-
-  // Headings
-  html = html.replace(/^#### (.*$)/gm, '<h4>$1</h4>');
-  html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
-  html = html.replace(/^## (.*$)/gm, '<h2>$1</h2>');
-  html = html.replace(/^# (.*$)/gm, '<h1>$1</h1>');
-
-  // Horizontal rule
-  html = html.replace(/^---$/gm, '<hr />');
-
-  // Bold and italic
-  html = html.replace(/\*\*\*(.+?)\*\*\*/gm, '<strong><em>$1</em></strong>');
-  html = html.replace(/\*\*(.+?)\*\*/gm, '<strong>$1</strong>');
-  html = html.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/gm, '<em>$1</em>');
-
-  // Inline code
-  html = html.replace(/`([^`]+)`/gm, '<code>$1</code>');
-
-  // Blockquotes
-  html = html.replace(/^> (.*)$/gm, '<blockquote>$1</blockquote>');
-  // Merge consecutive blockquotes
-  html = html.replace(/<\/blockquote>\n<blockquote>/gm, '\n');
-
-  // Unordered lists — group consecutive list items
-  html = html.replace(/((?:^- .*$\n?)+)/gm, (match) => {
-    const items = match.trim().split('\n').map(line =>
-      `<li>${line.replace(/^- /, '')}</li>`
-    ).join('\n');
-    return `<ul>${items}</ul>`;
-  });
-
-  // Ordered lists — group consecutive numbered items
-  html = html.replace(/((?:^\d+\. .*$\n?)+)/gm, (match) => {
-    const items = match.trim().split('\n').map(line =>
-      `<li>${line.replace(/^\d+\. /, '')}</li>`
-    ).join('\n');
-    return `<ol>${items}</ol>`;
-  });
-
-  // Paragraphs — wrap non-HTML lines
-  html = html.split('\n\n').map(block => {
-    const trimmed = block.trim();
-    if (!trimmed) return '';
-    if (trimmed.startsWith('<')) return trimmed;
-    return `<p>${trimmed}</p>`;
-  }).join('\n');
-
-  return html;
-}
+import { markdownToHtml } from "@/lib/markdown";
 
 export default function BlogPostContent({ post }: { post: BlogPost | null }) {
   const [readProgress, setReadProgress] = useState(0);

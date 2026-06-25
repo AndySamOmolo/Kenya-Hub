@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { account, databases } from "@/lib/appwrite";
+import { account, databases, storage } from "@/lib/appwrite";
 import { ID } from "appwrite";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -19,68 +19,7 @@ function generateSlug(title: string): string {
     .slice(0, 80);
 }
 
-function markdownToHtml(content: string): string {
-  let html = content;
-
-  // Code blocks (fenced)
-  html = html.replace(/```(\w*)\n([\s\S]*?)```/gm, (_match, lang, code) => {
-    const escaped = code.replace(/</g, '&lt;').replace(/>/g, '&gt;').trim();
-    return `<pre><code class="language-${lang || 'text'}">${escaped}</code></pre>`;
-  });
-
-  // Images
-  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/gm, '<img src="$2" alt="$1" loading="lazy" class="rounded-xl my-6" />');
-
-  // Links
-  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/gm, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-
-  // Headings
-  html = html.replace(/^#### (.*$)/gm, '<h4>$1</h4>');
-  html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
-  html = html.replace(/^## (.*$)/gm, '<h2>$1</h2>');
-  html = html.replace(/^# (.*$)/gm, '<h1>$1</h1>');
-
-  // Horizontal rule
-  html = html.replace(/^---$/gm, '<hr />');
-
-  // Bold and italic
-  html = html.replace(/\*\*\*(.+?)\*\*\*/gm, '<strong><em>$1</em></strong>');
-  html = html.replace(/\*\*(.+?)\*\*/gm, '<strong>$1</strong>');
-  html = html.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/gm, '<em>$1</em>');
-
-  // Inline code
-  html = html.replace(/`([^`]+)`/gm, '<code>$1</code>');
-
-  // Blockquotes
-  html = html.replace(/^> (.*)$/gm, '<blockquote>$1</blockquote>');
-  html = html.replace(/<\/blockquote>\n<blockquote>/gm, '\n');
-
-  // Unordered lists
-  html = html.replace(/((?:^- .*$\n?)+)/gm, (match) => {
-    const items = match.trim().split('\n').map(line =>
-      `<li>${line.replace(/^- /, '')}</li>`
-    ).join('\n');
-    return `<ul>${items}</ul>`;
-  });
-
-  // Ordered lists
-  html = html.replace(/((?:^\d+\. .*$\n?)+)/gm, (match) => {
-    const items = match.trim().split('\n').map(line =>
-      `<li>${line.replace(/^\d+\. /, '')}</li>`
-    ).join('\n');
-    return `<ol>${items}</ol>`;
-  });
-
-  // Paragraphs
-  html = html.split('\n\n').map(block => {
-    const trimmed = block.trim();
-    if (!trimmed) return '';
-    if (trimmed.startsWith('<')) return trimmed;
-    return `<p>${trimmed}</p>`;
-  }).join('\n');
-
-  return html;
-}
+import { markdownToHtml } from "@/lib/markdown";
 
 export default function NewPostPage() {
   const router = useRouter();
@@ -97,6 +36,33 @@ export default function NewPostPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [showPreview, setShowPreview] = useState(false);
+  const [uploadingImage, setUploadingImage] = useState(false);
+  const [uploadingCover, setUploadingCover] = useState(false);
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>, isCover: boolean) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (isCover) setUploadingCover(true);
+    else setUploadingImage(true);
+
+    try {
+      const response = await storage.createFile("blog-images", ID.unique(), file);
+      // Appwrite file view URL
+      const fileUrl = `https://fra.cloud.appwrite.io/v1/storage/buckets/blog-images/files/${response.$id}/view?project=6a3290500003e21b7fe1`;
+      
+      if (isCover) {
+        setCoverImage(fileUrl);
+      } else {
+        setContent(prev => prev + `\n\n![${file.name}](${fileUrl})\n\n`);
+      }
+    } catch (err) {
+      alert("Failed to upload image. Please make sure the image is under 10MB.");
+    } finally {
+      if (isCover) setUploadingCover(false);
+      else setUploadingImage(false);
+    }
+  };
 
   // Check auth on mount
   useEffect(() => {
@@ -263,18 +229,37 @@ export default function NewPostPage() {
             </div>
             <div>
               <label className="block text-sm font-medium text-text-secondary mb-2" htmlFor="coverImage">
-                Cover Image URL
+                Cover Image
               </label>
-              <input
-                id="coverImage"
-                type="url"
-                value={coverImage}
-                onChange={(e) => setCoverImage(e.target.value)}
-                className="input-field"
-                placeholder="https://example.com/image.jpg"
-              />
+              <div className="flex flex-col gap-2">
+                <input
+                  type="file"
+                  id="coverUpload"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={(e) => handleImageUpload(e, true)}
+                />
+                <div className="flex gap-2">
+                  <input
+                    id="coverImage"
+                    type="url"
+                    value={coverImage}
+                    onChange={(e) => setCoverImage(e.target.value)}
+                    className="input-field flex-1"
+                    placeholder="https://example.com/image.jpg"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => document.getElementById("coverUpload")?.click()}
+                    disabled={uploadingCover}
+                    className="px-3 py-2 bg-bg-elevated border border-border rounded-lg text-sm font-medium text-text-secondary hover:text-gold transition-colors whitespace-nowrap"
+                  >
+                    {uploadingCover ? "Uploading..." : "Upload File"}
+                  </button>
+                </div>
+              </div>
               <p className="text-xs text-text-muted mt-1">
-                Recommended: 1200×630px for social sharing
+                Upload an image or paste a URL. Recommended: 1200×630px
               </p>
             </div>
           </div>
@@ -308,8 +293,26 @@ export default function NewPostPage() {
                 Content (Markdown)
               </label>
               <div className="flex items-center gap-3">
+                <input
+                  type="file"
+                  id="inlineUpload"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={(e) => handleImageUpload(e, false)}
+                />
+                <button
+                  type="button"
+                  onClick={() => document.getElementById("inlineUpload")?.click()}
+                  disabled={uploadingImage}
+                  className="text-xs flex items-center gap-1 text-text-secondary hover:text-gold transition-colors bg-bg-elevated px-2 py-1 rounded"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  {uploadingImage ? "Uploading..." : "Insert Image"}
+                </button>
                 <span className="text-xs text-text-muted">
-                  {wordCount} words • {charCount.toLocaleString()} chars • ~{Math.max(1, Math.ceil(wordCount / 200))} min read
+                  {wordCount} words • {charCount.toLocaleString()} chars
                 </span>
                 <button
                   type="button"
