@@ -107,7 +107,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     ]);
 
     if (response.documents.length > 0) {
-      post = response.documents[0] as unknown as BlogPost;
+      // Parse to plain object to avoid Next.js Error: "Only plain objects can be passed to Client Components"
+      post = JSON.parse(JSON.stringify(response.documents[0]));
     }
   } catch {
     post = null;
