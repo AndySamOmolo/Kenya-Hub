@@ -51,18 +51,18 @@ export default function AdminPostsPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <header className="mb-8 flex items-center justify-between">
+      <header className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
         <div>
           <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
             📝 Blog Posts
           </h1>
           <p className="text-text-muted">Manage your blog content</p>
         </div>
-        <div className="flex items-center gap-3">
-          <Link href="/admin/settings" className="btn-outline shrink-0">
+        <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+          <Link href="/admin/settings" className="btn-outline w-full sm:w-auto justify-center">
             ⚙️ Settings
           </Link>
-          <Link href="/admin/posts/new" className="btn-primary shrink-0">
+          <Link href="/admin/posts/new" className="btn-primary w-full sm:w-auto justify-center">
             + New Post
           </Link>
         </div>

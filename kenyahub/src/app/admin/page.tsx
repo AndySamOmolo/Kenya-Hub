@@ -41,16 +41,16 @@ export default function AdminDashboard() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <header className="mb-8 flex items-center justify-between">
+      <header className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
         <div>
           <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
             📊 Admin Dashboard
           </h1>
           <p className="text-text-muted">Manage your KenyaHub content</p>
         </div>
-        <div className="flex items-center gap-4">
-          <span className="text-sm text-text-secondary">{user}</span>
-          <button onClick={handleLogout} className="btn-outline">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
+          <span className="text-sm text-text-secondary break-all">{user}</span>
+          <button onClick={handleLogout} className="btn-outline w-full sm:w-auto justify-center">
             Sign Out
           </button>
         </div>
