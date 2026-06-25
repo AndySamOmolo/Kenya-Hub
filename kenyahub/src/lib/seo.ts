@@ -3,11 +3,6 @@ import { TOOLS } from "./tools-registry";
 
 const BASE_URL = "https://kenyahub.me";
 
-/**
- * Generate full SEO metadata for a tool page.
- * Used by each tool's layout.tsx since the page.tsx is "use client"
- * and cannot export metadata.
- */
 export function generateToolMetadata(slug: string): Metadata {
   const tool = TOOLS.find((t) => t.slug === slug);
 

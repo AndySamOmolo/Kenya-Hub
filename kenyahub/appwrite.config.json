@@ -1,3 +1,112 @@
 {
-  "projectId": "6a3290500003e21b7fe1"
+    "projectId": "6a3290500003e21b7fe1",
+    "projectName": "Kenya Hub",
+    "endpoint": "https://fra.cloud.appwrite.io/v1",
+    "tablesDB": [
+        {
+            "$id": "kenyahub-db",
+            "name": "KenyaHub Database",
+            "enabled": true
+        }
+    ],
+    "tables": [
+        {
+            "$id": "blogs",
+            "$permissions": [
+                "read(\"any\")",
+                "create(\"users\")",
+                "update(\"users\")",
+                "delete(\"users\")"
+            ],
+            "databaseId": "kenyahub-db",
+            "name": "Blogs",
+            "enabled": true,
+            "rowSecurity": false,
+            "columns": [
+                {
+                    "key": "title",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 255
+                },
+                {
+                    "key": "slug",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 255
+                },
+                {
+                    "key": "excerpt",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 500
+                },
+                {
+                    "key": "author",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 255
+                },
+                {
+                    "key": "content",
+                    "type": "longtext",
+                    "required": true,
+                    "default": null
+                },
+                {
+                    "key": "coverImage",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 2048
+                },
+                {
+                    "key": "publishedAt",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 50
+                },
+                {
+                    "key": "updatedAt",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 50
+                },
+                {
+                    "key": "tags",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 50,
+                    "array": true
+                },
+                {
+                    "key": "readTime",
+                    "type": "integer",
+                    "required": true,
+                    "default": null
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_slug",
+                    "type": "unique",
+                    "status": "available",
+                    "columns": ["slug"]
+                },
+                {
+                    "key": "idx_published_at",
+                    "type": "key",
+                    "status": "available",
+                    "columns": ["publishedAt"]
+                }
+            ]
+        }
+    ]
 }

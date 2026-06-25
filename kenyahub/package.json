@@ -9,7 +9,7 @@
     "lint": "eslint",
     "deploy": "npm run build && npx wrangler pages deploy out --project-name kenyahub"
   },
-  "dependencies": {
+"dependencies": {
     "appwrite": "^16.1.0",
     "cheerio": "^1.2.0",
     "fuse.js": "^7.4.2",

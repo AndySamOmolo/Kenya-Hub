@@ -21,3 +21,16 @@ export interface Tool {
   isLive: boolean;
   icon: string;
 }
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  author: string;
+  publishedAt: string;
+  updatedAt: string | null;
+  tags: string[];
+  readTime: number;
+  coverImage?: string;
+  content?: string;
+}

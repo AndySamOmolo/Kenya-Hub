@@ -1,0 +1,38 @@
+name: Sync Blogs to Appwrite
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'kenyahub/content/blogs/**'
+      - 'kenyahub/scripts/upload-blogs.ts'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync:
+    name: Sync Markdown Blogs
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./kenyahub
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: './kenyahub/package-lock.json'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Upload Script
+        env:
+          APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+        run: npx tsx scripts/upload-blogs.ts
