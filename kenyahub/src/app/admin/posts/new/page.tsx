@@ -141,14 +141,14 @@ export default function NewPostPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <header className="mb-8 flex items-center justify-between">
+      <header className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
         <div>
           <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-1">
             ✍️ New Blog Post
           </h1>
           <p className="text-text-muted text-sm">Create a new article for KenyaHub</p>
         </div>
-        <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light">
+        <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light shrink-0">
           ← Back
         </Link>
       </header>
@@ -288,11 +288,11 @@ export default function NewPostPage() {
           </div>
 
           <div className="mt-6">
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 mb-2">
               <label className="text-sm font-medium text-text-secondary" htmlFor="content">
                 Content (Markdown)
               </label>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                 <input
                   type="file"
                   id="inlineUpload"
@@ -344,11 +344,11 @@ export default function NewPostPage() {
 
         {error && <p className="text-sm text-kenya-red-light">{error}</p>}
 
-        <div className="flex items-center gap-4">
-          <button type="submit" disabled={loading} className="btn-primary disabled:opacity-50">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+          <button type="submit" disabled={loading} className="btn-primary disabled:opacity-50 w-full sm:w-auto">
             {loading ? "Publishing..." : "Publish Post"}
           </button>
-          <Link href="/admin/posts" className="text-sm text-text-secondary hover:text-text-primary">
+          <Link href="/admin/posts" className="text-sm text-text-secondary hover:text-text-primary w-full sm:w-auto text-center">
             Cancel
           </Link>
         </div>

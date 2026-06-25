@@ -190,14 +190,14 @@ function EditPostContent() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <header className="mb-8 flex items-center justify-between">
+      <header className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
         <div>
           <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-1">
             ✏️ Edit Post
           </h1>
           <p className="text-text-muted text-sm">/{slug}</p>
         </div>
-        <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light">
+        <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light shrink-0">
           ← Back
         </Link>
       </header>
@@ -309,11 +309,11 @@ function EditPostContent() {
           </div>
 
           <div className="mt-6">
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 mb-2">
               <label className="text-sm font-medium text-text-secondary" htmlFor="content">
                 Content (Markdown)
               </label>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                 <input
                   type="file"
                   id="inlineUploadEdit"
@@ -364,21 +364,21 @@ function EditPostContent() {
         {error && <p className="text-sm text-kenya-red-light">{error}</p>}
         {success && <p className="text-sm text-kenya-green-light">{success}</p>}
 
-        <div className="flex items-center gap-4">
-          <button type="submit" disabled={saving} className="btn-primary disabled:opacity-50">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+          <button type="submit" disabled={saving} className="btn-primary disabled:opacity-50 w-full sm:w-auto">
             {saving ? "Saving..." : "Update Post"}
           </button>
           <button
             type="button"
             onClick={() => setShowDeleteConfirm(true)}
-            className="px-4 py-2 rounded-lg border border-border text-kenya-red-light hover:bg-kenya-red/10 transition-colors text-sm"
+            className="px-4 py-2 rounded-lg border border-border text-kenya-red-light hover:bg-kenya-red/10 transition-colors text-sm w-full sm:w-auto"
           >
             Delete Post
           </button>
           <Link
             href={`/blog/${slug}`}
             target="_blank"
-            className="text-sm text-text-secondary hover:text-gold ml-auto"
+            className="text-sm text-text-secondary hover:text-gold sm:ml-auto w-full sm:w-auto text-center"
           >
             View Live ↗
           </Link>

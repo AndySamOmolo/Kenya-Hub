@@ -69,7 +69,7 @@ export default function AdminPostsPage() {
           <p className="text-text-secondary">No posts yet. Create your first post!</p>
         </div>
       ) : (
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+        <div className="bg-bg-card border border-border rounded-xl overflow-x-auto">
           <table className="data-table">
             <thead>
               <tr>
