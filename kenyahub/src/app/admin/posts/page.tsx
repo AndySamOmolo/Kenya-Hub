@@ -58,9 +58,14 @@ export default function AdminPostsPage() {
           </h1>
           <p className="text-text-muted">Manage your blog content</p>
         </div>
-        <Link href="/admin/posts/new" className="btn-primary">
-          + New Post
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link href="/admin/settings" className="px-4 py-2 rounded-lg bg-bg-card border border-border text-sm font-medium text-text-primary hover:text-gold transition-colors">
+            ⚙️ Settings
+          </Link>
+          <Link href="/admin/posts/new" className="btn-primary shrink-0">
+            + New Post
+          </Link>
+        </div>
       </header>
 
       {posts.length === 0 ? (
