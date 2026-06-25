@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 interface BlogPost {
   $id: string;
@@ -20,15 +20,16 @@ interface BlogPost {
 import { markdownToHtml } from "@/lib/markdown";
 
 export default function BlogPostContent({ post }: { post: BlogPost | null }) {
-  const [readProgress, setReadProgress] = useState(0);
+  const progressRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
 
-  // Reading progress bar
+  // Reading progress bar — uses ref to avoid re-renders that destroy iframes
   const handleScroll = useCallback(() => {
     const scrollTop = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    if (docHeight > 0) {
-      setReadProgress(Math.min(100, Math.round((scrollTop / docHeight) * 100)));
+    if (docHeight > 0 && progressRef.current) {
+      const progress = Math.min(100, Math.round((scrollTop / docHeight) * 100));
+      progressRef.current.style.width = `${progress}%`;
     }
   }, []);
 
@@ -75,7 +76,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-50 h-0.5 bg-gold transition-all duration-150 ease-out" style={{ width: `${readProgress}%` }} />
+      <div ref={progressRef} className="fixed top-0 left-0 z-50 h-0.5 bg-gold transition-all duration-150 ease-out" style={{ width: "0%" }} />
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         <nav className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
