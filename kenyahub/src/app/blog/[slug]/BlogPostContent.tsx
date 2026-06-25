@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
 interface BlogPost {
@@ -97,13 +96,11 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
         {post.coverImage && (
           <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-10">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={post.coverImage}
               alt={post.title}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, 768px"
+              className="w-full h-full object-cover"
             />
           </div>
         )}

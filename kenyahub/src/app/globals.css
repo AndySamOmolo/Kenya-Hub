@@ -781,6 +781,15 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
   color: var(--text-primary);
   font-weight: 600;
 }
+.prose-blog iframe {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+.prose-blog .my-6 {
+  margin: 1.5rem 0;
+}
 
 /* Theme toggle button */
 .theme-toggle {
