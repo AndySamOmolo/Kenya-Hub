@@ -1,0 +1,90 @@
+{
+  "fees": {
+    "trademark": {
+      "title": "Trademark Registration",
+      "steps": [
+        { "item": "Search fee (to check availability)", "amount": 1000, "note": "Per class" },
+        { "item": "Application fee (first class)", "amount": 3850, "note": "KIPI Form TM-2" },
+        { "item": "Each additional class", "amount": 3080, "note": "Per extra class" },
+        { "item": "Examination fee", "amount": 5500, "note": null },
+        { "item": "Publication in Kenya Gazette", "amount": 3300, "note": "60-day opposition period" },
+        { "item": "Registration fee", "amount": 7700, "note": "After opposition period" },
+        { "item": "Certificate issuance", "amount": 1100, "note": null }
+      ],
+      "totalOneClass": 22450,
+      "renewalFee": 8800,
+      "renewalPeriod": "10 years",
+      "processingTime": "12–18 months",
+      "validityPeriod": "10 years (renewable indefinitely)"
+    },
+    "patent": {
+      "title": "Patent Registration",
+      "steps": [
+        { "item": "Preliminary search", "amount": 3300, "note": null },
+        { "item": "Filing fee", "amount": 5500, "note": "KIPI Form IP-3" },
+        { "item": "Examination fee", "amount": 8250, "note": null },
+        { "item": "Publication fee", "amount": 4400, "note": null },
+        { "item": "Grant fee", "amount": 11000, "note": null },
+        { "item": "Certificate issuance", "amount": 2200, "note": null }
+      ],
+      "totalCost": 34650,
+      "annualMaintenance": 5500,
+      "processingTime": "24–36 months",
+      "validityPeriod": "20 years from filing date (non-renewable)"
+    },
+    "utilityModel": {
+      "title": "Utility Model (Petty Patent)",
+      "steps": [
+        { "item": "Filing fee", "amount": 2750, "note": "Simpler than full patent" },
+        { "item": "Examination fee", "amount": 4400, "note": null },
+        { "item": "Registration fee", "amount": 5500, "note": null },
+        { "item": "Certificate issuance", "amount": 1100, "note": null }
+      ],
+      "totalCost": 13750,
+      "annualMaintenance": 3300,
+      "processingTime": "6–12 months",
+      "validityPeriod": "10 years from filing date (non-renewable)"
+    },
+    "industrialDesign": {
+      "title": "Industrial Design Registration",
+      "steps": [
+        { "item": "Application fee", "amount": 3300, "note": null },
+        { "item": "Examination fee", "amount": 4400, "note": null },
+        { "item": "Registration fee", "amount": 5500, "note": null },
+        { "item": "Certificate issuance", "amount": 1100, "note": null }
+      ],
+      "totalCost": 14300,
+      "renewalFee": 5500,
+      "renewalPeriod": "5 years",
+      "processingTime": "6–12 months",
+      "validityPeriod": "5 years (renewable up to 25 years total)"
+    },
+    "copyright": {
+      "title": "Copyright Registration",
+      "description": "Copyright protection in Kenya is automatic upon creation. Registration is optional but recommended for evidence purposes.",
+      "steps": [
+        { "item": "Registration (literary/artistic work)", "amount": 1000, "note": "Kenya Copyright Board (KECOBO)" },
+        { "item": "Registration (audio-visual work)", "amount": 5000, "note": null },
+        { "item": "Registration (sound recording)", "amount": 3000, "note": null }
+      ],
+      "processingTime": "1–3 months",
+      "validityPeriod": "Lifetime of author + 50 years"
+    }
+  },
+  "kipiInfo": {
+    "name": "Kenya Industrial Property Institute",
+    "abbreviation": "KIPI",
+    "website": "https://www.kipi.go.ke",
+    "address": "KIPI Centre, Kabarsiran Avenue, Off Waiyaki Way, Lavington, Nairobi",
+    "phone": "+254 20 2602211",
+    "email": "info@kipi.go.ke"
+  },
+  "notes": [
+    "All fees are in Kenya Shillings (KES) as gazetted by KIPI",
+    "Attorney/agent fees are separate and vary — typically KES 30,000–80,000 for trademark, KES 50,000–150,000 for patent",
+    "KIPI processes applications on a first-come-first-served basis",
+    "Trademark classes follow the Nice Classification system (45 classes)",
+    "Foreign applicants must use a registered Kenyan IP agent",
+    "Late renewal attracts a penalty of 100% of the renewal fee"
+  ]
+}

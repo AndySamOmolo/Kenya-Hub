@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { TOOLS } from "@/lib/tools-registry";
+import countiesData from "@/data/counties.json";
 
 export const dynamic = "force-static";
 
@@ -57,5 +58,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...toolPages];
+  // County pages
+  const countyBasePage: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/county/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+  ];
+
+  const countyPages: MetadataRoute.Sitemap = countiesData.counties.map(
+    (county) => ({
+      url: `${BASE_URL}/county/${county.slug}/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    })
+  );
+
+  return [...staticPages, ...toolPages, ...countyBasePage, ...countyPages];
 }

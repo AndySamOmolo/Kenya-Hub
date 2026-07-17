@@ -112,6 +112,13 @@ export default function Navbar() {
               </Link>
 
               <Link
+                href="/county"
+                className="px-3.5 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
+              >
+                Counties
+              </Link>
+
+              <Link
                 href="/tools"
                 className="px-3.5 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
               >
@@ -181,6 +188,9 @@ export default function Navbar() {
               </Link>
               <Link href="/blog" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-8 text-center text-base">📝</span> Blog
+              </Link>
+              <Link href="/county" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-8 text-center text-base">🏛️</span> Counties
               </Link>
               <Link href="/tools" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-8 text-center text-base">🛠️</span> All Tools
