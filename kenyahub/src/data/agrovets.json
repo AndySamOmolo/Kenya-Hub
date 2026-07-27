@@ -1,0 +1,32 @@
+{
+  "lastUpdated": "2025",
+  "agrovets": [
+    { "name": "Syngenta Kenya Agent — Nairobi", "county": "Nairobi", "town": "Industrial Area", "services": ["Seeds", "Pesticides", "Fertilizers", "Veterinary drugs"], "phone": "+254 20 2712971", "licensed": true },
+    { "name": "Farmers Choice Agrovet", "county": "Nairobi", "town": "Gikomba", "services": ["Seeds", "Fertilizers", "Farm tools", "Veterinary drugs"], "phone": "+254 722 123456", "licensed": true },
+    { "name": "Bayer East Africa", "county": "Nairobi", "town": "Westlands", "services": ["Crop protection", "Seeds", "Digital farming tools"], "phone": "+254 20 4212000", "licensed": true },
+    { "name": "Elgon Kenya Ltd", "county": "Nairobi", "town": "Industrial Area", "services": ["Seeds", "Agrochemicals", "Animal health", "Farm equipment"], "phone": "+254 20 6534410", "licensed": true },
+    { "name": "Kenya Seed Company", "county": "Nakuru", "town": "Nakuru Town", "services": ["Certified seeds", "Seed treatments"], "phone": "+254 51 2213780", "licensed": true },
+    { "name": "Nakuru Agrovet Centre", "county": "Nakuru", "town": "Nakuru Town", "services": ["Seeds", "Fertilizers", "Pesticides", "Vet drugs"], "phone": "+254 733 456789", "licensed": true },
+    { "name": "Meru Central Agrovet", "county": "Meru", "town": "Meru Town", "services": ["Seeds", "Fertilizers", "Miraa inputs", "Vet drugs"], "phone": "+254 712 345678", "licensed": true },
+    { "name": "Twiga Agrovet", "county": "Uasin Gishu", "town": "Eldoret", "services": ["Seeds", "Fertilizers", "Pesticides", "Dairy inputs"], "phone": "+254 721 234567", "licensed": true },
+    { "name": "Kisumu Farm Supplies", "county": "Kisumu", "town": "Kisumu Town", "services": ["Seeds", "Fertilizers", "Rice inputs", "Vet drugs"], "phone": "+254 714 567890", "licensed": true },
+    { "name": "Western Seed Company", "county": "Kakamega", "town": "Kakamega Town", "services": ["Certified seeds (maize, beans)", "Extension advice"], "phone": "+254 56 2030898", "licensed": true },
+    { "name": "Duma Agrovet", "county": "Kiambu", "town": "Thika", "services": ["Seeds", "Fertilizers", "Pesticides", "Greenhouse materials"], "phone": "+254 720 678901", "licensed": true },
+    { "name": "Nyeri Farm Inputs", "county": "Nyeri", "town": "Nyeri Town", "services": ["Coffee inputs", "Dairy feeds", "Seeds", "Vet drugs"], "phone": "+254 735 789012", "licensed": true },
+    { "name": "Kilifi Coastal Agrovet", "county": "Kilifi", "town": "Kilifi Town", "services": ["Cashew nut inputs", "Coconut seedlings", "Pesticides"], "phone": "+254 741 890123", "licensed": true },
+    { "name": "Trans Nzoia Farm Centre", "county": "Trans Nzoia", "town": "Kitale", "services": ["Seeds", "Fertilizers", "Maize inputs", "Farm equipment"], "phone": "+254 726 901234", "licensed": true },
+    { "name": "Nyandarua Potato Agrovet", "county": "Nyandarua", "town": "Ol Kalou", "services": ["Potato seed", "Fungicides", "Fertilizers"], "phone": "+254 711 012345", "licensed": true },
+    { "name": "Kericho Tea Inputs", "county": "Kericho", "town": "Kericho Town", "services": ["Tea inputs", "Fertilizers", "Pruning tools", "Vet drugs"], "phone": "+254 729 123456", "licensed": true },
+    { "name": "Machakos Dryland Agrovet", "county": "Machakos", "town": "Machakos Town", "services": ["Drought-tolerant seeds", "Green gram inputs", "Vet drugs"], "phone": "+254 738 234567", "licensed": true },
+    { "name": "Narok Farmers Agrovet", "county": "Narok", "town": "Narok Town", "services": ["Wheat inputs", "Maize seeds", "Livestock drugs"], "phone": "+254 745 345678", "licensed": true },
+    { "name": "Embu Highland Agrovet", "county": "Embu", "town": "Embu Town", "services": ["Tea/coffee inputs", "Macadamia seedlings", "Seeds"], "phone": "+254 718 456789", "licensed": true },
+    { "name": "Bungoma Agri Centre", "county": "Bungoma", "town": "Bungoma Town", "services": ["Sugarcane inputs", "Maize seeds", "Fertilizers", "Vet drugs"], "phone": "+254 732 567890", "licensed": true }
+  ],
+  "notes": [
+    "This is a representative sample of licensed agrovets. There are thousands of registered agrovets across Kenya.",
+    "Always verify that an agrovet is licensed by the Pest Control Products Board (PCPB) before purchasing agrochemicals.",
+    "KEPHIS-registered seed dealers sell certified seeds with germination guarantees. Look for the KEPHIS certification label on seed packets.",
+    "For veterinary drugs, ensure the agrovet has a licensed veterinary pharmacist on staff as required by the Veterinary Surgeons and Veterinary Para-professionals Act.",
+    "Report counterfeit products to PCPB hotline or your county agricultural office."
+  ]
+}

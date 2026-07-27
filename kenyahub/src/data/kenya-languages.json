@@ -1,0 +1,42 @@
+{
+  "lastUpdated": "2025",
+  "families": [
+    { "id": "bantu", "name": "Bantu", "color": "#2FA463", "description": "Largest language family in Kenya (~65% of population). Spread across central, western, and coastal regions." },
+    { "id": "nilotic", "name": "Nilotic", "color": "#C8961E", "description": "Second largest family (~30%). Includes Plains Nilotes (Maasai), Highland Nilotes (Kalenjin), and River-Lake Nilotes (Luo)." },
+    { "id": "cushitic", "name": "Cushitic", "color": "#BE2126", "description": "Found in northern and eastern Kenya (~3%). Includes Somali, Rendille, Oromo, and Borana." },
+    { "id": "other", "name": "Other", "color": "#1A8BD1", "description": "Includes Swahili (Bantu-based lingua franca), English (official), and minor language isolates." }
+  ],
+  "languages": [
+    { "name": "Kikuyu (Gĩkũyũ)", "family": "bantu", "speakers": 8100000, "counties": ["Kiambu", "Murang'a", "Nyeri", "Kirinyaga", "Nyandarua"], "notes": "Largest ethnic group. Central highlands." },
+    { "name": "Dholuo (Luo)", "family": "nilotic", "speakers": 5800000, "counties": ["Kisumu", "Siaya", "Homa Bay", "Migori"], "notes": "River-Lake Nilotes. Lake Victoria basin." },
+    { "name": "Kalenjin", "family": "nilotic", "speakers": 6400000, "counties": ["Uasin Gishu", "Nandi", "Kericho", "Bomet", "Baringo", "Elgeyo-Marakwet", "Trans Nzoia", "West Pokot"], "notes": "Highland Nilotes. Several sub-groups: Nandi, Kipsigis, Tugen, Pokot, Marakwet, Sabaot." },
+    { "name": "Luhya (Luyia)", "family": "bantu", "speakers": 6800000, "counties": ["Kakamega", "Bungoma", "Vihiga", "Busia"], "notes": "17+ dialects including Bukusu, Maragoli, Idakho, Isukha, Tiriki." },
+    { "name": "Kamba (Kĩkamba)", "family": "bantu", "speakers": 4600000, "counties": ["Machakos", "Makueni", "Kitui"], "notes": "Eastern province. Known for wood carving and music." },
+    { "name": "Somali", "family": "cushitic", "speakers": 2400000, "counties": ["Garissa", "Wajir", "Mandera", "Isiolo (part)"], "notes": "Dominant in North Eastern. Cross-border with Somalia." },
+    { "name": "Kisii (Ekegusii)", "family": "bantu", "speakers": 2700000, "counties": ["Kisii", "Nyamira"], "notes": "Kisii Highlands. Known for soapstone carving." },
+    { "name": "Meru (Kĩmĩĩrũ)", "family": "bantu", "speakers": 2000000, "counties": ["Meru", "Tharaka-Nithi"], "notes": "Mt. Kenya eastern slopes. Several sub-dialects." },
+    { "name": "Maasai (Maa)", "family": "nilotic", "speakers": 1200000, "counties": ["Narok", "Kajiado", "Samburu (Samburu dialect)"], "notes": "Plains Nilotes. Pastoralist culture. Samburu is a closely related dialect." },
+    { "name": "Turkana", "family": "nilotic", "speakers": 1100000, "counties": ["Turkana"], "notes": "Plains Nilotes. Pastoralist. Largest county by area." },
+    { "name": "Embu (Kĩembu)", "family": "bantu", "speakers": 580000, "counties": ["Embu"], "notes": "Mt. Kenya southeastern slopes. Related to Kikuyu and Meru." },
+    { "name": "Taita (Kidawida)", "family": "bantu", "speakers": 410000, "counties": ["Taita-Taveta"], "notes": "Taita Hills. Three main dialects: Dawida, Sagala, Kasigau." },
+    { "name": "Swahili (Kiswahili)", "family": "bantu", "speakers": 15000000, "counties": ["Mombasa", "Lamu", "Kilifi", "Kwale", "Tana River"], "notes": "National & official language. Native along the coast but spoken nationwide as lingua franca." },
+    { "name": "Mijikenda", "family": "bantu", "speakers": 2500000, "counties": ["Kilifi", "Kwale", "Mombasa"], "notes": "Nine sub-groups: Giriama, Digo, Duruma, Chonyi, Jibana, Kambe, Ribe, Rabai, Kauma." },
+    { "name": "Borana (Oromo)", "family": "cushitic", "speakers": 350000, "counties": ["Marsabit", "Isiolo"], "notes": "Cushitic pastoralists. Related to Ethiopian Oromo." },
+    { "name": "Rendille", "family": "cushitic", "speakers": 80000, "counties": ["Marsabit"], "notes": "Camel-herding pastoralists. Unique language between Somali and Afar." },
+    { "name": "Teso (Ateso)", "family": "nilotic", "speakers": 450000, "counties": ["Busia"], "notes": "Cross-border with Uganda. Part of the broader Teso ethnic group." },
+    { "name": "Pokomo", "family": "bantu", "speakers": 120000, "counties": ["Tana River"], "notes": "Tana River farmers. One of the smaller Bantu groups." },
+    { "name": "Samburu", "family": "nilotic", "speakers": 310000, "counties": ["Samburu"], "notes": "Closely related to Maasai. Semi-nomadic pastoralists." },
+    { "name": "Ilchamus (Njemps)", "family": "nilotic", "speakers": 35000, "counties": ["Baringo"], "notes": "Lake Baringo fishermen/farmers. Related to Maasai/Samburu. Endangered language." }
+  ],
+  "officialLanguages": [
+    { "language": "English", "status": "Official language", "use": "Government, judiciary, higher education, formal business" },
+    { "language": "Swahili (Kiswahili)", "status": "National & official language", "use": "Everyday communication, National Assembly, primary education, media" }
+  ],
+  "notes": [
+    "Kenya has 42+ recognized ethnic groups speaking 60+ distinct languages and dialects.",
+    "Speaker numbers are estimates based on KNBS 2019 Census ethnic population data (language ≈ ethnicity for most groups).",
+    "County-level language dominance is approximate. Urban areas (especially Nairobi, Mombasa) are highly multilingual.",
+    "Several Kenyan languages are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Suba, and Omotik.",
+    "Data compiled from KNBS 2019 Census, Ethnologue, and UNESCO Atlas of the World's Languages in Danger."
+  ]
+}

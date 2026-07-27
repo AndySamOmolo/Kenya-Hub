@@ -105,6 +105,13 @@ export default function Navbar() {
               </div>
 
               <Link
+                href="/matatu"
+                className="px-3.5 py-2 text-[0.8125rem] font-medium text-gold hover:text-gold-light transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] flex items-center gap-1"
+              >
+                <span>🚌</span> Matatu
+              </Link>
+
+              <Link
                 href="/blog"
                 className="px-3.5 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
               >
@@ -116,6 +123,13 @@ export default function Navbar() {
                 className="px-3.5 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
               >
                 Counties
+              </Link>
+
+              <Link
+                href="/about"
+                className="px-3.5 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
+              >
+                About
               </Link>
 
               <Link
@@ -186,11 +200,20 @@ export default function Navbar() {
               <Link href="/" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-8 text-center text-base">🏠</span> Home
               </Link>
+              <Link href="/matatu" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-gold hover:text-gold-light rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-8 text-center text-base">🚌</span> Matatu Routes
+              </Link>
               <Link href="/blog" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-8 text-center text-base">📝</span> Blog
               </Link>
               <Link href="/county" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-8 text-center text-base">🏛️</span> Counties
+              </Link>
+              <Link href="/about" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-8 text-center text-base">ℹ️</span> About Us
+              </Link>
+              <Link href="/contact" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-8 text-center text-base">✉️</span> Contact
               </Link>
               <Link href="/tools" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-8 text-center text-base">🛠️</span> All Tools

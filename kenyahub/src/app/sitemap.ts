@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { TOOLS } from "@/lib/tools-registry";
 import countiesData from "@/data/counties.json";
+import matatuData from "@/data/matatu-routes.json";
 
 export const dynamic = "force-static";
 
@@ -24,10 +25,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/matatu/`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${BASE_URL}/blog/`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/about/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/contact/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/privacy/`,
@@ -77,5 +96,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [...staticPages, ...toolPages, ...countyBasePage, ...countyPages];
+  // Matatu pages
+  const matatuPages: MetadataRoute.Sitemap = [];
+  matatuData.towns.filter((t) => t.isActive).forEach((t) => {
+    matatuPages.push({
+      url: `${BASE_URL}/matatu/${t.slug}/`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
+    const townRoutes = (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[t.slug] || [];
+    townRoutes.forEach((r) => {
+      matatuPages.push({
+        url: `${BASE_URL}/matatu/${t.slug}/${r.slug}/`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.7,
+      });
+    });
+  });
+
+  return [...staticPages, ...toolPages, ...countyBasePage, ...countyPages, ...matatuPages];
 }

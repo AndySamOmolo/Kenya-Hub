@@ -64,6 +64,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               {[
+                { href: "/matatu", label: "🚌 Matatu Routes" },
                 { href: "/tools/paye-calculator", label: "PAYE Calculator" },
                 { href: "/tools/mpesa-fee-calculator", label: "M-Pesa Fees" },
                 { href: "/tools/kuccps-cluster-calculator", label: "KUCCPS Calculator" },
@@ -85,15 +86,21 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             <p className="text-[0.65rem] text-text-muted">
               © {new Date().getFullYear()} KenyaHub
             </p>
+            <Link href="/about" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
+              About
+            </Link>
+            <Link href="/contact" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
+              Contact
+            </Link>
             <Link href="/privacy" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
-              Privacy
+              Privacy Policy
             </Link>
             <Link href="/terms" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
-              Terms
+              Terms of Use
             </Link>
           </div>
           <p className="text-[0.65rem] text-text-muted">

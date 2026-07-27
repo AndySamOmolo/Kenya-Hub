@@ -1,0 +1,39 @@
+{
+  "year": 2025,
+  "lastUpdated": "2025-01",
+  "events": [
+    { "name": "CPI / Inflation Rate", "agency": "KNBS", "frequency": "Monthly", "typicalDate": "~20th of following month", "category": "Prices", "description": "Consumer Price Index and year-on-year inflation rate for Kenya.", "url": "https://knbs.or.ke" },
+    { "name": "MPC Interest Rate Decision", "agency": "CBK", "frequency": "Bi-monthly", "typicalDate": "Every 2 months (Jan, Mar, May, Jul, Sep, Nov)", "category": "Monetary", "description": "Central Bank Rate (CBR) decision by the Monetary Policy Committee.", "url": "https://centralbank.go.ke" },
+    { "name": "EPRA Fuel Prices", "agency": "EPRA", "frequency": "Monthly", "typicalDate": "14th–15th", "category": "Prices", "description": "Maximum retail pump prices for petrol, diesel, kerosene by region.", "url": "https://epra.go.ke" },
+    { "name": "CBK Weekly Bulletin", "agency": "CBK", "frequency": "Weekly", "typicalDate": "Friday", "category": "Monetary", "description": "Interbank rates, forex reserves, money supply, government securities.", "url": "https://centralbank.go.ke" },
+    { "name": "GDP Estimate (Quarterly)", "agency": "KNBS", "frequency": "Quarterly", "typicalDate": "~6 weeks after quarter end", "category": "Growth", "description": "Quarterly Gross Domestic Product estimate and sectoral growth rates.", "url": "https://knbs.or.ke" },
+    { "name": "Balance of Trade", "agency": "KNBS", "frequency": "Monthly", "typicalDate": "~45 days after month end", "category": "Trade", "description": "Imports vs exports, trade deficit/surplus, top trading partners.", "url": "https://knbs.or.ke" },
+    { "name": "CBK Monetary Policy Report", "agency": "CBK", "frequency": "Quarterly", "typicalDate": "End of quarter + 4 weeks", "category": "Monetary", "description": "Comprehensive monetary policy analysis, outlook, and CBR rationale.", "url": "https://centralbank.go.ke" },
+    { "name": "National Budget Statement", "agency": "National Treasury", "frequency": "Annual", "typicalDate": "~2nd Thursday of June", "category": "Fiscal", "description": "Annual government budget reading in Parliament. Revenue and expenditure plans.", "url": "https://treasury.go.ke" },
+    { "name": "Economic Survey", "agency": "KNBS", "frequency": "Annual", "typicalDate": "April/May", "category": "Growth", "description": "Comprehensive annual review of Kenya's economy — the 'state of the nation' economic report.", "url": "https://knbs.or.ke" },
+    { "name": "Controller of Budget Reports", "agency": "COB", "frequency": "Quarterly", "typicalDate": "Various months", "category": "Fiscal", "description": "National and county government budget implementation reports. Revenue, expenditure, absorption rates.", "url": "https://cob.go.ke" },
+    { "name": "KRA Revenue Collection Report", "agency": "KRA", "frequency": "Quarterly", "typicalDate": "~1 month after quarter end", "category": "Fiscal", "description": "Tax revenue collection figures vs targets. PAYE, VAT, excise, customs breakdown.", "url": "https://kra.go.ke" },
+    { "name": "Leading Economic Indicators (LEI)", "agency": "KNBS", "frequency": "Monthly", "typicalDate": "~6 weeks after month end", "category": "Growth", "description": "Composite index of leading indicators: cement production, electricity generation, tourism arrivals, credit.", "url": "https://knbs.or.ke" },
+    { "name": "NSE Market Report", "agency": "NSE", "frequency": "Daily", "typicalDate": "End of trading day", "category": "Markets", "description": "Daily stock market summary: NSE 20, NASI, turnover, top gainers/losers.", "url": "https://nse.co.ke" },
+    { "name": "CBK Exchange Rates", "agency": "CBK", "frequency": "Daily", "typicalDate": "~1:00 PM EAT", "category": "Forex", "description": "Official indicative exchange rates for major currencies against KES.", "url": "https://centralbank.go.ke" },
+    { "name": "Treasury Bill/Bond Auction", "agency": "CBK", "frequency": "Weekly (T-Bills) / Bi-monthly (Bonds)", "typicalDate": "Thursday (T-Bills)", "category": "Monetary", "description": "Government securities auction results: 91, 182, 364-day T-Bills and infrastructure bonds.", "url": "https://centralbank.go.ke" },
+    { "name": "KNBS Census Report", "agency": "KNBS", "frequency": "Decennial", "typicalDate": "Next: ~2029", "category": "Demographics", "description": "National Population and Housing Census. Last conducted in 2019.", "url": "https://knbs.or.ke" }
+  ],
+  "categories": [
+    { "id": "Prices", "icon": "📊", "color": "#E05A5A" },
+    { "id": "Monetary", "icon": "🏦", "color": "#C8961E" },
+    { "id": "Growth", "icon": "📈", "color": "#2FA463" },
+    { "id": "Fiscal", "icon": "🏛️", "color": "#1A8BD1" },
+    { "id": "Trade", "icon": "🚢", "color": "#B87A4B" },
+    { "id": "Markets", "icon": "📉", "color": "#8B4513" },
+    { "id": "Forex", "icon": "💱", "color": "#6B4423" },
+    { "id": "Demographics", "icon": "👥", "color": "#5BBFEA" }
+  ],
+  "notes": [
+    "Dates are approximate and based on historical patterns. Actual release dates may vary.",
+    "KNBS publications are available at knbs.or.ke under 'Publications'. Most are free PDF downloads.",
+    "CBK data is published at centralbank.go.ke under 'Statistics' and 'Publications'.",
+    "For real-time alerts on Kenya economic data releases, follow KNBS, CBK, and KRA on Twitter/X.",
+    "The National Treasury publishes the Budget Policy Statement (BPS) in February and the Budget Speech in June each year."
+  ]
+}

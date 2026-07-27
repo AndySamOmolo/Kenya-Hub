@@ -1,0 +1,88 @@
+{
+  "lastUpdated": "2025-Q4",
+  "markets": [
+    { "name": "Muthurwa Market", "location": "Nairobi", "county": "Nairobi", "marketDays": "Daily (livestock Tue & Fri)", "type": "Urban terminal" },
+    { "name": "Dagoretti Market", "location": "Nairobi", "county": "Nairobi", "marketDays": "Monday & Thursday", "type": "Urban terminal" },
+    { "name": "Kiserian Market", "location": "Kiserian", "county": "Kajiado", "marketDays": "Tuesday", "type": "Peri-urban" },
+    { "name": "Naivasha Market", "location": "Naivasha", "county": "Nakuru", "marketDays": "Wednesday", "type": "Regional" },
+    { "name": "Athi River Market", "location": "Athi River", "county": "Machakos", "marketDays": "Tuesday & Saturday", "type": "Peri-urban" },
+    { "name": "Garissa Livestock Market", "location": "Garissa", "county": "Garissa", "marketDays": "Monday", "type": "Pastoral" },
+    { "name": "Rumuruti Market", "location": "Rumuruti", "county": "Laikipia", "marketDays": "Saturday", "type": "Regional" },
+    { "name": "Isiolo Market", "location": "Isiolo", "county": "Isiolo", "marketDays": "Thursday", "type": "Pastoral" },
+    { "name": "Marigat Market", "location": "Marigat", "county": "Baringo", "marketDays": "Wednesday", "type": "Regional" },
+    { "name": "Moyale Market", "location": "Moyale", "county": "Marsabit", "marketDays": "Monday", "type": "Cross-border" },
+    { "name": "Mariakani Market", "location": "Mariakani", "county": "Kilifi", "marketDays": "Tuesday", "type": "Coastal" },
+    { "name": "Emali Market", "location": "Emali", "county": "Makueni", "marketDays": "Saturday", "type": "Regional" }
+  ],
+  "livestock": [
+    {
+      "type": "Cattle (Zebu/Local)",
+      "icon": "🐄",
+      "unit": "per head",
+      "prices": [
+        { "market": "Muthurwa Market", "minPrice": 25000, "maxPrice": 55000, "grade": "Average" },
+        { "market": "Dagoretti Market", "minPrice": 30000, "maxPrice": 65000, "grade": "Good" },
+        { "market": "Kiserian Market", "minPrice": 20000, "maxPrice": 50000, "grade": "Average" },
+        { "market": "Garissa Livestock Market", "minPrice": 15000, "maxPrice": 40000, "grade": "Average" },
+        { "market": "Isiolo Market", "minPrice": 18000, "maxPrice": 45000, "grade": "Average" },
+        { "market": "Rumuruti Market", "minPrice": 22000, "maxPrice": 50000, "grade": "Average" },
+        { "market": "Moyale Market", "minPrice": 12000, "maxPrice": 35000, "grade": "Average" }
+      ]
+    },
+    {
+      "type": "Cattle (Grade/Dairy Cross)",
+      "icon": "🐄",
+      "unit": "per head",
+      "prices": [
+        { "market": "Dagoretti Market", "minPrice": 60000, "maxPrice": 150000, "grade": "Good" },
+        { "market": "Naivasha Market", "minPrice": 55000, "maxPrice": 130000, "grade": "Good" },
+        { "market": "Athi River Market", "minPrice": 50000, "maxPrice": 120000, "grade": "Average" },
+        { "market": "Rumuruti Market", "minPrice": 45000, "maxPrice": 110000, "grade": "Average" }
+      ]
+    },
+    {
+      "type": "Goats (Local/East African)",
+      "icon": "🐐",
+      "unit": "per head",
+      "prices": [
+        { "market": "Muthurwa Market", "minPrice": 4000, "maxPrice": 9000, "grade": "Average" },
+        { "market": "Kiserian Market", "minPrice": 3500, "maxPrice": 8000, "grade": "Average" },
+        { "market": "Garissa Livestock Market", "minPrice": 3000, "maxPrice": 7000, "grade": "Average" },
+        { "market": "Isiolo Market", "minPrice": 3000, "maxPrice": 7500, "grade": "Average" },
+        { "market": "Marigat Market", "minPrice": 3500, "maxPrice": 7000, "grade": "Average" },
+        { "market": "Emali Market", "minPrice": 3000, "maxPrice": 6500, "grade": "Average" },
+        { "market": "Mariakani Market", "minPrice": 3500, "maxPrice": 7500, "grade": "Average" }
+      ]
+    },
+    {
+      "type": "Sheep (Dorper/Red Maasai)",
+      "icon": "🐑",
+      "unit": "per head",
+      "prices": [
+        { "market": "Muthurwa Market", "minPrice": 5000, "maxPrice": 12000, "grade": "Average" },
+        { "market": "Dagoretti Market", "minPrice": 6000, "maxPrice": 15000, "grade": "Good" },
+        { "market": "Kiserian Market", "minPrice": 4500, "maxPrice": 10000, "grade": "Average" },
+        { "market": "Naivasha Market", "minPrice": 5000, "maxPrice": 11000, "grade": "Average" },
+        { "market": "Garissa Livestock Market", "minPrice": 3500, "maxPrice": 8000, "grade": "Average" },
+        { "market": "Rumuruti Market", "minPrice": 5000, "maxPrice": 12000, "grade": "Average" }
+      ]
+    },
+    {
+      "type": "Camels",
+      "icon": "🐪",
+      "unit": "per head",
+      "prices": [
+        { "market": "Garissa Livestock Market", "minPrice": 40000, "maxPrice": 100000, "grade": "Average" },
+        { "market": "Isiolo Market", "minPrice": 45000, "maxPrice": 120000, "grade": "Average" },
+        { "market": "Moyale Market", "minPrice": 35000, "maxPrice": 90000, "grade": "Average" }
+      ]
+    }
+  ],
+  "notes": [
+    "Prices are approximate ranges based on NALMC weekly reports and market observations. Actual prices vary by animal condition, weight, breed, and season.",
+    "Prices tend to spike before major holidays (Eid, Christmas, Easter) and drop during prolonged droughts when supply increases.",
+    "Grade/dairy cattle prices vary enormously based on breed, age, lactation status, and pedigree documentation.",
+    "The NALMC (National Agriculture and Livestock Markets Commission) publishes weekly market reports available at their offices.",
+    "Always negotiate — listed prices are typical ranges, not fixed rates."
+  ]
+}

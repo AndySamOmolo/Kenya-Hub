@@ -1,0 +1,583 @@
+{
+  "towns": [
+    { "slug": "nairobi", "name": "Nairobi", "isActive": true, "routeCount": 30, "description": "Kenya's capital and largest city. Hub of the matatu network." },
+    { "slug": "mombasa", "name": "Mombasa", "isActive": false, "routeCount": 0, "description": "Coming soon — Kenya's second city and coastal hub." },
+    { "slug": "kisumu", "name": "Kisumu", "isActive": false, "routeCount": 0, "description": "Coming soon — Lakeside city in Western Kenya." },
+    { "slug": "nakuru", "name": "Nakuru", "isActive": false, "routeCount": 0, "description": "Coming soon — Rift Valley's largest city." },
+    { "slug": "eldoret", "name": "Eldoret", "isActive": false, "routeCount": 0, "description": "Coming soon — North Rift's commercial hub." },
+    { "slug": "thika", "name": "Thika", "isActive": false, "routeCount": 0, "description": "Coming soon — Industrial town north of Nairobi." }
+  ],
+  "routes": {
+    "nairobi": [
+      {
+        "routeNumber": "2",
+        "slug": "route-2-cbd-karen",
+        "name": "CBD – Karen",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Karen Shopping Centre",
+        "fareMin": 50,
+        "fareMax": 100,
+        "operatingHours": "5:30 AM – 9:30 PM",
+        "saccoName": "Karen Route SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Kenyatta Avenue", "lat": -1.2850, "lng": 36.8195, "order": 2 },
+          { "name": "Uhuru Highway / Haile Selassie", "lat": -1.2910, "lng": 36.8190, "order": 3 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 4 },
+          { "name": "T-Mall / Langata Road", "lat": -1.3120, "lng": 36.8090, "order": 5 },
+          { "name": "Bomas of Kenya", "lat": -1.3370, "lng": 36.7730, "order": 6 },
+          { "name": "The Hub Karen", "lat": -1.3280, "lng": 36.7220, "order": 7 },
+          { "name": "Karen Shopping Centre", "lat": -1.3180, "lng": 36.7110, "order": 8 }
+        ]
+      },
+      {
+        "routeNumber": "23",
+        "slug": "route-23-cbd-kangemi",
+        "name": "CBD – Kangemi",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Kangemi",
+        "fareMin": 30,
+        "fareMax": 70,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Kangemi Route SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Uhuru Park", "lat": -1.2870, "lng": 36.8160, "order": 2 },
+          { "name": "Museum Hill", "lat": -1.2738, "lng": 36.8130, "order": 3 },
+          { "name": "Westlands", "lat": -1.2681, "lng": 36.8076, "order": 4 },
+          { "name": "Kangemi", "lat": -1.2680, "lng": 36.7460, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "33",
+        "slug": "route-33-cbd-rongai",
+        "name": "CBD – Rongai",
+        "terminusA": "Railways (CBD)",
+        "terminusB": "Rongai Town",
+        "fareMin": 80,
+        "fareMax": 150,
+        "operatingHours": "5:00 AM – 9:00 PM",
+        "saccoName": "Super Metro / Rongai SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Railways Bus Station", "lat": -1.2916, "lng": 36.8287, "order": 1 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 2 },
+          { "name": "Wilson Airport", "lat": -1.3218, "lng": 36.8152, "order": 3 },
+          { "name": "Langata Barracks", "lat": -1.3420, "lng": 36.7920, "order": 4 },
+          { "name": "Bomas Junction", "lat": -1.3370, "lng": 36.7730, "order": 5 },
+          { "name": "Rimpa", "lat": -1.3680, "lng": 36.7520, "order": 6 },
+          { "name": "Rongai Town", "lat": -1.3960, "lng": 36.7440, "order": 7 }
+        ]
+      },
+      {
+        "routeNumber": "11",
+        "slug": "route-11-cbd-eastleigh",
+        "name": "CBD – Eastleigh",
+        "terminusA": "Tom Mboya Street (CBD)",
+        "terminusB": "Eastleigh Section III",
+        "fareMin": 30,
+        "fareMax": 50,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Eastleigh Express SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Tom Mboya Street", "lat": -1.2840, "lng": 36.8268, "order": 1 },
+          { "name": "Globe Cinema Roundabout", "lat": -1.2780, "lng": 36.8260, "order": 2 },
+          { "name": "Pangani", "lat": -1.2700, "lng": 36.8320, "order": 3 },
+          { "name": "California / Eastleigh", "lat": -1.2700, "lng": 36.8490, "order": 4 },
+          { "name": "Eastleigh Section III", "lat": -1.2730, "lng": 36.8600, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "58",
+        "slug": "route-58-cbd-kitengela",
+        "name": "CBD – Kitengela",
+        "terminusA": "Railways (CBD)",
+        "terminusB": "Kitengela Town",
+        "fareMin": 100,
+        "fareMax": 200,
+        "operatingHours": "5:00 AM – 9:00 PM",
+        "saccoName": "REMBO Shuttle / 2NK SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Railways Bus Station", "lat": -1.2916, "lng": 36.8287, "order": 1 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 2 },
+          { "name": "South B", "lat": -1.3130, "lng": 36.8310, "order": 3 },
+          { "name": "Belle Vue", "lat": -1.3280, "lng": 36.8350, "order": 4 },
+          { "name": "Athi River", "lat": -1.4550, "lng": 36.9770, "order": 5 },
+          { "name": "Kitengela Town", "lat": -1.4710, "lng": 36.9610, "order": 6 }
+        ]
+      },
+      {
+        "routeNumber": "46",
+        "slug": "route-46-cbd-buruburu",
+        "name": "CBD – Buruburu",
+        "terminusA": "Tom Mboya / Ronald Ngala (CBD)",
+        "terminusB": "Buruburu Phase V",
+        "fareMin": 30,
+        "fareMax": 50,
+        "operatingHours": "5:30 AM – 9:30 PM",
+        "saccoName": "BuruBuru Shuttles SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Ronald Ngala Street", "lat": -1.2855, "lng": 36.8285, "order": 1 },
+          { "name": "Landhies Road", "lat": -1.2890, "lng": 36.8380, "order": 2 },
+          { "name": "Jogoo Road / Hamza", "lat": -1.2940, "lng": 36.8520, "order": 3 },
+          { "name": "Maringo", "lat": -1.2990, "lng": 36.8650, "order": 4 },
+          { "name": "Buruburu Phase V", "lat": -1.2920, "lng": 36.8880, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "34",
+        "slug": "route-34-cbd-kibera",
+        "name": "CBD – Kibera",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Kibera / Olympic",
+        "fareMin": 30,
+        "fareMax": 50,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Kibera Bus SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Uhuru Highway / GPO", "lat": -1.2890, "lng": 36.8210, "order": 2 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 3 },
+          { "name": "Prestige / Adams Arcade", "lat": -1.3070, "lng": 36.7980, "order": 4 },
+          { "name": "Kibera / Olympic", "lat": -1.3130, "lng": 36.7820, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "9",
+        "slug": "route-9-cbd-kasarani",
+        "name": "CBD – Kasarani",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Kasarani Stadium",
+        "fareMin": 50,
+        "fareMax": 100,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Kasarani Route SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Globe Cinema", "lat": -1.2780, "lng": 36.8260, "order": 2 },
+          { "name": "Pangani", "lat": -1.2700, "lng": 36.8320, "order": 3 },
+          { "name": "Muthaiga Roundabout", "lat": -1.2560, "lng": 36.8310, "order": 4 },
+          { "name": "Thika Road Mall (TRM)", "lat": -1.2210, "lng": 36.8880, "order": 5 },
+          { "name": "Kasarani Stadium", "lat": -1.2210, "lng": 36.8930, "order": 6 }
+        ]
+      },
+      {
+        "routeNumber": "14",
+        "slug": "route-14-cbd-githurai",
+        "name": "CBD – Githurai 45",
+        "terminusA": "Tom Mboya Street (CBD)",
+        "terminusB": "Githurai 45",
+        "fareMin": 50,
+        "fareMax": 100,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Githurai 45 SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Tom Mboya Street", "lat": -1.2840, "lng": 36.8268, "order": 1 },
+          { "name": "Globe Cinema", "lat": -1.2780, "lng": 36.8260, "order": 2 },
+          { "name": "Pangani", "lat": -1.2700, "lng": 36.8320, "order": 3 },
+          { "name": "Roysambu", "lat": -1.2190, "lng": 36.8820, "order": 4 },
+          { "name": "Githurai 45", "lat": -1.2070, "lng": 36.9000, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "44",
+        "slug": "route-44-cbd-donholm",
+        "name": "CBD – Donholm",
+        "terminusA": "Ronald Ngala (CBD)",
+        "terminusB": "Donholm / Savannah",
+        "fareMin": 30,
+        "fareMax": 50,
+        "operatingHours": "5:30 AM – 9:30 PM",
+        "saccoName": "Donholm Route SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Ronald Ngala Street", "lat": -1.2855, "lng": 36.8285, "order": 1 },
+          { "name": "Jogoo Road", "lat": -1.2940, "lng": 36.8520, "order": 2 },
+          { "name": "City Stadium / Hamza", "lat": -1.2920, "lng": 36.8450, "order": 3 },
+          { "name": "Donholm Roundabout", "lat": -1.2950, "lng": 36.8820, "order": 4 },
+          { "name": "Donholm / Savannah", "lat": -1.2960, "lng": 36.8940, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "35",
+        "slug": "route-35-cbd-south-c",
+        "name": "CBD – South C / South B",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "South C",
+        "fareMin": 30,
+        "fareMax": 50,
+        "operatingHours": "5:30 AM – 9:30 PM",
+        "saccoName": "South C SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Uhuru Highway", "lat": -1.2910, "lng": 36.8190, "order": 2 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 3 },
+          { "name": "Bellevue / South B", "lat": -1.3150, "lng": 36.8310, "order": 4 },
+          { "name": "South C Shopping Centre", "lat": -1.3220, "lng": 36.8260, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "100",
+        "slug": "route-100-cbd-umoja",
+        "name": "CBD – Umoja",
+        "terminusA": "Tom Mboya Street (CBD)",
+        "terminusB": "Umoja Innercore",
+        "fareMin": 40,
+        "fareMax": 80,
+        "operatingHours": "5:00 AM – 9:30 PM",
+        "saccoName": "Umoja Route SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Tom Mboya Street", "lat": -1.2840, "lng": 36.8268, "order": 1 },
+          { "name": "Muthurwa", "lat": -1.2900, "lng": 36.8340, "order": 2 },
+          { "name": "Jogoo Road", "lat": -1.2940, "lng": 36.8520, "order": 3 },
+          { "name": "Donholm", "lat": -1.2950, "lng": 36.8820, "order": 4 },
+          { "name": "Umoja Innercore", "lat": -1.2820, "lng": 36.8920, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "25",
+        "slug": "route-25-cbd-westlands",
+        "name": "CBD – Westlands",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Westlands / Sarit Centre",
+        "fareMin": 30,
+        "fareMax": 50,
+        "operatingHours": "6:00 AM – 9:00 PM",
+        "saccoName": "City Shuttle SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "University Way / KICC", "lat": -1.2810, "lng": 36.8186, "order": 2 },
+          { "name": "Museum Hill", "lat": -1.2738, "lng": 36.8130, "order": 3 },
+          { "name": "Westlands", "lat": -1.2681, "lng": 36.8076, "order": 4 },
+          { "name": "Sarit Centre", "lat": -1.2630, "lng": 36.8020, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "45",
+        "slug": "route-45-cbd-kayole",
+        "name": "CBD – Kayole",
+        "terminusA": "Ronald Ngala Street (CBD)",
+        "terminusB": "Kayole Spine Road",
+        "fareMin": 40,
+        "fareMax": 70,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Embassava SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Ronald Ngala Street", "lat": -1.2855, "lng": 36.8285, "order": 1 },
+          { "name": "Jogoo Road", "lat": -1.2940, "lng": 36.8520, "order": 2 },
+          { "name": "Buruburu", "lat": -1.2920, "lng": 36.8880, "order": 3 },
+          { "name": "Kayole Junction", "lat": -1.2750, "lng": 36.9060, "order": 4 },
+          { "name": "Kayole Spine Road", "lat": -1.2690, "lng": 36.9120, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "125",
+        "slug": "route-125-cbd-juja",
+        "name": "CBD – Juja",
+        "terminusA": "Tom Mboya Street (CBD)",
+        "terminusB": "Juja Town",
+        "fareMin": 80,
+        "fareMax": 150,
+        "operatingHours": "5:00 AM – 9:00 PM",
+        "saccoName": "Juja City Shuttle",
+        "verified": true,
+        "stages": [
+          { "name": "Tom Mboya Street", "lat": -1.2840, "lng": 36.8268, "order": 1 },
+          { "name": "Pangani", "lat": -1.2700, "lng": 36.8320, "order": 2 },
+          { "name": "Thika Road Mall (TRM)", "lat": -1.2210, "lng": 36.8880, "order": 3 },
+          { "name": "Ruiru Town", "lat": -1.1490, "lng": 36.9610, "order": 4 },
+          { "name": "Juja Town", "lat": -1.1050, "lng": 37.0130, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "48",
+        "slug": "route-48-cbd-pipeline",
+        "name": "CBD – Pipeline / Embakasi",
+        "terminusA": "Ronald Ngala (CBD)",
+        "terminusB": "Pipeline Estate",
+        "fareMin": 40,
+        "fareMax": 70,
+        "operatingHours": "5:00 AM – 9:30 PM",
+        "saccoName": "Embassava / Pipeline SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Ronald Ngala Street", "lat": -1.2855, "lng": 36.8285, "order": 1 },
+          { "name": "Muthurwa", "lat": -1.2900, "lng": 36.8340, "order": 2 },
+          { "name": "Jogoo Road", "lat": -1.2940, "lng": 36.8520, "order": 3 },
+          { "name": "Donholm", "lat": -1.2950, "lng": 36.8820, "order": 4 },
+          { "name": "Embakasi Village", "lat": -1.3100, "lng": 36.9010, "order": 5 },
+          { "name": "Pipeline Estate", "lat": -1.3200, "lng": 36.9120, "order": 6 }
+        ]
+      },
+      {
+        "routeNumber": "19",
+        "slug": "route-19-cbd-dagoretti",
+        "name": "CBD – Dagoretti Corner",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Dagoretti Corner",
+        "fareMin": 40,
+        "fareMax": 70,
+        "operatingHours": "5:30 AM – 9:00 PM",
+        "saccoName": "Dagoretti Route SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Uhuru Highway", "lat": -1.2910, "lng": 36.8190, "order": 2 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 3 },
+          { "name": "Ngong Road / Prestige", "lat": -1.3070, "lng": 36.7980, "order": 4 },
+          { "name": "Dagoretti Corner", "lat": -1.2980, "lng": 36.7470, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "60",
+        "slug": "route-60-cbd-kawangware",
+        "name": "CBD – Kawangware",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Kawangware '46'",
+        "fareMin": 30,
+        "fareMax": 60,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Kawangware SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Museum Hill", "lat": -1.2738, "lng": 36.8130, "order": 2 },
+          { "name": "Westlands", "lat": -1.2681, "lng": 36.8076, "order": 3 },
+          { "name": "Kangemi", "lat": -1.2680, "lng": 36.7460, "order": 4 },
+          { "name": "Kawangware '46'", "lat": -1.2790, "lng": 36.7410, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "237",
+        "slug": "route-237-cbd-thika",
+        "name": "CBD – Thika Town",
+        "terminusA": "Tom Mboya Street (CBD)",
+        "terminusB": "Thika Town",
+        "fareMin": 100,
+        "fareMax": 200,
+        "operatingHours": "5:00 AM – 9:00 PM",
+        "saccoName": "2NK SACCO / Super Metro",
+        "verified": true,
+        "stages": [
+          { "name": "Tom Mboya Street", "lat": -1.2840, "lng": 36.8268, "order": 1 },
+          { "name": "Pangani", "lat": -1.2700, "lng": 36.8320, "order": 2 },
+          { "name": "TRM / GSU", "lat": -1.2210, "lng": 36.8880, "order": 3 },
+          { "name": "Ruiru", "lat": -1.1490, "lng": 36.9610, "order": 4 },
+          { "name": "Juja", "lat": -1.1050, "lng": 37.0130, "order": 5 },
+          { "name": "Thika Town", "lat": -1.0334, "lng": 37.0693, "order": 6 }
+        ]
+      },
+      {
+        "routeNumber": "7",
+        "slug": "route-7-cbd-dandora",
+        "name": "CBD – Dandora",
+        "terminusA": "Tom Mboya Street (CBD)",
+        "terminusB": "Dandora Phase 4",
+        "fareMin": 40,
+        "fareMax": 70,
+        "operatingHours": "5:00 AM – 9:30 PM",
+        "saccoName": "Dandora SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Tom Mboya Street", "lat": -1.2840, "lng": 36.8268, "order": 1 },
+          { "name": "Globe Cinema", "lat": -1.2780, "lng": 36.8260, "order": 2 },
+          { "name": "Eastleigh", "lat": -1.2700, "lng": 36.8490, "order": 3 },
+          { "name": "Huruma", "lat": -1.2600, "lng": 36.8680, "order": 4 },
+          { "name": "Dandora Phase 4", "lat": -1.2530, "lng": 36.8910, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "6",
+        "slug": "route-6-cbd-ngong",
+        "name": "CBD – Ngong Town",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Ngong Town",
+        "fareMin": 80,
+        "fareMax": 150,
+        "operatingHours": "5:00 AM – 8:30 PM",
+        "saccoName": "Ngong Line SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 2 },
+          { "name": "Prestige / Adams Arcade", "lat": -1.3070, "lng": 36.7980, "order": 3 },
+          { "name": "Karen / Dagoretti Corner", "lat": -1.3180, "lng": 36.7500, "order": 4 },
+          { "name": "Kiserian Junction", "lat": -1.3920, "lng": 36.7180, "order": 5 },
+          { "name": "Ngong Town", "lat": -1.3620, "lng": 36.6570, "order": 6 }
+        ]
+      },
+      {
+        "routeNumber": "15",
+        "slug": "route-15-cbd-komarock",
+        "name": "CBD – Komarock",
+        "terminusA": "Ronald Ngala (CBD)",
+        "terminusB": "Komarock Estate",
+        "fareMin": 40,
+        "fareMax": 80,
+        "operatingHours": "5:00 AM – 9:30 PM",
+        "saccoName": "Komarock SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Ronald Ngala Street", "lat": -1.2855, "lng": 36.8285, "order": 1 },
+          { "name": "Jogoo Road", "lat": -1.2940, "lng": 36.8520, "order": 2 },
+          { "name": "Donholm", "lat": -1.2950, "lng": 36.8820, "order": 3 },
+          { "name": "Greenspan Mall", "lat": -1.2820, "lng": 36.8980, "order": 4 },
+          { "name": "Komarock Estate", "lat": -1.2710, "lng": 36.9080, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "110",
+        "slug": "route-110-cbd-ruaka",
+        "name": "CBD – Ruaka",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Ruaka Town",
+        "fareMin": 60,
+        "fareMax": 100,
+        "operatingHours": "5:30 AM – 9:00 PM",
+        "saccoName": "Ruaka Route SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Westlands", "lat": -1.2681, "lng": 36.8076, "order": 2 },
+          { "name": "Runda Roundabout", "lat": -1.2310, "lng": 36.7980, "order": 3 },
+          { "name": "Two Rivers Mall", "lat": -1.2240, "lng": 36.8050, "order": 4 },
+          { "name": "Ruaka Town", "lat": -1.2090, "lng": 36.7830, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "126",
+        "slug": "route-126-cbd-kiambu",
+        "name": "CBD – Kiambu Town",
+        "terminusA": "Tom Mboya Street (CBD)",
+        "terminusB": "Kiambu Town",
+        "fareMin": 80,
+        "fareMax": 150,
+        "operatingHours": "5:30 AM – 8:30 PM",
+        "saccoName": "Kiambu Route SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Tom Mboya Street", "lat": -1.2840, "lng": 36.8268, "order": 1 },
+          { "name": "Globe Cinema", "lat": -1.2780, "lng": 36.8260, "order": 2 },
+          { "name": "Muthaiga", "lat": -1.2560, "lng": 36.8310, "order": 3 },
+          { "name": "Ridgeways", "lat": -1.2350, "lng": 36.8380, "order": 4 },
+          { "name": "Kiambu Town", "lat": -1.1710, "lng": 36.8310, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "17",
+        "slug": "route-17-cbd-huruma",
+        "name": "CBD – Huruma / Mathare",
+        "terminusA": "Tom Mboya Street (CBD)",
+        "terminusB": "Huruma",
+        "fareMin": 30,
+        "fareMax": 50,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Huruma SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Tom Mboya Street", "lat": -1.2840, "lng": 36.8268, "order": 1 },
+          { "name": "Globe Cinema", "lat": -1.2780, "lng": 36.8260, "order": 2 },
+          { "name": "Pangani", "lat": -1.2700, "lng": 36.8320, "order": 3 },
+          { "name": "Mathare", "lat": -1.2590, "lng": 36.8550, "order": 4 },
+          { "name": "Huruma", "lat": -1.2530, "lng": 36.8680, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "105",
+        "slug": "route-105-cbd-syokimau",
+        "name": "CBD – Syokimau / Gateway",
+        "terminusA": "Railways (CBD)",
+        "terminusB": "Syokimau / Gateway Mall",
+        "fareMin": 80,
+        "fareMax": 130,
+        "operatingHours": "5:30 AM – 8:30 PM",
+        "saccoName": "Syokimau Express",
+        "verified": true,
+        "stages": [
+          { "name": "Railways Bus Station", "lat": -1.2916, "lng": 36.8287, "order": 1 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 2 },
+          { "name": "South B", "lat": -1.3130, "lng": 36.8310, "order": 3 },
+          { "name": "Mombasa Road / GM", "lat": -1.3400, "lng": 36.8500, "order": 4 },
+          { "name": "Syokimau / Gateway Mall", "lat": -1.3580, "lng": 36.9020, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "3",
+        "slug": "route-3-cbd-langata",
+        "name": "CBD – Langata",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Langata / Otiende",
+        "fareMin": 30,
+        "fareMax": 60,
+        "operatingHours": "5:30 AM – 9:00 PM",
+        "saccoName": "Langata SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Uhuru Highway", "lat": -1.2910, "lng": 36.8190, "order": 2 },
+          { "name": "Nyayo Stadium", "lat": -1.3032, "lng": 36.8178, "order": 3 },
+          { "name": "Wilson Airport", "lat": -1.3218, "lng": 36.8152, "order": 4 },
+          { "name": "Langata / Otiende", "lat": -1.3350, "lng": 36.7950, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "111",
+        "slug": "route-111-cbd-banana",
+        "name": "CBD – Banana Hill / Limuru",
+        "terminusA": "Kencom (CBD)",
+        "terminusB": "Banana Hill",
+        "fareMin": 80,
+        "fareMax": 150,
+        "operatingHours": "5:30 AM – 8:00 PM",
+        "saccoName": "Banana Hill SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Kencom House", "lat": -1.2864, "lng": 36.8235, "order": 1 },
+          { "name": "Westlands", "lat": -1.2681, "lng": 36.8076, "order": 2 },
+          { "name": "Runda", "lat": -1.2310, "lng": 36.7980, "order": 3 },
+          { "name": "Ruaka", "lat": -1.2090, "lng": 36.7830, "order": 4 },
+          { "name": "Banana Hill", "lat": -1.1880, "lng": 36.7540, "order": 5 }
+        ]
+      },
+      {
+        "routeNumber": "36",
+        "slug": "route-36-cbd-satellite",
+        "name": "CBD – Satellite / Utawala",
+        "terminusA": "Ronald Ngala (CBD)",
+        "terminusB": "Utawala / Mihang'o",
+        "fareMin": 50,
+        "fareMax": 100,
+        "operatingHours": "5:00 AM – 9:00 PM",
+        "saccoName": "Utawala SACCO",
+        "verified": true,
+        "stages": [
+          { "name": "Ronald Ngala Street", "lat": -1.2855, "lng": 36.8285, "order": 1 },
+          { "name": "Jogoo Road", "lat": -1.2940, "lng": 36.8520, "order": 2 },
+          { "name": "Donholm", "lat": -1.2950, "lng": 36.8820, "order": 3 },
+          { "name": "Komarock", "lat": -1.2710, "lng": 36.9080, "order": 4 },
+          { "name": "Utawala / Mihang'o", "lat": -1.2850, "lng": 36.9320, "order": 5 }
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Route numbers are based on the traditional NTSA matatu route numbering system for Nairobi.",
+    "Fares shown are typical ranges — they vary by time of day (peak hours are more expensive), weather, and demand.",
+    "Operating hours are approximate. Most routes start early morning and end by 9–10 PM. A few routes run until midnight.",
+    "SACCO names are based on common operator names. Many routes have multiple SACCOs operating on the same route.",
+    "Stage coordinates are approximate for map visualization. Actual boarding points may vary.",
+    "Data compiled from public knowledge, commuter reports, and NTSA licensed SACCO routes. Report errors via the form on each route page."
+  ]
+}

@@ -814,3 +814,24 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
 [data-theme="light"] .theme-toggle:hover {
   background: rgba(200,150,30,0.08);
 }
+
+/* ══════════════════════════════════════════════════
+   LEAFLET MAP CUSTOM STYLES
+   ══════════════════════════════════════════════════ */
+.custom-stage-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+  padding: 4px !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}
+

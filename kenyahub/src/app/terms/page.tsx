@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
-  description: "KenyaHub terms of service — conditions for using our free tools and data.",
+  title: "Terms of Service — KenyaHub",
+  description: "KenyaHub Terms of Service — terms of use, financial disclaimers, intellectual property, and governing law.",
+  alternates: { canonical: "https://kenyahub.me/terms/" },
 };
 
 export default function TermsPage() {
@@ -18,106 +19,77 @@ export default function TermsPage() {
             1. Acceptance of Terms
           </h2>
           <p>
-            By accessing and using KenyaHub, you agree to be bound by these
-            Terms of Service. If you do not agree to these terms, please do not
-            use the site.
+            By accessing or using <strong className="text-text-primary">KenyaHub</strong> (kenyahub.me), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website or services.
           </p>
         </section>
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            2. Nature of the Service
+            2. Educational & Informational Purpose Disclaimer
           </h2>
           <p>
-            KenyaHub provides free online calculators, reference tools, and
-            informational content related to Kenya. All tools are provided{" "}
-            <strong className="text-text-primary">&quot;as is&quot;</strong> for
-            informational purposes only.
+            All tools, calculators, guides, datasets, and information provided on KenyaHub are for general educational and informational purposes only.
           </p>
-        </section>
-
-        <section>
-          <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            3. Accuracy Disclaimer
-          </h2>
-          <p>
-            While we strive to ensure all data is accurate and up-to-date based
-            on official Kenyan government sources, KenyaHub:
-          </p>
-          <ul className="mt-2 space-y-1 ml-4 list-disc text-text-muted">
+          <ul className="mt-2 space-y-2 ml-4 list-disc text-text-muted">
             <li>
-              Does <strong className="text-text-secondary">not</strong> guarantee
-              the accuracy, completeness, or timeliness of any information
+              <strong className="text-text-secondary">No Professional Advice:</strong> Calculations (e.g. PAYE, Housing Levy, HELB repayments, Stamp Duty) do not constitute formal tax, legal, financial, or accounting advice.
             </li>
             <li>
-              Does <strong className="text-text-secondary">not</strong> provide
-              legal, financial, medical, or professional advice
-            </li>
-            <li>
-              Recommends users verify critical information with the relevant
-              Kenyan government body (KRA, KUCCPS, NHIF, KICD, etc.)
+              <strong className="text-text-secondary">Consult Certified Professionals:</strong> Users should verify tax returns and legal transactions with certified public accountants (CPA-K) or qualified advocates.
             </li>
           </ul>
         </section>
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            4. Limitation of Liability
+            3. Disclaimer of Warranties
           </h2>
           <p>
-            KenyaHub and its creators shall not be liable for any damages
-            arising from the use of or inability to use our tools and content.
-            This includes but is not limited to: incorrect tax calculations,
-            inaccurate school information, or outdated regulatory data.
+            KenyaHub provides all services on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis without warranties of any kind, express or implied. While we strive to maintain complete accuracy by synthesizing published gazettes and official reports, we do not warrant that tools will be error-free or uninterrupted.
           </p>
         </section>
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            5. Intellectual Property
+            4. Intellectual Property
           </h2>
           <p>
-            The KenyaHub name, logo, design, and original content are protected
-            by intellectual property laws. The underlying data used by our tools
-            (tax bands, school curricula, public holidays, etc.) is public
-            information published by the Government of Kenya.
+            The custom design, code, tool layouts, branding, and text content created for KenyaHub are protected by intellectual property laws. Public domain datasets sourced from official government publications remain the property of their respective state agencies.
           </p>
         </section>
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            6. Advertising
+            5. Limitation of Liability
           </h2>
           <p>
-            KenyaHub displays advertisements through Google AdSense. These ads
-            are served by Google and are subject to Google&apos;s own terms and
-            privacy policies.
+            In no event shall KenyaHub, its operators, or contributors be liable for any direct, indirect, incidental, or consequential damages arising from your reliance on tools or information provided on this platform.
           </p>
         </section>
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            7. Modifications
+            6. Governing Law
           </h2>
           <p>
-            We reserve the right to modify, suspend, or discontinue any tool or
-            feature at any time without notice. We may also update these Terms
-            of Service periodically.
+            These Terms of Service shall be governed by and construed in accordance with the laws of the Republic of Kenya.
           </p>
         </section>
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            8. Governing Law
+            7. Contact
           </h2>
           <p>
-            These terms are governed by the laws of the Republic of Kenya. Any
-            disputes shall be subject to the jurisdiction of Kenyan courts.
+            For questions regarding these terms, please contact us at{" "}
+            <a href="mailto:andysamonyango@gmail.com" className="text-gold hover:underline font-semibold">
+              andysamonyango@gmail.com
+            </a>.
           </p>
         </section>
 
         <p className="text-xs text-text-muted pt-4 border-t border-border">
-          Last updated: January 2025
+          Last Revision: July 2026
         </p>
       </div>
     </div>
