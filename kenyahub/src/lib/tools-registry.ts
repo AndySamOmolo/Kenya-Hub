@@ -507,6 +507,18 @@ export const TOOLS: Tool[] = [
     isLive: true,
     icon: '🏆',
   },
+  {
+    slug: 'matatu-routes',
+    title: 'Nairobi Matatu Routes & Fares Explorer',
+    shortTitle: 'Matatu Routes',
+    description: 'Interactive route finder for Nairobi matatus. Search by destination, view stages on interactive Leaflet maps, fare ranges, operating hours, and SACCO operators.',
+    category: 'transport-travel',
+    keywords: ['matatu routes Nairobi', 'matatu fare Nairobi', 'matatu stages', 'Nairobi public transport map'],
+    updateFrequency: 'periodic',
+    dataSource: 'Commuter Reports & NTSA',
+    isLive: true,
+    icon: '🚌',
+  },
 ];
 
 export function getToolsByCategory(category: ToolCategory): Tool[] {

@@ -28,31 +28,41 @@ export default function MatatuMap({ stages, routeName, routeNumber }: MatatuMapP
     import("leaflet").then((L) => {
       if (!container) return;
 
-      // Clean up previous map instance if it exists
-      if (mapInstanceRef.current) {
-        (mapInstanceRef.current as { remove: () => void }).remove();
-        mapInstanceRef.current = null;
-      }
+      try {
+        // Clean up previous map instance if it exists
+        if (mapInstanceRef.current) {
+          try {
+            (mapInstanceRef.current as { remove: () => void }).remove();
+          } catch (e) {
+            console.warn("Leaflet remove error:", e);
+          }
+          mapInstanceRef.current = null;
+        }
 
-      // Fix Leaflet marker icons default path issue in bundlers
-      delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: () => string })._getIconUrl;
-      L.Icon.Default.mergeOptions({
-        iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-        iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-        shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-      });
+        // Reset container Leaflet ID if present to prevent 'already initialized' errors
+        if ((container as unknown as { _leaflet_id?: number | null })._leaflet_id) {
+          (container as unknown as { _leaflet_id?: number | null })._leaflet_id = null;
+        }
 
-      const firstStage = stages[0];
+        // Fix Leaflet marker icons default path issue in bundlers
+        delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: () => string })._getIconUrl;
+        L.Icon.Default.mergeOptions({
+          iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+          iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+          shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+        });
 
-      // Calculate bounds
-      const bounds = L.latLngBounds(stages.map((s) => [s.lat, s.lng]));
+        const firstStage = stages[0];
 
-      // Create map
-      const map = L.map(container, {
-        center: [firstStage.lat, firstStage.lng],
-        zoom: 12,
-        zoomControl: true,
-      });
+        // Calculate bounds
+        const bounds = L.latLngBounds(stages.map((s) => [s.lat, s.lng]));
+
+        // Create map
+        const map = L.map(container, {
+          center: [firstStage.lat, firstStage.lng],
+          zoom: 12,
+          zoomControl: true,
+        });
 
       mapInstanceRef.current = map;
 
@@ -120,6 +130,9 @@ export default function MatatuMap({ stages, routeName, routeNumber }: MatatuMapP
 
       // Fit map to bounds with padding
       map.fitBounds(bounds, { padding: [40, 40] });
+      } catch (err) {
+        console.error("Leaflet map initialization error:", err);
+      }
     });
 
     return () => {
