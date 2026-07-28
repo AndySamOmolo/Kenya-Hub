@@ -1,0 +1,66 @@
+{
+  "languageId": "somali",
+  "languageName": "Somali",
+  "family": "cushitic",
+  "nativeName": "Af-Soomaali",
+  "script": "Latin",
+  "speakerCount": 2400000,
+  "counties": ["Garissa", "Wajir", "Mandera", "Isiolo"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Somali is a Cushitic language dominant in North Eastern Kenya. Cross-border with Somalia and Ethiopia. Uses the Latin-based Somali alphabet officially since 1972.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "Peace be upon you", "translation": "Assalamu alaikum", "pronunciation": "ah-sah-lah-moo ah-lah-ee-koom", "context": "Standard greeting (Islamic influence). Reply: 'Wa alaikum assalam'", "audioFile": null },
+        { "english": "Hello", "translation": "Iska warran", "pronunciation": "ees-kah wah-rahn", "context": "Casual greeting: 'What news?'", "audioFile": null },
+        { "english": "How are you?", "translation": "Sidee tahay?", "pronunciation": "see-deh tah-hah-ee", "context": "General inquiry", "audioFile": null },
+        { "english": "I am fine", "translation": "Waan fiicanahay", "pronunciation": "wah-ahn fee-chah-nah-hah-ee", "context": "", "audioFile": null },
+        { "english": "Thank you", "translation": "Mahadsanid", "pronunciation": "mah-hahd-sah-need", "context": "", "audioFile": null },
+        { "english": "Goodbye", "translation": "Nabad gelyo", "pronunciation": "nah-bahd gehl-yoh", "context": "Literally 'Peace and love'", "audioFile": null },
+        { "english": "Good morning", "translation": "Subax wanaagsan", "pronunciation": "soo-bahx wah-nah-gsahn", "context": "", "audioFile": null },
+        { "english": "Good evening", "translation": "Fiid wanaagsan", "pronunciation": "feed wah-nah-gsahn", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Kow", "pronunciation": "kow", "context": "", "audioFile": null },
+        { "english": "Two", "translation": "Laba", "pronunciation": "lah-bah", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Saddex", "pronunciation": "sahd-dehx", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Afar", "pronunciation": "ah-fahr", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Shan", "pronunciation": "shahn", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Lix", "pronunciation": "leex", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Toddoba", "pronunciation": "tohd-doh-bah", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Siddeed", "pronunciation": "seed-deed", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Sagaal", "pronunciation": "sah-gah-ahl", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Toban", "pronunciation": "toh-bahn", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        { "english": "Yes", "translation": "Haa", "pronunciation": "hah", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Maya", "pronunciation": "mah-yah", "context": "", "audioFile": null },
+        { "english": "Please", "translation": "Fadlan", "pronunciation": "fahd-lahn", "context": "", "audioFile": null },
+        { "english": "Sorry", "translation": "Waan ka xumahay", "pronunciation": "wah-ahn kah xoo-mah-hah-ee", "context": "", "audioFile": null },
+        { "english": "Water", "translation": "Biyo", "pronunciation": "bee-yoh", "context": "", "audioFile": null },
+        { "english": "Food", "translation": "Cunto", "pronunciation": "choon-toh", "context": "", "audioFile": null },
+        { "english": "Mother", "translation": "Hooyo", "pronunciation": "hoh-yoh", "context": "", "audioFile": null },
+        { "english": "Father", "translation": "Aabo", "pronunciation": "ah-boh", "context": "", "audioFile": null },
+        { "english": "Child", "translation": "Ilmo / Cunug", "pronunciation": "eel-moh / choo-noog", "context": "", "audioFile": null },
+        { "english": "Camel", "translation": "Geel", "pronunciation": "geel", "context": "Camels are central to NE Kenyan pastoralist culture", "audioFile": null },
+        { "english": "God", "translation": "Ilaah / Allah", "pronunciation": "ee-lah / ah-lah", "context": "", "audioFile": null },
+        { "english": "I love you", "translation": "Waan ku jeclahay", "pronunciation": "wah-ahn koo jeh-clah-hah-ee", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}

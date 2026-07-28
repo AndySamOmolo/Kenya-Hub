@@ -1,0 +1,68 @@
+{
+  "languageId": "kalenjin",
+  "languageName": "Kalenjin",
+  "family": "nilotic",
+  "nativeName": "Kalenjin",
+  "script": "Latin",
+  "speakerCount": 6400000,
+  "counties": ["Uasin Gishu", "Nandi", "Kericho", "Bomet", "Baringo", "Elgeyo-Marakwet", "Trans Nzoia", "West Pokot"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Kalenjin is a group of Highland Nilotic languages including Nandi, Kipsigis, Tugen, Pokot, Marakwet, and Sabaot. This dictionary uses the Nandi/Kipsigis standard as the most widely spoken variants.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "Hello / How are you?", "translation": "Chamge?", "pronunciation": "chahm-geh", "context": "Standard greeting. Reply: 'Chamge mising' (I'm very fine)", "audioFile": null },
+        { "english": "I am fine", "translation": "Chamge mising", "pronunciation": "chahm-geh mee-sing", "context": "Reply to 'Chamge?'", "audioFile": null },
+        { "english": "Good morning", "translation": "Chamge tai", "pronunciation": "chahm-geh tah-ee", "context": "Morning greeting", "audioFile": null },
+        { "english": "Good evening", "translation": "Chamge kewerin", "pronunciation": "chahm-geh keh-weh-reen", "context": "Evening greeting", "audioFile": null },
+        { "english": "Thank you", "translation": "Kongoi", "pronunciation": "kohn-goy", "context": "'Kongoi mising' = thank you very much", "audioFile": null },
+        { "english": "Goodbye", "translation": "Sait", "pronunciation": "sah-eet", "context": "", "audioFile": null },
+        { "english": "Welcome", "translation": "Karibu", "pronunciation": "kah-ree-boo", "context": "Borrowed from Swahili", "audioFile": null },
+        { "english": "Please", "translation": "Akok", "pronunciation": "ah-kohk", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Agenge", "pronunciation": "ah-gehn-geh", "context": "", "audioFile": null },
+        { "english": "Two", "translation": "Aeng'", "pronunciation": "ah-ehng", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Somok", "pronunciation": "soh-mohk", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Ang'wan", "pronunciation": "ah-ng'wahn", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Mut", "pronunciation": "moot", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Lo", "pronunciation": "loh", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Tisap", "pronunciation": "tee-sahp", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Sisit", "pronunciation": "see-seet", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Sogol", "pronunciation": "soh-gohl", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Taman", "pronunciation": "tah-mahn", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        { "english": "Yes", "translation": "Ee", "pronunciation": "eh-eh", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Achicha", "pronunciation": "ah-chee-chah", "context": "", "audioFile": null },
+        { "english": "What is your name?", "translation": "Ng'oo ingong'ung'?", "pronunciation": "ng'oh een-gong-oong", "context": "", "audioFile": null },
+        { "english": "My name is...", "translation": "Akainenyun...", "pronunciation": "ah-kah-ee-neh-nyoon", "context": "", "audioFile": null },
+        { "english": "I love you", "translation": "Achaming'in", "pronunciation": "ah-chah-meen-geen", "context": "", "audioFile": null },
+        { "english": "Water", "translation": "Peek", "pronunciation": "peehk", "context": "", "audioFile": null },
+        { "english": "Food", "translation": "Amik", "pronunciation": "ah-meek", "context": "", "audioFile": null },
+        { "english": "Milk", "translation": "Kechek", "pronunciation": "keh-chehk", "context": "Kalenjin communities are traditionally pastoralist", "audioFile": null },
+        { "english": "Child", "translation": "Lakwa", "pronunciation": "lahk-wah", "context": "", "audioFile": null },
+        { "english": "Mother", "translation": "Kogo", "pronunciation": "koh-goh", "context": "", "audioFile": null },
+        { "english": "Father", "translation": "Kwanda", "pronunciation": "kwahn-dah", "context": "", "audioFile": null },
+        { "english": "God", "translation": "Asis / Cheptalel", "pronunciation": "ah-sees / chep-tah-lehl", "context": "Asis = Sun/God. Cheptalel = supreme being", "audioFile": null },
+        { "english": "Come", "translation": "Ipwa", "pronunciation": "eep-wah", "context": "", "audioFile": null },
+        { "english": "Go", "translation": "Ituito", "pronunciation": "ee-too-ee-toh", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}

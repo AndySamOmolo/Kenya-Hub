@@ -1,0 +1,60 @@
+{
+  "languageId": "kisii",
+  "languageName": "Kisii (Ekegusii)",
+  "family": "bantu",
+  "nativeName": "Ekegusii",
+  "script": "Latin",
+  "speakerCount": 2700000,
+  "counties": ["Kisii", "Nyamira"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Kisii (Ekegusii) is a Bantu language spoken in the Kisii Highlands of Western Kenya. Known for soapstone carving and highland agriculture.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "How are you?", "translation": "Naki ase?", "pronunciation": "nah-kee ah-seh", "context": "Standard greeting", "audioFile": null },
+        { "english": "I am fine", "translation": "Ndi botire", "pronunciation": "n-dee boh-tee-reh", "context": "", "audioFile": null },
+        { "english": "Good morning", "translation": "Orogoro", "pronunciation": "oh-roh-goh-roh", "context": "Morning greeting", "audioFile": null },
+        { "english": "Thank you", "translation": "Ase", "pronunciation": "ah-seh", "context": "'Ase mono' = thank you very much", "audioFile": null },
+        { "english": "Goodbye", "translation": "Togokoana", "pronunciation": "toh-goh-koh-ah-nah", "context": "", "audioFile": null },
+        { "english": "Hello", "translation": "Bwakire", "pronunciation": "bwah-kee-reh", "context": "Hello/How did you wake up?", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Emwe", "pronunciation": "ehm-weh", "context": "", "audioFile": null },
+        { "english": "Two", "translation": "Ebere", "pronunciation": "eh-beh-reh", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Eshato", "pronunciation": "eh-shah-toh", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Ene", "pronunciation": "eh-neh", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Etano", "pronunciation": "eh-tah-noh", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Esita", "pronunciation": "eh-see-tah", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Esobaa", "pronunciation": "eh-soh-bah", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Enane", "pronunciation": "eh-nah-neh", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Engenda", "pronunciation": "ehn-gehn-dah", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Ekoome", "pronunciation": "eh-koh-meh", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        { "english": "Yes", "translation": "Ee", "pronunciation": "eh-eh", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Yaya", "pronunciation": "yah-yah", "context": "", "audioFile": null },
+        { "english": "Mother", "translation": "Omog'ina", "pronunciation": "oh-moh-gee-nah", "context": "", "audioFile": null },
+        { "english": "Father", "translation": "Tata", "pronunciation": "tah-tah", "context": "", "audioFile": null },
+        { "english": "Water", "translation": "Amaanche", "pronunciation": "ah-mah-ahn-cheh", "context": "", "audioFile": null },
+        { "english": "Food", "translation": "Ebiokuria", "pronunciation": "eh-bee-oh-koo-ree-ah", "context": "", "audioFile": null },
+        { "english": "God", "translation": "Engoro", "pronunciation": "ehn-goh-roh", "context": "", "audioFile": null },
+        { "english": "I love you", "translation": "Nkogokunda", "pronunciation": "n-koh-goh-koon-dah", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}

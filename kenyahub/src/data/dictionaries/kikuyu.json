@@ -1,0 +1,105 @@
+{
+  "languageId": "kikuyu",
+  "languageName": "Kikuyu (Gĩkũyũ)",
+  "family": "bantu",
+  "nativeName": "Gĩkũyũ",
+  "script": "Latin",
+  "speakerCount": 8100000,
+  "counties": ["Kiambu", "Murang'a", "Nyeri", "Kirinyaga", "Nyandarua"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Kikuyu is the most spoken ethnic language in Kenya, centered in the Central Highlands around Mt. Kenya. Data from LughaYangu and community references.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "How is your morning?", "translation": "Ũhoro wa rũciinĩ", "pronunciation": "oo-hoh-roh wah roo-chee-nee", "context": "Morning greeting", "audioFile": null },
+        { "english": "How is your afternoon?", "translation": "Ũhoro wa mũthenya", "pronunciation": "oo-hoh-roh wah moo-then-yah", "context": "Afternoon greeting", "audioFile": null },
+        { "english": "How is your evening?", "translation": "Ũhoro wa hwaĩ-inĩ", "pronunciation": "oo-hoh-roh wah hwah-ee-nee", "context": "Evening greeting", "audioFile": null },
+        { "english": "How are you?", "translation": "Ũhana atĩa?", "pronunciation": "oo-hah-nah ah-tee-ah", "context": "General greeting", "audioFile": null },
+        { "english": "I am fine", "translation": "Ndĩ mwega", "pronunciation": "n-dee mweh-gah", "context": "Reply to 'Ũhana atĩa?'", "audioFile": null },
+        { "english": "Hello (informal)", "translation": "Wĩ mwega?", "pronunciation": "wee mweh-gah", "context": "Casual: 'Are you well?'", "audioFile": null },
+        { "english": "Thank you", "translation": "Nĩ wega", "pronunciation": "nee weh-gah", "context": "Literally 'It is good'", "audioFile": null },
+        { "english": "Goodbye", "translation": "Tigwo na wega", "pronunciation": "tee-gwoh nah weh-gah", "context": "Stay well (to person staying)", "audioFile": null },
+        { "english": "Goodbye (to person leaving)", "translation": "Thiĩ na wega", "pronunciation": "thee-ee nah weh-gah", "context": "Go well", "audioFile": null },
+        { "english": "Welcome", "translation": "Ũkariũ", "pronunciation": "oo-kah-ree-oo", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Ĩmwe", "pronunciation": "ee-mweh", "context": "", "audioFile": null },
+        { "english": "Two", "translation": "Igĩrĩ", "pronunciation": "ee-gee-ree", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Ithatũ", "pronunciation": "ee-thah-too", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Inya", "pronunciation": "ee-nyah", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Ithano", "pronunciation": "ee-thah-noh", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Ithathatũ", "pronunciation": "ee-thah-thah-too", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Mũgwanja", "pronunciation": "moo-gwahn-jah", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Inyanya", "pronunciation": "ee-nyah-nyah", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Kenda", "pronunciation": "kehn-dah", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Ikũmi", "pronunciation": "ee-koo-mee", "context": "", "audioFile": null },
+        { "english": "Twenty", "translation": "Mĩrongo ĩĩrĩ", "pronunciation": "mee-rohn-goh ee-ree", "context": "", "audioFile": null },
+        { "english": "Hundred", "translation": "Igana", "pronunciation": "ee-gah-nah", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        { "english": "Mother", "translation": "Maitu / Nyina", "pronunciation": "mah-ee-too / nyee-nah", "context": "'Maitu' is informal/affectionate", "audioFile": null },
+        { "english": "Father", "translation": "Baba / Ithe", "pronunciation": "bah-bah / ee-theh", "context": "'Ithe' is traditional Gĩkũyũ", "audioFile": null },
+        { "english": "Child", "translation": "Kaana", "pronunciation": "kah-ah-nah", "context": "'Ciana' = children (plural)", "audioFile": null },
+        { "english": "Brother", "translation": "Mũrũ wa maitu", "pronunciation": "moo-roo wah mah-ee-too", "context": "Literally 'son of our mother'", "audioFile": null },
+        { "english": "Sister", "translation": "Mwarĩ wa maitu", "pronunciation": "mwah-ree wah mah-ee-too", "context": "Literally 'daughter of our mother'", "audioFile": null },
+        { "english": "Grandmother", "translation": "Cũcũ", "pronunciation": "choo-choo", "context": "Very respectful term", "audioFile": null },
+        { "english": "Grandfather", "translation": "Gũka", "pronunciation": "goo-kah", "context": "", "audioFile": null },
+        { "english": "Friend", "translation": "Mũrata", "pronunciation": "moo-rah-tah", "context": "", "audioFile": null },
+        { "english": "Husband", "translation": "Mũthuuri", "pronunciation": "moo-thoo-ree", "context": "Also means 'man/elder'", "audioFile": null },
+        { "english": "Wife", "translation": "Mũtumia", "pronunciation": "moo-too-mee-ah", "context": "Also means 'woman'", "audioFile": null },
+        { "english": "People", "translation": "Andũ", "pronunciation": "ahn-doo", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "icon": "🍲",
+      "entries": [
+        { "english": "Water", "translation": "Maaĩ", "pronunciation": "mah-ah-ee", "context": "", "audioFile": null },
+        { "english": "Food", "translation": "Irio", "pronunciation": "ee-ree-oh", "context": "Also the name of a famous Kikuyu dish (mashed potatoes, peas, corn)", "audioFile": null },
+        { "english": "Ugali", "translation": "Ũgali", "pronunciation": "oo-gah-lee", "context": "Maize meal staple", "audioFile": null },
+        { "english": "Meat", "translation": "Nyama", "pronunciation": "nyah-mah", "context": "", "audioFile": null },
+        { "english": "Milk", "translation": "Iria", "pronunciation": "ee-ree-ah", "context": "", "audioFile": null },
+        { "english": "Tea", "translation": "Cai", "pronunciation": "chah-ee", "context": "", "audioFile": null },
+        { "english": "Banana", "translation": "Irigũ", "pronunciation": "ee-ree-goo", "context": "", "audioFile": null },
+        { "english": "Potato", "translation": "Waru", "pronunciation": "wah-roo", "context": "Central Kenya is a major potato growing region", "audioFile": null },
+        { "english": "Beans", "translation": "Mboco", "pronunciation": "m-boh-choh", "context": "", "audioFile": null },
+        { "english": "Maize", "translation": "Mbembe", "pronunciation": "m-behm-beh", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        { "english": "Yes", "translation": "Ĩĩ", "pronunciation": "ee-ee", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Aca", "pronunciation": "ah-chah", "context": "", "audioFile": null },
+        { "english": "Thank you", "translation": "Nĩ wega mũno", "pronunciation": "nee weh-gah moo-noh", "context": "Thank you very much", "audioFile": null },
+        { "english": "Sorry", "translation": "Ũrĩa ngai", "pronunciation": "oo-ree-ah n-gah-ee", "context": "Expression of sympathy", "audioFile": null },
+        { "english": "What is your name?", "translation": "Wĩtagwo atĩa?", "pronunciation": "wee-tah-gwoh ah-tee-ah", "context": "", "audioFile": null },
+        { "english": "My name is...", "translation": "Njitagwo...", "pronunciation": "n-jee-tah-gwoh", "context": "", "audioFile": null },
+        { "english": "I love you", "translation": "Nĩngwendete", "pronunciation": "nee-n-gwehn-deh-teh", "context": "", "audioFile": null },
+        { "english": "God", "translation": "Ngai", "pronunciation": "n-gah-ee", "context": "The Kikuyu name for God. Mt. Kenya = 'Kĩrĩnyaga' (God's resting place)", "audioFile": null },
+        { "english": "Come", "translation": "Ũka", "pronunciation": "oo-kah", "context": "", "audioFile": null },
+        { "english": "Go", "translation": "Thiĩ", "pronunciation": "thee-ee", "context": "", "audioFile": null },
+        { "english": "Where?", "translation": "Kũ?", "pronunciation": "koo", "context": "", "audioFile": null },
+        { "english": "Good", "translation": "Wega", "pronunciation": "weh-gah", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}

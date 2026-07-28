@@ -1,0 +1,66 @@
+{
+  "languageId": "kamba",
+  "languageName": "Kamba (Kĩkamba)",
+  "family": "bantu",
+  "nativeName": "Kĩkamba",
+  "script": "Latin",
+  "speakerCount": 4600000,
+  "counties": ["Machakos", "Makueni", "Kitui"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Kamba is a Bantu language closely related to Kikuyu, spoken in the Eastern Province of Kenya. Data from community references and linguistic publications.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "How are you?", "translation": "Uvoo?", "pronunciation": "oo-voh", "context": "Standard greeting — literally 'News?'", "audioFile": null },
+        { "english": "I am fine", "translation": "Museo", "pronunciation": "moo-seh-oh", "context": "Reply meaning 'well/good'", "audioFile": null },
+        { "english": "Good morning", "translation": "Wia mwau wa ũthukũ", "pronunciation": "wee-ah mwah-oo wah oo-thoo-koo", "context": "Morning greeting", "audioFile": null },
+        { "english": "Thank you", "translation": "Nĩ vaa", "pronunciation": "nee vah-ah", "context": "'Nĩ vaa mũno' = thank you very much", "audioFile": null },
+        { "english": "Goodbye", "translation": "Tũlonane", "pronunciation": "too-loh-nah-neh", "context": "We will see each other", "audioFile": null },
+        { "english": "Welcome", "translation": "Wĩa mũseo", "pronunciation": "wee-ah moo-seh-oh", "context": "", "audioFile": null },
+        { "english": "Hello", "translation": "Wĩa?", "pronunciation": "wee-ah", "context": "Casual greeting — 'What's the word?'", "audioFile": null },
+        { "english": "Sorry", "translation": "Sova", "pronunciation": "soh-vah", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Ĩmwe", "pronunciation": "ee-mweh", "context": "Similar to Kikuyu", "audioFile": null },
+        { "english": "Two", "translation": "Ilĩ", "pronunciation": "ee-lee", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Itatũ", "pronunciation": "ee-tah-too", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Inya", "pronunciation": "ee-nyah", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Ithano", "pronunciation": "ee-thah-noh", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Thanthantũ", "pronunciation": "thahn-thahn-too", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Mũonza", "pronunciation": "moo-ohn-zah", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Nyaanya", "pronunciation": "nyah-ah-nyah", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Kenda", "pronunciation": "kehn-dah", "context": "Same as Kikuyu", "audioFile": null },
+        { "english": "Ten", "translation": "Ĩkũmi", "pronunciation": "ee-koo-mee", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        { "english": "Yes", "translation": "Ĩĩ", "pronunciation": "ee-ee", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Aka", "pronunciation": "ah-kah", "context": "", "audioFile": null },
+        { "english": "What is your name?", "translation": "Wĩtawa ata?", "pronunciation": "wee-tah-wah ah-tah", "context": "", "audioFile": null },
+        { "english": "My name is...", "translation": "Nĩtawa...", "pronunciation": "nee-tah-wah", "context": "", "audioFile": null },
+        { "english": "I love you", "translation": "Nĩwendete", "pronunciation": "nee-wehn-deh-teh", "context": "Similar to Kikuyu", "audioFile": null },
+        { "english": "Water", "translation": "Maũ", "pronunciation": "mah-oo", "context": "", "audioFile": null },
+        { "english": "Food", "translation": "Ĩlya", "pronunciation": "ee-lyah", "context": "", "audioFile": null },
+        { "english": "Mother", "translation": "Mwaĩ / Ĩvaa", "pronunciation": "mwah-ee / ee-vah", "context": "", "audioFile": null },
+        { "english": "Father", "translation": "Asa / Tata", "pronunciation": "ah-sah / tah-tah", "context": "", "audioFile": null },
+        { "english": "Child", "translation": "Kavisi", "pronunciation": "kah-vee-see", "context": "'Syavisi' = children", "audioFile": null },
+        { "english": "God", "translation": "Ngai / Mũlũngũ", "pronunciation": "n-gah-ee / moo-loo-ngoo", "context": "Ngai is shared with Kikuyu", "audioFile": null },
+        { "english": "Good", "translation": "Mũseo", "pronunciation": "moo-seh-oh", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "languageId": "swahili",
+  "languageName": "Swahili (Kiswahili)",
+  "family": "bantu",
+  "nativeName": "Kiswahili",
+  "script": "Latin",
+  "speakerCount": 15000000,
+  "counties": ["Mombasa", "Lamu", "Kilifi", "Kwale", "Tana River"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Swahili is Kenya's national & official language, spoken nationwide as a lingua franca. Native along the coast. Data from standard Swahili dictionaries and TUKI references.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "Hello", "translation": "Jambo", "pronunciation": "jahm-boh", "context": "General greeting (to tourists/strangers)", "audioFile": null },
+        { "english": "Hello (informal)", "translation": "Mambo", "pronunciation": "mahm-boh", "context": "Casual/youth greeting. Reply: 'Poa'", "audioFile": null },
+        { "english": "How are you?", "translation": "Habari yako?", "pronunciation": "hah-bah-ree yah-koh", "context": "Standard greeting, literally 'Your news?'", "audioFile": null },
+        { "english": "How are you? (plural/formal)", "translation": "Habari zenu?", "pronunciation": "hah-bah-ree zeh-noo", "context": "Addressing multiple people or formally", "audioFile": null },
+        { "english": "I'm fine", "translation": "Nzuri", "pronunciation": "n-zoo-ree", "context": "Standard reply to 'Habari?'", "audioFile": null },
+        { "english": "Good morning", "translation": "Habari ya asubuhi", "pronunciation": "hah-bah-ree yah ah-soo-boo-hee", "context": "Morning greeting", "audioFile": null },
+        { "english": "Good afternoon", "translation": "Habari ya mchana", "pronunciation": "hah-bah-ree yah m-chah-nah", "context": "Afternoon greeting", "audioFile": null },
+        { "english": "Good evening", "translation": "Habari ya jioni", "pronunciation": "hah-bah-ree yah jee-oh-nee", "context": "Evening greeting", "audioFile": null },
+        { "english": "Good night", "translation": "Usiku mwema", "pronunciation": "oo-see-koo mweh-mah", "context": "Said when parting at night", "audioFile": null },
+        { "english": "Goodbye", "translation": "Kwaheri", "pronunciation": "kwah-heh-ree", "context": "To one person. 'Kwaherini' for plural", "audioFile": null },
+        { "english": "See you later", "translation": "Tutaonana", "pronunciation": "too-tah-oh-nah-nah", "context": "We will see each other", "audioFile": null },
+        { "english": "Welcome", "translation": "Karibu", "pronunciation": "kah-ree-boo", "context": "'Karibuni' for plural. Very commonly used", "audioFile": null },
+        { "english": "Respect greeting (to elder)", "translation": "Shikamoo", "pronunciation": "shee-kah-moh", "context": "Respectful greeting to elders. Reply: 'Marahaba'", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Moja", "pronunciation": "moh-jah", "context": "", "audioFile": null },
+        { "english": "Two", "translation": "Mbili", "pronunciation": "m-bee-lee", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Tatu", "pronunciation": "tah-too", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Nne", "pronunciation": "n-neh", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Tano", "pronunciation": "tah-noh", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Sita", "pronunciation": "see-tah", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Saba", "pronunciation": "sah-bah", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Nane", "pronunciation": "nah-neh", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Tisa", "pronunciation": "tee-sah", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Kumi", "pronunciation": "koo-mee", "context": "", "audioFile": null },
+        { "english": "Twenty", "translation": "Ishirini", "pronunciation": "ee-shee-ree-nee", "context": "", "audioFile": null },
+        { "english": "Fifty", "translation": "Hamsini", "pronunciation": "hahm-see-nee", "context": "", "audioFile": null },
+        { "english": "Hundred", "translation": "Mia", "pronunciation": "mee-ah", "context": "'Mia moja' = one hundred", "audioFile": null },
+        { "english": "Thousand", "translation": "Elfu", "pronunciation": "ehl-foo", "context": "'Elfu moja' = one thousand", "audioFile": null }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        { "english": "Mother", "translation": "Mama", "pronunciation": "mah-mah", "context": "Also used respectfully for any older woman", "audioFile": null },
+        { "english": "Father", "translation": "Baba", "pronunciation": "bah-bah", "context": "Also used respectfully for any older man", "audioFile": null },
+        { "english": "Child", "translation": "Mtoto", "pronunciation": "m-toh-toh", "context": "'Watoto' = children (plural)", "audioFile": null },
+        { "english": "Son", "translation": "Mwana (wa kiume)", "pronunciation": "mwah-nah wah kee-oo-meh", "context": "", "audioFile": null },
+        { "english": "Daughter", "translation": "Mwana (wa kike)", "pronunciation": "mwah-nah wah kee-keh", "context": "", "audioFile": null },
+        { "english": "Brother", "translation": "Kaka / Ndugu", "pronunciation": "kah-kah / n-doo-goo", "context": "'Ndugu' also means sibling/relative generally", "audioFile": null },
+        { "english": "Sister", "translation": "Dada", "pronunciation": "dah-dah", "context": "Also used as a respectful term for a woman of similar age", "audioFile": null },
+        { "english": "Grandmother", "translation": "Bibi / Nyanya", "pronunciation": "bee-bee / nyah-nyah", "context": "Both commonly used", "audioFile": null },
+        { "english": "Grandfather", "translation": "Babu", "pronunciation": "bah-boo", "context": "", "audioFile": null },
+        { "english": "Friend", "translation": "Rafiki", "pronunciation": "rah-fee-kee", "context": "Made famous globally by The Lion King", "audioFile": null },
+        { "english": "Husband", "translation": "Mume", "pronunciation": "moo-meh", "context": "", "audioFile": null },
+        { "english": "Wife", "translation": "Mke", "pronunciation": "m-keh", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "icon": "🍲",
+      "entries": [
+        { "english": "Water", "translation": "Maji", "pronunciation": "mah-jee", "context": "", "audioFile": null },
+        { "english": "Food", "translation": "Chakula", "pronunciation": "chah-koo-lah", "context": "", "audioFile": null },
+        { "english": "Maize meal (staple)", "translation": "Ugali", "pronunciation": "oo-gah-lee", "context": "Kenya's staple food, made from maize flour", "audioFile": null },
+        { "english": "Collard greens", "translation": "Sukuma wiki", "pronunciation": "soo-koo-mah wee-kee", "context": "Literally 'push the week' — affordable everyday vegetable", "audioFile": null },
+        { "english": "Grilled meat", "translation": "Nyama choma", "pronunciation": "nyah-mah choh-mah", "context": "Kenya's beloved grilled meat, usually goat or beef", "audioFile": null },
+        { "english": "Tea", "translation": "Chai", "pronunciation": "chah-ee", "context": "Kenyan chai is spiced milk tea", "audioFile": null },
+        { "english": "Bread", "translation": "Mkate", "pronunciation": "m-kah-teh", "context": "", "audioFile": null },
+        { "english": "Rice", "translation": "Wali / Mchele", "pronunciation": "wah-lee / m-cheh-leh", "context": "'Wali' = cooked rice, 'Mchele' = uncooked rice", "audioFile": null },
+        { "english": "Beans", "translation": "Maharagwe", "pronunciation": "mah-hah-rah-gweh", "context": "", "audioFile": null },
+        { "english": "Milk", "translation": "Maziwa", "pronunciation": "mah-zee-wah", "context": "", "audioFile": null },
+        { "english": "Fruit", "translation": "Tunda", "pronunciation": "toon-dah", "context": "'Matunda' = fruits (plural)", "audioFile": null },
+        { "english": "Fish", "translation": "Samaki", "pronunciation": "sah-mah-kee", "context": "Popular in Lake Victoria and coastal regions", "audioFile": null },
+        { "english": "Chicken", "translation": "Kuku", "pronunciation": "koo-koo", "context": "", "audioFile": null },
+        { "english": "Egg", "translation": "Yai", "pronunciation": "yah-ee", "context": "'Mayai' = eggs (plural)", "audioFile": null }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        { "english": "Yes", "translation": "Ndiyo", "pronunciation": "n-dee-yoh", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Hapana", "pronunciation": "hah-pah-nah", "context": "", "audioFile": null },
+        { "english": "Please", "translation": "Tafadhali", "pronunciation": "tah-fah-dah-lee", "context": "", "audioFile": null },
+        { "english": "Thank you", "translation": "Asante", "pronunciation": "ah-sahn-teh", "context": "'Asante sana' = thank you very much", "audioFile": null },
+        { "english": "Sorry / Condolences", "translation": "Pole", "pronunciation": "poh-leh", "context": "Used for sympathy, condolences, or when someone is tired", "audioFile": null },
+        { "english": "Excuse me", "translation": "Samahani", "pronunciation": "sah-mah-hah-nee", "context": "Also means 'I'm sorry' (apology)", "audioFile": null },
+        { "english": "I don't understand", "translation": "Sielewi", "pronunciation": "see-eh-leh-wee", "context": "", "audioFile": null },
+        { "english": "Do you speak English?", "translation": "Unasema Kiingereza?", "pronunciation": "oo-nah-seh-mah kee-een-geh-reh-zah", "context": "", "audioFile": null },
+        { "english": "My name is...", "translation": "Jina langu ni...", "pronunciation": "jee-nah lahn-goo nee", "context": "", "audioFile": null },
+        { "english": "How much?", "translation": "Bei gani? / Ngapi?", "pronunciation": "beh-ee gah-nee / n-gah-pee", "context": "Essential for markets and shopping", "audioFile": null },
+        { "english": "No problem", "translation": "Hakuna matata", "pronunciation": "hah-koo-nah mah-tah-tah", "context": "World-famous Swahili phrase meaning 'no worries'", "audioFile": null },
+        { "english": "Let's go", "translation": "Twende", "pronunciation": "tweh-n-deh", "context": "", "audioFile": null },
+        { "english": "Wait", "translation": "Ngoja", "pronunciation": "n-goh-jah", "context": "Very commonly used", "audioFile": null },
+        { "english": "Help!", "translation": "Saidia!", "pronunciation": "sah-ee-dee-ah", "context": "", "audioFile": null },
+        { "english": "I want", "translation": "Nataka", "pronunciation": "nah-tah-kah", "context": "'Ninataka' is the full form", "audioFile": null },
+        { "english": "I love you", "translation": "Nakupenda", "pronunciation": "nah-koo-pehn-dah", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Directions",
+      "icon": "🚌",
+      "entries": [
+        { "english": "Where is...?", "translation": "...iko wapi?", "pronunciation": "ee-koh wah-pee", "context": "E.g., 'Duka iko wapi?' = Where is the shop?", "audioFile": null },
+        { "english": "Left", "translation": "Kushoto", "pronunciation": "koo-shoh-toh", "context": "", "audioFile": null },
+        { "english": "Right", "translation": "Kulia", "pronunciation": "koo-lee-ah", "context": "", "audioFile": null },
+        { "english": "Straight ahead", "translation": "Moja kwa moja", "pronunciation": "moh-jah kwah moh-jah", "context": "Literally 'one by one'", "audioFile": null },
+        { "english": "Stop here", "translation": "Simama hapa", "pronunciation": "see-mah-mah hah-pah", "context": "Used in matatus", "audioFile": null },
+        { "english": "Bus/Matatu", "translation": "Matatu / Basi", "pronunciation": "mah-tah-too / bah-see", "context": "Matatu = minibus (local), Basi = larger bus", "audioFile": null },
+        { "english": "Road", "translation": "Barabara", "pronunciation": "bah-rah-bah-rah", "context": "", "audioFile": null },
+        { "english": "Market", "translation": "Soko", "pronunciation": "soh-koh", "context": "", "audioFile": null },
+        { "english": "Hospital", "translation": "Hospitali", "pronunciation": "hoh-spee-tah-lee", "context": "", "audioFile": null },
+        { "english": "Police station", "translation": "Kituo cha polisi", "pronunciation": "kee-too-oh chah poh-lee-see", "context": "", "audioFile": null },
+        { "english": "Far", "translation": "Mbali", "pronunciation": "m-bah-lee", "context": "", "audioFile": null },
+        { "english": "Near", "translation": "Karibu", "pronunciation": "kah-ree-boo", "context": "Same word as 'welcome' — context matters", "audioFile": null }
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping & Money",
+      "icon": "🛒",
+      "entries": [
+        { "english": "Money", "translation": "Pesa", "pronunciation": "peh-sah", "context": "From Hindi. 'Fedha' is more formal", "audioFile": null },
+        { "english": "Shop", "translation": "Duka", "pronunciation": "doo-kah", "context": "'Maduka' = shops (plural)", "audioFile": null },
+        { "english": "Expensive", "translation": "Ghali", "pronunciation": "gah-lee", "context": "", "audioFile": null },
+        { "english": "Cheap", "translation": "Rahisi", "pronunciation": "rah-hee-see", "context": "", "audioFile": null },
+        { "english": "I want to buy", "translation": "Nataka kununua", "pronunciation": "nah-tah-kah koo-noo-noo-ah", "context": "", "audioFile": null },
+        { "english": "Reduce the price", "translation": "Punguza bei", "pronunciation": "poon-goo-zah beh-ee", "context": "Haggling is common in Kenyan markets", "audioFile": null },
+        { "english": "Receipt", "translation": "Risiti", "pronunciation": "ree-see-tee", "context": "Borrowed from English", "audioFile": null },
+        { "english": "Change (money)", "translation": "Chenji", "pronunciation": "chehn-jee", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "emergency",
+      "name": "Emergency & Safety",
+      "icon": "🚨",
+      "entries": [
+        { "english": "Help!", "translation": "Saidia!", "pronunciation": "sah-ee-dee-ah", "context": "Call for help", "audioFile": null },
+        { "english": "Police", "translation": "Polisi", "pronunciation": "poh-lee-see", "context": "", "audioFile": null },
+        { "english": "Fire!", "translation": "Moto!", "pronunciation": "moh-toh", "context": "", "audioFile": null },
+        { "english": "Doctor", "translation": "Daktari", "pronunciation": "dahk-tah-ree", "context": "", "audioFile": null },
+        { "english": "I am sick", "translation": "Ninaumwa", "pronunciation": "nee-nah-oo-mwah", "context": "", "audioFile": null },
+        { "english": "Danger", "translation": "Hatari", "pronunciation": "hah-tah-ree", "context": "", "audioFile": null },
+        { "english": "Thief!", "translation": "Mwizi!", "pronunciation": "mwee-zee", "context": "Shouting this will draw public attention", "audioFile": null },
+        { "english": "I need help", "translation": "Nahitaji msaada", "pronunciation": "nah-hee-tah-jee m-sah-ah-dah", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time & Days",
+      "icon": "⏰",
+      "entries": [
+        { "english": "Today", "translation": "Leo", "pronunciation": "leh-oh", "context": "", "audioFile": null },
+        { "english": "Tomorrow", "translation": "Kesho", "pronunciation": "keh-shoh", "context": "", "audioFile": null },
+        { "english": "Yesterday", "translation": "Jana", "pronunciation": "jah-nah", "context": "", "audioFile": null },
+        { "english": "Now", "translation": "Sasa", "pronunciation": "sah-sah", "context": "'Sasa hivi' = right now", "audioFile": null },
+        { "english": "Monday", "translation": "Jumatatu", "pronunciation": "joo-mah-tah-too", "context": "", "audioFile": null },
+        { "english": "Tuesday", "translation": "Jumanne", "pronunciation": "joo-mah-neh", "context": "", "audioFile": null },
+        { "english": "Wednesday", "translation": "Jumatano", "pronunciation": "joo-mah-tah-noh", "context": "", "audioFile": null },
+        { "english": "Thursday", "translation": "Alhamisi", "pronunciation": "ahl-hah-mee-see", "context": "", "audioFile": null },
+        { "english": "Friday", "translation": "Ijumaa", "pronunciation": "ee-joo-mah", "context": "", "audioFile": null },
+        { "english": "Saturday", "translation": "Jumamosi", "pronunciation": "joo-mah-moh-see", "context": "", "audioFile": null },
+        { "english": "Sunday", "translation": "Jumapili", "pronunciation": "joo-mah-pee-lee", "context": "", "audioFile": null },
+        { "english": "Morning", "translation": "Asubuhi", "pronunciation": "ah-soo-boo-hee", "context": "", "audioFile": null },
+        { "english": "Afternoon", "translation": "Mchana", "pronunciation": "m-chah-nah", "context": "", "audioFile": null },
+        { "english": "Evening", "translation": "Jioni", "pronunciation": "jee-oh-nee", "context": "", "audioFile": null },
+        { "english": "Night", "translation": "Usiku", "pronunciation": "oo-see-koo", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Animals",
+      "icon": "🌿",
+      "entries": [
+        { "english": "Lion", "translation": "Simba", "pronunciation": "seem-bah", "context": "Kenya's most iconic animal", "audioFile": null },
+        { "english": "Elephant", "translation": "Tembo / Ndovu", "pronunciation": "tehm-boh / n-doh-voo", "context": "Both words commonly used", "audioFile": null },
+        { "english": "Giraffe", "translation": "Twiga", "pronunciation": "twee-gah", "context": "", "audioFile": null },
+        { "english": "Buffalo", "translation": "Nyati", "pronunciation": "nyah-tee", "context": "Part of the Big Five", "audioFile": null },
+        { "english": "Rhinoceros", "translation": "Kifaru", "pronunciation": "kee-fah-roo", "context": "Endangered — Kenya is a key conservation country", "audioFile": null },
+        { "english": "Cow", "translation": "Ng'ombe", "pronunciation": "n-gohm-beh", "context": "", "audioFile": null },
+        { "english": "Goat", "translation": "Mbuzi", "pronunciation": "m-boo-zee", "context": "", "audioFile": null },
+        { "english": "Tree", "translation": "Mti", "pronunciation": "m-tee", "context": "'Miti' = trees (plural)", "audioFile": null },
+        { "english": "River", "translation": "Mto", "pronunciation": "m-toh", "context": "", "audioFile": null },
+        { "english": "Mountain", "translation": "Mlima", "pronunciation": "m-lee-mah", "context": "Kenya has Mt. Kenya (Kirinyaga), the second tallest in Africa", "audioFile": null },
+        { "english": "Rain", "translation": "Mvua", "pronunciation": "m-voo-ah", "context": "", "audioFile": null },
+        { "english": "Sun", "translation": "Jua", "pronunciation": "joo-ah", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}

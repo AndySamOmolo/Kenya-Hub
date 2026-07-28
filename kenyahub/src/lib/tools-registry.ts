@@ -484,6 +484,18 @@ export const TOOLS: Tool[] = [
     icon: '🗣️',
   },
   {
+    slug: 'kenyan-translator',
+    title: 'Kenyan Languages Translator — Swahili, Kikuyu, Luo & 10+ Languages',
+    shortTitle: 'Language Translator',
+    description: 'Translate words and phrases between English and 12+ Kenyan languages including Swahili, Kikuyu, Luo, Kalenjin, Luhya, Kamba, Maasai, and more. Browse vocabulary by category with pronunciation guides. Compare words across languages.',
+    category: 'data-reference',
+    keywords: ['Kenya language translator', 'Swahili translator', 'Kikuyu words', 'Luo greetings', 'Kenyan language dictionary', 'learn Swahili Kenya', 'Kenyan phrases', 'African language dictionary'],
+    updateFrequency: 'static',
+    dataSource: 'Community-sourced & linguistic references',
+    isLive: true,
+    icon: '🌍',
+  },
+  {
     slug: 'economic-calendar',
     title: 'Kenya Economic Data Release Calendar',
     shortTitle: 'Economic Calendar',

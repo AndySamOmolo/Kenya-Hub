@@ -1,0 +1,66 @@
+{
+  "languageId": "luhya",
+  "languageName": "Luhya (Luyia)",
+  "family": "bantu",
+  "nativeName": "Oluluyia",
+  "script": "Latin",
+  "speakerCount": 6800000,
+  "counties": ["Kakamega", "Bungoma", "Vihiga", "Busia"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Luhya encompasses 17+ dialects. This dictionary uses the Bukusu (Lubukusu) dialect as one of the most widely spoken, with some Maragoli (Lulogooli) entries noted.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "How are you?", "translation": "Muliena?", "pronunciation": "moo-lee-eh-nah", "context": "Standard Bukusu greeting", "audioFile": null },
+        { "english": "I am fine", "translation": "Ndimulahi", "pronunciation": "n-dee-moo-lah-hee", "context": "Reply to greeting", "audioFile": null },
+        { "english": "Good morning", "translation": "Efwe bulekhesie", "pronunciation": "eh-fweh boo-leh-kheh-see-eh", "context": "Bukusu morning greeting", "audioFile": null },
+        { "english": "Thank you", "translation": "Orio muno", "pronunciation": "oh-ree-oh moo-noh", "context": "'Orio' alone = thanks, 'muno' = very much", "audioFile": null },
+        { "english": "Goodbye", "translation": "Khubane", "pronunciation": "khoo-bah-neh", "context": "We'll see each other", "audioFile": null },
+        { "english": "Welcome", "translation": "Karibuni", "pronunciation": "kah-ree-boo-nee", "context": "Borrowed from Swahili", "audioFile": null },
+        { "english": "Hello", "translation": "Mulembe", "pronunciation": "moo-lehm-beh", "context": "Peace greeting — meaning 'peace be with you'", "audioFile": null },
+        { "english": "Sorry", "translation": "Sundwa", "pronunciation": "soon-dwah", "context": "Expression of sympathy", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Yindala", "pronunciation": "yeen-dah-lah", "context": "Bukusu dialect", "audioFile": null },
+        { "english": "Two", "translation": "Bibiri", "pronunciation": "bee-bee-ree", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Biraru", "pronunciation": "bee-rah-roo", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Bine", "pronunciation": "bee-neh", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Biranu", "pronunciation": "bee-rah-noo", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Bisasaba", "pronunciation": "bee-sah-sah-bah", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Bisaba", "pronunciation": "bee-sah-bah", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Binane", "pronunciation": "bee-nah-neh", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Fisa", "pronunciation": "fee-sah", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Likhumi", "pronunciation": "lee-khoo-mee", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        { "english": "Yes", "translation": "Yii", "pronunciation": "yee-ee", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Seee", "pronunciation": "seh-eh", "context": "", "audioFile": null },
+        { "english": "What is your name?", "translation": "Lisina lyoo ni rira?", "pronunciation": "lee-see-nah lyoh nee ree-rah", "context": "Bukusu dialect", "audioFile": null },
+        { "english": "I love you", "translation": "Nakhukunda", "pronunciation": "nah-khoo-koon-dah", "context": "", "audioFile": null },
+        { "english": "Water", "translation": "Amanji", "pronunciation": "ah-mahn-jee", "context": "", "audioFile": null },
+        { "english": "Food", "translation": "Kumakula", "pronunciation": "koo-mah-koo-lah", "context": "", "audioFile": null },
+        { "english": "Mother", "translation": "Mama / Mayi", "pronunciation": "mah-mah / mah-yee", "context": "", "audioFile": null },
+        { "english": "Father", "translation": "Papa / Taata", "pronunciation": "pah-pah / tah-tah", "context": "", "audioFile": null },
+        { "english": "Child", "translation": "Omwana", "pronunciation": "ohm-wah-nah", "context": "'Abana' = children (plural)", "audioFile": null },
+        { "english": "Friend", "translation": "Omunani", "pronunciation": "oh-moo-nah-nee", "context": "", "audioFile": null },
+        { "english": "Come", "translation": "Icha", "pronunciation": "ee-chah", "context": "", "audioFile": null },
+        { "english": "God", "translation": "Wele / Nyasaye", "pronunciation": "weh-leh / nyah-sah-yeh", "context": "Wele = traditional name; Nyasaye = shared with Luo", "audioFile": null }
+      ]
+    }
+  ]
+}

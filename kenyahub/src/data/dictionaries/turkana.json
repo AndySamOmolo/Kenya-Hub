@@ -1,0 +1,44 @@
+{
+  "languageId": "turkana",
+  "languageName": "Turkana",
+  "family": "nilotic",
+  "nativeName": "Ng'aturkana",
+  "script": "Latin",
+  "speakerCount": 1100000,
+  "counties": ["Turkana"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Turkana is a Plains Nilotic language spoken in Kenya's largest county by area. Pastoralist culture with deep oral traditions.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "Hello / How are you?", "translation": "Ejok?", "pronunciation": "eh-johk", "context": "Standard greeting. Literally 'Is it good?'", "audioFile": null },
+        { "english": "I am fine", "translation": "Ejok noi", "pronunciation": "eh-johk noh-ee", "context": "", "audioFile": null },
+        { "english": "Thank you", "translation": "Eyalama", "pronunciation": "eh-yah-lah-mah", "context": "", "audioFile": null },
+        { "english": "Goodbye", "translation": "Lokitoe", "pronunciation": "loh-kee-toh-eh", "context": "", "audioFile": null },
+        { "english": "Good morning", "translation": "Ejok ang ekwaan", "pronunciation": "eh-johk ahng ek-wahn", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Apei", "pronunciation": "ah-peh-ee", "context": "", "audioFile": null },
+        { "english": "Two", "translation": "Aarei", "pronunciation": "ah-reh-ee", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Auni", "pronunciation": "ah-oo-nee", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Aongon", "pronunciation": "ah-ohn-gohn", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Akanyon", "pronunciation": "ah-kahn-yohn", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Akapel", "pronunciation": "ah-kah-pehl", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Akapeson", "pronunciation": "ah-kah-peh-sohn", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Aaunit", "pronunciation": "ah-oo-neet", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Aaongonon", "pronunciation": "ah-ohn-goh-nohn", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Atomon", "pronunciation": "ah-toh-mohn", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}

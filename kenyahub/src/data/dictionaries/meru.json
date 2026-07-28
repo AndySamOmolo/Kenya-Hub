@@ -1,0 +1,60 @@
+{
+  "languageId": "meru",
+  "languageName": "Meru (Kĩmĩĩrũ)",
+  "family": "bantu",
+  "nativeName": "Kĩmĩĩrũ",
+  "script": "Latin",
+  "speakerCount": 2000000,
+  "counties": ["Meru", "Tharaka-Nithi"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Meru is a Bantu language spoken on the eastern slopes of Mt. Kenya. Related to Kikuyu and Embu. Data from community references.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "How are you?", "translation": "Muga?", "pronunciation": "moo-gah", "context": "Standard greeting", "audioFile": null },
+        { "english": "I am fine", "translation": "Ndĩ mwega", "pronunciation": "n-dee mweh-gah", "context": "Similar to Kikuyu", "audioFile": null },
+        { "english": "Good morning", "translation": "Muga mũnthi?", "pronunciation": "moo-gah moon-thee", "context": "How are you this morning?", "audioFile": null },
+        { "english": "Thank you", "translation": "Nĩ wega", "pronunciation": "nee weh-gah", "context": "Literally 'It is good'", "audioFile": null },
+        { "english": "Goodbye", "translation": "Tiga wega", "pronunciation": "tee-gah weh-gah", "context": "Stay well", "audioFile": null },
+        { "english": "Welcome", "translation": "Ũkaribũ", "pronunciation": "oo-kah-ree-boo", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Ĩmwe", "pronunciation": "ee-mweh", "context": "", "audioFile": null },
+        { "english": "Two", "translation": "Igĩrĩ", "pronunciation": "ee-gee-ree", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Ithatu", "pronunciation": "ee-thah-too", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Inya", "pronunciation": "ee-nyah", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Ithano", "pronunciation": "ee-thah-noh", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Ithandatũ", "pronunciation": "ee-thahn-dah-too", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Mũgwanja", "pronunciation": "moo-gwahn-jah", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Inyanya", "pronunciation": "ee-nyah-nyah", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Kenda", "pronunciation": "kehn-dah", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Ikũmi", "pronunciation": "ee-koo-mee", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        { "english": "Yes", "translation": "Ĩĩ", "pronunciation": "ee-ee", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Aca", "pronunciation": "ah-chah", "context": "", "audioFile": null },
+        { "english": "Mother", "translation": "Mũmwe", "pronunciation": "moo-mweh", "context": "", "audioFile": null },
+        { "english": "Father", "translation": "Baba", "pronunciation": "bah-bah", "context": "", "audioFile": null },
+        { "english": "Water", "translation": "Maaĩ", "pronunciation": "mah-ah-ee", "context": "", "audioFile": null },
+        { "english": "Food", "translation": "Irio", "pronunciation": "ee-ree-oh", "context": "", "audioFile": null },
+        { "english": "God", "translation": "Ngai / Mũrũngu", "pronunciation": "n-gah-ee / moo-roon-goo", "context": "", "audioFile": null },
+        { "english": "Good", "translation": "Mwega", "pronunciation": "mweh-gah", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}
