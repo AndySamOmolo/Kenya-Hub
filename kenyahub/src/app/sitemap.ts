@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { TOOLS } from "@/lib/tools-registry";
 import countiesData from "@/data/counties.json";
 import matatuData from "@/data/matatu-routes.json";
+import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 
 export const dynamic = "force-static";
 
@@ -116,5 +117,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  return [...staticPages, ...toolPages, ...countyBasePage, ...countyPages, ...matatuPages];
+  // Static blog posts
+  const blogPages: MetadataRoute.Sitemap = STATIC_BLOG_POSTS.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}/`,
+    lastModified: post.updatedAt || post.publishedAt,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...toolPages, ...countyBasePage, ...countyPages, ...matatuPages, ...blogPages];
 }

@@ -68,24 +68,10 @@ export default function PrivacyPage() {
           </ul>
         </section>
 
-        <section>
-          <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            4. Web Analytics (Google Analytics)
-          </h2>
-          <p>
-            We use Google Analytics to gather anonymous, aggregated traffic statistics to understand how users interact with KenyaHub and improve site performance. Google Analytics records data such as:
-          </p>
-          <ul className="mt-2 space-y-1 ml-4 list-disc text-text-muted">
-            <li>Device type, browser version, and operating system</li>
-            <li>Approximate location (country and city level)</li>
-            <li>Referral sources and pages viewed</li>
-            <li>Session duration and engagement rates</li>
-          </ul>
-        </section>
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            5. Cookies and Control
+            4. Cookies and Control
           </h2>
           <p>
             A cookie is a small text file placed on your device by a web page server. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. Disabling cookies will not affect your ability to use the tools on KenyaHub.
@@ -94,7 +80,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            6. Regulatory Compliance & Data Rights
+            5. Regulatory Compliance & Data Rights
           </h2>
           <p>
             KenyaHub adheres to applicable data protection regulations:
@@ -114,7 +100,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            7. External Links
+            6. External Links
           </h2>
           <p>
             Our site may contain links to official Kenyan government websites (such as KRA, KNBS, CBK, eCitizen). KenyaHub is not responsible for the privacy practices or content of external third-party websites.
@@ -123,7 +109,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            8. Contact Us
+            7. Contact Us
           </h2>
           <p>
             If you have questions regarding this Privacy Policy or data practices, please email us at{" "}
@@ -134,7 +120,7 @@ export default function PrivacyPage() {
         </section>
 
         <p className="text-xs text-text-muted pt-4 border-t border-border">
-          Last Revision: July 2026 · Compliant with Google AdSense Publisher Guidelines
+          Last Revision: September 2026 · Compliant with Google AdSense Publisher Guidelines · Google Consent Mode v2
         </p>
       </div>
     </div>

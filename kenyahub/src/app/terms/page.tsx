@@ -89,7 +89,7 @@ export default function TermsPage() {
         </section>
 
         <p className="text-xs text-text-muted pt-4 border-t border-border">
-          Last Revision: July 2026
+          Last Revision: September 2026
         </p>
       </div>
     </div>

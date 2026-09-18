@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/nav/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
+import CookieConsent from "@/components/CookieConsent";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,11 +29,11 @@ export const metadata: Metadata = {
     "Free online tools built for Kenya — PAYE salary calculator, M-Pesa fee calculator, CBC curriculum explorer, KUCCPS cluster points, public holidays, and more. All data from official Kenyan government sources.",
   keywords: [
     "Kenya tools",
-    "PAYE calculator Kenya 2025",
+    "PAYE calculator Kenya 2026",
     "M-Pesa charges calculator",
     "CBC curriculum Kenya",
     "KUCCPS cluster calculator",
-    "Kenya public holidays 2025",
+    "Kenya public holidays 2026",
     "Kenya number plate decoder",
     "KCSE grade calculator",
   ],
@@ -44,11 +45,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_KE",
     siteName: "KenyaHub",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "KenyaHub — Free Tools & Data for Every Kenyan",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "KenyaHub — Free Tools & Data for Every Kenyan",
     description: "Free tools with official Kenyan data. No sign-up needed.",
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
 };
@@ -72,6 +82,20 @@ const themeScript = `
 })();
 `;
 
+// Google Consent Mode v2 — must run BEFORE adsbygoogle.js loads
+// Sets default consent state to "denied" so no cookies are set until user consents
+const consentModeScript = `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'wait_for_update': 500
+});
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -86,13 +110,14 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        {/* Google AdSense */}
+        {/* Google Consent Mode v2 — MUST load before AdSense */}
+        <script dangerouslySetInnerHTML={{ __html: consentModeScript }} />
+        {/* Google AdSense — auto ads */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5895990873842803"
           crossOrigin="anonymous"
         />
-        {/* Google Search Console verification (update the content value with your verification code) */}
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
       </head>
       <body className="min-h-screen flex flex-col">
@@ -100,6 +125,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <CookieConsent />
         </ThemeProvider>
       </body>
     </html>

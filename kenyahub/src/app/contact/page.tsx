@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 
+const CONTACT_EMAIL = "andysamonyango@gmail.com";
+
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -12,9 +14,33 @@ export default function ContactPage() {
     message: "",
   });
 
+  const subjectLabels: Record<string, string> = {
+    general: "General Inquiry",
+    correction: "Data Discrepancy / Bug Report",
+    suggestion: "New Tool Suggestion",
+    advertising: "Advertising / Sponsorship",
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
+
+    // Build mailto link with pre-filled subject and body
+    const subjectLine = `[KenyaHub ${subjectLabels[formData.subject] || "Inquiry"}] from ${formData.name}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Category: ${subjectLabels[formData.subject] || formData.subject}`,
+      ``,
+      `Message:`,
+      formData.message,
+    ].join("\n");
+
+    const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(body)}`;
+
+    // Open default mail client
+    window.location.href = mailtoUrl;
+
     setSubmitted(true);
   };
 
@@ -37,17 +63,17 @@ export default function ContactPage() {
             <span className="text-2xl">✉️</span>
             <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Direct Email</h3>
             <p className="text-xs text-text-muted">For general inquiries, editorial corrections, or media inquiries:</p>
-            <a href="mailto:andysamonyango@gmail.com" className="text-xs font-semibold text-gold hover:underline block">
-              andysamonyango@gmail.com
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-xs font-semibold text-gold hover:underline block">
+              {CONTACT_EMAIL}
             </a>
           </div>
 
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
             <span className="text-2xl">📢</span>
-            <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Advertising & Partnerships</h3>
+            <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Advertising &amp; Partnerships</h3>
             <p className="text-xs text-text-muted">Interested in reaching out to Kenyan digital audiences and decision-makers?</p>
-            <a href="mailto:andysamonyango@gmail.com" className="text-xs font-semibold text-gold hover:underline block">
-              andysamonyango@gmail.com
+            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("[KenyaHub] Advertising Inquiry")}`} className="text-xs font-semibold text-gold hover:underline block">
+              {CONTACT_EMAIL}
             </a>
           </div>
 
@@ -67,9 +93,12 @@ export default function ContactPage() {
               <div className="w-16 h-16 rounded-full bg-kenya-green/15 text-kenya-green-light flex items-center justify-center text-3xl mx-auto">
                 ✓
               </div>
-              <h2 className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)]">Message Sent!</h2>
+              <h2 className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)]">Opening Your Email Client</h2>
               <p className="text-xs text-text-muted max-w-sm mx-auto">
-                Thank you for reaching out to KenyaHub. Our team will review your message and respond shortly.
+                Your default email app should open with the message pre-filled. If it didn&apos;t open, you can email us directly at{" "}
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-gold hover:underline font-semibold">
+                  {CONTACT_EMAIL}
+                </a>.
               </p>
               <button
                 onClick={() => { setSubmitted(false); setFormData({ name: "", email: "", subject: "general", message: "" }); }}
@@ -86,8 +115,9 @@ export default function ContactPage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-xs text-text-muted block mb-1">Your Name *</label>
+                  <label htmlFor="contact-name" className="text-xs text-text-muted block mb-1">Your Name *</label>
                   <input
+                    id="contact-name"
                     type="text"
                     required
                     value={formData.name}
@@ -98,8 +128,9 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="text-xs text-text-muted block mb-1">Email Address *</label>
+                  <label htmlFor="contact-email" className="text-xs text-text-muted block mb-1">Email Address *</label>
                   <input
+                    id="contact-email"
                     type="email"
                     required
                     value={formData.email}
@@ -111,8 +142,9 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="text-xs text-text-muted block mb-1">Topic / Category</label>
+                <label htmlFor="contact-subject" className="text-xs text-text-muted block mb-1">Topic / Category</label>
                 <select
+                  id="contact-subject"
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   className="input-field text-sm"
@@ -125,8 +157,9 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="text-xs text-text-muted block mb-1">Message *</label>
+                <label htmlFor="contact-message" className="text-xs text-text-muted block mb-1">Message *</label>
                 <textarea
+                  id="contact-message"
                   required
                   rows={5}
                   value={formData.message}
@@ -142,6 +175,10 @@ export default function ContactPage() {
               >
                 Send Message →
               </button>
+
+              <p className="text-[0.625rem] text-text-muted text-center">
+                This will open your default email client with the message pre-filled.
+              </p>
             </form>
           )}
         </div>
