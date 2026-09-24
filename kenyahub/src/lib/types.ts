@@ -6,6 +6,7 @@ export type ToolCategory =
   | 'transport-travel'
   | 'health-wellness'
   | 'business-investment'
+  | 'language-learning'
   | 'data-reference'
   | 'agriculture-environment';
 
