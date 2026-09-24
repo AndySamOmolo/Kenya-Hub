@@ -496,6 +496,18 @@ export const TOOLS: Tool[] = [
     icon: '🌍',
   },
   {
+    slug: 'luo-learn',
+    title: 'LuoLearn — Learn Dholuo Through Language & Culture',
+    shortTitle: 'LuoLearn',
+    description: 'Build practical Dholuo skills with guided lessons, interactive flashcards, pronunciation-friendly vocabulary, daily practice, proverbs, and Luo riddles. A KenyaHub language module for heritage learners, families, and curious travellers.',
+    category: 'education-cbc',
+    keywords: ['learn Dholuo', 'Luo lessons', 'Dholuo vocabulary', 'Luo proverbs', 'Dholuo greetings', 'Luo language Kenya', 'Dholuo dictionary'],
+    updateFrequency: 'periodic',
+    dataSource: 'KenyaHub Luo dictionary & community learning references',
+    isLive: true,
+    icon: '📚',
+  },
+  {
     slug: 'economic-calendar',
     title: 'Kenya Economic Data Release Calendar',
     shortTitle: 'Economic Calendar',
