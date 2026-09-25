@@ -7,9 +7,10 @@ interface ToolShellProps {
   tool: Tool;
   children: React.ReactNode;
   faq?: { question: string; answer: string }[];
+  breadcrumbSuffix?: { label: string; href?: string }[];
 }
 
-export default function ToolShell({ tool, children, faq }: ToolShellProps) {
+export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: ToolShellProps) {
   const related = getRelatedTools(tool.slug, 4);
   const category = getCategoryInfo(tool.category);
 
@@ -94,7 +95,29 @@ export default function ToolShell({ tool, children, faq }: ToolShellProps) {
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        <span className="text-text-secondary truncate">{tool.shortTitle}</span>
+        {!breadcrumbSuffix ? (
+          <span className="text-text-secondary truncate">{tool.shortTitle}</span>
+        ) : (
+          <>
+            <Link href={`/tools/${tool.slug}`} className="hover:text-gold transition-colors truncate">
+              {tool.shortTitle}
+            </Link>
+            {breadcrumbSuffix.map((crumb, idx) => (
+              <span key={idx} className="flex items-center gap-1.5 truncate">
+                <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                {crumb.href ? (
+                  <Link href={crumb.href} className="hover:text-gold transition-colors truncate">
+                    {crumb.label}
+                  </Link>
+                ) : (
+                  <span className="text-text-secondary truncate">{crumb.label}</span>
+                )}
+              </span>
+            ))}
+          </>
+        )}
       </nav>
 
       {/* ── Header ── */}

@@ -8,10 +8,11 @@ export function generateStaticParams() {
   ];
 }
 
-export default function LanguagePage({
+export default async function LanguagePage({
   params,
 }: {
-  params: { language: string };
+  params: Promise<{ language: string }>;
 }) {
-  return <LanguageClientPage languageId={params.language} />;
+  const { language } = await params;
+  return <LanguageClientPage languageId={language} />;
 }

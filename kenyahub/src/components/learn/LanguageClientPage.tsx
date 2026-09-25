@@ -140,7 +140,10 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   }
 
   return (
-    <ToolShell tool={LEARN_TOOL}>
+    <ToolShell
+      tool={LEARN_TOOL}
+      breadcrumbSuffix={[{ label: course.config.name }]}
+    >
       {showCompletionToast && (
         <div className="fixed inset-x-0 top-20 z-50 flex justify-center px-4 animate-in fade-in slide-in-from-top-3 duration-300">
           <div className="rounded-xl border border-gold/40 bg-bg-card px-5 py-3 shadow-lg shadow-gold/10">
