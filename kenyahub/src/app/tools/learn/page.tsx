@@ -180,12 +180,6 @@ export default function LearnPage() {
                 />
 
                 <div className="flex items-center gap-4">
-                  <div
-                    className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-3xl"
-                    style={{ backgroundColor: `${lang.color}15` }}
-                  >
-                    {lang.name.charAt(0)}
-                  </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors truncate">
                       {lang.name}
@@ -247,12 +241,6 @@ export default function LearnPage() {
                   className="rounded-xl border border-border/50 bg-bg-card/60 p-4 opacity-70"
                 >
                   <div className="flex items-center gap-3">
-                    <div
-                      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xl"
-                      style={{ backgroundColor: `${lang.color}10` }}
-                    >
-                      {lang.name.charAt(0)}
-                    </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="text-sm font-bold text-text-primary truncate">
                         {lang.name}

@@ -499,11 +499,11 @@ export const TOOLS: Tool[] = [
 
   {
     slug: 'learn',
-    title: 'Learn Kenyan Languages — Duolingo-style Courses',
+    title: 'Learn Kenyan Languages — Interactive Courses',
     shortTitle: 'Learn Languages',
-    description: 'Master Kenyan languages through interactive Duolingo-style lessons with vocabulary, grammar, exercises, XP, streaks, and achievements. Currently featuring Dholuo with more languages coming soon.',
+    description: 'Master Kenyan languages through interactive lessons with vocabulary, grammar, exercises, XP, streaks, and achievements. Currently featuring Dholuo with more languages coming soon.',
     category: 'language-learning',
-    keywords: ['learn Kenyan languages', 'Dholuo course', 'Kikuyu lessons', 'Swahili course', 'Kenya language app', 'learn Luo', 'Duolingo Kenya'],
+    keywords: ['learn Kenyan languages', 'Dholuo course', 'Kikuyu lessons', 'Swahili course', 'Kenya language app', 'learn Luo', 'interactive language learning'],
     updateFrequency: 'periodic',
     dataSource: 'Luo-translate curriculum, linguistic references & community data',
     isLive: true,

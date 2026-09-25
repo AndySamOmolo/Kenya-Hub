@@ -30,7 +30,7 @@ import {
 import { generateExercises, checkAnswer, speak } from "@/lib/learn-engine";
 
 /* ═══════════════════════════════════════════════════════
-   LESSON PLAYER — The Duolingo-style exercise loop
+   LESSON PLAYER — The interactive exercise loop
    ═══════════════════════════════════════════════════════ */
 
 interface LessonPlayerProps {

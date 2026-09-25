@@ -1,6 +1,6 @@
 // ============================================================
 // Exercise Generation Engine
-// Generates Duolingo-style exercises from skill word/sentence data
+// Generates interactive exercises from skill word/sentence data
 // ============================================================
 
 import type { Exercise, ExerciseType, CourseSkill, WordPair } from '@/data/courses/types';
