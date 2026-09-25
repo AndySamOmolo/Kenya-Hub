@@ -582,24 +582,24 @@ export default function LuoPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         {/* ─── Hero ─────────────────────────────── */}
-        <section className="relative overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-br from-gold/15 via-bg-card to-kenya-green/10 p-5 sm:p-8">
-          <div className="absolute -right-8 -top-12 text-[9rem] opacity-[0.06] select-none">✦</div>
+        <section className="relative overflow-hidden rounded-xl border border-gold/20 bg-gradient-to-br from-gold/15 via-bg-card to-kenya-green/10 p-4 sm:rounded-2xl sm:p-8">
+          <div className="absolute -right-8 -top-12 text-[7rem] opacity-[0.06] select-none sm:text-[9rem]">✦</div>
           <div className="absolute -left-16 -bottom-16 h-40 w-40 rounded-full bg-kenya-green/8 blur-3xl" />
           <div className="relative max-w-2xl">
-            <div className="mb-3 flex items-center gap-2 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-gold">
+            <div className="mb-2 flex items-center gap-2 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-gold sm:mb-3 sm:text-[0.65rem]">
               <Sparkles className="h-3.5 w-3.5" /> Dholuo language studio
             </div>
-            <h2 className="font-[family-name:var(--font-outfit)] text-2xl font-bold leading-tight text-text-primary sm:text-4xl">
+            <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold leading-tight text-text-primary sm:text-4xl">
               Learn words. Find your voice.{" "}
               <span className="text-gold">Carry the culture.</span>
             </h2>
-            <p className="mt-3 max-w-xl text-sm leading-relaxed text-text-secondary">
-              A deep, practical path into Dholuo with {lessons.length} lessons, {dictionaryEntries.length.toLocaleString()}+ dictionary entries, {sentencePairs.length.toLocaleString()} real-world sentences, interactive quizzes, and Luo wisdom.
+            <p className="mt-2 max-w-xl text-[0.8rem] leading-relaxed text-text-secondary sm:mt-3 sm:text-sm">
+              {lessons.length} lessons · {dictionaryEntries.length.toLocaleString()}+ words · {sentencePairs.length.toLocaleString()} sentences · Quizzes · Luo wisdom
             </p>
           </div>
 
           {/* Stats Row */}
-          <div className="relative mt-6 grid grid-cols-2 gap-2 sm:max-w-2xl sm:grid-cols-4 sm:gap-3">
+          <div className="relative mt-4 grid grid-cols-2 gap-2 sm:mt-6 sm:max-w-2xl sm:grid-cols-4 sm:gap-3">
             {[
               { label: "Level", value: `${level.icon} ${level.name}`, sub: `${Math.round(level.progressToNext)}% to next`, icon: Award },
               { label: "Progress", value: `${progress}%`, sub: `${completed.length}/${lessons.length} lessons`, icon: Trophy },
@@ -608,10 +608,10 @@ export default function LuoPage() {
             ].map((stat) => {
               const Icon = stat.icon;
               return (
-                <div key={stat.label} className="rounded-xl border border-border/60 bg-bg-card/50 p-3 backdrop-blur-sm">
-                  <Icon className="mb-1.5 h-4 w-4 text-gold" />
-                  <div className="text-base font-bold text-text-primary sm:text-lg">{stat.value}</div>
-                  <div className="text-[0.6rem] text-text-muted">{stat.sub}</div>
+                <div key={stat.label} className="rounded-lg border border-border/60 bg-bg-card/50 p-2.5 backdrop-blur-sm sm:rounded-xl sm:p-3">
+                  <Icon className="mb-1 h-3.5 w-3.5 text-gold sm:mb-1.5 sm:h-4 sm:w-4" />
+                  <div className="truncate text-sm font-bold text-text-primary sm:text-lg">{stat.value}</div>
+                  <div className="text-[0.55rem] text-text-muted sm:text-[0.6rem]">{stat.sub}</div>
                 </div>
               );
             })}
@@ -619,8 +619,8 @@ export default function LuoPage() {
 
           {/* Level progress bar */}
           {level.nextLevel && (
-            <div className="relative mt-4 sm:max-w-2xl">
-              <div className="flex items-center justify-between text-[0.6rem] text-text-muted">
+            <div className="relative mt-3 sm:mt-4 sm:max-w-2xl">
+              <div className="flex items-center justify-between text-[0.55rem] text-text-muted sm:text-[0.6rem]">
                 <span>{level.icon} {level.name}</span>
                 <span>{level.nextLevel.icon} {level.nextLevel.name}</span>
               </div>
@@ -635,20 +635,20 @@ export default function LuoPage() {
 
           {/* Word of the Day */}
           {wordOfTheDay && (
-            <div className="relative mt-5 flex items-center gap-4 rounded-xl border border-gold/20 bg-bg-card/60 p-4 backdrop-blur-sm sm:max-w-2xl">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-2xl">
-                <Star className="h-6 w-6 text-gold" />
+            <div className="relative mt-4 flex items-center gap-3 rounded-lg border border-gold/20 bg-bg-card/60 p-3 backdrop-blur-sm sm:mt-5 sm:gap-4 sm:rounded-xl sm:p-4 sm:max-w-2xl">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gold/10 sm:h-12 sm:w-12 sm:rounded-xl">
+                <Star className="h-5 w-5 text-gold sm:h-6 sm:w-6" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="text-[0.6rem] font-semibold uppercase tracking-widest text-gold">Word of the Day</div>
-                <div className="mt-0.5 font-[family-name:var(--font-outfit)] text-lg font-bold text-text-primary">
+                <div className="text-[0.55rem] font-semibold uppercase tracking-widest text-gold sm:text-[0.6rem]">Word of the Day</div>
+                <div className="mt-0.5 truncate font-[family-name:var(--font-outfit)] text-base font-bold text-text-primary sm:text-lg">
                   {wordOfTheDay.translation}
                 </div>
-                <div className="text-xs text-text-secondary">{wordOfTheDay.english}</div>
+                <div className="truncate text-xs text-text-secondary">{wordOfTheDay.english}</div>
               </div>
               <button
                 onClick={() => speak(wordOfTheDay.translation)}
-                className="rounded-lg p-2 text-text-muted transition-colors hover:bg-gold/10 hover:text-gold"
+                className="shrink-0 rounded-lg p-2.5 text-text-muted transition-colors hover:bg-gold/10 hover:text-gold active:bg-gold/20"
               >
                 <Volume2 className="h-5 w-5" />
               </button>
@@ -657,26 +657,28 @@ export default function LuoPage() {
         </section>
 
         {/* ─── Tabs ─────────────────────────────── */}
-        <div className="flex gap-1 overflow-x-auto rounded-xl border border-border bg-bg-elevated p-1 scrollbar-hide">
-          {tabs.map((item) => {
-            const Icon = item.icon;
-            return (
-              <button
-                key={item.id}
-                id={`tab-${item.id}`}
-                onClick={() => setTab(item.id)}
-                className={`flex min-w-[5.5rem] flex-1 items-center justify-center gap-1.5 rounded-lg px-2.5 py-2.5 text-[0.7rem] font-semibold transition-all ${
-                  tab === item.id
-                    ? "bg-gold text-kenya-black shadow-sm"
-                    : "text-text-secondary hover:text-text-primary"
-                }`}
-              >
-                <Icon className="h-3.5 w-3.5" />
-                <span className="hidden sm:inline">{item.label}</span>
-                <span className="sm:hidden">{item.label.split(" ")[0]}</span>
-              </button>
-            );
-          })}
+        {/* Tab bar — icon-only on mobile, scrollable */}
+        <div className="-mx-4 px-4 sm:mx-0 sm:px-0">
+          <div className="flex gap-1 overflow-x-auto rounded-lg border border-border bg-bg-elevated p-1 sm:rounded-xl [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            {tabs.map((item) => {
+              const Icon = item.icon;
+              return (
+                <button
+                  key={item.id}
+                  id={`tab-${item.id}`}
+                  onClick={() => setTab(item.id)}
+                  className={`flex shrink-0 flex-1 items-center justify-center gap-1.5 rounded-md px-2 py-2.5 text-[0.65rem] font-semibold transition-all sm:min-w-[5.5rem] sm:rounded-lg sm:px-2.5 sm:text-[0.7rem] ${
+                    tab === item.id
+                      ? "bg-gold text-kenya-black shadow-sm"
+                      : "text-text-secondary hover:text-text-primary active:bg-bg-card"
+                  }`}
+                >
+                  <Icon className="h-4 w-4 sm:h-3.5 sm:w-3.5" />
+                  <span className="hidden sm:inline">{item.label}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* ═══════════════════════════════════════════
@@ -703,38 +705,40 @@ export default function LuoPage() {
               />
             </div>
 
-            {/* Category chips */}
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setLessonCategoryFilter("all")}
-                className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
-                  lessonCategoryFilter === "all"
-                    ? "bg-gold text-kenya-black"
-                    : "border border-border text-text-secondary hover:text-text-primary"
-                }`}
-              >
-                All ({lessons.length})
-              </button>
-              {LESSON_CATEGORIES.map((unit) => {
-                const count = lessons.filter((l) => l.category === unit.id).length;
-                return (
-                  <button
-                    key={unit.id}
-                    onClick={() => setLessonCategoryFilter(unit.id)}
-                    className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
-                      lessonCategoryFilter === unit.id
-                        ? "bg-gold text-kenya-black"
-                        : "border border-border text-text-secondary hover:text-text-primary"
-                    }`}
-                  >
-                    {unit.icon} {unit.name} ({count})
-                  </button>
-                );
-              })}
+            {/* Category chips — horizontally scrollable on mobile */}
+            <div className="-mx-4 px-4 sm:mx-0 sm:px-0">
+              <div className="flex gap-2 overflow-x-auto pb-1 sm:flex-wrap sm:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                <button
+                  onClick={() => setLessonCategoryFilter("all")}
+                  className={`shrink-0 rounded-lg px-3 py-2 text-xs font-semibold transition-colors sm:py-1.5 ${
+                    lessonCategoryFilter === "all"
+                      ? "bg-gold text-kenya-black"
+                      : "border border-border text-text-secondary hover:text-text-primary active:bg-bg-card"
+                  }`}
+                >
+                  All ({lessons.length})
+                </button>
+                {LESSON_CATEGORIES.map((unit) => {
+                  const count = lessons.filter((l) => l.category === unit.id).length;
+                  return (
+                    <button
+                      key={unit.id}
+                      onClick={() => setLessonCategoryFilter(unit.id)}
+                      className={`shrink-0 rounded-lg px-3 py-2 text-xs font-semibold transition-colors sm:py-1.5 ${
+                        lessonCategoryFilter === unit.id
+                          ? "bg-gold text-kenya-black"
+                          : "border border-border text-text-secondary hover:text-text-primary active:bg-bg-card"
+                      }`}
+                    >
+                      {unit.icon} {unit.name} ({count})
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Lesson grid */}
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-2 sm:gap-3 sm:grid-cols-2">
               {filteredLessons.map((lesson, index) => {
                 const isDone = completed.includes(lesson.id);
                 return (
@@ -742,26 +746,26 @@ export default function LuoPage() {
                     key={lesson.id}
                     id={`lesson-${lesson.id}`}
                     onClick={() => beginLesson(lesson)}
-                    className="group flex items-start gap-4 rounded-xl border border-border bg-bg-card p-4 text-left transition-all hover:-translate-y-0.5 hover:border-gold/50 hover:bg-bg-elevated hover:shadow-lg hover:shadow-gold/5"
+                    className="group flex items-start gap-3 rounded-xl border border-border bg-bg-card p-3 text-left transition-all active:bg-bg-elevated sm:gap-4 sm:p-4 sm:hover:-translate-y-0.5 sm:hover:border-gold/50 sm:hover:bg-bg-elevated sm:hover:shadow-lg sm:hover:shadow-gold/5"
                   >
                     <div
-                      className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-xl transition-transform group-hover:scale-110 ${
+                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-lg sm:h-11 sm:w-11 sm:rounded-xl sm:text-xl ${
                         isDone ? "bg-kenya-green/15" : "bg-gold/10"
                       }`}
                     >
-                      {isDone ? <Check className="h-5 w-5 text-kenya-green" /> : lesson.icon}
+                      {isDone ? <Check className="h-4 w-4 text-kenya-green sm:h-5 sm:w-5" /> : lesson.icon}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <div className="mb-1 flex items-center justify-between gap-2">
-                        <span className="text-[0.6rem] uppercase tracking-wider text-text-muted">
+                      <div className="mb-0.5 flex items-center justify-between gap-2 sm:mb-1">
+                        <span className="text-[0.55rem] uppercase tracking-wider text-text-muted sm:text-[0.6rem]">
                           {String(lessons.indexOf(lesson) + 1).padStart(2, "0")} · {lesson.level}
                         </span>
-                        <ChevronRight className="h-4 w-4 text-text-muted transition-transform group-hover:translate-x-1" />
+                        <ChevronRight className="h-3.5 w-3.5 text-text-muted sm:h-4 sm:w-4" />
                       </div>
-                      <h4 className="font-[family-name:var(--font-outfit)] text-sm font-bold text-text-primary">
+                      <h4 className="font-[family-name:var(--font-outfit)] text-[0.8rem] font-bold text-text-primary sm:text-sm">
                         {lesson.title}
                       </h4>
-                      <p className="mt-1 text-xs leading-relaxed text-text-secondary">{lesson.description}</p>
+                      <p className="mt-0.5 text-[0.7rem] leading-relaxed text-text-secondary sm:mt-1 sm:text-xs">{lesson.description}</p>
                     </div>
                   </button>
                 );
@@ -769,39 +773,39 @@ export default function LuoPage() {
             </div>
 
             {/* Quick access cards */}
-            <div className="grid gap-3 sm:grid-cols-3">
+            <div className="grid gap-2 sm:gap-3 sm:grid-cols-3">
               <button
                 onClick={() => setTab("practice")}
-                className="flex items-center gap-3 rounded-xl border border-border bg-bg-card p-4 text-left transition-all hover:border-gold/40 hover:-translate-y-0.5"
+                className="flex items-center gap-3 rounded-xl border border-border bg-bg-card p-3 text-left transition-all active:bg-bg-elevated sm:p-4 sm:hover:border-gold/40 sm:hover:-translate-y-0.5"
               >
-                <Target className="h-5 w-5 text-gold" />
-                <span>
-                  <b className="block text-sm text-text-primary">Practice quiz</b>
-                  <small className="text-xs text-text-muted">Interactive vocabulary drills</small>
+                <Target className="h-5 w-5 shrink-0 text-gold" />
+                <span className="min-w-0 flex-1">
+                  <b className="block text-[0.8rem] text-text-primary sm:text-sm">Practice quiz</b>
+                  <small className="text-[0.7rem] text-text-muted sm:text-xs">Vocabulary drills</small>
                 </span>
-                <ChevronRight className="ml-auto h-4 w-4 text-text-muted" />
+                <ChevronRight className="ml-auto h-4 w-4 shrink-0 text-text-muted" />
               </button>
               <button
                 onClick={() => setTab("dictionary")}
-                className="flex items-center gap-3 rounded-xl border border-border bg-bg-card p-4 text-left transition-all hover:border-gold/40 hover:-translate-y-0.5"
+                className="flex items-center gap-3 rounded-xl border border-border bg-bg-card p-3 text-left transition-all active:bg-bg-elevated sm:p-4 sm:hover:border-gold/40 sm:hover:-translate-y-0.5"
               >
-                <BookOpen className="h-5 w-5 text-gold" />
-                <span>
-                  <b className="block text-sm text-text-primary">Full dictionary</b>
-                  <small className="text-xs text-text-muted">{dictionaryEntries.length.toLocaleString()}+ words</small>
+                <BookOpen className="h-5 w-5 shrink-0 text-gold" />
+                <span className="min-w-0 flex-1">
+                  <b className="block text-[0.8rem] text-text-primary sm:text-sm">Full dictionary</b>
+                  <small className="text-[0.7rem] text-text-muted sm:text-xs">{dictionaryEntries.length.toLocaleString()}+ words</small>
                 </span>
-                <ChevronRight className="ml-auto h-4 w-4 text-text-muted" />
+                <ChevronRight className="ml-auto h-4 w-4 shrink-0 text-text-muted" />
               </button>
               <button
                 onClick={() => setTab("sentences")}
-                className="flex items-center gap-3 rounded-xl border border-border bg-bg-card p-4 text-left transition-all hover:border-gold/40 hover:-translate-y-0.5"
+                className="flex items-center gap-3 rounded-xl border border-border bg-bg-card p-3 text-left transition-all active:bg-bg-elevated sm:p-4 sm:hover:border-gold/40 sm:hover:-translate-y-0.5"
               >
-                <MessageSquareText className="h-5 w-5 text-gold" />
-                <span>
-                  <b className="block text-sm text-text-primary">Real sentences</b>
-                  <small className="text-xs text-text-muted">{sentencePairs.length.toLocaleString()} pairs</small>
+                <MessageSquareText className="h-5 w-5 shrink-0 text-gold" />
+                <span className="min-w-0 flex-1">
+                  <b className="block text-[0.8rem] text-text-primary sm:text-sm">Real sentences</b>
+                  <small className="text-[0.7rem] text-text-muted sm:text-xs">{sentencePairs.length.toLocaleString()} pairs</small>
                 </span>
-                <ChevronRight className="ml-auto h-4 w-4 text-text-muted" />
+                <ChevronRight className="ml-auto h-4 w-4 shrink-0 text-text-muted" />
               </button>
             </div>
           </>
@@ -839,51 +843,51 @@ export default function LuoPage() {
             {/* Flashcard */}
             <button
               onClick={() => setRevealed((v) => !v)}
-              className="group w-full rounded-2xl border border-gold/30 bg-gradient-to-br from-gold/10 to-bg-card p-8 text-center shadow-lg transition-all hover:shadow-xl hover:shadow-gold/10 sm:p-12"
+              className="group w-full rounded-xl border border-gold/30 bg-gradient-to-br from-gold/10 to-bg-card p-6 text-center shadow-lg transition-all sm:rounded-2xl sm:p-12 sm:hover:shadow-xl sm:hover:shadow-gold/10"
             >
-              <span className="text-[0.65rem] uppercase tracking-widest text-text-muted">
+              <span className="text-[0.6rem] uppercase tracking-widest text-text-muted sm:text-[0.65rem]">
                 {revealed ? "Meaning" : "Say it aloud"}
               </span>
-              <div className="my-5 font-[family-name:var(--font-outfit)] text-4xl font-bold text-text-primary transition-transform group-hover:scale-[1.02] sm:text-5xl">
+              <div className="my-4 break-words font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:my-5 sm:text-5xl">
                 {revealed ? currentCard.english : currentCard.luo}
               </div>
-              <div className="text-sm text-text-secondary">
+              <div className="text-[0.8rem] text-text-secondary sm:text-sm">
                 {revealed ? currentCard.note || "Keep the rhythm natural and clear." : "Tap to reveal the meaning"}
               </div>
             </button>
 
             {/* Actions */}
-            <div className="mt-4 flex gap-2">
+            <div className="mt-3 flex gap-2 sm:mt-4">
               <button
                 onClick={() => speak(currentCard.luo)}
-                className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-border bg-bg-card px-3 py-2.5 text-xs font-semibold text-text-secondary transition-colors hover:text-gold hover:border-gold/40"
+                className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-border bg-bg-card px-3 py-3 text-xs font-semibold text-text-secondary transition-colors active:bg-bg-elevated sm:py-2.5 sm:hover:text-gold sm:hover:border-gold/40"
               >
                 <Volume2 className="h-4 w-4" /> Hear it
               </button>
               <button
                 onClick={() => setRevealed((v) => !v)}
-                className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-gold px-3 py-2.5 text-xs font-bold text-kenya-black transition-transform hover:scale-[1.01]"
+                className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-gold px-3 py-3 text-xs font-bold text-kenya-black sm:py-2.5"
               >
                 <RotateCcw className="h-4 w-4" />{" "}
-                {revealed ? "Hide meaning" : "Reveal meaning"}
+                {revealed ? "Hide" : "Reveal"}
               </button>
             </div>
 
             {/* Quick check */}
-            <div className="mt-6 rounded-xl border border-border bg-bg-card p-4">
-              <p className="mb-3 text-xs font-semibold text-text-primary">Quick check</p>
-              <p className="mb-3 text-sm text-text-secondary">{activeLesson.check.question}</p>
+            <div className="mt-4 rounded-xl border border-border bg-bg-card p-3 sm:mt-6 sm:p-4">
+              <p className="mb-2 text-xs font-semibold text-text-primary sm:mb-3">Quick check</p>
+              <p className="mb-2 text-[0.8rem] text-text-secondary sm:mb-3 sm:text-sm">{activeLesson.check.question}</p>
               <div className="grid gap-2 sm:grid-cols-2">
                 {activeLesson.check.options.map((option) => (
                   <button
                     key={option}
                     onClick={() => setChecked(option)}
-                    className={`rounded-lg border px-3 py-2 text-left text-xs transition-all ${
+                    className={`rounded-lg border px-3 py-2.5 text-left text-xs transition-all sm:py-2 ${
                       checked === option
                         ? option === activeLesson.check.answer
                           ? "border-kenya-green bg-kenya-green/10 text-kenya-green"
                           : "border-red-400/50 bg-red-400/10 text-red-300"
-                        : "border-border text-text-secondary hover:border-gold/50"
+                        : "border-border text-text-secondary active:bg-bg-elevated sm:hover:border-gold/50"
                     }`}
                   >
                     {option}
@@ -895,7 +899,7 @@ export default function LuoPage() {
 
             <button
               onClick={nextCard}
-              className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-kenya-green px-4 py-3 text-sm font-bold text-white transition-all hover:brightness-110 hover:shadow-lg hover:shadow-kenya-green/20"
+              className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg bg-kenya-green px-4 py-3.5 text-sm font-bold text-white transition-all active:brightness-90 sm:mt-4 sm:py-3 sm:hover:brightness-110"
             >
               {cardIndex === activeLesson.cards.length - 1 ? "Finish lesson ✨" : "Next card"}
               <ChevronRight className="h-4 w-4" />
@@ -919,16 +923,16 @@ export default function LuoPage() {
             </div>
 
             {quizQuestions.length === 0 || quizCompleted ? (
-              <div className="rounded-xl border border-border bg-bg-card p-8 text-center">
+              <div className="rounded-xl border border-border bg-bg-card p-6 text-center sm:p-8">
                 {quizCompleted ? (
                   <>
-                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 text-3xl">
+                    <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-gold/10 text-2xl sm:mb-4 sm:h-16 sm:w-16 sm:text-3xl">
                       {quizScore >= 8 ? "🏆" : quizScore >= 5 ? "⭐" : "💪"}
                     </div>
-                    <h4 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary">
+                    <h4 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary sm:text-2xl">
                       {quizScore} / {quizQuestions.length}
                     </h4>
-                    <p className="mt-2 text-sm text-text-secondary">
+                    <p className="mt-2 text-[0.8rem] text-text-secondary sm:text-sm">
                       {quizScore >= 8
                         ? "Excellent! You're mastering Dholuo!"
                         : quizScore >= 5
@@ -939,18 +943,18 @@ export default function LuoPage() {
                   </>
                 ) : (
                   <>
-                    <Target className="mx-auto mb-4 h-10 w-10 text-gold" />
-                    <h4 className="font-[family-name:var(--font-outfit)] text-lg font-bold text-text-primary">
+                    <Target className="mx-auto mb-3 h-8 w-8 text-gold sm:mb-4 sm:h-10 sm:w-10" />
+                    <h4 className="font-[family-name:var(--font-outfit)] text-base font-bold text-text-primary sm:text-lg">
                       Ready for a challenge?
                     </h4>
-                    <p className="mt-2 text-sm text-text-secondary">
-                      10 questions from {dictionaryEntries.length.toLocaleString()}+ words. Multiple choice, fill-in, and listening rounds.
+                    <p className="mt-2 text-[0.8rem] text-text-secondary sm:text-sm">
+                      10 questions from {dictionaryEntries.length.toLocaleString()}+ words.
                     </p>
                   </>
                 )}
                 <button
                   onClick={startQuiz}
-                  className="mt-5 rounded-lg bg-gold px-6 py-2.5 text-sm font-bold text-kenya-black transition-transform hover:scale-[1.02]"
+                  className="mt-4 w-full rounded-lg bg-gold px-6 py-3 text-sm font-bold text-kenya-black sm:mt-5 sm:w-auto sm:py-2.5"
                 >
                   {quizCompleted ? "Play again" : "Start quiz"}
                 </button>
@@ -986,7 +990,7 @@ export default function LuoPage() {
                   const q = quizQuestions[quizIndex];
                   return (
                     <div
-                      className={`rounded-2xl border p-6 sm:p-8 transition-all ${
+                      className={`rounded-xl border p-4 transition-all sm:rounded-2xl sm:p-8 ${
                         flashCorrect
                           ? "border-kenya-green/60 bg-kenya-green/5"
                           : flashWrong
@@ -1046,7 +1050,7 @@ export default function LuoPage() {
                           )}
                         </div>
                       ) : (
-                        <div className="grid gap-2 sm:grid-cols-2">
+                        <div className="grid gap-2">
                           {q.options?.map((opt) => {
                             const isSelected = quizAnswer === opt;
                             const isCorrect = opt.toLowerCase() === q.correctAnswer.toLowerCase();
@@ -1056,7 +1060,7 @@ export default function LuoPage() {
                                 key={opt}
                                 onClick={() => !quizAnswer && submitQuizAnswer(opt)}
                                 disabled={!!quizAnswer}
-                                className={`rounded-lg border px-4 py-3 text-left text-sm transition-all ${
+                                className={`rounded-lg border px-3 py-3 text-left text-[0.8rem] transition-all sm:px-4 sm:text-sm ${
                                   showResult
                                     ? isCorrect
                                       ? "border-kenya-green bg-kenya-green/10 text-kenya-green"
@@ -1095,7 +1099,7 @@ export default function LuoPage() {
                       {quizAnswer && (
                         <button
                           onClick={nextQuizQuestion}
-                          className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-kenya-green px-4 py-3 text-sm font-bold text-white transition-all hover:brightness-110"
+                          className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg bg-kenya-green px-4 py-3.5 text-sm font-bold text-white transition-all active:brightness-90 sm:mt-4 sm:py-3 sm:hover:brightness-110"
                         >
                           {quizIndex >= quizQuestions.length - 1 ? "See results" : "Next question"}
                           <ChevronRight className="h-4 w-4" />
@@ -1126,26 +1130,26 @@ export default function LuoPage() {
 
             {currentReviewCard ? (
               <>
-                <div className="mb-5 rounded-2xl border border-gold/30 bg-gradient-to-br from-gold/10 to-bg-card p-8 text-center sm:p-12">
-                  <span className="text-[0.65rem] uppercase tracking-widest text-text-muted">
+                <div className="mb-4 rounded-xl border border-gold/30 bg-gradient-to-br from-gold/10 to-bg-card p-6 text-center sm:mb-5 sm:rounded-2xl sm:p-12">
+                  <span className="text-[0.6rem] uppercase tracking-widest text-text-muted sm:text-[0.65rem]">
                     {reviewIndex + 1} of {dueCards.length} due
                   </span>
-                  <div className="my-5 font-[family-name:var(--font-outfit)] text-4xl font-bold text-text-primary">
+                  <div className="my-4 break-words font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:my-5 sm:text-4xl">
                     {reviewRevealed ? currentReviewCard.english : currentReviewCard.luo}
                   </div>
-                  <p className="text-sm text-text-secondary">
+                  <p className="text-[0.8rem] text-text-secondary sm:text-sm">
                     {reviewRevealed ? "How well did you remember it?" : "Recall the meaning, then reveal."}
                   </p>
-                  <div className="mt-5 flex justify-center gap-2">
+                  <div className="mt-4 flex justify-center gap-2 sm:mt-5">
                     <button
                       onClick={() => speak(currentReviewCard.luo)}
-                      className="rounded-lg border border-border px-3 py-2 text-xs font-semibold text-text-secondary hover:text-gold"
+                      className="rounded-lg border border-border px-3 py-2.5 text-xs font-semibold text-text-secondary active:bg-bg-card sm:py-2 sm:hover:text-gold"
                     >
                       <Volume2 className="inline h-3.5 w-3.5 mr-1" /> Listen
                     </button>
                     <button
                       onClick={() => setReviewRevealed(true)}
-                      className="rounded-lg bg-gold px-4 py-2 text-xs font-bold text-kenya-black"
+                      className="rounded-lg bg-gold px-4 py-2.5 text-xs font-bold text-kenya-black sm:py-2"
                     >
                       {reviewRevealed ? "Answer below" : "Reveal meaning"}
                     </button>
@@ -1271,38 +1275,39 @@ export default function LuoPage() {
                 return (
                   <div
                     key={key}
-                    className="group rounded-xl border border-border bg-bg-card p-4 transition-all hover:border-gold/40 hover:shadow-sm"
+                    className="group rounded-lg border border-border bg-bg-card p-3 transition-all sm:rounded-xl sm:p-4 sm:hover:border-gold/40 sm:hover:shadow-sm"
                   >
-                    <div className="flex items-start justify-between gap-3">
+                    <div className="flex items-start justify-between gap-2 sm:gap-3">
                       <div className="min-w-0 flex-1">
-                        <div className="flex items-center gap-2">
-                          <p className="text-[0.6rem] uppercase tracking-wider text-text-muted">{entry.category}</p>
+                        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                          <p className="text-[0.55rem] uppercase tracking-wider text-text-muted sm:text-[0.6rem]">{entry.category}</p>
                           {entry.partOfSpeech && (
-                            <span className="rounded bg-gold/10 px-1.5 py-0.5 text-[0.55rem] font-medium text-gold">
+                            <span className="rounded bg-gold/10 px-1.5 py-0.5 text-[0.5rem] font-medium text-gold sm:text-[0.55rem]">
                               {entry.partOfSpeech}
                             </span>
                           )}
                         </div>
-                        <h4 className="mt-1 font-[family-name:var(--font-outfit)] text-lg font-bold text-gold">
+                        <h4 className="mt-1 break-words font-[family-name:var(--font-outfit)] text-base font-bold text-gold sm:text-lg">
                           {entry.translation}
                         </h4>
-                        <p className="text-xs text-text-primary">{entry.english}</p>
+                        <p className="text-[0.7rem] text-text-primary sm:text-xs">{entry.english}</p>
                         {entry.pronunciation && (
-                          <p className="mt-1 text-[0.65rem] italic text-text-muted">/{entry.pronunciation}/</p>
+                          <p className="mt-0.5 text-[0.6rem] italic text-text-muted sm:mt-1 sm:text-[0.65rem]">/{entry.pronunciation}/</p>
                         )}
                       </div>
-                      <div className="flex gap-1 opacity-70 transition-opacity group-hover:opacity-100">
+                      {/* Action buttons — horizontal row on mobile, vertical on desktop */}
+                      <div className="flex shrink-0 gap-0.5 sm:gap-1 sm:opacity-70 sm:transition-opacity sm:group-hover:opacity-100">
                         <button
                           onClick={() => speak(entry.translation)}
-                          className="rounded-lg p-2 text-text-muted hover:bg-gold/10 hover:text-gold"
+                          className="rounded-lg p-2 text-text-muted active:bg-gold/10 sm:hover:bg-gold/10 sm:hover:text-gold"
                           title="Listen"
                         >
                           <Volume2 className="h-4 w-4" />
                         </button>
                         <button
                           onClick={() => toggleFavorite(key)}
-                          className={`rounded-lg p-2 hover:bg-gold/10 ${
-                            favorite ? "text-red-400" : "text-text-muted hover:text-gold"
+                          className={`rounded-lg p-2 active:bg-gold/10 sm:hover:bg-gold/10 ${
+                            favorite ? "text-red-400" : "text-text-muted sm:hover:text-gold"
                           }`}
                           title="Favourite"
                         >
@@ -1310,7 +1315,7 @@ export default function LuoPage() {
                         </button>
                         <button
                           onClick={() => copyWord(entry.translation)}
-                          className="rounded-lg p-2 text-text-muted hover:bg-gold/10 hover:text-gold"
+                          className="hidden rounded-lg p-2 text-text-muted sm:block sm:hover:bg-gold/10 sm:hover:text-gold"
                           title="Copy"
                         >
                           <Clipboard className="h-4 w-4" />
@@ -1318,12 +1323,12 @@ export default function LuoPage() {
                       </div>
                     </div>
                     {entry.context && (
-                      <p className="mt-3 border-t border-border pt-2 text-[0.7rem] leading-relaxed text-text-secondary">
+                      <p className="mt-2 border-t border-border pt-2 text-[0.65rem] leading-relaxed text-text-secondary sm:mt-3 sm:text-[0.7rem]">
                         {entry.context}
                       </p>
                     )}
                     {copied === entry.translation && (
-                      <span className="mt-2 block text-[0.65rem] text-kenya-green">Copied</span>
+                      <span className="mt-1 block text-[0.6rem] text-kenya-green sm:mt-2 sm:text-[0.65rem]">Copied</span>
                     )}
                   </div>
                 );
@@ -1332,15 +1337,15 @@ export default function LuoPage() {
 
             {/* Pagination */}
             {dictTotalPages > 1 && (
-              <div className="mt-6 flex items-center justify-center gap-2">
+              <div className="mt-5 flex items-center justify-center gap-1 sm:mt-6 sm:gap-2">
                 <button
                   onClick={() => setDictPage((p) => Math.max(0, p - 1))}
                   disabled={dictPage === 0}
-                  className="rounded-lg border border-border px-3 py-2 text-xs font-semibold text-text-secondary disabled:opacity-30 hover:border-gold/50"
+                  className="rounded-lg border border-border p-2.5 text-xs font-semibold text-text-secondary disabled:opacity-30 active:bg-bg-card sm:px-3 sm:py-2 sm:hover:border-gold/50"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </button>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-0.5 sm:gap-1">
                   {Array.from({ length: Math.min(5, dictTotalPages) }, (_, i) => {
                     let page: number;
                     if (dictTotalPages <= 5) {
@@ -1356,10 +1361,10 @@ export default function LuoPage() {
                       <button
                         key={page}
                         onClick={() => setDictPage(page)}
-                        className={`h-8 w-8 rounded-lg text-xs font-semibold transition-colors ${
+                        className={`h-9 w-9 rounded-lg text-xs font-semibold transition-colors sm:h-8 sm:w-8 ${
                           dictPage === page
                             ? "bg-gold text-kenya-black"
-                            : "text-text-secondary hover:text-text-primary"
+                            : "text-text-secondary active:bg-bg-card sm:hover:text-text-primary"
                         }`}
                       >
                         {page + 1}
@@ -1370,7 +1375,7 @@ export default function LuoPage() {
                 <button
                   onClick={() => setDictPage((p) => Math.min(dictTotalPages - 1, p + 1))}
                   disabled={dictPage >= dictTotalPages - 1}
-                  className="rounded-lg border border-border px-3 py-2 text-xs font-semibold text-text-secondary disabled:opacity-30 hover:border-gold/50"
+                  className="rounded-lg border border-border p-2.5 text-xs font-semibold text-text-secondary disabled:opacity-30 active:bg-bg-card sm:px-3 sm:py-2 sm:hover:border-gold/50"
                 >
                   <ChevronRight className="h-4 w-4" />
                 </button>
@@ -1397,7 +1402,7 @@ export default function LuoPage() {
             </div>
 
             {/* Controls */}
-            <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-text-muted" />
                 <input
@@ -1413,13 +1418,13 @@ export default function LuoPage() {
               <div className="flex gap-2">
                 <button
                   onClick={hideAllTranslations}
-                  className="flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs font-semibold text-text-secondary hover:border-gold/50 hover:text-gold"
+                  className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2.5 text-xs font-semibold text-text-secondary active:bg-bg-card sm:flex-initial sm:py-2 sm:hover:border-gold/50 sm:hover:text-gold"
                 >
                   <EyeOff className="h-3.5 w-3.5" /> Hide all
                 </button>
                 <button
                   onClick={showAllTranslations}
-                  className="flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs font-semibold text-text-secondary hover:border-gold/50 hover:text-gold"
+                  className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2.5 text-xs font-semibold text-text-secondary active:bg-bg-card sm:flex-initial sm:py-2 sm:hover:border-gold/50 sm:hover:text-gold"
                 >
                   <Eye className="h-3.5 w-3.5" /> Show all
                 </button>
@@ -1439,46 +1444,46 @@ export default function LuoPage() {
                   return (
                     <article
                       key={globalIdx}
-                      className="group rounded-xl border border-border bg-bg-card p-4 transition-all hover:border-gold/30"
+                      className="group rounded-lg border border-border bg-bg-card p-3 transition-all sm:rounded-xl sm:p-4 sm:hover:border-gold/30"
                     >
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="min-w-0 flex-1">
-                          <p className="text-[0.6rem] font-semibold uppercase tracking-wider text-gold mb-2">
-                            English
+                      {/* Content */}
+                      <div className="min-w-0">
+                        <p className="text-[0.55rem] font-semibold uppercase tracking-wider text-gold mb-1.5 sm:text-[0.6rem] sm:mb-2">
+                          English
+                        </p>
+                        <p className="text-[0.8rem] leading-relaxed text-text-primary sm:text-sm">{pair.en}</p>
+                        <div className="mt-2.5 border-t border-border pt-2.5 sm:mt-3 sm:pt-3">
+                          <p className="text-[0.55rem] font-semibold uppercase tracking-wider text-kenya-green mb-1.5 sm:text-[0.6rem] sm:mb-2">
+                            Dholuo
                           </p>
-                          <p className="text-sm leading-relaxed text-text-primary">{pair.en}</p>
-                          <div className="mt-3 border-t border-border pt-3">
-                            <p className="text-[0.6rem] font-semibold uppercase tracking-wider text-kenya-green mb-2">
-                              Dholuo
-                            </p>
-                            {isHidden ? (
-                              <button
-                                onClick={() => toggleSentenceTranslation(globalIdx)}
-                                className="flex items-center gap-1.5 text-sm italic text-text-muted hover:text-gold transition-colors"
-                              >
-                                <Eye className="h-3.5 w-3.5" /> Tap to reveal translation
-                              </button>
-                            ) : (
-                              <p className="text-sm leading-relaxed text-text-secondary">{pair.luo}</p>
-                            )}
-                          </div>
+                          {isHidden ? (
+                            <button
+                              onClick={() => toggleSentenceTranslation(globalIdx)}
+                              className="flex items-center gap-1.5 text-[0.8rem] italic text-text-muted active:text-gold sm:text-sm sm:hover:text-gold transition-colors"
+                            >
+                              <Eye className="h-3.5 w-3.5" /> Tap to reveal translation
+                            </button>
+                          ) : (
+                            <p className="text-[0.8rem] leading-relaxed text-text-secondary sm:text-sm">{pair.luo}</p>
+                          )}
                         </div>
-                        <div className="flex flex-col gap-1 opacity-70 group-hover:opacity-100">
-                          <button
-                            onClick={() => toggleSentenceTranslation(globalIdx)}
-                            className="rounded-lg p-2 text-text-muted hover:bg-gold/10 hover:text-gold"
-                            title={isHidden ? "Show" : "Hide"}
-                          >
-                            {isHidden ? <Eye className="h-4 w-4" /> : <EyeOff className="h-4 w-4" />}
-                          </button>
-                          <button
-                            onClick={() => speak(pair.luo)}
-                            className="rounded-lg p-2 text-text-muted hover:bg-gold/10 hover:text-gold"
-                            title="Listen to Dholuo"
-                          >
-                            <Volume2 className="h-4 w-4" />
-                          </button>
-                        </div>
+                      </div>
+                      {/* Action buttons — bottom row on mobile */}
+                      <div className="mt-2.5 flex items-center gap-1 border-t border-border/50 pt-2 sm:mt-0 sm:border-0 sm:pt-0 sm:float-right sm:-mt-[calc(100%-1rem)]">
+                        <button
+                          onClick={() => toggleSentenceTranslation(globalIdx)}
+                          className="rounded-lg p-2 text-text-muted active:bg-gold/10 sm:hover:bg-gold/10 sm:hover:text-gold"
+                          title={isHidden ? "Show" : "Hide"}
+                        >
+                          {isHidden ? <Eye className="h-4 w-4" /> : <EyeOff className="h-4 w-4" />}
+                        </button>
+                        <button
+                          onClick={() => speak(pair.luo)}
+                          className="rounded-lg p-2 text-text-muted active:bg-gold/10 sm:hover:bg-gold/10 sm:hover:text-gold"
+                          title="Listen to Dholuo"
+                        >
+                          <Volume2 className="h-4 w-4" />
+                        </button>
                       </div>
                     </article>
                   );
@@ -1526,48 +1531,49 @@ export default function LuoPage() {
               </p>
             </div>
 
-            <div className="mb-5 flex gap-2 flex-wrap">
+            {/* Culture sub-tabs — full width on mobile */}
+            <div className="mb-4 flex gap-2 sm:mb-5 sm:flex-wrap">
               <button
                 onClick={() => setCultureTab("proverbs")}
-                className={`rounded-lg px-4 py-2 text-xs font-semibold transition-colors ${
-                  cultureTab === "proverbs" ? "bg-gold text-kenya-black" : "border border-border text-text-secondary hover:text-text-primary"
+                className={`flex-1 rounded-lg px-3 py-2.5 text-xs font-semibold transition-colors sm:flex-initial sm:px-4 sm:py-2 ${
+                  cultureTab === "proverbs" ? "bg-gold text-kenya-black" : "border border-border text-text-secondary active:bg-bg-card sm:hover:text-text-primary"
                 }`}
               >
-                🌿 Proverbs ({cultureProverbs.length})
+                🌿 Proverbs
               </button>
               <button
                 onClick={() => setCultureTab("riddles")}
-                className={`rounded-lg px-4 py-2 text-xs font-semibold transition-colors ${
-                  cultureTab === "riddles" ? "bg-gold text-kenya-black" : "border border-border text-text-secondary hover:text-text-primary"
+                className={`flex-1 rounded-lg px-3 py-2.5 text-xs font-semibold transition-colors sm:flex-initial sm:px-4 sm:py-2 ${
+                  cultureTab === "riddles" ? "bg-gold text-kenya-black" : "border border-border text-text-secondary active:bg-bg-card sm:hover:text-text-primary"
                 }`}
               >
-                🧩 Riddles ({cultureRiddles.length})
+                🧩 Riddles
               </button>
               <button
                 onClick={() => setCultureTab("twisters")}
-                className={`rounded-lg px-4 py-2 text-xs font-semibold transition-colors ${
-                  cultureTab === "twisters" ? "bg-gold text-kenya-black" : "border border-border text-text-secondary hover:text-text-primary"
+                className={`flex-1 rounded-lg px-3 py-2.5 text-xs font-semibold transition-colors sm:flex-initial sm:px-4 sm:py-2 ${
+                  cultureTab === "twisters" ? "bg-gold text-kenya-black" : "border border-border text-text-secondary active:bg-bg-card sm:hover:text-text-primary"
                 }`}
               >
-                👅 Tongue Twisters ({cultureTongueTwisters.length})
+                👅 Twisters
               </button>
             </div>
 
             {cultureTab === "proverbs" && (
-              <div className="grid gap-3 sm:grid-cols-2">
+              <div className="grid gap-2 sm:gap-3 sm:grid-cols-2">
                 {cultureProverbs.map((item, idx) => (
-                  <article key={`proverb-${idx}`} className="rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-gold/30">
-                    <p className="mb-3 text-[0.65rem] uppercase tracking-wider text-gold">Luo wisdom</p>
-                    <h4 className="font-[family-name:var(--font-outfit)] text-lg font-bold leading-snug text-text-primary">
+                  <article key={`proverb-${idx}`} className="rounded-lg border border-border bg-bg-card p-4 transition-all sm:rounded-xl sm:p-5 sm:hover:border-gold/30">
+                    <p className="mb-2 text-[0.6rem] uppercase tracking-wider text-gold sm:mb-3 sm:text-[0.65rem]">Luo wisdom</p>
+                    <h4 className="font-[family-name:var(--font-outfit)] text-base font-bold leading-snug text-text-primary sm:text-lg">
                       {item.luo}
                     </h4>
-                    <p className="mt-2 text-sm italic text-gold/90">&ldquo;{item.english}&rdquo;</p>
-                    <p className="mt-4 border-t border-border pt-3 text-xs leading-relaxed text-text-secondary">
+                    <p className="mt-1.5 text-[0.8rem] italic text-gold/90 sm:mt-2 sm:text-sm">&ldquo;{item.english}&rdquo;</p>
+                    <p className="mt-3 border-t border-border pt-2.5 text-[0.7rem] leading-relaxed text-text-secondary sm:mt-4 sm:pt-3 sm:text-xs">
                       <b className="text-text-primary">Takeaway:</b> {item.meaning}
                     </p>
                     <button
                       onClick={() => speak(item.luo)}
-                      className="mt-4 flex items-center gap-1.5 text-[0.65rem] font-semibold text-text-muted hover:text-gold transition-colors"
+                      className="mt-3 flex items-center gap-1.5 text-[0.6rem] font-semibold text-text-muted active:text-gold sm:mt-4 sm:text-[0.65rem] sm:hover:text-gold transition-colors"
                     >
                       <Volume2 className="h-3.5 w-3.5" /> Listen
                     </button>
@@ -1577,24 +1583,24 @@ export default function LuoPage() {
             )}
 
             {cultureTab === "riddles" && (
-              <div className="grid gap-3 sm:grid-cols-2">
+              <div className="grid gap-2 sm:gap-3 sm:grid-cols-2">
                 {cultureRiddles.map((item, idx) => (
-                  <details key={`riddle-${idx}`} className="group rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-gold/30">
+                  <details key={`riddle-${idx}`} className="group rounded-lg border border-border bg-bg-card p-4 transition-all sm:rounded-xl sm:p-5 sm:hover:border-gold/30">
                     <summary className="cursor-pointer list-none">
-                      <p className="mb-3 text-[0.65rem] uppercase tracking-wider text-gold">Think in Dholuo</p>
-                      <h4 className="font-[family-name:var(--font-outfit)] text-lg font-bold text-text-primary">
+                      <p className="mb-2 text-[0.6rem] uppercase tracking-wider text-gold sm:mb-3 sm:text-[0.65rem]">Think in Dholuo</p>
+                      <h4 className="font-[family-name:var(--font-outfit)] text-base font-bold text-text-primary sm:text-lg">
                         {item.luo}
                       </h4>
-                      <p className="mt-2 text-sm text-text-secondary">{item.english}</p>
-                      <span className="mt-4 flex items-center gap-1 text-xs font-semibold text-gold">
+                      <p className="mt-1.5 text-[0.8rem] text-text-secondary sm:mt-2 sm:text-sm">{item.english}</p>
+                      <span className="mt-3 flex items-center gap-1 text-xs font-semibold text-gold sm:mt-4">
                         Reveal answer{" "}
                         <ChevronRight className="h-3.5 w-3.5 transition-transform group-open:rotate-90" />
                       </span>
                     </summary>
-                    <p className="mt-4 border-t border-border pt-3 text-sm text-kenya-green">{item.answer}</p>
+                    <p className="mt-3 border-t border-border pt-2.5 text-[0.8rem] text-kenya-green sm:mt-4 sm:pt-3 sm:text-sm">{item.answer}</p>
                     <button
                       onClick={() => speak(item.luo)}
-                      className="mt-3 flex items-center gap-1.5 text-[0.65rem] font-semibold text-text-muted hover:text-gold transition-colors"
+                      className="mt-2.5 flex items-center gap-1.5 text-[0.6rem] font-semibold text-text-muted active:text-gold sm:mt-3 sm:text-[0.65rem] sm:hover:text-gold transition-colors"
                     >
                       <Volume2 className="h-3.5 w-3.5" /> Listen
                     </button>
@@ -1604,25 +1610,25 @@ export default function LuoPage() {
             )}
 
             {cultureTab === "twisters" && (
-              <div className="grid gap-3 sm:grid-cols-2">
+              <div className="grid gap-2 sm:gap-3 sm:grid-cols-2">
                 {cultureTongueTwisters.map((item, idx) => (
                   <article
                     key={`twister-${idx}`}
-                    className="rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-gold/30"
+                    className="rounded-lg border border-border bg-bg-card p-4 transition-all sm:rounded-xl sm:p-5 sm:hover:border-gold/30"
                   >
-                    <p className="mb-3 text-[0.65rem] uppercase tracking-wider text-gold">
+                    <p className="mb-2 text-[0.6rem] uppercase tracking-wider text-gold sm:mb-3 sm:text-[0.65rem]">
                       👅 Tongue twister #{item.id}
                     </p>
-                    <h4 className="font-[family-name:var(--font-outfit)] text-lg font-bold leading-snug text-text-primary">
+                    <h4 className="font-[family-name:var(--font-outfit)] text-base font-bold leading-snug text-text-primary sm:text-lg">
                       {item.luo}
                     </h4>
                     {item.english && (
-                      <p className="mt-2 text-sm italic text-text-secondary">&ldquo;{item.english}&rdquo;</p>
+                      <p className="mt-1.5 text-[0.8rem] italic text-text-secondary sm:mt-2 sm:text-sm">&ldquo;{item.english}&rdquo;</p>
                     )}
-                    <div className="mt-4 flex gap-2">
+                    <div className="mt-3 flex gap-2 sm:mt-4">
                       <button
                         onClick={() => speak(item.luo)}
-                        className="flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-[0.65rem] font-semibold text-text-muted hover:text-gold transition-colors hover:border-gold/40"
+                        className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2.5 text-[0.65rem] font-semibold text-text-muted active:bg-bg-elevated sm:flex-initial sm:py-2 sm:hover:text-gold transition-colors sm:hover:border-gold/40"
                       >
                         <Volume2 className="h-3.5 w-3.5" /> Listen
                       </button>
@@ -1631,9 +1637,9 @@ export default function LuoPage() {
                           speak(item.luo);
                           setTimeout(() => speak(item.luo), 3000);
                         }}
-                        className="flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-[0.65rem] font-semibold text-text-muted hover:text-gold transition-colors hover:border-gold/40"
+                        className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-2.5 text-[0.65rem] font-semibold text-text-muted active:bg-bg-elevated sm:flex-initial sm:py-2 sm:hover:text-gold transition-colors sm:hover:border-gold/40"
                       >
-                        <Shuffle className="h-3.5 w-3.5" /> Listen fast
+                        <Shuffle className="h-3.5 w-3.5" /> Fast
                       </button>
                     </div>
                   </article>
