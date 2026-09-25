@@ -496,18 +496,7 @@ export const TOOLS: Tool[] = [
     isLive: true,
     icon: '🌍',
   },
-  {
-    slug: 'luo',
-    title: 'Luo — Learn Dholuo Through Language & Culture',
-    shortTitle: 'Luo',
-    description: 'A complete Dholuo learning course with structured lessons, grammar, review practice, dictionary search, pronunciation support, proverbs, riddles, and Luo cultural context.',
-    category: 'language-learning',
-    keywords: ['learn Dholuo', 'Luo lessons', 'Dholuo vocabulary', 'Luo proverbs', 'Dholuo greetings', 'Luo language Kenya', 'Dholuo dictionary'],
-    updateFrequency: 'periodic',
-    dataSource: 'Luo-translate curriculum, dictionary & community learning references',
-    isLive: true,
-    icon: '📚',
-  },
+
   {
     slug: 'learn',
     title: 'Learn Kenyan Languages — Duolingo-style Courses',

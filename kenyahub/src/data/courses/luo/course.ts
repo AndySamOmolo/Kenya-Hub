@@ -8,7 +8,6 @@ export const LUO_CONFIG: LanguageConfig = {
   id: 'luo',
   name: 'Dholuo',
   nativeName: 'Dholuo',
-  flag: '🇰🇪',
   family: 'Nilotic',
   counties: ['Kisumu', 'Siaya', 'Homa Bay', 'Migori'],
   speakers: '5.8M',

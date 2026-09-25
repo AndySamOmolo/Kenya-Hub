@@ -27,7 +27,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
     id: "luo",
     name: "Dholuo",
     nativeName: "Dholuo",
-    flag: "🇰🇪",
     family: "Nilotic",
     counties: ["Kisumu", "Siaya", "Homa Bay", "Migori"],
     speakers: "5.8M",
@@ -41,7 +40,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
     id: "kikuyu",
     name: "Gĩkũyũ",
     nativeName: "Gĩkũyũ",
-    flag: "🇰🇪",
     family: "Bantu",
     counties: ["Kiambu", "Murang'a", "Nyeri", "Kirinyaga"],
     speakers: "8.1M",
@@ -55,7 +53,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
     id: "swahili",
     name: "Kiswahili",
     nativeName: "Kiswahili",
-    flag: "🇰🇪",
     family: "Bantu",
     counties: ["All counties"],
     speakers: "15M+",
@@ -69,7 +66,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
     id: "kamba",
     name: "Kamba",
     nativeName: "Kĩkamba",
-    flag: "🇰🇪",
     family: "Bantu",
     counties: ["Machakos", "Makueni", "Kitui"],
     speakers: "4.7M",
@@ -83,7 +79,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
     id: "kalenjin",
     name: "Kalenjin",
     nativeName: "Kalenjin",
-    flag: "🇰🇪",
     family: "Nilotic",
     counties: ["Nandi", "Uasin Gishu", "Kericho", "Baringo", "Elgeyo-Marakwet"],
     speakers: "5.1M",
@@ -97,7 +92,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
     id: "luhya",
     name: "Luhya",
     nativeName: "Oluluyia",
-    flag: "🇰🇪",
     family: "Bantu",
     counties: ["Kakamega", "Bungoma", "Busia", "Vihiga"],
     speakers: "6.8M",
@@ -190,7 +184,7 @@ export default function LearnPage() {
                     className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-3xl"
                     style={{ backgroundColor: `${lang.color}15` }}
                   >
-                    {lang.flag}
+                    {lang.name.charAt(0)}
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors truncate">
@@ -257,7 +251,7 @@ export default function LearnPage() {
                       className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xl"
                       style={{ backgroundColor: `${lang.color}10` }}
                     >
-                      {lang.flag}
+                      {lang.name.charAt(0)}
                     </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="text-sm font-bold text-text-primary truncate">

@@ -9,7 +9,6 @@ export interface LanguageConfig {
   id: string;
   name: string;
   nativeName: string;
-  flag: string;
   family: string;
   counties: string[];
   speakers: string;

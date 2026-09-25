@@ -91,8 +91,8 @@ export default function SkillTree({
         {/* Hero card */}
         <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-5 sm:p-6">
           <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/10 text-3xl sm:h-16 sm:w-16">
-              {config.flag}
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/10 text-3xl sm:h-16 sm:w-16 font-bold text-gold">
+              {config.name.charAt(0)}
             </div>
             <div className="flex-1 min-w-0">
               <h1 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary sm:text-2xl">

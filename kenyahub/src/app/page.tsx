@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
+import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 
 export default function HomePage() {
   const popularTools = TOOLS.slice(0, 6);
@@ -97,6 +98,11 @@ export default function HomePage() {
         {/* Gradient fade transition */}
         <div className="h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
       </section>
+
+      {/* ═══════════════════════════════════════════
+          PINNED TOOLS
+          ═══════════════════════════════════════════ */}
+      <PinnedToolsHomeSection />
 
       {/* ═══════════════════════════════════════════
           POPULAR TOOLS — 3-column card grid
