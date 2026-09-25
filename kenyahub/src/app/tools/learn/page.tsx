@@ -13,6 +13,9 @@ import {
 } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import type { LanguageConfig } from "@/data/courses/types";
+import { TOOLS } from "@/lib/tools-registry";
+
+const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
 /* ═══════════════════════════════════════════════════════
    LANGUAGE PICKER — Choose your language to learn
@@ -136,10 +139,7 @@ export default function LearnPage() {
   const comingLangs = AVAILABLE_LANGUAGES.filter((l) => !l.ready);
 
   return (
-    <ToolShell
-      title="Learn Kenyan Languages"
-      description="Master Kenya's languages through interactive lessons, practice exercises, and cultural immersion — Duolingo-style."
-    >
+    <ToolShell tool={LEARN_TOOL}>
       <div className="mx-auto max-w-3xl px-4 pb-8">
         {/* Hero */}
         <div className="mb-6 rounded-2xl border border-border bg-gradient-to-br from-bg-card via-bg-card to-gold/5 p-6 text-center sm:p-8">

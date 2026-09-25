@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getRelatedTools, getCategoryInfo } from "@/lib/tools-registry";
 import type { Tool } from "@/lib/types";
+import PinToolButton from "./PinToolButton";
 
 interface ToolShellProps {
   tool: Tool;
@@ -102,10 +103,13 @@ export default function ToolShell({ tool, children, faq }: ToolShellProps) {
           <div className="w-14 h-14 rounded-2xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0">
             <span className="text-[1.75rem]">{tool.icon}</span>
           </div>
-          <div className="min-w-0">
+          <div className="min-w-0 flex-1">
             <h1 className="text-xl sm:text-2xl lg:text-[1.75rem] font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-tight tracking-tight">
               {tool.title}
             </h1>
+          </div>
+          <div className="flex-shrink-0">
+            <PinToolButton toolSlug={tool.slug} />
           </div>
         </div>
 

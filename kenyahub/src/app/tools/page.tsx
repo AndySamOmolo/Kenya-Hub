@@ -1,16 +1,39 @@
 "use client";
 
-import { useState, useMemo, Suspense } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { getCategoryInfo } from "@/lib/tools-registry";
+import { Pin } from "lucide-react";
 
 function ToolsContent() {
   const searchParams = useSearchParams();
   const initialCategory = searchParams.get("category") || "all";
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [searchQuery, setSearchQuery] = useState("");
+  const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const loadPinned = () => {
+      try {
+        const saved = localStorage.getItem("kh-pinned-tools");
+        if (saved) {
+          setPinnedToolSlugs(JSON.parse(saved));
+        } else {
+          setPinnedToolSlugs([]);
+        }
+      } catch (e) {
+        // ignore
+      }
+    };
+
+    loadPinned();
+    window.addEventListener("kh-pinned-tools-updated", loadPinned);
+    return () => window.removeEventListener("kh-pinned-tools-updated", loadPinned);
+  }, []);
 
   const filteredTools = useMemo(() => {
     let tools = TOOLS;
@@ -45,6 +68,50 @@ function ToolsContent() {
           category
         </p>
       </div>
+
+      {/* Pinned Tools */}
+      {mounted && pinnedToolSlugs.length > 0 && searchQuery === "" && selectedCategory === "all" && (
+        <div className="mb-10">
+          <h2 className="flex items-center gap-2 text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">
+            <Pin className="h-4 w-4 text-gold" /> Pinned Tools
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {pinnedToolSlugs.map((slug) => {
+              const tool = TOOLS.find((t) => t.slug === slug);
+              if (!tool) return null;
+              const cat = getCategoryInfo(tool.category);
+              return (
+                <Link
+                  key={tool.slug}
+                  href={`/tools/${tool.slug}`}
+                  className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl p-5 block group"
+                >
+                  <div className="flex items-start gap-4">
+                    <span className="text-2xl tool-icon flex-shrink-0">
+                      {tool.icon}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center justify-between mb-1">
+                        <h3 className="text-sm font-semibold text-text-primary group-hover:text-gold transition-colors truncate">
+                          {tool.shortTitle}
+                        </h3>
+                      </div>
+                      <p className="text-xs text-text-muted line-clamp-2 leading-relaxed">
+                        {tool.description}
+                      </p>
+                      {cat && (
+                        <span className={`badge ${cat.badgeClass} mt-2`}>
+                          {cat.name}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Search */}
       <div className="mb-6">

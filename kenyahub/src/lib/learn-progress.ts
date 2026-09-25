@@ -233,8 +233,8 @@ export function isSkillUnlocked(
 /* ─── Level Helpers ────────────────────────────────── */
 
 export function getXpLevel(xp: number) {
-  let current = LEVELS[0];
-  let next = LEVELS[1];
+  let current: typeof LEVELS[number] = LEVELS[0];
+  let next: typeof LEVELS[number] | null = LEVELS[1];
   for (let i = LEVELS.length - 1; i >= 0; i--) {
     if (xp >= LEVELS[i].minXp) {
       current = LEVELS[i];
