@@ -509,6 +509,18 @@ export const TOOLS: Tool[] = [
     icon: '📚',
   },
   {
+    slug: 'learn',
+    title: 'Learn Kenyan Languages — Duolingo-style Courses',
+    shortTitle: 'Learn Languages',
+    description: 'Master Kenyan languages through interactive Duolingo-style lessons with vocabulary, grammar, exercises, XP, streaks, and achievements. Currently featuring Dholuo with more languages coming soon.',
+    category: 'language-learning',
+    keywords: ['learn Kenyan languages', 'Dholuo course', 'Kikuyu lessons', 'Swahili course', 'Kenya language app', 'learn Luo', 'Duolingo Kenya'],
+    updateFrequency: 'periodic',
+    dataSource: 'Luo-translate curriculum, linguistic references & community data',
+    isLive: true,
+    icon: '🗣️',
+  },
+  {
     slug: 'economic-calendar',
     title: 'Kenya Economic Data Release Calendar',
     shortTitle: 'Economic Calendar',
