@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import parksData from "@/data/national-parks.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "national-parks-directory")!;
 const regions = [...new Set(parksData.parks.map((p) => p.region))];
@@ -43,14 +44,14 @@ export default function NationalParksDirectoryPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search parks, counties, or wildlife..." className="input-field text-sm" id="parks-search" />
           <div className="flex flex-wrap gap-2">
-            <select value={regionFilter} onChange={(e) => setRegionFilter(e.target.value)} className="input-field text-xs w-auto">
+            <CustomSelect value={regionFilter} onChange={(e) => setRegionFilter(e.target.value)} className="input-field text-xs w-auto">
               <option value="all">All Regions</option>
               {regions.map((r) => <option key={r} value={r}>{r}</option>)}
-            </select>
-            <select value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)} className="input-field text-xs w-auto">
+            </CustomSelect>
+            <CustomSelect value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)} className="input-field text-xs w-auto">
               <option value="all">All Types</option>
               {types.map((t) => <option key={t} value={t}>{t}</option>)}
-            </select>
+            </CustomSelect>
           </div>
           <p className="text-xs text-text-muted">{filtered.length} parks found</p>
         </div>

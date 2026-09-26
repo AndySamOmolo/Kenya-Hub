@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function HomePage() {
   const popularTools = TOOLS.slice(0, 6);
@@ -140,7 +141,7 @@ export default function HomePage() {
               >
                 <div className="flex items-start gap-4">
                   <span className="text-[2rem] tool-icon flex-shrink-0 leading-none">
-                    {tool.icon}
+                    <DynamicIcon emoji={tool.icon} className="w-full h-full" />
                   </span>
                   <div className="min-w-0 flex-1">
                     <h3 className="text-[0.9375rem] font-semibold text-text-primary mb-1.5 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
@@ -151,7 +152,7 @@ export default function HomePage() {
                     </p>
                     {cat && (
                       <span className={`badge ${cat.badgeClass}`}>
-                        {cat.icon} {cat.name}
+                        <DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /> {cat.name}
                       </span>
                     )}
                   </div>
@@ -198,7 +199,7 @@ export default function HomePage() {
                 className="tool-card bg-bg-card border border-border rounded-2xl p-6 flex items-start gap-4 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-white/[0.04] flex items-center justify-center flex-shrink-0 group-hover:bg-white/[0.07] transition-colors">
-                  <span className="text-2xl tool-icon">{cat.icon}</span>
+                  <span className="text-2xl tool-icon"><DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /></span>
                 </div>
                 <div className="min-w-0 flex-1">
                   <h3 className="text-[0.9375rem] font-semibold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors mb-1">

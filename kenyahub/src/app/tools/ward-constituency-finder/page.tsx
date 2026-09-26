@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import countiesData from "@/data/counties.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "ward-constituency-finder")!;
 
@@ -29,7 +30,7 @@ export default function WardConstituencyFinderPage() {
         {/* County selector */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
           <label className="block text-sm font-medium text-text-secondary mb-2">Select Your County</label>
-          <select
+          <CustomSelect
             value={selectedCounty}
             onChange={(e) => setSelectedCounty(e.target.value)}
             className="input-field text-base"
@@ -39,7 +40,7 @@ export default function WardConstituencyFinderPage() {
             {countiesData.counties.map((c) => (
               <option key={c.code} value={c.slug}>{c.name} County</option>
             ))}
-          </select>
+          </CustomSelect>
         </div>
 
         {county && (

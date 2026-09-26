@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import hospitalData from "@/data/nhif-hospitals.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "nhif-hospital-finder")!;
 const counties = [...new Set(hospitalData.hospitals.map((h) => h.county))].sort();
@@ -46,18 +47,18 @@ export default function NHIFHospitalFinderPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search by hospital name, county, or subcounty..." className="input-field text-sm" id="hospital-search" />
           <div className="flex flex-wrap gap-2">
-            <select value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-xs w-auto">
+            <CustomSelect value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-xs w-auto">
               <option value="all">All Counties</option>
               {counties.map((c) => <option key={c} value={c}>{c}</option>)}
-            </select>
-            <select value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)} className="input-field text-xs w-auto">
+            </CustomSelect>
+            <CustomSelect value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)} className="input-field text-xs w-auto">
               <option value="all">All Types</option>
               {types.map((t) => <option key={t} value={t}>{t}</option>)}
-            </select>
-            <select value={levelFilter} onChange={(e) => setLevelFilter(e.target.value)} className="input-field text-xs w-auto">
+            </CustomSelect>
+            <CustomSelect value={levelFilter} onChange={(e) => setLevelFilter(e.target.value)} className="input-field text-xs w-auto">
               <option value="all">All Levels</option>
               {levels.map((l) => <option key={l} value={l}>Level {l}</option>)}
-            </select>
+            </CustomSelect>
           </div>
           <p className="text-xs text-text-muted">{filtered.length} hospitals found</p>
         </div>

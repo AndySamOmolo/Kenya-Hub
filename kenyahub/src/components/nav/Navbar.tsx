@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
 import { useTheme } from "@/components/ThemeProvider";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -67,7 +68,7 @@ export default function Navbar() {
                               href={`/tools?category=${cat.id}`}
                               className="flex items-center gap-1.5 text-[0.8125rem] font-semibold text-text-primary hover:text-gold transition-colors mb-1.5"
                             >
-                              <span className="text-base">{cat.icon}</span>
+                              <span className="text-base"><DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /></span>
                               {cat.name}
                             </Link>
                             <div className="space-y-0.5 pl-6">
@@ -231,7 +232,7 @@ export default function Navbar() {
                   className="flex items-center gap-3 px-3 py-2.5 text-sm text-text-secondary hover:text-text-primary rounded-lg transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
-                  <span className="w-8 text-center text-base">{cat.icon}</span>
+                  <span className="w-8 text-center text-base"><DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /></span>
                   {cat.name}
                 </Link>
               ))}

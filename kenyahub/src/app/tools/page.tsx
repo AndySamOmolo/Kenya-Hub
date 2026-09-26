@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { getCategoryInfo } from "@/lib/tools-registry";
 import { Pin } from "lucide-react";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 function ToolsContent() {
   const searchParams = useSearchParams();
@@ -88,7 +89,7 @@ function ToolsContent() {
                 >
                   <div className="flex items-start gap-4">
                     <span className="text-2xl tool-icon flex-shrink-0">
-                      {tool.icon}
+                      <DynamicIcon emoji={tool.icon} className="w-full h-full" />
                     </span>
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center justify-between mb-1">
@@ -149,7 +150,7 @@ function ToolsContent() {
                   : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
               }`}
             >
-              {cat.icon} {cat.name} ({count})
+              <DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /> {cat.name} ({count})
             </button>
           );
         })}
@@ -175,7 +176,7 @@ function ToolsContent() {
               >
                 <div className="flex items-start gap-3">
                   <span className="text-2xl tool-icon transition-transform flex-shrink-0">
-                    {tool.icon}
+                    <DynamicIcon emoji={tool.icon} className="w-full h-full" />
                   </span>
                   <div className="min-w-0">
                     <h2 className="text-sm font-semibold text-text-primary mb-1 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
@@ -188,7 +189,7 @@ function ToolsContent() {
                       <span
                         className={`badge ${cat.badgeClass} text-[0.65rem]`}
                       >
-                        {cat.icon} {cat.name}
+                        <DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /> {cat.name}
                       </span>
                     )}
                   </div>

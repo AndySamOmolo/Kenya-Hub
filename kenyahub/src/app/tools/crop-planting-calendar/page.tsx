@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import cropData from "@/data/crop-planting-calendar.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "crop-planting-calendar")!;
 
@@ -67,10 +68,10 @@ export default function CropPlantingCalendarPage() {
           )}
           <div className="flex flex-col sm:flex-row gap-3">
             <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search crops..." className="input-field text-sm flex-1" id="crop-search" />
-            <select value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)} className="input-field text-sm w-full sm:w-auto" id="crop-category">
+            <CustomSelect value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)} className="input-field text-sm w-full sm:w-auto" id="crop-category">
               <option value="all">All Categories</option>
               {categories.map((c) => (<option key={c} value={c}>{c}</option>))}
-            </select>
+            </CustomSelect>
           </div>
         </div>
 

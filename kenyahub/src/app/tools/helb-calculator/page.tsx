@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import helbData from "@/data/helb-rates.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "helb-calculator")!;
 
@@ -94,7 +95,7 @@ export default function HELBCalculatorPage() {
             <label className="block text-sm font-medium text-text-secondary mb-2">
               Year First Borrowed
             </label>
-            <select
+            <CustomSelect
               value={yearBorrowed}
               onChange={(e) => setYearBorrowed(Number(e.target.value))}
               className="input-field"
@@ -103,7 +104,7 @@ export default function HELBCalculatorPage() {
               {Array.from({ length: 25 }, (_, i) => currentYear - i).map((y) => (
                 <option key={y} value={y}>{y}</option>
               ))}
-            </select>
+            </CustomSelect>
           </div>
           <div>
             <label className="block text-sm font-medium text-text-secondary mb-2">

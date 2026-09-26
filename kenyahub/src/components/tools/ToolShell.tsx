@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getRelatedTools, getCategoryInfo } from "@/lib/tools-registry";
 import type { Tool } from "@/lib/types";
 import PinToolButton from "./PinToolButton";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 interface ToolShellProps {
   tool: Tool;
@@ -124,7 +125,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
       <header className="mb-10">
         <div className="flex items-start gap-4 mb-4">
           <div className="w-14 h-14 rounded-2xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0">
-            <span className="text-[1.75rem]">{tool.icon}</span>
+            <span className="text-[1.75rem]"><DynamicIcon emoji={tool.icon} className="w-full h-full" /></span>
           </div>
           <div className="min-w-0 flex-1">
             <h1 className="text-xl sm:text-2xl lg:text-[1.75rem] font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-tight tracking-tight">
@@ -234,7 +235,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
                 >
                   <div className="flex items-start gap-3">
                     <span className="text-xl tool-icon flex-shrink-0">
-                      {rt.icon}
+                      <DynamicIcon emoji={rt.icon} className="w-full h-full" />
                     </span>
                     <div className="min-w-0">
                       <h3 className="text-[0.8125rem] font-semibold text-text-primary mb-1 group-hover:text-gold transition-colors">

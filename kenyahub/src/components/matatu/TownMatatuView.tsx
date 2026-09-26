@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 interface TownMatatuViewProps {
   townSlug: string;
@@ -87,7 +88,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label className="text-[0.65rem] text-text-muted block mb-1">Filter by SACCO</label>
-            <select
+            <CustomSelect
               value={saccoFilter}
               onChange={(e) => setSaccoFilter(e.target.value)}
               className="input-field text-sm"
@@ -97,12 +98,12 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
               {saccos.map((s) => (
                 <option key={s} value={s}>{s}</option>
               ))}
-            </select>
+            </CustomSelect>
           </div>
 
           <div>
             <label className="text-[0.65rem] text-text-muted block mb-1">Filter by Fare Range</label>
-            <select
+            <CustomSelect
               value={fareFilter}
               onChange={(e) => setFareFilter(e.target.value)}
               className="input-field text-sm"
@@ -112,7 +113,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
               <option value="under50">Under KES 50</option>
               <option value="50to100">KES 50 – KES 100</option>
               <option value="above100">Above KES 100</option>
-            </select>
+            </CustomSelect>
           </div>
         </div>
       </div>

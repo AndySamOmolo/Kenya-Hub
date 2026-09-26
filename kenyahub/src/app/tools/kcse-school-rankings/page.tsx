@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/kcse-rankings.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 const tool = TOOLS.find((t) => t.slug === "kcse-school-rankings")!;
 const faq = [
   { question: "How are KCSE school rankings determined?", answer: "Rankings are based on each school's mean score — the average of all students' mean grades on a 12-point scale (A=12, E=1). This is calculated by KNEC (Kenya National Examinations Council)." },
@@ -59,19 +60,19 @@ export default function KcseSchoolRankingsPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
           <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search school name or county..." className="input-field text-sm" id="kcse-search" />
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            <select value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-sm" id="kcse-county">
+            <CustomSelect value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-sm" id="kcse-county">
               <option value="all">All Counties</option>
               {counties.map((c) => (<option key={c} value={c}>{c}</option>))}
-            </select>
-            <select value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)} className="input-field text-sm" id="kcse-type">
+            </CustomSelect>
+            <CustomSelect value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)} className="input-field text-sm" id="kcse-type">
               <option value="all">All Types</option>
               {types.map((t) => (<option key={t} value={t}>{t}</option>))}
-            </select>
-            <select value={sortBy} onChange={(e) => setSortBy(e.target.value as typeof sortBy)} className="input-field text-sm" id="kcse-sort">
+            </CustomSelect>
+            <CustomSelect value={sortBy} onChange={(e) => setSortBy(e.target.value as typeof sortBy)} className="input-field text-sm" id="kcse-sort">
               <option value="meanScore">Sort by Mean Score</option>
               <option value="aGrades">Sort by A Grades</option>
               <option value="change">Sort by Improvement</option>
-            </select>
+            </CustomSelect>
           </div>
         </div>
         {/* Rankings table */}

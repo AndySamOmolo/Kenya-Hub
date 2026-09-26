@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "kcse-grade-calculator")!;
 
@@ -103,7 +104,7 @@ export default function KCSEGradeCalculatorPage() {
                 <label className="text-xs text-text-secondary w-40 flex-shrink-0">
                   {name} {i === 0 && <span className="text-kenya-red-light">*</span>}
                 </label>
-                <select
+                <CustomSelect
                   value={subjectGrades[i]}
                   onChange={(e) => updateGrade(i, e.target.value)}
                   className="select-field text-sm py-1.5"
@@ -114,7 +115,7 @@ export default function KCSEGradeCalculatorPage() {
                       {g} ({gradePoints[g]} pts)
                     </option>
                   ))}
-                </select>
+                </CustomSelect>
               </div>
             ))}
           </div>

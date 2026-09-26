@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import mpesaData from "@/data/mpesa-tariffs.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "mpesa-fee-calculator")!;
 
@@ -104,7 +105,7 @@ export default function MpesaFeeCalculatorPage() {
             <label className="block text-sm font-medium text-text-secondary mb-2">
               Transaction Type
             </label>
-            <select
+            <CustomSelect
               value={txType}
               onChange={(e) => setTxType(e.target.value as TransactionType)}
               className="select-field"
@@ -115,7 +116,7 @@ export default function MpesaFeeCalculatorPage() {
                   {opt.label}
                 </option>
               ))}
-            </select>
+            </CustomSelect>
           </div>
         </div>
 

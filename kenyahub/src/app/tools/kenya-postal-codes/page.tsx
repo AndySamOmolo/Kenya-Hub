@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import postalData from "@/data/postal-codes.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "kenya-postal-codes")!;
 
@@ -81,7 +82,7 @@ export default function KenyaPostalCodesPage() {
             <label className="block text-sm font-medium text-text-secondary mb-2" htmlFor="county-select">
               Filter by County
             </label>
-            <select
+            <CustomSelect
               id="county-select"
               value={selectedCounty}
               onChange={(e) => setSelectedCounty(e.target.value)}
@@ -93,7 +94,7 @@ export default function KenyaPostalCodesPage() {
                   {county}
                 </option>
               ))}
-            </select>
+            </CustomSelect>
           </div>
         </div>
 

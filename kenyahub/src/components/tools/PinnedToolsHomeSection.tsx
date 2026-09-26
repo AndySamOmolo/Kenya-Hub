@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Pin } from "lucide-react";
 import { TOOLS, getCategoryInfo } from "@/lib/tools-registry";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function PinnedToolsHomeSection() {
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
@@ -57,7 +58,7 @@ export default function PinnedToolsHomeSection() {
             >
               <div className="flex items-start gap-4">
                 <span className="text-[2rem] tool-icon flex-shrink-0 leading-none">
-                  {tool.icon}
+                  <DynamicIcon emoji={tool.icon} className="w-full h-full" />
                 </span>
                 <div className="min-w-0 flex-1">
                   <h3 className="text-[0.9375rem] font-semibold text-text-primary mb-1.5 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug truncate">

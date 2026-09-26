@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const CONTACT_EMAIL = "andysamonyango@gmail.com";
 
@@ -143,7 +144,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="contact-subject" className="text-xs text-text-muted block mb-1">Topic / Category</label>
-                <select
+                <CustomSelect
                   id="contact-subject"
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
@@ -153,7 +154,7 @@ export default function ContactPage() {
                   <option value="correction">Report Data Discrepancy / Bug</option>
                   <option value="suggestion">Suggest a New Tool</option>
                   <option value="advertising">Advertising / Sponsorship</option>
-                </select>
+                </CustomSelect>
               </div>
 
               <div>

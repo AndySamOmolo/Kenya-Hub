@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/livestock-prices.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 const tool = TOOLS.find((t) => t.slug === "livestock-market-prices")!;
 const faq = [
   { question: "What affects livestock prices in Kenya?", answer: "Prices vary by animal condition/weight, breed, season (prices spike before Eid, Christmas, Easter), drought conditions (supply increase = lower prices), and market location." },
@@ -27,10 +28,10 @@ export default function LivestockPricesPage() {
               <button key={l.type} onClick={() => setTypeFilter(l.type)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${typeFilter === l.type ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>{l.icon} {l.type.split(" (")[0]}</button>
             ))}
           </div>
-          <select value={marketFilter} onChange={(e) => setMarketFilter(e.target.value)} className="input-field text-sm" id="market-filter">
+          <CustomSelect value={marketFilter} onChange={(e) => setMarketFilter(e.target.value)} className="input-field text-sm" id="market-filter">
             <option value="all">All Markets</option>
             {data.markets.map((m) => (<option key={m.name} value={m.name}>{m.name} — {m.county}</option>))}
-          </select>
+          </CustomSelect>
         </div>
         {/* Markets info */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">

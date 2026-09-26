@@ -2,6 +2,8 @@
 import { useState, useMemo, useCallback, useEffect } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
+import CustomSelect from "@/components/ui/CustomSelect";
+import { Repeat, BarChart, BookOpen, Dices, Folder, Search, Hash } from "lucide-react";
 
 // Import all dictionaries
 import swahiliDict from "@/data/dictionaries/swahili.json";
@@ -265,7 +267,7 @@ export default function KenyanTranslatorPage() {
         {randomWord && (
           <div className="bg-gradient-to-r from-gold/10 to-kenya-green/10 border border-gold/20 rounded-xl p-4 flex items-center justify-between gap-4">
             <div className="min-w-0">
-              <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-1">🎲 Discover a word</p>
+              <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-1 flex items-center gap-1.5"><Dices className="w-3 h-3" /> Discover a word</p>
               <p className="text-sm font-bold text-text-primary">&ldquo;{randomWord.entry.english}&rdquo;</p>
               <p className="text-xs text-text-secondary mt-0.5">
                 <span className="text-gold font-medium">{randomWord.entry.translation}</span>
@@ -286,9 +288,9 @@ export default function KenyanTranslatorPage() {
         {/* ── View Mode Tabs ── */}
         <div className="flex gap-1 bg-bg-elevated rounded-xl p-1 border border-border">
           {([
-            { id: "translate" as const, label: "Translate", icon: "🔄" },
-            { id: "compare" as const, label: "Compare", icon: "📊" },
-            { id: "browse" as const, label: "Browse", icon: "📖" },
+            { id: "translate" as const, label: "Translate", icon: <Repeat className="w-4 h-4" /> },
+            { id: "compare" as const, label: "Compare", icon: <BarChart className="w-4 h-4" /> },
+            { id: "browse" as const, label: "Browse", icon: <BookOpen className="w-4 h-4" /> },
           ]).map((mode) => (
             <button
               key={mode.id}
@@ -315,19 +317,15 @@ export default function KenyanTranslatorPage() {
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
                 <div className="w-full sm:flex-1 min-w-0">
                   <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">From</label>
-                  <select
+                  <CustomSelect
                     value={sourceLanguage}
-                    onChange={(e) => setSourceLanguage(e.target.value)}
-                    className="input-field text-sm w-full"
+                    onChange={setSourceLanguage}
+                    options={[
+                      { value: "english", label: "English" },
+                      ...ALL_DICTS.map((d) => ({ value: d.languageId, label: d.languageName }))
+                    ]}
                     id="source-lang"
-                  >
-                    <option value="english">English</option>
-                    {ALL_DICTS.map((d) => (
-                      <option key={d.languageId} value={d.languageId}>
-                        {d.languageName}
-                      </option>
-                    ))}
-                  </select>
+                  />
                 </div>
 
                 <button
@@ -342,33 +340,27 @@ export default function KenyanTranslatorPage() {
 
                 <div className="w-full sm:flex-1 min-w-0">
                   <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">To</label>
-                  <select
+                  <CustomSelect
                     value={targetLanguage}
-                    onChange={(e) => setTargetLanguage(e.target.value)}
-                    className="input-field text-sm w-full"
+                    onChange={setTargetLanguage}
+                    options={[
+                      { value: "english", label: "English" },
+                      ...ALL_DICTS.map((d) => ({ value: d.languageId, label: d.languageName }))
+                    ]}
                     id="target-lang"
-                  >
-                    <option value="english">English</option>
-                    {ALL_DICTS.map((d) => (
-                      <option key={d.languageId} value={d.languageId}>
-                        {d.languageName}
-                      </option>
-                    ))}
-                  </select>
+                  />
                 </div>
               </div>
 
               {/* Search Input */}
               <div className="mt-4 relative">
-                <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-text-muted" />
                 <input
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={sourceLanguage === "english" ? "Type an English word... e.g. 'hello', 'water', 'mother'" : `Type a ${sourceDict?.languageName ?? ""} word...`}
-                  className="input-field text-sm w-full pl-10 pr-10"
+                  placeholder={sourceLanguage === "english" ? "Search for a word (e.g., water)..." : `Search for a ${sourceDict?.languageName ?? ""} word...`}
+                  className="input-field text-sm w-full pl-12 pr-10"
                   id="translator-search"
                   autoComplete="off"
                 />
@@ -404,15 +396,15 @@ export default function KenyanTranslatorPage() {
                     {targetDict.nativeName} · {(targetDict.speakerCount / 1000000).toFixed(1)}M speakers · {targetDict.family.charAt(0).toUpperCase() + targetDict.family.slice(1)} family
                   </p>
                   <p className="text-[0.6rem] text-text-muted mt-1">{targetDict.counties.join(", ")}</p>
-                  <div className="flex items-center gap-3 mt-2">
-                    <span className="text-[0.6rem] text-text-muted">
-                      📖 {targetDict.categories.reduce((s, c) => s + c.entries.length, 0)} words
+                  <div className="flex items-center gap-4 mt-2">
+                    <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
+                      <BookOpen className="w-3.5 h-3.5" /> {targetDict.categories.reduce((s, c) => s + c.entries.length, 0)} words
                     </span>
-                    <span className="text-[0.6rem] text-text-muted">
-                      📂 {targetDict.categories.length} categories
+                    <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
+                      <Folder className="w-3.5 h-3.5" /> {targetDict.categories.length} categories
                     </span>
-                    <span className="text-[0.6rem] text-text-muted">
-                      v{targetDict.dictionaryVersion}
+                    <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
+                      <Hash className="w-3.5 h-3.5" /> v{targetDict.dictionaryVersion}
                     </span>
                   </div>
                 </div>
@@ -684,7 +676,7 @@ export default function KenyanTranslatorPage() {
 
             {searchQuery && comparisonResults.length === 0 && (
               <div className="bg-bg-card border border-border rounded-xl p-8 text-center">
-                <span className="text-3xl block mb-3">📊</span>
+                <BarChart className="w-8 h-8 text-text-muted mx-auto mb-3" />
                 <p className="text-sm font-medium text-text-primary mb-1">Select languages to compare</p>
                 <p className="text-xs text-text-muted">Pick at least one language above, then search for a word.</p>
               </div>

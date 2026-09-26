@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import kuccpsData from "@/data/kuccps-clusters.json";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "kuccps-cluster-calculator")!;
 
@@ -117,7 +118,7 @@ export default function KUCCPSCalculatorPage() {
                 <label className="text-xs text-text-secondary w-32 flex-shrink-0 truncate" title={subject}>
                   {subject}
                 </label>
-                <select
+                <CustomSelect
                   value={selectedGrades[subject] || ""}
                   onChange={(e) => updateGrade(subject, e.target.value)}
                   className="select-field text-sm py-1.5"
@@ -128,7 +129,7 @@ export default function KUCCPSCalculatorPage() {
                       {g} ({gradePoints[g]} pts)
                     </option>
                   ))}
-                </select>
+                </CustomSelect>
               </div>
             ))}
           </div>
