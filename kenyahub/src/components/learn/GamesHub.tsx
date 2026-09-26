@@ -18,6 +18,10 @@ import {
   Trophy,
   Volume2,
   Zap,
+  Gamepad2,
+  Type,
+  Puzzle,
+  GalleryHorizontal,
 } from "lucide-react";
 import type { WordPair, CourseUnit } from "@/data/courses/types";
 import { speak } from "@/lib/learn-engine";
@@ -84,7 +88,7 @@ export default function GamesHub({
           </button>
 
           <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-6 text-center sm:p-8">
-            <div className="mb-3 text-5xl">🎮</div>
+            <div className="mb-3 flex justify-center"><Gamepad2 className="w-12 h-12 text-gold" /></div>
             <h2 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary">
               Language Games
             </h2>
@@ -102,8 +106,8 @@ export default function GamesHub({
             className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
           >
             <div className="flex items-center gap-3 mb-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl">
-                🟩
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-500">
+                <Type className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors">
@@ -126,8 +130,8 @@ export default function GamesHub({
             className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
           >
             <div className="flex items-center gap-3 mb-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-2xl">
-                🔤
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-500">
+                <Puzzle className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors">
@@ -150,8 +154,8 @@ export default function GamesHub({
             className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
           >
             <div className="flex items-center gap-3 mb-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 text-2xl">
-                ⚡
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
+                <Zap className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors">
@@ -174,8 +178,8 @@ export default function GamesHub({
             className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
           >
             <div className="flex items-center gap-3 mb-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500/10 text-2xl">
-                🃏
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500/10 text-sky-500">
+                <GalleryHorizontal className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors">
