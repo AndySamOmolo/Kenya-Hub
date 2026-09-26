@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import type { LanguageConfig } from "@/data/courses/types";
+import { PUBLISHED_COURSES } from "@/data/courses/registry";
 import { TOOLS } from "@/lib/tools-registry";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
@@ -22,21 +23,14 @@ const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
    LANGUAGE PICKER — Choose your language to learn
    ═══════════════════════════════════════════════════════ */
 
-// Available languages (only ones with course data)
+// Published course metadata comes from the registry. Remaining entries are
+// placeholders until their courses are reviewed.
 const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })[] = [
-  {
-    id: "luo",
-    name: "Dholuo",
-    nativeName: "Dholuo",
-    family: "Nilotic",
-    counties: ["Kisumu", "Siaya", "Homa Bay", "Migori"],
-    speakers: "5.8M",
-    speechLocale: "sw-KE",
-    description: "A River-Lake Nilotic language spoken around Lake Victoria",
-    color: "#D4A843",
+  ...PUBLISHED_COURSES.map(({ config, units }) => ({
+    ...config,
     ready: true,
-    skills: 20,
-  },
+    skills: units.reduce((total, unit) => total + unit.skills.length, 0),
+  })),
   {
     id: "kikuyu",
     name: "Gĩkũyũ",

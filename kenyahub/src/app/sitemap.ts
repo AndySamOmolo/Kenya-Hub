@@ -3,6 +3,7 @@ import { TOOLS } from "@/lib/tools-registry";
 import countiesData from "@/data/counties.json";
 import matatuData from "@/data/matatu-routes.json";
 import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
+import { PUBLISHED_COURSES } from "@/data/courses/registry";
 
 export const dynamic = "force-static";
 
@@ -78,6 +79,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const languageCoursePages: MetadataRoute.Sitemap = PUBLISHED_COURSES.map(
+    ({ config }) => ({
+      url: `${BASE_URL}/tools/learn/${config.id}/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    })
+  );
+
   // County pages
   const countyBasePage: MetadataRoute.Sitemap = [
     {
@@ -125,5 +135,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...toolPages, ...countyBasePage, ...countyPages, ...matatuPages, ...blogPages];
+  return [...staticPages, ...toolPages, ...languageCoursePages, ...countyBasePage, ...countyPages, ...matatuPages, ...blogPages];
 }

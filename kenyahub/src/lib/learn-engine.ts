@@ -25,6 +25,30 @@ function pickOne<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+function isValidExercise(exercise: Exercise): boolean {
+  if (!exercise.prompt.trim()) return false;
+
+  if (exercise.type === 'match_pairs') {
+    if (!exercise.pairs || exercise.pairs.length < 2) return false;
+    const leftValues = new Set(exercise.pairs.map(pair => pair.left.toLowerCase().trim()));
+    const rightValues = new Set(exercise.pairs.map(pair => pair.right.toLowerCase().trim()));
+    return leftValues.size === exercise.pairs.length && rightValues.size === exercise.pairs.length;
+  }
+
+  if (!exercise.correctAnswer.trim()) return false;
+
+  if (exercise.type === 'multiple_choice') {
+    if (!exercise.options || !exercise.options.includes(exercise.correctAnswer)) return false;
+    return new Set(exercise.options.map(option => option.toLowerCase().trim())).size === exercise.options.length;
+  }
+
+  if (exercise.type === 'reorder') {
+    return Boolean(exercise.wordTiles?.length && exercise.wordTiles.length > 1);
+  }
+
+  return true;
+}
+
 /** Get distractors from the same skill's word list */
 function getDistractors(
   correctWord: WordPair,
@@ -68,6 +92,10 @@ function generateTranslateToTarget(word: WordPair): Exercise {
     type: 'translate_to_target',
     prompt: `Translate to the target language:`,
     correctAnswer: word.target.toLowerCase().replace(/[?!.,]/g, '').trim(),
+    acceptedAnswers: word.target
+      .split('/')
+      .map((answer) => answer.toLowerCase().replace(/[?!.,]/g, '').trim())
+      .filter(Boolean),
     hint: word.pronunciation,
     audioText: word.target,
     sourceWord: word,
@@ -79,6 +107,10 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
     type: 'translate_to_english',
     prompt: `Translate to English:`,
     correctAnswer: word.source.toLowerCase().replace(/[?!.,]/g, '').replace(/\(.*?\)/g, '').trim(),
+    acceptedAnswers: word.source
+      .split('/')
+      .map((answer) => answer.toLowerCase().replace(/[?!.,]/g, '').replace(/\(.*?\)/g, '').trim())
+      .filter(Boolean),
     audioText: word.target,
     sourceWord: word,
   };
@@ -181,8 +213,6 @@ const EXERCISE_WEIGHTS: { type: ExerciseType; weight: number; minWords: number }
   { type: 'translate_to_english', weight: 1.5, minWords: 1 },
   { type: 'fill_blank', weight: 2, minWords: 4 },
   { type: 'match_pairs', weight: 1, minWords: 4 },
-  { type: 'listen_type', weight: 1.5, minWords: 1 },
-  { type: 'tap_what_you_hear', weight: 1.5, minWords: 4 },
   { type: 'word_bank', weight: 1, minWords: 1 },
   { type: 'reorder', weight: 1, minWords: 1 },
 ];
@@ -192,18 +222,20 @@ export function generateExercises(
   count: number = EXERCISES_PER_LESSON
 ): Exercise[] {
   const allWords = [...skill.words];
-  const allSentences = skill.sentences.map(
-    (s): WordPair => ({ target: s.target, source: s.source })
-  );
-  const allItems = [...allWords, ...allSentences];
+  const allItems = allWords;
 
-  if (allItems.length === 0) return [];
+  const authoredExercises = (skill.authoredExercises || []).filter(isValidExercise);
+  const exercises = authoredExercises.slice(0, count);
+  const usedExercises = new Set(
+    exercises.map(exercise => `${exercise.type}:${exercise.prompt}:${exercise.correctAnswer}`)
+  );
+
+  if (exercises.length >= count || allItems.length === 0) return exercises;
 
   const eligible = EXERCISE_WEIGHTS.filter((e) => allItems.length >= e.minWords);
   const totalWeight = eligible.reduce((s, e) => s + e.weight, 0);
 
-  const exercises: Exercise[] = [];
-  const maxAttempts = count * 3;
+  const maxAttempts = (count - exercises.length) * 3;
   let attempts = 0;
 
   while (exercises.length < count && attempts < maxAttempts) {
@@ -240,12 +272,6 @@ export function generateExercises(
         case 'match_pairs':
           exercise = generateMatchPairs(allItems);
           break;
-        case 'listen_type':
-          exercise = generateListenType(word);
-          break;
-        case 'tap_what_you_hear':
-          exercise = generateTapWhatYouHear(word, allItems);
-          break;
         case 'word_bank':
           if (word.source.split(/\s+/).length >= 2) {
             exercise = generateWordBank(word);
@@ -261,7 +287,10 @@ export function generateExercises(
       // Skip failed generation
     }
 
-    if (exercise) {
+    if (exercise && isValidExercise(exercise)) {
+      const key = `${exercise.type}:${exercise.prompt}:${exercise.correctAnswer}`;
+      if (usedExercises.has(key)) continue;
+      usedExercises.add(key);
       exercises.push(exercise);
     }
   }
@@ -280,7 +309,7 @@ export function generateExercises(
       translate_to_target: 8,
       speak: 9,
     };
-    return (order[a.type] || 5) - (order[b.type] || 5);
+    return (order[a.type] ?? 5) - (order[b.type] ?? 5);
   });
 }
 
@@ -289,21 +318,27 @@ export function generateExercises(
 export function checkAnswer(exercise: Exercise, userAnswer: string): boolean {
   const normalize = (s: string) =>
     s
+      .normalize('NFKC')
       .toLowerCase()
       .replace(/[?!.,;:'"]/g, '')
       .replace(/\s+/g, ' ')
       .trim();
 
-  const correct = normalize(exercise.correctAnswer);
   const answer = normalize(userAnswer);
+  const accepted = [exercise.correctAnswer, ...(exercise.acceptedAnswers || [])]
+    .map(normalize)
+    .filter(Boolean);
 
-  if (correct === answer) return true;
+  if (accepted.includes(answer)) return true;
 
-  // Allow minor typos (Levenshtein distance <= 1 for short words)
-  if (correct.length <= 5 && levenshtein(correct, answer) <= 1) return true;
-  if (correct.length > 5 && levenshtein(correct, answer) <= 2) return true;
-
-  return false;
+  // Only allow a small typo when the answer is long enough to avoid accepting
+  // a different short word as equivalent.
+  return accepted.some((correct) => {
+    const distance = levenshtein(correct, answer);
+    if (correct.length >= 8) return distance <= 2;
+    if (correct.length >= 5) return distance <= 1;
+    return false;
+  });
 }
 
 function levenshtein(a: string, b: string): number {
@@ -324,13 +359,3 @@ function levenshtein(a: string, b: string): number {
   return dp[m][n];
 }
 
-/* ─── TTS Helper ───────────────────────────────────── */
-
-export function speak(text: string, locale: string = 'sw-KE') {
-  if (typeof window === 'undefined' || !window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = locale;
-  u.rate = 0.85;
-  window.speechSynthesis.speak(u);
-}

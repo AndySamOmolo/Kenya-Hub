@@ -36,6 +36,8 @@ export interface CourseSkill {
   words: WordPair[];
   /** Full sentence pairs for translation exercises */
   sentences: SentencePair[];
+  /** Exercises written by the course author */
+  authoredExercises?: Exercise[];
   /** Grammar/cultural tips shown before the lesson */
   tips?: string;
   /** Cultural note shown after completion */
@@ -49,6 +51,8 @@ export interface WordPair {
   partOfSpeech?: string;  // noun, verb, adj, etc.
   audio?: string;         // Optional audio file path
   hint?: string;          // Contextual hint
+  example?: string;       // Teaching example; not assumed to be a translation pair
+  response?: string;      // Expected response for dialogue cards
 }
 
 export interface SentencePair {
@@ -77,6 +81,8 @@ export interface Exercise {
   prompt: string;
   /** The correct answer string */
   correctAnswer: string;
+  /** Additional authored answers accepted for this exercise */
+  acceptedAnswers?: string[];
   /** Options for multiple-choice / tap exercises */
   options?: string[];
   /** Pairs for match_pairs exercises */
@@ -89,11 +95,15 @@ export interface Exercise {
   hint?: string;
   /** The source word/sentence this exercise is about */
   sourceWord?: WordPair;
+  /** Existing review item represented by this exercise */
+  reviewId?: string;
 }
 
 /* ─── User Progress ─────────────────────────────────────── */
 
 export interface UserProgress {
+  /** Storage schema version for local migrations */
+  version?: number;
   languageId: string;
   /** Completed skill levels: { "basics-1": 3 } means level 3/5 completed */
   skillLevels: Record<string, number>;
@@ -119,6 +129,19 @@ export interface UserProgress {
   lessonsCompleted: number;
   /** Streak freeze count */
   streakFreezes: number;
+  /** Missed items scheduled for later review */
+  reviewQueue: ReviewItem[];
+}
+
+export interface ReviewItem {
+  id: string;
+  skillId: string;
+  type?: ExerciseType;
+  prompt: string;
+  answer: string;
+  acceptedAnswers?: string[];
+  hint?: string;
+  dueAt: number;
 }
 
 export interface LessonResult {
@@ -131,6 +154,9 @@ export interface LessonResult {
   perfectLesson: boolean;
   timeSpent: number;     // seconds
   newWordsLearned: string[];
+  heartsRemaining: number;
+  reviewItems: ReviewItem[];
+  reviewedItemIds: string[];
 }
 
 /* ─── Achievement Definitions ───────────────────────────── */

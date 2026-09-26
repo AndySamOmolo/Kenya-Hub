@@ -9,7 +9,6 @@ import {
   Volume2,
   X,
   Zap,
-  ArrowLeft,
   Flame,
   Lightbulb,
   SkipForward,
@@ -20,15 +19,15 @@ import type {
   CourseSkill,
   UserProgress,
   LessonResult,
+  ReviewItem,
 } from "@/data/courses/types";
 import {
-  MAX_HEARTS,
   XP_PER_CORRECT,
   XP_PER_CORRECT_WITH_HINT,
   XP_PERFECT_BONUS,
   EXERCISES_PER_LESSON,
 } from "@/data/courses/types";
-import { generateExercises, checkAnswer, speak } from "@/lib/learn-engine";
+import { generateExercises, checkAnswer } from "@/lib/learn-engine";
 
 /* ═══════════════════════════════════════════════════════
    LESSON PLAYER — The interactive exercise loop
@@ -38,27 +37,32 @@ interface LessonPlayerProps {
   skill: CourseSkill;
   level: number;
   progress: UserProgress;
-  locale: string;
   languageName: string;
   onComplete: (result: LessonResult) => void;
   onQuit: () => void;
+  reviewItems?: ReviewItem[];
+  reviewOnly?: boolean;
 }
 
 export default function LessonPlayer({
   skill,
   level,
   progress,
-  locale,
   languageName,
   onComplete,
   onQuit,
+  reviewItems = [],
+  reviewOnly = false,
 }: LessonPlayerProps) {
   /* ─── State ────────────────────────────────────── */
   const [exercises, setExercises] = useState<Exercise[]>([]);
+  const [isLoadingExercises, setIsLoadingExercises] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hearts, setHearts] = useState(progress.hearts);
   const [xpEarned, setXpEarned] = useState(0);
   const [mistakes, setMistakes] = useState(0);
+  const [missedExercises, setMissedExercises] = useState<Exercise[]>([]);
+  const [reviewedItemIds, setReviewedItemIds] = useState<string[]>([]);
   const [streak, setStreak] = useState(0);
   const [wordsLearned, setWordsLearned] = useState<string[]>([]);
   const [startTime] = useState(Date.now());
@@ -84,16 +88,34 @@ export default function LessonPlayer({
   const [shakeWrong, setShakeWrong] = useState(false);
   const [flashCorrect, setFlashCorrect] = useState(false);
   const [lessonComplete, setLessonComplete] = useState(false);
+  const [lessonStage, setLessonStage] = useState<"learn" | "practice">("learn");
+  const [teachingIndex, setTeachingIndex] = useState(0);
 
   const inputRef = useRef<HTMLInputElement>(null);
 
   /* ─── Initialize exercises ─────────────────────── */
   useEffect(() => {
-    const exs = generateExercises(skill, EXERCISES_PER_LESSON);
+    const reviewExercises: Exercise[] = reviewItems.map((item) => ({
+      type: item.type || "translate_to_english",
+      prompt: item.prompt,
+      correctAnswer: item.answer,
+      acceptedAnswers: item.acceptedAnswers,
+      hint: item.hint,
+      reviewId: item.id,
+    }));
+    const exs = [
+      ...reviewExercises.slice(0, EXERCISES_PER_LESSON),
+      ...generateExercises(
+        skill,
+        reviewOnly ? 0 : Math.max(0, EXERCISES_PER_LESSON - reviewExercises.length)
+      ),
+    ];
     setExercises(exs);
-  }, [skill]);
+    setIsLoadingExercises(false);
+  }, [reviewItems, reviewOnly, skill]);
 
   const exercise = exercises[currentIndex];
+  const teachingCard = skill.words[teachingIndex];
   const progressPercent = exercises.length
     ? ((currentIndex + (isChecked ? 1 : 0)) / exercises.length) * 100
     : 0;
@@ -123,8 +145,10 @@ export default function LessonPlayer({
     switch (exercise.type) {
       case "multiple_choice":
       case "tap_what_you_hear":
-      case "fill_blank":
         answer = selectedOption || "";
+        break;
+      case "fill_blank":
+        answer = exercise.options ? selectedOption || "" : userAnswer;
         break;
       case "translate_to_target":
       case "translate_to_english":
@@ -159,6 +183,11 @@ export default function LessonPlayer({
       const streakMultiplier = streak >= 5 ? 3 : streak >= 3 ? 2 : 1;
       setXpEarned((v) => v + xp * streakMultiplier);
       setStreak((v) => v + 1);
+      if (exercise.reviewId) {
+        setReviewedItemIds((ids) =>
+          ids.includes(exercise.reviewId!) ? ids : [...ids, exercise.reviewId!]
+        );
+      }
 
       // Track words learned
       if (exercise.sourceWord) {
@@ -171,32 +200,57 @@ export default function LessonPlayer({
       setShakeWrong(true);
       setMistakes((v) => v + 1);
       setStreak(0);
-      setHearts((v) => Math.max(0, v - 1));
+      if (!exercise.reviewId) {
+        setHearts((v) => Math.max(0, v - 1));
+      }
+      setMissedExercises((items) =>
+        items.some((item) => item.prompt === exercise.prompt && item.correctAnswer === exercise.correctAnswer)
+          ? items
+          : [...items, exercise]
+      );
       setTimeout(() => setShakeWrong(false), 500);
     }
   }, [exercise, isChecked, selectedOption, userAnswer, selectedTiles, usedHint, streak]);
 
   /* ─── Next exercise ────────────────────────────── */
   const handleContinue = useCallback(() => {
-    if (currentIndex >= exercises.length - 1 || hearts <= 0) {
+    const nextExercise = exercises[currentIndex + 1];
+    if (
+      currentIndex >= exercises.length - 1 ||
+      (hearts <= 0 && !nextExercise?.reviewId)
+    ) {
       // Lesson complete
       const perfect = mistakes === 0;
       const totalXp = xpEarned + (perfect ? XP_PERFECT_BONUS : 0);
       const result: LessonResult = {
         skillId: skill.id,
         level,
-        score: Math.round(
-          ((exercises.length - mistakes) / exercises.length) * 100
-        ),
+        score: exercises.length > 0
+          ? Math.max(0, Math.round(((exercises.length - mistakes) / exercises.length) * 100))
+          : 0,
         xpEarned: totalXp,
         accuracy:
           exercises.length > 0
-            ? (exercises.length - mistakes) / exercises.length
+            ? Math.max(0, (exercises.length - mistakes) / exercises.length)
             : 0,
         mistakes,
         perfectLesson: perfect,
         timeSpent: Math.round((Date.now() - startTime) / 1000),
         newWordsLearned: wordsLearned,
+        heartsRemaining: hearts,
+        reviewItems: missedExercises
+          .filter((item) => item.type !== "match_pairs" && item.correctAnswer.trim())
+          .map((item): ReviewItem => ({
+            id: `${skill.id}:${item.type}:${item.prompt}`,
+            skillId: skill.id,
+            type: item.type,
+            prompt: item.prompt,
+            answer: item.correctAnswer,
+            acceptedAnswers: item.acceptedAnswers,
+            hint: item.hint,
+            dueAt: Date.now() + 10 * 60 * 1000,
+          })),
+        reviewedItemIds,
       };
       setLessonComplete(true);
       setTimeout(() => onComplete(result), 100);
@@ -312,19 +366,33 @@ export default function LessonPlayer({
 
   /* ─── Skip (costs a heart) ─────────────────────── */
   const handleSkip = useCallback(() => {
-    setHearts((v) => Math.max(0, v - 1));
-    handleContinue();
-  }, [handleContinue]);
+    if (!exercise || isChecked) return;
+    setMistakes((v) => v + 1);
+    setStreak(0);
+    if (!exercise.reviewId) {
+      setHearts((v) => Math.max(0, v - 1));
+    }
+    setMissedExercises((items) =>
+      items.some((item) => item.prompt === exercise.prompt && item.correctAnswer === exercise.correctAnswer)
+        ? items
+        : [...items, exercise]
+    );
+    setIsChecked(true);
+    setIsCorrect(false);
+  }, [exercise, isChecked]);
 
   /* ─── Audio ────────────────────────────────────── */
   const playAudio = useCallback(() => {
-    if (exercise?.audioText) speak(exercise.audioText, locale);
-  }, [exercise, locale]);
+    const audioPath = exercise?.sourceWord?.audio;
+    if (!audioPath) return;
+    void new Audio(audioPath).play();
+  }, [exercise]);
 
   // Auto-play audio for listen exercises
   useEffect(() => {
     if (
       exercise &&
+      exercise.sourceWord?.audio &&
       (exercise.type === "listen_type" || exercise.type === "tap_what_you_hear")
     ) {
       const t = setTimeout(() => playAudio(), 300);
@@ -401,6 +469,28 @@ export default function LessonPlayer({
             </div>
           )}
 
+          {missedExercises.length > 0 && (
+            <div className="mt-5 rounded-xl border border-border bg-bg-card p-4 text-left">
+              <h3 className="text-sm font-bold text-text-primary">Review before you leave</h3>
+              <div className="mt-3 space-y-3">
+                {missedExercises.map((item, index) => (
+                  <div key={`${item.prompt}-${index}`} className="border-t border-border pt-3 first:border-0 first:pt-0">
+                    <p className="text-xs text-text-muted">{item.prompt}</p>
+                    <p className="mt-1 text-sm font-semibold text-text-primary">{item.correctAnswer}</p>
+                    {item.hint && <p className="mt-1 text-xs text-text-secondary">{item.hint}</p>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {skill.culturalNote && (
+            <div className="mt-5 rounded-xl border border-gold/20 bg-gold/5 p-4 text-left">
+              <p className="text-xs font-bold uppercase tracking-wider text-gold">Context</p>
+              <p className="mt-2 text-sm leading-relaxed text-text-secondary">{skill.culturalNote}</p>
+            </div>
+          )}
+
           <button
             onClick={onQuit}
             className="mt-6 w-full rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110"
@@ -412,8 +502,78 @@ export default function LessonPlayer({
     );
   }
 
+  if (lessonStage === "learn" && teachingCard) {
+    const isLastTeachingCard = teachingIndex >= skill.words.length - 1;
+
+    return (
+      <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-4">
+        <div className="mb-6 flex items-center gap-3">
+          <button
+            onClick={onQuit}
+            className="shrink-0 rounded-lg p-2 text-text-muted transition-colors active:bg-bg-card sm:hover:text-text-primary"
+            aria-label="Exit lesson"
+          >
+            <X className="h-5 w-5" />
+          </button>
+          <div className="flex-1">
+            <div className="h-3 overflow-hidden rounded-full bg-bg-elevated">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-500"
+                style={{ width: `${((teachingIndex + 1) / skill.words.length) * 100}%` }}
+              />
+            </div>
+          </div>
+          <span className="text-xs font-semibold text-text-muted">
+            {teachingIndex + 1}/{skill.words.length}
+          </span>
+        </div>
+
+        <div className="flex-1">
+          <p className="text-xs font-bold uppercase tracking-wider text-gold">Learn first</p>
+          <h2 className="mt-2 font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
+            {skill.title}
+          </h2>
+          <p className="mt-2 text-sm text-text-secondary">Study this card before practicing.</p>
+
+          <div className="mt-8 rounded-2xl border border-gold/30 bg-gold/5 p-6 sm:p-8">
+            <p className="text-3xl font-bold text-gold sm:text-4xl">{teachingCard.target}</p>
+            <p className="mt-4 text-lg font-semibold text-text-primary">{teachingCard.source}</p>
+            {teachingCard.pronunciation && (
+              <p className="mt-2 text-sm text-text-secondary">
+                Pronunciation: <span className="font-medium text-text-primary">{teachingCard.pronunciation}</span>
+              </p>
+            )}
+            {teachingCard.example && (
+              <div className="mt-5 border-t border-border pt-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">Example</p>
+                <p className="mt-1 text-base text-text-primary">{teachingCard.example}</p>
+              </div>
+            )}
+            {teachingCard.response && (
+              <div className="mt-4 rounded-xl bg-bg-card p-3">
+                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">Expected response</p>
+                <p className="mt-1 text-sm text-text-primary">{teachingCard.response}</p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <button
+          onClick={() => {
+            if (isLastTeachingCard) setLessonStage("practice");
+            else setTeachingIndex((index) => index + 1);
+          }}
+          className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110"
+        >
+          {isLastTeachingCard ? "Start practice" : "Next card"}
+          <ChevronRight className="h-4 w-4" />
+        </button>
+      </div>
+    );
+  }
+
   /* ─── No hearts left ───────────────────────────── */
-  if (hearts <= 0 && !isChecked) {
+  if (hearts <= 0 && !isChecked && !exercise?.reviewId) {
     return (
       <div className="flex min-h-[60vh] flex-col items-center justify-center px-4">
         <div className="w-full max-w-md text-center">
@@ -439,8 +599,20 @@ export default function LessonPlayer({
 
   if (!exercise) {
     return (
-      <div className="flex min-h-[40vh] items-center justify-center">
-        <div className="text-sm text-text-muted">Loading exercises...</div>
+      <div className="flex min-h-[40vh] flex-col items-center justify-center px-4 text-center">
+        <p className="text-sm text-text-secondary">
+          {isLoadingExercises
+            ? "Preparing this lesson..."
+            : "This lesson does not have any usable exercises yet."}
+        </p>
+        {!isLoadingExercises && (
+          <button
+            onClick={onQuit}
+            className="mt-4 rounded-xl border border-border bg-bg-card px-5 py-2.5 text-sm font-semibold text-text-primary transition-colors active:bg-bg-elevated"
+          >
+            Back to lessons
+          </button>
+        )}
       </div>
     );
   }
@@ -451,8 +623,9 @@ export default function LessonPlayer({
     switch (exercise.type) {
       case "multiple_choice":
       case "tap_what_you_hear":
-      case "fill_blank":
         return !!selectedOption;
+      case "fill_blank":
+        return exercise.options ? !!selectedOption : userAnswer.trim().length > 0;
       case "translate_to_target":
       case "translate_to_english":
       case "listen_type":
@@ -485,6 +658,11 @@ export default function LessonPlayer({
         <div className="flex-1">
           <div className="h-3 overflow-hidden rounded-full bg-bg-elevated sm:h-3.5">
             <div
+                role="progressbar"
+                aria-label="Lesson progress"
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-valuenow={Math.round(progressPercent)}
               className="h-full rounded-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-500"
               style={{ width: `${progressPercent}%` }}
             />
@@ -513,6 +691,11 @@ export default function LessonPlayer({
       <div className="flex-1">
         {/* Prompt */}
         <div className="mb-5 sm:mb-6">
+          {exercise.reviewId && (
+            <p className="mb-2 text-xs font-bold uppercase tracking-wider text-kenya-green">
+              Review item
+            </p>
+          )}
           <p className="font-[family-name:var(--font-outfit)] text-lg font-bold text-text-primary sm:text-xl">
             {exercise.prompt}
           </p>
@@ -523,12 +706,15 @@ export default function LessonPlayer({
               exercise.type === "translate_to_english" ||
               exercise.type === "word_bank") && (
               <div className="mt-3 flex items-center gap-3">
-                <button
-                  onClick={playAudio}
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold transition-colors active:bg-gold/20 sm:hover:bg-gold/20"
-                >
-                  <Volume2 className="h-5 w-5" />
-                </button>
+                {exercise.sourceWord.audio && (
+                  <button
+                    onClick={playAudio}
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold transition-colors active:bg-gold/20 sm:hover:bg-gold/20"
+                    aria-label="Play recording"
+                  >
+                    <Volume2 className="h-5 w-5" />
+                  </button>
+                )}
                 <span className="text-xl font-bold text-gold sm:text-2xl">
                   {exercise.type === "translate_to_target"
                     ? exercise.sourceWord.source
@@ -540,13 +726,19 @@ export default function LessonPlayer({
           {/* Listen exercises: big audio button */}
           {(exercise.type === "listen_type" ||
             exercise.type === "tap_what_you_hear") && (
-            <button
-              onClick={playAudio}
-              className="mt-4 flex items-center gap-3 rounded-xl border border-gold/30 bg-gold/5 px-5 py-4 text-sm font-semibold text-gold transition-all active:bg-gold/10 sm:hover:bg-gold/10"
-            >
-              <Volume2 className="h-6 w-6" />
-              <span>Play audio</span>
-            </button>
+            exercise.sourceWord?.audio ? (
+              <button
+                onClick={playAudio}
+                className="mt-4 flex items-center gap-3 rounded-xl border border-gold/30 bg-gold/5 px-5 py-4 text-sm font-semibold text-gold transition-all active:bg-gold/10 sm:hover:bg-gold/10"
+              >
+                <Volume2 className="h-6 w-6" />
+                <span>Play recording</span>
+              </button>
+            ) : (
+              <p className="mt-4 rounded-xl border border-border bg-bg-card px-4 py-3 text-sm text-text-secondary">
+                No recording is available for this item yet. Continue with the text exercise.
+              </p>
+            )
           )}
         </div>
 
@@ -559,7 +751,7 @@ export default function LessonPlayer({
           {/* MULTIPLE CHOICE / TAP WHAT YOU HEAR / FILL BLANK */}
           {(exercise.type === "multiple_choice" ||
             exercise.type === "tap_what_you_hear" ||
-            exercise.type === "fill_blank") &&
+            (exercise.type === "fill_blank" && exercise.options)) &&
             exercise.options && (
               <div className="grid gap-2 sm:grid-cols-2">
                 {exercise.options.map((opt) => {
@@ -599,12 +791,23 @@ export default function LessonPlayer({
               </div>
             )}
 
-          {/* TEXT INPUT (translate, listen_type) */}
+          {/* TEXT INPUT (translate, fill, listen_type) */}
           {(exercise.type === "translate_to_target" ||
             exercise.type === "translate_to_english" ||
-            exercise.type === "listen_type") && (
+            exercise.type === "listen_type" ||
+            (exercise.type === "fill_blank" && !exercise.options)) && (
             <div>
+              <label htmlFor="lesson-answer" className="sr-only">
+                {exercise.type === "fill_blank"
+                  ? "Type the missing answer"
+                  : exercise.type === "translate_to_target"
+                  ? `Answer in ${languageName}`
+                  : exercise.type === "listen_type"
+                  ? "Type what you heard"
+                  : "Answer in English"}
+              </label>
               <input
+                id="lesson-answer"
                 ref={inputRef}
                 value={userAnswer}
                 onChange={(e) => setUserAnswer(e.target.value)}
@@ -616,7 +819,9 @@ export default function LessonPlayer({
                 }}
                 disabled={isChecked}
                 placeholder={
-                  exercise.type === "translate_to_target"
+                  exercise.type === "fill_blank"
+                    ? "Type the missing answer..."
+                    : exercise.type === "translate_to_target"
                     ? `Type in ${languageName}...`
                     : exercise.type === "listen_type"
                     ? "Type what you heard..."
@@ -790,12 +995,17 @@ export default function LessonPlayer({
               )}
             </div>
             {!isCorrect && (
-              <p className="mt-1 text-xs text-text-secondary">
-                Correct answer:{" "}
-                <span className="font-semibold text-text-primary">
-                  {exercise.correctAnswer}
-                </span>
-              </p>
+              <div className="mt-1 text-xs text-text-secondary">
+                <p>
+                  Correct answer:{" "}
+                  <span className="font-semibold text-text-primary">
+                    {exercise.correctAnswer}
+                  </span>
+                </p>
+                {exercise.hint && (
+                  <p className="mt-1 text-text-secondary">Hint: {exercise.hint}</p>
+                )}
+              </div>
             )}
           </div>
         )}

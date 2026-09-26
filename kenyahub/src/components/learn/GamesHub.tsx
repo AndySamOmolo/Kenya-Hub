@@ -24,7 +24,6 @@ import {
   GalleryHorizontal,
 } from "lucide-react";
 import type { WordPair, CourseUnit } from "@/data/courses/types";
-import { speak } from "@/lib/learn-engine";
 
 /* ═══════════════════════════════════════════════════════
    GAMES HUB — Language learning mini-games
@@ -34,7 +33,6 @@ import { speak } from "@/lib/learn-engine";
 interface GamesHubProps {
   units: CourseUnit[];
   languageName: string;
-  locale: string;
   onBack: () => void;
 }
 
@@ -52,15 +50,35 @@ function pickRandom<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+function playRecordedAudio(word: WordPair): void {
+  if (!word.audio) return;
+  void new Audio(word.audio).play().catch(() => undefined);
+}
+
 /** Gather all words from all units/skills */
 function getAllWords(units: CourseUnit[]): WordPair[] {
   const words: WordPair[] = [];
   for (const unit of units) {
     for (const skill of unit.skills) {
-      words.push(...skill.words);
+      words.push(
+        ...skill.words.filter((word) => {
+          const target = word.target.trim();
+          const source = word.source.trim();
+          return (
+            target.length >= 2 &&
+            target.length <= 40 &&
+            source.length > 0 &&
+            !source.includes(":") &&
+            !target.includes("→") &&
+            !target.startsWith("-")
+          );
+        })
+      );
     }
   }
-  return words;
+  return Array.from(
+    new Map(words.map((word) => [`${word.target}:${word.source}`, word])).values()
+  );
 }
 
 type GameType = "menu" | "wordle" | "scramble" | "speed" | "memory";
@@ -68,7 +86,6 @@ type GameType = "menu" | "wordle" | "scramble" | "speed" | "memory";
 export default function GamesHub({
   units,
   languageName,
-  locale,
   onBack,
 }: GamesHubProps) {
   const [activeGame, setActiveGame] = useState<GameType>("menu");
@@ -94,6 +111,9 @@ export default function GamesHub({
             </h2>
             <p className="mt-2 text-sm text-text-secondary">
               Practice {languageName} vocabulary through fun mini-games
+            </p>
+            <p className="mt-3 text-[0.65rem] font-semibold uppercase tracking-wide text-text-muted">
+              Casual practice only · scores do not change lesson progress
             </p>
           </div>
         </div>
@@ -222,25 +242,25 @@ export default function GamesHub({
       {activeGame === "wordle" && (
         <>
           {gameHeader("Wordle", "🟩")}
-          <WordleGame allWords={allWords} locale={locale} languageName={languageName} />
+          <WordleGame allWords={allWords} languageName={languageName} />
         </>
       )}
       {activeGame === "scramble" && (
         <>
           {gameHeader("Word Scramble", "🔤")}
-          <ScrambleGame allWords={allWords} locale={locale} languageName={languageName} />
+          <ScrambleGame allWords={allWords} languageName={languageName} />
         </>
       )}
       {activeGame === "speed" && (
         <>
           {gameHeader("Speed Match", "⚡")}
-          <SpeedMatchGame allWords={allWords} locale={locale} languageName={languageName} />
+          <SpeedMatchGame allWords={allWords} languageName={languageName} />
         </>
       )}
       {activeGame === "memory" && (
         <>
           {gameHeader("Memory Cards", "🃏")}
-          <MemoryGame allWords={allWords} locale={locale} languageName={languageName} />
+          <MemoryGame allWords={allWords} languageName={languageName} />
         </>
       )}
     </div>
@@ -254,13 +274,12 @@ export default function GamesHub({
 
 interface GameProps {
   allWords: WordPair[];
-  locale: string;
   languageName: string;
 }
 
 type LetterStatus = "correct" | "present" | "absent" | "empty";
 
-function WordleGame({ allWords, locale, languageName }: GameProps) {
+function WordleGame({ allWords, languageName }: GameProps) {
   const MAX_GUESSES = 6;
 
   // Pick words with 4-7 letters, no spaces/apostrophes
@@ -500,12 +519,14 @@ function WordleGame({ allWords, locale, languageName }: GameProps) {
             </p>
           )}
           <div className="mt-3 flex justify-center gap-2">
-            <button
-              onClick={() => speak(targetWord.target, locale)}
-              className="flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs font-semibold text-text-muted transition-all active:bg-bg-card sm:hover:text-gold"
-            >
-              <Volume2 className="h-3.5 w-3.5" /> Listen
-            </button>
+            {targetWord.audio && (
+              <button
+                onClick={() => playRecordedAudio(targetWord)}
+                className="flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs font-semibold text-text-muted transition-all active:bg-bg-card sm:hover:text-gold"
+              >
+                <Volume2 className="h-3.5 w-3.5" /> Listen
+              </button>
+            )}
             <button
               onClick={newGame}
               className="flex items-center gap-1.5 rounded-lg bg-gold px-4 py-2 text-xs font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
@@ -562,7 +583,7 @@ function WordleGame({ allWords, locale, languageName }: GameProps) {
    Unscramble letters to form the correct word
    ═══════════════════════════════════════════════════════ */
 
-function ScrambleGame({ allWords, locale, languageName }: GameProps) {
+function ScrambleGame({ allWords, languageName }: GameProps) {
   const validWords = useMemo(
     () =>
       allWords.filter((w) => {
@@ -747,12 +768,14 @@ function ScrambleGame({ allWords, locale, languageName }: GameProps) {
         )}
         {solved && (
           <div className="flex w-full gap-2">
-            <button
-              onClick={() => speak(targetWord.target, locale)}
-              className="flex items-center gap-1.5 rounded-xl border border-border px-4 py-2.5 text-xs font-semibold text-text-muted transition-all active:bg-bg-card sm:hover:text-gold"
-            >
-              <Volume2 className="h-3.5 w-3.5" /> Listen
-            </button>
+            {targetWord.audio && (
+              <button
+                onClick={() => playRecordedAudio(targetWord)}
+                className="flex items-center gap-1.5 rounded-xl border border-border px-4 py-2.5 text-xs font-semibold text-text-muted transition-all active:bg-bg-card sm:hover:text-gold"
+              >
+                <Volume2 className="h-3.5 w-3.5" /> Listen
+              </button>
+            )}
             <button
               onClick={handleNext}
               className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-gold px-6 py-2.5 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
@@ -771,7 +794,7 @@ function ScrambleGame({ allWords, locale, languageName }: GameProps) {
    60-second race to match translations
    ═══════════════════════════════════════════════════════ */
 
-function SpeedMatchGame({ allWords, locale, languageName }: GameProps) {
+function SpeedMatchGame({ allWords, languageName }: GameProps) {
   const GAME_DURATION = 60;
 
   const [gameState, setGameState] = useState<"ready" | "playing" | "done">("ready");
@@ -800,6 +823,7 @@ function SpeedMatchGame({ allWords, locale, languageName }: GameProps) {
   }, [allWords]);
 
   const startGame = () => {
+    if (allWords.length === 0) return;
     setGameState("playing");
     setScore(0);
     setStreak(0);
@@ -863,9 +887,15 @@ function SpeedMatchGame({ allWords, locale, languageName }: GameProps) {
         <p className="mt-2 text-sm text-text-secondary max-w-sm">
           Match {languageName} words to their English translations. You have {GAME_DURATION} seconds. Streaks give bonus points!
         </p>
+        {allWords.length === 0 && (
+          <p className="mt-3 text-sm text-text-muted">
+            This game will be available when this course has vocabulary.
+          </p>
+        )}
         <button
           onClick={startGame}
-          className="mt-6 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110 flex items-center gap-2 mx-auto"
+          disabled={allWords.length === 0}
+          className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 sm:hover:brightness-110 mx-auto"
         >
           <span>Start Game</span> <DynamicIcon emoji="🚀" className="w-4 h-4" />
         </button>
@@ -955,12 +985,14 @@ function SpeedMatchGame({ allWords, locale, languageName }: GameProps) {
           <p className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
             {currentWord.target}
           </p>
-          <button
-            onClick={() => speak(currentWord.target, locale)}
-            className="mt-2 mx-auto flex items-center gap-1 text-[0.65rem] text-text-muted active:text-gold"
-          >
-            <Volume2 className="h-3 w-3" /> Listen
-          </button>
+          {currentWord.audio && (
+            <button
+              onClick={() => playRecordedAudio(currentWord)}
+              className="mt-2 mx-auto flex items-center gap-1 text-[0.65rem] text-text-muted active:text-gold"
+            >
+              <Volume2 className="h-3 w-3" /> Listen
+            </button>
+          )}
         </div>
       )}
 
@@ -992,7 +1024,7 @@ interface MemoryCard {
   type: "target" | "source";
 }
 
-function MemoryGame({ allWords, locale, languageName }: GameProps) {
+function MemoryGame({ allWords, languageName }: GameProps) {
   const PAIR_COUNT = 6;
 
   const [cards, setCards] = useState<MemoryCard[]>([]);
@@ -1036,6 +1068,14 @@ function MemoryGame({ allWords, locale, languageName }: GameProps) {
   useEffect(() => {
     initGame();
   }, [initGame]);
+
+  if (allWords.length === 0) {
+    return (
+      <p className="py-12 text-center text-sm text-text-muted">
+        Memory Cards will be available when this course has vocabulary.
+      </p>
+    );
+  }
 
   const handleFlip = (cardId: number) => {
     if (isChecking || flipped.has(cardId) || matched.has(cardId)) return;

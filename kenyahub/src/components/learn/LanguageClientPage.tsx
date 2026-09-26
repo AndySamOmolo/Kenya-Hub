@@ -8,42 +8,34 @@ import SkillTree from "@/components/learn/SkillTree";
 import LessonPlayer from "@/components/learn/LessonPlayer";
 import GamesHub from "@/components/learn/GamesHub";
 import type {
-  CourseUnit,
   CourseSkill,
   UserProgress,
   LessonResult,
-  LanguageConfig,
 } from "@/data/courses/types";
 import {
   loadProgress,
   saveProgress,
   refillHearts,
   applyLessonResult,
+  getDueReviews,
 } from "@/lib/learn-progress";
 import { TOOLS } from "@/lib/tools-registry";
-
-// Course data imports
-import { LUO_CONFIG, LUO_UNITS } from "@/data/courses/luo/course";
-
-const COURSES: Record<
-  string,
-  { config: LanguageConfig; units: CourseUnit[] }
-> = {
-  luo: { config: LUO_CONFIG, units: LUO_UNITS },
-};
+import { getCourse } from "@/data/courses/registry";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
 type PageView = "lessons" | "games" | "playing";
 
 export default function LanguageClientPage({ languageId }: { languageId: string }) {
-  const course = COURSES[languageId];
+  const course = getCourse(languageId);
 
   const [progress, setProgress] = useState<UserProgress | null>(null);
   const [view, setView] = useState<PageView>("lessons");
   const [activeLesson, setActiveLesson] = useState<{
     skill: CourseSkill;
     level: number;
+    reviewItems: ReturnType<typeof getDueReviews>;
+    reviewOnly: boolean;
   } | null>(null);
   const [showCompletionToast, setShowCompletionToast] = useState<string | null>(
     null
@@ -72,12 +64,26 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const handleStartLesson = useCallback(
     (skillId: string, level: number) => {
       const skill = findSkill(skillId);
-      if (!skill || !progress || progress.hearts <= 0) return;
-      setActiveLesson({ skill, level });
+      if (!skill || !progress) return;
+      const reviewItems = getDueReviews(progress);
+      if (progress.hearts <= 0 && reviewItems.length === 0) return;
+      setActiveLesson({ skill, level, reviewItems, reviewOnly: false });
       setView("playing");
     },
     [findSkill, progress]
   );
+
+  const handleStartReview = useCallback(() => {
+    if (!progress || !course) return;
+    const reviewItems = getDueReviews(progress);
+    if (reviewItems.length === 0) return;
+
+    const skill = findSkill(reviewItems[0].skillId) || course.units[0]?.skills[0];
+    if (!skill) return;
+
+    setActiveLesson({ skill, level: progress.skillLevels[skill.id] || 1, reviewItems, reviewOnly: true });
+    setView("playing");
+  }, [course, findSkill, progress]);
 
   const handleLessonComplete = useCallback(
     (result: LessonResult) => {
@@ -158,6 +164,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         <div className="mb-4 flex justify-center gap-1 sm:mb-6">
           <button
             onClick={() => setView("lessons")}
+            role="tab"
+            aria-selected={view === "lessons"}
             className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${
               view === "lessons"
                 ? "bg-gold text-kenya-black"
@@ -169,6 +177,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           </button>
           <button
             onClick={() => setView("games")}
+            role="tab"
+            aria-selected={view === "games"}
             className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${
               view === "games"
                 ? "bg-gold text-kenya-black"
@@ -186,16 +196,16 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           skill={activeLesson.skill}
           level={activeLesson.level}
           progress={progress}
-          locale={course.config.speechLocale}
           languageName={course.config.name}
           onComplete={handleLessonComplete}
           onQuit={handleQuitLesson}
+          reviewItems={activeLesson.reviewItems}
+          reviewOnly={activeLesson.reviewOnly}
         />
       ) : view === "games" ? (
         <GamesHub
           units={course.units}
           languageName={course.config.name}
-          locale={course.config.speechLocale}
           onBack={() => setView("lessons")}
         />
       ) : (
@@ -204,7 +214,10 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           progress={progress}
           config={course.config}
           onStartLesson={handleStartLesson}
-          onGoBack={() => {}}
+          onStartReview={handleStartReview}
+          onGoBack={() => {
+            window.location.href = "/tools/learn";
+          }}
         />
       )}
     </ToolShell>
