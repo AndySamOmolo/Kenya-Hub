@@ -312,8 +312,8 @@ export default function KenyanTranslatorPage() {
           <>
             {/* Language Selector */}
             <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="flex-1 min-w-0">
+              <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+                <div className="w-full sm:flex-1 min-w-0">
                   <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">From</label>
                   <select
                     value={sourceLanguage}
@@ -321,7 +321,7 @@ export default function KenyanTranslatorPage() {
                     className="input-field text-sm w-full"
                     id="source-lang"
                   >
-                    <option value="english">🇬🇧 English</option>
+                    <option value="english">English</option>
                     {ALL_DICTS.map((d) => (
                       <option key={d.languageId} value={d.languageId}>
                         {d.languageName}
@@ -332,7 +332,7 @@ export default function KenyanTranslatorPage() {
 
                 <button
                   onClick={swapLanguages}
-                  className="mt-5 w-10 h-10 rounded-full bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-all hover:rotate-180 duration-300 flex-shrink-0"
+                  className="my-1 sm:my-0 sm:mt-5 w-10 h-10 rounded-full bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-all hover:rotate-180 duration-300 flex-shrink-0 transform rotate-90 sm:rotate-0"
                   title="Swap languages"
                 >
                   <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -340,7 +340,7 @@ export default function KenyanTranslatorPage() {
                   </svg>
                 </button>
 
-                <div className="flex-1 min-w-0">
+                <div className="w-full sm:flex-1 min-w-0">
                   <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">To</label>
                   <select
                     value={targetLanguage}
@@ -348,7 +348,7 @@ export default function KenyanTranslatorPage() {
                     className="input-field text-sm w-full"
                     id="target-lang"
                   >
-                    <option value="english">🇬🇧 English</option>
+                    <option value="english">English</option>
                     {ALL_DICTS.map((d) => (
                       <option key={d.languageId} value={d.languageId}>
                         {d.languageName}
