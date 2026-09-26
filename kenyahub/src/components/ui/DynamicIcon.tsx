@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 interface DynamicIconProps {
-  emoji: string;
+  emoji?: string;
   className?: string;
 }
 
@@ -65,6 +65,8 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export default function DynamicIcon({ emoji, className = "w-5 h-5" }: DynamicIconProps) {
+  if (!emoji) return null;
+
   // If the emoji has invisible variation selectors, trim them or normalize
   const cleanEmoji = emoji.replace(/[\uFE0F]/g, '');
   

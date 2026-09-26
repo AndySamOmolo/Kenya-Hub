@@ -1,4 +1,7 @@
 "use client";
+import DynamicIcon from "@/components/ui/DynamicIcon";
+import SearchInput from "@/components/ui/SearchInput";
+
 import { useState, useMemo, useCallback, useEffect } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -301,7 +304,7 @@ export default function KenyanTranslatorPage() {
                   : "text-text-secondary hover:text-text-primary"
               }`}
             >
-              <span><DynamicIcon emoji={mode.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
+              <span>{mode.icon}</span>
               <span>{mode.label}</span>
             </button>
           ))}

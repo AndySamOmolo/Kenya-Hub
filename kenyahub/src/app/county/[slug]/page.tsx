@@ -4,6 +4,7 @@ import { use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import countiesData from "@/data/counties.json";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function CountyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);

@@ -1,4 +1,6 @@
 "use client";
+import DynamicIcon from "@/components/ui/DynamicIcon";
+
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";

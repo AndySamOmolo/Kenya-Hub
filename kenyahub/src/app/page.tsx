@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MapPin, ShieldCheck, BadgeCheck, Smartphone } from "lucide-react";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import DynamicIcon from "@/components/ui/DynamicIcon";

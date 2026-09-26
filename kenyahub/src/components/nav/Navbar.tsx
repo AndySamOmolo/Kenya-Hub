@@ -1,5 +1,6 @@
 "use client";
 
+import { BusFront, Home, Edit3, Landmark, Mail, Wrench } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
