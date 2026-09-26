@@ -76,7 +76,7 @@ export default function SkillTree({
             onClick={() => setShowProfile(!showProfile)}
             className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-3 py-1.5 text-xs font-semibold transition-all active:bg-bg-elevated sm:hover:border-gold/40"
           >
-            <span>{levelInfo.current.icon}</span>
+            <span><DynamicIcon emoji={levelInfo.current.icon} className="w-[1em] h-[1em]" /></span>
             <span className="text-gold">{progress.xp} XP</span>
             {progress.streak > 0 && (
               <>
@@ -102,7 +102,7 @@ export default function SkillTree({
           {/* Quick stats row */}
           <div className="mt-4 grid grid-cols-4 gap-2">
             <div className="text-center">
-              <div className="text-base font-bold text-gold sm:text-lg">{levelInfo.current.icon}</div>
+              <div className="text-base font-bold text-gold sm:text-lg"><DynamicIcon emoji={levelInfo.current.icon} className="w-[1em] h-[1em]" /></div>
               <div className="text-[0.6rem] text-text-muted">{levelInfo.current.name}</div>
             </div>
             <div className="text-center">
@@ -204,7 +204,7 @@ export default function SkillTree({
                         : "opacity-40 border border-border/30"
                     }`}
                   >
-                    <span className="text-2xl">{ach.icon}</span>
+                    <span className="text-2xl"><DynamicIcon emoji={ach.icon} className="w-[1em] h-[1em]" /></span>
                     <span
                       className={`mt-1 text-[0.6rem] font-semibold ${
                         earned ? "text-gold" : "text-text-muted"
@@ -262,7 +262,7 @@ export default function SkillTree({
                     : "border-border/50 bg-bg-card/50 opacity-60"
                 }`}
               >
-                <span className="text-2xl">{unit.icon}</span>
+                <span className="text-2xl"><DynamicIcon emoji={unit.icon} className="w-[1em] h-[1em]" /></span>
                 <div className="flex-1 min-w-0 text-left">
                   <h3 className="text-sm font-bold text-text-primary truncate">
                     {unit.title}
@@ -330,7 +330,7 @@ export default function SkillTree({
                         />
 
                         <div className="flex items-center gap-3">
-                          <span className="text-2xl">{skill.icon}</span>
+                          <span className="text-2xl"><DynamicIcon emoji={skill.icon} className="w-[1em] h-[1em]" /></span>
                           <div className="flex-1 min-w-0">
                             <h4 className="text-sm font-bold text-text-primary truncate">
                               {skill.title}

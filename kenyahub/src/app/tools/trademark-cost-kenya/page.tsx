@@ -61,7 +61,7 @@ export default function TrademarkCostKenyaPage() {
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
             {ipTypes.map((t) => (
               <button key={t.id} onClick={() => setSelectedType(t.id)} className={`px-3 py-3 rounded-lg text-xs font-medium transition-all flex flex-col items-center gap-1 ${selectedType === t.id ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>
-                <span className="text-lg">{t.icon}</span>
+                <span className="text-lg"><DynamicIcon emoji={t.icon} className="w-[1em] h-[1em]" /></span>
                 {t.label}
               </button>
             ))}

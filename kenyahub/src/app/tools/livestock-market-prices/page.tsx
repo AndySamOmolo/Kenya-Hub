@@ -25,7 +25,7 @@ export default function LivestockPricesPage() {
           <div className="flex flex-wrap gap-2">
             <button onClick={() => setTypeFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${typeFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Livestock</button>
             {data.livestock.map((l) => (
-              <button key={l.type} onClick={() => setTypeFilter(l.type)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${typeFilter === l.type ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>{l.icon} {l.type.split(" (")[0]}</button>
+              <button key={l.type} onClick={() => setTypeFilter(l.type)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${typeFilter === l.type ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}><DynamicIcon emoji={l.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {l.type.split(" (")[0]}</button>
             ))}
           </div>
           <CustomSelect value={marketFilter} onChange={(e) => setMarketFilter(e.target.value)} className="input-field text-sm" id="market-filter">
@@ -47,7 +47,7 @@ export default function LivestockPricesPage() {
         {filtered.map((livestock) => (
           <div key={livestock.type} className="bg-bg-card border border-border rounded-xl overflow-hidden">
             <div className="px-5 py-3 border-b border-border flex items-center gap-2">
-              <span className="text-xl">{livestock.icon}</span>
+              <span className="text-xl"><DynamicIcon emoji={livestock.icon} className="w-[1em] h-[1em]" /></span>
               <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">{livestock.type}</h3>
               <span className="text-[0.6rem] text-text-muted ml-auto">{livestock.unit}</span>
             </div>

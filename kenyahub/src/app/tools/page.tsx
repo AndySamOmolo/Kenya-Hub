@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { getCategoryInfo } from "@/lib/tools-registry";
-import { Pin } from "lucide-react";
+import { Pin, Wrench } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 
@@ -68,7 +68,7 @@ function ToolsContent() {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-2">
-          🛠️ All Tools
+          <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
         </h1>
         <p className="text-text-muted">
           {TOOLS.length} free tools built for Kenya — search or browse by
@@ -91,7 +91,7 @@ function ToolsContent() {
                 <Link
                   key={tool.slug}
                   href={`/tools/${tool.slug}`}
-                  className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl p-5 block group"
+                  className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl p-4 sm:p-5 block group"
                 >
                   <div className="flex items-start gap-4">
                     <span className="text-2xl tool-icon flex-shrink-0">
@@ -164,7 +164,7 @@ function ToolsContent() {
 
       {/* Tools Grid */}
       {filteredTools.length === 0 ? (
-        <div className="text-center py-16">
+        <div className="text-center py-10 sm:py-16">
           <p className="text-4xl mb-3">🔍</p>
           <p className="text-text-secondary text-sm">
             No tools found matching &quot;{searchQuery}&quot;
@@ -178,7 +178,7 @@ function ToolsContent() {
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}`}
-                className="tool-card bg-bg-card border border-border rounded-xl p-5 block group"
+                className="tool-card bg-bg-card border border-border rounded-xl p-4 sm:p-5 block group"
               >
                 <div className="flex items-start gap-3">
                   <span className="text-2xl tool-icon transition-transform flex-shrink-0">

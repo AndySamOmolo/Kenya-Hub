@@ -60,7 +60,7 @@ export default function Navbar() {
                     <div className="rounded-2xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/30 p-6">
                     <div className="maasai-border-top rounded-2xl" />
 
-                    <div className="grid grid-cols-3 gap-x-6 gap-y-4 pt-1">
+                    <div className="grid grid-cols-3 gap-x-6 gap-y-4 pt-1 max-h-[60vh] overflow-y-auto pr-2">
                       {TOOL_CATEGORIES.map((cat) => {
                         const catTools = TOOLS.filter((t) => t.category === cat.id);
                         return (
@@ -111,7 +111,7 @@ export default function Navbar() {
                 href="/matatu"
                 className="px-3.5 py-2 text-[0.8125rem] font-medium text-gold hover:text-gold-light transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] flex items-center gap-1"
               >
-                <span>🚌</span> Matatu
+                <BusFront className="w-4 h-4 text-gold inline-block mb-0.5" /> Matatu
               </Link>
 
               <Link
@@ -201,25 +201,25 @@ export default function Navbar() {
           <div className="md:hidden border-t border-border bg-bg-card backdrop-blur-xl animate-fade-in-up">
             <div className="max-h-[70vh] overflow-y-auto px-4 py-4">
               <Link href="/" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 text-center text-base">🏠</span> Home
+                <Home className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> Home
               </Link>
               <Link href="/matatu" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-gold hover:text-gold-light rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 text-center text-base">🚌</span> Matatu Routes
+                <BusFront className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> Matatu Routes
               </Link>
               <Link href="/blog" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 text-center text-base">📝</span> Blog
+                <Edit3 className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> Blog
               </Link>
               <Link href="/county" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 text-center text-base">🏛️</span> Counties
+                <Landmark className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> Counties
               </Link>
               <Link href="/about" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-8 text-center text-base">ℹ️</span> About Us
               </Link>
               <Link href="/contact" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 text-center text-base">✉️</span> Contact
+                <Mail className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> Contact
               </Link>
               <Link href="/tools" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 text-center text-base">🛠️</span> All Tools
+                <Wrench className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> All Tools
               </Link>
 
               <div className="section-divider my-3" />

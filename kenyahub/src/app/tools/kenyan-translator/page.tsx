@@ -301,7 +301,7 @@ export default function KenyanTranslatorPage() {
                   : "text-text-secondary hover:text-text-primary"
               }`}
             >
-              <span>{mode.icon}</span>
+              <span><DynamicIcon emoji={mode.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
               <span>{mode.label}</span>
             </button>
           ))}
@@ -507,7 +507,7 @@ export default function KenyanTranslatorPage() {
                               : "bg-bg-elevated/50 border border-border/50 text-text-muted/50 cursor-not-allowed"
                           }`}
                         >
-                          <span>{cat.icon}</span>
+                          <span><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /></span>
                           <span>{cat.name}</span>
                         </button>
                       );
@@ -520,7 +520,7 @@ export default function KenyanTranslatorPage() {
                   <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
                     <div className="px-4 py-3 border-b border-border bg-bg-elevated/50">
                       <h4 className="text-sm font-semibold text-text-primary flex items-center gap-2">
-                        <span>{ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.icon}</span>
+                        <span><DynamicIcon emoji={ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.icon} className="w-[1em] h-[1em]" /></span>
                         {ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name}
                         <span className="text-[0.6rem] text-text-muted font-normal">({categoryEntries.length} entries)</span>
                       </h4>
@@ -615,17 +615,12 @@ export default function KenyanTranslatorPage() {
               </div>
 
               <div className="relative">
-                <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-                <input
-                  type="text"
+                <SearchInput
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Type an English word to compare... e.g. 'hello', 'water', 'mother'"
-                  className="input-field text-sm w-full pl-10"
+                  onClear={() => setSearchQuery("")}
+                  placeholder="Type an English word to compare..."
                   id="compare-search"
-                  autoComplete="off"
                 />
               </div>
             </div>
@@ -723,7 +718,7 @@ export default function KenyanTranslatorPage() {
                     <p className="text-[0.6rem] text-text-muted mb-2">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
                     <div className="flex flex-wrap gap-1 mb-2">
                       {dict.categories.map((cat) => (
-                        <span key={cat.id} className="text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted">{cat.icon} {cat.entries.length}</span>
+                        <span key={cat.id} className="text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.entries.length}</span>
                       ))}
                     </div>
                     {/* Coverage bar */}

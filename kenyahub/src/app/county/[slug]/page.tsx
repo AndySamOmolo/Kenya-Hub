@@ -122,7 +122,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
                 rel={isInternal ? undefined : "noopener noreferrer"}
                 className="group flex items-center gap-3 bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
               >
-                <span className="text-xl">{link.icon}</span>
+                <span className="text-xl"><DynamicIcon emoji={link.icon} className="w-[1em] h-[1em]" /></span>
                 <span className="text-sm font-medium text-text-primary group-hover:text-gold transition-colors">{link.title}</span>
                 {!isInternal && <span className="ml-auto text-[0.6rem] text-text-muted">↗</span>}
               </Link>

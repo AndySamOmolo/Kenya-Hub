@@ -39,7 +39,7 @@ export default function KenyaCustomsRestrictedItemsPage() {
           {filteredCategories.map((cat) => (
             <div key={cat.id} className="bg-bg-card border border-border rounded-xl overflow-hidden">
               <div className="px-5 py-4 border-b border-border bg-bg-elevated flex items-center gap-3">
-                <span className="text-2xl">{cat.icon}</span>
+                <span className="text-2xl"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /></span>
                 <div>
                   <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)]">{cat.title}</h2>
                   <p className="text-xs text-text-muted mt-0.5">{cat.description}</p>

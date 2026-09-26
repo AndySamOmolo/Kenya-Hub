@@ -64,7 +64,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               {[
-                { href: "/matatu", label: "🚌 Matatu Routes" },
+                { href: "/matatu", label: "Matatu Routes" },
                 { href: "/tools/paye-calculator", label: "PAYE Calculator" },
                 { href: "/tools/mpesa-fee-calculator", label: "M-Pesa Fees" },
                 { href: "/tools/kuccps-cluster-calculator", label: "KUCCPS Calculator" },

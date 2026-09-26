@@ -28,7 +28,7 @@ export default function EconomicCalendarPage() {
             <button onClick={() => setCatFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Categories</button>
             {data.categories.map((c) => (
               <button key={c.id} onClick={() => setCatFilter(c.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === c.id ? "text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`} style={catFilter === c.id ? { backgroundColor: c.color } : {}}>
-                {c.icon} {c.id}
+                <DynamicIcon emoji={c.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {c.id}
               </button>
             ))}
           </div>
@@ -46,7 +46,7 @@ export default function EconomicCalendarPage() {
               <div key={event.name} className="bg-bg-card border border-border rounded-xl p-5">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0" style={{ backgroundColor: (cat?.color || "#666") + "20" }}>
-                    {cat?.icon}
+                    <DynamicIcon emoji={cat?.icon} className="w-[1em] h-[1em]" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">

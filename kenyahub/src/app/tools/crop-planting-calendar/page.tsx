@@ -84,7 +84,7 @@ export default function CropPlantingCalendarPage() {
               <div key={crop.name} className="bg-bg-card border border-border rounded-xl overflow-hidden">
                 <div className="p-5">
                   <div className="flex items-start gap-3 mb-4">
-                    <span className="text-2xl">{crop.icon}</span>
+                    <span className="text-2xl"><DynamicIcon emoji={crop.icon} className="w-[1em] h-[1em]" /></span>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <h3 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)]">{crop.name}</h3>

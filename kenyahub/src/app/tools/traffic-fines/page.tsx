@@ -99,7 +99,7 @@ export default function TrafficFinesPage() {
                   : "bg-bg-card border border-border text-text-secondary hover:text-gold"
               }`}
             >
-              {cat.icon} {cat.name}
+              <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name}
             </button>
           ))}
         </div>
@@ -112,7 +112,7 @@ export default function TrafficFinesPage() {
         {filteredCategories.map((cat) => (
           <div key={cat.id} className="bg-bg-card border border-border rounded-xl overflow-hidden">
             <div className="px-5 py-3 border-b border-border bg-bg-elevated flex items-center gap-2">
-              <span className="text-lg">{cat.icon}</span>
+              <span className="text-lg"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
               <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
                 {cat.name}
               </h3>

@@ -53,7 +53,7 @@ export default function KenyanFoodNutritionPage() {
             <button onClick={() => setCatFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Foods</button>
             {foodData.categories.map((c) => (
               <button key={c.id} onClick={() => setCatFilter(c.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === c.id ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>
-                {c.icon} {c.name}
+                <DynamicIcon emoji={c.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {c.name}
               </button>
             ))}
           </div>

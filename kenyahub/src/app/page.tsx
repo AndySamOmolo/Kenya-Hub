@@ -53,7 +53,7 @@ export default function HomePage() {
             <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 sm:py-12 sm:py-20">
             <div className="max-w-2xl">
               {/* Status pill */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] mb-8">
@@ -108,7 +108,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════
           POPULAR TOOLS — 3-column card grid
           ═══════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         <div className="flex items-end justify-between mb-10">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
@@ -136,7 +136,7 @@ export default function HomePage() {
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}`}
-                className="tool-card bg-bg-card border border-border rounded-2xl p-6 block group"
+                className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-6 block group"
                 style={{ animationDelay: `${i * 80}ms` }}
               >
                 <div className="flex items-start gap-4">
@@ -175,7 +175,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════
           CATEGORIES — browse by topic
           ═══════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         <div className="text-center mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Browse by Category
@@ -196,7 +196,7 @@ export default function HomePage() {
               <Link
                 key={cat.id}
                 href={`/tools?category=${cat.id}`}
-                className="tool-card bg-bg-card border border-border rounded-2xl p-6 flex items-start gap-4 group"
+                className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-6 flex items-start gap-4 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-white/[0.04] flex items-center justify-center flex-shrink-0 group-hover:bg-white/[0.07] transition-colors">
                   <span className="text-2xl tool-icon"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
@@ -227,7 +227,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════
           WHY KENYAHUB — trust pillars
           ═══════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         <div className="text-center mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Built Different
@@ -237,28 +237,28 @@ export default function HomePage() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:p-5">
           {[
             {
-              icon: "🇰🇪",
+              icon: <MapPin className="w-8 h-8 text-kenya-green mb-1" />,
               title: "100% Kenyan",
               desc: "Every tool uses real Kenyan data — KRA tax bands, Safaricom tariffs, KICD curriculum.",
               accent: "from-kenya-green/10 to-transparent",
             },
             {
-              icon: "✅",
+              icon: <ShieldCheck className="w-8 h-8 text-gold mb-1" />,
               title: "Officially Sourced",
               desc: "Data from KRA, KUCCPS, NHIF, KICD, NTSA, and other government bodies.",
               accent: "from-gold/10 to-transparent",
             },
             {
-              icon: "🆓",
+              icon: <BadgeCheck className="w-8 h-8 text-sky mb-1" />,
               title: "Free Forever",
               desc: "No registration, no hidden fees, no premium tiers. Every tool is free.",
               accent: "from-sky/10 to-transparent",
             },
             {
-              icon: "📱",
+              icon: <Smartphone className="w-8 h-8 text-kenya-red mb-1" />,
               title: "Mobile-First",
               desc: "Built for phones first — because most Kenyans access the web on mobile.",
               accent: "from-kenya-red/10 to-transparent",
@@ -266,9 +266,9 @@ export default function HomePage() {
           ].map((item, i) => (
             <div
               key={i}
-              className={`relative rounded-2xl border border-border p-6 bg-gradient-to-b ${item.accent} overflow-hidden`}
+              className={`relative rounded-2xl border border-border p-4 sm:p-6 bg-gradient-to-b ${item.accent} overflow-hidden`}
             >
-              <span className="text-3xl block mb-4">{item.icon}</span>
+              <div className="mb-3">{item.icon}</div>
               <h3 className="text-sm font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
                 {item.title}
               </h3>
@@ -285,7 +285,7 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="relative overflow-hidden">
         <div className="maasai-border-top" />
-        <div className="bg-bg-secondary py-16 sm:py-20">
+        <div className="bg-bg-secondary py-10 sm:py-16 sm:py-12 sm:py-20">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-4 tracking-tight">
               Ready to find the tool you need?
