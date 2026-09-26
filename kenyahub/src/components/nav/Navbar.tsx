@@ -56,19 +56,20 @@ export default function Navbar() {
                 </button>
 
                 {toolsOpen && (
-                  <div className="absolute top-full right-0 mt-2 w-[720px] rounded-2xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/30 p-6 animate-fade-in-up">
+                  <div className="absolute top-full right-0 pt-2 w-[720px] animate-fade-in-up z-50">
+                    <div className="rounded-2xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/30 p-6">
                     <div className="maasai-border-top rounded-2xl" />
 
                     <div className="grid grid-cols-3 gap-x-6 gap-y-4 pt-1">
                       {TOOL_CATEGORIES.map((cat) => {
-                        const catTools = TOOLS.filter((t) => t.category === cat.id).slice(0, 3);
+                        const catTools = TOOLS.filter((t) => t.category === cat.id);
                         return (
                           <div key={cat.id}>
                             <Link
                               href={`/tools?category=${cat.id}`}
                               className="flex items-center gap-1.5 text-[0.8125rem] font-semibold text-text-primary hover:text-gold transition-colors mb-1.5"
                             >
-                              <span className="text-base"><DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /></span>
+                              <span className="text-base"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
                               {cat.name}
                             </Link>
                             <div className="space-y-0.5 pl-6">
@@ -101,6 +102,7 @@ export default function Navbar() {
                         Official Kenya data sources
                       </span>
                     </div>
+                  </div>
                   </div>
                 )}
               </div>
@@ -232,7 +234,7 @@ export default function Navbar() {
                   className="flex items-center gap-3 px-3 py-2.5 text-sm text-text-secondary hover:text-text-primary rounded-lg transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
-                  <span className="w-8 text-center text-base"><DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /></span>
+                  <span className="w-8 text-center text-base"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
                   {cat.name}
                 </Link>
               ))}

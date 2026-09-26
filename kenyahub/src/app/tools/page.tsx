@@ -18,6 +18,11 @@ function ToolsContent() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    const cat = searchParams.get("category");
+    if (cat) setSelectedCategory(cat);
+  }, [searchParams]);
+
+  useEffect(() => {
     setMounted(true);
     const loadPinned = () => {
       try {
@@ -90,7 +95,7 @@ function ToolsContent() {
                 >
                   <div className="flex items-start gap-4">
                     <span className="text-2xl tool-icon flex-shrink-0">
-                      <DynamicIcon emoji={tool.icon} className="w-full h-full" />
+                      <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
                     </span>
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center justify-between mb-1">
@@ -151,7 +156,7 @@ function ToolsContent() {
                   : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
               }`}
             >
-              <DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /> {cat.name} ({count})
+              <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name} ({count})
             </button>
           );
         })}
@@ -177,7 +182,7 @@ function ToolsContent() {
               >
                 <div className="flex items-start gap-3">
                   <span className="text-2xl tool-icon transition-transform flex-shrink-0">
-                    <DynamicIcon emoji={tool.icon} className="w-full h-full" />
+                    <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
                   </span>
                   <div className="min-w-0">
                     <h2 className="text-sm font-semibold text-text-primary mb-1 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
@@ -190,7 +195,7 @@ function ToolsContent() {
                       <span
                         className={`badge ${cat.badgeClass} text-[0.65rem]`}
                       >
-                        <DynamicIcon emoji={cat.icon} className="w-full h-full inline-block" /> {cat.name}
+                        <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name}
                       </span>
                     )}
                   </div>
