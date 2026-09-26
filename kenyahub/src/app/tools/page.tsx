@@ -7,6 +7,7 @@ import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { getCategoryInfo } from "@/lib/tools-registry";
 import { Pin } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import SearchInput from "@/components/ui/SearchInput";
 
 function ToolsContent() {
   const searchParams = useSearchParams();
@@ -116,14 +117,14 @@ function ToolsContent() {
 
       {/* Search */}
       <div className="mb-6">
-        <input
+        <SearchInput
           type="text"
           placeholder="Search tools — e.g. 'PAYE', 'matatu', 'CBC', 'M-Pesa'..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="input-field max-w-lg text-sm"
           id="tools-search"
-        />
+         onClear={() => setSearchQuery("")} />
       </div>
 
       {/* Category Tabs */}

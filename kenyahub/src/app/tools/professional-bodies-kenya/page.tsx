@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/professional-bodies.json";
+import SearchInput from "@/components/ui/SearchInput";
 const tool = TOOLS.find((t) => t.slug === "professional-bodies-kenya")!;
 const faq = [
   { question: "How do I verify if a professional is registered in Kenya?", answer: "Each regulatory body has a public register or verification portal. Use the verification URL provided for each body in our directory. For doctors, check kmpdc.go.ke; for lawyers, check lsk.or.ke/find-a-lawyer." },
@@ -20,7 +21,7 @@ export default function ProfessionalBodiesPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search by profession, body name, or abbreviation — e.g. 'doctor', 'LSK', 'engineer'..." className="input-field text-sm" id="prof-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search by profession, body name, or abbreviation — e.g. 'doctor', 'LSK', 'engineer'..." className="input-field text-sm" id="prof-search"  onClear={() => setSearch("")} />
         </div>
         <p className="text-xs text-text-muted">{filtered.length} professional bodies found</p>
         <div className="space-y-3">

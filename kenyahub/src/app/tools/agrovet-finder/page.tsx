@@ -4,6 +4,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/agrovets.json";
 import CustomSelect from "@/components/ui/CustomSelect";
+import SearchInput from "@/components/ui/SearchInput";
 const tool = TOOLS.find((t) => t.slug === "agrovet-finder")!;
 const faq = [
   { question: "How do I know if an agrovet is licensed?", answer: "Licensed agrovets should display a PCPB (Pest Control Products Board) license for agrochemicals and a veterinary permit for animal drugs. Ask to see their license before purchasing." },
@@ -25,7 +26,7 @@ export default function AgrovetFinderPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search agrovets, counties, services..." className="input-field text-sm" id="agrovet-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search agrovets, counties, services..." className="input-field text-sm" id="agrovet-search"  onClear={() => setSearch("")} />
           <CustomSelect value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-sm" id="agrovet-county">
             <option value="all">All Counties</option>
             {counties.map((c) => (<option key={c} value={c}>{c}</option>))}

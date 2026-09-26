@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import CustomSelect from "@/components/ui/CustomSelect";
+import SearchInput from "@/components/ui/SearchInput";
 
 interface TownMatatuViewProps {
   townSlug: string;
@@ -76,14 +77,14 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
 
       {/* Filter panel */}
       <div className="bg-bg-card border border-border rounded-xl p-5 mb-8 space-y-4">
-        <input
+        <SearchInput
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search by route number, destination, stage, or SACCO (e.g. 'Route 33', 'Rongai', 'Kencom')..."
           className="input-field text-sm"
           id="town-matatu-search"
-        />
+         onClear={() => setSearch("")} />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>

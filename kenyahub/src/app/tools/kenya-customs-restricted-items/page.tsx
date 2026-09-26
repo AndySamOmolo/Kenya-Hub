@@ -4,6 +4,7 @@ import { useState } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import customsData from "@/data/customs-restricted-items.json";
+import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "kenya-customs-restricted-items")!;
 
@@ -30,7 +31,7 @@ export default function KenyaCustomsRestrictedItemsPage() {
       <div className="space-y-6">
         {/* Search */}
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search items (e.g., 'drone', 'alcohol', 'cash')..." className="input-field text-sm max-w-lg" id="customs-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search items (e.g., 'drone', 'alcohol', 'cash')..." className="input-field text-sm max-w-lg" id="customs-search"  onClear={() => setSearch("")} />
         </div>
 
         {/* Categories */}

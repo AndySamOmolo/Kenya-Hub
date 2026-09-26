@@ -5,6 +5,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import hospitalData from "@/data/nhif-hospitals.json";
 import CustomSelect from "@/components/ui/CustomSelect";
+import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "nhif-hospital-finder")!;
 const counties = [...new Set(hospitalData.hospitals.map((h) => h.county))].sort();
@@ -45,7 +46,7 @@ export default function NHIFHospitalFinderPage() {
       <div className="space-y-6">
         {/* Search & filters */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search by hospital name, county, or subcounty..." className="input-field text-sm" id="hospital-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search by hospital name, county, or subcounty..." className="input-field text-sm" id="hospital-search"  onClear={() => setSearch("")} />
           <div className="flex flex-wrap gap-2">
             <CustomSelect value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-xs w-auto">
               <option value="all">All Counties</option>

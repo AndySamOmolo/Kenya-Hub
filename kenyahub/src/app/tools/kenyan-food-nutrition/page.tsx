@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import foodData from "@/data/kenyan-foods-nutrition.json";
+import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "kenyan-food-nutrition")!;
 type SortKey = "name" | "calories" | "protein" | "carbs" | "fat" | "fibre";
@@ -47,7 +48,7 @@ export default function KenyanFoodNutritionPage() {
       <div className="space-y-6">
         {/* Search & Categories */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search foods (e.g., 'ugali', 'omena', 'chapati')..." className="input-field text-sm" id="food-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search foods (e.g., 'ugali', 'omena', 'chapati')..." className="input-field text-sm" id="food-search"  onClear={() => setSearch("")} />
           <div className="flex flex-wrap gap-2">
             <button onClick={() => setCatFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Foods</button>
             {foodData.categories.map((c) => (

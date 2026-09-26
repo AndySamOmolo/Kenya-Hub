@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import countiesData from "@/data/counties.json";
+import SearchInput from "@/components/ui/SearchInput";
 
 export default function CountyIndexPage() {
   const [search, setSearch] = useState("");
@@ -44,14 +45,14 @@ export default function CountyIndexPage() {
 
       {/* Search */}
       <div className="mb-8">
-        <input
+        <SearchInput
           type="text"
           placeholder="Search by county, governor, or headquarters..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="input-field max-w-lg text-sm"
           id="county-search"
-        />
+         onClear={() => setSearch("")} />
         <p className="text-xs text-text-muted mt-2">Showing {filtered.length} of 47 counties</p>
       </div>
 

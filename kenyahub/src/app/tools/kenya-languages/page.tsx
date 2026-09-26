@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/kenya-languages.json";
+import SearchInput from "@/components/ui/SearchInput";
 const tool = TOOLS.find((t) => t.slug === "kenya-languages")!;
 const faq = [
   { question: "How many languages are spoken in Kenya?", answer: "Kenya has 42+ recognized ethnic groups speaking 60+ distinct languages and dialects. The two official languages are English and Swahili (Kiswahili). Swahili is also the national language." },
@@ -47,7 +48,7 @@ export default function KenyaLanguagesPage() {
               </button>
             ))}
           </div>
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search languages or counties..." className="input-field text-sm" id="lang-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search languages or counties..." className="input-field text-sm" id="lang-search"  onClear={() => setSearch("")} />
         </div>
         {familyFilter !== "all" && (
           <div className="bg-bg-elevated border border-border rounded-xl p-4">

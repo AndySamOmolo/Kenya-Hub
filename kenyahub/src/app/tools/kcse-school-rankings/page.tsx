@@ -4,6 +4,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/kcse-rankings.json";
 import CustomSelect from "@/components/ui/CustomSelect";
+import SearchInput from "@/components/ui/SearchInput";
 const tool = TOOLS.find((t) => t.slug === "kcse-school-rankings")!;
 const faq = [
   { question: "How are KCSE school rankings determined?", answer: "Rankings are based on each school's mean score — the average of all students' mean grades on a 12-point scale (A=12, E=1). This is calculated by KNEC (Kenya National Examinations Council)." },
@@ -58,7 +59,7 @@ export default function KcseSchoolRankingsPage() {
         </div>
         {/* Filters */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search school name or county..." className="input-field text-sm" id="kcse-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search school name or county..." className="input-field text-sm" id="kcse-search"  onClear={() => setSearch("")} />
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             <CustomSelect value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-sm" id="kcse-county">
               <option value="all">All Counties</option>

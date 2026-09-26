@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import finesData from "@/data/traffic-fines.json";
+import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "traffic-fines")!;
 
@@ -66,14 +67,14 @@ export default function TrafficFinesPage() {
       <div className="space-y-6">
         {/* Search */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
-          <input
+          <SearchInput
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search offences — e.g. 'seatbelt', 'speeding', 'phone'..."
             className="input-field"
             id="traffic-search-input"
-          />
+           onClear={() => setSearchQuery("")} />
         </div>
 
         {/* Category Filter */}

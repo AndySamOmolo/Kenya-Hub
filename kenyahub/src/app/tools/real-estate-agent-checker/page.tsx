@@ -4,6 +4,7 @@ import { useState } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import agentData from "@/data/real-estate-agents.json";
+import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "real-estate-agent-checker")!;
 
@@ -72,7 +73,7 @@ export default function RealEstateAgentCheckerPage() {
         <div className="bg-bg-card border border-border rounded-xl p-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-5">
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">Sample Verified Agents</h2>
-            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search sample agents..." className="input-field text-sm sm:max-w-xs" />
+            <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search sample agents..." className="input-field text-sm sm:max-w-xs"  onClear={() => setSearch("")} />
           </div>
           <p className="text-xs text-text-muted mb-4">Note: This is a small sample list. Thousands of agents are registered. Always verify directly on earb.go.ke.</p>
           

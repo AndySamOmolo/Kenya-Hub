@@ -5,6 +5,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import cropData from "@/data/crop-planting-calendar.json";
 import CustomSelect from "@/components/ui/CustomSelect";
+import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "crop-planting-calendar")!;
 
@@ -67,7 +68,7 @@ export default function CropPlantingCalendarPage() {
             <p className="text-xs text-text-muted">Counties: {selectedRegion.counties.join(", ")}</p>
           )}
           <div className="flex flex-col sm:flex-row gap-3">
-            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search crops..." className="input-field text-sm flex-1" id="crop-search" />
+            <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search crops..." className="input-field text-sm flex-1" id="crop-search"  onClear={() => setSearch("")} />
             <CustomSelect value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)} className="input-field text-sm w-full sm:w-auto" id="crop-category">
               <option value="all">All Categories</option>
               {categories.map((c) => (<option key={c} value={c}>{c}</option>))}

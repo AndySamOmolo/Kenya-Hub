@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import budgetData from "@/data/county-budgets.json";
+import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "county-budget-tracker")!;
 type SortKey = "county" | "allocation" | "ownSourceRevenue" | "expenditure" | "absorptionRate";
@@ -73,7 +74,7 @@ export default function CountyBudgetTrackerPage() {
 
         {/* Search */}
         <div className="bg-bg-card border border-border rounded-xl p-4">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search county..." className="input-field text-sm" id="budget-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search county..." className="input-field text-sm" id="budget-search"  onClear={() => setSearch("")} />
         </div>
 
         {/* Table */}

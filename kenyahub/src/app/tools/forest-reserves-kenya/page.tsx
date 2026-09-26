@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/forest-reserves.json";
+import SearchInput from "@/components/ui/SearchInput";
 const tool = TOOLS.find((t) => t.slug === "forest-reserves-kenya")!;
 const faq = [
   { question: "How many forest reserves are in Kenya?", answer: "Kenya has approximately 1,200 gazetted forest reserves covering about 7.4% of the country's land area. The five major 'water towers' (Mt. Kenya, Aberdares, Mau, Cherangani, Mt. Elgon) are the most significant." },
@@ -25,7 +26,7 @@ export default function ForestReservesPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search forests by name or county..." className="input-field text-sm" id="forest-search" />
+          <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search forests by name or county..." className="input-field text-sm" id="forest-search"  onClear={() => setSearch("")} />
           <div className="flex flex-wrap gap-2">
             <button onClick={() => setEcoFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${ecoFilter === "all" ? "bg-kenya-green text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-kenya-green-light"}`}>All Ecosystems</button>
             {data.ecosystemTypes.map((e) => (<button key={e.type} onClick={() => setEcoFilter(e.type)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${ecoFilter === e.type ? "bg-kenya-green text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-kenya-green-light"}`}>{e.type}</button>))}
