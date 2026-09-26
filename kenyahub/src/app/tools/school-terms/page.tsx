@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -74,7 +75,7 @@ export default function SchoolTermsPage() {
                 <div className={`px-5 py-3 border-b ${current ? "bg-gold/10 border-gold/20" : "bg-bg-elevated border-border"}`}>
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                      📚 {term.name} — {selectedYear}
+                      <DynamicIcon emoji="📚" className="w-4 h-4 text-gold inline-block mr-1.5" />{term.name} — {selectedYear}
                       {current && <span className="ml-2 badge bg-gold/20 text-gold text-[0.6rem]">CURRENT</span>}
                     </h3>
                     <span className="text-xs text-text-muted">{term.weeks} weeks</span>
@@ -106,7 +107,7 @@ export default function SchoolTermsPage() {
                   )}
 
                   {term.notes && (
-                    <p className="text-xs text-text-muted italic">📝 {term.notes}</p>
+                    <p className="text-xs text-text-muted italic flex items-center gap-1"><DynamicIcon emoji="📝" className="w-3 h-3 shrink-0" /> {term.notes}</p>
                   )}
                 </div>
               </div>
@@ -118,7 +119,7 @@ export default function SchoolTermsPage() {
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              🏖️ School Holidays — {selectedYear}
+              <DynamicIcon emoji="🏖️" className="w-4 h-4 text-sky-light inline-block mr-1.5" />School Holidays — {selectedYear}
             </h3>
           </div>
           <div className="divide-y divide-border">

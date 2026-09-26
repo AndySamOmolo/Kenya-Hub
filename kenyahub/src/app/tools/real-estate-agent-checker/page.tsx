@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -27,7 +28,7 @@ export default function RealEstateAgentCheckerPage() {
       <div className="space-y-6">
         {/* Warning Banner */}
         <div className="bg-kenya-red/10 border border-kenya-red/20 rounded-xl p-5 flex gap-4">
-          <span className="text-2xl mt-0.5">⚠️</span>
+          <DynamicIcon emoji="⚠️" className="w-6 h-6 text-gold mt-0.5 shrink-0" />
           <div>
             <h3 className="text-sm font-bold text-kenya-red-light mb-1">Warning: Real Estate Fraud is Common</h3>
             <p className="text-xs text-text-secondary leading-relaxed">Never pay money (viewing fees, deposits) to an agent you haven't verified. Always insist on seeing an official EARB registration certificate before engaging their services.</p>
@@ -55,11 +56,11 @@ export default function RealEstateAgentCheckerPage() {
 
         {/* Red Flags */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">🚩 Red Flags to Watch Out For</h2>
+          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4"><DynamicIcon emoji="🚩" className="w-5 h-5 text-kenya-red-light inline-block mr-2" />Red Flags to Watch Out For</h2>
           <div className="space-y-3">
             {agentData.redFlags.map((flag, i) => (
               <div key={i} className="flex gap-3 items-start border-b border-border/50 pb-3 last:border-0 last:pb-0">
-                <span className="text-kenya-red-light font-bold mt-0.5">✗</span>
+                <DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light font-bold mt-0.5 shrink-0" />
                 <div>
                   <p className="text-sm font-medium text-text-primary">{flag.flag}</p>
                   <p className="text-xs text-text-muted mt-0.5">{flag.risk}</p>
@@ -99,10 +100,10 @@ export default function RealEstateAgentCheckerPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5">
           <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">EARB Contact Information</h3>
           <div className="space-y-2 text-xs text-text-secondary">
-            <p>🏢 {agentData.earbInfo.address}</p>
-            <p>📞 {agentData.earbInfo.phone}</p>
-            <p>📧 {agentData.earbInfo.email}</p>
-            <p>🌐 <a href={agentData.earbInfo.website} target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">{agentData.earbInfo.website}</a></p>
+            <p className="flex items-center gap-2"><DynamicIcon emoji="🏢" className="w-3.5 h-3.5 text-gold shrink-0" /> {agentData.earbInfo.address}</p>
+            <p className="flex items-center gap-2"><DynamicIcon emoji="📞" className="w-3.5 h-3.5 text-gold shrink-0" /> {agentData.earbInfo.phone}</p>
+            <p className="flex items-center gap-2"><DynamicIcon emoji="📧" className="w-3.5 h-3.5 text-gold shrink-0" /> {agentData.earbInfo.email}</p>
+            <p className="flex items-center gap-2"><DynamicIcon emoji="🌐" className="w-3.5 h-3.5 text-gold shrink-0" /> <a href={agentData.earbInfo.website} target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">{agentData.earbInfo.website}</a></p>
           </div>
         </div>
       </div>

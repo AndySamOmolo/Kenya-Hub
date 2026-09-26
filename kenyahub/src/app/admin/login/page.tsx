@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { account } from "@/lib/appwrite";
 import { useRouter } from "next/navigation";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState("");
@@ -31,7 +32,7 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-md">
         <div className="bg-bg-card border border-border rounded-2xl p-8">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-2xl">🔐</span>
+            <DynamicIcon emoji="🔐" className="w-6 h-6 text-gold" />
             <h1 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary">
               Admin Login
             </h1>

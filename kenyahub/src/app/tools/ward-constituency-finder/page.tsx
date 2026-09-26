@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -104,7 +105,7 @@ export default function WardConstituencyFinderPage() {
 
         {!selectedCounty && (
           <div className="text-center py-12">
-            <p className="text-4xl mb-3">🗳️</p>
+            <div className="flex justify-center mb-3"><DynamicIcon emoji="🗳️" className="w-10 h-10 text-text-muted" /></div>
             <p className="text-text-secondary text-sm">Select a county above to see its constituencies, wards, and elected officials</p>
           </div>
         )}

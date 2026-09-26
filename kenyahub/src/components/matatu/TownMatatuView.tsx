@@ -1,6 +1,6 @@
 "use client";
 
-import { BusFront } from "lucide-react";
+import { BusFront, Check } from "lucide-react";
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
@@ -69,7 +69,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-3xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-          🚌 {townInfo.name} Matatu Routes
+          <BusFront className="w-8 h-8 text-gold flex-shrink-0 inline-block mr-2" />{townInfo.name} Matatu Routes
         </h1>
         <p className="text-text-muted text-sm">
           Browse {routes.length} verified matatu routes in {townInfo.name}. View stages, fares, and SACCO details.
@@ -145,7 +145,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
                 </div>
                 {r.verified && (
                   <span className="text-[0.6rem] bg-kenya-green/15 text-kenya-green-light px-2 py-0.5 rounded font-medium flex-shrink-0">
-                    ✓ Verified
+                    <Check className="w-3 h-3 inline-block mr-1" />Verified
                   </span>
                 )}
               </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import CustomSelect from "@/components/ui/CustomSelect";
 
 const CONTACT_EMAIL = "andysamonyango@gmail.com";
@@ -61,7 +62,7 @@ export default function ContactPage() {
         {/* Contact Info Sidebar */}
         <div className="space-y-4">
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-            <span className="text-2xl">✉️</span>
+            <DynamicIcon emoji="✉️" className="w-8 h-8 text-gold" />
             <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Direct Email</h3>
             <p className="text-xs text-text-muted">For general inquiries, editorial corrections, or media inquiries:</p>
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-xs font-semibold text-gold hover:underline block">
@@ -70,7 +71,7 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-            <span className="text-2xl">📢</span>
+            <DynamicIcon emoji="📢" className="w-8 h-8 text-gold" />
             <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Advertising &amp; Partnerships</h3>
             <p className="text-xs text-text-muted">Interested in reaching out to Kenyan digital audiences and decision-makers?</p>
             <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("[KenyaHub] Advertising Inquiry")}`} className="text-xs font-semibold text-gold hover:underline block">
@@ -79,7 +80,7 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-            <span className="text-2xl">🚩</span>
+            <DynamicIcon emoji="🚩" className="w-8 h-8 text-gold" />
             <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Report Data Errors</h3>
             <p className="text-xs text-text-muted">
               Did a tax rate or matatu fare change recently? Let us know so our verification team can update the tool.
@@ -92,7 +93,7 @@ export default function ContactPage() {
           {submitted ? (
             <div className="text-center py-12 space-y-4">
               <div className="w-16 h-16 rounded-full bg-kenya-green/15 text-kenya-green-light flex items-center justify-center text-3xl mx-auto">
-                ✓
+                <DynamicIcon emoji="✓" className="w-8 h-8" />
               </div>
               <h2 className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)]">Opening Your Email Client</h2>
               <p className="text-xs text-text-muted max-w-sm mx-auto">

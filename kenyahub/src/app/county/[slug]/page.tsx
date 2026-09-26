@@ -64,7 +64,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       {/* Elected Officials */}
       <section className="mb-10">
         <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 flex items-center gap-2">
-          <span className="text-xl">🏛️</span> County Leadership
+          <DynamicIcon emoji="🏛️" className="w-5 h-5 text-kenya-red-light" /> County Leadership
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="bg-bg-card border border-border rounded-xl p-5">
@@ -89,7 +89,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       {/* Statistics */}
       <section className="mb-10">
         <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 flex items-center gap-2">
-          <span className="text-xl">📈</span> Key Statistics
+          <DynamicIcon emoji="📈" className="w-5 h-5 text-gold" /> Key Statistics
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
@@ -110,7 +110,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       {/* Quick Links */}
       <section className="mb-10">
         <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 flex items-center gap-2">
-          <span className="text-xl">🔗</span> Quick Services
+          <DynamicIcon emoji="🔗" className="w-5 h-5 text-kenya-green-light" /> Quick Services
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {quickLinks.map((link, i) => {
@@ -135,7 +135,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       {/* Constituencies */}
       <section className="mb-10">
         <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 flex items-center gap-2">
-          <span className="text-xl">🗺️</span> Constituencies ({county.constituencies.length})
+          <DynamicIcon emoji="🗺️" className="w-5 h-5 text-sky-light" /> Constituencies ({county.constituencies.length})
         </h2>
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-border">

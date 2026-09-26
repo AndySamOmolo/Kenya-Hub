@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -169,7 +170,7 @@ export default function ChildGrowthSchedulePage() {
                   </>
                 ) : (
                   <p className="text-lg font-medium text-kenya-green-light mt-2">
-                    Routine KEPI schedule completed! 🎉
+                    Routine KEPI schedule completed! <DynamicIcon emoji="🎉" className="w-4 h-4 inline-block ml-1 text-gold" />
                   </p>
                 )}
               </div>
@@ -201,7 +202,7 @@ export default function ChildGrowthSchedulePage() {
                 {results.recentMilestone && (
                   <div className="mb-3">
                     <p className="text-xs text-kenya-green-light font-medium mb-1 flex items-center gap-1">
-                      <span>✓</span> Should be doing ({results.recentMilestone.ageMonths} mos):
+                      <DynamicIcon emoji="✓" className="w-3.5 h-3.5 text-kenya-green-light inline-block mr-1" /> Should be doing ({results.recentMilestone.ageMonths} mos):
                     </p>
                     <p className="text-xs text-text-secondary">{results.recentMilestone.milestone}</p>
                   </div>
@@ -254,7 +255,7 @@ export default function ChildGrowthSchedulePage() {
                               </span>
                               <span className="text-text-muted"> — {v.fullName}</span>
                               <p className="text-[0.625rem] text-text-secondary mt-0.5 ml-1">
-                                🛡️ {v.protectsAgainst} ({v.route})
+                                <DynamicIcon emoji="🛡️" className="w-3.5 h-3.5 inline-block mr-1 text-gold" />{v.protectsAgainst} ({v.route})
                               </p>
                             </div>
                           ))}

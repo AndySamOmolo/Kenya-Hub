@@ -67,7 +67,7 @@ export default function KenyaCustomsRestrictedItemsPage() {
           
           {filteredCategories.length === 0 && (
             <div className="text-center py-12 bg-bg-card border border-border rounded-xl">
-              <p className="text-4xl mb-3">🔍</p>
+              <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div>
               <p className="text-text-secondary text-sm">No items found matching your search</p>
             </div>
           )}

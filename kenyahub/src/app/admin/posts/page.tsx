@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { account, databases } from "@/lib/appwrite";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
@@ -53,14 +54,14 @@ export default function AdminPostsPage() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <header className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
         <div>
-          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            📝 Blog Posts
+          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2 flex items-center gap-2">
+            <DynamicIcon emoji="📝" className="w-6 h-6 text-gold" /> Blog Posts
           </h1>
           <p className="text-text-muted">Manage your blog content</p>
         </div>
         <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
-          <Link href="/admin/settings" className="btn-outline w-full sm:w-auto justify-center">
-            ⚙️ Settings
+          <Link href="/admin/settings" className="btn-outline w-full sm:w-auto justify-center flex items-center gap-2">
+            <DynamicIcon emoji="⚙️" className="w-4 h-4" /> Settings
           </Link>
           <Link href="/admin/posts/new" className="btn-primary w-full sm:w-auto justify-center">
             + New Post
@@ -70,7 +71,9 @@ export default function AdminPostsPage() {
 
       {posts.length === 0 ? (
         <div className="text-center py-16 bg-bg-card border border-border rounded-xl">
-          <p className="text-4xl mb-3">📝</p>
+          <div className="flex justify-center mb-3">
+            <DynamicIcon emoji="📝" className="w-10 h-10 text-text-muted" />
+          </div>
           <p className="text-text-secondary">No posts yet. Create your first post!</p>
         </div>
       ) : (

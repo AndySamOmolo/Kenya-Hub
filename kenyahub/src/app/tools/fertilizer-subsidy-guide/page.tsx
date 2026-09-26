@@ -1,4 +1,5 @@
 "use client";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/fertilizer-subsidy.json";
@@ -14,7 +15,7 @@ export default function FertilizerSubsidyGuidePage() {
       <div className="space-y-6">
         {/* Subsidy vs Market Price Comparison */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-          <div className="px-5 py-3 border-b border-border"><h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">💰 Subsidized vs Market Prices</h2></div>
+          <div className="px-5 py-3 border-b border-border"><h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]"><DynamicIcon emoji="💰" className="w-4 h-4 text-gold inline-block mr-1.5" />Subsidized vs Market Prices</h2></div>
           <div className="overflow-x-auto">
             <table className="w-full text-xs">
               <thead><tr className="border-b border-border">
@@ -54,7 +55,7 @@ export default function FertilizerSubsidyGuidePage() {
         </div>
         {/* Registration steps */}
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h2 className="text-sm font-bold text-text-primary mb-4 font-[family-name:var(--font-outfit)]">📋 How to Register for Subsidized Fertilizer</h2>
+          <h2 className="text-sm font-bold text-text-primary mb-4 font-[family-name:var(--font-outfit)]"><DynamicIcon emoji="📋" className="w-4 h-4 text-gold inline-block mr-1.5" />How to Register for Subsidized Fertilizer</h2>
           <ol className="space-y-3">
             {data.subsidyProgram.howToRegister.map((step, i) => (
               <li key={i} className="flex items-start gap-3 text-xs text-text-secondary">
@@ -66,12 +67,12 @@ export default function FertilizerSubsidyGuidePage() {
         </div>
         {/* Eligibility */}
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h2 className="text-sm font-bold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">✅ Eligibility Requirements</h2>
-          <ul className="space-y-2">{data.subsidyProgram.eligibility.map((e, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-kenya-green-light mt-0.5">✓</span>{e}</li>))}</ul>
+          <h2 className="text-sm font-bold text-text-primary mb-3 font-[family-name:var(--font-outfit)]"><DynamicIcon emoji="✅" className="w-4 h-4 text-kenya-green-light inline-block mr-1.5" />Eligibility Requirements</h2>
+          <ul className="space-y-2">{data.subsidyProgram.eligibility.map((e, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><DynamicIcon emoji="✓" className="w-3.5 h-3.5 text-kenya-green-light mt-0.5 flex-shrink-0" />{e}</li>))}</ul>
         </div>
         {/* Collection points */}
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h2 className="text-sm font-bold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">📍 NCPB Collection Points</h2>
+          <h2 className="text-sm font-bold text-text-primary mb-3 font-[family-name:var(--font-outfit)]"><DynamicIcon emoji="📍" className="w-4 h-4 text-kenya-red-light inline-block mr-1.5" />NCPB Collection Points</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
             {data.collectionPoints.map((cp) => (
               <div key={cp.county} className="bg-bg-elevated rounded-lg p-2 text-center">

@@ -84,8 +84,8 @@ export default function TrademarkCostKenyaPage() {
           <span className="text-sm text-text-secondary block mb-2">{currentIP.title} — Total KIPI Fees</span>
           <p className="text-3xl sm:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-kenya-green-light">{fmt(totalCost)}</p>
           <div className="flex flex-wrap gap-4 mt-4">
-            <span className="text-xs text-text-muted">⏱️ {currentIP.processingTime}</span>
-            <span className="text-xs text-text-muted">📅 {currentIP.validityPeriod}</span>
+            <span className="text-xs text-text-muted flex items-center gap-1"><DynamicIcon emoji="⏱️" className="w-3 h-3 text-gold shrink-0" /> {currentIP.processingTime}</span>
+            <span className="text-xs text-text-muted flex items-center gap-1"><DynamicIcon emoji="📅" className="w-3 h-3 text-gold shrink-0" /> {currentIP.validityPeriod}</span>
           </div>
         </div>
 
@@ -130,10 +130,10 @@ export default function TrademarkCostKenyaPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5">
           <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">KIPI Contact Information</h3>
           <div className="space-y-2 text-xs text-text-secondary">
-            <p>🏢 {trademarkData.kipiInfo.address}</p>
-            <p>📞 {trademarkData.kipiInfo.phone}</p>
-            <p>📧 {trademarkData.kipiInfo.email}</p>
-            <p>🌐 <a href={trademarkData.kipiInfo.website} target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">{trademarkData.kipiInfo.website}</a></p>
+            <p className="flex items-center gap-2"><DynamicIcon emoji="🏢" className="w-3.5 h-3.5 text-gold shrink-0" /> {trademarkData.kipiInfo.address}</p>
+            <p className="flex items-center gap-2"><DynamicIcon emoji="📞" className="w-3.5 h-3.5 text-gold shrink-0" /> {trademarkData.kipiInfo.phone}</p>
+            <p className="flex items-center gap-2"><DynamicIcon emoji="📧" className="w-3.5 h-3.5 text-gold shrink-0" /> {trademarkData.kipiInfo.email}</p>
+            <p className="flex items-center gap-2"><DynamicIcon emoji="🌐" className="w-3.5 h-3.5 text-gold shrink-0" /> <a href={trademarkData.kipiInfo.website} target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">{trademarkData.kipiInfo.website}</a></p>
           </div>
         </div>
 

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { account } from "@/lib/appwrite";
 import Link from "next/link";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function AdminDashboard() {
   const [user, setUser] = useState<string | null>(null);
@@ -43,8 +44,8 @@ export default function AdminDashboard() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <header className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
         <div>
-          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            📊 Admin Dashboard
+          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2 flex items-center gap-2">
+            <DynamicIcon emoji="📊" className="w-6 h-6 text-gold" /> Admin Dashboard
           </h1>
           <p className="text-text-muted">Manage your KenyaHub content</p>
         </div>
@@ -62,7 +63,7 @@ export default function AdminDashboard() {
           className="bg-bg-card border border-border rounded-xl p-6 hover:border-gold transition-colors"
         >
           <div className="flex items-center gap-3 mb-3">
-            <span className="text-2xl">📝</span>
+            <DynamicIcon emoji="📝" className="w-6 h-6 text-gold" />
             <h2 className="text-lg font-semibold text-text-primary">Blog Posts</h2>
           </div>
           <p className="text-sm text-text-secondary">

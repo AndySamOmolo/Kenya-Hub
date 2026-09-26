@@ -482,8 +482,16 @@ function WordleGame({ allWords, locale, languageName }: GameProps) {
               : "border border-red-400/30 bg-red-400/5"
           }`}
         >
-          <p className="text-lg font-bold text-text-primary">
-            {won ? "🎉 You got it!" : "😔 Better luck next time!"}
+          <p className="text-lg font-bold text-text-primary flex items-center justify-center gap-2">
+            {won ? (
+              <>
+                <DynamicIcon emoji="🎉" className="w-5 h-5 text-gold inline-block" /> You got it!
+              </>
+            ) : (
+              <>
+                <DynamicIcon emoji="😔" className="w-5 h-5 text-kenya-red-light inline-block" /> Better luck next time!
+              </>
+            )}
           </p>
           {!won && (
             <p className="mt-1 text-sm text-text-secondary">
@@ -733,7 +741,7 @@ function ScrambleGame({ allWords, locale, languageName }: GameProps) {
               onClick={handleHint}
               className="flex items-center gap-1.5 rounded-xl border border-gold/30 bg-gold/5 px-4 py-2.5 text-xs font-semibold text-gold transition-all active:bg-gold/10"
             >
-              💡 Hint
+              <DynamicIcon emoji="💡" className="w-3.5 h-3.5" /> Hint
             </button>
           </>
         )}
@@ -848,7 +856,7 @@ function SpeedMatchGame({ allWords, locale, languageName }: GameProps) {
   if (gameState === "ready") {
     return (
       <div className="flex flex-col items-center justify-center py-12 text-center">
-        <div className="text-5xl mb-4">⚡</div>
+        <div className="flex justify-center mb-4"><DynamicIcon emoji="⚡" className="w-14 h-14 text-gold" /></div>
         <h3 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary">
           Speed Match
         </h3>
@@ -857,9 +865,9 @@ function SpeedMatchGame({ allWords, locale, languageName }: GameProps) {
         </p>
         <button
           onClick={startGame}
-          className="mt-6 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
+          className="mt-6 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110 flex items-center gap-2 mx-auto"
         >
-          Start Game 🚀
+          <span>Start Game</span> <DynamicIcon emoji="🚀" className="w-4 h-4" />
         </button>
       </div>
     );
@@ -869,7 +877,7 @@ function SpeedMatchGame({ allWords, locale, languageName }: GameProps) {
     const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
     return (
       <div className="flex flex-col items-center py-8 text-center">
-        <div className="text-5xl mb-4 animate-bounce-in">🏆</div>
+        <div className="flex justify-center mb-4 animate-bounce-in"><DynamicIcon emoji="🏆" className="w-14 h-14 text-gold" /></div>
         <h3 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary">
           Time&apos;s Up!
         </h3>
@@ -1085,8 +1093,8 @@ function MemoryGame({ allWords, locale, languageName }: GameProps) {
 
     return (
       <div className="flex flex-col items-center py-8 text-center">
-        <div className="text-5xl mb-4 animate-bounce-in">
-          {stars === 3 ? "🏆" : stars === 2 ? "⭐" : "👍"}
+        <div className="flex justify-center mb-4 animate-bounce-in">
+          <DynamicIcon emoji={stars === 3 ? "🏆" : stars === 2 ? "⭐" : "👍"} className="w-14 h-14 text-gold" />
         </div>
         <h3 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary">
           All Matched!

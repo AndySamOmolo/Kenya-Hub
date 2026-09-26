@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -233,7 +234,7 @@ export default function KUCCPSCalculatorPage() {
 
         {!hasGrades && (
           <div className="text-center py-8 bg-bg-card border border-border rounded-xl">
-            <p className="text-3xl mb-3">🎯</p>
+            <div className="flex justify-center mb-3"><DynamicIcon emoji="🎯" className="w-8 h-8 text-gold" /></div>
             <p className="text-text-secondary text-sm">
               Enter your KCSE grades above to calculate cluster weights for all applicable university course clusters.
             </p>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export const metadata: Metadata = {
   title: "About Us — KenyaHub",
@@ -25,7 +26,7 @@ export default function AboutPage() {
       {/* Hero */}
       <div className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold text-xs font-semibold">
-          🇰🇪 Built for Kenya, Powered by Open Data
+          <DynamicIcon emoji="🇰🇪" className="w-3 h-3 inline-block mr-1" /> Built for Kenya, Powered by Open Data
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary tracking-tight">
           About <span className="gradient-text-kenya">KenyaHub</span>
@@ -38,7 +39,7 @@ export default function AboutPage() {
       {/* 5 Core Pillars */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl">💡</div>
+          <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><DynamicIcon emoji="💡" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">100% Free Access</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
             All tools on KenyaHub are completely free to use. No mandatory accounts, subscriptions, or paywalls required.
@@ -46,7 +47,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl">🏛️</div>
+          <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🏛️" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Official Government Data</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
             Our calculators and reference databases are directly modeled on published Kenyan government regulations, acts of parliament, and official agency reports.
@@ -54,7 +55,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-sky/10 flex items-center justify-center text-xl">🔒</div>
+          <div className="w-10 h-10 rounded-lg bg-sky/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🔒" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Privacy-First Architecture</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
             All calculations (such as PAYE salary figures or M-Pesa fees) execute locally in your web browser. Your confidential numbers are never transmitted to external servers.
@@ -62,7 +63,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-kenya-red/10 flex items-center justify-center text-xl">⚡</div>
+          <div className="w-10 h-10 rounded-lg bg-kenya-red/10 flex items-center justify-center text-xl"><DynamicIcon emoji="⚡" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Static & Fast Infrastructure</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
             Hosted on Cloudflare Pages static edge network to guarantee lightning-fast page loading even on low-speed 3G mobile data connections.
@@ -70,7 +71,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl">🌍</div>
+          <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🌍" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Localized for Kenya</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
             Built specifically for Kenyan economic, education, and transport realities — from KES currency formatting to CBC curriculum stages and Matatu SACCO routes.
@@ -78,7 +79,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl">🔍</div>
+          <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🔍" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Regular Data Updates</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
             We continuously audit tax brackets, EPRA fuel tariffs, KRA updates, and national exam scales so you always work with current information.
@@ -90,7 +91,7 @@ export default function AboutPage() {
       <div className="bg-bg-card border border-border rounded-2xl p-6 sm:p-8 space-y-6">
         <div>
           <h2 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            📊 Authoritative Data Sources
+            <DynamicIcon emoji="📊" className="w-5 h-5 inline-block mr-2" /> Authoritative Data Sources
           </h2>
           <p className="text-xs text-text-muted">
             KenyaHub synthesizes public domain records from accredited state institutions into intuitive interactive tools:
@@ -111,7 +112,7 @@ export default function AboutPage() {
       {/* Editorial Standards & Disclaimer */}
       <div className="bg-bg-card border border-border rounded-2xl p-6 sm:p-8 space-y-4">
         <h2 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-          ⚖️ Editorial Integrity & Professional Disclaimer
+          <DynamicIcon emoji="⚖️" className="w-5 h-5 inline-block mr-2" /> Editorial Integrity & Professional Disclaimer
         </h2>
         <p className="text-xs text-text-secondary leading-relaxed">
           While KenyaHub makes every effort to maintain absolute precision by cross-referencing published Gazette Notices and official publications, calculations provided on this site are for informational and educational purposes only. They do not constitute formal legal, tax, accounting, or professional financial advice. For official tax returns or legal compliance, consult a certified public accountant (CPA) or advocate of the High Court of Kenya.

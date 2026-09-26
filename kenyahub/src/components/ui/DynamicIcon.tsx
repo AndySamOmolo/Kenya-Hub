@@ -20,7 +20,8 @@ import {
   RefreshCw, Users2, Activity, UtensilsCrossed, Wind, Badge, AlertCircle, 
   HomeIcon, Hammer, BaggageClaim, Medal, Flame, Brain, Cherry, Coffee, 
   ShoppingCart, Ship, TrendingDown, ArrowRightLeft, Beef, Milk, CarFront, 
-  Beer, Wrench, TrafficCone
+  Beer, Wrench, TrafficCone,
+  Square, Star, Clock, Circle, ParkingSquare, Copyright, Info, Layers
 } from "lucide-react";
 
 interface DynamicIconProps {
@@ -199,14 +200,27 @@ const iconMap: Record<string, React.ElementType> = {
   "🏎": CarFront,
   "🍺": Beer,
   "🔧": Wrench,
-  "🚶": Footprints
+  "🚶": Footprints,
+  "™": BadgeCheck,
+  "©": Copyright,
+  "©️": Copyright,
+  "🟩": Square,
+  "🃏": Layers,
+  "⭐": Star,
+  "⏰": Clock,
+  "ℹ": Info,
+  "ℹ️": Info,
+  "🟢": Circle,
+  "🅿": ParkingSquare,
+  "🇰": MapPin,
+  "🇪": MapPin
 };
 
 export default function DynamicIcon({ emoji, className = "w-5 h-5" }: DynamicIconProps) {
   if (!emoji) return null;
 
   // Handle composite emojis like families or flags
-  if (emoji === "🇰🇪") {
+  if (emoji === "🇰🇪" || emoji.includes("🇰🇪")) {
     return <MapPin className={className} />;
   }
   if (emoji === "👨‍👩‍👧‍👦") {
@@ -216,8 +230,8 @@ export default function DynamicIcon({ emoji, className = "w-5 h-5" }: DynamicIco
   // If the emoji has invisible variation selectors, trim them or normalize
   const cleanEmoji = emoji.replace(/[\uFE0F]/g, '');
   
-  // Try to find an exact match first, then a cleaned match
-  const IconComponent = iconMap[emoji] || iconMap[cleanEmoji] || HelpCircle;
+  // Try to find an exact match first, then a cleaned match, graceful fallback to Sparkles
+  const IconComponent = iconMap[emoji] || iconMap[cleanEmoji] || Sparkles;
   
   return <IconComponent className={className} />;
 }

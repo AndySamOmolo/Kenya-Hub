@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Client, Databases, Query } from "node-appwrite";
 import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
@@ -67,8 +68,8 @@ export default async function BlogPage() {
       </nav>
 
       <header className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-          📝 Blog
+        <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2 flex items-center gap-2">
+          <DynamicIcon emoji="📝" className="w-8 h-8 text-gold" /> Blog
         </h1>
         <p className="text-text-muted">
           Articles and guides on Kenyan topics — tools, government services, education, and more.

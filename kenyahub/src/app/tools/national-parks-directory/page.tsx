@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -83,15 +84,15 @@ export default function NationalParksDirectoryPage() {
               </div>
 
               <div className="flex items-center justify-between text-xs">
-                <span className="text-text-muted">🗓️ Best: {park.bestSeason}</span>
-                <span className="text-text-muted">🏠 {park.accommodation}</span>
+                <span className="text-text-muted flex items-center gap-1"><DynamicIcon emoji="🗓️" className="w-3 h-3 text-gold flex-shrink-0" /> Best: {park.bestSeason}</span>
+                <span className="text-text-muted flex items-center gap-1"><DynamicIcon emoji="🏠" className="w-3 h-3 text-gold flex-shrink-0" /> {park.accommodation}</span>
               </div>
             </div>
           ))}
         </div>
 
         {filtered.length === 0 && (
-          <div className="text-center py-12"><p className="text-4xl mb-3">🔍</p><p className="text-text-secondary text-sm">No parks found matching your search</p></div>
+          <div className="text-center py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div><p className="text-text-secondary text-sm">No parks found matching your search</p></div>
         )}
 
         {/* Notes */}

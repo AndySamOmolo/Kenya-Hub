@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { Gamepad2, GraduationCap } from "lucide-react";
+import { Gamepad2, GraduationCap, HelpCircle, PartyPopper } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
 import LessonPlayer from "@/components/learn/LessonPlayer";
@@ -111,7 +111,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     return (
       <ToolShell tool={LEARN_TOOL}>
         <div className="flex min-h-[50vh] flex-col items-center justify-center px-4 text-center">
-          <div className="text-5xl mb-4">🤷</div>
+          <div className="flex justify-center mb-4"><HelpCircle className="w-14 h-14 text-text-muted" /></div>
           <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary">
             Course not found
           </h2>
@@ -147,8 +147,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       {showCompletionToast && (
         <div className="fixed inset-x-0 top-20 z-50 flex justify-center px-4 animate-in fade-in slide-in-from-top-3 duration-300">
           <div className="rounded-xl border border-gold/40 bg-bg-card px-5 py-3 shadow-lg shadow-gold/10">
-            <p className="text-sm font-semibold text-gold">
-              🎉 {showCompletionToast}
+            <p className="text-sm font-semibold text-gold flex items-center gap-1.5">
+              <PartyPopper className="w-4 h-4 text-gold shrink-0" /> {showCompletionToast}
             </p>
           </div>
         </div>

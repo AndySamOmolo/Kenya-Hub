@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -161,9 +162,9 @@ export default function KCSEGradeCalculatorPage() {
                         <td className="text-text-muted">{career.minGrade}</td>
                         <td className="text-right">
                           {qualifies ? (
-                            <span className="text-kenya-green-light font-semibold">✅ Eligible</span>
+                            <span className="text-kenya-green-light font-semibold inline-flex items-center gap-1"><DynamicIcon emoji="✅" className="w-3.5 h-3.5" /> Eligible</span>
                           ) : (
-                            <span className="text-text-muted">❌ Below minimum</span>
+                            <span className="text-text-muted inline-flex items-center gap-1"><DynamicIcon emoji="❌" className="w-3.5 h-3.5 text-kenya-red-light" /> Below minimum</span>
                           )}
                         </td>
                       </tr>

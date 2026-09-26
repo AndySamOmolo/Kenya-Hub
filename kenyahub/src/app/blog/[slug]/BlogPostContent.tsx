@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect, useCallback, useRef } from "react";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 interface BlogPost {
   $id: string;
@@ -58,7 +59,9 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
   if (!post) {
     return (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <p className="text-4xl mb-4">📄</p>
+        <div className="flex justify-center mb-4">
+          <DynamicIcon emoji="📄" className="w-12 h-12 text-text-muted" />
+        </div>
         <h1 className="text-2xl font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
           Post Not Found
         </h1>

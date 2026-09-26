@@ -5,6 +5,7 @@ import { account, databases, storage } from "@/lib/appwrite";
 import { ID } from "appwrite";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
@@ -143,8 +144,8 @@ export default function NewPostPage() {
     <div className="max-w-4xl mx-auto px-4 py-8">
       <header className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
         <div>
-          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-1">
-            ✍️ New Blog Post
+          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-1 flex items-center gap-2">
+            <DynamicIcon emoji="✍️" className="w-6 h-6 text-gold" /> New Blog Post
           </h1>
           <p className="text-text-muted text-sm">Create a new article for KenyaHub</p>
         </div>

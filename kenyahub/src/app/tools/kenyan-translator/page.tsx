@@ -424,7 +424,7 @@ export default function KenyanTranslatorPage() {
 
                 {searchResults.length === 0 && (
                   <div className="bg-bg-card border border-border rounded-xl p-8 text-center">
-                    <span className="text-3xl block mb-3">🔍</span>
+                    <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-8 h-8 text-text-muted" /></div>
                     <p className="text-sm font-medium text-text-primary mb-1">No translations found</p>
                     <p className="text-xs text-text-muted max-w-sm mx-auto">
                       Try a different word or browse categories below. This dictionary is growing — your word may be added soon!
@@ -461,7 +461,7 @@ export default function KenyanTranslatorPage() {
                             </div>
                           </div>
                           {result.entry.context && (
-                            <p className="text-[0.65rem] text-text-muted mt-2 bg-bg-elevated rounded-lg px-3 py-1.5">💡 {result.entry.context}</p>
+                            <p className="text-[0.65rem] text-text-muted mt-2 bg-bg-elevated rounded-lg px-3 py-1.5 flex items-start gap-1.5"><DynamicIcon emoji="💡" className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" /> <span>{result.entry.context}</span></p>
                           )}
                         </div>
                         <div className="flex flex-col gap-1 flex-shrink-0">

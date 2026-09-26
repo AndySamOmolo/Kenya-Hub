@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 interface RouteItem {
   routeNumber: string;
@@ -77,7 +78,7 @@ export default function MatatuPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
       {/* Hero */}
       <div className="relative mb-12 overflow-hidden rounded-2xl bg-gradient-to-br from-gold/10 via-kenya-green/5 to-kenya-red/5 border border-border p-8 sm:p-12">
-        <div className="absolute top-4 right-4 text-7xl opacity-10 rotate-12 select-none">🚌</div>
+        <DynamicIcon emoji="🚌" className="absolute top-4 right-4 w-28 h-28 opacity-10 rotate-12 select-none text-gold pointer-events-none" />
         <div className="relative z-10">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-[family-name:var(--font-outfit)] mb-3 gradient-text-kenya tracking-tight">
             Kenya Matatu Routes & Stages
@@ -136,7 +137,7 @@ export default function MatatuPage() {
                     href={`/matatu/${r.townSlug}/${r.slug}`}
                     className="flex items-center gap-3 px-4 py-3 hover:bg-bg-elevated transition-colors border-b border-border/50 last:border-0"
                   >
-                    <span className="text-lg">🚌</span>
+                    <DynamicIcon emoji="🚌" className="w-5 h-5 text-gold flex-shrink-0" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-semibold text-text-primary truncate">Route {r.routeNumber}: {r.name}</span>
@@ -164,13 +165,13 @@ export default function MatatuPage() {
         {matatuData.towns.map((town) => (
           town.isActive ? (
             <Link key={town.slug} href={`/matatu/${town.slug}`} className="bg-bg-card border border-gold/30 rounded-xl p-4 text-center group hover:border-gold transition-all hover:shadow-lg hover:shadow-gold/5">
-              <span className="text-3xl block mb-2">🚌</span>
+              <div className="flex justify-center mb-2"><DynamicIcon emoji="🚌" className="w-8 h-8 text-gold" /></div>
               <p className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{town.name}</p>
               <p className="text-[0.6rem] text-gold mt-1 font-semibold">{town.routeCount} routes</p>
             </Link>
           ) : (
             <div key={town.slug} className="bg-bg-card border border-border rounded-xl p-4 text-center opacity-50">
-              <span className="text-3xl block mb-2 grayscale">🚌</span>
+              <div className="flex justify-center mb-2 opacity-50"><DynamicIcon emoji="🚌" className="w-8 h-8 text-text-muted" /></div>
               <p className="text-sm font-bold text-text-muted">{town.name}</p>
               <p className="text-[0.6rem] text-text-muted mt-1">Coming soon</p>
             </div>

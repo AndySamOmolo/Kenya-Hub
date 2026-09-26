@@ -120,26 +120,13 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
   height: 5px;
   background:
     linear-gradient(
-      90deg,
-      #1A1108 0%, #1A1108 18%,
-      #BE2126 18%, #BE2126 36%,
-      #FFFFFF 36%, #FFFFFF 50%,
-      #FFFFFF 50%, #FFFFFF 64%,
-      #006B3F 64%, #006B3F 82%,
-      #1A1108 82%, #1A1108 100%
+      180deg,
+      #000000 0%, #000000 30%,
+      #FFFFFF 30%, #FFFFFF 35%,
+      #BE2126 35%, #BE2126 65%,
+      #FFFFFF 65%, #FFFFFF 70%,
+      #006B3F 70%, #006B3F 100%
     );
-  position: relative;
-}
-/* Shield accent dot in center */
-.kenya-stripe::after {
-  content: '';
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px; height: 10px;
-  background: #C8961E;
-  border-radius: 50%;
-  box-shadow: 0 0 6px rgba(200,150,30,0.5);
 }
 
 /* ══════════════════════════════════════════════════

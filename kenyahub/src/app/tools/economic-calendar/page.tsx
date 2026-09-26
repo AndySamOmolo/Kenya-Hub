@@ -57,11 +57,11 @@ export default function EconomicCalendarPage() {
                     </div>
                     <p className="text-xs text-text-secondary mt-1">{event.description}</p>
                     <div className="flex flex-wrap items-center gap-3 mt-2">
-                      <span className="text-[0.65rem] text-text-muted">🏛️ {event.agency}</span>
-                      <span className="text-[0.65rem] text-gold font-medium">📅 {event.typicalDate}</span>
+                      <span className="text-[0.65rem] text-text-muted flex items-center gap-1"><DynamicIcon emoji="🏛️" className="w-3 h-3" /> {event.agency}</span>
+                      <span className="text-[0.65rem] text-gold font-medium flex items-center gap-1"><DynamicIcon emoji="📅" className="w-3 h-3" /> {event.typicalDate}</span>
                     </div>
                     {event.url && (
-                      <a href={event.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-2 text-[0.65rem] text-sky-light hover:underline">🔗 {event.url.replace("https://", "")} →</a>
+                      <a href={event.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-2 text-[0.65rem] text-sky-light hover:underline"><DynamicIcon emoji="🔗" className="w-3 h-3" /> {event.url.replace("https://", "")} →</a>
                     )}
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export default function EconomicCalendarPage() {
             );
           })}
         </div>
-        {filtered.length === 0 && <div className="text-center py-12"><p className="text-4xl mb-3">📊</p><p className="text-text-secondary text-sm">No events match this filter</p></div>}
+        {filtered.length === 0 && <div className="text-center py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="📊" className="w-10 h-10 text-text-muted" /></div><p className="text-text-secondary text-sm">No events match this filter</p></div>}
         <div className="bg-bg-card border border-border rounded-xl p-5">
           <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About the Data</h3>
           <ul className="space-y-2">{data.notes.map((n, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>{n}</span></li>))}</ul>

@@ -16,6 +16,8 @@ import {
   Flame,
   Trophy,
   Target,
+  Crown,
+  Sparkles,
 } from "lucide-react";
 import type { CourseUnit, UserProgress, LanguageConfig } from "@/data/courses/types";
 import { MAX_SKILL_LEVEL, LEVELS, ACHIEVEMENTS, MAX_HEARTS } from "@/data/courses/types";
@@ -275,7 +277,7 @@ export default function SkillTree({
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
                   {unitMastered && (
-                    <span className="text-xs text-gold">👑</span>
+                    <Crown className="h-4 w-4 text-gold shrink-0" />
                   )}
                   {unitCompleted && !unitMastered && (
                     <Check className="h-4 w-4 text-kenya-green" />
@@ -379,9 +381,9 @@ export default function SkillTree({
                                   : "bg-bg-elevated text-text-muted cursor-not-allowed"
                               }`}
                             >
-                              {skillLevel >= MAX_SKILL_LEVEL
-                                ? "✨ Mastered"
-                                : skillLevel === 0
+                              {skillLevel >= MAX_SKILL_LEVEL ? (
+                                <span className="inline-flex items-center gap-1"><Sparkles className="h-3.5 w-3.5" /> Mastered</span>
+                              ) : skillLevel === 0
                                 ? "Start"
                                 : `Level ${nextLevel}`}
                             </button>

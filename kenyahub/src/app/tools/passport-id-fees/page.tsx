@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import feesData from "@/data/passport-id-fees.json";
@@ -39,7 +40,7 @@ export default function PassportIdFeesPage() {
         {/* Passports */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-4 border-b border-border bg-bg-elevated flex items-center gap-3">
-            <span className="text-2xl">🛂</span>
+            <DynamicIcon emoji="🛂" className="w-6 h-6 text-gold" />
             <div>
               <h3 className="text-base font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
                 Passport Fees
@@ -95,7 +96,7 @@ export default function PassportIdFeesPage() {
         {/* National ID */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-4 border-b border-border bg-bg-elevated flex items-center gap-3">
-            <span className="text-2xl">🪪</span>
+            <DynamicIcon emoji="🪪" className="w-6 h-6 text-gold" />
             <div>
               <h3 className="text-base font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
                 National ID Processing Fees

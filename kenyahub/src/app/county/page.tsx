@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import countiesData from "@/data/counties.json";
 import SearchInput from "@/components/ui/SearchInput";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function CountyIndexPage() {
   const [search, setSearch] = useState("");
@@ -96,7 +97,9 @@ export default function CountyIndexPage() {
 
       {filtered.length === 0 && (
         <div className="text-center py-16">
-          <p className="text-4xl mb-3">🔍</p>
+          <div className="flex justify-center mb-3">
+            <DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" />
+          </div>
           <p className="text-text-secondary text-sm">No counties found matching "{search}"</p>
         </div>
       )}

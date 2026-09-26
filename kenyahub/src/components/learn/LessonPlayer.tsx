@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState, useRef } from "react";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import {
   Check,
   ChevronRight,
@@ -359,8 +360,8 @@ export default function LessonPlayer({
       <div className="flex min-h-[70vh] flex-col items-center justify-center px-4">
         <div className="w-full max-w-md text-center">
           {/* Celebration emoji */}
-          <div className="mb-4 text-6xl sm:text-7xl animate-bounce">
-            {perfect ? "🏆" : accuracy >= 80 ? "⭐" : accuracy >= 50 ? "💪" : "📖"}
+          <div className="mb-4 flex justify-center animate-bounce">
+            <DynamicIcon emoji={perfect ? "🏆" : accuracy >= 80 ? "⭐" : accuracy >= 50 ? "💪" : "📖"} className="w-16 h-16 text-gold" />
           </div>
 
           <h2 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
@@ -394,8 +395,8 @@ export default function LessonPlayer({
 
           {perfect && (
             <div className="mt-4 rounded-xl border border-gold/30 bg-gold/10 p-3">
-              <p className="text-sm font-semibold text-gold">
-                🎉 +{XP_PERFECT_BONUS} XP Perfect Bonus!
+              <p className="text-sm font-semibold text-gold flex items-center justify-center gap-1.5">
+                <DynamicIcon emoji="🎉" className="w-4 h-4 text-gold shrink-0" /> +{XP_PERFECT_BONUS} XP Perfect Bonus!
               </p>
             </div>
           )}
@@ -416,7 +417,9 @@ export default function LessonPlayer({
     return (
       <div className="flex min-h-[60vh] flex-col items-center justify-center px-4">
         <div className="w-full max-w-md text-center">
-          <div className="mb-4 text-5xl">💔</div>
+          <div className="mb-4 flex justify-center">
+            <DynamicIcon emoji="💔" className="w-16 h-16 text-kenya-red-light" />
+          </div>
           <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary">
             Out of Hearts
           </h2>
@@ -634,8 +637,9 @@ export default function LessonPlayer({
                 </button>
               )}
               {showHint && exercise.hint && (
-                <p className="mt-2 rounded-lg bg-gold/5 px-3 py-2 text-xs text-gold">
-                  💡 {exercise.hint}
+                <p className="mt-2 rounded-lg bg-gold/5 px-3 py-2 text-xs text-gold flex items-start gap-1.5">
+                  <DynamicIcon emoji="💡" className="w-3.5 h-3.5 mt-0.5 text-gold flex-shrink-0" />
+                  <span>{exercise.hint}</span>
                 </p>
               )}
             </div>

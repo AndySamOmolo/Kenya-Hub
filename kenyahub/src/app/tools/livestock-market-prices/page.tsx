@@ -41,7 +41,7 @@ export default function LivestockPricesPage() {
             <div key={m.name} className="bg-bg-card border border-border rounded-lg p-3">
               <p className="text-xs font-semibold text-text-primary">{m.name}</p>
               <p className="text-[0.6rem] text-text-muted">{m.county} · {m.type}</p>
-              <p className="text-[0.6rem] text-gold mt-1">📅 {m.marketDays}</p>
+              <p className="text-[0.6rem] text-gold mt-1 flex items-center gap-1"><DynamicIcon emoji="📅" className="w-3 h-3 flex-shrink-0" /> {m.marketDays}</p>
             </div>
           ))}
         </div>

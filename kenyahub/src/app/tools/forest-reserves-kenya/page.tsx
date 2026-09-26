@@ -1,4 +1,5 @@
 "use client";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -33,7 +34,7 @@ export default function ForestReservesPage() {
           </div>
           <label className="flex items-center gap-2 cursor-pointer">
             <input type="checkbox" checked={hikingOnly} onChange={(e) => setHikingOnly(e.target.checked)} className="rounded" />
-            <span className="text-xs text-text-secondary">🥾 Show hiking-accessible only</span>
+            <span className="text-xs text-text-secondary"><DynamicIcon emoji="🥾" className="w-3.5 h-3.5 text-gold inline-block mr-1" />Show hiking-accessible only</span>
           </label>
         </div>
         <p className="text-xs text-text-muted">{filtered.length} forests · Total area: {filtered.reduce((s, f) => s + f.sizeHa, 0).toLocaleString()} hectares</p>
@@ -42,24 +43,24 @@ export default function ForestReservesPage() {
             <div key={f.name} className="bg-bg-card border border-border rounded-xl p-5">
               <div className="flex items-start justify-between gap-3 mb-3">
                 <div>
-                  <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">🌲 {f.name}</h3>
-                  <p className="text-xs text-text-muted mt-0.5">📍 {f.county}</p>
+                  <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)] flex items-center gap-1.5"><DynamicIcon emoji="🌲" className="w-4 h-4 text-kenya-green-light flex-shrink-0" /> {f.name}</h3>
+                  <p className="text-xs text-text-muted mt-0.5 flex items-center gap-1"><DynamicIcon emoji="📍" className="w-3 h-3 text-gold flex-shrink-0" /> {f.county}</p>
                 </div>
                 <div className="flex gap-1.5 flex-shrink-0">
                   <span className="text-[0.6rem] bg-bg-elevated border border-border px-2 py-0.5 rounded text-text-muted">{f.ecosystem}</span>
-                  {f.hiking && <span className="text-[0.6rem] bg-kenya-green/15 text-kenya-green-light px-2 py-0.5 rounded">🥾 Hiking</span>}
+                  {f.hiking && <span className="text-[0.6rem] bg-kenya-green/15 text-kenya-green-light px-2 py-0.5 rounded inline-flex items-center gap-1"><DynamicIcon emoji="🥾" className="w-3 h-3" /> Hiking</span>}
                   {f.gazetted && <span className="text-[0.6rem] bg-gold/15 text-gold px-2 py-0.5 rounded">Gazetted</span>}
                 </div>
               </div>
               <p className="text-xs text-text-secondary leading-relaxed mb-3">{f.biodiversity}</p>
               <div className="flex items-center gap-4">
-                <span className="text-xs text-text-muted">📐 <span className="font-semibold text-text-primary">{f.sizeHa.toLocaleString()} ha</span></span>
+                <span className="text-xs text-text-muted flex items-center gap-1"><DynamicIcon emoji="📐" className="w-3.5 h-3.5 text-gold flex-shrink-0" /> <span className="font-semibold text-text-primary">{f.sizeHa.toLocaleString()} ha</span></span>
                 <span className="text-xs text-text-muted">({(f.sizeHa / 100).toFixed(0)} km²)</span>
               </div>
             </div>
           ))}
         </div>
-        {filtered.length === 0 && <div className="text-center py-12"><p className="text-4xl mb-3">🌲</p><p className="text-text-secondary text-sm">No forests found</p></div>}
+        {filtered.length === 0 && <div className="text-center py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🌲" className="w-10 h-10 text-kenya-green-light" /></div><p className="text-text-secondary text-sm">No forests found</p></div>}
         <div className="bg-bg-card border border-border rounded-xl p-5">
           <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About the Data</h3>
           <ul className="space-y-2">{data.notes.map((n, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>{n}</span></li>))}</ul>

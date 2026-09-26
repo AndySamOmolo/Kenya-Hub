@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -83,7 +84,7 @@ export default function NHIFHospitalFinderPage() {
                   <td><span className={`font-bold ${levelColor(h.level)}`}>{h.level}</span></td>
                   <td className="text-text-secondary">{h.type}</td>
                   <td className="text-text-muted">{h.county}</td>
-                  <td className="text-center">{h.nhifAccredited ? <span className="text-kenya-green-light">✓</span> : <span className="text-kenya-red-light">✗</span>}</td>
+                  <td className="text-center">{h.nhifAccredited ? <DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /> : <DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" />}</td>
                 </tr>
               ))}
             </tbody>
@@ -91,7 +92,7 @@ export default function NHIFHospitalFinderPage() {
         </div>
 
         {filtered.length === 0 && (
-          <div className="text-center py-12"><p className="text-4xl mb-3">🔍</p><p className="text-text-secondary text-sm">No hospitals found matching your search</p></div>
+          <div className="text-center py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div><p className="text-text-secondary text-sm">No hospitals found matching your search</p></div>
         )}
 
         {/* Hospital levels reference */}

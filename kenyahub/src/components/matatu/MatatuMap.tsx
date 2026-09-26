@@ -117,7 +117,7 @@ export default function MatatuMap({ stages, routeName, routeNumber }: MatatuMapP
         const popupContent = `
           <div style="font-family: sans-serif; font-size: 12px; color: #111;">
             <strong style="color: #BE2126;">Stage ${stage.order}: ${stage.name}</strong><br/>
-            <span style="font-size: 11px; color: #555;">${isTerminusA ? "🏁 Start Terminus" : isTerminusB ? "🎯 End Terminus" : "🚏 Waypoint Stage"}</span><br/>
+            <span style="font-size: 11px; color: #555;">${isTerminusA ? "Start Terminus" : isTerminusB ? "End Terminus" : "Waypoint Stage"}</span><br/>
             <span style="font-size: 10px; color: #888;">Route ${routeNumber} • ${routeName}</span>
           </div>
         `;

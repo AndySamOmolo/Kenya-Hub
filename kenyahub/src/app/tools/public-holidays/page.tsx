@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -107,7 +108,7 @@ export default function PublicHolidaysPage() {
             ))}
           </div>
           <button onClick={downloadICS} className="btn-outline text-xs flex items-center gap-1">
-            📥 Download .ics Calendar
+            <DynamicIcon emoji="📥" className="w-4 h-4 inline-block mr-1.5" />Download .ics Calendar
           </button>
         </div>
 
@@ -149,7 +150,7 @@ export default function PublicHolidaysPage() {
                 </div>
                 <div className="text-right flex-shrink-0">
                   {isToday ? (
-                    <span className="text-sm font-semibold text-gold">🎉 Today!</span>
+                    <span className="text-sm font-semibold text-gold inline-flex items-center gap-1"><DynamicIcon emoji="🎉" className="w-4 h-4" /> Today!</span>
                   ) : isPast ? (
                     <span className="text-xs text-text-muted">Passed</span>
                   ) : (

@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
@@ -137,7 +138,7 @@ export default function LearnPage() {
       <div className="mx-auto max-w-3xl px-4 pb-8">
         {/* Hero */}
         <div className="mb-6 rounded-2xl border border-border bg-gradient-to-br from-bg-card via-bg-card to-gold/5 p-6 text-center sm:p-8">
-          <div className="mb-3 text-5xl">🗣️</div>
+          <div className="flex justify-center mb-3"><DynamicIcon emoji="🗣️" className="w-12 h-12 text-gold" /></div>
           <h2 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
             Learn a Kenyan Language
           </h2>
@@ -262,7 +263,7 @@ export default function LearnPage() {
         {/* Data contribution CTA */}
         <div className="mt-8 rounded-xl border border-border bg-bg-card p-5 text-center">
           <p className="text-sm font-semibold text-text-primary">
-            🤝 Help us grow
+            <DynamicIcon emoji="🤝" className="w-4 h-4 text-gold inline-block mr-1.5" />Help us grow
           </p>
           <p className="mt-1 text-xs text-text-secondary">
             Know a Kenyan language? We&apos;d love your help adding vocabulary,

@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -28,7 +29,7 @@ function findSavingTip(amount: number, type: TransactionType): string | null {
     // If the amount falls in the start of a higher-fee band
     if (amount >= nextBand.min && amount <= nextBand.min + 100) {
       if (currentBand.fee < nextBand.fee) {
-        return `💡 Sending KES ${currentBand.max.toLocaleString()} instead of KES ${amount.toLocaleString()} would save you KES ${(nextBand.fee - currentBand.fee).toLocaleString()} in fees (same band boundary).`;
+        return `Sending KES ${currentBand.max.toLocaleString()} instead of KES ${amount.toLocaleString()} would save you KES ${(nextBand.fee - currentBand.fee).toLocaleString()} in fees (same band boundary).`;
       }
     }
   }
@@ -149,7 +150,7 @@ export default function MpesaFeeCalculatorPage() {
         {/* Saving Tip */}
         {results.savingTip && (
           <div className="bg-gold/10 border border-gold/30 rounded-xl p-4">
-            <p className="text-sm text-gold-light">{results.savingTip}</p>
+            <div className="flex items-start gap-2"><DynamicIcon emoji="💡" className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" /><p className="text-sm text-gold-light">{results.savingTip}</p></div>
           </div>
         )}
 

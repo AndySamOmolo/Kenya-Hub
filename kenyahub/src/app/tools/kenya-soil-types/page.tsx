@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -52,13 +53,13 @@ export default function KenyaSoilTypesPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <p className="text-[0.65rem] font-semibold text-text-muted mb-1.5">📍 Where Found</p>
+                    <p className="text-[0.65rem] font-semibold text-text-muted mb-1.5 flex items-center gap-1"><DynamicIcon emoji="📍" className="w-3.5 h-3.5 text-gold" /> Where Found</p>
                     <div className="flex flex-wrap gap-1">
                       {soil.counties.map((c) => (<span key={c} className="text-[0.6rem] bg-bg-elevated border border-border px-2 py-0.5 rounded text-text-secondary">{c}</span>))}
                     </div>
                   </div>
                   <div>
-                    <p className="text-[0.65rem] font-semibold text-text-muted mb-1.5">🌾 Best Crops</p>
+                    <p className="text-[0.65rem] font-semibold text-text-muted mb-1.5 flex items-center gap-1"><DynamicIcon emoji="🌾" className="w-3.5 h-3.5 text-kenya-green-light" /> Best Crops</p>
                     <div className="flex flex-wrap gap-1">
                       {soil.bestCrops.map((c) => (<span key={c} className="text-[0.6rem] bg-kenya-green/10 text-kenya-green-light px-2 py-0.5 rounded">{c}</span>))}
                     </div>
@@ -66,14 +67,14 @@ export default function KenyaSoilTypesPage() {
                 </div>
 
                 <div>
-                  <p className="text-[0.65rem] font-semibold text-text-muted mb-1.5">⚠️ Common Deficiencies</p>
+                  <p className="text-[0.65rem] font-semibold text-text-muted mb-1.5 flex items-center gap-1"><DynamicIcon emoji="⚠️" className="w-3.5 h-3.5 text-kenya-red-light" /> Common Deficiencies</p>
                   <ul className="space-y-1">
                     {soil.deficiencies.map((d, i) => (<li key={i} className="text-xs text-text-secondary flex items-start gap-2"><span className="text-kenya-red-light mt-0.5">•</span>{d}</li>))}
                   </ul>
                 </div>
 
                 <div>
-                  <p className="text-[0.65rem] font-semibold text-text-muted mb-1.5">✅ How to Improve</p>
+                  <p className="text-[0.65rem] font-semibold text-text-muted mb-1.5 flex items-center gap-1"><DynamicIcon emoji="✅" className="w-3.5 h-3.5 text-kenya-green-light" /> How to Improve</p>
                   <ul className="space-y-1">
                     {soil.improvement.map((tip, i) => (<li key={i} className="text-xs text-text-secondary flex items-start gap-2"><span className="text-kenya-green-light mt-0.5">•</span>{tip}</li>))}
                   </ul>

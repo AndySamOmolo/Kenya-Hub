@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { account } from "@/lib/appwrite";
 import Link from "next/link";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function AdminSettingsPage() {
   const [user, setUser] = useState<string | null>(null);
@@ -87,8 +88,8 @@ export default function AdminSettingsPage() {
     <div className="max-w-md mx-auto px-4 py-8">
       <header className="mb-8">
         <div className="flex items-center justify-between mb-2">
-          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-            ⚙️ Settings
+          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+            <DynamicIcon emoji="⚙️" className="w-6 h-6 text-gold" /> Settings
           </h1>
           <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light">
             ← Back to Posts

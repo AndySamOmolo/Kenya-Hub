@@ -1,4 +1,5 @@
 "use client";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -108,10 +109,10 @@ export default function KcseSchoolRankingsPage() {
             </table>
           </div>
         </div>
-        {filtered.length === 0 && <div className="text-center py-12"><p className="text-4xl mb-3">🏆</p><p className="text-text-secondary text-sm">No schools found</p></div>}
+        {filtered.length === 0 && <div className="text-center py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🏆" className="w-10 h-10 text-gold" /></div><p className="text-text-secondary text-sm">No schools found</p></div>}
         {/* Grade distribution */}
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-bold text-text-primary mb-4 font-[family-name:var(--font-outfit)]">📊 National Grade Distribution ({data.year})</h3>
+          <h3 className="text-sm font-bold text-text-primary mb-4 font-[family-name:var(--font-outfit)]"><DynamicIcon emoji="📊" className="w-4 h-4 text-gold inline-block mr-1.5" />National Grade Distribution ({data.year})</h3>
           <div className="space-y-2">
             {Object.entries(data.gradeDistribution).map(([grade, pct]) => (
               <div key={grade} className="flex items-center gap-3">

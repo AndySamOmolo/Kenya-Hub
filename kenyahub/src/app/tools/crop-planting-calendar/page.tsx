@@ -112,7 +112,7 @@ export default function CropPlantingCalendarPage() {
                           return (
                             <div key={m} className={`flex flex-col items-center justify-center p-1.5 rounded text-center ${isLRPlant || isSRPlant ? "bg-kenya-green/30 border border-kenya-green/40" : isLRHarvest || isSRHarvest ? "bg-gold/20 border border-gold/30" : monthColors[i]}`}>
                               <span className="text-[0.55rem] uppercase opacity-80">{m}</span>
-                              {isActive && <span className="text-[0.6rem] mt-0.5">{(isLRPlant || isSRPlant) ? "🌱" : "🌾"}</span>}
+                              {isActive && <span className="mt-0.5"><DynamicIcon emoji={(isLRPlant || isSRPlant) ? "🌱" : "🌾"} className="w-3 h-3 text-gold" /></span>}
                             </div>
                           );
                         })}
@@ -122,14 +122,14 @@ export default function CropPlantingCalendarPage() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {seasonData && 'longRains' in seasonData && seasonData.longRains && (
                           <div className="bg-kenya-green/5 border border-kenya-green/20 rounded-lg p-3">
-                            <p className="text-[0.65rem] font-semibold text-kenya-green-light mb-1">🌧️ Long Rains (Mar–May)</p>
+                            <p className="text-[0.65rem] font-semibold text-kenya-green-light mb-1 flex items-center gap-1"><DynamicIcon emoji="🌧️" className="w-3.5 h-3.5" /> Long Rains (Mar–May)</p>
                             <p className="text-xs text-text-secondary">Plant: <span className="font-medium text-text-primary">{seasonData.longRains.plant}</span></p>
                             <p className="text-xs text-text-secondary">Harvest: <span className="font-medium text-text-primary">{seasonData.longRains.harvest}</span></p>
                           </div>
                         )}
                         {seasonData && 'shortRains' in seasonData && seasonData.shortRains && (
                           <div className="bg-sky/5 border border-sky/20 rounded-lg p-3">
-                            <p className="text-[0.65rem] font-semibold text-sky-light mb-1">🌦️ Short Rains (Oct–Dec)</p>
+                            <p className="text-[0.65rem] font-semibold text-sky-light mb-1 flex items-center gap-1"><DynamicIcon emoji="🌦️" className="w-3.5 h-3.5" /> Short Rains (Oct–Dec)</p>
                             <p className="text-xs text-text-secondary">Plant: <span className="font-medium text-text-primary">{seasonData.shortRains.plant}</span></p>
                             <p className="text-xs text-text-secondary">Harvest: <span className="font-medium text-text-primary">{seasonData.shortRains.harvest}</span></p>
                           </div>
@@ -138,7 +138,7 @@ export default function CropPlantingCalendarPage() {
                     </div>
                   ) : (
                     <div className="bg-bg-elevated rounded-lg p-3 text-center">
-                      <p className="text-xs text-text-muted">❌ Not typically grown in this region</p>
+                      <p className="text-xs text-text-muted flex items-center gap-1"><DynamicIcon emoji="❌" className="w-3.5 h-3.5 text-kenya-red-light" /> Not typically grown in this region</p>
                     </div>
                   )}
 
@@ -175,7 +175,7 @@ export default function CropPlantingCalendarPage() {
                   )}
 
                   <details className="mt-3 group">
-                    <summary className="text-xs font-medium text-gold cursor-pointer hover:underline">💡 Farming Tips</summary>
+                    <summary className="text-xs font-medium text-gold cursor-pointer hover:underline flex items-center gap-1"><DynamicIcon emoji="💡" className="w-3.5 h-3.5" /> Farming Tips</summary>
                     <ul className="mt-2 space-y-1">
                       {crop.tips.map((tip, i) => (
                         <li key={i} className="text-xs text-text-secondary flex items-start gap-2"><span className="text-gold mt-0.5">•</span>{tip}</li>
@@ -190,8 +190,8 @@ export default function CropPlantingCalendarPage() {
 
         {/* Legend */}
         <div className="flex flex-wrap gap-4 text-xs text-text-muted">
-          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-kenya-green/30 border border-kenya-green/40"></span> Planting 🌱</span>
-          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-gold/20 border border-gold/30"></span> Harvesting 🌾</span>
+          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-kenya-green/30 border border-kenya-green/40"></span> Planting <DynamicIcon emoji="🌱" className="w-3 h-3 inline-block" /></span>
+          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-gold/20 border border-gold/30"></span> Harvesting <DynamicIcon emoji="🌾" className="w-3 h-3 inline-block" /></span>
         </div>
 
         {/* Notes */}

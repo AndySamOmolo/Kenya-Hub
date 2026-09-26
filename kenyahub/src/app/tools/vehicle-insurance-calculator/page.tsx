@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -155,33 +156,33 @@ export default function VehicleInsuranceCalculatorPage() {
             <tbody>
               <tr>
                 <td className="text-text-secondary">Third party injury/death</td>
-                <td className="text-center text-kenya-green-light">✓</td>
-                <td className="text-center text-kenya-green-light">✓</td>
+                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
               </tr>
               <tr>
                 <td className="text-text-secondary">Third party property damage</td>
-                <td className="text-center text-kenya-green-light">✓</td>
-                <td className="text-center text-kenya-green-light">✓</td>
+                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
               </tr>
               <tr>
                 <td className="text-text-secondary">Own vehicle damage</td>
-                <td className="text-center text-kenya-red-light">✗</td>
-                <td className="text-center text-kenya-green-light">✓</td>
+                <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
+                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
               </tr>
               <tr>
                 <td className="text-text-secondary">Theft protection</td>
-                <td className="text-center text-kenya-red-light">✗</td>
-                <td className="text-center text-kenya-green-light">✓</td>
+                <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
+                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
               </tr>
               <tr>
                 <td className="text-text-secondary">Fire damage</td>
-                <td className="text-center text-kenya-red-light">✗</td>
-                <td className="text-center text-kenya-green-light">✓</td>
+                <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
+                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
               </tr>
               <tr>
                 <td className="text-text-secondary">Windscreen cover</td>
-                <td className="text-center text-kenya-red-light">✗</td>
-                <td className="text-center text-kenya-green-light">✓</td>
+                <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
+                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
               </tr>
             </tbody>
           </table>

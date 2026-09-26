@@ -1,6 +1,6 @@
 "use client";
 
-import { BusFront, Home, Edit3, Landmark, Mail, Wrench } from "lucide-react";
+import { BusFront, Home, Edit3, Landmark, Mail, Wrench, Info } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
@@ -59,7 +59,7 @@ export default function Navbar() {
                 {toolsOpen && (
                   <div className="absolute top-full right-0 pt-2 w-[720px] animate-fade-in-up z-50">
                     <div className="rounded-2xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/30 p-6">
-                    <div className="maasai-border-top rounded-2xl" />
+                    <div className="maasai-border-top rounded-2xl mb-3" />
 
                     <div className="grid grid-cols-3 gap-x-6 gap-y-4 pt-1 max-h-[60vh] overflow-y-auto pr-2">
                       {TOOL_CATEGORIES.map((cat) => {
@@ -214,7 +214,7 @@ export default function Navbar() {
                 <Landmark className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> Counties
               </Link>
               <Link href="/about" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 text-center text-base">ℹ️</span> About Us
+                <Info className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> About Us
               </Link>
               <Link href="/contact" className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
                 <Mail className="w-5 h-5 mx-auto text-text-muted group-hover:text-gold transition-colors" /> Contact

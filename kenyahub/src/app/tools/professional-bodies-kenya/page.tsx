@@ -1,4 +1,5 @@
 "use client";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -34,7 +35,7 @@ export default function ProfessionalBodiesPage() {
                       <h3 className="text-sm font-bold text-text-primary">{b.name}</h3>
                       <span className="text-[0.65rem] bg-gold/15 text-gold px-2 py-0.5 rounded font-bold">{b.abbreviation}</span>
                     </div>
-                    <p className="text-xs text-text-muted mt-1">👤 {b.profession}</p>
+                    <p className="text-xs text-text-muted mt-1 flex items-center gap-1"><DynamicIcon emoji="👤" className="w-3.5 h-3.5 text-gold flex-shrink-0" /> {b.profession}</p>
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
@@ -52,21 +53,21 @@ export default function ProfessionalBodiesPage() {
                   </div>
                 </div>
                 <details className="group">
-                  <summary className="text-xs font-medium text-gold cursor-pointer hover:underline">📋 Registration Requirements</summary>
+                  <summary className="text-xs font-medium text-gold cursor-pointer hover:underline flex items-center gap-1"><DynamicIcon emoji="📋" className="w-3.5 h-3.5 flex-shrink-0" /> Registration Requirements</summary>
                   <ul className="mt-2 space-y-1">
-                    {b.requirements.map((r, i) => (<li key={i} className="text-xs text-text-secondary flex items-start gap-2"><span className="text-kenya-green-light mt-0.5">✓</span>{r}</li>))}
+                    {b.requirements.map((r, i) => (<li key={i} className="text-xs text-text-secondary flex items-start gap-2"><DynamicIcon emoji="✓" className="w-3.5 h-3.5 text-kenya-green-light mt-0.5 flex-shrink-0" />{r}</li>))}
                   </ul>
                 </details>
                 {b.verificationUrl && (
                   <a href={b.verificationUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-3 text-xs font-medium text-kenya-green-light hover:underline">
-                    🔍 Verify a {b.profession.split(" / ")[0]} →
+                    <DynamicIcon emoji="🔍" className="w-3.5 h-3.5 text-gold inline-block mr-1" />Verify a {b.profession.split(" / ")[0]} →
                   </a>
                 )}
               </div>
             </div>
           ))}
         </div>
-        {filtered.length === 0 && <div className="text-center py-12"><p className="text-4xl mb-3">🔍</p><p className="text-text-secondary text-sm">No professional bodies found for &quot;{search}&quot;</p></div>}
+        {filtered.length === 0 && <div className="text-center py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div><p className="text-text-secondary text-sm">No professional bodies found for &quot;{search}&quot;</p></div>}
         <div className="bg-bg-card border border-border rounded-xl p-5">
           <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About the Data</h3>
           <ul className="space-y-2">{data.notes.map((n, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>{n}</span></li>))}</ul>

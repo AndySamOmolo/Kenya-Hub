@@ -1,5 +1,6 @@
 "use client";
 
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -135,7 +136,7 @@ export default function MobilePrefixPage() {
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              🚨 Kenya Emergency Numbers
+              <DynamicIcon emoji="🚨" className="w-4 h-4 text-kenya-red-light inline-block mr-1.5" />Kenya Emergency Numbers
             </h3>
           </div>
           <table className="data-table">

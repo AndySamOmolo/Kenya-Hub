@@ -1,4 +1,5 @@
 "use client";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -30,7 +31,7 @@ export default function KenyaLanguagesPage() {
           {data.officialLanguages.map((ol) => (
             <div key={ol.language} className="bg-bg-card border border-gold/30 rounded-xl p-4">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-lg">🏛️</span>
+                <DynamicIcon emoji="🏛️" className="w-5 h-5 text-gold" />
                 <h3 className="text-sm font-bold text-text-primary">{ol.language}</h3>
                 <span className="text-[0.6rem] bg-gold/15 text-gold px-2 py-0.5 rounded">{ol.status}</span>
               </div>

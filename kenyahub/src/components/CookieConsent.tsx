@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Cookie } from "lucide-react";
 
 declare global {
   interface Window {
@@ -80,7 +81,7 @@ export default function CookieConsent() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1 min-w-0">
             <p className="text-sm font-semibold text-text-primary mb-1 font-[family-name:var(--font-outfit)]">
-              🍪 Cookie Consent
+              <Cookie className="w-4 h-4 inline-block mr-1.5 text-gold align-text-bottom" />Cookie Consent
             </p>
             <p className="text-xs text-text-secondary leading-relaxed">
               KenyaHub uses cookies for ads personalisation and site analytics.

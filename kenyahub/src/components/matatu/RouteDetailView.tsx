@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import matatuData from "@/data/matatu-routes.json";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 // Dynamic import for Leaflet map component (CSR only)
 const MatatuMap = dynamic(() => import("@/components/matatu/MatatuMap"), {
@@ -63,8 +64,8 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               Route {route.routeNumber}
             </span>
             {route.verified && (
-              <span className="text-xs bg-kenya-green/15 text-kenya-green-light px-2.5 py-0.5 rounded font-semibold">
-                ✓ Verified Route
+              <span className="text-xs bg-kenya-green/15 text-kenya-green-light px-2.5 py-0.5 rounded font-semibold inline-flex items-center gap-1">
+                <DynamicIcon emoji="✓" className="w-3 h-3" /> Verified Route
               </span>
             )}
           </div>
@@ -80,7 +81,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
         <div className="bg-bg-elevated border border-border rounded-xl p-4 text-center md:text-right">
           <p className="text-[0.65rem] uppercase tracking-wider text-text-muted mb-0.5">Typical Fare</p>
           <p className="text-2xl font-black text-gold">KES {route.fareMin} – {route.fareMax}</p>
-          <p className="text-[0.65rem] text-text-muted mt-0.5">⏰ {route.operatingHours}</p>
+          <p className="text-[0.65rem] text-text-muted mt-0.5 flex items-center justify-center md:justify-end gap-1"><DynamicIcon emoji="⏰" className="w-3 h-3" /> {route.operatingHours}</p>
         </div>
       </div>
 
@@ -90,8 +91,8 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
         <div className="lg:col-span-2 space-y-6">
           <div>
             <div className="flex items-center justify-between mb-3">
-              <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                🗺️ Interactive Route Map
+              <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] flex items-center gap-2">
+                <DynamicIcon emoji="🗺️" className="w-4 h-4 text-gold" /> Interactive Route Map
               </h2>
               <span className="text-xs text-text-muted">{route.stages.length} Stage Stopovers</span>
             </div>
@@ -122,8 +123,8 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
         {/* Stage-by-stage sidebar */}
         <div className="space-y-6">
           <div className="bg-bg-card border border-border rounded-2xl p-6">
-            <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] mb-4">
-              🚏 Stage Stopovers ({route.stages.length})
+            <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] mb-4 flex items-center gap-2">
+              <DynamicIcon emoji="🚏" className="w-4 h-4 text-gold" /> Stage Stopovers ({route.stages.length})
             </h2>
 
             <div className="relative pl-6 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-gradient-to-b before:from-kenya-green before:via-gold before:to-kenya-red">
@@ -147,7 +148,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                         {stage.name}
                       </p>
                       <p className="text-[0.65rem] text-text-muted mt-0.5">
-                        {isFirst ? "🏁 Departure Terminus" : isLast ? "🎯 Final Destination" : `Stage ${stage.order}`}
+                        {isFirst ? "Departure Terminus" : isLast ? "Final Destination" : `Stage ${stage.order}`}
                       </p>
                     </div>
                   </div>
@@ -161,13 +162,13 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
             <p className="text-xs font-semibold text-text-primary">Notice an error in fares or stages?</p>
             <p className="text-[0.65rem] text-text-muted">Help us keep Kenya&apos;s matatu route information accurate.</p>
             {reported ? (
-              <p className="text-xs text-kenya-green-light font-medium pt-2">✓ Thank you! Report submitted for review.</p>
+              <p className="text-xs text-kenya-green-light font-medium pt-2 flex items-center justify-center gap-1.5"><DynamicIcon emoji="✓" className="w-3.5 h-3.5" /> Thank you! Report submitted for review.</p>
             ) : (
               <button
                 onClick={() => setReported(true)}
-                className="px-4 py-2 bg-bg-elevated hover:bg-gold/20 border border-border text-xs text-text-primary rounded-lg transition-colors"
+                className="px-4 py-2 bg-bg-elevated hover:bg-gold/20 border border-border text-xs text-text-primary rounded-lg transition-colors inline-flex items-center gap-1.5 mx-auto"
               >
-                🚩 Report Discrepancy
+                <DynamicIcon emoji="🚩" className="w-3.5 h-3.5 text-kenya-red-light" /> Report Discrepancy
               </button>
             )}
           </div>
