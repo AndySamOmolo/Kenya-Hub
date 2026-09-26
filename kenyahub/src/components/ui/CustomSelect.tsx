@@ -37,13 +37,14 @@ export default function CustomSelect({
       React.Children.forEach(node, (child) => {
         if (!React.isValidElement(child)) return;
         
+        const props = child.props as any;
         if (child.type === "option") {
           items.push({
-            value: child.props.value?.toString() || "",
-            label: child.props.children?.toString() || "",
+            value: props.value?.toString() || "",
+            label: props.children?.toString() || "",
           });
-        } else if (child.props && child.props.children) {
-          traverse(child.props.children);
+        } else if (props && props.children) {
+          traverse(props.children);
         }
       });
     };
