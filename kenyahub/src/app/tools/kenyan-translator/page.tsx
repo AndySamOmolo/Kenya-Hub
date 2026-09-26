@@ -359,8 +359,8 @@ export default function KenyanTranslatorPage() {
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={sourceLanguage === "english" ? "Search for a word (e.g., water)..." : `Search for a ${sourceDict?.languageName ?? ""} word...`}
-                  className="input-field text-sm w-full pl-12 pr-10"
+                  placeholder={sourceLanguage === "english" ? "Search in English..." : `Search in ${sourceDict?.languageName ?? ""}...`}
+                  className="input-field text-sm w-full !pl-12 !pr-10"
                   id="translator-search"
                   autoComplete="off"
                 />
