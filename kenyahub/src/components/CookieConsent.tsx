@@ -36,15 +36,6 @@ export default function CookieConsent() {
         window.dataLayer!.push(args);
       };
 
-    // Set Consent Mode v2 defaults — deny everything until user consents
-    window.gtag("consent", "default", {
-      ad_storage: "denied",
-      ad_user_data: "denied",
-      ad_personalization: "denied",
-      analytics_storage: "denied",
-      wait_for_update: 500,
-    });
-
     // Check if user has already made a choice
     const stored = localStorage.getItem("kh-cookie-consent");
     if (stored === "accepted") {
@@ -52,9 +43,25 @@ export default function CookieConsent() {
     } else if (stored === "declined") {
       updateConsent(false);
     } else {
+      // Set Consent Mode v2 defaults — deny everything until user consents
+      window.gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 500,
+      });
       // No stored preference — show the banner
       setVisible(true);
     }
+
+    const handleOpenBanner = () => {
+      setVisible(true);
+    };
+    window.addEventListener("kh-open-cookie-banner", handleOpenBanner);
+    return () => {
+      window.removeEventListener("kh-open-cookie-banner", handleOpenBanner);
+    };
   }, []);
 
   const handleAccept = () => {

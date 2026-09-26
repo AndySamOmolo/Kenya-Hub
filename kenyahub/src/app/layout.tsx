@@ -87,18 +87,41 @@ const themeScript = `
 })();
 `;
 
-// Google Consent Mode v2 — must run BEFORE adsbygoogle.js loads
-// Sets default consent state to "denied" so no cookies are set until user consents
+// Google Consent Mode v2 & Google Analytics (gtag.js) — must run BEFORE adsbygoogle.js and gtag.js load
+// Sets default consent state based on user preference or denies until consent is granted
 const consentModeScript = `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {
-  'ad_storage': 'denied',
-  'ad_user_data': 'denied',
-  'ad_personalization': 'denied',
-  'analytics_storage': 'denied',
-  'wait_for_update': 500
-});
+try {
+  var c = localStorage.getItem('kh-cookie-consent');
+  if (c === 'accepted') {
+    gtag('consent', 'default', {
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted',
+      'analytics_storage': 'granted',
+      'wait_for_update': 500
+    });
+  } else {
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+  }
+} catch(e) {
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+}
+gtag('js', new Date());
+gtag('config', 'G-Y069879V7Y');
 `;
 
 export default function RootLayout({
@@ -115,8 +138,13 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        {/* Google Consent Mode v2 — MUST load before AdSense */}
+        {/* Google Consent Mode v2 & Google tag initialization */}
         <script dangerouslySetInnerHTML={{ __html: consentModeScript }} />
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-Y069879V7Y"
+        />
         {/* Google AdSense — auto ads */}
         <script
           async

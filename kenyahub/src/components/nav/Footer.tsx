@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TOOL_CATEGORIES } from "@/lib/tools-registry";
+import CookieSettingsFooterLink from "@/components/nav/CookieSettingsFooterLink";
 
 export default function Footer() {
   return (
@@ -102,6 +103,7 @@ export default function Footer() {
             <Link href="/terms" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
               Terms of Use
             </Link>
+            <CookieSettingsFooterLink />
           </div>
           <p className="text-[0.65rem] text-text-muted">
             Data sourced from official Kenyan government publications
