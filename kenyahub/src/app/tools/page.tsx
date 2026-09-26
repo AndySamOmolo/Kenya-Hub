@@ -108,7 +108,7 @@ function ToolsContent() {
                       </p>
                       {cat && (
                         <span className={`badge ${cat.badgeClass} mt-2`}>
-                          {cat.name}
+                          <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name}
                         </span>
                       )}
                     </div>

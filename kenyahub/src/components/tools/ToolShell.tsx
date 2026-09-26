@@ -144,7 +144,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
         <div className="flex flex-wrap items-center gap-2.5">
           {category && (
             <span className={`badge ${category.badgeClass}`}>
-              {category.icon} {category.name}
+              <DynamicIcon emoji={category.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {category.name}
             </span>
           )}
           <span className="inline-flex items-center gap-1 text-[0.625rem] text-text-muted bg-white/[0.02] border border-border rounded-full px-2.5 py-1">
@@ -246,7 +246,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
                       </p>
                       {rtCat && (
                         <span className={`badge ${rtCat.badgeClass} mt-2`}>
-                          {rtCat.name}
+                          <DynamicIcon emoji={rtCat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {rtCat.name}
                         </span>
                       )}
                     </div>
