@@ -7,26 +7,27 @@
   "speakerCount": 5800000,
   "counties": ["Kisumu", "Siaya", "Homa Bay", "Migori"],
   "hasAudio": false,
-  "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-07",
-  "contributorNote": "Dholuo is a River-Lake Nilotic language spoken in the Lake Victoria basin of Western Kenya. Data from Tiba Foundation, community references, and linguistic publications.",
+  "dictionaryVersion": "0.2.0",
+  "lastUpdated": "2026-09",
+  "contributorNote": "Dholuo is a River-Lake Nilotic language spoken in the Lake Victoria basin of Western Kenya. Core data rebuilt from 'A Handbook of the Kavirondo Language' by Mill-Hill Fathers (1920), supplemented by Tiba Foundation community references.",
   "categories": [
     {
       "id": "greetings",
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
-        { "english": "Hello (to one person)", "translation": "Amosi", "pronunciation": "ah-moh-see", "context": "Greeting one person", "audioFile": null },
-        { "english": "Hello (to many people)", "translation": "Amoso u", "pronunciation": "ah-moh-soh oo", "context": "Greeting a group", "audioFile": null },
-        { "english": "How are you?", "translation": "Idhi nade?", "pronunciation": "ee-dee nah-deh", "context": "Standard greeting", "audioFile": null },
-        { "english": "I am fine", "translation": "Adhi maber", "pronunciation": "ah-dee mah-behr", "context": "Reply: 'I am going well'", "audioFile": null },
-        { "english": "Good morning", "translation": "Oyaore", "pronunciation": "oh-yah-oh-reh", "context": "Morning greeting", "audioFile": null },
-        { "english": "Good evening", "translation": "Oimore", "pronunciation": "oy-moh-reh", "context": "Evening greeting", "audioFile": null },
-        { "english": "Thank you", "translation": "Erokamano", "pronunciation": "eh-roh-kah-mah-noh", "context": "Very commonly used", "audioFile": null },
-        { "english": "Goodbye", "translation": "Oriti", "pronunciation": "oh-ree-tee", "context": "", "audioFile": null },
-        { "english": "Welcome", "translation": "Karibu", "pronunciation": "kah-ree-boo", "context": "Borrowed from Swahili — widely used", "audioFile": null },
-        { "english": "Please", "translation": "Akwayo", "pronunciation": "ah-kwah-yoh", "context": "", "audioFile": null },
-        { "english": "How did you sleep?", "translation": "Inindo nade?", "pronunciation": "ee-neen-doh nah-deh", "context": "Morning greeting asking about sleep", "audioFile": null }
+        { "english": "Peace! / Hello!", "translation": "Misawa!", "pronunciation": "mee-sah-wah", "context": "Universal greeting — any time of day", "audioFile": null },
+        { "english": "Peace!", "translation": "Okwe!", "pronunciation": "oh-kweh", "context": "Alternative peace greeting", "audioFile": null },
+        { "english": "How did you sleep?", "translation": "Inindo nade?", "pronunciation": "ee-neen-doh nah-deh", "context": "Morning greeting", "audioFile": null },
+        { "english": "I slept well", "translation": "Anindo maber", "pronunciation": "ah-neen-doh mah-behr", "context": "Reply to morning greeting", "audioFile": null },
+        { "english": "How are you? (daytime)", "translation": "Iriyo nade?", "pronunciation": "ee-ree-yoh nah-deh", "context": "Used during the day — from Handbook", "audioFile": null },
+        { "english": "I am well", "translation": "Ariyo maber", "pronunciation": "ah-ree-yoh mah-behr", "context": "Reply to daytime greeting", "audioFile": null },
+        { "english": "How is your health?", "translation": "Ringri ber?", "pronunciation": "reeng-ree behr", "context": "Formal health enquiry", "audioFile": null },
+        { "english": "Thank you / Well done", "translation": "Ero kamano", "pronunciation": "eh-roh kah-mah-noh", "context": "Very commonly used — shows gratitude and respect", "audioFile": null },
+        { "english": "May God protect you", "translation": "Nyasaye riti", "pronunciation": "nyah-sah-yeh ree-tee", "context": "Blessing used as farewell", "audioFile": null },
+        { "english": "Goodbye / Sleep well", "translation": "Inindi", "pronunciation": "ee-neen-dee", "context": "Evening farewell", "audioFile": null },
+        { "english": "What's the news?", "translation": "Dala wacho ang'o?", "pronunciation": "dah-lah wah-choh ahng-oh", "context": "Standard opening after greeting", "audioFile": null },
+        { "english": "No news", "translation": "Oling'", "pronunciation": "oh-leeng", "context": "Polite reply — things are calm", "audioFile": null }
       ]
     },
     {
@@ -39,13 +40,13 @@
         { "english": "Three", "translation": "Adek", "pronunciation": "ah-dehk", "context": "", "audioFile": null },
         { "english": "Four", "translation": "Ang'wen", "pronunciation": "ah-ng'wehn", "context": "", "audioFile": null },
         { "english": "Five", "translation": "Abich", "pronunciation": "ah-beech", "context": "", "audioFile": null },
-        { "english": "Six", "translation": "Auchiel", "pronunciation": "ah-oo-chee-ehl", "context": "", "audioFile": null },
-        { "english": "Seven", "translation": "Abiriyo", "pronunciation": "ah-bee-ree-yoh", "context": "", "audioFile": null },
-        { "english": "Eight", "translation": "Aboro", "pronunciation": "ah-boh-roh", "context": "", "audioFile": null },
-        { "english": "Nine", "translation": "Ochiko", "pronunciation": "oh-chee-koh", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Auchiel", "pronunciation": "ah-oo-chee-ehl", "context": "abich g'achiel = five + one", "audioFile": null },
+        { "english": "Seven", "translation": "Abiriyo", "pronunciation": "ah-bee-ree-yoh", "context": "abich g'ariyo = five + two", "audioFile": null },
+        { "english": "Eight", "translation": "Aboro", "pronunciation": "ah-boh-roh", "context": "abich g'adek = five + three", "audioFile": null },
+        { "english": "Nine", "translation": "Ongachiel", "pronunciation": "ohng-ah-chee-ehl", "context": "One missing from ten", "audioFile": null },
         { "english": "Ten", "translation": "Apar", "pronunciation": "ah-pahr", "context": "", "audioFile": null },
-        { "english": "Twenty", "translation": "Piero ariyo", "pronunciation": "pee-eh-roh ah-ree-yoh", "context": "", "audioFile": null },
-        { "english": "Hundred", "translation": "Mia achiel", "pronunciation": "mee-ah ah-chee-ehl", "context": "Borrowed 'mia' from Swahili", "audioFile": null }
+        { "english": "Twenty", "translation": "Piero ariyo", "pronunciation": "pee-eh-roh ah-ree-yoh", "context": "Tens × two", "audioFile": null },
+        { "english": "Hundred", "translation": "Mia / Piero apar", "pronunciation": "mee-ah", "context": "'Mia' borrowed from Kiswahili", "audioFile": null }
       ]
     },
     {
@@ -53,17 +54,19 @@
       "name": "Family & Relationships",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
-        { "english": "Mother", "translation": "Mama / Min", "pronunciation": "mah-mah / meen", "context": "'Min' is traditional Dholuo", "audioFile": null },
-        { "english": "Father", "translation": "Baba / Wuoro", "pronunciation": "bah-bah / woo-oh-roh", "context": "'Wuoro' is traditional Dholuo", "audioFile": null },
-        { "english": "Child", "translation": "Nyathi", "pronunciation": "nyah-thee", "context": "'Nyithindo' = children (plural)", "audioFile": null },
-        { "english": "Brother", "translation": "Owadwa", "pronunciation": "oh-wahd-wah", "context": "My brother", "audioFile": null },
-        { "english": "Sister", "translation": "Nyaminwa", "pronunciation": "nyah-meen-wah", "context": "My sister", "audioFile": null },
-        { "english": "Grandmother", "translation": "Dani", "pronunciation": "dah-nee", "context": "", "audioFile": null },
-        { "english": "Grandfather", "translation": "Kwaro", "pronunciation": "kwah-roh", "context": "", "audioFile": null },
-        { "english": "Friend", "translation": "Osiepna", "pronunciation": "oh-see-ehp-nah", "context": "My friend", "audioFile": null },
-        { "english": "Husband", "translation": "Jaoda / Chwora", "pronunciation": "jah-oh-dah / chwoh-rah", "context": "", "audioFile": null },
-        { "english": "Wife", "translation": "Jaoda / Chiege", "pronunciation": "jah-oh-dah / chee-eh-geh", "context": "", "audioFile": null },
-        { "english": "People", "translation": "Ji", "pronunciation": "jee", "context": "", "audioFile": null }
+        { "english": "Father", "translation": "Won / Wuoro", "pronunciation": "wohn / woo-oh-roh", "context": "'Won' = father of (construct)", "audioFile": null },
+        { "english": "Mother", "translation": "Min / Mama", "pronunciation": "meen / mah-mah", "context": "'Min' = mother of (construct)", "audioFile": null },
+        { "english": "Child", "translation": "Nyathi", "pronunciation": "nyah-thee", "context": "Pl: Nyithindo", "audioFile": null },
+        { "english": "Boy / Son", "translation": "Woyi / Wuod", "pronunciation": "woh-yee / woo-ohd", "context": "Pl: Yawoyi", "audioFile": null },
+        { "english": "Girl / Daughter", "translation": "Nyako", "pronunciation": "nyah-koh", "context": "Pl: Nyiri", "audioFile": null },
+        { "english": "Brother", "translation": "Omin", "pronunciation": "oh-meen", "context": "Omera = my brother", "audioFile": null },
+        { "english": "Sister", "translation": "Nyamin", "pronunciation": "nyah-meen", "context": "Nyamera = my sister", "audioFile": null },
+        { "english": "Grandmother", "translation": "Dayo", "pronunciation": "dah-yoh", "context": "", "audioFile": null },
+        { "english": "Grandfather", "translation": "Kwar", "pronunciation": "kwahr", "context": "Also means ancestor", "audioFile": null },
+        { "english": "Wife", "translation": "Chi", "pronunciation": "chee", "context": "Chi Petrus = Peter's wife", "audioFile": null },
+        { "english": "Husband", "translation": "Chwo / Chwor", "pronunciation": "chwoh", "context": "Chwor Maria = Maria's husband", "audioFile": null },
+        { "english": "People", "translation": "Ji / Jo", "pronunciation": "jee / joh", "context": "", "audioFile": null },
+        { "english": "Friend", "translation": "Osiep", "pronunciation": "oh-see-ehp", "context": "Osiepna = my friend", "audioFile": null }
       ]
     },
     {
@@ -71,16 +74,80 @@
       "name": "Food & Drink",
       "icon": "🍲",
       "entries": [
-        { "english": "Water", "translation": "Pi", "pronunciation": "pee", "context": "", "audioFile": null },
+        { "english": "Water", "translation": "Pi", "pronunciation": "pee", "context": "Pl: Pige", "audioFile": null },
         { "english": "Food", "translation": "Chiemo", "pronunciation": "chee-eh-moh", "context": "", "audioFile": null },
-        { "english": "Fish", "translation": "Rech", "pronunciation": "rehch", "context": "Fish is central to Luo cuisine — Lake Victoria", "audioFile": null },
-        { "english": "Ugali", "translation": "Kuon", "pronunciation": "koo-ohn", "context": "Maize meal staple", "audioFile": null },
+        { "english": "Fish", "translation": "Rech", "pronunciation": "rehch", "context": "Central to Luo cuisine — Lake Victoria", "audioFile": null },
+        { "english": "Ugali / Porridge", "translation": "Kuon", "pronunciation": "koo-ohn", "context": "Matama meal staple", "audioFile": null },
         { "english": "Meat", "translation": "Ring'o", "pronunciation": "reeng-oh", "context": "", "audioFile": null },
-        { "english": "Milk", "translation": "Chak", "pronunciation": "chahk", "context": "", "audioFile": null },
-        { "english": "Tea", "translation": "Chai", "pronunciation": "chah-ee", "context": "Borrowed from Swahili", "audioFile": null },
-        { "english": "Vegetables", "translation": "Alot", "pronunciation": "ah-loht", "context": "Traditional Luo vegetables are highly valued", "audioFile": null },
+        { "english": "Milk", "translation": "Chak", "pronunciation": "chahk", "context": "Cha dhiang' = cow's milk", "audioFile": null },
+        { "english": "Tea", "translation": "Chai", "pronunciation": "chah-ee", "context": "", "audioFile": null },
+        { "english": "Matama / Millet", "translation": "Bel", "pronunciation": "behl", "context": "Staple grain", "audioFile": null },
+        { "english": "Wimbi (finger millet)", "translation": "Kal", "pronunciation": "kahl", "context": "", "audioFile": null },
         { "english": "Banana", "translation": "Rabolo", "pronunciation": "rah-boh-loh", "context": "", "audioFile": null },
-        { "english": "Egg", "translation": "Tong'", "pronunciation": "tohng", "context": "", "audioFile": null }
+        { "english": "Potato / Sweet potato", "translation": "Rabuon", "pronunciation": "rah-boo-ohn", "context": "", "audioFile": null },
+        { "english": "Fat / Oil", "translation": "Mo", "pronunciation": "moh", "context": "Mor dhiang' = butter", "audioFile": null },
+        { "english": "Tobacco", "translation": "Ndawa", "pronunciation": "ndah-wah", "context": "", "audioFile": null },
+        { "english": "Beer", "translation": "Kong'o", "pronunciation": "kohng-oh", "context": "Traditional brew", "audioFile": null }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals",
+      "icon": "🐄",
+      "entries": [
+        { "english": "Cow / Cattle", "translation": "Dhiang'", "pronunciation": "dee-ahng", "context": "Pl: Dhok — central to Luo culture", "audioFile": null },
+        { "english": "Bull", "translation": "Ruath", "pronunciation": "roo-ahth", "context": "", "audioFile": null },
+        { "english": "Heifer", "translation": "Roya", "pronunciation": "roh-yah", "context": "Young female cow", "audioFile": null },
+        { "english": "Goat", "translation": "Diel", "pronunciation": "dee-ehl", "context": "Pl: Diek", "audioFile": null },
+        { "english": "Dog", "translation": "Guok", "pronunciation": "goo-ohk", "context": "Pl: Guogi", "audioFile": null },
+        { "english": "Chicken / Fowl", "translation": "Gweno", "pronunciation": "gwehn-oh", "context": "Pl: Gwen", "audioFile": null },
+        { "english": "Snake", "translation": "Thuol", "pronunciation": "thoo-ohl", "context": "", "audioFile": null },
+        { "english": "Fish", "translation": "Rech", "pronunciation": "rehch", "context": "", "audioFile": null },
+        { "english": "Bird", "translation": "Winyo", "pronunciation": "ween-yoh", "context": "", "audioFile": null },
+        { "english": "Leopard", "translation": "Kwach", "pronunciation": "kwahch", "context": "Pl: Kweye", "audioFile": null },
+        { "english": "Hyena", "translation": "Ondiek", "pronunciation": "ohn-dee-ehk", "context": "Pl: Ondiegi", "audioFile": null },
+        { "english": "Lion", "translation": "Sibuor", "pronunciation": "see-boo-ohr", "context": "", "audioFile": null },
+        { "english": "Rabbit / Hare", "translation": "Apwoyo", "pronunciation": "ah-pwoh-yoh", "context": "Trickster in Luo folklore", "audioFile": null },
+        { "english": "Buffalo", "translation": "Jowi", "pronunciation": "joh-wee", "context": "Pl: Jope", "audioFile": null },
+        { "english": "Crocodile", "translation": "Nyang'", "pronunciation": "nyahng", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": [
+        { "english": "Sun / Day", "translation": "Chieng'", "pronunciation": "chee-ehng", "context": "Pl: Ndalo", "audioFile": null },
+        { "english": "Moon / Month", "translation": "Dwe", "pronunciation": "dweh", "context": "Pl: Dweye", "audioFile": null },
+        { "english": "Star", "translation": "Sulwe", "pronunciation": "sool-weh", "context": "Pl: Sulini", "audioFile": null },
+        { "english": "Sky / Heaven", "translation": "Polo", "pronunciation": "poh-loh", "context": "", "audioFile": null },
+        { "english": "Earth / Country", "translation": "Piny", "pronunciation": "peen-yee", "context": "Pl: Pinje", "audioFile": null },
+        { "english": "Lake / Sea", "translation": "Nam", "pronunciation": "nahm", "context": "The Luo are 'Ja-Nam' = Lake people", "audioFile": null },
+        { "english": "River", "translation": "Aora", "pronunciation": "ah-oh-rah", "context": "Pl: Aore", "audioFile": null },
+        { "english": "Mountain / Hill", "translation": "Got", "pronunciation": "goht", "context": "Pl: Gode", "audioFile": null },
+        { "english": "Rain", "translation": "Koth", "pronunciation": "kohth", "context": "Koth chwe = It is raining", "audioFile": null },
+        { "english": "Wind", "translation": "Yamo", "pronunciation": "yah-moh", "context": "", "audioFile": null },
+        { "english": "Tree / Medicine", "translation": "Yath", "pronunciation": "yahth", "context": "Pl: Yedhe", "audioFile": null },
+        { "english": "Fire", "translation": "Mach", "pronunciation": "mahch", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Home & Village",
+      "icon": "🏠",
+      "entries": [
+        { "english": "House", "translation": "Ot", "pronunciation": "oht", "context": "Pl: Udi", "audioFile": null },
+        { "english": "Village / Home", "translation": "Dala / Pacho", "pronunciation": "dah-lah / pah-choh", "context": "Pl: Mier", "audioFile": null },
+        { "english": "Garden", "translation": "Puodho", "pronunciation": "poo-oh-dhoh", "context": "Pl: Puothe", "audioFile": null },
+        { "english": "Road / Path", "translation": "Yo", "pronunciation": "yoh", "context": "Pl: Yore", "audioFile": null },
+        { "english": "Door", "translation": "Dhoot", "pronunciation": "dhoo-oht", "context": "", "audioFile": null },
+        { "english": "Chair", "translation": "Kom", "pronunciation": "kohm", "context": "Pl: Kombe", "audioFile": null },
+        { "english": "Knife", "translation": "Pala", "pronunciation": "pah-lah", "context": "Pl: Pelini", "audioFile": null },
+        { "english": "Hoe", "translation": "Kwer", "pronunciation": "kwehr", "context": "Agricultural tool", "audioFile": null },
+        { "english": "Spear", "translation": "Tong'", "pronunciation": "tohng", "context": "", "audioFile": null },
+        { "english": "Stick", "translation": "Luth", "pronunciation": "looth", "context": "Pl: Ludhe", "audioFile": null },
+        { "english": "Bed", "translation": "Kitanda", "pronunciation": "kee-tahn-dah", "context": "", "audioFile": null },
+        { "english": "Pipe", "translation": "Kwesi", "pronunciation": "kweh-see", "context": "Pl: Kwesini", "audioFile": null }
       ]
     },
     {
@@ -88,19 +155,45 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
-        { "english": "Yes", "translation": "Ee", "pronunciation": "eh-eh", "context": "", "audioFile": null },
-        { "english": "No", "translation": "Ooyo", "pronunciation": "oh-oh-yoh", "context": "", "audioFile": null },
-        { "english": "Sorry", "translation": "Mos", "pronunciation": "mohs", "context": "Expression of sympathy", "audioFile": null },
+        { "english": "Yes", "translation": "Ee / Aee", "pronunciation": "eh-eh", "context": "", "audioFile": null },
+        { "english": "No", "translation": "Oyo", "pronunciation": "oh-yoh", "context": "", "audioFile": null },
+        { "english": "It is true", "translation": "Adieri", "pronunciation": "ah-dee-eh-ree", "context": "", "audioFile": null },
+        { "english": "That is a lie", "translation": "Mano miriambo", "pronunciation": "mah-noh mee-ree-ahm-boh", "context": "", "audioFile": null },
         { "english": "What is your name?", "translation": "Nyingi ng'a?", "pronunciation": "nyeen-gee ng'ah", "context": "", "audioFile": null },
-        { "english": "My name is...", "translation": "Nyinga en...", "pronunciation": "nyeen-gah ehn", "context": "", "audioFile": null },
-        { "english": "I love you", "translation": "Aheri", "pronunciation": "ah-heh-ree", "context": "", "audioFile": null },
-        { "english": "God", "translation": "Nyasaye", "pronunciation": "nyah-sah-yeh", "context": "The Luo name for God", "audioFile": null },
-        { "english": "Come", "translation": "Bi", "pronunciation": "bee", "context": "", "audioFile": null },
-        { "english": "Go", "translation": "Dhi", "pronunciation": "dee", "context": "", "audioFile": null },
-        { "english": "Good", "translation": "Ber", "pronunciation": "behr", "context": "", "audioFile": null },
-        { "english": "Bad", "translation": "Rach", "pronunciation": "rahch", "context": "", "audioFile": null },
+        { "english": "Where are you going?", "translation": "Idhi kanye?", "pronunciation": "ee-dee kah-nyeh", "context": "", "audioFile": null },
+        { "english": "Come here", "translation": "Bi ka", "pronunciation": "bee kah", "context": "", "audioFile": null },
+        { "english": "I don't understand", "translation": "Okawinjo maber", "pronunciation": "oh-kah-ween-joh mah-behr", "context": "", "audioFile": null },
+        { "english": "I don't know", "translation": "Akia", "pronunciation": "ah-kee-ah", "context": "", "audioFile": null },
+        { "english": "Speak slowly", "translation": "Wach mos", "pronunciation": "wahch mohs", "context": "", "audioFile": null },
+        { "english": "Say it again", "translation": "Wachina kendo", "pronunciation": "wah-chee-nah kehn-doh", "context": "", "audioFile": null },
+        { "english": "I have forgotten", "translation": "Wiya owil", "pronunciation": "wee-yah oh-weel", "context": "", "audioFile": null },
+        { "english": "Make haste", "translation": "Ret piyo", "pronunciation": "reht pee-yoh", "context": "", "audioFile": null },
+        { "english": "That's enough", "translation": "Oromo", "pronunciation": "oh-roh-moh", "context": "", "audioFile": null },
+        { "english": "Good / Beautiful", "translation": "Maber", "pronunciation": "mah-behr", "context": "", "audioFile": null },
+        { "english": "Bad", "translation": "Marach", "pronunciation": "mah-rahch", "context": "", "audioFile": null },
         { "english": "Where?", "translation": "Kanye?", "pronunciation": "kah-nyeh", "context": "", "audioFile": null },
-        { "english": "Help me", "translation": "Konya", "pronunciation": "koh-nyah", "context": "", "audioFile": null }
+        { "english": "I must go now", "translation": "Koro onego adhi", "pronunciation": "koh-roh oh-neh-goh ah-dee", "context": "", "audioFile": null },
+        { "english": "Sit down", "translation": "Bedi piny", "pronunciation": "beh-dee peen-yee", "context": "", "audioFile": null },
+        { "english": "Go away", "translation": "Dhiyo", "pronunciation": "dhee-yoh", "context": "", "audioFile": null }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts",
+      "icon": "🫁",
+      "entries": [
+        { "english": "Head", "translation": "Wich / Wi", "pronunciation": "weech / wee", "context": "Pl: Wiye", "audioFile": null },
+        { "english": "Face / Eye", "translation": "Wang'", "pronunciation": "wahng", "context": "Pl: Wenge", "audioFile": null },
+        { "english": "Ear", "translation": "It", "pronunciation": "eet", "context": "Pl: Ite", "audioFile": null },
+        { "english": "Mouth", "translation": "Dhok / Dho", "pronunciation": "dhohk", "context": "", "audioFile": null },
+        { "english": "Tooth", "translation": "Lak", "pronunciation": "lahk", "context": "Pl: Leke", "audioFile": null },
+        { "english": "Tongue", "translation": "Lep", "pronunciation": "lehp", "context": "", "audioFile": null },
+        { "english": "Hand / Arm", "translation": "Lwedo", "pronunciation": "lwehdoh", "context": "Pl: Lwete", "audioFile": null },
+        { "english": "Leg / Foot", "translation": "Tielo", "pronunciation": "tee-ehloh", "context": "", "audioFile": null },
+        { "english": "Chest / Side", "translation": "Kor", "pronunciation": "kohr", "context": "", "audioFile": null },
+        { "english": "Blood", "translation": "Remo", "pronunciation": "reh-moh", "context": "", "audioFile": null },
+        { "english": "Body", "translation": "Ringruok", "pronunciation": "reeng-roo-ohk", "context": "", "audioFile": null },
+        { "english": "Bone", "translation": "Chogo", "pronunciation": "choh-goh", "context": "Pl: Choke", "audioFile": null }
       ]
     }
   ]
