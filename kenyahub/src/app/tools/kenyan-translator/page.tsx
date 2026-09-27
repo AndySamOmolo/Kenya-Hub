@@ -101,6 +101,12 @@ ALL_DICTS.forEach((d) =>
   })
 );
 
+// Popular comparison words across Kenyan dictionaries
+const POPULAR_COMPARE_WORDS = [
+  "Water", "Hello", "Thank you", "Father", "Mother", "Food",
+  "God", "Cow", "One", "Two", "Friend", "Sun", "Fire", "House"
+];
+
 // ─── FAQ ───
 const faq = [
   { question: "What languages does this translator support?", answer: `Currently 12 Kenyan languages with seed vocabularies: Swahili, Kikuyu, Dholuo (Luo), Kalenjin, Luhya (Bukusu), Kamba, Meru, Maasai, Kisii, Somali, Turkana, and Mijikenda (Giriama). More languages and vocabulary are being added continuously.` },
@@ -117,7 +123,7 @@ export default function KenyanTranslatorPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<"translate" | "compare" | "browse">("translate");
-  const [compareLanguages, setCompareLanguages] = useState<string[]>(["swahili", "kikuyu", "luo"]);
+  const [compareLanguages, setCompareLanguages] = useState<string[]>(() => ALL_DICTS.map((d) => d.languageId));
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -223,28 +229,96 @@ export default function KenyanTranslatorPage() {
   }, [activeCategory, targetDict]);
 
   // ─── Compare Mode: word across multiple languages ───
-  const comparisonResults = useMemo(() => {
-    if (viewMode !== "compare" || !searchQuery.trim()) return [];
+  const { comparisonResults, resolvedEnglish } = useMemo(() => {
+    if (viewMode !== "compare" || !searchQuery.trim()) {
+      return { comparisonResults: [], resolvedEnglish: null };
+    }
     const q = searchQuery.toLowerCase().trim();
+
+    // Check if query matches a local language translation in any dictionary
+    // e.g. user typed "ejok" (Turkana for Hello) or "ngakipi" (Turkana for Water)
+    let matchedEnglish = q;
+    for (const d of ALL_DICTS) {
+      for (const cat of d.categories) {
+        for (const entry of cat.entries) {
+          const trans = entry.translation.toLowerCase().trim();
+          const transParts = trans.split(/[\/,\(]/).map((s) => s.trim());
+          if (trans === q || transParts.includes(q)) {
+            matchedEnglish = entry.english.toLowerCase().trim();
+            break;
+          }
+        }
+        if (matchedEnglish !== q) break;
+      }
+      if (matchedEnglish !== q) break;
+    }
+
+    const targetWords = [q];
+    if (matchedEnglish !== q) {
+      targetWords.unshift(matchedEnglish);
+    }
+    const slashParts = matchedEnglish.split("/").map((s) => s.trim().toLowerCase()).filter(Boolean);
+    slashParts.forEach((sp) => {
+      if (!targetWords.includes(sp)) targetWords.push(sp);
+    });
+
     const results: { languageId: string; languageName: string; family: string; entry: DictEntry | null }[] = [];
 
     compareLanguages.forEach((langId) => {
       const dict = DICT_MAP[langId];
       if (!dict) return;
       let found: DictEntry | null = null;
+
+      // Pass 1: Exact matches on English or Translation
       for (const cat of dict.categories) {
         for (const entry of cat.entries) {
-          if (entry.english.toLowerCase() === q || entry.english.toLowerCase().includes(q)) {
+          const eng = entry.english.toLowerCase().trim();
+          const engParts = eng.split("/").map((s) => s.trim());
+          const trans = entry.translation.toLowerCase().trim();
+          const transParts = trans.split("/").map((s) => s.trim());
+
+          if (
+            targetWords.some(
+              (tw) =>
+                eng === tw ||
+                engParts.includes(tw) ||
+                trans === tw ||
+                transParts.includes(tw)
+            )
+          ) {
             found = entry;
             break;
           }
         }
         if (found) break;
       }
+
+      // Pass 2: Word-boundary / partial inclusion matches on English
+      if (!found) {
+        for (const cat of dict.categories) {
+          for (const entry of cat.entries) {
+            const eng = entry.english.toLowerCase().trim();
+            if (
+              targetWords.some((tw) => {
+                const words = eng.split(/[\s,\/]+/);
+                return words.includes(tw) || eng.includes(tw);
+              })
+            ) {
+              found = entry;
+              break;
+            }
+          }
+          if (found) break;
+        }
+      }
+
       results.push({ languageId: dict.languageId, languageName: dict.languageName, family: dict.family, entry: found });
     });
 
-    return results;
+    return {
+      comparisonResults: results,
+      resolvedEnglish: matchedEnglish !== q ? matchedEnglish : null,
+    };
   }, [searchQuery, viewMode, compareLanguages]);
 
   // Stats
@@ -590,7 +664,56 @@ export default function KenyanTranslatorPage() {
           <>
             <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5 space-y-4">
               <div>
-                <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">Compare across languages</label>
+                <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
+                  <label className="text-[0.6rem] uppercase tracking-wider text-text-muted font-medium">
+                    Compare across languages ({compareLanguages.length}/{ALL_DICTS.length} selected)
+                  </label>
+                  <div className="flex items-center gap-1.5 bg-bg-elevated px-2 py-0.5 rounded-lg border border-border">
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages(ALL_DICTS.map((d) => d.languageId))}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
+                    >
+                      All (12)
+                    </button>
+                    <span className="text-[0.6rem] text-border">|</span>
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "nilotic").map((d) => d.languageId))}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
+                      title="Luo, Kalenjin, Maasai, Turkana"
+                    >
+                      Nilotic
+                    </button>
+                    <span className="text-[0.6rem] text-border">|</span>
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "bantu").map((d) => d.languageId))}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
+                      title="Swahili, Kikuyu, Luhya, Kamba, Meru, Kisii, Mijikenda"
+                    >
+                      Bantu
+                    </button>
+                    <span className="text-[0.6rem] text-border">|</span>
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "cushitic").map((d) => d.languageId))}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
+                      title="Somali"
+                    >
+                      Cushitic
+                    </button>
+                    <span className="text-[0.6rem] text-border">|</span>
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages([])}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-kenya-red transition-colors"
+                    >
+                      Clear
+                    </button>
+                  </div>
+                </div>
+
                 <div className="flex flex-wrap gap-2">
                   {ALL_DICTS.map((d) => {
                     const isSelected = compareLanguages.includes(d.languageId);
@@ -617,23 +740,71 @@ export default function KenyanTranslatorPage() {
                 </div>
               </div>
 
-              <div className="relative">
+              <div className="space-y-2">
                 <SearchInput
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onClear={() => setSearchQuery("")}
-                  placeholder="Type an English word to compare..."
+                  placeholder="Type an English or Kenyan word (e.g. Water, Ngakipi, Ejok, Maji)..."
                   id="compare-search"
                 />
+                <div className="flex items-center gap-1.5 flex-wrap pt-0.5">
+                  <span className="text-[0.65rem] text-text-muted font-medium">Quick compare:</span>
+                  {POPULAR_COMPARE_WORDS.map((word) => (
+                    <button
+                      key={word}
+                      type="button"
+                      onClick={() => setSearchQuery(word)}
+                      className={`px-2 py-0.5 rounded-md text-[0.65rem] transition-colors border ${
+                        searchQuery.toLowerCase() === word.toLowerCase()
+                          ? "bg-gold/15 text-gold border-gold/30 font-semibold"
+                          : "bg-bg-elevated text-text-secondary border-border hover:border-gold/50 hover:text-text-primary"
+                      }`}
+                    >
+                      {word}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
 
+            {!searchQuery && (
+              <div className="bg-bg-card border border-border rounded-xl p-8 text-center space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center mx-auto">
+                  <BarChart className="w-6 h-6" />
+                </div>
+                <div className="max-w-md mx-auto">
+                  <h4 className="text-sm font-semibold text-text-primary">Compare Across 12 Kenyan Languages</h4>
+                  <p className="text-xs text-text-muted mt-1 leading-relaxed">
+                    Instantly compare vocabulary across Turkana, Swahili, Luo, Kikuyu, Maasai, Somali, and more.
+                    Type any word above or pick a quick comparison topic below:
+                  </p>
+                </div>
+                <div className="flex flex-wrap justify-center gap-2 pt-1 max-w-xl mx-auto">
+                  {POPULAR_COMPARE_WORDS.map((word) => (
+                    <button
+                      key={word}
+                      type="button"
+                      onClick={() => setSearchQuery(word)}
+                      className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/40 transition-all flex items-center gap-1.5"
+                    >
+                      <span className="text-[0.7rem] text-gold">⚡</span>
+                      <span>{word}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {searchQuery && comparisonResults.length > 0 && (
               <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-                <div className="px-4 py-3 border-b border-border bg-bg-elevated/50">
+                <div className="px-4 py-3 border-b border-border bg-bg-elevated/50 flex items-center justify-between flex-wrap gap-2">
                   <h4 className="text-sm font-semibold text-text-primary">
-                    &ldquo;{searchQuery}&rdquo; in {compareLanguages.length} languages
+                    &ldquo;{searchQuery}&rdquo; {resolvedEnglish && resolvedEnglish !== searchQuery.toLowerCase() ? <span className="text-text-muted font-normal text-xs"> (translates to &ldquo;{resolvedEnglish}&rdquo;)</span> : null} in {compareLanguages.length} languages
                   </h4>
+                  <span className="text-[0.65rem] text-text-muted">
+                    {comparisonResults.filter((r) => r.entry).length} of {compareLanguages.length} found
+                  </span>
                 </div>
                 <div className="divide-y divide-border">
                   {comparisonResults.map((result) => (
@@ -648,6 +819,9 @@ export default function KenyanTranslatorPage() {
                           <p className="text-sm font-bold text-gold">{result.entry.translation}</p>
                           {result.entry.pronunciation && (
                             <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
+                          )}
+                          {result.entry.english.toLowerCase() !== searchQuery.toLowerCase() && (
+                            <p className="text-[0.65rem] text-text-muted mt-0.5">Meaning: {result.entry.english}</p>
                           )}
                         </div>
                       ) : (
