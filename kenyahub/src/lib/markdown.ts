@@ -75,6 +75,7 @@ function parseMarkdownTables(content: string): string {
 
       tableHtml += "    </tbody>\n";
       tableHtml += "  </table>\n";
+      tableHtml += "</div>\n";
       result.push("\n\n" + tableHtml + "\n\n");
     } else {
       result.push(line);
@@ -128,19 +129,19 @@ export function markdownToHtml(content: string): string {
   // Blockquotes
   html = html.replace(/^> (.*)$/gm, "<blockquote>$1</blockquote>");
   // Merge consecutive blockquotes
-  html = html.replace(/<\/blockquote>\n<blockquote>/gm, "\n");
+  html = html.replace(/<\/blockquote>\r?\n<blockquote>/gm, "\n");
 
   // Unordered lists — group consecutive list items
-  html = html.replace(/((?:^- .*$\n?)+)/gm, (match) => {
-    const items = match.trim().split("\n").map(line =>
+  html = html.replace(/((?:^- .*$\r?\n?)+)/gm, (match) => {
+    const items = match.trim().split(/\r?\n/).map(line =>
       `<li>${line.replace(/^- /, "")}</li>`
     ).join("\n");
     return `<ul>${items}</ul>`;
   });
 
   // Ordered lists — group consecutive numbered items
-  html = html.replace(/((?:^\d+\. .*$\n?)+)/gm, (match) => {
-    const items = match.trim().split("\n").map(line =>
+  html = html.replace(/((?:^\d+\. .*$\r?\n?)+)/gm, (match) => {
+    const items = match.trim().split(/\r?\n/).map(line =>
       `<li>${line.replace(/^\d+\. /, "")}</li>`
     ).join("\n");
     return `<ol>${items}</ol>`;
@@ -151,8 +152,11 @@ export function markdownToHtml(content: string): string {
 
   // Wrap any standalone HTML tables in blog-table-wrapper if not already inside one
   html = html.replace(/(<table[\s\S]*?<\/table>)/gi, (match, _p1, offset, fullStr) => {
-    const precedingStr = fullStr.slice(Math.max(0, offset - 120), offset);
-    if (precedingStr.includes('class="blog-table-wrapper')) {
+    if (match.includes("blog-table")) {
+      return match;
+    }
+    const precedingStr = fullStr.slice(Math.max(0, offset - 200), offset);
+    if (precedingStr.includes('class="blog-table-wrapper') || precedingStr.includes("overflow-x-auto")) {
       return match;
     }
     return `\n\n<div class="blog-table-wrapper my-6 overflow-x-auto rounded-xl border border-border bg-bg-card/40 shadow-sm">\n${match}\n</div>\n\n`;
@@ -162,9 +166,10 @@ export function markdownToHtml(content: string): string {
   html = html.split("\n\n").map(block => {
     const trimmed = block.trim();
     if (!trimmed) return "";
-    if (trimmed.startsWith("<") || trimmed.startsWith("___IFRAME_")) return trimmed;
+    const isBlockElement = /^<(?:div|p|table|thead|tbody|tr|th|td|h[1-6]|ul|ol|li|pre|blockquote|hr|img|figure|section|article|aside|header|footer|nav)[\s>]/i.test(trimmed);
+    if (isBlockElement || trimmed.startsWith("___IFRAME_")) return trimmed;
     return `<p>${trimmed}</p>`;
-  }).join("\n");
+  }).filter(Boolean).join("\n\n");
 
   // Restore iframes
   html = html.replace(/___IFRAME_(\d+)___/g, (_match, index) => {
