@@ -1,0 +1,10418 @@
+A CLASSIFIED VOCABULARY OF THE TURKANA
+IN NORTHWESTERN KENYA
+
+Itaru OHTA
+Center for African Area Studies, Kyoto University
+
+FOREWORD
+
+The Turkana people, Eastern-Nilotic speakers (Gregersen, 1977), live in a semi-desert in northwestern Kenya. They call themselves "Ngiturukana" and their language "Ngaturukana". Most of them live in the Turkana District, Rift Valley Province. The population of the District is about 140,000 (Kenya Population Census, 1979).
+
+This research on their vocabulary was carried out during my anthropological survey between July, 1982 and January, 1989, around Kakuma, a small town 120 km northwest of Lodwar, the center of the District. Their vocabulary was collected on the basis of Yukawa's questionnaire (Yukawa, 1979). The main informants were Messrs. Albert Arding, Robert Nagiro, and Lokipaka Rapo. The former two speak English and Swahili, the latter Swahili only besides Turkana. Some special terms of livestock management (Ohta, 1984; 1987) and classification of animal kingdom (Itani, 1980) have already been published.
+
+On the Turkana people, Gulliver (1951; 1955) made a pioneering ethnographical study. On their language, studies were made by Anderson (n.d.), Helme (1980), Best (1983), Dimmendaal (1983), and Barrett (1988). Studies on the languages of neighboring ethnic groups (Kiggen, 1953a; Kiggen, 1953b; Verona Fathers, 1972; Nagashima, 1983) may also be useful for those who are interested.
+
+NOTES ON THE USE OF THIS VOCABULARY LIST
+
+Examples
+[a] 54-07 clan :ategger/ngategerin;
+[b] 24-01 to eat :akinyam /TA; akimuj /KA
+[c] 46-48 to take (sb. somewhere) :akirik, arikor /TO
+[d] 1-01 head :akou/ngakes, ngakoui
+[e] 78-01 object, thing :ibore, iborosit/ngiboro
+[f] 41-16 tree-trunk :atorom/ngatoroma a eketoi
+
+1. One item has a serial number, English, and Turkana.
+2. The number before the hyphen (54 in Example [a]) indicates that this term belongs to the 54th category (i.e. Society) of the following classification list, and the number after the hyphen (07 in Example [a]) indicates that this is the 7th item in the category.
+3. When several terms of the Turkana are applicable to one item, Turkana terms are delimited by "," as in Examples [a] and [b].
+4. Abbreviations following Turkana verbs (/TA, /TO, /KA, /KO) indicate whether the verb is a TO-verb (/TA, /TO) or KI-verb (/KA, /KO), and whether its characteristic vowel is "A" (/TA, /KA) or "O" (/TO, /KO).
+5. Verbs derived from the same stem are delimited by "," as in Example [c].
+6. Singular and plural forms of nouns are delimited by "/" as in Examples [a], [d], [e], and [f].
+
+
+---
+
+
+1. HUMAN AND ANIMAL BODY
+1. Head P. 5
+2. Body 5
+3. Arm 6
+4. Leg 6
+5. Inside of body 7
+6. Anatomy of livestock 8
+7. Physiological phenomena 10
+8. Senses 11
+II. ILLNESS AND INJURY
+9. Illness; diseases 11
+10. Mental disorders 12
+11. Injuries 13
+12. Skin diseases 14
+13. Symptoms 14
+14. Physical handicaps 14
+15. Treatments 15
+16. Livestock diseases 16
+III. CLOTHING AND DRESSES
+17. Clothing 17
+18. Sewing 17
+19. Dresses; make-up 18
+20. Traditional dresses and ornaments 18
+IV. EATING
+21. Food 20
+22. Cooking 20
+23. Tableware 21
+24. Eating 22
+25. Condition of food 23
+V. DWELLING AND HOUSEHOLD
+26. House 24
+27. Furniture 25
+28. Cleaning 25
+VI. KINSHIP
+29. Family 26
+30. Marriage 27
+31. Childbirth and rearing 29
+VII. HUMAN BEING
+32. Human being 30
+33. Death 30
+VIII. ANIMALS
+34. Domestic animals 31
+35. Wild animals 33
+36. Hunting 34
+37. Reptiles, etc. 35
+38. Fish 35
+39. Birds 35
+40. Insects and worms 36
+IX. PLANTS
+41. Plants 38
+42. Crops 39
+43. Cultivation and harvests 40
+X. BODY ACTIONS
+44. Sleeping 41
+45. Body actions 41
+46. Movements 43
+XI. DAILY LIFE
+47. Work 45
+48. Fire 46
+49. Water 47
+XII. SOCIAL LIFE
+50. Languages 48
+51. Play 50
+52. Quarrel 51
+53. Giving and Receiving 52
+54. Society 53
+55. Politics 55
+56. War 55
+XIII. MENTAL LIFE
+57. Feelings 56
+58. Mental activities 57
+59. Number and counting 58
+60. Religion 59
+XIV. ACTION TOWARD THINGS
+61. Movement of things 61
+62. Connecting and disconnecting 63
+63. Transformation 64
+64. Breaking; destruction 65
+65. Other kinds of action toward things 66
+
+
+---
+
+
+XV. THINGS
+66. Parts of things p. 66
+67. Relation to things 66
+68. Colors and shapes 67
+XVI. NATURAL PHENOMENA
+69. Natural phenomena 67
+70. Light and sound 69
+XVII. GROUND
+71. Geographical features 69
+72. River 70
+73. Ground and minerals 71
+XVIII. TIME
+74. Time 71
+XIX. NATURE OF THINGS
+75. Nature of things 74
+XX. GENERAL (ACTIONS)
+76. Beginning and ending 76
+77. Other verbs 76
+XXI. GENERAL (THINGS)
+78. General (things) 77
+XXII. MISCELLANY
+79. Pronouns, etc. p. 77
+80. Interrogatives 78
+81. Adverbs and conjunctions 78
+82. Greetings, etc. 78
+Appendix 1.
+Age-sex Classification
+of livestock 80
+Appendix 2.
+Horn shape classification 81
+Appendix 3.
+Ear marking classification 82
+Appendix 4.
+Coat color classification 83
+Appendix 5.
+English Index 84
+Appendix 6.
+Turkana index 93
+
+
+---
+
+
+Itani, J. 1980. The Turkana's view of nature. In (J. Tanaka ed.) A Study of Ecological Anthropology on Pastoral and Agrico-Pastoral Peoples in Northern Kenya. Kyoto University Primate Research Institute, Inuyama.
+Kenya Population Census 1979. Central Bureau of Statistics, Ministry of Economic Planning and Development, Republic of Kenya.
+Kiggen, J. 1953a. English-Ateso Dictionary. The Tanganyika Mission Press, Tabora.
+——. 1953b. Ateso-English Dictionary. The Tanganyika Mission Press, Tabora.
+Nagashima, N. & J. E. E. Elungata 1983. Basic Vocabulary of Kenyan Ateso. Department of Social Anthropology, Hitotsubashi University, Kunitachi.
+Ohta, I. 1984. Symptoms are classified into diagnostic categories: Turkana's view of livestock diseases. African Study Monographs, Supplementary Issue, 3: 71-93.
+——. 1987. Livestock individual identification among the Turkana: The animal classification and naming in the pastoral livestock management. African Study Monographs, 8(1): 1-69.
+Verona Fathers 1972. Karimojong Dictionary. Marianum Press, Kisubi.
+Yukawa, Y. 1979. A tentative questionnaire for the words of Bantu languages. Journal of Asian and African Studies, 17: 139-212.
+——Received July 7, 1989.
+Author's Name and Address: Itaru OHTA, Center for African Area Studies, Kyoto University, 46, Shimoadachi-cho, Yoshida, Sakyo, Kyoto 606. Japan.
+
+
+---
+
+
+I. HUMAN AND ANIMAL BODY
+1. Head
+1-01 head
+1-02 brain
+1-03 spine
+1-04 occiput
+1-05 hair of head
+1-06 white hair
+1-07 baldness
+1-08 face
+1-09 forehead
+1-10 wrinkles
+1-11 eye
+1-12 eyebrow
+1-13 eyelid
+1-14 eyelash
+1-15 eyeball
+1-16 pupil of eye
+1-17 nose
+1-18 nostril
+1-19 mouth
+1-20 lip
+1-21 tongue
+1-22 uvula, meat of uvula
+1-23 meat of uvula and
+gums
+1-24 tooth, incisor
+1-25 molar
+1-26 canine
+1-27 cheek
+1-28 side head
+1-29 lower jaw, chin
+1-30 beard, mustache
+1-31 ear
+1-32 earlobe
+1-33 neck
+1-34 area from neck to
+chest
+1-35 nape
+1-36 throat
+1-37 tonsil
+1-38 Adam's apple
+2. Body
+
+: akou/ngakes, ngakoui
+: ngadam
+: eutune/ngiutune
+: amedo/ngamedoi (lit. os occipitale)
+: etimat/ngitim
+: akoruoit/ngakoruuo
+: angole/ngangolei (this term also means white
+patch on the forehead of livestock);
+apaire/ngapairei (lit. scar of the burn on the
+skin, bald place without plants);
+apalore/ngapalorei (this term means that
+nothing exists on the surface, e.g. desert)
+: ereet/ngireetin
+: akitapa/ngakitapai
+: arinyoit/ngarinyo
+: akong/ngakonyen
+: akiirit/ngakiir
+: amuny a akong (lit. skin of eye)
+: akiirit/ngakiir
+: ecopot/ngicop; eburet/ngibure (lit. globe)
+: itaok a akong
+: ekume/ngikumes
+: epuke/ngipukei a ekume
+: akituk/ngakituka
+: eponoi/ngipon
+: angajep/ngangajepa
+: angirit/ngangirito
+: ejakileit/ngijakilei
+
+: ekyalai/ngikyal
+: ekaturoongot/ngikaturoongoi
+: lokyalaangok/talokyalaangok (lit. teeth of dog)
+: amatengen/ngamatengen
+: ekitinyo/ngikitiny
+: abokony/ngabokonyin
+: epenek/ngipeneka
+: akit/ngaki
+: ebonibonit/ngibonibon
+: eluute/ngiluutei
+: emosiring/ngimosiringan
+
+: asidikidik/ngasidikidikya;
+esigirigir/ngisigirigiryo (lit. mane)
+: edokole/ngidokolei
+: egooroit/ngigooroi
+: etole/ngitolei (lit. dewlap of cattle, etc.)
+
+
+---
+
+
+2-04 body hair (which is
+straight and long, e.g. d
+2-05 to be hairy
+2-06 shoulder
+2-07 chest
+2-08 breast
+2-09 teat
+2-10 belly, abdomen
+2-11 pit of stomach
+2-12 navel
+2-13 lower belly
+2-14 armpit
+2-15 hair of armpit,
+underarm hair
+2-16 side of body
+2-17 back of waist
+2-18 loin
+2-19 back of body
+2-20 back: lower half
+2-21 back: lower than
+2-20, higher than 2-22
+2-22 hip, buttock
+
+2-23 anus
+2-24 penis
+2-25 testicle
+2-26 vulva
+2-27 clitoris
+2-28 pubic hair
+
+3. Arm
+
+3-01 arm
+3-02 hand
+3-03 palm of hand
+3-04 back of hand
+3-05 fist
+
+3-06 finger, toe
+3-07 thumb
+3-08 forefinger
+3-09 middle finger
+3-10 third finger
+3-11 little finger
+3-12 fingernail
+3-13 wrist
+3-14 upper arm
+3-15 forearm
+3-16 elbow
+
+4. Leg
+
+4-01 leg, foot
+
+: esulot/ngisul
+donkey's tail)
+: acekes /TA
+: ekeper/ngikeperin
+: erarum/ngirarumo
+: ekisina/ngikisin; esikina/ngisikin
+: etupanit/ngitupan
+: akooki/ngakookis
+: esidepidep/ngisidepidepyo
+: akapoli/ngakapolya
+: alipong/ngaliponga
+: akirididi/ngakirididya
+: etimat a akirididi
+
+: esep/ngisepyon
+: aabor/ngaaborya (lit. rear, backward)
+: alidet/ngalideta a aabor (alidet: a hollow)
+: akau/ngakauwa
+: eguru/ngigurai
+: acir/ngacirin
+
+: ekawosiwosit/ngikawosiwosi; epateit/ngipate
+(lit. meat in the area of back of the upper thigh)
+: ewosin/ngiwosi
+: amiri/ngamiryo
+: etout/ngitou
+: akibony/ngabonyo
+: emonire
+: etimat a alipong; ajulot a alipong
+
+: akan/ngakan
+: nidapal a akan
+: tooma a akan (lit. inside of hand)
+: kidyaama a akan
+: abunakinet a akan (abunakin: to grasp);
+: akilulung a akan (akilulung: to make round)
+: ekimuun/ngimoiyo
+: ekimuun loapolon (lit. big finger)
+: ekimuun looci (lit. small finger)
+: ekimuun loaloking (lit. finger in the middle)
+: ekimuun looci (lit. small finger)
+: ekimuun lokewesan
+: emaagerit/ngimaager; emaagoroit/ngimaagor
+: egecot/ngigece
+: akalokingding/ngakalokingdingo a akan
+: ekipiis/ngikipiiso a akan
+: ekurunyunu/ngikurunyunya;
+: esidongoror/ngisidongorora
+
+: akeju/ngakejen
+
+
+---
+
+
+4-05 upper part of leg
+4-06 lower part of leg
+4-07 shin
+4-08 calf of leg
+4-09 ankle
+4-10 foot
+4-11 sole
+4-12 heel
+4-13 footprint
+4-14 footsteps, footfalls
+5. Inside of body
+5-01 bone
+5-02 bone marrow
+5-03 joint
+5-04 skull (human skull including lower jaw)
+5-05 shoulder blade,
+5-06 collarbone, clavicle
+5-07 breastbone, sternum
+5-08 rib
+5-09 backbone
+5-10 hip bone
+5-11 blood
+5-12 vein
+5-13 tendon
+5-14 heart
+5-15 diaphragm
+5-16 trachea
+5-17 lung
+5-18 esophagus
+5-19 stomach, the 1st stomach of ruminants
+5-20 the 2nd stomach of ruminants
+5-21 the 3rd stomach of ruminants
+5-22 the 4th stomach of ruminants
+5-23 liver
+5-24 spleen
+5-25 gall-bladder
+5-26 bile
+5-27 intestine, small intestine
+5-28 large intestine
+5-29 kidney
+5-30 urinary bladder
+5-31 placenta
+
+: akalokiding/ngakalokidingo a akeju
+: ekipiis/ngikipiiso a akeju
+: akatoroongot/ngakatoroongoi
+: akiring a ekipiis (lit. meat of lower part
+ of leg)
+: etobolait/ngitobolai
+: akiceket/ngakiceketa (akicak: to step on);
+ nidapal a akeju
+: etau a akeju (lit. heart of foot);
+ tooma a akeju (lit. inside of foot)
+: atitinyo/ngatitiny
+: akeju/ngakejen (lit. foot);
+ akiceket/ngakiceketa (akicak: to step on)
+: aruonut a akeju (lit. sound of foot)
+
+: akoit/ngakoityo
+: akimet a akoit (lit. oil of bone)
+: atubet/ngatubeta (akitub: to cut off)
+: akulului/ngakululuyo
+
+: akoit a eseget
+: akoit a elaagamit
+: akoit a atorob
+: amaran/ngamaran
+: akoit a eguru
+: akoit a ekalokot
+: ngaakot
+: akep/ngakepa
+: amorit/ngamori
+: etau/ngitai
+: akab/ngakabua
+: eporoto/ngiporotoi
+: euko/ngiukoi
+: lonya/talonya
+: aboi/ngaboi
+
+: amekeni/ngamekeni
+
+: apunuka/ngapunukai
+
+: atenus/ngatenusyo
+
+: emany/ngimanyin
+: etid/ngitidai
+: apid/ngapidya
+: ngakipi a apid (lit. water of gall-bladder)
+: amalitenyit/ngamaliteny
+
+: epooli/ngipoolya
+: engalura/ngingalur
+: ekulam/ngikulamya
+: engesep/ngengesepa
+
+
+---
+
+
+6. Anatomy of livestock
+6-01 skull (animal skull excluding lower jaw) : abelekek/ngabelekekya
+6-02 muzzle part of skull : ngasue
+6-03 a part of muzzle of skull : ngakatarabai
+6-04 frontal part of skull (which remains after taking off the muzzle part of skull <ngasue> 6-02 from <abelekek> 6-01) : epura/ngipurai
+6-05 bone inside the ear : eperekecuna/ngiperekecunai; ekulo/ngikuloi
+6-06 meat of uvula and gums : angirit/ngangirito
+6-07 forelimb : akuwat/ngakuwas
+6-08 area around shoulder blade : eseget/ngisegeta
+6-09 cartilage on the edge of shoulder blade : ekapeleekat/ngikapeleekai; etangarubobo/ngitangarooobi
+6-10 upper arm, brachium : areteny/ngaretenyo (when roasted); akalokiding/ngakalokidingo a akuwat (when boiled)
+6-11 upper half of upper arm : enyamu a areteny
+6-12 lower half of upper arm : nakibony a areteny
+6-13 forearm : asukonguro/ngasukonguroi (when roasted); ekipiis/ngikipiso a akuwat (when boiled)
+6-14 upper half of forearm : ekurunyunu a asukonguro
+6-15 lower half of forearm : akung a asukonguro
+6-16 head of ulna : ekurunyunu/ngikurunyuna; esidongoror/ngisidongorora (lit. elbow)
+6-17 hind leg : amuro/ngamuroi
+6-18 thigh (area of femur) : akilelyang/ngakilelyanga (when roasted); akalokiding/ngakalokidingo a amuro (when boiled)
+6-19 upper half of thigh : nakibony a akilelyang
+6-20 lower part of thigh : enyamu a akilelyang
+6-21 head of femur : ejutanyit/ngijutanya
+6-22 meat in the area of front thigh : amanakileng/ngamanakilenga
+6-23 meat in the area of back of thigh : epateit/ngipate
+6-24 cartilage around the knee joint, or in the foot of camels : egei/ngigeya
+6-25 meat in the back of knee joint : apokupok/ngapokupokya
+6-26 area of tibia : ekipiis, ekipiisit/ngikipiiso
+6-27 upper part of tibia : enyamu a ekipiis a amuro
+6-28 lower part of tibia : nakodoso a ekipiis a amuro
+6-29 joint of ossa metatarsalia and os digitorum, knee joint : akilibicet/ngakilibico; akibilicit/ngakibilico
+6-30 head of os calcis : nakodoso/ngakodoso
+6-31 spur of a ruminant's leg : egecot/ngigece
+
+
+---
+
+
+6-32 foot of animals
+: emolokonyit/ngimolokony (lit. area of ossa
+digitorum, area beneath the knee or hock of
+animals)
+6-33 hoof
+: emaagoroit/ngimaagor
+6-34 area consisted of
+: amosiling/ngamosilingai (consisted of <akou>
+head, neck, rib and
+1-01, <eluute> 1-33, and <ngicocok> 6-35)
+upper back
+6-35 area consisted of
+: ngicocok
+rib and upper back
+6-36 chest to belly
+: atorob/ngatorobo
+6-37 flank
+: akolikoli/ngakolikolya (a part of <atorob>
+6-38 flank (a part of)
+: apol/ngapolya
+6-39 costal cartilage
+: engaretanit/ngingaretan
+6-40 sternum
+: akacoromoit/ngakacorom
+6-41 area around collar
+: elagamit
+bone
+6-42 area around the top
+: asalikait/ngasalika
+of sternum, around dewlap
+6-43 horny pad on the
+: aekit/ngaekita
+chest of a camel
+upper half of dewlap
+: abokolim/ngabokolimo a ngicocok
+area
+lower half of dewlap
+: abokolim/ngabokolimo a atorob
+area
+6-46 area beneath the
+: akorimeu/ngakorimeuo: akadalat/ngakadalai
+shoulder blade
+6-47 area between base of
+: amejakut/ngamejakui
+neck and back
+hump of camels &
+: aruk/ngarukya
+zebu cattle
+side of body (9-13th
+: esep/ngisepyon
+ribs)
+6-50 area of 10-11st
+: eguru/ngigurai
+dorsal vertebra to 2-3rd
+6-51 meat of back of
+: lomorokin
+lumbar vertebra
+<eguru> 6-50
+6-52 area behind 3-4th
+: acir/ngacirin
+lumbar vertebra
+6-53 top area of <eguru>
+: akaluwat/ngakaluwai
+6-50 & <acir> 6-52
+6-54 meat around os
+: engobot/ngingoboto
+sacrum
+6-55 area around hip bone
+: ekalokot/ngikalokoi
+6-56 area of <acir> 6-52
+: etudeit/ngitudei; etuli/ngitulin
+& <ekalokot> 6-55 together
+6-57 area around tuber
+: ekisongot/ngikisongoi
+ischiadicum
+6-58 base of bones, ears,
+: atorom/ngatoroma
+and teeth
+6-59 joint
+: esingiremem/ngisingirememya
+6-60 area of tongue,
+: aropio
+esophagus, trachea, lung and heart together
+6-61 udder of mammal
+: aeket/ngaeketa
+6-62 part found in the
+: akiryat/ngakirya (akiryat na aeket; akiryat na
+udder or testicles
+etout)
+of an animal
+
+
+---
+
+
+6-63 fiber taken from : aput/ngaputon
+tendons
+6-64 meat which was cut : apoet
+together with the hide while skinning and stripped off afterwards
+6-65 meat which is pared : ngakidanges
+from inside of a hide after stripping off <apoet> 6-64
+6-66 fat around the tail : asonyok/ngasonyoka
+of sheep
+6-67 tendon along the : alari/ngalari
+back bone
+
+7. Physiological phenomena
+
+7-01 tears : ngakiyo
+7-02 to shed tears : atoiyar ngakiyo /TA (ngakiyo: 7-01)
+7-03 to wink : akiruap /KA
+7-04 nasal mucus : esuruma/ngisuruma
+7-05 to blow one's nose : akiuny, aunyun /TA
+7-06 to pick one's nose : akimidimid /KA; akibek ekume /TA (akibek: to
+dig up); akitak ekume /KA (akitak: to take out
+sth. by fingers)
+7-07 to twitch one's nose : akinyaiyo /KO (this term conveys a sense of
+insulting sb.)
+7-08 [heart] to beat : akidong etau /KA
+7-09 [heart] to beat : akidong etau lokajokon /KA
+quickly, to throb with excitement
+7-10 breath : ekiyanganu
+7-11 to breathe : akiyanga /KA
+7-12 to breathe quickly : akiyanga atipei /KA
+7-13 to breathe in : akiyanga tooma /KA
+7-14 to breathe out : akiyangar /KA
+7-15 to blow : akitule, akitulekin /KO
+7-16 spittle, saliva : akimulat/ngakimul
+7-17 to spit out : akima, akimaar /KA (lit. to push sth. out of
+mouth); aruwatar /TA
+
+7-18 phlegm : arukom
+7-19 cough : awala/ngawalasya
+7-20 to cough : awalakin /TA
+7-21 yawn : angaam/ngangaamayreta
+7-22 to yawn : angaamiar /TA
+7-23 hiccup : akisiga/ngakisigeta
+7-24 to hiccup : akisigar /KA
+7-25 sneeze : akikarisa/ngakikariset
+7-26 to sneeze : akikarisiar /KA
+7-27 to belch : akiyarakin /KA
+7-28 sweat : ngakinyir
+7-29 to sweat, : akinyinyir /KA (kenyinyirit ayong; I sweat)
+to perspire
+7-30 to sweat slightly : akisim /KA
+7-31 dirt or grime on the : elos/rgilosyo
+body
+7-32 urine : ngakul
+7-33 to urinate : akiloat /KA
+7-34 feces : ngacin
+7-35 to defecate : akibobon /KA
+7-36 breaking wind, fart : ngacin
+7-37 to break wind : aukin /TO
+
+
+---
+
+
+8. Senses
+8-01 to see : akingolikin /KA
+8-02 to look at : akitere /KO
+8-03 to look at carefully : acuan /TA
+8-04 to find : aanyungar /TA
+8-05 to find, to see : aanyun /TA
+8-06 to be in sight : atakan, atakanuun /TA
+8-07 to disappear : angopiar /TA
+8-08 to obstruct the : akirap /TA; akiterebiyor /KO
+sight
+8-09 to watch, to stare : akingolikin noi /KA; akitere noi /KO;
+8-10 to look for, : akiyokuun /KO
+to search : akisak /TA
+8-11 to look around : angolengol /TA
+8-12 to look toward : akingoliar /KA
+[sth.]
+8-13 to peek, to peep : akirip /TA
+8-14 to look into [sth.] : aroun /TA
+8-15 to watch over, : akiyok /KO (lit. to herd animals)
+to keep guard over
+8-16 to notice : aanyun /TA; akiyen /TA
+8-17 to show : akidodikin /KA; akitoodikin /KA
+8-18 to hear : aklerar /KA (lit. to understand, to agree)
+8-19 to listen to, : apupokin /TO
+to hear
+8-20 to strain one's ears : amisikin /TA (lit. to pay attention, to
+suspect); atakar akit /TA
+8-21 smell : aurus
+8-22 to smell, to sniff : akingore /KO
+8-23 [sth.] to smell : aurun /TO
+8-24 to smell bad, : abos /TA
+to stink
+8-25 to smell good : akukuny, akukunyuun /TO
+II. ILLNESS AND INJURY
+9. Illness; diseases
+9-01 illness, disease : edeke/ngidekei, ngidekesinel
+9-02 to become ill : adyak, adyakakin /TA
+9-03 to infect : atapakin /TA (katapak ayong iyong arukom: I
+infect you cold)
+9-04 patient, invalid : ekadyakan/ngikadyakak (adyak: 9-02)
+9-05 to be in good health : aduwarun /TA; akiyar akwan /TA
+9-06 cold : arukom
+9-07 to catch cold : akirum /KA (kerum ayong arukom: I have
+caught cold)
+9-08 malaria : elekes/nglekesinel (lit. to be feverous and
+to shiver)
+9-09 tetanus : eteregege
+9-10 paralysis (in the : agule (infantile paralysis, paralysis caused
+limbs) by brucellosis, etc.)
+9-11 hydrocele testis, : ague
+swelling in testicles
+
+
+---
+
+
+9-12 coxitis [?]
+9-13 alveolar pyorrhea
+9-14 venereal disease
+9-15 dizziness, fainting
+9-16 hemoptysis,
+coughing up blood
+9-17 jaurdice, hepatitis
+9-18 stiff shoulders
+9-19 tonsillitis
+9-20 heart disease
+9-21 Guinea worms
+9-22 respiratory disease
+9-23 enlarged spleen
+9-24 enlarged liver
+9-25 edema,
+nephritis syndrome
+9-26 eye disease
+9-27 disease of swollen
+body
+9-28 whooping cough
+9-29 disease accompanied
+by heavy headache
+9-30 disease with heavy
+diarrhea
+9-31 disease with bloody
+diarrhea
+9-32 a kind of disease
+9-33 cholera [?]
+9-34 pneumonia [?]
+9-35 epilepsy [?]
+9-36 mumps [?]
+10. Mental disorders
+10-01 madness, insanity,
+mental illness
+10-02 to go mad
+10-03 mad person
+10-04 to shout
+(like a madman)
+10-05 to babble
+10-06 foolishness
+10-07 to be stupid,
+to be foolish
+10-08 fool, idiot
+
+:cirai
+:ejota
+:elepot
+:eramtau (akiram: to beat + etau: heart.
+Dizziness caused by anemia, malaria, etc.)
+:esep {lit. side of body}
+:kuwam (ekuwam: wind. Jaurdice caused by
+hepatitis, etc.)
+:lomaazei
+:logooroi (ngigooroi: tonsils)
+:kisina (ekisina: breast. Tachy cardia caused by
+pneumonia, fever of anemia, etc.)
+:lomoritit (amoritiit: tendon)
+:euremem (difficulty in breathing, black phlegm,
+coughing, etc.)
+:etid (lit. spleen)
+:lokapet (akapet: small piece of animal hide);
+loriwo
+:sir
+:emomolit; loupe (Ngiupe: the Pokot)
+:lomezekin (ngamezekin: sheep); lobuute
+:lokid; lokud
+:lokou (akou: head)
+:lomalitenyit (amalitenyit: intestine)
+:ryok
+:lobai (symptoms of this disease are jaurdice,
+becoming skinny, crack in the skin, etc.)
+:loleewa (disease with heavy diarrhoea of white
+feces, vomiting and sudden death)
+:lomagali (disease with chest-back pain and
+vomiting blood)
+:marin (disease with a fit of fainting, caused
+by spirits <ngipyan> 60-08)
+:tumulado (akitum: to become fat + elado: 20-24)
+:ngikerep
+:akikerepikin /KO
+:ekerepit/ngikerep; etuuwai/ngituuwai
+:acala, acalakin /TA
+:akiyan ngikerep, akiyan ngakiro a ngikerep /KA
+:abangaanut; abangibang
+:akibangabang /TA
+:ekabangabangat/ngikabangabangai;
+ekabangibangit/ngikabangibang
+
+
+---
+
+
+11. Injuries
+11-01 to injure
+11-02 [sb.] to bleed
+11-03 wound
+11-04 wound on the head
+11-05 wale, weal
+11-06 bump, lump
+11-07 to get a bump
+11-08 pus
+11-09 scab
+11-10 scar
+11-11 to have a dislocated
+11-12 joint
+11-12 to get a part of
+11-13 body barked
+11-13 to limp
+12. Skin diseases
+12-01 swelling, growth,
+12-02 boil
+12-02 to swell
+12-03 [boil] to burst open
+12-04 burn
+12-05 to get burnt
+12-06 water blister
+12-07 mole
+12-08 wart
+12-09 pimple
+12-10 corn
+12-11 ringworm
+12-12 ringworm
+12-12 (on the head)
+12-13 scabies
+12-14 sore caused by thorn
+12-14 stick, etc.
+12-15 a kind of swelling
+12-16 crack in the foot
+12-17 sore caused by
+12-17 wearing beads on the neck
+12-18 sore in and/or
+12-18 between toes
+12-19 measles, common-pox,
+12-19 small pox, chicken pox
+12-20 inflammation on the
+
+: akiwan /TA
+: akii /TA
+: ajeme/ngajemei; adungot/ngadungon (lit. cut by
+knives, etc. akidung: to cut by knives, etc.);
+acilat/ngacilan (lit. scratch by thorns, etc.
+akicil: to tear); apocot/ngapoco (lit. an
+abrasion, a graze)
+: ajeme a nakou
+: emacar/ngimacarin
+: elibokok/ngilibokoka
+: eiei elibokok (lit. there is a bump)
+: ngabulon
+: akabokoiyat/ngakabokoiyata
+: emacar/ngimacarin; apaire/ngapairei (wide scar
+of burn, etc.)
+: ariangakin /TA
+
+: abutor akwan /TO
+
+: akicodo /KO
+
+: abus/ngabusyon
+
+: abuore /TO; akilingiar /KA; akitar /KA (to
+swell after being bitten by insects)
+: abulo /TO
+: anomat/nganoman (akinom: 12-05)
+: akinom /KA
+: elebileb/ngilebilebuo (akilebileb: to fill
+[e.g. a bottle] by liquid)
+: akemer/ngakemera
+: etomitomit/ngitomitom
+: ekangokit/ngikangoki
+: ebaibai (akiba: to get a crack)
+: akiserit; etubukai
+: ekururuwa
+
+: ameriwosin
+: ekamicirit/ngikamiciroi
+
+: elepunait/ngilepunai
+: abaat/ngabaata (akiba: to get a crack)
+: ekaremony
+
+: esidengidengit
+
+: puuru
+
+: enomokere
+
+
+---
+
+
+13. Symptoms
+13-01 to ache, : akiriyeb /TA; apipil /TA
+to be painful
+13-02 to itch : akipi, akipere /KA
+13-03 to scratch : akiko /TO
+13-04 dizziness : akirare
+13-05 to feel dizzy, : akiryauu /KA; akimutet /KO (kemutete ayong
+to feel dizzy akou: I feel dizzy)
+13-06 to have heartburn : akico /KA
+13-07 to feel nausea : akilele /KA (kelele ayong ibore, kelele
+ayong etau: I feel sick)
+13-08 to vomit : akilek, alekun /TA
+13-09 to have no appetite : akituuriyor /KO
+because of illness
+13-10 to become tired : aburun /TA (kaburunit ayong: I feel tired);
+akilo /KA (keloit ayong: I feel tired)
+13-11 numbness, paralysis : esaali (kating ayong esaali: I got paralyzed,
+etingit akeju na kang esaali: my leg has
+paralysis)
+13-12 to become numb : akisaalikin /KO (kesaalikinit ayong: I become
+numb)
+13-13 to shiver : amaran /TA
+13-14 to faint : akimutet /KO; akirakar /KA
+13-15 to come to oneself, : akikorun /KA; akikuwarun /KA
+to wake from a faint or coma
+13-16 to suffer from pain : ariyeb /TA
+13-17 to groan : akunua /TA
+(because of pain)
+13-18 fever : amonis; erirae (arira: 13-19)
+13-19 to be feverous : arira /TA
+13-20 to have diarrhea : akiurut /KO
+14. Physical handicaps
+14-01 lame person : ekecodon/ngikecodok (akicodo: to limp)
+14-02 walking stick : akicogoaet/ngakicogoeta
+(for a lame person)
+14-03 to become crippled : akingual /KA
+14-04 crippled person : ekangualan/ngikanguardak (akingual: 14-03)
+14-05 to become blind : amudukan /TO
+14-06 blind person : emudukal/ngimudukanak
+14-07 to become deaf and : akinim /KA
+dumb
+14-08 dumb and deaf person : ekiming/ngikiming; ekakinimanan/ngikakinimananak
+(akinim: 14-07)
+14-09 [dumb] to stammer, : akiyegayega eroworo /KA (akiror: to speak)
+to stutter
+14-10 dumb person : ekeyagagayan/ngikeyagayagak (akiyegayega:
+14-09)
+15. Treatments
+15-01 to stroke, to pat, : akiwa /TA; apiar /TA
+to smooth, to rub
+15-02 to press swelling in : akibul /TO
+order to drain the pus
+
+
+---
+
+
+15-03 to squeeze with : akiret /TO (lit. to sweep off)
+fingers (a kind of massage)
+15-04 to press with : akicem /KA
+fingers (a kind of massage)
+15-05 to press with : akicak /KA
+finger-tips (a kind of massage)
+15-06 to crack one's : akidu /KA
+joints (a kind of massage)
+15-07 to extract a thorn : adotun /TO (lit. to pull out)
+by pulling with fingers
+15-08 to extract a thorn : akiku, akuun, akuare /TA
+by using another thorn
+15-09 to extract a thorn : akiluk, alukun /TA
+by using knives, etc.
+15-10 to suck out : akinak /TA
+15-11 to smear medicine : akiwasakin /KA; akirigare /KA (lit. to rub, to smear)
+15-12 medicine : eketoi/ngikyoto
+15-13 to phlebotomize for : akidung /TO (lit. to cut)
+treatment of disease
+15-14 to foment : akimad /KA
+15-15 to bandage : akirap /TA (lit. to wrap, to cover);
+akiyen /TA (lit. to tie)
+15-16 to bleed by cupping : akinak /TA (lit. to suck)
+15-17 cupping-horn : amatet/ngamateta
+15-18 to rest : akiyangar /KA
+15-19 to fan : akipukpuk /KO
+15-20 to expose oneself to : akitukutakin ekuwam /KA
+the wind to feel cool
+15-21 to cure : akitangalekin /KO
+15-22 to recover, : ajoker /TO; angalekin /TO
+to become cured
+15-23 to nurse, to treat : akitedek /KA
+15-24 doctor : emuron/ngimurok
+15-25 nurse : eketedyakan/ngiketedyakak (akitedek: 15-23)
+15-26 to divine : akiduwar /TA (to foretell by dreaming)
+15-27 to divine : akitam /TA
+15-28 to divine : akituwa, atuware /TA (to divine by utilizing
+calabash, rope, etc.)
+15-29 to divine : akisemere etaba; akisemere ngamaliteny /KO
+(to divine by reading tobacco, animal intestines)
+15-30 to divine : akilalamam ngamuk /KA (to divine by
+throwing sandals)
+15-31 traditional doctor, : emuron/ngimurok
+medicine man, diviner, prophet
+15-32 diviner, prophet : ekaduwaran/ngikaduwarak (akiduwar: 15-26)
+15-33 diviner, prophet : ekataman/ngikatamak (akitam: 15-27)
+15-34 diviner, prophet : ekatuwan/ngikatuwak (akituwa: 15-28)
+15-35 diviner, prophet : ekesemun/ngikesemuk (akisemere: 15-29)
+15-36 to cure the one who : aokakin /TA
+is suffered from <autori etau>: a condition of the heart going away
+
+
+---
+
+
+16. Livestock diseases
+(The possible disease names for each of Turkana's category of livestock
+diseases are listed in the English column)
+
+16-01 swelling : abus
+(in general), lymphadenitis, lumpy skin disease
+16-02 bloat, : akitebukin
+swelling of stomach
+16-03 heartwater : amili (akimilyaun: to flash, to glitter)
+16-04 heartwater [?] : eihikit (akidhit: to wag tail)
+16-05 foot-and-mouth : ebaiba (abaat: crack); lojaala (akijaalat: to
+disease slaver)
+16-06 trypanosomiasis : lokipi (akipi: water); edeke lo eidiit (edeke:
+disease, eidiit: tssetse fly)
+16-07 trypanosomiasis, : lotorobo (atorob: area of chest to belly)
+anthrax
+16-08 foot-rot : ekicodonu (akicodo: to limp)
+16-09 mange mites : ekoiko (akiko: to scratch); emitina
+16-10 anthrax : loleewa (akileware: to die suddenly)
+16-11 pasteurellosis, : lookot (ngaakot: blood)
+anthrax
+16-12 anthrax, : enomokere (akinom: to burn)
+black quarter
+16-13 black quarter : lokicuma (akicum: to spear)
+16-14 goat & sheep pox : etune
+16-15 battle jaw caused by : lobolibolyo (aboliboli: front part of the neck)
+fascioliasis or Haemonchus contortus infection
+16-16 swollen neck and : logoorol (ngigooro: tonsils); longarurei
+head due to anthrax, (ngingarurei: lymph nodes in the neck)
+black quarter, etc.
+16-17 East Coast fever : lokit (akit: ear)
+16-18 East Coast fever, : loleeo
+rinderpest
+16-19 rinderpest : lokiyo (ngakiyo: tears)
+16-20 peste des petits : loutokonyen (autun: to pull out + ngakonyen:
+ruminants [?] eyes)
+16-21 anaplasmosis, : lonyang (-nyang: yellowish); lopid (apid:
+babesiosis bile)
+16-22 pink-eye : lokonyen (ngakonyen: eyes)
+16-23 joint or limb : lokoi (akoi: bone)
+paralysis caused by East Coast fever, trypanosomiasis, etc.
+16-24 CCPP, CBPP : loukoi (ngiukoi: lungs)
+16-25 difficulty in : loyoduka (akiyaduk: [heart] to beat fast)
+breathing caused by CCPP, CBPP or any
+obstruction of respiratory tract
+16-26 diarrhea caused by : lomalitenyit (amalitenyit: intestine)
+parasitism, rinderpest, East Coast fever, etc.
+16-27 diarrhea caused by : loongoricuno (-ngori: brownish + ngacin: feces)
+salmonellosis or Escherichia coli infection
+16-28 constipation [?] : nawosin (ewosin: anus, buttocks)
+16-29 stomatitis [?] : ngiborok (akiborok: to be wounded around the
+mouth)
+16-30 general term for : euremem (akiurememe: to breathe fast, to
+difficulty in
+breathing
+16-31 fever caused by many : eiyala (akiyalakin: to be feverous and dull)
+diseases
+
+
+---
+
+
+16-32 a kind of disease of male sheep in the penis : eloro (lit. a kind of mushroom)
+16-33 a kind of disease with constipation which occurs to goats & sheep kids : locit (akicirit: to have a toilet accident)
+III. CLOTHING AND DRESSES
+17. Clothing
+17-01 clothes : eworu/ngiworui
+17-02 loin cloth : atele/ngatelei; eworu lokiloga naabor (lit. cloth worn on the waist)
+17-03 to wear : akinap /TA
+17-04 to wear inside out : akibel /KO
+17-05 to clothe sb. : akitanap /KA (akinap: 17-03)
+17-06 to undress, to slip off : akilac, alacar /TA
+17-07 [clothes] to come off : acakun eworu /TA
+17-08 to help undress : akingarakin alacun /KA
+17-09 to be naked : abuter /TA; akileny /TA
+17-10 to become naked, to be naked : akitur /TO
+17-11 to loosen the dress : akilajalajaun /KA
+17-12 to draw up clothes : akipun eworu /KA
+17-13 [clothes] to become worn out : adaidaun /TA
+17-14 [clothes] to become torn : acila /TA (akici: to tear)
+17-15 to wash clothes : akilot eworu, akilotar eworu /KA
+17-16 [clothes] to become dirty and odorous : akiunukare /KA
+17-17 soap : esabuni/ngisabuni
+17-18 to rinse : akilabun, akilabar /KA
+17-19 to spread (in order to dry clothes) : alokin /TO
+17-20 [washings] to dry : awoner /TO
+17-21 to take in washings : alacun /TA; akinyak ngoorui akai /KA (lit. to return clothes into hut)
+17-22 trousers (a pair of) : ngiwoiko
+17-23 shoes (a pair of) : amukat/ngamuk
+17-24 sandals (a pair of) : adetait/ngadetidetia; amukat/ngamuk; apatupat/ngapatupatya
+17-25 to be barefoot : akitur /TO (lit. to be naked)
+18. Sewing
+18-01 thread : akiriit/ngakir; aujit/ngauji
+18-02 to spin thread : awoikin /TO
+18-03 needle : emus/ngimusya (thorn of a plant called <emus>: Euphorbia triaculeata Forsk., which is used as a needle for sewing); emutu/ngimutun (thick needle for leather work, etc.)
+18-04 to thread (a needle) : akirepakin /KA
+18-05 to pierce : akiped /TO
+18-06 cloth : eworu/ngiworui
+
+
+---
+
+
+18-07 scissors : emakasi/ngimakasi
+18-08 to measure the body : akitem /KO (lit. to test)
+18-09 to make fitting (of : akirirakin /KA
+clothes)
+18-10 to sew : akidony, adonyokin /TO
+18-11 to try on (clothes) : akining, akiningokin /KO (lit. to test, to
+try); akitem /KO (lit. to test)
+18-12 [clothes] to fit : akitemokin /KO
+18-13 to untie : akilak, alakar /TA
+18-14 to knit : akitok /TO
+18-15 to hem : akututore /KO (term for sewing hem of sheet
+in order to stop ripping)
+18-16 to patch : akidap /TA
+19. Dresses; make-up
+19-01 to wash one's face : akilotar ereet /KA
+19-02 to brush one's teeth : akisut ngikyal /KA; anyaka aketoi /TA (lit. to
+chew a twig)
+19-03 to comb : akiker /KA
+19-04 comb : akikeret/ngakikereta (akiker: 19-03)
+19-05 to plait the hair : akitok /TO (term for a kind of young men's
+hair-style); awoiyar /TO (lit. to make sth.
+long. Term for plaiting women's hair only)
+19-06 to undo (hair) : akilak, alakar /TA
+19-07 to cut the hair : akicud /TA; akitub /TO (lit. to cut)
+19-08 to shave : akibany /TA
+19-09 razor : ebanyet/ngibanyeta (akibany: 19-08)
+19-10 to bathe, : akilot akwan, akilotar akwan /KA (lit. to wash
+to wash one's body body)
+19-11 to rub one's body : akirigare /KA
+19-12 to rub off water or : akicidar /KA; akimet. ametar /TA
+sweat from the body
+19-13 to rub off dirt from : ananare /TA
+the body
+19-14 to wash lower part : akilotar ewosin /KA (lit. to wash buttocks)
+of body after defecating or urinating
+19-15 to wipe : akijut /TO (lit. to rub off); ametar /TA (lit.
+(after defecating to wipe, to rub)
+or urinating)
+19-16 to put on : akisir /TO
+accessories
+19-17 to make up oneself : akitokorian akwan /KA (lit. to decorate body)
+(with cosmetics or accessories)
+19-18 mirror : akinoket/ngakinoketa (akinok: to shine on, to
+light up)
+19-19 to smear [sth.] on : akinokakin /KA; akiwasar, akiwasakin /KA;
+the body akier /TA (term for smearing mixture of oil
+and red-clay for girls only)
+19-20 to tattoo : akiger /TA (lit. to tattoo by cutting with
+knives, etc. for decoration);
+akipiripir /KA (lit. to tattoo by pointed
+wood for decoration)
+20. Traditional dresses and ornaments
+20-01 ear-ring : amaritoit/ngamaritoi
+
+
+---
+
+
+20-02 oval-shaped metal ear ornament : akaparaparat/ngakaparaparai
+20-03 ear-ring made of small beads : epedeit/ngipedein
+20-04 necklace made of thick wires : alagama/ngalagam
+20-05 armlet : igelit/ngigel
+20-06 metal armlet : akwangat/ngakwangai
+20-07 finger-ring : ekaboobait/ngikaboobai
+20-08 beads, necklace : akoroumuwai/ngakoroumuwa
+20-09 beads made of ostrich egg shell : akirim/ngakirim
+20-10 beads for necklace : emus/ngimusyo (probably seeds of Ensete banana)
+20-11 cap, hat : apukot/ngapukoto
+20-12 cap for old men made of pelican's feather : aumo/ngaumoi
+20-13 headband for men : akalac/ngakalaca
+20-14 beads-ornament of girls worn on the head : ngalukyo
+20-15 frog (for holding flowers)-like ornament for men on which feathers are put : ngiteroi
+20-16 head ornament for men made of wire and feather : aikiiki/ngaikiikyo
+20-17 lip ornament made of ivory for men : ekyalai/ngikyal (lit. ivory, tooth)
+20-18 lip ornament worn beneath the lips : atepes/ngatepeso
+20-19 women's belt : akoli/ngakolyo
+20-20 girls' belt : aruba/ngarubai; atuko/ngatukoi
+20-21 newly married women's belt : akipetes/ngakipetesya
+20-22 belt-like ornament for girls decorated by beads : eboli/ngibolyo
+20-23 leather ornament worn beneath the knee : akopot/ngakopoi
+20-24 whip-like ornament used while dancing, worn on the arm : elado/ngiladoi
+20-25 girls' front apron : ekude/ngikudei; esia/ngisiai; arac/ngaraca
+20-26 married women's front apron : aduwel/ngaduwelin
+20-27 married women's back-apron : abuo/ngabus
+20-28 back-apron for old men worn around the waist : edyongo/ngidyongoi
+20-29 large sheep skin worn by women on the front : egolos/ngigoloso
+20-30 animal hide worn by old men on the back : akaluwat/ngakaluwai
+20-31 leather ornament decorated with beads for girls worn on the back, from neck to waist : aremai/ngaremai
+20-32 walking stick : aburo/ngaburoi; amolok/ngamolokin; ebela/ngabelai; eiyomis/ngiyyomiso; esebo/ngiseboi
+20-33 cudgel, heavy stick : asoogat/ngasoogai
+
+
+---
+
+
+21. Food
+21-01 food : akimuj/ngamuja
+21-02 flour, meal : ngakirya
+21-03 stiff porridge (Sw. ugali) : atap/ngatapai, ngatapya
+21-04 to cook stiff porridge : akipore atap /KO
+21-05 stirring stick for cooking porridge, broth, etc. : egec/ngigeca
+21-06 bread : amukati/ngamukati
+21-07 alcoholic drink : epurot/ngipuroto, ngipuron;
+epurot lokiryoon (lit. clear and transparent alcoholic drink, i.e. spirits);
+epurot loongori (lit. gray alcoholic drink, i.e. fermented drink e.g. beer, etc.)
+: akisileware /KA (akisileware: 21-09);
+21-08 [alcoholic drink] to be strong eduwar epurot
+21-09 to get drunk : akileware /KA; amera /TA
+21-10 to ferment : akitababar /KA (lit. to make sth. sour)
+21-11 to become fermented : akulaun /KA (lit. to be boiling)
+21-12 to filter : akil /TA
+21-13 salt : amakat/ngamakata
+21-14 chilli pepper : ekamaler/a/ngikamalerai; epilipili/ngilipilyo
+21-15 oil, grease, fat : akimet/ngakimeta
+21-16 to make oil : akisub akimet /TA;
+akidorokin akimet /KO (lit. to cook ghee, i.e. to make ghee by boiling butter-milk)
+: akitekeeyar akimet /KA
+21-17 to melt grease by heating
+21-18 sugar : esukari/ngisukari
+21-19 tea : ecai/ngicain; emejen/ngimejenin
+21-20 tobacco : etaba/ngitab
+21-21 soda eaten with chewing tobacco : amaka/ngamakata
+21-22 soda container : asepede/ngasapedei
+21-23 snuff : asiji/ngasiji
+21-24 pipe : amakale/ngamakalei
+21-25 to smoke tobacco : akimat etaba /TA
+22. Cooking
+22-01 to cook : akipore /KO
+22-02 to boil, to stew : akidorokin /KO
+22-03 [water] to boil : akulaun /KA
+22-04 to boil (water) : akitukulaun /KA
+22-05 [water] to become hot : arira, ariraun /TA
+22-06 to bubble because of boiling : akiwalar /KA
+22-07 to foam : akuun /TO
+22-08 to boil over : akipecun /KA (lit. to overflow)
+22-09 to boil for many hours : akikulare /KA
+
+
+---
+
+
+22-10 to stir (stew) : akigur, akigurokin /KO: akipir, akipirakin /KA
+22-11 steam : apuru/ngapurusyo
+22-12 to roast, to grill : akipe /TO
+22-13 to fry : akikuring /KO
+22-14 to become well : akonere /TO
+cooked
+22-15 [meat] to be raw, : ajon /TA
+to be not-cooked enough yet
+22-16 raw meat : ereng akiring (lit. red meat)
+22-17 [meat] to become : akiumakin /KA
+rot, to spoil
+22-18 cooking-stone : ekyaal/a/ngikyaal
+22-19 to put a pot on fire : akidorokin /KO (lit. to cook by boiling);
+akawaakin amoti lokyono /KA (lit. to put
+cooking pot on the fire)
+22-20 to take off a pot : akitaatoun /KO
+from fire
+22-21 to warm (food) : akitomonun /KA (amonun: to be hot)
+22-22 to share food to : akikor /TA
+several people from the pot
+22-23 to dish up food : akiwod /TO: akiwok /TO
+22-24 to pour : akidok, akidokakin /KA
+22-25 to fill (a bottle) : akileleb, akileleleb /KA
+22-26 to become full : akilelebun /KA
+22-27 to overflow : akipecun /KA
+22-28 to pour out : akibuk /TO (22-29)
+22-29 to empty (a bottle) : akibuk /TO
+22-30 [bottle] to be empty : awoner /TO (lit. to dry up)
+22-31 empty bottle : elapat ecupa
+22-32 [bottle] not to dry : acokocok /TA
+up, not to be exhausted
+22-33 to season : akipur /TO (lit. to fumigate wooden milk
+container by putting firewood in)
+22-34 to sprinkle : akipurpur /KA
+23. Tableware
+23-01 cooking pot, : amoti/ngamoti
+clay pot
+23-02 pot : akurum/ngarumo, ngakurumo (milk container);
+akurum apanikac (milk container);
+akutam/ngakutama (oil container);
+eburi/ngiburin (oil container);
+eburilojula/ngiburinlujulayek (oil container);
+elepit/rglepito (milking pot, akilep: to
+milk); atudu/ngatudui (shallow milking pot)
+23-03 vessel : akyuryet/ngakyuryeta (oval-shaped wooden
+vessel); ateger/ngategerin (large wooden
+vessel); atuba/ngatubai (wooden vessel)
+23-04 calabash : etwo/ngitwel; aporot/ngaporota (long
+calabash)
+23-05 bottle : ecupa/ngicupai
+23-06 cork, top : abole/ngabolei
+23-07 lid : apukeni/ngapukeni; aburet/ngabureta
+(akibur: 23-09); apanikor/ngapanikorya
+23-08 to seal with a top : aniken /TO
+
+
+---
+
+
+23-09 to cover with the lid : akibur /TA; akirap /TA (lit. to cover)
+23-10 to take out the top : apukor /TO; angaar /TA (lit. to open)
+23-11 to take off the lid : apukor /TO; anganyar /TA (lit. to open, to uncover)
+23-12 plate, dish : alapac/ngalapaca (shallow wooden plate); atuba/ngatubai (wooden vessel); erite/ngiritei (basket-like woven plate); adere/ngadere (calabash cut into two and used as a plate)
+23-13 to wash (a plate) : akilot, akilotar /KA
+23-14 cup : akolo/ngakolo; ekopo/ngikopo
+23-15 glass : egilasa/ngigilasya
+23-16 spoon : akaloboc/ngakaloboco; akijiko/ngakijiko
+23-17 to scoop up (with a spoon) : akiwod /TO; akiwok /TO (lit. to scoop up food with a spoon and dish up); akiak /TA (lit. to scoop up food with a spoon and eat)
+23-18 flat wooden spoon for cooking and serving : akiguret/ngakigureto (akigur: to stir)
+23-19 flat wooden spoon for serving : awodet/ngawodeto (akiwod: 23-17)
+23-20 ladle : akaloboc a ngakipi (lit. spoon of water); awoket/ngawoketo a ngakipi (akiwok: 23-17)
+23-21 bucket : edoo/ngidoo; egyalany/ngigyalanya
+23-22 can, tin : ekopo/ngikopo
+24. Eating
+24-01 to eat : akimuj /KA; akinyam /TA
+24-02 to give food : ainakin akimuj /TA
+24-03 to feed : akitan /KA
+24-04 to wash one's hands : akilot ngakan, akilotar ngakan /KA
+24-05 to lick : akime /TO
+24-06 to lick [sth.] with one's finger : akimid /TA
+24-07 to scoop up : akimuk /TA
+(e.g. food, chewing tobacco) with hand
+24-08 to sweep with finger : akiiyeny /TA
+and eat food at the bottom of a vessel
+24-09 to scrape the food : akikit /KA
+stuck to the bottom of the pot
+24-10 to put [sth.] into : akilookin /KO; akirapakin nakituk /KA
+one's mouth
+24-11 to fill one's mouth : akisusukin /KA
+24-12 to sip : ajujut /TA
+24-13 to sip : akiyet /KA
+[e.g. hot soup]
+24-14 to taste [e.g. when : akiir /KA
+seasoning food with salt, spices, etc.]
+24-15 to drink : akimat /TA
+24-16 to make sb. drink : akitamat /KA (akimat: 24-15)
+24-17 to swallow : akilikor /KO
+24-18 to gnaw (as a rat) : akiigit /KA; akirut /TO
+24-19 to chew : anyaka /TA
+24-20 to crunch : angurub /TO
+24-21 to munch : akimujmuj /KA; akimulmul /KA; akinak /TA (lit. to suck)
+
+
+---
+
+
+24-22 hunger : akoro/ngakorosyo (kanyamit ayong akoro: I feel hungry)
+24-23 famine : erony/ngironya, ngironyisya
+24-24 thirst : akure (kanyamit ayong akure: I feel thirsty)
+24-25 to become satisfied with food : akimon /KO
+24-26 to become jammed in the throat : akimed /TA
+24-27 to skip a meal, : akiron /TO
+[livestock] to skip daily watering
+24-28 to forbid to eat : akitengerar akimuj /KO (lit. to forbid food)
+certain food
+24-29 to refuse to give out food : akimik akimuj /KA; akitenger akimuj /KO; apukor /TO
+25. Condition of food
+25-01 to taste good : ebob
+25-02 to taste bad : epena
+25-03 to be hot : eduwar
+(e.g. chili)
+25-04 to be bitter : etitir
+(e.g. unripe fruits)
+25-05 to be sour : ebabar
+(e.g. lemon)
+25-06 to be sweet : euniuny
+25-07 to be salty : elalam
+25-08 [tea] to cool down : aiyor, aiyon, aiyoner /TO; alilimer /TO
+25-09 to make [sth.] cool down : akitiiyor /KO (aiyor: 25-08)
+25-10 [food] to become dry and hard : akosiar /TA; aonere agogonger /TO (lit. to dry up to become hard)
+25-11 [bread] to be hard : agogong /TO
+25-12 [bread] to be soft : anonok /TA; anyusukuk /TO
+25-13 to become soft : anonoker /TA
+25-14 [biltong] to become soft after boiling : akinyalik ngatoosa /KO
+25-15 [nuts] to become soft after boiling : apudakak /TA
+25-16 [food] to become scorched : akilurukin /KO; akimuudiyor /KO (lit. [food] to be scorched and stick to the bottom of cooking pan)
+25-17 crust : emuudut/ngimuudui (akimuudiyor: 25-16)
+25-18 food which is left : emodoli/ngimodolya
+stuck to the bottom of the pot after sharing
+25-19 [meat] to become scorched, to become burnt : anomiar akiring /KA
+25-20 to rot : akibos /TA
+25-21 [meat] to be rotten : abos /TA
+25-22 to be sour : asasam /TA (term for the tea with little sugar, little milk, etc.)
+25-23 must, mold : emaato/ngimaatoi: ekuroura/ngkuroura;
+eunuka/ngiunukai
+25-24 to become musty, : akiting emaato /TA (lit. to have must)
+to become moldy
+25-25 poison : ekiserit/ngikiserito;
+eketoi exaaran (lit. killing plant)
+
+
+---
+
+
+V. DWELLING AND HOUSEHOLD
+26. House
+26-01 hut
+26-02 to build (house)
+26-03 stick for building a hut, kraal, etc.
+26-04 door
+26-05 to shut (door)
+26-06 to lock
+26-07 to knock (on the door)
+26-08 to open (door)
+26-09 sleeping place
+26-10 fireplace, kitchen
+26-11 room
+26-12 to decorate
+26-13 toilet
+26-14 wall
+26-15 to interlace sticks, to weave
+26-16 to daub soil on wall
+26-17 brick
+26-18 crack in wall
+26-19 to get a crack
+26-20 floor (of a house)
+26-21 to spread soil on the floor
+26-22 to make the ground surface smooth
+26-23 to make the ground surface smooth by hand
+26-24 roof
+26-25 to thatch
+26-26 to thatch with grass
+26-27 window
+26-28 post (of a hut)
+26-29 granary
+26-30 platform to keep on
+
+: akai/ngakais (night hut); ekoli/ngikolya
+(day-time hut); etyam/ngityaman (small
+night-hut made by an unmarried girl for her
+boy friend)
+: akiduk, adukokin /TO
+: ereges/ngiregesin
+
+: akituk/ngakituka (lit. mouth);
+ekidori/ngidorin (lit. gate of homestead,
+kraal, etc.); ekek/ngikekya; egoliet/ngigoliet
+(akigol: 26-05)
+: akigol /TO
+: akigol ekipuli /TO
+: akidongodong emulanngo /KO
+
+: angaar /TA
+: aperit/ngaperito (akiper: to sleep, to lie
+down); niperot (akiper: to sleep, to lie down)
+: ekyono/ngikyonoi
+: agule/ngagulei; amaniyat/ngamaniyae (small
+room made in the <akai> 26-01, for women who
+have lately given birth)
+: akitokorian /KA; akisir /TO; akisibus /KA
+(abus: to be beautiful, pretty)
+: ecoron/ngicorono; moding (lit. outside of
+homestead)
+: arotat; atykat/ngatyak (akityak: to separate)
+: aluguruun /TO
+
+: akiruwat /TA
+: ngabaan
+: abaat/ngabaata (akiba: 26-19); eciit/ngicowan
+(akici: to split)
+: akiba /TA
+: kwap akai
+: amudakin /TA; apetakin ngalup akai /TA
+
+: akilalakin, akilalaun /KA
+
+: akipuc /KA
+
+: kidyaama akai
+: akiraparap /KA; akimuk /KO (lit. to cover)
+: abilakin ngakuui /TA
+: epuke/ngipukei
+: akom/ngakomyon; apiri/ngapirin
+: edula/ngidulai; ekeru/ngikerui (shelf made in
+the hut on which grains are stored and hidden
+from outsiders)
+: epem/ngipemjin
+
+
+---
+
+
+26-33 open space
+26-34 place
+26-35 homestead, home
+26-36 courtyard
+26-37 to dwell, to live
+26-38 in, to inhabit
+26-39 to move one's
+26-40 to settle after
+26-41 moving homestead
+26-42 to pack luggage
+26-43 to pack luggage for
+26-44 to load luggage for
+26-45 moving
+26-46 luggage basket
+27. Furniture
+27-01 bed
+27-02 pillow, headrest
+27-03 mat
+27-04 leather mat
+27-05 to cover oneself
+27-06 with [sth.]
+27-07 blanket
+27-08 desk
+27-09 chair
+27-10 ladder
+27-11 shelf
+27-12 to plait a mat,
+27-13 to weave a mat
+27-14 to spread a mat
+27-15 to fold a mat
+27-16 to roll up a mat
+28. Cleaning
+28-01 to clean
+28-02 to sweep
+28-03 broom
+28-04 to gather up rubbish
+28-05 with a broom, to rake
+28-06 to rake rubbish
+28-07 to take away and
+
+: alapatu/ngalapatui
+: aro/ngaroatin; akuwap/ngakuwapin
+: awi/ngauyei; adakar/ngadakarin
+: alepyet/ngalepyoto (area in front of livestock
+enclosure. akilep: to milk); kiding awi (lit.
+center of homestead)
+: akiboi /KO (lit. to stay)
+
+: akiwot /TO; aramakin /TA
+
+: akilom /TA
+
+: akiyen eegos /TA
+: akiyen ngasaaja /TA (lit. to pack carrying
+baskets. ngasaaja: 26-43)
+: akidokokin /KO (lit. to load luggage on
+donkeys' back for moving)
+: asaajait/ngasaaja (basket to be loaded on a
+donkey's back for moving)
+
+: epem/ngipemin
+: ekicolong/ngikicolongo
+: ailalat/ngailala; amalal/ngamalalaya (mat of
+woven palm-leaves)
+: ejomu/ngijom (mat of dried animal hide);
+akapet/ngakap (small piece of <ejomu>)
+: akimukokin /KO
+
+: eburankit/ngiburankito; esampur/ngisampuro
+: epem/ngipemin
+: ekicolong/ngikicolongo (akicolong: to
+straddle, to sit on [sth.]); amakuk/ngamakuko
+: adoket/ngadoketa (adok: to get on, to climb,
+to cross); epir/ngipirin (lit. steps made on
+the wall of deep wells)
+: ekeru/ngikerui; epem/ngipemin
+: akidony amalal /TO
+
+: apetakin amalal /TA
+: abilakin amalal /TA
+: apopirikin amalal /TA
+
+: akilot /KA
+: apiar /TA
+: apiye/ngapieta (apiar: 28-02)
+: atukokin /TO
+
+: acunakin ngatunyenyi /TA
+: amudar /TA
+
+
+---
+
+
+28-08 rubbish heap
+28-09 dust
+28-10 to shake off dust
+28-11 to beat off dust
+28-12 to wipe
+28-13 dust-cloth
+28-14 to become dirty
+28-15 to be dirty
+28-16 [room] to be dirty
+28-17 [room] to be clean
+28-18 to become jammed
+28-19 to remove (sth. that is stuck)
+VI. KINSHIP
+29. Family
+29-01 my father
+29-02 your [sing.] father
+29-03 his/her father
+29-04 our father
+29-05 your [pl.] father
+29-06 their father
+29-07 my mother
+29-08 your [sing.] mother
+29-09 his/her mother
+29-10 our mother
+29-11 your [pl.] mother
+29-12 their mother
+29-13 parent
+29-14 my grandfather
+29-15 your [sing.]
+grandfather
+29-16 his/her grandfather
+29-17 our grandfather
+29-18 your [pl.]
+grandfather
+29-19 their grandfather
+29-20 my grandmother
+29-21 your [sing.]
+grandmother
+29-22 his/her grandmother
+29-23 our grandmother
+
+: atuket/ngatuketa a asakatany (akituk: to
+assemble, asakatany: 28-07); elaak/ngilaakya
+(place with many livestock bones which was
+discarded after feasts)
+: apin/ngapinia; apuwa/ngapuwai
+: akilakalakar /KA
+: atuwar ngapuwai /TA
+: akirigare /KA; apiar /TA; akisantiar /KA (lit.
+to wipe with <asanite> 28-13)
+: asanite/ngasanitej (dust-cloth made of animal
+tendors or tree barks)
+: akikamun elos /KA (lit. to catch dirt)
+: eiei elos (lit. there is dirt)
+: aborok /TO; angoryaner /TA
+: aseger /TA
+: akigolokin /TO (lit. to block)
+: autun ibore /TO (lit. to pull out thing)
+
+: apa/taapa kang
+: apa kon
+: apa keng
+: apa yok (inclusive of the addressee);
+apa kosi (exclusive of the addressee)
+: apa kusu
+: apa kec
+: ito/taito kang
+: ito kon
+: ito keng
+: ito yok (inclusive of the addressee);
+ito kosi (exclusive of the addressee)
+: ito kusu
+: ito kec
+: ekeuren/ngikeuriak (auri: to give birth)
+: apaa/taapaa kang
+: apaa kon
+
+: apaa keng
+: apaa yok (inclusive of the addressee);
+apaa kosi (exclusive of the addressee)
+: apaa kusu
+
+: apaa kec
+: ataa/taataa kang
+: ataa kon
+
+: ataa keng
+: ataa yok (inclusive of the addressee);
+ataa kosi (exclusive of the addressee)
+: ataa kusu
+
+
+---
+
+
+29-26 child : ikoku/ngide
+29-27 son : edia/ngide; lokoku/talokoku
+29-28 daughter : ikoku nipese; nakoku/tanakoku
+29-29 first-born child : ikoku nikiya; ikoku nikidouno ekigaren (lit. child who was born first)
+29-30 his/her brother : ekaitotoit/ngkaitotoi keng;
+: lokato/ngkaitotoi keng (his/her full-brother);
+: lokapa/ngkaiapai keng (his/her half-brother)
+29-31 his/her sister : akaitotoit/ngkaitotoi keng;
+: nakato/ngkaitotoi keng (his/her full-sister);
+: nakapa/ngkaiapai keng (his/her half-sister)
+29-32 elder brother : lokato loapolon
+29-33 elder sister : nakato naapolon
+29-34 younger brother : lokato looci
+29-35 younger sister : nakato naaci
+29-36 grandchild : aliakat/ngaliakan; etatait/ngitatai
+29-37 paternal uncle : apa (lit. father)
+29-38 maternal uncle : amai/taamai
+29-39 paternal aunt, : eiya/taeiya
+maternal aunt
+29-40 stepfather : apa lokeruman
+29-41 mother: the wife of : ito nace (lit. another mother)
+the father in polygynous marriage
+29-42 mother: the wife : ito nakeruman (lit. inherited mother)
+whom the father inherited from sb.
+29-43 stepchild : ikoku nikeruma (akirum: to inherit)
+29-44 cousin : lokapa: FBS; nakapa: FBD; lokaamai: MBS;
+nakaamai: MBD; lokeiya: FZS & MZS; nakeiya:
+FZD & MZD
+29-45 nephew : lokoku/talokoku: a man's brother's son;
+: loceni/ngicenin, taloceni: a man's sister's son;
+loyeayit/ngikaiyeiyai: a woman's brother's or
+sister's son
+29-46 niece : nakoku/tanakoku: a man's brother's daughter;
+: naceni/ngacenin, tanaceni: a man's sister's
+daughter; nayeyait/ngakaiyelyai: a woman's
+brother's or sister's daughter
+29-47 co-wife : nakain/ngakainon
+29-48 orphan : ikoki/ngikokyok
+29-49 family : awi/ngauyei
+29-50 kin : eiyenet/ngilyenet (akliyen: to know)
+30. Marriage
+30-01 [a man] to get : akiwot, akiwotar /KA
+married
+30-02 [a woman] to get : akiut /KA (keusi ayong: I got married)
+married
+30-03 marriage, wedding : akoota/ngakootasya
+30-04 (a kind of) wedding : ekimomar/ngimomarisinei a akoota
+dance
+30-05 an ox speared in the : ekuma
+day of wedding
+30-06 [a man] to take a : akoomar /KA
+girl to his homestead on the assumption that he will marry her
+
+
+---
+
+
+30-07 [a woman] to change the dressing from that of a girl to that of a married woman
+30-08 to give a wedding gift of livestock
+30-09 bride
+30-10 bridegroom
+30-11 gift of marriage negotiation
+30-12 bride wealth
+30-13 one's share of the received bride wealth
+30-14 bride wealth negotiation
+30-15 husband
+30-16 her husband
+30-17 wife
+30-18 wife (newly married wife who has not given birth)
+30-19 his wife
+30-20 husband's brother
+30-21 a man's brother's wife
+30-22 husband's sister
+30-23 a woman's brother's wife
+30-24 husband's brother's widow
+30-25 to perform a ritual when a widow accepts a man as a sexual partner
+30-26 principal wife
+30-27 to marry the second wife
+30-28 wife's father
+30-29 wife's mother
+30-30 wife's brother
+30-31 affine
+30-32 rituals performed after the wedding <akoota> 30-03, according to the wife's life cycle
+30-07 : akinyonyo /KA (this term is also used when a young man changes his dressing at the time of initiation ritual)
+30-08 : akibut /KO (lit. to compensate. Livestock given to the wife-receiver from his friends, etc., see 53-46); anyar /TA (lit. to call. Livestock given from bridegroom's people to the bride by calling the bride's name)
+30-09 : apese nakoota (lit. girl of marriage)
+30-10 : ekewotan/ngikeutak (akiwot: 30-01)
+30-11 : emalas/ngimalasinoi (lit. greeting. Gift given from the suitor of a girl to her kinsmen without their demands); etoolo/ngitooloi (gift given from the suitor of a girl to her kinsmen without their demands, before she accepts him); ekamus; earakany (gift given from the suitor of a girl to her kinsman on demand, after she has accepted him)
+30-12 : ngibareng akoota (lit. livestock of marriage); ngibareng a akiteek (bride wealth which is paid beforehand. akiteek: to go before sb. or sth.)
+30-13 : ekimar
+30-14 : eloto
+30-15 : ekile/ngikilyok (lit. man)
+30-16 : ekile keng
+30-17 : aberu/ngabero (lit. woman)
+30-18 : ateran/ngaterak
+30-19 : aberu keng
+30-20 : lomui/ngimuyok
+30-21 : namui/ngamuyok
+30-22 : namui/ngamuyok
+30-23 : namui/ngamuyok
+30-24 : nakain/ngakainon (lit. co-wife)
+30-25 : apuserut/ngapuseru
+30-26 : amookakin /TA
+30-27 : aberu naapolon
+30-28 : akiwotar aberu na ngaarei, akiwotar aberu naaci /KA
+30-29 : apa (lit. father); ekamuran (30-32)
+30-30 : ito (lit. mother); akamuran (30-32)
+30-31 : ekamuran (30-32)
+30-32 : ekamuran/ngikamurak; akamuran/ngakamurak
+30-33 : esia; adere a ngiboro; eloupotis; ngakejen a ngibareng; abuo; akimuj; lobunat; ngasuban (necessary rituals vary depending on the wife receiver's clan's <etali> 55-02)
+
+
+---
+
+
+30-34 to divorce
+30-35 to commit adultery
+30-36 the one who commit adultery
+30-37 unmarried mother
+30-38 [a man] to pay livestock to the kinsman
+31. Childbirth and rearing
+31-01 to become pregnant
+31-02 to have morning sickness
+31-03 fetus
+31-04 to give birth
+31-05 to be born
+31-06 woman who lately bore a child
+31-07 baby
+31-08 umbilical cord
+31-09 twin
+31-10 midwife
+31-11 to help sb.'s delivery
+31-12 name
+31-13 to give a name
+31-14 to bring up children
+31-15 to grow
+31-16 to look after (a child)
+31-17 to suckle, to breast-feed
+31-18 to suck the breast
+31-19 to spill out of mouth
+31-20 to vomit milk
+31-21 to soothe (a crying child)
+31-22 to embrace, to hug
+31-23 to carry (a child) on the back
+31-24 baby sling
+31-25 to hold a child in the arms
+31-26 to hold sb. on the knees
+31-27 to wipe excreta off a child body
+31-28 sterile woman
+
+: akilak /TA (lit. to unpack, to untie. arosi
+ayong elakit ngibareng lu kang: I go to untie
+my livestock = I divorce); akityak /TA (lit.
+to part)
+: akilom /TA
+: ekalomana/ngikalomak (akilom: 30-35)
+: apese angabus (lit. a girl with a married
+women's back-apron, 20-27)
+: akicul /KA (payment is called <ekiculi>)
+en of an unmarried mother whom he impregnate
+
+: apoti, apotere /TO
+: akitumtuma /KA
+
+: ikoku nipotiuno
+: akidoun /KO
+: akidouno /KO
+: aketanakan/ngaketanakak (lit. the one who
+suckles, akitanak: 31-17);
+aberu namanangit (lit. lactating woman)
+: ikoku/ngide (lit. child)
+: apusit/ngapusito
+: emout/ngimuu
+: akesidounon/ngakesidounok (akisidoun: 31-11)
+: akisidoun /KO (lit. to cause to give birth.
+akidoun: 31-04)
+: ekiro/ngirora
+: alimokin ekiro /TO
+: akitan /KA
+: apoloun /TO
+: akitan /KA; akitere /KO; akiyok /KO (lit. to
+herd animals)
+: akitanak /KA (lit. to cause to suck, akinak:
+31-18)
+: akinak esikina /TA
+: ajeelel /TA
+
+: akilek ngakile /TA
+: akimaima /KA; akisililing /KA (lit. to cause
+to calm down)
+: akikanakan /KA; akitanatan /KA
+: akinap /TA
+
+: anapet/nganapeta (akinap: 31-23)
+: akidak /TA
+
+: akidak a ngakungin /TA
+
+: akijut /TO
+
+: akolup/ngakolupai
+
+
+---
+
+
+32. Human being
+32-01 person : itwan, itungunan/ngitunga
+32-02 man : ekile/ngikilyok
+32-03 woman : aberu/ngaberu
+32-04 boy : edia/ngide
+32-05 girl : apese/ngapesur
+32-06 young man : esapat/ngisapa; esorokit/ngisorok
+32-07 [boy] to become mature : akibokayakoun /KA (lit. [penis] to grow)
+32-08 [girl] to become mature : akiburun /KA (lit. [breast] to become projected)
+32-09 to be initiated : asapan /TA
+socially into the adulthood of men
+32-10 to be the : akitasapan /KA (asapan: 32-09)
+initiation-father of a young man
+32-11 to circumcise : akilenger /KA (The Turkana do not perform circumcision)
+32-12 adult : itwan inapolon (lit. big person)
+32-13 to become aged : amojong, amojongiar /TA
+32-14 old woman : akimat/ngakimak
+32-15 old man : ekasukout/ngikasukou
+32-16 old age : amojong
+32-17 to stoop from age : akudokin koteri amojung /TO
+33. Death
+33-01 to die : atonere /TA
+33-02 death : akyut/ngakituya
+33-03 dead person : ekaton/ngikatok (atonere: 33-01);
+ekesian/ngkesiak (those who died long ago.
+?akiserie: to begin)
+33-04 corpse : akwan ekatoan/ngawat ngikatoak (akwan: body,
+atonere: to die)
+33-05 to be alive, to live : akiyar /TA
+33-06 to have pulse : askidongare etau /KA (lit. heart beats)
+(in case of a dying person)
+33-07 to revive : aiyarun /TA
+33-08 living person : ekaiyaran/ngikaiyarak (akiyar: 33-05)
+33-09 life : akiyar
+33-10 to announce sb.'s death : akikeun akyut a itwan /KA
+33-11 to bury (the dead) : akida, akidaar /KA (lit. to hide); akiuwa /KA
+(lit. to hide); akinuk /TA (lit. to bury)
+33-12 grave : aliie/ngalielin
+33-13 funeral held : ngakuronoret
+immediately after the death
+33-14 funeral: ritual on expiration of mourning period : ngapunyes
+33-15 to be in mourning : akilur /TO (to shave hair, not to spear or give out animals, not to castrate or bleed animals, to cut mane and tail hair of animals)
+33-16 to inherit : akirum /KA
+33-17 inherited property : ngiboro lukuruma (ngiboro: things, akirum: 33-16)
+33-18 wealth, property : ebari/ngibareng (also means livestock)
+
+
+---
+
+
+34. Domestic animals
+34-01 cat : epaka/ngipakai
+34-02 to scratch : akiketeket /KA; akiko /TO
+34-03 to mew : aruore /TO (for cats, goats, camels, donkeys, jackals, birds, etc.)
+34-04 dog : iingok/ngingoko
+34-05 to bark : akikom /KO (for dogs, baboons, etc.)
+34-06 to snarl : akingoor /KA
+34-07 to yelp, to yip : akigoro /KO; arukin /TO
+34-08 to bite : akikony /TA
+34-09 [animal] to copulate : akitep /KA (lit. to mount)
+34-10 to give birth : auri /TA
+34-11 [livestock] not to : auweiyar /TA
+become pregnant for a long time
+34-12 cattle : ngaatuk
+34-13 bull : emaanik/ngimaaniko
+34-14 ox : emong/ngimongin
+34-15 cow : aite/ngaatuk
+34-16 heifer : ataok/ngatak
+34-17 calf (of cattle) : itaok/ngitak (immature wild animals are also called by this term)
+34-18 goat : nganginei; nganginei namee; ngamee
+34-19 he-goat : ekoroi/ngikora
+34-20 she-goat : angine/nganginei
+34-21 sheep : ngamezekin
+34-22 donkey : ngisikirya
+34-23 camel : ngikaala
+34-24 [terms of age-sex classification of livestock, see Appendix 1]
+34-25 horse : ngangolei
+34-26 mane : esigirigir/ngisigirigiryo
+34-27 pig : eputir/ngiputiro (lit. warthog)
+34-28 [pig] to grunt : aruore /TO
+34-29 to get fat : akitum /TA
+34-30 to castrate : agelem /TA (by cutting open the scrotum and pulling out testicles and seminal ducts); akikony /TA (lit. to bite. To bite off seminal ducts); ekidong /KA (lit. to beat. To cut off the seminal ducts without bloodshed by beating with a wooden hammer)
+34-31 wooden hammer for : ekidongit/ngikidongito
+castrating animals (see 34-30)
+34-32 horn : amuwara/ngamuwar
+34-33 to train livestock : akiram /TA (lit. to beat); akidung /TO (lit. to cut, to whittle); akimad /KA (lit. to forment)
+34-34 horns [terms for horn shapes of animals, see Appendix 2]
+34-35 [terms for horn shapes of animals, see Appendix 2]
+34-36udder : aeket/ngakeeta
+34-37 milk : ngakile
+34-38 fresh milk : ngakile nalepan
+34-39 sour milk, yogurt : ngakile nakibuk
+34-40 butter milk : ngakidedet
+34-41 cheese : edodo
+34-41 coagulated milk film : elaabo/ngilaaboi
+which develops on the surface when heated
+
+
+---
+
+
+34-42 ghee, oil made from milk : akimet/ngakimeta
+34-43 to milk : akilep /TO
+34-44 milking pot : elepit/ngilepito (akilep: 34-43)
+34-45 to milk a livestock and consume the milk : akidal /KA (lit. to obtain and keep the right on the milk of specific individual animals)
+34-46 to clean milk : akisud /TO
+container by smoking : akokeasit/ngakookes
+34-47 stones to wash inside of churning gourds : akiiun /KA
+34-48 [female animal] to adopt another's offspring, to accept another's offspring to suckle : akirony /KA
+34-49 to make female animal to adopt another's offspring for suckling : akiodakin /KA
+34-50 to separate livestock kid and its mother at night in order to milk the mother in the next morning : akigum /TA (lit. to shoot with a bow)
+34-51 to bleed animals with bow and arrow : akab/ngakabua
+34-52 bow for bleeding livestock for human consumption : alyakar /TA (lit. to have, to be with)
+34-53 to keep (animals) : alyapakin /TA (lit. to cut sth. for sb., i.e. to feed animals by cutting off branches of trees)
+34-54 to feed (animals) : anok/nganokin
+34-55 kraal, corral, enclosure
+34-56 to open the gate of kraal : angaar ekidori a anok /TA
+34-57 to close the gate of kraal : akigol ekidori a anok /TO
+34-58 to herd animals : akituar /TA: akiyok /KO
+34-59 herd of livestock : esipanit/ngisipan
+34-60 herder : ekeyokon/ngikeyokok
+34-61 to set free (animals) : alacakin /TA
+34-62 to fasten, to tie (animals) : akiyen /TA (lit. to tie)
+34-63 brand (of livestock) : emacar/ngimacarin (each clan has its specific brand, see 54-07)
+34-64 clan's ear mark of livestock : epone/ngiponei
+34-65 [terms for ear-marking types, see Appendix 3]
+34-66 [cow] to ruminante : akiyarun /KA: anyakaikin /TA
+34-67 sticky saliva : akajaalat/ngakajaalat; akimulat/ngakimul (lit. spittle)
+34-68 to slaver : alakakin ngakajaala /TA
+34-69 bell, cowbell : ekaadongot/ngikaadongoi
+34-70 terms for livestock coat color : -akwang: white; -kiryoon: black; -aryangan: red; -nyang: yellow, orange; -ngori: gray; grayish brown; -kipurat & -bok: pale reddish purple; -pus: blue, green, yellow-green; -mugi: purple
+34-71 [terms for coat color patterns of livestock, see Appendix 4]
+
+
+---
+
+
+35. Wild animals
+35-01 wild beast : etiangit/ngitiang
+35-02 baboon : ecom/ngicomin
+35-03 [monkey] to shout : akikom /KO
+35-04 blue monkey : ekadokot/ngikadokoi
+35-05 Abyssinian colobus : elala/ngilala
+35-06 patas monkey : eula/ngiula
+35-07 lion : engatutu/ngigatutu
+35-08 mane of lion : ngaile
+35-09 claw, fingernail : emaagorit/ngimaagor
+35-10 leopard : eris/ngirisyo
+35-11 cheetah : arara/ngararai
+35-12 spot : akomolo/ngakomolo; akemer/ngakemera (lit. mole)
+35-13 caracal : lokutoj/ngilokutoja
+35-14 spotted hyena : ebu loongori/ngibuin luongora
+35-15 striped hyena : nagira/ngagirai
+35-16 civet : panase/ngapanase
+35-17 genet : nameresia/ngameresiai
+35-18 jackal : ekue/ngkuei
+35-19 lycaon, hunting dog : epeot/ngipeei
+35-20 bat-eared fox : ameguri/ngameguro
+35-21 ratel : ekori/ngikorya
+35-22 zorilla : uurungorok/tauurungorok
+35-23 a kind of mongoose : euce/nguce; kokaas/ngokaasya; jite/ngijite
+35-24 elephant : etom/ngitome
+35-25 tusk : ekyalai a etom
+35-26 hair of the elephant tail : esulot a ekosim a etom
+35-27 warthog : eputir/ngiputiro
+35-28 fang (of warthog) : ekyalai a eputir
+35-29 hippopotamus : epiri/ngipiryo
+35-30 rhinoceros : amosing/ngamosingo
+35-31 zebra : etuko/ngituko
+35-32 hedgehog : napupu/ngapupu
+35-33 elephant shrew : nakoler/ngakoleruo
+35-34 rabbit, hare : apoo/ngapooi
+35-35 ground squirrel : ekunyuk/ngikunyuko
+35-36 crested porcupine : ecec/ngiceca
+35-37 aardvark : lokuto/ngikutoi
+35-38 rock hyrax : adukai/ngadukai
+35-39 dormouse : eles/ngilesya
+35-40 a kind of rat : eiyole/niyole; erunye/ngirunyei; emiri/ngimirito
+35-41 Cape pangolin : amekemek/ngamekemekya
+35-42 giraffe : ekori/ngikoryo
+35-43 dik-dik : esuro/ngisuroi
+35-44 impala, gazelle : agete/ngagetei
+(Thomson's gazelle)
+35-45 lesser kudu : esaric/ngisarico
+35-46 greater kudu : emakata/ngimakatai
+35-47 topi : elob/ngikolobai
+35-48 beisa oryx : edir/ngidirin
+35-49 eland : euwapet/ngiwapeto
+35-50 buffalo : ekosowan/ngikosowa
+35-51 bat : lononua/talononua
+
+
+---
+
+
+35-52 hide (of an animal)
+35-53 hair (of an animal)
+35-54 tail
+35-55 male
+35-56 female
+35-57 herd
+36. Hunting
+36-01 to hunt
+36-02 hunter
+36-03 trail (foot prints)
+of wild animals
+36-04 to track, to follow
+(animals)
+36-05 to stalk
+36-06 to lie in wait
+36-07 to startle (game
+animals)
+36-08 to chase
+36-09 to surround
+36-10 to chase away loudly
+36-11 bow
+36-12 bowstring
+36-13 arrow
+36-14 arrow shaft
+36-15 arrowhead
+36-16 to shoot with a bow,
+to hit (the target)
+36-17 gun
+36-18 bullet
+36-19 gunpowder
+36-20 spear
+36-21 to throw a spear
+36-22 to stab
+36-23 shield
+36-24 trap
+36-25 a kind of trap
+36-26 to set a trap
+36-27 net
+36-28 pitfall
+36-29 to kill
+36-30 to slaughter,
+to cut the throat
+36-31 to cut open the
+belly
+36-32 to cut open the
+belly (of sacrifice
+36-33 to skin (with a
+knife)
+
+: elou/ngiloui; ejomu/ngijom (dried hide of an animal used as a mat)
+: ajulot/ngajul
+: ekosim/ngikosiman
+: emaanik/ngimaaniko
+: aberu/ngageru
+: ajore/ngajorei; asepic/ngasepico;
+atym/ngatyomyon (very large one)
+
+: akirkar /KA; akisirum /KA
+: ekerikan/ngikerikana (akirkar: 36-01);
+ekalokan/ngikalokak (akilok: 36-26)
+: ngakejen a ngitiang (lit. feet of wild animals)
+: akiwap /KA
+
+: anyamakin /TA
+: aperun /TO (lit. to lie down)
+: akikotun /KA; akisur /TO
+
+: akiritar /KA
+: akirikaun /KA; akiryam /KA
+: akikilakin /KA (lit. to shout at)
+: amoc/ngamodo
+: auno/ngaunoi a amod
+: emali/ngimalya
+: asiin/ngasiina a emali
+: ecipet/ngicipeta; akituk a emali (lit. mouth of arrow)
+: akigum /TA
+
+: atom/ngatomyan
+: emali/ngimalya
+: ngakuk a emali (ngakuk: black fine sand found in the river bed or lake. emali: arrow, bullet)
+: akwara/ngakwaras
+: akirem, aremor /TO
+: akicum /KA
+: aupoli/ngaupola
+: aloket/ngaloketa (akilok: 36-26)
+: eloit/ngiloito; atacit/ngatacita;
+atibai/ngatibai
+: akilok, alokakin /TA
+: epuute/ngipuutei
+: adui/ngaduwon
+: akiar /TA
+: akingol /TA
+
+: apuor /TO
+
+: angeer /TA
+while it is still alive)
+: akiyeng /TA
+
+
+---
+
+
+36-36 to peg out animal
+hide to dry
+36-37 to cut off meat from
+bones
+36-38 meat, flesh
+36-39 fatty meat
+36-40 soup, broth
+37. Reptiles, etc.
+37-01 mamba [?]
+37-02 puff-adder [?]
+37-03 python [?]
+37-04 a kind of snake
+37-05 [snake] to cast off
+its skin
+37-06 [snake] to coil
+around [sth.], to coil up
+37-07 [snake] to creep,
+to crawl
+37-08 chameleon
+37-09 crocodile
+37-10 tortoise
+37-11 monitor
+37-12 a kind of lizard
+37-13 snail
+37-14 shellfish
+37-15 cowry
+37-16 toad, frog
+38. Fish
+38-01 fish
+38-02 to fish
+38-03 to fish by nets
+38-04 to fish with line
+38-05 fishhook
+38-06 fishing trap
+38-07 gill
+38-08 fish scale
+38-09 to scrape off scales
+38-10 bone (of a fish)
+39. Birds
+39-01 bird
+
+: akiguror /KO
+: akipac /KA
+: akiring/ngaringo
+: atarien/ngatarienyo; akiring naakwang (lit. white meat)
+: ngapoko
+: loupoli/taloupoli (aupoli: shield)
+: akipom/ngakipomya
+: emorotct/ngimorototyo
+: ekalesoit/ngikaleso; lokolitak/talokolitak;
+namuduka/tanamuduka, ngamudukai; areu/ngarewa;
+emuny/ngimunyo (several kinds of snake are included in this category); emuny lolingaaryangan; emuny lolingabok; emuny lokipurat; emuny lokiryoon
+: akibut /TO
+: alugur, alugurokin /TO
+: aliare /TA
+: ageya/ngageyai
+: akinyang/ngakinyanga
+: abokok/ngabokoko; naatuk/tanaatuk
+: anakanak/ngakananaka (Nile monitor)
+: ayole/ngayolei; atangarewa/taatangarewa;
+lokaacal/ngikaacal; naluluyo/ngaluluyo; tuotuo/tatuotuo
+: elap/ngilapyo
+: ekame/ngikam
+: esigirait/ngisigira
+: akidodok/ngakidodoka
+: ekolia/ngikolya
+: akirumun ngikolya /KA
+: akicem /KA
+: akisirum /KA
+: ekorobic/ngikorobico
+: epuute/rgipuutei
+: ejakileit/ngijakilei
+: ekabebyokait/ngikabebyoka
+: akiragarag /KA
+: akoit/ngakoio
+
+
+---
+
+
+39-03 pigeon : kuurinaemoru/ngakuryonaemoru (speckled pigeon)
+39-04 francolin : abilikot/ngabilikereta (crested francolin)
+39-05 guinea-fowl : atapen/ngatapeno (tufted guinea-fowl)
+39-06 eagle, hawk : egole/ngigolei
+39-07 vulture : atarukot/ngataruk (hooded vulture, white
+headed vulture); nabobokile/ngabobokilyo
+(Egyptian vulture)
+39-08 ostrich : ekalees/ngikaleeso
+39-09 stork : nakora/tanakora (term for several kinds of
+storks); nanyamacin/nganyamacin (lit. feces
+eater, i.e. marabou stork); napele/ngapelei
+(open billed stork)
+39-10 crow : ekuruk/ngkuruka (Cape rook, fan-tailed raven,
+pied crow)
+39-11 parrot : arukot/taarukot (brown parrot)
+39-12 duck : abata/ngabatai
+39-13 chicken : ekukut/ngukukui; akukut/ngukukui;
+ekokoroit/ngikokoroi; akokoroit/ngakokoroi
+39-14 crest : eteliteit/ngiteliteiti
+39-15 to crow : akirymar /KA
+39-16 to cackle : akitet /KA
+39-17 egg : abeiyre/ngabeyei
+39-18 to lay eggs : auri ngabeyei /TA
+39-19 to incubate : akitik /TO; auryan, auryanikin /TA
+39-20 chick : ltaok a akukut (lit. calf of hen)
+39-21 wing : abebenyit/ngabebeny
+39-22 feather : akopiro/ngakopir
+39-23 beak, bill : abole/ngabolei
+39-24 [bird] to pick up : akidot /TO
+food bit by bit, to peck
+39-25 talon : emaagoroi/ngimaagor
+39-26 [bird] to fly : akipor /TO
+39-27 [bird] to take off, : akipor kidyaama /TO
+to take wing
+39-28 [bird] to spread : apetar ngabebeny /TA
+wings
+39-29 [bird] to close : abunakin ngabebeny /TA
+wings
+39-30 [bird] to flap wings : akipukpuk /KO
+when flying
+39-31 [bird] to struggle : akipetpet /KA
+and flap wings when shot
+39-32 to twist the neck : amojur /TA (lit. to twist)
+(of a bird)
+39-33 to pluck out : akicud /TA
+feathers
+39-34 to singe off : akiwangwang /TA
+feathers
+39-35 [bird] to sing : aruore /TO
+39-36 nest (of birds) : akai (lit. hut)
+40. Insects and worms
+40-01 insect : ibore/ngiboro (lit. thing)
+40-02 honey-bee : ao/ngaowa
+40-03 beehive : amoloj/ngamoloja
+40-04 honey : akimet a ao (lit. oil of honey-bee)
+
+
+---
+
+
+40-05 to take out honey : akiwod /TO (lit. to scoop up)
+40-06 bee wax : amonok/ngamonokyo
+40-07 [bee] to sting : akigum /TA
+40-08 bee sting : ekoiyot/ngkoi
+40-09 to fillip off : adetar /TA
+(e.g. insects)
+40-10 to brush off, : akotar /TA
+to sweep off (insects)
+40-11 dung beetle : ekolonyo/ngikolonyoi
+40-12 beetle : eilet/rgilee; emalegeri/ngimalegera
+40-13 long-horned beetle : esipirany/ngisipiranya
+[?]
+40-14 rhinoceros beetle : lomuwar/talomuwar (ngamuwar: horns of cattle,
+[?]
+etc.)
+40-15 weevil [?] : losikiria/talosikiria
+40-16 lady beetle : naleki/tanaleki
+40-17 dragonfly : ekaoroworot/ngikaoroworoi
+40-18 butterfly, moth : abeere/ngabeerei
+40-19 firefly : ame/ngameiyo
+40-20 grasshopper : emaase/ngimases
+40-21 desert locust : emaase/ngimases
+40-22 cricket : ekajekel/ngikajekela
+40-23 [grasshopper] to : akipor, aporpor /TO
+jump about
+40-24 spider : asimokuk/ngasimokoka
+40-25 cobweb : akai a asimokok
+40-26 driver ant : ekukurit/ngikukurito
+40-27 termite : ekatapan/ngikatapania
+40-28 anthill, termite : akoumuwa/ngakomuwa
+hill, termite mound
+40-29 a kind of ant : asingili/ngasingiliya; asipinyo/ngasipin;
+ataa ngikong/taataa ngikong;
+ekadengoroi/ngikadengoro; ekoki/ngikok;
+esunonait/ngisunonuawai
+[?]
+40-30 black ant : loter/ngiterya
+40-31 praying mantis : adokole/ngadokolei
+40-32 cicada : eidii/ngidita
+40-33 millipede : akamuryamurya/ngakamuryamuryai
+40-34 centipede : amatadueli/ngamataduelya
+40-35 scorpion : ekoutan/ngikoutanya
+40-36 tsetse fly : eidii/ngidita
+40-37 cockroach : lomodokongori/ngimodokongora
+40-38 mosquito : esurot/ngisuro
+40-39 gnat : longiset/talongsiset
+40-40 flea : ekajoojaat/ngikajoojaai
+40-41 body louse, : elact/ngilac
+bed louse
+40-42 head louse : ngakotor
+40-43 tick : emadang/ngimadang
+40-44 bed-bug : ekorobot/ngikorobotoi
+40-45 fly : ecut/ngicuc
+40-46 [flea, louse, etc.] : akicun, acunakin /TA
+to swarm on [sth.]
+40-47 caterpillar, maggot : ekurut/ngikur
+40-48 hairy caterpillar : ekurut lokacakan
+40-49 leech : kotili/takotili
+
+
+---
+
+
+40-50 tape worm
+: epele/ngipeelei (found in human feces);
+41. Plants
+41-01 grass, weed
+: enyait/nginya
+41-02 burnt grass
+: anomat/nganomata (akinom: to burn)
+41-03 to cut grass
+: akiyep nginya /TA
+41-04 moss
+: erikopus/ngirikopusya
+41-05 mushroom, toadstool
+: ekicolong ebu (lit. chair of hyena)
+41-06 parasitic plant
+: eduwel/ngiduwelyo
+41-07 [plant] to come out
+: akirup /TA
+41-08 to germinate
+: akiburukun /KA
+41-09 [plant] to grow
+: arupun /TA
+41-10 [bush] to grow thick
+: amuton /TO
+41-11 [vine] to spread
+: apetar /TA
+41-12 [vine] to grow
+: akinanaman /KA
+around another tree
+41-13 tree
+: eketoi/ngikyoto
+41-14 to fell, to cut down
+: akiyep /TA
+(a tree)
+41-15 [tree] to fall down
+: aukor /TO
+41-16 tree-trunk
+: atorom/ngatoroma a eketoi
+41-17 log
+: eketoi/ngikyoto
+41-18 to scar the trunk of
+: akitel /KO: akidengideng /KO (lit. to beat by
+a tree
+bush-knife)
+41-19 tree bark
+: akaabuket/ngakaabuk
+41-20 to take off the bark
+: akipac /KA
+41-21 to take fiber out of
+: aboloc /TA (lit. to peel off the bark. One of
+a plant
+the step of taking fiber from branches of
+Dead-sea fruits); akida /TA (lit. to pound.
+One of the step of taking fiber from leaves of
+Sansevieria spp.)
+41-22 tree sap
+: ngakile a eketoi (lit. milk of tree);
+41-23 resin
+: ngakul a eketoi (lit. urine of tree)
+41-24 tree-fork
+: emina/ngimina
+41-25 tree-hollow
+: akicer/ngakicara (akicer: 41-27)
+41-26 branch
+: acukule a ekitoi (lit. trench of tree)
+41-27 [branch of trees] to
+: aten/ngaten; ecokili/ngicokil (tip of
+branch off
+: akulit/ngalita (thin branch of tree
+41-28 to cut off a branch
+: akiyep ateni /TA
+41-29 part at which a
+: ekagurugurat/ngikagurugurai
+branch was cut off
+41-30 base of tree-trunk
+: atorom/ngatoroma
+41-31 stump of a tree
+: akom/ngakomyon; apungure/ngapungurei
+41-32 root
+: ataagoroit/ngataagor
+41-33 leaf
+: akuyen/ngakuui
+41-34 to strip off leaves
+: ajurut /TA
+(from a branch)
+41-35 to tear off leaves
+: akigeriger /KA
+(from a branch)
+
+
+---
+
+
+41-36 flower : aturot/ngatur
+41-37 flower bud : acarubeit/ngacarubei
+41-38 [flower] to bear bud : apukare /TA
+41-39 to flower : apekeiar /TA
+41-40 to bloom, to blossom : aturoun /TO
+41-41 fruit : ecoket/ngicok
+41-42 to bear fruits (yet unripe) : akileleng /KO
+41-43 [fruit] to be unripe : ajon /TA (lit. to be raw)
+41-44 to check the ripeness of fruits by pressing : akicemicem /KA (lit. to push by finger-tips)
+41-45 [fruit on the tree] : akira /TA; akonere /TO
+41-46 [fruit on the tree] to ripen, to become ripe : akonere noi /TO
+41-47 [fruit on the tree] to become overripe : akibos /TA
+41-48 [fruit on the tree] to rot : akiriny /TO
+41-49 [fruit] to drop onto the ground : araraun /TA; akidoun /KO (lit. to give birth)
+41-50 to take fruits : akiger /TO
+41-51 to break off fruit from the tree or bunch : akidot /TO
+41-52 to shake down (fruit) : akilollo /KO
+41-53 to shake down (fruit) with a hook : akinere /KA
+41-54 to drop (fruit) : akimasun /KA
+41-55 to catch hold with a hook : akinyaun /KA
+41-56 hook : egole/ngigole; ereges/ngiregesin
+41-57 flesh of fruit : akiring/ngaringo (lit. meat)
+41-58 stone of fruit : ecoket/ngicok
+41-59 skin of fruit : akabokoiyait/ngakabokoiya; apocot/ngapoco
+41-60 to peel with a knife : akikul /TA
+41-61 to peel by rubbing : akireny /KA (lit. to take shell, to rind off by rubbing)
+41-62 to peel (e.g. a banana) : aboloc, abolociar /TA
+41-63 seed : ecoket/ngicok
+41-64 sheath : akabokoiyait/ngakabokoiya;
+41-65 [seed] to pop out, to come out of the sheath : akabolokoki/ngakabolokokyo (fruits of Acacia tortilis Forsk.)
+41-66 thorn : akipak /TA (lit. to split)
+41-67 [plant] to wither : eukwai/ngiukwa
+42. Crops
+42-01 palm, doum palm : eengol, ekingol/ngingolya
+42-02 midrib of palm-leaf : akingol/ngangolya (ekingol: 42-01)
+42-03 rice : emucele/ngimucelein
+42-04 maize grain : epeipei/ngipeipea
+42-05 sugar cane : akasirimait/ngakasirim
+42-06 groundnut : ekaranga
+
+
+---
+
+
+42-07 sweet potato : ebiasi loakabon
+42-08 potato : ebiasi/ngibiasya
+42-09 tobacco : etaba/ngitab
+42-10 banana : edisi/ngidison
+42-11 calabash : etwo/ngitwell
+42-12 orange : amacungat/ngamacunngai
+42-13 papaya : epaipai/ngipapaya
+42-14 mango : amaambet/ngamaembe
+42-15 pineapple : ananas/ngananaasya
+42-16 coffee : ekaawa/ngikaawai
+42-17 lemon : edim/ngidimon
+42-18 coconut : anas/nganasya
+42-19 sorghum : emuwa/ngimwa, ngimwomwa
+42-20 cowpea : emaret/ngimare
+42-21 cotton : epamba/ngipambai
+
+43. Cultivation and harvests
+
+43-01 to farm : akitskin /KA
+43-02 cultivating field : eiyaal/ngiyaala; amana/ngamanat;
+43-03 boundary of gardens emankor/ngimanikorin (place where many
+43-04 to cut off the <amana> are gathered)
+bushes and clear the ground : ekukor/ngikukoro
+43-05 machete : akicap /TA
+43-06 to weed : epanga/ngipaaangai
+43-07 to cultivate : akicud edoan /TA; akilem edoan /TA
+43-08 digging stick : akiteare /KA
+43-09 ax : akuta/ngakutai; ekileng lokitaet (with an iron
+43-10 hoe edge)
+43-11 handle (of a hoe) : aep/ngaepe
+43-12 to seed : ejembe/ngijembe
+43-13 sickle, harvesting : akujuk/ngakujuka; eketoi a ejembe (lit. stick
+knife of a hoe)
+43-14 to harvest by sickle : aekin /TA; akiel /TA
+43-15 to thresh by : elemet/ngilemeta; ekileng lolemet (akilem:
+pounding 43-14)
+43-16 to strip off (rice) : akilem /TA
+43-17 to spread to dry : akida /TA (lit. to pound)
+(grains) : ajurut, ajurutuun /TA; akiger /TO
+43-18 sift : alokin /TO
+43-19 to sift : ailet/ngalieta (akili: 43-19)
+43-20 winnow : akili /TA: apiatar /TA
+43-21 to winnow : akiekeeket/ngakiekeeketa (akiekeek: 43-21)
+43-22 to pound grain, : akiekeek /KA
+43-23 to make flour : akida /TA (lit. to pound); akiruk /TO (lit. to
+to husk and clean smash)
+rice : akisek /TA
+43-24 mortar for pounding : aruket/ngaruketa (akiruk: 43-22)
+43-25 pestle : akujuk naruket (43-11, 43-22)
+43-26 to grind, to mill : akirere /KA
+43-27 flat grind stone : akires/ngakiresya
+43-28 globe grind stone : itapin/ngitapyono
+(rubbed against the flat one: 43-27)
+
+
+---
+
+
+43-29 to uproot plants : akirut /TO
+43-30 to dig out : akibok, abokun /TA
+(e.g. potatoes)
+43-31 to dig the soil : akikur /TO
+43-32 to take out beans : akibek /TA; akidot /TO
+(from the sheath, or pod)
+
+X. BODY ACTIONS
+
+44. Sleeping
+
+44-01 to lie down, : akiper /TO
+to sleep
+44-02 to lie on one's back : akidedyaar /KA
+44-03 to sleep : ajotoor /TO
+44-04 sleep : ngaju
+44-05 to dream : akiruj, akirujare /KA
+44-06 dream : ngarujan
+44-07 to talk in one's : akiror a ngaju /KO
+sleep
+44-08 to snore : akingoor /KA
+44-09 to turn while : akibelokin /KO
+sleeping
+44-10 to feel sleepy : akilur, akilurun /KA
+44-11 to doze : akilur /KA
+44-12 to wake up : akenyun /TA
+44-13 to feel muddled : akimauware /KO
+after waking up
+44-14 to wake up sb. : akitekeny, akitekenyun /KA (akikeny: 44-15)
+44-15 to be awake : akikeny /TA
+44-16 to wake up early in : akisokakin /KA
+the morning and leave off
+44-17 to stay overnight : akisal /TA
+44-18 to spend a night : aperor /TO (akiper: 44-01)
+(somewhere)
+
+45. Body actions
+
+45-01 to stand up : akiwo /TA
+45-02 to get up (from : anyoun /TA
+lying)
+45-03 to jump out of bed : akuraun /TA
+45-04 to help sb. to sit : akitonyoun /KA (anyoun: 45-02)
+up
+45-05 to sit down : akiboikin /KO
+45-06 to straddle : akicolong /KO
+45-07 to crouch : akijor /TO
+45-08 to kneel down : aredik /TO
+45-09 to lie flat : abubur /TO; akiper akooki /TO (lit. to lie on
+the belly)
+45-10 to bend over : akudokin /TO
+45-11 to straighten : akitenar, akitenikin /KA; ariyor /TO (lit. to
+oneself straighten, to unfold)
+45-12 to tread on : akicak /KA
+45-13 to stumble : akukuriyor /TO
+
+
+---
+
+
+45-14 to stumble and fall down
+45-15 to stumble sb.
+45-16 to slip (because of mud)
+45-17 to be slippery
+45-18 slippery place
+45-19 to stagger
+45-20 to fall, to tumble
+45-21 to turn while lying
+45-22 to crawl
+45-23 to rest one's cheek in one's hand
+45-24 to lean (against [sth.])
+45-25 to sprawl
+45-26 to open the legs
+45-27 to open the mouth
+45-28 to open the eyes
+45-29 to close the eyes
+45-30 to show one's teeth
+45-31 to face at [sth.]
+45-32 to turn one's back
+45-33 to step back
+45-34 to wave one's hand
+45-35 to invite sb. by waving
+45-36 to give a secret signal by pinching and/
+45-37 to give a signal by waving
+45-38 to point
+45-39 to shake one's head
+45-40 to nod
+45-41 to stretch oneself (to touch [sth.])
+45-42 to jump,
+to jump over
+45-43 to step over
+45-44 to dangle
+45-45 to hit [sth.] by accident
+45-46 to bump (against sb.)
+45-47 to divert, to turn away (direction of sth.)
+45-48 to avoid (e.g. a flying stone)
+45-49 to block the way,
+
+: akikumakin /KA; aramakin /TA
+: akilegeun /KA
+: aceretiyar /TA; acurutar /TA
+: acurut /TA
+: aro nacurut (aro: place, acurut: 45-17)
+: akiryangaryanga /KA; akitereter /KO
+: adakar /TA
+: akibelokin /KO
+: akile /TA
+: akitasieno /KO
+: agongakin /TA; atipen /TO (lit. to support oneself by leaning against sth.)
+: akitenar /KA
+: anganyar ngakejen /TA
+: anganyar akituk /TA
+: anganyar ngakonyen /TA
+: amuduk /TO
+: angiun /TA; akitoodiun ngikyal /KA (lit. to show teeth)
+: akingoliar /KA; akenyikin /TA (lit. to face toward sth. and stare it)
+: akimulen /TO; akibongokin akau /KO
+: akikutor /KO; akibong kaku /TO (lit. to return back)
+: akikikikan /KO; akotakin /TA (lit. to raise one's hand)
+: anyaraun a akan /TA (lit. to call this way by hand)
+: akidong /TA
+/or winking
+: akikekin akan /KA (lit. to wave hand)
+: akidod /TA
+: akimungumung akou /KA
+: akiikin /KA; akilek akou /KA
+: ariyor akwan /TO
+: akipor /TO
+: akikalam /KA; akilam /KA
+: akinenokin /KO; akipun /KA
+: akinang, anangakin /TA
+: akituryaikin /KA
+: akisiitor /KO (lit. to cause to pass by. akiitor: to pass by)
+: asegakin /TA
+: akitorobikin /KO; akigol erot /TO (lit. to
+
+
+---
+
+
+45-51 to get out of the way
+45-52 to put [sth.] in the way
+45-53 [sth.] to block the way
+45-54 to remove what is in the way
+45-55 to move [sth.]
+45-56 to hide oneself
+46. Movements
+46-01 to go
+46-02 to go
+(to destination)
+46-03 to go away
+46-04 to leave, to set out
+46-05 to leave secretly and quietly
+46-06 to go ahead of sb.
+46-07 to arrive
+46-08 to stay
+46-09 to remain
+46-10 to return,
+to come back
+46-11 to go straight
+46-12 to turn,
+to change the direction
+46-13 to turn to the right
+46-14 to come
+46-15 to come from
+(somewhere)
+46-16 to enter
+46-17 to go out,
+to come out
+46-18 to get on
+46-19 to get down
+46-20 to jump down
+46-21 to climb (mountain or tree)
+46-22 to climb down
+46-23 to go beyond a mountain
+46-24 to go down
+(e.g. into the well)
+46-25 to approach
+46-26 to move off,
+to move away
+46-27 to run away
+46-28 to catch up with sb.
+46-29 to walk side by side
+46-30 to follow sb.
+46-31 to walk in line
+
+: akiyotor, akiyotun, akiyotokin /KO; atiakin /TA
+: akiruwokin /KA; akigol /TO (lit. to close)
+: alegerikin ibore lorot /TA
+: apogar /TA
+: akisiyotor /KO (akiyotor: 45-51)
+: akiduk /TA
+: akilot /TO
+: akideng /TO
+: ayakar /TA
+: alotokin /TO (akilot: 46-01); asaar /TA
+: asiwakin /TA
+: akingarenikin /KO; akiteek /KA
+: akidol, adolun /TO; akinang, anangun /TA
+: akiboi /KO
+: akidong /KO
+: akibong, abongun /TO; akidesiun /KA; abelun /TA
+: akidiir /KA
+: akinacar /KA; akiitor /KO (lit. to pass by)
+: to go
+: akilodakin teten /KA
+: abunere /TO
+: abunere /TO (lit. to come)
+: alomar /TA
+: apudor /TO
+: akidok /TA
+: adokun /TA
+: akipor /TO
+: akidok /TA
+: atiyaun /TO
+: atiyaar lomoru /TO
+: adoiyor /TO
+: aapikin /TA
+: awotokin /TO; acadar /TA
+: akipungar /KA; amatar /TA
+: akidol /TO; akirumun /KA
+: akibak /KA
+: akitup /TA
+: akiwap /KA; aropere /TA
+
+
+---
+
+
+46-34 to walk
+46-35 to stroll
+46-36 to run
+46-37 to run away
+46-38 to run this way
+46-39 to run fast
+46-40 quickly, fast
+46-41 slowly
+46-42 to hurry
+46-43 to make sb. hurry
+46-44 to stagger,
+to walk zigzag
+46-45 to pass by
+46-46 to pass avoiding
+[sth.]
+46-47 to cross (a road)
+46-48 to take (sb.
+somewhere)
+46-49 to bring sb.
+46-50 to show around,
+to guide
+46-51 to see off
+46-52 to accompany,
+to go together
+46-53 to lead the way
+46-54 to stop
+46-55 to stop sb.
+46-56 to lose one's way
+46-57 to go out of sight
+46-58 to travel
+46-59 journey
+46-60 automobile, motorcar
+46-61 tire
+46-62 to steer,
+to drive (a car)
+46-63 to ride
+46-64 to get off
+(from the car)
+46-65 to run over
+46-66 bicycle
+46-67 train
+46-68 airplane
+46-69 path
+46-70 track, animal trail
+46-71 road
+46-72 junction,
+fork in road
+46-73 [road] to branch off
+46-74 to make one's way
+through weeds
+46-75 to level long weeds
+(when walking)
+46-76 mound,
+heap on the ground
+
+: akilot a ngakejen /TO (lit. to go on foot)
+: akilare /KA; asakasak /TA
+: akiker /TA
+: amatar /TA
+: apyeun /TA; amotun /TO
+: apiran /TA
+: atipei
+: anipon
+: akiburubur /KA (lit. to finish sth. quickly)
+: akibunyakin /KA
+: akitereter /KO
+
+: akitor /KO; atorun /TO
+: akiman /TA
+
+: atoror /TO; atubor /TO
+: akirik, arikor /TO
+
+: aomun /TO; akirik, arikun /TO
+: akitoodikin /KA; akidodikin /KA
+
+: akitenar /KA; akitumor /KO
+: akiruk, akirukor, akirukun /KO
+
+: akingaren /KO; akirik /TO
+: akiwo /TA
+: akitouwo /KA (akiwo: 46-54)
+: acakar /TA; akingop /TA; awoliyor /TO
+: angopiar /TA
+: akilaar /KA
+: alotor/ngalotorisyo (akilot: to go)
+: amotoka/ngamotokai
+: atairi/ngatairyo
+: akigur /KO
+
+: akidok /TA
+: adokun /TA
+
+: akicak /KA (lit. to tread, to trample)
+: agaali/ngagaali
+: agaryamoc/ngagaryamoc
+: ikeny/ngikeny (lit. bird)
+: erot/ngirotin
+: erot a ngitiang (lit. path of wild beasts)
+: erukudi/ngirukudi
+: akiceret/ngakicereta (akicer: 46-73);
+: akiremet/ngakiremeta (akiryam: to meet)
+: akicer /KA
+: akingany /TA
+
+: akiperikin nginya /KO
+: atitipu/ngatitip
+
+
+---
+
+
+XI. DAILY LIFE
+47. Work
+47-01 to work
+47-02 work
+47-03 to assist, to help
+47-04 to disturb sb.'s
+work
+47-05 to take sb.'s place
+47-06 tool
+47-07 to use
+47-08 to make
+47-09 to repair
+47-10 to become repaired
+47-11 to replace
+47-12 to forge
+47-13 blacksmith
+47-14 hammer
+47-15 to hit
+(with a hammer)
+47-16 bellows
+47-17 to blow bellows
+47-18 blacksmith's
+workshop
+47-19 ax
+47-20 adze
+47-21 nail
+47-22 peg
+47-23 to split (wood)
+47-24 to carve wood
+47-25 to shave wood,
+to slice
+47-26 to shave wood,
+to pare
+47-27 knife
+47-28 handle of a knife
+47-29 chisel
+47-30 saw
+47-31 to saw
+47-32 file
+47-33 board
+47-34 to make smooth
+(surface of a wooden
+
+: akitiare /KA; akisub etic /TA
+: etic/ngitico
+: akingarakin /KA
+: akican alotic /KA
+
+: alonyakin /TA; auweikin /TA (lit. to take
+charge of sth. in place of sb.)
+: iborosit/ngiboro
+: atingiar /TA
+: akisub /TA
+: akisub /TA
+: asubakin /TA
+: akilokony /KO; alonyakin /TA
+: akityek /KA
+: eketyakan/ngiketyakak (akityek: 47-12)
+: ekidongit/ngikidongito; enyundu/nginyundui
+: akidic /KA; akiram /TA
+
+: akituleet/ngakituleeto (akitule, akitulekin:
+to blow with one's mouth)
+: akitule /KO
+: awi a eketyakan
+
+: aep/ngaepe
+: epananga/ngipangngai
+: esumari/ngisumarya
+: asesit/ngases
+: akici /TA; akingenyar /KA; akipak /TA
+: akicare /KA (lit. to carve wood to make rough
+shape of the object)
+: akiiyer /TA (lit. to scrape little by little
+in the last stage of making wooden tools)
+: akikul /TA
+
+: ekileng/ngilyanga; ekude/ngikudei (finger
+knife); abarait/ngabara (arm-knife worn on the
+wrist); ebalite/ngibalitei (a piece of tin,
+etc.)
+: akitoi a ekileng (lit. stick of a knife);
+akulep/ngakulepyo a ekileng;
+atingit/ngatingita a ekileng (lit. holder of a
+knife, akiting: to seize, to hold)
+: erokony/ngirokonyo; ekiceet/ngikicaata;
+ekileng lokiceet (akicare: 47-24)
+: egirigir/ngigirigirya
+: akigirgir /KA
+: egirigir/ngigirigirya
+: abao/ngabaoi
+: akilalare /KA (to burn livestock droppings and
+put it into the water and smear)
+
+
+---
+
+
+47-37 to make smooth
+(surface of a clay pot)
+47-38 stone for smoothing
+surface
+47-39 to weave a string
+(e.g. braid)
+47-40 to weave a string
+(e.g. rope)
+47-41 string
+47-42 strap
+47-43 to be skillful and
+quick (at work)
+47-44 skillful person
+47-45 clumsy person,
+unskilled person
+47-46 to be idle
+47-47 to make an effort
+47-48 to be active
+47-49 to employ
+47-50 to dismiss, to fire
+47-51 to get ready,
+to prepare
+47-52 to try
+47-53 to accomplish
+47-54 to stop (working)
+47-55 to succeed
+47-56 to fail
+47-57 to make a mistake
+47-58 [task] to be easy
+47-59 [task] to be
+difficult
+48. Fire
+48-01 fire
+48-02 spark
+48-03 ashes
+48-04 smoke
+48-05 soot
+48-06 to build a fire
+(by rubbing sticks)
+48-07 rubbing sticks to
+make a fire
+48-08 to kindle,
+to light fire
+48-09 to catch fire
+48-10 to burn [sth.]
+48-11 [sth.] to burn
+
+: akiledun /KA; akiloloun /KA; akipuc /KA
+: amoru nakipucet (akipuc: 47-37)
+: akidany /KA
+: awoiyar /TO (lit. to make long)
+: auno/ngaunoi; amasi/ngamasin; adany/ngadanya (akidany: 47-39)
+: arukan/ngarukania (rope made of animal hide)
+: akiber /KA
+: ekeberan/ngikeberak (akiber: 47-43); ekecan/ngikecak (lit. a skillful person in carving wood. akicare: to carve wood)
+: ekalany/ngikalanyanoti (lit. lazy person)
+: akalany /TA
+: akican /KA; akikeriker /KA
+: aturon /TO
+: akigir /KA (lit. to write)
+: akituwarakin /KA
+: asubakin /TA
+: akining /KO
+: akirikakin /KA; arumor /TO
+: aisikin /TA; akimekin etic /KA
+: aanyun /TA (lit. to see, to get, to find); apedor /TO (lit. to be able); aryamun /TA (lit. to get)
+: adakar /TA
+: akisec /TA
+: apatan /TA; awok /TA
+: agogong /TO
+: akim/ngakimya
+: ekatuwenyit/ngikatuweny a akim (akituweny: to spark); ngikabel a akim
+: ekuron/ngikurono
+: apuru/ngapurusyo
+: etulya/ngitule
+: akipir /KA
+: epipot/ngipip
+: akinok, akinokakin /KA
+: anokun akim /KA
+: akinom, akinomakin /KA
+: anomiar /KA
+
+
+---
+
+
+48-15 to burn to ashes
+48-16 to extinguish fire
+48-17 [fire] to go out,
+to become extinguished
+48-18 to warm oneself near
+the fire
+48-19 firewood
+48-20 to gather firewood
+48-21 to arrange firewood
+to light
+48-22 to add firewood in
+fire
+48-23 to gather firewood
+to the center of the
+fire
+48-24 to draw firewood
+from fire
+48-25 charcoal, ember
+48-26 match
+48-27 to strike a match,
+to light a match
+49. Water
+49-01 water
+49-02 foam
+49-03 to make wet
+49-04 [clothes] to be wet
+49-05 to dip, to soak
+49-06 to take [sth.] out
+of water
+49-07 to shake off water
+49-08 to flap off water
+49-09 to wipe (one's wet
+hands)
+49-10 to squeeze out water
+(of a cloth)
+49-11 to dry ([sth.] over
+[fire])
+49-12 [wet clothes] to dry
+49-13 dry cloth
+49-14 to draw water
+49-15 watering place
+49-16 well
+49-17 to deepen a well
+49-18 to take out dirty
+surface water of a well
+49-19 [well] to retain
+water, not to dry up
+49-20 to strain water
+
+: : araun akim ekuron /TA (lit. [fire] to become ashes)
+: : akitudunger /KO
+: : adunger akim /TO
+: : akipeyar /KA
+: : ngakyoto a akim
+: : akikeiyen /KA
+: : akipikakin /KA
+: : akinokakin ngakyoto nakim /KA
+: : akirokony /KA (lit. to gather firewood to the center of the fire)
+: : akiyetiyataar /KA
+: : atotole/ngatotoli
+: : emali/ngimalya a akim; akibirit/ngakibirito
+: : akituweny, atuwonyun /TA (lit. to make a spark)
+: : ngakipi
+: : ekurudo/ngikurudoi
+: : akitapapal /KA (apapal: 49-04)
+: : apapal, apapaler /TA
+: : akimur /TA
+: : alemun a nakipi /TA; autun a nakipi /TO (lit. to pull out)
+: : akiteriter /KA; akiwatawataar /KA (lit. to shake off water from hands or vessels)
+: : akilakalakar /KA
+: : akimet, ametar /TA (lit. to wipe off water and/or sweat from the body by hands, etc.)
+: : akici, acuwar /TA
+: : akimare, akimaun /KA
+: : akiwon, awoner /TO
+: : eworu nakonon
+: : akiwok /TO
+: : ecor/ngicorin
+: : akar/ngakare; akuja/ngakujan (small shallow well); akoomeemyot/ngakoomeemei (deep well dug at places other than river-bed)
+: : akicukul /KO
+: : akipakar /KA
+: : acokocok /TA
+: : akili /TA
+
+
+---
+
+
+49-22 to stir
+49-23 to knead
+49-24 [liquid] to be thick
+49-25 [liquid] to be
+sticky
+49-26 to coagulate
+49-27 [sth.] to melt
+49-28 to melt [sth.]
+49-29 to ooze out and drip
+49-30 to drip
+49-31 to leak
+XII. SOCIAL LIFE
+50. Languages
+50-01 voice
+50-02 word
+50-03 meaning
+50-04 language
+50-05 Turkana language
+50-06 to say
+50-07 to converse,
+to talk, to have a talk
+50-08 to have a chat
+50-09 to speak loudly,
+to make a noise
+50-10 to speak to sb.,
+to address
+50-11 to obstruct
+50-12 to whisper
+50-13 to make a speech
+50-14 to stop speaking
+50-15 to listen to sb.
+silently
+50-16 [person] to keep
+quiet
+50-17 to speak
+(a language)
+50-18 to understand
+(a language)
+50-19 to tell
+50-20 to inform
+50-21 to announce to the
+public
+50-22 news
+50-23 to report
+50-24 to call
+
+: akikwalkwal /KA (to stir liquid)
+: akingorirakin /KA; amunare /TA
+: abirit /TO; adikam /TA
+: akimidak /TA; akimidik /TA
+
+: akiɗik /KO
+: akeeyar /TA
+: akitekeeyar /KA (lit. to cause [sth.] to melt.
+see 49-27)
+: akidoka /KA
+: akidokodok /KA; aware /TO
+: apedod /TO (akiped: to pierce); aware /TO
+(49-30)
+
+: etoil/ngitoilo
+: akiroit/ngakiro
+: ngesi (lit. he/she/it)
+: akituk/ngakituka (lit. mouth);
+angajep/ngangajepa (lit. tongue)
+: ngaturukana
+: abeikin /TA; alimun /TO; atamar /TA
+: akiyan /KA
+
+: akirorikin /KO
+: acala /TA
+
+: akisiyan /KA
+
+: akitenger /KO
+: akingaingaa /KA
+: akirorikin /KO; akituk /TO
+: akililing /KA
+: akipup, apupokin /TO
+
+: akililingikin /KA
+
+: akiror /KO
+
+: akierar /KA; akipup /TO
+
+: akisisare /KA; alimokin /TO
+: akiteiyenun /KA (akiiyen: to know, to notice)
+: alimor /TO; akitaanyun /KA (aanyun: to
+notice); akikekin ebuku /KA (lit. to let the
+public know sth.)
+: akiroit/ngakiro
+: akitaanyun /KA (aanyun: to notice, to see);
+alimor /TO
+: anyar /TA
+
+
+---
+
+
+50-26 call
+50-27 echo
+50-28 to answer a call,
+to respond
+50-29 to remain silent
+50-30 to greet
+50-31 greeting
+50-32 to say farewell
+50-33 lie
+50-34 to tell a lie
+50-35 to deceive
+50-36 to conceal (a fact)
+50-37 to speak ill of sb.
+in his/her absence
+50-38 to ask a question
+50-39 to answer a question
+50-40 answer
+50-41 to shout, to cry
+50-42 to scold
+50-43 to blame
+50-44 to praise
+50-45 praise
+50-46 to boast
+50-47 to affirm
+50-48 to deny
+50-49 to agree,
+to come to an agreement
+50-50 to disagree,
+to contradict
+50-51 to assist, to help
+50-52 to promise
+50-53 to keep a promise
+50-54 to break a promise
+50-55 to request
+50-56 to refuse
+50-57 to undertake
+50-58 to allow,
+to let sb. do [sth.]
+
+: akituk/ngakituka (lit. mouth);
+: enyarae/nginyarasinei (anyar: 50-24)
+: akikobaret/ngakikobareta
+: akikere /KA; akiikin /KA (lit. to say "yes")
+: akililing /KA
+: akimalare /KA
+: emalas/ngimalasinoi (akimalare: 50-30)
+: atamar kidongorobo /TA
+: alyoko/ngalyokonisa; akalaalaat/ngakalaalaai
+: (akidet ngakalaalaai: to spread a false rumor)
+: akisud, akisudokin /KO; alyokon, alyokoner
+: /TO; amodiikin /TA; alimun alyoko /TO
+: akimunon /KO (lit. to play a joke); akingalare
+: /KA (lit. to reverse what one said); akimarer
+: /KO (lit. to make fun of sb. by telling a lie)
+: akida /KA (lit. to hide); akijok /KO (lit.
+: to hide one's livestock by putting them in charge
+: of others)
+: akigac /KA; akiswam /TA
+: akingit /KA
+: akibut /KO; akitac /TA (lit. to pay)
+: akibut; akitac/ngatacian
+: acala /TA
+: akisimekin /KA; akicikicik /KA (lit. to make
+: sb. correct his mistake); akitatam /KA (lit.
+: to teach, to educate)
+: apaikin /TA (term for being cross with
+: everybody)
+: akikut /KA; akipur /KO
+: akikuset/ngakikuset (akikut: 50-44); epuri
+: (akipur: 50-44)
+: akinis /KA
+: acamun, acamakin /TA; akiikin /KA (lit. to say
+: "yes")
+: akinger /TO; akipeg /TA
+: acamun, acamakin /TA
+: akinger /TO
+: aikin /TA (to assist in the bride wealth
+: payment, etc.)
+: akicikakin /KA; akikong /KO (lit. to swear, to
+: make an oath)
+: acamakin /TA (lit. to agree, to affirm)
+: akinger /TO (lit. to refuse); alyokoner /TO
+: (lit. to tell a lie)
+: akilip /KA
+: akinger /TO
+: akingarakin /KA (lit. to help)
+: acamakin /TA (lit. to agree, to affirm);
+: akimekin /KA (lit. to leave sth. untouched, to
+: set free)
+
+
+---
+
+
+50-61 to obey
+50-62 to apologize
+50-63 to forgive
+50-64 to soothe,
+to appease, to pacify
+50-65 to console
+50-66 to encourage
+50-67 to consult
+50-68 to teach
+50-69 to teach good
+manners
+50-70 to explain
+50-71 to think aloud
+50-72 to complain,
+to grumble, to show dis
+50-73 to tell a tale
+50-74 tale, story
+50-75 abusive word
+51. Play
+51-01 to play
+51-02 game
+51-03 to dance
+51-04 good dancer
+51-05 dance
+51-06 feather headdress
+51-07 container for
+ostrich feather
+51-08 song
+51-09 to sing
+51-10 drum
+
+: arimakin /TA; akipup /TO (lit. to listen to);
+akiker /TO (lit. to fear)
+: akimaima /KA
+: akiseny /KO; akijal, ajalun /TA (lit. to set
+free, to release)
+: akimaima /KA
+
+: akisilling /KA (lit. to cause to calm down)
+: akikut /KA; akitogogong /TO (agogonger: to
+become cheerful)
+: alosikin /TO; akingitun /KA (lit. to ask, to
+question); akilom /TA (lit. to consult to a
+prophet <emuron> 15-31)
+: akitatam /KA
+: akitatam eboiyori loajokon /KA
+
+: akitenun /KA; aretokin /TO (lit. to tell the
+truth)
+: apodo /TO
+: akingurungura /KA
+
+discontent
+: akiyan poyo /KA
+: poyo
+: ekiyeny/ngiyenyen, ngikinyesinei ("engatule
+ito kon", etc.)
+
+: abolya /TA
+: abolya/ngabolyasinei
+: akicur /KO; akidongare /KA
+: ekidonganit, ekedongan/ngikedongak
+(akidongare: 51-03)
+: edonga/ngidongai
+: akopiro/ngakopir (lit. feather); ailet/ngaile
+(extremely long one); amiinyait/ngamiinya
+(long one); akoroit/ngakoroi (rather long
+one); akodangole/ngakodangole (short white
+one); ekodoongoli/ngikodoongolya
+(white feathers cut short pieces, for <ngirisai>
+alternation-set); ekamuto/ngikamutoi (black
+feathers cut into short pieces, for <ngimoru>
+alternation-set); ekuuri/ngikuuri (feather cut
+lengthwise in the middle)
+: atoros/ngatorosa
+
+: eewos/ngiiwosyo (aewo: 51-09); emong/ngimongin
+(lit. ox. Song of favorite-ox is called by
+this term)
+: aewo /TO; akiruko /KO (lit. to sing a song of
+[favorite-ox])
+: elamaru/ngilamaru; atoros/ngatorosa (lit.
+ostritch feather container of men):
+eburi/ngiburin (lit. oil container)
+: akibur amuny /TA
+
+
+---
+
+
+51-12 to beat a drum
+51-13 a kind of flute
+51-14 a kind of musical instrument
+51-15 to ululate
+51-16 to whistle
+51-17 to clap hands
+51-18 to lead dancing or singing
+51-19 leader of dancing and singing
+51-20 ball
+51-21 to play with a ball
+51-22 to throw (a ball)
+51-23 to catch (a ball)
+51-24 to applaud
+51-25 to play merrily, to play loudly
+51-26 to tickle
+51-27 to imitate
+52. Quarrel
+52-01 to give sb. verbal abuse
+52-02 curse
+( verbal cursing)
+52-03 to curse sb. verbally in the face
+52-04 to threaten
+52-05 to dispute, to argue
+52-06 to get reconciled
+52-07 to fight
+52-08 to provoke a fight with sb.
+52-09 to incite a fight
+52-10 to avoid a fight
+52-11 to settle a dispute, to part a dispute
+52-12 to part a fight
+52-13 to jump upon sb., to spring upon sb.
+52-14 to beat, to strike
+52-15 to slap
+52-16 to pinch
+52-17 to kick
+52-18 to throw down sb.
+52-19 to press down sb.
+
+: akidet eburi /KA; akidongodong eburi /KO;
+akiram eburi /TA
+: ebune/ngibunei; ekapirikic/ngikapirikica;
+adiit/ngadiita (bugle horn)
+: apili/ngapili (modern whistle);
+egegeit/ngigege (bundle of animal hooves);
+ecorot/ngicoroi (bells worn on the calf of
+legs); asowat/ngasowa (iron ring worn on the
+ankle)
+: akimaretet /KO
+: akiunya /KA
+: akiram ngakan /TA
+: akimar, akimarakin /KA; akirik /TO
+
+: ekemaran/ngikemarak (akimar: 51-18)
+
+: epira/ngipirai
+: abolya ngipirai /TA
+: akicak /TA; akimas /KA
+: akikamun /KA
+: aramakin ngakan /TA
+: alakara /TA
+
+: akikidikid /KA
+: akisisare /KA
+
+: akiyeny /KA; akimor /TO
+
+: elamit/ngilam (akilam: 52-03)
+
+: akilam /KA
+
+: akiteem /KA
+: akiburare /KA; angorop /TA
+: akisil /KA
+: ajie, ajore /TO
+: akicicore /KO; abenyun /TA (lit. to tease, to
+make fun of)
+: akicucikin /KA; akiturum, akiturumukin /KO
+(lit. to inform someone's backbite)
+: akikilakin /KA; akiem /TA (lit. to fear)
+: akityak /TA (lit. to part)
+
+: akitikitik /KO
+: akiwongakin /KA; aporokin /TO
+
+: akiram /TA; akidet /KA
+: akibap /KA; atarakin /TA
+: akipoc /TO
+: akipet /TO
+: adakar /TA
+: atikokin kwap /TO; akimed /TA (lit. to choke)
+
+
+---
+
+
+52-23 to defend oneself
+from being beaten
+52-24 to defend sb. from
+being beaten
+: akigakin /KA (lit. to parry the attack by
+shield, etc.)
+: aiun /TA
+53. Giving and receiving
+53-01 to give
+53-02 to give away
+53-03 to hold out sth. in
+one's hand (as a gift)
+53-04 gift
+: ainakin /TA; areikin /TA
+: akipotor /KO
+: akikobakin /KA
+53-05 thanksgiving gift
+53-06 to give a gift
+: etoolo/ngitooloi (this is not a general term,
+see 30-11. The Turkana do not have general
+terms for "gift")
+: eboka/ngibokasinei; ebacit/ngibacito
+: akitoolokin /KO (term for a gift of
+pre-marital negotiation from a man to girl's
+kinsmen, see 30-11)
+53-07 to delight sb. with
+a gift
+53-08 to get,
+53-09 to receive
+53-10 to pick up,
+53-11 to get back
+53-12 to ask for [sth.]
+53-13 to refuse to give
+53-14 to share with sb.
+53-15 to share food with
+sb., to divide food between selves
+53-16 to check whether
+(e.g. food sharing) correctly done or not
+53-17 to sell
+53-18 to buy
+53-19 money
+53-20 price
+53-21 how much?
+53-22 [price] to be
+expensive
+53-23 expensive (price)
+53-24 [price] to be cheap
+53-25 to pay
+53-26 payment
+53-27 to order,
+to give an order
+53-28 to borrow
+[money or sth.]
+53-29 to lend
+[money or sth.]
+53-30 to return
+[money or sth.]
+53-31 debt
+53-32 to demand payment of
+debt
+: akidop /TA
+: aanyun /TA; aryamun /TA
+: akijau /KA; akidyaua /KA
+: akirapun /KA
+: aanyun /TA; akinyakakin /KA; abongun /TO
+: akilip /KA
+: akimik /KA; auwoun /TA
+: akityak /TA (lit. to part)
+: akimor /TA
+: akitiriyani /KA
+: akigel, agelar /TA
+: akigel, agelun /TA
+: aropiat/ngaropie
+: ebei
+: ngaropie ngai?
+: agogong /TO
+: elalak ebei (lit. [price] to be voluminous);
+evoi ebei (lit. [price] to be high)
+: apatan /TA; edit ebei (lit. [price] to be
+little, to be small)
+: akitac /TA; akipotor ngaropie /KO (lit. to
+give away money)
+: akitac/ngatacian (akitac: 53-25)
+: akikic ainuno /KA
+: akilipar /KA (lit. to beg); akiar /TA (lit. to
+kill)
+: ainakin /TA (lit. to give); akipotor /KO (lit.
+to give away)
+: akinyakun /KA
+: amica/ngamicali
+: akimicare /KA
+
+
+---
+
+
+53-33 to compensate : akibut /KO; akitac /TA (lit. to pay)
+53-34 to entrust, : akijok, akijokokin /KO (lit. to put one's
+to place in trust, livestock in charge of others)
+to put [sth.] in the care of sb.
+53-35 to take charge of : atingakin /TA; auweikin /TA
+[sth.]
+53-36 to take charge of : akiweikin /KA
+[sth.] in secret
+53-37 to pay wages : akitac emucaala /TA
+53-38 to steal : akoko /TA
+53-39 to rob : ademar /TA
+53-40 to send sb. to give : amear /TA
+a message
+53-41 to deliver : akikobakin /KA (lit. to deliver gift)
+53-42 to exchange : akiluny /TA
+53-43 to give away : amekin /TA
+livestock for keeping
+53-44 to give away : apukin /TO
+livestock for consumption, etc.
+53-45 to give away : aikin /TA
+livestock to assist bride wealth payment
+53-46 to give away : akibut /KO (lit. to compensate)
+livestock to those who lost animals because of
+raiding, bride wealth payment, etc.
+53-47 to give away : aksider /KA (akider: 53-48)
+livestock after gaining animals by
+raiding, receiving bride wealth payment, etc.
+53-48 to beg and get : akider /KA
+livestock from those who gained animals
+by raiding, bride wealth payment, etc.
+53-49 to exchange : akisecar /KA
+livestock to get animals for consumption
+53-50 to exchange : akilokony /KO
+livestock to get animals for herd-reproduction
+53-51 to exchange : akigel /TA
+livestock with [sth.] (e.g. gourd, spear, etc.)
+53-52 to kill and eat a : akinges /TA
+kin's livestock without permission
+53-53 to kill an animal : apuore /TO
+for consumption
+54. Society
+54-01 village : alomar/ngalomarasya (akilom: to settle, to
+dwell)
+54-02 area in which a man : ere/ngiarerya
+usually dwells
+54-03 inhabitant : elope a akuwap (lit. owner of the land)
+54-04 home village : nikidoumet (akidoum: to give birth)
+54-05 town : elain/ngilaino: etauny/ngitaunyo
+54-06 local residential : ekitelangitela
+group
+54-07 clan : ateger/ngategerin (this term also means a type
+of wooden vessel); emacar/ngimacarin (this
+term also means clan's livestock brand)
+54-08 age-group : ajore/ngajorei; anaket/nganaketa (akinak: to
+suck)
+
+
+---
+
+
+54-09 white man, European
+54-10 stranger, enemy
+54-11 thief
+54-12 to accuse
+54-13 to suspect
+54-14 to inspect sb.'s
+belongings
+54-15 to judge
+54-16 fault, crime
+54-17 penalty
+54-18 to punish
+54-19 whip
+54-20 to follow rules
+54-21 leader
+54-22 fame
+54-23 famous person
+54-24 to succeed in life
+54-25 owner
+54-26 host
+54-27 guest
+54-28 friend
+54-29 companion, colleague
+54-30 neighbor
+54-31 to be neighbor of
+sb.
+54-32 appointment
+54-33 to make an
+appointment with sb.
+54-34 to meet
+54-35 to go to meet sb.
+coming
+54-36 to invite
+54-37 to wait
+54-38 to make sb. wait
+54-39 to visit
+54-40 to let in (to the
+house)
+54-41 to entertain
+54-42 to detain,
+to ask sb. to stay
+54-43 to part (with sb.)
+54-44 school
+54-45 teacher
+54-46 pupil
+54-47 market
+54-48 shop, store
+
+: emusugut/ngimusungui; ekakwangan/ngikakwangak
+(lit. white person)
+: emoit/ngimoit (those other than the Turkana)
+: ekokolan/ngikokolak
+: akikukokin /KO; akititakin /KA
+: akitamakin /KA; amisikin /TA
+: akingany /TA; akiwol /KO
+
+: atubokin /TO
+: asecan/ngasececa (akisec: to make a mistake)
+: akidet/ngadetan, ngakideset (lit. beating);
+angine a ngikasukou (lit. goat for old men)
+: akidet /KA (lit. to beat); akiram akulit /TA
+(lit. to beat with a whip)
+: akulit/ngalita
+: akiricakin etali /KA
+: ekarikon/ngikarikok (akirik: to lead)
+: aruonut
+: ekarion/ngikaruok (aruore: to be famous, echo
+throughout)
+: aruun /TO; apoloun /TO (lit. to grow)
+: elope/ngikulopek
+: itwan a awi (lit. man of homestead)
+: epeiyononi/ngipeiyok (akipeiyor: to visit)
+: ekone/ngikonei; epai/ngipaulon
+: erukutosi/ngirukutosi (akiruk: to accompany)
+: ekidunyet/ngikidunyet (akidunyekin: 54-31)
+: akidunyekin /KA
+
+: akiciket/ngakiciketa (akicikakin: to make
+promise)
+: apupokin akiryamun /TO (lit. to agree to meet)
+
+: akiryam, akiryamun, akiryamakin /KA:
+arukaun /TA
+: akisiryamiar /KA
+
+: akipeiyoun /KO
+: akidarun /KA
+: akisibo /KO (lit. to cause sb. to sit.
+akiboi: to stay)
+: akilakin /KA; akipeiyor /KO
+: akilomun nawi /KA
+
+: akipeiyokin /KO; akitalakar /KA (alakara: to
+be pleased); akisimuj /KA (lit. to cause to eat)
+: akiretakin /KA
+
+: atyakar /TA
+: esukuli/ngisukulyo
+: ekatataman/ngikatatamak (akitatam: to teach)
+: ikoku esukuli (lit. child of school)
+: emaket/ngimaketa; emogan/ngimogaania
+: edukany/ngidukanyin
+: ekedalan/ngikedalak (lit. poor person without
+
+
+---
+
+
+54-50 beggar
+54-51 meeting
+54-52 [people] to
+assemble, to gather
+54-53 to assemble (people)
+54-54 square, open public
+place
+54-55 to be crowded (with
+people)
+55. Politics
+55-01 to govern
+55-02 rule
+55-03 donation,
+harambee (Sw.)
+55-04 tax
+55-05 to pay the tax
+55-06 important person
+55-07 chief
+55-08 chief's homestead
+55-09 country of the
+Turkana
+55-10 flag
+55-11 boundary
+55-12 to border on,
+to share a border
+55-13 world
+55-14 poverty
+55-15 to reconstruct
+(after a disaster)
+55-16 to prosper
+56. War
+56-01 war
+56-02 to fight a war
+56-03 army
+56-04 soldier
+56-05 to win
+56-06 to overcome,
+to surmount
+
+: ekelipan/ngikelipak (akilip: to beg)
+: atukor/ngatukusyo;
+akiryamaryam/ngakiryamaryameta (akiryamun: to meet)
+: akiryamaryam /KA
+
+: acunun, acunakin /TA; atukokin /TO
+: aro/ngaroatin; akyur/ngakyurin (lit. dancing
+place)
+: elalak ngitunga (lit. [people] to be many)
+
+: akipukore /KA; apolokin /TO; akirik /TO (lit.
+to lead)
+: etali/ngitalyo (rules which should be kept
+since long ago. Some of them are common to all
+the Turkana and others are specific to each clan)
+: ecur/ngicuron; ekod/ngikodyo
+
+: ecur/ngicuron
+: abukor ecur /TO
+: ekapolon/ngikapolok (lit. big person)
+: ekatukon/ngikatukok (atuk: to gather people)
+: awi a ékatukon
+: akuwap a ngiturukana
+
+: apendera/ngapenderai; atambara/ngatambarai
+: amaire/ngamairei (boundary of nations, ethnic
+group territories, etc.)
+: akidunyekin /KA
+
+: akopit/ngakopin
+: eboot; erony/ngironya, ngironyisya (poverty
+caused by drought, livestock epidemic disease,
+etc.)
+: acunun /TA (lit. to bring together)
+
+: akibar /TA (lit. to be rich in livestock)
+
+: ejie/ngijiesinei (lit. fighting);
+arem/ngaremojo (akirem: to attack, to throw
+spear)
+: ajore /TO
+: ajore/ngajorei (lit. group, age-group)
+: asiger/ngasigerya; ekangkait/ngikangkai;
+ekeyait/ngikeyain; epolisit/ngipoliso;
+nanyangakoti/nginyangakotyo
+: akiduwang /KA
+: akuruwor /TO
+
+
+---
+
+
+56-10 to kidnap, : akirik, arikun /TO
+to capture
+56-11 captive : arikot/ngarikon (akirik: 56-10)
+56-12 to kill : akiar /TA
+56-13 killer : ekaaaran/ngikaarak (akiar: 56-12)
+56-14 blood payment, : ngibareng a ekwori
+livestock paid by the murderer to the kinsmen of the killed
+56-15 to choke : akimed /TA
+56-16 [captive] to escape : akisi /TA
+56-17 to redeem : alacun /TA
+(a captive), to gain release of (a captive)
+56-18 to set free : akimekin /KA; alacakin /TA
+(a captive)
+56-19 to save, to rescue : aiun /TA
+(sb. from a danger)
+56-20 to escape from : asuro /TO
+danger
+56-21 to spy : akireb /TO
+56-22 to attack : akirem /TO
+56-23 to defend, : akiyok /KO (lit., to herd animals); akiryatakin
+to protect /KA (lit., to fight with running enemy by
+forestalling, see 45-50)
+56-24 to raid, to pillage, : akirem /TO (lit. to attack)
+to plunder
+56-25 weapon : iborosit lo ejie (lit. thing of fighting)
+56-26 cannon : abongobong/ngabongobongoi
+56-27 fighting stick : aselej/ngaselejo
+56-28 a war cry : eli/ngilia
+56-29 to shout a war cry : acala /TA; akiram ekaroo, akiram eli /TA
+56-30 ritual performed : ekeny/ngikenya
+after coming back from the raiding
+
+XIII. MENTAL LIFE
+
+57. Feelings
+
+57-01 to feel pleased : alakara /TA
+57-02 to dance about in : akicur /KO
+joy
+57-03 to delight : akitalakar /KA (alakara: 57-01)
+57-04 to become active, : agogonger /TO
+to become cheerful
+57-05 laughter : akyana (akyen: 57-06)
+57-06 to laugh : akyen /TA
+57-07 to smile : amaisan /TA
+57-08 to feel lonely : asilikin /TO
+57-09 to feel homesick : akiyalolong /KO
+57-10 to feel sad : akingo /TA
+57-11 to sob : akisuta /KA
+57-12 to weep : akigoro /KO
+57-13 to stop weeping : akiling /KA (lit. to keep silent)
+57-14 to sympathize with : akisyian /KA; angoikin /TA
+sb., to pity sb.
+57-15 to like : amina /TA
+57-16 to dislike : aremokin /TO; akinger /TO (lit. to refuse)
+57-17 to want [sth.] : akisak /TA
+
+
+---
+
+
+57-18 to want to do
+57-19 to depend on sb.
+57-20 to hope
+57-21 to long for,
+to wish for, to want
+57-22 to envy,
+to be jealous of
+57-23 to be surprised,
+to be startled
+57-24 to surprise,
+to startle
+57-25 to fear
+
+57-26 to frighten
+57-27 fear
+57-28 anger
+57-29 to get angry
+57-30 to feel displeased
+
+57-31 to be silent because
+of anger
+57-32 to endure, to bear
+57-33 to resume a good
+temper, to recover one's
+57-34 to thank
+57-35 to be shy
+57-36 shame
+57-37 to feel ashamed
+
+57-38 respect
+57-39 to honor, to respect
+57-40 to despise, to scorn
+57-41 to love
+57-42 to embrace
+
+57-43 to caress,
+to embrace sexually
+57-44 to kiss
+57-45 to have a sexual
+intercourse
+
+58. Mental activities
+
+58-01 to memorize,
+to remember, to recall
+58-02 to forget
+58-03 to remind
+58-04 to know
+58-05 to learn
+58-06 to read
+58-07 to understand
+
+: akisak akisub /TA
+: akigeno /KO
+: akitam, atamakin /TA; asibit /TA
+: akiburakin /KA (lit. to be eager for sb.'s
+ holdings); aminar /TA (lit. to like, to love)
+: adinga /TA; akipur /KO; akitilil /KA
+
+: atilar /TA; aryangakin /TA
+
+: akitiryangakin /KA (aryangakin: 57-23)
+
+: akiem /TA; akiker /TO; akitukuryan /TA;
+ akibul /TO (lit. [heart] to beat fast because
+ of fear and/or anxiety); akitukudikin /KA (lit.
+ to be unable to do sth. because of fear)
+
+: akiteem /KA
+: akuryan
+: angolt
+: akingo /TA
+: alilimior /TO; akilelenyit /KA (kelelenyit
+ ayong: I feel displeased)
+: akilling koteri angoit /KA (lit. to keep
+ silent because of anger)
+: anaikin /TA; atitinyikin /TO
+: akinyakakin alakar /KA
+
+temper
+: alakara /TA
+: akiem /TA
+: ngileec
+: akierar ngileec /KA; akingolikin ngileec /KA;
+ akirum ngileec /KA; akiting ngileec /TA;
+ aryamun ngileec /TA
+: arimatoi
+: arimakin /TA; akiker /TO (lit. to fear)
+: ajamuar /TA; akimen /TA
+: amina /TA
+: akilogakin ngakan /KA (lit. to tie arms around
+ sth. or sb.)
+: akinu /TA
+
+: akinu, anuakin /TA
+: akiner /KA; amanyit /TA
+
+: akitamun /KA
+
+: akimuryakin /KA
+: akitamakin /KA
+: akiiyen /TA
+: akisom /TA
+: akisomare /TA
+: akierar /KA
+
+
+---
+
+
+58-10 newspaper : agaset/ngagasito
+58-11 to write : akgir /KA
+58-12 to be correct : akitemokin /KO
+58-13 to be correct, : akiyookin /KO
+to tell the correct thing
+58-14 to be wrong : akicongakin /KA; nyiyokino (negation of
+<akiyookin> 58-13)
+58-15 to correct an error : arikin akiroit /TO (lit. to straighten a
+matter); asubakin nierono /TA
+58-16 letter : abarua/ngaburuwai; aworongat/ngaworongai
+58-17 paper : akaratac/ngakarataca
+58-18 to draw (a picture) : akicor /TO; akgir /KA; amacar /TA
+58-19 drawing, picture : aplica/ngaplica; etorube/ngitorubei
+58-20 to think, : akitam /KA
+to consider
+58-21 to decide : acamakin /TA; atubun /TO
+58-22 to plan : akituk /TO
+58-23 oath : akikonget/ngakikonget (akikong: 58-24)
+58-24 to swear, : akikong /KO
+to promise, to make an oath
+58-25 to believe : akinup /TA
+58-26 to doubt : angaiyakin /TA
+58-27 to be in difficulty, : aryamun ngicen /TA
+to be troubled
+58-28 trouble : ekican/ngicen
+58-29 to feel anxious, : akibul /TO
+to be worried
+58-30 to feel uneasy
+: akiil /KO (lit. to feel vague danger,
+uneasiness when walking alone at night, etc.)
+58-31 to hang oneself : amedakin /TA (akimed: to choke)
+58-32 to commit suicide by : angolakin /TA (akingol: to slaughter)
+cutting the throat
+58-33 to feel relieved : alakun /TO
+58-34 to get accustomed to : anaikin /TA
+[sth.]
+58-35 to lose interest in : ajamakin /TA; akipasakin /KA
+[sth.]
+58-36 wisdom : aosou
+58-37 to be clever : aosou /TO
+58-38 to be careful : acoikin /TA (lit. to take care of sth. not to
+be stolen, broken, damaged)
+58-39 to advice : akitousun /KO (aosou: 58-37)
+59. Number and counting
+59-01 one : apei
+59-02 two : ngaarei
+59-03 three : ngauni
+59-04 four : ngaomon
+59-05 five : ngakan
+59-06 six : ngakanikapei
+59-07 seven : ngakanikaarei
+59-08 eight : ngakanikauni
+59-09 nine : ngakanikaomon
+59-10 ten : ngatomon
+59-11 eleven : ngatomonokapei
+59-12 twelve : ngatomonokangaarei
+
+
+---
+
+
+59-13 thirteen : ngatomonokangauni
+59-14 fourteen : ngatomonokangaomon
+59-15 fifteen : ngatomonokangkan
+59-16 sixteen : ngatomonokangkanikapei
+59-17 seventeen : ngatomonokangkanikaarei
+59-18 eighteen : ngatomonokangkanikauni
+59-19 nineteen : ngatomonokangkanikaomon
+59-20 twenty : ngatomonyari
+59-21 twenty-one : ngatomonyarikaapei
+59-22 thirty : ngatomoniuni
+59-23 forty : ngatomoniaomon
+59-24 fifty : ngatomonikan
+59-25 sixty : ngatomonikapei
+59-26 seventy : ngatomonikaarei
+59-27 eighty : ngatomonikauni
+59-28 ninety : ngatomonikaomon
+59-29 hundred : amiat/ngamiai
+59-30 to count : akimarun /KA
+59-31 many people : ngitunga lukaalak
+59-32 many things : ngiboro lukaalak
+59-33 a few people : ngitunga lukidyoko; ngitunga lukidio
+59-34 number : anamba/nganambai
+59-35 all people : ngitunga ngial? (see 80-10)
+59-36 how many people? : ngitunga ngial? (see 80-10)
+59-37 to increase in : akiyatakin /KA; asojin /TA
+number, to become numerous, to grow
+59-38 to become reduced in : akidyekuun /KO
+number, to become fewer, to shrink
+59-39 [sth.] to be : adaun /TA
+finished, to be consumed entirely
+59-40 to remain : akidong /KO
+59-41 to save, to reserve : atubokin /TO
+59-42 to add : akiyatakin /KA
+59-43 to deduce : akitub /TO (lit. to cut)
+59-44 to divide : akorakin /TA
+59-45 to measure : akipim /KA; akitem /KO; akingin /KO (lit. to try, to test)
+59-46 measure, scale : akitemet/ngakitemeto (akitem: 59-45)
+59-47 balance : aratil/ngaratilya
+(for measuring weight)
+59-48 half : kiding
+59-49 time (five times) : ngakimaruneta ngakan (akimarun: to count.
+ngakan: five)
+59-50 for the first time : na ekingaren
+59-51 the first road : erot lokingaren
+59-52 order (the second : ikoku nia ngaarei
+child)
+59-53 the next stop : akiritirpet nakewarunan/ngakitiripyoto
+nakewarunak
+59-54 age (to be 30 years : akinang ngikar ngitomoniuni /TA (lit. to reach
+old) or to arrive at 30 years old)
+59-55 alone : bon
+60. Religion
+60-01 god : akuj/ngakujo
+60-02 to create : akisub /TA
+
+
+---
+
+
+60-03 to be in awe of god : akiem akuj /TA; akiker akuj /TO
+60-04 church : ekanisa/ngikanisai; ekelesia/ngikelesie
+60-05 to pray : akilip /KA
+60-06 mosque : emisikit/ngilmisikito
+60-07 to fast : akienen /TA
+60-08 spirit : ekipe/ngipyan
+60-09 spirit of the dead : ekaramit/ngikaram
+60-10 charm for keeping : ariwo/ngariwosya (akiri: 60-19);
+off the evil auwalai/ngauwalai (small piece of wood taken
+from several kinds of plant, worn around
+wrist, neck, etc. akiwal: 60-22);
+ekekeryau/ngikekeryau; ekeryau/ngikeryau (root
+of Cyperus spp. worn around wrist, neck, etc.); ebata/ngibatai (a piece of an unidentified
+plant worn around neck, etc.); eketoil
+lokanyinyuanan
+60-11 omen : amuroun
+60-12 witch : ekapilan/ngikapilak
+60-13 to celebrate : akigat, agat /TA (celebration made
+collectively by men to induce super-human power)
+60-14 leader of <agat> : ekagatan/ngikagatak
+60-15 to lay a curse (upon : akiar /TA (lit. to kill); akapelan /TA; akilam
+sb,) /KA (lit. to curse verbally in the face);
+akisilikor /KO (lit. to cause to swallow. To
+curse those who are taking much food.
+akillkor: to swallow)
+60-16 to lay a curse (upon : akirakar /KA
+sb. by evil-eye)
+60-17 curse : akapeli/ngakapelyo
+60-18 curse (verbal : elamit/ngilam (akilam: 60-15)
+cursing)
+60-19 to purify : akiri /KO (lit. to prevent evil thing); akipak
+ngamaliten /KA (lit. to prevent and renew the
+bad omen seen in the divination by reading
+animal intestines: 15-29); akipak ngakipi,
+akipakun ngakipi /KA (lit. to purify by
+sprinkling water); akilotun /KA ([medicine man:
+15-31] to wash the patient for treatment);
+akiwat, awotun /TA (term for purifying by
+scattering water and/or contents of animal
+stomach); akiruat /TA (term for sprinkling water
+in rituals); akibatar /KA (lit. to prevent evil
+thing)
+60-20 to spear an animal : akisicumakin /KA
+in the kraal to prevent the evil
+60-21 to spear an animal : akisicumare /KA
+for men in order to cure a patient
+60-22 to wear a charm for : akival, akiwalakin /KA
+keeping off the evil or to get super-human power
+60-23 sacrifice : ajulot/ngajul (lit. animal fur, fur color)
+60-24 to sacrifice : akiar ajulot (lit. to kill sacrifice), akiar
+ariwo (lit. to kill sacrifice of prevention of
+the evil) /TA
+60-25 to identify with : akiduwar /TA
+favorite-ox
+
+
+---
+
+
+60-26 to talk to one's : akitat, akitatakin /KA
+favorite-ox what is stated in the song of favorite-ox
+60-27 to smear animal : akico; acorokin /TO
+feces to one's favorite-ox
+
+XIV. ACTION TOWARD THINGS
+
+61. Movement of things
+
+61-01 to grope : akitaptap /KA; akitop /KA; akituturyare /KA;
+61-02 to touch : akisak /TA (lit. to look for)
+61-03 to seize with a hand : akitap /TA
+61-04 to grasp [sth.] in a : akiting /TA
+hand
+61-05 to grasp [sth.] in a : akibun, abunakin /TA
+hand firmly
+61-06 to scoop up with a : awodun /TO
+hand
+61-07 to pinch [sth.] : aridun /TA
+61-08 to hold : akiting /TA
+61-09 to hold [sth.] in a : akikod /TA
+hand hanging
+61-10 to hold in one's arm : akidak /TA
+61-11 to hold under one's : akirid /TA
+arm
+61-12 to leave [sth.], : akimekin /KA; alakakin /TA
+to let go
+61-13 to drop [sth.] : acakakin /TA
+61-14 [sth.] to drop onto : acakun /TA
+the ground
+61-15 to pick up : alemun /TA; akirapun /KA (lit. to pick up a
+lost article or what sb. has left, and make it
+one's own)
+61-16 to bring [sth.] : aomun /TO; ayaun /TA
+61-17 to take away. : ademar /TA
+to carry away
+61-18 to leave [sth.] : aisikin /TA; akimekin /KA
+behind (when going out)
+61-19 to carry : akiting /TA (lit. to hold, to seize)
+61-20 to carry [sth.] on a : akileplep /KO
+pole
+61-21 carrying pole : akitoi nakileplepet (akileplep: 61-20)
+61-22 to shoulder : akiryong /TA
+61-23 to carry [sth.] on : akiwok /KO
+one's head
+61-24 to help sb. to put : akiswok /KO (akiwok: 61-23)
+up a luggage on the head
+61-25 head pad : aekit/ngaekita
+61-26 to carry [sth.] on : akinap /TA
+one's back
+61-27 to unload and carry : akirit /KO
+the luggage little by little
+61-28 sack : ecue/ngicuei
+61-29 luggage basket : asaaajit/ngasaaja (basket to be loaded on a
+donkey's back for moving)
+
+
+---
+
+
+61-30 parcel : ebokot/ngibokoto; eegos/ngiogoso;
+61-31 load : etokole/ngitokolei (a parcel which has a
+61-32 to put, to place : eegos/ngiogoso
+: akikacakin /KA; akiwaakin /KA; akikekin /KA
+: (lit. to pick up sth. from the ground and put
+: it on the desk etc.)
+61-33 to put [sth.] near : akirudakin /KA; akiwaakin diye /KA
+sth. else
+61-34 to push away [sth.] : akijukar /KA; akisiyotor /KO (lit. to cause
+: sth. to get out of the way)
+61-35 to remove : akiyakar /KA
+61-36 line of things : erot a ngiboro (lit. path of things)
+61-37 to make a line : aropikin /TO
+61-38 to line up : akitoropikin /KO (aropikin: 61-37)
+61-39 to spread : apetakin /TA; alokin /TO (lit. to spread
+: folded sheet, mat, etc.)
+61-40 to put in disorder : akikurukur /KO; akiteriterakin /KA
+61-41 to put in order : arekin /TA; acunakin /TA (lit. to bring
+: together, to put sth. on sth.)
+61-42 to put away : acadar /TA; akikacar /KA
+61-43 to store : akidetakin /KA; akikacar /KA; akiuwa /KA
+61-44 to hide : akida /KA; akidetakin /KA; akikacar /KA;
+: akiuwa /KA
+: akitouwo /KA (akiwo: to stand up)
+61-45 to erect : akiri /TO
+61-46 to incline : adakar /TA
+61-47 to knock over [a
+person]
+61-48 to fell [a tree] : aukor eketoi /TO
+61-49 to support : akingarakin /KA (lit. to assist)
+61-50 to support [sth.] : akigang /KA
+not to [all down
+61-51 to lean [sth.] on, : agongakin /TA
+to lean [sth.] against
+61-52 to put [sth.] on : akidokokin /KO
+[sth.]
+61-53 to hang [sth.] : akikedokin /TO; akinenekin /KO
+(on the wall or the ceiling)
+61-54 to bridge : akiriwokin /KO
+61-55 to hang [sth.] : akinenekin /KO
+(over the chair, etc.)
+61-56 to be suspended : akineno /KO
+61-57 to take off : alacun /TA
+(an attached object), to remove
+61-58 to put in : akiwaakin /KA
+61-59 to take out : akiut, autun /TO; alemun /TA
+(e.g. from a bag)
+61-60 to lift : akikeun /KA
+61-61 to pull up : akiruun /KA; autun /TO (lit. to pull out)
+61-62 to load : akidok, akidokokin /KO; akisiwok /KO;
+: akisen /TA (lit. to pile up)
+61-63 to put down : akikaatoun /KO; akitaatoun /KO
+61-64 to abandon, : akicak, acakar /TA
+to discard, to throw away
+61-65 to lose : acakar /TA
+61-66 to pull : akiriar /KA
+61-67 to be lost : akisowar /KA; akicuwar /KA
+
+
+---
+
+
+61-68 to draw : akirere /KA
+61-69 to push : akijukar /KA
+61-70 to press [sth.] onto : akitik /TO; anuatakin /TA
+the ground
+61-71 to shake [sth.] : akibukbuk /KA; akiloilo /KO; akikinikin /KA
+61-72 to swing : akiloilo /KO; akikinikina /KA
+61-73 to move [sth.] : akisiyotor, akisiyotokin /KO
+61-74 to swing [sth.], : akiilkilk /KO; akisirim /KO
+round and round
+61-75 to gather : akicun /TA; akidep /KA
+61-76 to cover : akibur /TA; akimuk /KO; akirap /TA
+61-77 to uncover : anganyar /TA; akiwolor /KO
+61-78 to wrap up, : apopirikin /TA; akilogalagakin /KA (lit. to
+to bundle up roll up)
+61-79 to pack a load : akiyen /TA
+61-80 to unwrap, to unpack : alacakin /TA; akilak eegos /TA
+61-81 to stuff in : akijukakin /KA
+61-82 to stuff in, : akisig, akisigakin /KA
+to force in, to press in
+61-83 box : asanduku/ngasandukui
+61-84 basket (for putting : akikap/ngakikapa
+things in)
+61-85 to turn around : akirim /KO
+61-86 to turn [sth.] : akisirim /KO (akisirim: 61-85)
+around
+61-87 to make [sth.] face : akibeleun /KO; akisingoliar /KA (akingoliar:
+towards [sth.] to look toward sth.)
+61-88 [sth.] to face : akikeny /TA
+towards [sth.]
+61-89 to fell [sth.] : akitelor /KO
+61-90 to turn [sth.] over : akibel, akibelokin, akibelor /KO;
+akibelukuar /KO
+61-91 to roll : akilelo /KO
+61-92 to make [sth.] roll : akileleor /KO
+61-93 to scatter : akiyalar /KA; aekin /TA; akiyeliyel /KA;
+apetar /TA
+62. Connecting and disconnecting
+62-01 to tie, to fasten : akiyen /TA
+62-02 to untie : alacar /TA
+62-03 to become untied : alakar /TA
+62-04 knot : ekume a auno (lit. nose of rope)
+62-05 to connect : akodakin /TA; akirop, aropakin /TA
+(e.g. two strings)
+62-06 to attach : akidap /TA; aropakin /TA; adonyokin /TO (lit.
+to sew. To sew and repair the crack of
+wooden vessel)
+62-07 to stick [sth.] to : akisirum /KA (lit. to cause to catch)
+sth., to attach
+62-08 to become stuck : akirumakin /KA; akodakin /TA; atapakin /TA
+62-09 to become pasted up : akirumakin /KA
+62-10 to separate two : aboloiciar /TA (lit. to peel skin off);
+things that are akityak /TA (lit. to part)
+stuck together
+62-11 to peel off : atakun /TA
+(e.g. a postage stamp)
+
+
+---
+
+
+62-12 [two things stuck to each other] to come apart : alacakin /TA
+62-13 to paste : akirumakin /KA
+62-14 to paste : atapakin /TA
+(e.g., a postage stamp) : akituk, atukokin /TO
+62-15 to make a bundle : atuket/ngatuketa a ngakyoto (akituk: 62-15)
+62-16 bundle (of twigs) : akilog, akiloglog /KA; akimanaman /KA
+62-17 to wind (e.g., a rope) around [sth.] : akilajalajakin /KA
+62-18 to tighten : akirijakin /KA
+62-19 to loosen : akilajalajakin /KA
+62-20 [rope] to become loose : akilajalaja /KA; alacun /TA
+62-21 wire : asowat/ngasowa
+62-22 coil : aluguro (alugur: to coil around sth.)
+62-23 to poke in : akiryapakin /KA
+62-24 to pull out : aditun /TA; adotun /TO; autun /TO
+62-25 to pound in, : akidicakin /KA; aramakin /TA
+to hit in (e.g., a nail) : akiloilo /KO; akiukuuko /KO
+62-26 [nail] to become loose : akipir, akipirpir /KA (an action as to make a hole with a gimlet by turning it between palms); akirij /KA (an action as to make a hole in the animal skin by a nail holding in a hand)
+62-27 to screw in : akityak /TA
+62-28 to divide, to part : akijut /TO
+62-29 to rub off [sth.] by using stick, etc.
+63. Transformation
+63-01 to bend : akinyogakin /KA; akudokin /TO
+63-02 to straighten : akitenar, akitenikin /KA; arikin /TO
+[sth., bent]
+63-03 to fold (e.g., paper) : akibil, abilakin /TA
+63-04 to unfold (e.g., paper) : akitenar /KA
+63-05 to smooth out : atikokin /TO
+(e.g., crumpled paper)
+63-06 to unfold, : arikin, ariyor /TO (lit. to straighten a bent
+to straighten stick, to unfold a paper, etc.)
+63-07 to twist : amojir /TA
+63-08 to flatten : akiryanakin /KA (lit. to flatten [e.g., mound
+of sand]); apetakin /TA (lit. to spread)
+63-09 to make round : akikud, akudokin /TO
+(e.g., a string)
+63-10 to make round : akilulung, akilulungikin /KA
+(e.g., a clay ball)
+63-11 to rub : akirigare /KA; akisutar /KA;
+63-12 to polish : akimet, ametar /TA
+: akisut, akisutar /KA; akisiantari /KA (lit. to
+63-13 to whet, : akipen, akipenar /KA
+to sharpen the edge
+63-14 whetstone : akipenet/ngakipeneta (akipen: 63-13)
+
+
+---
+
+
+63-15 to sharpen to a point : akiit, aitar /TA
+63-16 to become sharp pointed : akwoner /TA (lit. to be sharp)
+63-17 to swell : akibu, abuore /TO; akitebukin /KO
+63-18 [strings] to get tangled : adudung /TA; akilogog /KA; akimanaman /KA
+63-19 to entangle, to tangle (e.g. strings) : akilog /KA
+63-20 to disentangle : akilac, alacar /TA; akitoruwar /KA; alakar /TA
+63-21 to stretch out : akirikin /KA
+63-22 to shorten, to make [sth.] short : akudokin /TO; akituryanuun /KA; akitub /TO (lit. to cut)
+63-23 to squeeze : akibun /TA; akipiric /KA
+63-24 to make [sth.] small : adteuen /TA
+63-25 to widen : alolomer /TA; akitalabany /KA (abalany: to be wide)
+63-26 to thicken, to make [sth.] thick : akitalangir /KO (alangir: to be thick)
+63-27 to make [sth.] thin : akitidlim /KA (adim: to be thin)
+63-28 to soften (e.g. animal hide), to make [sth.] soft : akitononok /KA (anonok: to be soft)
+63-29 to soak [sth.] (e.g. animal hide) in water to soften : akisyab /KA (akiyab: 63-30)
+63-30 to become soft (after soaking in the water) : akiyab /KA
+64. Breaking; destruction
+64-01 to cut : akidung /TO (lit. to cut with a knife, etc.); akitub /TO (lit. to cut and make sth. short)
+64-02 to tear off a small portion from [sth.] : acilar /TA; anilun /TA
+64-03 to cut into pieces : akitubub /TO
+64-04 to slice : akipac /KA
+64-05 to snap (e.g. a stick) : abibil /TA; akibil /TA
+64-06 [stick] to snap, to break : abila ēburo /TA (akibil: 64-05)
+64-07 to smash : akicakacak /KA; akirekin /KA; akiruk /TO
+64-08 to crush to pieces (with fingers) : akiryadakin /KA; akipuupuu /KA (lit. to crush sth. between two fingers); akicamakin /KA (lit. to crush sth. with fingers on a board etc.)
+64-09 to trample : akicak /KA; akirec /KA
+64-10 to prod : akicumcum /KA
+64-11 (e.g. with a stick or finger-tip) to hit, to beat : akiram /TA
+64-12 to tear (e.g. cloth) : akicil /TA
+64-13 to crack ([sth.] hard) : akibil /TA; akibwang /TA
+64-14 [wooden vessel] to crack : abila /TA
+64-15 to break into pieces : abelebel /TA; abwangabwang /TA; apetar /TA (lit. to spread)
+64-16 to break (e.g. a machine), to put out of order : akinyasun /KA
+
+
+---
+
+
+64-17 to split (a branch
+of a tree)
+64-18 to wreck (a house)
+65. Other kinds of action toward
+65-01 to collect
+65-02 to compare
+65-03 to choose
+65-04 to distinguish
+65-05 to surpass
+XV. THINGS
+66. Parts of things
+66-01 tip, point
+66-02 point of a knife
+66-03 end
+66-04 splinter, piece
+66-05 slice
+66-06 hole
+66-07 to make a hole
+66-08 side
+66-09 front surface
+(e.g. of a coin)
+66-10 front surface of a
+leather mat,
+face of a mat
+66-11 reverse surface
+66-12 bottom
+66-13 corner
+66-14 corner of a river
+66-15 corner of a vessel
+67. Relation to things
+67-01 front
+67-02 rear
+67-03 space between two
+things
+67-04 middle, center
+67-05 up
+67-06 down
+67-07 inside
+67-08 outside
+
+: akici, aciici /TA
+: aiyatar /TA; akibwang /TA
+:ard things
+: akidep /KA; akiger /TO
+: akisemere /KO; akisikwan /KA
+: aseun /TA
+: akiiyen /TA (lit. to know)
+: akiduwang /KA (eduwangit aite akaali: cow is
+better than camel)
+
+: akituk/ngakituka (lit. mouth)
+: angajep a ekileng (lit. tongue of knife)
+: esal/ngisali
+: ekabelit/ngikabelai;
+ekabelabelat/ngikabelabelai
+: akipacunet/ngakipacuneta (akipac: to cut off,
+to slice)
+: apedot/ngapedor (akiped: 66-07)
+: akiped /TO (lit. to pierce)
+: ekwas/ngikwasya; esep/ngisepyon (lit. a part
+of rib of animal body)
+: kidyaama (lit. up-side)
+
+: tooma ejomu (lit. inside of mat. Mat is folded
+into two when not used)
+
+: aaor: kaku/ngikauwa
+: ekawosiwosit/ngikawosiwosi
+: agalis/ngagaalisyo; ekwas/ngikwasya;
+akudokinet/ngakudokineta (akudokin: to bend)
+: agule/ngagulei a angolol
+: ekeli/ngikelyo a atuba
+
+: ngaren
+: kaku; aabor
+: kiding
+
+: kiding; akiremet/ngakiremeta (akiryam: to
+meat)
+: kidyaama
+: kwap
+: tooma
+: kinga; nikalapatam (lit. outside of hut,
+outside of homestead)
+
+
+---
+
+
+67-12 right hand
+67-13 near
+67-14 the opposite side
+67-15 it's near
+67-16 it's far
+67-17 behind [sth.]
+68. Colors and shapes
+68-01 color
+68-02 what color?
+68-03 redness
+68-04 red stone
+68-05 to become red
+68-06 whiteness
+68-07 white stone
+68-08 to become white
+68-09 blackness
+68-10 black stone
+68-11 to become black
+68-12 blue
+68-13 yellow
+68-14 [color] to change
+68-15 spot
+68-16 to speckle
+68-17 to dye
+68-18 to paint (colors)
+68-19 to daub
+68-20 line
+68-21 to draw a line
+68-22 to be equal
+68-23 to be similar,
+to resemble,
+to be like [sth.]
+68-24 to differ
+68-25 mark
+68-26 to mark, to brand
+XVI. NATURAL PHENOMENA
+69. Natural phenomena
+69-01 sky
+69-02 sky, heaven
+69-03 sun
+
+: akan na lo teten
+: eapi; diiyie; diiyete
+: ikwakaie; yaaiye
+: eapi
+: elona
+: kaku
+
+: ajulot/ngajul (lit. animal fur)
+: aies ai? (lit. what kind of appearance?)
+: arengis
+: amoru naaryangan
+: arenger /TA
+: akwangis
+: amoru naakwang
+: akwanger /TA
+: akiryerut
+: amoru nakiryoon
+: akiryoner /KA
+: apus
+: anyang
+: akiloc /KO
+: akilim, alimait/ngaliman; akemer/ngakemera
+(lit. mole)
+: akigir /KA (lit. to draw); akilim /KA (lit. to
+make marks on wooden vessels, etc. by heated
+iron brands, etc.)
+: akipur /KO
+: akitujuk /KO (term for painting clay of
+several colors called <emunyen> 73-07)
+: ametar /TA (lit. to rub)
+: erot/ngiotin (lit. path); awot/ngawotin (lit.
+line made by snake crawl, something dragged,
+etc.)
+: akigir awot /KA; akiriar awot /KA
+: ariyan /TA
+: akikwan /KA (ikwan ekile ngol ka Thomas: this
+man looks like Thomas)
+
+: atyakak /TA
+: ados/ngadosyo; emacar/ngimacarin (lit. animal
+brand)
+: akiwaakin ados /KA; amacar /TA (lit. to brand
+an animal)
+
+: adis/ngadison
+: akuj (a term for "god")
+: akolong
+
+
+---
+
+
+69-07 sun-set
+69-08 [the sun] to set,
+to go down
+69-09 to dawn
+69-10 star
+69-11 Pleiades
+69-12 morning star (Venus)
+
+69-13 cloud
+69-14 [cloud] to spread
+69-15 fog
+69-16 rain
+69-17 [rain] to come near
+69-18 continuous rain
+69-19 [rain] to wash away
+many things
+69-21 to shelter from the
+rain
+69-22 [rain] to cease
+69-23 vapor after the rain
+
+69-24 rainbow
+
+69-25 [weather] to clear
+up
+69-26 lightning
+
+69-27 [lightning] to
+lighten
+69-28 thunder
+
+69-29 to thunder
+69-30 cold air
+69-31 dew
+69-32 wind
+69-33 [wind] to blow
+69-34 strong wind
+
+69-35 whirlwind
+69-36 [whirlwind] to blow
+69-37 [wind] to blow away
+[sth.]
+69-38 to avoid sunbeam
+
+69-39 [the sun] to glare
+69-40 air
+69-41 east
+69-42 west
+69-43 south
+69-44 north
+
+: adoiyaret a akolong (adoiyor: 69-08)
+: adoiyor akolong /TO
+
+: akiwalar /KA
+: ekanyarit/ngikanyer; etop/ngitopon
+: ngakanyer
+: etop lo a akiwalar (lit. star of dawn);
+: etop lo a ataparac (lit. star of morning)
+: edou/ngidouwon
+: apetar ngidouwon /TA
+: eloc/ngiloca
+: akyur/ngakyurusyo
+: akitep /TA; akiram akyur /TA
+: asipokin akyur /TA
+: akyur nakedaman
+: agaariyor /TO
+
+: akimec /TA
+
+: akikar /KA
+: eloc/ngiloca; apuru a ngalup (lit. steam of
+: the ground)
+: ekepe (elokaki ekepe: a rainbow rises. akilok:
+: to trap, ekepe: spirit)
+: akiwalar /KA
+
+: akimilyaunet/ngakimilyauneta (akimilyaun:
+: 69-27)
+: akimilyaun /KA; arikirik /TO (term used for
+: lightning of far places)
+: agir/ngagirokina;
+: ekepe loberu (lit. female <ekepe> 60-08, i.e.
+: thunder which crashes down heavily);
+: ekepe lokile (lit. male <ekepe> 60-08, i.e.
+: thunder which roars and growls high in the sky)
+: agirokin /TA
+: akatorot/ngakatorosyo
+: ngakop
+: ekuwam/ngikuwamya
+: akikut /TA
+: ekuwam loapolon (lit. big wind); ekuwam
+: lomaanik (lit. wind of reproducing male)
+: ekuwam lopiripir
+: akipir /KA
+: akutar /TA
+
+: akimec akolong /TA; akigalikin /KO (lit. to
+: put animal skin, etc. on the hut to shelter)
+: arirare /TA
+: ekuwam/ngikuwamya (lit. wind)
+: kide
+: too
+: kuju (also means up-stream)
+: kwap (also means down-stream)
+
+
+---
+
+
+70. Light and sound
+70-01 to shine : acaun /TA; akinok /KA; aparapar /TA
+70-02 to glitter, : amilimil /TA
+70-03 to shimmer, to twinkle light
+70-04 flash : akica; akinoket/ngakinoketa (akinok: 70-01);
+70-05 to flash : asarai/ngasarai a akim (lit. light of fire)
+70-06 daylight : akimilya
+70-07 moonlight : akimilyaun /KA
+70-08 darkness : akica a akolong; aparan (lit. daytime)
+70-09 shadow, shade : akirenut; arib; akwaare (lit. night-time)
+70-10 to get dark : etolim/ngitolimo; etorube/ngitorubei
+70-11 to become bright : aribokin /TA
+70-12 lamp : acaun /TA
+70-13 to light up (a lamp) : akinok/ ngakinoketa (akinok: 70-01, 70-13);
+70-14 [lamp] to become lit : ataagntaaal
+70-15 to throw light on : akinok, akinokakin /KA
+[sth.]
+70-16 sound : aruore; arukin
+70-17 to emit sound : akiturore, akiturukin /KO
+70-18 to emit a momentary sound : akikilaun /KA
+70-19 to emit a continuous sound : akimaretet /KO
+70-20 to rumble : aruore /TO
+70-21 to become quiet : akilling /KA
+70-22 [village] to be : atakina adakar, acakina adakar /TA
+quiet, to be calm
+70-23 quiet village : ere lo killingan
+70-24 noisy town : ere lo kacalan
+
+XVII. GROUND
+
+71. Geographical features
+71-01 mountain : emoru/ngimoru
+71-02 hill : arii/ngarii; aukot/ngaukon
+71-03 peak, hill top : aita/ngaitai (lit. pointed top); kidyaama
+(lit. up-side)
+71-04 slope : akokor/ngakokorisyo
+71-05 to slope up or down : akokor /TO
+71-06 cliff : akope/ngakope; ekipetet/ngikipetotyo (term
+for cliff on the bank of winding rivers)
+71-07 valley : agum/ngagumyon; emurya/ngimurya
+71-08 cave : aturukan/ngaturukanya
+71-09 forest : amoni/ngamon
+71-10 shrub, bush : nikamutonon (amuton: [bush] to grow thick)
+71-11 grassland : aro/ngaroatin: ejem/ngijemya
+71-12 desert : apaire/ngapairei; ariet/ngarieta
+71-13 bush country where : amoni/ngamon
+only few people live
+71-14 horizon : esal a akuj
+
+
+---
+
+
+71-15 land (in contrast to
+the sea)
+72. River
+72-01 river
+72-02 trench, water course
+72-03 sea
+72-04 wave
+72-05 lake
+72-06 swamp
+72-07 fountain
+72-08 water pool
+72-09 deep part of a river
+72-10 [river] to be deep
+72-11 shallow of a river
+72-12 [river] to be
+shallow
+72-13 upstream
+72-14 to go upstream
+72-15 downstream
+72-16 to go downstream
+72-17 waterfall
+72-18 flood
+72-19 [flood water] to
+subside, to withdraw
+72-20 [river] to dry up
+72-21 river bank
+72-22 island
+72-23 to float, to remain
+on the surface of water
+72-24 to surface
+to float up from blow
+72-25 to sink
+72-26 to refloat [sth.],
+to salvage, to drag up
+72-27 [sth.] to flow,
+to be carried by water
+72-28 [water] to flow,
+to go
+72-29 to cross (a river)
+72-30 bridge
+
+: akuwap/ngakuwapin
+: angolol/ngangololin
+: acarait/ngacara; aiyanai/ngaiyana;
+: aasak/ngaasakya
+: anam/nganamya
+: etoro/ngitoroi
+: anam/nganamya
+: erus/ngirusyo
+: ecowa/ngicowai
+: eburi/ngiburin (deep one surrounded by big
+rocks); apao/ngapaoi (found on flat rocks);
+elelya/ngileyan (big and deep one which does
+not dry up in a short period, found in the
+open plain); abuwel/ngabuvelin (found in the
+pebbly river bed); atapar/ngataparin (found in
+the open plain); ekipor/ngipuerin (found in the
+sandy river bed after the water retreats)
+: etau a angolol (lit. heart of river)
+: acukul/KO; awoi/TO
+: ekwas a angolol (lit. corner of river)
+: atekenyeny/TA
+: akisekinet/ngakisekineta (akisekin: to begin);
+kuju
+: akilot kuju angolol/TO;
+akiwap kuju angolol/KA
+: kwap
+: akilot kwap angolol/TO;
+akiwap kwap angolol/KA
+: ekokor/ngikokor; eteles/ngitelesya
+: akaale/ngakalel
+: akijuar/KA
+: akiwon angolol, awoner angolol/TO
+: ekipetet/ngikipetotyo (lit. steep river bank)
+: alukat/ngalukata; apacele/ngapacelei; atekur
+: akilebleb/KO
+: akilebun/KA; akisoleun/TO
+: amuriar/TA; atiar/TA
+: akiriu/KA
+: akilebleb/KO
+: alel/TA
+: akidok/TA
+: edoket/ngidoketa (akidok: 72-29);
+etaraja/ngitarajai
+
+
+---
+
+
+72-34 ship : ameeil/ngameelyo; atuba/ngatubai (lit. wooden vessel)
+72-35 to paddle : akigur atuba /KO (akigur: to stir); akiram atuba /TA (akiram: to beat, to drive)
+72-36 paddle, oar : akiguret/ngakigureto a atuba (akigur: to stir)
+72-37 to swim : akiculumare /KA; akilulumare /KA;
+akitapatap /KA
+72-38 to dive : akilum /TO
+72-39 to go into the water : alomar anakipi /TA
+72-40 to jump into the : aporokin anakipi /TO
+water
+72-41 to come out of the : apudun anakipi /TO
+water
+72-42 [water] to become : angoryaner ngakipi /TA
+cloudy, to become muddy
+72-43 to cloud water by : akicok ngakipi, akicokakin ngakipi /KA;
+stirring akitoongoran /KA
+72-44 to splash water : akiter /KA
+72-45 [water] to become : aliwar /TA
+clean, to clear
+73. Ground and minerals
+73-01 ground : ngalup; kwap
+73-02 stone : amoru/ngamoru
+73-03 to pile : akisen /TA; atukokin /TO
+(e.g. stones)
+73-04 rock : ataaba/ngatabab
+73-05 flat rock : ataaba nadapal
+73-06 sand : asinyen/ngasunyono
+73-07 soil : ngalup; emunyen/ngmunyenin (lit. special kind
+of soil utilized to smear on the body);
+engangeme (lit. soil including small stones)
+73-08 clay : ecoto/ngicotoi; epokor (lit. soil which is
+dried up hard)
+73-09 red soil : ngalup naaryangak
+73-10 iron, metal : asowat/ngasowa
+73-11 to rust : akirumun ekut /KA; akiting elos /TA (lit. to
+hold dirt)
+73-12 mud : ecoto/ngicotoi
+73-13 hole : akipany/ngapanya
+73-14 to dig [a hole], : akibok, abokun /TA; akiwad, awadar /TO
+to dig up soil, to dig out [sth.]
+73-15 to fill a hole, : akinuk /TA
+to bury [sth.]
+73-16 trench : acukule/ngacukulei; naroo/ngaroo
+73-17 to stick [sth.] into : adupakin /TA; akiturokin /KO
+the ground
+73-18 to ram : akitij /KA; aramakin /TA
+(e.g. a stick) into the ground
+XVIII. TIME
+74. Time
+74-01 time : esaa
+
+
+---
+
+
+74-02 day (of 24 hours)
+74-03 daytime
+74-04 morning
+74-05 noon
+74-06 evening
+74-07 night
+74-08 midnight
+74-09 dawn
+74-10 the day before
+yesterday
+74-11 yesterday
+74-12 today
+74-13 tomorrow
+74-14 the day after
+tomorrow
+74-15 everyday
+74-16 week
+74-17 month
+74-18 year
+74-19 old times
+74-20 a little while ago
+74-21 now
+74-22 soon
+74-23 afterwards, later
+74-24 dry season
+74-25 rainy season
+74-26 hour (three hours)
+74-27 three o'clock
+74-28 around 2 o'clock
+a.m.
+74-29 around 4 o'clock
+a.m.
+74-30 around 5 o'clock
+a.m.
+74-31 around 6 o'clock
+a.m.
+74-32 at pre-dawn
+74-33 at dawn
+74-34 around 8-9 o'clock
+a.m.
+74-35 around 10 o'clock
+
+: akwaar/ngakwaarisya; eruwait/ngiruwa
+: aparan
+: ataparac
+: naparan lotingilan
+: atabong/ngatabongisya; ebong
+: akwaare
+: kiding-kwaare
+: akiba; abait (lit. crack); ecili (akicil: to tear)
+: ngoon; akwaar nace ka been
+
+: been
+: akwaar naka; tete
+: moi
+: moi nace; akwaar nace moi ka yaaiye
+
+: ngiruwa daang (lit. all days); jiik (lit.
+continuously)
+: euiki/ngiukyo
+: elap/ngilapyo
+: ekar/ngikar (one major dry/rainy season is
+counted as <ekar epei>: one year)
+: kolong a angorot
+: aberiberakin ca; kolong ca; tokona ca
+: tokona
+: tokona ca
+
+: ace pak (lit. another moment); takae
+: akamu/ngakamusyo (term for major dry season or
+dried condition of grasses); ait (short dry
+season following the major rainy season)
+: akiporo/ngakiporosya (term for major rainy
+season or green condition of grasses);
+akiceeres (short rainy season following the
+major dry season); atepun/ngatepunet (akitep:
+to rain); erupe/ngirupei (short rainy season
+around Oct. to Nov.)
+
+: alonyaket a ngisaa ngauni
+: esaa ngakanikaomon (lit. nine o'clock: Turkana
+hour is 6 hours ahead, as in Swahili)
+: ekutuny na ngikosowa (akutuny: [cold wind] to
+brow, ngikosowa: buffaloes)
+: kenyakakes ngikaala (anyakaikin: to ruminate,
+ngikaala: camels)
+: etop lo akingaren (lit. the first star)
+
+: etop lo a ataparac (lit. star of morning)
+
+: ataparac elilim (ataparac: morning, alilim: to
+be cold); acili nanyang (akicil: to tear,
+-nyang: yellow)
+: akiba; abait (lit. crack); edetuni akolong
+(adetun: [sun] to rise)
+: esimokunyuk (akisim: to sweat slightly +
+ekunyuk: ground squirrel)
+: acaunet (acaun: to become bright)
+
+
+---
+
+
+74-37 around 3-4 o'clock
+p.m.
+74-38 around 5 o'clock
+p.m.
+74-39 around 6 o'clock
+p.m.
+74-40 around 7 o'clock
+p.m.
+74-41 around 7-8 o'clock
+p.m.
+74-42 around 10 o'clock
+p.m.
+74-43 around 11 o'clock
+p.m.
+74-44 around 12 o'clock
+p.m.
+74-45 minute
+(five minutes)
+74-46 what time?
+74-47 when?
+74-48 to be in time
+74-49 to be late
+74-50 early
+74-51 early (in the
+morning)
+74-52 holiday
+74-53 January
+(correspondence with t
+74-54 February
+74-55 March
+74-56 April
+74-57 May
+74-58 June
+74-59 July
+74-60 August
+74-61 September
+74-62 October
+74-63 November
+74-64 December
+74-65 Monday
+74-66 Tuesday
+74-67 Wednesday
+74-68 Thursday
+74-69 Friday
+74-70 Saturday
+
+: aryongakinet a akolong (akiryong: to shoulder)
+: aripokinet akolong (akiripokin: to sit and
+wait)
+: adoiyaret a akolong (adoiyor: to go down e.g.
+into the well)
+: ikaikai
+: ipoongamoti (akipore: to boil over, to cook +
+ngamoti: cooking pots); emujo (akimuji: to eat)
+: eyanyo (akiyan: to converse, to talk)
+: kejotooroi (ajotoor: to be sleeping)
+: atyaka ngakwaarisya ngaarei (lit. to divide
+two days); ibelokunoi (akibelokin: to turn
+while sleeping)
+: ngadakika ngakan
+: ngisaa ngiai?; etia akolong ai? (lit. how is
+the sun?)
+: ori?
+: akisokar /KA
+: akicuwar /KA; akingop /TA
+: aberun
+: eroko ataparac (lit. still in the morning)
+: akwaar na akiyangar (akiyangar: to have rest)
+: lokwang (akwang: white. Grasses dry out)
+the Western calendar is not strict)
+: lodunge (adunger: [fire] to go out. The driest
+season goes away)
+: lomaruk (akimaruk /KO: to come to life)
+: locoto (ecoto: mud)
+: titima (akititimare /KA: [plant] to grow, to
+become almost ripe)
+: eliel (akielar /KA: [e.g. sorghum] to come
+into ears)
+: losuban (ngasuban: a kind of ritual, see 30-33)
+: lotyak (akityak: to divide)
+: lolong (akolong: the sun, akilongiar /KA: [the
+sun] to be glare)
+: lopo {akipore: to cook. A season to cook and
+eat fruits of Acacia tortilis Forsk.)
+: lorara (araraun: [fruits] to drop onto the
+ground)
+: lomuk (akimuk: to cover. Tree branches provide
+shade)
+: akwaar naapei
+: akwaar nangaarei
+: akwaar nangauni
+: akwaar nangamon
+: akwaar nangkan
+: akwaar nangkanikapei
+
+
+---
+
+
+74-73 last month : elap lo been
+74-74 this month : elap lo
+74-75 next month : elap lo moi
+74-76 last year : ekar lo been
+74-77 this year : ekar lo
+74-78 next year : ekar lo moi
+74-79 ago: four days ago : ngiruwa ngaomon lu ngoon alunyar;
+ngiruwa ngaomon lu been ka yaaiye
+ngiruwa ngaomon lu moi ce; adaunet a
+ngiruwa ngaomon (adaun: to come to an end)
+: ani erumor (lit. if it finishes)
+74-80 after: after four days : ekingaren (lit. first)
+74-81 after: after finishing something : ageun been (ageun: to begin)
+74-82 before : tanang moi; tani moi; paka moi
+74-83 since yesterday : ace pak (lit. another moment);
+74-84 until tomorrow : ace akwaar (lit. another day)
+74-85 sometimes : jilik
+74-86 repeatedly, continuously : ngiruwa daang (lit. all days)
+74-87 always : nabo
+74-88 again : ngiruwa lu (lit. these days)
+74-89 recently, nowadays
+XIX. NATURE OF THINGS
+75. Nature of things
+75-01 good book : akitab naajokon; ejok akitab
+75-02 to become good : ajoker /TO
+75-03 goodness : ajokis
+75-04 bad book : akitab naarunon; erono akitab
+75-05 to become bad : aroner /TA
+75-06 badness : aronis
+75-07 big dog : jingok niapolon
+75-08 to become big : apoloun /TO
+75-09 largeness : apolare
+75-10 small dog : jingok niici; jingok nidit; jingok nidisyak
+75-11 to become small : aditeun /TA
+75-12 smallness : ekiditeu
+75-13 long stick : aburo nakoiyen
+75-14 to become long : awoiyar /TO
+75-15 length : awoiyau
+75-16 short stick : aburo nauriyen
+75-17 to become short : aurianer /TA
+75-18 shortness, brevity : aurianut
+75-19 heavy stone : amoru napotyon
+75-20 to become heavy : apotier /TO
+75-21 weight, heaviness : apotis
+75-22 light stone : amoru nawok
+75-23 to become light : awoker /TA
+75-24 lightness : awok; awookanut
+75-25 hot milk : ngakile nakamonak
+75-26 to become hot : amonun /TA
+75-27 cold milk : ngakile nakaalimok
+75-28 [milk] to become cold : allimer /TO
+
+
+---
+
+
+75-29 [weather] to be hot
+75-30 [weather] to become hot
+75-31 [weather] to be cold
+75-32 [weather] to become cold
+75-33 strong territorial group
+75-34 to become strong
+75-35 strength
+75-36 weak territorial group
+75-37 to become weak
+75-38 weakness
+75-39 [rope] to be strong
+75-40 strong rope
+75-41 new knife
+75-42 old knife
+75-43 high mountain
+75-44 height
+75-45 low mountain
+75-46 sharp knife
+75-47 [knife] to be sharp, to become sharp
+75-48 dull knife
+75-49 to make dull (e.g. a knife)
+75-50 [knife] to become dull
+75-51 [dog] to be fierce
+75-52 [dog] to become fierce
+75-53 fierce dog
+75-54 [dog] to be mild
+75-55 mild dog
+75-56 [person] to be thin
+75-57 thin person
+75-58 [person] to become thin
+75-59 to become fat
+75-60 fat person
+75-61 [thread] to be thin
+75-62 thin thread
+75-63 [thread] to be thick
+75-64 thick thread
+75-65 [paper] to be thin
+75-66 thin paper
+75-67 [paper] to be thick
+75-68 thick paper
+75-69 to be flexible, to be plastic
+75-70 kind person
+75-71 to be generous
+
+: akibuuisun /KA; arira akuwap /TA
+: ariraun akolong, ariraun akuwap /TA
+
+: alilim akuwap /TO
+: alilimer akuwap /TO
+
+: ekitela lokagogong; ekitela lomaanik
+
+: agogonger /TO
+: agogong
+: ekitela lopalag
+
+: apalag /TA
+: apalagaanut
+: aninik /TA
+: auno nakaninikan
+: ekileng lokitetet
+: ekileng longorot
+: emoru lokoiyen
+: awoiyau
+: emoru louriyen
+: ekileng lokakwanan
+: akwoner /TA
+
+: ekileng lokangiyon
+: akitingingi /KO (lit. to cause to become dull)
+
+: angingior /TO
+
+: adedeng /TA
+: adedenger /TA
+
+: iingok nikadyangan
+: apataner /TA
+: iingok nikapatanan; epatana iingok
+: abeben /TA; adiim /TA
+: itwan nidim
+: acikin /KA; akikar /KA
+
+: akitum /TA; aduwarun /TA
+: ekatumana/ngikatumak
+: adiim /TA; abeben /TA
+: akiriit nadim; akiriit nabeben
+: alangir /TO
+: akiriit nalangir; akiriit naapolon
+: adiim /TA; abeben /TA
+: akaratac nadiim; akaratac nabeben
+: alangir /TO
+: akaratac nalangir; akaratac nabutur; akaratac
+napotyon
+: akinyalik /KO
+
+: itwan ni arimatoi (lit. respectful person)
+: abobou /TO
+: abobor/ngikobok
+
+
+---
+
+
+75-75 to become rich : akibar /TA
+75-76 rich person : ekabarān/ngikabarāk
+75-77 to become poor : akiboot /KO; akulakan /TA
+75-78 poor person : ekibootonit/ngikebootok; ekulakit/ngikulak
+(also means the Teuso people)
+75-79 people who are : ekaramit/ngikaram
+useless, poor, without home, etc.
+75-80 to be brave : adedeng /TA; atitin /TO; aosou /TO
+75-81 brave person : ekatitnon/ngikatitinok;
+ekadyangan/ngikadyangak; ekawoson/ngikawosok
+75-82 honest person : itwan niajokon (ejok: good); nyelyokono
+(negation of <alyokon>: to tell a lie)
+75-83 [country] to be : alolom /TA; abalany /TA
+large in area, to be wide
+75-84 large country : akuwap nalolom; akuwap nabalany
+(in area)
+75-85 [country] to be : adiding /TA
+small in area, to be narrow
+75-86 small country : akuwap nadiding
+(in area)
+75-87 [woman] to be : abus /KA
+beautiful
+75-88 beautiful woman : aberu nakebusyen
+75-89 to be dangerous : aroner /TA; aparinging /TA
+75-90 important thing : ibore nikitalyo (lit. thing of <etali> 55-02);
+ibore niapolon (lit. big thing)
+75-91 the same dog : ingok nipei (lit. one dog); ingok nitete
+75-92 another dog : ingok nice
+75-93 whole body : akwan daang (lit. whole body)
+
+XX. GENERAL (ACTIONS)
+
+76. Beginning and ending
+
+76-01 to begin (e.g. work) : ageun /TA; akisek, akisekin, akisere /KA
+76-02 to finish : arumor /TO
+(e.g. work)
+76-03 [work] to come to an : adaun /TA; asalun /TA
+end
+76-04 beginning : ageunet/ngageuneta (ageun: 76-01);
+akisekinet/ngakisekineta (akisekin: 76-01)
+76-05 end : arumoret/ngarumorreta (arumor: 76-02);
+adaunet/ngadauneta (adaun: 76-03);
+esal/ngisali (asalun: 76-03)
+76-06 to continue : akisub jiik /TA (lit. to do continuously)
+(e.g. one's work)
+76-07 to repeat : abongokin /TO
+76-08 [accident] to happen : arerenger /TO
+in succession
+
+77. Other verbs
+
+77-01 to do : akisub /TA; akitiyare /KA
+77-02 to be able to [do : apedor /TO; asubakin /TA
+sth.]
+77-03 to have [sth.], : aiyakar /TA; akiting /TA
+
+
+---
+
+
+to possess
+77-04 to exist
+77-05 to become
+77-06 to lack
+77-07 to need
+77-08 to be sufficient
+77-09 to test
+XXI. GENERAL (THINGS)
+78. General (things)
+78-01 object, thing
+78-02 event, affair
+78-03 kind, sort, type
+78-04 what kind of?
+78-05 what kind of book?
+78-06 book like this,
+this kind of book
+78-07 place
+XXII. MISCELLANY
+79. Pronouns, etc.
+79-01 I
+79-02 you [sing.]
+79-03 he/she
+79-04 we
+79-05 you [pl.]
+79-06 they
+79-07 himself
+79-08 anybody, everybody
+79-09 this, these
+79-10 that near you,
+those near you
+79-11 that over there,
+those over there
+79-12 here
+79-13 there (near you)
+79-14 over there
+
+: aiyakar, aiyakau /TA
+: araun /TA; aliwor /TO (lit. to become sth.
+in far future)
+: amamakar /TA; angopikin /TA
+: akisak /TA
+: akitemokin /KO
+: akining /KO; akitem /KO; akitetemoor /KO
+
+: ibore, iborosit/ngiboro
+: akiroit/ngakiro
+: epite/ngipitesinei
+: aies ai? (lit. what kind of appearance?);
+ngipitesinei ngiai a ngiboro? (lit. how many
+kinds of things?)
+: akitab na ikoni ai?; akitab na ikoni ani?;
+akitab nyo? (lit. what book?)
+: akitab na ikoni na
+
+: akuwap/ngakuwapin; aro/ngaroatin
+
+: ayong
+: iyong
+: ngesi
+: ngooni (inclusive of the addressee);
+sua (exclusive of the addressee)
+: esi
+: kec
+: ngesi elope
+: itwan daang (lit. all people)
+: [this] lo, logo: masculine; na, naga: feminine;
+en, egen: neuter;
+[these] lu, lugu: non-feminine;
+nu, nugu: feminine
+: [that] ngol, ngolo: masculine; ngin, ngina:
+feminine; ngin, ngini: neuter;
+[those] ngul, ngulu: non-feminine;
+ngun, nguna: feminine
+: [that] ye, yege: masculine; ya, yaga:
+feminine; i, igi: neuter;
+[those] kwi: non-feminine; kwa: feminine
+: nege
+: neni
+: ama
+
+
+---
+
+
+80. Interrogatives
+80-01 who
+80-02 what
+80-03 which
+80-04 which book?
+80-05 where
+80-06 where is it?, where are they?
+80-07 when
+80-08 why
+80-09 how
+80-10 how many?
+80-11 how is?
+(size, volume, location,
+81. Adverbs and conjunctions
+81-01 especially
+81-02 truly, surely
+81-03 of course
+81-04 perhaps, maybe
+81-05 extremely
+81-06 extremely. very,
+very much
+81-07 a little bit
+81-08 then, after that
+81-09 therefore
+81-10 namely
+81-11 for example
+81-12 besides
+81-13 what else besides meat?
+81-14 instead of,
+to be in place of
+81-15 without meat
+81-16 only
+81-17 rather
+81-18 still
+82. Greetings, etc.
+
+: ngai
+: nyo
+: [sing.] a-li: masculine; a-ni: feminine and
+neuter;
+[pl.] a-lu: non-feminine; a-nu: feminine
+akitab ani? (see 80-03); ani-kitab?
+: ai; aliwae
+: [sing.] nia-li: masculine; nia-ni: feminine
+and neuter;
+[pl.] nia-lu: non-feminine; nia-nu: feminine
+: ori
+: koterinyo; kainyo; nyo
+: koai; koani
+: ngiai: non-feminine; ngaai: feminine
+: etia ai?
+, etc.)
+: akiduwang /KA (lit. to win, to be superior.
+iduwangit emong logo atumit: this ox is
+especially fat)
+: iteni; ekong (akikong: to swear, to promise)
+: ee robo;
+kote (used in answering to the question
+<kotenenia?>)
+: ace pak (lit. another moment);
+meere boa? (lit. isn't it?)
+: dirdir
+: noi; lokajokon; kya; pic
+: wadeecici; wadyo
+: nabo dae
+: kaneni boca
+: ebe; ngesi (lit. he/she/it);
+enyaritai (lit. so called. anyar: to call)
+: akisikuwanet; akitetemet; akitoodikinet
+: kidyaama (lit. upon)
+: nyo ice akidonga akiring? (akidong: to remain)
+: akiluny /TA; akiduwang /KA (akiduwang akinyam
+akiring atonyama ngikolya: I eat fish instead
+of meat)
+: emam akiring
+: bon (this term means "one and only" for
+countable things);
+makei (this means "only" for more than one of
+countable things)
+: ca
+: eroko; eringa
+
+
+---
+
+
+82-03 not : mere
+82-04 Hello : ejok
+82-05 Good bye : ejok
+82-06 Good morning : kiperobo (lit. you would go);
+82-07 (greeting) : kibirobo (lit. you would be sitting);
+82-07 Good evening : ejok
+82-08 Good night : ejok
+82-09 (greeting) : toperirobo (lit. you would sleep)
+82-10 Pardon me. Excuse : aai; kure ca;
+me. Sorry : torinkakthai (lit. please help me/us)
+: torinkakthai (lit. please forgive me/us)
+arimakhi: to forgive, to obey, to respect)
+
+
+---
+
+
+Appendix I. Age-sex classification of livestock (terms in parentheses are plural forms)
+stage I
+stage II (female)
+stage III (female)
+stage II (male)
+stage III (reproducing male)
+stage III (castrated male)
+cattle: ngaatuk
+itaok
+(ngitak)
+ataok; aite nataok
+(ngatak)
+aite; aite naapolon
+(ngaatuk)
+itaok langitou
+(ngitak luangitou)
+emaanik
+(ngimaaniko)
+emong
+(ngimongin)
+donkey: ngisikirya
+itaaisikirya
+(ngitaisikirya)
+askirya nataok
+(ngasikirya nataok)
+askirya naapolon
+(ngasikirya naapolok)
+esikirya langitou
+(ngisikirya luangitou)
+esikirya loketepan
+(ngisikirya luketepak)
+esikirya lodongong
+(ngisikirya ludongong)
+camel: ngikkaala
+itaikaali
+(ngitankaala)
+akaali nataok
+(ngakaala nataok)
+akaali naapolon
+(ngakaala naapolok)
+ekaali langitou
+(ngikaala luangitou)
+ekaali loketepan
+(ngikaala luketepak)
+ekaali lodongong
+(ngikaala ludongong)
+goat: nganginei; nganginei namee; ngamee
+ikale
+(ngikale)
+akale; angine nakale
+(ngakale)
+angine; angine naapolon
+(nganginei)
+ekorol langitou
+(ngikora luangitoul)
+ekorol loketepan
+(ngikora luketepak)
+ekorol lodongong
+(ngikora ludongong)
+sheep: ngamezekin
+imezek
+(ngimezekin)
+amezek nakale
+(namezekin nakale)
+amezek naapolon
+(namezekin naapolok)
+emezek langitou
+(namezekin luangitou)
+emezek loketepan
+(namezekin luketepak)
+emezek lodongong
+(namezekin ludongong)
+
+
+---
+
+
+Appendix 2. Horn shape classification.
+1. -dyepa; -iyopo
+2. -komar
+3. -luk; -bukuno
+4. -kodos
+5. -ita; -uwala
+6. -poponga
+7. -keryaman
+8. -koda
+9. -congor
+10. -ryonga; -napa
+11. -ngelec; -diata
+12. -peta; -mangal
+13. -bakar
+14. -todo (one horn)
+15. -lim (hornless)
+16. -songoli
+17. ngidonget; -tidong; 18. -nangur (broken horn)
+nangananga
+(short horn)
+
+
+---
+
+
+Appendix 3. Ear marking classification.
+1. ltebitai
+2. emunitol
+3. edoritai
+4. ekocilitai
+5. eireritai
+6. ewodoritai
+7. engurubitoi
+
+
+---
+
+
+Appendix 4. Coat color classification.
+1. -meri; -kori
+2. -ngorok; -komoli
+3. -bubuo
+4. -kapell
+5. -kedikedi
+6. -koli
+7. -linga
+8. -lukwa
+9. -ngole
+10. -ngora
+11. -aze
+12. -sili
+13. -tulya
+14. -wazi
+
+
+---
+
+
+Appendix 5. English index
+(most nouns are listed in singular form).
+35-37 aardvark
+61-64 abandon
+2-10 abdomen
+50-75 abuse
+42-01 accompany
+47-53 accomplish
+54-12 accuse
+58-34 accustomed
+13-01 ache
+47-48 active
+57-04 Adam's apple
+59-42 add
+50-10 address
+34-40 adopt
+1-38 adult
+32-12 adult
+58-39 advice
+47-20 adze
+78-02 affair
+30-32 affine
+50-47 affirm
+74-80 after
+74-81
+81-08
+74-23 afterwards
+74-84 again
+53-54 age
+54-08 age-group
+32-13 aged
+74-20 ago
+74-79
+50-49 agree
+46-06 ahead
+69-40 air
+46-68 airplane
+21-07 alcohol
+33-05 alive
+59-35 all
+59-58 allow
+59-55 alone
+9-13 alveolar
+pyorrhoea
+74-87 always
+16-21 anaplasmosis
+57-28 anger
+57-29 angry
+46-70 animal
+4-09 ankle
+50-21 announce
+75-92 another
+50-28 answer
+50-30 ant
+40-28 anthill
+12-20 anthrax
+16-67
+16-10
+16-11
+16-12
+2-23 anus
+58-29 anxious
+79-08 anybody
+50-62 apologize
+50-64 appease
+51-24 applaud
+54-32 appointment
+16-25 approach
+74-56 April
+52-03 argue
+3-01 arm
+20-05 amulet
+2-14 armpit
+56-03 army
+46-07 arrive
+36-13 arrow
+36-15 arrowhead
+36-14 arrow shaft
+57-37 ashamed
+53-12 ask for
+54-52 assemble
+47-01 assist
+50-51 assist
+62-06 attach
+62-07
+56-22 attack
+74-60 August
+29-39 aunt
+46-60 automobile
+45-48 avoid
+52-10 avoid a fight
+69-38 avoid sunbeam
+44-15 awake
+60-03 awe of
+43-09 ax
+10-05 babble
+35-02 baboon
+31-07 baby
+31-24 baby sling
+2-19 back
+2-20
+2-21
+3-04
+5-09 backbone
+75-04 bad
+75-05
+75-06 badness
+59-47 balance
+1-10 ball
+51-20 ball
+42-10 banana
+15-15 bandage
+17-25 barefoot
+34-05 bark
+41-19
+26-43 basket
+61-29
+61-84
+35-51 bat
+19-10 bathe
+16-15 battle jaw
+20-09 beads
+20-10
+39-23 beak
+57-32 bear
+1-30 beard
+7-08 beat
+52-14 beautiful
+75-87 beautiful
+77-05 become
+27-01 bed
+40-14 bed-bug
+40-00 bee sting
+40-06 bee wax
+40-03 beehive
+40-11 beetle
+40-12
+40-16
+74-82 before
+54-50 beggar
+76-01 begin
+76-04 beginning
+67-17 behind
+7-27 belch
+58-25 believe
+47-16 bellows
+2-10 belly
+2-13
+63-01 bend
+81-12 besides
+46-66 bicycle
+75-07 big
+75-08
+5-26 bile
+39-23 bill
+52-20 bind
+39-01 bird
+81-07 bit
+34-08 bite
+25-04 bitter
+68-10 black
+68-11
+16-12 black quarter
+16-13
+68-09 blackness
+47-13 blacksmith
+50-43 blame
+27-06 blanket
+11-02 bleed
+15-16
+34-51
+14-05 blind
+14-06
+16-02 bloat
+45-40 block
+45-50
+29-01 brother
+45-53 block the way
+5-11 blood
+56-14 blood payment
+41-40 bloom
+41-40 blossom
+7-05 blow
+7-15
+69-33
+69-37 blow away
+68-12 blue
+47-30 board
+30-46 boast
+2-01 body
+12-01 boil
+22-02
+22-03
+22-04
+22-08
+5-01 bone
+5-02 bone marrow
+58-09 book
+55-12 border
+31-05 born
+53-28 borrow
+23-05 bottle
+66-12 bottom
+43-03 boundary
+55-11
+34-52 bow
+36-11
+36-12 bowstring
+61-83 box
+32-04 boy
+6-10 brachium
+1-02 brain
+41-26 branch
+41-27 branch off
+46-73
+68-26
+75-80 brave
+75-81
+21-02 bread
+64-06 break
+64-15
+64-16
+7-37 break wind
+2-08 breast
+31-17 breast-feed
+5-07 breastbone
+7-10 breath
+7-11 breathe
+7-13 breathe in
+7-14 breathe out
+75-30 brevity
+30-09 bride
+30-12 bride wealth
+30-10 bridegroom
+61-54 bridge
+72-30
+70-11 bright
+46-49 bring
+61-16
+31-14 bring up
+28-03 broom
+36-40 broth
+19-02 brush
+40-10 brush off
+22-06 bubble
+23-21 bucket
+41-37 bud
+41-38
+35-50 buffalo
+26-02 build
+34-13 bull
+36-18 bullet
+11-06 bump
+11-07
+45-46
+62-15 bundle
+62-16
+61-78 bundle up
+12-04 burn
+48-10
+48-11
+48-15 burn to ashes
+12-05 burnt
+25-19
+12-03 burst open
+33-11 bury
+
+
+---
+
+
+71-10 bush
+34-39 butter milk
+40-18 butterfly
+2-22 buttock
+53-24 buy
+39-16 cockle
+23-04 calabash
+34-17 calf
+50-24 call
+50-25
+50-26
+70-22 calm
+34-23 camel
+23-22 can
+77-02
+1-26 canine
+56-26 cannon
+20-11 cap
+56-6-1 captive
+56-09 capture
+56-10
+35-13 caracal
+58-38 careful
+57-43 care
+61-19 carry
+61-20
+61-23
+61-26
+61-17 carry away
+6-09 cartilage
+6-24
+47-24 carve
+37-03 cast off skin
+34-01 castrate
+51-23 catch
+9-07 catch cold
+46-28 catch up
+with sb.
+40-47 caterpillar
+40-48
+34-12 cattle
+71-08 cave
+16-24 CBPP
+16-24 CCP
+69-22 cease
+60-13 celebrate
+67-73 center
+40-34 centipede
+27-08 chat
+37-08 chameleon
+68-14 change
+48-25 charcoal
+36-08 chase
+52-21 chase away
+50-08 chat
+53-24 cheap
+1-27 cheek
+57-04 cheerful
+34-40 cheese
+35-13 cheetah
+2-07 chest
+24-19 chew
+39-20 chick
+39-13 chicken
+12-19 chicken pox
+55-07 chief
+29-26 child
+21-14 chili
+1-29 chin
+47-29 chisel
+56-13 choke
+9-33 cholera
+65-03 choose
+60-04 church
+40-32 cicada
+46-31 circle ahead
+32-11 circle
+35-16 claret
+54-07 clan
+51-17 clap hands
+5-06 clavicle
+35-09 claw
+73-08 clay
+23-01 clay pot
+28-01 clean
+28-17
+72-45 clear
+69-25 clear up
+58-37 clever
+71-06 cliff
+46-21 climb
+46-22 climb down
+2-27 clitoris
+45-29 close
+39-29 close wings
+18-06 cloth
+17-05 clothe
+17-01 clothes
+69-13 cloud
+72-42 cloudy
+47-45 clumsy
+29-47 co-wife
+49-26 coagulate
+40-25 cobweb
+40-37 cockroach
+42-18 coconut
+62-22 coil
+9-06 cold
+75-31
+75-32
+6-41 collar bone
+5-06 collar bone
+54-22 colleague
+65-01 collect
+35-05 colobus
+34-70 color
+34-71
+68-01
+68-02
+19-03 comb
+19-04
+46-14 come
+62-12 come apart
+17-07 come off
+41-01 come out
+46-17
+72-41
+13-15 come to
+50-60 command
+50-35 commit
+50-07 chief
+58-32 commit suicide
+12-19 common-pox
+12-19 common-pox
+54-29 companion
+65-02 compare
+53-33 compensate
+50-72 complain
+50-36 conceal a fact
+62-05 connect
+58-20 consider
+50-65 console
+50-67 consult
+76-06 continue
+74-86 continuously
+50-50 contradict
+50-07 converse
+22-01 cook
+22-14
+23-01 cooking pot
+22-18 cooking stone
+15-20 cool
+25-08 cool down
+25-09
+34-09 copulate
+23-06 cork
+12-10 corn
+66-02 corner
+66-14
+66-15
+33-04 corpse
+34-55 corral
+7-19 cough
+7-20
+59-30 count
+55-09 country
+28-38 courtyard
+29-03 cousin
+23-09 cover
+27-05
+61-76
+34-15 cow
+34-69 cowbell
+42-20 cowpea
+37-15 cowry
+12-16 crack
+26-18
+26-19
+64-13
+64-14
+37-07 crawl
+45-22
+37-07 creep
+39-14 crest
+40-22 cricket
+54-16 crime
+14-03 crippled
+14-04
+37-09 crocodile
+46-47 cross
+72-29
+72-32
+45-07 crouch
+39-00 crow
+39-15
+54-55 crowded
+24-20 crunch
+54-08 crush to
+25-17 crust
+50-41 cry
+56-28
+20-33 cudgel
+43-07 cultivate
+43-14
+49-05 dip
+7-31 dirt
+
+
+---
+
+
+17-16 dirty
+28-14
+28-15
+28-16
+28-50 disagree
+8-97 disappear
+61-64 discard
+50-72 discontented
+9-01 disease
+63-20 disentangle
+23-12 dish
+22-23 dish up food
+57-16 dislike
+11-11 dislocate
+joint
+47-50 dismiss
+61-40 disorder
+57-37 displease
+52-05 dispute
+65-40 dispute
+47-04 disturb
+72-38 dive
+45-47 divert
+53-15 divide
+59-44
+62-28
+15-26 divine
+15-27
+15-28
+15-29
+15-30
+15-31 diviner
+30-34 divorce
+9-15 dizziness
+13-04
+13-05 dizzy
+77-01 do
+15-24 doctor
+15-31
+34-04 dog
+55-03 donation
+34-22 donkey
+26-04 door
+35-39 dormouse
+41-26 doubt
+42-01 doum palm
+39-02 door
+67-06 down
+72-15 downstream
+44-11 doze
+72-26 drag up
+40-17 dragonfly
+61-68 draw
+68-21 draw a line
+58-18 draw a picture
+49-14 draw water
+58-19 drawing
+44-05 dream
+44-06 dream
+24-15 drink
+49-29 drip
+49-30
+46-62 drive a car
+52-22 drive out
+61-13 drop
+61-14
+41-54 drop fruit
+51-10 drum
+21-09 drunk
+49-11 dry
+49-12
+49-13
+74-24 dry season
+41-48 dry up
+72-20
+39-12 duck
+75-48 dull
+75-50
+14-07 dumb
+14-08
+14-10
+28-09 dust
+28-13 dust-cloth
+26-37 dwell
+68-17 dye
+39-06 eagle
+1-31 ear
+34-64 ear mark
+20-01 eat-ring
+1-32 earlobe
+74-40 early
+69-41 east
+16-17 East Coast
+16-18 fever
+16-26
+47-58 easy
+24-01 eat
+50-27 echo
+9-25 edema
+47-47 effort
+39-17 egg
+59-08 eight
+59-10 eighteen
+59-27 eighty
+3-16 elbow
+29-32 elder
+35-24 elephant
+59-11 eleven
+81-13 else
+48-25 ember
+31-22 embrace
+57-42
+57-43
+47-19 employ
+54-49 employee
+22-20 empty
+22-30
+22-31
+34-55 enclosure
+76-03 end
+76-05
+57-32 endure
+54-10 enemy
+63-19 entangle
+46-16 enter
+54-41 entertain
+53-34 entrust
+57-47
+9-35 epilepsy
+68-22 equal
+61-45 erect
+56-16 escape
+56-20
+5-18 esophagus
+6-60
+81-01 especially
+54-09 European
+74-06 evening
+78-02 event
+79-08 everybody
+74-15 everyday
+79-16 everywhere
+60-16 evil-eye
+81-11 example
+53-42 exchange
+53-49
+53-50
+53-51
+82-10 Excuse me
+22-32 exhausted
+77-04 exist
+53-22 expensive
+53-23
+50-70 explain
+48-16 extinguish
+15-07 extract
+15-08 a thorn
+15-09
+81-06 extremely
+1-11 eye
+1-15 eyeball
+1-12 eyebrow
+1-14 eyelash
+1-13 eyelid
+1-08 face
+45-31 face at
+61-87 face towards
+61-88
+47-56 fail
+13-14 faint
+9-11 fainting
+45-20 fall
+41-15 fall down
+54-22 fame
+29-49 family
+24-23 famine
+54-23 famous
+15-19 fan
+35-28 fang
+67-16 far
+50-32 farewell
+43-01 farm
+7-36 fart
+46-39 fast
+46-40
+60-07
+34-52 fasten
+62-01
+21-15 fat
+75-59
+75-60
+29-01 father
+36-39 fatty
+54-16 fault
+57-25 fear
+57-27
+39-22 feather
+74-51 February
+7-34 feces
+24-43 feed
+34-54
+41-14 fell
+61-48
+61-89
+35-56 female
+26-31 fence
+26-32
+21-10 ferment
+21-11
+31-03 fetus
+13-18 fever
+13-19 feverous
+59-38
+6-63 fiber
+75-51 fierce
+75-52
+75-53
+59-24 fifteen
+52-07 fight
+47-32 file
+22-25 fill
+24-11
+73-15
+21-12 filter
+8-04 find
+8-05 finger
+20-07 finger-ring
+3-12 fingernail
+35-09
+76-02 finish
+59-39 finished
+47-50 fire
+48-01
+26-10 fireplace
+48-19 firewood
+59-50 first
+59-51
+29-29 first-born
+38-04 fish
+38-02 fish
+38-03
+38-04
+38-05 fishhook
+3-05 fist
+18-12 fit
+59-05 five
+55-10 flag
+6-37 flank
+49-08 flap off
+39-30 flap wings
+70-04 flash
+73-05 flat
+63-30 flatten
+40-40 flea
+36-38 flesh
+41-57 fat
+75-69 flexible
+72-23 float
+72-24
+72-18 flood
+26-20 floor
+21-02 flour
+43-22
+72-27 flow
+72-26
+41-68 flower
+41-39
+51-13 flute
+39-26 fly
+40-45
+22-07 foam
+49-02
+69-15 fog
+63-03
+36-04 follow
+46-30
+54-20 follow rules
+15-14 foment
+
+
+---
+
+
+21-01 food
+10-08 fool
+10-07 foolish
+10-06 foolishness
+4-14 foot
+4-10 foot
+6-32 foot-&-mouth disease
+16-05 foot-rot
+16-08 footfalls
+4-13 footprint
+4-14 footsteps
+50-59 forbid
+61-82 force in
+72-33 ford
+3-13 forearm
+3-08 forefinger
+1-09 forehead
+6-07 forelimb
+71-09 forest
+47-12 forge
+58-02 forget
+50-63 forgive
+46-72 fork
+59-23 forty
+72-07 fountain
+59-04 four
+59-14 fourteen
+35-04 fox
+39-04 francolin
+74-69 Friday
+54-28 friend
+57-26 frighten
+37-16 frog
+67-01 front
+66-09 front surface
+41-41 fruit
+22-13 fry
+22-26 full
+33-13 funeral
+33-14 fur
+36-35 fur
+5-25 gall-bladder
+51-04 game
+28-04 gather
+54-52 gather
+61-75 gather
+48-20 gather firewood
+35-44 gazelle
+75-71 generous
+75-72 genet
+41-08 germinate
+53-08 get
+53-11 get back
+46-64 get off
+46-18 get on
+45-51 get out of the way
+45-02 get up
+34-42 ghee
+13-05 giddy
+53-04 gift
+38-07 gill
+35-42 giraffe
+32-05 girl
+53-01 give
+53-06 give a gift
+53-02 give away
+53-43
+53-44
+53-45
+53-46
+53-47
+31-04 give birth
+34-10
+69-39 glare
+23-15 glass
+70-02 glitter
+40-39 gnat
+24-18 gnaw
+46-01 go
+46-02
+72-28
+46-63 go away
+46-23 go beyond
+46-24 go down
+46-17 go out
+46-57 go out
+Of sight
+75-01 good
+75-02
+82-08 Good bye
+82-27 Good evening
+82-06 Good morning
+82-08 Good night
+75-03 goodness
+55-01 govern
+26-29 granary
+29-36 grandchild
+29-14 grandfather
+29-20 grandmother
+61-04 grasp
+61-05
+40-20 grasshopper
+71-11 grassland
+33-12 grave
+21-15 grease
+50-30 gut
+22-12 grill
+7-31 grim
+43-26 grind
+43-27 grind stone
+13-17 groan
+61-01 grope
+73-01 ground
+42-06 groundnut
+31-15 grow
+41-09
+59-37
+12-01 growth
+50-72 grumble
+8-15 guard
+54-27 guest
+46-50 guide
+9-21 Guinea worms
+39-05 guinea-fowl
+36-17 gun
+36-19 gunpowder
+1-05 hair
+2-03
+2-04
+2-05 hairy
+59-48 half
+34-31 hammer
+47-14
+3-02 hand
+43-11 handle
+61-53 hang
+58-31 hang oneself
+55-03 haranbee
+25-11 hard
+35-34 hare
+43-14 harvest
+by sickle
+20-11 hat
+77-03 have
+39-06 hawk
+79-9 he
+34-19 he-goat
+1-01 head
+61-25 head pad
+27-02 headrest
+9-05 healthy
+46-76 heap
+8-18 hear
+8-19
+5-14 heart
+13-06 heartburn
+16-03 heartwater
+69-02 heaven
+75-35 heaviness
+75-19 heavy
+35-32 hedgehog
+4-12 heel
+34-16 heifer
+75-44 height
+82-03 Hello
+47-03 help
+50-52
+18-15 hem
+9-16 hemoptysis
+3-17 hepatitis
+29-03 her
+34-38 herd
+34-45
+35-57
+34-60 herder
+79-12 here
+7-23 hiccup
+7-24
+35-52 hide
+61-44
+45-56 hide oneself
+75-43 high
+71-02 hill
+79-07 himself
+6-17 hind leg
+2-22 hip
+35-52 hippopotamus
+29-03 his
+45-45 hit
+47-15
+64-11
+62-25 hit in
+36-16 hit target
+43-10 hoe
+61-08 hold
+61-10
+61-11
+2-03
+2-04
+66-06 hole
+66-07
+73-3
+74-52 holiday
+26-35 home
+54-04 home village
+57-09 homesick
+26-35 homestead
+75-82 honest
+40-04 honey
+40-02 honey-bee
+57-39 honor
+6-33 hoof
+41-56 hook
+57-20 hope
+71-14 horizon
+34-37 horn
+6-43 horny pad
+54-25 horse
+54-26 host
+22-05 hot
+75-25
+75-26
+75-29
+74-26 hour
+80-09 how
+80-11
+59-36 how many
+80-01 how much
+31-22 hug
+6-48 hump
+59-29 hundred
+24-22 hunger
+36-01 hunt
+36-02 hunter
+35-19 hunting dog
+46-42 hurry
+60-15 husband
+26-01 hut
+9-11 hydrocele
+35-14 hyena
+35-15
+35-38 hyrax
+79-01 I
+60-25 identify
+10-08 idiot
+47-46 idle
+9-02 ill
+9-01 illness
+51-27 imitate
+35-44 impala
+55-06 important
+74-48 in time
+1-2 incisor
+52-09 incite a fight
+61-46 incline
+59-37 increase
+39-19 incubate
+9-03 infect
+50-20 inform
+26-37 inhabit
+54-03 inhabitant
+33-16 inherit
+32-09 initiate
+11-01 injure
+10-01 insanity
+40-01 insect
+
+
+---
+
+
+67-07 inside 5-28 large 61-31 load 59-45 measure
+54-14 inspect sb.'s 5-28 large intestine 61-62 59-46
+belongings 75-09 largeness 61-79 36-38 meat
+81-14 instead of 74-73 last 26-06 lock 15-12 medicine
+58-35 interest 74-76 40-21 locust 15-31 medicine man
+26-15 interlace 74-49 late 41-17 log 54-34 meet
+sticks 74-23 later 2-18 loin 54-35
+5-27 intestine 57-05 laugh 17-05 loincloth 54-37 meeting
+0-04 invalid 57-05 laughter 57-08 lonely 49-27 melt
+45-35 invite 39-18 lay eggs 75-13 long 49-28
+54-36 46-53 lead 75-14
+73-10 iron 51-18 57-21 long for 10-01 mental illness
+72-22 island 54-21 leader 31-16 look after 73-10 metal
+13-02 itch 41-33 leaf 8-11 look around 34-03 mew
+35-18 jackal 49-31 leak 8-02 look at 67-04 middle
+28-18 jam 45-24 lean 8-10 look for 3-09 middle finger
+74-53 January 58-05 learn 8-14 look into 74-08 midnight
+9-17 jaundice 27-04 leather mat 8-12 look toward 42-02 midrib
+1-29 jaw 46-04 leave 62-20 loose 31-10 midwife
+57-22 jealous 61-12 62-26 mild
+5-01 joint 61-18 62-15 loosen 75-54 mild
+0-39 40-49 leech 61-05 lose 34-36 milk
+46-59 journey 67-09 left 46-56 lose one's way 34-37
+54-15 judge 67-10 61-67 lost 34-38
+74-59 July 4-01 leg 40-41 louse 34-43
+45-42 jump 42-17 lemon 40-42
+40-23 jump about 53-29 lend 57-41 love 34-44 milking pot
+46-20 jump down 75-15 length 75-45 low 43-26 mill
+72-40 jump into 35-10 leopard 11-06 lump 40-33 millipede
+45-42 jump over 61-12 let go 16-01 lumpy 74-45 minute
+52-13 jump upon 54-40 let in 5-17 lung 19-18 mirror
+46-72 junction 50-58 let sb. 35-19 lycaon 47-57 mistake
+74-58 June do sth. 16-01 lymphadenitis 49-09 mix
+50-53 keep a promise 58-16 letter 43-05 machete 1-28 molar
+35-32 keep animals 24-05 lick 10-02 mad 25-23 mold
+52-17 lick 24-06 10-03 47-35 mold pottery
+56-10 kidnap 23-07 lid 10-01 madness 25-24 moldy
+5-29 kidney 50-33 lie 40-47 maggot 12-07 mole
+56-12 kill 44-01 lie down 47-08 make 74-65 Monday
+56-13 killer 45-09 lie flat 24-16 make sb. drink 53-19 money
+29-50 kin 44-02 lie on 54-38 make sb. wait 35-23 mongoose
+75-70 kind one's back 19-17 make up 37-11 monitor
+78-03 33-09 life oneself 35-04 monkey
+78-06 61-60 lift 9-08 malaria 35-06
+48-08 kindle 48-27 light 35-55 male 74-17 month
+57-44 kiss 70-03 32-02 man 69-04 moon
+26-10 kitchen 75-22 34-26 mane 70-07 moonlight
+49-23 knead 75-23 35-05 man 74-04 morning
+4-04 knee 48-08 light fire 16-09 mange mites 31-02 morning
+4-04 knee cap 70-13 light up 42-14 mango sickness
+6-29 knee joint 69-27 lighten 59-31 many 69-12 morning star
+45-08 kneel down 75-24 lightness 59-32 43-22 mortar
+47-27 knife 69-26 lightning 74-55 March 60-06 mosque
+18-14 knit 57-15 like 68-25 mark 40-38 mosquito
+26-07 knock on 78-06 68-26 41-04 moss
+the door 11-13 limp 54-47 market 40-18 moth
+61-47 knock over 61-36 line 30-03 marriage 29-07 mother
+62-04 knot 61-37 30-01 marry 29-08
+58-04 know 68-20 30-01 marry 29-42
+34-55 kraal 61-38 line up 15-03 massage 46-60 motorcar
+35-46 kudu 35-57 lion 15-04 46-76 mound
+1-20 lip 15-05 71-01 mountain
+77-06 lack 8-19 listen to 15-06 33-15 mourn
+27-09 ladder 50-15 27-03 mat 1-30 mustache
+23-20 ladle 70-14 lit 48-26 match 1-19 mouth
+72-05 lake 3-11 little finger 32-07 mature 61-73 move
+14-01 lame 26-37 live 32-08 46-26 move away
+70-12 lamp 33-05 74-57 May 26-38 move residence
+71-15 land 5-23 liver 81-04 maybe 73-12 mud
+50-04 language 33-08 living person 21-02 meal 44-12 muddled
+75-83 large 37-12 lizard 50-03 meaning 72-22 muddy
+35-98 large herd 12-19 measles 9-36 mumps
+24-21 munch
+
+
+---
+
+
+41-05 mushroom
+25-23 must
+25-24 musty
+29-01 my
+47-21 nail
+17-09 naked
+17-10
+31-12 name
+31-13
+81-10 namely
+1-35 nape
+75-85 narrow
+13-07 nausea
+2-12 navel
+67-13 near
+67-15
+1-33 neck
+6-34
+20-04 necklace
+20-05
+77-07 need
+18-03 needle
+54-30 neighbor
+54-31
+29-45 nephew
+9-25 nephritis
+39-36 nest
+36-27 net
+75-41 new
+50-22 news
+58-10 newspaper
+59-53 next
+74-75
+74-76
+29-66 niece
+74-07 night
+59-09 nine
+59-19 nineteen
+59-28 ninety
+82-02 no
+45-40 nod
+50-09 noise
+70-24 noisy
+74-05 noon
+69-44 north
+1-17 nose
+1-18 nostril
+8-16 notice
+74-63 November
+74-44 now
+74-89 nowadays
+13-12 numb
+59-34 number
+13-11 numbness
+59-37 numerous
+15-23 nurse
+15-25
+74-27 o'clock
+72-36 oar
+58-23 oath
+58-24
+50-61 obey
+78-01 object
+50-11 obstruct
+8-08 obstruct sight
+1-04 occiput
+74-62 October
+81-03 of course
+21-15 oil
+32-16 old
+75-42
+32-15 old man
+74-19 old times
+32-14 old woman
+60-11 omen
+59-01 one
+81-16 only
+26-08 open
+45-52 open
+26-33 open space
+67-14 opposite
+42-12 orange
+50-60 order
+61-41
+29-48 orphan
+35-48 oryx
+39-08 ostrich
+29-04 our
+67-08 outside
+79-14 over there
+79-15
+56-06 overcome
+22-27 overflow
+41-46 overripe
+46-32 overtake sb.
+54-25 over
+34-14 ox
+50-64 pacify
+26-40 pack
+72-35 paddle
+72-36
+13-01 painful
+68-18 paint
+42-01 palm
+3-01 palm of hand
+35-41 pangolin
+42-13 papaya
+58-17 paper
+13-11 paralysis
+41-06 parasitic
+61-30 parcel
+82-10 Pardon me
+47-26 pare
+29-13 parent
+39-11 parrot
+62-28 part
+52-11 part a dispute
+52-12 part a fight
+54-41 part with sb.
+46-45 pass by
+62-09 paste
+62-13
+62-14
+16-11 pasteurellosis
+15-01 pat
+18-16 patch
+46-69 path
+9-04 patient
+53-25 pay
+55-05
+53-23 payment
+71-03 peak
+8-13 peel
+41-60 peel
+41-61
+41-62
+62-11 peel off
+8-13 peep
+47-22 peg
+36-36 peg out
+54-17 penalty
+2-24 penis
+81-04 perhaps
+32-01 person
+7-29 perspire
+43-25 pestle
+15-13 phlebotomize
+7-18 phlegm
+62-13 pick up
+58-18 picture
+66-04 piece
+18-05 pierce
+34-27 pig
+39-03 pigeon
+73-03 pile
+56-24 pillage
+27-02 pillow
+12-09 pimple
+52-16 pinch
+61-07
+42-15 pineapple
+16-22 pink-eye
+21-24 pipe
+22-01 pit
+36-28 pitfall
+57-14 pity sb.
+26-34 place
+61-32
+81-14
+27-11 plait a mat
+19-05 plait the hair
+58-22 plan
+75-69 plastic
+23-12 plate
+26-00 platform
+50-01 play
+82-09 please
+57-01 pleased
+69-11 Pleiades
+39-33 pluck out
+56-24 plunder
+45-38 point
+66-01
+66-02
+25-25 poison
+62-23 poke in
+63-12 polish
+75-77 poor
+75-78
+75-79
+41-65 pop out
+15-36 porcupine
+77-03 possess
+26-28 post
+23-02 pot
+42-08 potato
+43-22 pound grain
+62-25 pound in
+22-24 pour
+22-28 pour out
+55-14 poverty
+16-14 pox
+58-04 praise
+50-45
+60-05 pray
+40-31 praying mantis
+74-32 pre-dawn
+31-01 pregnant
+47-51 prepare
+52-19 press down
+61-82 press in
+53-20 price
+30-27 principal wife
+64-10 prod
+50-52 promise
+33-18 property
+15-31 prophet
+55-16 prosper
+56-23 protect
+52-08 provoke
+2-28 public hair
+61-66 pull
+62-24 pull out
+61-61 pull up
+33-06 pulsate
+54-18 punish
+54-46 pupil
+1-16 pupil of eye
+60-19 purify
+11-08 pus
+61-69 push
+61-34 push away
+61-32 put
+61-31 put away
+61-63 put down
+61-58 put in
+61-33 put near
+61-52 put on
+50-38 question
+50-16 quiet
+46-40 quickly
+58-01 quiet
+58-24 raid
+65-04 rain
+69-17
+69-19
+69-24 rainbow
+74-25 rainy season
+28-04 rake
+73-18 ram into
+35-40 rat
+35-21 ratel
+81-17 rather
+22-15 raw
+22-16
+19-09 razor
+58-08 read
+47-51 ready
+67-02 rear
+58-01 recall
+53-09 receive
+74-89 recently
+52-06 reconcile
+55-15 reconstruct
+15-22 recover
+68-04 red
+68-05
+56-17 redeem
+68-03 redness
+59-38 reduce
+50-04 refuse
+24-29 refuse to give
+56-17 release
+58-33 relieved
+46-09 remain
+59-40
+58-01 remember
+
+
+---
+
+
+47-09 repair
+47-10
+76-07 repeat
+76-86 repeatedly
+47-11 replace
+50-23 report
+50-55 request
+56-19 rescue
+68-23 resemble
+59-41 reserve
+54-06 residential group
+41-23 resin
+57-38 respect
+57-39
+15-18 rest
+49-10 retain water
+49-10 return
+53-30
+66-11 reverse surface
+33-07 revive
+35-30 rhinoceros
+5-08 rib
+42-03 rice
+75-75 rich
+75-76
+46-63 ride
+46-11 right
+67-12
+16-18 rinderpest
+16-19
+16-26
+12-11 ringworm
+12-12
+17-18 rinse
+41-45 ripe
+69-05 rise
+72-01 river
+72-21 river bank
+46-71 road
+22-12 roast
+53-39 rob
+50-04 rock
+61-92
+27-14 roll up
+26-24 roof
+26-11 room
+41-32 root
+22-17 rot
+25-20
+25-21 rotten
+63-09 round
+63-10
+15-01 rub
+16-11
+19-12 rub off
+19-13
+62-29
+48-07 rubbing sticks
+28-07 rubbish
+55-02 rule
+70-20 rumble
+34-66 ruminate
+46-36 run
+46-27 run away
+46-65 run over
+46-38 run this way
+73-11 rust
+67-28 sack
+60-23 sacrifice
+57-10 sad
+7-16 saliva
+21-1 salt
+25-07 salty
+72-26 salty
+75-91 same
+73-06 sand
+17-24 sandals
+41-22 sap
+24-25 satisfied
+74-70 Saturday
+56-19 save
+59-41
+47-30 saw
+47-31
+50-06 say
+11-09 scab
+12-13 scobbies
+38-08 scale
+5-05 scapula
+11-10 scar
+61-93 scatter
+54-44 school
+18-07 scissors
+50-42 scold
+24-07 scoop up
+61-06
+25-16 scorch
+25-19
+57-20 scorn
+40-35 scorpion
+24-09 scrape
+38-09 scrape
+off scales
+13-03 scratch
+34-02
+62-27 screw in
+72-03 sea
+23-08 seal with a top
+8-10 search
+22-33 season
+8-04 see
+0-05
+46-51 see off
+41-63 seed
+43-12
+61-03 seize
+53-17 sell
+53-40 send
+62-10 separate
+74-61 September
+69-08 set
+56-18 set free
+46-04 set out
+26-39 settle
+52-11 settle
+59-07 several
+59-17 seventeen
+59-26 seventy
+18-10 sew
+57-45 sexual
+intercourse
+70-09 shade
+70-09 shadow
+61-71 shake
+41-52 shake down
+41-53
+28-09 shake off
+49-07
+45-39 shake one's head
+72-11 shallow
+72-12
+57-36 shame
+22-22 share
+53-14
+53-15
+75-47
+63-16 sharp-pointed
+63-13 sharpen
+19-08 shave
+47-25 shave wood
+78-08 she
+34-20 she-goat
+41-64 sheath
+34-21 sheep
+27-10 shelf
+37-14 shellfish
+69-21 shelter
+36-23 shield
+70-02 shimmer
+4-07 shin
+70-01 shine
+72-34 ship
+13-13 shiver
+17-23 shoes
+36-16 shoot with a bow
+54-48 shop
+75-16 short
+75-17
+63-22 shorten
+75-18 shortness
+2-06 shoulder
+61-22
+5-05 shoulder blade
+6-08
+35-03 shout
+50-4
+56-29
+46-50 show around
+59-38 shrink
+71-10 shrub
+26-05 shut
+57-35 shy
+43-13 sickle
+2-16 side
+66-08
+43-18 sift
+43-19
+8-06 sight
+50-29 silent
+50-23 similar
+41-83 since
+39-25 sing
+51-09
+39-34 singe off
+72-25 sink
+24-12 sip
+24-13
+29-31 sister
+45-05 sit down
+59-06 six
+59-16 sixteen
+39-25 sixty
+47-43 skillful
+2-02 skin
+36-33
+36-34
+41-59
+24-27 skip a meal
+24-27 skip daily
+watering
+69-02
+69-01 sky
+52-15 slap
+36-30 slaughter
+34-68 slaver
+44-40 sleep
+26-09 sleeping place
+44-04
+44-10 sleepy
+47-25 slice
+64-04
+66-05
+45-16 slip
+17-06 slip off
+63-24 small
+19-19 smear
+15-11 smear medicine
+8-21 smell
+8-23
+8-24 smell bad
+8-25 smell good
+57-07 smile
+48-04 smoke
+21-25 smoke tobacco
+15-01 smooth
+47-34
+47-37
+63-05 smooth out
+47-38 smoothing
+stone
+37-13 snail
+64-05 snap
+64-06
+34-68 snarl
+7-25 sneeze
+7-26
+8-22 sniff
+44-08 snore
+21-23 sniff
+49-05 soak
+17-17 soap
+57-11 sob
+21-21 soda
+21-22 soda container
+25-12 soft
+63-30
+
+
+---
+
+
+63-28 soften
+73-07 soil
+56-04 soldier
+4-11 sole
+74-85 sometimes
+29-27 son
+51-08 song
+74-22 soon
+48-05 soot
+31-21 soothe
+50-64
+42-19 sorghum
+82-10 Sorry
+78-03 sort
+70-16 sound
+70-17
+70-18
+70-19
+36-40 soup
+25-05 sour
+25-22
+34-38 sour milk
+69-43 south
+48-02 spark
+50-17 speak
+50-37 speak ill of
+50-10 speak to
+36-20 spear
+68-16 speckle
+50-13 speech
+44-18 spend a night
+24-14 spices
+40-24 spider
+31-24 spill out
+18-02 spill thread
+1-03 spine
+60-08 spirit
+60-09
+7-17 spit out
+7-16 spittle
+72-44 splash
+5-24 spleen
+66-04 splinter
+47-23 split
+22-17 spoil
+23-16 spoon
+23-18
+35-12 spot
+68-24
+45-25 sprawl
+26-21 spread
+41-11
+61-39
+39-28 spread wings
+52-13 spring upon
+22-34 sprinkle
+6-31 spur
+56-21 spy
+54-54 square
+49-10 squeeze
+63-23
+35-35 squirrel
+36-26 stab
+45-19 stagger
+36-05 stalk
+14-09 stammer
+45-01 stand up
+69-10 star
+8-09 stare
+36-07 startle
+57-23
+57-24
+46-08 stay
+44-17 stay overnight
+53-38 steal
+22-11 steam
+46-62 steer
+45-33 step back
+45-43 step over
+29-43 stepchild
+29-40 stepfather
+31-28 sterile
+5-07 sternum
+6-40
+22-02 stew
+20-32 stick
+26-03
+62-07
+62-08
+73-17
+49-25 sticky
+34-67 sticky saliva
+21-03 stiff porridge
+9-18 stiff
+75-74
+8-24 stink
+49-22 stir
+48-14 stir fire
+22-10 stir stew
+21-05 stirring stick
+5-19 stomach
+73-02 stone
+31-27 stoop from age
+46-54 stop
+47-54
+46-55 stop sb.
+50-14 stop speaking
+57-13 stop weeping
+57-48 store
+39-09 stork
+50-74 story
+45-06 straddle
+63-02 straighten
+63-06
+45-11 straighten
+oneself
+8-20 strain
+49-20 strain water
+54-10 stranger
+37-42 strap
+75-35 strength
+45-41 stretch
+63-21 stretch out
+52-14 strike
+48-27 strike a match
+47-41 string
+41-34 strip off
+leaves
+15-01 stroke
+46-35 stroll
+21-08 strong
+69-34
+75-33
+75-34
+75-39
+75-40
+61-81 stuff in
+45-13 stumble
+45-14
+45-15 stumble sb.
+41-31 stump
+10-07 stupid
+14-09 stutter
+72-19 subside
+47-55 succeed
+54-24 succeed
+in life
+31-18 suck
+15-10 suck out
+31-17 suckle
+13-16 suffer
+from pain
+77-08 sufficient
+21-18 sugar
+42-05 sugar cane
+65-06 sun-rise
+69-07 sun-set
+74-71 Sunday
+61-49 support
+81-02 surely
+72-24 surface
+56-06 surmount
+65-05 surpass
+57-23 surprise
+57-24
+36-09 surround
+54-13 suspect
+61-56 suspend
+24-17 swallow
+72-06 swamp
+58-24 swear
+7-28 sweat
+7-29
+7-30
+28-02 sweep
+40-10 sweep off
+25-06 sweet
+42-07 sweet potato
+12-02 swell
+63-17
+12-01 swelling
+12-15
+16-01
+72-27 swim
+61-72 swing
+61-74
+63-26 thicken
+54-07 thief
+4-02 thigh
+6-18
+63-27 thin
+75-58
+75-61
+75-62
+78-01 thing
+58-20 think
+50-71 think aloud
+3-10 third finger
+24-24 thirst
+59-13 thirteen
+59-28 thirty
+79-09 this
+74-74 this month
+74-77 this year
+41-66 thigh
+79-10 those
+79-11
+18-01 thread
+18-04
+52-04 threaten
+59-03 three
+
+
+---
+
+
+43-15 thresh by pounding
+1-36 throat
+7-09 throbbing with excitement
+51-22 throw a ball
+36-21 throw a spear
+61-64 throw away
+52-18 throw down sb.
+70-15 throw light on
+3-07 thumb
+69-28 thunder
+69-29
+74-68 Thursday
+40-43 tick
+51-26 tickle
+38-37 tie
+62-01 tie a knot
+62-18 tighten
+59-49 time
+74-01 tin
+23-22 tin
+66-01 tip
+66-02
+46-61 tire
+13-10 tired
+37-16 toad
+41-05 toadstool
+21-20 tobacco
+74-12 today
+3-06 toe
+28-13 toilet
+74-14 tomorrow
+74-14
+1-21 tongue
+1-37 tonsil
+9-19 tonsillitis
+47-06 tool
+1-24 tooth
+23-06 top
+35-47 topi
+2-01 torso
+37-10 tortoise
+61-02 touch
+54-05 town
+5-16 trachea
+36-04 track
+46-70
+36-03 trail of animals
+46-67 train
+34-33 train animal
+64-09 trample
+36-24 trap
+36-25
+36-26
+46-58 travel
+45-12 tread on
+15-23 treat
+41-13 tree
+41-25 tree-fork
+41-25 tree-hollow
+41-16 tree-trunk
+72-02 trench
+73-16
+58-27 trouble
+58-28
+17-22 trousers
+81-02 truly
+47-52 try
+18-11 try on clothes
+16-06 trypano-somiasis
+16-07 somiasis
+16-23
+40-36 tsetse fly
+74-56 Tuesday
+45-20 tumble
+46-12 turn
+61-85 turn around
+45-32 turn one's back
+61-90 turn over
+46-13 turn right
+44-09 turn while
+35-25 tusks
+59-12 twelve
+59-20 twenty
+59-21 twenty-one
+31-09 twin
+70-02 twinkle
+63-07 twist
+7-07 twitch
+59-02 two
+78-03 type
+34-35 udder
+21-03 ugali
+51-15 ululate
+31-08 umbilical cord
+29-37 uncle
+50-18 understand
+58-07
+58-08
+50-57 undertake
+19-06 undo hair
+17-06 undress
+58-30 uneasy
+63-04 unfold
+63-06
+30-37 unmarried
+57-38 weakness
+11-05 weal
+33-18 wealth
+56-23 weapon
+17-11 wear
+26-15 weave
+62-02
+62-03
+74-84 until
+61-80 unwrap
+67-05 up
+3-14 upper arm
+6-10
+43-29 uproot plants
+72-13 upstream
+5-30 urinary
+74-84 until
+7-33 urinate
+7-32 urine
+47-07 use
+1-22 uvula
+71-07 valley
+69-23 vapor
+5-12 vein
+9-14 venereal
+81-06 very
+23-03 vessel
+54-01 village
+50-01 voice
+13-08 vomit
+39-07 vulture
+2-26 vulva
+54-37 wait
+44-12 wake up
+50-12 whisper
+54-37 wait
+11-05 wale
+46-34 walk
+46-31 walk in line
+46-29 walk side
+by side
+80-01 who
+26-14 wall
+57-17 want
+57-17 want
+57-18 want to do
+57-18 want to do
+56-01 war
+22-21 warm food
+48-18 warm oneself
+12-08 wart
+35-27 warthog
+23-13 wash a plate
+69-20 wash away
+17-15 wash clothes
+19-01 wash one's face
+24-04 wash one's hands
+8-09 watch
+8-15 watch over
+49-01 water
+12-06 water blister
+72-08 water pool
+72-17 waterfall
+49-15 watering place
+72-04 wave
+45-34 wave
+79-04 we
+75-36 weak
+57-37
+57-38 weakness
+11-05 weal
+55-13 world
+82-03 yes
+72-18 wish for
+58-29 worry
+11-03 wound
+27-11
+47-39
+47-40
+30-03 wedding
+30-04 wedding dance
+74-67 Wednesday
+41-01 weed
+7-21 yawn
+74-16 week
+74-18 year
+57-12 weep
+75-21 weight
+49-15 well
+69-30 west
+49-03 wet
+49-04
+80-02 what
+78-04 what kind of
+78-05 you [pl.]
+79-02 you [sing.]
+74-46 what time
+74-47 when
+80-06
+80-05 where
+29-05 your [pl.]
+29-02 your [sing.]
+
+
+---
+
+
+2-17 asbor
+67-02
+82-09 aai
+34-70 aakwang
+68-07
+8-05 aanyun
+8-16
+47-55
+53-00
+8-04 aanyungar
+66-11 aasor
+46-25 aapikin
+34-70 aaryangan
+68-04
+72-02 aasak
+12-16 abaat
+26-18
+74-09 abait
+74-33
+75-83 abalany
+10-04 abangsanut
+10-06 abangibang
+47-33 abao
+47-27 abarait
+58-16 abarua
+39-12 abata
+75-56 abeben
+75-61
+75-65
+39-21 abebenyit
+40-18 abere
+50-06 abeikin
+39-17 abeiyie
+64-14 abelebel
+6-01 abelekek
+46-10 abelus
+52-08 abenyun
+74-20 aberiberakin
+30-17 aberu
+32-03
+35-56
+30-27 aberu naapolon
+74-50 aberun
+64-06 abila
+64-14
+27-13 abilakin
+63-03
+64-05 abibilil
+39-04 abilikeret
+49-24 abirit
+75-71 abobou
+5-19 aboi
+34-70 abok
+37-10 abokok
+6-44 abokolim
+6-45
+1-29 abokony
+43-30 abokun
+72-02 abole
+23-06 abole
+39-23
+41-21 aboloc
+41-62
+41-62 abolociar
+62-10
+51-01 abolya
+51-02
+56-26 abongobong
+76-07 abongokin
+46-10 abongun
+53-11
+28-16 aborok
+8-24 abos
+25-21
+45-09 abubur
+58-09 abuk
+55-05 abukur ecur
+12-03 abulo
+39-25 abunakin
+61-04
+3-05 abunakinet
+46-14 abunere
+46-15
+20-27 abuo
+12-02 abuore
+63-17
+23-07 aburet
+20-32 aburo
+13-10 aburun
+12-01 abus (n)
+16-06
+75-87 abus (v)
+17-09 abuter
+11-12 abutor akwan
+36-34 abutun
+75-68 abutur
+72-08 abuwel
+64-15 abwangabwang
+46-26 acadar
+61-42
+61-13 acakakin
+46-56 acakar
+61-64
+61-66
+70-22 acakina
+70-01 acau
+70-11
+50-09 acala
+50-41
+10-04 acalakin
+50-47 acamakin
+50-49
+50-53
+50-58
+58-21
+50-47 acamun
+50-49
+72-02 acarait
+41-37 acarubeit
+70-01 acau
+70-11
+2-05 acekes
+45-16 aceretiyar
+64-17 acici
+75-58 acikin
+17-14 acilla
+64-02 acillar
+11-03 acilat
+6-52
+58-38 acokin
+22-32 acokocok
+49-19
+60-27 acorokin
+8-03 acuan
+72-10 acukul
+41-25 acukule
+28-05 acunakin
+54-53
+61-41
+54-53 acunun
+55-15
+45-17 acurut
+45-16 acurutar
+49-10 acuwar
+17-13 adaidaun
+26-15 adakar (n)
+45-20 adakar (v)
+52-18
+74-80 adaunet
+76-05
+75-51 adedeng
+75-80
+75-32 adedenger
+53-29 ademar
+61-17
+46-32 adepar
+23-12 adere
+30-33 adere-a-
+75-28
+17-24 adetait
+40-09 adetar
+69-05 adetun
+75-85 adiding
+75-56 adim
+75-61
+51-13 adit
+49-24 adikam
+57-22 adinga
+69-01 adis
+63-24 aditeun
+75-11
+62-24 aditun
+69-07 adoiyaret
+74-39
+46-28 adoiyor
+69-08
+27-09 adoket
+40-31 adokole
+46-19 adokun
+46-64
+46-07 adolun
+18-10 adonyokin
+62-06
+68-25 ados
+15-07 adotun
+62-24
+63-18 adudung
+36-28 adut
+35-30 adukai
+26-02 dukokin
+48-17 adunger
+11-03 adungot
+73-17 adupakin
+9-05 aduwarun
+75-59
+20-26 aduwel
+9-02 adyak
+9-02 adyaskakin
+6-61 aeket
+43-12 aekin
+61-93
+6-43 aekit
+61-25
+43-09 aep
+47-19
+51-09 aewo
+46-66 agaali
+66-51 agaalis
+69-20 agariyior
+46-67 agaryamoc
+58-10 agaset
+60-13 agat
+53-17 agelar
+34-30 agelem
+53-18 agelun
+35-44 agete
+76-01
+76-04 aguenet
+37-08 ageya
+69-29 agir
+69-29 agirokin
+25-11 agogong
+47-59
+53-22
+57-04 agogonger
+75-34
+45-24 agongakin
+9-11 ague
+9-10 agule
+26-11
+66-14
+71-07 agum
+78-05 ai
+80-05
+68-02 aies ai
+78-04
+50-51 aikin
+53-45
+27-03 aialalat
+51-06 ailet
+24-02 ainaikin
+53-30
+53-29
+47-54 aiskin
+61-18
+74-24 ait
+71-03 aita
+63-15 aitar
+34-15 aite
+52-
+
+
+---
+
+
+11-03 ajeme
+11-04
+52-07 ajie
+15-22 ajoker
+75-02
+75-03 ajokis
+22-15 ajon
+41-43
+35-57 ajore (n)
+54-08
+56-03
+52-07 ajore (v)
+43-02
+44-03 ajotoor
+24-12 ajujut
+2-03 ajulot
+35-53
+60-23
+68-01
+41-34 ajurut
+43-16
+43-16 ajurutun
+41-19 aakaabuket
+72-18 aakaale
+5-15 akab
+41-59 akabokoiyait
+41-64 akabokok
+6-60 akacoromolt
+6-46 akadalat
+26-01 acai
+39-36
+29-31 aakaitootit
+34-67 aakaajalat
+50-33 aakalaalaat
+20-13 aakalac
+47-46 aakalany
+23-16 aakaloboc
+23-20 aakaloking
+4-02
+4-05
+6-10
+6-18
+6-53 akaluwat
+20-30
+74-24 akamu
+30-30 akamuran
+30-32
+40-33 akamuryamurya
+3-01 akan
+20-02 akaparaparat
+20-15 akepelan
+60-11 akepeli
+27-04 akepit
+2-12 akapoli
+49-16 akar
+58-17 akaratac
+42-05 akasirimait
+4-07 akatorongot
+69-30 akatorot
+2-19 akau
+69-19 akedaman
+49-27 akeeyar
+4-01 akeju
+1-13 akemer
+12-07 akemer
+35-12
+68-15
+45-31 akenyikin
+44-12 akenyun
+5-12 akep
+31-10 akesidounou
+31-06 aketanakan
+59-53 akewarunan
+53-28 akiar
+56-12
+56-12
+60-15
+26-19 akiba
+74-09
+74-33
+46-29 akibak
+10-04 akibangabang
+19-08 akibany
+52-15 akibap
+55-16 akiba:
+75-75
+60-19 akibatar
+7-06 akibek
+43-32
+61-90
+61-87 akibeleun
+44-09 akibelokin
+45-21
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61-90
+61
+
+
+---
+
+
+52-10 akiem
+57-25
+57-35
+19-19 akier
+8-18 akierar
+50-18
+57-37
+58-07
+50-37 akigac
+52-23 akigakin
+69-38 akigalikin
+61-50 akigang
+60-13 akigat
+53-17 akigel
+53-18
+53-51
+57-17 akigeno
+19-20 akiger
+41-50
+43-16
+65-01
+41-35 akigeriger
+47-49 akigir
+58-11
+58-18
+68-16
+47-31 akigirgir
+24-18 akigit
+26-05 akigol
+45-49
+45-52
+28-18 akigolokin
+34-07 akigoro
+57-17
+34-51 akigum
+36-16
+40-07
+22-10 akigur
+46-62
+23-18 akiguret
+72-36
+22-10 akigurokin
+36-36 akiguror
+11-02 aki
+45-34 aikiikik
+61-74
+45-40 aikiikin
+50-28
+50-47
+58-30 akiil
+24-14 aiki
+13-04 aikilare
+1-12 aikiirit
+1-14
+13-05 akiiryau
+63-15 akit
+46-12 aikiitor
+46-45
+34-48 akiin
+34-66 akiyaru
+47-35 akiye
+8-16 akiyen
+58-04
+65-04
+24-08 akiyeny
+47-25 akiyer
+50-63 akijal
+53-09 akijaun
+23-16 akijiko
+50-36 akijok
+53-34 akijokokin
+45-07 akijor
+72-19 akijuar
+61-81 akijukakin
+61-34 akijukar
+61-69
+19-15 akijut
+31-27
+62-29
+61-63 akikaatoun
+23-17 akikab
+61-32 akikacakin
+61-42 akikacar
+61-43
+61-44
+45-43 akikalam
+51-23 akikamun
+31-22 akikanakan
+61-41 akikap
+69-22 akikar
+75-58
+7-25 akikarisa
+7-26 akikarisar
+61-53 akikedokin
+50-61 akiker 1
+57-39
+19-03 akiker 2
+46-36 akiker 3
+30-08 akike
+10-02 akikeripikin
+19-04 akikeret
+47-47 akikeriker
+34-02 akiketeket
+33-10 akikeun
+61-60
+51-26 akikidikid
+36-10 akikilakin
+52-10
+70-18 akikilaun
+61-71 akikinikin
+24-09 akikit
+13-03 akiko
+57-42
+58-33 akikobakin
+53-41
+50-27 akikobaret
+61-09 akikod
+34-05 akikom
+35-03
+50-52 akikong
+58-24
+58-23 akikonget
+34-08 akikony
+34-30
+22-22 akikor
+13-15 akikorun
+52-21 akikotar
+36-07 akikotun
+15-08
+63-09 akikud
+54-12 akikukokin
+41-60 akikul
+47-26
+22-09 akikulare
+45-14 akikumakin
+43-31 akikur
+22-13 akikuring
+61-40 akikurukur
+50-45 akikuset
+50-44 akikut 1
+50-66
+69-33 akikut 2
+45-33 akikutor
+13-15 akikwarun
+49-22 akikwalkwal
+68-23 akikwan
+50-25 akikyaar
+46-58 akilaar
+17-18 akilabar
+17-18 akilabun
+17-06 akilac
+63-20
+62-20 akilajala
+62-19 akilajalajakin
+17-11 akilajalajau
+18-5 akilak
+19-06
+30-34
+61-80
+28-10 akilakalakar
+49-08
+54-39 akilakin
+26-22 akilalakin
+47-34 akilalare
+26-22 akilalaun
+45-43 akilam
+52-03
+60-15
+65-05
+69-05 akilamun
+69-05 akilamunet
+46-35 akilare
+45-22 skile
+22-25 skilebileb
+72-27
+72-24 akilebun
+47-37 akiledun
+45-15 akilegeun
+13-08 akilek
+13-07 akileme
+51-91 akilelo
+6-18 skilelyang
+43-14 akilem
+32-11 akilenger
+17-09 akileny
+34-43 akilep
+61-20 akileplep
+21-09 akileware
+21-12 akili
+43-19
+6-29 akilibicet
+24-17 akilikor
+50-11 akilling
+50-29
+70-21
+12-02 akillingiar
+50-16 akillingikin
+68-15 akilim
+68-16
+50-55 akilip
+51-12
+53-28 akilipar
+13-10 akilo
+7-33 akiloat
+68-04 akiloc
+46-13 akilodakin
+62-17 akilog
+41-52 akiloilo
+61-72 akiloiloo
+36-26 akilok
+47-11 akilokony
+54-40 akilomun
+24-10 akilookin
+23-13 akilot
+28-01
+46-01
+23-13 akilotar
+60-19 akilotun
+15-09 akiluk
+72-37 akilumulare
+3-05 akilungul
+63-10
+72-38 akilum
+53-42 akiluny
+81-14
+13-15 akilur
+44-10
+44-11
+25-16 akilurckin
+44-10 akilurun
+48-01 akim
+7-17 akimaar
+15-14 akimad
+34-33
+31-21 akimaima
+63-18
+51-18 akimar
+
+
+---
+
+
+24-26 akimed
+50-48 akinger
+49-18 akipakar
+8-08 akirap
+52-19
+50-50
+60-19 akipakun
+15-15
+53-15
+50-54
+73-13 akipany
+23-09
+50-58 akimekin
+50-56
+58-35 akipasakin
+61-76
+56-18
+53-52 akinges
+22-12 akipe
+24-10 akirapakin
+61-12
+50-38 akingit
+22-08 akipecun
+26-25 akiraparap
+57-40 akimen
+50-67 akingitun
+22-27
+53-10 akirapun
+21-15 akimet (n)
+57-10 akingo
+18-05 akiped
+61-15
+34-42
+57-29
+66-07
+56-21 akireb
+19-12 akimet (v)
+42-02 akingol (n)
+50-48 akipeg
+64-09 akirec
+49-09
+36-30 akingol (v)
+54-41 akipeiyokin
+64-07 akirekin
+63-11
+8-12 akingoliar
+54-39 akipeiyor
+36-21 akirem
+53-32 akimicare
+45-31
+54-36 akipeiyoun
+56-22
+24-06 akimid
+8-01 akingolikin
+63-13 akipen
+56-24
+49-25 akimidak
+57-37
+63-13 akipenar
+46-72 akiremet
+49-25 akimidik
+34-06 akingoor
+63-14 akipenet
+67-04
+7-08 akimidimid
+44-08
+44-41 akiper
+70-08 akirenut
+24-29 akimik
+46-56 akingop
+13-02 akiperie
+41-60 akireny
+52-19
+74-42
+46-75 akiperekin
+18-04 akirepakin
+70-04 akimilya
+8-02 akingore
+52-17 akiperie
+43-26 akire
+69-27 akimilyaun
+49-23 akingorirakin
+20-21 akipeset
+61-68
+70-05
+14-03 akingual
+39-31 akipepet
+43-27 akires
+69-26 akimilyaunet
+50-72 akingurungura
+48-18 akipeyar
+15-03 akiret
+24-25 akimon
+14-07 akinim
+13-02 akipi
+54-42 akiretakin
+52-01 aklmor
+18-11 akingin
+48-21 akipikakin
+60-19 akiri
+53-15
+47-52
+59-45 akipim
+61-46
+49-21 akimorikin
+59-45
+22-10 akipir
+61-66 akiriar
+21-01 akimuj
+77-09
+48-06
+68-21
+24-01
+18-11 akiningokin
+62-27
+54-20 akiricakin
+30-33
+50-46 akinis
+69-36
+61-11 akirid
+30-21 akimujmuj
+48-08 akinok
+22-10 akipirakin
+2-14 akirididi
+24-07 akimuk
+70-01
+63-23 akipiric
+15-11 akirigare
+26-25
+70-13
+19-20 akipiripir
+19-11
+67-56
+70-01
+62-16 akipiripir
+28-12
+27-05 akimukokin
+19-19 akinokakin
+52-16 akipoc
+63-11
+7-16 akimulat
+48-08
+37-02 akipom
+18-01 akiriit
+34-67
+70-13
+39-26 akipor
+62-27 akirij
+45-32 akimulen
+70-15
+45-42
+62-18 akirijakin
+24-21 akimulmul
+19-18 akinoket
+46-20
+46-48 akirik
+45-39 akimungumung
+70-03
+21-04 akipore
+46-49
+50-35 akimunon
+70-12
+22-01
+46-53
+49-05 akimur
+12-05 akinom
+74-25 akiporo
+51-18
+58-02 akimuryakin
+48-10
+53-02 akipotor
+55-01
+13-05 akimutet
+48-10 akinomakin
+53-29
+56-10
+13-14
+57-43 akinu
+26-23 akipuc
+47-53 akirikakin
+25-16 akimuudiyor
+57-44
+47-37
+36-01 akirikar
+46-12 akinacar
+33-11 akinuk
+55-01 akipukore
+36-09 akirikaun
+15-10 akinak
+73-15
+15-19 akipukup
+63-21 akirikin
+15-16
+58-25 akinup
+39-09
+20-09 akirim
+44-21
+7-07 akinayio
+45-44 akipun
+61-80
+31-18
+17-71 akinyak
+46-27 akipungar
+36-38 akirig
+45-45 akinang
+53-11 akinyakakin
+50-15 akipup
+41-57
+46-07
+57-33
+50-18
+41-48 akiriny
+59-54
+53-30 akinyakun
+50-61
+8-13 akirip
+17-03 akinap
+49-21 akinyal
+22-33 akipur
+18-09 akirirakin
+31-23
+49-21 akinyalakin
+50-44
+61-27 akirit
+61-26
+25-14 akinyalik
+57-22
+36-08 akiritar
+61-53 akinenekin
+75-69
+68-17
+61-61 akirirun
+61-55
+24-01 akinyam
+34-70 akipurat
+72-26
+61-56 akineno
+37-09 akinyang
+22-34 akipupur
+61-54 akirirokin
+45-44 akinenokin
+64-16 akinyasun
+64-08 akipupuu
+13-01 akiriyeb
+57-45 akiner
+41-55 akinyaun
+
+
+---
+
+
+61-33 akirudakin
+61-82 akisig
+15-27 akitam
+47-01 akitiare
+44-05 akiruj
+7-23 akisiga
+57-20
+63-27 akitidim
+44-05 akirujare
+61-82 akisigakin
+58-20
+25-09 akitiyor
+43-22 akiruk 1
+7-24 akisigar
+54-13 akitamakin
+73-18 akitij
+44-05 akirujare
+61-82 akisigakin
+58-20
+39-19 akitik
+64-07
+45-47 akisilitor
+24-16 akimatam
+61-70
+46-52 akiruk 2
+81-11 akisikuanet
+24-16 akimatam
+61-70
+51-09 akiruko
+65-02 akisikan
+58-08 akitamun
+52-12 akitikitik
+46-52 akirukor
+53-08 akisik
+44-02 akitan
+57-37 akitill
+46-52 akirukun
+21-08 akisileware
+31-14
+57-37 akiting
+51-07 akirum
+60-15 akisilikor
+31-16
+61-03
+33-16
+31-21 akisiliiling
+31-17 akitanak
+61-19
+57-37
+50-65
+17-05 akitanap
+77-03
+62-08 akirumakin
+7-30 akisim
+31-22 akitanatan
+75-49 akitingingi
+62-09
+50-42 akismekein
+15-21 akitangalekin
+53-16 akitiriyan
+62-13
+54-41 akisimuj
+61-02 akitap
+57-24 akitiryangakin
+46-28 akirumun
+61-87 akisingoliar
+1-09 akitapa
+54-12 akitakitak
+56-09
+19-16 akisir
+49-03 akitapapal
+77-01 akityiare
+41-07 akirup
+61-74 akisirim
+61-01 akitaptap
+18-14 akitok
+24-18 akirut
+61-86
+12-02 akitar
+19-05
+43-29
+36-01 akisirim
+43-07 akitare
+19-11 akitokorian
+26-16 akiruwat
+38-04
+32-10 akitasapan
+26-12
+45-54 akiruwokin
+62-07
+48-01 akisieno
+22-21 akitomonun
+61-08 akiryadakin
+54-25 akisiryamiar
+60-26 akita
+63-28 akitononok
+36-09 akifyam
+50-19 akisare
+60-26 akitatakain
+45-04 akityonouy
+54-34
+51-27
+50-42 akitatam
+8-17 akitoodikin
+54-34 akiryamakin
+61-24 akisiwok
+50-68
+46-50
+39-15 akiryamar
+61-62
+16-02 akitebukin
+81-11 akitodikinet
+54-51 akiryamaryam
+63-29 akisyab
+63-17
+45-30 akitodionu
+54-52
+50-10 akisyian
+15-23 akitedek
+53-06 akitoolokin
+54-34 akiryamun
+57-14
+46-06 akiteek
+72-43 akitongororan
+63-08 akiryankanin
+61-73 akisyotokin
+52-04 akiteem
+61-01 akitop
+45-19 akiryanga-
+45-55 akisyotor
+57-26
+45-49 akitorobikin
+ryanga
+61-34
+50-20 akiteiyenun
+45-50 akitorobior
+62-23 akiryapakin
+44-16 akisokakin
+21-17 akitekeeyar
+61-38 akitoropikin
+6-62 akiryat
+74-48 akisokar
+49-28
+63-20 akitoruwar
+45-50 akiryatakin
+72-24 akisoleun
+44-14 akitekeny
+58-10 akitousun
+58-23
+58-05 akisom
+41-08 akitekenyun
+46-55 akitouwo
+68-01 akiryenut
+58-08 akisomare
+41-18 akitel
+61-45
+68-11 akiryoner
+61-67 akisowar
+41-89 akitelor
+34-58 akituar
+68-22 akiryong
+21-16 akisub
+18-08 akitem
+59-43 akitub
+34-70 akiryoon
+47-08
+18-11
+64-01
+68-80
+47-09
+59-45
+64-03 akitubtub
+13-12 akisaalikin
+60-02
+77-09
+48-16 akitudunger
+8-10 akisak
+77-01
+59-46 akitemet
+68-18 akitujuk
+57-17
+34-46 akisud
+18-12 akitemokin
+1-19 akituk (n)
+61-01
+50-34
+58-12
+26-04
+44-17 akisal
+36-07 akisur
+45-11 akitenar
+50-26
+28-12 akisiantari
+24-11 akisusukin
+45-25
+66-01
+63-12
+19-02 akisut
+46-51
+50-13 akituk (v)
+47-57 akisec
+63-12
+63-02
+58-22
+53-49 akisecar
+57-11 akisuta
+63-04
+62-11
+43-23 akisek
+63-11 akisutar
+24-39 akitenger
+57-28 akitukudikin
+76-01
+63-12
+50-11
+22-04 akitukulaun
+76-01 akisekin
+50-37 akiswam
+50-59
+57-25 akitukuryan
+72-13 akisekinet
+1-31 akit
+24-28 akitengerar
+15-20 akitukutakin
+76-04
+50-21 akitaanyun
+45-11 akitenikin
+7-15 akitule
+15-29 akisemere
+50-23
+63-02
+47-17
+15-29
+22-20 akitaat
+
+
+---
+
+
+52-09 akiturumukin 7-14 akiyangar
+66-13 akudokinet 45-53 alegerikin
+70-17 akituruore 15-18 akiyar
+60-01 akuj 13-08 alekun
+45-46 akituryakikin 9-05 akiyar
+69-02 72-28 alel
+18-15 akitutore 33-05 akiyakin
+49-16 akuja 61-15 alemun
+61-01 akituturyare 7-27 akiyakin
+43-11 akujuk 61-59
+13-09 akitwuiryor 59-37 akiyatakin
+8-25 akukuny 26-36 alepyet
+63-22 akituuryanuun 59-42 akiyatakin
+8-25 akukunyuu 80-03 ali
+15-28 akituwa 14-09 akiyegayega 45-13 akukuriyor
+29-36 aliakat
+47-50 akituwarakin 61-93 akiyeliyel 39-13 akukut
+37-07 aliare
+48-27 akituweny 15-15 akiyen
+75-77 akulakan 2-18 alidet
+48-14 akituwenyi- 52-20 akiyen
+21-11 akulaun 33-12 aliel
+tuwenyikin 60-07
+22-03
+43-18 aliyet
+52-22 akituwarakin 61-79
+47-28 akulep 75-31 alilim
+30-34 akityak 62-01
+54-19
+75-28
+53-14 36-33 akiyeng
+5-04 akululii
+62-28 52-01 akiyeny
+4-03 akung 57-32
+47-12 akityek 41-14 akiyep
+13-17 akuaa 68-15 alimait
+62-26 akikuuko 24-14 akiyet
+43-08 akuta 50-06 alimun
+22-17 akiumakin 48-24 akiyetiyataara 45-03 akuram
+31-13 alimokin
+17-16 akiunikare 8-15 akiyok
+24-24 akure 50-19
+7-05 akiyuni 31-16
+23-02 akurum 50-60
+51-16 akiunya 34-58
+56-06 akurwor 50-21 alimor
+13-20 akiurut 56-23
+57-27 akuryan 50-23
+30-02 akuit 8-09 akiyokuun
+43-08 akuta 50-06 alimun
+61-59 58-13 akiyookin
+23-02 akutam 50-34
+33-11 akiuwa 45-51 akiyotokin
+69-37 akutar 2-13 alipong
+61-43 45-51 akiyotor
+15-08 akuun 80-05 aliwae
+61-44 45-51 akiyotun
+22-07 72-45 aliwar
+15-01 akiwa 62-05 akodakin
+26-34 akuwap 77-05 aliwor
+61-32 akiwaakin 62-08
+71-15 36-26 alokakin
+61-56 51-06 akodangole
+78-07
+68-36 5-01 akiot
+6-37 akuwat 17-26 alokin
+7-14 akiavad 30-10
+41-33 akuyen 43-17
+60-22 akival 53-38 akoko
+74-02 akwaar 61-39
+60-22 akivalakin 71-04 akokor
+70-08 akwaare 75-83 alolom
+22-06 akivalar 71-05
+74-07 63-25 alolomer
+69-09 39-13 akokorokit
+2-01 akwan 54-01 alomar (n)
+69-25 20-19 akoli
+20-06 akwangat 46-16 alomar (v)
+11-01 akiwan 6-37 akolikoli
+68-08 akwanger 72-39
+39-34 akiwangang 23-14 akolo
+68-06 akwings 74-26 alonyaket
+36-04 akiwap 69-03 akolong
+36-20 akwara 47-05 alonyakin
+46-31 31-28 akolup
+63-16 akwoner 47-11
+15-11 akiwasakin 26-28 akom
+75-47
+19-19 41-31
+57-05 akyana 46-04 alotokin
+19-19 akiwasar 35-12 akomolo
+57-06 akyen 45-59 alotor
+60-19 akiwat 22-14 akonere
+54-54 akuyur 80-03 alu
+49-07 akiwatawataar 41-45
+69-36
+53-36 akiweikin 1-1 akong
+23-03 akuyuryet 37-06 alugur
+45-01 akixo 2-10 akooki
+35-02 akuyt 37-06 alugurokin
+46-54 30-06 akocomar
+26-31 alaar 26-15 alugurun
+22-23 akiwod 49-16 akoomeemoyot 34-61 alacakin 72-22 alukat
+23-17 30-03 akoota
+56-08 alukun
+40-05 71-06 akope
+61-80 50-33 alyoko
+22-23 akiwok 1 39-22 akopiro
+17-06 alacar 50-34 alyokon
+23-17 51-06
+62-02 50-34 alyokoner
+49-14 55-13 akopit
+63-20 50-54
+61-23 akiwok 2 20-23 akopot
+56-17 alacun 79-14 ama
+54-14 akiwol 59-44 akorakin
+61-57 58-18 amacar
+61-77 akiwolor 6-46 akorimeu
+20-04 alagama 68-26
+49-12 akiwon 24-22 akoro
+34-68 alakakin 42-12 amacungat
+72-20 51-
+
+
+---
+
+
+52-09 akiturumukin 7-14 akiyangar
+66-13 akudokinet 45-53 alegerikin
+70-17 akituruore 15-18 akiyar
+60-01 akuj 13-08 alekun
+45-46 akituryakikin 9-05 akiyar
+69-02 72-28 alel
+18-15 akitutore 33-05 akiyakin
+49-16 akuja 61-15 alemun
+61-01 akituturyare 7-27 akiyakin
+43-11 akujuk 61-59
+13-09 akitwuiryor 59-37 akiyatakin
+8-25 akukuny 26-36 alepyet
+63-22 akituuryanuun 59-42 akiyatakin
+8-25 akukunyuu 80-03 ali
+15-28 akituwa 14-09 akiyegayega 45-13 akukuriyor
+29-36 aliakat
+47-50 akituwarakin 61-93 akiyeliyel 39-13 akukut
+37-07 aliare
+48-27 akituweny 15-15 akiyen
+75-77 akulakan 2-18 alidet
+48-14 akituwenyi- 52-20 akiyen
+21-11 akulaun 33-12 aliel
+tuwenyikin 60-07
+22-03
+43-18 aliyet
+52-22 akituwarakin 61-79
+47-28 akulep 75-31 alilim
+30-34 akityak 62-01
+54-19
+75-28
+53-14 36-33 akiyeng
+5-04 akululii
+62-28 52-01 akiyeny
+4-03 akung 57-32
+47-12 akityek 41-14 akiyep
+13-17 akuaa 68-15 alimait
+62-26 akikuuko 24-14 akiyet
+43-08 akuta 50-06 alimun
+22-17 akiumakin 48-24 akiyetiyataara 45-03 akuram
+31-13 alimokin
+17-16 akiunikare 8-15 akiyok
+24-24 akure 50-19
+7-05 akiyuni 31-16
+23-02 akurum 50-60
+51-16 akiunya 34-58
+56-06 akurwor 50-21 alimor
+13-20 akiurut 56-23
+57-27 akuryan 50-23
+30-02 akuit 8-09 akiyokuun
+43-08 akuta 50-06 alimun
+61-59 58-13 akiyookin
+23-02 akutam 50-34
+33-11 akiuwa 45-51 akiyotokin
+69-37 akutar 2-13 alipong
+61-43 45-51 akiyotor
+15-08 akuun 80-05 aliwae
+61-44 45-51 akiyotun
+22-07 72-45 aliwar
+15-01 akiwa 62-05 akodakin
+26-34 akuwap 77-05 aliwor
+61-32 akiwaakin 62-08
+71-15 36-26 alokakin
+61-56 51-06 akodangole
+78-07
+68-36 5-01 akiot
+6-37 akuwat 17-26 alokin
+7-14 akiavad 30-10
+41-33 akuyen 43-17
+60-22 akival 53-38 akoko
+74-02 akwaar 61-39
+60-22 akivalakin 71-04 akokor
+70-08 akwaare 75-83 alolom
+22-06 akivalar 71-05
+74-07 63-25 alolomer
+69-09 39-13 akokorokit
+2-01 akwan 54-01 alomar (n)
+69-25 20-19 akoli
+20-06 akwangat 46-16 alomar (v)
+11-01 akiwan 6-37 akolikoli
+68-08 akwanger 72-39
+39-34 akiwangang 23-14 akolo
+68-06 akwings 74-26 alonyaket
+36-04 akiwap 69-03 akolong
+36-20 akwara 47-05 alonyakin
+46-31 31-28 akolup
+63-16 akwoner 47-11
+15-11 akiwasakin 26-28 akom
+75-47
+19-19 41-31
+57-05 akyana 46-04 alotokin
+19-19 akiwasar 35-12 akomolo
+57-06 akyen 45-59 alotor
+60-19 akiwat 22-14 akonere
+54-54 akuyur 80-03 alu
+49-07 akiwatawataar 41-45
+69-36
+53-36 akiweikin 1-1 akong
+23-03 akuyuryet 37-06 alugur
+45-01 akixo 2-10 akooki
+35-02 akuyt 37-06 alugurokin
+46-54 30-06 akocomar
+26-31 alaar 26-15 alugurun
+22-23 akiwod 49-16 akoomeemoyot 34-61 alacakin 72-22 alukat
+23-17 30-03 akoota
+56-08 alukun
+40-05 71-06 akope
+61-80 50-33 alyoko
+22-23 akiwok 1 39-22 akopiro
+17-06 alacar 50-34 alyokon
+23-17 51-06
+62-02 50-34 alyokoner
+49-14 55-13 akopit
+63-20 50-54
+61-23 akiwok 2 20-23 akopot
+56-17 alacun 79-14 ama
+54-14 akiwol 59-44 akorakin
+61-57 58-18 amacar
+61-77 akiwolor 6-46 akorimeu
+20-04 alagama 68-26
+49-12 akiwon 24-22 akoro
+34-68 alakakin 42-12 amacungat
+72-20 51-
+
+
+---
+
+
+52-09 akiturumukin 7-14 akiyangar
+66-13 akudokinet 45-53 alegerikin
+70-17 akituruore 15-18 akiyar
+60-01 akuj 13-08 alekun
+45-46 akituryakikin 9-05 akiyar
+69-02 72-28 alel
+18-15 akitutore 33-05 akiyakin
+49-16 akuja 61-15 alemun
+61-01 akituturyare 7-27 akiyakin
+43-11 akujuk 61-59
+13-09 akitwuiryor 59-37 akiyatakin
+8-25 akukuny 26-36 alepyet
+63-22 akituuryanuun 59-42 akiyatakin
+8-25 akukunyuu 80-03 ali
+15-28 akituwa 14-09 akiyegayega 45-13 akukuriyor
+29-36 aliakat
+47-50 akituwarakin 61-93 akiyeliyel 39-13 akukut
+37-07 aliare
+48-27 akituweny 15-15 akiyen
+75-77 akulakan 2-18 alidet
+48-14 akituwenyi- 52-20 akiyen
+21-11 akulaun 33-12 aliel
+tuwenyikin 60-07
+22-03
+43-18 aliyet
+52-22 akituwarakin 61-79
+47-28 akulep 75-31 alilim
+30-34 akityak 62-01
+54-19
+75-28
+53-14 36-33 akiyeng
+5-04 akululii
+62-28 52-01 akiyeny
+4-03 akung 57-32
+47-12 akityek 41-14 akiyep
+13-17 akuaa 68-15 alimait
+62-26 akikuuko 24-14 akiyet
+43-08 akuta 50-06 alimun
+22-17 akiumakin 48-24 akiyetiyataara 45-03 akuram
+31-13 alimokin
+17-16 akiunikare 8-15 akiyok
+24-24 akure 50-19
+7-05 akiyuni 31-16
+23-02 akurum 50-60
+51-16 akiunya 34-58
+56-06 akurwor 50-21 alimor
+13-20 akiurut 56-23
+57-27 akuryan 50-23
+30-02 akuit 8-09 akiyokuun
+43-08 akuta 50-06 alimun
+61-59 58-13 akiyookin
+23-02 akutam 50-34
+33-11 akiuwa 45-51 akiyotokin
+69-37 akutar 2-13 alipong
+61-43 45-51 akiyotor
+15-08 akuun 80-05 aliwae
+61-44 45-51 akiyotun
+22-07 72-45 aliwar
+15-01 akiwa 62-05 akodakin
+26-34 akuwap 77-05 aliwor
+61-32 akiwaakin 62-08
+71-15 36-26 alokakin
+61-56 51-06 akodangole
+78-07
+68-36 5-01 akiot
+6-37 akuwat 17-26 alokin
+7-14 akiavad 30-10
+41-33 akuyen 43-17
+60-22 akival 53-38 akoko
+74-02 akwaar 61-39
+60-22 akivalakin 71-04 akokor
+70-08 akwaare 75-83 alolom
+22-06 akivalar 71-05
+74-07 63-25 alolomer
+69-09 39-13 akokorokit
+2-01 akwan 54-01 alomar (n)
+69-25 20-19 akoli
+20-06 akwangat 46-16 alomar (v)
+11-01 akiwan 6-37 akolikoli
+68-08 akwanger 72-39
+39-34 akiwangang 23-14 akolo
+68-06 akwings 74-26 alonyaket
+36-04 akiwap 69-03 akolong
+36-20 akwara 47-05 alonyakin
+46-31 31-28 akolup
+63-16 akwoner 47-11
+15-11 akiwasakin 26-28 akom
+75-47
+19-19 41-31
+57-05 akyana 46-04 alotokin
+19-19 akiwasar 35-12 akomolo
+57-06 akyen 45-59 alotor
+60-19 akiwat 22-14 akonere
+54-54 akuyur 80-03 alu
+49-07 akiwatawataar 41-45
+69-36
+53-36 akiweikin 1-1 akong
+23-03 akuyuryet 37-06 alugur
+45-01 akixo 2-10 akooki
+35-02 akuyt 37-06 alugurokin
+46-54 30-06 akocomar
+26-31 alaar 26-15 alugurun
+22-23 akiwod 49-16 akoomeemoyot 34-61 alacakin 72-22 alukat
+23-17 30-03 akoota
+56-08 alukun
+40-05 71-06 akope
+61-80 50-33 alyoko
+22-23 akiwok 1 39-22 akopiro
+17-06 alacar 50-34 alyokon
+23-17 51-06
+62-02 50-34 alyokoner
+49-14 55-13 akopit
+63-20 50-54
+61-23 akiwok 2 20-23 akopot
+56-17 alacun 79-14 ama
+54-14 akiwol 59-44 akorakin
+61-57 58-18 amacar
+61-77 akiwolor 6-46 akorimeu
+20-04 alagama 68-26
+49-12 akiwon 24-22 akoro
+34-68 alakakin 42-12 amacungat
+72-20 51-
+
+
+---
+
+
+52-09 akiturumukin 7-14 akiyangar
+66-13 akudokinet 45-53 alegerikin
+70-17 akituruore 15-18 akiyar
+60-01 akuj 13-08 alekun
+45-46 akituryakikin 9-05 akiyar
+69-02 72-28 alel
+18-15 akitutore 33-05 akiyakin
+49-16 akuja 61-15 alemun
+61-01 akituturyare 7-27 akiyakin
+43-11 akujuk 61-59
+13-09 akitwuiryor 59-37 akiyatakin
+8-25 akukuny 26-36 alepyet
+63-22 akituuryanuun 59-42 akiyatakin
+8-25 akukunyuu 80-03 ali
+15-28 akituwa 14-09 akiyegayega 45-13 akukuriyor
+29-36 aliakat
+47-50 akituwarakin 61-93 akiyeliyel 39-13 akukut
+37-07 aliare
+48-27 akituweny 15-15 akiyen
+75-77 akulakan 2-18 alidet
+48-14 akituwenyi- 52-20 akiyen
+21-11 akulaun 33-12 aliel
+tuwenyikin 60-07
+22-03
+43-18 aliyet
+52-22 akituwarakin 61-79
+47-28 akulep 75-31 alilim
+30-34 akityak 62-01
+54-19
+75-28
+53-14 36-33 akiyeng
+5-04 akululii
+62-28 52-01 akiyeny
+4-03 akung 57-32
+47-12 akityek 41-14 akiyep
+13-17 akuaa 68-15 alimait
+62-26 akikuuko 24-14 akiyet
+43-08 akuta 50-06 alimun
+22-17 akiumakin 48-24 akiyetiyataara 45-03 akuram
+31-13 alimokin
+17-16 akiunikare 8-15 akiyok
+24-24 akure 50-19
+7-05 akiyuni 31-16
+23-02 akurum 50-60
+51-16 akiunya 34-58
+56-06 akurwor 50-21 alimor
+13-20 akiurut 56-23
+57-27 akuryan 50-23
+30-02 akuit 8-09 akiyokuun
+43-08 akuta 50-06 alimun
+61-59 58-13 akiyookin
+23-02 akutam 50-34
+33-11 akiuwa 45-51 akiyotokin
+69-37 akutar 2-13 alipong
+61-43 45-51 akiyotor
+15-08 akuun 80-05 aliwae
+61-44 45-51 akiyotun
+22-07 72-45 aliwar
+15-01 akiwa 62-05 akodakin
+26-34 akuwap 77-05 aliwor
+61-32 akiwaakin 62-08
+71-15 36-26 alokakin
+61-56 51-06 akodangole
+78-07
+68-36 5-01 akiot
+6-37 akuwat 17-26 alokin
+7-14 akiavad 30-10
+41-33 akuyen 43-17
+60-22 akival 53-38 akoko
+74-02 akwaar 61-39
+60-22 akivalakin 71-04 akokor
+70-08 akwaare 75-83 alolom
+22-06 akivalar 71-05
+74-07 63-25 alolomer
+69-09 39-13 akokorokit
+2-01 akwan 54-01 alomar (n)
+69-25 20-19 akoli
+20-06 akwangat 46-16 alomar (v)
+11-01 akiwan 6-37 akolikoli
+68-08 akwanger 72-39
+39-34 akiwangang 23-14 akolo
+68-06 akwings 74-26 alonyaket
+36-04 akiwap 69-03 akolong
+36-20 akwara 47-05 alonyakin
+46-31 31-28 akolup
+63-16 akwoner 47-11
+15-11 akiwasakin 26-28 akom
+75-47
+19-19 41-31
+57-05 akyana 46-04 alotokin
+19-19 akiwasar 35-12 akomolo
+57-06 akyen 45-59 alotor
+60-19 akiwat 22-14 akonere
+54-54 akuyur 80-03 alu
+49-07 akiwatawataar 41-45
+69-36
+53-36 akiweikin 1-1 akong
+23-03 akuyuryet 37-06 alugur
+45-01 akixo 2-10 akooki
+35-02 akuyt 37-06 alugurokin
+46-54 30-06 akocomar
+26-31 alaar 26-15 alugurun
+22-23 akiwod 49-16 akoomeemoyot 34-61 alacakin 72-22 alukat
+23-17 30-03 akoota
+56-08 alukun
+40-05 71-06 akope
+61-80 50-33 alyoko
+22-23 akiwok 1 39-22 akopiro
+17-06 alacar 50-34 alyokon
+23-17 51-06
+62-02 50-34 alyokoner
+49-14 55-13 akopit
+63-20 50-54
+61-23 akiwok 2 20-23 akopot
+56-17 alacun 79-14 ama
+54-14 akiwol 59-44 akorakin
+61-57 58-18 amacar
+61-77 akiwolor 6-46 akorimeu
+20-04 alagama 68-26
+49-12 akiwon 24-22 akoro
+34-68 alakakin 42-12 amacungat
+72-20 51-
+
+
+---
+
+
+34-19 ekoroi
+35-54 ekosim
+35-50 ekosowan
+40-35 ekoutan
+20-22 ekude
+47-27 ekue
+35-18 ekue
+43-03 ekukor
+40-26 ekukurit
+39-13 ekukut
+75-78 ekulakit
+5-30 ekulam
+6-05 ekulo
+30-05 ekuma
+1-17 ekume
+62-04 ekunyuk
+48-03 ekuron
+25-05 ekuroura
+49-02 ekurudo
+39-10 ekuruk
+3-16 ekurunyunu
+6-16 ekurur
+12-12 ekuruvu
+40-47 ekurut
+51-06 ekurrui
+69-32 ekuwam
+69-40 ekwana
+66-08 ekwas
+66-13 ekwari
+56-14 ekwori
+22-18 ekyaala
+1-24 ekyalai
+20-04 ekyno
+34-41 elaabo
+28-08 laak
+40-41 lacit
+20-24 ladlo
+6-41 elagamit
+54-05 elain
+35-05 elala
+53-23 elalak
+59-31 elalam
+25-07 elalam
+51-00 elamoru
+52-02 elamit
+60-18 elamot
+37-13 elap
+69-04 elat
+74-17 elat
+22-31 elapat
+12-06 elblelib
+9-08 elekes
+72-08 elelya
+43-13 elemet
+23-02 elepit
+34-44 elepot
+9-14 eleput
+12-15 elepunait
+35-59 eles
+56-28 eli
+11-06 elibokok
+74-58 eliel
+75-27 elilim
+70-23 eliling
+35-47 elob
+69-15 eloc
+69-23 elok
+36-25 eloit
+67-16 elona
+54-25 elope
+16-32 eloro
+7-31 elos
+30-14 eloto
+35-32 elou
+30-33 eloupotis
+47-36 elupe
+1-33 elute
+3-12 emagerit
+1-32 emagorolt
+35-09 emaanik
+40-26 emaase
+25-23 emaato
+11-05 emacar
+10-10 emaati
+40-12 emelegi
+36-13 emali
+81-15 emam
+35-40 emiri
+60-06 emisikit
+16-09 emitina
+25-18 emodoli
+54-47 emogam
+54-10 emoit
+51-07 emoramu
+6-32 emokonyit
+9-26 emolot
+75-25 emona
+34-14 emong
+51-08 emor
+2-27 emonire
+37-03 emorotot
+71-01 emoru
+1-34 emosing
+31-09 emout
+42-03 emucle
+74-41 emuju
+37-04 emuny
+73-01 emunyen
+15-24 emuron
+15-31 emurin
+71-07 emurya
+18-03 emus
+20-10 emus
+54-09 emusugut
+18-03 emutu
+25-17 emudut
+42-19 emuwa
+79-09 en
+5-29 engalura
+73-07 engangame
+6-39 engaretanit
+35-07 engatuny
+75-58 engingi
+6-35 engobot
+75-42 enknot
+75-40 ennik
+12-20 enomokere
+16-12 enomokere
+41-01 enyait
+6-11 enyamu
+6-20 enyam
+72-06 erus
+74-02 erwait
+74-01 esa
+13-11 esali
+66-03 esal
+47-14 enyundu
+54-28 epai
+42-23 epaipai
+34-01 epaka
+75-36 epalag
+42-21 epamba
+43-05 epananga
+47-20 epata
+75-55 epatana
+2-22 epateit
+6-23 epe
+20-03 epedeit
+42-04 epeipei
+54-27 epeiyononi
+40-50 epele
+26-30 epeom
+27-10 epeo
+25-02 epena
+1-30 epenek
+35-19 epeot
+6-05 epererekuna
+21-14 epilipili
+48-07 epipot
+27-09 epir
+51-20 epira
+35-29 epiri
+78-03 epite
+73-08 epokor
+56-04 epolisit
+34-64 epone
+1-31 epooli
+1-28 epooli
+5-16 epototo
+1-18 epuke
+26-27 epura
+50-45 epuri
+21-07 epurot
+34-27 epurit
+35-27 epute
+38-06 epute
+9-15 eramatau
+2-07 eraram
+54-45 ere
+1-08 ereet
+26-03 ereges
+41-56 ereg
+22-16 ereng
+41-04 erikopus
+81-18 eringa
+13-18 erirae
+35-10 eris
+40-50 eritanit
+23-12 erite
+81-18 eroko
+47-29 erokony
+75-04 erono
+24-23 erony
+55-14 erot
+46-69 erot
+46-73 erot
+54-29 erukutosi
+35-40 erunye
+74-25 erupe
+74-02 eruwait
+74-01 esa
+13-11 esali
+66-03 esal
+6-49 es
+79-05 esi
+20-25 esia
+30-33 esiongigidigit
+2-11 esidepipede
+6-16 esidongoror
+37-15 esigirait
+1-35 esigirigir
+34-26 esikina
+2-08 esingiremem
+6-59 esingiremem
+34-59 esipanit
+40-13 esipirany
+32-06 esorokit
+21-18 esukari
+54-44 esukuli
+2-04 esulot
+47-21 esumari
+40-21 esunonait
+33-13 esuro
+40-38 esuroot
+7-04 esuruma
+21-20 etaba
+42-09 etali
+6-09 etangarubobo
+72-30 etaraja
+29-36 etatait
+4-11 etau
+5-14 etau
+72-09 etau
+55-02 etali
+72-11 etele
+
+
+---
+
+
+50-01 etoil
+61-30 etokole
+1-38 etole
+70-09 etolim
+35-24 etom
+12-08 etomitmit
+30-1 etoolo
+53-04 etool
+69-10 etop
+72-04 etoro
+58-19 etorube
+70-09 etor
+2-25 etout
+12-11 etubukai
+6-56 etudeit
+35-31 etuko
+6-56 etuli
+48-05 etulya
+16-14 etune
+2-3 etupanit
+10-03 etuuwai
+23-04 etwo
+42-11 etu
+26-01 etyam
+35-23 euce
+74-16 euiki
+5-17 euko
+41-66 eukwai
+35-06 eula
+25-06 eununy
+25-23 eunuka
+9-22 euremem
+16-30 euriana
+75-45 euriana
+1-03 eutune
+35-49 ewapet
+53-23 ewoi
+75-13 ewoi
+75-43 ewoi
+17-01 eworu
+18-06 ewosin
+74-42 eyanyo
+79-11 i
+74-44 ibelokunoi
+40-01 ibore
+78-01 ibor
+47-06 iborosit
+78-01 igelit
+79-11 igi
+34-04 iingok
+74-40 ikaika
+39-01 ikeny
+46-68 ikoni
+29-48 ikoki
+29-26 ikoku
+31-07 ikon
+78-05 ikoni
+78-06 ikon
+67-44 ikwakaie
+79-15 inaa
+74-41 ipoongamoti
+1-16 itask
+34-17 itask
+39-20 itapin
+43-28 itapin
+81-02 iteni
+29-07 ito
+30-30 itungunan
+32-01 itwan
+79-02 iyong
+74-15 jiik
+74-86 jite
+35-23 jite
+80-08 kainyo
+66-1 kaku
+67-02 kaku
+67-17 kaku
+81-09 kaneni
+29-01 kang
+82-05 kaperobo
+29-06 kec
+79-06 kec
+74-43 kejotooroi
+29-03 keng
+82-05 kibirobo
+69-41 kide
+26-36 kiding
+59-48 kiding
+67-03 kiding
+67-04 kiding
+39-02 kidomeryo
+82-05 kidongorobo
+3-04 kidyama
+26-24 kidyama
+66-09 kisina
+80-04 koab
+80-09 koani
+35-23 koaas
+74-19 kolong
+74-20 kolong
+29-02 kon
+29-04 kosi
+81-03 kote
+80-08 koterinyo
+40-49 kotili
+69-43 kuju
+72-13 kusu
+39-02 kuuri
+39-03 kuurinaemoru
+9-17 kalam
+79-11 kwa
+26-20 kwap
+67-06 kwe
+69-44 kwe
+72-15 kwe
+73-01 kwe
+79-11 kwi
+81-06 kya
+79-09 lo
+9-32 lobai
+16-15 lobibolyo
+30-33 lobunat
+9-27 lobuhute
+29-45 locit
+74-56 locoto
+74-54 lodunge
+79-09 logo
+9-19 logoorol
+16-16 lojaala
+37-12 lokaacal
+29-44 lokaama
+81-06 lokajokon
+29-30 lokapa
+29-44 lokapet
+29-30 lokato
+29-44 lokatiya
+47-49 lokaceet
+16-13 lokaima
+9-28 lokid
+16-06 lokipi
+16-17 lokit
+43-08 lokitaet
+16-19 lokiyi
+16-23 lokoit
+29-27 lokoku
+29-45 lokolitak
+37-04 lokolitak
+35-13 lokotoj
+74-53 lokwang
+1-26 lokyalangok
+16-18 loleeo
+9-33 loleewa
+16-10 lolem
+43-13 lolemet
+74-61 lolon
+9-18 loamaizei
+9-34 lomagali
+9-30 lomalitenyit
+16-26 lomaruk
+9-37 lomeekin
+40-37 lomodokongori
+9-21 lomerit
+6-51 lomokin
+30-20 lomu
+74-64 lomuk
+40-14 lomuwar
+16-16 longarurei
+40-39 longiset
+35-51 lononua
+5-18 lonya
+16-21 lonyang
+16-11 lookot
+16-27 loongoricuno
+16-21 lopid
+14-82 lopo
+74-63 lora
+9-24 lortivo
+40-15 losikiria
+74-59 losuban
+40-30 loter
+74-05 lotingilan
+74-36 lopo
+16-07 lotorobo
+74-60 lotyak
+16-24 loukoi
+9-26 loupe
+37-01 loupoli
+16-20 loutokonyen
+29-45 loyeyait
+16-25 loyoduka
+79-09 lugu
+79-09 lugu
+81-16 makei
+82-02 mam
+9-35 marin
+82-03 meere
+26-13 moding
+74-13 moi
+79-09 na
+37-10 naatuk
+74-88 nabo
+39-07 nabobokile
+29-46 naceni
+79-09 naga
+35-15 nagira
+29-44 nakaamai
+29-47 nakain
+30-24 nakapa
+29-44 nakeiya
+6-12 nakibony
+6-19 nakibuk
+6-30 nakodoso
+29-28 nakoku
+29-46 nakud
+35-17 nakulo
+37-04 namuduka
+30-21 namui
+30-22 namu
+30-23 namugali
+39-09 nanyamacin
+56-04 nanyangakoti
+39-09 napele
+35-16 napupu
+73-16 naroo
+16-28 nasowin
+29-46 nayeyait
+79-12 nayi
+79-13 neni
+80-10 ngaai
+5-11 ngaakot
+59-02 ngaarei
+34-12 ngaatuk
+26-17 ngabaan
+11-08 ngabul
+
+
+---
+
+
+1. ONITA
+74-12 tete
+75-11 njam
+74-09 njamatan
+67-11 titima
+80-08 njamajamachon
+67-08 njamajamachon
+74-17 tokona
+80-08 njabeng'
+67-08 njabonon
+74-17 tokona
+69-42 too
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 njabonon
+74-17 tokona
+69-42 too
+74-12 tete
+75-11 titima
+80-08 n
+
+
+---
+
+

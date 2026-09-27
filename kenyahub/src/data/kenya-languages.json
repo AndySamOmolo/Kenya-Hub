@@ -16,7 +16,7 @@
     { "name": "Kisii (Ekegusii)", "family": "bantu", "speakers": 2700000, "counties": ["Kisii", "Nyamira"], "notes": "Kisii Highlands. Known for soapstone carving." },
     { "name": "Meru (Kĩmĩĩrũ)", "family": "bantu", "speakers": 2000000, "counties": ["Meru", "Tharaka-Nithi"], "notes": "Mt. Kenya eastern slopes. Several sub-dialects." },
     { "name": "Maasai (Maa)", "family": "nilotic", "speakers": 1200000, "counties": ["Narok", "Kajiado", "Samburu (Samburu dialect)"], "notes": "Plains Nilotes. Pastoralist culture. Samburu is a closely related dialect." },
-    { "name": "Turkana", "family": "nilotic", "speakers": 1100000, "counties": ["Turkana"], "notes": "Plains Nilotes. Pastoralist. Largest county by area." },
+    { "name": "Turkana (Ng'aturukana)", "family": "nilotic", "speakers": 1100000, "counties": ["Turkana"], "notes": "Plains Nilotes (Eastern Nilotic). Semi-nomadic pastoralists. Spoken across Turkana County in northwestern Kenya. Rich pastoralist vocabulary and oral traditions." },
     { "name": "Embu (Kĩembu)", "family": "bantu", "speakers": 580000, "counties": ["Embu"], "notes": "Mt. Kenya southeastern slopes. Related to Kikuyu and Meru." },
     { "name": "Taita (Kidawida)", "family": "bantu", "speakers": 410000, "counties": ["Taita-Taveta"], "notes": "Taita Hills. Three main dialects: Dawida, Sagala, Kasigau." },
     { "name": "Swahili (Kiswahili)", "family": "bantu", "speakers": 15000000, "counties": ["Mombasa", "Lamu", "Kilifi", "Kwale", "Tana River"], "notes": "National & official language. Native along the coast but spoken nationwide as lingua franca." },

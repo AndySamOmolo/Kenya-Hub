@@ -1,4 +1,5 @@
 import { LUO_CONFIG, LUO_UNITS } from "./luo/course";
+import { TURKANA_CONFIG, TURKANA_UNITS } from "./turkana/course";
 import type { CourseUnit, LanguageConfig } from "./types";
 import { validateCourse, type CourseValidationIssue } from "./validation";
 
@@ -15,6 +16,12 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     units: LUO_UNITS,
     ready: true,
     validationIssues: validateCourse(LUO_UNITS),
+  },
+  turkana: {
+    config: TURKANA_CONFIG,
+    units: TURKANA_UNITS,
+    ready: true,
+    validationIssues: validateCourse(TURKANA_UNITS),
   },
 };
 
