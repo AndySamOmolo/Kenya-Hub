@@ -6,7 +6,7 @@ import { useState, useMemo, useCallback, useEffect } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
-import { Repeat, BarChart, BookOpen, Dices, Folder, Search, Hash } from "lucide-react";
+import { Repeat, BarChart, BookOpen, Dices, Folder, Search, Hash, Plus, X, Check, Send, Sparkles } from "lucide-react";
 
 // Import all dictionaries
 import swahiliDict from "@/data/dictionaries/swahili.json";
@@ -24,6 +24,7 @@ import mijikendaDict from "@/data/dictionaries/mijikenda.json";
 
 // Import language metadata for "coming soon" languages
 import langData from "@/data/kenya-languages.json";
+import { addContribution } from "@/lib/contributions";
 
 const tool = TOOLS.find((t) => t.slug === "kenyan-translator")!;
 
@@ -89,6 +90,15 @@ const FAMILY_COLORS: Record<string, string> = {
   other: "#1A8BD1",
 };
 
+const CONTACT_EMAIL = "andysamonyango@gmail.com";
+
+const ALL_CONTRIBUTE_LANGUAGES = Array.from(
+  new Set([
+    ...ALL_DICTS.map((d) => d.languageName.split("(")[0].trim()),
+    ...COMING_SOON_LANGUAGES.map((l) => l.name.split("(")[0].trim()),
+  ])
+).sort();
+
 // All category IDs across all languages (unique, in order)
 const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [];
 const seenCats = new Set<string>();
@@ -127,6 +137,102 @@ export default function KenyanTranslatorPage() {
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
+
+  // ─── Contribute Modal State ───
+  const [isContributeOpen, setIsContributeOpen] = useState(false);
+  const [contributeLanguage, setContributeLanguage] = useState("Swahili");
+  const [contributeType, setContributeType] = useState<"new_word" | "correction" | "pronunciation" | "reviewer">("new_word");
+  const [contributeEnglish, setContributeEnglish] = useState("");
+  const [contributeTranslation, setContributeTranslation] = useState("");
+  const [contributePronunciation, setContributePronunciation] = useState("");
+  const [contributeContext, setContributeContext] = useState("");
+  const [contributorName, setContributorName] = useState("");
+  const [contributorEmail, setContributorEmail] = useState("");
+  const [contributeSubmitted, setContributeSubmitted] = useState(false);
+  const [contributeCopied, setContributeCopied] = useState(false);
+
+  const openContributeModal = useCallback((langName?: string, defaultEnglish?: string) => {
+    if (langName) setContributeLanguage(langName.split("(")[0].trim());
+    if (defaultEnglish) setContributeEnglish(defaultEnglish);
+    setContributeSubmitted(false);
+    setContributeCopied(false);
+    setIsContributeOpen(true);
+  }, []);
+
+  const closeContributeModal = useCallback(() => {
+    setIsContributeOpen(false);
+    setContributeSubmitted(false);
+    setContributeCopied(false);
+  }, []);
+
+  const handleSubmitContribution = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!contributeLanguage) return;
+
+    // Save to KenyaHub contributions store for Admin Panel review & approval
+    try {
+      addContribution({
+        language: contributeLanguage,
+        type: contributeType,
+        english: contributeEnglish,
+        translation: contributeTranslation,
+        pronunciation: contributePronunciation,
+        context: contributeContext,
+        contributorName: contributorName || "Anonymous Contributor",
+        contributorEmail: contributorEmail,
+      });
+    } catch (err) {
+      console.error("Failed to add contribution:", err);
+    }
+
+    // Save locally as backup
+    try {
+      const saved = localStorage.getItem("kh-user-contributions");
+      const existing = saved ? JSON.parse(saved) : [];
+      const newEntry = {
+        id: Date.now().toString(),
+        language: contributeLanguage,
+        type: contributeType,
+        english: contributeEnglish,
+        translation: contributeTranslation,
+        pronunciation: contributePronunciation,
+        context: contributeContext,
+        contributorName: contributorName || "Anonymous Contributor",
+        contributorEmail: contributorEmail,
+        timestamp: new Date().toISOString(),
+      };
+      localStorage.setItem("kh-user-contributions", JSON.stringify([newEntry, ...existing]));
+    } catch { /* ignore */ }
+
+    // Optional mailto client fallback
+    const typeLabel =
+      contributeType === "new_word"
+        ? "New Word"
+        : contributeType === "correction"
+        ? "Correction"
+        : contributeType === "pronunciation"
+        ? "Pronunciation"
+        : "Native Reviewer";
+    const subjectLine = `[KenyaHub Translation Contribution - ${contributeLanguage}] ${contributeEnglish || typeLabel}`;
+    const bodyText = [
+      `Language: ${contributeLanguage}`,
+      `Contribution Type: ${typeLabel}`,
+      `English Term: ${contributeEnglish || "N/A"}`,
+      `Native Translation: ${contributeTranslation || "N/A"}`,
+      `Pronunciation Guide: ${contributePronunciation || "N/A"}`,
+      `Dialect / Context / Note: ${contributeContext || "N/A"}`,
+      ``,
+      `Contributor Name: ${contributorName || "Anonymous"}`,
+      `Email: ${contributorEmail || "N/A"}`,
+      ``,
+      `Submitted via Kenya-Hub Translator Module`,
+    ].join("\n");
+
+    const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(bodyText)}`;
+    window.location.href = mailtoUrl;
+
+    setContributeSubmitted(true);
+  };
 
   // Load recent searches and favorites from localStorage
   useEffect(() => {
@@ -501,8 +607,16 @@ export default function KenyanTranslatorPage() {
                     <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-8 h-8 text-text-muted" /></div>
                     <p className="text-sm font-medium text-text-primary mb-1">No translations found</p>
                     <p className="text-xs text-text-muted max-w-sm mx-auto">
-                      Try a different word or browse categories below. This dictionary is growing — your word may be added soon!
+                      Try a different word or browse categories below. You can also submit this word to help expand the dictionary!
                     </p>
+                    <button
+                      type="button"
+                      onClick={() => openContributeModal(targetDict?.languageName || "Swahili", searchQuery)}
+                      className="mt-3 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 hover:bg-gold/25 text-gold border border-gold/30 transition-all cursor-pointer"
+                    >
+                      <Plus className="w-3.5 h-3.5" />
+                      <span>Contribute &ldquo;{searchQuery}&rdquo; translation</span>
+                    </button>
                   </div>
                 )}
 
@@ -825,7 +939,17 @@ export default function KenyanTranslatorPage() {
                           )}
                         </div>
                       ) : (
-                        <p className="text-xs text-text-muted italic flex-1">Not in dictionary yet</p>
+                        <div className="flex-1 flex items-center justify-between gap-2">
+                          <p className="text-xs text-text-muted italic">Not in dictionary yet</p>
+                          <button
+                            type="button"
+                            onClick={() => openContributeModal(result.languageName, searchQuery)}
+                            className="text-[0.65rem] text-gold hover:text-gold-light bg-gold/10 hover:bg-gold/20 px-2 py-0.5 rounded font-medium transition-colors flex items-center gap-1 cursor-pointer"
+                          >
+                            <Plus className="w-3 h-3" />
+                            <span>Add translation</span>
+                          </button>
+                        </div>
                       )}
                       {result.entry && (
                         <button onClick={() => copyToClipboard(result.entry!.translation)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors flex-shrink-0">
@@ -861,11 +985,21 @@ export default function KenyanTranslatorPage() {
         {/* ═══════════════════════════════════════ */}
         {viewMode === "browse" && (
           <>
-            <div className="flex items-center justify-between gap-4 mb-2">
-              <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                All Languages ({ALL_DICTS.length} with dictionaries)
-              </h3>
-              <p className="text-[0.65rem] text-text-muted">{totalEntries} total words</p>
+            <div className="flex items-center justify-between gap-4 mb-3 flex-wrap">
+              <div>
+                <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                  All Languages ({ALL_DICTS.length} with dictionaries)
+                </h3>
+                <p className="text-[0.65rem] text-text-muted">{totalEntries} total words verified by contributors</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => openContributeModal()}
+                className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-all flex items-center gap-1.5 shadow-sm cursor-pointer"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>Contribute Vocabulary</span>
+              </button>
             </div>
 
             {/* Active Language Cards */}
@@ -875,35 +1009,59 @@ export default function KenyanTranslatorPage() {
                 const maxEntries = 120; // Swahili benchmark
                 const coverage = Math.min(100, (entryCount / maxEntries) * 100);
                 return (
-                  <button
+                  <div
                     key={dict.languageId}
-                    onClick={() => { setViewMode("translate"); setTargetLanguage(dict.languageId); setSourceLanguage("english"); }}
-                    className="bg-bg-card border border-border rounded-xl p-4 text-left group hover:border-gold/30 transition-all"
+                    className="bg-bg-card border border-border rounded-xl p-4 flex flex-col justify-between group hover:border-gold/30 transition-all"
                   >
-                    <div className="flex items-start justify-between gap-2 mb-2">
-                      <div>
-                        <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{dict.languageName}</h4>
-                        <div className="flex items-center gap-1.5 mt-0.5">
-                          <span className="w-2 h-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[dict.family] }} />
-                          <span className="text-[0.6rem] text-text-muted capitalize">{dict.family}</span>
-                          <span className="text-[0.5rem] text-text-muted">·</span>
-                          <span className="text-[0.6rem] text-text-muted">{(dict.speakerCount / 1000000).toFixed(1)}M speakers</span>
-                        </div>
+                    <div>
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <button
+                          type="button"
+                          onClick={() => { setViewMode("translate"); setTargetLanguage(dict.languageId); setSourceLanguage("english"); }}
+                          className="text-left group-hover:text-gold transition-colors cursor-pointer"
+                        >
+                          <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{dict.languageName}</h4>
+                          <div className="flex items-center gap-1.5 mt-0.5">
+                            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[dict.family] }} />
+                            <span className="text-[0.6rem] text-text-muted capitalize">{dict.family}</span>
+                            <span className="text-[0.5rem] text-text-muted">·</span>
+                            <span className="text-[0.6rem] text-text-muted">{(dict.speakerCount / 1000000).toFixed(1)}M speakers</span>
+                          </div>
+                        </button>
+                        <span className="text-xs font-bold text-gold">{entryCount}</span>
                       </div>
-                      <span className="text-xs font-bold text-gold">{entryCount}</span>
+                      <p className="text-[0.6rem] text-text-muted mb-2">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
+                      <div className="flex flex-wrap gap-1 mb-2">
+                        {dict.categories.map((cat) => (
+                          <span key={cat.id} className="text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.entries.length}</span>
+                        ))}
+                      </div>
+                      {/* Coverage bar */}
+                      <div className="h-1 bg-bg-elevated rounded-full overflow-hidden">
+                        <div className="h-full rounded-full transition-all" style={{ width: `${coverage}%`, backgroundColor: FAMILY_COLORS[dict.family] }} />
+                      </div>
+                      <p className="text-[0.55rem] text-text-muted mt-1">{Math.round(coverage)}% coverage</p>
                     </div>
-                    <p className="text-[0.6rem] text-text-muted mb-2">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
-                    <div className="flex flex-wrap gap-1 mb-2">
-                      {dict.categories.map((cat) => (
-                        <span key={cat.id} className="text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.entries.length}</span>
-                      ))}
+
+                    <div className="flex items-center justify-between gap-2 mt-3 pt-2.5 border-t border-border/60">
+                      <button
+                        type="button"
+                        onClick={() => { setViewMode("translate"); setTargetLanguage(dict.languageId); setSourceLanguage("english"); }}
+                        className="text-[0.65rem] font-medium text-text-secondary hover:text-gold flex items-center gap-1 transition-colors cursor-pointer"
+                      >
+                        <span>Translate</span>
+                        <span>→</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => openContributeModal(dict.languageName)}
+                        className="text-[0.65rem] font-medium text-gold hover:text-gold-light bg-gold/10 hover:bg-gold/20 px-2.5 py-1 rounded-md transition-colors flex items-center gap-1 cursor-pointer"
+                      >
+                        <Plus className="w-3 h-3" />
+                        <span>Contribute</span>
+                      </button>
                     </div>
-                    {/* Coverage bar */}
-                    <div className="h-1 bg-bg-elevated rounded-full overflow-hidden">
-                      <div className="h-full rounded-full transition-all" style={{ width: `${coverage}%`, backgroundColor: FAMILY_COLORS[dict.family] }} />
-                    </div>
-                    <p className="text-[0.55rem] text-text-muted mt-1">{Math.round(coverage)}% coverage</p>
-                  </button>
+                  </div>
                 );
               })}
             </div>
@@ -911,21 +1069,36 @@ export default function KenyanTranslatorPage() {
             {/* Coming Soon Languages */}
             {COMING_SOON_LANGUAGES.length > 0 && (
               <div className="mt-6">
-                <h3 className="text-sm font-bold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-                  Coming Soon — Help Us Build These Dictionaries
-                </h3>
+                <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
+                  <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                    Coming Soon — Help Us Build These Dictionaries
+                  </h3>
+                  <span className="text-[0.65rem] text-gold bg-gold/10 px-2 py-0.5 rounded-full font-medium">
+                    Native speakers wanted
+                  </span>
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                   {COMING_SOON_LANGUAGES.map((lang) => (
-                    <div key={lang.name} className="bg-bg-card border border-border/50 rounded-xl p-3 opacity-70">
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="w-2 h-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[lang.family] }} />
-                        <h4 className="text-xs font-medium text-text-secondary">{lang.name}</h4>
+                    <div key={lang.name} className="bg-bg-card border border-border/50 hover:border-gold/30 rounded-xl p-3 transition-all flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="w-2 h-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[lang.family] }} />
+                          <h4 className="text-xs font-semibold text-text-primary">{lang.name}</h4>
+                        </div>
+                        <p className="text-[0.6rem] text-text-muted">
+                          {(lang.speakers / 1000000).toFixed(1)}M speakers · {lang.counties.slice(0, 2).join(", ")}
+                        </p>
                       </div>
-                      <p className="text-[0.6rem] text-text-muted">
-                        {(lang.speakers / 1000000).toFixed(1)}M speakers · {lang.counties.slice(0, 2).join(", ")}
-                      </p>
-                      <div className="mt-2 flex items-center gap-1.5">
-                        <span className="text-[0.55rem] bg-gold/10 text-gold px-2 py-0.5 rounded-full font-medium">Contribute →</span>
+                      <div className="mt-2.5 pt-2 border-t border-border/40 flex items-center justify-between gap-1">
+                        <span className="text-[0.55rem] text-text-muted">Needs seed words</span>
+                        <button
+                          type="button"
+                          onClick={() => openContributeModal(lang.name)}
+                          className="text-[0.65rem] bg-gold text-kenya-black hover:bg-gold-light font-semibold px-2.5 py-1 rounded-md transition-colors flex items-center gap-1 cursor-pointer shadow-sm"
+                        >
+                          <Plus className="w-3 h-3" />
+                          <span>Contribute</span>
+                        </button>
                       </div>
                     </div>
                   ))}
@@ -965,6 +1138,276 @@ export default function KenyanTranslatorPage() {
         </div>
 
       </div>
+
+      {/* ═══════════════════════════════════════ */}
+      {/* ── CONTRIBUTE MODAL ── */}
+      {/* ═══════════════════════════════════════ */}
+      {isContributeOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-kenya-black/80 backdrop-blur-sm p-4 overflow-y-auto"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) closeContributeModal();
+          }}
+        >
+          <div className="bg-bg-card border border-border rounded-2xl w-full max-w-lg p-5 sm:p-6 shadow-2xl relative my-auto animate-in fade-in zoom-in-95 duration-150">
+            <button
+              type="button"
+              onClick={closeContributeModal}
+              className="absolute top-4 right-4 w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center text-text-muted hover:text-text-primary transition-colors cursor-pointer"
+              title="Close"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            {!contributeSubmitted ? (
+              <form onSubmit={handleSubmitContribution} className="space-y-4">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2 h-2 rounded-full bg-gold" />
+                    <span className="text-[0.65rem] uppercase tracking-wider text-gold font-bold">Community Linguistic Contribution</span>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                    Contribute to {contributeLanguage}
+                  </h3>
+                  <p className="text-xs text-text-muted mt-0.5">
+                    Help expand KenyaHub&apos;s open dictionaries. All submitted vocabulary is reviewed and approved in the admin panel.
+                  </p>
+                </div>
+
+                {/* Contribution Type Selector */}
+                <div>
+                  <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                    Contribution Type
+                  </label>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+                    {[
+                      { id: "new_word" as const, label: "New Word" },
+                      { id: "correction" as const, label: "Correction" },
+                      { id: "pronunciation" as const, label: "Pronounce" },
+                      { id: "reviewer" as const, label: "Volunteer" },
+                    ].map((type) => (
+                      <button
+                        key={type.id}
+                        type="button"
+                        onClick={() => setContributeType(type.id)}
+                        className={`px-2 py-1.5 rounded-lg text-xs font-medium text-center transition-all cursor-pointer ${
+                          contributeType === type.id
+                            ? "bg-gold text-kenya-black font-semibold shadow-sm"
+                            : "bg-bg-elevated border border-border text-text-secondary hover:text-text-primary"
+                        }`}
+                      >
+                        {type.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Language Selection */}
+                <div>
+                  <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                    Target Language
+                  </label>
+                  <CustomSelect
+                    value={contributeLanguage}
+                    onChange={setContributeLanguage}
+                    options={[
+                      ...ALL_CONTRIBUTE_LANGUAGES.map((l) => ({ value: l, label: l })),
+                      { value: "Other", label: "Other Kenyan Language..." },
+                    ]}
+                    id="contribute-lang"
+                  />
+                </div>
+
+                {contributeType !== "reviewer" ? (
+                  <>
+                    {/* English Term */}
+                    <div>
+                      <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                        English Word or Phrase <span className="text-kenya-red">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={contributeEnglish}
+                        onChange={(e) => setContributeEnglish(e.target.value)}
+                        placeholder="e.g. Water, Hello, Peace, How are you?"
+                        className="input-field text-sm w-full"
+                      />
+                    </div>
+
+                    {/* Native Translation */}
+                    <div>
+                      <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                        {contributeLanguage} Translation <span className="text-kenya-red">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={contributeTranslation}
+                        onChange={(e) => setContributeTranslation(e.target.value)}
+                        placeholder={`Word or phrase in ${contributeLanguage}...`}
+                        className="input-field text-sm w-full"
+                      />
+                    </div>
+
+                    {/* Pronunciation & Context */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      <div>
+                        <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                          Pronunciation (Optional)
+                        </label>
+                        <input
+                          type="text"
+                          value={contributePronunciation}
+                          onChange={(e) => setContributePronunciation(e.target.value)}
+                          placeholder="e.g. eh-johk, mah-jee"
+                          className="input-field text-xs w-full"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                          County / Dialect (Optional)
+                        </label>
+                        <input
+                          type="text"
+                          value={contributeContext}
+                          onChange={(e) => setContributeContext(e.target.value)}
+                          placeholder="e.g. Turkana North dialect"
+                          className="input-field text-xs w-full"
+                        />
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <div className="bg-bg-elevated border border-border rounded-xl p-3 text-xs text-text-secondary leading-relaxed space-y-2">
+                    <p>
+                      <strong className="text-gold">Native Speaker / Reviewer Program:</strong> Are you fluent in {contributeLanguage}?
+                      Help verify translations and build authentic vocabulary, audio, and grammar lessons.
+                    </p>
+                    <div>
+                      <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                        Dialect / Region &amp; Background
+                      </label>
+                      <textarea
+                        value={contributeContext}
+                        onChange={(e) => setContributeContext(e.target.value)}
+                        rows={2}
+                        placeholder={`Tell us about your background or regional dialect in ${contributeLanguage}...`}
+                        className="input-field text-xs w-full"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Contributor Info */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 border-t border-border/60">
+                  <div>
+                    <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                      Your Name / Handle (for Credit)
+                    </label>
+                    <input
+                      type="text"
+                      value={contributorName}
+                      onChange={(e) => setContributorName(e.target.value)}
+                      placeholder="e.g. Akeno L., Kiprop, Anon"
+                      className="input-field text-xs w-full"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                      Email Address (Optional)
+                    </label>
+                    <input
+                      type="email"
+                      value={contributorEmail}
+                      onChange={(e) => setContributorEmail(e.target.value)}
+                      placeholder="For attribution updates"
+                      className="input-field text-xs w-full"
+                    />
+                  </div>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex items-center justify-end gap-2 pt-2">
+                  <button
+                    type="button"
+                    onClick={closeContributeModal}
+                    className="px-3.5 py-2 rounded-lg text-xs font-medium text-text-muted hover:text-text-primary bg-bg-elevated hover:bg-border transition-colors cursor-pointer"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-4 py-2 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-all shadow-md flex items-center gap-1.5 cursor-pointer"
+                  >
+                    <Send className="w-3.5 h-3.5" />
+                    <span>Submit Contribution</span>
+                  </button>
+                </div>
+              </form>
+            ) : (
+              <div className="py-4 text-center space-y-4">
+                <div className="w-14 h-14 rounded-full bg-kenya-green/15 text-kenya-green-light flex items-center justify-center mx-auto">
+                  <Check className="w-7 h-7" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                    Asante Sana! Thank You!
+                  </h3>
+                  <p className="text-xs text-text-muted max-w-sm mx-auto mt-1 leading-relaxed">
+                    Your contribution for <strong className="text-gold">{contributeLanguage}</strong> has been submitted to the admin panel for review and saved on this device.
+                  </p>
+                </div>
+
+                <div className="bg-bg-elevated border border-border rounded-xl p-3.5 text-left text-xs space-y-1.5 max-w-md mx-auto">
+                  <p className="text-[0.65rem] uppercase tracking-wider text-gold font-bold">Contribution Summary</p>
+                  <p><span className="text-text-muted">Language:</span> <strong className="text-text-primary">{contributeLanguage}</strong></p>
+                  {contributeEnglish && <p><span className="text-text-muted">English:</span> <span className="text-text-primary">{contributeEnglish}</span></p>}
+                  {contributeTranslation && <p><span className="text-text-muted">Translation:</span> <span className="text-gold font-bold">{contributeTranslation}</span></p>}
+                  {contributePronunciation && <p><span className="text-text-muted">Pronunciation:</span> <span className="italic text-text-muted">/{contributePronunciation}/</span></p>}
+                  <p><span className="text-text-muted">Attribution:</span> <span className="text-text-primary">{contributorName || "Anonymous Contributor"}</span></p>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const summary = `KenyaHub Language Contribution:\nLanguage: ${contributeLanguage}\nEnglish: ${contributeEnglish}\nTranslation: ${contributeTranslation}\nPronunciation: ${contributePronunciation}\nContributor: ${contributorName || "Anonymous"}`;
+                      navigator.clipboard.writeText(summary);
+                      setContributeCopied(true);
+                      setTimeout(() => setContributeCopied(false), 2000);
+                    }}
+                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-elevated border border-border text-text-secondary hover:text-gold transition-colors flex items-center gap-1.5 cursor-pointer"
+                  >
+                    {contributeCopied ? <Check className="w-3.5 h-3.5 text-kenya-green-light" /> : <DynamicIcon emoji="📋" className="w-3.5 h-3.5" />}
+                    <span>{contributeCopied ? "Copied!" : "Copy Summary"}</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setContributeEnglish("");
+                      setContributeTranslation("");
+                      setContributePronunciation("");
+                      setContributeContext("");
+                      setContributeSubmitted(false);
+                    }}
+                    className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-colors cursor-pointer"
+                  >
+                    Submit Another Word
+                  </button>
+                  <button
+                    type="button"
+                    onClick={closeContributeModal}
+                    className="px-3.5 py-1.5 rounded-lg text-xs font-medium text-text-muted hover:text-text-primary bg-bg-elevated transition-colors cursor-pointer"
+                  >
+                    Done
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </ToolShell>
   );
 }

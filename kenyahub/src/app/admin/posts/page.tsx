@@ -60,6 +60,9 @@ export default function AdminPostsPage() {
           <p className="text-text-muted">Manage your blog content</p>
         </div>
         <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+          <Link href="/admin/translations" className="btn-outline w-full sm:w-auto justify-center flex items-center gap-2">
+            <DynamicIcon emoji="🗣️" className="w-4 h-4" /> Translations
+          </Link>
           <Link href="/admin/settings" className="btn-outline w-full sm:w-auto justify-center flex items-center gap-2">
             <DynamicIcon emoji="⚙️" className="w-4 h-4" /> Settings
           </Link>
