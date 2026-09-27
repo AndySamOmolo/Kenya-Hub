@@ -1,6 +1,7 @@
 import { LUO_CONFIG, LUO_UNITS } from "./luo/course";
 import { TURKANA_CONFIG, TURKANA_UNITS } from "./turkana/course";
 import { LUHYA_CONFIG, LUHYA_UNITS } from "./luhya/course";
+import { KIKUYU_CONFIG, KIKUYU_UNITS } from "./kikuyu/course";
 import type { CourseUnit, LanguageConfig } from "./types";
 import { validateCourse, type CourseValidationIssue } from "./validation";
 
@@ -12,6 +13,12 @@ export interface CourseDefinition {
 }
 
 export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
+  kikuyu: {
+    config: KIKUYU_CONFIG,
+    units: KIKUYU_UNITS,
+    ready: true,
+    validationIssues: validateCourse(KIKUYU_UNITS),
+  },
   luo: {
     config: LUO_CONFIG,
     units: LUO_UNITS,

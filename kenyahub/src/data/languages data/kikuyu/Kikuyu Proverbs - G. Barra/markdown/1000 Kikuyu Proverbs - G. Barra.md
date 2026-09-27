@@ -1,0 +1,4806 @@
+# 1000 Kikuyu Proverbs - G. Barra.pdf
+
+## Page 1
+
+<!-- footer: KENYA LITERATURE BUREAU
+NAIROBI -->
+```text
+1,000
+KIKUYU PROVERBS
+With Translations and English Equivalents
+By
+G. BARRA, I.M.C.
+```
+
+## Page 2
+
+<!-- header: FOREWORD TO THE FIRST EDITION -->
+```text
+I am glad to offer this selection of Kikuyu proverbs to the young Akikuyu, makers of the future of the tribe.
+The proverbs are the quintessence of Kikuyu eloquence, and represented for centuries the code of tribal laws used for lack of written books. They are full of wisdom and embody the maxims of natural law ‘written by God in the heart of all men’. Therefore they are for the Akikuyu a precious inheritance, which must not be lost in the changes now taking place.
+At the same time I trust that this book will be welcomed by the Europeans living in contact with or working for the welfare of this tribe. They will find in the book the key for understanding the point of view and psychology of the Akikuyu.
+Kikuyu proverbs are endless. These were selected from collections made by several Consolata Fathers since the early years of the Mission and from lists supplied by Kikuyu teachers in response to a competition launched by the Mission’s monthly magazine Wathiomu Mükinyu.
+For each proverb there is given first the literal translation, followed when necessary by a short explanation of its meaning and application, and finally the English equivalent where one could be found.
+Although it might be found that certain proverbs are used in different ways and with different meanings, I have made certain that the commonest use has been given.
+I am greatly indebted to Mrs. D. Plum, B.Sc., for the revision of the translation and for checking the English equivalents.
+G. BARRA, I.M.C.
+Consolata Catholic Mission,
+Nyeri
+9 December 1939.
+```
+
+## Page 3 (printed: 1)
+
+<!-- header: 1,000 KIKUYU PROVERBS -->
+<!-- footer: 1 -->
+```text
+1. Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro
+The Kikuyu know how to conceal their quiver, but do not
+know how to conceal their secrets.
+The Kikuyu, though very clever in concealing their
+arms, cannot keep secrets from the members of their
+tribe.
+2. Ageni eri matirĩ ũtugire
+Two guests (at the same time) have no welcome.
+3. Ageni eri na karirũĩ kao
+Two guests love a different song.
+When you receive two visitors at the same time, you
+cannot treat them in the same manner, because they have
+different tastes.
+Every man has his hobby horse.
+4. Aikaragia mbia ta njũũ ngigi
+He is a man that looks after money as ‘njũ’ looks after
+locusts.
+‘Njũũ’ is a bird which accompanies migrating locusts to
+feed on them.
+Much wants more.
+```
+
+## Page 4
+
+<!-- footer: 2 -->
+```text
+5. Aka eri ni nyũngũ igĩrĩ cia ũrogi
+Two wives are two pots full of poison.
+The more women you have in your house, the more
+troubles you must expect.
+Women’s jars breed men’s wars.
+6. Aka matĩrĩ cia ndiiro no cia nyiniko
+Women have no upright words, but only crooked ones.
+The Kikuyu use the proverb to say that women keep no
+secrets and seldom tell the truth.
+Women conceal all that they know not.
+7. Aka na ng’ombe itĩri ndũgũ
+Wives and oxen have no friends.
+There are things which are not to be given to friends.
+A woman is to be from her house three times: when she is
+christened, married, and buried.
+8. Andũ maiganaine magithĩ na magiceera
+Men are equal when they are going and walking.
+One can notice a difference between man and man when
+they, ‘exempli gratia’, are commanding or working, but
+not on the road where they look quite the same.
+9. Andũ matari ndundu mahũragwo na njũgũma ũmwe
+People who have no secret agreement are beaten by a
+single club.
+A group of men not bound by a secret will be easily
+beaten by a single man.
+Lack of union spells weakness.
+10. Andũ matĩĩ ngamini
+Men do not know liberality.
+One does not give without hope of return.
+11. Andũ matĩĩ ngũ, moi ithendũ
+Men do not know hard firewood, but only lops.
+People put aside hard tasks and devote themselves only
+to easy ones.
+```
+
+## Page 5 (printed: 3)
+
+```text
+12. Andũ me muoyo matiagaga wira
+Live men do not lack work.
+Life would be too smooth if it had no rubs in it.
+13. Angimituriria na ũmirite ndangimionana rikii
+He who seeks his goat with the man who ate it, is certain
+not to find it.
+Do not look for stolen goods in the robber's house.
+14. Arũme mari rwamba
+Men have got quills.
+Do not annoy others because they will respond by
+hurting.
+Do evil and look for like.
+15. Bata ndũbatabataga
+Necessities never end.
+He that will have no trouble in this world must not be born in it.
+16. Cia athuri inyuagira thutha
+The elders drink afterwards (i.e. after the others).
+Elderly people are not in such a hurry as young ones.
+17. Ciakorire wacũ mũgũnda
+The food found Wacũ in the field.
+The proverb originates in the legend of Wacũ, the most
+despised amongst the wives of a rich man who never
+```
+
+## Page 6
+
+<!-- footer: 4 -->
+```text
+gave her any presents. One day, when a banquet was
+being held at home, she went to work in the field, since
+she knew there would be nothing for her at home.
+In the middle of the banquet a raven swooped down in
+the courtyard where the meat was being roasted, snatched
+a big piece and brought it to Wacũ.
+The Kikuyu use the proverb to say that God takes care
+of His poor.
+18. Cia kionje itigayagwo gitanakua
+The property of a helpless man must not be divided before
+his death.
+The reason is that he is unable to get anything more than
+he already possesses.
+19. Cia mūciĩ irĩ gacūgūma gacio gatathukagio ni mūthuri
+ūngĩ tīga mweneguo
+Home affairs have their staff, which cannot be brandished
+by anyone but the head of the house.
+The proverb means either that private matters must not
+be spoken of to strangers or that in each house there must
+be only one in authority.
+20. Cia mūciĩ itiumaga ndira
+Home affairs must not go into the open.
+Do not wash dirty linen in public
+21. Cia mūciĩ ti como
+Home affairs cannot be told in public.
+Do not wash dirty linen in public
+22. Ciana cia ndigwa itiri maithori
+The widow's sons have no tears.
+It means that they have been accustomed to suffer very
+early.
+23. Ciathanaga ikigũā, itiathanaga ikiũmbũka
+Birds agree when flying down, but do not agree when
+flying up.
+```
+
+## Page 7 (printed: 5)
+
+```text
+The proverb means that it is easy for a swarm of birds to
+alight together, while it is difficult to get up together
+since after eating their fill they will fly up separately.
+Morally the proverb means that men easily agree when
+deciding on an enterprise, but will probably quarrel as
+soon as they have obtained what they want.
+
+24. Cia thũgũri itiyũraga ikũmbĩ
+Bought things do not fill the granary.
+Do not hope to become rich without cultivating your
+fields.
+
+25. Ciatura ngũyũ irĩaga ng'umo
+When there is shortage of figs, birds eat the fruits of the
+‘mugumo’.
+The tree called ‘mugumo’ by the natives bears little fruits
+that are not eaten by birds when there is plenty of other
+food.
+If thou hast not a capon, feed on an onion.
+
+26. Cia ũthoni ciambaga nguhi
+The buying of a wife begins from a little thing.
+Great events have small beginnings.
+
+27. Ciigwatagirĩra mareru
+Goats fall that take hold of lichens.
+Lichens are not strong enough to prevent a goat from
+falling. The proverb means that unsatisfactory excuses
+are insufficient defence.
+
+28. Cionje ikũmi irũgĩtĩwo ni ũmwe ũri na hinya
+Ten helpless people were surpassed by a single strong
+person.
+One strong person is better than ten helpless ones.
+One grain of pepper is worth a cartload of hail.
+
+29. Cira mũnene ni ũkĩa
+A long lawsuit breeds poverty.
+Fools and obstinate men make lawyers rich.
+```
+
+## Page 8
+
+<!-- footer: 6 -->
+```text
+30. Cira mūnene ni wa ūthoni ūgikua
+The breaking-up of a betrothal is no small matter.
+Marrying a girl means giving a large number of goats or
+cattle to her family. Starting from the day of the betrothal
+the price is paid gradually. Evidently it is no
+simple matter if the would-be husband breaks his
+contract and demands the return of the marriage price.
+31. Cira wa kirimũ ūtindaga kiharo
+The lawsuit of a fool keeps the court (sitting) all day.
+The lawsuit of a fool never comes to an end.
+32. Cira wa mūciĩ ndumagirio kiharo
+Home affairs are not to be carried on in the public square.
+Do not wash dirty linen in public.
+33. Cira wothe wambagiririo na nda
+Every case begins from the stomach.
+The Kikuyu have an ox or a goat killed, roasted and
+distributed to judges at the beginning of every case.
+Familiarly they use the proverb to say that one of the
+most important jobs of life is to provide something to
+eat.
+An empty belly hears nobody.
+34. Ciunagwo rūkomo, kimenyi akamenya ikiunwo
+We speak by proverbs: he who is intelligent will understand
+.
+Intelligenti pauca.
+35. Ehera thakirio
+Clear out of the ‘thakirio’.
+‘Thakirio’ is the place in the Kikuyu hut where the wife
+stays when distributing the food to the family.
+Mind your own business.
+```
+
+## Page 9 (printed: 7)
+
+```text
+36. Gakiibatha ni koi ni karithoitha
+He who spends his time adorning himself knows he is
+going to a dance.
+There is a reason for everything.
+37. Gakiihotora niko koi ũria kariina
+He who adorns himself knows to what sort of dance he is
+going.
+There is a reason for everything.
+38. Gakunywo kagira thooko
+The fool takes many people with him.
+It is said of people who, when invited to a feast, instead
+of going alone, take many others with them.
+A fool cannot bear his own company.
+39. Garũria mbeũ ti ya kĩnya kimwe
+Change seeds taking them from different calabashes.
+It is good to introduce new blood.
+40. Gatami kari mondo yene gatingikũratira nguo
+The piece of cloth that is in another's bag does not patch
+your garment.
+41. Gathutha konagia mündũ njira
+A little, contemptible path is sometimes the one that leads
+you to the highway.
+Little strokes fell great oaks.
+42. Gatitũ ka mũimwo ni irĩ noko kari miti
+The forest of an unpleasant (ill-liked) person is the one
+that has trees.
+The proverb means that evil-doers often do prosper.
+43. Gatitũ ka ngoro gatiunagwo
+The grove of the heart is not laid open.
+```
+
+## Page 10
+
+<!-- footer: 8 -->
+```text
+44. Gatinyinyiraga gatari gakunye
+Nobody cries that has not been pinched.
+No smoke without fire.
+45. Gatuma kainagia mūrigwa
+Darkness causes to dance even him who cannot.
+All cats are the same in colour at night.
+46. Gatundu koragithirie Watatua
+A secret agreement enabled people to kill Watatua.
+Watatua was a powerful Chief, invincible in open combat, who was killed at night by a few men.
+Secret union means strength.
+47. Giathi githaragio ni gaka kamwe
+A market can be spoilt by one woman.
+One cloud is enough to eclipse the sun.
+48. Giathi kiri mūrugirwo
+Every feast has its guest of honour.
+49. Giathi kiriagwo ni kingi
+One appointment is eaten by another.
+Today kills yesterday.
+50. Giathi kiũũ no kia mūrokerero
+That of circumcision is a hard appointment.
+The Kikuyu circumcision is a civil and religious rite by
+which the adolescent is admitted into the public life of
+the tribe and becomes a man in the full possession of
+his rights. The ceremony is physically painful, but the
+candidate is expected to face the operation without
+wincing.
+There are no gains without pains.
+51. Gieterero ti kiinaino
+To wait is not to tremble.
+Men's actions are not to be judged at first sight.
+52. Gicegũ kia andũ aingi ti kiega
+The 'gicegũ' of many men is not good.
+```
+
+## Page 11 (printed: 9)
+
+```text
+'Gĩcegũ' is that part of the Kikuyu hut where they enclose the ram in order to fatten it.
+Too many cooks spoil the broth.
+53. Gĩcigo kĩa mũgũnda gitinyihaga
+A piece of land is not a little thing.
+The proverb means that however small the field you possess, it has its importance if you work it.
+A little house well filled, a little land well tilled, a little wife well willed are great riches.
+54. Gĩkaro kimwe kĩri ngee kana ndaa
+By staying always in the same place one gets lice.
+The world is a great book, of which they that never stir from home read only one page.
+55. Gĩkũrũ kiega no kiratina
+The only thing good, though old, is the ‘mũratina’.
+‘Mũratina’ is the fruit of the hot-dog tree (Kigelia Etiopica) used by the natives to cause fermentation of sugar-cane beer. It is believed that the older the fruit, the greater is its fermenting power. The proverb means that there are only few things that improve with age.
+56. Gĩkũũ gitiraragirio
+You cannot (do not) make an appointment with death.
+57. Githaka gitigunaga muni, kigunaga mũki
+The land enriches not people who clear it, but people who come (when it is already cleared).
+One beats the bush, and another catches the bird.
+58. Githaka kĩa mũci ni gũkaana
+Lying is the thief's stronghold.
+59. Githũmba gitiri mũrimũ wa ngoro
+Beggars have no worries.
+Poverty needs no granary.
+60. Githũri kiri mwatũ wa ngotoko
+The chest contains a beehive full of pride.
+The proverb means that proud people have always in store lots of reasons justifying their wickedness.
+```
+
+## Page 12 (printed: 10)
+
+```text
+61. Gitiganiriro kirũgitwo ni kirũgamanio
+Talking something over is better than leaving it pending.
+Never leave that till tomorrow which you can do today.
+62. Gitiiro kia mũka wene gitikagio athii
+The song of a stranger-woman is answered after she has gone.
+The proverb is metaphorically used to mean that foreigners, especially women, are not to be trusted too much.
+Eat a peck of salt with a man before you trust him.
+63. Gitindo kia mũci ni kiũru
+It is bad to stay at home.
+He that stays in the valley shall never get over the hill.
+64. Gitoi kimenyaga kierwo
+He who does not know, knows after being told.
+A man forewarned is forearmed.
+65. Gitoi kiraragia kiũĩ njira
+He who does not know the road delays also one that knows it.
+Who goes with a fool becomes a fool.
+66. Gitonga kigiragio iganjo gikarima
+The rich man cannot be prevented from cultivating the 'iganjo' he wants.
+'Iganjo' is the place upon which a hut had been built.
+Since the flocks live in the owner's hut, the floor of the hut becomes fertilized. The proverb refers to the fact that if a rich man has left a piece of his land to a poor man on which to build his hut, very often he wants it back as soon as the soil under the hut has been enriched by the droppings of the animals.
+Might is right.
+67. Gitonga kirĩaga mũnyuko
+Rich people sometimes eat bad food.
+All is not gold that glitters.
+```
+
+## Page 13 (printed: 11)
+
+```text
+68. Gūceera ni kūhīga
+Travelling is learning.
+The world is a great book, of which they that never stir read
+only one page.
+69. Gūcekeha ti gūicūhio
+To be slim does not mean having been pared.
+Do not scorn little things.
+70. Gūciara kunaga irigū ngingo
+The woman who gives birth to a child is like the banana
+tree that breaks under the weight of its fruit.
+Maternity means pain to the mother.
+71. Gūciara ūru ti kwenda kwa mwene
+It is not the mother’s will to have a bad offspring.
+72. Gūcukagwo ūtagūteo
+People slander somebody even if they do not despise him.
+73. Gūkiara na gūtonga ititiganaga
+Riches and poverty do not leave each other.
+74. Gūkira kūri ngatho
+To keep one’s tongue is worthy of praise.
+Silence is golden.
+75. Gūkira ni gūthūrana
+Not to talk is to hate.
+One keeps silence with people one does not like.
+76. Gūkiririria kwagira kieha
+Indulgence breeds regret.
+77. Gūkūra ni kūru: ngathī ūrīrī ngicayaga
+It is bad to get old, for one goes to bed grumbling.
+Old sacks want much patching.
+78. Gūkuhiriria mbaara tikuo kūrūa
+The fact that you have gone near the battle-field does not
+mean that you fought.
+```
+
+## Page 14
+
+<!-- footer: 12 -->
+```text
+79. Gükungagwo ūtukũ ti mũthenya
+Thieves conceal themselves in the night not in the day.
+The night is a cloak for sinners.
+
+80. Guota mwaki ni gúcera
+To get the warmth of fire one must stir the embers.
+No gains without pains.
+
+81. Guoya ūtūragia ūkia mūcii
+The fear (of toil) keeps your house poor.
+Idleness is the key of beggary.
+
+82. Gūteithagio witeithitie
+If you help yourself you will be helped.
+God helps those who help themselves.
+
+83. Gūtema na kanua ti gūtema na rūhiū
+Cutting by the tongue is different from cutting by the knife.
+Slander is not mortal stabbing.
+Hard words break no bones.
+
+84. Gūthama nikuo kūhika kwa arūme
+A man changing his abode is like a woman marrying.
+As a woman, on marrying, adopts the customs of the
+family she enters, so a man going to live in a strange
+country, must accept its customs.
+When in Rome do as Rome does.
+
+85. Gūthekererwo ni andũ ti kūririrwo ni hiti
+To be laughed at by men is not to be wept by hyenas.
+Better to be laughed at than to die.
+
+86. Gūthekererwo ti kūririrwo
+To be laughed at is not to be pitied.
+One starting any enterprise ought not to fear what others
+say of him.
+Do well and dread no shame.
+
+87. Gūthekio ti kwendwo
+If anybody makes you laugh, it is not always because he
+loves you.
+Eat a peck of salt with a man before you trust him.
+```
+
+## Page 15 (printed: 13)
+
+```text
+88. Gũthigagio mbura gũtongítwo matũgũta
+Some hope for rain even though they have not prepared their fields.
+He who hopes for favours should have prepared himself to profit by them.
+89. Gũthii gũtigiragia mũndũ acoke
+To go does not prevent a man from returning.
+Never give up.
+90. Gũthii kuonagia mũndũ njira
+Travelling teaches men their way.
+91. Gũthii ni kuona
+Travelling is seeing.
+Travel broadens the mind.
+92. Gũthimba ti kuura
+Having rain clouds is not the same as having rain.
+Don't cry herrings till they are in the net.
+93. Gũthinga kũrũgite gũtonga
+Virtue is better than riches.
+Virtue is the only true nobility.
+94. Gũthinga nikuo kihooto
+Virtue is power.
+Virtue makes men on the earth famous, in their graves illustrious, in the heavens immortal.
+95. Gũthũra ng'ombe ni gũthũra kamũkwa kayo
+To despise the ox means to despise also a strip of hide from it.
+One cannot scorn great things without scorning little ones related to them.
+96. Gũthukagĩrio wanatega itega
+One favours him from whom one has in the past received a gift.
+One good turn deserves another.
+```
+
+## Page 16
+
+<!-- footer: 14 -->
+```text
+97. Gũthũragwo mündũ ũriendwo
+A man is (sometimes) scorned who will be loved (later on).
+Judge not of men or things at first sight.
+98. Gũtiri gitatũirie kingi
+There is no thing which does not cause another to exist.
+99. Gũtiri githinji ũtathinja
+There is no butcher that does not slaughter.
+Every man to his trade.
+100. Gũtiri gũkũra na kũrara kerĩ
+One ages every night one lives.
+Time fleeth away without delay.
+101. Gũtiri ita ithiagwo na gitete kĩa njohĩ no gia ũcũrũ
+No war has been fought by men carrying a calabash of
+‘njohĩ’ but of ‘ũcũrũ’.
+‘Njohĩ’ is an inebriating drink brewed out of sugar-cane.
+‘Ũcũrũ’ is a kind of thin porridge made by boiling
+millet-flour in water. This gruel is supposed to be highly
+nourishing and therefore suitable for long journeys or
+hard fighting; while the sugar-cane beer by inebriating
+the warriors makes them weak and easy prey to the
+enemy.
+Out of temperance comes strength.
+102. Gũtiri mbura ĩtarĩ na gitonga kiayo
+There is no rain which does not enrich someone.
+It is an ill wind that blows nobody good.
+103. Gũtiri mũciĩ ũri kahĩĩ ũtakarugwo mũtwe
+In every family where there is a son, the head of an ox, goat
+or ram is cooked to be eaten by him with his friends.
+They use the proverb to mean that ordinarily a son
+gives his parents more trouble than a daughter, or that
+in every family parents do not lack troubles.
+There is a black sheep in every family.
+104. Gũtiri mũciĩ na mũcũthĩríria
+There is no difference between the thief and the looker-on.
+```
+
+## Page 17 (printed: 15)
+
+```text
+105. Gũtirĩ mũki ũrehage ũrugari
+Nobody entering a hut pays for the heat he will enjoy in it.
+Only the owner of the hut had the drudgery of carrying
+home the firewood: the visitor does not know the cost
+of the fire he is enjoying. Metaphorically the proverb
+is used to say that he who enters a house cannot realise
+the troubles of the occupants.
+None knows the weight of another’s burden.
+106. Gũtirĩ mündũ ũĩ haria egũthĩĩ no haria ekuuma
+Nobody knows where he goes, but only whence he comes.
+No one can see into the future.
+107. Gũtirĩ mündũ wendaga gũtũngana na nyoni njũru
+Nobody wants to meet an ill-omened bird.
+To the Kikuyu many birds foreshadow calamity. The
+cry of the owl forebodes mishap. If the owl cries, perched
+on the top of a hut, the oldest man in that village will die
+very soon. If someone, about to make a journey, hears
+the cry of any bird of ill-omen, he must not start on
+any account.
+Nobody seeks his own ruin.
+108. Gũtirĩ mündũ ũtangituĩka wa ndigwa
+There is no man that cannot become an orphan.
+No flying from fate.
+109. Gũtirĩ mündũ wonaga wega wake, no kuonwo wonagwo
+Nobody can see his own goodness: it can be seen only by
+others.
+110. Gũtirĩ mũrio ũtainagia rũthĩa
+There is no pleasure (however little it may be) that does
+not cause one’s cheeks to tremble.
+The Kikuyu consider the cheek trembling an expression
+of joy.
+A little pleasure is nevertheless a pleasure.
+111. Gũtirĩ mũthenya ũkiaga ta ũngĩ
+No day dawns like another.
+Every day brings a new light.
+```
+
+## Page 18 (printed: 16)
+
+```text
+112. Gūtiri mūtumia wenjagirwo mbūi kwa nyina
+No married woman will have her white hair shaved at her
+mother's.
+The Kikuyu girls go around with bald heads which they
+get periodically shaved by their relations. So the woman,
+who by being married has left her house and relations,
+will never be shaved at her mother's.
+Once sold, ever sold.
+113. Gūtiri mwana ūngitema agiemera ithe
+The son does not cut his finger in cutting meat for his
+father.
+Sons are stingier than their parents.
+114. Gūtiri ngware ītari mūhurrie wayo
+There is no partridge which does not know its own way of
+scratching.
+115. Gūtiri ngware nyinyi mahurrio-ini
+No partridge is small when it claws the soil.
+Every one can do great good or evil according to his
+possibilities.
+116. Gūtiri njamba īrumaga imera igiri
+No prepotent man will insult other people for two consecutive
+seasons.
+Prepotence comes quickly to an end.
+117. Gūtiri nyama na ngirinyū
+Meat has no choice morsel.
+When distributing the meat or anything else one must
+not favour any one person.
+118. Gūtiri nyoni njega mwere-ini
+There is no nice bird in the millet.
+Millet is one of the staple crops of the Kikuyu. They
+protect it from birds by building pulpit-like huts in which
+boys or women stand to frighten them whilst the harvest
+is ripening.
+Even sugar itself may spoil a good dish.
+```
+
+## Page 19 (printed: 17)
+
+```text
+119. Gütiri ūciaragwo ari mūgi
+Nobody is born wise.
+
+120. Gütiri ūcokaga haria arūmīiwo kaara
+Nobody returns where he got his finger bitten.
+
+121. Gütiri ūkagia ūtūmī atari na haria akuratha
+Once bitten twice shy.
+
+122. Gütiri ūkinyaga mukinyire wa ūngī
+There is a reason for everything.
+
+123. Gütiri ūndū ūtarī kihumo
+Nobody walks with another man's gait.
+
+124. Gütiri ūragio ni ūtonga no ūkia
+There is nothing without a cause.
+
+125. Gütiri ūragio ni ūkia wene
+All things have a beginning.
+
+126. Gütiri ūrirū ūtonwo
+Nobody grumbles at being rich, all at being poor.
+
+127. Gütiri ūru ūtūraga, no wega ūtūraga
+There is no mischance you are guaranteed against.
+
+128. Gütiri ūta utari nyama
+There is no bow without its meat.
+
+129. Gütiri ritwa ritakuria mwana
+There is no name which cannot distinguish a child.
+
+Every bird is known by its feathers.
+```
+
+## Page 20
+
+<!-- footer: 18 -->
+```text
+130. Gũtiri thingira ūciraga ta ūngĩ
+There is no location which discusses its affairs in the same
+way as the other does.
+Every man in his way.
+
+131. Gũtiri ūthũire tiga akiaga
+A man is poor not because he scorns possessions, but
+because he possesses nothing.
+Sour grapes, as the fox said when he could not reach them.
+
+132. Gũtiri wa nda na wa mũgongo
+There is not the son of the front and the son of the back.
+The Kikuyu mothers carry a baby on the back if they
+have only one. If they have two, one is carried in front
+and the other on the back. Of course the one carried near
+the breasts can suck oftener than the other. That is why
+they say this is the favourite one.
+Parents should have no Benjamin.
+
+133. Gũtiri wiriraga agikuua, eriraga akiiga thi
+Nobody grumbles while carrying a load, but when he has
+laid it down.
+The proverb means that nobody hates to be rich but all
+hate to become poor; or that nobody refuses to command
+, though all are sorry when they have to give up
+the command.
+
+134. Gũtiri wiriraga agithii, no agicoka
+Everybody regrets not what he leaves but what he does not
+find (when he comes back).
+
+135. Gũtiri witaga ithe wa ūngĩ baba
+Nobody calls another’s father ‘dad’.
+
+136. Gũtirika gũteaga njamba noru
+To forget a strong man who could help you is the same as
+to scorn him.
+
+137. Gũtirika ni gũte
+To forget is the same as to throw away.
+```
+
+## Page 21
+
+<!-- footer: 19 -->
+```text
+138. Gütungata gütingigiria mündü agatungatwo
+The man that serves is not prevented from being served in turn.
+Every dog has its day, and every man his hour.
+139. Gwakia kwarama, gwatuka gwakundera
+The day is for working, the night is for resting.
+There is a time to wink as well as to see.
+140. Gwethera gitili muka
+To seek a woman to the belly.
+The expression is used when they look for something to eat.
+To go foraging.
+141. Gwi thigari mugambo
+Some soldiers are only soldiers when talking.
+A good friend is a treasure.
+A good action reaps another.
+One good turn deserves another.
+142. Gwika wega kumathaga ũngi
+143. Handĩ ha njuguna na ha mugi hatiganaie
+The place to use the club and the arrow are not the same.
+Everything has its place.
+144. Hari muthuri hatitangagwo maai
+In the presence of elderly people one must not pour water.
+Nobody is allowed to be foul-mouthed specially when
+elderly people are present.
+Old age is honourable.
+145. Haro ni ya muka ũri ũlii
+Quarrelling is peculiar to the woman who has got male
+children.
+```
+
+## Page 22
+
+<!-- footer: 20 -->
+```text
+They use the proverb to mean that since sons are more
+mischievous than daughters, and mothers are more
+proud of their sons than of their daughters, women are
+inclined to quarrel to defend or to exalt their sons.
+No mother is so wicked but desires to have good children.
+146. Haro ni ya mūka ũri thiri
+Quarrelling is peculiar to the woman who has debts.
+A woman in debt is quarrelsome.
+147. Hita itanakira
+Resist the beginnings.
+Small faults indulged are little thieves that let in great.
+148. Hinga ndikinyaga iraka
+A wily person does not walk on dry leaves (for they would
+betray his presence).
+149. Hinya ndũgana ũrũme
+Strength does not correspond with courage.
+150. Hinya ndũri indo
+Strength has nothing.
+Strong people are not necessarily rich people.
+151. Hiti ciathii mbwe ciegangara
+When hyenas go away jackals rejoice.
+Little dogs begin to eat when big ones have eaten enough.
+152. Hiti itaga iria ingi ya mũtiri
+The hyena calls another hyena worse than itself.
+The pot calling the kettle black.
+153. Hiti yugaga arũme ni ogi, monaga gicinga ngwatiro
+Hyena says that men are wise because they know how to
+hold a firebrand.
+A story told by the Kikuyu says that one night a hyena
+entered a hut to eat the goats. The owner wakened by
+the noise, took hold of a firebrand to scare it out. The
+beast tried to do the same, but not knowing how to
+handle firebrands it scorched its paws.
+There is a right and a wrong way of doing everything.
+```
+
+## Page 23
+
+<!-- footer: 21 -->
+```text
+154. Hiti ndiriaga mwana, na mũĩ ũria ũĩ ngoroku
+The hyena does not eat its baby, and you know how insatiable it is.
+No mother is so wicked but loves her children.
+155. Hũngũ ireraga haria mbũri irathinjirwo
+Vultures arrive at the place where the goat is slaughtered.
+Where the carcase is, the ravens will gather.
+156. Hũngũ ĩgithii ĩgũrũ ndiatigire thi kũri kwega
+The vulture perches on the trees because it does not feel sure on the ground.
+157. Hũni nene ĩgiraga hũhita
+To eat much leaves you with a swollen belly.
+Enough is as good as a feast.
+158. Hururu ithekaga rwaro
+The abyss laughs at the plain.
+Every man thinks his own geese swans.
+159. ĩciaraga ũru mwene oine
+The cow has a bad delivery though her owner is present.
+Misfortunes may come in spite of watchfulness.
+160. ĩganagwo yaari iria yakua
+The good milking cow is praised after her death.
+A friend is never known till needed.
+161. ĩgitunywo mwana iikagirio mũngũ
+The cow is given a present when her calf is carried away.
+When one thing distresses you, another consoles you.
+162. ĩgũkua ihuragia kiara
+The ox that claws the ‘kĩara’ will die.
+‘Kĩara’ is the dunghill you will find in every Kikuyu
+```
+
+## Page 24
+
+<!-- footer: 22 -->
+```text
+village. In order to understand the proverb it must be borne in mind that the Kikuyu regard it as a sacred place which the witch-doctor dedicates with the sacrifice of a goat to secure that the evil spirits may not return into the hut from which he expelled them. They are supposed to stay in the 'kīara' just as the rubbish does. Touch pitch and you'll be defiled.
+163. Īkurūma ndioragia mūgūgūta
+The ox that feeds itself does not spoil its skin.
+164. Īkurūra yarahūraga īmamiī
+The animal rambling in the stable makes the sleeping ones rise too.
+Ill examples are like contagious diseases.
+165. Īkurūrio ti noru
+The ram that is shown around is not fat.
+A really fat ram will easily find a buyer and does not need to be carried around and shown in the markets.
+Good ware makes a quick market.
+166. Īreragīra rūkū-ini na īkaya kūigana
+The cimex lives in the firewood and still it reaches its full growth.
+Where there is a will there is a way.
+167. Īrī gūciarīra riūa-ini yongithagiria o ho
+The cow that drops her calf in the sun feeds it there too.
+One likes the place where one does well.
+168. Īrī gūkūra īriagwo īguku nī aka
+The hump of the ox that has grown old must be eaten by women.
+The hump is a choice morsel for young men when the ox is young. But if it is old women must eat it.
+Rubbish is women's portion.
+169. Īrī gūkūra ndiri mwiroreri
+The ox which has grown old has no admirer.
+Nobody looks after elderly people.
+```
+
+## Page 25
+
+<!-- footer: 23 -->
+```text
+170. ĩri gũtũ ĩhũgagia mwene
+The flea troubles him who has got it in his ear.
+171. ĩri kũhinja ndiri muniri ngũ
+Nobody gathers firewood to roast a thin goat.
+Poor people have no friends.
+172. ĩri kũhũma ndiri mũti itangigwatirira
+There is no tree which a panting animal would not cling to.
+A drowning man will catch at a straw.
+173. ĩri kũra ndiri mũhti
+The ox that ran away cannot be caught.
+Resist the beginnings.
+174. ĩri kũruga ni ĩgũta, ĩgũtirira ni nguũ
+The cooking pot on the fire leaks, when pouring water it
+is broken.
+Misfortunes come by forties.
+175. ĩri mürungu ĩgiritagia ĩri kahia
+The ox which has no horns, relies for help on the one that
+has them.
+He who feels weak relies on the friend he knows is strong.
+176. ĩri mũthece kinya tene ndioyagira ĩngi
+The bird who has always possessed a beak, does not pick
+up for another.
+Content is more than a kingdom.
+177. ĩri nyite ni mũtego ndithũre gwiteithũra
+The animal caught in the trap does not refuse to set itself
+free.
+No man likes his fetters, though of gold.
+178. ĩri tha ni ĩri iria
+It is he who has got milk that is merciful.
+‘Milk’ here has the sense of money; possessions. The
+proverb means that the rich should help needy people,
+since the poor cannot do it.
+```
+
+## Page 26
+
+<!-- footer: 24 -->
+```text
+179. ĩri thoni inyuaga munju
+The timid ox drinks muddy water.
+He goes to the river only when others have come away
+leaving the water dirty.
+Faint heart never won fair lady.
+
+180. ĩrũgamaga ni ĩkurumaga
+He who goes around with his body upright, later on will go
+crawling.
+Young today, old tomorrow.
+
+181. ĩtakuura igwatagia rũhuho
+To blame the wind for the rain that does not fall.
+It refers to boasting people who try to make silly excuses
+for themselves.
+
+182. ĩtari thahu igunagwo ni makoro ma njira
+The man who has no impurity will be helped even by the
+peels he sees on the road.
+There are many ways by which a Kikuyu can contract
+impurity and he fears the baneful effects which will
+follow it. That is why a man able to avoid all legal uncleanness
+is said to be so lucky.
+God helps honest people.
+
+183. ĩthinjagirwo mũrwaru igakora warwarire tene
+The goat slaughtered for a man who is sick now, finds
+another who was sick long before.
+God cures and the doctor takes the fee.
+
+184. ĩthimbaga na ndiure
+The sky is heavy with rain, but rain does not come.
+It refers to people who are always promising great things
+which they never do.
+Great boast, small roast.
+
+185. ĩtunyagwo mbũ ni gũciara
+A plant loses its blossom as soon as it bears fruit.
+Woman's beauty is spoilt by maternity.
+```
+
+## Page 27 (printed: 25)
+
+```text
+186. Igai ria mûtündũ ritigiragia kiriti kiunwo
+A branch of ‘mûtündũ’ does not hinder the division of a field.
+‘Mûtündũ’ is a small tree growing in the bush. It is not used by the natives, except as firewood.
+187. Igego rithekagia itimũ
+The tooth laughs with the lance.
+It means that often a person plays with his enemy.
+The cat plays with the mouse.
+188. Igwa njithĩ itiri njohĩ
+Young sugar-cane gives no beer.
+There is no putting old heads on young shoulders.
+189. Ihenya inene riunaga gikwa ihatha
+Great haste breaks the yam tuber (instead of taking it out whole).
+Haste trips up its own heels.
+190. Ihiĩ na igwa ikûragĩra ũthũ-inĩ
+Boys and sugar-cane grow up as enemies (because boys are all the time eating sugar-cane).
+191. Ihiga riega ritiringanaga na thio njega
+A good millstone does not meet a good miller.
+Good husband and good wife seldom meet.
+192. Ikinya na thi itiaganaga
+The foot and the earth cannot help meeting.
+193. Ikinya rĩa mûkûrũ rikinyaga mûruna
+Old people’s walking teaches young ones to walk.
+That that comes of a cat will catch mice.
+```
+
+## Page 28
+
+<!-- footer: 26 -->
+```text
+194. Ikūūra inya na inyanya
+One can lose four and eight.
+All covet all lose.
+
+195. Indo ciene iri mūtino
+Stolen things bring in misfortune.
+Ill-gotten goods seldom prosper.
+
+196. Indo ni kūrimithanio
+Riches are found in cultivating together.
+Many hands make light work.
+
+197. Irīaga na mbugi kūri na ūgwati
+The goats pasture with bells hanging from their necks in
+order not to stray.
+
+198. Irī gūthua ndongoria itikinyagira nyeki
+If the first goat goes lame, those that follow will not reach
+the pasture.
+
+Ill examples are like contagious diseases.
+
+199. Irī gwīthamba iticokaga gwota mwaki
+Candidates for circumcision after washing do not return
+to warm themselves at their father's (but go straightway
+to the place of the ceremony to show their courage).
+
+In things that must be it is good to be resolute.
+
+200. Irī kanua itiri nda
+The food that is in the mouth is not yet in the belly.
+Do not cry herrings till they are in the net.
+
+201. Irī kūhia itioragīrwo
+When the food is cooked there is no need to wait before
+eating it.
+
+202. Irī Ukabi itiri Gikūyū
+What is in Masai is not in Kikuyu.
+There is many a slip 'twixt the cup and the lip.
+```
+
+## Page 29
+
+<!-- footer: 27 -->
+```text
+203. Irima rirekagia riemba
+The pit allows the grass to fall in.
+The proverb alludes to the pits the Kikuyu used to dig
+for trapping wild animals. These pits were covered with
+sticks over which, as well as over the borders, they put
+a layer of grass. Since this grass often fell in the pit
+through the spaces between the sticks, so they say that
+often one falls into the pit dug by himself.
+Hoist with his own petard.
+204. Irimũ ikenagira ũndũ mũru
+Fools rejoice for a bad thing.
+A fool will laugh when he is drowning.
+205. Irio hiu itiumaga mbūri
+Cooked food is not sold for goats (but is given to friends,
+visitors and pilgrims).
+God helps the poor for the rich can help themselves.
+206. Ita cia maitho ititiraga
+The war of the eyes never comes to an end.
+The eye is never satisfied with seeing.
+207. Ita itari ndundu ititahaga
+The war that has no unity will make no prey.
+208. Ithaga riene rinogagia ngingo
+Other’s ornaments tire one’s neck.
+Do not wear borrowed plumes.
+209. Ithare riagũka gúcokaga mūgumo
+When ‘ithare’ is uprooted ‘mūgumo’ grows in its place.
+‘Ithare’ is a kind of cane growing on the river banks.
+The Kikuyu say it is of no use. ‘Mūgumo’ is a kind of
+fig tree (Ficus Hochstetteri) which does not grow except
+leaning on another tree or twisting around it like a
+creeper. This is why they think that the ‘mūgumo’ is
+worse than the ‘ithare’.
+```
+
+## Page 30
+
+<!-- footer: 28 -->
+```text
+210. Ithe wa thaka ndari matũ
+A fair daughter's father has no ears.
+The father who wants to marry his daughter to the best
+among the young men who crowd his hut to woo her,
+turns a deaf ear on their foul words.
+Few men will be better than their interest bids them.
+211. Itherũ ritiringaga ini
+A joke must not hit the belly.
+The proverb means that there must be a limit also in joking.
+The jest is tolerable, but to do harm by jest is insufferable.
+212. Itherũ ritirutagirwo mūgũi
+For a jest one should not take the arrow out of the quiver.
+213. Itherũ riumaga mbaara
+From a jest comes a strife.
+Jests, like sweetmeats, have often sour sauce.
+214. Itherũ riũragaga ndebe
+A joke can break the ear ring.
+An ill-timed jest has ruined many.
+215. Itherũ ti mūgũi
+A trick is not an arrow.
+Good jests bite like lambs not like dogs.
+216. Itonga igiri itiri nyoni
+Two rich persons do not wish each other a bird of ill
+omen.
+Dog will not eat dog.
+217. Itonga irugaga na ngio
+Rich people cook their food in a potsherd.
+The tailor's wife is worst clad.
+218. Itũũra riri kanoro ritituhagia kahiũ
+The village which has got a whetstone does not blunt the
+knife.
+The sense of the proverb is that if in a village there is a
+good whetstone it does not mean that the villagers should
+```
+
+## Page 31
+
+```text
+220. Kaana ka ngari gakunyaga ta nyina
+The son of the leopard scratches like its mother.
+Like father like son.
+
+221. Kaana karere ni ūcūwe gatingirūngika
+The baby nursed by its grand-mother can never be corrected.
+
+222. Kaara kamwe gatingiyūragira ndaa
+One finger does not kill a louse.
+Union is strength.
+
+223. Kagwaci ka mwana wene noko kahoragia mwaki
+It is always the potato of another family's boy that extinguishes the fire.
+The proverb alludes to the custom of roasting potatoes in the embers of a dying fire.
+Nobody calls himself rogue.
+
+224. Kahiga gakũrũ gatiagararagwo ni maai
+The stream does not pass over an old stone (through respect to its age).
+Old age is honourable.
+
+225. Kahii ka mwatthi kamenyaga kūgereka
+The hunter's son knows how to hunt.
+Like father, like son.
+
+purposely blunted their tools in order to whet them. The
+time will come when the whetstone will have to be used.
+Every thing is good in its season.
+219. Ithinjiro ritigaga thakame
+A slaughter-house is not without a little blood.
+Touch pitch, and you'll be defiled.
+```
+
+## Page 32 (printed: 30)
+
+```text
+226. Kahii kogi ta ithe kabaritaga ta migwi
+A son as cunning as his father knows the arrows like his father.
+Like carpenter like chips.
+227. Kahii getainwo na rwenji
+A knife and a shaving-knife are alike.
+The proverb means that if you do not have something you need, you will have something you can use instead.
+Necessity is the mother of invention.
+228. Kahii karathime kariaga nyama cia kinandu
+The blessed knife (son) eats of the meat of the ‘kinandu’.
+‘Kinandu’ is a small calabash used to keep oil, fat and the best morsels of meat. They say that the father will share the contents of the ‘kinandu’ with the most beloved son.
+229. Kahunii gatiui mwiri
+He who is full does not understand what is told (about others’ troubles).
+Another’s burden does not worry us.
+230. Kahunii gatuhaga uriri wa nyina
+The fed baby plays on its mother’s bed.
+231. Kahi koruri gatigaga kwao gugithinjwo
+The rambling pole-cat leaves its house when there is a banquet.
+The son that leaves his father’s house for liberty’s sake will not share his father’s inheritance.
+232. Kamamiriria gateire mugunda murime
+A little idleness lost a tilled field.
+A little leak can sink a great ship.
+233. Kamau mweru ni airaga
+Kamau who is white becomes black.
+‘Kamau’ is a typical name. The proverb means that there is nothing constant in this world.
+```
+
+## Page 33 (printed: 31)
+
+```text
+234. Kamūhũthia kaharũkagia mwatũ
+A little idleness causes the ruin of the beehive.
+The Kikuyu hang beehives on the branches of the forest
+trees, and it is their custom to visit them often to make
+sure that they are all right. For it might happen that if
+out of idleness one did not see them regularly, one would
+ultimately find the branch broken, the beehive fallen
+and the contents spoilt.
+
+235. Kamũngi koyaga ndĩrĩ
+Many people together lift up the ‘ndĩrĩ’.
+‘Ndĩrĩ’ is a heavy wooden mortar in which the Kikuyu
+women, when brewing beer, crush the sugar-cane.
+Many hands make light work.
+
+236. Kanira njara irĩa ũkomeire
+Take an oath only for the hand you slept on.
+Swear only to that which you know to be true.
+
+237. Kanoro kari itũũra gatituhagia
+The whetstone in a village does not blunt the knife.
+Every potter praises his own pots.
+
+238. Kanua karia kariĩre mbeũ noko koragia, ‘ngahanda ki?’
+The mouth who ate the seeds asks, ‘Now what shall I
+plant?’
+
+He sups ill who eats up all at dinner.
+
+239. Kanua kene gatinyuaga muma
+Another’s mouth cannot take the oath for you.
+Every bird must hatch its own eggs.
+
+240. Kanua ni ikahũ
+The mouth is a chink.
+From the mouth come many futilities.
+
+241. Kanua kendagia kiongo
+The mouth sells the head.
+The tongue talks at the head’s cost.
+```
+
+## Page 34 (printed: 32)
+
+```text
+242. Kanua weriire
+You spoke (against yourself) with your own mouth.
+It means that one can sometimes condemn oneself in defending oneself.
+
+243. Kanya gatune mwamũkaniro
+A small red snuff-box is a welcome.
+The proverb refers to the Kikuyu custom of giving a pinch of snuff to their friends when they meet.
+
+244. Kanyoni kabariti kemina gira njoya
+The little bird that flaps its wings too much will spoil them.
+One must crawl before one can walk.
+
+245. Kanywanjui kerathaga kero gako
+‘Kanywanjui’ scratches its thigh.
+‘Kanywanjui’ is a species of tiny blue bird with a long bill, which sucks nectar from flowers. The proverb means that such birds, although very small, can do everything for their own needs, and do not require others’ help to have their legs scratched.
+Every man something can.
+
+246. Karagũthwo niko koi kwigita
+He who is stricken knows how to defend himself.
+Scalded cats fear even cold water.
+
+247. Karanga hako gatiũmagia
+It is not the owner, trampling his own field, that spoils it (but the others).
+The proverb has arisen from the fact that many people if they have a bad harvest, say that it is the fault of other people who walked across their plantations.
+Nobody calls himself a rogue.
+
+248. Karara gekinya
+A person will change his mind on something if left to sleep over it.
+Never leave till tomorrow what you can do today.
+```
+
+## Page 35 (printed: 33)
+
+```text
+249. Karatha gatũkagia karatha
+Prophet copies a prophet.
+Like tree like fruit.
+250. Karatũ gatagwo na kũgũrũ kwa mwene
+The shoe is made for the foot that will wear it.
+If the cap fits wear it.
+251. Karegi nyina gatihonaga
+The baby that refuses its mother’s breast, will never be full.
+Faint heart never won fair lady.
+252. Kareraria kagarũragwo na mũti
+The sleeping dog is turned by a stick; i.e. it turns round to
+bite if disturbed or touched by a stick.
+Let sleeping dogs lie.
+253. Kariki kamwe gatukiriirie ndutura kirimũ
+A stupid turtle-dove is sometimes surprised by night for
+wanting one more grain of castor-oil plant.
+Time stays not the fool’s leisure.
+254. Kari mata gatiagaga wa kuuga
+The mouth that has saliva does not lack words.
+The proverb means that the man who has something to
+say will say it.
+255. Kari nda gatiyumbũraga
+The word that remains in the belly does not mean anything.
+Tell the truth and shame the devil.
+256. Kiaga ngũĩ kiabaca
+The song that has no leader, goes wrong.
+No longer pipe, no longer dance.
+257. Kiama gitirũgaga rũũi
+The elders of the council do not jump over a brook.
+Metaphorically the proverb means that the elders who
+are to judge a case must not hurry. But it often means
+that a person like a judge should not do anything
+undignified.
+```
+
+## Page 36 (printed: 34)
+
+```text
+258. Kiambi nda nikio giakûra
+The food eaten first lasts longest in the stomach.
+First impressions are most lasting.
+259. Kiara kiyûragio ni güta ihuti
+The dunghill grows by straws thrown upon it.
+Every little helps.
+260. Kiega ta ki gitithiraga
+A really good thing is ever good.
+A good tale is none the worse for being twice told.
+261. Kiere kia njira-ini gitigwatagwo ni muura
+A grain of millet grown on the road will bear no ears.
+The proverb means both that a promiscuous woman has
+little hope of bearing children, and that a thing in
+common use will not last long.
+A pot that belongs to many is ill stirred and worse boiled.
+262. Kiero ni ũimbo
+The thigh is a bubble.
+Thigh means full blooded youth. The proverb is for the
+young who scorn old people or make wrong use of their
+strength to sin. It reminds them that youth passes quickly.
+Young today, old tomorrow.
+263. Kierũ ni kiiraga
+What is white becomes black.
+The proverb originates in the fact that the Africans are
+almost white when they are born, but become black by
+growing.
+There is nothing constant but change.
+264. Kigina gitininûkagio irio hande itari ngûrû
+The seeds kept are not finished before the ripening of the
+crops planted in the field.
+Every thing has its time, and that time must be watched.
+265. Kihooto gituthaga rûga rûtunge
+The argument breaks the strained cord of the bow.
+```
+
+## Page 37 (printed: 35)
+
+```text
+266. Kihooto kigetũraga ũta mũgeṭe
+The argument relaxes the bent bow.
+267. Kihooto kiringaga rũĩĩ rũĩyũrũ
+The reason crosses even a flooding river.
+268. Kihooto kiongagirirwo njũgũma
+The club is added to one’s argument.
+269. Kihooto ni indo
+Having a good argument (in a discussion) is like having riches.
+The five proverbs here above mean that he who can support his views or actions with a strong argument, will go through any difficulty and obtain what he wants.
+270. Kinandũ kia mũciĩ gitihakagwo mügeni
+The fat of the ‘kinandũ’ is not used to anoint a stranger.
+For the meaning of the word ‘kinandũ’ see No. 228.
+Charity begins at home.
+271. Kindũ kiene gitiri ndokeirwo nũũ
+Who prospered with robbed things?
+Ill-gotten goods seldom prosper.
+272. Kindũ kiũru no kironda, ũndĩ kiri rũa rwa mũhuhi
+A sore is a really bad thing; still it means luck to the doctor.
+It’s an ill wind that blows nobody good.
+273. Kindũ kiũru no mũndũ ethũkitie we mwene
+A really bad thing is to hurt oneself wilfully.
+It is stupid to cut off your nose to spite your face.
+274. Kindũ no mwene mũhoi ahoyage
+The thing you want must be begged from the owner.
+This means that it must not be acquired from other people nor taken without permission.
+It is not a sin to sell dear, but it is to make measure.
+275. Kindong’o kiariiire maini ũndũ wa kwaga mayũ ma gũkira
+The beetle feeds on excrement for it can’t fly high.
+If thou hast not a capon, feed on an onion.
+```
+
+## Page 38 (printed: 36)
+
+```text
+276. Kinya kiri itina nikio kiigaga
+Any calabash that has got a bottom can stand upright.
+The proverb means that God gives every man what is required by human nature: but it depends on man to exploit such gifts.
+Every man is the architect of his own fortune.
+277. Kiongo kienjithagio ni mwene
+The head is shaved at its owner's desire.
+Let every pedlar carry his own burden.
+278. Kionje gitihoyaga njohi micii iri
+An invalid does not go to two houses to ask for beer (since he cannot move).
+Old age is honourable.
+279. Kiri kwihia cihitie ciothe
+If a child has sinned all have sinned.
+One does the blame, another bears the shame.
+280. Kiriro kia mburi ni ndara
+It is the gridiron that cries (for the slaughtered goat).
+Everyone rejoices when a goat is killed, for each will have his piece of meat; only the gridiron on which the meat is roasted, weeps, i.e. crackles.
+281. Kiriro kiri ituura gitingireka mundu akome
+One person weeping prevents all in a village from sleeping.
+One barking dog sets all the street a-barking.
+282. Kiriti kiri ngoro gituunanagirwo
+The forest in the heart cannot be cut down by somebody else.
+Troubles in somebody's heart cannot be removed by somebody else.
+283. Kirimu gitindagia andu njira
+The fool makes other people stop on the road.
+The fool wastes the time of other people.
+```
+
+## Page 39
+
+<!-- footer: 37 -->
+```text
+284. Kirimũ kihithaga rwembea-inĩ rwa nyũmba kiĩĩ v gitikuonwo
+The fool hides himself under the eaves of the hut and thinks nobody will see him.
+It refers to foolish people who invent silly excuses to conceal their faults.
+
+285. Kirimũ gia gwikigia kirũgite kia muciariire
+He who feigns to be stupid is more stupid than the stupid-born.
+None so deaf as those who won't hear.
+
+286. Kirimũ kiongaga nyina ari mukuũ
+A fool can even suck the mother after she is dead.
+
+287. Kirimũ ni ta mwatu
+A fool is like a beehive.
+The proverb means that he is a fool who does not look after his own interest, like the beehive which allows itself to be emptied.
+
+288. Kiringĩri gia aka ni rwenji rükirega
+To force a woman to do something she doesn't like is like forcing a blunt shaving-knife to shave.
+
+289. Kironda kia mwene gitimuũragia ngoro
+He who has a sore does not feel sick on account of it.
+We are blind to our own faults.
+
+290. Kiruka gia kimbu gitithiragwo ni mung'ũng'ũtũ
+All the species of the chameleon family shall always have a protruding backbone.
+That that comes of cat will catch mice.
+
+291. Kiũma gitihatagirio ũga
+Do not force a big thread into a bead with a small hole.
+Grasp all, lose all.
+
+292. Kiũnũhu gitiriagirwo
+A wasted thing cannot be eaten.
+Wilful waste makes woeful want.
+```
+
+## Page 40 (printed: 38)
+
+```text
+293. Kiũra kiaringio rũũĩ kiugaga nikio kieringia
+The frog that was helped across the river, said she had
+crossed it by herself.
+Eaten bread is soon forgotten.
+294. Kiririria, thuti ti ruo
+Be patient, a desire is no pain.
+The proverb is told to people who long after anything
+they cannot obtain.
+295. Kirihia thuti
+Desires tie.
+If your desire be endless, your cares will be so too.
+296. Kiuga githeri gitirutanagirwo
+An empty bowl is not offered.
+It means that it is better to keep silence than to try to
+justify oneself by empty excuses.
+Be silent or speak something worth hearing.
+297. Komũ ateire kaigũ wa nyina
+The dry firewood does not despise the wet one coming
+from the same tree.
+Dog will not bite dog.
+298. Komũ athinirie kaigũ wa nyina
+Mother’s dry firewood laughed at the green one (and it
+did not think that both of them had but one common lot).
+Today me, tomorrow thee.
+299. Kũganwo ni kũra
+Being praised leads to ruin.
+Praise without profit puts little in the pot.
+300. Kũgera mũgathi ti gũtinia
+To tell the beads is not to cut the thread.
+Do not judge men or things at first sight.
+301. Kũgũrũ kũri mũhu na kũri ime itihanaine
+A foot dirty of ashes is not a foot wet of dew (because the
+former holds firmly, while the latter skids).
+```
+
+## Page 41 (printed: 39)
+
+```text
+302. Kūgārū ni irata thi
+The foot goes all the world over.
+It is perseverance that prevails.
+
+303. Kūgunagwo mwthiomeri ti muthiomerwo
+It is he who speaks that profits, not he who is spoken for.
+
+304. Kūguniwo mwana no ta kūguniwo nyina
+To make the son happy is to make the mother happy.
+
+305. Kūhika ni kuuna
+Hurrying is breaking.
+
+306. Kūhitia ni kwa njamba
+Haste makes waste.
+
+307. Kūhonoka ti gitiţura
+To err is human.
+
+308. Kūhoya kwa arüne ni maitio
+One can escape the rocks and perish in the sand.
+
+309. Kūhoya ti kuţya
+To beg is not to steal.
+
+310. Kūhüţa na kūhüna ititiganaga
+Hunger and surfeit do not leave each other.
+
+311. Kūhüra maai na ndiri
+Riches have wings.
+
+312. Kūira ti kūria
+To be black is not to be stupid.
+
+Little bodies may have great souls.
+```
+
+## Page 42
+
+<!-- footer: 40 -->
+```text
+313. Kũma ti kũma ta ihiga, na kuororoa ti kuororoa ta maaĩ
+To be hard does not mean to be hard as a stone, and to be
+soft does not mean to be soft as water.
+There is a measure in all things.
+
+314. Kũmatha güţirĩ hiuya ta kũramata
+To harvest is not so difficult as to keep the harvest.
+Keep some till more comes.
+
+315. Kũmenya muño ni kũmenyũka
+Knowing too much is like being ignorant.
+Too much breaks the bag.
+
+316. Kũmenya weru ni kũtũnda
+He knows a place who lives in it.
+Every man knows his own business best.
+
+317. Kũngũ maitũ na hunyũ wake
+Long live my mother and her ugliness.
+
+318. Kũnyiha ti güniio
+To become small is not the same as being cut.
+
+319. Kũnyiitwo ti kohwo
+To be caught is not to be imprisoned.
+There is many a slip, 'twixt the cup and the lip.
+
+320. Kũri arũme na maiyũria ndua
+Some are males (useful people) and some can only fill the
+gourds (useless people).
+
+321. Kũri güciara ũru ta kihia güciara na mĩtĩwe
+Some good, some bad, as sheep come to the fold.
+There are women who give forth a bad issue, just like the
+sorghum that bears its fruit on the head (instead of growing
+it underground like most Kikuyu crops).
+
+322. Kũri güakahika güticokaga ndebe
+One cannot put the 'ndebe' into a broken ear-lobe.
+'Ndebe' is the wooden ring put into the pierced ear-lobe
+```
+
+## Page 43
+
+<!-- footer: 41 -->
+```text
+as an ornament. The painful operation of piercing the
+lobe is done with a wooden bodkin by the parents of
+the boy or girl in the years preceding the initiation.
+Pieces of wood are then introduced into the hole and
+these will successively be replaced by larger ones until
+a large wooden ring ('ndebe') can be put in as an ornament
+. The proverb means that these are things which
+once broken cannot be soldered.
+323. Kūri gũkua mūrio ta kigwa
+There are people who, like sugar cane, are killed for being
+sweet.
+He who makes himself a sheep shall be eaten by the wolf.
+324. Kūri mwoni na mūrata thi
+There are lucky and unlucky people.
+The wind of luck is inconstant.
+325. Kūri ūku ūtatumwo, ta wa nyūngũ
+There are things, like the earthen pot, which if ever broken
+can't be repaired.
+For some evils there is no remedy.
+326. Kūria mbere ti gūkoroka
+To eat first is not to be a glutton.
+327. Kūria mūno ni kuoria nda
+To eat much means to spoil one's belly.
+Too much breaks the bag.
+328. Kūria nai gūtigiragia mündũ akaria wega
+To eat bad food (today) does not prevent a person from
+having good food (tomorrow).
+Change of fortune is the lot of life.
+329. Kūria thi ti kūria tiri
+One does not eat the soil, but the fruit thereon.
+330. Kūria thiri ni kūriha
+The way of eating a debt is paying it.
+He that gets out of debt grows rich.
+```
+
+## Page 44 (printed: 42)
+
+```text
+331. Kūriithia ĩmwe ti kwenda kwa mwene
+To graze only one goat is not the owner's will.
+Evils come though we do not want them.
+332. Kūrikanira gūtigiragia ndeto ihitane
+To have come to an agreement does not mean that the
+agreement may not be broken.
+The cat and the dog may kiss, yet are none the better friends.
+333. Kūrima ni kwienda
+To till the land is to love oneself.
+Work is well done that is well loved.
+334. Kūrita ni kūru
+It is bad to be a fool.
+335. Kūrūga ti kwega, amu kiūra kioragire ūthoni na irūga
+To leap is bad, since the male-frog by his leaping broke up
+the betrothal.
+The proverb originates in the following fable. One day
+the male-frog went to his fiancée’s home to arrange the
+marriage with her father. But as soon as the fiancée
+noticed the indecorous leaping-posture assumed by the
+male-frog during the conversation, she refused to marry
+him.
+The Kikuyu tell the proverb to express their esteem for
+decency and modesty.
+Loquacity storms the ear, but modesty takes the heart.
+336. Kūrua, kūgūrana na kūriha thiri gūtiriragwo
+Nobody feels sorry for having been circumcised, for having
+bought his wife and for having paid his debts.
+The proverb means that there are certain things that
+leave no regrets.
+337. Kūrua ni kūhĩa
+Being circumcised is like being scalded.
+This means that the pain of the circumcision is a few
+minutes’ pain.
+```
+
+## Page 45
+
+<!-- footer: 43 -->
+```text
+338. Kūrua ni kwara itara
+Being circumcised is like building the ‘itara’.
+The ‘itara’ is a trellis of twigs suspended a short distance above the fire-place in the Kikuyu hut to prevent sparks from setting fire to the thatched roof. The same word is often used to mean the whole hut. Thus this proverb means that a young man as soon as circumcised, must realise that the years of irresponsibility are over and that he must see about building his hut and starting a new home.
+A married man must turn his staff into a stake.
+339. Ku ndiriaga
+A blow does not (always) injure.
+340. Kuma kwa mbaa gũthii kwa heho
+To come from rime and go into the bitter cold.
+To fall out of the frying pan into the fire.
+341. Kumagara ni kũhiga
+To come out of one’s house means learning.
+Travel makes a wise man better.
+342. Kwa Mũcũni ni gwateirwo ni mũhitũki
+Mũcũni’s house was ruined by the traveller.
+‘Mũcũni’ is the name of a person who refused hospitality to a passer by. Since hospitality is traditionally sacred among the Kikuyu, they say that this traveller cursed Mũcũni’s house which went to ruin.
+343. Kwa mũnegeni gũkiūra, kwa mũkiri kworire tene
+The house of the talkative man perished long after that of the quiet.
+It is easy for somebody who is friendly to get help from others.
+344. Kwa mwendwo gũtiri irima
+On the way to one’s beloved there are no hills.
+345. Kwaria ni kwendana
+Talking is loving one another.
+Friendship increases by visiting friends.
+```
+
+## Page 46
+
+<!-- footer: 44 -->
+```text
+346. Kwaria ti gucaya
+To talk is not to grumble.
+
+347. Kwaria ti gituua cira
+To talk is not to decide.
+
+348. Kwigeria muciini kwigeria mathina
+To start a family is to start troubles.
+
+349. Kwigitia ti guoya
+When a man is married his troubles begin.
+
+350. Kwionera ti kwirwo
+To prepare is not to be afraid.
+
+351. Kuona kimera ti kuria
+Let him that wants peace prepare for war.
+
+352. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+353. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+354. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+355. Kuona kimera ti kuria
+There is many a slip, 'twixt the cup and the lip.
+
+356. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+357. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+358. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+359. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+360. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+361. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+362. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+363. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+364. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+365. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+366. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+367. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+368. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+369. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+370. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+371. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+372. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+373. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+374. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+375. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+376. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+377. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+378. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+379. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+380. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+381. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+382. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+383. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+384. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+385. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+386. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+387. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+388. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+389. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+390. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+391. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+392. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+393. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+394. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+395. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+396. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+397. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+398. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+399. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+400. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+401. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+402. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+403. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+404. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+405. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+406. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+407. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+408. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+409. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+410. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+411. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+412. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+413. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+414. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+415. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+416. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+417. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+418. Maaciara mangi ni mbirita nyingi
+To see the crop in the fields is not to eat it.
+
+419. Maai maratika matiri mubhitire
+To see for one's self is different from being told.
+
+420. Maai mararu timo mahii
+Words are but wind, but seeing is believing.
+
+421. Maaciara mangi ni mbirita nying
+```
+
+## Page 47
+
+<!-- footer: 45 -->
+```text
+355. Mageria nomo mahota
+Trials mean successes.
+Where there is a will there is a way.
+356. Maguta makũrũ matinaga rwimbo
+Old fat sings no song.
+This means that he who goes to dance does not anoint himself with rancid fat. The word ‘fat’ is used for ‘beauty, youth’. The proverb means that old folks cannot have admirers as young ones; that old people cannot hope to have more children.
+Water run by, will not turn a mill.
+357. Maguta mambagio ũthiũ
+The smearing begins on one’s face.
+Actually the Kikuyu who smear themselves very often, always begin the anointing on the face, and laugh at people who begin on any other part of the body.
+There is a time and a way for all things.
+358. Maheni mari mũtino
+Lies are dangerous.
+Liars have short wings.
+359. Maheni ti thiri
+Lies are no debt.
+360. Maitho ma andũ matiendaga kindũ kihinju
+Men’s eyes do not like to see anything thin.
+The proverb refers to children, oxen and goats.
+361. Maitho ma arũme ti ma irang’a
+Men’s eyes are not the eyes of the ‘irang’a’.
+‘Irang’a’ is an insect with very tiny eyes. The proverb means that the eyes of this insect see very little, while men’s eyes see everything.
+362. Maitho ma arũme ti mambo
+Men’s eyes are not like the ‘mambo’.
+‘Mambo’ are the holes the Kikuyu make in the hides for fastening them to the ground when they dry them in the sun.
+```
+
+## Page 48
+
+<!-- footer: 46 -->
+```text
+363. Maitho ma ciura matigiragia ng'ombe inyue
+The eyes of frogs do not prevent cattle from drinking.
+Do what thou ought, let come what may.
+364. Maitho maronana mari nduiriro
+The eyes which see each other are destined to see each
+other again.
+Friendship increases by visiting friends.
+365. Maithori ti rüthioni
+Tears are no language.
+366. Marakara ma arime matitütaga ta ma aka
+Men's anger does not last so long as women's.
+Women are as prone to revenge injuries as men to forgive them.
+367. Marakara ni gitiei
+Getting into rage means being proud.
+368. Mari mbere matirutaga nyota
+Run by water does not quench the thirst.
+Water run by, will not turn a mill.
+369. Matari maku mahitükaga ugikünja itüma
+The water that is not yours flows away while you are folding
+the 'itüma'.
+'Itüma' is the leaf of a kind of edible arum. Out of these
+large leaves the Kikuyu used to drink water.
+370. Mathanwa mari kiondo kinwe matiaga gukomorania
+Many axes in one basket must hit against each other.
+371. Matienda mwako mendaga mürugürio
+Some people do not like the building of a hut, though they
+like the 'mürugürio'.
+'Mürugürio' is a kind of dedication-ceremony held by
+the witch-doctor to solemnize the completion of a new
+hut. On such occasion the owner of the hut distributes
+beer to his relations and to the people who assisted him
+in the building.
+There is scarcity of friendship but not of friends.
+```
+
+## Page 49 (printed: 47)
+
+```text
+372. Matigana nomo moranwo
+They who leave one another forget one another.
+Out of sight, out of mind.
+373. Matirũka ni maingi kũrũga magũa
+Slips outnumber falls.
+Every slip is not a fall.
+374. Matukũ ni ngũririri
+Days pass quickly.
+Time fleeth away without delay.
+375. Matukũ ni thigo
+The days are a hurry, i.e. go quickly.
+Time fleeth away without delay.
+376. Matukũ ti ma kiumia
+Not all days are Sundays.
+Christmas comes but once a year.
+377. Matumbĩ ma njamba matitũranaga
+The eggs of males do not hatch each other.
+The proverb means both that any man prefers living
+with a woman rather than with another man, and that
+there ought not to be two people commanding in one
+home.
+Two sparrows upon one ear of wheat cannot agree.
+378. Maũndũ ni ndiganiro
+The important things are left in the locker.
+In other words, they are not told to everybody.
+Tell not all you know.
+379. Mba yakwa ũrihagwo na ũngĩ
+My stolen or damaged lamb must be replaced by another.
+An eye for an eye, a tooth for a tooth.
+380. Mbaara ti ũcũrũ
+War is not porridge.
+```
+
+## Page 50
+
+<!-- footer: 48 -->
+```text
+381. Mbaara ya aka ndīrī ng'ondu
+Women's strife has no sheep.
+According to the Kikuyu custom the one that wounds another in a quarrel must pay a sheep as a fine. The proverb means that in women's strifes nobody incurs such a fine, for their quarrels are usually words only.
+Words are for women, actions for men.
+382. Mbari ya ngeka makorirwo matari meka
+They who said ‘I shall do’ became people who had done nothing.
+Never leave that till tomorrow which you can do today.
+383. Mbia iminaga ndarwa na igutha
+The mouse finishes the hide by gnawing.
+Little strokes fell great oaks.
+384. Mbere ndīriragwo ta thutha
+The future is not so much regretted as the past.
+385. Mbere ni gikeno thutha ni maithori
+Tears follow joy.
+386. Mbere no mbere thutha no mūgiano
+Before is before: afterwards there is nothing but repining.
+Resist the beginnings.
+387. Mbogo nyingi itirī nyama
+Many buffaloes are no meat.
+If you run after two hares, you will catch neither.
+388. Mbūi nyinyi ndīrī munge
+A small flower has no smell.
+A little barrel can give but little meal.
+389. Mbūri īgucagio ni mūnyū
+The goat is attracted by salt.
+The bait not the hook catches the fish.
+390. Mbūri itiugagīrwo mbu
+No alarm is shouted for a goat (because it is not a dangerous beast).
+Do not waste time and money on unworthy things.
+```
+
+## Page 51 (printed: 49)
+
+```text
+391. Mbūri na kaana itirumagwo
+The goat and the child are not insulted (because they cannot defend themselves).
+
+392. Mbūri ya mai ndiemaga
+One can always find the goat to pay the penalty for having defecated in another's house.
+According to Kikuyu customs he who defecates in another's house is liable to be fined a goat. The proverb means that he who incurred such penalty will contrive to find the means to pay it.
+Necessity sharpens industry.
+
+393. Mbūri ya rwagatha ndikiraga
+A chattering goat does not keep its tongue.
+The word 'goat' is here used instead of 'people'.
+A fool may ask more questions in an hour than a wise man can answer in seven years.
+
+394. Mbūri yene mūthā ni gūtū
+The best part of another's goat is the car.
+The proverb means that a stranger coming in when a slaughtered goat is distributed, must not expect to be given a choice morsel, but rather an inferior part like an ear. Metaphorically the proverb means that a prudent person keeps for himself and his family the best parts of anything instead of giving them away to his visitors and friends.
+Charity begins at home.
+
+395. Mbūri ndia mūhu ndingirigaria
+The goat which eats ashes does not hide its habit.
+The Kikuyu live under the same roof as their animals.
+So if any goat forms the habit of leaving its place and coming to lick ashes at the fire, it will soon be discovered.
+In the same manner the vices of the wicked will soon be known.
+```
+
+## Page 52
+
+<!-- footer: 50 -->
+```text
+396. Mbũri ngũrũ ndithagĩra tũhũ
+An old goat does not sneeze without cause.
+The proverb means that old folks speak the truth and
+do not speak without a reason.
+Old dogs bark not for nothing.
+
+397. Mbũri ti marĩgũ
+Goats are not bananas (which are given for nothing).
+There are no gains without pains.
+
+398. Mbũri ya ngĩa yaringĩrĩra no ũguo bata ũringagĩrĩra
+When the poor man's goat is about to kid, then the need
+drops also.
+The proverb means that if a man rejoices because his goat
+is going to kid and so increase his property, a sudden
+need might force him to sell his goat.
+Count not your chickens before they be hatched.
+
+399. Mbu ya arũme ifikagio ni athamaki
+Men's alarm-shouts are answered by the elders.
+The proverb means that if the alarm is shouted only by
+women one can make light of it; but if the alarm is cried
+by men there exists a real danger. Metaphorically the
+proverb means that women cannot claim any right of
+discussing or giving evidence in a court.
+Let women spin and not preach.
+
+400. Mbugi ndikirite mũriha
+The bell needs its tongue.
+In this proverb the word 'bell' means 'woman', and
+'tongue' means 'man'.
+Wives must be had, be they good or bad.
+
+401. Mburungo nyinyi ũĩ mũthiomeri ũrugite nene itari
+mũthiomeri
+A trifle well presented becomes more precious than a thing
+of great value badly presented.
+It is not the value of a gift that matters but the intentions of
+the giver.
+```
+
+## Page 53 (printed: 51)
+
+```text
+402. Me haraya matirutaga nyota
+A distant water does not quench one's thirst.
+403. Menya wingerere ndũkore
+Be not too proud lest you ruin yourself.
+404. Miano nditukanagio no kanua
+The 'miano' cannot be confused, but the mouth can.
+'Miano' are the small gourds used by witch-doctors to contain the divining stones. The proverb means that the divining stones cannot fail to tell the truth, though it may happen that the witch-doctor does not tell it.
+God cures and the doctor takes the fee.
+405. Migambo ni miruki ya ngoro
+The words are the odour of the heart.
+The tongue ever turns to the aching tooth.
+406. Migũgũta irĩ ndiambanagirio
+Two hides are not laid out at the same time.
+One cannot be in two places at once.
+407. Migũire ya ngũ na ya migogo ti imwe
+The fall of branches and that of big trees are not the same.
+408. Mihehũ yongagirirwo gũkunga
+Speaking in a whisper is followed by hiding (in order to steal).
+The proverb means that people who whisper are probably arranging something evil.
+Beware of a silent dog and still water.
+409. Mitheko ĩtarĩ githimi yumaga kanua-ini ka irimũ
+Laugh without measure comes out of fools' mouths.
+The laughter of fools.
+410. Mondo ti thegi
+One's pocket is not a repository (in which all people can put their hands).
+Pocket means in this case home affairs.
+Scald not your lips in another man's pottage.
+```
+
+## Page 54
+
+<!-- footer: 52 -->
+```text
+411. Mondo yene ndiikagio njara
+The hand has not to be put into another's pocket.
+Scald not your lips in another man's pottage.
+412. Mūbatari ndaconokaga
+He who is in necessity does not feel ashamed (to ask for
+help).
+413. Mūcakwe ūgũthagia njamba
+A cob of maize can knock down a giant.
+A small leak will sink a great ship.
+414. Mūcangacangi onaga mūguongo
+It is he who travels that finds the tusk.
+God helps those who help themselves.
+415. Mūcari ūrutagwo ndūgū-ini
+Yaws is caught through friendship.
+The proverb means that just as the disease is contracted
+by contact with infected people, so bad habits are
+acquired by consorting with bad people.
+Who keeps company with a wolf will learn to howl.
+416. Mūcaria ūngĩ ndamwagaga
+He who looks for another must find him.
+He who will seek may find.
+417. Mūceera na mūkündũ akündükaga taguo
+He who walks with a mangy man becomes mangy.
+He who keeps company with a wolf will learn to howl.
+418. Mūciari ari tha
+Parents are merciful.
+419. Mūciari ndairagio ngoro ni kimira kia mwana wake
+Parents do not feel sick when wiping the mucus from their
+child's nose.
+420. Mūciari ndathikũragia igwa itina
+Parents do not take away the earth that covers the root
+of the sugar cane.
+As a good farmer does not uncover the roots of the
+```
+
+## Page 55 (printed: 53)
+
+```text
+sugar cane lest it may dry, so good parents have a limit
+also in punishing their children.
+421. Mūciari ni etiagira
+Parents are proud of their children.
+422. Mūci ndwathagwo ni ũtawakire
+The house is not ruled by him that did not build it.
+Mind your own business.
+423. Mūci ni kūrarwo ũraragwo, ndūtindagwo
+The house is for sleeping in by night, not for staying in by
+day.
+There is a time for all things.
+424. Mūci ũri mbūri ndwagaga kihuno
+The house which has goats does not lack miscarriages.
+Who has land, has war.
+425. Mūcingũ mūnene unaga hiti kūgūrũ
+The strong smell (of roasting meat) causes the hyena to
+break its leg.
+Hasty climbers have sudden falls.
+426. Mūciriri kirimũ ndaigaga mūthīgī thi
+He who advises a fool does not lay down his ‘mūthīgī’.
+‘Mūthīgī’ is the staff of the elders.
+427. Mūciri ūmwe ndagambaga
+One man alone in a tribunal can say nothing, i.e. can take
+no decision.
+428. Mūcukani ndari mūci mwega
+A slanderer has no peaceful home.
+Slander flings stones at itself.
+429. Mūgambo ũri kūgūa thi nduoyagwo; woyagwo na ũngĩ
+A word that has fallen to the ground cannot be picked up:
+it is picked up by another.
+Time and words can never be recalled.
+430. Mūgambo ũroigwo ndugũkagwo
+A word given must not be retaken.
+```
+
+## Page 56 (printed: 54)
+
+```text
+431. Mũgariũra igiri ndagaga imwe icura
+He that broils two maize cobs (at the same time) burns one of them.
+Who hunts two hares leaves one and loses the other.
+432. Mũgathi ũri gũtwika ndũcokaga mũigana
+A broken necklace cannot be made whole again.
+A broken friendship may be soldered, but will never be sound.
+433. Mũgathi wa kuona ũteaga wa mwene
+The necklace found makes you lose your own, too.
+Ill-gotten things seldom prosper.
+434. Mügeni amiaga mbirira
+The foreigner evacuates in the cemetery (for he does not know the place and its customs).
+435. Mügeni kirimũ ndarugagirwo njohi
+One does not give any beer to a foolish visitor.
+The proverb means both that it is not honourable for the host to give hospitality to a fool, and that it is silly to give beer to a fool since he does not enjoy it.
+He is not the fool that the fool is, but he that with the fools deals.
+436. Mügeni ndahũhitaga
+A guest does not eat as much as he wants; i.e. he must not be greedy.
+437. Mügeni ni rũĩĩ
+The guest is like a river, i.e. he passes quickly.
+Fish and guests smell at three days old.
+438. Mügeni ũtukũ agethire kiri muura
+He who harvests by night, reaps chaff.
+There is a time for all things.
+439. Mügeni ni mwire
+He who has been advised is wise.
+A man forewarned is forearmed.
+```
+
+## Page 57 (printed: 55)
+
+```text
+440. Mũgiri rwa kũnyitūra agirire rwa kũnyitia
+One can cause the illness which he wanted to cure.
+The cure may be worse than the disease.
+441. Mũgiti ndagaga rũhara
+He who irritates will be scratched.
+Let sleeping dogs lie.
+442. Mũgogo ũmwe ndũhingaga iriũko
+One trunk does not close a river.
+One flower makes no garland.
+443. Mũgoma mûrungu ni ũtũraga nyũngũ
+The she-sheep can break the cooking pot, and still she has no
+horn.
+Cooking pot means here an affair of great importance.
+The meaning of the proverb is that a fool can spoil wise
+people's affairs.
+444. Mũgũnda ũraga na rũtere
+A field begins to become a wilderness from a side; i.e.
+from a small place.
+A little neglect may breed a great mischief.
+445. Mũgũnda wa mwere ũmenyagwo na ngetho
+One knows a field of millet from its crop.
+The tree is known by its fruits.
+446. Mũgũnda wene ndũinagwo
+Another's field is not praised.
+The proverb refers to the fact that the Kikuyu when
+they are drunk imagine themselves very rich, and so
+become proud of others' riches.
+447. Mũgũrira hakuhi ni ta aheo
+The man who buys something at a place near by is like the
+man who is given something.
+That is little esteemed that costs little.
+448. Mũgũi ũtarĩ wa awa ni ũkündembũrĩra thiaka
+The arrow which is not my father's, pierces my quiver.
+Ill gotten goods seldom prosper.
+```
+
+## Page 58 (printed: 56)
+
+```text
+449. Mūhaka na ciake itimuragia thakame
+He who pays another with his own things, does not bleed.
+The proverb means that one spends his money willingly
+when he needs help.
+
+450. Mūhakana na ciake itimūragīra
+He who stands close to his things does not lose them.
+The master's eye makes the horse fat.
+
+451. Mūhaki ndari hiū igiri
+The messenger of peace has no two knives (presents).
+Messengers should neither be beheaded nor hanged.
+
+452. Mūhandi tiwe mūrii
+He who plants is not he who eats.
+Man proposes, God disposes.
+
+453. Mūharwo niwe ūthingataga githaka
+The one with diarrhoea must look for a bush.
+Let him that is cold blow the coal.
+
+454. Mūhehwo na matū meri ndaiguaga
+He who is spoken to at both ears does not understand.
+Too much consulting confounds.
+
+455. Mūhenania ndathekaga
+A liar does not laugh (for if a liar laughs when he tells a
+lie he is not believed).
+
+456. Mūhenia ago oigaga mūrimū ūri gūthira
+He who would deceive the witch-doctors says that his
+illness is finished.
+Hide nothing from thy minister, physician and lawyer.
+
+457. Mūhenio ari matukũ kũrĩ mūhenania
+The deceived has many more days than the deceiver.
+Liars have short wings.
+
+458. Mūhenio ti mūgĩ ta mūhenania
+The deceived is not so cunning as the deceiver.
+
+459. Mūheo ndagathimaga
+He who receives must not measure.
+Do not look a gift horse in the mouth.
+```
+
+## Page 59 (printed: 57)
+
+```text
+460. Mũhikana na kũria ahikanaga na gũitwo
+He who takes his food in a hurry, is also choked in a hurry.
+Haste makes waste.
+461. Mũhiki ariaga rũbia
+He who hastens eats money; i.e. wastes his money.
+Haste makes waste.
+462. Mũhiki atumaga rwerũ
+He who is in hurry sews a garment (whereas he should mend
+the old one).
+Haste is waste.
+463. Mũhiriga ti mũhirigo
+A clan is not a wall (which can be destroyed).
+The Kikuyu are very keen on keeping distinction between
+one clan and the other. That is why they say that clandistinction
+cannot be cancelled.
+464. Mũhoreri ndari ngũi
+He who is quiet has no troubles.
+465. Mũhotwo ndararaga kiharo
+He that has been beaten in a quarrel does not sleep in the
+court-yard.
+Scalded cats fear even cold water.
+466. Mũũũnu etaga ũhũtiĩ mukoroku
+He who is surfeited calls the hungry one glutton.
+It is easy preaching to the fasting with a full belly.
+467. Mũici athamagia mũrogi
+The thief makes the poisoner change his residence.
+The proverb comes from the following story. A witchdoctor
+intended to poison a thief. But the thief always
+managed to steal the poison and the witch-doctor had
+to find a fresh home.
+468. Mũici na kĩhiĩ atigaga kieha kiarua
+He who robbed in company with a boy, will live in fear
+until the boy is circumcised.
+What children hear at home soon flies abroad.
+```
+
+## Page 60 (printed: 58)
+
+```text
+469. Mũici na mündũ muka atigaga kieha akua
+He who robbed in company with a woman, will live in fear
+until she dies (for a woman cannot keep a secret).
+Woman conceals only what she knows not.
+470. Mũici ndathiragwo ni mari hindĩ
+The thief cannot keep fit, because his stools contain undigested
+food.
+The proverb means that a thief, who eats his food in a
+hurry and with the fear of being caught, cannot enjoy
+good health.
+Ill-gotten things seldom prosper.
+471. Mũici ũri hunyũ arindagira ũri maguta
+An ugly thief is more likely to be caught than one smeared
+with fat: i.e. carefully dressed.
+The proverb means that a robber who cannot dissemble
+will soon be discovered, while the thief who can sham,
+will continue to flourish.
+472. Mũici ũtari mũnyite ni mũria gake
+The thief who has not been caught eats of his own.
+The proverb means that stolen goods belong to the thief
+if he is not caught.
+473. Mũici wa mũthenya ni oio, na wa ũtukũ ni oio
+He who robs in the day is known, and he who robs in the
+night is known, too.
+What is done by night appears by day.
+474. Mũigua ũthekagĩrĩra cong'e
+The big thorn laughs at the small one.
+The greatest thieves punish the little ones.
+475. Mũihwa ndahoyaga na ndaimagwo
+A cousin does not ask and is not refused anything (because
+he is a member of the kindred).
+476. Mũihwa ndaimagwo ũnyeni
+A cousin is not denied a meal.
+Both proverbs mean: Charity begins at home.
+```
+
+## Page 61 (printed: 59)
+
+```text
+477. Mũikarania na kiimba ndagaga maithori
+He who stays near a corpse cannot help weeping.
+478. Mũikaranio nīguo mūbarano
+To stay together is to know each other.
+479. Mũikari mūĩ gitina niwe ūĩ kiria thambo ūriaga
+He who stays at the foot of the tree knows what ‘thambo’ eat.
+‘Thambo’ are the black ants which live and nest on the trees. The proverb means that nobody knows the affairs of a home, society, etc. better than he who lives or has a part in it.
+Every man knows his own business best.
+480. Mũikari na hunyũ ndakoragwo onete maguta akarega kwīhaka
+He who is ugly, is not so because he refused to smear himself with fat (but rather because he had no fat to smear himself with).
+We are but what God made us.
+481. Mũikia ndōĩ mwehereri
+He that shoots an arrow does not know whom he will hit.
+You know not where a stone may light.
+482. Mũimwo ni irĩ ndatūũraga
+He on whom fortune has frowned cannot live long.
+483. Mũingatwo na kihooto ndacokaga
+The man overwhelmed by another’s arguments does not return to discuss matters.
+Once bitten, twice shy.
+484. Mũinũki kwao ndatukagĩrwo
+He who keeps good hours is not surprised by night.
+Early to bed, early to rise, make a man healthy, wealthy and wise.
+485. Mũka mũcangacangi ndagaga mwana
+A woman that hangs about does not lack children.
+The proverb refers to the married women who, failing to have children of their husbands’, go around looking for other men.
+```
+
+## Page 62 (printed: 60)
+
+```text
+486. Mũka mũkũrũ acokagirirwo na gĩkuũ
+One returns to the old wife when the young one dies.
+Half a loaf is better than no bread.
+487. Mũka ũrĩ kironda ainagira gitiro ihũgo
+The woman who has a sore dances on the outskirts.
+A guilty conscience needs no accuser.
+488. Mũka ũrĩ mwana ndoraga
+The woman who has children does not desert her home.
+489. Mũka wa mwathi ahingaga na kũgũrũ etereire kiguru-mũki oke
+The hunter's wife, awaiting her husband's return, closes
+the door only with her foot; i.e. she leaves the door unbolted
+so that her husband may enter more quickly with
+his prey.
+490. Mũkarire ni ũmwe no mũrarire ti ũmwe
+To stay together is not the same as to have the same type
+of life.
+People often agree in words but not in judgement.
+491. Mũkagera mahoro ma ndũgira
+You will pass through the ear-holes.
+The Kikuyu pierce the lobes and the upper part of
+their ears to put wooden sticks in the holes as an ornament
+. They use this proverb referring to people attempting
+to perform impossibilities.
+It is easier for a camel to pass through the eye of a needle than
+for a rich man to enter the Kingdom of Heaven.
+492. Mũkami tiwe mũnyiti njaũ
+He that milks is not he that holds the calf.
+Every man to his own job.
+493. Mũkari aimaga ũhũnii
+The miser denies food to him who is surfeited.
+The proverb refers to stingy people who deny some help
+to others who would in turn be the most helpful.
+```
+
+## Page 63 (printed: 61)
+
+```text
+494. Mũükiri tene ainükaga tene
+He who gets up early returns early.
+The early bird catches the worm.
+
+495. Mükürira githũnũ ndamenyagwo
+He who ages in the 'githũnũ' is not known by other people
+how old he is.
+'Githũnũ' is a dormitory where unmarried people sleep.
+The proverb means that he who has not hut and no wife
+will age without having children to tell him how old he is.
+
+496. Mükũũ, gaya, ũnyonte mũgai
+Old man, divide, and teach me how to divide.
+This proverb shows how the Kikuyu respected old people,
+to whom was left the distribution of meat, beer, etc. at
+all gatherings.
+
+Old age is honourable
+
+497. Mukwithia ari itigi kuri mũhati
+The woman whose sons have died is richer than a barren
+woman.
+
+498. Mũmbi arugaga na ngĩo
+The pot-maker cooks in a pot-herd.
+
+499. Mũmeni mündũ ũngĩ amwitaaga kiongo kia njau
+He who despises another man, calls him 'head of calf'.
+Owing to their esteem for oxen, it is not dishonourable
+for the Kikuyu to be told he has a head as big as that of
+an ox. But it is shameful to be called 'head of calf' since
+the calf is a useless animal.
+
+500. Mũmeni ũngĩ amũutaga mbaki inĩrũ
+He who despises another steals even the snuff from his
+nose; i.e. has no respect for him.
+
+501. Mündũ ageraga mainwo, ndageraga maheo
+Man counts what he is refused, not what he is given.
+We are more mindful of injuries than benefits.
+```
+
+## Page 64 (printed: 62)
+
+```text
+502. Mündũ mūgi ndari mūhere wa ūhoro
+A wise man does not need to be told a thing twice.
+A word is enough to the wise.
+503. Mündũ mūgo nderagūragira
+The witch-doctor cannot do for himself what he does for
+others.
+504. Mündũ mūgo wa gwthokia ndari rūa
+The witch-doctor who goes to see a patient without being
+sent for, will not have the hide of the slaughtered goat;
+i.e. will have no reward.
+Give neither counsel nor salt till you are asked for it.
+505. Mündũ mūgo wa itūūra ndagaga
+The witch-doctor of the place is not needed.
+Never a prophet was valued in his own country.
+506. Mündũ mūka na igūrū itimenyagirwo
+Woman and sky cannot be understood.
+Woman, wind and fortune are ever changing.
+507. Mündũ mūka ndoragagwo
+A woman must not be killed.
+The reasons for this proverb are the facts that the woman
+is too weak to defend herself and that only the woman
+can produce children.
+508. Mündũ mūka ndatūmagwo thiri-ini
+A woman is not sent to collect debts.
+Let women spin and not preach.
+509. Mündũ mūigwa nī mūhootani
+The obedient man gets through.
+Do what thou ought and dread no shame.
+510. Mündũ mūrūme nī wa karūgī
+Men act promptly.
+511. Mündũ ūrakanyuira niwe ūī karī rita
+He that has drunk once, knows that to drink is a pleasure;
+```
+
+## Page 65 (printed: 63)
+
+```text
+i.e. he who has experienced something knows whether it is good or bad.
+Experience is the father of wisdom.
+512. Mündũ ũri na ũndũ otaga mwaki na riũa
+The man who warms himself at the fire while the sun is shining, does so for some reason.
+513. Mündũ ũtari mbũri ndendaga nyama
+People who have no goat do not desire meat.
+'Sour grapes,' as the fox said when he could not reach them.
+514. Mündũ ũtathiga athinjaga mwati atoindũrũme irigicegũ
+He that does not travel slaughters the she-goat as he is ignorant of a ram in his fold; i.e. he is stupid.
+515. Mündũ ũtathiaga oi no nyina ũrugaga
+He that does not travel knows only his mother's cooking.
+Both the proverbs mean that he that does not leave his native place will have a very limited knowledge.
+The world is a great book, of which they who never stir from home read only one page.
+516. Mündũ wa rurugi ourugagwo akerwo niwe wurugana
+He who is wont to provoke others, is called a provoker even when he is provoked.
+A liar is not believed when he speaks the truth.
+517. Mündwithia rimwe ndagacoka kündwithia ringĩ
+He who has circumcised me once does not return to do it again.
+The proverb means that he who has erred or has been cheated once, becomes wise and will not be cheated a second time.
+He who stumbles twice over one stone deserves to break his shins.
+518. Mũnua ũmwe ni ũgarũragĩrwo
+One mouth must be changed; i.e. it is not good to talk always with the same person nor about the same things.
+Change of pasture makes fat calves.
+```
+
+## Page 66 (printed: 64)
+
+```text
+519. Mũnyaka ni ũnyakükagwo
+Fortune passes.
+
+When fortune smiles take the advantage.
+
+520. Mũnyaka ũri mbere ya kahinga
+Fortune is beyond the bush, i.e. the obstacle.
+
+He that endures overcomes.
+
+521. Mũnyaka ndiokaga
+Fortune is not a thing that must surely come.
+
+522. Mũnyotu athiaga rũĩĩ
+He who is thirsty goes to the river.
+
+Let him that is cold blow the coal.
+
+523. Mũra na mündũ ti mũra na hiti
+To be robbed by a person is different from being robbed
+by a hyena.
+
+The proverb means that if you were robbed by a person,
+you can hope to be recompensed for the damage; but
+if a member of your family or a head of your herd has
+been stolen by a hyena, there is no hope of redress.
+There are injuries beyond redress.
+
+524. Mũragani ndakayaga, no mũragwo dikayaga
+It is not the killer that moans, but the killed.
+
+525. Mũregi akirwo ndaregaga akihetwo
+He who refuses (to do something) when asked, does not
+refuse when forced.
+
+526. Mũregi gwathwo ndangiliota gwathana
+He who refuses to obey cannot command.
+
+527. Mũremwo ni ndiogo olgaga nja ũĩĩ mahaga
+He that cannot dance says that the yard is stony.
+
+A bad workman complains of his tools.
+```
+
+## Page 67 (printed: 65)
+
+```text
+528. Mũri kūria ta athi a thatū
+Sometimes one eats bad food like the hunters when they
+are out hunting in the misty season.
+The proverb comes from the fact that hunters, who stay
+in the forest or in the plain for rather a long time must
+often be content with cold, raw food.
+When bread is wanting, oaten cakes are excellent.
+529. Mũria na gati ndoi mũria na kaara ni akũhia
+He who eats with a stick does not know that he who eats
+with the fingers gets scalded.
+530. Mũria ngime ni ũri mũkimiri
+He who eats cooked food has someone who cooks it for him.
+The proverb means that he who desires a thing sufficiently
+either can easily have it, or will make efforts to get it.
+Nothing is impossible to a willing mind.
+531. Mũria njithi yake ndarũndagwo
+He is not condemned who eats even unripe maize of his
+own fields.
+Every man is a king in his own house.
+532. Mũria wiki akuaga wiki
+He who eats alone dies alone.
+533. Mũrimirwo ni ithe ndoi indo irĩ bata
+He who has his fields tilled by his father, does not know
+that things are precious.
+What costs little is little esteemed.
+534. Mũrimi ndoinagwo guoko
+One must not break the arm of him who tills the fields.
+Do not kill the goose that lays the golden eggs.
+535. Mũrimi ũmwe ndaiyũragia ikũmbi
+One tiller does not fill the granary.
+Union is strength.
+536. Mũrimi tiwe mũrii
+He that tills the earth is not he that eats (its fruits).
+```
+
+## Page 68 (printed: 66)
+
+```text
+537. Mūrio ndūminaga ng'aragu
+Sweetness does not satisfy hunger.
+The proverb means that pleasures do not quench the
+thirst for many more pleasures. But it is also used when
+we should say:
+‘Sweet words butter no parsnips.’
+
+538. Mūrio ndūnenganagirwo
+Pleasure cannot be communicated.
+The proverb means that he who has any reason for
+rejoicing, cannot feel unhappy even if his friends or
+neighbours are grieved.
+
+539. Mūrio ndūtūraga ta ngatho
+Pleasure does not last so much as gratitude.
+The proverb means that few virtues are as great as
+gratitude and that few joys are greater than that of being
+thanked for a service.
+Gratitude surpasses all other virtues.
+
+540. Mūrio ni wirīagira
+Sweetness eats up itself
+and
+
+541. Mūrio ūgīraga kieha
+Sweetness brings sorrow.
+Pleasure stings even though it pleases.
+
+542. Mūrio ūminaga magego
+Sweetness spoils teeth.
+
+543. Mūrio ūrutaga hūngũ mūtī igūrũ
+Sweetness makes the vulture descend from the tree.
+Beauty draws more than oxen.
+
+544. Mūrio wa njohi ni ūriūkagwo, no wa indo ndūriūkagwo
+The drunkenness of beer passes away, but the drunkenness
+of wealth lasts forever.
+Avarice increases with wealth.
+```
+
+## Page 69 (printed: 67)
+
+```text
+545. Mũria rũnene ndarũriagira
+He who asks too much will not eat anything.
+All covet, all lose.
+546. Mũriganio ũri tha
+They who live together must be merciful.
+Bear and forbear is good philosophy.
+547. Mũrimũ ndũri hinya ũgitonya mwiri ta ũkiuma
+Illness enters the body with less difficulty than it meets on
+going away.
+Misfortunes come on wing and depart on foot.
+548. Mũrimũ wa mücoka nìguo ũragaga mündũ
+It is the illness that returns that kills people.
+Resist the beginnings.
+549. Mũrogi tiwe mũrogori
+The poisoner cannot stop the effect of the poison.
+The proverb refers to the superstition by which a person
+who has been poisoned cannot go to his poisoner to
+have the effect of poison neutralized by his arts but
+must go to another person, who is called ‘mũrogori’.
+550. Mũrori arũga mũrimi
+He who looks at another’s field sees many more weeds
+than does its owner.
+To be blind to one’s own faults.
+551. Mũrugiri arũme ndagaga ngiha
+He who cooks food for men, does not lack big veins, i.e.
+bruises.
+The proverb means that he who works for a master must
+do his duty to avoid punishment.
+Men like facts not words.
+552. Mũrũngũru wa njamba ũtahaga na ime
+He who rises early skips in the dew.
+The proverb means that people who get up early finish
+their work early.
+The early bird catches the worm.
+```
+
+## Page 70
+
+<!-- footer: 68 -->
+```text
+553. Mûruri ndwakaga
+The ‘mûruri’ does not build.
+‘Mûruri’ is a forest tree with beautiful red flowers, but
+yielding very poor timber.
+All is not gold that glitters.
+554. Mûrwithia arûme aari kihîi
+He who circumcises the boy was a boy, too.
+555. Mûrwithia arûme ni arwithagio
+He who circumcises the males was circumcised.
+The child is father of the man.
+556. Mûtego ti ngoro, ni wathi warera
+It is not the trap that counts, but the art of trapping.
+A good archer is known by his aim, not his arrows.
+557. Mûteng’erania na mûteng’erio gûtiri ûtanogaga
+Both he that chases and he that is chased become tired.
+Everyone has his own troubles.
+558. Mûthakwa wa athi ndûthiragwo ni gicanjara
+The ‘mûthakwa-tree’ will not discontinue to produce
+branches of only one shape.
+Like father like son.
+559. Mûthamaki ûterwo ti mûthamaki
+The wise man who is not taught is not a wise man.
+560. Mûthinio ni kuona arûga mûthinio ni wagi
+He who is troubled by having (property) is better off than
+he who is troubled by poverty.
+561. Mûthiirwo ûgo-ini no ûria arirwo
+He who sends somebody to a witch-doctor on his behalf
+must believe all he is told.
+562. Mûthiganwo ni ûri nja ndahonokaga
+He who is sought by a man already in the courtyard, has
+no way of escape.
+To understand this proverb one must bear in mind that
+```
+
+## Page 71 (printed: 68)
+
+```text
+553. Mūruri ndwakaga
+The ‘mūruri’ does not build.
+‘Mūruri’ is a forest tree with beautiful red flowers, but
+yielding very poor timber.
+All is not gold that glitters.
+554. Mūrwithia arũme aari kihĩĩ
+He who circumcises the boy was a boy, too.
+555. Mūrwithia arũme ni arwithagio
+He who circumcises the males was circumcised.
+The child is father of the man.
+556. Mūtego ti ngoro, ni wathi warera
+It is not the trap that counts, but the art of trapping.
+A good archer is known by his aim, not his arrows.
+557. Mūteng’erania na mūteng’erio gũtiri ũtanogaga
+Both he that chases and he that is chased become tired.
+Everyone has his own troubles.
+558. Mūthakwa wa athi ndũthiragwo ni gicanjara
+The ‘mūthakwa-tree’ will not discontinue to produce
+branches of only one shape.
+Like father like son.
+559. Mūthamaki ũterwo ti mūthamaki
+The wise man who is not taught is not a wise man.
+560. Mūthino ni kuona arũga mūthino ni wagi
+He who is troubled by having (property) is better off than
+he who is troubled by poverty.
+561. Mūthiirwo ũgo-ini no ũria arĩrwo
+He who sends somebody to a witch-doctor on his behalf
+must believe all he is told.
+562. Mūthiganwo ni ũri nja ndahonokaga
+He who is sought by a man already in the courtyard, has
+no way of escape.
+To understand this proverb one must bear in mind that
+```
+
+## Page 72
+
+<!-- footer: 70 -->
+```text
+573. Mũthũri mündũ tiwe Ngai
+He that dislikes a person—is he God?
+The proverb means that if anyone is hated by men, he
+is not necessarily hated also by God.
+God is just.
+574. Mũthua ngoro ti mũthua kũgũrũ
+He that is lame of heart—unlike him that is lame of foot
+—cannot be recognized.
+All is not gold that glitters.
+575. Mũthuri ũtarĩ kahĩ niwe wiragira ngururu
+The married man who has no son goes himself to scare away
+the birds from his harvest.
+576. Mũĩ mũmũ ndũciaraga mũigũ
+A dried up tree does not bear a green one.
+One cannot get blood out of a stone.
+577. Mũĩ ũgũagira mündũ ũri hakuhĩ
+The tree falls on the man who stands by it.
+578. Mũĩ ũtagũtemwo ndũgerekagiririo ithanwa
+A tree which is not intended to be felled, is not aimed at
+with an axe.
+It is told of people who, devoting themselves to many
+things at the same time, finish none.
+Jack of all trades and master of none.
+579. Mũtiga mwahũ akoraga igima
+He who leaves a bunch of bananas finds a whole stalk.
+Give and spend, and God will send.
+580. Mũtigwo iganjo ndagaga gia kuoya
+The man left where there was once a hut, will certainly
+find something.
+581. Mũtiga njerũ akoraga njerũ
+He who leaves a white goat will meet another of the
+same colour.
+Contentment is above wealth.
+```
+
+## Page 73 (printed: 71)
+
+```text
+582. Mütino ūrutaga mündũ ūriri
+Danger makes a man rise from bed.
+Men in danger need no spur.
+583. Mütino ūthagia ndigīrīri
+Misfortune frustrates one's plans.
+Man proposes, God disposes.
+584. Mütirima wa kirimũ witirimagia na mūgi
+A fool's walking-stick helps the wise man to stand.
+The proverb means that wise people know how to get
+profit from things that a fool thinks useless.
+A wise man gets learning from those who have none themselves.
+585. Mütūũri mūno ndagaga
+He who lives a long time (in one place) must find what he
+wants.
+586. Mütumia angikūra atarĩ mwana ndangiona mütahīri maai
+The woman that gets old without bearing a child, will
+have nobody to draw water for her, i.e. will have nobody
+to help her.
+Children are poor men's riches.
+587. Mütumia na kionje ni ūndũ ūmwe
+A woman and an invalid man are the same thing.
+Words for women, actions for men.
+588. Mutumia ndatūraga mütwe na ndaikagia ndahi ndua
+A woman does not split the head (of the slaughtered goat)
+nor dip the cup into the beer (because both are men's jobs).
+Let women spin and not preach.
+589. Müturi tiwe mūhurutiri
+He that hands the hammer is not the same as the man who
+pulls the bellows.
+You cannot drink and whistle at the same time.
+590. Mütumumu ndonagia ūria ūngĩ njira
+A blind man does not show another the way.
+Blind does not lead blind.
+```
+
+## Page 74 (printed: 72)
+
+```text
+591. Mūtwari ndari ūhoro
+He who carries an embassy has no concern in it.
+Messengers should neither be beheaded nor hanged.
+592. Mūtwe ūmwe ndwatūraga ng'ũndũ
+Only one head does not divide a field.
+Four eyes see more than two.
+593. Mūtwe wa mündũ ūmwe ni ithino
+One man’s head is a solitary place.
+Counsel is not of one.
+594. Mugi ndoi ūria akerwo
+He who speaks does not know what others will reply.
+595. Mūmagari onaga ūnene
+He who travels sees great things.
+The world is a great book, of which they who never stir from
+home read only one page.
+596. Muni kiriti niwe ūĩ ūria thina ūigana wa migogo na
+nyamũ
+It is the forest clearer who knows the troubles caused by
+trunks and animals.
+Every man knows his own business best.
+597. Mumi na nja oyaga mara kana anyuaga twiri
+He that enters a hut either picks up the bowels or drinks
+twice.
+To understand the proverb one must remember that the
+Kikuyu huts receive the only scanty light from the low
+front door. So people who enter a hut where a banquet
+is being held may either be unlucky and take hold of a
+piece of bowel instead of a piece of good meat, or may
+be lucky and be given a couple of drinks.
+598. Mwaga gũkua mwaruta mbaara
+It is they who have not died in war that start it.
+599. Mwagi maguta oigaga hünyũ ni ūmwe na maguta
+He that lacks fat says ugliness is the same as beauty.
+```
+
+## Page 75
+
+<!-- footer: 73 -->
+```text
+600. Mwagi maguta oigaga ati king'arũ ni ũndũ ũmwe na maguta
+He who has no fat (to smear himself with) says that ochre
+is as good.
+In both these proverbs ‘fat’ means ‘beauty’.
+‘Sour grapes,’ as the fox said, when he could not reach them.
+601. Mwaki ndũhoragio na mwaki
+Fire is not extinguished by fire.
+Fire is not to be quenched with tow.
+602. Mwambi nacio tiwe mũrigia nacio
+He that begins, is not he that finishes.
+Judge not of men or things at first sight.
+603. Mwamũkiri ndairaga ngoro
+He who receives does not loathe.
+A gift horse should not be looked in the mouth.
+604. Mwana mũkũrũ na ithe ni hamwe
+The eldest son and the father are one thing.
+The proverb means that after the father’s death the eldest
+son rules.
+605. Mwana mwega no nda
+Only the belly is a good (lucky) child (for its owner takes
+care of it and never lets it empty).
+The belly is the commanding part of the body.
+606. Mwana mwende ndoi kũinia thũmbi
+The son most loved (by his parents) does not know how
+to shake his feather head-dress.
+The proverb alludes to the initiation rite, on which occasion
+a special head-dress composed of ostrich feathers
+is worn by the candidates. It means that often the young
+man for whom the parents have bought a costly headdress
+so that he may look well, does not show any
+gratitude by wearing it proudly.
+Things got easily are not appreciated.
+```
+
+## Page 76 (printed: 74)
+
+```text
+607. Mwana ndaheanagwo
+The child is not given away without a price.
+The proverb is used especially by a father to the young man wanting to marry his daughter. It must be borne in mind that the Kikuyu girl is not given to her husband, but she is bought by him.
+No gains without pains.
+
+608. Mwana ndahüragwo ithe ari ho
+The son is not beaten when the father is near.
+
+609. Mwana ndetagia ithe nyama
+The son need not ask his father for a piece of meat (for a parent spontaneously gives his children the best food).
+
+610. Mwana ũri kio ndasaga mũhambia
+A child who likes work does not lack one to wash him, i.e. to take care of him.
+
+611. Mwana ũri Mũneri ndatangaga mai
+God tempers the wind to the thorn lamb.
+
+612. Mwana wa ndigwa niwe ũi kwiera
+The baby that has some one to care for it does not dirty itself.
+
+613. Mwana wa ngari akunyaga ka nyina
+Young and old age complete each other.
+
+614. Mwana wa ngori ndekagira njugiri kũgũrũ
+The orphan boy wears no rattles on his feet.
+
+615. Mwana wa rwendo ariaga nyina na itie
+The Kikuyu used to wear rattles on their feet when dancing.
+
+The proverb has the obvious meaning that the son who
+```
+
+## Page 77 (printed: 75)
+
+```text
+realizes he is his parent's Benjamin gives them most trouble. But it also means that the child born of illegitimate love will soon become a nuisance to his parents.
+To nourish a viper in one's bosom.
+616. Mwana wa thahu ndatigaga kiriro
+The son of sin does not cease weeping.
+Sins and debts are always more than we think them to be.
+617. Mwana wa na ithe ndanyuaga muma
+The son, whose father is still alive, takes no oath (for his father defends him and if necessary, takes the oath instead of the son).
+618. Mwanake ni kienyũ kia Ngai
+The youth is a part of the Divinity.
+The proverb originates in the fact that the circumcised Kikuyu youth is greatly respected by women and uncircumcised young men.
+619. Mwanake wi na indo ndoihanaga
+The youth who has enough to buy his girl, need not beseech her.
+Money is the sinew of love as well of war.
+620. Mwaniki ambe canike
+He who airs something must air himself first.
+No gains without pains.
+621. Mwari mwega ahitükira thome wa ngia
+A fair girl does not stop at a poor youth's (for he could not buy her).
+622. Mwari mwerũ ndaragũragirwo
+One does not consult the witch-doctor about a white daughter.
+It is luck for Kikuyu parents to have a daughter with skin whiter than the average. Such a girl will be sold dearer to her husband.
+623. Mwaria ciene arigagwo ni ciake
+He who talks about others' affairs does not know his own.
+```
+
+## Page 78 (printed: 76)
+
+```text
+624. Mwatū ndwiragirwo mwana
+A boy is not sent to collect the honey (for he does not know
+how to collect it).
+Every man does his own business best.
+625. Mwatūkiria ki? Aca no thũmbĩ na rũhuho
+What have you that we have not? Nothing but ‘thũmbĩ’
+and wind.
+‘Thũmbĩ’ is the piece of cloth or leather used to fasten
+ostrich and other birds’ feathers around the head.
+The proverb means, ‘There is no news’.
+626. Mwathwo ni nda arũgĩte mwathwo ni ithe
+Being ruled by one’s stomach is better than being ruled by
+one’s father.
+627. Mwega ni ongagwo
+Good people are sucked.
+Cover yourself with honey and the flies will attack you.
+628. Mwendi gatungu ni mwenjeri
+He that wants to become rich must till the earth.
+Sleeping foxes catch no poultry.
+629. Mwendi irura ni mũcini
+He who wants papyrus-ashes burns papyrus.
+Previous to the advent of Europeans, the Kikuyu used
+papyrus-ashes, which are supposed to be rich in sodium,
+for cooking purposes.
+Let him that is cold blow coal.
+630. Mwendi mũhiriga ũtuikane etagia rũrĩmĩ na mbere
+ndarũriaga
+He who wants to cause disagreement within the clan asks
+for the tongue (of the slaughtered goat) which he was
+not wont to eat before.
+The tongue of the goat is a choice morsel which belongs
+by right to the head of the family or clan. The proverb
+means that he who wants a pretext for quarrelling, asks
+for something which he cannot be given.
+```
+
+## Page 79
+
+<!-- footer: 77. -->
+```text
+631. Mwendi ūru ni awonaga
+He who seeks evil finds it.
+
+632. Mwendi ūthaka ndacayaga
+He who wants beauty does not complain (if it costs him
+some pain).
+No gains without pains.
+
+633. Mwendia ni agūraga
+He who sells buys.
+To buy and to sell are both business.
+
+634. Mwendwo ndari ngarari
+He who is loved receives no refusal.
+
+635. Mwenjani mikuri ndoi ũngi
+The barber who shaves badly does not know any other
+(better) way of shaving.
+The first degree of folly is to think himself wise, the second is
+to tell others so, the third is to despise all counsel.
+
+636. Mwere mwega ūmenyagwo na ngetho
+The good millet is known at the harvest time.
+A tree is known by its fruit.
+
+637. Mwetereri ariaga ya mūgwato
+He who waits gets the best food, i.e. the biggest potato,
+the sweetest maize, etc. and can eat better cooked food.
+
+638. Mwicariria ndari karo gatuhu
+He who wants to dig out a potato does not use a blunt pole.
+The proverb means that he who wants to accomplish
+something, uses just those means that ensure success.
+
+639. Mwigerekanio wateire kiūra matina
+The frog that compared itself to the ox lost its buttocks.
+There is a fable, that a frog seeing what big buttocks
+the ox had, thought it could grow as big by swelling.
+But it burst and so lost buttocks and life.
+All covet, all lose.
+```
+
+## Page 80 (printed: 78)
+
+```text
+640. Mwigerero wa ngoro ndũkinyaga no wa Ngai ũkinyaga
+What man wants does not reach the goal, only what God
+wants reaches it.
+Man proposes, God disposes.
+641. Mwigito ti guoya
+Self defence is not fear.
+Weapons bode peace.
+642. Mwiigananio ti wa mweri
+To obtain what one wants is not a month's job.
+Time and straw make medlars ripe.
+643. Mwiikaria ndari haro
+He who lives alone has no quarrel.
+It takes two to make a quarrel.
+644. Mwiikaria ndari rũruto
+He who looks after his own business has no trouble.
+645. Mwinyamaria ndari ikwa nyũmũ
+He who has no patience will have no hard yams.
+Yams are fully ripe only when they have grown hard.
+So he who wants to eat a good yam must be patient and
+wait till it is hard.
+Everything is good in its season.
+646. Mwiri ti icoya ati ni ũgũtembũka
+One's body is not a banana leaf which should be rent.
+The proverb is told to people who threaten to abuse or
+have abused others.
+647. Mwiri ũri thakame gũtiri ũtarwaraga
+The body which has blood cannot help being subject to
+illness.
+They who would not suffer in this world should not be born in it.
+648. Mwirihiria niwe mũru
+He who revenges himself is bad.
+In taking revenge a man is but even with his enemy; but in
+passing it over he is superior.
+```
+
+## Page 81 (printed: 79)
+
+```text
+649. Mwitaari ndari ūthũ
+He who takes counsel only from himself meets no hatred.
+650. Mwithinia ndathinũkaga, no mũthinio nĩ athinũkaga
+He who is the cause of his own troubles never comes to
+the end of them; but he who is troubled by others does.
+651. Mwoni ūmũthĩ tiwe mwoni rũciũ
+He who sees today does not see tomorrow.
+Today thee, tomorrow me.
+652. Narua, mũgogo ūtanatendera
+Haste, before the trunk-bridge becomes slippery.
+It must be borne in mind that native bridges consist
+mostly of only one trunk spanning the two banks of
+the river. Hence passing on such bridges in wet weather
+is dangerous.
+653. Nda ĩmwe yumaga mũici na mũrogi
+The same womb gives birth to a thief and a poisoner.
+654. Nda ĩrũgite ita
+The belly is more important than war.
+655. Nda ti mũtwe
+The belly is not a head.
+Into the head you can put as many things as you know
+without filling it, but you cannot do the same with your
+belly.
+656. Ndakũrama kinganga nawe wanama kingware?
+I gave you the beauty of a guinea fowl and you give me
+the beauty of a francolin.
+The proverb originates in the following fable. Once
+79
+```
+
+## Page 82
+
+<!-- footer: 80 -->
+```text
+upon a time the guinea fowl wanting to go to dance,
+called upon the francolin to have its feathers dressed.
+The francolin, hoping to have the same favour returned
+by the guinea fowl, assented. But the latter taking as an
+excuse of its laziness that the dance was about to begin,
+left the other bird in the lurch. This is why the guinea
+fowl has now got much finer plumage than the francolin.
+To do good to the ungrateful is to throw rose-water into the sea.
+657. Ndaregirwo ni ikere ta njagathi ikiregwo ni guoya
+I have got no calves as lizards have got no hair.
+Well shaped calves are supposed by the Kikuyu to add
+a great deal to one's beauty: therefore they are much
+appreciated.
+As poor as a church mouse.
+658. Ndathi ndikũraga
+The arrow does not age (although it be often used).
+Good bees never turn to drones.
+659. Ndaya ikinyia
+The long road arrives (at the goal).
+The proverb means that a long but sure way, is better
+than a short but dangerous one.
+Fair and softly goes far in a day.
+660. Ndegwa nyinyi ihaicaga ng'ombe na mûtwe
+The young bull mounts the cows from the head.
+Young is the goose that will not eat oats.
+661. Ndeto itimataga ta iria
+Sentences do not curdle like milk.
+Words and feathers are tossed by the wind.
+662. Ndeto njega ni iria njirane
+Good words are those spoken of common accord.
+The proverb means both:
+'Friendship is friendship and business is business'
+and
+'A word is enough to the wise'.
+```
+
+## Page 83
+
+<!-- footer: 81 -->
+```text
+663. Ndía kahora īgiaga gūkameria
+The animal that eats slowly can swallow well.
+He that goes softly, goes safely.
+664. Ndiakagwo na ya wakinī
+Nobody is forced to build his hut on the pattern of his
+‘wakinī’.
+‘Wakini’ is a person circumcised at the same time—
+somebody of the same age-group.
+Every one to his own taste.
+665. Ndiani ndikinyaga iraka
+The thief does not tread on dry leaves (for they would
+betray his presence).
+666. Ndiambaga na magua
+The bee does not begin with the comb.
+A good beginning makes a good ending.
+667. Ndīgūre: Konyū kegūra ni komirie ikwa
+Humble yourself: the inhabitants of Konyu were able to
+grow the yams after humbling themselves.
+The proverb originates in the legend that the people of
+Konyu, a place in Kikuyu country, who had been at war
+with their neighbours of Mathira, ceased to be raided
+and could till their fields in peace, only by submitting.
+He makes a good war that makes a good peace.
+668. Ndīkūraga na migiria
+The ox does not become old with strong muscles.
+The proverb means that man cannot expect to age and
+to retain the vigour of his youth.
+669. Ndīrī ndiiyūragira kūria ikūgaragario
+The mortar is not filled with juice in the place where it is
+rolled.
+The proverb means that anything is found useful only
+in that place and by those people who are in need of it.
+Everything is good in its own season.
+```
+
+## Page 84 (printed: 82)
+
+```text
+670. Ndirĩ njega ndiringanaga na mũthĩ mwega
+A good mortar never meets a good pestle.
+The proverb means that a good wife rarely meets a good husband and vice versa.
+671. Ndia ngiri yanina andũ
+Still water has finished many men.
+Beware of a silent dog and still water.
+672. Ndikwenda wingwatirire ta kieha
+I do not want you to stick on to me like beard moss (sticks on the tree).
+Live and let live.
+673. Ndithũire mũnyoni ta mũnyaniriri
+I do not hate him who sees me so much as him who reveals me, i.e. my faults.
+Nobody is willing to acknowledge he is in fault.
+674. Nditikũ na magũmi, o kũria mũgaitanirira
+Nditikũ and Magũmi (go) to the place where you can agree.
+‘Nditikũ and Magũmi’ are metaphorical names used to mean two quarrelsome people. The proverb is told to disagreeable people, who though warned do not stop their strife.
+He that cuts himself willingly deserves no balsam.
+675. Ndiunikaga thondu
+It is not the meagre (but the fat) ox that breaks its leg.
+Misfortunes seldom come alone.
+676. Ndonga nanu ĩrũgitwo ni mũkari
+A rich evil-doer is worse than a miser
+677. Ndonga ĩmwe ndihingaga iriũko
+One rich man cannot close the ford; i.e. cannot do all he would.
+No living man all things can.
+```
+
+## Page 85 (printed: 83)
+
+```text
+678. Ndūgate kūgūrū ta Nyakinyua
+Do not give your foot the position which ‘Nyakīnyua’
+gives.
+‘Nyakīnyua’ is used to mean old women, who often sit
+unbecomingly.
+679. Ndūgira na kaigwa kayo
+Every little hole of the ear has its little thorn.
+The Kikuyu used to put little sticks or thorns in the
+pierced upper part of the ear.
+Every sparrow to its ear of wheat.
+680. Ndūgetange ta kīhia kīa mūcai
+Do not torment yourself as you torment the seeds of the
+broom-tree (which you scatter everywhere without any
+regard).
+681. Ndūgū irutagwo njira
+Friendship begins with meeting at a road.
+682. Ndūgū ni makinya
+Friendship is steps, i.e. it consists in going to see one
+another.
+Friendship consists in visiting friends.
+683. Ndūgū nyingī ithatagia mūhuko
+Many friends make one’s pocket empty.
+Friends are pick-pockets.
+684. Ndūgū ya mwana īmatagio ni nyina
+The friendship of the son is strengthened by his mother.
+Children’s joys are parents’ joys.
+685. Ndūire nyiki ta mūrogi
+I live alone like a poisoner.
+The proverb illustrates the Kikuyu’s dislike for poisoners
+and wizards.
+686. Ndūrio ni mata ta thua
+I live on saliva like a flea.
+To live from hand to mouth.
+```
+
+## Page 86 (printed: 84)
+
+```text
+687. Ndũkagerekanie gĩkuũ na toro
+Do not compare death with sleep (because they are not
+the same).
+
+688. Ndũkamenyithie wa itara
+Do not make home affairs known.
+Do not wash dirty linen in public.
+
+689. Ndũkanine ndũma mbira
+Do not finish the small ‘ndũma’.
+‘Ndũma’ are the tubers of an edible arum much cultivated in Kikuyu. The proverb means that one must dig out only the big tubers and leave the small ones to grow new plants.
+Enjoy the present but think also of the future.
+
+690. Ndũkanũmirire ta njũũ na ngigi
+Do not follow me as the ‘njũũ’ follow the locusts.
+‘Njũũ’ is the name of a kind of passerine bird, which
+follows locusts to feed on them.
+God deliver you from a false friend.
+
+691. Ndũra ĩciaraga mĩigwa
+The ‘ndũra’ gives forth nothing but thorns.
+‘Ndũra’ is the name of a thorny tree. The proverb means:
+One cannot gather figs from thistles.
+
+692. Nduma ndihitithagia mũgĩa mbere
+Darkness shows no wrong path to him who gets what he
+wants before dark.
+Early to bed, early to rise, make a man healthy, wealthy and
+wise.
+
+693. Ndumumu ndionagia ĩngĩ njira
+A blind man does not show another blind man the way.
+Do the blind lead the blind? Do they not both fall into the
+ditch?
+```
+
+## Page 87 (printed: 85)
+
+```text
+694. Ndundu ya nyina na mwana ndiringagiririo
+It is not fair to attempt to penetrate mother and son's
+secrets.
+695. Ndurumo igiri itiguanaga ikigamba
+Two noisy waterfalls cannot agree (in their tune).
+Two of a trade seldom agree.
+696. Ndutura irumaga irorete gitara kiayo
+The turtle-dove coos when it has seen its nest.
+Every bird likes its own nest best.
+697. Ni hiti mūgambire
+It is the hyena that howls.
+The proverb is applied to boisterous people.
+Barking dogs seldom bite.
+698. Ni itumaga na itirue
+One can sing the song which precedes the circumcision
+and not be circumcised.
+Man proposes, God disposes.
+699. Ni mūguanite ta gikwa na mūkũngũ
+You agree like the yam and the tree to which it clings.
+To be like David and Jonathan.
+700. Ni gũkaga mūkira mwite
+Somebody may come in higher in dignity than he who was
+firstly invited.
+The proverb has almost the same meaning as the words
+of the Gospel: 'When thou art invited to a wedding sit not
+down in the first seats at the table, lest perhaps one more
+honourable than thou be invited by him'; etc.
+Humility often gains more than pride.
+701. Ni ngingo itindaga irĩ theri ti nda
+It is the neck that stays without ornament, but not the
+belly (without food).
+```
+
+## Page 88
+
+<!-- footer: 86 -->
+```text
+702. Ngaita itiriagirwo kwenda
+The ‘ngaita’ is not eaten unless there is reason.
+‘Ngaita’ is the very bitter fruit of a shrub, which is
+taken as an anthelmintic.
+Medicines are not meat to live on.
+703. Ng’aragu ya mündũ ũngĩ ndingigiria ngome
+Other people’s hunger does not hinder me from sleeping.
+704. Ngarari ni githũria kia mbaara
+Arguments are the source of strifes.
+It takes two to make a quarrel.
+705. Ngarari ni kamena
+Discord breeds scorn.
+706. Ngari ndioĩ gũkunya ni kuonio yonirio
+The leopard did not know how to seize its prey: it was
+taught.
+The Kikuyu say that when the leopard began to kill
+goats, it did not know how to seize them to kill. One day
+frightened by the shepherd, it had to leave its prey
+badly wounded though not killed. From the tree where
+it had taken refuge it heard the shepherd say: “What
+luck! Had my goat been seized by the neck, it would be
+already dead’.
+707. Ngatho ithingatagio ingi
+One kindness prepares for another.
+One good turn deserves another.
+708. Ngatia ciathii hiti cieragara
+When lions have gone, hyenas dance.
+When the cat is away, the mice will play.
+709. Ngemi ciumaga ndiri-ini
+The woman’s trills are shouted at the mortar.
+The proverb refers to the songs and shouts of the women
+crushing the sugar cane to be brewed; and means that
+such songs are sung only on that occasion.
+Everything has its time.
+```
+
+## Page 89 (printed: 87)
+
+```text
+710. Ng'enda thi ndiagaga mūtegi
+The animal that treads on the earth may find its trapper.
+The proverb means:
+‘To err is human’.
+
+711. Ngia na mūigwa itikomaga
+The poor and the thorn do not sleep.
+The former, say the Kikuyu, is kept awake by his anxieties whilst the latter is always on the alert in order to sting anyone who happens to touch it.
+Poverty breeds strife.
+
+712. Ngia yethagwo mūkuha wayo
+The poor man is robbed even of his awl.
+The poor man turns his cake, and another comes and takes it away.
+
+713. Ngi imwe yoragia mūgūgūta
+One fly spoils an ox-hide.
+A little leak will sink a great ship.
+
+714. Ngi ndiri rūga
+The fly has no sinew.
+You cannot make a silk purse from a sow’s ear.
+
+715. Ngi irathagwo ūigana mūkiha ūria īri naguo
+The fly is bled proportionately to its veins.
+If you squeeze a cork, you will get but little juice.
+
+716. Ngingo ndikiraga mūtwe
+The neck does not grow above the head.
+Everything to its place.
+
+717. Ngingo ya mūria-ng’ūrū ni githitū na rūrigi
+The neck of him who sells too dear, is all amulets and necklaces (for nobody buys from him).
+All covet, all lose.
+
+718. Ng’ombe itionagwo ni ithayo
+Oxen are not found through laziness.
+Laziness travels so slowly that poverty soon overtakes it.
+```
+
+## Page 90 (printed: 88)
+
+```text
+719. Ng'ombe yahithio njaũ ikamagirwo ikaya
+When the cow is left to the care of a man who is not the
+owner, the calves are suckled only when they cry.
+Look to the cow, and the sow, and the wheat mow, and all will be
+well now.
+720. Ngoro irĩga kĩria ikwenda
+The heart eats what it likes.
+Love is blind.
+721. Ngoro ni mũrũ wa nyina na mündũ
+Every man's brother is his heart.
+Few hearts that are not double, few tongues that are not cloves.
+722. Ngoro ni mũtĩtĩ mũtumanu na ndũngitonyeka ni mündũ
+The heart is a thick forest which cannot be penetrated by
+anybody.
+What is in one's heart man's eyes see not.
+723. Ngoro ndĩrumaga tũũ
+The heart does not curse for nothing.
+The proverb means that one does not repine nor swear
+at another without a reason.
+Everything has its reason.
+724. Ngoro itĩmamire ta njira
+Hearts do not meet (converge) like roads.
+Eat a peck of salt with a man before you trust him.
+725. Ngũgũtũ ya gwitherira ndĩrĩ gacere
+The beads one has chosen have no imperfection.
+Every man thinks his own geese swans.
+726. Ngũkũ ya maguta ni iikagirio
+(Even) drinking liquid fat comes to an end.
+Liquid fat of animals is esteemed a dainty by the Kikuyu.
+All good things come to an end.
+727. Ngũngũni ireragira rũkũ-ini
+The bedbug prospers on a piece of wood.
+There is a special providence in the fall of a sparrow.
+```
+
+## Page 91
+
+<!-- footer: 89 -->
+```text
+728. Nguri ndigayagwo
+The beard-pincers are not inherited.
+It must be remembered that the Kikuyu do not shave but
+pull out the beard with pincers forged by native blacksmiths
+. The proverb means that there are some things
+which are so personal that the father does not bequeath
+them to his son; he has to get his own.
+
+729. Ngumo ndigana mwee
+The fame is never up to its owner's merit,
+He that doth good for praise only, merieth but a puff of wind.
+
+730. Nguo ngega ndikagio ritami
+To good clothes no ornament is added.
+
+731. Ngwa mbere ti noru ta ngwa thutha
+The first fall is not as bad as the second fall.
+
+732. Ngwaci itigathagwo rienjero
+Every man's tale is good till another's be told.
+
+733. Ngware ikirara mutti iguru ndiatigiro kuri kwega
+Potatoes are not praised when they are dug out (but when
+they are eaten).
+
+The proof of the pudding is in the eating.
+
+734. Ngware ndiragagiro nja
+The francolin is not killed in the courtyard.
+
+The francolin is not killed in the courtyard.
+According to Kikuyu superstition to kill a francolin found
+on one's courtyard brings in misfortune. If anybody has
+done it, he must slaughter a goat to propitiate the spirits.
+There is a measure in all things.
+
+735. Ngware nyinyi iri na mukuririe wayo
+The little francolin has its way of scratching.
+
+Every man his way.
+```
+
+## Page 92
+
+<!-- footer: 90 -->
+```text
+736. Njamba ĩgũga na ĩngĩ
+A hero dies with the other.
+The proverb refers to the days of war before the advent
+of Europeans, when warriors went together to plunder
+and were bound to win or to die together.
+
+737. Njamba inwe ndilĩngaga inĩiko
+One strong man only cannot close the ford of a river.
+
+738. Njamba ndirĩagwo ni wirĩ
+A strong man is not overpowered by his task.
+
+739. Njamba ndirĩumaga imera ĩgĩri
+A powerful man does not dominate two seasons.
+
+740. Njamba ni itĩhaga rĩa rĩka
+A strong man is the ornament of his age-group.
+
+741. Njamba ti ikeĩre
+Strength does not dwell in the calves of the legs.
+
+The proverb means that one's strength does not dwell
+in one's appearance, but rather in mind and virtue.
+
+742. Njau irĩ ndoge nyina ni ndoge
+If the calf has been poisoned, also its mother has been (For
+they ordinarily eat the same food).
+
+Like father, like son.
+
+743. Njeterera ndikĩnyaga
+He who waits does not arrive.
+
+Never leave that till tomorrow which you can do today.
+
+744. 'Nika na njika' ndiri marũĩĩ
+'Do to me and do to me' have no bitterness.
+
+The proverb means that a person cannot complain on
+receiving from others the same kind of treatment as he
+had given to them.
+```
+
+## Page 93 (printed: 91)
+
+```text
+745. Njira ndiriga mugendi 'huruka'
+The road never says to the traveller, 'Take a rest'.
+
+746. Njira nguhi no ya ũiri
+A short way is only the way to bed.
+
+The proverb is told when one wants to cut short a discussion, or when one wants a whole night to reflect before making up one's mind.
+
+Consult with your pillow.
+
+747. Njugu ndiremagwo ni miguongo yayo
+The elephant is not overpowered by its tusks.
+
+748. Njohi ni gacuhüra
+The beer is a thing that unites (the tongue).
+
+When the wine is in the wit is out.
+
+749. Njoya na múthece ndiyagira ingi
+A bird that picks food with the beak does not collect food for another bird.
+
+750. Njuki ndiri mboora igiri
+The bee has not got two stings.
+
+The proverb is told to greedy people, who when given something are not satisfied and want more. Much wants more.
+
+751. Njugüma ya njamba ithukagirio ũgeni-ini
+A strong man's club is tested by foreigners.
+
+The proverb means that it is foreigners who actually test the strength of a man, for they dare measure themselves with him. Whilst the people who live with him, judging his strength as a thing beyond any doubt, are afraid of testing it.
+
+The proof of a pudding is in the eating.
+
+752. Njukü irügite rüü rüyüru
+Slander is worse than a river in flood.
+
+The most dangerous of wild beasts is a slanderer, of tame ones a flatterer.
+```
+
+## Page 94 (printed: 92)
+
+```text
+753. Njukũ ni migathi ya itonga
+Calumnies are (as plentiful as) rich people’s beads.
+754. Nyamũ ngũrũ ndihatagwo maai
+An old ox is not refused water.
+Old age is honourable.
+755. Nyama njũru iroragwo na kanua
+Bad meat is tasted with the mouth.
+The proof of the pudding is in the eating.
+756. Nyamacũcũ, kanua ni koinagirwo ithigi
+Woman, remember that the mouth is sometimes covered
+with a branch.
+A woman cannot keep a secret.
+757. Nyanja ũmwe nditiragia itega
+One gourd (of beer) does not stop the gift.
+The Kikuyu used to send their relations and friends
+presents of native beer in gourds. The proverb means
+that the breaking of one gourd in transit does not prevent
+the delivery of the others.
+758. Nyanja nguhi nditegaga
+A short gourd (of beer) is not given as a present.
+A slight gift, small thanks.
+759. Nyeki ya nja ndirikaga
+The grass of the courtyard is not eaten.
+The proverb means that oxen do not eat the grass
+growing near their pen, for they know it has been fertilized
+with their droppings. But the oxen which come
+from another pen and have no reason for loathing such
+good pasture feed on it with delight. The proverb
+is applied to the girls who ordinarily are not loved by
+the young men of their village, to whom the girls of other
+places look handsomer.
+Never a prophet was valued in his own country.
+```
+
+## Page 95 (printed: 93)
+
+```text
+760. Nyitira na nginyirira ti imwe
+To possess and to send for is not the same.
+There is many a slip 'twixt the cup and the lip.
+761. Nyoko nditugaga
+Beauty does no good.
+762. Nyoneka narua yūraga narna
+What is found quickly, is quickly lost.
+Quick come, quick lost.
+763. Nyoni kirimũ yakaga irigũ ikũrũ igũrũ itoi riatemwo
+The foolish bird nests on an old banana tree and does not
+know that it will be cut down.
+764. Nyoni yakaga nyũmba na mũthice ūmwe
+The bird makes its nest only with one beak.
+765. Nyota wa gikuũ ndũyotokagwo
+Death's thirst is never quenched.
+There is no medicine against death.
+766. Nyũmba ikũhĩa mwene ni otaga
+If the hut burns, its owner gets warm.
+767. Nyũmba irindagira magothe
+The house covers many things.
+There is not always good cheer where the chimney smokes.
+768. Nyũmba na rika itũnagwo
+The clan and 'rika' cannot be cancelled.
+People initiated in a particular season are banded together in an age-group and are said to be of the same
+rika'. They are supposed to be obliged to help one
+another, like the members of the same clan.
+769. Nyũmba ndigukumagio ikũmbĩ
+A granary cannot be pushed into a hut.
+Don't bite off more than you can chew.
+K.P.-D
+```
+
+## Page 96 (printed: 94)
+
+```text
+770. Nyũmba nyinyi ĩciraga ũtukũ
+The little house discusses its affairs by night (because they
+are not worth discussion by day with waste of time).
+
+771. Nyũmba nyinyi yoragana yathama, yoragwo yathama
+If a member of a small family is killed or kills another, the
+family moves (since it may be unable to defend itself).
+
+772. Nyũngũ ĩrugaga na ndirie
+The pot cooks the food and does not eat it.
+Bees that make honey, do not taste it.
+
+773. Nyũngũ ya gana ndimeraga
+A rotten gourd seed does not germinate.
+Immoral people seldom get offspring.
+
+774. Nyũngũ ya maguta ndikuaga
+The pot in which fat is stored does not break (for it is well
+fed).
+
+775. Nyũngũ ya mũĩngĩ ndiagaga mũtengũri
+The cooking pot from which many people await their food,
+does not lack him who takes it from the fire.
+In like way, the problem in which many people are
+interested, will have one able to solve it.
+
+776. O mũndũ athondekaga ũriri wake
+Every man makes up his own bed.
+Every bird must hatch its own eggs.
+
+777. O mũndũ ahuragia mwaki na mwihirito wake
+Every man scratches in his fire and in his ‘mwihirito’.
+‘Mwihirito’ is the space between any two of the three
+stones of the Kikuyu hearth.
+Everyone should sweep before his own door.
+```
+
+## Page 97 (printed: 95)
+
+```text
+778. Rigu ndütwaranagio
+The food which one takes as provision for one’s journey,
+is not carried by another person.
+Take heed is a good read.
+779. Riri nda rikuaga ũnene
+The foetus which is in the womb carries the future.
+The Kikuyu use this proverb to mean that only God
+knows the future, just as only God causes a foetus to be
+a male or a female.
+The future is in the hands of God.
+780. Ritwa ni mbokio
+The name is a useless thing.
+From our ancestors came our names, but from our virtues our
+honours.
+781. Riu ni thatũ, no riu ringĩ ni mbura ya mahiga
+Now we have misty weather, but after a while it hails.
+To become worse and worse.
+782. Rigi ria nyũmba ritirutagwo ria gũtiria nyũmba ya
+ũngĩ
+The door of one’s hut is not taken to close another’s hut.
+He who has but one coat cannot lend it.
+783. Rika na nyũmba itiürüga
+One does not lose the age-grade nor the clan-right.
+Kikuyu circumcised in a particular season are banded
+together in an age group to which a name is given, after
+a special event of the season. This age-grade as well as
+the clan imply certain rights which no Kikuyu wants to
+give up.
+No man is willing to waive his rights.
+```
+
+## Page 98 (printed: 96)
+
+```text
+784. Riko na mwana na nda itiũĩ ‘kwaga’
+The hearth, the child and the belly ignore the word ‘lack’.
+785. Riko na mwana na nda itiganagia
+The hearth, the child and the belly never have enough.
+786. Ringira haria rũkũgambira
+Cross the stream where it roars.
+Still waters run deep.
+787. Ritho riarira riariria iniũũ
+The watering eye makes the nose water.
+When the head aches all the body is the worse.
+788. Ritho riathigithwo riarira
+The eye, which is disturbed, waters.
+Let sleeping dogs lie.
+789. Ritho rimenaga njamba
+The eye scorns heroes; i.e. it can judge falsely of what it sees.
+Never judge from appearances.
+790. Ritho riũĩ thaka ritiũĩ ngamini
+The eye discerns the beauty but not the kindness (of a person).
+791. Ritho ti ndami
+The eye is not a piece of cloth (which can be thrown away).
+The eye is the pearl of the face.
+792. Ritho ti ndathio
+The eye is not a thing which can be asked for.
+793. Riũa ritietagirira mũthamaki
+The sun does not wait for the judge.
+The sun may do its duty though your grapes do not ripen.
+794. Riũa ritiri gitonga no ngia theri
+For the sun there are no rich, but only poor people.
+The proverb means that in the dry season neither the rich nor the poor people can plant.
+The sun shines on the just and the unjust.
+```
+
+## Page 99 (printed: 97)
+
+```text
+795. Rūĩa rũkũhi rũĩri thogora
+A short hide is of no value.
+
+796. Rūĩa rwa mwene rũĩri irĩga
+The owner of the goat does not give away its hide.
+The proverb refers to the fact that the skin of a slaughtered goat belongs by right to the animal's owner, who does not allow anybody else to have it for nothing.
+Metaphorically it means that nobody gives his life but for a cause worthy of it.
+
+797. Rūga runaga ũta
+The string (too tightly strung) breaks the bow.
+A bow long bent at last waxeth weak.
+
+798. Rūgendo rwa njũa na rwa mbũri iĩĩtwaranaga
+Hides and goats do not keep the same pace (when they are taken to market).
+In fact goats go on foot while hides are carried by men, who actually go more quickly.
+Every man in his way.
+
+799. Rūgūtena rūtagaga īgeca
+The cutting knife does not lack bruises.
+Touch pitch and you will be defiled.
+
+800. Rūĩĩr ũgi ni rũĩilikaga
+A knife too well sharpened easily breaks.
+To kill with kindness.
+
+801. Ruhonge rwa mũti rũtithendikaga mündũ
+A tree branch cannot put forth a man.
+Nothing comes out of the sack but what was in it.
+
+802. Rūĩ runenelagio ni ũthĩma
+The river is made bigger by the small springs.
+Little winnings make a heavy purse.
+
+803. Rūĩ rũthamaga mũkuru waro
+A river is not made to flow out of its bed.
+Every sparrow to its ear of wheat.
+```
+
+## Page 100 (printed: 98)
+
+```text
+804. Rũkaga rũtaraire rũgakĩra rũraire
+An occurrence in the morning can be of more importance
+than one of the night before.
+Problems should be dealt with in order of importance,
+not in order of time.
+
+805. Rũmĩra nguo haria hatarĩ ihoro
+Take hold of your clothes where there is no hole (lest you
+would tear them even more).
+
+806. Rũmwe rũranagwo rũkirĩa: rwagomania hĩa rũgacokanwo
+The members of one clan can leave one another, but after
+all they return (to help one another).
+Mutual assistance is one of the pacts by which members
+of one clan are bound.
+
+807. Rũmwe rũtĩuranagwo, no kũrikana rũrikanaga
+The clan does not break, but its members can separate.
+
+808. Rũrakora mũndũ rũtĩri mũthemere
+The fate, dear man, cannot be avoided.
+
+809. Rũĩ itara rũthekaga rũĩ riko
+The firewood which is in the pile laughs at the firewood
+which is already in the fire.
+Today me, tomorrow thee.
+
+810. Rũĩ kuuma njora rũticokaga tũũ
+The knife which has been unsheathed does not return into
+its sheath without having done some work.
+
+811. Rũrĩmi rwa ngĩa rũtithiraga kimanda
+The poor man’s tongue is always thin.
+Since a poor man’s tongue is supposed to utter only
+words of no importance, so it is said to be thin. The
+meaning of the proverb is that a poor man will never
+be listened to.
+The poor man’s wisdom is as useless as a palace in a wilderness.
+```
+
+## Page 101 (printed: 99)
+
+```text
+812. Rũri mūciĩ rũri mūgündā
+If you have a pain at home, you have it in the field too.
+No place is fenced against suffering.
+
+813. Rũri na Komũ rũri na Kaigũ wa nyina
+If Komu has it, Kaigu, his brother, has it too.
+‘Komũ’ and ‘Kaigũ’ are used in Kikuyu proverbs to denote brothers. The proverb means that if a man has something (either good or bad) his brother has a share in it too.
+
+814. Rũrira rũtithambagio rũĩ
+Family-ties cannot be washed at the river, i.e. cannot be untied.
+
+815. Rũrigĩ rũri nja rũtiagaga gĩa kuoha
+The string in the courtyard does not lack something to tie (in due time, although at present it may seem a useless thing).
+
+816. Rũrigĩ rwetagiriria mündũ mũkwa
+The string can be useful until a rope (of hide) can be got
+Little is better than nothing.
+
+817. Rũtemaga mwenji
+The knife cuts him who shaves another.
+A knave is often caught in his own trap.
+
+818. Rũthuko rũnungaga rũri mbũthũ
+The ‘rũthuko’ spreads its smell from its container.
+‘Rũthuko’ is a medicine given by a witch-doctor to a
+trapper to help him to attract prey, or to a shepherd to
+call his sheep. It should be burnt and the smell of the
+smoke is supposed to be a call for animals. But natives
+believe the medicine to exercise its power even from its
+container.
+The proverb compares the smell of the medicine to the
+words of man, which are supposed to be a reflection of
+his mind and means that one can judge him from his
+words.
+```
+
+## Page 102
+
+<!-- footer: 100 -->
+```text
+819. Rũtungu rũmwe rũtiraragia mwaki
+One piece of wood only does not keep the fire alight.
+One stroke fells not an oak.
+820. Rũtungu rwa gwitiniria rũtiri githong'ori
+The log which I myself cut has no knot.
+Every potter praises his own pot, and more if it be broken.
+821. Rũtwaraga mũthambiri
+The stream drowns even the swimmer.
+822. Rũ ni rũrigi rwa kũruta rũngĩ kinya
+That is a thread for pulling another thread out of the
+‘kinya’.
+‘Kinya’ is a calabash used to draw water or to hold
+gruel. Here it is taken to mean the hidden place wherein
+one’s secrets are kept. The proverb is told to people
+who ask indirect questions for discovering what they
+cannot learn directly.
+823. Ruuo rũriaga mwene
+The pain is felt by its owner (and not by another).
+824. Ruuo rũtiguanagirwo
+Pain cannot be felt by one for the other.
+825. Rutaniria mũigwa na mahira
+Take out the pus with the thorn.
+Do nothing by halves.
+826. Rwambo rũmwe rũtiambaga ndarwa
+One peg only does not stretch out a skin.
+No living man all things can.
+827. Rwendo ni ũnyamarania
+Love means trouble.
+Love is a sweet tyranny, because the lover endures his torments
+willingly.
+828. Rwendo rũkiritie ihaki
+Love exceeds reward.
+Love is not mean.
+```
+
+## Page 103
+
+<!-- footer: 101 -->
+```text
+829. Rwendo rwarutire mwana wa nderi igũrũ
+Love put the eaglet out of its nest.
+The Kikuyu say that the young eagles, if left alone in
+the nest by their parents try to do as the parents do out
+of love for them and leap out of the nest; but in so doing
+they kill themselves.
+Love is blind.
+830. Tha cia arũme itiri iria
+Males’ pity has no milk.
+It means that men are unable to stop the crying of a
+baby by suckling it. Metaphorically the proverb means that
+men feel no less pity than women, although they show less.
+831. Thaka ya mwene ndiunikaga
+The owner’s beauty does not break.
+Every man thinks his own geese swans.
+832. Thakame ndiri ndũgũ
+Blood has need of no friendship.
+The proverb means that the best friendship is the one
+that comes from relationship; for, as it has been told
+before, all the members of a clan are tied by the bond
+of helping one another.
+Blood is thicker than water.
+833. Thatũ ihakagwo maguta na gati
+The ‘thatũ’ is smeared with fat and driven out.
+‘Thatũ’ is the name of a big caterpillar which infests
+sweet potato plantations. To the Kikuyu it is a creature
+of bad omen; that is why, when it happens to enter their
+huts they do not kill it, but rather smear it with fat and
+take it out carefully to propitiate the spirit.
+Misfortunes that cannot be avoided, must be sweetened.
+```
+
+## Page 104 (printed: 102)
+
+```text
+834. Thegere igiri itiremagwo ni mwatũ
+Two 'thegere' are not overpowered by a beehive.
+'Thegere' is a small mammal, about the size of a pole-cat common in Kikuyu land. It is fond of honey.
+The proverb means that only one 'thegere' would be unable to pull a beehive down from a tree. But if two of them join together, they easily succeed in overturning and emptying it.
+Union is strength.
+835. Thekaniriro ni hitahitano
+He who laughs at others will be laughed at.
+836. Thi na igũũ itimenyanaga
+The earth and the sky do not know each other.
+The proverb means that nobody can foretell the weather.
+837. Thiga ni mũuu: marara nja gũtiri
+'Thiga' is circumcised: there is no reward for passing the night in the courtyard.
+'Thiga' means a certain fellow. The proverb originates in one of the many customs relating to the Kikuyu ceremony of circumcision.
+On the eve of the circumcision-day women and girls gather at the hut of the candidate and sing for a great part in the night; not gratuitously, but in the hope of getting food and beer from the candidate's mother. But if when the rite is completed, she makes as an excuse that now the child is circumcised and refuses to give them what they expect, they start singing the above strain, meaning:
+'Have no recourse to the idle pretext that your son is now circumcised; but rather give us the reward to which we are entitled after a night's singing and dancing'.
+Eaten bread is soon forgotten.
+838. Thina ndũri miri
+The 'thina' has no roots.
+'Thina' is the name of a kind of leafless plant growing on trees. It also means affliction, troubles, sadness, poverty.
+Troubles pass.
+```
+
+## Page 105 (printed: 103)
+
+```text
+839. Thina ndūtīgaga handū ūramenyera
+Affliction does not leave a place which is already known to her.
+One danger is seldom overcome without another.
+840. Thina ndūtūraga
+Affliction does not last.
+After a storm comes a calm.
+841. Thina ni rūhiũ rwa gūicūhia mūro
+Affliction is a good knife to sharpen the ‘mūro’.
+‘Mūro’ is a short stick used to beat the earth, to plant, to dig out potatoes, etc.
+Necessity sharpens industry.
+842. Thia ndīthiragwo nī mīhūmū
+The duiker cannot help panting.
+The leopard cannot change his spots.
+843. Thia ndīthiragwo nī mūnīthī
+The duiker is not found without head stripes.
+Man is what God has made him and nothing else.
+844. Thiaka nī ūta
+Quiver means bow (for there is no quiver but it has also its bow).
+845. Thiaka ūnīī ndwagaga gūīta migwi
+A quiver upside down cannot fail to pour out its arrows.
+The proverb is an excuse for an error which depends only on human weakness.
+To err is human.
+846. Thiari ndīreregā kwa ngīa
+The ‘thiari’ does not hover above a poor man’s house.
+‘Thiari’ is the tick-bird. The proverb says that this bird does not stay with the poor for there are no oxen to provide ticks.
+A poor man has no friends.
+```
+
+## Page 106 (printed: 104)
+
+```text
+847. Thiri ūtarīhagio no wa ūrogī
+The debt of poisoning a person is a debt which cannot be paid.
+All the other crimes can be paid for with a number of
+goats, but the crime of bewitching must be expiated by
+heavier punishment.
+848. Thiriti ni īteanaga
+Friendships dissolve.
+849. Thiriti ni ya andū erī, ya atatū ni rūmena
+Friendship can exist between two people, friendship of
+three people would mean strife.
+Two’s company, three’s none.
+850. Thiriti yagia kīhehū no ithire
+Friendship finishes if there are whisperings.
+851. Thogora ni mūrurumo ūtarūo
+Buying (and selling) brings in much noise but no strife.
+852. Thogora ndūri nyina na mwana
+Buying and selling has neither mother nor son.
+Friendship is friendship and business is business.
+853. Thome wa anake ndūri thogora no tharo
+Young unmarried men do not buy in their ‘thome’: they
+steal things.
+‘Thome’ is the pathway leading up to the entrance of the
+Kikuyu homestead. It is made in the shape of a narrow
+passage which can be closed at night or in time of danger.
+The proverb means that nothing orderly can be done when
+only youngsters are present.
+854. Thoni itirī gathuthuma
+Shyness has no sucking.
+It means that if a calf is shy it will be afraid to approach
+its mother and consequently will get no milk.
+855. Thoni nene ni ūkārī
+Too much shyness means miserliness.
+There is measure in all things.
+```
+
+## Page 107 (printed: 105)
+
+```text
+856. Thũ ndigüaga haria likagio
+The enemy does not fall where one throws him.
+Man proposes, God disposes.
+
+857. Thũ ndigaga mwenji
+An enemy does not lack someone to shave him; i.e. to keep him informed of what is going about him, and very often to give him help.
+
+858. Thumbi iri nyone, mwene ni muone
+If one sees the ostrich-feather head-dress, one sees also the owner of it.
+The Kikuyu warriors used to pass over the head and under the chin a strap carrying ostrich feathers. Such a head-dress is used today only by young men at the circumcision ceremonies.
+The proverb means that if you see anyone wearing such an ornament, you easily recognize him as a warrior.
+
+859. Thurania gũkua na kũhona
+Choose between dying and living; i.e. between death and life, war and peace.
+
+860. Thutha mwega ni wa ndurume
+It is proper of the ram to have a good tail.
+It means that the good side of many a thing is not found at the beginning of it, but at the end, just as the best part of the ram is not its head, but its fat tail.
+The best fish swim near the bottom.
+
+861. Thutha ni mwarri
+The afterwards is wide.
+
+862. Thutha wa arũme ndhoyagwo ruoya
+Where men have passed there is not a single feather to pick up.
+
+863. Thutha wa maündu mothe ni Mwathani
+After all, there is God.
+Man proposes, God disposes.
+```
+
+## Page 108 (printed: 106)
+
+```text
+864. Tiga gũkunga hira-ini na tama mwerũ
+If you wear white clothes do not hide in a place where the
+grass has been burnt (for you would easily be discovered).
+The proverb means that it is useless to tell lies that are
+obviously lies.
+865. Tiga gũkungia ũgĩ ũgĩ-ini
+Do not show wisdom where there is wisdom.
+To carry coals to Newcastle.
+866. Tiga thĩna: toboka: ndũcũnaga kĩihũri
+Cease repining: go on; you are not like a child that licks
+the ‘kĩihũri’.
+Kĩihũri’ is a half calabash used as a ladle or an eating
+bowl. The proverb means that a man must not be timid
+like a child that is afraid of his mother’s rebuke and
+dares not lay down the ‘kĩihũri’ used for gruel, if it is
+not licked.
+Fortune helps them that help themselves.
+867. Tiga kũhoya ngi thakame
+Do not expect blood from a fly.
+If you squeeze a cork, you will get but little juice.
+868. Tiga kwaria na kanua ka ngoma
+Stop talking with the mouth of the ‘ngoma’.
+‘Ngoma’ are the spirits of the departed in which the
+Kikuyu firmly believe.
+Keep your tongue within your teeth.
+869. Tiga kuonia ngari kũhaica mũti
+Stop teaching the leopard how to climb a tree.
+Don’t teach your grandmother how to knit.
+870. Tũtũkũhe hiti kerĩ
+We do not give twice to the hyena.
+Once bitten, twice shy.
+871. Tũtũ ũrĩ mwana ndũnyitagia ngotho
+The man who has a family does not adorn his arm with finery.
+Children are certain cares, but uncertain comforts.
+```
+
+## Page 109 (printed: 107)
+
+```text
+872. Turuma yakira kirugo
+A sip is better than a feast.
+The proverb means that a sip of beer given to him who happens to call on a friend during a beer drinking is more appreciated than a feast to which one has been invited (and has therefore waited for).
+873. Tuoko tũngĩ tũthũranaga tũkĩria
+Many hands eating (from the same dish) hate one another.
+Two cats and a mouse, two wives in one house, two dogs and a bone never agree in one.
+874. Ūbataire ahũrithagia kĩhiĩ ime
+He who is in need sends his boy when there is still the dew.
+Need makes the naked man trot.
+875. Ūbataire ndaconokaga
+The person who is in need does not feel ashamed.
+Need makes the naked queen spin.
+876. Ūbataire niwe ūhuraga ūrĩri
+It is the person who feels the need (of sleeping) that prepares the bed.
+Let him that is cold blow the coal.
+877. Ūcamba ndũringaga tũhuro twiri
+(Even) bravery does not cross two valleys (at one time).
+Samson was a strong man, yet could not pay money before he had it.
+878. Ūcokereru ni ūkigu
+To return (to the same thing, argument, etc.) is foolishness.
+A tale twice told is cabbage twice sold.
+879. Ūcukagwo na ndũgũteo
+You are slandered without being thrown away.
+```
+
+## Page 110
+
+<!-- footer: 108 -->
+```text
+880. Ũgakinya mūhā gūtari gati
+(The time will come when) you will step on the ‘mūhā’ in
+a place where there is no other plant.
+‘Mūhā’ is a common forest tree yielding a very poor
+timber. The proverb means that he who despises this
+tree because it is of little value and there is plenty of
+good timber, will go so far as to scorn it even when no
+better timber is available.
+Half a loaf is better than no bread.
+881. Ũgakinya na mūtwe, wirite nī magūrū
+You will move on the head thinking it is the feet.
+It is said to proud people who think they know everything
+.
+Do as most men do and men will speak well of thee.
+882. Ũgathina ta ritho gwakīa
+You shall have pains like the eye that opens in the morning.
+The proverb is a curse, and refers to the pain which
+one’s eyes are supposed to feel when, after a night’s
+pleasant dreams, they open again to this world’s miseries.
+883. Ũgi mūnene ūtuaga ithanwa
+Too great a wisdom breaks the axe.
+Too much breaks the bag.
+884. Ũgi ndūtongoragia ta ūrimū
+Wisdom does not go in front as foolishness; i.e. is not
+so easily attained as foolishness.
+No man is born wise or learned.
+885. Ũgi ni kihooto
+Knowledge is power.
+886. Ũgi ūgigū
+(There is) wisdom (that is) a bluff.
+All is not gold that glitters.
+887. Ũgi ūkirite hinya
+Wisdom outweighs strength.
+```
+
+## Page 111 (printed: 109)
+
+```text
+888. Ūgĩ wa arũme ūtemaga ta hiũ
+Men's skill cuts like knives.
+Words are for women, actions for men.
+889. Ūgĩ wa mündũ ūmwe ndũrimaga
+Only one man's ability cannot till (all the fields).
+No living man all things can.
+890. Ūgeni wa nyama ndũoyagĩrĩo nguo
+He who has been invited to eat meat does not waste time
+looking for good clothes.
+The proverb means that if anyone has received an
+invitation for a feast he does not waste time in adorning
+himself at the risk of arriving too late.
+891. Ugithondekera mūciĩ ndũngĩuga ni ūrikora ūngĩ
+While you adorn your house, you do not imagine that you
+will find another (more adorned than yours).
+The proverb refers to self confident people who go to
+discuss a question with the certainty of getting the best
+of it, and do not think that perhaps they will meet an
+adversary stronger than they are.
+The first caper of fools is to esteem themselves wise.
+892. Ūgwitherima mūtino
+You smear yourself with misfortune.
+The proverb is told as an advice to people who are on
+the point of doing something which sooner or later will
+become a cause of misfortune.
+He that cuts himself wilfully, will deserve no balsam.
+893. Ūhere ni ūgwatanagio
+Scabies is contracted (by contact).
+A rotten sheep infects the whole flock.
+894. Ūhiĩ ni umagwo, no ūka ndumagwo
+The man comes out of childhood, but the woman never
+comes out of womanhood.
+To understand the proverb, it must be remembered that
+109
+```
+
+## Page 112
+
+<!-- footer: 110 -->
+```text
+according to the Kikuyu law, after the initiation a boy
+is no longer a boy, but a man in the fullness of his rights.
+On the other hand a girl, even when circumcised, does
+not become entitled to new rights.
+895. Úhori ni ñgariñire
+Asking for something is like turning (potatoes in the fire
+or meat on the spit).
+The proverb means that he who wants to succeed in a
+petition tries all ways, just as he who is roasting his food
+turns it on all sides.
+896. Úhoro wa maitho ti wa ñuthiñi
+What one sees with one's eyes is not what one hears from
+another's tongue.
+One eye-witness is better than ten hearsays.
+897. Ùhuniñi ndari kieha
+He who is sated has no affection.
+What cannot be cured must be endured.
+899. Ùi tene i ...
+Oh, for the (good) past!
+This is an expression often heard in the mouths of Kikuyu
+elders and corresponds to:
+'Past and to come seem best: things present, worst'.
+900. Ùkabi ni mññññu mññu
+The Masai have had their fill of flour.
+The Kikuyu used to sell maize and millet flour to their
+neighbours the Masai. But if they happened to sell it a
+little too dear, the flour trade became the spark which
+kindled one of the many raids which ended only when the
+British Government confined the Masai to their present
+territory.
+The proverb had the meaning of an alarm, as to say:
+```
+
+## Page 113 (printed: 111)
+
+```text
+'Now that the Masai have eaten all the flour we have sold them dear, we may expect their revenge'.
+A little spark can kindle a great fire.
+901. Ũkeni ndũtũraga
+Joy does not last.
+Pleasant hours fly fast.
+902. Ũkũndihia ũgacoka kũnjuria ndario ni kũ?
+You wound me and then ask what is ailing me?
+903. Ũkũrũ ndugaga mbu
+Old age does not shout any notice-cry.
+Time is the rider that breaks youth.
+904. Ũkũrũ ni ta wonje
+Old age is like being lame.
+The proverb is told by or to old women.
+Old bees yield no honey.
+905. Ũkũrũ ũriaga wanake
+Old age eats youth.
+Old age creeps in.
+906. Ũkwenda mũnyũ mbere ya mũcini
+You want the salt before the person who burned the salt-grass.
+To understand this proverb it must be borne in mind that, before the arrival of Europeans, the Kikuyu obtained salt from the ashes of salt-grass. (See also No. 629.)
+No cross, no crown.
+907. Ũmenyagwo ni mũraari, ti mũroki
+Home affairs are known by him who sleeps in the home, not by him who only comes in the morning.
+None knows the weight of another's burden.
+908. Ũndiaga rimwe na ũgi
+You sometimes eat me by cunningness.
+In this proverb 'to eat' means 'to cheat'.
+```
+
+## Page 114 (printed: 112)
+
+```text
+909. Ūndū ūkwendwo ndūtanukagwo ni kūmerio ūmeragio
+The thing that one finds palatable is not chewed, but it is
+swallowed quickly.
+
+910. Ūngīguā īgikaya ni nūme
+If you hear a goat moan, it is because she has been bitten.
+No smoke without fire.
+
+911. Ūndū ūrekwo ndūcokagirwo
+One must not return on the work done.
+The proverb means that one must not be too attentive
+to the details of his work if one wants to finish it, since—
+Perfection is not of this world.
+
+912. Ūngigacema mūno kahahūka
+If you go too carefully, (the chance) will pass away.
+Sleeping foxes catch no poultry.
+
+913. Ūngīguā kaana gakiuga ūndū ūgakahūra: menya
+kaiguīte na ithe
+When you hear your child say anything, you beat him;
+remember that he says what he has heard from his father.
+Children pick up words as pigeons peas, and utter them again
+as God shall please.
+
+914. Ūngīria irio cia mūthembā ūmwe iri kinyiria
+If you eat ever of the same food, it becomes bitter: it is
+a good thing to change.
+Change of pasture makes fat calves.
+
+915. Ūngionā īkirite, īmeretī īngī
+If you see a quiet snake, it is because it swallowed another
+snake.
+Beware of a silent dog and still water.
+
+916. Ūracama ari njeme
+He who has tasted (food) has its appetite.
+The proverb means that, if a man has willingly started
+to do some job, he is not satisfied until he completes it.
+```
+
+## Page 115 (printed: 113)
+
+```text
+917. Ūrathīna mūgündā wa mwana ndarī
+He who is in trouble lacks (also) a field for his son.
+Misfortunes seldom come alone.
+918. Ūri kūhitia na mbugi, ndūrathaga na njoya
+If you have missed with the point (of the arrow) you do not
+hit with the feathers.
+Resist the beginnings.
+919. Ūri kūngariūra ta mūtura wa ihī
+You have tried to roast me as boys roast goat’s bowels.
+When a goat or an ox is slaughtered, it is a Kikuyu
+custom to give the bowels to the uncircumcised for them
+to roast.
+The proverb is a contemptuous expression meaning ‘I
+know that you want to deceive me: but don’t expect to
+succeed as easily as boys succeed in roasting the bowels
+they are given’.
+920. Ūri kwīirūkira ndūngithondekeka
+If you despair you are not cured.
+The proverb refers to women who go to the witch-doctors
+for a remedy for their sterility.
+Not to have hope is the poorest of all conditions.
+921. Ūri mwega no ūkamenyeka
+If you are good you are known.
+Good wine needs no bush.
+922. Ūri na ithe ndaringagwo wa ngoro
+He who has a father is not knocked down by any of those
+words or deeds that hurt one’s heart (for he has somebody
+to defend him).
+923. Ūri ndūgū nyīngi ndatukagirirwo
+He who has many friends is not caught by darkness in the
+road; i.e. he has a lodging for the night.
+924. Ūri witū ūtandīga na ndūnjerera
+You are a person who neither leaves nor waits for me.
+To have two strings to one bow.
+```
+
+## Page 116
+
+<!-- footer: 114 -->
+```text
+925. Uri wona rüküre?
+Have you ever seen an unsheathed knife (a thing that has
+frightened you)?
+Scalded cats fear even cold water.
+926. Uri ni ndiinyaga
+The tilling does not come to an end.
+927. Uri ndithiraga
+Misfortune that has put down roots, does not finish.
+928. Uri ndiri indo, ni heho iri indo
+It is not warning oneself (staying at home) that makes
+one rich, but talking with many people.
+God helps them who help themselves.
+929. Urigite na urugite matihoyanaga
+Two persons, who have both cooked their food, do not beg
+from one another.
+930. Uritagwo mwiruti
+The work is done if one does it.
+If you want anything done, do it yourself.
+931. Utahetwo ni nügire
+Also for the man who has not yet received a present, there
+is something put aside for him.
+Everything comes to him who waits.
+932. Utamerithiti ndaigaga kigina thi
+He whose seeds have not germinated, does not lay down his
+'kigina'.
+'Kigina' means the seeds put by for planting next season.
+Perseverance kills the game.
+933. Utana uminagira murokerwo ng'ombe
+Prodigality ruined the man who used to give away his
+oven.
+The legend, from which this proverb originates, tells
+that a very rich man used to present all his visitors with
+```
+
+## Page 117 (printed: 115)
+
+```text
+an ox, with the result that very soon he found himself reduced to poverty.
+Prodigality brings a man to a morsel of bread.
+934. Ūtana wa ngia ūragira ngoro
+A poor man's generosity is lost in his heart (for he has nothing to show it with).
+935. Ūtari kondō arĩ kagara
+The person who has not a small bag, has a small basket.
+Every man has his lot.
+936. Ūtari ndari ngoro
+He who has nothing has no heart.
+The proverb means that a poor man, though refused what he asks for, does not feel so much pain as a rich man would, for the latter knows the difference between possessing and not possessing what one needs.
+Nothing have, nothing crave.
+937. Ūtari maitho ndatumaga kĩnya
+A blind man does not sew a gourd.
+The Kikuyu make use of the dried shell of gourds as dippers and ladles. They mend them with a rough thread when they crack.
+Blind men should not judge of colours.
+938. Ūtari ndetagwo ndundu
+A poor man is not invited to a private discussion.
+939. Ūtarĩ ciene na ndarĩa ciake
+He is a person that does not eat other's food, nor his own.
+The proverb refers to people who are not able to take advantage of their own things, nor of those of other people.
+940. Ūtatiga ndakora
+He who does not leave, will not find.
+No gains without pains.
+```
+
+## Page 118 (printed: 116)
+
+```text
+941. Ūtenderũ ndũri njamba
+Slipping has no hero, i.e. nobody however clever he may be, is guaranteed against a fall when walking on a slippery road.
+No fence against ill fortune.
+942. Ūtenderũ ũri nja ndũri muthemere
+Nobody can avoid the slippery place that is in the courtyard.
+What cannot be cured must be endured.
+943. Ūthayo na ng'aragu ni mündũ na mürü wa nyina
+Laziness and starvation are like a man and his brother.
+Laziness travels so slowly that poverty soon overtakes him.
+944. Ūthaka ndũriagwo
+Beauty is not eaten.
+Beauty will buy no beef.
+945. Ūthuuri wa gitonga ndũnungaga
+A rich man's old age has no bad smell.
+Rich men have no faults.
+946. Ūthuuri wa kanua ūkirite wa miaka
+Mouth's old age is better than year's old age.
+The proverb means that it is of no use to be old in years,
+if one does not show this old age by wise words, too.
+An old goat is never the more revered for his beard.
+947. Ūthũ ndũhingagia
+Hatred does not affect all.
+The proverb means that he who is hated by some people
+is not necessarily hated also by all the others.
+948. Ūthuuro mwega ndũyũraga ikũmbĩ
+The picking up of only the good things does not fill one's barn.
+949. Ūtoi karirũĩ, oi waci
+He who does not know how to dance the 'karirui' knows
+how to dance the 'waci'.
+```
+
+## Page 119 (printed: 117)
+
+```text
+'Karirui' and 'waci' are two native dances. The meaning
+of the proverb is the same as the following one.
+950. Ūtoī ūū, oi ūū
+He who does not know one thing, knows another.
+Every man hath his lot.
+951. Ūtonga ndūhanyūkagirwo
+Riches are not attained by running.
+952. Ūtonga ni kīgunyi
+Riches are a shadow.
+Riches have wings.
+953. Ūtonga ndūrī nyoni
+Riches have no bird of ill omen.
+954. Ūtonga wa mūici ndūthunaga, na ni ūteaga wake
+Unlawful riches do not increase, but rather spoil the lawful
+ones.
+Ill-gotten things seldom prosper.
+955. Ūtukū ndūtumagwo nguo
+One does not sew clothes by night.
+There is a time for all things.
+956. Wa githi ndagiragia wa kio akagia
+He who feels envy cannot prevent a man of energy from
+becoming enriched.
+Envy never enriched any man.
+957. Wa haraya ūhoragira njira
+The fire which comes from afar dies out in the way.
+Out of sight, out of mind.
+```
+
+## Page 120 (printed: 118)
+
+```text
+958. Wa hwalini warugwo ni wa kiroko
+What happens in the morning, surpasses what happened
+the preceding evening.
+Every day brings a new light.
+959. Wa kirimu wuitingia na mugi
+The fool's staff (walking stick) is used by the wise.
+The proverb means that something belonging to a fool
+may help the wise, as the fool does not know how to use
+it to his benefit.
+960. Wa mburi ndiagwo utari mwatie
+The goat bone is not thrown away if it is not completely
+chipped.
+961. Wa kuona ndanghitia
+He who sees does not err.
+One eye-witness is better than ten hearsays.
+962. Wa mucari wagwatirie wa muguri
+Yaws causes one to be attacked by chicken pox too.
+Misfortunes seldom come alone.
+963. Wa Ngai uraragio ni magoto
+God's fire keeps alight with 'magoto'.
+'Magoto' is dry banana bark which is much used for
+thatching but of no use as firewood. The proverb means
+that God can kindle a fire and keep it alive with unsuitable
+materials.
+With God all things are possible.
+964. Wa muung'i watuthira mutiri
+The work of many people scorns him who does not do it.
+Work, however heavy it may be, if done by many
+people seems to become light for each worker. This is
+why the proverb says that he who refused to do his part
+should be despised by the work itself.
+```
+
+## Page 121
+
+<!-- footer: 119 -->
+```text
+965. Wa mũrũngũru ũrũraga na ime
+The squirrel walks in the dew.
+The proverb originates in the fact that the squirrel is
+often seen in the road by early travellers, which would
+suggest that it rises very early in the morning. The
+Kikuyu say the proverb as a reply when, met by friends
+in the road, they are asked about the place they are
+coming from and why they are travelling so early. It
+means: I start my work early because I am like the
+squirrel that knows that morning hours are the best.
+The early bird catches the worm.
+966. Wa mũru ũmungaga ũri thiaka
+A wicked man's arrow emits its unpleasant smell even if
+hidden in the quiver.
+Stinking fish are felt from afar.
+967. Wa mwangi ndũtogaga keri
+The fire of the 'Mwangi' does not smoke twice.
+'Mwangi' is the name of one of the major ruling generations
+. The representatives of each generation stand in
+authority and are responsible for the conduct of public
+affairs all over Kikuyu land for about thirty years. After
+such a term there is a ceremony of handing over the
+custody of the affairs of the tribe from one generation to
+the next. The handing-over rite takes months and even
+years to complete.
+When the Consolata Fathers entered Kikuyu land in 1902
+the Maina generation was handing over its powers to the
+Mwangi generation, which in its turn has already begun
+to hand over to the Irungu.
+Time flies away without delay.
+968. Wa mwega ta wa mũru
+The case of the good man is like the bad one's.
+The sentence is said by elders when judging tribal
+questions, and means that all people have the same right
+and nobody can expect to have his case discussed before
+another's: every one must wait his turn.
+```
+
+## Page 122 (printed: 120)
+
+```text
+969. Wa mwene ūthūire thakame
+One hates to see the blood of a thing that belongs to him.
+The proverb means that one’s heart is affected by the
+pains of the persons and animals whom one loves.
+Whom we love best, them we want to be happy.
+970. Wa mwīrī ndūmenyagwo
+What is inside the body is not known.
+No one knows the weight of another’s burden.
+971. Wa mwīfūmo ndūremaga
+The work one imposed on oneself is never impossible.
+Where there is a will there is a way.
+972. Wainaga ni eroragira
+He who used to dance, now looks on.
+973. Wairire ndakerūha
+He who has ever been black will never become white.
+A leopard cannot change his spots.
+974. Wanyua īnyuaga mūguī
+He who drinks (beer in company) drinks an arrow at the
+same time.
+The proverb means that people who drink beer together
+as a token of friendship, drink as well an arrow which
+they will use to shoot one another as soon as their
+friendship breaks.
+975. Warīire athinirie waigire
+He who has eaten (all his food) vexes him who has put
+some aside.
+A fool and his money are soon parted.
+976. Warūgaga ni atobokaga
+He who used to jump across now wades through.
+Old age creeps in.
+977. We ūrī karīa nime
+You are one who eats the fruit of what your father has
+planted.
+```
+
+## Page 123
+
+<!-- footer: 121 -->
+```text
+The proverb is a reproach and a warning to young people
+who expend lavishly what they have inherited from their
+parents.
+What costs little is little esteemed.
+978. We ũri mũnyota matahwo
+You are only thirsty when somebody has drawn the water.
+The proverb is told to lazy people.
+979. Wega na wega iticemanagia
+Good and good never meet.
+Perfection is not of this world.
+980. Wega ũri mbere ya kahinga
+The good is to be found beyond the bush, i.e. the obstacle.
+No gains without pains.
+981. Wega umaga mūciĩ
+Prosperity is found in one’s home.
+Look to the cow, and the sow, and the wheat mow, and all will
+be well now.
+982. Wega warĩire karĩgũ
+Illicit love spoilt the uncircumcised girl.
+Sexual relation between an uncircumcised girl and a
+circumcised young man is considered unmentionable
+depravity by the Kikuyu.
+The reward of unlawful pleasure is lawful pain.
+983. Werũ ũgũthogoranirwo ndũagaga rũitiki
+The open country where markets are held does not lack
+rubbish.
+984. Werũ wa arũme ndwagaga kũnunga
+The open place where men used to stay cannot help stinking
+(because of the many quarrels and thefts which occur
+therein).
+985. Wiigĩire ndahũtaga
+He who put something aside will not starve.
+Thrift is good revenue.
+```
+
+## Page 124 (printed: 122)
+
+```text
+986. Wira wa ndĩngĩ uragaga kirimĩ
+Many people's work kills the fool (because he does alone
+what should be done by many),
+
+987. Wirane ndũri ngarari
+He who has been warned does not dispute.
+
+A word is enough to the wise.
+
+988. Witeitithe ngutcitithe
+Help yourself so that I may help you.
+
+God helps those who help themselves.
+
+989. Wona ciene waruta ndũngũrũ, wona ciaku wacokia
+ndũngũrũ
+When you see another's things your mouth waters; when
+you see your own you swallow such water.
+
+990. Wonga ni agaga
+He who had things, may stand in need.
+
+Today gold, tomorrow dust.
+
+991. Woni ũri niaci, wagi gitaranio
+To have means mischief, to lack means thought.
+
+Misfortunes tell us what fortune is.
+
+992. Ya gwitherira ndiri githegenya
+The ox one has chosen has no imperfection.
+
+993. Ya gwitherira ndiri ihindĩ
+The meat one has chosen has no bone.
+
+994. Ya kũhĩa ithiaga na ma mbere
+The food which cooks well is cooked with the first water.
+The Kikuyu believe that the food which is not cooked
+in the first water would not be cooked even if new water
+should be added, and it is therefore to be thrown away.
+Never leave that till tomorrow which you can do today.
+```
+
+## Page 125 (printed: 123)
+
+```text
+995. Ya matharara ĩgwatagia ya nyeki
+The hut thatched only with bad grass sets fire to the one
+covered with good thatching grass.
+A rotten sheep infects the whole flock.
+996. Ya mwene ndiri njereri
+One’s own ox has no cast in the eye.
+(See also No. 992 and No. 993.)
+Every man thinks his own geese swans.
+997. Ya rika ũngĩ ũriaga ikihurunjaga
+The goat which is of another age group eats scattering
+the fodder.
+The proverb originates in the fact of the distinction which
+is kept among people of different age-grade, and means
+that if a member of an age group is admitted to eat food
+with people of another, he grows proud and shows no
+respect towards them.
+Familiarity breeds contempt.
+998. Ya rika ithinjaga na mweri
+People of the same age group slaughter the beast to be
+eaten even by night time.
+The proverb refers to a Kikuyu custom. Young men of
+the same age group used to go round from village to
+village until they found a rich man who gave an ox
+or a goat for them to eat. And when the animal was
+found, they killed and broiled it even if the night had
+already come. The proverb means that one must finish
+what one has begun.
+Do nothing by halves.
+999. Yaciara mathathatũ yongithagio ni mwene
+The she-goat that gives birth to six kids feeds them too.
+1000. Yaikio ũikagia ũngĩ
+The goat that is pushed forward pushes forward the other.
+One fool makes many.
+```

@@ -1,0 +1,82 @@
+2026-09-27 16:04:30,485 | INFO    | ================================================================================
+2026-09-27 16:04:30,485 | INFO    | [worker gpu0] starting, manifest=/kaggle/working/shard_manifest_gpu0.json
+2026-09-27 16:04:30,485 | INFO    | [worker gpu0] CUDA_VISIBLE_DEVICES=0
+2026-09-27 16:04:30,485 | INFO    | ================================================================================
+2026-09-27 16:04:30,485 | INFO    | [worker gpu0] 0 page(s) already completed (across all shards so far), will be skipped.
+2026-09-27 16:04:30,485 | INFO    | [worker gpu0] model: Qwen/Qwen2.5-VL-7B-Instruct
+2026-09-27 16:04:30,485 | INFO    | [model] loading Qwen/Qwen2.5-VL-7B-Instruct (4bit=True) ...
+2026-09-27 16:04:30,886 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:04:30,887 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-27 16:04:30,897 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/config.json "HTTP/1.1 200 OK"
+2026-09-27 16:04:30,908 | INFO    | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/config.json "HTTP/1.1 200 OK"
+2026-09-27 16:04:31,013 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:04:31,115 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:04:31,124 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/config.json "HTTP/1.1 200 OK"
+2026-09-27 16:04:35,016 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-09-27 16:04:35,114 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:04:35,122 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-09-27 16:04:35,278 | INFO    | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-VL-7B-Instruct/revision/main "HTTP/1.1 200 OK"
+2026-09-27 16:04:35,384 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/cc594898137f460bfe9f0759e9844b3ce807cfb5/model-00001-of-00005.safetensors "HTTP/1.1 302 Found"
+2026-09-27 16:04:35,406 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/cc594898137f460bfe9f0759e9844b3ce807cfb5/model-00004-of-00005.safetensors "HTTP/1.1 302 Found"
+2026-09-27 16:04:35,423 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/cc594898137f460bfe9f0759e9844b3ce807cfb5/model-00003-of-00005.safetensors "HTTP/1.1 302 Found"
+2026-09-27 16:04:35,425 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/cc594898137f460bfe9f0759e9844b3ce807cfb5/model-00002-of-00005.safetensors "HTTP/1.1 302 Found"
+2026-09-27 16:04:35,425 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/cc594898137f460bfe9f0759e9844b3ce807cfb5/model-00005-of-00005.safetensors "HTTP/1.1 302 Found"
+2026-09-27 16:04:35,565 | INFO    | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-VL-7B-Instruct/xet-read-token/cc594898137f460bfe9f0759e9844b3ce807cfb5 "HTTP/1.1 200 OK"
+2026-09-27 16:04:35,571 | INFO    | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-VL-7B-Instruct/xet-read-token/cc594898137f460bfe9f0759e9844b3ce807cfb5 "HTTP/1.1 200 OK"
+2026-09-27 16:06:52,264 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:52,276 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/generation_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:52,293 | INFO    | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/generation_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:52,412 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:52,513 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:52,523 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:52,533 | INFO    | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:52,634 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:52,736 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:52,746 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:52,864 | INFO    | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-VL-7B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:52,969 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:53,079 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/chat_template.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:53,088 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/chat_template.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:53,099 | INFO    | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/chat_template.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:53,208 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:53,308 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/audio_tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:53,412 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:53,513 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:53,523 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:53,652 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:53,753 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:53,762 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:53,863 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:53,872 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:53,988 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:53,997 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,007 | INFO    | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,123 | INFO    | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-VL-7B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:54,228 | INFO    | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-VL-7B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,336 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:54,345 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/vocab.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,356 | INFO    | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/vocab.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,494 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/merges.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:54,503 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/merges.txt "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,514 | INFO    | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/merges.txt "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,633 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:54,642 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/tokenizer.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,654 | INFO    | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/tokenizer.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:54,805 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:54,957 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:55,492 | INFO    | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-VL-7B-Instruct "HTTP/1.1 200 OK"
+2026-09-27 16:06:55,597 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:55,700 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:55,801 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:55,812 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:55,927 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:56,030 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 16:06:56,129 | INFO    | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 16:06:56,138 | INFO    | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-VL-7B-Instruct/cc594898137f460bfe9f0759e9844b3ce807cfb5/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-09-27 16:06:56,141 | INFO    | [model] ready. free VRAM: 8.8 GB
+2026-09-27 16:29:32,344 | INFO    | [worker gpu0] 20 page(s) | 1000 Kikuyu Proverbs - G. Barra.pdf p30/125 | 0.42h elapsed | free VRAM 8.9 GB
+2026-09-27 17:05:54,448 | INFO    | [worker gpu0] 40 page(s) | 1000 Kikuyu Proverbs - G. Barra.pdf p70/125 | 1.02h elapsed | free VRAM 8.9 GB
+2026-09-27 17:40:18,947 | INFO    | [worker gpu0] 60 page(s) | 1000 Kikuyu Proverbs - G. Barra.pdf p110/125 | 1.60h elapsed | free VRAM 8.9 GB
+2026-09-27 17:47:42,062 | INFO    | ================================================================================
+2026-09-27 17:47:42,062 | INFO    | [worker gpu0] finished: 65 page(s) processed this run in 1.72h
+2026-09-27 17:47:42,062 | INFO    | ================================================================================
