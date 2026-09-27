@@ -78,33 +78,35 @@ export default function CountyBudgetTrackerPage() {
         </div>
 
         {/* Table */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden overflow-x-auto">
-          <table className="data-table text-xs">
-            <thead>
-              <tr>
-                <th className="cursor-pointer hover:text-gold" onClick={() => toggleSort("county")}>County<SortIcon k="county" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("allocation")}>Allocation (M)<SortIcon k="allocation" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("ownSourceRevenue")}>Own Revenue (M)<SortIcon k="ownSourceRevenue" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("expenditure")}>Expenditure (M)<SortIcon k="expenditure" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("absorptionRate")}>Absorption<SortIcon k="absorptionRate" /></th>
-              </tr>
-            </thead>
-            <tbody>
-              {sorted.map((b) => (
-                <tr key={b.code}>
-                  <td className="font-medium text-text-primary whitespace-nowrap">{b.county}</td>
-                  <td className="text-right text-text-secondary">{fmt(b.allocation)}</td>
-                  <td className="text-right text-gold">{fmt(b.ownSourceRevenue)}</td>
-                  <td className="text-right text-text-secondary">{fmt(b.expenditure)}</td>
-                  <td className="text-right">
-                    <span className={`font-semibold ${b.absorptionRate >= 85 ? "text-kenya-green-light" : b.absorptionRate >= 80 ? "text-gold" : "text-kenya-red-light"}`}>
-                      {b.absorptionRate}%
-                    </span>
-                  </td>
+        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="data-table text-xs">
+              <thead>
+                <tr>
+                  <th className="cursor-pointer hover:text-gold" onClick={() => toggleSort("county")}>County<SortIcon k="county" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("allocation")}>Allocation (M)<SortIcon k="allocation" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("ownSourceRevenue")}>Own Revenue (M)<SortIcon k="ownSourceRevenue" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("expenditure")}>Expenditure (M)<SortIcon k="expenditure" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("absorptionRate")}>Absorption<SortIcon k="absorptionRate" /></th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {sorted.map((b) => (
+                  <tr key={b.code}>
+                    <td className="font-medium text-text-primary whitespace-nowrap">{b.county}</td>
+                    <td className="text-right text-text-secondary">{fmt(b.allocation)}</td>
+                    <td className="text-right text-gold">{fmt(b.ownSourceRevenue)}</td>
+                    <td className="text-right text-text-secondary">{fmt(b.expenditure)}</td>
+                    <td className="text-right">
+                      <span className={`font-semibold ${b.absorptionRate >= 85 ? "text-kenya-green-light" : b.absorptionRate >= 80 ? "text-gold" : "text-kenya-red-light"}`}>
+                        {b.absorptionRate}%
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Source */}

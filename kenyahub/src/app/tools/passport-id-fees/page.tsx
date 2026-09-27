@@ -139,25 +139,27 @@ export default function PassportIdFeesPage() {
               Other Civil Registry Fees
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Document</th>
-                <th className="text-right">Fee</th>
-              </tr>
-            </thead>
-            <tbody>
-              {feesData.otherDocuments.map((doc, i) => (
-                <tr key={i}>
-                  <td>
-                    <p className="text-sm text-text-primary">{doc.type}</p>
-                    <p className="text-xs text-text-muted">{doc.description}</p>
-                  </td>
-                  <td className="text-right font-medium text-text-primary">{fmt(doc.fee)}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Document</th>
+                  <th className="text-right">Fee</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {feesData.otherDocuments.map((doc, i) => (
+                  <tr key={i}>
+                    <td>
+                      <p className="text-sm text-text-primary">{doc.type}</p>
+                      <p className="text-xs text-text-muted">{doc.description}</p>
+                    </td>
+                    <td className="text-right font-medium text-text-primary">{fmt(doc.fee)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Notes */}

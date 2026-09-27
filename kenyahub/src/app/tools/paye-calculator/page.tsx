@@ -129,7 +129,7 @@ export default function PAYECalculatorPage() {
             type="number"
             value={gross}
             onChange={(e) => setGross(Math.max(0, Number(e.target.value)))}
-            className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)]"
+            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={1000}
             id="gross-salary-input"
@@ -196,48 +196,50 @@ export default function PAYECalculatorPage() {
               Deductions Breakdown
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Deduction</th>
-                <th className="text-right">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="text-text-primary">Gross Salary</td>
-                <td className="text-right font-semibold text-text-primary">{fmt(results.gross)}</td>
-              </tr>
-              <tr>
-                <td className="text-kenya-red-light">PAYE (Income Tax)</td>
-                <td className="text-right text-kenya-red-light">− {fmt(results.paye)}</td>
-              </tr>
-              <tr>
-                <td className="text-kenya-red-light">NHIF</td>
-                <td className="text-right text-kenya-red-light">− {fmt(results.nhif)}</td>
-              </tr>
-              <tr>
-                <td className="text-kenya-red-light">NSSF (Employee)</td>
-                <td className="text-right text-kenya-red-light">− {fmt(results.nssf)}</td>
-              </tr>
-              <tr>
-                <td className="text-kenya-red-light">Housing Levy (1.5%)</td>
-                <td className="text-right text-kenya-red-light">− {fmt(results.housingLevy)}</td>
-              </tr>
-              <tr className="border-t-2 border-border">
-                <td className="font-semibold text-text-primary">Total Deductions</td>
-                <td className="text-right font-semibold text-kenya-red-light">
-                  − {fmt(results.totalDeductions)}
-                </td>
-              </tr>
-              <tr className="bg-kenya-green/10">
-                <td className="font-bold text-kenya-green-light text-base">Net Pay</td>
-                <td className="text-right font-bold text-kenya-green-light text-base">
-                  {fmt(results.netPay)}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Deduction</th>
+                  <th className="text-right">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="text-text-primary">Gross Salary</td>
+                  <td className="text-right font-semibold text-text-primary">{fmt(results.gross)}</td>
+                </tr>
+                <tr>
+                  <td className="text-kenya-red-light">PAYE (Income Tax)</td>
+                  <td className="text-right text-kenya-red-light">− {fmt(results.paye)}</td>
+                </tr>
+                <tr>
+                  <td className="text-kenya-red-light">NHIF</td>
+                  <td className="text-right text-kenya-red-light">− {fmt(results.nhif)}</td>
+                </tr>
+                <tr>
+                  <td className="text-kenya-red-light">NSSF (Employee)</td>
+                  <td className="text-right text-kenya-red-light">− {fmt(results.nssf)}</td>
+                </tr>
+                <tr>
+                  <td className="text-kenya-red-light">Housing Levy (1.5%)</td>
+                  <td className="text-right text-kenya-red-light">− {fmt(results.housingLevy)}</td>
+                </tr>
+                <tr className="border-t-2 border-border">
+                  <td className="font-semibold text-text-primary">Total Deductions</td>
+                  <td className="text-right font-semibold text-kenya-red-light">
+                    − {fmt(results.totalDeductions)}
+                  </td>
+                </tr>
+                <tr className="bg-kenya-green/10">
+                  <td className="font-bold text-kenya-green-light text-base">Net Pay</td>
+                  <td className="text-right font-bold text-kenya-green-light text-base">
+                    {fmt(results.netPay)}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Employer Costs */}
@@ -264,31 +266,33 @@ export default function PAYECalculatorPage() {
               PAYE Tax Bands — FY {payeData.fiscalYear}
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Income Band</th>
-                <th className="text-right">Tax Rate</th>
-              </tr>
-            </thead>
-            <tbody>
-              {payeData.payeBands.map((band, i) => (
-                <tr key={i}>
-                  <td className="text-text-secondary">
-                    KES {band.min.toLocaleString()} –{" "}
-                    {band.max ? `KES ${band.max.toLocaleString()}` : "Above"}
-                  </td>
-                  <td className="text-right font-medium text-text-primary">{band.rate}%</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Income Band</th>
+                  <th className="text-right">Tax Rate</th>
                 </tr>
-              ))}
-              <tr>
-                <td className="text-kenya-green-light">Personal Relief</td>
-                <td className="text-right font-medium text-kenya-green-light">
-                  KES {payeData.personalRelief.toLocaleString()}/month
-                </td>
-              </tr>
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {payeData.payeBands.map((band, i) => (
+                  <tr key={i}>
+                    <td className="text-text-secondary">
+                      KES {band.min.toLocaleString()} –{" "}
+                      {band.max ? `KES ${band.max.toLocaleString()}` : "Above"}
+                    </td>
+                    <td className="text-right font-medium text-text-primary">{band.rate}%</td>
+                  </tr>
+                ))}
+                <tr>
+                  <td className="text-kenya-green-light">Personal Relief</td>
+                  <td className="text-right font-medium text-kenya-green-light">
+                    KES {payeData.personalRelief.toLocaleString()}/month
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </ToolShell>

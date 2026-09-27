@@ -68,7 +68,7 @@ export default function HousingLevyCalculatorPage() {
             type="number"
             value={gross}
             onChange={(e) => setGross(Math.max(0, Number(e.target.value)))}
-            className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)]"
+            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={5000}
             id="gross-salary-input"
@@ -137,36 +137,38 @@ export default function HousingLevyCalculatorPage() {
               Impact on Your Pay
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th className="text-right">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="text-text-primary">Gross Salary</td>
-                <td className="text-right font-semibold text-text-primary">{fmt(results.gross)}</td>
-              </tr>
-              <tr>
-                <td className="text-kenya-red-light">Employee Levy (1.5%)</td>
-                <td className="text-right text-kenya-red-light">− {fmt(results.employeeLevy)}</td>
-              </tr>
-              <tr>
-                <td className="text-kenya-green-light">PAYE Tax Relief (from levy)</td>
-                <td className="text-right text-kenya-green-light">+ {fmt(results.payeReduction)}</td>
-              </tr>
-              <tr className="border-t border-border">
-                <td className="text-gold">Employer Levy (1.5%)</td>
-                <td className="text-right text-gold">{fmt(results.employerLevy)}</td>
-              </tr>
-              <tr className="bg-kenya-green/10 border-t-2 border-border">
-                <td className="font-bold text-text-primary">Total to Housing Fund</td>
-                <td className="text-right font-bold text-text-primary">{fmt(results.totalLevy)}</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th className="text-right">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="text-text-primary">Gross Salary</td>
+                  <td className="text-right font-semibold text-text-primary">{fmt(results.gross)}</td>
+                </tr>
+                <tr>
+                  <td className="text-kenya-red-light">Employee Levy (1.5%)</td>
+                  <td className="text-right text-kenya-red-light">− {fmt(results.employeeLevy)}</td>
+                </tr>
+                <tr>
+                  <td className="text-kenya-green-light">PAYE Tax Relief (from levy)</td>
+                  <td className="text-right text-kenya-green-light">+ {fmt(results.payeReduction)}</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="text-gold">Employer Levy (1.5%)</td>
+                  <td className="text-right text-gold">{fmt(results.employerLevy)}</td>
+                </tr>
+                <tr className="bg-kenya-green/10 border-t-2 border-border">
+                  <td className="font-bold text-text-primary">Total to Housing Fund</td>
+                  <td className="text-right font-bold text-text-primary">{fmt(results.totalLevy)}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* About */}

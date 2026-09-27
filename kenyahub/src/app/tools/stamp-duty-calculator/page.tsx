@@ -108,7 +108,7 @@ export default function StampDutyCalculatorPage() {
             type="number"
             value={propertyValue}
             onChange={(e) => setPropertyValue(Math.max(0, Number(e.target.value)))}
-            className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)]"
+            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={100000}
             id="property-value-input"
@@ -194,47 +194,49 @@ export default function StampDutyCalculatorPage() {
               Cost Breakdown
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th className="text-right">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="text-text-primary">
-                  Stamp Duty ({results.stampDutyRate}%)
-                  {isFirstTimeBuyer && (
-                    <span className="ml-2 text-xs text-kenya-green-light">AHF EXEMPT</span>
-                  )}
-                </td>
-                <td className="text-right font-semibold text-text-primary">{fmt(results.stampDuty)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-primary">LSK Conveyancing Fees</td>
-                <td className="text-right font-semibold text-text-primary">{fmt(results.conveyancing)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted pl-8 text-xs">Land Registry Registration</td>
-                <td className="text-right text-text-muted text-xs">{fmt(results.registrationFee)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted pl-8 text-xs">Search Fee</td>
-                <td className="text-right text-text-muted text-xs">{fmt(results.searchFee)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted pl-8 text-xs">Consent to Transfer</td>
-                <td className="text-right text-text-muted text-xs">{fmt(results.consent)}</td>
-              </tr>
-              <tr className="border-t-2 border-border bg-kenya-green/10">
-                <td className="font-bold text-kenya-green-light text-base">Total</td>
-                <td className="text-right font-bold text-kenya-green-light text-base">
-                  {fmt(results.total)}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th className="text-right">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="text-text-primary">
+                    Stamp Duty ({results.stampDutyRate}%)
+                    {isFirstTimeBuyer && (
+                      <span className="ml-2 text-xs text-kenya-green-light">AHF EXEMPT</span>
+                    )}
+                  </td>
+                  <td className="text-right font-semibold text-text-primary">{fmt(results.stampDuty)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-primary">LSK Conveyancing Fees</td>
+                  <td className="text-right font-semibold text-text-primary">{fmt(results.conveyancing)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">Land Registry Registration</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.registrationFee)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">Search Fee</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.searchFee)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">Consent to Transfer</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.consent)}</td>
+                </tr>
+                <tr className="border-t-2 border-border bg-kenya-green/10">
+                  <td className="font-bold text-kenya-green-light text-base">Total</td>
+                  <td className="text-right font-bold text-kenya-green-light text-base">
+                    {fmt(results.total)}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Notes */}

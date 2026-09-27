@@ -133,7 +133,7 @@ export default function KPLCTokenCalculatorPage() {
             type="number"
             value={amount}
             onChange={(e) => setAmount(Math.max(0, Number(e.target.value)))}
-            className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)]"
+            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={100}
             id="token-amount-input"
@@ -178,40 +178,42 @@ export default function KPLCTokenCalculatorPage() {
               Where Your Money Goes
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Component</th>
-                <th className="text-right">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="text-kenya-red-light">Fixed Charge (monthly)</td>
-                <td className="text-right text-kenya-red-light">{fmt(results.fixedCharge)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted pl-8 text-xs">VAT on fixed charge</td>
-                <td className="text-right text-text-muted text-xs">{fmt(results.fixedChargeVat)}</td>
-              </tr>
-              <tr className="border-t border-border">
-                <td className="text-text-primary">Energy charges ({results.totalUnits} units)</td>
-                <td className="text-right text-text-primary">{fmt(results.totalEnergyCost)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted pl-8 text-xs">Levies (REP + EPRA + WARMA)</td>
-                <td className="text-right text-text-muted text-xs">{fmt(results.totalLevies)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted pl-8 text-xs">Fuel Cost + Forex Adjustment</td>
-                <td className="text-right text-text-muted text-xs">{fmt(results.totalFCC)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted pl-8 text-xs">VAT (16%)</td>
-                <td className="text-right text-text-muted text-xs">{fmt(results.totalVAT)}</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th className="text-right">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="text-kenya-red-light">Fixed Charge (monthly)</td>
+                  <td className="text-right text-kenya-red-light">{fmt(results.fixedCharge)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">VAT on fixed charge</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.fixedChargeVat)}</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="text-text-primary">Energy charges ({results.totalUnits} units)</td>
+                  <td className="text-right text-text-primary">{fmt(results.totalEnergyCost)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">Levies (REP + EPRA + WARMA)</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.totalLevies)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">Fuel Cost + Forex Adjustment</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.totalFCC)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">VAT (16%)</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.totalVAT)}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Band Breakdown */}
@@ -222,24 +224,26 @@ export default function KPLCTokenCalculatorPage() {
                 Tariff Band Breakdown
               </h3>
             </div>
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Band</th>
-                  <th className="text-center">Units</th>
-                  <th className="text-right">Rate/kWh</th>
-                </tr>
-              </thead>
-              <tbody>
-                {results.breakdown.map((b, i) => (
-                  <tr key={i}>
-                    <td className="text-text-secondary">{b.band}</td>
-                    <td className="text-center text-text-primary font-medium">{b.units} kWh</td>
-                    <td className="text-right text-gold">{fmt(b.rate)}</td>
+            <div className="overflow-x-auto">
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>Band</th>
+                    <th className="text-center">Units</th>
+                    <th className="text-right">Rate/kWh</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {results.breakdown.map((b, i) => (
+                    <tr key={i}>
+                      <td className="text-text-secondary">{b.band}</td>
+                      <td className="text-center text-text-primary font-medium">{b.units} kWh</td>
+                      <td className="text-right text-gold">{fmt(b.rate)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         )}
 
@@ -250,22 +254,24 @@ export default function KPLCTokenCalculatorPage() {
               KPLC Domestic Tariff Bands
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Band</th>
-                <th className="text-right">Rate per kWh</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tariffData.energyBands.map((band, i) => (
-                <tr key={i}>
-                  <td className="text-text-secondary">{band.label}</td>
-                  <td className="text-right font-medium text-text-primary">{fmt(band.rate)}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Band</th>
+                  <th className="text-right">Rate per kWh</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {tariffData.energyBands.map((band, i) => (
+                  <tr key={i}>
+                    <td className="text-text-secondary">{band.label}</td>
+                    <td className="text-right font-medium text-text-primary">{fmt(band.rate)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Notes */}

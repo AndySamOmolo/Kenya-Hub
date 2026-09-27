@@ -67,28 +67,30 @@ export default function NHIFHospitalFinderPage() {
 
         {/* Hospital list */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-          <table className="data-table text-xs">
-            <thead>
-              <tr>
-                <th>Hospital</th>
-                <th>Level</th>
-                <th>Type</th>
-                <th>County</th>
-                <th className="text-center">NHIF</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filtered.map((h, i) => (
-                <tr key={i}>
-                  <td className="font-medium text-text-primary">{h.name}</td>
-                  <td><span className={`font-bold ${levelColor(h.level)}`}>{h.level}</span></td>
-                  <td className="text-text-secondary">{h.type}</td>
-                  <td className="text-text-muted">{h.county}</td>
-                  <td className="text-center">{h.nhifAccredited ? <DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /> : <DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" />}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table text-xs">
+              <thead>
+                <tr>
+                  <th>Hospital</th>
+                  <th>Level</th>
+                  <th>Type</th>
+                  <th>County</th>
+                  <th className="text-center">NHIF</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {filtered.map((h, i) => (
+                  <tr key={i}>
+                    <td className="font-medium text-text-primary">{h.name}</td>
+                    <td><span className={`font-bold ${levelColor(h.level)}`}>{h.level}</span></td>
+                    <td className="text-text-secondary">{h.type}</td>
+                    <td className="text-text-muted">{h.county}</td>
+                    <td className="text-center">{h.nhifAccredited ? <DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /> : <DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" />}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {filtered.length === 0 && (

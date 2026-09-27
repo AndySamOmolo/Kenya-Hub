@@ -166,22 +166,24 @@ export default function TrafficFinesPage() {
               NTSA Demerit Points System (Max {finesData.demeritPointSystem.maxPoints} points)
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Points</th>
-                <th>Consequence</th>
-              </tr>
-            </thead>
-            <tbody>
-              {finesData.demeritPointSystem.consequences.map((c, i) => (
-                <tr key={i}>
-                  <td className="text-gold font-medium">{c.points}</td>
-                  <td className="text-text-secondary">{c.action}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Points</th>
+                  <th>Consequence</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {finesData.demeritPointSystem.consequences.map((c, i) => (
+                  <tr key={i}>
+                    <td className="text-gold font-medium">{c.points}</td>
+                    <td className="text-text-secondary">{c.action}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Payment Methods */}

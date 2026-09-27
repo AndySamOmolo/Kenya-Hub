@@ -83,19 +83,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
     ready: false,
     skills: 0,
   },
-  {
-    id: "luhya",
-    name: "Luhya",
-    nativeName: "Oluluyia",
-    family: "Bantu",
-    counties: ["Kakamega", "Bungoma", "Busia", "Vihiga"],
-    speakers: "6.8M",
-    speechLocale: "sw-KE",
-    description: "A group of closely related Bantu dialects from Western Kenya",
-    color: "#E91E63",
-    ready: false,
-    skills: 0,
-  },
 ];
 
 // Load saved progress for a language

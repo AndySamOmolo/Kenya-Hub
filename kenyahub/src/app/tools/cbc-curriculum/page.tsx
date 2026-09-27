@@ -125,34 +125,36 @@ export default function CBCCurriculumPage() {
         )}
 
         {/* CBC vs 8-4-4 Comparison */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-x-auto">
+        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
               CBC vs 8-4-4 Comparison
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>CBC Grade</th>
-                <th>Age</th>
-                <th>8-4-4 Equivalent</th>
-                <th>CBC Level</th>
-              </tr>
-            </thead>
-            <tbody>
-              {cbcData.gradeAgeMapping.map((row) => (
-                <tr key={row.grade}>
-                  <td className="font-medium text-text-primary">{row.grade}</td>
-                  <td className="text-text-secondary">{row.turnsAge} years</td>
-                  <td className="text-text-muted">{row.previousEquivalent}</td>
-                  <td>
-                    <span className="badge badge-education text-[0.6rem]">{row.level}</span>
-                  </td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>CBC Grade</th>
+                  <th>Age</th>
+                  <th>8-4-4 Equivalent</th>
+                  <th>CBC Level</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {cbcData.gradeAgeMapping.map((row) => (
+                  <tr key={row.grade}>
+                    <td className="font-medium text-text-primary">{row.grade}</td>
+                    <td className="text-text-secondary">{row.turnsAge} years</td>
+                    <td className="text-text-muted">{row.previousEquivalent}</td>
+                    <td>
+                      <span className="badge badge-education text-[0.6rem]">{row.level}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </ToolShell>

@@ -104,26 +104,28 @@ export default function KenyaPostalCodesPage() {
 
         {/* Results Table */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th className="w-24">Postal Code</th>
-                <th>Post Office / Town</th>
-                <th>County</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredCodes.map((item, i) => (
-                <tr key={i}>
-                  <td className="font-bold text-gold font-[family-name:var(--font-outfit)] text-lg">
-                    {item.code}
-                  </td>
-                  <td className="text-text-primary font-medium">{item.town}</td>
-                  <td className="text-text-secondary text-sm">{item.county}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th className="w-24">Postal Code</th>
+                  <th>Post Office / Town</th>
+                  <th>County</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {filteredCodes.map((item, i) => (
+                  <tr key={i}>
+                    <td className="font-bold text-gold font-[family-name:var(--font-outfit)] text-base sm:text-lg">
+                      {item.code}
+                    </td>
+                    <td className="text-text-primary font-medium">{item.town}</td>
+                    <td className="text-text-secondary text-sm">{item.county}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           
           {filteredCodes.length === 0 && (
             <div className="p-8 text-center text-text-muted text-sm">

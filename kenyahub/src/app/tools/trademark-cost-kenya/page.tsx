@@ -74,7 +74,7 @@ export default function TrademarkCostKenyaPage() {
         {selectedType === "trademark" && (
           <div className="bg-bg-card border border-border rounded-xl p-6">
             <label className="block text-sm font-medium text-text-secondary mb-2">Number of Trademark Classes</label>
-            <input type="number" value={trademarkClasses} onChange={(e) => setTrademarkClasses(Math.max(1, Math.min(45, Number(e.target.value))))} className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)]" min={1} max={45} id="classes-input" />
+            <input type="number" value={trademarkClasses} onChange={(e) => setTrademarkClasses(Math.max(1, Math.min(45, Number(e.target.value))))} className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]" min={1} max={45} id="classes-input" />
             <p className="text-xs text-text-muted mt-2">Nice Classification has 45 classes. Each additional class adds KES 3,080.</p>
           </div>
         )}
@@ -94,26 +94,28 @@ export default function TrademarkCostKenyaPage() {
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">Step-by-Step Fees</h3>
           </div>
-          <table className="data-table">
-            <thead><tr><th>Step</th><th className="text-right">Fee</th><th>Note</th></tr></thead>
-            <tbody>
-              {currentIP.steps.map((s, i) => (
-                <tr key={i}>
-                  <td className="text-text-primary text-sm">{s.item}</td>
-                  <td className="text-right font-semibold text-text-primary text-sm">{fmt(s.amount)}</td>
-                  <td className="text-text-muted text-xs">{s.note ?? "—"}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead><tr><th>Step</th><th className="text-right">Fee</th><th>Note</th></tr></thead>
+              <tbody>
+                {currentIP.steps.map((s, i) => (
+                  <tr key={i}>
+                    <td className="text-text-primary text-sm">{s.item}</td>
+                    <td className="text-right font-semibold text-text-primary text-sm">{fmt(s.amount)}</td>
+                    <td className="text-text-muted text-xs">{s.note ?? "—"}</td>
+                  </tr>
+                ))}
+                {selectedType === "trademark" && trademarkClasses > 1 && (
+                  <tr><td className="text-text-primary text-sm">Extra classes (×{trademarkClasses - 1})</td><td className="text-right font-semibold text-text-primary text-sm">{fmt((trademarkClasses - 1) * 3080)}</td><td className="text-text-muted text-xs">KES 3,080 per extra class</td></tr>
+                )}
+                <tr className="border-t-2 border-border bg-kenya-green/10">
+                  <td className="font-bold text-kenya-green-light">Total</td>
+                  <td className="text-right font-bold text-kenya-green-light">{fmt(totalCost)}</td>
+                  <td></td>
                 </tr>
-              ))}
-              {selectedType === "trademark" && trademarkClasses > 1 && (
-                <tr><td className="text-text-primary text-sm">Extra classes (×{trademarkClasses - 1})</td><td className="text-right font-semibold text-text-primary text-sm">{fmt((trademarkClasses - 1) * 3080)}</td><td className="text-text-muted text-xs">KES 3,080 per extra class</td></tr>
-              )}
-              <tr className="border-t-2 border-border bg-kenya-green/10">
-                <td className="font-bold text-kenya-green-light">Total</td>
-                <td className="text-right font-bold text-kenya-green-light">{fmt(totalCost)}</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Renewal info */}

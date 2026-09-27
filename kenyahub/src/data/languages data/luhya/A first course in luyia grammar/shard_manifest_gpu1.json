@@ -1,0 +1,60 @@
+{
+  "chunks": [
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/A First Course in Luyia Gra_ (z-library.sk 1lib.sk z-lib.sk).pdf",
+      "pdf_sha1": "44bfb211cf7ec900",
+      "start": 14,
+      "end": 28,
+      "size": 14
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/A First Course in Luyia Gra_ (z-library.sk 1lib.sk z-lib.sk).pdf",
+      "pdf_sha1": "44bfb211cf7ec900",
+      "start": 42,
+      "end": 56,
+      "size": 14
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/A First Course in Luyia Gra_ (z-library.sk 1lib.sk z-lib.sk).pdf",
+      "pdf_sha1": "44bfb211cf7ec900",
+      "start": 70,
+      "end": 84,
+      "size": 14
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/A First Course in Luyia Gra_ (z-library.sk 1lib.sk z-lib.sk).pdf",
+      "pdf_sha1": "44bfb211cf7ec900",
+      "start": 98,
+      "end": 112,
+      "size": 14
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/A First Course in Luyia Gra_ (z-library.sk 1lib.sk z-lib.sk).pdf",
+      "pdf_sha1": "44bfb211cf7ec900",
+      "start": 126,
+      "end": 140,
+      "size": 14
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/A First Course in Luyia Gra_ (z-library.sk 1lib.sk z-lib.sk).pdf",
+      "pdf_sha1": "44bfb211cf7ec900",
+      "start": 154,
+      "end": 168,
+      "size": 14
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/A First Course in Luyia Gra_ (z-library.sk 1lib.sk z-lib.sk).pdf",
+      "pdf_sha1": "44bfb211cf7ec900",
+      "start": 182,
+      "end": 196,
+      "size": 14
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/A First Course in Luyia Gra_ (z-library.sk 1lib.sk z-lib.sk).pdf",
+      "pdf_sha1": "44bfb211cf7ec900",
+      "start": 210,
+      "end": 224,
+      "size": 14
+    }
+  ]
+}

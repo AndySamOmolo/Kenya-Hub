@@ -60,7 +60,7 @@ export default function MobilePrefixPage() {
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
             placeholder="e.g. 0722 123 456 or +254 722 123 456"
-            className="input-field text-xl font-bold font-[family-name:var(--font-outfit)]"
+            className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
             id="phone-input"
           />
         </div>
@@ -139,22 +139,24 @@ export default function MobilePrefixPage() {
               <DynamicIcon emoji="🚨" className="w-4 h-4 text-kenya-red-light inline-block mr-1.5" />Kenya Emergency Numbers
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Number</th>
-                <th>Service</th>
-              </tr>
-            </thead>
-            <tbody>
-              {prefixData.emergencyNumbers.map((en) => (
-                <tr key={en.number}>
-                  <td className="font-bold text-kenya-red-light font-mono">{en.number}</td>
-                  <td className="text-text-secondary">{en.service}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Number</th>
+                  <th>Service</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {prefixData.emergencyNumbers.map((en) => (
+                  <tr key={en.number}>
+                    <td className="font-bold text-kenya-red-light font-mono">{en.number}</td>
+                    <td className="text-text-secondary">{en.service}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* International Dialing */}

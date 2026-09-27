@@ -79,15 +79,49 @@ export default function CustomSelect({
     setIsOpen(false);
   };
 
+  // Extract layout classes for the wrapper, filtering out input-specific styles
+  const wrapperClasses = className
+    .split(" ")
+    .filter(
+      (c) =>
+        ![
+          "input-field",
+          "select-field",
+          "text-sm",
+          "text-xs",
+          "text-base",
+          "text-lg",
+          "text-xl",
+          "py-1.5",
+          "py-2",
+          "py-2.5",
+          "px-3",
+        ].includes(c)
+    )
+    .join(" ");
+
+  const isTextXs = className.includes("text-xs");
+  const isCompact = className.includes("py-1.5") || isTextXs;
+
   return (
-    <div className={`relative ${className}`} ref={containerRef} id={id}>
+    <div className={`relative ${wrapperClasses}`.trim()} ref={containerRef} id={id}>
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between px-3 py-2.5 text-sm border border-border bg-bg-elevated rounded-lg hover:border-gold/50 focus:outline-none focus:ring-1 focus:ring-gold transition-colors"
+        className={`input-field flex items-center justify-between text-left cursor-pointer transition-colors w-full ${
+          isTextXs
+            ? "!text-xs !py-1.5 !px-2.5"
+            : isCompact
+            ? "!py-1.5 !px-3 text-xs sm:text-sm"
+            : "!py-2 sm:!py-2.5 !px-3 text-xs sm:text-sm"
+        } ${isOpen ? "border-gold ring-1 ring-gold" : "hover:border-gold/50"}`}
       >
         <span className="text-text-primary truncate">{selectedOption?.label || "Select..."}</span>
-        <ChevronDown className={`w-4 h-4 text-text-muted transition-transform ${isOpen ? "rotate-180" : ""}`} />
+        <ChevronDown
+          className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-text-muted transition-transform flex-shrink-0 ml-1.5 ${
+            isOpen ? "rotate-180 text-gold" : ""
+          }`}
+        />
       </button>
 
       {isOpen && (

@@ -106,37 +106,39 @@ export default function CBCGradeAgePage() {
         )}
 
         {/* Full Grade-Age Table */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-x-auto">
+        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
               Complete CBC Grade-Age Guide
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>CBC Grade</th>
-                <th>Turns Age</th>
-                <th>Level</th>
-                <th>8-4-4 Equivalent</th>
-              </tr>
-            </thead>
-            <tbody>
-              {cbcData.gradeAgeMapping.map((row) => {
-                const isMatch = result && result.currentGrade === row.grade;
-                return (
-                  <tr key={row.grade} className={isMatch ? "bg-gold/10" : ""}>
-                    <td className={`font-medium ${isMatch ? "text-gold" : "text-text-primary"}`}>
-                      {row.grade} {isMatch && "← Your child"}
-                    </td>
-                    <td className="text-text-secondary">{row.turnsAge} years</td>
-                    <td><span className="badge badge-education text-[0.6rem]">{row.level}</span></td>
-                    <td className="text-text-muted">{row.previousEquivalent}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>CBC Grade</th>
+                  <th>Turns Age</th>
+                  <th>Level</th>
+                  <th>8-4-4 Equivalent</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cbcData.gradeAgeMapping.map((row) => {
+                  const isMatch = result && result.currentGrade === row.grade;
+                  return (
+                    <tr key={row.grade} className={isMatch ? "bg-gold/10" : ""}>
+                      <td className={`font-medium ${isMatch ? "text-gold" : "text-text-primary"}`}>
+                        {row.grade} {isMatch && "← Your child"}
+                      </td>
+                      <td className="text-text-secondary">{row.turnsAge} years</td>
+                      <td><span className="badge badge-education text-[0.6rem]">{row.level}</span></td>
+                      <td className="text-text-muted">{row.previousEquivalent}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </ToolShell>

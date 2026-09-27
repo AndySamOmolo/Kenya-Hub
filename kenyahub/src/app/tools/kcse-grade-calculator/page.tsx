@@ -145,33 +145,35 @@ export default function KCSEGradeCalculatorPage() {
                   Career Eligibility
                 </h3>
               </div>
-              <table className="data-table">
-                <thead>
-                  <tr>
-                    <th>Career / Course</th>
-                    <th>Min Grade</th>
-                    <th className="text-right">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {careerRequirements.map((career) => {
-                    const qualifies = result.meanScore >= career.minPoints;
-                    return (
-                      <tr key={career.career}>
-                        <td className="text-text-secondary">{career.career}</td>
-                        <td className="text-text-muted">{career.minGrade}</td>
-                        <td className="text-right">
-                          {qualifies ? (
-                            <span className="text-kenya-green-light font-semibold inline-flex items-center gap-1"><DynamicIcon emoji="✅" className="w-3.5 h-3.5" /> Eligible</span>
-                          ) : (
-                            <span className="text-text-muted inline-flex items-center gap-1"><DynamicIcon emoji="❌" className="w-3.5 h-3.5 text-kenya-red-light" /> Below minimum</span>
-                          )}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+              <div className="overflow-x-auto">
+                <table className="data-table">
+                  <thead>
+                    <tr>
+                      <th>Career / Course</th>
+                      <th>Min Grade</th>
+                      <th className="text-right">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {careerRequirements.map((career) => {
+                      const qualifies = result.meanScore >= career.minPoints;
+                      return (
+                        <tr key={career.career}>
+                          <td className="text-text-secondary">{career.career}</td>
+                          <td className="text-text-muted">{career.minGrade}</td>
+                          <td className="text-right">
+                            {qualifies ? (
+                              <span className="text-kenya-green-light font-semibold inline-flex items-center gap-1"><DynamicIcon emoji="✅" className="w-3.5 h-3.5" /> Eligible</span>
+                            ) : (
+                              <span className="text-text-muted inline-flex items-center gap-1"><DynamicIcon emoji="❌" className="w-3.5 h-3.5 text-kenya-red-light" /> Below minimum</span>
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </>
         )}
@@ -183,32 +185,34 @@ export default function KCSEGradeCalculatorPage() {
               KCSE Mean Grade Boundaries
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Grade</th>
-                <th>Points</th>
-                <th>Mean Score Range</th>
-              </tr>
-            </thead>
-            <tbody>
-              {grades.map((g) => {
-                const boundary = meanGradeBoundaries.find((b) => b.grade === g);
-                const isMatch = result && result.meanGrade === g;
-                return (
-                  <tr key={g} className={isMatch ? "bg-gold/10" : ""}>
-                    <td className={`font-semibold ${isMatch ? "text-gold" : "text-text-primary"}`}>
-                      {g} {isMatch && "← You"}
-                    </td>
-                    <td className="text-text-secondary">{gradePoints[g]}</td>
-                    <td className="text-text-muted">
-                      {boundary ? `${boundary.min.toFixed(2)} – ${boundary.max.toFixed(2)}` : "—"}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Grade</th>
+                  <th>Points</th>
+                  <th>Mean Score Range</th>
+                </tr>
+              </thead>
+              <tbody>
+                {grades.map((g) => {
+                  const boundary = meanGradeBoundaries.find((b) => b.grade === g);
+                  const isMatch = result && result.meanGrade === g;
+                  return (
+                    <tr key={g} className={isMatch ? "bg-gold/10" : ""}>
+                      <td className={`font-semibold ${isMatch ? "text-gold" : "text-text-primary"}`}>
+                        {g} {isMatch && "← You"}
+                      </td>
+                      <td className="text-text-secondary">{gradePoints[g]}</td>
+                      <td className="text-text-muted">
+                        {boundary ? `${boundary.min.toFixed(2)} – ${boundary.max.toFixed(2)}` : "—"}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </ToolShell>

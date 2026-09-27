@@ -100,7 +100,7 @@ export default function WaterBillCalculatorPage() {
             type="number"
             value={consumption}
             onChange={(e) => setConsumption(Math.max(0, Number(e.target.value)))}
-            className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)]"
+            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={1}
             id="consumption-input"
@@ -141,44 +141,46 @@ export default function WaterBillCalculatorPage() {
               Bill Breakdown
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th className="text-right">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {results.breakdown.map((b, i) => (
-                <tr key={i}>
-                  <td className="text-text-muted text-xs">
-                    {b.band} — {b.units} m³ × {fmt(b.rate)}/m³
-                  </td>
-                  <td className="text-right text-text-muted text-xs">{fmt(b.amount)}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th className="text-right">Amount</th>
                 </tr>
-              ))}
-              <tr>
-                <td className="text-text-primary">Water Charge</td>
-                <td className="text-right font-semibold text-text-primary">{fmt(results.waterCharge)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-primary">
-                  Sewerage ({(results.utility.sewerageRate * 100).toFixed(0)}%)
-                </td>
-                <td className="text-right font-semibold text-text-primary">{fmt(results.sewerageCharge)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted text-xs">Meter Rent</td>
-                <td className="text-right text-text-muted text-xs">{fmt(results.meterRent)}</td>
-              </tr>
-              <tr className="border-t-2 border-border bg-kenya-green/10">
-                <td className="font-bold text-kenya-green-light text-base">Total Bill</td>
-                <td className="text-right font-bold text-kenya-green-light text-base">
-                  {fmt(results.total)}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {results.breakdown.map((b, i) => (
+                  <tr key={i}>
+                    <td className="text-text-muted text-xs">
+                      {b.band} — {b.units} m³ × {fmt(b.rate)}/m³
+                    </td>
+                    <td className="text-right text-text-muted text-xs">{fmt(b.amount)}</td>
+                  </tr>
+                ))}
+                <tr>
+                  <td className="text-text-primary">Water Charge</td>
+                  <td className="text-right font-semibold text-text-primary">{fmt(results.waterCharge)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-primary">
+                    Sewerage ({(results.utility.sewerageRate * 100).toFixed(0)}%)
+                  </td>
+                  <td className="text-right font-semibold text-text-primary">{fmt(results.sewerageCharge)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted text-xs">Meter Rent</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.meterRent)}</td>
+                </tr>
+                <tr className="border-t-2 border-border bg-kenya-green/10">
+                  <td className="font-bold text-kenya-green-light text-base">Total Bill</td>
+                  <td className="text-right font-bold text-kenya-green-light text-base">
+                    {fmt(results.total)}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Notes */}

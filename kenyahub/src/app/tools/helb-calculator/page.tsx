@@ -75,7 +75,7 @@ export default function HELBCalculatorPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         {/* Inputs */}
-        <div className="bg-bg-card border border-border rounded-xl p-6 space-y-5">
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-6 space-y-5">
           <div>
             <label className="block text-sm font-medium text-text-secondary mb-2">
               Total Loan Amount (KES)
@@ -84,7 +84,7 @@ export default function HELBCalculatorPage() {
               type="number"
               value={loanAmount}
               onChange={(e) => setLoanAmount(Math.max(0, Number(e.target.value)))}
-              className="input-field text-xl font-bold font-[family-name:var(--font-outfit)]"
+              className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
               min={0}
               step={10000}
               id="loan-amount-input"
@@ -114,7 +114,7 @@ export default function HELBCalculatorPage() {
               type="number"
               value={grossSalary}
               onChange={(e) => setGrossSalary(Math.max(0, Number(e.target.value)))}
-              className="input-field text-xl font-bold font-[family-name:var(--font-outfit)]"
+              className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
               min={0}
               step={5000}
               id="gross-salary-input"
@@ -172,32 +172,34 @@ export default function HELBCalculatorPage() {
               Repayment Breakdown
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th className="text-right">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="text-text-primary">Original Loan Principal</td>
-                <td className="text-right font-semibold text-text-primary">{fmt(results.loanAmount)}</td>
-              </tr>
-              <tr>
-                <td className="text-kenya-red-light">Accrued Interest ({helbData.interestRate}% × {currentYear - yearBorrowed} yrs)</td>
-                <td className="text-right text-kenya-red-light">+ {fmt(results.totalInterest)}</td>
-              </tr>
-              <tr className="border-t border-border">
-                <td className="font-semibold text-text-primary">Estimated Current Balance</td>
-                <td className="text-right font-semibold text-text-primary">{fmt(results.currentBalance)}</td>
-              </tr>
-              <tr>
-                <td className="text-text-muted text-xs">Late payment penalty (if applicable)</td>
-                <td className="text-right text-text-muted text-xs">+ {fmt(results.latePenalty)}</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th className="text-right">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="text-text-primary">Original Loan Principal</td>
+                  <td className="text-right font-semibold text-text-primary">{fmt(results.loanAmount)}</td>
+                </tr>
+                <tr>
+                  <td className="text-kenya-red-light">Accrued Interest ({helbData.interestRate}% × {currentYear - yearBorrowed} yrs)</td>
+                  <td className="text-right text-kenya-red-light">+ {fmt(results.totalInterest)}</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="font-semibold text-text-primary">Estimated Current Balance</td>
+                  <td className="text-right font-semibold text-text-primary">{fmt(results.currentBalance)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted text-xs">Late payment penalty (if applicable)</td>
+                  <td className="text-right text-text-muted text-xs">+ {fmt(results.latePenalty)}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Notes */}

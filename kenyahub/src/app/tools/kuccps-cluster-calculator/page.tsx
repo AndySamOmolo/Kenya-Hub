@@ -186,28 +186,30 @@ export default function KUCCPSCalculatorPage() {
                   <div className="px-5 pb-4 border-t border-border pt-3">
                     <div className="mb-3">
                       <p className="text-xs font-semibold text-text-secondary mb-2">Weight Breakdown:</p>
-                      <table className="data-table text-xs">
-                        <thead>
-                          <tr>
-                            <th>Subject</th>
-                            <th>Grade</th>
-                            <th>Points</th>
-                            <th>Weight</th>
-                            <th className="text-right">Weighted</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {cluster.breakdown.map((b, i) => (
-                            <tr key={i}>
-                              <td className="text-text-secondary">{b.subject}</td>
-                              <td className="font-semibold text-text-primary">{b.grade}</td>
-                              <td>{b.points}</td>
-                              <td>×{b.weight}</td>
-                              <td className="text-right font-semibold text-gold">{b.weighted}</td>
+                      <div className="overflow-x-auto">
+                        <table className="data-table text-xs">
+                          <thead>
+                            <tr>
+                              <th>Subject</th>
+                              <th>Grade</th>
+                              <th>Points</th>
+                              <th>Weight</th>
+                              <th className="text-right">Weighted</th>
                             </tr>
-                          ))}
-                        </tbody>
-                      </table>
+                          </thead>
+                          <tbody>
+                            {cluster.breakdown.map((b, i) => (
+                              <tr key={i}>
+                                <td className="text-text-secondary">{b.subject}</td>
+                                <td className="font-semibold text-text-primary">{b.grade}</td>
+                                <td>{b.points}</td>
+                                <td>×{b.weight}</td>
+                                <td className="text-right font-semibold text-gold">{b.weighted}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-text-secondary mb-1">Eligible Courses:</p>

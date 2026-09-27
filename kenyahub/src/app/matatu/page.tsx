@@ -109,24 +109,14 @@ export default function MatatuPage() {
 
           {/* Search */}
           <div className="relative max-w-lg">
-            <div className="flex items-center gap-2 bg-bg-card border border-border rounded-xl px-4 py-3 focus-within:border-gold/50 transition-colors">
-              <svg className="w-5 h-5 text-text-muted flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <SearchInput
-                type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search routes... e.g. 'Karen', 'Nyali', 'Kondele', 'Langas'"
-                className="flex-1 bg-transparent text-sm text-text-primary placeholder-text-muted outline-none"
-                id="matatu-search"
-               onClear={() => setSearch("")} />
-              {search && (
-                <button onClick={() => setSearch("")} className="text-xs text-text-muted hover:text-text-primary">
-                  Clear
-                </button>
-              )}
-            </div>
+            <SearchInput
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search routes... e.g. 'Karen', 'Nyali', 'Kondele', 'Langas'"
+              id="matatu-search"
+              onClear={() => setSearch("")}
+            />
 
             {/* Search results dropdown */}
             {searchResults.length > 0 && (

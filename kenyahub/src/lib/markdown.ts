@@ -75,9 +75,7 @@ function parseMarkdownTables(content: string): string {
 
       tableHtml += "    </tbody>\n";
       tableHtml += "  </table>\n";
-      tableHtml += "</div>";
-
-      result.push(tableHtml);
+      result.push("\n\n" + tableHtml + "\n\n");
     } else {
       result.push(line);
       i++;
@@ -150,6 +148,15 @@ export function markdownToHtml(content: string): string {
 
   // Markdown tables
   html = parseMarkdownTables(html);
+
+  // Wrap any standalone HTML tables in blog-table-wrapper if not already inside one
+  html = html.replace(/(<table[\s\S]*?<\/table>)/gi, (match, _p1, offset, fullStr) => {
+    const precedingStr = fullStr.slice(Math.max(0, offset - 120), offset);
+    if (precedingStr.includes('class="blog-table-wrapper')) {
+      return match;
+    }
+    return `\n\n<div class="blog-table-wrapper my-6 overflow-x-auto rounded-xl border border-border bg-bg-card/40 shadow-sm">\n${match}\n</div>\n\n`;
+  });
 
   // Paragraphs — wrap non-HTML lines
   html = html.split("\n\n").map(block => {

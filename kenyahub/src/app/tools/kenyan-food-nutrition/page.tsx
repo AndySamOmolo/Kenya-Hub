@@ -63,34 +63,36 @@ export default function KenyanFoodNutritionPage() {
         </div>
 
         {/* Data Table */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden overflow-x-auto">
-          <table className="data-table text-xs">
-            <thead>
-              <tr>
-                <th className="cursor-pointer hover:text-gold min-w-[200px]" onClick={() => toggleSort("name")}>Food Item<SortIcon k="name" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("calories")}>Calories<SortIcon k="calories" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("protein")}>Protein (g)<SortIcon k="protein" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("carbs")}>Carbs (g)<SortIcon k="carbs" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("fat")}>Fat (g)<SortIcon k="fat" /></th>
-                <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("fibre")}>Fibre (g)<SortIcon k="fibre" /></th>
-              </tr>
-            </thead>
-            <tbody>
-              {filtered.map((f, i) => (
-                <tr key={i}>
-                  <td>
-                    <p className="font-semibold text-text-primary text-sm">{f.name}</p>
-                    <p className="text-[0.65rem] text-text-muted mt-0.5">{f.note}</p>
-                  </td>
-                  <td className="text-right font-bold text-kenya-green-light text-sm">{f.calories}</td>
-                  <td className="text-right font-medium text-text-secondary">{f.protein.toFixed(1)}</td>
-                  <td className="text-right font-medium text-text-secondary">{f.carbs.toFixed(1)}</td>
-                  <td className="text-right font-medium text-text-secondary">{f.fat.toFixed(1)}</td>
-                  <td className="text-right font-medium text-gold">{f.fibre.toFixed(1)}</td>
+        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="data-table text-xs">
+              <thead>
+                <tr>
+                  <th className="cursor-pointer hover:text-gold min-w-[200px]" onClick={() => toggleSort("name")}>Food Item<SortIcon k="name" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("calories")}>Calories<SortIcon k="calories" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("protein")}>Protein (g)<SortIcon k="protein" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("carbs")}>Carbs (g)<SortIcon k="carbs" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("fat")}>Fat (g)<SortIcon k="fat" /></th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("fibre")}>Fibre (g)<SortIcon k="fibre" /></th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {filtered.map((f, i) => (
+                  <tr key={i}>
+                    <td>
+                      <p className="font-semibold text-text-primary text-sm">{f.name}</p>
+                      <p className="text-[0.65rem] text-text-muted mt-0.5">{f.note}</p>
+                    </td>
+                    <td className="text-right font-bold text-kenya-green-light text-sm">{f.calories}</td>
+                    <td className="text-right font-medium text-text-secondary">{f.protein.toFixed(1)}</td>
+                    <td className="text-right font-medium text-text-secondary">{f.carbs.toFixed(1)}</td>
+                    <td className="text-right font-medium text-text-secondary">{f.fat.toFixed(1)}</td>
+                    <td className="text-right font-medium text-gold">{f.fibre.toFixed(1)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           {filtered.length === 0 && <div className="text-center py-8 text-text-muted text-sm">No foods match your search.</div>}
         </div>
 

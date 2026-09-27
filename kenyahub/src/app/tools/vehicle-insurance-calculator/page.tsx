@@ -98,7 +98,7 @@ export default function VehicleInsuranceCalculatorPage() {
             type="number"
             value={vehicleValue}
             onChange={(e) => setVehicleValue(Math.max(0, Number(e.target.value)))}
-            className="input-field text-xl font-bold font-[family-name:var(--font-outfit)]"
+            className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={100000}
             id="vehicle-value-input"
@@ -145,47 +145,49 @@ export default function VehicleInsuranceCalculatorPage() {
               Coverage Comparison
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Coverage</th>
-                <th className="text-center">Third Party</th>
-                <th className="text-center">Comprehensive</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="text-text-secondary">Third party injury/death</td>
-                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
-                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
-              </tr>
-              <tr>
-                <td className="text-text-secondary">Third party property damage</td>
-                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
-                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
-              </tr>
-              <tr>
-                <td className="text-text-secondary">Own vehicle damage</td>
-                <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
-                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
-              </tr>
-              <tr>
-                <td className="text-text-secondary">Theft protection</td>
-                <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
-                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
-              </tr>
-              <tr>
-                <td className="text-text-secondary">Fire damage</td>
-                <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
-                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
-              </tr>
-              <tr>
-                <td className="text-text-secondary">Windscreen cover</td>
-                <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
-                <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Coverage</th>
+                  <th className="text-center">Third Party</th>
+                  <th className="text-center">Comprehensive</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="text-text-secondary">Third party injury/death</td>
+                  <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                  <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="text-text-secondary">Third party property damage</td>
+                  <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                  <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="text-text-secondary">Own vehicle damage</td>
+                  <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
+                  <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="text-text-secondary">Theft protection</td>
+                  <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
+                  <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="text-text-secondary">Fire damage</td>
+                  <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
+                  <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="text-text-secondary">Windscreen cover</td>
+                  <td className="text-center"><DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light mx-auto" /></td>
+                  <td className="text-center"><DynamicIcon emoji="✓" className="w-4 h-4 text-kenya-green-light mx-auto" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Additional Covers */}

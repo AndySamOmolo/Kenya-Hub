@@ -79,7 +79,7 @@ export default function NumberPlateDecoderPage() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="e.g. KDA 123A or GK 001"
-            className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)] uppercase tracking-widest"
+            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] uppercase tracking-widest"
             maxLength={10}
             id="plate-input"
           />
@@ -129,24 +129,26 @@ export default function NumberPlateDecoderPage() {
               Kenya Plate Types
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Color</th>
-                <th>Type</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {plateData.plateTypes.map((pt, i) => (
-                <tr key={i}>
-                  <td className="text-text-secondary text-xs">{pt.color}</td>
-                  <td className="font-medium text-text-primary">{pt.type}</td>
-                  <td className="text-text-muted text-xs">{pt.description}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Color</th>
+                  <th>Type</th>
+                  <th>Description</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {plateData.plateTypes.map((pt, i) => (
+                  <tr key={i}>
+                    <td className="text-text-secondary text-xs">{pt.color}</td>
+                    <td className="font-medium text-text-primary">{pt.type}</td>
+                    <td className="text-text-muted text-xs">{pt.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Special Plates */}
@@ -156,24 +158,26 @@ export default function NumberPlateDecoderPage() {
               Special / Government Plate Prefixes
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Prefix</th>
-                <th>Type</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {plateData.specialPlates.map((sp, i) => (
-                <tr key={i}>
-                  <td className="font-bold text-gold">{sp.prefix}</td>
-                  <td className="text-text-primary">{sp.type}</td>
-                  <td className="text-text-muted text-xs">{sp.description}</td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Prefix</th>
+                  <th>Type</th>
+                  <th>Description</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {plateData.specialPlates.map((sp, i) => (
+                  <tr key={i}>
+                    <td className="font-bold text-gold">{sp.prefix}</td>
+                    <td className="text-text-primary">{sp.type}</td>
+                    <td className="text-text-muted text-xs">{sp.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Notes */}

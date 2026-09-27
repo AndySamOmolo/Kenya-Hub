@@ -11,16 +11,34 @@ export default function SearchInput({ className = "", onClear, value, ...props }
   // Extract layout classes for the wrapper, filter out input-specific styles
   const wrapperClasses = className
     .split(" ")
-    .filter((c) => !["input-field", "text-sm", "text-xs", "text-base"].includes(c))
+    .filter(
+      (c) =>
+        ![
+          "input-field",
+          "select-field",
+          "text-sm",
+          "text-xs",
+          "text-base",
+          "text-lg",
+          "text-xl",
+          "w-full",
+          "bg-transparent",
+          "outline-none",
+        ].includes(c)
+    )
     .join(" ");
+
+  const isTextXs = className.includes("text-xs");
 
   return (
     <div className={`relative w-full ${wrapperClasses}`.trim()}>
-      <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-text-muted" />
+      <Search className="absolute left-3 sm:left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted pointer-events-none" />
       <input
         type="text"
         value={value}
-        className="input-field text-sm w-full !pl-12 !pr-10"
+        className={`input-field w-full !pl-9 sm:!pl-10 !pr-8 sm:!pr-9 ${
+          isTextXs ? "!text-xs !py-1.5" : "text-xs sm:text-sm !py-2 sm:!py-2.5"
+        }`}
         autoComplete="off"
         {...props}
       />
@@ -28,9 +46,10 @@ export default function SearchInput({ className = "", onClear, value, ...props }
         <button
           type="button"
           onClick={onClear}
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors"
+          className="absolute right-2.5 sm:right-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors"
+          aria-label="Clear search"
         >
-          <X className="w-3.5 h-3.5 text-text-muted" />
+          <X className="w-3 h-3 text-text-muted" />
         </button>
       )}
     </div>

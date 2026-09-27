@@ -55,7 +55,7 @@ export default function SolarROIPage() {
           <label className="block text-sm font-medium text-text-secondary mb-2">
             Current Monthly Electricity Bill (KES)
           </label>
-          <input type="number" value={monthlyBill} onChange={(e) => setMonthlyBill(Math.max(0, Number(e.target.value)))} className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)]" min={0} step={500} id="monthly-bill-input" />
+          <input type="number" value={monthlyBill} onChange={(e) => setMonthlyBill(Math.max(0, Number(e.target.value)))} className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]" min={0} step={500} id="monthly-bill-input" />
           <input type="range" min={0} max={30000} step={500} value={monthlyBill} onChange={(e) => setMonthlyBill(Number(e.target.value))} className="w-full mt-3 accent-gold" />
           <div className="flex justify-between text-xs text-text-muted mt-1"><span>KES 0</span><span>KES 30,000</span></div>
         </div>
@@ -78,7 +78,7 @@ export default function SolarROIPage() {
           <label className="block text-sm font-medium text-text-secondary mb-2">
             System Cost per kW (KES) — <span className="text-text-muted">adjust if you have a quote</span>
           </label>
-          <input type="number" value={systemCostPerKw} onChange={(e) => setSystemCostPerKw(Math.max(10000, Number(e.target.value)))} className="input-field text-lg font-semibold" min={10000} step={5000} id="system-cost-input" />
+          <input type="number" value={systemCostPerKw} onChange={(e) => setSystemCostPerKw(Math.max(10000, Number(e.target.value)))} className="input-field text-base sm:text-lg font-semibold" min={10000} step={5000} id="system-cost-input" />
         </div>
 
         {/* Results */}
@@ -101,17 +101,19 @@ export default function SolarROIPage() {
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">System Details</h3>
           </div>
-          <table className="data-table">
-            <tbody>
-              <tr><td className="text-text-secondary">Recommended System Size</td><td className="text-right font-semibold text-text-primary">{results.recommendedSize} kW</td></tr>
-              <tr><td className="text-text-secondary">Estimated System Cost</td><td className="text-right font-semibold text-text-primary">{fmt(results.systemCost)}</td></tr>
-              <tr><td className="text-text-secondary">Monthly Generation</td><td className="text-right font-semibold text-text-primary">{results.monthlyGeneration} kWh</td></tr>
-              <tr><td className="text-text-secondary">Current Monthly Consumption</td><td className="text-right text-text-muted">{results.monthlyConsumption} kWh</td></tr>
-              <tr><td className="text-text-secondary">Roof Space Needed</td><td className="text-right text-text-muted">{results.roofArea} m²</td></tr>
-              <tr><td className="text-text-secondary">Solar Irradiance ({results.region.name})</td><td className="text-right text-text-muted">{results.irradiance} kWh/m²/day</td></tr>
-              <tr className="border-t-2 border-border bg-kenya-green/10"><td className="font-bold text-kenya-green-light">25-Year Net Profit</td><td className="text-right font-bold text-kenya-green-light">{fmt(results.netProfit)}</td></tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <tbody>
+                <tr><td className="text-text-secondary">Recommended System Size</td><td className="text-right font-semibold text-text-primary">{results.recommendedSize} kW</td></tr>
+                <tr><td className="text-text-secondary">Estimated System Cost</td><td className="text-right font-semibold text-text-primary">{fmt(results.systemCost)}</td></tr>
+                <tr><td className="text-text-secondary">Monthly Generation</td><td className="text-right font-semibold text-text-primary">{results.monthlyGeneration} kWh</td></tr>
+                <tr><td className="text-text-secondary">Current Monthly Consumption</td><td className="text-right text-text-muted">{results.monthlyConsumption} kWh</td></tr>
+                <tr><td className="text-text-secondary">Roof Space Needed</td><td className="text-right text-text-muted">{results.roofArea} m²</td></tr>
+                <tr><td className="text-text-secondary">Solar Irradiance ({results.region.name})</td><td className="text-right text-text-muted">{results.irradiance} kWh/m²/day</td></tr>
+                <tr className="border-t-2 border-border bg-kenya-green/10"><td className="font-bold text-kenya-green-light">25-Year Net Profit</td><td className="text-right font-bold text-kenya-green-light">{fmt(results.netProfit)}</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Notes */}

@@ -95,7 +95,7 @@ export default function MpesaFeeCalculatorPage() {
               type="number"
               value={amount}
               onChange={(e) => setAmount(Math.max(0, Number(e.target.value)))}
-              className="input-field text-2xl font-bold font-[family-name:var(--font-outfit)]"
+              className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
               min={0}
               max={150000}
               id="mpesa-amount-input"
@@ -161,38 +161,40 @@ export default function MpesaFeeCalculatorPage() {
               Fee Comparison for KES {amount.toLocaleString()}
             </h3>
           </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Transaction Type</th>
-                <th className="text-right">Fee</th>
-              </tr>
-            </thead>
-            <tbody>
-              {results.allFees.map((item) => (
-                <tr
-                  key={item.key}
-                  className={item.key === txType ? "bg-gold/5" : ""}
-                >
-                  <td
-                    className={`text-text-secondary ${item.key === txType ? "font-semibold text-gold" : ""}`}
-                  >
-                    {item.label}
-                    {item.key === txType && " ←"}
-                  </td>
-                  <td className="text-right">
-                    {item.fee !== null ? (
-                      <span className={item.fee === 0 ? "text-kenya-green-light font-semibold" : "text-text-primary"}>
-                        {item.fee === 0 ? "FREE" : `KES ${item.fee.toLocaleString()}`}
-                      </span>
-                    ) : (
-                      <span className="text-text-muted">N/A</span>
-                    )}
-                  </td>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Transaction Type</th>
+                  <th className="text-right">Fee</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {results.allFees.map((item) => (
+                  <tr
+                    key={item.key}
+                    className={item.key === txType ? "bg-gold/5" : ""}
+                  >
+                    <td
+                      className={`text-text-secondary ${item.key === txType ? "font-semibold text-gold" : ""}`}
+                    >
+                      {item.label}
+                      {item.key === txType && " ←"}
+                    </td>
+                    <td className="text-right">
+                      {item.fee !== null ? (
+                        <span className={item.fee === 0 ? "text-kenya-green-light font-semibold" : "text-text-primary"}>
+                          {item.fee === 0 ? "FREE" : `KES ${item.fee.toLocaleString()}`}
+                        </span>
+                      ) : (
+                        <span className="text-text-muted">N/A</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Full Tariff Reference */}
