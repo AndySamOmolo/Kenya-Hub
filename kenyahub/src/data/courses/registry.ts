@@ -2,6 +2,7 @@ import { LUO_CONFIG, LUO_UNITS } from "./luo/course";
 import { TURKANA_CONFIG, TURKANA_UNITS } from "./turkana/course";
 import { LUHYA_CONFIG, LUHYA_UNITS } from "./luhya/course";
 import { KIKUYU_CONFIG, KIKUYU_UNITS } from "./kikuyu/course";
+import { KISII_CONFIG, KISII_UNITS } from "./kisii/course";
 import type { CourseUnit, LanguageConfig } from "./types";
 import { validateCourse, type CourseValidationIssue } from "./validation";
 
@@ -18,6 +19,12 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     units: KIKUYU_UNITS,
     ready: true,
     validationIssues: validateCourse(KIKUYU_UNITS),
+  },
+  kisii: {
+    config: KISII_CONFIG,
+    units: KISII_UNITS,
+    ready: true,
+    validationIssues: validateCourse(KISII_UNITS),
   },
   luo: {
     config: LUO_CONFIG,
