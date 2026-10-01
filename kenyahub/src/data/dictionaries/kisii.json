@@ -11,8 +11,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-09",
-  "contributorNote": "Enriched from 'A Practical Introduction to Gusii' (W.H. Whiteley, East African Literature Bureau) and verified standard highland Ekegusii speech.",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Enriched from 'A Practical Introduction to Gusii' (W.H. Whiteley, East African Literature Bureau) and verified standard highland Ekegusii speech. Enriched with entries from \"A Practical Introduction to Gusii\" and \"The Tense System of Gusii\" by W.H. Whiteley (1956). Enriched with entries from \"A Practical Introduction to Gusii\" and \"The Tense System of Gusii\" by W.H. Whiteley (1956). Enriched with entries from \"A Practical Introduction to Gusii\" and \"The Tense System of Gusii\" by W.H. Whiteley (1956). Enriched with entries from \"A Practical Introduction to Gusii\" and \"The Tense System of Gusii\" by W.H. Whiteley (1956). Enriched with entries from \"A Practical Introduction to Gusii\" and \"The Tense System of Gusii\" by W.H. Whiteley (1956). Enriched with entries from \"A Practical Introduction to Gusii\" and \"The Tense System of Gusii\" by W.H. Whiteley (1956).",
   "categories": [
     {
       "id": "greetings",
@@ -647,6 +647,636 @@
           "translation": "Mbuya mono",
           "pronunciation": "m-boo-yah moh-noh",
           "context": "General confirmation or praise",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "cultural-beliefs",
+      "name": "Cultural Beliefs & Practices",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Ancestor spirits",
+          "translation": "Ngoma / Mizimu",
+          "pronunciation": "Common Bantu concept of ancestral spirits that guide and protect the living",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Medicine person / Healer",
+          "translation": "Muganga",
+          "pronunciation": "Traditional healer who uses herbal remedies and spiritual practices",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Divination",
+          "translation": "Kuagulia",
+          "pronunciation": "Practice of seeking knowledge through spiritual means",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Taboo / Prohibition",
+          "translation": "Mwiko",
+          "pronunciation": "Cultural prohibition believed to bring misfortune if violated",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Blessing",
+          "translation": "Kuthathia",
+          "pronunciation": "Invocation of good fortune, often by elders",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Curse",
+          "translation": "Kirumi",
+          "pronunciation": "Invocation of misfortune, feared across Bantu communities",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred grove / shrine",
+          "translation": "Kithembe",
+          "pronunciation": "Sacred natural site used for ceremonies and offerings",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Initiation rites",
+          "translation": "Irua",
+          "pronunciation": "Coming-of-age ceremonies marking transition to adulthood",
+          "context": "",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "historical-vocabulary",
+      "name": "Historical Vocabulary",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Mgina",
+          "translation": "His mother.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Nyoko",
+          "translation": "Your mother.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Aaria",
+          "translation": "y'",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Aiga",
+          "translation": "Here.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Amo",
+          "translation": "Together.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Ang'e",
+          "translation": "n-",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Ankio",
+          "translation": "To-morrow.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Ararimo",
+          "translation": "At once, immediately.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Beene",
+          "translation": "Alone.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Gati",
+          "translation": "y'",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Gese",
+          "translation": "Since. Followed by the Infinitive.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Gose",
+          "translation": "Or, whether.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Ime",
+          "translation": "Inside.(Follows the noun)",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Inse",
+          "translation": "y'",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Isiko",
+          "translation": "Outside, away from home.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Kare",
+          "translation": "A long time ago.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Kegima",
+          "translation": "Completely, wholly.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Keraase",
+          "translation": "Everywhere.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Kobua",
+          "translation": "Than.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Korende",
+          "translation": "But. Also, Ko.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Magega",
+          "translation": "Behind.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Mambia",
+          "translation": "In the morning.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Naende",
+          "translation": "The, again, also, afterwards.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Ng'a",
+          "translation": "That(after verbs of saying).",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "kwana",
+          "translation": "Say.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Above",
+          "translation": "Igoro y'",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Accompany a parting guest",
+          "translation": "-kooba.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Accuse",
+          "translation": "-soa.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Advise",
+          "translation": "-chiika.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Affair",
+          "translation": "Ring'ana 5/6.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Afterwards",
+          "translation": "Naende, naende nyuma.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Again",
+          "translation": "Naende.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Alone",
+          "translation": "Beene. Invariable.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Also",
+          "translation": "Naende, na(ne).",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Always",
+          "translation": "Naende naende.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "And",
+          "translation": "na(ne).",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Annoy",
+          "translation": "-chega",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Appearance",
+          "translation": "Ekiyeni 7/8.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Arrive",
+          "translation": "-ika",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Omogwe 3/4",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Askari",
+          "translation": "Omosigari 1/2.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Assist",
+          "translation": "-koonya.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "At",
+          "translation": "Ase + Noun.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "At once",
+          "translation": "Ararimo.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "Ritooke 5/6.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Basket",
+          "translation": "Egetonga 7/8",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Bathe",
+          "translation": "-eesibia",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Because",
+          "translation": "Ekiaagera.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Bed",
+          "translation": "Oborere 14/6.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Begin",
+          "translation": "-chaaka.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Black Wattle",
+          "translation": "Omotandeege 3/4, Omote bwe gesongo 3/4.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Blow on a fire",
+          "translation": "-uuta.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Boundary",
+          "translation": "Orobebe 11/10a.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Bracken",
+          "translation": "Eengwe 9/10.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Breed cattle",
+          "translation": "-tuga",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Bring",
+          "translation": "-reeta(reenta).",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Build",
+          "translation": "-agaacha.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "Eeeri 9/10.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Bullet",
+          "translation": "Embunde 9/10.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Burn",
+          "translation": "Intrans.(of a fire, light)",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "But",
+          "translation": "Korende, ko.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Butter",
+          "translation": "Esiagi 9/10.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Buy",
+          "translation": "-gora.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Camera",
+          "translation": "Ebicha 9/10.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Candle",
+          "translation": "Omosumaa 3/4.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Carry",
+          "translation": "-bogoria",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Cassava",
+          "translation": "Omwogo(Emiogo) 3/4.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Omwana 1/2",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Choose",
+          "translation": "-choora",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Clerk",
+          "translation": "Ekarani 9/10, Omoriiki 1/2.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Climb",
+          "translation": "-riina(esp. a tree), -tiira(esp. a hill)",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Coffee-plant",
+          "translation": "Ekaawa 9/10.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "-cha",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Conquer",
+          "translation": "-bua.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Continue",
+          "translation": "-genderera.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking-pot",
+          "translation": "Enyongo 9/10.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Cultivate",
+          "translation": "-rema.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Cultivating",
+          "translation": "Okorema 15/6.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Culvert",
+          "translation": "Omomberesi 3/4.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
+          "audioFile": null
+        },
+        {
+          "english": "Custom",
+          "translation": "Engeecho 9/10.",
+          "pronunciation": "",
+          "context": "From \"A Practical Introduction to Gusii (Whiteley, 1956)\"",
           "audioFile": null
         }
       ]

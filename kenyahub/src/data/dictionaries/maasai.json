@@ -5,25 +5,77 @@
   "nativeName": "ɔl Maa",
   "script": "Latin",
   "speakerCount": 1200000,
-  "counties": ["Narok", "Kajiado", "Samburu"],
+  "counties": [
+    "Narok",
+    "Kajiado",
+    "Samburu"
+  ],
   "hasAudio": false,
-  "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-07",
-  "contributorNote": "Maasai (Maa) is a Plains Nilotic language spoken by the pastoralist Maasai people. The Samburu dialect is closely related. Data from linguistic references and cultural publications.",
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Maasai (Maa) is a Plains Nilotic language spoken by the pastoralist Maasai people. The Samburu dialect is closely related. Data from linguistic references and cultural publications. Enriched with entries from \"Maasai Dictionary\" by Charles Richmond (c.1940, Humboldt State University Press, 2016). Enriched with entries from \"Maasai Dictionary\" by Charles Richmond (c.1940, Humboldt State University Press, 2016). Enriched with entries from \"Maasai Dictionary\" by Charles Richmond (c.1940, Humboldt State University Press, 2016). Enriched with entries from \"Maasai Dictionary\" by Charles Richmond (c.1940, Humboldt State University Press, 2016). Enriched with entries from \"Maasai Dictionary\" by Charles Richmond (c.1940, Humboldt State University Press, 2016). Enriched with entries from \"Maasai Dictionary\" by Charles Richmond (c.1940, Humboldt State University Press, 2016).",
   "categories": [
     {
       "id": "greetings",
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
-        { "english": "Hello (to a man)", "translation": "Sopa, Supai", "pronunciation": "soh-pah, soo-pah-ee", "context": "Greeting a man. He replies 'Epa'", "audioFile": null },
-        { "english": "Hello (to a woman)", "translation": "Yeyo takwenya", "pronunciation": "yeh-yoh tah-kwehn-yah", "context": "Greeting a woman", "audioFile": null },
-        { "english": "Hello (to elder)", "translation": "Paapa", "pronunciation": "pah-pah", "context": "Respectful greeting to an elder man", "audioFile": null },
-        { "english": "How are you?", "translation": "Keishtai?", "pronunciation": "kay-shtah-ee", "context": "General inquiry", "audioFile": null },
-        { "english": "I am fine", "translation": "Sidai", "pronunciation": "see-dah-ee", "context": "Literally 'It is good'", "audioFile": null },
-        { "english": "Thank you", "translation": "Ashe", "pronunciation": "ah-sheh", "context": "'Ashe oleng' = thank you very much", "audioFile": null },
-        { "english": "Goodbye", "translation": "Sere", "pronunciation": "seh-reh", "context": "", "audioFile": null },
-        { "english": "Welcome", "translation": "Karibu", "pronunciation": "kah-ree-boo", "context": "Borrowed from Swahili", "audioFile": null }
+        {
+          "english": "Hello (to a man)",
+          "translation": "Sopa, Supai",
+          "pronunciation": "soh-pah, soo-pah-ee",
+          "context": "Greeting a man. He replies 'Epa'",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (to a woman)",
+          "translation": "Yeyo takwenya",
+          "pronunciation": "yeh-yoh tah-kwehn-yah",
+          "context": "Greeting a woman",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (to elder)",
+          "translation": "Paapa",
+          "pronunciation": "pah-pah",
+          "context": "Respectful greeting to an elder man",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Keishtai?",
+          "pronunciation": "kay-shtah-ee",
+          "context": "General inquiry",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine",
+          "translation": "Sidai",
+          "pronunciation": "see-dah-ee",
+          "context": "Literally 'It is good'",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Ashe",
+          "pronunciation": "ah-sheh",
+          "context": "'Ashe oleng' = thank you very much",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye",
+          "translation": "Sere",
+          "pronunciation": "seh-reh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Karibu",
+          "pronunciation": "kah-ree-boo",
+          "context": "Borrowed from Swahili",
+          "audioFile": null
+        }
       ]
     },
     {
@@ -31,16 +83,76 @@
       "name": "Numbers",
       "icon": "🔢",
       "entries": [
-        { "english": "One", "translation": "Nabo", "pronunciation": "nah-boh", "context": "", "audioFile": null },
-        { "english": "Two", "translation": "Are", "pronunciation": "ah-reh", "context": "", "audioFile": null },
-        { "english": "Three", "translation": "Uni", "pronunciation": "oo-nee", "context": "", "audioFile": null },
-        { "english": "Four", "translation": "Onguan", "pronunciation": "ohn-goo-ahn", "context": "", "audioFile": null },
-        { "english": "Five", "translation": "Imiet", "pronunciation": "ee-mee-eht", "context": "", "audioFile": null },
-        { "english": "Six", "translation": "Ile", "pronunciation": "ee-leh", "context": "", "audioFile": null },
-        { "english": "Seven", "translation": "Naapishana", "pronunciation": "nah-pee-shah-nah", "context": "", "audioFile": null },
-        { "english": "Eight", "translation": "Isiet", "pronunciation": "ee-see-eht", "context": "", "audioFile": null },
-        { "english": "Nine", "translation": "Naudo", "pronunciation": "now-doh", "context": "", "audioFile": null },
-        { "english": "Ten", "translation": "Tomon", "pronunciation": "toh-mohn", "context": "", "audioFile": null }
+        {
+          "english": "One",
+          "translation": "Nabo",
+          "pronunciation": "nah-boh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Are",
+          "pronunciation": "ah-reh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Uni",
+          "pronunciation": "oo-nee",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Onguan",
+          "pronunciation": "ohn-goo-ahn",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Imiet",
+          "pronunciation": "ee-mee-eht",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Ile",
+          "pronunciation": "ee-leh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Naapishana",
+          "pronunciation": "nah-pee-shah-nah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Isiet",
+          "pronunciation": "ee-see-eht",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Naudo",
+          "pronunciation": "now-doh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Tomon",
+          "pronunciation": "toh-mohn",
+          "context": "",
+          "audioFile": null
+        }
       ]
     },
     {
@@ -48,18 +160,1532 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
-        { "english": "Yes", "translation": "Ee", "pronunciation": "eh-eh", "context": "", "audioFile": null },
-        { "english": "No", "translation": "Mme", "pronunciation": "m-meh", "context": "", "audioFile": null },
-        { "english": "Water", "translation": "Enkare", "pronunciation": "ehn-kah-reh", "context": "", "audioFile": null },
-        { "english": "Cow", "translation": "Enkiteng", "pronunciation": "ehn-kee-tehng", "context": "Cattle are central to Maasai culture", "audioFile": null },
-        { "english": "Milk", "translation": "Kule", "pronunciation": "koo-leh", "context": "A dietary staple", "audioFile": null },
-        { "english": "Lion", "translation": "Olowuaru / Ol-dapal", "pronunciation": "oh-loh-woo-ah-roo", "context": "Lions have cultural significance in Maasai warrior traditions", "audioFile": null },
-        { "english": "Child", "translation": "Enkerai", "pronunciation": "ehn-keh-rah-ee", "context": "", "audioFile": null },
-        { "english": "Mother", "translation": "Yeyo", "pronunciation": "yeh-yoh", "context": "", "audioFile": null },
-        { "english": "Father", "translation": "Paapa", "pronunciation": "pah-pah", "context": "", "audioFile": null },
-        { "english": "Warrior", "translation": "Olmoran", "pronunciation": "ohl-moh-rahn", "context": "Maasai warriors — famous cultural tradition", "audioFile": null },
-        { "english": "God", "translation": "Enkai", "pronunciation": "ehn-kah-ee", "context": "Maasai supreme deity", "audioFile": null },
-        { "english": "Rain", "translation": "Enkai nanyokie", "pronunciation": "ehn-kah-ee nah-nyoh-kee-eh", "context": "Rain is considered a blessing from Enkai", "audioFile": null }
+        {
+          "english": "Yes",
+          "translation": "Ee",
+          "pronunciation": "eh-eh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Mme",
+          "pronunciation": "m-meh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Enkare",
+          "pronunciation": "ehn-kah-reh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "Enkiteng",
+          "pronunciation": "ehn-kee-tehng",
+          "context": "Cattle are central to Maasai culture",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Kule",
+          "pronunciation": "koo-leh",
+          "context": "A dietary staple",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Olowuaru / Ol-dapal",
+          "pronunciation": "oh-loh-woo-ah-roo",
+          "context": "Lions have cultural significance in Maasai warrior traditions",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Enkerai",
+          "pronunciation": "ehn-keh-rah-ee",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Yeyo",
+          "pronunciation": "yeh-yoh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Paapa",
+          "pronunciation": "pah-pah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior",
+          "translation": "Olmoran",
+          "pronunciation": "ohl-moh-rahn",
+          "context": "Maasai warriors — famous cultural tradition",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Enkai",
+          "pronunciation": "ehn-kah-ee",
+          "context": "Maasai supreme deity",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Enkai nanyokie",
+          "pronunciation": "ehn-kah-ee nah-nyoh-kee-eh",
+          "context": "Rain is considered a blessing from Enkai",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Wildlife",
+      "icon": "🦁",
+      "entries": [
+        {
+          "english": "Animal",
+          "translation": "engwes",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Ant (very small) eng-alaoni",
+          "translation": "ing-alao",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Antelope (impalla) ol-olubo",
+          "translation": "il-olubo",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Baboon",
+          "translation": "ol-otimi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bee",
+          "translation": "ol-otoroki",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bird (large)",
+          "translation": "ol-motonye",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bird nest",
+          "translation": "en-gaji o'ndaritiki",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "ol-sowan",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "ol-oingoni",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Calf",
+          "translation": "ol-ashe",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: male",
+          "audioFile": null
+        },
+        {
+          "english": "Calf of leg",
+          "translation": "ol-oreshet",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Camel",
+          "translation": "en-dames",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Cat",
+          "translation": "em-baka",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken",
+          "translation": "el-lukungu",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "en-giteng",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: black and white",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "ol-kinos",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "ol-dia",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey",
+          "translation": "o-sigiria",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Dove",
+          "translation": "en-turkulu",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Duck",
+          "translation": "ol-motorok",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Eagle",
+          "translation": "ol-kilit",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "ol-le'ngaina",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "o-senger",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Frog",
+          "translation": "en-dua",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Gazelle (grants) ol-wargas",
+          "translation": "il-wargasin",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "ol-oado-giragata",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "en-gine",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Hawk",
+          "translation": "ol-kilil",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Hen",
+          "translation": "el-lukungu",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Honey bee",
+          "translation": "ol-otoro",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Horse",
+          "translation": "em-barta",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "ol-ngokine",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: spotted",
+          "audioFile": null
+        },
+        {
+          "english": "Insect",
+          "translation": "ol-kimamani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "ol-owaru",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "ol-owaru-kitok",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Lizard",
+          "translation": "ol-oiriri",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Monkey (colobus) ol-goroi",
+          "translation": "il-goroi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Ostrich",
+          "translation": "e-sidai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Pigeon",
+          "translation": "en-turkulu",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "en-ger",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "ol-asurai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Spider",
+          "translation": "ol-kedi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Tortoise",
+          "translation": "ol-oikuma",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Vulture",
+          "translation": "ol-motonye",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Zebra",
+          "translation": "ol-oitiko",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Cedar tree",
+          "translation": "ol-tarakwai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "eng-atamboi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Corner stone",
+          "translation": "ol-olmairoto",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "eng-olong",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Drought",
+          "translation": "ol-tirngang",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: hunger",
+          "audioFile": null
+        },
+        {
+          "english": "Dung hill",
+          "translation": "ol-ameiyou",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Earth",
+          "translation": "en-gop",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Evening",
+          "translation": "en-teiba",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Evening star",
+          "translation": "ol-agira le'nteiba",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "en-gima",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Flood",
+          "translation": "ol-oirag le'ngare",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Flower",
+          "translation": "en-dabogai",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: Swa.",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "en-dim",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "en-gojit",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Hill",
+          "translation": "en-doinyo",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake",
+          "translation": "ol-balbal",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Morning",
+          "translation": "en-tadegenya",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "ol-doinyo",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "en-kewarie",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "eng-ai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "e-guaso",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Rock",
+          "translation": "ol-totoi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Sand",
+          "translation": "o-senyai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Season",
+          "translation": "en-gata",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Sky",
+          "translation": "eng-ai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Soil",
+          "translation": "en-gulupuok",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "ol-agera",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Stone",
+          "translation": "o-soit",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: stony place",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "eng-olong",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Thunder",
+          "translation": "en-kikurukuroto",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "ol-jani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Valley",
+          "translation": "en-nongoto",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "eng-are",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "en-gisuisui",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Arm",
+          "translation": "eng-aina",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: one-armed person  ol-odungaina",
+          "audioFile": null
+        },
+        {
+          "english": "Arm ring",
+          "translation": "ol-masangus",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "eng-oriong",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "kioni",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "o-sarge",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood money",
+          "translation": "ol-oikopani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood vessel",
+          "translation": "eng-onyo",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "ol-oito",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Chest (box)",
+          "translation": "o-sanduku",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Deformed arm",
+          "translation": "ol-tasat'aina",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "en-giok",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "eng-ongu",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "ol-kimojino",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "en-geju",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: at foot of",
+          "audioFile": null
+        },
+        {
+          "english": "Foot - sole of en-dap",
+          "translation": "in-dapi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "ol-babita",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: of body",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "eng-aina",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "en-dokoya",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "ol-tau",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "en-gungu",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "en-geju",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Liver",
+          "translation": "e-muinyua",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Lung",
+          "translation": "ol-kipiei",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "en-gutuk",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "e-murt",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: smooth of the neck",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "en-gume in-gumeshi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "ol-oilelai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Skin",
+          "translation": "en-joni",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach",
+          "translation": "eng-oshoke",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "Ol-ngejep",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Bean",
+          "translation": "e-mposho",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: Kikuyu",
+          "audioFile": null
+        },
+        {
+          "english": "Boil (verb)",
+          "translation": "itokitok",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Boil (sore)",
+          "translation": "ol-todutai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bread",
+          "translation": "e-mukati",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Cook",
+          "translation": "ol-pishi",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: Swa",
+          "audioFile": null
+        },
+        {
+          "english": "Cook",
+          "translation": "v.",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "e-okoto",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "inos",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: to eat with someone",
+          "audioFile": null
+        },
+        {
+          "english": "Fat",
+          "translation": "v.",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Flour",
+          "translation": "en-guruma",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "en-daa",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: undigested",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "en-aisho",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger",
+          "translation": "ol-ameiyu",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Maize",
+          "translation": "ol-paiki",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "en-giringo",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: food",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "n.",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Oil",
+          "translation": "e-ilata",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Porridge",
+          "translation": "porrigi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Roast",
+          "translation": "pej",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "e-makat",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: Swahili",
+          "audioFile": null
+        },
+        {
+          "english": "Sugar",
+          "translation": "e-sukari",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Thirst",
+          "translation": "en-gure",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Aunt",
+          "translation": "eng-apulaiyani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Baby",
+          "translation": "engerai giti",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bride",
+          "translation": "e-sanja",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "ol-alashe",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "en-gerai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Clan",
+          "translation": "en-gishomi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Daughter",
+          "translation": "en-dito",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Daughter inlaw eng-aputani",
+          "translation": "ing-aputak",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Elder",
+          "translation": "ol-baiyan",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Family",
+          "translation": "ol-marei",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "ol-oiu",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Father in law",
+          "translation": "ol-aputani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather",
+          "translation": "ol-akwi",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmother",
+          "translation": "eng-ogho",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Husband",
+          "translation": "ol-moruo",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Marriage",
+          "translation": "en-giama",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "yeyo",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother in law",
+          "translation": "eng-aputani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Orphan",
+          "translation": "in-gera O'kishin",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "eng-anashe",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Son",
+          "translation": "ol-aiyoni",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: only son",
+          "audioFile": null
+        },
+        {
+          "english": "Tribe",
+          "translation": "ol-osho",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Uncle",
+          "translation": "ol-apulaiyani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Wedding",
+          "translation": "en-ayamishoreiki",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Widow",
+          "translation": "eng-apiani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Wife",
+          "translation": "en-gitok",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "warfare",
+      "name": "Warfare & Weapons",
+      "icon": "⚔️",
+      "entries": [
+        {
+          "english": "Army",
+          "translation": "il-moran",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: warriors",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "em-bae",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Attack",
+          "translation": "ar",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Battle",
+          "translation": "enjore",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow (verb)",
+          "translation": "irug",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow (noun)",
+          "translation": "eng-auo",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow shot",
+          "translation": "e-nangaroto",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Defeat",
+          "translation": "italaikini",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Defend",
+          "translation": "rip",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: guard",
+          "audioFile": null
+        },
+        {
+          "english": "Enemy",
+          "translation": "ol-mangatinda",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Fight",
+          "translation": "ar",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: quarrel",
+          "audioFile": null
+        },
+        {
+          "english": "Kill",
+          "translation": "ar metua",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: pierce",
+          "audioFile": null
+        },
+        {
+          "english": "Raid",
+          "translation": "en-jore",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "el-longo",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "e-remet",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: lower part",
+          "audioFile": null
+        },
+        {
+          "english": "Sword",
+          "translation": "ol-alem",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Victory",
+          "translation": "en-gitimirata",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "War",
+          "translation": "en-jore",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior",
+          "translation": "ol-morani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Wound",
+          "translation": "ol-bae",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Wound",
+          "translation": "ol-bae",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Religion",
+      "icon": "🙏",
+      "entries": [
+        {
+          "english": "Ancestor",
+          "translation": "ilomimyi",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: the fathers",
+          "audioFile": null
+        },
+        {
+          "english": "Bless",
+          "translation": "imaiyan",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "ol-aigwanani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Circumcision",
+          "translation": "e-muratare",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Council",
+          "translation": "en-gigwana",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: secret",
+          "audioFile": null
+        },
+        {
+          "english": "Curse",
+          "translation": "v.",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Curse",
+          "translation": "n.",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Custom",
+          "translation": "en-diuni",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: tax",
+          "audioFile": null
+        },
+        {
+          "english": "Dance",
+          "translation": "rany",
+          "pronunciation": "",
+          "context": "From Richmond dictionary: also to sing",
+          "audioFile": null
+        },
+        {
+          "english": "Drum",
+          "translation": "ol-ulul",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "eng-Ai",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Heal",
+          "translation": "ishunye",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Law",
+          "translation": "en-gitanapata",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Medicine",
+          "translation": "ol-jani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Pray",
+          "translation": "omon",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Prophet",
+          "translation": "ol-aidetidetani",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacrifice",
+          "translation": "ol-asar",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Sing",
+          "translation": "rany",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Song",
+          "translation": "eranyata",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Spirit",
+          "translation": "ol-tau",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        },
+        {
+          "english": "Tradition",
+          "translation": "ororei",
+          "pronunciation": "",
+          "context": "From Richmond Maasai Dictionary (c.1940)",
+          "audioFile": null
+        }
       ]
     }
   ]

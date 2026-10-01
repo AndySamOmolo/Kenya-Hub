@@ -1,0 +1,1895 @@
+================================================================================
+FIRST LESSONS IN KIKUYU
+By L. S. B. LEAKEY, F.B.A., M.A., Ph.D., D.Sc.
+EAST AFRICAN LITERATURE BUREAU
+THE EAGLE PRESS
+Dar es Salaam - NAIROBI - Kampala
+1959
+================================================================================
+
+--- [p. v] ---
+
+CONTENTS
+
+                                                                            Page
+Introduction  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ... vii
+
+LESSON
+  I  Noun Class I  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...   1
+     Some Adjectives  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...   3
+     The Numerals 1, 3, 4 and 5  ...  ...  ...  ...  ...  ...  ...  ...  ...   4
+     Some Pronoun stems  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...   4
+     Exercise on Lesson I  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...   5
+
+ II  Noun Class II  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...   6
+     Noun Class III  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...   8
+     Exercise on Lesson II  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  10
+
+III  Noun Class IV  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  12
+     Noun Class V  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  13
+     Noun Class VI  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  15
+     Exercise on Lesson III  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  15
+
+ IV  Noun Class VII  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  17
+     Noun Class VIII  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  18
+     Noun Class IX  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  19
+     Noun Class X  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  19
+     Exercise on Lesson IV  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  20
+
+  V  Numerals  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  22
+     Demonstrative Pronouns  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  24
+     Exercise on Lesson V  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  26
+
+ VI  The Verbs; Main Tenses of the Indicative Mood ...  ...  ...  ...  ...  27
+     Subjective Pronouns: The Infinitive  ...  ...  ...  ...  ...  ...  ...  32
+     Exercise on Lesson VI  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  33
+
+VII  Conditionals  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  35
+     Subjunctives  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  36
+     Negatives  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  36
+     Imperatives  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  37
+     Exercise on Lesson VII  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  38
+
+--- [p. vi] ---
+
+VIII  The Formative Infixes and their uses  ...  ...  ...  ...  ...  ...  ...  39
+      Reflexives  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  43
+      Exercise on Lesson VIII  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  44
+
+  IX  The Narrative, Optative and other tenses Conjunctions  ...  ...  ...  ...  45
+      Pronouns in apposition and objective:  ...  ...  ...  ...  ...  ...  ... 45-46
+      Verbal Nouns: Enclitic nĩ:  ...  ...  ...  ...  ...  ...  ...  ...  ...  46
+      Punctuation: Verbs "to be" and "to have"  ...  ...  ...  ...  ...  ...  47
+      Interrogatives: Adverbs Further Verb Tenses  ...  ...  ...  ...  ...  ... 47-49
+      Exercise on Lesson IX  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  49
+
+   X  How to continue your study of the Kikuyu language  ...  ...  ...  ...  ...  51
+      Keys to Exercises  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  53
+
+--------------------------------------------------------------------------------
+
+--- [p. vii] ---
+
+INTRODUCTION
+
+Kikuyu is probably one of the most archaic of the Bantu group of languages and in consequence has a grammatical structure with fewer exceptions than in most of the others. Essentially Kikuyu is written with seven vowels which are:
+    a  pronounced rather as the vowel sound in "hut".
+    e  pronounced rather as the open e in "hen".
+    ĩ  half vowel which is written as ĩ and pronounced as the i sound in "it".
+    i  which is pronounced like the e in "he".
+    o  pronounced like the au sound in "author".
+    ũ  pronounced like the oo in "good".
+    u  pronounced like the vowel sound in "who".
+
+So far as the consonants are concerned they are, in the main, the same as in English, but c is pronounced "ch" as in Italian, or shall we say as the "ch" in "church". There is no l except in words imported into the Kikuyu from other languages. There is no x and no z. The symbol which is written as an r is, in fact, a sound midway between r and l, while the symbol written as b is not the English b but has a touch of f, v and p in it. Neither f v nor p occur, except in imported words.
+
+There are certain rules which govern euphonic changes: these are set out in detail in Barlow's Kikuyu Grammar and need not be re-iterated in detail here. For instance, certain consonants when they are preceeded by another consonant followed by a vowel change their value—for example, a k followed by a vowel followed by another k becomes a g. In particular, the letter n, when it occurs before various other consonants and vowels results in clearly defined euphonic changes which Barlow has analysed in full. These may be summarised as follows:
+
+The "N" changes and other important euphonic changes
+    N is an important prefix in Kikuyu both in Class III of the nouns; as an adjectival prefix in this and some other classes and as one of the forms of the personal pronoun I or me. The "N"
+
+--- [p. viii] ---
+
+changes are therefore very important. N before h, m, n, th becomes silent and is dropped. Sometimes it is indicated in writing by an apostrophe.
+    n followed by c becomes nj.
+    n followed by t becomes nd.
+    n followed by k or g becomes ng or ng'.
+    n followed by b becomes mb.
+    n followed by r+m or n becomes n.
+    n followed by r+any other letter becomes nd.
+    n followed by a vowel becomes nj.
+
+"K" changes
+    When a k is present in a syllable and the syllable is followed (even in the next word) by c, t, th, or k, then the first k becomes g.
+
+Vowel combinations
+    a+e becomes e.
+    a+i becomes e.
+    a+o becomes o.
+    a+ũ becomes o (in many but not all cases).
+    a+u becomes oi.
+    ũ+u becomes u.
+    ĩ+i becomes ii.
+    There are a few exceptions to these vowel changes, for example maũndũ is NOT pronounced "mondo", and aũ in Njaũ is not "njo".
+
+NG and NG'
+    Ng is pronounced with the n and the g both clearly enunciated.
+    Ng' is pronounced like ng in "Sing".
+
+--------------------------------------------------------------------------------
+
+--- [p. 1] ---
+
+LESSON I
+
+NOUNS
+
+As in all Bantu languages, nouns are divided into a number of different classes, each class being marked by a distinctive singular and plural prefix which goes in front of the noun stem. Words which define or amplify the meaning of the noun, that is to say, words which, in a European language, we should call adjectives or pronouns, must agree with the nouns which they qualify or define and there are set rules, which will be duly outlined, as to how such words are made to agree by means of a prefix to the stem, which in turn agrees with the noun prefix, of the noun which is qualified. The only exceptions are certain humans who go into Class V but whose pronouns and adjectives behave as though they were in Class I (see page 14).
+
+Although, in general terms, one can divide the words which qualify nouns in a Bantu language roughly into what European grammar calls adjectives and pronouns, it is essential at the outset to realise that the words which fall roughly into these two groups are not necessarily quite the same as those which would fall respectively into adjectives and pronouns in a European language. Certain words, which, in English, we should certainly consider to be pronouns, are grouped with what we call adjectives and vice versa, since those European grammatical terms do not really correspond with Bantu structure.
+
+In the Kikuyu language, as a general rule, all the nouns which occur in any one noun class are linked together by certain very definite and clearly defined rules of association, although these are not always apparent at first sight. This general statement does not, of course, apply to words imported into the language, in more recent years, which are placed haphazardly in various noun classes. As a qualification to this general rule, it must be noted that for good and sufficient reasons, such as will be indicated presently, a noun which would normally, by rule and association, fall into one class may be removed into another class.
+
+--- [p. 2] ---
+
+I do not follow the class sequence set out by Barlow, but one of my own.
+
+Class I Nouns
+    The first three classes of nouns in Kikuyu represent things which are considered to have a spirit and not to be purely material. The nouns which fall into these classes are divided according to the importance of the category of spirit which they are deemed to possess. Class I is the class into which nouns denoting human beings are placed, and there is no word in this class which does not denote a human being. On the other hand there are certain human beings who are, deliberately, taken out of Class I and reduced to the status of some other class. This may be for derogatory and derisive purposes, even though it be admitted that, in point of fact, the persons denoted by these words in other classes DO possess a human spirit. It is only in terms of language that they are demoted, in order to show scorn or hatred. Another reason for removing humans out of their correct class is when they have some special connection with religion, or magic, or ceremonial (see Class V) for example ithe father; ma-ithe fathers.
+
+    The noun prefixes for words in Class I are, in the singular, mũ- and in the plural a-.
+    For example, the stem -ndũ means "a thing" or "an object", hence mũ-ndũ and a-ndũ are human objects or human things, that is to say, persons. But if you should put the prefix of Class IV, which denotes inanimate objects, in front of the same stem -ndũ, you would change the meaning from a person to an inanimate object.
+
+    The following are words in common usage denoting humans which belong to Class I and which should be learned for purposes of the first Exercise:
+        mũndũ,     pl. andũ         person
+        mũrũme,    p. arũme         male
+        mũtumia,   pl. atumia       married woman
+        mũka,      pl. aka          female person
+        mũhiki,    pl. ahiki        bride
+        mũthuri,   pl. athuri       married man (elders)
+        mũirĩtu,   pl. airĩtu       initiated girl
+        mũanake,   pl. anake        young initiated man (not married)
+
+--- [p. 3] ---
+
+        mũthamaki, pl. athamaki     ruler
+        mũrugi,    pl. arugi        cook
+
+    In contrast to these words denoting humans in Class I we may, at this stage, note that kĩ-rimũ, a fool, although a human, is demoted to the class of inanimate objects. Similarly, kiĩgũ, a congenital cripple: gĩtonga, a miser: kĩrĩgũ, a big girl who has reached puberty but for some reason has not been initiated: kĩhĩĩ, a big, uninitiated youth, (lout).
+    Other humans who get taken out of Class I are put into Class III, which is occupied by lesser living things such as birds, beasts, insects and the lesser plants. The reason why some humans are, for language purposes, demoted to this class is that they are objects of pity, for example, ngombo a slave. Examples will be given when we come to Class III.
+
+SOME ADJECTIVES
+    Words which would normally be called adjectives in European languages take the same prefix, in this class, as the nouns which they qualify or agree with, that is to say, mũ- as the singular prefix before the adjective stem, and a- as the plural. Mũ- changes to mw- if the stem starts with a vowel.
+    The following adjective stems should be learnt at this stage in readiness for the first Exercise.
+        -ega                  good
+        -ũru                  bad
+        -nene                 big
+        -nyini (or nini)      small
+        -raya                 tall, long
+        -kuhĩ                 short
+        -erũ                  white, light-coloured
+        -irũ                  black, dark-cloured
+        -rũrũ                 bitter
+
+    Adjectives normally follow the nouns which they qualify, and therefore, in view of the rule of agreement given above, a good man is mũndũ mwega (written mwega) and a tall woman is mũtumia mũraya, while bad cooks would be arugi aũru. But aũru, in view of the standard rules of euphonic change given earlier, is pronounced and written oru.
+
+--- [p. 4] ---
+
+    It should be noted here that in the list of adjectives above, word stems were given for white or light-coloured, and black or dark-coloured, and there is only one other adjective denoting ordinary colour. This is -tune, which covers the reds, red-browns and oranges. This extreme paucity of stems denoting ordinary colours is compensated for by a wealth of adjectives describing variation of colour in cattle, goats and sheep, comparable to our special colours for horses, such as dun, chestnut, roan, etc. There are, strangely, no stems denoting green or blue, and to describe these colours one has to paraphrase and say "the colour of the grass" or "the colour of the sky".
+
+NUMERALS
+    In European languages we treat numerals as though they were adjectives and one might, therefore, expect that in Kikuyu numerals would take an adjectival prefix when qualifying a noun but, as I said earlier, the English grammatical words, adjective and pronoun, do not really fit Bantu language structure at all.
+    In Kikuyu and all other Bantu languages, the numerals are treated as pronouns in so far as their prefixes are concerned. Pronouns in the strictly European grammatical sense, as well as numerals when qualifying or referring to nouns in Class I, take the prefix ũ- in the singular and a- in the plural, Note. ũ- becomes w- before a vowel.
+
+SOME PRONOUN STEMS
+    At this stage the following possessive pronoun stems should be mastered:
+        -akwa                 my
+        -aku                  yours, thine
+        -ake                  his, hers
+        -itũ                  our
+        -anyu                 your (plural)
+        -ao                   their
+
+    Pronouns and numerals follow the nouns they qualify and thus my married woman, (i.e. my wife) would be mũtumia ũakwa (wakwa): their rulers would be athamaki aao. Numerals will be dealt with in a separate lesson, but four examples of numeral stems will be given here for purposes of the first Exercise.
+
+--- [p. 5] ---
+
+        -mwe                  1
+        -tatũ (-thatũ)        3
+        -na (or nya)          4
+        -tano (or thano)      5
+
+    Therefore, by our rules of agreement, airĩtu aitũ atatũ means our three girls.
+
+----------------------------------------
+
+EXERCISE ON LESSON I
+
+1. Translate into Kikuyu
+   1. your good wife
+   2. my small cook
+   3. one bad ruler
+   4. three short girls
+   5. our four tall men
+   6. four big persons
+   7. his light-skinned bride
+   8. one bad married woman
+   9. a bad cook
+  10. your (singular) five dark young men
+
+2. Translate into English
+   1. athuri aitũ (aega) ega
+   2. mũhiki wake mũirũ
+   3. athamaki ana oru (aũru)
+   4. arugi aao araya
+   5. mũanake ũmwe mũnene
+   6. airĩtu ake anyinyi
+   7. mũanake ũmwe wao
+   8. mũrugi witũ mwega
+   9. atumia anyu oru (aũru)
+  10. mũka wakwa mwega
+
+3. What classes of nouns other than Class I can human beings be put into, and for what reason?
+   Give examples of human beings who do not go into Class I.
+
+--------------------------------------------------------------------------------
+
+--- [p. 6] ---
+
+LESSON II
+
+NOUNS—CLASSES II AND III
+
+Class II Nouns
+    Class II nouns are principally those which are regarded as having second class spirits, (i.e. a spirit of a lower category than that of humans, but nevertheless of considerable importance). A certain number of other words, while not actually denoting objects that have such spirits go into this class and are regarded as closely linked with such spirits. There are also, in this class, some words denoting things which would normally go into other classes but which have, for some special reason, been promoted, as for example the words for lion and three-horned chameleon (see below).
+
+    In general, it may be said that most large trees and plants belong to this class, together with certain epidemic diseases which are essentially regarded as spirit-borne. In addition to these, a certain number of animals and reptiles which would normally rank as having only third class spirits, but which are promoted for one reason or another go into Class II. It is usually found that where such promotion has taken place there is a folk tale to explain the reason for it. It must, however, be noted that a considerable number of trees and plants are removed from this class into Class V, the class for objects of religious, magical and ceremonial significance, because they are more properly associated with that class, as a result of their various properties and other associations with magic and ceremonial. It may, indeed, be said that where a tree or plant is found to belong to a class other than Class II or Class III, it is almost certain that it is a plant which has some real, or imaginary, magical or religious significance.
+
+    Nouns in Class II take a singular prefix which is the same for that of Class I, so far as spelling is concerned, i.e. mũ-. This mũ- is tonally slightly different, however. The plural prefix of Class II is mĩ- instead of a-.
+    It may be noted that tonal differences are of considerable importance in the study of advanced Kikuyu, but it is strongly recommended that the beginner should not attempt to differentiate
+
+--- [p. 7] ---
+
+between the tones, since they are not of major importance in the early stages of learning, except perhaps in the next class to be dealt with, Class III, where, however, most beginners are content to do without tone and manage fairly successfully.
+
+    The adjectival prefixes for adjectives agreeing with Class II nouns are the same as noun prefixes, namely mũ- and mĩ-.
+
+    The following nouns in this class should be learnt for the purpose of the Exercise:
+        mũtĩ                  tree
+        mũrimũ                spirit-borne disease
+        mũtũngũ               smallpox
+        mũthandũkũ            chicken pox
+        mũgumo                fig tree
+        mũkũyũ                another kind of fig tree
+        mũtamayũ              wild olive
+        mũere (mwere)         rat-tail millet
+        mũrũthi               *lion                     } promoted from
+        mũriũ                 *three-horned Jackson's   }   Class III
+                                son's chameleon         }
+        mũaka (mwaka)         year
+        mũgũnda               garden (not in the sense of the soil of the garden, but the plants growing in it)
+        mũatũ                 beehive
+        mũeri (mweri)         moon or month
+
+    *It will be noted that in the above list the lion has been promoted to this class. This is due to the fact that it is believed that a lion, if he hears himself spoken of by the true Class III word denoting a lion, 'ndũ is liable to take offence and thereafter attack the person who has hinted that he only has an inferior spirit. Similarly it will be noted that the three-horned Jackson's Chameleon is promoted out of his correct class into Class II. This is due to the fact that it is believed that the three-horned chameleon played a major part in an endeavour to give man eternal life, while the ordinary chameleon, kiĩmbu—which is hated and feared by the Kikuyu—is demoted from Class III into Class IV, that of inanimate or despised objects, and is traditionally regarded with hatred and fear as the creature which caused man to be mortal.
+
+    Similarly, certain epidemic diseases, and in particular kĩmiiri influenza, and gĩthũkũ measles, are regarded by the Kikuyu as not
+
+--- [p. 8] ---
+
+being indigenous and spirit-borne, but rather as having been imported, deliberately, by the white man. They are therefore ranked, as soulless, man-made, objects without spirit: diseases which, for that reason, cannot be placated and do not respond to the normal Kikuyu methods of combating epidemic diseases.
+
+    It should be noted, however, that in certain parts of Kikuyu country, measles has in recent years been promoted to the class of spirit-borne diseases and is now called mũthũkũ instead of gĩthũkũ.
+
+Class III Nouns
+    Class III is the one into which are placed nearly all birds, reptiles, insects and mammals, and many lesser plants, weeds and grasses—in fact, all living creatures which are not covered by Class I and Class II. The only exceptions are those which, for some specific reason, have either been promoted, as we have seen, or which have been deliberately removed from their correct class because they are objects of scorn, derision, hatred or fear; or, in a few very rare cases, because their mode of life brings them automatically into some other class. For example, rũhuhu, a bat, goes into Class VI. Occasionally words denoting humans, which should properly go into Class I, are found to be in this class. They are humans who, for language purposes, are demoted from their own class but not right down to Class IV, as is done with humans who are despised. Humans demoted to Class III are merely pitied, examples are:
+        njangĩri              an outcast
+        ngĩa                  pauper
+        ngombo                serf or slave
+        njamba                boaster
+
+    It should be noticed that some dictionaries show njamba as warrior or brave man, but the word derives directly from the verb stem -camb- to boast, and it is only by subsequent extension that njamba has come to mean warrior. Lesser illnesses and ailments, as distinct from most epidemic diseases (which are in Class II) usually go into Class III.
+
+    It must be noted, here, that a few objects that are closely connected with creatures in Class III, are put into that same class, because of direct association. As example of this is word nyũmba
+
+--- [p. 9] ---
+
+which means a nest or a lair where the young are born or reared, and which is, therefore, intimately connected with creatures in the Class III. In the Kikuyu language, this word has, later, been extended to cover the huts in which women sleep and produce and look after their children until they reach the age of puberty. Such huts clearly conform to the condition of a lair or nest as set out above. All other Kikuyu huts are treated quite differently, and are not correctly called nyũmba at all.
+
+    In Class III the singular and plural prefixes are the same so far as the nouns are concerned, and consist simply of n- before the stem. The tone is different as between the singular and the plural, but this can be ignored at the moment since the context usually indicates whether a noun in this class is singular or plural. Attention must here be drawn to the note in the introduction in which the euphonic changes which result from the juxtaposition of certain letters of the alphabet play an important part. For example, we have already seen, in dealing with Class I, that the stem rũme denotes a male, so that when a mũ- prefix of Class I was put in front of this stem we had mũrũme, a man. Now, if an n- prefix, that is to say a prefix of Class III, is put in front of this same stem, it clearly indicates a male within the third class of nouns, but the result of an n standing before a stem beginning with r results always, as seen in the introduction, in a change from n into nd, so that the word for a male animal is ndũrũme. This is limited today to a ram, unless it is followed by some qualifying clause.
+
+    We do somewhat the same thing in the English language where the word bull originally signified almost any male animal and is now confined to the male of the cattle family, unless it is qualified by a second word, such as bull-eland etc.
+
+    Adjectives agreeing with Class III nouns have exactly the same prefix as the nouns, i.e., n- in both singular and plural, but subject of course to the rules of the n- euphonic changes. For example, we have seen that the stem for good was -ega. Whenever the prefix n- stands before a stem starting with a vowel, the n changes to nj, so that good when referring to animals in Class III is njega, both in the singular and the plural.
+
+    The pronoun prefix for nouns in Class III is ĩ- in the singular and ci- or i- in the plural.
+
+--- [p. 10] ---
+
+    The following typical words in Class III should be learnt at this stage:
+        ng'ombe               a cow
+        ndũrũme               a ram
+        ndegwa                an ox (or bull)
+        nyoni                 a bird
+        nduĩra                a cobra
+        nyaga                 an ostrich
+        ndahi                 a grasshopper
+        nũgũ                  a baboon
+
+    It must also be noted that most lesser herbs, weeds, grasses, and domestic plants etc., as distinct from shrubs and trees, go into Class III and not Class II, as well as humans who are pitiful, and some ailments.
+    Thus:
+        nyeki                 grass
+        nyaragĩta             oat grass, etc.
+        nyeni                 wild spinach
+        nyũmba                a nest, woman's hut
+        ndwari                an illness
+        nyongo                gall-bladder sickness, biliousness
+        njika                 earache
+        njangĩri              outcast
+        ngĩa                  pauper
+        ngombo                serf or slave
+        njamba                boaster
+        ndungata              servant
+
+----------------------------------------
+
+EXERCISE ON LESSON II
+
+1. Translate into Kikuyu
+   1. my tall wild olive tree
+   2. their bad gardens
+   3. four good three-horned chameleons
+   4. one tall fig tree
+   5. your bad chicken-pox
+   6. one good lion
+   7. our tall millet
+   8. my big garden
+   9. your small-pox
+  10. five tall olive trees.
+
+2. Translate into Kikuyu
+   1. your short serf
+   2. one bad outcast
+   3. her big hut
+   4. five short cows
+   5. two black rams
+   6. my one little baboon
+
+--- [p. 11] ---
+
+   7. four light coloured grasshoppers
+   8. our tall bad ostrich
+   9. my big red ox
+  10. your tall oatgrass.
+
+3. Translate into English
+   1. nyũmba yake (ĩake) nene
+   2. mũtĩ ũmwe mũkuhĩ
+   3. mĩgũnda yao (iao) mĩega ĩtano
+   4. mũrimũ waka mũũru
+   5. mũkũyũ mũkuhĩ
+   6. mũgumo wake mũraya
+   7. mĩrũthi ĩtano yao (ĩao)
+   8. mũgũnda ũmwe wakwa mwega
+   9. mĩrimũ mĩũrũ
+  10. mĩriũ ĩtano mĩkuhĩ
+
+4. Translate into English
+   1. nyeki yakwa ndaya
+   2. nyũmba ĩmwe nene
+   3. ngombo yake
+   4. ndwari njega
+   5. ndũrũme ĩmwe vjerũ
+   6. nyoni yakwa njũru
+   7. nyeni iitũ njega
+   8. ndwari yao (ĩao)
+   9. njika yanyu (ĩanyu)
+  10. nyeni yao (ĩao) ndũrũ.
+
+5. What sort of things are grouped together in Class II?
+   How can you explain the presence, in this Class, of things like epidemic diseases on the one hand and a few animals on the other?
+
+6. How is the singular distinguished from the plural in Class III?
+
+--------------------------------------------------------------------------------
+
+--- [p. 12] ---
+
+LESSON III
+
+NOUN CLASSES IV, V and VI
+
+Class IV Nouns
+    The fourth class of nouns is the class of nouns which are principally inanimate objects: a proportion are man-made, others are natural. But in addition, other objects (including some humans as we have already seen), get put into this class if they are held in contempt or scorn or hatred. The noun prefixes in this class are kĩ- or gĩ- in the singular, and ci- or i- in the plural.
+
+    There is a definite rule which decides whether the plural prefix should be ci- or i-, namely that if the stem of the word starts with a vowel then the prefix is ci-, but if with a consonant then the c is dropped and the prefix becomes i-.
+
+    We have already seen that the stem -ndũ, if it has a human or Class I prefix in front of it, becomes a human object, i.e. a person, and it follows that a kĩ- in front of ndũ is a man-made or other inanimate object, a thing. The plural is i-ndũ (this is euphonically changed into indo).
+
+    Examples:
+        gĩkombe               drinking vessel
+        gĩtĩ                  stool
+        kĩano                 quiver
+        kĩrĩgũ                big uninitiated girl (derisive)
+        kĩhĩĩ                 big uninitiated boy (derisive)
+        kĩratũ                sandal
+        kĩnoro                hone
+        kĩhembe               drum
+        kĩriko                a ford
+        gĩtonga               a miser (derisive)
+        kĩmiri                influenza
+        kĩeha                 grief (regarded as man-made)
+        gĩkeno                joy (regarded as man-made)
+        kĩng'angi             crocodile (demoted because hated)
+        kĩgunyũ               maggot (demoted because hated)
+
+--- [p. 13] ---
+
+    A certain number of words connected with land, especially land connected with agricultural development, are placed in this class.
+        gĩthaka               an estate
+        kĩanda                valley flats
+        kĩrĩma                a hillside (by extension it comes to mean a mountain)
+        kĩhaaro               a grassy field
+
+    Adjectives agreeing with nouns in this class have the same prefix as nouns in the singular, kĩ-, but n- in the plural, while the pronominal prefix is ki- in the singular and ci- (or i-) in the plural.
+
+Class V Nouns
+    These are objects of ceremonial, religious and magical significance. It must be noted that each of the words in this class might, for other reasons, be classified in other noun classes, but every single word in this class is an object which is used, or has been used until recently, in connection with religion, magic or ritual or some other form of ceremonial. Class V includes a large number of objects which appear, to the European mind, to have no link whatever with magic or religion or ritual, but from the Bantu point of view they are closely linked with one or other of these things.
+
+    The noun prefix is rĩ- or i- in the singular, and the plural is ma-. Rĩ is used when the stem starts with a vowel; i if the stem starts with a consonant.
+
+    The following are examples of nouns in this class.
+        ithiga, mahiga        strictly speaking the three hearth stones
+    but by extension (in modern times) any stone. The hearth-stones are the dwelling place, in normal times, of the ancestral spirits (much as in Roman mythology), and it is at the hearth-stones that libations are poured out to departed spirits, hence their inclusion in this class.
+
+        itimũ, matimũ         warrior's spear
+    The warrior's spear is included in this class—while hunting spears and old men's spears are not—because the warrior's spear is potentially contaminated with the blood of a human enemy and is, therefore, the subject of many taboos and much ceremony.
+
+--- [p. 14] ---
+
+        riitho, maitho        eye
+    This word, which is otherwise a part of the human body, comes into this class because of its magic potential for the power of the "evil eye".
+
+        rĩũmba                clay for making pots (no plural)
+    This object comes into this class because of the complex ceremonial rules and taboos associated with pot-making and with the digging of clay for this purpose.
+
+        ithanũa, mathanũa     an old style, tanged, axe-head
+    This object comes into this class because ointments for ritual purification had to be mixed on an axe-blade if they were to be of any valid ritual use.
+
+        igego, magego         tooth
+    Although a part of the body, this word comes into this class because of the ritual extracting of incisor teeth just prior to puberty and initiation.
+
+    A few words which denote human beings also occur in this class instead of Class I because they represent humans who play a very special religious part in family life. Thus we have:
+        ithe, ma-ithe         father
+        nyina (strictly inyina) manyina     mother
+        guka (strictly iguka) maguka        grandfather
+        cũcũ (strictly icũcũ) macũcũ        grandmother
+    N.B.— The adjectives and pronouns agreeing with these words behave as though they were still in Class I, for example ithe ũitũ.
+
+    All other adjectives agreeing with Class V nouns take the same prefix as the nouns, thus the adjectival prefix is rĩ- (or rarely i-) in the singular, and ma- in the plural.
+
+    The normal pronoun prefix for Class V nouns is rĩ- in the singular and ma- in the plural.
+
+    The following additional noun stems in this class should be learnt for the purpose of the Exercises:
+        irigũ, marigũ         banana tree
+        itoka, matoka         crinum lily
+        rĩũa, (no plural)     sun
+        rĩiko, mariiko        cooking hearth
+
+--- [p. 15] ---
+
+Class VI Nouns
+    The connecting link which unites all words in this class is a somewhat strange one, and that is the concept of undulation. Many words come into this class which, at first sight, seem to have no connection at all with other words in the same class, and yet investigation will always reveal this concept, even if only in a limited part of the use of the word.
+
+    The singular prefix is rũ- and the plural is n-.
+
+    The following words should be learnt:
+        rũũi, njũĩ            river
+        rũũa, njũa            rawhide, dried skin
+        rũhuho, 'huho         wind
+        rũrĩmĩ, nĩmĩ          tongue
+        rũkũngũ, nkũngũ       whirlwind (dust, by extension)
+        rũthanju, 'thanju     wooden wand
+        rũhuhu, 'huhu         bat (because of the way it flies)
+        rũhiu, 'hiu           fighting sword (which traditionally has a wavy edge)
+
+    Adjectives agreeing with nouns in this class have rũ- as the singular prefix and n- as the plural one. The pronoun prefixes are also rũ- in the singular, but ci- or i- in the plural.
+
+----------------------------------------
+
+EXERCISE ON LESSON III
+
+1. Translate into Kikuyu
+   1. my big drinking vessel
+   2. their little stools
+   3. four dark-skinned big uninitiated girls
+   4. his three drums
+   5. one bad maggot
+   6. one big crocodile
+   7. my nice estate
+   8. your grassy field
+   9. my hillside
+  10. our grief
+
+2. Translate into English
+   1. gĩkeno gĩakwa kĩnene
+   2. ihĩĩ ciao njirũ
+   3. kĩano kĩao gĩtune
+   4. kĩratũ kĩmwe gĩaku
+   5. kĩnoro kĩmwe kĩnini
+   6. gĩtĩ kĩanyu gĩkuhi
+   7. kĩng'ang'i kĩirũ
+
+--- [p. 16] ---
+
+3. Translate into Kikuyu
+   1. your eyes
+   2. his big hearth-stones
+   3. my white clay
+   4. his tall father
+   5. my good grandmother,
+   6. his big axe
+   7. your four bad teeth
+   8. his tall four short crinum lilies
+   9. your long spear.
+
+4. Translate into English
+   1. mahiga maao manene
+   2. itimũ rĩakwa
+   3. nyina wao mũkuhĩ
+   4. irigũ rĩmwe inene
+   5. maitho makwa mega (maega)
+   6. ithe witũ mwega
+   7. magego manyu
+   8. riũa rĩega
+   9. riiko rinene rĩirũ
+  10. rĩũmba rĩakwa rĩerũ.
+
+5. Translate into Kikuyu
+   1. my little bat
+   2. his black tongue
+   3. your big river
+   4. one small dried skin
+   5. his swords
+   6. one long white wand.
+
+6. Translate into English
+   1. njũĩ ciao
+   2. rũhuho rũũru
+   3. rũthanju rũao rũkuhĩ
+   4. rũrĩmĩ rũakwa
+   5. igego rĩmwe inene.
+
+7. What is peculiar and contrary to all basic Bantu language rules about the four words ithe father; nyina mother; cũcũ grandmother; guka grandfather?
+   Can you explain why this peculiarity has come into being?
+
+8. What are the concepts which link together, respectively, the words in Class V and VI?
+
+--------------------------------------------------------------------------------
+
+--- [p. 17] ---
+
+LESSON IV
+
+NOUN CLASSES VII, VIII and IX
+
+Class VII Nouns
+    This is the class of abstract nouns. The noun prefix for this class is ũ- (which becomes w- before a stem starting with a vowel) in the singular and ma- in the plural. It must be noted that a number of words come into this class which, at first sight, do not appear to represent abstract nouns at all, because the English translation of the relevant Kikuyu word has a slightly different shade of meaning and makes it appear as though the word concerned was concrete rather than abstract. For example, the English word face is translated in Kikuyu ũthiũ. The reason why face is treated as an abstract noun is, in fact, simple and logical: to the Kikuyu, the face is composed of different parts, such as nose, mouth, lips, etc., all of which are concrete and do not come into the abstract noun class, but the Kikuyu word which we translate as face should, perhaps, be more correctly translated as facial expression, and the Kikuyu argue that you may touch a person on his ears, or nose, etc., but you cannot touch a person on his face because a face is not tangible except in its separate parts. Similarly, in most dictionaries the Kikuyu word ũhiũ is translated as cattle or stock. This again does not quite seem to fit in with the concept of an abstract noun, but the Kikuyu maintain that it is abstract. You can see and touch the various animals that make up a herd, but the herd itself is not tangible. You can slaughter the animals that make up the herd, but you cannot slaughter the herd as such.
+
+    A few words which are strictly abstract are transferred, as we have already seen, to Class IV, because they are regarded as essentially man-made, for example kĩeha, grief, gĩkeno, joy, kĩrĩro, wailing.
+
+    The vast majority of words in this class are, however, abstract in the English sense as well as the African, and the following list should be mastered at this stage:
+        ũhiũ                 stock
+        ũhoro                 news, information
+        ũtheri                light
+
+--- [p. 18] ---
+
+        wendo                 love
+        ũrũme                 bravery
+        ũtukũ                 night
+        ũrimũ                 foolishness
+        watho                 law
+        ũthiũ                 face
+        ũiru                  jealousy
+        ũthamaki              kingdom
+        ũgeni                 a visit
+        ũgo                   magic
+        ũrogi                 witchcraft
+
+    It may here be noted that in Kikuyu any adjectival stem can be turned into an abstract noun. This is done simply by placing the ũ- prefix in front of the adjective stem to turn it into a noun having the attribute implied by the adjectival. For example, we have seen that -nene is the adjectival stem for large; ũnene is largeness or bigness. We have seen that -erũ is the adjective for white—(ũerũ) werũ is whiteness: and so on. Similarly, abstract nouns can be made from verb stems at will, for example, the verb stem for cook is rug- and an abstract noun made from it is ũrugi, which means the art of cooking.
+
+    The prefixes for adjectives agreeing with nouns in this class are mũ- in the singular and ma- in the plural.
+
+Class VIII Nouns
+    There are only a very few ordinary nouns in Class VIII and only three of them are in common usage. In other Bantu languages this class is sometimes quite large, and it is not at all clear why the class has become abandoned in the Kikuyu language.
+    The ordinary nouns in this class are linked together by only one thing—that they represent parts of the body. The noun prefix in the singular is kũ- or gũ- and in the plural ma-.
+    The only three ordinary nouns in this class in common usage are:
+        gũtũ, matũ            ear
+        gũoko, moko (maoko)   arm
+        kũgũrũ, magũrũ      foot
+
+--- [p. 19] ---
+
+    In addition, the infinitives of all verbs can be, and regularly are, used as though they were nouns in this class.
+    Adjectives agreeing with these three nouns take kũ- or gũ-, and ma- in the plural, and pronouns also take kũ- or gũ- and ma-.
+
+Class IX Nouns
+    There is only one single noun in Class IX in the Kikuyu language. The class is locative in concept, the singular prefix is ha- and the plural kũ-. The only noun is:
+        handũ, kũndũ          place, places
+    This stem -ndũ, as we have seen, means a thing, so a thing in the locative class is a place. Adjectives agreeing with the noun take the prefix ha- in the singular and kũ- in the plural, and the pronominal prefixes are also ha- and kũ-.
+
+Class X Nouns
+    As in most Bantu languages, there is a Kikuyu noun prefix in both singular and plural which denotes diminutiveness. In other words, almost any noun can be turned from an ordinary object of its own class into a diminutive by placing it into Class X.
+    The singular noun prefix for diminutives is ka-, and the plural tũ-. In some cases the diminutive prefix takes the place of the original prefix, but in other cases, where doing so might lead to ambiguity, it precedes the normal noun prefix of the class. This is explained in the next paragraph.
+    We have seen that the stem -ndũ means a thing, so that put into the human class, Class I, as mũndũ, the stem was turned into a human thing or person. Put into Class V with a kĩ- prefix, kĩndũ, it becomes a man-made object or inanimate thing; while in the third class, creatures with a third class spirit, with an n- prefix, it becomes an animal. Moreover, as we have seen, if you put it into the locative class, Class IX, it becomes a locative thing or a place. If, therefore, we want to turn any of these things into a diminutive by transferring them to the diminutive class, we would have to put the diminutive prefix in front of the relative class prefix, since if we did not do so we could not distinguish between a little person, a little man-made object, and a little place, etc. But where a noun stem is only used in one class, and has no possible alternative
+
+--- [p. 20] ---
+
+meaning, then the diminutive prefix takes the place of the normal one. For example:
+        mũgũnda               growing crops in a garden
+        kagũnda               a small area of growing crop in a garden
+        ihiga                 stone
+        kahiga                a little stone
+
+    Adjectives agreeing with nouns in the diminutive class take ka- and tũ- prefixes, and pronouns agreeing with nouns in this class also take the singular prefix ka- and the plural tũ-.
+
+----------------------------------------
+
+EXERCISE ON LESSON IV
+
+1. What is the main concept linking the words in Class VII, and why do some words which are clearly abstract get put into Class IV instead of this Class?
+   Give examples and explanations.
+
+2. Translate into Kikuyu
+   1. my love
+   2. his jealousy
+   3. one black night
+   4. their bad laws
+   5. my good news
+   6. one visit
+   7. your bad jealousy
+   8. our big kingdom
+   9. your good magic
+  10. his bad witchcraft
+
+3. Translate into English
+   1. ũrimũ waao
+   2. ũthiũ wakwa mwerũ
+   3. ũrogi witũ
+   4. watho mũnene
+   5. wendo wanyu mwega
+   6. ũtheri mwega
+   7. ũgeni waku
+   8. ũhoro ũmwe wakwa
+   9. ũhiũ wao
+  10. ũthamaki mwega
+
+4. Translate into Kikuyu
+   1. his ears
+   2. your one good arm
+   3. our long legs
+   4. their black ears
+   5. my white foot
+   6. our place
+   7. your places
+
+5. Translate into English
+   1. handũ hanyu hega (haega)
+   2. kũndũ kwao kũnene
+   3. moko (maoko) makwa manene
+   4. gũtũ gwake kũirũ
+   5. guoko gwake gũkuhĩ
+   6. kũndũ kũmwe
+
+--- [p. 21] ---
+
+6. Translate into Kikuyu (using diminutive prefix)
+   1. my little garden
+   2. his little tree
+   3. my good little initiated girl
+   4. my little black river
+   5. our little cooking stones
+   6. your little black eyes
+   7. his little axe
+   8. five little gardens
+   9. my eight little people
+  10. his little bad disease
+
+--------------------------------------------------------------------------------
+
+--- [p. 22] ---
+
+LESSON V
+
+NUMERALS
+
+As we have seen, in Kikuyu certain of the numerals are treated, so far as their agreements are concerned, not as though they were adjectives in the ordinary European sense, but as though they were pronouns.
+
+Some numerals do not, however, fall into either of these categories but are, in a sense, independent verbal clauses which are in apposition to the nouns they qualify and are, often, so much contracted as to have lost any relationship to their original form unless it is traced very carefully.
+
+The only numerals which do agree with the nouns which they qualify and which take, as seen above, a pronominal prefix relevant to the noun class concerned, are the following:—
+        1                     -mwe
+        2                     -girĩ or -ĩrĩ
+        3                     -tatũ or thatũ
+        4                     -na or -nya
+        5                     -tano or -thano
+        6                     -tandatũ or -thathatũ
+        8                     -nana or -nyanya
+
+Each of the numerals 7, 9, and 10 are contractions of verbal clauses which never agree with the nouns they qualify, but remain unchanged and simply in apposition to the noun they qualify. This is true of certain numerals in nearly all Bantu languages. So far as Kikuyu is concerned, the contracted verbal clauses for these three numerals are linked with human pregnancy and birth, possibly because the most important use of counting lay, formerly, in the need to count the months of pregnancy so as to be aware of the events likely to occur in connection with birth. There are even indications that, in the past, all the numerals from 1 to 10 may have been verbal clauses of this type, and that the instances where numerals are now stems which have to agree with the nouns they qualify, maybe the result of a relatively recent change.
+
+--- [p. 23] ---
+
+The word for 7 is mũgwanja, and as we have seen it never varies or alters. It is a contraction of the following verbal clause:
+        mweri mũgũa nja       the month of falling down in the courtyard
+The Kikuyu believe, and not without good reason, that the seventh month of human pregnancy is the most critical one. It is during the seventh month that a miscarriage can be most dangerous to the mother; a premature baby born during the seventh month is very rarely able to survive, under Kikuyu conditions. It is this fear of the seventh month of pregnancy that gives rise to the verbal clause.
+
+This same explanation gives us the reason why the numeral 7 is regarded by the Kikuyu as an unlucky number: the number which is used either in connection with the uttering of curses, or in the taking of oaths and in black magic. Seven is the number which has to be avoided in every possible way, even to the extent, in the olden days, of no-one ever being allowed to work on the same project for more than six consecutive days because, if he worked on the seventh, he would be certain to come to some harm. That, incidentally, is why the seventh day of the week is known as Kĩumia, the day on which you come out, from the verb stem -um-, to come out, while, by extension, kĩumia also means a week.
+
+Turning next to number 9, the word used today is kenda, a contraction of the verbal clause (kaana) karĩ o nda, (the child) is still in the womb.
+
+This refers to the ninth month of pregnancy, while the third example, ikumi, for ten, refers to the child's exit from the womb, and is linked with the word kũ-uma, to come out. An alternative word for 10 is mũrongo, which signifies a complete unit, but this is seldom used in the singular, while its plural, mĩrongo, is almost always used for each of the units of 10 between 20 and 90 inclusive. Mĩrongo is, of course, a noun.
+
+When the plural noun mĩrongo, meaning units, is used for 20 or 30 or 40 as the case may be, it is qualified by the necessary numeral which must agree with it, except in the case of 7 and 9; thus 20 is mĩrongo ĩĩrĩ and 30 is mĩrongo ĩtatũ, etc.
+
+The numerals for 100 and 1,000 are also nouns, which are in apposition to any word they may qualify, and are respectively
+
+--- [p. 24] ---
+
+igana, which literally means a sufficiency, and ngiri, the original meaning of which is not clear.
+
+So far as numerals used adverbially are concerned, i.e. once, twice, thrice, four times, etc., those forms change in respect of those numerals which are capable of agreement with the nouns they qualify by prefixing rĩ- in front of the stem for one, (because it is singular), but ga- or ka- in front of other stems. Thus the adverb for once is rĩ-mwe, but for twice thrice, four times etc. it is kaĩrĩ (which contracts to kerĩ) gatatũ, kana, etc.
+
+Because 7, 9 and 10, and also units of 10, are verbal clauses and do not, as we have seen, agree with the nouns they qualify, the adverbial form in these cases is more complicated and consists of putting maita in front of the numeral, in its verbal clause form, so that we have maita kenda, nine times; maita mũgwanja, seven times, maita mĩrongo ĩtatũ, thirty times, maita igana a hundred times.
+
+DEMONSTRATIVE PRONOUNS
+
+The demonstrative pronouns, this, that (near), that (yonder), these, those (near), those (yonder), are formed in Kikuyu, in accordance with a set of definite rules, from the pronominal prefixes of the respective classes. The rules are as follows:
+    1. To form this and these:—
+       (a) If the pronominal prefix is ũ- or a-, then double the vowel and put a -y- between.
+           Thus we get ũyũ and aya.
+       (b) If the pronominal prefix is ĩ, then add -no. Thus we get -ĩno.
+       (c) If the pronominal prefix is a syllable starting with a consonant (other than an m) then double the syllable, thus we get:
+           rĩrĩ
+           rũrũ
+           gĩkĩ
+           (c)ici
+           tũtũ
+           gaka
+           haha
+           gũkũ
+
+--- [p. 25] ---
+
+       (d) If the pronoun prefix is a syllable starting with an m then add -ya. Thus we have maya.
+
+    2. To form that (nearby) and those (nearby)
+       (a) If the pronoun prefix is ũ or a or ci or ma, add -cio, thus we have ũcio, acio, (c)icio, macio.
+       (b) If the pronoun prefix is a syllable starting with a consonant, other than ci and ma above, add u. Thus we have rũu, rĩu, mau, hau, tũu, kĩu, kau, kũu.
+       (c) If the pronoun prefix is ĩ, add o. Thus we have ĩo.
+
+    3. To form that (far away), and those (far away)
+       Whatever the pronoun prefix may be, add ĩa. Thus we have harĩa, arĩa, ũrĩa, kũrĩa, ĩrĩa, etc.
+
+For convenience, these demonstratives may be tabulated as follows:
+
+          this      these     that (near)   those (near)   that (far away)   those (far away)
+     I    ũyũ     aya       ũcio         acio           ũrĩa             arĩa
+    II    ũyũ     ĩno       ũcio         ĩo             ũrĩa             ĩrĩa
+   III    ĩno      (c)ici    ĩo           (c)icio        ĩrĩa             (c)irĩa
+    IV    gĩkĩ     (c)ici    kĩu           (c)icio        kĩrĩa            irĩa
+     V    rĩrĩ     maya      rĩu           mau            rĩrĩa            marĩa
+    VI    rũrũ     (c)ici    rũu           (c)icio        rũrĩa            (c)irĩa
+   VII    ũyũ     maya      ũcio         macio (or mau) ũrĩa             marĩa
+  VIII    gũkũ     maya      kũu           macio (or mau) kũrĩa            marĩa
+    IX    haha      gũkũ      hau           kũu           harĩa            kũrĩa
+     X    gaka      tũtũ      kau           tũu           karĩa            tũrĩa
+
+Locative
+    The English in is made by putting -inĩ after the noun. Thus in the trees is mĩtĩ-inĩ; in the garden, mũgũnda-inĩ.
+    We saw that Class IX has only one word in it, handũ, plural kũndũ, meaning place.
+    Since there is only one word in this class the demonstratives are commonly used WITHOUT the noun, since clearly they can only refer to the one noun in the class.
+    Thus haha is used instead of handũ haha, this place, and becomes simply here. Similarly gũkũ is used instead of kũndũ gũkũ, for hereabouts, or at these places.
+
+--- [p. 26] ---
+
+    The difference between the significance of haha and gũkũ, hau and kũu, harĩa and kũrĩa is very important. When the singular is used it means a single particular spot, clearly indicated. When the plural is used the meaning is vaguer, hereabouts and thereabouts. Europeans often say rehe haha when they mean rehe gũkũ, and vice versa, through not understanding the important difference.
+    If I am in a room and I say to a Kikuyu rehe haha referring to some object, I mean that he is to bring it right to me. If I say rehe gũkũ, I mean bring it somewhere into the room but not to the actual spot where I am.
+    Iga hau means put it there (at some indicated spot), iga kũu means put it somewhere over there.
+
+----------------------------------------
+
+EXERCISE ON LESSON V
+
+1. Translate into Kikuyu
+   1. seven bad men
+   2. nine black oxen
+   3. their ten bad rulers
+   4. twenty-three people
+   5. one hundred black married women
+   6. a thousand bad young men
+   7. fifty-three rivers
+   8. nine white stools (or seats)
+   9. sixty-three black faces.
+
+2. Translate into English
+   1. njangĩri ikumi
+   2. mahiga makwa matandatũ manene
+   3. mĩrũthi igana
+   4. andũ anene mũgwanja
+   5. aka ake mĩrongo ĩĩrĩ na atano
+   6. nyoni ikũmi na mũgwanja
+   7. nyũmba ciakwa nene igana na ithano
+   8. 'huhu kenda njũrũ
+   9. ithaka inyanya nene
+  10. maithe anana.
+
+3. Translate into Kikuyu
+   1. this black ox
+   2. that tall man (nearby)
+   3. these tall trees
+   4. those hills (far away)
+   5. those black cows (nearby)
+   6. this long river
+   7. those ten tall men (nearby)
+   8. these fourteen trees
+   9. those (far away) little gardens
+  10. those (nearby) six big axes.
+
+4. Explain the main rules governing the formation of demonstrative pronouns, giving examples.
+
+5. Translate into English
+   1. andũ acio oru (aũru) atano
+   2. mũndũ ũrĩa
+   3. rũĩ rũu rũtune
+   4. mahiga maya makwa
+   5. itonga irĩa ikũmi
+   6. mĩtĩ ĩno yao (ĩao)
+   7. kũndũ gũkũ
+   8. handũ hau hega (haega)
+   9. kahĩ gaka gakuki,
+  10. kũndũ kũmwe.
+
+--------------------------------------------------------------------------------
+
+--- [p. 27] ---
+
+LESSON VI
+
+THE VERB
+
+    In studying the Kikuyu (or any other Bantu) verb it is emphatically not necessary to go into all the apparently complicated tense formations which are suggested by some of the earlier grammar books dealing with the language. These books were written in an attempt to interpret the Kikuyu verb structure in terms of the known grammatical structure of the Indo-European languages. The verb structure in most, if not all, of the Bantu group of languages, is based upon an entirely different conception, different both in respect of time factors and in respect of the way in which one tense can be modified in its meaning to become what would appear (under European grammatical structure) to be a different tense, where, in fact, it is merely an extension of the same tense.
+
+    In the Indo-European languages, verb structure is based on the idea of a present, with past and future respectively on either side. The Bantu concept of time is slightly different. The difference does not appear significant when first stated, but the significance soon becomes apparent when we study its implications. In Bantu languages, time is divided into present unit of time and succeeding unit of time and preceding unit of time on either side, beyond which, in both directions, is indefinite time, both past and future.
+
+    The difference between present and present unit of time is to be found in the fact that the tenses which are grouped together as those of the present unit of time can be used for periods quite far ahead, or quite remote in the past, provided that the unit of time has been either clearly specified or implied. In the normal course of events, unless the unit of time is otherwise specified or implied, it is taken to be a day, or 24 hours, from dawn to the following dawn. The unit of time may, however, be specified by stating it to be a week, or a month, or a year, or a school term, or even a lifetime, and once the unit of time has been specified, any event within that unit must be referred to by means of a tense within the present unit of time, which therefore may have a quite different
+
+--- [p. 28] ---
+
+meaning from our Indo-European type of tense. For example, should I say, at the beginning of the year, This year I am going to work in Nairobi, thereby specifying that This year is the unit of time to which I am referring, then, if I speak about something which I hope to do on Christmas Day this year I must use a tense within the present unit of time. Were I to use a tense in the next unit of time group (which is emphatically NOT the same as our future) it would refer not to Christmas of this year, but to Christmas of next year.
+
+    It is essential that this Bantu concept of time divisions of the verb be clearly understood, as the use of a wrong tense may cause considerable confusion to the listener, and serious misunderstandings may occur, which would be the fault of the speaker for using the wrong tense.
+
+    Within the present unit of time, whether it be the standard 24 hours from dawn to dawn, or any other specified unit of time, there are a number of tenses which refer, respectively, to something immediately happening and being done, to the future within the present unit of time, (in our English sense of the word future) and the past within the unit of time. Thus, in ordinary conversation, if during the day I wish to refer to something that happened in the early hours of the morning, I will use the tense which is, in fact, past within the present unit of time, while if I wish to speak of something I hope to do in the evening or during the night, I should use the future within the present unit of time group of tenses. We shall return to these tenses presently.
+
+    In Kikuyu, and in all other Bantu languages, the basic stem of nearly every verb is a monosyllable. The only exceptions are words of non-Bantu origin imported into the Bantu language from Nilotic or Hamitic, or other foreign languages. Where a verb stem appears, at first sight, to consist of more than one syllable, it can usually be safely assumed that one or other of the syllables is basic, while the other is only there to modify the original meaning.
+
+    In addition to the straightforward tense structures which we shall examine in the next lesson, it must be remembered that every Kikuyu verb and every Kikuyu tense within a given verb can, theoretically at least, be modified by one or more of the considerable number of infixes. These infixes are placed between the verb stem and the verb tense ending. By so inserting them the meaning of the verb is
+
+--- [p. 29] ---
+
+modified, or the tense of the verb is slightly altered, in many subtle but very useful ways.
+    At this stage one example will suffice. Take a stem such as -twar- to take. The active verb-ending, in the indicative mood, would be -a, and by simply inserting -ag- between the stem and the ending we give a habitual sense to any of the tenses used. Thus, in the infinitive, gũ-twar-a is to take, whereas gũ-twar-ag-a makes it to make a habit of taking or to take it regularly. In many cases a number of different infixes can be used to modify one and the same tense of the verb at the same time, and once this principle has been mastered, the apparent difficulties of the Kikuyu verb are seen to be much exaggerated.
+
+    Before we discuss these formative infixes in detail in a later lesson, we must briefly consider the principle tenses in the indicative mood.
+
+Present unit of time tenses
+    In the present unit of time which, as we have seen, is normally from a dawn of one day to the dawn of the next, there are five main tenses.
+    1. Pronoun prefix + ra + stem + formative infix or infixes (if required to modify the meaning) + ending.
+       This tense is the tense denoting the actual present, and refers to something that is actually in the process of being done while the speaker is in the act of speaking.
+       For example, the pronoun for he is a and the stem for cook is -rug-. Therefore a-ra-rug-a means he is cooking at this very moment.
+    2. The tense for something that has already happened within the unit of time is made up as follows:
+       Pronoun prefix + stem + formative infix (if required) + ir + ending. Therefore, we could have a-twar-ir-e which is he took. This is the past, he took, or he did take, but within the present unit of time and not within some previous unit of time.
+    3. A 'had' tense within the present unit of time is made up as follows:
+       Pronoun + — + stem + infix (when required) + ĩt + ending. Thus a-twar-ĩt-e is he had taken (within the unit of time) before something else happened.
+
+--- [p. 30] ---
+
+    4. The immediate future, within the unit of time, is made up of:
+       Pronoun + kũ (or gũ) + stem + formative infix (if required) + ending. Hence a-gũ-twar-a is he will take (before the present unit of time is over).
+    5. If we want to say that something had already been done within the present unit of time, at a time when something else took place, then the rule is:
+       Pronoun + kũ (or gũ) + stem + formative infix (if required) + ir + ending. Thus tũ-gũ-twar-ĩt-e means We had already taken (when something or other happened).
+
+Next unit of time
+    6. The future immediately following, i.e. in the next unit of time to the one which is being used is made up by:
+       Pronoun + ka (or ga) + stem + formative infix (if required) + ending.
+       Some people speak of this tense as the "tomorrow" tense or the "immediate future tense". It is not the "tomorrow" tense except when the unit of time is the standard time of dawn to dawn. It would be the correct unit of time to use for next year, if we were speaking of a year as a unit of time.
+       Thus: tũ-ga-twar-a—we shall take (during the next unit of time)—normally tomorrow, if the standard unit is being used.
+
+Future other than next unit of time
+    7. An indefinite future, i.e. any unspecified point in the future beyond the next unit of time is made up by:
+       Pronoun + rĩ + stem + formative infix (if required) + ending.
+       Thus: tũrĩtwara — we shall take (some time).
+       This same future tense may be used with a qualifying adverb or phrase in order to make it definite in respect of a stated future time, other than in the next unit of time. Thus tũrĩtwara mũthia wa mweri—we shall take at the end of the month.
+
+--- [p. 31] ---
+
+Preceding unit of time
+    8. Turning to the period prior to the present unit of time, the immediate preceding unit of time tense, sometimes called the "yesterday tense" is made up as follows:
+       Pronoun + ra + stem + ir + ending.
+       Thus: a-ra-twa-ir-e—he took (normally yesterday).
+    9. Another tense in the preceding unit of time is the "had" tense and is made by substituting ĩt- for ir-, thus:
+       a-ra-twar-ĩt-e means he had taken during the preceding units of time, as distinct from he took.
+
+Past other than the preceding unit of time
+   10. An indefinite past, i.e. any part of the past prior to the preceding unit of time, is made up of:
+       Pronoun + a + stem + ir + ending,—he did take (at some indefinite point in the past.)
+   11. As in the case of the past of the preceding unit of time, the indefinite past can be given a "had" sense by changing the -ir- to -ĩt-, thus:
+       a-a-twar-ĩt-e — he had taken (at some point in the indefinite past).
+       As in the case of the indefinite future, beyond the next unit of time, both the past tenses can be made to refer to a specific point in time by using a qualified verb or adverbial phrase, thus:
+       a-a-twar-ir-e rĩrĩa aarĩ Nairobi—he took it while he was in Nairobi, but at a point in time prior to the preceding unit of time.
+
+Verb Endings
+    It must be noted that each of these eleven tenses, as well as all other tenses in the Kikuyu language, may potentially, have any one of four verb endings, but sometimes cannot, in practice, do so.
+    There are two active-mood verb endings, one of which we have already referred to, and this is -a (or -e), and the other is -ia. Contrary to what some of the existing books on Kikuyu say, these do not really correspond to transitive and intransitive.
+    The -a ending is the simple one and usually (but by no means always) has what in English grammar we should regard as a
+
+--- [p. 32] ---
+
+transitive significance while the ending -ia is usually a causative, although in English translation it may also seem to be a simple transitive, but sometimes an intransitive.
+    Thus the stem -thamb-, means to splash, and gũ-thamb-a is to splash, but gũ-thamb-ia is to cause to splash. But this, by extension, means to wash in liquid, because you cause the object washed to splash about in the water. Gũthambia, therefore, is correctly translated into English as to wash (with a liquid), and we should call to wash a transitive verb.
+
+    There are also two passive verb endings which are -ũo which is passive transitive, and -io which is passive comparable to the active -ia which is a passive causative, which may be either transitive or intransitive in translation.
+    With the aid of these four endings, each of which can vary any of the eleven tenses given above, we have now mastered what may be called 44 out of the 56 tenses in the indicative mood.
+
+SUBJECTIVE PRONOUNS
+
+    At this stage it is necessary to list the subjective pronouns as used in tense structure.
+    The personal pronoun for "I" is very variable, strictly speaking it is the same as in English, i. Alternative forms for "I" are n and nd or ng. You in the singular is always ũ. He or She is a or e. We is tũ. You in the plural is mũ. They is ma or me.
+    Where the pronoun does not refer to a human, but to some object in one of the other noun classes, then the subjective pronoun used with the verb is the pronominal prefix; singular or plural, of the noun class concerned.
+    For example, we have seen the plural pronominal prefix for the 2nd Class nouns, trees etc., is ĩ, and this would, therefore, be the pronoun form used in the sentence the trees have fallen—mĩtĩ ĩgũĩte. Rũ, as we have seen, is the singular pronoun prefix of Class VI, therefore it, referred to a noun in this class, would be rũ.
+
+THE INFINITIVE
+
+    The infinitive of any verb is made by prefixing kũ or gũ in front of the stem and adding one of the four verb endings. Thus:
+
+--- [p. 33] ---
+
+        Kũ-rug-a             to cook
+        Kũ-rug-ũo            to be cooked
+    etc.
+
+    The following list of verb stems should be learnt at this stage:
+        -kom-                 lie down
+        -ror-                 look at, look after
+        -rug-                 cook
+        -twar-                take
+        -hũr-                beat
+        -hing-                shut
+        -ĩr-                 tell
+        -thamb-               splash
+        -rĩ-                 eat
+        -hat-                 sweep
+        -ak-                  build
+        -rũng-               straighten
+        -hand-                plant
+        -end-                 like or love
+        -ũk-                 come
+        -ug-                  say
+        -tem-                 cut
+
+Additional Vocabulary for Lesson VI
+    ũmũthi today; ira yesterday; rũciũ tomorrow; tene long ago; kaingĩ often; riu now; rĩngĩ again.
+
+----------------------------------------
+
+EXERCISE ON LESSON VI
+
+1. Translate into Kikuyu
+   1. those ten men are eating bananas
+   2. I am cooking this meat
+   3. he will sweep the hut (future of present unit of time)
+   4. we planted those tall matoka lilies (past of present unit of time)
+   5. he will like meat (future of next unit of time)
+   6. that bad man beat this black cow (past of preceding unit of time)
+   7. the trees will be planted (next unit of time)
+   8. the five black birds have built nests in the trees (indefinite past).
+
+--- [p. 34] ---
+
+2. Translate into English
+   1. tũratwara ng'ombe kĩhaaro
+   2. mĩtĩ ĩo ĩhandĩtũo mũgũnda wakwa
+   3. tũgũtwara mbũri rũũĩ
+   4. atumia aya akwa atatũ maka-ruga nyama
+   5. tũgũthambia iratũ ici ciitũ
+   6. maraĩrire mũtumia waku
+   7. athamaki aya mekwenda ng'ombe ciaku
+   8. Njoroge witũ arahaata nyũmba ĩno
+   9. maatwarĩte ndũrũme yao njirũ kĩanda.
+
+3. Explain the Kikuyu (Bantu) system of tense structure with examples.
+
+4. Discuss the Kikuyu (Bantu) concept of time, compared with the European idea of past, present and future.
+
+--------------------------------------------------------------------------------
+
+--- [p. 35] ---
+
+LESSON VII
+
+CONDITIONALS
+
+    Although there are a few other tenses in the indicative mood, which we shall have to examine in Lesson IX (as for example the narrative and optative tenses) we must leave these for the moment and consider the basic conditional and subjunctive tenses.
+
+    In English, we use in effect the little conjunction if to make a condition of one kind or another, although we do not necessarily speak of a tense which follows if as a conditional tense, but confine this definition to "should" and "would" tenses. For example, we say on the one hand if he loves me I will marry him, or on the other hand I would marry him if he loved me, and only the second of these has a conditional tense.
+
+    In Kikuyu, as in all other Bantu languages, it is the first part of the first and the latter part of the second of the above sentences, i.e. that followed by the word if, which would have to be put into a conditional tense.
+
+    In some Kikuyu grammars, several conditional tenses are set out to be learnt by heart. This is quite unnecessary. The only thing that must be learnt is that the conditional meaning is made by putting the infix -ngĩ- between the pronoun and the verb stem, or, if some other additional tense infix is also being used (as it may be) then the -ngĩ conditional infix must be used to change any of the indicative tenses (which we have studied in Lesson IV) into a conditional tense. For example, a-ngĩ-rug-a is if he cooks, but we have seen that a-ra-rug-a means he is at this very minute cooking, so if we say a-ngĩ-ra-rug-a, we change it to a conditional, and so say if at this very minute he is in the act of cooking. Or again we have seen that a-ra-twar-ĩt-e means he had taken (during the preceding unit of time), and if we add an -ngĩ- between the pronoun and the -ra-, we make it a conditional within the preceding unit of time, namely if he had already taken it during the preceding unit of time.
+
+--- [p. 36] ---
+
+SUBJUNCTIVES
+
+    The simple subjunctive in Kikuyu is made by the simple process of pronoun+stem+ending. For example, a+twar+e that he may take.
+    In European languages, we talk about present subjunctive, past subjunctive and so on, in Bantu, including Kikuyu, there is just one main subjunctive tense, but the tense which dominates the subjunctive may of course be present or past or future, thus he wants you to take (future within the present unit of time) is ekũenda ũtware. He wanted you to take, would be a-ra-end-ir-e, but followed by the same subjunctive ũtware, while he will want you to take at some indefinite point in the future would be a-rĩ-end-a, again followed by the same subjunctive ũtware.
+
+NEGATIVES
+
+Indicative Mood
+    To make the negative of any tense within the indicative mood, the rule is that you place nd in front of the pronoun, if the pronoun is a vowel, but add ti after the pronoun if the pronoun starts with a consonant. Let me give examples, if we want to say he has not cooked we should write nd- before the pronoun a, since a is a vowel, and then follows the rest of the tense: in this case rugĩte, so we have ndarugite. If we had to say they have not cooked, we should have the pronoun first—ma, followed by -ti since in this case the pronoun starts with a consonant, we should thus have matirugĩte.
+
+Other negatives
+    While the above rule applies to all the tenses of the indicative mood, no matter whether the pronoun refers to a person or to some non-human in another class it also applies to conditionals where they are not subordinate. In all other conditional tenses, and in all subordinate clauses, other than in the subjunctives, the negative is made by a different rule. This rule is that you put the syllable ta after the pronoun, no matter whether the pronoun is a vowel, or starts with a consonant.
+    Note. With a -ta- negative the personal pronoun I is always -i-.
+    Examples of ta negative are as follows:
+        i-ngĩ-twara           if I should take
+        i-ta-ngĩ-twara        if I should not take
+
+--- [p. 37] ---
+
+        mangĩarugire         they would have cooked
+        matingĩarugire        they would not have cooked
+
+Imperatives
+    There is a special set of rules for negative imperatives which, at first sight, appears to be paradoxical, although, in fact, critical examination shows that they are quite logical. The simple ordinary imperative is made by simply using the verb stem plus one of its four normal endings. For example, if you order someone to cook, you say rug-a, or to take twar-a! These are the singular positive imperatives. If the order is given to more than one person, then an i is added after the verb stem and ending, so that if you were ordering several different people to cook you would say rug-a-i!
+
+    But if we want to give a negative imperative order we cannot use any of the ordinary negative forms described above, for reasons which we shall indicate presently. Instead, in Kikuyu, it is necessary to use the cumbersome method of employing an imperative of one verb, followed by the infinitive of the operative verb. The verb which one puts into the negative tense is -tig-, to abstain from or fail to: so that do not cook is tiga kũruga or literally stop to cook.
+
+    The reason for this unusually cumbersome circumlocution lies in the fact that if a straight-forward negative is used as an imperative, the effect, in Kikuyu, is not to make a negative imperative, but rather to make a doubly strong affirmative one. For example, if I say ndũruge, I am not saying do not cook, although the nd is a clear negative form, but I am, in Kikuyu idiom, saying You have got to cook and I am using, in fact, an extra strong imperative.
+
+    The underlying idea is quite logical—a simple negative is used as a threat: Don't cook and see what happens to you! Therefore some other form of negative has to be found for a real negative imperative, hence the circumlocution described above of using tiga followed by an infinitive.
+
+    The use of the ta negative in front of a simple imperative turns it into a polite, but firm, imperative, almost a please. Thus tatwara is "be so good as to take it", ta ruga "be so good as to cook", etc.
+
+--- [p. 38] ---
+
+EXERCISE ON LESSON VII
+
+1. Translate into Kikuyu
+   1. if I come I will cook the meat
+   2. I do not like this garden
+   3. If I were told that news I would not take my wife to the river again
+   4. don't beat this black ox
+   5. you must cook these bananas
+   6. If he had come he would have cooked the meat
+   7. I will take the sandals if you come
+   8. if he had built a hut his wife would have loved him
+   9. do not plant rat-tailed millet
+  10. I would not like jealousy
+
+2. Translate into English
+   1. athuri acio anana matingĩhanda marigũ mũgũnda wakwa
+   2. mũtĩ ũcio ndũgatemwo nĩ aka acio aitũ
+   3. ĩra athuri arĩa atano matware ũhiũ wao rũũĩ
+   4. tũtingĩruga nyama ithe witũ (ataũkite) atokĩte
+   5. matingĩkoma matahandĩte nyeki
+   6. tiga gũtwara atumia Nairobi
+   7. ndikũruga ũmũthĩ ngaruga rũciũ
+   8. ndũrore mũndũ ũcio mũũru rĩu
+   9. ũtangĩruga ndũngĩkoma
+  10. twarai tũhĩĩ rũũĩ.
+
+3. Explain the Kikuyu way of making a very strong imperative positive and also a very strong imperative negative.
+   Give examples.
+
+--------------------------------------------------------------------------------
+
+--- [p. 39] ---
+
+LESSON VIII
+
+THE FORMATIVE INFIXES AND THEIR USES
+
+    In all Bantu languages (not only Kikuyu) the meaning of a verb and of almost any tense in a verb may be altered or modified by the use of one or more formative infixes. These do not really alter the tense at all, although some authors invest some of these infixes with tense value. I prefer not to regard any of these infixes as having tense value (unless we count ir and ĩt, which occur in past tenses, as also being formative infixes). I prefer to treat all formative infixes as a special Bantu feature. We have in English slightly comparable syllables which alter meanings, as for example the use of un- as a prefix to a verb stem, such as
+        lock                  unlock
+        do                    undo
+and our syllable able after certain words such as cook
+        cook                  cookable
+        love                  loveable
+        like                  likeable
+
+    The important thing in Kikuyu, and indeed in all Bantu languages, is that these infixes play a major part in the language build-up, and make it possible to make so many twists to a single basic verb stem: thus, in fact, one verb stem in Kikuyu may—with the help of various formative infixes—give you the equivalent of a large number of English verb stems.
+
+    The following are the most important of the Kikuyu formative infixes; a brief explanatory discussion of each one is given later.
+        (a)     -or-    }
+                -ũr-    }
+                -ũk-    }
+                -ok-    }
+        (b)     -am-    }
+                -im-    }
+        (c)     -an-
+        (d)     -ith-
+        (e)     -ag-
+        (f)     -ang-
+
+--- [p. 40] ---
+
+        (g)     -ĩr-    }
+                -er-    }
+        (h)     -ĩk-    }
+                -ek-    }
+        (i)     -ar-    }
+                -at-    }
+
+    Potentially, any or all of these may be used together, at one and the same time, to modify, in their respective ways, the meaning of the basic verb stem in almost any tense, provided the result makes sense.
+
+    In practice, one very seldom gets more than five formative infixes used together, and normally only one or two are used together.
+
+    N.B. Formative infixes are placed between the verb stem and the verb ending.
+        (a)     -ũr-                 (or -or)
+                -ũk-                 (or -ok-)
+        These are reversive in their meaning, and in theory they can be used with any verb stem, but, in practice, they are only used with certain stems.
+
+        The -ũr- (-or-) form is used essentially in transitive meaning only, while the -ũk- (-ok-) form is always used with an intransitive meaning. For example, the stem for shut is -hing-
+            so      kũ-hing-a      is to shut
+                    kũ-hing-ũr-a   is to unshut, i.e. to open
+                    kũ-hing-ũk-a   is to become open.
+
+    It often happens that a reversive infix, when used with an ordinary stem, has acquired a specialised meaning. For example -rug- is the stem cook as we have seen, so that kũ-rug-a is to cook. Now clearly, one cannot, literally, uncook something that has been cooked, and yet we find that the reversive of rug-a, i.e. rugũra- exists in Kikuyu, but it has a special meaning, i.e. disentangle, separate out the different elements, explain, translate.
+
+    Underlying that is the idea that, in cooking, you mix all sorts of ingredients together until you make them a single whole, but they cannot be uncooked. However, if I have mixed up my words and made a parable or a story with a hidden meaning, I can ask you to rugũra them, i.e. sort them to find out the real meaning.
+
+--- [p. 41] ---
+
+        (b) -am- (or -im- but this is very rare)
+    This infix has the effect of giving the meaning of in a state of. It is used to alter the meaning of verb stems, as the following example shows. -Rũng-, as we have seen, is the stem of to straighten, if we add the -am- infix we change rũng-a to rũng-am-a, which in turn in Kikuyu becomes modified to rũgama (without the n), and is translated into English as stand up. Basically, it does not mean "stand up", but get into a state of being straightened. A person has been sitting or lying down and is not straight, he "rũ(n)gama"s and gets in a state of being straight, i.e. stands up. Similarly, ar- is the stem for to spread out. Ar-am-a is in a state of being spread out, i.e. to be wide apart.
+
+        (c) -an-
+    This infix has a reciprocal effect. For example, -end-a means like, -end-an-a means like each other or love. Hur-a means beat or strike, hurana means beat or strike each other, i.e. fight. Twar-a means take, twar-an-a means take each other or accompany. ĩra- means tell, ĩr-an-a means tell each other, or make a verbal agreement or agree.
+
+        (d) -ith-
+    This is a very interesting formative infix. It is only used with the causative verb endings, -ia active and -io passive, never with -a or -ũo. Its meaning is strongly causative and it often changes the logic meaning of the verb stem to such an extent that Europeans cannot, at first, see the connection between the basic stem and meaning and its altered meaning with its causative -ith- formative infix and giving (apparently) a wholly different meaning.
+
+    In ordinary words, -ith- is a simple causative, thus we have -rug- the stem of cook, -rugithia is cause to cook or have cooked by some other person, but, in many special cases, this infix gives a special meaning. Thus the stem -rĩ- is eat, but rĩ-ithia which literally is cause to eat has the special meaning of herding a flock of goats or sheep or cattle; because the shepherd takes them out in order to cause them to eat.
+
+    -Gĩ- is the stem of to possess, gĩĩthia is literally to cause to possess, but in the dictionary you will find it given as to greet. Kũ-gĩĩthia is strictly only to greet with a present, while an ordinary hand-shake without a present, is gũ-tang'-an-a, to shake each other's hand (note the -an reciprocal infix).
+
+--- [p. 42] ---
+
+    -Tiithia- is another interesting example of how the -ith- infix, by special extension, gives a special meaning to a verb stem. -ti is to honour, yet tiithia, your dictionary will tell you, is to help. How does cause to honour come to mean to to help? Very simply: if you find some person working on a job and you assist them in it, by doing so you cause them to be honoured, because you have shown, by this act, that you are willing to put yourself out to help the person concerned. More particularly is this true if you take over a job while they enjoy a rest.
+
+        (e) -ag-
+    There are two formative infixes -ag- which are tonally different, and at first caused a great deal of confusion to Europeans. For the beginner it is only possible to judge which of the two is meant by the context, and of course this is also true so far as written Kikuyu is concerned. -ag- (1) gives the meaning of habitually, while -ag- (2) gives the meaning of continue to. When spoken by a Kikuyu the tone is quite different and is clearly understood, while the context, in most cases, helps.
+
+    -ag- (1) with the ordinary indicative and subjunctive mood tense means do habitually. Thus rugaga Kiumia means make a habit of cooking on Sunday, nake Njoroge arugage (subjunctive with -ag- (1)) mĩthenya ĩo ingĩ. whilst Njoroge habitually does the cooking, on the other days.
+
+    -ag- (2) Rugaga when the -ag- has the second tone means go on cooking for the time being or continue to cook, and not "cook habitually". For example, rugaga (imperative with -ag- (2)) na niĩ hatage (subjunctive with -ag- (2)) means go on cooking while I continue to sweep, and not "you make a habit of doing the cooking each day while I make a habit of doing the sweeping".
+
+    For the beginner, while keeping in mind the difference between the two -ag- formative infixes, it is easier simply to learn it as:
+    -ag- means either habitually or continue to.
+
+        (f) -ang-
+    This is a formative infix giving the meaning of a little bit more, for example:
+        twara means take; twaranga, take it a little bit further
+        hũra means beat; hũranga, beat a little bit more
+        ruga means cook; ruganga, cook a bit more
+
+--- [p. 43] ---
+
+        (g) -ĩr- or -er-
+    These have the triple prepositional meaning of "to" or "for" or "at". For example:
+        twara is take; twarira, take to or take for
+        ruga is cook; rugĩr-, cook for or cook at
+    If you use the ĩr- infix with any past tense which has the -ir- tense infix then the r of -ir- drops out for euphony, thus a-twar-ir-ir-e, he took to, becomes a-twar-ĩ(r)-ir-e.
+
+        (h) -ĩk- or -ek-
+    This infix gives the English meaning -able to a word, for example the infinitive kũ-rug-a is to cook, kũ-rug-ĩk-a is to be cookable. Sometimes this infix appears to alter the meaning (so far as the English translation is concerned). For example, taha is to draw (a liquid), so taha mai is draw water, but tah-ĩk-a is to vomit, because the act of vomiting makes the liquid in the stomach drawable.
+
+        (i) -ar- or -at-
+    These two formative infixes tend to give a meaning of become. Thus -thing- is to be pure, thingata is to become pure. -tunga- is to bend, tungata is to become bent down, i.e. to serve as a slave to a wealthy man (from which we get the noun ndungata, a servant see Page 10).
+    -rũa- is fight, rũara is literally to become in the state of fighting, which by extension is confined to fighting a disease, and thus today means only to be ill.
+
+REFLEXIVES
+
+    When one wants to express the idea which in English we make clear by using self with a pronoun, in Kikuyu the rule is to put -ĩ- before the verb stem. This is really simply a process of using a reflexive pronoun, and the -ĩ- is the reflexive pronoun used no matter what class of noun is referred to.
+
+    For example, -tem- is the stem of cut, so ĩ-tem- is cut oneself, therefore he cut himself (in preceding unit of time) is a-ra-ĩ-tem-ire: I will cook for myself is ngũĩrugĩra, and the dog bit itself would be nguĩ ĩraĩrũma.
+
+    We have already seen that, basically, every Kikuyu verb stem is a monosyllable. Some verb stems that seem to be di- or tri-syllabic are due to the fact that a reflexive has been prefixed to the
+
+--- [p. 44] ---
+
+stem (as well as a formative infix occasionally) to give it what appears to European eyes to be a wholly different meaning, and one that has to be translated by a different verb altogether. For example, -tig- is the basic stem meaning leave. -ĩ-tig-ĩr is given in many Kikuyu vocabularies and dictionaries as to fear, but it is basically the single syllable stem -tig- or leave; the -ĩr- is a formative infix denoting for, and the -ĩ- is a reflexive, and the word really means leave alone for oneself, i.e. to abandon, give way or give up. It is by extension from this that it comes to mean to be afraid or to fear.
+
+    Similarly, -e-her, which seems to be a two-syllable basic stem meaning to get out of the way, is really the reflexive -ĩ- (changes euphonically to -e-), followed by the basic stem -her-, to repent or to regret. You repent or regret for yourself that you have got into a position, and by extension this means you get out of this position.
+
+    There are many such examples; -ĩruta is to learn, and -ĩthamba to wash, -ereka to go towards, etc.
+
+----------------------------------------
+
+EXERCISE ON LESSON VIII
+
+1. Translate into Kikuyu
+   1. they love each other
+   2. take this stool a little bit further
+   3. they opened the huts for each other
+   4. these bananas would not be cookable
+   5. the young men would not like to fight each other for that bad girl
+   6. get this meat cooked tomorrow
+   7. I will go on planting the garden you go on sweeping the house
+   8. do not make a habit of beating the cow
+   9. go on eating a little bit longer
+  10. cook the meat for the elders.
+
+2. Translate into English
+   1. matingĩamahingũrĩire
+   2. tũkũhandanga
+   3. ndingĩamatwarĩire nyama
+   4. matiitĩithanangagia
+   5. maratwarana Nairobi
+   6. tũkũaranangia ũhoro ũcio
+   7. rugaganga
+   8. marathambĩra rũũĩ
+   9. nyoni ciakagĩra nyũmba ciao mĩtĩinĩ
+  10. tũtangĩagĩithanĩrie tũtingĩaaririe ũhoro ũcio.
+
+3. Explain how the Kikuyu language makes use of formative infixes and how sometimes a wholly different English meaning seems to be given to a basic verb stem by a formative, until the position has been analysed out clearly. Give examples.
+
+--------------------------------------------------------------------------------
+
+--- [p. 45] ---
+
+LESSON IX
+
+NARRATIVE AND OPTATIVE TENSES
+
+The Narrative Tenses of the Indicative Mood
+    In all Bantu languages, including Kikuyu, there is a special tense for use in a consecutive narrative. In Kikuyu this is made up as follows:
+    Pronoun + kĩ (gĩ) + stem + ending, for example agĩtwara nyama, akĩruga, akĩrĩa and he took the meat and cooked and ate it.
+    The kĩ- narrative tense infix may be doubled, for extra emphasis, for example agigitwara is not "and he took", but and so he took.
+    Of course the narrative tense may be used with the active and passive endings and, when necessary, with any formative infix.
+
+The Optative Tense, in the Indicative Mood (sometimes known as the blessing and cursing tense)
+    In Kikuyu, as in some other Bantu languages, there is a special tense for use in connection with the "expression of a wish". This is made up of pronoun + ro + stem + ending; thus may he die is a-ro-ku-a; while may he be blessed is a-ro-rath-im-ũo.
+
+CONJUNCTIONS
+
+    And is na. When it is used with pronouns in apposition to a noun (for purposes of emphasis), the na meaning and is sometimes as a matter of habit, joined to the pronoun. For example, nake, and he, but it would be more correct to write it as na ke, but by common usage this is never done.
+
+PRONOUNS IN APPOSITION
+
+    Both in the nature of object and of subject, pronouns are sometimes used in apposition to a noun, or a personal name, or even by themselves in front of a personal pronoun used as the subjunctive form of a verb tense in order to give emphasis.
+    Personal Pronouns when so used are:
+        niĩ                  I or me
+        wee                   thou or thee
+
+--- [p. 46] ---
+
+        ke or we              her or she, him or her
+        ithui                 we or us
+        inyui                 you
+        o                     they or them
+
+    For example:
+        as for myself, I was beaten, but he was released, niĩ ngĩhũrũo, we akĩrekio.
+        as for him, they beat him, nake makĩmũhũra.
+        And, He, Jesus, took the cup, Nake, Jesu, akioya gĩkombe.
+        We (emphatically) do not wish to cook, ithuĩ tũtikwenda kũruga.
+
+OBJECTIVE PRONOUNS
+
+    Objective pronouns when not used in apposition, but as ordinary objectives, are made up by using the pronoun prefix that refers to the noun in question. Personal objective pronouns however are me -n; you (singular) kũ; him or her, mũ (this is tonally different from the mũ, you (plural); us, tũ; you (plural) mũ; them, ma.
+    Objective pronoun prefixes are placed immediately before the verb stem, after the tense infix. Thus: tu-kũ-mũ-hũra is we are going to beat him.
+
+VERBAL NOUNS
+
+    We have seen that any infinitive can be used as a noun belonging to Class VIII. Infinitives are so used both as subjects and objects. I want to cook is ngwenda kũruga. They would not know (how) to cook, matingĩmenya kũruga.
+    Sometimes the Kikuyu infinitive, when used as a verbal noun, is more correctly translated into English by a present participle.
+    For example, the English cooking meat is difficult would be written in Kikuyu kũ-ruga nyama kũrĩ hinya.
+
+THE ENCLITIC NĨ
+
+    I have never been able to find a satisfactory rule to explain when, in Kikuyu, the enclitic conjunction nĩ should be used and when it should be omitted. It is often used at the start of a sentence, if the sentence starts off with a verb, for example I want to go to Nairobi would be Nĩ ngwenda gũthii Nairobi, rather than Ngwenda gũthii Nairobi.
+
+--- [p. 47] ---
+
+WORDS USED FOR PUNCTUATION
+
+    Since the Kikuyu language had never been written before the coming of the European, punctuation marks like commas, quotation marks, full stops etc. did not exist. A narrative, or a sentence, was broken up by means of the introduction of such words as atĩrĩ, atĩrĩrĩ, rĩrĩ, atĩ, rĩ. Atĩrĩrĩ and atĩrĩ commonly seem to open new paragraphs and new sentences. Atĩ most commonly is the opening of a phrase in inverted commas, i.e. quoted speech, or sometimes just as a comma or pause in the sentence. rĩ is much like a comma and rĩrĩ a colon or semi-colon.
+
+THE VERBS "TO BE" AND "TO HAVE"
+
+    Both these verbs in Kikuyu are defective, having a very limited number of tenses, and used without the correct endings, -a, io, ũo, io.
+    The stem of to be is -rĩ-, so the present is:
+        ndĩ (n rĩ)              I am
+        ũrĩ                    you are
+        arĩ                   he or she is
+        tũrĩ                   we are
+        mũrĩ                   you are
+        marĩ                  they are
+    Referring to non-humans, the pronoun stem simply goes in front of -rĩ-. The past of the verb to be is pronoun + a + rĩ.
+        nda-a-rĩ               I was
+        ũ-a-rĩ (wari)          you were
+        a-a-rũ                he was
+        tũ-a-rĩ (twari)         we were
+        mũ-a-rĩ (mwari)         you were
+        ma-a-rĩ               they were
+    The verb to have is simply to be followed by na. For example:
+    I am is "ndĩ", but I have is "ndĩ na"; they are is "marĩ", but they have is "marĩ na".
+
+INTERROGATIVES
+
+    In Kikuyu, a question is expressed by a change of tone, not by any alteration of words. In English we say as a statement of fact you are a cook, but as a question are you a cook? In Kikuyu we say in both cases we ũrĩ mũrugi, but the tone is changed for a ques-
+
+--- [p. 48] ---
+
+tion. This interrogative tone is best learnt by the help of a Kikuyu person, in conversation. In the written word a question mark shows where the voice has to be changed in tone in order to make a question. Questions can also be established by the use of interrogative words, such as nĩkĩ why, nũũ who, or by rĩ when, which comes after the verb; while nĩkĩ or nũũ can be used either before or after the verb.
+
+ADVERBS
+
+    Adverbs occur in Kikuyu, for example rĩrĩa when; kaingĩ often; rĩmwe once.
+
+FURTHER VERB TENSES
+
+    The -na- and -a-na- Tenses
+    These two very useful Kikuyu tenses are not at all easy to define in terms of European grammatical structure, having no real equivalent at all.
+
+The -na- tense Infix
+    The first of the two, in which -na- is inserted as a tense infix before the verb stem, is not normally used except in the negative.
+    This tense infix can be used in the indicative mood with the negatives appropriate to the indicative mood (i.e. nd- before a vowel pronoun and -ti after a pronoun starting with a consonant). When so used, it has the meaning of a very emphatic negative past, but only within the present unit of time. For example, ndi-na-twara, I did not take (or I did not so much as take). tũ-ti-na-ruga, we definitely have not cooked.
+    This -na- infix for negative emphasis can also be combined with the narrative -ki- tense; thus while ma-ti-na-ruga would mean they definitely did not cook, ma-ti-na-ki-ruga would mean and so they did not so much as cook.
+    The -na- tense infix can also be used in subordinate clauses (with the appropriate negatives which go with conditional subjectives and subordinate clauses (i.e. -ta- after the subject pronoun).
+    The -na- tense used in a subordinate clause has the meaning of before: thus Ruga tũtanarĩa means Cook before we eat.
+
+The -a-na- tenses infix
+    This dual syllable tense infix -a-na- may be used both in the indicative mood, as well as in conjunction with the conditional
+
+--- [p. 49] ---
+
+tense prefix, -ngĩ-, and in subordinate clauses, and also with the -ka- subjective future, with of course the appropriate negative form when required.
+    In the affirmative, within the indicative mood, -a-na- in front of the stem gives the meaning of often and frequently. Thus tũ-a-na-hũr-ũo would mean We have often been beaten, and a-a-na-ruga is he has often cooked. In the negative within the indicative mood the -an-a- tense infix makes the opposite of often, which is never. For example:
+        ma-ti-a-na-gũra is they have never bought.
+        ndi-a-na-ruga mũgate is I have never cooked bread before.
+    Combined with the conditional tense infix -ngĩ- in the affirmative the a-na- tense infix gives the meaning of often, but with a conditional connotation. Thus i-ngĩ-ana-ruga nyama ũgũo, i-ngĩ-ũi nĩ ũendaga ũgwo, is I would often have cooked meat in this way had I known you habitually liked it so. With a negative and the -ka- subjunctive in a subordinate clause, the a-na- can also be used to make an ultra-strong imperative with a never sense, thus ndũ-ka-a-na-ũragane. Thou shall never kill or Thou shalt not kill under any circumstances.
+
+----------------------------------------
+
+EXERCISE ON LESSON IX
+
+1. Translate into Kikuyu
+   1. and he took the cows, and he herded them on the grassy field and they became ill
+   2. he said "May I die"
+   3. and so Njoroge and Wanjiru cooked the bananas and ate them
+   4. as for us we will build a house
+   5. and so they took you (singular) to the hill
+   6. he wants to cook meat
+   7. I do not wish to eat today
+   8. as for me I am taking my wife to Nairobi
+   9. and so they gave us trees to plant in the garden and we planted them
+  10. and so they opened this house for us.
+
+2. Translate into English
+   1. agĩkĩmera (agĩkĩmaĩra) atĩrĩ tũgũtwara ũhiũ witũ mũgũnda
+   2. we, Bwana, akĩuga ndikwenda kũrĩa
+   3. marotiga kũhanda
+   4. matingĩkĩamatwarĩire nyama
+   5. agĩũka, akĩruga, akĩrĩa
+   6. gitonga kĩu gikĩnjĩra, niĩ, atĩ nduge ngĩkĩruga
+   7. athamaki marorathimũo
+   8. ithui nake tũgĩgĩtema mĩtĩ ĩo
+   9. makimũtwara mũgũnda makĩ-mũhũra
+  10. inyuĩ na Njoroge rũgamai.
+
+--- [p. 50] ---
+
+3. Translate into Kikuyu
+   1. I am a male person
+   2. he was a big loutish boy
+   3. we are elders
+   4. I was a cook
+   5. you were a chief
+   6. are you a young uninitiated girl?
+   7. who wants meat?
+   8. why have they taken the cows to the river?
+   9. the tree was tall
+  10. the women are here
+  11. are you a good witch doctor?
+  12. often I make a habit of eating meat by day and bananas at night.
+
+4. Translate into English
+   1. niĩ ndĩ mũrogi
+   2. inyuĩ mũtirĩ ega (aega)
+   3. ũarĩ gũkũ ira?
+   4. tũri na nyoni nyingĩ
+   5. mũrũthi ndũrĩ na nyama
+   6. nũũ ũkũhũra Njoroge?
+   7. ingĩkĩmahũra?
+   8. ũhingũrĩirũo nĩki?
+   9. rũũĩ rũarĩ rũnene
+  10. njangĩrĩ itirĩ gũkũ.
+
+5. Translate into Kikuyu
+   1. we have not so much as eaten meat today
+   2. we have often built huts
+   3. you are not ever to take the oxen to the river
+   4. I have often fought him.
+
+6. Translate into English
+   1. ndinahanda marigũ mũgũnda
+   2. itangĩanaruga
+   3. mũtikanarũe
+   4. itanaaka nyũmba nĩngũĩra Njoroge
+   5. ndinamũrugĩra.
+
+--------------------------------------------------------------------------------
+
+--- [p. 51] ---
+
+LESSON X
+
+HOW TO GO ON LEARNING
+
+    While you are learning the first nine lessons it is most important that you should learn to pronounce Kikuyu properly. The best way is to get an intelligent educated Kikuyu to help you. Read words aloud and make him correct your pronunciation and start to try and talk with him. Start making your own vocabulary, listing nouns in their correct classes, using the singular prefix to guide you. When a noun, by its prefix, seems to be in a class which does not fit in with what you have learnt, try to discover the reason. Sometimes you may not be able to do so. Usually you will succeed. For example, you will find that the Kikuyu word for a large branching bush is kĩ-hinga. Why should a bush of this type have shut as its basic stem, and why should it be in the man-made or soulless objects class rather than in Class II of trees, or Class III of lesser plants? The answer lies in the fact that using branching bushes was the normal means of shutting the entrance to a homestead at night, in the olden days. It is only by subsequent extension of meaning that the word has come to be used for any large growing bush.
+
+    To take another example, you will find that a gap in the front teeth is called king'ethũ; again it is another word in Class IV. In English I suppose a gap is abstract, but in Kikuyu such a gap is a man-made object, having been caused by human intervention in extracting one or more teeth. Or again you will find that a bee-hive is mũatũ, and a homestead mũciĩ, both of them are in Class II which is predominantly the class which contains things with second-class spirits. If you study Kikuyu bee-keeping as carried out in the olden days, you will discover that a hive was believed to have a spirit, which at times needed placating in some way; thus bee-hives have spirits. Similarly all ceremonies connected with homesteads equally show the concept of a "spirit of the homestead" which is quite distinct from the spirit of the ancestors.
+
+    In making your own vocabulary, try to link the stem of a noun with that of some basic verb, if you can. It is not always possible.
+
+--- [p. 52] ---
+
+    We have seen above that the stem of the verb to shut is the basic stem of its noun bush, and we have seen why. The word for bee-hive is mũ-atũ as we have just seen, this links with the verb stem -hat-, to stick close together. The h has become silent (a very common Kikuyu feature). But why is a bee-hive a thing (with a second class spirit) which has been stuck together? The answer is simple. All old true Kikuyu bee-hives were made up by taking a length of tree stem and splitting it open—(h)atũra (or unsticking it); hollowing out the centre and then sticking it together again. The act of sticking the two hollowed halves together created the bee-hive.
+
+    In listing verbs in your own vocabulary, if a verb stem has more than one syllable, try and break it down into a basic syllable and formative syllable, which alters or modifies the meaning. Sometimes it is easy, like -hingũra open from -hing- shut, with the reversion -ũr. Sometimes it is less obvious, like -ti- honour, and ti-ith- help.
+
+    Get an African to dictate to you slowly while you write down what he says, so as to get accustomed to breaking up the sounds into the correct words.
+
+    Take a book in Kikuyu, of which you can get an English translation, such as the New Testament, and then take a passage and analyse the words in each sentence to see how the Kikuyu means the same as the English. The essence of good translation is not to translate each word in one language literally by a corresponding word of the other language, but to write a sentence which in its entirety means the same thing as the sentence which is translated. Analyse each sentence, to start with, on paper, and pay special attention to tenses and to formative infixes in long words.
+
+--------------------------------------------------------------------------------
+
+--- [p. 53] ---
+
+KEY TO EXERCISES
+
+KEY TO LESSON I
+
+1.
+   1. mũka waku mwega
+   2. mũrugi wakwa mũnyinyi
+   3. mũthamaki ũmwe mũũru
+   4. airĩtu atatũ akuhĩ
+   5. arũme aitũ ana araya
+   6. andũ ana anene
+   7. mũhiki wake mwerũ
+   8. mũtumia ũmwe mũũru
+   9. mũrugi mũũru
+  10. aanake aku atano airũ.
+
+2.
+   1. our good elders
+   2. his black bride
+   3. four bad rulers
+   4. their tall cooks
+   5. one big young man
+   6. his small girls
+   7. one of their young men
+   8. our good cook
+   9. your bad married women
+  10. my good wife.
+
+3. Words denoting human beings can be put into other classes, such as Class IV, inanimate objects, or Class III, which is strictly the class of lesser plants, insects, animals and reptiles.
+   In the first instance, this is done to denote scorn, or hatred or dislike. Thus a fool, a cripple, a miser and a lout of a boy are treated in this manner. In the second case humans who are pitiable may be demoted to Class III, such as ngombo, a slave, njangĩri outcast. In rare cases, humans who are closely connected with religious matters are also taken out of Class I, into class V for example ithe father.
+
+KEY TO LESSON II
+
+1.
+   1. mũtamayũ wakwa mũraya
+   2. mĩgũnda yao (ĩ-ao) mĩũru
+   3. mĩriiũ ĩna mĩega
+   4. mũgumo ũmwe mũraya
+   5. mũthandũkũ waku mũũru
+   6. mũrũthi ũmwe mwega
+   7. mwere witũ mũraya
+   8. mũgũnda wakwa mũnene
+   9. mũtũng'ũ waku
+  10. mĩtamayũ ĩtano mĩraya.
+
+2.
+   1. ng'ombo yaku (ĩaku) nguhĩ
+   2. njangĩri ĩmwe njũru
+   3. nyũmba yake nene
+   4. ng'ombe ithano nguhĩ
+   5. ndũrũme igĩrĩ njirũ
+   6. nũgũ yakwa ĩmwe nyinyi
+   7. ndahi inya vjerũ
+   8. nyaga ĩmwe ndaya njũru
+   9. ndegwa yakwa nene ndune
+  10. nyaragĩta yaku ndaya.
+
+--- [p. 54] ---
+
+3.
+   1. his big hut
+   2. one short tree
+   3. their five good gardens
+   4. my bad disease
+   5. a short fig tree
+   6. big tall fig tree
+   7. their five lions
+   8. my one good garden
+   9. bad diseases
+  10. five short three-horned chameleons.
+
+4.
+   1. my tall grass
+   2. one big hut
+   3. his slave
+   4. good illnesses
+   5. one white ram
+   6. my bad bird
+   7. our good spinach
+   8. their illnesses
+   7. your earache
+  10. their bitter spinach.
+
+5. The nouns which go into Class II are in the main those which are considered to have a spirit inferior to a human one, but rather higher than that which inhabits, reptiles, most animals and lesser plants. These Class II nouns include trees, epidemic diseases, the moon, and one or two animals which are removed from Class III. Where creatures that would otherwise be in Class III are promoted to Class II, it is in order to show honour and appreciation of them.
+
+6. In Class III, the singular and plural prefix is the same, and in writing it is not possible to distinguish between singular and plural, except where there is a demonstrative pronoun associated, but in speaking the singulars and plurals are tonally different. In most cases, context will decide whether singular or plural is involved, because of the pronoun part of the verb that goes with it.
+
+KEY TO LESSON III
+
+1.
+   1. gĩkombe gĩakwa kĩnene
+   2. itĩ ciao nyinyi
+   3. irĩgũ inya njirũ
+   4. ihembe ciake ithatũ
+   5. kĩgunyũ kĩmwe kĩũru
+   6. kin'gangĩ kĩmwe kĩnene
+   7. ithaka ciakwa njega
+   8. kĩharo gĩaku
+   9. kĩrĩma gĩakwa
+  10. kĩeha giitũ.
+
+2.
+   1. my great joy
+   2. their black louts (uninitiated big boys)
+   3. their red quiver
+   4. your one shoe
+   5. one small bone
+   6. your short stool
+   7. a black crocodile.
+
+3.
+   1. maitho maku
+   2. mahiga make manene
+   3. rĩũmba rĩakwa rĩerũ
+   4. ithe wake mũraya
+   5. cũcũ wakwa mwega
+   6. ithanũa rĩake rĩnene
+   7. magego maku mana moru (maũru)
+   8. matoka make mana makuhĩ
+   9. itimũ rĩaku rĩraya
+
+--- [p. 55] ---
+
+4.
+   1. their big stones (hearth-stones)
+   2. my spear
+   3. their short mother
+   4. one big banana tree
+   5. my good eyes
+   6. our good father
+   7. your teeth
+   8. the good sun
+   9. the big black hearth
+  10. my white clay
+
+5.
+   1. rũhuhu rũakwa rũnyinyi
+   2. rũrĩmĩ rũake rũirũ
+   3. rũũĩ rũaku rũnene
+   4. rũũa rũmwe rũnyinyi
+   5. 'hiũ ciake
+   6. rũthanju rũmwe rũraya rũerũ
+
+6.
+   1. their rivers
+   2. the bad wind
+   3. your short wand
+   4. your tongue
+   5. one big tooth
+
+7. These four words for human beings that go into Class V because of their close connection with religious ceremonial, and therefore leave Class I, nevertheless retain their Class I status for purposes of adjective and pronoun agreements. They are the only words in which adjectives or pronouns in agreement do NOT take the same class prefix. Thus ithe, father, or (i)nyina, mother, belong to Class V, and should take the adjectival prefix of this class, but they do not. A good father is ithe mwega, NOT ithe riega, and their mother is (i)nyina wao, NOT (i)nyina yao.
+
+8. Words in Class V are all closely connected with magic, religious and ceremonial of one kind or another, and include words as diverse as spears (inanimate man-made objects), crinum lilies (plants), fathers (humans), teeth (parts of the body) etc. which should, by right, go into other classes. Words in Class VI are linked by the concept of undulation and so the class includes rũrĩmĩ, tongue, which is just of the body, rũhuhu, bat, which is an animal etc.
+
+KEY TO LESSON IV
+
+1. The vast majority of words in Class VII are abstract nouns, and indeed this is the class of abstract nouns. A few words in the class do not at first sight appear to the European mind to be abstract, such as ũthiũ face, and ũhiu, live-stock, but both are actually abstract, one being really "the facial expression", and the other stock in the collective sense.
+   On the other hand, some words which are clearly abstract DO NOT go into this class, but into other classes, particularly Class IV, for various reasons.
+   Words which go into Class IV are such things as kĩeha grief, gĩkeno joy, kĩrumi curse, and similar words which are basically "man-made".
+
+--- [p. 56] ---
+
+2.
+   1. wendo (ũendo) wakwa
+   2. ũiru wake
+   3. ũtukũ ũmwe mũirũ
+   4. mawatho mao moru (maũrũ)
+   5. ũhoro wakwa mwega
+   6. ũgeni ũmwe
+   7. ũiru waku mũũru
+   8. ũthamaki witũ mũnene
+   9. ũgo waku mwega
+  10. ũrogi wake mũũru.
+
+3.
+   1. their foolishness
+   2. my white face
+   3. our black magic
+   4. a big law
+   5. your good love
+   6. good light
+   7. your visit
+   8. one news of mine
+   9. their live-stock
+  10. a good kingdom.
+
+4.
+   1. matũ make
+   2. gũoko (gwoko) gwaku kũmwe kũega (kwega)
+   3. magũrũ maitũ maraya
+   4. matũ mao maĩrũ
+   5. kũgũrũ gwakwa kũerũ
+   6. handũ haitũ
+   7. kũndũ kwanyũ.
+
+5.
+   1. your good place
+   2. their big places
+   3. my big arms
+   4. his black ear
+   5. his short arm
+   6. some places.
+
+6.
+   1. kagũnda gakwa
+   2. kamũtĩ gake
+   3. kairĩtu gakwa kega (kaega)
+   4. karũũĩ gakwa kaĩrũ
+   5. tũhiga tũitũ tũnini
+   6. tũitho tũaku tũirũ
+   7. gathanwa gake
+   8. tũgũnda tũtano tũnini
+   9. tũmũndũ twakwa tũnana
+  10. kamũrimũ gake koru (kaũru)
+
+KEY TO LESSON V
+
+1.
+   1. andũ mũgwanja oru (aũru)
+   2. ndegwa kenda njirũ
+   3. athamaki ao ikumi oru (aũru)
+   4. andũ mĩrongo ĩĩrĩ na atatũ
+   5. atumia igana airũ
+   6. anake ngiri oru (aũru)
+   7. njũi mirongo ĩtano na ĩtatũ
+   8. itĩ inya vjerũ
+   9. maũthiũ mĩrongo ĩtandatũ na matatũ maĩrũ.
+
+2.
+   1. ten highway robbers
+   2. my six big stones
+   3. one hundred lions
+   4. seven big people
+   5. his twenty-five wives
+   6. seventeen birds
+   7. my one hundred and five big huts
+   8. nine bad bats
+   9. eight big estates
+  10. eight fathers.
+
+--- [p. 57] ---
+
+3.
+   1. ndegwa ĩno njirũ
+   2. mũndũ ũcio mũraya
+   3. mĩtĩ ĩno mĩraya
+   4. irĩma irĩa
+   5. ng'ombe icio njirũ
+   6. rũũĩ rũrũ rũraya
+   7. arũme acio ikũmi araya
+   8. mĩtĩ ĩno ikũmi na ĩna
+   9. mĩgũnda ĩrĩa mĩnyinyi
+  10. mathanũa mau manene matadatũ.
+
+4. Demonstrative pronouns are based upon fixed rules. There are three in the singular and three in the plural for each noun class. These are this, that (near by), and that (far away). These, those (near by) and those (far away).
+   Where a pronoun prefix starts with a consonant other than m, then this and these are made by doubling the pronoun prefix. Thus rũ is the pronoun prefix singular for Class VI, and rũrũ is this for that class, while tũ is the pronoun prefix plural for Class X, and tũtũ is these for that class.
+   If the pronoun prefix is a vowel other than ĩ, this and these are made by doubling the vowel and adding a y between, thus we have ũyũ and aya.
+   If the pronoun prefix is ĩ, then this and these are made by adding -no.
+   If the pronoun prefix is ma- then -ya- is added. To make that or those (nearby), if the pronoun prefix is a vowel other than ĩ, or if it is ma or ci then add cio, but if it starts with a consonant other than m or c, add u. If the pronoun prefix is ĩ, then add o.
+   To make that or those (far away), no matter what the prefix is add -rĩa.
+
+5.
+   1. those five bad people
+   2. that person
+   3. that red river
+   4. these stones of mine
+   5. those ten misers (rich men)
+   6. these trees of theirs
+   7. these places
+   8. this good place
+   9. my little short boy
+  10. some places.
+
+KEY TO LESSON VI
+
+1.
+   1. arume acio ikũmi mararĩa marigũ
+   2. ndĩrarĩa nyama ĩno
+   3. ekũhata nyũmba
+   4. tũhandire matoka mau maraya
+   5. akaenda nyama
+   6. mũndũ ũcio mũũru arahũrire ngombe ĩno njirũ
+   7. mĩtĩ ĩno ikahandũo
+   8. nyoni njirũ ithano ciaakĩte nyũmba mĩtĩ-inĩ.
+
+--- [p. 58] ---
+
+2.
+   1. we are taking the cows to the grassy field
+   2. those trees have been planted in my garden
+   3. we are taking the goats to the river
+   4. these three wives of mine will cook the meat (next unit of time)
+   5. we will (present unit of time) clean these shoes of ours (with liquid)
+   6. they told (preceeding unit of time) your married woman
+   7. these elders want (in the present unit of time) your cows
+   8. our Njoroge is sweeping this hut
+   9. they had taken their black ram to the valley.
+
+3. The Kikuyu system of tense structure is one in which tense is indicated by a prefix before the verb stem, and sometimes with an infix before the verb ending as well, in past tenses. Any tense may potentially have one of four endings, two of which are active and two passive. The active ones are -a and -ia, and the passive are ũo and -io.
+
+4. The Kikuyu concept of time is not quite the same as our past, present and future. It is instead "present unit of time" with "preceding unit of time" and "succeeding unit of time" and beyond these in either direction indefinite future and indefinite past. The unit of time is normally from dawn to dawn, but if specified may be a week, a month, a year etc., Once specified, all tenses must be in keeping with that unit of time. If in January we have specified that we are talking in terms of "this year", then anything that happens up to December 31st is within the unit of time specified, and will be correctly described in the present unit of time tenses.
+
+KEY TO LESSON VII
+
+1.
+   1. ingĩũka nĩngũruga nyama
+   2. ndiraenda mũgũnda ũyũ
+   3. ingĩĩrũo ũhoro ũcio ndingĩtwara mũtumia wakwa rũũĩ rĩngĩ
+   4. tĩga kũhũra ndegwa ĩno njirũ
+   5. ndũruge marigũ maya
+   6. angĩũkĩre angĩrugire nyama
+   7. ũngĩũka ndatwara iratũ
+   8. angĩaakire nyumba mũka angĩamwendire
+   9. tiga kũhanda mwere
+  10. ndingĩenda ũiru.
+
+2.
+   1. those ten men would not plant bananas in my garden
+   2. that tree is not to be cut down by those wives of ours
+   3. tell those ten elders to take their live-stock to the river
+   4. we would not cook the meat until our father has come
+   5. they will not sleep (lie down to rest) unless they have planted the grass
+   6. don't take the married women to Nairobi
+   7. I won't cook today I'll cook tomorrow
+   8. look at this bad man now
+   9. unless you cook you may not sleep
+  10. take the little boys to the river.
+
+--- [p. 59] ---
+
+3. In Kikuyu a very strong negative imperative is made by using the word tiga followed by an infinitive, i.e. tiga kũuga is don't cook.
+   A very strong affirmative imperative is made by a form of negative which implies a threat. Thus ndũruge, which is literally don't cook, means just don't cook and see what happens to you, and so has an affirmative meaning you must cook.
+
+KEY TO LESSON VIII
+
+1.
+   1. nĩ marendana
+   2. twaranga gĩtĩ gĩkĩ
+   3. mahingũraniire nyũmba
+   4. marigũ mau matingĩrugika
+   5. anake matingĩenda kũhũranĩra mũirĩtu ũcio mũũru
+   6. rugithia nyama ĩno rũciũ
+   7. nĩ ngũhandaga mũgũnda we hataga nyũmba
+   8. tiga kũhũraga ngombe
+   9. rĩanga
+  10. rugĩra athurĩ nyama.
+
+2.
+   1. they would not have opened for them
+   2. we will go on planting a little bit longer
+   3. I would not have taken meat to them
+   4. they do not continue to help one another a little more
+   5. they are taking each other (accompanying one another) to Nairobi
+   6. we will talk a little more with each other about that matter
+   7. go on cooking a little bit more
+   8. they are swimming in the river
+   9. birds build their nests in the trees
+  10. if we had not greeted each other (with gifts) we would have not discussed that matter.
+
+3. Kikuyu, like other Bantu languages, has many formative infixes which are put between a verb stem and a verb ending in order to modify or extend the meaning. By use of these infixes, a basic verb stem can be made to alter and have a meaning requiring a quite different verb in English. For instance, -hing- is shut but by adding a formative infix, -ũr- which is reversive transitive, we make shut into open, (i.e. unshut). Similarly, -rĩ- is the stem of eat, ri-ith-ia is cause to eat, which is in English to herd or to take stock out to pasture and cause them to eat. -hũr- is beat, -hũr-an-a is beat each other, or fight. Many of the formative infixes can be used with others to build up a long word, each syllable of which alters or varies the basic meaning of the stem. For example, hing-ũr-an-ang-ĩr-a has four formative infixes, one reversive -ũr-, one reciprocal -an-, one -ang- which means a little more, and one -ĩr- prepositional for to or for.
+
+--- [p. 60] ---
+
+KEY TO LESSON IX
+
+1.
+   1. agĩtwara ng'ombe, agicirĩithia kĩhaaro, ikĩrũara
+   2. akiuga ndĩrokua
+   3. Njoroge na Wanjirũ magĩkĩruga marigũ makimarĩa
+   4. ithuĩ tũgũaka nyũmba
+   5. magĩgũtwara kĩrĩmi-inĩ
+   6. ekwenda kũruga nyama
+   7. ndikwenda kũrĩa ũmũthĩ
+   8. niĩ ndatwara mũtumia wakwa Nairobi
+   9. magĩgĩtũhe mĩtĩ tũkahande mũgũnda tũkĩmĩhanda
+  10. makĩtũhingũrĩra nyũmba ĩno.
+
+2.
+   1. and so he said to them we will take out stock to the garden
+   2. and he, the Bwana, said I do not want to eat
+   3. may they give up planting
+   4. and so they would not have taken them meat
+   5. he came, he cooked and he ate
+   6. and so that miser said to me that I was to cook and I cooked
+   7. may the elders be blessed
+   8. and so together we and he cut down the trees
+   9. and so they took him to the garden and beat him
+  10. you and Njoroge stand up.
+
+3.
+   1. Niĩ ndĩ mũndũ mũrũme
+   2. we aarĩ kĩhĩĩ
+   3. ithuĩ tũrĩ athuri
+   4. ndarĩ mũrugi
+   5. wee warĩ mũthamaki
+   6. ũrĩ karĩgũ?
+   7. nũũ ũkwenda nyama?
+   8. matwarĩte ngombe rũũĩ nĩkĩ?
+   9. mũtĩ warĩ mũraya
+  10. atumia marĩ haha
+  11. ũrĩ mũndũ mũgo mwega?
+  12. kaingĩ ndiaga nyama mũthenya namo marigũ ũtukũ.
+
+4.
+   1. I am a dealer in black magic
+   2. you are not good
+   3. were you here yesterday?
+   4. we have many birds
+   5. the lion has no meat
+   6. who will beat Njoroge?
+   7. and if I should beat them?
+   8. why has it been opened for you?
+   9. the river was big
+  10. the highway robbers are not here.
+
+5.
+   1. tũtinarĩa nyama ũmũthi
+   2. tũanaaka nyũmba
+   3. ndũkaanatware ngombe rũũĩ
+   4. twanahũrana nake
+
+6.
+   1. I did not so much as plant bananas in the garden
+   2. if I had not often cooked
+   3. you are not ever to fight
+   4. before I build a hut I will tell Njoroge
+   5. I did not so much as cook for him.
+
+================================================================================
+END OF WORK: FIRST LESSONS IN KIKUYU (L. S. B. Leakey, 1959)
+================================================================================

@@ -1,0 +1,2792 @@
+=== TITLE & PUBLICATION DETAILS ===
+EAST AFRICAN LINGUISTIC STUDIES No. 4
+THE TENSE SYSTEM OF GUSII
+By W. H. WHITELEY
+East African Institute of Social Research, Kampala, Uganda, 1960
+Made and printed in Great Britain by King & Jarrett Ltd., London, S.E.1
+
+=== CONTENTS ===
+Introduction . . Page 1
+1.0. PHONOLOGY . . Page 2
+1.1. Vowel Phonemes . . Page 2
+1.11. Vowel Sequence: Internal, immediate . . Page 3
+1.12. Vowel Sequence: Internal, interrupted . . Page 3
+1.13. Vowel Sequence: External . . Page 4
+1.2. Consonants . . Page 4
+1.21. Voiceless bi-labial . . Page 4
+1.22. Clusters . . Page 4
+1.221. Nasal clusters . . Page 5
+1.222. 'w' clusters . . Page 5
+1.23. Double consonants . . Page 5
+1.24. Consonant sequence: Internal, immediate . . Page 5
+1.241. Consonant sequence: Internal, interrupted . . Page 5
+1.25. Consonant/Vowel sequence . . Page 6
+1.3. Tone . . Page 6
+1.4. Prominence . . Page 6
+2.0. MORPHOLOGY of the verbal . . Page 6
+2.1. The simple radical . . Page 6
+2.2. The extended radical . . Page 7
+2.3. Pre-radical extensions . . Page 8
+2.4. Pre-radical elements . . Page 8
+2.41. Negative pre-prefix ti- . . Page 8
+2.42. Pre-prefix k(o)- . . Page 8
+2.43. Negative infix -tá- . . Page 8
+2.44. Verbal prefix . . Page 8
+2.45. Object-infix . . Page 10
+2.46. Tense signs . . Page 10
+2.5. Post-radical elements . . Page 10
+3.0. Classification of one-word tenses . . Page 11
+3.1. Synopsis of one-word tenses . . Page 13
+4.0. Two-word tenses . . Page 15
+4.1. Synopsis of two-word tenses . . Page 16
+5.0. The SYNTAX of Gusii tenses . . Page 17
+5.1. Sentence categories . . Page 17
+5.2. Multi-verbal sentences . . Page 17
+5.212. Discussion of such . . Page 17
+5.3. Connotation . . Page 21
+5.4. Substitution tenses . . Page 21
+6.0. Contextual examination of one-word tenses . . Page 21
+6.1. A Tenses . . Page 21
+6.2. B Tenses . . Page 37
+6.3. C Tenses . . Page 43
+6.4. D Tenses . . Page 50
+7.0. Two-word tenses . . Page 57
+7.1. Tenses with the radical -re . . Page 57
+7.2. Tenses with the radical -is- . . Page 62
+7.3. Tenses with the radical -many- . . Page 63
+8.0. Ko- . . Page 64
+9.0. Conclusions . . Page 64
+
+=== PREFACE ===
+The material on which this study is based was collected in the field between January 1955 and August 1958 while on the staff of the East African Institute of Social Research. To the Director of the Institute, Professor A. W. Southall, I should like to express my thanks for making publication possible.
+Altogether, about 12 months were spent in the field in the Getutu Location of Kisii District, but study was continued during periodic visits of informants to Kampala, and in discussions with Gusii students at Makerere. For permission to use the Chief's Camp at Manga I should like to express my thanks to the Kenya Administration; to the Rev. and Mrs. J. F. Lynn, then of the Pentecostal Mission, Itibo, I am grateful for their many kindnesses.
+My chief assistant throughout this period was Mr. Erasto Abuga, to whom I owe a special debt of gratitude; he proved patient and understanding at all times, and revealed a deep and enduring interest in his language which, one hopes, will prove an inspiration to the younger generation. There are many others who must be nameless, if only because their numbers are too great to be listed here, but Mr. James Mukogi, Mr. Chrysanthus Ogari, Mr. Cornelius Oseebe, Mr. James Nyameya and Mr. Gisiɔɔra Kibagɛndi deserve special mention.
+Finally, I should like to acknowledge the help I received in London from Professor A. N. Tucker, and the encouragement and profit derived from discussing the material with Dr. A. E. Meeussen of the Musée Royal du Congo Belge in Tervuren.
+
+Chesham Bois, Bucks.
+July, 1959.
+W.H.W.
+
+=== INTRODUCTION ===
+The Gusii,[1] numbering 255,000 in 1948, occupy a fertile area of high country[2] in the South Nyanza District of Kenya. The people are both pastoral and agricultural, providing a substantial part of Kenya's maize and an increasing quantity of coffee. Between them and Lake Victoria are their traditional enemies the Nilotic Luo. To the east and south-east they are bordered by the Nilo-Hamitic Kipsigis and Maasai, also numbered among their enemies by tradition. To the south, but separated by a corridor of Luo, are the closely related Kuria, known in Kenya as Tende.
+Anthropologically the Gusii are known through the writings of Dr. P. Mayer,[3] but linguistically they are little known, and the present writer's Introduction to the language (1956) was the first published work in this hitherto rather neglected language. In his Classification of the Bantu Languages (1948) Professor Guthrie groups Gusii (E42),[4] along with Kuria (E43) and Logooli (E41), in Group 40 of Zone E, to which most of the other Bantu languages of Kenya and Uganda also belong.
+It is generally believed, both among the people themselves and outsiders, that among the peoples of Kenya, it is with the Logooli, Kuria (Tende) and Gīkūyū (E51) that they have the closest affinity. Linguistically there are a number of features which seem to confirm such a view (e.g. general phonemic structure, especially the 'seven-vowel' system). There are also, however, some other features—which are not shared by Gīkūyū or Kamba—which seem to suggest that Gusii, along with Kuria and Logooli, may have affinities with the Luyia (E30) and Uganda languages of E10 (e.g. VCV-shape of nominal prefixes, position of the negative sign ti-).
+The evidence of oral tradition lends credence to such a view; all accounts agree that the Gusii moved into their present habitat from the north between 14 and 18 generations ago, leaving the related Logooli in North Nyanza on the way, and subsequently losing the Tende, particularly the abaSweta, who moved on further south. Such a view is by no means incompatible with the linguistic evidence of a link with Gīkūyū if one supposes that the Gusii moved south only after reaching the Mt. Elgon area from central Kenya. They would thus have moved in a wide sweep to the east and north of the Nandi/Kipsigis, who in the oral traditions seem to have been in their present habitat when the Gusii first moved south from the area of the Uganda border.
+Where, then, do the Kuria fit in with such a supposition? Dr. M. J. Ruel,[5] who has recently completed an anthropological study, reports traditions of origin which suggest a double stream; a northerly one from the area of South Nyanza, and an easterly one from the Serengeti, from the area of the Ngoreme and Ikoma, with whom the Kuria have clear linguistic affinities. The northerly stream accords well with Gusii traditions, but there is nothing which will fit in with the easterly one. Linguistically, Kuria is characterized by some features differentiating it both from Gusii and Gīkūyū (i.e. the post-radical suffix -ete, -ite does not occur); on the other hand the range of tense signs is rather nearer to Gīkūyū than to Gusii. The evidence must be regarded as inconclusive at the moment.
+
+Footnotes to Introduction:
+1. Commonly known to Europeans as Kisii (or Kiisi), following the name for the administrative centre and township. Both these appear to be Luo versions or perversions! Gusii commonly refer to the township as Bosongo, but also know it by the older name of Getembe.
+2. The central part of the area rises to 7,500 ft., falling to 4,500 ft. on the edges.
+3. For example, The Lineage Principle in Gusii Society, London, 1949; Two Studies in Applied Anthropology in Kenya, H.M. Stationery Office, London, 1951; Gusii Bridewealth Law and Custom, R.L. Papers, No. 18, 1950; 'Gusii Initiation Ceremonies', J.R.A.I., Vol. LXXXIII, 1952.
+4. The language currently exhibits little dialectal variation throughout the six locations, though there has been considerable borrowing from Luo, Swahili and English. In the case of Luo this is most noticeable in the southerly areas.
+5. Personal communication.
+
+Consideration of such points in traditional history is not irrelevant to the study even of such a patently specialized topic as verbal systems. There is no reason to suppose that the groups as they are at present are homogeneous in origin, indeed there is much to suggest that in earlier times groups came together and subsequently dispersed—or remained together—in widely differing circumstances and patterns. Under such circumstances one might expect to find linguistic evidence for such events. Yet it is only by making a very detailed analysis that the salient features of a particular system emerge and provide a possible line of investigation for corroborating or revising evidence adduced from other fields of enquiry. Some of the implications of the present study are discussed in Section 9.0.
+The material is here divided conventionally into phonology, morphology and syntax, and represents an attempt to furnish a formal description of the Gusii tense-system, in the belief that this represents the most economical way of describing the system exhaustively. Some discussion of terms employed and their abbreviation may be relevant at this point.
+Firstly, some reference should be made to the terms 'radical' and 'stem'. Radical (R) here denotes the irreducible element of the verbal (e.g. -rúg-/Cook): it has elsewhere been referred to as the 'root' or 'core'. 'Stem' denotes the non-prefix element in a nominal (e.g. -te/Tree). Nominals are of two kinds, designated respectively 'long-series' and 'short-series'. Short-series nominals (SsN), elsewhere referred to as 'nouns', are those nominal stems which are commonly associated with a relatively limited series of prefixes. These are commonly identified in terms of the singular/plural dichotomy, thus 'ómo-te, éme-te/Tree, trees'. The term 'relatively' is important, however, since many stems may be associated with several such pairs of prefixes, thus:—
+ómo-te, éme-te/Tree(s)
+ríímote, ámamote/Large tree(s)
+égete, ébite/Twig(s)
+ágate, ébite/Small twig(s)
+óbote (rarely !)/Small twigs
+Long-series nominals (LsN), by definition, may be associated with a relatively longer series of prefixes, a full series in many cases. Into this category fall adjectives, demonstratives and possessives, which can be distinguished as sub-categories according to the shape of their prefixes. Finally, one must take account of invariable words, which are never associated with simple verbal or nominal prefixes, and which are outside the system of agreement or control.
+In the phonological discussion the letters V and C denote any vowel or consonant, but in later sections V denotes any verbal. This may be refined by adding numerals, thus V1, V2, etc., to indicate whether the verbal in question occurs first or second in the utterance under consideration.
+
+=== 1.0. PHONOLOGY ===
+
+1.1. There are in Gusii 14 vowel phonemes: seven short and seven long. They may be exemplified as follows:—
+        Front    Back
+High    i, ii    u, uu
+High/Mid e, ee   o, oo
+Low/Mid  ɛ, ɛɛ   ɔ, ɔɔ
+Low      a, aa
+All vowel phonemes occur in all positions but 'i, ii' and 'u, uu' occur infrequently initially. All vowel phonemes may bear a high, low and mid-level tone, or a falling or rising tone.
+
+Long vowels do not occur in the nominal prefix system but do so commonly in that of verbals. They also occur contrastively in verbal radicals, thus:—
+-sik- Respect           -siik- Prepare beer
+-bas- Elope             -baas- Start skinning a beast
+-ber- Be boiling        -béér- Sit, sit down [1]
+-tɛ́m- Hit               -tɛɛm- Try
+-kɔn- Bewitch           -kɔɔn- Be annoyed at something
+-bór- Lack              -bóór- Say
+-kur- Butt              -kuur- Cry
+
+1.11. Vowel sequence: Internal, immediate
+In general, all sequences retain their individual tones within a given radical or stem. Where the first member of a sequence (i, o, u) is a component of an affix, it tends to be realized as 'y' or 'w'.[2] The tones of members of dissimilar vowel sequences are realized as falling, if the tone of the first component is high (-tó--à- as -twâ-), and as rising or high if the tone of the second component is high (-tó--á- as -twá OR akà-ébâ as akéébâ). Sequences of the negative pre-prefix 'ti-' and a following verbal-prefix 'o' or 'a' are realized as 'to, ta'. Sequences of similar vowels, where either component is long, are characterized by a very slight pause, noted in the following pages by '.' (see below):
+i-  -tiók-/Give off a smell, ókonia/Excreting, náániete/He excreted, ríí.íico/Flock, ríí.íga/Cooking stone.[3]
+e-  -rugeire/Have cooked for, éke.engwe/Stump of a tree, éámáte/Kinship group, ékeoore/Skull, éubi/Dirt.
+ɛ-  -rɛɛtɛire/Have brought for, ékɛ.ɛɛra/A half, éɔɔra/Ravine.
+a-  óborwáire/Sickness, náɛra/I finished, -táóri-/Ladle out, náuuta/I blew on the fire, áráá.áákwe/He will be beaten (cf. áráákwe/He will die).
+NOTE: The sequence a—e (short vowel only) is realized as 'ee'; similarly, the sequence a—o is realized as 'oo':—nééba/I forgot, okéébá/You forgot, yóóma/It was dry, akóóma/He was dry, ámééŋe (Cl.6)/Short ones.
+ɔ-  ókɔɛra/Finishing, ókɔ́óma/Plastering.
+o-  ómoíri/One who sends, ókoéba/Forgetting, ókoáma/Bearing fruit, óko.óóra/Threshing, ókouuta/Blowing on a fire.
+u-  -tuom-/Give a violent push to, akarúâ/He gave a present (cf. akarwa/He came from).
+Sequences of more than two vowels commonly occur:—
+ébiááo (Cl.8)/Others, ciáéta (Cl.10)/They passed, ókoéórókereria/Teaching oneself.
+
+1.12. Vowel Sequence: Internal, interrupted
+In nominal prefixes of Classes 1, 3, 4, 7, 9, 11, 14, 15, two shapes occur:—
+(a) cCo, eCe, e concomitantly with stem shape (V)CV . . . where V is e OR o
+(b) ɔCɔ, ɛCɛ, ɛ concomitantly with stem shape (V)CV . . . where V is ɛ OR ɔ
+
+Footnotes to Section 1.0-1.12:
+1. The following tonal conventions are adopted in the following pages: ´ High tone, ˆ Falling tone. In the case of falling tones on long vowels, a high tone is marked on the first mora. Low tones are unmarked.
+2. There is, however, considerable variation with speed of utterance. Even within a given stem or radical, where the first component of a sequence is 'i', this may be realized as 'y' in very quick speech.
+3. The tones of verbal radicals are those described on p. 7 as 'basic'. The tones of other words are those of the piece in isolation.
+
+Similar patterns obtain between verbal prefixes and vowels of the radical.
+Where the stem or radical vowel is 'a, u, i' the vowels of the prefix tend to be realized as neither 'close' nor 'open' but rather intermediate. These variants are, however, in complementary distribution with those cited, are not significant in stems or in radicals, and consequently are not distinguished orthographically in the following pages.
+Such variations commonly occur in post-stem and radical positions; for example, in the B and D group of one-word tenses:—
+Given a radical -Cɛ/ɔC- then final -ɛ (B tenses), -ɛtɛ (D tenses)
+Given a radical ..Cɛ/ɔC- / ..Ce/oC- then extension -ɛ/ɔC- / -e/oC- where the extension is of this general shape
+Given a stem ..ɛ/ɔC- / ..e/oC- then final vowel ɛ/ɔ / e/o
+
+1.13. Vowel Sequence: External
+In general it may be stated that sequences of similar vowels are realized as long vowels without change of quality; this is represented in the following pages thus:—
+nkoruga‿are
+monto‿oyo
+titoigeti‿igɔrɔ
+emete‿eye
+Sequences of dissimilar vowels in which both are mid-front or mid-back vowels tend to be realized as long, with the quality of the first member of the sequence:—
+ɛŋɔmbɛ eye realized as ɛŋɔmbɛ ɛye
+This realization is not represented in the following pages.
+Sequences of dissimilar vowels in which the first is 'i, u' tend to be realized as 'yV, wV' except where the sequence is i - a (not all cases) or u - o, for which see below.
+Other sequences of dissimilar vowels of a pattern V1 - V2 tend to be realized as V2, and in the following pages V1 is bracketed, thus ():—
+ómwán(a) ómoke/Small child, ómoísék(e) ómuya/Beautiful girl, émeyi(o) émeŋe/Short knives, ámatum(o) ámatámbe/Long spears, ámariét(a) érīítumo/Names of a spear, ámáác(e) aya/This water, ómokúng(u) oyo OR ómokúngu oyo/This woman.
+Such realizations occur in normal 'quick' speech, at which most of the examples were recorded. They tend not to occur in the slower varieties of speech.
+
+1.2. Consonants
+            BiLab.  Alv.    AlPal.  Vel.
+Voiceless: Stops:      (p)     t               k
+           Affricates:                 c
+           Fricatives:         s
+Voiced:    Fricative:   b                      g
+           Rolled:             r
+           Nasal:       m      n       ny      ŋ
+           Semi-vowel:  w             y(j)
+
+1.21. 'p' occurs in one or two ideophones only, but is increasingly noticeable in the speech of the younger generation who have had contact with Swahili and English.
+1.22. Clusters: Two sets of clusters commonly occur: nasal clusters and 'w' clusters.
+
+1.221. The following nasal clusters occur: mb, nc, nd, nt, nk, ng, ns, nj.
+In the clusters 'ŋg, ŋk', since there is no opposition of 'ŋ' with 'n' in this position, 'n' is written for simplicity.
+The 'b, g' or 'mb, ng' are realized as stops not as fricatives.
+The 'j' of 'nj' may be regarded as a unique variant of 'y' in the context 'n - y'. The cluster occurs only initially, and especially as Cl.4 or 9 prefix, e.g. njááca/It (Cl.9) came.
+Vowels preceding such clusters are always realized as long; this feature is consequently not marked in the following pages. So far as verbal shapes are concerned all these clusters occur contrastively with simple phonemes. In one instance only, 'nt' occurs in free variation with 't', thus, -réét- OR -réént-:—
+-mény-/Live         -mént-/Increase
+-án-/Bleat          -áng-/Refuse            -ánc-/Like
+-gab-/Divide        -gamb-/Give judgment
+-caanek-/Be straightened out               -candek-/Be sorry
+njááca/It (Cl.9) came                      nááca/He came
+
+1.222. The following 'w' clusters occur: bw, cw, gw, kw, mw, nw, nyw, ŋw, rw, sw, tw, yw, together also with the nasal clusters, excluding 'nj'.
+The 'b, g' of 'bw, gw' are realized as stops not as fricatives. Vowels, other than in final position, following such clusters are always realized as long and are not represented in the following pages. Of these clusters, 'bw, kw, rw, tw' occur contrastively with simple phonemes in the position C.1 of verbal radicals. All except 'nyw' occur contrastively with simple phonemes in the position of final consonant in verbal radicals:—
+-bwát-/Seize        -báát-/Evict
+-kwán-/Say          -káán-/Refuse
+-rwár-/Be ill       -ráár-/Sleep
+-twar-/Hunt         -taar-/Stroll
+-káán-/Refuse       -káánw-/Be refused
+-gac-/Put           -gacw-/Be put
+-gɛs-/Harvest       -gɛsw-/Be harvested
+
+1.23. Double consonants: 'nn' and 'mm' occur, especially in the 1st person shape of verb tenses. In all cases the first consonant bears a tone: ńnárūga/I cooked, nímmanyíre/I know. Neither of these is currently recognized in the official orthography but both are represented in the following pages.
+
+1.24. Consonant sequence: Internal, immediate
+The following sequences occur:—
+n - r realized as nd
+n - b realized as mb
+n - g realized as ŋg (represented as ng)
+n - k realized as ŋk (represented as nk)
+n - m realized as mm
+
+1.241. Consonant sequence: Internal, interrupted
+Where the voiceless velar stop is followed by a sequence VC, where C is a voiceless sound, it is realized as a voiced velar fricative:—
+ógocaaka/Beginning          ógosiba/Binding
+ógokuura/Crying             ógotaara/Strolling
+Cf. ókomanya/Getting to know, ókogora/Buying, ókobaara/Operating, ókoŋaanya/Moving house.
+
+Where the voiceless stop is followed by a sequence VVC, VVVC, some anomalies occur:—
+ókoika/Arriving (cf. ógoika/Coming down from), ókoéta/Passing, ókoááka/Beating, ókouuta/Blowing on a fire.
+(NOTE: This anomaly may be resolved comparatively. In all examples except the last, the comparable radical in the closely related KURIA has an initial 'h', thus: -hik-, -hit-, -haak-.)
+
+1.25. Consonant/Vowel Sequence: Internal, immediate
+Occurring especially in the verbal prefix and the infix of Cl.1a:—
+n - ɛ, ɔ, u is realized as ŋ: e.g. níŋɔ̃mɛ/I shall plaster; akaŋɛɛba/He followed me.
+n - i, e, o is realized as ny: e.g. nínyēbe/I shall forget; nányēbe/He will forget me; nínyíroke/I shall be afraid. N.B. níŋíte/I shall kill.
+n - a       is realized as either ny OR ŋ: e.g. oŋáákire/He has beaten me; onyángire/He has refused me.
+(NOTE: It might be possible to resolve this difficulty by considering the point comparatively. There is some evidence to suggest that the velar nasal occurs where in KURIA the radical would have an initial 'h', i.e. -haak-.)
+
+1.3. Tone
+If one accepts the 'phoneme' as a useful concept, one might consider the usefulness of an analogous term like 'toneme', being the minimal unit of pitch which serves to distinguish words; thus in Gusii one finds:—
+-rók-/Vomit         -rok-/Call
+-róót-/Dream        -rɔɔt-/Investigate
+-bár-/Shine         -bar-/Count
+Such examples occur far less frequently than those in which a distinction of tone serves to distinguish formally similar tenses. It is accepted that tenses so distinguished are as much different words as those illustrated above, but there is the additional feature that they are grammatically as well as lexically distinct.
+Two level tonemes are recognized: a high (´) and a low (unmarked). There may be a case for recognizing a third, mid, toneme (¯), though in the majority of contexts this may be regarded as either a raised low or a lowered high. A falling tone, from high to low (ˆ), is indicated over a long vowel by an acute accent over the first mora. A rising tone, restricted to long vowels, is indicated thus (ˇ), or by acute accent over the second mora.
+
+1.4. Prominence
+Prominence tends to occur on the radical if this is of a shape (VC, CVC, CVVC, CV), and on the first syllable of long radicals. In such longer radicals there may be a subsidiary prominence on the final syllable.
+
+=== 2.0. MORPHOLOGY OF THE VERBAL ===
+
+Verbals, as distinct from other categories, are characterized by irreducible radicals, and by a considerable range of pre- and post-radical elements which are commutable within the word.
+
+2.1. The simple radical
+The shape of the simple radical is commonly -V(V)C-, -CV(V)-, -CV(V)C-, -CV(V)CV(V)C-, but other shapes from -Z- to -CV(V)CV(V)- and CV(V)CV(V)CV(V)- also occur.
+It is observable at an early stage of investigation that comparable verbal shapes are associated with different tone-patterns, which can be satisfactorily explained only on the assumption that different radicals are associated with different 'basic' tones; indeed, as has been noted already, some radicals are distinguished only by tone. Radicals may thus be divided up into Groups according to their 'basic' tones, as deduced from their distinctive tonal behaviour. Distinctive patterns are not, however, characteristic of every tense. Many tenses, about 30 per cent. of one-word tenses, are associated with a pattern common to all Groups, which must probably be ascribed to the tense, rather than to any particular component of the verbal. These patterns will hereafter be referred to as Imposed Patterns (IP). They occur particularly in B tenses and in those others where tonal patterns are the only distinctive feature (vide C2/1, C2/3). With the exception of such patterns the so-called basic tones appear consistently on the radical. The Groups may be set out as follows:—
+
+Group I 'High':
+Ia  -CVC-, -CV-, -VC- (-rók-/Vomit, -ít-/Kill)
+Ib  -CVVC-, -CVV-, -VVC- (-réét-/Bring, -áák-/Hit)
+Ic  -CVCVC-, -VCVC-, -CVCV- (-tákún-/Chew)
+
+Group II 'Low':
+IIa -CVC-, -CV-, -VC- (-rok-/Call, -ni-/Excrete)
+IIb -CVVC-, -CVV-, -VVC- (-caak-/Begin, -maa-/See)
+IIc -CVCVC-, -VCVC-, CVCV(V)- (-tugut-/Throw down, -amuum-/Make a noise like a hyena)
+
+Group III 'High/Low':
+-VCV(V)C- (-gwénɛr-/Be pleasing)
+
+Group IV:
+-C-, -Z- (-Z-/Give, -c-/Come, -a-/Chop up vegetables)
+
+The position in Gusii, thus differs considerably from related languages. In Gīkūyū, the 'basic' tone of the radical is described as being realized on the syllable immediately following the radical, through a process known as tone-shift.[1] By contrast, in the closely related Kuria, tone-classes in verbals do not properly occur at all, since the tone of any radical may be inferred from its shape: radicals of a shape -CVVC- all being high-toned. The position is also different from that in some languages recently described by Belgian writers, who have found it necessary to describe speech-tones in terms of stated realizations of hypothesized structural tones.[2] The method adopted here for Gusii is clearly not the only method, but does seem to be the simplest which accounts satisfactorily for the facts as recorded, though it does leave the Imposed Pattern as a residual category.
+
+Footnotes to Section 2.1:
+1. Some Tonal Principles of the Kikuyu language, L. Harries, Word, Vol. VIII, 1952.
+2. See, for example, Esquisse de la Langue Holoholo, A. Coupez, Tervuren, 1955.
+
+2.2. The extended radical
+Extensions to the radical may be simple or multiple. At least six simple extensions occur:—
+1. -e/ɛr-       -rúger-/Cook for (-rúg-/Cook)
+   -ee/ɛɛr- following -CV- radicals
+2. -e/ɛk-, -ok- -búnek-/Be broken (-bun-/Break)
+3. -an-         -ancan-/Like one another (-anc-/Like)
+4. -o/ɔr-       -sibor-/Unfasten (-sib-/Fasten)[3]
+5. -i-          -gɛndi-/Drive (-gɛnd-/Go)
+6. -w-          -rúgw-/Be cooked (-rúg-/Cook)
+   -gw- following -CV- radicals
+   -ugw- following -....gw- radicals
+
+Footnote:
+3. Note the unusual change in the radical in the example: -tíndék-/Bury, -tíndókor-/Dig up after burying, disinter.
+
+Not all the radicals characterized by one or other of these extensions can be regarded as extended radicals: those radicals which have no simpler shape must be regarded as themselves simple. Consider the following examples:—
+-isan-/Be enough; -rígi-/Want; -íbór-/Bear a child; -iyek-/Cook vegetables; -caber-/Decorate; -ásímor-/Sneeze.
+Multiple extensions occur in various combinations, but it may be noted that 6 occurs only as a final extension, and 5 can be followed only by 6. 2, 4, 5 and 6 cannot occur reduplicated, and the following sequences have not yet been recorded: 12, 14, 24, 25, 26, 34, 36, 41, 42, 43, 235.
+Consider the following examples:—
+11   -erer-      -béékerer/Arrange
+13   -eran-      -sɛkɛran-/Laugh at one another
+15   -eri-       -réŋgérɛri-/Think
+16   -erw-       -rúgerw-/Be cooked for
+113  -ereran-    -sɛkɛrɛran-/Laugh at one another
+115  -ereri-     -áncereri-/Seek favours
+116  -ererw-     -kwererw-/Be bereaved
+135  -erani-     -coomerani-/Make larger by adding bits
+1135 -ererani-   -ítábererani-/Answer back
+1123 -ererekan-  -sangererekan-/Be assembled together
+1356 -eranigw-   -méntɛranigw-/Have increased for one
+21   -eker-      -búneker-/Break off for
+23   -ekan-      -méntɛkan-/Multiply
+213  -ekeran-    -búnekeran-/Be broken for one another
+215  -ekeri-     -búnekeri-/Cause to be broken for
+35   -ani-       -áncani-/Reconcile
+315  -aneri-     -íiraneri-/Answer
+3116 -anererw-   -rwanererw-/Be competed for
+3313 -ananeran-  -etanConstraint: Pass by one another
+3323 -ananekan-  -atananekan-/Be separated from
+335  -anani-     -bwátanani-/Embrace
+45   -ori-       -táágori-/Cause to destroy
+46   -orw-       -ríŋgorw-/Be unfolded
+456  -origw-     -táágorigw-/Be caused to destroy
+56   -igw-       -réétigw-/Be caused to be brought
+The tone of all extensions is low.
+
+2.3. Pre-radical extensions
+Only one occurs, -éé-, with a reflexive connotation. The high tone doubles on to a following low tone.
+
+2.4. Pre-radical elements.
+
+2.41. Negative pre-prefix ti-. This is always in tonal contrast with the following verbal prefix.
+
+2.42. Pre-prefix k(o)-[1]
+Commonly occurring in positive tenses: A2/1, A2/2, C2/1, A5, B1a, D1, D2/1, D2/2, but also in negative P9.
+
+Footnote:
+1. For an alternative treatment of such elements see 'One Word Tenses in Cokwe', W. G. Atkins Africa, Vol. XXV, 1955.
+
+2.43. Negative infix -tá-
+This sign is always in tonal contrast with a preceding verbal prefix, except in those tenses which may be translated by a relative.
+
+2.44. Verbal prefix (vp)
+The shape of this prefix series is controlled by the Class of the short-series nominal associated with it, and the full series is given below:—in tenses A2/1, A2/2, Px2/1, Px2/2, A5, Px9, B9, Qx2/3, C1/1, CRx2/1, CRx2/2, C2/1, C2/2, C2/3, D2/1, D2/2, Sx2/1, Sx2/2, the verbal prefix may be associated with an initial vowel, and the full prefix is indicated in brackets:—
+
+Class 1a: n-, ŋ-, nyi-
+Class 1b: o-, ko- (A2/1, A2/2, A2a/1, A2a/2, P2/1, P2/2, C1/1, D2/1, D2/2, D2a/1, D2a/2, DS2/1, DS2/2 and any tense numbered '2')
+          bw- (Radicals with initial 'e, o' in tenses B1a, C1a only. Also -ánc- in tense C1a)
+Class 1c: a-, o- (oyo) (In tenses which may be translated by a relative both a- and o- occur. The latter occurs where a preceding short-series nominal controls the verbal prefix, the former where it does not. See tenses A2/1, Px2/1, A2/2, Px2/2, A5, Px9, B9, Qx2/3, C1/1, C2/1, C2/2, C2/3, D2/1, D2/2, Sx2/1, Sx2/2)
+          bw- (Radicals with initial 'e, o' in tense C2/1 only)
+Class 2a: to-, tw-
+Class 2b: mo-, mw-
+Class 2c: ba(a)- (ába-)
+Class 3/4: o-/e- (óyo-/éye-)
+Class 5/6: ri-/a- (éri-/áya)
+Class 7/8: ke-/bi- (éke-/ébi-)
+Class 9/10: e-/ci- (éye-/éci-)
+Class 11/10: ro-/ci- (óro-/éci-)
+Class 12/8: ka-/bi- (áka-/ébi-)
+Class 14/6: bo-/a- (óbo-/áya-)
+Class 15/6: ko-/a- (óko-/áya-)
+Class 16: a-
+
+The o- and e- of Classes 3, 4, 9, 11, 14 and 15 are realized as w- and y- respectively before a following vowel. In Classes 4 and 9 where a pre-initial 'n-' occurs the 'y' prefix is realized as 'j' (vide Sup. 1.221).
+The tone for all prefixes is the same except in the following tenses, where those of Classes 1, 4 and 9 only are low, all the rest being high: A2/1, A2/2, Px2/1, Px2/2, A5, Px9, B9, Qx2/3, C1/1, C2/2, CRx2/1, CRx2/2, C2/3, D1, Sx2/1, Sx2/2, D2/1, D2/2.
+The low-toned Group of radicals (IIa, b, c) provides a more complex situation in the A2 and D2—including Sx2—series of tenses. In A2/1 the radical is low only where the verbal prefix is of Class 1, 4 or 9. For all other Classes the high tone of the verbal prefix and tense sign doubles on to the following low tone of the radical:—
+Cl.1b gwácaaka gɔkór(a) émeremo/You started to work
+Cl.2c báácááka gɔkór(a) émeremo/They started to work
+In radicals of Group Ic only the tone of V1 is raised. In A2/2 a mid-tone occurs on the radical in Groups IIa, b and on V2 of Group IIc.
+In D2/1 Group IIa radicals operate as for A2/1, that is the high tone of the verbal prefix and tense sign doubles on to the radical except in Classes 1, 4 and 9. In Group IIb radicals a low tone is retained throughout, but here the post-radical suffix is realized as -eté for all Classes except 1, 4 and 9, where it is realized as -ete, thus:—
+Cl.3 ómot(e) ócaageté (D2/1) kogwa/Tree started to fall
+Cl.4 émete yácaagete kogwa (D2/1)/Trees started to fall
+Both the verbal prefix and tense sign are high-toned throughout. For radicals of Group IIc the radical again remains low, but the post-radical suffix is realized as -eté for all Classes of verbal prefix except 1, 4 and 9.
+In D2/2 the verbal prefix is high-toned for all Classes except 1, 4 and 9, and the post-radical suffix -ete for all Classes.
+
+2.45. Object-infix
+An infix series occurs, the shape of which is controlled by a short-series nominal, commonly occurring post-verbally and not associated with the verbal prefix. In some cases two such series occur; they are referred to hereafter as I1 and I2. Shapes are as follows:—
+Class 1a: -n- (-ny-, -ŋ-)
+Class 1b: -ko-, -kw-
+Class 1c: -mo-, -mw-
+Class 2a: -to-, -tw-
+Class 2b: -ba-
+Class 2c: -ba-
+Classes 3/4: -yo-/-ya- (-nya- following a vowel)
+Classes 5/6: -ri-/-ya- (-nya- following a vowel)
+Classes 7/8: -ke-/-bi-
+Classes 9/10: -ye-/-ci- (9 -nye- following a vowel)
+Classes 11/10a: -ro-/-ci-
+Classes 12/8: -ka-/-bi-
+Classes 14/6: -bo-/-ya- (-nya- following a vowel)
+Classes 15/6: -ko-/-ya- (-nya- following a vowel)
+Class 16: -a-
+The tone of all these elements is low, except in tenses B1 and B1a.
+
+2.46. Tense signs
+These may be simple or multiple and are all of a shape -CV(V)-, where V is either 'o' or 'a'. The number of simple signs is small, but a large number of combinations occurs. A full synopsis is given on pp. 13-15 together with their respective tones, but it may be useful here to make some observations on the signs occurring:—
+-Z-   Not associated with a time reference, except where a pre-initial 'n-' occurs.
+-a-   The high-toned sign (-á-) is always associated with past time ('near') and the low-toned sign (-a-) with past time ('less near'), and also with some timeless contexts.
+-ka-  Is associated with past time reference in A tenses only. Is associated with 'continuity' in C tenses, and 'distance from the speaker' in D tenses. Such might be justification for dealing with three distinct signs.
+-ko-  Not associated with a specific time reference and occurs only in A tenses.
+-raa- Not associated with a time reference, but with action sequence—with some action taking place after the one cited.
+-na-  Not occurring as a simple sign and occurring only in A tenses. Not associated with time reference but with 'continuity'.
+
+2.5. Post-radical elements
+There are four main post-radical elements, any one of which may occur as suffix. These will be dealt with below as a means of classifying tenses. Here a few general observations may be relevant:—
+-a    Always low-toned (Exc. A4 Group Ia). Occurs in tenses with a past, present and future time reference.
+-e    Tone variable. Occurs in tenses with a future time reference only.
+-ire[1] Tone variable. Occurs in tenses with a past or present time reference only.
+      The realization of the radical + ire varies according to the shape of the radical, as follows:—
+      1. -(C)VCVr- -ire realized as -(C)VCVire
+         -busur-/Sow               -busuire
+         -kɔ́rɔ́r-/Cough              -kɔrɔire
+         -gíngír-/Shave            -gingiire
+         -tígár-/Remain behind     -tigaire
+         -rúger-/Cook for          -rugeire
+      2. -...Ci- -ire realized as -...Cirie
+         -rúgi-/Cause to Cook      -rugirie
+      3. -...Cw- -ire realized as -...Cirwe
+         -réétw-/Be brought        -rɛɛtirwe
+      4. -...Cigw- -ire realized as -...Cigwe
+         -sibigw-/Be caused to be bound -sibigwe
+      5. -(V)Cw(u)- -ire realized as -(V)Cuure
+         -rw-/Come from            -ruure
+         -kw-/Die                  -kuure
+Two eccentric CVC radicals should be noted:—
+         -ráár-/Sleep              -raaire
+         -rer-/Cry, wail           -reire
+The variant suffix -iri occurs only in negative tenses, but not in all such tenses.
+-ete  Tone variable. Occurs in tenses with past or present time reference only. As with -ire above, the realization of radical + -ete varies according to the shape of the radical:—
+      1. -...Ci- -ete realized as -...Cetie
+         -gɛndi-/Drive             -gɛndɛtie
+      2. -...Cw- ete realized as -...Cetwe
+         -rúgw-/Be cooked          -rugetwe
+      3. -...Cigw- -ete realized as -...Cetigwe
+         -sibigw-/Be caused to be bound -sibetigwe
+      4. -(V)Cw(u)- -ete realized as -(V)Cw(u)ete
+         -rw-/Come from            -rwete
+The variant -eti occurs only in negative tenses, but not in all such tenses.
+An extra element, '-o', may be suffixed to any one of the foregoing, but occurs with a limited range of radicals only, thus:—
+baarúúreo/They came from there
+táabáo/He was not there
+nááceteo/He came to that place
+
+Footnote:
+1. There appears to be some variation in the realization of the final vowel; in some speakers it is more open, in some less so.
+
+=== 3.0. CLASSIFICATION OF ONE-WORD TENSES ===
+
+Two main criteria may be adopted as a starting point for classifying tenses: shape and meaning. In the past, meaning has seemed to be the most convenient basis for such a task, but it has been less the meaning of a particular tense which has served as the basis for the label, so much as the proximity of the meaning to that covered by a Latin or Classical label.[1] This is particularly true where verb-forms are further categorized into 'moods' and 'voices'.[2] There is something to be said for using descriptive labels for tenses when teaching a language, provided that too much store is not set by thinking that the label has a one-to-one correlation with a specific meaning. In some languages, however, there may be almost as many forms as basic meanings, so that tenses treated according to meaning may provide a useful and relatively simple method of classification.[3]
+
+Footnotes to Section 3.0:
+1. See my 'Swahili and the Classical Tradition', T.N.R. No. 52, 1959.
+2. Even amongst those who accept the need for a different approach to the description of grammatical categories, there may yet be a reluctance to depart from these well-known labels. Cf. 'The Grammatical Structure of Zulu', A. T. Cope, African St., Vol. XVI, 1957, pp. 218-20.
+3. See, for example, 'The Tabulation of Tenses in a Bantu Language', J. C. Sharman, Africa, Vol. XXVI, 1956, pp. 29-46.
+
+If, on the other hand, one adopts a classification by shape, this does at least have the merit of accounting for all the relevant tenses without the fear of being misled by labels. Difficulties do arise, however, as soon as one wishes to make use of a schema worked out in one language, for a second, and perhaps closely related, language. While accurate and detailed descriptions of individual languages are both necessary and desirable, it would seem to be equally desirable for the descriptions to be effected in a manner which may make it possible to abstract comparable features from other languages in order to reach a new level of classificatory description. For example, in comparison with the well-established system of classifying nominal classes, classifications of tenses appear arbitrary and sterile. This is due, in large measure, to the nature of the data; while the number of distinct pre- and post-radical series of elements is very limited, the shapes of tense signs, for example, vary enormously, and it becomes difficult to decide what criteria should be adopted for establishing differences. The point may usefully be considered here.
+Difficulties of classification by shape are well exemplified by examining Kuria, a language closely related to Gusii, and Gusii itself. There are in Kuria three tense signs not occurring at all in Gusii, in which in turn there is one tense sign and a whole range of tenses with final -ete which do not occur in the other language. Again, in Kuria, verbal tone classes cannot be established, while they are readily established in Gusii. Which of these factors must be deemed particularly significant in assessing differences between the two verbal systems? What kind of 'weighting' must be adopted? Is it more important that a tense vp-a-Radical-ire occurs in both languages than that its connotation is different in each case?
+In attempting to answer such questions, it must first be stated that a general classification by shape seems preferable to one based on meaning; one is, after all, primarily concerned with differences between different structures rather than between different interpretations of those structures. It would also seem possible that a statement of general features; for example, numbers of tense signs and their capacity for combination, may be more profitable than discussion of specific features such as the shape of tense signs. In addition to this the number of post-radical suffixes may be significant, together with distinctions of tense by tone, and the degree to which the differentiation of past and future time is, or is not, symmetrical.
+To this end a first classification of the Gusii material is made by considering the four post-radical elements:—
+-a      -e      -ire    -ete
+Tenses characterised by such suffixes are labelled A, B, C and D respectively. Numbers are then allocated to specific signs, thus:—
+1 Zero sign
+2 -a-
+4 -ka-
+7 -na- (multiple signs only)
+9 -raa-
+(NOTE: The intervening numbers occur in Kuria only, and the spaces are retained as the schema is being used for both languages.)
+Where two or more tenses are differentiated only by tone, the symbols /1 and /2 are adopted, thus:—
+2/1 -á-         2/2 -a-
+It would be perfectly possible to treat /2 as an additional tense sign, but the present device is adopted here for convenience.
+Where a tense is characterized by an initial 'n-', the number is followed by an 'a', i.e. A2a. It is worth noting that such a feature occurs only in positive tenses. (Exc. APx1a.)
+
+It has not yet proved possible to assign—without exceptions—a specific tone to each of the tense signs, since, as will be noted from the synopses, there is some variation. As noted above, it may well be that with -ka-, for example, one should posit a plurality of signs, each with a specific tone—and meaning.
+Each sign may occur in combination with other signs and this reaches an extreme form in tense Px25975 vp-ta-a-ko-raa-na-ko-Radical-a.
+Negative tenses are labelled initially P, Q, R or S, by analogy with the positive tenses. Those which prove to be comparable to a positive tense both in shape and meaning are designated both by the negative and the positive letter, together with the appropriate number. Tenses comparable either in shape OR meaning are designated by the negative letter only. Tenses comparable neither in shape nor in meaning are designated by a negative letter in lower case. Tenses with the negative sign -tá- are, in addition, labelled with an 'x' following the negative letter.
+No division of the material is made into 'moods', nor is there any time/aspect dichotomy. All verb-forms in which a full series of verbal prefixes occur are labelled tenses, and the term should be understood on that basis. It will be abundantly clear from the examples that many features other than time are represented in the tenses, but no satisfactory classification seems practicable on any other basis.
+
+=== 3.1. SYNOPSIS OF ONE-WORD TENSES ===
+
+Unless otherwise stated, the basic tone of the radical is realized on the radical. A total of 48 positive tenses and 46 negative—i.e. characterized by a negative sign—tenses has so far been recorded, but it will be immediately apparent that with the development of a written form of the language, all tenses distinguished from others of comparable shape by tone alone, will rapidly become obsolescent.
+
+--- A TENSES ---
+Positive:
+A1          vp-Z-R-a
+A1a         n-vp-Z-R-a
+A2/1        vp-á-R-a (Ia -R̄-)
+A2a/1       n-vṕ-á-R-a (Ia -R̄-)
+A2/2        vp-a-R-a (IIb -R̄-)
+A2a/2       n-vṕ a-R-a (IIb -R̄-)
+A4          vp-ka-R-a (Ia final -â)
+A5          vp-ko-R-a (See details p. 28, tone -ko-)
+A9          vṕ-raa-R-a
+A9a         n-vṕ-raa-R-a
+A29/1       vṕ-á-raa-R-a
+A29a/1      n-vṕ-á-raa-R-a
+A29/2       vṕ-a-raa-R-a (The occurrence of this tense is not accepted by all informants)
+(IP)A49     vp-ka-ráá-R̄-a
+A59         vṕ-kó raa-R-a
+A75         vṕ-ná-kó-R-a (Ia -R̀-)
+A75a        n-vp-n(y)á-kó-R-a (Ia -R̀-)
+A275        vp-á-ná-ko-R-a
+A475        vp-ka-ná-ko-R-a
+A575        vṕ-kó-ná-ko-R-a
+A975        vṕ-raa-ná-kó-R-a
+A975a       n-vṕ-raa-ná-kó-R-a
+
+Negative:
+(IP)P1      ti-vṕ-Z-R-a
+APx1a       n-vp-tá-R-a
+P2/1        ti-vp-áá-R-a
+(IP)P2/2    ti-vp-áa-R-a
+Px2/1       vp-tá-á-R-a (Ia -R̄-)
+Px2/2       vp-tá-a-R-a (Ia -R̄-, IIb -Ŕ-)
+P5/1        ti-vṕ-kó-R-a
+(IP)P5/2    ti-vṕ-ko-R̀-a (Ia -R̄-)
+P9          ti-vṕ-raa-R-a
+Px9         vp-tá-raa-R-a
+Px25/1      vp-tá-á-kó-R-a
+Px25/2      vp-tá-á-ko-R-a
+AP29/1      ti-vṕ-á-raa-R-a
+AP29/2      ti-vṕ-a-raa-R-a
+(IP)P75     ti-vṕ-ná-kó-R̀-a (N.B. long vowel of vp. -v́v̀-)
+Px259       vp-tá-á-kó-raa-R-a
+P59         ti-vṕ-kó-raa-R-a (Ib -R̄--á)
+P275        ti-vṕ-áa-na-ko-R-a
+Px275/1     vp-tá-á-ná-ko-R-a
+Px275/2     vp tá a-ná-kó-R-a (Ia, IIa -R̄-)
+P575/1      ti-vp-ko-na-ko-R-a (See P75 comments on vp-)
+P575/2      ti-vṕ-kó-na-ko-R-a (See P75 comments on vp-)
+Px2575      vp-tá-á-kó-ná-ko-R-a
+Px25975     vp-tá-á-kó-raa-ná-kó-R-a
+
+--- B TENSES ---
+Positive:
+(IP)B1      vṕ-Z-R̄-e
+(IP)B1a     n(a)-vṕ-Z-R̄-e
+(IP)B9      vṕ-ráá-R̄-e
+(IP)B9a     n-vṕ-ráá-R̄-e (Restricted S. Dialects)
+(IP)naB1    nâ-vṕ-R̄-e (Anomalous invariable prefix)
+
+Negative:
+(IP)qx2/1   vp-tá-á R̄-e (final -ē)
+(IP)qx2/2   vṕ-tá-a-R̄-e (final -ē) (IIb -Ŕ-)
+(IP)Qx2/3   vp-tá-á-R-e
+(IP)gaaP5   gáá-ti-vṕ-kó-R̀-e (Anomalous invariable prefix)
+
+--- C TENSES ---
+Positive:
+C1/1        vp-Z-R-íre
+(IP)C1/2    vp̄-Z-R̄-ire
+C1a         n-vṕ-Z-R-írē(I, IIa) -íre(IIa, b)
+(IP)C2/1    vp-a-Ŕ-ire (Ia -íre)
+C2/2        vṕ-á-R-ire (Ia -íre)
+(IP)C2/3    vṕ-â-Ŕ-ire
+C24/1       vṕ-á-ká-R-íre
+C24/2       vṕ-a-ka-R-íre
+(IP)C29     vp-a-ráá-R̄-ire
+
+Negative:
+CR1/1       ti-vṕ-R-iri
+(IP)CR1/2   ti-vṕ-R-iri
+R1          ti-vṕ-R-ire
+CRx2/1      vp-tá-á-R-ire
+(IP)CRx2/2  vp-tá-a-R̄-íre (Ib, IIb -R̀-)
+(IP)Rx2/1   vp-tá-á-Ŕ-íre
+(IP)Rx2/2   vp-tá-a-R-íre
+CR24/1      ti-vṕ-á-ka-R-ire
+CR24/2      ti-vṕ-áa-ká-R-ire
+CRx24/1     vp-tá-á-ká-R-ire
+CRx24/2     vp-tá-a-ka-R-ire
+
+--- D TENSES ---
+Positive:
+D1          vṕ-Z-R-éte (IIa -Ŕ-)
+D1a         n-vṕ-Z-R-ete
+D2/1        vṕ-á-R-ete (See 2.44)
+D2a/1       n-vṕ-á-R-ete (See 2.44)
+D2/2        vp-a-R-ete (Ia -Ŕ- or -R̀-)
+D2a/2       n-vṕ-a-R-ete (Ia -Ŕ- or -R̀-) (See 2.44)
+D4          vṕ-ká-R-éte
+D4a         n-vṕ-ká-R-éte
+D24/1       vṕ-á-ká-R-éte (First 'e' of -ete in tonal contrast with radical)
+D24/2       vṕ-a-ka-R-éte
+(IP)D29a/1  n-vṕ-á-raa-Ŕ-éte
+(IP)D29a/2  n-vṕ-á-ráa-Ŕ-éte
+
+Negative:
+S1          ti-vṕ-Z-R-eti
+Sx1         vp-tá-Z-R-eti
+DS2/1       ti-vṕ-á-R-éte
+(IP)DS2/2   ti-vṕ-a-R̄-ēte
+Sx2/1       vp-tá-á-R-éte (Ib -Ŕ- -ete)
+(IP)Sx2/2   vp-tá-a-R-éte
+(IP)DS/4    ti-vṕ-ká-R̀-ete
+
+Notes on One-Word Tenses:
+It is clear that one of the more striking features in this system is the number of tenses distinguished only by tone: 21 pairs and two triplets. In the majority of these pairs the distinction is realized at a semantic level by the division into 'near' and 'less near' time.
+An additional interesting feature, not indicated in the synopsis, is the association of D2a/1 with negative connotations where characterized by a negative tone-pattern but not by negative tense signs.
+The following features seem worthy of note among pre- and post-radical elements:—
+-raa- Always low-toned, except in Imposed Patterns (five examples) and D29a/2, where the pattern -ráa- occurs. Occurs in 21 tenses. With the exception of A29/2—which is in any case of doubtful occurrence—the element is always in tonal contrast with the preceding element.
+-na-  Occurs in 15 tenses—all A tenses—and in every case is followed by -ko-. Only in two of these is -na- low-toned, and in both of these cases -ko- also is low-toned. On the other hand in six other tenses -kó- occurs with a high tone, and it does not yet seem possible to account satisfactorily for the occurrence of low tones.
+-ka-  Occurring in three positive A tenses only, and in each case is low-toned. It does not occur in B tenses, but in C tenses the position is more difficult. Here the sign occurs only with -á- and -a- pairs (three in all). In the positive pair the tone of -á- appears to double on to the -ka-, but in the two negative pairs the doubling occurs only in CRx24/1 and 2: in the other pair the tone of -ka- is in contrast to -a-. In D tenses, where the sign is not preceded by -a-, the tone is high. In the one pair where it is associated with -a-, then, as noted above, the tone appears to double on to the -ka-.
+In considering the suffixes, the -a, with one single exception, is low. B tenses form an Imposed Pattern series. In C tenses the positive pattern of -ire is high/low, while in the negative it is low/low. This is also partly true of D tenses, but here the position is complicated for low-toned radicals (see 2.44) and Sx2/1 appears in any case to be anomalous.
+There appears to be no consistency in the tenses characterized by Imposed Patterns, except in B tenses, where all are so characterized. Of the four tenses in A, only two belong to tonally distinct pairs. Of the seven examples in C tenses, six belong to tonally distinct pairs but not consistently either to a 'near' or 'less near' member. Of the three examples in D tenses, two belong to tonally distinct pairs.
+
+=== 4.0. TWO-WORD TENSES ===
+
+The term two-word tenses is used to describe those tenses characterized by two distinct radicals. Only one of these is associated with a full series of verbal prefixes; the other is invariable. The connotation of the whole is associated with that of the invariable component, which commonly, but by no means invariably, follows the other. Usually no piece may intervene between the two components. Of the radicals associated with a full verbal-prefix series, the following occur most frequently:—
+-re, -is-, -many-, -b-, -c-, -ci-
+Of these the occurrence of the second and third is restricted to such contexts.
+The same scheme of identification is adopted as for one-word tenses with the addition of:—
+Ai(invariable)1 ko-R-a [1]
+Ai2             n-ko-R-a
+Ai2 occurs only where it is the first component of the sequence. Although I am illustrating two invariable shapes only, it should be borne in mind that two other invariable shapes may occur in such positions; for the connotation of the extra infixed elements see 2.46:—
+Ai3             ko-ráá-R-a
+Ai4             ko-na-ko-R-a [2]
+
+Footnotes:
+1. The tone of the initial ko- is raised if preceded by a high tone. In this case, for Group Ia only, the tone of the radical is low.
+2. The fact that -raa- and -na-ko- may occur in such invariable forms, clearly provides a basis for treating them as a rather special kind of tense sign, or even for according them separate status. See Atkins op. cit.
+
+=== 4.1. SYNOPSIS OF TWO-WORD TENSES ===
+
+In which the additional radical is -re:
+Positive:
+Ai2/A1      n-kó-R-a vṕ-re(Ia, IIa -R̀-)
+A2/1-Ai1    vṕ-á-re ko-R-a(Ia -R̀-)
+A2/2-Ai1    vp-a-ré kó-R-a(Ia -R̄-)
+A4/Ai1      vp-ká-ré kó-R-a
+Ai2/A2/1    nkó-R-a vṕ-á-re
+Ai2-A2/2    nkó-R-á vṕ-a-re
+
+Negative:
+P1/Ai1          ti-vṕ-rí kór-a(Ia -R̄-)
+Px1/Ai1         vp-tá-rí kó-R-a(Ia -R̄-)
+Px2/1-Ai1       vp-tá-á-ré kó-R-a(Ia -R̄-)
+Px2/2-Ai1       vp-tá-a-ré kó-R-a
+(IP)AP2/1-Ai1   ti-vṕ-á(a)-re ko-R̀-a
+(IP)AP2/2-Ai1   ti-vṕ-a(a)-ré ko-R̀-a
+
+In all other two-word tenses the invariable component occurs second.
+In which the additional radical is -is-:
+Positive:
+A1a/Ai1     n-vp-sá ko-R-a
+B1/Ai1      vṕ-ís-é kó-R-a
+B1a/Ai1     n-vṕ-ís-e kó-R-a
+B9/Ai1      vṕ-ráá-is-e ko-R-a
+C2/1-Ai1    vp-a-ís-ire ko-R-a
+
+Negative:
+P1/Ai1      ti-vp- ais-a ko-R-a
+
+In which the additional radical is -many-:
+Positive:
+A2/1-Ai1    vṕ-á-many-a ko-R-a
+A4/Ai1      vp-ka-many-a ko-R-a
+B1/Ai1      vṕ-māny-e ko-R-a
+
+Negative:
+Qx2/2       vp-táá-many-e ko-R-a
+
+=== 5.0. THE SYNTAX OF GUSII TENSES ===
+One- and two-word tenses in context.
+Having established the range of tenses which may occur, it remains to consider the contexts in which they occur. Primarily, one is concerned with linguistic contexts, though it must be noted that certain linguistic contexts themselves occur only in specific social contexts (vide Px25, A9), which might well form the basis for a further examination.
+For the purpose of the present study the context selected is that of the sentence,[1] taken in many instances from conversation occurring in daily life around the home, school and courthouse. In some cases examples have been taken from texts.[2]
+
+5.1. Sentences seem broadly divisible, from the point of view of the present study, into three main categories, of which the last may be subdivided:—
+1. Non-verbal sentences.
+2. Uni-verbal sentences.
+3. Multi-verbal sentences.
+   (a) In which control operates between a single short-series nominal and a succession of verbal prefixes.
+   (b) In which control operates between several such nominals and successive verbal prefixes.
+We shall not be concerned here with non-verbal sentences, and uni-verbal sentences present few problems. It must be noted, however, that more than half the total of one-word tenses may occur in such sentences, of which the minimal pattern is exemplified by a single verbal:—
+C2/1 ogúúre/He has fallen
+B1a  nágēndɛ/He will go
+At the syntactic level, therefore, one may re-group these one-word tenses into a new Class, of which they form the only members.
+
+5.2. All other tenses can occur only in multi-verbal sentences, which represent by far the commoner type of sentence in folk-tales and narrative generally, as well as occurring widely in conversation. Tenses may be classified both according to their range of occurrence and according to the tenses with which they may be associated.
+
+5.21. Consider, first, the following examples, in which control operates between a single short-series nominal and a succession of verbal prefixes:—
+1. ómoísék(e) ɔréétire cínko korénde táraabuuca‿ámááce (C2/1, P9)
+   The girl has brought the firewood but has not drawn the water.
+2. ómoísék(e) ɔréétire cínko árúgere‿éndáágera (C2/1, B1)
+   The girl has brought firewood to cook food with.
+3. ómoíséke narééta cínko,[3] onyv́órirwe (A1a, C2/1)
+   The girl although she is bringing firewood she is late.
+4. ómoíséke náraarééta cínko áámanya korúg(a) éndáágera (A29/1)
+   The girl fetched firewood and then cooked food.
+5. ékɛrɔ ómoísék(e) ɔréétire cínko, akarúg(a) éndáágera (C2/1, A4)
+   When the girl had brought firewood she cooked food.
+
+Of these 1 may be divided into two segments, each a complete utterance, linked by a connector, in this case 'korénde'. It is noteworthy that a translation of the segments plus the connector will serve as a translation of the whole. Other connectors include 'Naénde/Also, then'; 'Ne/Also, and'; 'ério/Then, whereupon'. This last commonly occurs initially in the sentence, but occurs as a connector especially following certain radicals, notably those connoting 'saying, telling, ordering, etc.' (see Examples 12 and 13 below). Example 2 may also be divided into two segments, each a complete utterance; but here there is no connector and the translation of the segments will not serve as a translation for the whole. Example 3 cannot be divided at all; tense A1a can never occur in a uni-verbal sentence, but must be associated with a second, commonly following, verbal.[1] Example 4 likewise cannot be divided, and here neither of the tenses may occur in a uni-verbal sentence. The same may be said of Example 5, though here A4 may occur in a uni-verbal sentence provided that there is a close link between it and a preceding sentence.
+
+The general relationship which obtains between verbals in Examples 3-5, I am terming concomitance, and tenses exemplifying such a relationship are termed concomitant tenses. Concomitance is commonly of the asymmetrical variety exemplified here, where the presence of A entails B but not vice versa, since C2/1 (Example 3) may also occur in uni-verbal sentences. Furthermore, concomitance is rarely of an absolute variety, that is to say only between tense X and tense Y; commonly it is rather between tense X and tenses Y, Z and A, and the range of concomitant tenses for these three will, of course, differ again. Symmetrical concomitance, in which the presence of A entails B and vice versa, is also rather rare, but may be exemplified by the following:—
+6. onyé totáasimegetí ámaɛmba, angá éncará njâtoria; where the first two words, and the fourth and last words, are in a relation-ship of symmetrical concomitance.
+
+While Examples 1 and 2 do not exemplify concomitance in the sense defined above, they do exemplify a co-occurrence: for example, where C2/1 is followed by 'korénde', then only a narrow range of tenses can occur as V2, i.e. P9, P5/1, P1/Ai1. In contrast, if C2/1 were followed by 'naénde' then a different and wider range of tenses may occur. Finally, and most important, such tenses may also occur in uni-verbal sentences. Where they occur in multi-verbal sentences they may be said to be 'in attendance' on such other tenses as co-occur in the sentence.
+
+Thus, two kinds of tense have now been discussed: firstly, those which occur only in multi-verbal sentences and which occur concomitantly with other tenses. As will be seen from the detailed examination of the tenses this concomitance may be restricted to one or two tenses or be fairly extensive. Secondly, there are tenses which occur in attendance with other tenses but which may occur in uni-verbal sentences.
+
+One pattern of multi-verbal sentence of this kind has not yet been mentioned; consider the following example:—
+7. ómoísék(e) ɔkɔrééta cínko onyóórirwe
+   The girl (who is) bringing firewood is late.
+
+Is this to be considered a multi-verbal or a uni-verbal sentence? It is clear that in referring to uni-verbal or multi-verbal sentences at all, one is speaking in morphological terms, in the sense that—as in the above examples—the pieces may be identified by their characteristic shapes. The boundaries of categories as delimited by formal criteria may not, however, be co-extensive with those as delimited by other criteria: there is often some overlapping.[2] For example, the distribution of a given verb tense may be comparable to that of a long-series nominal, and at this level may need to be grouped with it. The foregoing remarks may now be re-stated in the following terms: that the exponents of morphological categories, which must, of necessity, occur in linear sequences,[3] may be re-classified according to distribution, which involves a study both of position and relationships. At this point it is primarily position which must be discussed, and in particular the extent to which members of the same morphological category may occupy similar or dissimilar positions to those occupied by members of other categories. For example, the position between a short-series nominal and a following verbal, whose verbal prefix is controlled by that nominal, may be occupied by a long-series nominal; adjective, demonstrative or possessive, thus:—
+8. ómwán(a) orwárire/The child is sick
+   ómwán(a) ori(a) orwárire/That child is sick
+   ómwán(a) ori(a) ómoké orwárire/That small child is sick
+
+In addition, however, verbals in certain tenses may also occur:—
+   ómwán(a) okórer(a) orwárire/The child who is crying is sick
+   ómoísék(e) ɔkɔrééta cínko onyóórirwe/Vide sup.
+
+Items which occupy such a position in relation to a preceding short-series nominal clearly have some claim to be regarded as members of a common Distribution-Class. Provisionally, a Substitution-Class I is set up,[4] for membership in which, the following tenses qualify: A2/1, A2/2, Px2/1, Px2/2, A5, Px9, B9, Qx2/3, C1/1, CRx2/1, C2/2, C2/3, D2/1, D2/2, Sx2/1, Sx2/2. It must be realized, however, that the range of occurrence of these tenses is not restricted to membership of such a Substitution-Class. This will be seen clearly from the detailed examination of tenses, but the following examples from A5 may serve as illustration:—
+9. ékɛr(ɔ) ábanto bágósóa nyomba, ábáána bákóbasɛka/When the people enter the room, the children laugh at them.
+   akamobóória ŋai ógócia?/He asked him—where are you going?
+
+In none of the cases are the tenses members of such a Substitution-Class, the only pieces for which 'bágósóa, bákóbasɛka, ógócia' may be substituted are verbals.
+
+Nevertheless, the importance of such a phenomenon in sentence structure lies in its being a factor of sentence extension. A verbal which is a member of such a Class may be followed by a series of subsequent short-series nominals, each with a potentiality for further extension. While such extension is theoretically limited only by the breath capacity of the speaker, in practice sentences seem commonly restricted to two or three complexes[5] in such a post short-series nominal position. The following examples illustrate some of the more extreme examples recorded:—
+10. ori(a) ómorioori ig(ɔ) árenge korééta ámááce(e) áábéékw(a) égetega, ááyia, áábera
+    The diviner used to bring water which was placed in a gourd, put on the fire, heated, and brought to the boil.
+11. akáéba ámaŋáná ari(a) écíngi ámokáánetie ŋa táácia kobatɛɛbia ŋa nárieerete cíngi — akabatɛɛbia....
+    He forgot the matter of the flies, which he (his friend) had forbidden him to go and tell his relatives about his having eaten them, and he told them....
+
+What is true for the number of complexes which commonly occur, is also true for the number of non-substitution tenses in such sentences, though long sequences of A2/1, A4 or B1 are not uncommon in narrative:—
+12. ábagááka bánde bakabéâ bakabóóra bákórɛ‿ésɛɛgi ério báŋāānye bakarwa arórɔ (A4, B1)
+    Some elders became very angry and said they should declare war and move their houses and leave there.
+13. ábanto tibáárenge koba nómɔrɛmbɛ báíkaranse bárēme — ério bányɔ̄ɔ̄rɛ rííbaga bákóremer(a) éndáágera bárie báárwo báténenke
+    The people had no peace to settle down and cultivate, whereby to get an opportunity for cultivating their food to eat, so that they might leave the area and become wealthy.
+
+5.22. Multi-verbal sentences in which control operates between several short-series nominals and successive verbal prefixes, occur commonly and are of several different kinds. The commonest patterns are those in which a complex is preceded by some word such as 'ékɛrɔ/When'; 'buna/How'; 'ékiágɛra/Because'; 'korénde/But'; 'ŋa/That'. Of these 'korénde, ékiágɛra' have been referred to earlier as connectors, linking two otherwise complete utterances. There is no limit, other than the speaker's breath capacity, to the number of sequences that can be linked, but it is rare to find the number exceeding three. Of the remaining three words, all are important factors of sentence extension, and in all cases the sequence or complex following, may have substituted for them a single word; a short-series nominal in the case of 'buna, ŋa' and an invariable word of time in the case of 'ékɛrɔ'. Two new Substitution-Classes may therefore need to be set up; one for short-series nominals in any position, and the other for invariable time-words, which might later prove capable of extension to other invariable words. Consider the following examples:—
+1. ómoísék(e) ɔréétire cínko korénde momur(a) ómwabo táraabuuca‿ámááce
+   The girl has brought the firewood but her brother has not drawn the water.
+2. tímanyeti buna tórááce kɔgɛnda mambia, ékiágɛr(a) ényange yane yabúnekire
+   I do not know how we shall go tomorrow as my bicycle is broken.
+3. ígɔ twásɛɛmɛretie ŋa ndɛɛró árááce
+   We trust he will come today.
+4. ékɛr(ɔ) ágwet(e) ábáána bagasɛka
+   When he fell down the children laughed.
+
+The following substitutions may occur:—
+2. tímanyeti ámaŋána‿ámange ékiágɛra tíndaamanya gosoomа
+   I don't know much because I haven't learned to read.
+3. ígɔ twásɛɛmɛretie ámagɛsa‿ámaya
+   We trust there'll be a good harvest.
+4. éri(o) ábáána bagasɛka
+   Whereupon the children laughed.
+
+In addition, however, a number of tenses occur in contexts which seem to make possible a substitution, for example:—
+5. ómwána‿átémɛ cíɔmbɛ cígēndɛ (B1 as V2)
+   The child is to beat the cattle that they go.
+6. twábarɔra ábaíbi bágósóa nyomba (A5 as V2)
+   We saw the thieves entering the house.
+7. ábanto báámɔnyɔɔr(a) okúúre borere (C2/1 as V2)
+   People found him dead in bed.
+8. bakamɔnyɔɔr(a) ɔréétire‿ébinto bíonsi agacia ka (C2/1 and A4 as V2 and V3)
+   They found he had brought all the things and gone off home.
+9. nááminyogete akarósa (A4 as V2)
+   He ran off and got tired.
+
+Such substitutions might be of the following kind:—
+5. ómwána‿átémɛ cíɔmbɛ bɔkóŋu
+   The child is to hit the cattle hard.
+7. ábanto báámɔnyɔɔra bwango
+   People found him quickly.
+9. náaminyogete mogondo
+   He ran to the fields.
+
+It is clear, however, that while such substitutions may be acceptable for the positions cited, they cannot be accepted as generally valid, since all the tenses concerned may occur in a wide range of other contexts. What is possible, and perhaps profitable, is to consider the range of tenses occurring in a specific position. To note, for example, that in position V2 in Example 5, only Ai2/A1, P1, Px9, Sx1 may replace B1, or in Example 7 that only A4, A5 and P9 may replace C2/1. This is dealt with for each tense in the following examination.
+There is, thus, a triple division of tenses, into 'independent' tenses, which may occur in uni-verbal sentences; 'concomitant' tenses, which must occur in multi-verbal sentences, and 'attendant' tenses, which is the term accorded to 'independent' tenses in a multi-verbal context. Finally, a large group of tenses may occur as members of a Substitution-Class.
+
+5.3. From the contexts cited for any particular tense it may be possible to make some sort of generalization at a semantic level. This may be relatively precise in some cases—especially in 'time' tenses—while in others the most that can be done is a rather loose description. The problem is a difficult one, and the linguist must choose between short, often misleading labels, and prolix, but more accurate descriptions based on detailed contextual analysis. To some extent the label may depend on the writer's purpose; it may be argued that for teaching purposes a short label may have advantages over a scientifically more accurate but cumbersome description. In the following pages some generalizations will be proffered wherever possible.
+
+5.4. Substitution tenses. For some tenses it appears possible to substitute other tenses without apparent change of meaning. There are those who will argue—and cogently—that no two shapes can, on principle, ever 'mean the same', and will say that in such examples the differences are, as yet, undiscovered by the linguist. In the present writer's experience it seems truer to say that the ranges of no two tenses are co-extensive, but that in certain cases the use of one tense may be comparable to the use of a second tense, in the sense that it may be possible to substitute that tense for it, with only an 'arguable'[6] distinction in meaning.
+
+Footnotes to Section 5:
+1. In multi-verbal sentences of Type 3b, the whole sequence may be preceded by a verbal followed by 'ŋa'. This does not invalidate the foregoing remarks.
+2. It is round such overlapping that traditional discussions of grammatical categories have centred in terms of a dichotomy between form and function.
+3. Whether these are exemplified by spoken or written sequences is immaterial.
+4. Which can be regarded as the distributional overlap exhibited by the exponents of different morphological categories.
+5. A complex is defined as any group of items linked by formal elements of control, which do not of themselves constitute a complete utterance.
+6. The term 'arguable' is adopted for the area of meaning over which two or three native speakers of a language will argue as to the distinction in meaning between two mutually substitutable utterances.
+
+
+=== 6.0. CONTEXTUAL EXAMINATION OF ONE-WORD TENSES ===
+
+--- 6.1. A Tenses ---
+
+A1   vp-Z-R-a               Negative: Two-word tense P1/Ai1
+Context: Restricted to multi-verbal sentences, and occurring as V1.
+Connotation: Continuity over long period without specific time reference.
+Concomitant tenses: P9, P5/2 and A2/1.[1]
+Substitution tenses: In those sentences where the verbal is followed by 'botambe', this tense may have substituted for it A2/1. The two-word tense Ai1/A1 may be substituted for A1 in all contexts so far recorded.
+Examples:—
+1. gese ncicá‿aiga,[2] tindáányɔɔra‿ábasááni
+   Since I came here I've not made friends.[3]
+2. ndangeria bóírá gó togoítába
+   I've been calling all day but you didn't reply.
+3. akór(a) émeremo korendé tákónyɔɔra cíbɛ́ɛ́sa[4]
+   He's always working but he won't get any pay.
+4. ndúga mámbia botambe, báária, bámanya kɔgɛnd(a) émeremo
+   I cook every morning, they eat, and then go to work.
+
+Footnotes to A1:
+1. Citation of tenses under this heading is limited to contexts available. This also applies to 'Attendant Tenses'.
+2. A pause in speech within the sentence, which is characterized by an immediately preceding high tone, is represented here by a comma. Pauses not so characterized are represented by a dash (-). Such pauses do not by any means always occur at the same point in the speech of different speakers.
+3. The appended translations are intended merely as identifications of the sentences.
+4. A high tone following the prefixes e-, ci-, rii- of Classes 5, 9, 10 is realized as a mid-tone, but the high-tone mark is here retained.
+
+A1a   n-vp-Z-R-a[1]          Negative: APx1a   n-vp-tá-R-a
+Context: Multi-verbal sentences, or sentences stabilized by n-. Occurring as V1 or V2.
+Connotation: Always associated with 'Although...'. Time reference present or general.
+Concomitant tenses: Commonly B1a, C2/1, but also P9 and P5/1.
+Substitution tenses: In all contexts 'nonyá' + A5 may be substituted for A1a. See also A2/1, D2/1.
+Examples:—
+1. áse ncé ninkóra buya, mbósa
+   As for me, though I do good it is of no use.
+2. nɔgɛnda, tókómɔnyɔɔr(a) obóókire
+   Though you go you'll not find him at home.
+3. nyangwɛsó noika, kwanyóórirwe
+   N. though you arrive you are late.
+4. nintárúga, nóráágere
+   Though I'm not cooking you'll eat.
+5. narúga bóóno, ómɔgɛni ocíre
+   Though she cooks now, the guest has come: i.e. Even if she starts cooking now, no matter, the guest is here.
+6. nokéŋga, nagwɔ ninkórooce
+   Though you hide (yourself) there too I can see you.
+Note should also be made of sentences in which A1a occurs as V1, and is followed by 'kogiica — Yet, nevertheless':—
+7. naáncire ŋa nindúga botámbe, kogiica tíngɛnda mogondo
+   I agreed that though I cook every day, yet, I would not go to the fields; i.e. I agreed that I would cook on condition that I did not....
+8. bágótɛɛba ŋa notásika so na nyoko, kogiica‿ábásík(e) ába mónɔ amo nábande b'ábáamate
+   They say that even if you don't respect your father and mother, yet you should respect their collaterals and others of your relatives.
+
+Footnote:
+1. The tone of R is basic unless otherwise stated.
+
+A2/1   vṕ-á-R-a (Ia -R̄-)    Negative: P2/1   ti-vṕ-áá-R-a
+This tense occurs in at least four distinct contexts, each of which will be treated separately:—
+(i) Context: Occurring in both uni- and multi-verbal sentences. Commonly preceded by 'igɔ', where occurring as V1, less commonly where V2.
+Connotation: Time reference 'past', generally within the past hour or so, but there is some looseness particularly in the usage of the younger generation.
+Attendant tenses: A2/1, A2/1-Ai1.
+Examples:—
+1. ígɔ báágwa nse
+   So they fell down.
+2. ígɔ naaré kóbóóka, nágɛnda mogondo
+   So I woke and went to the fields.
+3. ígɔ kwárūga, goika kwárɔsa
+   Then you cooked until you were tired. Cf. A2/2, Ex. 4.
+4. égecúúre igɔ kíáminyoka, goika kíárɔsa
+   So the buck ran until it was tired.
+
+(ii) Context: Commonly uni-verbal but also multi-verbal sentences, especially in questions. 'Igɔ' may, but commonly does not, precede the verbal.
+Connotation: Time reference past but more general than (i).
+Attendant tense: A2/1.
+Examples:—
+1. óika bɔɔrí?
+   Did he really arrive?
+2. óika bɔɔri!
+   He actually arrived!
+3. Gwátig(a) émeremo yaó?
+   What, did you give up your job?
+4. ígɔ kwágɛnda gwátig(a) émeremo yaó?
+   Well, did you go and leave your job?
+
+(iii) Negative: P1
+Context: Occurring both in uni-verbal and multi-verbal sentences, in association with a post-verbal word 'botámbe' and never with the pre-verbal word 'ígɔ' as in (i) and (ii).
+Connotation: No time reference, but continuity over some period. Some sense of obligation is also to be noted.
+Attendant tenses: A2/1, A5, B9, C2/1.
+Examples:—
+1. kwárūga botámbe cins(a) ísaano ná íbere
+   You ought always to cook at one o'clock.
+2. Cíágɛnd(a) égetíí botámbe
+   They (cattle) go daily to the pastures.
+3. ómosáác(a) oo ɔtéébire ŋa kwárúga botámbe
+   Your husband says you must cook every day.
+4. ígɔ ndáábōōke, nágɛnda mogondo (botámbe—may or may not occur)
+   I'll wake and go off to the fields (as a general rule).
+5. ígɔ nkóbóóka, nágɛnda mogondo botámbe
+   I wake and go off to the fields as a general rule.
+
+(iv) Negative: Px2/1 q.v.
+Context: Multi-verbal sentences only, or those stabilized by n-.
+Connotation: Past time reference, but may be translated by a relative. It should be noted that though this tense commonly connotes an immediate or near past, i.e. up to a matter of days ago, it nevertheless occurs in such phrases as 'ómwák(a) óēta—Last year'.
+Concomitant tenses: A2/1, P9, C2/1.
+Substitution Class I.
+Examples:—
+1. ómonto ókōr(a) émeremo ntááta
+   The man who was working is my father.
+2. ámare áya[1] twárɔra ig(ɔ) áreng(e) ámaya
+   The clouds we saw were beautiful.
+3. ábaíbi bááība ciɔmbɛ ciaito, báátimoka bwango
+   The thieves who stole our cattle ran off quickly.
+4. ábanto bááremete cíbando ómwák(a) óēta aaŋe nórooce....
+   People who planted maize last year near the river....
+
+Footnote:
+1. Distinguished by tone from the demonstrative of the same shape. This occurs only, but not invariably where the 'object' of the verbal precedes it.
+
+A2/2   vṕ-a-R-a (IIb -R̄-)   Negative: P2/2   ti-vṕ-áa-R̄-a (IP)
+It should be noted that vṕ-a is realized as falling in 1st and 2nd persons singular and plural, i.e. nâ-, kwâ-, twâ-, mwâ-.
+Context: In contrast to A2/1 this tense occurs only in one type of sentence, comparable to that discussed above under (i) for A2/1.
+Connotation: Past time reference; between 24 and 48 hours prior to the time of speaking, although again some looseness is observable in the speech of younger people.
+Attendant tenses: Restricted to A2/2 and A4.
+Examples:—
+1. igɔró ŋaí kwârâbîa? Nkorwa mááte áária nârâbia
+   Yesterday where did you clear? It was from the bottom there I cleared.
+2. íg(ɔ) áagenda boBaasi igɔrɔ, agatɛɛba ŋá náírane écum(a) egooca
+   He went to boBaasi yesterday and said he would return in a week.
+3. ígɔ báagwa nse
+   So they fell down.
+4. ígɔ kwârúga, goik(a) okarósa
+   You cooked until you were exhausted. Cf. A2/1 (i) Ex. 3.
+5. íg(ɔ) áaminyoka, goika akarósa
+   He ran until he was exhausted.
+
+A2a/1   n-vṕ-á-R-a (Ia -R̄-)   Negative: P2/1, Px2/1 (see below)
+Context: Occurs both in uni-verbal and multi-verbal sentences, and is never associated with the pre-verbal word 'ígɔ' as is A2/1.
+Connotation: Time reference as for A2/1. This tense serves to introduce a new topic rather than continue an old one; it is thus complementary, in at least some senses, to A2/1.
+Attendant tenses: A2a/1, A2/1, B1, B1a.
+Examples:—
+1. ngwásíeka(a) égesíeri?
+   Did you close the door?
+2. ńnágenda asé nágɔtɛɛbia nâré góócia
+   I went where I told you I was going.
+3. nááminyoka, goik(a) órɔsa
+   He ran until he was tired.
+4. náátāma tabaisá kóbwatwa
+   He ran off in order not to be caught.
+5. mwané náákōr(a) érɔngɔɔri nógēndé kónywa?
+   At my place I made gruel, will you go and drink it?
+6. ndūūsie nkóé ítuko ki? ékiágɛrá nnágor(a) émbori
+   What day shall I take it and give it to you? Because I sold the goat. (Reference to the payment of a debt.)
+7. ńnákóóra ríírábia kwane rɛɛró níncāāké gósimeka
+   I finished clearing at my place, today I'm going to start planting.
+Note the occurrence of this tense where preceded by 'onyé' in V1 position, and by 'anga' in V2 position. Negative is Px2/1, q.v.
+8. onyé cínyeni ncíátooka, angá ínácigora
+   If vegetables were obtainable I would buy them.
+9. onyé mbáásímék(a) ékááwa, angá mbáányɔɔr(a) ébitóóki
+   If they were to plant coffee they would get a profit.
+
+A2a/2   n-vṕ-a-R-a (IIb -R̄-)   Negative: P2/2, Px2/2
+Context: Occurring both in uni-verbal and multi-verbal sentences, and is never associated with the pre-verbal word 'ígɔ'. Commonly occurs as V1.
+Connotation: Time reference as A2/2, and as for A2a/1 tends to introduce a new topic rather than continue one already raised.
+Attendant tenses: A2a/2, A2/2, A4, also P5/1.
+Examples:—
+1. nkwâgenda kwâruusia‿ámagwá mogondo
+   You went and removed the thorns from the field.
+2. ngwâsíek(a) égesíeri?
+   Did you shut the door?
+3. ómwák(a) oyó náasíméka kobu(a) ómwák(a) óēta
+   This year he planted more than last.
+4. náaminyoka, goiká‿akarósa
+   He ran until he was exhausted.
+5. ómokubio‿óēta‿ábáána mbáagɛnda Gísumu
+   Last week the children went to Kisumu.
+6. nonyá mwârêént(a) ómorwaír(e) oyo, tákógówɛna
+   Although you brought the sick man he won't recover.
+As for A2a/1 above, the verbal may be preceded by 'onyé' as V1 and by 'anga' in V2 position.
+7. onyé mbáasímék(a) ékááwa, angá mbáanyɔɔr(a) ébitóóki
+   If they had planted coffee they would have got a profit.
+
+P2/1   ti-pv́-á(á)-R-a
+Context: Commonly occurring in multi-verbal sentences, less commonly in uni-verbal sentences. Commonly in position V2.
+Connotation: Past time reference as for A2/1, (i). See also S1.
+Attendant tenses: A2/1, A2a/1, D2a/1, P2/1.
+Examples:—
+1. ńnágɛnd(a) écííro nécímborí‿ibére, tinááɔɔnia nonyá némo
+   I went to market with two goats but didn't sell even one.
+2. ɛr(ɛ́) óca‿ase twáré kórema, koréndé ncé tináamokwánia
+   He came up to where we were cultivating but I didn't greet him.
+3. ígɔ nágɛnda mogondo, nágesa‿ake, ómwán(a) óndangeria tináaícóri(a) ékebaari
+   I went to the fields and harvested a bit, then my child called me and I didn't fill the bin.
+4. ńnaírete cíɔmbɛ ciriá bwéri korénde ticíásɔa
+   I took the cattle to the byre but they didn't go in.
+Note also the occurrence of this tense preceded by 'angá' usually in position V2. See also Px2/1.
+5. onyé ntááika mambia, angá tináámɔrɔra
+   If I were not to arrive early I wouldn't see him.
+
+P2/2   ti-vṕ-áa-Ŕ-a (IP)
+Context: Commonly occurring in multi-verbal sentences, less commonly in uni-verbal sentences. Usually as V2.
+Connotation: Past time reference as A2/2.
+Attendant tenses: A2/2, A2a/2, A4.
+Examples:—
+1. ígɔ nâgɛnd(a) écííro nécímborí‿ibére, tináaɔɔnia nonyá némo
+   I went to the market with two goats but didn't even sell one.
+2. ígɔ nâirana nyomba, korénde tináamanya gosé‿égesíeri ngésíekíre
+   I returned home but did not know that the door was closed.
+3. ɛré agataara ncera, korénde ncé tináamokwánia
+   He was out walking in the road but I didn't greet him.
+4. ígɔ nâgɛnda mogondo nkagɛsa ake, ómwána‿akandangeria tináaícóri(a) ékebaari
+   I went to the fields and harvested a bit, then my child called me and I didn't fill the bin.
+
+Px2/1   vp-tá-á-R-a (Ia -R̄-)
+This tense occurs in at least three distinct contexts which will here be treated separately.
+(i) Context: Multi-verbal sentences only, but may occur as either V1 or V2.
+Connotation: Past time reference; generally comparable to A2/1, (i), but there is some looseness.
+Concomitant tenses: A2/1, A5, B1, A2/1-Ai1.
+Examples:—
+1. ínkí rénde ógócia koría ka — ntáárūga?
+   What are you going to eat in the house, I didn't cook?
+2. totáasíméka marabwóni ébirongó bítíge
+   We didn't plant potatoes so that the porcupines would leave them alone. The point here is that in planting potatoes we recognized that the porcupines wouldn't leave them alone, but we persisted nonetheless. Contrast with:—
+   égentó kíágɛrɛtɛ titwásíméka‿ámarabwóni nébirongó bíkória
+   What caused us not to plant potatoes was the porcupines eating them.
+3. totáásaba ngótoa‿árenge bɔ́ɔ́ri?
+   We didn't ask, (so) was he really likely to give us (what we wanted)?
+4. kái naaré kóruusia nkóe — ntáágor(a) émbori?
+   Where could I take (it) and give it to you, as I haven't sold the goat?
+5. mwané ntáákōr(a) érɔngɔɔri, nkí ógócia konywá ka?
+   At my place I didn't make gruel, what will you eat at home?
+6. onyé mbáásímék(a) ébituuma, angá batáaígw(a) éncara
+   If they were to plant maize, they would not go hungry.
+
+(ii) Context: Occurs in both uni-verbal and multi-verbal sentences, and is usually restricted to questions. Occurs commonly as V1.
+Connotation: No time reference, but in some contexts with future implication.
+Attendant tenses: Px5, D1.
+Examples:—
+1. ábáána batááriisia buya, nóbokimá bwóká bátagéte bánákória
+   The children don't herd well, it is simply food they want—to go on eating.
+2. otáásooma otáágóíkaransa!
+   As you can't read try sitting down! (Teacher to pupil)
+3. otáásooma otáákórema?
+   As you can't read will you try farming then?
+4. otááráágéra otáákógenda koríísia?
+   As you don't eat, will you not go and look after the cattle?
+5. náásékí ntáárūga?
+   Shall I not cook then? A general question, contrast with:—
+   náásékí ntáárūge?
+   Shall I not cook?—a particular occasion.
+6. ínkí gosé ntáátɛɛbɛri(a) égetɔnga ŋa gósɔria?
+   Why should I not tell the basket to play? (From a folk-tale)
+7. ŋaí ntáásóóma?
+   Where should I not read then?
+8. otáátoa ómogaak(a) óyógótóóri(a) ékiina?
+   Will you not give us (i.e. please do give us) an elder who can settle the case?
+
+(iii) Context: Multi-verbal sentences only, and those stabilized by n-.
+Connotation: Past time reference (see A2/1, (iv)), and may be translated by a relative.
+Concomitant tenses: A2/1, P5/1, B1, B1a, C2/1.
+Substitution Class I.
+Examples:—
+1. ómonto‿otáákōr(a) émeremo ntááta
+   The man who didn't work is my father.
+2. ábaíséke bátááca igɔrɔ, ígɔ báatangwa némbura
+   The girls who didn't come yesterday were delayed by rain.
+3. ábanto bátááírana, ígɔ báásibwa na Bwana D.C.
+   The people who didn't return were jailed by the D.C.
+
+Px2/2   vp-tá-a-R-a (Ia -R̄-, IIb -Ŕ-)
+Context: Multi-verbal sentences only.
+Connotation: Past time reference comparable to A2/2.
+Concomitant tenses: A2/2, A4.
+Examples:—
+1. ínkí rénd(e) áaca‿akari(a) ka — ntáarūga?
+   What did he come and eat in the house, (as) I didn't cook?
+2. mwané ntáakōr(a) érɔngɔɔri, nkí kwaré gócia konywá ka?
+   In my place I didn't make gruel, what did you go and drink at home?
+3. ntáaícóri(a) ényongo igɔrɔ, ékiágɛra nâgɛnda Gɛtɛmbɛ na rɛɛró ímbé tinyícória?
+   Yesterday I didn't fill the pot because I went to Kisii and today am I to be that I don't fill it? i.e. Shall I be able to avoid doing it today?
+Note the occurrence of the tense in position V1, where preceded by 'onyé, ónyɔ́ɔ́rɛ':—
+4. ónyɔ́ɔ́rɛ ntáakóŋa nâkéŋga bɔkóŋu, ígɔ nááre gooca goítwa
+   If I hadn't stuck out and defended stoutly I'd have been killed.
+5. onyé totáanyɔɔr(a) émeremo Gisumu, angá ígɔ twâgɛnda Nairobi
+   If we had not got work in Kisumu we would have gone to Nairobi.
+
+A4   vp-ka-R-a (Ia -â)      Negative: P2/2 q.v.
+Context: Restricted to multi-verbal sentences; it may happen, however, in conversation, that a speaker uses the tense in a uni-verbal sentence. In such cases it seems that the speaker is merely continuing his previous utterance. See Example 5 below.
+Connotation: Past time reference in relation to the preceding tense. No examples have been recorded of A4 following a future tense.
+Concomitant tenses: A2/2, A2a/2, D2/2, D2a/2.
+Examples:—
+1. botúko ábaíbi bagasóa nyomba, bakaíbâ cíanga, bagasóóka naende
+   During the night thieves entered the house, stole clothes and left again.
+2. níg(ɔ) áácét(e) akaráágéra, éri(ɔ) akaráára
+   So he came, ate food and went to sleep.
+3. níg(ɔ) áácete, táaráágéra, éri(ɔ) akaráára
+   So he came, did not eat and went to sleep.
+4. akagɛnda, aga.áák(a) ómwáná goika‿akaréra
+   He went and beat the child until it cried.
+5. A. ....ígó‿ótɛɛma kominyoka goik(a) ényomba
+   B. ɛhɛ́ɛ́ — náaiká?
+   A. yááya — akagwá nse agaítwâ kogóro
+   A. ....so he tried to run to the house.
+   B. So, did he get there?
+   A. No, he fell down and hurt his leg.
+
+A5   vp-ko-R-a              Negative: Px2/1-Ai1 (see two-word tenses)
+This tense occurs in two distinct kinds of context, with a characteristic tone pattern for vp-ko- in each, which some might regard as justification for treating it as two distinct tenses.
+(i) vṕ-kó- for all Classes except 1, 4 and 9, when both prefix and tense sign are low; even in these three Classes both are associated with a high tone if the 'object'[1] of the verbal precedes it.
+Context: Uni-verbal and multi-verbal sentences. Commonly occurring in interrogative sentences preceded by an interrogative word.
+Connotation: Present time or no-time reference. May be translated by a relative though this is frequently omitted in English.
+Attendant tenses: A wide range of such occur, commonly in V2 position, for example: A2/1, P2/1, A5, P5/1, P9, B1a, C2/1, DS/1, D2/1, Px2/1-Ai1.
+Substitution Class I: Except where the tense is preceded by an invariable word like 'ékɛrɔ, mbóóno' or by an interrogative word (vide Examples 3, 5 and 6): also, where it is preceded by two short-series nominals (vide Example 7), or may itself have substituted for it tense B1-Ai1 as in Example 10. See also B1-Ai1, p. 62.
+Examples:—
+1. náámɔrɔra‿ábanto báágósɛka/I saw the people who are laughing.
+   .....................ábanénɛ/I saw large people.
+   .....................bonsi/I saw all the people.
+2. abá tibáámanyetí éki bágókɔra
+   They don't know what they are doing.
+3. ékɛr(ɔ) ábanto bákógenda koruba, nkónyɔɔra báré cínswi
+   When the people go fishing they get fish.
+4. námagena‿ákória
+   It's eggs he's eating.
+5. ŋaí ókógɛnda?
+   Where are you going?
+6. ndí ókógɛnda?
+   When are you going?
+7. ómokúngú nécíír(o) ágóócia[2]
+   The woman, it is to the market she's going. This is the most common translation for 'The woman is going to market'.
+8. námagena‿atááré kórígia
+   It's eggs which he's not looking for.
+9. mbóóno ig(ɔ) ágóika
+   He's just come. Lit.: It is now that he is arriving.
+10. ábanto bágóóca, náímóke
+   If the people come he'll go.
+
+(ii) vṕ-kó- The tone of vp- is high except in Classes 1, 4 and 9.
+Context: Multi-verbal sentences only. Usually occurring as V2, but where occurring as V1 seems commonly to be associated with a pre-verbal word 'ígɔ'. (But see Px25/2, Example 1.)
+Connotation: No time reference but rather one of continuity. Where the tense occurs as V2, the continuity is associated with the time reference of V1.
+Substitution Class: Where this tense occurs immediately following another verbal (Examples 4 and 5) there may be substituted for it an invariable word of 'manner' as in Example 1, or another verbal, C2/1.
+Concomitant tenses: A5, A2/1, A2/2, A4, P2/1, P2/2.
+Examples:—
+1. ....nábarɔra‿ábanto bágɔ̀sɛka/....I saw the people laughing.
+   .....................boigɔ/....I saw the people thus.
+   .....................baacííre/....I saw the people had gone.
+2. tóbá mátúk(o) ábéré tókóaga, éria gatató twâgɛnda ékebósano
+   We were two days weeding, on the third day we went all together.
+3. íg(ɔ) akógɛnd(a) ékɛr(ɔ) áse ékɛrɔ korɔra gos(e) óbɔri bwarábire
+   And he goes from time to time to see whether the millet has ripened.
+4. ńnásōa nyomba, nábarɔrá bágókór(a) émeremo
+   I entered the house (a few minutes ago) and found them still working.
+5. ńnasɔa nyomba, nkabarɔrá bágókóra émeremo
+   I entered the house (yesterday) and saw them still working.
+6. ígɔrɔ ígɔ nâgɛnda nkórígi(a) émbori (Ai1 preferable here)
+   Yesterday I went looking for a goat.
+7. ómonto‿osíbéte‿étayi buya, íg(ɔ) akórɔrɛkana buya
+   The man who ties his tie well, looks well.
+
+Footnotes:
+1. I am defining 'object' rather loosely as any short-series nominal which is in a relationship with a verbal but which does not control the verbal prefix of that verbal. This relationship may be exemplified formally by the presence of an object infix, or it may not.
+2. In some speakers the -ko- is realized as -koo- preceding a mono-syllabic radical.
+
+P5/1.  See B1a.
+P5/2.  ti-vṕ-ko-Ŕ-a (IP, but Ia -R̄-)
+Context: Multi-verbal sentences only.
+Connotation: Past time reference, with the implication of occurrence on several occasions over a long period.
+Concomitant tenses: A2/1-Ai1, A2/2-Ai1.
+Examples:—
+1. ígɔ naaré kógɛnda mogondó tínkorūga
+   I used to go to the fields without cooking.
+2. ómwāre tágoci(a) ényomba yómwār(e) onde batáárókereti ényomb(a) éyemo
+   A circumcized child used not to go into the house of another such, unless they (had) emerged from seclusion from the same house.
+3. ígɔ aaré góóc(a) éskuru tákorééta nébitáábu
+   He used to come to school without bringing his books.
+4. ígɔ naaré kórema, gó tíngotábókia
+   I did some cultivating but didn't get to the end (of it).
+5. ígɔ aaré kóraara boira, tágocia náaciá mógondo
+   He used to sleep all day without going to the fields.
+6. ígɔ twaré kógɔsɔria boira, títogocia koríísia
+   We used to play all day and not go to bed.
+
+A9   vṕ-raa-R-a
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Future time reference, commonly with permissive implication. It is also to be noted that the use of this tense commonly implies that another action will subsequently be carried out.
+Social context: Commonly in conversation, especially between juniors and their seniors. In its occurrence it may be regarded as evidence of respect accorded by juniors to seniors.
+Attendant tenses: B1, B1a.
+Examples:—
+1. ńdaasóa?
+   May I come in?
+2. ńdaacá?
+   May I come?
+3. óraamēntērā cínyeni....
+   Will you please give me some more vegetables?....
+4. ńdaagósɔria mányé kógɛnda ka
+   May I play first, then I'll go home.
+5. ńdaakoa nyáŋera yaito, ciaito cínywé mááce
+   May I give you our white goat, that our cows may drink water?
+
+P9   ti-vṕ-raa-R-a
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: No time reference, but rather to an as yet uncompleted action.
+Attendant tenses: A5, B1a, P1/Ai1.
+Examples:—
+1. táraaoóra!
+   She hasn't yet beaten the grain!
+2. kanyá táaraágéra
+   She hadn't yet eaten.
+3. táraaiká? Yááya táraaika!
+   Has he arrived yet? No, not yet!
+4. ɛré ig(ɔ) árenge táraabóóka
+   He was (in the state of) not yet having woken.
+5. érɔngɔɔri téraayiá? Yááya — ngótogot(a) ére rííkɔ
+   Is the gruel ready yet? No, it is still bubbling on the fire.
+6. tíndaakóra gento kende; nkí mógóóca gɔkɔ́ra?
+   I haven't done anything yet, what are you coming to do?
+7. éŋɔmbɛ eria téraasiborwá? yááya — nab(ɔ) ésibíre néboono
+   Has that cow been untied yet? No, it is still tied up.
+8. tindaaráágéra‿asé ígɔ tíndí gócia gotaara
+   I haven't yet eaten so I shan't go for a walk.
+
+A9a   n-vṕ-raa-R-a
+Context: Multi-verbal sentences only.
+Connotation: Time reference future, with the implication of another action to be carried out subsequently.
+Concomitant tenses: B1, B1a.
+Examples:—
+1. níndaasiba címbori; ímānye kɔgɛnda koriisi(a) cíɔmbɛ
+   I'll fasten the goats first and then go and look after the cattle.
+2. tóraasooma‿ake; tómānye kɔgɛnda mobaso
+   We'll read a bit first, and then go out into the sun.
+3. bagatɛɛba, Tíga tóraatɛɛma naénde nony(a) éndáágera yatɔɛ́rɛire.
+   They said, Let us try once again though our food is running short (for us).
+4. níndaaóma nyomba nse; ḿmanye gosooma
+   I shall plaster the lower part of the house first, and then read.
+
+Px9   vp-tá-raa-R-a  This tense occurs in two distinct contexts:
+(i) Context: Multi-verbal sentences only, occurring as V1 or V2.
+Connotation: As with P9 there is no time reference, but rather to an action not as yet carried out.
+Concomitant tenses: B1a, P5/1.
+Examples:—
+1. náiké ntáraaráágera
+   He will arrive before I've eaten.
+2. tágóika ntáraaráágéra
+   He will not arrive before I've eaten.
+3. atáraagɛnda nákórɔrɛ
+   Before he goes he'll see you.
+4. ntáraaca komoiya, tágóóca
+   Until I go to fetch him, he'll not come.
+
+(ii) vṕ- except in Classes 1, 4 and 9.
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: As for P9, but may be translated into English by a relative.
+Concomitant tenses: B1a, P5/1, B9.
+Substitution Class I.
+Examples:—
+1. éndáágera‿atáraarúga yagúndire
+   The food which she has not yet cooked has gone bad.
+2. ómokúngu otáraarúg(a) óbokíma nómwóórɔ
+   The woman who hasn't yet cooked the porridge is lazy.
+3. ábáána bátáraakóór(a) émeremo yaabo, ígɔ bárááb(e) aigá goika báákóór(a) émeremo yaabo
+   The children who have not yet finished their work will be here until they do finish it.
+
+Px25/1   vp-tá-á-kó-R-a
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Time reference future, commonly with an implication of obligation or permission.
+Social context: This tense occurs commonly within the general context of conversation, particularly between those of unequal status, i.e. child/parent, teacher/pupil, and by those asking favours.
+Attendant tenses: Especially Px2/1 q.v., also B1.
+Examples:—
+1. ntáákórúga?
+   Should I cook then?
+2. ntáákógɛnda ndéme?
+   Should I perhaps go and cultivate?
+3. bááná bááne motáákónduuseri(a) ébigút(a) ébio?
+   My children, will you please give me a little of that oil?
+4. Moturí otáákóŋ(a) ómoyio, naincé nkóé rííríonya?
+   M. will you give me a knife, and I'll give you a feather?
+5. otáákórúg(a) óbokím(a) óri(e) ógéndɛ
+   You should cook the food, eat it and go.
+Further examples may be noted from Px2/1.
+
+Px25/2   vp-tá-á-ko-R-a
+Context: Multi-verbal sentences only.
+Connotation: Past time reference, with continuity over a period.
+Concomitant tenses: A5, P5/2 (very limited contexts available).
+Examples:—
+1. tokóígwa ŋa mwanyábaíséke botákáána tibógosira, ncera etáákobaria nékebundu kiámarwa
+   We hear that (as for) the mother-of-girls, poverty was not absent (but) hunger did not eat them, nor was the beer-pot (absent).
+
+A29/1   vṕ-á-raa-R-a          Negative: AP29/1   ti-vṕ-á-raa-R-a
+A29a/1  ń-vṕ-á-raa-R-a
+Context: Multi-verbal sentences only, commonly as V1; frequently followed by a two-word tense in which '-many-' is one radical. A29/1 is commonly preceded by 'igɔ' where occurring initially or as V1.
+Connotation: Past time reference with the implication of doing something else after the action in question.
+Concomitant tenses: A2/1, P2/1, A2/1-Ai1.
+Examples:—
+1. ńnáraasiba címbori, námanya koígórera cíɔmbɛ
+   I tethered the goats and then let out the cattle.
+2. náraabasa, áámanya koírana ká gosóóka
+   She ran off with someone but returned home to get married.
+3. ńtwáraasooma‿ake, twámanya gocia róóce
+   We read a bit and then went off to the river.
+4. ígɔ náraasíméka cíbando cíoka, námanya koburukania cíŋɛndɛ nyúma
+   I planted just maize, and then mixed in beans afterwards.
+
+A29/2   vṕ-a-raa-R-a          Negative: AP29/2   ti-vṕ-a-raa-R-a
+(The occurrence of this tense is not accepted by all informants.)
+Context: As A29/1.
+Connotation: As A29/1 but remoter past time reference.
+Concomitant tenses: A4.
+Examples:—
+1. nâraabasa, akamanya koírana ká gosóóka
+   She ran off with someone but returned home to get married.
+2. ntwâraasooma‿aké, tokamanya gocia róóce
+   We read a bit and then went off to the river.
+
+A49   vp-ka-ráá-R̄-a (IP)     Negative: AP29/2 q.v.
+Context: Multi-verbal sentences only.
+Connotation: Past time reference to a specific action, with the implication of doing something else afterwards.
+Concomitant tenses: A4, A2/2, B1.
+Examples:—
+1. akaráásiba cíŋɔndi, akamanya kɔgɛnda gɔtéénya
+   She first fastened up the sheep and then went to gather firewood.
+2. akaráárāāra, akamanya gooca
+   He slept a bit and then came.
+3. tináraarééta, namanya kɔgɛ́nda?
+   Didn't I bring it and then go?
+4. tináraagɛɛc(a) ómote, mánye gɔtéénya?
+   Didn't I cut the tree before gathering firewood?
+   Contrast with—
+   S1  tĩngɛɛceti ómote, ḿmānye gɔtéénya
+   I didn't cut the tree before gathering firewood.
+
+A59   vṕ-kó-raa-R-a          Negative: A1/Ai3. See two-word tenses.
+Context: Multi-verbal sentences only. Commonly occurring as V1 and associated with the pre-verbal word 'ígɔ'.
+Connotation: General or no time reference, but with the implication of doing something subsequent to the action in question.
+Concomitant tenses: A2/1, B1, B1a.
+Examples:—
+1. íg(ɔ) ákóraabwáta‿ake, naend(e) ótíga
+   He goes on grasping a bit, and then leaves off.
+2. ígɔ tókóraarema‿ake igɔ, tómanye koráátímoka
+   We do a bit of cultivating and then go and rest.
+3. ...kɛrɔ kénd(e) ómosááca‿ákóraabwáta gose gotárér(a) énkɔndɔ
+   On some occasions the husband siezes or grasps tightly the gourd.
+4. ...korénde igɔ ákóraasɛkɛrɛrwa gose ɔɛcɛrigwa kaaré geita....
+   ...but she is usually laughed at or mocked when she is in the doorway....
+
+A75   vṕ-ná-kó-R-a (Ia -R̀-)  Negative: P75   ti-vṕ-ná-kó-R̀-a (IP)
+Note: the vowel of the verbal prefix in P75 is always long: tíínákó-, ticiínákó-. In Classes 1, 3, 4, 6, 9 the first mora of the long vowel is low: in the remaining Classes the second mora is low (vide Sup.).
+Context: Multi-verbal sentences only.
+Connotation: Time reference from the time of speaking into the future, with continuity over that period. In some positive and all negative contexts there is also an implication of obligation.
+Concomitant tenses: A5, B1, P5/2, Px9, P1/Ai1.
+Examples:—
+1. tɛɛbi(a) ómwána‿ánákógɛnda korɔra gose cínyoni nkória círe ámaɛmba
+   Tell the child to keep on going to look whether birds are eating the sorghum.
+2. ótɛ́ɛ́bí(e) ómwána‿ánágótótɛngɛra gose tógóóca
+   Tell the child to be watching out for us (to see) whether we're coming.
+3. tónákógenda‿aroró botámbe kó títɔkɔmɔnyɔɔra
+   We keep on going there every day but haven't found him.
+4. toónágósíméka cíbando rirɔriɔ, totáraaca!
+   Don't you go on planting maize in any way before we arrive!
+   Contrast with—
+   tónágósíméka....
+   Let us go on planting....
+5. tógóre éŋɔmbɛ éyemó tónágósiba!
+   Let us buy a cow and keep it tied up!
+6. tónágósímék(a) ébiasi nabió bíkwáma bwango
+   We'll get on with planting potatoes, and thus they'll ripen quickly.
+7. onyé tárí góoca, tiínákóruga
+   If he's not coming I'm not to go on cooking. In English this would be more usually translated as: If he's not coming, I suppose there is no point in my going on cooking.
+8. ínki kíaba monkáánia ŋa twaigótire tiínákóruga?
+   Why was it that you forbade me (to say) that we were satisfied (with food), so that I needn't continue to cook?
+
+A75a   n-vp-ná-kó-R-a (Ia -R̀-)
+Note: the tense signs -ná- and -nyá- appear to co-exist.
+Context: Both uni-verbal and multi-verbal sentences.
+Connotation: Future time reference, with continuity over the period in question.
+Attendant tenses: A2/1, A2/2, A5.
+Examples:—
+1. ninyákóbéék(a) éndáágera‿ááŋe
+   I shall be preparing the food nearby.
+2. ómwána nanyágótɔtɛngɛra gose tógóóca
+   The child will be watching out for us (to see) whether we're coming.
+3. nínágókɔr(a) émeremo buna gwântɛɛbia
+   I'll be carrying on working as you told me.
+
+Px259   vp-tá-á-kó raa-R-a   Negative: ti-vṕ-kó-raa-R-a (IIa -Ŕ-)
+Context: Multi-verbal sentences only, commonly as V1.
+Connotation: No time reference, but rather a permissive implication.
+Social context: This tense is fairly common in conversation, and seems to be restricted to use by juniors and/or inferiors, including wives.
+Concomitant tenses: Px9, B1.
+Examples:—
+1. ntáákóraarúga ḿmānyé kógɛnda?
+   Should I perhaps cook first and then go?
+2. totáákóraagɛnd(a) écííro, tómānyé góócá kó.óóra?
+   Should we then go to the market first, and then come and de-husk?
+3. ntáákóraasoomia ábáána‿abaiga‿aké batáraagɛnda koráágéra?
+   Should I perhaps teach the children a little before they go and eat?
+
+A275   vp-á-ná-ko-R-a        Negative: P275   ti-vṕ-áa-ná-ko-R-a
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Past time reference, with continuity over the period in question.
+Attendant tenses: A2/1, P2/1, A2/2, P2/2, A5.
+Examples:—
+1. cíŋiti ciánákoeta botúko
+   Animals were passing during the night.
+2. tikwáanákɔrɔr(a) éngurúwe?
+   Have you never seen a pig?
+3. tináanákoigw(a) igá kɛrɔ́ kende
+   I've never felt like this on any other occasion.
+4. twánákogɛnda togótenena komoganya titwámɔrɔra
+   We went on standing waiting for him but we didn't see him.
+5. (t)itwáanákobarɔra‿aigá kɛrɔ kende, tatiga rɛɛró rióka
+   We've not been able to see them here at any time except today.
+6. ério ríírubi ríasungwa gocia igoro, ómotw(e) órooce‿énse, riánágɔtóónia‿ámááce
+   Whereupon the cobra was hung up, head down, and dripped water.
+
+Px275/1   vp-tá-á-ná-ko-R-a
+Context: Multi-verbal sentences only.
+Connotation: Recent past time reference, with continuity over the period in question.
+Concomitant tenses: A2/1, P2/1, Px2/1.
+Examples:—
+1. ntáánágosiba réndé ncé bwéka‿atáárengeo, nyáncé bósa?
+   I didn't do the tying up on my own (when) he wasn't there, am I to agree uselessly? i.e. to the suggestion made by the other man that I had finished tying up his animals in his absence.
+2. ntáánákorema réndé riria áágɛnda
+   I certainly didn't go on cultivating after he left.
+
+Px275/2   vp-tá-a-ná-kó-R-a (Ia, b -R̄-)
+Context: Uni-verbal and multi-verbal sentences, commonly occurring as V1.
+Connotation: Less recent past time reference, with continuity over the period in question.
+Attendant tenses: P2/2, P5/1, A4, C2/1.
+Examples:—
+1. atáanágósɛka ítúko rinde, agaaca gɔsɛka rítúk(o) ériɔ
+   He didn't keep on laughing on any other occasion, but he did laugh on this particular one.
+2. ntáanákóétáánana nyomba ciábanto boígɔ
+   I've never gone wandering through other people's houses.
+3. intwé totáanákónywa máácé mákendu
+   We've never drunk (really) cold water.
+4. ntáanágósiba ŋɔmbɛ ciane, níncísibé cínaré íga?
+   I've never made a habit of tethering my cattle, if I fasten them will they get used to it?
+5. ncé nangíre tíngóciera mabókó mása ntáanágócia‿arɔró rínde
+   I refused to go to him empty handed, I've never been there on any other occasion.
+6. atáanákórema mobasó mororo bun(a) oyo, tágóóca kogiramurá?
+   He's not been used to cultivating in the hot sun, will he not sweat?
+
+A475   vp-ka-ná-ko-R-a
+Context: Multi-verbal sentences only, commonly as V1.
+Connotation: Past time reference, and associated with an action going on at a particular point in the past.
+Concomitant tenses: A2/2, P2/2, A5, Px9, D2/2, DS2/2.
+Examples:—
+1. nkanágosiba cíɔmbɛ, ékɛr(ɔ) atáraaca
+   I went on tying up the cattle prior to his arrival.
+2. ékɛr(ɔ) âgɛndétɛ, ay(é) ókanágosoomá?
+   When he left, were you reading?
+3. nkanágɔsɛka, ékɛrɔ nâígwéte boígɔ
+   I was laughing when I heard this.
+4. akanákoiyek(a) ényama, ékɛrɔ batáraaca
+   She was cooking meat prior to their arrival.
+5. akanákobuuc(a) óbwoyo korwa bweri, akóíra kóúúmora mogondo
+   He took the cattle-dung from the byre, and took it to put on the fields.
+6. nkanákorema ngóikaransa, ékiágɛra tináaígwēte nguru
+   I was cultivating and sitting down because I hadn't any strength.
+
+A575   vṕ-kó-ná-ko-R-a       Negative: P1/Ai4. See two-word tenses.
+Context: Uni-verbal and multi-verbal sentences. Commonly occurring as V1 and preceded by the word 'ígɔ'.
+Connotation: No specific time reference, but rather continuity over a period up to and including the time of speaking.
+Attendant tenses: Px9, C2/1, Qx2/1.
+Examples:—
+1. íg(ɔ) ákónákɔrɔɔt(a) óbɔri, gosé bwarábire
+   He goes checking whether the millet has ripened.
+2. íg(ɔ) ákónágosiomeri(a) égesíéri, árɔré gose ngésiékíre
+   He keeps going to see whether the door is closed.
+3. ígɔ nkónákorangeria ko, (i)nyɔɔra‿atáraaca
+   I keep on calling, but I find he's not yet come.
+See also Qx2/1.
+
+P575/1   ti-vṕ-kó-ná-ko-R-a   See Note on P75 regarding vp-.
+Context: Multi-verbal sentences only.
+Connotation: Future time reference, but not to any particular point in the future (cf. P575/2). Implication of continuity.
+Concomitant tenses: Px2/1, Px9, B9, C2/1.
+Examples:—
+1. ómonto‿oyió taákónágokama ɛré bwéka botámbébotámbe
+   That fellow won't go on milking by himself every day.
+2. tínkónágosíméka cíbando rirɔriɔ, motáraaca
+   I'll not be planting maize in any way, prior to your arrival.
+3. titóokónagosiba címbori eciiga, citáaígótia
+   We'll not continue to tether these goats as they not satiated.
+4. ígɔ tóráásabe boono, titóokónágokira
+   So we'll ask now, we won't go on keeping silent.
+5. tínkónágokobóória boono, ayé otááŋīráneria buya
+   I shan't go on asking you now, you haven't answered me properly.
+6. tibáakónákomorangeria atáábaítábeire rindé gese báákámorangerétie
+   They'll not continue to call him, as he's not answered them since they've been calling him.
+7. tibáakónágosangererekana — ényomba yasarékire
+   They will not continue to meet together, the house has been destroyed.
+
+P575/2   ti-vṕ-kó-na-ko-R-a   See P75 for length of vp-.
+Context: Multi-verbal sentences only.
+Connotation: Future time reference, but appears to be specific in reference to the following 24 hours.
+Concomitant tenses: Sx1, P1/Ai1.
+Examples:—
+1. onyé tímorí góóca bwango, mɔntɛɛbia, tínkónakorúg(a) óbokíma bónágókenda
+   If you're not coming quickly tell me and I'll not be cooking the food and it gets cold.
+2. batáréétɛti mbori rirɔrió titóokonakobatɛɛbia naénde ŋa gocie mɔ́rɛ́ɛ́tɛ
+   If they don't bring the goat at all we'll not be telling them again to go and bring (it).
+
+A975   vṕ-raa-ná-kó-R-a
+Context: Multi-verbal sentences only, recorded only as V2.
+Connotation: Future time reference, but indefinite. Implication both of continuity and of intention to do something else consequent to the action in question.
+Concomitant tenses: Qx2/1, CRx24/2, B1.
+Examples:—
+1. gacié mókónāmē kórwá mááte, incé ndaanákórúga
+   You go and start hoeing from the bottom, and I'll do some cooking.
+2. ntáágasíire, néreego (i)ncé ndaanákóira
+   I've not done any grinding, it is to the mill I'm going to send it.
+3. otáákegāmbe, tíga keraanágókira igɔ
+   Will you not raise it (i.e. the issue) but (perhaps) wait until it quietens down a bit.
+
+A975a   n-vṕ-raa-ná-kó-R-a
+Context: Multi-verbal sentences only. Recorded only as V1, and is perhaps complementary in distribution to A975.
+Connotation: As for A975.
+Concomitant tenses: Px9.
+Examples:—
+1. ntóraanákórema‿ake, atáraaca — tógɛndɛ
+   We'll go on cultivating a bit before he comes, and then we'll go.
+2. níndaanágótinatina gocio, getáraaɛ́ra
+   I'll be going on trips there before the case is finished.
+3. náraanákórema boono, éskuru etáraaígórwa
+   He'll go on cultivating now before school opens.
+4. ntóraanákóminyoka boono címambia, naénde gooci(a) éskuru
+   We'll go running off now in the mornings, and then go to school.
+
+Px2575   vp-tá-á-kó-ná-ko-R-a
+Context: Multi-verbal sentences only, occurring as V1.
+Connotation: No time reference, but an implication of obligation.
+Concomitant tenses: Px9.
+Examples:—
+1. ntáákónágosib(a) ómosont(e) otáraaca — nkáme
+   I must get on tethering, before darkness comes — and do the milking.
+2. batáákónágosengererekana ékiina getáraacaaka
+   They must meet together before the case opens.
+3. atáákónákogít(a) órobago ake, batáraamorangeria
+   He must get on with the fence a bit before they call him.
+
+Px25975   vp-tá-á-kó-raa-ná-kó-R-a
+Context: Multi-verbal sentences only: recorded both as V1 and V2.
+Connotation: Time reference future, but indefinite. Also associated with some element of continuity and of doing something subsequent to the action in question.
+Concomitant tenses: A575, Qx2/2.
+Examples:—
+1. batáákóraanágósangererekana totáámanye kɔgɛnda‿arɔrɔ
+   They should meet together first perhaps and then we can go on there
+2. gónkónágocic(a) ébiasi otáákóraanákónyateria cínk(o) éció?
+   If I go on peeling potatoes will you go on cutting up this wood for me?
+
+
+--- 6.2. B Tenses ---
+All positive tenses are characterized by Imposed Patterns.
+
+B1   vṕ-Z-R̄-e (Ia -Ŕ-, Ic -CV́CVC-, IIc -CV́CVC-)
+This tense occurs in a large number of different contexts, each of which will be treated separately. Commonly referred to as the 'Subjunctive', it is clear that in some cases it may certainly be translated by a form which in turn would be translated by a Latin subjunctive. On the other hand it is equally clear that the range of usage for the two languages is not co-terminous, nor, in terms of its shape, can it be treated in Gusii as anything other than a one-word tense. No labels will here be adopted.
+
+(i) Negative: P1   ti-vṕ-Z-R-a
+Note that in the 1st, 2nd and 3rd Persons of Class 2 the vowel of vp- is long (P1), as also in the 2nd and 3rd Persons of Class 1.
+Context: Uni-verbal and multi-verbal sentences, occurring as V1 and V2.
+Connotation: There is an implication of obligation in all contexts.
+Attendant tenses: Only a small number of tenses may occur in the position V2, if V1 — being B1 — is not followed by a second SsN controlling new agreements. These tenses are Px9 and B1 or P1. A wider range of tenses occurs in the V1 position where B1 occurs as V2.
+Examples:—
+1. Bósiborí árɔ̄rɛ ómwáná táágwa korwa bórere
+   B. is to see that the child does not fall out of bed.
+2. ómoriisia‿átémɛ cíɔmbɛ cígéndɛ
+   The herdsboy is to hit the cattle that they go.
+3. ábanto tibáárema‿ááŋe na róóce
+   People are not to cultivate near the river.
+4. taatá agantɛɛbia ŋá tingósória réérɔ
+   Father told me I was not to play today.
+
+(ii) Negative: P1   Occurs rarely !
+Context: Uni-verbal and multi-verbal sentences, occurring commonly as V1, or V2 where V1 is also tense B1. The vp- is commonly in Classes 1/2.
+Connotation: No time reference, but rather one of decision to do something at the time of utterance.
+Attendant tenses: B1.
+Examples:—
+1. tógēndɛ tóéésibie róóce
+   Let us go and bathe in the river.
+2. tíga tósōōme, tómāny(e) ámaŋána
+   Let us read that we may know 'things', i.e. become knowledgeable.
+
+(iii) Negative: P1/Ai1. See two-word tenses.
+Contexts: Multi-verbal sentences only; occurring as V2.
+Connotation: No time reference, but with 'purposive' implication.
+Concomitant tenses: A wide range of tenses may occur in the position V1: A2/2, A2a/2, A4, B1, B1a, B9, D2/2.
+Examples:—
+1. rɛɛró nkógɛndá nde ngōre‿émbori
+   Today I'm going to buy a goat.
+2. igɔró ńnagenda ngōre‿émbori
+   Yesterday I went to buy a goat.
+3. ánkio níngéndɛ ngōre‿émbori
+   Tomorrow I shall go and buy a goat.
+4. mméntɛra cínyéni, nkóórer(e) óbokíma
+   Increase for me vegetables so that I may finish the 'porridge'.
+5. íg(ɔ) áátáma, tábaisa kóbwatwa
+   He ran off so as not to be caught.
+
+(iv) Negative: P1.
+Context: Multi-verbal sentences only; occurring as V2 after specific radicals. P1 occurs particularly commonly here.
+Connotation: This can probably be described only in terms of 'intention'. It is perhaps significant that the tense occurs following such radicals as connote 'forbidding, preventing, wanting'.
+Concomitant tenses: Almost all tenses may occur in V1 position, with a few exceptions such as Px25, C1, C2/3.
+Examples:—
+1. tokamotáng(a) ómoíbi táásóa nyomba
+   We prevented the thief from entering the house.
+2. nóganetie ónyɔ̄ɔ̄rɛ cíndɛgɛ bun(a) eciigá cíane nayé?
+   Do you too want to get bells like these of mine?
+3. nkamokáánia táágɛnd(a) écííro
+   I forbade him to go to the market.
+4. ógacɔgu akab(a) okónágocisab(a) ógasusu ácié gɔtɛnga nacio (Folk tale)
+   The elephant was begging the hare to go and dance with them.
+5. bagatɛɛma tibáákór(a) émeremo
+   They tried not to work.
+
+(v) Negative: P1.
+Context: Uni-verbal or multi-verbal sentences following specific radicals.
+Connotation: Various.
+Concomitant tenses: In V1 position preceding 'goika + B1', commonly B1a. In V2 position following 'goika + B1', commonly B1. A wider range of tenses occurs following or preceding 'mbuya + B1'.
+Examples:—
+1. goika‿ácé bóóno
+   He must come now.
+2. nágēndɛ éskuru goika‿ákīīne
+   He will go to school until he grows up.
+3. mbuya‿áímoke bóóno
+   It is better that he leave now.
+
+(vi) Context: Multi-verbal sentences only; occurring as V2 or subsequently.
+Connotation: Seems always to be associated with the second (and subsequent) action(s) in a sequence, but not necessarily a sequence in time, for which see A4.
+Concomitant tenses: In V1 position, B9 commonly, but not necessarily, occurs. Also A4, P5/1, R1.
+Examples:—
+1. báátígar(a) ómonyuomi amo nábanto bánde, baké banga banénɛ —bágānye‿ényangi éítwe
+   Those who remained were the bridegroom and some other people, young and old, waiting for the marriage to be celebrated (Lit: killed).
+2. bagaik(a) égetíí bárɔ̄rɛ iŋ(ɔ) óráác(e) ábue ókominyoka, áīīr(e) ómoíséke....
+   They arrived at the clearing to see who would come and win the race and take the girl....
+3. ómoriákari táákɔgɛnda bweka átīg(e) ómoísia ncera
+   The bride did not go alone and leave the boy in the path.
+4. binyinganyingi binge tibiganyiri arɔrɔ babaise gosari(a) enyangi; agwɔ boono monto onde bwensi oraatinde asarie emerooberio yenyangi rirɔrio goika atangwe. (See (v) above.) (No tone-pattern available for this stretch.)
+   Many goings and comings are not welcome there, lest they ruin the marriage ceremony; at this time if anyone is drunk he upsets the marriage arrangements, so he must be stopped.
+5. Omoiseke igɔ arenge koba as(e) ɔkɔbɔkɔ kwabo goika baroisi(e) amaŋan(a) onsi akɔɛra; bagɛndɛ nomoiseke soobo, batigere soobo‿omoiseke ciɔmbɛ na barabwo baakɔɔcɛrɛra ciɔmbɛ. (No tone-pattern available for this stretch.)
+   The girl was in their hands until they had seen to it that all the matters were finished; they went with the girl to her home; waited for the cattle from the girl's father, and accompanied them back.
+See also Tense B1a, Example 4.
+
+(vii) There remain to be included here a number of examples which do not conveniently fit elsewhere. They seem to be too few to permit any useful generalization:—
+1. gos(e) áb(e) ógosooта
+   Perhaps he's reading.
+2. noyi(a) óbotok(e) ámagóro kogiica, cíndɛgɛ cíbe. (See also A1a.) From a folk tale.
+   Even though the ends of (your) legs are burning, still the bells will materialize. The elephant has risked burning his legs in the belief that he will thus obtain the little bells which the hare has in his possession. This is the hare's taunt!
+3. éŋgɔrɔ étɔ́kɔ̃ɔ̃nyɛ tónywe mááce máya!
+   May God help us to drink clean water! A common invocation at ceremonies for prosperity.
+Examples of this latter pattern, either in uni-verbal or multi-verbal sentences, with B1 occurring as V1 and V2, are not uncommon.
+
+B1a   n(a)-vṕ-Z-R̄-e(IP)   Negative: P5/1   ti-vṕ-kó-R-a. Note: In Class 1, 3rd Person ti-vp realized as táákó-.
+Context: Uni-verbal and multi-verbal sentences, but not occurring in the latter if B1a occurs in position V1.
+Connotation: Future time reference; valid for any future time.
+Attendant tenses: A5, A1, B1, B9.
+Examples:—
+1. níngēndé réérɔ
+   I will go today.
+   nágēnd(ɛ) ánkio
+   He will go tomorrow.
+   níngēnd(ɛ) ómwák(a) ógóóca
+   I shall go next year.
+2. ɔtéébiré nágēnd(ɛ) ánkio
+   He has said he would go tomorrow.
+3. ɔtéébiré táákógenda‿ánkio
+   He has said he would not go tomorrow.
+4. nátɛɛba ŋa, nágēndē Gísúúmu ágōre‿ényange, áírane ka
+   He said he would go to Kisumu and buy a bicycle and return home.
+5. Nyángwɛsɔ, áise kɔrɔra Mose, námoááke
+   N. if he sees M. will hit him.
+6. nindem(a) ómwák(a) oyó tínkógɛsa
+   Although I'm cultivating this year I'll not harvest.
+7. éŋɔmbɛ eyé tékóbīara naénde, áse éngɛɛcɔ yóbogótu
+   This cow will not bear again because of old age.
+8. nínkórɛ kóndááike búya
+   I'll do it if I arrive safely.
+9. kóndáágwēne, níndēme
+   When I get better I'll hoe, i.e. intend to, will be glad to.
+   Contrast with with B9:
+   kóndáágwēne, nabo ndááreme
+   When I get better I may cultivate.
+10. ékɛr(ɔ) ábanto bákógɛnda koruba, mbányɔ̄ɔ̄rɛ cínswi
+   When the people go fishing they will get fish. Here a particular instance is implied (cf. A5 (i), Ex. 3).
+11. andé náb(e) orááire, andé nábe táiyo
+   Maybe he will be sleeping, maybe he will not be there.
+12. tímókória kómwánga gocia konyaiya
+   You (pl.) will not eat because (since) you refuse to go and dig up (the potatoes).
+See also Tense Px275/2, Example 4.
+
+B9   vṕ-ráá-R̄-e(IP)
+This tense occurs in two distinct contexts:
+(i) Negative: P5/1 q.v.
+Context: Multi-verbal sentences only. Where occurring as V1 it is commonly preceded by 'ígɔ', but not when occurring as V2.
+Connotation: Future time reference. In some contexts there is an implication of uncertainty.
+Concomitant tenses: A5, B1, Sx2/1.
+Examples:—
+1. ígɔ tóráásōmb(e) ámááce goika áērɛ
+   We'll move the water until it is finished. Contrast with B1a in position V1, which introduces the subject as a new one. Here the matter has already been raised.
+2. kóndáágwēne nabo ndáárēme
+   When I get better I may cultivate.
+3. ígɔ ndáámínyoke, tibónyírera
+   I'll certainly run, lest darkness falls on me.
+4. ígɔ ndáásɔ̄ɛ nyomba, gókóndangeria
+   I'll come into the house when you call me.
+5. íg(ɔ) óráágēndɛ, ómónyɔ̄ɔ̄ré táraabóóka
+   And you'll go and find him not yet awake.
+6. íg(ɔ) éráákoore‿ébara yonsí ér(e) árɔrɔ
+   It (the cow) will finish all the salt which is there.
+7. tárí bosa ndáágɛndɛ, ótááŋeetié cíbeesa
+   It's useless my going, if he doesn't give me any pay.
+Note: the occurrence of Sx2/1 rather than Sx1 is unusual.
+
+(ii) Negative: Qx2/3 q.v.
+Two features of the verbal prefix should be noted: the tone of the prefix is high, except in Classes 1, 4 and 9. Where the 'object' of the verbal precedes it, the tone of the prefix is high for all Classes. Secondly, as noted in 2.44, the prefix may be associated with an initial vowel.
+Context: Multi-verbal sentences only, or those stabilized by 'n-'.
+Connotation: Time reference future, as for B1a, and may be translated by a relative.
+Concomitant tenses: A4, B1, B1a, D1a.
+Substitution Class I.
+Examples:—
+1. ómonto‿oráákōrɛ émeremo nómotámbe
+   The man who will do the work is tall.
+2. ómonto‿otáákɔrɛ émeremo nómotámbe
+   The man who will not do the work is tall.
+3. nóbonyánsi óbo érááriisie. In quick speech this is realized as nóbonyánsi óbwérááriisie
+   It is grass which it will feed on. (Reference to a goat.)
+4. agatɛɛb(a) ómomura‿áráányuome nori(a) ómuya....
+   She said the man she would marry would be handsome....
+5. óbwate‿ékerógó kénde áráákemo(e) ómwán(a) óye....
+   He has another stool which he will give his child....
+6. ékɛrɔ ndáákoore‿émeremo, níndōōsie‿émegwe
+   When I finish working I'll make arrows.
+7. ntéébie buna ndáákōre!
+   Tell me how I shall do (it)!
+8. bóóno ntórígetié kóbatɛɛma tórɔr(ɛ) óyóráátɔkɔ́ɔ́nyɛ
+   Now we want to test them and see who will help us.
+9. akabwatw(a) óbororo ékiágɛra bóóno‿onde tárí óráámorúgere
+   He was seized with bitterness because now there was no one else to cook for him.
+
+qx2/1   vp-tá-á-R̄-ē (IP). Also occurring rarely with pre-initial n-.
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Future time reference, with implication of emphasis.
+Attendant tenses: A5, A575, C2/1.
+Examples:—
+1. nari(o) ógasusu atáányɔ̄ɔ̄r(ɛ) ámáác(e) ákónywa
+   Then the hare will certainly not get drinking water.
+2. twagítir(e) órobágo nari(o) cíɔmbɛ citáásɔ̄ɔ̄ ime
+   We have built a fence so that the cows won't come inside.
+3. nario‿ómokúngu atáárūge‿ékiágɛr(a) okóórir(e) óbosie
+   So the woman won't cook because she's finished the flour.
+4. inkí ókónágwécándera otáárūge?
+   What are you worrying yourself about, you won't have to cook?
+5. inkí ókónákwérériiseria — notáárēre ékɛr(ɔ) akúúre?
+   What are you weeping for, won't you weep when he's dead?
+6. totáásīmēkē marabwóni ébirongó bítíge
+   We won't plant potatoes (in the belief that) the porcupines will leave them alone (cf. Px2/1).
+7. inkí ókónágotoŋentereria búná ntótáárūge?
+   What are you chattering to us about, as if we were not going to cook?
+8. mbábwáte‿ébintó cír(u)ocano ntáányāārē bónó kóbagambia
+   They have things of many kinds (and hence much influence!), I shan't be able to make a case against them.
+
+qx2/2   vṕ-tá-a-Ŕ-ē (IP). Also occurring rarely with pre-initial n-.
+Context: Multi-verbal contexts only, occurring both as V1 and V2.
+Connotation: This is a positive tense with a future time reference. As with the preceding tense it is emphatic.
+Concomitant tenses: A575, B1.
+Examples:—
+1. noci(a) ógēndɛ ntótáarúgē!
+   Even if you go we'll still have to cook!
+2. inkí ókónágwécándera — tótáarúgē!
+   What are you worrying yourself about, we shall have to cook!
+3. inkí ókónágwétáiteria — ótáarémē!
+   What are you boasting about, you're going to cultivate!
+4. átáagénd(ɛ) ámānye koirána
+   He will certainly go, so that he can get back.
+5. ntáarúgē ímānye kɔgɛnda koréma
+   I'll certainly cook so that I may go and cultivate.
+
+Qx2/3   vp-tá-á-R̀-e (IP)
+Note: the tone of the vp- is high for all Classes except 1, 4 and 9, and even for these Classes is high if the 'object' of the verbal precedes it.
+Context: Multi-verbal sentences or sentences stabilized by n-.
+Connotation: Future time reference (vide B9), and may be translated by a relative.
+Concomitant tenses: B1a, P5/1, C2/1.
+Substitution Class I.
+Examples:—
+1. ómwán(a) otáákɔrɛ buna‿átɛɛbetígwe, nómobe
+   A child which will not do as it is told is bad.
+2. émeremo tótáákɔrɛ, némekóŋu
+   The work which we won't do is difficult.
+3. ómonto‿otáákɔrɛ émeremo, nómotámbe
+   The man who will not work is tall.
+4. ábáána bátááigwe igɔ báráá.áákwe
+   Children who will not listen will be punished.
+5. ékerógó gétáábaeroke, négɛkóŋu
+   The stool which will not split is hard.
+
+naB1   nâ-vṕ-Z-R̀-e (IP)     Negative: gaaP5   gáá-ti-vṕ-kó-R̀-a
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Time reference indefinite future, with an 'optative' implication.
+Concomitant tenses: C2/1 only recorded.
+Examples:—
+1. nâńtige‿émerem(o) eye, ékɛró narósire
+   One day I'll leave this job when I get fed up.
+2. nâńgɛndɛ kɔmɛny(a) énse sngɛni
+   I would love to go and live in a foreign country
+
+
+--- 6.3. C Tenses ---
+
+C1/1   vp-Z-R-íre            Negative: CR1   ti-vṕ-R-iri
+As noted in 2.44 the tone of vp- is high except in Classes 1, 4 and 9.
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: No time reference, but rather to a 'state' in existence at the time of utterance. In contrast with verbals characterized by an -w- extension the verbal here is not followed by a SsN which may control the verbal prefix in a passive transformation. The tense may be translated by a relative.
+Concomitant tenses: A2/2, D2/2, A5, B9.
+Substitution Class I.
+Examples:—
+1. éndááger(a) erúgíre buya....(nengíya)
+   Food which is well cooked....(is good).
+   Cf. éndáágera (n)érúgegéte buya
+   The food is well cooked.
+2. óbokímá bórúgíre buya....(ígɔ bórááreegwe bwango)
+   Food which is well-cooked....(will be eaten quickly).
+3. ébité bínacíre ébiéŋɛ....
+   Twigs which are cut small....
+4. oyó nómonto‿óyotáírókiri
+   He is a man who is not feared.
+5. cíɔmbɛ ticíírókiri....ciasírire
+   The cattle which are not feared....have got lost.
+6. ómonto‿óyosibíre ntaatá
+   The man who is tied up is my father.
+   Cf. ómonto‿oyó_osíbire
+   The man who has tied up....(vide C2/1).
+7. ómonto‿ociikír(e) ágēndɛ....
+   The man who is ordered to go....
+   Cf. ómonto‿oncííkire ngēndɛ
+   The man has ordered me to go.
+8. óbɔri óbo bóbusuíre buya....(ígɔ bóráárabe buya)
+   Millet which is well planted....(will ripen quickly).
+   Cf. óbɔri obó‿óbobusuíre buya....
+   This millet which is well planted....
+9. émerem(o) eyé íg(ɔ) ékóríre buya....
+   The work which is well done....
+   Cf. émerem(o) eyé yakórirwe búya
+   This work has been well done.
+10. ómonto‿oyó_oírókíre mono....(obaítir(e) ábanto bábére)
+   This man, who is widely feared....has killed two people.
+   Cf. ómonto‿óyoirókire monɔ
+   The man who is very fearful.
+11. ás(e) ómotw(e) oyé abwate énungu éngiy(a) ébaacíre buya
+   On his head he has a fine stick, which is well sharpened.
+12. ....korw(a) émiák(a) eyió ériikíre igoro....
+   ....from those years which are written of above....
+13. ....ókorundarunda áse‿émeté‿ékorekanírie bɔkóŋu némɛgóyɛ
+   ....pushing backwards and forwards where the trees are tightly interlaced with bark-rope.
+
+C1/2   vp̄-Z-R̄-ire           Negative: CR1/2   ti-vṕ-R̀-irí (IP?) (rare!)
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: As C1/1, but is not translated by a relative.
+Attendant tenses: A2/1, A2/2, D2/1, D2/2.
+Examples:—
+1. éndááger(a) eyé mbuy(a) ērūgire
+   This food is well cooked.
+   Cf. C1/1. In sentences of this pattern where the verbal is preceded by a piece with initial n-, its distribution is clearly complementary to C1a.
+2. ....érɔngɔɔrí yáinekwa nécinyongo cinénɛ yába ēīnkīr(e) ámatúk(o) átáto
+   ....the gruel was placed in big pots and was placed there for three days.
+3. ábanto bágócia koígwa, bátɛɛb(a) ékiina tikénaciri buna ámaŋana ámanyéné táraaɛ́ra
+   When the people go and hear, they say the case is not decided, as the words themselves have not finished yet.
+4. noonyá nékɛr(ɔ) ákwété tárokirí mwáná ríétá ríaye
+   Even when he died there was not called a child by his name.
+
+R1   ti-vṕ-R-ire   Only one example of this tense has been recorded!
+Context: Multi-verbal sentence.
+Connotation: As C1/2.
+Concomitant tenses: D2/2, A4.
+Example:—
+1. ékɛrɔ báaciéte gotindokor(a) óboin(a) obwo bwoye, bakanyɔɔra Sákaawa tátíndékire árɔrɔ
+   When they went to uncover his tomb, they found that Sakaawa was not buried there.
+
+C1a   n-vṕ-Z-R-ire (I -írē, II -ire)   Negative: CR1/2
+Context: Appears to be restricted to uni-verbal sentences, and to a rather narrow range of radicals.[1]
+Connotation: As C1/2.
+Examples:—
+1. ómonto‿oyó námanyírē buya
+   This man is well known (by name and appearance).
+2. ábant(o) abá mbáncírē mónɔ
+   These folk are well liked.
+3. tósóa nyomba, ómwána nárááire
+   Don't go into the house, the child is asleep.
+4. ómonto‿oyó náírókírē mónɔ
+   This man is widely feared. Cf. C1/1, Example 10.
+5. ómwán(a) oyó náteneínē gesíéri
+   This child is standing by the door.
+   Contrast with—
+   ómwán(a) oyó ngesíéri ateneíne (C1/1)
+   This child, it is by the door where he's standing.
+6. éndááger(a) eyé nérúgírē buya
+   This food is cooked well. Cf. C1/2.
+
+Footnote:
+1. The radicals most commonly exemplified in this tense are the following:— -anc-/Like, -many-/Get to know, -tenen-/Stand, -raar-/Go to sleep, -irok-/Fear, -rɔr-/See. By analogy with other radicals it seems possible that the eccentric shape '-rooce' can most usefully be considered as an additional C form—since '-rɔrire' also occurs. In Tense C1 there is a 'figurative' connotation, with general time reference, 'Ndooc(e) ómot(e) oyó‿oisire kogwa'/I see the tree is about to fall. In Tense C1a, by contrast, there is a connotation of 'literal' seeing, often with a present time connotation, 'Níndooc(e) ómot(e) oyó'/I see this tree. A negative shape, 'ti-vp-rooci', also occurs.
+
+C2/1   vp-a-Ŕ-ire (Ia -íre, Ic -CV́CVC-, IIc -CV́CVC-)   Negative: P9, Px9, Sx2/1
+This tense occurs in two distinct contexts.
+(i) Negative: P9
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: No time reference but rather to a state of affairs existing at the time of utterance, resultant upon some action undertaken in the past and since completed.
+Attendant tenses: A4, P5/1, B1, B1a.
+Examples:—
+1. ómwán(a) ocíire‿écííro
+   The child has gone to market.
+2. éŋɔmbɛ eyé yabíarire émɔɔri émwámu
+   This cow has given birth to a black calf.
+3. ocíire rooc(e) ábūūc(e) ámááce
+   She has gone to the river to draw water.
+4. akamɔnyɔɔr(a) okúúre
+   He found him dead (lit: he has died).
+5. noonyá mwaréétir(e) ómorwaire, táákógwena
+   Though you brought the sick man he will not recover.
+6. ocíire rooce korénde náírane bwango
+   She has gone to the river but will return soon.
+7. ómwán(a) oné nágēndɛ éskuru goik(a) obéir(e) ómonto ómɔnénɛ
+   My child will go to school until he's a grown man.
+
+(ii) Negative: Px9, Sx2/1
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: As C2/1, but may be translated by a relative.
+Concomitant tenses: P5/1, B1a, B1, C2/1, D2/1.
+Substitution Class I.
+Examples:—
+1. ómonto‿ocíre rɛɛrɔ nómɔgɛni one
+   The man who has come today is my guest.
+2. órobágo‿órwɔ órwagúúre igɔ rwágítetwe noyó minto ómɔnénɛ
+   The fence which has fallen down was put up by my elder brother.
+
+C2/2   vṕ-á-R-ire (IIa -íre)   Negative: CRx2/1   vp-tá-á-R-íre
+Two points relating to the tone-patterns of these tenses should be noted:—
+(a) C2/2. Low-toned radicals only. In Classes 1, 4 and 9 the radical is low-toned, and in all other Classes the radical has a high tone which doubles on to the following tone of the '-ire' where this is low, and is realized as a mid-tone, thus:—
+ómogak(a) ógéécīre (nómokóro)/émegaka yágɛɛcire (némekóro)
+The 'omogaka' tree(s) which has/have been cut down (is/are old)
+émbori yásibire (yatámire)/címbori cíasíbíre (ciatámire)
+The goat(s) which was (were) tethered (has/have run off).
+(b) CRx2/1. The tone of the verbal prefix in Classes 1, 4 and 9 only, is low-toned. This occurs for all radicals.
+Context: Multi-verbal sentences only or those stabilized by n-.
+Connotation: Past time reference with a 'stative' implication as for C1/1. The tense may be translated by a relative in English.
+Concomitant tenses: A2/1, C2/1, D2/1.
+Substitution Class I.
+Examples:—
+1. ámaŋana‿áámanyíre nábagááka, bóóno eebírwe
+   Words which were known by the leaders are now forgotten.
+2. ábáána‿ábange báácííkire báténene, bákire, bóóno baamínyokire
+   Many children who were told to stand still have now run off.
+3. cíɔmbɛ cítáásibire ciatámire
+   The cattle which were not tethered have run off.
+4. ékɛr(ɔ) ómont(o) abétirwe ríítumo gos(e) énsara gos(e) ómogwe bíáákir(e) óbosongo‿obwɔ, táárenge kogwena
+   When a man has been wounded with a spear or an arrow tipped with iron or wood, and these have been poisoned, then he doesn't get better.
+
+C2/3   vṕ-â-R-íre (IP)       Negative: CRx2/2   vp-tá-a-Ŕ-íre (IP) (Ic -CV́CVC-, IIc -CV́CVC-)
+Note: Tense C2a/3, with a non-relative connotation, has been noted very rarely. It should also be noted that in CRx2/2 the verbal prefix is low-toned in Classes 1, 4 and 9 only. This has not been observed for C2/3.
+Context: Multi-verbal sentences only or sentences stabilized by n-. Occurs both as V1 and V2.
+Connotation: Less recent past time reference, again with 'stative' implication. The tense may be translated by a relative in English.
+Concomitant tenses: P5/1, P9, B1, P1, C2/1, D1.
+Substitution Class I.
+Substitution tense: For all the examples below, D2/2 may be substituted, where the radical is characterized by an -ek- extension.
+Examples:—
+1. ábant(o) abá igɔ báâgɛɛcaíne, bóóno baakúúre
+   Those people who hated one another have now died.
+   Contrast with—
+   ábant(o) abá mbáâgɛɛcaíne
+   Those people hated one another
+2. ámaŋana áâmanyíre nábagááka, bóóno eebírwe
+   Words which were known by the old men have now been forgotten.
+3. cíŋgɛɛcɔ cínyinge ciábanyéne cíeebíre káre, bóóno ticíkónyaara koenyóra
+   Many local customs which were forgotten long ago will not be able to be remembered.
+4. ábáána‿ábange báâciikíre báténene, bákire bóóno baamínyokire
+   Many children who were told to stand still and be quiet, have now run away.
+5. cíbeesa cindé cíâriríre singo, ticííraniri
+   Some of the money which was borrowed has not been returned.
+6. énseemo yényomba yâtaagoíre yaágáácirwe naénde
+   Part of the house which was destroyed has been rebuilt.
+7. cíɔmbɛ cítáasibíre ciatámire
+   The cattle that were not tied have run off.
+8. éndááger(a) etáarūgíre yagúndire
+   The food that was not cooked went bad.
+
+Rx2/1   vp-tá-á-Ŕ-íre (IP)
+This tense presents something of a problem: there appear to be two distinct connotations, the second of which, though rare, is undoubtedly comparable to CRx2/1, though it may not be translated by a relative.
+Context: Multi-verbal sentences only.
+Connotation: (i) As for C2/1, though negative.
+             (ii) As for CRx2/1, but not to be translated by a relative.
+Concomitant tenses: (i) A5, Px25, A59.
+                    (ii) A2/2, D2/2.
+Examples:—
+(i) 1. inkí ágókóra nyomba, atáárúgíre?
+       What is she doing in the house, and hasn't cooked?
+    2. ékiágɛra ntáásíbír(e) éŋɔmbɛ, nkoraárūga nááre
+       Because I hadn't tied up the cow I was cooking first.
+    3. atáárúgíre totáákógɛnda?
+       As she hasn't cooked, perhaps we should be going
+    4. atáákwánire atáákógenda?
+       He hasn't spoken why doesn't he go?
+    5. atááréétíre címbori, inkí rénde akáré gókɔra?
+       As he hasn't brought the goats, what then is he doing?
+(ii) 1. atáácííkíre inkí áca gɔkɔra?
+       If he was not asked, what did he come for?
+    2. éndááger(a) etáárúgíre inkí mwáriéte?
+       As food was not cooked what did you eat?
+
+Rx2/2   vp-tá-a-R̀-íre (IP)
+Context: Multi-verbal sentences only.
+Connotation: As CRx2/2 and Rx2/1 (ii), but not associated with a relative in translation.
+Concomitant tenses: Only D2/2 recorded.
+Example:—
+1. éndáagera etáarugíre inkí mwâriéte?
+   As food wasn't cooked what did you eat?
+
+C24/1   vp-á-ká-R-íre (C1.1, 1st Pers. náá-)   Negative: CR24/1   ti-vṕ-á-ka-R-ire
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Time reference recent past, implication of continuity.
+Attendant tenses: A2a/1, Px9, D2a/1.
+Examples:—
+1. éndááger(a) eyé néérɔ náákárúgíre
+   This is the food I've been cooking.
+2. oyó nóórɔ ómogondo náákáremíre
+   This is the 'farm' I've been cultivating.
+3. eyé néér(ɔ) émɔɔri yágásíríre
+   This is the calf that got lost.
+4. émɔɔri eyé néérɔ yágásíríre?
+   Is this the calf that was lost?
+5. oyó nóórɔ ómogondo náákáremíre ntarééit(a) ókogoro
+   This is the 'farm' I had been cultivating before I hurt my leg.
+6. náányóroki(a) ómogondo ákáremíre
+   He showed me the 'farm' he had been cultivating
+7. tinákarúgire rende, ímānye kɔgɛnda mogondo
+   I've not been working — you see — and then aiming to go to the 'farm'.
+
+C24/2   vp-a-ka-R-íre (C1.1, 1st Pers. náa-)   Negative: CR24/2   ti-vṕ-áa-R-ire
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Time reference less recent past, implication of continuity.
+Attendant tenses: Px9, B1.
+Examples:—
+1. oyó nóórɔ ómogondo áakaremíre
+   This is the 'farm' he's been cultivating (over a long period).
+2. eyé néér(ɔ) émɔɔri yagasíríre
+   This is the calf that was lost. (Here there is also the implication that it is always being lost.)
+3. tináakárúgire mambiá nce, ímānye kɔgɛnda mogondo
+   It has not been my custom to cook in the morning and then go off to the 'farm'.
+4. tináakáɔɔnire‿ébituuma biane kérɔ kiabóóno
+   I've never sold my maize at a time like this (with low prices prevailing).
+
+Rx24/1   vp-tá-ká-R-ire
+Context: Multi-verbal sentences only.
+Connotation: Recent past time reference, with implication of continuity.
+Concomitant tenses: A5, C2, A9, Ai1/A1.
+Examples:—
+1. ntágásibire‿émborí yane — inkí rénde náare gɔkɔ́ra — bóóno yamánoire
+   I was not in the habit of tying my goat and then, what was I doing, now it has moved off.
+2. ntágásiire korwa mambia, bóóno bwakíire — nkógɛnda nde mógondo
+   Since this morning I've not ground, now time has passed — I'm off to the fields.
+3. ntákángire korema korwa mambia, mbóóno ngóóca kwanga tíndema konaísire gotábókia?
+   Since morning I've not refused to cultivate, now am I going to refuse when I've almost reached the end?
+4. ntákáɔɔnire‿ébituumá bíane korwa mambia, bóóno tiga ndaabíírania gocia ka
+   I've not sold any of my maize since the morning, now I'll take it back home.
+
+Rx24/2   vp-tá-a-ka-R-ire
+Context: Multi-verbal sentences only.
+Connotation: Time reference less recent, with implication of continuity.
+Concomitant tenses: A5, A975, B1a.
+Examples:—
+1. ntáagasibire mborí cíane, nacínār(e) ógosibwa bɔɔrí?
+   I was not in the habit of tying my goats, will they really get used to being tied?
+2. ntáagasiire, néreego ncé ndaanákóíra
+   I didn't do any grinding, it is to the mill I'll continue to take (it).
+Note: the positive version of this is as follows:—
+   ígɔ naagasíire, ncé tínkóíra‿ase‿éreego!
+   I've been grinding, I shan't send it to the mill!
+   It is not clear why CR24/2 cannot occur in the negative version!
+3. ntáakaangire korema koru (korwa) kare, mbóóno ngóóca kwangá tíndema?
+   I've never refused to cultivate since long ago, is it now that I'm coming to refuse to cultivate?
+
+C29   vp-a-ráá-R̄-īre
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Time reference recent past, with the implication of doing something subsequent to the action already carried out. See other '9' tenses.
+Attendant tenses: Px2/2, P1/Ai1.
+Examples:—
+1. ndóócé mwatáárire! éé, twaráátāārīre
+   I see you've been walking! Yes, we've been for a stroll.
+2. twaráásibīrie cíanga cirocio, íírema totáarema
+   We've finished washing the clothes, but the cultivation we haven't done yet.
+3. naráásīkir(e) ábáána‿abá‿ámatúk(o) ámange ko, tibárí kónyígwéra
+   I've been respecting these children for many days but they don't listen to me.
+4. naráárɔrir(e) ábanto — bátáí báke!
+   I've seen people — not a few! A statement of worldliness!
+
+
+--- 6.4. D Tenses ---
+
+D1   vṕ-Z-R-ete (IIa -Ŕ-)
+This tense occurs in two main contexts:—
+(i) Here it should be noted that the tone of vp- in Classes 1, 4 and 9 is low, with final -éte. In all other Classes vṕ- is high, and followed by final -eté.
+Context: Multi-verbal sentences, and those stabilized by n-.
+Connotation: General time reference; may be translated by a relative.
+Concomitant tenses: A5, P1, P1/Ai1, B1, Sx1.
+Substitution Class I.
+Examples:—
+1. ómonto‿osíbéte‿étayi buya, íg(ɔ) akórɔrɛkana buya
+   The man who ties his tie well looks smart.
+2. ábáána básoomete, nábaké kobua ábatásoometi
+   The children who read are fewer than those who do not (i.e. go to school).
+3. ábáána báganetié gósooma, nábange kobua cískuru
+   The children who want to read are more numerous than the schools.
+4. ényomb(a) eyio, nómwán(a) oyé ésinyéte
+   This house, it is (towards) his son (which) it faces.
+5. ŋaí óményétɛ? naó ményét(ɛ) aiga
+   Where do you live? I live here (lit: it is here that I live here).
+6. intwé tómɛnyɛt(ɛ) aiga nábaGusii
+   We who live here are Gusii.
+   This is barely acceptable, the common version being:—
+   intwé ábatóményɛtɛ....
+7. ékɛrɔ tósíbeté címbori, ticírí kória ndáágera‿ánde
+   When we fasten up the goats they don't eat food elsewhere.
+8. ékɛrɔ ncaagét(e) órɔgɛndɔ, tíndí gotenena‿ánde
+   When I go on a journey I don't stop anywhere.
+
+(ii) Here the vp- appears to be high for all Classes, with final -éte.
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: General time reference; not translated by a relative.
+Attendant tenses: A5, P1/Ai1.
+Examples:—
+1. ényomb(á)esinyéte bwóye
+   The house faces towards his place.
+2. noonyá ncé mmanyéte koroosi(a) égɛtɔnga
+   Even I know how to weave a basket.
+
+D1a   n-vṕ-Z-R-ete          Negative: S1 q.v.
+This tense is restricted in its occurrence to certain radicals. -anc-/Like, -gani-/Hope for, -ikarans-/Sit down, and -tenen-/Stand, occur most commonly.
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: General time reference.
+Attendant tenses: Only B1 and P1 recorded.
+Examples:—
+1. ábáána mbááncete‿ébint(o) ébiyi‿a
+   Children like new things.
+2. ómonto‿oyó náganeti(e) ányɔ̄ɔ̄rɛ ényange
+   This man hopes to get a bicycle.
+
+S1   ti-vṕ-Z-R-eti
+This tense occurs in two distinct contexts:—
+(i) Context: Uni-verbal and multi-verbal sentences, but restricted to those radicals for which D1a occurs.
+Connotation: General time reference.
+Attendant tenses: A5, D1.
+Examples:—
+1. titómanyeti as(e) áményétɛ
+   We do not know where he lives.
+2. timbáánceti ábanto bágókwán(a) óborimo
+   I do not like people who tell lies.
+
+(ii) Context: Uni-verbal and multi-verbal sentences.
+Connotation: Recent past time reference. See both A2/1 and D2/1.
+Attendant tenses: A2/1, D2/1 (A2a/1, D2a/1).
+Examples:—
+1. rɛɛró égetáábu kiane tigétandogéti
+   Today my book didn't tear (lit: split).
+2. ígɔ áágendétɛ Bósongo kórendé táíraneti
+   So he went to Kisii but did not return.
+3. tínyébeti égetáábú keria ántɛɛbétie
+   I didn't forget the book he asked me about.
+4. igɔró ómwán(a) oriá táréétɛti cínyeni cíyio
+   Yesterday the child did not bring (me) those vegetables.
+5. intwé titógɛndɛti Bósongo, ékiágɛr(a) émbura njátwa
+   We didn't go to Kisii because it rained.
+
+Sx1/1   vp-tá-Z-R-eti
+Although two distinct contexts have been recorded for this tense, the first is by far the commoner:—
+(i) Context: Multi-verbal sentences only.
+Connotation: Future time reference, with conditional implication. See two-word tenses, B1(-is-)/Ai1.
+Concomitant tenses: P1, P5/1, B1, B1a.
+Examples:—
+1. otákórɛti émeremo, nóáākwe
+   If you do not work you will be beaten.
+2. batásímégeti ébituuma, tibákónyɔɔr(a) éndáágera
+   If they do not plant maize they will not get any food.
+3. émbur(a) etátweti, nátōbe néncara
+   If it doesn't rain we shall go hungry.
+4. tínkórúga otááŋeeti óbosie
+   I won't cook unless you give me flour.
+5. ómosáác(a) otámɛrɛti cíndɛru, tárí buya átōre mokáaye botúko kágóóca, tig(a) ókɔŋɔnta gesíéri rióka
+   A man if he hasn't got a beard (lit: grow face-hairs), it is not good that he wake his wife at night when he comes; better that he knock at the door only.
+
+(ii) Context: Multi-verbal sentences only.
+Connotation: General time reference, and may be translated by a relative in English. See D1 (i).
+Concomitant tenses: D1 only recorded.
+Substitution Class I.
+Example:—
+1. ábáána básoomete, nábake kobua ábatásoometi
+   The children who read are fewer than those who do not.
+
+Sx1/2   vp-tá-a-R-eti
+Context: Multi-verbal sentences only.
+Connotation: Past time reference, with conditional implication.
+Concomitant tenses: A2/2, D2/2.
+Examples:—
+1. onyé totáasímégetí ámaɛmba, angá éncará njatoria
+   If we had not planted sorghum, we would have gone hungry (lit: hunger would have eaten us).
+
+D2/1   vṕ-á-R-ete
+This tense occurs in two distinct contexts:—
+(i) Negative: DS2/1   ti-vṕ-á-R-éte
+Context: Multi-verbal sentences only. Commonly preceded by 'ígɔ' where occurring as V1.
+Connotation: Time reference recent past, that is to say any time from about 1 to 12 hours preceding the time of utterance, but there is some looseness, particularly among the younger generations.
+Concomitant tenses: C2/1, A2/1, D2/1.
+Examples:—
+1. Bwána D.C. náruusia‿ábanto rííaaki ígɔrɔ, ékiágɛra bááremete cínyeni aaŋe ná róóce
+   The D.C. fined (some) people yesterday for planting vegetables near the river.
+2. órobágo‿órwɔ orwagúúre ígɔ rwágítetwe noyó mínto ómɔnénɛ
+   The fence that has fallen down was built by my elder brother.
+3. íg(ɔ) áátɛɛbetɛ ŋ(a) ócié gósímék(a) ébiási aariá ríiranya
+   And he said, Go and plant potatoes over there near the river.
+4. ígɔ twarááire ncara, tináárúgete — nyéni ticíáre nááre korugera
+   So we slept on hunger, as I didn't cook, there being no vegetables to cook with (lit: there were no vegetables I was cooking with).
+5. ábaíbi mbáácet(e) áiga, nkwábaígwéte? Yááya tináábaígwéte
+   Thieves came here, did you hear them? No, I didn't (hear them).
+
+(ii) Negative: Sx2/1
+vṕ- in all Classes except Classes 1, 4 and 9 in high-toned radicals. For low-toned radicals see 2.44.
+Context: Multi-verbal sentences only, or sentences stabilized by n-.
+Connotation: As (i), but may be translated by a relative.
+Concomitant tenses: D2/1, Sx2/1, P9, C2/1.
+Substitution Class I.
+Examples:—
+1. ábáána báágánetie gosooma, nábángé bááre kobua cískuru
+   The children who wanted to learn were more numerous than the schools.
+2. ábaíbi báásɔ́ɛtɛ nyomba botúko, ígɔ báaíbete‿ébint(o) ébínge
+   Thieves who entered the house during the night stole many things.
+3. ómɔgɛni ocete rɛɛrɔ, nNáírobí árwéte
+   The stranger who came today came from Nairobi.
+4. ómonto ɔkórɛtɛ émeremo, íg(ɔ) áreng(e) ómotámbe
+   The man who worked was tall.
+5. ígɔ báábeete buna nábanto báásamberetwe‿ébiránya bikabaŋusa gooca‿áiga
+   They were like people who had had magic burned against them. It drew them on here.
+
+D2a/1   n-vṕ-á-R-ete[1]      Negative: DS2/1, Sx2/1 q.v.
+Context: Uni-verbal and multi-verbal sentences, where it tends to occur as V1.
+Connotation: Past time reference as for D2/1.
+Attendant tenses: D2/1, A4, B1.
+Examples:—
+1. náácéte? eé, náácete botúko
+   Did he come? Yes, he came during the night.
+2. náákóórete korééta‿ámááce?
+   Did he finish bringing water?
+3. náásímégete‿ébituumá mógondo
+   He planted maize in the field(s).
+4. mbáacete bakandéétɛr(a) ékɛ́ɛ́gwa
+   They came and brought me a present.
+5. náágésetɛ mambia, naendé náác(e) áíran(e) ánkio?
+   He harvested this morning, is he going to return tomorrow?
+Note also the occurrence of the tense preceded by 'onyé' commonly in position V1. See also Px2/1.
+6. onyé náácaagete‿émeremo kemambia, angá náákoora kebwángo
+   If he were to start work early, he would finish quickly.
+
+Footnote:
+1. There is evidence that D2a/1 may be associated—albeit not commonly—with a negative connotation, where it is associated with the negative tone-pattern, but not with the negative tense sign:— ntwárúgéte/We didn't cook (this morning, recently). The evidence regarding D2a/2 is conflicting.
+
+Sx2/1   vp-tá-á-R-éte (IIa -ete)
+This tense occurs in two distinct contexts:—
+(i) Context: Multi-verbal sentences only.
+Connotation: Recent past time reference.
+Concomitant tenses: A5, B1, D1.
+Examples:—
+1. ntáárúgéte bokímá rééró mwane, nkí bágóóca koria?
+   I didn't cook food today, what are they going to eat?
+2. atáágésétɛ mambia, na bóóno ábe táácia kɔgésa?
+   He didn't harvest this morning, now how can he not harvest? (lit: how is he to be that he is not to go and harvest?).
+3. ntáákóóréte ríírabia kwane, na rɛɛró ngócia
+   I didn't finish clearing at my 'farm', today it is I'm going there.
+4. ómokúngu óyosóógéte cíɔmbɛ cigaikeerana, atáábaséte ómosáác(a) oy(e) ógókwa
+   A woman who is married, and the cows are paid up, did not run off (with another man) if her husband died.
+5. ntáákáméte éŋɔmbɛ mambia, nnakí kégóóca koba?
+   I didn't milk the cows this morning, what's going to happen?
+
+(ii) The tone of the verbal prefix is high except for Classes 1, 4 and 9.
+Context: Multi-verbal sentences only.
+Connotation: As (i), but may be translated by a relative.
+Concomitant tenses: A2/1, P2/1, D2/1 (A2a/1, D2a/1).
+Substitution Class I.
+Examples:—
+1. ómonto‿otáákórétɛ émeremo, íg(ɔ) áreng(e) ómotámbe
+   The man who didn't work was tall.
+2. ábanto bátáámanyéte gosooma, nábasénci
+   People who didn't know to read were uncivilized.
+3. ábanto bátááígweréte, ígɔ bááruusetigw(e) óboaini
+   The people who didn't obey orders were fined.
+
+D2/2   vṕ-a-R-éte (Ia both -Ŕ- and -R̀- have been recorded)
+As in the case of D2/1, this tense occurs in two distinct contexts:—
+(i) Negative: DS2/2
+Context: Uni-verbal and multi-verbal sentences, in which latter commonly occurring as V2.
+Connotation: Time reference less recent past; commonly occurring for time beyond two or three days ago.
+Attendant tenses: D2a/2.
+Examples:—
+1. náaciéte kɔrɔra‿ááse kwâreméte gos(e) atóbire
+   He went to see the place you cultivated, whether it was fertile.
+2. áse éngɛɛcɔ yókomoc(a) émbura, ígɔ báaroosétie émecaacaakwa
+   Because of a shortage of rain they constructed ditches.
+3. éndáágera nábwaté nénke; yaɛ́rire ékiágera tináagésétɛ éndááger(a) ényinge
+   The food I have is a little; it is finished because I didn't harvest much food.
+4. tináasímégéte‿ébituuma‿ás(e) ómogondo‿one
+   I didn't plant maize in my 'farm'.
+
+(ii) Negative: Sx2/2
+Context: Multi-verbal sentences, and those stabilized by n-.
+Connotation: Time reference as for (i), but may be translated by a relative.
+Concomitant tenses: A2/2, P2/2, D2/2, DS2/2.
+Substitution Class I.
+Example:—
+1. ábáána báaganétie gosooma, nábánge baaré kóbua cískuru
+   The children who wanted to learn were more numerous than the schools.
+
+D2a/2   n-vṕ-a-R-éte (Ia -Ŕ- or -R̀-)   Negative: DS2/2
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Time reference less recent past, as D2/2.
+Attendant tenses: A4, D2/2.
+Examples:—
+1. nnâgɛndét(ɛ) áse nnâgɔtɛɛbétie
+   I went where I told you I was going.
+2. mbáacéte bakandéétɛr(a) ékɛ́ɛ́gwa
+   They came and brought me a present.
+3. nnâkwerétwe ékɛrɔ naaréng(e) ómwána
+   I was bereaved when I was a child.
+Note also the occurrence of this tense preceded by 'onyé', commonly in position V1:—
+4. onyé náacaagéte‿émeremo kémambia, angá‿atáákɔ̃r(a) émeremo bóóno
+   If he had started work early, he would not be working now.
+
+Sx2/2   vp-tá-a-R̀-éte
+Like Sx2/1, this tense occurs in two distinct contexts:—
+(i) Context: Multi-verbal sentences only.
+Connotation: Less recent past time reference, as for D2/2.
+Concomitant tenses: A5, B1, B9.
+Examples:—
+1. ómwák(a) oyó atáasímégéte‿ébituuma, nkí ábááná báráárie?
+   This year he didn't plant maize, what will the children eat?
+2. atáaniibéte ŋɔmbɛ, nkí réndé mókória?
+   He didn't go in for owning cattle, what are you going to eat?
+   (Comment by a woman on her late husband, to recently arrived guests.)
+
+(ii) Context: Multi-verbal sentences only. Verbal prefix tone is high, except in Classes 1, 4 and 9.
+Connotation: As D2/2, but may be translated by a relative.
+Concomitant tenses: A4, D2/2.
+Substitution Class I.
+Example:—
+1. ábaíbi báasɔétɛ nyomb(a) ómwák(a) ôéta, ígɔ báaíbéte ébint(o) ébínge
+   The thieves who entered the house last year stole many things.
+
+D4   vṕ-ká-R-éte          Negative: DS4   ti-vṕ-ká-R̀-ete (IP)
+Context: Uni-verbal (rarely) and multi-verbal sentences.
+Connotation: General past time reference, with an implication of distance from the speaker and context of utterance.
+Attendant tenses: A2/2, A2/1-Ai1, A5.
+Examples:—
+1. kórendé nyancá bákáményétɛ nábant(o) ábángé baGusii
+   But on the lake they were living with many Gusii people.
+2. ígɔ baaré kómobwáter(a) émbori, báamanya ŋa nɛɛré ógácɛgétɛ
+   And when they caught the goat they realized that it was a troublesome beast.
+3. kéra‿ábáána igɔ báárenge korígia komanya ábaŋinamoke, asé bágásóógéte
+   Each of the children was looking for the place their aunts had come from.
+4. cíndééria ciabó ás(e) ábaŋina bákárwéte
+   Their relatives in the place whence their mothers came.
+5. ás(e) ómoigw(a) oyé ágásóógéte ómoirera‿ámarwa
+   To the place where his sister's child was married from, thence she sent beer to him.
+6. ómwánɛw(a) ógɛnda gosangereria círɔngɔɔri korwa asé bákábéégéte, ókórénta‿áás(e) ámo
+   The favourite went and collected gruel from where they had placed it, and took it to one place.
+7. ábaŋina‿ábanyuomi bákárwéte cínseem(o) eció nació baaré kórómia
+   The mothers of the suitors, it is to the place they came from that they make them (the suitors) look.
+
+D4a   n-vṕ-ká-R-éte         Negative: DS4
+Context: Uni-verbal sentences only.
+Connotation: General past time reference, with an implication of distance from the place of utterance.
+Examples:—
+1. níngákóóréte!
+   I've finished it (somewhere else)!
+2. nógákáméte éŋɔmbɛ? eé, níngákáméte
+   Have you milked the cow? Yes, I have.
+
+D24/1   vṕ-á-ká-R-éte (C1.1, 1st Pers. nááká-)
+Context: Uni-verbal and multi-verbal sentences, commonly preceded by the invariable word 'mbóno'.
+Connotation: Recent past time reference, with some implication of emphasis.
+Attendant tenses: Px9, B1 and C2/1.
+Examples:—
+1. mbóno náákárúgéte!
+   Certainly I've finished cooking!
+2. mbóno náágákóóréte‿émeremo botáraaíra
+   Certainly I've not yet finished the work and it is not yet dark.
+3. mbóno gwágácíéte?
+   Haven't you gone yet?
+4. mbóno gwákárúgéte?
+   Haven't you done the cooking yet? (Implying that she surely ought to have finished long ago.)
+5. agatɛɛbia maasamo, Baabá ígɔ ákáganétie cíntuga monɔ!
+   She said to the hyena, Mother's been longing for flying ants! (From a folk tale.)
+
+D24/2   vṕ-a-ka-R-éte
+Context: As for D24/1.
+Connotation: Less recent past time reference; commonly preceded by the invariable word 'mbóno'.
+Attendant tenses: Px9.
+Example:—
+1. mbóno náagakóóréte‿émeremo botáraaíra
+   Indeed I finished the work before it got dark.
+
+D29a/1   n-vṕ-á-raa-R̀-éte (IP)
+Context: Multi-verbal sentences only.
+Connotation: Time reference recent past, with the implication of a subsequent action to follow that in question.
+Concomitant tenses: A2/1, Px9.
+Examples:—
+1. nnáraasibéte címbori, námanya kɔgɛnda koriisia cíɔmbɛ
+   I tethered the goats first and then went and herded the cattle.
+   Cf. ńnásiba címbori go, tináácia cíɔmbɛ
+   I tethered the goats but I didn't go and herd the cattle.
+2. náraakáánéte ríítááŋani Músiona‿atáraaca
+   He first refused, prior to Musiona's arrival.
+3. ntwáraabuucét(e) ámáác(e) atáraasareka
+   We drew water before it got dirty.
+
+D29a/2   n-vṕ-á-ráa-R̀-éte (IP)
+Context: Multi-verbal sentences only.
+Connotation: As for D29a/1 but time reference less recent.
+Concomitant tenses: A4, Px9.
+Examples:—
+1. nnáráasibéte cíŋɔndi, nkamanya góóca
+   I tied up the sheep and then came.
+2. ábaíséke mbáráabuucét(e) ámááce, bakamanya gocia gɔtéénya
+   The girls drew water and then went to cut firewood.
+3. mbáráaganyét(e) ake, bakamanya kɔgɛnda
+   They waited a bit and then went on.
+4. ntwáráabuucét(e) ámáác(e) atáraasareka
+   We drew water before it got dirty.
+
+
+=== 7.0. TWO-WORD TENSES ===
+
+7.1. In which the radical is -re, commonly with extension -nge (vide passim).
+
+Ai2/A1   nkó-R-a vṕ-re (Ia, IIa -R̀-)   Negative: P1/Ai1, Px1/Ai1 (q.v.)
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Present, or more rarely, general time reference. Continuity or, more rarely, habituity seem to be implied.
+Attendant tenses: B1a, C2/1, A2/1, A5, Ai2-A2/1.
+Examples:—
+1. nkógɛnda ńde bóóno korígi(a) émbori
+   Now I'm going looking for the goat.
+2. ngókora‿áre‿émeremo kera ríítúko
+   He works every day.
+3. nkórema nááre bóóno ngótimoka nde
+   I've been hoeing and now I'm resting.
+4. ékɛr(ɔ) ábáána baabóókire, nígɔ ngókɔra báre‿émeremo
+   When the children awake, they work (i.e. make a habit or point of so doing).
+5. ékɛrɔ nkómɔrɔra, ngókɔra‿áre‿émeremo
+   When I see him he's working (i.e. was before I saw him).
+6. ékɛrɔ námɔrɔra, ngókɔra‿árenge émeremo
+   When I see him, he's busy working. Little difference from 5.
+7. nkógɛnd(a) óre cítuká bóóno?
+   Are you just now going to the 'dukas'?
+8. nkógɛnda ńde bóóno korénde nónyɔ̄ɔ̄ré nyúma
+   I'm going now, but you'll find me afterwards.
+
+P1/Ai1   ti-vṕ-rí kó-R-a (Ia -R̄-)
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Reference to the time of utterance, with implication of continuity.
+Attendant tenses: A5, B1, A2/2-Ai1.
+Examples:—
+1. mbósa ńdé nyomba, tíndí kórūga
+   I'm useless in the house, I'm not cooking.
+2. tárí kóminyoka‿ányɔ̄ɔ̄rɛ Cooni ítúko rínde
+   He's not running and beating John on any occasion.
+3. éseese térí kóriina kerama, noonyá némbori, ígɔ yaaré góitwa
+   A dog doesn't climb into the loft, nor even a goat, if it did it was killed.
+
+Px1/Ai1   vp-tá-rí kó-R-a (Ia -R̄-)
+This tense occurs in two distinct contexts:—
+(i) Context: Multi-verbal sentences only.
+Connotation: Reference to the time of utterance, with implication of continuity.
+Concomitant tenses: A2/2-Ai1, A5, A575.
+Examples:—
+1. ntárí kóruga, nkí nkónágɔkɔ́ra áígá nyomba?
+   I'm not cooking, what am I doing here in the house?
+2. atárí gósooma inkí ágókóra‿aari(á) éskuru?
+   He's not learning anything, what is he doing there at school?
+3. ábanto bánde kobaaré kóba ábaénéénu batárí kóígwera gose báákónágɔcɛgia‿ábanto bánde....
+   Some people when they became swollen-headed, not listening or even despising others....
+4. noonyá nábaíséke kobáágócia rooce nényongo, gose kobáákórwa rooce béétwegéte bágótééra, batárí gósika‿ábaíbori báábo
+   Even the girls when they go to the river, or return from it, pots on heads, they sing, and pay no respect to their parents.
+
+(ii) The verbal prefix here is high in all Classes except 1, 4 and 9.
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: As (i) but may be translated by a relative.
+Concomitant tenses: A2/2-Ai1.
+Examples:—
+1. ábagááka bátárí kóruusia cíbeesa, ígɔ báráányaare konywa‿ámarwa
+   The elders who are not paying any money, will be able to drink beer.
+2. ...ígɔ baaréngé kóirw(a) ényomba yómoŋin(a) ɔgótire — otárí kónyɔɔra báána
+   ...and then they were sent to the house of an elderly woman — having no children.
+
+A2/1-Ai1   vṕ-â-re ko-R-a (Ia -R̀-)   Negative: AP2/1-Ai1, Px2/1-Ai1 q.v.
+This tense occurs in at least three distinct contexts:—
+(i) Context: Uni-verbal and multi-verbal sentences.
+Connotation: Recent past time reference (vide A2/1), with implication of continuity.
+Attendant tenses: A2/1-Ai1.
+Examples:—
+1. néciɔmbɛ nááre gɔtɛma
+   I was just now beating the cattle.
+2. néciɔmbɛ nááre konakorígia
+   It's the cows I was looking for.
+3. ígɔ nááre koruga, ékɛrɔ kwáre kondangeria
+   And I was cooking when you called me.
+
+(ii) Context: Multi-verbal sentences only, commonly occurring as V1.
+Connotation: Future time reference, conditional implication.
+Concomitant tenses: A2/1, B1a, but rarely, B1.
+Examples:—
+1. ígɔ nááre goika kebwángo, angá námɔrɔra
+   If I were to arrive early I would see him. See also A2a/1.
+2. nkebwángo nááre goika, nímórɔ̄rɛ OR mórɔ̄rɛ
+   If I were to arrive early I'd see him.
+3. nááre gɔkɔr(a) émeremo, nkónyɔɔra náárenge ékɛɛgwa
+   If I were to work I would get a present.
+
+(iii) Negative: Px2/1-Ai1
+The verbal prefix is high except in Classes 1, 4 and 9.
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: As (i) but may be translated by a relative.
+Concomitant tenses: A2/1, P2/1, A2/1-Ai1.
+Examples:—
+1. kénde tikérí kíáre kobatánga tibááíra ómoíséke onyé némeremo
+   Nothing prevented them from sending the girl if there was work.
+2. nakiɔ kíáre kɔgɛra‿ábáána tibáákwároka‿ase‿émiák(a) eyió yémecando
+   That was the reason why children were not initiated in those years of hardship.
+3. Mónyangi nómomur(a) oy(é) órenge korokwa Onyango
+   M. and his brother who was called Onyango.
+
+A2/2-Ai1   vp-a-ré kó-R-a (Ia -R̄-)   Negative: AP2/2-Ai1, Px2/2-Ai1 q.v.
+This tense occurs in at least three distinct contexts:—
+(i) Context: Uni-verbal and multi-verbal sentences.
+Connotation: Less recent past time reference, with implication of continuity.
+Attendant tenses: P5/2 only recorded.
+Examples:—
+1. néciɔmbɛ naaré kónakorígia
+   It's the cattle I used to look for.
+2. ékɛrɔ kióbosai bwané ígɔ naaré gótāma, taatá táákomanya‿aase naaré gócia
+   During my youth I used to run off; my father didn't know where I'd gone to.
+
+(ii) Context: Multi-verbal sentences only.
+Connotation: Past time reference, conditional implication.
+Concomitant tenses: A2/2, A2/2-Ai1, B1.
+Examples:—
+1. ígɔ naaré góika kébwango, mórɔ̄rɛ
+   If I arrived early I would see him.
+2. ígɔ naaré gótama, taatá tááré kómanya‿áásé náacia
+   If I did run off, my father didn't know where I went to.
+
+(iii) Negative: Px2/2-Ai1
+The tone of the verbal prefix is high except in Classes 1, 4 and 9.
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: As (i) but may be translated by a relative.
+Concomitant tenses: A2/2, P2/2, A2/2-Ai1.
+Example:—
+1. Mónyangi nómomur(a) oy(é) oréngé kórokwa Onyango
+   M. and his brother who was called Onyango.
+
+AP2/1-Ai1   ti-vṕ-á(á)-re ko-R̀-a (IP)
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Recent past time reference; see A2/1-Ai1 (i). No examples have been recorded of context (ii).
+Attendant tenses: P1, B1, B9, Sx2/1, Px2/1.
+Examples:—
+1. tinááre gosimeka rɛɛrɔ, ŋánkió ndáásímeke
+   I didn't plant today, it is tomorrow I'll plant.
+2. titwáre kɔgɛnda‿arɔrɔ, atáátorangerétie
+   We didn't go there, since he didn't call us (i.e. invite us).
+3. titwáre kobutora bosa — moyio‿ótáárengeo
+   There was no point in our cutting — as the knife wasn't there.
+4. tikwáre gotama tákoááká?
+   Did you run, so that he didn't hit you?
+5. timwáre komorangeria‿ábáréétérɛ?
+   Were you not calling him to bring them?
+
+AP2/2-Ai1   ti-vṕ-á(a)-ré ko-R̀-a (IP)
+In contrast to the foregoing AP2/1-Ai1, this tense has been recorded in two distinct contexts:—
+(i) Context: Uni-verbal and multi-verbal sentences.
+Connotation: Less recent past time reference; see A2/2-Ai1.
+Attendant tenses: Only B9 recorded.
+Example:—
+1. tináaré gosimeka‿arɔrɔ ómwák(a) ôéta, nómwák(a) ógóóca ndáásímeke
+   I didn't plant there last year, it is next year I'll be planting.
+
+(ii) Context: Multi-verbal sentences only.
+Connotation: Less recent past time reference, conditional implication.
+Concomitant tenses: Px2/2, B1.
+Examples:—
+1. tináaré korabia ncé bwéká, ónde atááreng(e) árɔrɔ
+   I wouldn't have cleared myself, but there was no one else there.
+2. tibáaré korangeria monto áígwe‿ékiágera négeka
+   They would not have called someone to hear because it was a distance.
+
+Px2/1-Ai1   vp-tá-á-ré kó-R-a (Ia -R̄-)
+This tense occurs in two distinct contexts:—
+(i) Context: Multi-verbal sentences only.
+Connotation: Recent past time reference, with implication of continuity.
+Concomitant tenses: A2/1, A2/1-Ai1, D2/1, P5/1.
+Examples:—
+1. ntááré gósíméka rɛɛrɔ, ankió tínkómoca
+   I didn't plant today, tomorrow I won't fail.
+2. otááré kógamba rɛɛrɔ, onyé kwâgɛndétɛ arɔrɔ bósa?
+   You didn't attend the court today, would you have gone there to no purpose? (i.e. did you stay away knowing there would be no point in coming?).
+3. totááré kógɛnda — ígɔ twáre koimoka igɔ nébinto?
+   We didn't go, how, then, could we leave with the things?
+
+(ii) The verbal prefix has a high tone except in Classes 1, 4 and 9.
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: As (i) but may be translated by a relative.
+Concomitant tenses: P5/1.
+Example:—
+1. ómonto‿otáárenge gókór(a) émeremo, tákónyɔɔra cíbeesa
+   The man who didn't work will get no pay.
+
+Px2/2-Ai1   vp-tá-a-ré kó-R-a
+This tense also occurs in two distinct contexts:—
+(i) Context: Multi-verbal sentences only, though one exception has been noted.
+Connotation: Less recent past time reference, with implication of continuity.
+Concomitant tenses: A4, P75.
+Examples:—
+1. atáaré góóca‿aigá seitó kɛrɔ́ kénde
+   He didn't come to our place on any occasion.
+2. batáaré kómokáánia taánákórema rooce
+   They forbade him to cultivate along the river bank.
+3. ómwák(a) oyó óborwair(e) óbobé botáaré kógwéna — bogááca
+   In this year a virulent disease didn't abate, but came on.
+
+(ii) The tone of the verbal prefix is high except in Classes 1, 4 and 9.
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: As (i) but may be translated by a relative.
+Concomitant tenses: A2/2.
+Example:—
+1. ígɔ aréngé ómonto‿otáaréngé kória kiaŋaaco
+   He was a man who brooked no deceit (lit: ate no deceit).
+
+Ai2-A2/1   nkó-R-a vṕ-á-re (Ia -R̄-)
+Note: Class 1, 1st Pers. nááre.
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Recent past time reference with implication of continuity.
+Attendant tenses: A2/1, A2/1-Ai1.
+Examples:—
+1. ngóááka twáre cíɔmbɛ
+   We were just beating the cattle.
+2. ékɛró kwándangeria, nkóriisia nááre
+   When you called me I was herding.
+3. nkóráágéra‿árenge ékɛró yácaaka gótwa
+   He was in the process of eating when it started to rain.
+4. nkórūga nááre ékɛrɔ kwáré kóndangeria
+   I was cooking when you called me.
+
+Ai2/A2/2   nkó-R̀-á vp-a-re (IP)
+Note: Class 1, 1st Pers. náare.
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: Less recent past time reference with implication of continuity.
+Attendant tenses: A2/2, A4, D2/2, D1.
+Examples:—
+1. ékɛrɔ giéncara‿ábanto nkóriá báare címbeba
+   During the famine people used to eat rats.
+2. ékɛrɔ cíngigi cíacéte, nkógɔnká náarenge
+   When the locusts came I was still suckling.
+3. ékɛrɔ kóſborétwe, nkóriisiá náarenge
+   When you were born I was herding cattle.
+4. nkógesá náarenge óbɔri
+   I was then harvesting the millet.
+
+A4/Ai1   vp-ká-ré ko-R-a
+Context: Multi-verbal sentences only.
+Connotation: Time reference either present or future, with implication of distance from the context of utterance.
+Concomitant tenses: P1, Rx2/1.
+Examples:—
+1. onyé mokáré kógɛnda timócia koráágɛnda miirimiiro; gacié mwáguute áás(e) agwó mokáré gócia
+   If you go off, don't go and go unprepared; go and prepare the place you're going to.
+2. atááréétíre címbori, inkí rénde akáré gókɔra?
+   As he hasn't brought the goats, what then is he doing?
+
+7.2. Tenses with radical -is-. There is some justification for including here also the two tenses B1/Ai1 and P1/Ai1, in which the radical is -bais-.
+
+A1a/Ai1   n-vp-sá ko-R-a
+Context: Multi-verbal sentences and those stabilized by n-.
+Connotation: 'although'. See A1a.
+Concomitant tenses: As for A1a.
+Substitution tenses: A1a.
+Example:—
+1. ninsá gókór(a) émeremo nómokya, tíngóáákerwa ŋa mbuyá mónɔ
+   Though I work hard I shall not be told 'This is well done'.
+
+B1/Ai1   vṕ-sé, vṕ-ís-é kó-R-a   Negative: Sx1 q.v.
+Context: Multi-verbal sentences.
+Connotation: Time reference present or future, implication conditional.
+Concomitant tenses: P5/1, B1a.
+Examples:—
+1. ínsé kónyɔɔra ríííbaga, níncice
+   If I see an opportunity I'll come.
+2. áísé góoca bwango, nákónyɔɔr(ɛ) aiga
+   If he comes early he'll find you here.
+3. ánd(e) áísé kóndɔra, nándángerie
+   If perhaps he sees me he'll call me.
+4. ínsé kóring(a) ókɔbɔ́kɔ kwane, tókórambora
+   If I bend my arm you can't unbend it.
+5. ínsé góika bwango, nímórɔ́rɛ
+   If I arrive early I'll see him.
+6. tóísé gósíméka cínyeni, nátónyɔ̄ɔ̄rɛ éndáágéra
+   If we plant vegetables we shall get food.
+
+B1/Ai1   vṕ-báís-e kó-R-a        Negative: ti-vṕ-áísa ko-R-a
+Note: the negative commonly occurs in contexts characterized by P1, and may, in many cases, be substituted for it.
+Context: Multi-verbal sentences.
+Connotation: No time reference, commonly with 'purposive' implication.
+Concomitant tenses: B1, B9. See also under B1(P1).
+Examples:—
+1. ábanto bánde gos(e) ábáána tibárí kónakoencebana‿arɔrɔ bábáíse gosari(a) ényangi
+   Other people or children do not wander around there lest they destroy the marriage.
+2. tábáísa kórúga, goika ábagɛni bááce
+   She is not to cook until the guests have arrived.
+3. ígɔ árááike bwangó tábáísa konyoorwa
+   He'll arrive quickly lest he be late.
+
+B9/Ai1   vṕ-ráá-ís-e, vṕ-ráá-báís-e
+Only one example of this has been recorded!
+Context: Uni-verbal sentence.
+Connotation: Future time reference.
+Example:—
+1. ókogani(a) égento monɔ monɔ igɔ anénɛ, kéráábáíse gɔkɔréétɛr(a) émecando
+   Wanting a thing desperately will be liable to bring trouble to you.
+
+C2/1-Ai1   vp-a-ís-ire ko-R-a
+Context: Uni-verbal and multi-verbal sentences.
+Connotation: No time reference, but rather to a state of affairs 'being about to come into existence'.
+Attendant tenses: Px9.
+Examples:—
+1. A. Kwamányire‿ékeGusíí?
+      Do you know Gusii?
+   B. Yááya, tíndaamanya kegíma!
+      No, not yet!
+   A. Korénde kwaísire komanya
+      But, you've almost learnt it.
+
+7.3. Tenses with radical -many-. Those most commonly occurring are A2/1, A4 and B1. Qx2/2 has also been recorded. No negative tense has been recorded. As the connotation of these tenses is comparable, they will not be treated separately:—
+Context: Multi-verbal sentences, always as V2.
+Connotation: Time reference subsequent to the time of V1.
+Concomitant tenses: A2/1, A9a, A29/1, A29/2, A49, A59, Px259, Px25975, D29/1, D29/2.
+Examples:—
+1. ndúga mámbia botambe, báária, bámanya kɔgɛnd(a) émeremo
+   I cook every morning, they eat, and then go to work.
+2. níndaasiba címbori, ímānye kɔgɛnda koriisia cíɔmbɛ
+   I'll fasten the goats first and then go and look after the cattle.
+3. ntwâraasooma‿ake, tokamanya gocia róóce
+   We read a bit and then went off to the river.
+4. batáákóraanágósangererekana totáámanye kɔgɛnda‿arɔrɔ
+   They should meet together first and then we can go on there.
+Further examples may be noted from the text passim.
+
+
+=== 8.0. K(O)- ===
+
+8.0. k(o)-. As noted in 2.42 k(o)- occurs as a pre-prefix in a number of one-word and two-word tenses. Among the former it is associated most frequently with A5, P9, B1a, B9, C2/1, D1. Among the latter it is most frequently associated with A2/1-Ai1, A2/2-Ai1.
+Examples:—
+1. konaíkire, nkamɔrɔr(a) oré nyomba
+   When I arrived, I saw him in his house.
+2. kongótaara ncera, nkarora cíkaawa ncera rógóro
+   While walking along the road I saw the coffee on the path above.
+3. nágēndɛ gotáraarúga
+   She will go, even though she hasn't cooked.
+4. kórígétie‿ényama, néciiro‿órááyɛnyɔɔrɛ
+   If you want meat, it is at the market you'll get it.
+5. korénde kórááetere Manga goocia Kerico, Ikonge órááete
+   But if you pass by Manga from Kericho you'll pass through Ikonge.
+6. kóndé Manga, ígɔ nkórɔr(a) ényanca ya L. Viktoria
+   When at Manga I look at Lake Victoria.
+
+
+=== 9.0. CONCLUSIONS ===
+
+9.0. Conclusions:
+From the evidence presented above it seems profitable to summarize what appear to be the main features of the system, and then endeavour to assess the relationship of Gusii to other broadly similar languages of Zone E (Gĩkũyũ, Kuria, Nyore, (nya-)Nkore)[1] by arbitrarily selecting for comparison a number of those features which appear to be characteristic of Gusii.[2]
+The Gusii tense system is characterized by four post-radical suffixes (-a, -e, -ire, -ete (see 1.12 for realization of final vowels)), and a relatively small number of tense signs, which may, however, combine one with another. Thus 2 may be followed by 4, 5, 75 and 9; 4 by 75, and 9 by 75. 7, which always occurs in association with 5, always occurs immediately preceding the radical (or an object-infix where occurring), while 4 and 5 appear to be mutually exclusive. A number of tenses with initial n- occur; with one exception these are all positive tenses. These n- tenses are of two kinds; those which are closely related semantically to similar tenses in which an initial n- does not occur (cf. A2/1, A2a/1; D2/1, D2a/1), and those in which there is no such relationship (cf. A1 and A1a). The former will be referred to as Type 1, the latter as Type 2. There are two negative signs, ti- and -tá-, of which the latter commonly, but by no means invariably, occurs in multi-verbal sentences. Negative tenses have been here defined as those characterized by one or other of these signs (but see fn. p. 53). In many cases these negative tenses cannot be related by shape or meaning to positive tenses.[3] (See P1, P5/1, qx2/1.) In the differentiation of past and future time, the system is asymmetrical, there being four divisions of past time and only one of future time. A considerable number of tenses are distinguished only by tone-pattern, and a characteristic pattern occurs in the verbal prefix of Classes 1, 4 and 9 in those tenses which may be translated by a relative. In 'direct' relative sentences, where a preceding SsN controls the verbal prefix, both the shape of that prefix and the tone-pattern are characteristic. In 'indirect' relative sentences where the 'object' of the relative verbal precedes it, a pre-verbal item occurs, differing only in tone-pattern from the Demonstrative (1).[4]
+
+One of the difficulties of making comparisons between features of different systems, is that of establishing the comparability of such features. This is particularly so where, for example, a lack of tonal data makes identification difficult, or where a lack of contextual data precludes any semantic inferences. Semantic criteria in any case raise special problems of their own, well exemplified by the negative sign -tá-, which appears to occur in all the four languages noted above, including Gusii. In at least one instance in Kuria, for example, and possibly also in Gusii (see Px25), it is not possible to ascribe a negative meaning to the sign, so that one is tempted to regard it as different from that associated with a negative meaning. Yet to do this means imposing an alien semantic structure on the facts; if one eschews labelling tenses by their translation, one ought surely to extend the principle to elements. If they appear to be formally comparable then this must form the primary data for comparison, and observations about meaning must take second place, though this does not mean that meaning should not be subjected to a most careful and detailed analysis. It may well be that one of the distinguishing features of such languages is the extent to which apparently comparable shapes are associated with quite different meanings (i.e. Gusii: narúgire/I have cooked; Kuria: narúgire/I cooked (yesterday or earlier).[5]
+
+Turning now to some of the related languages mentioned above, there is in Gĩkũyũ a five-fold division of post-radical suffix, including -aga. A larger number of tense signs occurs, including -ra-, -rĩ-, -kĩ-, -ro- and -ngo-, not occurring in Gusii, but there is much less evidence of tense-sign combination. Tenses with initial nĩ- of Type 1 occur. Two negative signs occur as in Gusii but both occur as infixes.[6] There is a symmetrical division of time into three past and three future tenses. While Barlow does not record any tense differentiated solely by tone-pattern,[7] there is evidence that particular patterns occur where the controlling SsN is of Classes 1, 4 or 9. Of tenses which may be translated by a relative, it has been said, '...the most important factor in relative constructions is the tonal pattern of the relative verbal, this is shown by the fact that the head-word may be omitted, with modification of meaning but not of relative signification'.[8]
+
+In Nyore (Luyia) there is a four-fold division of post-radical suffix; including -nga but excluding -VtV. Again there is a small number of tense signs with little evidence of tense-sign combination. Tenses with initial ni- occur, both of Type 1 and 2. Two negative signs occur (shi-, -ra-), the former as a prefix, the latter as an infix. Tenses distinguished by tone have not been recorded. In tenses which may be translated by a relative, the most important feature seems to be the shape of the verbal prefix. Division of time is symmetrical, with four future and four past tenses.
+
+Only three post-radical suffixes appear to occur in (nya-)Nkore, and there are a relatively small number of tense signs; no evidence is available for any tense-sign combination. A tense of Type 2 with initial ni- occurs. Negative tense signs as for Gusii occur, but no tonal data is available, and no examples of tenses distinguished only by tone-pattern have been recorded. Differentiation of past and future time is asymmetrical, there being three divisions of past time and two of future time. As with Nyore, in direct relative sentences it is the shape of the verbal prefix which appears to be the most important characteristic, whereas in indirect relative sentences the occurrence of a pre-verbal item comparable in shape to Demonstrative (2) is characteristic.
+
+Four post-radical suffixes occur in Kuria, of which -nga is one. A rather larger number of tense signs occurs than for Gusii, but there is no evidence of tense-sign combination. Two negative signs occur as for Gusii, but ti- occurs concomitantly with a post-verbal item 'hai'. Tenses characterized by an initial ni/e- are of both Type 1 and 2. Only one pair of tenses has been recorded which differs only by tone-pattern. Time differentiation is asymmetrical, three divisions of future time and two of past time being recognized. Both the direct and indirect relative appear to be associated with a pre-verbal item, differing in tone only from Demonstrative (1).
+
+These observations may now be summarized diagrammatically. It must be stressed that adequate comparative work needs to be supported by phonological studies of the languages concerned. This is not attempted here; instead the tense signs and post-radical suffixes of Kuria and Gusii are taken and numbered — or lettered[9] — and similar designations accorded signs from the other languages according to the data available, providing no more than a pointer for further work:—
+
+=== COMPARATIVE SUMMARY TABLE ===
+                                    Gĩkũyũ         Kuria          Gusii          Nyore          Nkore
+Five- or seven-vowel system         7              7              7              5              5
+VCV or CV in nom. and
+  verbal prefixes                   CV-            VCV-           VCV-           VCV-           VCV-
+Post-radical suffixes[9]            A, B, C, D     A, B, C        A, B, C, D     A, B, C        A, B, C
+                                      -aga           -nga                          -nga
+Tense signs                         1, 2, 3, 4, 5  1, 2, 3, 4, 5  1, 2, 4, 5,    1, 2, 3, 6     1, 2, 3, 4, 8
+                                    6, 7, 0, 11    6, 8           7, 9           -kha-          -rya-, -caa-
+                                    -ngo-
+Tense-sign combination              *              ‡              †              ‡              ‡
+Tenses with initial ni-:
+  Type 1                            *              *              *              *              ‡
+  Type 2                            ‡              *              *              *              *
+Division of past time               3              2              4              4              3
+  p-r suffixes                      C, D           A, C           A, D           A, C           A, C
+Division of future time             3              3              1              4              2
+  p-r suffixes                      A              A, B           B              A, B           A
+Direct relatives:
+  Special tone-patterns             *              ‡              *              ‡ (?)          ‡ (?)
+  Occurrence of VCV- in vp-         ‡              ‡              *              *              *
+Occurrence of pre-verbal
+  item                              ‡              *              ‡              ‡              ‡
+
+Legend:
+* Indicates occurrence.
+† Frequent occurrence.
+‡ Non-occurrence.
+
+Footnotes to Conclusions:
+1. The available data for Gĩkũyũ includes A. R. Barlow's Studies in Kikuyu Grammar and Idiom (Rev. Ed. 1950), L. Armstrong's Phonetic and Tonal Structure of Kikuyu (1940), and unpublished material by Dr. L. P. Harries. I am retaining here the orthography currently recognized as standard as a convenience, though recognizing its general inconvenience. For Nyore there is Mrs. G. Donohew's MS. A First Course in Luyia (1957). For Nkore there is H. F. Morris and B. E. R. Kirwan's A Runyankore Grammar (1957). For Kuria there is unpublished material of my own, collected in the field between 1952 and 1955.
+2. For a discussion of the 'practical' approach to such issues, see M. Guthrie's Classification of the Bantu Languages (1948), pp. 27-28. The Zone references are taken from this study.
+3. See the recent discussion by E. Westphal, 'An Introductory Comparative Study of Negation in Bantu' Mitteilungen des Instituts für Orientforschung, Band VI/3, 1958.
+4. Demonstrative (1) is that which may be translated by 'this here', in contrast to Demonstrative (2) which may be translated by 'that there'.
+5. That this is by no means a unique phenomenon, even in this area, is evidenced by Tooro and Nkore, with a similar pair of tenses.
+6. But ti- may occur as a prefix in certain environments.
+7. Though from my own limited contact with the language there would appear to be at least one pair of tenses so distinguished.
+8. L. P. Harries, unpublished MS.
+9. Thus, post radical suffixes: A -a, B -e, C -ire, D -ete. Tense signs: 1 Zero, 2 -a-, 3 -ra-, 4 -ka-, 5 -ku-, 6 -ri-, 7 -na-, 8 -kaa-, 9 -raa-, 0 -ke-, 11 -ro-.
+10. By this I do not intend to suggest that other VCV-type languages may not occur elsewhere. On the contrary there appear to be at least two main kinds of such languages, even within East Africa.
+
+From the foregoing it can be argued that, from an overall point of view, Gusii represents the most westerly of the Gĩkũyũ type languages, and the most easterly of what might be termed VCV-prefix languages.[10] Further, since in general terms Gusii must probably be regarded as closer to Gĩkũyũ, one should regard the VCV element as resulting from contact with the eastward looking languages of E10 and E30. One might, indeed, split up Zone E into a Western and an Eastern section, with Gusii in an intermediate position. Such a suggestion leads immediately to further questions, which are beyond the scope of the present study but which can at least be posed. For example, do the languages of this Eastern section form an isolated group, or can one discern affinities with languages to the south, in neighbouring Zones F and G? Similarly, can one show any general affinities between languages of the Western section and those of neighbouring Zones such as D and M? Here, one is interested not merely in the linguistic relationship, but in the broader relationships between languages as spoken by groups of people, which might give indications as to earlier dispositions and migrations. Non linguistic evidence may here prove of value: where linguistic facts suggest a link, history or social anthropology may corroborate it. Initially, however, the linguist is responsible for collecting and presenting the linguistic facts in as detailed and accurate a manner as possible: only when this has been achieved will there be any chance of his being able to ask really productive questions.

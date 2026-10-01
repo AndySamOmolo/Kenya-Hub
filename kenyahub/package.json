@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "parse:languages": "node scripts/parse-extracted.mjs",
     "deploy": "npm run build && npx wrangler pages deploy out --project-name kenyahub"
   },
   "dependencies": {

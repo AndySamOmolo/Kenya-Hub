@@ -1,0 +1,360 @@
+{
+  "languageId": "teso",
+  "languageName": "Teso (Ateso)",
+  "family": "nilotic",
+  "nativeName": "Ateso",
+  "script": "Latin",
+  "speakerCount": 468000,
+  "counties": [
+    "Busia"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Compiled from \"An Introduction to the Ateso Language\" by J.H. Hilders and J.C.D. Lawrence (Eagle Press/East African Literature Bureau, 1957). Ateso is a Nilotic language of the Teso-Turkana group, spoken in parts of Busia County, Kenya and widely in Uganda.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / How are you?",
+          "translation": "Yoga",
+          "pronunciation": "yoh-gah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine",
+          "translation": "Ejok",
+          "pronunciation": "eh-jok",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Yoga noi",
+          "pronunciation": "yoh-gah noh-ee",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Eyalama",
+          "pronunciation": "eh-yah-lah-mah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye",
+          "translation": "Adio",
+          "pronunciation": "ah-dee-oh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Karibu",
+          "pronunciation": "kah-ree-boo",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Yes",
+          "translation": "Ee",
+          "pronunciation": "eh-eh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Mam",
+          "pronunciation": "mahm",
+          "context": "",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Eong",
+          "pronunciation": "eh-ong",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Aare",
+          "pronunciation": "ah-reh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Auni",
+          "pronunciation": "ah-oo-nee",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Aongon",
+          "pronunciation": "ah-ohn-gohn",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Akan",
+          "pronunciation": "ah-kahn",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Akankacel",
+          "pronunciation": "ah-kahn-kah-chel",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Akankaare",
+          "pronunciation": "ah-kahn-kah-reh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Akankauni",
+          "pronunciation": "ah-kahn-kah-oo-nee",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Akankaongon",
+          "pronunciation": "ah-kahn-kah-ohn-gohn",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Atomon",
+          "pronunciation": "ah-toh-mohn",
+          "context": "",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "What is your name?",
+          "translation": "Ijo ngin?",
+          "pronunciation": "ee-joh n-geen",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "My name is...",
+          "translation": "Arai eong...",
+          "pronunciation": "ah-rah-ee eh-ong",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Akipi",
+          "pronunciation": "ah-kee-pee",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "Akimuj",
+          "pronunciation": "ah-kee-mooj",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Ere",
+          "pronunciation": "eh-reh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Person",
+          "translation": "Eong",
+          "pronunciation": "eh-ong",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Ikoku",
+          "pronunciation": "ee-koh-koo",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Toto",
+          "pronunciation": "toh-toh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Papa",
+          "pronunciation": "pah-pah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Edeke / Akuj",
+          "pronunciation": "eh-deh-keh / ah-kooj",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "Ejok",
+          "pronunciation": "eh-jok",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "Ejai",
+          "pronunciation": "eh-jah-ee",
+          "context": "",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "historical-vocabulary",
+      "name": "Historical Vocabulary (Hilders & Lawrence)",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "PREFACE BY THE AUTHORS",
+          "translation": "xi",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "PREFACE TO THE SECOND EDITION",
+          "translation": "xv",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "vi",
+          "translation": "CONTENTS",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "viii",
+          "translation": "CONTENTS",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "xii",
+          "translation": "PREFACE",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "PREFACE",
+          "translation": "xiii",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "xiv",
+          "translation": "PREFACE",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "xvi",
+          "translation": "PREFACE TO THE SECOND EDITION",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "PREFACE TO THE SECOND EDITION",
+          "translation": "xvii",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "xx",
+          "translation": "INTRODUCTION",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "INTRODUCTION",
+          "translation": "xxi",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "xxii",
+          "translation": "INTRODUCTION",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "INTRODUCTION",
+          "translation": "xxiii",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "xxiv",
+          "translation": "INTRODUCTION",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        },
+        {
+          "english": "or",
+          "translation": "ainakin—to give",
+          "pronunciation": "",
+          "context": "From \"An Introduction to the Ateso Language\" (Hilders & Lawrence, 1957)",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

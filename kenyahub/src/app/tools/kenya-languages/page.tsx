@@ -5,6 +5,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/kenya-languages.json";
 import SearchInput from "@/components/ui/SearchInput";
+import { getSourcesForLanguage } from "@/data/language-sources";
 const tool = TOOLS.find((t) => t.slug === "kenya-languages")!;
 const faq = [
   { question: "How many languages are spoken in Kenya?", answer: "Kenya has 42+ recognized ethnic groups speaking 60+ distinct languages and dialects. The two official languages are English and Swahili (Kiswahili). Swahili is also the national language." },
@@ -77,6 +78,21 @@ export default function KenyaLanguagesPage() {
                 <div className="flex flex-wrap gap-1">
                   {lang.counties.map((c) => (<span key={c} className="text-[0.6rem] bg-bg-elevated border border-border px-2 py-0.5 rounded text-text-secondary">{c}</span>))}
                 </div>
+                {getSourcesForLanguage(lang.name.split("(")[0].trim().toLowerCase().replace(/\s+/g, "")).length > 0 && (
+                  <div className="mt-3 border-t border-border pt-2">
+                    <p className="text-[0.6rem] font-semibold uppercase tracking-wide text-text-muted">Reference sources</p>
+                    <div className="mt-1 space-y-1">
+                      {getSourcesForLanguage(lang.name.split("(")[0].trim().toLowerCase().replace(/\s+/g, "")).map((source) => (
+                        <div key={source.id} className="flex items-start justify-between gap-2 text-[0.6rem]">
+                          <span className="text-text-secondary">{source.title}</span>
+                          <span className={source.ingestionStatus === "integrated" ? "shrink-0 text-green-400" : "shrink-0 text-gold"}>
+                            {source.ingestionStatus === "integrated" ? "Integrated" : "Research"}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 {/* Speaker bar */}
                 <div className="mt-2 h-1.5 bg-bg-elevated rounded-full overflow-hidden">
                   <div className="h-full rounded-full transition-all" style={{ width: `${Math.min(100, (lang.speakers / 8100000) * 100)}%`, backgroundColor: family?.color }} />

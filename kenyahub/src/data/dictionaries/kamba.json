@@ -5,25 +5,77 @@
   "nativeName": "Kĩkamba",
   "script": "Latin",
   "speakerCount": 4600000,
-  "counties": ["Machakos", "Makueni", "Kitui"],
+  "counties": [
+    "Machakos",
+    "Makueni",
+    "Kitui"
+  ],
   "hasAudio": false,
   "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-07",
-  "contributorNote": "Kamba is a Bantu language closely related to Kikuyu, spoken in the Eastern Province of Kenya. Data from community references and linguistic publications.",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Kamba is a Bantu language closely related to Kikuyu, spoken in the Eastern Province of Kenya. Data from community references and linguistic publications. Enriched with entries from \"Vocabularies of the Kamba and Kikuyu Languages\" by Hildegarde Hinde (Cambridge, 1904). Enriched with entries from \"Vocabularies of the Kamba and Kikuyu Languages\" by Hildegarde Hinde (Cambridge, 1904). Enriched with entries from \"Vocabularies of the Kamba and Kikuyu Languages\" by Hildegarde Hinde (Cambridge, 1904). Enriched with entries from \"Vocabularies of the Kamba and Kikuyu Languages\" by Hildegarde Hinde (Cambridge, 1904). Enriched with entries from \"Vocabularies of the Kamba and Kikuyu Languages\" by Hildegarde Hinde (Cambridge, 1904). Enriched with entries from \"Vocabularies of the Kamba and Kikuyu Languages\" by Hildegarde Hinde (Cambridge, 1904).",
   "categories": [
     {
       "id": "greetings",
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
-        { "english": "How are you?", "translation": "Uvoo?", "pronunciation": "oo-voh", "context": "Standard greeting — literally 'News?'", "audioFile": null },
-        { "english": "I am fine", "translation": "Museo", "pronunciation": "moo-seh-oh", "context": "Reply meaning 'well/good'", "audioFile": null },
-        { "english": "Good morning", "translation": "Wia mwau wa ũthukũ", "pronunciation": "wee-ah mwah-oo wah oo-thoo-koo", "context": "Morning greeting", "audioFile": null },
-        { "english": "Thank you", "translation": "Nĩ vaa", "pronunciation": "nee vah-ah", "context": "'Nĩ vaa mũno' = thank you very much", "audioFile": null },
-        { "english": "Goodbye", "translation": "Tũlonane", "pronunciation": "too-loh-nah-neh", "context": "We will see each other", "audioFile": null },
-        { "english": "Welcome", "translation": "Wĩa mũseo", "pronunciation": "wee-ah moo-seh-oh", "context": "", "audioFile": null },
-        { "english": "Hello", "translation": "Wĩa?", "pronunciation": "wee-ah", "context": "Casual greeting — 'What's the word?'", "audioFile": null },
-        { "english": "Sorry", "translation": "Sova", "pronunciation": "soh-vah", "context": "", "audioFile": null }
+        {
+          "english": "How are you?",
+          "translation": "Uvoo?",
+          "pronunciation": "oo-voh",
+          "context": "Standard greeting — literally 'News?'",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine",
+          "translation": "Museo",
+          "pronunciation": "moo-seh-oh",
+          "context": "Reply meaning 'well/good'",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Wia mwau wa ũthukũ",
+          "pronunciation": "wee-ah mwah-oo wah oo-thoo-koo",
+          "context": "Morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Nĩ vaa",
+          "pronunciation": "nee vah-ah",
+          "context": "'Nĩ vaa mũno' = thank you very much",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye",
+          "translation": "Tũlonane",
+          "pronunciation": "too-loh-nah-neh",
+          "context": "We will see each other",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Wĩa mũseo",
+          "pronunciation": "wee-ah moo-seh-oh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Wĩa?",
+          "pronunciation": "wee-ah",
+          "context": "Casual greeting — 'What's the word?'",
+          "audioFile": null
+        },
+        {
+          "english": "Sorry",
+          "translation": "Sova",
+          "pronunciation": "soh-vah",
+          "context": "",
+          "audioFile": null
+        }
       ]
     },
     {
@@ -31,16 +83,76 @@
       "name": "Numbers",
       "icon": "🔢",
       "entries": [
-        { "english": "One", "translation": "Ĩmwe", "pronunciation": "ee-mweh", "context": "Similar to Kikuyu", "audioFile": null },
-        { "english": "Two", "translation": "Ilĩ", "pronunciation": "ee-lee", "context": "", "audioFile": null },
-        { "english": "Three", "translation": "Itatũ", "pronunciation": "ee-tah-too", "context": "", "audioFile": null },
-        { "english": "Four", "translation": "Inya", "pronunciation": "ee-nyah", "context": "", "audioFile": null },
-        { "english": "Five", "translation": "Ithano", "pronunciation": "ee-thah-noh", "context": "", "audioFile": null },
-        { "english": "Six", "translation": "Thanthantũ", "pronunciation": "thahn-thahn-too", "context": "", "audioFile": null },
-        { "english": "Seven", "translation": "Mũonza", "pronunciation": "moo-ohn-zah", "context": "", "audioFile": null },
-        { "english": "Eight", "translation": "Nyaanya", "pronunciation": "nyah-ah-nyah", "context": "", "audioFile": null },
-        { "english": "Nine", "translation": "Kenda", "pronunciation": "kehn-dah", "context": "Same as Kikuyu", "audioFile": null },
-        { "english": "Ten", "translation": "Ĩkũmi", "pronunciation": "ee-koo-mee", "context": "", "audioFile": null }
+        {
+          "english": "One",
+          "translation": "Ĩmwe",
+          "pronunciation": "ee-mweh",
+          "context": "Similar to Kikuyu",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Ilĩ",
+          "pronunciation": "ee-lee",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Itatũ",
+          "pronunciation": "ee-tah-too",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Inya",
+          "pronunciation": "ee-nyah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Ithano",
+          "pronunciation": "ee-thah-noh",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Thanthantũ",
+          "pronunciation": "thahn-thahn-too",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Mũonza",
+          "pronunciation": "moo-ohn-zah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Nyaanya",
+          "pronunciation": "nyah-ah-nyah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Kenda",
+          "pronunciation": "kehn-dah",
+          "context": "Same as Kikuyu",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Ĩkũmi",
+          "pronunciation": "ee-koo-mee",
+          "context": "",
+          "audioFile": null
+        }
       ]
     },
     {
@@ -48,18 +160,720 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
-        { "english": "Yes", "translation": "Ĩĩ", "pronunciation": "ee-ee", "context": "", "audioFile": null },
-        { "english": "No", "translation": "Aka", "pronunciation": "ah-kah", "context": "", "audioFile": null },
-        { "english": "What is your name?", "translation": "Wĩtawa ata?", "pronunciation": "wee-tah-wah ah-tah", "context": "", "audioFile": null },
-        { "english": "My name is...", "translation": "Nĩtawa...", "pronunciation": "nee-tah-wah", "context": "", "audioFile": null },
-        { "english": "I love you", "translation": "Nĩwendete", "pronunciation": "nee-wehn-deh-teh", "context": "Similar to Kikuyu", "audioFile": null },
-        { "english": "Water", "translation": "Maũ", "pronunciation": "mah-oo", "context": "", "audioFile": null },
-        { "english": "Food", "translation": "Ĩlya", "pronunciation": "ee-lyah", "context": "", "audioFile": null },
-        { "english": "Mother", "translation": "Mwaĩ / Ĩvaa", "pronunciation": "mwah-ee / ee-vah", "context": "", "audioFile": null },
-        { "english": "Father", "translation": "Asa / Tata", "pronunciation": "ah-sah / tah-tah", "context": "", "audioFile": null },
-        { "english": "Child", "translation": "Kavisi", "pronunciation": "kah-vee-see", "context": "'Syavisi' = children", "audioFile": null },
-        { "english": "God", "translation": "Ngai / Mũlũngũ", "pronunciation": "n-gah-ee / moo-loo-ngoo", "context": "Ngai is shared with Kikuyu", "audioFile": null },
-        { "english": "Good", "translation": "Mũseo", "pronunciation": "moo-seh-oh", "context": "", "audioFile": null }
+        {
+          "english": "Yes",
+          "translation": "Ĩĩ",
+          "pronunciation": "ee-ee",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Aka",
+          "pronunciation": "ah-kah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Wĩtawa ata?",
+          "pronunciation": "wee-tah-wah ah-tah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "My name is...",
+          "translation": "Nĩtawa...",
+          "pronunciation": "nee-tah-wah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "I love you",
+          "translation": "Nĩwendete",
+          "pronunciation": "nee-wehn-deh-teh",
+          "context": "Similar to Kikuyu",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Maũ",
+          "pronunciation": "mah-oo",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "Ĩlya",
+          "pronunciation": "ee-lyah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Mwaĩ / Ĩvaa",
+          "pronunciation": "mwah-ee / ee-vah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Asa / Tata",
+          "pronunciation": "ah-sah / tah-tah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Kavisi",
+          "pronunciation": "kah-vee-see",
+          "context": "'Syavisi' = children",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Ngai / Mũlũngũ",
+          "pronunciation": "n-gah-ee / moo-loo-ngoo",
+          "context": "Ngai is shared with Kikuyu",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "Mũseo",
+          "pronunciation": "moo-seh-oh",
+          "context": "",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "name": "Historical Vocabulary",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "abdomen",
+          "translation": "ibu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "across",
+          "translation": "kianda",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "adjoining",
+          "translation": "mupaka mamwe",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "adjudge",
+          "translation": "gumi nen detto",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "afraid",
+          "translation": "gukia",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "afterbirth",
+          "translation": "nsöö",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "afternoon",
+          "translation": "muthenia",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "afterwards",
+          "translation": "kalanga",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "again",
+          "translation": "muthen yongi",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "agree",
+          "translation": "kuindu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "ahead",
+          "translation": "mbe",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "alive",
+          "translation": "-wima",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "all",
+          "translation": "-onthe",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "all of us",
+          "translation": "ithi onthe",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "allow",
+          "translation": "kubalunundjika",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "all right",
+          "translation": "utheo",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "aloe",
+          "translation": "itoma",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "alone",
+          "translation": "mundu emwe",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "also",
+          "translation": "utille",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "alter",
+          "translation": "kuani",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "always",
+          "translation": "muthenia monthe",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "and",
+          "translation": "na",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "angry",
+          "translation": "nguldimu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "ankle",
+          "translation": "kuu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "anklets",
+          "translation": "chuma",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "anklets",
+          "translation": "uthuku",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "answer",
+          "translation": "ndetto",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "ant",
+          "translation": "ndzingi",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "ant",
+          "translation": "njinji",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "ant",
+          "translation": "nguugu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "ant",
+          "translation": "umũũ",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "antelope",
+          "translation": "ngattata",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "anthill",
+          "translation": "kivuumbu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "anything",
+          "translation": "kũindu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "apace",
+          "translation": "mituki",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "arm",
+          "translation": "mokono",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "arm",
+          "translation": "kuoko",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "arm",
+          "translation": "ibindi ya kitua",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "armpit",
+          "translation": "njakwaba",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "arrive",
+          "translation": "kubike",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "arrow",
+          "translation": "musie",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "arrowhead",
+          "translation": "euumu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "ashes",
+          "translation": "mũũ",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "ask",
+          "translation": "gukulia",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "at once",
+          "translation": "oiyuyu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "awake",
+          "translation": "kuamukka",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "axe",
+          "translation": "ithoka",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "baboon",
+          "translation": "ngulli",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "back",
+          "translation": "muongo",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "back",
+          "translation": "kitiimba",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bad",
+          "translation": "-thūgu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bag",
+          "translation": "ngussu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bamboo",
+          "translation": "miangi",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "banana",
+          "translation": "maĩyu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bank",
+          "translation": "kianda",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "baobab tree",
+          "translation": "mwamba",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bark",
+          "translation": "kukuma",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bark",
+          "translation": "ukanda",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "barrel",
+          "translation": "kitupa",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "barrenness",
+          "translation": "nthāāta",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "basin",
+          "translation": "nsele",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "basket",
+          "translation": "idjondo",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bat",
+          "translation": "udandalimu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bathe",
+          "translation": "kuthamba",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beads",
+          "translation": "muthanga; kikete",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beak",
+          "translation": "muomo",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beans",
+          "translation": "inthoogo",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beans",
+          "translation": "nthzuu",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bear fruit",
+          "translation": "kutzia",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beard",
+          "translation": "kingē",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "because",
+          "translation": "natta",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bed",
+          "translation": "ui",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bee",
+          "translation": "nsuki",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beer",
+          "translation": "uki",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beetle",
+          "translation": "kingolondo",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beg",
+          "translation": "kuvoiya",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "beggar",
+          "translation": "manthia unenge",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "belch",
+          "translation": "kukoa",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bell",
+          "translation": "kiamba",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "bell",
+          "translation": "mbwi",
+          "pronunciation": "",
+          "context": "From Hinde vocabulary (1904)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "cultural-beliefs",
+      "name": "Cultural Beliefs & Practices",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Ancestor spirits",
+          "translation": "Ngoma / Mizimu",
+          "pronunciation": "Common Bantu concept of ancestral spirits that guide and protect the living",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Medicine person / Healer",
+          "translation": "Muganga",
+          "pronunciation": "Traditional healer who uses herbal remedies and spiritual practices",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Divination",
+          "translation": "Kuagulia",
+          "pronunciation": "Practice of seeking knowledge through spiritual means",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Taboo / Prohibition",
+          "translation": "Mwiko",
+          "pronunciation": "Cultural prohibition believed to bring misfortune if violated",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Blessing",
+          "translation": "Kuthathia",
+          "pronunciation": "Invocation of good fortune, often by elders",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Curse",
+          "translation": "Kirumi",
+          "pronunciation": "Invocation of misfortune, feared across Bantu communities",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred grove / shrine",
+          "translation": "Kithembe",
+          "pronunciation": "Sacred natural site used for ceremonies and offerings",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Initiation rites",
+          "translation": "Irua",
+          "pronunciation": "Coming-of-age ceremonies marking transition to adulthood",
+          "context": "",
+          "audioFile": null
+        }
       ]
     }
   ]

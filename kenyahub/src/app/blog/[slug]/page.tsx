@@ -1,6 +1,6 @@
 import { Client, Databases, Query } from "node-appwrite";
 import BlogPostContent from "./BlogPostContent";
-import { STATIC_BLOG_POSTS, getStaticBlogPost, getStaticBlogSlugs } from "@/data/blog-posts";
+import { STATIC_BLOG_POSTS, getStaticBlogPost, getStaticBlogSlugs, type BlogSource } from "@/data/blog-posts";
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
@@ -17,6 +17,7 @@ interface BlogPost {
   readTime: number;
   coverImage?: string;
   content?: string;
+  sources?: BlogSource[];
 }
 
 // Generate static params for all blogs at build time
@@ -139,6 +140,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       tags: staticPost.tags,
       readTime: staticPost.readTime,
       content: staticPost.content,
+      sources: staticPost.sources,
     };
   }
 

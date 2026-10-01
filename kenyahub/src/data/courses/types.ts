@@ -15,6 +15,7 @@ export interface LanguageConfig {
   speechLocale: string;
   description: string;
   color: string;
+  sources?: string[];
 }
 
 /* ─── Course Structure: Unit → Skill → Exercise ─────────── */

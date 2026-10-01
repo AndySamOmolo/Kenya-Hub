@@ -415,5 +415,66 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'kikuyu-unit-5',
+    title: 'Unit 5: Grammar Foundations from First Lessons',
+    description: 'Use explicit examples from First Lessons in Kikuyu to recognize noun-class pairs and infinitive forms.',
+    icon: '📚',
+    skills: [
+      {
+        id: 'kikuyu-noun-class-pairs',
+        title: 'Noun-Class Pairs',
+        icon: 'Layers',
+        description: 'Recognize common singular and plural pairs used in the textbook grammar sequence.',
+        tips: 'First Lessons in Kikuyu introduces noun classes as agreement groups, not as biological genders. These examples are a study aid from the historical textbook and should be checked against contemporary Gĩkũyũ usage.',
+        culturalNote: 'Noun classes organize agreement across a sentence. A learner should memorize the pair and listen for the matching agreement before trying to generalize a pattern.',
+        words: [
+          { target: 'Mũndũ', source: 'Person', hint: 'Human singular example' },
+          { target: 'Andũ', source: 'People', hint: 'Human plural example' },
+          { target: 'Mũtĩ', source: 'Tree', hint: 'Class 3 example' },
+          { target: 'Mĩtĩ', source: 'Trees', hint: 'Class 4 plural example' },
+          { target: 'Kĩama', source: 'Council', hint: 'Class 7 example' },
+          { target: 'Ciama', source: 'Councils', hint: 'Class 8 plural example' }
+        ],
+        sentences: [],
+        authoredExercises: [
+          {
+            type: 'match_pairs',
+            prompt: 'Match the Gĩkũyũ noun-class examples:',
+            correctAnswer: 'Mũndũ: Person, Andũ: People, Mũtĩ: Tree, Mĩtĩ: Trees',
+            pairs: [
+              { left: 'Mũndũ', right: 'Person' },
+              { left: 'Andũ', right: 'People' },
+              { left: 'Mũtĩ', right: 'Tree' },
+              { left: 'Mĩtĩ', right: 'Trees' }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'kikuyu-infinitives',
+        title: 'Infinitives and Actions',
+        icon: 'Activity',
+        description: 'Identify the infinitive forms that introduce action verbs in the textbook examples.',
+        tips: 'The textbook presents infinitives as a useful starting point for studying verb formation. Learn the complete form first; do not assume that an English verb maps to one form in every context.',
+        words: [
+          { target: 'Kũrĩma', source: 'To cultivate', hint: 'Agricultural action' },
+          { target: 'Gũceera', source: 'To visit', hint: 'Movement or visiting' },
+          { target: 'Kũmenya', source: 'To know', hint: 'Knowledge or understanding' },
+          { target: 'Kũhoya', source: 'To pray / ask', hint: 'Prayer or asking' }
+        ],
+        sentences: [],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'Which form means “to cultivate” in this source-based lesson?',
+            correctAnswer: 'Kũrĩma',
+            options: ['Kũrĩma', 'Gũceera', 'Kũmenya', 'Kũhoya'],
+            hint: 'It refers to working the land.'
+          }
+        ]
+      }
+    ]
   }
 ];

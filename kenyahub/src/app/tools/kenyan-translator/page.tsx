@@ -21,6 +21,7 @@ import kisiiDict from "@/data/dictionaries/kisii.json";
 import somaliDict from "@/data/dictionaries/somali.json";
 import turkanaDict from "@/data/dictionaries/turkana.json";
 import mijikendaDict from "@/data/dictionaries/mijikenda.json";
+import tesoDict from "@/data/dictionaries/teso.json";
 
 // Import language metadata for "coming soon" languages
 import langData from "@/data/kenya-languages.json";
@@ -63,7 +64,7 @@ interface Dictionary {
 const ALL_DICTS: Dictionary[] = [
   swahiliDict, kikuyuDict, luoDict, kalenjinDict,
   luhyaDict, kambaDict, meruDict, maasaiDict,
-  kisiiDict, somaliDict, turkanaDict, mijikendaDict,
+  kisiiDict, somaliDict, turkanaDict, mijikendaDict, tesoDict,
 ];
 
 const DICT_MAP: Record<string, Dictionary> = {};

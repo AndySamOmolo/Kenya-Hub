@@ -563,6 +563,31 @@ export function getToolsByCategory(category: ToolCategory): Tool[] {
   return TOOLS.filter(t => t.category === category);
 }
 
+const TOOL_USAGE_SCORES: Record<string, number> = {
+  'paye-calculator': 100,
+  'mpesa-fee-calculator': 99,
+  'cbc-curriculum': 97,
+  'kuccps-cluster-calculator': 96,
+  'kcse-grade-calculator': 95,
+  'public-holidays': 93,
+  'matatu-routes': 92,
+  'number-plate-decoder': 90,
+  'mobile-number-prefix': 89,
+  'helb-calculator': 88,
+  'school-terms': 87,
+  'learn': 86,
+};
+
+export function getToolUsageScore(tool: Tool): number {
+  return tool.usageScore ?? TOOL_USAGE_SCORES[tool.slug] ?? 0;
+}
+
+export function getPopularTools(count: number): Tool[] {
+  return [...TOOLS]
+    .sort((a, b) => getToolUsageScore(b) - getToolUsageScore(a) || a.title.localeCompare(b.title))
+    .slice(0, count);
+}
+
 export function getRelatedTools(slug: string, count: number = 4): Tool[] {
   const current = TOOLS.find(t => t.slug === slug);
   if (!current) return [];

@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "0.2.0",
-  "lastUpdated": "2026-09",
-  "contributorNote": "Turkana (Ng'aturukana) is an Eastern Nilotic (Plains Nilotic) language spoken in Kenya's largest county. Core dataset compiled and adapted from 'A Classified Vocabulary of the Turkana in Northwestern Kenya' by Itaru Ohta (Center for African Area Studies, Kyoto University, 1989).",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Turkana (Ng'aturukana) is an Eastern Nilotic (Plains Nilotic) language spoken in Kenya's largest county. Core dataset compiled and adapted from 'A Classified Vocabulary of the Turkana in Northwestern Kenya' by Itaru Ohta (Center for African Area Studies, Kyoto University, 1989). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -1353,6 +1353,433 @@
           "translation": "Adyaka ayong",
           "pronunciation": "ah-dyah-kah ah-yohng",
           "context": "Stating illness.",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "historical-vocabulary",
+      "name": "Historical Vocabulary (Barton 1921)",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "I",
+          "translation": "ayon",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "thou",
+          "translation": "ion",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "we",
+          "translation": "thowa",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "ye",
+          "translation": "eth",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "they",
+          "translation": "keth",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "my",
+          "translation": "akan",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "thy",
+          "translation": "ekon",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "this",
+          "translation": "-en, -lo, or ngol",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "yesterday",
+          "translation": "ngon",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "where",
+          "translation": "neni",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Arm",
+          "translation": "akan, pl. ngakanin",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "egur, pl. ngurai",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "arono, pl. ngaroko",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "epol, pl. ngepolok",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "nakot",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "akoit, pl. ngakoiyo",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "lokadokan, pl. ngalokadokon",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Chest",
+          "translation": "etorob, pl. ngatorobio",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "eirkatungan, pl. ngatukok",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "atāka, pl. ngatak, see \"oxen\"",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Daughter",
+          "translation": "apethe, pl. ngapethur",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "erwait, pl. ngurwa, see \"morning\", \"time\", etc",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "agit, pl. nyagi",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Enemy",
+          "translation": "emoit, pl. ngemoi",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Evening",
+          "translation": "ebon",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "akon, pl. ngakonyan",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "baba, pl. tababa",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "akim, pl. ngakimia, see \"stick\"",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "akimoich, pl. ngimocha",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "epay, pl. ngepaylon",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "akini, pl. ngakini",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "ejok, pl. ngejokok",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "atimat, pl. ngatim",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "akan, pl. ngakanin, see \"palm\"",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "He",
+          "translation": "ngeth",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "ako, pl. nyakis",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "etou, pl. ngetai",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Husband",
+          "translation": "lokiliakan, pl. ngiliokoka",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "I",
+          "translation": "ayon",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "akun, pl. ngakungin",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "akeju, pl. ngakeju, see \"foot\"",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "elap, pl. ngelapio",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "toto, pl. tatoto",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "akitok, pl. ngakituka, see \"tooth\"",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "aliep, pl. ngaliep",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "My",
+          "translation": "akan, pl. ngulukan",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "emotherin, pl. ngemotheringa",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "akuari, pl. ngakuaretha, see \"time\"",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "mam",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "ekumi, pl. ngikumith",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Our",
+          "translation": "akothi, pl. ngulu kothi",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "cow",
+          "translation": "atāka, pl. ngatak",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "akiru",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "ethiket, pl. ngethiketa",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "lokadokan, pl. ngaitotui (?), see \"brother\"",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "ngaju",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "edit, pl. ngedithok",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Son",
+          "translation": "edit, pl. ngedithok",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach",
+          "translation": "eboi, pl. ngaboyo",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "akolon, pl. ngakolon, see \"time\"",
+          "pronunciation": "",
+          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
           "audioFile": null
         }
       ]

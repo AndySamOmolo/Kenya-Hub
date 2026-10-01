@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { MapPin, ShieldCheck, BadgeCheck, Smartphone } from "lucide-react";
-import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
+import { TOOLS, TOOL_CATEGORIES, getPopularTools } from "@/lib/tools-registry";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function HomePage() {
-  const popularTools = TOOLS.slice(0, 6);
+  const popularTools = getPopularTools(6);
 
   const websiteSchema = {
     "@context": "https://schema.org",

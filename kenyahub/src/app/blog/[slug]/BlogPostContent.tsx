@@ -16,6 +16,7 @@ interface BlogPost {
   readTime: number;
   coverImage?: string;
   content?: string;
+  sources?: { sourceId: string; title: string; note: string }[];
 }
 
 import { markdownToHtml } from "@/lib/markdown";
@@ -156,6 +157,20 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           className="prose-blog"
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
+
+        {post.sources && post.sources.length > 0 && (
+          <aside className="mt-10 rounded-xl border border-border bg-bg-card p-4 sm:p-5">
+            <h2 className="text-sm font-semibold text-text-primary">Sources and context</h2>
+            <div className="mt-3 space-y-3">
+              {post.sources.map((source) => (
+                <div key={source.sourceId}>
+                  <p className="text-xs font-medium text-gold">{source.title}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-text-secondary">{source.note}</p>
+                </div>
+              ))}
+            </div>
+          </aside>
+        )}
 
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">

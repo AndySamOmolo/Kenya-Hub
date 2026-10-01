@@ -8,6 +8,13 @@ export interface StaticBlogPost {
   tags: string[];
   readTime: number;
   content: string;
+  sources?: BlogSource[];
+}
+
+export interface BlogSource {
+  sourceId: string;
+  title: string;
+  note: string;
 }
 
 export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
@@ -509,6 +516,11 @@ For a complete list of traffic offences and fines, see the [KenyaHub Traffic Fin
     updatedAt: "2026-09-28T07:00:00.000Z",
     tags: ["Culture", "History", "Bantu Beliefs", "Kikuyu", "Kamba", "Kenyan Heritage"],
     readTime: 11,
+    sources: [{
+      sourceId: "bantu-beliefs",
+      title: "Bantu Beliefs and Magic",
+      note: "Historical source used for the Kikuyu and Kamba sections; claims should be read in their colonial-era context.",
+    }],
     content: `## The Spiritual Landscape of Pre-Colonial Kenya
 
 Long before formal written legislation or external creeds arrived in East Africa, Kenyan Bantu communities — particularly the **Agĩkũyũ (Kikuyu)** and **Akamba (Kamba)** — operated under a remarkably sophisticated, coherent spiritual and ethical cosmology. 
@@ -639,6 +651,11 @@ While mainstream religious affiliations in Kenya have evolved over the past cent
     updatedAt: "2026-09-28T09:00:00.000Z",
     tags: ["History", "Culture", "Blacksmiths", "Kikuyu", "Kamba", "Kenyan Heritage"],
     readTime: 9,
+    sources: [{
+      sourceId: "bantu-beliefs",
+      title: "Bantu Beliefs and Magic",
+      note: "Historical source used for the discussion of smithing, ritual, and social authority; community review remains important.",
+    }],
     content: `## The Secret Masters of Fire and Iron
 
 In pre-colonial East Africa, ironworking was never considered merely a mundane mechanical trade. Among the **Agĩkũyũ (Kikuyu)** and **Akamba (Kamba)** of Kenya, blacksmiths (*Aturi*, singular *Mũturi*) belonged to an exclusive, hereditary, semi-mystical brotherhood endowed with immense spiritual authority.
@@ -716,6 +733,108 @@ The technological legacy of Kenya's pre-colonial ironworkers did not vanish with
 - [Traditional Bantu Beliefs & Magic in Kenya (Full Guide)](/blog/traditional-bantu-beliefs-and-magic-in-kenya/)
 - [1,000 Kikuyu Proverbs (Thimo cia Gĩkũyũ) Explorer](/tools/kikuyu-proverbs/)
 - [Kenyan Languages Translator & Vocabulary Directory](/tools/kenyan-translator/)`,
+  },
+  {
+    slug: "first-fruits-sacred-ecology-kikuyu-kamba-history",
+    title: "First Fruits, Planting, and Sacred Ecology in Historical Kikuyu and Kamba Accounts",
+    excerpt: "What C. W. Hobley recorded about planting, harvest, sacred places, and environmental memory, read as colonial-era history rather than a universal description of living practice.",
+    author: "KenyaHub Cultural Heritage",
+    publishedAt: "2026-10-01T07:00:00.000Z",
+    updatedAt: null,
+    tags: ["Culture", "History", "Agriculture", "Kikuyu", "Kamba"],
+    readTime: 7,
+    sources: [{
+      sourceId: "bantu-beliefs",
+      title: "Bantu Beliefs and Magic",
+      note: "Historical account focused on Kikuyu and Kamba communities in colonial-era Kenya; community review is needed for contemporary interpretation.",
+    }],
+    content: `## A Historical Record of Seasonal Practice
+
+In *Bantu Beliefs and Magic* (1922), C. W. Hobley describes planting and harvest as activities surrounded by prayer, elders, offerings, and rules about place. The book is a colonial-era record of Kikuyu and Kamba communities, not a complete account of every Bantu-speaking society and not a guide to current ceremony.
+
+## Land, Rain, and Responsibility
+
+The source connects agriculture to relationships among people, rain, soil, animals, and the creator. Sacred trees, groves, stones, and mountain landscapes appear as places where community memory and obligation were concentrated. That does not mean every grove had the same meaning or that historical restrictions survive unchanged today.
+
+## Reading the Source Carefully
+
+Hobley wrote as an administrator and outside observer. His descriptions should be compared with community knowledge, later scholarship, and present-day conservation work. The useful lesson is not that one old ritual explains modern environmentalism, but that land stewardship has long had social, ethical, and spiritual dimensions in Kenya.
+
+This article uses the source for historical context only. It does not prescribe sacrifice, claim continuity, or generalize Kikuyu and Kamba accounts to all Kenyan communities.`,
+  },
+  {
+    slug: "thahu-purification-and-restoration-kikuyu-kamba",
+    title: "Thahu, Purification, and Restoration: Reading a Historical Kikuyu and Kamba Concept",
+    excerpt: "A careful explanation of how Hobley distinguishes ritual defilement, deliberate cursing, and restoration, with clear limits on what the historical account can tell us today.",
+    author: "KenyaHub Cultural Heritage",
+    publishedAt: "2026-10-01T08:00:00.000Z",
+    updatedAt: null,
+    tags: ["Culture", "History", "Kikuyu", "Kamba", "Heritage"],
+    readTime: 8,
+    sources: [{
+      sourceId: "bantu-beliefs",
+      title: "Bantu Beliefs and Magic",
+      note: "The terminology and interpretation are reported from a 1922 colonial-era source and should be checked with community experts.",
+    }],
+    content: `## More Than a Translation
+
+The word *thahu* is often reduced to “curse” in short explanations. Hobley’s account presents a more complicated historical picture for Kikuyu, while describing related Kamba ideas with different terminology. In that account, ritual defilement could be understood as a condition requiring recognition and restoration, while a deliberate curse was a different kind of social and moral act.
+
+## Why the Distinction Matters
+
+Turning every form of misfortune into “magic” erases the categories the source was trying to describe. It also risks making a historical community appear irrational. A responsible reading keeps the original terms visible, explains that translations are approximate, and avoids treating the account as medical or legal advice.
+
+## Historical Limits
+
+Hobley recorded beliefs through a colonial administrative lens. Contemporary Kikuyu and Kamba people are the authorities on how these words should be understood today, and usage may vary by family, region, generation, and religious setting. This article therefore describes a historical text, not a living belief as though it were uniform or unchanged.`,
+  },
+  {
+    slug: "circumcision-age-grades-community-memory-kikuyu-kamba",
+    title: "Circumcision, Age Grades, and Community Membership in a Historical Source",
+    excerpt: "How Hobley connected initiation, age organization, and belonging in his Kikuyu and Kamba account, and why modern readers should avoid sensational or restricted detail.",
+    author: "KenyaHub Cultural Heritage",
+    publishedAt: "2026-10-01T09:00:00.000Z",
+    updatedAt: null,
+    tags: ["Culture", "History", "Kikuyu", "Kamba", "Community"],
+    readTime: 7,
+    sources: [{
+      sourceId: "bantu-beliefs",
+      title: "Bantu Beliefs and Magic",
+      note: "Historical discussion of initiation and age organization; ceremonial details are intentionally not reproduced.",
+    }],
+    content: `## Belonging Was Organized Through Life Stages
+
+Hobley’s 1922 book discusses circumcision and age organization as institutions connected to community membership, responsibility, and social memory among the Kikuyu and Kamba he studied. The source is historical and external; it should not be read as a timeless definition of either community.
+
+Age categories can help explain why elders, peers, and household responsibilities appear so often in historical accounts of governance and ceremony. They also show why a single English label can hide several local concepts. Terms, practices, and meanings should be checked with fluent speakers and cultural custodians.
+
+## What This Article Leaves Out
+
+This is not an instructional account of initiation. It does not reproduce restricted ceremonial knowledge, prescribe a rite, or make claims about present-day practice. It records how one colonial-era source organized its observations and leaves room for contemporary community voices to correct, refine, or reject that framing.`,
+  },
+  {
+    slug: "councils-oaths-compensation-kikuyu-kamba-history",
+    title: "Councils, Oaths, and Compensation in Historical Kikuyu and Kamba Accounts",
+    excerpt: "A source-critical look at councils, reconciliation, oaths, and compensation in Hobley’s account, kept separate from Kenya’s current courts and constitutional law.",
+    author: "KenyaHub Cultural Heritage",
+    publishedAt: "2026-10-01T10:00:00.000Z",
+    updatedAt: null,
+    tags: ["History", "Culture", "Justice", "Kikuyu", "Kamba"],
+    readTime: 8,
+    sources: [{
+      sourceId: "bantu-beliefs",
+      title: "Bantu Beliefs and Magic",
+      note: "Historical account of customary institutions; it is not a description of Kenya’s current legal process.",
+    }],
+    content: `## Customary Settlement as Described by Hobley
+
+The book describes councils of elders, public deliberation, oaths, reconciliation, and compensation as ways disputes could be addressed in the Kikuyu and Kamba communities under discussion. These accounts show that law was not only a written rule: it was also a relationship among families, elders, witnesses, obligations, and restoration.
+
+## Do Not Collapse History Into Modern Law
+
+Historical customary institutions are not interchangeable with Kenya’s courts, statutory tribunals, or constitutional rights. Article 159 of the Constitution recognizes alternative dispute resolution within a modern legal framework, but that does not make every historical practice automatically lawful or current.
+
+The best use of this source is comparative and critical: ask how communities documented responsibility and repair, identify the colonial framing, and consult contemporary scholars and community members before drawing a line to the present.`,
   },
   {
     slug: "how-bantu-languages-work-noun-classes-guide",

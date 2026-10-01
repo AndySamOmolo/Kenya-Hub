@@ -4,8 +4,8 @@ import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
-import { getCategoryInfo } from "@/lib/tools-registry";
-import { Pin, Wrench } from "lucide-react";
+import { getCategoryInfo, getToolUsageScore } from "@/lib/tools-registry";
+import { ArrowDownAZ, Pin, TrendingUp, Wrench } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 
@@ -14,6 +14,7 @@ function ToolsContent() {
   const initialCategory = searchParams.get("category") || "all";
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">("popular");
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
   const [mounted, setMounted] = useState(false);
 
@@ -60,8 +61,12 @@ function ToolsContent() {
       );
     }
 
-    return tools;
-  }, [selectedCategory, searchQuery]);
+    return [...tools].sort((a, b) => {
+      if (sortBy === "alphabetical") return a.title.localeCompare(b.title);
+      if (sortBy === "category") return a.category.localeCompare(b.category) || a.title.localeCompare(b.title);
+      return getToolUsageScore(b) - getToolUsageScore(a) || a.title.localeCompare(b.title);
+    });
+  }, [selectedCategory, searchQuery, sortBy]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -130,6 +135,29 @@ function ToolsContent() {
           className="input-field max-w-lg text-sm"
           id="tools-search"
          onClear={() => setSearchQuery("")} />
+      </div>
+
+      <div className="flex flex-wrap items-center gap-3 mb-8">
+        <label htmlFor="tools-sort" className="text-xs font-semibold uppercase tracking-wider text-text-muted">
+          Sort tools
+        </label>
+        <div className="relative">
+          {sortBy === "popular" ? (
+            <TrendingUp className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" />
+          ) : (
+            <ArrowDownAZ className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" />
+          )}
+          <select
+            id="tools-sort"
+            value={sortBy}
+            onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
+            className="input-field appearance-none pl-9 pr-8 text-sm"
+          >
+            <option value="popular">Most used</option>
+            <option value="alphabetical">A-Z</option>
+            <option value="category">Category</option>
+          </select>
+        </div>
       </div>
 
       {/* Category Tabs */}

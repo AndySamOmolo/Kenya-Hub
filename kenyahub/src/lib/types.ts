@@ -21,6 +21,8 @@ export interface Tool {
   dataSource: string;
   isLive: boolean;
   icon: string;
+  /** Curated usage score used until privacy-preserving analytics are available. */
+  usageScore?: number;
 }
 
 export interface BlogPost {

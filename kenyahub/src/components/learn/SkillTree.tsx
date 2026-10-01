@@ -1,4 +1,5 @@
 "use client";
+import { getSourcesForLanguage } from "@/data/language-sources";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 
@@ -49,6 +50,7 @@ export default function SkillTree({
   onStartReview,
   onGoBack,
 }: SkillTreeProps) {
+  const sources = getSourcesForLanguage(config.id);
   const [expandedUnit, setExpandedUnit] = useState<string | null>(
     units[0]?.id || null
   );
@@ -104,6 +106,19 @@ export default function SkillTree({
                 {config.name}
               </h1>
               <p className="text-xs text-text-secondary">{config.description}</p>
+              {sources.length > 0 && (
+                <div className="mt-2 space-y-1 text-[0.65rem] leading-relaxed text-text-muted">
+                  <p>Built from:</p>
+                  {sources.map((source) => (
+                    <p key={source.id} className="pl-2">
+                      <span className="text-text-secondary">{source.title}</span>{" "}
+                      <span className={source.ingestionStatus === "integrated" ? "text-green-400" : "text-gold"}>
+                        ({source.ingestionStatus === "integrated" ? "integrated" : "research reference"})
+                      </span>
+                    </p>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
