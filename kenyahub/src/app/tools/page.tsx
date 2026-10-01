@@ -62,9 +62,13 @@ function ToolsContent() {
     }
 
     return [...tools].sort((a, b) => {
-      if (sortBy === "alphabetical") return a.title.localeCompare(b.title);
-      if (sortBy === "category") return a.category.localeCompare(b.category) || a.title.localeCompare(b.title);
-      return getToolUsageScore(b) - getToolUsageScore(a) || a.title.localeCompare(b.title);
+      const labelComparison = a.shortTitle.localeCompare(b.shortTitle, undefined, {
+        numeric: true,
+        sensitivity: "base",
+      });
+      if (sortBy === "alphabetical") return labelComparison;
+      if (sortBy === "category") return a.category.localeCompare(b.category) || labelComparison;
+      return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
     });
   }, [selectedCategory, searchQuery, sortBy]);
 
@@ -151,7 +155,7 @@ function ToolsContent() {
             id="tools-sort"
             value={sortBy}
             onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
-            className="input-field appearance-none pl-9 pr-8 text-sm"
+            className="select-field pl-9 text-sm"
           >
             <option value="popular">Most used</option>
             <option value="alphabetical">A-Z</option>

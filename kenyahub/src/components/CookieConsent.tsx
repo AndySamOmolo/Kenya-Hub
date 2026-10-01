@@ -67,12 +67,14 @@ export default function CookieConsent() {
   const handleAccept = () => {
     localStorage.setItem("kh-cookie-consent", "accepted");
     updateConsent(true);
+    window.dispatchEvent(new Event("kh-cookie-consent-updated"));
     setVisible(false);
   };
 
   const handleDecline = () => {
     localStorage.setItem("kh-cookie-consent", "declined");
     updateConsent(false);
+    window.dispatchEvent(new Event("kh-cookie-consent-updated"));
     setVisible(false);
   };
 

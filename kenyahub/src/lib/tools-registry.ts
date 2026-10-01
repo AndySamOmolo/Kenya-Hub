@@ -584,7 +584,10 @@ export function getToolUsageScore(tool: Tool): number {
 
 export function getPopularTools(count: number): Tool[] {
   return [...TOOLS]
-    .sort((a, b) => getToolUsageScore(b) - getToolUsageScore(a) || a.title.localeCompare(b.title))
+    .sort((a, b) => getToolUsageScore(b) - getToolUsageScore(a) || a.shortTitle.localeCompare(b.shortTitle, undefined, {
+      numeric: true,
+      sensitivity: 'base',
+    }))
     .slice(0, count);
 }
 

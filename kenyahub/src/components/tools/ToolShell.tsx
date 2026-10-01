@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getRelatedTools, getCategoryInfo } from "@/lib/tools-registry";
 import type { Tool } from "@/lib/types";
 import PinToolButton from "./PinToolButton";
+import ToolAccessTracker from "./ToolAccessTracker";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 interface ToolShellProps {
@@ -66,6 +67,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+      <ToolAccessTracker tool={tool} />
       {/* Structured data */}
       <script
         type="application/ld+json"
