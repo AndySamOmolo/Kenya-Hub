@@ -46,7 +46,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           { target: 'Aca', source: 'No', pronunciation: 'ah-chah', hint: 'Negative response' }
         ],
         sentences: [
-          { target: 'Wĩ mwega, mũrata waku?', source: 'Are you well, my friend?' },
+          { target: 'Wĩ mwega, mũrata wakwa?', source: 'Are you well, my friend?' },
           { target: 'Ndĩ mwega, nĩ wega mũno.', source: 'I am fine, thank you very much.' },
           { target: 'Thiĩ na wega, nĩtũkuona rũciũ.', source: 'Go well, we will see you tomorrow.' }
         ],
@@ -363,7 +363,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         icon: 'BookOpen',
         description: 'Explore classic maxims on truth, respect for elders, and discretion.',
         tips: "Respect for truth and history is captured in 'Kĩhooto gĩtĩkũragwo nĩ rũũĩ' (Justice and truth cannot be swept away by the river). Discretion in family matters is maintained through 'Cia mũciĩ itiumaga ndira' (Do not wash dirty linen in public).",
-        culturalNote: "The proverb 'Kahiga gakũrũ gatiagararagwo nĩ maai' (The river does not leap over an ancient stone) underlines the absolute respect due to elders and ancient traditions in traditional Kikuyu governance.",
+        culturalNote: "The proverb 'Kahiga gakũrũ gatiagararagwo nĩ maaĩ' (The river does not leap over an ancient stone) underlines the absolute respect due to elders and ancient traditions in traditional Kikuyu governance.",
         words: [
           { target: 'Ũũgĩ', source: 'Wisdom / Intelligence', pronunciation: 'oo-oo-gee', hint: 'Insight and sound judgement' },
           { target: 'Mĩtugo', source: 'Customs / Character', pronunciation: 'mee-too-goh', hint: 'Moral behavior and tradition' },
@@ -372,7 +372,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           { target: 'Ũhoro wa ma', source: 'The true story / Truth', pronunciation: 'oo-hoh-roh wah mah', hint: 'Verified truth' }
         ],
         sentences: [
-          { target: 'Kahiga gakũrũ gatiagararagwo nĩ maai.', source: 'The river does not jump over an ancient stone (Old age is honourable).' },
+          { target: 'Kahiga gakũrũ gatiagararagwo nĩ maaĩ.', source: 'The river does not jump over an ancient stone (Old age is honourable).' },
           { target: 'Cia mũciĩ itiumaga ndira.', source: 'Home affairs must not go into the open fields (Keep family matters private).' },
           { target: 'Mũũkĩrĩ tene acokaga tene.', source: 'He who wakes early returns early (The early bird catches the worm).' }
         ],
@@ -437,7 +437,11 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           { target: 'Kĩama', source: 'Council', hint: 'Class 7 example' },
           { target: 'Ciama', source: 'Councils', hint: 'Class 8 plural example' }
         ],
-        sentences: [],
+        sentences: [
+          { target: 'Mũndũ ũmwe nĩ aroka mũciĩ.', source: 'One person is coming home.' },
+          { target: 'Mĩtĩ ĩno nĩ mĩraya mũno.', source: 'These trees are very tall.' },
+          { target: 'Ciama ciothe nĩ ikũngano.', source: 'All councils are gathering.' }
+        ],
         authoredExercises: [
           {
             type: 'match_pairs',
@@ -464,7 +468,11 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           { target: 'Kũmenya', source: 'To know', hint: 'Knowledge or understanding' },
           { target: 'Kũhoya', source: 'To pray / ask', hint: 'Prayer or asking' }
         ],
-        sentences: [],
+        sentences: [
+          { target: 'Kũrĩma mũgũnda nĩ kũrĩ bata.', source: 'To cultivate the farm is important.' },
+          { target: 'Nĩ wega kũmenya ũhoro wa ma.', source: 'It is good to know the true story.' },
+          { target: 'Nĩtũgwĩciria gũceera gwaku.', source: 'We are planning to visit your place.' }
+        ],
         authoredExercises: [
           {
             type: 'multiple_choice',

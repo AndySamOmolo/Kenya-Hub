@@ -168,14 +168,14 @@ export const LUHYA_UNITS: CourseUnit[] = [
         words: [
           { target: 'Papa', source: 'Father', pronunciation: 'pah-pah', hint: 'Also "Taata" or "Seefwe" (our father)', example: 'Papa ali ingo.' },
           { target: 'Mama', source: 'Mother', pronunciation: 'mah-mah', hint: 'Also "Mayi" or "Neefwe" (our mother)', example: 'Mama ateekha obusuma.' },
-          { target: 'Omwana', source: 'Child', pronunciation: 'ohm-wah-nah', hint: 'Plural: Abaana (the children)', example: 'Omwana akona.' },
-          { target: 'Abaana', source: 'Children', pronunciation: 'ah-bah-ah-nah', hint: 'Plural of omwana', example: 'Abaana bano basoma.' },
+          { target: 'Omwana', source: 'Child', pronunciation: 'ohm-wah-nah', hint: 'Plural: Abaana (Wanga: Abana)', example: 'Omwana akona.' },
+          { target: 'Abaana', source: 'Children', pronunciation: 'ah-bah-ah-nah', hint: 'Plural of omwana (Wanga: abana)', example: 'Abaana bano basoma.' },
           { target: 'Omusaatsa', source: 'Man / Husband', pronunciation: 'oh-moo-sah-ah-tsah', hint: 'Plural: Abasaatsa', example: 'Omusaatsa akhola.' },
           { target: 'Omukhasi', source: 'Woman / Wife', pronunciation: 'oh-moo-khah-see', hint: 'Plural: Abakhasi', example: 'Omukhasi akhoonya omwana.' },
           { target: 'Omusiani', source: 'Boy / Young man', pronunciation: 'oh-moo-see-ah-nee', hint: 'Plural: Abasiani', example: 'Omusiani achenda.' },
           { target: 'Omukhaana', source: 'Girl / Young woman', pronunciation: 'oh-moo-khah-ah-nah', hint: 'Plural: Abakhaana', example: 'Omukhaana ateekha.' },
           { target: 'Omwitsa', source: 'Friend', pronunciation: 'ohm-wee-tsah', hint: 'Plural: Abeetsa (friends); also "omwina"', example: 'Omwitsa wanje ali hano.' },
-          { target: 'Kuuka', source: 'Grandfather', pronunciation: 'koo-oo-kah', hint: 'Elder patriarch; also father-in-law' }
+          { target: 'Kuuka', source: 'Grandfather', pronunciation: 'koo-oo-kah', hint: 'Elder patriarch; plural: Abakuka (ancestors/grandfathers in Wanga)' }
         ],
         sentences: [
           { target: 'Papa nomukhasi bali ingo.', source: 'Father and mother/wife are at home.' },
@@ -293,6 +293,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         culturalNote: "Oral communication and debate are highly appreciated in village barazas. Speaking persuasively ('okhuboola bulayi') is considered a mark of maturity and wisdom.",
         words: [
           { target: 'Okhuboola', source: 'To speak / say', pronunciation: 'oh-khoo-boh-oh-lah', hint: 'Present: alola / aboola', example: 'Aboola bulayi (He speaks well).' },
+          { target: 'Okhulia', source: 'To eat', pronunciation: 'oh-khoo-lee-ah', hint: 'Wanga: okhulia (Present: elia / alia)', example: 'Alia obusuma.' },
           { target: 'Okhuteekha', source: 'To cook', pronunciation: 'oh-khoo-teh-eh-khah', hint: 'Present: endekha (I cook), ateekha', example: 'Ateekha obusuma.' },
           { target: 'Okhumenya', source: 'To live / reside', pronunciation: 'oh-khoo-meh-nyah', hint: 'Present: emenya (I live), amenya', example: 'Amenya ingo.' },
           { target: 'Okhulola', source: 'To see / look', pronunciation: 'oh-khoo-loh-lah', hint: 'Present: endola (I see), alola', example: 'Endola omwana.' },
@@ -306,7 +307,8 @@ export const LUHYA_UNITS: CourseUnit[] = [
         sentences: [
           { target: 'Endola omwana nomusaatsa.', source: 'I see the child and the man.' },
           { target: 'Enyala okhuteekha bulayi.', source: 'I can cook well.' },
-          { target: 'Abandu bamenya halala.', source: 'The people live together.' }
+          { target: 'Abandu bamenya halala.', source: 'The people live together.' },
+          { target: 'Omwana alia obusuma bulano.', source: 'The child eats ugali now.' }
         ],
         authoredExercises: [
           {

@@ -68,36 +68,36 @@
     },
     {
       "step": 3,
-      "title": "Apply for Provisional License",
-      "description": "Apply on eCitizen for an Interim Driving License (IDL) / provisional license",
-      "cost": "KES 600",
+      "title": "Apply for Provisional License (PDL)",
+      "description": "Apply on eCitizen for an Interim Driving License / provisional license (PDL)",
+      "cost": "KES 650",
       "documents": ["DL Form 1", "Driving school enrollment letter", "National ID"]
     },
     {
       "step": 4,
       "title": "Theory Test (Highway Code)",
       "description": "Computer-based theory test at NTSA testing centre. Covers road signs, rules, and safety",
-      "cost": "KES 600",
+      "cost": "KES 650",
       "documents": ["Provisional license", "National ID"]
     },
     {
       "step": 5,
       "title": "Practical Test",
       "description": "Driving test at NTSA-designated testing ground. Includes road driving, parking, reversing",
-      "cost": "KES 800",
+      "cost": "KES 1,050",
       "documents": ["Theory test pass certificate", "Provisional license", "Driving school completion certificate"]
     },
     {
       "step": 6,
-      "title": "Collect Driving License",
-      "description": "Pay for and collect your driving license from NTSA or Huduma Centre",
-      "cost": "KES 1,750 (license fee)",
+      "title": "Collect Smart Driving License",
+      "description": "Pay for and collect your biometric NTSA Smart Driving License (valid for 3 years)",
+      "cost": "KES 3,050",
       "documents": ["Practical test pass certificate", "All previous documents"]
     }
   ],
   "renewalProcess": {
     "renewalPeriod": "Every 3 years from date of issue",
-    "renewalFee": 1750,
+    "renewalFee": 3050,
     "lateRenewalPenalty": "KES 100 per month of delay",
     "requirements": ["Valid National ID", "Current driving license", "Recent passport photo", "Medical form (DL Form 1) for Class C and above"]
   },

@@ -92,7 +92,7 @@ export const TESO_UNITS: CourseUnit[] = [
         tips: "Ateso uses a base-5 counting system similar to Turkana. The numbers 6–9 are formed by adding 1–4 to 5 (akan). For example, 6 is 'akankacel' (5+1) and 7 is 'akankaare' (5+2). Ten is 'atomon'.",
         culturalNote: "Counting livestock is an important daily activity among the Iteso. Cattle, goats, and chickens are counted carefully each evening when they return to the homestead.",
         words: [
-          { target: 'Eong', source: 'One', pronunciation: 'eh-ong', hint: 'Cardinal 1' },
+          { target: 'Epei', source: 'One', pronunciation: 'eh-peh-ee', hint: 'Cardinal 1 (or Ediope)' },
           { target: 'Aare', source: 'Two', pronunciation: 'ah-reh', hint: 'Cardinal 2' },
           { target: 'Auni', source: 'Three', pronunciation: 'ah-oo-nee', hint: 'Cardinal 3' },
           { target: 'Aongon', source: 'Four', pronunciation: 'ah-ohn-gohn', hint: 'Cardinal 4' },
@@ -113,7 +113,7 @@ export const TESO_UNITS: CourseUnit[] = [
             type: 'multiple_choice',
             prompt: 'What is "Five" in Ateso?',
             correctAnswer: 'Akan',
-            options: ['Akan', 'Auni', 'Eong', 'Atomon'],
+            options: ['Akan', 'Auni', 'Epei', 'Atomon'],
             hint: 'Related to the word for "hand"'
           },
           {
@@ -126,9 +126,9 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             type: 'match_pairs',
             prompt: 'Match the Ateso numbers with their values:',
-            correctAnswer: 'Eong: One, Aare: Two, Akan: Five, Atomon: Ten',
+            correctAnswer: 'Epei: One, Aare: Two, Akan: Five, Atomon: Ten',
             pairs: [
-              { left: 'Eong', right: 'One' },
+              { left: 'Epei', right: 'One' },
               { left: 'Aare', right: 'Two' },
               { left: 'Akan', right: 'Five' },
               { left: 'Atomon', right: 'Ten' }
@@ -149,16 +149,16 @@ export const TESO_UNITS: CourseUnit[] = [
         title: 'Family & People',
         icon: 'Users',
         description: 'Learn the Ateso words for family members and people.',
-        tips: "In Ateso, 'Toto' means mother and 'Papa' means father. 'Eong' means person (singular) and 'itunanak' means people (plural). The Iteso have a patrilineal clan system with extended family playing a central role.",
+        tips: "In Ateso, 'Toto' means mother and 'Papa' means father. 'Itunganan' means person (plural 'itunga' or 'itunanak'). 'Ekile' is man / husband, and 'Aberu' is woman / wife. The Iteso have a patrilineal clan system with extended family playing a central role.",
         culturalNote: "The Iteso family structure is built around the extended family (ere). Respect for elders (ikauriak) is paramount, and children are raised communally by the entire clan.",
         words: [
           { target: 'Toto', source: 'Mother', pronunciation: 'toh-toh', hint: 'Maternal parent' },
           { target: 'Papa', source: 'Father', pronunciation: 'pah-pah', hint: 'Paternal parent' },
           { target: 'Ikoku', source: 'Child / Children', pronunciation: 'ee-koh-koo', hint: 'Young person(s)' },
-          { target: 'Eong', source: 'Person', pronunciation: 'eh-ong', hint: 'Individual human being' },
+          { target: 'Itunganan', source: 'Person / Human being', pronunciation: 'ee-toong-ah-nahn', hint: 'Plural: Itunga / Itunanak' },
           { target: 'Itunanak', source: 'People', pronunciation: 'ee-too-nah-nahk', hint: 'Plural of person' },
-          { target: 'Apese', source: 'Woman', pronunciation: 'ah-peh-seh', hint: 'Adult female' },
-          { target: 'Ekerau', source: 'Man', pronunciation: 'eh-keh-rah-oo', hint: 'Adult male' },
+          { target: 'Aberu', source: 'Woman / Wife', pronunciation: 'ah-beh-roo', hint: 'Adult female; plural: Angor (Hilders & Lawrence 1957)' },
+          { target: 'Ekile', source: 'Man / Husband', pronunciation: 'eh-kee-leh', hint: 'Adult male; plural: Ikilyok (Hilders & Lawrence 1957)' },
           { target: 'Tata', source: 'Grandfather', pronunciation: 'tah-tah', hint: 'Paternal or maternal grandfather' },
           { target: 'Kaakaa', source: 'Grandmother', pronunciation: 'kah-kah', hint: 'Paternal or maternal grandmother' },
           { target: 'Ere', source: 'Home / Homestead', pronunciation: 'eh-reh', hint: 'Family compound' }
@@ -166,7 +166,7 @@ export const TESO_UNITS: CourseUnit[] = [
         sentences: [
           { target: 'Toto ejok.', source: 'Mother is well.' },
           { target: 'Ikoku aare kede papa.', source: 'Two children with father.' },
-          { target: 'Ere eong ejok noi.', source: 'My home is very good.' }
+          { target: 'Ere kang ejok noi.', source: 'My home is very good.' }
         ],
         authoredExercises: [
           {
@@ -180,7 +180,7 @@ export const TESO_UNITS: CourseUnit[] = [
             type: 'multiple_choice',
             prompt: 'How do you say "Home" in Ateso?',
             correctAnswer: 'Ere',
-            options: ['Ere', 'Eong', 'Ikoku', 'Apese'],
+            options: ['Ere', 'Itunganan', 'Ikoku', 'Aberu'],
             hint: 'Family compound or homestead'
           },
           {
@@ -312,13 +312,13 @@ export const TESO_UNITS: CourseUnit[] = [
         title: 'Basic Verbs & Actions',
         icon: 'Zap',
         description: 'Learn essential action words in Ateso.',
-        tips: "Ateso verbs typically begin with 'a-' in the infinitive form. For example, 'alosit' (to go), 'abun' (to come), 'anyam' (to eat), 'amuj' (to drink). The verb system uses prefixes to indicate tense and person.",
+        tips: "Ateso verbs typically begin with 'a-' or 'ai-' in the infinitive form. For example, 'alosit' (to go), 'abun' (to come), 'akinyam' (to eat), 'aimat' (to drink). The verb system uses prefixes to indicate tense and person.",
         culturalNote: "Storytelling (etale) is a cherished tradition among the Iteso. Elders use action-rich narratives to teach moral lessons to children around the evening fire.",
         words: [
           { target: 'Alosit', source: 'To go', pronunciation: 'ah-loh-seet', hint: 'Movement away' },
           { target: 'Abun', source: 'To come', pronunciation: 'ah-boon', hint: 'Movement toward' },
-          { target: 'Anyam', source: 'To eat', pronunciation: 'ah-nyahm', hint: 'Consuming food' },
-          { target: 'Amuj', source: 'To drink', pronunciation: 'ah-mooj', hint: 'Consuming liquid' },
+          { target: 'Akinyam', source: 'To eat', pronunciation: 'ah-kee-nyahm', hint: 'Infinitive (Hilders & Lawrence 1957)' },
+          { target: 'Aimat', source: 'To drink', pronunciation: 'ah-ee-maht', hint: 'Infinitive (Hilders & Lawrence 1957)' },
           { target: 'Aenep', source: 'To sleep', pronunciation: 'ah-eh-nehp', hint: 'Resting at night' },
           { target: 'Aijam', source: 'To work', pronunciation: 'ah-ee-jahm', hint: 'Performing labor' },
           { target: 'Aswam', source: 'To speak / To say', pronunciation: 'ah-swahm', hint: 'Verbal communication' },
@@ -329,7 +329,7 @@ export const TESO_UNITS: CourseUnit[] = [
         sentences: [
           { target: 'Alosit ere.', source: 'Go home.' },
           { target: 'Abun ijai.', source: 'Come here.' },
-          { target: 'Anyam akimuj.', source: 'Eat food.' }
+          { target: 'Akinyam akimuj ka aimat akipi.', source: 'Eat food and drink water.' }
         ],
         authoredExercises: [
           {
@@ -342,18 +342,18 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             type: 'multiple_choice',
             prompt: 'How do you say "To eat" in Ateso?',
-            correctAnswer: 'Anyam',
-            options: ['Anyam', 'Amuj', 'Abun', 'Aswam'],
+            correctAnswer: 'Akinyam',
+            options: ['Akinyam', 'Aimat', 'Abun', 'Aswam'],
             hint: 'Consuming food'
           },
           {
             type: 'match_pairs',
             prompt: 'Match the Ateso verbs:',
-            correctAnswer: 'Alosit: To go, Abun: To come, Anyam: To eat, Aenep: To sleep',
+            correctAnswer: 'Alosit: To go, Abun: To come, Akinyam: To eat, Aenep: To sleep',
             pairs: [
               { left: 'Alosit', right: 'To go' },
               { left: 'Abun', right: 'To come' },
-              { left: 'Anyam', right: 'To eat' },
+              { left: 'Akinyam', right: 'To eat' },
               { left: 'Aenep', right: 'To sleep' }
             ]
           }
@@ -377,10 +377,14 @@ export const TESO_UNITS: CourseUnit[] = [
         words: [
           { target: 'Alosit', source: 'To go', hint: 'Infinitive used to anchor verb examples' },
           { target: 'Abun', source: 'To come', hint: 'Infinitive used to anchor verb examples' },
-          { target: 'Anyam', source: 'To eat', hint: 'Infinitive used to anchor verb examples' },
-          { target: 'Amuj', source: 'To drink', hint: 'Infinitive used to anchor verb examples' }
+          { target: 'Akinyam', source: 'To eat', hint: 'Infinitive used to anchor verb examples' },
+          { target: 'Aimat', source: 'To drink', hint: 'Infinitive used to anchor verb examples' }
         ],
-        sentences: [],
+        sentences: [
+          { target: 'Eong alosit ere.', source: 'I am going home.' },
+          { target: 'Edakit aberu ikoku.', source: 'The woman carries the child.' },
+          { target: 'Akituk auni kede ekile.', source: 'Three cows with the man.' }
+        ],
         authoredExercises: [
           {
             type: 'multiple_choice',
@@ -408,7 +412,11 @@ export const TESO_UNITS: CourseUnit[] = [
           { target: 'Aswam', source: 'To speak / say', hint: 'Base verb for pattern study' },
           { target: 'Akirot', source: 'To walk', hint: 'Base verb for pattern study' }
         ],
-        sentences: [],
+        sentences: [
+          { target: 'Akinyam akimuj ka aimat akipi.', source: 'To eat food and to drink water.' },
+          { target: 'Ijo ilipi aberu.', source: 'You ask the woman.' },
+          { target: 'Itunga aarei abun ijai.', source: 'Two people come here.' }
+        ],
         authoredExercises: [
           {
             type: 'match_pairs',

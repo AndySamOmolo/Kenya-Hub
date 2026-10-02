@@ -14,7 +14,7 @@
   "hasAudio": false,
   "dictionaryVersion": "1.1.0",
   "lastUpdated": "2026-10",
-  "contributorNote": "Compiled from 'A First Course in Luyia Grammar' (G. Donohew, Kima) and 'A First Luyia Grammar' (L.L. Appleby, 1961, East African Literature Bureau) with standard Luyia cross-dialect orthography. Enriched with Wanga dialect entries from \"Wanga-English Dictionary\" by Alfred Anangwe & Michael R. Marlo (2008). Enriched with Wanga dialect entries from \"Wanga-English Dictionary\" by Alfred Anangwe & Michael R. Marlo (2008). Enriched with Wanga dialect entries from \"Wanga-English Dictionary\" by Alfred Anangwe & Michael R. Marlo (2008). Enriched with Wanga dialect entries from \"Wanga-English Dictionary\" by Alfred Anangwe & Michael R. Marlo (2008). Enriched with Wanga dialect entries from \"Wanga-English Dictionary\" by Alfred Anangwe & Michael R. Marlo (2008). Enriched with Wanga dialect entries from \"Wanga-English Dictionary\" by Alfred Anangwe & Michael R. Marlo (2008).",
+  "contributorNote": "Compiled from 'A First Course in Luyia Grammar' (G. Donohew, Kima) and 'A First Luyia Grammar' (L. L. Appleby, 1961, East African Literature Bureau) with standard Luyia cross-dialect orthography. Enriched with authentic Oluluyia / Olushiwanga vocabulary and grammatical entries systematically extracted from the 'Wanga-English Dictionary' by Alfred Anangwe & Michael R. Marlo (2008).",
   "categories": [
     {
       "id": "greetings",
@@ -1158,1226 +1158,981 @@
       ]
     },
     {
-      "id": "cultural-beliefs",
-      "name": "Cultural Beliefs & Practices",
-      "icon": "🌿",
+      "id": "kinship-community",
+      "name": "Kinship & Community (Olushiwanga)",
+      "icon": "👥",
       "entries": [
         {
-          "english": "Ancestor spirits",
-          "translation": "Ngoma / Mizimu",
-          "pronunciation": "Common Bantu concept of ancestral spirits that guide and protect the living",
-          "context": "",
+          "english": "Ancestors / Forefathers",
+          "translation": "Abakuka",
+          "pronunciation": "ah-bah-koo-kah",
+          "context": "(n. pl., cl. 2, sg. kuka) Grandfathers, forefathers, ancestors in Wanga tradition",
           "audioFile": null
         },
         {
-          "english": "Medicine person / Healer",
-          "translation": "Muganga",
-          "pronunciation": "Traditional healer who uses herbal remedies and spiritual practices",
-          "context": "",
+          "english": "Grandparents",
+          "translation": "Abakulo",
+          "pronunciation": "ah-bah-koo-loh",
+          "context": "(n. pl., cl. 2) Grandparents, with whom a child can speak freely without the taboo associated with parents",
           "audioFile": null
         },
         {
-          "english": "Divination",
-          "translation": "Kuagulia",
-          "pronunciation": "Practice of seeking knowledge through spiritual means",
-          "context": "",
+          "english": "Children",
+          "translation": "Abana",
+          "pronunciation": "ah-bah-nah",
+          "context": "(n. pl., cl. 2, sg. omwana) Children, offspring, descendants",
           "audioFile": null
         },
         {
-          "english": "Taboo / Prohibition",
-          "translation": "Mwiko",
-          "pronunciation": "Cultural prohibition believed to bring misfortune if violated",
-          "context": "",
+          "english": "Child / Baby",
+          "translation": "Omwana",
+          "pronunciation": "oh-mwah-nah",
+          "context": "(n., cl. 1, pl. abana) Child, infant, son or daughter",
           "audioFile": null
         },
         {
-          "english": "Blessing",
-          "translation": "Kuthathia",
-          "pronunciation": "Invocation of good fortune, often by elders",
-          "context": "",
+          "english": "Person / Human being",
+          "translation": "Omundu",
+          "pronunciation": "oh-moon-doo",
+          "context": "(n., cl. 1, pl. abandu) Person, individual, human being",
           "audioFile": null
         },
         {
-          "english": "Curse",
-          "translation": "Kirumi",
-          "pronunciation": "Invocation of misfortune, feared across Bantu communities",
-          "context": "",
+          "english": "People / Humanity",
+          "translation": "Abandu",
+          "pronunciation": "ah-bahn-doo",
+          "context": "(n. pl., cl. 2, sg. omundu) People, community, humankind",
           "audioFile": null
         },
         {
-          "english": "Sacred grove / shrine",
-          "translation": "Kithembe",
-          "pronunciation": "Sacred natural site used for ceremonies and offerings",
-          "context": "",
+          "english": "Parents",
+          "translation": "Abarye",
+          "pronunciation": "ah-bah-ryeh",
+          "context": "(n. pl., cl. 2, sg. omurye) Parents, to whom a child must show formal respect, deference, and honor",
           "audioFile": null
         },
         {
-          "english": "Initiation rites",
-          "translation": "Irua",
-          "pronunciation": "Coming-of-age ceremonies marking transition to adulthood",
-          "context": "",
+          "english": "Cousin",
+          "translation": "Akhasi",
+          "pronunciation": "ah-khah-see",
+          "context": "(n., cl. 12) Cousin, child of maternal uncle or paternal aunt",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "Omukhasi",
+          "pronunciation": "oh-moo-khah-see",
+          "context": "(n., cl. 1, pl. abakhasi) Woman, married woman, wife (omukhasi wanje = my wife)",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband",
+          "translation": "Omusatsa",
+          "pronunciation": "oh-moo-sah-tsah",
+          "context": "(n., cl. 1, pl. abasatsa) Man, adult male, husband (omusatsa wanje = my husband)",
+          "audioFile": null
+        },
+        {
+          "english": "Luhya person / Clan member",
+          "translation": "Omuluyia",
+          "pronunciation": "oh-moo-loo-yee-ah",
+          "context": "(n., cl. 1, pl. Abaluyia) Person belonging to the Luyia nation; lit. member of the same hearth/clan",
+          "audioFile": null
+        },
+        {
+          "english": "Chief / Traditional ruler",
+          "translation": "Omwami",
+          "pronunciation": "oh-mwah-mee",
+          "context": "(n., cl. 1, pl. abami) Chief, king, honorable lord, leader of high prestige",
+          "audioFile": null
+        },
+        {
+          "english": "King (Wanga monarch)",
+          "translation": "Nabongo",
+          "pronunciation": "nah-bohn-goh",
+          "context": "(n., cl. 1) Hereditary king and paramount ruler of the historic Kingdom of Wanga",
+          "audioFile": null
+        },
+        {
+          "english": "Elder / Senior leader",
+          "translation": "Omukhulundu",
+          "pronunciation": "oh-moo-khoo-loon-doo",
+          "context": "(n., cl. 1, pl. abakhulundu) Elder, senior, family head with customary authority",
+          "audioFile": null
+        },
+        {
+          "english": "Girl / Daughter",
+          "translation": "Omukhaana",
+          "pronunciation": "oh-moo-khah-ah-nah",
+          "context": "(n., cl. 1, pl. abakhaana) Girl, unmarried maiden, daughter, sister",
+          "audioFile": null
+        },
+        {
+          "english": "Boy / Son",
+          "translation": "Omusiani",
+          "pronunciation": "oh-moo-see-ah-nee",
+          "context": "(n., cl. 1, pl. abasiani) Boy, youth, son",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Nyina",
+          "pronunciation": "nyee-nah",
+          "context": "(n., cl. 1) Mother (nyinefwe = our mother; mama = my mother; mawo = your mother)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Papa",
+          "pronunciation": "pah-pah",
+          "context": "(n., cl. 1, pl. baapapa) Father (seefwe = our father; samwana = his father)",
+          "audioFile": null
+        },
+        {
+          "english": "Friend / Companion",
+          "translation": "Omwitsa",
+          "pronunciation": "oh-mwee-tsah",
+          "context": "(n., cl. 1, pl. abeetsa; also omulina) Friend, companion, comrade",
+          "audioFile": null
+        },
+        {
+          "english": "Playmate / Peer",
+          "translation": "Omukulo",
+          "pronunciation": "oh-moo-koo-loh",
+          "context": "(n., cl. 1) Equal peer with whom one shares joking familiarity, contrasted with omurye",
+          "audioFile": null
+        },
+        {
+          "english": "Bridegroom / Son-in-law",
+          "translation": "Omukhwi",
+          "pronunciation": "oh-moo-khwee",
+          "context": "(n., cl. 1, pl. abakhwi) Bridegroom, one paying dowry, son-in-law",
+          "audioFile": null
+        },
+        {
+          "english": "Bride",
+          "translation": "Omweha",
+          "pronunciation": "oh-mweh-hah",
+          "context": "(n., cl. 1, pl. abeeha / abeeya) Bride, newly wed woman",
+          "audioFile": null
+        },
+        {
+          "english": "Full siblings / Children of one mother",
+          "translation": "Abomunzu ndala",
+          "pronunciation": "ah-boh-moon-zoo ndah-lah",
+          "context": "(np., cl. 2) Full brothers and sisters; lit. 'children born of one house'",
+          "audioFile": null
+        },
+        {
+          "english": "Kinship / Clan relation",
+          "translation": "Obwikho",
+          "pronunciation": "oh-bwee-khoh",
+          "context": "(n., cl. 14) Kinship, blood relation, clan connection",
+          "audioFile": null
+        },
+        {
+          "english": "Foreigner / Neighbouring person",
+          "translation": "Omurende",
+          "pronunciation": "oh-moo-rehn-deh",
+          "context": "(n., cl. 1, pl. abarende) Person of a neighboring tribe, foreigner, neighbor",
+          "audioFile": null
+        },
+        {
+          "english": "Senior first wife",
+          "translation": "Omukhasi omukhulundu",
+          "pronunciation": "oh-moo-khah-see oh-moo-khoo-loon-doo",
+          "context": "(np., cl. 1) First wife holding supreme domestic authority in the compound",
+          "audioFile": null
+        },
+        {
+          "english": "Heir / Designated successor",
+          "translation": "Omulaame",
+          "pronunciation": "oh-moo-lah-ah-meh",
+          "context": "(n., cl. 1, pl. abalaame) Heir, designated inheritor receiving father's blessing (okhulaama)",
+          "audioFile": null
+        },
+        {
+          "english": "Initiation candidates",
+          "translation": "Abeirumbi",
+          "pronunciation": "ah-beh-ee-room-bee",
+          "context": "(n. pl., cl. 2) Young men secluded in the circumcision lodge during initiation",
           "audioFile": null
         }
       ]
     },
     {
-      "id": "wanga-nouns",
-      "name": "Wanga Dialect: Nouns",
-      "icon": "📝",
+      "id": "nature-animals",
+      "name": "Nature & Animals (Olushiwanga)",
+      "icon": "🐾",
       "entries": [
         {
-          "english": "grandfathers",
-          "translation": "abakuka",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Ground squirrel / Folk trickster hero",
+          "translation": "Akhamuna",
+          "pronunciation": "ah-khah-moo-nah",
+          "context": "(n., cl. 12; also eshimuna) Ground squirrel; famed hero of Luyia folklore tales (Anakhamuna)",
           "audioFile": null
         },
         {
-          "english": "grandparents, with whom a child can talk freely on subjects that are taboo with their parents (abarye, whom they must fear)",
-          "translation": "abakulo",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Kid / Young goat",
+          "translation": "Akhameme",
+          "pronunciation": "ah-khah-meh-meh",
+          "context": "(n., cl. 12; also eshimeme, cl. 7) Kid, young goat",
           "audioFile": null
         },
         {
-          "english": "chosen people",
-          "translation": "abalobole",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Cow / Cattle",
+          "translation": "Ing'ombe",
+          "pronunciation": "eeng-ohm-beh",
+          "context": "(n., cl. 9, pl. tsing'ombe) Cow, bull, head of cattle (vital store of wealth)",
           "audioFile": null
         },
         {
-          "english": "all foreigners",
-          "translation": "abamahanga",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Dog",
+          "translation": "Embwa",
+          "pronunciation": "ehm-bwah",
+          "context": "(n., cl. 9, pl. tsimbwa; also imbwa) Domestic dog, hunting and guard animal",
           "audioFile": null
         },
         {
-          "english": "angels",
-          "translation": "abamalaika",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Sun",
+          "translation": "Eliruba",
+          "pronunciation": "eh-lee-roo-bah",
+          "context": "(n., cl. 5; also eliuba / elyuba) Sun, daylight source (elyuba liumire = midday)",
           "audioFile": null
         },
         {
-          "english": "children, pl. of omwana",
-          "translation": "abana",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Moon / Lunar month",
+          "translation": "Omweli",
+          "pronunciation": "oh-mweh-lee",
+          "context": "(n., cl. 3, pl. emieli; also omwesi) Moon, calendar month",
           "audioFile": null
         },
         {
-          "english": "parents, whom a child must show fear and respect",
-          "translation": "abarye",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Hammer",
+          "translation": "Inyondo",
+          "pronunciation": "een-yohn-doh",
+          "context": "(n., cl. 9, pl. tsinyondo) Iron hammer, traditional blacksmith's forging tool",
           "audioFile": null
         },
         {
-          "english": "happy people",
-          "translation": "abatsastsaafu",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Water",
+          "translation": "Amatsi",
+          "pronunciation": "ah-mah-tsah-ee",
+          "context": "(n. pl., cl. 6; also amaatsi) Water for drinking, cooking, and washing",
           "audioFile": null
         },
         {
-          "english": "mischevious people",
-          "translation": "abayungubafu",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Lion",
+          "translation": "Italanyi",
+          "pronunciation": "ee-tah-lah-nyee",
+          "context": "(n., cl. 9, pl. tsitalanyi) Lion, king of wild beasts",
           "audioFile": null
         },
         {
-          "english": "circumcision candidates",
-          "translation": "abeirumbi",
-          "pronunciation": "",
-          "context": "(np) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Leopard",
+          "translation": "Ingwe",
+          "pronunciation": "eeng-gweh",
+          "context": "(n., cl. 9, pl. tsingwe) Leopard, honored clan totem and symbol of stealth",
           "audioFile": null
         },
         {
-          "english": "the children or descendants of one woman",
-          "translation": "abomunzu ndala",
-          "pronunciation": "",
-          "context": "(np) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Elephant",
+          "translation": "Inzofu",
+          "pronunciation": "een-zoh-foo",
+          "context": "(n., cl. 9, pl. tsinzofu) Elephant",
           "audioFile": null
         },
         {
-          "english": "place",
-          "translation": "abundu",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Snake / Serpent",
+          "translation": "Inzokha",
+          "pronunciation": "een-zoh-khah",
+          "context": "(n., cl. 9, pl. tsinzokha) Snake, serpent, reptile",
           "audioFile": null
         },
         {
-          "english": "signs",
-          "translation": "akamakana",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Goat",
+          "translation": "Imbusi",
+          "pronunciation": "eem-boo-see",
+          "context": "(n., cl. 9, pl. tsimbusi) Goat, common domestic livestock",
           "audioFile": null
         },
         {
-          "english": "true sayings",
-          "translation": "akatyeri",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Sheep",
+          "translation": "Likondi",
+          "pronunciation": "lee-kohn-dee",
+          "context": "(n., cl. 5, pl. amakondi) Sheep",
           "audioFile": null
         },
         {
-          "english": "Small knife/pen-knife",
-          "translation": "akhabano",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Chicken / Fowl",
+          "translation": "Ingokho",
+          "pronunciation": "eeng-goh-khoh",
+          "context": "(n., cl. 9, pl. tsingokho) Chicken, domestic fowl; customary dish for honored guests",
           "audioFile": null
         },
         {
-          "english": "small sp. of quail",
-          "translation": "akhachululu",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Rooster / Cock",
+          "translation": "Itaywa",
+          "pronunciation": "ee-tah-ywah",
+          "context": "(n., cl. 9, pl. tsitaywa) Rooster, cockerel whose crow heralds the dawn",
           "audioFile": null
         },
         {
-          "english": "a small crowd",
-          "translation": "akhakanda",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Fish",
+          "translation": "Inyeni",
+          "pronunciation": "een-yeh-nee",
+          "context": "(n., cl. 9, pl. tsinyeni) Fish, caught with hook (omulobo) or net",
           "audioFile": null
         },
         {
-          "english": "sign",
-          "translation": "akhalolero",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Honeybee / Swarm",
+          "translation": "Inzushi",
+          "pronunciation": "een-zoo-shee",
+          "context": "(n., cl. 9, pl. tsinzushi) Honeybee, producer of honey (obushi)",
           "audioFile": null
         },
         {
-          "english": "kid",
-          "translation": "akhameme",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Rain",
+          "translation": "Ifula",
+          "pronunciation": "ee-foo-lah",
+          "context": "(n., cl. 9) Rain; life-giving precipitation (irotso = main rainy season)",
           "audioFile": null
         },
         {
-          "english": "ground squirrel",
-          "translation": "akhamuna",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "River / Stream",
+          "translation": "Omwalo",
+          "pronunciation": "oh-mwah-loh",
+          "context": "(n., cl. 3, pl. emyalo) River, natural flowing watercourse",
           "audioFile": null
         },
         {
-          "english": "basket smaller in size than omuyinda",
-          "translation": "akhandamwa",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Lake / Inland sea",
+          "translation": "Inyanza",
+          "pronunciation": "een-yahn-zah",
+          "context": "(n., cl. 9) Lake, large lake (e.g. Lake Victoria / Nyanza)",
           "audioFile": null
         },
         {
-          "english": "another one (in the diminitive)",
-          "translation": "akhandi",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Hill / Mountain",
+          "translation": "Eshikulu",
+          "pronunciation": "eh-shee-koo-loo",
+          "context": "(n., cl. 7, pl. ebikulu) Hill, elevated ridge, mountain",
           "audioFile": null
         },
         {
-          "english": "cousin",
-          "translation": "akhasi",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Fire / Flame",
+          "translation": "Omulilo",
+          "pronunciation": "oh-moo-lee-loh",
+          "context": "(n., cl. 3, pl. emililo) Fire, heat, hearth flame",
           "audioFile": null
         },
         {
-          "english": "infant/young child",
-          "translation": "akhayere",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Bright star / Morning star",
+          "translation": "Isulwe",
+          "pronunciation": "ee-sool-weh",
+          "context": "(n., cl. 9, pl. tsisulwe) Bright morning or evening star",
           "audioFile": null
         },
         {
-          "english": "last child a woman bears",
-          "translation": "alaka",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Rock / Boulder",
+          "translation": "Olwanda",
+          "pronunciation": "ohl-wahn-dah",
+          "context": "(n., cl. 11, pl. tsinyanda) Rock, large stone cliff or outcrop",
           "audioFile": null
         },
         {
-          "english": "tricks",
-          "translation": "amaaka",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Tree / Plant",
+          "translation": "Omusaala",
+          "pronunciation": "oh-moo-sah-ah-lah",
+          "context": "(n., cl. 3, pl. emisaala) Tree, standing timber, medicinal plant",
           "audioFile": null
         },
         {
-          "english": "larvae of bees, mosquitoes, etc.",
-          "translation": "amaana",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Wind / Breeze",
+          "translation": "Omuyeka",
+          "pronunciation": "oh-moo-yeh-kah",
+          "context": "(n., cl. 3) Wind, air current, breeze",
           "audioFile": null
         },
         {
-          "english": "embers",
-          "translation": "amaanda",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "water",
-          "translation": "amaatsi",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "blood, esp. drawn from a live cow for food (see also amalasire, amatsayi)",
-          "translation": "amabanga",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "bones of buttocks",
-          "translation": "amabatswa",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "milk",
-          "translation": "amabeere",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "butter milk",
-          "translation": "amabeere amasatse",
-          "pronunciation": "",
-          "context": "(np) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "fresh milk",
-          "translation": "amabeere amayu",
-          "pronunciation": "",
-          "context": "(np) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "shoulders",
-          "translation": "amabeka",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "millet",
-          "translation": "amabere",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "flying ants, edible",
-          "translation": "amabuli",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "wrestling matches, contests",
-          "translation": "amabwi",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "white ants",
-          "translation": "amache",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "leprosy",
-          "translation": "amachere",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "intelligence",
-          "translation": "amachesi",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "stones, ancestral stones",
-          "translation": "amachina",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "pus",
-          "translation": "amafira",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "droppings of fowls",
-          "translation": "amafumala",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "ghee",
-          "translation": "amafura",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "ghee",
-          "translation": "amafura amasalule",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "kerosene",
-          "translation": "amafura ka itaaa",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "simsim oil",
-          "translation": "amafura kauto",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "human feces",
-          "translation": "amafwi",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "dry maize and beans boiled together until soft",
-          "translation": "amahenjera",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "arguments",
-          "translation": "amahinje",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "three stones around the fire to support the cooking pot",
-          "translation": "amaika",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "clods",
-          "translation": "amaindi",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "arguments",
-          "translation": "amaingane",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "thorny branches, used for closing a path",
-          "translation": "amakaka",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "itch, scabies",
-          "translation": "amakakha",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "wonderful, strange, queer, or remarkable happenings (see also amangalimwa)",
-          "translation": "amakana",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "beans",
-          "translation": "amakanda",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "scissors (see also makasi)",
-          "translation": "amakasi",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "reeds, or the stalks of maize, millet, etc.",
-          "translation": "amakata",
-          "pronunciation": "",
-          "context": "(n) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Buffalo",
+          "translation": "Imboko",
+          "pronunciation": "eem-boh-koh",
+          "context": "(n., cl. 9, pl. tsimboko) Wild African buffalo",
           "audioFile": null
         }
       ]
     },
     {
       "id": "wanga-verbs",
-      "name": "Wanga Dialect: Verbs",
+      "name": "Actions & Verbs (Olushiwanga)",
       "icon": "🏃",
       "entries": [
         {
-          "english": "part of the verb to be used to introduce a conditional clause",
-          "translation": "naba",
-          "pronunciation": "",
-          "context": "(v) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "To do / To make / To work",
+          "translation": "Okhukora",
+          "pronunciation": "oh-khoo-koh-rah",
+          "context": "(v.tr.; also okhukhola) To do, make, execute work, accomplish a task",
           "audioFile": null
         },
         {
-          "english": "be",
-          "translation": "okhuba",
-          "pronunciation": "",
-          "context": "(v) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "To eat",
+          "translation": "Okhulia",
+          "pronunciation": "oh-khoo-lee-ah",
+          "context": "(v.tr.; also okhulya) To eat, consume food, dine",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Okhunywa",
+          "pronunciation": "oh-khoo-nywah",
+          "context": "(v.tr.) To drink liquids; okhunywa amaatsi = to drink water",
+          "audioFile": null
+        },
+        {
+          "english": "To go / To proceed",
+          "translation": "Okhutsia",
+          "pronunciation": "oh-khoo-tsee-ah",
+          "context": "(v.int.; also okhutsya) To go, walk away, proceed on a journey",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Okhwicha",
+          "pronunciation": "oh-khwee-chah",
+          "context": "(v.int.; also okhwitsa) To come, approach, arrive here",
+          "audioFile": null
+        },
+        {
+          "english": "To see / To look",
+          "translation": "Okhulola",
+          "pronunciation": "oh-khoo-loh-lah",
+          "context": "(v.tr.) To see, observe, gaze upon (irregular perfective: endutsi / ndalutsi)",
+          "audioFile": null
+        },
+        {
+          "english": "To ask (a question)",
+          "translation": "Okhureba",
+          "pronunciation": "oh-khoo-reh-bah",
+          "context": "(v.tr./int.) To ask a question, inquire, examine through questions",
+          "audioFile": null
+        },
+        {
+          "english": "To come from / To originate",
+          "translation": "Okhwaama",
+          "pronunciation": "oh-khwah-ah-mah",
+          "context": "(v.int.; also okhurula) To come from, originate at, emerge from",
+          "audioFile": null
+        },
+        {
+          "english": "To pray / To bless / To bequeath",
+          "translation": "Okhulaama",
+          "pronunciation": "oh-khoo-lah-ah-mah",
+          "context": "(v.tr./int.; also okhulama) To pray, bless, invoke favor, bequeath inheritance",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / To converse",
+          "translation": "Okhuloma",
+          "pronunciation": "oh-khoo-loh-mah",
+          "context": "(v.tr./int.) To speak, utter words, talk with someone",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / To listen / To obey",
+          "translation": "Okhuulira",
+          "pronunciation": "oh-khoo-oo-lee-rah",
+          "context": "(v.tr.; also okhuhulila) To hear, listen attentively, perceive, obey",
+          "audioFile": null
+        },
+        {
+          "english": "To build / To erect",
+          "translation": "Okhwumbakha",
+          "pronunciation": "oh-khwoom-bah-khah",
+          "context": "(v.tr.; also okhumbakha) To build a house or traditional structure",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / To farm / To dig",
+          "translation": "Okhulima",
+          "pronunciation": "oh-khoo-lee-mah",
+          "context": "(v.tr./int.) To till soil, cultivate crops, dig with hoe (imbako)",
+          "audioFile": null
+        },
+        {
+          "english": "To know / To understand",
+          "translation": "Okhumanya",
+          "pronunciation": "oh-khoo-mah-nyah",
+          "context": "(v.tr.) To know, acquire knowledge, comprehend (emanyire = I know)",
+          "audioFile": null
+        },
+        {
+          "english": "To cook / To prepare food",
+          "translation": "Okhuteekha",
+          "pronunciation": "oh-khoo-teh-eh-khah",
+          "context": "(v.tr.) To cook food, boil vegetables or meat over the hearth",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep / To lie down",
+          "translation": "Okhukona",
+          "pronunciation": "oh-khoo-koh-nah",
+          "context": "(v.int.) To sleep, recline, rest overnight",
+          "audioFile": null
+        },
+        {
+          "english": "To give / To bestow",
+          "translation": "Okhuwa",
+          "pronunciation": "oh-khoo-wah",
+          "context": "(v.tr.; also okhuha / okhuhaana) To give, bestow, hand over a gift",
+          "audioFile": null
+        },
+        {
+          "english": "To buy / To purchase",
+          "translation": "Okhukula",
+          "pronunciation": "oh-khoo-koo-lah",
+          "context": "(v.tr.) To purchase, exchange goods or money for items",
+          "audioFile": null
+        },
+        {
+          "english": "To sell",
+          "translation": "Okhukusia",
+          "pronunciation": "oh-khoo-koo-see-ah",
+          "context": "(v.tr.) To sell commodities, market goods",
+          "audioFile": null
+        },
+        {
+          "english": "To run / To sprint",
+          "translation": "Okhwirukha",
+          "pronunciation": "oh-khwee-roo-khah",
+          "context": "(v.int.) To run fast, dash, flee from danger",
+          "audioFile": null
+        },
+        {
+          "english": "To bathe / To wash oneself",
+          "translation": "Okhwisinga",
+          "pronunciation": "oh-khwee-seen-gah",
+          "context": "(v.refl.) To wash one's whole body, take a bath",
+          "audioFile": null
+        },
+        {
+          "english": "To sing",
+          "translation": "Okhwimba",
+          "pronunciation": "oh-khweem-bah",
+          "context": "(v.tr./int.) To sing a traditional song or melody",
+          "audioFile": null
+        },
+        {
+          "english": "To dance",
+          "translation": "Okhushina",
+          "pronunciation": "oh-khoo-shee-nah",
+          "context": "(v.int.; also okhwibinza) To dance to drumming and singing",
+          "audioFile": null
+        },
+        {
+          "english": "To laugh",
+          "translation": "Okhutsekha",
+          "pronunciation": "oh-khoo-tseh-khah",
+          "context": "(v.int.) To laugh, chuckle with amusement",
+          "audioFile": null
+        },
+        {
+          "english": "To weep / To cry",
+          "translation": "Okhulira",
+          "pronunciation": "oh-khoo-lee-rah",
+          "context": "(v.int.) To weep, lament, shed tears",
+          "audioFile": null
+        },
+        {
+          "english": "To bring / To fetch",
+          "translation": "Okhureera",
+          "pronunciation": "oh-khoo-reh-eh-rah",
+          "context": "(v.tr.; also okhurera / okhwenda) To bring, fetch, deliver to",
+          "audioFile": null
+        },
+        {
+          "english": "To guard / To look after",
+          "translation": "Okhulinda",
+          "pronunciation": "oh-khoo-leen-dah",
+          "context": "(v.tr./int.) To wait, guard, protect, watch over cattle or family",
+          "audioFile": null
+        },
+        {
+          "english": "To love / To desire",
+          "translation": "Okhwenya",
+          "pronunciation": "oh-khweh-nyah",
+          "context": "(v.tr.; also okhuera / okhuheela) To want, love, cherish, desire",
+          "audioFile": null
+        },
+        {
+          "english": "To give birth / To bear offspring",
+          "translation": "Okhwibula",
+          "pronunciation": "oh-khwee-boo-lah",
+          "context": "(v.tr./int.) To give birth, bear a child, beget children",
+          "audioFile": null
+        },
+        {
+          "english": "To marry a wife",
+          "translation": "Okhuteeshia",
+          "pronunciation": "oh-khoo-teh-eh-shee-ah",
+          "context": "(v.tr.; also okhureera omukhasi) To marry (of a man taking a bride)",
           "audioFile": null
         }
       ]
     },
     {
-      "id": "wanga-adjectives",
-      "name": "Wanga Dialect: Adjectives & Adverbs",
+      "id": "descriptive-adjectives",
+      "name": "Adjectives & Descriptive Terms (Olushiwanga)",
       "icon": "🎨",
       "entries": [
         {
-          "english": "near",
-          "translation": "aambi",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Clever / Wise / Bright",
+          "translation": "Abachesi",
+          "pronunciation": "ah-bah-cheh-see",
+          "context": "(adj. pl., cl. 2, sg. omuchesi, stem -chesi) Clever, wise, intelligent, sharp-minded",
           "audioFile": null
         },
         {
-          "english": "bad",
-          "translation": "ababi",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Bad / Evil / Ugly / Unpleasant",
+          "translation": "Ababi",
+          "pronunciation": "ah-bah-bee",
+          "context": "(adj. pl., cl. 2, sg. omubi, stem -bi) Bad, wrongful, immoral, ugly, offensive",
           "audioFile": null
         },
         {
-          "english": "foreign",
-          "translation": "abacheni",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Good / Beautiful / Fine",
+          "translation": "Abalayi",
+          "pronunciation": "ah-bah-lah-yee",
+          "context": "(adj. pl., cl. 2, sg. omulayi, stem -layi) Good, handsome, beautiful, righteous",
           "audioFile": null
         },
         {
-          "english": "clever",
-          "translation": "abachesi",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "True / Truthful / Correct",
+          "translation": "Abatieri",
+          "pronunciation": "ah-bah-tee-eh-ree",
+          "context": "(adj. pl., cl. 2, stem -atieri) Honest, truthful, right, authentic",
           "audioFile": null
         },
         {
-          "english": "cunning (cl. 2)",
-          "translation": "abachesichesi",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Little / Small / Few",
+          "translation": "Abatiti",
+          "pronunciation": "ah-bah-tee-tee",
+          "context": "(adj. pl., cl. 2, sg. omutiti, stem -titi) Small in size, little, few in number",
           "audioFile": null
         },
         {
-          "english": "fierce",
-          "translation": "abahalaba",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Big / Large / Senior",
+          "translation": "Abakhongo",
+          "pronunciation": "ah-bah-khohn-goh",
+          "context": "(adj. pl., cl. 2, sg. omukhongo, stem -khongo) Big, grand, important, eminent",
           "audioFile": null
         },
         {
-          "english": "true",
-          "translation": "abatieri",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Trustworthy / Faithful / Reliable",
+          "translation": "Abesikwa",
+          "pronunciation": "ah-beh-see-kwah",
+          "context": "(adj. pl., cl. 2, sg. omwisikwa, stem -isikwa) Dependable, faithful, loyal",
           "audioFile": null
         },
         {
-          "english": "little",
-          "translation": "abatiti",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Foreign / Novel / Unusual",
+          "translation": "Abacheni",
+          "pronunciation": "ah-bah-cheh-nee",
+          "context": "(adj. pl., cl. 2, stem -cheni) Foreign, strange, novel, unfamiliar",
           "audioFile": null
         },
         {
-          "english": "lazy",
-          "translation": "abatofu",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Fierce / Bad-tempered",
+          "translation": "Abahalaba",
+          "pronunciation": "ah-bah-hah-lah-bah",
+          "context": "(adj. pl., cl. 2, stem -halaba) Fierce, quick-tempered, scolding disposition",
           "audioFile": null
         },
         {
-          "english": "short (cl. 2, -imbikiti)",
-          "translation": "abembikiti",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Lazy / Weak",
+          "translation": "Abatofu",
+          "pronunciation": "ah-bah-toh-foo",
+          "context": "(adj. pl., cl. 2, stem -tofu) Lazy, lacking endurance or willpower",
           "audioFile": null
         },
         {
-          "english": "trustworthy",
-          "translation": "abesikwa",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Short",
+          "translation": "Abembikiti",
+          "pronunciation": "ah-behm-bee-kee-tee",
+          "context": "(adj. pl., cl. 2, sg. omwimbikiti, stem -imbikiti) Short in height or stature",
           "audioFile": null
         },
         {
-          "english": "just there",
-          "translation": "abwenao",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Tall / Long / High",
+          "translation": "Abarambi",
+          "pronunciation": "ah-bah-rahm-bee",
+          "context": "(adj. pl., cl. 2, sg. omurambi, stem -rambi) Tall, long, deep, high",
           "audioFile": null
         },
         {
-          "english": "there",
-          "translation": "aho",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "White / Clean / Pure / Holy",
+          "translation": "Abalafu",
+          "pronunciation": "ah-bah-lah-foo",
+          "context": "(adj. pl., cl. 2, sg. omulafu, stem -lafu) White, clean, pure, spotless; holy saints",
           "audioFile": null
         },
         {
-          "english": "red, or color approximating to red—brown, orange, etc. (cl. 12, -akhanyu)",
-          "translation": "akhakhanyu",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Black / Dark-complexioned",
+          "translation": "Abamali",
+          "pronunciation": "ah-bah-mah-lee",
+          "context": "(adj. pl., cl. 2, sg. omumali, stem -mali) Black, dark in shade or complexion",
           "audioFile": null
         },
         {
-          "english": "at the other side",
-          "translation": "alubeka",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Alive / Living / Healthy",
+          "translation": "Abalamu",
+          "pronunciation": "ah-bah-lah-moo",
+          "context": "(adj. pl., cl. 2, sg. omulamu, stem -lamu) Alive, healthy, full of life",
           "audioFile": null
         },
         {
-          "english": "unripe",
-          "translation": "amachishi",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Fierce / Bitter / Sharp",
+          "translation": "Amalulu",
+          "pronunciation": "ah-mah-loo-loo",
+          "context": "(adj. pl., cl. 6, stem -lulu) Sharp, bitter, fierce, severe",
           "audioFile": null
         },
         {
-          "english": "fierce",
-          "translation": "amalulu",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Ripe / Matured",
+          "translation": "Amenjefu",
+          "pronunciation": "ah-mehn-jeh-foo",
+          "context": "(adj. pl., cl. 6, stem -enjefu) Ripe, ready for eating, fully matured",
           "audioFile": null
         },
         {
-          "english": "backwards, as in okhupa amashemo 'to look backwards'",
-          "translation": "amashemo",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Unripe / Green",
+          "translation": "Amachishi",
+          "pronunciation": "ah-mah-chee-shee",
+          "context": "(adj. pl., cl. 6, stem -chishi) Unripe, immature, green",
           "audioFile": null
         },
         {
-          "english": "secretly",
-          "translation": "amasirisi",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Warm / Fresh",
+          "translation": "Amayu",
+          "pronunciation": "ah-mah-yoo",
+          "context": "(adj. pl., cl. 6) Warm, fresh (e.g. amabeere amayu = fresh warm milk)",
           "audioFile": null
         },
         {
-          "english": "insipid",
-          "translation": "amatsalalu",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Cold / Damp",
+          "translation": "Eshinyifu",
+          "pronunciation": "eh-shee-nyee-foo",
+          "context": "(adj., cl. 7, stem -nyifu) Cold, chilly, damp to the touch",
           "audioFile": null
         },
         {
-          "english": "warm",
-          "translation": "amayu",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "New / Modern / Recent",
+          "translation": "Eshiyakha",
+          "pronunciation": "eh-shee-yah-khah",
+          "context": "(adj., cl. 7, stem -yakha; also efiya) Brand new, novel, recent",
           "audioFile": null
         },
         {
-          "english": "first",
-          "translation": "amberi",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Red / Reddish-brown",
+          "translation": "Akhakhanyu",
+          "pronunciation": "ah-khah-khah-nyoo",
+          "context": "(adj., cl. 12, stem -akhanyu) Red, scarlet, orange, brownish-red",
           "audioFile": null
         },
         {
-          "english": "ripe (cl. 6, -enjefu)",
-          "translation": "amenjefu",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Whole / Complete / Undivided",
+          "translation": "Bukala",
+          "pronunciation": "boo-kah-lah",
+          "context": "(adv./adj.) Whole, complete, unbroken, intact",
           "audioFile": null
         },
         {
-          "english": "here",
-          "translation": "ano",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "gaping",
-          "translation": "asaame",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "down",
-          "translation": "asi",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "a little",
-          "translation": "atiti",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "a little",
-          "translation": "atutu",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "crosswise",
-          "translation": "buchikha",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "whole",
-          "translation": "bukala",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "now",
-          "translation": "bulano",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "just now",
-          "translation": "bulano buno",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "every",
-          "translation": "buli",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "only",
-          "translation": "butswa",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "part full (cl. 14, -yinjikhane)",
-          "translation": "buyinjikhane",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "for ever and ever",
-          "translation": "ebisoni nebisoni",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "in an open place plainly",
-          "translation": "ebulafu",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "there",
-          "translation": "ebweneyo",
-          "pronunciation": "",
-          "context": "(adv) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "many (cl. 8)",
-          "translation": "efinji",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
-          "audioFile": null
-        },
-        {
-          "english": "tasteless",
-          "translation": "efitsinzibu",
-          "pronunciation": "",
-          "context": "(adj) From Wanga-English Dictionary (Anangwe & Marlo, 2008)",
+          "english": "Firm / Hard / Tough",
+          "translation": "Obutinyu",
+          "pronunciation": "oh-boo-teen-yoo",
+          "context": "(adj./n., cl. 14, stem -tinyu) Hard, tough, resolute, unyielding",
           "audioFile": null
         }
       ]
     },
     {
-      "id": "grammar-vocabulary",
-      "name": "Grammar Reference Vocabulary",
-      "icon": "📖",
+      "id": "culture-traditions",
+      "name": "Cultural & Traditional Life (Olushiwanga)",
+      "icon": "🏺",
       "entries": [
         {
-          "english": "Noun",
-          "translation": "omwana",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Village courtyard / Communal open space",
+          "translation": "Alwanyi",
+          "pronunciation": "ahl-wah-nyee",
+          "context": "(n./adv.) Open space in the center of the village; communal gathering courtyard",
           "audioFile": null
         },
         {
-          "english": "my",
-          "translation": "wanje",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Sign / Symbol / Miraculous mark",
+          "translation": "Eshilolero",
+          "pronunciation": "eh-shee-loh-leh-roh",
+          "context": "(n., cl. 7, pl. ebilolero; also akhalolero) Sign, symbol, brand mark, wonder",
           "audioFile": null
         },
         {
-          "english": "thy",
-          "translation": "-wo",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Woven traditional basket",
+          "translation": "Akhandamwa",
+          "pronunciation": "ah-khahn-dah-mwah",
+          "context": "(n., cl. 12, pl. obundamwa) Fine woven grain basket used for serving flour and meals",
           "audioFile": null
         },
         {
-          "english": "his, her",
-          "translation": "-we",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Peace / Tranquility / Wellbeing",
+          "translation": "Obubwoni",
+          "pronunciation": "oh-boo-bwoh-nee",
+          "context": "(n., cl. 14; also obwihotseresi) Peace, serene tranquility, communal wellbeing",
           "audioFile": null
         },
         {
-          "english": "our",
-          "translation": "weefwe",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Universal peace / Blessing salutation",
+          "translation": "Omulembe",
+          "pronunciation": "oh-moo-lehm-beh",
+          "context": "(n., cl. 3) Peace, wellness; root of the sacred greeting 'Mulembe' across all Luhya",
           "audioFile": null
         },
         {
-          "english": "your",
-          "translation": "weenywe",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Ancestral homestead / Village compound",
+          "translation": "Litaala",
+          "pronunciation": "lee-tah-ah-lah",
+          "context": "(n., cl. 5, pl. amataala) Traditional kraal, fortified homestead, family village",
           "audioFile": null
         },
         {
-          "english": "their",
-          "translation": "wabwe",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Traditional home / House",
+          "translation": "Inzu",
+          "pronunciation": "een-zoo",
+          "context": "(n., cl. 9, pl. tsinzu; also ingo = at home) Family dwelling, house, home sanctuary",
           "audioFile": null
         },
         {
-          "english": "Class",
-          "translation": "Noun",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Folktale / Traditional fable",
+          "translation": "Olukano",
+          "pronunciation": "oh-loo-kah-noh",
+          "context": "(n., cl. 11, pl. tsinkano) Story, fable, legend passed down orally through generations",
           "audioFile": null
         },
         {
-          "english": "my",
-          "translation": "mama",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Proverb / Parable of wisdom",
+          "translation": "Oluchero",
+          "pronunciation": "oh-loo-cheh-roh",
+          "context": "(n., cl. 11, pl. tsinchero) Parable, philosophical proverb encapsulating tribal wisdom",
           "audioFile": null
         },
         {
-          "english": "thy",
-          "translation": "mawo",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Traditional song / Melodic chant",
+          "translation": "Olwimbo",
+          "pronunciation": "ohl-weem-boh",
+          "context": "(n., cl. 11, pl. tsimbimbo) Song, festive melody, ceremonial chorus",
           "audioFile": null
         },
         {
-          "english": "his, her",
-          "translation": "nyinamwana",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Warrior funeral dance",
+          "translation": "Eshiremba",
+          "pronunciation": "eh-shee-rehm-bah",
+          "context": "(n., cl. 7) Prestigious funeral dance performed by armed men honoring an eminent elder",
           "audioFile": null
         },
         {
-          "english": "our",
-          "translation": "nyineefwe",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Circumcision lodge / Initiation rite",
+          "translation": "Irumbi",
+          "pronunciation": "ee-room-bee",
+          "context": "(n., cl. 5) Circumcision retreat where initiates receive ancestral teachings",
           "audioFile": null
         },
         {
-          "english": "your",
-          "translation": "nyineenywe",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Dowry / Marriage customs",
+          "translation": "Ikhwe",
+          "pronunciation": "ee-khweh",
+          "context": "(n., cl. 9; also obukhwe) Dowry payment in cattle cementing marriage alliances",
           "audioFile": null
         },
         {
-          "english": "their",
-          "translation": "nyinabwe",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Stiff porridge (staple food)",
+          "translation": "Obusuma",
+          "pronunciation": "oh-boo-soo-mah",
+          "context": "(n., cl. 14) Traditional stiff porridge of maize, sorghum, or finger millet (ugali)",
           "audioFile": null
         },
         {
-          "english": "my",
-          "translation": "khootsa",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Fermented millet beer",
+          "translation": "Amalwa",
+          "pronunciation": "ah-mahl-wah",
+          "context": "(n. pl., cl. 6) Traditional communal millet beer enjoyed via reeds during ceremonies",
           "audioFile": null
         },
         {
-          "english": "your",
-          "translation": "khootsawo",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Clan gateway / Lineage branch",
+          "translation": "Eshiribwa",
+          "pronunciation": "eh-shee-ree-bwah",
+          "context": "(n., cl. 7, pl. ebiribwa) Main homestead entrance; branch of a clan descended from one son",
           "audioFile": null
         },
         {
-          "english": "hulila",
-          "translation": "hear",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Traditional ritual / Sacred custom",
+          "translation": "Omulukha",
+          "pronunciation": "oh-moo-loo-khah",
+          "context": "(n., cl. 3, pl. emilukha) Customary ritual order, sacred communal observance",
           "audioFile": null
         },
         {
-          "english": "sungana",
-          "translation": "talk to",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Ancestral spirit",
+          "translation": "Omusambwa",
+          "pronunciation": "oh-moo-sahm-bwah",
+          "context": "(n., cl. 3, pl. emisambwa) Guardian ancestral spirit venerated by descendants",
           "audioFile": null
         },
         {
-          "english": "khalaka",
-          "translation": "cut",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Traditional prayer / Blessing ceremony",
+          "translation": "Obulaami",
+          "pronunciation": "oh-boo-lah-ah-mee",
+          "context": "(n., cl. 14, verb: okhulaama) Prayer, sacred blessing invoking God and ancestors",
           "audioFile": null
         },
         {
-          "english": "kasia",
-          "translation": "arrange",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Evening campfire council",
+          "translation": "Eshitwoli",
+          "pronunciation": "eh-shee-twoh-lee",
+          "context": "(n., cl. 7) Campfire outside where men and elders gather to discuss clan affairs",
           "audioFile": null
         },
         {
-          "english": "manyia",
-          "translation": "show",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Traditional healer / Herbal doctor",
+          "translation": "Omufumu",
+          "pronunciation": "oh-moo-foo-moo",
+          "context": "(n., cl. 1, pl. abafumu) Traditional medicine doctor, herbalist, spiritual healer",
           "audioFile": null
         },
         {
-          "english": "handiika",
-          "translation": "write",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Sacred sacrifice / Reconciling offering",
+          "translation": "Omusango",
+          "pronunciation": "oh-moo-sahn-goh",
+          "context": "(n., cl. 3, pl. emisango) Ceremonial sacrifice offered to reconcile spirits and bless homestead",
           "audioFile": null
         },
         {
-          "english": "huluukha",
-          "translation": "rest",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Clan totem animal / Sacred prohibition",
+          "translation": "Omusiro",
+          "pronunciation": "oh-moo-see-roh",
+          "context": "(n., cl. 3, pl. emisiro) Totem animal forbidden to be harmed or eaten by clan members",
           "audioFile": null
         },
         {
-          "english": "lekhuula",
-          "translation": "release",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Traditional master blacksmith",
+          "translation": "Omuruli",
+          "pronunciation": "oh-moo-roo-lee",
+          "context": "(n., cl. 1, pl. abaruli) Master ironworker forging hoes, knives, and weapons",
           "audioFile": null
         },
         {
-          "english": "Class",
-          "translation": "Sing.",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "andola",
-          "translation": "he sees me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "alindola",
-          "translation": "he will see me (-li-, Far Future)",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "akhulola",
-          "translation": "he sees you (s.), or he sees us",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "amulola",
-          "translation": "he sees her or he sees you (pl.)",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "abalola",
-          "translation": "he sees them",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "akulola",
-          "translation": "he sees it (omusaala)",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "achilola",
-          "translation": "he sees them (emisaala)",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "atsilola",
-          "translation": "he sees them (tsing'ombe)",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "bamanya",
-          "translation": "they know me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "kwasamba",
-          "translation": "it burnt me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "bambiniliye",
-          "translation": "they took it out for me (yinia)",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "amulutsi",
-          "translation": "he saw her",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "but yandutsi",
-          "translation": "he saw me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "umbooleele",
-          "translation": "you told me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "ungoonyile",
-          "translation": "you visited me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "ungalushiile",
-          "translation": "you have come back to me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "yanzosiye",
-          "translation": "she washed me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "yanzechesia",
-          "translation": "she is teaching me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "yanzibiliile",
-          "translation": "she forgot me (or andibiliile)",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "yanzibaalila",
-          "translation": "she directs, teaches me (or andibaalila)",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "yanyimile",
-          "translation": "she refused me",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "yeehaana omwene khumilimo",
-          "translation": "he gave himself to the work",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "beechamisia abeene",
-          "translation": "they pleased themselves",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "omuliango kwiyikaale okwene",
-          "translation": "the door has shut itself",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "inzokha yiluma eyene",
-          "translation": "the snake bites itself.",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "ba-ahula",
-          "translation": "they separate",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "khu-ba-ahula",
-          "translation": "we separate them",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "ba-eka",
-          "translation": "they learn",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "a-ba-ira",
-          "translation": "he kills them",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "ba-ora",
-          "translation": "they warm themselves",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "ba-umbakha",
-          "translation": "they build",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "bi-akuushe",
-          "translation": "they fell",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "a-chi-endile",
-          "translation": "he fetched them",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "khu-itsa",
-          "translation": "we are coming",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
-          "audioFile": null
-        },
-        {
-          "english": "khu-umbakha",
-          "translation": "we are building",
-          "pronunciation": "",
-          "context": "From \"A First Luyia Grammar\"",
+          "english": "Potter / Clay artisan",
+          "translation": "Omulonji",
+          "pronunciation": "oh-moo-lohn-jee",
+          "context": "(n., cl. 1, pl. abalonji) Traditional artisan molding earthenware pots and water jars",
           "audioFile": null
         }
       ]

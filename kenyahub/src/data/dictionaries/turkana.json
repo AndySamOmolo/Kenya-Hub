@@ -9,9 +9,9 @@
     "Turkana"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "0.2.0",
+  "dictionaryVersion": "0.3.0",
   "lastUpdated": "2026-10",
-  "contributorNote": "Turkana (Ng'aturukana) is an Eastern Nilotic (Plains Nilotic) language spoken in Kenya's largest county. Core dataset compiled and adapted from 'A Classified Vocabulary of the Turkana in Northwestern Kenya' by Itaru Ohta (Center for African Area Studies, Kyoto University, 1989). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921). Enriched with entries from \"Turkana Grammatical Notes and Vocabulary\" by Barton (1921).",
+  "contributorNote": "Turkana (Ng'aturukana) is an Eastern Nilotic (Ateker / Plains Nilotic) language spoken across Turkana County in northwestern Kenya. Dataset compiled from 'A Classified Vocabulary of the Turkana in Northwestern Kenya' by Itaru Ohta (Center for African Area Studies, Kyoto University, 1989), systematically enriched with historical grammatical notes, seasonal calendar, pastoral greetings, numbers, and vocabulary from 'Turkana Grammatical Notes and Vocabulary' by Juxon Barton (Journal of the Royal Anthropological Institute, 1921).",
   "categories": [
     {
       "id": "greetings",
@@ -26,17 +26,10 @@
           "audioFile": null
         },
         {
-          "english": "Hello / How are you?",
-          "translation": "Ejok?",
-          "pronunciation": "eh-johk",
-          "context": "Universal greeting. Answered with 'Ejok noi'.",
-          "audioFile": null
-        },
-        {
           "english": "How are you?",
           "translation": "Ejok?",
           "pronunciation": "eh-johk",
-          "context": "Standard wellbeing enquiry.",
+          "context": "Standard wellbeing enquiry. Answered with 'Ejok noi'.",
           "audioFile": null
         },
         {
@@ -47,17 +40,10 @@
           "audioFile": null
         },
         {
-          "english": "I'm fine",
-          "translation": "Ejok noi",
-          "pronunciation": "eh-johk noh-ee",
-          "context": "Standard reply.",
-          "audioFile": null
-        },
-        {
           "english": "I am well",
           "translation": "Akiyar akwan / Ejok noi",
           "pronunciation": "ah-kee-yahr ah-kwahn / eh-johk noh-ee",
-          "context": "Formal health acknowledgement.",
+          "context": "Formal health acknowledgement. Lit. 'The body is alive'.",
           "audioFile": null
         },
         {
@@ -150,6 +136,90 @@
           "pronunciation": "mahm / meh-eh-reh",
           "context": "'Mam' = none / no; 'meere' = is not.",
           "audioFile": null
+        },
+        {
+          "english": "Health (Pastoral greeting enquiry)",
+          "translation": "Mata",
+          "pronunciation": "mah-tah",
+          "context": "Traditional pastoral greeting inquiry between adults (lit. 'health'). Response: 'Ii mata'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Health to you (Greeting reply)",
+          "translation": "Ii mata",
+          "pronunciation": "ee-ee mah-tah",
+          "context": "Traditional response acknowledging health. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Health to your cattle",
+          "translation": "Mata ng'atuk",
+          "pronunciation": "mah-tah ngah-took",
+          "context": "Pastoral greeting inquiring after cattle herds. Response: 'Mata ouwi' (health to your village). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Health to your village",
+          "translation": "Mata ouwi",
+          "pronunciation": "mah-tah oh-wee",
+          "context": "Pastoral blessing wishing wellbeing upon the homestead and kraal. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Health to your children",
+          "translation": "Mata ng'idwi",
+          "pronunciation": "mah-tah ngee-dwee",
+          "context": "Pastoral blessing for family and children. Response: 'Mata ariama'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Health to our meetings",
+          "translation": "Mata ariama",
+          "pronunciation": "mah-tah ah-ree-ah-mah",
+          "context": "Greeting reply wishing health and prosperity to repeated gatherings and fellowship. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Health to your property",
+          "translation": "Mata ng'ebarin",
+          "pronunciation": "mah-tah ngeh-bah-reen",
+          "context": "Greeting inquiring after livestock wealth and possessions. Response: 'Mata ng'abero'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Health to your women",
+          "translation": "Mata ng'abero",
+          "pronunciation": "mah-tah ngah-beh-roh",
+          "context": "Greeting response wishing peace and health to household women. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Complete health",
+          "translation": "Mata ejik",
+          "pronunciation": "mah-tah eh-jeek",
+          "context": "Spoken together by both parties at the close of greetings; signifies total wellbeing and absolute peace. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional salutation",
+          "translation": "Na? / Baiya",
+          "pronunciation": "nah / bah-ee-yah",
+          "context": "Ancient reciprocal salutation repeated three times between speakers. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Farewell exchange",
+          "translation": "Tolot-ion / Ejok alothi",
+          "pronunciation": "toh-loht-ee-ohn / eh-johk ah-loh-thee",
+          "context": "'Go thou' answered by 'Good, I go'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye (Parting)",
+          "translation": "Abe / Ii",
+          "pronunciation": "ah-beh / ee-ee",
+          "context": "Simple parting farewell 'Abe' answered with affirmative 'Ii'. (Barton 1921)",
+          "audioFile": null
         }
       ]
     },
@@ -160,233 +230,1542 @@
       "entries": [
         {
           "english": "One",
-          "translation": "Apei",
-          "pronunciation": "ah-peh-ee",
-          "context": "Cardinal 1 (feminine/default)",
+          "translation": "Apei / Epei",
+          "pronunciation": "ah-peh-ee / eh-peh-ee",
+          "context": "Cardinal 1 (Apei fem., Epei masc.). (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Two",
-          "translation": "Ngaarei",
-          "pronunciation": "ngah-ah-reh-ee",
-          "context": "Cardinal 2 (non-fem: ngiarei)",
+          "translation": "Ngaarei / Ngiarei (Ari)",
+          "pronunciation": "ngah-ah-reh-ee / ah-ree",
+          "context": "Cardinal 2 (Ngaarei fem., Ngiarei masc.; Ari). (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Three",
-          "translation": "Ngauni",
-          "pronunciation": "ngah-oo-nee",
-          "context": "Cardinal 3 (non-fem: ngiuni)",
+          "translation": "Ngauni / Ngiuni (Uni)",
+          "pronunciation": "ngah-oo-nee / oo-nee",
+          "context": "Cardinal 3 (Ngauni fem., Ngiuni masc.; Uni). (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Four",
-          "translation": "Ngaomon",
-          "pronunciation": "ngah-oh-mohn",
-          "context": "Cardinal 4 (non-fem: ngiomon)",
+          "translation": "Ngaomon / Ngiomon (Omwon)",
+          "pronunciation": "ngah-oh-mohn / ohm-wohn",
+          "context": "Cardinal 4 (Ngaomon fem., Ngiomon masc.; Omwon). (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Five",
-          "translation": "Ngakan",
-          "pronunciation": "ngah-kahn",
-          "context": "Cardinal 5. Literally 'hands' (akan = hand).",
+          "translation": "Ngakan / Akhan",
+          "pronunciation": "ngah-kahn / ah-khahn",
+          "context": "Cardinal 5. Literally 'hand' (akan). (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Six",
-          "translation": "Ngakanikapei",
+          "translation": "Ngakanikapei / Akhan ka pei",
           "pronunciation": "ngah-kah-nee-kah-peh-ee",
-          "context": "5 + 1",
+          "context": "5 + 1. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Seven",
-          "translation": "Ngakanikaarei",
+          "translation": "Ngakanikaarei / Akhan ka ari",
           "pronunciation": "ngah-kah-nee-kah-ah-reh-ee",
-          "context": "5 + 2",
+          "context": "5 + 2. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "Ngakanikauni",
+          "translation": "Ngakanikauni / Akhan ka uni",
           "pronunciation": "ngah-kah-nee-kah-oo-nee",
-          "context": "5 + 3",
+          "context": "5 + 3. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Nine",
-          "translation": "Ngakanikaomon",
+          "translation": "Ngakanikaomon / Akhan ka omwon",
           "pronunciation": "ngah-kah-nee-kah-oh-mohn",
-          "context": "5 + 4",
+          "context": "5 + 4. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Ten",
-          "translation": "Ngatomon",
-          "pronunciation": "ngah-toh-mohn",
-          "context": "Cardinal 10",
+          "translation": "Tomon / Ng'tomon",
+          "pronunciation": "toh-mohn",
+          "context": "Cardinal 10. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Eleven",
-          "translation": "Ngatomonokapei",
-          "pronunciation": "ngah-toh-moh-noh-kah-peh-ee",
-          "context": "10 + 1",
+          "translation": "Tomon ka pei",
+          "pronunciation": "toh-mohn kah peh-ee",
+          "context": "10 + 1. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Twelve",
-          "translation": "Ngatomonokangaarei",
-          "pronunciation": "ngah-toh-moh-noh-kah-ngah-ah-reh-ee",
-          "context": "10 + 2",
+          "translation": "Tomon ka ari / Tomon kangaarei",
+          "pronunciation": "toh-mohn kah ah-ree",
+          "context": "10 + 2. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Twenty",
-          "translation": "Ngatomoni ngaarei",
-          "pronunciation": "ngah-toh-moh-nee ngah-ah-reh-ee",
-          "context": "10 × 2",
+          "translation": "Tomon ari / Ngatomona arei",
+          "pronunciation": "toh-mohn ah-ree",
+          "context": "20 (two tens). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Tomon uni",
+          "pronunciation": "toh-mohn oo-nee",
+          "context": "30 (three tens). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Forty",
+          "translation": "Tomon omwon",
+          "pronunciation": "toh-mohn ohm-wohn",
+          "context": "40 (four tens). (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Fifty",
-          "translation": "Ngatomoni ngakan",
-          "pronunciation": "ngah-toh-moh-nee ngah-kahn",
-          "context": "10 × 5",
+          "translation": "Tomon akhan / Ngatomona akan",
+          "pronunciation": "toh-mohn ah-khahn",
+          "context": "50 (five tens). (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Hundred",
-          "translation": "Ngakwat / Apei mia",
-          "pronunciation": "ngah-kwaht / ah-peh-ee mee-ah",
-          "context": "Cardinal 100",
+          "english": "Sixty",
+          "translation": "Tomon akhan ka pei",
+          "pronunciation": "toh-mohn ah-khahn kah peh-ee",
+          "context": "60 (six tens). (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Thousand",
-          "translation": "Apei alfu",
-          "pronunciation": "ah-peh-ee ahl-foo",
-          "context": "Cardinal 1,000",
+          "english": "Seventy",
+          "translation": "Tomon akhan ka ari",
+          "pronunciation": "toh-mohn ah-khahn kah ah-ree",
+          "context": "70 (seven tens). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Eighty",
+          "translation": "Tomon akhan ka uni",
+          "pronunciation": "toh-mohn ah-khahn kah oo-nee",
+          "context": "80 (eight tens). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Ninety",
+          "translation": "Tomon akhan ka omwon",
+          "pronunciation": "toh-mohn ah-khahn kah ohm-wohn",
+          "context": "90 (nine tens). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "One hundred",
+          "translation": "Tomon tomon / Amiet",
+          "pronunciation": "toh-mohn toh-mohn / ah-mee-eht",
+          "context": "100 (ten tens). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Two hundred",
+          "translation": "Tomon tomon ithia ari",
+          "pronunciation": "toh-mohn toh-mohn ee-thee-ah ah-ree",
+          "context": "200. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Small herd count (250–300)",
+          "translation": "Abungi",
+          "pronunciation": "ah-boon-gee",
+          "context": "Traditional pastoral counting unit denoting a small herd of 250 to 300 livestock. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Large herd count (500–1000)",
+          "translation": "Ouriman / Alip",
+          "pronunciation": "oh-ree-mahn / ah-leep",
+          "context": "Traditional pastoral counting unit denoting a large herd of 500 to 1,000 cattle. (Barton 1921)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "calendar-seasons",
+      "name": "Calendar & Seasons",
+      "icon": "🗓️",
+      "entries": [
+        {
+          "english": "Rainy season",
+          "translation": "Ageboro",
+          "pronunciation": "ah-geh-boh-roh",
+          "context": "The traditional rainy season in the Turkana pastoral cycle. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Dry season",
+          "translation": "Akamu",
+          "pronunciation": "ah-kah-moo",
+          "context": "The dry season, demanding seasonal herd migrations to mountain grazing reserves. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "January",
+          "translation": "Lodungi",
+          "pronunciation": "loh-doon-gee",
+          "context": "1st month of the Turkana traditional calendar; begins approx. 22 January. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "February",
+          "translation": "Lomoruk",
+          "pronunciation": "loh-moh-rook",
+          "context": "2nd month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "March",
+          "translation": "Loichoto",
+          "pronunciation": "loh-ee-choh-toh",
+          "context": "3rd month of the traditional Turkana calendar; heralds wet season preparations. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "April",
+          "translation": "Titima",
+          "pronunciation": "tee-tee-mah",
+          "context": "4th month of the traditional Turkana calendar; marks wet season rains and lush grass. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "May",
+          "translation": "Yeliyel",
+          "pronunciation": "yeh-lee-yehl",
+          "context": "5th month of the traditional Turkana calendar; peak milk and calving season. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "June",
+          "translation": "Lopo",
+          "pronunciation": "loh-poh",
+          "context": "6th month of the traditional Turkana calendar; end of rainy season. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "July",
+          "translation": "Lotiak",
+          "pronunciation": "loh-tee-ahk",
+          "context": "7th month of the traditional Turkana calendar; onset of dry season. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "August",
+          "translation": "Lolingachunu",
+          "pronunciation": "loh-leen-gah-choo-noo",
+          "context": "8th month of the traditional Turkana calendar; mid dry season. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "September",
+          "translation": "Lothaban",
+          "pronunciation": "loh-thah-bahn",
+          "context": "9th month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "October",
+          "translation": "Lolongu",
+          "pronunciation": "loh-lohn-goo",
+          "context": "10th month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "November",
+          "translation": "Lorarrar",
+          "pronunciation": "loh-rah-rahr",
+          "context": "11th month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "December",
+          "translation": "Lugwan",
+          "pronunciation": "loog-wahn",
+          "context": "12th month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "Ekaru (pl. ngaro)",
+          "pronunciation": "eh-kah-roo",
+          "context": "Year or annual cycle. This year: 'Ekaru lo'; next year: 'Ekaru echi'; last year: 'Ekaru ye'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Month / Moon",
+          "translation": "Elap (pl. ngelapio)",
+          "pronunciation": "eh-lahp",
+          "context": "Lunar month or moon. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Erwait (pl. ngurwa)",
+          "pronunciation": "ehr-wah-eet",
+          "context": "Daytime or daylight period. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Akuari (pl. ngakuaretha)",
+          "pronunciation": "ah-kwah-ree",
+          "context": "Night-time darkness. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Dawn / Early morning",
+          "translation": "Ataparach",
+          "pronunciation": "ah-tah-pah-rahch",
+          "context": "First light of dawn and early morning. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Morning",
+          "translation": "Ethimakunyak / Taparach",
+          "pronunciation": "eh-thee-mah-koon-yahk",
+          "context": "Morning hours before intense heat. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Midday / Noon",
+          "translation": "Naparan / Ewi akolon",
+          "pronunciation": "nah-pah-rahn",
+          "context": "Midday when the sun is directly overhead. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Afternoon / Evening",
+          "translation": "Ebon / Ebong",
+          "pronunciation": "eh-bohng",
+          "context": "Late afternoon approaching dusk. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sunrise (6 a.m.)",
+          "translation": "Alomo akolon",
+          "pronunciation": "ah-loh-moh ah-koh-lohn",
+          "context": "The sun appearing over the horizon at dawn. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Morning sun (7 a.m.)",
+          "translation": "Achou akolon",
+          "pronunciation": "ah-choh-oo ah-koh-lohn",
+          "context": "Morning sun ascending. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Overhead sun (12 p.m.)",
+          "translation": "Ewi akolon",
+          "pronunciation": "eh-wee ah-koh-lohn",
+          "context": "Peak noon sun directly above. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mid-afternoon sun (2 p.m.)",
+          "translation": "Athom akolon",
+          "pronunciation": "ah-thohm ah-koh-lohn",
+          "context": "Declining afternoon sun. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sunset (6 p.m.)",
+          "translation": "Aloma akolon",
+          "pronunciation": "ah-loh-mah ah-koh-lohn",
+          "context": "The sun setting into twilight. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Tete / Akolon itina",
+          "pronunciation": "teh-teh",
+          "context": "The present day. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Mui",
+          "pronunciation": "moo-ee",
+          "context": "The following day. Tomorrow morning: 'Mui ataparach'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Day after tomorrow",
+          "translation": "Mui echi akolon",
+          "pronunciation": "moo-ee eh-chee ah-koh-lohn",
+          "context": "Two days forward. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Beyen / Ngon",
+          "pronunciation": "beh-yehn / ngohn",
+          "context": "The previous day. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Day before yesterday",
+          "translation": "Ngon echi akolon",
+          "pronunciation": "ngohn eh-chee ah-koh-lohn",
+          "context": "Two days ago. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "Tokona",
+          "pronunciation": "toh-koh-nah",
+          "context": "At the present moment. Instantly: 'Tokona-tokona'. (Barton 1921)",
           "audioFile": null
         }
       ]
     },
     {
       "id": "family",
-      "name": "Family & Relationships",
-      "icon": "👨‍👩‍👧‍👦",
+      "name": "Family & People",
+      "icon": "👥",
       "entries": [
         {
+          "english": "Person / Mankind",
+          "translation": "Etunganan / Etonganan (pl. ngitunga)",
+          "pronunciation": "eh-toong-ah-nahn",
+          "context": "Human being or person. Plural: Ngitunga (people). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Male",
+          "translation": "Ekili / E'kili (pl. ngiliok)",
+          "pronunciation": "eh-kee-lee",
+          "context": "Adult male or warrior. Plural: Ngiliok. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Female",
+          "translation": "Abero / A'bero (pl. ngabero)",
+          "pronunciation": "ah-beh-roh",
+          "context": "Adult female or woman. Plural: Ngabero. (Barton 1921)",
+          "audioFile": null
+        },
+        {
           "english": "Father",
-          "translation": "Apa / Apa kang",
-          "pronunciation": "ah-pah / ah-pah kahng",
-          "context": "Father. Vocative: Papa! My father: Apa kang.",
+          "translation": "Baba / Papa (pl. tababa / ngipapao)",
+          "pronunciation": "bah-bah / pah-pah",
+          "context": "Father or paternal head. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Mother",
-          "translation": "Ito / Ito kang",
-          "pronunciation": "ee-toh / ee-toh kahng",
-          "context": "Mother. Vocative: Toto! My mother: Ito kang.",
+          "translation": "Toto / Iyoo (pl. tatoto / ngiyootin)",
+          "pronunciation": "toh-toh",
+          "context": "Mother. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Child",
-          "translation": "Ikoku",
+          "translation": "Ikoku / Ikoko (pl. ngidwe / ngedwi)",
           "pronunciation": "ee-koh-koo",
-          "context": "Plural: Ngidwe (children).",
+          "context": "Child or baby offspring. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Son",
-          "translation": "Lokato / Woyi",
-          "pronunciation": "loh-kah-toh / woh-yee",
-          "context": "Boy / son.",
+          "english": "Son / Young boy",
+          "translation": "Edit / Lokoku (pl. ngedithok / ngidwe)",
+          "pronunciation": "eh-deet",
+          "context": "Male child or youth. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Boy / Son",
-          "translation": "Lokato / Esorokit",
-          "pronunciation": "loh-kah-toh / eh-soh-roh-keet",
-          "context": "Young male.",
-          "audioFile": null
-        },
-        {
-          "english": "Daughter",
-          "translation": "Napesur / Apesur",
-          "pronunciation": "nah-peh-soor / ah-peh-soor",
-          "context": "Girl / daughter.",
-          "audioFile": null
-        },
-        {
-          "english": "Girl / Daughter",
-          "translation": "Apesur / Napesur",
-          "pronunciation": "ah-peh-soor / nah-peh-soor",
-          "context": "Young female.",
+          "english": "Daughter / Girl",
+          "translation": "Apethe / Apese (pl. ngapethur / ngapesur)",
+          "pronunciation": "ah-peh-theh",
+          "context": "Girl or unmarried daughter. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Brother",
-          "translation": "Lokang",
-          "pronunciation": "loh-kahng",
-          "context": "Lit. 'the male of mine'.",
+          "translation": "Lokadokan / Ekaato (pl. ngalokadokon / ngikaatoka)",
+          "pronunciation": "loh-kah-doh-kahn",
+          "context": "Brother or male kin. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Sister",
-          "translation": "Nakang",
-          "pronunciation": "nah-kahng",
-          "context": "Lit. 'the female of mine'.",
-          "audioFile": null
-        },
-        {
-          "english": "Grandfather",
-          "translation": "Aapa / Taapa",
-          "pronunciation": "ah-ah-pah / tah-ah-pah",
-          "context": "Paternal or maternal grandfather / ancestor.",
-          "audioFile": null
-        },
-        {
-          "english": "Grandmother",
-          "translation": "Aata / Taaata",
-          "pronunciation": "ah-ah-tah / tah-ah-tah",
-          "context": "Paternal or maternal grandmother.",
+          "translation": "Lokadokan / Nakaato (pl. ngaitotui / ngakaatoka)",
+          "pronunciation": "loh-kah-doh-kahn",
+          "context": "Sister or female kin. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Husband",
-          "translation": "Ekile",
-          "pronunciation": "eh-kee-leh",
-          "context": "Plural: Ngikilyok. Also man.",
+          "translation": "Lokiliakan / Ekile (pl. ngiliokoka / ngikilyok)",
+          "pronunciation": "loh-kee-lee-ah-kahn",
+          "context": "Married partner / husband (lit. 'my man'). (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Wife",
-          "translation": "Aberu",
-          "pronunciation": "ah-beh-roo",
-          "context": "Plural: Ngaangorin. Also woman.",
+          "translation": "Abero / Aberu (pl. ngabero / ngaberu)",
+          "pronunciation": "ah-beh-roh",
+          "context": "Married woman / wife. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather / Male ancestor",
+          "translation": "Apa (pl. ngapapai)",
+          "pronunciation": "ah-pah",
+          "context": "Paternal or maternal grandfather / ancestor. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmother / Female ancestor",
+          "translation": "Tata (pl. ngatubai)",
+          "pronunciation": "tah-tah",
+          "context": "Paternal or maternal grandmother / ancestress. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Aunt",
+          "translation": "Eya (pl. ngaiyayai)",
+          "pronunciation": "eh-yah",
+          "context": "Maternal or paternal aunt. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Uncle",
+          "translation": "Baba / Mama (pl. ngebabai)",
+          "pronunciation": "bah-bah",
+          "context": "Paternal or maternal uncle. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Father-in-law",
+          "translation": "Akamuranika (pl. ngamurak)",
+          "pronunciation": "ah-kah-moo-rah-nee-kah",
+          "context": "Father-in-law. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother-in-law",
+          "translation": "Akamuranika (pl. ngamurak)",
+          "pronunciation": "ah-kah-moo-rah-nee-kah",
+          "context": "Mother-in-law. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "In-law (Brother/Sister-in-law)",
+          "translation": "Akamuran (pl. ngamurak)",
+          "pronunciation": "ah-kah-moo-rahn",
+          "context": "Affinal relative through marriage. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Old man / Elder",
+          "translation": "Ekasiko / Akasikot (pl. ngasikot / ngikasiko)",
+          "pronunciation": "eh-kah-see-koh",
+          "context": "Respected elder in traditional age-set hierarchy. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Old woman",
+          "translation": "Akimat (pl. ngakimat)",
+          "pronunciation": "ah-kee-maht",
+          "context": "Elderly respected woman. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Young warrior / Youth",
+          "translation": "Akarachonait / Ekasurani (pl. ngarachona / ngikasurak)",
+          "pronunciation": "ah-kah-rah-choh-nah-eet",
+          "context": "Initiated young pastoral warrior of the age-grade. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Friend",
-          "translation": "Epaton",
-          "pronunciation": "eh-pah-tohn",
-          "context": "Plural: Ngipato.",
+          "translation": "Epay / Ekone (pl. ngepaylon / ngikonei)",
+          "pronunciation": "eh-pah-ee",
+          "context": "Close friend or peer. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "People",
-          "translation": "Ngitunga",
-          "pronunciation": "ngee-toon-gah",
-          "context": "Singular: Itwan (person).",
+          "english": "Herdsman / Shepherd",
+          "translation": "Egayokon / Ekeyokon (pl. ngeyoko / ngikeyoko)",
+          "pronunciation": "eh-gah-yoh-kohn",
+          "context": "Pastoralist herding cattle or small stock. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Warrior",
-          "translation": "Esorokit / Ekasorokit",
-          "pronunciation": "eh-soh-roh-keet",
-          "context": "Young initiated defender of the herds.",
+          "english": "Diviner / Traditional doctor",
+          "translation": "Emuron (pl. ngemurok)",
+          "pronunciation": "eh-moo-rohn",
+          "context": "Prophet, ritual diviner, and traditional physician. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Chief / Leader",
+          "translation": "Eirkatungan / Erotoit (pl. ngatukok / ngerotoitin)",
+          "pronunciation": "eh-eer-kah-toong-ahn",
+          "context": "Community leader, raid scout, or prominent elder. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Guest / Stranger",
+          "translation": "Ebayunan / Epeyonon (pl. ngebayok / ngipeyok)",
+          "pronunciation": "eh-bah-yoo-nahn",
+          "context": "Traveller or visiting guest hosted at the kraal. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Enemy",
+          "translation": "Emoit (pl. ngemoi)",
+          "pronunciation": "eh-moh-eet",
+          "context": "Adversary or hostile tribal raider. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Police / Guard",
+          "translation": "Epolisit / Ekerimon (pl. ngipolisi / ngerimo)",
+          "pronunciation": "eh-poh-lee-seet",
+          "context": "Security guard or police officer. (Barton 1921)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Wildlife",
+      "icon": "🐾",
+      "entries": [
+        {
+          "english": "Cattle (Herds)",
+          "translation": "Ng'atuk / Ngatuk (sing. Ate / Atāka)",
+          "pronunciation": "ngah-took",
+          "context": "Plural collective for cattle herds, central to Turkana identity and sustenance. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "Atāka / Aite (pl. ngatak / ngatuk)",
+          "pronunciation": "ah-tah-kah",
+          "context": "Adult cow providing milk and blood. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "Emanik (pl. ngemaniko)",
+          "pronunciation": "eh-mah-neek",
+          "context": "Breeding herd sire bull. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bullock / Ox",
+          "translation": "Emon (pl. ngemongin)",
+          "pronunciation": "eh-mohn",
+          "context": "Castrated ox; central to ceremonial display, bell-wearing, and praise poetry. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Heifer",
+          "translation": "Atou / Ataok (pl. ngatak / ngataokin)",
+          "pronunciation": "ah-toh-oo",
+          "context": "Young female cow before first calf. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Small calf",
+          "translation": "Manangit (pl. ngemanan)",
+          "pronunciation": "mah-nahn-geet",
+          "context": "Very young suckling calf. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Large calf",
+          "translation": "Etak (pl. ngetak)",
+          "pronunciation": "eh-tahk",
+          "context": "Weaned growing calf. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Akine / Akini (pl. ngakinei / ngakini)",
+          "pronunciation": "ah-kee-neh",
+          "context": "Domestic goat. Plural: Ngakinei. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "He-goat",
+          "translation": "Akorai (pl. ngora)",
+          "pronunciation": "ah-koh-rah-ee",
+          "context": "Male billy goat. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Kid (young goat)",
+          "translation": "Ekali (pl. ngali)",
+          "pronunciation": "eh-kah-lee",
+          "context": "Young goat or lamb. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Amethek / Amesek (pl. ngamethekin / ngamesekin)",
+          "pronunciation": "ah-meh-thehk",
+          "context": "Indigenous fat-tailed sheep. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Ram",
+          "translation": "Egetipan (pl. ngetipaka)",
+          "pronunciation": "eh-geh-tee-pahn",
+          "context": "Male breeding ram. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey",
+          "translation": "Esikirya / E'sikiriya (pl. ngisikirya)",
+          "pronunciation": "eh-see-kee-ryah",
+          "context": "Pack donkey, indispensable for transporting household goods on migration. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Camel",
+          "translation": "Akāl / Ekaal (pl. ngāl / ngikaala)",
+          "pronunciation": "ah-kahl",
+          "context": "Dromedary camel, vital milk source during severe drought. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Etom / E'tome (pl. ngetom / ngitomei)",
+          "pronunciation": "eh-tohm",
+          "context": "African savanna elephant. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Angatuin / Engatun (pl. ngatuino / ngingatunyo)",
+          "pronunciation": "ahn-gah-too-een",
+          "context": "Apex predator lion. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "Eris (pl. ngerise / ngirisa)",
+          "pronunciation": "eh-rees",
+          "context": "Leopard. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Cheetah",
+          "translation": "Arrara (pl. ngarrarai)",
+          "pronunciation": "ah-rah-rah",
+          "context": "Cheetah. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "Ebu / Ebuu (pl. ngebui / ngibuwin)",
+          "pronunciation": "eh-boo",
+          "context": "Spotted hyena. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Wild dog",
+          "translation": "Epiot (pl. ngepioto)",
+          "pronunciation": "eh-pee-oht",
+          "context": "African wild dog / painted dog. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Jackal",
+          "translation": "Ekui (pl. ngekui)",
+          "pronunciation": "eh-koo-ee",
+          "context": "Jackal. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Yekori / Ekori (pl. ngikorio)",
+          "pronunciation": "yeh-koh-ree",
+          "context": "Reticulated giraffe. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Ekothuan / Ekosowan (pl. ngekothua / ngikosowani)",
+          "pronunciation": "eh-koh-thoo-ahn",
+          "context": "Cape buffalo whose hide was prized for heavy shields. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "Amothi / Emosik (pl. ngamothingok / ngimosiko)",
+          "pronunciation": "ah-moh-thee",
+          "context": "Black rhinoceros. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "Epir (pl. ngipirin)",
+          "pronunciation": "eh-peer",
+          "context": "Hippopotamus of Lake Turkana. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Zebra",
+          "translation": "Etugo / Etuko (pl. ngetugoi / ngitukoi)",
+          "pronunciation": "eh-too-goh",
+          "context": "Plains zebra. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Eland",
+          "translation": "Uwabet (pl. nguawabeto)",
+          "pronunciation": "oo-wah-beht",
+          "context": "Giant eland antelope. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Oryx",
+          "translation": "Eder (pl. ngederin)",
+          "pronunciation": "eh-dehr",
+          "context": "Beisa oryx; horns used for tobacco containers and horns. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Greater Kudu",
+          "translation": "Emakak (pl. ngemakaka)",
+          "pronunciation": "eh-mah-kahk",
+          "context": "Greater kudu. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Lesser Kudu",
+          "translation": "Asarich (pl. ngasarich)",
+          "pronunciation": "ah-sah-reech",
+          "context": "Lesser kudu. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Impala",
+          "translation": "Akoloba / E'koloba (pl. ngalobai)",
+          "pronunciation": "ah-koh-loh-bah",
+          "context": "Impala antelope. Buck: 'Ekoloba-emanik'; doe: 'Ekoloba-abero'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Dik-dik",
+          "translation": "Ethuro (pl. ngetheroi)",
+          "pronunciation": "eh-thoo-roh",
+          "context": "Kirk's dik-dik dwarf antelope. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Waterbuck",
+          "translation": "Akokorait (pl. ngokorai)",
+          "pronunciation": "ah-koh-koh-rah-eet",
+          "context": "Waterbuck antelope. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bushbuck",
+          "translation": "Adarit (pl. ngadarita)",
+          "pronunciation": "ah-dah-reet",
+          "context": "Bushbuck antelope. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Warthog",
+          "translation": "Epigi / Eputir (pl. ngapigi / ngiputiro)",
+          "pronunciation": "eh-pee-gee",
+          "context": "Warthog. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Baboon",
+          "translation": "Echom (pl. ngechomin)",
+          "pronunciation": "eh-chohm",
+          "context": "Olive baboon. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Monkey",
+          "translation": "Akodokon (pl. ngadokoi)",
+          "pronunciation": "ah-koh-doh-kohn",
+          "context": "Vervet / Sykes monkey. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "Akinyan / Akinyang (pl. ngakinyanga)",
+          "pronunciation": "ah-keen-yahn",
+          "context": "Nile crocodile, abundant in Lake Turkana. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tortoise",
+          "translation": "Ebokok (pl. ngebokoka)",
+          "pronunciation": "eh-boh-kohk",
+          "context": "Leopard tortoise. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "Emun (pl. ngemun)",
+          "pronunciation": "eh-moon",
+          "context": "General serpent / snake. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Puff adder",
+          "translation": "Akipom (pl. ngapomia)",
+          "pronunciation": "ah-kee-pohm",
+          "context": "Venomous puff adder. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Python",
+          "translation": "Emorotot (pl. ngemorotota)",
+          "pronunciation": "eh-moh-roh-toht",
+          "context": "African rock python. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Spitting cobra",
+          "translation": "Ereu (pl. ngarewa)",
+          "pronunciation": "eh-reh-oo",
+          "context": "Spitting cobra. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Ikenit / Ikoni (pl. ngken / ngiken)",
+          "pronunciation": "ee-keh-neet",
+          "context": "Wild bird. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Ostrich",
+          "translation": "Akalis (pl. ngaliso)",
+          "pronunciation": "ah-kah-lees",
+          "context": "Somali ostrich; feathers used for warriors' ceremonial headdresses. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Vulture",
+          "translation": "Atorokot (pl. ngatorok)",
+          "pronunciation": "ah-toh-roh-koht",
+          "context": "Scavenger vulture. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hawk",
+          "translation": "Ejili (pl. ngaijilili)",
+          "pronunciation": "eh-jee-lee",
+          "context": "Bird of prey / raptor. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Crow",
+          "translation": "Akorup (pl. ngoroka)",
+          "pronunciation": "ah-koh-roop",
+          "context": "Pied crow. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Guineafowl",
+          "translation": "Atapen (pl. ngatapeno)",
+          "pronunciation": "ah-tah-pehn",
+          "context": "Helmeted guineafowl. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Dove",
+          "translation": "Ekuri (pl. ngokori)",
+          "pronunciation": "eh-koo-ree",
+          "context": "African dove. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken / Fowl",
+          "translation": "Atapeng / Akukor (pl. ngatapengo / ngakukoroi)",
+          "pronunciation": "ah-tah-pehng",
+          "context": "Domestic poultry.",
+          "audioFile": null
+        },
+        {
+          "english": "Hare / Rabbit",
+          "translation": "Apoo (pl. ngapooi)",
+          "pronunciation": "ah-poh-oh",
+          "context": "Savanna hare.",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Ekolia (pl. ngolia)",
+          "pronunciation": "eh-koh-lee-ah",
+          "context": "Fish harvested by fishing communities along Lake Turkana. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Ingok (pl. ngoko / ngingokwo)",
+          "pronunciation": "een-gohk",
+          "context": "Domestic camp guard dog. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Wild cat",
+          "translation": "Lorutoit (pl. lokutucha)",
+          "pronunciation": "loh-roo-toh-eet",
+          "context": "African wild cat. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Rat",
+          "translation": "Ejulin (pl. ngejuluno)",
+          "pronunciation": "eh-joo-leen",
+          "context": "Rodent / rat. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Locust",
+          "translation": "Emathi (pl. ngemathia)",
+          "pronunciation": "eh-mah-thee",
+          "context": "Migratory desert locust. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mosquito",
+          "translation": "Etherot (pl. ngesorro)",
+          "pronunciation": "eh-theh-roht",
+          "context": "Mosquito insect. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tick",
+          "translation": "Emadan (pl. ngamadan)",
+          "pronunciation": "eh-mah-dahn",
+          "context": "Livestock tick. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bee",
+          "translation": "Oūū (coll. bees)",
+          "pronunciation": "oh-oo-oo",
+          "context": "Wild honeybee swarms. (Barton 1921)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "Ng'akipi / Agipi (pl. ngagipi)",
+          "pronunciation": "ngah-kee-pee / ah-gee-pee",
+          "context": "Vital pastoral resource. Fresh water: 'Agipi kalimok'; dirty water: 'Agipi eloth'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Akiru",
+          "pronunciation": "ah-kee-roo",
+          "context": "Precious rainfall rejuvenating dry pasture. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "River / Stream",
+          "translation": "Angalul / Angolul (pl. ngangolulio)",
+          "pronunciation": "ahn-gah-lool",
+          "context": "Permanent or seasonal river channel. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Dry riverbed (Laga)",
+          "translation": "Ayonay (pl. ngiyonay)",
+          "pronunciation": "ah-yoh-nah-ee",
+          "context": "Sandy dry river course that surges during seasonal flash floods. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "Emoro / Emor (pl. ngemor)",
+          "pronunciation": "eh-moh-roh",
+          "context": "Rocky mountain or hill peak. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain range",
+          "translation": "Aukot (pl. ngoukon)",
+          "pronunciation": "ah-oo-koht",
+          "context": "Highland mountain range. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hill",
+          "translation": "Amukora (pl. ngemokor)",
+          "pronunciation": "ah-moo-koh-rah",
+          "context": "Rocky knoll or hillock. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Plain / Savannah",
+          "translation": "Aro / Etot (pl. ngaroitin / ngatotin)",
+          "pronunciation": "ah-roh",
+          "context": "Vast open arid plain. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest / Acacia bushland",
+          "translation": "Amoni (pl. nyamoniek)",
+          "pronunciation": "ah-moh-nee",
+          "context": "Dense riverine thorn forest or thicket. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Wilderness / Open country",
+          "translation": "Akitela (pl. ngateai)",
+          "pronunciation": "ah-kee-teh-lah",
+          "context": "Uninhabited wilderness expanse. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "Akolon / Akolong (pl. ngakolon)",
+          "pronunciation": "ah-koh-lohn",
+          "context": "The sun; also governs diurnal timekeeping. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "Elap (pl. ngelapio)",
+          "pronunciation": "eh-lahp",
+          "context": "The moon; marks monthly cycles. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "Kanyerit (pl. nganyer)",
+          "pronunciation": "kahn-yeh-reet",
+          "context": "Night sky star. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Morning star",
+          "translation": "Etup",
+          "pronunciation": "eh-toop",
+          "context": "Bright morning planet Venus visible before sunrise. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sky / Heaven",
+          "translation": "Akuich / Akuj",
+          "pronunciation": "ah-koo-eech",
+          "context": "The vault of heaven and celestial abode of God. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "Edu (pl. ngeduon)",
+          "pronunciation": "eh-doo",
+          "context": "Rain cloud. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "Atorot / Ekuwam (pl. ngatorot / ngikuwamin)",
+          "pronunciation": "ah-toh-roht",
+          "context": "Breeze or wind across the plains. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Whirlwind / Dust devil",
+          "translation": "Ekwam (pl. ngakwama)",
+          "pronunciation": "eh-kwahm",
+          "context": "Spiraling desert dust whirlwind. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Thunder",
+          "translation": "Egiru (pl. ngakiro)",
+          "pronunciation": "eh-gee-roo",
+          "context": "Thunder resounding during seasonal storms. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Lightning",
+          "translation": "Emilia",
+          "pronunciation": "eh-mee-lee-ah",
+          "context": "Flash of lightning. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Soil / Ground",
+          "translation": "Elup / Ngalup",
+          "pronunciation": "eh-loop / ngah-loop",
+          "context": "Soil and ground surface. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sand",
+          "translation": "Athinuin / Asinik",
+          "pronunciation": "ah-thee-noo-een",
+          "context": "Desert and riverbed sand. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "Amoro (pl. ngamur)",
+          "pronunciation": "ah-moh-roh",
+          "context": "Stone or boulder. White quartz: 'Amoro ekwan'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Rock pool / Spring",
+          "translation": "Ebur / Ejwa (pl. ngiburin / ngejowi)",
+          "pronunciation": "eh-boor",
+          "context": "Natural rock pool or perennial freshwater spring. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Well",
+          "translation": "Akar (pl. ngakari)",
+          "pronunciation": "ah-kahr",
+          "context": "Hand-dug sand river well where livestock water. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mud",
+          "translation": "Echoto",
+          "pronunciation": "eh-choh-toh",
+          "context": "Rain mud or river silt. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Akitoi / E'kitoi (pl. ngakito)",
+          "pronunciation": "ah-kee-toh-ee",
+          "context": "Living tree or medicinal wood. Plural: Ngakito. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree branch",
+          "translation": "Ateni (pl. ngateni)",
+          "pronunciation": "ah-teh-nee",
+          "context": "Branch or bough of a tree. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree bark",
+          "translation": "Akobuket (pl. ngabuk)",
+          "pronunciation": "ah-koh-boo-keht",
+          "context": "Bark stripped from trees for rope and medicinal uses. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Leaf",
+          "translation": "Akui (pl. ngakui)",
+          "pronunciation": "ah-koo-ee",
+          "context": "Tree foliage or medicinal leaf. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Root",
+          "translation": "Atagorot (pl. ngatagor)",
+          "pronunciation": "ah-tah-goh-roht",
+          "context": "Plant or tree root used in healing concoctions. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass / Pasture",
+          "translation": "Amel / Amelu",
+          "pronunciation": "ah-mehl",
+          "context": "Fresh tender pasture for cattle and sheep. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Thorn",
+          "translation": "Akokai (pl. ngoka)",
+          "pronunciation": "ah-koh-kah-ee",
+          "context": "Thorn used in defensive kraal fencing. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake",
+          "translation": "Anam / Nam (pl. nganamin)",
+          "pronunciation": "ah-nahm",
+          "context": "Large inland sea or lake, referring specifically to Lake Turkana.",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Akuj / Akuich",
+          "pronunciation": "ah-kooj / ah-koo-eech",
+          "context": "Supreme Creator deity who dwells in the high heavens. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Land / Country",
+          "translation": "Akwap / Akwop (pl. ngakwapa)",
+          "pronunciation": "ah-kwahp",
+          "context": "Ancestral homeland or territory. (Barton 1921)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts",
+      "icon": "👁️",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "Ako / Akou (pl. nyakis / ngakouō)",
+          "pronunciation": "ah-koh / ah-koh-oo",
+          "context": "Head. Plural: Nyakis / Ngakouo. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "Atimat / Ngetim (pl. ngatim)",
+          "pronunciation": "ah-tee-maht",
+          "context": "Human hair. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Akon / Akong (pl. ngakonyan)",
+          "pronunciation": "ah-kohn",
+          "context": "Eye. Plural: Ngakonyan. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Agit / Akit (pl. nyagi / ngaki)",
+          "pronunciation": "ah-geet / ah-keet",
+          "context": "Ear. Plural: Nyagi / Ngaki. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "Ekumi (pl. ngikumith / ngikumes)",
+          "pronunciation": "eh-koo-mee",
+          "context": "Nose. Plural: Ngikumith. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "Akitok (pl. ngakituka)",
+          "pronunciation": "ah-kee-tohk",
+          "context": "Mouth. Plural: Ngakituka. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Lip",
+          "translation": "Akitok (pl. ngakutoka)",
+          "pronunciation": "ah-koo-toh-kah",
+          "context": "Lips. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "Agelai / Ekelai (pl. ngelai / ngikelai)",
+          "pronunciation": "ah-geh-lah-ee",
+          "context": "Tooth. Plural: Ngelai. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "Aliep / Angajep (pl. ngaliep / ngangajepa)",
+          "pronunciation": "ah-lee-ehp",
+          "context": "Tongue. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Throat",
+          "translation": "Edokoli (pl. ngadokoli)",
+          "pronunciation": "eh-doh-koh-lee",
+          "context": "Throat and larynx. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "Emotherin / Emosingo (pl. ngemotheringa / ngimosingo)",
+          "pronunciation": "eh-moh-theh-reen",
+          "context": "Neck. Plural: Ngemotheringa. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Ebenek (pl. ngebeneka)",
+          "pronunciation": "eh-beh-nehk",
+          "context": "Facial beard or chin whiskers. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "Eret (pl. ngeretin)",
+          "pronunciation": "eh-reht",
+          "context": "Face or brow. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "Ethiket / Ekeget (pl. ngethiketa / ngikegeta)",
+          "pronunciation": "eh-thee-keht",
+          "context": "Shoulder. Plural: Ngethiketa. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Chest",
+          "translation": "Etorob (pl. ngatorobio)",
+          "pronunciation": "eh-toh-rohb",
+          "context": "Chest. Plural: Ngatorobio. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "Ethigina / Ekidi (pl. ngethigin)",
+          "pronunciation": "eh-thee-gee-nah",
+          "context": "Breast. Plural: Ngethigin. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Etou / Etau (pl. ngetai / ngitai)",
+          "pronunciation": "eh-toh-oo / eh-tah-oo",
+          "context": "Anatomical heart and locus of courage. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Abdomen / Belly",
+          "translation": "Akok (pl. akokis)",
+          "pronunciation": "ah-kohk",
+          "context": "Abdomen. Plural: Akokis. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach",
+          "translation": "Eboi (pl. ngaboyo)",
+          "pronunciation": "eh-boh-ee",
+          "context": "Internal stomach organ. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Egur / Eguur (pl. ngurai / ngiguur)",
+          "pronunciation": "eh-goor",
+          "context": "Human back. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Arm / Hand",
+          "translation": "Akan (pl. ngakanin)",
+          "pronunciation": "ah-kahn",
+          "context": "Hand or whole arm. Plural: Ngakanin. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm of hand",
+          "translation": "Etou ya akan (pl. ngetou ya ngakanin)",
+          "pronunciation": "eh-toh-oo yah ah-kahn",
+          "context": "Inner palm of hand. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "Ekimoin (pl. ngemoyo / ngimoyin)",
+          "pronunciation": "eh-kee-moh-een",
+          "context": "Finger. Plural: Ngemoyo. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Thumb",
+          "translation": "Ekimoin labuloi / nabolon",
+          "pronunciation": "eh-kee-moh-een lah-boo-loh-ee",
+          "context": "Thumb (lit. 'big finger'). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Fingernail / Claw",
+          "translation": "Emargoit / Emagarit (pl. ngemagor)",
+          "pronunciation": "eh-mahr-goh-eet",
+          "context": "Fingernail, claw, or animal hoof. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "Akeju (pl. ngakeju)",
+          "pronunciation": "ah-keh-joo",
+          "context": "Leg or foot. Plural: Ngakeju. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "Akun / Akung (pl. ngakungin)",
+          "pronunciation": "ah-koon",
+          "context": "Knee joint. Plural: Ngakungin. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot / Sole",
+          "translation": "Adapal akeju / Etou ya keju",
+          "pronunciation": "ah-dah-pahl ah-keh-joo",
+          "context": "Sole of foot. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Toe",
+          "translation": "Akimoin akejo (pl. ngakimmoio ngakeju)",
+          "pronunciation": "eh-kee-moh-een ah-keh-joh",
+          "context": "Toe of the foot. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Akoit (pl. ngakoiyo)",
+          "pronunciation": "ah-koh-eet",
+          "context": "Bone. Plural: Ngakoiyo. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Nakot / Ngakoot",
+          "pronunciation": "nah-koht",
+          "context": "Living blood; also tapped as pastoral sustenance. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Body / Flesh",
+          "translation": "Akwan (pl. ngouwat) / Akirin (pl. ngakir)",
+          "pronunciation": "ah-kwahn",
+          "context": "Human body or flesh. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Skin",
+          "translation": "Emun-ya / Ejim (pl. ngemunya / ngijimyo)",
+          "pronunciation": "eh-moon-yah",
+          "context": "Human skin or dressed animal pelt. (Barton 1921)",
           "audioFile": null
         }
       ]
@@ -397,458 +1776,766 @@
       "icon": "🍲",
       "entries": [
         {
-          "english": "Water",
-          "translation": "Ngakipi",
-          "pronunciation": "ngah-kee-pee",
-          "context": "Essential plural noun. Water source.",
-          "audioFile": null
-        },
-        {
-          "english": "Food",
-          "translation": "Akimuj",
-          "pronunciation": "ah-kee-mooj",
-          "context": "Plural: Ngamuja. General sustenance.",
+          "english": "Meat",
+          "translation": "Akirin (pl. ngakerin / ngakir)",
+          "pronunciation": "ah-kee-reen",
+          "context": "Meat from slaughtered livestock. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Milk",
-          "translation": "Ngakile",
-          "pronunciation": "ngah-kee-leh",
-          "context": "Primary pastoral dietary staple.",
+          "translation": "Akili / Ngakile",
+          "pronunciation": "ah-kee-lee / ngah-kee-leh",
+          "context": "Fresh cow, camel, or goat milk. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Meat",
-          "translation": "Akiring",
-          "pronunciation": "ah-kee-reeng",
-          "context": "Plural: Ngakiryo.",
+          "english": "Fresh milk",
+          "translation": "Alepan",
+          "pronunciation": "ah-leh-pahn",
+          "context": "Warm milk fresh from milking. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Fish",
-          "translation": "Ekolyo",
-          "pronunciation": "eh-kohl-yoh",
-          "context": "Plural: Ngikolya. Lake Turkana fishery catch.",
+          "english": "Curdled milk",
+          "translation": "Ngakikok",
+          "pronunciation": "ngah-kee-kohk",
+          "context": "Sour fermented milk curd, a dietary staple. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Bread",
-          "translation": "Amukati",
-          "pronunciation": "ah-moo-kah-tee",
-          "context": "Plural: Ngamukati.",
+          "english": "Butter / Ghee / Fat",
+          "translation": "Akimet (pl. ngakajonon / ngameta)",
+          "pronunciation": "ah-kee-meht",
+          "context": "Clarified butter or melted fat. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Ugali",
+          "english": "Blood (staple diet)",
+          "translation": "Nakot / Ngakoot",
+          "pronunciation": "nah-koht",
+          "context": "Fresh blood drawn non-lethally from cattle veins and mixed with milk. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "Nyesik / Nadaka",
+          "pronunciation": "nyeh-seek",
+          "context": "Wild bush honey collected from cliff and tree hives. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Porridge",
           "translation": "Atap",
           "pronunciation": "ah-tahp",
-          "context": "Stiff porridge made from sorghum, millet or maize.",
+          "context": "Stiff porridge prepared from sorghum or millet flour. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Ugali / Porridge",
-          "translation": "Atap",
-          "pronunciation": "ah-tahp",
-          "context": "Staple ugali / porridge.",
+          "english": "Soup / Broth",
+          "translation": "Ngapok",
+          "pronunciation": "ngah-pohk",
+          "context": "Rich broth made by boiling meat and marrow bones. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Millet / Sorghum (grain)",
+          "translation": "Mumwa / Ngimumwa",
+          "pronunciation": "moom-wah",
+          "context": "Drought-hardy sorghum grain cultivated in river floodplains. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Eleusine / Finger millet",
+          "translation": "Ngakima",
+          "pronunciation": "ngah-kee-mah",
+          "context": "Finger millet grain. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Maize",
-          "translation": "Emaido / Ngimaidwa",
-          "pronunciation": "eh-mah-ee-doh",
-          "context": "Grown in riverbank recessions.",
+          "translation": "Nyepepe / Ekabur",
+          "pronunciation": "nyeh-peh-peh",
+          "context": "Corn / maize cobs. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Tea",
-          "translation": "Aicae / Chai",
-          "pronunciation": "ah-ee-chah-eh",
-          "context": "Tea, often brewed with rich goat milk.",
+          "english": "Beans",
+          "translation": "Ngamari",
+          "pronunciation": "ngah-mah-ree",
+          "context": "Cultivated beans. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Beer",
-          "translation": "Epurot",
-          "pronunciation": "eh-poo-roht",
-          "context": "Traditional fermented beverage.",
+          "english": "Flour",
+          "translation": "Ngakiriyek / Ngakirio",
+          "pronunciation": "ngah-kee-ree-yehk",
+          "context": "Ground stone flour used for atap porridge. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Fat / Oil",
-          "translation": "Akimet",
-          "pronunciation": "ah-kee-meht",
-          "context": "Ghee or animal fat.",
+          "english": "Food (provisions)",
+          "translation": "Akimoich / Akimuj (pl. ngimocha)",
+          "pronunciation": "ah-kee-moh-eech",
+          "context": "Food and subsistence sustenance. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Tobacco",
-          "translation": "Etaba / Ndawa",
-          "pronunciation": "eh-tah-bah",
-          "context": "Chewed or snuffed by pastoralists.",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "animals",
-      "name": "Animals & Wildlife",
-      "icon": "🦁",
-      "entries": [
-        {
-          "english": "Cow",
-          "translation": "Aite",
-          "pronunciation": "ah-ee-teh",
-          "context": "Plural: Ngaatuk (cattle).",
+          "english": "Drinking water",
+          "translation": "Ng'akipi / Agipi",
+          "pronunciation": "ngah-kee-pee",
+          "context": "Drinking water drawn from wells. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Cow / Cattle",
-          "translation": "Aite / Ngaatuk",
-          "pronunciation": "ah-ee-teh / ngah-ah-took",
-          "context": "Core wealth of pastoralists.",
+          "english": "Salt / Salt-lick",
+          "translation": "Edot (pl. ngedotin)",
+          "pronunciation": "eh-doht",
+          "context": "Mineral-rich soil and salt ingested by stock. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Bull",
-          "translation": "Emaanik",
-          "pronunciation": "eh-mah-ah-neek",
-          "context": "Plural: Ngimaaniko.",
+          "english": "Chewing tobacco",
+          "translation": "Enyakait (pl. nganyakaita)",
+          "pronunciation": "eh-nyah-kah-eet",
+          "context": "Traditional cured tobacco chewed with ash. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Heifer",
-          "translation": "Ataparait",
-          "pronunciation": "ah-tah-pah-rah-eet",
-          "context": "Young female cow.",
+          "english": "Snuff tobacco",
+          "translation": "Etaba ekumi (pl. ngetabin ekumi)",
+          "pronunciation": "eh-tah-bah eh-koo-mee",
+          "context": "Aromatic fine snuff powder. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Calf",
-          "translation": "Itaok",
-          "pronunciation": "ee-tah-ohk",
-          "context": "Plural: Ngitak.",
-          "audioFile": null
-        },
-        {
-          "english": "Goat",
-          "translation": "Angine",
-          "pronunciation": "ah-ngee-neh",
-          "context": "Plural: Nganginei.",
-          "audioFile": null
-        },
-        {
-          "english": "Sheep",
-          "translation": "Emeseek",
-          "pronunciation": "eh-meh-seh-ehk",
-          "context": "Plural: Ngimezekin.",
-          "audioFile": null
-        },
-        {
-          "english": "Camel",
-          "translation": "Ekaal",
-          "pronunciation": "eh-kah-ahl",
-          "context": "Plural: Ngikaala. Desert livestock.",
-          "audioFile": null
-        },
-        {
-          "english": "Donkey",
-          "translation": "Esikiria",
-          "pronunciation": "eh-see-kee-ree-ah",
-          "context": "Plural: Ngisikirya. Pack animal.",
-          "audioFile": null
-        },
-        {
-          "english": "Dog",
-          "translation": "Iingok",
-          "pronunciation": "ee-eeng-ohk",
-          "context": "Plural: Ngingoko. Guard dog.",
-          "audioFile": null
-        },
-        {
-          "english": "Lion",
-          "translation": "Engatuny",
-          "pronunciation": "eh-ngah-toony",
-          "context": "Plural: Ngingatunyo.",
-          "audioFile": null
-        },
-        {
-          "english": "Elephant",
-          "translation": "Etome",
-          "pronunciation": "eh-toh-meh",
-          "context": "Plural: Ngitomei.",
-          "audioFile": null
-        },
-        {
-          "english": "Leopard",
-          "translation": "Eris",
-          "pronunciation": "eh-rees",
-          "context": "Plural: Ngirisai.",
-          "audioFile": null
-        },
-        {
-          "english": "Hyena",
-          "translation": "Ebu",
-          "pronunciation": "eh-boo",
-          "context": "Plural: Ngibuin.",
-          "audioFile": null
-        },
-        {
-          "english": "Giraffe",
-          "translation": "Ekori",
-          "pronunciation": "eh-koh-ree",
-          "context": "Plural: Ngikoriyo.",
-          "audioFile": null
-        },
-        {
-          "english": "Buffalo",
-          "translation": "Edos",
-          "pronunciation": "eh-dohs",
-          "context": "Plural: Ngidoso.",
-          "audioFile": null
-        },
-        {
-          "english": "Rhinoceros",
-          "translation": "Emosing",
-          "pronunciation": "eh-moh-seeng",
-          "context": "Plural: Ngimosingo.",
-          "audioFile": null
-        },
-        {
-          "english": "Crocodile",
-          "translation": "Akinyang",
-          "pronunciation": "ah-kee-nyahng",
-          "context": "Plural: Ngakinyanga. Lake Turkana reptile.",
-          "audioFile": null
-        },
-        {
-          "english": "Snake",
-          "translation": "Emun",
-          "pronunciation": "eh-moon",
-          "context": "Plural: Ngimunyo.",
-          "audioFile": null
-        },
-        {
-          "english": "Bird",
-          "translation": "Ikenyit",
-          "pronunciation": "ee-keh-nyeet",
-          "context": "Plural: Ngikyenyo.",
-          "audioFile": null
-        },
-        {
-          "english": "Chicken",
-          "translation": "Ekokoro",
-          "pronunciation": "eh-koh-koh-roh",
-          "context": "Plural: Ngikokoroi.",
-          "audioFile": null
-        },
-        {
-          "english": "Chicken / Fowl",
-          "translation": "Ekokoro",
-          "pronunciation": "eh-koh-koh-roh",
-          "context": "Domestic fowl.",
-          "audioFile": null
-        },
-        {
-          "english": "Rabbit / Hare",
-          "translation": "Apoo",
-          "pronunciation": "ah-poh-oh",
-          "context": "Plural: Ngapooi.",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "nature",
-      "name": "Nature & Environment",
-      "icon": "🌍",
-      "entries": [
-        {
-          "english": "Sun",
-          "translation": "Akolong",
-          "pronunciation": "ah-koh-lohng",
-          "context": "Also marks daylight hours.",
-          "audioFile": null
-        },
-        {
-          "english": "Sun / Day",
-          "translation": "Akolong",
-          "pronunciation": "ah-koh-lohng",
-          "context": "Daylight & sun.",
-          "audioFile": null
-        },
-        {
-          "english": "Moon / Month",
-          "translation": "Elap",
-          "pronunciation": "eh-lahp",
-          "context": "Plural: Ngilapyo. Lunar cycles.",
-          "audioFile": null
-        },
-        {
-          "english": "Star",
-          "translation": "Ekyenyit",
-          "pronunciation": "eh-kyeh-nyeet",
-          "context": "Plural: Ngikyenyo.",
-          "audioFile": null
-        },
-        {
-          "english": "Rain",
-          "translation": "Akiru",
-          "pronunciation": "ah-kee-roo",
-          "context": "Blessing bringing fresh grass.",
-          "audioFile": null
-        },
-        {
-          "english": "Wind",
-          "translation": "Ekwam",
-          "pronunciation": "eh-kwahm",
-          "context": "Plural: Ngikwamya.",
-          "audioFile": null
-        },
-        {
-          "english": "Fire",
-          "translation": "Akim",
-          "pronunciation": "ah-keem",
-          "context": "Plural: Ngakimya.",
-          "audioFile": null
-        },
-        {
-          "english": "Mountain",
-          "translation": "Emoru",
-          "pronunciation": "eh-moh-roo",
-          "context": "Plural: Ngimor. Rocky ranges.",
-          "audioFile": null
-        },
-        {
-          "english": "Mountain / Hill",
-          "translation": "Emoru",
-          "pronunciation": "eh-moh-roo",
-          "context": "Highland peaks.",
-          "audioFile": null
-        },
-        {
-          "english": "River",
-          "translation": "Angolol",
-          "pronunciation": "ah-ngoh-lohl",
-          "context": "Plural: Ngangololin. Sand riverbeds.",
-          "audioFile": null
-        },
-        {
-          "english": "Tree",
-          "translation": "Eketoi",
-          "pronunciation": "eh-keh-toh-ee",
-          "context": "Plural: Ngikito.",
-          "audioFile": null
-        },
-        {
-          "english": "Tree / Medicine",
-          "translation": "Eketoi",
-          "pronunciation": "eh-keh-toh-ee",
-          "context": "In Turkana, medicine (eketoi) is named from trees.",
-          "audioFile": null
-        },
-        {
-          "english": "Earth / Country",
-          "translation": "Akuwap",
-          "pronunciation": "ah-koo-wahp",
-          "context": "Plural: Ngakuwapin. Land, territory.",
-          "audioFile": null
-        },
-        {
-          "english": "Sky / Heaven",
-          "translation": "Nakuj",
-          "pronunciation": "nah-kooj",
-          "context": "Firmament / realm of Akuj (God).",
-          "audioFile": null
-        },
-        {
-          "english": "Lake / Sea",
-          "translation": "Anam",
-          "pronunciation": "ah-nahm",
-          "context": "Lake Turkana (Anam Ka'alakol).",
-          "audioFile": null
-        },
-        {
-          "english": "God",
-          "translation": "Akuj",
-          "pronunciation": "ah-kooj",
-          "context": "The supreme creator and deity in Turkana religion.",
+          "english": "Traditional beer",
+          "translation": "Eparani / Ngagwe",
+          "pronunciation": "eh-pah-rah-nee",
+          "context": "Locally fermented grain and honey beer brewed for ceremonies.",
           "audioFile": null
         }
       ]
     },
     {
       "id": "home",
-      "name": "Home & Village",
-      "icon": "⛺",
+      "name": "Home & Material Culture",
+      "icon": "🏠",
       "entries": [
         {
-          "english": "House",
-          "translation": "Akai",
-          "pronunciation": "ah-kah-ee",
-          "context": "Plural: Ngakais. Sleeping hut.",
+          "english": "Homestead / Village",
+          "translation": "Ouwi / Nawi (pl. ngouwi / ngawiyoi)",
+          "pronunciation": "oh-wee / nah-wee",
+          "context": "Nomadic pastoral kraal and family settlement. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Village / Home",
-          "translation": "Awi",
-          "pronunciation": "ah-wee",
-          "context": "Plural: Ngawiyoi. Traditional homestead (manyatta).",
+          "english": "House / Family hut",
+          "translation": "Akie / Akai (pl. ngakiyis / ngkais)",
+          "pronunciation": "ah-kee-eh / ah-kah-ee",
+          "context": "Domed sleeping shelter framed with bent branches and thatched. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Door",
-          "translation": "Ekidori",
-          "pronunciation": "eh-kee-doh-ree",
-          "context": "Entrance gate of the kraal or hut.",
+          "english": "Door / Kraal gate",
+          "translation": "Akidor (pl. ngidorin / ngikidoria)",
+          "pronunciation": "ah-kee-dohr",
+          "context": "Entrance gate in the thorn bush perimeter of the kraal. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Chair",
-          "translation": "Ekicholong",
-          "pronunciation": "eh-kee-choh-lohng",
-          "context": "Traditional carved stool / headrest.",
+          "english": "Cattle kraal / Enclosure",
+          "translation": "Anuk / Anok (pl. nganukim / ngokin)",
+          "pronunciation": "ah-nook",
+          "context": "Thorn barrier enclosing livestock overnight. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Bed",
-          "translation": "Ejomu",
-          "pronunciation": "eh-joh-moo",
-          "context": "Sleeping hide mat.",
+          "english": "Grazing ground",
+          "translation": "Achokor (pl. ngachokoritho)",
+          "pronunciation": "ah-choh-kohr",
+          "context": "Designated pasture territory for herds. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bed / Sleeping mat",
+          "translation": "Ipem / Epem (pl. nyepemin / ngapemiok)",
+          "pronunciation": "ee-pehm / eh-pehm",
+          "context": "Raised wooden platform bed. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Carved headrest / Stool",
+          "translation": "Ekijolon / Ekicholong (pl. ngijolona / ngikicholonga)",
+          "pronunciation": "eh-kee-joh-lohn / eh-kee-choh-lohng",
+          "context": "Iconic carved wooden headrest carried everywhere by Turkana men. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sitting stool",
+          "translation": "Emaguk (pl. ngemogaka)",
+          "pronunciation": "eh-mah-gook",
+          "context": "Low wooden stool for resting in the compound. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Calabash / Milk gourd",
+          "translation": "Etu / Itu (pl. ngetuel / ngetui)",
+          "pronunciation": "eh-too",
+          "context": "Dried gourd vessel used for churning and drinking milk. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Half gourd / Drinking cup",
+          "translation": "Edera / Eboli (pl. ngaderai / ngibolai)",
+          "pronunciation": "eh-deh-rah",
+          "context": "Hemispherical gourd cup. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Wooden milk bowl",
+          "translation": "Elipit (pl. ngilipai)",
+          "pronunciation": "eh-lee-peet",
+          "context": "Carved wooden bowl for sipping milk. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Large water jar",
+          "translation": "Emwut (pl. ngemwuti)",
+          "pronunciation": "eh-mwoot",
+          "context": "Water storage container. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "Amut (pl. ngamuti)",
+          "pronunciation": "ah-moot",
+          "context": "Earthen pot set over hearth stones. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional wooden spoon",
+          "translation": "Akolopoich (pl. ngolopoicha)",
+          "pronunciation": "ah-koh-loh-poh-eech",
+          "context": "Carved wooden spoon. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Watering trough",
+          "translation": "Eteker / Etuba (pl. ngatekera / ngatubai)",
+          "pronunciation": "eh-teh-kehr",
+          "context": "Carved wooden log trough into which well water is poured for cattle. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Akim (pl. ngakimia)",
+          "pronunciation": "ah-keem",
+          "context": "Homestead fire providing light and predator defense. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Firewood",
+          "translation": "Akitoi (pl. ngakito)",
+          "pronunciation": "ah-kee-toh-ee",
+          "context": "Dry firewood branches. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire-making stick",
+          "translation": "Akikoi akim (pl. ngakitoi akim)",
+          "pronunciation": "ah-kee-koh-ee ah-keem",
+          "context": "Friction stick pair spun by hand to produce embers. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "Apurru / Apuru",
+          "pronunciation": "ah-poo-roo",
+          "context": "Hearth smoke that repels biting flies. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Leather sandals",
+          "translation": "Amukat (pl. ngamuk)",
+          "pronunciation": "ah-moo-kaht",
+          "context": "Thick hide or tire sandals protecting feet from thorns and scorching sand. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth wrap",
+          "translation": "Erwaro / Ouoro (pl. ngerwaroi / ngouario)",
+          "pronunciation": "ehr-wah-roh",
+          "context": "Woven cloth garment. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hide garment",
+          "translation": "Elo (pl. ngeloue)",
+          "pronunciation": "eh-loh",
+          "context": "Traditional leather skin garment. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron bracelet",
+          "translation": "Asowat (pl. ngathua)",
+          "pronunciation": "ah-soh-waht",
+          "context": "Forged iron bracelet. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Brass bracelet",
+          "translation": "Maritoit (pl. maritoi)",
+          "pronunciation": "mah-ree-toh-eet",
+          "context": "Ornamental brass jewelry bracelet. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mud head-dress",
+          "translation": "Amedok (pl. ngemedoi)",
+          "pronunciation": "ah-meh-dohk",
+          "context": "Sculpted clay and blue-pigment coiffure worn by initiated Turkana men. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tobacco box",
+          "translation": "Eburiangan (pl. ngeburianganga)",
+          "pronunciation": "eh-boo-ree-ahn-gahn",
+          "context": "Carved horn container holding tobacco. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Skin pouch / Bag",
+          "translation": "Echui (pl. ngechuin)",
+          "pronunciation": "eh-choo-ee",
+          "context": "Leather carrying pouch. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Echiro (pl. ngichiroi)",
+          "pronunciation": "eh-chee-roh",
+          "context": "Trading market center.",
+          "audioFile": null
+        },
+        {
+          "english": "Shop",
+          "translation": "Edukan (pl. ngidukano)",
+          "pronunciation": "eh-doo-kahn",
+          "context": "Trading store.",
+          "audioFile": null
+        },
+        {
+          "english": "Hospital",
+          "translation": "Eosipitoli / Akai a ngidekei",
+          "pronunciation": "eh-oh-see-pee-toh-lee",
+          "context": "Medical clinic (lit. 'house of illnesses').",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "weapons-tools",
+      "name": "Weapons & Tools",
+      "icon": "🗡️",
+      "entries": [
+        {
+          "english": "Spear",
+          "translation": "Akwara / A'kwara (pl. ngakwarath / ngawarath)",
+          "pronunciation": "ah-kwah-rah",
+          "context": "Long slender iron spear carried by warriors and elders for defense. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear shaft",
+          "translation": "Emorok (pl. ngemorkin)",
+          "pronunciation": "eh-moh-rohk",
+          "context": "Polished hardwood shaft connecting spear blade and iron butt. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear sheath",
+          "translation": "Akuraro (pl. ngakuraroi)",
+          "pronunciation": "ah-koo-rah-roh",
+          "context": "Decorated leather cap shielding the spearhead tip. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "Oupwol / E'gwoe / Egwo (pl. ngoupwala / ngigwoi)",
+          "pronunciation": "oh-pwohl / eh-gwoh",
+          "context": "Elongated battle shield formed of thick cured buffalo or giraffe leather. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Knife",
-          "translation": "Ekileng",
+          "translation": "Ekileng / A'kileng (pl. ngakilengya / ngilenya)",
           "pronunciation": "eh-kee-lehng",
-          "context": "Plural: Ngikilengia. Essential belt knife.",
+          "context": "Iron knife used for utility and defense. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Spear",
-          "translation": "Akwara",
-          "pronunciation": "ah-kwah-rah",
-          "context": "Plural: Ngakwaras. Traditional defense spear.",
+          "english": "Wrist knife (Abarait)",
+          "translation": "Abarait (pl. ngibara)",
+          "pronunciation": "ah-bah-rah-eet",
+          "context": "Famous circular razor-sharp steel blade worn on the wrist for hand combat and daily tasks. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Stick",
-          "translation": "Ebela / Aburo",
-          "pronunciation": "eh-beh-lah / ah-boo-roh",
-          "context": "Herding staff.",
+          "english": "Finger knife",
+          "translation": "Akoli (pl. ngakoli)",
+          "pronunciation": "ah-koh-lee",
+          "context": "Small curved iron hook knife worn on a finger. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Pipe",
-          "translation": "Akwesi / Epiti",
-          "pronunciation": "ah-kweh-see",
-          "context": "Traditional smoking pipe.",
+          "english": "Fighting club / Rungu",
+          "translation": "Ebiro (pl. ngiberoi)",
+          "pronunciation": "eh-bee-roh",
+          "context": "Weighted heavy wooden throwing club. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Garden",
-          "translation": "Amana",
-          "pronunciation": "ah-mah-nah",
-          "context": "Plural: Ngamanat. Sorghum garden plot.",
+          "english": "Curved throwing stick",
+          "translation": "Ebelebel (pl. ngebelebellai)",
+          "pronunciation": "eh-beh-leh-behl",
+          "context": "Flat curved throwing weapon used in hunting and close combat. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Shepherd's stick",
+          "translation": "Ebela (pl. ngabellai)",
+          "pronunciation": "eh-beh-lah",
+          "context": "Long walking stick carried by shepherds to guide stock. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "Akou (pl. ngakouō)",
+          "pronunciation": "ah-koh-oo",
+          "context": "Hunting bow strung with animal sinew. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Akoiyet (pl. ngoi)",
+          "pronunciation": "ah-koh-ee-yeht",
+          "context": "Iron-barbed arrow. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Rifle / Gun",
+          "translation": "Atom (pl. ngetom)",
+          "pronunciation": "ah-tohm",
+          "context": "Firearm; named historically from early trade linked with elephant hunting. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "War horn / Trumpet",
+          "translation": "Atom (pl. ngatom)",
+          "pronunciation": "ah-tohm",
+          "context": "Carved wood or oryx horn trumpet blown to signal assemblies or alarms. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Wooden digging stick",
+          "translation": "Akuta (pl. ngakuta)",
+          "pronunciation": "ah-koo-tah",
+          "context": "Hardwood pointed digging stick for seasonal gardening and digging wells. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron hoe",
+          "translation": "Ameleko (pl. ngemelakoi)",
+          "pronunciation": "ah-meh-leh-koh",
+          "context": "Forged iron cultivating hoe. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Axe",
+          "translation": "Eyap (pl. ngaiyapai)",
+          "pronunciation": "eh-yahp",
+          "context": "Small wood-cutting axe used to gather acacia boma fencing. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Needle / Awl",
+          "translation": "Emoto (pl. ngemotoin)",
+          "pronunciation": "eh-moh-toh",
+          "context": "Sharp piercing needle for sewing leather garments and footwear. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Fiber rope / Cord",
+          "translation": "Akobito (pl. ngakobit)",
+          "pronunciation": "ah-koh-bee-toh",
+          "context": "Strong twisted fiber cord used for tying livestock. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Animal snare / Trap",
+          "translation": "Ewuno / Aloit (pl. ngounui / ngaloito)",
+          "pronunciation": "eh-woo-noh",
+          "context": "Noose snare or pitfall trap for wild game. (Barton 1921)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs & Actions",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To eat",
+          "translation": "Emugi / Akimuji",
+          "pronunciation": "eh-moo-gee / ah-kee-moo-jee",
+          "context": "Consume food. Present 1st person: 'Emugi ayon' (I eat). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Emathi / Akimati",
+          "pronunciation": "eh-mah-thee / ah-kee-mah-tee",
+          "context": "Drink liquid, water, or milk. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep",
+          "translation": "Aperi / Topper",
+          "pronunciation": "ah-peh-ree",
+          "context": "Rest or sleep. Imperative: 'Toperirobo' (sleep well!). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To go",
+          "translation": "Alothi / Tolot",
+          "pronunciation": "ah-loh-thee / toh-loht",
+          "context": "Depart or travel. Imperative: 'Tolot!' (go!), pl. 'Tolotto!'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Abuni / Bwa",
+          "pronunciation": "ah-boo-nee / bwah",
+          "context": "Approach. Imperative: 'Bwa!' (come!), pl. 'Potto!'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To run",
+          "translation": "Akeri / Kibirr",
+          "pronunciation": "ah-keh-ree / kee-beer",
+          "context": "Run quickly. Imperative: 'Kibirr!'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "Ainua / Ainu",
+          "pronunciation": "ah-ee-noo-ah",
+          "context": "Perceive with vision. Imperative: 'Tainu!' (see!). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / listen",
+          "translation": "Erari / Era",
+          "pronunciation": "eh-rah-ree / eh-rah",
+          "context": "Listen or perceive sound. Present: 'Erari ayon' (I hear). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / talk",
+          "translation": "Erworo / Akirwor",
+          "pronunciation": "ehr-woh-roh",
+          "context": "Speak in words or talk together. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To walk",
+          "translation": "Akilari / Elari",
+          "pronunciation": "ah-kee-lah-ree",
+          "context": "Travel on foot. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To stand",
+          "translation": "Ouwei / Towoyo",
+          "pronunciation": "oh-weh-ee / toh-woh-yoh",
+          "context": "Stand stationary or halt. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To sit / dwell",
+          "translation": "Eboigini / Aboikini",
+          "pronunciation": "eh-boh-ee-gee-nee",
+          "context": "Sit down or settle in an area. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To rise / get up",
+          "translation": "Anyouni",
+          "pronunciation": "ahn-yoh-oo-nee",
+          "context": "Awaken and rise up. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "Ainagini / Akini",
+          "pronunciation": "ah-ee-nah-gee-nee",
+          "context": "Offer or deliver an item. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To take / receive",
+          "translation": "Alemari / Atachi",
+          "pronunciation": "ah-leh-mah-ree",
+          "context": "Pick up or accept. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To hit / beat",
+          "translation": "Arami / Karam",
+          "pronunciation": "ah-rah-mee / kah-rahm",
+          "context": "Strike with club or stick. Passive: 'Karamitai ayon' (I am struck). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To kill",
+          "translation": "Ari",
+          "pronunciation": "ah-ree",
+          "context": "Kill or dispatch an animal. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To spear / stab",
+          "translation": "Achomi / Echomi",
+          "pronunciation": "ah-choh-mee",
+          "context": "Strike with spear blade. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To fight",
+          "translation": "Igi / Ajori",
+          "pronunciation": "ee-gee / ah-joh-ree",
+          "context": "Fight in combat or cattle defense. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To build / construct",
+          "translation": "Aduki",
+          "pronunciation": "ah-doo-kee",
+          "context": "Build a shelter or fence. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To cut / chop",
+          "translation": "Adungi / Adongai",
+          "pronunciation": "ah-doon-gee",
+          "context": "Cut. Reduplicative: 'Adungi-dungi' (chop into small pieces). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To wash / clean",
+          "translation": "Elatari / Alotari",
+          "pronunciation": "eh-lah-tah-ree",
+          "context": "Wash with water. 'Elatari ngakan' (wash hands). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "Edoroki",
+          "pronunciation": "eh-doh-roh-kee",
+          "context": "Boil or prepare food at the fire. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To burn",
+          "translation": "Enokogini",
+          "pronunciation": "eh-noh-koh-gee-nee",
+          "context": "Kindle or catch fire. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To tie / bind",
+          "translation": "Ayeni",
+          "pronunciation": "ah-yeh-nee",
+          "context": "Fasten with cord or tether. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To untie / loosen",
+          "translation": "Alachari / Alakari",
+          "pronunciation": "ah-lah-chah-ree",
+          "context": "Release or untie. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To milk",
+          "translation": "Alepa",
+          "pronunciation": "ah-leh-pah",
+          "context": "Milk cows, camels, or goats into a gourd. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To graze / herd",
+          "translation": "Aiyoki / Eyogi",
+          "pronunciation": "ah-ee-yoh-kee",
+          "context": "Drive stock out to pasture. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "Aiyeni",
+          "pronunciation": "ah-ee-yeh-nee",
+          "context": "Possess knowledge. Negative: 'Mam ayeni' (I don't know). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To understand / think",
+          "translation": "Atami",
+          "pronunciation": "ah-tah-mee",
+          "context": "Reflect, comprehend, or meditate. Imperative: 'Kitam!'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To like / love / accept",
+          "translation": "Achami / Achemi",
+          "pronunciation": "ah-chah-mee",
+          "context": "Assent, like, love, or desire. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To refuse / dislike",
+          "translation": "Angeri",
+          "pronunciation": "ahn-geh-ree",
+          "context": "Reject or refuse an offer. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To seek / look for",
+          "translation": "Athaki",
+          "pronunciation": "ah-thah-kee",
+          "context": "Search for stray livestock or tracking spoor. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To dance",
+          "translation": "Edonga",
+          "pronunciation": "eh-dohn-gah",
+          "context": "Dance in traditional celebrations or warrior dances. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To sing",
+          "translation": "Eruko",
+          "pronunciation": "eh-roo-koh",
+          "context": "Sing ox praise songs and historic epics. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "To die",
+          "translation": "Atona",
+          "pronunciation": "ah-toh-nah",
+          "context": "Pass away or perish. (Barton 1921)",
           "audioFile": null
         }
       ]
@@ -860,445 +2547,277 @@
       "entries": [
         {
           "english": "What is your name?",
-          "translation": "Ekoni ngai ekiro kon?",
-          "pronunciation": "eh-koh-nee ngah-ee eh-kee-roh kohn",
-          "context": "Direct inquiry of someone's name.",
+          "translation": "Ngai akero ekon? / Ngai ekiro kon?",
+          "pronunciation": "ngah-ee ah-keh-roh eh-kohn",
+          "context": "Enquiring someone's identity. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "My name is...",
-          "translation": "Ekiro kang ngesi...",
-          "pronunciation": "eh-kee-roh kahng ngeh-see",
-          "context": "Formula for stating one's name.",
+          "translation": "Ekiro kang erai...",
+          "pronunciation": "eh-kee-roh kahng eh-rah-ee",
+          "context": "Stating one's name in response.",
           "audioFile": null
         },
         {
           "english": "Where are you going?",
-          "translation": "Ilosi ai?",
-          "pronunciation": "ee-loh-see ah-ee",
-          "context": "Common greeting / direction query.",
+          "translation": "Alothi ai? / Ilotit iwon ai?",
+          "pronunciation": "ah-loh-thee ah-ee",
+          "context": "Enquiring traveller's destination. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Where is...?",
-          "translation": "Eyai ai...?",
-          "pronunciation": "eh-yah-ee ah-ee",
-          "context": "Querying location.",
-          "audioFile": null
-        },
-        {
-          "english": "Come",
-          "translation": "Tobu",
-          "pronunciation": "toh-boo",
-          "context": "Imperative come.",
+          "english": "Where is he / she?",
+          "translation": "Eyyey ngeth? / Ali ngeth?",
+          "pronunciation": "eh-ee-yeh-ee ngehth",
+          "context": "Asking the location of a person. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Come here",
-          "translation": "Tobu nege",
-          "pronunciation": "toh-boo neh-geh",
-          "context": "Beckoning someone.",
-          "audioFile": null
-        },
-        {
-          "english": "Go",
-          "translation": "Tolotu",
-          "pronunciation": "toh-loh-too",
-          "context": "Imperative go.",
+          "translation": "Bwa nege! / Tobwo nege!",
+          "pronunciation": "bwah neh-geh",
+          "context": "Command to approach. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Go away",
-          "translation": "Tolowoi",
-          "pronunciation": "toh-loh-woh-ee",
-          "context": "Dismissal.",
+          "translation": "Tenyu! / Tolot!",
+          "pronunciation": "tehn-yoo / toh-loht",
+          "context": "Command to leave. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Sit down",
-          "translation": "Kibo piny",
-          "pronunciation": "kee-boh peen-y",
-          "context": "Polite invitation to sit.",
+          "english": "Look out! / Take care!",
+          "translation": "Ngolik! / Engolikini!",
+          "pronunciation": "ngoh-leek",
+          "context": "Warning to be watchful. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Wait",
-          "translation": "Kidar",
-          "pronunciation": "kee-dahr",
-          "context": "Hold on / wait.",
+          "english": "Stop here",
+          "translation": "Towoyo nege!",
+          "pronunciation": "toh-woh-yoh neh-geh",
+          "context": "Instruction to halt.",
+          "audioFile": null
+        },
+        {
+          "english": "Wait a little",
+          "translation": "Darun adojigi / Todar wadio",
+          "pronunciation": "dah-roon ah-doh-jee-gee",
+          "context": "Requesting brief patience. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Leave it alone!",
+          "translation": "Towa thik!",
+          "pronunciation": "toh-wah theek",
+          "context": "Instruction not to touch or disturb. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Let's go",
-          "translation": "Tolotu ngooni",
-          "pronunciation": "toh-loh-too ngoh-oh-nee",
-          "context": "Collective invitation to depart.",
+          "translation": "Kilotu / Wolotu",
+          "pronunciation": "kee-loh-too",
+          "context": "Urging group departure.",
           "audioFile": null
         },
         {
-          "english": "I love you",
-          "translation": "Amina ayong iyong",
-          "pronunciation": "ah-mee-nah ah-yohng ee-yohng",
-          "context": "Expression of deep affection.",
+          "english": "What is this?",
+          "translation": "Nyo lo?",
+          "pronunciation": "nyoh loh",
+          "context": "Asking what an object is. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "What do you want?",
+          "translation": "Esagin nyo? / Isagin nyo?",
+          "pronunciation": "eh-sah-geen nyoh",
+          "context": "Asking someone's intent or need. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "What is your tribe?",
+          "translation": "Ali tela kon?",
+          "pronunciation": "ah-lee teh-lah kohn",
+          "context": "Enquiring someone's ethnic section or clan. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "How much? / How many?",
+          "translation": "Ngeyai? / Nyeyai? / Erai ngiai?",
+          "pronunciation": "ngeh-yah-ee",
+          "context": "Asking quantity, headcount, or price. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Why?",
+          "translation": "Ikwani?",
+          "pronunciation": "ee-kwah-nee",
+          "context": "Asking reason or motive. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "When?",
+          "translation": "Wurre?",
+          "pronunciation": "woo-reh",
+          "context": "Asking about time. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "I don't know",
-          "translation": "Mam ayen",
-          "pronunciation": "mahm ah-yehn",
-          "context": "Stating lack of knowledge.",
+          "translation": "Mam ayeni / Aiye",
+          "pronunciation": "mahm ah-yeh-nee",
+          "context": "Expressing lack of knowledge. 'Aiye' = Who knows? (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "I don't understand",
-          "translation": "Mam apupi",
-          "pronunciation": "mahm ah-poo-pee",
-          "context": "Lit. 'I do not hear/comprehend'.",
+          "translation": "Mam erar ayong",
+          "pronunciation": "mahm eh-rahr ah-yohng",
+          "context": "Expressing lack of comprehension.",
           "audioFile": null
         },
         {
           "english": "Speak slowly",
-          "translation": "Kiro wadyo / Kiyan wadyo",
-          "pronunciation": "kee-roh wah-dyoh",
-          "context": "Requesting clearer pacing.",
-          "audioFile": null
-        },
-        {
-          "english": "Say it again",
-          "translation": "Tobongo nabo",
-          "pronunciation": "toh-boh-ngoh nah-boh",
-          "context": "Requesting repetition.",
+          "translation": "Kirworo kiyapak",
+          "pronunciation": "kee-rwoh-roh kee-yah-pahk",
+          "context": "Asking someone to speak slower. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "It is true",
-          "translation": "Iteni",
-          "pronunciation": "ee-teh-nee",
-          "context": "Confirming accuracy / truth.",
+          "translation": "Kere / Iteni robo",
+          "pronunciation": "keh-reh / ee-teh-nee roh-boh",
+          "context": "Affirmation of truth. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "That is a lie",
-          "translation": "Aliokan nguna",
-          "pronunciation": "ah-lee-oh-kahn ngoo-nah",
-          "context": "Calling out untruth.",
+          "translation": "Alioko nguna",
+          "pronunciation": "ah-lee-oh-koh ngoo-nah",
+          "context": "Refuting falsehood (alioko = lies). (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Good / Beautiful",
-          "translation": "Ejok",
+          "translation": "Ejok (pl. ngejokok)",
           "pronunciation": "eh-johk",
-          "context": "Expressing quality or beauty.",
+          "context": "Describing good or beautiful quality. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Good",
-          "translation": "Ejok",
-          "pronunciation": "eh-johk",
-          "context": "Fine / good.",
+          "english": "Bad / Ugly",
+          "translation": "Arono (pl. ngaroko)",
+          "pronunciation": "ah-roh-noh",
+          "context": "Describing bad or harmful quality. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Bad",
-          "translation": "Erach",
-          "pronunciation": "eh-rahch",
-          "context": "Opposite of good.",
-          "audioFile": null
-        },
-        {
-          "english": "Big",
-          "translation": "Epol",
+          "english": "Big / Great",
+          "translation": "Epol (pl. ngepolok)",
           "pronunciation": "eh-pohl",
-          "context": "Great in size.",
+          "context": "Large stature or high importance. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Small",
-          "translation": "Edit",
+          "english": "Small / Little",
+          "translation": "Edit (pl. ngedithok)",
           "pronunciation": "eh-deet",
-          "context": "Little in size.",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "body",
-      "name": "Body Parts",
-      "icon": "🧠",
-      "entries": [
-        {
-          "english": "Head",
-          "translation": "Akou",
-          "pronunciation": "ah-koh-oo",
-          "context": "Plural: Ngakes.",
+          "context": "Small size or youth. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Face / Eye",
-          "translation": "Akong / Ereet",
-          "pronunciation": "ah-kohng / eh-reh-eht",
-          "context": "Eye: Akong. Face: Ereet.",
+          "english": "Very / Truly",
+          "translation": "Noi / Kere",
+          "pronunciation": "noh-ee / keh-reh",
+          "context": "Intensifier adverb denoting thoroughly or very. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Ear",
-          "translation": "Akit",
-          "pronunciation": "ah-keet",
-          "context": "Plural: Ngaki.",
+          "english": "I am well",
+          "translation": "Ayari / Akiyar akwan",
+          "pronunciation": "ah-yah-ree",
+          "context": "Affirming health and physical life. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Nose",
-          "translation": "Ekume",
-          "pronunciation": "eh-koo-meh",
-          "context": "Plural: Ngikumes.",
+          "english": "I am sick",
+          "translation": "Adiaka ayon / Adyaka ayong",
+          "pronunciation": "ah-dyah-kah ah-yohng",
+          "context": "Stating illness. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Mouth",
-          "translation": "Akituk",
-          "pronunciation": "ah-kee-took",
-          "context": "Plural: Ngakituka.",
+          "english": "I am hungry",
+          "translation": "Ayon akoro",
+          "pronunciation": "ah-yohn ah-koh-roh",
+          "context": "Expressing hunger (akoro = famine/hunger). (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Tooth",
-          "translation": "Ekyalai",
-          "pronunciation": "eh-kyeh-lah-ee",
-          "context": "Plural: Ngikyal.",
+          "english": "I am thirsty",
+          "translation": "Akori ayon",
+          "pronunciation": "ah-koh-ree ah-yohn",
+          "context": "Expressing thirst for water. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Tongue",
-          "translation": "Angajep",
-          "pronunciation": "ah-ngah-jehp",
-          "context": "Plural: Ngangajepa.",
+          "english": "It is finished",
+          "translation": "Erika",
+          "pronunciation": "eh-ree-kah",
+          "context": "Expressing completion. (Barton 1921)",
           "audioFile": null
         },
         {
-          "english": "Hand / Arm",
-          "translation": "Akan",
-          "pronunciation": "ah-kahn",
-          "context": "Plural: Ngakan.",
-          "audioFile": null
-        },
-        {
-          "english": "Leg / Foot",
-          "translation": "Akeju",
-          "pronunciation": "ah-keh-joo",
-          "context": "Plural: Ngakejen.",
-          "audioFile": null
-        },
-        {
-          "english": "Chest / Side",
-          "translation": "Atorob / Esep",
-          "pronunciation": "ah-toh-rohb / eh-sehp",
-          "context": "Chest: Atorob. Rib/side: Esep.",
-          "audioFile": null
-        },
-        {
-          "english": "Body",
-          "translation": "Akwan",
-          "pronunciation": "ah-kwahn",
-          "context": "Plural: Ngawat.",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "Ngaakot",
-          "pronunciation": "ngah-ah-koht",
-          "context": "Inherent plural noun.",
-          "audioFile": null
-        },
-        {
-          "english": "Bone",
-          "translation": "Akoit",
-          "pronunciation": "ah-koh-eet",
-          "context": "Plural: Ngakoityo.",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "time",
-      "name": "Time & Days",
-      "icon": "⏰",
-      "entries": [
-        {
-          "english": "Today",
-          "translation": "Tolooma / Nakan",
-          "pronunciation": "toh-loh-oh-mah / nah-kahn",
-          "context": "Current day.",
-          "audioFile": null
-        },
-        {
-          "english": "Tomorrow",
-          "translation": "Moi",
-          "pronunciation": "moh-ee",
-          "context": "Following day.",
-          "audioFile": null
-        },
-        {
-          "english": "Yesterday",
-          "translation": "Been",
-          "pronunciation": "beh-ehn",
-          "context": "Previous day.",
-          "audioFile": null
-        },
-        {
-          "english": "Now",
-          "translation": "Tokona",
-          "pronunciation": "toh-koh-nah",
-          "context": "At this moment.",
-          "audioFile": null
-        },
-        {
-          "english": "Morning",
-          "translation": "Ataparac",
-          "pronunciation": "ah-tah-pah-rahch",
-          "context": "Dawn to mid-morning.",
-          "audioFile": null
-        },
-        {
-          "english": "Afternoon",
-          "translation": "Aparan",
-          "pronunciation": "ah-pah-rahn",
-          "context": "Daytime sun.",
-          "audioFile": null
-        },
-        {
-          "english": "Evening",
-          "translation": "Ebong / Atabong",
-          "pronunciation": "eh-bohng / ah-tah-bohng",
-          "context": "Sunset period.",
-          "audioFile": null
-        },
-        {
-          "english": "Night",
-          "translation": "Akware",
-          "pronunciation": "ah-kwah-reh",
-          "context": "Hours of darkness.",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "travel",
-      "name": "Travel & Directions",
-      "icon": "🧭",
-      "entries": [
-        {
-          "english": "Road",
-          "translation": "Eerot",
-          "pronunciation": "eh-eh-roht",
-          "context": "Plural: Ngirotin.",
+          "english": "All together",
+          "translation": "Da dan / Dadan",
+          "pronunciation": "dah dahn",
+          "context": "Totally / collectively. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Road / Path",
-          "translation": "Eerot",
-          "pronunciation": "eh-eh-roht",
-          "context": "Highway, road, or pastoral footpath.",
+          "translation": "Erot / Eerot (pl. ngerotin)",
+          "pronunciation": "eh-roht",
+          "context": "Path, road, or pastoral cattle route. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Far",
           "translation": "Elwana",
           "pronunciation": "eh-lwah-nah",
-          "context": "Long distance.",
+          "context": "Long distance away. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Near",
-          "translation": "Epii / Eyapi",
-          "pronunciation": "eh-pee-ee",
-          "context": "Close proximity.",
+          "translation": "Epii / Api",
+          "pronunciation": "eh-pee-ee / ah-pee",
+          "context": "Close proximity. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Left",
           "translation": "Kidyeny",
           "pronunciation": "kee-dyehn-y",
-          "context": "Akan na lo kidyeny = left hand.",
+          "context": "Direction left (akan na lo kidyeny = left hand).",
           "audioFile": null
         },
         {
           "english": "Right",
           "translation": "Teten",
           "pronunciation": "teh-tehn",
-          "context": "Akan na lo teten = right hand.",
+          "context": "Direction right (akan na lo teten = right hand). (Barton 1921)",
           "audioFile": null
         },
-        {
-          "english": "Straight ahead",
-          "translation": "Teten lo ngaren",
-          "pronunciation": "teh-tehn loh ngah-rehn",
-          "context": "Going forward directly.",
-          "audioFile": null
-        },
-        {
-          "english": "Stop here",
-          "translation": "Towoyo nege",
-          "pronunciation": "toh-woh-yoh neh-geh",
-          "context": "Instruction to halt.",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "shopping",
-      "name": "Shopping & Money",
-      "icon": "💰",
-      "entries": [
         {
           "english": "Money",
           "translation": "Ngeselekin / Pesa",
-          "pronunciation": "ngeh-seh-leh-keen / peh-sah",
-          "context": "Currency / cash.",
+          "pronunciation": "ngeh-seh-leh-keen",
+          "context": "Currency / cash coins.",
           "audioFile": null
         },
-        {
-          "english": "Shop",
-          "translation": "Edukan",
-          "pronunciation": "eh-doo-kahn",
-          "context": "Plural: Ngidukano.",
-          "audioFile": null
-        },
-        {
-          "english": "Market",
-          "translation": "Echiro",
-          "pronunciation": "eh-chee-roh",
-          "context": "Plural: Ngichiroi.",
-          "audioFile": null
-        },
-        {
-          "english": "How much?",
-          "translation": "Erai ngiai? / Etae ai?",
-          "pronunciation": "eh-rah-ee ngee-ah-ee",
-          "context": "Asking the cost / count.",
-          "audioFile": null
-        },
-        {
-          "english": "Expensive",
-          "translation": "Egol / Epit",
-          "pronunciation": "eh-gohl / eh-peet",
-          "context": "High cost.",
-          "audioFile": null
-        },
-        {
-          "english": "Cheap",
-          "translation": "Epatana",
-          "pronunciation": "eh-pah-tah-nah",
-          "context": "Affordable / easy.",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "emergency",
-      "name": "Emergency & Safety",
-      "icon": "🚨",
-      "entries": [
         {
           "english": "Help!",
           "translation": "Togangai! / Torimokakithai!",
@@ -1310,476 +2829,21 @@
           "english": "Fire!",
           "translation": "Akim!",
           "pronunciation": "ah-keem",
-          "context": "Warning of fire danger.",
+          "context": "Urgent warning of fire danger. (Barton 1921)",
           "audioFile": null
         },
         {
           "english": "Danger",
           "translation": "Ekalapatan",
           "pronunciation": "eh-kah-lah-pah-tahn",
-          "context": "Hazardous state.",
+          "context": "Hazardous condition.",
           "audioFile": null
         },
         {
           "english": "Thief!",
-          "translation": "Ekakolon!",
+          "translation": "Ekakolon! / Akokolon!",
           "pronunciation": "eh-kah-koh-lohn",
-          "context": "Plural: Ngikakolak.",
-          "audioFile": null
-        },
-        {
-          "english": "Doctor",
-          "translation": "Emuron",
-          "pronunciation": "eh-moo-rohn",
-          "context": "Traditional or modern physician.",
-          "audioFile": null
-        },
-        {
-          "english": "Hospital",
-          "translation": "Eosipitoli / Akai a ngidekei",
-          "pronunciation": "eh-oh-see-pee-toh-lee",
-          "context": "Healthcare center.",
-          "audioFile": null
-        },
-        {
-          "english": "Police",
-          "translation": "Epolisit",
-          "pronunciation": "eh-poh-lee-seet",
-          "context": "Plural: Ngipolisi.",
-          "audioFile": null
-        },
-        {
-          "english": "I am sick",
-          "translation": "Adyaka ayong",
-          "pronunciation": "ah-dyah-kah ah-yohng",
-          "context": "Stating illness.",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "historical-vocabulary",
-      "name": "Historical Vocabulary (Barton 1921)",
-      "icon": "📜",
-      "entries": [
-        {
-          "english": "I",
-          "translation": "ayon",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "thou",
-          "translation": "ion",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "we",
-          "translation": "thowa",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "ye",
-          "translation": "eth",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "they",
-          "translation": "keth",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "my",
-          "translation": "akan",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "thy",
-          "translation": "ekon",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "this",
-          "translation": "-en, -lo, or ngol",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "yesterday",
-          "translation": "ngon",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "where",
-          "translation": "neni",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Arm",
-          "translation": "akan, pl. ngakanin",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Back",
-          "translation": "egur, pl. ngurai",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Bad",
-          "translation": "arono, pl. ngaroko",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Big",
-          "translation": "epol, pl. ngepolok",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "nakot",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Bone",
-          "translation": "akoit, pl. ngakoiyo",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Brother",
-          "translation": "lokadokan, pl. ngalokadokon",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Chest",
-          "translation": "etorob, pl. ngatorobio",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Chief",
-          "translation": "eirkatungan, pl. ngatukok",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Cow",
-          "translation": "atāka, pl. ngatak, see \"oxen\"",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Daughter",
-          "translation": "apethe, pl. ngapethur",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Day",
-          "translation": "erwait, pl. ngurwa, see \"morning\", \"time\", etc",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Ear",
-          "translation": "agit, pl. nyagi",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Enemy",
-          "translation": "emoit, pl. ngemoi",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Evening",
-          "translation": "ebon",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Eye",
-          "translation": "akon, pl. ngakonyan",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Father",
-          "translation": "baba, pl. tababa",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Fire",
-          "translation": "akim, pl. ngakimia, see \"stick\"",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Food",
-          "translation": "akimoich, pl. ngimocha",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Friend",
-          "translation": "epay, pl. ngepaylon",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Goat",
-          "translation": "akini, pl. ngakini",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Good",
-          "translation": "ejok, pl. ngejokok",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Hair",
-          "translation": "atimat, pl. ngatim",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Hand",
-          "translation": "akan, pl. ngakanin, see \"palm\"",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "He",
-          "translation": "ngeth",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Head",
-          "translation": "ako, pl. nyakis",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "etou, pl. ngetai",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Husband",
-          "translation": "lokiliakan, pl. ngiliokoka",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "I",
-          "translation": "ayon",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Knee",
-          "translation": "akun, pl. ngakungin",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Leg",
-          "translation": "akeju, pl. ngakeju, see \"foot\"",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Moon",
-          "translation": "elap, pl. ngelapio",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Mother",
-          "translation": "toto, pl. tatoto",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Mouth",
-          "translation": "akitok, pl. ngakituka, see \"tooth\"",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Tongue",
-          "translation": "aliep, pl. ngaliep",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "My",
-          "translation": "akan, pl. ngulukan",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Neck",
-          "translation": "emotherin, pl. ngemotheringa",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Night",
-          "translation": "akuari, pl. ngakuaretha, see \"time\"",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "No",
-          "translation": "mam",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Nose",
-          "translation": "ekumi, pl. ngikumith",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Our",
-          "translation": "akothi, pl. ngulu kothi",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "cow",
-          "translation": "atāka, pl. ngatak",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Rain",
-          "translation": "akiru",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Shoulder",
-          "translation": "ethiket, pl. ngethiketa",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Sister",
-          "translation": "lokadokan, pl. ngaitotui (?), see \"brother\"",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Sleep",
-          "translation": "ngaju",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Small",
-          "translation": "edit, pl. ngedithok",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Son",
-          "translation": "edit, pl. ngedithok",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Stomach",
-          "translation": "eboi, pl. ngaboyo",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Sun",
-          "translation": "akolon, pl. ngakolon, see \"time\"",
-          "pronunciation": "",
-          "context": "From \"Turkana Grammatical Notes and Vocabulary\" (Barton, 1921)",
+          "context": "Alarm alerting that cattle or property is being stolen. (Barton 1921)",
           "audioFile": null
         }
       ]

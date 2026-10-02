@@ -4,46 +4,52 @@
   "passport": {
     "types": [
       {
-        "type": "Ordinary Passport (32 pages, 5 years)",
-        "fee": 4550,
+        "type": "Ordinary Passport (34 pages / Series A)",
+        "fee": 7550,
         "processingTime": "10 – 15 working days",
         "eligibility": "All Kenyan citizens aged 18+"
       },
       {
-        "type": "Ordinary Passport (32 pages, 10 years)",
-        "fee": 6550,
-        "processingTime": "10 – 15 working days",
-        "eligibility": "All Kenyan citizens aged 18+"
-      },
-      {
-        "type": "Ordinary Passport (48 pages / Jumbo, 5 years)",
-        "fee": 6050,
+        "type": "Ordinary Passport (50 pages / Series B)",
+        "fee": 9550,
         "processingTime": "10 – 15 working days",
         "eligibility": "Frequent travelers"
       },
       {
-        "type": "Ordinary Passport (48 pages / Jumbo, 10 years)",
-        "fee": 8050,
+        "type": "Ordinary Passport (66 pages / Series C)",
+        "fee": 12550,
         "processingTime": "10 – 15 working days",
-        "eligibility": "Frequent travelers"
+        "eligibility": "Frequent travelers / business"
       },
       {
-        "type": "Emergency / Expedited Passport",
-        "fee": 8000,
+        "type": "Express / Expedited Passport",
+        "fee": 10050,
         "processingTime": "1 – 3 working days",
-        "eligibility": "Emergency travel — medical, bereavement, etc."
+        "eligibility": "Emergency travel — medical, official, bereavement"
+      },
+      {
+        "type": "Replacement of Lost Passport",
+        "fee": 20050,
+        "processingTime": "10 – 20 working days",
+        "eligibility": "Kenyan citizens with lost valid passport (requires police abstract)"
+      },
+      {
+        "type": "Replacement of Mutilated Passport",
+        "fee": 20050,
+        "processingTime": "10 – 20 working days",
+        "eligibility": "Kenyan citizens with damaged/mutilated passport"
       },
       {
         "type": "East African Passport",
-        "fee": 3000,
+        "fee": 3050,
         "processingTime": "10 – 15 working days",
         "eligibility": "For travel within EAC member states"
       },
       {
-        "type": "Child Passport (under 18)",
-        "fee": 4550,
-        "processingTime": "10 – 15 working days",
-        "eligibility": "Kenyan citizens under 18 — application by parent/guardian"
+        "type": "Diplomatic Passport",
+        "fee": 15050,
+        "processingTime": "5 – 10 working days",
+        "eligibility": "Designated government officials and diplomats"
       }
     ],
     "requiredDocuments": [
@@ -64,10 +70,11 @@
   },
   "nationalId": {
     "types": [
-      { "type": "First Application (age 18+)", "fee": 0, "processingTime": "30 – 60 working days", "notes": "Free for all Kenyan citizens turning 18" },
-      { "type": "Replacement (Lost ID)", "fee": 300, "processingTime": "30 – 60 working days", "notes": "Requires police abstract report" },
-      { "type": "Replacement (Damaged ID)", "fee": 100, "processingTime": "30 – 60 working days", "notes": "Bring the damaged ID" },
-      { "type": "Waiting Card (Interim)", "fee": 0, "processingTime": "Same day", "notes": "Temporary ID while waiting for the permanent card" }
+      { "type": "First Application (age 18+)", "fee": 300, "processingTime": "30 – 60 working days", "notes": "Mandatory for all Kenyan citizens turning 18" },
+      { "type": "Replacement (Lost ID)", "fee": 1000, "processingTime": "30 – 60 working days", "notes": "Requires police abstract report" },
+      { "type": "Replacement (Damaged ID)", "fee": 1000, "processingTime": "30 – 60 working days", "notes": "Surrender the damaged physical card" },
+      { "type": "Change of Particulars", "fee": 1000, "processingTime": "30 – 60 working days", "notes": "Requires supporting documents (marriage cert, deed poll)" },
+      { "type": "Waiting Card (Interim)", "fee": 0, "processingTime": "Same day", "notes": "Temporary ID slip issued upon biometric capture" }
     ],
     "requiredDocuments": [
       "Birth certificate (original and copy)",

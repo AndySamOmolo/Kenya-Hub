@@ -302,7 +302,7 @@ export const LESSONS: Lesson[] = [
                 english: p.person,
                 hint: p.description,
             })),
-            ...POSSESSIVE_SUFFIXES_EXTENDED.map(p => ({
+            ...POSSESSIVE_SUFFIXES_EXTENDED.slice(0, 3).map(p => ({
                 luo: `-${p.suffix}`,
                 english: `${p.person} (extended)`,
                 hint: p.description,
@@ -380,7 +380,7 @@ export const LESSONS: Lesson[] = [
         category: 'grammar',
         cards: [
             ...VERB_TENSES.map(v => ({
-                luo: v.prefix ? `${v.prefix} + verb` : 'prefix + verb',
+                luo: v.prefix ? `${v.prefix} + verb` : `${v.tense} (stem)`,
                 english: `${v.tense}`,
                 example: v.example,
                 hint: v.rule,
@@ -500,7 +500,7 @@ export const LESSONS: Lesson[] = [
                 example: p.examples[0] || '',
             })),
             ...CONJUNCTIONS.slice(0, 8).map(c => ({
-                luo: c.luo,
+                luo: c.luo === 'gi' ? 'gi (and)' : c.luo,
                 english: c.english,
                 example: c.examples[0] || '',
             })),
@@ -548,7 +548,7 @@ export const LESSONS: Lesson[] = [
                 english: 'Add -re/-ore to make reflexive',
             })),
             ...REFLEXIVE_VERBS.person_markers.map(r => ({
-                luo: r.suffix,
+                luo: `${r.example.split(' — ')[0].trim()} (${r.suffix})`,
                 english: r.person,
                 example: r.example,
             })),
@@ -788,12 +788,18 @@ export const LESSONS: Lesson[] = [
         level: 'beginner',
         category: 'vocabulary',
         cards: [
-            ...ADJECTIVE_FORMATION.plurals.map(a => ({
-                luo: a.singular,
-                english: a.meaning.split(' → ')[0],
-                hint: `Plural: ${a.plural}`,
-            })),
+            ...ADJECTIVE_FORMATION.plurals
+                .filter(a => a.singular !== 'Marachar' && a.singular !== "Marating'")
+                .map(a => ({
+                    luo: a.singular,
+                    english: a.meaning.split(' → ')[0],
+                    hint: `Plural: ${a.plural}`,
+                })),
             ...ADJECTIVE_FORMATION.colors.masculine.map(c => ({
+                luo: c.luo,
+                english: c.english,
+            })),
+            ...ADJECTIVE_FORMATION.colors.feminine.map(c => ({
                 luo: c.luo,
                 english: c.english,
             })),

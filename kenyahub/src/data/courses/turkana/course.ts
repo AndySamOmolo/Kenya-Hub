@@ -97,7 +97,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
         tips: "Turkana uses a base-5 numeral system. The word for five ('ngakan') literally means 'hands' (from akan = hand). Numbers 6 through 9 are built systematically as: 5+1 (ngakanikapei), 5+2 (ngakanikaarei), 5+3 (ngakanikauni), and 5+4 (ngakanikaomon).",
         culturalNote: "Counting cattle and small stock is a daily ritual for herders returning to the manyatta kraal at sunset to ensure no animal went astray.",
         words: [
-          { target: 'Apei', source: 'One', pronunciation: 'ah-peh-ee', hint: 'Single unit' },
+          { target: 'Apei', source: 'One', pronunciation: 'ah-peh-ee', hint: 'Single unit (Feminine: Apei, Masculine: Epei; Barton 1921)' },
           { target: 'Ngaarei', source: 'Two', pronunciation: 'ngah-ah-reh-ee', hint: 'Pair' },
           { target: 'Ngauni', source: 'Three', pronunciation: 'ngah-oo-nee', hint: 'Cardinal 3' },
           { target: 'Ngaomon', source: 'Four', pronunciation: 'ngah-oh-mohn', hint: 'Cardinal 4' },
@@ -221,7 +221,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
         tips: "Turkana society is organized through age-sets (asapan) and territorial sections. Respected elders (ngikasuko) lead council discussions under shade trees (akiriket), while diviners (ngimurok) provide spiritual guidance.",
         culturalNote: "The Turkana call themselves Ngiturukana and their ancestral language Ngaturukana.",
         words: [
-          { target: 'Itwan', source: 'Person', pronunciation: 'eet-wahn', hint: 'Plural: Ngitunga (people)' },
+          { target: 'Itwan', source: 'Person', pronunciation: 'eet-wahn', hint: 'Plural: Ngitunga (Barton 1921: Etunganan)' },
           { target: 'Ngiturukana', source: 'Turkana people', pronunciation: 'ngee-too-roo-kah-nah', hint: 'Plural ethnonym' },
           { target: 'Ngaturukana', source: 'Turkana language', pronunciation: 'ngah-too-roo-kah-nah', hint: 'Feminine/language prefix nga-' },
           { target: 'Ekasukout', source: 'Elder', pronunciation: 'eh-kah-soo-koh-oot', hint: 'Plural: Ngikasuko' },

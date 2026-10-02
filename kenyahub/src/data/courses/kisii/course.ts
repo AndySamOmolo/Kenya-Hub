@@ -331,15 +331,16 @@ export const KISII_UNITS: CourseUnit[] = [
         title: 'Verbs & Everyday Phrases',
         icon: 'MessageSquare',
         description: 'Key action verbs and question words for everyday interactions.',
-        tips: "Infinitive verbs in Ekegusii typically begin with 'Go-' or 'Ko-': 'Gokora' (to work/do), 'Gochia' (to go), 'Gocha' (to come), 'Gotagera' (to want/need), 'Komanya' (to know), and 'Gokunda' (to love). 'Inka?' means 'Where?'.",
+        tips: "Infinitive verbs in Ekegusii typically begin with 'Go-' or 'Ko-': 'Gokora' (to work/do), 'Gosoma' (to read/study), 'Gotaaha' (to draw water/enter), 'Gochia' (to go), 'Gocha' (to come), 'Gotagera' (to want/need), 'Komanya' (to know), and 'Gokunda' (to love). 'Inka?' means 'Where?'.",
         culturalNote: "When speaking with elders, young people use softened phrasing and respectful question words to maintain decorum.",
         words: [
           { target: 'Gokora', source: 'To work / do', pronunciation: 'goh-koh-rah', hint: 'Infinitive verb', example: 'Gokora obuya.' },
+          { target: 'Gosoma', source: 'To read / study', pronunciation: 'goh-soh-mah', hint: 'Infinitive verb from Whiteley (1956)', example: 'Gosoma ebitabu.' },
+          { target: 'Gotaaha', source: 'To draw water / enter', pronunciation: 'goh-tah-ah-hah', hint: 'Whiteley (1956) model verb: draw water', example: 'Gotaaha amaanche.' },
           { target: 'Gochia', source: 'To go / depart', pronunciation: 'goh-chee-ah', hint: 'Infinitive: to go', example: 'Ngochia mogondo.' },
           { target: 'Gocha', source: 'To come / arrive', pronunciation: 'goh-chah', hint: 'Infinitive: to come', example: 'Incha aiga.' },
           { target: 'Gotagera', source: 'To want / need', pronunciation: 'goh-tah-geh-rah', hint: 'Infinitive: to desire', example: 'Nintagete amatoke.' },
           { target: 'Komanya', source: 'To know / understand', pronunciation: 'koh-mah-nyah', hint: 'Infinitive: to know' },
-          { target: 'Gosomia', source: 'To read / teach', pronunciation: 'goh-soh-mee-ah', hint: 'Infinitive: to read' },
           { target: 'Gokunda', source: 'To love / like', pronunciation: 'goh-koon-dah', hint: 'Nkogokunda = I love you' },
           { target: 'Inka?', source: 'Where?', pronunciation: 'een-kah', hint: 'Question: location', example: 'Inka ogochia?' },
           { target: 'Naki?', source: 'How?', pronunciation: 'nah-kee', hint: 'Question: manner' },
@@ -348,7 +349,8 @@ export const KISII_UNITS: CourseUnit[] = [
         sentences: [
           { target: 'Inka ogochia leelo?', source: 'Where are you going today?' },
           { target: 'Nkogokunda mono, mama.', source: 'I love you very much, mother.' },
-          { target: 'Incha aiga torye ebiokuria.', source: 'Come here so we eat food.' }
+          { target: 'Incha aiga torye ebiokuria.', source: 'Come here so we eat food.' },
+          { target: 'Omwana nigo agotaaha amaanche.', source: 'The child is fetching water.' }
         ],
         authoredExercises: [
           {
