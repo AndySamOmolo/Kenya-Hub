@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { getCategoryInfo, getToolUsageScore } from "@/lib/tools-registry";
-import { ArrowDownAZ, Pin, TrendingUp, Wrench } from "lucide-react";
+import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
+import { ArrowDownAZ, LayoutList, Pin, TrendingUp, Wrench } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 
@@ -16,6 +17,7 @@ function ToolsContent() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">("popular");
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
+  const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -25,6 +27,8 @@ function ToolsContent() {
 
   useEffect(() => {
     setMounted(true);
+
+    // Load pinned tools
     const loadPinned = () => {
       try {
         const saved = localStorage.getItem("kh-pinned-tools");
@@ -38,9 +42,20 @@ function ToolsContent() {
       }
     };
 
+    // Load visit counts
+    const loadVisits = () => {
+      setVisitCounts(getToolVisitCounts());
+    };
+
     loadPinned();
+    loadVisits();
+
     window.addEventListener("kh-pinned-tools-updated", loadPinned);
-    return () => window.removeEventListener("kh-pinned-tools-updated", loadPinned);
+    window.addEventListener("kh-tool-visits-updated", loadVisits);
+    return () => {
+      window.removeEventListener("kh-pinned-tools-updated", loadPinned);
+      window.removeEventListener("kh-tool-visits-updated", loadVisits);
+    };
   }, []);
 
   const filteredTools = useMemo(() => {
@@ -68,9 +83,16 @@ function ToolsContent() {
       });
       if (sortBy === "alphabetical") return labelComparison;
       if (sortBy === "category") return a.category.localeCompare(b.category) || labelComparison;
+
+      // "popular" — use real visit counts if user has any, else curated baselines
+      if (hasAnyVisits()) {
+        const aVisits = visitCounts[a.slug] ?? 0;
+        const bVisits = visitCounts[b.slug] ?? 0;
+        return bVisits - aVisits || labelComparison;
+      }
       return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
     });
-  }, [selectedCategory, searchQuery, sortBy]);
+  }, [selectedCategory, searchQuery, sortBy, visitCounts]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -145,9 +167,11 @@ function ToolsContent() {
         <label htmlFor="tools-sort" className="text-xs font-semibold uppercase tracking-wider text-text-muted">
           Sort tools
         </label>
-        <div className="relative">
+        <div className="relative inline-block">
           {sortBy === "popular" ? (
             <TrendingUp className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" />
+          ) : sortBy === "category" ? (
+            <LayoutList className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" />
           ) : (
             <ArrowDownAZ className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" />
           )}
@@ -155,7 +179,7 @@ function ToolsContent() {
             id="tools-sort"
             value={sortBy}
             onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
-            className="select-field pl-9 text-sm"
+            className="select-field select-field--icon-left text-sm w-auto"
           >
             <option value="popular">Most used</option>
             <option value="alphabetical">A-Z</option>
@@ -194,13 +218,38 @@ function ToolsContent() {
         })}
       </div>
 
+      {/* Results count */}
+      {(searchQuery || selectedCategory !== "all") && filteredTools.length > 0 && (
+        <p className="text-xs text-text-muted mb-4">
+          Showing {filteredTools.length} of {TOOLS.length} tools
+          {searchQuery && <> matching &quot;{searchQuery}&quot;</>}
+          {selectedCategory !== "all" && (
+            <button
+              onClick={() => setSelectedCategory("all")}
+              className="ml-2 text-gold hover:underline font-medium"
+            >
+              Clear filter
+            </button>
+          )}
+        </p>
+      )}
+
       {/* Tools Grid */}
       {filteredTools.length === 0 ? (
         <div className="text-center py-10 sm:py-16">
           <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div>
-          <p className="text-text-secondary text-sm">
+          <p className="text-text-secondary text-sm mb-3">
             No tools found matching &quot;{searchQuery}&quot;
           </p>
+          <button
+            onClick={() => {
+              setSearchQuery("");
+              setSelectedCategory("all");
+            }}
+            className="text-xs text-gold hover:underline font-medium"
+          >
+            Clear search &amp; filters
+          </button>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

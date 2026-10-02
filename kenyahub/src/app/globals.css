@@ -382,6 +382,15 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
   border-color: var(--color-gold);
   box-shadow: 0 0 0 3px rgba(200,150,30,0.12);
 }
+/* When a select has a leading icon positioned inside its container */
+.select-field--icon-left {
+  padding-left: 2.35rem;
+}
+@media (min-width: 640px) {
+  .select-field--icon-left {
+    padding-left: 2.6rem;
+  }
+}
 
 /* ══════════════════════════════════════════════════
    CATEGORY BADGES

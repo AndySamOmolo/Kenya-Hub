@@ -564,18 +564,70 @@ export function getToolsByCategory(category: ToolCategory): Tool[] {
 }
 
 const TOOL_USAGE_SCORES: Record<string, number> = {
-  'paye-calculator': 100,
-  'mpesa-fee-calculator': 99,
-  'cbc-curriculum': 97,
-  'kuccps-cluster-calculator': 96,
-  'kcse-grade-calculator': 95,
-  'public-holidays': 93,
-  'matatu-routes': 92,
-  'number-plate-decoder': 90,
-  'mobile-number-prefix': 89,
-  'helb-calculator': 88,
-  'school-terms': 87,
-  'learn': 86,
+  // Financial tools — most used across Kenya
+  'mpesa-fee-calculator': 100,
+  'paye-calculator': 98,
+  'kplc-token-calculator': 96,
+  'helb-calculator': 90,
+  'housing-levy-calculator': 72,
+  'stamp-duty-calculator': 65,
+  'vehicle-insurance-calculator': 60,
+  'solar-roi-calculator': 48,
+  'water-bill-calculator': 55,
+
+  // Education — surges during exam/admission season
+  'kcse-grade-calculator': 94,
+  'kuccps-cluster-calculator': 93,
+  'kcse-school-rankings': 91,
+  'cbc-curriculum': 88,
+  'cbc-grade-age': 78,
+  'school-terms': 85,
+
+  // Government & daily life
+  'public-holidays': 87,
+  'number-plate-decoder': 82,
+  'traffic-fines': 76,
+  'passport-id-fees': 74,
+  'driving-license-guide': 70,
+  'ward-constituency-finder': 58,
+  'county-budget-tracker': 50,
+  'kenya-customs-restricted-items': 45,
+
+  // Transport
+  'matatu-routes': 86,
+
+  // Language & culture
+  'kenyan-translator': 80,
+  'learn': 79,
+  'kikuyu-proverbs': 62,
+  'kenya-languages': 56,
+
+  // Data & reference
+  'mobile-number-prefix': 83,
+  'kenya-postal-codes': 68,
+  'kenyan-food-nutrition': 52,
+  'economic-calendar': 42,
+  'professional-bodies-kenya': 40,
+  'kenya-rainfall-patterns': 38,
+
+  // Health
+  'nhif-hospital-finder': 66,
+  'child-growth-schedule': 54,
+
+  // Agriculture
+  'crop-planting-calendar': 46,
+  'livestock-market-prices': 44,
+  'fertilizer-subsidy-guide': 43,
+  'agrovet-finder': 36,
+  'kenya-soil-types': 34,
+  'forest-reserves-kenya': 30,
+
+  // Business
+  'trademark-cost-kenya': 35,
+  'real-estate-agent-checker': 32,
+
+  // Travel
+  'national-parks-directory': 47,
 };
 
 export function getToolUsageScore(tool: Tool): number {

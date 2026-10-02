@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import type { Tool } from "@/lib/types";
+import { recordToolVisit } from "@/lib/tool-usage";
 
 declare global {
   interface Window {
@@ -17,7 +18,12 @@ export default function ToolAccessTracker({ tool }: ToolAccessTrackerProps) {
   const tracked = useRef(false);
 
   useEffect(() => {
-    const trackAccess = () => {
+    // Always record the visit locally (no personal data, just a counter)
+    if (!tracked.current) {
+      recordToolVisit(tool.slug);
+    }
+
+    const trackGA = () => {
       if (tracked.current || localStorage.getItem("kh-cookie-consent") !== "accepted") return;
 
       window.gtag?.("event", "tool_access", {
@@ -28,10 +34,10 @@ export default function ToolAccessTracker({ tool }: ToolAccessTrackerProps) {
       tracked.current = true;
     };
 
-    trackAccess();
-    window.addEventListener("kh-cookie-consent-updated", trackAccess);
-    return () => window.removeEventListener("kh-cookie-consent-updated", trackAccess);
+    trackGA();
+    window.addEventListener("kh-cookie-consent-updated", trackGA);
+    return () => window.removeEventListener("kh-cookie-consent-updated", trackGA);
   }, [tool]);
 
   return null;
-}
+}
