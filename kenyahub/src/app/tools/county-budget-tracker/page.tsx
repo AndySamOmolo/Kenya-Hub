@@ -47,7 +47,7 @@ export default function CountyBudgetTrackerPage() {
     return { ...t, total: t.allocation + t.own, absorptionRate: Math.round((t.expenditure / (t.allocation + t.own)) * 1000) / 10 };
   }, []);
 
-  const SortIcon = ({ k }: { k: SortKey }) => sortKey === k ? <span className="ml-1 text-gold">{sortAsc ? "↑" : "↓"}</span> : null;
+  const renderSortIcon = (k: SortKey) => sortKey === k ? <span className="ml-1 text-gold">{sortAsc ? "↑" : "↓"}</span> : null;
 
   return (
     <ToolShell tool={tool} faq={faq}>
@@ -83,11 +83,11 @@ export default function CountyBudgetTrackerPage() {
             <table className="data-table text-xs">
               <thead>
                 <tr>
-                  <th className="cursor-pointer hover:text-gold" onClick={() => toggleSort("county")}>County<SortIcon k="county" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("allocation")}>Allocation (M)<SortIcon k="allocation" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("ownSourceRevenue")}>Own Revenue (M)<SortIcon k="ownSourceRevenue" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("expenditure")}>Expenditure (M)<SortIcon k="expenditure" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("absorptionRate")}>Absorption<SortIcon k="absorptionRate" /></th>
+                  <th className="cursor-pointer hover:text-gold" onClick={() => toggleSort("county")}>County{renderSortIcon("county")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("allocation")}>Allocation (M){renderSortIcon("allocation")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("ownSourceRevenue")}>Own Revenue (M){renderSortIcon("ownSourceRevenue")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("expenditure")}>Expenditure (M){renderSortIcon("expenditure")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("absorptionRate")}>Absorption{renderSortIcon("absorptionRate")}</th>
                 </tr>
               </thead>
               <tbody>

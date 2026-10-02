@@ -5,13 +5,13 @@ import Link from "next/link";
 import { Pin } from "lucide-react";
 import { TOOLS, getCategoryInfo } from "@/lib/tools-registry";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { useMounted } from "@/lib/useMounted";
 
 export default function PinnedToolsHomeSection() {
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
-  const [mounted, setMounted] = useState(false);
+  const mounted = useMounted();
 
   useEffect(() => {
-    setMounted(true);
     const loadPinned = () => {
       try {
         const saved = localStorage.getItem("kh-pinned-tools");
@@ -20,7 +20,7 @@ export default function PinnedToolsHomeSection() {
         } else {
           setPinnedToolSlugs([]);
         }
-      } catch (e) {
+      } catch {
         // ignore
       }
     };

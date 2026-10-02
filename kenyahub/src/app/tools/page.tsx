@@ -9,6 +9,7 @@ import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import { ArrowDownAZ, LayoutList, Pin, TrendingUp, Wrench } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
+import { useMounted } from "@/lib/useMounted";
 
 function ToolsContent() {
   const searchParams = useSearchParams();
@@ -18,7 +19,7 @@ function ToolsContent() {
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">("popular");
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
-  const [mounted, setMounted] = useState(false);
+  const mounted = useMounted();
 
   useEffect(() => {
     const cat = searchParams.get("category");
@@ -26,8 +27,6 @@ function ToolsContent() {
   }, [searchParams]);
 
   useEffect(() => {
-    setMounted(true);
-
     // Load pinned tools
     const loadPinned = () => {
       try {
@@ -37,7 +36,7 @@ function ToolsContent() {
         } else {
           setPinnedToolSlugs([]);
         }
-      } catch (e) {
+      } catch {
         // ignore
       }
     };
@@ -179,7 +178,7 @@ function ToolsContent() {
             id="tools-sort"
             value={sortBy}
             onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
-            className="select-field select-field--icon-left text-sm w-auto"
+            className="select-field select-field--icon-left !pl-9 sm:!pl-10 text-sm w-auto"
           >
             <option value="popular">Most used</option>
             <option value="alphabetical">A-Z</option>

@@ -18,6 +18,14 @@ export interface LanguageConfig {
   sources?: string[];
 }
 
+export interface GrammarSection {
+  id: string;
+  title: string;
+  summary: string;
+  content: string;
+  examples?: { [lang: string]: string; english: string; explanation?: string }[];
+}
+
 /* ─── Course Structure: Unit → Skill → Exercise ─────────── */
 
 export interface CourseUnit {

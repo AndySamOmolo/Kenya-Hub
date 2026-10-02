@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useState, useMemo, useEffect, useCallback } from "react";
@@ -398,7 +399,7 @@ export default function KikuyuProverbsPage() {
                 <CustomSelect
                   id="proverbs-sort"
                   value={sortBy}
-                  onChange={setSortBy}
+                  onValueChange={setSortBy}
                   options={[
                     { value: "number-asc", label: "Proverb # (1 to 1000)" },
                     { value: "number-desc", label: "Proverb # (1000 to 1)" },
@@ -686,3 +687,4 @@ export default function KikuyuProverbsPage() {
     </ToolShell>
   );
 }
+

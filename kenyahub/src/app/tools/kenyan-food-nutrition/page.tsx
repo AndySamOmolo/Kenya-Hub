@@ -43,7 +43,7 @@ export default function KenyanFoodNutritionPage() {
     else { setSortKey(key); setSortAsc(key === "name"); }
   };
 
-  const SortIcon = ({ k }: { k: SortKey }) => sortKey === k ? <span className="ml-1 text-gold">{sortAsc ? "↑" : "↓"}</span> : null;
+  const renderSortIcon = (k: SortKey) => sortKey === k ? <span className="ml-1 text-gold">{sortAsc ? "↑" : "↓"}</span> : null;
 
   return (
     <ToolShell tool={tool} faq={faq}>
@@ -68,12 +68,12 @@ export default function KenyanFoodNutritionPage() {
             <table className="data-table text-xs">
               <thead>
                 <tr>
-                  <th className="cursor-pointer hover:text-gold min-w-[200px]" onClick={() => toggleSort("name")}>Food Item<SortIcon k="name" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("calories")}>Calories<SortIcon k="calories" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("protein")}>Protein (g)<SortIcon k="protein" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("carbs")}>Carbs (g)<SortIcon k="carbs" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("fat")}>Fat (g)<SortIcon k="fat" /></th>
-                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("fibre")}>Fibre (g)<SortIcon k="fibre" /></th>
+                  <th className="cursor-pointer hover:text-gold min-w-[200px]" onClick={() => toggleSort("name")}>Food Item{renderSortIcon("name")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("calories")}>Calories{renderSortIcon("calories")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("protein")}>Protein (g){renderSortIcon("protein")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("carbs")}>Carbs (g){renderSortIcon("carbs")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("fat")}>Fat (g){renderSortIcon("fat")}</th>
+                  <th className="text-right cursor-pointer hover:text-gold" onClick={() => toggleSort("fibre")}>Fibre (g){renderSortIcon("fibre")}</th>
                 </tr>
               </thead>
               <tbody>

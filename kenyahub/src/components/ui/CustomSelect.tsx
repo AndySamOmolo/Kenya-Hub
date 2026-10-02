@@ -10,7 +10,7 @@ interface Option {
 
 interface CustomSelectProps extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'onChange'> {
   options?: Option[];
-  onChange?: (e: React.ChangeEvent<HTMLSelectElement> | any) => void; // allow any for string if they pass direct setter
+  onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
   onValueChange?: (value: string) => void;
 }
 
@@ -22,7 +22,6 @@ export default function CustomSelect({
   className = "", 
   id, 
   children,
-  ...props 
 }: CustomSelectProps) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -37,14 +36,14 @@ export default function CustomSelect({
       React.Children.forEach(node, (child) => {
         if (!React.isValidElement(child)) return;
         
-        const props = child.props as any;
+        const childProps = child.props as Record<string, unknown>;
         if (child.type === "option") {
           items.push({
-            value: props.value?.toString() || "",
-            label: props.children?.toString() || "",
+            value: childProps.value?.toString() || "",
+            label: childProps.children?.toString() || "",
           });
-        } else if (props && props.children) {
-          traverse(props.children);
+        } else if (childProps && childProps.children) {
+          traverse(childProps.children as ReactNode);
         }
       });
     };

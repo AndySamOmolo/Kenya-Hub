@@ -7,8 +7,6 @@ import type { UserProgress, LessonResult } from '@/data/courses/types';
 import {
   MAX_HEARTS,
   HEART_REFILL_MINUTES,
-  XP_PER_CORRECT,
-  XP_PERFECT_BONUS,
   ACHIEVEMENTS,
   LEVELS,
 } from '@/data/courses/types';

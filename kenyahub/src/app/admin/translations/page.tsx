@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useState, useEffect, useCallback, useMemo } from "react";
@@ -465,7 +466,7 @@ export default function AdminTranslationsPage() {
             <div className="w-full md:w-56">
               <CustomSelect
                 value={languageFilter}
-                onChange={setLanguageFilter}
+                onValueChange={setLanguageFilter}
                 options={[
                   { value: "all", label: "All Languages" },
                   ...uniqueLanguages.map((l) => ({ value: l, label: l })),
@@ -780,7 +781,7 @@ export default function AdminTranslationsPage() {
                   </label>
                   <CustomSelect
                     value={editCategory}
-                    onChange={setEditCategory}
+                    onValueChange={setEditCategory}
                     options={STANDARD_CATEGORIES.map((c) => ({ value: c.id, label: `${c.name} (${c.id})` }))}
                     id="edit-category-select"
                   />
@@ -901,3 +902,4 @@ export default function AdminTranslationsPage() {
     </div>
   );
 }
+

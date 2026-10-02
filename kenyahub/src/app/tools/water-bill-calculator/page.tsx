@@ -16,7 +16,7 @@ function calculateWaterBill(utilityId: string, consumption: number) {
   for (const band of utility.bands) {
     if (remaining <= 0) break;
     const bandMax = band.max ?? Infinity;
-    const bandSize = bandMax - band.min + 1;
+    const bandSize = band.max !== null ? bandMax - (band.min === 0 ? 0 : band.min - 1) : Infinity;
     const unitsInBand = Math.min(remaining, bandSize);
     const amount = Math.round(unitsInBand * band.rate);
     waterCharge += amount;

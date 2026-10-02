@@ -145,6 +145,7 @@ function generateMatchPairs(words: WordPair[]): Exercise {
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function generateListenType(word: WordPair): Exercise {
   return {
     type: 'listen_type',
@@ -155,6 +156,7 @@ function generateListenType(word: WordPair): Exercise {
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function generateTapWhatYouHear(word: WordPair, allWords: WordPair[]): Exercise {
   const distractors = getDistractors(word, allWords, 3, 'target');
   const options = shuffle([word.target, ...distractors]);

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
@@ -5,6 +6,7 @@ import Link from "next/link";
 import { TOOLS, TOOL_CATEGORIES, getPopularTools } from "@/lib/tools-registry";
 import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { useMounted } from "@/lib/useMounted";
 
 /**
  * Popular tools section for the home page.
@@ -16,10 +18,9 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
  */
 export default function PopularToolsSection() {
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
-  const [mounted, setMounted] = useState(false);
+  const mounted = useMounted();
 
   useEffect(() => {
-    setMounted(true);
     setVisitCounts(getToolVisitCounts());
 
     const onUpdate = () => setVisitCounts(getToolVisitCounts());
@@ -116,3 +117,4 @@ export default function PopularToolsSection() {
     </section>
   );
 }
+

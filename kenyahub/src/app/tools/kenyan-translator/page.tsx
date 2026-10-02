@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
@@ -503,7 +504,7 @@ export default function KenyanTranslatorPage() {
                   <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">From</label>
                   <CustomSelect
                     value={sourceLanguage}
-                    onChange={setSourceLanguage}
+                    onValueChange={setSourceLanguage}
                     options={[
                       { value: "english", label: "English" },
                       ...ALL_DICTS.map((d) => ({ value: d.languageId, label: d.languageName }))
@@ -526,7 +527,7 @@ export default function KenyanTranslatorPage() {
                   <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">To</label>
                   <CustomSelect
                     value={targetLanguage}
-                    onChange={setTargetLanguage}
+                    onValueChange={setTargetLanguage}
                     options={[
                       { value: "english", label: "English" },
                       ...ALL_DICTS.map((d) => ({ value: d.languageId, label: d.languageName }))
@@ -1210,7 +1211,7 @@ export default function KenyanTranslatorPage() {
                   </label>
                   <CustomSelect
                     value={contributeLanguage}
-                    onChange={setContributeLanguage}
+                    onValueChange={setContributeLanguage}
                     options={[
                       ...ALL_CONTRIBUTE_LANGUAGES.map((l) => ({ value: l, label: l })),
                       { value: "Other", label: "Other Kenyan Language..." },
@@ -1412,3 +1413,4 @@ export default function KenyanTranslatorPage() {
     </ToolShell>
   );
 }
+

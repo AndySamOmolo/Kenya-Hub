@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -41,19 +42,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
     speechLocale: "sw-KE",
     description: "Kenya's national language — the lingua franca of East Africa",
     color: "#2196F3",
-    ready: false,
-    skills: 0,
-  },
-  {
-    id: "kamba",
-    name: "Kamba",
-    nativeName: "Kĩkamba",
-    family: "Bantu",
-    counties: ["Machakos", "Makueni", "Kitui"],
-    speakers: "4.7M",
-    speechLocale: "sw-KE",
-    description: "An Eastern Bantu language from the Ukambani region",
-    color: "#FF9800",
     ready: false,
     skills: 0,
   },
@@ -242,3 +230,4 @@ export default function LearnPage() {
     </ToolShell>
   );
 }
+

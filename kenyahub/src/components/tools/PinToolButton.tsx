@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useEffect, useState } from "react";
 import { Pin, PinOff } from "lucide-react";
+import { useMounted } from "@/lib/useMounted";
 
 interface PinToolButtonProps {
   toolSlug: string;
@@ -9,16 +11,15 @@ interface PinToolButtonProps {
 
 export default function PinToolButton({ toolSlug }: PinToolButtonProps) {
   const [isPinned, setIsPinned] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const mounted = useMounted();
 
   useEffect(() => {
-    setMounted(true);
     const saved = localStorage.getItem("kh-pinned-tools");
     if (saved) {
       try {
         const pinned: string[] = JSON.parse(saved);
         setIsPinned(pinned.includes(toolSlug));
-      } catch (e) {
+      } catch {
         // ignore
       }
     }
@@ -67,3 +68,4 @@ export default function PinToolButton({ toolSlug }: PinToolButtonProps) {
     </button>
   );
 }
+

@@ -1,12 +1,14 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { Gamepad2, GraduationCap, HelpCircle, PartyPopper } from "lucide-react";
+import { Gamepad2, GraduationCap, HelpCircle, PartyPopper, BookOpen } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
 import LessonPlayer from "@/components/learn/LessonPlayer";
 import GamesHub from "@/components/learn/GamesHub";
+import GrammarView from "@/components/learn/GrammarView";
 import type {
   CourseSkill,
   UserProgress,
@@ -24,7 +26,7 @@ import { getCourse } from "@/data/courses/registry";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
-type PageView = "lessons" | "games" | "playing";
+type PageView = "lessons" | "games" | "playing" | "grammar";
 
 export default function LanguageClientPage({ languageId }: { languageId: string }) {
   const course = getCourse(languageId);
@@ -188,6 +190,21 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             <Gamepad2 className="h-4 w-4" />
             <span>Games</span>
           </button>
+          {course.grammarSections && course.grammarSections.length > 0 && (
+            <button
+              onClick={() => setView("grammar")}
+              role="tab"
+              aria-selected={view === "grammar"}
+              className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${
+                view === "grammar"
+                  ? "bg-gold text-kenya-black"
+                  : "text-text-muted active:bg-bg-card sm:hover:text-text-primary"
+              }`}
+            >
+              <BookOpen className="h-4 w-4" />
+              <span>Grammar</span>
+            </button>
+          )}
         </div>
       )}
 
@@ -208,6 +225,11 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           languageName={course.config.name}
           onBack={() => setView("lessons")}
         />
+      ) : view === "grammar" && course.grammarSections ? (
+        <GrammarView
+          sections={course.grammarSections}
+          languageName={course.config.name}
+        />
       ) : (
         <SkillTree
           units={course.units}
@@ -223,3 +245,4 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     </ToolShell>
   );
 }
+

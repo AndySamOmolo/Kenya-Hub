@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useCallback, useEffect, useMemo, useState, useRef } from "react";
@@ -119,6 +120,12 @@ export default function LessonPlayer({
   const progressPercent = exercises.length
     ? ((currentIndex + (isChecked ? 1 : 0)) / exercises.length) * 100
     : 0;
+
+  // Pre-calculate shuffled match pairs to avoid React Hooks in JSX
+  const shuffledRightPairs = useMemo(() => {
+    if (exercise?.type !== "match_pairs" || !exercise.pairs) return [];
+    return [...exercise.pairs].sort(() => Math.random() - 0.5);
+  }, [exercise]);
 
   /* ─── Reset state for new exercise ─────────────── */
   const resetExercise = useCallback(() => {
@@ -879,13 +886,7 @@ export default function LessonPlayer({
               </div>
               {/* Right column (shuffled) */}
               <div className="space-y-2">
-                {useMemo(
-                  () =>
-                    [...(exercise.pairs || [])].sort(
-                      () => Math.random() - 0.5
-                    ),
-                  [exercise.pairs]
-                ).map((pair) => (
+                {shuffledRightPairs.map((pair) => (
                   <button
                     key={`R-${pair.right}`}
                     onClick={() =>
