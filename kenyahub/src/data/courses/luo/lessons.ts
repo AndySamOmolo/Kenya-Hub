@@ -27,11 +27,7 @@ import {
     CONJUNCTIONS,
     VERB_CONJUGATION_HERO,
     REFLEXIVE_VERBS,
-    NOUN_CLASSES,
-    SENTENCE_PATTERNS,
     ADJECTIVE_FORMATION,
-    NAMING_CONVENTIONS,
-    ALPHABET as ALPHABET_REF,
     CONVERSATION_GENERAL,
     CONVERSATION_HOUSEHOLD,
     CONVERSATION_HEALTH,
@@ -39,9 +35,6 @@ import {
     CONVERSATION_TRAVEL,
     CONVERSATION_VILLAGE,
     DAYS_OF_WEEK,
-    VERB_TO_BE,
-    VERB_TO_HAVE,
-    PASSIVE_VOICE,
 } from './grammar-reference';
 
 // ============================================================

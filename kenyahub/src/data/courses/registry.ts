@@ -4,6 +4,8 @@ import { LUHYA_CONFIG, LUHYA_UNITS } from "./luhya/course";
 import { KIKUYU_CONFIG, KIKUYU_UNITS } from "./kikuyu/course";
 import { KISII_CONFIG, KISII_UNITS } from "./kisii/course";
 import { TESO_CONFIG, TESO_UNITS } from "./teso/course";
+import { KAMBA_CONFIG, KAMBA_UNITS } from "./kamba/course";
+import { MAASAI_CONFIG, MAASAI_UNITS } from "./maasai/course";
 import type { CourseUnit, LanguageConfig } from "./types";
 import { validateCourse, type CourseValidationIssue } from "./validation";
 import { getSourcesForLanguage } from "@/data/language-sources";
@@ -58,6 +60,20 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     ready: true,
     validationIssues: validateCourse(TESO_UNITS),
     sourceIds: getSourcesForLanguage(TESO_CONFIG.id).map((source) => source.id),
+  },
+  kamba: {
+    config: KAMBA_CONFIG,
+    units: KAMBA_UNITS,
+    ready: true,
+    validationIssues: validateCourse(KAMBA_UNITS),
+    sourceIds: getSourcesForLanguage(KAMBA_CONFIG.id).map((source) => source.id),
+  },
+  maasai: {
+    config: MAASAI_CONFIG,
+    units: MAASAI_UNITS,
+    ready: true,
+    validationIssues: validateCourse(MAASAI_UNITS),
+    sourceIds: getSourcesForLanguage(MAASAI_CONFIG.id).map((source) => source.id),
   },
 };
 
