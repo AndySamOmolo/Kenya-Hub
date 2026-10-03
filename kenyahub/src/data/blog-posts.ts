@@ -26,7 +26,7 @@ export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
     author: "KenyaHub",
     publishedAt: "2026-07-15T10:00:00.000Z",
     updatedAt: "2026-09-01T08:00:00.000Z",
-    tags: ["Finance", "Tax", "PAYE", "KRA"],
+    tags: ["Finance"],
     readTime: 8,
     content: `## What Is PAYE?
 
@@ -104,7 +104,7 @@ This guide is for informational purposes only. For official tax compliance, cons
     author: "KenyaHub",
     publishedAt: "2026-08-02T09:00:00.000Z",
     updatedAt: null,
-    tags: ["Finance", "M-Pesa", "Safaricom"],
+    tags: ["Finance"],
     readTime: 6,
     content: `## How M-Pesa Fees Work
 
@@ -180,7 +180,7 @@ Safaricom occasionally adjusts M-Pesa tariffs. Our [M-Pesa Fee Calculator](/tool
     author: "KenyaHub",
     publishedAt: "2026-08-20T08:00:00.000Z",
     updatedAt: null,
-    tags: ["Education", "CBC", "Parenting"],
+    tags: ["Education"],
     readTime: 7,
     content: `## What Is CBC?
 
@@ -284,7 +284,7 @@ For the latest official updates, refer to the [KICD website](https://kicd.ac.ke)
     author: "KenyaHub",
     publishedAt: "2026-06-10T08:00:00.000Z",
     updatedAt: "2026-09-05T10:00:00.000Z",
-    tags: ["Government", "Holidays", "Labour Law"],
+    tags: ["Government"],
     readTime: 5,
     content: `## 2026 Public Holidays Calendar
 
@@ -344,7 +344,7 @@ For the interactive version with countdown timers and calendar integration, visi
     author: "KenyaHub",
     publishedAt: "2026-09-01T09:00:00.000Z",
     updatedAt: null,
-    tags: ["Education", "KUCCPS", "University"],
+    tags: ["Education"],
     readTime: 7,
     content: `## What Are Cluster Points?
 
@@ -440,7 +440,7 @@ For the official placement portal and application deadlines, visit [KUCCPS](http
     author: "KenyaHub",
     publishedAt: "2026-07-28T11:00:00.000Z",
     updatedAt: null,
-    tags: ["Transport", "NTSA", "Vehicles"],
+    tags: ["Transport"],
     readTime: 5,
     content: `## Kenyan Number Plate Format
 
@@ -514,7 +514,7 @@ For a complete list of traffic offences and fines, see the [KenyaHub Traffic Fin
     author: "KenyaHub Cultural Heritage",
     publishedAt: "2026-09-28T07:00:00.000Z",
     updatedAt: "2026-09-28T07:00:00.000Z",
-    tags: ["Culture", "History", "Bantu Beliefs", "Kikuyu", "Kamba", "Kenyan Heritage"],
+    tags: ["Culture & History"],
     readTime: 11,
     sources: [{
       sourceId: "bantu-beliefs",
@@ -649,7 +649,7 @@ While mainstream religious affiliations in Kenya have evolved over the past cent
     author: "KenyaHub Cultural Heritage",
     publishedAt: "2026-09-28T09:00:00.000Z",
     updatedAt: "2026-09-28T09:00:00.000Z",
-    tags: ["History", "Culture", "Blacksmiths", "Kikuyu", "Kamba", "Kenyan Heritage"],
+    tags: ["Culture & History"],
     readTime: 9,
     sources: [{
       sourceId: "bantu-beliefs",
@@ -741,7 +741,7 @@ The technological legacy of Kenya's pre-colonial ironworkers did not vanish with
     author: "KenyaHub Cultural Heritage",
     publishedAt: "2026-10-01T07:00:00.000Z",
     updatedAt: null,
-    tags: ["Culture", "History", "Agriculture", "Kikuyu", "Kamba"],
+    tags: ["Culture & History", "Environment"],
     readTime: 7,
     sources: [{
       sourceId: "bantu-beliefs",
@@ -769,7 +769,7 @@ This article uses the source for historical context only. It does not prescribe 
     author: "KenyaHub Cultural Heritage",
     publishedAt: "2026-10-01T08:00:00.000Z",
     updatedAt: null,
-    tags: ["Culture", "History", "Kikuyu", "Kamba", "Heritage"],
+    tags: ["Culture & History"],
     readTime: 8,
     sources: [{
       sourceId: "bantu-beliefs",
@@ -795,7 +795,7 @@ Hobley recorded beliefs through a colonial administrative lens. Contemporary Kik
     author: "KenyaHub Cultural Heritage",
     publishedAt: "2026-10-01T09:00:00.000Z",
     updatedAt: null,
-    tags: ["Culture", "History", "Kikuyu", "Kamba", "Community"],
+    tags: ["Culture & History"],
     readTime: 7,
     sources: [{
       sourceId: "bantu-beliefs",
@@ -819,7 +819,7 @@ This is not an instructional account of initiation. It does not reproduce restri
     author: "KenyaHub Cultural Heritage",
     publishedAt: "2026-10-01T10:00:00.000Z",
     updatedAt: null,
-    tags: ["History", "Culture", "Justice", "Kikuyu", "Kamba"],
+    tags: ["Culture & History", "Government"],
     readTime: 8,
     sources: [{
       sourceId: "bantu-beliefs",
@@ -1116,7 +1116,7 @@ When we protect the canopy, bless the seeds, purify our contamination, and resol
     author: "KenyaHub Linguistics",
     publishedAt: "2026-09-28T09:30:00.000Z",
     updatedAt: "2026-09-28T09:30:00.000Z",
-    tags: ["Linguistics", "Languages", "Luhya", "Kikuyu", "Kisii", "Bantu Grammar"],
+    tags: ["Languages"],
     readTime: 10,
     content: `## A Different Way to Classify the Universe
 
@@ -1232,7 +1232,7 @@ Many language learners assume that having 16 noun classes makes Bantu languages 
     author: "KenyaHub Cultural Editorial",
     publishedAt: "2026-10-02T12:00:00.000Z",
     updatedAt: null,
-    tags: ["History", "Culture", "Justice", "Kikuyu", "Kamba", "Constitution"],
+    tags: ["Culture & History", "Government", "Constitution"],
     readTime: 9,
     sources: [
       {
@@ -1333,7 +1333,7 @@ The pre-colonial Akamba and Agĩkũyũ demonstrated that a society does not requ
     author: "KenyaHub Cultural & Linguistic Editorial",
     publishedAt: "2026-10-03T10:00:00.000Z",
     updatedAt: null,
-    tags: ["Luhya", "Bukusu", "Linguistics", "Culture", "Western Kenya", "History"],
+    tags: ["Languages", "Culture & History"],
     readTime: 8,
     sources: [
       {
@@ -1448,3 +1448,4 @@ export function getStaticBlogPost(slug: string): StaticBlogPost | undefined {
 export function getStaticBlogSlugs(): string[] {
   return STATIC_BLOG_POSTS.map((p) => p.slug);
 }
+

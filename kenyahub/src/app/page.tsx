@@ -54,7 +54,7 @@ export default function HomePage() {
             <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 sm:py-12 sm:py-20">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20">
             <div className="max-w-2xl">
               {/* Status pill */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] mb-8">
@@ -227,7 +227,7 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="relative overflow-hidden">
         <div className="maasai-border-top" />
-        <div className="bg-bg-secondary py-10 sm:py-16 sm:py-12 sm:py-20">
+        <div className="bg-bg-secondary py-10 sm:py-20">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-4 tracking-tight">
               Ready to find the tool you need?

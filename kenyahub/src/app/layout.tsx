@@ -37,6 +37,10 @@ export const metadata: Metadata = {
     "KCSE grade calculator",
   ],
   authors: [{ name: "KenyaHub" }],
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "KenyaHub — Free Tools & Data for Every Kenyan",
     description:

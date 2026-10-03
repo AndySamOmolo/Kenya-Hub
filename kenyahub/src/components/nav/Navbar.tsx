@@ -199,8 +199,8 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden border-t border-border bg-bg-card backdrop-blur-xl animate-fade-in-up">
-            <div className="max-h-[70vh] overflow-y-auto px-4 py-4">
+          <div className="md:hidden absolute left-0 right-0 top-[50px] h-[calc(100vh-50px)] border-t border-border bg-bg-card/98 backdrop-blur-xl animate-fade-in-up flex flex-col shadow-2xl">
+            <div className="flex-1 overflow-y-auto px-4 py-6 pb-20 space-y-1">
               <Link href="/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-8 flex items-center justify-center shrink-0"><Home className="w-5 h-5 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Home
               </Link>

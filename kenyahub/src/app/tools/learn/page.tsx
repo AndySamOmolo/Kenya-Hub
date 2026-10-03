@@ -144,14 +144,17 @@ export default function LearnPage() {
                         ({lang.nativeName})
                       </span>
                     </h4>
-                    <p className="mt-0.5 text-[0.65rem] text-text-secondary truncate">
+                    <p className="mt-1 text-[0.7rem] text-text-secondary line-clamp-2 leading-relaxed">
                       {lang.description}
                     </p>
-                    <div className="mt-1.5 flex items-center gap-3">
-                      <span className="flex items-center gap-1 text-[0.6rem] text-text-muted">
-                        <Users className="h-3 w-3" /> {lang.speakers} speakers
+                    <div className="mt-2.5 flex flex-wrap items-center gap-2 sm:gap-3">
+                      <span className="flex items-center gap-1 rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
+                        <Users className="h-3 w-3" /> {lang.speakers}
                       </span>
-                      <span className="text-[0.6rem] text-text-muted">
+                      <span className="flex items-center gap-1 rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
+                        <BookOpen className="h-3 w-3" /> {lang.skills} skills
+                      </span>
+                      <span className="rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
                         {lang.family}
                       </span>
                     </div>
@@ -199,10 +202,10 @@ export default function LearnPage() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-sm font-bold text-text-primary truncate">
+                      <h4 className="text-sm font-bold text-text-primary">
                         {lang.name}
                       </h4>
-                      <p className="text-[0.55rem] text-text-muted truncate">
+                      <p className="text-[0.65rem] text-text-muted mt-0.5 line-clamp-1">
                         {lang.speakers} speakers • {lang.family}
                       </p>
                     </div>

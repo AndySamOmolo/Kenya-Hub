@@ -2,6 +2,22 @@ import Link from "next/link";
 import { Client, Databases, Query } from "node-appwrite";
 import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog | KenyaHub",
+  description: "Articles, guides, and updates on Kenyan tools, government services, education, and culture.",
+  alternates: {
+    canonical: "https://kenyahub.me/blog",
+  },
+  openGraph: {
+    title: "Blog | KenyaHub",
+    description: "Articles, guides, and updates on Kenyan tools, government services, education, and culture.",
+    url: "https://kenyahub.me/blog",
+    siteName: "KenyaHub",
+    type: "website",
+  },
+};
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
@@ -54,8 +70,32 @@ export default async function BlogPage() {
   // Collect all unique tags
   const allTags = Array.from(new Set(posts.flatMap((p) => p.tags || [])));
 
+  // Structured data for BreadcrumbList
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://kenyahub.me/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://kenyahub.me/blog",
+      },
+    ],
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
         <Link href="/" className="hover:text-gold transition-colors">
@@ -76,19 +116,7 @@ export default async function BlogPage() {
         </p>
       </header>
 
-      {/* Tag overview */}
-      {allTags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-8">
-          {allTags.map((tag) => (
-            <span
-              key={tag}
-              className="px-2.5 py-1 text-[0.625rem] bg-bg-elevated border border-border rounded-full text-text-secondary"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
+      {/* Tag overview removed */}
 
       {/* Posts */}
       <div className="space-y-6">
@@ -102,9 +130,9 @@ export default async function BlogPage() {
                 {post.title}
               </h2>
               <p className="text-text-secondary text-sm mb-4 line-clamp-2">{post.excerpt}</p>
-              <div className="flex items-center gap-4 text-xs text-text-muted">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-text-muted">
                 <span>By {post.author}</span>
-                <span>•</span>
+                <span className="hidden sm:inline">•</span>
                 <time dateTime={post.publishedAt}>
                   {new Date(post.publishedAt).toLocaleDateString("en-KE", {
                     year: "numeric",
@@ -112,12 +140,12 @@ export default async function BlogPage() {
                     day: "numeric",
                   })}
                 </time>
-                <span>•</span>
+                <span className="hidden sm:inline">•</span>
                 <span>{post.readTime} min read</span>
               </div>
               {post.tags && post.tags.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-3">
-                  {post.tags.map((tag: string) => (
+                  {post.tags.slice(0, 3).map((tag: string) => (
                     <span
                       key={tag}
                       className="px-2 py-0.5 text-[0.625rem] bg-bg-elevated border border-border rounded-full text-text-secondary"
@@ -125,6 +153,11 @@ export default async function BlogPage() {
                       {tag}
                     </span>
                   ))}
+                  {post.tags.length > 3 && (
+                    <span className="px-2 py-0.5 text-[0.625rem] bg-transparent text-text-muted">
+                      +{post.tags.length - 3} more
+                    </span>
+                  )}
                 </div>
               )}
             </Link>

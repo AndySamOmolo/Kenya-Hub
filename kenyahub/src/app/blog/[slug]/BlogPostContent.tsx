@@ -114,9 +114,9 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">
             {post.title}
           </h1>
-          <div className="flex items-center gap-4 text-xs text-text-muted">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-text-muted">
             <span>By {post.author}</span>
-            <span>•</span>
+            <span className="hidden sm:inline">•</span>
             <time dateTime={post.publishedAt}>
               {new Date(post.publishedAt).toLocaleDateString("en-KE", {
                 year: "numeric",
@@ -124,11 +124,11 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
                 day: "numeric",
               })}
             </time>
-            <span>•</span>
+            <span className="hidden sm:inline">•</span>
             <span>{post.readTime} min read</span>
             {post.updatedAt && (
               <>
-                <span>•</span>
+                <span className="hidden sm:inline">•</span>
                 <span className="text-gold">
                   Updated {new Date(post.updatedAt).toLocaleDateString("en-KE", {
                     month: "short",
@@ -141,7 +141,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           </div>
           {post.tags && post.tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-4">
-              {post.tags.map((tag) => (
+              {post.tags.slice(0, 3).map((tag) => (
                 <span
                   key={tag}
                   className="px-2 py-0.5 text-[0.625rem] bg-bg-elevated border border-border rounded-full text-text-secondary"
@@ -149,6 +149,11 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
                   {tag}
                 </span>
               ))}
+              {post.tags.length > 3 && (
+                <span className="px-2 py-0.5 text-[0.625rem] bg-transparent text-text-muted">
+                  +{post.tags.length - 3} more
+                </span>
+              )}
             </div>
           )}
         </header>
