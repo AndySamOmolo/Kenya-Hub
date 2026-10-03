@@ -23,7 +23,7 @@ export interface GrammarSection {
   title: string;
   summary: string;
   content: string;
-  examples?: { [lang: string]: string; english: string; explanation?: string }[];
+  examples?: { [lang: string]: string | undefined; english: string; explanation?: string }[];
 }
 
 /* ─── Course Structure: Unit → Skill → Exercise ─────────── */
