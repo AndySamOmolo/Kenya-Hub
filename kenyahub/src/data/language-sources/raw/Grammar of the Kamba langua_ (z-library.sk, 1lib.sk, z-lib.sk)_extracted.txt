@@ -1,0 +1,1713 @@
+================================================================================
+GRAMMAR OF THE KAMBA LANGUAGE
+EASTERN EQUATORIAL AFRICA
+By: J. T. Last, of the Church Missionary Society
+With a Preface by: Robert Cust
+Published by: Society for Promoting Christian Knowledge, London, 1885
+Transcription: High-Resolution Vision API Page-by-Page Full Transcription
+================================================================================
+
+
+
+################################################################################
+# CHUNK: chunk_01_pages_008_022.txt
+################################################################################
+
+=== PDF PAGE 008 (Title) ===
+
+GRAMMAR
+
+OF THE
+
+KAMBA LANGUAGE,
+
+EASTERN EQUATORIAL AFRICA.
+
+
+BY
+J. T. LAST,
+OF THE CHURCH MISSIONARY SOCIETY.
+
+
+[Seal: SOCIETY FOR PROMOTING CHRISTIAN KNOWLEDGE 1698]
+
+
+LONDON:
+SOCIETY FOR PROMOTING CHRISTIAN KNOWLEDGE,
+NORTHUMBERLAND AVENUE, CHARING CROSS, W.C.
+1885.
+
+
+=== PDF PAGE 009 ===
+
+[Blank Page]
+
+
+=== PDF PAGE 010 ===
+
+[Harvard College Library Bookplate]
+
+2205.88 [crossed out]
+2235.88
+
+[Seal: SIGILLVM ACADEMIAE HARVARDIANAE IN NOV·ANG· / CHRISTO ET ECCLESIAE / VERITAS]
+
+Harvard College Library
+BOUGHT WITH INCOME
+FROM THE BEQUEST OF
+HENRY LILLIE PIERCE,
+OF BOSTON.
+Under a vote of the President and Fellows,
+October 24, 1898.
+
+
+=== PDF PAGE 011 ===
+
+[Blank Page]
+
+
+=== PDF PAGE 012 ===
+
+2235.88 [with '3' written over '0']
+
+[Library Stamp:
+HARVARD COLLEGE
+FEB 26 1902
+LIBRARY.]
+
+Pierce fund.
+
+
+=== PDF PAGE 013 (Preface) ===
+
+PREFACE.
+—————
+
+THE Kamba language is one of the great Bántu
+family of East Africa, south of the equator. The
+tribe is settled in two separate enclaves. Krapf
+found a population of seventy thousand to ninety
+thousand souls, surrounded by aliens of the Hamitic
+and Nuba-Fulah groups, and he published a vocabu-
+lary at Tübingen, in 1850. Last, a missionary of
+the Church Missionary Society, the author of this
+grammatical treatise, found a large number of the
+same tribe in U-Sagára, near his place of residence,
+Mamboia, who had migrated southwards. This
+book is a valuable addition to our knowledge. The
+language is noticed at page 359 of my "Modern
+Languages of Africa."
+
+ROBERT CUST,
+*Member of Committee of Church Missionary*
+*and British and Foreign Bible Societies,*
+*and Foreign Translation Committee of the*
+*Society for Promoting Christian Knowledge.*
+
+LONDON,
+    *July* 31, 1885.
+
+
+=== PDF PAGE 014 ===
+
+[Blank Page]
+
+
+=== PDF PAGE 015 (Book p. 1) ===
+
+OUTLINES
+OF
+KAMBA GRAMMAR.
+—————
+
+THE ALPHABET.
+
+THE letters may be divided into three groups,
+*e.g.*, (1) The vowels; (2) The consonants; (3)
+The compound consonants.
+  The vowels are pronounced as in Italian. The
+consonants generally as in English.
+  A is pronounced like *a* in *father*.
+  B
+  Ch is only used as *ch* in *cherry* (*c* is represented
+by *s*).
+  D
+  E is pronounced like *a* in *gate*.
+  F
+  G, always hard, as *g* in *gate* ; *never* as *j*.
+  H
+  I, like *i* in *machine*.
+  J
+
+KAMBA.                                                  B
+
+
+=== PDF PAGE 016 (Book p. 2) ===
+
+2                     THE ALPHABET.
+
+K
+L
+M
+N
+NG'
+O, like *o* in Italian, negative *no* or *au* in *aught*.
+P
+R
+S
+SH, *sh* in *shine*.
+T
+U, *oo* in *food*.
+V, as in *very*.
+W
+Y
+Z, as in *zeal*.
+
+--------------------------------------------------------------
+|   Vowels.   |        Consonants.        | Compound Consonants. |
+|-------------|---------------------------|----------------------|
+|      A      |      B, D, F, G, H,       |     Ch, Dz, Kh,      |
+|      E      |      J, K, L, M, N,       |     Ng, Ng', Ny,     |
+|      I      |      P, R, S, T, V,       |       Sh, Th.        |
+|      O      |         W, Y, Z.          |                      |
+|      U      |                           |                      |
+--------------------------------------------------------------
+
+
+=== PDF PAGE 017 (Book p. 3) ===
+
+( 3 )
+
+SUBSTANTIVES.
+
+KAMBA substantives may be conveniently divided
+into nine classes.
+  Gender is not distinguished by the form of the
+words. When necessary, it is denoted by the
+adjective *-ume*, male, and *-ke*, female.
+  Substantives have two numbers, singular and
+plural, which are distinguished by their initial
+letters.
+  It is of great importance to know well the various
+classes and forms of substantives, as upon these
+classes and forms all adjectives, pronouns, and
+verbs depend for the forms of their prefixes.
+  In the third class of nouns, in which no change is
+made to form the plural, the number is shown by
+the form of the prefix of the adjective or pronoun
+connected with it.
+  CLASS I. Those which begin with *m-*, *'m-*, *mu-*,
+*mw-*, and are the names of living beings. These
+form their plural by changing their initial letters
+into *a-* ; as—
+
+    *Mundu*, a man ;              *Andu*, men.
+    *Mtanya*, a judge ;           *Atanya*, judges.
+    *Mtongui*, a guide ;          *Atongui*, guides.
+    *Mwimi*, an agriculturist ;   *Aimi*, agriculturists.
+
+
+=== PDF PAGE 018 (Book p. 4) ===
+
+4                     SUBSTANTIVES.
+
+  CLASS II. Those which begin with *m-*, *'m-*, *mu-*, *mw-*,
+and are not the names of living beings. These
+form their plurals by changing *m-*, etc., into
+*mi-* ; as—
+
+    *Mti*, a tree ;               *Miti*, trees.
+    *'Mmongo*, the backs ;        *Mimongo*, backs.
+    *Muguwa*, an awl ;            *Miguwa*, awls.
+    *Mwamba*, a baobab tree ;     *Miamba*, baobab trees.
+
+  CLASS III. Those which do not change to form the
+plural; as—
+
+    *Numba*, an house ;           *Numba*, houses.
+    *Ngavu*, a basket ;           *Ngavu*, baskets.
+    *Chengo*, a camp ;            *Chengo*, camps.
+    *Chalo*, a caravan ;          *Chalo*, caravans.
+    *Ngedza*, a chisel ;          *Ngedza*, chisels.
+
+  CLASS IV. Those beginning with *chi-* and *ki-*.
+These form their plurals by changing their singular
+prefix into *i-* ; as—
+
+    *Kimandi*, a cake ;           *Imandi*, cakes.
+    *King'abwe*, a centipede ;    *Ing'abwe*, centipedes.
+    *Kinyezwa*, a chin ;          *Inyezwa*, chins.
+
+  CLASS V. Those which in the singular begin with
+*i-*, and form their plurals by changing *i-* into *ma-* ;
+as—
+
+    *Itong'o*, a civet cat ;      *Matong'o*, civet cats.
+    *Itumbi*, an egg ;            *Matumbi*, eggs.
+    *Ikuyu*, a fish ;             *Makuyu*, fishes.
+    *Ithea*, a flower ;           *Mathea*, flowers.
+
+  CLASS VI. Those beginning with *u-* or *w-* in the
+
+
+=== PDF PAGE 019 (Book p. 5) ===
+
+SUBSTANTIVES.                                           5
+
+singular. These form their plurals by changing the
+singular prefix into *ny-* ; as—
+
+    *Ua*,                         *Nya*.
+    *Ulii*, thread ;              *Ndii*, threads.
+    *Wiiyo*, a wall ;             *Nyiyo*, walls.
+    *Wia*, business ;             *Nyia*, businesses.
+    *Uova*, a loop ;              *Nyova*, loops.
+
+  Note 1. Those in *u* followed by *th* or *Z* take *n* only
+instead of *u* ; as—
+
+    *Uthuku*, evil ;              *Nthuku*, evils.
+    *Uzio*, a face ;              *Nzio*, faces.
+
+  Note 2. *U-*, followed by *l* or *r*, takes *n*, and changes
+*l* or *r* into *d* ; as—
+
+    *Ulembwa*, guttapercha ;      *Ndembwa*, guttaperchas. :
+    *Ulii*, a wall ;              *Ndii*, walls.
+
+  Note 3. *U-*, followed by *b*, *v*, *w*, changes *n* into *m*,
+and is always followed by *b* ; as—
+
+    *Uviyo*, a knife ;            *Mbiyo*, knives.
+    *Uwathi*, a song ;            *Mbathi*, songs.
+    *Uwau*, a side ;              *Mbau*, sides.
+    *Uwenji*, a razor ;           *Mbenji*, razors.
+
+  Note 4. *U*, followed by *t*, changes *ut* of the singular
+into *nz* to form the plural; as—
+
+    *Utuka*, night ;              *Nzuka*, nights.
+
+  Note 5. *U*, followed by *ny*, simply drops the *u* to
+form the plural ; as—
+
+    *Unyai*, a foot ;             *Nyai*, feet.
+
+
+=== PDF PAGE 020 (Book p. 6) ===
+
+6                     SUBSTANTIVES.
+
+  Note 6. *U*, followed by *k*, drops the *u* and takes
+*ma* ; as—
+
+    *Ukakaa*, a nostril ;         *Makakaa*, nostrils.
+
+  Perhaps also simply the *u* is dropped ; as—
+
+    *Ukungu*, dust ;              *Kungu*, dusts.
+
+  CLASS VII. Those which take *ka-* in the singular,
+and change *ka-* into *tu-* to form the plural ; as—
+
+    *Kalabuku*, hare ;            *Tulabuku*, hares.
+    *Kamwanya*, noose ;           *Tumwanya*, nooses.
+    *Kabindi*, a joint ;          *Tubindi*, joints.
+    *Kaindo*, an insect ;         *Tuindo*, insects.
+
+  CLASS VIII. The word *wandu*, a place. This word
+requires special forms in all adjectives and pronouns
+connected with it.
+
+  CLASS IX. All infinitives of verbs may be used as
+substantives answering to the English participle in
+-ing ; as—
+
+    *Ku-thaima*, hunting ;        *Ku-thaima*, huntings.
+
+
+=== PDF PAGE 021 (Book p. 7) ===
+
+( 7 )
+
+ADJECTIVES.
+
+  ADJECTIVES (as in Swahili) follow the substantives
+they agree with. Each adjective is subject to a
+variety of changes, according to the class and number
+of the substantive it qualifies. These changes are
+made at the beginning of the word ; as—
+
+    *Mundu mucheo*, a good man.
+    *Andu acheo*, good men.
+    *Mti mthuku*, a bad tree.
+    *Miti mithuku*, bad trees.
+
+  Substantives of any class, if they denote the
+names of living beings, may take adjectives bearing
+the adjectival prefix proper to the first class ; as—
+
+    *Kiletu mucheo*, a good girl.
+    *Iletu acheo*, good girls.
+    *Morma mucheo*, a good cow.
+    *Miorma anini*, small cows.
+
+  It is equally right to use the adjectival prefix
+proper to the class of noun it qualifies ; as—
+
+    *Kabizji kadidi*, a little boy.
+    *Tubizji tucheo*, good boys.
+    *Kana kaume*, a male child.
+    *Twana twaume*, male children.
+
+
+=== PDF PAGE 022 (Book p. 8) ===
+
+8                     ADJECTIVES.
+
+  The following are the adjectival prefixes proper to
+the several classes of nouns :—
+
+    Class   I. Sing. mu-, m-. Plur. a-.
+      "    II.   "   mu-, m-.   "   mi-.
+      "   III.   "   n-.            n-.
+      "    IV.   "   ki-.       "   i-.
+      "     V.   "   di-.       "   ma-.
+      "    VI..      m-.            n-.
+      "   VII.   "   ka-.       "   tu-.
+      "  VIII.   "   wa-.       "   wa-.
+      "    IX.   "   ku-.       "   ku-.
+
+  Adjectives beginning with a vowel require pre-
+fixes ending with a consonant ; as—
+
+    *Mu mwingi*, *mu muingi*, much dust.
+    *Tuthoka twingi*, *tuthoka tuingi*, many adzes.
+    *-a* before *e-* and *i-* merges into *e-*.
+    *-a-* is sometimes suppressed before *o-*.
+    *-i-* is absorbed by a following *i-*.
+
+  The following table shows how the adjectives are
+formed and used :—
+
+    Class   I. *Mundu mucheo*, a good man.
+               *Andu acheo*, good men.
+      "    II. *Mti mcheo*, a good tree.
+               *Miti micheo*, good trees.
+      "   III. *Numba ncheo*, a good house.
+               *Numba ncheo*, good houses.
+      "    IV. *Kimandi kicheo*, a good cake.
+               *Imandi icheo*, good cakes.
+      "     V. *Itumbi icheo*, a good egg.
+               *Matumbi macheo*, good eggs.
+      "    VI. *Uwathi mcheo*, a good song.
+               *Mbathi ncheo*, good songs.
+
+
+################################################################################
+# CHUNK: chunk_02_pages_023_030.txt
+################################################################################
+
+=== PDF PAGE 023 (Book p. 9) ===
+
+ADJECTIVES.                                9
+
+Class VII. Kaindo kacheo, a good insect.
+            Tuindo tucheo, good insects.
+   „ VIII. Wandu pacheo, a good place.
+            Wandu pacheo, good places.
+   „   IX. Kuthaima kucheo, good hunting.
+            Kuthaima kucheo, good huntings.
+
+The word -anata (How many?) takes the same
+prefixes as regular adjectives ; as—
+Class   I. Andu aanata ? how many men ?
+   „   II. Miti mianata ? how many trees ?
+   „  III. Numba nanata ? how many houses ?
+   „   IV. Imanda ianata ? how many cakes ?
+   „    V. Matumbi maanata ? how many eggs ?
+   „   VI. Mbathi nanata ? how many songs ?
+   „  VII. Tuindo twaanata ? how many insects ?
+   „ VIII. Wandu paanata ? how many places ?
+   „   IX. Kuthaima kwanata ? how many huntings ?
+
+The words -ondi, all, -we or -nai, having, take the
+same prefixes as pronouns ; as—
+Class   I. Andu aondi, all men.
+   „   II. Miti yondi, all trees.
+   „  III. Numba chondi, all houses.
+   „   IV. Imanda ichondi, all cakes.
+   „    V. Matumbi yondi, all eggs.
+   „   VI. Mbathi chondi, all songs.
+   „  VII. Tuindo twondi, all insects.
+   „ VIII. Wandu wondi, all places.
+   „   IX. Kuthaima kwondi, all huntings.
+
+Class   I. Mundu yunai kiliku, a man having wis-
+             dom.
+          Andu anai makuyu, men having fish.
+   „   II. Muti unai mathango a tree having leaves.
+          Miti inai mabeki, trees having fruit.
+
+
+=== PDF PAGE 024 (Book p. 10) ===
+
+10                              ADJECTIVES.
+
+Class III. Numba inai iko, a house having dirt.
+            Numba zinai ucheo, houses having beauty.
+   „   IV. Kimanda kinai uwio, a cake having sweet-
+                 ness.
+            Imanda inai mabeki, cakes having fruit.
+   „    V. Itumbi inai ucheo, an egg having beauty.
+            Matumbi yunai ucheo, eggs having beauty.
+   „   VI. Uwathi unai uthoko, a bad song.
+            Mbathi zinai uthoko, bad songs.
+   „  VII. Kaindo kanai uki, an insect having honey.
+            Tuindo ; tunai nzea, insects having wings.
+   „ VIII. Wandu wanai mba, a place having rocks.
+            Wandu wanai nyichi, places having grass.
+   „   IX. Kuthaima kunai uwēa, hunting having
+                 danger.
+            Kuthaima kunai mbēa, hunting having
+                 dangers.
+
+The following table shows the forms taken by
+-mwe, one, and -ingi or -engi, many.
+Class   I. Mundu yumwe, one man.
+            Andu aengi, or mangi, many men.
+   „   II. Mti umwe, one tree.
+            Miti mingi, many trees.
+   „  III. Numba imwe, one house.
+            Numba zingi, many houses.
+   „   IV. Kimanda kimwe, one cake.
+            Imanda yingi, many cakes.
+   „    V. Itumbi imwe, one egg.
+            Matumbi mengi, many eggs.
+   „   VI. Uwathi umwe, one song.
+            Mbathi nyingi, many songs.
+   „  VII. Kaindo kamwe, one insect.
+            Tuindo twingi, many insects.
+   „ VIII. Wandu wamwe, one place.
+            Wandu wangi, many places.
+
+
+=== PDF PAGE 025 (Book p. 11) ===
+
+ADJECTIVES.                                11
+
+Class  IX. Kuthaima kumwe, one hunting.
+            Kuthaima kwingi, many huntings.
+
+The word -nge, other, takes prefixes as follows :—
+Class   I. Mundu yunge, another man.
+            Andu ange, other men.
+   „   II. Mti unge, another tree.
+            Miti yange or minge, other trees.
+   „  III. Numba inge, another house.
+            Numba zinge, other houses.
+   „   IV. Kimanda kinge, another cake.
+            Imanda inge, other cake.
+   „    V. Itumbi inge, another egg.
+            Matumbi mange, other eggs.
+   „   VI. Uwathi unge, another song.
+            Mbathi zinge, other songs.
+   „  VII. Kaindo kange, another insect.
+            Tuindo tunge, other insects.
+   „ VIII. Wandu wange, another place.
+            Wandu wange, other places.
+   „   IX. Kuthaima kunge, another hunting.
+            Kuthaima kunge, other huntings.
+
+-Nge, other, is often used as an enclitic ; as—
+            Mundunge, another man.
+
+            IRREGULAR ADJECTIVES.
+
+These are formed after the following rules :—
+1. By using the tense of a verb expressing the
+quality required ; as—
+      Ndata ikalakala, the stick is straight.
+      Ndata imamele, the stick is crooked.
+      Muthungi ukuchuwa, the jar is full.
+2. By using a substantive connected with the
+thing to be qualified by the preposition wa ; as—
+      Mundu wa kaú, a quarrelsome man.
+
+
+=== PDF PAGE 026 (Book p. 12) ===
+
+12                              ADJECTIVES.
+
+   3. By use of -nai, having, and a substantive
+expressing the quality required ; as—
+            Mundu yunai kiliku, a wise man..
+            Andu anai iko, dirty men.
+   4. By using the preposition -a with the infinite of
+a verb ; as—
+            Mundu wa kwaka, a builder.
+            Andu a kuima, agriculturists.
+
+         THE COMPARISON OF ADJECTIVES.
+
+   Comparison is expressed in the following ways.
+   1. By simply stating the qualities of the two
+objects spoken of ; as—
+   Mundu uyu mucheo, mundu uiya, mthoko, this man
+is good, that man is bad ; this man is better than
+that one.
+   2. By the use of ku-kila, to surpass ; as—
+   Mundu uyu mucheo, akilite uiya ; this man surpasses
+that one in goodness.
+   Mti uyu kucha mno mwaka uyu, kukila mwaka
+ula unge, this tree bears very much this year, sur-
+passing that other year.
+   The superlative is expressed by—
+   1. The simple use of the adjective ; as—
+      Andu acheo athaime, the best men may hunt.
+   2. By the use of ku-kila, to surpass ; and -ondi,
+all ; as—
+   Mundu yuyu mucheo, kuakila andu aondi, this man
+is good, surpassing all the men ; this is the best man.
+   Mkamba yuyu akaakila andu aonde, this mkamba will
+surpass all the men, will be the best of all the men.
+
+
+=== PDF PAGE 027 (Book p. 13) ===
+
+( 13 )
+
+
+NUMERALS.
+
+THE following are the cardinal numbers :—
+ 1 = Mondi.
+ 2 = Keri.
+ 3 = Kadatu.
+ 4 = Kana.
+ 5 = Kathano.
+ 6 = Thandatu.
+ 7 = Monza.
+ 8 = Nyanya.
+ 9 = Kenda.
+10 = Ikumi.
+11 = Ikumi na imwe.
+12 = Ikumi na keri.
+13 =   „     „  kadatu.
+14 =   „     „  kana.
+15 =   „     „  kathano.
+16 =   „     „  thandatu.
+17 =   „     „  monza.
+18 =   „     „  nyanya.
+19 =   „     „  kenda.
+20 = Milongo iri.
+21 =   „     „  na imwe.
+22 =   „     „   „  keri.
+23 =   „     „   „  kadatu.
+24 =   „     „   „  kana.
+.25 =  „     „   „  kathano.
+
+
+=== PDF PAGE 028 (Book p. 14) ===
+
+14                              NUMERALS.
+
+26 =   „     „   „  thandatu.
+27 =   „     „   „  monza.
+28 =   „     „   „  nyanya.
+29 =   „     „   „  kenda.
+30 =   „   itatu.
+40 =   „   ina.
+50 =   „   ithano.
+60 =   „   thandatu.
+70 =   „   monza.
+80 =   „   nyanya.
+90 =   „   kenda.
+100 = Iyana.
+200 = Mayana or mana maeri.
+1000 = Mana makumi.
+2000 = Mana makumi maeri.
+
+Probably the cardinal numbers are seldom used
+by the Kambas beyond iyana, 100.
+
+The number always follows the noun ; as—
+            Mundu yumwe, one man.
+            Imanda idatu, three cakes.
+
+When an adjective is used with a noun which is
+qualified by a number, the number comes last ; as—
+            Mundu mucheo yumwe, one good man.
+            Andu athuku athano, five bad men.
+            Matumbi manini thandatu, six small eggs.
+
+The ordinal numbers are expressed by the use of
+the preposition -a, of ; as—
+            Mundu wa mbee, the first man.
+            Muti wa keri, the second tree.
+            Kimanda cha katatu, the third cake.
+            Kaindo ka kana, the fourth insect.
+
+
+=== PDF PAGE 029 (Book p. 15) ===
+
+NUMERALS.                                15
+
+The following are the ordinal numbers :—
+            First, -a mbēe.
+            Second, -a keri.
+            Third, -a kadatu.
+            Fourth, -a kana.
+            Fifth, -a kathano.
+            Sixth, -a thandatu.
+            Seventh, -a monza.
+            Eight, -a nyanya.
+            Ninth, -a kenda.
+            Tenth, -a ikumi.
+              etc.    etc.
+            Last, -a mu-thiāa.
+
+―
+
+
+=== PDF PAGE 030 (Book p. 16) ===
+
+[TABLE OF NUMERALS IN AGREEMENT WITH SUBSTANTIVES]
+
+| CLASS | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Sing.** | Mundu | Muti | Numba | Kimanda | Itumbi | Uwathi | Kaindo | Wandu | Kuthaima |
+| **1** | mondi | mmondi | mondi | kimondi | imondi | mondi | kamondi | wamondi | kumondi |
+| | | | | | | | | | |
+| **Plur.** | Andu | Miti | Numba | Imanda | Matumbi | Mbathi | Tuindo | Wandu | Kuthaima |
+| **2** | aeri | yeri | yiri | iyiri | mairi | yiri | twiri | wairi | kwiri |
+| **3** | adatu | midatu | datu | idatu | madatu | datu | tudatu | wadetu | kudatu |
+| **4** | akana | mina | kana | ina | mana | kana | twana | wana | kwana |
+| **5** | athano | mithano | thano | ithano | mathano | thano | tuthano | wathano | kuthano |
+| **6** | thandatu | thandato | thandatu | thandatu | thandatu | thandatu | thandatu | thandatu | thandatu |
+| **7** | monza | mimonza | monza | imonza | mamonza | monza | tumonza | wamonza | kumonza |
+| **8** | nyanya | nyanya | nyanya | nyanya | nyanya | nyanya | nyanya | nyanya | nyanya |
+| **9** | kenda | kenda | kenda | kenda | kenda | kenda | kenda | kenda | kenda |
+| **10** | kumi | kumi | kumi | kumi | ·kumi | kumi | kumi | kumi | kumi |
+
+When used in agreement with substantives the numerals take prefixes as above.
+
+
+################################################################################
+# CHUNK: chunk_03_pages_031_038.txt
+################################################################################
+
+=== PDF PAGE 031 (Book p. 17) ===
+
+( 17 )
+
+
+PRONOUNS.
+
+PERSONAL PRONOUNS.
+
+THE following are the full forms of the personal
+pronouns :—
+
+    I, ninye.                We, nithi.
+    Thou, niwe.              You, inyui.
+    He or she, miya.         They, acho.
+
+The second person singular is always used when
+only one person is referred to.
+The first and second persons singular are often
+contracted into nye and we.
+There are no special forms to denote it or they
+when referring to inanimate things.
+The objective case of the personal pronouns is the
+same as that given above for the subjective.
+The possessive case is generally expressed by the
+regular possessive pronouns.
+The possessive pronouns -akwa and -cho, which are
+used with words denoting animate beings, may also
+be used with words denoting inanimate things. The
+prefix proper to the class of substantive with which
+the pronoun agrees must always be prefixed, as—
+
+    Ngathí yakwe ndong'ola, the ox's hump.
+    Kiao chakwe uchi, the bridge of the river.
+
+KAMBA.                                     C
+
+
+=== PDF PAGE 032 (Book p. 18) ===
+
+18                          PRONOUNS.
+
+The possessive case is formed by prefixing the
+preposition -a, of, to a special form of the personal
+pronoun ; as—
+
+    W-a-kwa, mine ;            W-etu for w-a-etu, ours.
+    W-a-go, thine ;            W-enyu for w-a-enyu, yours.
+    W-a-kwe, his or hers ;     W-eyo for w-a-eyo, theirs.
+
+The preposition na, and or with, is often prefixed
+to a shortened form of the personal pronoun to
+express and or with me, thee, him, etc. ; as—
+
+    Na-nye, and or with me ;    Na-thi, and or with us.
+    Na-we       ,,      thee ;   Na-nyui,     ,,     ye.
+    Na-ya       ,,  him or her ; Na-cho,      ,,     them.
+
+These forms are used to express both the subjec-
+tive and objective cases ; as—
+
+    Na-nye, and I, or and me, etc.
+    Na-thi, and we, or with us, etc.
+
+The following prefixes are used in conjugating
+the verb to denote the subjective or nominative case
+of the personal pronoun :—
+
+    N- or ni-, I ;           Tu- or tw-, we.
+    U-, thou ;               M- or mu-, ye.
+    Y-, ya-, or a-, he or she;   Ma, they.
+
+The forms used with verbs to denote the objective
+case of the personal pronouns denoting animate
+beings are as follows :—
+
+    -Ni- or -n-, I ;         -Tu- or -tw, us.
+    -Ku- or -kw-, thee ;     -M- or -mw-, you.
+    -M-, -mu-, -mw-, him or her ; -A-, them.
+
+These subjective and objective prefixes are only
+used with substantives of the first class, and with
+
+
+=== PDF PAGE 033 (Book p. 19) ===
+
+PRONOUNS.                         19
+
+those words, which, being the names of animate
+beings, use the prefixes proper to the first class.
+Wherever possible, those prefixes ending in a
+vowel must be followed by a syllable beginning
+with a consonant ; and those ending in a consonant,
+must be followed by a syllable beginning with a
+vowel.
+When two vowels come together, a change is
+generally made in one of them ; as—
+
+    Twingi for tu-ingi, many
+    Wenyu for wa-enyu, you.
+    Twiuza for tu-iuza, we dig.
+    Yu-kwenda, not yu-ku-enda, he loves thee.
+
+The following prefixes are used to express the
+personal pronoun when required by words denoting
+inanimate objects.
+
+                The Subjective Case.
+Class   II.  Sing. u-, wa-.     Plur. i-, ya-.
+  ”    III.    ”   I-, ya-.       ”   zi-, z-.
+  ”     IV.    ”   ki-, ch-.      ”   i-, y-.
+  ”      V.    ”   i-, y-.        ”   ga-, g-.
+  ”     VI.    ”   u-, wa-.       ”   zi-, z-.
+  ”    VII.    ”   ka-, ka-.      ”   tu-, tw-.
+  ”   VIII.    ”   w-, wa-.       ”   w-.
+  ”     IX.    ”   ku-, kw-.      ”   ku-, kw-.
+
+                The Objective Case.
+Class   II.  Sing. -u-.         Plur. -i-.
+  ”    III.    ”   -i-.           ”   -zi-.
+  ”     IV.    ”   -ki-.          ”   -i-.
+  ”      V.    ”   -i-.           ”   -ga.
+  ”     VI.    ”   -u-.           ”   -zi-.
+
+
+=== PDF PAGE 034 (Book p. 20) ===
+
+20                          PRONOUNS.
+
+Class  VII.  Sing. -ka-.     Plur. -tu-.
+  ”   VIII.    ”   -wa-.       ”   -wa-.
+  ”     IX.    ”   -ku-.       ”   -ku-.
+
+The prefixes ya- and -ya- are often used by those
+who are somewhat acquainted with the Swahili
+language to denote ga- and -ga- respectively.
+In these prefixes -u- becomes -w-, and -i- becomes
+-y-, before vowels.
+The following table shows the manner of using
+the objective prefixes.
+The objective prefix immediately precedes the
+verb.
+The use of the prefixes with both vowel and
+consonantal verbs is shown.
+
+Class   I. Yu-ni-taa, he sells me.
+           Yu-n-ua, he buys me.
+           Yu-ku-taa, he sells you.
+           Yu-kw-ua, he buys you.
+           Yu-mu-taa, he sells him.
+           Yu-mw-ua, he buys him.
+           Yu-tu-taa, he sells us.
+           Yu-tw-ua, he buys us.
+           Yu-mu-taa, he sells you.
+           Yu-mw-ua, he buys you.
+           Yu-a-taa, he sells them.
+           Yu-a-ua, he buys them.
+  ”    II. Yu-u-taa, he sells it (muti, a tree).
+           Yu-w-ua, he buys it.
+           Yu-i-taa, he sells them (miti, trees).
+           Yu-y-ua, he buys them.
+  ”   III. Yu-i-taa, he sells it (numba, a house).
+           Yu-y-ua, he buys it.
+           Yu-zi-taa, he sells them (numba, houses).
+           Yu-zi-ua, he buys them.
+
+
+=== PDF PAGE 035 (Book p. 21) ===
+
+PRONOUNS.                         21
+
+Class   IV. Yu-ki-taa, he sells it (kimanda, a cake).
+            Yu-ki-ua, he buys it.
+            Yu-i-taa, he sells them (imanda, cakes).
+            Yu-y-ua, he buys them.
+  ”      V. Yu-i-taa, he sells it (itumbi, an egg).
+            Yu-y-ua, he buys it.
+            Yu-ga-taa, he sells them (matumbi, eggs).
+            Yu-ga-ua, he buys them.
+  ”     VI. Yu-u-taa, he sells it (uwathi, a song).
+            Yu-w-ua, he buys it.
+            Yu-zi-taa, he sells them (mbathi, songs).
+            Yu-zi-ua, he buys them.
+  ”    VII. Yu-ka-taa, he sells it (kaindo, an insect).
+            Yu-ka-ua, he buys it.
+            Yu-tu-taa, he sells them (tuindo, insects).
+            Yu-tw-ua, he buys them.
+  ”   VIII. Yu-wa-taa, he sells it or them (wandu,
+                place or places).
+            Yu-wa-ua, he buys it or them.
+  ”     IX. Yu-ku-taa, he sells it or them (kuthaima,
+                hunting or huntings).
+            Yu-kw-ua, he buys it or them.
+
+In all cases the first prefix is that of the subjective
+case of the personal pronoun ; as—
+
+    Yuka-zi-taa numba, he will sell the houses.
+
+The full forms of the personal pronouns are often
+used for emphasis ; as—
+
+    Ninye ni-ka-ku-taa niwe, I, I will certainly sell you.
+    Miya yu-ni-wenda ninye, he, he does love me.
+
+                    POSSESSIVE PRONOUNS.
+
+The possessive pronouns always follow directly
+after the noun denoting the thing possessed.
+
+
+=== PDF PAGE 036 (Book p. 22) ===
+
+22                          PRONOUNS.
+
+The prefix varies according to the class and
+number of the word denoting the thing possessed.
+The change is always made at the beginning of
+the word.
+The unchangeable parts are as follows :—
+
+    My, -kwa.                  Our, -etu.
+    Thy, -go.                  Your, -enyu.
+    His, hers, its, -kwe.      Their, -eyo.
+
+The third persons, singular and plural, of these
+forms are used for all classes of substantives denoting
+either animate or inanimate objects.
+All the above forms are often used as enclitics,
+especially with such common words as ; mwana, a son,
+acha, father, mwanatha, a brother ; as—
+
+    Mwanakwa, my child.
+    Mwanago, thy child.
+    Mwanakwe, his or her child.
+    Mwanetu, our child.
+    Mwanenyu, your child.
+    Mwaneyo, their child.
+
+In the plural numbers the final -a of the sub-
+stantive is absorbed by the initial vowel of the
+pronoun.
+The initial letters proper to each class of sub-
+stantives are as follows :—
+
+Class    I.  Sing. w-a-.  Plur. w-a-.
+  ”     II.    ”   w-a-.    ”   y-a-.
+  ”    III.    ”   y-a-.    ”   z-a-.
+  ”     IV.    ”   ch-a-.   ”   i-a-.
+  ”      V.    ”   i-a-.    ”   g-a-, or y-a-.
+  ”     VI.    ”   w-a-.    ”   z-a-.
+
+
+=== PDF PAGE 037 (Book p. 23) ===
+
+PRONOUNS.                         23
+
+Class  VII.  Sing. k-a-.  Plur. tu-a-.
+  ”   VIII.    ”   w-a-.    ”   w-a-.
+  ”     IX.    ”  kw-a-.    ”  kw-a-.
+
+Examples of the use and forms of the possessive
+pronoun.
+
+Class     I. Mundu wakwa, wago, wakwe, wetu, wenyu,
+                 wayo.
+             Andu akwa, ago, akwe, aetu, aenyu, ayo.
+  ”      II. Muti wakwa, wago, wakwe, wetu, wenyu,
+                 wayo.
+             Miti yakwa, yago, yakwe, yetu, yeuyu, yayo.
+  ”     III. Numba yakwa, yago, yakwe, yetu, yenyu,
+                 yago.
+             Numba zakwa, zago, zakwe, zetu, zengu,
+                 zago.
+  ”     IV. Kimanda chakwa, chago, chakwe, chetu,
+                 chenyu, chayo.
+             Imanda iyakwa, iyago, iyakwe, iyetu,
+                 iyenyu, iyayo.
+  ”      V. Itumbi iyakwa, iyago, iyakwe, iyetu,
+                 iyenyu, iyayo.
+             Matumbi gakwa, gago, gakwe, getu, genyu,
+                 gayo.
+  ”     VI. Uwathi wakwa, wago, wakwe, wetu, wenyu,
+                 wayo.
+             Mbathi zakwa, zago, zakwe, zetu, zenyu,
+                 zayo.
+  ”    VII. Kaindo Kakwa, kago, kakwe, ketu, kenyu,
+                 kayo.
+             Tuindo twakwa, twago, twakwe, twetu,
+                 twenyu, twayo.
+  ”   VIII. Wandu wakwa, wago, wakwe, wetu,
+                 wenyu, wayo.
+             Wandu wakwa, wago, wakwe, wetu,
+                 wenyu, wayo.
+
+
+=== PDF PAGE 038 (Book p. 24) ===
+
+24                          PRONOUNS.
+
+Class   IX. Kuthaima kwakwa, kwago, kwakwe, kwetu,
+                kwenyu, kwayo.
+            Kuthaima kwakwa, kwago, kwakwe, kwetu,
+                kwenyu, kwayo.
+
+Sometimes the personal pronouns are used directly
+after the possessive pronouns, for the sake of giving
+emphasis ; as—
+
+    Kimanda chakwa ninye, my own cake.
+    Mbathi zago niwe, your own songs.
+    Matumbi genyu inyui, your own eggs.
+    Mitu yayo acho, their own trees.
+
+When it is necessary to denote the owner of a
+thing, the preposition -a, of, is used, having the
+initial letters proper to the class and number of the
+substantive with which it is used ; as—
+
+    Numba ya kithwia, the king's house.
+    Itumo iya Mkamba, the Mkamba's spear.
+
+When it is desirable to denote very distinctly the
+owner of a thing, the proper possessive pronoun is
+used instead of the preposition -a, of ; as—
+
+    Ndong'ola zakwe kithwia, the king's own oxen.
+    Imanda iyayo Akamba, the Kamba's own cakes.
+    Numba yakwe mundu, the man's own house.
+
+The following are the forms taken by the pre-
+position -a, of, when used with the several classes
+of nouns :—
+
+Class    I.  Sing. wa.  Plur. a.
+  ”     II.    ”   wa.    ”   ya.
+  ”    III.    ”   ya.    ”   za.
+  ”     IV.    ”   cha.   ”   iya.
+  ”      V.    ”   iya.   ”   ga.
+  ”     VI.    ”   wa.    ”   za.
+
+
+################################################################################
+# CHUNK: chunk_04_pages_039_046.txt
+################################################################################
+
+=== PDF PAGE 039 (Book p. 25) ===
+
+PRONOUNS.                                   25
+
+Class  VII. Sing. ka.   Plur. twa.
+  ”   VIII.   ”   wa.     ”   wa.
+  ”     IX:   ”   kwa.    ”   kwa.
+
+              REFLECTIVE PRONOUNS.
+
+  Self is expressed by the use of the word ng'o,
+heart ; as—
+
+          Ng'o yakwa, my heart, myself.
+          Ng'o zetu, our hearts, ourselves.
+
+  Itself, themselves, etc., are expressed by the use
+of the word -ēnyi, with the proper prefix.
+  The following table shows the various forms :—
+
+Class     I. Mundu mwēnyi, the man himself.
+             Andu aēnyi, the men themselves.
+  ”      II. Muti mwēnyi, the tree itself.
+             Miti yēnyi, the trees themselves.
+  ”     III. Numba yēnyi, the house itself.
+             Numba zēnyi, the houses themselves.
+  ”      IV. Kimanda chēnyi, the cake itself.
+             Imanda iyēnyi, the cakes themselves.
+  ”       V. Itumbi iyēnyi, the egg itself.
+             Matumbi gēnyi, the eggs themselves.
+  ”      VI. Uwathi mwēnyi, the song itself.
+             Mbathi zēnyi, the songs themselves.
+  ”     VII. Kaindo kaēnyi, the insect itself.
+             Tuindo twēnyi, the insects themselves.
+  ”    VIII. Wandu wēnyi, the place itself.
+             Wandu wēnyi, the places themselves.
+  ”      IX. Kuthaima kwēnyi, the hunting itself.
+             Kuthaima kwenyi, the huntings them-
+               selves.
+
+Mwēnyi is used to denote myself aud thyself.
+Aēnyi is used to denote ourselves and yourselves.
+
+
+=== PDF PAGE 040 (Book p. 26) ===
+
+26                                  PRONOUNS.
+
+              DEMONSTRATIVE PRONOUNS.
+
+  There are three sets of demonstrative pronouns—
+  1. Those referring to objects near at hand.
+  2. Those referring to things at a distance.
+  3. Those denoting objects before-mentioned.
+
+  1. This or that, these or those, of objects near
+at hand.
+
+Class     I. Mundu uya, this man.
+             Andu aya, these men.
+  ”      II. Muti uya, this tree.
+             Miti iya, these trees.
+  ”     III. Numba iya, this house.
+             Numba ziya, these houses.
+  ”      IV. Kimanda kiya, this cake.
+             Imanda iya, these cakes.
+  ”       V. Itumbi ii, this egg.
+             Matumbi gaa, these eggs.
+  ”      VI. Uwathi uu, this song.
+             Mbathi zii, these songs.
+  ”     VII. Kaindo kii, this insect.
+             Twindo twii, these insects.
+  ”    VIII. Wandu waa, this place or these
+               places.
+  ”     IX. Kuthaima kwaa, this hunting
+               these huntings.
+
+  2. That or those yonder at some distance.
+
+Class     I. Mundu uuya, that man.
+             Andu aaya, those men.
+  ”      II. Muti uuya, that tree.
+             Miti iiya, those trees.
+  ”     III. Numba iiya, that house.
+             Numba ziiya, those houses.
+
+
+=== PDF PAGE 041 (Book p. 27) ===
+
+PRONOUNS.                                   27
+
+Class    IV. Kimanda kiiya, that cake
+             Imanda iiya, those cakes.
+  ”       V. Itumbi iiya, that egg.
+             Matumbi gaiya, those eggs.
+  ”      VI. Uwathi uuya, that song.
+             Mbathi ziiya, those songs.
+  ”     VII. Kaindo kaaya, that insect.
+             Tuindo tuuya, those insects.
+  ”    VIII. Wandu waaya, that place or those
+               places.
+  ”      IX. Kuthaim kuuya, that hunting - or
+               those huntings.
+
+  3. This or that, these or those, referring to things
+before referred to..
+
+Class     I. Mundu uyu, that man.
+             Andu awu, those men.
+  ”      II. Muti uyu, that tree.
+             Miti iyu, those trees.
+  ”     III. Numba iyu, that house.
+             Numba ziyu, those houses.
+  ”      IV. Kimanda kiyu, that cake.
+             Imanda iyu, those cakes.
+  ”       V. Itumbi iyu, that egg.
+             Matumbi gayu, those eggs.
+  ”      VI. Uwathi uyu, that song.
+             Mbathi ziyu, those songs.
+  ”     VII. Kaindo kayu, that insect.
+             Twindo tuyu, those insects.
+  ”    VIII. Wandu wayu, thāt place or those
+               places.
+  ”      IX. Kuthaima kuyu, that hunting
+             or those huntings.
+
+  To point out a person or thing at a great distance
+off, the second class of demonstrative pronouns is used,
+
+
+=== PDF PAGE 042 (Book p. 28) ===
+
+28                                  PRONOUNS.
+
+stress being laid on the final syllable. The greater
+the stress and the more the voice rises into a falsetto,
+the greater is the distance denoted ; as—
+
+        Mtu uuya, that man there.
+        Mtu uuyāā, that man further off.
+      ' Mtu uuyāāā, that one still further away.
+
+  Often the demonstrative pronoun is doubled to
+denote a particular place or thing ; as—
+
+        Umama paapaa, you may stand just here.
+        Umama paayapaaya, you may stand just there.
+
+  The forms, “ It is I,” It is thou,” etc., are ex-
+pressed by using the syllable ni, preceded by the
+personal pronoun ; as—
+
+        Ninye ni, it is I.          Nithi ni, it is we.
+        Niwe ni, it is thou.        Inyui ni, it is you.
+        Miya ni, it is he.          Acho ni, it is they.
+
+  Niya uyu, that is he.     Tiya uyu, that is not he.
+  Nucho ! nucho ! there it is ! there it is !
+
+              RELATIVE PRONOUNS.
+
+  Apparently there is not a set of relative pro-
+nominal prefixes in-use, as in Swahili.
+  When the relative is the subject of the sentence,
+it is expressed by a simple statement ; as—
+
+  Mundu, anyenda, the man, he loves me ; the man
+who loves me.
+
+  Miti, yakajia mabeki  { the trees, they will bear fruit ;
+                        { the trees which will bear fruit.
+
+
+=== PDF PAGE 043 (Book p. 29) ===
+
+PRONOUNS.                                   29
+
+Mundu yunayatilie miti  { the man, he cut trees yester-
+  iyo, akauka choko     {   day ; he will come to-
+                        {   morrow.
+                        { the man who cut trees
+                        {   yesterday will come to-
+                        {   morrow.
+
+  When the relative is the object of the sentence,
+the proper objective prefix is used, both before and
+with the verb ; as—
+
+Andu a ninaaithiie      { the men, them, I fed them ;
+                        { the men whom I fed.
+Kimanda ki akakiiya     { the cake, it, they will eat it ;
+                        { the cake which they will
+                        {   eat.
+Miti i tukaitila choko  { the trees, them, we shall cut
+                        {   them to-morrow ;
+                        { the trees which we shall cut
+                        {   to-morrow.
+Kaindo ka ninakaonie    { the insect, it, I saw it yester-
+  iyo                   {   day.
+                        { the insect which I saw
+                        {   yesterday.
+Andu a manaaonie iyo,   { the men, them, they saw them
+  adikauka choko        {   yesterday ; they will not
+                        {   come to-morrow ;
+                        { the men whom they saw
+                        {   yesterday will not come
+                        {   to-morrow.
+
+              INTERROGATIVE PRONOUNS.
+
+Some few interrogatives are not variable ; as—
+
+        Who ? nu ?            What ? chau ?
+        When ? ndi ?          Where ? naku ?
+
+
+=== PDF PAGE 044 (Book p. 30) ===
+
+30                                  PRONOUNS.
+
+  Some of these interrogatives take the variable
+pronominal prefix referring to the person or thing
+with which the interrogative is connected ; as—
+
+      Mundu yuau ? what man ?
+      Kintu kii ni chau ? what is this thing ?
+
+
+=== PDF PAGE 045 (Book p. 31) ===
+
+( 31 )
+
+VERBS.
+
+ALL Kamba verbs end in -a ; as—
+
+    Ku-bigila, to follow.
+    Ku-waa, to divide.
+
+  The simplest form of the verb is used in Kamba,
+as in Swahili and English, for the second person
+singular of the imperative ; as—
+
+    Bigila, follow ;          Waa, divide.
+    Ananga, destroy ;         Ukila, depart.
+    Tala, count ;             Kunika, cover.
+
+  The second person plural is formed by suffixing
+the vowel -i to the form of the second person
+singular ; as—
+
+    Uka, come ;               Ukai, come ye.
+    Bigilai, follow ye ;      Ukilai, depart ye.
+    Talai, count ye ;         Kunikai, cover ye.
+
+  There is a negative as well as an affirmative con-
+jugation, in both of which the persons and tenses are
+denoted by prefixes.
+  The various prefixes, together with the verb, form,
+
+
+=== PDF PAGE 046 (Book p. 32) ===
+
+32                                  VERBS.
+
+generally, one word only, and these when examined
+separately denote the person, number, tense, mood,
+subject, and object.
+
+              INDICATIVE MOOD.
+
+                Present Tense.
+
+  This tense answers to the common English present
+tense, as I go, I hunt, I love, etc. It is formed by
+prefixing -a- to the verb. This is preceded by the
+subjective case of the personal pronoun ; as—
+
+              N-a-thaim-a, I hunt.
+
+Class.          Sing.                           Plur.
+    I. N-a-thaim-a, I hunt.         Tw-a-thaim-a, we hunt.
+       W-a-thaim-a, thou            Mw-a-thaim-a, you
+         huntest.                      hunt.
+       Y-a-thaim-a-, he or she      M-a-thaim-a, they
+         hunts.                        hunt.
+   II. W-a-end-a     \              Y-a-end-a     \
+  III. Y-a-end-a      |             Z-a-end-a      |
+   IV. Ch-a-end-a     |             Y-a-end-a      |
+    V. Y-a-end-a      |  it likes.  G-a-end-a      | they
+   VI. W-a-end-a      |             Z-a-end-a      | like.
+  VII. K-a-end-a      |             Tw-a-end-a     |
+ VIII. W-a-end-a      |             W-a-end-a      |
+   IX. Kw-a-end-a    /              Kw-a-end-a    /
+
+            Present Imperfect Tense.
+
+  This tense is formed by prefixing the sign -ki- to
+the verb. It is also used as the English present
+participle.
+
+
+################################################################################
+# CHUNK: chunk_05_pages_047_055.txt
+################################################################################
+
+=== PDF PAGE 047 (Book p. 33) ===
+
+VERBS.                                     33
+
+Class.          Sing.                           Plur.
+    I. Ni-ki-thaim-a, I am          Tu-ki-thaim-a, we are
+         hunting.                      hunting.
+       U-ki-thaim-a, thou           M-ki-thaim-a, you are
+         wast hunting.                 hunting.
+       A-ki-thaim-a, he or she      Ma-ki-thaim-a, they
+         was hunting.                  are hunting.
+   II. U-ki-end-a    \              I-ki-end-a    \
+  III. I-ki-end-a     |             Zi-ki-end-a    |
+   IV. Ki-ki-end-a    |             I-ki-end-a     |
+    V. I-ki-end-a     |   it is     Ga-ki-end-a    | they
+   VI. U-ki-end-a     |  liking.    Zi-ki-end-a    |  are
+  VII. Ka-ki-end-a    |             Tu-ki-end-a    | liking.
+ VIII. Wa-ki-end-a    |             Wa-ki-end-a    |
+   IX. Ku-ki-end-a   /              Ku-ki-end-a   /
+
+
+Past Imperfect Tense.
+
+The past imperfect is formed by prefixing the
+sign -ku- to the verb.
+
+Class.          Sing.                           Plur.
+    I. N-gu-thaim-a, I was          Tu-ku-thaim-a, we
+         hunting.                      were hunting.
+       U-ku-thaim-a, thou           M-ku-thaim-a, you
+         wast hunting.                 were hunting.
+       A-ku-thaim-a, he or she      M-ku-thaim-a, they
+         was hunting.                  were hunting.
+   II. U-ku-end-a    \              I-kw-end-a    \
+  III. I-kw-end-a     |             Zi-kw-end-a    |
+   IV. Ki-kw-end-a    |             I-kw-end-a     |
+    V. I-kw-end-a     |   it was    Ga-kw-end-a    | they
+   VI. U-kw-end-a     |  liking.    Zi-kw-end-a    | were
+  VII. Ka-kw-end-a    |             Tu-kw-end-a    | liking.
+ VIII. Wa-ku-end-a    |             Wa-ku-end-a    |
+   IX. Ku-kw-end-a   /              Ku-kw-end-a   /
+
+KAMBA.                                     D
+
+
+=== PDF PAGE 048 (Book p. 34) ===
+
+34                                         VERBS.
+
+Present Perfect Tense.
+
+This tense is formed by changing the final -a of
+the verb into -iti, and prefixing the personal
+pronoun.
+
+Class.          Sing.                           Plur.
+    I. Ni-thaim-iti, I have         Tu-thaim-iti, we have
+         hunted.                       hunted.
+       U-thaim-iti, thou hast       Mu-thaim-iti, you have
+         hunted.                       hunted.
+       Yu-thaim-iti, he or she      Ma-thaim-iti, they
+         has hunted.                   have hunted.
+   II. U-thaim-iti   \              I-thaim-iti   \
+  III. I-thaim-iti    |             Zi thaim-iti   |
+   IV. Ki-thaim-iti   |             I-thaim-iti    |
+    V. I-thaim iti    |   it has    Ga-thaim-iti   | they
+   VI. U-thaim-iti    |  hunted.    Zi-thaim-iti   | have
+  VII. Ka-thaim-iti   |             Tu-thaim-iti   | hunted.
+ VIII. Wa-thaim-iti   |             Wa-thaim-iti   |
+   IX. Ku-thaim-iti  /              Ku-thaim-iti  /
+
+Or with the verb kwenda, to like or love.
+
+   II. U-wend-iti    \              I-wend-iti    \
+  III. I-wend-iti     |             Zi-wend-iti    |
+   IV. Ki-wend-iti    |             I-wend-iti     |
+    V. I wend-iti     |   it has    Ga-wend-iti    | they
+   VI. U-wend-iti     |   liked.    Zi-wend-iti    | have
+  VII. Ka-wend-iti    |             Tu-wend-iti    | loved.
+ VIII. Wa-wend-iti    |             Wa-wend-iti    |
+   IX. Ku-wend iti   /              Ku-wend-iti   /
+
+
+Past Perfect Tense.
+
+This tense is formed by changing the final -a of
+the verb into -ie, and prefixing the tense sign -na.
+
+
+=== PDF PAGE 049 (Book p. 35) ===
+
+VERBS.                                     35
+
+Class.          Sing.                           Plur.
+    I. Ni-na-thaim-ie, I            Tu-na-thaim-ie, we
+         hunted.                       hunted.
+       U-na-thaim-ie, thou          Mu-na-thaim-ie, ye
+         hunted.                       hunted.
+       Yu-na-thaim-ie, he or        Ma-na-thaim-ie, they
+         she hunted.                   hunted.
+   II. U-na-end-ie   \              I-na-end-ie   \
+  III. I-na-end-ie    |             Zi-na-end-ie   |
+   IV. Ki-na-end-ie   |             I-na-end-ie    |
+    V. I-na-end-ie    |     it      Ga-na-end-ie   | they
+   VI. U-na-end-ie    |   liked.    Zi-na-end-ie   | liked.
+  VII. Ka-na-end-ie   |             Tu-na-end-ie   |
+ VIII. Wa-na-end-ie   |             Wa-na-end-ie   |
+   IX. Ku-na-end-ie  /              Ku-na-end-ie  /
+
+
+Future Tense.
+
+This tense is formed by prefixing the sign -ka- to
+the simple form of the verb.
+
+Class.          Sing.                           Plur.
+    I. N-ga-thaim-a, I shall        Tu-ka-thaim-a, we
+         hunt.                         shall hunt.
+       U-ka-thaim-a, thou           Mu-ka-thaim-a, ye will
+         wilt hunt.                    hunt.
+       A-ka-thaim-a, he or          Ma-ka-thaim-a, they
+         she will hunt.                will hunt.
+   II. U-ka-end-a    \              I-ka-end-a    \
+  III. I-ka-end-a     |             Zi-ka-end-a    |
+   IV. Ki-ka-end-a    |             I-ka-end-a     |
+    V. I-ka-end-a     |  it will    Ga-ka-end-a    | they
+   VI. U-ka-end-a     |   like.     Zi-ka-end-a    | will
+  VII. Ka-ka-end-a    |             Tu-ka-end-a    | like.
+ VIII. Wa-ka-end-a    |             Wa-ka-end-u    |
+   IX. Ku-ka-end-a   /              Ku-ka-end-a   /
+
+
+=== PDF PAGE 050 (Book p. 36) ===
+
+36                                         VERBS.
+
+IMPERATIVE MOOD.
+
+The simplest form of the verb is used for the
+imperative. The plural is formed by changing the
+final -a into -ai ; as—
+
+    Enda, love thou.                Endai, love ye.
+    Thaim-a, hunt thou.             Thaim-ai, hunt ye.
+    Thek-a, laugh thou.             Thek-ai, laugh ye.
+    Iekan-a, forgive thou.          Iekan-ai, forgive ye.
+
+
+SUBJUNCTIVE MOOD.
+
+This tense is formed by changing the final -a of
+the verb into -e.
+
+Class.          Sing.                           Plur.
+    I. Ni-thaim-e, that I may       Tu-thaim-e, that we
+         hunt.                         may hunt.
+       U-thaim-e, that you          Mu-thaim-e, that ye
+         may hunt.                     may hunt.
+       Yu-thaim-e, that he or       Ma-thaim-e, that they
+         she may hunt.                 may hunt.
+   II. U-thaim-e     \              I-thaim-e     \
+  III. I-thaim-e      |             Zi-thaim-e     |
+   IV. Ki-thaim-e     |             I-thaim-e      |
+    V. I-thaim-e      |  that it    Ga-thaim-e     | that
+   VI. U-thaim-e      |    may      Zi-thaim e     | they
+  VII. Ka-thaim-e     |   hunt.     Tu-thaim-e     | may
+ VIII. Wa-thaim-e     |             Wa-thaim-e     | hunt.
+   IX. Ku-thaim-e    /              Ku-thaim-e    /
+
+These forms of the subjunctive mood are also used
+as imperatives, and are the only forms that can be
+so used in first and third persons.
+
+
+=== PDF PAGE 051 (Book p. 37) ===
+
+VERBS.                                     37
+
+When used with an interrogative, it asks, "Am I
+to," or "Is he to," etc. ; as—
+
+    Ni-iy-e ndi ? when am I to eat ?
+    Yu-chok-e ndi ? when is he to return ?
+
+The subjunctive is the proper form to express a
+purpose or object, and must be often used where in
+English an imperative is employed ; as—
+    U-thumw-e u-chok-e miduki, rest, that you may
+return quickly.
+
+
+INFINITIVE MOOD.
+
+The infinitive is formed by prefixing the syllable
+ku- to the simple form of the verb ; as—
+
+    Ku-thi, to go.                  Kw-enda, to love.
+    Ku-tia, to forsake.             Ku-kuna, to flog.
+
+The -u- before a, e, i, becomes -w- ; as in—
+
+    Kw-enda, to love.               Kw-iekana, to forgive.
+    Kw-ina, to dance.               Kw-ausia, to go astray.
+
+The infinitive is used as a noun to denote the
+action of the verb ; as—
+
+    Kwenda, loving.                 Kuwaa, dividing.
+
+—
+
+
+NEGATIVE TENSES.
+
+Present Tense.
+
+All Kamba verbs may be used with negative pre-
+fixes. These reverse the forms of the affirmative
+verbs.
+
+
+=== PDF PAGE 052 (Book p. 38) ===
+
+38                                         VERBS.
+
+The negative present is formed by prefixing the
+syllable -di- to the simple form of the verb.
+
+Class.          Sing.                           Plur.
+    I. N-di-thaim-a, I do not       Tu-di-thaim-a, we do
+         hunt.                         not hunt.
+       U-di-thaim-a, thou dost      Mu-di-thaim-a, ye do
+         not hunt.                     not hunt.
+       A-di-thaim-a, he or she      Ma-di-thaim-a, they do
+         does not hunt.                not hunt.
+   II. U-di-thaim-a  \              I-di-thaim-a  \
+  III. I-di-thaim-a   |             Zi di-thaim-a  |
+   IV. Ki-di-thaim-a  |             I-di-thaim-a   |
+    V. I-di-thaim-a   |  it does    Ga-di-thaim-a  | they
+   VI. U-di-thaim-a   |    not      Zi-di-thaim-a  |  do
+  VII. Ka-di-thaim-a  |   hunt.     Tu-di-thaim-a  | not
+ VIII. Wa-di-thaim-a  |             Wa-di-thaim-a  | hunt.
+   IX. Ku-di-thaim-a /              Ku-di-thaim-a /
+
+
+Negative Past Tense.
+
+This tense is made by placing the tense sign -na-
+between the negative prefix and the verb.
+
+Class.          Sing.                           Plur.
+    I. N-di-na-thaim-a, I did       Tu-di-na-thaim-a, we
+         not hunt.                     did not hunt.
+       U-di-na-thaim-a, thou        Mu-di-na-thaim-a, ye
+         didst not hunt.               did not hunt.
+       A-di-na-thaim-a, he or       Ma-di-na-thaim-a, they
+         she did not hunt.             did not hunt.
+   II. U-di-na-end-a \              I-di-na-end-a \
+  III. I-di-na-end-a  |             Zi-di-na-end-a |
+   IV. Ki-di-na-end-a |             I-di-na-end-a  |
+    V. I-di-na-end-a  |   it did    Ga-di-na-end-a | they
+   VI. U-di-na-end-a  |    not      Zi-di-na-end-a | did
+  VII. Ka-di-na end-a |   like.     Tu-di-na-end-a | not
+ VIII. Wa-di-na-end-a |             Wa-di-na-end-a | like.
+   IX. Ku-di-na-end-a/              Ku-di-na-end-a/
+
+
+=== PDF PAGE 053 (Book p. 39) ===
+
+VERBS.                                     39
+
+Negative Future Tense.
+
+This tense is formed by placing the tense sign -ka-
+between the negative prefix and the verb.
+
+Class.          Sing.                           Plur.
+    I. N-di-ka-thaim-a, I shall     Tu-di-ka-thaim-a, we
+         not hunt.                     shall not hunt.
+       U-di ka-thaim-a, thou        Mu-di-ka-thaim-a, ye
+         shalt not hunt.               shall not hunt.
+       A-di-ka-thaim-a, he or       Ma-di-ka-thaim-a, they
+         she shall not hunt.           shall not hunt.
+   II. U-di-ka-end-a \              I-di-ka-end-a \
+  III. I-di-ka-end-a  |             Zi-di-ka-end-a |
+   IV. Ki-di-ka-end-a |             I-di-ka-end-a  |
+    V. I-di-ka-end-a  |  it will    Ga-di-ka-end-a | they
+   VI. U-di-ka-end-a  |    not      Zi-di-ka-end-a | will
+  VII. Ka-di-ka-end-a |   like.     Tu-di-ka-end-a | not
+ VIII. Wa-di-ka-en-da |             Wa-di-ka-end-a | like.
+   IX. Ku-di-ka-end-a /             Ku-di-ka-end-a /
+
+
+The Negative Imperative
+
+Is formed by using the particle di before the sim-
+plest form of the verb ; as—
+
+    Di thaim-a, hunt not.    Di-thaim-ai, hunt ye not.
+
+
+The Negative Subjunctive
+
+Is formed by prefixing the negative sign -di- to the
+subjunctive form of the verb ; as—
+
+    M-di-thaim-e, that I may not hunt.
+    Tu-di-thaim-e, that we may not hunt.
+
+
+=== PDF PAGE 054 (Book p. 40) ===
+
+( 40 )
+
+ADVERBS, PREPOSITIONS, AND CON-
+JUNCTIONS.
+
+ADVERBS.
+
+THESE follow the words they qualify, and are often
+used as enclitics ; as—
+
+    Ku-kuna muno, to flog severely.
+    Midukímno, very fast.
+
+Adverbs are formed by using the preposition kwa
+with infinitives and substantives ; as—
+
+    Kwa-ku-manda, searchingly.
+    Kwa-ku-thauka, playfully.
+    Kwa miuo, sweetly.
+    Kwa uthuku, badly.
+
+
+PREPOSITIONS.
+
+As in Swahili, there are but few prepositions in
+the Kamba language.
+
+    Na and ni, and.                 Y-a, of.
+    Kwa, for.                       Kwa, from.
+    Ku uma, since.
+
+
+CONJUNCTIONS.
+
+There are a few words used as conjunctions ; as—
+
+    Na, and.                        Ndi, but.
+
+The conjunction is often expressed in the verb
+used, especially by the subjunctive.
+
+________________________________________
+
+PRINTED BY WILLIAM CLOWES AND SONS, LIMITED,
+LONDON AND BECCLES.
+
+
+=== PDF PAGE 055 ===
+
+[Blank / Endpaper]

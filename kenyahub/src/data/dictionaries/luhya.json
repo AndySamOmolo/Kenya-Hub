@@ -12,9 +12,9 @@
     "Busia"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.1.0",
+  "dictionaryVersion": "1.2.0",
   "lastUpdated": "2026-10",
-  "contributorNote": "Compiled from 'A First Course in Luyia Grammar' (G. Donohew, Kima) and 'A First Luyia Grammar' (L. L. Appleby, 1961, East African Literature Bureau) with standard Luyia cross-dialect orthography. Enriched with authentic Oluluyia / Olushiwanga vocabulary and grammatical entries systematically extracted from the 'Wanga-English Dictionary' by Alfred Anangwe & Michael R. Marlo (2008).",
+  "contributorNote": "Compiled from 'A First Course in Luyia Grammar' (G. Donohew, Kima) and 'A First Luyia Grammar' (L. L. Appleby, 1961, East African Literature Bureau) with standard Luyia cross-dialect orthography. Enriched with authentic Oluluyia / Olushiwanga vocabulary from the 'Wanga-English Dictionary' (Alfred Anangwe & Michael R. Marlo, 2008) and comprehensive Lubukusu dialect vocabulary from the 'Bukusu-English Dictionary' (Michael Marlo, Adrian Sifuna & Aggrey Wasike, 2008).",
   "categories": [
     {
       "id": "greetings",
@@ -2133,6 +2133,405 @@
           "translation": "Omulonji",
           "pronunciation": "oh-moo-lohn-jee",
           "context": "(n., cl. 1, pl. abalonji) Traditional artisan molding earthenware pots and water jars",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "bukusu-greetings",
+      "name": "Greetings & Social Etiquette (Lubukusu)",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Good morning!",
+          "translation": "Bwaasyeele!",
+          "pronunciation": "bwah-syeh-leh",
+          "context": "[Bukusu] Morning greeting at dawn (around 5 a.m.) recorded in Marlo et al. (2008)",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening!",
+          "translation": "Ke.akoloba!",
+          "pronunciation": "keh-ah-koh-loh-bah",
+          "context": "[Bukusu] Evening salutation as dusk approaches",
+          "audioFile": null
+        },
+        {
+          "english": "How are things? / How are you?",
+          "translation": "Karyé?",
+          "pronunciation": "kah-ryeh",
+          "context": "[Bukusu] Conversational greeting inquiry: 'How is it?'",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Oryo!",
+          "pronunciation": "oh-ryoh",
+          "context": "[Bukusu] Universal expression of thanks and gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Oryo muno!",
+          "pronunciation": "oh-ryoh moo-noh",
+          "context": "[Bukusu] Deep heartfelt appreciation",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye / May you be protected",
+          "translation": "Ákhuliinde!",
+          "pronunciation": "ah-khoo-leen-deh",
+          "context": "[Bukusu] Protective parting blessing: 'May He keep you'",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep well / Stay safely",
+          "translation": "Ókóne.o!",
+          "pronunciation": "oh-koh-neh-oh",
+          "context": "[Bukusu] Parting blessing used day or night ('Sleep/rest well there')",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / Tranquility",
+          "translation": "Kumuleembe",
+          "pronunciation": "koo-moo-lehm-beh",
+          "context": "[Bukusu] State of peace, blessing, and communal concord",
+          "audioFile": null
+        },
+        {
+          "english": "Affection / Goodwill / Respect",
+          "translation": "Luukoosi",
+          "pronunciation": "loo-oh-koh-see",
+          "context": "[Bukusu] Dignity, grace, fellowship, and mutual goodwill",
+          "audioFile": null
+        },
+        {
+          "english": "What is the news?",
+          "translation": "Baboola si?",
+          "pronunciation": "bah-boh-lah see",
+          "context": "[Bukusu] Lit. 'What are they saying?' — news inquiry",
+          "audioFile": null
+        },
+        {
+          "english": "Truly / Exactly",
+          "translation": "Ábweene",
+          "pronunciation": "ah-bweh-neh",
+          "context": "[Bukusu] Plainly, correctly, exactly, truly",
+          "audioFile": null
+        },
+        {
+          "english": "In broad daylight",
+          "translation": "Á búlafu",
+          "pronunciation": "ah boo-lah-foo",
+          "context": "[Bukusu] In the open / in plain sight",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "bukusu-people-kinship",
+      "name": "People, Kinship & Community (Lubukusu)",
+      "icon": "👥",
+      "entries": [
+        {
+          "english": "Bukusu people",
+          "translation": "Báábukusu",
+          "pronunciation": "bah-ah-boo-koo-soo",
+          "context": "[Bukusu] (n., cl. 2, sing. Omubukusu) The Bukusu people of Mount Elgon and Bungoma",
+          "audioFile": null
+        },
+        {
+          "english": "People / Humans",
+          "translation": "Babaandu",
+          "pronunciation": "bah-bah-ahn-doo",
+          "context": "[Bukusu] (n., cl. 2, sing. Omwaandu) Human beings / people",
+          "audioFile": null
+        },
+        {
+          "english": "Elders / Seniors",
+          "translation": "Báákhulu",
+          "pronunciation": "bah-ah-khoo-loo",
+          "context": "[Bukusu] (n., cl. 2, sing. Omukhulu) Respected community leaders and elders",
+          "audioFile": null
+        },
+        {
+          "english": "Children",
+          "translation": "Bábaana",
+          "pronunciation": "bah-bah-ah-nah",
+          "context": "[Bukusu] (n., cl. 2, sing. Omwaana) Children / young ones",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfathers / Forefathers",
+          "translation": "Bákúúka",
+          "pronunciation": "bah-koo-oo-kah",
+          "context": "[Bukusu] (n., cl. 2, sing. Kúúka) Ancestors and grandfathers",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmothers",
+          "translation": "Bákuukhu",
+          "pronunciation": "bah-koo-oo-khoo",
+          "context": "[Bukusu] (n., cl. 2, sing. Kuukhu) Maternal or paternal grandmothers",
+          "audioFile": null
+        },
+        {
+          "english": "Mothers",
+          "translation": "Bámaayi",
+          "pronunciation": "bah-mah-ah-yee",
+          "context": "[Bukusu] (n., cl. 2, sing. Maayi) Mothers and maternal aunts",
+          "audioFile": null
+        },
+        {
+          "english": "Fathers",
+          "translation": "Bápaapa",
+          "pronunciation": "bah-pah-ah-pah",
+          "context": "[Bukusu] (n., cl. 2, sing. Paapa) Fathers and paternal uncles",
+          "audioFile": null
+        },
+        {
+          "english": "Women / Wives",
+          "translation": "Báakhasi",
+          "pronunciation": "bah-ah-khah-see",
+          "context": "[Bukusu] (n., cl. 2, sing. Omukhaasi) Women / wives",
+          "audioFile": null
+        },
+        {
+          "english": "Husbands",
+          "translation": "Báseecha",
+          "pronunciation": "bah-seh-eh-chah",
+          "context": "[Bukusu] (n., cl. 2, sing. Omuseecha) Married men / husbands",
+          "audioFile": null
+        },
+        {
+          "english": "Brothers",
+          "translation": "Báwaanda",
+          "pronunciation": "bah-wah-ahn-dah",
+          "context": "[Bukusu] (n., cl. 2) Male siblings or cousins",
+          "audioFile": null
+        },
+        {
+          "english": "Sisters",
+          "translation": "Báyaaya",
+          "pronunciation": "bah-yah-ah-yah",
+          "context": "[Bukusu] (n., cl. 2) Female siblings or cousins",
+          "audioFile": null
+        },
+        {
+          "english": "Family / Household",
+          "translation": "Bééngo",
+          "pronunciation": "beh-eh-ngoh",
+          "context": "[Bukusu] Those of the home / household members",
+          "audioFile": null
+        },
+        {
+          "english": "Initiates (Circumcision cohort)",
+          "translation": "Báafulu / Béémwiikóómbe",
+          "pronunciation": "bah-ah-foo-loo",
+          "context": "[Bukusu] Youth undergoing the sacred Bukusu biennial rite of passage",
+          "audioFile": null
+        },
+        {
+          "english": "Peacemaker / Mediator",
+          "translation": "Omukaambisi",
+          "pronunciation": "oh-moo-kah-ahm-bee-see",
+          "context": "[Bukusu] (n., cl. 1, pl. baakaambisi) Go-between, reconciler, and comforter",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "bukusu-pastoral-nature",
+      "name": "Livestock, Food & Nature (Lubukusu)",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Cow / Bull",
+          "translation": "Eekhaafu",
+          "pronunciation": "eh-eh-khah-ah-foo",
+          "context": "[Bukusu] (n., cl. 9, pl. chiikhaafu) Bovine animal; cattle herd",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle / Cows",
+          "translation": "Chiikhaafu",
+          "pronunciation": "chee-ee-khah-ah-foo",
+          "context": "[Bukusu] (n., cl. 10) Livestock herd",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Eembusi",
+          "pronunciation": "ehm-boo-see",
+          "context": "[Bukusu] (n., cl. 9, pl. chiimbusi) Female or male goat",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Liikheese",
+          "pronunciation": "lee-ee-kheh-eh-seh",
+          "context": "[Bukusu] (n., cl. 5, pl. kamakheese) Sheep / ewe",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Kameechi",
+          "pronunciation": "kah-meh-eh-chee",
+          "context": "[Bukusu] (n., cl. 6) Water for domestic use or livestock",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Kamabeele",
+          "pronunciation": "kah-mah-beh-eh-leh",
+          "context": "[Bukusu] (n., cl. 6) Fresh cow milk",
+          "audioFile": null
+        },
+        {
+          "english": "Homestead / Kraal",
+          "translation": "Liitaala",
+          "pronunciation": "lee-ee-tah-ah-lah",
+          "context": "[Bukusu] (n., cl. 5) Village, family kraal enclosure, and cattle compound",
+          "audioFile": null
+        },
+        {
+          "english": "House / Dwelling",
+          "translation": "Eenju",
+          "pronunciation": "eh-eh-n-joo",
+          "context": "[Bukusu] (n., cl. 9, pl. chiinju) Traditional family house",
+          "audioFile": null
+        },
+        {
+          "english": "Courtyard / Village green",
+          "translation": "Áluya / Áanje",
+          "pronunciation": "ah-loo-yah / ah-ahn-jeh",
+          "context": "[Bukusu] Central open meeting space of the homestead",
+          "audioFile": null
+        },
+        {
+          "english": "Sun / Daylight",
+          "translation": "Kumuuka",
+          "pronunciation": "koo-moo-oo-kah",
+          "context": "[Bukusu] (n., cl. 3) Sun, daytime brightness, sunshine",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "Kumweesi",
+          "pronunciation": "koo-mweh-eh-see",
+          "context": "[Bukusu] (n., cl. 3) Moon and calendar month",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Ifula",
+          "pronunciation": "ee-foo-lah",
+          "context": "[Bukusu] (n., cl. 9) Seasonal rainfall",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Kumuliro",
+          "pronunciation": "koo-moo-lee-roh",
+          "context": "[Bukusu] (n., cl. 3) Hearth fire / flames",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Ground",
+          "translation": "Áasi / Siloba",
+          "pronunciation": "ah-ah-see / see-loh-bah",
+          "context": "[Bukusu] Soil, earth, ground beneath",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "bukusu-actions",
+      "name": "Core Verbs & Actions (Lubukusu)",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To eat",
+          "translation": "Khúúlya",
+          "pronunciation": "khoo-oo-lyah",
+          "context": "[Bukusu] (v.) To consume food",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Khúúnywa",
+          "pronunciation": "khoo-oo-nywah",
+          "context": "[Bukusu] (v.) To drink water, milk, or beverage",
+          "audioFile": null
+        },
+        {
+          "english": "To walk / travel",
+          "translation": "Khuukeenda",
+          "pronunciation": "khoo-oo-kehn-dah",
+          "context": "[Bukusu] (v.) To journey, walk, or conduct oneself morally",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep / rest",
+          "translation": "Khuukona",
+          "pronunciation": "khoo-oo-koh-nah",
+          "context": "[Bukusu] (v.) To lie down, sleep, or rest",
+          "audioFile": null
+        },
+        {
+          "english": "To see / observe",
+          "translation": "Khuulola",
+          "pronunciation": "khoo-oo-loh-lah",
+          "context": "[Bukusu] (v.) To behold, look at, or witness",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / feel",
+          "translation": "Khuuulila",
+          "pronunciation": "khoo-oo-lee-lah",
+          "context": "[Bukusu] (v.) To perceive by ear or sense",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Khukhwiicha",
+          "pronunciation": "khoo-khwee-ee-chah",
+          "context": "[Bukusu] (v.) To arrive or approach",
+          "audioFile": null
+        },
+        {
+          "english": "To go out / emerge",
+          "translation": "Khúúrura",
+          "pronunciation": "khoo-oo-roo-rah",
+          "context": "[Bukusu] (v.) To depart, step outside, or appear (e.g. sun)",
+          "audioFile": null
+        },
+        {
+          "english": "To appreciate / praise",
+          "translation": "Khuusiima",
+          "pronunciation": "khoo-oo-see-ee-mah",
+          "context": "[Bukusu] (v.) To thank, cheer, or express happiness",
+          "audioFile": null
+        },
+        {
+          "english": "To build / construct",
+          "translation": "Khuuombakha",
+          "pronunciation": "khoo-oo-ohm-bah-khah",
+          "context": "[Bukusu] (v.) To erect a house or structure",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / declare",
+          "translation": "Khuuboola",
+          "pronunciation": "khoo-oo-boh-oh-lah",
+          "context": "[Bukusu] (v.) To utter words or state an opinion",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / farm",
+          "translation": "Khuulima",
+          "pronunciation": "khoo-oo-lee-mah",
+          "context": "[Bukusu] (v.) To till soil and grow crops",
           "audioFile": null
         }
       ]

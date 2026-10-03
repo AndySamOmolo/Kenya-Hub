@@ -14,8 +14,9 @@ export const LUHYA_CONFIG: LanguageConfig = {
   counties: ['Kakamega', 'Bungoma', 'Vihiga', 'Busia'],
   speakers: '6.8M',
   speechLocale: 'sw-KE',
-  description: 'A major Western Bantu language spoken across Western Kenya, featuring rich noun class morphology, verbal extensions, and vibrant proverbs.',
+  description: 'A major Western Bantu language spoken across Western Kenya, featuring rich noun class morphology, verbal extensions, and vibrant proverbs across 17+ varieties including Bukusu, Wanga, and Maragoli.',
   color: '#2FA463',
+  sources: ['luyia-grammar', 'wanga-english', 'bukusu-dictionary-marlo'],
 };
 
 export const LUHYA_UNITS: CourseUnit[] = [
@@ -30,7 +31,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         title: 'Greetings & Politeness',
         icon: 'Handshake',
         description: 'Learn universal greetings, daily salutations, and courtesy in Oluluyia.',
-        tips: "In Luhya culture, 'Mulembe' is the universal greeting meaning 'peace'. When greeting one person say 'Mulembe', and to multiple people say 'Milembe'. The question 'Oli orie?' ('How are you?') is answered with 'Endi bulayi' ('I am fine') or 'Ee, endi omulamu' ('Yes, I am healthy'). 'Bushieele!' literally announces that dawn has broken.",
+        tips: "In Luhya culture, 'Mulembe' is the universal greeting meaning 'peace'. When greeting one person say 'Mulembe', and to multiple people say 'Milembe'. The question 'Oli orie?' ('How are you?') is answered with 'Endi bulayi' ('I am fine') or 'Ee, endi omulamu' ('Yes, I am healthy'). 'Bushieele!' (in Bukusu: 'Bwaasyeele!') announces dawn, and thanks is 'Orio muno' (in Bukusu: 'Oryo muno').",
         culturalNote: "Greetings in Western Kenya are thorough and warm. Rushing a greeting without asking about family and health is considered impolite. Elders are greeted with hands clasped or a respectful bow.",
         words: [
           { target: 'Mulembe', source: 'Hello / Peace', pronunciation: 'moo-lehm-beh', hint: 'Universal greeting to one person (lit. "peace")', example: 'Mulembe, omwami! — Mulembe.' },

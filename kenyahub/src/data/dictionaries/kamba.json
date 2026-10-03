@@ -11,9 +11,9 @@
     "Kitui"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
+  "dictionaryVersion": "1.1.0",
   "lastUpdated": "2026-10",
-  "contributorNote": "Kamba (Kĩkamba) is a Bantu language spoken across Machakos, Makueni, and Kitui counties of Kenya. Vocabulary enriched with systematic comparative dialectal data (Ulu and Nganyawa dialects) from 'Vocabularies of the Kamba and Kikuyu Languages' by Hildegarde Hinde (Cambridge University Press, 1904) and standard Kĩkamba linguistic references.",
+  "contributorNote": "Kamba (Kĩkamba) is a Bantu language spoken across Machakos, Makueni, and Kitui counties of Kenya. Vocabulary enriched with systematic comparative dialectal data from 'Grammar of the Kamba Language' by J.T. Last (CMS, 1885), 'Vocabularies of the Kamba and Kikuyu Languages' by Hildegarde Hinde (Cambridge University Press, 1904), and standard Kĩkamba linguistic references.",
   "categories": [
     {
       "id": "greetings",
@@ -326,6 +326,27 @@
           "translation": "Andũ",
           "pronunciation": "ahn-doo",
           "context": "Singular: Mũndũ (a human being)",
+          "audioFile": null
+        },
+        {
+          "english": "Judge / Arbitrator",
+          "translation": "Mũtanya",
+          "pronunciation": "moo-tahn-yah",
+          "context": "Plural: Atanya. Historical judicial council arbitrator recorded by J.T. Last (1885)",
+          "audioFile": null
+        },
+        {
+          "english": "Guide / Caravan leader",
+          "translation": "Mũtongoi",
+          "pronunciation": "moo-toh-ngoh-ee",
+          "context": "Plural: Atongoi. Pathfinder or caravan leader recorded by J.T. Last (1885)",
+          "audioFile": null
+        },
+        {
+          "english": "Farmer / Agriculturist",
+          "translation": "Mwĩmi",
+          "pronunciation": "mwee-mee",
+          "context": "Plural: Aimi. Cultivator of the land recorded by J.T. Last (1885): mwimi / aimi",
           "audioFile": null
         }
       ]
@@ -1125,6 +1146,34 @@
           "pronunciation": "koo-thahm-bah",
           "context": "Hinde: kuthamba",
           "audioFile": null
+        },
+        {
+          "english": "To laugh",
+          "translation": "Kũtheka",
+          "pronunciation": "koo-theh-kah",
+          "context": "Recorded by J.T. Last (1885): ku-theka; Hinde (1904): gutheka",
+          "audioFile": null
+        },
+        {
+          "english": "To forgive / pardon",
+          "translation": "Kwĩekana",
+          "pronunciation": "kwee-eh-kah-nah",
+          "context": "Recorded by J.T. Last (1885): kw-iekana",
+          "audioFile": null
+        },
+        {
+          "english": "To surpass / excel",
+          "translation": "Kũkila",
+          "pronunciation": "koo-kee-lah",
+          "context": "Auxiliary comparative verb recorded by J.T. Last (1885): ku-kila",
+          "audioFile": null
+        },
+        {
+          "english": "To hunt / track game",
+          "translation": "Kũthaima",
+          "pronunciation": "koo-thah-ee-mah",
+          "context": "Recorded by J.T. Last (1885): ku-thaima",
+          "audioFile": null
         }
       ]
     },
@@ -1257,6 +1306,27 @@
           "translation": "Kũtĩ ũthũku",
           "pronunciation": "koo-tee oo-thoo-koo",
           "context": "Literally 'there is no evil / trouble'",
+          "audioFile": null
+        },
+        {
+          "english": "Myself",
+          "translation": "Ng'o yakwa",
+          "pronunciation": "ngoh yah-kwah",
+          "context": "Literally 'my heart' — classical 1885 reflexive recorded by J.T. Last",
+          "audioFile": null
+        },
+        {
+          "english": "Ourselves",
+          "translation": "Ng'o sitũ",
+          "pronunciation": "ngoh see-too",
+          "context": "Literally 'our hearts' — collective reflexive recorded by J.T. Last (1885)",
+          "audioFile": null
+        },
+        {
+          "english": "Peacefully / Sweetly",
+          "translation": "Kwa mũuo",
+          "pronunciation": "kwah moo-oo-oh",
+          "context": "Manner adverb for peaceful action recorded by J.T. Last (1885)",
           "audioFile": null
         }
       ]

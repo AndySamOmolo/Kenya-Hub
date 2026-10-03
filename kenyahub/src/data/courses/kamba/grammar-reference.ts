@@ -1,7 +1,7 @@
 // ============================================================
 // Kamba (Kĩkamba) Grammar Reference Guide
-// Based on "Vocabularies of the Kamba and Kikuyu Languages"
-// by Hildegarde Hinde (Cambridge University Press, 1904)
+// Based on "Grammar of the Kamba Language" by J.T. Last (CMS, 1885),
+// "Vocabularies of the Kamba and Kikuyu Languages" by Hildegarde Hinde (1904),
 // and "Bantu Beliefs and Magic" by C.W. Hobley (1922).
 // ============================================================
 
@@ -18,7 +18,7 @@ export const KAMBA_GRAMMAR_SECTIONS: KambaGrammarSection[] = [
     id: 'kamba-phonology-lenition',
     title: 'Phonology, Intervocalic Lenition & R-Loss',
     summary: 'Kĩkamba is distinguished among Central Kenya Bantu languages by the widespread loss of Proto-Bantu *p, *t, *k in intervocalic positions and the complete absence of the rhotic /r/.',
-    content: `Hildegarde Hinde (1904) highlighted key phonological contrasts between Kĩkamba and neighboring Gĩkũyũ:
+    content: `Hildegarde Hinde (1904) and J.T. Last (1885) highlighted key phonological contrasts between Kĩkamba and neighboring Gĩkũyũ:
 1. **Absence of /r/**:
    - Where Gĩkũyũ and other Bantu languages preserve an 'r', Kĩkamba typically elides it completely or substitutes a lateral /l/ or glide /y/:
    - Gĩkũyũ *kũrĩma* (to farm) → Kĩkamba *kũĩma*.
@@ -102,6 +102,30 @@ Example negatives:
       { kamba: 'Nĩngwenda kũthi', english: 'I want to go', explanation: 'Assertive nĩ- with 1st person prefix' },
       { kamba: 'Ndĩsĩ ũvoo ũsu', english: 'I do not know that matter', explanation: 'Negative 1st person prefix ndĩ-' },
       { kamba: 'Nĩweethĩwa nzeo', english: 'It was good', explanation: 'Past affirmative construction' }
+    ]
+  },
+  {
+    id: 'kamba-historical-last',
+    title: '1885 Historical Grammar: Reflexives of the Heart ("Ng\'o") & Surpassing Comparison',
+    summary: 'J.T. Last\'s 1885 grammar records unique pre-colonial grammatical structures, including the metaphorical use of "ng\'o" (heart) for reflexives and "ku-kila" for comparative degrees.',
+    content: `J.T. Last of the Church Missionary Society published the first standalone grammatical treatise on Kamba in 1885, capturing several classical morphological constructions:
+1. **Reflexives of the Heart (*Ng\'o*)**:
+   - In 19th-century Kĩkamba, reflexive identity ("myself", "ourselves") was formed using the substantive *ng\'o* (heart) with possessives:
+   - *Ng\'o yakwa* = "My heart" → "Myself"
+   - *Ng\'o zetu* = "Our hearts" → "Ourselves"
+   - Alongside *mwēnyi* (himself/herself) and *aēnyi* (themselves).
+2. **Comparison by Surpassing (*Ku-kila*)**:
+   - Rather than comparative inflections, Kamba expresses degree through the verb *ku-kila* (to surpass):
+   - *Mundu uyu mucheo, akilite uiya* = "This man is good, he surpasses that one in goodness (he is better)."
+   - *Mundu yuyu mucheo, kuakila andu aondi* = "This man is good, surpassing all men (he is the best man)."
+3. **Infix Pronominal Concord**:
+   - Object concords are inserted directly before the verb stem:
+   - *-ni-* (me), *-ku-* (thee), *-mu-* (him/her), *-tu-* (us), *-a-* (them).
+   - Example: *Yu-ni-wenda* (He loves me), *Ni-ka-ku-taa* (I will sell/deliver to you).`,
+    examples: [
+      { kamba: 'Ng\'o yakwa', english: 'Myself (lit. my heart)', explanation: 'Classical 1885 reflexive construction' },
+      { kamba: 'Mundu akilite ucheo', english: 'A man surpassing in goodness (the best man)', explanation: 'Superlative with auxiliary ku-kila' },
+      { kamba: 'Yu-ni-wenda', english: 'He loves me', explanation: 'Subjective yu- + objective infix -ni- + verb stem wenda' }
     ]
   }
 ];

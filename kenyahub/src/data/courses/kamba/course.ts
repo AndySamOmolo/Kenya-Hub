@@ -1,7 +1,8 @@
 // ============================================================
 // Kamba (Kĩkamba) Language Course Configuration & Units
-// Based on "Vocabularies of the Kamba and Kikuyu Languages"
-// by Hildegarde Hinde (Cambridge University Press, 1904)
+// Based on "Grammar of the Kamba Language" by J.T. Last (CMS, 1885),
+// "Vocabularies of the Kamba and Kikuyu Languages"
+// by Hildegarde Hinde (Cambridge University Press, 1904),
 // and "Bantu Beliefs and Magic" by C.W. Hobley (1922).
 // ============================================================
 
@@ -17,6 +18,7 @@ export const KAMBA_CONFIG: LanguageConfig = {
   speechLocale: 'sw-KE',
   description: 'An Eastern Bantu language spoken by the Akamba community in south-central Kenya, celebrated for wood carving, music, trade history, and rich proverbial wisdom.',
   color: '#FF9800',
+  sources: ['kamba-grammar-last', 'kamba-kikuyu-vocabularies', 'bantu-beliefs'],
 };
 
 export const KAMBA_UNITS: CourseUnit[] = [

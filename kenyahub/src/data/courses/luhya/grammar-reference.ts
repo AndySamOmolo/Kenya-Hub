@@ -1,7 +1,8 @@
 // ============================================================
 // Luhya (Oluluhya / Oluluyia) Grammar Reference Guide
-// Based on "A First Luyia Grammar" by L.L. Appleby (Eagle Press, 1961)
-// and "Wanga-English Dictionary" by Alfred Anangwe & Michael R. Marlo (2008).
+// Based on "A First Luyia Grammar" by L.L. Appleby (Eagle Press, 1961),
+// "Wanga-English Dictionary" by Alfred Anangwe & Michael R. Marlo (2008),
+// and "Bukusu-English Dictionary" by Michael Marlo, Adrian Sifuna & Aggrey Wasike (2008).
 // ============================================================
 
 export interface LuhyaGrammarSection {
@@ -95,6 +96,30 @@ The negative replaces the initial prefix with *shi-* or *kha-*:
       { luhya: 'Somelanje ebaluwa', english: 'Read the letter for me', explanation: 'Applicative extension -ela' },
       { luhya: 'Bachekhana', english: 'They are laughing at one another', explanation: 'Reciprocal extension -ana' },
       { luhya: 'Lolesia amani ketsio', english: 'Show your strength', explanation: 'Causative extension -esia' }
+    ]
+  },
+  {
+    id: 'luhya-bukusu-phonology',
+    title: 'Bukusu (Lubukusu) Phonology, Augments & Dialectal Correspondences',
+    summary: 'Documented by Marlo, Sifuna & Wasike (2008), Lubukusu features distinctive phonological traits, including voiceless velar fricatives (kh), bilabial fricatives (b / [β]), vowel length distinctions, and specific noun augmentations.',
+    content: `Lubukusu is the most widely spoken variety of the Luhya cluster (predominantly in Bungoma and Trans-Nzoia counties). As documented by Michael Marlo, Adrian Sifuna, and Aggrey Wasike (2008):
+1. **Phonological Identity**:
+   - Lubukusu preserves the voiceless velar fricative **kh** [x] where other dialects use [h] or stop consonants:
+     - *khúúlya* (to eat), *khúúnywa* (to drink), *khuukeenda* (to walk), *khuubona* (to see).
+   - The letter **b** represents a voiced bilabial fricative [β] intervocalically (e.g. *babaandu* [βaβa:ndu] - people), and a stop [b] after nasals (*embusi* - goat).
+   - Phonemic vowel length is contrastive: *ndala* (one) vs. *liitaala* (homestead).
+2. **Dialect Lexical Comparisons**:
+   - **Cow**: Bukusu *eekhaafu* (pl. *chiikhaafu*) vs. Central Luyia *ing\'ombe* (pl. *tsing\'ombe*).
+   - **Water**: Bukusu *kameechi* vs. Central Luyia *amatsi*.
+   - **Milk**: Bukusu *kamabeele* vs. Central Luyia *amabele*.
+   - **Greetings**: Bukusu *Bwaasyeele!* (Good morning!) and *Ke.akoloba!* (Good evening!) alongside universal *Muleembe!*
+   - **Thank You**: Bukusu *Oryo!* / *Oryo muno!* (Thanks very much) and *Khuusiima* (to appreciate).
+   - **Farewell**: Bukusu *Ákhuliinde!* / *Oliindwe!* (Goodbye / may you be protected).`,
+    examples: [
+      { luhya: 'Bwaasyeele! — Bwaasyeele muno.', english: 'Good morning! — Good morning indeed.', explanation: 'Bukusu early morning greeting at dawn' },
+      { luhya: 'Oryo muno!', english: 'Thank you very much!', explanation: 'Bukusu gratitude expression recorded in Marlo et al. (2008)' },
+      { luhya: 'Eekhaafu yeefwe', english: 'Our cow', explanation: 'Bukusu term eekhaafu with 1st person plural possessive' },
+      { luhya: 'Kameechi k\'okunywa', english: 'Drinking water', explanation: 'Bukusu term kameechi (water)' }
     ]
   }
 ];
