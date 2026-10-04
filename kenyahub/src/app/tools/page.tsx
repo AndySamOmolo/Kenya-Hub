@@ -185,7 +185,7 @@ function ToolsContent() {
                 { value: "alphabetical", label: "A-Z" },
                 { value: "category", label: "Category" },
               ]}
-              className="min-w-[9rem]"
+              className="min-w-[9rem] has-leading-icon"
             />
           </div>
         </div>

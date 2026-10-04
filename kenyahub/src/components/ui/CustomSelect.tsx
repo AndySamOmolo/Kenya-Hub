@@ -95,12 +95,14 @@ export default function CustomSelect({
           "py-2",
           "py-2.5",
           "px-3",
+          "has-leading-icon",
         ].includes(c)
     )
     .join(" ");
 
   const isTextXs = className.includes("text-xs");
   const isCompact = className.includes("py-1.5") || isTextXs;
+  const hasLeadingIcon = className.includes("has-leading-icon");
 
   return (
     <div className={`relative ${wrapperClasses}`.trim()} ref={containerRef} id={id}>
@@ -113,7 +115,9 @@ export default function CustomSelect({
             : isCompact
             ? "!py-1.5 !px-3 text-xs sm:text-sm"
             : "!py-2 sm:!py-2.5 !px-3 text-xs sm:text-sm"
-        } ${isOpen ? "border-gold ring-1 ring-gold" : "hover:border-gold/50"}`}
+        } ${hasLeadingIcon ? "!pl-9" : ""} ${
+          isOpen ? "border-gold ring-1 ring-gold" : "hover:border-gold/50"
+        }`}
       >
         <span className="text-text-primary truncate">{selectedOption?.label || "Select..."}</span>
         <ChevronDown
