@@ -9,6 +9,7 @@ import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import { ArrowDownAZ, LayoutList, Pin, TrendingUp, Wrench } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { useMounted } from "@/lib/useMounted";
 
 function ToolsContent() {
@@ -175,21 +176,17 @@ function ToolsContent() {
             ) : (
               <ArrowDownAZ className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
             )}
-            <select
+            <CustomSelect
               id="tools-sort"
               value={sortBy}
               onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
-              className="appearance-none !rounded-full !py-1.5 !pl-8 !pr-8 !text-xs !font-medium bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold transition-all cursor-pointer focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold/30"
-              style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 12 12'%3E%3Cpath fill='%238C8070' d='M6 8L1 3h10z'/%3E%3C/svg%3E")`,
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'right 0.65rem center',
-              }}
-            >
-              <option value="popular">Most used</option>
-              <option value="alphabetical">A-Z</option>
-              <option value="category">Category</option>
-            </select>
+              options={[
+                { value: "popular", label: "Most used" },
+                { value: "alphabetical", label: "A-Z" },
+                { value: "category", label: "Category" },
+              ]}
+              className="min-w-[9rem]"
+            />
           </div>
         </div>
       </div>

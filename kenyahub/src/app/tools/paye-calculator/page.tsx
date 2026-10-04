@@ -26,15 +26,8 @@ function calculatePAYE(grossSalary: number) {
   return Math.max(0, totalPAYE - payeData.personalRelief);
 }
 
-function calculateNHIF(grossSalary: number) {
-  const bands = payeData.nhifBands;
-  for (const band of bands) {
-    const max = band.max ?? Infinity;
-    if (grossSalary >= band.min && grossSalary <= max) {
-      return band.contribution;
-    }
-  }
-  return 1700;
+function calculateSHA(grossSalary: number) {
+  return Math.round(grossSalary * (payeData.sha.rate / 100) * 100) / 100;
 }
 
 function calculateNSSF(grossSalary: number) {
@@ -53,7 +46,7 @@ function calculateHousingLevy(grossSalary: number) {
 
 const faq = [
   {
-    question: "What PAYE tax bands apply in Kenya for FY 2024/25?",
+    question: "What PAYE tax bands apply in Kenya?",
     answer:
       "Kenya uses progressive tax bands: 10% for the first KES 24,000, 25% for KES 24,001–32,333, 30% for KES 32,334–500,000, 32.5% for KES 500,001–800,000, and 35% above KES 800,000. A personal relief of KES 2,400 per month is applied.",
   },
@@ -68,9 +61,9 @@ const faq = [
       "Under the NSSF Act 2013 (now in effect), employees contribute 6% of pensionable pay. Tier I covers up to KES 7,000 (max KES 420) and Tier II covers KES 7,001–36,000 (max KES 1,740). The employer matches these contributions.",
   },
   {
-    question: "How is NHIF calculated in Kenya?",
+    question: "How is SHA calculated in Kenya?",
     answer:
-      "NHIF uses income-banded fixed contributions. For example, salary KES 6,000–7,999 pays KES 300/month, while salary above KES 100,000 pays KES 1,700/month. There are 17 bands in total.",
+      "The Social Health Insurance Fund contribution is calculated at 2.75% of gross salary and is remitted through the Social Health Authority. It replaced the former NHIF income bands.",
   },
   {
     question: "Does this calculator include the Housing Levy tax relief?",
@@ -86,13 +79,13 @@ export default function PAYECalculatorPage() {
   const results = useMemo(() => {
     const housingLevy = calculateHousingLevy(gross);
     const nssfEmployee = calculateNSSF(gross);
-    const nhif = calculateNHIF(gross);
+    const sha = calculateSHA(gross);
 
     // Housing levy relief reduces taxable income for PAYE
     const taxableAfterRelief = gross - nssfEmployee - housingLevy;
     const paye = calculatePAYE(taxableAfterRelief > 0 ? taxableAfterRelief : gross);
 
-    const totalDeductions = paye + nhif + nssfEmployee + housingLevy;
+    const totalDeductions = paye + sha + nssfEmployee + housingLevy;
     const netPay = gross - totalDeductions;
 
     const employerNSSF = nssfEmployee; // Employer matches
@@ -101,7 +94,7 @@ export default function PAYECalculatorPage() {
     return {
       gross,
       paye: Math.round(paye * 100) / 100,
-      nhif,
+      sha,
       nssf: nssfEmployee,
       housingLevy,
       totalDeductions: Math.round(totalDeductions * 100) / 100,
@@ -214,8 +207,8 @@ export default function PAYECalculatorPage() {
                   <td className="text-right text-kenya-red-light">− {fmt(results.paye)}</td>
                 </tr>
                 <tr>
-                  <td className="text-kenya-red-light">NHIF</td>
-                  <td className="text-right text-kenya-red-light">− {fmt(results.nhif)}</td>
+                  <td className="text-kenya-red-light">SHA (SHIF)</td>
+                  <td className="text-right text-kenya-red-light">− {fmt(results.sha)}</td>
                 </tr>
                 <tr>
                   <td className="text-kenya-red-light">NSSF (Employee)</td>

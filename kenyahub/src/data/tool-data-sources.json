@@ -1,0 +1,45 @@
+{
+  "defaultMaxAgeDays": 365,
+  "tools": {
+    "paye-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye"
+    },
+    "mpesa-fee-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits"
+    },
+    "passport-id-fees": {
+      "official": true,
+      "sourceUrl": "https://immigration.go.ke/type-and-fees/"
+    },
+    "driving-license-guide": {
+      "official": true,
+      "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence"
+    },
+    "nhif-hospital-finder": {
+      "official": true,
+      "sourceUrl": "https://provider.sha.go.ke/"
+    },
+    "school-terms": {
+      "official": true,
+      "sourceUrl": "https://education.go.ke/"
+    },
+    "vaccination-schedule": {
+      "official": true,
+      "sourceUrl": "https://guidelines.health.go.ke/"
+    },
+    "kplc-token-calculator": {
+      "official": true,
+      "sourceUrl": "https://kplc.co.ke/faq/tariff"
+    },
+    "traffic-fines": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/"
+    },
+    "public-holidays": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/"
+    }
+  }
+}

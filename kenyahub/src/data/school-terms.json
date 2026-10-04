@@ -1,6 +1,6 @@
 {
   "source": "Ministry of Education, Kenya",
-  "lastUpdated": "2025-01-01",
+  "lastUpdated": "2026-01-01",
   "years": {
     "2025": {
       "terms": [
@@ -44,8 +44,8 @@
           "term": 1,
           "name": "Term 1",
           "openingDate": "2026-01-05",
-          "closingDate": "2026-04-03",
-          "midTermBreak": { "start": "2026-02-16", "end": "2026-02-20" },
+          "closingDate": "2026-04-02",
+          "midTermBreak": { "start": "2026-02-25", "end": "2026-03-01" },
           "weeks": 13,
           "notes": "First year with full Senior Secondary School (SSS) cohort."
         },
@@ -54,7 +54,7 @@
           "name": "Term 2",
           "openingDate": "2026-04-27",
           "closingDate": "2026-07-31",
-          "midTermBreak": { "start": "2026-06-08", "end": "2026-06-12" },
+          "midTermBreak": { "start": "2026-06-24", "end": "2026-06-28" },
           "weeks": 14,
           "notes": "Madaraka Day (June 1) falls within this term."
         },
@@ -62,16 +62,16 @@
           "term": 3,
           "name": "Term 3",
           "openingDate": "2026-08-24",
-          "closingDate": "2026-10-30",
+          "closingDate": "2026-10-23",
           "midTermBreak": null,
           "weeks": 10,
           "notes": "National exams period."
         }
       ],
       "holidays": [
-        { "start": "2026-04-04", "end": "2026-04-26", "name": "April Holiday (Term 1-2 break)", "weeks": 3 },
-        { "start": "2026-08-01", "end": "2026-08-23", "name": "August Holiday (Term 2-3 break)", "weeks": 3 },
-        { "start": "2026-10-31", "end": "2027-01-03", "name": "December Holiday (long break)", "weeks": 9 }
+        { "start": "2026-04-07", "end": "2026-04-24", "name": "April Holiday (Term 1-2 break)", "weeks": 3 },
+        { "start": "2026-08-03", "end": "2026-08-21", "name": "August Holiday (Term 2-3 break)", "weeks": 3 },
+        { "start": "2026-10-26", "end": "2027-01-01", "name": "December Holiday (long break)", "weeks": 10 }
       ]
     }
   }

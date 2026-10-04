@@ -1,6 +1,6 @@
 {
   "source": "Department of Immigration & National Registration Bureau (NRB)",
-  "lastUpdated": "2024",
+  "lastUpdated": "2026-10-04",
   "passport": {
     "types": [
       {
@@ -17,7 +17,7 @@
       },
       {
         "type": "Ordinary Passport (66 pages / Series C)",
-        "fee": 12550,
+        "fee": 12050,
         "processingTime": "10 – 15 working days",
         "eligibility": "Frequent travelers / business"
       },
@@ -71,9 +71,9 @@
   "nationalId": {
     "types": [
       { "type": "First Application (age 18+)", "fee": 300, "processingTime": "30 – 60 working days", "notes": "Mandatory for all Kenyan citizens turning 18" },
-      { "type": "Replacement (Lost ID)", "fee": 1000, "processingTime": "30 – 60 working days", "notes": "Requires police abstract report" },
-      { "type": "Replacement (Damaged ID)", "fee": 1000, "processingTime": "30 – 60 working days", "notes": "Surrender the damaged physical card" },
-      { "type": "Change of Particulars", "fee": 1000, "processingTime": "30 – 60 working days", "notes": "Requires supporting documents (marriage cert, deed poll)" },
+      { "type": "Replacement (Lost ID)", "fee": 0, "processingTime": "30 – 60 working days", "notes": "Currently free under the replacement-fee waiver; requires a police abstract report" },
+      { "type": "Replacement (Damaged ID)", "fee": 0, "processingTime": "30 – 60 working days", "notes": "Currently free under the replacement-fee waiver; surrender the damaged physical card" },
+      { "type": "Change of Particulars", "fee": 0, "processingTime": "30 – 60 working days", "notes": "Currently free under the replacement-fee waiver; requires supporting documents (marriage cert, deed poll)" },
       { "type": "Waiting Card (Interim)", "fee": 0, "processingTime": "Same day", "notes": "Temporary ID slip issued upon biometric capture" }
     ],
     "requiredDocuments": [

@@ -6,7 +6,7 @@ export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; de
   { id: 'utilities-energy', name: 'Utilities & Energy', icon: '⚡', description: 'Power outages, token calculators, fuel prices', badgeClass: 'badge-utilities' },
   { id: 'government-legal', name: 'Government & Legal', icon: '🏛️', description: 'Tenders, public holidays, government services', badgeClass: 'badge-government' },
   { id: 'transport-travel', name: 'Transport & Travel', icon: '🚌', description: 'Number plates, matatu routes, distances', badgeClass: 'badge-transport' },
-  { id: 'health-wellness', name: 'Health & Wellness', icon: '🏥', description: 'NHIF hospitals, vaccination schedules', badgeClass: 'badge-health' },
+  { id: 'health-wellness', name: 'Health & Wellness', icon: '🏥', description: 'SHA facilities, vaccination schedules', badgeClass: 'badge-health' },
   { id: 'business-investment', name: 'Business & Investment', icon: '📊', description: 'Registration costs, SACCO directory', badgeClass: 'badge-business' },
   { id: 'language-learning', name: 'Language Learning', icon: '🗣️', description: 'Learn Kenyan languages through courses, practice, and culture', badgeClass: 'badge-reference' },
   { id: 'data-reference', name: 'Data & Reference', icon: '📍', description: 'Postal codes, phone prefixes, demographics', badgeClass: 'badge-reference' },
@@ -16,14 +16,14 @@ export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; de
 export const TOOLS: Tool[] = [
   {
     slug: 'paye-calculator',
-    title: 'Kenya PAYE Salary Calculator 2025/2026',
+    title: 'Kenya PAYE Salary Calculator 2026',
     shortTitle: 'PAYE Calculator',
-    description: 'Calculate your net salary after PAYE tax, NHIF, NSSF, and Housing Levy deductions. Uses the latest KRA FY 2024/25 tax bands with itemized breakdown.',
+    description: 'Calculate your net salary after PAYE tax, SHA, NSSF, and Housing Levy deductions. Uses the current KRA tax bands with an itemized breakdown.',
     category: 'finance-tax',
     keywords: ['PAYE calculator Kenya 2025', 'net salary Kenya', 'Kenya salary after tax', 'KRA tax calculator'],
     updateFrequency: 'annual',
     dataSource: 'Kenya Revenue Authority (KRA)',
-    isLive: true,
+    isLive: false,
     icon: '🧮',
   },
   {
@@ -35,7 +35,7 @@ export const TOOLS: Tool[] = [
     keywords: ['mpesa charges calculator', 'mpesa tariff Kenya', 'how much does mpesa charge', 'safaricom charges'],
     updateFrequency: 'static',
     dataSource: 'Safaricom M-Pesa Tariff Schedule',
-    isLive: true,
+    isLive: false,
     icon: '📱',
   },
   {
@@ -59,7 +59,7 @@ export const TOOLS: Tool[] = [
     keywords: ['CBC grade age Kenya', 'what grade is my child CBC', 'PP1 PP2 age Kenya'],
     updateFrequency: 'static',
     dataSource: 'Ministry of Education / KICD',
-    isLive: true,
+    isLive: false,
     icon: '👶',
   },
   {
@@ -95,7 +95,7 @@ export const TOOLS: Tool[] = [
     keywords: ['Kenya public holidays 2025', 'Kenya bank holidays', 'gazetted holidays Kenya 2026'],
     updateFrequency: 'annual',
     dataSource: 'Public Holidays Act (Cap 110)',
-    isLive: true,
+    isLive: false,
     icon: '📅',
   },
   {
@@ -317,14 +317,14 @@ export const TOOLS: Tool[] = [
   },
   {
     slug: 'nhif-hospital-finder',
-    title: 'NHIF Accredited Hospital Finder Kenya',
-    shortTitle: 'NHIF Hospitals',
-    description: 'Search NHIF-accredited hospitals and clinics across Kenya. Filter by county, hospital level (2–6), and facility type (public, private, faith-based).',
+    title: 'Health Facility Finder Kenya (Legacy NHIF Dataset)',
+    shortTitle: 'Health Facilities',
+    description: 'Search a representative legacy facility dataset by county, hospital level, and facility type. Verify current SHA empanelment directly before relying on a facility.',
     category: 'health-wellness',
     keywords: ['NHIF accredited hospitals Kenya', 'NHIF hospital near me', 'NHIF clinic Nairobi', 'SHA hospitals Kenya'],
     updateFrequency: 'periodic',
-    dataSource: 'NHIF Accredited Providers List (nhif.or.ke)',
-    isLive: true,
+    dataSource: 'Legacy NHIF dataset; verify with SHA provider portal',
+    isLive: false,
     icon: '🏥',
   },
   {
@@ -530,7 +530,7 @@ export const TOOLS: Tool[] = [
     keywords: ['Kenya GDP release date', 'KNBS data release calendar', 'Kenya CPI announcement', 'CBK MPC decision'],
     updateFrequency: 'annual',
     dataSource: 'KNBS, CBK, National Treasury',
-    isLive: true,
+    isLive: false,
     icon: '📆',
   },
   {

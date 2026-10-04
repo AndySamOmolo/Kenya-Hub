@@ -1,5 +1,6 @@
 {
   "source": "Public Holidays Act (Cap 110) + Kenya Gazette annual notices",
+  "lastUpdated": "2026-01-01",
   "holidays": {
     "2025": [
       { "date": "2025-01-01", "name": "New Year's Day", "description": "First day of the Gregorian calendar year" },

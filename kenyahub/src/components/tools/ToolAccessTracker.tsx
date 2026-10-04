@@ -24,7 +24,17 @@ export default function ToolAccessTracker({ tool }: ToolAccessTrackerProps) {
     }
 
     const trackGA = () => {
-      if (tracked.current || localStorage.getItem("kh-cookie-consent") !== "accepted") return;
+      if (tracked.current) return;
+      const storedPreferences = localStorage.getItem("kh-cookie-preferences");
+      let analyticsEnabled = localStorage.getItem("kh-cookie-consent") === "accepted";
+      if (storedPreferences) {
+        try {
+          analyticsEnabled = JSON.parse(storedPreferences).analytics === true;
+        } catch {
+          analyticsEnabled = false;
+        }
+      }
+      if (!analyticsEnabled) return;
 
       window.gtag?.("event", "tool_access", {
         tool_slug: tool.slug,

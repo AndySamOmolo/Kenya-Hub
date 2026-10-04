@@ -18,11 +18,11 @@ const faq = [
   },
   {
     question: "How much does a driving license cost in Kenya?",
-    answer: "The final license fee is KES 1,750 for 3 years. However, the total cost including driving school fees, medical checks, provisional licenses, and test fees typically ranges from KES 12,000 to KES 30,000 depending on the class.",
+    answer: "The NTSA Smart Driving Licence fee is KES 3,050 and it is valid for 3 years. The total cost including driving school fees, medical checks, provisional licenses, and test fees varies by class and provider; confirm the payable amount in eCitizen.",
   },
   {
     question: "How long is a Kenyan driving license valid?",
-    answer: "A standard Kenyan driving license is valid for 3 years from the date of issue. The renewal fee is KES 1,750.",
+    answer: "The NTSA Smart Driving Licence is valid for 3 years from the date of issue. The current renewal fee is KES 3,050; confirm the amount in eCitizen before payment.",
   },
   {
     question: "Do I need a new Smart Driving License?",

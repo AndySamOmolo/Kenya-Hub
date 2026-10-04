@@ -14,14 +14,29 @@ export default function CookiePreferencesButton() {
     updateStatus();
 
     window.addEventListener("storage", updateStatus);
+    window.addEventListener("kh-cookie-consent-updated", updateStatus);
     return () => {
       window.removeEventListener("storage", updateStatus);
+      window.removeEventListener("kh-cookie-consent-updated", updateStatus);
     };
   }, []);
 
   const openBanner = () => {
     window.dispatchEvent(new CustomEvent("kh-open-cookie-banner"));
   };
+
+  const preferenceLabel = (() => {
+    if (!status) return "Default (Denied until consent is explicitly provided)";
+    try {
+      const preferences = JSON.parse(localStorage.getItem("kh-cookie-preferences") || "");
+      if (preferences.analytics && preferences.advertising) return "Analytics & advertising enabled";
+      if (preferences.analytics) return "Analytics enabled; advertising denied";
+      if (preferences.advertising) return "Advertising enabled; analytics denied";
+      return "Analytics & advertising denied";
+    } catch {
+      return status === "accepted" ? "Analytics & advertising enabled" : "Analytics & advertising denied";
+    }
+  })();
 
   return (
     <div className="p-4 rounded-xl border border-border bg-bg-card/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3 my-4">
@@ -30,19 +45,11 @@ export default function CookiePreferencesButton() {
           Your Current Cookie Preference:
         </p>
         <div className="flex items-center gap-1.5 text-xs">
-          {status === "accepted" ? (
-            <span className="inline-flex items-center gap-1 text-emerald-400 font-medium">
-              <CheckCircle2 className="w-3.5 h-3.5" /> All non-essential cookies accepted (Analytics & Ads enabled)
+          {status ? (
+            <span className={`inline-flex items-center gap-1 font-medium ${preferenceLabel.includes("enabled") ? "text-emerald-400" : "text-amber-400"}`}>
+              {preferenceLabel.includes("enabled") ? <CheckCircle2 className="w-3.5 h-3.5" /> : <XCircle className="w-3.5 h-3.5" />} {preferenceLabel}
             </span>
-          ) : status === "declined" ? (
-            <span className="inline-flex items-center gap-1 text-amber-400 font-medium">
-              <XCircle className="w-3.5 h-3.5" /> Non-essential cookies declined (Analytics & Ads denied)
-            </span>
-          ) : (
-            <span className="text-text-muted">
-              Default (Denied until consent is explicitly provided)
-            </span>
-          )}
+          ) : <span className="text-text-muted">{preferenceLabel}</span>}
         </div>
       </div>
       <button

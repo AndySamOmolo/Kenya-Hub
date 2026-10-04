@@ -66,7 +66,7 @@ export default function PrivacyPage() {
             <div className="p-3.5 rounded-xl bg-bg-card border border-border">
               <h3 className="text-xs font-bold text-text-primary mb-1">Google Consent Mode v2:</h3>
               <p className="text-xs text-text-muted">
-                KenyaHub complies with Google Consent Mode v2. By default, analytics cookies (<code className="font-mono text-gold">analytics_storage</code>) are set to <strong className="text-text-secondary">denied</strong> when you first load the page. Analytics cookies are only set on your browser if you explicitly click &quot;Accept All&quot; on our Cookie Consent banner. If you decline or take no action, analytics storage remains disabled.
+                KenyaHub complies with Google Consent Mode v2. By default, analytics cookies (<code className="font-mono text-gold">analytics_storage</code>) are set to <strong className="text-text-secondary">denied</strong> when you first load the page. You can accept all cookies, decline all non-essential cookies, or use &quot;Manage&quot; to enable analytics and advertising separately. Your choice can be changed at any time from the Cookie Preferences link in the footer.
               </p>
             </div>
           </div>

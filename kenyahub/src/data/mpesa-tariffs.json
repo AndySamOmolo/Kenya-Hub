@@ -1,6 +1,6 @@
 {
   "source": "Safaricom M-Pesa Tariff Schedule",
-  "lastUpdated": "2024-01-01",
+  "lastUpdated": "2026-08-01",
   "transactionTypes": {
     "sendRegistered": {
       "label": "Send Money (to Registered User)",
@@ -58,18 +58,18 @@
         { "min": 15001, "max": 20000, "fee": 185 },
         { "min": 20001, "max": 25000, "fee": 197 },
         { "min": 25001, "max": 30000, "fee": 220 },
-        { "min": 30001, "max": 35000, "fee": 300 },
-        { "min": 35001, "max": 50000, "fee": 300 },
-        { "min": 50001, "max": 250000, "fee": 300 }
+        { "min": 30001, "max": 35000, "fee": 197 },
+        { "min": 35001, "max": 50000, "fee": 278 },
+        { "min": 50001, "max": 250000, "fee": 309 }
       ]
     },
     "withdrawATM": {
       "label": "Withdraw at ATM",
       "bands": [
         { "min": 200, "max": 2500, "fee": 35 },
-        { "min": 2501, "max": 5000, "fee": 65 },
-        { "min": 5001, "max": 10000, "fee": 100 },
-        { "min": 10001, "max": 20000, "fee": 200 }
+        { "min": 2501, "max": 5000, "fee": 69 },
+        { "min": 5001, "max": 10000, "fee": 115 },
+        { "min": 10001, "max": 35000, "fee": 203 }
       ]
     },
     "buyGoods": {

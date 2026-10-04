@@ -93,3 +93,18 @@ This platform thrives on accurate, up-to-date information. If you notice outdate
 1. Check the Central Tools Registry at `src/lib/tools-registry.ts`.
 2. Review the data sources in `src/data/` or `scripts/`.
 3. Feel free to open an issue or submit a Pull Request!
+## Tool data auditing
+
+Run the local audit before changing a user-facing dataset:
+
+```bash
+npm run audit:tools
+```
+
+The audit checks that every tool route has a registry entry, imported JSON data is valid, and dated datasets are within the configured freshness window. To also check configured official source URLs:
+
+```bash
+npm run audit:tools:sources
+```
+
+The report is written to `reports/tool-audit.json`. A scheduled GitHub Actions workflow runs the source-aware audit weekly and on changes to tool routes or data. The workflow reports stale or incomplete metadata for review and fails structural coverage errors, so regulated values are never silently replaced by guessed data.

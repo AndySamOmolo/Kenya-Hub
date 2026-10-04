@@ -10,7 +10,7 @@ const tool = TOOLS.find((t) => t.slug === "passport-id-fees")!;
 const faq = [
   {
     question: "How much is a new passport in Kenya?",
-    answer: "A standard 32-page ordinary passport (valid for 5 years) costs KES 4,550. For a 10-year validity, it costs KES 6,550. The 48-page jumbo passport costs KES 6,050 (5 years) or KES 8,050 (10 years).",
+    answer: "Passport fees vary by passport type and the current Immigration fee schedule. See the fee table above and confirm the amount shown in eCitizen before payment.",
   },
   {
     question: "How long does it take to get a Kenyan passport?",
@@ -18,7 +18,7 @@ const faq = [
   },
   {
     question: "How much does it cost to replace a lost National ID?",
-    answer: "Replacing a lost National ID card costs KES 300. You will also need a police abstract reporting the loss. Replacing a damaged ID costs KES 100.",
+    answer: "Replacement of a lost or damaged National ID is currently free under the government fee waiver. A lost ID still requires a police abstract, while a damaged ID should be surrendered. Confirm the waiver is still active before applying.",
   },
   {
     question: "How do I apply for a passport in Kenya?",
@@ -26,7 +26,7 @@ const faq = [
   },
   {
     question: "Can I get a passport for my child?",
-    answer: "Yes, Kenyan citizens under 18 can get a child passport for KES 4,550. The application must be made by a parent or legal guardian.",
+    answer: "Yes, Kenyan citizens under 18 can apply for a passport through eCitizen. The application must be made with a parent or legal guardian and the current fee should be confirmed in eCitizen before payment.",
   },
 ];
 

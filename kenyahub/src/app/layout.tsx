@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/nav/Footer";
@@ -97,12 +98,16 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 try {
   var c = localStorage.getItem('kh-cookie-consent');
-  if (c === 'accepted') {
+  var p = null;
+  try { p = JSON.parse(localStorage.getItem('kh-cookie-preferences') || 'null'); } catch(e) {}
+  var analyticsGranted = p ? p.analytics === true : c === 'accepted';
+  var advertisingGranted = p ? p.advertising === true : c === 'accepted';
+  if (analyticsGranted || advertisingGranted) {
     gtag('consent', 'default', {
-      'ad_storage': 'granted',
-      'ad_user_data': 'granted',
-      'ad_personalization': 'granted',
-      'analytics_storage': 'granted',
+      'ad_storage': advertisingGranted ? 'granted' : 'denied',
+      'ad_user_data': advertisingGranted ? 'granted' : 'denied',
+      'ad_personalization': advertisingGranted ? 'granted' : 'denied',
+      'analytics_storage': analyticsGranted ? 'granted' : 'denied',
       'wait_for_update': 500
     });
   } else {
@@ -139,20 +144,15 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
-      <head>
+      <head suppressHydrationWarning>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         {/* Google Consent Mode v2 & Google tag initialization */}
         <script dangerouslySetInnerHTML={{ __html: consentModeScript }} />
         {/* Google tag (gtag.js) */}
-        <script
+        <Script
+          strategy="afterInteractive"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-Y069879V7Y"
-        />
-        {/* Google AdSense — auto ads */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5895990873842803"
-          crossOrigin="anonymous"
         />
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
       </head>
@@ -163,6 +163,13 @@ export default function RootLayout({
           <Footer />
           <CookieConsent />
         </ThemeProvider>
+        {/* Load AdSense after hydration so it cannot reorder head nodes before React hydrates. */}
+        <Script
+          strategy="afterInteractive"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5895990873842803"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );

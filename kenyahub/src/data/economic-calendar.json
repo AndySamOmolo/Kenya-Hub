@@ -1,6 +1,6 @@
 {
-  "year": 2025,
-  "lastUpdated": "2025-01",
+  "year": 2026,
+  "lastUpdated": "2026-01",
   "events": [
     { "name": "CPI / Inflation Rate", "agency": "KNBS", "frequency": "Monthly", "typicalDate": "~20th of following month", "category": "Prices", "description": "Consumer Price Index and year-on-year inflation rate for Kenya.", "url": "https://knbs.or.ke" },
     { "name": "MPC Interest Rate Decision", "agency": "CBK", "frequency": "Bi-monthly", "typicalDate": "Every 2 months (Jan, Mar, May, Jul, Sep, Nov)", "category": "Monetary", "description": "Central Bank Rate (CBR) decision by the Monetary Policy Committee.", "url": "https://centralbank.go.ke" },
