@@ -1,0 +1,1335 @@
+{
+  "languageId": "kamba",
+  "languageName": "Kamba (Kĩkamba)",
+  "family": "bantu",
+  "nativeName": "Kĩkamba",
+  "script": "Latin",
+  "speakerCount": 4600000,
+  "counties": [
+    "Machakos",
+    "Makueni",
+    "Kitui"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.1.0",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Kamba (Kĩkamba) is a Bantu language spoken across Machakos, Makueni, and Kitui counties of Kenya. Vocabulary enriched with systematic comparative dialectal data from 'Grammar of the Kamba Language' by J.T. Last (CMS, 1885), 'Vocabularies of the Kamba and Kikuyu Languages' by Hildegarde Hinde (Cambridge University Press, 1904), and standard Kĩkamba linguistic references.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "How are you?",
+          "translation": "Ũvoo?",
+          "pronunciation": "oo-voh",
+          "context": "Standard greeting — literally 'News?'",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine",
+          "translation": "Nĩ mũseo",
+          "pronunciation": "nee moo-seh-oh",
+          "context": "Standard reply meaning 'I am well / good'",
+          "audioFile": null
+        },
+        {
+          "english": "Hello / Salutation",
+          "translation": "O voo",
+          "pronunciation": "oh voh",
+          "context": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'",
+          "audioFile": null
+        },
+        {
+          "english": "What's the news / What's up?",
+          "translation": "Wĩa?",
+          "pronunciation": "wee-ah",
+          "context": "Casual colloquial greeting — 'What is the word?'",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Wĩa mwau wa ũthukũ",
+          "pronunciation": "wee-ah mwah-oo wah oo-thoo-koo",
+          "context": "Morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Nĩ vaa mũno",
+          "pronunciation": "nee vah-ah moo-noh",
+          "context": "Expressing deep gratitude ('thank you very much')",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye (we will meet)",
+          "translation": "Tũonane",
+          "pronunciation": "too-oh-nah-neh",
+          "context": "Farewell — 'We will see each other again'",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Wĩa mũseo",
+          "pronunciation": "wee-ah moo-seh-oh",
+          "context": "Welcoming a visitor or guest",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Mũyo",
+          "pronunciation": "moo-yoh",
+          "context": "Traditional blessing of peace, contentment and happiness",
+          "audioFile": null
+        },
+        {
+          "english": "Sorry",
+          "translation": "Sova / Pole",
+          "pronunciation": "soh-vah / poh-leh",
+          "context": "Expression of empathy or comfort",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Ĩmwe",
+          "pronunciation": "ee-mweh",
+          "context": "Ulu & Nganyawa: imwe",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Ilĩ",
+          "pronunciation": "ee-lee",
+          "context": "Ulu: ile; Nganyawa: ile",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Itatũ",
+          "pronunciation": "ee-tah-too",
+          "context": "Ulu & Nganyawa: itatu",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Inya",
+          "pronunciation": "ee-nyah",
+          "context": "Ulu dialect: inna; Nganyawa dialect: inya",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Ithano",
+          "pronunciation": "ee-thah-noh",
+          "context": "Ulu dialect: itanu; Nganyawa dialect: kitanu",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Thanthantũ",
+          "pronunciation": "thahn-thahn-too",
+          "context": "Ulu dialect: thanthatu; Nganyawa dialect: thandatu",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Mũonza",
+          "pronunciation": "moo-ohn-zah",
+          "context": "Ulu dialect: muonza; Nganyawa dialect: moanza",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Nyaanya",
+          "pronunciation": "nyah-ah-nyah",
+          "context": "Ulu dialect: nyanya; Nganyawa dialect: nanya",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Kenda",
+          "pronunciation": "kehn-dah",
+          "context": "Universal Bantu nine",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Ĩkũmi",
+          "pronunciation": "ee-koo-mee",
+          "context": "Plural: Maũkũmi",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven",
+          "translation": "Ĩkũmi na ĩmwe",
+          "pronunciation": "ee-koo-mee nah ee-mweh",
+          "context": "Literally 'ten and one'",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Mĩongo ĩlĩ",
+          "pronunciation": "mee-ohn-goh ee-lee",
+          "context": "Hinde: miongoele ('two tens')",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Mĩongo ĩtatũ",
+          "pronunciation": "mee-ohn-goh ee-tah-too",
+          "context": "Three tens",
+          "audioFile": null
+        },
+        {
+          "english": "Forty",
+          "translation": "Mĩongo ĩnya",
+          "pronunciation": "mee-ohn-goh ee-nyah",
+          "context": "Ulu: miongo enna; Nganyawa: miongo inya",
+          "audioFile": null
+        },
+        {
+          "english": "Fifty",
+          "translation": "Mĩongo ĩthano",
+          "pronunciation": "mee-ohn-goh ee-thah-noh",
+          "context": "Five tens (Ulu: miongo itanu; Nganyawa: miongo kitanu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "Ĩana",
+          "pronunciation": "ee-ah-nah",
+          "context": "Hinde: yana",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Father",
+          "translation": "Asa / Tata",
+          "pronunciation": "ah-sah / tah-tah",
+          "context": "Dialects: Ulu uses 'Nau' or 'Asa'; Nganyawa uses 'Atsa' or 'Bata'",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Mwaitũ / Ĩvaa",
+          "pronunciation": "mwah-ee-too / ee-vah",
+          "context": "Hinde Ulu: 'Maiitu'; Nganyawa: 'Mwaitu'",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Kaana",
+          "pronunciation": "kah-ah-nah",
+          "context": "Plural: Twana (children)",
+          "audioFile": null
+        },
+        {
+          "english": "Boy / Male youth",
+          "translation": "Kavĩsĩ",
+          "pronunciation": "kah-vee-see",
+          "context": "Hinde Ulu: kabisi; Plural: Syavĩsĩ",
+          "audioFile": null
+        },
+        {
+          "english": "Girl / Maiden",
+          "translation": "Kelĩtu",
+          "pronunciation": "keh-lee-too",
+          "context": "Hinde Ulu: kēlletu; Nganyawa: kananga; Plural: Twelĩtu",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Male",
+          "translation": "Mũndũ mũme",
+          "pronunciation": "moon-doo moo-meh",
+          "context": "Plural: Andũ aume (Hinde: mundu mumiu / mume)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Female",
+          "translation": "Mũndũ mũka",
+          "pronunciation": "moon-doo moo-kah",
+          "context": "Plural: Andũ aka (Hinde Ulu: mundu muka; Nganyawa: manamuka)",
+          "audioFile": null
+        },
+        {
+          "english": "Elder",
+          "translation": "Mũtumia",
+          "pronunciation": "moo-too-mee-ah",
+          "context": "Ulu: muku; Nganyawa: mtumia; Plural: Atumia",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather",
+          "translation": "Umau / Guka",
+          "pronunciation": "oo-mah-oo / goo-kah",
+          "context": "Ulu: umāā; Nganyawa: atza mnini",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmother",
+          "translation": "Mwaitũ mũkũũ / Ũsũũ",
+          "pronunciation": "mwah-ee-too moo-koo-oo / oo-soo-oo",
+          "context": "Respectful elder mother; Hinde: inya",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "Mwananyanya",
+          "pronunciation": "mwah-nah-nyah-nyah",
+          "context": "Ulu: nindu; Nganyawa: mwinai",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "Mwĩtu wa mwaitũ",
+          "pronunciation": "mwee-too wah mwah-ee-too",
+          "context": "Literally 'daughter of our mother'; Hinde: mwtiaiya",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "Mũnyanya",
+          "pronunciation": "moo-nyah-nyah",
+          "context": "Ulu: nendu; Nganyawa: mnyanya",
+          "audioFile": null
+        },
+        {
+          "english": "Husband",
+          "translation": "Mũme",
+          "pronunciation": "moo-meh",
+          "context": "Hinde: mume akwa ('my husband')",
+          "audioFile": null
+        },
+        {
+          "english": "Wife",
+          "translation": "Mũka",
+          "pronunciation": "moo-kah",
+          "context": "'Mũka wakwa' = my wife; Plural: Aka",
+          "audioFile": null
+        },
+        {
+          "english": "People / Humans",
+          "translation": "Andũ",
+          "pronunciation": "ahn-doo",
+          "context": "Singular: Mũndũ (a human being)",
+          "audioFile": null
+        },
+        {
+          "english": "Judge / Arbitrator",
+          "translation": "Mũtanya",
+          "pronunciation": "moo-tahn-yah",
+          "context": "Plural: Atanya. Historical judicial council arbitrator recorded by J.T. Last (1885)",
+          "audioFile": null
+        },
+        {
+          "english": "Guide / Caravan leader",
+          "translation": "Mũtongoi",
+          "pronunciation": "moo-toh-ngoh-ee",
+          "context": "Plural: Atongoi. Pathfinder or caravan leader recorded by J.T. Last (1885)",
+          "audioFile": null
+        },
+        {
+          "english": "Farmer / Agriculturist",
+          "translation": "Mwĩmi",
+          "pronunciation": "mwee-mee",
+          "context": "Plural: Aimi. Cultivator of the land recorded by J.T. Last (1885): mwimi / aimi",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Sun",
+          "translation": "Syũa",
+          "pronunciation": "syoo-ah",
+          "context": "Hinde Ulu: sua; Nganyawa: djua / thua",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "Mwei",
+          "pronunciation": "mweh-ee",
+          "context": "Hinde Ulu: mwei; Nganyawa: mbui; also means month",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "Ndata",
+          "pronunciation": "n-dah-tah",
+          "context": "Night sky star (Hinde: ndata)",
+          "audioFile": null
+        },
+        {
+          "english": "Sky / Cloud",
+          "translation": "Ĩtu",
+          "pronunciation": "ee-too",
+          "context": "Plural: Matu (clouds); Ulu: mwingo; Nganyawa: edu",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Mbua",
+          "pronunciation": "m-boo-ah",
+          "context": "Vital seasonal rains in Ukambani (Hinde: mbua)",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "Mbevo",
+          "pronunciation": "m-beh-voh",
+          "context": "Hinde: mbebo (wind, breeze, or atmospheric cold)",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "Ũsĩ",
+          "pronunciation": "oo-see",
+          "context": "Hinde Ulu: ussi; Nganyawa: udzi",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "Kĩĩma",
+          "pronunciation": "kee-ee-mah",
+          "context": "Hinde Ulu: kiima; Nganyawa: kilima kinene",
+          "audioFile": null
+        },
+        {
+          "english": "Forest / Bush",
+          "translation": "Kĩtheka",
+          "pronunciation": "kee-theh-kah",
+          "context": "Hinde Ulu: kitheka; Nganyawa: mtito / c(sh)ebu",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Mũtĩ",
+          "pronunciation": "moo-tee",
+          "context": "Plural: Mĩtĩ (Hinde Ulu: muti, pl. mitino; Nganyawa: mti)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "Nyekĩ",
+          "pronunciation": "nyeh-kee",
+          "context": "Hinde Ulu: nyekki; Nganyawa: mathangu",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Mwaki",
+          "pronunciation": "mwah-kee",
+          "context": "Hinde Ulu: iko; Nganyawa: mwadgi / djuki",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Manzĩ",
+          "pronunciation": "mahn-zee",
+          "context": "Hinde: maanzi",
+          "audioFile": null
+        },
+        {
+          "english": "Soil / Earth / Ground",
+          "translation": "Nthĩ",
+          "pronunciation": "n-thee",
+          "context": "Hinde Ulu: panthi; Nganyawa: itheo",
+          "audioFile": null
+        },
+        {
+          "english": "Stone",
+          "translation": "Ĩvia",
+          "pronunciation": "ee-vee-ah",
+          "context": "Plural: Mavia (Hinde: ibia, pl. mavia)",
+          "audioFile": null
+        },
+        {
+          "english": "Baobab tree",
+          "translation": "Mwamba",
+          "pronunciation": "mwahm-bah",
+          "context": "Iconic Ukambani dryland tree (Hinde: mwamba)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Wildlife",
+      "icon": "🐾",
+      "entries": [
+        {
+          "english": "Cow / Cattle",
+          "translation": "Ng'ombe",
+          "pronunciation": "n-gohm-beh",
+          "context": "Domestic cattle (Hinde: ngombe)",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "Nzao",
+          "pronunciation": "n-zah-oh",
+          "context": "Hinde: nzao",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Mbuĩ",
+          "pronunciation": "m-boo-ee",
+          "context": "Plural: Mbuĩ (Hinde: mbuii)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Ĩlondu",
+          "pronunciation": "ee-lohn-doo",
+          "context": "Hinde Ulu: ilondu; Nganyawa: ngoondu",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Kĩtĩ / Ngiti",
+          "pronunciation": "kee-tee / n-gee-tee",
+          "context": "Hinde Ulu: solu; Nganyawa: ngiti",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Nyũnyi",
+          "pronunciation": "nyoo-nyee",
+          "context": "Hinde Ulu: mbuungu; Nganyawa: nyunni",
+          "audioFile": null
+        },
+        {
+          "english": "Bee",
+          "translation": "Nzũkĩ",
+          "pronunciation": "n-zoo-kee",
+          "context": "Hinde Ulu: nsuki / kinyu; Nganyawa: nzuki",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Nzowũ",
+          "pronunciation": "n-zoh-woo",
+          "context": "Hinde: unzōō",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Mũnyambo",
+          "pronunciation": "moo-nyahm-boh",
+          "context": "Hinde Ulu: munyambo; Nganyawa: thimba",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "Ngo",
+          "pronunciation": "n-goh",
+          "context": "Hinde Ulu: ngoo; Nganyawa: engo",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "Mbĩtĩ",
+          "pronunciation": "m-bee-tee",
+          "context": "Hinde: mbiti",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Mbogo / Nyaĩ",
+          "pronunciation": "m-boh-goh / nyah-ee",
+          "context": "Hinde Ulu: niai; Nganyawa: mbo",
+          "audioFile": null
+        },
+        {
+          "english": "Zebra",
+          "translation": "Nzaĩ",
+          "pronunciation": "n-zah-ee",
+          "context": "Hinde Ulu: nzaii; Nganyawa: mbuvu",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Ndia",
+          "pronunciation": "n-dee-ah",
+          "context": "Hinde: ndia",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "Kĩnyangĩ",
+          "pronunciation": "kee-nyahn-gee",
+          "context": "Hinde: kinyangi",
+          "audioFile": null
+        },
+        {
+          "english": "Baboon",
+          "translation": "Ngũlĩ",
+          "pronunciation": "n-goo-lee",
+          "context": "Hinde: ngulli",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "Nzoka",
+          "pronunciation": "n-zoh-kah",
+          "context": "Hinde Ulu: enjoka; Nganyawa: mweanthi",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken",
+          "translation": "Ngũkũ",
+          "pronunciation": "n-goo-koo",
+          "context": "Hinde: nguku",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Ĩkũyũ",
+          "pronunciation": "ee-koo-yoo",
+          "context": "Plural: Makũyũ (Hinde: ikuyu, pl. makuyu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hare",
+          "translation": "Kavokoo",
+          "pronunciation": "kah-voh-koh",
+          "context": "Hinde: kabokō (folk trickster figure)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Food",
+          "translation": "Lĩu / Ĩlya",
+          "pronunciation": "lee-oo / ee-lyah",
+          "context": "Hinde Ulu: leū; Nganyawa: chakueer / kandu",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Manzĩ",
+          "pronunciation": "mahn-zee",
+          "context": "Hinde: maanzi",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Ĩya",
+          "pronunciation": "ee-yah",
+          "context": "Fresh milk (Hinde: iya); sour/buttermilk: kalia",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Nyama",
+          "pronunciation": "nyah-mah",
+          "context": "Hinde Ulu: nyamma; Nganyawa: nama",
+          "audioFile": null
+        },
+        {
+          "english": "Maize",
+          "translation": "Mbemba",
+          "pronunciation": "m-behm-bah",
+          "context": "Hinde: mbēmba",
+          "audioFile": null
+        },
+        {
+          "english": "Beans (pigeon peas / pulses)",
+          "translation": "Nthoogo / Nthzũũ",
+          "pronunciation": "n-thoh-goh / n-thzoo",
+          "context": "Hinde: inthoogo; tree beans: nthzuu",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "Maĩyũ",
+          "pronunciation": "mah-ee-yoo",
+          "context": "Hinde: maĩyu",
+          "audioFile": null
+        },
+        {
+          "english": "Sweet potato",
+          "translation": "Makwasĩ",
+          "pronunciation": "mah-kwah-see",
+          "context": "Hinde Ulu: makwasi; Nganyawa: makwatzi",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "Wũkĩ",
+          "pronunciation": "woo-kee",
+          "context": "Renowned Ukambani honey (Hinde: ukki wa nzuki)",
+          "audioFile": null
+        },
+        {
+          "english": "Millet",
+          "translation": "Mbeea",
+          "pronunciation": "m-beh-eh-ah",
+          "context": "Traditional drought-resistant grain (Hinde: mbīa)",
+          "audioFile": null
+        },
+        {
+          "english": "Sugar cane",
+          "translation": "Mũwa",
+          "pronunciation": "moo-wah",
+          "context": "Hinde: iwa",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "Mũnyũ",
+          "pronunciation": "moo-nyoo",
+          "context": "Hinde: munyu",
+          "audioFile": null
+        },
+        {
+          "english": "Butter / Oil / Fat",
+          "translation": "Mauta",
+          "pronunciation": "mah-oo-tah",
+          "context": "Hinde: maota; clarified: mauta mavivia",
+          "audioFile": null
+        },
+        {
+          "english": "Flour",
+          "translation": "Mũtu",
+          "pronunciation": "moo-too",
+          "context": "Milled grain flour (Hinde: mutu)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts",
+      "icon": "🧍",
+      "entries": [
+        {
+          "english": "Body",
+          "translation": "Mwĩĩ",
+          "pronunciation": "mwee-ee",
+          "context": "Hinde Ulu: mwi; Nganyawa: mwili",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Mũtwe",
+          "pronunciation": "moo-tweh",
+          "context": "Hinde: mutue",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Ĩtho",
+          "pronunciation": "ee-thoh",
+          "context": "Plural: Meetho (Hinde: itho, pl. meetho)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Kũtũ",
+          "pronunciation": "koo-too",
+          "context": "Hinde Ulu: matu (pl); Nganyawa: kutu",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "Ĩnyũ",
+          "pronunciation": "ee-nyoo",
+          "context": "Hinde: inyu",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "Mũomo",
+          "pronunciation": "moo-oh-moh",
+          "context": "Hinde: moomo",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "Ĩyo",
+          "pronunciation": "ee-yoh",
+          "context": "Plural: Mayo (Hinde: maiyo)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "Wĩmĩ / Kanywa",
+          "pronunciation": "wee-mee / kah-nywah",
+          "context": "Hinde Ulu: kanyua; Nganyawa: wimi",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Kĩng'ee",
+          "pronunciation": "kee-ngeh-eh",
+          "context": "Hinde Ulu: kingē; Nganyawa: kiaiu",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "Ngingo",
+          "pronunciation": "n-geen-goh",
+          "context": "Hinde Ulu: ngingo; Nganyawa: njingo",
+          "audioFile": null
+        },
+        {
+          "english": "Chest",
+          "translation": "Kĩthũi",
+          "pronunciation": "kee-thoo-ee",
+          "context": "Hinde: kithui",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Ngoo / Ndeĩ",
+          "pronunciation": "n-goh-oh / n-deh-ee",
+          "context": "Hinde Ulu: ndei; Nganyawa: ethaiyu",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach / Belly",
+          "translation": "Ĩvũ",
+          "pronunciation": "ee-voo",
+          "context": "Hinde Ulu: ebŭ; Nganyawa: ibu",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Mũongo",
+          "pronunciation": "moo-ohn-goh",
+          "context": "Hinde Ulu: muongo; Nganyawa: moongo",
+          "audioFile": null
+        },
+        {
+          "english": "Arm / Hand",
+          "translation": "Kwoko",
+          "pronunciation": "kwoh-koh",
+          "context": "Hinde Ulu: kuoko; Nganyawa: ntha; Plural: Moko",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "Kũũ",
+          "pronunciation": "koo-oo",
+          "context": "Hinde: kuu; Plural: Maũ",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Ĩvĩndĩ",
+          "pronunciation": "ee-veen-dee",
+          "context": "Plural: Mavĩndĩ (Hinde: ivindi, pl. mavindi)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Nthakame",
+          "pronunciation": "n-thah-kah-meh",
+          "context": "Hinde Ulu: nthakame; Nganyawa: ndagami",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "Kya",
+          "pronunciation": "kyah",
+          "context": "Plural: Syĩa / Thia (Hinde: kia, pl. thia)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "Ĩu",
+          "pronunciation": "ee-oo",
+          "context": "Hinde: iyu; Plural: Mau",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Tools & Household Objects",
+      "icon": "🏹",
+      "entries": [
+        {
+          "english": "Knife",
+          "translation": "Kaviu",
+          "pronunciation": "kah-vee-oo",
+          "context": "Hinde Ulu: kabiu; Nganyawa: kaviu",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "Ũta",
+          "pronunciation": "oo-tah",
+          "context": "Hinde Ulu: uta; Nganyawa: itumo; classic hunting weapon",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Mũsye",
+          "pronunciation": "moo-syeh",
+          "context": "Hinde Ulu: musie; Nganyawa: mutchi",
+          "audioFile": null
+        },
+        {
+          "english": "Quiver (for arrows)",
+          "translation": "Thyaka",
+          "pronunciation": "thyah-kah",
+          "context": "Hinde Ulu: thiaka; Nganyawa: ithiaga",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "Ĩtũmũ",
+          "pronunciation": "ee-too-moo",
+          "context": "Hinde: itumu",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "Ngao",
+          "pronunciation": "n-gah-oh",
+          "context": "Hinde: ningau",
+          "audioFile": null
+        },
+        {
+          "english": "Axe",
+          "translation": "Ĩthoka",
+          "pronunciation": "ee-thoh-kah",
+          "context": "Plural: Mathoka (Hinde: ithoka, pl. mathoka)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional woven bag",
+          "translation": "Chõõndo / Ngũsũ",
+          "pronunciation": "chohn-doh / n-goo-soo",
+          "context": "Hinde Ulu: ngussu; Nganyawa: chõõndo; famous sisal woven bag",
+          "audioFile": null
+        },
+        {
+          "english": "Stool / Chair",
+          "translation": "Kĩvĩla / Kĩtũmbĩ",
+          "pronunciation": "kee-vee-lah / kee-toom-bee",
+          "context": "Hinde Ulu: kibilla; Nganyawa: kitumbi",
+          "audioFile": null
+        },
+        {
+          "english": "Clay cooking pot",
+          "translation": "Nyũngũ",
+          "pronunciation": "nyoon-goo",
+          "context": "Hinde Ulu: nuungu; Nganyawa: ithillia / mbiitziu",
+          "audioFile": null
+        },
+        {
+          "english": "Calabash / Gourd",
+          "translation": "Kĩkũũ / Kĩthanzya",
+          "pronunciation": "kee-koo-oo / kee-thahn-zyah",
+          "context": "Hinde Ulu: kikuu; Nganyawa: kithalzia",
+          "audioFile": null
+        },
+        {
+          "english": "Beehive",
+          "translation": "Mwatũ",
+          "pronunciation": "mwah-too",
+          "context": "Hinde: mwatu; traditional hollow log hive hung in trees",
+          "audioFile": null
+        },
+        {
+          "english": "Sandal",
+          "translation": "Kĩatũ",
+          "pronunciation": "kee-ah-too",
+          "context": "Plural: Iatũ (Hinde: kiatu, pl. iatu)",
+          "audioFile": null
+        },
+        {
+          "english": "Wooden Mortar",
+          "translation": "Ndĩĩ",
+          "pronunciation": "n-dee-ee",
+          "context": "Traditional heavy mortar used for pounding grain",
+          "audioFile": null
+        },
+        {
+          "english": "Razor",
+          "translation": "Wenzĩ",
+          "pronunciation": "wehn-zee",
+          "context": "Hinde: wenzi; traditional fine iron blade",
+          "audioFile": null
+        },
+        {
+          "english": "Rope / Cord",
+          "translation": "Ũlĩ / Ndi",
+          "pronunciation": "oo-lee / n-dee",
+          "context": "Hinde Ulu: uli; Nganyawa: ndi",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs & Actions",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To eat",
+          "translation": "Kũya",
+          "pronunciation": "koo-yah",
+          "context": "Hinde Ulu: tuje / guya; Nganyawa: kwer",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Kũnywa",
+          "pronunciation": "koo-nywah",
+          "context": "Hinde Ulu: gunwa / gunya; Nganyawa: kunuya",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / farm",
+          "translation": "Kũĩma",
+          "pronunciation": "koo-ee-mah",
+          "context": "Hinde: kuimu",
+          "audioFile": null
+        },
+        {
+          "english": "To build",
+          "translation": "Kwaka",
+          "pronunciation": "kwah-kah",
+          "context": "Hinde: kuaka",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "Kũua",
+          "pronunciation": "koo-oo-ah",
+          "context": "Hinde Ulu: kuuer; Nganyawa: kūūē",
+          "audioFile": null
+        },
+        {
+          "english": "To walk / go",
+          "translation": "Kũthi",
+          "pronunciation": "koo-thee",
+          "context": "Hinde: kuthi; Nganyawa: guthi",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Kũka",
+          "pronunciation": "koo-kah",
+          "context": "Hinde: kuka",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "Kũona / Kũkĩĩtha",
+          "pronunciation": "koo-oh-nah / koo-kee-ee-thah",
+          "context": "Hinde: kukiitha / kuona",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "Kũmanya",
+          "pronunciation": "koo-mah-nyah",
+          "context": "Hinde: kumanya",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / talk",
+          "translation": "Kũneena",
+          "pronunciation": "koo-neh-eh-nah",
+          "context": "Hinde: kunēēna / gunēēna",
+          "audioFile": null
+        },
+        {
+          "english": "To buy",
+          "translation": "Kũũa / Kũtho",
+          "pronunciation": "koo-oo-ah / koo-thoh",
+          "context": "Hinde Ulu: kūer; Nganyawa: gutho",
+          "audioFile": null
+        },
+        {
+          "english": "To sell",
+          "translation": "Kũthoosya",
+          "pronunciation": "koo-thoh-oh-syah",
+          "context": "Hinde Ulu: guthozia; Nganyawa: kuta",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "Kũnenga",
+          "pronunciation": "koo-nehn-gah",
+          "context": "Hinde: kumunenge",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep",
+          "translation": "Kũkoma",
+          "pronunciation": "koo-koh-mah",
+          "context": "Hinde: kukoma",
+          "audioFile": null
+        },
+        {
+          "english": "To work",
+          "translation": "Kũrũta wĩa",
+          "pronunciation": "koo-roo-tah wee-ah",
+          "context": "Hinde Ulu: uuia; Nganyawa: mawia",
+          "audioFile": null
+        },
+        {
+          "english": "To ask",
+          "translation": "Kũkũlya",
+          "pronunciation": "koo-koo-lyah",
+          "context": "Hinde Ulu: gukulia; Nganyawa: kwibaja",
+          "audioFile": null
+        },
+        {
+          "english": "To sing",
+          "translation": "Kwĩna",
+          "pronunciation": "kwee-nah",
+          "context": "Hinde Ulu: kwina; Nganyawa: kukwea",
+          "audioFile": null
+        },
+        {
+          "english": "To love / want",
+          "translation": "Kwenda",
+          "pronunciation": "kwehn-dah",
+          "context": "Hinde Ulu: gumwenda; Nganyawa: guenda",
+          "audioFile": null
+        },
+        {
+          "english": "To run",
+          "translation": "Kũsemba",
+          "pronunciation": "koo-sehm-bah",
+          "context": "Hinde: sēēmba",
+          "audioFile": null
+        },
+        {
+          "english": "To pray / beg",
+          "translation": "Kũvoya",
+          "pronunciation": "koo-voh-yah",
+          "context": "Hinde: kuvoiya",
+          "audioFile": null
+        },
+        {
+          "english": "To die",
+          "translation": "Kũkwa",
+          "pronunciation": "koo-kwah",
+          "context": "Hinde Ulu: kwie; Nganyawa: kugua",
+          "audioFile": null
+        },
+        {
+          "english": "To wash",
+          "translation": "Kũthamba",
+          "pronunciation": "koo-thahm-bah",
+          "context": "Hinde: kuthamba",
+          "audioFile": null
+        },
+        {
+          "english": "To laugh",
+          "translation": "Kũtheka",
+          "pronunciation": "koo-theh-kah",
+          "context": "Recorded by J.T. Last (1885): ku-theka; Hinde (1904): gutheka",
+          "audioFile": null
+        },
+        {
+          "english": "To forgive / pardon",
+          "translation": "Kwĩekana",
+          "pronunciation": "kwee-eh-kah-nah",
+          "context": "Recorded by J.T. Last (1885): kw-iekana",
+          "audioFile": null
+        },
+        {
+          "english": "To surpass / excel",
+          "translation": "Kũkila",
+          "pronunciation": "koo-kee-lah",
+          "context": "Auxiliary comparative verb recorded by J.T. Last (1885): ku-kila",
+          "audioFile": null
+        },
+        {
+          "english": "To hunt / track game",
+          "translation": "Kũthaima",
+          "pronunciation": "koo-thah-ee-mah",
+          "context": "Recorded by J.T. Last (1885): ku-thaima",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "Yes",
+          "translation": "Ĩĩ / Nĩw'o",
+          "pronunciation": "ee-ee / nee-woh",
+          "context": "Hinde Ulu: newua; Nganyawa: nigwo",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Aiee / Nde",
+          "pronunciation": "ah-ee-eh-eh / n-deh",
+          "context": "Hinde: ndi / aiyee",
+          "audioFile": null
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Wĩtawa ata?",
+          "pronunciation": "wee-tah-wah ah-tah",
+          "context": "Hinde Ulu: wita wata?",
+          "audioFile": null
+        },
+        {
+          "english": "My name is...",
+          "translation": "Nĩtawa...",
+          "pronunciation": "nee-tah-wah",
+          "context": "Response: 'I am called...'",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you going?",
+          "translation": "Ũthĩ naku?",
+          "pronunciation": "oo-thee nah-koo",
+          "context": "Hinde Ulu: uthi naku?",
+          "audioFile": null
+        },
+        {
+          "english": "What do you want?",
+          "translation": "Wĩndakĩ?",
+          "pronunciation": "ween-dah-kee",
+          "context": "Hinde Ulu: wendakki?",
+          "audioFile": null
+        },
+        {
+          "english": "Where do you come from?",
+          "translation": "Wumĩte va?",
+          "pronunciation": "woo-mee-teh vah",
+          "context": "Hinde Ulu: uomanakko?",
+          "audioFile": null
+        },
+        {
+          "english": "Come here",
+          "translation": "Ũka vaa",
+          "pronunciation": "oo-kah vah-ah",
+          "context": "Hinde: uka haha / uka vaa",
+          "audioFile": null
+        },
+        {
+          "english": "Bring water",
+          "translation": "Ete manzĩ",
+          "pronunciation": "eh-teh mahn-zee",
+          "context": "Hinde Ulu: ete maanzi",
+          "audioFile": null
+        },
+        {
+          "english": "Bring food",
+          "translation": "Ete lĩu",
+          "pronunciation": "eh-teh lee-oo",
+          "context": "Hinde Ulu: ete lēu",
+          "audioFile": null
+        },
+        {
+          "english": "I do not know",
+          "translation": "Ndimanya",
+          "pronunciation": "n-dee-mah-nyah",
+          "context": "Hinde Ulu: ndimanya",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine / good",
+          "translation": "Nĩ mũseo",
+          "pronunciation": "nee moo-seh-oh",
+          "context": "Hinde Ulu: nimaseo",
+          "audioFile": null
+        },
+        {
+          "english": "I love you",
+          "translation": "Nĩnkwendete",
+          "pronunciation": "neen-kwehn-deh-teh",
+          "context": "Expression of deep love",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Ngai / Mũlũngũ",
+          "pronunciation": "n-gah-ee / moo-loo-ngoo",
+          "context": "Hinde Ulu: ngaii; Nganyawa: milungu",
+          "audioFile": null
+        },
+        {
+          "english": "Good / Fine",
+          "translation": "Mũseo",
+          "pronunciation": "moo-seh-oh",
+          "context": "Hinde Ulu: -zeo; Nganyawa: -cheo",
+          "audioFile": null
+        },
+        {
+          "english": "Be quiet",
+          "translation": "Vindya",
+          "pronunciation": "veen-dyah",
+          "context": "Hinde Ulu: pindia; Nganyawa: monakilongo",
+          "audioFile": null
+        },
+        {
+          "english": "Go away / Leave",
+          "translation": "Thi / Enda",
+          "pronunciation": "thee / ehn-dah",
+          "context": "Hinde Ulu: eenda or thi",
+          "audioFile": null
+        },
+        {
+          "english": "All is well",
+          "translation": "Kũtĩ ũthũku",
+          "pronunciation": "koo-tee oo-thoo-koo",
+          "context": "Literally 'there is no evil / trouble'",
+          "audioFile": null
+        },
+        {
+          "english": "Myself",
+          "translation": "Ng'o yakwa",
+          "pronunciation": "ngoh yah-kwah",
+          "context": "Literally 'my heart' — classical 1885 reflexive recorded by J.T. Last",
+          "audioFile": null
+        },
+        {
+          "english": "Ourselves",
+          "translation": "Ng'o sitũ",
+          "pronunciation": "ngoh see-too",
+          "context": "Literally 'our hearts' — collective reflexive recorded by J.T. Last (1885)",
+          "audioFile": null
+        },
+        {
+          "english": "Peacefully / Sweetly",
+          "translation": "Kwa mũuo",
+          "pronunciation": "kwah moo-oo-oh",
+          "context": "Manner adverb for peaceful action recorded by J.T. Last (1885)",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

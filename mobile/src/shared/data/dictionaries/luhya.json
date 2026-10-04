@@ -1,0 +1,2540 @@
+{
+  "languageId": "luhya",
+  "languageName": "Luhya (Luyia)",
+  "family": "bantu",
+  "nativeName": "Oluluyia",
+  "script": "Latin",
+  "speakerCount": 6800000,
+  "counties": [
+    "Kakamega",
+    "Bungoma",
+    "Vihiga",
+    "Busia"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.2.0",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Compiled from 'A First Course in Luyia Grammar' (G. Donohew, Kima) and 'A First Luyia Grammar' (L. L. Appleby, 1961, East African Literature Bureau) with standard Luyia cross-dialect orthography. Enriched with authentic Oluluyia / Olushiwanga vocabulary from the 'Wanga-English Dictionary' (Alfred Anangwe & Michael R. Marlo, 2008) and comprehensive Lubukusu dialect vocabulary from the 'Bukusu-English Dictionary' (Michael Marlo, Adrian Sifuna & Aggrey Wasike, 2008).",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello",
+          "translation": "Mulembe",
+          "pronunciation": "moo-lehm-beh",
+          "context": "Universal greeting (lit. 'peace'), spoken to one person",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (to many)",
+          "translation": "Milembe",
+          "pronunciation": "mee-lehm-beh",
+          "context": "Spoken when greeting multiple people together",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Oli orie?",
+          "pronunciation": "oh-lee oh-ree-eh",
+          "context": "Singular inquiry: 'How are you?' (Plural: Muli murie?)",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine / well",
+          "translation": "Endi bulayi",
+          "pronunciation": "ehn-dee boo-lah-yee",
+          "context": "Standard response to greeting (Plural: Khuli bulayi)",
+          "audioFile": null
+        },
+        {
+          "english": "Are you well / healthy?",
+          "translation": "Oli omulamu?",
+          "pronunciation": "oh-lee oh-moo-lah-moo",
+          "context": "Lit. 'Are you with life/health?' (Plural: Muli abalamu?)",
+          "audioFile": null
+        },
+        {
+          "english": "Yes, I am well",
+          "translation": "Ee, endi omulamu",
+          "pronunciation": "eh-eh ehn-dee oh-moo-lah-moo",
+          "context": "Affirmative health confirmation",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Bushieele!",
+          "pronunciation": "boo-shee-eh-leh",
+          "context": "Morning greeting (lit. 'It has dawned / become light'); also: Efwe bulekhesie",
+          "audioFile": null
+        },
+        {
+          "english": "Good afternoon / evening",
+          "translation": "Bwakheele / Bwileele",
+          "pronunciation": "bwah-kheh-leh / bwee-leh-leh",
+          "context": "Salutation used when afternoon or dusk approaches",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Orio muno",
+          "pronunciation": "oh-ree-oh moo-noh",
+          "context": "'Orio' = thank you (to one); 'Murio' = to many; 'muno' = very much",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye",
+          "translation": "Olindwe / Khulolebwe",
+          "pronunciation": "oh-leen-dweh / khoo-loh-leh-bweh",
+          "context": "Parting blessing: 'May you be preserved' / 'We shall see each other'",
+          "audioFile": null
+        },
+        {
+          "english": "Go well",
+          "translation": "Tsia bulayi",
+          "pronunciation": "tsee-ah boo-lah-yee",
+          "context": "Said to departing travelers (Plural: Mutsie bulayi)",
+          "audioFile": null
+        },
+        {
+          "english": "Stay well",
+          "translation": "Menya bulayi",
+          "pronunciation": "meh-nyah boo-lah-yee",
+          "context": "Said by departing traveler to hosts (Plural: Mumenye bulayi)",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Karibu / Ingira",
+          "pronunciation": "kah-ree-boo / een-gee-rah",
+          "context": "'Ingira' = enter / come inside",
+          "audioFile": null
+        },
+        {
+          "english": "Sorry / Sympathy",
+          "translation": "Sundwa / Pole",
+          "pronunciation": "soon-dwah / poh-leh",
+          "context": "Expression of empathy or apology",
+          "audioFile": null
+        },
+        {
+          "english": "Greet those at home",
+          "translation": "Shiesia abeingo",
+          "pronunciation": "shee-eh-see-ah ah-beh-een-goh",
+          "context": "Warm courteous farewell message for family",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Ndala / Mulala",
+          "pronunciation": "ndah-lah / moo-lah-lah",
+          "context": "Root: -lala; 'ndala' (Class 9/10), 'mulala' (person, Class 1)",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Tsibili / Babili",
+          "pronunciation": "tsee-bee-lee / bah-bee-lee",
+          "context": "Root: -bili; 'babili' (people), 'tsibili' (animals/objects)",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Tsitaru / Bataru",
+          "pronunciation": "tsee-tah-roo / bah-tah-roo",
+          "context": "Root: -taru; 'bataru' (people), 'tsitaru' (things)",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Tsine / Bane",
+          "pronunciation": "tsee-neh / bah-neh",
+          "context": "Root: -ne; 'bane' (people), 'tsine' (objects)",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Tsirano / Baraano",
+          "pronunciation": "tsee-rah-noh / bah-rah-ah-noh",
+          "context": "Root: -raano; 'baraano' (people), 'tsirano' (things)",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Sasaba / Bisasaba",
+          "pronunciation": "sah-sah-bah / bee-sah-sah-bah",
+          "context": "Traditional Bantu numeral; also 'sita'",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Musaafo / Saba",
+          "pronunciation": "moo-sah-ah-foh / sah-bah",
+          "context": "Traditional Luyia number; also 'saba'",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Munaane",
+          "pronunciation": "moo-nah-ah-neh",
+          "context": "Cardinal 8 across western Bantu",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Shienda / Tisa",
+          "pronunciation": "shee-ehn-dah / tee-sah",
+          "context": "Traditional Luyia 9; also 'fisa'",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Likhumi / Ekhumi",
+          "pronunciation": "lee-khoo-mee / eh-khoo-mee",
+          "context": "Plural: Amakhumi (tens)",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven",
+          "translation": "Likhumi na ndala",
+          "pronunciation": "lee-khoo-mee nah ndah-lah",
+          "context": "Lit. 'ten and one'",
+          "audioFile": null
+        },
+        {
+          "english": "Twelve",
+          "translation": "Likhumi na tsibili",
+          "pronunciation": "lee-khoo-mee nah tsee-bee-lee",
+          "context": "Lit. 'ten and two'",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Amakhumi kabili",
+          "pronunciation": "ah-mah-khoo-mee kah-bee-lee",
+          "context": "Lit. 'two tens'",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Amakhumi kataru",
+          "pronunciation": "ah-mah-khoo-mee kah-tah-roo",
+          "context": "Lit. 'three tens'",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "Egana / Eshikana",
+          "pronunciation": "eh-gah-nah / eh-shee-kah-nah",
+          "context": "Cardinal 100",
+          "audioFile": null
+        },
+        {
+          "english": "Thousand",
+          "translation": "Elufu",
+          "pronunciation": "eh-loo-foo",
+          "context": "Cardinal 1,000",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Father",
+          "translation": "Papa / Taata",
+          "pronunciation": "pah-pah / tah-ah-tah",
+          "context": "Also 'Seefwe' (our father)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Mama / Mayi",
+          "pronunciation": "mah-mah / mah-yee",
+          "context": "Also 'Neefwe' (our mother)",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Omwana",
+          "pronunciation": "ohm-wah-nah",
+          "context": "Plural: Abaana (the children)",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "Omusaatsa",
+          "pronunciation": "oh-moo-sah-ah-tsah",
+          "context": "Plural: Abasaatsa (men / adult males)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Omukhasi",
+          "pronunciation": "oh-moo-khah-see",
+          "context": "Plural: Abakhasi (women / married women)",
+          "audioFile": null
+        },
+        {
+          "english": "Boy",
+          "translation": "Omusiani",
+          "pronunciation": "oh-moo-see-ah-nee",
+          "context": "Plural: Abasiani (the boys / youths)",
+          "audioFile": null
+        },
+        {
+          "english": "Girl",
+          "translation": "Omukhaana",
+          "pronunciation": "oh-moo-khah-ah-nah",
+          "context": "Plural: Abakhaana (the girls / young women)",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "Omwitsa / Omwina",
+          "pronunciation": "ohm-wee-tsah / ohm-wee-nah",
+          "context": "Plural: Abeetsa / Abalina (friends / companions)",
+          "audioFile": null
+        },
+        {
+          "english": "Person",
+          "translation": "Omundu",
+          "pronunciation": "oh-moon-doo",
+          "context": "Plural: Abandu (people / human beings)",
+          "audioFile": null
+        },
+        {
+          "english": "Leader / Chief",
+          "translation": "Omwami",
+          "pronunciation": "ohm-wah-mee",
+          "context": "Plural: Abaami (honored chiefs or elders)",
+          "audioFile": null
+        },
+        {
+          "english": "Teacher",
+          "translation": "Omwechesia",
+          "pronunciation": "ohm-weh-cheh-see-ah",
+          "context": "Plural: Abeechesia (teachers / educators)",
+          "audioFile": null
+        },
+        {
+          "english": "Pupil / Student",
+          "translation": "Omwechi",
+          "pronunciation": "ohm-weh-chee",
+          "context": "Plural: Abeechi (pupils / learners)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather",
+          "translation": "Kuuka",
+          "pronunciation": "koo-oo-kah",
+          "context": "Grandfather or revered elder male",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmother",
+          "translation": "Gogo",
+          "pronunciation": "goh-goh",
+          "context": "Grandmother or revered matriarch",
+          "audioFile": null
+        },
+        {
+          "english": "Sibling (opposite sex)",
+          "translation": "Mbotswa",
+          "pronunciation": "mboh-tswah",
+          "context": "Brother to female speaker; sister to male speaker",
+          "audioFile": null
+        },
+        {
+          "english": "In-law",
+          "translation": "Mulamwa",
+          "pronunciation": "moo-lahm-wah",
+          "context": "Brother-in-law or sister-in-law",
+          "audioFile": null
+        },
+        {
+          "english": "Elder woman / Matron",
+          "translation": "Omushiele",
+          "pronunciation": "oh-moo-shee-eh-leh",
+          "context": "Plural: Abashiele (term of deep respect for senior women)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Dining",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Food",
+          "translation": "Ebiakhulia",
+          "pronunciation": "eh-bee-ah-khoo-lee-ah",
+          "context": "Also 'Kumakula' (provisions / foodstuffs)",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Amatsi / Amanji",
+          "pronunciation": "ah-mah-tsee / ah-mahn-jee",
+          "context": "Plural noun in Class 6 (essential staple)",
+          "audioFile": null
+        },
+        {
+          "english": "Ugali (Maize meal)",
+          "translation": "Obusuma",
+          "pronunciation": "oh-boo-soo-mah",
+          "context": "The central Luhya staple meal made from maize, sorghum or millet",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Inyama",
+          "pronunciation": "een-yah-mah",
+          "context": "Class 9 noun",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Amabeele",
+          "pronunciation": "ah-mah-beh-eh-leh",
+          "context": "Fresh cow or goat milk",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken",
+          "translation": "Ingokho",
+          "pronunciation": "een-goh-khoh",
+          "context": "Premier ceremonial feast food in Luhya culture",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Ifula / Eshisutu",
+          "pronunciation": "ee-foo-lah / eh-shee-soo-too",
+          "context": "Freshwater river or lake fish",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "Omunyu",
+          "pronunciation": "oh-moo-nyoo",
+          "context": "Also traditional herbal ash salt (omusherekha)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional greens",
+          "translation": "Tsimbindi / Tsisaka",
+          "pronunciation": "tseem-been-dee / tsee-sah-kah",
+          "context": "Indigenous leafy vegetables (cowpeas, spider plant)",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "Obuchi",
+          "pronunciation": "oh-boo-chee",
+          "context": "Pure wild beehive honey",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "Eliyai / Liyai",
+          "pronunciation": "eh-lee-yah-yee / lee-yah-yee",
+          "context": "Plural: Amayai (or amabuyu)",
+          "audioFile": null
+        },
+        {
+          "english": "Banana / Plantain",
+          "translation": "Lirabu / Litoro",
+          "pronunciation": "lee-rah-boo / lee-toh-roh",
+          "context": "Plural: Amarabu / Amatore",
+          "audioFile": null
+        },
+        {
+          "english": "Sweet potatoes",
+          "translation": "Amapwoni",
+          "pronunciation": "ah-mah-pwoh-nee",
+          "context": "Tubers harvested from village shambas",
+          "audioFile": null
+        },
+        {
+          "english": "Porridge",
+          "translation": "Obusera",
+          "pronunciation": "oh-boo-seh-rah",
+          "context": "Nutritious breakfast or convalescent drink",
+          "audioFile": null
+        },
+        {
+          "english": "Tea",
+          "translation": "Lichaai",
+          "pronunciation": "lee-chah-ah-ee",
+          "context": "Steaming spiced Kenyan tea",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Pastoralism",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Cow",
+          "translation": "Ing'ombe",
+          "pronunciation": "eeng-ohm-beh",
+          "context": "Plural: Tsing'ombe (cattle / herd)",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "Indume / Inyikwasi",
+          "pronunciation": "een-doo-meh / een-yee-kwah-see",
+          "context": "Prized breeding or draft bull",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Imbusi",
+          "pronunciation": "eem-boo-see",
+          "context": "Plural: Tsimbusi",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Likhondi",
+          "pronunciation": "lee-khohn-dee",
+          "context": "Plural: Amakhondi",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Embwa",
+          "pronunciation": "ehm-bwah",
+          "context": "Plural: Tsimbwa (homestead guard dog)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Inzofu",
+          "pronunciation": "een-zoh-foo",
+          "context": "Plural: Tsinzofu",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "Inzokha",
+          "pronunciation": "een-zoh-khah",
+          "context": "Plural: Tsinzokha",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Inyoni",
+          "pronunciation": "een-yoh-nee",
+          "context": "Plural: Tsinyoni",
+          "audioFile": null
+        },
+        {
+          "english": "Tortoise",
+          "translation": "Ekhutu",
+          "pronunciation": "eh-khoo-too",
+          "context": "Plural: Tsikhutu (frequent character in folklore)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "Ingwe",
+          "pronunciation": "eeng-weh",
+          "context": "Revered symbol of royalty and bravery",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Itarakhu / Enengo",
+          "pronunciation": "ee-tah-rah-khoo / eh-nehn-goh",
+          "context": "The king of beasts",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "Imbiti",
+          "pronunciation": "eem-bee-tee",
+          "context": "Plural: Tsimbiti",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌳",
+      "entries": [
+        {
+          "english": "God",
+          "translation": "Nyasaye / Wele",
+          "pronunciation": "nyah-sah-yeh / weh-leh",
+          "context": "The Almighty Supreme Creator",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "Enyanga / Eliuba",
+          "pronunciation": "ehn-yahn-gah / eh-lee-oo-bah",
+          "context": "Also signifies daylight or daytime",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "Omwesi",
+          "pronunciation": "ohm-weh-see",
+          "context": "Plural: Emiesi",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Omulilo",
+          "pronunciation": "oh-moo-lee-loh",
+          "context": "Plural: Emililo (hearth / domestic flame)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Imbula",
+          "pronunciation": "eem-boo-lah",
+          "context": "Essential gift for farming in western Kenya",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Land / Soil",
+          "translation": "Eloba",
+          "pronunciation": "eh-loh-bah",
+          "context": "Also 'Elwanyi' (outside ground / open country)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Omusaala",
+          "pronunciation": "oh-moo-sah-ah-lah",
+          "context": "Plural: Emisaala (also means medicinal wood/cure)",
+          "audioFile": null
+        },
+        {
+          "english": "River / Stream",
+          "translation": "Oluche / Omuchela",
+          "pronunciation": "oh-loo-cheh / oh-moo-cheh-lah",
+          "context": "Plural: Tsinje / Emichela",
+          "audioFile": null
+        },
+        {
+          "english": "Hill / Mountain",
+          "translation": "Eshikulu",
+          "pronunciation": "eh-shee-koo-loo",
+          "context": "Plural: Ebikulu (e.g. Kakamega / Maragoli hills)",
+          "audioFile": null
+        },
+        {
+          "english": "Wind / Air",
+          "translation": "Imbweela / Omukhuuka",
+          "pronunciation": "eem-bweh-eh-lah / oh-moo-khoo-oo-kah",
+          "context": "Gentle breeze or rushing wind",
+          "audioFile": null
+        },
+        {
+          "english": "Sky / Heaven",
+          "translation": "Likulu",
+          "pronunciation": "lee-koo-loo",
+          "context": "The expansive heavens above",
+          "audioFile": null
+        },
+        {
+          "english": "Night / Darkness",
+          "translation": "Bwile / Eshilu",
+          "pronunciation": "bwee-leh / eh-shee-loo",
+          "context": "Nighttime period",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Home & Village",
+      "icon": "🏡",
+      "entries": [
+        {
+          "english": "House",
+          "translation": "Enju / Enyumba",
+          "pronunciation": "ehn-joo / ehn-yoom-bah",
+          "context": "Plural: Tsinju / Tsinyumba",
+          "audioFile": null
+        },
+        {
+          "english": "Home / Homestead",
+          "translation": "Hango / Ingo",
+          "pronunciation": "hahn-goh / een-goh",
+          "context": "'Abeingo' = family members at home",
+          "audioFile": null
+        },
+        {
+          "english": "Farm / Garden",
+          "translation": "Omukunda",
+          "pronunciation": "oh-moo-koon-dah",
+          "context": "Plural: Emikunda (fertile crop plot)",
+          "audioFile": null
+        },
+        {
+          "english": "Road / Path",
+          "translation": "Omuhanda / Injila",
+          "pronunciation": "oh-moo-hahn-dah / een-jee-lah",
+          "context": "Plural: Emihanda / Tsinjila",
+          "audioFile": null
+        },
+        {
+          "english": "Bed",
+          "translation": "Eshitanda",
+          "pronunciation": "eh-shee-tahn-dah",
+          "context": "Plural: Ebitanda",
+          "audioFile": null
+        },
+        {
+          "english": "Chair / Stool",
+          "translation": "Eshisaala",
+          "pronunciation": "eh-shee-sah-ah-lah",
+          "context": "Plural: Ebisaala",
+          "audioFile": null
+        },
+        {
+          "english": "Table",
+          "translation": "Emessa",
+          "pronunciation": "eh-meh-sah",
+          "context": "Plural: Tsimessa",
+          "audioFile": null
+        },
+        {
+          "english": "Spoon",
+          "translation": "Eshichiko",
+          "pronunciation": "eh-shee-chee-koh",
+          "context": "Plural: Ebichiko",
+          "audioFile": null
+        },
+        {
+          "english": "Cup",
+          "translation": "Eshikombe",
+          "pronunciation": "eh-shee-kohm-beh",
+          "context": "Plural: Ebikombe",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "Eshikosi / Inyungu",
+          "pronunciation": "eh-shee-koh-see / een-yoon-goo",
+          "context": "Earthenware or metal cooking vessel",
+          "audioFile": null
+        },
+        {
+          "english": "Book",
+          "translation": "Eshitabo",
+          "pronunciation": "eh-shee-tah-boh",
+          "context": "Plural: Ebitabo",
+          "audioFile": null
+        },
+        {
+          "english": "Door",
+          "translation": "Olwiji",
+          "pronunciation": "ohl-wee-jee",
+          "context": "Plural: Tsinjiji",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "Yes",
+          "translation": "Ee / Yii",
+          "pronunciation": "eh-eh / yee-ee",
+          "context": "Standard affirmative agreement",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Tawe / Seee",
+          "pronunciation": "tah-weh / seh-eh",
+          "context": "Standard negative response",
+          "audioFile": null
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Lisina lyoo ni wina?",
+          "pronunciation": "lee-see-nah lyoh-oh nee wee-nah",
+          "context": "Courteous introduction inquiry",
+          "audioFile": null
+        },
+        {
+          "english": "My name is...",
+          "translation": "Lisina lianje ni...",
+          "pronunciation": "lee-see-nah lee-ahn-jeh nee",
+          "context": "Introduction statement",
+          "audioFile": null
+        },
+        {
+          "english": "I love you",
+          "translation": "Nakhukunda / Enzanza",
+          "pronunciation": "nah-khoo-koon-dah / ehn-zahn-zah",
+          "context": "Expression of deep affection",
+          "audioFile": null
+        },
+        {
+          "english": "Please",
+          "translation": "Khusaba",
+          "pronunciation": "khoo-sah-bah",
+          "context": "Lit. 'we ask / appeal politely'",
+          "audioFile": null
+        },
+        {
+          "english": "I don't know",
+          "translation": "Shimanyile tawe",
+          "pronunciation": "shee-mah-nyee-leh tah-weh",
+          "context": "Lit. 'I have not known'",
+          "audioFile": null
+        },
+        {
+          "english": "I know / understand",
+          "translation": "Mmanyile",
+          "pronunciation": "m-mah-nyee-leh",
+          "context": "Comprehension affirmation",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you going?",
+          "translation": "Otsia heena?",
+          "pronunciation": "oh-tsee-ah heh-eh-nah",
+          "context": "Question to someone on the move (Plural: Mutsia heena?)",
+          "audioFile": null
+        },
+        {
+          "english": "I am going home",
+          "translation": "Enzia ingo",
+          "pronunciation": "ehn-zee-ah een-goh",
+          "context": "Common destination statement",
+          "audioFile": null
+        },
+        {
+          "english": "What is this?",
+          "translation": "Shino ni shiina?",
+          "pronunciation": "shee-noh nee shee-ee-nah",
+          "context": "Question identifying an object",
+          "audioFile": null
+        },
+        {
+          "english": "Who is that?",
+          "translation": "Oyo ni wina?",
+          "pronunciation": "oh-yoh nee wee-nah",
+          "context": "Inquiring about an individual",
+          "audioFile": null
+        },
+        {
+          "english": "How much is this?",
+          "translation": "Shino ni shinga?",
+          "pronunciation": "shee-noh nee sheen-gah",
+          "context": "Price inquiry at markets",
+          "audioFile": null
+        },
+        {
+          "english": "Help me",
+          "translation": "Nkhoonya",
+          "pronunciation": "n-khoh-ohn-yah",
+          "context": "Direct polite appeal for assistance",
+          "audioFile": null
+        },
+        {
+          "english": "Come here",
+          "translation": "Itsa hano",
+          "pronunciation": "ee-tsah hah-noh",
+          "context": "Invitation to approach",
+          "audioFile": null
+        },
+        {
+          "english": "Sit down",
+          "translation": "Ikhala hasi",
+          "pronunciation": "ee-khah-lah hah-see",
+          "context": "Courteous hospitality command",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Heart / Soul",
+          "translation": "Omwoyo",
+          "pronunciation": "ohm-woh-yoh",
+          "context": "Plural: Emioyo",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Omurwe",
+          "pronunciation": "oh-moo-rweh",
+          "context": "Plural: Emirwe",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Elisho",
+          "pronunciation": "eh-lee-shoh",
+          "context": "Plural: Tsimoni / Amoni",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Elirwi",
+          "pronunciation": "eh-lee-rwee",
+          "context": "Plural: Amarwi",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "Eliino",
+          "pronunciation": "eh-lee-ee-noh",
+          "context": "Plural: Ameeno",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "Omukhono",
+          "pronunciation": "oh-moo-khoh-noh",
+          "context": "Plural: Emikhono",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "Olukulu",
+          "pronunciation": "oh-loo-koo-loo",
+          "context": "Plural: Tsikulu",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Amatsaai",
+          "pronunciation": "ah-mah-tsah-ah-ee",
+          "context": "Life liquid",
+          "audioFile": null
+        },
+        {
+          "english": "Strength / Power",
+          "translation": "Amaani",
+          "pronunciation": "ah-mah-ah-nee",
+          "context": "Bodily strength or capability",
+          "audioFile": null
+        },
+        {
+          "english": "Health / Life",
+          "translation": "Obulamu",
+          "pronunciation": "oh-boo-lah-moo",
+          "context": "Vitality, wellbeing, and breath",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time & Calendar",
+      "icon": "⏳",
+      "entries": [
+        {
+          "english": "Today",
+          "translation": "Leelo",
+          "pronunciation": "leh-eh-loh",
+          "context": "Present day",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Mgolobe",
+          "pronunciation": "m-goh-loh-beh",
+          "context": "Day before today",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Muchuli",
+          "pronunciation": "moo-choo-lee",
+          "context": "Day after today",
+          "audioFile": null
+        },
+        {
+          "english": "Morning",
+          "translation": "Mutsuli / Mukamba",
+          "pronunciation": "moo-tsoo-lee / moo-kahm-bah",
+          "context": "Early morning hours",
+          "audioFile": null
+        },
+        {
+          "english": "Noon / Midday",
+          "translation": "Mubasu / Eshiteere",
+          "pronunciation": "moo-bah-soo / eh-shee-teh-eh-reh",
+          "context": "Peak sunlight hours",
+          "audioFile": null
+        },
+        {
+          "english": "Evening",
+          "translation": "Mukolooba",
+          "pronunciation": "moo-koh-loh-oh-bah",
+          "context": "Dusk and sunset time",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "Omwaka",
+          "pronunciation": "ohm-wah-kah",
+          "context": "Plural: Emiaka",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "Bulano",
+          "pronunciation": "boo-lah-noh",
+          "context": "Right at this moment",
+          "audioFile": null
+        },
+        {
+          "english": "Always",
+          "translation": "Khatstoto / Buli lwosi",
+          "pronunciation": "khah-tstoh-toh / boo-lee lwoh-see",
+          "context": "Ever continually",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs & Actions",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To speak / talk",
+          "translation": "Okhuboola",
+          "pronunciation": "oh-khoo-boh-oh-lah",
+          "context": "Present: aboola (he/she speaks)",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "Okhuteekha",
+          "pronunciation": "oh-khoo-teh-eh-khah",
+          "context": "Present: ateekha (he/she cooks)",
+          "audioFile": null
+        },
+        {
+          "english": "To live / reside",
+          "translation": "Okhumenya",
+          "pronunciation": "oh-khoo-meh-nyah",
+          "context": "Present: amenya (he/she lives)",
+          "audioFile": null
+        },
+        {
+          "english": "To see / look",
+          "translation": "Okhulola",
+          "pronunciation": "oh-khoo-loh-lah",
+          "context": "Present: alola (he/she sees)",
+          "audioFile": null
+        },
+        {
+          "english": "To help",
+          "translation": "Okhukhoonya",
+          "pronunciation": "oh-khoo-khoh-ohn-yah",
+          "context": "Present: akhoonya (he/she helps)",
+          "audioFile": null
+        },
+        {
+          "english": "To ask / inquire",
+          "translation": "Okhureeba",
+          "pronunciation": "oh-khoo-reh-eh-bah",
+          "context": "Present: areeba (he/she asks)",
+          "audioFile": null
+        },
+        {
+          "english": "To do / work / make",
+          "translation": "Okhukhola",
+          "pronunciation": "oh-khoo-khoh-lah",
+          "context": "Present: akhola (he/she does/works)",
+          "audioFile": null
+        },
+        {
+          "english": "To count",
+          "translation": "Okhubala",
+          "pronunciation": "oh-khoo-bah-lah",
+          "context": "Present: abala (he/she counts)",
+          "audioFile": null
+        },
+        {
+          "english": "To be able / can",
+          "translation": "Okhunyala",
+          "pronunciation": "oh-khoo-nyah-lah",
+          "context": "Present: anyala (he/she can)",
+          "audioFile": null
+        },
+        {
+          "english": "To read / study",
+          "translation": "Okhusoma",
+          "pronunciation": "oh-khoo-soh-mah",
+          "context": "Present: asoma (he/she reads)",
+          "audioFile": null
+        },
+        {
+          "english": "To teach",
+          "translation": "Okhwechesia",
+          "pronunciation": "oh-khweh-cheh-see-ah",
+          "context": "Present: awechesia (he/she teaches)",
+          "audioFile": null
+        },
+        {
+          "english": "To travel / walk",
+          "translation": "Okhuchenda",
+          "pronunciation": "oh-khoo-chehn-dah",
+          "context": "Present: achenda (he/she walks)",
+          "audioFile": null
+        },
+        {
+          "english": "To arrive",
+          "translation": "Okhuula",
+          "pronunciation": "oh-khoo-oo-lah",
+          "context": "Present: aula (he/she arrives)",
+          "audioFile": null
+        },
+        {
+          "english": "To buy",
+          "translation": "Okhukula",
+          "pronunciation": "oh-khoo-koo-lah",
+          "context": "Present: akula (he/she buys)",
+          "audioFile": null
+        },
+        {
+          "english": "To sell",
+          "translation": "Okhukusia",
+          "pronunciation": "oh-khoo-koo-see-ah",
+          "context": "Present: akusia (he/she sells)",
+          "audioFile": null
+        },
+        {
+          "english": "To eat",
+          "translation": "Okhulia",
+          "pronunciation": "oh-khoo-lee-ah",
+          "context": "Present: alia (he/she eats)",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Okhunywa",
+          "pronunciation": "oh-khoo-nywah",
+          "context": "Present: anywa (he/she drinks)",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep",
+          "translation": "Okhukona",
+          "pronunciation": "oh-khoo-koh-nah",
+          "context": "Present: akona (he/she sleeps)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "kinship-community",
+      "name": "Kinship & Community (Olushiwanga)",
+      "icon": "👥",
+      "entries": [
+        {
+          "english": "Ancestors / Forefathers",
+          "translation": "Abakuka",
+          "pronunciation": "ah-bah-koo-kah",
+          "context": "(n. pl., cl. 2, sg. kuka) Grandfathers, forefathers, ancestors in Wanga tradition",
+          "audioFile": null
+        },
+        {
+          "english": "Grandparents",
+          "translation": "Abakulo",
+          "pronunciation": "ah-bah-koo-loh",
+          "context": "(n. pl., cl. 2) Grandparents, with whom a child can speak freely without the taboo associated with parents",
+          "audioFile": null
+        },
+        {
+          "english": "Children",
+          "translation": "Abana",
+          "pronunciation": "ah-bah-nah",
+          "context": "(n. pl., cl. 2, sg. omwana) Children, offspring, descendants",
+          "audioFile": null
+        },
+        {
+          "english": "Child / Baby",
+          "translation": "Omwana",
+          "pronunciation": "oh-mwah-nah",
+          "context": "(n., cl. 1, pl. abana) Child, infant, son or daughter",
+          "audioFile": null
+        },
+        {
+          "english": "Person / Human being",
+          "translation": "Omundu",
+          "pronunciation": "oh-moon-doo",
+          "context": "(n., cl. 1, pl. abandu) Person, individual, human being",
+          "audioFile": null
+        },
+        {
+          "english": "People / Humanity",
+          "translation": "Abandu",
+          "pronunciation": "ah-bahn-doo",
+          "context": "(n. pl., cl. 2, sg. omundu) People, community, humankind",
+          "audioFile": null
+        },
+        {
+          "english": "Parents",
+          "translation": "Abarye",
+          "pronunciation": "ah-bah-ryeh",
+          "context": "(n. pl., cl. 2, sg. omurye) Parents, to whom a child must show formal respect, deference, and honor",
+          "audioFile": null
+        },
+        {
+          "english": "Cousin",
+          "translation": "Akhasi",
+          "pronunciation": "ah-khah-see",
+          "context": "(n., cl. 12) Cousin, child of maternal uncle or paternal aunt",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "Omukhasi",
+          "pronunciation": "oh-moo-khah-see",
+          "context": "(n., cl. 1, pl. abakhasi) Woman, married woman, wife (omukhasi wanje = my wife)",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband",
+          "translation": "Omusatsa",
+          "pronunciation": "oh-moo-sah-tsah",
+          "context": "(n., cl. 1, pl. abasatsa) Man, adult male, husband (omusatsa wanje = my husband)",
+          "audioFile": null
+        },
+        {
+          "english": "Luhya person / Clan member",
+          "translation": "Omuluyia",
+          "pronunciation": "oh-moo-loo-yee-ah",
+          "context": "(n., cl. 1, pl. Abaluyia) Person belonging to the Luyia nation; lit. member of the same hearth/clan",
+          "audioFile": null
+        },
+        {
+          "english": "Chief / Traditional ruler",
+          "translation": "Omwami",
+          "pronunciation": "oh-mwah-mee",
+          "context": "(n., cl. 1, pl. abami) Chief, king, honorable lord, leader of high prestige",
+          "audioFile": null
+        },
+        {
+          "english": "King (Wanga monarch)",
+          "translation": "Nabongo",
+          "pronunciation": "nah-bohn-goh",
+          "context": "(n., cl. 1) Hereditary king and paramount ruler of the historic Kingdom of Wanga",
+          "audioFile": null
+        },
+        {
+          "english": "Elder / Senior leader",
+          "translation": "Omukhulundu",
+          "pronunciation": "oh-moo-khoo-loon-doo",
+          "context": "(n., cl. 1, pl. abakhulundu) Elder, senior, family head with customary authority",
+          "audioFile": null
+        },
+        {
+          "english": "Girl / Daughter",
+          "translation": "Omukhaana",
+          "pronunciation": "oh-moo-khah-ah-nah",
+          "context": "(n., cl. 1, pl. abakhaana) Girl, unmarried maiden, daughter, sister",
+          "audioFile": null
+        },
+        {
+          "english": "Boy / Son",
+          "translation": "Omusiani",
+          "pronunciation": "oh-moo-see-ah-nee",
+          "context": "(n., cl. 1, pl. abasiani) Boy, youth, son",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Nyina",
+          "pronunciation": "nyee-nah",
+          "context": "(n., cl. 1) Mother (nyinefwe = our mother; mama = my mother; mawo = your mother)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Papa",
+          "pronunciation": "pah-pah",
+          "context": "(n., cl. 1, pl. baapapa) Father (seefwe = our father; samwana = his father)",
+          "audioFile": null
+        },
+        {
+          "english": "Friend / Companion",
+          "translation": "Omwitsa",
+          "pronunciation": "oh-mwee-tsah",
+          "context": "(n., cl. 1, pl. abeetsa; also omulina) Friend, companion, comrade",
+          "audioFile": null
+        },
+        {
+          "english": "Playmate / Peer",
+          "translation": "Omukulo",
+          "pronunciation": "oh-moo-koo-loh",
+          "context": "(n., cl. 1) Equal peer with whom one shares joking familiarity, contrasted with omurye",
+          "audioFile": null
+        },
+        {
+          "english": "Bridegroom / Son-in-law",
+          "translation": "Omukhwi",
+          "pronunciation": "oh-moo-khwee",
+          "context": "(n., cl. 1, pl. abakhwi) Bridegroom, one paying dowry, son-in-law",
+          "audioFile": null
+        },
+        {
+          "english": "Bride",
+          "translation": "Omweha",
+          "pronunciation": "oh-mweh-hah",
+          "context": "(n., cl. 1, pl. abeeha / abeeya) Bride, newly wed woman",
+          "audioFile": null
+        },
+        {
+          "english": "Full siblings / Children of one mother",
+          "translation": "Abomunzu ndala",
+          "pronunciation": "ah-boh-moon-zoo ndah-lah",
+          "context": "(np., cl. 2) Full brothers and sisters; lit. 'children born of one house'",
+          "audioFile": null
+        },
+        {
+          "english": "Kinship / Clan relation",
+          "translation": "Obwikho",
+          "pronunciation": "oh-bwee-khoh",
+          "context": "(n., cl. 14) Kinship, blood relation, clan connection",
+          "audioFile": null
+        },
+        {
+          "english": "Foreigner / Neighbouring person",
+          "translation": "Omurende",
+          "pronunciation": "oh-moo-rehn-deh",
+          "context": "(n., cl. 1, pl. abarende) Person of a neighboring tribe, foreigner, neighbor",
+          "audioFile": null
+        },
+        {
+          "english": "Senior first wife",
+          "translation": "Omukhasi omukhulundu",
+          "pronunciation": "oh-moo-khah-see oh-moo-khoo-loon-doo",
+          "context": "(np., cl. 1) First wife holding supreme domestic authority in the compound",
+          "audioFile": null
+        },
+        {
+          "english": "Heir / Designated successor",
+          "translation": "Omulaame",
+          "pronunciation": "oh-moo-lah-ah-meh",
+          "context": "(n., cl. 1, pl. abalaame) Heir, designated inheritor receiving father's blessing (okhulaama)",
+          "audioFile": null
+        },
+        {
+          "english": "Initiation candidates",
+          "translation": "Abeirumbi",
+          "pronunciation": "ah-beh-ee-room-bee",
+          "context": "(n. pl., cl. 2) Young men secluded in the circumcision lodge during initiation",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature-animals",
+      "name": "Nature & Animals (Olushiwanga)",
+      "icon": "🐾",
+      "entries": [
+        {
+          "english": "Ground squirrel / Folk trickster hero",
+          "translation": "Akhamuna",
+          "pronunciation": "ah-khah-moo-nah",
+          "context": "(n., cl. 12; also eshimuna) Ground squirrel; famed hero of Luyia folklore tales (Anakhamuna)",
+          "audioFile": null
+        },
+        {
+          "english": "Kid / Young goat",
+          "translation": "Akhameme",
+          "pronunciation": "ah-khah-meh-meh",
+          "context": "(n., cl. 12; also eshimeme, cl. 7) Kid, young goat",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "Ing'ombe",
+          "pronunciation": "eeng-ohm-beh",
+          "context": "(n., cl. 9, pl. tsing'ombe) Cow, bull, head of cattle (vital store of wealth)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Embwa",
+          "pronunciation": "ehm-bwah",
+          "context": "(n., cl. 9, pl. tsimbwa; also imbwa) Domestic dog, hunting and guard animal",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "Eliruba",
+          "pronunciation": "eh-lee-roo-bah",
+          "context": "(n., cl. 5; also eliuba / elyuba) Sun, daylight source (elyuba liumire = midday)",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Lunar month",
+          "translation": "Omweli",
+          "pronunciation": "oh-mweh-lee",
+          "context": "(n., cl. 3, pl. emieli; also omwesi) Moon, calendar month",
+          "audioFile": null
+        },
+        {
+          "english": "Hammer",
+          "translation": "Inyondo",
+          "pronunciation": "een-yohn-doh",
+          "context": "(n., cl. 9, pl. tsinyondo) Iron hammer, traditional blacksmith's forging tool",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Amatsi",
+          "pronunciation": "ah-mah-tsah-ee",
+          "context": "(n. pl., cl. 6; also amaatsi) Water for drinking, cooking, and washing",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Italanyi",
+          "pronunciation": "ee-tah-lah-nyee",
+          "context": "(n., cl. 9, pl. tsitalanyi) Lion, king of wild beasts",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "Ingwe",
+          "pronunciation": "eeng-gweh",
+          "context": "(n., cl. 9, pl. tsingwe) Leopard, honored clan totem and symbol of stealth",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Inzofu",
+          "pronunciation": "een-zoh-foo",
+          "context": "(n., cl. 9, pl. tsinzofu) Elephant",
+          "audioFile": null
+        },
+        {
+          "english": "Snake / Serpent",
+          "translation": "Inzokha",
+          "pronunciation": "een-zoh-khah",
+          "context": "(n., cl. 9, pl. tsinzokha) Snake, serpent, reptile",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Imbusi",
+          "pronunciation": "eem-boo-see",
+          "context": "(n., cl. 9, pl. tsimbusi) Goat, common domestic livestock",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Likondi",
+          "pronunciation": "lee-kohn-dee",
+          "context": "(n., cl. 5, pl. amakondi) Sheep",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken / Fowl",
+          "translation": "Ingokho",
+          "pronunciation": "eeng-goh-khoh",
+          "context": "(n., cl. 9, pl. tsingokho) Chicken, domestic fowl; customary dish for honored guests",
+          "audioFile": null
+        },
+        {
+          "english": "Rooster / Cock",
+          "translation": "Itaywa",
+          "pronunciation": "ee-tah-ywah",
+          "context": "(n., cl. 9, pl. tsitaywa) Rooster, cockerel whose crow heralds the dawn",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Inyeni",
+          "pronunciation": "een-yeh-nee",
+          "context": "(n., cl. 9, pl. tsinyeni) Fish, caught with hook (omulobo) or net",
+          "audioFile": null
+        },
+        {
+          "english": "Honeybee / Swarm",
+          "translation": "Inzushi",
+          "pronunciation": "een-zoo-shee",
+          "context": "(n., cl. 9, pl. tsinzushi) Honeybee, producer of honey (obushi)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Ifula",
+          "pronunciation": "ee-foo-lah",
+          "context": "(n., cl. 9) Rain; life-giving precipitation (irotso = main rainy season)",
+          "audioFile": null
+        },
+        {
+          "english": "River / Stream",
+          "translation": "Omwalo",
+          "pronunciation": "oh-mwah-loh",
+          "context": "(n., cl. 3, pl. emyalo) River, natural flowing watercourse",
+          "audioFile": null
+        },
+        {
+          "english": "Lake / Inland sea",
+          "translation": "Inyanza",
+          "pronunciation": "een-yahn-zah",
+          "context": "(n., cl. 9) Lake, large lake (e.g. Lake Victoria / Nyanza)",
+          "audioFile": null
+        },
+        {
+          "english": "Hill / Mountain",
+          "translation": "Eshikulu",
+          "pronunciation": "eh-shee-koo-loo",
+          "context": "(n., cl. 7, pl. ebikulu) Hill, elevated ridge, mountain",
+          "audioFile": null
+        },
+        {
+          "english": "Fire / Flame",
+          "translation": "Omulilo",
+          "pronunciation": "oh-moo-lee-loh",
+          "context": "(n., cl. 3, pl. emililo) Fire, heat, hearth flame",
+          "audioFile": null
+        },
+        {
+          "english": "Bright star / Morning star",
+          "translation": "Isulwe",
+          "pronunciation": "ee-sool-weh",
+          "context": "(n., cl. 9, pl. tsisulwe) Bright morning or evening star",
+          "audioFile": null
+        },
+        {
+          "english": "Rock / Boulder",
+          "translation": "Olwanda",
+          "pronunciation": "ohl-wahn-dah",
+          "context": "(n., cl. 11, pl. tsinyanda) Rock, large stone cliff or outcrop",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Plant",
+          "translation": "Omusaala",
+          "pronunciation": "oh-moo-sah-ah-lah",
+          "context": "(n., cl. 3, pl. emisaala) Tree, standing timber, medicinal plant",
+          "audioFile": null
+        },
+        {
+          "english": "Wind / Breeze",
+          "translation": "Omuyeka",
+          "pronunciation": "oh-moo-yeh-kah",
+          "context": "(n., cl. 3) Wind, air current, breeze",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Imboko",
+          "pronunciation": "eem-boh-koh",
+          "context": "(n., cl. 9, pl. tsimboko) Wild African buffalo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "wanga-verbs",
+      "name": "Actions & Verbs (Olushiwanga)",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "To do / To make / To work",
+          "translation": "Okhukora",
+          "pronunciation": "oh-khoo-koh-rah",
+          "context": "(v.tr.; also okhukhola) To do, make, execute work, accomplish a task",
+          "audioFile": null
+        },
+        {
+          "english": "To eat",
+          "translation": "Okhulia",
+          "pronunciation": "oh-khoo-lee-ah",
+          "context": "(v.tr.; also okhulya) To eat, consume food, dine",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Okhunywa",
+          "pronunciation": "oh-khoo-nywah",
+          "context": "(v.tr.) To drink liquids; okhunywa amaatsi = to drink water",
+          "audioFile": null
+        },
+        {
+          "english": "To go / To proceed",
+          "translation": "Okhutsia",
+          "pronunciation": "oh-khoo-tsee-ah",
+          "context": "(v.int.; also okhutsya) To go, walk away, proceed on a journey",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Okhwicha",
+          "pronunciation": "oh-khwee-chah",
+          "context": "(v.int.; also okhwitsa) To come, approach, arrive here",
+          "audioFile": null
+        },
+        {
+          "english": "To see / To look",
+          "translation": "Okhulola",
+          "pronunciation": "oh-khoo-loh-lah",
+          "context": "(v.tr.) To see, observe, gaze upon (irregular perfective: endutsi / ndalutsi)",
+          "audioFile": null
+        },
+        {
+          "english": "To ask (a question)",
+          "translation": "Okhureba",
+          "pronunciation": "oh-khoo-reh-bah",
+          "context": "(v.tr./int.) To ask a question, inquire, examine through questions",
+          "audioFile": null
+        },
+        {
+          "english": "To come from / To originate",
+          "translation": "Okhwaama",
+          "pronunciation": "oh-khwah-ah-mah",
+          "context": "(v.int.; also okhurula) To come from, originate at, emerge from",
+          "audioFile": null
+        },
+        {
+          "english": "To pray / To bless / To bequeath",
+          "translation": "Okhulaama",
+          "pronunciation": "oh-khoo-lah-ah-mah",
+          "context": "(v.tr./int.; also okhulama) To pray, bless, invoke favor, bequeath inheritance",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / To converse",
+          "translation": "Okhuloma",
+          "pronunciation": "oh-khoo-loh-mah",
+          "context": "(v.tr./int.) To speak, utter words, talk with someone",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / To listen / To obey",
+          "translation": "Okhuulira",
+          "pronunciation": "oh-khoo-oo-lee-rah",
+          "context": "(v.tr.; also okhuhulila) To hear, listen attentively, perceive, obey",
+          "audioFile": null
+        },
+        {
+          "english": "To build / To erect",
+          "translation": "Okhwumbakha",
+          "pronunciation": "oh-khwoom-bah-khah",
+          "context": "(v.tr.; also okhumbakha) To build a house or traditional structure",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / To farm / To dig",
+          "translation": "Okhulima",
+          "pronunciation": "oh-khoo-lee-mah",
+          "context": "(v.tr./int.) To till soil, cultivate crops, dig with hoe (imbako)",
+          "audioFile": null
+        },
+        {
+          "english": "To know / To understand",
+          "translation": "Okhumanya",
+          "pronunciation": "oh-khoo-mah-nyah",
+          "context": "(v.tr.) To know, acquire knowledge, comprehend (emanyire = I know)",
+          "audioFile": null
+        },
+        {
+          "english": "To cook / To prepare food",
+          "translation": "Okhuteekha",
+          "pronunciation": "oh-khoo-teh-eh-khah",
+          "context": "(v.tr.) To cook food, boil vegetables or meat over the hearth",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep / To lie down",
+          "translation": "Okhukona",
+          "pronunciation": "oh-khoo-koh-nah",
+          "context": "(v.int.) To sleep, recline, rest overnight",
+          "audioFile": null
+        },
+        {
+          "english": "To give / To bestow",
+          "translation": "Okhuwa",
+          "pronunciation": "oh-khoo-wah",
+          "context": "(v.tr.; also okhuha / okhuhaana) To give, bestow, hand over a gift",
+          "audioFile": null
+        },
+        {
+          "english": "To buy / To purchase",
+          "translation": "Okhukula",
+          "pronunciation": "oh-khoo-koo-lah",
+          "context": "(v.tr.) To purchase, exchange goods or money for items",
+          "audioFile": null
+        },
+        {
+          "english": "To sell",
+          "translation": "Okhukusia",
+          "pronunciation": "oh-khoo-koo-see-ah",
+          "context": "(v.tr.) To sell commodities, market goods",
+          "audioFile": null
+        },
+        {
+          "english": "To run / To sprint",
+          "translation": "Okhwirukha",
+          "pronunciation": "oh-khwee-roo-khah",
+          "context": "(v.int.) To run fast, dash, flee from danger",
+          "audioFile": null
+        },
+        {
+          "english": "To bathe / To wash oneself",
+          "translation": "Okhwisinga",
+          "pronunciation": "oh-khwee-seen-gah",
+          "context": "(v.refl.) To wash one's whole body, take a bath",
+          "audioFile": null
+        },
+        {
+          "english": "To sing",
+          "translation": "Okhwimba",
+          "pronunciation": "oh-khweem-bah",
+          "context": "(v.tr./int.) To sing a traditional song or melody",
+          "audioFile": null
+        },
+        {
+          "english": "To dance",
+          "translation": "Okhushina",
+          "pronunciation": "oh-khoo-shee-nah",
+          "context": "(v.int.; also okhwibinza) To dance to drumming and singing",
+          "audioFile": null
+        },
+        {
+          "english": "To laugh",
+          "translation": "Okhutsekha",
+          "pronunciation": "oh-khoo-tseh-khah",
+          "context": "(v.int.) To laugh, chuckle with amusement",
+          "audioFile": null
+        },
+        {
+          "english": "To weep / To cry",
+          "translation": "Okhulira",
+          "pronunciation": "oh-khoo-lee-rah",
+          "context": "(v.int.) To weep, lament, shed tears",
+          "audioFile": null
+        },
+        {
+          "english": "To bring / To fetch",
+          "translation": "Okhureera",
+          "pronunciation": "oh-khoo-reh-eh-rah",
+          "context": "(v.tr.; also okhurera / okhwenda) To bring, fetch, deliver to",
+          "audioFile": null
+        },
+        {
+          "english": "To guard / To look after",
+          "translation": "Okhulinda",
+          "pronunciation": "oh-khoo-leen-dah",
+          "context": "(v.tr./int.) To wait, guard, protect, watch over cattle or family",
+          "audioFile": null
+        },
+        {
+          "english": "To love / To desire",
+          "translation": "Okhwenya",
+          "pronunciation": "oh-khweh-nyah",
+          "context": "(v.tr.; also okhuera / okhuheela) To want, love, cherish, desire",
+          "audioFile": null
+        },
+        {
+          "english": "To give birth / To bear offspring",
+          "translation": "Okhwibula",
+          "pronunciation": "oh-khwee-boo-lah",
+          "context": "(v.tr./int.) To give birth, bear a child, beget children",
+          "audioFile": null
+        },
+        {
+          "english": "To marry a wife",
+          "translation": "Okhuteeshia",
+          "pronunciation": "oh-khoo-teh-eh-shee-ah",
+          "context": "(v.tr.; also okhureera omukhasi) To marry (of a man taking a bride)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-adjectives",
+      "name": "Adjectives & Descriptive Terms (Olushiwanga)",
+      "icon": "🎨",
+      "entries": [
+        {
+          "english": "Clever / Wise / Bright",
+          "translation": "Abachesi",
+          "pronunciation": "ah-bah-cheh-see",
+          "context": "(adj. pl., cl. 2, sg. omuchesi, stem -chesi) Clever, wise, intelligent, sharp-minded",
+          "audioFile": null
+        },
+        {
+          "english": "Bad / Evil / Ugly / Unpleasant",
+          "translation": "Ababi",
+          "pronunciation": "ah-bah-bee",
+          "context": "(adj. pl., cl. 2, sg. omubi, stem -bi) Bad, wrongful, immoral, ugly, offensive",
+          "audioFile": null
+        },
+        {
+          "english": "Good / Beautiful / Fine",
+          "translation": "Abalayi",
+          "pronunciation": "ah-bah-lah-yee",
+          "context": "(adj. pl., cl. 2, sg. omulayi, stem -layi) Good, handsome, beautiful, righteous",
+          "audioFile": null
+        },
+        {
+          "english": "True / Truthful / Correct",
+          "translation": "Abatieri",
+          "pronunciation": "ah-bah-tee-eh-ree",
+          "context": "(adj. pl., cl. 2, stem -atieri) Honest, truthful, right, authentic",
+          "audioFile": null
+        },
+        {
+          "english": "Little / Small / Few",
+          "translation": "Abatiti",
+          "pronunciation": "ah-bah-tee-tee",
+          "context": "(adj. pl., cl. 2, sg. omutiti, stem -titi) Small in size, little, few in number",
+          "audioFile": null
+        },
+        {
+          "english": "Big / Large / Senior",
+          "translation": "Abakhongo",
+          "pronunciation": "ah-bah-khohn-goh",
+          "context": "(adj. pl., cl. 2, sg. omukhongo, stem -khongo) Big, grand, important, eminent",
+          "audioFile": null
+        },
+        {
+          "english": "Trustworthy / Faithful / Reliable",
+          "translation": "Abesikwa",
+          "pronunciation": "ah-beh-see-kwah",
+          "context": "(adj. pl., cl. 2, sg. omwisikwa, stem -isikwa) Dependable, faithful, loyal",
+          "audioFile": null
+        },
+        {
+          "english": "Foreign / Novel / Unusual",
+          "translation": "Abacheni",
+          "pronunciation": "ah-bah-cheh-nee",
+          "context": "(adj. pl., cl. 2, stem -cheni) Foreign, strange, novel, unfamiliar",
+          "audioFile": null
+        },
+        {
+          "english": "Fierce / Bad-tempered",
+          "translation": "Abahalaba",
+          "pronunciation": "ah-bah-hah-lah-bah",
+          "context": "(adj. pl., cl. 2, stem -halaba) Fierce, quick-tempered, scolding disposition",
+          "audioFile": null
+        },
+        {
+          "english": "Lazy / Weak",
+          "translation": "Abatofu",
+          "pronunciation": "ah-bah-toh-foo",
+          "context": "(adj. pl., cl. 2, stem -tofu) Lazy, lacking endurance or willpower",
+          "audioFile": null
+        },
+        {
+          "english": "Short",
+          "translation": "Abembikiti",
+          "pronunciation": "ah-behm-bee-kee-tee",
+          "context": "(adj. pl., cl. 2, sg. omwimbikiti, stem -imbikiti) Short in height or stature",
+          "audioFile": null
+        },
+        {
+          "english": "Tall / Long / High",
+          "translation": "Abarambi",
+          "pronunciation": "ah-bah-rahm-bee",
+          "context": "(adj. pl., cl. 2, sg. omurambi, stem -rambi) Tall, long, deep, high",
+          "audioFile": null
+        },
+        {
+          "english": "White / Clean / Pure / Holy",
+          "translation": "Abalafu",
+          "pronunciation": "ah-bah-lah-foo",
+          "context": "(adj. pl., cl. 2, sg. omulafu, stem -lafu) White, clean, pure, spotless; holy saints",
+          "audioFile": null
+        },
+        {
+          "english": "Black / Dark-complexioned",
+          "translation": "Abamali",
+          "pronunciation": "ah-bah-mah-lee",
+          "context": "(adj. pl., cl. 2, sg. omumali, stem -mali) Black, dark in shade or complexion",
+          "audioFile": null
+        },
+        {
+          "english": "Alive / Living / Healthy",
+          "translation": "Abalamu",
+          "pronunciation": "ah-bah-lah-moo",
+          "context": "(adj. pl., cl. 2, sg. omulamu, stem -lamu) Alive, healthy, full of life",
+          "audioFile": null
+        },
+        {
+          "english": "Fierce / Bitter / Sharp",
+          "translation": "Amalulu",
+          "pronunciation": "ah-mah-loo-loo",
+          "context": "(adj. pl., cl. 6, stem -lulu) Sharp, bitter, fierce, severe",
+          "audioFile": null
+        },
+        {
+          "english": "Ripe / Matured",
+          "translation": "Amenjefu",
+          "pronunciation": "ah-mehn-jeh-foo",
+          "context": "(adj. pl., cl. 6, stem -enjefu) Ripe, ready for eating, fully matured",
+          "audioFile": null
+        },
+        {
+          "english": "Unripe / Green",
+          "translation": "Amachishi",
+          "pronunciation": "ah-mah-chee-shee",
+          "context": "(adj. pl., cl. 6, stem -chishi) Unripe, immature, green",
+          "audioFile": null
+        },
+        {
+          "english": "Warm / Fresh",
+          "translation": "Amayu",
+          "pronunciation": "ah-mah-yoo",
+          "context": "(adj. pl., cl. 6) Warm, fresh (e.g. amabeere amayu = fresh warm milk)",
+          "audioFile": null
+        },
+        {
+          "english": "Cold / Damp",
+          "translation": "Eshinyifu",
+          "pronunciation": "eh-shee-nyee-foo",
+          "context": "(adj., cl. 7, stem -nyifu) Cold, chilly, damp to the touch",
+          "audioFile": null
+        },
+        {
+          "english": "New / Modern / Recent",
+          "translation": "Eshiyakha",
+          "pronunciation": "eh-shee-yah-khah",
+          "context": "(adj., cl. 7, stem -yakha; also efiya) Brand new, novel, recent",
+          "audioFile": null
+        },
+        {
+          "english": "Red / Reddish-brown",
+          "translation": "Akhakhanyu",
+          "pronunciation": "ah-khah-khah-nyoo",
+          "context": "(adj., cl. 12, stem -akhanyu) Red, scarlet, orange, brownish-red",
+          "audioFile": null
+        },
+        {
+          "english": "Whole / Complete / Undivided",
+          "translation": "Bukala",
+          "pronunciation": "boo-kah-lah",
+          "context": "(adv./adj.) Whole, complete, unbroken, intact",
+          "audioFile": null
+        },
+        {
+          "english": "Firm / Hard / Tough",
+          "translation": "Obutinyu",
+          "pronunciation": "oh-boo-teen-yoo",
+          "context": "(adj./n., cl. 14, stem -tinyu) Hard, tough, resolute, unyielding",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "culture-traditions",
+      "name": "Cultural & Traditional Life (Olushiwanga)",
+      "icon": "🏺",
+      "entries": [
+        {
+          "english": "Village courtyard / Communal open space",
+          "translation": "Alwanyi",
+          "pronunciation": "ahl-wah-nyee",
+          "context": "(n./adv.) Open space in the center of the village; communal gathering courtyard",
+          "audioFile": null
+        },
+        {
+          "english": "Sign / Symbol / Miraculous mark",
+          "translation": "Eshilolero",
+          "pronunciation": "eh-shee-loh-leh-roh",
+          "context": "(n., cl. 7, pl. ebilolero; also akhalolero) Sign, symbol, brand mark, wonder",
+          "audioFile": null
+        },
+        {
+          "english": "Woven traditional basket",
+          "translation": "Akhandamwa",
+          "pronunciation": "ah-khahn-dah-mwah",
+          "context": "(n., cl. 12, pl. obundamwa) Fine woven grain basket used for serving flour and meals",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / Tranquility / Wellbeing",
+          "translation": "Obubwoni",
+          "pronunciation": "oh-boo-bwoh-nee",
+          "context": "(n., cl. 14; also obwihotseresi) Peace, serene tranquility, communal wellbeing",
+          "audioFile": null
+        },
+        {
+          "english": "Universal peace / Blessing salutation",
+          "translation": "Omulembe",
+          "pronunciation": "oh-moo-lehm-beh",
+          "context": "(n., cl. 3) Peace, wellness; root of the sacred greeting 'Mulembe' across all Luhya",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestral homestead / Village compound",
+          "translation": "Litaala",
+          "pronunciation": "lee-tah-ah-lah",
+          "context": "(n., cl. 5, pl. amataala) Traditional kraal, fortified homestead, family village",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional home / House",
+          "translation": "Inzu",
+          "pronunciation": "een-zoo",
+          "context": "(n., cl. 9, pl. tsinzu; also ingo = at home) Family dwelling, house, home sanctuary",
+          "audioFile": null
+        },
+        {
+          "english": "Folktale / Traditional fable",
+          "translation": "Olukano",
+          "pronunciation": "oh-loo-kah-noh",
+          "context": "(n., cl. 11, pl. tsinkano) Story, fable, legend passed down orally through generations",
+          "audioFile": null
+        },
+        {
+          "english": "Proverb / Parable of wisdom",
+          "translation": "Oluchero",
+          "pronunciation": "oh-loo-cheh-roh",
+          "context": "(n., cl. 11, pl. tsinchero) Parable, philosophical proverb encapsulating tribal wisdom",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional song / Melodic chant",
+          "translation": "Olwimbo",
+          "pronunciation": "ohl-weem-boh",
+          "context": "(n., cl. 11, pl. tsimbimbo) Song, festive melody, ceremonial chorus",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior funeral dance",
+          "translation": "Eshiremba",
+          "pronunciation": "eh-shee-rehm-bah",
+          "context": "(n., cl. 7) Prestigious funeral dance performed by armed men honoring an eminent elder",
+          "audioFile": null
+        },
+        {
+          "english": "Circumcision lodge / Initiation rite",
+          "translation": "Irumbi",
+          "pronunciation": "ee-room-bee",
+          "context": "(n., cl. 5) Circumcision retreat where initiates receive ancestral teachings",
+          "audioFile": null
+        },
+        {
+          "english": "Dowry / Marriage customs",
+          "translation": "Ikhwe",
+          "pronunciation": "ee-khweh",
+          "context": "(n., cl. 9; also obukhwe) Dowry payment in cattle cementing marriage alliances",
+          "audioFile": null
+        },
+        {
+          "english": "Stiff porridge (staple food)",
+          "translation": "Obusuma",
+          "pronunciation": "oh-boo-soo-mah",
+          "context": "(n., cl. 14) Traditional stiff porridge of maize, sorghum, or finger millet (ugali)",
+          "audioFile": null
+        },
+        {
+          "english": "Fermented millet beer",
+          "translation": "Amalwa",
+          "pronunciation": "ah-mahl-wah",
+          "context": "(n. pl., cl. 6) Traditional communal millet beer enjoyed via reeds during ceremonies",
+          "audioFile": null
+        },
+        {
+          "english": "Clan gateway / Lineage branch",
+          "translation": "Eshiribwa",
+          "pronunciation": "eh-shee-ree-bwah",
+          "context": "(n., cl. 7, pl. ebiribwa) Main homestead entrance; branch of a clan descended from one son",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional ritual / Sacred custom",
+          "translation": "Omulukha",
+          "pronunciation": "oh-moo-loo-khah",
+          "context": "(n., cl. 3, pl. emilukha) Customary ritual order, sacred communal observance",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestral spirit",
+          "translation": "Omusambwa",
+          "pronunciation": "oh-moo-sahm-bwah",
+          "context": "(n., cl. 3, pl. emisambwa) Guardian ancestral spirit venerated by descendants",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional prayer / Blessing ceremony",
+          "translation": "Obulaami",
+          "pronunciation": "oh-boo-lah-ah-mee",
+          "context": "(n., cl. 14, verb: okhulaama) Prayer, sacred blessing invoking God and ancestors",
+          "audioFile": null
+        },
+        {
+          "english": "Evening campfire council",
+          "translation": "Eshitwoli",
+          "pronunciation": "eh-shee-twoh-lee",
+          "context": "(n., cl. 7) Campfire outside where men and elders gather to discuss clan affairs",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional healer / Herbal doctor",
+          "translation": "Omufumu",
+          "pronunciation": "oh-moo-foo-moo",
+          "context": "(n., cl. 1, pl. abafumu) Traditional medicine doctor, herbalist, spiritual healer",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred sacrifice / Reconciling offering",
+          "translation": "Omusango",
+          "pronunciation": "oh-moo-sahn-goh",
+          "context": "(n., cl. 3, pl. emisango) Ceremonial sacrifice offered to reconcile spirits and bless homestead",
+          "audioFile": null
+        },
+        {
+          "english": "Clan totem animal / Sacred prohibition",
+          "translation": "Omusiro",
+          "pronunciation": "oh-moo-see-roh",
+          "context": "(n., cl. 3, pl. emisiro) Totem animal forbidden to be harmed or eaten by clan members",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional master blacksmith",
+          "translation": "Omuruli",
+          "pronunciation": "oh-moo-roo-lee",
+          "context": "(n., cl. 1, pl. abaruli) Master ironworker forging hoes, knives, and weapons",
+          "audioFile": null
+        },
+        {
+          "english": "Potter / Clay artisan",
+          "translation": "Omulonji",
+          "pronunciation": "oh-moo-lohn-jee",
+          "context": "(n., cl. 1, pl. abalonji) Traditional artisan molding earthenware pots and water jars",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "bukusu-greetings",
+      "name": "Greetings & Social Etiquette (Lubukusu)",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Good morning!",
+          "translation": "Bwaasyeele!",
+          "pronunciation": "bwah-syeh-leh",
+          "context": "[Bukusu] Morning greeting at dawn (around 5 a.m.) recorded in Marlo et al. (2008)",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening!",
+          "translation": "Ke.akoloba!",
+          "pronunciation": "keh-ah-koh-loh-bah",
+          "context": "[Bukusu] Evening salutation as dusk approaches",
+          "audioFile": null
+        },
+        {
+          "english": "How are things? / How are you?",
+          "translation": "Karyé?",
+          "pronunciation": "kah-ryeh",
+          "context": "[Bukusu] Conversational greeting inquiry: 'How is it?'",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Oryo!",
+          "pronunciation": "oh-ryoh",
+          "context": "[Bukusu] Universal expression of thanks and gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Oryo muno!",
+          "pronunciation": "oh-ryoh moo-noh",
+          "context": "[Bukusu] Deep heartfelt appreciation",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye / May you be protected",
+          "translation": "Ákhuliinde!",
+          "pronunciation": "ah-khoo-leen-deh",
+          "context": "[Bukusu] Protective parting blessing: 'May He keep you'",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep well / Stay safely",
+          "translation": "Ókóne.o!",
+          "pronunciation": "oh-koh-neh-oh",
+          "context": "[Bukusu] Parting blessing used day or night ('Sleep/rest well there')",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / Tranquility",
+          "translation": "Kumuleembe",
+          "pronunciation": "koo-moo-lehm-beh",
+          "context": "[Bukusu] State of peace, blessing, and communal concord",
+          "audioFile": null
+        },
+        {
+          "english": "Affection / Goodwill / Respect",
+          "translation": "Luukoosi",
+          "pronunciation": "loo-oh-koh-see",
+          "context": "[Bukusu] Dignity, grace, fellowship, and mutual goodwill",
+          "audioFile": null
+        },
+        {
+          "english": "What is the news?",
+          "translation": "Baboola si?",
+          "pronunciation": "bah-boh-lah see",
+          "context": "[Bukusu] Lit. 'What are they saying?' — news inquiry",
+          "audioFile": null
+        },
+        {
+          "english": "Truly / Exactly",
+          "translation": "Ábweene",
+          "pronunciation": "ah-bweh-neh",
+          "context": "[Bukusu] Plainly, correctly, exactly, truly",
+          "audioFile": null
+        },
+        {
+          "english": "In broad daylight",
+          "translation": "Á búlafu",
+          "pronunciation": "ah boo-lah-foo",
+          "context": "[Bukusu] In the open / in plain sight",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "bukusu-people-kinship",
+      "name": "People, Kinship & Community (Lubukusu)",
+      "icon": "👥",
+      "entries": [
+        {
+          "english": "Bukusu people",
+          "translation": "Báábukusu",
+          "pronunciation": "bah-ah-boo-koo-soo",
+          "context": "[Bukusu] (n., cl. 2, sing. Omubukusu) The Bukusu people of Mount Elgon and Bungoma",
+          "audioFile": null
+        },
+        {
+          "english": "People / Humans",
+          "translation": "Babaandu",
+          "pronunciation": "bah-bah-ahn-doo",
+          "context": "[Bukusu] (n., cl. 2, sing. Omwaandu) Human beings / people",
+          "audioFile": null
+        },
+        {
+          "english": "Elders / Seniors",
+          "translation": "Báákhulu",
+          "pronunciation": "bah-ah-khoo-loo",
+          "context": "[Bukusu] (n., cl. 2, sing. Omukhulu) Respected community leaders and elders",
+          "audioFile": null
+        },
+        {
+          "english": "Children",
+          "translation": "Bábaana",
+          "pronunciation": "bah-bah-ah-nah",
+          "context": "[Bukusu] (n., cl. 2, sing. Omwaana) Children / young ones",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfathers / Forefathers",
+          "translation": "Bákúúka",
+          "pronunciation": "bah-koo-oo-kah",
+          "context": "[Bukusu] (n., cl. 2, sing. Kúúka) Ancestors and grandfathers",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmothers",
+          "translation": "Bákuukhu",
+          "pronunciation": "bah-koo-oo-khoo",
+          "context": "[Bukusu] (n., cl. 2, sing. Kuukhu) Maternal or paternal grandmothers",
+          "audioFile": null
+        },
+        {
+          "english": "Mothers",
+          "translation": "Bámaayi",
+          "pronunciation": "bah-mah-ah-yee",
+          "context": "[Bukusu] (n., cl. 2, sing. Maayi) Mothers and maternal aunts",
+          "audioFile": null
+        },
+        {
+          "english": "Fathers",
+          "translation": "Bápaapa",
+          "pronunciation": "bah-pah-ah-pah",
+          "context": "[Bukusu] (n., cl. 2, sing. Paapa) Fathers and paternal uncles",
+          "audioFile": null
+        },
+        {
+          "english": "Women / Wives",
+          "translation": "Báakhasi",
+          "pronunciation": "bah-ah-khah-see",
+          "context": "[Bukusu] (n., cl. 2, sing. Omukhaasi) Women / wives",
+          "audioFile": null
+        },
+        {
+          "english": "Husbands",
+          "translation": "Báseecha",
+          "pronunciation": "bah-seh-eh-chah",
+          "context": "[Bukusu] (n., cl. 2, sing. Omuseecha) Married men / husbands",
+          "audioFile": null
+        },
+        {
+          "english": "Brothers",
+          "translation": "Báwaanda",
+          "pronunciation": "bah-wah-ahn-dah",
+          "context": "[Bukusu] (n., cl. 2) Male siblings or cousins",
+          "audioFile": null
+        },
+        {
+          "english": "Sisters",
+          "translation": "Báyaaya",
+          "pronunciation": "bah-yah-ah-yah",
+          "context": "[Bukusu] (n., cl. 2) Female siblings or cousins",
+          "audioFile": null
+        },
+        {
+          "english": "Family / Household",
+          "translation": "Bééngo",
+          "pronunciation": "beh-eh-ngoh",
+          "context": "[Bukusu] Those of the home / household members",
+          "audioFile": null
+        },
+        {
+          "english": "Initiates (Circumcision cohort)",
+          "translation": "Báafulu / Béémwiikóómbe",
+          "pronunciation": "bah-ah-foo-loo",
+          "context": "[Bukusu] Youth undergoing the sacred Bukusu biennial rite of passage",
+          "audioFile": null
+        },
+        {
+          "english": "Peacemaker / Mediator",
+          "translation": "Omukaambisi",
+          "pronunciation": "oh-moo-kah-ahm-bee-see",
+          "context": "[Bukusu] (n., cl. 1, pl. baakaambisi) Go-between, reconciler, and comforter",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "bukusu-pastoral-nature",
+      "name": "Livestock, Food & Nature (Lubukusu)",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Cow / Bull",
+          "translation": "Eekhaafu",
+          "pronunciation": "eh-eh-khah-ah-foo",
+          "context": "[Bukusu] (n., cl. 9, pl. chiikhaafu) Bovine animal; cattle herd",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle / Cows",
+          "translation": "Chiikhaafu",
+          "pronunciation": "chee-ee-khah-ah-foo",
+          "context": "[Bukusu] (n., cl. 10) Livestock herd",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Eembusi",
+          "pronunciation": "ehm-boo-see",
+          "context": "[Bukusu] (n., cl. 9, pl. chiimbusi) Female or male goat",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Liikheese",
+          "pronunciation": "lee-ee-kheh-eh-seh",
+          "context": "[Bukusu] (n., cl. 5, pl. kamakheese) Sheep / ewe",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Kameechi",
+          "pronunciation": "kah-meh-eh-chee",
+          "context": "[Bukusu] (n., cl. 6) Water for domestic use or livestock",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Kamabeele",
+          "pronunciation": "kah-mah-beh-eh-leh",
+          "context": "[Bukusu] (n., cl. 6) Fresh cow milk",
+          "audioFile": null
+        },
+        {
+          "english": "Homestead / Kraal",
+          "translation": "Liitaala",
+          "pronunciation": "lee-ee-tah-ah-lah",
+          "context": "[Bukusu] (n., cl. 5) Village, family kraal enclosure, and cattle compound",
+          "audioFile": null
+        },
+        {
+          "english": "House / Dwelling",
+          "translation": "Eenju",
+          "pronunciation": "eh-eh-n-joo",
+          "context": "[Bukusu] (n., cl. 9, pl. chiinju) Traditional family house",
+          "audioFile": null
+        },
+        {
+          "english": "Courtyard / Village green",
+          "translation": "Áluya / Áanje",
+          "pronunciation": "ah-loo-yah / ah-ahn-jeh",
+          "context": "[Bukusu] Central open meeting space of the homestead",
+          "audioFile": null
+        },
+        {
+          "english": "Sun / Daylight",
+          "translation": "Kumuuka",
+          "pronunciation": "koo-moo-oo-kah",
+          "context": "[Bukusu] (n., cl. 3) Sun, daytime brightness, sunshine",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "Kumweesi",
+          "pronunciation": "koo-mweh-eh-see",
+          "context": "[Bukusu] (n., cl. 3) Moon and calendar month",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Ifula",
+          "pronunciation": "ee-foo-lah",
+          "context": "[Bukusu] (n., cl. 9) Seasonal rainfall",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Kumuliro",
+          "pronunciation": "koo-moo-lee-roh",
+          "context": "[Bukusu] (n., cl. 3) Hearth fire / flames",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Ground",
+          "translation": "Áasi / Siloba",
+          "pronunciation": "ah-ah-see / see-loh-bah",
+          "context": "[Bukusu] Soil, earth, ground beneath",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "bukusu-actions",
+      "name": "Core Verbs & Actions (Lubukusu)",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To eat",
+          "translation": "Khúúlya",
+          "pronunciation": "khoo-oo-lyah",
+          "context": "[Bukusu] (v.) To consume food",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Khúúnywa",
+          "pronunciation": "khoo-oo-nywah",
+          "context": "[Bukusu] (v.) To drink water, milk, or beverage",
+          "audioFile": null
+        },
+        {
+          "english": "To walk / travel",
+          "translation": "Khuukeenda",
+          "pronunciation": "khoo-oo-kehn-dah",
+          "context": "[Bukusu] (v.) To journey, walk, or conduct oneself morally",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep / rest",
+          "translation": "Khuukona",
+          "pronunciation": "khoo-oo-koh-nah",
+          "context": "[Bukusu] (v.) To lie down, sleep, or rest",
+          "audioFile": null
+        },
+        {
+          "english": "To see / observe",
+          "translation": "Khuulola",
+          "pronunciation": "khoo-oo-loh-lah",
+          "context": "[Bukusu] (v.) To behold, look at, or witness",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / feel",
+          "translation": "Khuuulila",
+          "pronunciation": "khoo-oo-lee-lah",
+          "context": "[Bukusu] (v.) To perceive by ear or sense",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Khukhwiicha",
+          "pronunciation": "khoo-khwee-ee-chah",
+          "context": "[Bukusu] (v.) To arrive or approach",
+          "audioFile": null
+        },
+        {
+          "english": "To go out / emerge",
+          "translation": "Khúúrura",
+          "pronunciation": "khoo-oo-roo-rah",
+          "context": "[Bukusu] (v.) To depart, step outside, or appear (e.g. sun)",
+          "audioFile": null
+        },
+        {
+          "english": "To appreciate / praise",
+          "translation": "Khuusiima",
+          "pronunciation": "khoo-oo-see-ee-mah",
+          "context": "[Bukusu] (v.) To thank, cheer, or express happiness",
+          "audioFile": null
+        },
+        {
+          "english": "To build / construct",
+          "translation": "Khuuombakha",
+          "pronunciation": "khoo-oo-ohm-bah-khah",
+          "context": "[Bukusu] (v.) To erect a house or structure",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / declare",
+          "translation": "Khuuboola",
+          "pronunciation": "khoo-oo-boh-oh-lah",
+          "context": "[Bukusu] (v.) To utter words or state an opinion",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / farm",
+          "translation": "Khuulima",
+          "pronunciation": "khoo-oo-lee-mah",
+          "context": "[Bukusu] (v.) To till soil and grow crops",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

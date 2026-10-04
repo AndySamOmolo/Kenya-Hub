@@ -1,0 +1,78 @@
+{
+  "verificationGuide": {
+    "title": "How to Verify a Real Estate Agent in Kenya",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Visit the EARB Website",
+        "description": "Go to the Estate Agents Registration Board website at earb.go.ke",
+        "link": "https://www.earb.go.ke"
+      },
+      {
+        "step": 2,
+        "title": "Check the Register",
+        "description": "Use the 'Registered Agents' section to search for the agent or firm by name or registration number"
+      },
+      {
+        "step": 3,
+        "title": "Verify License Status",
+        "description": "Confirm the agent's license is current (renewed annually). Expired licenses mean the agent is not authorized to practice."
+      },
+      {
+        "step": 4,
+        "title": "Report Unregistered Agents",
+        "description": "If an agent is not in the register, report them to EARB. Operating as an estate agent without registration is an offence under the Estate Agents Act (Cap 533)."
+      }
+    ]
+  },
+  "earbInfo": {
+    "name": "Estate Agents Registration Board",
+    "abbreviation": "EARB",
+    "website": "https://www.earb.go.ke",
+    "address": "NHIF Building, Wing B, 5th Floor, Ragati Road, Upper Hill, Nairobi",
+    "phone": "+254 20 2714292",
+    "email": "info@earb.go.ke"
+  },
+  "requirements": {
+    "registration": [
+      "Must be a citizen of Kenya or a company incorporated in Kenya",
+      "Must hold a recognized qualification in estate agency, valuation, or related field",
+      "Must have at least 2 years of practical experience",
+      "Must pay registration and annual renewal fees",
+      "Must maintain a fidelity guarantee insurance bond"
+    ],
+    "fees": {
+      "registration": 5000,
+      "annualRenewal": 3000,
+      "fidelityBond": "Varies by insurer — typically KES 500,000 minimum"
+    }
+  },
+  "redFlags": [
+    { "flag": "Agent is not EARB registered", "risk": "Illegal to operate without registration — you have no legal recourse if defrauded" },
+    { "flag": "Agent demands cash-only payments", "risk": "Legitimate transactions should have paper trails and receipts" },
+    { "flag": "Agent refuses to show their EARB certificate", "risk": "All registered agents must display their certificate" },
+    { "flag": "Property price is significantly below market value", "risk": "May be a scam or the seller doesn't have clear title" },
+    { "flag": "Agent pushes for immediate full payment", "risk": "Legitimate sales processes involve lawyers, due diligence, and staged payments" },
+    { "flag": "No written agreement or contract", "risk": "All property transactions should have written documentation" }
+  ],
+  "sampleAgents": [
+    { "name": "Knight Frank Kenya", "type": "Firm", "county": "Nairobi", "specialization": "Commercial & Residential", "registered": true },
+    { "name": "HassConsult Ltd", "type": "Firm", "county": "Nairobi", "specialization": "Residential & Land", "registered": true },
+    { "name": "Pam Golding Properties Kenya", "type": "Firm", "county": "Nairobi", "specialization": "Luxury Residential", "registered": true },
+    { "name": "Lloyd Masika Ltd", "type": "Firm", "county": "Nairobi", "specialization": "Valuation & Agency", "registered": true },
+    { "name": "Tysons Limited", "type": "Firm", "county": "Nairobi", "specialization": "Commercial & Industrial", "registered": true },
+    { "name": "Broll Kenya", "type": "Firm", "county": "Nairobi", "specialization": "Property Management", "registered": true },
+    { "name": "Regent Management Ltd", "type": "Firm", "county": "Nairobi", "specialization": "Property Management", "registered": true },
+    { "name": "Sagana Real Estate", "type": "Firm", "county": "Nairobi", "specialization": "Residential", "registered": true },
+    { "name": "Villa Care Ltd", "type": "Firm", "county": "Mombasa", "specialization": "Coastal Properties", "registered": true },
+    { "name": "Homes Kenya Ltd", "type": "Firm", "county": "Nairobi", "specialization": "Residential & Commercial", "registered": true }
+  ],
+  "notes": [
+    "The Estate Agents Registration Board (EARB) regulates estate agents in Kenya under the Estate Agents Act (Cap 533)",
+    "It is illegal to act as an estate agent without EARB registration — Section 4 of the Act",
+    "Registered agents must renew their license annually by March 31",
+    "Always insist on seeing an agent's EARB registration certificate before engaging their services",
+    "EARB handles complaints against registered agents — you can file via their website or in person",
+    "The sample agents list is not exhaustive — always verify directly with EARB"
+  ]
+}

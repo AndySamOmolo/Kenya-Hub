@@ -1,0 +1,1552 @@
+=== TITLE & PUBLICATION DETAILS ===
+VOCABULARIES OF THE KAMBA AND KIKUYU LANGUAGES OF EAST AFRICA
+By HILDEGARDE HINDE (Mrs Sidney L. Hinde)
+Author of 'The Masai Language and Folklore'
+Cambridge: At the University Press, 1904
+Printed by J. and C. F. Clay, at the University Press
+
+=== PREFACE ===
+(Pages v–viii)
+
+IT is not necessary to append even grammatical notes to the following vocabularies. Both the Kamba and Kikuyu languages belong to the Bantu group and their construction is precisely similar to that of Swahili, that is, all grammatical inflexion takes place at the beginning of the word.
+The object in publishing a Swahili vocabulary parallel with the Kamba and Kikuyu is to emphasise the intimate relationship between the three languages.
+Swahili has become the trade language of East Africa: it is spoken at Zanzibar and all along the coast of both British and German East Africa, and the coast traders, travelling inland, have carried it into the interior. It is therefore highly improbable that an attempt to learn any of the native languages would be made without first mastering the rudiments of Swahili.
+In both the Kamba and Kikuyu languages the nouns are divided into a number of classes (being distinguished by the first syllable), and all adjectives, pronouns and numerals are brought into relation with these nouns by corresponding changes of their first syllables. There is no class denominative of sex, though in each language there is a class which denotes animate objects. There is no article, definite or indefinite.
+The Kamba vocabulary is in two dialects, the Ulu which is used from Machakos to the coast, and the Nganyawa, spoken in part of the Kitui District.
+I have given the dialect in Kikuyu (that spoken in Jogowini) with which I am personally acquainted, though in the Kenya Province there are, to my knowledge, two other dialects and these again differ from the dialects in the neighbourhood of Nairobi.
+It is interesting to note that the Akikuyu of the southern part of the Kenya Province and the Akamba of the adjoining Kitui District readily understand each other.
+Swahili itself has distinct local differences, not alone in the pronunciation, but in the variation of words in the Zanzibar, Mombasa and Lamu dialects, though all are easily understood if one dialect be well known. In the Swahili of the following vocabulary the Zanzibar dialect has been employed, since it is the most widely known. All the verbs in the Swahili vocabulary, and most of those in the other two vocabularies, are given in the Infinitive Mood; this is represented by the prefix ku; but in Kamba, and sometimes in Kikuyu, it not infrequently becomes gu. In the Swahili vocabulary the plural of each noun has been given.
+The usual rules for the formation of the plural in both Kamba and Kikuyu are as follows:
+1. Nouns (representing animate objects) beginning with mu form their plurals in a: as muka = woman, aka = women. The Swahili people, or Wa-Swahili, have made the term Mkamba (the individual), Wakamba (the plural), Mkikuyu (the individual), Wakikuyu (the plural); the native forms are Mukamba (sing.), Akamba (plural), Mukikuyu (sing.), Akikuyu (plural).
+2. Nouns beginning with mu (not representing animate objects) change the mu into mi in the plural: as muti = tree, miti = trees.
+3. Nouns beginning with i change the i to ma in the plural: as ihiga = stone, mahiga = stones.
+4. Nouns beginning with ki change the ki to i in the plural: as kiratu = sandal, iratu = sandals.
+5. Invariable nouns are those beginning with an n: as nyumba = house, nyumba = houses.
+6. Nouns beginning with ka or ki form their plurals in twa or shi: as kana = child, twana or shiana = children; kiara = finger, shiara = fingers.
+The chief difference between Kamba and Kikuyu lies in the absence of the letter R¹ in the former (this is owing to the lisp common to all Akamba, probably on account of their filed teeth) and the frequency of the aspirate in the latter. In both languages K and G, B and V, Th and S or Z, and in Kikuyu R and L, are practically interchangeable. The Kikuyu accent is much broader and stronger; but, as will be seen, many of the words are almost, and others are quite similar in the two languages. Great care has been taken to give the pure native rendering to all the words, and none of the Swahili words which have been incorporated into the languages have been included. Much confusion is caused by the compilers of vocabularies interpolating foreign words where a native language has no equivalent, and thereby rendering it almost impossible to estimate correctly the philological construction of the language. Both Kamba and Kikuyu are very primitive languages and are entirely without many of the most simple words.
+The conjugation of one verb and a few common phrases are appended, as they show at a glance the similarity of the construction of the three languages.
+HILDEGARDE HINDE.
+FORT HALL, BRITISH EAST AFRICA, September, 1902.
+¹ Occasionally I have been obliged to use double r to represent a certain guttural sound.
+
+=== THE ALPHABET ===
+(Pages ix–x)
+
+The vowels are pronounced as in Italian and the consonants as in English.
+There are in addition the modifications ö and ü.
+The spelling used is phonetic.
+The accent almost invariably falls on the penultimate.
+Where an accent is particularly marked I have used the long accent sign – and very occasionally the short accent ˘.
+B and V, G and K, Th and S or Z, and in Kikuyu R and L, are interchangeable.
+The sound of RR is very marked and should be pronounced with a distinct burr.
+
+A as a in father
+B as in but
+Ch as in church. Italian c before i and e
+D as in does
+E as a in dare
+F as in fill
+G as in gate, never soft as in generous
+H as in hit
+I as ee in sweet
+J as in jump
+K as in kalendar
+L as in lost
+M as in must
+N as in not
+O as in go
+P as in point
+R as in run
+S as in sat
+T as in time
+U as oo in fool
+V as in vain
+W as in won
+Y as in yonder
+Z as in zebra
+Ö, Ü as in German
+Th as in think and sometimes as in they
+Kw as the sound qu
+
+M and N when commencing a word and when followed by a consonant are peculiar African sounds. The nearest approximation to their pronunciation is the slight sounding of the m in mutter, and the n in no.
+
+=== VERBS ===
+(Pages xi–xviii)
+
+All regular verbs in Swahili end in a, though verbs derived from the Arabic may end in e, i, or u.
+In the Kamba and Kikuyu languages nearly all verbs end in a; a few end in i or e, and a very few in o or u.
+In all three languages there are negative as well as affirmative conjunctions, the tenses and persons being distinguished by prefixes.
+
+THE INFINITIVE.
+The Infinitive is formed by prefixing ku (gu is frequently used in Kamba and sometimes in Kikuyu) to the simple verb. The u becomes w before a, e and i, and almost disappears before o.
+Swahili:
+Ku-shinda = to conquer
+Kamba and Kikuyu:
+Ku or gu-tinda = to conquer
+
+INDICATIVE MOOD. PRESENT TENSE.
+In Swahili, Kamba and Kikuyu the Indicative Present is formed by prefixing -a- to the verb. In all cases the personal pronoun precedes the tense prefix.
+Swahili:
+n-a-shinda : I conquer
+w-a-shinda : thou conquerest
+a-shinda : he or she conquers
+tw-a-shinda : we conquer
+mw-a-shinda : you conquer
+w-a-shinda : they conquer
+Kamba and Kikuyu:
+n-a-tinda : I conquer
+w-a-tinda : thou conquerest
+a-tinda : he or she conquers
+tw-a-tinda : we conquer
+mw-a-tinda : you conquer
+m-a-tinda : they conquer
+
+PRESENT IMPERFECT.
+In Swahili the Present Imperfect is formed by prefixing -na- to the verb, in Kamba and Kikuyu by prefixing -ki-.
+Swahili:
+ni-na-shinda : I am conquering
+u-na-shinda : thou art conquering
+a-na-shinda : he or she is conquering
+tu-na-shinda : we are conquering
+m-na-shinda : you are conquering
+wa-na-shinda : they are conquering
+Kamba and Kikuyu:
+ni-ki-tinda : I am conquering
+wa or u-ki-tinda : thou art conquering
+a-ki-tinda : he or she is conquering
+tu-ki-tinda : we are conquering
+mu-ki-tinda : you are conquering
+me or ma-ki-tinda : they are conquering
+
+PRESENT PERFECT.
+In Swahili the Present Perfect is formed by prefixing -me-, in Kamba and Kikuyu by changing the final -a of the verb to -eti or -iti.
+Swahili:
+ni-me-shinda : I have conquered
+u-me-shinda : thou hast conquered
+a-me-shinda : he or she has conquered
+tu-me-shinda : we have conquered
+m-me-shinda : you have conquered
+wa-me-shinda : they have conquered
+Kamba and Kikuyu:
+ni-tind-eti or iti : I have conquered
+wa or u-tind-eti or iti : thou hast conquered
+a-tind-eti or iti : he or she has conquered
+tu-tind-eti or iti : we have conquered
+mu-tind-eti or iti : you have conquered
+me or ma-tind-eti or iti : they have conquered
+
+PAST PERFECT.
+In Swahili the Past Perfect is formed by prefixing -li- or -ali-, in Kamba by changing the final -a of the verb into -ie and prefixing the tense sign -na-, in Kikuyu by changing the final -a of the verb to -eri.
+Swahili:
+ni-li or n-ali-shinda : I conquered
+u-li or w-ali-shinda : thou conqueredst
+a-li or w-ali-shinda : he or she conquered
+tu-li or tw-ali-shinda : we conquered
+m-li or mw-ali-shinda : you conquered
+wa-li or w-ali-shinda : they conquered
+Kamba:
+ni-na-tind-ie : I conquered
+wa or u-na-tind-ie : thou conqueredst
+a-na-tind-ie : he or she conquered
+tu-na-tind-ie : we conquered
+mu-na-tind-ie : you conquered
+me or ma-na-tind-ie : they conquered
+Kikuyu:
+ni-tind-eri : I conquered
+wa or u-tind-eri : thou conqueredst
+a-tind-eri : he or she conquered
+tu-tind-eri : we conquered
+mu-tind-eri : you conquered
+me or ma-tind-eri : they conquered
+
+FUTURE.
+In Swahili the Future is formed by prefixing -ta-, in Kamba and Kikuyu by prefixing -ka- or -ga-.
+Swahili:
+ni-ta-shinda : I shall conquer
+u-ta-shinda : thou shalt conquer
+a-ta-shinda : he or she shall conquer
+tu-ta-shinda : we shall conquer
+m-ta-shinda : you shall conquer
+wa-ta-shinda : they shall conquer
+Kamba and Kikuyu:
+ni or nin-ka or ga-tinda : I shall conquer
+wa or u-ka or ga-tinda : thou shalt conquer
+a-ka or ga-tinda : he or she shall conquer
+tu-ka or ga-tinda : we shall conquer
+mu-ka or ga-tinda : you shall conquer
+me or ma-ka or ga-tinda : they shall conquer
+
+THE IMPERATIVE.
+In Swahili the Imperative is formed by using the simple form of the verb, but it is more usual to change the final -a to -e. The plural is formed by adding -ni. In Kamba and Kikuyu the simple form of the verb is used in the singular, the plural being formed by adding -ni or -i.
+Swahili:
+shinda or shinde : conquer thou
+shindani or shindeni : conquer ye
+Kamba and Kikuyu:
+tinda : conquer thou
+tindani or tindai : conquer ye
+
+THE SUBJUNCTIVE.
+In Swahili, Kamba and Kikuyu the Subjunctive is formed by prefixing the personal pronoun and when the verb ends in -a changing that letter to -e.
+Swahili:
+ni-shinde : that I may conquer
+u-shinde : that thou mayst conquer
+a-shinde : that he or she may conquer
+tu-shinde : that we may conquer
+m-shinde : that ye may conquer
+wa-shinde : that they may conquer
+Kamba and Kikuyu:
+ni-tinde : that I may conquer
+wa or u-tinde : that thou mayst conquer
+a-tinde : that he or she may conquer
+tu-tinde : that we may conquer
+mu-tinde : that ye may conquer
+me or ma-tinde : that they may conquer
+
+NEGATIVE PRESENT.
+In Swahili the Negative Present is formed by the negative prefixes and the changing of the final -a of the verb to -i. In Kamba and Kikuyu it is formed by prefixing -di- or -ndi-; either form seems to be correct.
+Swahili:
+si-shindi : I do not conquer
+hu-shindi : thou dost not conquer
+ha-shindi : he or she does not conquer
+hatu-shindi : we do not conquer
+ham-shindi : you do not conquer
+hawa-shindi : they do not conquer
+Kamba and Kikuyu:
+n-di-tinda : I do not conquer
+wa or u-di or ndi-tinda : thou dost not conquer
+a-di or ndi-tinda : he or she does not conquer
+tu-di or ndi-tinda : we do not conquer
+mu-di or ndi-tinda : you do not conquer
+me or ma-di or ndi-tinda : they do not conquer
+
+NEGATIVE PAST PERFECT.
+In Swahili the Negative Past Perfect is formed by the negative prefixes followed by -ku-, in Kamba and Kikuyu by the negative prefix -di- or -ndi- followed by -na-.
+Swahili:
+si-ku-shinda : I did not conquer
+hu-ku-shinda : thou didst not conquer
+ha-ku-shinda : he or she did not conquer
+hatu-ku-shinda : we did not conquer
+ham-ku-shinda : you did not conquer
+hawa-ku-shinda : they did not conquer
+Kamba and Kikuyu:
+n-di-na-tinda : I did not conquer
+wa or u-di or ndi-na-tinda : thou didst not conquer
+a-di or ndi-na-tinda : he or she did not conquer
+tu-di or ndi-na-tinda : we did not conquer
+mu-di or ndi-na-tinda : you did not conquer
+me or ma-di or ndi-na-tinda : they did not conquer
+
+NEGATIVE FUTURE.
+In Swahili the Negative Future is similar to the Affirmative Future, only the negative personal prefixes are used. In Kamba and Kikuyu it is also similar to the Affirmative Future but the negative prefix -di- follows the personal prefixes.
+Swahili:
+si-ta-shinda : I shall not conquer
+hu-ta-shinda : thou shalt not conquer
+ha-ta-shinda : he or she shall not conquer
+hatu-ta-shinda : we shall not conquer
+ham-ta-shinda : you shall not conquer
+hawa-ta-shinda : they shall not conquer
+Kamba and Kikuyu:
+n-di-ka or ga-tinda : I shall not conquer
+wa or u-di or ndi-ka or ga-tinda : thou shalt not conquer
+a-di or ndi-ka or ga-tinda : he or she shall not conquer
+tu-di or ndi-ka or ga-tinda : we shall not conquer
+mu-di or ndi-ka or ga-tinda : you shall not conquer
+me or ma-di or ndi-ka or ga-tinda : they shall not conquer
+
+NEGATIVE IMPERATIVE.
+In Swahili the Negative Imperative is formed by si- with the affirmative forms. In Kamba and Kikuyu by di- or ndi-.
+Swahili:
+si-shinda or shinde : conquer thou not
+si-shindeni : conquer ye not
+Kamba and Kikuyu:
+di or ndi-tinda : conquer thou not
+di or ndi-tindani or tindai : conquer ye not
+
+NEGATIVE SUBJUNCTIVE.
+In Swahili the Negative Subjunctive is formed by inserting -si- between the affirmative personal prefix and the verb, in Kamba and Kikuyu by prefixing the negative -di- or -ndi- to the Affirmative Subjunctive.
+Swahili:
+ni-si-shinde : that I may not conquer
+u-si-shinde : that thou mayst not conquer
+a-si-shinde : that he or she may not conquer
+tu-si-shinde : that we may not conquer
+m-si-shinde : that you may not conquer
+wa-si-shinde : that they may not conquer
+Kamba and Kikuyu:
+n-di-tinde : that I may not conquer
+wa or u-di or ndi-tinde : that thou mayst not conquer
+a-di or ndi-tinde : that he or she may not conquer
+tu-di or ndi-tinde : that we may not conquer
+mu-di or ndi-tinde : that you may not conquer
+me or ma-di or ndi-tinde : that they may not conquer
+
+Note. It is not unfrequent, in general conversation, both in Kamba and Kikuyu, to ignore the conjugated forms of the verb. This is more especially so in sentences of only a few words. In these cases the simple or infinitive form of the verb is used with the proper pronominal prefixes; as, I will return = ninkushoka instead of ninkashoka.
+
+=== VOCABULARY ===
+
+A
+abdomen : Swahili: kinena, tumbo, pl. matumbo | Kamba: ibu | Kikuyu: nda
+across (the other side) : Swahili: ngambo | Kamba: kianda | Kikuyu: murrimorria
+adder (puff-) : Swahili: bafe
+adjoining : Swahili: mpaka moja | Kamba (Ulu): mupaka mamwe | Kamba (Nganyawa): kukomona | Kikuyu: mwakaumwe
+adjudge (v.) : Swahili: kukata maneno | Kamba (Ulu): gumi nen detto | Kamba (Nganyawa): kudila maneno | Kikuyu: kutũa
+afraid : Swahili: ogopa | Kamba (Ulu): gukia | Kamba (Nganyawa): enkukea | Kikuyu: witigirra or guer
+afterbirth : Swahili: mji wa nyuma | Kamba: nsöö | Kikuyu: njoguu, sigila
+afternoon : Swahili: athuhuri | Kamba: muthenia | Kikuyu: mialaho
+afterwards : Swahili: halafu | Kamba (Ulu): kalanga | Kamba (Nganyawa): thenaikuką | Kikuyu: nitigarete
+again : Swahili: tena | Kamba (Ulu): muthen yongi | Kamba (Nganyawa): matuku angi | Kikuyu: riingi
+agree (v.) : Swahili: kupatana | Kamba: kuindu | Kikuyu: kuiguana
+ahead : Swahili: mbele | Kamba: mbe | Kikuyu: hituka, mbe
+alive : Swahili: -zima | Kamba (Ulu): -wima | Kamba (Nganyawa): -cheo | Kikuyu: -tungu
+all : Swahili: -ote | Kamba (Ulu): -onthe | Kamba (Nganyawa): -oonde | Kikuyu: -õthe
+all of us : Swahili: sisi sote | Kamba (Ulu): ithi onthe | Kamba (Nganyawa): andu oonde | Kikuyu: ithiwi õthe
+allow (v.) : Swahili: kupa ruksa | Kamba (Ulu): kubalunundjika | Kamba (Nganyawa): kuluuntha | Kikuyu: kuinuka
+all right : Swahili: vema | Kamba (Ulu): utheo | Kamba (Nganyawa): utzeo | Kikuyu: -wēga
+aloe : Swahili: subiri | Kamba: itoma | Kikuyu: kiroma
+alone : Swahili: peke yake | Kamba: mundu emwe | Kikuyu: mundu munwe
+also : Swahili: na, tena | Kamba: utille | Kikuyu: riingi
+alter (v.) : Swahili: kubadili | Kamba: kuani | Kikuyu: kukurania
+always : Swahili: sikuzote or killa siku | Kamba (Ulu): muthenia monthe | Kamba (Nganyawa): matuk oonde | Kikuyu: matuku mõthe
+and : Swahili: na | Kamba: na | Kikuyu: na
+angry : Swahili: -kali | Kamba (Ulu): nguldimu, -thuku | Kamba (Nganyawa): killalu | Kikuyu: -moru
+ankle : Swahili: kiwiko cha mguu | Kamba: kuu | Kikuyu: runyadide
+anklets : Swahili: mtali, pl. mitali (small) | Kamba: chuma | Kikuyu: materre
+anklets (brass) : Swahili: furungu, pl. mafurungu (big) | Kamba: uthuku
+answer (v.) : Swahili: kujibu | Kamba (Ulu): ndetto | Kamba (Nganyawa): kundungia | Kikuyu: ndumwia, kuatterreri or kuetekia
+ant (large black) : Swahili: ngwiro | Kamba: ndzingi
+ant (small black) : Swahili: chungu | Kamba: njinji | Kikuyu: thigirriri
+ant (red) : Swahili: siafu | Kamba (Ulu): nguugu | Kamba (Nganyawa): nduagu | Kikuyu: tharaku
+ant (white) : Swahili: mchwa | Kamba: umũũ | Kikuyu: muthua
+antelope : Swahili: swarra | Kamba: ngattata | Kikuyu: irõõnga
+anthill : Swahili: kisugulu, pl. visugulu | Kamba: kivuumbu | Kikuyu: muthongorrima
+anus : Swahili: mkundu | Kikuyu: musite
+anything : Swahili: kitu | Kamba: kũindu | Kikuyu: kiindu
+apace : Swahili: upesi | Kamba: mituki | Kikuyu: narua
+arm (the whole) : Swahili: mkono, pl. mikono | Kamba: mokono | Kikuyu: wuoko
+arm (fore) : Kamba: kuoko | Kikuyu: kuwoko
+arm (upper) : Kamba: ibindi ya kitua | Kikuyu: kichako
+armpit : Swahili: kwapa, pl. makwapa | Kamba (Ulu): njakwaba | Kamba (Nganyawa): nzakuava | Kikuyu: enjegeki
+arrive (v.) : Swahili: kufika | Kamba (Ulu): kubike | Kamba (Nganyawa): kufika | Kikuyu: kudākinya
+arrow : Swahili: mshale, pl. mishale | Kamba (Ulu): musie | Kamba (Nganyawa): mutchi | Kikuyu: mugui
+arrowhead : Swahili: chembe, pl. vyembe | Kamba: euumu | Kikuyu: mbugi
+ashes : Swahili: jifu, pl. majifu; ivu, pl. maivu | Kamba: mũũ | Kikuyu: muhu
+ask (v.) : Swahili: kuuliza | Kamba (Ulu): gukulia | Kamba (Nganyawa): kwibaja | Kikuyu: kunikē
+at once : Swahili: mara moja | Kamba (Ulu): oiyuyu | Kamba (Nganyawa): mituki | Kikuyu: rimue
+awake (v.) : Swahili: kuamka | Kamba (Ulu): kuamukka | Kamba (Nganyawa): kwamoka | Kikuyu: kundõkira
+axe : Swahili: shoka, pl. mashoka | Kamba: ithoka, pl. mathoka | Kikuyu: ithanoa, pl. mathanoa
+
+B
+baboon : Swahili: nyani | Kamba: ngulli | Kikuyu: nugu ao ithinwa
+back : Swahili: mgongo, maungo | Kamba (Ulu): muongo | Kamba (Nganyawa): moongo | Kikuyu: mgongo
+back (small of) : Swahili: kiunu | Kamba: kitiimba | Kikuyu: ihindi
+bad : Swahili: -baya | Kamba (Ulu): -thūgu | Kamba (Nganyawa): tabisie | Kikuyu: -thuku
+bag : Swahili: mfuko, pl. mifuko | Kamba (Ulu): ngussu | Kamba (Nganyawa): chõõndo | Kikuyu: moondo, kiondo
+bamboo : Swahili: mwanzi, pl. miwanzi | Kamba (Ulu): miangi, mwangi | Kamba (Nganyawa): ithua, pl. mathua | Kikuyu: mrangi, pl. mirangi
+banana : Swahili: ndizi | Kamba: maĩyu | Kikuyu: marigu
+bank (the opposite) : Swahili: ngambo | Kamba: kianda | Kikuyu: mulimorua
+baobab tree : Swahili: mbuyu, pl. mibuyu | Kamba: mwamba | Kikuyu: mugiyo
+bark (v.) : Swahili: kulia | Kamba: kukuma | Kikuyu: kugambu
+bark (of tree) : Swahili: ganda (soft), gome (hard) | Kamba (Ulu): ukanda | Kamba (Nganyawa): matheendu | Kikuyu: makonni
+
+barrel : Swahili: pipa | Kamba: kitupa | Kikuyu: mwatu
+barrenness : Swahili: tassa | Kamba: nthāāta | Kikuyu: thāātu
+basin : Swahili: bakuli | Kamba: nsele
+basket : Swahili: kikapo, pl. vikapo | Kamba: idjondo, pl. madjondo
+bastard : Swahili: mtoto waharam | Kikuyu: mwanai wai hariko
+bat : Swahili: popo | Kamba: udandalimu | Kikuyu: ebũbũ
+bathe (v.) : Swahili: kuoga | Kamba: kuthamba | Kikuyu: kuithamba
+beads : Swahili: ushanga, pl. shanga; kuta | Kamba: muthanga; kikete | Kikuyu: mugathi; mikunungu
+beak : Swahili: ndomo wa ndege | Kamba: muomo | Kikuyu: muthēchi
+beans : Swahili: kuunde | Kamba: inthoogo | Kikuyu: thoroko
+beans (tree) : Swahili: baazi | Kamba: nthzuu | Kikuyu: enjugu
+bear fruit (to) : Swahili: kuzaa | Kamba: kutzia | Kikuyu: kutziara
+beard : Swahili: ndevu, madevu | Kamba (Ulu): kingē | Kamba (Nganyawa): kiaiu | Kikuyu: nderu
+because : Swahili: kwa sababu | Kamba (Ulu): natta | Kamba (Nganyawa): chauosa | Kikuyu: nikki
+bed : Swahili: kitanda, pl. vitanda | Kamba (Ulu): ui | Kamba (Nganyawa): thewi, pl. vuwi | Kikuyu: orrere
+bee : Swahili: nyuki | Kamba (Ulu): nsuki, kinyu | Kamba (Nganyawa): nzuki | Kikuyu: njuki
+beer (native) : Swahili: tembo | Kamba: uki | Kikuyu: enjohi
+beetle : Swahili: nuru | Kamba: kingolondo | Kikuyu: katinainyu
+beg (v.) : Swahili: kuomba | Kamba: kuvoiya | Kikuyu: kuhoiya
+beggar : Swahili: mwombaji, pl. waombaji | Kamba: manthia unenge | Kikuyu: muhoyi
+belch (v) : Swahili: kuongulia | Kamba: kukoa | Kikuyu: kuhorrora
+bell : Swahili: kengele | Kamba: kiamba | Kikuyu: kigaamba (big)
+bell (cow) : Swahili: kivumanzi | Kamba (Ulu): mbwi | Kikuyu: mbuggi
+bell (warrior's) : Swahili: enjuga | Kikuyu: injingirri (small)
+bellows : Swahili: mifuo, mivukuto, kiliba, pl. viliba | Kamba: kiõ | Kikuyu: mũra
+belt : Swahili: mshipi | Kamba: nikinyunga; endoo | Kikuyu: endoho; ndoho
+belt (sword) : Kamba: kiketi
+belt (warrior's) : Swahili: tunda (of beads)
+belt (women's) : Swahili: tunda (of beads)
+bend (v.) : Swahili: kuinama, kupinda | Kamba (Ulu): kumanna | Kamba (Nganyawa): kutula | Kikuyu: kuinamamera
+better : Swahili: heri, afadhali | Kamba: numutseo | Kikuyu: numugima
+between : Swahili: katikati ya | Kamba (Ulu): katti | Kamba (Nganyawa): voo kati | Kikuyu: ngatagati
+bird : Swahili: ndege, nyuni | Kamba: mbuungu; nyunni | Kikuyu: nyoni
+bird (small) : Swahili: kinda, pl. makinda
+bite (v.) : Swahili: kuuma | Kamba (Ulu): kukuma | Kamba (Nganyawa): kwer | Kikuyu: kuruma
+bitter : Swahili: -chungu | Kamba (Ulu): -kulalako | Kamba (Nganyawa): -ũũ | Kikuyu: -nyungu
+
+black : Swahili: -eusi | Kamba (Ulu): -ziu | Kamba (Nganyawa): -wiu | Kikuyu: -iru
+bladder : Swahili: kibofu, pl. vibofu | Kamba: ngigu | Kikuyu: thungi
+blaze (v.) : Swahili: kuwaka | Kamba: kungimma | Kikuyu: kuwakana
+bleed (v.) : Swahili: kutoka damu | Kamba: kundakamenie kume | Kikuyu: kurathakame
+blind person : Swahili: upofu | Kamba: muundu na meetho | Kikuyu: ngongu
+blood : Swahili: damu | Kamba (Ulu): nthakame | Kamba (Nganyawa): ndagami | Kikuyu: sakame
+blow (v.) : Swahili: kuvuma, kupuzia | Kamba (Ulu): kumithumu | Kamba (Nganyawa): kuwuba | Kikuyu: kuhuha
+blow nose (v.) : Swahili: kufuta kamasi | Kamba: kumia | Kikuyu: kumirra
+blue : Swahili: samawi | Kamba: kithongo | Kikuyu: Itu
+boat : Swahili: mashua | Kamba: matama ya maanzi
+body : Swahili: mwili, pl. miili | Kamba (Ulu): mwi | Kamba (Nganyawa): mwili, mwiakwa | Kikuyu: mwiri
+bog : Swahili: tinga tinga | Kamba: ndaka | Kikuyu: itambaaini
+boil : Swahili: jipu, pl. majipu | Kamba (Ulu): mwimu | Kamba (Nganyawa): mwemu | Kikuyu: ihuha, pl. mahuha
+boil (v.) : Swahili: kuchemka, kututuma | Kamba: kutheoka | Kikuyu: kuhiuha
+bone : Swahili: mfupa, pl. mifupa | Kamba: ivindi, pl. mavindi | Kikuyu: ihindi, pl. mahindi
+boot : Swahili: kiatu, pl. viatu | Kamba: kiatu, pl. iatu | Kikuyu: kiratu, pl. iratu
+border : Swahili: mpaka, pl. mipaka | Kamba: mupaka | Kikuyu: muhaka
+bore (v.) : Swahili: kudidimikia, kuzua | Kamba: kutonya | Kikuyu: kuthegetha
+born (to be) : Swahili: kuzawa, kuzaliwa | Kamba: kutzia | Kikuyu: kuziara
+both : Swahili: wote wawili | Kamba: andu alle or elle | Kikuyu: andu ere
+bottle : Swahili: chupa, pl. machupa | Kamba (Ulu): tupa | Kamba (Nganyawa): kitupa | Kikuyu: kitete
+bow : Swahili: uta, pl. matu or nyuta; upindi, pl. pindi | Kamba (Ulu): uta | Kamba (Nganyawa): itumo | Kikuyu: uta
+box ears (to) : Swahili: kupiga kofi | Kamba: kuna | Kikuyu: kurunga
+boy : Swahili: kijana, pl. vijana | Kamba: kabisi | Kikuyu: kahi
+boy (circumcised) : Swahili: hirim | Kamba: mundu mime | Kikuyu: mundu murume
+bracelet : Swahili: kekee (flat); kikuku, pl. vikuku (round); kingaja, pl. vingaja (of beads); banagiri (ornamented with points); timbi | Kamba: emunyo; uthuku (iron) | Kikuyu: miringa; kishango (flat metal)
+bracken : Kamba: uthiu | Kikuyu: loisiyu
+brain : Swahili: bongo, pl. mabongo | Kamba (Ulu): ebutabuteelier | Kamba (Nganyawa): woongo | Kikuyu: toombo
+branch : Swahili: tawi, pl. matawi, utanzu, pl. tanzu | Kamba: uthaanzu | Kikuyu: michuha
+bray (v.) : Swahili: kulia | Kamba: kumalonso | Kikuyu: kurira
+break (v.) : Swahili: kuvunja, kukatika | Kamba: kutulika | Kikuyu: kuunika
+breast : Swahili: ziwa, pl. maziwa | Kamba: noondo | Kikuyu: nyondo
+
+breed (v.) : Swahili: kuzaa | Kamba: kutzia, kuuma | Kikuyu: kutziara
+bridge : Swahili: daraja | Kamba: itãã | Kikuyu: mugogo
+bring (v.) : Swahili: kuleta | Kamba (Ulu): guete | Kamba (Nganyawa): kukaiete | Kikuyu: kurehe
+bring forth (about to) : Swahili: tumbo uchungu | Kamba: kutzia | Kikuyu: niringiriere
+broad : Swahili: -pana | Kamba: -nene | Kikuyu: -jarria, -arrie
+broom : Swahili: ufagio, pl. fagio | Kamba (Ulu): uviaiyo | Kamba (Nganyawa): viaiya | Kikuyu: kihato
+brother : Swahili: ndugu | Kamba (Ulu): nindu | Kamba (Nganyawa): mwinai | Kikuyu: murāta
+brother in law : Swahili: shemegi | Kamba: mwinawa | Kikuyu: mthoni
+buffalo : Swahili: nyati | Kamba (Ulu): niai | Kamba (Nganyawa): mbo | Kikuyu: mbogo
+build (v.) : Swahili: kujenga, kuaka | Kamba: kuaka | Kikuyu: kuaka
+bull : Swahili: ndume, fahali, pl. mafahali | Kamba: nzao | Kikuyu: ndēgua
+burn (v.) : Swahili: kuwaka, kuteketea | Kamba: kuungua | Kikuyu: kuakanna
+burst (v.) : Swahili: kupasuka, kutumbuka | Kamba (Ulu): kuchialukku | Kamba (Nganyawa): kwatoko | Kikuyu: kuatuka
+bury (v.) : Swahili: kuzika | Kamba (Ulu): kithuku | Kamba (Nganyawa): kuthika | Kikuyu: kuthika
+bush buck : Swahili: kungu (male), mbuwarra (female) | Kamba: nthyaiya | Kikuyu: thwariga
+bustard (lesser) : Swahili: handalla | Kamba (Ulu): issembaleli | Kamba (Nganyawa): ngooto
+but : Swahili: lakini | Kamba: naanga | Kikuyu: niire or ēku
+butter : Swahili: siagi | Kamba: maota | Kikuyu: ngorrono
+butter (clarified) : Swahili: samli | Kamba: mauta mavivia | Kikuyu: maguta
+butter milk : Swahili: mtindi | Kamba: kalia | Kikuyu: uria
+butterfly : Swahili: kipepeo, pl. vipepeo | Kamba: kimbalutua | Kikuyu: kihurruta
+buttocks : Swahili: tako, pl. matako | Kamba (Ulu): kitiimba | Kamba (Nganyawa): nitako | Kikuyu: itina
+buy (v.) : Swahili: kununua, kuzabuni | Kamba (Ulu): kūer | Kamba (Nganyawa): gutho | Kikuyu: kuūrra
+by myself : Swahili: peke yangu | Kamba: ninyoka | Kikuyu: denyeki
+by thyself : Swahili: peke yako | Kamba: unu omwe | Kikuyu: denyiki
+by himself : Swahili: peke yake | Kamba (Ulu): wiweka | Kamba (Nganyawa): muundu menwe | Kikuyu: arriwiki
+by ourselves : Swahili: peke yetu | Kamba: eweeka | Kikuyu: ithuiki
+by yourselves : Swahili: peke yenu | Kamba: eweka | Kikuyu: inyinyiiki
+by themselves : Swahili: peke yao | Kamba: andu meoka | Kikuyu: ashumakiniau
+
+C
+cactus : Swahili: mutupa, pl. mitupa | Kamba: tiah | Kikuyu: muthuuri
+caffre corn : Swahili: matama | Kamba: mbiã | Kikuyu: mweer
+calf : Swahili: ndama | Kamba: ndama, nimoi | Kikuyu: njau
+calf (of leg) : Swahili: chafi cha mguu | Kamba: engelle | Kikuyu: ikerre
+call (v.) : Swahili: kuita, kutaja | Kamba: kwita | Kikuyu: kumwita
+
+camel : Swahili: ngamia | Kamba: ngamele
+can (v.) : Swahili: kuweza | Kamba: nutonya | Kikuyu: ningohotta
+cannot (I) : Swahili: siwezi | Kamba: nimuwao | Kikuyu: dingihotta
+cap : Swahili: kofia | Kamba: ngudua | Kikuyu: ngofia
+captain : Swahili: nakhotha, naoza | Kamba: minyamala | Kikuyu: muthamakki
+carry (v.) : Swahili: kuchukua | Kamba (Ulu): gukua | Kamba (Nganyawa): guēr | Kikuyu: kuua
+cartridges : Swahili: kiasi cha bunduki | Kamba: mbullu bullu | Kikuyu: mbwebwe
+cassava : Swahili: mahogo, pl. hogo | Kamba: nemãānga | Kikuyu: mugwatchi
+castor-oil tree : Swahili: mbarika | Kamba: mbaluku | Kikuyu: mbariki
+castrate (v.) : Swahili: kuhasi, maksai | Kamba (Ulu): kuatilla | Kamba (Nganyawa): kulilikanna | Kikuyu: kuhakora
+cat : Swahili: paka | Kamba: mbaka | Kikuyu: nempaka
+catch (v.) : Swahili: kudaka, kukamata | Kamba: kwatta | Kikuyu: kwatta
+caterpillar : Swahili: kwanya | Kamba: maamo | Kikuyu: kunyu, kigunyu
+cause : Swahili: sababu, maana, kisa | Kamba: nichaendotweno | Kikuyu: mwanumarerake
+chain : Swahili: mkufu, pl. mikufu | Kamba: munyõõ, munnõ | Kikuyu: kirengeri
+chain (large) : Swahili: mnyororo, pl. minyororo | Kikuyu: monyoro (small)
+chair : Swahili: kiti, pl. viti | Kamba (Ulu): kibilla, pl. ibilla | Kamba (Nganyawa): kitumbi, pl. itumbi | Kikuyu: nkiti
+chameleon : Swahili: lumbwi, kinyonga, pl. vinyonga | Kamba: keembu | Kikuyu: kēēmbu
+charcoal : Swahili: makaa ya miti | Kamba: makaa | Kikuyu: makarra
+cheat (v.) : Swahili: kudanganya | Kamba: kugulanni | Kikuyu: kutukannia
+cheek : Swahili: kitefute, pl. vitefute | Kamba (Ulu): ngambu | Kamba (Nganyawa): mataū | Kikuyu: ikaii, pl. makaii
+chest : Swahili: kifua, pl. vifua | Kamba: kithui | Kikuyu: kithuri, pl. ithuri
+chest (middle) : Swahili: kidari (animals) | Kamba: umbua (middle) | Kikuyu: nionda
+chew (tobacco) : Swahili: kutafuna | Kamba: kuya kuthia | Kikuyu: kurri ambakki
+chew (the cud) : Swahili: kucheua | Kamba: mathaunyu | Kikuyu: kurritatha gummia
+chicken : Swahili: kuku | Kamba: nguku | Kikuyu: nenguku
+chief : Swahili: mfalme, pl. wafalme | Kamba: muundu mnene, pl. andu anene | Kikuyu: muthamaki
+child : Swahili: mtoto, pl. watoto | Kamba (Ulu): kana, pl. twana | Kamba (Nganyawa): gana, pl. twana | Kikuyu: kana, pl. twana
+chin : Swahili: kidevu, pl. videvu | Kamba (Ulu): kinge | Kamba (Nganyawa): engolu | Kikuyu: kirreru
+chirp (v.) : Swahili: kufionya | Kamba (Ulu): kukusiamoi | Kamba (Nganyawa): itoloka | Kikuyu: kunyuga
+choose (v.) : Swahili: kuchagua | Kamba (Ulu): gumantha | Kamba (Nganyawa): kunyuvaa | Kikuyu: kuthūra
+circle : Swahili: duara | Kamba: mutau | Kikuyu: githiurrure
+circumcise (v.) : Swahili: kutahiri, kumbi | Kamba: kwaika | Kikuyu: kuruwithia
+circumciser : Swahili: ngariba | Kamba: atu mia | Kikuyu: muruitha
+circumcising instrument : Swahili: mbano | Kamba: wēnzi | Kikuyu: wenzi
+claw : Swahili: ukucha, pl. kucha | Kamba (Ulu): waa | Kamba (Nganyawa): ngwa | Kikuyu: ndoara
+clay : Swahili: udongo | Kamba (Ulu): nubongo | Kamba (Nganyawa): tutandaka | Kikuyu: ndaka
+clean : Swahili: safi | Kamba (Ulu): -eza | Kamba (Nganyawa): -zeo | Kikuyu: -hatta
+clean (v.) : Swahili: kusafisha, kutakasa | Kamba: kututa | Kikuyu: kuhuhatta, kutherra
+clever : Swahili: hodari, akili | Kamba: -kili | Kikuyu: -wega
+climb (v.) : Swahili: kupanda, kuparaga | Kamba: kukapande | Kikuyu: kuhanda
+clitoris : Swahili: kisimi | Kamba: unguthu | Kikuyu: lungussu, rungussu, kingula, muthita
+cloth : Swahili: kitambāā, pl. vitambāā, nguo | Kamba: ngua | Kikuyu: nguo
+clothes : Swahili: nguo, miguo, mavazi | Kamba: ngua | Kikuyu: nguo
+cloud : Swahili: wingu, pl. mawingu | Kamba (Ulu): mwingo | Kamba (Nganyawa): edu | Kikuyu: huungu
+coast : Swahili: pwani | Kamba: kisuani | Kikuyu: kishauini
+cocoa nut : Swahili: nazi | Kamba: munathi
+cold : Swahili: baridi | Kamba (Ulu): mbebo | Kamba (Nganyawa): mpepo | Kikuyu: heho
+cold (in head) : Swahili: mafua | Kamba (Ulu): ikua | Kamba (Nganyawa): igua | Kikuyu: kikorrora
+collar : Kamba: ikanda | Kikuyu: murramu
+colobus monkey : Swahili: mbega | Kamba: mkollolo | Kikuyu: nguyu
+colobus monkey (head-dress) : Kamba: kitukku | Kikuyu: thūmbi
+colour : Swahili: rangi | Kamba (Ulu): langi | Kamba (Nganyawa): mbu | Kikuyu: thirika
+comb (cock's) : Swahili: upanga, mlole | Kamba: wiimba | Kikuyu: ruhia
+come (v.) : Swahili: kuja | Kamba: kuka | Kikuyu: kuka
+come back : Swahili: kurudi | Kamba (Ulu): sioka | Kamba (Nganyawa): kuka | Kikuyu: kushoka
+conceal (v.) : Swahili: kuficha | Kamba: kuwitha | Kikuyu: kuhitha
+conceive (v.) : Swahili: kumimba | Kamba (Ulu): eibu | Kamba (Nganyawa): kēgu | Kikuyu: ihu
+conquer (v.) : Swahili: kushinda | Kamba: kutinda | Kikuyu: kutinda
+consider (v.) : Swahili: kufikiri | Kamba: kulilikanna | Kikuyu: kuthikina
+cook (v.) : Swahili: kupika | Kamba (Ulu): kuuer | Kamba (Nganyawa): kūūē | Kikuyu: kuruga
+cooking vessel : Swahili: sufuria, pl. masufuria | Kamba (Ulu): nuungu | Kamba (Nganyawa): ithillia, mbiitziu | Kikuyu: nyungu
+copulate (v.) : Swahili: kujami, kutomba | Kamba: kununyiti | Kikuyu: kuthicha, kirindi
+cord : Swahili: ukamba, pl. kambaa, kigwe, pl. vigwe | Kamba (Ulu): uli | Kamba (Nganyawa): ndi | Kikuyu: rurrigi or mkanda
+cord (cowhide) : Kamba (Ulu): mukua | Kamba (Nganyawa): nemekua | Kikuyu: mukua
+corpse : Swahili: mzoga, pl. mizoga | Kamba (Ulu): nukwie | Kamba (Nganyawa): ekugua | Kikuyu: muundu muku
+cotton (thread) : Swahili: usi, pamba | Kamba (Ulu): uli | Kamba (Nganyawa): nibamba | Kikuyu: ruriggi
+cough : Swahili: kukohoa | Kamba (Nganyawa): gukoa | Kikuyu: okorrora
+count (v.) : Swahili: kuhesabu | Kamba (Ulu): kutella | Kamba (Nganyawa): kutala | Kikuyu: kutara
+country : Swahili: inchi | Kamba: nthi | Kikuyu: fururi
+cover (v.) : Swahili: kufunika | Kamba: kunika | Kikuyu: kunika
+cow : Swahili: ngombe | Kamba: ngombe | Kikuyu: ngombe
+coward : Swahili: mwoga, pl. waoga | Kamba (Ulu): ewia | Kamba (Nganyawa): wewia | Kikuyu: ūer
+cowry : Swahili: kauri, kete | Kamba: ngūtu | Kikuyu: ngugutu
+crawl (a man) : Swahili: kutambaa | Kamba: kugunga | Kikuyu: kukigamma
+creep (an animal) : Swahili: kutambaa | Kamba: kugunga | Kikuyu: kukigamma
+crested crane : Swahili: korongo, mavari | Kamba: kīua | Kikuyu: morruaru
+cricket : Swahili: nyenzi | Kamba: mbavambui | Kikuyu: kikuranyungu
+crocodile : Swahili: mamba, ngwena | Kamba: kinyangi | Kikuyu: kingangi
+cross over (v.) : Swahili: kuvuka | Kamba: kugeloesi | Kikuyu: kuringa
+crow (white necked) : Swahili: kunguru | Kamba: nguungu | Kikuyu: ihuru
+crow (v.) : Swahili: kuwika | Kamba: kwayi | Kikuyu: kugāmba
+crush (v.) : Swahili: kuseta, kuponda | Kamba (Ulu): kuendoke | Kamba (Nganyawa): kututa | Kikuyu: kuhuragga
+cry (v.) : Swahili: kulia | Kamba (Ulu): gwier | Kamba (Nganyawa): kwier | Kikuyu: kurera
+cultivate (v.) : Swahili: kulima | Kamba: kuimu | Kikuyu: kurimma
+cunning : Swahili: -erevu | Kamba: wassa | Kikuyu: -ūgi
+cup (drinking vessel) : Swahili: kikombi, pl. vikombi | Kamba: ikombi, pl. makombi | Kikuyu: kihuri, pl. ihuri
+cure (v.) : Swahili: kuponya, kupoa | Kamba: kwapoa | Kikuyu: kuonna
+custom : Swahili: dasturi | Kamba (Ulu): nindettu | Kamba (Nganyawa): nikki | Kikuyu: ugawega
+cut (v.) : Swahili: kukata | Kamba (Ulu): kutilania | Kamba (Nganyawa): kudila | Kikuyu: kutinnia
+cut (open) : Swahili: kuchanja | Kamba: kutemanga | Kikuyu: kutemenga
+
+D
+dance : Swahili: mchezo, pl. michezo | Kamba: wathi | Kikuyu: thoiitha, kuina
+dance (v.) : Swahili: kucheza | Kamba (Ulu): kusunga | Kamba (Nganyawa): kuthaoka | Kikuyu: kuthoiitha
+dance : Swahili: chela (elders with mahindi in gourds) | Kamba: kedume (elders) | Kikuyu: muthun guūchi (elders)
+dance : Swahili: unyagu (girls at the age of puberty) | Kamba: wathi yaiitu (women) | Kikuyu: ngushu (children)
+dance : Kikuyu: kishukia (warriors)
+dance : Kikuyu: nduumo (young women)
+dance : Kikuyu: kitiiro (old women)
+dance : Kikuyu: reegu (uncircumcised boys)
+dandy : Swahili: malidadi | Kamba (Ulu): nimwanakke | Kamba (Nganyawa): enuetzi muundu | Kikuyu: sakka
+dark : Swahili: -a giza | Kamba (Ulu): kibiindu | Kamba (Nganyawa): tuinanna | Kikuyu: nduma
+dawn : Swahili: alfajiri, kucha | Kamba (Ulu): kwatia | Kamba (Nganyawa): chooko | Kikuyu: ruchini
+day : Swahili: siku | Kamba (Ulu): utuku | Kamba (Nganyawa): muthenia | Kikuyu: utuku
+day after to-morrow : Swahili: keshu kutwa | Kamba: awoke | Kikuyu: ōke
+daylight : Swahili: mchana | Kamba: mathenia | Kikuyu: mthenia
+deaf : Swahili: kiziwi, pl. viziwi | Kamba (Ulu): ndaiimatu | Kamba (Nganyawa): ndemata | Kikuyu: njika
+dear (price) : Swahili: ghali | Kamba (Ulu): kithuku | Kamba (Nganyawa): nyeka | Kikuyu: kihinya
+debt : Swahili: deni | Kamba: tenne | Kikuyu: thiire
+defend (v.) : Swahili: kulinda | Kamba: tukaiiye | Kikuyu: kurira
+deny (v.) : Swahili: kukana | Kamba: kulea | Kikuyu: kukana
+descend (v.) : Swahili: kuteremka | Kamba (Ulu): guthea | Kamba (Nganyawa): kuthea | Kikuyu: kuikerruka
+destroy (v.) : Swahili: kuharibu | Kamba: kuwananga | Kikuyu: kuihier
+devil : Swahili: shetani, pl. mashetani | Kamba: mbebo
+dew : Swahili: umande | Kamba: waiyu | Kikuyu: imme
+diarrhœa : Swahili: tumbo la kuhara | Kamba: kwitua | Kikuyu: ruharo
+dic-dic : Swahili: paa | Kamba (Ulu): kabii | Kamba (Nganyawa): nīī, kamwe | Kikuyu: thunni
+die (v.) : Swahili: kufa | Kamba (Ulu): kwie | Kamba (Nganyawa): kugua | Kikuyu: kukua or kuite
+difficult : Swahili: -gumu | Kamba: mikiumu | Kikuyu: kiumu
+dig (v.) : Swahili: kuchimba | Kamba (Ulu): kuendzema | Kamba (Nganyawa): kuenza | Kikuyu: kuenja
+dirt : Swahili: t'aka | Kamba: ndakuju ndakuju | Kikuyu: ndaka
+dirty : Swahili: chafu, taka taka | Kamba: ndaka | Kikuyu: mauti
+disembowel (v.) : Swahili: kutumbua | Kamba (Ulu): gumier | Kamba (Nganyawa): kuvunna | Kikuyu: kuturrikia
+disobey (v.) : Swahili: kuasi | Kamba: kullikana | Kikuyu: gutiga
+ditch : Swahili: handaki | Kamba: etiviku | Kikuyu: irrima
+divide (v.) : Swahili: kugawanya | Kamba: kutea | Kikuyu: kugaana
+do you hear? : Swahili: unasikia? | Kamba (Ulu): niwewa? | Kamba (Nganyawa): nikwewa? | Kikuyu: nikuiwa?
+dog : Swahili: mbwa | Kamba (Ulu): solu | Kamba (Nganyawa): ngiti | Kikuyu: kui or ngiti
+donkey : Swahili: punda | Kamba (Ulu): ingoii | Kamba (Nganyawa): inguii | Kikuyu: ndigiri
+door : Swahili: mlango, pl. milango | Kamba (Ulu): mwomo | Kamba (Nganyawa): mobiā | Kikuyu: thōme
+dove : Swahili: hua | Kamba (Ulu): ndongo | Kamba (Nganyawa): ebui | Kikuyu: ndutūrra
+draw (v.) : Swahili: kuvuta | Kamba: kushier | Kikuyu: kugutza
+draw water : Swahili: kuteka maji | Kamba: kutapa maanzi | Kikuyu: kutaha maii
+dream (v.) : Swahili: kuota | Kamba: kwota | Kikuyu: kurota
+drink (v.) : Swahili: kunwa | Kamba (Ulu): gunwa, gunya | Kamba (Nganyawa): kunuya | Kikuyu: kumea
+drinking vessel (cow-horn) : Kikuyu: rohier
+drive away (v.) : Swahili: kufukuza | Kamba: kuluunja | Kikuyu: kuingata
+drum : Swahili: ngoma | Kamba (Ulu): kithembi | Kamba (Nganyawa): ngoma | Kikuyu: ruimbo
+drum (small) : Kamba: mbālia
+drunk (to be) : Swahili: kulewa | Kamba (Ulu): nunyiwitioki | Kamba (Nganyawa): kutoona | Kikuyu: nurēu
+dry (get) : Swahili: kukaoka, kavu | Kamba (Ulu): inyung | Kamba (Nganyawa): momo | Kikuyu: kuma
+duck : Swahili: bata, pl. mabata | Kamba: ibata | Kikuyu: bata
+dumb : Swahili: bubu, pl. mabubu | Kamba: nobidetee | Kikuyu: ihurri
+dung (cow's) : Swahili: mavi | Kamba: maii | Kikuyu: mai
+dust : Swahili: vumbi, pl. mavumbi | Kamba (Ulu): kito | Kamba (Nganyawa): kitoa | Kikuyu: rukuungu
+duyker (antelope) : Swahili: dondoro | Kamba: nthia | Kikuyu: kathia
+
+E
+eagle : Swahili: tai | Kamba: kibalala | Kikuyu: ndiiu
+ear : Swahili: sikio, pl. masikio | Kamba (Ulu): matu | Kamba (Nganyawa): kutu | Kikuyu: kutu
+ear (lobe) : Kamba: monni | Kikuyu: mōnni
+ear (top edge) : Kikuyu: ndugirri
+ear (hole in lobe) : Swahili: ndewe | Kamba: iima | Kikuyu: ūttu
+early : Swahili: mapema | Kamba (Ulu): kwatier | Kamba (Nganyawa): chioko | Kikuyu: ruchini
+earring : Swahili: pete ya masikio | Kamba: ngoome kutonya | Kikuyu: ndĕbe (round ornaments)
+earring : Swahili: jassi, pl. majassi (large round in lobe) | Kamba (Ulu): malulia (large round) | Kamba (Nganyawa): mute (large round) | Kikuyu: nyorri (curved sticks)
+earring : Kikuyu: nyorri (double sticks)
+earring : Kikuyu: ichuhi (women's)
+easy : Swahili: -epesi | Kamba: kiollolo | Kikuyu: enjororo
+eat (v.) : Swahili: kula | Kamba (Ulu): tuje, guya | Kamba (Nganyawa): kwer | Kikuyu: kunigurria
+eel : Swahili: kungu, pl. makungu | Kamba (Ulu): kinyongo, pl. inyongo | Kamba (Nganyawa): mukanga | Kikuyu: mumkunga
+egg : Swahili: yayi, pl. mayayi | Kamba: itumbi, pl. matumbi | Kikuyu: itumbi, pl. matumbi
+eight : Swahili: nane | Kamba (Ulu): nyanya | Kamba (Nganyawa): nanya | Kikuyu: inyanga
+eight times : Swahili: mara nane | Kamba: ka nanya | Kikuyu: kanyanya
+eighteen : Swahili: kumi na nane | Kamba: ekumi na nanya | Kikuyu: ikumi na inyanga
+eland : Swahili: pofu | Kamba: ngulu
+elbow : Swahili: kisigino, pl. visigino ; kivi, pl. vivi | Kamba (Ulu): kikokoa, pl. ikokoa | Kamba (Nganyawa): kinyungunu | Kikuyu: kiokora, pl. iokora
+elder : Swahili: mzee, pl. wazee | Kamba: mtumia, pl. andumia | Kikuyu: muthuri, pl. athuri
+elephant : Swahili: tembo, ndovu | Kamba: unzōō | Kikuyu: njogu
+eleven : Swahili: kumi na moja | Kamba: ekumi na umwa | Kikuyu: ikumi na imwe
+empty : Swahili: -tupu | Kamba: kithe | Kikuyu: nihatheri
+end : Swahili: mwisho, pl. miisho | Kamba (Ulu): amina | Kamba (Nganyawa): egomina | Kikuyu: suha
+endure : Swahili: kuvumilia | Kamba: kuminzia | Kikuyu: kŭvumirrira
+enemy : Swahili: adui, pl. maadui | Kamba (Ulu): muthuku | Kamba (Nganyawa): muthugu | Kikuyu: mugitti, pl. agitti
+enter (v.) : Swahili: kuingia | Kamba: enda | Kikuyu: kutoonya
+entirely : Swahili: kabisa | Kamba (Ulu): ikallalachomweni | Kamba (Nganyawa): nkuekapiu | Kikuyu: ingueothe
+entrails : Swahili: matumbo | Kamba: ebŭ | Kikuyu: nda
+equal : Swahili: sawasawa | Kamba: kalla kalla | Kikuyu: nichiga, inaiine
+evening : Swahili: jioni | Kamba: wio | Kikuyu: waiini
+every : Swahili: killa | Kamba (Ulu): kia | Kamba (Nganyawa): thionthe | Kikuyu: nania, matungunite
+every day : Swahili: sikuzote or killa siku | Kamba: mithenia onthe | Kikuyu: utuku ōthe
+everything : Swahili: killa kitu | Kamba (Ulu): kiindu kionthe | Kamba (Nganyawa): ithami tyondi | Kikuyu: indujothe
+everywhere : Swahili: killa mahali | Kamba: utumu | Kikuyu: kiragōthe
+evil eye : Swahili: mchenjio | Kamba: kienni | Kikuyu: ithemengo
+exchange (v.) : Swahili: kubadili | Kamba (Ulu): kuane | Kamba (Nganyawa): kuana | Kikuyu: kurānia
+eye : Swahili: jicho, pl. macho | Kamba: itho, pl. meetho | Kikuyu: ritho, pl. meetho
+eye brows : Swahili: nyushi, nshi | Kamba (Ulu): sienthaguba | Kamba (Nganyawa): kinthaguba | Kikuyu: jurit cha meetho
+eye lashes : Swahili: kope | Kamba: ngobe | Kikuyu: embutu
+eye (pupil of) : Kamba: wikithi wa meetho | Kikuyu: kuima kia ritho
+eyelid (upper and lower) : Swahili: kope | Kamba: kikonde cha itho | Kikuyu: kimonne
+
+F
+face : Swahili: uso, pl. nyuso | Kamba: uthio | Kikuyu: uthio
+faint : Swahili: zimia roho | Kamba: kubaluka | Kikuyu: kugwatirira
+fall (v.) : Swahili: kuanguka | Kamba: kubaluka | Kikuyu: kugoa
+famine : Swahili: nja | Kamba: wendja | Kikuyu: ngaragu
+far : Swahili: mbali | Kamba (Ulu): ekuasa | Kamba (Nganyawa): kuaatha | Kikuyu: kuraiya
+fast (adj.) : Swahili: upesi | Kamba: mituki | Kikuyu: kuhiwa, mituki
+father : Swahili: baba | Kamba (Ulu): nau | Kamba (Nganyawa): atsa, bata | Kikuyu: baba
+father-in-law : Swahili: mkwe, pl. wakwe | Kikuyu: wathiomo
+fear : Swahili: uoga, ugopa | Kamba (Ulu): kukea | Kamba (Nganyawa): kuthinye | Kikuyu: kwitigirra
+feather : Swahili: nyoa, pl. manyoa | Kamba (Ulu): mawia | Kamba (Nganyawa): mwia | Kikuyu: enjoiya
+feed (v.) : Swahili: kulisha | Kamba (Ulu): kwithia | Kamba (Nganyawa): kwillia | Kikuyu: kurithia
+female : Swahili: mke, pl. wake | Kamba: muka, pl. akka | Kikuyu: muka, pl. akka
+fever : Swahili: homa | Kamba (Ulu): enekua | Kamba (Nganyawa): kithui | Kikuyu: kiuti
+fifteen : Swahili: kumi na tano | Kamba: ekumi na kitanu | Kikuyu: ekumi na ithanu
+fifty : Swahili: hamsini | Kamba: miongoele na kitanu | Kikuyu: mirongoiri na itanu
+fight (v.) : Swahili: kupigana | Kamba (Ulu): etekogita | Kamba (Nganyawa): kuna | Kikuyu: kuhurana
+file : Swahili: tupa | Kamba: ithoka | Kikuyu: ithenua
+file (v.) : Swahili: kuchonga | Kamba: kwasuvia | Kikuyu: enjarronu
+fill (v.) : Swahili: kujaza | Kamba (Ulu): ususia | Kamba (Nganyawa): ekiameta | Kikuyu: kuiyirria
+find (v.) : Swahili: kuona, kuzumbua | Kamba (Ulu): nonie | Kamba (Nganyawa): kumbulla | Kikuyu: kuona
+finger : Swahili: kidole, pl. vidole | Kamba: kia, pl. thia | Kikuyu: kiarra
+finger (first) : Kamba (Ulu): kia kinini | Kamba (Nganyawa): tcha kimwe | Kikuyu: kiarra ki morroto
+finger (fourth) : Kamba: kia cha mwela
+finish (v.) : Swahili: kumaliza, kuisha | Kamba (Ulu): kiathella, guamina | Kamba (Nganyawa): kumina | Kikuyu: kuthira
+fire : Swahili: moto, pl. mioto | Kamba (Ulu): iko | Kamba (Nganyawa): mwadgi, djuki | Kikuyu: mwaki
+firewood : Swahili: ukuni, pl. kuni | Kamba (Ulu): ekie iko | Kamba (Nganyawa): nguu | Kikuyu: ngu
+first : Swahili: kwanza | Kamba: monthi | Kikuyu: ikinya or kuambirrira
+fish : Swahili: samaki | Kamba: ikuyu, pl. makuyu | Kikuyu: sionguyu, ikuyu, makuyu
+fish (small) : Swahili: dagāā | Kikuyu: mathambaiya
+fish (v.) : Swahili: kuvua samaki | Kamba: gumia | Kikuyu: kuruta
+fishbones : Swahili: miba | Kamba: meuwa | Kikuyu: migua
+fist : Swahili: konde, pl. makonde | Kamba: kwatta ngundi | Kikuyu: ngūndi
+fit : Swahili: kifafa | Kamba: nenduuka | Kikuyu: ngōma
+five : Swahili: tano | Kamba (Ulu): itanu | Kamba (Nganyawa): kitanu | Kikuyu: ithanu
+five times : Swahili: mara tano | Kamba (Ulu): katanu | Kamba (Nganyawa): mala itanu | Kikuyu: katanu
+flag : Swahili: bandera | Kamba (Ulu): kibeberro | Kamba (Nganyawa): ngwanduni | Kikuyu: kibeberro
+flea : Swahili: kiriboto, pl. viriboto | Kamba (Ulu): engalla | Kamba (Nganyawa): magiani | Kikuyu: thūya, sūya
+flour : Swahili: unga | Kamba: mutu | Kikuyu: mutŭ
+flower : Swahili: ua, pl. maua | Kamba (Ulu): ia, pl. maia | Kamba (Nganyawa): malua | Kikuyu: marua
+flute : Swahili: filimbi | Kikuyu: mwehe
+fly : Swahili: inzi, pl. mainzi | Kamba (Ulu): ingi | Kamba (Nganyawa): inji | Kikuyu: ingi, ingishi
+fly (tsetse) : Swahili: mabu | Kamba: mwimu
+fly (v.) : Swahili: kuruka | Kamba (Ulu): kutulila | Kamba (Nganyawa): kuchulilla | Kikuyu: kurūga
+fold (v.) : Swahili: kukunja | Kamba (Ulu): kūnja | Kamba (Nganyawa): kuoba | Kikuyu: chokirriria
+foliage : Swahili: majani | Kamba: mathangu | Kikuyu: mathangu
+follow (v.) : Swahili: kufuata | Kamba (Ulu): kumubikilla | Kamba (Nganyawa): kuthinaki | Kikuyu: kuinginyira
+food : Swahili: chakula, pl. vyakula | Kamba (Ulu): leū | Kamba (Nganyawa): chakueer or kandu | Kikuyu: irrio or kăndu
+fool : Swahili: mpumbafu, pl. wapumbafu | Kamba (Ulu): wendia | Kamba (Nganyawa): nindia | Kikuyu: mkegu
+foot : Swahili: mguu, pl. miguu | Kamba: kuu | Kikuyu: runyarrire
+foot (flat of) : Swahili: waio | Kamba: unyai | Kikuyu: ikinya
+forbid (v.) : Swahili: kugombeza | Kamba: kubata | Kikuyu: kuregga
+ford : Swahili: kivuko, pl. vivuko | Kamba: kiandani | Kikuyu: ikoni
+forehead : Swahili: paji la uso | Kamba: uthio | Kikuyu: kingarra
+forest : Swahili: mwitu | Kamba (Ulu): kitheka | Kamba (Nganyawa): mtito, čebu | Kikuyu: kithaka
+forget (v.) : Swahili: kusahau | Kamba (Ulu): nolilue | Kamba (Nganyawa): ngulua | Kikuyu: kuriganuo
+forty : Swahili: arobaini | Kamba: miongoele na inya | Kikuyu: mirongo iri na ena
+four : Swahili: 'nne | Kamba (Ulu): inna | Kamba (Nganyawa): inya | Kikuyu: inya
+fourteen : Swahili: kumi na 'nne | Kamba: ekumi na inya | Kikuyu: ikumi na inya
+four times : Swahili: mara 'nne | Kamba (Ulu): kainya | Kamba (Nganyawa): kanna | Kikuyu: kanna
+friend : Swahili: rafiki, pl. marafiki | Kamba (Ulu): nendu | Kamba (Nganyawa): mnyanya | Kikuyu: muratta, munduitu
+frog : Swahili: nyangimrovi | Kamba: mundalali | Kikuyu: kengere
+frown : Swahili: kunja uso | Kamba: kwethuna | Kikuyu: kuminyira
+fruit : Swahili: tunda, pl. matunda | Kamba: etunda | Kikuyu: ndunguru
+full : Swahili: kujaa | Kamba (Ulu): kiusiomwita | Kamba (Nganyawa): ekiameta | Kikuyu: kuiyurra
+furnace : Swahili: kalibu | Kikuyu: murra
+
+G
+gain : Swahili: faiyda | Kamba: kiliko | Kikuyu: kiaugi
+game (alive) : Swahili: mawindo | Kamba (Ulu): nyamma | Kamba (Nganyawa): nama | Kikuyu: nyama
+game (meat) : Swahili: nyama | Kamba (Ulu): nyamma | Kamba (Nganyawa): nama | Kikuyu: nyama
+game trap : Swahili: mtego ya nyama | Kamba: kutea | Kikuyu: irrima
+garden : Swahili: shamba, pl. mashamba | Kamba (Ulu): muunda | Kamba (Nganyawa): mundani | Kikuyu: muganda
+garter (leather) : Kamba: uthuku | Kikuyu: msaanga
+gather (v.) : Swahili: kusanya | Kamba: kumaanza | Kikuyu: kutwenanyi
+gentle : Swahili: -anana | Kamba: -yana | Kikuyu: -huthu
+get (v.) : Swahili: kupata | Kamba (Ulu): gunengua | Kamba (Nganyawa): kwatta | Kikuyu: kukwatta
+get ahead : Swahili: kutangulia | Kamba: kuthimbe | Kikuyu: kituka
+get into : Swahili: kuingia | Kamba (Ulu): kusioka | Kamba (Nganyawa): kulika | Kikuyu: kuthienyumba
+get out : Swahili: kutoka | Kamba: gumala | Kikuyu: kuinnuka
+get out of the way : Swahili: similla | Kamba: jillia | Kikuyu: eherra
+get (to a place) : Swahili: kufika | Kamba: gubika | Kikuyu: kukinia
+get up : Swahili: kuondoka | Kamba (Ulu): gugilla | Kamba (Nganyawa): guthi | Kikuyu: kuthie
+ghost : Swahili: kivuli, pl. vivuli | Kamba: mūnyi | Kikuyu: kihirruru
+giddy : Swahili: levyalevya | Kikuyu: thieruruka
+giraffe : Swahili: twiga | Kamba: ndia | Kikuyu: ndwiga
+girl : Swahili: kijana, pl. vijana | Kamba (Ulu): kēlletu | Kamba (Nganyawa): kananga | Kikuyu: karegu
+give (v.) : Swahili: kupa, kutoa | Kamba: kumunenge | Kikuyu: kuha
+give chase : Swahili: kufukusa | Kamba (Ulu): kumulunja | Kamba (Nganyawa): kulunja | Kikuyu: kuingata
+give trouble : Swahili: kusumbua | Kamba: kunoa | Kikuyu: kunyamarria
+glad : Swahili: furaha | Kamba: guyameo | Kikuyu: gukĕnna
+gnaw (v.) : Swahili: kuguguna, kutafuna | Kamba (Ulu): kukuya | Kamba (Nganyawa): kunguma | Kikuyu: kukarria
+go (v.) : Swahili: kuenda | Kamba: kuthi | Kikuyu: kuthie
+go after : Swahili: kufuata | Kamba: kubigilla | Kikuyu: kinyirra
+go ahead : Swahili: kutangulia | Kamba: kuthimbe | Kikuyu: kituka
+go away (from a place) : Swahili: kuenda zangu, kutoka | Kikuyu: umothi, kumahaha
+go bad : Swahili: kuoza | Kamba: kunyunga | Kikuyu: kugutha
+go over : Swahili: kuvuka | Kamba (Ulu): killa | Kamba (Nganyawa): inga | Kikuyu: kuringa
+go round : Swahili: kuzunguka | Kamba: kuthrulukani | Kikuyu: kurigishuka
+go together : Swahili: kuenda pa moja | Kamba (Ulu): twenda ni pandu pamwe | Kamba (Nganyawa): mathi vamwe | Kikuyu: tuthi hamwe
+goat : Swahili: mbuzi | Kamba: mbuii | Kikuyu: mburri
+god : Swahili: muungu, pl. miungu | Kamba (Ulu): ngaii (fr. the Masai) | Kamba (Nganyawa): milungu | Kikuyu: ngaii (fr. the Masai)
+goitre : Swahili: tezi | Kamba: noiyengolu
+good : Swahili: -ema | Kamba (Ulu): -zeo | Kamba (Nganyawa): -cheo | Kikuyu: -wēga
+good (very) : Swahili: -ema sana | Kamba: ndetonzau | Kikuyu: nimwega munnu
+goose (Egyptian) : Kamba: maoma | Kikuyu: saimbirri
+gourd : Swahili: kibuyu, pl. vibuyu | Kamba (Ulu): kikuu, majii | Kamba (Nganyawa): kithalzia | Kikuyu: kinya, pl. inya
+gradually : Swahili: pole pole | Kamba: kabolla kabolla | Kikuyu: kahora
+grain (small red) : Swahili: kimanga | Kamba: mukombi | Kikuyu: miokombi, mkonyori (when ground)
+grandparent : Swahili: babu (masc.), bibi (fem.) | Kamba (Ulu): umāā, inya | Kamba (Nganyawa): atza mnini | Kikuyu: gūūka (masc.), tchutchu (fem.)
+grass : Swahili: nyasi, majani | Kamba (Ulu): nyekki, nyigi | Kamba (Nganyawa): mathangu | Kikuyu: nyaki
+grasshopper : Swahili: panzi, pl. mapanzi | Kamba: mbandi | Kikuyu: miruga
+gratis : Swahili: burre | Kamba: manna | Kikuyu: hemanna
+grave : Swahili: kaburi, pl. makaburi | Kamba (Ulu): iima | Kamba (Nganyawa): kamana | Kikuyu: mbirrera
+graze (v.) : Swahili: kuparuga | Kamba (Ulu): kuithia | Kamba (Nganyawa): kutanyuka | Kikuyu: kurithia
+great : Swahili: bora, kubwa | Kamba: -nene | Kikuyu: -nene, marraia
+greedy : Swahili: -enyi roho | Kamba: ngoo | Kikuyu: mundu anda
+green : Swahili: rangi ya majani, chanikiwiti | Kamba: wiu | Kikuyu: giko
+grey hairs : Swahili: mvi | Kamba: mbūe | Kikuyu: mbui
+grief : Swahili: sikitiko, msiba, hamu | Kamba: ninithatite | Kikuyu: kuthikirra
+grind (v.) : Swahili: kusaga | Kamba: kuthia | Kikuyu: kuthia
+ground : Swahili: inchi, chini | Kamba (Ulu): panthi | Kamba (Nganyawa): itheo | Kikuyu: nisi
+grow (v.) : Swahili: kuota, kumea | Kamba: kweerna | Kikuyu: kumerra
+growl (v.) : Swahili: kunguruma | Kamba: kugelluma | Kikuyu: kukirra, kukina
+guard (v.) : Swahili: kulinda | Kamba: kwikalliakimoso | Kikuyu: kurira or kulila
+guide : Swahili: kiongozi | Kamba: kalūūngu | Kikuyu: mutongorria
+guinea-fowl : Swahili: kanga, kororo | Kamba: nganga | Kikuyu: enganga
+gum : Swahili: ulimbo limbo | Kamba: nengoai | Kikuyu: ulembwa
+gums : Swahili: ufizi, pl. fizi | Kamba: kinni | Kikuyu: kinni
+gun : Swahili: bunduki | Kamba (Ulu): musinga | Kamba (Nganyawa): ebuuti | Kikuyu: mtshinga
+
+H
+hair : Swahili: nyele, pl. unyele | Kamba (Ulu): ndiku | Kamba (Nganyawa): nzwi | Kikuyu: enjūri
+hair (of animals) : Swahili: nyoga, singa | Kamba: uwea | Kikuyu: njuerri
+hair (of pubes) : Swahili: mavuzi | Kamba: ngeu | Kikuyu: huyo, nowio
+half : Swahili: nusu | Kamba: nusu | Kikuyu: kishuinji
+hammer : Swahili: nyundo | Kamba: nundu | Kikuyu: nyondo
+hand : Swahili: mkono, pl. mikono | Kamba (Ulu): kuoko | Kamba (Nganyawa): ntha | Kikuyu: ruhi
+hand (palm of) : Swahili: kitanga cha mkono | Kamba (Ulu): kitaa | Kamba (Nganyawa): nzaa | Kikuyu: kisika
+handle (of knife) : Swahili: kipini cha kisu | Kamba: engaligweno | Kikuyu: muti wa rehiu
+hang (up) : Swahili: kuangika | Kamba: kuanika | Kikuyu: igirrira
+hard : Swahili: -gumu | Kamba (Ulu): -nyummu | Kamba (Nganyawa): -wēēau | Kikuyu: -umu
+hare : Swahili: sungura | Kamba: kabokō | Kikuyu: kapwuku, mbukku
+hasten (v.) : Swahili: kuharaka, kuhimiza | Kamba: mikuti | Kikuyu: mituki
+hatch (v.) : Swahili: kuatamia | Kamba: kudjewa | Kikuyu: kuturrikia
+hate (v.) : Swahili: kuchukia | Kamba: kumena | Kikuyu: kumena
+hawk : Swahili: kipanga | Kamba: kamali | Kikuyu: karuguru
+haze : Swahili: umande | Kikuyu: imme
+he : Swahili: yeye | Kamba (Ulu): uya or miya | Kamba (Nganyawa): yeyai | Kikuyu: wēē
+head : Swahili: kitwa, pl. vitwa | Kamba: mutue | Kikuyu: mtue
+hear (v.) : Swahili: kusikia | Kamba: kwewa | Kikuyu: kwiwa
+heart : Swahili: moyo, pl. mioyo | Kamba (Ulu): ndei | Kamba (Nganyawa): ethaiyu | Kikuyu: -gorro
+heavy : Swahili: -zito | Kamba (Ulu): -witu | Kamba (Nganyawa): -nene | Kikuyu: kiritu
+hedgehog : Swahili: kinungu | Kamba: kithangaiidi
+heel : Swahili: kifundo cha mguu | Kamba (Ulu): kitiinyo | Kamba (Nganyawa): kidiinyo | Kikuyu: kitogigo
+heifer : Swahili: mtamba, pl. mitamba | Kamba: kamolli | Kikuyu: mōōri
+help (v.) : Swahili: kusayidia | Kamba: kutethezie | Kikuyu: mutuarria
+her : Swahili: -ake | Kamba (Ulu): wakua | Kamba (Nganyawa): itchak | Kikuyu: nyaki
+herd : Swahili: mchunga, pl. wachunga | Kamba: nikwithia | Kikuyu: murithi
+here : Swahili: hapa | Kamba (Ulu): baa | Kamba (Nganyawa): vaa | Kikuyu: haha
+hiccup : Swahili: kwikwe | Kamba: kieketha | Kikuyu: kiegetha, kiagessa
+hide (v.) : Swahili: kuficha | Kamba (Ulu): kubithite | Kamba (Nganyawa): kuvitha | Kikuyu: kuhitha
+high : Swahili: -refu | Kamba: -wasa | Kikuyu: -raiya
+hill : Swahili: kilima, pl. vilima | Kamba (Ulu): kiima | Kamba (Nganyawa): nikima | Kikuyu: kirima
+hinder (v.) : Swahili: kuzuia | Kamba: ndukathi | Kikuyu: kurigillia
+hippopotamus : Swahili: kiboko, pl. viboko, tomondo | Kamba (Ulu): nikiboko, nguo | Kamba (Nganyawa): bakora | Kikuyu: nguo
+hips : Swahili: tokono | Kamba: kitako | Kikuyu: higo
+his : Swahili: -ake | Kamba (Ulu): nikiaki or wakwe | Kamba (Nganyawa): itchak | Kikuyu: nyaki
+hole : Swahili: shimo, pl. mashimo, tundu, pl. matundu | Kamba (Ulu): iima | Kamba (Nganyawa): nima | Kikuyu: irrima
+honey : Swahili: assali ya nyuki | Kamba: ukki wa nzuki | Kikuyu: ūūki
+honey box : Swahili: msinga | Kamba: mwatu | Kikuyu: mwātu
+hoof : Swahili: ukwato, pl. kwato | Kamba: maraiyu | Kikuyu: maungu
+horn : Swahili: pembe, pl. mapembe | Kamba: mbia | Kikuyu: ruher
+hornbill : Swahili: horro hondo | Kamba: ngōōto | Kikuyu: hūūma
+horse : Swahili: farasi | Kamba (Ulu): ngamissi | Kamba (Nganyawa): falasi | Kikuyu: mbarrasi
+house : Swahili: nyumba | Kamba (Ulu): nyumba | Kamba (Nganyawa): numba | Kikuyu: nyumba
+how many : Swahili: ngapi | Kamba (Ulu): sianata | Kamba (Nganyawa): nithiana | Kikuyu: nichigana
+hump : Swahili: nundu | Kamba: ngathi | Kikuyu: iguku
+hungry : Swahili: kuiva na njaa | Kamba: nanzaa | Kikuyu: ngaragu
+hunt (v.) : Swahili: kuwinda | Kamba (Ulu): kuiya | Kamba (Nganyawa): kuthiema, kutziema | Kikuyu: kugwima
+husband : Swahili: mume, pl. waume | Kamba: mume akwa | Kikuyu: murume wakwa
+hush : Swahili: kaleli | Kamba (Ulu): pindia | Kamba (Nganyawa): monakilongo | Kikuyu: kirra
+hyæna : Swahili: fisi, pisi | Kamba: mbiti | Kikuyu: hiti
+hyrax : Swahili: perere | Kamba: nzēē | Kikuyu: kemi
+
+I
+I : Swahili: mimi | Kamba (Ulu): ninye | Kamba (Nganyawa): ninyi | Kikuyu: ninie
+idle : Swahili: -vivu | Kamba: -wia | Kikuyu: -guta
+ill : Swahili: ngonjwa | Kamba: muwao | Kikuyu: morruaru
+impala (antelope) : Swahili: njue, funu | Kamba: ndadai | Kikuyu: ndatarri
+in : Swahili: katika or indani | Kamba (Ulu): ndjanue | Kamba (Nganyawa): ndani | Kikuyu: theini
+in front : Swahili: mbele | Kamba: mbe | Kikuyu: kutongorria
+india-rubber : Swahili: mbuergo (false), mpira, mtorria (plant) | Kamba: mperra | Kikuyu: myakamwe, monguya (false)
+infect : Swahili: kuombukiza | Kikuyu: kumorroria
+inherit : Swahili: kurithi | Kamba: kunengua | Kikuyu: kugaia
+insect : Swahili: mdudu, pl. wadudu | Kamba (Ulu): ndulu | Kamba (Nganyawa): ngugui | Kikuyu: ndutu
+inside : Swahili: ndani | Kamba: indani | Kikuyu: thiini or sieni
+iron : Swahili: chuma | Kamba: kiō | Kikuyu: kigerra
+ivory : Swahili: pembe, alaka | Kamba: nzoo | Kikuyu: muongo
+
+J
+jackal : Swahili: bweha | Kamba (Ulu): mbiwa | Kamba (Nganyawa): tithia | Kikuyu: mbue
+jigger : Swahili: funza | Kamba: lulu, pl. malulu | Kikuyu: ndutu
+journey : Swahili: msafara, safari | Kamba (Ulu): kialo | Kamba (Nganyawa): tchalo | Kikuyu: kiarro
+jump (v.) : Swahili: kuruka | Kamba: kutullila | Kikuyu: kurugaruga
+juniper : Kamba: mutei | Kikuyu: mutionaiyu
+just : Swahili: sawa sawa | Kamba (Ulu): newua | Kamba (Nganyawa): kalla kalla | Kikuyu: gwiganana
+
+K
+keep (v.) : Swahili: kuweka, kucheleza | Kamba (Ulu): gunaiya | Kamba (Nganyawa): tendeoka | Kikuyu: kuishokia
+kick (v.) : Swahili: kupiga teke | Kamba (Ulu): guutheli | Kamba (Nganyawa): mutheli | Kikuyu: kwikiarra rugurrio
+kidney : Swahili: figo, nso | Kamba: maiiko | Kikuyu: higo
+kill (v.) : Swahili: kuua, kuchinja (food) | Kamba (Ulu): muwao | Kamba (Nganyawa): kudilla | Kikuyu: kuurra
+kingfisher : Kamba: ndelembo | Kikuyu: ngarekari
+kiss (v.) : Swahili: kubusu | Kamba (Ulu): kugweteta | Kamba (Nganyawa): kuindimba | Kikuyu: kumuunga
+kite : Swahili: mwewe | Kamba (Ulu): mbolozia | Kamba (Nganyawa): mbuungu | Kikuyu: hungu
+knee : Swahili: gote, pl. magote, ondo, pl. maondo | Kamba: iyu | Kikuyu: iru
+kneedollow : Kamba: ngelle | Kikuyu: urrungo
+kneel (v.) : Swahili: kupiga magote | Kamba: kulianthu | Kikuyu: kuturriandu
+knife : Swahili: kisu, pl. visu | Kamba (Ulu): kabiu | Kamba (Nganyawa): kaviu | Kikuyu: roihiyu
+knobkerry : Swahili: rungu | Kamba: nzoma | Kikuyu: njuguma
+knock (v.) : Swahili: kugonga, kugota | Kamba: kuna | Kikuyu: kuringaringa
+know (v.) : Swahili: kujua | Kamba: kumanya | Kikuyu: kumenya
+knuckles : Kamba (Ulu): ngokolla | Kamba (Nganyawa): mwaongo | Kikuyu: nyunerro
+kudu (greater) : Swahili: barabanda | Kikuyu: mbăru
+kudu (lesser) : Swahili: shambi | Kamba: ndaii
+
+L
+lame : Swahili: kigulu | Kamba: nuguthua | Kikuyu: kuthua
+language : Swahili: maneno, lugha | Kamba: ndetu | Kikuyu: kunagena
+large : Swahili: -kubwa | Kamba: -nene | Kikuyu: -nene
+last : Swahili: mwisho | Kamba: itinna | Kikuyu: kurrigillia
+laugh (v.) : Swahili: kucheka | Kamba (Ulu): gutheka | Kamba (Nganyawa): nebāsi | Kikuyu: kutheka
+lazy : Swahili: -vivu | Kamba: -urrtullu | Kikuyu: -gūta
+lean (v.) : Swahili: kutegemea | Kamba: guaiya | Kikuyu: kuitirrania
+lean on (v.) : Swahili: kujigongojea | Kamba: guaiya | Kikuyu: kuitirrania
+leave (v.) : Swahili: kuacha | Kamba: guekka | Kikuyu: kulekia
+leaves : Swahili: majani | Kamba: mathaangu | Kikuyu: mathangu
+left hand : Swahili: mkono kushoto | Kamba (Ulu): kuoko kwaka | Kamba (Nganyawa): mkono shoto | Kikuyu: umotho
+left (to be) : Swahili: kusalia | Kamba: kalia | Kikuyu: kuihatigaila
+leg : Swahili: mguu, pl. miguu | Kamba: muthumu | Kikuyu: kuhuru
+leopard : Swahili: chui | Kamba (Ulu): ngoo | Kamba (Nganyawa): engo | Kikuyu: ngare
+leprosy : Swahili: ukoma, balanga | Kamba: ekutheamwi | Kikuyu: mchare
+let go : Swahili: kuacha | Kamba: ekka | Kikuyu: kuachia
+lick (v.) : Swahili: kuramba | Kamba: kunyenya | Kikuyu: kushuna
+lid : Swahili: kifuniko, pl. vifuniko | Kamba: kunika | Kikuyu: guniko
+lie : Swahili: wongo | Kamba (Ulu): uwungo | Kamba (Nganyawa): wuungu | Kikuyu: mahēni
+life : Swahili: uzima, roho | Kikuyu: ngorro
+lift (v.) : Swahili: kuinua | Kamba: gukillia | Kikuyu: kueeyer
+light : Swahili: mwanga, pl. mianga | Kamba: mithenia | Kikuyu: kierruru
+lightning : Swahili: weupe, umeme | Kamba: utissi wa mbua | Kikuyu: ruhēni
+like (v.) : Swahili: kupenda | Kamba (Ulu): gumwenda | Kamba (Nganyawa): guenda | Kikuyu: kwenda
+like this : Swahili: kama hivi | Kamba: ekka kanu | Kikuyu: kannōō, uguo
+line : Swahili: mstari, pl. mistari | Kamba (Ulu): engurullu | Kamba (Nganyawa): mavandu | Kikuyu: muhari
+line (boundary) : Swahili: mpaka | Kamba: mupaka | Kikuyu: mupaka
+lion : Swahili: simba | Kamba (Ulu): munyambo | Kamba (Nganyawa): thimba | Kikuyu: muruthi or mulozi
+lips : Swahili: mdomo, pl. midomo | Kamba (Ulu): kilomo, pl. ilomo | Kamba (Nganyawa): moomo | Kikuyu: kiromo, pl. iromo
+liquid : Swahili: maji, kiowevu | Kamba: nussu | Kikuyu: maii
+listen (v.) : Swahili: kusikiliza | Kamba: kutavie | Kikuyu: igua
+liver : Swahili: ini, pl. maini | Kamba (Ulu): itemma | Kamba (Nganyawa): inya | Kikuyu: ini
+lizard : Swahili: mjusi, pl. wajusi | Kamba: nyuni | Kikuyu: ruhuhu
+load : Swahili: mzigo, pl. mizigo | Kamba: mwio | Kikuyu: murigo
+locust : Swahili: mzige, pl. wazige, nzige | Kamba: ngie | Kikuyu: ngigi
+log : Swahili: gogo, pl. magogo | Kamba: mwōr | Kikuyu: mugogo
+long : Swahili: -refu | Kamba (Ulu): -wassa | Kamba (Nganyawa): -thangau | Kikuyu: -moraia
+long ago : Swahili: zamani | Kamba: tenne | Kikuyu: tĕnne
+look (v.) : Swahili: kutazama | Kamba (Ulu): kumussisia | Kamba (Nganyawa): guthia | Kikuyu: korora
+loose (v.) : Swahili: kufungua, kuregea | Kamba: guekka | Kikuyu: kuchoka, kuachia
+lose (v.) : Swahili: kupotea | Kamba: nikiaiye | Kikuyu: kūūra
+lung : Swahili: pafu, pumu | Kamba: ibui | Kikuyu: huri, pl. mahuri
+
+M
+mad : Swahili: -enyi wazimu, makoka | Kamba (Ulu): enanduka | Kamba (Nganyawa): kilalu | Kikuyu: -ngoma
+magic : Swahili: uchawi (black), uganga (white) | Kamba: uwoii | Kikuyu: urogi
+maize : Swahili: mahindi | Kamba: mbēmba | Kikuyu: mbēēmba
+make (v.) : Swahili: kufanya, kufanyiza | Kamba (Ulu): guika | Kamba (Nganyawa): kweka | Kikuyu: kurita
+male : Swahili: mume, pl. waume | Kamba (Ulu): mundu mumiu | Kamba (Nganyawa): mume | Kikuyu: murume
+man : Swahili: mtu, pl. watu | Kamba: mundu, pl. andu | Kikuyu: muundu, pl. andu
+man (old) : Swahili: mzee, pl. wazee | Kamba (Ulu): muku | Kamba (Nganyawa): mtumia, pl. atumia | Kikuyu: muthuri, pl. athuri
+many : Swahili: -ingi | Kamba (Ulu): kiingi | Kamba (Nganyawa): chingi | Kikuyu: riingi
+many times : Swahili: mara nyingi | Kamba: mathinyongi | Kikuyu: matuku maingi
+marabout stork : Swahili: jana mjussi, ndere | Kamba (Ulu): ngia | Kamba (Nganyawa): nthingi | Kikuyu: singi
+mark : Swahili: alama | Kamba (Ulu): ilanga | Kamba (Nganyawa): ejo, nichoo | Kikuyu: duoro
+market : Swahili: soko, pl. masoko | Kamba (Ulu): kituto | Kamba (Nganyawa): kinganga | Kikuyu: kithogoro
+marriage : Swahili: ndoa, harusi | Kamba: gwasia | Kikuyu: gurra
+marrow : Swahili: bongo | Kamba: muthūngu | Kikuyu: muthimu
+marry (v.) : Swahili: oa (husband), olewa (wife), oana (both), oza (parents) | Kamba (Ulu): gumasia | Kamba (Nganyawa): kukoa | Kikuyu: kugurra
+massage : Swahili: kukanda | Kamba: gumobi binia | Kikuyu: kukarriura
+masseuse : Swahili: mkandai | Kikuyu: wezua, wethua
+mat : Swahili: mkeka, pl. mikeka | Kamba: mkeka | Kikuyu: ndarua
+me : Swahili: mimi | Kamba: ninyī | Kikuyu: ninie
+measure (v.) : Swahili: kupima | Kamba (Ulu): guthima | Kamba (Nganyawa): guella | Kikuyu: kugerra
+meat : Swahili: nyama | Kamba (Ulu): nyamma | Kamba (Nganyawa): nama | Kikuyu: nyama
+medicine : Swahili: dawa, pl. madawa | Kamba (Ulu): muthea | Kamba (Nganyawa): mŭti | Kikuyu: muthaiiga
+medicine bottle : Swahili: chupa cha dawa | Kamba: kithitu | Kikuyu: muthega
+medicine man : Swahili: mganga, pl. waganga | Kamba (Ulu): ngāānga | Kamba (Nganyawa): mundumwe | Kikuyu: mundu mugo
+meet (v.) : Swahili: kuonana, kutana, kusanyika | Kamba: gukomanna | Kikuyu: kuonana
+melt (v.) : Swahili: kuyeyuka, kuayika | Kamba: gukiathoka | Kikuyu: kuharraganna
+menstruation : Swahili: damu, heth | Kamba: akame | Kikuyu: mupaala, mgongo
+mid-day : Swahili: athuuri | Kamba: mutwe | Kikuyu: miarraho
+middle : Swahili: kati | Kamba: baakati | Kikuyu: gatagati
+midwife : Swahili: mzalisha | Kikuyu: husiarishia, mwitcharithia
+milk : Swahili: maziwa | Kamba: iya | Kikuyu: īrria
+milk (v.) : Swahili: kukama | Kamba (Ulu): gukamma | Kamba (Nganyawa): kuthuma | Kikuyu: kukamma
+millet : Swahili: mweli | Kamba: mbīa | Kikuyu: mwere
+mimosa : Swahili: mgunga | Kamba: munyūa | Kikuyu: mugaa
+miscarriage : Swahili: kuharibu mimba | Kamba (Ulu): neumetiebu | Kamba (Nganyawa): kumiebu | Kikuyu: kuhunna
+mist : Swahili: kungu, umande | Kamba: imme | Kikuyu: imme
+money : Swahili: fetha | Kamba: ikilliali | Kikuyu: mbesha
+mongoose : Swahili: mchiro, pl. wachiro, kala | Kamba (Ulu): ndzēē | Kamba (Nganyawa): nthĕĕ | Kikuyu: ikovakovi (white tailed)
+monkey : Swahili: kimburru (gracilis) | Kikuyu: kaiihu (gracilis)
+monkey : Swahili: kima, tumbiri (small) | Kamba (Ulu): ntheo | Kamba (Nganyawa): nthenga | Kikuyu: karrunguru
+monkey : Swahili: ngedere (small black) | Kamba (Nganyawa): kathaletu | Kikuyu: thinua (ape)
+month : Swahili: mwezi, pl. miezi | Kamba: mbuī | Kikuyu: mweri, mweli
+moon : Swahili: mwezi | Kamba (Ulu): mwei | Kamba (Nganyawa): mbui | Kikuyu: mweri
+more : Swahili: zayidi | Kamba (Ulu): kiliko | Kamba (Nganyawa): kingigeba | Kikuyu: riingi or ongerrera
+morning : Swahili: subui, assubui | Kamba: mthenia | Kikuyu: mthenya
+mosquito : Swahili: imbu | Kamba: itāngua | Kikuyu: rumurru
+mother : Swahili: mama, inya | Kamba (Ulu): maiitu | Kamba (Nganyawa): mwaitu | Kikuyu: maiitu
+mountain : Swahili: mlima, pl. milima | Kamba (Ulu): kiima | Kamba (Nganyawa): kilima kinene | Kikuyu: kirima
+moustache : Swahili: sharbu, muomo, pl. miomo | Kamba (Ulu): kinge | Kamba (Nganyawa): kiyu | Kikuyu: nderu
+mouth : Swahili: kinwa, pl. vinwa | Kamba: moomo | Kikuyu: miromo
+mud : Swahili: tope, pl. matope | Kamba: ndaka | Kikuyu: ndaka
+muscle : Swahili: tafu, miraba | Kamba: ibindi | Kikuyu: enjagathi
+mushroom : Swahili: kioga, pl. vioga | Kamba: ekunnu | Kikuyu: ikunu, pl. makunu
+mutilate (v.) : Swahili: kukata | Kamba: kudilla | Kikuyu: kutemma
+my : Swahili: -angu | Kamba (Ulu): ichakua | Kamba (Nganyawa): yanga | Kikuyu: wakua, yakua
+myself : Swahili: mimi mnyewe | Kamba: ninyi mwenye | Kikuyu: nigiakoa
+
+N
+nail (finger) : Swahili: ukucha, pl. kucha | Kamba (Ulu): waa | Kamba (Nganyawa): ngwa | Kikuyu: ruarra
+nail (brass, etc.) : Swahili: msomari, pl. misomari | Kamba: msamali
+naked : Swahili: -tupu, uchi | Kamba: muthei | Kikuyu: enjaga
+name : Swahili: jina, pl. majina | Kamba (Ulu): sietua | Kamba (Nganyawa): dzitwa | Kikuyu: ritoa
+narrow : Swahili: -embamba | Kamba (Ulu): thanthau | Kamba (Nganyawa): mtheeke | Kikuyu: kisheke
+navel : Swahili: kitovu, pl. vitovu | Kamba: mukonyo | Kikuyu: mukonyo, lulila, kikonya
+near : Swahili: karibu | Kamba (Ulu): bakubi | Kamba (Nganyawa): kalandi | Kikuyu: hakuhi
+neck : Swahili: shingo, pl. mashingo | Kamba (Ulu): ngingo | Kamba (Nganyawa): njingo | Kikuyu: ngiingo
+neck (nape of) : Swahili: ukosi, kikosi | Kamba: ikoti | Kikuyu: igotti
+necklace : Swahili: ushanga (beads) | Kamba: munyo | Kikuyu: ngashi (beads)
+necklace : Swahili: sinigussi | Kamba: siuma (iron) | Kikuyu: murumbo (iron wire and chains)
+necklace : Swahili: marijani (coral) | Kamba: uli (beads) | Kikuyu: shjuma (beads, hanging)
+necklace : Kikuyu: mukassi
+needle : Swahili: sindano | Kamba (Ulu): singano | Kamba (Nganyawa): thingano | Kikuyu: mukuha
+nest : Swahili: tundu, pl. matundu | Kikuyu: nyumba ā nyonni
+new : Swahili: -pya | Kamba (Ulu): -kia | Kamba (Nganyawa): -thzau | Kikuyu: -kieru
+night : Swahili: usiku | Kamba: utuku | Kikuyu: ndumā
+nine : Swahili: kenda, tissa | Kamba: kenda | Kikuyu: ikenda
+nineteen : Swahili: kumi na tissa | Kamba: ekumi na kenda | Kikuyu: ikuma na ikenda
+nine times : Swahili: mara tissa | Kamba: kakenda | Kikuyu: kakenda
+nipples : Swahili: titi, bubu; chuchu ya ziwa | Kamba: muthia wa noondo | Kikuyu: musia
+no : Swahili: sio | Kamba: ndi | Kikuyu: tingo or aatcha
+noise : Swahili: sauti, kaleli | Kamba (Ulu): ekaunene | Kamba (Nganyawa): kiloonzo | Kikuyu: inegene or kirrai
+none : Swahili: hapana | Kamba (Ulu): baiye | Kamba (Nganyawa): aiyee, batie | Kikuyu: āāsha or utirri
+no one : Swahili: hapana mtu | Kamba: kutie mundu | Kikuyu: utirri mundu
+nose : Swahili: pua, pl. mapua | Kamba: inyu | Kikuyu: inyūrro
+nostrils : Swahili: tundu ya pua | Kamba: imaainyu
+not : Swahili: hapana | Kamba (Ulu): baiye | Kamba (Nganyawa): batie | Kikuyu: aatch or hatirre
+nothing : Swahili: hapana kitu | Kamba (Ulu): paie | Kamba (Nganyawa): batie | Kikuyu: kutirre
+now : Swahili: sasa | Kamba (Ulu): oiyuyu | Kamba (Nganyawa): indino | Kikuyu: rēu
+number : Swahili: hesabu, kuvango | Kamba: kutella | Kikuyu: kugerra
+
+O
+obey (v.) : Swahili: kutii, kufuata, kutumikia | Kamba: kwiika | Kikuyu: kumurrutaweri
+obstinate : Swahili: mkaidi | Kamba: ndemattu | Kikuyu: ndurika
+of (belonging to) : Swahili: -a, ya, wa, etc. | Kamba: wa, wau | Kikuyu: wa, wau
+often : Swahili: mara nyingi | Kamba (Ulu): muthenia miingi | Kamba (Nganyawa): mthee nyongi | Kikuyu: kaiingi
+oil : Swahili: mafuta | Kamba: maota | Kikuyu: maguta
+old : Swahili: -zee (animate), -kukuu (inanimate) | Kamba: -ku, -nu | Kikuyu: -kuru
+once : Swahili: mara moja | Kikuyu: irrimue
+one : Swahili: moja | Kamba: imwe | Kikuyu: imue
+one hundred : Swahili: mia | Kamba: yana | Kikuyu: igana
+on top : Swahili: juu ya | Kamba (Ulu): kuulu | Kamba (Nganyawa): iutu | Kikuyu: igurru
+open (v.) : Swahili: kufungua, kufunua | Kamba (Ulu): gupingua | Kamba (Nganyawa): kuvingua, thatzia | Kikuyu: kuohora
+open : Swahili: wazi | Kamba: vingue | Kikuyu: kunikki
+ordure : Swahili: mavi | Kamba (Ulu): mavia | Kamba (Nganyawa): mai | Kikuyu: mai
+orphan : Swahili: yatima | Kamba (Ulu): ningia | Kamba (Nganyawa): niinja | Kikuyu: mūuku
+ostrich : Swahili: buni | Kamba: nya | Kikuyu: nyaga
+other : Swahili: -ingini | Kamba (Ulu): kiingi | Kamba (Nganyawa): niingi | Kikuyu: kiingi
+our : Swahili: -etu | Kamba (Ulu): matu, witu | Kamba (Nganyawa): niakwa | Kikuyu: niitu, witu
+outside : Swahili: nje | Kamba (Ulu): nakuthomi | Kamba (Nganyawa): nza | Kikuyu: morromoinne
+overflow (v.) : Swahili: kumiminika | Kamba: kundia | Kikuyu: kuwitika
+overturn (v.) : Swahili: kupindua | Kamba (Ulu): kuthiukia | Kamba (Nganyawa): kuallulia | Kikuyu: kukarrura
+owe (v.) : Swahili: kuwiwa | Kamba: kwani | Kikuyu: kuohorra
+owl : Swahili: bundi | Kamba: malaloi | Kikuyu: huma
+
+P
+pain : Swahili: kuuma, maumivu | Kamba (Ulu): kuuma | Kamba (Nganyawa): kuluma | Kikuyu: nguturrua
+paint : Swahili: rangi | Kamba (Ulu): guikier | Kamba (Nganyawa): ekki mbu | Kikuyu: kuhaka
+paint (black) : Swahili: neusi | Kamba: mwiu | Kikuyu: mwiru
+paint (red) : Swahili: mekundu, nyuue | Kamba: mbōō | Kikuyu: thiriga
+paint (white) : Swahili: neupe | Kamba: nthāā | Kikuyu: irrā
+palaver : Swahili: shauri | Kamba: ndendettu | Kikuyu: tunegenne or shira
+palm : Swahili: wali, pl. miwali | Kamba: illala | Kikuyu: miarre
+palm (borassus) : Swahili: mkindu, mvume, pl. mivume | Kamba: ikindu | Kikuyu: mukindu
+pant (v.) : Swahili: kutweta | Kamba (Ulu): kunubeba | Kamba (Nganyawa): kuweva | Kikuyu: kuhuma
+papyrus : Swahili: miteti | Kamba: mulindalindu | Kikuyu: irura
+parrot (green) : Swahili: kwenzi, pl. makwenzi | Kamba: ngwei
+partridge : Swahili: kware | Kamba (Ulu): engwalle | Kamba (Nganyawa): kindili (English) | Kikuyu: ngwarra
+partridge (red-legged) : Swahili: keringende (red-legged) | Kamba (Nganyawa): kimbaa (yellow-throated), kikwaii (small red-legged)
+pass (v.) : Swahili: kupita | Kamba: kubita | Kikuyu: kuhitukka
+pay (v.) : Swahili: kulipa | Kamba: kukwiva | Kikuyu: kuriha
+peace : Swahili: amani | Kamba: amanni | Kikuyu: naiita
+penis : Swahili: mbo | Kamba: kia | Kikuyu: uruu, musita
+people : Swahili: watu | Kamba: andu | Kikuyu: andu
+pepper : Swahili: pilipili | Kamba: mwatzaka | Kikuyu: kalugu
+perhaps : Swahili: labuda | Kamba (Ulu): akethua | Kamba (Nganyawa): nikki | Kikuyu: ngokoro
+pick (gather) : Swahili: kuchuma | Kamba: kuotza | Kikuyu: gwikier
+pick (up) : Swahili: kuokota | Kamba: kugolania | Kikuyu: kuoiya
+pig : Swahili: nguruwe | Kamba: ngūe | Kikuyu: nguruwe
+pigeon : Swahili: njiwa | Kamba (Ulu): gia | Kamba (Nganyawa): ebui | Kikuyu: ndutūrra
+pigeon (green) : Swahili: ninga, pl. maninga | Kamba: mauyu | Kikuyu: ikuni
+pigmy : Swahili: kebweti | Kamba: mundu mukube | Kikuyu: homā
+pig tail : Kamba: nzwi ondatha | Kikuyu: kuuha
+pinch (v.) : Swahili: kufinya | Kamba (Ulu): kumbunya | Kamba (Nganyawa): kunia | Kikuyu: kukunya
+pipe : Swahili: kiko, pl. viko | Kamba (Ulu): kiiko | Kamba (Nganyawa): endoyo
+place : Swahili: mahali, pahali | Kamba (Ulu): paandu | Kamba (Nganyawa): vanduva | Kikuyu: haandu
+plain : Swahili: uwanda | Kamba (Ulu): kuanda | Kamba (Nganyawa): nuanda | Kikuyu: hatheri
+plant (v.) : Swahili: kupanda | Kamba: kubanda | Kikuyu: kuhanda
+plate : Swahili: sahani | Kamba (Ulu): ūa, endjelle | Kamba (Nganyawa): enzella, enjele
+please (v.) : Swahili: kupendeza | Kamba: kwendua | Kikuyu: kuenda
+plenty : Swahili: tele | Kamba (Ulu): nyingi | Kamba (Nganyawa): mweta | Kikuyu: ningi
+plover : Swahili: tokowe, kwembe | Kamba: kinyililia | Kamba (Nganyawa): nduubu ya maanzi | Kikuyu: kahoii
+plume (v.) : Kamba: gukalayala | Kikuyu: kuithoa
+point (v.) : Swahili: kuchonga | Kamba (Ulu): gumōlota | Kamba (Nganyawa): kulota | Kikuyu: kuorrota
+poison : Swahili: sumu | Kamba (Ulu): ithumu | Kamba (Nganyawa): ibaii | Kikuyu: urruru
+pool : Swahili: mzaramu, ziwa, pl. maziwa | Kamba: ndia
+poor : Swahili: masikini | Kamba (Ulu): masikini | Kamba (Nganyawa): inja | Kikuyu: muthiini
+porcupine : Swahili: nungu | Kamba: kithela | Kikuyu: njege
+potato : Swahili: kiazi, pl. viazi | Kamba (Ulu): makwasi | Kamba (Nganyawa): makwatzi | Kikuyu: ngwashi
+pour (v.) : Swahili: kumimina | Kamba (Ulu): guekea | Kamba (Nganyawa): guikia | Kikuyu: kuikirra
+pray (v.) : Swahili: kuomba | Kamba: kuvoiya | Kikuyu: kuhoiya
+pregnant : Swahili: mimba, kuhamili | Kamba: ebu | Kikuyu: ihu
+present : Swahili: zawadi | Kamba: wandete | Kikuyu: ngeithi
+presently : Swahili: halafu | Kamba (Ulu): kalanga | Kamba (Nganyawa): killia | Kikuyu: nitigarete
+prick (v.) : Swahili: kuchoma | Kamba (Ulu): kudonya | Kamba (Nganyawa): kutonya | Kikuyu: kuthēsha
+property : Swahili: mali, milki | Kamba (Ulu): twie | Kamba (Nganyawa): nimali | Kikuyu: mwarre
+pull (v.) : Swahili: kuvuta | Kamba: kuzia | Kikuyu: kugussia
+pull out : Swahili: kungoa | Kamba (Ulu): kukua | Kamba (Nganyawa): kumia | Kikuyu: kukurra
+pumpkin : Swahili: tangu | Kamba (Ulu): ulengi | Kamba (Nganyawa): majii | Kikuyu: marenge
+pus : Swahili: usaha | Kamba: mabia | Kikuyu: mahira
+push (v.) : Swahili: kusukuma | Kamba (Ulu): gumuluta | Kamba (Nganyawa): kuluuta | Kikuyu: kutiindika
+put (v.) : Swahili: kuweka, kutia | Kamba (Ulu): gunayaa | Kamba (Nganyawa): kwiya | Kikuyu: kuiga
+put off (clothes) : Swahili: kuvua | Kamba: guumia | Kikuyu: kurutta
+put on : Swahili: kuvaa | Kamba (Ulu): gwioba | Kamba (Nganyawa): iove | Kikuyu: kuiureka
+put out : Swahili: kutoa | Kamba: gumvotia | Kikuyu: kuchomorra
+put out (light) : Swahili: kuzima | Kamba (Ulu): guthima | Kamba (Nganyawa): vozia | Kikuyu: kuhorria
+putrefy (v.) : Swahili: kuoza | Kamba: kukio | Kikuyu: kuvutha
+
+Q
+quail : Swahili: tombo | Kamba: ndiliima | Kikuyu: nditimuki
+quarrel (v.) : Swahili: kugombana | Kamba (Ulu): gumatete | Kamba (Nganyawa): kutetania | Kikuyu: kurrumana
+quarter : Swahili: robo | Kikuyu: ruatu
+quickly : Swahili: hima, upesi | Kamba: mituki | Kikuyu: hiuha, mituki
+quiet : Swahili: kimya, nyamaza | Kamba: pindia | Kikuyu: kirra
+quiet (be) : Swahili: kaleli | Kamba: ekaunena | Kikuyu: kirririria
+quiver (for arrows) : Swahili: diaka, podo | Kamba (Ulu): thiaka | Kamba (Nganyawa): ithiaga | Kikuyu: thiāka
+
+R
+rain : Swahili: mvua | Kamba: mbua | Kikuyu: mburra
+rainbow : Swahili: upindi wa mvua | Kamba: kithuki | Kikuyu: mogongo mburra
+raise (v.) : Swahili: kuinua | Kamba: kukillia | Kikuyu: kuēēr
+rat : Swahili: panya | Kamba: mbea | Kikuyu: mbea
+raw : Swahili: -bichi | Kamba: bithi | Kikuyu: hithi
+razor : Swahili: wembe | Kamba: wenzi | Kikuyu: ruenji
+reach (v.) : Swahili: kufika | Kamba (Ulu): kubiketi | Kamba (Nganyawa): mwiiti | Kikuyu: kukinyirra
+ready : Swahili: tayari | Kamba: kalanthi nēza | Kikuyu: ehakui
+receive (v.) : Swahili: kupokea, kupewa | Kamba (Ulu): kunengue | Kamba (Nganyawa): kuneengwe | Kikuyu: kukwata
+red : Swahili: -ekundu | Kamba (Ulu): nduune | Kamba (Nganyawa): mweo | Kikuyu: kitūne
+refuse (v.) : Swahili: kukataa, kukataza | Kamba (Ulu): kunalea | Kamba (Nganyawa): gulea | Kikuyu: kurega
+remainder : Swahili: mabakia, msazo | Kamba (Ulu): ikia | Kamba (Nganyawa): mbakweka | Kikuyu: kutigarra
+remember (v.) : Swahili: kukumbuka | Kamba: kulilikana | Kikuyu: kurrirkana
+repeat (v.) : Kamba: nena neleto | Kikuyu: ugaringi
+resin : Swahili: ulimbo limbo | Kamba: ulembua | Kikuyu: ulembwa
+rest (v.) : Swahili: kupumzika | Kamba: kuthumua | Kikuyu: kuhuruka
+return (v.) : Swahili: kurudi | Kamba (Ulu): kukullula | Kamba (Nganyawa): gujoka | Kikuyu: kushoka
+return (give back) : Swahili: kurudisha | Kamba (Ulu): kusokia | Kamba (Nganyawa): kutuunga | Kikuyu: kushokia
+rhinoceros : Swahili: kfaru | Kamba (Ulu): mbilla | Kamba (Nganyawa): mbutzia | Kikuyu: hurria
+rhinoceros bird : Kamba: nthūcē | Kikuyu: thiarri
+rib : Swahili: ubavu, pl. mbavu | Kamba: mbau | Kikuyu: mbaru
+right hand : Swahili: mkono kulia | Kamba (Ulu): kuoko kwaume | Kamba (Nganyawa): mkono waume | Kikuyu: urio
+ring : Swahili: pete, pl. mapete | Kamba (Ulu): mbeete | Kamba (Nganyawa): engōine | Kikuyu: kichuhi
+ripe : Swahili: -bivu | Kamba (Ulu): -beu | Kamba (Nganyawa): -kuju | Kikuyu: -kwerua
+river : Swahili: mto, pl. mito | Kamba (Ulu): ussi | Kamba (Nganyawa): udzi | Kikuyu: rūi
+road : Swahili: njia, ndia | Kamba (Ulu): nsia | Kamba (Nganyawa): ndthia | Kikuyu: njira
+roof : Swahili: pa, dari (flat) | Kamba (Ulu): kitaa | Kamba (Nganyawa): kuulu | Kikuyu: nyumbaiguru
+root : Swahili: shina, (pl.) mashina | Kamba: itina | Kikuyu: kitinna
+rotten : Swahili: -bovu | Kamba (Ulu): -kio | Kamba (Nganyawa): -kigu | Kikuyu: -kyuru
+rub (v.) : Swahili: kusugua | Kamba (Ulu): kunōō | Kamba (Nganyawa): kuthambia | Kikuyu: kuthambia
+run (v.) : Swahili: kupiga mbio | Kamba: sēēmba | Kikuyu: kuhanyuka
+run away (v.) : Swahili: kukimbia | Kamba: kukea | Kikuyu: kūūra or kuhitha
+rushes : Swahili: makangaga | Kamba: nthua | Kikuyu: ithānji, pl. mathanji
+rust : Swahili: kutu | Kamba (Ulu): ullalaku | Kamba (Nganyawa): kutu | Kikuyu: ikuō
+
+S
+salt : Swahili: chumvi, munyo | Kamba: munyu | Kikuyu: munyu
+sandal : Swahili: kiatu, pl. viatu | Kamba: iatu | Kikuyu: irratu
+sap : Swahili: maji ya miti | Kamba: ngūūli | Kikuyu: maii mekuma
+say (v.) : Swahili: kusema, kuambia | Kamba (Ulu): gutabia | Kamba (Nganyawa): matabie | Kikuyu: kuarria
+scab : Swahili: kigaga, pl. vigaga | Kamba: mawia | Kikuyu: kikoonde
+scabbard : Swahili: ala, pl. nyala | Kamba: ndoo | Kikuyu: enjorra
+scar : Swahili: kovu, pl. makovu | Kamba: papoete | Kikuyu: kiremma
+scent : Swahili: harufu, manuka | Kamba: kunyunga | Kikuyu: kununga
+scold (v.) : Swahili: kunenea, kulaumu | Kamba (Ulu): gutetania | Kamba (Nganyawa): kunēnia | Kikuyu: kurrumanna
+scratch (v.) : Swahili: kukuna, kupapura | Kamba (Ulu): kumbunya | Kamba (Nganyawa): kungunya, kuthia | Kikuyu: kuithoa
+see (v.) : Swahili: kuona | Kamba: kukiitha | Kikuyu: kuonna
+seeds : Swahili: mbegu | Kamba (Ulu): mbēū | Kamba (Nganyawa): kumea | Kikuyu: mbēu
+sell (v.) : Swahili: kuuza | Kamba (Ulu): guthozia | Kamba (Nganyawa): kuta | Kikuyu: kuendia
+sense : Swahili: akili | Kamba (Ulu): kiliko | Kamba (Nganyawa): kier | Kikuyu: mukirri
+set on fire : Swahili: kutia moto, kuwasha | Kamba (Ulu): guakanna | Kamba (Nganyawa): kuvivia | Kikuyu: kuhihia
+seven : Swahili: saba | Kamba (Ulu): muonza | Kamba (Nganyawa): moanza | Kikuyu: muguanja
+seventeen : Swahili: kumi na saba | Kamba: ekumi na moanza | Kikuyu: ikumi na muguanja
+seven times : Swahili: mara saba | Kamba: ka moanza | Kikuyu: ka muguanja
+seventy : Swahili: makumi saba or sabwini | Kamba: miongo moanza | Kikuyu: mirongo nguanja
+sew (v.) : Swahili: kushona | Kamba: kutūma | Kikuyu: kutumma
+shadow : Swahili: kivuli, pl. vivulu | Kamba: kyu | Kikuyu: kirruru
+shake (v.) : Swahili: kutikiza | Kamba (Ulu): gumuthingithia | Kamba (Nganyawa): kitetemo | Kikuyu: kurivariva
+shake hands : Swahili: kukapiana mikono | Kamba (Ulu): menenga kuoko | Kamba (Nganyawa): menenge mkono | Kikuyu: kutambarraria
+sharp : Swahili: -kali | Kamba: -koi | Kikuyu: -kuhiga
+sharpen (v.) : Swahili: kunoa | Kamba (Ulu): gubāāsia | Kamba (Nganyawa): kuthenoa | Kikuyu: kunora
+shave (v.) : Swahili: kunyoa | Kamba (Ulu): gumwenza | Kamba (Nganyawa): kuatua nzwi | Kikuyu: kuinja
+sheep : Swahili: kondoo | Kamba (Ulu): ilondu | Kamba (Nganyawa): ngoondu | Kikuyu: ndurume
+shield : Swahili: ngao | Kamba: ningau | Kikuyu: ngo
+shiver (v.) : Swahili: kutapatapa, kutetema | Kamba (Ulu): gundetemma | Kamba (Nganyawa): kuimbebo | Kikuyu: kuinaina
+shoot (v.) : Swahili: kupiga bunduki | Kamba (Ulu): kwichamwisie | Kamba (Nganyawa): kunebuti | Kikuyu: kūriinga or kuhora
+short : Swahili: -fupi | Kamba (Ulu): -kubi | Kamba (Nganyawa): -gube | Kikuyu: -kuhi
+shoulder : Swahili: bega, pl. mabega | Kamba: kituo | Kikuyu: kiande
+show (v.) : Swahili: kuonyesha | Kamba (Ulu): gumonyia | Kamba (Nganyawa): kumbonyia | Kikuyu: kuenyer
+shut (v.) : Swahili: kufunga | Kamba (Ulu): guoba | Kamba (Nganyawa): kuvinga | Kikuyu: kuoha
+sick (to be) : Swahili: kutapika | Kamba (Ulu): gutapika | Kamba (Nganyawa): kutapika | Kikuyu: kutahika
+side : Swahili: upande, pl. pande | Kamba (Ulu): kalungu | Kamba (Nganyawa): ubandi | Kikuyu: ruatu
+sigh (v.) : Swahili: kuugua, kukokota roho | Kamba (Ulu): gubeba | Kamba (Nganyawa): kuveva | Kikuyu: kuheha
+sing (v.) : Swahili: kuimba | Kamba (Ulu): kwina | Kamba (Nganyawa): kukwea | Kikuyu: kuina
+sink (v.) : Swahili: kuzamisha, kutosa | Kamba (Ulu): gutonya | Kamba (Nganyawa): enthini | Kikuyu: kukurirathini
+sister : Swahili: umbu, pl. maumbu | Kamba: mwtiaiya | Kikuyu: morua mwaiitu
+sit (v.) : Swahili: kukaa kitako, kuketi | Kamba (Ulu): kwi kalanthi | Kamba (Nganyawa): kalanthi | Kikuyu: kwi karathi
+six : Swahili: sita | Kamba (Ulu): thanthatu | Kamba (Nganyawa): thandatu | Kikuyu: thanthatu
+sixteen : Swahili: kumi na sita | Kamba: ekumi na thandatu | Kikuyu: ikumi na thanthatu
+six times : Swahili: mara sita | Kamba: kathandatu | Kikuyu: kathanthatu
+sixty : Swahili: settini | Kamba: miongo thandatu | Kikuyu: mirongo ithanthatu
+skin : Swahili: ngozi | Kamba (Ulu): kithuma | Kamba (Nganyawa): alula | Kikuyu: rūa
+skin (v.) : Swahili: kuchuna | Kamba (Ulu): guthinza | Kamba (Nganyawa): umia | Kikuyu: kuiroa
+sky : Swahili: uwingu | Kamba: itu | Kikuyu: irrumbi
+slander : Swahili: fitina | Kikuyu: kuriagorro
+sleep (v.) : Swahili: kulala | Kamba: kukoma | Kikuyu: kukoma
+slip (v.) : Swahili: kuteleza | Kamba (Ulu): gutendeluka | Kamba (Nganyawa): kuika | Kikuyu: kutenderuka
+slowly : Swahili: polepole, taratibu | Kamba: kabolla kabolla | Kikuyu: kahora
+small : Swahili: -dogo | Kamba (Ulu): kanini | Kamba (Nganyawa): kinini | Kikuyu: kanyinyi
+small-pox : Swahili: ndui | Kamba (Ulu): nthungu | Kamba (Nganyawa): ndui | Kikuyu: muthungu
+smell (v.) : Swahili: kunuka | Kamba: kuuyunga | Kikuyu: kunungirra
+smoke : Swahili: moshi, pl. mioshi | Kamba (Ulu): suiki | Kamba (Nganyawa): chuchi, jashu | Kikuyu: ndoogo
+snail : Swahili: koa, pl. makoa, konokono | Kamba: nyoonga | Kikuyu: ngonyonga or kanyonga
+snake : Swahili: nyoka | Kamba (Ulu): enjoka | Kamba (Nganyawa): mweanthi | Kikuyu: nyamanyathi
+sneeze (v.) : Swahili: kuchafya, kushamua | Kamba: kwathimwa | Kikuyu: kwathimora
+snore (v.) : Swahili: kukoroma | Kamba (Ulu): gukengorr | Kamba (Nganyawa): kukengorr | Kikuyu: kungorrota
+snow : Swahili: barafu | Kamba: meo | Kikuyu: irra
+snuff : Swahili: tumbako ya kunuka | Kamba (Ulu): bāki | Kamba (Nganyawa): kunyua | Kikuyu: mbakki
+snuff box : Swahili: tabakelo | Kamba (Ulu): keengi, mawia | Kamba (Nganyawa): ngusu | Kikuyu: kinya kiomgongo
+sob (v.) : Swahili: ingia na shake la kulia | Kamba (Ulu): gutungango | Kamba (Nganyawa): kwia | Kikuyu: kugirika
+soft : Swahili: -ororo, laiini | Kamba (Ulu): -ololo, nooro | Kamba (Nganyawa): -heke | Kikuyu: -huthu or -hari
+song : Swahili: uimbo, pl. nyimbo | Kamba: wathi | Kikuyu: liuinba, kisuka
+soon : Swahili: bado kidogo | Kamba (Ulu): etēēla | Kamba (Nganyawa): killia | Kikuyu: kitirikiroka
+sore : Swahili: donda, pl. madonda | Kamba: kitau | Kikuyu: kironda, pl. ironda
+sort : Swahili: namna, ginsi | Kamba (Ulu): kiindu | Kamba (Nganyawa): naanga | Kikuyu: kindudagiki
+sour (to go) : Swahili: kuiva | Kamba: ntheyu | Kikuyu: kuinatta
+spark : Swahili: chechi, pl. machechi | Kamba (Ulu): nyalla | Kamba (Nganyawa): mbaaordi | Kikuyu: thandi
+speak (v.) : Swahili: kunena, kusema | Kamba: kunēēna | Kikuyu: kuarria
+spear : Swahili: mkuke, pl. mikuke | Kamba: itumu | Kikuyu: itimu
+spider : Swahili: buibui | Kamba: mbuabui | Kikuyu: mbumbui
+spill (v.) : Swahili: kumwaga | Kamba: kwitanthi | Kikuyu: kuita
+spine : Swahili: uti wa maungo | Kamba (Ulu): mwongo | Kamba (Nganyawa): mthumo | Kikuyu: mukurumnthu
+spit (v.) : Swahili: kutema mate | Kamba (Ulu): kundwila matta | Kamba (Nganyawa): kutwilanthi | Kikuyu: kutua mata
+spittle : Swahili: mate | Kamba (Ulu): matta | Kamba (Nganyawa): utta | Kikuyu: mata
+splinters : Swahili: kibanzi, pl. vibanzi | Kamba: kibulūūtua | Kikuyu: thikaratchu
+split (v.) : Swahili: kupasua | Kamba (Ulu): kwallia | Kamba (Nganyawa): atua | Kikuyu: kuaturra
+spot : Swahili: kipele, pl. vipele | Kamba (Ulu): meetho mangua | Kamba (Nganyawa): ungu | Kikuyu: uhere
+spring (of water) : Swahili: chemchem | Kamba: kithinia | Kikuyu: ndia
+squint : Swahili: makengeza | Kamba (Ulu): nthongo | Kamba (Nganyawa): mathugu | Kikuyu: magarru
+stamp (v.) : Swahili: kupiga chapa | Kamba (Ulu): gutūlila | Kamba (Nganyawa): kuvutha | Kikuyu: kuringa
+stand (v.) : Swahili: kusimama | Kamba (Ulu): guumanna | Kamba (Nganyawa): ungema | Kikuyu: kurugamma
+star : Swahili: nyota | Kamba: ndata | Kikuyu: njata
+stay (v.) : Swahili: kukaa | Kamba (Ulu): kwekalla | Kamba (Nganyawa): beleta | Kikuyu: kwikaranthi
+steal (v.) : Swahili: kuiba, kujepa | Kamba (Ulu): guya | Kamba (Nganyawa): kungea | Kikuyu: kuiya
+steam : Swahili: mvuke | Kamba: siuki | Kikuyu: ndoogo
+stick : Swahili: fimbo | Kamba (Ulu): ndatta | Kamba (Nganyawa): ndeta | Kikuyu: ruthanju
+stick (fire) : Swahili: pekessu, ulindi | Kamba: wiindi, kikka | Kikuyu: gikka
+stick (forked for drying meat) : Swahili: mbano | Kikuyu: hige
+sticks (small) : Swahili: ufito, pl. fito | Kamba: ita | Kikuyu: kaandzu
+still : Swahili: nyamaza, -anana | Kamba: pindia | Kikuyu: kina
+stomach : Swahili: tumbo | Kamba (Ulu): ebŭ | Kamba (Nganyawa): ibu | Kikuyu: nda
+stone : Swahili: jiwe, pl. mawe | Kamba: ibia, pl. mavia | Kikuyu: ihiga, pl. mahiga
+stoop (v.) : Swahili: kuinama | Kamba (Ulu): gukumanna | Kamba (Nganyawa): kumena | Kikuyu: kuinamerra
+strangle (v.) : Swahili: kunyonga, kusonga | Kamba: kunyunga | Kikuyu: kunyunga
+stripe : Swahili: mfuo, pl. mifuo ; utepe, pl. tepe | Kamba: malollua | Kikuyu: njorro
+stroke (v.) : Swahili: kupapasa | Kamba (Ulu): guditia | Kamba (Nganyawa): kwenza | Kikuyu: kunyorokia
+strong : Swahili: nguvu, hodari | Kamba (Ulu): -binnia | Kamba (Nganyawa): -vinya | Kikuyu: -hinya
+stumble (v.) : Swahili: kujikwaa | Kamba: kuthua | Kikuyu: kuhingu
+stump : Swahili: shina, pl. mashina | Kamba: itanna | Kikuyu: itinna
+suck (v.) : Swahili: kunyonya | Kamba: kuonga | Kikuyu: kuonga
+suckle (v.) : Swahili: kunyonyesha | Kamba (Ulu): guongo | Kamba (Nganyawa): kumoonyi | Kikuyu: kuongithia
+suffice (v.) : Swahili: kutosha | Kamba: kukianitte | Kikuyu: kuigania
+sugar cane : Swahili: mua, pl. miwa | Kamba: iwa | Kikuyu: kigūă
+sun : Swahili: jua | Kamba (Ulu): sua | Kamba (Nganyawa): djua, thua | Kikuyu: njua
+sunrise : Swahili: kucha jua | Kamba: siwa nejumie | Kikuyu: ruchiini
+sunset : Swahili: mangaribi | Kamba: wioo | Kikuyu: hoiini
+sure : Swahili: kujua sana | Kamba (Ulu): niwessi munnu | Kamba (Nganyawa): mukumana muno | Kikuyu: kumenya
+surround (v.) : Swahili: kuzunguka | Kamba (Ulu): guthurrlukanna | Kamba (Nganyawa): kuthioluka | Kikuyu: kuthirruruka
+swallow (v.) : Swahili: kumeza | Kamba: kumellia | Kikuyu: kumerria
+swear (v.) : Swahili: kuapa, kutukana | Kamba (Ulu): gumuuma | Kamba (Nganyawa): kuguma | Kikuyu: kuruma
+sweat : Swahili: jasho, hari | Kamba: yūtia | Kikuyu: uthithina
+sweep (v.) : Swahili: kufagia | Kamba (Ulu): gututa | Kamba (Nganyawa): kuvieya | Kikuyu: kuhata
+sweet : Swahili: -tamu | Kamba (Ulu): kinamweyo | Kamba (Nganyawa): kiemuyo | Kikuyu: mureo
+swell (v.) : Swahili: kufura, kuvimba | Kamba (Ulu): guwimbeti | Kamba (Nganyawa): kwimba | Kikuyu: kuimba
+swim (v.) : Swahili: kuogolea | Kamba (Ulu): gukellea | Kamba (Nganyawa): kuthambia | Kikuyu: kuthambira
+swing (v.) : Swahili: kubembesha | Kamba (Ulu): gunumwenda | Kamba (Nganyawa): kuzoa | Kikuyu: kuthuthirra
+sword : Swahili: upanga, pl. panga | Kamba: uviu | Kikuyu: rohiyu
+
+T
+tail : Swahili: mkia, pl. mikia | Kamba (Ulu): kisithe | Kamba (Nganyawa): mwithi | Kikuyu: kithita or kitomoi
+take away (v.) : Swahili: kuondosha | Kamba (Ulu): ukillia | Kamba (Nganyawa): kutwa, okillia | Kikuyu: kuerria
+take care of (v.) : Swahili: kutunza | Kamba (Ulu): etuunya | Kamba (Nganyawa): kuthithia | Kikuyu: kumorrora
+take it (v.) : Swahili: kutwaa | Kamba (Ulu): gutwa | Kamba (Nganyawa): kutwa | Kikuyu: kugirra
+take off : Swahili: kuvua | Kamba: kumia | Kikuyu: kurutta
+take (to a person) : Swahili: kupeleka | Kamba: kutoa | Kikuyu: kutwarra
+talk (v.) : Swahili: kunena, kusema | Kamba (Ulu): gunēēna | Kamba (Nganyawa): kunena | Kikuyu: kuuegenna
+taste (v.) : Swahili: kuonja, kuthuku | Kamba: gusamma | Kikuyu: kuchamma
+tattoo : Kamba: nthoo | Kikuyu: ndemua
+teach (v.) : Swahili: kufundisha | Kamba (Ulu): gutabia ndeto | Kamba (Nganyawa): kumanithua | Kikuyu: kumurruta
+tear (v.) : Swahili: kurarua, kupapua | Kamba (Ulu): gutembua | Kamba (Nganyawa): kutembwanga | Kikuyu: kutēmburra
+tears : Swahili: chozi, pl. machozi | Kamba: methoii | Kikuyu: maithorri
+teeth : Swahili: meno | Kamba: maiyo | Kikuyu: magego
+tell (v.) : Swahili: kuambia | Kamba: kutavia | Kikuyu: kumwirra or kwira
+ten : Swahili: kumi | Kamba: ekumi | Kikuyu: ikumi
+ten times : Swahili: mara kumi | Kamba: kakumi | Kikuyu: kuwaikumi
+testicles : Swahili: mapumbu, tamboa | Kamba: mēē | Kikuyu: kekke
+that : Swahili: yule, ule, kile, etc. | Kamba (Ulu): uuya, uyu | Kamba (Nganyawa): uenu | Kikuyu: uyu
+thatch (v.) : Swahili: kuvimba, kuezeka | Kamba (Ulu): gugitta | Kamba (Nganyawa): akka | Kikuyu: kugitta
+their : Swahili: -ao | Kamba (Ulu): weyo | Kamba (Nganyawa): naia | Kikuyu: wao
+there : Swahili: pale, huko, kule, etc. | Kamba (Ulu): kuuya, paiya | Kamba (Nganyawa): nagu | Kikuyu: naguku, kuria, kuku, hau
+these : Swahili: hawa, hii, hivi, etc. | Kamba (Ulu): aya, iya | Kamba (Nganyawa): tiaa, aya | Kikuyu: aya
+they : Swahili: wao | Kamba (Ulu): asu | Kamba (Nganyawa): andua, ua | Kikuyu: wao, mao
+thick : Swahili: -nene | Kamba (Ulu): -nenne | Kamba (Nganyawa): -nene | Kikuyu: -tunguha, -tungu
+thief : Swahili: mwivi, pl. wevi | Kamba (Ulu): kingeeň | Kamba (Nganyawa): kingii | Kikuyu: mwichi or nene
+thigh : Swahili: upaja, pl. paja | Kamba (Ulu): utambi, kuu | Kamba (Nganyawa): nyonga | Kikuyu: kierru
+thin : Swahili: -embamba | Kamba (Ulu): -thanthau | Kamba (Nganyawa): -mossu | Kikuyu: -tchekka
+thing : Swahili: kitu, pl. vitu | Kamba (Ulu): kiindu | Kamba (Nganyawa): kinduki | Kikuyu: kiindu
+thirst : Swahili: kiu | Kamba (Ulu): guwaooni | Kamba (Nganyawa): manyalo | Kikuyu: kunyota
+thirteen : Swahili: kumi na tatu | Kamba: ekumi na itatu | Kikuyu: ikumi na ithatu
+thirty : Swahili: thelathini | Kamba: miongo itatu | Kikuyu: mirongo itatu
+thirty one : Swahili: thelathini na moja | Kamba: miongo itatu naimwe | Kikuyu: mirongoithatu na imwe
+this : Swahili: huyu, huu, hiki, etc. | Kamba (Ulu): uu, uya | Kamba (Nganyawa): tiu, ii | Kikuyu: uyu
+thorn : Swahili: mwiba, pl. miiba | Kamba: mwiwa | Kikuyu: mwigua, pl. migua
+those : Swahili: wale, ile, kile, etc. | Kamba (Ulu): tiaa, aaya | Kamba (Nganyawa): aaya, īya | Kikuyu: āria, aaya
+three : Swahili: tatu | Kamba: itatu | Kikuyu: ithatu
+thrice : Swahili: mara tatu | Kamba: katatu | Kikuyu: kathatu
+throw (v.) : Swahili: kutupa | Kamba (Ulu): kwichethika | Kamba (Nganyawa): ejelika | Kikuyu: kute
+thumb : Swahili: kidole cha gumba | Kamba (Ulu): kia kinene | Kamba (Nganyawa): tchia mwela | Kikuyu: kiarra, tchiarra
+thunder : Swahili: piga radi | Kamba (Ulu): kitundummu | Kamba (Nganyawa): ngwa | Kikuyu: ngua
+thus : Swahili: kama hivi | Kamba (Ulu): iko | Kamba (Nganyawa): ngivia | Kikuyu: ikōō
+tick : Swahili: kupe, papasi | Kamba: mbilli | Kikuyu: ngukumma
+tickle (v.) : Swahili: kutekenya, kushtua | Kamba (Ulu): kukilakillia | Kamba (Nganyawa): kuenthengilia | Kikuyu: kutakenya
+tidy : Swahili: tanganezea | Kamba: ikaneza | Kikuyu: kuthondekka
+tight : Swahili: kaza | Kamba: oba killume | Kikuyu: munyiti, kunyiitia
+tired : Swahili: choka | Kamba (Ulu): noiiye | Kamba (Nganyawa): ekunoa | Kikuyu: kunoga
+toad : Swahili: chura, pl. vyura | Kamba: kua | Kikuyu: tūra
+tobacco : Swahili: tumbako | Kamba: baaki | Kikuyu: mbakki
+to-day : Swahili: leo | Kamba (Ulu): umunthi | Kamba (Nganyawa): moonthu, endimo | Kikuyu: rēu
+toe : Swahili: kidole, pl. vidole | Kamba (Ulu): kia, pl. sia | Kamba (Nganyawa): tzia | Kikuyu: kiarra
+tomato : Swahili: nyanya, tunduguela (wild) | Kamba (Nganyawa): tindi (cultivated), ngoondu (wild) | Kikuyu: matongu
+to-morrow : Swahili: keshu | Kamba (Ulu): ūni | Kamba (Nganyawa): ōni | Kikuyu: rutziu or ruchiu
+tongs : Swahili: koleo, pl. makoleo | Kamba (Nganyawa): itummu (large), ngosse (small) | Kikuyu: ngūūri
+tongue : Swahili: ulimi, pl. ndimi | Kamba (Ulu): kanyua | Kamba (Nganyawa): wimi | Kikuyu: ulimi or rurimi
+tooth : Swahili: jino, pl. meno | Kamba: maiyo, kutheko | Kikuyu: igego, pl. magego
+tooth-stick (for cleaning teeth) : Swahili: msuaki, pl. misuaki | Kamba: mussuakki | Kikuyu: mukīnyi
+tooth (hole in lower jaw) : Kamba: enthawuni | Kikuyu: uehe
+tortoise : Swahili: kobe | Kamba: nguu | Kikuyu: ngūrru
+touch (v.) : Swahili: kugusa, kupapasa | Kamba: gutella | Kikuyu: kuthēsha
+track (v.) : Swahili: kufuata nyayo | Kamba (Ulu): gumubigillia | Kamba (Nganyawa): kuvutha | Kikuyu: kutuwirria
+trade : Swahili: biashara | Kamba (Ulu): thoana | Kamba (Nganyawa): ithoa | Kikuyu: sogora
+trail (v.) : Kamba: gukussia | Kikuyu: kukuorria
+trap : Swahili: mtego, pl. mitego ; mtambo, pl. mitambo | Kamba (Ulu): uteo | Kamba (Nganyawa): mukwa | Kikuyu: mtĕgo
+tread upon : Swahili: kukanyaga | Kamba (Ulu): gumukinya | Kamba (Nganyawa): kinya | Kikuyu: kukinyanga
+tree : Swahili: mti, pl. miti | Kamba (Ulu): muti, pl. mitino | Kamba (Nganyawa): mti | Kikuyu: muti, pl. miti
+tribe : Swahili: kabila, taifa, pl. mataifa | Kamba (Ulu): ebia | Kamba (Nganyawa): kōo, kidibia | Kikuyu: rurirri
+trumpet : Swahili: paanda | Kamba: nguuli | Kamba (Nganyawa): thoo | Kikuyu: tchoro
+trunk (of tree) : Swahili: shina, pl. mashina ; jiti, pl. majiti | Kamba: shina | Kikuyu: tina
+trunk (of elephant) : Kamba: ngwele | Kikuyu: kiromo
+truth : Swahili: kweli | Kamba (Ulu): kwelli | Kamba (Nganyawa): ngwau | Kikuyu: niegawega, neguo arriawega
+try (v.) : Swahili: kujaribu | Kamba (Ulu): gusisia, ella | Kamba (Nganyawa): kuchichia | Kikuyu: kugegerriria
+turn (v.) : Swahili: kugeuza, kupindua | Kamba (Ulu): kualliula | Kamba (Nganyawa): kuallula | Kikuyu: kugarora
+turn round : Swahili: kuzunguka | Kamba: kuthurrlukana | Kikuyu: kusiororuka
+turtle : Swahili: kasa | Kamba: nguu | Kikuyu: ngūrru
+twelve : Swahili: kumi na mbili | Kamba: ekumi na ile | Kikuyu: ikumi na igiri
+twenty : Swahili: asharini | Kamba: miongoele | Kikuyu: mirongoiri
+twenty one : Swahili: asharini na moja | Kamba: miongoele na imwe | Kikuyu: mirongoiri na imwe
+twice : Swahili: mara mbili | Kamba (Ulu): keeli | Kamba (Nganyawa): maille | Kikuyu: kēēri
+twins : Swahili: pacha | Kamba: mabatha | Kikuyu: mahatha
+two : Swahili: mbili | Kamba: ile | Kikuyu: igiri
+two hundred : Swahili: miteen | Kamba: yana ile | Kikuyu: igana igiri
+
+U
+udder : Swahili: kiwele | Kamba: noondo | Kikuyu: nyondo
+ulcer : Swahili: donda ndugu | Kamba: dondee | Kikuyu: kironda
+uncle : Swahili: baba mdogo (mother's brother), amu (father's) mjomba | Kamba: mthomba | Kikuyu: mama
+under : Swahili: chini ya | Kamba (Ulu): paanthi | Kamba (Nganyawa): nthini | Kikuyu: thīni
+understand (v.) : Swahili: kusikia, kujua | Kamba (Ulu): nēēwa | Kamba (Nganyawa): kwiwa | Kikuyu: kwigua
+urinate (v.) : Swahili: kukojoa | Kamba (Ulu): guma | Kamba (Nganyawa): kūma | Kikuyu: kuthuguma
+urine : Swahili: mkojo | Kamba (Ulu): maūmau | Kamba (Nganyawa): moomoo | Kikuyu: mathugumu
+use (v.) : Swahili: kutumia | Kamba: gutumia | Kikuyu: gurrimira or kuendiete
+upset (v.) : Swahili: kumwaga | Kamba (Ulu): kwitanthi | Kamba (Nganyawa): allula | Kikuyu: kiuta
+
+V
+valley : Swahili: boonde, pl. maboonde | Kamba (Ulu): mboondo | Kamba (Nganyawa): neboonde | Kikuyu: kianda
+vegetables : Swahili: mboga | Kamba (Ulu): nyunni | Kamba (Nganyawa): mboga | Kikuyu: nyeni
+vein : Swahili: mishipa | Kamba: mukibba | Kikuyu: mukiha
+very : Swahili: sana | Kamba (Ulu): munnu | Kamba (Nganyawa): mono | Kikuyu: munu
+village : Swahili: mji, pl. miji | Kamba (Ulu): muthi | Kamba (Nganyawa): midji | Kikuyu: mwitchi
+virgin : Swahili: bikiri, kizinda | Kamba (Ulu): mweetu | Kikuyu: mutumanu, irrigu, mwirretu, ndurumuru
+voice : Swahili: sauti | Kamba: kiūmūū | Kikuyu: mugaambo
+vulture : Swahili: tumbuzi, pl. matumbuzi | Kamba (Ulu): ndē | Kamba (Nganyawa): ande | Kikuyu: ndere
+vulva : Swahili: kuma | Kamba: kinu | Kikuyu: kino, kitu
+
+W
+wait (v.) : Swahili: kungoja | Kamba (Ulu): kubeteela | Kamba (Nganyawa): kumbetaela | Kikuyu: kweterrera or jeterrera
+wake (v.) : Swahili: kuamka | Kamba (Ulu): guamukka | Kamba (Nganyawa): egogella | Kikuyu: kukirra
+walk (v.) : Swahili: kutembea, kuenda | Kamba (Ulu): gwanganga | Kamba (Nganyawa): kutamboka | Kikuyu: kutchānga or kuchēra
+wall : Swahili: ukuta, pl. kuta | Kamba (Ulu): nguka | Kamba (Nganyawa): andekka | Kikuyu: ruthingo
+want (v.) : Swahili: kutaka | Kamba (Ulu): gungwenda | Kamba (Nganyawa): kumantha | Kikuyu: kuenda
+war : Swahili: vita, kondo | Kamba: kao | Kikuyu: ita
+warrior : Swahili: asikari | Kamba (Ulu): maindeta | Kamba (Nganyawa): masahali | Kikuyu: mwanake, pl. ānake
+war-song : Kamba: mbaii | Kikuyu: nduugu (going), karre (returning)
+wart : Kikuyu: mbatata
+wart hog : Swahili: gwashi, ngirri | Kamba: ngii | Kikuyu: ngelee
+wash (v.) : Swahili: kuosha, kufua (clothes) | Kamba: kuthambitzia | Kikuyu: kuthambia
+water : Swahili: maji | Kamba: maanzi | Kikuyu: maii
+waterbuck : Swahili: kuru | Kamba: ndo | Kikuyu: ndoo
+waterfall : Swahili: gengi | Kamba: ūūsi niokūūma | Kikuyu: mwinyirriri
+wealth : Swahili: utajiri | Kamba: mundu muthi | Kikuyu: kitōōnga
+we : Swahili: sisi | Kamba (Ulu): ithie | Kamba (Nganyawa): oithi | Kikuyu: ithui
+well : Swahili: kisima, pl. visima | Kamba: kithima | Kikuyu: kithima
+well (to be) : Swahili: -zima | Kamba (Ulu): muau | Kamba (Nganyawa): ndiondu | Kikuyu: mugima
+wet : Swahili: maji-maji, rataba | Kamba (Ulu): kithekka kithekki | Kamba (Nganyawa): maanzi maanzi | Kikuyu: ituweku
+what : Swahili: gani, nini | Kamba (Ulu): nichiau | Kamba (Nganyawa): nichao | Kikuyu: nikki
+what for? : Swahili: kwa nini | Kamba (Ulu): nichiau | Kamba (Nganyawa): nikki | Kikuyu: nikki
+what is this? : Swahili: nini hii | Kamba (Ulu): nuu | Kamba (Nganyawa): kinichao | Kikuyu: nikkigekki
+what sort : Swahili: gani | Kamba (Ulu): mwau | Kamba (Nganyawa): kwachao | Kikuyu: naorweu
+when : Swahili: lini | Kamba (Ulu): nindii | Kamba (Nganyawa): indi | Kikuyu: niri
+where : Swahili: wapi | Kamba (Ulu): naku | Kamba (Nganyawa): niba | Kikuyu: ēku
+whetstone : Swahili: kinoo, pl. vinoo | Kamba (Ulu): ibia | Kamba (Nganyawa): kino, nthungu | Kikuyu: inoro
+which : Swahili: yupi, etc. | Kamba (Ulu): kiumbe | Kamba (Nganyawa): nichuoke | Kikuyu: ēku
+whiskers : Kamba: mawia | Kikuyu: noiya
+whisper (v.) : Swahili: kunongona | Kamba: nena kabolla | Kikuyu: kahora
+whistle (v.) : Swahili: piga mbinda, miunzi | Kamba (Ulu): mūūi | Kamba (Nganyawa): engamu | Kikuyu: meruri
+white : Swahili: -eupe | Kamba (Ulu): mwau | Kamba (Nganyawa): nzau | Kikuyu: kierru
+who : Swahili: nani | Kamba (Ulu): nuu | Kamba (Nganyawa): uunu | Kikuyu: ireko
+wholly : Swahili: kabisa | Kamba: tuamwenne | Kikuyu: diothe
+why : Swahili: mbona, kwani, kwa nini | Kamba (Ulu): nichiau | Kamba (Nganyawa): nichawe | Kikuyu: nikki
+widow : Swahili: mjani | Kamba: muundu ute mume | Kikuyu: niorrite
+wild : Swahili: mwitu | Kamba: kitheka | Kikuyu: mutito
+wild dog : Swahili: mbwa mwitu | Kamba: mbewa | Kikuyu: mbue
+wildebeeste : Swahili: nyumbo | Kamba: nsaii | Kikuyu: ngāti
+wilderness : Swahili: bara, nyika | Kamba (Ulu): bala | Kamba (Nganyawa): kitheka | Kikuyu: wēēru
+wind : Swahili: upepo, baridi | Kamba: mbebo | Kikuyu: ruhuho
+wind (to make) : Swahili: kujamba | Kamba: kukollotia | Kikuyu: kusuria
+window : Swahili: dirisha, pl. madirisha | Kamba: kitonyi
+wing : Swahili: bawa, pl. mabawa | Kamba (Ulu): kithau | Kamba (Nganyawa): ndthauo | Kikuyu: mathagu
+witchcraft : Swahili: uchawi | Kamba: ūoii | Kikuyu: urogi
+witch doctor : Swahili: mganga, pl. waganga | Kamba: muganga, pl. aganga | Kikuyu: muganga, pl. aganga
+wipe (v.) : Swahili: kufuta | Kamba (Ulu): gusia | Kamba (Nganyawa): kuutche | Kikuyu: kuutchia
+with : Swahili: na, pamoja na, kwa | Kamba: vamwe | Kikuyu: hamue
+woman : Swahili: mwanamke, pl. waanake | Kamba (Ulu): mundu muka, pl. andu aka | Kamba (Nganyawa): manamuka, pl. andu aka | Kikuyu: mundu muka, pl. andu aka
+woman (girl) : Swahili: kijana, pl. vijana (girl) | Kamba: mweetu (girl) | Kikuyu: kugurra (girl)
+woman (pregnant) : Swahili: mwanamwali (young woman who has not left her father's house) | Kamba: ebu (pregnant) | Kikuyu: ihu (pregnant)
+woman (who has had 4 children) : Kamba: kibeti (who has had 4 children)
+woman (barren) : Kamba: thāāta (barren)
+woman (old) : Swahili: mzee, pl. wazee | Kamba: mkuu, kisee | Kikuyu: tshushu, mundu mia
+womb : Swahili: tumbo, mji, maviasi | Kamba (Ulu): maa | Kamba (Nganyawa): mēthi | Kikuyu: malla, mushii
+work : Swahili: kazi | Kamba (Ulu): uuia | Kamba (Nganyawa): mawia | Kikuyu: uira
+workman : Swahili: mtenda kazi, fundi | Kikuyu: muturri, pl. aturri
+worm : Swahili: minyoo | Kamba: kumanthoii | Kikuyu: minyongora
+worry (v.) : Swahili: kusumbua | Kamba: kunyāmā | Kikuyu: kuhothina
+wound : Swahili: jeraha, donda | Kamba: ilanga | Kikuyu: kironda
+wrap (v.) : Swahili: kukunja | Kamba: kukunsa | Kikuyu: kukuunja
+wrinkles : Kamba: ngutta | Kikuyu: nigutha
+wrist : Swahili: kilimbili | Kamba (Ulu): nyēēlo | Kamba (Nganyawa): kilalau | Kikuyu: itchoka
+
+Y
+yam : Swahili: kikwa, pl. vikwa | Kamba (Ulu): kikwa, pl. ikwa | Kamba (Nganyawa): makwatzi | Kikuyu: kikoa, pl. ikoa, kikera
+yawn (v.) : Swahili: kupiga miayo | Kamba (Ulu): kwathamia | Kamba (Nganyawa): imeo | Kikuyu: ukia meo
+yellow : Swahili: rangi ya manjano | Kamba: uwiji
+yes : Swahili: ndio | Kamba (Ulu): newua | Kamba (Nganyawa): nigwo | Kikuyu: niugo
+yesterday : Swahili: jana | Kamba (Ulu): ēō | Kamba (Nganyawa): neo | Kikuyu: ira
+yesterday (day before) : Swahili: juzi | Kamba (Nganyawa): ĕsso | Kikuyu: īo
+yonder : Swahili: kule | Kamba (Ulu): kūūya | Kamba (Nganyawa): dyoya | Kikuyu: okū, kūrria or hau
+you : Swahili: wewe (sing.), nyinyi (pl.) | Kamba (Nganyawa): we (sing.), inyui (pl.) | Kikuyu: wē (sing.), inyui (pl.)
+your : Swahili: -ako (sing.), -enu (pl.) | Kamba (Ulu): nichiako (sing.), enyu (pl.) | Kamba (Nganyawa): ichagu | Kikuyu: yakoa, nyakua, anyu (pl.)
+
+Z
+zebra : Swahili: punda milia | Kamba (Ulu): nzaii | Kamba (Nganyawa): mbuvu | Kikuyu: njagi
+
+=== NUMERALS ===
+
+1 : Swahili: moja | Kamba: amwe or imwe | Kikuyu: imue
+2 : Swahili: mbili | Kamba: ile | Kikuyu: igiri
+3 : Swahili: tatu | Kamba: itatu | Kikuyu: ithatu
+4 : Swahili: 'nne | Kamba (Ulu): inna | Kamba (Nganyawa): inya | Kikuyu: inya
+5 : Swahili: tano | Kamba (Ulu): itanu | Kamba (Nganyawa): kitanu | Kikuyu: ithanu
+6 : Swahili: sita | Kamba (Ulu): thanthatu | Kamba (Nganyawa): thandatu | Kikuyu: thanthatu
+7 : Swahili: saba | Kamba (Ulu): muonza | Kamba (Nganyawa): moanza | Kikuyu: muguanja
+8 : Swahili: nane | Kamba (Ulu): nyanya | Kamba (Nganyawa): nanya | Kikuyu: inyanya
+9 : Swahili: kenda, tissa | Kamba: kenda | Kikuyu: ikenda
+10 : Swahili: kumi | Kamba: ikumi | Kikuyu: ikumi
+11 : Swahili: kumi na moja | Kamba: ikumi na kimwe | Kikuyu: ikumi na imwe
+20 : Swahili: makumi mawili or asharini (Arabic but commonly used in Swahili) | Kamba: miongoele | Kikuyu: mirongoiri
+21 : Swahili: makumi mawili na moja or asharini na moja | Kamba: miongoele na kimwe | Kikuyu: mirongoiri na imue
+30 : Swahili: makumi matatu or thelathini | Kamba: miongo itatu | Kikuyu: mirongo itatu
+40 : Swahili: makumi manne or arobaini | Kamba: miongo inya or enna | Kikuyu: mirongo inya
+50 : Swahili: makumi matano or hamsini | Kamba: miongo kitanu | Kikuyu: mirongo ithanu
+60 : Swahili: makumi sita or settini | Kamba: miongo thandatu | Kikuyu: mirongo ithanthatu
+70 : Swahili: makumi saba or sabwini | Kamba: miongo moanza | Kikuyu: mirongo nguanja
+80 : Swahili: makumi manane or themanini | Kamba: miongo nanya | Kikuyu: mirongo inyanya
+90 : Swahili: makumi kenda or tissaini | Kamba: miongo kenda | Kikuyu: mirongo kenda
+100 : Swahili: mia | Kamba: yana | Kikuyu: igana
+first : Swahili: -a kwanza | Kamba: monthi | Kikuyu: kuambirrira or ikinya
+last : Swahili: -a mwisho | Kamba: itinna | Kikuyu: kurrigillia
+once : Swahili: mara moja | Kamba: kakamwe or kimwe | Kikuyu: kirrimue
+twice : Swahili: mara mbili | Kamba: keeli | Kikuyu: kēēri
+thrice : Swahili: mara tatu | Kamba: katatu | Kikuyu: kathatu
+4 times : Swahili: mara 'nne | Kamba (Ulu): kainya | Kamba (Nganyawa): kanna | Kikuyu: kanna
+5 times : Swahili: mara tano | Kamba: kathandatu | Kikuyu: kathanthatu
+half : Swahili: nusu | Kamba: nussu | Kikuyu: kishuinji, kechuje or etigia
+
+=== PHRASES ===
+
+What is your name? : Swahili: jina lako nani? | Kamba (Ulu): wita wata? | Kikuyu: wita gwatia?
+Where are you going? : Swahili: wendapi? | Kamba (Ulu): uthi naku? | Kikuyu: wathiiku?
+What do you want? : Swahili: wataka nini? | Kamba (Ulu): wendakki? | Kikuyu: ukwendakki?
+Where do you come from? : Swahili: watoka wapi? | Kamba (Ulu): uomanakko? | Kikuyu: umaku?
+What are you doing? : Swahili: wafanya nini? | Kamba (Ulu): weikatta? | Kikuyu: uguikatia?
+What is this? : Swahili: nini hii? | Kamba (Ulu): kiinichao? | Kikuyu: nikkigekki?
+What do you say? : Swahili: usemaji? | Kamba (Ulu): wenenatta? | Kikuyu: ukugagatia?
+Where is the water? : Swahili: maji wapi? | Kamba (Ulu): maiba maanzi? | Kikuyu: meku maii?
+I do not know : Swahili: sijui | Kamba (Ulu): ndimanya | Kikuyu: ndiui or ndikumenya
+I do not want : Swahili: sitaki | Kamba (Ulu): ndikwenda | Kikuyu: ndigika or ndikwenda
+I do not want to go : Swahili: sitaki kwenda | Kamba (Ulu): ndikwenda kuthi | Kikuyu: ndigika kuthi
+I cannot go : Swahili: siwezi kwenda | Kamba (Ulu): nditona kuthi | Kikuyu: ndingihotta kuthi
+I will not go : Swahili: siendi | Kamba (Ulu): ndithi or ndikathi | Kikuyu: ndithie or ndikathie
+I will go : Swahili: nitakwenda | Kamba (Ulu): nenkathi | Kikuyu: ningathi
+I will return : Swahili: nitarudi | Kamba (Ulu): ningashoka | Kikuyu: ningashōka
+I am good : Swahili: nimzuri | Kamba (Ulu): nimaseo | Kikuyu: nimwega
+I am hungry : Swahili: ninanja | Kamba (Ulu): ninadja | Kikuyu: nihūtie
+I want milk : Swahili: nataka maziwa | Kamba (Ulu): niguenda kalia | Kikuyu: ningwenda irria
+I have a child : Swahili: nina mtoto | Kamba (Ulu): ninamwana | Kikuyu: ninakana
+I do not see : Swahili: sioni | Kamba (Ulu): ndineona | Kikuyu: ndionna
+I bring : Swahili: naleta | Kamba (Ulu): niguete | Kikuyu: nikurehe
+Come here : Swahili: njo hapa | Kamba (Ulu): uka haha | Kikuyu: uka haha
+Bring food : Swahili: lete chakula | Kamba (Ulu): ete lēu | Kikuyu: reherria
+Bring water : Swahili: lete maji | Kamba (Ulu): ete maanzi | Kikuyu: rehe maii
+Call him : Swahili: mwite | Kamba (Ulu): mwite | Kikuyu: mwitorria
+Make a fire : Swahili: fanya moto | Kamba (Ulu): puba mwaki | Kikuyu: akiamwaki
+Be quiet : Swahili: kaleli | Kamba (Ulu): pindia | Kikuyu: kirra
+Go away : Swahili: enda zako | Kamba (Ulu): eenda or thi | Kikuyu: innuka or thi
+My child : Swahili: mtoto wango | Kamba (Ulu): kana kani kakwa | Kikuyu: mwana wakua
+Your children : Swahili: watoto wako | Kamba (Ulu): twana tuni nitwako | Kikuyu: siana siaku
+His cows : Swahili: ngombe zake | Kamba (Ulu): ngombe shiakwi | Kikuyu: ngombe siake
+His hand : Swahili: mkono wake | Kamba (Ulu): kuoko nikwaki | Kikuyu: uwoko wake
+Our village : Swahili: mji wetu | Kamba (Ulu): musie ni witu | Kikuyu: mwitzi wiitu
+Our father : Swahili: baba wetu | Kamba (Ulu): nau witu | Kikuyu: baba wiitu
+Our mother : Swahili: mama wetu | Kamba (Ulu): inya witu | Kikuyu: nyina wiitu
+Do you want to eat? : Swahili: wataka kula? | Kamba (Ulu): nukwenda kuya | Kikuyu: ugika kurria
+That is a bad child : Swahili: mtoto yule mbaya | Kamba (Ulu): kana kani kathuku | Kikuyu: kana kani nakuru
+A big child : Swahili: mtoto mkubwa | Kamba (Ulu): kana kanene | Kikuyu: kana kanene
+A big house : Swahili: nyumba kubwa | Kamba (Ulu): nyumba ninene | Kikuyu: nyumba ninene
+He has come : Swahili: amekuja | Kamba (Ulu): akuketi | Kikuyu: aniuka
+You have lied : Swahili: umesema wongo | Kamba (Ulu): we neno wongo | Kikuyu: we nikuhenia
+We will both go : Swahili: tutakwenda wote wawili | Kamba (Ulu): itu kathi andu ele | Kikuyu: tugu thi nawe
+You are a bad man : Swahili: wewe mtu mbaya | Kamba (Ulu): we mundu muthuku | Kikuyu: we mundu muru
+All the children are small : Swahili: watoto wote wadogo | Kamba (Ulu): twana tonthe tunini | Kikuyu: twana tothe tunini
+He is not here : Swahili: hako | Kamba (Ulu): tikwe | Kikuyu: ndarikua
+Do not come : Swahili: usiji | Kamba (Ulu): udikoke | Kikuyu: udikuka
+We bring : Swahili: twaleta | Kamba (Ulu): twa kuete | Kikuyu: ithui kurehe
+Not you : Swahili: siwe | Kamba (Ulu): tiwe | Kikuyu: tiwe
+Not he : Swahili: siye | Kamba (Ulu): tinye | Kikuyu: tinye
+Not we : Swahili: sisisi | Kamba (Ulu): tiithi | Kikuyu: tiithui
+A good child : Swahili: mtoto mzuri | Kamba (Ulu): kana kani museo | Kikuyu: kana kani kiega
+A good man : Swahili: mtu mzuri | Kamba (Ulu): mundu nimusea | Kikuyu: mundu nimuwega
+A good knife : Swahili: kisu kizuri | Kamba (Ulu): kabiu ni kaseo | Kikuyu: ruhiu rwega
+A good tree : Swahili: mti mzuri | Kamba (Ulu): muti ni museo | Kikuyu: mti unwega
+Good children : Swahili: watoto wazuri | Kamba (Ulu): twana tuni tuseo | Kikuyu: twana tuni twega
+Good men : Swahili: watu wazuri | Kamba (Ulu): andu anaseo | Kikuyu: andu anega
+Good knives : Swahili: visu vizuri | Kamba (Ulu): kabiu kaseo | Kikuyu: huishiu enjega
+Good trees : Swahili: miti mizuri | Kamba (Ulu): miti mino miseo | Kikuyu: miti moni mijega
+In the head : Swahili: kitwani | Kamba (Ulu): mutueni | Kikuyu: mtueni
+In the stomach : Swahili: tumboni | Kamba (Ulu): ebuni | Kikuyu: ndaeni
+In the trees : Swahili: mitini | Kamba (Ulu): mitini | Kikuyu: mitini
+In the house : Swahili: nyumbani | Kamba (Ulu): nyumbani | Kikuyu: nyumbani
+Salutation : Swahili: Jambo | Kamba (Ulu): o voo | Kikuyu: mwohoro
+Reply : Kamba (Ulu): o voo nēza | Kikuyu: mwohoro mwēga
+Reply : Kamba (Ulu): nēza | Kikuyu: mwēga or mwēga munnu
+
+=== COLOPHON ===
+Cambridge :
+PRINTED BY J. AND C. F. CLAY,
+AT THE UNIVERSITY PRESS.

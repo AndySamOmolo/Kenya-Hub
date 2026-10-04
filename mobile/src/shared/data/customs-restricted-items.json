@@ -1,0 +1,82 @@
+{
+  "categories": [
+    {
+      "id": "prohibited",
+      "title": "Absolutely Prohibited Items",
+      "description": "These items cannot be brought into Kenya under any circumstances",
+      "icon": "🚫",
+      "items": [
+        { "item": "Narcotic drugs and psychotropic substances", "law": "Narcotic Drugs and Psychotropic Substances (Control) Act" },
+        { "item": "Counterfeit currency and coins", "law": "Central Bank of Kenya Act" },
+        { "item": "Pornographic materials", "law": "Films and Stage Plays Act" },
+        { "item": "Illegal firearms and ammunition", "law": "Firearms Act (Cap 114)" },
+        { "item": "Endangered species products (ivory, rhino horn, etc.)", "law": "CITES / Wildlife Conservation and Management Act" },
+        { "item": "Counterfeit goods and trademark-infringing products", "law": "Anti-Counterfeit Act 2008" },
+        { "item": "Hazardous waste and toxic materials", "law": "Environmental Management and Coordination Act (EMCA)" },
+        { "item": "Subversive or seditious publications", "law": "Penal Code (Cap 63)" },
+        { "item": "Genetically modified organisms without KEPHIS approval", "law": "Biosafety Act 2009" },
+        { "item": "Replica or imitation firearms", "law": "Firearms Act" }
+      ]
+    },
+    {
+      "id": "restricted",
+      "title": "Restricted Items (Permit Required)",
+      "description": "These items may be imported with the appropriate permit or license",
+      "icon": "⚠️",
+      "items": [
+        { "item": "Licensed firearms and ammunition", "permit": "Firearms Bureau, Kenya Police", "law": "Firearms Act" },
+        { "item": "Medicines and pharmaceuticals (beyond personal supply)", "permit": "Pharmacy & Poisons Board (PPB)", "law": "Pharmacy and Poisons Act" },
+        { "item": "Agricultural products and plant materials", "permit": "KEPHIS Phytosanitary Certificate", "law": "Plant Protection Act" },
+        { "item": "Live animals and animal products", "permit": "Directorate of Veterinary Services", "law": "Animal Diseases Act" },
+        { "item": "Radio communication equipment", "permit": "Communications Authority of Kenya (CA)", "law": "Kenya Information and Communications Act" },
+        { "item": "Alcohol and spirits (beyond personal allowance)", "permit": "KRA Customs", "law": "Alcoholic Drinks Control Act" },
+        { "item": "Tobacco products (beyond personal allowance)", "permit": "KRA Customs", "law": "Tobacco Control Act 2007" },
+        { "item": "Used motor vehicles (must be under 8 years old)", "permit": "KRA / KEBS", "law": "Traffic Act / East African Standards" },
+        { "item": "Drones and unmanned aerial vehicles", "permit": "Kenya Civil Aviation Authority (KCAA)", "law": "Civil Aviation Act" },
+        { "item": "Human remains and ashes", "permit": "Director of Immigration", "law": "Public Health Act" },
+        { "item": "Currency exceeding KES 1,000,000 equivalent", "permit": "Customs declaration required", "law": "Proceeds of Crime and Anti-Money Laundering Act" },
+        { "item": "Precious metals and gemstones (commercial quantities)", "permit": "Mining Commissioner", "law": "Mining Act 2016" }
+      ]
+    },
+    {
+      "id": "allowances",
+      "title": "Traveller Duty-Free Allowances",
+      "description": "Items you can bring into Kenya without paying duty, subject to limits",
+      "icon": "✅",
+      "items": [
+        { "item": "Personal effects and used clothing", "limit": "Reasonable quantity for personal use", "duty": "Free" },
+        { "item": "Goods for personal use", "limit": "Up to USD 500 value", "duty": "Free" },
+        { "item": "Spirits / liquor", "limit": "1 litre", "duty": "Free" },
+        { "item": "Wine", "limit": "2 litres", "duty": "Free" },
+        { "item": "Beer", "limit": "500 ml", "duty": "Free" },
+        { "item": "Cigarettes", "limit": "200 sticks", "duty": "Free" },
+        { "item": "Cigars", "limit": "50 sticks", "duty": "Free" },
+        { "item": "Pipe tobacco", "limit": "250 grams", "duty": "Free" },
+        { "item": "Perfume", "limit": "500 ml", "duty": "Free" },
+        { "item": "Gifts and souvenirs", "limit": "Included in USD 500 allowance", "duty": "Free" }
+      ]
+    },
+    {
+      "id": "declaration",
+      "title": "Mandatory Declaration Items",
+      "description": "You must declare these items to Customs upon arrival",
+      "icon": "📋",
+      "items": [
+        { "item": "Cash exceeding KES 1,000,000 (or equivalent in foreign currency)", "requirement": "Complete Customs Cash Declaration Form" },
+        { "item": "Goods exceeding duty-free allowance (USD 500)", "requirement": "Declare at Red Channel for duty assessment" },
+        { "item": "Commercial goods of any value", "requirement": "Import Declaration Form (IDF) via KRA iTax" },
+        { "item": "Firearms (licensed)", "requirement": "Declare with valid Kenya firearms certificate" },
+        { "item": "Animals and animal products", "requirement": "Veterinary health certificate from country of origin" },
+        { "item": "Plant products", "requirement": "Phytosanitary certificate from country of origin" }
+      ]
+    }
+  ],
+  "notes": [
+    "Kenya uses the Red/Green channel system at international airports",
+    "Green Channel: Nothing to declare (within duty-free allowances)",
+    "Red Channel: Goods to declare or goods exceeding allowances",
+    "Penalties for non-declaration include seizure, fines, and potential prosecution",
+    "EAC citizens (Kenya, Uganda, Tanzania, Rwanda, Burundi, DRC, South Sudan) may have different allowances",
+    "All commercial imports require an Import Declaration Form (IDF) via KRA iTax before shipment"
+  ]
+}

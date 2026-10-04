@@ -1,0 +1,103 @@
+{
+  "lastUpdated": "2025",
+  "subsidyProgram": {
+    "name": "National Fertilizer Subsidy Programme",
+    "administrator": "Ministry of Agriculture & Livestock Development",
+    "registrationSystem": "SHAMBA System / eCitizen",
+    "howToRegister": [
+      "Visit your nearest chief's office or agricultural extension officer",
+      "Register as a farmer on the eCitizen platform (ecitizen.go.ke)",
+      "Provide national ID, KRA PIN, and land ownership/lease documents",
+      "Specify the acreage under cultivation and crops grown",
+      "Once approved, you receive SMS notifications when fertilizer is available",
+      "Collect from designated NCPB depots with your national ID"
+    ],
+    "eligibility": [
+      "Must be a Kenyan citizen with valid national ID",
+      "Must be a registered farmer (subsistence or commercial)",
+      "Land size verification required (maximum allocation depends on acreage)",
+      "Maximum allocation: 100 bags per farmer per season (subject to availability)"
+    ]
+  },
+  "fertilizers": [
+    {
+      "name": "DAP (Di-Ammonium Phosphate)",
+      "formula": "18-46-0",
+      "use": "Basal/planting fertilizer. High phosphorus for root development.",
+      "subsidizedPrice": 2500,
+      "marketPrice": 5500,
+      "unit": "50kg bag",
+      "bestFor": ["Maize", "Wheat", "Beans", "Potatoes"],
+      "application": "Apply at planting — 1 bag per acre for maize. Place 5cm below and beside the seed."
+    },
+    {
+      "name": "CAN (Calcium Ammonium Nitrate)",
+      "formula": "26-0-0",
+      "use": "Top-dressing fertilizer. Provides nitrogen for vegetative growth.",
+      "subsidizedPrice": 1800,
+      "marketPrice": 4000,
+      "unit": "50kg bag",
+      "bestFor": ["Maize (top-dress)", "Wheat (top-dress)", "Tea", "Vegetables"],
+      "application": "Apply as top-dress when maize is knee-height (4–6 weeks after planting). Side-dress 5cm from plant stem."
+    },
+    {
+      "name": "NPK (23-23-0)",
+      "formula": "23-23-0",
+      "use": "Balanced planting fertilizer with both nitrogen and phosphorus.",
+      "subsidizedPrice": 2300,
+      "marketPrice": 5200,
+      "unit": "50kg bag",
+      "bestFor": ["Maize", "Beans", "Vegetables"],
+      "application": "Apply at planting. Good alternative to DAP where nitrogen is also needed at planting."
+    },
+    {
+      "name": "Urea",
+      "formula": "46-0-0",
+      "use": "High-nitrogen top-dressing fertilizer. Most concentrated nitrogen source.",
+      "subsidizedPrice": 2000,
+      "marketPrice": 4500,
+      "unit": "50kg bag",
+      "bestFor": ["Maize (top-dress)", "Rice", "Sugarcane", "Wheat"],
+      "application": "Top-dress only — never apply at planting (burns seeds). Apply when soil is moist. Loses nitrogen if left on surface — incorporate immediately."
+    },
+    {
+      "name": "TSP (Triple Super Phosphate)",
+      "formula": "0-46-0",
+      "use": "Pure phosphorus fertilizer for phosphorus-deficient soils.",
+      "subsidizedPrice": 2200,
+      "marketPrice": 5000,
+      "unit": "50kg bag",
+      "bestFor": ["Potatoes", "Beans", "Horticultural crops"],
+      "application": "Apply at planting. Best for acidic soils that fix phosphorus from DAP."
+    },
+    {
+      "name": "MOP (Muriate of Potash)",
+      "formula": "0-0-60",
+      "use": "Potassium fertilizer for fruit development, disease resistance, and water regulation.",
+      "subsidizedPrice": 2000,
+      "marketPrice": 4200,
+      "unit": "50kg bag",
+      "bestFor": ["Bananas", "Potatoes", "Tomatoes", "Coffee"],
+      "application": "Apply at planting or as a split application. Important for fruiting crops and potatoes."
+    }
+  ],
+  "collectionPoints": [
+    { "county": "Nairobi", "depot": "NCPB Nairobi Depot", "location": "Industrial Area" },
+    { "county": "Nakuru", "depot": "NCPB Nakuru Depot", "location": "Nakuru Town" },
+    { "county": "Eldoret", "depot": "NCPB Eldoret Depot", "location": "Eldoret Town" },
+    { "county": "Kisumu", "depot": "NCPB Kisumu Depot", "location": "Kisumu Town" },
+    { "county": "Meru", "depot": "NCPB Meru Depot", "location": "Meru Town" },
+    { "county": "Kitale", "depot": "NCPB Kitale Depot", "location": "Kitale Town" },
+    { "county": "Nyeri", "depot": "NCPB Nyeri Depot", "location": "Nyeri Town" },
+    { "county": "Machakos", "depot": "NCPB Machakos Depot", "location": "Machakos Town" },
+    { "county": "Kakamega", "depot": "NCPB Kakamega Depot", "location": "Kakamega Town" },
+    { "county": "Narok", "depot": "NCPB Narok Depot", "location": "Narok Town" }
+  ],
+  "notes": [
+    "Subsidized prices are set by the government and may change each planting season. Confirm current prices at your nearest NCPB depot.",
+    "Market prices are approximate — they fluctuate based on global fertilizer commodity markets and exchange rates.",
+    "The subsidy programme may have stock limitations. Register early (2–3 months before planting season) to secure allocation.",
+    "Always buy from licensed agrovets or NCPB depots. Counterfeit fertilizer is a serious problem — check packaging seals and KEBS certification.",
+    "Soil testing is recommended before applying fertilizer. Contact KALRO for soil testing services (KES 500–1,500 per sample)."
+  ]
+}

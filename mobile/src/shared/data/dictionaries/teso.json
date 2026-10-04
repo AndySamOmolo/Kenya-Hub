@@ -1,0 +1,1753 @@
+{
+  "languageId": "teso",
+  "languageName": "Teso (Ateso)",
+  "family": "nilotic",
+  "nativeName": "Ateso",
+  "script": "Latin",
+  "speakerCount": 468000,
+  "counties": [
+    "Busia"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.1.0",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Compiled from 'An Introduction to the Ateso Language' by J.H. Hilders and J.C.D. Lawrence (Eagle Press / East African Literature Bureau, 1957). Ateso is an Eastern Nilotic language of the Teso-Turkana group, spoken primarily in Busia County (Teso North and Teso South sub-counties), Kenya, and widely across Eastern Uganda (Soroti, Kumi, Ngora, Bukedea, Katakwi, Amuria, Tororo). Thoroughly analyzed and structured with accurate grammatical gender (masculine e-, feminine a-, diminutive i-), plural noun classes, and verbal classes (ko- and ki-).",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / How are you?",
+          "translation": "Yoga",
+          "pronunciation": "yoh-gah",
+          "context": "Standard Ateso greeting; answered with 'Ejok'. Verb: ayogan (to greet).",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning / Warm greetings",
+          "translation": "Yoga noi",
+          "pronunciation": "yoh-gah noh-ee",
+          "context": "Warm morning or heartfelt greeting; 'noi' = very/much.",
+          "audioFile": null
+        },
+        {
+          "english": "How are you? / How do you spend the day?",
+          "translation": "Ibiya?",
+          "pronunciation": "ee-bee-yah",
+          "context": "Friendly enquiry into one's condition, from 'aiboi' (to stay/dwell).",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine / Good / It is well",
+          "translation": "Ejok",
+          "pronunciation": "eh-johk",
+          "context": "Universal reply to greetings; literally 'It is good'. Plural: Ejokak.",
+          "audioFile": null
+        },
+        {
+          "english": "Very fine / All is very well",
+          "translation": "Ejok noi",
+          "pronunciation": "eh-johk noh-ee",
+          "context": "Enthusiastic reply to greeting; 'noi' = very much.",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Eyalama",
+          "pronunciation": "eh-yah-lah-mah",
+          "context": "Standard expression of gratitude and appreciation.",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Eyalama noi",
+          "pronunciation": "eh-yah-lah-mah noh-ee",
+          "context": "Expression of deep gratitude.",
+          "audioFile": null
+        },
+        {
+          "english": "Is that so? / Really?",
+          "translation": "Erai bo?",
+          "pronunciation": "eh-rah-ee boh",
+          "context": "Conversational reply of interest; 'erai' = it is, 'bo' = interrogative particle.",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye / Farewell",
+          "translation": "Adio",
+          "pronunciation": "ah-dee-oh",
+          "context": "Standard parting farewell.",
+          "audioFile": null
+        },
+        {
+          "english": "Go well / Go in peace",
+          "translation": "Kolot ejok",
+          "pronunciation": "koh-loht eh-johk",
+          "context": "Parting blessing addressed to the one departing; from 'alosit' (to go) and 'ejok' (well).",
+          "audioFile": null
+        },
+        {
+          "english": "Stay well / Peaceful stay",
+          "translation": "Kiboi ejok",
+          "pronunciation": "kee-boh-ee eh-johk",
+          "context": "Parting blessing addressed to the one remaining; from 'aiboi' (to stay/dwell).",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome / Come in",
+          "translation": "Toloma",
+          "pronunciation": "toh-loh-mah",
+          "context": "Imperative welcome; from 'alomun' (to come in). Plural: Tolomatu.",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome (borrowed)",
+          "translation": "Karibu",
+          "pronunciation": "kah-ree-boo",
+          "context": "Swahili loan widely understood across East Africa.",
+          "audioFile": null
+        },
+        {
+          "english": "Yes",
+          "translation": "Eebo / Ee",
+          "pronunciation": "eh-eh-boh",
+          "context": "Affirmative response.",
+          "audioFile": null
+        },
+        {
+          "english": "No / Not",
+          "translation": "Mam",
+          "pronunciation": "mahm",
+          "context": "Universal negative particle placed before verbs and subjects.",
+          "audioFile": null
+        },
+        {
+          "english": "See you tomorrow",
+          "translation": "Aanyun moi",
+          "pronunciation": "ah-ahn-yoon moh-ee",
+          "context": "Parting phrase; 'aanyun' = to see, 'moi' = tomorrow.",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Epei / Ediope (fem. Adiope)",
+          "pronunciation": "eh-pay / ah-dee-oh-peh",
+          "context": "Masculine: epei or ediope; feminine: adiope. Ediope can precede the noun: adiopeberu (one woman).",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Aarei (masc. Iarei)",
+          "pronunciation": "ah-ah-reh-ee",
+          "context": "Feminine: aarei; masculine: iarei. e.g. aŋor aarei (two women), imoŋin iarei (two bulls).",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Auni (masc. Iuni)",
+          "pronunciation": "ah-oo-nee",
+          "context": "Feminine: auni; masculine: iuni. e.g. akituk auni (three cows), imoŋin iuni (three bulls).",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Aoŋon (masc. Ioŋon)",
+          "pronunciation": "ah-oh-ngohn",
+          "context": "Feminine: aoŋon; masculine: ioŋon.",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Akan (masc. Ikan)",
+          "pronunciation": "ah-kahn",
+          "context": "Feminine: akan; masculine: ikan. Cognate with 'akan' (hand).",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Akankapei / Akany kape",
+          "pronunciation": "ah-kahn-kah-pay",
+          "context": "Literally 'five and one'. Masculine: ikankapei / ikany kape.",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Akankaare / Akany kaarei",
+          "pronunciation": "ah-kahn-kah-ah-reh",
+          "context": "Literally 'five and two'. Masculine: ikankaare / ikany kaarei.",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Akankauni / Akany kauni",
+          "pronunciation": "ah-kahn-kah-oo-nee",
+          "context": "Literally 'five and three'. Masculine: ikankauni / ikany kauni.",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Akankaongon / Akany kaoŋon",
+          "pronunciation": "ah-kahn-kah-ohn-gohn",
+          "context": "Literally 'five and four'. Masculine: ikankaongon / ikany kaoŋon.",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Atomon (masc. Itomon)",
+          "pronunciation": "ah-toh-mohn",
+          "context": "Feminine: atomon; masculine: itomon.",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven",
+          "translation": "Atomon kanadiope",
+          "pronunciation": "ah-toh-mohn kah-nah-dee-oh-peh",
+          "context": "Literally 'ten and one' (feminine concord). Masculine: itomon kalodiope.",
+          "audioFile": null
+        },
+        {
+          "english": "Twelve",
+          "translation": "Atomon kanuarei",
+          "pronunciation": "ah-toh-mohn kah-noo-ah-reh-ee",
+          "context": "Literally 'ten and two' (feminine concord). Masculine: itomon kaluarei.",
+          "audioFile": null
+        },
+        {
+          "english": "Thirteen",
+          "translation": "Atomon kanuuni",
+          "pronunciation": "ah-toh-mohn kah-noo-oo-nee",
+          "context": "Literally 'ten and three' (feminine concord).",
+          "audioFile": null
+        },
+        {
+          "english": "Fourteen",
+          "translation": "Atomon kanuoŋon",
+          "pronunciation": "ah-toh-mohn kah-noo-oh-ngohn",
+          "context": "Literally 'ten and four' (feminine concord).",
+          "audioFile": null
+        },
+        {
+          "english": "Fifteen",
+          "translation": "Atomon kanukany",
+          "pronunciation": "ah-toh-mohn kah-noo-kahn-y",
+          "context": "Literally 'ten and five' (feminine concord).",
+          "audioFile": null
+        },
+        {
+          "english": "Sixteen",
+          "translation": "Atomon kanukany kape",
+          "pronunciation": "ah-toh-mohn kah-noo-kahn-y kah-peh",
+          "context": "Literally 'ten and six' (feminine concord). Masculine: itomon kalukany kape.",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Akais aarei",
+          "pronunciation": "ah-kah-ees ah-ah-reh-ee",
+          "context": "Literally 'two houses (tens)'. Akais is a feminine noun.",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty-one",
+          "translation": "Akais aarei kanadiope",
+          "pronunciation": "ah-kah-ees ah-ah-reh-ee kah-nah-dee-oh-peh",
+          "context": "Compound numeral: twenty and one.",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Akais auni",
+          "pronunciation": "ah-kah-ees ah-oo-nee",
+          "context": "Literally 'three houses (tens)'.",
+          "audioFile": null
+        },
+        {
+          "english": "One hundred",
+          "translation": "Akwatat (pl. Akwat)",
+          "pronunciation": "ah-kwah-taht",
+          "context": "Feminine noun; plural akwat. e.g. akwat auni (300).",
+          "audioFile": null
+        },
+        {
+          "english": "Two hundred",
+          "translation": "Akwat aarei",
+          "pronunciation": "ah-kwaht ah-ah-reh-ee",
+          "context": "Feminine concord with akwat (hundreds).",
+          "audioFile": null
+        },
+        {
+          "english": "One thousand",
+          "translation": "Elukumit (pl. Ilukumin) / Arita",
+          "pronunciation": "eh-loo-koo-meet",
+          "context": "Masculine noun: elukumit ediope (1,000); plural: ilukumin ikany (5,000). Also 'arita'.",
+          "audioFile": null
+        },
+        {
+          "english": "First",
+          "translation": "Losodit (fem. Nasodit)",
+          "pronunciation": "loh-soh-deet",
+          "context": "Ordinal numeral: masculine losodit, feminine nasodit.",
+          "audioFile": null
+        },
+        {
+          "english": "Second",
+          "translation": "Lokiareit (fem. Nakiareit)",
+          "pronunciation": "loh-kee-ah-reh-eet",
+          "context": "Ordinal numeral: masculine lokiareit, feminine nakiareit.",
+          "audioFile": null
+        },
+        {
+          "english": "Third",
+          "translation": "Lokiuniet (fem. Nakiuniet)",
+          "pronunciation": "loh-kee-oo-nee-eet",
+          "context": "Ordinal numeral: masculine lokiuniet, feminine nakiuniet.",
+          "audioFile": null
+        },
+        {
+          "english": "Tenth",
+          "translation": "Lokitomonet (fem. Nakitomonet)",
+          "pronunciation": "loh-kee-toh-moh-neht",
+          "context": "Ordinal numeral: masculine lokitomonet, feminine nakitomonet.",
+          "audioFile": null
+        },
+        {
+          "english": "Once / One time",
+          "translation": "Irwan atipet",
+          "pronunciation": "eer-wahn ah-tee-peht",
+          "context": "Multiplication prefix 'irwan' (times) + 'atipet' (once).",
+          "audioFile": null
+        },
+        {
+          "english": "Twice / Two times",
+          "translation": "Irwan aarei",
+          "pronunciation": "eer-wahn ah-ah-reh-ee",
+          "context": "Multiplication with feminine numeral: irwan aarei.",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "What is your name?",
+          "translation": "Iŋai ekirorkon?",
+          "pronunciation": "ee-ngah-ee eh-kee-rohr-kohn",
+          "context": "Literally 'Who is your name?'; 'ekiror' = name, '-kon' = your (singular).",
+          "audioFile": null
+        },
+        {
+          "english": "My name is...",
+          "translation": "Ekirorka erai...",
+          "pronunciation": "eh-kee-rohr-kah eh-rah-ee",
+          "context": "'Ekirorka' = my name; 'erai' = is (verb to be quality form).",
+          "audioFile": null
+        },
+        {
+          "english": "Where do you come from?",
+          "translation": "Ai ibunit ijo?",
+          "pronunciation": "ah-ee ee-boo-neet ee-joh",
+          "context": "'ai' = where, 'abunere' = to come (present: ibuni), 'ijo' = you.",
+          "audioFile": null
+        },
+        {
+          "english": "I come from...",
+          "translation": "Abuni eoŋ ko...",
+          "pronunciation": "ah-boo-nee eh-ohng koh",
+          "context": "'abuni' = I come, 'eoŋ' = I/me, 'ko-' = locative prefix from/at.",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you going?",
+          "translation": "Ai ilosi ijo?",
+          "pronunciation": "ah-ee ee-loh-see ee-joh",
+          "context": "'alosit' = to go; 2nd person singular present: ilosi.",
+          "audioFile": null
+        },
+        {
+          "english": "I am going home",
+          "translation": "Alosi eoŋ ore",
+          "pronunciation": "ah-loh-see eh-ohng oh-reh",
+          "context": "'alosi' = I go, 'ore' = at home (homestead locative).",
+          "audioFile": null
+        },
+        {
+          "english": "What do you want?",
+          "translation": "Inyo ikoto ijo?",
+          "pronunciation": "een-yoh ee-koh-toh ee-joh",
+          "context": "'inyo' = what, 'akot' = to want (continuous verb: ikoto).",
+          "audioFile": null
+        },
+        {
+          "english": "I want water",
+          "translation": "Akoto eoŋ akipi",
+          "pronunciation": "ah-koh-toh eh-ohng ah-kee-pee",
+          "context": "'akoto' = I want, 'akipi' = water.",
+          "audioFile": null
+        },
+        {
+          "english": "Please help me",
+          "translation": "Kiŋarakai eoŋ",
+          "pronunciation": "kee-ngah-rah-kah-ee eh-ohng",
+          "context": "Imperative of 'aiŋarakin' (to help) with 1st person contained object.",
+          "audioFile": null
+        },
+        {
+          "english": "What is this?",
+          "translation": "Inyo bo yen?",
+          "pronunciation": "een-yoh boh yen",
+          "context": "'inyo' = what, 'bo' = interrogative particle, 'yen' = this (neuter).",
+          "audioFile": null
+        },
+        {
+          "english": "Who is that?",
+          "translation": "Iŋai bo ŋol?",
+          "pronunciation": "ee-ngah-ee boh ngohl",
+          "context": "'iŋai' = who, 'ŋol' = that (masculine).",
+          "audioFile": null
+        },
+        {
+          "english": "How much is it? / How many?",
+          "translation": "Imwaas ai?",
+          "pronunciation": "eem-wah-ahs ah-ee",
+          "context": "From 'amwaus' (verb to be in numerical quantity) + 'ai?' (how many).",
+          "audioFile": null
+        },
+        {
+          "english": "I don't know",
+          "translation": "Mam ajeni",
+          "pronunciation": "mahm ah-jeh-nee",
+          "context": "'mam' = not, 'aijen' = to know (1st pers: ajeni).",
+          "audioFile": null
+        },
+        {
+          "english": "I know",
+          "translation": "Ajeni eoŋ",
+          "pronunciation": "ah-jeh-nee eh-ohng",
+          "context": "From 'aijen' (to know); 'eoŋ' = I.",
+          "audioFile": null
+        },
+        {
+          "english": "I understand / I hear",
+          "translation": "Apupi eoŋ",
+          "pronunciation": "ah-poo-pee eh-ohng",
+          "context": "From 'aipup' (to hear / understand).",
+          "audioFile": null
+        },
+        {
+          "english": "I don't understand",
+          "translation": "Mam apupi",
+          "pronunciation": "mahm ah-poo-pee",
+          "context": "Negative construction with 'mam'.",
+          "audioFile": null
+        },
+        {
+          "english": "Come here!",
+          "translation": "Kobu kane!",
+          "pronunciation": "koh-boo kah-neh",
+          "context": "Imperative singular of 'abunere' (to come); 'kane' = here. Plural: Kopotu kane!",
+          "audioFile": null
+        },
+        {
+          "english": "Go!",
+          "translation": "Kolot!",
+          "pronunciation": "koh-loht",
+          "context": "Imperative singular of 'alosit' (to go). Plural: Kolototo!",
+          "audioFile": null
+        },
+        {
+          "english": "Listen!",
+          "translation": "Kopup!",
+          "pronunciation": "koh-poop",
+          "context": "Imperative singular of 'aipup' (to hear/listen). Plural: Kopupoto!",
+          "audioFile": null
+        },
+        {
+          "english": "Speak!",
+          "translation": "Kiner!",
+          "pronunciation": "kee-nehr",
+          "context": "Imperative singular of 'einer' (to speak). Plural: Kineras!",
+          "audioFile": null
+        },
+        {
+          "english": "Quickly",
+          "translation": "Atipet",
+          "pronunciation": "ah-tee-peht",
+          "context": "Common adverb of speed and promptness.",
+          "audioFile": null
+        },
+        {
+          "english": "Slowly / Gently / Peaceful",
+          "translation": "Epatana",
+          "pronunciation": "eh-pah-tah-nah",
+          "context": "Quality verb used adverbially: gentle, peaceful, easy.",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "Kwana",
+          "pronunciation": "kwah-nah",
+          "context": "Adverb of time: now; emphatic: kwapekwana.",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Lolo",
+          "pronunciation": "loh-loh",
+          "context": "Adverb of time: today.",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Moi",
+          "pronunciation": "moh-ee",
+          "context": "Adverb of time: tomorrow; the day after tomorrow = 'moi kace'.",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Bian",
+          "pronunciation": "bee-ahn",
+          "context": "Adverb of time: yesterday.",
+          "audioFile": null
+        },
+        {
+          "english": "Good / Fine",
+          "translation": "Ejok",
+          "pronunciation": "eh-johk",
+          "context": "Quality verb: be good; plural: ejokak.",
+          "audioFile": null
+        },
+        {
+          "english": "Bad / Wicked",
+          "translation": "Erono",
+          "pronunciation": "eh-roh-noh",
+          "context": "Quality verb: be bad/spoiled; plural: eroko.",
+          "audioFile": null
+        },
+        {
+          "english": "Big / Large",
+          "translation": "Epol",
+          "pronunciation": "eh-pohl",
+          "context": "Quality verb: be big/great; plural: epolok.",
+          "audioFile": null
+        },
+        {
+          "english": "Small / Little",
+          "translation": "Edit",
+          "pronunciation": "eh-deet",
+          "context": "Quality verb: be small/young; plural: edisiak.",
+          "audioFile": null
+        },
+        {
+          "english": "Strong / Firm",
+          "translation": "Egogoŋ",
+          "pronunciation": "eh-goh-gohng",
+          "context": "Quality verb: be strong, firm, durable; plural: egogoŋ.",
+          "audioFile": null
+        },
+        {
+          "english": "Fierce / Severe",
+          "translation": "Ededeŋ",
+          "pronunciation": "eh-deh-dehng",
+          "context": "Quality verb: be fierce, sharp, harsh; plural: ededeŋ.",
+          "audioFile": null
+        },
+        {
+          "english": "New / Fresh",
+          "translation": "Itet",
+          "pronunciation": "ee-teht",
+          "context": "Quality verb: be new; plural: itetiak.",
+          "audioFile": null
+        },
+        {
+          "english": "Old / Aged",
+          "translation": "Emojoŋ",
+          "pronunciation": "eh-moh-johng",
+          "context": "Quality verb: be elderly/old; plural: emojoŋitos.",
+          "audioFile": null
+        },
+        {
+          "english": "Because",
+          "translation": "Naarai / Kanuka",
+          "pronunciation": "nah-ah-rah-ee / kah-noo-kah",
+          "context": "Conjunctions of cause and reasoning.",
+          "audioFile": null
+        },
+        {
+          "english": "All / Whole",
+          "translation": "Kere",
+          "pronunciation": "keh-reh",
+          "context": "Invariable adjective: all, whole, every; e.g. ituŋa kere (all people).",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Society",
+      "icon": "👥",
+      "entries": [
+        {
+          "english": "Person / Human being",
+          "translation": "Etuŋanan (pl. Ituŋa)",
+          "pronunciation": "eh-too-ngah-nahn",
+          "context": "Plural: ituŋa (people); generic plural: ituŋasinei (mankind).",
+          "audioFile": null
+        },
+        {
+          "english": "Man (male person)",
+          "translation": "Ekiliokit / Ekile (pl. Ikiliok)",
+          "pronunciation": "eh-kee-lee-oh-keet / eh-kee-leh",
+          "context": "Masculine gender prefix e-; plural: ikiliok (men).",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Aberu (pl. Aŋor)",
+          "pronunciation": "ah-beh-roo",
+          "context": "Feminine prefix a-; plural: aŋor (women), irregular plural root.",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Ikoku (pl. Idwe)",
+          "pronunciation": "ee-koh-koo",
+          "context": "Diminutive/neuter prefix i-; plural: idwe (children).",
+          "audioFile": null
+        },
+        {
+          "english": "Boy",
+          "translation": "Etelepat (pl. Itelepai)",
+          "pronunciation": "eh-teh-leh-paht",
+          "context": "Masculine noun; plural: itelepai (boys).",
+          "audioFile": null
+        },
+        {
+          "english": "Girl",
+          "translation": "Apese (pl. Apesur)",
+          "pronunciation": "ah-peh-seh",
+          "context": "Feminine noun; plural: apesur (girls). Diminutive: ipese (baby girl).",
+          "audioFile": null
+        },
+        {
+          "english": "Baby / Infant",
+          "translation": "Ipesen / Ikoku yenikidioko",
+          "pronunciation": "ee-peh-sehn",
+          "context": "Neuter diminutive form; plural: idwe luikidioko.",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Papa (pl. Lukapapa)",
+          "pronunciation": "pah-pah",
+          "context": "Kinship noun taking no prefix in singular; plural: lukapapa.",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Toto (pl. Nukatoto)",
+          "pronunciation": "toh-toh",
+          "context": "Kinship noun taking no prefix in singular; plural: nukatoto.",
+          "audioFile": null
+        },
+        {
+          "english": "Family / Household",
+          "translation": "Ekale (pl. Ikalia)",
+          "pronunciation": "eh-kah-leh",
+          "context": "Masculine noun; plural: ikalia (families, extended households).",
+          "audioFile": null
+        },
+        {
+          "english": "Brother / Sibling",
+          "translation": "Onace (pl. Imina)",
+          "pronunciation": "oh-nah-cheh",
+          "context": "Plural: imina (brothers, siblings).",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "Inace (pl. Anacenei)",
+          "pronunciation": "ee-nah-cheh",
+          "context": "Female sibling; feminine kinship term.",
+          "audioFile": null
+        },
+        {
+          "english": "Husband",
+          "translation": "Ekile (pl. Ikiliok)",
+          "pronunciation": "eh-kee-leh",
+          "context": "Also means male person; plural: ikiliok.",
+          "audioFile": null
+        },
+        {
+          "english": "Wife",
+          "translation": "Aberu (pl. Aŋor)",
+          "pronunciation": "ah-beh-roo",
+          "context": "Also means adult female; plural: aŋor.",
+          "audioFile": null
+        },
+        {
+          "english": "Elder / Old man",
+          "translation": "Ekasikout (pl. Ikasikou)",
+          "pronunciation": "eh-kah-see-koh-oot",
+          "context": "Respected male elder in Teso community.",
+          "audioFile": null
+        },
+        {
+          "english": "Elderly woman",
+          "translation": "Amukatat (pl. Amukatan)",
+          "pronunciation": "ah-moo-kah-taht",
+          "context": "Respected elder woman; plural: amukatan.",
+          "audioFile": null
+        },
+        {
+          "english": "Teso person",
+          "translation": "Etesot (pl. Iteso)",
+          "pronunciation": "eh-teh-soht",
+          "context": "A person of the Teso nation; feminine: Atesot; language: Ateso.",
+          "audioFile": null
+        },
+        {
+          "english": "Hunter",
+          "translation": "Ekamejan (pl. Ikamejak)",
+          "pronunciation": "eh-kah-meh-jahn",
+          "context": "Agent noun derived from 'amej' (to hunt); plural: ikamejak.",
+          "audioFile": null
+        },
+        {
+          "english": "Herdsman",
+          "translation": "Ekecokon (pl. Ikecokok)",
+          "pronunciation": "eh-keh-choh-kohn",
+          "context": "Agent noun derived from 'acok' (to herd livestock); plural: ikecokok.",
+          "audioFile": null
+        },
+        {
+          "english": "Soldier",
+          "translation": "Esirikalet (pl. Isirikalei)",
+          "pronunciation": "eh-see-ree-kah-leht",
+          "context": "Plural: isirikalei; borrowed term fully integrated into Ateso noun classes.",
+          "audioFile": null
+        },
+        {
+          "english": "Builder",
+          "translation": "Ekadukon (pl. Ikadukok)",
+          "pronunciation": "eh-kah-doo-kohn",
+          "context": "Agent noun derived from 'aiduk' (to build); plural: ikadukok.",
+          "audioFile": null
+        },
+        {
+          "english": "Teacher",
+          "translation": "Ekesisianakinan (pl. Ikesisianakinak)",
+          "pronunciation": "eh-keh-see-see-ah-nah-kee-nahn",
+          "context": "Agent noun derived from 'aisisianakin' (to teach).",
+          "audioFile": null
+        },
+        {
+          "english": "Labourer / Porter",
+          "translation": "Epakasit (pl. Ipakasin)",
+          "pronunciation": "eh-pah-kah-seet",
+          "context": "Plural: ipakasin; manual worker or porter.",
+          "audioFile": null
+        },
+        {
+          "english": "Liar",
+          "translation": "Ekasabat (pl. Ikasabak)",
+          "pronunciation": "eh-kah-sah-baht",
+          "context": "Habitual agent noun derived from 'aisab' (to tell lies).",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Livestock",
+      "icon": "🐾",
+      "entries": [
+        {
+          "english": "Cow",
+          "translation": "Akiteŋ (pl. Akituk / Akitiok)",
+          "pronunciation": "ah-kee-tehng",
+          "context": "Plural: akituk; female cow, the cornerstone of Teso economic and cultural life.",
+          "audioFile": null
+        },
+        {
+          "english": "Bull / Ox",
+          "translation": "Emoŋ (pl. Imoŋin)",
+          "pronunciation": "eh-mohng",
+          "context": "Plural: imoŋin; draft animal used in ox-ploughing and cultural ceremonies.",
+          "audioFile": null
+        },
+        {
+          "english": "Livestock / Cattle",
+          "translation": "Ibaren (sing. Ebarasit)",
+          "pronunciation": "ee-bah-rehn",
+          "context": "Collective noun for cattle, livestock herds, and familial wealth.",
+          "audioFile": null
+        },
+        {
+          "english": "Dog (male)",
+          "translation": "Ekiŋok (pl. Iŋokwo)",
+          "pronunciation": "eh-kee-ngohk",
+          "context": "Masculine noun; plural: iŋokwo.",
+          "audioFile": null
+        },
+        {
+          "english": "Bitch (female dog)",
+          "translation": "Akiŋok (pl. Aŋokwo)",
+          "pronunciation": "ah-kee-ngohk",
+          "context": "Feminine noun form; plural: aŋokwo.",
+          "audioFile": null
+        },
+        {
+          "english": "Puppy",
+          "translation": "Ikiŋok (pl. Iŋokwei)",
+          "pronunciation": "ee-kee-ngohk",
+          "context": "Diminutive neuter form for young dog.",
+          "audioFile": null
+        },
+        {
+          "english": "Hen / Domestic fowl",
+          "translation": "Akokor (pl. Akokorei)",
+          "pronunciation": "ah-koh-kohr",
+          "context": "Feminine noun; plural: akokorei (domestic fowls).",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken / Chick",
+          "translation": "Imiot (pl. Imioi)",
+          "pronunciation": "ee-mee-oht",
+          "context": "Plural: imioi; small chicken or chick.",
+          "audioFile": null
+        },
+        {
+          "english": "Pig",
+          "translation": "Epege (pl. Ipegei)",
+          "pronunciation": "eh-peh-geh",
+          "context": "Masculine noun; plural: ipegei.",
+          "audioFile": null
+        },
+        {
+          "english": "Rat / Mouse",
+          "translation": "Emir (pl. Imirio)",
+          "pronunciation": "eh-meer",
+          "context": "Masculine noun; plural: imirio.",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Etome (pl. Itomei)",
+          "pronunciation": "eh-toh-meh",
+          "context": "Masculine noun; plural: itomei.",
+          "audioFile": null
+        },
+        {
+          "english": "Mosquito",
+          "translation": "Esirut (pl. Isiruto)",
+          "pronunciation": "eh-see-root",
+          "context": "Masculine noun; plural: isiruto.",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Eŋatunyo (pl. Iŋatunyoi)",
+          "pronunciation": "eh-ngah-toon-yoh",
+          "context": "Masculine noun; plural: iŋatunyoi.",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Ekweny (pl. Ikwenyi)",
+          "pronunciation": "eh-kwehny",
+          "context": "Masculine noun; plural: ikwenyi.",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Akine (pl. Akyinei)",
+          "pronunciation": "ah-kee-neh",
+          "context": "Feminine noun; plural: akyinei.",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Amerekek (pl. Amerekekin)",
+          "pronunciation": "ah-meh-reh-kehk",
+          "context": "Feminine noun; plural: amerekekin.",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Sun / Sunlight",
+          "translation": "Akoloŋ",
+          "pronunciation": "ah-koh-lohng",
+          "context": "Feminine singular noun; sunlight, daytime sun.",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "Elap (pl. Ilapio)",
+          "pronunciation": "eh-lahp",
+          "context": "Masculine noun; plural: ilapio; moon or calendar month.",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Akipi",
+          "pronunciation": "ah-kee-pee",
+          "context": "Feminine plural noun; always used in the plural.",
+          "audioFile": null
+        },
+        {
+          "english": "Rain / Cloud",
+          "translation": "Edou (pl. Idouon)",
+          "pronunciation": "eh-doh-oo",
+          "context": "Masculine noun; plural: idouon; rain cloud, rainstorm.",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Land / World",
+          "translation": "Akwap (pl. Akwapin)",
+          "pronunciation": "ah-kwahp",
+          "context": "Feminine noun; plural: akwapin; 'akwapisinei' = the whole world / universe.",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "Amoru (pl. Amor)",
+          "pronunciation": "ah-moh-roo",
+          "context": "Feminine noun; plural: amor; rock, boulder, stone.",
+          "audioFile": null
+        },
+        {
+          "english": "Pebble",
+          "translation": "Imoru (pl. Imor)",
+          "pronunciation": "ee-moh-roo",
+          "context": "Diminutive neuter form: small stone or gravel.",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Pole / Wood",
+          "translation": "Akitoi (pl. Akitoi / Akito)",
+          "pronunciation": "ah-kee-toh-ee",
+          "context": "Feminine noun; tree, timber, wooden building pole. Also masculine 'ekitoi'.",
+          "audioFile": null
+        },
+        {
+          "english": "Mvule tree",
+          "translation": "Eloa (pl. Iloai)",
+          "pronunciation": "eh-loh-ah",
+          "context": "Valued indigenous hardwood timber tree (Chlorophora excelsa).",
+          "audioFile": null
+        },
+        {
+          "english": "Grass (blade)",
+          "translation": "Anyait (pl. Anya)",
+          "pronunciation": "ahn-yah-eet",
+          "context": "Singular: anyait (blade); plural: anya (grass, pasture).",
+          "audioFile": null
+        },
+        {
+          "english": "Weeds",
+          "translation": "Eduan",
+          "pronunciation": "eh-dwahn",
+          "context": "Masculine collective singular; agricultural weeds.",
+          "audioFile": null
+        },
+        {
+          "english": "Swamp / Marsh",
+          "translation": "Esamai (pl. Isama)",
+          "pronunciation": "eh-sah-mah-ee",
+          "context": "Masculine noun; plural: isama; marsh, river swamp.",
+          "audioFile": null
+        },
+        {
+          "english": "Spring / Well",
+          "translation": "Atan (pl. Atanin)",
+          "pronunciation": "ah-tahn",
+          "context": "Feminine noun; plural: atanin; natural water spring or dug well.",
+          "audioFile": null
+        },
+        {
+          "english": "Hole / Pit",
+          "translation": "Aipany (pl. Aipanya)",
+          "pronunciation": "ah-ee-pahn-y",
+          "context": "Feminine noun; plural: aipanya; hole excavated in ground.",
+          "audioFile": null
+        },
+        {
+          "english": "Ashes",
+          "translation": "Ekuron",
+          "pronunciation": "eh-koo-rohn",
+          "context": "Masculine singular noun; fireplace ashes.",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Aparit / Aparan (pl. Aparasia)",
+          "pronunciation": "ah-pah-reet / ah-pah-rahn",
+          "context": "Feminine noun; plural: aparasia; 24-hour day.",
+          "audioFile": null
+        },
+        {
+          "english": "Daytime",
+          "translation": "Paran",
+          "pronunciation": "pah-rahn",
+          "context": "Adverbial noun: by day, during daylight hours.",
+          "audioFile": null
+        },
+        {
+          "english": "Night / Nighttime",
+          "translation": "Kware",
+          "pronunciation": "kwah-reh",
+          "context": "Adverbial noun: by night, darkness.",
+          "audioFile": null
+        },
+        {
+          "english": "Morning / Early",
+          "translation": "Tupuruc",
+          "pronunciation": "too-poo-rooch",
+          "context": "Adverb of time: in the morning, early at dawn.",
+          "audioFile": null
+        },
+        {
+          "english": "God / The Creator",
+          "translation": "Lokasuban / Edeke / Akuj",
+          "pronunciation": "loh-kah-soo-bahn / eh-deh-keh / ah-kooj",
+          "context": "'Lokasuban' = The Creator (from aisub - create); 'Edeke' / 'Akuj' = God / Supreme Divine Being.",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body & Health",
+      "icon": "👤",
+      "entries": [
+        {
+          "english": "Hand / Arm",
+          "translation": "Akan (pl. Akanin)",
+          "pronunciation": "ah-kahn",
+          "context": "Feminine noun; plural: akanin (hands/arms). Root of numeral 5.",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Akoŋu (pl. Akoŋ)",
+          "pronunciation": "ah-koh-ngoo",
+          "context": "Feminine noun; plural: akoŋ; 'akonyekec' = their eyes.",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Aokot",
+          "pronunciation": "ah-oh-koht",
+          "context": "Feminine plural noun; physical lifeblood.",
+          "audioFile": null
+        },
+        {
+          "english": "Brain / Intellect",
+          "translation": "Adam",
+          "pronunciation": "ah-dahm",
+          "context": "Feminine singular noun; anatomical brain, intelligence.",
+          "audioFile": null
+        },
+        {
+          "english": "Skin / Animal hide",
+          "translation": "Emukule (pl. Imukulen)",
+          "pronunciation": "eh-moo-koo-leh",
+          "context": "Masculine noun; plural: imukulen; animal hide or tanned leather.",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Akoit (pl. Akoi)",
+          "pronunciation": "ah-koh-eet",
+          "context": "Feminine noun; plural: akoi; skeletal bone.",
+          "audioFile": null
+        },
+        {
+          "english": "Body",
+          "translation": "Akwan (pl. Akwanis)",
+          "pronunciation": "ah-kwahn",
+          "context": "Feminine noun; plural: akwanis; physical human or animal body.",
+          "audioFile": null
+        },
+        {
+          "english": "Health / Wholeness",
+          "translation": "Aŋale / Aŋaleu",
+          "pronunciation": "ah-ngah-leh",
+          "context": "Abstract noun of quality from 'aŋale' (to be healthy); 'aŋaleun' = recover.",
+          "audioFile": null
+        },
+        {
+          "english": "Illness / Disease",
+          "translation": "Adeka (pl. Adekasinei)",
+          "pronunciation": "ah-deh-kah",
+          "context": "Abstract noun from 'adeka' (to be sick); ailment or disease.",
+          "audioFile": null
+        },
+        {
+          "english": "Medicine / Charm",
+          "translation": "Ekia (pl. Ikee)",
+          "pronunciation": "eh-kee-ah",
+          "context": "Masculine noun; plural: ikee; healing medicine, herbal remedy.",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger",
+          "translation": "Eteŋe",
+          "pronunciation": "eh-teh-ngeh",
+          "context": "Masculine singular noun; physical hunger or famine.",
+          "audioFile": null
+        },
+        {
+          "english": "Thirst",
+          "translation": "Akure",
+          "pronunciation": "ah-koo-reh",
+          "context": "Feminine singular noun; thirst for water.",
+          "audioFile": null
+        },
+        {
+          "english": "Shame / Embarrassment",
+          "translation": "Ileic",
+          "pronunciation": "ee-leh-eech",
+          "context": "Neuter plural noun; modesty, shame, embarrassment.",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "Ajo",
+          "pronunciation": "ah-joh",
+          "context": "Feminine plural noun; sleep, slumber.",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Food (edibles)",
+          "translation": "Akimuj / Inyamat",
+          "pronunciation": "ah-kee-mooj / ee-nyah-maht",
+          "context": "'Akimuj' = food (verbal noun); 'Inyamat' = plural only, food / victuals from 'ainyam' (to eat).",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Akiriŋ",
+          "pronunciation": "ah-kee-reeng",
+          "context": "Feminine singular noun; meat, flesh.",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Akile",
+          "pronunciation": "ah-kee-leh",
+          "context": "Feminine plural noun; cow's milk.",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Beer",
+          "translation": "Ajon",
+          "pronunciation": "ah-john",
+          "context": "Feminine plural noun; traditional millet beer, drank socially through long reed tubes.",
+          "audioFile": null
+        },
+        {
+          "english": "Finger Millet",
+          "translation": "Akimait (pl. Akima)",
+          "pronunciation": "ah-kee-mah-eet",
+          "context": "Singular: akimait (stalk); plural collective: akima (finger millet grain, staple food).",
+          "audioFile": null
+        },
+        {
+          "english": "Groundnuts / Peanuts",
+          "translation": "Emaido",
+          "pronunciation": "eh-mah-ee-doh",
+          "context": "Masculine collective noun; groundnuts.",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "Amunyu",
+          "pronunciation": "ah-moo-nyoo",
+          "context": "Feminine noun; table salt or cattle salt-lick.",
+          "audioFile": null
+        },
+        {
+          "english": "Fat / Oil / Grease",
+          "translation": "Akinyet",
+          "pronunciation": "ah-kee-nyeht",
+          "context": "Feminine singular noun; butter fat, animal grease, cooking oil, paraffin.",
+          "audioFile": null
+        },
+        {
+          "english": "Tea",
+          "translation": "Ecai",
+          "pronunciation": "eh-chah-ee",
+          "context": "Masculine noun; borrowed beverage.",
+          "audioFile": null
+        },
+        {
+          "english": "Coffee",
+          "translation": "Ekawa",
+          "pronunciation": "eh-kah-wah",
+          "context": "Masculine noun; borrowed beverage.",
+          "audioFile": null
+        },
+        {
+          "english": "Lemon / Citrus",
+          "translation": "Enimu (pl. Inimun)",
+          "pronunciation": "eh-nee-moo",
+          "context": "Masculine noun; lemon or citrus fruit.",
+          "audioFile": null
+        },
+        {
+          "english": "Drinking water",
+          "translation": "Akipi nuimatat",
+          "pronunciation": "ah-kee-pee noo-ee-mah-taht",
+          "context": "Potable water; literally 'water to be drunk', from 'aimat' (to drink).",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Home & Daily Life",
+      "icon": "🏠",
+      "entries": [
+        {
+          "english": "House / Building",
+          "translation": "Etogo (pl. Itogoi)",
+          "pronunciation": "eh-toh-goh",
+          "context": "Masculine noun; plural: itogoi; residential dwelling house.",
+          "audioFile": null
+        },
+        {
+          "english": "Home / Homestead / Village",
+          "translation": "Ore / Ere (pl. Iria)",
+          "pronunciation": "oh-reh / eh-reh",
+          "context": "'ore' = at home (locative adverb); 'ere' = homestead or village compound.",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle kraal / Enclosure",
+          "translation": "Aujo (pl. Aujoi)",
+          "pronunciation": "ah-oo-joh",
+          "context": "Feminine noun; plural: aujoi; secure thorn corral for livestock.",
+          "audioFile": null
+        },
+        {
+          "english": "Garden plot / Farm",
+          "translation": "Emanikor (pl. Imanikoria)",
+          "pronunciation": "eh-mah-nee-kohr",
+          "context": "Masculine noun; plural: imanikoria; agricultural garden plot.",
+          "audioFile": null
+        },
+        {
+          "english": "Bed",
+          "translation": "Ekitada (pl. Ikitadan)",
+          "pronunciation": "eh-kee-tah-dah",
+          "context": "Masculine noun; plural: ikitadan; sleeping bed.",
+          "audioFile": null
+        },
+        {
+          "english": "Table",
+          "translation": "Emesa (pl. Imesan)",
+          "pronunciation": "eh-meh-sah",
+          "context": "Masculine noun; plural: imesan; wooden furniture table (borrowed).",
+          "audioFile": null
+        },
+        {
+          "english": "Door / Gateway",
+          "translation": "Ekek (pl. Ikekia)",
+          "pronunciation": "eh-kehk",
+          "context": "Masculine noun; plural: ikekia; doorway, entryway, compound gate.",
+          "audioFile": null
+        },
+        {
+          "english": "Knife",
+          "translation": "Ekileŋ (pl. Ikileŋa)",
+          "pronunciation": "eh-kee-lehng",
+          "context": "Masculine noun; plural: ikileŋa; cutting knife.",
+          "audioFile": null
+        },
+        {
+          "english": "Spoon",
+          "translation": "Ekijiko (pl. Ikijikoi)",
+          "pronunciation": "eh-kee-jee-koh",
+          "context": "Masculine noun; eating spoon utensil.",
+          "audioFile": null
+        },
+        {
+          "english": "Plate / Dish",
+          "translation": "Asanit (pl. Asanin)",
+          "pronunciation": "ah-sah-neet",
+          "context": "Feminine noun; plural: asanin; eating plate or dish.",
+          "audioFile": null
+        },
+        {
+          "english": "Bottle",
+          "translation": "Ecupa (pl. Icupai)",
+          "pronunciation": "eh-choo-pah",
+          "context": "Masculine noun; plural: icupai; glass or ceramic bottle.",
+          "audioFile": null
+        },
+        {
+          "english": "Shoe / Sandal",
+          "translation": "Amukat (pl. Amuk)",
+          "pronunciation": "ah-moo-kaht",
+          "context": "Feminine noun; plural: amuk; traditional hide sandal or modern shoe.",
+          "audioFile": null
+        },
+        {
+          "english": "Clothing / Cloth",
+          "translation": "Egoye (pl. Igoyen)",
+          "pronunciation": "eh-goh-yeh",
+          "context": "Masculine noun; plural: igoyen; cloth, attire, garment.",
+          "audioFile": null
+        },
+        {
+          "english": "Soap",
+          "translation": "Asabuni",
+          "pronunciation": "ah-sah-boo-nee",
+          "context": "Feminine singular noun; laundry or bathing soap.",
+          "audioFile": null
+        },
+        {
+          "english": "Key",
+          "translation": "Elacet (pl. Ilaceta)",
+          "pronunciation": "eh-lah-cheht",
+          "context": "Masculine instrument noun from 'ailac' (to loosen/untie); plural: ilaceta.",
+          "audioFile": null
+        },
+        {
+          "english": "Lid / Cover",
+          "translation": "Arapetait (pl. Arapeta)",
+          "pronunciation": "ah-rah-peh-tah-eet",
+          "context": "Feminine instrument noun; plural: arapeta; covering lid for basket or pot.",
+          "audioFile": null
+        },
+        {
+          "english": "Walking stick / Cane",
+          "translation": "Ebela (pl. Ibelai)",
+          "pronunciation": "eh-beh-lah",
+          "context": "Masculine noun; plural: ibelai; herder's cane, wooden staff.",
+          "audioFile": null
+        },
+        {
+          "english": "Book",
+          "translation": "Ekitabo (pl. Ikitabon)",
+          "pronunciation": "eh-kee-tah-boh",
+          "context": "Masculine noun; plural: ikitabon; reading book.",
+          "audioFile": null
+        },
+        {
+          "english": "Pen / Pencil",
+          "translation": "Ekalamu (pl. Ikalamun)",
+          "pronunciation": "eh-kah-lah-moo",
+          "context": "Masculine noun; plural: ikalamun; writing implement.",
+          "audioFile": null
+        },
+        {
+          "english": "Letter / Epistle",
+          "translation": "Abalua / Ebalua (pl. Abaluan)",
+          "pronunciation": "ah-bah-lwah",
+          "context": "Feminine or masculine noun: written letter, mail.",
+          "audioFile": null
+        },
+        {
+          "english": "Money / Shilling",
+          "translation": "Esirigi (pl. Isirigin)",
+          "pronunciation": "eh-see-ree-gee",
+          "context": "Masculine noun; plural: isirigin; coin, shilling currency.",
+          "audioFile": null
+        },
+        {
+          "english": "Wage / Salary",
+          "translation": "Eropit (pl. Iropito)",
+          "pronunciation": "eh-roh-peet",
+          "context": "Masculine noun; plural: iropito; pay or wage for labor.",
+          "audioFile": null
+        },
+        {
+          "english": "Work / Labor / Task",
+          "translation": "Aswam (pl. Aswamisinei)",
+          "pronunciation": "ah-swahm",
+          "context": "Feminine noun; plural: aswamisinei; daily work, duties.",
+          "audioFile": null
+        },
+        {
+          "english": "School",
+          "translation": "Esomero (pl. Isomeroi)",
+          "pronunciation": "eh-soh-meh-roh",
+          "context": "Masculine noun; plural: isomeroi; schoolhouse.",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Common Verbs",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To eat",
+          "translation": "Ainyam / Akinyam",
+          "pronunciation": "ah-ee-nyahm",
+          "context": "ko-class verb; 1st person present: anyami eoŋ; imperative: konyam!",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Aimat",
+          "pronunciation": "ah-ee-maht",
+          "context": "ko-class verb; root final t changes to s before i: amasi eoŋ (I drink); imperative: komat!",
+          "audioFile": null
+        },
+        {
+          "english": "To go",
+          "translation": "Alosit",
+          "pronunciation": "ah-loh-seet",
+          "context": "ko-class irregular verb; 1st pers: alosi; imperative singular: kolot!, plural: kolototo!",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Abunere",
+          "pronunciation": "ah-boo-neh-reh",
+          "context": "ko-class irregular verb; 1st pers: abuni; imperative singular: kobu!, plural: kopotu!",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "Aanyun",
+          "pronunciation": "ah-ahn-yoon",
+          "context": "ko-class verb; 1st person: aanyuni eoŋ; imperative: koanyu!",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / listen",
+          "translation": "Aipup",
+          "pronunciation": "ah-ee-poop",
+          "context": "ko-class verb; 1st person: apupi eoŋ; imperative: kopup!",
+          "audioFile": null
+        },
+        {
+          "english": "To pray / ask / beg",
+          "translation": "Ailip",
+          "pronunciation": "ah-ee-leep",
+          "context": "ki-class verb; 1st person: elipi eoŋ; imperative: kilip!",
+          "audioFile": null
+        },
+        {
+          "english": "To speak",
+          "translation": "Einer",
+          "pronunciation": "eh-ee-nehr",
+          "context": "ki-class continuous verb; 1st person: enera eoŋ; imperative: kiner!",
+          "audioFile": null
+        },
+        {
+          "english": "To build",
+          "translation": "Aiduk",
+          "pronunciation": "ah-ee-dook",
+          "context": "ko-class model verb; 1st person: aduki eoŋ; imperative: koduk!",
+          "audioFile": null
+        },
+        {
+          "english": "To work",
+          "translation": "Aswam / Aiswama",
+          "pronunciation": "ah-swahm",
+          "context": "ki-class irregular verb; 1st person: eswamai eoŋ; imperative: kiswama!",
+          "audioFile": null
+        },
+        {
+          "english": "To help",
+          "translation": "Aiŋarakin",
+          "pronunciation": "ah-ee-ngah-rah-keen",
+          "context": "ki-class action-for verb; 1st pers: eŋarakini; imperative: kiŋarakik!",
+          "audioFile": null
+        },
+        {
+          "english": "To want / desire",
+          "translation": "Akot",
+          "pronunciation": "ah-koht",
+          "context": "ko-class continuous verb; 1st person: akoto eoŋ; 3rd person: ekoto.",
+          "audioFile": null
+        },
+        {
+          "english": "To love",
+          "translation": "Amin",
+          "pronunciation": "ah-meen",
+          "context": "ko-class continuous verb; 1st person: amina eoŋ; imperative: komina!",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / farm",
+          "translation": "Akor",
+          "pronunciation": "ah-kohr",
+          "context": "ko-class irregular verb; 1st person: akoriei eoŋ; imperative: kokor!",
+          "audioFile": null
+        },
+        {
+          "english": "To buy",
+          "translation": "Agwel",
+          "pronunciation": "ah-gwehl",
+          "context": "ko-class verb; 1st person: agweli eoŋ; imperative: kogwel!",
+          "audioFile": null
+        },
+        {
+          "english": "To sell",
+          "translation": "Agwelar",
+          "pronunciation": "ah-gweh-lahr",
+          "context": "ko-class motion-away verb from agwel; imperative: kogwela!",
+          "audioFile": null
+        },
+        {
+          "english": "To bring",
+          "translation": "Ayaun",
+          "pronunciation": "ah-yah-oon",
+          "context": "ko-class motion-towards verb; imperative: koyau!",
+          "audioFile": null
+        },
+        {
+          "english": "To carry",
+          "translation": "Aibwok",
+          "pronunciation": "ah-ee-bwohk",
+          "context": "ki-class verb; 1st person: ebwoki eoŋ; imperative: kibwok!",
+          "audioFile": null
+        },
+        {
+          "english": "To wash (clothes)",
+          "translation": "Ailot",
+          "pronunciation": "ah-ee-loht",
+          "context": "ki-class verb; 1st person: eloti eoŋ; imperative: kilot!",
+          "audioFile": null
+        },
+        {
+          "english": "To bathe (oneself)",
+          "translation": "Ailoŋ",
+          "pronunciation": "ah-ee-lohng",
+          "context": "ki-class reflexive verb; 1st person: eloŋi; imperative: kiloŋ!",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "Aijen",
+          "pronunciation": "ah-ee-jehn",
+          "context": "ko-class verb; 1st person: ajeni eoŋ; negative: mam ajeni.",
+          "audioFile": null
+        },
+        {
+          "english": "To write",
+          "translation": "Aiwadik",
+          "pronunciation": "ah-ee-wah-deek",
+          "context": "ki-class verb; 1st person: ewadikai eoŋ; imperative: kiwadik!",
+          "audioFile": null
+        },
+        {
+          "english": "To read / study",
+          "translation": "Aisiom",
+          "pronunciation": "ah-ee-see-ohm",
+          "context": "ko-class verb; 1st person: asiomi eoŋ; imperative: kosiom!",
+          "audioFile": null
+        },
+        {
+          "english": "To learn",
+          "translation": "Aisisia",
+          "pronunciation": "ah-ee-see-see-ah",
+          "context": "ki-class verb; 1st person: esisiai eoŋ; imperative: kisisia!",
+          "audioFile": null
+        },
+        {
+          "english": "To teach",
+          "translation": "Aisisianakin",
+          "pronunciation": "ah-ee-see-see-ah-nah-keen",
+          "context": "ki-class causative action-for verb; imperative: kisisianakik!",
+          "audioFile": null
+        },
+        {
+          "english": "To be able / can",
+          "translation": "Apedor",
+          "pronunciation": "ah-peh-dohr",
+          "context": "ko-class verb of ability; 1st pers: apedori; 3rd pers: epedori.",
+          "audioFile": null
+        },
+        {
+          "english": "To kill",
+          "translation": "Aiar",
+          "pronunciation": "ah-ee-ahr",
+          "context": "ko-class verb; 1st person: aari; imperative: koar!",
+          "audioFile": null
+        },
+        {
+          "english": "To beat / hit",
+          "translation": "Ainom",
+          "pronunciation": "ah-ee-nohm",
+          "context": "ki-class verb; 1st person: enomi eoŋ; imperative: kinom!",
+          "audioFile": null
+        },
+        {
+          "english": "To ask / inquire",
+          "translation": "Aiŋit",
+          "pronunciation": "ah-ee-ngeet",
+          "context": "ki-class verb; 1st person: eŋiti; imperative: kiŋit!",
+          "audioFile": null
+        },
+        {
+          "english": "To call",
+          "translation": "Anyaraun",
+          "pronunciation": "ahn-yah-rah-oon",
+          "context": "ko-class motion-towards verb; imperative: konyarau!",
+          "audioFile": null
+        },
+        {
+          "english": "To tell / inform",
+          "translation": "Alimokin",
+          "pronunciation": "ah-lee-moh-keen",
+          "context": "ko-class action-for verb; imperative: kolimok!",
+          "audioFile": null
+        },
+        {
+          "english": "To sit down / stay",
+          "translation": "Aiboikin",
+          "pronunciation": "ah-ee-boh-ee-keen",
+          "context": "ki-class reflexive verb; imperative: kiboikin!",
+          "audioFile": null
+        },
+        {
+          "english": "To dig",
+          "translation": "Aibok",
+          "pronunciation": "ah-ee-bohk",
+          "context": "ko-class verb; 1st person: aboki eoŋ; imperative: kobok!",
+          "audioFile": null
+        },
+        {
+          "english": "To cut",
+          "translation": "Aitub",
+          "pronunciation": "ah-ee-toob",
+          "context": "ko-class verb; 1st person: atubi eoŋ; imperative: kotub!",
+          "audioFile": null
+        },
+        {
+          "english": "To cry / weep",
+          "translation": "Aimony",
+          "pronunciation": "ah-ee-mohn-y",
+          "context": "ko-class verb; 1st person: amonyi eoŋ; imperative: komony!",
+          "audioFile": null
+        },
+        {
+          "english": "To finish / end",
+          "translation": "Adaun",
+          "pronunciation": "ah-dah-oon",
+          "context": "ko-class verb; completed aspect: adau eoŋ (I finished).",
+          "audioFile": null
+        },
+        {
+          "english": "To pour",
+          "translation": "Aibuk",
+          "pronunciation": "ah-ee-book",
+          "context": "ko-class verb; 'abukor' = pour away.",
+          "audioFile": null
+        },
+        {
+          "english": "To throw",
+          "translation": "Aicak",
+          "pronunciation": "ah-ee-chahk",
+          "context": "ko-class verb; 'acakun' = throw towards, 'acakakin' = throw down.",
+          "audioFile": null
+        },
+        {
+          "english": "To enter / come in",
+          "translation": "Alomun",
+          "pronunciation": "ah-loh-moon",
+          "context": "ko-class motion-towards verb; imperative: kolomun! / toloma!",
+          "audioFile": null
+        },
+        {
+          "english": "To exit / go out",
+          "translation": "Alomar",
+          "pronunciation": "ah-loh-mahr",
+          "context": "ko-class motion-away verb; imperative: koloma!",
+          "audioFile": null
+        },
+        {
+          "english": "To look after / guard",
+          "translation": "Aidar",
+          "pronunciation": "ah-ee-dahr",
+          "context": "ki-class verb; 1st person: edari; imperative: kidar!",
+          "audioFile": null
+        },
+        {
+          "english": "To try / attempt",
+          "translation": "Atamakin",
+          "pronunciation": "ah-tah-mah-keen",
+          "context": "ko-class action-for verb; imperative: kotamak!",
+          "audioFile": null
+        },
+        {
+          "english": "To stop / leave alone",
+          "translation": "Ainyekin",
+          "pronunciation": "ah-ee-nyeh-keen",
+          "context": "ki-class verb used in prohibition; imperative: kinyek!",
+          "audioFile": null
+        },
+        {
+          "english": "To herd (cattle)",
+          "translation": "Acok",
+          "pronunciation": "ah-chohk",
+          "context": "ko-class irregular verb; 1st person: acokie; imperative: kocok!",
+          "audioFile": null
+        },
+        {
+          "english": "To give birth / bring forth",
+          "translation": "Aur",
+          "pronunciation": "ah-oor",
+          "context": "ko-class irregular verb; 1st person: aurie; imperative: kour!",
+          "audioFile": null
+        },
+        {
+          "english": "To think over / ponder",
+          "translation": "Aomoom",
+          "pronunciation": "ah-oh-moh-ohm",
+          "context": "ko-class verb; 1st person: aomoomoi eoŋ.",
+          "audioFile": null
+        },
+        {
+          "english": "To thatch (house)",
+          "translation": "Aiswap",
+          "pronunciation": "ah-ee-swahp",
+          "context": "ki-class verb; imperative: kiswap!",
+          "audioFile": null
+        },
+        {
+          "english": "To rain",
+          "translation": "Aitep",
+          "pronunciation": "ah-ee-tehp",
+          "context": "ko-class verb; 3rd person: edou etepi (it is raining).",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2756 @@
+{
+  "languageId": "maasai",
+  "languageName": "Maasai (Maa)",
+  "family": "nilotic",
+  "nativeName": "ɔl Maa",
+  "script": "Latin",
+  "speakerCount": 1200000,
+  "counties": [
+    "Narok",
+    "Kajiado",
+    "Samburu"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.1.0",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Maasai (Maa) is a Plains Nilotic language spoken by the pastoralist Maasai people of Kenya and Tanzania. The Samburu dialect (Samburu County) is closely related. Enriched with authentic entries from \"Maasai Dictionary\" by Charles Richmond (c.1940, Humboldt State University Press, 2016), verified line-by-line for singular/plural morphology, grammatical parts of speech, and cultural authenticity.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello (to a man)",
+          "translation": "Sopa, Supai",
+          "pronunciation": "soh-pah, soo-pah-ee",
+          "context": "Traditional greeting to a man. He replies 'Epa'",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (to a woman)",
+          "translation": "Takwenya (Yeyo takwenya)",
+          "pronunciation": "tah-kwehn-yah",
+          "context": "Traditional greeting to a woman. She replies 'Iko'",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (to an elder)",
+          "translation": "Paapa",
+          "pronunciation": "pah-pah",
+          "context": "Respectful greeting to an elder man. Elder replies 'Epa'",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (to children / young people)",
+          "translation": "Takwenya (pl. Entakwenya)",
+          "pronunciation": "tah-kwehn-yah / ehn-tah-kwehn-yah",
+          "context": "Greeting to young people. They reply 'Iko'",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Keishtai?",
+          "pronunciation": "kay-ee-shtah-ee",
+          "context": "General inquiry: How are things with you?",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine / It is good",
+          "translation": "Sidai / Supat",
+          "pronunciation": "see-dah-ee / soo-paht",
+          "context": "Common response: All is well / good",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Ashe",
+          "pronunciation": "ah-sheh",
+          "context": "Expression of appreciation",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Ashe oleng",
+          "pronunciation": "ah-sheh oh-lehng",
+          "context": "'Oleng' means much / very",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye / Farewell",
+          "translation": "Aiya sere / Sere",
+          "pronunciation": "eye-yah seh-reh",
+          "context": "Peaceful parting farewell",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Karibu",
+          "pronunciation": "kah-ree-boo",
+          "context": "Welcome (borrowed from Swahili; traditional Maa: wou / wotu = come)",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Eserian / Serian",
+          "pronunciation": "eh-seh-ree-ahn",
+          "context": "Blessing of peacefulness and safety",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Nabo / Obo",
+          "pronunciation": "nah-boh / oh-boh",
+          "context": "Feminine: nabo; Masculine: obo",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Are / Aare",
+          "pronunciation": "ah-reh / ah-ah-reh",
+          "context": "Feminine: are; Masculine: aare",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Uni / Okuni",
+          "pronunciation": "oo-nee / oh-koo-nee",
+          "context": "Feminine: uni; Masculine: okuni",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Onguan / Ungwan",
+          "pronunciation": "ohn-goo-ahn / oong-wahn",
+          "context": "Base numeral four",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Imiet",
+          "pronunciation": "ee-mee-eht",
+          "context": "Base numeral five",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Ile",
+          "pronunciation": "ee-leh",
+          "context": "Base numeral six",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Naapishana / Obishana",
+          "pronunciation": "nah-pee-shah-nah / oh-bee-shah-nah",
+          "context": "Feminine: naapishana; Masculine: obishana",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Isiet",
+          "pronunciation": "ee-see-eht",
+          "context": "Base numeral eight",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Naudo / Oudo",
+          "pronunciation": "now-doh / oh-oo-doh",
+          "context": "Feminine: naudo; Masculine: oudo",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Tomon",
+          "pronunciation": "toh-mohn",
+          "context": "Decade base ten",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven",
+          "translation": "Tomon o obo",
+          "pronunciation": "toh-mohn oh oh-boh",
+          "context": "Ten and one",
+          "audioFile": null
+        },
+        {
+          "english": "Twelve",
+          "translation": "Tomon o are",
+          "pronunciation": "toh-mohn oh ah-reh",
+          "context": "Ten and two",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Tigitam",
+          "pronunciation": "tee-gee-tahm",
+          "context": "Cardinal twenty",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Tomoni uni / Osom",
+          "pronunciation": "toh-moh-nee oo-nee",
+          "context": "Three tens",
+          "audioFile": null
+        },
+        {
+          "english": "Forty",
+          "translation": "Artam",
+          "pronunciation": "ahr-tahm",
+          "context": "Cardinal forty",
+          "audioFile": null
+        },
+        {
+          "english": "Fifty",
+          "translation": "Onom",
+          "pronunciation": "oh-nohm",
+          "context": "Cardinal fifty",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "Iip",
+          "pronunciation": "ee-eep",
+          "context": "Cardinal one hundred",
+          "audioFile": null
+        },
+        {
+          "english": "Thousand",
+          "translation": "Iip tomon / Alfa",
+          "pronunciation": "ee-eep toh-mohn",
+          "context": "Ten hundreds",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "Yes",
+          "translation": "Ee",
+          "pronunciation": "eh-eh",
+          "context": "Affirmative agreement",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Mme",
+          "pronunciation": "m-meh",
+          "context": "Direct negation",
+          "audioFile": null
+        },
+        {
+          "english": "Please",
+          "translation": "Amoni",
+          "pronunciation": "ah-moh-nee",
+          "context": "Polite request; from verb a-omon (to pray / request)",
+          "audioFile": null
+        },
+        {
+          "english": "Excuse me / Pardon me",
+          "translation": "Palaki",
+          "pronunciation": "pah-lah-kee",
+          "context": "Asking pardon or forbearance",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you going?",
+          "translation": "Kaji ilo?",
+          "pronunciation": "kah-jee ee-loh",
+          "context": "Common travel inquiry",
+          "audioFile": null
+        },
+        {
+          "english": "Come here",
+          "translation": "Wou ene",
+          "pronunciation": "woh-oo eh-neh",
+          "context": "Directional command: come here",
+          "audioFile": null
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Kanyi arna ino?",
+          "pronunciation": "kahn-yee ahr-nah ee-noh",
+          "context": "Inquiring about personal identity",
+          "audioFile": null
+        },
+        {
+          "english": "My name is...",
+          "translation": "Eng-arna ai naa...",
+          "pronunciation": "ehng-ahr-nah eye nah",
+          "context": "Introducing oneself",
+          "audioFile": null
+        },
+        {
+          "english": "How much is it?",
+          "translation": "Kaja nainosie?",
+          "pronunciation": "kah-jah nah-ee-noh-see-eh",
+          "context": "Asking price or value",
+          "audioFile": null
+        },
+        {
+          "english": "I want / I desire",
+          "translation": "Aiyou",
+          "pronunciation": "eye-yoh-oo",
+          "context": "Expressing need or intention",
+          "audioFile": null
+        },
+        {
+          "english": "I don't know",
+          "translation": "Maniyolo",
+          "pronunciation": "mah-nee-yoh-loh",
+          "context": "Expressing lack of knowledge",
+          "audioFile": null
+        },
+        {
+          "english": "Wait a moment",
+          "translation": "Anyu engiti kata",
+          "pronunciation": "ahn-yoo ehn-gee-tee kah-tah",
+          "context": "Requesting a brief pause",
+          "audioFile": null
+        },
+        {
+          "english": "Let's go",
+          "translation": "Matwo",
+          "pronunciation": "mah-twoh",
+          "context": "Cohortative: let us move / depart",
+          "audioFile": null
+        },
+        {
+          "english": "It is good / beautiful",
+          "translation": "E-sidai",
+          "pronunciation": "eh-see-dah-ee",
+          "context": "Affirmation of goodness or beauty",
+          "audioFile": null
+        },
+        {
+          "english": "It is bad / evil",
+          "translation": "E-torono",
+          "pronunciation": "eh-toh-roh-noh",
+          "context": "Describing poor quality or misfortune",
+          "audioFile": null
+        },
+        {
+          "english": "Go in peace",
+          "translation": "Shomo te serian",
+          "pronunciation": "shoh-moh teh seh-ree-ahn",
+          "context": "Parting blessing of safe travels",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Wildlife",
+      "icon": "🦁",
+      "entries": [
+        {
+          "english": "Animal",
+          "translation": "Engwes",
+          "pronunciation": "ehng-wehs",
+          "context": "Plural: ingwesi / ingwesin. Wild animal or game (also ol-changito)",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Ol-sowan",
+          "pronunciation": "ohl-soh-wahn",
+          "context": "Plural: il-sowani. Cape buffalo; also ol-aro (pl. il-aroi)",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "Ol-oingoni",
+          "pronunciation": "ohl-oh-een-goh-nee",
+          "context": "Plural: il-oingok. Adult breeding bull",
+          "audioFile": null
+        },
+        {
+          "english": "Young bull",
+          "translation": "Ol-bungae",
+          "pronunciation": "ohl-boong-ah-eh",
+          "context": "Plural: il-bungaiko. Young uncastrated bull",
+          "audioFile": null
+        },
+        {
+          "english": "Spotted / Patterned bull",
+          "translation": "Ol-arus",
+          "pronunciation": "ohl-ah-roos",
+          "context": "Patterned black-and-white bull with cultural naming significance",
+          "audioFile": null
+        },
+        {
+          "english": "Calf (male)",
+          "translation": "Ol-ashe",
+          "pronunciation": "ohl-ah-sheh",
+          "context": "Plural: il-asho. Young male calf",
+          "audioFile": null
+        },
+        {
+          "english": "Calf (female)",
+          "translation": "Eng-ashe",
+          "pronunciation": "ehng-ah-sheh",
+          "context": "Plural: ing-asho. Young heifer calf",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "En-giteng",
+          "pronunciation": "ehn-gee-tehng",
+          "context": "Plural: in-gishu. Central animal to Maasai economy, culture, and life",
+          "audioFile": null
+        },
+        {
+          "english": "Ox / Steer",
+          "translation": "Ol-mongi",
+          "pronunciation": "ohl-mohng-gee",
+          "context": "Plural: il-mongen / il-mongi. Castrated draught or beef animal",
+          "audioFile": null
+        },
+        {
+          "english": "Heifer",
+          "translation": "En-dauo",
+          "pronunciation": "ehn-dah-woh",
+          "context": "Plural: in-daua. Young cow that has not yet calved",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "En-kine",
+          "pronunciation": "ehn-kee-neh",
+          "context": "Plural: in-kineji (Richmond: en-gine, in-gineje). Essential domestic livestock",
+          "audioFile": null
+        },
+        {
+          "english": "He-goat / Billy goat",
+          "translation": "Ol-oroi",
+          "pronunciation": "ohl-oh-roh-ee",
+          "context": "Plural: il-oroishi. Adult male goat (also ol-merigeshi)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "En-ker",
+          "pronunciation": "ehn-kehr",
+          "context": "Plural: in-kera / in-dare (Richmond: en-ger, in-gerra)",
+          "audioFile": null
+        },
+        {
+          "english": "Ram",
+          "translation": "Ol-mereguesh",
+          "pronunciation": "ohl-meh-reh-gwehsh",
+          "context": "Plural: il-meregueshi. Adult male sheep",
+          "audioFile": null
+        },
+        {
+          "english": "Lamb",
+          "translation": "Ol-guo",
+          "pronunciation": "ohl-gwoh",
+          "context": "Plural: il-guon. Young sheep",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Ol-ng'atuny",
+          "pronunciation": "ohl-ngah-toony",
+          "context": "Plural: il-ng'atunyo. Iconic apex predator of the savanna (also ol-owuaru-kitok)",
+          "audioFile": null
+        },
+        {
+          "english": "Lioness",
+          "translation": "Ol-ng'atuny lepong",
+          "pronunciation": "ohl-ngah-toony leh-pohng",
+          "context": "Plural: il-ng'atunyo leponget. Female lion",
+          "audioFile": null
+        },
+        {
+          "english": "Wild beast / Carnivore",
+          "translation": "Ol-owuaru",
+          "pronunciation": "ohl-oh-woo-ah-roo",
+          "context": "Plural: il-owuarak. Predatory carnivore or beast of prey",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "Ol-owuaru geri",
+          "pronunciation": "ohl-oh-woo-ah-roo geh-ree",
+          "context": "Plural: il-owuarak gerin. Spotted predator",
+          "audioFile": null
+        },
+        {
+          "english": "Cheetah",
+          "translation": "Ol-orau",
+          "pronunciation": "ohl-oh-rah-oo",
+          "context": "Plural: il-orauishi. Fast hunting cat of open plains",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena (spotted)",
+          "translation": "Ol-ng'ojine",
+          "pronunciation": "ohl-ngoh-jee-neh",
+          "context": "Plural: il-ng'ojinia. Spotted scavenger (Richmond: ol-ngokine)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena (striped)",
+          "translation": "Ol-otonu",
+          "pronunciation": "ohl-oh-toh-noo",
+          "context": "Plural: il-otonak. Striped nocturnal hyena",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Ol-le'ngaina",
+          "pronunciation": "ohl-leh-ngah-ee-nah",
+          "context": "Plural: il-lo'ngaik (literally 'the one with the hand'). Also ol-tome (pl. il-tomia)",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Ol-oado-giragata",
+          "pronunciation": "ohl-oh-ah-doh gee-rah-gah-tah",
+          "context": "Plural: il-oado-giragat (literally 'the tall one that steps high'). Also ol-meuti (pl. il-meut)",
+          "audioFile": null
+        },
+        {
+          "english": "Zebra",
+          "translation": "Ol-oitiko",
+          "pronunciation": "ohl-oh-ee-tee-koh",
+          "context": "Plural: il-oitikoishi. Common plains zebra",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "E-muny",
+          "pronunciation": "eh-moony",
+          "context": "Plural: i-munyi. Black or white rhino",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "Ol-makau",
+          "pronunciation": "ohl-mah-kah-oo",
+          "context": "Plural: il-makaun (Richmond: ol-magau). River mammal",
+          "audioFile": null
+        },
+        {
+          "english": "Wild dog",
+          "translation": "O-suyai",
+          "pronunciation": "oh-soo-yah-ee",
+          "context": "Plural: i-suyan. African painted hunting dog",
+          "audioFile": null
+        },
+        {
+          "english": "Domestic dog",
+          "translation": "Ol-dia",
+          "pronunciation": "ohl-dee-ah",
+          "context": "Plural: il-dien. Camp guardian dog",
+          "audioFile": null
+        },
+        {
+          "english": "Bitch (female dog)",
+          "translation": "En-dia",
+          "pronunciation": "ehn-dee-ah",
+          "context": "Plural: in-dian",
+          "audioFile": null
+        },
+        {
+          "english": "Jackal",
+          "translation": "Em-barie",
+          "pronunciation": "ehm-bah-ree-eh",
+          "context": "Plural: im-barietin. Also en-darash (pl. in-darashin)",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey",
+          "translation": "O-sigiria",
+          "pronunciation": "oh-see-gee-ree-ah",
+          "context": "Plural: i-sirgon. Pack donkey used for transporting water and camp loads",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey (male)",
+          "translation": "Ol-amamuiye",
+          "pronunciation": "ohl-ah-mah-moo-ee-yeh",
+          "context": "Plural: il-amuiyeishi. Male donkey",
+          "audioFile": null
+        },
+        {
+          "english": "Camel",
+          "translation": "En-dames",
+          "pronunciation": "ehn-dah-mehs",
+          "context": "Plural: in-damesin. Also en-gauri (pl. in-gaurin)",
+          "audioFile": null
+        },
+        {
+          "english": "Cat",
+          "translation": "Em-baka",
+          "pronunciation": "ehm-bah-kah",
+          "context": "Plural: im-bakai. Domestic cat",
+          "audioFile": null
+        },
+        {
+          "english": "Baboon",
+          "translation": "Ol-otimi",
+          "pronunciation": "ohl-oh-tee-mee",
+          "context": "Plural: il-otimi. Olive baboon (also ol-galdes)",
+          "audioFile": null
+        },
+        {
+          "english": "Colobus Monkey",
+          "translation": "Ol-goroi",
+          "pronunciation": "ohl-goh-roh-ee",
+          "context": "Plural: il-goroin. Black-and-white colobus monkey",
+          "audioFile": null
+        },
+        {
+          "english": "Vervet Monkey",
+          "translation": "En-dere",
+          "pronunciation": "ehn-deh-reh",
+          "context": "Plural: in-derei. Small grey monkey",
+          "audioFile": null
+        },
+        {
+          "english": "Impala",
+          "translation": "Ol-olubo",
+          "pronunciation": "ohl-oh-loo-boh",
+          "context": "Plural: il-olubo. Graceful savanna antelope",
+          "audioFile": null
+        },
+        {
+          "english": "Grant's Gazelle",
+          "translation": "Ol-wargas",
+          "pronunciation": "ohl-wahr-gahs",
+          "context": "Plural: il-wargasin. Large gazelle species",
+          "audioFile": null
+        },
+        {
+          "english": "Thomson's Gazelle",
+          "translation": "Ol-oilii",
+          "pronunciation": "ohl-oh-ee-lee-ee",
+          "context": "Plural: il-oiliin. Small gazelle with dark flank band",
+          "audioFile": null
+        },
+        {
+          "english": "Eland",
+          "translation": "O-sirua",
+          "pronunciation": "oh-see-roo-ah",
+          "context": "Plural: i-surai. Largest antelope of the savanna",
+          "audioFile": null
+        },
+        {
+          "english": "Wildebeest",
+          "translation": "O-engat",
+          "pronunciation": "oh-ehn-gaht",
+          "context": "Plural: i-engatin. White-bearded gnu",
+          "audioFile": null
+        },
+        {
+          "english": "Greater Kudu",
+          "translation": "Ol-maalo",
+          "pronunciation": "ohl-mah-ah-loh",
+          "context": "Plural: il-maalon. Spiral-horned woodland antelope",
+          "audioFile": null
+        },
+        {
+          "english": "Waterbuck",
+          "translation": "Ol-gibulege",
+          "pronunciation": "ohl-gee-boo-leh-geh",
+          "context": "Plural: il-gibulegen. Riverine antelope",
+          "audioFile": null
+        },
+        {
+          "english": "Bushbuck",
+          "translation": "Ol-bua",
+          "pronunciation": "ohl-boo-ah",
+          "context": "Plural: il-buan"
+          ,"audioFile": null
+        },
+        {
+          "english": "Reedbuck",
+          "translation": "En-gijipuruk",
+          "pronunciation": "ehn-gee-jee-poo-rook",
+          "context": "Plural: in-gijipuruki",
+          "audioFile": null
+        },
+        {
+          "english": "Hare / Rabbit",
+          "translation": "En-kitojo",
+          "pronunciation": "ehn-kee-toh-joh",
+          "context": "Plural: in-kitojon (Richmond: en-gitojo)",
+          "audioFile": null
+        },
+        {
+          "english": "Warthog / Wild boar",
+          "translation": "Ol-bitiro",
+          "pronunciation": "ohl-bee-tee-roh",
+          "context": "Plural: il-bitir. Savanna wild pig",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "Ol-kinos",
+          "pronunciation": "ohl-kee-nohs",
+          "context": "Plural: il-kinosin. Also ol-kinyang (pl. il-kinyangin)",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "Ol-asurai",
+          "pronunciation": "ohl-ah-soo-rah-ee",
+          "context": "Plural: il-asuria. Serpent",
+          "audioFile": null
+        },
+        {
+          "english": "Puff adder",
+          "translation": "En-durbubwa",
+          "pronunciation": "ehn-door-boob-wah",
+          "context": "Plural: in-durbubwani. Dangerous viper",
+          "audioFile": null
+        },
+        {
+          "english": "Tortoise",
+          "translation": "Ol-oikuma",
+          "pronunciation": "ohl-oh-ee-koo-mah",
+          "context": "Plural: il-oikumaishi",
+          "audioFile": null
+        },
+        {
+          "english": "Frog",
+          "translation": "En-dua",
+          "pronunciation": "ehn-doo-ah",
+          "context": "Plural: in-duan",
+          "audioFile": null
+        },
+        {
+          "english": "Bullfrog",
+          "translation": "Ol-dua",
+          "pronunciation": "ohl-doo-ah",
+          "context": "Plural: il-duan",
+          "audioFile": null
+        },
+        {
+          "english": "Lizard",
+          "translation": "Ol-oiriri",
+          "pronunciation": "ohl-oh-ee-ree-ree",
+          "context": "Plural: il-oirir",
+          "audioFile": null
+        },
+        {
+          "english": "Bird (large)",
+          "translation": "Ol-motonye",
+          "pronunciation": "ohl-moh-toh-nyeh",
+          "context": "Plural: il-motonye. Large bird or raptor",
+          "audioFile": null
+        },
+        {
+          "english": "Bird (small)",
+          "translation": "En-daritiki",
+          "pronunciation": "ehn-dah-ree-tee-kee",
+          "context": "Plural: in-datitik. Small songbird / sparrow",
+          "audioFile": null
+        },
+        {
+          "english": "Ostrich",
+          "translation": "E-sidai",
+          "pronunciation": "eh-see-dah-ee",
+          "context": "Plural: i-sidan. Black feathers prized for warrior headdresses",
+          "audioFile": null
+        },
+        {
+          "english": "Eagle",
+          "translation": "Ol-kilit",
+          "pronunciation": "ohl-kee-leet",
+          "context": "Plural: il-kilili",
+          "audioFile": null
+        },
+        {
+          "english": "Hawk",
+          "translation": "Ol-kilil",
+          "pronunciation": "ohl-kee-leel",
+          "context": "Plural: il-kilili",
+          "audioFile": null
+        },
+        {
+          "english": "Vulture",
+          "translation": "Ol-motonye",
+          "pronunciation": "ohl-moh-toh-nyeh",
+          "context": "Plural: il-motonye. Carrion scavenger raptor",
+          "audioFile": null
+        },
+        {
+          "english": "Marabou Stork",
+          "translation": "En-diamorgusi",
+          "pronunciation": "ehn-dee-ah-mohr-goo-see",
+          "context": "Plural: in-diamorgus",
+          "audioFile": null
+        },
+        {
+          "english": "Crow / Raven",
+          "translation": "Ol-kuruk",
+          "pronunciation": "ohl-koo-rook",
+          "context": "Plural: il-kuruki",
+          "audioFile": null
+        },
+        {
+          "english": "Guinea fowl",
+          "translation": "Ol-geresure",
+          "pronunciation": "ohl-geh-reh-soo-reh",
+          "context": "Plural: il-geresureni",
+          "audioFile": null
+        },
+        {
+          "english": "Dove / Pigeon",
+          "translation": "En-turkulu",
+          "pronunciation": "ehn-toor-koo-loo",
+          "context": "Plural: in-turkuluni",
+          "audioFile": null
+        },
+        {
+          "english": "Duck",
+          "translation": "Ol-motorok",
+          "pronunciation": "ohl-moh-toh-rohk",
+          "context": "Plural: il-motoroki",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken / Fowl",
+          "translation": "El-lukungu",
+          "pronunciation": "ehl-loo-koon-goo",
+          "context": "Plural: il-lukunguni",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "O-senger",
+          "pronunciation": "oh-sehn-gehr",
+          "context": "Plural: i-sengeri (fish was traditionally taboo food among pastoralists)",
+          "audioFile": null
+        },
+        {
+          "english": "Honeybee",
+          "translation": "Ol-otoroki",
+          "pronunciation": "ohl-oh-toh-roh-kee",
+          "context": "Plural: il-otorok. Honey producer; also ol-otoro",
+          "audioFile": null
+        },
+        {
+          "english": "Swarm of bees",
+          "translation": "E-mus",
+          "pronunciation": "eh-moos",
+          "context": "Plural: i-musi",
+          "audioFile": null
+        },
+        {
+          "english": "Fly",
+          "translation": "Ol-ojongani",
+          "pronunciation": "ohl-oh-johng-gah-nee",
+          "context": "Plural: il-ojonga",
+          "audioFile": null
+        },
+        {
+          "english": "Mosquito",
+          "translation": "Eng-ojingani",
+          "pronunciation": "ehng-oh-jeeng-gah-nee",
+          "context": "Plural: ing-ojonga",
+          "audioFile": null
+        },
+        {
+          "english": "Tsetse fly",
+          "translation": "En-toroboni",
+          "pronunciation": "ehn-toh-roh-boh-nee",
+          "context": "Plural: in-torobo. Vector of nagana cattle disease",
+          "audioFile": null
+        },
+        {
+          "english": "Ant (tiny)",
+          "translation": "Eng-alaoni",
+          "pronunciation": "ehng-ah-lah-oh-nee",
+          "context": "Plural: ing-alao. Very small ant (fixed from corrupt entry)",
+          "audioFile": null
+        },
+        {
+          "english": "Safari ant (siafu)",
+          "translation": "En-dirango",
+          "pronunciation": "ehn-dee-rahng-goh",
+          "context": "Plural: in-dirangoni. Aggressive biting red ant",
+          "audioFile": null
+        },
+        {
+          "english": "Spider",
+          "translation": "Ol-kedi",
+          "pronunciation": "ohl-keh-dee",
+          "context": "Plural: il-kedi",
+          "audioFile": null
+        },
+        {
+          "english": "Scorpion",
+          "translation": "En-golopa",
+          "pronunciation": "ehn-goh-loh-pah",
+          "context": "Plural: il-golopan",
+          "audioFile": null
+        },
+        {
+          "english": "Locust",
+          "translation": "Ol-maati",
+          "pronunciation": "ohl-mah-ah-tee",
+          "context": "Plural: il-maat",
+          "audioFile": null
+        },
+        {
+          "english": "Grasshopper",
+          "translation": "En-dargeti",
+          "pronunciation": "ehn-dahr-geh-tee",
+          "context": "Plural: in-darget",
+          "audioFile": null
+        },
+        {
+          "english": "Tick",
+          "translation": "Ol-masheri",
+          "pronunciation": "ohl-mah-sheh-ree",
+          "context": "Plural: il-mashet. Cattle parasite",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Sun",
+          "translation": "Eng-olong",
+          "pronunciation": "ehng-oh-lohng",
+          "context": "Plural: ing-olongi. Also denotes day and time of day",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "Ol-apa",
+          "pronunciation": "ohl-ah-pah",
+          "context": "Plural: il-apaitin. Lunar orb; also signifies calendar month",
+          "audioFile": null
+        },
+        {
+          "english": "Stars",
+          "translation": "En-kaik",
+          "pronunciation": "ehn-kah-eek",
+          "context": "Singular: ol-agira / ol-agera; plural: il-ager / in-kaik",
+          "audioFile": null
+        },
+        {
+          "english": "Morning star",
+          "translation": "Ol-agira le'ngakenya",
+          "pronunciation": "ohl-ah-gee-rah leh-ngah-kehn-yah",
+          "context": "The star that heralds the dawn",
+          "audioFile": null
+        },
+        {
+          "english": "Evening star",
+          "translation": "Ol-agira le'nteiba",
+          "pronunciation": "ohl-ah-gee-rah leh-nteh-ee-bah",
+          "context": "The star visible at dusk",
+          "audioFile": null
+        },
+        {
+          "english": "Comet",
+          "translation": "Ol-agira lo'lkidongoi",
+          "pronunciation": "ohl-ah-gee-rah lohl-kee-dohng-goh-ee",
+          "context": "Literally 'star with a tail'",
+          "audioFile": null
+        },
+        {
+          "english": "Sky / Heavens",
+          "translation": "Eng-ai",
+          "pronunciation": "ehng-ah-ee",
+          "context": "The upper firmament, domain of Enkai (God)",
+          "audioFile": null
+        },
+        {
+          "english": "Height / Firmament",
+          "translation": "En-keper",
+          "pronunciation": "ehn-keh-pehr",
+          "context": "Celestial zenith / upper realm",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Land",
+          "translation": "En-gop",
+          "pronunciation": "ehn-gohp",
+          "context": "Plural: in-gwapi. Earth, soil, country, territory",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "Ol-doinyo",
+          "pronunciation": "ohl-doh-ee-nyoh",
+          "context": "Plural: il-doinyo. High peak (e.g., Ol Doinyo Lengai)",
+          "audioFile": null
+        },
+        {
+          "english": "Hill",
+          "translation": "En-doinyo",
+          "pronunciation": "ehn-doh-ee-nyoh",
+          "context": "Plural: in-doinyo. Smaller rise or ridge",
+          "audioFile": null
+        },
+        {
+          "english": "Mount Kenya",
+          "translation": "Ol-Doinyo Keri",
+          "pronunciation": "ohl-doh-ee-nyoh keh-ree",
+          "context": "Literally 'the striped / spotted mountain'",
+          "audioFile": null
+        },
+        {
+          "english": "Mount Kilimanjaro",
+          "translation": "Ol-Doinyo Oibor",
+          "pronunciation": "ohl-doh-ee-nyoh oh-ee-bohr",
+          "context": "Literally 'the shining white / snow-capped mountain'",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "Ol-keju",
+          "pronunciation": "ohl-keh-joo",
+          "context": "Plural: il-kejek. Flowing river; also e-guaso (pl. i-guason)",
+          "audioFile": null
+        },
+        {
+          "english": "Stream / Brook",
+          "translation": "E-guaso",
+          "pronunciation": "eh-gwah-soh",
+          "context": "Plural: i-guason. Flowing tributary or stream",
+          "audioFile": null
+        },
+        {
+          "english": "River bank",
+          "translation": "Ol-kekun",
+          "pronunciation": "ohl-keh-koon",
+          "context": "Plural: il-kekuno",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Eng-are",
+          "pronunciation": "ehng-ah-reh",
+          "context": "Plural: ing-ariak. Most precious pastoral resource",
+          "audioFile": null
+        },
+        {
+          "english": "Waterfall",
+          "translation": "En-naiuroo",
+          "pronunciation": "ehn-nah-ee-oo-roh-oh",
+          "context": "Falling cascade of water",
+          "audioFile": null
+        },
+        {
+          "english": "Lake",
+          "translation": "Ol-balbal",
+          "pronunciation": "ohl-bahl-bahl",
+          "context": "Plural: il-balbali. Lake or depression; also en-aiposha",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "En-chan",
+          "pronunciation": "ehn-chahn",
+          "context": "Also eng-ai. Divine blessing brought by Enkai. Plural: in-chani",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "Eng-atamboi",
+          "pronunciation": "ehng-ah-tahm-boh-ee",
+          "context": "Plural: ing-atambo",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "En-gisuisui",
+          "pronunciation": "ehn-gee-soo-ee-soo-ee",
+          "context": "Plural: in-gisuisuot. Breeze or gust",
+          "audioFile": null
+        },
+        {
+          "english": "Whirlwind",
+          "translation": "Ol-limwa",
+          "pronunciation": "ohl-leem-wah",
+          "context": "Plural: il-limwain. Dust devil or whirlwind",
+          "audioFile": null
+        },
+        {
+          "english": "Thunder",
+          "translation": "En-kikurukuroto",
+          "pronunciation": "ehn-kee-koo-roo-koo-roh-toh",
+          "context": "Plural: in-kikurukurot. Sound of storms",
+          "audioFile": null
+        },
+        {
+          "english": "Lightning",
+          "translation": "En-giwangata",
+          "pronunciation": "ehn-gee-wahng-gah-tah",
+          "context": "Plural: in-giwangat. Flash of light",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "En-gima",
+          "pronunciation": "ehn-gee-mah",
+          "context": "Plural: in-gimaite. Domestic hearth and warmth",
+          "audioFile": null
+        },
+        {
+          "english": "Firewood",
+          "translation": "Ol-chata",
+          "pronunciation": "ohl-chah-tah",
+          "context": "Plural: il-kek (Richmond: ol-jata, il-gek)",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "Em-buruo",
+          "pronunciation": "ehm-boo-roo-oh",
+          "context": "Plural: im-buruoishi",
+          "audioFile": null
+        },
+        {
+          "english": "Ashes",
+          "translation": "En-kukuu",
+          "pronunciation": "ehn-koo-koo-oo",
+          "context": "Plural: in-kuk. Also en-guruoni (pl. in-guruon)",
+          "audioFile": null
+        },
+        {
+          "english": "Charcoal",
+          "translation": "En-gukuo",
+          "pronunciation": "ehn-goo-koo-oh",
+          "context": "Plural: in-guk",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Ol-chani",
+          "pronunciation": "ohl-chah-nee",
+          "context": "Plural: il-keek. Also ol-jata (pl. il-gek)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest / Bush",
+          "translation": "En-dim",
+          "pronunciation": "ehn-deem",
+          "context": "Plural: in-dimi. Woodland or wilderness (also o-sero)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "En-gojit",
+          "pronunciation": "ehn-goh-jeet",
+          "context": "Plural: in-gojita. Vital grazing pasture",
+          "audioFile": null
+        },
+        {
+          "english": "Pasture / Grazing field",
+          "translation": "E-shoo",
+          "pronunciation": "eh-shoh-oh",
+          "context": "Designated grazing land for livestock",
+          "audioFile": null
+        },
+        {
+          "english": "Stone",
+          "translation": "O-soit",
+          "pronunciation": "oh-soh-eet",
+          "context": "Plural: i-soito",
+          "audioFile": null
+        },
+        {
+          "english": "Rock / Boulder",
+          "translation": "Ol-totoi",
+          "pronunciation": "ohl-toh-toh-ee",
+          "context": "Plural: il-toto",
+          "audioFile": null
+        },
+        {
+          "english": "Sand",
+          "translation": "O-senyai",
+          "pronunciation": "oh-sehn-yah-ee",
+          "context": "Plural: i-senya",
+          "audioFile": null
+        },
+        {
+          "english": "Soil / Earth",
+          "translation": "En-kulupuok",
+          "pronunciation": "ehn-koo-loo-pwohk",
+          "context": "Tilled earth or dirt (Richmond: en-gulupuok)",
+          "audioFile": null
+        },
+        {
+          "english": "Valley / Ravine",
+          "translation": "En-nongoto",
+          "pronunciation": "ehn-nohng-goh-toh",
+          "context": "Plural: in-nongot. Also o-riet (pl. i-rieta)",
+          "audioFile": null
+        },
+        {
+          "english": "Cave",
+          "translation": "Eng-apune",
+          "pronunciation": "ehng-ah-poo-neh",
+          "context": "Plural: ing-apunia",
+          "audioFile": null
+        },
+        {
+          "english": "Spring (water)",
+          "translation": "En-joro",
+          "pronunciation": "ehn-joh-roh",
+          "context": "Plural: in-joroi. Natural water well or spring",
+          "audioFile": null
+        },
+        {
+          "english": "Drought",
+          "translation": "Ol-ameiyu",
+          "pronunciation": "ohl-ah-meh-ee-yoo",
+          "context": "Prolonged dry season with scarcity of grass and water",
+          "audioFile": null
+        },
+        {
+          "english": "Desert / Plain",
+          "translation": "Em-pusel",
+          "pronunciation": "ehm-poo-sehl",
+          "context": "Plural: im-puseli. Open arid savannah",
+          "audioFile": null
+        },
+        {
+          "english": "Morning",
+          "translation": "En-tadegenya",
+          "pronunciation": "ehn-tah-deh-gehn-yah",
+          "context": "Plural: in-tadegenyaritin",
+          "audioFile": null
+        },
+        {
+          "english": "Dawn / Daybreak",
+          "translation": "E-kenyu",
+          "pronunciation": "eh-kehn-yoo",
+          "context": "First morning light",
+          "audioFile": null
+        },
+        {
+          "english": "Midday / Noon",
+          "translation": "En-aipirrie eng-olong",
+          "pronunciation": "ehn-ah-ee-peer-ree-eh ehng-oh-lohng",
+          "context": "When the sun reaches zenith",
+          "audioFile": null
+        },
+        {
+          "english": "Evening",
+          "translation": "En-teiba",
+          "pronunciation": "ehn-teh-ee-bah",
+          "context": "Time around sunset and dusk",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "En-kewarie",
+          "pronunciation": "ehn-keh-wah-ree-eh",
+          "context": "Plural: in-kewarieitin. Darkness of night",
+          "audioFile": null
+        },
+        {
+          "english": "Season / Year",
+          "translation": "Ol-ari",
+          "pronunciation": "ohl-ah-ree",
+          "context": "Plural: il-arin. Annual calendar cycle",
+          "audioFile": null
+        },
+        {
+          "english": "Cedar tree",
+          "translation": "Ol-tarakwai",
+          "pronunciation": "ohl-tah-rah-kwah-ee",
+          "context": "Plural: il-tarakwa. Sacred African pencil cedar",
+          "audioFile": null
+        },
+        {
+          "english": "Acacia tree (red thorn)",
+          "translation": "Ol-kiloriti",
+          "pronunciation": "ohl-kee-loh-ree-tee",
+          "context": "Vachellia nilotica / Acacia",
+          "audioFile": null
+        },
+        {
+          "english": "Acacia tree (fever tree)",
+          "translation": "Ol-lerai",
+          "pronunciation": "ohl-leh-rah-ee",
+          "context": "Yellow-barked riparian acacia",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Body",
+          "translation": "O-sesen",
+          "pronunciation": "oh-seh-sehn",
+          "context": "Plural: i-seseni",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "En-dokoya",
+          "pronunciation": "ehn-doh-koh-yah",
+          "context": "Plural: in-dokoyani. Also el-lugunya (pl. il-luguny)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "Ol-babita",
+          "pronunciation": "ohl-bah-bee-tah",
+          "context": "Plural: il-babit. Hair of the head or body",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior's braided hair",
+          "translation": "Ol-daiga",
+          "pronunciation": "ohl-dah-ee-gah",
+          "context": "Plural: il-daigan. Ochred warrior hair braids",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "Eng-omom",
+          "pronunciation": "ehng-oh-mohm",
+          "context": "Plural: ing-omomite",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Eng-ongu",
+          "pronunciation": "ehng-ohng-goo",
+          "context": "Plural: ing-onyek. Organ of sight",
+          "audioFile": null
+        },
+        {
+          "english": "Eyebrow",
+          "translation": "Ol-babit le'ngongu",
+          "pronunciation": "ohl-bah-beet leh-ngohng-goo",
+          "context": "Plural: i-suaten o'ngonyek",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "En-giok",
+          "pronunciation": "ehn-gee-ohk",
+          "context": "Plural: in-giyaa",
+          "audioFile": null
+        },
+        {
+          "english": "Ear lobe",
+          "translation": "E-segatua",
+          "pronunciation": "eh-seh-gah-too-ah",
+          "context": "Plural: i-segaruani. Traditionally elongated for beaded ornaments",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "En-gume",
+          "pronunciation": "ehn-goo-meh",
+          "context": "Plural: in-gumeshi (fixed from corrupt entry)",
+          "audioFile": null
+        },
+        {
+          "english": "Cheek",
+          "translation": "En-gotiek",
+          "pronunciation": "ehn-goh-tee-ehk",
+          "context": "Singular: en-dagola (pl. in-dagol / en-gotiek)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "En-gutuk",
+          "pronunciation": "ehn-goo-took",
+          "context": "Plural: in-gutukie",
+          "audioFile": null
+        },
+        {
+          "english": "Lip",
+          "translation": "Eng-onito e'ngutuk",
+          "pronunciation": "ehng-oh-nee-toh eh-ngoo-took",
+          "context": "Plural: ing-onit",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "Ol-alai",
+          "pronunciation": "ohl-ah-lah-ee",
+          "context": "Plural: il-ala",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "Ol-ngejep",
+          "pronunciation": "ohl-ngeh-jehp",
+          "context": "Plural: il-ngejepa",
+          "audioFile": null
+        },
+        {
+          "english": "Jaw / Chin",
+          "translation": "Ol-bony",
+          "pronunciation": "ohl-bohny",
+          "context": "Plural: il-bonyo",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Ol-munyei",
+          "pronunciation": "ohl-moon-yeh-ee",
+          "context": "Plural: il-munyo. Elders' facial whiskers",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "E-murt",
+          "pronunciation": "eh-moort",
+          "context": "Plural: i-murto",
+          "audioFile": null
+        },
+        {
+          "english": "Throat",
+          "translation": "Ol-gos",
+          "pronunciation": "ohl-gohs",
+          "context": "Plural: il-goso",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "Ol-oilelai",
+          "pronunciation": "ohl-oh-ee-leh-lah-ee",
+          "context": "Plural: il-oilela. Also e-ronyi",
+          "audioFile": null
+        },
+        {
+          "english": "Chest",
+          "translation": "Ol-goo",
+          "pronunciation": "ohl-goh-oh",
+          "context": "Plural: il-goite / il-goon. Anatomical chest / breast",
+          "audioFile": null
+        },
+        {
+          "english": "Breasts (female)",
+          "translation": "Ol-kina",
+          "pronunciation": "ohl-kee-nah",
+          "context": "Plural: il-kii. Maternal breasts",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Ol-tau",
+          "pronunciation": "ohl-tah-oo",
+          "context": "Plural: il-tauja. Center of soul, spirit, and emotion",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach / Abdomen",
+          "translation": "Eng-oshoke",
+          "pronunciation": "ehng-oh-shoh-keh",
+          "context": "Plural: ing-oshua. Also en-koshoke / en-giludye",
+          "audioFile": null
+        },
+        {
+          "english": "Navel",
+          "translation": "O-sararua",
+          "pronunciation": "oh-sah-rah-roo-ah",
+          "context": "Plural: i-sararuani",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Eng-oriong",
+          "pronunciation": "ehng-oh-ree-ohng",
+          "context": "Plural: ing-orongi / ing-oriongita. Anatomical back",
+          "audioFile": null
+        },
+        {
+          "english": "Spine / Backbone",
+          "translation": "En-giji",
+          "pronunciation": "ehn-gee-jee",
+          "context": "Vertebral column",
+          "audioFile": null
+        },
+        {
+          "english": "Rib",
+          "translation": "Ol-arasi",
+          "pronunciation": "ohl-ah-rah-see",
+          "context": "Plural: il-aras",
+          "audioFile": null
+        },
+        {
+          "english": "Arm / Hand",
+          "translation": "Eng-aina",
+          "pronunciation": "ehng-ah-ee-nah",
+          "context": "Plural: ing-aik. Arm or hand (also en-kaik)",
+          "audioFile": null
+        },
+        {
+          "english": "Forearm",
+          "translation": "En-dagule",
+          "pronunciation": "ehn-dah-goo-leh",
+          "context": "Plural: il-dagulen",
+          "audioFile": null
+        },
+        {
+          "english": "Elbow",
+          "translation": "Ol-oidoloki",
+          "pronunciation": "ohl-oh-ee-doh-loh-kee",
+          "context": "Plural: il-oidolok",
+          "audioFile": null
+        },
+        {
+          "english": "Wrist",
+          "translation": "E-robat e'ngaina",
+          "pronunciation": "eh-roh-baht eh-ngah-ee-nah",
+          "context": "Joint of the arm",
+          "audioFile": null
+        },
+        {
+          "english": "Palm / Sole",
+          "translation": "En-dap",
+          "pronunciation": "ehn-dahp",
+          "context": "Plural: in-dapi. Palm of hand or sole of foot (fixed from corrupt title)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "Ol-kimojino",
+          "pronunciation": "ohl-kee-moh-jee-noh",
+          "context": "Plural: il-kimojik",
+          "audioFile": null
+        },
+        {
+          "english": "Thumb",
+          "translation": "Ol-kimojino sapok",
+          "pronunciation": "ohl-kee-moh-jee-noh sah-pohk",
+          "context": "Literally 'big finger'",
+          "audioFile": null
+        },
+        {
+          "english": "Fingernail / Claw",
+          "translation": "Ol-oisoto",
+          "pronunciation": "ohl-oh-ee-soh-toh",
+          "context": "Plural: il-oisotok",
+          "audioFile": null
+        },
+        {
+          "english": "Thigh",
+          "translation": "En-gubis",
+          "pronunciation": "ehn-goo-bees",
+          "context": "Plural: in-gubisin. Upper leg",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "En-gungu",
+          "pronunciation": "ehn-goong-goo",
+          "context": "Plural: in-gung",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "Ol-keju",
+          "pronunciation": "ohl-keh-joo",
+          "context": "Plural: il-kejek (Richmond: en-geju, in-gejek)",
+          "audioFile": null
+        },
+        {
+          "english": "Calf of leg",
+          "translation": "Ol-oreshet",
+          "pronunciation": "ohl-oh-reh-sheht",
+          "context": "Plural: il-oresheta. Muscle of the lower leg (moved from animals category)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "En-dudunyo",
+          "pronunciation": "ehn-doo-doon-yoh",
+          "context": "Plural: in-duduny",
+          "audioFile": null
+        },
+        {
+          "english": "Ankle",
+          "translation": "Ol-oiure",
+          "pronunciation": "ohl-oh-ee-oo-reh",
+          "context": "Plural: il-oiuri",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Ol-oito",
+          "pronunciation": "ohl-oh-ee-toh",
+          "context": "Plural: il-oik",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "O-sarge",
+          "pronunciation": "oh-sahr-geh",
+          "context": "Plural: i-sargeta. Sacred living fluid",
+          "audioFile": null
+        },
+        {
+          "english": "Blood vessel / Vein",
+          "translation": "Eng-ony",
+          "pronunciation": "ehng-ohny",
+          "context": "Plural: ing-onyo",
+          "audioFile": null
+        },
+        {
+          "english": "Skin / Hide",
+          "translation": "En-joni",
+          "pronunciation": "ehn-joh-nee",
+          "context": "Plural: in-jonito",
+          "audioFile": null
+        },
+        {
+          "english": "Liver",
+          "translation": "E-muinyua",
+          "pronunciation": "eh-moo-een-yoo-ah",
+          "context": "Plural: i-muinyuaishi",
+          "audioFile": null
+        },
+        {
+          "english": "Lung",
+          "translation": "Ol-kipiei",
+          "pronunciation": "ohl-kee-pee-eh-ee",
+          "context": "Plural: il-kipie",
+          "audioFile": null
+        },
+        {
+          "english": "Kidney",
+          "translation": "Ol-airakuji",
+          "pronunciation": "ohl-ah-ee-rah-koo-jee",
+          "context": "Plural: il-airakuj",
+          "audioFile": null
+        },
+        {
+          "english": "Bladder",
+          "translation": "Ol-gulet",
+          "pronunciation": "ohl-goo-leht",
+          "context": "Plural: il-guleti",
+          "audioFile": null
+        },
+        {
+          "english": "Intestines / Entrails",
+          "translation": "E-monyita",
+          "pronunciation": "eh-mohn-yee-tah",
+          "context": "Plural: i-monyit",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Milk",
+          "translation": "Kule",
+          "pronunciation": "koo-leh",
+          "context": "Central dietary staple of the Maasai. Stored fresh or sour (fixed from corrupt 'n.' entry)",
+          "audioFile": null
+        },
+        {
+          "english": "Fresh milk",
+          "translation": "Kule na-irowua",
+          "pronunciation": "koo-leh nah-ee-roh-woo-ah",
+          "context": "Warm, sweet milk fresh from milking",
+          "audioFile": null
+        },
+        {
+          "english": "Sour / Fermented milk",
+          "translation": "Kule na-oto",
+          "pronunciation": "koo-leh nah-oh-toh",
+          "context": "Curdled milk seasoned in smoke-cured calabashes",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "En-kiring'o",
+          "pronunciation": "ehn-kee-reeng-oh",
+          "context": "Plural: in-kiri (Richmond: en-giringo). Beef, mutton, or goat meat",
+          "audioFile": null
+        },
+        {
+          "english": "Roast meat",
+          "translation": "En-kiring'o na-peji",
+          "pronunciation": "ehn-kee-reeng-oh nah-peh-jee",
+          "context": "Meat roasted over open wood embers",
+          "audioFile": null
+        },
+        {
+          "english": "Blood (dietary)",
+          "translation": "O-sarge",
+          "pronunciation": "oh-sahr-geh",
+          "context": "Extracted without killing cattle using a blocked arrow (ol-ngoreta)",
+          "audioFile": null
+        },
+        {
+          "english": "Milk and blood beverage",
+          "translation": "E-saroi",
+          "pronunciation": "eh-sah-roh-ee",
+          "context": "Traditional energizing drink for warriors and recuperating mothers",
+          "audioFile": null
+        },
+        {
+          "english": "Medicinal broth / Soup",
+          "translation": "E-motori",
+          "pronunciation": "eh-moh-toh-ree",
+          "context": "Nutritious herbal soup prepared with roots and bark",
+          "audioFile": null
+        },
+        {
+          "english": "Animal fat / Tallow",
+          "translation": "E-ilata",
+          "pronunciation": "eh-ee-lah-tah",
+          "context": "Plural: i-ila. Rendered fat used in cooking and body conditioning (fixed from corrupt 'v.' entry)",
+          "audioFile": null
+        },
+        {
+          "english": "Butter",
+          "translation": "Eng-orno",
+          "pronunciation": "ehng-ohr-noh",
+          "context": "Plural: ing-orn. Churned cow butter",
+          "audioFile": null
+        },
+        {
+          "english": "Flour / Meal",
+          "translation": "Ol-osho",
+          "pronunciation": "ohl-oh-shoh",
+          "context": "Plural: il-oshon. Also en-guruma (maize flour)",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "En-daa",
+          "pronunciation": "ehn-dah-ah",
+          "context": "Plural: in-daiki. General sustenance",
+          "audioFile": null
+        },
+        {
+          "english": "Maize / Corn",
+          "translation": "Ol-paiki",
+          "pronunciation": "ohl-pah-ee-kee",
+          "context": "Plural: il-paik. Grain maize",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "En-aisho",
+          "pronunciation": "ehn-ah-ee-shoh",
+          "context": "Raw wild honey prized for energy, ceremonies, and brewing",
+          "audioFile": null
+        },
+        {
+          "english": "Honey mead / Beer",
+          "translation": "En-aisho",
+          "pronunciation": "ehn-ah-ee-shoh",
+          "context": "Plural: in-aishi. Traditional fermented honey brew consumed by elders",
+          "audioFile": null
+        },
+        {
+          "english": "Porridge",
+          "translation": "En-koroma",
+          "pronunciation": "ehn-koh-roh-mah",
+          "context": "Cooked flour porridge (also porrigi)",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "E-makat",
+          "pronunciation": "eh-mah-kaht",
+          "context": "Plural: i-makati. Mineral salt",
+          "audioFile": null
+        },
+        {
+          "english": "Milk calabash / Gourd",
+          "translation": "E-mala",
+          "pronunciation": "eh-mah-lah",
+          "context": "Plural: i-malasin. Large calabash cured with embers of the oloirien tree",
+          "audioFile": null
+        },
+        {
+          "english": "Small milk gourd",
+          "translation": "Ol-guguri",
+          "pronunciation": "ohl-goo-goo-ree",
+          "context": "Plural: il-guguri. Individual carrying gourd",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "E-moti",
+          "pronunciation": "eh-moh-tee",
+          "context": "Plural: i-motio. Earthenware or iron pot",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger",
+          "translation": "Ol-ameiyu",
+          "pronunciation": "ohl-ah-meh-ee-yoo",
+          "context": "Plural: il-ameiyuitin",
+          "audioFile": null
+        },
+        {
+          "english": "Thirst",
+          "translation": "En-gure",
+          "pronunciation": "ehn-goo-reh",
+          "context": "Need for water",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Society",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Elder / Senior man",
+          "translation": "Ol-payian",
+          "pronunciation": "ohl-pah-yee-ahn",
+          "context": "Plural: il-payiani. Respected married elder (Richmond: ol-baiyan)",
+          "audioFile": null
+        },
+        {
+          "english": "Old man / Senior elder",
+          "translation": "Ol-moruo",
+          "pronunciation": "ohl-moh-roo-oh",
+          "context": "Plural: il-moruak. Sage elder of the council",
+          "audioFile": null
+        },
+        {
+          "english": "Old woman",
+          "translation": "En-tasat",
+          "pronunciation": "ehn-tah-saht",
+          "context": "Plural: in-tasati. Respected senior matriarch",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Mother",
+          "translation": "En-tomononi",
+          "pronunciation": "ehn-toh-moh-noh-nee",
+          "context": "Plural: in-tomonok. Married woman with children",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Yeyo",
+          "pronunciation": "yeh-yoh",
+          "context": "Also en-gotonye. Respectful affectionate term for mother",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Paapa",
+          "pronunciation": "pah-pah",
+          "context": "Also menye / ol-oiu. Father",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "En-kerai",
+          "pronunciation": "ehn-keh-rah-ee",
+          "context": "Plural: in-kera. Child of either gender (Richmond: en-gerai)",
+          "audioFile": null
+        },
+        {
+          "english": "Boy (uncircumcised)",
+          "translation": "Ol-aiyoni",
+          "pronunciation": "ohl-ah-ee-yoh-nee",
+          "context": "Plural: il-aiyok. Boy before initiation",
+          "audioFile": null
+        },
+        {
+          "english": "Girl / Young maiden",
+          "translation": "En-dito",
+          "pronunciation": "ehn-dee-toh",
+          "context": "Plural: in-doiye. Uncircumcised young woman",
+          "audioFile": null
+        },
+        {
+          "english": "Baby / Infant",
+          "translation": "En-kerai kiti",
+          "pronunciation": "ehn-keh-rah-ee kee-tee",
+          "context": "Little child / infant. Also en-katurana",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior",
+          "translation": "Ol-murani",
+          "pronunciation": "ohl-moo-rah-nee",
+          "context": "Plural: il-muran. Member of the warrior age-set (moran)",
+          "audioFile": null
+        },
+        {
+          "english": "Junior warrior",
+          "translation": "Ol-bornoti",
+          "pronunciation": "ohl-bohr-noh-tee",
+          "context": "Newly initiated warrior",
+          "audioFile": null
+        },
+        {
+          "english": "Friend / Peaceful ally",
+          "translation": "Ol-le-seriani",
+          "pronunciation": "ohl-leh-seh-ree-ah-nee",
+          "context": "Literally 'man of peace'. Also ol-jore (pl. il-jorueta) or ol-enjola",
+          "audioFile": null
+        },
+        {
+          "english": "Person / Human being",
+          "translation": "Ol-tungani",
+          "pronunciation": "ohl-toon-gah-nee",
+          "context": "Plural: il-tunganak. Individual human being",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Male",
+          "translation": "Ol-lee",
+          "pronunciation": "ohl-leh-eh",
+          "context": "Plural: il-lewa. Adult male",
+          "audioFile": null
+        },
+        {
+          "english": "Wife",
+          "translation": "En-gitok",
+          "pronunciation": "ehn-gee-tohk",
+          "context": "Plural: in-gituak. Married wife",
+          "audioFile": null
+        },
+        {
+          "english": "Co-wife / Second wife",
+          "translation": "Eng-aini",
+          "pronunciation": "ehng-ah-ee-nee",
+          "context": "Second wife in a polygynous boma",
+          "audioFile": null
+        },
+        {
+          "english": "Husband",
+          "translation": "Ol-moruo",
+          "pronunciation": "ohl-moh-roo-oh",
+          "context": "Plural: il-moruak. Head of the household",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "Ol-alashe",
+          "pronunciation": "ohl-ah-lah-sheh",
+          "context": "Plural: il-alashera",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "Eng-anashe",
+          "pronunciation": "ehng-ah-nah-sheh",
+          "context": "Plural: ing-anashera",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather",
+          "translation": "Ol-akwi",
+          "pronunciation": "ohl-ah-kwee",
+          "context": "Plural: il-akwiak",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmother",
+          "translation": "Eng-ogho",
+          "pronunciation": "ehng-oh-goh",
+          "context": "Plural: ing-oghoi",
+          "audioFile": null
+        },
+        {
+          "english": "Grandchild",
+          "translation": "En-kerai o'ltoiyu",
+          "pronunciation": "ehn-keh-rah-ee ohl-toh-ee-yoo",
+          "context": "Child of one's offspring",
+          "audioFile": null
+        },
+        {
+          "english": "Uncle",
+          "translation": "Ol-apulaiyani",
+          "pronunciation": "ohl-ah-poo-lah-ee-yah-nee",
+          "context": "Plural: il-apulaiyak. Maternal uncle",
+          "audioFile": null
+        },
+        {
+          "english": "Aunt",
+          "translation": "Eng-apulaiyani",
+          "pronunciation": "ehng-ah-poo-lah-ee-yah-nee",
+          "context": "Plural: ing-apulaiyak. Paternal/maternal aunt",
+          "audioFile": null
+        },
+        {
+          "english": "Father-in-law",
+          "translation": "Ol-aputani",
+          "pronunciation": "ohl-ah-poo-tah-nee",
+          "context": "Plural: il-aputak. Male in-law",
+          "audioFile": null
+        },
+        {
+          "english": "Mother-in-law",
+          "translation": "Eng-aputani",
+          "pronunciation": "ehng-ah-poo-tah-nee",
+          "context": "Plural: ing-aputak. Female in-law",
+          "audioFile": null
+        },
+        {
+          "english": "Daughter-in-law",
+          "translation": "Eng-aputani",
+          "pronunciation": "ehng-ah-poo-tah-nee",
+          "context": "Plural: ing-aputak (fixed from corrupt title)",
+          "audioFile": null
+        },
+        {
+          "english": "Son-in-law",
+          "translation": "Ol-aputani",
+          "pronunciation": "ohl-ah-poo-tah-nee",
+          "context": "Plural: il-aputak. Son-in-law",
+          "audioFile": null
+        },
+        {
+          "english": "Family / Household",
+          "translation": "Ol-marei",
+          "pronunciation": "ohl-mah-reh-ee",
+          "context": "Plural: il-mareita. Domestic family unit",
+          "audioFile": null
+        },
+        {
+          "english": "Clan",
+          "translation": "En-gishomi",
+          "pronunciation": "ehn-gee-shoh-mee",
+          "context": "Plural: in-gishomin. Clan line, literally 'gateway of the kraal'",
+          "audioFile": null
+        },
+        {
+          "english": "Tribe / Section",
+          "translation": "Ol-osho",
+          "pronunciation": "ohl-oh-shoh",
+          "context": "Plural: il-oshon. Territorial division of the Maa nation",
+          "audioFile": null
+        },
+        {
+          "english": "Age-set",
+          "translation": "Ol-poror",
+          "pronunciation": "ohl-poh-rohr",
+          "context": "Plural: il-porori. Generational peer group binding men together for life",
+          "audioFile": null
+        },
+        {
+          "english": "Homestead / Boma",
+          "translation": "Eng-ang",
+          "pronunciation": "ehng-ahng",
+          "context": "Plural: ing-angite. Thorn-fenced communal village",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior village",
+          "translation": "E-manyatta",
+          "pronunciation": "eh-mahn-yaht-tah",
+          "context": "Plural: i-manyat. Specialized camp for morans during training",
+          "audioFile": null
+        },
+        {
+          "english": "Orphan",
+          "translation": "En-kerai o'kishin",
+          "pronunciation": "ehn-keh-rah-ee oh-kee-sheen",
+          "context": "Child without living parents",
+          "audioFile": null
+        },
+        {
+          "english": "Widow",
+          "translation": "Eng-apiani",
+          "pronunciation": "ehng-ah-pee-ah-nee",
+          "context": "Plural: ing-apiak",
+          "audioFile": null
+        },
+        {
+          "english": "Marriage",
+          "translation": "En-giama",
+          "pronunciation": "ehn-gee-ah-mah",
+          "context": "Plural: in-giamat. Marital alliance uniting families",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "warfare",
+      "name": "Warfare & Weapons",
+      "icon": "⚔️",
+      "entries": [
+        {
+          "english": "Spear",
+          "translation": "E-remet",
+          "pronunciation": "eh-reh-meht",
+          "context": "Plural: i-remeta. Long heavy spear carried by morans",
+          "audioFile": null
+        },
+        {
+          "english": "Spear blade / shaft",
+          "translation": "E-murt",
+          "pronunciation": "eh-moort",
+          "context": "Upper steel blade and socket of the spear",
+          "audioFile": null
+        },
+        {
+          "english": "Spear butt / counterweight",
+          "translation": "Ol-ngorat",
+          "pronunciation": "ohl-ngoh-raht",
+          "context": "Spiked iron base of spear used to stand it upright in earth",
+          "audioFile": null
+        },
+        {
+          "english": "War shield",
+          "translation": "E-long'o",
+          "pronunciation": "eh-lohng-goh",
+          "context": "Plural: i-long'oi. Buffalo-hide shield with heraldic clan markings",
+          "audioFile": null
+        },
+        {
+          "english": "Short sword",
+          "translation": "Ol-alem",
+          "pronunciation": "ohl-ah-lehm",
+          "context": "Plural: il-alema. Double-edged warrior broadsword (simi)",
+          "audioFile": null
+        },
+        {
+          "english": "Sword scabbard / Sheath",
+          "translation": "En-jashur",
+          "pronunciation": "ehn-jah-shoor",
+          "context": "Plural: in-jashurin. Red ochred leather sheath worn at hip",
+          "audioFile": null
+        },
+        {
+          "english": "War club / Knobkerrie",
+          "translation": "Ol-kuma",
+          "pronunciation": "ohl-koo-mah",
+          "context": "Plural: il-kuman. Hardwood throwing or striking club (rungu)",
+          "audioFile": null
+        },
+        {
+          "english": "Archery bow",
+          "translation": "Eng-auo",
+          "pronunciation": "ehng-ah-woo-oh",
+          "context": "Plural: ing-ai. Traditional hunting and defensive bow",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Em-bae",
+          "pronunciation": "ehm-bah-eh",
+          "context": "Plural: im-baa. Arrow with poisoned tip or iron point",
+          "audioFile": null
+        },
+        {
+          "english": "Blocked bleeding arrow",
+          "translation": "Ol-ngoreta",
+          "pronunciation": "ohl-ngoh-reh-tah",
+          "context": "Plural: il-ngoret. Blunt-shouldered arrow for tapping cattle blood",
+          "audioFile": null
+        },
+        {
+          "english": "Quiver",
+          "translation": "En-gidong",
+          "pronunciation": "ehn-gee-dohng",
+          "context": "Plural: in-gidongi. Leather arrow-case",
+          "audioFile": null
+        },
+        {
+          "english": "Ostrich feather headdress",
+          "translation": "Ol-mairutye",
+          "pronunciation": "ohl-mah-ee-roo-tyeh",
+          "context": "Plural: il-mairutien. Tall warrior headdress worn into battle",
+          "audioFile": null
+        },
+        {
+          "english": "Lion mane war headdress",
+          "translation": "Ol-lawaru",
+          "pronunciation": "ohl-lah-wah-roo",
+          "context": "Prized headdress worn only by morans who slew a lion single-handed",
+          "audioFile": null
+        },
+        {
+          "english": "War horn",
+          "translation": "E-mouo",
+          "pronunciation": "eh-moh-woo-oh",
+          "context": "Plural: i-mouarak. Kudu or buffalo horn blown to summon warriors",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle raid / Expedition",
+          "translation": "En-jore",
+          "pronunciation": "ehn-joh-reh",
+          "context": "Plural: in-joreitin / in-jorin. Organized cattle-recovery foray",
+          "audioFile": null
+        },
+        {
+          "english": "Battle / Combat",
+          "translation": "En-ara",
+          "pronunciation": "ehn-ah-rah",
+          "context": "Plural: in-arat. Clashing of forces in war",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior company / Troop",
+          "translation": "Em-puata",
+          "pronunciation": "ehm-poo-ah-tah",
+          "context": "Regiment or organized detachment of morans",
+          "audioFile": null
+        },
+        {
+          "english": "Enemy / Adversary",
+          "translation": "Ol-mangatinda",
+          "pronunciation": "ohl-mahn-gah-teen-dah",
+          "context": "Plural: il-mangati. Hostile combatant",
+          "audioFile": null
+        },
+        {
+          "english": "Guard / Sentinel",
+          "translation": "Ol-ariponi",
+          "pronunciation": "ohl-ah-ree-poh-nee",
+          "context": "Plural: il-aripok. Sentinel on night watch",
+          "audioFile": null
+        },
+        {
+          "english": "Wound / Battle scar",
+          "translation": "Ol-bae",
+          "pronunciation": "ohl-bah-eh",
+          "context": "Plural: il-baa. Battle injury or wound",
+          "audioFile": null
+        },
+        {
+          "english": "Victory",
+          "translation": "En-gitimirata",
+          "pronunciation": "ehn-gee-tee-mee-rah-tah",
+          "context": "Overcoming opponents in war",
+          "audioFile": null
+        },
+        {
+          "english": "Peace covenant",
+          "translation": "O-sotua",
+          "pronunciation": "oh-soh-too-ah",
+          "context": "Sacred bond of peace ending hostility",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Traditions",
+      "icon": "🙏",
+      "entries": [
+        {
+          "english": "God / Supreme Deity",
+          "translation": "Enkai",
+          "pronunciation": "ehn-kah-ee",
+          "context": "Supreme God of the Maasai, worshipped on sacred peaks like Ol Doinyo Lengai",
+          "audioFile": null
+        },
+        {
+          "english": "Benevolent God (Black God)",
+          "translation": "Enkai Narok",
+          "pronunciation": "ehn-kah-ee nah-rohk",
+          "context": "Manifestation of Enkai bringing gentle rain, peace, and abundance",
+          "audioFile": null
+        },
+        {
+          "english": "Fiery God (Red God)",
+          "translation": "Enkai Nanyokie",
+          "pronunciation": "ehn-kah-ee nah-nyoh-kee-eh",
+          "context": "Manifestation of Enkai associated with thunder, drought, and lightning",
+          "audioFile": null
+        },
+        {
+          "english": "Respect / Reverence",
+          "translation": "En-ganyit",
+          "pronunciation": "ehn-gahn-yeet",
+          "context": "Cornerstone Maasai moral virtue governing all social conduct and deference",
+          "audioFile": null
+        },
+        {
+          "english": "Prophet / Ritual Leader",
+          "translation": "Ol-oiboni",
+          "pronunciation": "ohl-oh-ee-boh-nee",
+          "context": "Plural: il-oibonok. Hereditary spiritual seer, healer, and ritual master",
+          "audioFile": null
+        },
+        {
+          "english": "Chief / Age-set Spokesman",
+          "translation": "Ol-aigwanani",
+          "pronunciation": "ohl-ah-eeg-wah-nah-nee",
+          "context": "Plural: il-aigwenak. Democratic leader chosen to represent an age-set",
+          "audioFile": null
+        },
+        {
+          "english": "Circumcision rite of passage",
+          "translation": "E-muratare",
+          "pronunciation": "eh-moo-rah-tah-reh",
+          "context": "Fundamental initiation into manhood and warrior status",
+          "audioFile": null
+        },
+        {
+          "english": "Newly circumcised initiate",
+          "translation": "O-sipolioi",
+          "pronunciation": "oh-see-poh-lee-oh-ee",
+          "context": "Plural: i-sipolio. Initiates wearing black cloaks and ostrich feathers",
+          "audioFile": null
+        },
+        {
+          "english": "Eunoto ceremony",
+          "translation": "E-unoto",
+          "pronunciation": "eh-oo-noh-toh",
+          "context": "Grand graduation ceremony where warriors transition to junior elderhood",
+          "audioFile": null
+        },
+        {
+          "english": "Ceremonial head shaving",
+          "translation": "E-barnoto",
+          "pronunciation": "eh-bahr-noh-toh",
+          "context": "Ritual shaving of a moran's long hair by his mother at Eunoto",
+          "audioFile": null
+        },
+        {
+          "english": "Elder council / Deliberation",
+          "translation": "En-kiguana",
+          "pronunciation": "ehn-kee-gwah-nah",
+          "context": "Plural: in-kiguanat. Democratic assembly where elders resolve disputes",
+          "audioFile": null
+        },
+        {
+          "english": "Blessing",
+          "translation": "E-maiyanata",
+          "pronunciation": "eh-mah-ee-yah-nah-tah",
+          "context": "Plural: i-maiyanat. Invocation of Enkai's blessing over people and livestock",
+          "audioFile": null
+        },
+        {
+          "english": "Curse / Sanction",
+          "translation": "Ol-deketa",
+          "pronunciation": "ohl-deh-keh-tah",
+          "context": "Plural: il-deket. Solemn pronouncement of retribution for breaking sacred taboos",
+          "audioFile": null
+        },
+        {
+          "english": "Sacrifice / Offering",
+          "translation": "Ol-asar",
+          "pronunciation": "ohl-ah-sahr",
+          "context": "Plural: il-asari. Animal offering dedicated to Enkai",
+          "audioFile": null
+        },
+        {
+          "english": "Medicinal plant / Herb",
+          "translation": "Ol-chani",
+          "pronunciation": "ohl-chah-nee",
+          "context": "Plural: il-keek. Sacred medicinal herbs, roots, and tree bark",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional healer / Doctor",
+          "translation": "Ol-abaani",
+          "pronunciation": "ohl-ah-bah-ah-nee",
+          "context": "Plural: il-abaak. Healer who treats fractures, wounds, and illness",
+          "audioFile": null
+        },
+        {
+          "english": "Song / Chanting",
+          "translation": "E-ranyata",
+          "pronunciation": "eh-rahn-yah-tah",
+          "context": "Plural: i-ranyat. Traditional rhythmic vocal chanting (also o-singolio)",
+          "audioFile": null
+        },
+        {
+          "english": "Ceremonial jumping dance",
+          "translation": "En-kipaata",
+          "pronunciation": "ehn-kee-pah-ah-tah",
+          "context": "Iconic high-leaping dance (adumu) performed by morans",
+          "audioFile": null
+        },
+        {
+          "english": "Custom / Ancestral way",
+          "translation": "En-diuni",
+          "pronunciation": "ehn-dee-oo-nee",
+          "context": "Ancestral custom and cultural tradition (also ororei li apa)",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle brand / Ear-mark",
+          "translation": "Ol-mishere",
+          "pronunciation": "ohl-mee-sheh-reh",
+          "context": "Plural: il-misherin. Clan heraldic brand placed on cattle",
+          "audioFile": null
+        },
+        {
+          "english": "Cowrie shell beadwork",
+          "translation": "O-segerai",
+          "pronunciation": "oh-seh-geh-rah-ee",
+          "context": "Plural: i-segera. White cowrie shells sewn onto ceremonial leather collars",
+          "audioFile": null
+        },
+        {
+          "english": "Spirit / Inner soul",
+          "translation": "Ol-tau",
+          "pronunciation": "ohl-tah-oo",
+          "context": "Plural: il-tauja. The human heart, spirit, and soul",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestral spirits",
+          "translation": "Il-omimyi",
+          "pronunciation": "eel-oh-meem-yee",
+          "context": "The departed fathers and ancestral lineage",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred peace bond",
+          "translation": "O-sotua",
+          "pronunciation": "oh-soh-too-ah",
+          "context": "Sacred bond of brotherhood and peace, literally 'umbilical cord'",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Actions & Verbs",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To go",
+          "translation": "A-lo",
+          "pronunciation": "ah-loh",
+          "context": "Infinitive: a-lo. Past: a-shomo. Imperative: shomo (go!)",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "A-lotu",
+          "pronunciation": "ah-loh-too",
+          "context": "Infinitive: a-lotu. Past: a-euo. Imperative: wou / wotu (come!)",
+          "audioFile": null
+        },
+        {
+          "english": "To eat",
+          "translation": "A-inos",
+          "pronunciation": "ah-ee-nohs",
+          "context": "Infinitive: a-inos. Past: a-tamoso. To eat food (also a-nya)",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "A-ok",
+          "pronunciation": "ah-ohk",
+          "context": "Infinitive: a-ok. Past: a-tooko. To drink water, milk, or broth",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "A-dol",
+          "pronunciation": "ah-dohl",
+          "context": "Infinitive: a-dol. Past: a-to-dua. To see / observe with eyes",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / To listen",
+          "translation": "A-ning",
+          "pronunciation": "ah-neeng",
+          "context": "Infinitive: a-ning. Past: a-to-ningo. To hear / understand / listen",
+          "audioFile": null
+        },
+        {
+          "english": "To dwell / To live",
+          "translation": "A-many",
+          "pronunciation": "ah-mahny",
+          "context": "Infinitive: a-many. Past: a-tamanya. To dwell in a place / inhabit a boma",
+          "audioFile": null
+        },
+        {
+          "english": "To sit / To remain",
+          "translation": "A-ton",
+          "pronunciation": "ah-tohn",
+          "context": "Infinitive: a-ton. Past: a-to-tona. To sit down / remain (also a-bik)",
+          "audioFile": null
+        },
+        {
+          "english": "To stand",
+          "translation": "A-itashe",
+          "pronunciation": "ah-ee-tah-sheh",
+          "context": "Infinitive: a-itashe. Past: a-itasheye. To stand upright",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / To converse",
+          "translation": "A-iro",
+          "pronunciation": "ah-ee-roh",
+          "context": "Infinitive: a-iro. Past: a-to-riro. Also a-jo (to say)",
+          "audioFile": null
+        },
+        {
+          "english": "To tell / To inform",
+          "translation": "A-limu",
+          "pronunciation": "ah-lee-moo",
+          "context": "Infinitive: a-limu. Past: a-to-limuo. To tell news / relate a story",
+          "audioFile": null
+        },
+        {
+          "english": "To know / To understand",
+          "translation": "A-iyolo",
+          "pronunciation": "ah-ee-yoh-loh",
+          "context": "Infinitive: a-iyolo. To know / comprehend",
+          "audioFile": null
+        },
+        {
+          "english": "To do / To work",
+          "translation": "A-as",
+          "pronunciation": "ah-ahs",
+          "context": "Infinitive: a-as. Past: a-ta-asa. To perform work / do",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "A-isho",
+          "pronunciation": "ah-ee-shoh",
+          "context": "Infinitive: a-isho. Past: a-t-ishoo. Imperative: injoo (give!)",
+          "audioFile": null
+        },
+        {
+          "english": "To take / To seize",
+          "translation": "A-ibung",
+          "pronunciation": "ah-ee-boong",
+          "context": "Infinitive: a-ibung. Past: a-t-ibunga. To catch / hold",
+          "audioFile": null
+        },
+        {
+          "english": "To bring / To fetch",
+          "translation": "A-iyau",
+          "pronunciation": "ah-ee-yah-oo",
+          "context": "Infinitive: a-iyau. Past: a-t-iyauo. To bring / retrieve",
+          "audioFile": null
+        },
+        {
+          "english": "To run",
+          "translation": "A-kwet",
+          "pronunciation": "ah-kweht",
+          "context": "Infinitive: a-kwet. Past: a-to-kweta. To sprint / run",
+          "audioFile": null
+        },
+        {
+          "english": "To walk",
+          "translation": "A-loilo",
+          "pronunciation": "ah-loh-ee-loh",
+          "context": "Infinitive: a-loilo. Past: a-to-loilo. To walk / stroll",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep / To lie down",
+          "translation": "A-irag",
+          "pronunciation": "ah-ee-rahg",
+          "context": "Infinitive: a-irag. Past: a-t-iraga. To lie down / sleep (also a-rora)",
+          "audioFile": null
+        },
+        {
+          "english": "To arise / To wake up",
+          "translation": "A-inyo",
+          "pronunciation": "ah-een-yoh",
+          "context": "Infinitive: a-inyo. Past: a-t-inyoyo. To stand up / awaken",
+          "audioFile": null
+        },
+        {
+          "english": "To love / To like",
+          "translation": "A-nyor",
+          "pronunciation": "ah-nyohr",
+          "context": "Infinitive: a-nyor. Past: a-to-nyora. To love / cherish",
+          "audioFile": null
+        },
+        {
+          "english": "To hate",
+          "translation": "A-iba",
+          "pronunciation": "ah-ee-bah",
+          "context": "Infinitive: a-iba. Past: a-to-ibaa. To detest / abhor",
+          "audioFile": null
+        },
+        {
+          "english": "To fear / To be afraid",
+          "translation": "A-ure",
+          "pronunciation": "ah-oo-reh",
+          "context": "Infinitive: a-ure. Past: a-t-uriwo. To fear / be timid",
+          "audioFile": null
+        },
+        {
+          "english": "To die",
+          "translation": "A-ye",
+          "pronunciation": "ah-yeh",
+          "context": "Infinitive: a-ye (a-ea). Past: a-tua (died)",
+          "audioFile": null
+        },
+        {
+          "english": "To strike / To kill",
+          "translation": "A-ar",
+          "pronunciation": "ah-ahr",
+          "context": "Infinitive: a-ar. Past: a-to-ara. To beat / kill (a-ar metua)",
+          "audioFile": null
+        },
+        {
+          "english": "To fight",
+          "translation": "A-arare",
+          "pronunciation": "ah-ah-rah-reh",
+          "context": "Infinitive: a-arare. Past: a-to-arare. To battle / quarrel",
+          "audioFile": null
+        },
+        {
+          "english": "To ask / To inquire",
+          "translation": "A-ikilikwan",
+          "pronunciation": "ah-ee-kee-leek-wahn",
+          "context": "Infinitive: a-ikilikwan. Past: a-t-ikilikwana. To ask a question",
+          "audioFile": null
+        },
+        {
+          "english": "To buy",
+          "translation": "A-inyangu",
+          "pronunciation": "ah-een-yahn-goo",
+          "context": "Infinitive: a-inyangu. Past: a-t-inyangua. To purchase goods",
+          "audioFile": null
+        },
+        {
+          "english": "To sell",
+          "translation": "A-mir",
+          "pronunciation": "ah-meer",
+          "context": "Infinitive: a-mir. Past: a-to-miro. To sell / trade",
+          "audioFile": null
+        },
+        {
+          "english": "To cook / To boil",
+          "translation": "A-yer",
+          "pronunciation": "ah-yehr",
+          "context": "Infinitive: a-yer. Past: a-to-yero. To boil / prepare food",
+          "audioFile": null
+        },
+        {
+          "english": "To roast / To burn",
+          "translation": "A-pej",
+          "pronunciation": "ah-pehj",
+          "context": "Infinitive: a-pej. Past: a-to-pejo. To roast meat / ignite fire",
+          "audioFile": null
+        },
+        {
+          "english": "To milk",
+          "translation": "A-lep",
+          "pronunciation": "ah-lehp",
+          "context": "Infinitive: a-lep. Past: a-to-lepo. To milk cows or goats",
+          "audioFile": null
+        },
+        {
+          "english": "To cut",
+          "translation": "A-dung",
+          "pronunciation": "ah-doong",
+          "context": "Infinitive: a-dung. Past: a-to-dungo. To sever with a knife",
+          "audioFile": null
+        },
+        {
+          "english": "To pierce / To spear",
+          "translation": "A-rem",
+          "pronunciation": "ah-rehm",
+          "context": "Infinitive: a-rem. Past: a-to-remo. To stab with a spear",
+          "audioFile": null
+        },
+        {
+          "english": "To sing",
+          "translation": "A-rany",
+          "pronunciation": "ah-rahny",
+          "context": "Infinitive: a-rany. Past: a-to-ranyo. To sing / chant",
+          "audioFile": null
+        },
+        {
+          "english": "To dance / To leap",
+          "translation": "A-puk",
+          "pronunciation": "ah-pook",
+          "context": "Infinitive: a-puk / a-itiam. To leap high in traditional dance",
+          "audioFile": null
+        },
+        {
+          "english": "To bless",
+          "translation": "A-maiyan",
+          "pronunciation": "ah-mah-ee-yahn",
+          "context": "Infinitive: a-maiyan. Past: a-to-maiyano. To invoke divine favor",
+          "audioFile": null
+        },
+        {
+          "english": "To pray / To beg",
+          "translation": "A-omon",
+          "pronunciation": "ah-oh-mohn",
+          "context": "Infinitive: a-omon. Past: a-to-omono. To pray to Enkai / petition",
+          "audioFile": null
+        },
+        {
+          "english": "To laugh",
+          "translation": "A-kweni",
+          "pronunciation": "ah-kweh-nee",
+          "context": "Infinitive: a-kweni. Past: a-to-kwenia. To laugh",
+          "audioFile": null
+        },
+        {
+          "english": "To cry / To weep",
+          "translation": "A-ishir",
+          "pronunciation": "ah-ee-sheer",
+          "context": "Infinitive: a-ishir. Past: a-t-ishira. To weep or wail",
+          "audioFile": null
+        },
+        {
+          "english": "To wash",
+          "translation": "A-isuj",
+          "pronunciation": "ah-ee-sooj",
+          "context": "Infinitive: a-isuj. Past: a-t-isujo. To wash with water (also a-itukuo)",
+          "audioFile": null
+        },
+        {
+          "english": "To guard / To protect",
+          "translation": "A-rip",
+          "pronunciation": "ah-reep",
+          "context": "Infinitive: a-rip. Past: a-to-ripo. To guard cattle / protect boma",
+          "audioFile": null
+        },
+        {
+          "english": "To open",
+          "translation": "A-bol",
+          "pronunciation": "ah-bohl",
+          "context": "Infinitive: a-bol. Past: a-to-bolo. To uncover / open doorway",
+          "audioFile": null
+        },
+        {
+          "english": "To shut / To close",
+          "translation": "A-iken",
+          "pronunciation": "ah-ee-kehn",
+          "context": "Infinitive: a-iken. Past: a-t-ikeno. To close door / fasten",
+          "audioFile": null
+        },
+        {
+          "english": "To build",
+          "translation": "A-shet",
+          "pronunciation": "ah-sheht",
+          "context": "Infinitive: a-shet. Past: a-to-sheto. To construct a house or boma",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

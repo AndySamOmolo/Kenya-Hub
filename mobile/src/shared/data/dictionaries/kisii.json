@@ -1,0 +1,1285 @@
+{
+  "languageId": "kisii",
+  "languageName": "Kisii (Ekegusii)",
+  "family": "bantu",
+  "nativeName": "Ekegusii",
+  "script": "Latin",
+  "speakerCount": 2700000,
+  "counties": [
+    "Kisii",
+    "Nyamira"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.1.0",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Carefully curated from 'A Practical Introduction to Gusii' (1956) and 'The Tense System of Gusii' (1960) by Wilfred H. Whiteley (East African Literature Bureau / EAISR), with verified Highland Ekegusii phonology, syntax, and kinship terminology assisted by Erasto Abuga.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / Morning greeting",
+          "translation": "Bwakiire",
+          "pronunciation": "bwah-kee-reh",
+          "context": "Universal morning salutation (lit. 'How did it dawn?')",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Mbuya omuerio",
+          "pronunciation": "m-boo-yah oh-mweh-ree-oh",
+          "context": "Traditional morning greeting wishing a good morning",
+          "audioFile": null
+        },
+        {
+          "english": "Good afternoon",
+          "translation": "Mbuya omotienyi",
+          "pronunciation": "m-boo-yah oh-moh-tee-ehn-yee",
+          "context": "Afternoon greeting (lit. 'good daylight/sun period')",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Mbuya mogari",
+          "pronunciation": "m-boo-yah moh-gah-ree",
+          "context": "Evening greeting as dusk approaches",
+          "audioFile": null
+        },
+        {
+          "english": "Goodnight / Evening greeting",
+          "translation": "Bwairire",
+          "pronunciation": "bwah-ee-ree-reh",
+          "context": "Salutation used from midday onwards and into dusk / night",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome / Hello",
+          "translation": "Oyagore",
+          "pronunciation": "oh-yah-goh-reh",
+          "context": "Warm welcoming salutation to guests",
+          "audioFile": null
+        },
+        {
+          "english": "Response: I am well",
+          "translation": "Mbuya mono",
+          "pronunciation": "m-boo-yah moh-noh",
+          "context": "Standard reply to Bwakiire ('Very well / good')",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Naki ase?",
+          "pronunciation": "nah-kee ah-seh",
+          "context": "Common conversational inquiry ('How is it with you?')",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine / well",
+          "translation": "Ndi botire",
+          "pronunciation": "n-dee boh-tee-reh",
+          "context": "Standard affirmative reply",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning (Daylight)",
+          "translation": "Orogoro",
+          "pronunciation": "oh-roh-goh-roh",
+          "context": "Salutation honoring early daylight",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Ase mono / Buya mono",
+          "pronunciation": "ah-seh moh-noh / boo-yah moh-noh",
+          "context": "'Ase mono' = thank you very much",
+          "audioFile": null
+        },
+        {
+          "english": "Go well",
+          "translation": "Genda buya",
+          "pronunciation": "gehn-dah boo-yah",
+          "context": "Blessing spoken to departing traveler",
+          "audioFile": null
+        },
+        {
+          "english": "Stay well",
+          "translation": "Manya buya",
+          "pronunciation": "mah-nyah boo-yah",
+          "context": "Spoken to the host remaining behind",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye / We shall converse",
+          "translation": "Togokoana",
+          "pronunciation": "toh-goh-koh-ah-nah",
+          "context": "Courteous parting phrase",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Emwe / Eyemo",
+          "pronunciation": "ehm-weh / eh-yeh-moh",
+          "context": "Numeral 1 (Adjective stem: -mo)",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Ebere / Ibere",
+          "pronunciation": "eh-beh-reh / ee-beh-reh",
+          "context": "Numeral 2 (Adjective stem: -bere)",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Isatu / Etato",
+          "pronunciation": "ee-sah-too / eh-tah-toh",
+          "context": "Numeral 3 (Adjective stem: -tatu / -shato)",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Inye / Ene",
+          "pronunciation": "een-yeh / eh-neh",
+          "context": "Numeral 4 (Adjective stem: -ne)",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Isaano / Etano",
+          "pronunciation": "ee-sah-ah-noh / eh-tah-noh",
+          "context": "Numeral 5 (Adjective stem: -taano)",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Esita",
+          "pronunciation": "eh-see-tah",
+          "context": "Numeral 6",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Esobaa / Musaafo",
+          "pronunciation": "eh-soh-bah / moo-sah-ah-foh",
+          "context": "Numeral 7",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Enane",
+          "pronunciation": "eh-nah-neh",
+          "context": "Numeral 8",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Engenda",
+          "pronunciation": "ehn-gehn-dah",
+          "context": "Numeral 9",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Ekoome",
+          "pronunciation": "eh-koh-meh",
+          "context": "Numeral 10 (Plural: Amakoome)",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Amakoome abere",
+          "pronunciation": "ah-mah-koh-meh ah-beh-reh",
+          "context": "Lit. 'two tens'",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Amakoome atato",
+          "pronunciation": "ah-mah-koh-meh ah-tah-toh",
+          "context": "Lit. 'three tens'",
+          "audioFile": null
+        },
+        {
+          "english": "Fifty",
+          "translation": "Amakoome ataano",
+          "pronunciation": "ah-mah-koh-meh ah-tah-ah-noh",
+          "context": "Lit. 'five tens'",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "Egana / Rigana",
+          "pronunciation": "eh-gah-nah / ree-gah-nah",
+          "context": "Numeral 100 (also Emerongo ekomi)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "My father",
+          "translation": "Tata",
+          "pronunciation": "tah-tah",
+          "context": "My father (Whiteley Ch. 48, p. 90)",
+          "audioFile": null
+        },
+        {
+          "english": "Your father",
+          "translation": "So / Iso",
+          "pronunciation": "soh / ee-soh",
+          "context": "Your father (2nd person singular kinship)",
+          "audioFile": null
+        },
+        {
+          "english": "His/her father",
+          "translation": "Ise",
+          "pronunciation": "ee-seh",
+          "context": "His or her father (3rd person singular kinship)",
+          "audioFile": null
+        },
+        {
+          "english": "My mother",
+          "translation": "Baba / Baaba",
+          "pronunciation": "bah-bah / bah-ah-bah",
+          "context": "My mother (Whiteley Ch. 48, p. 90)",
+          "audioFile": null
+        },
+        {
+          "english": "Your mother",
+          "translation": "Nyoko",
+          "pronunciation": "nyoh-koh",
+          "context": "Your mother (2nd person maternal kinship)",
+          "audioFile": null
+        },
+        {
+          "english": "His/her mother",
+          "translation": "Ngina / Ng'ina",
+          "pronunciation": "ngee-nah / ng-ee-nah",
+          "context": "His or her mother (3rd person maternal kinship)",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Omwana",
+          "pronunciation": "ohm-wah-nah",
+          "context": "Child (Class 1/2, plural: Abaana)",
+          "audioFile": null
+        },
+        {
+          "english": "Children",
+          "translation": "Abaana",
+          "pronunciation": "ah-bah-ah-nah",
+          "context": "Children (Class 2 plural of Omwana)",
+          "audioFile": null
+        },
+        {
+          "english": "Young man / Warrior",
+          "translation": "Omomura",
+          "pronunciation": "oh-moh-moo-rah",
+          "context": "Unmarried circumcised youth (Class 1/2, pl: Abamura)",
+          "audioFile": null
+        },
+        {
+          "english": "Young woman / Maiden",
+          "translation": "Omoiseke",
+          "pronunciation": "oh-moh-ee-seh-keh",
+          "context": "Unmarried young woman / maiden (Class 1/2, pl: Abaiseke)",
+          "audioFile": null
+        },
+        {
+          "english": "Elderly woman",
+          "translation": "Omongina / Omong'ina",
+          "pronunciation": "oh-moh-ngee-nah",
+          "context": "Revered elder woman (Class 1/2, pl: Abang'ina)",
+          "audioFile": null
+        },
+        {
+          "english": "Elderly man / Elder",
+          "translation": "Omogaaka",
+          "pronunciation": "oh-moh-gah-ah-kah",
+          "context": "Revered elder or old man (Class 1/2, pl: Abagaaka)",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestor / Grandchild",
+          "translation": "Omochakoro / Omochokoro",
+          "pronunciation": "oh-moh-chah-koh-roh",
+          "context": "Lineage forebear, ancestor, or grandchild (Class 1/2, pl: Abachokoro)",
+          "audioFile": null
+        },
+        {
+          "english": "Brother / Sister (Sibling)",
+          "translation": "Mwana'nto / Momura ominto",
+          "pronunciation": "mwah-nah-n-toh / moh-moo-rah oh-meen-toh",
+          "context": "'Mwana'nto' = sibling; 'Momura ominto' = my/our brother",
+          "audioFile": null
+        },
+        {
+          "english": "Sister (my/our sister)",
+          "translation": "Moiseke ominto",
+          "pronunciation": "moh-ee-seh-keh oh-meen-toh",
+          "context": "My/our unmarried sister (for married sister: Mosubaati ominto)",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband",
+          "translation": "Omosaacha",
+          "pronunciation": "oh-moh-sah-ah-chah",
+          "context": "Adult male or husband (Class 1/2, pl: Abasaacha)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "Omokungu",
+          "pronunciation": "oh-moh-koon-goo",
+          "context": "Adult married woman or wife (Class 1/2, pl: Abakungu; respectful: Omorugi)",
+          "audioFile": null
+        },
+        {
+          "english": "Young boy",
+          "translation": "Omoisia",
+          "pronunciation": "oh-moh-ee-see-ah",
+          "context": "Young uncircumcised boy (Class 1/2, pl: Abaisia)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather",
+          "translation": "Sokoro",
+          "pronunciation": "soh-koh-roh",
+          "context": "Grandfather on either side (pl: Chisokoro)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmother",
+          "translation": "Maagokoro",
+          "pronunciation": "mah-ah-goh-koh-roh",
+          "context": "Grandmother on either side (pl: Abamaagokoro)",
+          "audioFile": null
+        },
+        {
+          "english": "Maternal uncle",
+          "translation": "Maame",
+          "pronunciation": "mah-ah-meh",
+          "context": "Mother's brother (Class 1/2, pl: Abamaame)",
+          "audioFile": null
+        },
+        {
+          "english": "Person / Human being",
+          "translation": "Omonto",
+          "pronunciation": "oh-mohn-toh",
+          "context": "Human being / person (Class 1/2, pl: Abanto)",
+          "audioFile": null
+        },
+        {
+          "english": "Friend / Comrade",
+          "translation": "Omosaani / Osomwabo",
+          "pronunciation": "oh-moh-sah-ah-nee / oh-sohm-wah-boh",
+          "context": "Friend or trusted companion (Class 1/2)",
+          "audioFile": null
+        },
+        {
+          "english": "Leader / Chief",
+          "translation": "Omogambi",
+          "pronunciation": "oh-moh-gahm-bee",
+          "context": "Adjudicator, chief, or leader (Class 1/2, pl: Abagambi)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Sun / Sunlight",
+          "translation": "Erioba / Omobaso",
+          "pronunciation": "eh-ree-oh-bah / oh-moh-bah-soh",
+          "context": "The sun or daylight (Class 5/6 Rioba; Class 3/4 Omobaso)",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Amache / Amaache",
+          "pronunciation": "ah-mah-cheh / ah-mah-ah-cheh",
+          "context": "Water (Class 6 plural liquid noun)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Embura / Enyaroka",
+          "pronunciation": "ehm-boo-rah / ehn-yah-roh-kah",
+          "context": "Rain (Class 9/10; verb: -twa = to rain)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "Emondo / Rire",
+          "pronunciation": "eh-mohn-doh / ree-reh",
+          "context": "Cloud in the sky (Class 5/6 Rire, pl: Amare)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest / Woodland",
+          "translation": "Egetutu / Orosaana",
+          "pronunciation": "eh-geh-too-too / oh-roh-sah-ah-nah",
+          "context": "Forest or wooded area (Class 7/8 Egetutu; Class 11/10a Orosaana; also Rinani)",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "Oroche / Orooche",
+          "pronunciation": "oh-roh-cheh / oh-roh-oh-cheh",
+          "context": "River or stream (Class 11/10a, pl: Chindoche)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "Emotwe / Egetunwa",
+          "pronunciation": "eh-moh-tweh / eh-geh-toon-wah",
+          "context": "Hill or mountain (Class 7/8 Egetunwa, pl: Ebitunwa)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Omote",
+          "pronunciation": "oh-moh-teh",
+          "context": "Tree (Class 3/4, pl: Emete)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Omorero",
+          "pronunciation": "oh-moh-reh-roh",
+          "context": "Fire or flames (Class 3/4, pl: Emerero)",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "Omotienyi",
+          "pronunciation": "oh-moh-tee-ehn-yee",
+          "context": "Moon or calendar month (Class 3/4, pl: Emetienyi)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "Obonyansi",
+          "pronunciation": "oh-boh-nyahn-see",
+          "context": "Grass or pasture (Class 14/6; Dry grass: Rise)",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "Embeo",
+          "pronunciation": "ehm-beh-oh",
+          "context": "Wind or cool breeze (Class 9/10)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake / Sea",
+          "translation": "Enyancha",
+          "pronunciation": "ehn-yahn-chah",
+          "context": "Lake Victoria or open sea (Class 9/10)",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "Rigena",
+          "pronunciation": "ree-geh-nah",
+          "context": "Stone (Class 5/6, pl: Amagena; small pebble: Akagena)",
+          "audioFile": null
+        },
+        {
+          "english": "Day / Daylight",
+          "translation": "Rituko",
+          "pronunciation": "ree-too-koh",
+          "context": "Day (Class 5/6, pl: Amatuko; daytime: Mobaso)",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Obotuko",
+          "pronunciation": "oh-boh-too-koh",
+          "context": "Night (Class 14/6; Botuko = during the night)",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "Erioki",
+          "pronunciation": "eh-ree-oh-kee",
+          "context": "Smoke from fire (Class 5/6, pl: Amarioki)",
+          "audioFile": null
+        },
+        {
+          "english": "Sand",
+          "translation": "Omochanga / Omokenye",
+          "pronunciation": "oh-moh-chahn-gah / oh-moh-keh-nyeh",
+          "context": "Sand (Class 3/4)",
+          "audioFile": null
+        },
+        {
+          "english": "Farm / Shamba",
+          "translation": "Omogondo",
+          "pronunciation": "oh-moh-gohn-doh",
+          "context": "Cultivated farm or field (Class 3/4, pl: Emegondo)",
+          "audioFile": null
+        },
+        {
+          "english": "God (Supreme Creator)",
+          "translation": "Engoro / Nyasae",
+          "pronunciation": "ehn-goh-roh / nyah-sah-eh",
+          "context": "Supreme Deity (Engoro is classical Gusii; Nyasae assimilated)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Cow / Cattle",
+          "translation": "Eng'ombe",
+          "pronunciation": "ehng-ohm-beh",
+          "context": "Cow or cattle (Class 9/10, pl: Ching'ombe)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Embene / Embori",
+          "pronunciation": "ehm-beh-neh / ehm-boh-ree",
+          "context": "Goat (Class 9/10, pl: Chimbene / Chimbori)",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken / Hen",
+          "translation": "Engoko",
+          "pronunciation": "ehn-goh-koh",
+          "context": "Chicken or hen (Class 9/10, pl: Chingoko)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Embwa / Ese",
+          "pronunciation": "ehm-bwah / eh-seh",
+          "context": "Domestic dog (Class 9/10, pl: Chise)",
+          "audioFile": null
+        },
+        {
+          "english": "Mole / Badger",
+          "translation": "Etuko / Eng'uko",
+          "pronunciation": "eh-too-koh / ehng-oo-koh",
+          "context": "Mole or burrowing creature (featured in Gusii folk stories, Class 9/10)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "Engwe",
+          "pronunciation": "ehn-gweh",
+          "context": "Leopard (Class 9/10, pl: Chingwe)",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Entaare / Endo",
+          "pronunciation": "ehn-tah-ah-reh / ehn-doh",
+          "context": "Lion (Class 9/10, pl: Chintaare / Chindo)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Enchogu",
+          "pronunciation": "ehn-choh-goo",
+          "context": "Elephant (Class 9/10, pl: Chinchogu)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Eng'ondi / Endaiga",
+          "pronunciation": "ehng-ohn-dee / ehn-dah-ee-gah",
+          "context": "Sheep (Class 9/10, pl: Ching'ondi / Chindaiga)",
+          "audioFile": null
+        },
+        {
+          "english": "Calf / Heifer",
+          "translation": "Emoori",
+          "pronunciation": "eh-moh-oh-ree",
+          "context": "Calf or young heifer (Class 9/10, pl: Chimoori)",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Enyoni",
+          "pronunciation": "ehn-yoh-nee",
+          "context": "Bird (Class 9/10, pl: Chinyoni)",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Enswe",
+          "pronunciation": "ehn-sweh",
+          "context": "Fish (Class 9/10, pl: Chinswe)",
+          "audioFile": null
+        },
+        {
+          "english": "Hare",
+          "translation": "Egesusu",
+          "pronunciation": "eh-geh-soo-soo",
+          "context": "Hare (Class 7/8, pl: Ebisusu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "Eeeri",
+          "pronunciation": "eh-eh-eh-ree",
+          "context": "Bull (Class 9/10, pl: Chieeri)",
+          "audioFile": null
+        },
+        {
+          "english": "Wild beast / Snake",
+          "translation": "Eng'iti",
+          "pronunciation": "ehng-ee-tee",
+          "context": "General term for wild animal or snake (Class 9/10, pl: Ching'iti)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Household",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Ugali / Porridge",
+          "translation": "Obokima",
+          "pronunciation": "oh-boh-kee-mah",
+          "context": "Highland staple ugali / stiff grain porridge (Class 14/6)",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Amabere / Amabeere",
+          "pronunciation": "ah-mah-beh-reh / ah-mah-beh-eh-reh",
+          "context": "Fresh cow milk (Class 6 plural liquid noun)",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Enyama",
+          "pronunciation": "ehn-yah-mah",
+          "context": "Meat (Class 9/10, pl: Chinyama)",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "Chindagera / Endaagera",
+          "pronunciation": "cheen-dah-geh-rah / ehn-dah-ah-geh-rah",
+          "context": "Food or sustenance (Class 9/10, derived from verb -raagera)",
+          "audioFile": null
+        },
+        {
+          "english": "Banana / Matoke",
+          "translation": "Ritooke / Ritoke",
+          "pronunciation": "ree-toh-oh-keh / ree-toh-keh",
+          "context": "Banana or cooking plantain (Class 5/6, pl: Amatooke)",
+          "audioFile": null
+        },
+        {
+          "english": "Maize / Corn",
+          "translation": "Egetuuma / Ebando",
+          "pronunciation": "eh-geh-too-oo-mah / eh-bahn-doh",
+          "context": "Maize cobs or grain (Class 7/8 Egetuuma; Class 9/10 Ebando)",
+          "audioFile": null
+        },
+        {
+          "english": "Beans",
+          "translation": "Ching'ende",
+          "pronunciation": "cheen-gehn-deh",
+          "context": "Cooked or harvested beans (Class 10 plural of Eng'ende)",
+          "audioFile": null
+        },
+        {
+          "english": "Vegetables / Greens",
+          "translation": "Enyeni / Nyeni",
+          "pronunciation": "ehn-yeh-nee / nyeh-nee",
+          "context": "Edible green vegetables (Class 9/10, pl: Chinyeni; also Orweni)",
+          "audioFile": null
+        },
+        {
+          "english": "Flour",
+          "translation": "Obosie",
+          "pronunciation": "oh-boh-see-eh",
+          "context": "Milled flour for preparing porridge (Class 14/6)",
+          "audioFile": null
+        },
+        {
+          "english": "Millet",
+          "translation": "Obori",
+          "pronunciation": "oh-boh-ree",
+          "context": "Bulrush millet, traditional ancestral grain (Class 14)",
+          "audioFile": null
+        },
+        {
+          "english": "Sorghum",
+          "translation": "Amaemba / Riemba",
+          "pronunciation": "ah-mah-ehm-bah / ree-ehm-bah",
+          "context": "Sorghum grain (Class 5/6, usually plural Amaemba)",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "Omoonyo",
+          "pronunciation": "oh-moh-ohn-yoh",
+          "context": "Salt for seasoning (Class 3/4)",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking fat / Oil",
+          "translation": "Amaguta",
+          "pronunciation": "ah-mah-goo-tah",
+          "context": "Fat, butter, or cooking oil (Class 6)",
+          "audioFile": null
+        },
+        {
+          "english": "Cassava",
+          "translation": "Omwogo",
+          "pronunciation": "ohm-woh-goh",
+          "context": "Cassava tuber (Class 3/4, pl: Emiogo)",
+          "audioFile": null
+        },
+        {
+          "english": "Gruel / Porridge",
+          "translation": "Erongoori",
+          "pronunciation": "eh-rohn-goh-oh-ree",
+          "context": "Thin gruel / porridge drink (Class 9/10)",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "Rigena ri'engoko",
+          "pronunciation": "ree-geh-nah ree-ehn-goh-koh",
+          "context": "Egg (lit. 'stone of a chicken', Class 5/6, pl: Amagena y'engoko)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Home & Village",
+      "icon": "🏠",
+      "entries": [
+        {
+          "english": "House / Home",
+          "translation": "Enyomba",
+          "pronunciation": "ehn-yohm-bah",
+          "context": "House or family abode (Class 9/10, pl: Chinyomba)",
+          "audioFile": null
+        },
+        {
+          "english": "Bed",
+          "translation": "Egetanda / Oborere",
+          "pronunciation": "eh-geh-tahn-dah / oh-boh-reh-reh",
+          "context": "Bed (Class 7/8 Egetanda; Class 14/6 Oborere)",
+          "audioFile": null
+        },
+        {
+          "english": "Chair / Stool",
+          "translation": "Ekerogo",
+          "pronunciation": "eh-keh-roh-goh",
+          "context": "Stool or wooden seat (Class 7/8, pl: Ebirogo)",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "Enyongo",
+          "pronunciation": "ehn-yohn-goh",
+          "context": "Clay cooking pot (Class 9/10, pl: Chinyongo)",
+          "audioFile": null
+        },
+        {
+          "english": "Knife",
+          "translation": "Omoyio",
+          "pronunciation": "oh-moh-yee-oh",
+          "context": "Knife (Class 3/4, pl: Emeyio)",
+          "audioFile": null
+        },
+        {
+          "english": "Hoe",
+          "translation": "Obokombe",
+          "pronunciation": "oh-boh-kohm-beh",
+          "context": "Agricultural hoe (Class 14/6, pl: Amakombe)",
+          "audioFile": null
+        },
+        {
+          "english": "Basket",
+          "translation": "Egetonga",
+          "pronunciation": "eh-geh-tohn-gah",
+          "context": "Storage or carrying basket (Class 7/8, pl: Ebitonga)",
+          "audioFile": null
+        },
+        {
+          "english": "Gourd / Calabash",
+          "translation": "Ekerandi",
+          "pronunciation": "eh-keh-rahn-dee",
+          "context": "Gourd container (Class 7/8, pl: Ebirandi)",
+          "audioFile": null
+        },
+        {
+          "english": "Village / Homestead",
+          "translation": "Omochie",
+          "pronunciation": "oh-moh-chee-eh",
+          "context": "Village, homestead, or settlement (Class 3/4, pl: Emechie)",
+          "audioFile": null
+        },
+        {
+          "english": "Door (family entrance)",
+          "translation": "Egesieri",
+          "pronunciation": "eh-geh-see-eh-ree",
+          "context": "Everyday entrance door (Class 7/8, pl: Ebisieri)",
+          "audioFile": null
+        },
+        {
+          "english": "Fence",
+          "translation": "Orobago",
+          "pronunciation": "oh-roh-bah-goh",
+          "context": "Garden or compound fence (Class 11/10a, pl: Chimbago)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "Ritimo",
+          "pronunciation": "ree-tee-moh",
+          "context": "Traditional spear (Class 5/6, pl: Amatimo)",
+          "audioFile": null
+        },
+        {
+          "english": "Granary",
+          "translation": "Ekiage",
+          "pronunciation": "eh-kee-ah-geh",
+          "context": "Cereal storage granary (Class 7/8, pl: Ebiage)",
+          "audioFile": null
+        },
+        {
+          "english": "Firewood",
+          "translation": "Oroko",
+          "pronunciation": "oh-roh-koh",
+          "context": "Stick of firewood (Class 11/10a, pl: Chinko)",
+          "audioFile": null
+        },
+        {
+          "english": "Courtyard",
+          "translation": "Ekeoreri",
+          "pronunciation": "eh-keh-oh-reh-ree",
+          "context": "Homestead forecourt or courtyard (Class 7/8, pl: Ebioreri)",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle byre",
+          "translation": "Obweeri",
+          "pronunciation": "oh-bweh-eh-ree",
+          "context": "Enclosure for livestock (Class 14/6, pl: Ameeri)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts",
+      "icon": "🧠",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "Omotwe",
+          "pronunciation": "oh-moh-tweh",
+          "context": "Head (Class 3/4, pl: Emetwe)",
+          "audioFile": null
+        },
+        {
+          "english": "Body",
+          "translation": "Omobere",
+          "pronunciation": "oh-moh-beh-reh",
+          "context": "Human body (Class 3/4, pl: Emebere)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Riiso",
+          "pronunciation": "ree-ee-soh",
+          "context": "Eye (Class 5/6, pl: Amaiso)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "Riino",
+          "pronunciation": "ree-ee-noh",
+          "context": "Tooth (Class 5/6, pl: Amaino)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Okutu / Ogoto",
+          "pronunciation": "oh-koo-too / oh-goh-toh",
+          "context": "Ear (Class 15/6, pl: Amatwi / Amagoto)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "Okoboko",
+          "pronunciation": "oh-koh-boh-koh",
+          "context": "Arm or hand (Class 15/6, pl: Amaboko)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "Okogoro",
+          "pronunciation": "oh-koh-goh-roh",
+          "context": "Leg or foot (Class 15/6, pl: Amagoro)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart / Conscience",
+          "translation": "Engoro",
+          "pronunciation": "ehn-goh-roh",
+          "context": "Heart or soul (Class 9/10)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Amanyinga",
+          "pronunciation": "ah-mah-nyeen-gah",
+          "context": "Blood (Class 6 plural)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "Ekiara",
+          "pronunciation": "eh-kee-ah-rah",
+          "context": "Finger (Class 7/8, pl: Ebiara)",
+          "audioFile": null
+        },
+        {
+          "english": "Forehead",
+          "translation": "Obosio",
+          "pronunciation": "oh-boh-see-oh",
+          "context": "Forehead (Class 14/6)",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "Ekiyeni",
+          "pronunciation": "eh-kee-yeh-nee",
+          "context": "Face, appearance (Class 7/8, pl: Ebiyeni)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Riuga",
+          "pronunciation": "ree-oo-gah",
+          "context": "Bone (Class 5/6, pl: Amauga)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs & Actions",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To do / work",
+          "translation": "Gokora",
+          "pronunciation": "goh-koh-rah",
+          "context": "Infinitive verb: to do, work, or make (Stem: -kora)",
+          "audioFile": null
+        },
+        {
+          "english": "To read / learn",
+          "translation": "Gosoma",
+          "pronunciation": "goh-soh-mah",
+          "context": "Infinitive verb: to read or learn (Stem: -soma)",
+          "audioFile": null
+        },
+        {
+          "english": "To return / go home",
+          "translation": "Gotaaha",
+          "pronunciation": "goh-tah-ah-hah",
+          "context": "Infinitive verb: to return home, enter (Stem: -taaha)",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Gocha",
+          "pronunciation": "goh-chah",
+          "context": "Infinitive verb: to arrive, come (Stem: -cha; Imperative: Nchuo!)",
+          "audioFile": null
+        },
+        {
+          "english": "To go",
+          "translation": "Gogenda",
+          "pronunciation": "goh-gehn-dah",
+          "context": "Infinitive verb: to go, depart (Stem: -genda; also Gochia)",
+          "audioFile": null
+        },
+        {
+          "english": "To laugh",
+          "translation": "Goseka",
+          "pronunciation": "goh-seh-kah",
+          "context": "Infinitive verb: to laugh (Stem: -seka)",
+          "audioFile": null
+        },
+        {
+          "english": "To eat",
+          "translation": "Koria",
+          "pronunciation": "koh-ree-ah",
+          "context": "Infinitive verb: to consume food (Stem: -ria; also -raagera)",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Konywa",
+          "pronunciation": "koh-nywah",
+          "context": "Infinitive verb: to drink liquids (Stem: -nywa)",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "Korora",
+          "pronunciation": "koh-roh-rah",
+          "context": "Infinitive verb: to see, look, behold (Stem: -rora)",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / feel",
+          "translation": "Koigwa",
+          "pronunciation": "koh-ee-gwah",
+          "context": "Infinitive verb: to hear, perceive, feel (Stem: -iigwa)",
+          "audioFile": null
+        },
+        {
+          "english": "To leave / abandon",
+          "translation": "Gotiga",
+          "pronunciation": "goh-tee-gah",
+          "context": "Infinitive verb: to leave behind, abandon (Stem: -tiga)",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "Gokunda / Kwanche",
+          "pronunciation": "goh-koon-dah / kwahn-cheh",
+          "context": "Infinitive verb: to love, like, care for (Stem: -kunda / -ancha)",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "Komanya",
+          "pronunciation": "koh-mah-nyah",
+          "context": "Infinitive verb: to know, understand (Stem: -manya)",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / converse",
+          "translation": "Gokoana",
+          "pronunciation": "goh-koh-ah-nah",
+          "context": "Infinitive verb: to speak, talk, converse (Stem: -kwana)",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "Goruga",
+          "pronunciation": "goh-roo-gah",
+          "context": "Infinitive verb: to cook porridge (Stem: -ruga; -yeka = to boil/stew)",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate",
+          "translation": "Gorema",
+          "pronunciation": "goh-reh-mah",
+          "context": "Infinitive verb: to hoe, dig, farm (Stem: -rema)",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep",
+          "translation": "Goraara",
+          "pronunciation": "goh-rah-ah-rah",
+          "context": "Infinitive verb: to sleep, rest (Stem: -raara)",
+          "audioFile": null
+        },
+        {
+          "english": "To sing",
+          "translation": "Goteera",
+          "pronunciation": "goh-teh-eh-rah",
+          "context": "Infinitive verb: to sing (Stem: -teera)",
+          "audioFile": null
+        },
+        {
+          "english": "To buy",
+          "translation": "Gogora",
+          "pronunciation": "goh-goh-rah",
+          "context": "Infinitive verb: to buy or trade (Stem: -gora)",
+          "audioFile": null
+        },
+        {
+          "english": "To wash / bathe",
+          "translation": "Geesibia",
+          "pronunciation": "geh-eh-see-bee-ah",
+          "context": "Infinitive reflexive: to wash oneself, bathe (Stem: -eesibia)",
+          "audioFile": null
+        },
+        {
+          "english": "To run",
+          "translation": "Gominyoka / Gotama",
+          "pronunciation": "goh-mee-nyoh-kah / goh-tah-mah",
+          "context": "Infinitive verb: to run, flee (Stem: -minyoka / -tama)",
+          "audioFile": null
+        },
+        {
+          "english": "To help / assist",
+          "translation": "Gokoonya",
+          "pronunciation": "goh-koh-ohn-yah",
+          "context": "Infinitive verb: to aid, assist (Stem: -koonya)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Expressions",
+      "icon": "💬",
+      "entries": [
+        {
+          "english": "Yes",
+          "translation": "Eee / Ee",
+          "pronunciation": "eh-eh",
+          "context": "Universal affirmative particle ('Yes!')",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Yaya / Yaaya",
+          "pronunciation": "yah-yah",
+          "context": "Universal negative particle ('No!')",
+          "audioFile": null
+        },
+        {
+          "english": "I love you",
+          "translation": "Nkogokunda / Nkwanchire",
+          "pronunciation": "n-koh-goh-koon-dah / n-kwahn-chee-reh",
+          "context": "Expression of love and affection",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you going?",
+          "translation": "Inka ogochia?",
+          "pronunciation": "een-kah oh-goh-chee-ah",
+          "context": "Everyday inquiry to travelers ('Where are you heading?')",
+          "audioFile": null
+        },
+        {
+          "english": "Come here",
+          "translation": "Incha aiga / Nchuo aiga",
+          "pronunciation": "een-chah ah-ee-gah / n-choo-oh ah-ee-gah",
+          "context": "Direct imperative command ('Come here!')",
+          "audioFile": null
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Rieta riao ningo?",
+          "pronunciation": "ree-eh-tah ree-ah-oh neen-goh",
+          "context": "Courteous question asking for someone's name",
+          "audioFile": null
+        },
+        {
+          "english": "My name is...",
+          "translation": "Erieta riane nere...",
+          "pronunciation": "eh-ree-eh-tah ree-ah-neh neh-reh",
+          "context": "Standard self-introduction ('My name is...')",
+          "audioFile": null
+        },
+        {
+          "english": "Very well / truly",
+          "translation": "Mbuya mono",
+          "pronunciation": "m-boo-yah moh-noh",
+          "context": "Expression of praise, confirmation, or gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Ase mono",
+          "pronunciation": "ah-seh moh-noh",
+          "context": "Standard formula of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "Bono",
+          "pronunciation": "boh-noh",
+          "context": "Temporal adverb: at present, now",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Reero",
+          "pronunciation": "reh-eh-roh",
+          "context": "Temporal adverb: today",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Ankio",
+          "pronunciation": "ahn-kee-oh",
+          "context": "Temporal adverb: tomorrow (Ankiende = day after tomorrow)",
+          "audioFile": null
+        },
+        {
+          "english": "Because",
+          "translation": "Ekiaagera",
+          "pronunciation": "eh-kee-ah-ah-geh-rah",
+          "context": "Conjunction stating cause or reason",
+          "audioFile": null
+        },
+        {
+          "english": "When",
+          "translation": "Ekero",
+          "pronunciation": "eh-keh-roh",
+          "context": "Temporal conjunction ('when / at the time that')",
+          "audioFile": null
+        },
+        {
+          "english": "But",
+          "translation": "Korende",
+          "pronunciation": "koh-rehn-deh",
+          "context": "Adversative conjunction ('but / however')",
+          "audioFile": null
+        },
+        {
+          "english": "Why?",
+          "translation": "Nki kiaagera?",
+          "pronunciation": "n-kee kee-ah-ah-geh-rah",
+          "context": "Interrogative expression ('What caused it? / Why?')",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "Ng'o?",
+          "pronunciation": "ng-oh",
+          "context": "Interrogative pronoun ('Who?')",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

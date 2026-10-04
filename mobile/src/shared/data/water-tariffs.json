@@ -1,0 +1,96 @@
+{
+  "utilities": [
+    {
+      "id": "ncwsc",
+      "name": "Nairobi City Water & Sewerage Company (NCWSC)",
+      "city": "Nairobi",
+      "county": "Nairobi",
+      "currency": "KES",
+      "sewerageRate": 0.75,
+      "sewerageNote": "75% of water bill",
+      "meterRent": 100,
+      "bands": [
+        { "min": 0, "max": 6, "rate": 3.18, "label": "0 – 6 m³ (Lifeline)" },
+        { "min": 7, "max": 20, "rate": 47.00, "label": "7 – 20 m³" },
+        { "min": 21, "max": 50, "rate": 55.00, "label": "21 – 50 m³" },
+        { "min": 51, "max": 100, "rate": 65.00, "label": "51 – 100 m³" },
+        { "min": 101, "max": null, "rate": 75.00, "label": "Above 100 m³" }
+      ]
+    },
+    {
+      "id": "mowasco",
+      "name": "Mombasa Water Supply & Sanitation Company",
+      "city": "Mombasa",
+      "county": "Mombasa",
+      "currency": "KES",
+      "sewerageRate": 0.75,
+      "sewerageNote": "75% of water bill",
+      "meterRent": 80,
+      "bands": [
+        { "min": 0, "max": 6, "rate": 2.50, "label": "0 – 6 m³ (Lifeline)" },
+        { "min": 7, "max": 20, "rate": 43.00, "label": "7 – 20 m³" },
+        { "min": 21, "max": 50, "rate": 52.00, "label": "21 – 50 m³" },
+        { "min": 51, "max": 100, "rate": 60.00, "label": "51 – 100 m³" },
+        { "min": 101, "max": null, "rate": 70.00, "label": "Above 100 m³" }
+      ]
+    },
+    {
+      "id": "kiwasco",
+      "name": "Kisumu Water & Sewerage Company (KIWASCO)",
+      "city": "Kisumu",
+      "county": "Kisumu",
+      "currency": "KES",
+      "sewerageRate": 0.75,
+      "sewerageNote": "75% of water bill",
+      "meterRent": 70,
+      "bands": [
+        { "min": 0, "max": 6, "rate": 2.00, "label": "0 – 6 m³ (Lifeline)" },
+        { "min": 7, "max": 20, "rate": 40.00, "label": "7 – 20 m³" },
+        { "min": 21, "max": 50, "rate": 48.00, "label": "21 – 50 m³" },
+        { "min": 51, "max": 100, "rate": 56.00, "label": "51 – 100 m³" },
+        { "min": 101, "max": null, "rate": 64.00, "label": "Above 100 m³" }
+      ]
+    },
+    {
+      "id": "naruwasco",
+      "name": "Nakuru Rural Water & Sanitation Company (NARUWASCO)",
+      "city": "Nakuru",
+      "county": "Nakuru",
+      "currency": "KES",
+      "sewerageRate": 0.75,
+      "sewerageNote": "75% of water bill",
+      "meterRent": 75,
+      "bands": [
+        { "min": 0, "max": 6, "rate": 2.50, "label": "0 – 6 m³ (Lifeline)" },
+        { "min": 7, "max": 20, "rate": 42.00, "label": "7 – 20 m³" },
+        { "min": 21, "max": 50, "rate": 50.00, "label": "21 – 50 m³" },
+        { "min": 51, "max": 100, "rate": 58.00, "label": "51 – 100 m³" },
+        { "min": 101, "max": null, "rate": 66.00, "label": "Above 100 m³" }
+      ]
+    },
+    {
+      "id": "eldowas",
+      "name": "Eldoret Water & Sanitation Company (ELDOWAS)",
+      "city": "Eldoret",
+      "county": "Uasin Gishu",
+      "currency": "KES",
+      "sewerageRate": 0.75,
+      "sewerageNote": "75% of water bill",
+      "meterRent": 70,
+      "bands": [
+        { "min": 0, "max": 6, "rate": 2.00, "label": "0 – 6 m³ (Lifeline)" },
+        { "min": 7, "max": 20, "rate": 38.00, "label": "7 – 20 m³" },
+        { "min": 21, "max": 50, "rate": 46.00, "label": "21 – 50 m³" },
+        { "min": 51, "max": 100, "rate": 54.00, "label": "51 – 100 m³" },
+        { "min": 101, "max": null, "rate": 62.00, "label": "Above 100 m³" }
+      ]
+    }
+  ],
+  "notes": [
+    "Water tariffs are approved by the Water Services Regulatory Board (WASREB)",
+    "Sewerage charge is typically 75% of the water bill for connected properties",
+    "Meter rent is a fixed monthly charge regardless of consumption",
+    "Lifeline tariff (0–6 m³) is subsidized for low-income households",
+    "Rates shown are for domestic/residential connections; commercial rates are higher"
+  ]
+}

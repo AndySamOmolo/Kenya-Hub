@@ -1,0 +1,40 @@
+{
+  "lastUpdated": "2025",
+  "forests": [
+    { "name": "Mau Forest Complex", "county": "Nakuru / Narok / Bomet / Kericho", "sizeHa": 400000, "ecosystem": "Montane", "hiking": true, "biodiversity": "Kenya's largest indigenous forest. Critical water tower — source of 12 rivers including Mara, Sondu Miriu, Njoro. Home to endangered Bongo antelope.", "gazetted": true },
+    { "name": "Mount Kenya Forest Reserve", "county": "Nyeri / Meru / Kirinyaga / Embu / Tharaka-Nithi", "sizeHa": 199500, "ecosystem": "Montane / Alpine", "hiking": true, "biodiversity": "UNESCO World Heritage Site. Afro-alpine moorlands above 3,000m. Elephants, buffalo, leopard, black rhino. Rare endemic plants.", "gazetted": true },
+    { "name": "Aberdare Forest Reserve", "county": "Nyandarua / Nyeri / Murang'a / Kiambu", "sizeHa": 105900, "ecosystem": "Montane / Bamboo", "hiking": true, "biodiversity": "Major water tower for Nairobi. Dense bamboo zones. Elephants, bongo, giant forest hog, black leopard.", "gazetted": true },
+    { "name": "Arabuko-Sokoke Forest", "county": "Kilifi", "sizeHa": 42000, "ecosystem": "Coastal / Lowland", "hiking": true, "biodiversity": "Largest remaining patch of East African coastal forest. Home to endemic Sokoke Scops Owl, Clarke's Weaver, Golden-rumped Elephant Shrew.", "gazetted": true },
+    { "name": "Kakamega Forest", "county": "Kakamega / Vihiga", "sizeHa": 23800, "ecosystem": "Tropical Rainforest", "hiking": true, "biodiversity": "Kenya's only tropical rainforest — easternmost fragment of the Congo basin forest. 380+ bird species, 400+ butterfly species, 7 primate species.", "gazetted": true },
+    { "name": "Karura Forest", "county": "Nairobi", "sizeHa": 1041, "ecosystem": "Urban / Montane", "hiking": true, "biodiversity": "Nairobi's urban forest lung. Managed by Kenya Forest Service and Friends of Karura. Popular for jogging, cycling, and picnics. Waterfalls, caves.", "gazetted": true },
+    { "name": "Ngong Hills Forest", "county": "Kajiado", "sizeHa": 3080, "ecosystem": "Montane / Grassland", "hiking": true, "biodiversity": "Iconic hills overlooking Nairobi and the Rift Valley. Popular hiking destination. Reforestation efforts ongoing.", "gazetted": true },
+    { "name": "Cherangani Hills Forest", "county": "Elgeyo-Marakwet / West Pokot / Trans Nzoia", "sizeHa": 120000, "ecosystem": "Montane", "hiking": true, "biodiversity": "Kenya's 5th-largest water tower. Rich biodiversity. Important watershed for Turkwel and Kerio rivers.", "gazetted": true },
+    { "name": "Shimba Hills Forest", "county": "Kwale", "sizeHa": 25000, "ecosystem": "Coastal / Lowland", "hiking": true, "biodiversity": "Coastal forest with endemic Sable Antelope. Sheldrick Falls. Adjacent to Shimba Hills National Reserve.", "gazetted": true },
+    { "name": "Mount Elgon Forest", "county": "Bungoma / Trans Nzoia", "sizeHa": 73000, "ecosystem": "Montane / Alpine", "hiking": true, "biodiversity": "Cross-border forest with Uganda. Caves with salt-licking elephants. Giant lobelia and groundsel above 3,500m.", "gazetted": true },
+    { "name": "Nandi Forest", "county": "Nandi", "sizeHa": 20300, "ecosystem": "Montane", "hiking": true, "biodiversity": "Important habitat for Nandi Bear (African Golden Cat). Rich bird diversity. Tea zone buffer forest.", "gazetted": true },
+    { "name": "Meru Forest Reserve", "county": "Meru", "sizeHa": 17700, "ecosystem": "Montane", "hiking": false, "biodiversity": "Cedar and camphor forests. Important watershed for Tana River tributaries.", "gazetted": true },
+    { "name": "Marmanet Forest", "county": "Laikipia / Nyandarua", "sizeHa": 22000, "ecosystem": "Montane / Dry", "hiking": true, "biodiversity": "Transition forest between highland and semi-arid. Important water catchment for Ewaso Nyiro.", "gazetted": true },
+    { "name": "South Nandi Forest", "county": "Nandi", "sizeHa": 18500, "ecosystem": "Montane", "hiking": false, "biodiversity": "Contiguous with North Nandi forest. Guinea-Congo biome relict. Important for primates.", "gazetted": true },
+    { "name": "Kieni Forest", "county": "Nyeri", "sizeHa": 5340, "ecosystem": "Montane", "hiking": false, "biodiversity": "Buffer forest for Mt. Kenya. Important elephant corridor between Mt. Kenya and Aberdares.", "gazetted": true },
+    { "name": "Kaptagat Forest", "county": "Uasin Gishu / Elgeyo-Marakwet", "sizeHa": 9800, "ecosystem": "Montane", "hiking": true, "biodiversity": "Training ground for Kenya's world-famous long-distance runners. Mixed indigenous and plantation forest.", "gazetted": true },
+    { "name": "Londiani Forest", "county": "Kericho", "sizeHa": 12600, "ecosystem": "Montane", "hiking": false, "biodiversity": "Mau Forest complex fragment. Cypress and pine plantations with indigenous undergrowth.", "gazetted": true },
+    { "name": "Turbo Forest", "county": "Uasin Gishu", "sizeHa": 4200, "ecosystem": "Montane", "hiking": false, "biodiversity": "Small but important catchment forest for Nzoia River system.", "gazetted": true },
+    { "name": "Menengai Forest", "county": "Nakuru", "sizeHa": 4800, "ecosystem": "Dry Montane", "hiking": true, "biodiversity": "Forest on the rim of Menengai Crater. Scenic views. Geothermal activity below.", "gazetted": true },
+    { "name": "Loita Forest", "county": "Narok", "sizeHa": 32000, "ecosystem": "Montane / Semi-arid transition", "hiking": true, "biodiversity": "Maasai community forest (not fully gazetted). Important wildlife corridor for Maasai Mara ecosystem.", "gazetted": false }
+  ],
+  "ecosystemTypes": [
+    { "type": "Montane", "description": "Highland forests above 1,500m. Dominated by cedar, camphor, olive, and bamboo. Kenya's major water towers." },
+    { "type": "Tropical Rainforest", "description": "Equatorial forest with year-round rainfall. Only found at Kakamega in Kenya. Highest biodiversity." },
+    { "type": "Coastal / Lowland", "description": "Tropical dry and moist forests along the coast. Unique biodiversity including many endemic species." },
+    { "type": "Alpine", "description": "High-altitude vegetation above 3,000m on Mt. Kenya and Mt. Elgon. Giant lobelia and groundsel." },
+    { "type": "Dry Montane", "description": "Transition forests between humid highlands and semi-arid lowlands. Important catchment areas." },
+    { "type": "Urban", "description": "Gazetted forests within urban areas. Critical for air quality, recreation, and urban biodiversity." }
+  ],
+  "notes": [
+    "Kenya has approximately 1,200 gazetted forest reserves covering about 7.4% of land area. This directory covers the most significant ones.",
+    "Data sourced from Kenya Forest Service (KFS) and Kenya Forest Research Institute (KEFRI) publications.",
+    "Kenya's '5 Water Towers' (Mt. Kenya, Aberdares, Mau, Cherangani, Mt. Elgon) supply 75% of Kenya's surface water.",
+    "Hiking in gazetted forests requires a KFS permit. Fees: KES 250 (citizen), KES 600 (resident), USD 20 (non-resident) per day.",
+    "Report illegal logging or charcoal burning to KFS hotline: 0800 723 253 (toll-free)."
+  ]
+}

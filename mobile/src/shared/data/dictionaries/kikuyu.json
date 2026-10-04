@@ -1,0 +1,1337 @@
+{
+  "languageId": "kikuyu",
+  "languageName": "Kikuyu (Gĩkũyũ)",
+  "family": "bantu",
+  "nativeName": "Gĩkũyũ",
+  "script": "Latin",
+  "speakerCount": 8100000,
+  "counties": [
+    "Kiambu",
+    "Murang'a",
+    "Nyeri",
+    "Kirinyaga",
+    "Nyandarua"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10",
+  "contributorNote": "Gĩkũyũ (Kikuyu) is a Central Bantu language spoken across Central Kenya (Kiambu, Murang'a, Nyeri, Kirinyaga, and Nyandarua counties). Vocabulary and grammar systematically compiled from 'A Short Kikuyu Grammar' (Macmillan), 'First Lessons in Kikuyu' by L.S.B. Leakey (East African Literature Bureau, 1959), '1,000 Kikuyu Proverbs' by G. Barra (Consolata Catholic Mission, Nyeri), and standard 7-vowel Gĩkũyũ orthography (ĩ, ũ, th).",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "How is your morning?",
+          "translation": "Ũhoro wa rũciinĩ",
+          "pronunciation": "oo-hoh-roh wah roo-chee-nee",
+          "context": "Morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "How is your afternoon?",
+          "translation": "Ũhoro wa mũthenya",
+          "pronunciation": "oo-hoh-roh wah moo-then-yah",
+          "context": "Afternoon greeting",
+          "audioFile": null
+        },
+        {
+          "english": "How is your evening?",
+          "translation": "Ũhoro wa hwaĩ-inĩ",
+          "pronunciation": "oo-hoh-roh wah hwah-ee-nee",
+          "context": "Evening greeting",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Ũhana atĩa?",
+          "pronunciation": "oo-hah-nah ah-tee-ah",
+          "context": "General greeting",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine / well",
+          "translation": "Ndĩ mwega",
+          "pronunciation": "n-dee mweh-gah",
+          "context": "Standard reply to 'Ũhana atĩa?'",
+          "audioFile": null
+        },
+        {
+          "english": "Hello / Are you well?",
+          "translation": "Wĩ mwega?",
+          "pronunciation": "wee mweh-gah",
+          "context": "Casual: 'Are you well?' (Plural: Mũrĩ eega?)",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Nĩ wega",
+          "pronunciation": "nee weh-gah",
+          "context": "Literally 'It is good'",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Nĩ wega mũno",
+          "pronunciation": "nee weh-gah moo-noh",
+          "context": "Expressing deep gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye (stay well)",
+          "translation": "Tigwo na wega",
+          "pronunciation": "tee-gwoh nah weh-gah",
+          "context": "Said to the person staying behind",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye (go well)",
+          "translation": "Thiĩ na wega",
+          "pronunciation": "thee-ee nah weh-gah",
+          "context": "Said to the person leaving",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome / Come in",
+          "translation": "Ũkĩrĩte / Karibu",
+          "pronunciation": "oo-kee-ree-teh / kah-ree-boo",
+          "context": "Hospitality invitation",
+          "audioFile": null
+        },
+        {
+          "english": "Peace to you",
+          "translation": "Thaai thayũ",
+          "pronunciation": "thah-ah-ee thah-yoo",
+          "context": "Traditional blessing of peace (lit. 'Peace and life')",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Ĩmwe",
+          "pronunciation": "ee-mweh",
+          "context": "Stem: -mwe",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Igĩrĩ",
+          "pronunciation": "ee-gee-ree",
+          "context": "Stem: -gĩrĩ / -ĩrĩ",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Ithatũ",
+          "pronunciation": "ee-thah-too",
+          "context": "Stem: -thatũ",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Inya",
+          "pronunciation": "ee-nyah",
+          "context": "Stem: -nya",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Ithano",
+          "pronunciation": "ee-thah-noh",
+          "context": "Stem: -thano",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Ithathatũ",
+          "pronunciation": "ee-thah-thah-too",
+          "context": "Hinde: thanthatu",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Mũgwanja",
+          "pronunciation": "moo-gwahn-jah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Inyanya",
+          "pronunciation": "ee-nyah-nyah",
+          "context": "",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Kenda",
+          "pronunciation": "kehn-dah",
+          "context": "Universal regional nine",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Ikũmi",
+          "pronunciation": "ee-koo-mee",
+          "context": "Plural: Makũmi",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Mĩrongo ĩĩrĩ",
+          "pronunciation": "mee-rohn-goh ee-ree",
+          "context": "Two tens",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Mĩrongo ĩtatũ",
+          "pronunciation": "mee-rohn-goh ee-tah-too",
+          "context": "Three tens",
+          "audioFile": null
+        },
+        {
+          "english": "Forty",
+          "translation": "Mĩrongo ĩnya",
+          "pronunciation": "mee-rohn-goh ee-nyah",
+          "context": "Four tens",
+          "audioFile": null
+        },
+        {
+          "english": "Fifty",
+          "translation": "Mĩrongo ĩthano",
+          "pronunciation": "mee-rohn-goh ee-thah-noh",
+          "context": "Five tens",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "Igana",
+          "pronunciation": "ee-gah-nah",
+          "context": "Plural: Magana",
+          "audioFile": null
+        },
+        {
+          "english": "Thousand",
+          "translation": "Nganga / Ngiri",
+          "pronunciation": "n-gahn-gah / n-gee-ree",
+          "context": "",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Mother",
+          "translation": "Maitũ / Nyina",
+          "pronunciation": "mah-ee-too / nyee-nah",
+          "context": "'Maitũ' is affectionate ('our mother'); 'nyina' is formal ('his/her mother')",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Baba / Ithe",
+          "pronunciation": "bah-bah / ee-theh",
+          "context": "'Baba' = my father; 'ithe' = his/her father",
+          "audioFile": null
+        },
+        {
+          "english": "Child / Baby",
+          "translation": "Kaana",
+          "pronunciation": "kah-ah-nah",
+          "context": "Plural: Ciana (children)",
+          "audioFile": null
+        },
+        {
+          "english": "Son / Boy",
+          "translation": "Kahĩĩ / Mũrũ",
+          "pronunciation": "kah-hee-ee / moo-roo",
+          "context": "'Mũrũ wa...' = son of...; uninitiated boy: kĩhĩĩ",
+          "audioFile": null
+        },
+        {
+          "english": "Daughter / Girl",
+          "translation": "Mwarĩ / Mũirĩtu",
+          "pronunciation": "mwah-ree / moo-ee-ree-too",
+          "context": "'Mwarĩ wa...' = daughter of...; initiated maiden: mũirĩtu",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "Mũrũ wa maitũ",
+          "pronunciation": "moo-roo wah mah-ee-too",
+          "context": "Literally 'son of our mother'",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "Mwarĩ wa maitũ",
+          "pronunciation": "mwah-ree wah mah-ee-too",
+          "context": "Literally 'daughter of our mother'",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmother",
+          "translation": "Cũcũ",
+          "pronunciation": "choo-choo",
+          "context": "Affectionate and deeply respectful term",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather",
+          "translation": "Gũka",
+          "pronunciation": "goo-kah",
+          "context": "Respectful term for grandfather or male patriarch",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "Mũrata",
+          "pronunciation": "moo-rah-tah",
+          "context": "Plural: Arata (friends)",
+          "audioFile": null
+        },
+        {
+          "english": "Elder / Man",
+          "translation": "Mũthuuri",
+          "pronunciation": "moo-thoo-ree",
+          "context": "Plural: Athuuri (council elders/judges)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "Mũtumia",
+          "pronunciation": "moo-too-mee-ah",
+          "context": "Plural: Atumia (married women)",
+          "audioFile": null
+        },
+        {
+          "english": "Young man / Warrior",
+          "translation": "Mwanake",
+          "pronunciation": "mwah-nah-keh",
+          "context": "Plural: Anake (young initiated men)",
+          "audioFile": null
+        },
+        {
+          "english": "People",
+          "translation": "Andũ",
+          "pronunciation": "ahn-doo",
+          "context": "Singular: Mũndũ (a person / human being)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "Maaĩ",
+          "pronunciation": "mah-ah-ee",
+          "context": "Essential fresh water",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "Irio",
+          "pronunciation": "ee-ree-oh",
+          "context": "Generic food, and the iconic mashed potato/corn/beans dish",
+          "audioFile": null
+        },
+        {
+          "english": "Ugali",
+          "translation": "Ngima",
+          "pronunciation": "n-gee-mah",
+          "context": "Traditional maize or millet meal cake",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Nyama",
+          "pronunciation": "nyah-mah",
+          "context": "Roast meat = nyama nĩhĩe",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Iria",
+          "pronunciation": "ee-ree-ah",
+          "context": "Fresh or fermented whole milk",
+          "audioFile": null
+        },
+        {
+          "english": "Tea",
+          "translation": "Caai",
+          "pronunciation": "chah-ah-ee",
+          "context": "Tea cultivated extensively in Central Kenya Highlands",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "Irigũ",
+          "pronunciation": "ee-ree-goo",
+          "context": "Plural: Marigũ (staple crop in Gĩkũyũland)",
+          "audioFile": null
+        },
+        {
+          "english": "Sweet Potato",
+          "translation": "Ngwacĩ",
+          "pronunciation": "n-gwah-chee",
+          "context": "Traditional roasted or boiled sweet tuber",
+          "audioFile": null
+        },
+        {
+          "english": "Potato",
+          "translation": "Waru",
+          "pronunciation": "wah-roo",
+          "context": "Highland Irish potato crop",
+          "audioFile": null
+        },
+        {
+          "english": "Beans",
+          "translation": "Mboco",
+          "pronunciation": "m-boh-choh",
+          "context": "Essential pulse in Gĩkũyũ cuisine",
+          "audioFile": null
+        },
+        {
+          "english": "Maize",
+          "translation": "Mbembe",
+          "pronunciation": "m-behm-beh",
+          "context": "Dry grain or green roasted cobs",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "Ũũkĩ",
+          "pronunciation": "oo-oo-kee",
+          "context": "Prized natural honey harvested from tree log hives",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional beer",
+          "translation": "Njohi",
+          "pronunciation": "n-joh-hee",
+          "context": "Fermented sugar cane or honey brew for elders' ceremonies",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Verbs & Actions",
+      "icon": "⚡",
+      "entries": [
+        {
+          "english": "To be able / Ability",
+          "translation": "Gũhota / Ũhoti",
+          "pronunciation": "goo-hoh-tah / oo-hoh-tee",
+          "context": "Verb stem -hota (be able), noun ũhoti (ability)",
+          "audioFile": null
+        },
+        {
+          "english": "To accuse",
+          "translation": "Gũthĩtaka",
+          "pronunciation": "goo-thee-tah-kah",
+          "context": "Verb stem: -thĩtaka",
+          "audioFile": null
+        },
+        {
+          "english": "To add to",
+          "translation": "Kwongerera",
+          "pronunciation": "kwohn-geh-reh-rah",
+          "context": "Verb stem: -ongerera",
+          "audioFile": null
+        },
+        {
+          "english": "To advise",
+          "translation": "Gũtaara",
+          "pronunciation": "goo-tah-ah-rah",
+          "context": "Verb stem: -taara (give counsel)",
+          "audioFile": null
+        },
+        {
+          "english": "To be afraid",
+          "translation": "Kwĩtigĩra",
+          "pronunciation": "kwee-tee-gee-rah",
+          "context": "Verb stem: -ĩtigĩra",
+          "audioFile": null
+        },
+        {
+          "english": "To agree",
+          "translation": "Kwĩtĩkĩra / Kũiguana",
+          "pronunciation": "kwee-tee-kee-rah / koo-ee-gwah-nah",
+          "context": "-ĩtĩkĩra = agree to; -iguana = agree together",
+          "audioFile": null
+        },
+        {
+          "english": "To be angry",
+          "translation": "Kũrakara",
+          "pronunciation": "koo-rah-kah-rah",
+          "context": "Verb stem: -rakara",
+          "audioFile": null
+        },
+        {
+          "english": "To ask (question)",
+          "translation": "Kũũria",
+          "pronunciation": "koo-oo-ree-ah",
+          "context": "Inquire; ask for something = kũhoya",
+          "audioFile": null
+        },
+        {
+          "english": "To bear fruit / Give birth",
+          "translation": "Gũciara",
+          "pronunciation": "goo-chee-ah-rah",
+          "context": "Verb stem: -ciara",
+          "audioFile": null
+        },
+        {
+          "english": "To beat / Strike",
+          "translation": "Kũhũra",
+          "pronunciation": "koo-hoo-rah",
+          "context": "Verb stem: -hũra",
+          "audioFile": null
+        },
+        {
+          "english": "To begin",
+          "translation": "Kwambĩrĩria",
+          "pronunciation": "kwahm-bee-ree-ree-ah",
+          "context": "Verb stem: -ambĩrĩria",
+          "audioFile": null
+        },
+        {
+          "english": "To believe",
+          "translation": "Kwĩtĩkia",
+          "pronunciation": "kwee-tee-kee-ah",
+          "context": "Verb stem: -ĩtĩkia",
+          "audioFile": null
+        },
+        {
+          "english": "To build",
+          "translation": "Gũaka",
+          "pronunciation": "gwah-kah",
+          "context": "Constructing houses or compounds",
+          "audioFile": null
+        },
+        {
+          "english": "To bury",
+          "translation": "Gũthika",
+          "pronunciation": "goo-thee-kah",
+          "context": "Verb stem: -thika",
+          "audioFile": null
+        },
+        {
+          "english": "To buy",
+          "translation": "Kũgũra",
+          "pronunciation": "koo-goo-rah",
+          "context": "Verb stem: -gũra",
+          "audioFile": null
+        },
+        {
+          "english": "To carry",
+          "translation": "Gũkuua",
+          "pronunciation": "goo-koo-oo-ah",
+          "context": "Transport loads or burdens",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "Kũruga",
+          "pronunciation": "koo-roo-gah",
+          "context": "Preparing food over the fire",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / Farm",
+          "translation": "Kũrĩma",
+          "pronunciation": "koo-ree-mah",
+          "context": "Farming; bedrock of agricultural prosperity",
+          "audioFile": null
+        },
+        {
+          "english": "To cut",
+          "translation": "Gũtema / Gũtinia",
+          "pronunciation": "goo-teh-mah / goo-tee-nee-ah",
+          "context": "Gũtema = cut down/slash; gũtinia = sever/cut off",
+          "audioFile": null
+        },
+        {
+          "english": "To die",
+          "translation": "Gũkua",
+          "pronunciation": "goo-koo-ah",
+          "context": "Verb stem: -kua",
+          "audioFile": null
+        },
+        {
+          "english": "To dig",
+          "translation": "Kwenja",
+          "pronunciation": "kwehn-jah",
+          "context": "Verb stem: -enja",
+          "audioFile": null
+        },
+        {
+          "english": "To draw water",
+          "translation": "Gũtaha maaĩ",
+          "pronunciation": "goo-tah-hah mah-ah-ee",
+          "context": "Fetching river or stream water",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "Kũnyua",
+          "pronunciation": "koo-nyoo-ah",
+          "context": "Present: anyua (he/she drinks)",
+          "audioFile": null
+        },
+        {
+          "english": "To eat",
+          "translation": "Kũrĩa",
+          "pronunciation": "koo-ree-ah",
+          "context": "Present: arĩa (he/she eats)",
+          "audioFile": null
+        },
+        {
+          "english": "To love / Desire",
+          "translation": "Kwendana / Kwenda",
+          "pronunciation": "kwehn-dah-nah / kwehn-dah",
+          "context": "Love, affection, preference",
+          "audioFile": null
+        },
+        {
+          "english": "To pray / Ask for",
+          "translation": "Kũhoya",
+          "pronunciation": "koo-hoh-yah",
+          "context": "Petition or prayer to Ngai",
+          "audioFile": null
+        },
+        {
+          "english": "To see / Understand",
+          "translation": "Kuona / Kũmenya",
+          "pronunciation": "koo-oh-nah / koo-meh-nyah",
+          "context": "'Kuona' = see; 'kũmenya' = know / understand",
+          "audioFile": null
+        },
+        {
+          "english": "To sing / Dance",
+          "translation": "Kũina",
+          "pronunciation": "koo-ee-nah",
+          "context": "Singing songs or participating in cultural dances",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / Talk",
+          "translation": "Kwarĩria / Kũheana",
+          "pronunciation": "kwah-ree-ree-ah / koo-heh-ah-nah",
+          "context": "Dialogue and discussion",
+          "audioFile": null
+        },
+        {
+          "english": "To teach",
+          "translation": "Kũrutana",
+          "pronunciation": "koo-roo-tah-nah",
+          "context": "Imparting knowledge or skills",
+          "audioFile": null
+        },
+        {
+          "english": "To walk / Travel",
+          "translation": "Gũceera",
+          "pronunciation": "goo-cheh-eh-rah",
+          "context": "Walking or visiting friends and relatives",
+          "audioFile": null
+        },
+        {
+          "english": "To work / Do",
+          "translation": "Kũruta wĩra",
+          "pronunciation": "koo-roo-tah wee-rah",
+          "context": "Diligent labor and community work",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Earth / World",
+          "translation": "Thĩ",
+          "pronunciation": "thee",
+          "context": "The earth or world under heaven",
+          "audioFile": null
+        },
+        {
+          "english": "Soil / Ground",
+          "translation": "Tĩri",
+          "pronunciation": "tee-ree",
+          "context": "Fertile volcanic soil of the highlands",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "Kĩrĩma",
+          "pronunciation": "kee-ree-mah",
+          "context": "Plural: Irĩma; Mount Kenya = Kĩrĩnyaga",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "Rũũĩ",
+          "pronunciation": "roo-oo-ee",
+          "context": "Plural: Njũĩ (flowing streams and rivers)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Mũtĩ",
+          "pronunciation": "moo-tee",
+          "context": "Plural: Mĩtĩ (Class II noun)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Fig Tree",
+          "translation": "Mũgumo",
+          "pronunciation": "moo-goo-moh",
+          "context": "Venerated parasitic fig tree, focal point of traditional prayer",
+          "audioFile": null
+        },
+        {
+          "english": "Forest / Bush",
+          "translation": "Gĩthaka",
+          "pronunciation": "gee-thah-kah",
+          "context": "Ancestral bushland or land estate",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Mbura",
+          "pronunciation": "m-boo-rah",
+          "context": "Precious life-sustaining rainfall",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "Rĩũa",
+          "pronunciation": "ree-oo-ah",
+          "context": "Sun and daylight",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "Mweri",
+          "pronunciation": "mweh-ree",
+          "context": "Moon or lunar calendar month",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "Njata",
+          "pronunciation": "n-jah-tah",
+          "context": "Night sky star",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "Rũhuho",
+          "pronunciation": "roo-hoo-hoh",
+          "context": "Plural: 'Huho (breeze or strong wind)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "Itu",
+          "pronunciation": "ee-too",
+          "context": "Plural: Matu (rainclouds)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Mwaki",
+          "pronunciation": "mwah-kee",
+          "context": "Hearth fire or burning wood",
+          "audioFile": null
+        },
+        {
+          "english": "Stones",
+          "translation": "Mahiga",
+          "pronunciation": "mah-hee-gah",
+          "context": "Singular: Ihiga (hearth-stones / stones)",
+          "audioFile": null
+        },
+        {
+          "english": "Coldness",
+          "translation": "Heho",
+          "pronunciation": "heh-hoh",
+          "context": "Highland chill or cool air",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "Nyeki",
+          "pronunciation": "nyeh-kee",
+          "context": "Pasture grass for livestock",
+          "audioFile": null
+        },
+        {
+          "english": "Animal / Wildlife",
+          "translation": "Nyamũ",
+          "pronunciation": "nyah-moo",
+          "context": "General term for wildlife and animals",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Nyoni",
+          "pronunciation": "nyoh-nee",
+          "context": "Class III noun for bird",
+          "audioFile": null
+        },
+        {
+          "english": "Bee",
+          "translation": "Njũkĩ",
+          "pronunciation": "n-joo-kee",
+          "context": "Honeybee",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Mũrũthi",
+          "pronunciation": "moo-roo-thee",
+          "context": "Revered apex predator; promoted to Class II",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "Ngarĩ",
+          "pronunciation": "n-gah-ree",
+          "context": "Spotted predator",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Njogu",
+          "pronunciation": "n-joh-goo",
+          "context": "Mighty forest and savanna elephant",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Mbogo",
+          "pronunciation": "m-boh-goh",
+          "context": "Cape buffalo of the Aberdares and Mt. Kenya",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "Ng'ombe",
+          "pronunciation": "n-gohm-beh",
+          "context": "Domestic bovine cattle",
+          "audioFile": null
+        },
+        {
+          "english": "Bull / Ox",
+          "translation": "Ndegwa",
+          "pronunciation": "n-deh-gwah",
+          "context": "Male ox or bull",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Mbũri",
+          "pronunciation": "m-boo-ree",
+          "context": "Prized livestock animal",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep / Ram",
+          "translation": "Ndũrũme",
+          "pronunciation": "n-doo-roo-meh",
+          "context": "Sacrificial male ram",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts",
+      "icon": "🧍",
+      "entries": [
+        {
+          "english": "Living body",
+          "translation": "Mwĩrĩ",
+          "pronunciation": "mwee-ree",
+          "context": "The living human body (corpse is kĩĩmba)",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Mũtwe",
+          "pronunciation": "moo-tweh",
+          "context": "Plural: Mĩtwe",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Rĩitho",
+          "pronunciation": "ree-ee-thoh",
+          "context": "Plural: Maitho",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Gũtũ",
+          "pronunciation": "goo-too",
+          "context": "Plural: Matũ (Class VIII body noun)",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "Iniũrũ",
+          "pronunciation": "ee-nee-oo-roo",
+          "context": "Plural: Maniũrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "Mũromo",
+          "pronunciation": "moo-roh-moh",
+          "context": "Plural: Mĩromo",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "Igego",
+          "pronunciation": "ee-geh-goh",
+          "context": "Plural: Magego",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "Rũrĩmĩ",
+          "pronunciation": "roo-ree-mee",
+          "context": "Plural: Nĩmĩ (Class VI noun)",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Nderu",
+          "pronunciation": "n-deh-roo",
+          "context": "Facial hair and whiskers",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "Ngingo",
+          "pronunciation": "n-geen-goh",
+          "context": "Anatomical neck",
+          "audioFile": null
+        },
+        {
+          "english": "Chest",
+          "translation": "Gĩthũri",
+          "pronunciation": "gee-thoo-ree",
+          "context": "Plural: Ithũri",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Ngoro",
+          "pronunciation": "n-goh-roh",
+          "context": "Physical heart and seat of feelings",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach / Abdomen",
+          "translation": "Nda",
+          "pronunciation": "n-dah",
+          "context": "Stomach, belly, or pregnancy",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Mũgongo",
+          "pronunciation": "moo-gohn-goh",
+          "context": "Plural: Mĩgongo",
+          "audioFile": null
+        },
+        {
+          "english": "Arm / Hand",
+          "translation": "Guoko",
+          "pronunciation": "gwah-koh",
+          "context": "Plural: Moko / Maoko (Class VIII body noun)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "Kũgũrũ",
+          "pronunciation": "koo-goo-roo",
+          "context": "Plural: Magũrũ (Class VIII body noun)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Thakame",
+          "pronunciation": "thah-kah-meh",
+          "context": "Lifeblood",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Ihĩndĩ",
+          "pronunciation": "ee-heen-dee",
+          "context": "Plural: Mahĩndĩ",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Heritage",
+      "icon": "🏺",
+      "entries": [
+        {
+          "english": "God (The Creator)",
+          "translation": "Ngai",
+          "pronunciation": "n-gah-ee",
+          "context": "Supreme deity dwelling atop Kĩrĩnyaga (Mount Kenya)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Fig Tree",
+          "translation": "Mũgumo",
+          "pronunciation": "moo-goo-moh",
+          "context": "Traditional outdoor sanctuary for communal prayer and sacrifice",
+          "audioFile": null
+        },
+        {
+          "english": "Homestead / Home",
+          "translation": "Mũciĩ",
+          "pronunciation": "moo-chee-ee",
+          "context": "The central family dwelling compound",
+          "audioFile": null
+        },
+        {
+          "english": "Council of Elders",
+          "translation": "Kĩama",
+          "pronunciation": "kee-ah-mah",
+          "context": "Traditional governing body and judicial court of elders",
+          "audioFile": null
+        },
+        {
+          "english": "Dowry / Bride Gift",
+          "translation": "Rũracio",
+          "pronunciation": "roo-rah-chee-oh",
+          "context": "Traditional matrimonial tokens uniting two families",
+          "audioFile": null
+        },
+        {
+          "english": "Justice / Truth",
+          "translation": "Kĩhooto",
+          "pronunciation": "kee-hoh-oh-toh",
+          "context": "Irrefutable moral right and undeniable truth",
+          "audioFile": null
+        },
+        {
+          "english": "Lawsuit / Case",
+          "translation": "Ciira",
+          "pronunciation": "chee-ee-rah",
+          "context": "Legal proceeding heard and decided by elders",
+          "audioFile": null
+        },
+        {
+          "english": "Wooden Mortar",
+          "translation": "Ndĩrĩ",
+          "pronunciation": "n-dee-ree",
+          "context": "Carved heavy hardwood mortar for pounding maize and grain",
+          "audioFile": null
+        },
+        {
+          "english": "Beehive",
+          "translation": "Mwatũ",
+          "pronunciation": "mwah-too",
+          "context": "Hollowed cylindrical log beehive hung high in forest canopies",
+          "audioFile": null
+        },
+        {
+          "english": "Ceremonial Gourd",
+          "translation": "Kĩnandu",
+          "pronunciation": "kee-nahn-doo",
+          "context": "Small ceremonial gourd kept for ritual castor oil",
+          "audioFile": null
+        },
+        {
+          "english": "Law / Commandment",
+          "translation": "Watho",
+          "pronunciation": "wah-thoh",
+          "context": "Customary law and ordinances",
+          "audioFile": null
+        },
+        {
+          "english": "Custom / Tradition",
+          "translation": "Mũtugo",
+          "pronunciation": "moo-too-goh",
+          "context": "Established cultural heritage and ancestral customs",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional woven bag",
+          "translation": "Kĩondo",
+          "pronunciation": "kee-ohn-doh",
+          "context": "Famous indigenous sisal woven carrying bag (skin bag is mondo)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Mũguĩ",
+          "pronunciation": "moo-gwee",
+          "context": "Quiver arrow (quiver = kĩano / thiaka)",
+          "audioFile": null
+        },
+        {
+          "english": "Ceremonial axe",
+          "translation": "Ithanwa",
+          "pronunciation": "ee-thahn-wah",
+          "context": "Traditional tanged axe-blade used for ritual purification",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "proverbs",
+      "name": "Proverbs & Wisdom (Thimo)",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Many hands make light work",
+          "translation": "Indo nĩ kũrĩmithanio",
+          "pronunciation": "een-doh nee koo-ree-mee-thah-nyoh",
+          "context": "Lit. 'Riches are found in cultivating together.' Community unity yields abundant harvest.",
+          "audioFile": null
+        },
+        {
+          "english": "United we stand, divided we fall",
+          "translation": "Kaara kamwe gatingĩyũragĩra ndaa",
+          "pronunciation": "kah-ah-rah kah-mweh gah-teen-gee-yoo-rah-gee-rah n-dah-ah",
+          "context": "Lit. 'One finger does not kill a louse.' Teamwork and unity are essential for success.",
+          "audioFile": null
+        },
+        {
+          "english": "Like father, like son",
+          "translation": "Kaana ka ngarĩ gakunyaga ta nyina",
+          "pronunciation": "kah-ah-nah kah n-gah-ree gah-koo-nyah-gah tah nyee-nah",
+          "context": "Lit. 'The cub of a leopard scratches like its mother.' Children inherit their parents' habits.",
+          "audioFile": null
+        },
+        {
+          "english": "Where there is a will there is a way",
+          "translation": "Mageria nomo mahota",
+          "pronunciation": "mah-geh-ree-ah noh-moh mah-hoh-tah",
+          "context": "Lit. 'Persistent trials mean success.' Continuous effort overcomes obstacles.",
+          "audioFile": null
+        },
+        {
+          "english": "Old age is honourable",
+          "translation": "Kahiga gakũrũ gatiagararagwo nĩ maai",
+          "pronunciation": "kah-hee-gah gah-koo-roo gah-tee-ah-gah-rah-rah-gwoh nee mah-ah-ee",
+          "context": "Lit. 'The stream does not jump over an ancient rock.' Respect for elders and history.",
+          "audioFile": null
+        },
+        {
+          "english": "Do not wash dirty linen in public",
+          "translation": "Cia mũciĩ itiumaga ndira",
+          "pronunciation": "chee-ah moo-chee-ee ee-tee-oo-mah-gah n-dee-rah",
+          "context": "Lit. 'Home matters must not venture into the open fields.' Keep family matters private.",
+          "audioFile": null
+        },
+        {
+          "english": "A good name is better than riches",
+          "translation": "Gũkũra nĩ kũona, kũhũna ti gũtonga",
+          "pronunciation": "goo-koo-rah nee koo-oh-nah koo-hoo-nah tee goo-tohn-gah",
+          "context": "To grow old is to gain insight; mere fulness of belly is not lasting wealth.",
+          "audioFile": null
+        },
+        {
+          "english": "Truth will prevail",
+          "translation": "Kĩhooto gĩtĩkũragwo nĩ rũũĩ",
+          "pronunciation": "kee-hoh-oh-toh gee-tee-koo-rah-gwoh nee roo-oo-ee",
+          "context": "Lit. 'Justice / moral truth cannot be swept away by a river.' Truth stands firm forever.",
+          "audioFile": null
+        },
+        {
+          "english": "The early bird catches the worm",
+          "translation": "Mũũkĩrĩ tene acokaga tene",
+          "pronunciation": "moo-oo-kee-ree teh-neh ah-choh-kah-gah teh-neh",
+          "context": "Lit. 'He who wakes early returns home early.' Promptness leads to success.",
+          "audioFile": null
+        },
+        {
+          "english": "A friend in need is a friend indeed",
+          "translation": "Mũrata wa ma onekaga thĩĩna-inĩ",
+          "pronunciation": "moo-rah-tah wah mah oh-neh-kah-gah thee-ee-nah-ee-nee",
+          "context": "A genuine friend proves loyalty during days of hardship and difficulty.",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Phrases",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "Yes",
+          "translation": "Ĩĩ",
+          "pronunciation": "ee-ee",
+          "context": "Affirmative agreement",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Aca",
+          "pronunciation": "ah-chah",
+          "context": "Negative response",
+          "audioFile": null
+        },
+        {
+          "english": "Sorry / Sympathy",
+          "translation": "Ũrĩa Ngai / Pole",
+          "pronunciation": "oo-ree-ah n-gah-ee / poh-leh",
+          "context": "Expression of empathy or comfort",
+          "audioFile": null
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Wĩtagwo atĩa?",
+          "pronunciation": "wee-tah-gwoh ah-tee-ah",
+          "context": "Polite introduction inquiry",
+          "audioFile": null
+        },
+        {
+          "english": "My name is...",
+          "translation": "Njitagwo...",
+          "pronunciation": "n-jee-tah-gwoh",
+          "context": "Response: 'I am called...'",
+          "audioFile": null
+        },
+        {
+          "english": "I love you",
+          "translation": "Nĩngwendete",
+          "pronunciation": "nee-n-gwehn-deh-teh",
+          "context": "Deep personal affection",
+          "audioFile": null
+        },
+        {
+          "english": "Come here",
+          "translation": "Ũka haha",
+          "pronunciation": "oo-kah hah-hah",
+          "context": "Friendly request to approach",
+          "audioFile": null
+        },
+        {
+          "english": "Go well",
+          "translation": "Thiĩ na wega",
+          "pronunciation": "thee-ee nah weh-gah",
+          "context": "Blessing for departing travelers",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you going?",
+          "translation": "Ũrathiĩ kũ?",
+          "pronunciation": "oo-rah-thee-ee koo",
+          "context": "Common question to travelers",
+          "audioFile": null
+        },
+        {
+          "english": "How much is this?",
+          "translation": "Gĩkĩ nĩ mbeca cigana?",
+          "pronunciation": "gee-kee nee m-beh-chah chee-gah-nah",
+          "context": "Market price inquiry",
+          "audioFile": null
+        },
+        {
+          "english": "Good / Well",
+          "translation": "Wega",
+          "pronunciation": "weh-gah",
+          "context": "General approval or affirmation",
+          "audioFile": null
+        },
+        {
+          "english": "All is well",
+          "translation": "Gũtĩrĩ na ũũru",
+          "pronunciation": "goo-tee-ree nah oo-oo-roo",
+          "context": "Lit. 'There is no evil / trouble'",
+          "audioFile": null
+        },
+        {
+          "english": "News / Affair",
+          "translation": "Ũhoro",
+          "pronunciation": "oo-hoh-roh",
+          "context": "Information, matter, or news",
+          "audioFile": null
+        },
+        {
+          "english": "Long ago / Ancient times",
+          "translation": "Tene",
+          "pronunciation": "teh-neh",
+          "context": "Times of old / early",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon",
+          "translation": "Mĩarahũko-inĩ",
+          "pronunciation": "mee-ah-rah-hoo-koh-ee-nee",
+          "context": "Mĩarahũko = afternoon",
+          "audioFile": null
+        },
+        {
+          "english": "Again",
+          "translation": "Rĩngĩ",
+          "pronunciation": "reen-gee",
+          "context": "Once more",
+          "audioFile": null
+        },
+        {
+          "english": "Above / Up",
+          "translation": "Igũrũ",
+          "pronunciation": "ee-goo-roo",
+          "context": "Up high or in the heavens",
+          "audioFile": null
+        },
+        {
+          "english": "After / Behind",
+          "translation": "Thutha",
+          "pronunciation": "thoo-thah",
+          "context": "'Thutha wa...' = behind / after...",
+          "audioFile": null
+        },
+        {
+          "english": "Beautiful / Handsome",
+          "translation": "-thaka",
+          "pronunciation": "thah-kah",
+          "context": "Mũndũ mũthaka = handsome/beautiful person",
+          "audioFile": null
+        },
+        {
+          "english": "Bad / Evil",
+          "translation": "-ũru",
+          "pronunciation": "oo-roo",
+          "context": "Ũhoro mũũru = bad news",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

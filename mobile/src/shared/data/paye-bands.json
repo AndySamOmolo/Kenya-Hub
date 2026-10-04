@@ -1,0 +1,38 @@
+{
+  "fiscalYear": "2026",
+  "effectiveFrom": "2026-07-01",
+  "lastUpdated": "2026-07-01",
+  "source": "Kenya Revenue Authority (KRA)",
+  "payeBands": [
+    { "min": 0, "max": 24000, "rate": 10, "label": "First KES 24,000" },
+    { "min": 24001, "max": 32333, "rate": 25, "label": "Next KES 8,333" },
+    { "min": 32334, "max": 500000, "rate": 30, "label": "Next KES 467,667" },
+    { "min": 500001, "max": 800000, "rate": 32.5, "label": "Next KES 300,000" },
+    { "min": 800001, "max": null, "rate": 35, "label": "Above KES 800,000" }
+  ],
+  "personalRelief": 2400,
+  "insuranceRelief": {
+    "rate": 15,
+    "maxPerMonth": 5000
+  },
+  "disabilityExemption": {
+    "maxPerMonth": 150000
+  },
+  "sha": {
+    "rate": 2.75,
+    "basis": "gross salary",
+    "note": "Social Health Insurance Fund contribution remitted to the Social Health Authority. It replaces NHIF and is not an income-banded NHIF deduction."
+  },
+  "nssf": {
+    "tier1Limit": 7000,
+    "tier2Limit": 36000,
+    "rate": 6,
+    "pensionablePayLimit": 36000,
+    "note": "NSSF contribution rates and pensionable earnings limits are subject to the current NSSF Year 4 schedule. Confirm the applicable payroll month before filing."
+  },
+  "housingLevy": {
+    "employeeRate": 1.5,
+    "employerRate": 1.5,
+    "note": "Affordable Housing Levy is 1.5% of gross salary for the employee and employer. Confirm current deductibility treatment with KRA payroll guidance."
+  }
+}

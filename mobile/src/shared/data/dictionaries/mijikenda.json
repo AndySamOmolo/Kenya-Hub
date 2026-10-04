@@ -1,0 +1,44 @@
+{
+  "languageId": "mijikenda",
+  "languageName": "Mijikenda (Giriama)",
+  "family": "bantu",
+  "nativeName": "Kigiriama",
+  "script": "Latin",
+  "speakerCount": 2500000,
+  "counties": ["Kilifi", "Kwale", "Mombasa"],
+  "hasAudio": false,
+  "dictionaryVersion": "0.1.0",
+  "lastUpdated": "2026-07",
+  "contributorNote": "Mijikenda encompasses nine sub-groups (Giriama, Digo, Duruma, Chonyi, Jibana, Kambe, Ribe, Rabai, Kauma). This uses the Giriama dialect as the most widely spoken. Coastal Kenya.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        { "english": "Hello", "translation": "Jomba", "pronunciation": "johm-bah", "context": "General greeting", "audioFile": null },
+        { "english": "How are you?", "translation": "Uwe mudziro?", "pronunciation": "oo-weh moo-dzee-roh", "context": "", "audioFile": null },
+        { "english": "I am fine", "translation": "Ni mudziro", "pronunciation": "nee moo-dzee-roh", "context": "", "audioFile": null },
+        { "english": "Thank you", "translation": "Ahsante", "pronunciation": "ah-sahn-teh", "context": "Influenced by Swahili", "audioFile": null },
+        { "english": "Goodbye", "translation": "Kwaheri", "pronunciation": "kwah-heh-ree", "context": "Borrowed from Swahili", "audioFile": null }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "icon": "🔢",
+      "entries": [
+        { "english": "One", "translation": "Moja", "pronunciation": "moh-jah", "context": "", "audioFile": null },
+        { "english": "Two", "translation": "Mbiri", "pronunciation": "m-bee-ree", "context": "", "audioFile": null },
+        { "english": "Three", "translation": "Datu", "pronunciation": "dah-too", "context": "", "audioFile": null },
+        { "english": "Four", "translation": "Nye", "pronunciation": "nyeh", "context": "", "audioFile": null },
+        { "english": "Five", "translation": "Tsano", "pronunciation": "tsah-noh", "context": "", "audioFile": null },
+        { "english": "Six", "translation": "Sita", "pronunciation": "see-tah", "context": "", "audioFile": null },
+        { "english": "Seven", "translation": "Fung'ate", "pronunciation": "foong-ah-teh", "context": "", "audioFile": null },
+        { "english": "Eight", "translation": "Nane", "pronunciation": "nah-neh", "context": "", "audioFile": null },
+        { "english": "Nine", "translation": "Tisa", "pronunciation": "tee-sah", "context": "", "audioFile": null },
+        { "english": "Ten", "translation": "Kumi", "pronunciation": "koo-mee", "context": "", "audioFile": null }
+      ]
+    }
+  ]
+}

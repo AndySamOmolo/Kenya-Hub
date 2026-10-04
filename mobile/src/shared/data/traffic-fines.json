@@ -1,0 +1,124 @@
+{
+  "source": "Traffic Act (Cap 403) + NTSA Published Fine Schedule",
+  "lastUpdated": "2024",
+  "categories": [
+    {
+      "id": "speed",
+      "name": "Speed Offences",
+      "icon": "🏎️",
+      "offences": [
+        { "offence": "Exceeding speed limit by up to 10 km/h", "fine": 5000, "demeritPoints": 3, "arrestable": false },
+        { "offence": "Exceeding speed limit by 10 – 20 km/h", "fine": 10000, "demeritPoints": 4, "arrestable": false },
+        { "offence": "Exceeding speed limit by 20 – 30 km/h", "fine": 15000, "demeritPoints": 5, "arrestable": false },
+        { "offence": "Exceeding speed limit by 30 – 40 km/h", "fine": 20000, "demeritPoints": 6, "arrestable": true },
+        { "offence": "Exceeding speed limit by over 40 km/h", "fine": 50000, "demeritPoints": 8, "arrestable": true },
+        { "offence": "Racing on public road", "fine": 50000, "demeritPoints": 8, "arrestable": true }
+      ]
+    },
+    {
+      "id": "documentation",
+      "name": "Documentation Offences",
+      "icon": "📄",
+      "offences": [
+        { "offence": "Driving without valid driving license", "fine": 10000, "demeritPoints": 4, "arrestable": true },
+        { "offence": "Driving without valid insurance", "fine": 50000, "demeritPoints": 6, "arrestable": true },
+        { "offence": "Failure to produce driving license on demand", "fine": 5000, "demeritPoints": 2, "arrestable": false },
+        { "offence": "Driving with expired license", "fine": 5000, "demeritPoints": 3, "arrestable": false },
+        { "offence": "Driving without valid NTSA inspection", "fine": 10000, "demeritPoints": 3, "arrestable": false },
+        { "offence": "Failure to display valid road license/sticker", "fine": 5000, "demeritPoints": 2, "arrestable": false }
+      ]
+    },
+    {
+      "id": "dui",
+      "name": "Drunk Driving / DUI",
+      "icon": "🍺",
+      "offences": [
+        { "offence": "Driving under the influence of alcohol (first offence)", "fine": 100000, "demeritPoints": 10, "arrestable": true, "additionalPenalty": "License suspension for 1 year or imprisonment up to 2 years" },
+        { "offence": "Driving under the influence of alcohol (repeat offence)", "fine": 200000, "demeritPoints": 10, "arrestable": true, "additionalPenalty": "License revocation and imprisonment up to 3 years" },
+        { "offence": "Driving under the influence of drugs", "fine": 100000, "demeritPoints": 10, "arrestable": true, "additionalPenalty": "License suspension and mandatory rehabilitation" },
+        { "offence": "Refusing breathalyzer test", "fine": 50000, "demeritPoints": 6, "arrestable": true }
+      ]
+    },
+    {
+      "id": "vehicle-condition",
+      "name": "Vehicle Condition",
+      "icon": "🔧",
+      "offences": [
+        { "offence": "Driving vehicle in dangerous condition", "fine": 20000, "demeritPoints": 4, "arrestable": true },
+        { "offence": "Defective brakes", "fine": 10000, "demeritPoints": 4, "arrestable": true },
+        { "offence": "Defective lights (headlights/tail lights)", "fine": 5000, "demeritPoints": 2, "arrestable": false },
+        { "offence": "Worn/defective tyres", "fine": 5000, "demeritPoints": 3, "arrestable": false },
+        { "offence": "Excessive exhaust emissions", "fine": 10000, "demeritPoints": 2, "arrestable": false },
+        { "offence": "Illegal window tinting (below 35%)", "fine": 5000, "demeritPoints": 2, "arrestable": false },
+        { "offence": "Modified vehicle without NTSA approval", "fine": 10000, "demeritPoints": 3, "arrestable": false }
+      ]
+    },
+    {
+      "id": "parking",
+      "name": "Parking Offences",
+      "icon": "🅿️",
+      "offences": [
+        { "offence": "Parking in no-parking zone", "fine": 3000, "demeritPoints": 1, "arrestable": false },
+        { "offence": "Parking on pedestrian walkway/zebra crossing", "fine": 5000, "demeritPoints": 2, "arrestable": false },
+        { "offence": "Double parking", "fine": 3000, "demeritPoints": 1, "arrestable": false },
+        { "offence": "Parking in disabled bay without permit", "fine": 5000, "demeritPoints": 2, "arrestable": false },
+        { "offence": "Obstruction of traffic by parking", "fine": 5000, "demeritPoints": 2, "arrestable": false }
+      ]
+    },
+    {
+      "id": "traffic-violations",
+      "name": "Traffic Rule Violations",
+      "icon": "🚦",
+      "offences": [
+        { "offence": "Running a red light", "fine": 10000, "demeritPoints": 4, "arrestable": false },
+        { "offence": "Ignoring traffic officer signal", "fine": 10000, "demeritPoints": 4, "arrestable": true },
+        { "offence": "Overtaking on a continuous yellow line", "fine": 10000, "demeritPoints": 4, "arrestable": false },
+        { "offence": "Dangerous overtaking", "fine": 20000, "demeritPoints": 5, "arrestable": true },
+        { "offence": "Using mobile phone while driving", "fine": 5000, "demeritPoints": 3, "arrestable": false },
+        { "offence": "Not wearing seatbelt (driver)", "fine": 2000, "demeritPoints": 2, "arrestable": false },
+        { "offence": "Not wearing seatbelt (passenger — driver fined)", "fine": 2000, "demeritPoints": 1, "arrestable": false },
+        { "offence": "Failure to yield to pedestrian at zebra crossing", "fine": 5000, "demeritPoints": 3, "arrestable": false },
+        { "offence": "Driving wrong way on one-way road", "fine": 20000, "demeritPoints": 5, "arrestable": true }
+      ]
+    },
+    {
+      "id": "psv",
+      "name": "PSV / Commercial Violations",
+      "icon": "🚌",
+      "offences": [
+        { "offence": "Operating PSV without valid license", "fine": 100000, "demeritPoints": 8, "arrestable": true },
+        { "offence": "Overloading passengers", "fine": 20000, "demeritPoints": 5, "arrestable": true },
+        { "offence": "Touting / illegal passenger solicitation", "fine": 10000, "demeritPoints": 0, "arrestable": true },
+        { "offence": "PSV operating outside designated route", "fine": 10000, "demeritPoints": 3, "arrestable": false },
+        { "offence": "Dropping/picking passengers at undesignated points", "fine": 10000, "demeritPoints": 3, "arrestable": false },
+        { "offence": "PSV driver not wearing uniform", "fine": 5000, "demeritPoints": 1, "arrestable": false },
+        { "offence": "Overloading goods vehicle beyond rated capacity", "fine": 20000, "demeritPoints": 5, "arrestable": true }
+      ]
+    },
+    {
+      "id": "pedestrian",
+      "name": "Pedestrian Offences",
+      "icon": "🚶",
+      "offences": [
+        { "offence": "Jaywalking (crossing outside designated crossing)", "fine": 500, "demeritPoints": 0, "arrestable": false },
+        { "offence": "Walking on highway/motorway", "fine": 1000, "demeritPoints": 0, "arrestable": false }
+      ]
+    }
+  ],
+  "demeritPointSystem": {
+    "maxPoints": 24,
+    "resetPeriod": "3 years from first demerit",
+    "consequences": [
+      { "points": "1 – 12", "action": "Warning letter from NTSA" },
+      { "points": "13 – 18", "action": "Mandatory road safety course" },
+      { "points": "19 – 23", "action": "License suspension for 6 months" },
+      { "points": "24+", "action": "License revocation — must re-test to obtain new license" }
+    ]
+  },
+  "paymentMethods": [
+    "Cash bond at police station",
+    "M-Pesa paybill (NTSA service)",
+    "eCitizen portal (ntsa.go.ke)",
+    "Court-imposed fine after hearing"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "regions": [
+    { "id": "nairobi", "name": "Nairobi", "irradiance": 5.5, "counties": ["Nairobi"] },
+    { "id": "central", "name": "Central Highlands", "irradiance": 5.3, "counties": ["Kiambu", "Murang'a", "Nyeri", "Kirinyaga", "Nyandarua"] },
+    { "id": "coast", "name": "Coast", "irradiance": 5.8, "counties": ["Mombasa", "Kilifi", "Kwale", "Tana River", "Lamu", "Taita Taveta"] },
+    { "id": "rift-valley", "name": "Rift Valley", "irradiance": 6.2, "counties": ["Nakuru", "Uasin Gishu", "Baringo", "Laikipia", "Nandi", "Kericho", "Bomet", "Kajiado", "Narok", "Turkana", "West Pokot", "Samburu", "Trans Nzoia", "Elgeyo Marakwet"] },
+    { "id": "nyanza", "name": "Nyanza / Western", "irradiance": 5.3, "counties": ["Kisumu", "Siaya", "Homa Bay", "Migori", "Kisii", "Nyamira", "Kakamega", "Vihiga", "Bungoma", "Busia"] },
+    { "id": "eastern", "name": "Eastern", "irradiance": 5.9, "counties": ["Machakos", "Makueni", "Kitui", "Embu", "Tharaka-Nithi", "Meru", "Isiolo"] },
+    { "id": "north-eastern", "name": "North Eastern", "irradiance": 6.5, "counties": ["Garissa", "Wajir", "Mandera", "Marsabit"] }
+  ],
+  "systemDefaults": {
+    "avgCostPerKw": 80000,
+    "panelEfficiency": 0.20,
+    "systemLosses": 0.15,
+    "panelAreaPerKw": 5.5,
+    "systemLifespan": 25,
+    "annualDegradation": 0.005,
+    "kplcAvgRatePerKwh": 22.50,
+    "currency": "KES"
+  },
+  "notes": [
+    "Solar irradiance values are annual averages in kWh/m²/day based on Kenya Meteorological Department data",
+    "System cost of ~KES 80,000/kW is an approximate Kenya market average for grid-tied systems (2024)",
+    "Panel efficiency of 20% reflects typical monocrystalline panels available in Kenya",
+    "System losses (15%) account for inverter efficiency, wiring, dust, and temperature effects",
+    "Annual degradation of 0.5% is the industry standard for quality solar panels",
+    "Kenya sits on the equator, providing excellent year-round solar conditions",
+    "Actual savings depend on your specific KPLC tariff band and consumption pattern"
+  ]
+}

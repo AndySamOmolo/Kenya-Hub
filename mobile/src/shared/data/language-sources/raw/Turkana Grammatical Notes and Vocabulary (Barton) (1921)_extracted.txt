@@ -1,0 +1,1991 @@
+=== TITLE & PUBLICATION DETAILS ===
+TURKANA GRAMMATICAL NOTES AND VOCABULARY
+By JUXON BARTON
+Journal of the Royal Anthropological Institute / Cambridge, 1921
+
+=== INTRODUCTORY ===
+The Turkana language has been studied by Mr. A. C. Hollis (see Sir Charles Eliot, Introduction to Hollis' The Nandi), though his results are apparently unpublished ; and by the late Hon. A. Bruce, whose notes appear to have been lost ; a short comparative vocabulary is to be found in The Uganda Protectorate, vol. ii, by Sir Harry Johnston.
+The following outline has been compiled through the medium of Ki-Swahili and Suk. A few Turkana speak Swahili badly and Suk moderately well, while a number of Suk speak Swahili moderately and Turkana well. The shortcomings of the ensuing notes and vocabulary are due partly to the disadvantages of this method, partly to inexperience and want of philological and phonetic training. It may be added that no two Europeans who have come in contact with this tribe agree in their rendering of Turkana sounds by the symbols of an alphabet.
+
+=== GENERAL ===
+The Turkana are perhaps best described as a Niloto-Hamitic race ; they are closely allied to the Jie, Dodoso, and Karamojo, and in a less degree to the Suk ; they are related to the Latuka-Acholi-Aluru-Wamia-Kavirondo (Ja-Luo) group ; and their language has some similarity to Teso, as shown in the lately published grammar. They are extremely nomadic pastoralists grazing a large area west, south, and south-east of Lake Rudolf, and are also somewhat warlike, occasionally raiding other tribes.
+Guttural sounds predominate in the speech of the Turkana, and their mouths are never free from saliva even when they are not chewing tobacco, which imparts an unusually moist lisp to their speech. An endeavour has been made to write the consonants as in English and the vowels as in Italian.
+b and p are seemingly interchangeable.
+c generally indicates the sound of ch in "church".
+g is always hard.
+k and g sounds are apt to vary with the age and timbre of voice of the person speaking. Sometimes it seems doubtful whether the initial sound is k or the velar nasal ng' (as in "sing")—written n' by Archdeacon Kitching.
+ny often occurs as an initial before e and i, but is nearly always slurred in ordinary speech.
+s is practically always th ; this lisp has a "wet" sound and is a Turkana characteristic.
+u is not always substituted for the English w.
+w is in many words quite distinct from u.
+The Turkana "clip" these words, pronouncing them with a distinct "glottal stop". There are two, if not three, dialects, which may be conveniently but not altogether accurately defined as belonging to the Pastoral, the Agricultural, and Fishing sections.
+The language shows a number of onomatopœic words, or "sound pictures" (see "birds", "bark" of dog, etc.) ; and to a layman is coarse in its form and poor in its vocabulary. Vowels do not always elide.
+
+=== GENDER ===
+Sex is denoted by the addition of a word meaning "male" or "female", e.g. :—
+e'koloba-e'manik : buck impala.
+e'koloba-a'bero : doe impala.
+ng'olobai-ng'emaniko : buck impalas.
+ng'olobai-ng'abero : doe impalas.
+e'manik is not used for male human beings, but e'kili, pl. ng'iliok, a'bero is used for all females.
+
+=== NUMBER ===
+The pl. suffixes are a, ya, o, yo, e, ae, ai, k, t, tha, in, syo, is ; these are the more common, there seems to be no system.
+
+=== ARTICLE ===
+The article always seems to be used and to form part of the word ; in rapid speech it is very much slurred. The article is e', i', or a' in the singular and ng', rarely ny', in the plural. Possibly masculine and feminine forms are found (see Sir Charles Eliot, op. cit.) ; they are difficult to recognize and to explain in inquiry from Turkana, who always deny their existence.
+
+=== CASE ===
+There is, properly speaking, no such thing as case, though the vocative is indicated by the affixes -ne for the singular and -no for the plural, e.g. :—
+e'kili-ne : O man.
+ng'ilioko-no : O men.
+a'bero-ne : O woman.
+ng'abero-no : O women.
+A man is addressed as lodialo-ayon, several as lodialo-eth, with the meaning "I say you", as in the Suk werno, pl. wer-chara.
+The genitive is expressed—
+(1) By the use of ngolo or ngulu, which is possibly a pronoun, e.g. e'tunganan ngolo Lorogumo, a man of Lorogumo ; ng'itunga ngulu Lorogumo, the people of Lorogumo.
+(2) By the preposition ken, e.g. baba ken Loburiomoi, the father of Loburiomoi.
+(3) By the preposition a, e.g. e'sikiriya a toto ken Loburiomoi, the donkey of the mother of Loburiomoi.
+(4) By position, the possessor following the thing possessed, e.g. ng'atuk Loburiomoi, the cattle of Loburiomoi.
+The last is the most usual.
+
+=== SUBSTANTIVES ===
+These do not seem to be divisible into classes.
+
+=== ADJECTIVES ===
+The same remark applies. The relative pronoun seems to be omitted in most cases. The adjective follows the substantive.
+
+=== PRONOUNS ===
+1. Personal
+I : ayon.
+thou : ion.
+he, etc. : ngeth.
+we : thowa.
+ye : eth.
+they : keth.
+
+2. Possessive
+my : akan | ngulu-kan.
+thy : ekon | ngulu-kon.
+his, etc. : ekin | ngulu-kin.
+ours : ekothi | ngulu-kothi.
+yours : ekuth | ngulu-kuth.
+theirs : ekech | ngulu-kech.
+e.g. a'kwara-kan, my spear ; ng'akwarath ngulu-kothi, my spears.
+
+3. Demonstrative
+this : -en, -lo, or ngol | -elu or -ngul.
+that (near) : -eya | -ekwa.
+that (remote) : -yaga | -kwagwa.
+e.g. a'kileng-en, this knife ; ng'akilengya-kwa, those knives ; but lowai-ye, that (near) place.
+
+4. Reflexive
+I myself : ayon-elopi.
+thou thyself : ion-elopi.
+he, etc., himself : ngeth-elopi.
+we ourselves : thowa-ngilipek.
+ye yourselves : eth-ngilipek.
+they themselves : keth-ngilipek.
+I by myself : ayon-bon.
+thou by thyself : ion-bon.
+he by himself : ngeth-bon.
+etc.
+
+5. Relative
+Sing. una, pl. ulu. e'tunganan una ejok, the man who is good ; ng'etunga ulu ejok, the men who are good.
+The negative is nye e'tunganan una nye ejok, the man who is not good.
+
+6. Indefinite
+-chi. Sing. echi e'tungunan, a different man ; ngulu-chi ng'etunga, in the plural.
+The one . . . the other : ichi . . . ichi.
+Each man : e'tungunan dan.
+Every man : ng'etunga dan.
+All men : ng'etunga da dan.
+Both : da dan mwari.
+
+7. Interrogative Pronouns
+who ? : ngai ?
+whose ? : a-ngai ?
+ngai-ayon ? : who is this ?
+ngai-eth ? : who are these ?
+a-ngai-lo ? : whose is this ?
+a-ngai-lu ? : whose are these ?
+When ngai is used objectively it follows the verb, e.g. nagen-ngai ? to whom will you give (it) ?
+what ? : nyo ?
+what is this ? : nyo-lo ?
+what do you want ? : esagin-nyo ?
+which ? : ali ? and aiū ?
+of what sort ? : eko-nyai ?
+of what sort is this ? : eko-nyai-lo ?
+how much ? how many ? : ngayai ?
+
+=== REGULAR VERBS ===
+Sir Charles Eliot (op. cit., p. xxxi) states that verbs in Turkana are divided into two classes, those beginning with i, and those beginning with any other sound, and exemplifies the conjugation of the present tense of the verb cham, "to love." This, save in its root, was not recognized by Turkana. Allowances are necessary in endeavouring to record tenses, as it is nearly impossible to explain their value to natives, especially through the medium of a language foreign to both.
+
+Active Voice, Indicative
+Person is marked by the suffixed pronoun; it is often omitted, especially where there is no doubt as to the person meant. The negative is formed by prefixing nye, the vowel being elided.
+
+1. Present Tense. I hear.
+sing.
+1. erar-ayon.
+2. erar-ion.
+3. erari-ngeth.
+pl.
+1. kerari-thowa.
+2. erar-eth.
+3. erariti-keth.
+Negative: ny-erar-ayon, etc.
+
+2. Future Tense. I will hear.
+Apparently this tense is only indicated by the use of a word denoting the future with the present tense, e.g. alothi mui, I will go to-morrow. In this tense the pronoun seems to be dropped, possibly the context is usually a sufficient guide to the speaker's meaning.
+
+3. Present Perfect Tense. I have heard.
+sing.
+1. ayra-ayon.
+2. era-ion.
+3. era-ngeth.
+pl.
+1. kera-thowa.
+2. era-eth.
+3. era-keth.
+
+4. Imperfect Tense. I was hearing.
+sing.
+1. erarit-ayon.
+2. erarit-ion.
+3. erarit-ngeth.
+pl.
+1. kerarit-thowa.
+2. erarit-eth.
+3. erarit-keth.
+
+Active Voice, Conditional
+The pronoun is retained as in the indicative. The negative -nye- is inserted, its vowel being elided.
+
+1. Present Tense. If, etc., I hear.
+sing.
+1. ani-erar-ayon.
+2. ani-erar-ion.
+3. ani-erari-ngeth.
+pl.
+1. ani-kerari-thowa.
+2. ani-erar-eth.
+3. ani-erari-keth.
+Negative: ani-ny-erar-ayon, etc.
+
+2. Past Tense. If, etc., I had heard.
+sing.
+1. ani-kaira-ayon.
+2. ani-kera-ion.
+3. ani-kera-ngeth.
+pl.
+1. ani-kera-thowa.
+2. ani-kera-eth.
+3. ani-kera-keth.
+
+Active Voice, Subjunctive
+This was not traced ; inquiries showed that kotiri, because, was used with the infinitive.
+
+Active Voice, Infinitive
+This is apparently formed by prefixing aki- to the root, and affixing -i, e.g. aki-tar-i, to dig ; aki-gum-i, to shoot ; aki-latar-i, to wash ; aki-lar-i, to walk.
+
+Active Voice, Imperative
+Apparently the root of the verb is used where the meaning is imperative in every sense ; where more than one person is addressed -to is affixed, e.g. tolot, go ! kibirr, run ! ngolik, look out ! tolot-to, kibirr-to, ngolik-to, etc.
+The pronoun is sometimes added for emphasis.
+
+Passive Voice
+This is indicated by the infixes -itai- (present), -itita- (past), the pronoun being retained. In the negative nye- is prefixed, eliding its vowel.
+
+1. Present. I am struck.
+sing.
+1. karam-itai-ayon.
+2. karam-itai-ion.
+3. karam-itai-ngeth.
+pl.
+1. karam-itai-thowa.
+2. karam-itai-eth.
+3. karam-itai-keth.
+Negative: nye-karam-itai-ayon.
+
+2. Past. I have been struck.
+sing.
+1. karam-itita-ayon.
+2. karam-itita-ion.
+3. karam-itita-ngeth.
+pl.
+1. karam-itita-thowa.
+2. karam-itita-eth.
+3. karam-itita-keth.
+
+3. Present Conditional. If I am struck.
+sing. ani-karam-itai-ayon, etc.
+Negative: ani-nye-karam-itai-ayon.
+
+4. Past Conditional. If I had been struck.
+The sound is similar, but possibly should be written : sing. ani-ke-karam-itai-ayon, etc.
+
+5. Subjunctive. That I may be struck.
+This was not traced.
+
+=== QUASI-PASSIVE VERBS ===
+These are formed from adjectives by suffixing -i, which elides before other vowels ; the pronoun is retained, e.g. I become big from elangir, broad.
+sing.
+1. elangir-ayon.
+2. elangir-ion.
+3. elangir-i-ngeth.
+pl.
+1. elangir-i-thowa.
+2. elangir-eth.
+3. elangir-i-keth.
+
+=== IRREGULAR VERBS ===
+These appear to be very irregular.
+
+TO BE
+1. Present. I am.
+sing.
+1. e'tunganan-ayon.
+2. e'tunganan-ion.
+3. e'tunganan-ngeth.
+pl.
+1. ng'itunga-thowa.
+2. ng'itunga-eth.
+3. ngitungh-keth.
+Literally "a man I". Negative: ny-etunganan-ayon.
+
+2. Past. I was.
+sing.
+1. kerai-ayon.
+2. kerai-ion.
+3. kerai-ngeth.
+pl.
+1. kerai-thowa.
+2. kerai-eth.
+3. kerai-keth.
+
+TO BE PRESENT
+1. Present. I am present.
+sing.
+1. eyey-ayon.
+2. eyey-ion.
+3. eyeyi-ngeth.
+pl.
+1. keya-thowa.
+2. eyey-eth.
+3. eyeyi-keth.
+Negative: ny-eyey-ayon.
+
+2. Present Perfect. I have been present.
+sing.
+1. kaiyey-ayon.
+2. kaiyey-ion.
+3. kaiyeyi-ngeth.
+pl.
+1. kaiyeyi-thowa.
+2. kaiyey-eth.
+3. kaiyeyi-keth.
+Negative: p-aiyey-ayon, etc. (Note: There seems reason to believe that, in some cases, though very rarely, p- appears as a negative prefix, instead of nye.)
+
+TO SEE
+1. Present. I see.
+sing.
+1. ainua-ayon.
+2. ainua-ion.
+3. ainua-ngeth.
+pl.
+1. ainua-thowa.
+2. ainua-eth.
+3. ainua-keth.
+Or: ain-ayon, etc.
+Negative: ny-ainua-ayon.
+
+2. Past. I have seen.
+sing.
+1. ainun-it-ayon.
+2. ainun-it-ion.
+3. ainun-iti-ngeth.
+pl.
+1. ainun-iti-thowa.
+2. ainun-it-eth.
+3. ainuniti-keth.
+
+3. Imperative. See ! see ye !
+sing. t-ainu.
+pl. t-ainu-to.
+
+TO GO
+1. Present. I go.
+sing.
+1. alothi-ayon.
+2. alothi-ion.
+3. alothi-ngeth.
+pl.
+1. ki-lothi-thowa.
+2. alothi-eth.
+3. alothi-keth.
+Negative: ny-alothi-ayon.
+
+2. Past Perfect. I went.
+sing.
+1. kelot-ayon.
+2. kelot-ion.
+3. keloti-ngeth.
+pl.
+1. keloti-thowa.
+2. kelot-eth.
+3. keloti-keth.
+
+3. Imperative. Go ! Go ye !
+sing. tolot.
+pl. tolot-to.
+
+TO COME
+1. Present. I come.
+sing.
+1. abuni-ayon.
+2. abuni-ion.
+3. abuni-ngeth.
+pl.
+1. ki-poti-thowa.
+2. ki-poti-eth.
+3. ki-poti-keth.
+Negative: ny-abuni-ayon.
+
+2. Past Perfect. I came.
+sing.
+1. k-abunit-ayon.
+2. k-abunit-ion.
+3. k-abunit-ngeth.
+pl.
+1. ki-ki-bunit-thowa.
+2. ki-bunit-eth.
+3. ki-bunit-keth.
+
+3. Imperative. Come ! Come ye !
+sing. bwa.
+pl. pot-to.
+
+Reduplicative Verbs
+There are a number of instances, e.g. adungi, "I cut" ; adungi-dungi, "I cut in small pieces" ; abuki, "I shake" ; abuki-buki, "I churn" ; emudud-mududgiana, "I blink."
+
+Auxiliary Verbs
+There are two words which have the meaning "to be able" ; the first (anangi) differs from the second (atiri), which is used where physical strength is implied, e.g. anangi akilari, "I am able to walk" ; anangi akimugi, "I am able to eat" ; atiri akiari ngeth, "I can spear him" ; atiri akidakari ngeth, "I can throw (wrestle) him."
+"Must" is expressed by mati, e.g. mati alothi mui, I must go to-morrow.
+
+=== ADVERBS ===
+Adverbs follow their verbs.
+above : akuich (God).
+below : kwopa.
+before : ngarin.
+behind : kouū.
+early : ataparach (dawn), ebai.
+late : ebon (evening).
+near : api.
+far : elwana.
+quickly : atipe.
+slowly : kiyapak.
+very : noie (follows another adverb).
+for nothing : kongen.
+
+kere is like the Swahili sana or Suk nyaman, and can be used as many adverbs in English, e.g. indeed, very, very much, thoroughly, e.g. :—
+Turkana: ededen kere | Suk: korom nyaman | Swahili: kali sana | English: very fierce.
+Turkana: kera kere | Suk: lima nyaman | Swahili: sikia sana | English: understand (hear) thoroughly.
+
+Adverbs of Time
+now : tokona.
+instantly : tokona-tokona.
+lately : ngon ngarin.
+presently : eringa adojigi (before a little).
+before : eringa.
+after : affix -ta, and anita.
+ago (long) : ngorot and kojolo.
+ago (recent) : ngon (yesterday).
+to-day : tete and akolon itina.
+to-morrow : mui.
+yesterday : ngon.
+the day before yesterday : ngon echi akolon.
+the day after to-morrow : mui echi akolon.
+those days : ng'akwaritia nu.
+always : ng'akwarithia dan.
+time upon time : jui-jui.
+
+Adverbs of Place
+where : neni.
+
+Adverbs of Manner
+like : ikoni and erian.
+only : bon.
+together : dādān.
+no : mam (which reduplicates greatly for emphasis, or else mam ejik).
+yes : ii (in following speech approved by hearer kongena or erobo).
+
+Adverbs Interrogative
+how ? : eko nyai or e balai ?
+where ? : ali ?
+why ? : ikwani ?
+how many ? : ngeyai or nyeyai ?
+when ? : wurre ?
+since when ? : tarre wurre ?
+
+=== CONJUNCTIONS ===
+and, with : ka.
+either . . . or : kere . . . kere.
+for : ya or tati.
+but : anine.
+if : ani.
+
+=== PREPOSITIONS ===
+of : aka.
+with : te.
+by : ta.
+
+=== INTERJECTIONS ===
+of surprise : oitokoi totoken, O my mother.
+of contempt : je-je, followed by expulsion of breath.
+of acknowledgment : wō, by man ; yēāi, by woman.
+of farewell : tolot-ion, go thou ; answer, ejok alothi, good, I go.
+who knows : aiye.
+perhaps : kure or ayeh (?).
+
+=== GREETINGS ===
+Of greeting : man to man, woman to woman, man to woman :
+Q. na ? A. baiya, repeated three times.
+Man to man, and sometimes to very old woman :
+Q. mata (health) ; A. ii mata.
+Q. mata ng'atuk (health to [your] cattle) ; A. mata ouwi (health to [your] village).
+Q. mata ng'idwi (health to [your] offspring) ; A. mata ariama (health to [our] constant meetings).
+Q. mata ng'ebarin (health to [your] property) ; A. mata ng'abero (health to [your] women).
+Both : mata ejik (complete health).
+
+=== NUMBERS ===
+1 : Epei.
+2 : Ari.
+3 : Uni.
+4 : Omwon.
+5 : Akhan or ng'an.
+6 : Akhan ka pei.
+7 : Akhan ka ari.
+8 : Akhan ka uni.
+9 : Akhan ka omwon.
+10 : Tomon or ng'tomon.
+11 : Tomon ka pei.
+20 : Tomon ari.
+21 : Tomon ari ka pei, etc.
+30 : Tomon uni, etc.
+40 : Tomon omwon, etc.
+50 : Tomon akhan, etc.
+60 : Tomon akhan ka pei, etc.
+70 : Tomon akhan ka ari, etc.
+80 : Tomon akhan ka uni, etc.
+90 : Tomon akhan ka omwan, etc.
+100 : Tomon tomon.
+101 : Tomon tomon ka pei, etc.
+150 : Tomon tomon ka tomon akhan, etc.
+200 : Tomon tomon ithia (emphasis) ari.
+201 : Tomon tomon ithia (emphasis) ari ka pei, etc.
+250–300 : Abungi.
+500–1000 : Ouriman.
+
+Note: Most Turkana cannot count past 200, after which number they seem to think in small and large herds of cattle ; money has scarcely reached their country.
+
+=== MONTHS ===
+The rainy season : Ageboro.
+January : Lodungi.
+February : Lomoruk.
+March : Loichoto.
+April : Titima.
+May : Yeliyel.
+June : Lopo.
+The dry season : Akamu.
+July : Lotiak.
+August : Lolingachunu.
+September : Lothaban.
+October : Lolongu.
+November : Lorarrar.
+December : Lugwan.
+
+Note: The division of the months into a "rainy" and a "dry" season does not correspond to the actual state of things in the Turkana country ; possibly it has been retained from early times when the tribe occupied a region where the seasons were more regular and propitious. The Turkana month would appear to begin about the twenty-second day of the English.
+
+=== TURKANA VOCABULARY ===
+The article is written as part of the word as it is spoken. The 1st person singular present tense is written in verbs.
+
+=== A ===
+Abdomen : akok, pl. akokis.
+Able : anangi, atiri.
+About : api.
+Above : akuich.
+Abundantly : lalak.
+Abuse, to : akamori.
+Accept, to : achami, ? to like, to love.
+Accompany, to : arogosi.
+Accustomed, to be : anāīk.
+Add, to : amorigini.
+Adulterer : akolomon, pl. ngalomok.
+Advance, to : angarini.
+Afraid, to be : akeri.
+Coward : ekuriana, pl. nguriaka.
+Afraid, to be very : aiyami.
+After : anita, or affix, ta.
+Afternoon : ebon, see "time".
+Again and again : akibunyak, and jui-jui.
+Ago, long : kojolo, and ngorot.
+Air : iguuôm.
+Alike : erian, and ekuni.
+All : dādān.
+Alone : ayon bon (I by myself).
+Amidst : kidin.
+Ancestor (m.) : apa, pl. ngapapai.
+Ancestor (f.) : tata, pl. ngatubai.
+And : ka.
+Angry, to be : angoiti.
+Animal : etian, pl. ngitian.
+Annoy, to : etabur (?).
+Another : eje.
+Answer : tolim, pl. tolimo.
+Answer, to : elimogini.
+Antelopes :
+Bush buck : adarit, pl. ngadarita.
+Dik-dik : ethuro, pl. ngetheroi.
+Eland : uwabet, pl. nguawabeto.
+Grant's Gazelle : ekuete, pl. ngakuete.
+Hartebeest : no name, is found near Saunderson Gulf, L. Rudolf.
+Impala : akoloba, pl. ngalobai.
+Kudu, Greater : emakak, pl. ngemakaka.
+Kudu, Lesser : asarich, pl. ngasarich.
+Oryx : eder, pl. ngederin.
+Reed buck : no name, apparently not known.
+Water buck : akokorait, pl ngokorai.
+Anus : othin, pl. ngowus.
+Anybody : etunganan dan.
+Anything : ebori dan.
+Anywhere : neni neni.
+Approach, to : abuni, imp., bwa.
+Arise : anuyoni.
+Arm : akan, pl. ngakanin.
+Arrange, to : asubageni.
+Arrive, to : adoli.
+Arrow : akoiyet, pl. ngoi.
+As : ikoni.
+Ascend, to : adoki.
+Ask, to : angethi.
+Assemble, to : akōdi.
+Assent, to : achami, ? to like, to love.
+Assist, to : angarakini.
+Attack, to : ajieti.
+Aunt (mat. and pat.) : eya, pl. ngaiyayai.
+Await, to : adaruni.
+Awaken, to : akeni.
+Away, to go : alothi.
+Axe : eyap, pl. ngaiyapai.
+
+=== B ===
+Baboon : echom, pl. ngechomin.
+Baby : ikoko, pl. ngedwi.
+Back : egur, pl. ngurai.
+Back, to go : ebongori.
+Bad : arono, pl. ngaroko.
+Bad tempered : ededen, pl. ngadadenga.
+Bag : echui, pl. ngechuin.
+Bare : eloithi kongen, pl. eloithi kongena (? two words).
+Bark : ngarbuk.
+Barrel : emolich, pl. ngemolicha.
+Barren : ekolup, pl. ngelupoka.
+Bathe, to : elotari.
+Battle : ajori, pl. ngajorethio.
+Bear (children), to : edōni.
+Pregnant woman : ipoti, pl. ngekaputiok.
+Pregnant animal : akabi, pl. ngaboka.
+Beard : ebenek, pl. ngebeneka.
+Beat, to : arami, see "hit".
+Beautiful : ejok, pl. ngejokoka.
+Because : kotïri, kwani, kwinyīn.
+Bed : ipem, pl. nyepemin.
+Bees : oūū.
+Before (time) : eringa.
+Before (place) : ngarin.
+Beggar : akaiyeran, pl. ngaiyerak.
+Begin, to : esioni.
+Behind : kouū.
+Believe, to : aiyagini.
+Belly : akok, pl. akokis.
+Below : kwopa.
+Belt : aroba, pl. ngarobai.
+Bend, to : akodogini.
+Bend down, to : tokokumi (?).
+Beseech, to : alipi.
+Better : ejok nyokoni.
+Between : kidin.
+Beware, to : angolikini.
+Big : epol, pl. ngepolok.
+Bind, to : ayeni.
+Bind round, to : alogi-ogi.
+Bird : ikenit, pl. ngken.
+Crow : akorup, pl. ngoroka.
+Dove : ekuri, pl. ngokori.
+Duck : abangan, pl. ngabanga.
+Guineafowl : atapen, pl. ngatapeno.
+Hawk : ejili, pl. ngaijilili.
+Honey-bird : ajeje, pl. ngaijeje.
+Marabout : atoli, pl. ngatolin.
+Quail : aluro, pl. ngalurio.
+Spurfowl : abiligaret, pl. ngabiligareta.
+Vulture : atorokot, pl. ngatorok.
+Bite, to : akoniji.
+Black : eriono, pl. ngerioko.
+Bleed, to : apoti nakot (?).
+Blind : emudukona.
+Blood : nakot.
+Blow, to : atilegini.
+Blunt : engini, pl. nganginio.
+Body : akwan, pl. ngouwat.
+Boil, to : akuloueti.
+Bone : akoit, pl. ngakoiyo.
+Borrow : atagagini.
+Bottom of : toma.
+Bough (tree) : ateni, pl. ngateni.
+Boundary (area) : atiake, pl. ngatiaketa.
+Boundary (field) : ekur, pl. ngekurin.
+Bow : akou, pl. ngakouō.
+Boy (baby) : ekili, pl. ngiliok.
+Boy (young) : edit, pl. ngedithok.
+Bracelet (iron) : asowat, pl. ngathua.
+Bracelet (brass) : maritoit, pl. maritoi.
+Bracelet (copper) : maritoit naragan, pl. maritoi narangak.
+Brain : adam, pl. ngidem.
+Break, to : abili.
+Breast : ethigina, pl. ngethigin.
+Breath : yarakin.
+Bridge : ikinabet, pl. ikinabeta.
+Bring, to : ayoui.
+Broad : adapal.
+Brother : lokadokan, pl. ngalokadokon.
+Brother (wife's) : akamuran, pl. ngamurak.
+Brother (husband's) : namwikan, pl. ngamwiok.
+Buffalo : ekothuan, pl. ngekothua.
+Build, to : aduki.
+Bull : emanik, pl. ngemaniko, see "oxen".
+Bullock : emon, pl. ngemongin, see "oxen".
+Burn, to : enokogini.
+Burst, to : abela.
+But : mam ejok (? lit. not good).
+Butter : akimet, pl. ngakajonon (? plural form).
+Butterfly : aberi, pl. ngaberi.
+Buttock : abor, pl. ngaboria.
+Buy, to : ageli.
+
+=== C ===
+Calabash : etu, pl. ngetuel.
+Calf (small) : manangit, pl. ngemanan.
+Calf (large) : etak, pl. ngetak.
+Call, to : anyari.
+Call out, to : ejali.
+Camel : akāl, pl. ngāl.
+Can : see "to be able".
+Cap (head-dress) : elim, pl. ngitemoi.
+Cape : akouōlat, pl. ngakouōlai.
+Carcase : akwan, pl. ngouwat, see "body".
+Care, to : agiteri. It does not matter, ikotinini.
+Cat, wild : lorutoit, pl. lokutucha.
+Catch, to : arumi.
+Cattle : ngatuk.
+Cattle fold : anuk, pl. nganukim.
+Cease, to : arumur.
+Chain : erikot, pl. ngiriko.
+Change, to : akilokoini.
+Change for, to : akizecha.
+Chase away, to : akota.
+Chatterer : erworono, pl. ngerworothi.
+Cheat, to : akingala.
+Cheek : ematanget, pl. ngematangeti.
+Cheetah : arrara, pl. ngarrarai.
+Chest : etorob, pl. ngatorobio.
+Chief : eirkatungan, pl. ngatukok.
+Chin : abokon, pl. ngabokonga.
+Choose, to : atheri.
+Chop, to : adungi.
+Chop small, to : adungi-dungi.
+Chop, sharpen, to : akuli.
+Churn, to : abūki, būki.
+Circumcise, to : akitubi, not a Turkana custom.
+Clan : atageri, pl. ngatagerin.
+Clap (hands), to : akibopi.
+Clasp, to : atingi.
+Claw : see "nail".
+Clay (for hair) : emunyan.
+Clean, to : alotari.
+Clear (water) : elewok, pl. ngelewakan.
+Clear (space) : agitela, pl. ngiteli.
+Cleave, to : atopoki.
+Clever : ewuth, pl. ngewuthok.
+Climb, to : adoki.
+Clitoris : emoniri, pl. ngemonir.
+Close, to : agoli.
+Close (adv.) : āpī.
+Cloth (clothes) : erwaro, pl. ngerwaroi.
+Cloud : edu, pl. ngeduon.
+Club : ebiro, pl. ngiberoi.
+Coition, to have : amanyi.
+Cold : elilim, pl. ngelimo.
+Collect, to : amorigini.
+Colour : emunyan (? see clay).
+Black : eriono, pl. ngerioko.
+Black and white : longerok, pl. nglongerokoka.
+Brown : inyan, pl. nyangaka.
+Blue : yepus, pl. nyeputhiaka.
+Green : alebal, pl. ngalibak.
+Mud-colour : engor, pl. ngorioka.
+Purple : angolipus, pl. ngoliputhia (? probably means "flower").
+Red : eren, pl. ngerenak.
+White : ekwan, pl. ngakwanak.
+Come, to : abuni.
+Arrive, to : adoli.
+Come apart, to : angedi.
+Come behind, to : ezidi.
+Come in, to : alomari.
+Come near, to : eyetuni.
+Command, to : atugi.
+Comprehend, to : atomuni.
+Conceal, to : eueti.
+Conquer, to : akuruori.
+Consent, to : acemuni.
+Consider, to : atami.
+Construct, to : aduki.
+Consult with, to : ingisi.
+Consume, to : emagi.
+Continue, to : euabi.
+Converse, to : ekieni.
+Cook, to : edoroki.
+Cooking-pot : amut, pl. ngamuti.
+Cool, to : atunaguna.
+Cool : akatorot.
+Corn (cereals) : mumwa (millet, scarcely any other kind grown).
+Beans : ngamari.
+Eleusine grain : ngakima.
+Flour : ngakiriyek.
+Maize : nyipepe.
+Millet : mumwa.
+Corpse : atona, pl. ngatoka.
+Costly : egogo, pl. ngogo.
+Cough, to : awola.
+Cousin (pat.) : lokaiya, pl. ngaiyeye.
+Cousin (mat.) : amaiyargon, pl. tamaiyargon.
+Cover, to : emugo.
+Cow : atāka, pl. ngatak, see "oxen".
+Coward : ekuriana, pl. ngekuriaka.
+Crocodile : akinyan, pl. ngakinyanga or nginyang.
+Cross, to : adogi.
+Cry, to : agori.
+Cultivate, to : etai.
+Cunning : ewus, pl. ngewuthoko.
+Cure, to : angoleki.
+Cut, to : adongai.
+
+=== D ===
+Daily : jui-jui.
+Damage, to : athegni.
+Dance, to : edonga.
+A dance : edonga, pl. ngdongothe.
+War dance : akiwar, pl. ngewarok.
+Dandy : egsubana, pl. ngesthubok.
+Dark : eriono, pl. ngerioko (black).
+Dark night : akou mutot.
+Daughter : apethe, pl. ngapethur.
+Dawn : ataparach, see "time".
+Day : erwait, pl. ngurwa, see "morning", "time", etc.
+Day light : abiet or akwabaret.
+Dead body : atona, pl. ngatoka.
+Deaf person : akingimana, pl. ngakingimangan.
+Dear (price) : egogo, pl. ngogo.
+Death : agetū.
+Debt : amecha, pl. ngamechai.
+Decay, to : abothi.
+Decrease, to : erogo.
+Deep : itilono, pl. ngitilogo.
+Defend, to : eti.
+Deflower, to : apedi.
+Delay, to : akidongi.
+Depart, to : anyoni.
+Deride, to : ameniti.
+Descend, to : atiari.
+Desert, to : alokōgini.
+Desire, to : achemi (see "like", "love", etc.).
+Despise, to : emaniti or emani.
+Destroy, to : aiyatari.
+Diarrhœa, to have : erwuruthe.
+Die, to : atona.
+Different : ichi, pl. ngichi.
+Difficult : egugo, pl. ngegugon.
+Dig, to : etai.
+Dirt : eloth, pl. ngelothia.
+Disagree, to : awōni.
+Disappear, to : amordigi.
+Be lost, to : angopi.
+Disease (cattle), for human, see "illness" :
+Pleuropneumonia : lugoi.
+Rinderpest : loped.
+Scab : akoikoi.
+Dislike, to : angeri.
+Distribute, to : atiagi.
+Ditch : agipain, pl. ngapainya.
+Divide, to : atoitiokani.
+Divorce, to : alaki.
+Do, to : atigi.
+Doctor : emuron agetai, pl. ngemurok ngagetoi.
+Dog : ingok, pl. ngoko.
+Dog, wild : epiot, pl. ngepioto.
+Donkey : esikirya, pl. ngisikirya.
+Door : akidor, pl. ngidorin.
+Drag, to : akiria.
+Dread, to : aïyamiti or aiyami.
+Dream, to : eroji.
+Dress, to : anapi.
+Drink, to : emathi, possibly only of milk.
+Drive, to : ameta.
+Drive away, to : erithi.
+Drop, to : ajakari.
+Drown, to : anyani.
+Drunk, to be : imera.
+Drunken person : emera, pl. ngemerathi.
+Dry : ewuno, pl. ngewunok.
+Dumb person : akingimana, pl. ngakingimaka.
+Dung (human) : achino, pl. nyachin.
+Dung (animal) : awaret, pl. ngawar.
+Dust : ebua, pl. ngebua.
+Dwell, to : aboigini.
+Dwelling-place : ekwarbokan, pl. ngekwarbek.
+
+=== E ===
+Ear : agit, pl. nyagi.
+Early : ebai.
+Earth : elup or ngalup.
+Sand : athinuin.
+Easy : arumuri.
+Eat, to : emugi.
+Educate, to : etatami.
+Egg : abeyet, pl. ngabeye.
+Either . . . or : kere . . . kere.
+Elbow : esidongaror, pl. ngesidongaroria.
+Elephant : etom, pl. ngetom.
+Elsewhere : watchi (?).
+Employment : itichi.
+Empty : elosikongen (? two words).
+Enemy : emoit, pl. ngemoi.
+End : abor.
+Enjoy, to : achemi (see "like", "love", "desire").
+Enlarge, to : etaki.
+Enough, to be : etamogi.
+Enquire, to : engesi.
+Enter, to : alomari.
+Entrails : amultin, pl. ngamultenya, see "stomach".
+Entreat, to : elipiti.
+Err, to : athethchi.
+Escape from, to : ape.
+Escape aim, to : ediaki.
+Escort, to : erimi.
+European : emuzugut, pl. mzungu, loan word from Swahili, sorai, pl. tasorai, lit. "wraith" or "ghost", emoron, pl. ngemorok, lit. "wizard".
+Even : mum.
+Evening : ebon.
+Ever, for : erono io.
+Every man : ngetunga dan.
+All men : ngetunga dadan.
+Every time : ebunichi (? two words).
+Everywhere : akwop dan.
+Evil : arono, pl. ngaroko.
+Except : eringa.
+Exchange, to : ejechi.
+Excreta : see "dung".
+Explain, to : etatomogini.
+Extinguish, to : etodungi.
+Eye : akon, pl. ngakonyan.
+
+=== F ===
+Face : eret, pl. ngeretin.
+Fall, to : ebosogini.
+Fall from above, to : emasuni.
+Fall into, to : ebosogini (?).
+Fall sick, to : adiakagini.
+Falsehood : alioko, pl. nyaliokoka.
+Family : ngitunga akan (lit. "people my").
+Famine : akoro.
+Far : elwana.
+Fast : kuwīn.
+Fasten, to : iyeni.
+Fat : akimet, pl. ngameta.
+Fat man : elangir, pl. ngalangiroko.
+Father : baba, pl. tababa.
+Father-in-law : akamuranika.
+Fatigued, to be : kaboro (?).
+Fault : athichi, pl. ngakithech.
+Fear, to : ayemiti.
+Feather : akobirot, pl. ngakobir, see "ostrich".
+Feeble person : akalanyana, pl. ngalanyaka.
+Feed (graze), to : eyogi.
+Feel, to : era.
+Female (human) : abero, pl. ngabero.
+Female (animal) : etian abero, pl. ngitian ngabero.
+Female (pregnant) : eputi, pl. ngekaputiok.
+Female (not yet pregnant) : egunyakoit, pl. ngunuko.
+Female (mother) : edo, pl. ngedugat.
+Female (barren) : esorokona, pl. ngiserok or ekolobana, pl. ngekolobaka.
+Female (menstruous) : eboi, pl. ngeboiyeti.
+Female (widow) : ebusorot, pl. ngebusorito.
+Fetch, to : ayoni (? see "bring").
+Few : ikidiyogo.
+Fierce : adedi, pl. ngadedengak.
+Fight with, to : igi.
+Fill, to : elelibu.
+Filth : elosi.
+Find, to : arabuni.
+Finger : ekimoin, pl. ngemoyo.
+Thumb : ekimoin labuloi, pl. ngemoyo nglabuloi.
+Finish, to : erika.
+Fire : akim, pl. ngakimia, see "stick".
+Firewood : akitoi, pl. ngakito.
+First : ngaithioni.
+Fish : ekolia, pl. ngolia.
+Flee, to : ape.
+Flesh : akirin, pl. ngakir.
+Flog, to : edeti or arami.
+Flour : ngakirio.
+Flow, to : eleli.
+Flower : angolipus, pl. ngoliputhia, see "colour, purple" (?).
+Fly, to : awusi.
+Fold, to : akodugoni.
+
+=== G ===
+Follow, to : ewari.
+Follow, to : ewapi.
+Food : akimoich, pl. ngimocha.
+Foot : adapal akeju, pl. nyadapal ngakeju, see "palm", "sole", "shoe".
+For : tati, or ya.
+Forbid, to : Ouwao.
+Force : egugon.
+Ford : adoget, pl. ngadogeta.
+Foreigner : ebayunun, pl. ngebayok.
+Forest : amoni, pl. nyamoniek.
+Forget, to : amuriagini.
+Formerly : kojolon.
+Frequently : ebon ini jui (? two or three words).
+Fresh : ejon, pl. ngejonok.
+Friend : epay, pl. ngepaylon.
+Frighten, to : ekiti buli.
+From : tanan.
+Front : kingarin.
+Fruit : ngito.
+Fugitive : ape, pl. ngapeyok or engob, pl. ngobito, see "hide".
+Fun : ebulia, pl. nyebuliathi.
+Further : eloka.
+Garments : ouoro, pl. ngouario (cloth), elo, pl. ngeloue (skin).
+Apron, back (man) : edengo, pl. ngedengoi.
+Apron, cape (man) : aulat, pl. ngaulai.
+Apron, front (women) : adwal, pl. nyadwalin.
+Apron, back (women) : abue, pl. nyabuith.
+Apron, front (girl) : arach, pl. nyaracha.
+Apron, back (girl) : eto, pl. ngeloue.
+Gate : akidor, pl. ngedorin.
+Generation : athapan, pl. ngathapan.
+Gently : ngiapak.
+Get, to : aroka or ainu.
+Get drunk, to : ameri.
+Get into, to : alomari.
+Get out of way, to : iyeto.
+Get up, to : anyouni.
+Get upon, to : adoki.
+Get well, to : adjokeri akwan.
+Ghost : eparai, pl. ngipare.
+Giraffe : yekori, pl. ngikorio.
+Girl : apethi, pl. nyapethur, see "female".
+Give, to : ainagini.
+Give back, to : enyakaguni.
+Give trouble, to : ejioni.
+Glutton : edakana, pl. ngedakaka.
+Go, to : aloti.
+Go away (imp.) : tenyu! tenyu.
+Go away from, to : arotoki.
+Go back, to : abongori.
+Go bad, to : ebothi.
+Go behind, to : ezidi.
+Go down, to : ationi.
+Go first, to : angarinigini.
+Go for a walk, to : elari.
+Go into, to : alomari.
+Go near, to : api.
+Go on tip-toe, to : ayabagini.
+Go past, to : etori.
+Go round, to : irimi.
+Goat : akini, pl. ngakini.
+Kid : ekali, pl. ngali.
+He goat : akorai, pl. ngora.
+She goat : akini, pl. ngakini.
+God : akuich (? if there is any idea of Supreme Being, see "above").
+Good : ejok, pl. ngejokok.
+Good-bye : abe, Ans. ii.
+Good-morning : see interjections of greeting.
+Gourd : itu, pl. ngetui.
+Gourd half : edera, pl. ngaderai.
+Grass : amel.
+Grass, young : amelu.
+Gratis : akiden.
+Grazing ground : achokor, pl. ngachokoritho.
+Great : epol, pl. ngepolok.
+Greet, to : emala.
+Grieve, to : angoiti.
+Grind, to : eriyi.
+Grow, to : aroboti.
+Ground : ngalup or elup.
+Grow fat, to : etomiti.
+Grow thin, to : ekariti.
+Guide : akarikoin, pl. ngariko.
+Gun : atom, pl. ngetom, see "elephant", a section of the tribe who possess rifles and are poachers are known by this name.
+
+=== H ===
+Hair : atimat, pl. ngatim.
+Head-dress : amedok, pl. ngemedoi, the distinctive Turkana coiffure.
+Half : pairiwi, pl. ngepaywei.
+Hang, to : anenegini, amedi (of human beings).
+Hand : akan, pl. ngakanin, see "palm".
+Hard : egugo.
+Haste : ebunya, pl. ngebunyaka.
+Hasten, to : akomo or amutumi.
+Hasty : engona, pl. nganowak.
+Hate, to : angeri.
+Have, to : atingeti.
+He : ngeth.
+Head : ako, pl. nyakis.
+Hear, to : ēra.
+Heart : etou, pl. ngetai.
+Heaven : akuich, see "above".
+Heavy : eputi, pl. ngeputiok.
+Heifer : atou, pl. ngatak.
+Help, to : engaragini.
+His and Her (poss.) : ekin, pl. ngulukin.
+Herd : esipan, pl. nyesipuni.
+Herdsman : egayokon, pl. ngeyoko.
+Here : nege.
+He is here : eyei.
+Here and there : nege ka ama.
+Hide, to : ewayti.
+Persons in hiding : engob, pl. ngobito.
+High : eway, pl. ngewayok.
+Hill : amukora, pl. ngemokor, see "mountain".
+Hippopotamus : epir, pl. ngipirin.
+Hit, to (with stick) : arami, see "beat".
+Hit, to (with spear) : echomi.
+Hit, to (with fist) : anani.
+Hit, to (box ears) : ebapi.
+Hit, to (kick) : apethi.
+Hitherto : tari-tokona.
+Hoe (wooden digging-stick) : akuta, pl. ngakuta.
+Hoe (iron) : ameleko, pl. ngemelakoi.
+Hoof : see "nail".
+Hold, to : atingi.
+Hole : akipan, pl. ngapanya.
+Home : ngakwabokothi (? two words).
+Honey : nyesik.
+Horn : amwarak, pl. ngamwar.
+Horse : angoli, pl. nyangolei.
+Hot : emona, pl. ngemoka.
+House (hut) : akie, pl. ngakiyis.
+How ? : ebalai or eko nyai ?
+How often ? : ngeyai or nyeyai ?
+How many ? : ngeyai or nyeyai ?
+However : ani tokona, lit. "if immediately".
+Hunger : akoro.
+Hunt, to : awaringitia.
+Hunter : akolokit, pl. ngoloki.
+Hurt, to : ewanani.
+Husband : lokiliakan, pl. ngiliokoka.
+Hyena : ebu, pl. ngebui.
+
+=== I ===
+I : ayon.
+Idle person : ekalanyanga, pl. ngalanyaka.
+If : ani.
+Ignorant person : ebangana, pl. ngebangaka.
+Ill, to be : adiaka.
+Illness : edege, pl. ngidege.
+Abcess : elibonoit, pl. ngilibono.
+Catarrh : arokom, pl. ngarokoma.
+Cough : awali, pl. ngawalathi.
+Cystitis : akuiya (?).
+Diarrhœa : ōruthe, and dysentery ?
+Gonorrhœa : eliput.
+Malaria : ngessoro.
+Measles : ekurara (? chicken-pox).
+Rash : ngoikoi (? measles or chicken-pox).
+Rheumatism : labai.
+Small-pox : ngakodoi (? measles, chicken-pox, or rash).
+Sore : ajemi, pl. ngijemi.
+Spleen, enlarged : ariaba etit.
+Syphilis : ngetch (? yaws).
+Tonsilitis : ariaba porotor.
+Toothache : ariaba ngelai.
+Worms : ngipeli.
+Imitate, to : arouni.
+Immature : edit, pl. ngedithiak.
+Immediately : tokona.
+Implore, to : elipi.
+Imprecate, to : eyeni.
+In : toma.
+In front : angarinikini.
+In place of : alokonyi.
+In the morning : ataparach.
+In the evening : ebon.
+Increase, to : eyetagini.
+Information : ngagiro.
+Inhabit, to : eboieti.
+Insect : ngur.
+Investigate, to : athaki.
+Iron : athowa, pl. ngathua.
+Irritate, to : akatuboi.
+Its : ekin.
+Ivory : egelai, pl. ngelai.
+
+=== J ===
+Jackal : ekui, pl. ngekui.
+Jaw : abokoin, pl. ngabokonya.
+Jealous person : emwana, pl. ngemwaga.
+Join, to : arobakini.
+Journey : ouwethit, pl. ngouwerthok.
+Joyous, to be : alakara.
+Jump (dance), to : edongagini.
+
+=== K ===
+Keep, to : auwaiti.
+Keep guard, to : arimi.
+Keep hold, to : arimikiro.
+Kick, to : apethi.
+Kill, to : ari.
+Murder, to : echumi.
+Kind : ejok, pl. ngejoka.
+Knee : akun, pl. ngakungin.
+Knife : ekilen, pl. ngilenya.
+Knife, wrist : abarait, pl. ngibara.
+Knife, finger : akoli, pl. ngakoli.
+Knock, to : akikongo.
+Strike, to : anangi.
+Know, to : aiyeni, "who knows", aiye.
+Kraal (cattle) : anok, pl. ngokin.
+
+=== L ===
+Labour : etich.
+Land (country) : akwop, pl. ngakwopa.
+Language : akiror, pl. ngakirosia.
+Lap : amuro, pl. amuroi.
+Large : epul, pl. ngepulok.
+Last : asalunet.
+Lazy : akalanyana, pl. ngalanyaka.
+Lead, to : erikoli.
+Leader : erotoit, pl. ngerotoitin.
+Leaf : akui, pl. ngakui.
+Learn, to : atatami.
+Leave, to (place) : alothi.
+Leave, to (thing) : athikini. Leave it alone! Towa thik.
+Throw away, to : ejakagini.
+Left : kidien.
+Leg : akeju, pl. ngakeju, see "foot".
+Legend : aken, pl. nyeneti.
+Leopard : eris, pl. ngerise.
+Lessen, to : etieki.
+Lick, to : amaye.
+Lie : alioko, pl. ngaliokoko.
+Liar : aliokonayo, pl. ngiliokoko.
+Lie down, to : adadiari.
+Lift, to : adakuni.
+Lightening : emilia.
+Like, to : ekuni.
+Line : akiterian, pl. ngiterianathi.
+Linger, to : ezidi.
+Lion : angatuin, pl. ngatuino.
+Lips : akitok, pl. ngakutoka.
+Listen, to : era.
+Little : edit, pl. nyedithak.
+Little (few) : ngidioko.
+Live at, to : alomiti.
+Locust : emathi, pl. ngemathia.
+Loins : akolukot, pl. ngalukoi.
+Loiter, to : adarioni, see "stay".
+Long : ehoi, pl. ehoiyok.
+Look, to : engolikini.
+Look after, to : ayogi.
+Look for, to : athaki.
+Loosen, to : alakari.
+Lose, to : achemi.
+Lost, to be : achakari.
+Lover : akoni, pl. ngakoni (woman), epay, pl. ngepaylon.
+Lower, to : atiari.
+Luck : eken.
+Lurk, to : amunoni.
+
+=== M ===
+Mad person : engarep, pl. nyonagarepa.
+Magician : akabilan, pl. ngabilak.
+Maize : nyepepe.
+Make, to : etiji.
+Male : ekili, pl. ngiliok.
+Man, warrior : see "male".
+Man, old : ekasiko, pl. ngasikot.
+Mankind : etonganan, pl. ngitonga.
+Many : elalak.
+Mark : emachar, pl. ngmacharin.
+Scar : abori, pl. ngabori.
+Cicatrisation : agerathin, pl. ngageran.
+Marry, to : ewusi.
+Meal (food) : akimoich, pl. ngimocha, see "food".
+Meal (flour) : ngakiriyek, see "corn".
+Meaning : kiinyo.
+Measure, to : etemi.
+Meat : akirin, pl. ngakerin.
+Medicine : ekitoi, pl. ngakito.
+"Medicine man" : emuron, pl. ngemurok.
+Meet, to : ekiriama.
+Melt, to : achala.
+Mend, to : aropi.
+Menstrous : eboi, pl. ngeboiyeti, see "female".
+Messenger : ayeki, pl. ngayakan.
+Middle : kidin.
+Milk : akili.
+Butter : akimet, pl. ngakajonon (? plural form).
+Curdled : ngakikok.
+Fresh : alepan.
+Millet : mumwa, see "corn".
+Mind to : angolikini. I don't mind, nye kalikini.
+Miscarry, to : ezetcho.
+Mislead, to : achakari.
+Miss (aim), to : adiaki.
+Mist : ekuno.
+Mistake, to : asegi.
+Modesty : akerit.
+Monkey (Sykes ?) : akodokon, pl. ngadokoi.
+Monkey (baboon) : echom, pl. ngechomin.
+Monkey (colobus) : elala, pl. ngelali (? found in Turkana).
+Month : elap, pl. ngelapio.
+Moon : elap, pl. ngelapio.
+More : elal.
+Moreover : nabo.
+Morning (dawn) : ataparach, see "time".
+Morning (morning) : ethimakunyak.
+Mosquito : etherot, pl. ngesorro, see "illness, malaria".
+Mother : toto, pl. tatoto.
+Mother-in-law : akamuranika, pl. ngamurak.
+Mountain : emoro, pl. ngemor.
+Mountain range : aukot, pl. ngoukon.
+Hill : amukora, pl. ngemokor.
+Mouth : akitok, pl. ngakituka, see "tooth".
+Teeth : agelai, pl. ngelai.
+Throat : edokoli, pl. ngadokoli.
+Tongue : aliep, pl. ngaliep.
+Tonsils : ngachelo (sing. ?).
+Uvular : aligoret (pl. ?).
+Move, to (belongings) : auwethi.
+Much : elalak.
+Mud : echoto.
+Mud, river : ezinyan.
+Mud, head-dress : emunyan, see "class", "hair".
+Murder, to : akarani (?).
+Murder : achumi, pl. ngachumak.
+Musical instruments :—
+War-horn : atom, pl. ngatom.
+Ankle-bells : echorot, pl. ngechoror.
+My : akan, pl. ngulukan.
+
+=== N ===
+Nail (human) : emargoit, pl. ngemagor.
+Hoof : emargoit, pl. ngemagor (?).
+Claw : emargoit, pl. ngemagor (?).
+Naked : elusi kongen, pl. ngelusi kongen.
+Name : ekero, pl. ngiriorwa.
+What is your name? : Ngai akero ekon?
+Narrow : akapithena, pl. ngapithaka.
+Near : api.
+Neck : emotherin, pl. ngemotheringa.
+Need, to : adami.
+Needle : emoto, pl. ngemotoin.
+Neighbour : emorothi, pl. ngemoroka.
+Neither . . . nor : ō . . . ō.
+Neutral (land) : akwap kongen, pl. ngakwapa kongen.
+Never : nguruthia dan.
+New : ekitet, pl. ngitetia.
+News : akiro, pl. ngekiroi.
+Nice (to the taste) : ebob, pl. ngebobo.
+Night : akuari, pl. ngakuaretha, see "time".
+No : mam.
+Noise : achel, pl. ngachelaka.
+Nonsense : alioko, pl. ngeliokonithia.
+Nose : ekumi, pl. ngikumith.
+Not : mam.
+Now : tokona, see "time".
+to-day : tete.
+just before : takai.
+nowadays : ng'orualo.
+after a little : aringa.
+Number, to : emari.
+
+=== O ===
+Oath : akilam, pl. ngilomit.
+Obtain, to : ainu.
+Offspring (human) : ikoko, pl. ngedui.
+Offspring (animal) : itako, pl. ngitak.
+Often : jue-jue-jue.
+Oil : see "butter".
+Old (animal) : emojongit, pl. ngemojongito.
+Old (man) : akasikot, pl. ngasikot.
+Old (woman) : akimat, pl. ngakimat.
+On : neni.
+On top of : kidi ama.
+Only (one thing, etc., only) : epei bon.
+Only (more than one thing only) : maki.
+Open, to : alakathi.
+Open (adj.) : engara, pl. nyangarar.
+Order, to : aiyeki.
+Ostrich : akalis, pl. ngaliso.
+Ostrich feather : akobirot, pl. ngakobir.
+Other : echi, pl. ngechi.
+Our : akothi, pl. ngulu kothi.
+Out : kinga.
+Over : kudiama.
+Overcome, to : ebwanga.
+Oxen : ate, pl. ngatuk.
+bull : emanik, pl. ngemaniko.
+bullock : emon, pl. ngemongin.
+calf (small) : manangit, pl. ngemanan.
+calf (large) : etak, pl. ngetak.
+cow : atāka, pl. ngatak.
+cow, barren : akolup, pl. ngolupaka.
+black ox : egiriano, pl. ngirianoko.
+black and white ox : ongerok, pl. ngerokoka.
+cream ox : engiro, pl. ngiroiek.
+dance ox : kamar, pl. ngalukamara.
+hornless ox : ilimwana, pl. ngilimwaka.
+horns forward ox : kodu, pl. ngakodoka.
+slate ox : epus, pl. ngepusier.
+white ox : ekwakwagan, pl. ngekwanoka.
+white-headed ox : angoli kirionok, pl. nyangoli ngirionok.
+(Every possible coloration of oxen has a special name.)
+
+=== P ===
+Pack, to : aiyeni.
+Pack (fill), to : alilepi.
+Pain, to : epilpili.
+Palm (hand) : etou ya akan, pl. ngetou ya ngakanin.
+Palm (sole) : etou ya keju, pl. ngetou ya ngakeju.
+Part : aperwai.
+Part from, to : atiakari.
+Part (divorce), to : alaki.
+Pass, to : etori.
+Pasture : amelu.
+Pay, to : apotosi, see "receive".
+Peace : ekithil.
+Pebble : ezinyeh, pl. ngazin yono, see "stone".
+Penetrate, to : olamori.
+Penetrate, split, to : apedori.
+Penis : amer, pl. ngamirin.
+Penis, circumcised : alenger, pl. ngalenger.
+People : ngitonga.
+Perceive, to : etami.
+Perhaps : kure or ayeh (?).
+Permission, to give : achamuni.
+Perspiration : akininer, pl. ngakineniro, see "sweat".
+Physic : ekitoi, pl. ngekito.
+Pick up, to : arapi.
+Pick out, to : alemari.
+Pig : ebutir, pl. ngibutero.
+wart hog : epigi, pl. ngapigi.
+Place, to : engadagini.
+Plain, a : etot, pl. ngatotin.
+Plain, large : aro, pl. ngaroitin.
+Play, to : abolia.
+Please, to : alakari.
+Pleasure : alakar.
+Poison : asorich, pl. ngasoricho.
+Pond : see "spring".
+Pond (rain) : atapar, pl. ngataparin.
+Pond (large) : ebur, pl. ngiburin.
+well : akar, pl. ngakari.
+Poor person : ebotonait, pl. ngaboto; berry pickers, egulukit, pl. ngaluk.
+Porcupine : echoit, pl. ngichecha.
+Porridge : atap.
+Pot : amut, pl. ngamuti.
+Pound, to : atorn.
+Pour, to : abukori.
+Pray, to : elipi.
+Pregnant, to be : ebuti.
+Present, to : anagini.
+Press, to : atinyari.
+Prevent, to : arabagini.
+Procure, to : ainu.
+Property : ngebarin.
+Prostitute : apethi angabuth, pl. nyapethur ngabuthin.
+Pull, to : erieri.
+Pumpkin : eridet, pl. ngidet.
+Pure : mum aloth (lit. "no dirt").
+Pursue, to : ewabi.
+Push, to : ejukari.
+Put, to : engadagini.
+Praise, to : amayi.
+
+=== Q ===
+Quarrel, to : engolabathi.
+Quake, to : emarani.
+Question, to : engithi.
+Quick : kiwanyir.
+Quiet, to be : elilinga.
+Quiet (silent) : elilingana, pl. ngelingathi.
+Quiet person : epatana, pl. ngepataka.
+Quietly : eyabagini.
+
+=== R ===
+Raid, to : ejori.
+Rain : akiru.
+Rainbow : egipia.
+Raise, to : adakari.
+Rat : ejulin, pl. ngejuluno.
+Rather : todepai.
+Raw : ejon, pl. ngejonok.
+Ready : elu.
+Reap, to : alemi.
+Receive, to : ejouni, see "pay".
+Reckon, to : emari.
+Recollect, to : etami.
+Red : eren, pl. ngerenak.
+Reduce, to : ekudiakuti.
+Refuse, to : angeri, or ouwoni.
+Rein : arukoin, pl. arukoines.
+Rejoice, to : alakari.
+Relate, to : egayeni.
+Remain, to : adongi.
+Remind, to : tototomi.
+Remove, to : eyatori.
+Repay, to : enyakuni.
+Reply, to : atimogini.
+Return, to : abonguni.
+Rhinoceros : amothi, pl. ngamothingok.
+Rich man : yakabaran, pl. ngabarak.
+Right : toten.
+Ripe, to be : kidien.
+River : angalul, pl. ngangolulio, see "stream".
+River, dry : ayonay, pl. ngiyonay.
+Rob, to : akokoie.
+Root : atagorot, pl. ngatagor.
+Rope : akobito, pl. ngakobit.
+Round : ajikali, pl. ngajikalin.
+Rub, to : irigari.
+Rubbish : ngatunyen.
+Run, to : akeri.
+
+=== S ===
+Saliva : ngakimul, see "spit".
+Salt-lick : edot, pl. ngedotin.
+Sand : athinuin.
+Sandal : amukat, pl. ngamuk.
+Satisfied, to be : emwoko.
+Savage : ededan, pl. ngededanak.
+Save, to : aratagini.
+Say, to : abala.
+Tell (introductory to an interpreter) : abalionga.
+Scar : emachar, pl. ngmacharin, see "mark".
+Scout : akarikoin, pl. ngariko.
+Scratch, to : akoi.
+Season (wet) : ageboro.
+Season (dry) : akamu.
+Seat : ekijolon, pl. ngijolona.
+See, to : ainua.
+Seed : nyinyom, pl. nginyomia.
+Seize (force), to : toruakini.
+Seize (without force), to : arumi.
+Select, to : ebaki.
+Sell, to : ageli.
+Send, to : aiyeye.
+Sense : ewus, pl. ngewusok.
+Sentry : ekerimon, pl. ngerimo.
+Separate : elikari.
+Sew, to : adoni.
+Shade : etolim, pl. ngitolimon.
+Shadow : eturubi, pl. ngiturubi.
+Shame : aiyamiti.
+Share, to : atiagi.
+Sharp : ekwana, pl. ngekwaku.
+Sharpen, to : ebeni.
+Sheep : amethek, pl. ngamethekin.
+ram : egetipan, pl. ngetipaka.
+ewe : as "sheep".
+lamb : ekali, pl. ngali.
+castrate : edongi, pl. ngadongok.
+Shepherd : egayokon, pl. ngayokok.
+Shield : oupwol, pl. ngoupwala.
+Shiver, to : emarani.
+Short : ouriana, pl. ngouriaka.
+Shoulder : ethiket, pl. ngethiketa.
+Shout, to : echali.
+Show, to : edodiki.
+Shrewd : ewuth, pl. ngewuthok.
+Shut, to : agoli.
+Sick : edeki, pl. ngedekethin.
+Sick person : ediak, pl. ngediakathi.
+Side : ebawai, pl. ngawaitin.
+Side (i.e. this bank . . . that bank) : egiwalo . . . eqwayin.
+Side by side : ebawai.
+Sin, to : esezi.
+Since : napekolom.
+Sing, to : eruko.
+Sister : lokadokan, pl. ngaitotui (?), see "brother".
+Sister-in-law : akamoran, pl. ngamurak.
+Sit, to : eboigini.
+Skeleton : akōiyok, pl. ngakōiyo.
+Skin (human) : emun-ya etunganan, pl. ngemun-ya ngitunga.
+Skin (new) : ejam, pl. ngejam.
+Skin, to : aiyengi.
+Skull : ako, pl. ngakogin.
+Sky : akuich, see "above", "God".
+Slaughter, to : achomi.
+Slave : erigon, pl. ngerikok.
+Sleep : ngaju.
+Sleep, to : aperi or achotoie.
+Bed : epem, pl. ngapemiok.
+Slender : akobith, pl. ngakobithana.
+Slip, to : eriangagi.
+Slowly : ayabakini.
+Small : edit, pl. ngedithok.
+Smell, to : anguiti.
+Smith : akatiakam, pl. ngatiakak (?). Probable meaning of this word is not "smith" but "craftsman". The Turkana do little, if any, iron work.
+Smoke : apurru.
+Smoke, to : amathi.
+Smooth : enonok, pl. ngenonoka.
+Smoothe, to : aguli.
+Snail : apolobon, pl. ngapolobona.
+Snake : emun, pl. ngemun.
+Puff-adder : akipom, pl. ngapomia.
+Python : emorotot, pl. ngemorotota.
+Spitting-cobra : ereu, pl. ngarewa.
+Snare : aloit, pl. ngaloito.
+Sneeze, to : ekarathiagini.
+Snore, to : eruma.
+Snuff : etaba ekumi, pl. ngetabin ekumi.
+Tobacco : etom, pl. ngetomian (? tobacco plant).
+Chewing tobacco : enyakait, pl. nganyakaita.
+Soft : enonok, pl. ngenonoka.
+Sole (foot) : etou ya keju, pl. ngetou ya ngakeju, see "palm".
+Some : echi, pl. ngulu chi.
+Some one : echi etunganan, pl. nguluchi ngitunga.
+Some thing : echi eburi, pl. nguluchi ngeboro.
+Son : edit, pl. ngedithok.
+Son-in-law : akamuran, pl. ngakamurak.
+Song : adonga, pl. ngadongathin.
+Soon : eringa adojiji.
+Sore : ejimi, pl. ngajimo.
+Boil : elibunait, pl. ngelibuno.
+Soul (heart) : etam, pl. ngetowin.
+Sound : echaala, pl. ngechalathi.
+Soup : ngapok.
+Sour : edwar, pl. ngedwaraka.
+Space : elolom, pl. ngelomoka.
+Speak, to : erworo.
+Spear : akwara, pl. ngawarath.
+Spear shaft : emorok, pl. ngemorkin.
+Spear sheath : akuraro, pl. ngakuraroi.
+Spider : asimakok, pl. ngasimakoka.
+Spill, to : ebukori.
+Spit, to : emulaki.
+Spittle : arimu, pl. ngakimulak, see "saliva".
+Spleen : etid, pl. ngetidin.
+Split, to : atopoki, see "cleave".
+Spoil, to : asegi.
+Spokesman : ekodukan, pl. ngadukok.
+Spoon : akolopoich, pl. ngolopoicha.
+Spoor : akeju, pl. ngakeju, see "foot".
+Spread, to : ouwatari.
+Spring : ejwa, pl. ngejowi, see "pond".
+Rock pools : ibur, pl. ngiburin.
+Sprinkle, to : akilimilimi.
+Spy : orototin, pl. ngorototio.
+Squabble, to : acheli.
+Squeeze, to : atimyari.
+Stab, to : achomi.
+Stand, to : ouwei.
+Stand, to make to : asibogini.
+Star : kanyerit, pl. nganyer.
+Morning Star : etup.
+Southern Cross : ngeringatom (? Great Bear).
+Startle, to : erianakini.
+Starved, to be : etonganan ayon akoro.
+Stay, to : aboikini.
+Wait for, to : adaruni.
+Loiter, to : adarioni.
+Steal, to : akokoie.
+Stick : ebela, pl. ngabellai.
+Stick switch : akwilit, pl. ngalita.
+Stick, curved (a weapon) : ebelebel, pl. ngebelebellai.
+Stick, fire : akikoi akim, pl. ngakitoi akim.
+Stick, to : adupi.
+Sting, to : egumi.
+Stingy : ekamwunan, pl. ngekamwukak.
+Stomach : eboi, pl. ngaboyo.
+Entrails : amultin, pl. ngamultenya.
+Third stomach : abunukait, pl. ngabunakai.
+Water stomach : ethurun, pl. ngathurunya.
+Stone : amoro, pl. ngamur.
+White quartz : amoro ekwan, lit. "stone-white".
+Mica : amoro paripari, lit. "stone-shining".
+Pebbles : ezinen, pl. ngazinyono.
+Stool (pillow) : ekechelom, pl. ngekechelomin.
+Stool (sitting) : emaguk, pl. ngemogaka.
+Stop, to : arotagini (?).
+Stop a hole, to : amukori.
+Story : akien.
+Stout : elangir, pl. ngelangiroko, see "fat".
+Stranger : ebayunan, pl. ngebayok.
+Strangle : amedi.
+Stream : angolul, pl. ngangolulio, see "river".
+Dry river : ayonay, pl. ngaiyonay.
+Strength : ededi.
+Stretch, to : ariari.
+String : akobito, pl. ngakobit.
+Strip off, to : apochi.
+Stripe : akikïr, pl. ngakiran.
+Strive, to : atatami.
+Strong : egogon, pl. ngagongonok.
+Strop, to : erukududi.
+Stumble, to : abusogini.
+Stupid : ebangana, pl. ngebangaka.
+Subdue, to : apiori.
+Suckle, to : atanagi.
+Suffice, to : etemogini.
+Summit : kudiama.
+Sun : akolon, pl. ngakolon, see "time".
+Suppose, to : atatami.
+Surpass, to : apiori.
+Surprise, to : apiori (?), see "Startle".
+Surround, to : arikoni.
+Go round, to : arimi.
+Swallow : alikori.
+Swamp : echotom, pl. ngachoto.
+Sweat : akinenir, pl. ngakinenira, see "perspiration".
+Sweep, to : epiari.
+Sweet : ebop, pl. ngabobop.
+Swell, to : abo.
+Swine : ebutir, pl. ngibutero, see "pig".
+Switch : akwilit, pl. ngalita.
+
+=== T ===
+Tail : akothim, pl. ngakothima.
+Tail, sheep : athonyok, pl. ngathonyoka.
+Tailor (skins) : akidoin, pl. ngadonyok.
+Take, to : alemari.
+Take (by force), to : ademari.
+Take down, to : amathuni.
+Take off, to : outuni.
+Take care! : ngolik!
+Receive, to : atachi.
+Hold, to : atingi.
+Talk, to : eruwori.
+Converse, to : aiyeni.
+Tall : ewai, pl. ngaiwaiok.
+Tan, to (hides) : aiyengi.
+Taste, to : aiyeri.
+Teach, to : atatami.
+Tear, to : etiegi.
+Tears : ngakio.
+Tell, to : alimogini or athiruri.
+Tend, to (herds) : aiyoki.
+Tender : anonok, pl. nganonoka.
+Tendon : amorit, pl. ngamori.
+Testicles : eto, pl. ngeto.
+Tether : aiyeni.
+Thank, to : akathi.
+That : eya, ekwa, yaga, kwagwa.
+Thatch, to : anuki.
+Thee : ion.
+Their : ekech, ngulukech.
+Them : keth.
+There : lalo (near), ama (distant).
+These : elu or ngul.
+They : keth.
+Thick : eput, pl. ngeputiok.
+Thief : akokolan, pl. ngokulaka.
+Thigh : alokidin, pl. ngalokidingo.
+Thin : arogo, pl. ngurogoi.
+Thine : ekon, pl. ngulukan.
+Thing : eburi, pl. ngeboro.
+Thing of no value : mam eburi eyeyi.
+Think, to : atami.
+think! : kitam.
+Thirst, to : akori.
+This : en, lo, or ngol.
+Thorn : akokai, pl. ngoka.
+Those : ekwa (near), kwagwa (remote).
+Thread : arukan, pl. ngarukanis.
+Throat : edokoli, pl. ngadokoli, see mouth, etc.
+Throttle, to : amedi.
+Throw, to : aichakari.
+Throw backwards, to : auwatari.
+Thumb : ekimoin nabolon.
+Thunder : egiru, pl. ngakiro.
+Thus : ekoti-nini.
+Tick : emadan, pl. ngamadan.
+Tick, small : eyeyit, pl. nyayeie.
+Tickle : akerididi.
+Tie, to : aiyeni.
+Tie (knot), to : alokiloki.
+Tighten, to : akirichagini.
+Till : ta.
+Until now : ta erimoi.
+Time : orwa, pl. orwathin (?).
+Dawn : ataparach, early morning generally.
+Morning : ethimakunyak.
+Midday : naparan.
+Afternoon : ebon.
+Night : akuari.
+To-day : tete or akolon itina.
+This morning : tete ataparach.
+6 a.m. : alomo akolon.
+7 a.m. : achou akolon.
+12 a.m. : ewi akolon.
+2 p.m. : athom akolon.
+6 p.m. : aloma akolon.
+To-morrow : mui.
+To-morrow morning : mui ataparach.
+The day after to-morrow : mui echi akolon.
+Yesterday : beyen.
+Yesterday morning : beyen ataparach.
+The day before yesterday : ngon echi akolon.
+Tired, to be : aboroni.
+Tobacco : etaba, pl. ngetabin, see "snuff".
+Tobacco snuff : etaba ekumi, pl. ngetabin ekumi.
+Tobacco chewing : enyakait, pl. nganyakaita.
+Tobacco box : eburiangan, pl. ngeburianganga ; of oryx-horn, atom, pl. ngetom, see "gun", "elephant" (?).
+To-day : tete or akolon itina, see "time".
+Toe : akimoin akejo, pl. ngakimmoio ngakeju.
+Together : dadan.
+Tomb : alial, pl. ngalialim.
+To-morrow : mui, see "time".
+Tongue : aliep, pl. ngaliep.
+Tonsils : ngachelo, see "mouth".
+Tooth : angelai, pl. ngelai, see "mouth".
+Tooth, back : atitinyo, pl. ngitinyo.
+Hole where teeth of lower jaw have been extracted : ngijili.
+Tooth, extract, to : ouwutuni.
+Tooth stick, for cleaning : anyakai, pl. nganyakaiya.
+Tortoise : ebokok, pl. ngebokoka.
+Total : dadan.
+Totally : jik.
+Totter, to : amarananagini.
+Touch, to : ararabi.
+Trade, to : egeliti.
+Trade : ageli.
+Trample, to : achagi.
+Trap : ewuno, pl. ngounui.
+Pit-trap : akipai, pl. ngapanya.
+Noose-trap : aloiit, pl. nyaloito.
+Trap, to : aiyeni.
+Travel, to : elari.
+Traveller : ebayun, pl. ngebayok.
+Tread, to : achagi.
+Tree : akitoi, pl. ngakito.
+Tree stump : ebunguri, pl. ngetunguri.
+Tree branch : akan akitoi, pl. ngakanin ngarito.
+Tree bark : akobuket, pl. ngabuk.
+Tremble, to : abuli.
+Tribe : atela, pl. ngetelai.
+What is your tribe? : ali tela kon?
+Abyssinian : ekorothinait, pl. ngarothi, because they cut off tails of living sheep.
+Arab : emarambot, pl. ngemaramba, borrowed word from Suk.
+Chebleng : echibellelait, pl. ngechebelil, some reference to sticks.
+Dorobo : the Turkana have not met the Andorobo proper, but call their own poor people who hunt and cultivate: ebotonait, pl. ngabotok, not very poor people; akolokit, pl. ngoluki, trappers; egirionait, pl. ngirionokok, no property.
+European : see "European".
+Kamasia : emathait, pl. ngematha, see "Masai".
+Kavirondo : ekavirondoit, pl. ngikavirondo, borrowed word.
+Kikuyu : akokoit, pl. ngoko, borrowed word (?).
+Masai : emathait, pl. ngematha, see Kamasia, or edoboubal, pl. ngedaboubala.
+Nandi : no name, the tribes have not met.
+Njemps : emathait, pl. ngematha, see "Masai", "Kamasia."
+Suk : eaupe, pl. ngeupe.
+Swahili : echombait, pl. ngichomba, probably borrowed word from Suk. (cf. Giryama, Adzomba.)
+Turkana : eturkaneit, pl. ngiturkana.
+Triumph over, to : abieri.
+Trot, to : akiapakiri.
+Trouble : erepirep.
+Trough : eteker, pl. ngatekera.
+Trough, small : etuba, pl. ngatubai.
+Milk bowl : elipit, pl. ngilipai.
+Gourd used as a glass : eboli, pl. ngibolai.
+Truly : kere or akaitini-tini.
+Trumpet (wooden) : atom, pl. ngatom.
+Trunk (human body) : ekwan, pl. ngawat.
+Trunk (elephant) : ewuno ke-'tom.
+Try, to : atetemogini.
+Try by ordeal, to : ethilami.
+Tumble from, to : achagini.
+Turn, to : abelukari.
+Turn out, to : arethi.
+Turn inside out, to : abelukari.
+Twig : akitoi jiji (lit. tree small).
+Twin : amogo, pl. ngamoain.
+Twist, to : alodi.
+Twist many times, to : alodi-lodi.
+
+=== U ===
+Udder : eket, pl. ngakitai.
+Umbilical cord : akopol, pl. ngapola.
+Uncle : baba, pl. ngebabai (?).
+Uncleanness : eloth, pl. ngaloth.
+Uncover, to : auwoli.
+Under : kwapa.
+Underdone : ejon, pl. ngajonok, see "unripe".
+Understand, to : atami.
+Understanding : ewuthuk.
+Undo, to : alagi.
+Undress, to : alemari.
+Unfold, to : aweli.
+Unless : anita.
+Unripe : ejon, pl. ngajonok, see "underdone".
+Unstable, to be : iro.
+Unstable man : akiro, pl. ngakiro.
+Untie, to : alachari.
+Until : ta.
+Up : akuich, see "above", "God".
+Uproar : achalana, pl. ngachalak.
+Upset, to : abokori.
+Urinate, to : alathi.
+Urine : ngul.
+Us : thowa.
+Use, to : aburagini.
+Utterly : dadan.
+Uvulat : aligoret, see "mouth".
+
+=== V ===
+Vagina : akibon, pl. ngakibono.
+Vainly : kongen.
+Valley : apak, pl. ngapaka.
+Value : agelit.
+Vegetables : akidit, pl. ngadi (marrow tribe).
+Vex, to : amuriagini.
+Vexed, to be : angoieti.
+Village : ouwi, pl. ngouwi.
+Voice : agituk.
+Vomit : ngalakan.
+Vomit, to : alegi.
+
+=== W ===
+Waist : eguro, pl. ngaguria.
+Wait for, to : adaruni.
+Wait awhile! : darun adojigi.
+Wake, to : anyouni.
+Awake, to be : akenyi.
+Walk (noun) : alothit, pl. ngalothio.
+Walk, take a, to : akilari.
+Step : areth, pl. ngarethai.
+Want, to : achemi.
+War : achori, pl. ngachorithia.
+War, to go to : abeli (? to fight with sticks).
+Ward off, to : akagini.
+Warmth : emwana.
+Warrior : ekili, pl. ngiliok, see "man".
+Wart : etomitomit, pl. ngetomiton.
+Mole : ekemer, pl. ?
+Wart-hog : epigi, pl. ngapigi, see "pig".
+Wash, to : elatari.
+Wash hands, to : elatari ngakan.
+Watch, to : angoligini.
+Guard, to : arimi.
+Water : agipi, pl. ngagipi, see "pool", "spring", "swamp".
+Water, clean : see fresh water.
+Water, dirty : agipi eloth.
+Water, fresh : agipi kalimok.
+Water, hot : agipi kamwanak.
+Water hole : ataparin, pl. ngataparay.
+Water jar : emwut, pl. ngemwuti.
+Water fall : eruma agipi (lit. "snoring water").
+Wax : ekurudo.
+Way : erot, pl. ngerotin.
+Out of the Way! : kioto ion!
+We : thowa.
+Wealth : elalak ngebarin.
+Weapon : athowa (lit. "iron"), see "spear", "knife".
+Wear, to : anapi.
+Weed : ekuit, pl. ngakui.
+Weep, to : agori.
+Weep aloud, to : ali.
+Weigh, to : atemogini.
+Well : ejok, pl. ngejokok.
+Well cooked : enonok, pl. ngananokok.
+I am well : ayari.
+Wet : arau agipi.
+What : nyo.
+What do you want? : isagin nyo?
+What do you mean? : ali etunganan?
+What sort of thing? : ali eburi?
+When? : wurre?
+Where? : ali or eyyey?
+Where is he? : eyyey ngeth.
+Wherefore : ikwani.
+Whet, to : ipieni.
+Whetstone : skin is used as strop.
+Which? : ali and alu?
+Whirlwind : ekwam, pl. ngakwama.
+Whisper, to : angangi.
+Whistle, to : aouni.
+White : ekwan, pl. ngakwanak.
+White ant : itepan, pl. ngatapan.
+Who? : ngai? or nyai?
+Whole : nakidam.
+Whose? : a-ngai?
+Why? : ikwani?
+Wide : elolom, pl. ngelolomoka.
+Widow : ebusorut, pl. ngebusorito, see "female".
+Wife : abero, pl. ngabero, see "female".
+Wild animal : etian, pl. ngetian.
+Wilderness : akitela, pl. ngateai.
+Jungle : amoni, pl. ngamoniek.
+Wind : atorot, pl. ngatorot.
+Windpipe : edokoli, pl. ngadokoli.
+Wing : ekeridedi, pl. ngeridedi.
+Wink, to : asingi.
+Blink, to : emududmududgiana.
+Wipe, to : apiari.
+Wipe (nose), to : amuli.
+Wire : see "iron".
+Witch : akabilan, pl. ngabilak.
+Witchcraft : akabil.
+With : ka.
+Withhold, to : angeri.
+Within : toma.
+Without : kinga.
+Withstand, to : epiuri.
+Witness : aganunan, pl. nganunak.
+Wizard : see "witch".
+Woman : abero, pl. ngabero, see "female".
+Womb : eperi korko (? as korko is a Suk word = wife).
+Wonder, to : abuli.
+Wood (bush) : mudin, pl. ngemudin.
+Wood (firewood) : akitoi, pl. ngakito.
+Work : ekori, pl. ngakero.
+Work : etit, pl. ngaticho.
+Work, to : atichi.
+Work in metal, to : etiegi.
+World : akwap dan.
+Wound : ejemi, pl. ngajemit.
+Wrap : etugogini.
+Wrestle, to : aliokagini.
+Wriggle, to : ayomogini.
+Wrinkle : erogo, pl. ngerogoii.
+Frown : angoit, pl. ngoiyoka.
+Wrist : see "arm".
+Write, to : akikiri.
+
+=== Y ===
+Yawn, to : akimi.
+Year : ekaru, pl. ngaro.
+This year : ekaru lo.
+Next year : ekaru echi.
+Last year : ekaru ye.
+Yes : ii, erobo and kongena affirmatives in conversation.
+Yesterday : ngon, see "time".
+You : ion.
+Young : asoroko, pl. ngasorok.
+Younger : edit.
+Your, yours : ekon, pl. ngulukon; ekuth, pl. ngulukuth.
+Youth : akarachonait, pl. ngarachona (? Suk karachona = youths).
+Youth, grown : ekili, pl. ngiliok.
+
+=== Z ===
+Zebra : etugo, pl. ngetugoi.

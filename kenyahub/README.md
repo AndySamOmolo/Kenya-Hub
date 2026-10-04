@@ -108,3 +108,8 @@ npm run audit:tools:sources
 ```
 
 The report is written to `reports/tool-audit.json`. A scheduled GitHub Actions workflow runs the source-aware audit weekly and on changes to tool routes or data. The workflow reports stale or incomplete metadata for review and fails structural coverage errors, so regulated values are never silently replaced by guessed data.
+## Android app
+
+KenyaHub also includes a native Expo/React Native Android app in [`../mobile/`](../mobile/). It contains the public tools and matatu route references with bundled offline data; Appwrite admin and blog management remain on the website.
+
+From the `mobile/` directory, run `npm install`, then `npm run sync-data` and `npx expo start` for development. To create an installable APK with Expo Application Services, authenticate with `eas login` and run `npm run build:apk`.

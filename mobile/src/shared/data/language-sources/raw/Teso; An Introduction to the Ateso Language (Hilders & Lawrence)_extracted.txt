@@ -1,0 +1,3412 @@
+================================================================================
+AN INTRODUCTION TO THE ATESO LANGUAGE
+By J. H. HILDERS and J. C. D. LAWRENCE
+The Eagle Press / East African Literature Bureau
+First Edition 1956, Second Edition 1957
+Printed by Hazell Watson and Viney Ltd, Aylesbury and Slough
+
+Extracted and verified verbatim via Computer Vision multimodal transcription
+Full linguistic fidelity: preserving velar nasals (ŋ, Ŋ), tone/pitch contours,
+phonetic notes, grammatical paradigms, conjugation tables, vocabularies, and exercises.
+================================================================================
+
+=== PDF PAGE 001 (Cover) ===
+
+An Introduction to the
+ATESO LANGUAGE
+
+J. H. Hilders and
+J. C. D. Lawrence
+
+THE EAGLE PRESS
+
+
+=== PDF PAGE 002 (Imprint) ===
+
+First edition    1956
+Second edition   1957
+
+PL
+8726
+H5
+1957
+
+PRINTED AND BOUND IN ENGLAND BY
+HAZELL WATSON AND VINEY LTD
+AYLESBURY AND SLOUGH
+
+
+=== PDF PAGE 003 (Contents v) ===
+
+CONTENTS
+
+FOREWORD BY T. R. F. COX, C.M.G.                                   ix
+PREFACE BY THE AUTHORS                                             xi
+PREFACE TO THE SECOND EDITION                                      xv
+
+INTRODUCTION
+1. Alphabet                                                        xix
+2. Pronunciation                                                   xxi
+3. Orthography                                                     xxii
+4. Word Order                                                      xxiii
+
+I NOUNS
+5. Gender                                                          1
+6. Noun prefix                                                     2
+7. Number                                                          3
+8. Article                                                         4
+
+II VERB "TO BE" AND "TO HAVE"
+9. Four forms of verb "to be"                                      6
+10. Present tenses                                                 6
+11. Verb "to have"                                                 7
+12. Negative of verb "to be"                                       7
+
+III VERBS: PRESENT AND FUTURE TENSES
+13. Ko and ki classes                                              9
+14. Present tense                                                  9
+15. Continuous verbs                                               10
+16. Future tense                                                   11
+17. Infinitive                                                     11
+
+IV VERBS: PAST TENSES
+18. Past (abu) tense                                               13
+19. Continuous verbs—past tense                                    14
+20. Narrative past                                                 14
+21. Past (a- or e-) tense                                          15
+
+
+=== PDF PAGE 004 (Contents vi) ===
+
+vi                                  CONTENTS
+
+V VERBS: PERFECT TENSE
+22. Perfect (-it) tense                                            17
+23. Uses of perfect (-it) tense                                    17
+
+VI PRONOUNS AND DEMONSTRATIVE AND INTERROGATIVE ADJECTIVES
+24. Personal pronouns                                              20
+25. Personal pronouns as object of the verb                        21
+26. Demonstrative pronouns and adjectives                          21
+27. Relative pronouns                                              22
+28. Interrogative pronouns and adjectives                          23
+
+VII POSSESSIVES
+29. Possessive adjectives                                          25
+30. Possessive pronouns                                            26
+31. Possessive article                                             26
+
+VIII VERBS: INFINITIVE AND SUBJUNCTIVE/IMPERATIVE
+32. Formation of infinitive                                        28
+33. Uses of infinitive                                             28
+34. Formation of subjunctive/imperative                            29
+35. Uses of subjunctive/imperative                                30
+36. Negative imperative                                            30
+
+IX QUALITY VERBS
+37. Definition of quality verbs                                    32
+38. Present tense of quality verbs                                 32
+39. Other moods and tenses                                         33
+
+X ADJECTIVES
+40. Invariable adjectives                                          35
+41. Variable adjectives                                            35
+42. Adjectives formed from verbs                                   36
+43. Adjectives formed from nouns                                   36
+44. Ka and kanuka                                                  36
+
+
+=== PDF PAGE 005 (Contents vii) ===
+
+                                    CONTENTS
+
+XI NUMERALS
+45. Cardinal numbers                                               38
+46. Ordinal numbers                                                39
+47. Multiplication                                                 40
+48. Dates and time                                                 40
+
+XII CONDITIONAL SENTENCES
+49. Types of conditional sentences                                 42
+50. Simple conditional sentences                                   42
+51. Unfulfilled conditions                                         42
+52. "Should", "ought", etc.                                        43
+
+XIII VERBS: HABITUAL AND "NOT YET" TENSES
+53. Use of habitual tense                                          45
+54. Formation of habitual tense                                    45
+55. "Not yet"                                                      45
+56. Formation of "not yet" tense                                   46
+57. Use of "not yet" tense                                         46
+
+XIV VERBS: DERIVED VERBS
+58. Use of derived verbs                                           48
+59. Formation of derived verbs                                     48
+60. Conjugation of derived verbs                                   50
+
+XV VERBS: REFLEXIVE AND RECIPROCAL FORM
+61. Use of the reflexive form                                      52
+62. Formation of the reflexive—present tense                       52
+63. Reflexive pronouns                                             53
+64. Formation of the reflexive: other moods and tense              54
+65. Use of the reciprocal form                                     55
+
+XVI VERBS: PASSIVE FORMS
+66. Use of passive form                                            57
+67. Formation of passive form                                      57
+
+
+=== PDF PAGE 006 (Contents viii) ===
+
+viii                                CONTENTS
+
+XVII VERBS: PREPOSITIONAL SUFFIX
+68. Use of prepositional suffix                                    60
+69. Formation of prepositional suffix                              61
+70. Further uses of prepositional suffix                           63
+
+XVIII PREPOSITIONS AND ADVERBS
+71. Prepositions                                                   65
+72. Adverbs                                                        66
+
+XIX VERBS: PARTICIPLES AND VERBAL NOUNS
+73. Present participle                                             70
+74. Formation of past participle                                   70
+75. Use of past participle                                         70
+76. Verbal nouns and adjectives ending in -n                        71
+77. Verbal nouns and adjectives ending in -t                        72
+78. Irregular verbs                                                73
+
+APPENDIX I: VERB DERIVATION AND CONJUGATION                         76
+APPENDIX II: SAMPLE LOWER STANDARD EXAMINATION PAPERS              81
+KEY TO EXERCISES                                                   84
+
+
+=== PDF PAGE 007 (Foreword ix) ===
+
+FOREWORD
+
+IT gives me the greatest pleasure, both as Provincial Commissioner of the Province in which Teso is situated and as Chairman of the Languages Board, to write a foreword to this book.
+Father Hilders is a priest in the Mill Hill Mission. He is in charge of the Teachers' Training College at Madera, near Soroti, and has been in Teso for many years. Mr. Lawrance was District Commissioner, Teso, for over five years and is the first administrative officer to have passed the lower and intermediate standard examinations in the Ateso language. He has also made close study of the history and customs of the Iteso and has written a book on them, which I hope will soon be published.
+When Mr. Lawrance began to study the language he had the great advantage of being taught by Father Hilders. Out of those lessons has come this long-needed book. Encouraged by Mr. Lawrance's example a number of other officers have started to study this most difficult language. They, and their successors, will remember, with gratitude, Hilders and Lawrance.
+
+                                                                    T. R. F. Cox
+JINJA
+10th March, 1955
+
+=== PDF PAGE 008 (Blank) ===
+
+[Blank page]
+
+
+=== PDF PAGE 009 (Preface xi) ===
+
+PREFACE BY THE AUTHORS
+
+ATESO is the language of 511,000 Iteso* and is therefore one of the major languages of the Uganda Protectorate. The number of English-speaking persons who attempt to learn the language is at present small, but is increasing, and some book such as this is urgently needed to help them in their studies; for the only book of this kind yet published is now in some respects out of date and is in any case out of print.†
+
+This book is intended only as an introduction to the language. Its form is designed to enable those who work through it with the help of a teacher and who know its contents to pass the Uganda Government lower standard language examination.
+
+We have therefore tried to keep the work as short as possible and to include only what is essential for the lower standard examination. It has not proved easy to decide what to omit and what to include. We have decided to introduce only two past tenses and one perfect tense, but lest this arbitrary decision be resented we have included all tenses in the form of an appendix. We have also decided, apart from brief references in Chapters XIV and XIX, to leave the vast question of word derivation untouched; but some idea of the magnitude of this field of study is also given by examples in Appendix I. We have made little attempt to deal with the oral side of the language beyond the brief notes in the introduction. The intricacies of syllable pitch or tone, which plays such an important part in the language, differences in vowel sounds represented by the same letter and the presence of the “shadow” vowel in nouns are subjects which can, in any case, never be learnt satisfactorily from a book.
+
+We hope that this book will prove useful to all those who start to learn Ateso, and for this reason we have avoided as far as possible the use of such grammatical terms as “voice”, “mood”,
+
+* See Notes on page xiv.
+
+
+=== PDF PAGE 010 (Preface xii) ===
+
+xii                                  PREFACE
+
+“gerundive” and the like, which may not be familiar to all users and which we do not consider essential in a book of this scope. It is, however, clearly impossible to write a grammar without using a large number of grammatical terms. We have assumed a knowledge of the names of the parts of speech and of the commoner terms used to define the different forms of the verb, such as “tense”, “infinitive”, “subjunctive” or “person”. Other essential terms, which may not be so well known, such as “passive”, “conditional”, “reflexive”, or “causative” are explained as they appear in the text. So too are all new terms such as “quality verbs”, “continuous verbs” or “prepositional suffix” which have been coined to explain grammatical concepts not found in Nilotic or Bantu languages. We have included an occasional passing reference to the Maasai Grammar by Dr. A. N. Tucker and Mr. J. Tompo Ole Mpaayei, which is shortly to be published, because we believe it important ultimately to find a common grammatical terminology for those grammatical concepts peculiar to the Nilo-Hamitic languages.
+
+Some terms used by grammarians of the Ateso language we believe to be not only unfamiliar but also vague, and we have adopted new ones. Thus we have avoided the usual classification of verbs into “strong” and “weak” classes and called the two classes ki and ko classes after the prefix used in the imperative form; for what Bishop Kitching† and Father A. M. Hendriksen call “strong” verbs, Father F. J. McGough and Father Kiggen call “weak” verbs.‡ Similarly the terms used to describe the various past and perfect tenses vary considerably among the different authorities. We have therefore decided to define such tenses by adding the prefix or suffix used in the third person singular in brackets after the tense. Thus the tense called by Bishop Kitching the “present imperfect”,† by Father Kiggen the “past”,‡ by Father McGough the “far perfect” and by Father Hendriksen the “present far perfect” is called by us the “perfect (-it)” tense.
+
+The order in which the chapters are arranged is arbitrary,
+
+
+=== PDF PAGE 011 (Preface xiii) ===
+
+PREFACE                                  xiii
+
+designed to introduce as soon as possible the knowledge which will enable students to form simple sentences which they can try out in speech. The total number of chapters corresponds with the total number of lessons normally given for lower standard examinations. The exercises which follow each chapter are not graded in difficulty through the length of the book. Their purpose is to ensure that the lesson contained in each chapter has been learnt and understood.
+
+The vocabularies contain only the words necessary for the exercises. More extensive word knowledge is, of course, necessary for the lower standard examination. This must be acquired from a teacher, from reading and from speaking the language. Bishop Kitching’s book† contains an excellent vocabulary and a list of useful phrases, but the spelling does not conform to the present orthographical rules.
+
+There is very little original reading matter published in Ateso. For the lower standard examination we recommend the translations of the New Testament or “Kidar Aijarakon” by Enoch Olinga published by the East African Literature Bureau. The first three books of “Bia Kosiom”, a school reader based on the Luganda series “Jangu Osome” and published by Longmans, Green & Co., are also useful. Father Kiggen’s “Grammar nak’ Ateso”‡ is written in simple Ateso and is also useful as reading matter; it is, however, no longer in print. The Uganda Government news-sheet “Apupeta” is published monthly by the Department of Information, Kampala, but unfortunately at the present time is not written in the correct orthography.
+
+We wish to record our thanks to Mr. W. H. Whiteley of the East African Institute of Social Research for his help and advice in the early stages of the preparation of this work; to Miss N. C. Wiggins of the Church Missionary Society, Ngora, who kindly commented on the manuscript and suggested several corrections and additions; and to Dr. A. N. Tucker of the School of Oriental and African Studies, London University, to whom we owe the classification of vowel sounds given in the Introduction and the
+
+
+=== PDF PAGE 012 (Preface xiv) ===
+
+xiv                                  PREFACE
+
+useful rule governing the conjugation of verbs made possible only by this classification. To give this rule practical effect we have indicated in the vocabularies only whether the root vowel of verbs is “close” or “open”. Lastly, we wish to acknowledge the help given by many students at the Soroti Teachers’ Training College in checking many doubtful points.
+
+Those who wish to acquire a more detailed knowledge of the structure of the language must rely largely on unpublished material. A full list of all known works appears in “A Linguistic Bibliography of East Africa”.§ Outstanding among these works is a comprehensive grammar compiled by Father A. M. Hendriksen of the Mill Hill Mission, of which a few cyclostyled copies are available in private ownership. This grammar has proved most useful to us in the preparation of this book, and many of the examples used to illustrate a point have been taken from it.
+
+SOROTI
+    August 1954
+
+* 1948 Census: 511,271 Iteso in E. Africa, of whom 462,664 live in Uganda, mainly in Teso and Bukedi districts. There are also 108,282 Karamojong, who speak a closely allied language.
+† Kitching, Rev. A. L.: “A Handbook of the Ateso Language,” London, 1915.
+‡ Kiggen, Rev. Father J.: “Grammar nak’Ateso,” Ngora, 1928.
+§ “A Linguistic Bibliography of East Africa,” published by The East African Swahili Committee and The East African Institute of Social Research, Kampala, 1954.
+
+
+=== PDF PAGE 013 (Preface to the Second Edition xv) ===
+
+PREFACE TO THE SECOND EDITION
+
+IT is gratifying that a second edition of An Introduction to the Ateso Language should be required less than twelve months after its publication. Nevertheless, the rapidity with which this demand has arisen has deprived us, in our task of preparing a second edition, of the advantages of published criticism, for none has yet appeared. The suggestions made in this Preface are therefore of necessity our own, although once again we wish to thank Miss Wiggins for pointing out some failings.
+
+One of the most serious of these failings is in paragraph 25. The explanation given in that paragraph of the special forms required when personal pronouns are used as objects of the verb is incomplete, for it deals only with cases in which the subject of the verb is in the third person. When the subject of the verb is in the first or second persons and the object of the verse is a personal pronoun of the first or second persons, the personal prefix is that of the subject of the verb, but with k- added. Full examples of this usage, which is often known as the “contained object”, are as follows:
+
+(Subject of the verb in the first person):
+    kalimokini eoŋ ijo---I tell you
+    alimokini eoŋ nes---I tell him
+    kilimokini isio yes--we tell you
+    kilimokini isio kes---we tell them
+
+(Subject of the verb in the second person):
+    kilimokini ijo eoŋ--you tell me
+    ilimokini ijo nes---you tell him
+    kilimokinete yesi isio---you tell us
+    ilimokinete yesi kes—you tell them
+
+(Subject of the verb in the third person):
+    kalimokini nesi eoŋ--he tells me
+    kilimokini nesi ijo—he tells you
+
+I.A.L.—2
+
+
+=== PDF PAGE 014 (Preface to the Second Edition xvi) ===
+
+xvi                         PREFACE TO THE SECOND EDITION
+
+    kilimokinete kesi isio--they tell us
+    kilimokinete kesi yes--they tell you
+
+Although in paragraph 38 it is noted that the letter t of -dit- is changed to s in the plural, no indication is given that this is a general rule. The final t of verb roots normally changes to s before i or e.
+    e.g.         aimat---to drink
+    but          amasi---I drink
+(The word itet (itetiak) is, however, a notable exception.)
+
+We have differentiated between “open” and “close” vowels by printing “close” vowels in italics. It should perhaps be noted that the normal procedure, followed in the Maasai Grammar by Dr. A. N. Tucker and Mr. J. Tompo Ole Mpaayei and in certain other works, is to differentiate by printing “open”, not “close”, vowels in phonetic symbols or italics. We should also add that in derived verbs the vowels of the suffixes -un, -ar (-or) and -kin are always “open”.
+Thus:
+    apak naiŋarakinia----when he helps
+                                                (suffix in -a)
+whereas the vowels of the same suffixes in the reflexive are always “close”.
+Thus:
+    iŋarakinos---they help themselves
+                                                (suffix in -o)
+
+We referred in the Preface to the first edition to certain grammatical concepts which occur in Ateso, but which are not found in Nilotic or Bantu languages, and we stressed the importance of finding a common grammatical terminology for the Nilo-Hamitic languages. We would add that there is some danger in the hurried application to Ateso of grammatical terms which may be appropriate to other language families, but which are inappropriate to Nilo-Hamitic languages.
+
+For instance, the form of the Ateso verb which we have called “passive” in Chapter XVI is not really a true passive except in
+
+
+=== PDF PAGE 015 (Preface to the Second Edition xvii) ===
+
+PREFACE TO THE SECOND EDITION                         xvii
+
+the infinitive. As already indicated in paragraph 66, it is more of an impersonal form, meaning “someone does the action of the verb to me, to you, to him”, etc. The “contained object” form must therefore be used with the passive. Thus:
+    kasubio eoŋ---I am being created
+and, not, as might be expected:
+    asubio eoŋ
+Similarly: kicorakinitai ijo---you have been ordered.
+
+This impersonal use accounts for the Ateso rendering of such phrases of “He can be chosen”. English puts the auxiliary verb in the active and the main verb in the passive, but in Ateso the process is usually reversed:
+    epedorio aseun---he can be chosen.
+
+The use of the term “reflexive” for the form of the verb described in Chapter XV may also prove to be inappropriate. Admittedly this form, with or without the pronouns bon or elope, is often used as a true reflexive. The same form, however, is used in the conjugation of the group of verbs, which for want of better term we have called “continuous verbs”; the idea of reflexiveness is entirely absent in this group of verbs.
+    e.g.         eminas ajon---they like beer
+
+The reflexive in many cases also supplies an intransitive form of a transitive verb:
+    active:     aiyatakin (with suffixes in -a)---to increase
+                                                (transitive)
+    reflexive:  aiyatakin (with suffixes in -o)---to increase
+                                                (intransitive)
+
+We do not at this stage suggest an alternative term to “reflexive”. We mention these difficulties merely to emphasise the need for further study and for care in the application of familiar grammatical terms to Nilo-Hamitic languages. We are, however, now convinced that the term “passive” applied to Ateso is inappropriate and misleading and that it should be replaced by some such term as “impersonal”.
+
+NAGONGERA
+    16th April, 1957
+
+
+=== PDF PAGE 016 (Introduction xix) ===
+
+INTRODUCTION
+
+1. Alphabet: (i) There are twenty-two letters in the Teso alpha-
+bet. F, H, Q, V, X and Z are not used and Ŋ and NY are added.
+The pronunciation guides which follow are approximate only;
+the correct sounds can only be learned by practice from a teacher.
+    (ii) There are five vowels in Ateso:
+                            A, E, I, O, U.
+These five letters, however, represent more than five sounds,
+for the letters E, I, O and U have two distinct values each, a
+“close” value and an “open” value.
+    “Close” vowels are pronounced approximately as follows:
+        E as in beg (French é)                 aipet (to kick)
+        I as in seat                           aidip (to hit)
+        O as in the Scottish pronunciation of o in bone (French:
+                                                            eau)
+                                               aimor (to insult)
+        U as in fool                           aikut (to scratch earth)
+    “Open” vowels are pronounced approximately as follows:
+        E as in there (French è)               aipet (to lay out)
+        I as in sit                            ailid (to fasten)
+        O as in gone (or as in glory when long)
+                                               aimor (to share)
+        U as in full                           aikut (to blow)
+    A is pronounced as in father (never short as in ram)
+                                               abal (to say)
+    It will be seen from paragraphs 15, 18 and elsewhere that the
+fact of whether the root vowel of a verb is “close” or “open”
+affects the conjugation of the verb. For this reason, as an aid to
+students, “close” vowels of verb roots will be printed in italics
+when they occur in the vocabularies.
+    (iii) Where the vowels AI or OI stand together they represent
+sounds approximating to the i in bite and the oy in alloy respec-
+
+=== PDF PAGE 017 (Introduction xx) ===
+
+xx                               INTRODUCTION
+
+tively. In other vowel combinations both vowels must be given
+their full values. Thus kau (behind) is pronounced "kah-oo",
+not "kow".
+    (iv) All words ending in a consonant possess a semi-mute or
+"shadow" vowel after the final consonant, which is not pro-
+nounced when the word stands in isolation, but which is pro-
+nounced when the word is followed by another word beginning
+with a consonant:
+    e.g. The Ateso translation of "the women go to the house"
+                            is written: elosete aŋor togo
+               but is pronounced: elosete aŋoro togo
+    If the word following is normally written as one with the preced-
+ing word, the "shadow" vowel is not only pronounced but written:
+    e.g. elosete aŋoroke togo—his women go to the house
+    Other examples are given in (vii) below.
+    (v) There are sixteen consonants and one semi-vowel in Ateso,
+pronounced approximately as follows:
+    B     as in bat                               bobo
+    C     as in chat (never as in cat)            yenicici
+    D     as in dog                               ededeŋ
+    G     as in get (never as in geology)         egogoŋ
+    J     as in jam                               ejijim
+    K     as in kit                               ekek
+    L     as in let                               elal
+    M     as in mat                               mam
+    N     as in nut                               nen
+    Ŋ     as in singer (never as in finger)       ŋopeŋol
+    NY    as in onion                             ekweny
+    P     as in put                               papa
+    R     as in rend (should be well rolled)      arereŋ
+    S     as in sit                               aisisia
+    T     as in tot                               toto
+    Y     as in yet                               yoga
+Semi-vowel:
+    W     as in wit                               awaraga
+
+
+=== PDF PAGE 018 (Introduction xxi) ===
+
+INTRODUCTION                                xxi
+
+    (vi) In words of foreign origin introduced into Ateso the
+missing sound F is replaced by P and the missing sound V by
+B or P. Z is replaced by S.
+    Thus meza (table) (Kiswahili) becomes e-mesa
+         oku-fuga (to rule) (Luganda) becomes ai-puga
+    (vii) It is an invariable rule that two consonants can never
+stand together in the same word. Both in speech and in writing
+when word construction brings two consonants together, either
+one of the consonants must be dropped or the "shadow" vowel
+mentioned in sub-paragraph (iv) above must be inserted between
+the consonants.
+                  E.g. (Omission of one consonant)
+Nen-pe-nen (just here) is written and pronounced nepenen.
+                  (Insertion of "shadow" vowel)
+ŋol tuŋanan (every man) is written and pronounced
+    ŋolituŋanan
+Elacet kon (your key) is written and pronounced elacetekon
+    It is not the intention in this book to indicate the "shadow"
+vowel applicable to each word, and there is no rule by which it
+can be determined; where in the examples in this book the
+"shadow" vowel occurs, an explanatory note will usually indicate
+that the particular vowel is "inserted for euphony".
+    The fact that in some works the two letters NG are found
+together is no exception to the above rule. These two letters are
+merely an alternative representation of the sound Ŋ, in the same
+way as the letters NY represent one sound. The semi-vowel W,
+however, can and frequently does follow a consonant:
+                        aswam (work)
+
+2. Pronunciation: The correct pronunciation of these letters
+when formed into words can only be learned by practice. As a
+general rule all syllables should be given equal stress, though the
+stem or root syllable perhaps carries slightly more stress than
+other syllables. Stress does not, of course, affect the length of the
+vowel stressed or its pitch or tone. Syllable pitch is a difficult
+
+
+=== PDF PAGE 019 (Introduction xxii) ===
+
+xxii                               INTRODUCTION
+
+subject which will not be treated in this book. It must suffice to
+say that syllable pitch plays a vital part in correct pronunciation
+and that many words, which are spelt identically, have a different
+meaning according to syllable pitch. Thus:
+        _ ¯ _   elípi—I pray
+        _ ⌒     elipî—I was praying
+        _ _ ¯   elipí—he was praying
+
+3. Orthography: (i) The spelling used in this book is in
+accordance with the official orthography agreed upon by the
+Teso Orthography Committee in 1947.
+    It was then accepted as a general principle that all words
+should be written in full even though normally contracted in
+speech. It should be particularly noted that a short -a or -e at
+the end of a word is dropped in speech when the word is followed
+by a word beginning with a vowel.
+        ekitabo loka etelepat—the book of the boy
+is pronounced ekitabo lok' etelepat.
+    (ii) There are other ways in which orthographical rules are not
+always in accordance with practised pronunciation. There is a
+tendency to omit the letter k when it forms part of a prefix.
+Thus in the above example ekitabo would usually be pro-
+nounced eitabo. It is interesting to note in this respect that
+Bishop Kitching records many verbs as having the prefix aki-
+in the infinitive. This prefix is now written and pronounced ai-,
+although the k is still retained in the speech of the Iteso of the
+Tororo area.*
+    (iii) Foreign words coined into the language are made to
+conform to Ateso spelling by adding appropriate prefixes.
+    Thus meza (Kiswahili)—"table"—becomes emesa
+         okufuga (Luganda)—"to rule"—becomes aipuga
+    There is some divergence regarding the gender of such
+borrowed nouns. Thus the forms abalua (feminine) and ebalua
+
+____________________________________
+* There is some indication that the spoken language is continuing to
+move away from the written language and that some aspects of the
+orthography may well need revision soon.
+
+
+=== PDF PAGE 020 (Introduction xxiii) ===
+
+INTRODUCTION                                xxiii
+
+(masculine) are found for the word meaning "a letter". Both are
+equally correct.
+    (iv) The Teso Orthography Committee was unable to agree
+upon the spelling of the word nes (he, she, it). Although the
+form nes, favoured by the Catholic Mission, is used in this book
+the form ŋes is equally correct.
+
+4. Word Order: Pronunciation and word order can only be
+learnt by experience and practice in the language. The following
+rules are for rough guidance only.
+    (i) The usual order of words in a simple sentence in Ateso is
+                    verb — subject — object
+                    ekoto—Petero—ekiŋok
+                    (Peter wants a dog)
+    The subject can, however, precede the verb, particularly if the
+subject is to be emphasised.
+    Petero ekoto ekiŋok is equally correct, but perhaps less
+usual than the first example.
+    The order of words with the negative mam should be noted.
+In a negative sentence the subject must precede the verb :
+    mam Petero ekoto ekiŋok—Peter does not want a dog
+It is incorrect to say: mam ekoto Petero ekiŋok.
+    (ii) Adjectives and numerals invariably follow the nouns they
+qualify:
+              amina ekiŋok loepol—I love a big dog
+              akoto ituŋa akais aarei—I want twenty men
+    The adjectives listed in paragraph 41 (ii), (iii) and (v) are
+however, exceptions to this rule. These adjectives may precede
+the nouns they qualify, in which case they are written as one
+word with them:
+              konyarau ediotuan—call anyone
+    (iii) Adverbs invariably follow the verbs they qualify:
+              ebunit atipet—he is coming quickly
+
+
+=== PDF PAGE 021 (Introduction xxiv) ===
+
+xxiv                               INTRODUCTION
+
+    Adverbs of time must be placed immediately after the verb:
+              ebunit bian nesi—he came yesterday
+It is incorrect to say ebunit nesi bian.
+    Interrogative adverbs may, however, precede the verb for
+emphasis, when strengthened with the participle bo:
+              Aibo elosit etelepat ?—Where has the boy gone?
+    (iv) There is no rule governing the position of pronouns, but
+see paragraph 25 below.
+              kinomi ijo nesi—he is beating you
+              kinomi nesi ijo—he is beating you
+    The interrogative pronoun, however, when the subject of a
+sentence, precedes the verb:
+              Iŋai edukit etogo?—Who built the house?
+
+
+=== PDF PAGE 022 (Chapter I: Nouns 1) ===
+
+CHAPTER I
+
+NOUNS
+
+5. Gender: For grammatical purposes all nouns in Ateso may
+be divided into three classes or genders: (a) masculine, (b) fem-
+inine and (c) neuter.
+    (a) Masculine nouns are:
+        (i) Names of male beings:
+                e.g.    ekiŋok—dog
+                        etelepat—boy
+        (ii) Names of trees, fruits, herbs, and grasses:
+                e.g.    eloa—mvule tree
+                        enimu—lemon
+        (iii) Names of insects:
+                e.g.    esirut—mosquito
+        (iv) Names of non-indigenous liquids:
+                e.g.    ecai—tea
+                        ekawa—coffee
+    (b) Feminine nouns are:
+        (i) Names of female beings:
+                e.g.    akiŋok—bitch
+                        apese—girl
+        (ii) Names of languages and countries:
+                e.g.    Ateso—the Teso language or country
+                        Amusugun—the English language
+        (iii) Names of indigenous liquids:
+                e.g.    ajon—beer
+                        akile—milk
+        (iv) Abstract nouns:
+                e.g.    ajokus—goodness
+                        aojau—height
+
+
+=== PDF PAGE 023 (Chapter I: Nouns 2) ===
+
+2                                 ATESO LANGUAGE
+
+    (v) Verbs used as nouns:
+            e.g.        alosit—going
+                        abunere—coming
+    (c) Neuter nouns are:
+        (i) Names of neuter or generic objects:
+                e.g.    ituŋanan—person (sex unknown)
+        (ii) Names of diminutive objects:
+                e.g.    ikiŋok—puppy
+                        ipese—baby girl
+                        imoru—pebble
+
+6. Noun prefix:
+    (i) Every noun in Ateso has a prefix which varies according to
+the gender of the noun or according to whether the noun is
+singular or plural.
+    (ii) The noun prefixes are:
+                        Masculine     Feminine     Neuter
+        Singular:           e            a            i
+        Plural:             i            a            i
+    (iii) The only exceptions to this rule are certain nouns denot-
+ing relationship:
+            e.g.  toto—mother; papa—father
+and the two words kide (east) and too (west), all of which have
+no noun prefix.
+    (iv) It should, however, be noted that the noun prefix is
+always dropped when the noun comes after the following pro-
+nouns or adjectives :
+                            lo—who, which
+                            ece—other
+                            ŋol—every
+                            edio—any, some
+                            ediope—one
+and their feminine, neuter or plural forms:
+    e.g.  etuŋanan—a man             ecetuŋanan—another man
+          aberu—a woman              adiopeberu—one woman
+          etelepat—a boy             ŋolitelepat—every boy
+                       (i inserted for euphony)
+
+
+=== PDF PAGE 024 (Chapter I: Nouns 3) ===
+
+NOUNS                                           3
+
+7. Number:
+    (i) To form the plural the ending of the noun is changed.
+This change may consist of the omission of the last syllable, the
+addition of another syllable or syllables, or the alteration of the
+last syllable or syllables:
+    e.g. (omission)   amukat—shoe           amuk—shoes
+         (addition)   ekek—door             ikekia—doors
+         (alteration) apese—girl            apesur—girls
+    (ii) In the case of masculine nouns the noun prefix also changes
+as shown in paragraph 6 above from e- to i-.
+    (iii) These changes in the endings of nouns are so irregular
+that it is not worth while trying to formulate rules for the forma-
+tion of plurals. The plural form of each noun will be given in
+brackets after the singular form in the vocabularies.
+    (iv) Certain nouns, however, which are derived from verbs,
+form their plurals according to rules:
+    (a) Nouns denoting an agent (a person who does the action of
+        the verb) form a singular ending in -an or -on and a
+        plural ending in -ak or -ok:
+        e.g.  ekamejan—hunter;        ikamejak—hunters
+              ekecokon—herdsman;      ikecokok—herdsmen
+              (See also Chapter XIX below.)
+    (b) Nouns denoting something which does or is done, form a
+        singular ending in -et or -etait and a plural ending in
+        -eta:
+        e.g.  elacet—(a thing which loosens) key
+              ilaceta—keys
+              arapetait—cover
+              arapeta—covers
+    (v) Some nouns have no singular and exist only in the
+plural:
+        e.g.  akipi—water                 ajon—beer
+              ajo—sleep                   ileic—shame
+    Other nouns have no plural and exist only in the singular:
+        e.g.  ekuron—ashes                akoloŋ—sun
+              adam—brain                  eduan—weeds
+
+=== PDF PAGE 025 (p. 4) ===
+4                   ATESO LANGUAGE
+
+(vi) Abstract nouns and names of diseases, as in English, have no plural.
+
+(vii) Some nouns form their plural from other roots
+      e.g. aberu—woman        aŋor—women
+           ikoku—child        idwe—children
+
+(viii) Some nouns, in addition to the normal plural, form a generic plural by adding -sinei to the plural form:
+      e.g.  etuŋanan—man
+            ituŋa—men
+            ituŋasinei—mankind
+            akwap—country
+            akwapin—countries
+            akwapisinei—the world (n dropped for euphony).
+
+8. Article: There is no definite or indefinite article in Ateso. Aberu means “a woman” or “the woman” according to the context.
+
+Vocabulary:
+      etuŋanan (ituŋa)—man (human being)
+      aberu (aŋor)—woman
+      etelepat (itelepai)—boy
+      emir (imirio)—rat
+      ekiŋok (iŋokwo)—dog
+      akipi (pl. only)—water
+      amoru (amor)—stone, rock
+      emesa (imesan)—table
+      akiteŋ (akituk)—cow
+      emoŋ (imoŋin)—bull
+      akinyet (sing. only)—fat, oil, paraffin
+      ekiliokit (ikiliok)—man (male being)
+      ikoku (idwe)—child
+      apese (apesur)—girl
+
+
+=== PDF PAGE 026 (p. 5) ===
+                              NOUNS                                        5
+
+      akokor (akokorei)—hen
+      akile (pl. only)—milk
+      imoru (imor)—pebble
+      ekalamu (ikalamun)—pencil, pen
+      ekitabo (ikitabon)—book
+      etogo (itogoi)—house
+
+
+=== PDF PAGE 027 (p. 6) ===
+CHAPTER II
+
+VERB “TO BE” AND “TO HAVE”
+
+9. Four forms of the verb “to be”: In Ateso there are four forms of the verb “to be”. The first is used to express place (ejaas ore—they are at home) or existence (ejaas ikacudak—there are sorcerers). The second form expresses quality (eraas Iteso—they are Iteso). The third is used to express numerical quantity and can therefore only be used in the plural (imwaas itomon—they are ten). The fourth, a rarer form than the other three, is used to express size or bulk (etiaas ai?—how big are they?).
+   The infinitives of these four forms are:
+        (i) ajaus (or ajaut)
+       (ii) araus (or araut)
+      (iii) amwaus
+       (iv) atiaus
+
+10. Present tense: The present tense of the verb “to be” is:
+    (i)         ajai—I am                (used of place or existence)
+                ijai—you are
+                ejai—he is
+         kijai (kijaa)—we are
+               ijaas—you are
+               ejaas—they are
+
+    (ii)        arai—I am                (used of quality)
+                irai—you are
+                erai—he is
+               kirai—we are
+               iraas—you are
+               eraas—they are
+
+
+=== PDF PAGE 028 (p. 7) ===
+                    VERB “TO BE” AND “TO HAVE”                             7
+
+(iii)        . . .
+             . . .
+             . . .
+             kimwai—we are               (used of quantity)
+             imwaas—you are
+             imwaas—they are
+
+(iv)         atiai—I am                  (used of size or bulk)
+             itiai—you are
+             etiai—he is
+             kitiai—we are
+             itiaas—you are
+             etiaas—they are
+
+11. The verb “to have”: There is no separate verb “to have” in Ateso. Possession is expressed by use of the verb “to be” (ajaus). Thus the idea “I have a cow” must be expressed by turning the words to “there is a cow to me”. Ejai eoŋ akiteŋ—I have a cow. Ejaas eoŋ akituk—I have cows.
+
+12. Negative with the verb “to be”: Verbs are made negative by prefixing the word mam (not).
+        Aduki—I build.          Mam aduki—I do not build.
+The negative mam is also used with all four forms of the verb “to be”; but when the verb “to be” expresses place or existence it is more usual to use the verb amameun (to be absent).
+E.g.    Ejai Petero ŋina ? Emamei—Is Peter there? He is not.
+        Emameete isirikalei ikitadan—The soldiers do not have
+                                     beds.
+   But when particular emphasis lies on the negative it is possible to use mam with the verb ajaus: e.g. Ejai etelepat ŋina. Mam ejai—The boy is there. He is definitely not.
+
+Vocabulary:
+                        ore—at home
+                        lailo—on this side, here
+
+I.A.L.—3
+
+
+=== PDF PAGE 029 (p. 8) ===
+8                   ATESO LANGUAGE
+
+kane (often shortened to ne)—here
+ŋina or kaŋina—there
+ai ?—where ? how ?
+ekiror (ikiroria)—name
+ekitada (ikitadan)—bed
+esirikalet (isirikalei)—soldier
+Etesot (Iteso)—Teso man
+
+Exercise:
+(i) Where is the bed?
+(ii) It is at home.
+(iii) We are Teso men.
+(iv) They are not there.
+(v) How many are you?
+(vi) The boy has no dog.
+(vii) The cows are at home.
+(viii) How many names are there?
+(ix) We are here.
+(x) The man is an Etesot.
+
+
+=== PDF PAGE 030 (p. 9) ===
+CHAPTER III
+
+VERBS: PRESENT AND FUTURE TENSES
+
+13. Classes of verbs: (i) Ateso expresses many parts of speech by using verbs: adjectives are constructed from verbs, conjunctions and prepositions are frequently translated by verbs and many nouns are derived from verbs. Many varying forms of verbs can be derived from one root, which is the part of the word which conveys the basic meaning. Aiduk means “to build”; eduki means “he builds”; edukete means “they build”. The root of this verb is duk, which conveys the basic meaning and which remains unaltered in all tenses, moods and derived forms of the verb. Only a few of the many derived forms and many tenses will be dealt with in this book, although other forms and tenses will be listed in Appendix I.
+   (ii) All verbs in Ateso fall, for grammatical purposes, into two classes, which differ from each other in conjugation. These two classes are termed the ko and the ki class from the prefixes used in the imperative:
+        aiduk (ko class)—to build.    Imperative: koduk
+        ailip (ki class)—to pray.     Imperative: kilip
+   There is no rule to assist one in placing any particular verb in its appropriate class.* In the vocabularies the class will be indicated in brackets after each verb.
+
+14. Present tense: The verb changes according to person by adding prefixes. These personal prefixes are:
+        ko class: a-, i-, e-, ki-, i-, e-
+        ki class: e-, i-, i-, ki-, i-, i-
+
+* This is not wholly true. Different pitch or tone patterns indicate whether a verb in its basic form belongs to the ko or to the ki class. Syllable tone in ko verbs is level (e.g. amin — —), whereas in ki verbs the tone goes down on the -i- of the infinitive and up slightly on the root (e.g. ailip — _ —).
+
+
+=== PDF PAGE 031 (p. 10) ===
+10                  ATESO LANGUAGE
+
+The present tense is formed by putting the personal prefixes in front of the root and by adding -i after the root in the singular and first person plural and -ete in the second and third persons plural for both classes of verb. The present tense is therefore as follows:
+
+   AIDUK (ko)—to build                 AILIP (ki)—to pray
+   aduki—I build                       elipi—I pray
+   iduki—you build                     ilipi—you pray
+   eduki—he builds                     ilipi—he prays
+   kiduki—we build                     kilipi—we pray
+   idukete—you (pl.) build             ilipete—you (pl.) pray
+   edukete—they build                  ilipete—they pray
+
+The present tense can be translated by “I build” or “I am building” according to context.
+
+15. Continuous verbs: There are some verbs which express an idea of continuing or prolonged action: e.g. “to stare”, “to want”. Such verbs form a group, which differs from ordinary verbs by having different suffixes in the various tenses. Verbs in this group may belong either to the ko or ki class. These verbs have been called “continuous verbs” by Father Hendriksen and other grammarians and we have followed his terminology for want of a better word. It should, however, be noted that the idea of continuity in some verbs in this group is not always apparent to Europeans, e.g. einer (to speak). Moreover, there are some verbs which to Europeans may express an idea of continuity but which do not fall in this group, e.g. aomit (to think). In the new Maasai Grammar this group is termed “verbs ending in a vowel” but this terminology is inapplicable to Ateso.
+   Continuous verbs have the same personal prefixes as other verbs but the suffixes -o or -a replace the suffix -i and the suffixes -os or -as replace the suffix -ete. The suffixes -o and -os are used after roots containing “close” vowels and the suffixes -a and -as after roots containing “open” vowels or -a-.*
+
+* A glance at Chapter XV or Part 2 of Appendix I will show that continuous verbs have the same shape and conjugation as reflexives.
+
+
+=== PDF PAGE 032 (p. 11) ===
+                    VERBS: PRESENT AND FUTURE TENSES                       11
+
+AKOT (ko)                   AMIN (ko)                   EINER (ki)
+    —to want                    —to love                    —to speak
+akoto—I want                amina—I love                enera—I speak
+ikoto—you want              imina—you love              inera—you speak
+ekoto—he wants              emina—he loves              inera—he speaks
+kikoto—we want              kimina—we love              kinera—we speak
+ikotos—you want             iminas—you love             ineras—you speak
+ekotos—they want            eminas—they love            ineras—they speak
+
+16. Future tense: There is no separate form of the future tense in Ateso. The present tense is often used to indicate future action and the context makes the future meaning clear:
+    e.g. Eduki moi—He will build tomorrow
+Where the idea of futurity cannot be made clear by the context the two verbs alosit (ko)—(to go) and abunere (ko)—(to come) are used, followed by an infinitive:
+    e.g. Ebuni aanyun—He will see
+         Kilosi ailip—We shall pray, we are going to pray.
+
+17. Infinitive: Uses of the infinitive are explained in full in Chapter VIII below. For the present it will suffice to say that it is commonly used, as in English, after certain verbs expressing ability or wishing:
+e.g. Epedori Petero aanyun emoŋ—Peter is able to see a bull.
+     Ekoto nesi aiduk etogo—He wants to build a house.
+The infinitive form of the verb is given in the vocabularies. It consists of a prefix ai- or a- (rarely ei-) and the root of the verb.
+
+Vocabulary:
+   aiduk (ko)—to build                 ailip (ki)—to pray
+   akot (ko)—to want                   einer (ki)—to speak
+   amin (ko)—to love                   aanyun (ko)—to see
+   aipup (ko)—to hear, listen          alosit (ko)—to go
+   atakan (ko)—to appear               apedor (ko)—to be able
+   ainom (ki)—to beat                  kwana—now
+
+
+=== PDF PAGE 033 (p. 12) ===
+12                  ATESO LANGUAGE
+
+Exercise:
+(i) He will build a house.
+(ii) I want to pray.
+(iii) We want to hear the names.
+(iv) You (plural) see the beds.
+(v) The soldier appears here.
+(vi) He wants to beat the table.
+(vii) We want to be here.
+(viii) They are praying.
+(ix) The boy wants to go home.
+(x) The girl can go now.
+
+=== PDF PAGE 034 (p. 13) ===
+CHAPTER IV
+
+VERBS: PAST TENSES
+
+18. Past (abu) tense: (i) There are several past tenses in Ateso which express different shades of meaning. Only two of these tenses will be dealt with in this book, the remainder being listed in Appendix I. These two are the past (abu) tense with its subsidiary form the narrative tense and the past (a- or e-) tense.*
+(ii) The past (abu) tense is formed by using the irregular verb abunere (ko)—(to come) as an auxiliary. The main verb has the personal prefix ka- in the first person singular and plural and ko- in all other persons in ko class verbs. In ki class verbs the personal prefixes are ke- in the first person singular and plural and ki- in all other persons. These personal prefixes are added to the root in the singular. In the plural the suffix -oto or -ata is added; -oto follows roots containing "close" vowels and -ata follows roots containing "open" vowels or -a. This suffix -oto or -ata is frequently abbreviated to -o or -a, particularly when the root ends in a -t.
+The past (abu) tense is therefore as follows:
+AIDUK (ko)—to build             AILIP (ki)—to pray
+    abu kaduk—I built               abu kelip—I prayed
+    ibu koduk—you built             ibu kilip—you prayed
+    abu koduk—he built              abu kilip—he prayed
+apotu kadukoto—we built         apotu kelipata—we prayed
+ipotu kodukoto—you built        ipotu kilipata—you prayed
+apotu kodukoto—they built       apotu kilipata—they prayed
+
+* A common alternative way of expressing past action is to use the verb adaun (finish) in the perfect (root) tense (see Appendix I, Part 2) followed by an infinitive:
+                    Adau eoŋ aanyun bian.
+                    I saw it yesterday.
+
+
+=== PDF PAGE 035 (p. 14) ===
+14                    ATESO LANGUAGE
+
+The older forms of the auxiliary verb, kebu (third person singular) and kipou (first person plural), are still widely used.
+Note: The main verb in this tense is identical in form with the subjunctive/imperative which will be explained in Chapter VIII below. The auxiliary verb is irregular. Note that the 1st person plural, unlike the present tense, takes plural endings.
+(iii) The past (abu) tense is used of a past completed action:
+e.g. Abu etelepat kolot ore bian—The boy went home yesterday.
+     Apotu kodukoto etogo sek—They built the house long ago.
+(iv) Note that the subject of the verb is placed after the auxiliary abu and before the main verb.
+
+19. Continuous verbs: Continuous take the same personal prefixes as other verbs in the past tense but retain the same endings as in the present tense. Note, however, that the first person plural in the past tense must have the plural ending:
+    abu kakoto—I wanted             abu kener—I said
+    ibu kokoto—you wanted           ibu kiner—you said
+    abu kokoto—he wanted            abu kiner—he said
+apotu kakotos—we wanted         apotu keneras—we said
+ipotu kokotos—you wanted        ipotu kineras—you said
+apotu kokotos—they wanted       apotu kineras—they said
+The past (abu) tense is not, however, commonly used with continuous verbs, which prefer the past (a- or e-) tense.
+
+20. Narrative past: In narrative, when several past tense verbs having the same subject follow one another, it is usual to use the past (abu) tense for the first verb of the series, but to omit the auxiliary abu in the remaining verbs:
+e.g. Abu etuŋanan kolot Amuria koduk etogo.
+     The man went to Amuria and built a house.
+     Kanen abu koje idita, kiworiwor nes, ido kibwaik ikoku nen, kidokok nes kuju aladoi.
+     She made a basket, plastered it, put the child in it and placed it amongst the reeds.
+
+
+=== PDF PAGE 036 (p. 15) ===
+                    VERBS: PAST TENSES                                     15
+
+21. Past (a- or e-) tense: (i) There is one other past tense which is so common and useful as to necessitate inclusion. In form it is the same as the present tense except that it uses in the third person singular and plural, the personal prefix of the first person:
+e.g.    aduki—he was building, he built
+        elipi—he was praying, he prayed
+        adukete—they were building, they built
+        amina—he loved
+(ii) The difference in meaning between the past (abu) and the past (a- or e-) tenses is not easily defined. It appears that the latter is preferred whenever the time at which the action took place is expressed:
+e.g. Asubi kolo Lokasuban akwap.
+     God created the world long ago.
+It also appears that the past (a- or e-) tense is used when the past action was a continuing one rather than a definite one:
+e.g. Aminas Iteso noi amej.
+     The Iteso were fond of hunting.
+(iii) The Iteso differentiate between this tense and the present tense by difference in pitch of the syllables, a subject not covered in this work.
+
+Vocabulary:
+aidar (ki)—to keep, look after         ebore (iboro)—thing
+                                       kotoma or toma—in
+aibwok (ki)—to carry                   kanuka—for
+abunere (ko)—to come                   atipet—quickly
+ayogan (ki)—to greet                   mam—not
+ainyam (ko)—to eat                     bian—yesterday
+akor (ko)—to cultivate
+
+Exercise:
+(i) The soldier begged for water for the dog.
+(ii) He built a house quickly.
+(iii) The boy greeted the girl in the house.
+
+
+=== PDF PAGE 037 (p. 16) ===
+(v) The dogs loved eating rats.
+(vi) The bull did not want to go home.
+(vii) Did you want to carry the things there?
+(viii) He went to Soroti, built a house and looked after the property.
+(ix) I could not come here yesterday.
+(x) Did I not ask the boy to carry the books?
+
+
+=== PDF PAGE 038 (p. 17) ===
+CHAPTER V
+
+VERBS: PERFECT TENSE
+
+22. Formation of the perfect (-it) tense: Only one perfect tense will be considered in this book. This will be termed the perfect (-it) tense. Other perfect tenses will be listed in Appendix I.
+The perfect (-it) tense is formed by adding the suffix -it to the root of the verb in the singular and first person plural and the suffix -ito in the second and third persons plural.
+AIDUK (ko)—to build             AILIP (ki)—to pray
+    adukit—I have built             elipit—I have prayed
+    idukit—you have built           ilipit—you have prayed
+    edukit—he has built             ilipit—he has prayed
+   kidukit—we have built           kilipit—we have prayed
+idukito(s)—you have built       ilipito(s)—you have prayed
+edukito(s)—they have built      ilipito(s)—they have prayed
+Verbs ending in -kin, -or (or -ar) and -un form the perfect (-it) tense regularly, but -kinit is often contracted in speech to -kiit and -unit to -uut:
+e.g.             aboŋun—to come back
+         eboŋunit or eboŋuut—he has come back
+or               ainakin—to give
+         iinakinito or iinakiito—you have given
+The contracted form is colloquial and should not be used in writing.
+
+23. Uses of the perfect (-it) tense: (i) The essential idea conveyed by the perfect (-it) tense is one of completion; the action has taken place but the exact time is undefined or of no consequence. Thus in the sentence "I have eaten" the implied meaning is that "I am replete and need no more food". The
+
+
+=== PDF PAGE 039 (p. 18) ===
+18                    ATESO LANGUAGE
+
+eating might have taken place a few minutes ago or some hours ago; the exact time is immaterial.
+E.g.    Iŋai edukit esomero lo?—Who built this school?
+        (The time when the school was built is immaterial; it is still standing.)
+        Iŋai eanyunit ekalamuka?—Who has seen my pen?
+        (Time is again immaterial. The pen is still missing.)
+(ii) The perfect (-it) tense can have an apparent present meaning when it expresses action which has already started and is still going on.
+E.g. Aibo ejai etelepat? Ebunit—Where is the boy? He's coming.
+     (Implying that the boy has already started to come. The present tense ebuni would imply that he was about to come only.)
+(iii) The perfect (-it) tense can also be used to express customary or habitual action which has started and still continues. (There is also a habitual tense; see Chapter XIII below.)
+E.g. Enapitos Ilok imukulen—The Karamojong wear skins.
+(iv) The perfect (-it) tense is used to express a present idea resulting from a completed action. The sentences "The jar is full" or "The man is drunk" convey a present meaning but result from a completed action. The jar is full because it has been filled. The man is inebriated because he has drunk.
+E.g.                aibar—to acquire riches
+                    ebarit—he is rich (because he has acquired riches)
+                    aidak—to lift
+      Edakit aberu ikoku—The woman carries the child.
+            (An object must have been lifted up before it can be carried.)
+This use results in the formation of a new verb which may have its own infinitive.
+                    E.g. adakit—to carry
+                         alosit—to go
+                         anapit—to be dressed
+
+
+=== PDF PAGE 040 (p. 19) ===
+                    VERBS: PERFECT TENSE                                   19
+
+Vocabulary:
+      aicorakin (ki)—to command, to tell
+      acamun (ko)—to agree, to consent
+      aiŋarakin (ki)—to help
+      ayaun (ko)—to bring
+emanikor (imanikoria)—plot, garden
+inyamat (plural only)—food
+akiriŋ (singular only)—meat
+
+Exercise:
+(i) The boys carried these stones here.
+(ii) He has consented to cultivate the plots.
+(iii) Have you (singular) seen the hens? No.
+(iv) The women have gone to bring the food.
+(v) Children are accustomed to beg for food.
+(vi) I have told the soldier to come quickly.
+(vii) Is there any food? Has the dog eaten?
+(viii) Have you (plural) brought the milk?
+(ix) The girl has helped look after the things.
+(x) We have obeyed (have listened).
+
+
+=== PDF PAGE 041 (p. 20) ===
+CHAPTER VI
+
+PRONOUNS AND DEMONSTRATIVE AND
+INTERROGATIVE ADJECTIVES
+
+24. Personal pronouns:
+(i) eoŋ—I                              isio or oni—we
+    ijo—you (sing.)                    yesi—you (plural)
+    nesi—he, she, it                   kesi—they
+(The form iso instead of isio is favoured by the Catholic Mission.)
+(ii) These words can be used either as subject or object of a sentence. Thus eoŋ can mean "I" or "me". When, however, nesi, yesi or kesi are used as the object, the -i is dropped. Thus kesi means "they" but kes means "them".
+      Ejai eoŋ ekitabo—I have a book
+      (literally: There is a book to me)
+      Ikotos nes?—Do you want him?
+But when nesi, yesi and kesi, though subject of the verb, precede the verb, the final -i is dropped:
+      Mam kes epupitos nuenera eoŋ.
+      They have not understood what I am saying.
+(iii) The personal pronoun need not be expressed if the meaning is clear without it.
+Alosi moi eoŋ and Alosi moi both mean "I am going tomorrow".
+(iv) The personal pronoun usually follows the verb; the pronoun used as subject of the verb precedes the noun used as object of the verb:
+e.g. "you beg the woman" must be ilipi ijo aberu; it can never be ilipi aberu ijo.
+(v) There are two words to translate "we". Isio is used when the speaker excludes his hearers:
+
+
+=== PDF PAGE 042 (p. 21) ===
+          PRONOUNS AND DEMONSTRATIVE ADJECTIVES                             21
+
+e.g. A European speaking to a Teso audience might say:
+          Isio Imusuŋun mam kimina ajon.
+          We Europeans do not like native beer.
+     But in delivering a sermon he might say:
+          Kirai oni kere idwe luka Lokasuban,
+          We are all children of God,
+     because oni includes his hearers.
+
+25. Personal pronouns as object of the verb*:
+(i) When the object of a verb is a personal pronoun of the first or second persons, the personal prefix of the verb is not that of the subject but of the object of the verb and is preceded by k-. Thus the sentences "Peter tells me" or "The boy tells you" would be rendered by:
+          Kalimokini Petero eoŋ.
+          Kilimokini etelepat yes.
+and not, as would be expected, by:
+          Elimokini Petero eoŋ.
+          Elimokini etelepat yes.
+(ii) When the past (abu) tense is used, this rule applies only to the 1st person singular.
+     E.g. Abu Petero keŋit eoŋ—Peter asked me
+     but: Abu Petero kiŋit isio—Peter asked us.
+
+26. Demonstrative pronouns and adjectives:
+(i) The demonstrative pronouns and adjectives vary according to gender and number. They are:
+              Masculine     Feminine      Neuter
+Singular:     lo            na            yen —this
+Plural:       lu            nu            lu  —these
+Singular:     ŋol           ŋin           ŋin —that (of near objects)
+Plural:       ŋul           ŋun           ŋul —those
+Singular:     je            ya            ii  —that (of far objects)
+Plural:       kwi           kwa           kwi —those
+
+* See remarks in Preface to the Second Edition.
+
+=== PDF PAGE 043 (p. 22) ===
+22                         ATESO LANGUAGE
+
+(ii) The demonstrative adjectives always follow the noun with
+which they agree and are written separately:
+      e.g.  etelepat lo—this boy
+            etogo je—that house
+But in the sentences:
+      erai lo etelepat—this is a boy
+      erai je etogo—that is the house
+the words lo and je are used as demonstrative pronouns and
+stand in place of a noun.
+(iii) Reduplication of the demonstrative pronouns and adjec-
+tives for emphasis is common and is achieved by inserting the
+syllable -pe- between the reduplicated demonstratives:
+      e.g.  lopelo
+            ŋopeŋol (first l dropped for euphony)
+            napena
+
+27. Relative pronouns:
+(i) The relative pronoun varies according to gender and
+number:
+                  Masculine       Feminine        Neuter
+Singular:         lo              na              yen—who, which, whom
+Plural:           lu              nu              lu
+It will be noted that the relative pronoun is identical in form
+with the demonstrative adjective meaning "this".
+It is written as part of the verb which follows it:
+      e.g.  etuŋanan loebuni—the man who comes
+            aŋor nuejaas kane—the women who are here
+            ikoku yenekoto akile—the child which wants milk
+(ii) The same form is used regardless of case. Thus lo can
+mean "who", "whom", "to whom" or "whose":
+      e.g.  etuŋanan loemina nesi—the man whom he loves
+            etuŋanan loaduki eoŋ eketogo—the man whose house
+                  I am building
+            (literally: the man for whom I build his house)
+
+
+=== PDF PAGE 044 (p. 23) ===
+PRONOUNS AND DEMONSTRATIVE ADJECTIVES         23
+
+abu kojai etuŋanan loajaas idweke iarei—there was
+  a man who had two children
+(literally: there was a man to whom there were his two
+  children)
+
+28. Interrogative pronouns and adjectives:
+Inyo ? (what?) is invariable:
+            Inyo bo yen ?—What is this?
+            Ikoto inyo ?—What do you want?
+Iŋai ? (who?) has plural forms lukaŋai ? (masculine) and
+nukaŋai ? (feminine):
+            Iŋai ejeni ?—Who knows?
+            Lukaŋai bo lu ?—Who are these ?
+The interrogative adjective "whose"? is formed from Iŋai:
+            Ekitabo lokaŋai ?—Whose book?
+The forms:
+            Masculine       Feminine        Neuter
+Singular:   lonyoin         nanyoin         yeninyoin } which ?
+Plural:     lunyoika        nunyoika        lunyoika  } of what kind?
+
+may be used either as pronouns or as adjectives:
+e.g.  Eraas kesi ituŋa lunyoika ?—What sort of people are
+                                  they? (adjective)
+      Lonyoin itelekarit apolou ?—Which is the bigger ?
+
+Vocabulary:
+      aimony (ko)—to cry
+      ailoŋ (ki)—to bathe
+      aimat (ko)—to drink
+      elap (ilapio)—month, moon
+      noi—very, a great deal
+      moi—tomorrow
+
+Exercise:
+(i) He can beg him to come.
+(ii) That woman has a child which cries a lot.
+I.A.L.—4
+
+
+=== PDF PAGE 045 (p. 24) ===
+24                         ATESO LANGUAGE
+
+(iii) These people want to eat in that house.
+(iv) That boy who loves rats went home yesterday.
+(v) I have seen the moon.
+(vi) He wanted to bathe in the water.
+(vii) This man has beaten you severely.
+(viii) The soldiers whose belongings are in the house will see
+            us tomorrow.
+(ix) That is the man I saw.
+(x) He does not want you (plural) this month.
+
+
+=== PDF PAGE 046 (p. 25) ===
+CHAPTER VII
+
+POSSESSIVES
+
+29. Possessive adjectives:
+(i)   ka—my                     kosi or wok—our
+      kon—your (singular)                  kus—your (plural)
+      ke—his, her, its                     kec—their
+
+(ii) kosi is the possessive form of isio (see paragraph 24 (v)).
+     Wok is the possessive form of oni.
+
+e.g. A native will say to a stranger:
+         Akoto alosit obukosi—I want to go to our home (which
+                                       is not your home).
+     But to his brother he will say:
+         Akoto alosit obuwok—I want to go to our home (which
+                                      is your home too).
+
+(iii) The possessive adjectives do not change with gender of the
+possession or possessor.
+
+(iv) The possessive adjective is put either:
+     (a) immediately after the noun and joined to it, or
+     (b) immediately after the noun prefix and before the noun
+         itself.
+
+e.g.  akan (akanin)—hand
+            akanika—my hand ("shadow" vowel -i- inserted
+                                for euphony)
+            akaninika—my hands ("shadow" vowel -i- inserted
+                                for euphony)
+            akakan—my hand
+            akakanin—my hands
+      Both forms are equally common but wok usually follows
+the noun.
+
+
+=== PDF PAGE 047 (p. 26) ===
+26                         ATESO LANGUAGE
+
+(v) Note the use of the possessive adjective with the pre-
+position kanuka (for, on behalf of):
+      e.g.  kanuke—on his behalf
+            kanuwok—for us
+In speech the last syllable is slightly stressed.
+
+30. Possessive pronouns are formed by adding the possessive
+adjective forms to the relative pronoun:
+      e.g.  loka—mine (masculine)
+            nukec—theirs (feminine
+                          plural)
+      Mam erai etogokosi, erai lokec—It is not our house,
+                                      it is theirs.
+In speech the last syllable is slightly stressed.
+
+31. Possessive article:
+(i) This is formed by the relative pronoun with the ending
+-ka meaning "with":
+                  Masculine       Feminine        Neuter
+Singular:         loka            naka            yenika ("shadow" vowel
+                                                          -i- inserted for
+                                                          euphony)
+Plural:           luka            nuka            luka
+
+      e.g.  etogo loka aberu—the woman's house
+            akituk nuka Paulo—Paul's cows
+            ikoku yenika aberu—the woman's child
+
+This word must always agree in gender with the thing
+possessed.
+
+(ii) The word ka by itself can be used instead of the full form
+but the full form is better. Ka means "with" and ambiguity can
+result when it is used as a possessive.
+      Thus: ikoku ka toto properly means "child and mother"
+and not "child of mother"
+
+
+=== PDF PAGE 048 (p. 27) ===
+POSSESSIVES                         27
+
+Vocabulary:
+      akimait (akima)—stalk of millet (used collectively
+                                in the plural—millet)
+      eropit (iropito)—wage
+      ebarasit (ibaren)—head of cattle
+      aujo (aujoi)—cattle kraal
+      apak (apakio)—time, space
+      bobo—again
+      kere—all
+
+Exercise:
+      (i) He cannot carry their food this time.
+      (ii) That dog has eaten my hens again.
+      (iii) Whose are those cows which ate our millet? Theirs.
+      (iv) How many beds have the soldiers?
+      (v) This is the child of the woman who beat her husband
+            badly.
+      (vi) We all want our pay now.
+      (vii) Peter's cattle were in our kraal.
+      (viii) Whose books did he keep? Mine.
+      (ix) Where is the boy? He went to your home yesterday and
+            has not appeared today.
+      (x) Our beds are in the woman's house.
+
+
+=== PDF PAGE 049 (p. 28) ===
+CHAPTER VIII
+
+VERBS: INFINITIVE AND
+SUBJUNCTIVE/IMPERATIVE
+
+32. Formation of the infinitive: The infinitive is formed by
+adding the prefix ai- or a- (occasionally ei-) to the root of the
+verb. As a general rule simple roots of one syllable take ai-:
+      e.g.  ailip—to pray            aiduk—to build
+Verbs of more than one syllable in the root take a- as infinitive
+prefix in the ko class and ai- in the ki class:
+e.g.        amoun—to look for        adukokin—to build for someone
+            aimurokin—to forget      aidareun—to wait for
+There are, however, a number of simple one syllable roots
+which take the prefix a-:
+      e.g.  amin—to love             amej—to hunt
+Some verbs add the prefix to the perfect (-it) tense instead of
+to the root:
+      e.g.  alosit—to go             akerit—to run, to fear
+The infinitive form of all verbs is given in the vocabularies.
+
+33. Uses of the infinitive:
+(i) As in English the infinitive is used after certain verbs,
+particularly verbs expressing ability or desire, to explain or to
+amplify the meaning of the verb:
+      e.g.  Akoto ainyam—I want to eat
+            Elosi ainyam—He is going to eat
+(ii) It may be used after another verb to indicate purpose:
+      e.g.  Alosi eoŋ oduka agwel amunyu
+            I am going to the shop to buy salt
+(iii) The infinitive form of a verb may be used after the same
+verb for emphasis:
+      e.g.  Kolot alosit—Just go
+(iv) The infinitive may be used as a noun:
+      e.g.  Ejok ainyam—Eating is good
+
+
+=== PDF PAGE 050 (p. 29) ===
+VERBS: INFINITIVE AND SUBJUNCTIVE/IMPERATIVE         29
+
+(v) The infinitive may be used to express an action just com-
+pleted now or in the past:
+      e.g.  Aanyun napena—(He) has just seen it
+            Aanyun ŋipeŋin—(He) had just seen it
+This use is not confined to one person. The above example
+could mean "you have just seen it" or "we have just seen it",
+according to the context.
+
+34. Formation of the subjunctive/imperative: The sub-
+junctive/imperative personal prefixes are: ka, in the first person
+singular and plural and ko in all other persons in ko class
+verbs. In ki class verbs they are ke in the first person singular
+and plural and ki in all other persons.
+      The tense is formed by prefixing the above prefixes to the
+root of the verb in the singular persons and to the root with
+the suffix -oto or -ata in the plural persons. -Oto follows roots
+with "close" vowels, and -ata follows roots with "open" vowels
+and -a-; -oto and -ata are frequently abbreviated to o and a.
+Note that the first person plural, unlike most indicative tenses
+in Ateso, has the plural suffixes.
+      The subjunctive/imperative is therefore as follows:
+                  AIDUK (ko)—to build
+            kaduk—that I may build
+            koduk—that you may build
+            koduk—that he may build
+            kadukoto—that we may build
+            kodukoto—that you may build
+            kodukoto—that they may build
+
+                  AILIP (ki)—to pray
+            kelip—that I may pray
+            kilip—that you may pray
+            kilip—that he may pray
+            kelipata—that we may pray
+            kilipata—that you may pray
+            kilipata—that they may pray
+
+
+=== PDF PAGE 051 (p. 30) ===
+30                         ATESO LANGUAGE
+
+35. Uses of the subjunctive/imperative:
+(i) As already noted in paragraph 18 above, the tense provides
+the form used in the past (abu) tense.
+      E.g. Abu nesi koduk etogo—He built a house
+(ii) It provides the imperative forms:
+      Kolot nesi!—Let him go! (He must go!)
+      Kilipata!—Pray!
+      Kopup!—Listen!
+(iii) It expresses purpose:
+      Alosi eoŋ oduka kagwel amunyu
+      I am going to the shop to buy salt
+It will be seen from the example in paragraph 33 above that the
+same idea of purpose can be expressed by the infinitive.
+(iv) It expresses a wish when used with the verb akot:
+      Akoto nes kobu—I want him to come.
+The same sense can be supplied by using the infinitive:
+      Akoto nes abunere.
+
+36. Negative imperative: Prohibition (i.e. a negative im-
+perative) can be expressed in two ways:
+(i) By adding the prefix siriki- in front of the root of the
+verb; in the plural the subjunctive/imperative suffix is also
+added:
+      e.g.  Kolot!—Go!            Sirikilot!—Do not go!
+            Kodukoto—Build!       Sirikidukoto!—Do not build!
+(ii) By using the verb ainyekin (ki)—to stop:
+      e.g.  Kinyek alosit!—Do not go!
+            Kinyekis aiduk!—Do not build!
+
+Vocabulary:
+      aidareun (ki)—to wait for
+      aibok (ko)—to dig
+      aipany (aipanya)—hole
+      eebo—yes
+      napena—just now
+
+=== PDF PAGE 052 (p. 31) ===
+VERBS: INFINITIVE AND SUBJUNCTIVE/IMPERATIVE         31
+
+Exercise:
+      (i) Do not wait for him. He is not coming.
+      (ii) Is he here? Yes, he has just come.
+      (iii) I want him to dig a hole quickly.
+      (iv) He must come.
+      (v) I must go now.
+      (vi) You (plural) can help me. Carry these beds for the
+            soldiers.
+      (vii) The woman wants you to look after the things.
+      (viii) They must not eat meat this month.
+      (ix) I cannot ask him because he has just gone.
+      (x) Do not drink milk.
+
+
+=== PDF PAGE 053 (p. 32) ===
+CHAPTER IX
+
+QUALITY VERBS
+
+37. Definition of quality verbs: Some verbs express a quality
+and not an action: e.g. "to be wide", "to be strong". In English
+this idea of quality is expressed by means of an adjective and the
+verb "to be", but in Ateso there are separate verbs to express it.
+These verbs are termed quality verbs. Like the continuous verbs
+(paragraph 15) the quality verbs are conjugated differently from
+ordinary verbs; personal prefixes are the same but the endings
+vary.*
+
+38. Three classes of quality verbs—present tense: There
+are three classes of quality verbs which differ from each other in
+the formation of their plural suffixes.
+  Class I: no suffixes in the plural persons. This class mainly
+    contains verbs formed by reduplication of the root: e.g.
+    egogoŋ (egoŋgoŋ), ededeŋ (edeŋdeŋ).
+  Class II: the suffix -ak (or -ok) or -iak (-iok) is added in
+    all three plural persons. (In the example quoted below the
+    t of the stem is also changed to s.)
+  Class III: all verbs ending in -na (or -no) are in this class.
+    The -na (or -no) is changed to -ka (or -ko) in all three
+    plural persons. Many of the verbs in this class are derived
+    from other verbs or occasionally from nouns:
+    e.g.    einer—to say            inerana—he is talkative
+            akoko—to steal          ekokolana—he is thievish
+            asuliany—luck           isulianyana—he is lucky
+  It should be noted that in class II and III the first person
+plural, unlike other verbs in the present indicative tense, has the
+same suffixes as the second and third persons plural.
+
+* This group of verbs is termed "verbs of state" in the Maasai
+Grammar.
+
+
+=== PDF PAGE 054 (p. 33) ===
+QUALITY VERBS                                        33
+
+There is no convenient rule to enable any one quality verb to
+be placed in its appropriate class. The plural form will therefore
+be shown in brackets in the vocabularies.
+  Examples of the three classes are:
+        I.  adedeŋ—I am fierce
+            idedeŋ—you are fierce
+            ededeŋ—he is fierce
+            kidedeŋ—we are fierce
+            idedeŋ—you are fierce
+            ededeŋ—they are fierce
+
+        II. adit—I am small
+            idit—you are small
+            edit—   etc.
+            kidisiak—
+            idisiak—
+            edisiak—
+
+        III. eriono—I am black
+            iriono—you are black
+            iriono—   etc.
+            kirioko—
+            irioko—
+            irioko—
+
+  It will be seen from the above examples that quality verbs may
+belong to the ko or to the ki class.
+
+39. Other moods and tenses:
+  (i) Since quality verbs express a continuing quality the past
+tense used is the a- or e- tense.
+  (ii) The subjunctive/imperative is formed by prefixing the
+usual personal prefixes of the subjunctive/imperative to the root:
+        e.g. kojok nesi—it must be good
+(It is, however, usual in some cases to use the derived forms
+of quality verbs in the subjunctive/imperative. These forms will
+be explained in Chapter XIV.)
+        e.g. kojokunar—be good
+
+
+=== PDF PAGE 055 (p. 34) ===
+34                                   ATESO LANGUAGE
+
+  (iii) The infinitive of quality verbs very often does not exist
+and for that reason the third person singular will be the form
+given in the vocabularies. The third person plural will be shown
+in brackets. The personal prefixes, e- and i-, will indicate
+whether the verb belongs to the ko or to the ki class.
+
+Vocabulary:
+      ejok (ejokak)—be good
+      edit (edisiak)—be small
+      ededeŋ (ededeŋ)—be severe
+      egogoŋ (egogoŋ)—be strong
+      itet (itetiak)—be new
+      ebaŋaana (ebaŋaaka)—be stupid
+      erono (eroko)—be bad
+      epatana (epataka)—be easy
+      etiono (etioko)—be difficult
+      adumun (ko)—to get
+      aisisia (ki)—to learn
+      epakasit (ipakasin)—porter, labourer
+      emojoŋ*—be old
+
+Exercise:
+      (i) Ateso is easy to learn.
+      (ii) The porters are old and foolish and cannot carry the
+            things.
+      (iii) You are a good man; please help me.
+      (iv) It is wicked to drink beer now.
+      (v) His is a permanent (strong) house.
+      (vi) You are stupid; I shall beat you (plural).
+      (vii) The books he wanted to get were new ones.
+      (viii) They have not understood what I am saying; they are
+            very naughty.
+      (ix) It is not difficult to get rats for our dogs.
+      (x) The girls were good yesterday.
+
+      * No plural: use perfect (-it) tense: emojoŋitos.
+
+
+=== PDF PAGE 056 (p. 35) ===
+CHAPTER X
+
+ADJECTIVES
+
+40. Invariable adjectives: There are few true adjectives, that
+is, words existing solely as adjectives, in Ateso. Those which do
+exist usually agree with the noun they qualify in gender and
+number by appropriate changes in prefix or suffix. The adjective
+kere (whole, all) is, however, invariable and can be used with
+masculine, feminine or neuter nouns, both singular and plural:
+      ituŋa kere—all men
+      etogo kere—the whole house
+Some other true adjectives are occasionally used in an invari-
+able form; see paragraph 41 (v).
+
+41. Variable adjectives: Some adjectives vary according to
+number and gender. The commonest are:
+  (i) idis—adis—idis (few); e.g. akiro adis
+  (ii) ŋol —ŋin —ŋin (every); e.g. ŋolituan (-i- inserted
+                                      for euphony)
+(The latter are the same forms as those of the demonstrative
+adjectives but always precede the noun when used in this sense.
+The noun prefix of the noun is always dropped and adjective and
+noun are written as one word.)
+  e.g. aberu ŋin—that woman; ŋiniberu—every woman
+                                      (-i- inserted for euphony)
+  (iii) ece—ace—ice (other, some); e.g. icetuŋa—some men.
+(This adjective is written as part of the noun and usually, but
+not always, precedes it. The noun prefix is dropped when the
+adjective precedes.)
+  (iv) edio—adio—idio (some, other, any); e.g. emamei
+ediotuan ?—is there not anyone?
+(This adjective also is written as part of the noun and always
+
+
+=== PDF PAGE 057 (p. 36) ===
+36                                   ATESO LANGUAGE
+
+precedes it. The noun prefix is dropped. It is used in the singular
+only.)
+  (v) bon—bonik (alone); e.g. isio bonik—only we.
+(Note that this adjective changes according to the noun's
+number but not according to its gender, although there is a
+modern tendency for this adjective to become invariable.)
+  e.g. aŋor bonik—women only; ikiliok bonik—men only.
+  (vi) elope, alope, ilope (singular)
+        ikulepek, akulepek, ikulepek (plural) (self, entire);
+        e.g. ituŋa ikulepek—the men themselves;
+              ibore ilope—the entire thing.
+(Like the equivalent Swahili mwenye the word can denote
+ownership, e.g. elope etogo—the house owner.)
+
+42. Adjectives formed from verbs: The lack of true adjec-
+tives is overcome by using quality verbs:
+      e.g.        epol emoŋ—the ox is big
+            akoto emoŋ loepol—I want a big ox (an ox which
+                                    is big)
+            koyau akipi nuikidioko—bring a little water
+
+43. Adjectives formed from nouns: Where a quality verb
+does not exist, the gap is filled by using a relative pronoun and
+a noun:
+      e.g. ekitoi loberu—female tree (tree which is a woman)
+            idwe lukiliok—male children (children who are males)
+or by using a possessive particle and a noun:
+      e.g. etuŋanan loka acoa—a wise man (a man of wisdom)
+
+44. Ka and kanuka: When a noun which is qualified by an
+adjective is preceded by the particle ka (and, with) or by the
+preposition kanuka (on behalf of), the ka must be repeated with
+the adjective:
+      e.g. Kanuka etuŋanan kaloejok—on behalf of a good man.
+
+
+=== PDF PAGE 058 (p. 37) ===
+ADJECTIVES                                           37
+
+Vocabulary:
+      elal (elalak)—be wide
+      ekalanyana (ekalanyaka)—be idle
+      aswam (ki)—to work
+      aiswama (ki)—to work
+      aswam (aswamisinei)—work
+      esamai (isama)—swamp
+      emaido (singular only)—groundnuts
+      ajon (plural only)—beer
+      imiot (imioi)—chicken
+      nepepe ka—with
+
+Exercise:
+      (i) Bring (singular) plenty of water for my large dog. There
+            is only a little.
+      (ii) It is only a few people who can drink a lot of beer.
+      (iii) The women themselves wanted to cultivate only ground-
+            nuts.
+      (iv) He has some very beautiful female chickens.
+      (v) The swamp is very wide. All the soldiers cannot go to
+            Soroti.
+      (vi) The old man told the lazy boys to work in the plots.
+      (vii) Who knows all the names? That wicked man.
+      (viii) I have seen that wise woman with that fierce man.
+      (ix) Let us build a new house; this one is too small.
+      (x) I did all this work by myself.
+
+
+=== PDF PAGE 059 (p. 38) ===
+CHAPTER XI
+
+NUMERALS
+
+45. Cardinal numbers:
+  (i) The numbers from one to five are the basis of the whole
+numerical system in Ateso. Six is "five and one", seven is "five
+and two", etc.
+  (ii) Numerals agree in gender with the noun they define:
+        e.g. imoŋin iuni—three bulls
+              akituk auni—three cows
+  (iii) Numerals always follow the noun. Ediope (one) may,
+however, precede, in which case the noun prefix is dropped.
+        e.g. adiopeberu—one woman
+              aŋor aarei—two women
+  (iv)
+        adiope—1                   atomon kanadiope—11
+        aarei—2                    atomon kanuarei—12
+        auni—3                     atomon kanuuni—13
+        aoŋon—4                    atomon kanuoŋon—14
+        akany—5                    atomon kanukany—15
+        akany kape—6               atomon kanukany kape—16
+        akany kaarei—7             atomon kanukany kaarei—17
+        akany kauni—8              atomon kanukany kauni—18
+        akany kaoŋon—9             atomon kanukany kaoŋon—19
+        atomon—10
+
+The feminine form is given above. In the case of masculine
+nouns nu will become lu and atomon, itomon, etc.
+        e.g. imoŋin itomon kalukany kape—sixteen bulls
+              itelepai itomon kalodiope—eleven boys
+  (v) Numerals above 19 are formed by use of the words akais
+(literally—houses); akwatat (hundred) and arita (thousand):
+        akais aarei—20
+        akais aarei kanadiope—21
+
+
+=== PDF PAGE 060 (p. 39) ===
+NUMERALS                                             39
+
+        akais aarei kanuarei—22
+        akais aarei kanuuni—23
+        akais aarei kanukany kape—26
+        akais auni—30
+        akais akany kape—60
+        akais akany kaoŋon—90
+        akais akany kaoŋon kanukany kaoŋon—99
+        akwatat—100
+        akwat aarei—200
+        arita akany—5,000
+The Luganda word elukumit is often used for 1,000:
+        e.g. elukumit ediope—1,000
+              ilukumin ikany—5,000
+  (vi) Akais, akwatat and arita are feminine nouns and
+elukumit is masculine. The numerals defining them must agree
+with them regardless of the gender of the noun which the
+numeral qualifies:
+        e.g.  ituŋa akwat auni—300 men
+              akituk ilukumin iarei—2,000 cows
+But in compound numbers any unit of five or under is made
+to agree with the noun:
+        e.g. ituŋa akwat auni ka akais aarei kalukany—325 men
+
+46. Ordinal numbers:
+  (i) Ordinal numbers are formed from cardinal numbers by
+prefixing the relative forms lok-, nak- or yenik-, as appropriate,
+to the masculine form of the numeral and by adding -et after
+the numeral:
+        e.g.  akany—five          nakikanyet—fifth (feminine)
+                                                        singular
+              auni—three          lokiuniet—third (masculine)
+                                                        singular
+The majority of Iteso do not pronounce the k in speech
+        e.g. lokiuniet is pronounced loiuniet
+
+I.A.L.—5
+
+=== PDF PAGE 061 (p. 40) ===
+40                         ATESO LANGUAGE
+
+  (ii) In the case of numbers over five, only the first numeral
+takes the relative and suffix -et:
+      e.g.  lokikanyet kauni—the eighth (masculine)
+            nakitomonet kaarei—the twelfth (feminine)
+  Masculine singular forms are given:
+            losodit—first
+            lokiareit—second
+            lokiuniet—third
+            lokioŋonet or lokiwoŋonet—fourth
+            lokikanyet—fifth
+            lokikanyet kape—sixth
+            lokikanyet kaarei—seventh
+            lokikanyet kauni—eighth
+            lokitomonet—tenth
+            lokitomonet kalodiope—eleventh
+            lokitomonet kalukany—fifteenth
+            lokitomonet kalukany kaoŋon—nineteenth
+  (iii) To form ordinal numbers above twenty the relative is
+prefixed but no -et is added:
+      e.g.  lokakais aarei—twentieth
+            lokakais auni kaluuni—thirty-third
+            lokakwat aoŋon kakais akany—four hundred and
+                                                        fiftieth
+
+47. Multiplication: Multiplication is expressed by use of the
+word irwan (times) with numerals in the feminine form:
+      e.g.  irwan akany—five times
+            aarei irwan akany imwaas atomon—two times five
+                                                        are ten
+            irwan atipet—once
+
+48. Dates and time: Days of the week are reckoned from
+Monday which is the first day. Thus Wednesday is the third
+day—aparan nakiuniet and Friday is nakikanyet. Sunday is
+translated by the word Sabiti—aparan naka Sabiti. Dates are
+
+
+=== PDF PAGE 062 (p. 41) ===
+NUMERALS                                              41
+
+usually rendered by the phrase eraas aparasia . . . followed
+by the numeral in its cardinal form. Eraas aparasia atomon
+kanukany—on the fifteenth.
+  Time is reckoned, as in Swahili, from sunrise to sunset (6 a.m.
+to 6 p.m.). Thus ten o'clock is the fourth hour—isawan ioŋon.
+  e.g. Isawan ioŋon ka adakikan akais auni kanukany—
+          Twenty-five minutes to eleven. (Literally: Four hours
+          and thirty-five minutes.)
+
+Vocabulary:
+            esawa (isawan)—hour, clock
+            adakika (adakikan)—minute
+            aparit or aparan (aparasia)—day
+            papa (singular only)—father
+            konye—but
+
+Exercise:
+    (i) What is the total number of soldiers? 126.
+    (ii) What time is it now? Ten minutes past nine.
+   (iii) He went home on the eighth of September (ninth
+         month).
+    (iv) You may go now, but we want to see you again at twenty
+         to seven.
+    (v) The first dog is quiet (easy), but the second is very
+         savage.
+    (vi) There are 400,393 people in Teso.
+   (vii) Five sevens are thirty-five.
+  (viii) The 24th boy's name is Peter.
+    (ix) My father has 832 bulls.
+     (x) Come on the first day of next (coming) month at a
+         quarter past nine.
+
+
+=== PDF PAGE 063 (p. 42) ===
+CHAPTER XII
+
+CONDITIONAL SENTENCES
+
+49. Types of conditional sentences: In the sentence "If you
+go, I shall accompany you" there are two parts; the first part
+is the conditional or "if" clause, posing the condition, and the
+second is the consequent clause, resulting from the condition.
+The condition in this example is simple and capable of fulfilment.
+There is a second type of conditional sentence in which the
+condition is incapable of fulfilment or unlikely to be fulfilled.
+"If you were to go, I would accompany you" implies that you
+are unlikely to go and that it is therefore unlikely or impossible
+that I shall accompany you.
+
+50. Simple conditional sentences: Ateso, like English, uses
+indicative tenses for simple conditional sentences:
+      e.g.  Arai ilosi ijo, abuni aupar ka ijo
+            If you go, I shall accompany you
+            Arai kibwaiki amunyu toma akipi, esubi bala
+              emameun
+            If we put salt in water, it looks as though it vanishes
+
+51. Unfulfilled conditions: A special form of the verb is used
+in this type of sentence. The personal prefixes in both the
+conditional and the consequent clauses are those of the indicative
+with the addition of k: ka-, ki-, ke-, ki-, ki-, and ke- in
+ko class verbs and ke-, ki-, ki-, ki-, ki- and ki- in ki class
+verbs.
+  The verb in the conditional clause, though it has these condi-
+tional personal prefixes, may have the endings of the present,
+past or perfect tenses. The verb in the consequent clause is,
+
+
+=== PDF PAGE 064 (p. 43) ===
+CONDITIONAL SENTENCES                                 43
+
+however, invariable in form. It is formed by prefixing the
+conditional personal prefixes to the root of the verb in the singular
+persons and first person plural, and to the root plus the suffix
+-oto or -ata in the remaining two persons. The particle ti is
+used with the verb in the consequent clause.
+  The full form of the conditional verb in the consequent
+clause is therefore as follows:
+        AIDUK (ko)—to build                 AILIP (ki)—to pray
+ti . . . kaduk—I would have          ti . . . kelip—I would have
+                  built                                prayed
+         kiduk—you would have                 kilip—you would have
+                  built, etc.                          prayed, etc.
+         keduk—                               kilip—
+         kiduk—                               kilip—
+         kiduko(to)—                          kilipa(ta)—
+         keduko(to)—                          kilipa(ta)—
+
+e.g.  Arai kalot eoŋ moi, ti kadum apesan
+      If I were to go tomorrow, I would get the money
+      Arai kebunit, ti kiduk
+      If he had come, we would have built
+      Arai kigirit ijo, ti eoŋ kereŋia ijo
+      If you had refused, I would have dismissed you
+      Arai kelosit nesi otaun, ti ijo kireŋia nes
+      If he had gone to town, you would have dismissed him
+
+  Note the position of the subject of the verb in the consequent
+clause. It follows the particle ti and precedes the verb.
+
+52. "Should", "ought", etc.: The particle ti can be used
+with indicative tenses and without an antecedent clause to express
+the idea of "should" or "ought":
+e.g.    Ti ijo ikonit kwaŋin—You should have acted thus
+        Ti mam ekonit kwaŋin—I ought not to have acted thus
+        Ti mam abunit—I should not have come
+
+
+=== PDF PAGE 065 (p. 44) ===
+44                         ATESO LANGUAGE
+
+Vocabulary:
+            adaun (ko)—to finish, to suffice
+            atamakin (ko)—to try
+            ailot (ki)—to wash
+            toto (singular only)—mother
+            ecupa (icupai)—bottle
+            egoye (igoyen)—article of clothing
+            asabuni (singular only)—soap
+            lolo—today
+            tupuruc—in the morning, early
+
+Exercise:
+    (i) If I had gone yesterday, I would have been able to help
+        my mother.
+   (ii) I would have brought the oil today, if I had had a bottle.
+  (iii) If you drink a lot of beer, you will not be able to go
+        home today.
+   (iv) I would have washed my clothes, if I had had some soap.
+    (v) If you were to help me today, we could finish my house.
+   (vi) On Saturday you should all have gone to drink beer.
+  (vii) You would have been able to work, if you had tried to
+        learn.
+ (viii) If they were here early, they did not wait.
+   (ix) We should have come yesterday to greet you.
+    (x) The soldiers would have carried the things if I had told
+        them to.
+
+
+=== PDF PAGE 066 (p. 45) ===
+CHAPTER XIII
+
+VERBS: HABITUAL AND "NOT YET"
+TENSES
+
+53. Use of habitual tense: In English the words "The Iteso
+wear clothes" may mean "They are wearing clothes" or "They
+habitually wear clothes". This difference in meaning can in
+Ateso be expressed by a different tense, the habitual tense. This
+tense is used to denote the habit or custom of a person or people.
+
+54. Formation of the habitual tense: The habitual tense is
+formed by adding the ending -oi to the perfect (-it) tense in the
+singular and 1st person plural and the ending -s in the 2nd
+and 3rd persons plural:
+      e.g.  AILIP (ki)—to pray, to beg
+            elipitoi—I am in the habit of begging
+            ilipitoi—you are in the habit of begging
+            ilipitoi—he is in the habit of begging
+            kilipitoi—we are in the habit of begging
+            ilipitos—you are in the habit of begging
+            ilipitos—they are in the habit of begging
+  This tense is commonly used only with repetitive verbs (see
+Appendix I) in both ko and ki classes; its use with simple verbs
+is extremely limited. Verbs in the habitual tense rarely take an
+object.
+
+55. "Not yet": The Ateso words eriŋa and eroko mean
+"not yet" or "still". When used to mean "still" they are followed
+by the indicative tenses:
+            eroko edou etepi—it is still raining
+            eriŋa ejai ne—he is still here
+
+
+=== PDF PAGE 067 (p. 46) ===
+46                         ATESO LANGUAGE
+
+When used to mean "not yet" they are followed by a special
+tense.
+
+56. Formation of "not yet" tense: The "not yet" tense is
+formed by adding the prefix ke- in ko class verbs and ki- in ki
+class verbs to the root, and by adding the suffix -o after roots in
+close vowels and -a after roots in open vowels or a.
+        AIDUK (ko)—to build                 AILIP (ki)—to pray
+        keduko—not yet built                kilipa—not yet prayed
+(The initial k is often dropped.)
+        eroko kebuno—he has not yet come
+        eriŋa isio keloto—we have not yet gone
+Mam is occasionally used with the "not yet" tense:
+      e.g.  mam ebuno—he has not yet come
+  But if the particle ber is used with mam the indicative tenses
+must be used:
+      e.g.  mam ber ebunit—he has not yet come
+
+57. Use of the "not yet" tense: The "not yet" tense is used
+to translate "before" in such phrases as "he died before he had
+finished his book":
+      e.g.  Eriŋa nesi keduko etogo . . .
+            Before he built the house . . .
+            Eroko nesi kebuno . . .
+            Before coming he . . .
+  The time expressed by the "not yet" tense depends on the
+main clause:
+      e.g.  Abu eoŋ kadau ainyam eroko Petero kebuno
+            I had finished eating before Peter came
+            Adauni eoŋ ainyam eriŋa Petero kebuno
+            I will have finished eating before Peter comes
+  Note: In Appendix I, Part 2, the uses of the "dependent per-
+fect" or "when" tense are described. The "when" tense is used
+to translate "after" in the same way as the "not yet" tense is used
+
+
+=== PDF PAGE 068 (p. 47) ===
+VERBS: HABITUAL AND "NOT YET" TENSES                  47
+
+to translate "before". As with the "not yet" tense the time ex-
+pressed by the "when" tense depends on the main clause:
+e.g.  Alosi Solot kaboŋu komanikor
+      I shall go to Soroti after I come back from the garden
+      Abu kalot Solot kaboŋu komanikor
+      I went to Soroti after I came back from the garden
+
+Vocabulary:
+            aiŋit (ki)—to ask
+            anyaraun (ko)—to call
+            alimokin (ko)—to tell
+            aiirar (ki)—to hear
+            ainap (ko)—to wear, to cover
+            awaragan (awaragasia)—story
+            emukule (imukulen)—hide, skin
+            naarai—because
+
+Exercise:
+    (i) I had finished washing my clothes before you called me.
+   (ii) Had you told him before he asked you?
+  (iii) That woman who brings our milk has not yet appeared.
+   (iv) The boy who went to Soroti has not yet brought the food.
+    (v) I have not yet heard the story your father told you.
+   (vi) The boy you called is still digging a hole.
+  (vii) The Karamojong (Ilok) still wear skins.
+ (viii) I do not like this man because he is begging every day.
+   (ix) Bring the millet here. We have not eaten yet.
+    (x) The soldier has not yet told us to go.
+
+
+=== PDF PAGE 069 (p. 48) ===
+CHAPTER XIV
+
+VERBS: DERIVED VERBS
+
+58. Use of derived verbs: In English the idea of action to,
+for, away from, etc. is expressed by means of prepositions:
+      "We go to school."           "Put it on the table."
+      "Do it for me."              "Take it away."
+  Ateso expresses these ideas by altering the form of the verb
+itself. This book deals only with four types of derived verbs:
+other types will be listed in Appendix I.
+
+59. Formation of derived verbs: This alteration consists of
+adding one of three suffixes, -un, -ar (-or) and -akin (-okin),
+to the root, thereby forming a new verb which can be conjugated
+throughout. These three forms will be termed "motion towards",
+"motion away" and "action for":
+      e.g.  aicak (ko)—to throw
+            acakun (ko)—to throw (towards the speaker)
+            acakar (ko)—to throw (out or away from the speaker)
+            acakakin (ko)—to throw (for the speaker)
+  Note that although the infinitive in the root verb has the prefix
+ai-, the infinitive prefix in the derived verbs is a- in accordance
+with the rule given in paragraph 32.
+  (i) "Motion towards" verbs: (a) The suffix -un shows that
+the action of the verb is directed towards the speaker:
+      e.g.  alomun (to come in) when the speaker himself is in the
+            room.
+  (b) -un occasionally indicates the acquisition of a quality of
+benefit to the speaker:
+      e.g.  aŋale—to be healthy
+            aŋaleun—to become healthy
+            ejok—he is good
+            ejokun—he becomes good (to our benefit)
+
+
+=== PDF PAGE 070 (p. 49) ===
+VERBS: DERIVED VERBS                                  49
+
+  (ii) "Motion away" verbs: (a) The suffix -ar (or -or after
+"close" vowel roots) shows that the action is directed away from
+the speaker:
+  e.g. alomar—to go out, when the speaker is in the room.
+       abukor—to pour away
+  (b) -ar also indicates the acquisition of a quality of no direct
+benefit to the speaker:
+  e.g.      ejok—he is good.
+            ejokiar—he becomes good (but no benefit to us).
+  (iii) "Action for" verbs: (a) The suffix -akin (or -okin after
+"close" vowel roots) shows that the action is done for someone:
+  e.g. aiwadikakin—to write for someone, or to someone
+       adukokin—to build for someone (hence: to marry)
+  When a vowel precedes, the prepositional ending -akin or
+-okin usually becomes -ikin:
+                    e.g. ajaikin—to be at
+  (b) This form also expresses place on something, or movement
+on to something:
+            e.g. acakakin—throw down (on the ground)
+  (iv) Causative verbs: There is a fourth type of derived verb
+known as "causative". This derived verb expresses the idea of
+causing the action of the verb. E.g. "to heal" gives a causative
+form "to cause to heal" and hence "to cure". Causative verbs
+are formed by adding a syllable immediately in front of the root.
+  The syllable so added is ta, te, ti, to or tu, the vowel corres-
+ponding to the vowel of the root of the verb.
+E.g.  aiduk (ko)—to build        aituduk (ki)—to cause to build
+      ailel (ko)—to be glad      aitelel (ki)—to gladden
+      ainyam (ko)—to eat         aitanyam (ki)—to feed
+  It should be noted that causative verbs formed in this way
+always belong to the ki class, whatever the class of the root verb.
+  Roots beginning with k and some other verbs have si instead
+of ta, te, ti, etc.
+      aikam (ki)—to catch        aisikam (ki)—to observe
+                                                  (to cause to catch)
+      aimik (ki)—to refuse       aisimik (ki)—to prohibit
+
+=== PDF PAGE 071 (p. 50) ===
+50                    ATESO LANGUAGE
+
+  In roots containing w, the w is moved to a position inside the
+causative syllable:
+    e.g.  aswam (ki)—to work      aitwasam (ki)—to cause to
+                                                  work, use
+          agwel (ko)—to buy       aitwegel (ki)—to cause to
+                                                  buy, sell
+
+  Derived verbs as well as simple verbs can have causative forms:
+    e.g.  aikam (ki)—to catch     aisikam (ki)—to cause to catch
+          aikamun (ki)—to catch   aisikamun (ki)—to cause to catch
+                       (for oneself)                (for oneself)
+
+60. Conjugation of derived verbs: With the exception of the
+subjunctive/imperative form, which supplies the past (abu)
+tense, the conjugation of derived verbs is regular. Many derived
+verbs have already been introduced in the vocabularies and used
+in the exercises.
+  The subjunctive/imperative is formed as follows:
+  (a) "Action towards" verbs in -un drop the final -n in the
+singular; in the plural -n is also dropped but -tu added.
+  (b) "Action away" verbs in -or or -ar drop the final -r in the
+singular; in the plural the -r is also dropped but -s is added.
+  (c) "Action for" verbs in -akin or -okin drop the final -in
+in the singular; in the plural the -in is also dropped but -is
+is added.
+  The full subjunctive/imperative is therefore as follows:
+        ABOŊUN          ABOŊOR          ABOŊOKIN
+        kaboŋu          kaboŋo          kaboŋok
+        koboŋu          koboŋo          koboŋok
+        koboŋu          koboŋo          koboŋok
+        kaboŋutu        kaboŋos         kaboŋokis
+        koboŋutu        koboŋos         koboŋokis
+        koboŋutu        koboŋos         koboŋokis
+
+Vocabulary:
+        aibuk (ko)—to pour
+        aiwadik (ki)—to write
+
+
+=== PDF PAGE 072 (p. 51) ===
+VERBS: DERIVED VERBS                    51
+
+        aijen (ko)—to know
+        aŋale (ko)—to be healthy
+        agwel (ko)—to buy
+        aitep (ko)—to rain
+        adisiar (ko)—to grow less
+        -lim (ko)*—tell
+        -lom (ko)*—go
+        -tod (ki)*—show
+        -boŋ (ko)*—return
+  akiriŋ (singular only)—meat
+        edou (idouon)—rain cloud, rain
+        ebe—that (as in the sentence: "We
+                 know that it will rain")
+
+Exercise:
+      (i) To pour away; to return here; to go out; to become
+          healthy; to return there; to tell someone; to come in;
+          to become big.
+     (ii) To heal; to use (to cause to do); to dress; to sell; to
+          lessen; to increase.
+    (iii) Bring (plural) some milk quickly.
+     (iv) He wants this girl to get him some meat.
+      (v) You liked all the stories which my father told you.
+     (vi) Do not (plural) go out. It is still raining.
+    (vii) Come here and let me tell you a story.
+   (viii) He knew his father was getting better.
+     (ix) We showed them our house and they showed us theirs.
+      (x) If you work for me for three days, you can use my things.
+
+  * Rarely used in simple root form.
+
+
+=== PDF PAGE 073 (p. 52) ===
+CHAPTER XV
+
+VERBS: REFLEXIVE AND RECIPROCAL FORMS*
+
+61. Use of the reflexive form: (i) The term reflexive means
+that the action of the verb is reflected back to its subject. E.g.
+"He killed himself." "We love ourselves." English uses reflexive
+pronouns to convey this meaning. Ateso also uses reflexive pro-
+nouns, though not always; but in Ateso the form of the verb
+must also be changed.
+  (ii) The reflexive form is often preferred to the passive form
+where possible:
+    e.g.  aŋaaros akonyekec—their eyes were opened
+              (literally: their eyes opened themselves)
+          alemaros apapulai—the papers were loosened
+              (literally: the papers have taken themselves away)
+          edaunos inyamat—the food is (almost) finished
+              (literally: the food is finishing itself)
+
+62. Formation of the reflexive—present tense: (i) Verbs
+consisting of simple roots add the suffix -o or -a in the singular
+and first person plural and -os or -as in the second and third
+person plural according to the usual rule. Personal prefixes are
+regular:
+        AISUB (ko)—to make          AINOM (ki)—to beat
+        asuba—I make myself         enoma—I beat myself
+        isuba—you make yourself     inoma—you beat yourself
+        esuba—he makes himself      inoma—we beat ourselves
+        kisuba—we make ourselves    kinoma—we beat ourselves
+        isubas—you make yourselves  inomas—you beat yourselves
+        esubas—they make themselves inomas—they beat themselves
+
+  * See remarks in Preface to the Second Edition.
+
+
+=== PDF PAGE 074 (p. 53) ===
+VERBS: REFLEXIVE AND RECIPROCAL FORMS         53
+
+  Note: Although these forms exist, they are very rarely found
+except in the third persons.
+  (ii) Derived verbs ending with the suffixes -un, -ar (-or),
+-akin (-okin) have no additional suffix in the singular and first
+person plural but add -os or -as in the second and third person
+plural:
+        ALEMAR (ko)—to take out
+        alemar—I take myself out
+        ilemar—you take yourself out
+        elemar—he takes himself out
+        kilemar—we take ourselves out
+        ilemaros—you take yourselves out
+        elemaros—they take themselves out
+
+        AITEMOKIN (ki)—to prepare
+        etemokin—I prepare myself
+        itemokin—you prepare yourself
+        itemokin—he prepares himself
+        kitemokin—we prepare ourselves
+        itemokinos—you prepare yourselves
+        itemokinos—they prepare themselves
+
+  In all reflexive forms the pitch of the final syllable is raised.
+
+63. Reflexive pronouns: There are two reflexive pronouns:
+bon (plural bonik) and elope (plural ikulepek). Either one
+or both can be used; but they are often omitted because the
+special form of the reflexive indicates the reflexive meaning:
+    e.g.  Petero earakin elope bon—Peter will kill himself
+          earakinos ituŋa lu bonik—these people will kill
+                                       themselves
+  (In these examples the form of the verbs would indicate the
+reflexive nature without the use of the reflexive pronouns.)
+
+
+=== PDF PAGE 075 (p. 54) ===
+54                    ATESO LANGUAGE
+
+64. Formation of reflexive—other moods and tenses:
+(i) Subjunctive/imperative: Prefixes are the same as in the act-
+ive. Endings are the same as in the present reflexive except that,
+as in the active, the first person plural takes the plural ending:
+        AISUB (ko)—to make
+        kasuba—that I may make myself
+        kosuba—that you may make yourself
+        kosuba—that he may make himself
+        kasubas—that we may make ourselves
+        kosubas—that you may make yourselves
+        kosubas—that they may make themselves
+
+        AIBOIKIN (ki)—to sit down
+        keboikin—that I may sit down
+        kiboikin—that you may sit down
+        kiboikin—that he may sit down
+        keboikinos—that we may sit down
+        kiboikinos—that you may sit down
+        kiboikinos—that they may sit down
+
+  Note that in the case of derived verbs the full suffix is retained
+and not curtailed as in the active (paragraph 60).
+  (ii) Past tense: The past (abu) tense is formed regularly by
+use of the subjunctive/imperative, e.g. abu nesi kiboikin—
+he sat down.
+  The past (a- or e-) tense is also used:
+        e.g. eboikin nesi—he was sitting down
+  (iii) Quality verbs (Chapter IX) make their reflexive forms
+by adding -iar or -ior to the active:
+        ekwaŋ—it is white
+        ekwaŋiar—it is getting white
+        (literally: it is making itself white)
+  (iv) Infinitive: The infinitive is formed by adding the suffix
+
+
+=== PDF PAGE 076 (p. 55) ===
+VERBS: REFLEXIVE AND RECIPROCAL FORMS         55
+
+-a or -o to the root. The prefix is a- for ko class verbs and ai-
+for ki class verbs.
+        aiduk—to build        aduko—to build oneself
+        ainom—to beat         ainoma—to beat oneself
+
+65. Reciprocal form: The term "reciprocal" means that the
+subject of the verb and other persons receive the action of the
+verb:
+        kominaros—love (plural) one another
+        iriamakinos ogudo—they meet each other on the road
+        inerakinos—they are talking to each other
+  In form the reflexive and reciprocal verbs are the same; the
+sense will be made clear by the context.
+  It is, however, common to indicate the reciprocal sense by
+inserting the syllable -na-, -no-, -nu- or -ne- between the
+root with its "shadow" vowel and the ending. Thus the above
+example would commonly read:
+        kominanaros
+        iriamanakinos
+        ineranakinos
+  This infix -na-, -no-, -nu- or -ne- gives a continuous or repeti-
+tive meaning and is used to make a derived form of the verb
+known as the "repetitive" (see Appendix I).
+
+Vocabulary:
+        airiamakin (ki)—to meet
+        atukokin (ko)—to gather together
+        akirot (akiro)—word, matter
+        edini (idinin)—religion
+
+Exercise:
+      (i) A father usually helps those who help themselves.
+     (ii) May what you wish be done immediately.
+    (iii) The demands (akiro) of religion become hard.
+     (iv) If you help each other, you will be able to build your
+          house quickly.
+I.A.L.—6
+
+
+=== PDF PAGE 077 (p. 56) ===
+56                    ATESO LANGUAGE
+
+      (v) If children love their fathers, they will love each other.
+     (vi) Peter and I are meeting each other today.
+    (vii) The meat is getting bad.
+   (viii) Some men became bad.
+     (ix) They are all related to each other.
+      (x) All the people met together yesterday.
+
+
+=== PDF PAGE 078 (p. 57) ===
+CHAPTER XVI
+
+VERBS: PASSIVE FORMS*
+
+66. Use of the passive form: The passive form is used, as in
+English, to indicate that the action of the verb is done to, not
+done by, the subject. But it is impossible to express agency (i.e.
+"by whom") with this form; thus such sentences as "the house
+has been built by us" cannot be translated literally into Ateso.
+Ateso prefers to turn the sentence round and use the active
+voice, "we have built the house." In other instances the reflexive
+form is preferred (see Chapter XV).
+  The nearest translation of the passive voice in Ateso is ren-
+dered by the French on or the German man:
+    e.g. on fait—it is done; man spracht—it is said.
+
+67. Formation of passive form: (i) The same personal pre-
+fixes are used as in the active form. It is, however, but rarely that
+persons other than the 3rd person are used.
+  (ii) All present tenses are formed by adding -io to the root in
+all persons, singular or plural.
+    (infinitive)  aiduk—to build        adukio—to be built
+    (present)     inomi—he beats        inomio—he is being beaten
+                  inomete—they beat     inomio—they are being
+                                                   beaten
+
+  (iii) Subjunctive/imperative: It should be noted that the per-
+sonal prefix of the first person plural is ko- in ko class verbs
+and ki- in ki class verbs. Other personal prefixes are the same
+as for the active. The subjunctive/imperative is formed by adding
+the suffix -i to the root in the first and second persons and the
+suffix -ai or -oi, according to the usual rule, in the third person:
+    kinom nesi—let him beat    kinomai nesi—let him be beaten
+
+  * See remarks in Preface to the Second Edition.
+
+
+=== PDF PAGE 079 (p. 58) ===
+58                    ATESO LANGUAGE
+
+In derived verbs the suffix -i is not added in the first and
+second persons.
+  (iv) Past (aponi) tense: Aponi is used instead of the auxiliary
+abu in all persons with the subjunctive/imperative forms.
+        abu kenom—I beat
+        aponi kenomi—I was beaten
+        apotu kinomata—they beat
+        aponi kinomai—they were beaten
+        aponi eoŋ kacakakin—I was thrown down
+        aponi nesi kocakakinai—it was thrown down
+  (v) Past (a- or e-) tense: is formed regularly.
+        enomio—he was being beaten
+  (vi) The perfect (-it) tense is formed by adding -itai to the
+root for all persons, singular and plural.
+        inomit—he has beaten          inomitai—he has been beaten
+        inomitos—they have beaten     inomitai—they have been beaten
+  (vii) Continuous verbs: add -oi or -ai to the root for all
+persons, singular and plural, in the present tense:
+        akoto—I want                  kakotoi*—I am wanted
+        inera—he says                 inerai—it is said
+
+Vocabulary:
+        aijukar (ki)—to send to
+        ebela (ibelai)—stick
+        epege (ipegei)—pig
+        abalua (abaluan)—letter
+
+Exercise:
+      (i) This is the letter which is being written.
+     (ii) I have not been sent to Soroti; I was told to wash the
+          clothes here.
+    (iii) The stick which was seen at your house is mine.
+     (iv) All these clothes will be washed tomorrow, if there is
+          sufficient soap for us.
+
+  * "Contained object" prefix k- is necessary. See Preface to the Second
+Edition.
+
+
+=== PDF PAGE 080 (p. 59) ===
+VERBS: PASSIVE FORMS                    59
+
+      (v) Among all the children Peter was the favourite (was
+          loved).
+     (vi) My father's bulls were seen yesterday.
+    (vii) All these pigs were killed in our plots.
+   (viii) This matter is not wanted.
+     (ix) The girl was sent at half past four.
+      (x) It has been commanded that the house be built.
+
+=== PDF PAGE 081 (p. 60) ===
+CHAPTER XVII
+
+VERBS: PREPOSITIONAL SUFFIX
+
+68. Use of the prepositional suffix: Prepositions are not so
+freely used in Ateso as in English. Ateso often prefers to convey
+the prepositional idea by changing the form of the verb.
+  Thus in the example "Peter eats with a spoon", enyami
+Petero ka ekijiko would be a correct translation, but Iteso
+would always prefer to say enyamia Petero ekijiko.
+  In this example the use of the prepositional suffix would be
+optional, but when the prepositional idea occurs in a relative
+sentence the prepositional suffix must be used.
+  It is therefore impossible to translate "That is the spoon with
+which Peter eats" by nes ekijiko kalo enyami Petero. The
+prepositional idea conveyed by ka (with) must in this sentence
+be rendered by altering the verb itself by adding the prepositional
+suffix:
+                     Nes ekijiko loenyamia Petero
+  The prepositional suffix may be added to any verb in order to
+convey a prepositional idea, and must be added to any verb which
+appears in a relative sentence which is governed by a preposition.
+  Note: This construction whereby a suffix, differing according
+to voice, mood, tense and person, is added to the verb to express
+a prepositional idea, is a grammatical concept not found in Bantu
+and Nilotic languages. In the new Maasai Grammar it is
+termed the "applied or instrumental" form and is treated as a
+derived verb; both "causative" and "applied and instrumental"
+forms may be attached to other derived verbs, thereby forming
+"compound derived verbs". We do not treat the prepositional
+suffix as a derived verb.
+  We have kept the term "derived verb" for a verb which, by
+means of one particular suffix or infix, takes on a different shade
+
+
+=== PDF PAGE 082 (p. 61) ===
+VERBS: PREPOSITIONAL SUFFIX                     61
+
+of meaning from that of the root verb from which it is derived.
+Once the root verb has been altered by the addition of the
+appropriate suffix or infix, the new derived verb so formed can
+be conjugated throughout in exactly the same manner as the
+original root verb.
+  The "prepositional suffix", however, does not consist of one
+particular suffix but of a number of suffixes varying according to
+voice, mood, tense and person in any one verb. The addition of
+the prepositional suffix does not alter the meaning of the verb to
+which it is attached. Thus in the sentence:
+               Akoto ainakin ijo akito kodukio etogo
+          (I want to give you poles with which to build a house)
+the basic meaning of the verb aiduk is unchanged by the
+addition of the prepositional suffix, whereas the derived forms
+(adukor, adukun, adukuduk, aituduk, etc.) convey distinct
+and different shades of meaning. The arrangement of Appen-
+dix I will help to clarify this point. Derived verbs are contained in
+Part 1. Each one has a separate shade of meaning and can be con-
+jugated throughout. The prepositional suffixes are contained
+in Part 2. They do not introduce a new shade of meaning nor
+does their addition to a verb form a new verb which can be
+conjugated throughout.
+
+69. Formation of prepositional suffix: (i) Present tense:
+Add the suffix -io or -ia, according to the usual rule, to the root
+of the verb in the singular persons and first person plural, and
+-ioto or -iata in the remaining persons:
+        AIDUK (ko)—to build                AILIP (ki)—to pray
+        adukio        kidukio              elipia        kilipia
+        idukio        idukioto             ilipia        ilipiata
+        edukio        edukioto             ilipia        ilipiata
+
+  (ii) Past (abu) tense: The suffix is the same as in the present
+tense except that the first person plural as usual takes the plural
+ending:
+
+
+=== PDF PAGE 083 (p. 62) ===
+62                                ATESO LANGUAGE
+
+        abu kadukio        apotu kadukioto
+        ibu kodukio        ipotu kodukioto
+        abu kodukio        apotu kodukioto
+
+        abu kelipia        apotu kelipiata
+        ibu kilipia        ipotu kilipiata
+        abu kilipia        apotu kilipiata
+
+  (iii) Past (a- or e-) tense is formed regularly:
+              e.g. adukio—he was building
+  (iv) Perfect (-it) tense: Add the suffix -itor to the root in the
+singular persons and first person plural, and -itotor in the
+remaining persons:
+        adukitor      kidukitor            elipitor      kilipitor
+        idukitor      idukitotor           ilipitor      ilipitotor
+        edukitor      edukitotor           ilipitor      ilipitotor
+
+  (v) Continuous verbs: Add the suffix -or or -ar to the root
+in the singular persons and first person plural, and -otor or
+-atar in the remaining persons:
+        akotor        kikotor              aminar        kiminar
+        ikotor        ikototor             iminar        iminatar
+        ekotor        ekototor             eminar        eminatar
+
+  (vi) Passive: The suffix is -ere for all persons, all tenses
+and all moods. Personal prefixes are those used in the active
+form. The present tense is:
+        adukere*      kidukere             elipere       kilipere
+        idukere       idukere              ilipere       ilipere
+        edukere       edukere              ilipere       ilipere
+
+  (vii) Verb "to be": The prepositional suffix resembles that
+of the continuous verbs. The present tense is:
+                      ajaar                kijaar
+                      ijaar                ijaatar
+                      ejaar                ejaatar
+
+  * But note that the "contained object" prefix k- is required in the first
+and second persons singular and second person plural. See Preface to
+the Second Edition.
+
+
+=== PDF PAGE 084 (p. 63) ===
+VERBS: PREPOSITIONAL SUFFIX                     63
+
+70. Further uses of the prepositional suffix: The Ateso
+words for "when", "where", "how", etc. used in their relative
+sense to describe the time at which, the route over which, the
+manner in which, the purpose for which or the instrument with
+which the action of the verb is done, must be followed by a verb
+with a prepositional suffix. Certain interrogatives also, which
+ask the time, manner, purpose or instrument with which the
+action of a verb is done, must be followed by a verb with the
+prepositional suffix.
+  As a very general rule the words below must, therefore, be
+followed by a verb with the prepositional suffix:
+        kwape—how, as                 (manner in which)
+        (apak) na—when                (time at which)
+        ne-—where                     (route over which)
+        nes—therefore                 (purpose for which)
+        kanu(ka)—because              (purpose for which)
+        inyobo ?—why? how?            (manner in which)
+        biaibo ?—how?                 (manner in which)
+        woribo ?—when?                (time at which)
+        kanuka inyo—why               (purpose for which)
+        aibo ?—where?                 (route over which)
+  But the word ne-, when it means the place to or at which the
+action of the verb is done, is not followed by a verb with the
+prepositional suffix:
+        e.g. Mam ajeni neelosi nesi
+             I do not know where he is going
+(I know he is going somewhere but I have no idea what his
+destination is.)
+             Mam ajeni neelosio nesi
+             I do not know where he is going
+(I know he is going and I know where he is going, but I do
+not know the route over which he is going.)
+  The same distinction applies to the word aibo ?
+  The two words nes and kanu(ka), meaning "therefore" and
+"because", are used in the following manner:
+
+
+=== PDF PAGE 085 (p. 64) ===
+64                                ATESO LANGUAGE
+
+Mam akoto kes, nes alosio ore
+I do not like them and am therefore going home
+Mam apedori aikany eteŋe ka akure, nes aboŋoria
+I cannot stand hunger and thirst so I returned
+Ejaas inyamat luipudai kanuka aiyasia aokot
+Certain foods are needed to strengthen the blood supply
+
+Vocabulary:
+        aisisianakin (ki)—to teach
+        aisiom (ko)—to read
+        adeka (ko)—to be ill
+        akitoi (akitoi)—pole
+        esirigi (isirigin)—shilling
+        asanit (asanin)—plate
+
+Exercise:
+    (i) I do not know when they are coming.
+   (ii) How is he going?
+  (iii) Where shall we buy some plates to eat off?
+   (iv) I am going to give you some poles for you to build a
+        house with.
+    (v) I am ill and therefore cannot come.
+   (vi) Get me a stick to beat this boy with.
+  (vii) Where are you (plural) being taught to read and write?
+ (viii) There are poles that the house may be built with.
+   (ix) What do you want to eat meat with?
+    (x) You ought (it is good) to give me two shillings to go to
+        buy food with.
+
+
+=== PDF PAGE 086 (p. 65) ===
+CHAPTER XVIII
+
+PREPOSITIONS AND ADVERBS
+
+71. Prepositions: Prepositions in Ateso are not numerous.
+Where in English a preposition is used, Ateso usually employs
+either a derived verb (see Chapter XIV) or the prepositional
+suffix (see Chapter XVII). Prepositions must, however, always be
+used whenever a noun is used to indicate place.
+  (i) Movement to a place can be expressed by altering the
+noun prefix to o- in masculine and neuter nouns, both singular
+and plural. The noun prefix in feminine nouns is not changed,
+but when movement to a place is implied the prefix a- is given
+a different tone value in speech:
+    e.g.         Elosi ore—He goes to the homestead
+                 Sirikilot akoloŋ—Do not go out into the sun
+  This same form is also used to express position in, at or on
+a place.
+    E.g.         Ejai osamai—He is at the swamp
+                 Ejaasi imirio omesan—There are rats on the tables
+  (ii) Ko- for masculine and neuter nouns, and ka- for feminine
+nouns, both singular and plural, may be used instead of the form
+described above to express movement to or position at a place.
+The ko- or ka- is written as part of the noun and replaces the
+noun prefix. These forms imply that on going to a place you
+have found or will find an object or person already there.
+  E.g. Adumunit eoŋ Petero kore—I found Peter at home
+  But:         Ajai Petero ore—Peter was at home
+               Ituŋa lukore kiyogaete ijo—The people (whom I found)
+                                            at home greet you
+  These forms are also used to express movement from a place:
+       Abuni eoŋ koitela je—I have come from that place
+       Ayaunio akipi nu katan—This water came from a well
+
+
+=== PDF PAGE 087 (p. 66) ===
+66                                ATESO LANGUAGE
+
+  (iii) The prepositional noun prefixes, o, a and ko, ka, may
+be used in accordance with the above rules with proper names.
+  E.g.         Ebuni Petero ka Atira—Peter comes from Tira
+               Elosi Petero o Kapel—Peter goes to Kapiri
+               Adumunit Petero ko Solot—I found Peter at Soroti
+
+  (iv) Position in or on or among is also expressed by the
+preposition toma or kotoma:
+               Kotoma ka yes—Among you
+               Toma togo—In the house
+The noun it governs takes the prepositional noun prefix:
+               Ejai ekitabo toma omesa—The book is on the table
+               Aanyunit nes kotoma ore—I have seen him at home
+
+  (v) Movement from a person, thing or place may also be
+expressed by the preposition kaneka:
+               Abunit eoŋ kaneka Petero—I come from Peter
+  Movement to or from a person may also be expressed by the
+phrase mama ejai or mama ejaas:
+               Kolot mama ejai Petero—Go to Peter
+  Kijuka abalua mama ejaas isirikalei—Send the letter to the
+                                            soldiers
+  Kama sometimes replaces mama though it would appear to
+have the idea of movement "from" rather than "to".
+
+  (vi) Other prepositions are for the most part identical in form
+with the adverbs of place listed in paragraph 72 below; many of
+them are derived from nouns by dropping the noun prefix.
+  E.g. Amuk ejaas kwap kemesa—The shoes are under the table
+       Usuku ejai juwai kecor—Usuku is on the far side of
+                                   the lake
+  The noun governed by the preposition has k- prefixed.
+
+72. Adverbs: (i) Interrogative adverbs usually follow the verb
+they qualify:
+    e.g.         Elosit ai ?—Where has he gone?
+
+
+=== PDF PAGE 088 (p. 67) ===
+PREPOSITIONS AND ADVERBS                     67
+
+But when the interrogative adverb is strengthened by the
+particle bo it must precede:
+        Aibo ejaas itelepai ?—Where are the boys?
+  All other adverbs follow the verb they qualify.
+  (ii) The following list contains the common adverbs of place:
+        ne—here (often reduplicated to nepene)
+        nen—here (often reduplicated to nepenen)
+        kane—here, hence (ne with prepositional noun prefix)
+        laije—that side
+        lailo—this side
+        juwai—on the other side, beyond
+        lowai—this side
+        okekwa—on the other side
+        ŋina—there
+        kuju—above
+        kwap—below
+        iŋaren—in front
+        kau—behind
+        kiŋa—outside
+        (ko)toma—inside
+        agule—at the back of
+  It will be noted that some of these adverbs are derived from
+nouns by dropping the noun prefix or by adding a demonstrative
+adjective.
+  (iii) The following list contains the common adverbs of time:
+        kwana—now (often strengthened to kwapekwana)
+        nat—soon, now
+        napena—now (used adverbially but really an adjective
+                    qualifying apak understood)
+        lolo—today
+        moi—tomorrow
+
+
+=== PDF PAGE 089 (p. 68) ===
+68                                ATESO LANGUAGE
+
+        moi kace—the day after tomorrow
+        bian—yesterday
+        tupuruc—in the morning, early
+        sek—long ago (also in the form kolosek)
+        paran—by day
+        kware—by night
+  (iv) The following list contains the common adverbs of
+manner:
+        kwaŋin—thus
+        noi—very
+        cut—completely
+        atipet—quickly
+        bobo—again
+  Other adverbial meanings may be translated by nouns with
+the particle ka (with):
+        e.g. kiswama ka agogoŋ—work vigorously
+or by quality verbs:  e.g. kiswama ejok—work well
+
+Vocabulary:
+        akoloŋ (singular only)—sun
+        ekileŋ (ikileŋa)—knife
+        acoa (singular only)—wisdom
+        anyait (anya)—blade of grass (pl. grass)
+        atan (atanin)—well, spring
+        ayaŋaar (ko)—take away
+        aitub (ko)—cut
+
+Exercise:
+    (i) Bring the meat here out of the sun.
+   (ii) He has taken away the knife from the little table.
+  (iii) We found the soldiers at Tira.
+   (iv) My father has come from there.
+    (v) They always work wisely.
+
+
+=== PDF PAGE 090 (p. 69) ===
+PREPOSITIONS AND ADVERBS                     69
+
+   (vi) The women are cutting the grass with a knife.
+  (vii) I do not know where the girls are now.
+ (viii) I want one from among the chickens which are here.
+   (ix) The cattle are at the well.
+    (x) Bring (plural) the beer to me.
+
+=== PDF PAGE 091 (p. 70) ===
+CHAPTER XIX
+
+VERBS: PARTICIPLES AND VERBAL
+NOUNS
+
+73. Present participle: In the sentence "I saw him coming" the word "coming" is a present participle; it depends on another verb. In English the present participle differs in form from the ordinary indicative tenses, but in Ateso there is no separate form. The sense is supplied by use of the present indicative tense:
+        Aanyunit nes ebuni—I saw him coming
+
+74. Formation of past participle: In the sentence "They ate cooked food" the word "cooked" is a past participle. It describes something done to the food in the past. It is always passive. The past participle in Ateso is formed according to the following rules:
+    (i) Verbs ending in a consonant duplicate the last consonant and preceding vowel. Past participles begin with e- in ko class verbs and i- in ki class verbs:
+        aiduk (ko)—to build             edukuk—built
+        aswam (ki)—to do                iswamam—done
+    (ii) Verbs with roots ending in a vowel duplicate the vowel only and add the usual prefix:
+        aida (ko)—to beat               edaa—beaten
+    (iii) Derived verbs ending in -un, -or (-ar), -okin (-akin) add -o or -a to the last syllable and the usual prefix:
+        adukun (ko)—build               edukuno—built
+        aiswapakin (ki)—thatch          iswapakina—thatched
+
+75. Use of the past participle: There are two ways of using the past participle:
+    (a) As a verb indicating the time an action took place.
+    (b) As an ordinary adjective.
+
+
+=== PDF PAGE 092 (p. 71) ===
+VERBS: PARTICIPLES AND VERBAL NOUNS       71
+
+In the sentence "I saw the men chosen" the past participle "chosen" is used as a verb fixing the time at which the men were chosen. But in the sentence "I saw the chosen men" the participle "chosen" is merely an adjective describing the men. English conveys this difference in meaning by altering the order of words. Ateso marks the difference by adding the usual relative pronoun as a prefix when the past participle is used as an adjective:
+    Abu eoŋ kaanyu ituŋa eseuna—I saw the men chosen
+    Abu eoŋ kaanyu ituŋa lueseuna—I saw the chosen men
+    Aanyunit aberu earar—I have seen a woman murdered
+    Aanyunit aberu naearar—I have seen a murdered woman
+
+76. Verbal nouns and adjectives ending in -n: (i) Nouns can be formed from most active and quality verbs to describe the doer of an action or the possessor of a quality. Such nouns may be formed in three ways:
+    (a) By prefixing eka- to the root of ko class verbs and eke- to ki class verbs and by adding the suffix -an or -on:
+        e.g.  amej (ko)—to hunt         ekamejan—hunter
+              aibwok (ki)—to carry      ekebwokan—carrier
+              ekwaŋ (ko)—he is white    ekakwaŋan—white man
+    The plural is formed by changing the final -n to -k and by changing the singular to the appropriate plural prefix:
+        e.g.  ikamejak—hunters
+              akakoriok—women cultivators (see Chapter I, paragraph 7 (iv))
+    (b) By prefixing loka- to ko class roots and loke- to ki class roots and by adding the suffix -an or -on:
+        e.g.  amej (ko)—to hunt         lokamejan—hunter
+              aibwok (ki)—to carry      lokebwokan—carrier
+              ekwaŋ (ko)—he is white    lokakwaŋan—white man
+Feminine and neuter prefixes may also be used.
+I.A.L.—7
+
+
+=== PDF PAGE 093 (p. 72) ===
+72                    ATESO LANGUAGE
+
+    (c) By prefixing aa- to ko class roots and ee- to ki class roots and by adding the suffix -an or -on:
+        e.g. amej (ko)—to hunt          aamejan—hunter
+    The plural is properly formed by changing the final -n to -k, leaving the prefixes unaltered. The modern tendency is to use the plural of form (a).
+    (ii) The form in (a) is purely a noun; the verbal nature is lost. It is impossible to say ekamejan iŋatunyo to translate "hunter of lions". These words must be translated by ekamejan loka iŋatunyo. The noun prefix must agree in gender with any noun to which the form refers.
+    E.g. Ikoku yen nes ikajokan—This child is a good one
+    The form in (b) is adjectival; it retains its verbal nature and so can take an object. It is used where, in English, two nouns stand together:
+        e.g. Petero lokamejan—Peter the hunter,
+    or to translate a relative clause:
+        Petero lokamejan—Peter, who is a hunter,
+    or simply as an adjective:
+        Petero lokaronon—wicked Peter
+    The form in (c) also retains its verbal nature and may therefore have an object:
+        e.g. aadukon isomeroi—a builder of schools
+
+77. Verbal nouns and adjectives ending in -t: (i) Verbal nouns and adjectives ending in -t may also be formed in the three ways described in paragraph 76 above, except that the suffix is -at or -et instead of -an or -on. In the plural the final -t is changed to -k.
+    E.g. aisab (ko) (to lie) gives the three forms:
+        ekasabat, lokasabat, aasabat—liar, lying person
+    The form ending in -t indicates that the person or thing in question has a habit of doing the action of the verb.
+    (ii) There is also a passive verbal adjective which ends in -t. This form indicates that the person or thing described is destined
+
+
+=== PDF PAGE 094 (p. 73) ===
+VERBS: PARTICIPLES AND VERBAL NOUNS       73
+
+to undergo the action of the verb. The verbal adjective is formed by prefixing the appropriate relative pronouns to the root of the verb and by adding the suffix -at in the singular and -an in the plural:
+    e.g.        aiar (ko)—to kill
+            akituk nuaran—beef cows (cows which are to be killed).
+                ainyam (ko)—to eat
+            iboro lunyaman—victuals (things which are to be eaten).
+
+78. Irregular verbs: (i) There are two classes of irregular verbs in Ateso:
+    (a) Those which add -ie to the root before the final -i or -ete of the present tense.
+    Common verbs in this class are:
+            akor—to cultivate
+            acok—to herd
+            aur—to bring forth
+    e.g.    akoriei eoŋ—I cultivate
+            ekoriete kesi—they cultivate
+    (In the last example the double -ee is contracted to -e.)
+    (b) Those which add -a or -o to the root before the final -i or -ete of the present tense.
+    Common verbs in this class are:
+            aswam—to work
+            aiwadik—to write
+            aiŋad—to keep
+            aomoom—to think over
+    e.g.    eswamai eoŋ—I work
+            iswamaete yesi—you work
+(ii) Repetitive verbs with the suffix -enen (see Appendix I, Part 1) and derived repetitive verbs with the suffix -un (see
+I.A.L.—7*
+
+
+=== PDF PAGE 095 (p. 74) ===
+74                    ATESO LANGUAGE
+
+Appendix I, Part 1) add -e to these suffixes before the final -i in the singular and first person plural of the present tense:
+    e.g.        adukenen—to build repeatedly
+            adukenenei eoŋ—I build repeatedly
+                adumunun—to get repeatedly
+            kidumununei—we get repeatedly
+(iii) The verb aiboi (to stay at) adds -e to the root in the singular and first person plural of the present tense instead of the usual -i:
+    e.g.    eboie eoŋ—I stay at
+            iboiete yesi—you stay at
+(iv) As has been seen in paragraph 18 the verb abunere (to come) is irregular inasmuch as the plural forms are provided by a different verb, aponere; in conjugation the infinitive suffix -ere is dropped. This rule applies to all verbs the infinitive of which ends in -ere, -are or -ore.
+
+    Present tense                       Subjunctive/Imperative
+    abuni                               kabu
+    ibuni                               kobu
+    ebuni                               kobu
+    kiponi (kibuni is nowadays          kapotu
+            commoner)
+    ipote                               kopotu
+    epote                               kopotu
+
+Vocabulary:
+    agwelar (ko)—to sell
+    aiar (ko)—to kill
+    aiswap (ki)—to thatch
+    ekuriana (ekuriaka)—be afraid
+    ekia (ikee)—medicine, charm
+    etome (itomei)—elephant
+
+Exercise:
+(i) We saw him kill the child.
+(ii) We know that there was a thatched house here.
+
+
+=== PDF PAGE 096 (p. 75) ===
+VERBS: PARTICIPLES AND VERBAL NOUNS       75
+
+(iii) Peter, the drudge, has come today.
+(iv) I am ill today. Bring me the medicine to drink.
+(v) I have seen the boy beaten.
+(vi) My brother, a hunter of elephants, is not afraid.
+(vii) These are strong ones.
+(viii) There were many people gathered in the swamp.
+(ix) I want to see the house built of poles.
+(x) We want to sell the meat which was cut yesterday.
+
+
+=== PDF PAGE 097 (p. 76) ===
+APPENDIX I
+
+PART I
+
+VERB DERIVATION
+
+Root -duk- (build)
+
+1. Simple:
+        aiduk (ko)—to build
+2. Motion towards:
+        adukun (ko)—to build (for me here)
+3. Motion away:
+        adukor (ko)—to build (there)
+4. Action for:
+        adukokin (ko)—to build (for or in)
+5. Causative:
+        aituduk (ki)—to cause to build
+6. Repetitive:
+        (i)   adukenen (ko)—to build continually
+        (ii)  adukuduk (ko)—to build continually
+7. Derived causative:
+        (i)   Motion towards:
+              aitudukun (ki)—to cause to build (for me here)
+        (ii)  Motion away:
+              aitudukor (ki)—to cause to build (there)
+        (iii) Action for:
+              aitudukokin (ki)—to cause to build (for someone)
+8. Derived repetitive:
+        (i)   Motion towards:
+              adukunun (ko)—to build continually (for me here)
+        (ii)  Motion away:
+              adukonor (ko)—to build continually (there)
+        (iii) Action for:
+              adukonokin (ko)—to build continually (for someone)
+
+
+=== PDF PAGE 098 (p. 77) ===
+APPENDIX I                          77
+
+9. Repetitive causative:
+        (i)   aitudukenen (ki)—to cause to build continually
+        (ii)  aitudukuduk (ki)—to cause to build continually
+10. Quantity: (derived from numerals)
+        aiareikin (ki)—to do twice
+        aiunikin (ki)—to do three times
+11. Causative quantity: (derived from numerals)
+        aisiareikin (ki)—to cause to do twice
+        aisiunikin (ki)—to cause to do three times
+12. Quality:
+        edukono (edukoko)—he is a building type
+13. Stative:
+        eduk (edukos)—it is buildable
+
+ALL THE ABOVE FORMS CAN BE CONJUGATED THROUGHOUT IN THE MANNER SHOWN IN PART 2 OF THIS APPENDIX.
+(The stative form, however, appears only in the third person and in the present and past (a- or e-) tense.)
+
+14. Verbal nouns:
+        (i)   ekadukon (ikadukok)—builder
+        (ii)  aadukon (aadukok)—builder
+        (iii) ekadukot (ikadukok)—continual builder
+        (iv)  aadukot (aadukok)—continual builder
+        (v)   eduke (no plural)—style of building
+
+15. Verbal adjectives: (masculine singular form given)
+        (i)   lokadukon—building (man)
+        (ii)  lokadukot—continually building (man)
+        (iii) edukuk—built
+        (iv)  lodukot—to be built
+
+THE NOUNS AND ADJECTIVES IN 14 AND 15 ARE FORMED FROM THE SIMPLE FORM aiduk. IN MANY CASES IT IS ALSO POSSIBLE TO FORM SIMILAR NOUNS AND ADJECTIVES FROM THE DERIVED VERBS IN 2 TO 9.
+E.g.  edukuno—built (here) from adukun in 2.
+      edukokina—built (in a place) from adukokin in 4.
+
+=== PDF PAGE 099 (p. 78) ===
+
+PART 2
+
+VERB CONJUGATION
+
+1. The following table presents the full conjugation of the root
+   verb -sub (create).
+2. The verb -sub belongs to the ko class. Ki class verbs are
+   conjugated identically except that the personal prefix:
+                a- is replaced by e-
+               ka- is replaced by ke-
+                e- is replaced by i-
+               ke- is replaced by ki-
+               ko- is replaced by ki-
+3. The root vowel of the verb -sub is "open". Verbs having
+   "close" root vowels are conjugated identically except that
+   the suffix:
+                -a is replaced by -o
+               -as is replaced by -os
+             -ata is replaced by -oto
+               -ai is replaced by -oi
+                                (but not in the suffix -itai)
+4. Conjugation of the simple root verb only is presented. De-
+   rived verbs are conjugated identically with the exceptions
+   mentioned in paragraphs 60, 62 (ii), 64 (i) and (ii), 67 (iii)
+   and (iv).
+
+   Note: The two tenses termed "contemporary present and
+past" and "dependent perfect" require some explanation.
+   The "contemporary present and past" tense is so termed
+because the action of the verb in this tense takes place at the
+same time as the action of another verb, which must be expressed ;
+this other verb may be present or past. The "contemporary"
+tense may thus be used to translate the English "while" and, on
+
+
+=== PDF PAGE 100 (p. 79) ===
+
+APPENDIX I                                          79
+
+the analogy of the "not yet" tense, might alternatively be called
+the "while" tense:
+    e.g. Aboki eoŋ aipany kaduki etogo.
+            I am digging a hole while building the house. (present)
+        Aboki nesi aipany kadukete isio etogo.
+            He was digging a hole while we were building the house.
+                                                    (past)
+    The "dependent perfect" tense is so termed because the verb
+in this tense expresses a perfect action, which has or will have
+taken place. The use of this tense is dependent on another verb,
+which may be expressed or merely understood; this other verb
+may be in the present, perfect or past tense. The "dependent
+perfect" tense may be used to translate the relative "when" and,
+on the analogy of the "not yet" tense, might alternatively be
+called the "when" tense:
+    e.g.  Apedori alosit ore ?            Kelot Petero.
+            Can I go home?              When Peter has gone.
+    (The "dependent perfect" kelot is dependent on the present
+tense verb ipedori alosit (you can go) understood.)
+                    Abu nesi kolot kenyam.
+                    He went when he had eaten.
+    (The "dependent perfect" kenyam is dependent on the past
+tense abu kolot.)
+    The perfect (root) tense expresses finality; the action is
+definitely and completely finished. Used without an object the
+tense implies that the action was completed a short while ago.
+Used with an object no specific time is implied:
+    e.g.            Alot nesi—He has just gone (and is not
+                                    coming back).
+                    Alot nesi Ŋora—He went to Ngora. (The time
+                                    he went is unspecified; he is
+                                    not coming back.)
+                    Adum nesi—He has just found it. (No fur-
+                                    ther search for the thing lost
+                                    is necessary.)
+        Adum bian nesi ekalacet—He found my key yesterday.
+
+
+=== PDF PAGE 101 (p. 80) ===
+
+ACTIVE
+
+INFINITIVE: aisub
+
+### SUBJUNCTIVE/IMPERATIVE AND CONDITIONAL
+
+| Person | Subjunctive/Imperative | Conditional |
+| :--- | :--- | :--- |
+| 1st sing. | kasub | ti . . . . kasub |
+| 2nd sing. | kosub | ti . . . . kisub |
+| 3rd sing. | kosub | ti . . . . kesub |
+| 1st pl. | kasubata | ti . . . . kisub |
+| 2nd pl. | kosubata | ti . . . . kisubata |
+| 3rd pl. | kosubata | ti . . . . kesubata |
+
+### INDICATIVE
+
+| Person | Present Tense | Past (A- or E-) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | asubi | asubi |
+| 2nd sing. | isubi | isubi |
+| 3rd sing. | esubi | asubi |
+| 1st pl. | kisubi | kisubi |
+| 2nd pl. | isubete | isubete |
+| 3rd pl. | esubete | asubete |
+
+| Person | Perfect (-it) Tense | Past Perfect (-it) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | asubit | asubit |
+| 2nd sing. | isubit | isubit |
+| 3rd sing. | esubit | asubit |
+| 1st pl. | kisubit | kisubit |
+| 2nd pl. | isubito | isubito |
+| 3rd pl. | esubito | asubito |
+
+| Person | Past (Abu) Tense | Far Past (Abu) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | abu kasub | abu kasubite |
+| 2nd sing. | ibu kosub | ibu kosubite |
+| 3rd sing. | abu kosub | abu kosubite |
+| 1st pl. | apotu kasubata | apotu kasubito |
+| 2nd pl. | ipotu kosubata | ipotu kosubito |
+| 3rd pl. | apotu kasubata | apotu kosubito |
+
+| Person | Habitual Tense* | "Not Yet" Tense |
+| :--- | :--- | :--- |
+| 1st sing. | (asubitoi) | (k)esuba |
+| 2nd sing. | (isubitoi) | (k)esuba |
+| 3rd sing. | (esubitoi) | (k)esuba |
+| 1st pl. | (kisubitoi) | (k)esuba |
+| 2nd pl. | (isubitos) | (k)esuba |
+| 3rd pl. | (esubitos) | (k)esuba |
+
+| Person | Perfect (Root) Tense | Dependent Perfect (K-) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | asub | kasub |
+| 2nd sing. | isub | kisub |
+| 3rd sing. | asub | kesub |
+| 1st pl. | kisub | kisub |
+| 2nd pl. | isubata | kisubata |
+| 3rd pl. | asubata | kesubata |
+
+### CONTEMPORARY PRESENT AND PAST (KO-) TENSE
+
+| Person | Singular | Plural |
+| :--- | :--- | :--- |
+| 1st | kasubi | kasubete |
+| 2nd | kosubi | kosubete |
+| 3rd | kosubi | kosubete |
+
+* See paragraph 54. This tense is rarely used except with repetitive verbs. The forms asubitoi, etc., are probably never used: only the repetitive forms asubusubutoi, isubusubutoi, etc.
+
+I.A.L.—80]
+
+
+=== PDF PAGE 102 (p. 81) ===
+
+ACTIVE—PREPOSITIONAL SUFFIX
+
+INFINITIVE: asubia
+
+### SUBJUNCTIVE/IMPERATIVE AND CONDITIONAL
+
+| Person | Subjunctive/Imperative | Conditional |
+| :--- | :--- | :--- |
+| 1st sing. | kasubia | ti . . . . kasubia |
+| 2nd sing. | kosubia | ti . . . . kisubia |
+| 3rd sing. | kosubia | ti . . . . kesubia |
+| 1st pl. | kasubiata | ti . . . . kisubia |
+| 2nd pl. | kosubiata | ti . . . . kisubiata |
+| 3rd pl. | kosubiata | ti . . . . kesubiata |
+
+### INDICATIVE
+
+| Person | Present Tense | Past (A- or E-) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | asubia | asubia |
+| 2nd sing. | isubia | isubia |
+| 3rd sing. | esubia | asubia |
+| 1st pl. | kisubia | kisubia |
+| 2nd pl. | isubiata | isubiata |
+| 3rd pl. | esubiata | asubiata |
+
+| Person | Perfect (-itor) Tense | Past Perfect (-itor) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | asubitor | asubitor |
+| 2nd sing. | isubitor | isubitor |
+| 3rd sing. | esubitor | asubitor |
+| 1st pl. | kisubitor | kisubitor |
+| 2nd pl. | isubitotor | isubitotor |
+| 3rd pl. | esubitotor | asubitotor |
+
+| Person | Past (Abu) Tense | Far Past (Abu) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | abu kasubia | abu kasubitor |
+| 2nd sing. | ibu kosubia | ibu kosubitor |
+| 3rd sing. | abu kosubia | abu kosubitor |
+| 1st pl. | apotu kasubiata | apotu kasubitotor |
+| 2nd pl. | ipotu kosubiata | ipotu kosubitotor |
+| 3rd pl. | apotu kasubiata | apotu kosubitotor |
+
+| Person | Habitual Tense | "Not Yet" Tense |
+| :--- | :--- | :--- |
+| 1st sing. | Not found | The eriŋa or eroko is made prepositional:<br>eriŋar (k)esuba<br>or<br>erokor (k)esuba |
+| 2nd sing. | Not found | (same) |
+| 3rd sing. | Not found | (same) |
+| 1st pl. | Not found | (same) |
+| 2nd pl. | Not found | (same) |
+| 3rd pl. | Not found | (same) |
+
+| Person | Perfect (Root) Tense | Dependent Perfect (K-) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | Not found | kasubia |
+| 2nd sing. | Not found | kisubia |
+| 3rd sing. | Not found | kesubia |
+| 1st pl. | Not found | kisubia |
+| 2nd pl. | Not found | kisubiata |
+| 3rd pl. | Not found | kesubiata |
+
+### CONTEMPORARY PRESENT AND PAST (KO-) TENSE
+
+| Person | Singular | Plural |
+| :--- | :--- | :--- |
+| 1st | kasubia | kasubiata |
+| 2nd | kosubia | kosubiata |
+| 3rd | kosubia | kosubiata |
+
+
+=== PDF PAGE 103 (p. 82) ===
+
+[Foldout Page: Complete Passive and Passive—Prepositional Suffix Conjugation Tables]
+
+## PASSIVE
+
+INFINITIVE: asubio  [scan trims left margin: "...IVE", "...o"]
+
+### SUBJUNCTIVE/IMPERATIVE AND CONDITIONAL
+
+| Person | Subjunctive/Imperative | Conditional |
+| :--- | :--- | :--- |
+| 1st sing. | kasubi | ti . . . . kasuba |
+| 2nd sing. | kosubi | ti . . . . kisuba |
+| 3rd sing. | kosubai | ti . . . . kesuba |
+| 1st pl. | kosubi | ti . . . . kisuba |
+| 2nd pl. | kosubi | ti . . . . kisuba |
+| 3rd pl. | kosubai | ti . . . . kesuba |
+
+### INDICATIVE
+
+| Person | Present Tense‡ | Past (A- or E-) Tense‡ |
+| :--- | :--- | :--- |
+| 1st sing. | asubio | asubio |
+| 2nd sing. | isubio | isubio |
+| 3rd sing. | esubio | asubio |
+| 1st pl. | kisubio | kisubio |
+| 2nd pl. | isubio | isubio |
+| 3rd pl. | esubio | asubio |
+
+| Person | Perfect (-itai) Tense‡ | Past Perfect (-itai) Tense‡ |
+| :--- | :--- | :--- |
+| 1st sing. | asubitai | asubitai |
+| 2nd sing. | isubitai | isubitai |
+| 3rd sing. | esubitai | asubitai |
+| 1st pl. | kisubitai | kisubitai |
+| 2nd pl. | isubitai | isubitai |
+| 3rd pl. | esubitai | asubitai |
+
+| Person | Past (Aponi) Tense | Far Past (Aponi) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | aponi kasubi | aponi kasubitete |
+| 2nd sing. | aponi kosubi | aponi kosubitete |
+| 3rd sing. | aponi kosubai | aponi kosubitete |
+| 1st pl. | aponi kosubi | aponi kosubitete |
+| 2nd pl. | aponi kosubi | aponi kosubitete |
+| 3rd pl. | aponi kosubai | aponi kosubitete |
+
+| Person | Habitual Tense | "Not Yet" Tense |
+| :--- | :--- | :--- |
+| All persons | Not found | Not found |
+
+| Person | Perfect (Root) Tense | Dependent Perfect (K-) Tense |
+| :--- | :--- | :--- |
+| All persons | Not found | Not found |
+
+### CONTEMPORARY PRESENT AND PAST (KO-) TENSE†
+
+| Person | Singular | Plural |
+| :--- | :--- | :--- |
+| 1st | (kasubio) | (kasubio) |
+| 2nd | (kosubio) | (kosubio) |
+| 3rd | (kosubio) | (kosubio) |
+
+
+## PASSIVE—PREPOSITIONAL SUFFIX
+
+INFINITIVE: asubere
+
+### SUBJUNCTIVE/IMPERATIVE AND CONDITIONAL
+
+| Person | Subjunctive/Imperative | Conditional |
+| :--- | :--- | :--- |
+| 1st sing. | kasubere | ti . . . . kasubere |
+| 2nd sing. | kosubere | ti . . . . kisubere |
+| 3rd sing. | kosubere | ti . . . . kesubere |
+| 1st pl. | kosubere | ti . . . . kisubere |
+| 2nd pl. | kosubere | ti . . . . kisubere |
+| 3rd pl. | kosubere | ti . . . . kesubere |
+
+### INDICATIVE
+
+| Person | Present Tense‡ | Past (A- or E-) Tense‡ |
+| :--- | :--- | :--- |
+| 1st sing. | asubere | asubere |
+| 2nd sing. | isubere | isubere |
+| 3rd sing. | esubere | asubere |
+| 1st pl. | kisubere | kisubere |
+| 2nd pl. | isubere | isubere |
+| 3rd pl. | esubere | asubere |
+
+| Person | Perfect (-itere) Tense‡ | Past Perfect (-itere) Tense‡ |
+| :--- | :--- | :--- |
+| 1st sing. | asubitere | asubitere |
+| 2nd sing. | isubitere | isubitere |
+| 3rd sing. | esubitere | asubitere |
+| 1st pl. | kisubitere | kisubitere |
+| 2nd pl. | isubitere | isubitere |
+| 3rd pl. | esubitere | asubitere |
+
+| Person | Past (Aponi) Tense | Far Past (Aponi) Tense |
+| :--- | :--- | :--- |
+| 1st sing. | aponi kasubere | aponi kasubitere |
+| 2nd sing. | aponi kosubere | aponi kosubitere |
+| 3rd sing. | aponi kosubere | aponi kosubitere |
+| 1st pl. | aponi kosubere | aponi kosubitere |
+| 2nd pl. | aponi kosubere | aponi kosubitere |
+| 3rd pl. | aponi kosubere | aponi kosubitere |
+
+| Person | Habitual Tense | "Not Yet" Tense |
+| :--- | :--- | :--- |
+| All persons | Not found | Not found |
+
+| Person | Perfect (Root) Tense | Dependent Perfect (K-) Tense |
+| :--- | :--- | :--- |
+| All persons | Not found | Not found |
+
+### CONTEMPORARY PRESENT AND PAST (KO-) TENSE†
+
+| Person | Singular | Plural |
+| :--- | :--- | :--- |
+| 1st | (kasubere) | (kasubere) |
+| 2nd | (kosubere) | (kosubere) |
+| 3rd | (kosubere) | (kosubere) |
+
+
+### FOOTNOTES (PAGE 103)
+
+† [These] forms are rarely, if ever, found, for it is normal in passive sentences [to use] the active in the "contemporary" clause:
+  e.g. Ebokio aipany kodukete etogo
+       The hole is being dug while the house is being built
+
+‡ Note that the "contained object" [form is] required in the first and second person [singular and] second person plural. See Preface to the S[econd Edition, p. xvii].
+
+[Note on right margin: The foldout sheet continues to a third table (the Reflexive conjugation) which is trimmed at the right scanner edge:
+INFINITI[VE]
+asuba
+PE[RFECT...]
+P[AST...]
+1
+H[ABITUAL...]
+PERF[ECT...] ]
+

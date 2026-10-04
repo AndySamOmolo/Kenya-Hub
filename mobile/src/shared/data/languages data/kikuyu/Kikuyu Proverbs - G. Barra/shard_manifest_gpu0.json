@@ -1,0 +1,53 @@
+{
+  "chunks": [
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/1000 Kikuyu Proverbs - G. Barra.pdf",
+      "pdf_sha1": "38fbab966c1c1bbe",
+      "start": 0,
+      "end": 10,
+      "size": 10
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/1000 Kikuyu Proverbs - G. Barra.pdf",
+      "pdf_sha1": "38fbab966c1c1bbe",
+      "start": 20,
+      "end": 30,
+      "size": 10
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/1000 Kikuyu Proverbs - G. Barra.pdf",
+      "pdf_sha1": "38fbab966c1c1bbe",
+      "start": 40,
+      "end": 50,
+      "size": 10
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/1000 Kikuyu Proverbs - G. Barra.pdf",
+      "pdf_sha1": "38fbab966c1c1bbe",
+      "start": 60,
+      "end": 70,
+      "size": 10
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/1000 Kikuyu Proverbs - G. Barra.pdf",
+      "pdf_sha1": "38fbab966c1c1bbe",
+      "start": 80,
+      "end": 90,
+      "size": 10
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/1000 Kikuyu Proverbs - G. Barra.pdf",
+      "pdf_sha1": "38fbab966c1c1bbe",
+      "start": 100,
+      "end": 110,
+      "size": 10
+    },
+    {
+      "pdf_path": "/kaggle/input/datasets/andysamomolo/pdfs-to-extract/1000 Kikuyu Proverbs - G. Barra.pdf",
+      "pdf_sha1": "38fbab966c1c1bbe",
+      "start": 120,
+      "end": 125,
+      "size": 5
+    }
+  ]
+}

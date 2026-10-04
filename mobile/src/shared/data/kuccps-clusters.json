@@ -1,0 +1,197 @@
+{
+  "source": "Kenya Universities and Colleges Central Placement Service (KUCCPS)",
+  "lastUpdated": "2025-03-01",
+  "gradePoints": {
+    "A": 12, "A-": 11, "B+": 10, "B": 9, "B-": 8,
+    "C+": 7, "C": 6, "C-": 5, "D+": 4, "D": 3, "D-": 2, "E": 1
+  },
+  "subjects": [
+    "English", "Kiswahili", "Mathematics", "Biology", "Physics", "Chemistry",
+    "History", "Geography", "CRE", "IRE", "HRE",
+    "Home Science", "Art & Design", "Agriculture", "Computer Studies",
+    "Aviation Technology", "French", "German", "Arabic", "Kenyan Sign Language",
+    "Music", "Business Studies"
+  ],
+  "clusters": [
+    {
+      "id": 1,
+      "name": "Cluster 1 — Medicine, Pharmacy, Dentistry",
+      "subjects": [
+        { "name": "Biology", "weight": 2 },
+        { "name": "Chemistry", "weight": 1 },
+        { "name": "Physics/Mathematics", "weight": 0.5 },
+        { "name": "English/Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Medicine & Surgery", "Pharmacy", "Dentistry", "Veterinary Medicine"],
+      "typicalCutoff": "40–48"
+    },
+    {
+      "id": 2,
+      "name": "Cluster 2 — Engineering & Technology",
+      "subjects": [
+        { "name": "Mathematics", "weight": 2 },
+        { "name": "Physics", "weight": 1 },
+        { "name": "Chemistry", "weight": 0.5 },
+        { "name": "English/Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Electrical Engineering", "Mechanical Engineering", "Civil Engineering", "Computer Science"],
+      "typicalCutoff": "36–46"
+    },
+    {
+      "id": 3,
+      "name": "Cluster 3 — Sciences (General)",
+      "subjects": [
+        { "name": "Biology", "weight": 2 },
+        { "name": "Chemistry", "weight": 1 },
+        { "name": "Mathematics/Physics", "weight": 0.5 },
+        { "name": "English/Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Nursing", "Clinical Medicine", "Laboratory Sciences", "Environmental Science", "Food Science"],
+      "typicalCutoff": "30–40"
+    },
+    {
+      "id": 4,
+      "name": "Cluster 4 — Geosciences",
+      "subjects": [
+        { "name": "Geography", "weight": 2 },
+        { "name": "Mathematics", "weight": 1 },
+        { "name": "Physics/Chemistry", "weight": 0.5 },
+        { "name": "English/Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Geology", "Geography", "Meteorology", "Environmental Planning"],
+      "typicalCutoff": "28–38"
+    },
+    {
+      "id": 5,
+      "name": "Cluster 5 — Architecture & Built Environment",
+      "subjects": [
+        { "name": "Mathematics", "weight": 2 },
+        { "name": "Physics", "weight": 1 },
+        { "name": "Art & Design/Geography", "weight": 0.5 },
+        { "name": "English/Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Architecture", "Quantity Surveying", "Urban Planning", "Construction Management"],
+      "typicalCutoff": "32–42"
+    },
+    {
+      "id": 6,
+      "name": "Cluster 6 — Agriculture & Veterinary",
+      "subjects": [
+        { "name": "Biology", "weight": 2 },
+        { "name": "Chemistry/Agriculture", "weight": 1 },
+        { "name": "Mathematics/Physics", "weight": 0.5 },
+        { "name": "English/Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Agriculture", "Animal Science", "Horticulture", "Range Management"],
+      "typicalCutoff": "25–35"
+    },
+    {
+      "id": 7,
+      "name": "Cluster 7 — Commerce & Business",
+      "subjects": [
+        { "name": "Mathematics", "weight": 2 },
+        { "name": "English", "weight": 1 },
+        { "name": "Business Studies/Economics", "weight": 0.5 },
+        { "name": "Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Commerce", "Business Administration", "Finance", "Accounting", "Insurance", "Marketing"],
+      "typicalCutoff": "28–40"
+    },
+    {
+      "id": 8,
+      "name": "Cluster 8 — Economics & Statistics",
+      "subjects": [
+        { "name": "Mathematics", "weight": 2 },
+        { "name": "English", "weight": 1 },
+        { "name": "Geography/History", "weight": 0.5 },
+        { "name": "Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Economics", "Statistics", "Actuarial Science", "Development Studies"],
+      "typicalCutoff": "30–42"
+    },
+    {
+      "id": 9,
+      "name": "Cluster 9 — Arts & Humanities",
+      "subjects": [
+        { "name": "English", "weight": 2 },
+        { "name": "Kiswahili", "weight": 1 },
+        { "name": "History/Geography/CRE", "weight": 0.5 },
+        { "name": "Any other subject", "weight": 0.5 }
+      ],
+      "courses": ["Literature", "Linguistics", "Philosophy", "History", "Anthropology"],
+      "typicalCutoff": "24–34"
+    },
+    {
+      "id": 10,
+      "name": "Cluster 10 — Law",
+      "subjects": [
+        { "name": "English", "weight": 2 },
+        { "name": "Kiswahili", "weight": 1 },
+        { "name": "History/CRE/IRE", "weight": 0.5 },
+        { "name": "Mathematics/Geography", "weight": 0.5 }
+      ],
+      "courses": ["Law (LLB)"],
+      "typicalCutoff": "38–46"
+    },
+    {
+      "id": 11,
+      "name": "Cluster 11 — Education (Arts)",
+      "subjects": [
+        { "name": "English", "weight": 2 },
+        { "name": "Kiswahili", "weight": 1 },
+        { "name": "History/Geography/CRE", "weight": 0.5 },
+        { "name": "Any other subject", "weight": 0.5 }
+      ],
+      "courses": ["B.Ed Arts", "Education (Kiswahili/English)", "Education (History/Geography)"],
+      "typicalCutoff": "25–35"
+    },
+    {
+      "id": 12,
+      "name": "Cluster 12 — Education (Science)",
+      "subjects": [
+        { "name": "Mathematics", "weight": 2 },
+        { "name": "Physics/Chemistry/Biology", "weight": 1 },
+        { "name": "English", "weight": 0.5 },
+        { "name": "Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["B.Ed Science", "Education (Mathematics/Physics)", "Education (Biology/Chemistry)"],
+      "typicalCutoff": "28–38"
+    },
+    {
+      "id": 13,
+      "name": "Cluster 13 — Communication & Media",
+      "subjects": [
+        { "name": "English", "weight": 2 },
+        { "name": "Kiswahili", "weight": 1 },
+        { "name": "History/Geography", "weight": 0.5 },
+        { "name": "Any other subject", "weight": 0.5 }
+      ],
+      "courses": ["Journalism", "Mass Communication", "Public Relations", "Media Studies"],
+      "typicalCutoff": "26–36"
+    },
+    {
+      "id": 14,
+      "name": "Cluster 14 — Psychology & Social Work",
+      "subjects": [
+        { "name": "English", "weight": 2 },
+        { "name": "Biology/Home Science", "weight": 1 },
+        { "name": "Kiswahili", "weight": 0.5 },
+        { "name": "History/CRE", "weight": 0.5 }
+      ],
+      "courses": ["Psychology", "Social Work", "Counseling", "Community Development"],
+      "typicalCutoff": "26–36"
+    },
+    {
+      "id": 15,
+      "name": "Cluster 15 — Fine Arts & Design",
+      "subjects": [
+        { "name": "Art & Design", "weight": 2 },
+        { "name": "English", "weight": 1 },
+        { "name": "Mathematics/Physics", "weight": 0.5 },
+        { "name": "Kiswahili", "weight": 0.5 }
+      ],
+      "courses": ["Fine Art", "Design", "Fashion Design", "Interior Design", "Graphic Design"],
+      "typicalCutoff": "22–32"
+    }
+  ]
+}
