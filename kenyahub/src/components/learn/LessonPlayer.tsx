@@ -513,7 +513,7 @@ export default function LessonPlayer({
     const isLastTeachingCard = teachingIndex >= skill.words.length - 1;
 
     return (
-      <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-4">
+      <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-0 sm:px-4">
         <div className="mb-6 flex items-center gap-3">
           <button
             onClick={onQuit}
@@ -651,7 +651,7 @@ export default function LessonPlayer({
      RENDER
      ═══════════════════════════════════════════════════ */
   return (
-    <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-4">
+    <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-0 sm:px-4">
       {/* ─── Top bar: Hearts + Progress ──────────── */}
       <div className="mb-4 flex items-center gap-3 sm:mb-6">
         <button

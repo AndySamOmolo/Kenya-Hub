@@ -27,7 +27,7 @@ export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
     publishedAt: "2026-07-15T10:00:00.000Z",
     updatedAt: "2026-09-01T08:00:00.000Z",
     tags: ["Finance"],
-    readTime: 8,
+    readTime: 3,
     content: `## What Is PAYE?
 
 **Pay As You Earn (PAYE)** is Kenya's system for collecting income tax from employees. Under this system, your employer deducts tax from your gross salary every month and remits it directly to the **Kenya Revenue Authority (KRA)**.
@@ -105,7 +105,7 @@ This guide is for informational purposes only. For official tax compliance, cons
     publishedAt: "2026-08-02T09:00:00.000Z",
     updatedAt: null,
     tags: ["Finance"],
-    readTime: 6,
+    readTime: 2,
     content: `## How M-Pesa Fees Work
 
 M-Pesa, operated by Safaricom, is the most widely used mobile money platform in Kenya with over 30 million active users. Understanding the fee structure helps you make smarter financial decisions.
@@ -181,7 +181,7 @@ Safaricom occasionally adjusts M-Pesa tariffs. Our [M-Pesa Fee Calculator](/tool
     publishedAt: "2026-08-20T08:00:00.000Z",
     updatedAt: null,
     tags: ["Education"],
-    readTime: 7,
+    readTime: 3,
     content: `## What Is CBC?
 
 The **Competency-Based Curriculum (CBC)** is Kenya's education system that replaced the 8-4-4 system. Developed by the **Kenya Institute of Curriculum Development (KICD)**, CBC focuses on developing each learner's unique talents and abilities rather than memorisation and exams.
@@ -285,7 +285,7 @@ For the latest official updates, refer to the [KICD website](https://kicd.ac.ke)
     publishedAt: "2026-06-10T08:00:00.000Z",
     updatedAt: "2026-09-05T10:00:00.000Z",
     tags: ["Government"],
-    readTime: 5,
+    readTime: 2,
     content: `## 2026 Public Holidays Calendar
 
 Kenya observes public holidays as gazetted under the **Public Holidays Act, Chapter 110** of the Laws of Kenya. Here is the complete list for 2026:
@@ -345,7 +345,7 @@ For the interactive version with countdown timers and calendar integration, visi
     publishedAt: "2026-09-01T09:00:00.000Z",
     updatedAt: null,
     tags: ["Education"],
-    readTime: 7,
+    readTime: 3,
     content: `## What Are Cluster Points?
 
 **Cluster points** are the scores used by the **Kenya Universities and Colleges Central Placement Service (KUCCPS)** to determine which university courses a KCSE candidate qualifies for. Unlike your mean grade (which is a simple average), cluster points are **weighted scores** that prioritise subjects relevant to your chosen course.
@@ -441,7 +441,7 @@ For the official placement portal and application deadlines, visit [KUCCPS](http
     publishedAt: "2026-07-28T11:00:00.000Z",
     updatedAt: null,
     tags: ["Transport"],
-    readTime: 5,
+    readTime: 2,
     content: `## Kenyan Number Plate Format
 
 Standard Kenyan vehicle registration plates follow the format **KXX 000X** — where K stands for Kenya, followed by two letters, three numbers, and a final letter. For example: **KDG 456A**.
@@ -515,7 +515,7 @@ For a complete list of traffic offences and fines, see the [KenyaHub Traffic Fin
     publishedAt: "2026-09-28T07:00:00.000Z",
     updatedAt: "2026-09-28T07:00:00.000Z",
     tags: ["Culture & History"],
-    readTime: 11,
+    readTime: 6,
     sources: [{
       sourceId: "bantu-beliefs",
       title: "Bantu Beliefs and Magic",
@@ -650,7 +650,7 @@ While mainstream religious affiliations in Kenya have evolved over the past cent
     publishedAt: "2026-09-28T09:00:00.000Z",
     updatedAt: "2026-09-28T09:00:00.000Z",
     tags: ["Culture & History"],
-    readTime: 9,
+    readTime: 4,
     sources: [{
       sourceId: "bantu-beliefs",
       title: "Bantu Beliefs and Magic",
@@ -742,7 +742,7 @@ The technological legacy of Kenya's pre-colonial ironworkers did not vanish with
     publishedAt: "2026-10-01T07:00:00.000Z",
     updatedAt: null,
     tags: ["Culture & History", "Environment"],
-    readTime: 7,
+    readTime: 2,
     sources: [{
       sourceId: "bantu-beliefs",
       title: "Bantu Beliefs and Magic",
@@ -770,7 +770,7 @@ This article uses the source for historical context only. It does not prescribe 
     publishedAt: "2026-10-01T08:00:00.000Z",
     updatedAt: null,
     tags: ["Culture & History"],
-    readTime: 8,
+    readTime: 2,
     sources: [{
       sourceId: "bantu-beliefs",
       title: "Bantu Beliefs and Magic",
@@ -796,7 +796,7 @@ Hobley recorded beliefs through a colonial administrative lens. Contemporary Kik
     publishedAt: "2026-10-01T09:00:00.000Z",
     updatedAt: null,
     tags: ["Culture & History"],
-    readTime: 7,
+    readTime: 2,
     sources: [{
       sourceId: "bantu-beliefs",
       title: "Bantu Beliefs and Magic",
@@ -820,7 +820,7 @@ This is not an instructional account of initiation. It does not reproduce restri
     publishedAt: "2026-10-01T10:00:00.000Z",
     updatedAt: null,
     tags: ["Culture & History", "Government"],
-    readTime: 8,
+    readTime: 2,
     sources: [{
       sourceId: "bantu-beliefs",
       title: "Bantu Beliefs and Magic",
@@ -854,7 +854,7 @@ The best use of this source is comparative and critical: ask how communities doc
       "Indigenous Knowledge",
       "Kenyan Heritage",
     ],
-    readTime: 14,
+    readTime: 12,
     sources: [
       {
         sourceId: "bantu-beliefs",
@@ -1117,7 +1117,7 @@ When we protect the canopy, bless the seeds, purify our contamination, and resol
     publishedAt: "2026-09-28T09:30:00.000Z",
     updatedAt: "2026-09-28T09:30:00.000Z",
     tags: ["Languages"],
-    readTime: 10,
+    readTime: 4,
     content: `## A Different Way to Classify the Universe
 
 If you have ever tried learning **Swahili**, **Gĩkũyũ**, **Oluluyia**, or **Ekegusii**, you might have noticed something remarkable: **there are no grammatical genders for masculine or feminine.**
@@ -1233,7 +1233,7 @@ Many language learners assume that having 16 noun classes makes Bantu languages 
     publishedAt: "2026-10-02T12:00:00.000Z",
     updatedAt: null,
     tags: ["Culture & History", "Government", "Constitution"],
-    readTime: 9,
+    readTime: 5,
     sources: [
       {
         sourceId: "bantu-beliefs",
@@ -1334,7 +1334,7 @@ The pre-colonial Akamba and Agĩkũyũ demonstrated that a society does not requ
     publishedAt: "2026-10-03T10:00:00.000Z",
     updatedAt: null,
     tags: ["Languages", "Culture & History"],
-    readTime: 8,
+    readTime: 4,
     sources: [
       {
         sourceId: "bukusu-dictionary-marlo",

@@ -163,48 +163,50 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       )}
 
       {view !== "playing" && (
-        <div className="mb-4 flex justify-center gap-1 sm:mb-6">
-          <button
-            onClick={() => setView("lessons")}
-            role="tab"
-            aria-selected={view === "lessons"}
-            className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${
-              view === "lessons"
-                ? "bg-gold text-kenya-black"
-                : "text-text-muted active:bg-bg-card sm:hover:text-text-primary"
-            }`}
-          >
-            <GraduationCap className="h-4 w-4" />
-            <span>Lessons</span>
-          </button>
-          <button
-            onClick={() => setView("games")}
-            role="tab"
-            aria-selected={view === "games"}
-            className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${
-              view === "games"
-                ? "bg-gold text-kenya-black"
-                : "text-text-muted active:bg-bg-card sm:hover:text-text-primary"
-            }`}
-          >
-            <Gamepad2 className="h-4 w-4" />
-            <span>Games</span>
-          </button>
-          {course.grammarSections && course.grammarSections.length > 0 && (
+        <div className="mb-6 flex justify-center px-2 sm:px-4">
+          <div className="inline-flex items-center gap-1 rounded-2xl border border-border bg-bg-card p-1 shadow-sm max-w-full overflow-x-auto scrollbar-hide">
             <button
-              onClick={() => setView("grammar")}
+              onClick={() => setView("lessons")}
               role="tab"
-              aria-selected={view === "grammar"}
-              className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${
-                view === "grammar"
-                  ? "bg-gold text-kenya-black"
-                  : "text-text-muted active:bg-bg-card sm:hover:text-text-primary"
+              aria-selected={view === "lessons"}
+              className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3.5 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
+                view === "lessons"
+                  ? "bg-gold text-kenya-black shadow-xs font-bold"
+                  : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
               }`}
             >
-              <BookOpen className="h-4 w-4" />
-              <span>Grammar</span>
+              <GraduationCap className="h-4 w-4 shrink-0" />
+              <span>Lessons</span>
             </button>
-          )}
+            <button
+              onClick={() => setView("games")}
+              role="tab"
+              aria-selected={view === "games"}
+              className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3.5 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
+                view === "games"
+                  ? "bg-gold text-kenya-black shadow-xs font-bold"
+                  : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
+              }`}
+            >
+              <Gamepad2 className="h-4 w-4 shrink-0" />
+              <span>Games</span>
+            </button>
+            {course.grammarSections && course.grammarSections.length > 0 && (
+              <button
+                onClick={() => setView("grammar")}
+                role="tab"
+                aria-selected={view === "grammar"}
+                className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3.5 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
+                  view === "grammar"
+                    ? "bg-gold text-kenya-black shadow-xs font-bold"
+                    : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
+                }`}
+              >
+                <BookOpen className="h-4 w-4 shrink-0" />
+                <span>Grammar</span>
+              </button>
+            )}
+          </div>
         </div>
       )}
 

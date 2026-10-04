@@ -71,7 +71,7 @@ export default function SkillTree({
   ).length;
 
   return (
-    <div className="mx-auto max-w-2xl px-4 pb-8">
+    <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
       {/* ─── Header ──────────────────────────────── */}
       <div className="mb-6">
         {/* Language badge */}

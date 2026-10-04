@@ -95,7 +95,7 @@ export default function GamesHub({
 
   if (activeGame === "menu") {
     return (
-      <div className="mx-auto max-w-2xl px-4 pb-8">
+      <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
         {/* Header */}
         <div className="mb-6">
           <button
@@ -239,7 +239,7 @@ export default function GamesHub({
   );
 
   return (
-    <div className="mx-auto max-w-2xl px-4 pb-8">
+    <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
       {activeGame === "wordle" && (
         <>
           {gameHeader("Wordle", "🟩")}
@@ -467,7 +467,7 @@ function WordleGame({ allWords, languageName }: GameProps) {
                 return (
                   <div
                     key={colIdx}
-                    className={`flex h-12 w-12 items-center justify-center rounded-lg border-2 text-lg font-bold uppercase transition-all sm:h-14 sm:w-14 sm:text-xl ${
+                    className={`flex h-10 w-10 items-center justify-center rounded-lg border-2 text-base font-bold uppercase transition-all sm:h-12 sm:w-12 sm:text-lg md:h-14 md:w-14 md:text-xl ${
                       status === "correct"
                         ? "border-kenya-green bg-kenya-green text-white animate-pop-correct"
                         : status === "present"
@@ -540,9 +540,9 @@ function WordleGame({ allWords, languageName }: GameProps) {
 
       {/* Keyboard */}
       {!gameOver && (
-        <div className="flex flex-col items-center gap-1.5">
+        <div className="flex flex-col items-center gap-1.5 w-full max-w-md mx-auto px-1">
           {KEYBOARD_ROWS.map((row, i) => (
-            <div key={i} className="flex gap-1">
+            <div key={i} className="flex gap-1 justify-center w-full">
               {row.map((key) => {
                 const isSpecial = key === "Enter" || key === "⌫";
                 const status = keyStatuses[key];
@@ -553,10 +553,10 @@ function WordleGame({ allWords, languageName }: GameProps) {
                     onClick={() =>
                       handleKey(key === "⌫" ? "Backspace" : key)
                     }
-                    className={`flex items-center justify-center rounded-lg font-bold transition-all active:scale-95 ${
+                    className={`flex items-center justify-center rounded-md sm:rounded-lg font-bold transition-all active:scale-95 ${
                       isSpecial
-                        ? "h-11 px-2.5 text-[0.6rem] sm:px-4 sm:text-xs"
-                        : "h-11 w-8 text-sm sm:w-10"
+                        ? "h-10 sm:h-11 px-1.5 sm:px-3 text-[0.65rem] sm:text-xs shrink-0"
+                        : "h-10 sm:h-11 flex-1 min-w-0 max-w-[36px] sm:max-w-[42px] text-xs sm:text-sm"
                     } ${
                       status === "correct"
                         ? "bg-kenya-green text-white"
@@ -704,21 +704,28 @@ function ScrambleGame({ allWords, languageName }: GameProps) {
       </div>
 
       {/* Built word */}
-      <div className={`mb-4 flex min-h-[3.5rem] items-center justify-center gap-1.5 rounded-xl border-2 border-dashed p-3 ${
+      <div className={`mb-4 flex min-h-[3.5rem] flex-wrap items-center justify-center gap-1.5 rounded-xl border-2 border-dashed p-3 ${
         solved ? "border-kenya-green bg-kenya-green/5" : wrong ? "border-red-400 bg-red-400/5 animate-shake" : "border-border"
       }`}>
         {builtWord ? (
-          builtWord.split("").map((ch, i) => (
-            <span
+          selected.map((scrambleIdx, i) => (
+            <button
               key={i}
-              className={`flex h-10 w-10 items-center justify-center rounded-lg text-lg font-bold uppercase ${
+              type="button"
+              disabled={solved}
+              onClick={() => {
+                if (solved) return;
+                setSelected((prev) => prev.filter((_, idx) => idx !== i));
+              }}
+              title="Tap to remove"
+              className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg text-base sm:text-lg font-bold uppercase transition-transform active:scale-90 ${
                 solved
-                  ? "bg-kenya-green text-white"
-                  : "bg-gold/10 text-gold"
+                  ? "bg-kenya-green text-white cursor-default"
+                  : "bg-gold/10 text-gold border border-gold/30 hover:border-gold hover:bg-gold/20 cursor-pointer"
               }`}
             >
-              {ch}
-            </span>
+              {scrambled[scrambleIdx]}
+            </button>
           ))
         ) : (
           <p className="text-sm italic text-text-muted">Tap letters below</p>
@@ -735,10 +742,10 @@ function ScrambleGame({ allWords, languageName }: GameProps) {
                 key={idx}
                 onClick={() => handleTap(idx)}
                 disabled={isUsed}
-                className={`flex h-12 w-12 items-center justify-center rounded-xl text-lg font-bold uppercase transition-all active:scale-90 sm:h-14 sm:w-14 ${
+                className={`flex h-11 w-11 sm:h-13 sm:w-13 items-center justify-center rounded-xl text-base sm:text-lg font-bold uppercase transition-all active:scale-90 ${
                   isUsed
-                    ? "border border-border/20 bg-bg-elevated/30 text-text-muted/20"
-                    : "border-2 border-border bg-bg-card text-text-primary active:border-gold sm:hover:border-gold/50"
+                    ? "border border-border/20 bg-bg-elevated/30 text-text-muted/20 cursor-not-allowed"
+                    : "border-2 border-border bg-bg-card text-text-primary active:border-gold sm:hover:border-gold/50 shadow-xs"
                 }`}
               >
                 {letter}
@@ -1205,7 +1212,7 @@ function MemoryGame({ allWords, languageName }: GameProps) {
             >
               {isFlipped ? (
                 <span
-                  className={`text-xs font-semibold break-words sm:text-sm ${
+                  className={`text-[0.7rem] sm:text-xs md:text-sm font-semibold leading-tight line-clamp-3 break-words px-0.5 ${
                     isMatched
                       ? "text-kenya-green"
                       : card.type === "target"
@@ -1216,7 +1223,7 @@ function MemoryGame({ allWords, languageName }: GameProps) {
                   {card.text}
                 </span>
               ) : (
-                <span className="text-2xl opacity-30">?</span>
+                <span className="text-xl sm:text-2xl opacity-30">?</span>
               )}
               {/* Type indicator */}
               {isFlipped && (

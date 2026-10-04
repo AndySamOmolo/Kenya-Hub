@@ -63,7 +63,6 @@ export const metadata: Metadata = {
     description: "Free tools with official Kenyan data. No sign-up needed.",
     images: ["/og-image.png"],
   },
-  robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {

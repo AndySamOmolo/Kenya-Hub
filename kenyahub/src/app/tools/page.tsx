@@ -150,71 +150,80 @@ function ToolsContent() {
         </div>
       )}
 
-      {/* Search */}
-      <div className="mb-6">
-        <SearchInput
-          type="text"
-          placeholder="Search tools — e.g. 'PAYE', 'matatu', 'CBC', 'M-Pesa'..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="input-field max-w-lg text-sm"
-          id="tools-search"
-         onClear={() => setSearchQuery("")} />
-      </div>
-
-      <div className="flex flex-wrap items-center gap-3 mb-8">
-        <label htmlFor="tools-sort" className="text-xs font-semibold uppercase tracking-wider text-text-muted">
-          Sort tools
-        </label>
-        <div className="relative inline-block">
-          {sortBy === "popular" ? (
-            <TrendingUp className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" />
-          ) : sortBy === "category" ? (
-            <LayoutList className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" />
-          ) : (
-            <ArrowDownAZ className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gold" />
-          )}
-          <select
-            id="tools-sort"
-            value={sortBy}
-            onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
-            className="select-field select-field--icon-left !pl-9 sm:!pl-10 text-sm w-auto"
-          >
-            <option value="popular">Most used</option>
-            <option value="alphabetical">A-Z</option>
-            <option value="category">Category</option>
-          </select>
+      {/* Search and Sort */}
+      <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-between mb-6">
+        <div className="flex-1 max-w-lg">
+          <SearchInput
+            type="text"
+            placeholder="Search tools — e.g. 'PAYE', 'matatu', 'CBC', 'M-Pesa'..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="input-field w-full text-sm"
+            id="tools-search"
+            onClear={() => setSearchQuery("")}
+          />
+        </div>
+        <div className="flex items-center gap-2 shrink-0">
+          <label htmlFor="tools-sort" className="text-xs font-semibold uppercase tracking-wider text-text-muted shrink-0">
+            Sort:
+          </label>
+          <div className="relative inline-flex items-center">
+            {sortBy === "popular" ? (
+              <TrendingUp className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
+            ) : sortBy === "category" ? (
+              <LayoutList className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
+            ) : (
+              <ArrowDownAZ className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
+            )}
+            <select
+              id="tools-sort"
+              value={sortBy}
+              onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
+              className="appearance-none !rounded-full !py-1.5 !pl-8 !pr-8 !text-xs !font-medium bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold transition-all cursor-pointer focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold/30"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 12 12'%3E%3Cpath fill='%238C8070' d='M6 8L1 3h10z'/%3E%3C/svg%3E")`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'right 0.65rem center',
+              }}
+            >
+              <option value="popular">Most used</option>
+              <option value="alphabetical">A-Z</option>
+              <option value="category">Category</option>
+            </select>
+          </div>
         </div>
       </div>
 
-      {/* Category Tabs */}
-      <div className="flex flex-wrap gap-2 mb-8">
-        <button
-          onClick={() => setSelectedCategory("all")}
-          className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-            selectedCategory === "all"
-              ? "bg-gold text-kenya-black"
-              : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
-          }`}
-        >
-          All ({TOOLS.length})
-        </button>
-        {TOOL_CATEGORIES.map((cat) => {
-          const count = TOOLS.filter((t) => t.category === cat.id).length;
-          return (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-                selectedCategory === cat.id
-                  ? "bg-gold text-kenya-black"
-                  : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
-              }`}
-            >
-              <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name} ({count})
-            </button>
-          );
-        })}
+      {/* Category Tabs — horizontal scroll on mobile */}
+      <div className="-mx-4 px-4 sm:mx-0 sm:px-0 mb-8">
+        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide sm:flex-wrap sm:overflow-visible sm:pb-0">
+          <button
+            onClick={() => setSelectedCategory("all")}
+            className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+              selectedCategory === "all"
+                ? "bg-gold text-kenya-black"
+                : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
+            }`}
+          >
+            All ({TOOLS.length})
+          </button>
+          {TOOL_CATEGORIES.map((cat) => {
+            const count = TOOLS.filter((t) => t.category === cat.id).length;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id)}
+                className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-all whitespace-nowrap ${
+                  selectedCategory === cat.id
+                    ? "bg-gold text-kenya-black"
+                    : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
+                }`}
+              >
+                <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name} ({count})
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* Results count */}

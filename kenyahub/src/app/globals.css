@@ -964,3 +964,12 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
 .animate-pop-correct { animation: pop-correct 0.3s ease; }
 .animate-tile-pop { animation: tile-pop 0.2s ease; }
 .animate-countdown-pulse { animation: countdown-pulse 1s ease infinite; }
+
+/* Hide scrollbars for overflow-x horizontal swipe on mobile */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
