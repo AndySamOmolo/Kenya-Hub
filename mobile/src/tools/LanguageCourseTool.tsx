@@ -61,6 +61,8 @@ export function LanguageLearningTool() {
   const [selectedLang, setSelectedLang] = useState<string>("kikuyu");
   const [selectedUnitIdx, setSelectedUnitIdx] = useState<number>(0);
   const [selectedSkillIdx, setSelectedSkillIdx] = useState<number>(0);
+  const [courseMode, setCourseMode] = useState<"directory" | "course">("directory");
+  const [progressMap, setProgressMap] = useState<Record<string, { xp: number; streak: number }>>({});
 
   // Main Page View: Lessons, Games, Grammar
   const [mainView, setMainView] = useState<"lessons" | "games" | "grammar">("lessons");
@@ -98,6 +100,29 @@ export function LanguageLearningTool() {
       }
     });
   }, [selectedLang]);
+
+  // Load progress map for all courses
+  useEffect(() => {
+    Promise.all(
+      availableCourseIds.map(async (id) => {
+        const raw = await AsyncStorage.getItem(`kh-learn-progress-${id}`);
+        if (raw) {
+          try {
+            return { id, data: JSON.parse(raw) };
+          } catch {
+            return { id, data: { xp: 0, streak: 0 } };
+          }
+        }
+        return { id, data: { xp: 0, streak: 0 } };
+      })
+    ).then((results) => {
+      const map: Record<string, { xp: number; streak: number }> = {};
+      results.forEach((r) => {
+        map[r.id] = r.data;
+      });
+      setProgressMap(map);
+    });
+  }, [availableCourseIds, selectedLang, xp]);
 
   const saveProgress = async (newXp: number, newStreak: number) => {
     setXp(newXp);
@@ -146,22 +171,218 @@ export function LanguageLearningTool() {
     }
   };
 
+  // ─── 1. COURSE DIRECTORY HUB VIEW (MATCHING WEBSITE EXACTLY) ───
+  if (courseMode === "directory") {
+    return (
+      <View style={styles.container}>
+        {/* Hero Card */}
+        <View style={styles.dirHeroCard}>
+          <View style={styles.dirHeroIconBox}>
+            <Ionicons name="chatbubbles" size={32} color={theme.gold} />
+          </View>
+          <Text style={styles.dirHeroTitle}>Learn a Kenyan Language</Text>
+          <Text style={styles.dirHeroDesc}>
+            Interactive lessons with vocabulary, grammar, cultural notes, and spaced repetition. Pick a language and start your journey.
+          </Text>
+
+          {/* Directory Stats Badges */}
+          <View style={styles.dirStatsRow}>
+            <View style={styles.dirStatBadge}>
+              <Ionicons name="book-outline" size={13} color={theme.gold} />
+              <Text style={styles.dirStatBadgeText}>
+                {availableCourseIds.length} courses available
+              </Text>
+            </View>
+            <View style={styles.dirStatBadge}>
+              <Ionicons name="globe-outline" size={13} color={theme.gold} />
+              <Text style={styles.dirStatBadgeText}>2 coming soon</Text>
+            </View>
+          </View>
+        </View>
+
+        {/* Available Courses Section Heading */}
+        <View style={styles.dirSectionHeader}>
+          <Ionicons name="star" size={16} color={theme.gold} />
+          <Text style={styles.dirSectionTitle}>Available Courses</Text>
+        </View>
+
+        {/* Course Cards Grid */}
+        <View style={{ gap: 12 }}>
+          {availableCourseIds.map((id) => {
+            const item = COURSE_REGISTRY[id];
+            const cfg = item.config;
+            const xpData = progressMap[id] || { xp: 0, streak: 0 };
+            const totalSkills = item.units.reduce(
+              (acc, u) => acc + u.skills.length,
+              0
+            );
+
+            return (
+              <Pressable
+                key={id}
+                onPress={() => {
+                  setSelectedLang(id);
+                  setSelectedUnitIdx(0);
+                  setSelectedSkillIdx(0);
+                  setQuizIdx(0);
+                  setSelectedAnswer(null);
+                  setIsAnswerSubmitted(false);
+                  setCourseMode("course");
+                }}
+                style={styles.dirCourseCard}
+              >
+                {/* Top Accent Stripe */}
+                <View
+                  style={[
+                    styles.dirCardStripe,
+                    { backgroundColor: cfg.color || theme.gold },
+                  ]}
+                />
+
+                <View style={styles.dirCardContent}>
+                  <View style={{ flex: 1 }}>
+                    <View style={{ flexDirection: "row", alignItems: "baseline", gap: 6 }}>
+                      <Text style={styles.dirCourseName}>{cfg.name}</Text>
+                      <Text style={styles.dirCourseNative}>({cfg.nativeName})</Text>
+                    </View>
+                    <Text style={styles.dirCourseDesc} numberOfLines={2}>
+                      {cfg.description}
+                    </Text>
+
+                    {/* Metadata Badges */}
+                    <View style={styles.dirMetaRow}>
+                      <View style={styles.dirMetaChip}>
+                        <Ionicons name="people-outline" size={11} color={theme.textMuted} />
+                        <Text style={styles.dirMetaChipText}>{cfg.speakers}</Text>
+                      </View>
+                      <View style={styles.dirMetaChip}>
+                        <Ionicons name="book-outline" size={11} color={theme.textMuted} />
+                        <Text style={styles.dirMetaChipText}>{totalSkills} skills</Text>
+                      </View>
+                      <View style={styles.dirMetaChip}>
+                        <Text style={styles.dirMetaChipText}>{cfg.family}</Text>
+                      </View>
+                    </View>
+
+                    {/* Progress Bar if started */}
+                    {xpData.xp > 0 && (
+                      <View style={styles.dirProgressRow}>
+                        <View style={styles.dirProgressBarBg}>
+                          <View
+                            style={[
+                              styles.dirProgressBarFill,
+                              {
+                                width: `${Math.min(
+                                  100,
+                                  Math.round((xpData.xp / 500) * 100)
+                                )}%`,
+                              },
+                            ]}
+                          />
+                        </View>
+                        <Text style={styles.dirProgressXpText}>
+                          {xpData.xp} XP
+                        </Text>
+                        {xpData.streak > 0 && (
+                          <View style={styles.dirProgressStreak}>
+                            <Ionicons name="flame" size={11} color="#EA580C" />
+                            <Text style={styles.dirProgressStreakText}>
+                              {xpData.streak}d
+                            </Text>
+                          </View>
+                        )}
+                      </View>
+                    )}
+                  </View>
+
+                  <Ionicons
+                    name="chevron-forward"
+                    size={20}
+                    color={theme.gold}
+                    style={{ alignSelf: "center", marginLeft: 8 }}
+                  />
+                </View>
+              </Pressable>
+            );
+          })}
+        </View>
+
+        {/* Coming Soon Section */}
+        <View style={[styles.dirSectionHeader, { marginTop: 16 }]}>
+          <Ionicons name="globe-outline" size={16} color={theme.textMuted} />
+          <Text style={[styles.dirSectionTitle, { color: theme.textSecondary }]}>
+            Coming Soon
+          </Text>
+        </View>
+        <View style={{ gap: 8 }}>
+          {[
+            {
+              id: "swahili",
+              name: "Kiswahili",
+              speakers: "15M+",
+              family: "Bantu",
+              desc: "Kenya's national language — lingua franca of East Africa",
+            },
+            {
+              id: "kalenjin",
+              name: "Kalenjin",
+              speakers: "5.1M",
+              family: "Nilotic",
+              desc: "Highland Nilotic language from Kenya's Rift Valley",
+            },
+          ].map((cs) => (
+            <View key={cs.id} style={styles.dirComingSoonCard}>
+              <View style={{ flex: 1 }}>
+                <Text style={styles.dirComingSoonTitle}>{cs.name}</Text>
+                <Text style={styles.dirComingSoonDesc}>
+                  {cs.speakers} speakers • {cs.family}
+                </Text>
+              </View>
+              <View style={styles.dirSoonBadge}>
+                <Text style={styles.dirSoonBadgeText}>Soon</Text>
+              </View>
+            </View>
+          ))}
+        </View>
+
+        {/* Contribution CTA */}
+        <View style={styles.dirCtaCard}>
+          <Text style={styles.dirCtaTitle}>🤝 Help us grow</Text>
+          <Text style={styles.dirCtaDesc}>
+            Know a Kenyan language? Help add vocabulary, sentences, and grammar data for new courses in the KenyaHub community registry.
+          </Text>
+        </View>
+      </View>
+    );
+  }
+
+  // ─── 2. ACTIVE COURSE VIEW ───
   return (
     <View style={styles.container}>
-      {/* ── 1. Language Carousel ── */}
-      <View style={styles.headerRow}>
-        <Text style={styles.sectionTitle}>
-          Choose Language
-        </Text>
+      {/* Top Header Bar with "← All Courses" and Live Stats */}
+      <View style={styles.courseTopBar}>
+        <Pressable
+          onPress={() => setCourseMode("directory")}
+          style={styles.backToCoursesBtn}
+          hitSlop={8}
+        >
+          <Ionicons name="arrow-back" size={16} color={theme.gold} />
+          <Text style={styles.backToCoursesText}>All Courses</Text>
+        </Pressable>
+
         <View style={styles.progressPill}>
           <Ionicons name="flame" size={14} color="#EA580C" />
           <Text style={styles.streakText}>{streak}d</Text>
+          <View style={styles.progressDivider} />
+          <Ionicons name="heart" size={14} color="#EF4444" />
+          <Text style={styles.streakText}>5</Text>
           <View style={styles.progressDivider} />
           <Ionicons name="trophy" size={14} color={theme.gold} />
           <Text style={styles.xpText}>{xp} XP</Text>
         </View>
       </View>
 
+      {/* Language Carousel */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -199,7 +420,7 @@ export function LanguageLearningTool() {
         })}
       </ScrollView>
 
-      {/* ── 2. Website-Style Segmented Navigation (Lessons | Games | Grammar) ── */}
+      {/* ── Segmented Navigation (Lessons | Games | Grammar) ── */}
       <View style={styles.segmentedNav}>
         <Pressable
           onPress={() => {
@@ -2060,6 +2281,234 @@ function createStyles(colors: ThemeColors) {
       fontSize: 10,
       fontWeight: "700",
       color: colors.kenyaGreenLight,
+    },
+    // Directory styles
+    dirHeroCard: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 18,
+      padding: 18,
+      alignItems: "center",
+      gap: 8,
+    },
+    dirHeroIconBox: {
+      width: 52,
+      height: 52,
+      borderRadius: 26,
+      backgroundColor: `${colors.gold}18`,
+      alignItems: "center",
+      justifyContent: "center",
+      marginBottom: 2,
+    },
+    dirHeroTitle: {
+      fontSize: 20,
+      fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "900",
+      color: colors.textPrimary,
+      textAlign: "center",
+    },
+    dirHeroDesc: {
+      fontSize: 12,
+      color: colors.textSecondary,
+      textAlign: "center",
+      lineHeight: 18,
+    },
+    dirStatsRow: {
+      flexDirection: "row",
+      gap: 8,
+      marginTop: 4,
+    },
+    dirStatBadge: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 5,
+      backgroundColor: colors.bgElevated,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 20,
+      paddingHorizontal: 10,
+      paddingVertical: 4,
+    },
+    dirStatBadgeText: {
+      fontSize: 11,
+      fontWeight: "600",
+      color: colors.textSecondary,
+    },
+    dirSectionHeader: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 6,
+      marginTop: 8,
+      marginBottom: 2,
+    },
+    dirSectionTitle: {
+      fontSize: 14,
+      fontFamily: "Outfit_700Bold",
+      fontWeight: "800",
+      color: colors.textPrimary,
+    },
+    dirCourseCard: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 16,
+      overflow: "hidden",
+    },
+    dirCardStripe: {
+      height: 3,
+      width: "100%",
+    },
+    dirCardContent: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      padding: 14,
+    },
+    dirCourseName: {
+      fontSize: 16,
+      fontFamily: "Outfit_700Bold",
+      fontWeight: "800",
+      color: colors.textPrimary,
+    },
+    dirCourseNative: {
+      fontSize: 12,
+      color: colors.textMuted,
+      fontWeight: "600",
+    },
+    dirCourseDesc: {
+      fontSize: 12,
+      color: colors.textSecondary,
+      marginTop: 4,
+      lineHeight: 16,
+    },
+    dirMetaRow: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: 6,
+      marginTop: 8,
+    },
+    dirMetaChip: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 4,
+      backgroundColor: colors.bgElevated,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 12,
+      paddingHorizontal: 8,
+      paddingVertical: 3,
+    },
+    dirMetaChipText: {
+      fontSize: 10,
+      color: colors.textMuted,
+      fontWeight: "600",
+    },
+    dirProgressRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 8,
+      marginTop: 10,
+    },
+    dirProgressBarBg: {
+      flex: 1,
+      height: 6,
+      borderRadius: 3,
+      backgroundColor: colors.bgElevated,
+      overflow: "hidden",
+    },
+    dirProgressBarFill: {
+      height: "100%",
+      backgroundColor: colors.gold,
+      borderRadius: 3,
+    },
+    dirProgressXpText: {
+      fontSize: 11,
+      fontWeight: "800",
+      color: colors.gold,
+    },
+    dirProgressStreak: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 2,
+    },
+    dirProgressStreakText: {
+      fontSize: 11,
+      fontWeight: "800",
+      color: "#EA580C",
+    },
+    dirComingSoonCard: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 14,
+      padding: 12,
+      opacity: 0.8,
+    },
+    dirComingSoonTitle: {
+      fontSize: 13,
+      fontWeight: "700",
+      color: colors.textPrimary,
+    },
+    dirComingSoonDesc: {
+      fontSize: 11,
+      color: colors.textMuted,
+      marginTop: 2,
+    },
+    dirSoonBadge: {
+      backgroundColor: colors.bgElevated,
+      borderRadius: 6,
+      paddingHorizontal: 8,
+      paddingVertical: 3,
+    },
+    dirSoonBadgeText: {
+      fontSize: 10,
+      fontWeight: "700",
+      color: colors.textMuted,
+    },
+    dirCtaCard: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 14,
+      padding: 14,
+      alignItems: "center",
+      gap: 4,
+      marginTop: 8,
+      marginBottom: 12,
+    },
+    dirCtaTitle: {
+      fontSize: 13,
+      fontWeight: "800",
+      color: colors.textPrimary,
+    },
+    dirCtaDesc: {
+      fontSize: 11,
+      color: colors.textSecondary,
+      textAlign: "center",
+      lineHeight: 16,
+    },
+    courseTopBar: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      marginBottom: 8,
+    },
+    backToCoursesBtn: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 6,
+      backgroundColor: `${colors.gold}15`,
+      borderRadius: 8,
+      paddingHorizontal: 10,
+      paddingVertical: 6,
+    },
+    backToCoursesText: {
+      fontSize: 12,
+      fontWeight: "800",
+      color: colors.gold,
     },
   });
 }

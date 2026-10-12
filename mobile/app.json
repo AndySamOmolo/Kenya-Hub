@@ -16,7 +16,7 @@
       "package": "ke.co.kenyahub.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#111827"
+        "backgroundColor": "#141210"
       }
     },
     "plugins": ["expo-router"],

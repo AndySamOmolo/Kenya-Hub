@@ -41,6 +41,7 @@ import {
   PostalCodesTool,
   DrivingLicenseTool,
   PassportFeesTool,
+  MatatuRoutesTool,
 } from "../../src/tools/TransportGovernmentTools";
 
 import {
@@ -53,8 +54,8 @@ import {
 
 import { LanguageLearningTool } from "../../src/tools/LanguageCourseTool";
 
+import { KenyanTranslatorTool } from "../../src/tools/KenyanTranslatorTool";
 import {
-  KenyanTranslatorTool,
   SolarRoiTool,
   WardConstituencyFinderTool,
   CbcCurriculumTool,
@@ -166,24 +167,7 @@ export default function ToolDetailScreen() {
         return <SchoolTermsTool />;
 
       case "matatu-routes":
-        return (
-          <View style={[styles.matatuPromoCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-            <Ionicons name="bus" size={32} color={theme.gold} />
-            <Text style={[styles.matatuPromoTitle, { color: theme.textPrimary }]}>
-              Full Matatu Routes Explorer
-            </Text>
-            <Text style={[styles.matatuPromoDesc, { color: theme.textSecondary }]}>
-              View stage itineraries, corridors, off-peak/peak fares, and SACCO operators in our dedicated Matatu hub.
-            </Text>
-            <Pressable
-              onPress={() => router.push("/(tabs)/matatu")}
-              style={[styles.matatuPromoBtn, { backgroundColor: theme.gold }]}
-            >
-              <Text style={[styles.matatuPromoBtnText, { color: theme.kenyaBlack }]}>Open Matatu Hub</Text>
-              <Ionicons name="arrow-forward" size={16} color={theme.kenyaBlack} />
-            </Pressable>
-          </View>
-        );
+        return <MatatuRoutesTool />;
 
       // Universal Directory Reference for all other tools
       default:

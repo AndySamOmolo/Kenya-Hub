@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useTheme, KenyaStripe } from "../../src/theme";
 import matatuData from "../../src/shared/data/matatu-routes.json";
+import { MatatuMap } from "../../src/components/MatatuMap";
 
 export default function MatatuRouteScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
@@ -89,6 +90,26 @@ export default function MatatuRouteScreen() {
             </View>
           </View>
         </View>
+
+        {/* Interactive Route Map */}
+        {route.stages && route.stages.length > 0 && (
+          <View style={styles.mapSection}>
+            <View style={styles.mapHeaderRow}>
+              <Text style={[styles.sectionHeading, { color: theme.gold }]}>
+                Interactive Route Map
+              </Text>
+              <Text style={[styles.mapStageCount, { color: theme.textMuted }]}>
+                {route.stages.length} Stage Stopovers
+              </Text>
+            </View>
+            <MatatuMap
+              stages={route.stages}
+              routeName={route.name}
+              routeNumber={route.routeNumber}
+              height={300}
+            />
+          </View>
+        )}
 
         {/* Terminus Card */}
         <Text style={[styles.sectionHeading, { color: theme.gold }]}>Route Terminus</Text>
@@ -417,5 +438,18 @@ const styles = StyleSheet.create({
   backButtonText: {
     color: "#1A1108",
     fontWeight: "800",
+  },
+  mapSection: {
+    marginBottom: 20,
+  },
+  mapHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 8,
+  },
+  mapStageCount: {
+    fontSize: 12,
+    fontWeight: "600",
   },
 });

@@ -123,60 +123,93 @@ function Row({
 export function PayeCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [salaryText, setSalaryText] = useState("80000");
+  const [showAnnual, setShowAnnual] = useState(false);
   const salary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
 
   const calc = useMemo(() => {
+    const gross = salary;
     // 1. NSSF (New NSSF Act Tier 1 & 2)
     const nssfTier1Limit = 7000;
     const nssfTier2Limit = 36000;
-    const nssfTier1 = Math.min(salary, nssfTier1Limit) * 0.06;
-    const nssfTier2 = Math.max(0, Math.min(salary, nssfTier2Limit) - nssfTier1Limit) * 0.06;
+    const nssfTier1 = Math.min(gross, nssfTier1Limit) * 0.06;
+    const nssfTier2 = Math.max(0, Math.min(gross, nssfTier2Limit) - nssfTier1Limit) * 0.06;
     const totalNssf = Math.min(2160, nssfTier1 + nssfTier2);
 
     // 2. Affordable Housing Levy (1.5% of gross)
-    const housingLevy = salary * 0.015;
+    const housingLevy = gross * 0.015;
 
     // 3. SHA / SHIF (2.75% of gross, min 300)
-    const sha = Math.max(300, salary * 0.0275);
+    const sha = Math.max(300, gross * 0.0275);
 
-    // 4. Taxable Income
-    const taxableIncome = Math.max(0, salary - totalNssf);
+    // 4. Taxable Income (gross minus NSSF and Housing levy relief)
+    const taxableIncome = Math.max(0, gross - totalNssf - housingLevy);
 
     // 5. PAYE Tax Bands
     let grossTax = 0;
     for (const band of payeData.payeBands) {
       const upper = band.max ?? Infinity;
       if (taxableIncome > band.min) {
-        const taxableInBand = Math.min(taxableIncome, upper) - band.min;
-        grossTax += taxableInBand * (band.rate / 100);
+        const taxableInBand = Math.min(taxableIncome, upper) - (band.min > 0 ? band.min - 1 : 0);
+        if (taxableInBand > 0) {
+          grossTax += taxableInBand * (band.rate / 100);
+        }
       }
     }
 
-    // 6. Reliefs (Personal relief KES 2,400 + Housing relief 15% of AHL)
+    // 6. Personal relief KES 2,400
     const personalRelief = payeData.personalRelief || 2400;
-    const housingRelief = housingLevy * 0.15;
-    const netPaye = Math.max(0, grossTax - personalRelief - housingRelief);
+    const netPaye = Math.max(0, grossTax - personalRelief);
 
     // Total deductions & Net Salary
     const totalDeductions = netPaye + sha + housingLevy + totalNssf;
-    const netSalary = Math.max(0, salary - totalDeductions);
+    const netSalary = Math.max(0, gross - totalDeductions);
+
+    // Employer matching contributions
+    const employerNssf = totalNssf;
+    const employerHousing = housingLevy;
+    const totalEmployerCost = gross + employerNssf + employerHousing;
+
+    const mult = showAnnual ? 12 : 1;
 
     return {
-      totalNssf,
-      housingLevy,
-      sha,
-      taxableIncome,
-      grossTax,
-      personalRelief,
-      housingRelief,
-      netPaye,
-      totalDeductions,
-      netSalary,
+      gross: gross * mult,
+      totalNssf: totalNssf * mult,
+      housingLevy: housingLevy * mult,
+      sha: sha * mult,
+      taxableIncome: taxableIncome * mult,
+      grossTax: grossTax * mult,
+      personalRelief: personalRelief * mult,
+      netPaye: netPaye * mult,
+      totalDeductions: totalDeductions * mult,
+      netSalary: netSalary * mult,
+      employerNssf: employerNssf * mult,
+      employerHousing: employerHousing * mult,
+      totalEmployerCost: totalEmployerCost * mult,
     };
-  }, [salary]);
+  }, [salary, showAnnual]);
 
   return (
     <View style={styles.toolWrap}>
+      {/* Monthly / Annual Toggle */}
+      <View style={{ flexDirection: "row", backgroundColor: theme.bgCard, borderRadius: 10, padding: 3, borderWidth: 1, borderColor: theme.border, alignSelf: "flex-end" }}>
+        <Pressable
+          onPress={() => setShowAnnual(false)}
+          style={{ paddingHorizontal: 12, paddingVertical: 5, borderRadius: 8, backgroundColor: !showAnnual ? theme.gold : "transparent" }}
+        >
+          <Text style={{ fontSize: 11, fontWeight: "800", color: !showAnnual ? theme.kenyaBlack : theme.textSecondary }}>
+            Monthly
+          </Text>
+        </Pressable>
+        <Pressable
+          onPress={() => setShowAnnual(true)}
+          style={{ paddingHorizontal: 12, paddingVertical: 5, borderRadius: 8, backgroundColor: showAnnual ? theme.gold : "transparent" }}
+        >
+          <Text style={{ fontSize: 11, fontWeight: "800", color: showAnnual ? theme.kenyaBlack : theme.textSecondary }}>
+            Annual (12 Mos)
+          </Text>
+        </Pressable>
+      </View>
+
       <KESInput
         label="Gross Monthly Salary"
         value={salaryText}
@@ -184,21 +217,30 @@ export function PayeCalculator() {
       />
 
       <StatCard
-        label="TAKE-HOME NET SALARY"
+        label={`TAKE-HOME NET SALARY (${showAnnual ? "ANNUAL" : "MONTHLY"})`}
         value={`KES ${Math.round(calc.netSalary).toLocaleString()}`}
         highlight
         subtext={`Total deductions: KES ${Math.round(calc.totalDeductions).toLocaleString()}`}
       />
 
-      <Text style={styles.subHeading}>Itemized Deductions (KRA Bands)</Text>
+      <Text style={styles.subHeading}>Itemized Statutory Deductions (KRA Bands)</Text>
       <View style={styles.card}>
-        <Row label="Gross Salary" value={`KES ${salary.toLocaleString()}`} />
-        <Row label="NSSF Contribution (Tier I & II)" value={`- KES ${Math.round(calc.totalNssf).toLocaleString()}`} isDeduction />
-        <Row label="Taxable Pay" value={`KES ${Math.round(calc.taxableIncome).toLocaleString()}`} />
-        <Row label="PAYE Tax (after reliefs)" value={`- KES ${Math.round(calc.netPaye).toLocaleString()}`} isDeduction />
+        <Row label="Gross Salary" value={`KES ${Math.round(calc.gross).toLocaleString()}`} />
+        <Row label="NSSF Pension (Tier I & II)" value={`- KES ${Math.round(calc.totalNssf).toLocaleString()}`} isDeduction />
+        <Row label="Taxable Income (after relief)" value={`KES ${Math.round(calc.taxableIncome).toLocaleString()}`} />
+        <Row label="Personal Tax Relief" value={`- KES ${Math.round(calc.personalRelief).toLocaleString()}`} isDeduction />
+        <Row label="Net PAYE Income Tax" value={`- KES ${Math.round(calc.netPaye).toLocaleString()}`} isDeduction />
         <Row label="Social Health Auth. (SHA 2.75%)" value={`- KES ${Math.round(calc.sha).toLocaleString()}`} isDeduction />
         <Row label="Affordable Housing Levy (1.5%)" value={`- KES ${Math.round(calc.housingLevy).toLocaleString()}`} isDeduction />
         <Row label="Total Statutory Deductions" value={`KES ${Math.round(calc.totalDeductions).toLocaleString()}`} isTotal />
+      </View>
+
+      {/* Employer Contributions Card */}
+      <Text style={styles.subHeading}>Employer Statutory Contributions</Text>
+      <View style={styles.card}>
+        <Row label="Employer NSSF Match" value={`KES ${Math.round(calc.employerNssf).toLocaleString()}`} />
+        <Row label="Employer Housing Levy Match (1.5%)" value={`KES ${Math.round(calc.employerHousing).toLocaleString()}`} />
+        <Row label="Total Employer Cost of Employment" value={`KES ${Math.round(calc.totalEmployerCost).toLocaleString()}`} isTotal />
       </View>
     </View>
   );
@@ -286,34 +328,71 @@ export function MpesaCalculator() {
 export function KplcTokenCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [amountText, setAmountText] = useState("1000");
-  const amount = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
+  const [firstPurchaseOfMonth, setFirstPurchaseOfMonth] = useState(false);
+  const amountPaid = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
 
   const result = useMemo(() => {
-    const fixed = 0; // Prepaid domestic
-    const vatRate = 0.16;
-    const leviesPerKwh =
-      kplcData.levies.repLevy +
-      kplcData.levies.refLevy +
-      kplcData.levies.epraLevy +
-      kplcData.levies.warcLevy;
-    const fcc = kplcData.fuelCostCharge.rate;
+    const fixedCharge = firstPurchaseOfMonth ? (kplcData.fixedCharge || 150) : 0;
+    const vatRate = (kplcData.levies.vat || 16) / 100;
+    const fixedChargeWithVat = fixedCharge * (1 + vatRate);
+
+    const levyPerUnit =
+      (kplcData.levies.repLevy || 0) +
+      (kplcData.levies.refLevy || 0) +
+      (kplcData.levies.epraLevy || 0) +
+      (kplcData.levies.warcLevy || 0);
+    const fccPerUnit = kplcData.fuelCostCharge.rate;
     const ferfa = kplcData.forexAdjustment.rate;
 
-    // Approximate unit calculation
-    // Base domestic rate ~15.80/kWh + variable ~4.60 + 16% VAT = ~23.5 KES/unit
-    const avgCostPerKwhWithVat = (15.80 + leviesPerKwh + fcc + ferfa) * (1 + vatRate);
-    const estimatedUnits = amount > 0 ? (amount / avgCostPerKwhWithVat).toFixed(1) : "0.0";
-    const vatAmount = (amount * 0.16) / 1.16;
-    const netEnergyCost = amount - vatAmount;
+    const amountForUnits = Math.max(0, amountPaid - fixedChargeWithVat);
+
+    let remainingAmount = amountForUnits;
+    let totalUnits = 0;
+    const breakdown: { band: string; units: number; rate: number; cost: number }[] = [];
+
+    for (const band of (kplcData.energyBands || [])) {
+      if (remainingAmount <= 0) break;
+      const bandMax = band.max ?? 100000;
+      const bandMin = band.min;
+      const bandCapacity = bandMax - bandMin + 1;
+
+      const unitCostBeforeVat = band.rate + levyPerUnit + fccPerUnit + ferfa;
+      const unitCostWithVat = unitCostBeforeVat * (1 + vatRate);
+
+      const maxUnitsInBand = Math.min(
+        bandCapacity,
+        Math.floor(remainingAmount / unitCostWithVat)
+      );
+      const costForBand = maxUnitsInBand * unitCostWithVat;
+
+      if (maxUnitsInBand > 0) {
+        breakdown.push({
+          band: band.label,
+          units: maxUnitsInBand,
+          rate: band.rate,
+          cost: Math.round(costForBand * 100) / 100,
+        });
+        totalUnits += maxUnitsInBand;
+        remainingAmount -= costForBand;
+      }
+    }
+
+    const totalEnergyCost = breakdown.reduce((sum, b) => sum + b.units * b.rate, 0);
+    const totalLevies = totalUnits * levyPerUnit;
+    const totalFCC = totalUnits * (fccPerUnit + ferfa);
+    const totalVAT = (totalEnergyCost + totalLevies + totalFCC) * vatRate + (fixedCharge * vatRate);
 
     return {
-      estimatedUnits,
-      vatAmount: Math.round(vatAmount),
-      netEnergyCost: Math.round(netEnergyCost),
-      fccRate: fcc,
-      ferfaRate: ferfa,
+      totalUnits,
+      fixedCharge,
+      fixedChargeVat: Math.round(fixedCharge * vatRate * 100) / 100,
+      totalEnergyCost: Math.round(totalEnergyCost),
+      totalLevies: Math.round(totalLevies * 100) / 100,
+      totalFCC: Math.round(totalFCC * 100) / 100,
+      totalVAT: Math.round(totalVAT * 100) / 100,
+      breakdown,
     };
-  }, [amount]);
+  }, [amountPaid, firstPurchaseOfMonth]);
 
   return (
     <View style={styles.toolWrap}>
@@ -323,20 +402,38 @@ export function KplcTokenCalculator() {
         onChangeText={setAmountText}
       />
 
+      {/* First Purchase of Month Checkbox */}
+      <Pressable
+        onPress={() => setFirstPurchaseOfMonth(!firstPurchaseOfMonth)}
+        style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 4 }}
+      >
+        <Ionicons
+          name={firstPurchaseOfMonth ? "checkbox" : "square-outline"}
+          size={20}
+          color={theme.gold}
+        />
+        <Text style={{ fontSize: 12, color: theme.textSecondary, fontWeight: "600" }}>
+          First token purchase this month (deducts KES 150 fixed fee + VAT)
+        </Text>
+      </Pressable>
+
       <StatCard
-        label="ESTIMATED KPLC UNITS (kWh)"
-        value={`${result.estimatedUnits} Units`}
+        label="TOTAL ELECTRICITY UNITS (kWh)"
+        value={`${result.totalUnits} Units`}
         highlight
-        subtext={`Based on current EPRA gazetted domestic tariffs`}
+        subtext={`Exact units computed using official EPRA domestic tariff bands`}
       />
 
       <View style={styles.card}>
-        <Row label="Token Payment Amount" value={`KES ${amount.toLocaleString()}`} />
-        <Row label="Net Energy Cost" value={`KES ${result.netEnergyCost.toLocaleString()}`} />
-        <Row label="16% Value Added Tax (VAT)" value={`KES ${result.vatAmount.toLocaleString()}`} isDeduction />
-        <Row label="Fuel Cost Charge (FCC)" value={`KES ${result.fccRate}/kWh`} />
-        <Row label="Forex Adjustment (FERFA)" value={`KES ${result.ferfaRate}/kWh`} />
-        <Row label="Total Units Received" value={`${result.estimatedUnits} kWh`} isTotal />
+        <Row label="Token Payment Amount" value={`KES ${amountPaid.toLocaleString()}`} />
+        {result.fixedCharge > 0 && (
+          <Row label="Monthly Standing Service Fee" value={`- KES ${result.fixedCharge.toLocaleString()}`} isDeduction />
+        )}
+        <Row label="Net Energy Charge" value={`KES ${result.totalEnergyCost.toLocaleString()}`} />
+        <Row label="Fuel Energy Cost (FCC & FERFA)" value={`KES ${result.totalFCC.toLocaleString()}`} />
+        <Row label="EPRA, WARMA & REP Levies" value={`KES ${result.totalLevies.toLocaleString()}`} />
+        <Row label="16% Value Added Tax (VAT)" value={`KES ${result.totalVAT.toLocaleString()}`} isDeduction />
+        <Row label="Total Units Received" value={`${result.totalUnits} kWh`} isTotal />
       </View>
     </View>
   );

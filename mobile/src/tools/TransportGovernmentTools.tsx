@@ -15,6 +15,9 @@ import finesData from "../shared/data/traffic-fines.json";
 import postalData from "../shared/data/postal-codes.json";
 import dlData from "../shared/data/driving-license-guide.json";
 import passportData from "../shared/data/passport-id-fees.json";
+import matatuData from "../shared/data/matatu-routes.json";
+import { MatatuMap } from "../components/MatatuMap";
+import { useRouter } from "expo-router";
 
 /** 1. Number Plate Decoder */
 export function NumberPlateDecoder() {
@@ -418,6 +421,216 @@ export function PassportFeesTool() {
   );
 }
 
+/** 8. Matatu Routes Explorer Tool */
+export function MatatuRoutesTool() {
+  const router = useRouter();
+  const { theme, styles } = useDynamicStyles(createStyles);
+  const [selectedTown, setSelectedTown] = useState<string>("nairobi");
+  const [search, setSearch] = useState("");
+
+  const activeTowns = useMemo(() => {
+    return matatuData.towns.filter((t: any) => t.isActive);
+  }, []);
+
+  const townRoutes = useMemo(() => {
+    const list = (matatuData.routes as Record<string, any[]>)[selectedTown] || [];
+    return list;
+  }, [selectedTown]);
+
+  const [selectedRouteSlug, setSelectedRouteSlug] = useState<string>(
+    townRoutes[0]?.slug || "111-ngong"
+  );
+
+  const activeRoute = useMemo(() => {
+    return (
+      townRoutes.find((r: any) => r.slug === selectedRouteSlug) ||
+      townRoutes[0]
+    );
+  }, [townRoutes, selectedRouteSlug]);
+
+  const filteredRoutes = useMemo(() => {
+    if (!search.trim()) return townRoutes;
+    const q = search.toLowerCase();
+    return townRoutes.filter(
+      (r: any) =>
+        r.name.toLowerCase().includes(q) ||
+        r.routeNumber.toLowerCase().includes(q) ||
+        r.terminusA.toLowerCase().includes(q) ||
+        r.terminusB.toLowerCase().includes(q) ||
+        (Array.isArray(r.stages) &&
+          r.stages.some((s: any) =>
+            (typeof s === "string" ? s : s?.name || "").toLowerCase().includes(q)
+          ))
+    );
+  }, [townRoutes, search]);
+
+  return (
+    <View style={styles.toolWrap}>
+      {/* Town Pills */}
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+        {activeTowns.map((town: any) => {
+          const active = town.slug === selectedTown;
+          return (
+            <Pressable
+              key={town.slug}
+              onPress={() => {
+                setSelectedTown(town.slug);
+                const first = ((matatuData.routes as any)[town.slug] || [])[0];
+                if (first) setSelectedRouteSlug(first.slug);
+              }}
+              style={[
+                styles.categoryChip,
+                {
+                  backgroundColor: active ? theme.gold : theme.bgCard,
+                  borderColor: active ? theme.gold : theme.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.categoryChipText,
+                  { color: active ? theme.kenyaBlack : theme.textPrimary },
+                ]}
+              >
+                {town.name}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </View>
+
+      {/* Search Route */}
+      <View style={styles.searchBar}>
+        <Ionicons name="search" size={18} color={theme.textMuted} />
+        <TextInput
+          placeholder={`Search ${selectedTown} route or destination...`}
+          placeholderTextColor={theme.textMuted}
+          value={search}
+          onChangeText={setSearch}
+          style={styles.searchInput}
+        />
+        {search.length > 0 && (
+          <Pressable onPress={() => setSearch("")}>
+            <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+          </Pressable>
+        )}
+      </View>
+
+      {/* Route Quick Selector Scroll */}
+      <View>
+        <Text style={[styles.subHeading, { marginBottom: 6 }]}>
+          Select Route ({filteredRoutes.length} available)
+        </Text>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+          {filteredRoutes.slice(0, 8).map((r: any) => {
+            const active = r.slug === activeRoute?.slug;
+            return (
+              <Pressable
+                key={r.slug}
+                onPress={() => setSelectedRouteSlug(r.slug)}
+                style={[
+                  styles.quickRouteBtn,
+                  {
+                    backgroundColor: active ? theme.gold : theme.bgElevated,
+                    borderColor: active ? theme.gold : theme.border,
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.quickRouteText,
+                    { color: active ? theme.kenyaBlack : theme.textPrimary },
+                  ]}
+                >
+                  {r.routeNumber}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      </View>
+
+      {/* Active Route Detail Card */}
+      {activeRoute && (
+        <View style={styles.card}>
+          <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
+            <View style={{ flex: 1 }}>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 4 }}>
+                <View style={[styles.routeBadge, { backgroundColor: `${theme.gold}20`, borderColor: theme.gold }]}>
+                  <Text style={[styles.routeBadgeText, { color: theme.gold }]}>
+                    Route {activeRoute.routeNumber}
+                  </Text>
+                </View>
+                {activeRoute.verified && (
+                  <View style={[styles.verifiedTag, { backgroundColor: `${theme.kenyaGreen}20` }]}>
+                    <Text style={[styles.verifiedTagText, { color: theme.kenyaGreenLight }]}>
+                      ✓ Verified
+                    </Text>
+                  </View>
+                )}
+              </View>
+              <Text style={styles.holidayName}>{activeRoute.name}</Text>
+              <Text style={{ fontSize: 11, color: theme.textMuted, marginTop: 2 }}>
+                Operated by <Text style={{ color: theme.textSecondary, fontWeight: "700" }}>{activeRoute.saccoName}</Text>
+              </Text>
+            </View>
+
+            <View style={{ alignItems: "flex-end" }}>
+              <Text style={{ fontSize: 10, color: theme.textMuted, textTransform: "uppercase" }}>Fare</Text>
+              <Text style={{ fontSize: 16, fontFamily: "Outfit_800ExtraBold", fontWeight: "900", color: theme.gold }}>
+                KES {activeRoute.fareMin}–{activeRoute.fareMax}
+              </Text>
+            </View>
+          </View>
+
+          {/* Interactive Leaflet Route Map */}
+          {activeRoute.stages && activeRoute.stages.length > 0 && (
+            <View style={{ marginVertical: 12 }}>
+              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+                <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
+                  🗺️ Interactive Route Map
+                </Text>
+                <Text style={{ fontSize: 11, color: theme.textMuted }}>
+                  {activeRoute.stages.length} Stages
+                </Text>
+              </View>
+              <MatatuMap
+                stages={activeRoute.stages}
+                routeName={activeRoute.name}
+                routeNumber={activeRoute.routeNumber}
+                height={260}
+              />
+            </View>
+          )}
+
+          {/* Terminus Strip */}
+          <View style={styles.tableRow}>
+            <Text style={styles.rowLabel}>Departure / CBD</Text>
+            <Text style={[styles.rowValue, { color: theme.kenyaGreenLight }]}>{activeRoute.terminusA}</Text>
+          </View>
+          <View style={styles.tableRow}>
+            <Text style={styles.rowLabel}>Destination</Text>
+            <Text style={[styles.rowValue, { color: theme.kenyaRedLight }]}>{activeRoute.terminusB}</Text>
+          </View>
+          <View style={styles.tableRow}>
+            <Text style={styles.rowLabel}>Hours</Text>
+            <Text style={styles.rowValue}>{activeRoute.operatingHours}</Text>
+          </View>
+
+          {/* Link to Full Corridor Details */}
+          <Pressable
+            onPress={() => router.push(`/matatu/${activeRoute.slug}` as any)}
+            style={[styles.openCorridorBtn, { backgroundColor: theme.gold }]}
+          >
+            <Text style={styles.openCorridorText}>View Full Corridor & Stages Itinerary</Text>
+            <Ionicons name="arrow-forward" size={16} color="#1A1108" />
+          </Pressable>
+        </View>
+      )}
+    </View>
+  );
+}
+
 const createStyles = (theme: ThemeColors) =>
   StyleSheet.create({
     toolWrap: {
@@ -701,5 +914,58 @@ const createStyles = (theme: ThemeColors) =>
       fontSize: 12,
       color: theme.textSecondary,
       lineHeight: 16,
+    },
+    categoryChip: {
+      paddingHorizontal: 12,
+      paddingVertical: 6,
+      borderRadius: 20,
+      borderWidth: 1,
+    },
+    categoryChipText: {
+      fontSize: 12,
+      fontWeight: "700",
+    },
+    quickRouteBtn: {
+      paddingHorizontal: 10,
+      paddingVertical: 6,
+      borderRadius: 8,
+      borderWidth: 1,
+    },
+    quickRouteText: {
+      fontSize: 12,
+      fontWeight: "800",
+    },
+    routeBadge: {
+      paddingHorizontal: 6,
+      paddingVertical: 2,
+      borderRadius: 6,
+      borderWidth: 1,
+    },
+    routeBadgeText: {
+      fontSize: 10,
+      fontWeight: "800",
+    },
+    verifiedTag: {
+      paddingHorizontal: 6,
+      paddingVertical: 2,
+      borderRadius: 6,
+    },
+    verifiedTagText: {
+      fontSize: 10,
+      fontWeight: "700",
+    },
+    openCorridorBtn: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: 6,
+      paddingVertical: 10,
+      borderRadius: 10,
+      marginTop: 10,
+    },
+    openCorridorText: {
+      fontSize: 12,
+      fontWeight: "800",
+      color: "#1A1108",
     },
   });
