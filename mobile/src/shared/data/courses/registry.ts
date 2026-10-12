@@ -8,7 +8,7 @@ import { KAMBA_CONFIG, KAMBA_UNITS } from "./kamba/course";
 import { MAASAI_CONFIG, MAASAI_UNITS } from "./maasai/course";
 import type { CourseUnit, LanguageConfig, GrammarSection } from "./types";
 import { validateCourse, type CourseValidationIssue } from "./validation";
-import { getSourcesForLanguage } from "@/data/language-sources";
+import { getSourcesForLanguage } from "../language-sources";
 
 import { KIKUYU_GRAMMAR_SECTIONS } from "./kikuyu/grammar-reference";
 import { KISII_GRAMMAR_SECTIONS } from "./kisii/grammar-reference";

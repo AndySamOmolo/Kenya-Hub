@@ -1,22 +1,373 @@
-import { Stack, useLocalSearchParams } from "expo-router";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { Stack, useLocalSearchParams, useRouter } from "expo-router";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useTheme, KenyaStripe } from "../../src/theme";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 
 export default function MatatuRouteScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
-  const route = Object.values(matatuData.routes).flat().find((item) => item.slug === slug);
-  if (!route) return <View style={styles.screen}><Text style={styles.heading}>Route not found</Text></View>;
-  return <><Stack.Screen options={{ headerShown: true, title: route.name, headerStyle: { backgroundColor: "#111a2b" }, headerTintColor: "#f4f7fb" }} /><ScrollView style={styles.screen} contentContainerStyle={styles.content}><Text style={styles.heading}>{route.name}</Text><Text style={styles.meta}>KES {route.fareMin}–{route.fareMax} · {route.saccoName}</Text><Text style={styles.meta}>{route.terminusA} → {route.terminusB}</Text><Text style={styles.section}>Stages</Text>{route.stages.map((stage) => <View key={stage.order} style={styles.stage}><Text style={styles.number}>{stage.order}</Text><Text style={styles.stageName}>{stage.name}</Text></View>)}<Text style={styles.note}>Fares and operating details can change. Confirm at the stage before travelling.</Text></ScrollView></>;
+  const router = useRouter();
+  const { theme } = useTheme();
+  const route = Object.values(matatuData.routes)
+    .flat()
+    .find((item: any) => item.slug === slug) as any;
+
+  if (!route) {
+    return (
+      <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]}>
+        <View style={styles.notFound}>
+          <Ionicons name="search" size={48} color={theme.textMuted} />
+          <Text style={[styles.notFoundTitle, { color: theme.textPrimary }]}>Route not found</Text>
+          <Pressable onPress={() => router.back()} style={[styles.backButton, { backgroundColor: theme.gold }]}>
+            <Text style={styles.backButtonText}>Go back</Text>
+          </Pressable>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  return (
+    <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]} edges={["top", "left", "right"]}>
+      <KenyaStripe />
+
+      {/* Header Bar */}
+      <View style={[styles.headerBar, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
+        <Pressable onPress={() => router.back()} style={[styles.navBackBtn, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+          <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
+        </Pressable>
+        <View style={{ flex: 1 }}>
+          <Text style={[styles.navBarTitle, { color: theme.textPrimary }]} numberOfLines={1}>
+            {route.name}
+          </Text>
+          <Text style={[styles.navBarSubtitle, { color: theme.gold }]}>
+            {route.saccoName || "Nairobi Matatu"}
+          </Text>
+        </View>
+      </View>
+
+      <ScrollView
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Route Hero Card */}
+        <View style={[styles.heroCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+          <View style={styles.heroInner}>
+            <View style={styles.heroHeader}>
+              <View style={[styles.busIconBox, { backgroundColor: `${theme.gold}20`, borderColor: `${theme.gold}40` }]}>
+                <Ionicons name="bus" size={26} color={theme.gold} />
+              </View>
+              <View style={{ flex: 1, marginLeft: 14 }}>
+                <Text style={[styles.heading, { color: theme.textPrimary }]}>{route.name}</Text>
+                <Text style={[styles.saccoHeading, { color: theme.textSecondary }]}>
+                  Operated by <Text style={{ color: theme.gold, fontWeight: "700" }}>{route.saccoName}</Text>
+                </Text>
+              </View>
+            </View>
+
+            {/* Quick Fare & Details Strip */}
+            <View style={[styles.fareStrip, { borderTopColor: theme.border }]}>
+              <View style={styles.fareItem}>
+                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>Off-Peak Fare</Text>
+                <Text style={[styles.fareValue, { color: theme.textPrimary }]}>KES {route.fareMin}</Text>
+              </View>
+              <View style={[styles.fareDivider, { backgroundColor: theme.border }]} />
+              <View style={styles.fareItem}>
+                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>Peak Fare</Text>
+                <Text style={[styles.fareValue, { color: theme.gold }]}>
+                  KES {route.fareMax}
+                </Text>
+              </View>
+              <View style={[styles.fareDivider, { backgroundColor: theme.border }]} />
+              <View style={styles.fareItem}>
+                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>Stages</Text>
+                <Text style={[styles.fareValue, { color: theme.textPrimary }]}>
+                  {route.stages ? route.stages.length : "—"}
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
+        {/* Terminus Card */}
+        <Text style={[styles.sectionHeading, { color: theme.gold }]}>Route Terminus</Text>
+        <View style={[styles.terminusCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+          <View style={styles.terminusRow}>
+            <View style={[styles.terminusDotA, { backgroundColor: theme.kenyaGreenLight }]} />
+            <View style={{ flex: 1 }}>
+              <Text style={[styles.terminusLabel, { color: theme.textMuted }]}>Departure / CBD</Text>
+              <Text style={[styles.terminusName, { color: theme.textPrimary }]}>{route.terminusA}</Text>
+            </View>
+          </View>
+          <View style={[styles.terminusConnector, { backgroundColor: theme.border }]} />
+          <View style={styles.terminusRow}>
+            <View style={[styles.terminusDotB, { backgroundColor: theme.kenyaRedLight }]} />
+            <View style={{ flex: 1 }}>
+              <Text style={[styles.terminusLabel, { color: theme.textMuted }]}>Destination</Text>
+              <Text style={[styles.terminusName, { color: theme.textPrimary }]}>{route.terminusB}</Text>
+            </View>
+          </View>
+        </View>
+
+        {/* Stages Timeline */}
+        {route.stages && route.stages.length > 0 && (
+          <>
+            <Text style={[styles.sectionHeading, { color: theme.gold }]}>
+              Route Stages ({route.stages.length})
+            </Text>
+            <View style={[styles.timelineCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+              {route.stages.map((stage: string, idx: number) => {
+                const isFirst = idx === 0;
+                const isLast = idx === route.stages.length - 1;
+
+                return (
+                  <View key={idx} style={styles.stageRow}>
+                    <View style={styles.timelineCol}>
+                      <View
+                        style={[
+                          styles.timelineDot,
+                          { backgroundColor: theme.textMuted },
+                          isFirst && { backgroundColor: theme.kenyaGreenLight },
+                          isLast && { backgroundColor: theme.kenyaRedLight },
+                        ]}
+                      />
+                      {!isLast && <View style={[styles.timelineLine, { backgroundColor: theme.border }]} />}
+                    </View>
+                    <View style={styles.stageContent}>
+                      <Text
+                        style={[
+                          styles.stageName,
+                          { color: theme.textSecondary },
+                          (isFirst || isLast) && { fontWeight: "700", color: theme.textPrimary },
+                        ]}
+                      >
+                        {stage}
+                      </Text>
+                      {isFirst && (
+                        <Text style={[styles.stageNote, { color: theme.gold }]}>Origin Stage</Text>
+                      )}
+                      {isLast && (
+                        <Text style={[styles.stageNote, { color: theme.gold }]}>Final Terminus</Text>
+                      )}
+                    </View>
+                  </View>
+                );
+              })}
+            </View>
+          </>
+        )}
+
+        {/* Advisory / Tips Note */}
+        <View style={[styles.noteCard, { backgroundColor: `${theme.gold}15`, borderColor: `${theme.gold}30` }]}>
+          <Ionicons
+            name="information-circle-outline"
+            size={20}
+            color={theme.gold}
+          />
+          <Text style={[styles.noteText, { color: theme.textSecondary }]}>
+            Fares vary dynamically depending on rush hours, weather, and fuel prices. Confirm with the makanga (conductor) before boarding.
+          </Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: "#0b1220" },
-  content: { padding: 20, paddingBottom: 40 },
-  heading: { color: "#f4f7fb", fontSize: 28, fontWeight: "800", marginTop: 12 },
-  meta: { color: "#aeb9c9", fontSize: 16, marginTop: 8 },
-  section: { color: "#d6a52c", fontSize: 20, fontWeight: "800", marginTop: 28, marginBottom: 10 },
-  stage: { flexDirection: "row", alignItems: "center", backgroundColor: "#111a2b", borderRadius: 10, padding: 13, marginBottom: 8 },
-  number: { color: "#111827", backgroundColor: "#d6a52c", width: 26, height: 26, borderRadius: 13, textAlign: "center", paddingTop: 4, fontWeight: "800", marginRight: 12 },
-  stageName: { color: "#f4f7fb", fontWeight: "700" },
-  note: { color: "#aeb9c9", lineHeight: 22, marginTop: 22 },
+  screen: {
+    flex: 1,
+  },
+  headerBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+  },
+  navBackBtn: {
+    padding: 8,
+    marginRight: 8,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  navBarTitle: {
+    fontSize: 18,
+    fontWeight: "800",
+  },
+  navBarSubtitle: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  content: {
+    padding: 16,
+    paddingBottom: 40,
+  },
+  heroCard: {
+    borderRadius: 20,
+    borderWidth: 1,
+    overflow: "hidden",
+    marginBottom: 20,
+  },
+  heroInner: {
+    padding: 18,
+  },
+  heroHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  busIconBox: {
+    width: 48,
+    height: 48,
+    borderRadius: 14,
+    borderWidth: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  heading: {
+    fontSize: 20,
+    fontWeight: "800",
+  },
+  saccoHeading: {
+    fontSize: 13,
+    marginTop: 2,
+  },
+  fareStrip: {
+    flexDirection: "row",
+    marginTop: 16,
+    paddingTop: 16,
+    borderTopWidth: 1,
+    alignItems: "center",
+  },
+  fareItem: {
+    flex: 1,
+    alignItems: "center",
+  },
+  fareLabel: {
+    fontSize: 10,
+    marginBottom: 2,
+  },
+  fareValue: {
+    fontSize: 15,
+    fontWeight: "800",
+  },
+  fareDivider: {
+    width: 1,
+    height: 24,
+  },
+  sectionHeading: {
+    fontSize: 13,
+    fontWeight: "800",
+    letterSpacing: 0.8,
+    textTransform: "uppercase",
+    marginBottom: 10,
+    marginTop: 6,
+  },
+  terminusCard: {
+    borderRadius: 16,
+    borderWidth: 1,
+    padding: 16,
+    marginBottom: 20,
+  },
+  terminusRow: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  terminusDotA: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    marginRight: 14,
+  },
+  terminusDotB: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    marginRight: 14,
+  },
+  terminusConnector: {
+    width: 2,
+    height: 24,
+    marginLeft: 5,
+    marginVertical: 4,
+  },
+  terminusLabel: {
+    fontSize: 10,
+    fontWeight: "600",
+  },
+  terminusName: {
+    fontSize: 15,
+    fontWeight: "700",
+    marginTop: 1,
+  },
+  timelineCard: {
+    borderRadius: 16,
+    borderWidth: 1,
+    padding: 16,
+    marginBottom: 20,
+  },
+  stageRow: {
+    flexDirection: "row",
+    minHeight: 40,
+  },
+  timelineCol: {
+    width: 24,
+    alignItems: "center",
+  },
+  timelineDot: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+  },
+  timelineLine: {
+    width: 2,
+    flex: 1,
+    marginVertical: 3,
+  },
+  stageContent: {
+    flex: 1,
+    paddingLeft: 10,
+    paddingBottom: 14,
+  },
+  stageName: {
+    fontSize: 14,
+  },
+  stageNote: {
+    fontSize: 10,
+    marginTop: 2,
+  },
+  noteCard: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    borderWidth: 1,
+    borderRadius: 14,
+    padding: 14,
+    gap: 10,
+  },
+  noteText: {
+    flex: 1,
+    fontSize: 12,
+    lineHeight: 18,
+  },
+  notFound: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 24,
+  },
+  notFoundTitle: {
+    fontSize: 18,
+    fontWeight: "800",
+    marginTop: 12,
+  },
+  backButton: {
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 10,
+    marginTop: 16,
+  },
+  backButtonText: {
+    color: "#1A1108",
+    fontWeight: "800",
+  },
 });

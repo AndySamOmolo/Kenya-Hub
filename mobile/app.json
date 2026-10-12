@@ -5,8 +5,13 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "scheme": "kenyahub",
-    "userInterfaceStyle": "dark",
+    "userInterfaceStyle": "automatic",
     "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0C0A08"
+    },
     "android": {
       "package": "ke.co.kenyahub.app",
       "adaptiveIcon": {
