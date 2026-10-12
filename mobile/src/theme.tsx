@@ -145,6 +145,14 @@ export function useTheme() {
   return useContext(ThemeContext);
 }
 
+export function useDynamicStyles<T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>>(
+  creator: (theme: ThemeColors) => T
+): { theme: ThemeColors; isDark: boolean; styles: T } {
+  const { theme, isDark } = useTheme();
+  const styles = React.useMemo(() => creator(theme), [theme]);
+  return { theme, isDark, styles };
+}
+
 /**
  * Kenyan Flag Stripe Component
  * Subtle 3px bar: Black · White · Red · White · Green

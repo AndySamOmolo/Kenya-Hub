@@ -7,7 +7,7 @@ import {
   Pressable,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { colors } from "../theme";
+import { useDynamicStyles, ThemeColors } from "../theme";
 import payeData from "../shared/data/paye-bands.json";
 import mpesaData from "../shared/data/mpesa-tariffs.json";
 import kplcData from "../shared/data/kplc-tariff.json";
@@ -28,6 +28,7 @@ function KESInput({
   onChangeText: (text: string) => void;
   placeholder?: string;
 }) {
+  const { theme, styles } = useDynamicStyles(createStyles);
   return (
     <View style={styles.inputGroup}>
       <Text style={styles.inputLabel}>{label}</Text>
@@ -40,7 +41,7 @@ function KESInput({
           value={value}
           onChangeText={onChangeText}
           placeholder={placeholder}
-          placeholderTextColor={colors.textMuted}
+          placeholderTextColor={theme.textMuted}
           style={styles.textInput}
         />
       </View>
@@ -59,15 +60,16 @@ function StatCard({
   highlight?: boolean;
   subtext?: string;
 }) {
+  const { theme, styles } = useDynamicStyles(createStyles);
   return (
     <View style={[styles.statCard, highlight && styles.statCardHighlight]}>
-      <Text style={[styles.statLabel, highlight && { color: colors.gold }]}>
+      <Text style={[styles.statLabel, highlight && { color: theme.gold }]}>
         {label}
       </Text>
       <Text
         style={[
           styles.statValue,
-          highlight && { color: colors.goldLight, fontSize: 22 },
+          highlight && { color: theme.gold, fontSize: 22 },
         ]}
       >
         {value}
@@ -88,17 +90,18 @@ function Row({
   isDeduction?: boolean;
   isTotal?: boolean;
 }) {
+  const { theme, styles } = useDynamicStyles(createStyles);
   return (
     <View
       style={[
         styles.tableRow,
-        isTotal && { borderTopWidth: 1, borderTopColor: colors.borderLight, paddingTop: 10 },
+        isTotal && { borderTopWidth: 1, borderTopColor: theme.borderLight, paddingTop: 10 },
       ]}
     >
       <Text
         style={[
           styles.rowLabel,
-          isTotal && { fontWeight: "800", color: colors.textPrimary },
+          isTotal && { fontWeight: "800", color: theme.textPrimary },
         ]}
       >
         {label}
@@ -106,8 +109,8 @@ function Row({
       <Text
         style={[
           styles.rowValue,
-          isDeduction && { color: colors.kenyaRedLight },
-          isTotal && { fontWeight: "800", color: colors.gold, fontSize: 15 },
+          isDeduction && { color: theme.kenyaRedLight },
+          isTotal && { fontWeight: "800", color: theme.gold, fontSize: 15 },
         ]}
       >
         {value}
@@ -118,6 +121,7 @@ function Row({
 
 /** 1. PAYE Calculator */
 export function PayeCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [salaryText, setSalaryText] = useState("80000");
   const salary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
 
@@ -202,6 +206,7 @@ export function PayeCalculator() {
 
 /** 2. M-Pesa Fee Calculator */
 export function MpesaCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [amountText, setAmountText] = useState("3500");
   const [tab, setTab] = useState<"send_registered" | "withdraw_agent" | "withdraw_atm" | "paybill">("send_registered");
   const amount = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
@@ -268,7 +273,7 @@ export function MpesaCalculator() {
 
       {/* Savings Tip */}
       <View style={styles.tipCard}>
-        <Ionicons name="bulb-outline" size={18} color={colors.gold} />
+        <Ionicons name="bulb-outline" size={18} color={theme.gold} />
         <Text style={styles.tipText}>
           Tip: Sending KES 100 or less to any M-Pesa customer is completely free.
         </Text>
@@ -279,6 +284,7 @@ export function MpesaCalculator() {
 
 /** 3. KPLC Token Calculator */
 export function KplcTokenCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [amountText, setAmountText] = useState("1000");
   const amount = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
 
@@ -338,6 +344,7 @@ export function KplcTokenCalculator() {
 
 /** 4. HELB Loan Calculator */
 export function HelbCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [salaryText, setSalaryText] = useState("60000");
   const salary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
 
@@ -375,6 +382,7 @@ export function HelbCalculator() {
 
 /** 5. Housing Levy Calculator */
 export function HousingLevyCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [salaryText, setSalaryText] = useState("75000");
   const salary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
 
@@ -409,6 +417,7 @@ export function HousingLevyCalculator() {
 
 /** 6. Stamp Duty Calculator */
 export function StampDutyCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [valueText, setValueText] = useState("5000000");
   const [isUrban, setIsUrban] = useState(true);
   const value = Math.max(0, Number(valueText.replace(/,/g, "")) || 0);
@@ -465,6 +474,7 @@ export function StampDutyCalculator() {
 
 /** 7. Vehicle Insurance Calculator */
 export function VehicleInsuranceCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [valText, setValText] = useState("1500000");
   const value = Math.max(0, Number(valText.replace(/,/g, "")) || 0);
 
@@ -500,6 +510,7 @@ export function VehicleInsuranceCalculator() {
 
 /** 8. Water Bill Calculator */
 export function WaterBillCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [unitsText, setUnitsText] = useState("15");
   const units = Math.max(0, Number(unitsText) || 0);
 
@@ -533,7 +544,7 @@ export function WaterBillCalculator() {
           keyboardType="numeric"
           value={unitsText}
           onChangeText={setUnitsText}
-          style={[styles.textInput, { borderWidth: 1, borderColor: colors.border, borderRadius: 12, paddingHorizontal: 14 }]}
+          style={[styles.textInput, { borderWidth: 1, borderColor: theme.border, borderRadius: 12, paddingHorizontal: 14 }]}
         />
       </View>
 
@@ -554,147 +565,150 @@ export function WaterBillCalculator() {
   );
 }
 
-const styles = StyleSheet.create({
-  toolWrap: {
-    gap: 14,
-  },
-  inputGroup: {
-    marginBottom: 6,
-  },
-  inputLabel: {
-    fontSize: 12,
-    fontWeight: "700",
-    color: colors.textSecondary,
-    marginBottom: 6,
-  },
-  inputBox: {
-    flexDirection: "row",
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    overflow: "hidden",
-    alignItems: "center",
-  },
-  kesPrefixBox: {
-    backgroundColor: "rgba(255, 255, 255, 0.04)",
-    paddingHorizontal: 12,
-    paddingVertical: 12,
-    borderRightWidth: 1,
-    borderRightColor: colors.border,
-  },
-  kesPrefix: {
-    fontSize: 12,
-    fontWeight: "800",
-    color: colors.gold,
-  },
-  textInput: {
-    flex: 1,
-    fontSize: 16,
-    fontWeight: "700",
-    color: colors.textPrimary,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-  },
-  statCard: {
-    backgroundColor: colors.bgCard,
-    borderRadius: 16,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: 16,
-    alignItems: "center",
-  },
-  statCardHighlight: {
-    backgroundColor: "rgba(200, 150, 30, 0.08)",
-    borderColor: "rgba(200, 150, 30, 0.3)",
-  },
-  statLabel: {
-    fontSize: 11,
-    fontWeight: "800",
-    letterSpacing: 1,
-    color: colors.textSecondary,
-    marginBottom: 4,
-  },
-  statValue: {
-    fontSize: 20,
-    fontWeight: "900",
-    color: colors.textPrimary,
-  },
-  statSubtext: {
-    fontSize: 11,
-    color: colors.textMuted,
-    marginTop: 4,
-  },
-  card: {
-    backgroundColor: colors.bgCard,
-    borderRadius: 16,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: 14,
-  },
-  tableRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingVertical: 8,
-  },
-  rowLabel: {
-    fontSize: 13,
-    color: colors.textSecondary,
-    flex: 1,
-  },
-  rowValue: {
-    fontSize: 13,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  subHeading: {
-    fontSize: 13,
-    fontWeight: "800",
-    color: colors.gold,
-    letterSpacing: 0.5,
-    marginTop: 6,
-  },
-  pillSelector: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 8,
-    marginBottom: 4,
-  },
-  pillBtn: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-    borderRadius: 10,
-  },
-  pillBtnActive: {
-    backgroundColor: colors.gold,
-    borderColor: colors.gold,
-  },
-  pillBtnText: {
-    fontSize: 12,
-    fontWeight: "700",
-    color: colors.textSecondary,
-  },
-  pillBtnTextActive: {
-    color: colors.kenyaBlack,
-  },
-  tipCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-    backgroundColor: "rgba(200, 150, 30, 0.08)",
-    borderWidth: 1,
-    borderColor: "rgba(200, 150, 30, 0.2)",
-    borderRadius: 12,
-    padding: 12,
-  },
-  tipText: {
-    flex: 1,
-    fontSize: 12,
-    color: colors.textSecondary,
-    lineHeight: 16,
-  },
-});
+const createStyles = (theme: ThemeColors) =>
+  StyleSheet.create({
+    toolWrap: {
+      gap: 14,
+    },
+    inputGroup: {
+      marginBottom: 6,
+    },
+    inputLabel: {
+      fontSize: 12,
+      fontWeight: "700",
+      color: theme.textSecondary,
+      marginBottom: 6,
+    },
+    inputBox: {
+      flexDirection: "row",
+      backgroundColor: theme.bgCard,
+      borderWidth: 1,
+      borderColor: theme.border,
+      borderRadius: 12,
+      overflow: "hidden",
+      alignItems: "center",
+    },
+    kesPrefixBox: {
+      backgroundColor: `${theme.gold}15`,
+      paddingHorizontal: 12,
+      paddingVertical: 12,
+      borderRightWidth: 1,
+      borderRightColor: theme.border,
+    },
+    kesPrefix: {
+      fontSize: 12,
+      fontWeight: "800",
+      color: theme.gold,
+    },
+    textInput: {
+      flex: 1,
+      fontSize: 16,
+      fontWeight: "700",
+      color: theme.textPrimary,
+      paddingHorizontal: 14,
+      paddingVertical: 10,
+    },
+    statCard: {
+      backgroundColor: theme.bgCard,
+      borderRadius: 16,
+      borderWidth: 1,
+      borderColor: theme.border,
+      padding: 16,
+      alignItems: "center",
+    },
+    statCardHighlight: {
+      backgroundColor: `${theme.gold}12`,
+      borderColor: `${theme.gold}40`,
+    },
+    statLabel: {
+      fontSize: 11,
+      fontWeight: "800",
+      letterSpacing: 1,
+      color: theme.textSecondary,
+      marginBottom: 4,
+    },
+    statValue: {
+      fontSize: 20,
+      fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "900",
+      color: theme.textPrimary,
+    },
+    statSubtext: {
+      fontSize: 11,
+      color: theme.textMuted,
+      marginTop: 4,
+    },
+    card: {
+      backgroundColor: theme.bgCard,
+      borderRadius: 16,
+      borderWidth: 1,
+      borderColor: theme.border,
+      padding: 14,
+    },
+    tableRow: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      paddingVertical: 8,
+    },
+    rowLabel: {
+      fontSize: 13,
+      color: theme.textSecondary,
+      flex: 1,
+    },
+    rowValue: {
+      fontSize: 13,
+      fontWeight: "700",
+      color: theme.textPrimary,
+    },
+    subHeading: {
+      fontSize: 13,
+      fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
+      color: theme.gold,
+      letterSpacing: 0.5,
+      marginTop: 6,
+    },
+    pillSelector: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: 8,
+      marginBottom: 4,
+    },
+    pillBtn: {
+      backgroundColor: theme.bgCard,
+      borderWidth: 1,
+      borderColor: theme.border,
+      paddingHorizontal: 12,
+      paddingVertical: 8,
+      borderRadius: 10,
+    },
+    pillBtnActive: {
+      backgroundColor: theme.gold,
+      borderColor: theme.gold,
+    },
+    pillBtnText: {
+      fontSize: 12,
+      fontWeight: "700",
+      color: theme.textSecondary,
+    },
+    pillBtnTextActive: {
+      color: theme.kenyaBlack,
+    },
+    tipCard: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 10,
+      backgroundColor: `${theme.gold}12`,
+      borderWidth: 1,
+      borderColor: `${theme.gold}30`,
+      borderRadius: 12,
+      padding: 12,
+    },
+    tipText: {
+      flex: 1,
+      fontSize: 12,
+      color: theme.textSecondary,
+      lineHeight: 16,
+    },
+  });

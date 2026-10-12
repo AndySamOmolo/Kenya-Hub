@@ -19,6 +19,7 @@ import {
   TOOLS,
   getRelatedTools,
 } from "../../src/shared/lib/tools-registry";
+import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 // Interactive Tools
 import {
@@ -235,7 +236,7 @@ export default function ToolDetailScreen() {
             {/* Title & Icon */}
             <View style={styles.heroRow}>
               <View style={[styles.heroIconBox, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
-                <Text style={styles.heroEmoji}>{tool.icon}</Text>
+                <DynamicIcon emoji={tool.icon} size={28} color={theme.gold} />
               </View>
               <View style={{ flex: 1, marginLeft: 12 }}>
                 <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>{tool.title}</Text>

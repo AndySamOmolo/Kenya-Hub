@@ -8,7 +8,7 @@ import {
   ScrollView,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { colors } from "../theme";
+import { useDynamicStyles, ThemeColors } from "../theme";
 import cbcData from "../shared/data/cbc-curriculum.json";
 import proverbsData from "../shared/data/kikuyu-proverbs.json";
 import rankingsData from "../shared/data/kcse-rankings.json";
@@ -17,6 +17,7 @@ import languagesData from "../shared/data/kenya-languages.json";
 
 /** 1. CBC Grade & Age Checker */
 export function CbcGradeAgeTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const currentYear = 2026;
   const [birthYear, setBirthYear] = useState("2017");
   const year = Number(birthYear) || 2017;
@@ -104,35 +105,35 @@ export function CbcGradeAgeTool() {
       return {
         grade: "Grade 9",
         system: "Form 1 / JSS 3",
-        level: "Junior Secondary School (KJSEA)",
+        level: "Junior Secondary (KJSEA Assessment)",
         ageGroup: "14 years",
       };
     } else if (age === 15) {
       return {
         grade: "Grade 10",
-        system: "Form 2",
-        level: "Senior School (Pathway Choice)",
+        system: "Form 2 / Senior School 1",
+        level: "Senior Secondary School",
         ageGroup: "15 years",
       };
     } else if (age === 16) {
       return {
         grade: "Grade 11",
-        system: "Form 3",
-        level: "Senior School",
+        system: "Form 3 / Senior School 2",
+        level: "Senior Secondary School",
         ageGroup: "16 years",
       };
     } else if (age === 17) {
       return {
         grade: "Grade 12",
-        system: "Form 4",
-        level: "Senior School (Tertiary Entry)",
+        system: "Form 4 / KCSE Equivalent",
+        level: "Senior Secondary (KSE)",
         ageGroup: "17 years",
       };
     } else {
       return {
         grade: "Tertiary / Higher Education",
         system: "University / TVET / College",
-        level: "Post-Secondary",
+        level: "Post-Secondary Education",
         ageGroup: "18+ years",
       };
     }
@@ -147,7 +148,7 @@ export function CbcGradeAgeTool() {
           onChangeText={setBirthYear}
           keyboardType="numeric"
           placeholder="e.g. 2017"
-          placeholderTextColor={colors.textMuted}
+          placeholderTextColor={theme.textMuted}
           style={styles.textInput}
         />
       </View>
@@ -161,7 +162,7 @@ export function CbcGradeAgeTool() {
       <View style={styles.card}>
         <View style={styles.tableRow}>
           <Text style={styles.rowLabel}>CBC Curriculum Stage</Text>
-          <Text style={[styles.rowValue, { color: colors.gold }]}>{gradeInfo.level}</Text>
+          <Text style={[styles.rowValue, { color: theme.gold }]}>{gradeInfo.level}</Text>
         </View>
         <View style={styles.tableRow}>
           <Text style={styles.rowLabel}>Former 8-4-4 Equivalent</Text>
@@ -178,55 +179,62 @@ export function CbcGradeAgeTool() {
 
 /** 2. KCSE Grade Calculator */
 export function KcseCalculatorTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const gradePoints: Record<string, number> = {
     A: 12, "A-": 11, "B+": 10, B: 9, "B-": 8,
     "C+": 7, C: 6, "C-": 5, "D+": 4, D: 3, "D-": 2, E: 1,
   };
 
+  const possibleGrades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"];
+
+  const subjects = [
+    "English",
+    "Kiswahili",
+    "Mathematics",
+    "Biology / Chemistry",
+    "Physics / History",
+    "Geography / CRE / IRE",
+    "Business / Agriculture / Computer",
+  ];
+
   const [grades, setGrades] = useState<string[]>([
-    "A", "A-", "B+", "B", "B", "B-", "C+",
+    "B+", "B", "A-", "B", "C+", "B+", "A",
   ]);
 
-  const updateGrade = (index: number, val: string) => {
-    const updated = [...grades];
-    updated[index] = val;
-    setGrades(updated);
+  const updateGrade = (idx: number, g: string) => {
+    const copy = [...grades];
+    copy[idx] = g;
+    setGrades(copy);
   };
 
   const calc = useMemo(() => {
-    const totalPoints = grades.reduce((acc, g) => acc + (gradePoints[g] || 0), 0);
-    const meanPoints = totalPoints / 7;
+    const totalPoints = grades.reduce((sum, g) => sum + (gradePoints[g] || 0), 0);
+    const meanPoints = (totalPoints / 7).toFixed(2);
+    const numMean = Number(meanPoints);
 
     let meanGrade = "E";
-    if (meanPoints >= 11.5) meanGrade = "A";
-    else if (meanPoints >= 10.5) meanGrade = "A-";
-    else if (meanPoints >= 9.5) meanGrade = "B+";
-    else if (meanPoints >= 8.5) meanGrade = "B";
-    else if (meanPoints >= 7.5) meanGrade = "B-";
-    else if (meanPoints >= 6.5) meanGrade = "C+";
-    else if (meanPoints >= 5.5) meanGrade = "C";
-    else if (meanPoints >= 4.5) meanGrade = "C-";
-    else if (meanPoints >= 3.5) meanGrade = "D+";
-    else if (meanPoints >= 2.5) meanGrade = "D";
-    else if (meanPoints >= 1.5) meanGrade = "D-";
+    if (numMean >= 11.5) meanGrade = "A";
+    else if (numMean >= 10.5) meanGrade = "A-";
+    else if (numMean >= 9.5) meanGrade = "B+";
+    else if (numMean >= 8.5) meanGrade = "B";
+    else if (numMean >= 7.5) meanGrade = "B-";
+    else if (numMean >= 6.5) meanGrade = "C+";
+    else if (numMean >= 5.5) meanGrade = "C";
+    else if (numMean >= 4.5) meanGrade = "C-";
+    else if (numMean >= 3.5) meanGrade = "D+";
+    else if (numMean >= 2.5) meanGrade = "D";
+    else if (numMean >= 1.5) meanGrade = "D-";
 
-    const qualifiesUniversity = meanPoints >= 6.5;
+    const qualifiesUniversity = numMean >= 6.5;
 
-    return { totalPoints, meanPoints: meanPoints.toFixed(2), meanGrade, qualifiesUniversity };
+    return { totalPoints, meanPoints, meanGrade, qualifiesUniversity };
   }, [grades]);
-
-  const subjects = [
-    "English", "Kiswahili", "Mathematics", "Biology / Chemistry",
-    "Physics / Humanity", "Humanities / Technical", "7th Best Subject",
-  ];
-
-  const possibleGrades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E"];
 
   return (
     <View style={styles.toolWrap}>
       <View style={styles.statCard}>
-        <Text style={styles.statLabel}>KCSE MEAN GRADE</Text>
-        <Text style={[styles.statValue, { fontSize: 32 }]}>{calc.meanGrade}</Text>
+        <Text style={styles.statLabel}>KCSE OVERALL MEAN GRADE</Text>
+        <Text style={styles.statValue}>{calc.meanGrade}</Text>
         <Text style={styles.statSubtext}>
           Total Points: {calc.totalPoints} / 84 · Average: {calc.meanPoints}
         </Text>
@@ -245,8 +253,8 @@ export function KcseCalculatorTool() {
               styles.qualificationText,
               {
                 color: calc.qualifiesUniversity
-                  ? colors.kenyaGreenLight
-                  : colors.kenyaRedLight,
+                  ? theme.kenyaGreenLight
+                  : theme.kenyaRedLight,
               },
             ]}
           >
@@ -292,6 +300,7 @@ export function KcseCalculatorTool() {
 
 /** 3. Kikuyu Proverbs (Thimo cia Gĩkũyũ) */
 export function KikuyuProverbsTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [q, setQ] = useState("");
   const proverbs = Array.isArray(proverbsData) ? proverbsData : [];
 
@@ -303,8 +312,8 @@ export function KikuyuProverbsTool() {
     return proverbs
       .filter(
         (p: any) =>
-          p.kikuyu.toLowerCase().includes(query) ||
-          p.translation.toLowerCase().includes(query) ||
+          (p.kikuyu && p.kikuyu.toLowerCase().includes(query)) ||
+          (p.translation && p.translation.toLowerCase().includes(query)) ||
           (p.explanation && p.explanation.toLowerCase().includes(query))
       )
       .slice(0, 30);
@@ -312,8 +321,7 @@ export function KikuyuProverbsTool() {
 
   const handleRandom = () => {
     if (proverbs.length > 0) {
-      const idx = Math.floor(Math.random() * proverbs.length);
-      setRandomIdx(idx);
+      setRandomIdx(Math.floor(Math.random() * proverbs.length));
     }
   };
 
@@ -327,7 +335,7 @@ export function KikuyuProverbsTool() {
           <View style={styles.featuredTop}>
             <Text style={styles.featuredLabel}>THIMO YA UMŨTHĨ (FEATURED WISDOM)</Text>
             <Pressable onPress={handleRandom} style={styles.randomBtn} hitSlop={8}>
-              <Ionicons name="dice-outline" size={16} color={colors.gold} />
+              <Ionicons name="dice-outline" size={16} color={theme.gold} />
               <Text style={styles.randomBtnText}>Random</Text>
             </Pressable>
           </View>
@@ -341,12 +349,12 @@ export function KikuyuProverbsTool() {
 
       {/* Search Bar */}
       <View style={styles.searchBar}>
-        <Ionicons name="search" size={18} color={colors.textMuted} />
+        <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
           value={q}
           onChangeText={setQ}
           placeholder="Search 980+ proverbs by Kikuyu or English..."
-          placeholderTextColor={colors.textMuted}
+          placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
         />
       </View>
@@ -368,104 +376,9 @@ export function KikuyuProverbsTool() {
   );
 }
 
-/** 4. Language Learning Practice Hub */
-export function LanguageLearningTool() {
-  const [lang, setLang] = useState<"kikuyu" | "kisii" | "luo" | "turkana">("kikuyu");
-
-  const sampleLessons: Record<string, { title: string; greeting: string; phrases: { phrase: string; eng: string }[] }> = {
-    kikuyu: {
-      title: "Gĩkũyũ Language",
-      greeting: "Wĩ mwega! (How are you?)",
-      phrases: [
-        { phrase: "Wĩ mwega?", eng: "How are you? / Are you well?" },
-        { phrase: "Ndĩ mwega mũno", eng: "I am very fine." },
-        { phrase: "Nĩ wega", eng: "Thank you." },
-        { phrase: "Tigwo na wega", eng: "Goodbye / Stay well." },
-        { phrase: "Rĩĩtwa rĩaku nũũ?", eng: "What is your name?" },
-      ],
-    },
-    kisii: {
-      title: "Ekegusii (Kisii)",
-      greeting: "Bwakire! (Good morning!)",
-      phrases: [
-        { phrase: "Bwakire / Mbuya ore?", eng: "Good morning / How are you?" },
-        { phrase: "Mbuya mono", eng: "Very good / I am fine." },
-        { phrase: "Naki orogendo?", eng: "How was the journey?" },
-        { phrase: "Tiga gochia", eng: "Go well / Farewell." },
-        { phrase: "Eritwa riao ninkari?", eng: "What is your name?" },
-      ],
-    },
-    luo: {
-      title: "Dholuo Language",
-      greeting: "Oyawore! (Good morning!)",
-      phrases: [
-        { phrase: "Oyawore / Idhi nade?", eng: "Good morning / How are you?" },
-        { phrase: "Adhi maber", eng: "I am doing well." },
-        { phrase: "Erokamano", eng: "Thank you." },
-        { phrase: "Oriti", eng: "Goodbye / Take care." },
-        { phrase: "Nyingi ng'a?", eng: "What is your name?" },
-      ],
-    },
-    turkana: {
-      title: "Turkana Language",
-      greeting: "Ejoka! (Hello / Peace!)",
-      phrases: [
-        { phrase: "Ejoka?", eng: "Hello / Are you well?" },
-        { phrase: "Ejok nooi", eng: "Very well." },
-        { phrase: "Eketorite", eng: "Peace / Farewell." },
-        { phrase: "Alakara", eng: "Thank you." },
-        { phrase: "Ngaai ekiro kon?", eng: "What is your name?" },
-      ],
-    },
-  };
-
-  const current = sampleLessons[lang];
-
-  return (
-    <View style={styles.toolWrap}>
-      {/* Language Selector */}
-      <View style={styles.pillSelector}>
-        {[
-          { id: "kikuyu", label: "Gĩkũyũ" },
-          { id: "kisii", label: "Ekegusii" },
-          { id: "luo", label: "Dholuo" },
-          { id: "turkana", label: "Turkana" },
-        ].map((item) => (
-          <Pressable
-            key={item.id}
-            onPress={() => setLang(item.id as any)}
-            style={[styles.pillBtn, lang === item.id && styles.pillBtnActive]}
-          >
-            <Text style={[styles.pillBtnText, lang === item.id && styles.pillBtnTextActive]}>
-              {item.label}
-            </Text>
-          </Pressable>
-        ))}
-      </View>
-
-      <View style={styles.featuredCard}>
-        <Text style={styles.featuredLabel}>ESSENTIAL GREETING</Text>
-        <Text style={styles.kikuyuText}>{current.greeting}</Text>
-        <Text style={styles.translationText}>{current.title} Everyday Conversational Guide</Text>
-      </View>
-
-      <Text style={styles.subHeading}>Common Vocabulary & Phrases</Text>
-      <View style={styles.card}>
-        {current.phrases.map((p, i) => (
-          <View key={i} style={styles.tableRow}>
-            <Text style={[styles.rowLabel, { fontWeight: "700", color: colors.textPrimary }]}>
-              {p.phrase}
-            </Text>
-            <Text style={[styles.rowValue, { color: colors.gold }]}>{p.eng}</Text>
-          </View>
-        ))}
-      </View>
-    </View>
-  );
-}
-
-/** 5. KCSE Top Schools Rankings */
+/** 4. KCSE Top Schools Rankings */
 export function KcseRankingsTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const schools = (rankingsData as any).schools || [];
 
   return (
@@ -494,8 +407,9 @@ export function KcseRankingsTool() {
   );
 }
 
-/** 6. School Terms Calendar */
+/** 5. School Terms Calendar */
 export function SchoolTermsTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const terms = termsData.years?.["2025"]?.terms || [];
 
   return (
@@ -526,324 +440,326 @@ export function SchoolTermsTool() {
   );
 }
 
-const styles = StyleSheet.create({
-  toolWrap: {
-    gap: 14,
-  },
-  inputGroup: {
-    marginBottom: 6,
-  },
-  inputLabel: {
-    fontSize: 12,
-    fontWeight: "700",
-    color: colors.textSecondary,
-    marginBottom: 6,
-  },
-  textInput: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    fontSize: 16,
-    fontWeight: "700",
-    color: colors.textPrimary,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-  },
-  statCard: {
-    backgroundColor: "rgba(200, 150, 30, 0.08)",
-    borderRadius: 16,
-    borderWidth: 1,
-    borderColor: "rgba(200, 150, 30, 0.3)",
-    padding: 16,
-    alignItems: "center",
-  },
-  statLabel: {
-    fontSize: 11,
-    fontWeight: "800",
-    letterSpacing: 1,
-    color: colors.gold,
-    marginBottom: 4,
-  },
-  statValue: {
-    fontSize: 24,
-    fontWeight: "900",
-    color: colors.textPrimary,
-  },
-  statSubtext: {
-    fontSize: 11,
-    color: colors.textMuted,
-    marginTop: 4,
-  },
-  qualificationBadge: {
-    marginTop: 10,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 8,
-  },
-  qualificationText: {
-    fontSize: 11,
-    fontWeight: "700",
-  },
-  card: {
-    backgroundColor: colors.bgCard,
-    borderRadius: 16,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: 14,
-  },
-  tableRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingVertical: 8,
-  },
-  rowLabel: {
-    fontSize: 13,
-    color: colors.textSecondary,
-    flex: 1,
-  },
-  rowValue: {
-    fontSize: 13,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  subHeading: {
-    fontSize: 13,
-    fontWeight: "800",
-    color: colors.gold,
-    letterSpacing: 0.5,
-  },
-  subjectRow: {
-    paddingVertical: 8,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border,
-    gap: 6,
-  },
-  subjectLabel: {
-    fontSize: 12,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  gradeChip: {
-    backgroundColor: "rgba(255, 255, 255, 0.04)",
-    borderWidth: 1,
-    borderColor: colors.border,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 6,
-  },
-  gradeChipActive: {
-    backgroundColor: colors.gold,
-    borderColor: colors.gold,
-  },
-  gradeChipText: {
-    fontSize: 11,
-    fontWeight: "800",
-    color: colors.textSecondary,
-  },
-  gradeChipTextActive: {
-    color: colors.kenyaBlack,
-  },
-  featuredCard: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 16,
-    padding: 16,
-  },
-  featuredTop: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 8,
-  },
-  featuredLabel: {
-    fontSize: 10,
-    fontWeight: "800",
-    color: colors.gold,
-    letterSpacing: 0.8,
-  },
-  randomBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    backgroundColor: "rgba(200, 150, 30, 0.12)",
-    borderRadius: 6,
-  },
-  randomBtnText: {
-    fontSize: 11,
-    fontWeight: "700",
-    color: colors.gold,
-  },
-  kikuyuText: {
-    fontSize: 16,
-    fontWeight: "800",
-    color: colors.textPrimary,
-    lineHeight: 22,
-  },
-  translationText: {
-    fontSize: 13,
-    color: colors.gold,
-    marginTop: 6,
-    lineHeight: 18,
-  },
-  explanationText: {
-    fontSize: 12,
-    color: colors.textMuted,
-    marginTop: 6,
-    lineHeight: 16,
-  },
-  searchBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    paddingHorizontal: 12,
-    height: 42,
-  },
-  searchInput: {
-    flex: 1,
-    marginLeft: 8,
-    color: colors.textPrimary,
-    fontSize: 13,
-  },
-  proverbCard: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    padding: 12,
-    gap: 4,
-  },
-  cardKikuyu: {
-    fontSize: 14,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  cardTranslation: {
-    fontSize: 12,
-    color: colors.gold,
-  },
-  cardExplanation: {
-    fontSize: 11,
-    color: colors.textMuted,
-    lineHeight: 15,
-  },
-  pillSelector: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 8,
-  },
-  pillBtn: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    paddingHorizontal: 14,
-    paddingVertical: 8,
-    borderRadius: 10,
-  },
-  pillBtnActive: {
-    backgroundColor: colors.gold,
-    borderColor: colors.gold,
-  },
-  pillBtnText: {
-    fontSize: 12,
-    fontWeight: "700",
-    color: colors.textSecondary,
-  },
-  pillBtnTextActive: {
-    color: colors.kenyaBlack,
-  },
-  rankingCard: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    padding: 12,
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  rankBadge: {
-    width: 36,
-    height: 36,
-    borderRadius: 10,
-    backgroundColor: "rgba(200, 150, 30, 0.12)",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  rankNum: {
-    fontSize: 12,
-    fontWeight: "900",
-    color: colors.gold,
-  },
-  schoolName: {
-    fontSize: 14,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  schoolMeta: {
-    fontSize: 11,
-    color: colors.textMuted,
-    marginTop: 1,
-  },
-  scoreWrap: {
-    alignItems: "flex-end",
-  },
-  meanScore: {
-    fontSize: 16,
-    fontWeight: "900",
-    color: colors.gold,
-  },
-  meanLabel: {
-    fontSize: 10,
-    color: colors.textMuted,
-  },
-  termCard: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 14,
-    padding: 14,
-    gap: 6,
-  },
-  termHeader: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  termName: {
-    fontSize: 16,
-    fontWeight: "800",
-    color: colors.textPrimary,
-  },
-  weeksBadge: {
-    backgroundColor: "rgba(26, 139, 209, 0.15)",
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
-  },
-  weeksText: {
-    fontSize: 11,
-    fontWeight: "800",
-    color: colors.sky,
-  },
-  termDatesRow: {},
-  termDates: {
-    fontSize: 13,
-    color: colors.gold,
-    fontWeight: "600",
-  },
-  midTermText: {
-    fontSize: 11,
-    color: colors.textSecondary,
-  },
-  termNotes: {
-    fontSize: 11,
-    color: colors.textMuted,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    toolWrap: {
+      gap: 14,
+    },
+    inputGroup: {
+      marginBottom: 6,
+    },
+    inputLabel: {
+      fontSize: 12,
+      fontWeight: "700",
+      color: colors.textSecondary,
+      marginBottom: 6,
+    },
+    textInput: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 12,
+      fontSize: 16,
+      fontWeight: "700",
+      color: colors.textPrimary,
+      paddingHorizontal: 14,
+      paddingVertical: 10,
+    },
+    statCard: {
+      backgroundColor: "rgba(200, 150, 30, 0.08)",
+      borderRadius: 16,
+      borderWidth: 1,
+      borderColor: "rgba(200, 150, 30, 0.3)",
+      padding: 16,
+      alignItems: "center",
+    },
+    statLabel: {
+      fontSize: 11,
+      fontWeight: "800",
+      letterSpacing: 1,
+      color: colors.gold,
+      marginBottom: 4,
+    },
+    statValue: {
+      fontSize: 24,
+      fontWeight: "900",
+      color: colors.textPrimary,
+    },
+    statSubtext: {
+      fontSize: 11,
+      color: colors.textMuted,
+      marginTop: 4,
+    },
+    qualificationBadge: {
+      marginTop: 10,
+      paddingHorizontal: 12,
+      paddingVertical: 6,
+      borderRadius: 8,
+    },
+    qualificationText: {
+      fontSize: 11,
+      fontWeight: "700",
+    },
+    card: {
+      backgroundColor: colors.bgCard,
+      borderRadius: 16,
+      borderWidth: 1,
+      borderColor: colors.border,
+      padding: 14,
+    },
+    tableRow: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      paddingVertical: 8,
+    },
+    rowLabel: {
+      fontSize: 13,
+      color: colors.textSecondary,
+      flex: 1,
+    },
+    rowValue: {
+      fontSize: 13,
+      fontWeight: "700",
+      color: colors.textPrimary,
+    },
+    subHeading: {
+      fontSize: 13,
+      fontWeight: "800",
+      color: colors.gold,
+      letterSpacing: 0.5,
+    },
+    subjectRow: {
+      paddingVertical: 8,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+      gap: 6,
+    },
+    subjectLabel: {
+      fontSize: 12,
+      fontWeight: "700",
+      color: colors.textPrimary,
+    },
+    gradeChip: {
+      backgroundColor: colors.bgSecondary,
+      borderWidth: 1,
+      borderColor: colors.border,
+      paddingHorizontal: 8,
+      paddingVertical: 4,
+      borderRadius: 6,
+    },
+    gradeChipActive: {
+      backgroundColor: colors.gold,
+      borderColor: colors.gold,
+    },
+    gradeChipText: {
+      fontSize: 11,
+      fontWeight: "800",
+      color: colors.textSecondary,
+    },
+    gradeChipTextActive: {
+      color: colors.kenyaBlack,
+    },
+    featuredCard: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 16,
+      padding: 16,
+    },
+    featuredTop: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      marginBottom: 8,
+    },
+    featuredLabel: {
+      fontSize: 10,
+      fontWeight: "800",
+      color: colors.gold,
+      letterSpacing: 0.8,
+    },
+    randomBtn: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 4,
+      paddingHorizontal: 8,
+      paddingVertical: 3,
+      backgroundColor: "rgba(200, 150, 30, 0.12)",
+      borderRadius: 6,
+    },
+    randomBtnText: {
+      fontSize: 11,
+      fontWeight: "700",
+      color: colors.gold,
+    },
+    kikuyuText: {
+      fontSize: 16,
+      fontWeight: "800",
+      color: colors.textPrimary,
+      lineHeight: 22,
+    },
+    translationText: {
+      fontSize: 13,
+      color: colors.gold,
+      marginTop: 6,
+      lineHeight: 18,
+    },
+    explanationText: {
+      fontSize: 12,
+      color: colors.textMuted,
+      marginTop: 6,
+      lineHeight: 16,
+    },
+    searchBar: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 12,
+      paddingHorizontal: 12,
+      height: 42,
+    },
+    searchInput: {
+      flex: 1,
+      marginLeft: 8,
+      color: colors.textPrimary,
+      fontSize: 13,
+    },
+    proverbCard: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 12,
+      padding: 12,
+      gap: 4,
+    },
+    cardKikuyu: {
+      fontSize: 14,
+      fontWeight: "700",
+      color: colors.textPrimary,
+    },
+    cardTranslation: {
+      fontSize: 12,
+      color: colors.gold,
+    },
+    cardExplanation: {
+      fontSize: 11,
+      color: colors.textMuted,
+      lineHeight: 15,
+    },
+    pillSelector: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: 8,
+    },
+    pillBtn: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      paddingHorizontal: 14,
+      paddingVertical: 8,
+      borderRadius: 10,
+    },
+    pillBtnActive: {
+      backgroundColor: colors.gold,
+      borderColor: colors.gold,
+    },
+    pillBtnText: {
+      fontSize: 12,
+      fontWeight: "700",
+      color: colors.textSecondary,
+    },
+    pillBtnTextActive: {
+      color: colors.kenyaBlack,
+    },
+    rankingCard: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 12,
+      padding: 12,
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    rankBadge: {
+      width: 36,
+      height: 36,
+      borderRadius: 10,
+      backgroundColor: "rgba(200, 150, 30, 0.12)",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    rankNum: {
+      fontSize: 12,
+      fontWeight: "900",
+      color: colors.gold,
+    },
+    schoolName: {
+      fontSize: 14,
+      fontWeight: "700",
+      color: colors.textPrimary,
+    },
+    schoolMeta: {
+      fontSize: 11,
+      color: colors.textMuted,
+      marginTop: 1,
+    },
+    scoreWrap: {
+      alignItems: "flex-end",
+    },
+    meanScore: {
+      fontSize: 16,
+      fontWeight: "900",
+      color: colors.gold,
+    },
+    meanLabel: {
+      fontSize: 10,
+      color: colors.textMuted,
+    },
+    termCard: {
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 14,
+      padding: 14,
+      gap: 6,
+    },
+    termHeader: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+    },
+    termName: {
+      fontSize: 16,
+      fontWeight: "800",
+      color: colors.textPrimary,
+    },
+    weeksBadge: {
+      backgroundColor: "rgba(26, 139, 209, 0.15)",
+      paddingHorizontal: 8,
+      paddingVertical: 3,
+      borderRadius: 6,
+    },
+    weeksText: {
+      fontSize: 11,
+      fontWeight: "800",
+      color: colors.sky,
+    },
+    termDatesRow: {},
+    termDates: {
+      fontSize: 13,
+      color: colors.gold,
+      fontWeight: "600",
+    },
+    midTermText: {
+      fontSize: 11,
+      color: colors.textSecondary,
+    },
+    termNotes: {
+      fontSize: 11,
+      color: colors.textMuted,
+    },
+  });
+}

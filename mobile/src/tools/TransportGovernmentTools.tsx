@@ -7,7 +7,7 @@ import {
   Pressable,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { colors } from "../theme";
+import { useDynamicStyles, ThemeColors } from "../theme";
 import platesData from "../shared/data/number-plate-prefixes.json";
 import prefixesData from "../shared/data/mobile-prefixes.json";
 import holidaysData from "../shared/data/public-holidays.json";
@@ -18,6 +18,7 @@ import passportData from "../shared/data/passport-id-fees.json";
 
 /** 1. Number Plate Decoder */
 export function NumberPlateDecoder() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [plate, setPlate] = useState("KDA 123A");
   const clean = plate.trim().toUpperCase().replace(/\s+/g, "");
 
@@ -30,7 +31,7 @@ export function NumberPlateDecoder() {
         category: "Government of Kenya (GK)",
         year: "Permanent Govt Series",
         county: "National Government",
-        badgeColor: colors.kenyaGreenLight,
+        badgeColor: theme.kenyaGreenLight,
         type: "Official Government Vehicle",
       };
     }
@@ -39,7 +40,7 @@ export function NumberPlateDecoder() {
         category: "County Government (CG)",
         year: "Post-2013 Devolved Govt",
         county: "Devolved County Government",
-        badgeColor: colors.sky,
+        badgeColor: theme.sky,
         type: "County Official Vehicle",
       };
     }
@@ -48,7 +49,7 @@ export function NumberPlateDecoder() {
         category: "Diplomatic Corps (CD)",
         year: "Foreign Mission / Embassy",
         county: "Diplomatic",
-        badgeColor: colors.kenyaRedLight,
+        badgeColor: theme.kenyaRedLight,
         type: "Foreign Diplomat",
       };
     }
@@ -62,7 +63,7 @@ export function NumberPlateDecoder() {
         prefix: match.prefix,
         year: match.yearRange,
         county: match.county,
-        badgeColor: colors.gold,
+        badgeColor: theme.gold,
         type: `Issued during ${match.yearRange}`,
       };
     }
@@ -72,10 +73,10 @@ export function NumberPlateDecoder() {
       prefix: prefix.length === 3 ? prefix : clean,
       year: "Recent NTSA Allocation",
       county: "Kenya",
-      badgeColor: colors.gold,
+      badgeColor: theme.gold,
       type: "Registered under NTSA Digital System",
     };
-  }, [clean]);
+  }, [clean, theme]);
 
   return (
     <View style={styles.toolWrap}>
@@ -85,7 +86,7 @@ export function NumberPlateDecoder() {
           value={plate}
           onChangeText={setPlate}
           placeholder="e.g. KDA 456B, GK 123A, 47 CG 001"
-          placeholderTextColor={colors.textMuted}
+          placeholderTextColor={theme.textMuted}
           autoCapitalize="characters"
           style={styles.textInputPlate}
         />
@@ -128,6 +129,7 @@ export function NumberPlateDecoder() {
 
 /** 2. Mobile Prefix Finder */
 export function MobilePrefixFinder() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [num, setNum] = useState("0722123456");
   const clean = num.trim().replace(/[^0-9]/g, "");
 
@@ -152,7 +154,7 @@ export function MobilePrefixFinder() {
           value={num}
           onChangeText={setNum}
           placeholder="e.g. 0722, 0733, 0110..."
-          placeholderTextColor={colors.textMuted}
+          placeholderTextColor={theme.textMuted}
           keyboardType="numeric"
           style={styles.textInput}
         />
@@ -164,7 +166,7 @@ export function MobilePrefixFinder() {
             <View
               style={[
                 styles.carrierDot,
-                { backgroundColor: carrier.color || colors.gold },
+                { backgroundColor: carrier.color || theme.gold },
               ]}
             />
             <Text style={styles.carrierTitle}>{carrier.name} Kenya</Text>
@@ -187,7 +189,7 @@ export function MobilePrefixFinder() {
         </View>
       ) : (
         <View style={styles.card}>
-          <Text style={{ color: colors.textSecondary }}>
+          <Text style={{ color: theme.textSecondary }}>
             Enter at least 4 digits (e.g. 0722 or 0733) to identify the cellular carrier.
           </Text>
         </View>
@@ -198,6 +200,7 @@ export function MobilePrefixFinder() {
 
 /** 3. Public Holidays Tool */
 export function PublicHolidaysTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const holidays = holidaysData.holidays["2026"] || [];
 
   return (
@@ -226,6 +229,7 @@ export function PublicHolidaysTool() {
 
 /** 4. Traffic Fines Tool */
 export function TrafficFinesTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [search, setSearch] = useState("");
   const categories = finesData.categories || [];
 
@@ -252,12 +256,12 @@ export function TrafficFinesTool() {
   return (
     <View style={styles.toolWrap}>
       <View style={styles.searchBar}>
-        <Ionicons name="search" size={18} color={colors.textMuted} />
+        <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
           value={search}
           onChangeText={setSearch}
           placeholder="Search offenses (speeding, license, insurance)..."
-          placeholderTextColor={colors.textMuted}
+          placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
         />
       </View>
@@ -283,8 +287,8 @@ export function TrafficFinesTool() {
                 styles.arrestText,
                 {
                   color: item.arrestable
-                    ? colors.kenyaRedLight
-                    : colors.kenyaGreenLight,
+                    ? theme.kenyaRedLight
+                    : theme.kenyaGreenLight,
                 },
               ]}
             >
@@ -299,6 +303,7 @@ export function TrafficFinesTool() {
 
 /** 5. Postal Codes Lookup */
 export function PostalCodesTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [q, setQ] = useState("");
   const list = postalData.codes || [];
 
@@ -316,12 +321,12 @@ export function PostalCodesTool() {
   return (
     <View style={styles.toolWrap}>
       <View style={styles.searchBar}>
-        <Ionicons name="search" size={18} color={colors.textMuted} />
+        <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
           value={q}
           onChangeText={setQ}
           placeholder="Search by postal code, town, or county..."
-          placeholderTextColor={colors.textMuted}
+          placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
         />
       </View>
@@ -347,6 +352,7 @@ export function PostalCodesTool() {
 
 /** 6. Driving License Guide */
 export function DrivingLicenseTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   return (
     <View style={styles.toolWrap}>
       <Text style={styles.subHeading}>NTSA Driving License Fees & Process</Text>
@@ -374,7 +380,7 @@ export function DrivingLicenseTool() {
       </View>
 
       <View style={styles.tipCard}>
-        <Ionicons name="globe-outline" size={18} color={colors.gold} />
+        <Ionicons name="globe-outline" size={18} color={theme.gold} />
         <Text style={styles.tipText}>
           All applications and biometric appointment bookings are submitted through your eCitizen account via NTSA Portal.
         </Text>
@@ -385,6 +391,7 @@ export function DrivingLicenseTool() {
 
 /** 7. Passport & ID Fees */
 export function PassportFeesTool() {
+  const { theme, styles } = useDynamicStyles(createStyles);
   const fees = passportData.passport?.types || [];
 
   return (
@@ -402,7 +409,7 @@ export function PassportFeesTool() {
       </View>
 
       <View style={styles.tipCard}>
-        <Ionicons name="information-circle-outline" size={18} color={colors.gold} />
+        <Ionicons name="information-circle-outline" size={18} color={theme.gold} />
         <Text style={styles.tipText}>
           Passport renewals and applications require an eCitizen application form, tracking invoice, and biometric appointment at Nyayo House or regional immigration offices.
         </Text>
@@ -411,281 +418,288 @@ export function PassportFeesTool() {
   );
 }
 
-const styles = StyleSheet.create({
-  toolWrap: {
-    gap: 14,
-  },
-  inputGroup: {
-    marginBottom: 6,
-  },
-  inputLabel: {
-    fontSize: 12,
-    fontWeight: "700",
-    color: colors.textSecondary,
-    marginBottom: 6,
-  },
-  textInput: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.textPrimary,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-  },
-  textInputPlate: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    fontSize: 18,
-    fontWeight: "900",
-    letterSpacing: 2,
-    color: colors.gold,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-    textAlign: "center",
-  },
-  card: {
-    backgroundColor: colors.bgCard,
-    borderRadius: 16,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: 14,
-  },
-  plateDisplay: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#FFFFFF",
-    borderRadius: 8,
-    borderWidth: 3,
-    borderColor: "#000000",
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-    marginBottom: 14,
-    alignSelf: "center",
-  },
-  plateFlag: {
-    width: 14,
-    marginRight: 10,
-    gap: 1,
-  },
-  plateDisplayText: {
-    fontSize: 20,
-    fontWeight: "900",
-    color: "#000000",
-    letterSpacing: 2,
-  },
-  tableRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingVertical: 8,
-  },
-  rowLabel: {
-    fontSize: 13,
-    color: colors.textSecondary,
-    flex: 1,
-  },
-  rowValue: {
-    fontSize: 13,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  carrierHeader: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    marginBottom: 6,
-  },
-  carrierDot: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-  },
-  carrierTitle: {
-    fontSize: 16,
-    fontWeight: "800",
-    color: colors.textPrimary,
-  },
-  carrierDesc: {
-    fontSize: 12,
-    color: colors.textSecondary,
-  },
-  ussdHeading: {
-    fontSize: 12,
-    fontWeight: "800",
-    color: colors.gold,
-    marginBottom: 6,
-  },
-  ussdRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    paddingVertical: 4,
-  },
-  ussdCode: {
-    fontSize: 12,
-    fontWeight: "800",
-    color: colors.gold,
-  },
-  ussdDesc: {
-    fontSize: 12,
-    color: colors.textSecondary,
-  },
-  subHeading: {
-    fontSize: 13,
-    fontWeight: "800",
-    color: colors.gold,
-    letterSpacing: 0.5,
-  },
-  holidayCard: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 14,
-    padding: 12,
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  holidayDateBox: {
-    width: 52,
-    backgroundColor: "rgba(200, 150, 30, 0.12)",
-    borderWidth: 1,
-    borderColor: "rgba(200, 150, 30, 0.25)",
-    borderRadius: 10,
-    paddingVertical: 6,
-    alignItems: "center",
-  },
-  holidayDayName: {
-    fontSize: 10,
-    fontWeight: "800",
-    color: colors.gold,
-  },
-  holidayDateNum: {
-    fontSize: 12,
-    fontWeight: "800",
-    color: colors.textPrimary,
-  },
-  holidayName: {
-    fontSize: 14,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  holidayDesc: {
-    fontSize: 11,
-    color: colors.textMuted,
-    marginTop: 2,
-  },
-  searchBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    paddingHorizontal: 12,
-    height: 42,
-  },
-  searchInput: {
-    flex: 1,
-    marginLeft: 8,
-    color: colors.textPrimary,
-    fontSize: 13,
-  },
-  fineCard: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 14,
-    padding: 12,
-    gap: 6,
-  },
-  fineTop: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    gap: 10,
-  },
-  fineTitle: {
-    fontSize: 13,
-    fontWeight: "700",
-    color: colors.textPrimary,
-    flex: 1,
-  },
-  fineBadge: {
-    backgroundColor: "rgba(200, 150, 30, 0.15)",
-    borderWidth: 1,
-    borderColor: "rgba(200, 150, 30, 0.3)",
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
-  },
-  fineBadgeText: {
-    fontSize: 11,
-    fontWeight: "800",
-    color: colors.gold,
-  },
-  fineBottom: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  fineCat: {
-    fontSize: 11,
-    color: colors.textMuted,
-  },
-  arrestText: {
-    fontSize: 11,
-    fontWeight: "700",
-  },
-  postalCard: {
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    padding: 12,
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  postalCodeBox: {
-    width: 58,
-    backgroundColor: "rgba(26, 139, 209, 0.12)",
-    borderWidth: 1,
-    borderColor: "rgba(26, 139, 209, 0.25)",
-    borderRadius: 8,
-    paddingVertical: 6,
-    alignItems: "center",
-  },
-  postalCodeText: {
-    fontSize: 13,
-    fontWeight: "800",
-    color: colors.sky,
-  },
-  postalOffice: {
-    fontSize: 14,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  postalCounty: {
-    fontSize: 11,
-    color: colors.textSecondary,
-    marginTop: 1,
-  },
-  tipCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-    backgroundColor: "rgba(200, 150, 30, 0.08)",
-    borderWidth: 1,
-    borderColor: "rgba(200, 150, 30, 0.2)",
-    borderRadius: 12,
-    padding: 12,
-  },
-  tipText: {
-    flex: 1,
-    fontSize: 12,
-    color: colors.textSecondary,
-    lineHeight: 16,
-  },
-});
+const createStyles = (theme: ThemeColors) =>
+  StyleSheet.create({
+    toolWrap: {
+      gap: 14,
+    },
+    inputGroup: {
+      marginBottom: 6,
+    },
+    inputLabel: {
+      fontSize: 12,
+      fontWeight: "700",
+      color: theme.textSecondary,
+      marginBottom: 6,
+    },
+    textInput: {
+      backgroundColor: theme.bgCard,
+      borderWidth: 1,
+      borderColor: theme.border,
+      borderRadius: 12,
+      fontSize: 15,
+      fontWeight: "700",
+      color: theme.textPrimary,
+      paddingHorizontal: 14,
+      paddingVertical: 10,
+    },
+    textInputPlate: {
+      backgroundColor: theme.bgCard,
+      borderWidth: 1,
+      borderColor: theme.border,
+      borderRadius: 12,
+      fontSize: 18,
+      fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "900",
+      letterSpacing: 2,
+      color: theme.gold,
+      paddingHorizontal: 14,
+      paddingVertical: 12,
+      textAlign: "center",
+    },
+    card: {
+      backgroundColor: theme.bgCard,
+      borderRadius: 16,
+      borderWidth: 1,
+      borderColor: theme.border,
+      padding: 14,
+    },
+    plateDisplay: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: "#FFFFFF",
+      borderRadius: 8,
+      borderWidth: 3,
+      borderColor: "#000000",
+      paddingHorizontal: 12,
+      paddingVertical: 8,
+      marginBottom: 14,
+      alignSelf: "center",
+    },
+    plateFlag: {
+      width: 14,
+      marginRight: 10,
+      gap: 1,
+    },
+    plateDisplayText: {
+      fontSize: 20,
+      fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "900",
+      color: "#000000",
+      letterSpacing: 2,
+    },
+    tableRow: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      paddingVertical: 8,
+    },
+    rowLabel: {
+      fontSize: 13,
+      color: theme.textSecondary,
+      flex: 1,
+    },
+    rowValue: {
+      fontSize: 13,
+      fontWeight: "700",
+      color: theme.textPrimary,
+    },
+    carrierHeader: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 8,
+      marginBottom: 6,
+    },
+    carrierDot: {
+      width: 10,
+      height: 10,
+      borderRadius: 5,
+    },
+    carrierTitle: {
+      fontSize: 16,
+      fontFamily: "Outfit_700Bold",
+      fontWeight: "800",
+      color: theme.textPrimary,
+    },
+    carrierDesc: {
+      fontSize: 12,
+      color: theme.textSecondary,
+    },
+    ussdHeading: {
+      fontSize: 12,
+      fontWeight: "800",
+      color: theme.gold,
+      marginBottom: 6,
+    },
+    ussdRow: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      paddingVertical: 4,
+    },
+    ussdCode: {
+      fontSize: 12,
+      fontWeight: "800",
+      color: theme.gold,
+    },
+    ussdDesc: {
+      fontSize: 12,
+      color: theme.textSecondary,
+    },
+    subHeading: {
+      fontSize: 13,
+      fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
+      color: theme.gold,
+      letterSpacing: 0.5,
+    },
+    holidayCard: {
+      backgroundColor: theme.bgCard,
+      borderWidth: 1,
+      borderColor: theme.border,
+      borderRadius: 14,
+      padding: 12,
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    holidayDateBox: {
+      width: 52,
+      backgroundColor: `${theme.gold}15`,
+      borderWidth: 1,
+      borderColor: `${theme.gold}30`,
+      borderRadius: 10,
+      paddingVertical: 6,
+      alignItems: "center",
+    },
+    holidayDayName: {
+      fontSize: 10,
+      fontWeight: "800",
+      color: theme.gold,
+    },
+    holidayDateNum: {
+      fontSize: 12,
+      fontWeight: "800",
+      color: theme.textPrimary,
+    },
+    holidayName: {
+      fontSize: 14,
+      fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
+      color: theme.textPrimary,
+    },
+    holidayDesc: {
+      fontSize: 11,
+      color: theme.textMuted,
+      marginTop: 2,
+    },
+    searchBar: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: theme.bgCard,
+      borderWidth: 1,
+      borderColor: theme.border,
+      borderRadius: 12,
+      paddingHorizontal: 12,
+      height: 42,
+    },
+    searchInput: {
+      flex: 1,
+      marginLeft: 8,
+      color: theme.textPrimary,
+      fontSize: 13,
+    },
+    fineCard: {
+      backgroundColor: theme.bgCard,
+      borderWidth: 1,
+      borderColor: theme.border,
+      borderRadius: 14,
+      padding: 12,
+      gap: 6,
+    },
+    fineTop: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      gap: 10,
+    },
+    fineTitle: {
+      fontSize: 13,
+      fontWeight: "700",
+      color: theme.textPrimary,
+      flex: 1,
+    },
+    fineBadge: {
+      backgroundColor: `${theme.gold}15`,
+      borderWidth: 1,
+      borderColor: `${theme.gold}30`,
+      paddingHorizontal: 8,
+      paddingVertical: 3,
+      borderRadius: 6,
+    },
+    fineBadgeText: {
+      fontSize: 11,
+      fontWeight: "800",
+      color: theme.gold,
+    },
+    fineBottom: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+    },
+    fineCat: {
+      fontSize: 11,
+      color: theme.textMuted,
+    },
+    arrestText: {
+      fontSize: 11,
+      fontWeight: "700",
+    },
+    postalCard: {
+      backgroundColor: theme.bgCard,
+      borderWidth: 1,
+      borderColor: theme.border,
+      borderRadius: 12,
+      padding: 12,
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    postalCodeBox: {
+      width: 58,
+      backgroundColor: `${theme.sky}15`,
+      borderWidth: 1,
+      borderColor: `${theme.sky}30`,
+      borderRadius: 8,
+      paddingVertical: 6,
+      alignItems: "center",
+    },
+    postalCodeText: {
+      fontSize: 13,
+      fontWeight: "800",
+      color: theme.sky,
+    },
+    postalOffice: {
+      fontSize: 14,
+      fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
+      color: theme.textPrimary,
+    },
+    postalCounty: {
+      fontSize: 11,
+      color: theme.textSecondary,
+      marginTop: 1,
+    },
+    tipCard: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 10,
+      backgroundColor: `${theme.gold}12`,
+      borderWidth: 1,
+      borderColor: `${theme.gold}30`,
+      borderRadius: 12,
+      padding: 12,
+    },
+    tipText: {
+      flex: 1,
+      fontSize: 12,
+      color: theme.textSecondary,
+      lineHeight: 16,
+    },
+  });

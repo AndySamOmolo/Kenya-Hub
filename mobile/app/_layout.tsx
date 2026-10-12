@@ -35,7 +35,9 @@ function LayoutContent() {
           headerShown: false,
           contentStyle: { backgroundColor: theme.bgPrimary },
           animation: "slide_from_right",
-          animationDuration: 220,
+          animationDuration: 200,
+          gestureEnabled: true,
+          fullScreenGestureEnabled: true,
         }}
       />
     </>

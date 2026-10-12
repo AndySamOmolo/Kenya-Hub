@@ -8,7 +8,7 @@ import {
   Pressable,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useTheme, colors } from "../theme";
+import { useDynamicStyles, ThemeColors } from "../theme";
 
 // Import directory datasets
 import hospitalsData from "../shared/data/nhif-hospitals.json";
@@ -40,7 +40,7 @@ interface DirectoryItem {
 }
 
 export function ReferenceDirectoryTool({ slug }: { slug: string }) {
-  const { theme } = useTheme();
+  const { theme, styles } = useDynamicStyles(createStyles);
   const [search, setSearch] = useState("");
 
   const dataset = useMemo<{ title: string; subtitle: string; items: DirectoryItem[] }>(() => {
@@ -55,7 +55,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: h.name,
             subtitle: `${h.county} County · ${h.subcounty || ""}`,
             badge: `Level ${h.level}`,
-            badgeColor: h.level >= 5 ? colors.gold : colors.sky,
+            badgeColor: h.level >= 5 ? theme.gold : theme.sky,
             details: [
               { label: "Facility Type", value: h.type },
               { label: "County", value: h.county },
@@ -75,7 +75,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: p.name,
             subtitle: `${p.county} County · ${p.region}`,
             badge: p.type,
-            badgeColor: colors.kenyaGreenLight,
+            badgeColor: theme.kenyaGreenLight,
             details: [
               { label: "Citizen Adult Fee", value: `KES ${p.feeCitizenAdult}` },
               { label: "Best Season", value: p.bestSeason },
@@ -95,7 +95,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               title: item.item,
               subtitle: cat.title,
               badge: cat.id === "prohibited" ? "Banned" : "Permit Req.",
-              badgeColor: cat.id === "prohibited" ? colors.kenyaRedLight : colors.gold,
+              badgeColor: cat.id === "prohibited" ? theme.kenyaRedLight : theme.gold,
               details: [
                 { label: "Governing Law", value: item.law },
                 { label: "Import Status", value: cat.description },
@@ -120,7 +120,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: c.name,
             subtitle: c.scientificName || "Crop Guide",
             badge: c.category || "Crops",
-            badgeColor: colors.kenyaGreenLight,
+            badgeColor: theme.kenyaGreenLight,
             details: [
               { label: "Long Rains (Planting)", value: c.longRainsPlanting || c.plantingSeason || "March – April" },
               { label: "Short Rains (Planting)", value: c.shortRainsPlanting || "October – November" },
@@ -141,7 +141,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: a.name,
             subtitle: `${a.town}, ${a.county} County`,
             badge: a.county,
-            badgeColor: colors.gold,
+            badgeColor: theme.gold,
             details: [
               { label: "Location", value: a.location || a.town },
               { label: "Contact Phone", value: a.phone || "Available in store" },
@@ -161,7 +161,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: f.name,
             subtitle: f.localName ? `Local: ${f.localName}` : "Kenyan Cuisine",
             badge: f.category || "Food",
-            badgeColor: colors.gold,
+            badgeColor: theme.gold,
             details: [
               { label: "Calories (per 100g)", value: `${f.calories || f.energy || "—"} kcal` },
               { label: "Protein", value: `${f.protein || "—"} g` },
@@ -181,7 +181,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: s.name,
             subtitle: s.characteristics || "Soil profile",
             badge: "Soil",
-            badgeColor: colors.earthLight,
+            badgeColor: theme.earthLight,
             details: [
               { label: "Best Crops", value: Array.isArray(s.suitableCrops) ? s.suitableCrops.join(", ") : (s.crops || "") },
               { label: "Key Regions", value: Array.isArray(s.regions) ? s.regions.join(", ") : (s.counties || "") },
@@ -201,7 +201,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: r.region || r.county || "Region",
             subtitle: `Annual: ${r.annualRainfall || r.averageRainfall || "Varies"} mm`,
             badge: r.climateType || "Climate",
-            badgeColor: colors.sky,
+            badgeColor: theme.sky,
             details: [
               { label: "Long Rains Period", value: r.longRains || "March – May" },
               { label: "Short Rains Period", value: r.shortRains || "October – December" },
@@ -221,7 +221,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: `${b.county || b.name} County Budget`,
             subtitle: `Fiscal Year: ${b.financialYear || "2024/2025"}`,
             badge: "Devolved",
-            badgeColor: colors.gold,
+            badgeColor: theme.gold,
             details: [
               { label: "Total Allocation", value: `KES ${b.totalBudget || b.allocation || "—"}` },
               { label: "Development Budget", value: `KES ${b.developmentBudget || "—"}` },
@@ -241,7 +241,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: l.animal || l.type || "Livestock",
             subtitle: l.market || "Kenya National Average",
             badge: `KES ${l.price || l.averagePrice || "—"}`,
-            badgeColor: colors.gold,
+            badgeColor: theme.gold,
             details: [
               { label: "Price Range", value: `KES ${l.minPrice || "—"} to ${l.maxPrice || "—"}` },
               { label: "Primary Markets", value: l.markets || "Kajiado, Garissa, Isiolo, Dagoretti" },
@@ -259,7 +259,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               title: "Subsidized Fertilizer Price: KES 2,500 / 50kg bag",
               subtitle: "National Cereals and Produce Board (NCPB)",
               badge: "KES 2,500",
-              badgeColor: colors.kenyaGreenLight,
+              badgeColor: theme.kenyaGreenLight,
               details: [
                 { label: "Standard Commercial Price", value: "KES 6,500 – 7,000" },
                 { label: "Subsidy Savings per Bag", value: "KES 4,000 – 4,500" },
@@ -271,7 +271,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               title: "Available Fertilizer Types",
               subtitle: "Planting and Top-Dressing varieties",
               badge: "NPK & CAN",
-              badgeColor: colors.gold,
+              badgeColor: theme.gold,
               details: [
                 { label: "Planting Fertilizers", value: "NPK 17:17:17, DAP, NPK 23:23:0" },
                 { label: "Top-Dressing Fertilizers", value: "CAN, Urea" },
@@ -292,7 +292,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: a.name || a.firm,
             subtitle: `Registration No: ${a.regNo || "Licensed"}`,
             badge: "EARB Licensed",
-            badgeColor: colors.kenyaGreenLight,
+            badgeColor: theme.kenyaGreenLight,
             details: [
               { label: "Location", value: `${a.town || a.county || "Kenya"}` },
               { label: "Practicing Status", value: "Active / Licensed" },
@@ -311,7 +311,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: f.service || f.description || "KIPI Fee",
             subtitle: f.category || "Trademark",
             badge: `KES ${f.fee ? f.fee.toLocaleString() : "—"}`,
-            badgeColor: colors.gold,
+            badgeColor: theme.gold,
             details: [
               { label: "Official Form", value: f.form || "TM Form" },
               { label: "Applicable Schedule", value: f.schedule || "First Schedule" },
@@ -330,7 +330,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: f.name,
             subtitle: `${f.county} County · ${f.sizeKm2 || f.areaHa || ""} ha`,
             badge: "Protected",
-            badgeColor: colors.kenyaGreenLight,
+            badgeColor: theme.kenyaGreenLight,
             details: [
               { label: "Management", value: "Kenya Forest Service (KFS)" },
               { label: "Ecosystem Type", value: f.type || "Indigenous montane forest" },
@@ -349,7 +349,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: e.event || e.indicator || "Economic Release",
             subtitle: e.source || "KNBS / CBK",
             badge: e.frequency || "Monthly",
-            badgeColor: colors.sky,
+            badgeColor: theme.sky,
             details: [
               { label: "Announcement Date", value: e.date || e.schedule || "Scheduled" },
               { label: "Significance", value: e.significance || "High Impact" },
@@ -368,7 +368,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: v.vaccine || v.name || "Vaccination",
             subtitle: `Recommended Age: ${v.age || v.timing || "Infancy"}`,
             badge: v.age || "KEPI",
-            badgeColor: colors.kenyaGreenLight,
+            badgeColor: theme.kenyaGreenLight,
             details: [
               { label: "Prevents Against", value: v.prevents || v.diseases || "Childhood illnesses" },
               { label: "Administration Route", value: v.route || "Oral / Injection" },
@@ -388,7 +388,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: b.name,
             subtitle: b.acronym ? `(${b.acronym})` : "",
             badge: b.sector || "Regulator",
-            badgeColor: colors.gold,
+            badgeColor: theme.gold,
             details: [
               { label: "Enacting Statute", value: b.act || "Act of Parliament" },
               { label: "Official Website", value: b.website || "Available online" },
@@ -407,7 +407,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             title: `Cluster ${c.clusterNumber || c.id}: ${c.name}`,
             subtitle: c.faculty || "University Degree Field",
             badge: "KUCCPS",
-            badgeColor: colors.sky,
+            badgeColor: theme.sky,
             details: [
               { label: "Core Required Subjects", value: Array.isArray(c.coreSubjects) ? c.coreSubjects.join(", ") : (c.subjects || "") },
               { label: "Cut-off Points (Indicative)", value: c.cutoff || "35.00 – 43.00" },
@@ -425,7 +425,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               title: "Offline Ready",
               subtitle: "All datasets are stored directly within KenyaHub",
               badge: "Offline",
-              badgeColor: colors.kenyaGreenLight,
+              badgeColor: theme.kenyaGreenLight,
               details: [
                 { label: "Access", value: "100% Free · No internet required" },
                 { label: "Source Verification", value: "Government Gazette & Ministry publications" },
@@ -435,7 +435,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
         };
       }
     }
-  }, [slug]);
+  }, [slug, theme]);
 
   const filteredItems = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -531,94 +531,96 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
   );
 }
 
-const styles = StyleSheet.create({
-  toolWrap: {
-    gap: 12,
-  },
-  searchBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: colors.bgCard,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    paddingHorizontal: 12,
-    height: 42,
-  },
-  searchInput: {
-    flex: 1,
-    marginLeft: 8,
-    color: colors.textPrimary,
-    fontSize: 13,
-  },
-  subHeading: {
-    fontSize: 13,
-    fontWeight: "800",
-    color: colors.gold,
-    letterSpacing: 0.5,
-  },
-  card: {
-    backgroundColor: colors.bgCard,
-    borderRadius: 14,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: 14,
-    gap: 10,
-  },
-  cardTop: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-  },
-  cardTitle: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.textPrimary,
-  },
-  cardSubtitle: {
-    fontSize: 12,
-    color: colors.textSecondary,
-    marginTop: 2,
-  },
-  badge: {
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
-    borderWidth: 1,
-  },
-  badgeText: {
-    fontSize: 10,
-    fontWeight: "800",
-  },
-  detailsList: {
-    borderTopWidth: 1,
-    borderTopColor: colors.border,
-    paddingTop: 8,
-    gap: 6,
-  },
-  detailRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  detailLabel: {
-    fontSize: 12,
-    color: colors.textMuted,
-    fontWeight: "600",
-  },
-  detailValue: {
-    fontSize: 12,
-    color: colors.textPrimary,
-    fontWeight: "600",
-    maxWidth: "60%",
-    textAlign: "right",
-  },
-  empty: {
-    alignItems: "center",
-    paddingVertical: 36,
-  },
-  emptyTitle: {
-    fontSize: 14,
-    color: colors.textMuted,
-    marginTop: 8,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    toolWrap: {
+      gap: 12,
+    },
+    searchBar: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.bgCard,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 12,
+      paddingHorizontal: 12,
+      height: 42,
+    },
+    searchInput: {
+      flex: 1,
+      marginLeft: 8,
+      color: colors.textPrimary,
+      fontSize: 13,
+    },
+    subHeading: {
+      fontSize: 13,
+      fontWeight: "800",
+      color: colors.gold,
+      letterSpacing: 0.5,
+    },
+    card: {
+      backgroundColor: colors.bgCard,
+      borderRadius: 14,
+      borderWidth: 1,
+      borderColor: colors.border,
+      padding: 14,
+      gap: 10,
+    },
+    cardTop: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+    },
+    cardTitle: {
+      fontSize: 15,
+      fontWeight: "700",
+      color: colors.textPrimary,
+    },
+    cardSubtitle: {
+      fontSize: 12,
+      color: colors.textSecondary,
+      marginTop: 2,
+    },
+    badge: {
+      paddingHorizontal: 8,
+      paddingVertical: 3,
+      borderRadius: 6,
+      borderWidth: 1,
+    },
+    badgeText: {
+      fontSize: 10,
+      fontWeight: "800",
+    },
+    detailsList: {
+      borderTopWidth: 1,
+      borderTopColor: colors.border,
+      paddingTop: 8,
+      gap: 6,
+    },
+    detailRow: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+    },
+    detailLabel: {
+      fontSize: 12,
+      color: colors.textMuted,
+      fontWeight: "600",
+    },
+    detailValue: {
+      fontSize: 12,
+      color: colors.textPrimary,
+      fontWeight: "600",
+      maxWidth: "60%",
+      textAlign: "right",
+    },
+    empty: {
+      alignItems: "center",
+      paddingVertical: 36,
+    },
+    emptyTitle: {
+      fontSize: 14,
+      color: colors.textMuted,
+      marginTop: 8,
+    },
+  });
+}

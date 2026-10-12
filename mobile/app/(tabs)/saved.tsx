@@ -13,6 +13,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useTheme, KenyaStripe, categoryColorMap } from "../../src/theme";
 import { TOOLS, getPopularTools } from "../../src/shared/lib/tools-registry";
+import { DynamicIcon } from "../../src/components/DynamicIcon";
+import { BrandLogo } from "../../src/components/BrandLogo";
 
 function SavedToolCard({
   tool,
@@ -54,7 +56,7 @@ function SavedToolCard({
         ]}
       >
         <View style={[styles.cardIconWrap, { backgroundColor: theme.bgSecondary, borderColor: theme.border }]}>
-          <Text style={styles.icon}>{tool.icon}</Text>
+          <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
         </View>
         <View style={styles.cardBody}>
           <View style={styles.categoryPillWrap}>
@@ -130,9 +132,7 @@ export default function SavedScreen() {
       {/* Header */}
       <View style={[styles.header, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
         <View style={styles.headerTitleRow}>
-          <View style={[styles.iconBox, { backgroundColor: `${theme.gold}20`, borderColor: `${theme.gold}40` }]}>
-            <Ionicons name="bookmark" size={22} color={theme.gold} />
-          </View>
+          <BrandLogo size="sm" showText={false} />
           <View style={{ flex: 1 }}>
             <Text style={[styles.heading, { color: theme.textPrimary }]}>Pinned Tools</Text>
             <Text style={[styles.headerSub, { color: theme.textSecondary }]}>
@@ -201,7 +201,7 @@ export default function SavedScreen() {
                     })
                   }
                 >
-                  <Text style={styles.suggestEmoji}>{item.icon}</Text>
+                  <DynamicIcon emoji={item.icon} size={20} color={theme.gold} />
                   <View style={{ flex: 1, marginLeft: 10 }}>
                     <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>{item.shortTitle}</Text>
                     <Text style={[styles.suggestDesc, { color: theme.textMuted }]} numberOfLines={1}>

@@ -43,7 +43,7 @@ export default function TabLayout() {
           title: "Tools",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "grid" : "grid-outline"}
+              name={focused ? "construct" : "construct-outline"}
               color={color}
               size={22}
             />

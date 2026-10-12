@@ -12,6 +12,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useTheme, KenyaStripe } from "../../src/theme";
+import { BrandLogo } from "../../src/components/BrandLogo";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 
 interface RouteItem {
@@ -113,7 +114,12 @@ export default function MatatuScreen() {
         !q ||
         r.name.toLowerCase().includes(q) ||
         r.saccoName.toLowerCase().includes(q) ||
-        (r.stages && r.stages.some((s) => s.toLowerCase().includes(q)));
+        (r.stages &&
+          r.stages.some((s: any) =>
+            typeof s === "string"
+              ? s.toLowerCase().includes(q)
+              : s?.name?.toLowerCase().includes(q)
+          ));
       return matchesTown && matchesSearch;
     });
   }, [allRoutes, search, selectedTown]);
@@ -125,9 +131,7 @@ export default function MatatuScreen() {
       {/* Header */}
       <View style={[styles.header, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
         <View style={styles.headerTop}>
-          <View style={[styles.busIconBox, { backgroundColor: `${theme.gold}20`, borderColor: `${theme.gold}40` }]}>
-            <Ionicons name="bus" size={24} color={theme.gold} />
-          </View>
+          <BrandLogo size="sm" showText={false} />
           <View style={{ flex: 1 }}>
             <Text style={[styles.heading, { color: theme.textPrimary }]}>Matatu Routes & Fares</Text>
             <Text style={[styles.description, { color: theme.textSecondary }]}>

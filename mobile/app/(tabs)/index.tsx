@@ -20,6 +20,8 @@ import {
   TOOL_CATEGORIES,
   getPopularTools,
 } from "../../src/shared/lib/tools-registry";
+import { BrandLogo } from "../../src/components/BrandLogo";
+import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
   const router = useRouter();
@@ -65,7 +67,7 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
               },
             ]}
           >
-            <Text style={styles.toolEmoji}>{tool.icon}</Text>
+            <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
           </View>
           <View style={{ flex: 1, marginLeft: 12 }}>
             <View style={styles.categoryPillWrap}>
@@ -147,17 +149,7 @@ export default function HomeScreen() {
           },
         ]}
       >
-        <View style={styles.brandGroup}>
-          <View
-            style={[
-              styles.brandDot,
-              { backgroundColor: theme.gold },
-            ]}
-          />
-          <Text style={[styles.brandText, { color: theme.textPrimary }]}>
-            KenyaHub
-          </Text>
-        </View>
+        <BrandLogo size="md" />
 
         {/* Light / Dark Mode Toggle Button */}
         <Pressable
@@ -479,7 +471,9 @@ export default function HomeScreen() {
                 ]}
               >
                 <View style={styles.categoryCardTop}>
-                  <Text style={styles.catEmoji}>{cat.icon}</Text>
+                  <View style={[styles.catIconWrap, { backgroundColor: `${catColor}15`, borderColor: `${catColor}30` }]}>
+                    <DynamicIcon emoji={cat.icon} size={22} color={catColor} />
+                  </View>
                   <View
                     style={[
                       styles.catBadge,
@@ -802,6 +796,14 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 8,
+  },
+  catIconWrap: {
+    width: 36,
+    height: 36,
+    borderRadius: 10,
+    borderWidth: 1,
+    alignItems: "center",
+    justifyContent: "center",
   },
   catEmoji: {
     fontSize: 22,

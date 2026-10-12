@@ -117,9 +117,11 @@ export default function MatatuRouteScreen() {
               Route Stages ({route.stages.length})
             </Text>
             <View style={[styles.timelineCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-              {route.stages.map((stage: string, idx: number) => {
+              {route.stages.map((stage: any, idx: number) => {
                 const isFirst = idx === 0;
                 const isLast = idx === route.stages.length - 1;
+                const stageName = typeof stage === "string" ? stage : (stage?.name || `Stage ${idx + 1}`);
+                const hasCoords = typeof stage === "object" && stage?.lat != null && stage?.lng != null;
 
                 return (
                   <View key={idx} style={styles.stageRow}>
@@ -135,20 +137,30 @@ export default function MatatuRouteScreen() {
                       {!isLast && <View style={[styles.timelineLine, { backgroundColor: theme.border }]} />}
                     </View>
                     <View style={styles.stageContent}>
-                      <Text
-                        style={[
-                          styles.stageName,
-                          { color: theme.textSecondary },
-                          (isFirst || isLast) && { fontWeight: "700", color: theme.textPrimary },
-                        ]}
-                      >
-                        {stage}
-                      </Text>
+                      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                        <Text
+                          style={[
+                            styles.stageName,
+                            { color: theme.textSecondary },
+                            (isFirst || isLast) && { fontWeight: "700", color: theme.textPrimary },
+                          ]}
+                        >
+                          {stageName}
+                        </Text>
+                        <Text style={[styles.stageOrder, { color: theme.textMuted }]}>
+                          #{typeof stage === "object" && stage?.order ? stage.order : idx + 1}
+                        </Text>
+                      </View>
                       {isFirst && (
-                        <Text style={[styles.stageNote, { color: theme.gold }]}>Origin Stage</Text>
+                        <Text style={[styles.stageNote, { color: theme.gold }]}>Origin Stage / Departure</Text>
                       )}
                       {isLast && (
-                        <Text style={[styles.stageNote, { color: theme.gold }]}>Final Terminus</Text>
+                        <Text style={[styles.stageNote, { color: theme.kenyaRedLight }]}>Final Terminus</Text>
+                      )}
+                      {hasCoords && (
+                        <Text style={[styles.coordsText, { color: theme.textMuted }]}>
+                          {stage.lat.toFixed(4)}, {stage.lng.toFixed(4)}
+                        </Text>
                       )}
                     </View>
                   </View>
@@ -156,6 +168,16 @@ export default function MatatuRouteScreen() {
               })}
             </View>
           </>
+        )}
+
+        {/* Operating Hours and Info Strip */}
+        {route.operatingHours && (
+          <View style={[styles.hoursCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+            <Ionicons name="time-outline" size={18} color={theme.gold} />
+            <Text style={[styles.hoursText, { color: theme.textPrimary }]}>
+              Operating Hours: <Text style={{ fontWeight: "700" }}>{route.operatingHours}</Text>
+            </Text>
+          </View>
         )}
 
         {/* Advisory / Tips Note */}
@@ -193,6 +215,7 @@ const styles = StyleSheet.create({
   },
   navBarTitle: {
     fontSize: 18,
+    fontFamily: "Outfit_800ExtraBold",
     fontWeight: "800",
   },
   navBarSubtitle: {
@@ -226,6 +249,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 20,
+    fontFamily: "Outfit_800ExtraBold",
     fontWeight: "800",
   },
   saccoHeading: {
@@ -249,6 +273,7 @@ const styles = StyleSheet.create({
   },
   fareValue: {
     fontSize: 15,
+    fontFamily: "Outfit_700Bold",
     fontWeight: "800",
   },
   fareDivider: {
@@ -257,6 +282,7 @@ const styles = StyleSheet.create({
   },
   sectionHeading: {
     fontSize: 13,
+    fontFamily: "Outfit_800ExtraBold",
     fontWeight: "800",
     letterSpacing: 0.8,
     textTransform: "uppercase",
@@ -331,10 +357,32 @@ const styles = StyleSheet.create({
   },
   stageName: {
     fontSize: 14,
+    fontWeight: "600",
+  },
+  stageOrder: {
+    fontSize: 11,
+    fontWeight: "700",
   },
   stageNote: {
+    fontSize: 11,
+    fontWeight: "700",
+    marginTop: 2,
+  },
+  coordsText: {
     fontSize: 10,
     marginTop: 2,
+  },
+  hoursCard: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    padding: 14,
+    borderRadius: 14,
+    borderWidth: 1,
+    marginBottom: 16,
+  },
+  hoursText: {
+    fontSize: 13,
   },
   noteCard: {
     flexDirection: "row",

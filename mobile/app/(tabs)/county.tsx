@@ -11,6 +11,7 @@ import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useTheme, KenyaStripe } from "../../src/theme";
+import { BrandLogo } from "../../src/components/BrandLogo";
 import countiesData from "../../src/shared/data/counties.json";
 
 interface County {
@@ -54,9 +55,7 @@ export default function CountyScreen() {
       {/* Header */}
       <View style={[styles.header, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
         <View style={styles.headerTop}>
-          <View style={[styles.iconBox, { backgroundColor: `${theme.gold}20`, borderColor: `${theme.gold}40` }]}>
-            <Ionicons name="business" size={24} color={theme.gold} />
-          </View>
+          <BrandLogo size="sm" showText={false} />
           <View style={{ flex: 1 }}>
             <Text style={[styles.headerTitle, { color: theme.textPrimary }]}>County Governments</Text>
             <Text style={[styles.headerSubtitle, { color: theme.textSecondary }]}>

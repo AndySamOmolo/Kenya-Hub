@@ -19,7 +19,10 @@ import {
 import {
   TOOLS,
   TOOL_CATEGORIES,
+  getToolUsageScore,
 } from "../../src/shared/lib/tools-registry";
+import { DynamicIcon } from "../../src/components/DynamicIcon";
+import { BrandLogo } from "../../src/components/BrandLogo";
 
 function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
   const router = useRouter();
@@ -64,7 +67,7 @@ function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
               },
             ]}
           >
-            <Text style={styles.icon}>{item.icon}</Text>
+            <DynamicIcon emoji={item.icon} size={22} color={categoryColor} />
           </View>
           <View style={styles.body}>
             <View style={styles.categoryPillWrap}>
@@ -129,9 +132,10 @@ export default function ToolsScreen() {
   const params = useLocalSearchParams<{ category?: string }>();
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState(params.category ?? "all");
+  const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">("popular");
 
   const filtered = useMemo(() => {
-    return TOOLS.filter((tool) => {
+    const list = TOOLS.filter((tool) => {
       const matchesCategory =
         category === "all" || tool.category === category;
       const haystack =
@@ -140,7 +144,19 @@ export default function ToolsScreen() {
         matchesCategory && haystack.includes(query.toLowerCase().trim())
       );
     });
-  }, [category, query]);
+
+    return [...list].sort((a, b) => {
+      const labelComparison = a.shortTitle.localeCompare(b.shortTitle, undefined, {
+        numeric: true,
+        sensitivity: "base",
+      });
+      if (sortBy === "alphabetical") return labelComparison;
+      if (sortBy === "category") return a.category.localeCompare(b.category) || labelComparison;
+
+      // "popular" (Most used) — exact website sorting algorithm
+      return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
+    });
+  }, [category, query, sortBy]);
 
   const categories = useMemo(
     () => [
@@ -168,9 +184,12 @@ export default function ToolsScreen() {
         ]}
       >
         <View style={styles.headerTitleRow}>
-          <Text style={[styles.heading, { color: theme.textPrimary }]}>
-            KenyaHub Tools
-          </Text>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <BrandLogo size="sm" showText={false} />
+            <Text style={[styles.heading, { color: theme.textPrimary }]}>
+              KenyaHub Tools
+            </Text>
+          </View>
           <View
             style={[
               styles.countBadge,
@@ -247,7 +266,11 @@ export default function ToolsScreen() {
                       },
                 ]}
               >
-                <Text style={styles.chipIcon}>{item.icon}</Text>
+                <DynamicIcon
+                  emoji={item.icon}
+                  size={15}
+                  color={active ? theme.kenyaBlack : theme.gold}
+                />
                 <Text
                   style={[
                     styles.chipText,
@@ -262,6 +285,51 @@ export default function ToolsScreen() {
             );
           }}
         />
+
+        {/* Sorting Controls */}
+        <View style={styles.sortBar}>
+          <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
+            SORT:
+          </Text>
+          <View style={styles.sortButtonsRow}>
+            {[
+              { id: "popular", label: "Most used", icon: "trending-up" },
+              { id: "alphabetical", label: "A-Z", icon: "arrow-down" },
+              { id: "category", label: "Category", icon: "albums" },
+            ].map((s) => {
+              const active = sortBy === s.id;
+              return (
+                <Pressable
+                  key={s.id}
+                  onPress={() => setSortBy(s.id as any)}
+                  style={[
+                    styles.sortBtn,
+                    active
+                      ? { backgroundColor: theme.gold, borderColor: theme.gold }
+                      : {
+                          backgroundColor: theme.bgCard,
+                          borderColor: theme.border,
+                        },
+                  ]}
+                >
+                  <Ionicons
+                    name={s.icon as any}
+                    size={13}
+                    color={active ? theme.kenyaBlack : theme.textSecondary}
+                  />
+                  <Text
+                    style={[
+                      styles.sortBtnText,
+                      { color: active ? theme.kenyaBlack : theme.textSecondary },
+                    ]}
+                  >
+                    {s.label}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+        </View>
       </View>
 
       {/* Tools List */}
@@ -439,5 +507,35 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop: 4,
     maxWidth: 240,
+  },
+  sortBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 16,
+    paddingTop: 8,
+    gap: 8,
+  },
+  sortLabel: {
+    fontSize: 10,
+    fontWeight: "800",
+    letterSpacing: 0.8,
+  },
+  sortButtonsRow: {
+    flexDirection: "row",
+    gap: 6,
+  },
+  sortBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 8,
+    borderWidth: 1,
+  },
+  sortBtnText: {
+    fontSize: 11,
+    fontWeight: "700",
   },
 });
