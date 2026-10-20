@@ -127,5 +127,52 @@ Example negatives:
       { kamba: 'Mundu akilite ucheo', english: 'A man surpassing in goodness (the best man)', explanation: 'Superlative with auxiliary ku-kila' },
       { kamba: 'Yu-ni-wenda', english: 'He loves me', explanation: 'Subjective yu- + objective infix -ni- + verb stem wenda' }
     ]
+  },
+  // ── EXPANDED GRAMMAR SECTIONS ──
+  {
+    "id": "kamba-possessives-demonstratives",
+    "title": "Possessive Pronouns & Three-Degree Demonstratives in Kĩkamba",
+    "summary": "Kĩkamba possessives (-akwa, -aku, -ake, -itũ, -enyu, -oo) and demonstratives take strict noun-class concord prefixes.",
+    "content": "As documented in J.T. Last (1885) *Grammar of the Kamba Language* and Hinde (1904):\n- **Possessive Stems**:\n  - **-akwa** (my): *mũsyĩ wakwa* (my home), *syana syakwa* (my children).\n  - **-aku** (your sg.): *ĩsyĩtwa yaku* (your name).\n  - **-ake** (his/her): *mũũnda wake* (his/her farm).\n  - **-itũ** (our): *nthĩ yitũ* (our land/country).\n  - **-enyu** (your pl.): *mbũĩ syenyu* (your goats).\n  - **-oo** (their): *nyũmba syoo* (their houses).\n- **Three Demonstrative Degrees**:\n  - **Proximal (this)**: *ũũ* (mũndũ ũũ), *aa* (andũ aa), *ĩno* (nyũmba ĩno).\n  - **Referential (that near you)**: *ũsu* (mũndũ ũsu), *asu* (andũ asu), *ĩsu* (nyũmba ĩsu).\n  - **Distal (that yonder)**: *ũya* (mũndũ ũya), *aya* (andũ aya), *ĩya* (nyũmba ĩya).",
+    "examples": [
+      {
+        "kamba": "ĩsyĩtwa yaku / mũsyĩ wakwa",
+        "english": "your name / my homestead",
+        "explanation": "Class 5 ya- vs. Class 3 wa- concord"
+      },
+      {
+        "kamba": "mũndũ ũũ vs. mũndũ ũsu vs. mũndũ ũya",
+        "english": "this person vs. that person vs. that person yonder",
+        "explanation": "Three-way demonstrative contrast"
+      },
+      {
+        "kamba": "nthĩ yitũ nĩ nzeo",
+        "english": "our land is good",
+        "explanation": "Class 9 concord with -itũ"
+      }
+    ]
+  },
+  {
+    "id": "kamba-verbal-extensions-locatives",
+    "title": "Verbal Extensions (-ĩa, -ĩthya, -ana) & The Locative Suffix (-nĩ)",
+    "summary": "Kĩkamba suffixes -nĩ to mark location ('in, at, to') and uses productive verbal extensions to shift valency.",
+    "content": "Last (1885) highlights the agglutinative power of the Kĩkamba verb and locative system:\n1. **Locative Suffix (-nĩ)**:\n   - *mũũnda* (garden/farm) → **mũũndanĩ** (in the farm)\n   - *kĩw'ũ* (water/river) → **kĩw'ũnĩ** (at the water/river)\n   - *nyũmba* (house) → **nyũmbanĩ** (inside the house)\n2. **Verbal Extensions**:\n   - **Applicative (-ĩa / -ea)**: Do for or on behalf of (*kũua* cook → **kũuĩa** cook for).\n   - **Causative (-ĩthya / -ya)**: Cause to do (*kũsoma* read → **kũsomethya** teach).\n   - **Reciprocal (-ana)**: Do to each other (*kwenda* love → **kwendana** love one another).\n   - **Passive (-wa)**: Be acted upon (*kũona* see → **kũonwa** be seen).",
+    "examples": [
+      {
+        "kamba": "Syana syĩ nyũmbanĩ.",
+        "english": "The children are in the house.",
+        "explanation": "Locative suffix -nĩ"
+      },
+      {
+        "kamba": "Nĩtũkwendana mũno.",
+        "english": "We love one another very much.",
+        "explanation": "Reciprocal suffix -ana"
+      },
+      {
+        "kamba": "Mwalimũ nũũsomethya syana.",
+        "english": "The teacher is teaching the children.",
+        "explanation": "Causative extension -ethya"
+      }
+    ]
   }
 ];

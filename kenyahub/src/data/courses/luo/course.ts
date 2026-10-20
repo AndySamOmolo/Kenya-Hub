@@ -1822,7 +1822,7 @@ const SUPPLEMENTAL_LESSON_SENTENCES: Record<string, { target: string; source: st
 interface SkillWord {
   target: string;
   source: string;
-  pronunciation: string;
+  pronunciation?: string;
   partOfSpeech?: string;
   hint?: string;
   audio?: string;
@@ -1863,7 +1863,7 @@ function addUniqueWord(
     ...word,
     target: cleanTarget,
     source: cleanSource,
-    pronunciation: sanitizeCardText(word.pronunciation),
+    pronunciation: word.pronunciation ? sanitizeCardText(word.pronunciation) : undefined,
   });
 }
 

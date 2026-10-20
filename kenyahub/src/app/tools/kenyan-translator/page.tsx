@@ -42,7 +42,7 @@ interface DictEntry {
 interface DictCategory {
   id: string;
   name: string;
-  icon: string;
+  icon?: string;
   entries: DictEntry[];
 }
 
@@ -108,7 +108,7 @@ ALL_DICTS.forEach((d) =>
   d.categories.forEach((c) => {
     if (!seenCats.has(c.id)) {
       seenCats.add(c.id);
-      ALL_CATEGORY_IDS.push({ id: c.id, name: c.name, icon: c.icon });
+      ALL_CATEGORY_IDS.push({ id: c.id, name: c.name, icon: c.icon || "📖" });
     }
   })
 );
@@ -303,9 +303,9 @@ export default function KenyanTranslatorPage() {
           cat.entries.forEach((entry) => {
             const engLower = entry.english.toLowerCase();
             if (engLower === q) {
-              results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon, languageId: targetDict.languageId, languageName: targetDict.languageName, matchType: "exact" });
+              results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon || "📖", languageId: targetDict.languageId, languageName: targetDict.languageName, matchType: "exact" });
             } else if (engLower.includes(q)) {
-              results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon, languageId: targetDict.languageId, languageName: targetDict.languageName, matchType: "partial" });
+              results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon || "📖", languageId: targetDict.languageId, languageName: targetDict.languageName, matchType: "partial" });
             }
           });
         });
@@ -316,9 +316,9 @@ export default function KenyanTranslatorPage() {
         cat.entries.forEach((entry) => {
           const transLower = entry.translation.toLowerCase();
           if (transLower === q) {
-            results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon, languageId: sourceDict.languageId, languageName: sourceDict.languageName, matchType: "exact" });
+            results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon || "📖", languageId: sourceDict.languageId, languageName: sourceDict.languageName, matchType: "exact" });
           } else if (transLower.includes(q)) {
-            results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon, languageId: sourceDict.languageId, languageName: sourceDict.languageName, matchType: "partial" });
+            results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon || "📖", languageId: sourceDict.languageId, languageName: sourceDict.languageName, matchType: "partial" });
           }
         });
       });

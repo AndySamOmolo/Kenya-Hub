@@ -113,5 +113,75 @@ Omitting tildes changes the meaning of words completely:
       { kikuyu: 'Nĩenda', english: 'He/she wants', explanation: 'Affirmative 3rd person' },
       { kikuyu: 'Ndaenda', english: 'He/she does not want', explanation: 'Negative 3rd person prefix nda-' }
     ]
+  },
+  // ── EXPANDED GRAMMAR SECTIONS ──
+  {
+    "id": "kikuyu-possessives-demonstratives",
+    "title": "Possessive Pronouns & Three-Degree Demonstratives",
+    "summary": "Gĩkũyũ possessives and demonstratives inflect with the concord prefix of the possessed noun class.",
+    "content": "In Gĩkũyũ (Leakey 1959), possessive stems (**-akwa** my, **-aku** your, **-ake** his/her, **-itũ** our, **-anyu** your pl., **-ao** their) take the concordial prefix of the noun they modify:\n- **Class 1 (wa-)**: *mũrata wakwa* (my friend), *mũndũ wao* (their person).\n- **Class 1 pl. (a-)**: *arata akwa* (my friends), *ciana ciakwa* (my children — Class 3 pl. *cia-*).\n- **Class 2 (wa- / ya-)**: *mũgũnda wakwa* (my farm) → *mĩgũnda yakwa* (my farms).\n- **Class 3 (gĩa- / cia-)**: *kĩndũ gĩakwa* (my thing) → *ciĩndũ ciakwa* (my things).\n\nDemonstratives distinguish three spatial degrees:\n- **Proximal (this near me)**: *ũyũ* (Cl. 1), *aya* (Cl. 1 pl.), *ĩno* (nyũmba ĩno - this house).\n- **Referential / Near Listener (that near you or just mentioned)**: *ũcio* (mũndũ ũcio), *acio* (andũ acio), *ĩyo* (nyũmba ĩyo).\n- **Distal (that yonder)**: *ũrĩa* (mũndũ ũrĩa), *arĩa* (andũ arĩa), *ĩrĩa* (nyũmba ĩrĩa).",
+    "examples": [
+      {
+        "kikuyu": "mũrata wakwa / arata akwa",
+        "english": "my friend / my friends",
+        "explanation": "Class 1 singular wa- vs. plural a-"
+      },
+      {
+        "kikuyu": "nyũmba ĩno vs. nyũmba ĩrĩa",
+        "english": "this house vs. that house yonder",
+        "explanation": "Proximal vs. distal demonstrative"
+      },
+      {
+        "kikuyu": "mũgũnda witũ",
+        "english": "our farm / garden",
+        "explanation": "1st person plural possessive -itũ"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-locatives-prepositions",
+    "title": "The Locative Suffix (-inĩ) & Spatial Prepositions",
+    "summary": "The suffix -inĩ attaches to nouns to express 'in, at, on, or near', complemented by spatial nouns like igũrũ, thĩ, and gatagatĩ.",
+    "content": "Rather than using standalone prepositions for 'in' or 'at', Gĩkũyũ suffixes **-inĩ** directly to the noun:\n- *nyũmba* (house) → **nyũmba-inĩ** (in/at the house)\n- *mũgũnda* (farm) → **mũgũnda-inĩ** (in the farm/garden)\n- *rũũĩ* (river) → **rũũĩ-inĩ** (at/in the river)\n- *njĩra* (path/road) → **njĩra-inĩ** (on the road)\n\nCompound spatial relations use associative **wa / cia / ya**:\n- **igũrũ rĩa** (on top of / above)\n- **rungũ rwa** (underneath / below)\n- **gatagatĩ ka** (in the middle of / between)\n- **mbere ya** (in front of / before) and **thutha wa** (behind / after).",
+    "examples": [
+      {
+        "kikuyu": "Ciana irĩ nyũmba-inĩ.",
+        "english": "The children are in the house.",
+        "explanation": "Locative suffix -inĩ"
+      },
+      {
+        "kikuyu": "Igũrũ rĩa kĩrĩma",
+        "english": "On top of the mountain",
+        "explanation": "Compound spatial phrase"
+      },
+      {
+        "kikuyu": "Thutha wa nyũmba",
+        "english": "Behind the house",
+        "explanation": "Spatial noun thutha + wa"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-verbal-extensions",
+    "title": "Verbal Extensions: Applicative (-ĩra), Causative (-ithia) & Passive (-wo)",
+    "summary": "Gĩkũyũ derives new verb meanings systematically by adding suffixes to the verb root before the final vowel.",
+    "content": "As documented in *A Short Kikuyu Grammar* and Leakey (1959), verb roots take productive derivational suffixes:\n- **Applicative (-ĩra / -era)**: Do for, to, or on behalf of someone.\n  - *rũga* (cook) → **rũgĩra** (cook for); *handa* (plant) → **handĩra** (plant for).\n- **Causative (-ithia / -ia)**: Cause or help someone to do something.\n  - *rĩma* (cultivate) → **rĩmithia** (cause to cultivate); *menya* (know) → **menyithia** (inform / make known).\n- **Passive (-wo / -ĩrwo)**: Turns an active verb into the passive voice.\n  - *ona* (see) → **onwo** (be seen); *rũga* (cook) → **rũgwo** (be cooked).\n- **Reciprocal (-ana)**: Action done to one another.\n  - *enda* (love) → **endana** (love one another); *iguana* (agree / understand one another).",
+    "examples": [
+      {
+        "kikuyu": "Nĩndĩrarũgĩra ciana irio.",
+        "english": "I am cooking food for the children.",
+        "explanation": "Applicative suffix -ĩra"
+      },
+      {
+        "kikuyu": "Nĩtũkwendana mũno.",
+        "english": "We love one another very much.",
+        "explanation": "Reciprocal suffix -ana"
+      },
+      {
+        "kikuyu": "Irio nĩ irũgĩtwo.",
+        "english": "The food has been cooked.",
+        "explanation": "Perfect passive -ĩtwo"
+      }
+    ]
   }
 ];

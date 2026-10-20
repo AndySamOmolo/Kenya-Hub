@@ -1,40 +1,59 @@
 {
-  "source": "EPRA/KPLC Electricity Tariff — Domestic Consumer (DC) Category",
-  "lastUpdated": "2024",
-  "fixedCharge": 150,
-  "fixedChargeNote": "KES 150/month billed through prepaid token purchases until fully paid each month",
+  "source": "EPRA Approved Retail Electricity Tariff (2023/24 \u2013 2025/26) \u2014 Domestic Consumer (DC1 / DC2 / DC3)",
+  "lastUpdated": "2026-10-20",
+  "fixedCharge": 0,
+  "fixedChargeNote": "EPRA abolished the monthly KES 150 fixed standing charge for domestic prepaid consumers",
   "energyBands": [
-    { "min": 0, "max": 10, "rate": 2.50, "label": "Lifeline (0 – 10 kWh)" },
-    { "min": 11, "max": 50, "rate": 12.75, "label": "11 – 50 kWh" },
-    { "min": 51, "max": 1500, "rate": 15.80, "label": "51 – 1,500 kWh" },
-    { "min": 1501, "max": null, "rate": 17.63, "label": "Above 1,500 kWh" }
+    {
+      "min": 0,
+      "max": 30,
+      "rate": 12.14,
+      "label": "Lifeline DC1 (0 \u2013 30 kWh)"
+    },
+    {
+      "min": 31,
+      "max": 100,
+      "rate": 16.5,
+      "label": "Ordinary Domestic DC2 (31 \u2013 100 kWh)"
+    },
+    {
+      "min": 101,
+      "max": 1500,
+      "rate": 19.07,
+      "label": "Domestic DC3 (101 \u2013 1,500 kWh)"
+    },
+    {
+      "min": 1501,
+      "max": null,
+      "rate": 20.97,
+      "label": "Above 1,500 kWh"
+    }
   ],
   "levies": {
     "vat": 16,
-    "repLevy": 0.12,
-    "repLevyLabel": "Rural Electrification Programme Levy (per kWh)",
-    "refLevy": 0.03,
-    "refLevyLabel": "REP Fund Levy (per kWh)",
-    "epraLevy": 0.10,
-    "epraLevyLabel": "EPRA Levy (per kWh)",
-    "warcLevy": 0.03,
-    "warcLevyLabel": "WARMA Levy (per kWh)"
+    "repLevy": 0.75,
+    "repLevyLabel": "Rural Electrification Programme (REP) Levy (5% of base energy)",
+    "refLevy": 0.85,
+    "refLevyLabel": "Inflation Adjustment (IA) per kWh",
+    "epraLevy": 0.18,
+    "epraLevyLabel": "EPRA Regulatory Levy (per kWh)",
+    "warcLevy": 0.05,
+    "warcLevyLabel": "Water Resources Authority (WRA/WARMA) Levy (per kWh)"
   },
   "fuelCostCharge": {
-    "rate": 3.87,
-    "label": "Fuel Cost Charge (FCC) per kWh — varies monthly",
-    "note": "This rate changes monthly based on fuel costs; hardcoded as approximate average"
+    "rate": 3.55,
+    "label": "Fuel Energy Cost Charge (FCC) per kWh \u2014 gazetted monthly by EPRA",
+    "note": "Varies monthly based on thermal generation mix and global fuel prices"
   },
   "forexAdjustment": {
-    "rate": 0.67,
-    "label": "Foreign Exchange Rate Fluctuation Adjustment (FERFA) per kWh — varies monthly"
+    "rate": 1.15,
+    "label": "Foreign Exchange Rate Fluctuation Adjustment (FERFA) per kWh \u2014 gazetted monthly"
   },
   "notes": [
-    "Prepaid token purchases first deduct outstanding fixed charges before allocating to units",
-    "The lifeline tariff (first 10 kWh) is heavily subsidized for low-income households",
-    "FCC and FERFA are variable surcharges that change monthly — shown here as approximate averages",
-    "VAT at 16% is applied to the total of energy charges + levies",
-    "Tariff bands are progressive — only units within each band are charged at that rate",
-    "Commercial and industrial tariffs have different rate structures (CI and IT categories)"
+    "Under the EPRA 2023\u20132026 Retail Tariff Review, there is no monthly fixed standing charge (KES 0) for domestic consumers",
+    "Domestic Lifeline (DC1) covers the first 30 kWh/month at KES 12.14/kWh base energy rate",
+    "Domestic Ordinary (DC2) covers 31\u2013100 kWh/month at KES 16.50/kWh base energy rate",
+    "Consumption above 100 kWh/month (DC3) is billed at KES 19.07/kWh base energy rate",
+    "Each kWh also attracts Fuel Energy Cost (FCC), Forex Adjustment (FERFA), Inflation Adjustment (IA), EPRA Levy (KES 0.18), WRA Levy (KES 0.05), 5% REP Levy, and 16% VAT"
   ]
 }

@@ -10,11 +10,36 @@
       "sewerageNote": "75% of water bill",
       "meterRent": 100,
       "bands": [
-        { "min": 0, "max": 6, "rate": 3.18, "label": "0 – 6 m³ (Lifeline)" },
-        { "min": 7, "max": 20, "rate": 47.00, "label": "7 – 20 m³" },
-        { "min": 21, "max": 50, "rate": 55.00, "label": "21 – 50 m³" },
-        { "min": 51, "max": 100, "rate": 65.00, "label": "51 – 100 m³" },
-        { "min": 101, "max": null, "rate": 75.00, "label": "Above 100 m³" }
+        {
+          "min": 0,
+          "max": 6,
+          "rate": 45.0,
+          "label": "0 – 6 m³ (Lifeline)"
+        },
+        {
+          "min": 7,
+          "max": 20,
+          "rate": 53.0,
+          "label": "7 – 20 m³"
+        },
+        {
+          "min": 21,
+          "max": 50,
+          "rate": 64.0,
+          "label": "21 – 50 m³"
+        },
+        {
+          "min": 51,
+          "max": 100,
+          "rate": 72.0,
+          "label": "51 – 100 m³"
+        },
+        {
+          "min": 101,
+          "max": null,
+          "rate": 80.0,
+          "label": "Above 100 m³"
+        }
       ]
     },
     {
@@ -27,11 +52,36 @@
       "sewerageNote": "75% of water bill",
       "meterRent": 80,
       "bands": [
-        { "min": 0, "max": 6, "rate": 2.50, "label": "0 – 6 m³ (Lifeline)" },
-        { "min": 7, "max": 20, "rate": 43.00, "label": "7 – 20 m³" },
-        { "min": 21, "max": 50, "rate": 52.00, "label": "21 – 50 m³" },
-        { "min": 51, "max": 100, "rate": 60.00, "label": "51 – 100 m³" },
-        { "min": 101, "max": null, "rate": 70.00, "label": "Above 100 m³" }
+        {
+          "min": 0,
+          "max": 6,
+          "rate": 35.0,
+          "label": "0 – 6 m³ (Lifeline)"
+        },
+        {
+          "min": 7,
+          "max": 20,
+          "rate": 47.0,
+          "label": "7 – 20 m³"
+        },
+        {
+          "min": 21,
+          "max": 50,
+          "rate": 55.0,
+          "label": "21 – 50 m³"
+        },
+        {
+          "min": 51,
+          "max": 100,
+          "rate": 65.0,
+          "label": "51 – 100 m³"
+        },
+        {
+          "min": 101,
+          "max": null,
+          "rate": 75.0,
+          "label": "Above 100 m³"
+        }
       ]
     },
     {
@@ -44,11 +94,36 @@
       "sewerageNote": "75% of water bill",
       "meterRent": 70,
       "bands": [
-        { "min": 0, "max": 6, "rate": 2.00, "label": "0 – 6 m³ (Lifeline)" },
-        { "min": 7, "max": 20, "rate": 40.00, "label": "7 – 20 m³" },
-        { "min": 21, "max": 50, "rate": 48.00, "label": "21 – 50 m³" },
-        { "min": 51, "max": 100, "rate": 56.00, "label": "51 – 100 m³" },
-        { "min": 101, "max": null, "rate": 64.00, "label": "Above 100 m³" }
+        {
+          "min": 0,
+          "max": 6,
+          "rate": 35.0,
+          "label": "0 – 6 m³ (Lifeline)"
+        },
+        {
+          "min": 7,
+          "max": 20,
+          "rate": 45.0,
+          "label": "7 – 20 m³"
+        },
+        {
+          "min": 21,
+          "max": 50,
+          "rate": 52.0,
+          "label": "21 – 50 m³"
+        },
+        {
+          "min": 51,
+          "max": 100,
+          "rate": 60.0,
+          "label": "51 – 100 m³"
+        },
+        {
+          "min": 101,
+          "max": null,
+          "rate": 68.0,
+          "label": "Above 100 m³"
+        }
       ]
     },
     {
@@ -61,11 +136,36 @@
       "sewerageNote": "75% of water bill",
       "meterRent": 75,
       "bands": [
-        { "min": 0, "max": 6, "rate": 2.50, "label": "0 – 6 m³ (Lifeline)" },
-        { "min": 7, "max": 20, "rate": 42.00, "label": "7 – 20 m³" },
-        { "min": 21, "max": 50, "rate": 50.00, "label": "21 – 50 m³" },
-        { "min": 51, "max": 100, "rate": 58.00, "label": "51 – 100 m³" },
-        { "min": 101, "max": null, "rate": 66.00, "label": "Above 100 m³" }
+        {
+          "min": 0,
+          "max": 6,
+          "rate": 34.0,
+          "label": "0 – 6 m³ (Lifeline)"
+        },
+        {
+          "min": 7,
+          "max": 20,
+          "rate": 44.0,
+          "label": "7 – 20 m³"
+        },
+        {
+          "min": 21,
+          "max": 50,
+          "rate": 52.0,
+          "label": "21 – 50 m³"
+        },
+        {
+          "min": 51,
+          "max": 100,
+          "rate": 60.0,
+          "label": "51 – 100 m³"
+        },
+        {
+          "min": 101,
+          "max": null,
+          "rate": 68.0,
+          "label": "Above 100 m³"
+        }
       ]
     },
     {
@@ -78,11 +178,36 @@
       "sewerageNote": "75% of water bill",
       "meterRent": 70,
       "bands": [
-        { "min": 0, "max": 6, "rate": 2.00, "label": "0 – 6 m³ (Lifeline)" },
-        { "min": 7, "max": 20, "rate": 38.00, "label": "7 – 20 m³" },
-        { "min": 21, "max": 50, "rate": 46.00, "label": "21 – 50 m³" },
-        { "min": 51, "max": 100, "rate": 54.00, "label": "51 – 100 m³" },
-        { "min": 101, "max": null, "rate": 62.00, "label": "Above 100 m³" }
+        {
+          "min": 0,
+          "max": 6,
+          "rate": 33.0,
+          "label": "0 – 6 m³ (Lifeline)"
+        },
+        {
+          "min": 7,
+          "max": 20,
+          "rate": 42.0,
+          "label": "7 – 20 m³"
+        },
+        {
+          "min": 21,
+          "max": 50,
+          "rate": 50.0,
+          "label": "21 – 50 m³"
+        },
+        {
+          "min": 51,
+          "max": 100,
+          "rate": 58.0,
+          "label": "51 – 100 m³"
+        },
+        {
+          "min": 101,
+          "max": null,
+          "rate": 65.0,
+          "label": "Above 100 m³"
+        }
       ]
     }
   ],

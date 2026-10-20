@@ -187,6 +187,18 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     coverageNote: 'Reviewed proverb records are integrated into the proverb explorer; low-confidence OCR records remain excluded from dictionary data.',
   },
   {
+    id: 'kavirondo-handbook-1920',
+    title: 'A Handbook of the Kavirondo Language (Grammar & Phraseology)',
+    fileName: 'Luo Course (1).ts',
+    languages: ['luo'],
+    published: '1920',
+    contribution: 'Complete Dholuo phonology, noun pluralization & construct possessives, adjectives, numerals, 7 pronoun classes, full verb conjugation paradigms, syntax, situational phrasebook, and translation exercises.',
+    appUses: ['dictionary', 'course lessons', 'grammar lessons', 'phrasebook', 'blog research'],
+    contentTypes: ['vocabulary', 'grammar', 'dialogue', 'cultural-reference'],
+    ingestionStatus: 'integrated',
+    coverageNote: 'All 8 grammar modules, 5 situational phrasebook sections, and 8 translation exercise sets from the 1920 Mill-Hill Fathers handbook are fully integrated into the Dholuo course and dictionary.',
+  },
+  {
     id: 'kavirondo-guidebook-ocr',
     title: 'Kavirondo Guidebook',
     fileName: 'extracted_data.md',

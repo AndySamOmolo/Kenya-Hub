@@ -1,39 +1,197 @@
 {
-  "source": "Public Holidays Act (Cap 110) + Kenya Gazette annual notices",
-  "lastUpdated": "2026-01-01",
+  "source": "Public Holidays Act (Cap 110) + Kenya Gazette Notices",
+  "lastUpdated": "2026-10-20",
   "holidays": {
     "2025": [
-      { "date": "2025-01-01", "name": "New Year's Day", "description": "First day of the Gregorian calendar year" },
-      { "date": "2025-03-28", "name": "Good Friday", "description": "Friday before Easter, commemorating the crucifixion of Jesus Christ" },
-      { "date": "2025-03-31", "name": "Easter Monday", "description": "Monday after Easter Sunday" },
-      { "date": "2025-03-30", "name": "Eid ul-Fitr", "description": "Marks the end of Ramadan. Exact date depends on moon sighting." },
-      { "date": "2025-05-01", "name": "Labour Day", "description": "International Workers' Day, celebrating workers' rights" },
-      { "date": "2025-06-01", "name": "Madaraka Day", "description": "Marks Kenya's attainment of self-governance (internal self-rule) on 1 June 1963" },
-      { "date": "2025-06-06", "name": "Eid ul-Adha", "description": "Festival of Sacrifice marking Prophet Ibrahim's willingness to sacrifice his son. Date depends on moon sighting." },
-      { "date": "2025-10-10", "name": "Mazingira Day", "description": "National day for environmental conservation and tree planting; formerly Huduma Day / Moi Day" },
-      { "date": "2025-10-20", "name": "Mashujaa Day", "description": "Heroes' Day, honoring all Kenyans who contributed to the struggle for independence" },
-      { "date": "2025-12-12", "name": "Jamhuri Day", "description": "Kenya's Independence Day, celebrating the declaration of the Republic on 12 December 1964" },
-      { "date": "2025-12-25", "name": "Christmas Day", "description": "Commemorates the birth of Jesus Christ" },
-      { "date": "2025-12-26", "name": "Boxing Day", "description": "Day after Christmas, traditionally a day of giving" }
+      {
+        "date": "2025-01-01",
+        "name": "New Year's Day",
+        "description": "First day of the Gregorian calendar year"
+      },
+      {
+        "date": "2025-03-31",
+        "name": "Eid ul-Fitr",
+        "description": "Marks the end of the holy month of Ramadan (confirmed by moon sighting)"
+      },
+      {
+        "date": "2025-04-18",
+        "name": "Good Friday",
+        "description": "Friday before Easter Sunday, commemorating the crucifixion of Jesus Christ"
+      },
+      {
+        "date": "2025-04-21",
+        "name": "Easter Monday",
+        "description": "Monday immediately following Easter Sunday"
+      },
+      {
+        "date": "2025-05-01",
+        "name": "Labour Day",
+        "description": "International Workers' Day celebrating workers' rights and contributions"
+      },
+      {
+        "date": "2025-06-01",
+        "name": "Madaraka Day",
+        "description": "Marks Kenya's attainment of internal self-rule on 1 June 1963 (observed Monday 2 June 2025)"
+      },
+      {
+        "date": "2025-06-06",
+        "name": "Eid ul-Adha",
+        "description": "Islamic Festival of Sacrifice (Idd-ul-Azha)"
+      },
+      {
+        "date": "2025-10-10",
+        "name": "Mazingira Day",
+        "description": "National environmental conservation and tree-planting day (formerly Utamaduni / Huduma Day)"
+      },
+      {
+        "date": "2025-10-20",
+        "name": "Mashujaa Day",
+        "description": "Heroes' Day honoring all Kenyans who contributed to the independence struggle and nation-building"
+      },
+      {
+        "date": "2025-12-12",
+        "name": "Jamhuri Day",
+        "description": "Kenya's Independence and Republic Day (12 December 1963 / 1964)"
+      },
+      {
+        "date": "2025-12-25",
+        "name": "Christmas Day",
+        "description": "Christian holiday commemorating the birth of Jesus Christ"
+      },
+      {
+        "date": "2025-12-26",
+        "name": "Boxing Day",
+        "description": "Public holiday on the day after Christmas Day"
+      }
     ],
     "2026": [
-      { "date": "2026-01-01", "name": "New Year's Day", "description": "First day of the Gregorian calendar year" },
-      { "date": "2026-03-20", "name": "Eid ul-Fitr", "description": "Marks the end of Ramadan. Exact date depends on moon sighting." },
-      { "date": "2026-04-03", "name": "Good Friday", "description": "Friday before Easter, commemorating the crucifixion of Jesus Christ" },
-      { "date": "2026-04-06", "name": "Easter Monday", "description": "Monday after Easter Sunday" },
-      { "date": "2026-05-01", "name": "Labour Day", "description": "International Workers' Day" },
-      { "date": "2026-05-27", "name": "Eid ul-Adha", "description": "Festival of Sacrifice. Date depends on moon sighting." },
-      { "date": "2026-06-01", "name": "Madaraka Day", "description": "Marks Kenya's attainment of self-governance on 1 June 1963" },
-      { "date": "2026-10-10", "name": "Mazingira Day", "description": "National day for environmental conservation and tree planting; formerly Huduma Day / Moi Day" },
-      { "date": "2026-10-20", "name": "Mashujaa Day", "description": "Heroes' Day, honoring Kenyans who contributed to the independence struggle" },
-      { "date": "2026-12-12", "name": "Jamhuri Day", "description": "Kenya's Independence Day" },
-      { "date": "2026-12-25", "name": "Christmas Day", "description": "Commemorates the birth of Jesus Christ" },
-      { "date": "2026-12-26", "name": "Boxing Day", "description": "Day after Christmas" }
+      {
+        "date": "2026-01-01",
+        "name": "New Year's Day",
+        "description": "First day of the Gregorian calendar year"
+      },
+      {
+        "date": "2026-03-20",
+        "name": "Eid ul-Fitr",
+        "description": "Marks the end of Ramadan (subject to moon sighting)"
+      },
+      {
+        "date": "2026-04-03",
+        "name": "Good Friday",
+        "description": "Friday before Easter Sunday, commemorating the crucifixion of Jesus Christ"
+      },
+      {
+        "date": "2026-04-06",
+        "name": "Easter Monday",
+        "description": "Monday immediately following Easter Sunday"
+      },
+      {
+        "date": "2026-05-01",
+        "name": "Labour Day",
+        "description": "International Workers' Day"
+      },
+      {
+        "date": "2026-05-27",
+        "name": "Eid ul-Adha",
+        "description": "Islamic Festival of Sacrifice (subject to moon sighting)"
+      },
+      {
+        "date": "2026-06-01",
+        "name": "Madaraka Day",
+        "description": "Marks Kenya's attainment of internal self-rule on 1 June 1963"
+      },
+      {
+        "date": "2026-10-10",
+        "name": "Mazingira Day",
+        "description": "National day for environmental conservation and tree planting"
+      },
+      {
+        "date": "2026-10-20",
+        "name": "Mashujaa Day",
+        "description": "Heroes' Day honoring Kenya's freedom fighters and national heroes"
+      },
+      {
+        "date": "2026-12-12",
+        "name": "Jamhuri Day",
+        "description": "Kenya's Independence and Republic Day"
+      },
+      {
+        "date": "2026-12-25",
+        "name": "Christmas Day",
+        "description": "Commemorates the birth of Jesus Christ"
+      },
+      {
+        "date": "2026-12-26",
+        "name": "Boxing Day",
+        "description": "Day after Christmas Day"
+      }
+    ],
+    "2027": [
+      {
+        "date": "2027-01-01",
+        "name": "New Year's Day",
+        "description": "First day of the Gregorian calendar year"
+      },
+      {
+        "date": "2027-03-10",
+        "name": "Eid ul-Fitr",
+        "description": "Marks the end of Ramadan (subject to moon sighting)"
+      },
+      {
+        "date": "2027-03-26",
+        "name": "Good Friday",
+        "description": "Friday before Easter Sunday"
+      },
+      {
+        "date": "2027-03-29",
+        "name": "Easter Monday",
+        "description": "Monday immediately following Easter Sunday"
+      },
+      {
+        "date": "2027-05-01",
+        "name": "Labour Day",
+        "description": "International Workers' Day"
+      },
+      {
+        "date": "2027-05-17",
+        "name": "Eid ul-Adha",
+        "description": "Islamic Festival of Sacrifice (subject to moon sighting)"
+      },
+      {
+        "date": "2027-06-01",
+        "name": "Madaraka Day",
+        "description": "Marks Kenya's attainment of internal self-rule on 1 June 1963"
+      },
+      {
+        "date": "2027-10-10",
+        "name": "Mazingira Day",
+        "description": "National environmental conservation day (observed Monday 11 Oct 2027)"
+      },
+      {
+        "date": "2027-10-20",
+        "name": "Mashujaa Day",
+        "description": "National Heroes' Day"
+      },
+      {
+        "date": "2027-12-12",
+        "name": "Jamhuri Day",
+        "description": "Kenya's Independence and Republic Day (observed Monday 13 Dec 2027)"
+      },
+      {
+        "date": "2027-12-25",
+        "name": "Christmas Day",
+        "description": "Commemorates the birth of Jesus Christ"
+      },
+      {
+        "date": "2027-12-26",
+        "name": "Boxing Day",
+        "description": "Day after Christmas Day (observed Monday 27 Dec 2027)"
+      }
     ]
   },
   "notes": [
-    "When a public holiday falls on a Sunday, the following Monday is observed as a public holiday.",
-    "Islamic holidays (Eid ul-Fitr, Eid ul-Adha) are approximate — exact dates depend on moon sighting and are confirmed by the Kadhi.",
-    "The President may declare additional public holidays via gazette notice (e.g., for national events or elections)."
+    "Under Section 4 of the Public Holidays Act (Cap 110), when a public holiday falls on a Sunday, the following Monday is observed as a public holiday.",
+    "Islamic holidays (Eid ul-Fitr and Eid ul-Adha) depend on the sighting of the moon and are formally gazetted by the Cabinet Secretary for Interior.",
+    "Mazingira Day (10 October) was amended from Utamaduni/Huduma Day in 2024 to dedicate the holiday to national tree planting and environmental conservation."
   ]
 }

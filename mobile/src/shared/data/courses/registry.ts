@@ -1,4 +1,4 @@
-import { LUO_CONFIG, LUO_UNITS } from "./luo/course";
+import { LUO_CONFIG, LUO_UNITS, LUO_GRAMMAR_SECTIONS } from "./luo/course";
 import { TURKANA_CONFIG, TURKANA_UNITS } from "./turkana/course";
 import { LUHYA_CONFIG, LUHYA_UNITS } from "./luhya/course";
 import { KIKUYU_CONFIG, KIKUYU_UNITS } from "./kikuyu/course";
@@ -50,6 +50,7 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     ready: true,
     validationIssues: validateCourse(LUO_UNITS),
     sourceIds: getSourcesForLanguage(LUO_CONFIG.id).map((source) => source.id),
+    grammarSections: LUO_GRAMMAR_SECTIONS,
   },
   turkana: {
     config: TURKANA_CONFIG,

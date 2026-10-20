@@ -107,5 +107,52 @@ All adjectives, demonstratives, and possessive pronouns follow the noun they mod
       { teso: 'etogo lo', english: 'this house', explanation: 'Noun + masculine demonstrative lo' },
       { teso: 'akiteng na', english: 'this cow', explanation: 'Noun + feminine demonstrative na' }
     ]
+  },
+  // ── EXPANDED GRAMMAR SECTIONS ──
+  {
+    "id": "teso-pronouns-possessives",
+    "title": "Personal Pronouns, Inclusive/Exclusive 'We' & Gendered Possessives",
+    "summary": "Ateso distinguishes inclusive ('oni') vs. exclusive ('isyo') 1st person plural and inflects possessives for noun gender.",
+    "content": "In Hilders & Lawrance (1957) *An Introduction to the Ateso Language*, independent personal pronouns are:\n- **1s**: *eong* (I / me)\n- **2s**: *ijo* (you sg.)\n- **3s**: *ngesi* (he / she / it)\n- **1p Inclusive**: *oni* (we — including the person addressed)\n- **1p Exclusive**: *isyo* (we — excluding the person addressed)\n- **2p**: *yes* (you pl.)\n- **3p**: *kes* (they / them)\n\nPossessive adjectives suffix to the gender linker (**lo-** masculine, **na-** feminine, **lu-** masc. pl., **nu-** fem. pl.):\n- *etogo loka* (my house — masc.), *aberu naka* (my wife — fem.), *idwe luka* (my children).",
+    "examples": [
+      {
+        "teso": "Eong ka ijo — oni.",
+        "english": "I and you — we (inclusive).",
+        "explanation": "Inclusive pronoun oni"
+      },
+      {
+        "teso": "etogo loka / aberu naka",
+        "english": "my house (m.) / my wife (f.)",
+        "explanation": "Gender-agreed possessive loka vs. naka"
+      },
+      {
+        "teso": "Emina ngesi idwe luke.",
+        "english": "He/she loves his/her children.",
+        "explanation": "3s pronoun ngesi + plural possessive luke"
+      }
+    ]
+  },
+  {
+    "id": "teso-negation-extensions",
+    "title": "Negation with 'Mam' & Verbal Extensions (Applicative, Causative, Passive)",
+    "summary": "Ateso negates declarative clauses with the particle 'mam' (or 'mere' for nouns) and derives verbs with suffixal extensions.",
+    "content": "Hilders & Lawrance (1957) describe two primary negation strategies in Ateso:\n1. **Verbal Negation with 'mam'**: Placed before the conjugated verb:\n   - *Ajeni eong* (I know) → **Mam eong ajeni** (I do not know).\n   - *Elosi ngesi* (He goes) → **Mam ngesi elosi** (He does not go).\n2. **Nominal / Copular Negation with 'mere'**:\n   - *Mere eong ekokolak* (I am not a thief).\n3. **Verbal Extensions**:\n   - **Applicative (-ikin / -okin)**: Action done for or toward someone (*inyamikin* - eat for/at).\n   - **Causative (isi- / it-)**: Prefix added to the verb stem (*isinyam* - feed / cause to eat; *isisiaun* - teach).\n   - **Reflexive / Middle Voice (-ar / -or)**: Action directed upon oneself.",
+    "examples": [
+      {
+        "teso": "Mam eong ajeni Ateso.",
+        "english": "I do not know Ateso.",
+        "explanation": "Negative auxiliary mam"
+      },
+      {
+        "teso": "Isisiauni ekapolon idwe.",
+        "english": "The teacher teaches the children.",
+        "explanation": "Causative prefix isi-"
+      },
+      {
+        "teso": "Mere ngol etogo loka.",
+        "english": "That is not my house.",
+        "explanation": "Nominal negator mere"
+      }
+    ]
   }
 ];

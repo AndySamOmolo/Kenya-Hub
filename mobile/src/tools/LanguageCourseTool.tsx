@@ -1426,7 +1426,7 @@ export default function LanguageCourseTool() {
               </Text>
               <Text style={[styles.levelSubText, { color: colors.textMuted }]}>
                 {nextLevel
-                  ? `${nextLevel.minXP - progress.totalXP} XP to ${nextLevel.title}`
+                  ? `${nextLevel.minXp - progress.totalXP} XP to ${nextLevel.name}`
                   : 'Max Rank Achieved!'}
               </Text>
             </View>
