@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useRouter } from "expo-router";
 import {
-  Animated,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -14,62 +14,54 @@ import {
   useTheme,
   categoryColorMap,
   KenyaStripe,
+  AndroidTopAppBar,
+  androidRipple,
 } from "../../src/theme";
 import {
   TOOLS,
   TOOL_CATEGORIES,
   getPopularTools,
 } from "../../src/shared/lib/tools-registry";
-import { BrandLogo } from "../../src/components/BrandLogo";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
   const router = useRouter();
   const { theme } = useTheme();
-  const scale = useRef(new Animated.Value(1)).current;
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
 
-  const onPressIn = () =>
-    Animated.spring(scale, { toValue: 0.98, useNativeDriver: true }).start();
-  const onPressOut = () =>
-    Animated.spring(scale, {
-      toValue: 1,
-      friction: 4,
-      useNativeDriver: true,
-    }).start();
-
   return (
-    <Animated.View style={{ transform: [{ scale }] }}>
+    <View
+      style={[
+        styles.toolCardWrap,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: theme.outlineVariant,
+        },
+      ]}
+    >
       <Pressable
+        android_ripple={androidRipple(theme.rippleColor)}
         onPress={() =>
           router.push({
             pathname: "/tools/[slug]",
             params: { slug: tool.slug },
           })
         }
-        onPressIn={onPressIn}
-        onPressOut={onPressOut}
-        style={[
-          styles.toolCard,
-          {
-            backgroundColor: theme.bgCard,
-            borderColor: theme.border,
-          },
-        ]}
+        style={styles.toolCard}
       >
         <View style={styles.cardHeaderRow}>
           <View
             style={[
               styles.toolIconBox,
               {
-                backgroundColor: theme.bgSecondary,
-                borderColor: theme.border,
+                backgroundColor: `${categoryColor}1A`,
+                borderColor: `${categoryColor}38`,
               },
             ]}
           >
             <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
           </View>
-          <View style={{ flex: 1, marginLeft: 12 }}>
+          <View style={{ flex: 1, marginLeft: 14 }}>
             <View style={styles.categoryPillWrap}>
               <View
                 style={[
@@ -88,11 +80,18 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
               {tool.shortTitle}
             </Text>
           </View>
-          <Ionicons
-            name="chevron-forward"
-            size={18}
-            color={theme.textMuted}
-          />
+          <View
+            style={[
+              styles.trailingIconCircle,
+              { backgroundColor: theme.surfaceContainerHigh },
+            ]}
+          >
+            <Ionicons
+              name="arrow-forward"
+              size={16}
+              color={theme.textSecondary}
+            />
+          </View>
         </View>
 
         <Text
@@ -105,14 +104,14 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
         <View
           style={[
             styles.cardFooterRow,
-            { borderTopColor: theme.border },
+            { borderTopColor: theme.outlineVariant },
           ]}
         >
           <View style={styles.sourceTag}>
             <Ionicons
-              name="shield-checkmark-outline"
-              size={12}
-              color={theme.textMuted}
+              name="shield-checkmark"
+              size={13}
+              color={theme.kenyaGreenLight}
             />
             <Text
               style={[styles.sourceText, { color: theme.textMuted }]}
@@ -123,13 +122,13 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
           </View>
         </View>
       </Pressable>
-    </Animated.View>
+    </View>
   );
 }
 
 export default function HomeScreen() {
   const router = useRouter();
-  const { theme, isDark, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   const popular = getPopularTools(6);
 
   return (
@@ -139,63 +138,94 @@ export default function HomeScreen() {
     >
       <KenyaStripe />
 
-      {/* Top Header Bar with Theme Toggle */}
-      <View
-        style={[
-          styles.topBar,
-          {
-            backgroundColor: theme.bgSecondary,
-            borderBottomColor: theme.border,
-          },
-        ]}
-      >
-        <BrandLogo size="md" />
-
-        {/* Light / Dark Mode Toggle Button */}
-        <Pressable
-          onPress={toggleTheme}
-          style={[
-            styles.themeToggleBtn,
-            {
-              backgroundColor: theme.bgCard,
-              borderColor: theme.border,
-            },
-          ]}
-          hitSlop={8}
-        >
-          <Ionicons
-            name={isDark ? "sunny-outline" : "moon-outline"}
-            size={18}
-            color={theme.gold}
-          />
-          <Text style={[styles.themeToggleText, { color: theme.textPrimary }]}>
-            {isDark ? "Light" : "Dark"}
-          </Text>
-        </Pressable>
-      </View>
+      <AndroidTopAppBar
+        showBrandLogo
+        rightAction={
+          <View
+            style={[
+              styles.offlineChip,
+              {
+                backgroundColor: theme.secondaryContainer,
+                borderColor: `${theme.kenyaGreenLight}40`,
+              },
+            ]}
+          >
+            <Ionicons
+              name="cloud-done"
+              size={13}
+              color={theme.onSecondaryContainer}
+            />
+            <Text
+              style={[
+                styles.offlineChipText,
+                { color: theme.onSecondaryContainer },
+              ]}
+            >
+              Offline
+            </Text>
+          </View>
+        }
+      />
 
       <ScrollView
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        {/* Hero Section */}
-        <View
-          style={[
-            styles.heroSection,
-            {
-              backgroundColor: theme.bgSecondary,
-              borderBottomColor: theme.border,
-            },
-          ]}
-        >
-          <View style={styles.heroInner}>
-            {/* Status Pill */}
+        {/* Material 3 Search Bar Trigger */}
+        <View style={styles.searchSection}>
+          <Pressable
+            android_ripple={androidRipple(theme.rippleColor)}
+            onPress={() => router.push("/(tabs)/tools")}
+            style={[
+              styles.m3SearchBar,
+              {
+                backgroundColor: theme.surfaceContainerHigh,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            <Ionicons name="search" size={20} color={theme.gold} />
+            <Text
+              style={[styles.m3SearchPlaceholder, { color: theme.textSecondary }]}
+              numberOfLines={1}
+            >
+              Search PAYE, M-Pesa, KPLC, Languages...
+            </Text>
+            <View
+              style={[
+                styles.m3SearchBadge,
+                { backgroundColor: theme.primaryContainer },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.m3SearchBadgeText,
+                  { color: theme.onPrimaryContainer },
+                ]}
+              >
+                {TOOLS.length}
+              </Text>
+            </View>
+          </Pressable>
+        </View>
+
+        {/* Material 3 Hero Banner Card */}
+        <View style={styles.heroWrap}>
+          <View
+            style={[
+              styles.heroCard,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
             <View
               style={[
                 styles.statusPill,
                 {
-                  backgroundColor: theme.bgCard,
-                  borderColor: theme.border,
+                  backgroundColor: theme.surfaceContainerHigh,
+                  borderColor: theme.outlineVariant,
                 },
               ]}
             >
@@ -203,150 +233,131 @@ export default function HomeScreen() {
                 <View style={styles.pulsingDotInner} />
               </View>
               <Text
-                style={[
-                  styles.statusPillText,
-                  { color: theme.textSecondary },
-                ]}
+                style={[styles.statusPillText, { color: theme.textSecondary }]}
               >
                 {TOOLS.length}+ tools · Free forever · Official data
               </Text>
             </View>
 
-            {/* Headline */}
             <Text style={[styles.heroHeadline, { color: theme.textPrimary }]}>
-              The tools{" "}
-              <Text style={{ color: theme.gold }}>every Kenyan</Text> needs, in one place
+              The tools <Text style={{ color: theme.gold }}>every Kenyan</Text>{" "}
+              needs, in one place
             </Text>
 
-            <Text
-              style={[
-                styles.heroSubtitle,
-                { color: theme.textSecondary },
-              ]}
-            >
-              Calculate your net salary, explore CBC curriculum, decode number plates, check M-Pesa fees — all powered by official Kenyan government data.
+            <Text style={[styles.heroSubtitle, { color: theme.textSecondary }]}>
+              Calculate net salary, explore the CBC curriculum, learn Kenyan
+              languages, and check M-Pesa tariffs offline.
             </Text>
 
-            {/* Buttons */}
             <View style={styles.heroButtons}>
-              <Pressable
-                onPress={() => router.push("/(tabs)/tools")}
-                style={[
-                  styles.btnGold,
-                  { backgroundColor: theme.gold },
-                ]}
-              >
-                <Text style={styles.btnGoldText}>Explore All Tools</Text>
-                <Ionicons
-                  name="arrow-forward"
-                  size={16}
-                  color={theme.kenyaBlack}
-                />
-              </Pressable>
+              <View style={styles.btnFilledWrap}>
+                <Pressable
+                  android_ripple={androidRipple("rgba(0,0,0,0.18)")}
+                  onPress={() => router.push("/(tabs)/tools")}
+                  style={[styles.btnFilled, { backgroundColor: theme.gold }]}
+                >
+                  <Ionicons
+                    name="apps"
+                    size={16}
+                    color={theme.kenyaBlack}
+                  />
+                  <Text style={styles.btnFilledText}>All Tools</Text>
+                </Pressable>
+              </View>
 
-              <Pressable
-                onPress={() =>
-                  router.push({
-                    pathname: "/tools/[slug]",
-                    params: { slug: "paye-calculator" },
-                  })
-                }
+              <View
                 style={[
-                  styles.btnOutline,
+                  styles.btnTonalWrap,
                   {
-                    borderColor: theme.borderLight,
-                    backgroundColor: theme.bgCard,
+                    backgroundColor: theme.surfaceContainerHigh,
+                    borderColor: theme.outlineVariant,
                   },
                 ]}
               >
-                <Text
-                  style={[
-                    styles.btnOutlineText,
-                    { color: theme.textPrimary },
-                  ]}
+                <Pressable
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() =>
+                    router.push({
+                      pathname: "/tools/[slug]",
+                      params: { slug: "learn" },
+                    })
+                  }
+                  style={styles.btnTonal}
                 >
-                  PAYE Calculator
-                </Text>
-              </Pressable>
+                  <Ionicons name="school" size={16} color={theme.gold} />
+                  <Text
+                    style={[styles.btnTonalText, { color: theme.textPrimary }]}
+                  >
+                    Learn Languages
+                  </Text>
+                </Pressable>
+              </View>
             </View>
           </View>
         </View>
 
-        {/* Pillars Row */}
-        <View style={styles.pillarsRow}>
-          <View
-            style={[
-              styles.pillarCard,
-              {
-                backgroundColor: theme.bgCard,
-                borderColor: theme.border,
-              },
-            ]}
-          >
-            <Ionicons
-              name="location"
-              size={20}
-              color={theme.kenyaGreenLight}
-            />
-            <Text style={[styles.pillarTitle, { color: theme.textPrimary }]}>
-              100% Kenyan
-            </Text>
-            <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
-              Real KRA & CBK data
-            </Text>
-          </View>
-          <View
-            style={[
-              styles.pillarCard,
-              {
-                backgroundColor: theme.bgCard,
-                borderColor: theme.border,
-              },
-            ]}
-          >
-            <Ionicons name="shield-checkmark" size={20} color={theme.gold} />
-            <Text style={[styles.pillarTitle, { color: theme.textPrimary }]}>
-              Official Sources
-            </Text>
-            <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
-              Government verified
-            </Text>
-          </View>
-          <View
-            style={[
-              styles.pillarCard,
-              {
-                backgroundColor: theme.bgCard,
-                borderColor: theme.border,
-              },
-            ]}
-          >
-            <Ionicons name="cloud-offline" size={20} color={theme.sky} />
-            <Text style={[styles.pillarTitle, { color: theme.textPrimary }]}>
-              Offline Ready
-            </Text>
-            <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
-              Works without data
-            </Text>
-          </View>
-        </View>
+        {/* Material 3 Quick Action Chips */}
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.quickChipsScroll}
+        >
+          {[
+            { slug: "paye-calculator", label: "PAYE Salary", icon: "calculator" as const },
+            { slug: "mpesa-fee-calculator", label: "M-Pesa Fees", icon: "phone-portrait" as const },
+            { slug: "kplc-token-calculator", label: "KPLC Tokens", icon: "flash" as const },
+            { slug: "learn", label: "Language Courses", icon: "chatbubbles" as const },
+            { slug: "kenyan-translator", label: "Translator", icon: "language" as const },
+            { slug: "number-plate-decoder", label: "Number Plates", icon: "car" as const },
+          ].map((action) => (
+            <View
+              key={action.slug}
+              style={[
+                styles.assistChipWrap,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                onPress={() =>
+                  router.push({
+                    pathname: "/tools/[slug]",
+                    params: { slug: action.slug },
+                  })
+                }
+                style={styles.assistChip}
+              >
+                <Ionicons name={action.icon} size={15} color={theme.gold} />
+                <Text
+                  style={[styles.assistChipText, { color: theme.textPrimary }]}
+                >
+                  {action.label}
+                </Text>
+              </Pressable>
+            </View>
+          ))}
+        </ScrollView>
 
         {/* Popular Tools */}
         <View style={styles.sectionHeader}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
-              MOST POPULAR
+              MOST USED
             </Text>
             <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
-              Tools Kenyans Love
+              Featured Kenyan Tools
             </Text>
           </View>
           <Pressable
+            android_ripple={androidRipple(theme.rippleColor, true)}
             onPress={() => router.push("/(tabs)/tools")}
             style={styles.seeAllBtn}
           >
             <Text style={[styles.seeAllText, { color: theme.gold }]}>
-              All {TOOLS.length}
+              See all ({TOOLS.length})
             </Text>
             <Ionicons name="arrow-forward" size={14} color={theme.gold} />
           </Pressable>
@@ -362,88 +373,98 @@ export default function HomeScreen() {
         <View style={[styles.sectionHeader, { marginTop: 22 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
-              EXPLORE KENYA
+              PUBLIC DIRECTORIES
             </Text>
             <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
-              Transport & Counties
+              Transit & Devolved Counties
             </Text>
           </View>
         </View>
 
         <View style={styles.hubsRow}>
-          <Pressable
+          <View
             style={[
-              styles.hubCard,
+              styles.hubCardWrap,
               {
-                backgroundColor: theme.bgCard,
-                borderColor: theme.border,
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
               },
             ]}
-            onPress={() => router.push("/(tabs)/matatu")}
           >
-            <View
-              style={[
-                styles.hubIconBox,
-                { backgroundColor: "rgba(200, 150, 30, 0.15)" },
-              ]}
+            <Pressable
+              android_ripple={androidRipple(theme.rippleColor)}
+              style={styles.hubCard}
+              onPress={() => router.push("/(tabs)/matatu")}
             >
-              <Ionicons name="bus" size={24} color={theme.gold} />
-            </View>
-            <Text style={[styles.hubTitle, { color: theme.textPrimary }]}>
-              Nairobi Matatus
-            </Text>
-            <Text style={[styles.hubDesc, { color: theme.textMuted }]}>
-              100+ routes, stages & fares
-            </Text>
-            <View style={styles.hubLink}>
-              <Text style={[styles.hubLinkText, { color: theme.gold }]}>
-                Open Routes
+              <View
+                style={[
+                  styles.hubIconBox,
+                  { backgroundColor: theme.primaryContainer },
+                ]}
+              >
+                <Ionicons name="bus" size={24} color={theme.gold} />
+              </View>
+              <Text style={[styles.hubTitle, { color: theme.textPrimary }]}>
+                Matatu Routes
               </Text>
-              <Ionicons name="chevron-forward" size={14} color={theme.gold} />
-            </View>
-          </Pressable>
+              <Text style={[styles.hubDesc, { color: theme.textSecondary }]}>
+                100+ routes, stages & peak/off-peak fares
+              </Text>
+              <View style={styles.hubLink}>
+                <Text style={[styles.hubLinkText, { color: theme.gold }]}>
+                  Open Transit
+                </Text>
+                <Ionicons name="arrow-forward" size={14} color={theme.gold} />
+              </View>
+            </Pressable>
+          </View>
 
-          <Pressable
+          <View
             style={[
-              styles.hubCard,
+              styles.hubCardWrap,
               {
-                backgroundColor: theme.bgCard,
-                borderColor: theme.border,
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
               },
             ]}
-            onPress={() => router.push("/(tabs)/county")}
           >
-            <View
-              style={[
-                styles.hubIconBox,
-                { backgroundColor: "rgba(26, 139, 209, 0.15)" },
-              ]}
+            <Pressable
+              android_ripple={androidRipple(theme.rippleColor)}
+              style={styles.hubCard}
+              onPress={() => router.push("/(tabs)/county")}
             >
-              <Ionicons name="business" size={24} color={theme.sky} />
-            </View>
-            <Text style={[styles.hubTitle, { color: theme.textPrimary }]}>
-              47 Counties
-            </Text>
-            <Text style={[styles.hubDesc, { color: theme.textMuted }]}>
-              Governors & demographics
-            </Text>
-            <View style={styles.hubLink}>
-              <Text style={[styles.hubLinkText, { color: theme.sky }]}>
-                Browse Counties
+              <View
+                style={[
+                  styles.hubIconBox,
+                  { backgroundColor: "rgba(26, 139, 209, 0.16)" },
+                ]}
+              >
+                <Ionicons name="map" size={24} color={theme.sky} />
+              </View>
+              <Text style={[styles.hubTitle, { color: theme.textPrimary }]}>
+                47 Counties
               </Text>
-              <Ionicons name="chevron-forward" size={14} color={theme.sky} />
-            </View>
-          </Pressable>
+              <Text style={[styles.hubDesc, { color: theme.textSecondary }]}>
+                Governors, capitals & sub-counties
+              </Text>
+              <View style={styles.hubLink}>
+                <Text style={[styles.hubLinkText, { color: theme.sky }]}>
+                  Explore Map
+                </Text>
+                <Ionicons name="arrow-forward" size={14} color={theme.sky} />
+              </View>
+            </Pressable>
+          </View>
         </View>
 
         {/* Categories */}
         <View style={[styles.sectionHeader, { marginTop: 24 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
-              CATEGORIES
+              BROWSE BY TOPIC
             </Text>
             <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
-              10 Categories, One App
+              10 Tool Categories
             </Text>
           </View>
         </View>
@@ -454,50 +475,62 @@ export default function HomeScreen() {
             const catColor = categoryColorMap[cat.id] || theme.gold;
 
             return (
-              <Pressable
+              <View
                 key={cat.id}
-                onPress={() =>
-                  router.push({
-                    pathname: "/(tabs)/tools",
-                    params: { category: cat.id },
-                  })
-                }
                 style={[
-                  styles.categoryCard,
+                  styles.categoryCardWrap,
                   {
-                    backgroundColor: theme.bgCard,
-                    borderColor: theme.border,
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: theme.outlineVariant,
                   },
                 ]}
               >
-                <View style={styles.categoryCardTop}>
-                  <View style={[styles.catIconWrap, { backgroundColor: `${catColor}15`, borderColor: `${catColor}30` }]}>
-                    <DynamicIcon emoji={cat.icon} size={22} color={catColor} />
-                  </View>
-                  <View
-                    style={[
-                      styles.catBadge,
-                      {
-                        backgroundColor: theme.bgSecondary,
-                        borderColor: theme.border,
-                      },
-                    ]}
-                  >
-                    <Text style={[styles.catBadgeText, { color: catColor }]}>
-                      {count}
-                    </Text>
-                  </View>
-                </View>
-                <Text style={[styles.catTitle, { color: theme.textPrimary }]}>
-                  {cat.name}
-                </Text>
-                <Text
-                  style={[styles.catDescription, { color: theme.textMuted }]}
-                  numberOfLines={2}
+                <Pressable
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() =>
+                    router.push({
+                      pathname: "/(tabs)/tools",
+                      params: { category: cat.id },
+                    })
+                  }
+                  style={styles.categoryCard}
                 >
-                  {cat.description}
-                </Text>
-              </Pressable>
+                  <View style={styles.categoryCardTop}>
+                    <View
+                      style={[
+                        styles.catIconWrap,
+                        {
+                          backgroundColor: `${catColor}18`,
+                          borderColor: `${catColor}35`,
+                        },
+                      ]}
+                    >
+                      <DynamicIcon emoji={cat.icon} size={20} color={catColor} />
+                    </View>
+                    <View
+                      style={[
+                        styles.catBadge,
+                        {
+                          backgroundColor: theme.surfaceContainerHigh,
+                        },
+                      ]}
+                    >
+                      <Text style={[styles.catBadgeText, { color: catColor }]}>
+                        {count}
+                      </Text>
+                    </View>
+                  </View>
+                  <Text style={[styles.catTitle, { color: theme.textPrimary }]}>
+                    {cat.name}
+                  </Text>
+                  <Text
+                    style={[styles.catDescription, { color: theme.textMuted }]}
+                    numberOfLines={2}
+                  >
+                    {cat.description}
+                  </Text>
+                </Pressable>
+              </View>
             );
           })}
         </View>
@@ -510,52 +543,60 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
   },
-  topBar: {
+  offlineChip: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderBottomWidth: 1,
-  },
-  brandGroup: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-  },
-  brandDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-  },
-  brandText: {
-    fontFamily: "Outfit_900Black",
-    fontSize: 18,
-    letterSpacing: -0.3,
-  },
-  themeToggleBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
+    gap: 5,
     paddingHorizontal: 10,
     paddingVertical: 5,
-    borderRadius: 14,
+    borderRadius: 16,
     borderWidth: 1,
   },
-  themeToggleText: {
+  offlineChipText: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 12,
+    fontSize: 11,
   },
   scrollContent: {
-    paddingBottom: 40,
+    paddingBottom: 36,
   },
-  heroSection: {
-    borderBottomWidth: 1,
+  searchSection: {
+    paddingHorizontal: 16,
+    paddingTop: 14,
   },
-  heroInner: {
-    paddingHorizontal: 20,
-    paddingTop: 16,
-    paddingBottom: 22,
+  m3SearchBar: {
+    height: 52,
+    borderRadius: 26,
+    borderWidth: 1,
+    paddingHorizontal: 18,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 2 : 0,
+  },
+  m3SearchPlaceholder: {
+    flex: 1,
+    fontSize: 14,
+    fontFamily: "Inter_500Medium",
+  },
+  m3SearchBadge: {
+    paddingHorizontal: 9,
+    paddingVertical: 3,
+    borderRadius: 12,
+  },
+  m3SearchBadgeText: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 11,
+  },
+  heroWrap: {
+    paddingHorizontal: 16,
+    paddingTop: 14,
+  },
+  heroCard: {
+    borderRadius: 24,
+    borderWidth: 1,
+    padding: 20,
+    elevation: Platform.OS === "android" ? 2 : 0,
   },
   statusPill: {
     flexDirection: "row",
@@ -584,13 +625,13 @@ const styles = StyleSheet.create({
   },
   statusPillText: {
     fontSize: 11,
-    fontWeight: "600",
+    fontFamily: "Inter_600SemiBold",
   },
   heroHeadline: {
     fontFamily: "Outfit_800ExtraBold",
-    fontSize: 26,
-    lineHeight: 33,
-    marginBottom: 10,
+    fontSize: 25,
+    lineHeight: 32,
+    marginBottom: 8,
   },
   heroSubtitle: {
     fontSize: 13,
@@ -601,60 +642,68 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 10,
   },
-  btnGold: {
+  btnFilledWrap: {
+    borderRadius: 20,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 2 : 0,
+  },
+  btnFilled: {
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
     paddingHorizontal: 18,
-    paddingVertical: 12,
-    borderRadius: 12,
+    paddingVertical: 11,
+    borderRadius: 20,
   },
-  btnGoldText: {
+  btnFilledText: {
     fontFamily: "Outfit_700Bold",
     color: "#1A1108",
-    fontSize: 14,
+    fontSize: 13,
   },
-  btnOutline: {
+  btnTonalWrap: {
+    borderRadius: 20,
     borderWidth: 1,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderRadius: 12,
-    justifyContent: "center",
+    overflow: "hidden",
   },
-  btnOutlineText: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 14,
-  },
-  pillarsRow: {
+  btnTonal: {
     flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
     paddingHorizontal: 16,
-    paddingVertical: 16,
+    paddingVertical: 11,
+  },
+  btnTonalText: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 13,
+  },
+  quickChipsScroll: {
+    paddingHorizontal: 16,
+    paddingTop: 14,
+    paddingBottom: 4,
     gap: 8,
   },
-  pillarCard: {
-    flex: 1,
-    borderRadius: 14,
+  assistChipWrap: {
+    borderRadius: 8,
     borderWidth: 1,
-    padding: 12,
+    overflow: "hidden",
+  },
+  assistChip: {
+    flexDirection: "row",
     alignItems: "center",
+    gap: 7,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
   },
-  pillarTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 11,
-    marginTop: 6,
-    textAlign: "center",
-  },
-  pillarDesc: {
-    fontSize: 9,
-    marginTop: 2,
-    textAlign: "center",
+  assistChipText: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 12,
   },
   sectionHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "flex-end",
     paddingHorizontal: 16,
-    marginTop: 18,
+    marginTop: 20,
     marginBottom: 12,
   },
   sectionOverline: {
@@ -675,31 +724,39 @@ const styles = StyleSheet.create({
   },
   seeAllText: {
     fontSize: 13,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
   },
   toolList: {
     paddingHorizontal: 16,
     gap: 10,
   },
-  toolCard: {
+  toolCardWrap: {
     borderRadius: 16,
     borderWidth: 1,
-    padding: 14,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 2 : 0,
+  },
+  toolCard: {
+    padding: 16,
   },
   cardHeaderRow: {
     flexDirection: "row",
     alignItems: "center",
   },
   toolIconBox: {
-    width: 44,
-    height: 44,
-    borderRadius: 12,
+    width: 46,
+    height: 46,
+    borderRadius: 14,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
-  toolEmoji: {
-    fontSize: 22,
+  trailingIconCircle: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    alignItems: "center",
+    justifyContent: "center",
   },
   categoryPillWrap: {
     flexDirection: "row",
@@ -714,48 +771,52 @@ const styles = StyleSheet.create({
   },
   categoryPillText: {
     fontSize: 9,
-    fontWeight: "800",
-    letterSpacing: 0.5,
+    fontFamily: "Outfit_700Bold",
+    letterSpacing: 0.6,
   },
   toolTitle: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 15,
+    fontSize: 16,
   },
   toolDesc: {
-    fontSize: 12,
-    lineHeight: 17,
+    fontSize: 12.5,
+    lineHeight: 18,
     marginTop: 8,
   },
   cardFooterRow: {
     marginTop: 10,
     paddingTop: 8,
-    borderTopWidth: 1,
+    borderTopWidth: StyleSheet.hairlineWidth,
     flexDirection: "row",
     alignItems: "center",
   },
   sourceTag: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 5,
+    gap: 6,
   },
   sourceText: {
-    fontSize: 10,
+    fontSize: 11,
   },
   hubsRow: {
     flexDirection: "row",
     paddingHorizontal: 16,
     gap: 10,
   },
-  hubCard: {
+  hubCardWrap: {
     flex: 1,
-    borderRadius: 16,
+    borderRadius: 18,
     borderWidth: 1,
-    padding: 14,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 2 : 0,
+  },
+  hubCard: {
+    padding: 16,
   },
   hubIconBox: {
     width: 44,
     height: 44,
-    borderRadius: 12,
+    borderRadius: 14,
     alignItems: "center",
     justifyContent: "center",
     marginBottom: 10,
@@ -763,12 +824,12 @@ const styles = StyleSheet.create({
   hubTitle: {
     fontFamily: "Outfit_700Bold",
     fontSize: 15,
-    marginBottom: 2,
+    marginBottom: 3,
   },
   hubDesc: {
-    fontSize: 11,
-    lineHeight: 15,
-    marginBottom: 10,
+    fontSize: 11.5,
+    lineHeight: 16,
+    marginBottom: 12,
   },
   hubLink: {
     flexDirection: "row",
@@ -785,11 +846,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     gap: 10,
   },
-  categoryCard: {
+  categoryCardWrap: {
     width: "48.2%",
-    borderRadius: 14,
+    borderRadius: 16,
     borderWidth: 1,
-    padding: 12,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 1 : 0,
+  },
+  categoryCard: {
+    padding: 14,
   },
   categoryCardTop: {
     flexDirection: "row",
@@ -798,33 +863,29 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   catIconWrap: {
-    width: 36,
-    height: 36,
-    borderRadius: 10,
+    width: 38,
+    height: 38,
+    borderRadius: 12,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
-  catEmoji: {
-    fontSize: 22,
-  },
   catBadge: {
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    borderRadius: 6,
-    borderWidth: 1,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 10,
   },
   catBadgeText: {
     fontSize: 10,
-    fontWeight: "800",
+    fontFamily: "Outfit_700Bold",
   },
   catTitle: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 13,
+    fontSize: 13.5,
     marginBottom: 2,
   },
   catDescription: {
-    fontSize: 10,
-    lineHeight: 14,
+    fontSize: 10.5,
+    lineHeight: 14.5,
   },
 });

@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { View, StyleSheet } from "react-native";
+import { View, Text, Pressable, StyleSheet, Platform } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { BrandLogo } from "./components/BrandLogo";
 
 export const darkColors = {
   isDark: true,
@@ -18,18 +20,32 @@ export const darkColors = {
   earth: "#8B4513",
   earthLight: "#B87A4B",
 
-  // Theme Surfaces (Dark)
-  bgPrimary: "#0C0A08",
-  bgSecondary: "#141210",
-  bgCard: "#1C1916",
-  bgCardHover: "#252220",
-  bgElevated: "#2A2622",
-  border: "#2E2A25",
-  borderLight: "#3D3730",
-  borderAccent: "#4D453C",
-  textPrimary: "#F2EDE6",
-  textSecondary: "#A89F94",
-  textMuted: "#6D6358",
+  // Theme Surfaces (Dark — Material 3 Surface Containers)
+  bgPrimary: "#0E0C0A",
+  bgSecondary: "#161310",
+  bgCard: "#1E1A17",
+  bgCardHover: "#27221E",
+  bgElevated: "#2B2621",
+  surfaceContainerLowest: "#090806",
+  surfaceContainerLow: "#161310",
+  surfaceContainer: "#1E1A17",
+  surfaceContainerHigh: "#28231F",
+  surfaceContainerHighest: "#332D28",
+  primaryContainer: "rgba(200, 150, 30, 0.22)",
+  onPrimaryContainer: "#F5D77F",
+  secondaryContainer: "rgba(47, 164, 99, 0.18)",
+  onSecondaryContainer: "#7BE0A8",
+  border: "#302A24",
+  borderLight: "#403830",
+  borderAccent: "#52483E",
+  outline: "#8C8070",
+  outlineVariant: "#38312A",
+  rippleColor: "rgba(232, 190, 90, 0.18)",
+  textPrimary: "#F4EFEA",
+  text: "#F4EFEA",
+  surface: "#1E1A17",
+  textSecondary: "#B0A69B",
+  textMuted: "#786E63",
 };
 
 export const lightColors = {
@@ -48,18 +64,32 @@ export const lightColors = {
   earth: "#8B4513",
   earthLight: "#A05A2C",
 
-  // Theme Surfaces (Light — Warm Kenyan Afternoon)
+  // Theme Surfaces (Light — Material 3 Warm Kenyan Tonal Palette)
   bgPrimary: "#FAF7F2",
-  bgSecondary: "#F3EEE6",
+  bgSecondary: "#F2ECE4",
   bgCard: "#FFFFFF",
-  bgCardHover: "#F8F4ED",
-  bgElevated: "#F0EBE2",
+  bgCardHover: "#F7F2EA",
+  bgElevated: "#EFE9DF",
+  surfaceContainerLowest: "#FFFFFF",
+  surfaceContainerLow: "#F6F1E9",
+  surfaceContainer: "#F0EAE1",
+  surfaceContainerHigh: "#EAE3D9",
+  surfaceContainerHighest: "#E3DCD1",
+  primaryContainer: "rgba(184, 134, 11, 0.16)",
+  onPrimaryContainer: "#5C4000",
+  secondaryContainer: "rgba(0, 107, 63, 0.12)",
+  onSecondaryContainer: "#004D2C",
   border: "#E2DAD0",
   borderLight: "#D4CABF",
   borderAccent: "#C8BDB0",
+  outline: "#7D7163",
+  outlineVariant: "#DED5C9",
+  rippleColor: "rgba(184, 134, 11, 0.14)",
   textPrimary: "#1A1108",
+  text: "#1A1108",
+  surface: "#FFFFFF",
   textSecondary: "#5C503E",
-  textMuted: "#8C8070",
+  textMuted: "#857968",
 };
 
 export type ThemeColors = typeof darkColors;
@@ -90,6 +120,16 @@ export const categoryColorMap: Record<string, string> = {
   "data-reference": "#5BBFEA",
   "agriculture-environment": "#006B3F",
 };
+
+/**
+ * Helper for native Android Material 3 ripple effect on Pressable components
+ */
+export function androidRipple(color?: string, borderless = false) {
+  return {
+    color: color || "rgba(200, 150, 30, 0.18)",
+    borderless,
+  };
+}
 
 interface ThemeContextType {
   theme: ThemeColors;
@@ -142,7 +182,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 }
 
 export function useTheme() {
-  return useContext(ThemeContext);
+  const ctx = useContext(ThemeContext);
+  return { ...ctx, colors: ctx.theme };
 }
 
 export function useDynamicStyles<T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>>(
@@ -156,7 +197,6 @@ export function useDynamicStyles<T extends StyleSheet.NamedStyles<T> | StyleShee
 /**
  * Kenyan Flag Stripe Component
  * Subtle 3px bar: Black · White · Red · White · Green
- * (No blue stripe!)
  */
 export function KenyaStripe() {
   return (
@@ -170,6 +210,106 @@ export function KenyaStripe() {
   );
 }
 
+/**
+ * Material Design 3 Top App Bar for Android
+ */
+export function AndroidTopAppBar({
+  title,
+  subtitle,
+  onBack,
+  showBrandLogo = false,
+  rightAction,
+  showThemeToggle = true,
+}: {
+  title?: string;
+  subtitle?: string;
+  onBack?: () => void;
+  showBrandLogo?: boolean;
+  rightAction?: React.ReactNode;
+  showThemeToggle?: boolean;
+}) {
+  const { theme, isDark, toggleTheme } = useTheme();
+
+  return (
+    <View
+      style={[
+        appBarStyles.container,
+        {
+          backgroundColor: theme.surfaceContainerLow,
+          borderBottomColor: theme.outlineVariant,
+        },
+      ]}
+    >
+      <View style={appBarStyles.leftRow}>
+        {onBack && (
+          <Pressable
+            onPress={onBack}
+            android_ripple={androidRipple(theme.rippleColor, true)}
+            style={[
+              appBarStyles.iconBtn,
+              { backgroundColor: theme.surfaceContainerHigh },
+            ]}
+            hitSlop={8}
+          >
+            <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
+          </Pressable>
+        )}
+
+        {showBrandLogo && !title ? (
+          <BrandLogo size="md" />
+        ) : (
+          <View style={appBarStyles.titleGroup}>
+            {showBrandLogo && <BrandLogo size="sm" showText={false} />}
+            <View style={{ flex: 1 }}>
+              {title && (
+                <Text
+                  style={[appBarStyles.title, { color: theme.textPrimary }]}
+                  numberOfLines={1}
+                >
+                  {title}
+                </Text>
+              )}
+              {subtitle && (
+                <Text
+                  style={[appBarStyles.subtitle, { color: theme.textSecondary }]}
+                  numberOfLines={1}
+                >
+                  {subtitle}
+                </Text>
+              )}
+            </View>
+          </View>
+        )}
+      </View>
+
+      <View style={appBarStyles.actionsRow}>
+        {rightAction}
+        {showThemeToggle && (
+          <Pressable
+            onPress={toggleTheme}
+            android_ripple={androidRipple(theme.rippleColor, true)}
+            style={[
+              appBarStyles.iconBtn,
+              {
+                backgroundColor: theme.surfaceContainerHigh,
+                borderColor: theme.outlineVariant,
+                borderWidth: 1,
+              },
+            ]}
+            hitSlop={8}
+          >
+            <Ionicons
+              name={isDark ? "sunny-outline" : "moon-outline"}
+              size={20}
+              color={theme.gold}
+            />
+          </Pressable>
+        )}
+      </View>
+    </View>
+  );
+}
+
 const stripeStyles = StyleSheet.create({
   container: {
     width: "100%",
@@ -177,5 +317,54 @@ const stripeStyles = StyleSheet.create({
   },
   band: {
     width: "100%",
+  },
+});
+
+const appBarStyles = StyleSheet.create({
+  container: {
+    minHeight: 64,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    elevation: Platform.OS === "android" ? 3 : 0,
+  },
+  leftRow: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    marginRight: 8,
+  },
+  titleGroup: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+  },
+  title: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 20,
+    letterSpacing: -0.2,
+  },
+  subtitle: {
+    fontFamily: "Inter_500Medium",
+    fontSize: 12,
+    marginTop: 1,
+  },
+  actionsRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+  iconBtn: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "hidden",
   },
 });

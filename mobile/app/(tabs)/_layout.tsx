@@ -1,8 +1,31 @@
 import React from "react";
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { Platform, StyleSheet } from "react-native";
-import { useTheme } from "../../src/theme";
+import { Platform, Pressable, StyleSheet, View } from "react-native";
+import { useTheme, androidRipple } from "../../src/theme";
+
+function M3TabIcon({
+  name,
+  focused,
+  color,
+  indicatorColor,
+}: {
+  name: keyof typeof Ionicons.glyphMap;
+  focused: boolean;
+  color: string;
+  indicatorColor: string;
+}) {
+  return (
+    <View
+      style={[
+        styles.iconPill,
+        focused && { backgroundColor: indicatorColor },
+      ]}
+    >
+      <Ionicons name={name} color={color} size={21} />
+    </View>
+  );
+}
 
 export default function TabLayout() {
   const { theme } = useTheme();
@@ -12,16 +35,23 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: theme.gold,
-        tabBarInactiveTintColor: theme.textMuted,
+        tabBarInactiveTintColor: theme.textSecondary,
+        tabBarHideOnKeyboard: true,
         tabBarStyle: [
           styles.tabBar,
           {
-            backgroundColor: theme.bgSecondary,
-            borderTopColor: theme.border,
+            backgroundColor: theme.surfaceContainer,
+            borderTopColor: theme.outlineVariant,
           },
         ],
         tabBarLabelStyle: styles.tabLabel,
         tabBarItemStyle: styles.tabItem,
+        tabBarButton: (props) => (
+          <Pressable
+            {...(props as any)}
+            android_ripple={androidRipple(theme.rippleColor, true)}
+          />
+        ),
       }}
     >
       <Tabs.Screen
@@ -29,10 +59,11 @@ export default function TabLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
+            <M3TabIcon
               name={focused ? "home" : "home-outline"}
-              color={color}
-              size={22}
+              color={focused ? theme.onPrimaryContainer : color}
+              focused={focused}
+              indicatorColor={theme.primaryContainer}
             />
           ),
         }}
@@ -42,10 +73,11 @@ export default function TabLayout() {
         options={{
           title: "Tools",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "construct" : "construct-outline"}
-              color={color}
-              size={22}
+            <M3TabIcon
+              name={focused ? "grid" : "grid-outline"}
+              color={focused ? theme.onPrimaryContainer : color}
+              focused={focused}
+              indicatorColor={theme.primaryContainer}
             />
           ),
         }}
@@ -55,10 +87,11 @@ export default function TabLayout() {
         options={{
           title: "Matatu",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
+            <M3TabIcon
               name={focused ? "bus" : "bus-outline"}
-              color={color}
-              size={22}
+              color={focused ? theme.onPrimaryContainer : color}
+              focused={focused}
+              indicatorColor={theme.primaryContainer}
             />
           ),
         }}
@@ -68,10 +101,11 @@ export default function TabLayout() {
         options={{
           title: "Counties",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "business" : "business-outline"}
-              color={color}
-              size={22}
+            <M3TabIcon
+              name={focused ? "map" : "map-outline"}
+              color={focused ? theme.onPrimaryContainer : color}
+              focused={focused}
+              indicatorColor={theme.primaryContainer}
             />
           ),
         }}
@@ -81,10 +115,11 @@ export default function TabLayout() {
         options={{
           title: "Saved",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
+            <M3TabIcon
               name={focused ? "bookmark" : "bookmark-outline"}
-              color={color}
-              size={22}
+              color={focused ? theme.onPrimaryContainer : color}
+              focused={focused}
+              indicatorColor={theme.primaryContainer}
             />
           ),
         }}
@@ -95,20 +130,28 @@ export default function TabLayout() {
 
 const styles = StyleSheet.create({
   tabBar: {
-    borderTopWidth: 1,
-    height: Platform.OS === "android" ? 68 : 88,
-    paddingBottom: Platform.OS === "android" ? 10 : 28,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    height: Platform.OS === "android" ? 76 : 88,
+    paddingBottom: Platform.OS === "android" ? 10 : 26,
     paddingTop: 8,
-    elevation: 12,
+    elevation: 16,
     shadowColor: "#000",
-    shadowOpacity: 0.15,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: -3 },
+    shadowOpacity: 0.2,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: -4 },
+  },
+  iconPill: {
+    width: 64,
+    height: 32,
+    borderRadius: 16,
+    alignItems: "center",
+    justifyContent: "center",
   },
   tabLabel: {
     fontFamily: "Outfit_700Bold",
     fontSize: 11,
-    marginTop: 3,
+    letterSpacing: 0.2,
+    marginTop: 4,
   },
   tabItem: {
     paddingVertical: 2,

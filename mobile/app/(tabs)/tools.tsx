@@ -1,8 +1,8 @@
-import React, { useMemo, useState, useRef } from "react";
+import React, { useMemo, useState } from "react";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import {
-  Animated,
   FlatList,
+  Platform,
   Pressable,
   StyleSheet,
   Text,
@@ -15,6 +15,8 @@ import {
   useTheme,
   categoryColorMap,
   KenyaStripe,
+  AndroidTopAppBar,
+  androidRipple,
 } from "../../src/theme";
 import {
   TOOLS,
@@ -22,48 +24,39 @@ import {
   getToolUsageScore,
 } from "../../src/shared/lib/tools-registry";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
-import { BrandLogo } from "../../src/components/BrandLogo";
 
 function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
   const router = useRouter();
   const { theme } = useTheme();
-  const scale = useRef(new Animated.Value(1)).current;
   const categoryColor = categoryColorMap[item.category] || theme.gold;
 
   return (
-    <Animated.View style={{ transform: [{ scale }] }}>
+    <View
+      style={[
+        styles.cardWrap,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: theme.outlineVariant,
+        },
+      ]}
+    >
       <Pressable
+        android_ripple={androidRipple(theme.rippleColor)}
         onPress={() =>
           router.push({
             pathname: "/tools/[slug]",
             params: { slug: item.slug },
           })
         }
-        onPressIn={() =>
-          Animated.spring(scale, { toValue: 0.98, useNativeDriver: true }).start()
-        }
-        onPressOut={() =>
-          Animated.spring(scale, {
-            toValue: 1,
-            friction: 4,
-            useNativeDriver: true,
-          }).start()
-        }
-        style={[
-          styles.card,
-          {
-            backgroundColor: theme.bgCard,
-            borderColor: theme.border,
-          },
-        ]}
+        style={styles.card}
       >
         <View style={styles.cardHeaderRow}>
           <View
             style={[
               styles.cardIconWrap,
               {
-                backgroundColor: theme.bgSecondary,
-                borderColor: theme.border,
+                backgroundColor: `${categoryColor}1A`,
+                borderColor: `${categoryColor}38`,
               },
             ]}
           >
@@ -72,14 +65,9 @@ function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
           <View style={styles.body}>
             <View style={styles.categoryPillWrap}>
               <View
-                style={[
-                  styles.categoryDot,
-                  { backgroundColor: categoryColor },
-                ]}
+                style={[styles.categoryDot, { backgroundColor: categoryColor }]}
               />
-              <Text
-                style={[styles.categoryPillText, { color: categoryColor }]}
-              >
+              <Text style={[styles.categoryPillText, { color: categoryColor }]}>
                 {item.category.replace("-", " & ").toUpperCase()}
               </Text>
             </View>
@@ -90,11 +78,18 @@ function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
               {item.shortTitle}
             </Text>
           </View>
-          <Ionicons
-            name="chevron-forward"
-            size={18}
-            color={theme.textMuted}
-          />
+          <View
+            style={[
+              styles.trailingCircle,
+              { backgroundColor: theme.surfaceContainerHigh },
+            ]}
+          >
+            <Ionicons
+              name="arrow-forward"
+              size={16}
+              color={theme.textSecondary}
+            />
+          </View>
         </View>
 
         <Text
@@ -105,15 +100,12 @@ function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
         </Text>
 
         <View
-          style={[
-            styles.sourceBadge,
-            { borderTopColor: theme.border },
-          ]}
+          style={[styles.sourceBadge, { borderTopColor: theme.outlineVariant }]}
         >
           <Ionicons
-            name="shield-checkmark-outline"
-            size={12}
-            color={theme.textMuted}
+            name="shield-checkmark"
+            size={13}
+            color={theme.kenyaGreenLight}
           />
           <Text
             style={[styles.source, { color: theme.textMuted }]}
@@ -123,7 +115,7 @@ function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
           </Text>
         </View>
       </Pressable>
-    </Animated.View>
+    </View>
   );
 }
 
@@ -132,37 +124,36 @@ export default function ToolsScreen() {
   const params = useLocalSearchParams<{ category?: string }>();
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState(params.category ?? "all");
-  const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">("popular");
+  const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">(
+    "popular"
+  );
 
   const filtered = useMemo(() => {
     const list = TOOLS.filter((tool) => {
-      const matchesCategory =
-        category === "all" || tool.category === category;
+      const matchesCategory = category === "all" || tool.category === category;
       const haystack =
         `${tool.title} ${tool.shortTitle} ${tool.description} ${tool.keywords.join(" ")}`.toLowerCase();
-      return (
-        matchesCategory && haystack.includes(query.toLowerCase().trim())
-      );
+      return matchesCategory && haystack.includes(query.toLowerCase().trim());
     });
 
     return [...list].sort((a, b) => {
-      const labelComparison = a.shortTitle.localeCompare(b.shortTitle, undefined, {
-        numeric: true,
-        sensitivity: "base",
-      });
+      const labelComparison = a.shortTitle.localeCompare(
+        b.shortTitle,
+        undefined,
+        {
+          numeric: true,
+          sensitivity: "base",
+        }
+      );
       if (sortBy === "alphabetical") return labelComparison;
-      if (sortBy === "category") return a.category.localeCompare(b.category) || labelComparison;
-
-      // "popular" (Most used) — exact website sorting algorithm
+      if (sortBy === "category")
+        return a.category.localeCompare(b.category) || labelComparison;
       return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
     });
   }, [category, query, sortBy]);
 
   const categories = useMemo(
-    () => [
-      { id: "all", name: "All", icon: "🧰" },
-      ...TOOL_CATEGORIES,
-    ],
+    () => [{ id: "all", name: "All", icon: "🧰" }, ...TOOL_CATEGORIES],
     []
   );
 
@@ -173,55 +164,35 @@ export default function ToolsScreen() {
     >
       <KenyaStripe />
 
-      {/* Header */}
+      <AndroidTopAppBar
+        showBrandLogo
+        title="KenyaHub Tools"
+        subtitle={`${filtered.length} calculators & public guides`}
+      />
+
       <View
         style={[
-          styles.header,
+          styles.filterHeader,
           {
-            backgroundColor: theme.bgSecondary,
-            borderBottomColor: theme.border,
+            backgroundColor: theme.surfaceContainerLow,
+            borderBottomColor: theme.outlineVariant,
           },
         ]}
       >
-        <View style={styles.headerTitleRow}>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-            <BrandLogo size="sm" showText={false} />
-            <Text style={[styles.heading, { color: theme.textPrimary }]}>
-              KenyaHub Tools
-            </Text>
-          </View>
-          <View
-            style={[
-              styles.countBadge,
-              {
-                backgroundColor: "rgba(200, 150, 30, 0.15)",
-                borderColor: "rgba(200, 150, 30, 0.3)",
-              },
-            ]}
-          >
-            <Text style={[styles.countText, { color: theme.gold }]}>
-              {filtered.length}
-            </Text>
-          </View>
-        </View>
-        <Text style={[styles.headerSub, { color: theme.textSecondary }]}>
-          Calculators, educational tools & official government guides
-        </Text>
-
-        {/* Search Input */}
+        {/* Material 3 Pill Search Bar */}
         <View
           style={[
             styles.searchWrap,
             {
-              backgroundColor: theme.bgCard,
-              borderColor: theme.border,
+              backgroundColor: theme.surfaceContainerHigh,
+              borderColor: theme.outlineVariant,
             },
           ]}
         >
           <Ionicons
-            name="search-outline"
-            size={18}
-            color={theme.textMuted}
+            name="search"
+            size={20}
+            color={theme.gold}
             style={styles.searchIcon}
           />
           <TextInput
@@ -236,94 +207,116 @@ export default function ToolsScreen() {
             <Pressable onPress={() => setQuery("")} hitSlop={8}>
               <Ionicons
                 name="close-circle"
-                size={18}
+                size={20}
                 color={theme.textMuted}
               />
             </Pressable>
           )}
         </View>
 
-        {/* Category Horizontal Filter Chips */}
+        {/* Material 3 Filter Chips */}
         <FlatList
           horizontal
           showsHorizontalScrollIndicator={false}
           data={categories}
           keyExtractor={(item) => item.id}
-          contentContainerStyle={styles.chipsContainer}
+          contentContainerStyle={styles.chips}
           renderItem={({ item }) => {
-            const active = category === item.id;
+            const active = item.id === category;
             return (
-              <Pressable
-                onPress={() => setCategory(item.id)}
+              <View
                 style={[
-                  styles.chip,
+                  styles.chipWrap,
                   active
-                    ? { backgroundColor: theme.gold }
+                    ? {
+                        backgroundColor: theme.primaryContainer,
+                        borderColor: theme.gold,
+                      }
                     : {
-                        backgroundColor: theme.bgCard,
-                        borderColor: theme.border,
-                        borderWidth: 1,
+                        backgroundColor: theme.surfaceContainer,
+                        borderColor: theme.outlineVariant,
                       },
                 ]}
               >
-                <DynamicIcon
-                  emoji={item.icon}
-                  size={15}
-                  color={active ? theme.kenyaBlack : theme.gold}
-                />
-                <Text
-                  style={[
-                    styles.chipText,
-                    active
-                      ? { color: theme.kenyaBlack }
-                      : { color: theme.textSecondary },
-                  ]}
+                <Pressable
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => setCategory(item.id)}
+                  style={styles.chip}
                 >
-                  {item.name}
-                </Text>
-              </Pressable>
+                  {active ? (
+                    <Ionicons
+                      name="checkmark"
+                      size={15}
+                      color={theme.onPrimaryContainer}
+                    />
+                  ) : (
+                    <DynamicIcon
+                      emoji={item.icon}
+                      size={14}
+                      color={theme.textSecondary}
+                    />
+                  )}
+                  <Text
+                    style={[
+                      styles.chipText,
+                      {
+                        color: active
+                          ? theme.onPrimaryContainer
+                          : theme.textSecondary,
+                      },
+                    ]}
+                  >
+                    {item.name}
+                  </Text>
+                </Pressable>
+              </View>
             );
           }}
         />
 
-        {/* Sorting Controls */}
-        <View style={styles.sortBar}>
+        {/* Material 3 Segmented Sort Row */}
+        <View style={styles.sortRow}>
           <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
-            SORT:
+            SORT BY
           </Text>
-          <View style={styles.sortButtonsRow}>
-            {[
-              { id: "popular", label: "Most used", icon: "trending-up" },
-              { id: "alphabetical", label: "A-Z", icon: "arrow-down" },
-              { id: "category", label: "Category", icon: "albums" },
-            ].map((s) => {
-              const active = sortBy === s.id;
+          <View
+            style={[
+              styles.segmentedGroup,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            {(
+              [
+                { id: "popular", label: "Popular" },
+                { id: "alphabetical", label: "A–Z" },
+                { id: "category", label: "Topic" },
+              ] as const
+            ).map((option) => {
+              const active = sortBy === option.id;
               return (
                 <Pressable
-                  key={s.id}
-                  onPress={() => setSortBy(s.id as any)}
+                  key={option.id}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => setSortBy(option.id)}
                   style={[
-                    styles.sortBtn,
-                    active
-                      ? { backgroundColor: theme.gold, borderColor: theme.gold }
-                      : {
-                          backgroundColor: theme.bgCard,
-                          borderColor: theme.border,
-                        },
+                    styles.segmentBtn,
+                    active && { backgroundColor: theme.primaryContainer },
                   ]}
                 >
-                  <Ionicons
-                    name={s.icon as any}
-                    size={13}
-                    color={active ? theme.kenyaBlack : theme.textSecondary}
-                  />
                   <Text
                     style={[
-                      styles.sortBtnText,
-                      { color: active ? theme.kenyaBlack : theme.textSecondary },
+                      styles.segmentText,
+                      {
+                        color: active
+                          ? theme.onPrimaryContainer
+                          : theme.textSecondary,
+                      },
                     ]}
                   >
-                    {s.label}
+                    {option.label}
                   </Text>
                 </Pressable>
               );
@@ -332,7 +325,6 @@ export default function ToolsScreen() {
         </View>
       </View>
 
-      {/* Tools List */}
       <FlatList
         data={filtered}
         keyExtractor={(item) => item.slug}
@@ -340,17 +332,13 @@ export default function ToolsScreen() {
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <ToolItem item={item} />}
         ListEmptyComponent={
-          <View style={styles.empty}>
-            <Ionicons
-              name="search-outline"
-              size={48}
-              color={theme.textMuted}
-            />
+          <View style={styles.emptyWrap}>
+            <Ionicons name="search-outline" size={44} color={theme.textMuted} />
             <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
-              No tools match &quot;{query}&quot;
+              No matching tools
             </Text>
-            <Text style={[styles.emptySubtitle, { color: theme.textMuted }]}>
-              Try searching with another keyword or select &quot;All&quot; category
+            <Text style={[styles.emptySub, { color: theme.textSecondary }]}>
+              Try clearing your filter or searching another keyword.
             </Text>
           </View>
         }
@@ -363,99 +351,110 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
   },
-  header: {
-    borderBottomWidth: 1,
+  filterHeader: {
     paddingHorizontal: 16,
     paddingTop: 12,
-    paddingBottom: 10,
-  },
-  headerTitleRow: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  heading: {
-    fontFamily: "Outfit_800ExtraBold",
-    fontSize: 22,
-  },
-  countBadge: {
-    borderWidth: 1,
-    borderRadius: 8,
-    paddingHorizontal: 8,
-    paddingVertical: 2,
-    marginLeft: 10,
-  },
-  countText: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 12,
-  },
-  headerSub: {
-    fontSize: 12,
-    marginTop: 2,
-    marginBottom: 12,
+    paddingBottom: 12,
+    borderBottomWidth: StyleSheet.hairlineWidth,
   },
   searchWrap: {
     flexDirection: "row",
     alignItems: "center",
+    borderRadius: 26,
     borderWidth: 1,
-    borderRadius: 12,
-    paddingHorizontal: 12,
-    height: 42,
-    marginBottom: 10,
+    paddingHorizontal: 16,
+    height: 48,
+    elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchIcon: {
-    marginRight: 8,
+    marginRight: 10,
   },
   searchInput: {
     flex: 1,
-    fontSize: 13,
+    fontSize: 14,
   },
-  chipsContainer: {
+  chips: {
+    paddingTop: 12,
+    paddingBottom: 4,
     gap: 8,
-    paddingVertical: 4,
+  },
+  chipWrap: {
+    borderRadius: 8,
+    borderWidth: 1,
+    overflow: "hidden",
   },
   chip: {
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 20,
     gap: 6,
-  },
-  chipIcon: {
-    fontSize: 13,
+    paddingHorizontal: 12,
+    paddingVertical: 7,
   },
   chipText: {
-    fontFamily: "Outfit_700Bold",
+    fontFamily: "Inter_600SemiBold",
     fontSize: 12,
+  },
+  sortRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginTop: 10,
+  },
+  sortLabel: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 10,
+    letterSpacing: 1,
+  },
+  segmentedGroup: {
+    flexDirection: "row",
+    borderRadius: 16,
+    borderWidth: 1,
+    overflow: "hidden",
+  },
+  segmentBtn: {
+    paddingHorizontal: 12,
+    paddingVertical: 5,
+  },
+  segmentText: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 11,
   },
   list: {
     padding: 16,
     paddingBottom: 32,
     gap: 10,
   },
-  card: {
+  cardWrap: {
     borderRadius: 16,
     borderWidth: 1,
-    padding: 14,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 2 : 0,
+  },
+  card: {
+    padding: 16,
   },
   cardHeaderRow: {
     flexDirection: "row",
     alignItems: "center",
   },
   cardIconWrap: {
-    width: 44,
-    height: 44,
-    borderRadius: 12,
+    width: 46,
+    height: 46,
+    borderRadius: 14,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
-    marginRight: 12,
   },
-  icon: {
-    fontSize: 22,
+  trailingCircle: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    alignItems: "center",
+    justifyContent: "center",
   },
   body: {
     flex: 1,
+    marginLeft: 14,
   },
   categoryPillWrap: {
     flexDirection: "row",
@@ -470,72 +469,41 @@ const styles = StyleSheet.create({
   },
   categoryPillText: {
     fontSize: 9,
-    fontWeight: "800",
+    fontFamily: "Outfit_700Bold",
     letterSpacing: 0.5,
   },
   title: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 15,
+    fontSize: 16,
   },
   description: {
-    fontSize: 12,
-    lineHeight: 17,
+    fontSize: 12.5,
+    lineHeight: 18,
     marginTop: 8,
   },
   sourceBadge: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 5,
+    gap: 6,
     marginTop: 10,
     paddingTop: 8,
-    borderTopWidth: 1,
+    borderTopWidth: StyleSheet.hairlineWidth,
   },
   source: {
-    fontSize: 10,
+    fontSize: 11,
   },
-  empty: {
+  emptyWrap: {
     alignItems: "center",
-    paddingVertical: 50,
+    paddingVertical: 48,
   },
   emptyTitle: {
+    fontFamily: "Outfit_700Bold",
     fontSize: 16,
-    fontWeight: "700",
-    marginTop: 12,
+    marginTop: 10,
   },
-  emptySubtitle: {
+  emptySub: {
     fontSize: 13,
-    textAlign: "center",
     marginTop: 4,
-    maxWidth: 240,
-  },
-  sortBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingHorizontal: 16,
-    paddingTop: 8,
-    gap: 8,
-  },
-  sortLabel: {
-    fontSize: 10,
-    fontWeight: "800",
-    letterSpacing: 0.8,
-  },
-  sortButtonsRow: {
-    flexDirection: "row",
-    gap: 6,
-  },
-  sortBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 8,
-    borderWidth: 1,
-  },
-  sortBtnText: {
-    fontSize: 11,
-    fontWeight: "700",
+    textAlign: "center",
   },
 });

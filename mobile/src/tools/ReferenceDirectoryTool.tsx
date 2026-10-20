@@ -4,7 +4,6 @@ import {
   Text,
   View,
   TextInput,
-  ScrollView,
   Pressable,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
@@ -29,6 +28,7 @@ import vaccinesData from "../shared/data/vaccination-schedule.json";
 import bodiesData from "../shared/data/professional-bodies.json";
 import clustersData from "../shared/data/kuccps-clusters.json";
 import fertilizerData from "../shared/data/fertilizer-subsidy.json";
+import languagesData from "../shared/data/kenya-languages.json";
 
 interface DirectoryItem {
   id?: string | number;
@@ -48,8 +48,8 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
       case "nhif-hospital-finder": {
         const list = (hospitalsData as any).hospitals || [];
         return {
-          title: "Accredited Health Facilities",
-          subtitle: "NHIF & SHA recognized hospitals across Kenya",
+          title: "SHA / SHIF Accredited Health Facilities",
+          subtitle: "Social Health Authority recognized hospitals across Kenya",
           items: list.map((h: any, i: number) => ({
             id: i,
             title: h.name,
@@ -57,9 +57,9 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             badge: `Level ${h.level}`,
             badgeColor: h.level >= 5 ? theme.gold : theme.sky,
             details: [
-              { label: "Facility Type", value: h.type },
-              { label: "County", value: h.county },
-              { label: "SHA/NHIF Status", value: h.nhifAccredited ? "Accredited" : "Standard" },
+              { label: "Facility Type", value: String(h.type || "Hospital") },
+              { label: "County", value: String(h.county || "Kenya") },
+              { label: "SHA / SHIF Status", value: h.nhifAccredited ? "Accredited" : "Standard" },
             ],
           })),
         };
@@ -73,14 +73,15 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
           items: list.map((p: any, i: number) => ({
             id: i,
             title: p.name,
-            subtitle: `${p.county} County · ${p.region}`,
+            subtitle: `${p.county} County · ${p.region} (${p.sizeKm2} km²)`,
             badge: p.type,
             badgeColor: theme.kenyaGreenLight,
             details: [
-              { label: "Citizen Adult Fee", value: `KES ${p.feeCitizenAdult}` },
-              { label: "Best Season", value: p.bestSeason },
-              { label: "Key Wildlife", value: (p.wildlife || []).slice(0, 4).join(", ") },
-              { label: "Highlights", value: p.highlights || "" },
+              { label: "Citizen Entry (Adult / Child)", value: `KES ${p.feeCitizenAdult} / KES ${p.feeCitizenChild}` },
+              { label: "Non-Resident Adult", value: `${p.nonResidentCurrency || "USD"} ${p.feeNonResidentAdult}` },
+              { label: "Best Season", value: String(p.bestSeason || "Year-round") },
+              { label: "Key Wildlife", value: Array.isArray(p.wildlife) ? p.wildlife.slice(0, 5).join(", ") : "" },
+              { label: "Highlights", value: String(p.highlights || "") },
             ],
           })),
         };
@@ -90,15 +91,16 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
         const categories = (customsData as any).categories || [];
         const items: DirectoryItem[] = [];
         for (const cat of categories) {
-          for (const item of cat.items) {
+          for (const item of cat.items || []) {
             items.push({
               title: item.item,
               subtitle: cat.title,
               badge: cat.id === "prohibited" ? "Banned" : "Permit Req.",
               badgeColor: cat.id === "prohibited" ? theme.kenyaRedLight : theme.gold,
               details: [
-                { label: "Governing Law", value: item.law },
-                { label: "Import Status", value: cat.description },
+                { label: "Governing Law", value: String(item.law || "KRA Customs Act") },
+                ...(item.permit ? [{ label: "Issuing Authority", value: String(item.permit) }] : []),
+                { label: "Import Status", value: String(cat.description || "") },
               ],
             });
           }
@@ -114,20 +116,25 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
         const crops = (cropsData as any).crops || [];
         return {
           title: "Kenyan Crop Planting Calendar",
-          subtitle: "Planting and harvesting seasons by agro-ecological zones",
-          items: crops.map((c: any, i: number) => ({
-            id: i,
-            title: c.name,
-            subtitle: c.scientificName || "Crop Guide",
-            badge: c.category || "Crops",
-            badgeColor: theme.kenyaGreenLight,
-            details: [
-              { label: "Long Rains (Planting)", value: c.longRainsPlanting || c.plantingSeason || "March – April" },
-              { label: "Short Rains (Planting)", value: c.shortRainsPlanting || "October – November" },
-              { label: "Harvest Period", value: c.harvestSeason || c.maturityMonths || "3–4 months" },
-              { label: "Best Counties", value: Array.isArray(c.suitableCounties) ? c.suitableCounties.slice(0, 4).join(", ") : (c.counties || "") },
-            ],
-          })),
+          subtitle: "Planting, maturity, altitude & rainfall requirements by crop",
+          items: crops.map((c: any, i: number) => {
+            const hl = c.seasons?.highlands?.longRains;
+            const sr = c.seasons?.highlands?.shortRains;
+            return {
+              id: i,
+              title: `${c.icon ? c.icon + " " : ""}${c.name}`,
+              subtitle: c.description || "Kenyan Crop Guide",
+              badge: c.category || "Crop",
+              badgeColor: theme.kenyaGreenLight,
+              details: [
+                { label: "Long Rains (Highlands)", value: hl ? `Plant ${hl.plant} → Harvest ${hl.harvest}` : "Feb–Apr → Jul–Sep" },
+                { label: "Short Rains", value: sr ? `Plant ${sr.plant} → Harvest ${sr.harvest}` : "Oct–Nov → Jan–Feb" },
+                { label: "Maturity Period", value: `${c.maturityDays || "90–120"} days` },
+                { label: "Optimal Altitude & Rain", value: `${c.optimalAltitude || "1000–2400m"} · ${c.optimalRainfall || "600–1200mm"}` },
+                { label: "Spacing & Seed Rate", value: `${c.spacingCm || "Standard"} · ${c.seedRateKgPerAcre || "10"} kg/acre` },
+              ],
+            };
+          }),
         };
       }
 
@@ -143,9 +150,9 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             badge: a.county,
             badgeColor: theme.gold,
             details: [
-              { label: "Location", value: a.location || a.town },
-              { label: "Contact Phone", value: a.phone || "Available in store" },
-              { label: "Key Products", value: (a.services || a.products || []).join(", ") },
+              { label: "Location", value: `${a.town}, ${a.county}` },
+              { label: "Contact Phone", value: String(a.phone || "Available in store") },
+              { label: "Key Services", value: Array.isArray(a.services) ? a.services.join(", ") : "" },
             ],
           })),
         };
@@ -155,226 +162,232 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
         const list = (foodsData as any).foods || [];
         return {
           title: "Traditional Kenyan Foods & Nutrition",
-          subtitle: "Nutritional values, calories & micronutrients",
+          subtitle: "Calories, protein, carbohydrates, fat & fibre per 100g serving",
           items: list.map((f: any, i: number) => ({
             id: i,
             title: f.name,
-            subtitle: f.localName ? `Local: ${f.localName}` : "Kenyan Cuisine",
-            badge: f.category || "Food",
+            subtitle: f.note || "Kenyan Cuisine",
+            badge: `${f.calories} kcal`,
             badgeColor: theme.gold,
             details: [
-              { label: "Calories (per 100g)", value: `${f.calories || f.energy || "—"} kcal` },
-              { label: "Protein", value: `${f.protein || "—"} g` },
-              { label: "Key Nutrients", value: f.healthBenefits || f.nutrients || "Rich in dietary fiber" },
+              { label: "Serving Size", value: String(f.serving || "100g") },
+              { label: "Protein / Carbs", value: `${f.protein}g protein · ${f.carbs}g carbs` },
+              { label: "Fat / Dietary Fibre", value: `${f.fat}g fat · ${f.fibre}g fibre` },
+              { label: "Category", value: String(f.category || "Staple").toUpperCase() },
             ],
           })),
         };
       }
 
       case "kenya-soil-types": {
-        const list = (soilsData as any).soilTypes || (soilsData as any).soils || [];
+        const list = (soilsData as any).soilTypes || [];
         return {
           title: "Kenya Soil Types & Suitability",
           subtitle: "Agricultural soil classification across 47 counties",
           items: list.map((s: any, i: number) => ({
             id: i,
             title: s.name,
-            subtitle: s.characteristics || "Soil profile",
-            badge: "Soil",
+            subtitle: s.description || "Soil profile",
+            badge: `pH ${s.pH || "5.5–6.5"}`,
             badgeColor: theme.earthLight,
             details: [
-              { label: "Best Crops", value: Array.isArray(s.suitableCrops) ? s.suitableCrops.join(", ") : (s.crops || "") },
-              { label: "Key Regions", value: Array.isArray(s.regions) ? s.regions.join(", ") : (s.counties || "") },
-              { label: "Fertility", value: s.fertility || "Moderate to High" },
+              { label: "Texture & Fertility", value: `${s.texture || "Loam"} · ${s.fertility || "Moderate"} fertility` },
+              { label: "Best Crops", value: Array.isArray(s.bestCrops) ? s.bestCrops.join(", ") : "" },
+              { label: "Key Counties", value: Array.isArray(s.counties) ? s.counties.slice(0, 5).join(", ") : "" },
             ],
           })),
         };
       }
 
       case "kenya-rainfall-patterns": {
-        const list = (rainfallData as any).regions || (rainfallData as any).patterns || [];
+        const list = (rainfallData as any).counties || [];
         return {
-          title: "Kenya Rainfall Patterns & Seasons",
-          subtitle: "Meteorological annual rainfall distribution",
+          title: "Kenya Rainfall Patterns by County (47 Counties)",
+          subtitle: "Annual rainfall (mm), long rains, short rains & climate zones",
           items: list.map((r: any, i: number) => ({
-            id: i,
-            title: r.region || r.county || "Region",
-            subtitle: `Annual: ${r.annualRainfall || r.averageRainfall || "Varies"} mm`,
-            badge: r.climateType || "Climate",
+            id: r.code || i,
+            title: `${r.name} County`,
+            subtitle: `Climate Zone: ${r.climateZone}`,
+            badge: `${r.annualRainfall} mm/yr`,
             badgeColor: theme.sky,
             details: [
-              { label: "Long Rains Period", value: r.longRains || "March – May" },
-              { label: "Short Rains Period", value: r.shortRains || "October – December" },
-              { label: "Counties Covered", value: Array.isArray(r.counties) ? r.counties.slice(0, 4).join(", ") : "" },
+              { label: "Long Rains Season", value: String(r.longRains || "March – May") },
+              { label: "Short Rains Season", value: String(r.shortRains || "October – December") },
+              { label: "Dry Season", value: String(r.drySeason || "January – February") },
             ],
           })),
         };
       }
 
       case "county-budget-tracker": {
-        const list = (budgetsData as any).counties || (budgetsData as any).budgets || [];
+        const list = (budgetsData as any).budgets || [];
         return {
-          title: "County Budget Allocations",
-          subtitle: "Controller of Budget devolved government expenditures",
+          title: `County Budget Allocations (${(budgetsData as any).fiscalYear || "2023/24"})`,
+          subtitle: "Controller of Budget (COB) revenue & absorption rates (KES Millions)",
           items: list.map((b: any, i: number) => ({
-            id: i,
-            title: `${b.county || b.name} County Budget`,
-            subtitle: `Fiscal Year: ${b.financialYear || "2024/2025"}`,
-            badge: "Devolved",
+            id: b.code || i,
+            title: `${b.code}. ${b.county} County`,
+            subtitle: `Total Revenue: KES ${Number(b.totalRevenue).toLocaleString()}M`,
+            badge: `${b.absorptionRate}% Absorbed`,
             badgeColor: theme.gold,
             details: [
-              { label: "Total Allocation", value: `KES ${b.totalBudget || b.allocation || "—"}` },
-              { label: "Development Budget", value: `KES ${b.developmentBudget || "—"}` },
-              { label: "Recurrent Budget", value: `KES ${b.recurrentBudget || "—"}` },
+              { label: "Equitable Share Allocation", value: `KES ${Number(b.allocation).toLocaleString()}M` },
+              { label: "Own-Source Revenue (OSR)", value: `KES ${Number(b.ownSourceRevenue).toLocaleString()}M` },
+              { label: "Actual Expenditure", value: `KES ${Number(b.expenditure).toLocaleString()}M` },
             ],
           })),
         };
       }
 
       case "livestock-market-prices": {
-        const list = (livestockData as any).prices || (livestockData as any).livestock || [];
+        const list = (livestockData as any).livestock || [];
+        const items: DirectoryItem[] = [];
+        for (const l of list) {
+          for (const p of l.prices || []) {
+            items.push({
+              title: `${l.icon ? l.icon + " " : ""}${l.type} — ${p.market}`,
+              subtitle: `Unit: ${l.unit || "per head"}`,
+              badge: `Avg KES ${Number(p.avgPrice || p.maxPrice).toLocaleString()}`,
+              badgeColor: theme.gold,
+              details: [
+                { label: "Price Range", value: `KES ${Number(p.minPrice).toLocaleString()} – KES ${Number(p.maxPrice).toLocaleString()}` },
+                { label: "Market", value: String(p.market) },
+              ],
+            });
+          }
+        }
         return {
-          title: "Livestock Market Prices",
-          subtitle: "Current indicative animal prices in Kenyan markets",
-          items: list.map((l: any, i: number) => ({
+          title: "Livestock Market Prices Across Kenya",
+          subtitle: "Indicative cattle, goat, sheep, camel & poultry prices by market",
+          items,
+        };
+      }
+
+      case "fertilizer-subsidy-guide": {
+        const ferts = (fertilizerData as any).fertilizers || [];
+        return {
+          title: "National Fertilizer Subsidy Programme (NCPB)",
+          subtitle: "Subsidized 50kg bag prices vs. commercial market rates",
+          items: ferts.map((f: any, i: number) => ({
             id: i,
-            title: l.animal || l.type || "Livestock",
-            subtitle: l.market || "Kenya National Average",
-            badge: `KES ${l.price || l.averagePrice || "—"}`,
-            badgeColor: theme.gold,
+            title: `${f.name} (${f.formula})`,
+            subtitle: f.use,
+            badge: `KES ${Number(f.subsidizedPrice).toLocaleString()}`,
+            badgeColor: theme.kenyaGreenLight,
             details: [
-              { label: "Price Range", value: `KES ${l.minPrice || "—"} to ${l.maxPrice || "—"}` },
-              { label: "Primary Markets", value: l.markets || "Kajiado, Garissa, Isiolo, Dagoretti" },
+              { label: "Market Price (50kg)", value: `KES ${Number(f.marketPrice).toLocaleString()} (Save KES ${Number(f.marketPrice - f.subsidizedPrice).toLocaleString()})` },
+              { label: "Best Crops", value: Array.isArray(f.bestFor) ? f.bestFor.join(", ") : "" },
+              { label: "Application Guide", value: String(f.application || "") },
             ],
           })),
         };
       }
 
-      case "fertilizer-subsidy-guide": {
-        return {
-          title: "Government Subsidized Fertilizer (NCPB)",
-          subtitle: "Registration, voucher codes & collection centers",
-          items: [
-            {
-              title: "Subsidized Fertilizer Price: KES 2,500 / 50kg bag",
-              subtitle: "National Cereals and Produce Board (NCPB)",
-              badge: "KES 2,500",
-              badgeColor: theme.kenyaGreenLight,
-              details: [
-                { label: "Standard Commercial Price", value: "KES 6,500 – 7,000" },
-                { label: "Subsidy Savings per Bag", value: "KES 4,000 – 4,500" },
-                { label: "Eligibility", value: "Registered in Kenya National Farmer Registry" },
-                { label: "How to Register", value: "Dial *316# on your mobile phone" },
-              ],
-            },
-            {
-              title: "Available Fertilizer Types",
-              subtitle: "Planting and Top-Dressing varieties",
-              badge: "NPK & CAN",
-              badgeColor: theme.gold,
-              details: [
-                { label: "Planting Fertilizers", value: "NPK 17:17:17, DAP, NPK 23:23:0" },
-                { label: "Top-Dressing Fertilizers", value: "CAN, Urea" },
-                { label: "Distribution Centers", value: "NCPB Depots and verified KNTC Agrovets" },
-              ],
-            },
-          ],
-        };
-      }
-
       case "real-estate-agent-checker": {
-        const list = (agentsData as any).agents || [];
+        const list = (agentsData as any).sampleAgents || [];
         return {
-          title: "Estate Agents Registration Board (EARB)",
-          subtitle: "Registered and licensed real estate agents in Kenya",
+          title: "Estate Agents Registration Board (EARB) Directory",
+          subtitle: "Verify licensed real estate firms & property valuers in Kenya",
           items: list.map((a: any, i: number) => ({
             id: i,
-            title: a.name || a.firm,
-            subtitle: `Registration No: ${a.regNo || "Licensed"}`,
-            badge: "EARB Licensed",
-            badgeColor: theme.kenyaGreenLight,
+            title: a.name,
+            subtitle: `${a.type} · ${a.county} County`,
+            badge: a.registered ? "EARB Licensed" : "Unverified",
+            badgeColor: a.registered ? theme.kenyaGreenLight : theme.kenyaRedLight,
             details: [
-              { label: "Location", value: `${a.town || a.county || "Kenya"}` },
-              { label: "Practicing Status", value: "Active / Licensed" },
+              { label: "Specialization", value: String(a.specialization || "Real Estate") },
+              { label: "County", value: String(a.county || "Nairobi") },
+              { label: "Verification Portal", value: "earb.go.ke" },
             ],
           })),
         };
       }
 
       case "trademark-cost-kenya": {
-        const fees = (trademarkData as any).fees || [];
+        const feesObj = (trademarkData as any).fees || {};
+        const items: DirectoryItem[] = [];
+        for (const [key, cat] of Object.entries(feesObj) as [string, any][]) {
+          for (const step of cat.steps || []) {
+            items.push({
+              title: step.item,
+              subtitle: cat.title || key,
+              badge: `KES ${Number(step.amount).toLocaleString()}`,
+              badgeColor: theme.gold,
+              details: [
+                { label: "Category", value: String(cat.title || key) },
+                { label: "Processing Time", value: String(cat.processingTime || "12–18 months") },
+                ...(step.note ? [{ label: "Statutory Note", value: String(step.note) }] : []),
+              ],
+            });
+          }
+        }
         return {
-          title: "Kenya Industrial Property Institute (KIPI) Fees",
-          subtitle: "Trademark registration, renewal and opposition costs",
-          items: fees.map((f: any, i: number) => ({
-            id: i,
-            title: f.service || f.description || "KIPI Fee",
-            subtitle: f.category || "Trademark",
-            badge: `KES ${f.fee ? f.fee.toLocaleString() : "—"}`,
-            badgeColor: theme.gold,
-            details: [
-              { label: "Official Form", value: f.form || "TM Form" },
-              { label: "Applicable Schedule", value: f.schedule || "First Schedule" },
-            ],
-          })),
+          title: "KIPI Trademark, Patent & Copyright Fees",
+          subtitle: "Kenya Industrial Property Institute (KIPI) official fee schedule",
+          items,
         };
       }
 
       case "forest-reserves-kenya": {
-        const list = (forestsData as any).forests || (forestsData as any).reserves || [];
+        const list = (forestsData as any).forests || [];
         return {
-          title: "Kenya Forest Reserves (KFS)",
-          subtitle: "Gazetted state forests and water catchments",
+          title: "Gazetted Forest Reserves in Kenya (KFS)",
+          subtitle: "Indigenous water towers, montane forests & coastal reserves",
           items: list.map((f: any, i: number) => ({
             id: i,
             title: f.name,
-            subtitle: `${f.county} County · ${f.sizeKm2 || f.areaHa || ""} ha`,
-            badge: "Protected",
+            subtitle: `${f.county} · ${Number(f.sizeHa).toLocaleString()} hectares`,
+            badge: f.ecosystem || "Forest",
             badgeColor: theme.kenyaGreenLight,
             details: [
-              { label: "Management", value: "Kenya Forest Service (KFS)" },
-              { label: "Ecosystem Type", value: f.type || "Indigenous montane forest" },
+              { label: "Hiking & Ecotourism", value: f.hiking ? "Open for Hiking & Trails" : "Conservation Only" },
+              { label: "Biodiversity Highlights", value: String(f.biodiversity || "") },
             ],
           })),
         };
       }
 
       case "economic-calendar": {
-        const list = (econData as any).releases || (econData as any).events || [];
+        const list = (econData as any).events || [];
         return {
-          title: "Kenya Economic Data Releases",
-          subtitle: "Scheduled releases from KNBS, CBK and Treasury",
+          title: "Kenya Economic Calendar (KNBS, CBK & EPRA)",
+          subtitle: "Scheduled macroeconomic data releases and policy announcements",
           items: list.map((e: any, i: number) => ({
             id: i,
-            title: e.event || e.indicator || "Economic Release",
-            subtitle: e.source || "KNBS / CBK",
+            title: e.name,
+            subtitle: `${e.agency} · ${e.category}`,
             badge: e.frequency || "Monthly",
             badgeColor: theme.sky,
             details: [
-              { label: "Announcement Date", value: e.date || e.schedule || "Scheduled" },
-              { label: "Significance", value: e.significance || "High Impact" },
+              { label: "Release Schedule", value: String(e.typicalDate || "Monthly") },
+              { label: "What It Tracks", value: String(e.description || "") },
             ],
           })),
         };
       }
 
       case "child-growth-schedule": {
-        const list = (vaccinesData as any).schedule || (vaccinesData as any).vaccines || [];
+        const schedule = (vaccinesData as any).vaccinationSchedule || [];
+        const items: DirectoryItem[] = [];
+        for (const stage of schedule) {
+          for (const v of stage.vaccines || []) {
+            items.push({
+              title: `${v.name} (${v.fullName})`,
+              subtitle: `Schedule: ${stage.age}`,
+              badge: stage.age,
+              badgeColor: theme.kenyaGreenLight,
+              details: [
+                { label: "Protects Against", value: String(v.protectsAgainst || "") },
+                { label: "Administration Route", value: String(v.route || "") },
+                { label: "Public Hospital Cost", value: "FREE under MOH KEPI" },
+              ],
+            });
+          }
+        }
         return {
-          title: "Kenya Expanded Programme on Immunization (KEPI)",
-          subtitle: "Child vaccination and health milestones schedule",
-          items: list.map((v: any, i: number) => ({
-            id: i,
-            title: v.vaccine || v.name || "Vaccination",
-            subtitle: `Recommended Age: ${v.age || v.timing || "Infancy"}`,
-            badge: v.age || "KEPI",
-            badgeColor: theme.kenyaGreenLight,
-            details: [
-              { label: "Prevents Against", value: v.prevents || v.diseases || "Childhood illnesses" },
-              { label: "Administration Route", value: v.route || "Oral / Injection" },
-              { label: "Cost", value: "FREE at all Public Health Facilities" },
-            ],
-          })),
+          title: "MOH Kenya Child Vaccination Schedule (KEPI)",
+          subtitle: "Official Ministry of Health immunization timetable from birth",
+          items,
         };
       }
 
@@ -382,16 +395,17 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
         const list = (bodiesData as any).bodies || [];
         return {
           title: "Statutory Professional Bodies in Kenya",
-          subtitle: "Regulators and licensing boards by sector",
+          subtitle: "Licensing boards, registration fees & practitioner verification",
           items: list.map((b: any, i: number) => ({
             id: i,
-            title: b.name,
-            subtitle: b.acronym ? `(${b.acronym})` : "",
-            badge: b.sector || "Regulator",
+            title: `${b.name} (${b.abbreviation})`,
+            subtitle: b.profession,
+            badge: b.abbreviation,
             badgeColor: theme.gold,
             details: [
-              { label: "Enacting Statute", value: b.act || "Act of Parliament" },
-              { label: "Official Website", value: b.website || "Available online" },
+              { label: "Registration Fee", value: String(b.registrationFee || "—") },
+              { label: "Annual Renewal", value: String(b.renewalFee || "—") },
+              { label: "Official Website", value: String(b.website || "") },
             ],
           })),
         };
@@ -400,17 +414,41 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
       case "kuccps-cluster-calculator": {
         const list = (clustersData as any).clusters || [];
         return {
-          title: "KUCCPS Degree Cluster Points Explorer",
-          subtitle: "Cluster subjects and degree programmes in Kenyan Universities",
+          title: "KUCCPS Degree Cluster Subjects & Cutoffs",
+          subtitle: "Required KCSE subjects and weights for university placement",
           items: list.map((c: any, i: number) => ({
-            id: i,
-            title: `Cluster ${c.clusterNumber || c.id}: ${c.name}`,
-            subtitle: c.faculty || "University Degree Field",
-            badge: "KUCCPS",
+            id: c.id || i,
+            title: c.name,
+            subtitle: Array.isArray(c.courses) ? c.courses.join(" · ") : "",
+            badge: `Cutoff ${c.typicalCutoff}`,
             badgeColor: theme.sky,
             details: [
-              { label: "Core Required Subjects", value: Array.isArray(c.coreSubjects) ? c.coreSubjects.join(", ") : (c.subjects || "") },
-              { label: "Cut-off Points (Indicative)", value: c.cutoff || "35.00 – 43.00" },
+              {
+                label: "Cluster Subjects",
+                value: Array.isArray(c.subjects)
+                  ? c.subjects.map((s: any) => `${s.name} (×${s.weight})`).join(", ")
+                  : "",
+              },
+              { label: "Typical Cutoff Range", value: `${c.typicalCutoff} points` },
+            ],
+          })),
+        };
+      }
+
+      case "kenya-languages": {
+        const list = (languagesData as any).languages || [];
+        return {
+          title: "Languages of Kenya Directory",
+          subtitle: "Bantu, Nilotic & Cushitic languages spoken across Kenya",
+          items: list.map((l: any, i: number) => ({
+            id: i,
+            title: l.name,
+            subtitle: `${l.notes || ""}`,
+            badge: String(l.family || "").toUpperCase(),
+            badgeColor: theme.gold,
+            details: [
+              { label: "Estimated Speakers", value: Number(l.speakers || 0).toLocaleString() },
+              { label: "Primary Counties", value: Array.isArray(l.counties) ? l.counties.join(", ") : "" },
             ],
           })),
         };
@@ -454,7 +492,6 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
 
   return (
     <View style={styles.toolWrap}>
-      {/* Search Input */}
       {dataset.items.length > 2 && (
         <View style={[styles.searchBar, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
@@ -496,12 +533,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
                   },
                 ]}
               >
-                <Text
-                  style={[
-                    styles.badgeText,
-                    { color: item.badgeColor || theme.gold },
-                  ]}
-                >
+                <Text style={[styles.badgeText, { color: item.badgeColor || theme.gold }]}>
                   {item.badge}
                 </Text>
               </View>
@@ -533,94 +565,37 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
 
 function createStyles(colors: ThemeColors) {
   return StyleSheet.create({
-    toolWrap: {
-      gap: 12,
-    },
+    toolWrap: { gap: 12 },
     searchBar: {
       flexDirection: "row",
       alignItems: "center",
       backgroundColor: colors.bgCard,
       borderWidth: 1,
       borderColor: colors.border,
-      borderRadius: 12,
-      paddingHorizontal: 12,
-      height: 42,
+      borderRadius: 999,
+      paddingHorizontal: 14,
+      height: 44,
     },
-    searchInput: {
-      flex: 1,
-      marginLeft: 8,
-      color: colors.textPrimary,
-      fontSize: 13,
-    },
-    subHeading: {
-      fontSize: 13,
-      fontWeight: "800",
-      color: colors.gold,
-      letterSpacing: 0.5,
-    },
+    searchInput: { flex: 1, marginLeft: 8, color: colors.textPrimary, fontSize: 13 },
+    subHeading: { fontSize: 13, fontWeight: "800", color: colors.gold, letterSpacing: 0.5 },
     card: {
       backgroundColor: colors.bgCard,
-      borderRadius: 14,
+      borderRadius: 20,
       borderWidth: 1,
       borderColor: colors.border,
       padding: 14,
       gap: 10,
     },
-    cardTop: {
-      flexDirection: "row",
-      justifyContent: "space-between",
-      alignItems: "flex-start",
-    },
-    cardTitle: {
-      fontSize: 15,
-      fontWeight: "700",
-      color: colors.textPrimary,
-    },
-    cardSubtitle: {
-      fontSize: 12,
-      color: colors.textSecondary,
-      marginTop: 2,
-    },
-    badge: {
-      paddingHorizontal: 8,
-      paddingVertical: 3,
-      borderRadius: 6,
-      borderWidth: 1,
-    },
-    badgeText: {
-      fontSize: 10,
-      fontWeight: "800",
-    },
-    detailsList: {
-      borderTopWidth: 1,
-      borderTopColor: colors.border,
-      paddingTop: 8,
-      gap: 6,
-    },
-    detailRow: {
-      flexDirection: "row",
-      justifyContent: "space-between",
-    },
-    detailLabel: {
-      fontSize: 12,
-      color: colors.textMuted,
-      fontWeight: "600",
-    },
-    detailValue: {
-      fontSize: 12,
-      color: colors.textPrimary,
-      fontWeight: "600",
-      maxWidth: "60%",
-      textAlign: "right",
-    },
-    empty: {
-      alignItems: "center",
-      paddingVertical: 36,
-    },
-    emptyTitle: {
-      fontSize: 14,
-      color: colors.textMuted,
-      marginTop: 8,
-    },
+    cardTop: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" },
+    cardTitle: { fontSize: 15, fontWeight: "700", color: colors.textPrimary },
+    cardSubtitle: { fontSize: 12, color: colors.textSecondary, marginTop: 2 },
+    badge: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999, borderWidth: 1 },
+    badgeText: { fontSize: 10, fontWeight: "800" },
+    detailsList: { borderTopWidth: 1, borderTopColor: colors.border, paddingTop: 8, gap: 6 },
+    detailRow: { flexDirection: "row", justifyContent: "space-between", gap: 8 },
+    detailLabel: { fontSize: 12, color: colors.textMuted, fontWeight: "600" },
+    detailValue: { fontSize: 12, color: colors.textPrimary, fontWeight: "600", flex: 1, textAlign: "right" },
+    empty: { alignItems: "center", paddingVertical: 36 },
+    emptyTitle: { fontSize: 14, color: colors.textMuted, marginTop: 8 },
   });
 }

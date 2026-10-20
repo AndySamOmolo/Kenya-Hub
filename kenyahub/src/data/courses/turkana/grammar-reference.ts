@@ -112,5 +112,52 @@ Example: *apa kang* (my father), *ito yok* (our mother - inclusive).`,
       { turkana: 'ngakile nalepan', english: 'freshly milked milk', explanation: 'Specific condition of milk' },
       { turkana: 'anok a ngaatuk', english: 'cattle kraal', explanation: 'Thorn enclosure for cows' }
     ]
+  },
+  // ── EXPANDED GRAMMAR SECTIONS ──
+  {
+    "id": "turkana-possessives-demonstratives",
+    "title": "Gender-Agreed Possessives & Spatial Demonstratives",
+    "summary": "Turkana possessives (kang, kon, ke, kosi/yok, kus, kec) follow the noun and take gender-number agreement prefixes.",
+    "content": "As Juxon Barton (1921) documents, Turkana post-nominal possessives agree in gender (Masculine **lo-**, Feminine **na-**, Neuter **ni-**, Masc. pl. **lu-**, Fem. pl. **na-**) with the head noun:\n- **1s (my)**: *kang* → *ekile lokang* (my husband/man), *aberu nakang* (my wife), *ngatuk nakang* (my cattle).\n- **2s (your)**: *kon* → *akwap nakon* (your land).\n- **3s (his/her)**: *ke* → *ekokolak loke* (his child).\n- **1p Exclusive vs. Inclusive**: *kosi* (our — excluding listener) vs. *yok* (our — including listener).\n- **2p (your pl.)**: *kus* → *ngatuk nakus* (your cattle).\n- **3p (their)**: *kec* → *ngitunga lukec* (their people).\n\nSpatial demonstratives also agree with noun gender:\n- **Proximal (this)**: Masc. *lo* (*ekile lo*), Fem. *na* (*aberu na*), Pl. *lu / nu*.\n- **Distal (that)**: Masc. *ye* (*ekile ye*), Fem. *ya* (*aberu ya*).",
+    "examples": [
+      {
+        "turkana": "aberu nakang / ekile lokang",
+        "english": "my wife / my husband",
+        "explanation": "Feminine na- vs. Masculine lo- possessive"
+      },
+      {
+        "turkana": "akwap nayok",
+        "english": "our land (inclusive)",
+        "explanation": "Inclusive 1st person plural possessive"
+      },
+      {
+        "turkana": "ekile lo vs. ekile ye",
+        "english": "this man vs. that man",
+        "explanation": "Masculine proximal vs. distal demonstrative"
+      }
+    ]
+  },
+  {
+    "id": "turkana-negation-interrogatives",
+    "title": "Negative Prefixation (ny- / pe-) & Interrogative Syntax",
+    "summary": "Turkana negates indicative verbs with the prefix ny- (or mam) and uses gender-inflected question words.",
+    "content": "Verbal negation and questions in Turkana follow Eastern Nilotic patterns:\n- **Negative Prefix (ny- / pe-)**: Attached before the subject agreement prefix on the verb:\n  - *Elosi* (He goes) → **Nyelosi** or **Mam elosi** (He does not go).\n  - *Ajeni* (I know) → **Nyajeni** (I do not know).\n- **Negative Imperative**: Uses **ny-** or ** to-pe-**: *Nyilos!* (Do not go!).\n- **Interrogative Pronouns**:\n  - **Ngai?** (Who? pl. *Ngai ta?*)\n  - **Nyo?** (What? / Why? — * Kanukinyo?*)\n  - **Ai? / Nabo ai?** (Where?)\n  - **Ngiai?** (How many? — agrees with plural gender prefix).",
+    "examples": [
+      {
+        "turkana": "Nyajeni ayong.",
+        "english": "I do not know.",
+        "explanation": "Negative prefix ny- + 1s a-"
+      },
+      {
+        "turkana": "Ilosi iyong ai?",
+        "english": "Where are you going?",
+        "explanation": "Locative interrogative ai"
+      },
+      {
+        "turkana": "Ecamit ngesi nyo?",
+        "english": "What does he/she want?",
+        "explanation": "Interrogative nyo"
+      }
+    ]
   }
 ];

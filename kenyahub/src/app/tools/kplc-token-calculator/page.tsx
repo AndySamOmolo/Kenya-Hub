@@ -98,7 +98,7 @@ const faq = [
   },
   {
     question: "What is the lifeline tariff?",
-    answer: "The first 10 kWh each month are charged at only KES 2.50/unit (the 'lifeline' rate). This is heavily subsidized for low-income households. Units 11–50 cost KES 12.75, and above 50 cost KES 15.80.",
+    answer: "Under the EPRA 2023–2026 tariff structure, the Domestic Lifeline band (DC1, 0–30 kWh/month) is charged at a base rate of KES 12.14/kWh. Ordinary Domestic DC2 (31–100 kWh) is KES 16.50/kWh, and DC3 (above 100 kWh) is KES 19.07/kWh, with no monthly fixed standing charge.",
   },
   {
     question: "What levies are included in KPLC token charges?",
@@ -167,7 +167,7 @@ export default function KPLCTokenCalculatorPage() {
             {results.totalUnits.toLocaleString()} kWh
           </p>
           <p className="text-xs text-text-muted mt-2">
-            For a {fmtInt(amount)} token purchase (assuming fixed charge not yet paid this month)
+            For a {fmtInt(amount)} token purchase under EPRA 2023–2026 Domestic Tariffs (DC1/DC2/DC3)
           </p>
         </div>
 

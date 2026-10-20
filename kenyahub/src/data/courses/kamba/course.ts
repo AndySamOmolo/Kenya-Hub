@@ -521,5 +521,3146 @@ export const KAMBA_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  
+  // ── EXPANDED SOURCE-VERIFIED UNITS ──
+  {
+    "id": "kamba-unit-6-greetings",
+    "title": "Unit 6: Greetings & Farewells",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Greetings & Farewells, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Handshake",
+    "skills": [
+      {
+        "id": "kamba-exp-greetings",
+        "title": "Greetings & Farewells",
+        "icon": "Handshake",
+        "description": "Master Kamba (Kĩkamba) greetings & farewells vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Greetings & Farewells, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ũvoo?' (How are you?), 'Nĩ mũseo' (I am fine), 'O voo' (Hello / Salutation), 'Wĩa?' (What's the news / What's up?).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Ũvoo?",
+            "source": "How are you?",
+            "pronunciation": "oo-voh",
+            "hint": "Standard greeting — literally 'News?'",
+            "example": "Ũvoo? — How are you? (Standard greeting — literally 'News?')"
+          },
+          {
+            "target": "Nĩ mũseo",
+            "source": "I am fine",
+            "pronunciation": "nee moo-seh-oh",
+            "hint": "Standard reply meaning 'I am well / good'",
+            "example": "Nĩ mũseo — I am fine (Standard reply meaning 'I am well / good')"
+          },
+          {
+            "target": "O voo",
+            "source": "Hello / Salutation",
+            "pronunciation": "oh voh",
+            "hint": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'",
+            "example": "O voo — Hello / Salutation (Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo')"
+          },
+          {
+            "target": "Wĩa?",
+            "source": "What's the news / What's up?",
+            "pronunciation": "wee-ah",
+            "hint": "Casual colloquial greeting — 'What is the word?'",
+            "example": "Wĩa? — What's the news / What's up? (Casual colloquial greeting — 'What is the word?')"
+          },
+          {
+            "target": "Wĩa mwau wa ũthukũ",
+            "source": "Good morning",
+            "pronunciation": "wee-ah mwah-oo wah oo-thoo-koo",
+            "hint": "Morning greeting",
+            "example": "Wĩa mwau wa ũthukũ — Good morning (Morning greeting)"
+          },
+          {
+            "target": "Nĩ vaa mũno",
+            "source": "Thank you",
+            "pronunciation": "nee vah-ah moo-noh",
+            "hint": "Expressing deep gratitude ('thank you very much')",
+            "example": "Nĩ vaa mũno — Thank you (Expressing deep gratitude ('thank you very much'))"
+          },
+          {
+            "target": "Tũonane",
+            "source": "Goodbye (we will meet)",
+            "pronunciation": "too-oh-nah-neh",
+            "hint": "Farewell — 'We will see each other again'",
+            "example": "Tũonane — Goodbye (we will meet) (Farewell — 'We will see each other again')"
+          },
+          {
+            "target": "Wĩa mũseo",
+            "source": "Welcome",
+            "pronunciation": "wee-ah moo-seh-oh",
+            "hint": "Welcoming a visitor or guest",
+            "example": "Wĩa mũseo — Welcome (Welcoming a visitor or guest)"
+          },
+          {
+            "target": "Mũyo",
+            "source": "Peace",
+            "pronunciation": "moo-yoh",
+            "hint": "Traditional blessing of peace, contentment and happiness",
+            "example": "Mũyo — Peace (Traditional blessing of peace, contentment and happiness)"
+          },
+          {
+            "target": "Sova / Pole",
+            "source": "Sorry",
+            "pronunciation": "soh-vah / poh-leh",
+            "hint": "Expression of empathy or comfort",
+            "example": "Sova / Pole — Sorry (Expression of empathy or comfort)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ũvoo?\" mean in English?",
+            "correctAnswer": "How are you?",
+            "options": [
+              "I am fine",
+              "Hello / Salutation",
+              "What's the news / What's up?",
+              "How are you?"
+            ],
+            "hint": "Standard greeting — literally 'News?'"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Nĩ mũseo\" mean in English?",
+            "correctAnswer": "I am fine",
+            "options": [
+              "Hello / Salutation",
+              "What's the news / What's up?",
+              "I am fine",
+              "How are you?"
+            ],
+            "hint": "Standard reply meaning 'I am well / good'"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"O voo\" mean in English?",
+            "correctAnswer": "Hello / Salutation",
+            "options": [
+              "What's the news / What's up?",
+              "Hello / Salutation",
+              "How are you?",
+              "I am fine"
+            ],
+            "hint": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Hello / Salutation\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "O voo",
+            "options": [
+              "O voo",
+              "Ũvoo?",
+              "Nĩ mũseo",
+              "Wĩa?"
+            ],
+            "hint": "oh voh"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"What's the news / What's up?\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Wĩa?",
+            "options": [
+              "Ũvoo?",
+              "Nĩ mũseo",
+              "O voo",
+              "Wĩa?"
+            ],
+            "hint": "wee-ah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Good morning\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Wĩa mwau wa ũthukũ",
+            "options": [
+              "Nĩ mũseo",
+              "O voo",
+              "Wĩa mwau wa ũthukũ",
+              "Ũvoo?"
+            ],
+            "hint": "wee-ah mwah-oo wah oo-thoo-koo"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Ũvoo?: How are you?, Nĩ mũseo: I am fine, O voo: Hello / Salutation, Wĩa?: What's the news / What's up?",
+            "pairs": [
+              {
+                "left": "Ũvoo?",
+                "right": "How are you?"
+              },
+              {
+                "left": "Nĩ mũseo",
+                "right": "I am fine"
+              },
+              {
+                "left": "O voo",
+                "right": "Hello / Salutation"
+              },
+              {
+                "left": "Wĩa?",
+                "right": "What's the news / What's up?"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"How are you?\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Ũvoo?",
+            "options": [
+              "Ũvoo?",
+              "Nĩ mũseo",
+              "O voo",
+              "Wĩa?"
+            ],
+            "hint": "oo-voh"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-7-numbers",
+    "title": "Unit 7: Numbers",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Numbers, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Hash",
+    "skills": [
+      {
+        "id": "kamba-exp-numbers",
+        "title": "Numbers",
+        "icon": "Hash",
+        "description": "Master Kamba (Kĩkamba) numbers vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Numbers, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ithano' (Five), 'Thanthantũ' (Six), 'Nyaanya' (Eight), 'Ĩkũmi na ĩmwe' (Eleven).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Ithano",
+            "source": "Five",
+            "pronunciation": "ee-thah-noh",
+            "hint": "Ulu dialect: itanu; Nganyawa dialect: kitanu",
+            "example": "Ithano — Five (Ulu dialect: itanu; Nganyawa dialect: kitanu)"
+          },
+          {
+            "target": "Thanthantũ",
+            "source": "Six",
+            "pronunciation": "thahn-thahn-too",
+            "hint": "Ulu dialect: thanthatu; Nganyawa dialect: thandatu",
+            "example": "Thanthantũ — Six (Ulu dialect: thanthatu; Nganyawa dialect: thandatu)"
+          },
+          {
+            "target": "Nyaanya",
+            "source": "Eight",
+            "pronunciation": "nyah-ah-nyah",
+            "hint": "Ulu dialect: nyanya; Nganyawa dialect: nanya",
+            "example": "Nyaanya — Eight (Ulu dialect: nyanya; Nganyawa dialect: nanya)"
+          },
+          {
+            "target": "Ĩkũmi na ĩmwe",
+            "source": "Eleven",
+            "pronunciation": "ee-koo-mee nah ee-mweh",
+            "hint": "Literally 'ten and one'",
+            "example": "Ĩkũmi na ĩmwe — Eleven (Literally 'ten and one')"
+          },
+          {
+            "target": "Mĩongo ĩlĩ",
+            "source": "Twenty",
+            "pronunciation": "mee-ohn-goh ee-lee",
+            "hint": "Hinde: miongoele ('two tens')",
+            "example": "Mĩongo ĩlĩ — Twenty (Hinde: miongoele ('two tens'))"
+          },
+          {
+            "target": "Mĩongo ĩtatũ",
+            "source": "Thirty",
+            "pronunciation": "mee-ohn-goh ee-tah-too",
+            "hint": "Three tens",
+            "example": "Mĩongo ĩtatũ — Thirty (Three tens)"
+          },
+          {
+            "target": "Mĩongo ĩnya",
+            "source": "Forty",
+            "pronunciation": "mee-ohn-goh ee-nyah",
+            "hint": "Ulu: miongo enna; Nganyawa: miongo inya",
+            "example": "Mĩongo ĩnya — Forty (Ulu: miongo enna; Nganyawa: miongo inya)"
+          },
+          {
+            "target": "Mĩongo ĩthano",
+            "source": "Fifty",
+            "pronunciation": "mee-ohn-goh ee-thah-noh",
+            "hint": "Five tens (Ulu: miongo itanu; Nganyawa: miongo kitanu)",
+            "example": "Mĩongo ĩthano — Fifty (Five tens (Ulu: miongo itanu; Nganyawa: miongo kitanu))"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ithano\" mean in English?",
+            "correctAnswer": "Five",
+            "options": [
+              "Six",
+              "Eight",
+              "Eleven",
+              "Five"
+            ],
+            "hint": "Ulu dialect: itanu; Nganyawa dialect: kitanu"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Thanthantũ\" mean in English?",
+            "correctAnswer": "Six",
+            "options": [
+              "Eight",
+              "Eleven",
+              "Six",
+              "Five"
+            ],
+            "hint": "Ulu dialect: thanthatu; Nganyawa dialect: thandatu"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Nyaanya\" mean in English?",
+            "correctAnswer": "Eight",
+            "options": [
+              "Eleven",
+              "Eight",
+              "Five",
+              "Six"
+            ],
+            "hint": "Ulu dialect: nyanya; Nganyawa dialect: nanya"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Eight\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Nyaanya",
+            "options": [
+              "Nyaanya",
+              "Ithano",
+              "Thanthantũ",
+              "Ĩkũmi na ĩmwe"
+            ],
+            "hint": "nyah-ah-nyah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Eleven\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ĩkũmi na ĩmwe",
+            "options": [
+              "Ithano",
+              "Thanthantũ",
+              "Nyaanya",
+              "Ĩkũmi na ĩmwe"
+            ],
+            "hint": "ee-koo-mee nah ee-mweh"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Twenty\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Mĩongo ĩlĩ",
+            "options": [
+              "Thanthantũ",
+              "Nyaanya",
+              "Mĩongo ĩlĩ",
+              "Ithano"
+            ],
+            "hint": "mee-ohn-goh ee-lee"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Ithano: Five, Thanthantũ: Six, Nyaanya: Eight, Ĩkũmi na ĩmwe: Eleven",
+            "pairs": [
+              {
+                "left": "Ithano",
+                "right": "Five"
+              },
+              {
+                "left": "Thanthantũ",
+                "right": "Six"
+              },
+              {
+                "left": "Nyaanya",
+                "right": "Eight"
+              },
+              {
+                "left": "Ĩkũmi na ĩmwe",
+                "right": "Eleven"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Five\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Ithano",
+            "options": [
+              "Ithano",
+              "Thanthantũ",
+              "Nyaanya",
+              "Ĩkũmi na ĩmwe"
+            ],
+            "hint": "ee-thah-noh"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-8-family",
+    "title": "Unit 8: Family & Relationships",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Family & Relationships, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Users",
+    "skills": [
+      {
+        "id": "kamba-exp-family",
+        "title": "Family & Relationships (Part 1)",
+        "icon": "Users",
+        "description": "Master Kamba (Kĩkamba) family & relationships vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Family & Relationships, pay special attention to pronunciation and morphological prefixes/suffixes: 'Asa / Tata' (Father), 'Mwaitũ / Ĩvaa' (Mother), 'Kaana' (Child), 'Kavĩsĩ' (Boy / Male youth).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Asa / Tata",
+            "source": "Father",
+            "pronunciation": "ah-sah / tah-tah",
+            "hint": "Dialects: Ulu uses 'Nau' or 'Asa'; Nganyawa uses 'Atsa' or 'Bata'",
+            "example": "Asa / Tata — Father (Dialects: Ulu uses 'Nau' or 'Asa'; Nganyawa uses 'Atsa' or 'Bata')"
+          },
+          {
+            "target": "Mwaitũ / Ĩvaa",
+            "source": "Mother",
+            "pronunciation": "mwah-ee-too / ee-vah",
+            "hint": "Hinde Ulu: 'Maiitu'; Nganyawa: 'Mwaitu'",
+            "example": "Mwaitũ / Ĩvaa — Mother (Hinde Ulu: 'Maiitu'; Nganyawa: 'Mwaitu')"
+          },
+          {
+            "target": "Kaana",
+            "source": "Child",
+            "pronunciation": "kah-ah-nah",
+            "hint": "Plural: Twana (children)",
+            "example": "Kaana — Child (Plural: Twana (children))"
+          },
+          {
+            "target": "Kavĩsĩ",
+            "source": "Boy / Male youth",
+            "pronunciation": "kah-vee-see",
+            "hint": "Hinde Ulu: kabisi; Plural: Syavĩsĩ",
+            "example": "Kavĩsĩ — Boy / Male youth (Hinde Ulu: kabisi; Plural: Syavĩsĩ)"
+          },
+          {
+            "target": "Kelĩtu",
+            "source": "Girl / Maiden",
+            "pronunciation": "keh-lee-too",
+            "hint": "Hinde Ulu: kēlletu; Nganyawa: kananga; Plural: Twelĩtu",
+            "example": "Kelĩtu — Girl / Maiden (Hinde Ulu: kēlletu; Nganyawa: kananga; Plural: Twelĩtu)"
+          },
+          {
+            "target": "Mũndũ mũme",
+            "source": "Man / Male",
+            "pronunciation": "moon-doo moo-meh",
+            "hint": "Plural: Andũ aume (Hinde: mundu mumiu / mume)",
+            "example": "Mũndũ mũme — Man / Male (Plural: Andũ aume (Hinde: mundu mumiu / mume))"
+          },
+          {
+            "target": "Mũndũ mũka",
+            "source": "Woman / Female",
+            "pronunciation": "moon-doo moo-kah",
+            "hint": "Plural: Andũ aka (Hinde Ulu: mundu muka; Nganyawa: manamuka)",
+            "example": "Mũndũ mũka — Woman / Female (Plural: Andũ aka (Hinde Ulu: mundu muka; Nganyawa: manamuka))"
+          },
+          {
+            "target": "Mũtumia",
+            "source": "Elder",
+            "pronunciation": "moo-too-mee-ah",
+            "hint": "Ulu: muku; Nganyawa: mtumia; Plural: Atumia",
+            "example": "Mũtumia — Elder (Ulu: muku; Nganyawa: mtumia; Plural: Atumia)"
+          },
+          {
+            "target": "Umau / Guka",
+            "source": "Grandfather",
+            "pronunciation": "oo-mah-oo / goo-kah",
+            "hint": "Ulu: umāā; Nganyawa: atza mnini",
+            "example": "Umau / Guka — Grandfather (Ulu: umāā; Nganyawa: atza mnini)"
+          },
+          {
+            "target": "Mwaitũ mũkũũ / Ũsũũ",
+            "source": "Grandmother",
+            "pronunciation": "mwah-ee-too moo-koo-oo / oo-soo-oo",
+            "hint": "Respectful elder mother; Hinde: inya",
+            "example": "Mwaitũ mũkũũ / Ũsũũ — Grandmother (Respectful elder mother; Hinde: inya)"
+          },
+          {
+            "target": "Mwananyanya",
+            "source": "Brother",
+            "pronunciation": "mwah-nah-nyah-nyah",
+            "hint": "Ulu: nindu; Nganyawa: mwinai",
+            "example": "Mwananyanya — Brother (Ulu: nindu; Nganyawa: mwinai)"
+          },
+          {
+            "target": "Mwĩtu wa mwaitũ",
+            "source": "Sister",
+            "pronunciation": "mwee-too wah mwah-ee-too",
+            "hint": "Literally 'daughter of our mother'; Hinde: mwtiaiya",
+            "example": "Mwĩtu wa mwaitũ — Sister (Literally 'daughter of our mother'; Hinde: mwtiaiya)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Asa / Tata\" mean in English?",
+            "correctAnswer": "Father",
+            "options": [
+              "Mother",
+              "Child",
+              "Boy / Male youth",
+              "Father"
+            ],
+            "hint": "Dialects: Ulu uses 'Nau' or 'Asa'; Nganyawa uses 'Atsa' or 'Bata'"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mwaitũ / Ĩvaa\" mean in English?",
+            "correctAnswer": "Mother",
+            "options": [
+              "Child",
+              "Boy / Male youth",
+              "Mother",
+              "Father"
+            ],
+            "hint": "Hinde Ulu: 'Maiitu'; Nganyawa: 'Mwaitu'"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kaana\" mean in English?",
+            "correctAnswer": "Child",
+            "options": [
+              "Boy / Male youth",
+              "Child",
+              "Father",
+              "Mother"
+            ],
+            "hint": "Plural: Twana (children)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Child\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kaana",
+            "options": [
+              "Kaana",
+              "Asa / Tata",
+              "Mwaitũ / Ĩvaa",
+              "Kavĩsĩ"
+            ],
+            "hint": "kah-ah-nah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Boy / Male youth\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kavĩsĩ",
+            "options": [
+              "Asa / Tata",
+              "Mwaitũ / Ĩvaa",
+              "Kaana",
+              "Kavĩsĩ"
+            ],
+            "hint": "kah-vee-see"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Girl / Maiden\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kelĩtu",
+            "options": [
+              "Mwaitũ / Ĩvaa",
+              "Kaana",
+              "Kelĩtu",
+              "Asa / Tata"
+            ],
+            "hint": "keh-lee-too"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Asa / Tata: Father, Mwaitũ / Ĩvaa: Mother, Kaana: Child, Kavĩsĩ: Boy / Male youth",
+            "pairs": [
+              {
+                "left": "Asa / Tata",
+                "right": "Father"
+              },
+              {
+                "left": "Mwaitũ / Ĩvaa",
+                "right": "Mother"
+              },
+              {
+                "left": "Kaana",
+                "right": "Child"
+              },
+              {
+                "left": "Kavĩsĩ",
+                "right": "Boy / Male youth"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Father\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Asa / Tata",
+            "options": [
+              "Asa / Tata",
+              "Mwaitũ / Ĩvaa",
+              "Kaana",
+              "Kavĩsĩ"
+            ],
+            "hint": "ah-sah / tah-tah"
+          }
+        ]
+      },
+      {
+        "id": "kamba-exp-family-2",
+        "title": "Family & Relationships (Part 2)",
+        "icon": "Users",
+        "description": "Master Kamba (Kĩkamba) family & relationships vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Family & Relationships, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mũnyanya' (Friend), 'Mũme' (Husband), 'Mũtanya' (Judge / Arbitrator), 'Mũtongoi' (Guide / Caravan leader).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Mũnyanya",
+            "source": "Friend",
+            "pronunciation": "moo-nyah-nyah",
+            "hint": "Ulu: nendu; Nganyawa: mnyanya",
+            "example": "Mũnyanya — Friend (Ulu: nendu; Nganyawa: mnyanya)"
+          },
+          {
+            "target": "Mũme",
+            "source": "Husband",
+            "pronunciation": "moo-meh",
+            "hint": "Hinde: mume akwa ('my husband')",
+            "example": "Mũme — Husband (Hinde: mume akwa ('my husband'))"
+          },
+          {
+            "target": "Mũtanya",
+            "source": "Judge / Arbitrator",
+            "pronunciation": "moo-tahn-yah",
+            "hint": "Plural: Atanya. Historical judicial council arbitrator recorded by J.T. Last (1885)",
+            "example": "Mũtanya — Judge / Arbitrator (Plural: Atanya. Historical judicial council arbitrator recorded by J.T. Last (1885))"
+          },
+          {
+            "target": "Mũtongoi",
+            "source": "Guide / Caravan leader",
+            "pronunciation": "moo-toh-ngoh-ee",
+            "hint": "Plural: Atongoi. Pathfinder or caravan leader recorded by J.T. Last (1885)",
+            "example": "Mũtongoi — Guide / Caravan leader (Plural: Atongoi. Pathfinder or caravan leader recorded by J.T. Last (1885))"
+          },
+          {
+            "target": "Mwĩmi",
+            "source": "Farmer / Agriculturist",
+            "pronunciation": "mwee-mee",
+            "hint": "Plural: Aimi. Cultivator of the land recorded by J.T. Last (1885): mwimi / aimi",
+            "example": "Mwĩmi — Farmer / Agriculturist (Plural: Aimi. Cultivator of the land recorded by J.T. Last (1885): mwimi / aimi)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          },
+          {
+            "target": "Mũndũ mũka nũũkua kĩw'ũ na mbisu.",
+            "source": "The woman is carrying water with a pot."
+          },
+          {
+            "target": "Mũũnda witũ wĩ na mbemba mbingĩ.",
+            "source": "Our farm has plenty of maize."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mũnyanya\" mean in English?",
+            "correctAnswer": "Friend",
+            "options": [
+              "Husband",
+              "Judge / Arbitrator",
+              "Guide / Caravan leader",
+              "Friend"
+            ],
+            "hint": "Ulu: nendu; Nganyawa: mnyanya"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mũme\" mean in English?",
+            "correctAnswer": "Husband",
+            "options": [
+              "Judge / Arbitrator",
+              "Guide / Caravan leader",
+              "Husband",
+              "Friend"
+            ],
+            "hint": "Hinde: mume akwa ('my husband')"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mũtanya\" mean in English?",
+            "correctAnswer": "Judge / Arbitrator",
+            "options": [
+              "Guide / Caravan leader",
+              "Judge / Arbitrator",
+              "Friend",
+              "Husband"
+            ],
+            "hint": "Plural: Atanya. Historical judicial council arbitrator recorded by J.T. Last (1885)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Judge / Arbitrator\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Mũtanya",
+            "options": [
+              "Mũtanya",
+              "Mũnyanya",
+              "Mũme",
+              "Mũtongoi"
+            ],
+            "hint": "moo-tahn-yah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Guide / Caravan leader\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Mũtongoi",
+            "options": [
+              "Mũnyanya",
+              "Mũme",
+              "Mũtanya",
+              "Mũtongoi"
+            ],
+            "hint": "moo-toh-ngoh-ee"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Farmer / Agriculturist\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Mwĩmi",
+            "options": [
+              "Mũme",
+              "Mũtanya",
+              "Mwĩmi",
+              "Mũnyanya"
+            ],
+            "hint": "mwee-mee"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Mũnyanya: Friend, Mũme: Husband, Mũtanya: Judge / Arbitrator, Mũtongoi: Guide / Caravan leader",
+            "pairs": [
+              {
+                "left": "Mũnyanya",
+                "right": "Friend"
+              },
+              {
+                "left": "Mũme",
+                "right": "Husband"
+              },
+              {
+                "left": "Mũtanya",
+                "right": "Judge / Arbitrator"
+              },
+              {
+                "left": "Mũtongoi",
+                "right": "Guide / Caravan leader"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Friend\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Mũnyanya",
+            "options": [
+              "Mũnyanya",
+              "Mũme",
+              "Mũtanya",
+              "Mũtongoi"
+            ],
+            "hint": "moo-nyah-nyah"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-9-nature",
+    "title": "Unit 9: Nature & Environment",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Nature & Environment, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Sun",
+    "skills": [
+      {
+        "id": "kamba-exp-nature",
+        "title": "Nature & Environment (Part 1)",
+        "icon": "Sun",
+        "description": "Master Kamba (Kĩkamba) nature & environment vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Syũa' (Sun), 'Mwei' (Moon), 'Ndata' (Star), 'Ĩtu' (Sky / Cloud).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Syũa",
+            "source": "Sun",
+            "pronunciation": "syoo-ah",
+            "hint": "Hinde Ulu: sua; Nganyawa: djua / thua",
+            "example": "Syũa — Sun (Hinde Ulu: sua; Nganyawa: djua / thua)"
+          },
+          {
+            "target": "Mwei",
+            "source": "Moon",
+            "pronunciation": "mweh-ee",
+            "hint": "Hinde Ulu: mwei; Nganyawa: mbui; also means month",
+            "example": "Mwei — Moon (Hinde Ulu: mwei; Nganyawa: mbui; also means month)"
+          },
+          {
+            "target": "Ndata",
+            "source": "Star",
+            "pronunciation": "n-dah-tah",
+            "hint": "Night sky star (Hinde: ndata)",
+            "example": "Ndata — Star (Night sky star (Hinde: ndata))"
+          },
+          {
+            "target": "Ĩtu",
+            "source": "Sky / Cloud",
+            "pronunciation": "ee-too",
+            "hint": "Plural: Matu (clouds); Ulu: mwingo; Nganyawa: edu",
+            "example": "Ĩtu — Sky / Cloud (Plural: Matu (clouds); Ulu: mwingo; Nganyawa: edu)"
+          },
+          {
+            "target": "Mbua",
+            "source": "Rain",
+            "pronunciation": "m-boo-ah",
+            "hint": "Vital seasonal rains in Ukambani (Hinde: mbua)",
+            "example": "Mbua — Rain (Vital seasonal rains in Ukambani (Hinde: mbua))"
+          },
+          {
+            "target": "Mbevo",
+            "source": "Wind",
+            "pronunciation": "m-beh-voh",
+            "hint": "Hinde: mbebo (wind, breeze, or atmospheric cold)",
+            "example": "Mbevo — Wind (Hinde: mbebo (wind, breeze, or atmospheric cold))"
+          },
+          {
+            "target": "Ũsĩ",
+            "source": "River",
+            "pronunciation": "oo-see",
+            "hint": "Hinde Ulu: ussi; Nganyawa: udzi",
+            "example": "Ũsĩ — River (Hinde Ulu: ussi; Nganyawa: udzi)"
+          },
+          {
+            "target": "Nyekĩ",
+            "source": "Grass",
+            "pronunciation": "nyeh-kee",
+            "hint": "Hinde Ulu: nyekki; Nganyawa: mathangu",
+            "example": "Nyekĩ — Grass (Hinde Ulu: nyekki; Nganyawa: mathangu)"
+          },
+          {
+            "target": "Mwaki",
+            "source": "Fire",
+            "pronunciation": "mwah-kee",
+            "hint": "Hinde Ulu: iko; Nganyawa: mwadgi / djuki",
+            "example": "Mwaki — Fire (Hinde Ulu: iko; Nganyawa: mwadgi / djuki)"
+          },
+          {
+            "target": "Manzĩ",
+            "source": "Water",
+            "pronunciation": "mahn-zee",
+            "hint": "Hinde: maanzi",
+            "example": "Manzĩ — Water (Hinde: maanzi)"
+          },
+          {
+            "target": "Nthĩ",
+            "source": "Soil / Earth / Ground",
+            "pronunciation": "n-thee",
+            "hint": "Hinde Ulu: panthi; Nganyawa: itheo",
+            "example": "Nthĩ — Soil / Earth / Ground (Hinde Ulu: panthi; Nganyawa: itheo)"
+          },
+          {
+            "target": "Ĩvia",
+            "source": "Stone",
+            "pronunciation": "ee-vee-ah",
+            "hint": "Plural: Mavia (Hinde: ibia, pl. mavia)",
+            "example": "Ĩvia — Stone (Plural: Mavia (Hinde: ibia, pl. mavia))"
+          },
+          {
+            "target": "Mwamba",
+            "source": "Baobab tree",
+            "pronunciation": "mwahm-bah",
+            "hint": "Iconic Ukambani dryland tree (Hinde: mwamba)",
+            "example": "Mwamba — Baobab tree (Iconic Ukambani dryland tree (Hinde: mwamba))"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Syũa\" mean in English?",
+            "correctAnswer": "Sun",
+            "options": [
+              "Moon",
+              "Star",
+              "Sky / Cloud",
+              "Sun"
+            ],
+            "hint": "Hinde Ulu: sua; Nganyawa: djua / thua"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mwei\" mean in English?",
+            "correctAnswer": "Moon",
+            "options": [
+              "Star",
+              "Sky / Cloud",
+              "Moon",
+              "Sun"
+            ],
+            "hint": "Hinde Ulu: mwei; Nganyawa: mbui; also means month"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ndata\" mean in English?",
+            "correctAnswer": "Star",
+            "options": [
+              "Sky / Cloud",
+              "Star",
+              "Sun",
+              "Moon"
+            ],
+            "hint": "Night sky star (Hinde: ndata)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Star\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ndata",
+            "options": [
+              "Ndata",
+              "Syũa",
+              "Mwei",
+              "Ĩtu"
+            ],
+            "hint": "n-dah-tah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Sky / Cloud\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ĩtu",
+            "options": [
+              "Syũa",
+              "Mwei",
+              "Ndata",
+              "Ĩtu"
+            ],
+            "hint": "ee-too"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Rain\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Mbua",
+            "options": [
+              "Mwei",
+              "Ndata",
+              "Mbua",
+              "Syũa"
+            ],
+            "hint": "m-boo-ah"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Syũa: Sun, Mwei: Moon, Ndata: Star, Ĩtu: Sky / Cloud",
+            "pairs": [
+              {
+                "left": "Syũa",
+                "right": "Sun"
+              },
+              {
+                "left": "Mwei",
+                "right": "Moon"
+              },
+              {
+                "left": "Ndata",
+                "right": "Star"
+              },
+              {
+                "left": "Ĩtu",
+                "right": "Sky / Cloud"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Sun\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Syũa",
+            "options": [
+              "Syũa",
+              "Mwei",
+              "Ndata",
+              "Ĩtu"
+            ],
+            "hint": "syoo-ah"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-10-animals",
+    "title": "Unit 10: Animals & Wildlife",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Animals & Wildlife, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Compass",
+    "skills": [
+      {
+        "id": "kamba-exp-animals",
+        "title": "Animals & Wildlife (Part 1)",
+        "icon": "Compass",
+        "description": "Master Kamba (Kĩkamba) animals & wildlife vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ng'ombe' (Cow / Cattle), 'Nzao' (Bull), 'Mbuĩ' (Goat), 'Ĩlondu' (Sheep).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Ng'ombe",
+            "source": "Cow / Cattle",
+            "pronunciation": "n-gohm-beh",
+            "hint": "Domestic cattle (Hinde: ngombe)",
+            "example": "Ng'ombe — Cow / Cattle (Domestic cattle (Hinde: ngombe))"
+          },
+          {
+            "target": "Nzao",
+            "source": "Bull",
+            "pronunciation": "n-zah-oh",
+            "hint": "Hinde: nzao",
+            "example": "Nzao — Bull (Hinde: nzao)"
+          },
+          {
+            "target": "Mbuĩ",
+            "source": "Goat",
+            "pronunciation": "m-boo-ee",
+            "hint": "Plural: Mbuĩ (Hinde: mbuii)",
+            "example": "Mbuĩ — Goat (Plural: Mbuĩ (Hinde: mbuii))"
+          },
+          {
+            "target": "Ĩlondu",
+            "source": "Sheep",
+            "pronunciation": "ee-lohn-doo",
+            "hint": "Hinde Ulu: ilondu; Nganyawa: ngoondu",
+            "example": "Ĩlondu — Sheep (Hinde Ulu: ilondu; Nganyawa: ngoondu)"
+          },
+          {
+            "target": "Kĩtĩ / Ngiti",
+            "source": "Dog",
+            "pronunciation": "kee-tee / n-gee-tee",
+            "hint": "Hinde Ulu: solu; Nganyawa: ngiti",
+            "example": "Kĩtĩ / Ngiti — Dog (Hinde Ulu: solu; Nganyawa: ngiti)"
+          },
+          {
+            "target": "Nyũnyi",
+            "source": "Bird",
+            "pronunciation": "nyoo-nyee",
+            "hint": "Hinde Ulu: mbuungu; Nganyawa: nyunni",
+            "example": "Nyũnyi — Bird (Hinde Ulu: mbuungu; Nganyawa: nyunni)"
+          },
+          {
+            "target": "Nzũkĩ",
+            "source": "Bee",
+            "pronunciation": "n-zoo-kee",
+            "hint": "Hinde Ulu: nsuki / kinyu; Nganyawa: nzuki",
+            "example": "Nzũkĩ — Bee (Hinde Ulu: nsuki / kinyu; Nganyawa: nzuki)"
+          },
+          {
+            "target": "Nzowũ",
+            "source": "Elephant",
+            "pronunciation": "n-zoh-woo",
+            "hint": "Hinde: unzōō",
+            "example": "Nzowũ — Elephant (Hinde: unzōō)"
+          },
+          {
+            "target": "Mũnyambo",
+            "source": "Lion",
+            "pronunciation": "moo-nyahm-boh",
+            "hint": "Hinde Ulu: munyambo; Nganyawa: thimba",
+            "example": "Mũnyambo — Lion (Hinde Ulu: munyambo; Nganyawa: thimba)"
+          },
+          {
+            "target": "Ngo",
+            "source": "Leopard",
+            "pronunciation": "n-goh",
+            "hint": "Hinde Ulu: ngoo; Nganyawa: engo",
+            "example": "Ngo — Leopard (Hinde Ulu: ngoo; Nganyawa: engo)"
+          },
+          {
+            "target": "Mbĩtĩ",
+            "source": "Hyena",
+            "pronunciation": "m-bee-tee",
+            "hint": "Hinde: mbiti",
+            "example": "Mbĩtĩ — Hyena (Hinde: mbiti)"
+          },
+          {
+            "target": "Mbogo / Nyaĩ",
+            "source": "Buffalo",
+            "pronunciation": "m-boh-goh / nyah-ee",
+            "hint": "Hinde Ulu: niai; Nganyawa: mbo",
+            "example": "Mbogo / Nyaĩ — Buffalo (Hinde Ulu: niai; Nganyawa: mbo)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ng'ombe\" mean in English?",
+            "correctAnswer": "Cow / Cattle",
+            "options": [
+              "Bull",
+              "Goat",
+              "Sheep",
+              "Cow / Cattle"
+            ],
+            "hint": "Domestic cattle (Hinde: ngombe)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Nzao\" mean in English?",
+            "correctAnswer": "Bull",
+            "options": [
+              "Goat",
+              "Sheep",
+              "Bull",
+              "Cow / Cattle"
+            ],
+            "hint": "Hinde: nzao"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mbuĩ\" mean in English?",
+            "correctAnswer": "Goat",
+            "options": [
+              "Sheep",
+              "Goat",
+              "Cow / Cattle",
+              "Bull"
+            ],
+            "hint": "Plural: Mbuĩ (Hinde: mbuii)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Goat\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Mbuĩ",
+            "options": [
+              "Mbuĩ",
+              "Ng'ombe",
+              "Nzao",
+              "Ĩlondu"
+            ],
+            "hint": "m-boo-ee"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Sheep\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ĩlondu",
+            "options": [
+              "Ng'ombe",
+              "Nzao",
+              "Mbuĩ",
+              "Ĩlondu"
+            ],
+            "hint": "ee-lohn-doo"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Dog\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kĩtĩ / Ngiti",
+            "options": [
+              "Nzao",
+              "Mbuĩ",
+              "Kĩtĩ / Ngiti",
+              "Ng'ombe"
+            ],
+            "hint": "kee-tee / n-gee-tee"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Ng'ombe: Cow / Cattle, Nzao: Bull, Mbuĩ: Goat, Ĩlondu: Sheep",
+            "pairs": [
+              {
+                "left": "Ng'ombe",
+                "right": "Cow / Cattle"
+              },
+              {
+                "left": "Nzao",
+                "right": "Bull"
+              },
+              {
+                "left": "Mbuĩ",
+                "right": "Goat"
+              },
+              {
+                "left": "Ĩlondu",
+                "right": "Sheep"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Cow / Cattle\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Ng'ombe",
+            "options": [
+              "Ng'ombe",
+              "Nzao",
+              "Mbuĩ",
+              "Ĩlondu"
+            ],
+            "hint": "n-gohm-beh"
+          }
+        ]
+      },
+      {
+        "id": "kamba-exp-animals-2",
+        "title": "Animals & Wildlife (Part 2)",
+        "icon": "Compass",
+        "description": "Master Kamba (Kĩkamba) animals & wildlife vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Nzaĩ' (Zebra), 'Ndia' (Giraffe), 'Kĩnyangĩ' (Crocodile), 'Ngũlĩ' (Baboon).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Nzaĩ",
+            "source": "Zebra",
+            "pronunciation": "n-zah-ee",
+            "hint": "Hinde Ulu: nzaii; Nganyawa: mbuvu",
+            "example": "Nzaĩ — Zebra (Hinde Ulu: nzaii; Nganyawa: mbuvu)"
+          },
+          {
+            "target": "Ndia",
+            "source": "Giraffe",
+            "pronunciation": "n-dee-ah",
+            "hint": "Hinde: ndia",
+            "example": "Ndia — Giraffe (Hinde: ndia)"
+          },
+          {
+            "target": "Kĩnyangĩ",
+            "source": "Crocodile",
+            "pronunciation": "kee-nyahn-gee",
+            "hint": "Hinde: kinyangi",
+            "example": "Kĩnyangĩ — Crocodile (Hinde: kinyangi)"
+          },
+          {
+            "target": "Ngũlĩ",
+            "source": "Baboon",
+            "pronunciation": "n-goo-lee",
+            "hint": "Hinde: ngulli",
+            "example": "Ngũlĩ — Baboon (Hinde: ngulli)"
+          },
+          {
+            "target": "Nzoka",
+            "source": "Snake",
+            "pronunciation": "n-zoh-kah",
+            "hint": "Hinde Ulu: enjoka; Nganyawa: mweanthi",
+            "example": "Nzoka — Snake (Hinde Ulu: enjoka; Nganyawa: mweanthi)"
+          },
+          {
+            "target": "Ĩkũyũ",
+            "source": "Fish",
+            "pronunciation": "ee-koo-yoo",
+            "hint": "Plural: Makũyũ (Hinde: ikuyu, pl. makuyu)",
+            "example": "Ĩkũyũ — Fish (Plural: Makũyũ (Hinde: ikuyu, pl. makuyu))"
+          },
+          {
+            "target": "Kavokoo",
+            "source": "Hare",
+            "pronunciation": "kah-voh-koh",
+            "hint": "Hinde: kabokō (folk trickster figure)",
+            "example": "Kavokoo — Hare (Hinde: kabokō (folk trickster figure))"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          },
+          {
+            "target": "Mũndũ mũka nũũkua kĩw'ũ na mbisu.",
+            "source": "The woman is carrying water with a pot."
+          },
+          {
+            "target": "Mũũnda witũ wĩ na mbemba mbingĩ.",
+            "source": "Our farm has plenty of maize."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Nzaĩ\" mean in English?",
+            "correctAnswer": "Zebra",
+            "options": [
+              "Giraffe",
+              "Crocodile",
+              "Baboon",
+              "Zebra"
+            ],
+            "hint": "Hinde Ulu: nzaii; Nganyawa: mbuvu"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ndia\" mean in English?",
+            "correctAnswer": "Giraffe",
+            "options": [
+              "Crocodile",
+              "Baboon",
+              "Giraffe",
+              "Zebra"
+            ],
+            "hint": "Hinde: ndia"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kĩnyangĩ\" mean in English?",
+            "correctAnswer": "Crocodile",
+            "options": [
+              "Baboon",
+              "Crocodile",
+              "Zebra",
+              "Giraffe"
+            ],
+            "hint": "Hinde: kinyangi"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Crocodile\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kĩnyangĩ",
+            "options": [
+              "Kĩnyangĩ",
+              "Nzaĩ",
+              "Ndia",
+              "Ngũlĩ"
+            ],
+            "hint": "kee-nyahn-gee"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Baboon\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ngũlĩ",
+            "options": [
+              "Nzaĩ",
+              "Ndia",
+              "Kĩnyangĩ",
+              "Ngũlĩ"
+            ],
+            "hint": "n-goo-lee"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Snake\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Nzoka",
+            "options": [
+              "Ndia",
+              "Kĩnyangĩ",
+              "Nzoka",
+              "Nzaĩ"
+            ],
+            "hint": "n-zoh-kah"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Nzaĩ: Zebra, Ndia: Giraffe, Kĩnyangĩ: Crocodile, Ngũlĩ: Baboon",
+            "pairs": [
+              {
+                "left": "Nzaĩ",
+                "right": "Zebra"
+              },
+              {
+                "left": "Ndia",
+                "right": "Giraffe"
+              },
+              {
+                "left": "Kĩnyangĩ",
+                "right": "Crocodile"
+              },
+              {
+                "left": "Ngũlĩ",
+                "right": "Baboon"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Zebra\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Nzaĩ",
+            "options": [
+              "Nzaĩ",
+              "Ndia",
+              "Kĩnyangĩ",
+              "Ngũlĩ"
+            ],
+            "hint": "n-zah-ee"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-11-food",
+    "title": "Unit 11: Food & Drink",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Food & Drink, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Utensils",
+    "skills": [
+      {
+        "id": "kamba-exp-food",
+        "title": "Food & Drink (Part 1)",
+        "icon": "Utensils",
+        "description": "Master Kamba (Kĩkamba) food & drink vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Food & Drink, pay special attention to pronunciation and morphological prefixes/suffixes: 'Lĩu / Ĩlya' (Food), 'Ĩya' (Milk), 'Nyama' (Meat), 'Mbemba' (Maize).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Lĩu / Ĩlya",
+            "source": "Food",
+            "pronunciation": "lee-oo / ee-lyah",
+            "hint": "Hinde Ulu: leū; Nganyawa: chakueer / kandu",
+            "example": "Lĩu / Ĩlya — Food (Hinde Ulu: leū; Nganyawa: chakueer / kandu)"
+          },
+          {
+            "target": "Ĩya",
+            "source": "Milk",
+            "pronunciation": "ee-yah",
+            "hint": "Fresh milk (Hinde: iya); sour/buttermilk: kalia",
+            "example": "Ĩya — Milk (Fresh milk (Hinde: iya); sour/buttermilk: kalia)"
+          },
+          {
+            "target": "Nyama",
+            "source": "Meat",
+            "pronunciation": "nyah-mah",
+            "hint": "Hinde Ulu: nyamma; Nganyawa: nama",
+            "example": "Nyama — Meat (Hinde Ulu: nyamma; Nganyawa: nama)"
+          },
+          {
+            "target": "Mbemba",
+            "source": "Maize",
+            "pronunciation": "m-behm-bah",
+            "hint": "Hinde: mbēmba",
+            "example": "Mbemba — Maize (Hinde: mbēmba)"
+          },
+          {
+            "target": "Nthoogo / Nthzũũ",
+            "source": "Beans (pigeon peas / pulses)",
+            "pronunciation": "n-thoh-goh / n-thzoo",
+            "hint": "Hinde: inthoogo; tree beans: nthzuu",
+            "example": "Nthoogo / Nthzũũ — Beans (pigeon peas / pulses) (Hinde: inthoogo; tree beans: nthzuu)"
+          },
+          {
+            "target": "Maĩyũ",
+            "source": "Banana",
+            "pronunciation": "mah-ee-yoo",
+            "hint": "Hinde: maĩyu",
+            "example": "Maĩyũ — Banana (Hinde: maĩyu)"
+          },
+          {
+            "target": "Makwasĩ",
+            "source": "Sweet potato",
+            "pronunciation": "mah-kwah-see",
+            "hint": "Hinde Ulu: makwasi; Nganyawa: makwatzi",
+            "example": "Makwasĩ — Sweet potato (Hinde Ulu: makwasi; Nganyawa: makwatzi)"
+          },
+          {
+            "target": "Wũkĩ",
+            "source": "Honey",
+            "pronunciation": "woo-kee",
+            "hint": "Renowned Ukambani honey (Hinde: ukki wa nzuki)",
+            "example": "Wũkĩ — Honey (Renowned Ukambani honey (Hinde: ukki wa nzuki))"
+          },
+          {
+            "target": "Mbeea",
+            "source": "Millet",
+            "pronunciation": "m-beh-eh-ah",
+            "hint": "Traditional drought-resistant grain (Hinde: mbīa)",
+            "example": "Mbeea — Millet (Traditional drought-resistant grain (Hinde: mbīa))"
+          },
+          {
+            "target": "Mũwa",
+            "source": "Sugar cane",
+            "pronunciation": "moo-wah",
+            "hint": "Hinde: iwa",
+            "example": "Mũwa — Sugar cane (Hinde: iwa)"
+          },
+          {
+            "target": "Mũnyũ",
+            "source": "Salt",
+            "pronunciation": "moo-nyoo",
+            "hint": "Hinde: munyu",
+            "example": "Mũnyũ — Salt (Hinde: munyu)"
+          },
+          {
+            "target": "Mauta",
+            "source": "Butter / Oil / Fat",
+            "pronunciation": "mah-oo-tah",
+            "hint": "Hinde: maota; clarified: mauta mavivia",
+            "example": "Mauta — Butter / Oil / Fat (Hinde: maota; clarified: mauta mavivia)"
+          },
+          {
+            "target": "Mũtu",
+            "source": "Flour",
+            "pronunciation": "moo-too",
+            "hint": "Milled grain flour (Hinde: mutu)",
+            "example": "Mũtu — Flour (Milled grain flour (Hinde: mutu))"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Lĩu / Ĩlya\" mean in English?",
+            "correctAnswer": "Food",
+            "options": [
+              "Milk",
+              "Meat",
+              "Maize",
+              "Food"
+            ],
+            "hint": "Hinde Ulu: leū; Nganyawa: chakueer / kandu"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ĩya\" mean in English?",
+            "correctAnswer": "Milk",
+            "options": [
+              "Meat",
+              "Maize",
+              "Milk",
+              "Food"
+            ],
+            "hint": "Fresh milk (Hinde: iya); sour/buttermilk: kalia"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Nyama\" mean in English?",
+            "correctAnswer": "Meat",
+            "options": [
+              "Maize",
+              "Meat",
+              "Food",
+              "Milk"
+            ],
+            "hint": "Hinde Ulu: nyamma; Nganyawa: nama"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Meat\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Nyama",
+            "options": [
+              "Nyama",
+              "Lĩu / Ĩlya",
+              "Ĩya",
+              "Mbemba"
+            ],
+            "hint": "nyah-mah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Maize\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Mbemba",
+            "options": [
+              "Lĩu / Ĩlya",
+              "Ĩya",
+              "Nyama",
+              "Mbemba"
+            ],
+            "hint": "m-behm-bah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Beans (pigeon peas / pulses)\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Nthoogo / Nthzũũ",
+            "options": [
+              "Ĩya",
+              "Nyama",
+              "Nthoogo / Nthzũũ",
+              "Lĩu / Ĩlya"
+            ],
+            "hint": "n-thoh-goh / n-thzoo"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Lĩu / Ĩlya: Food, Ĩya: Milk, Nyama: Meat, Mbemba: Maize",
+            "pairs": [
+              {
+                "left": "Lĩu / Ĩlya",
+                "right": "Food"
+              },
+              {
+                "left": "Ĩya",
+                "right": "Milk"
+              },
+              {
+                "left": "Nyama",
+                "right": "Meat"
+              },
+              {
+                "left": "Mbemba",
+                "right": "Maize"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Food\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Lĩu / Ĩlya",
+            "options": [
+              "Lĩu / Ĩlya",
+              "Ĩya",
+              "Nyama",
+              "Mbemba"
+            ],
+            "hint": "lee-oo / ee-lyah"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-12-body",
+    "title": "Unit 12: Body Parts",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Body Parts, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Heart",
+    "skills": [
+      {
+        "id": "kamba-exp-body",
+        "title": "Body Parts (Part 1)",
+        "icon": "Heart",
+        "description": "Master Kamba (Kĩkamba) body parts vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mwĩĩ' (Body), 'Mũtwe' (Head), 'Ĩtho' (Eye), 'Kũtũ' (Ear).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Mwĩĩ",
+            "source": "Body",
+            "pronunciation": "mwee-ee",
+            "hint": "Hinde Ulu: mwi; Nganyawa: mwili",
+            "example": "Mwĩĩ — Body (Hinde Ulu: mwi; Nganyawa: mwili)"
+          },
+          {
+            "target": "Mũtwe",
+            "source": "Head",
+            "pronunciation": "moo-tweh",
+            "hint": "Hinde: mutue",
+            "example": "Mũtwe — Head (Hinde: mutue)"
+          },
+          {
+            "target": "Ĩtho",
+            "source": "Eye",
+            "pronunciation": "ee-thoh",
+            "hint": "Plural: Meetho (Hinde: itho, pl. meetho)",
+            "example": "Ĩtho — Eye (Plural: Meetho (Hinde: itho, pl. meetho))"
+          },
+          {
+            "target": "Kũtũ",
+            "source": "Ear",
+            "pronunciation": "koo-too",
+            "hint": "Hinde Ulu: matu (pl); Nganyawa: kutu",
+            "example": "Kũtũ — Ear (Hinde Ulu: matu (pl); Nganyawa: kutu)"
+          },
+          {
+            "target": "Ĩnyũ",
+            "source": "Nose",
+            "pronunciation": "ee-nyoo",
+            "hint": "Hinde: inyu",
+            "example": "Ĩnyũ — Nose (Hinde: inyu)"
+          },
+          {
+            "target": "Mũomo",
+            "source": "Mouth",
+            "pronunciation": "moo-oh-moh",
+            "hint": "Hinde: moomo",
+            "example": "Mũomo — Mouth (Hinde: moomo)"
+          },
+          {
+            "target": "Ĩyo",
+            "source": "Tooth",
+            "pronunciation": "ee-yoh",
+            "hint": "Plural: Mayo (Hinde: maiyo)",
+            "example": "Ĩyo — Tooth (Plural: Mayo (Hinde: maiyo))"
+          },
+          {
+            "target": "Wĩmĩ / Kanywa",
+            "source": "Tongue",
+            "pronunciation": "wee-mee / kah-nywah",
+            "hint": "Hinde Ulu: kanyua; Nganyawa: wimi",
+            "example": "Wĩmĩ / Kanywa — Tongue (Hinde Ulu: kanyua; Nganyawa: wimi)"
+          },
+          {
+            "target": "Kĩng'ee",
+            "source": "Beard",
+            "pronunciation": "kee-ngeh-eh",
+            "hint": "Hinde Ulu: kingē; Nganyawa: kiaiu",
+            "example": "Kĩng'ee — Beard (Hinde Ulu: kingē; Nganyawa: kiaiu)"
+          },
+          {
+            "target": "Ngingo",
+            "source": "Neck",
+            "pronunciation": "n-geen-goh",
+            "hint": "Hinde Ulu: ngingo; Nganyawa: njingo",
+            "example": "Ngingo — Neck (Hinde Ulu: ngingo; Nganyawa: njingo)"
+          },
+          {
+            "target": "Kĩthũi",
+            "source": "Chest",
+            "pronunciation": "kee-thoo-ee",
+            "hint": "Hinde: kithui",
+            "example": "Kĩthũi — Chest (Hinde: kithui)"
+          },
+          {
+            "target": "Ngoo / Ndeĩ",
+            "source": "Heart",
+            "pronunciation": "n-goh-oh / n-deh-ee",
+            "hint": "Hinde Ulu: ndei; Nganyawa: ethaiyu",
+            "example": "Ngoo / Ndeĩ — Heart (Hinde Ulu: ndei; Nganyawa: ethaiyu)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mwĩĩ\" mean in English?",
+            "correctAnswer": "Body",
+            "options": [
+              "Head",
+              "Eye",
+              "Ear",
+              "Body"
+            ],
+            "hint": "Hinde Ulu: mwi; Nganyawa: mwili"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mũtwe\" mean in English?",
+            "correctAnswer": "Head",
+            "options": [
+              "Eye",
+              "Ear",
+              "Head",
+              "Body"
+            ],
+            "hint": "Hinde: mutue"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ĩtho\" mean in English?",
+            "correctAnswer": "Eye",
+            "options": [
+              "Ear",
+              "Eye",
+              "Body",
+              "Head"
+            ],
+            "hint": "Plural: Meetho (Hinde: itho, pl. meetho)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Eye\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ĩtho",
+            "options": [
+              "Ĩtho",
+              "Mwĩĩ",
+              "Mũtwe",
+              "Kũtũ"
+            ],
+            "hint": "ee-thoh"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Ear\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kũtũ",
+            "options": [
+              "Mwĩĩ",
+              "Mũtwe",
+              "Ĩtho",
+              "Kũtũ"
+            ],
+            "hint": "koo-too"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Nose\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ĩnyũ",
+            "options": [
+              "Mũtwe",
+              "Ĩtho",
+              "Ĩnyũ",
+              "Mwĩĩ"
+            ],
+            "hint": "ee-nyoo"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Mwĩĩ: Body, Mũtwe: Head, Ĩtho: Eye, Kũtũ: Ear",
+            "pairs": [
+              {
+                "left": "Mwĩĩ",
+                "right": "Body"
+              },
+              {
+                "left": "Mũtwe",
+                "right": "Head"
+              },
+              {
+                "left": "Ĩtho",
+                "right": "Eye"
+              },
+              {
+                "left": "Kũtũ",
+                "right": "Ear"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Body\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Mwĩĩ",
+            "options": [
+              "Mwĩĩ",
+              "Mũtwe",
+              "Ĩtho",
+              "Kũtũ"
+            ],
+            "hint": "mwee-ee"
+          }
+        ]
+      },
+      {
+        "id": "kamba-exp-body-2",
+        "title": "Body Parts (Part 2)",
+        "icon": "Heart",
+        "description": "Master Kamba (Kĩkamba) body parts vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ĩvũ' (Stomach / Belly), 'Mũongo' (Back), 'Kwoko' (Arm / Hand), 'Kũũ' (Leg / Foot).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Ĩvũ",
+            "source": "Stomach / Belly",
+            "pronunciation": "ee-voo",
+            "hint": "Hinde Ulu: ebŭ; Nganyawa: ibu",
+            "example": "Ĩvũ — Stomach / Belly (Hinde Ulu: ebŭ; Nganyawa: ibu)"
+          },
+          {
+            "target": "Mũongo",
+            "source": "Back",
+            "pronunciation": "moo-ohn-goh",
+            "hint": "Hinde Ulu: muongo; Nganyawa: moongo",
+            "example": "Mũongo — Back (Hinde Ulu: muongo; Nganyawa: moongo)"
+          },
+          {
+            "target": "Kwoko",
+            "source": "Arm / Hand",
+            "pronunciation": "kwoh-koh",
+            "hint": "Hinde Ulu: kuoko; Nganyawa: ntha; Plural: Moko",
+            "example": "Kwoko — Arm / Hand (Hinde Ulu: kuoko; Nganyawa: ntha; Plural: Moko)"
+          },
+          {
+            "target": "Kũũ",
+            "source": "Leg / Foot",
+            "pronunciation": "koo-oo",
+            "hint": "Hinde: kuu; Plural: Maũ",
+            "example": "Kũũ — Leg / Foot (Hinde: kuu; Plural: Maũ)"
+          },
+          {
+            "target": "Ĩvĩndĩ",
+            "source": "Bone",
+            "pronunciation": "ee-veen-dee",
+            "hint": "Plural: Mavĩndĩ (Hinde: ivindi, pl. mavindi)",
+            "example": "Ĩvĩndĩ — Bone (Plural: Mavĩndĩ (Hinde: ivindi, pl. mavindi))"
+          },
+          {
+            "target": "Nthakame",
+            "source": "Blood",
+            "pronunciation": "n-thah-kah-meh",
+            "hint": "Hinde Ulu: nthakame; Nganyawa: ndagami",
+            "example": "Nthakame — Blood (Hinde Ulu: nthakame; Nganyawa: ndagami)"
+          },
+          {
+            "target": "Kya",
+            "source": "Finger",
+            "pronunciation": "kyah",
+            "hint": "Plural: Syĩa / Thia (Hinde: kia, pl. thia)",
+            "example": "Kya — Finger (Plural: Syĩa / Thia (Hinde: kia, pl. thia))"
+          },
+          {
+            "target": "Ĩu",
+            "source": "Knee",
+            "pronunciation": "ee-oo",
+            "hint": "Hinde: iyu; Plural: Mau",
+            "example": "Ĩu — Knee (Hinde: iyu; Plural: Mau)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          },
+          {
+            "target": "Mũndũ mũka nũũkua kĩw'ũ na mbisu.",
+            "source": "The woman is carrying water with a pot."
+          },
+          {
+            "target": "Mũũnda witũ wĩ na mbemba mbingĩ.",
+            "source": "Our farm has plenty of maize."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ĩvũ\" mean in English?",
+            "correctAnswer": "Stomach / Belly",
+            "options": [
+              "Back",
+              "Arm / Hand",
+              "Leg / Foot",
+              "Stomach / Belly"
+            ],
+            "hint": "Hinde Ulu: ebŭ; Nganyawa: ibu"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mũongo\" mean in English?",
+            "correctAnswer": "Back",
+            "options": [
+              "Arm / Hand",
+              "Leg / Foot",
+              "Back",
+              "Stomach / Belly"
+            ],
+            "hint": "Hinde Ulu: muongo; Nganyawa: moongo"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kwoko\" mean in English?",
+            "correctAnswer": "Arm / Hand",
+            "options": [
+              "Leg / Foot",
+              "Arm / Hand",
+              "Stomach / Belly",
+              "Back"
+            ],
+            "hint": "Hinde Ulu: kuoko; Nganyawa: ntha; Plural: Moko"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Arm / Hand\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kwoko",
+            "options": [
+              "Kwoko",
+              "Ĩvũ",
+              "Mũongo",
+              "Kũũ"
+            ],
+            "hint": "kwoh-koh"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Leg / Foot\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kũũ",
+            "options": [
+              "Ĩvũ",
+              "Mũongo",
+              "Kwoko",
+              "Kũũ"
+            ],
+            "hint": "koo-oo"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Bone\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ĩvĩndĩ",
+            "options": [
+              "Mũongo",
+              "Kwoko",
+              "Ĩvĩndĩ",
+              "Ĩvũ"
+            ],
+            "hint": "ee-veen-dee"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Ĩvũ: Stomach / Belly, Mũongo: Back, Kwoko: Arm / Hand, Kũũ: Leg / Foot",
+            "pairs": [
+              {
+                "left": "Ĩvũ",
+                "right": "Stomach / Belly"
+              },
+              {
+                "left": "Mũongo",
+                "right": "Back"
+              },
+              {
+                "left": "Kwoko",
+                "right": "Arm / Hand"
+              },
+              {
+                "left": "Kũũ",
+                "right": "Leg / Foot"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Stomach / Belly\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Ĩvũ",
+            "options": [
+              "Ĩvũ",
+              "Mũongo",
+              "Kwoko",
+              "Kũũ"
+            ],
+            "hint": "ee-voo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-13-tools",
+    "title": "Unit 13: Tools & Household Objects",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Tools & Household Objects, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Wrench",
+    "skills": [
+      {
+        "id": "kamba-exp-tools",
+        "title": "Tools & Household Objects (Part 1)",
+        "icon": "Wrench",
+        "description": "Master Kamba (Kĩkamba) tools & household objects vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Tools & Household Objects, pay special attention to pronunciation and morphological prefixes/suffixes: 'Kaviu' (Knife), 'Mũsye' (Arrow), 'Thyaka' (Quiver (for arrows)), 'Ĩtũmũ' (Spear).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Kaviu",
+            "source": "Knife",
+            "pronunciation": "kah-vee-oo",
+            "hint": "Hinde Ulu: kabiu; Nganyawa: kaviu",
+            "example": "Kaviu — Knife (Hinde Ulu: kabiu; Nganyawa: kaviu)"
+          },
+          {
+            "target": "Mũsye",
+            "source": "Arrow",
+            "pronunciation": "moo-syeh",
+            "hint": "Hinde Ulu: musie; Nganyawa: mutchi",
+            "example": "Mũsye — Arrow (Hinde Ulu: musie; Nganyawa: mutchi)"
+          },
+          {
+            "target": "Thyaka",
+            "source": "Quiver (for arrows)",
+            "pronunciation": "thyah-kah",
+            "hint": "Hinde Ulu: thiaka; Nganyawa: ithiaga",
+            "example": "Thyaka — Quiver (for arrows) (Hinde Ulu: thiaka; Nganyawa: ithiaga)"
+          },
+          {
+            "target": "Ĩtũmũ",
+            "source": "Spear",
+            "pronunciation": "ee-too-moo",
+            "hint": "Hinde: itumu",
+            "example": "Ĩtũmũ — Spear (Hinde: itumu)"
+          },
+          {
+            "target": "Ngao",
+            "source": "Shield",
+            "pronunciation": "n-gah-oh",
+            "hint": "Hinde: ningau",
+            "example": "Ngao — Shield (Hinde: ningau)"
+          },
+          {
+            "target": "Ĩthoka",
+            "source": "Axe",
+            "pronunciation": "ee-thoh-kah",
+            "hint": "Plural: Mathoka (Hinde: ithoka, pl. mathoka)",
+            "example": "Ĩthoka — Axe (Plural: Mathoka (Hinde: ithoka, pl. mathoka))"
+          },
+          {
+            "target": "Chõõndo / Ngũsũ",
+            "source": "Traditional woven bag",
+            "pronunciation": "chohn-doh / n-goo-soo",
+            "hint": "Hinde Ulu: ngussu; Nganyawa: chõõndo; famous sisal woven bag",
+            "example": "Chõõndo / Ngũsũ — Traditional woven bag (Hinde Ulu: ngussu; Nganyawa: chõõndo; famous sisal woven bag)"
+          },
+          {
+            "target": "Kĩvĩla / Kĩtũmbĩ",
+            "source": "Stool / Chair",
+            "pronunciation": "kee-vee-lah / kee-toom-bee",
+            "hint": "Hinde Ulu: kibilla; Nganyawa: kitumbi",
+            "example": "Kĩvĩla / Kĩtũmbĩ — Stool / Chair (Hinde Ulu: kibilla; Nganyawa: kitumbi)"
+          },
+          {
+            "target": "Nyũngũ",
+            "source": "Clay cooking pot",
+            "pronunciation": "nyoon-goo",
+            "hint": "Hinde Ulu: nuungu; Nganyawa: ithillia / mbiitziu",
+            "example": "Nyũngũ — Clay cooking pot (Hinde Ulu: nuungu; Nganyawa: ithillia / mbiitziu)"
+          },
+          {
+            "target": "Kĩkũũ / Kĩthanzya",
+            "source": "Calabash / Gourd",
+            "pronunciation": "kee-koo-oo / kee-thahn-zyah",
+            "hint": "Hinde Ulu: kikuu; Nganyawa: kithalzia",
+            "example": "Kĩkũũ / Kĩthanzya — Calabash / Gourd (Hinde Ulu: kikuu; Nganyawa: kithalzia)"
+          },
+          {
+            "target": "Mwatũ",
+            "source": "Beehive",
+            "pronunciation": "mwah-too",
+            "hint": "Hinde: mwatu; traditional hollow log hive hung in trees",
+            "example": "Mwatũ — Beehive (Hinde: mwatu; traditional hollow log hive hung in trees)"
+          },
+          {
+            "target": "Kĩatũ",
+            "source": "Sandal",
+            "pronunciation": "kee-ah-too",
+            "hint": "Plural: Iatũ (Hinde: kiatu, pl. iatu)",
+            "example": "Kĩatũ — Sandal (Plural: Iatũ (Hinde: kiatu, pl. iatu))"
+          },
+          {
+            "target": "Ndĩĩ",
+            "source": "Wooden Mortar",
+            "pronunciation": "n-dee-ee",
+            "hint": "Traditional heavy mortar used for pounding grain",
+            "example": "Ndĩĩ — Wooden Mortar (Traditional heavy mortar used for pounding grain)"
+          },
+          {
+            "target": "Wenzĩ",
+            "source": "Razor",
+            "pronunciation": "wehn-zee",
+            "hint": "Hinde: wenzi; traditional fine iron blade",
+            "example": "Wenzĩ — Razor (Hinde: wenzi; traditional fine iron blade)"
+          },
+          {
+            "target": "Ũlĩ / Ndi",
+            "source": "Rope / Cord",
+            "pronunciation": "oo-lee / n-dee",
+            "hint": "Hinde Ulu: uli; Nganyawa: ndi",
+            "example": "Ũlĩ / Ndi — Rope / Cord (Hinde Ulu: uli; Nganyawa: ndi)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kaviu\" mean in English?",
+            "correctAnswer": "Knife",
+            "options": [
+              "Arrow",
+              "Quiver (for arrows)",
+              "Spear",
+              "Knife"
+            ],
+            "hint": "Hinde Ulu: kabiu; Nganyawa: kaviu"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mũsye\" mean in English?",
+            "correctAnswer": "Arrow",
+            "options": [
+              "Quiver (for arrows)",
+              "Spear",
+              "Arrow",
+              "Knife"
+            ],
+            "hint": "Hinde Ulu: musie; Nganyawa: mutchi"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Thyaka\" mean in English?",
+            "correctAnswer": "Quiver (for arrows)",
+            "options": [
+              "Spear",
+              "Quiver (for arrows)",
+              "Knife",
+              "Arrow"
+            ],
+            "hint": "Hinde Ulu: thiaka; Nganyawa: ithiaga"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Quiver (for arrows)\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Thyaka",
+            "options": [
+              "Thyaka",
+              "Kaviu",
+              "Mũsye",
+              "Ĩtũmũ"
+            ],
+            "hint": "thyah-kah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Spear\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ĩtũmũ",
+            "options": [
+              "Kaviu",
+              "Mũsye",
+              "Thyaka",
+              "Ĩtũmũ"
+            ],
+            "hint": "ee-too-moo"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Shield\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ngao",
+            "options": [
+              "Mũsye",
+              "Thyaka",
+              "Ngao",
+              "Kaviu"
+            ],
+            "hint": "n-gah-oh"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Kaviu: Knife, Mũsye: Arrow, Thyaka: Quiver (for arrows), Ĩtũmũ: Spear",
+            "pairs": [
+              {
+                "left": "Kaviu",
+                "right": "Knife"
+              },
+              {
+                "left": "Mũsye",
+                "right": "Arrow"
+              },
+              {
+                "left": "Thyaka",
+                "right": "Quiver (for arrows)"
+              },
+              {
+                "left": "Ĩtũmũ",
+                "right": "Spear"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Knife\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Kaviu",
+            "options": [
+              "Kaviu",
+              "Mũsye",
+              "Thyaka",
+              "Ĩtũmũ"
+            ],
+            "hint": "kah-vee-oo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-14-verbs",
+    "title": "Unit 14: Verbs & Actions",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Verbs & Actions, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "Zap",
+    "skills": [
+      {
+        "id": "kamba-exp-verbs",
+        "title": "Verbs & Actions (Part 1)",
+        "icon": "Zap",
+        "description": "Master Kamba (Kĩkamba) verbs & actions vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Kũĩma' (To cultivate / farm), 'Kwaka' (To build), 'Kũua' (To cook), 'Kũona / Kũkĩĩtha' (To see).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Kũĩma",
+            "source": "To cultivate / farm",
+            "pronunciation": "koo-ee-mah",
+            "hint": "Hinde: kuimu",
+            "example": "Kũĩma — To cultivate / farm (Hinde: kuimu)"
+          },
+          {
+            "target": "Kwaka",
+            "source": "To build",
+            "pronunciation": "kwah-kah",
+            "hint": "Hinde: kuaka",
+            "example": "Kwaka — To build (Hinde: kuaka)"
+          },
+          {
+            "target": "Kũua",
+            "source": "To cook",
+            "pronunciation": "koo-oo-ah",
+            "hint": "Hinde Ulu: kuuer; Nganyawa: kūūē",
+            "example": "Kũua — To cook (Hinde Ulu: kuuer; Nganyawa: kūūē)"
+          },
+          {
+            "target": "Kũona / Kũkĩĩtha",
+            "source": "To see",
+            "pronunciation": "koo-oh-nah / koo-kee-ee-thah",
+            "hint": "Hinde: kukiitha / kuona",
+            "example": "Kũona / Kũkĩĩtha — To see (Hinde: kukiitha / kuona)"
+          },
+          {
+            "target": "Kũneena",
+            "source": "To speak / talk",
+            "pronunciation": "koo-neh-eh-nah",
+            "hint": "Hinde: kunēēna / gunēēna",
+            "example": "Kũneena — To speak / talk (Hinde: kunēēna / gunēēna)"
+          },
+          {
+            "target": "Kũũa / Kũtho",
+            "source": "To buy",
+            "pronunciation": "koo-oo-ah / koo-thoh",
+            "hint": "Hinde Ulu: kūer; Nganyawa: gutho",
+            "example": "Kũũa / Kũtho — To buy (Hinde Ulu: kūer; Nganyawa: gutho)"
+          },
+          {
+            "target": "Kũthoosya",
+            "source": "To sell",
+            "pronunciation": "koo-thoh-oh-syah",
+            "hint": "Hinde Ulu: guthozia; Nganyawa: kuta",
+            "example": "Kũthoosya — To sell (Hinde Ulu: guthozia; Nganyawa: kuta)"
+          },
+          {
+            "target": "Kũnenga",
+            "source": "To give",
+            "pronunciation": "koo-nehn-gah",
+            "hint": "Hinde: kumunenge",
+            "example": "Kũnenga — To give (Hinde: kumunenge)"
+          },
+          {
+            "target": "Kũkoma",
+            "source": "To sleep",
+            "pronunciation": "koo-koh-mah",
+            "hint": "Hinde: kukoma",
+            "example": "Kũkoma — To sleep (Hinde: kukoma)"
+          },
+          {
+            "target": "Kũrũta wĩa",
+            "source": "To work",
+            "pronunciation": "koo-roo-tah wee-ah",
+            "hint": "Hinde Ulu: uuia; Nganyawa: mawia",
+            "example": "Kũrũta wĩa — To work (Hinde Ulu: uuia; Nganyawa: mawia)"
+          },
+          {
+            "target": "Kũkũlya",
+            "source": "To ask",
+            "pronunciation": "koo-koo-lyah",
+            "hint": "Hinde Ulu: gukulia; Nganyawa: kwibaja",
+            "example": "Kũkũlya — To ask (Hinde Ulu: gukulia; Nganyawa: kwibaja)"
+          },
+          {
+            "target": "Kwĩna",
+            "source": "To sing",
+            "pronunciation": "kwee-nah",
+            "hint": "Hinde Ulu: kwina; Nganyawa: kukwea",
+            "example": "Kwĩna — To sing (Hinde Ulu: kwina; Nganyawa: kukwea)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kũĩma\" mean in English?",
+            "correctAnswer": "To cultivate / farm",
+            "options": [
+              "To build",
+              "To cook",
+              "To see",
+              "To cultivate / farm"
+            ],
+            "hint": "Hinde: kuimu"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kwaka\" mean in English?",
+            "correctAnswer": "To build",
+            "options": [
+              "To cook",
+              "To see",
+              "To build",
+              "To cultivate / farm"
+            ],
+            "hint": "Hinde: kuaka"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kũua\" mean in English?",
+            "correctAnswer": "To cook",
+            "options": [
+              "To see",
+              "To cook",
+              "To cultivate / farm",
+              "To build"
+            ],
+            "hint": "Hinde Ulu: kuuer; Nganyawa: kūūē"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To cook\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kũua",
+            "options": [
+              "Kũua",
+              "Kũĩma",
+              "Kwaka",
+              "Kũona / Kũkĩĩtha"
+            ],
+            "hint": "koo-oo-ah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To see\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kũona / Kũkĩĩtha",
+            "options": [
+              "Kũĩma",
+              "Kwaka",
+              "Kũua",
+              "Kũona / Kũkĩĩtha"
+            ],
+            "hint": "koo-oh-nah / koo-kee-ee-thah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To speak / talk\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kũneena",
+            "options": [
+              "Kwaka",
+              "Kũua",
+              "Kũneena",
+              "Kũĩma"
+            ],
+            "hint": "koo-neh-eh-nah"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Kũĩma: To cultivate / farm, Kwaka: To build, Kũua: To cook, Kũona / Kũkĩĩtha: To see",
+            "pairs": [
+              {
+                "left": "Kũĩma",
+                "right": "To cultivate / farm"
+              },
+              {
+                "left": "Kwaka",
+                "right": "To build"
+              },
+              {
+                "left": "Kũua",
+                "right": "To cook"
+              },
+              {
+                "left": "Kũona / Kũkĩĩtha",
+                "right": "To see"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"To cultivate / farm\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Kũĩma",
+            "options": [
+              "Kũĩma",
+              "Kwaka",
+              "Kũua",
+              "Kũona / Kũkĩĩtha"
+            ],
+            "hint": "koo-ee-mah"
+          }
+        ]
+      },
+      {
+        "id": "kamba-exp-verbs-2",
+        "title": "Verbs & Actions (Part 2)",
+        "icon": "Zap",
+        "description": "Master Kamba (Kĩkamba) verbs & actions vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Kũsemba' (To run), 'Kũkwa' (To die), 'Kũthamba' (To wash), 'Kũtheka' (To laugh).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Kũsemba",
+            "source": "To run",
+            "pronunciation": "koo-sehm-bah",
+            "hint": "Hinde: sēēmba",
+            "example": "Kũsemba — To run (Hinde: sēēmba)"
+          },
+          {
+            "target": "Kũkwa",
+            "source": "To die",
+            "pronunciation": "koo-kwah",
+            "hint": "Hinde Ulu: kwie; Nganyawa: kugua",
+            "example": "Kũkwa — To die (Hinde Ulu: kwie; Nganyawa: kugua)"
+          },
+          {
+            "target": "Kũthamba",
+            "source": "To wash",
+            "pronunciation": "koo-thahm-bah",
+            "hint": "Hinde: kuthamba",
+            "example": "Kũthamba — To wash (Hinde: kuthamba)"
+          },
+          {
+            "target": "Kũtheka",
+            "source": "To laugh",
+            "pronunciation": "koo-theh-kah",
+            "hint": "Recorded by J.T. Last (1885): ku-theka; Hinde (1904): gutheka",
+            "example": "Kũtheka — To laugh (Recorded by J.T. Last (1885): ku-theka; Hinde (1904): gutheka)"
+          },
+          {
+            "target": "Kwĩekana",
+            "source": "To forgive / pardon",
+            "pronunciation": "kwee-eh-kah-nah",
+            "hint": "Recorded by J.T. Last (1885): kw-iekana",
+            "example": "Kwĩekana — To forgive / pardon (Recorded by J.T. Last (1885): kw-iekana)"
+          },
+          {
+            "target": "Kũkila",
+            "source": "To surpass / excel",
+            "pronunciation": "koo-kee-lah",
+            "hint": "Auxiliary comparative verb recorded by J.T. Last (1885): ku-kila",
+            "example": "Kũkila — To surpass / excel (Auxiliary comparative verb recorded by J.T. Last (1885): ku-kila)"
+          },
+          {
+            "target": "Kũthaima",
+            "source": "To hunt / track game",
+            "pronunciation": "koo-thah-ee-mah",
+            "hint": "Recorded by J.T. Last (1885): ku-thaima",
+            "example": "Kũthaima — To hunt / track game (Recorded by J.T. Last (1885): ku-thaima)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          },
+          {
+            "target": "Mũndũ mũka nũũkua kĩw'ũ na mbisu.",
+            "source": "The woman is carrying water with a pot."
+          },
+          {
+            "target": "Mũũnda witũ wĩ na mbemba mbingĩ.",
+            "source": "Our farm has plenty of maize."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kũsemba\" mean in English?",
+            "correctAnswer": "To run",
+            "options": [
+              "To die",
+              "To wash",
+              "To laugh",
+              "To run"
+            ],
+            "hint": "Hinde: sēēmba"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kũkwa\" mean in English?",
+            "correctAnswer": "To die",
+            "options": [
+              "To wash",
+              "To laugh",
+              "To die",
+              "To run"
+            ],
+            "hint": "Hinde Ulu: kwie; Nganyawa: kugua"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kũthamba\" mean in English?",
+            "correctAnswer": "To wash",
+            "options": [
+              "To laugh",
+              "To wash",
+              "To run",
+              "To die"
+            ],
+            "hint": "Hinde: kuthamba"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To wash\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kũthamba",
+            "options": [
+              "Kũthamba",
+              "Kũsemba",
+              "Kũkwa",
+              "Kũtheka"
+            ],
+            "hint": "koo-thahm-bah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To laugh\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kũtheka",
+            "options": [
+              "Kũsemba",
+              "Kũkwa",
+              "Kũthamba",
+              "Kũtheka"
+            ],
+            "hint": "koo-theh-kah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To forgive / pardon\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kwĩekana",
+            "options": [
+              "Kũkwa",
+              "Kũthamba",
+              "Kwĩekana",
+              "Kũsemba"
+            ],
+            "hint": "kwee-eh-kah-nah"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Kũsemba: To run, Kũkwa: To die, Kũthamba: To wash, Kũtheka: To laugh",
+            "pairs": [
+              {
+                "left": "Kũsemba",
+                "right": "To run"
+              },
+              {
+                "left": "Kũkwa",
+                "right": "To die"
+              },
+              {
+                "left": "Kũthamba",
+                "right": "To wash"
+              },
+              {
+                "left": "Kũtheka",
+                "right": "To laugh"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"To run\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Kũsemba",
+            "options": [
+              "Kũsemba",
+              "Kũkwa",
+              "Kũthamba",
+              "Kũtheka"
+            ],
+            "hint": "koo-sehm-bah"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-15-phrases",
+    "title": "Unit 15: Common Phrases",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Common Phrases, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "icon": "MessageCircle",
+    "skills": [
+      {
+        "id": "kamba-exp-phrases",
+        "title": "Common Phrases (Part 1)",
+        "icon": "MessageCircle",
+        "description": "Master Kamba (Kĩkamba) common phrases vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ĩĩ / Nĩw'o' (Yes), 'Aiee / Nde' (No), 'Wĩtawa ata?' (What is your name?), 'Nĩtawa...' (My name is...).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Ĩĩ / Nĩw'o",
+            "source": "Yes",
+            "pronunciation": "ee-ee / nee-woh",
+            "hint": "Hinde Ulu: newua; Nganyawa: nigwo",
+            "example": "Ĩĩ / Nĩw'o — Yes (Hinde Ulu: newua; Nganyawa: nigwo)"
+          },
+          {
+            "target": "Aiee / Nde",
+            "source": "No",
+            "pronunciation": "ah-ee-eh-eh / n-deh",
+            "hint": "Hinde: ndi / aiyee",
+            "example": "Aiee / Nde — No (Hinde: ndi / aiyee)"
+          },
+          {
+            "target": "Wĩtawa ata?",
+            "source": "What is your name?",
+            "pronunciation": "wee-tah-wah ah-tah",
+            "hint": "Hinde Ulu: wita wata?",
+            "example": "Wĩtawa ata? — What is your name? (Hinde Ulu: wita wata?)"
+          },
+          {
+            "target": "Nĩtawa...",
+            "source": "My name is...",
+            "pronunciation": "nee-tah-wah",
+            "hint": "Response: 'I am called...'",
+            "example": "Nĩtawa... — My name is... (Response: 'I am called...')"
+          },
+          {
+            "target": "Ũthĩ naku?",
+            "source": "Where are you going?",
+            "pronunciation": "oo-thee nah-koo",
+            "hint": "Hinde Ulu: uthi naku?",
+            "example": "Ũthĩ naku? — Where are you going? (Hinde Ulu: uthi naku?)"
+          },
+          {
+            "target": "Wumĩte va?",
+            "source": "Where do you come from?",
+            "pronunciation": "woo-mee-teh vah",
+            "hint": "Hinde Ulu: uomanakko?",
+            "example": "Wumĩte va? — Where do you come from? (Hinde Ulu: uomanakko?)"
+          },
+          {
+            "target": "Ũka vaa",
+            "source": "Come here",
+            "pronunciation": "oo-kah vah-ah",
+            "hint": "Hinde: uka haha / uka vaa",
+            "example": "Ũka vaa — Come here (Hinde: uka haha / uka vaa)"
+          },
+          {
+            "target": "Ete manzĩ",
+            "source": "Bring water",
+            "pronunciation": "eh-teh mahn-zee",
+            "hint": "Hinde Ulu: ete maanzi",
+            "example": "Ete manzĩ — Bring water (Hinde Ulu: ete maanzi)"
+          },
+          {
+            "target": "Ndimanya",
+            "source": "I do not know",
+            "pronunciation": "n-dee-mah-nyah",
+            "hint": "Hinde Ulu: ndimanya",
+            "example": "Ndimanya — I do not know (Hinde Ulu: ndimanya)"
+          },
+          {
+            "target": "Nĩnkwendete",
+            "source": "I love you",
+            "pronunciation": "neen-kwehn-deh-teh",
+            "hint": "Expression of deep love",
+            "example": "Nĩnkwendete — I love you (Expression of deep love)"
+          },
+          {
+            "target": "Ngai / Mũlũngũ",
+            "source": "God",
+            "pronunciation": "n-gah-ee / moo-loo-ngoo",
+            "hint": "Hinde Ulu: ngaii; Nganyawa: milungu",
+            "example": "Ngai / Mũlũngũ — God (Hinde Ulu: ngaii; Nganyawa: milungu)"
+          },
+          {
+            "target": "Mũseo",
+            "source": "Good / Fine",
+            "pronunciation": "moo-seh-oh",
+            "hint": "Hinde Ulu: -zeo; Nganyawa: -cheo",
+            "example": "Mũseo — Good / Fine (Hinde Ulu: -zeo; Nganyawa: -cheo)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũndũ mũseo nũendete andũ.",
+            "source": "A good person loves people."
+          },
+          {
+            "target": "Syana syonthe nĩsyathi sukulu.",
+            "source": "All the children have gone to school."
+          },
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ĩĩ / Nĩw'o\" mean in English?",
+            "correctAnswer": "Yes",
+            "options": [
+              "No",
+              "What is your name?",
+              "My name is...",
+              "Yes"
+            ],
+            "hint": "Hinde Ulu: newua; Nganyawa: nigwo"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Aiee / Nde\" mean in English?",
+            "correctAnswer": "No",
+            "options": [
+              "What is your name?",
+              "My name is...",
+              "No",
+              "Yes"
+            ],
+            "hint": "Hinde: ndi / aiyee"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Wĩtawa ata?\" mean in English?",
+            "correctAnswer": "What is your name?",
+            "options": [
+              "My name is...",
+              "What is your name?",
+              "Yes",
+              "No"
+            ],
+            "hint": "Hinde Ulu: wita wata?"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"What is your name?\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Wĩtawa ata?",
+            "options": [
+              "Wĩtawa ata?",
+              "Ĩĩ / Nĩw'o",
+              "Aiee / Nde",
+              "Nĩtawa..."
+            ],
+            "hint": "wee-tah-wah ah-tah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"My name is...\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Nĩtawa...",
+            "options": [
+              "Ĩĩ / Nĩw'o",
+              "Aiee / Nde",
+              "Wĩtawa ata?",
+              "Nĩtawa..."
+            ],
+            "hint": "nee-tah-wah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Where are you going?\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ũthĩ naku?",
+            "options": [
+              "Aiee / Nde",
+              "Wĩtawa ata?",
+              "Ũthĩ naku?",
+              "Ĩĩ / Nĩw'o"
+            ],
+            "hint": "oo-thee nah-koo"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Ĩĩ / Nĩw'o: Yes, Aiee / Nde: No, Wĩtawa ata?: What is your name?, Nĩtawa...: My name is...",
+            "pairs": [
+              {
+                "left": "Ĩĩ / Nĩw'o",
+                "right": "Yes"
+              },
+              {
+                "left": "Aiee / Nde",
+                "right": "No"
+              },
+              {
+                "left": "Wĩtawa ata?",
+                "right": "What is your name?"
+              },
+              {
+                "left": "Nĩtawa...",
+                "right": "My name is..."
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Yes\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Ĩĩ / Nĩw'o",
+            "options": [
+              "Ĩĩ / Nĩw'o",
+              "Aiee / Nde",
+              "Wĩtawa ata?",
+              "Nĩtawa..."
+            ],
+            "hint": "ee-ee / nee-woh"
+          }
+        ]
+      },
+      {
+        "id": "kamba-exp-phrases-2",
+        "title": "Common Phrases (Part 2)",
+        "icon": "MessageCircle",
+        "description": "Master Kamba (Kĩkamba) common phrases vocabulary and expressions from verified historical sources.",
+        "tips": "In this Kamba (Kĩkamba) skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Vindya' (Be quiet), 'Thi / Enda' (Go away / Leave), 'Kũtĩ ũthũku' (All is well), 'Ng'o yakwa' (Myself).",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "words": [
+          {
+            "target": "Vindya",
+            "source": "Be quiet",
+            "pronunciation": "veen-dyah",
+            "hint": "Hinde Ulu: pindia; Nganyawa: monakilongo",
+            "example": "Vindya — Be quiet (Hinde Ulu: pindia; Nganyawa: monakilongo)"
+          },
+          {
+            "target": "Thi / Enda",
+            "source": "Go away / Leave",
+            "pronunciation": "thee / ehn-dah",
+            "hint": "Hinde Ulu: eenda or thi",
+            "example": "Thi / Enda — Go away / Leave (Hinde Ulu: eenda or thi)"
+          },
+          {
+            "target": "Kũtĩ ũthũku",
+            "source": "All is well",
+            "pronunciation": "koo-tee oo-thoo-koo",
+            "hint": "Literally 'there is no evil / trouble'",
+            "example": "Kũtĩ ũthũku — All is well (Literally 'there is no evil / trouble')"
+          },
+          {
+            "target": "Ng'o yakwa",
+            "source": "Myself",
+            "pronunciation": "ngoh yah-kwah",
+            "hint": "Literally 'my heart' — classical 1885 reflexive recorded by J.T. Last",
+            "example": "Ng'o yakwa — Myself (Literally 'my heart' — classical 1885 reflexive recorded by J.T. Last)"
+          },
+          {
+            "target": "Ng'o sitũ",
+            "source": "Ourselves",
+            "pronunciation": "ngoh see-too",
+            "hint": "Literally 'our hearts' — collective reflexive recorded by J.T. Last (1885)",
+            "example": "Ng'o sitũ — Ourselves (Literally 'our hearts' — collective reflexive recorded by J.T. Last (1885))"
+          },
+          {
+            "target": "Kwa mũuo",
+            "source": "Peacefully / Sweetly",
+            "pronunciation": "kwah moo-oo-oh",
+            "hint": "Manner adverb for peaceful action recorded by J.T. Last (1885)",
+            "example": "Kwa mũuo — Peacefully / Sweetly (Manner adverb for peaceful action recorded by J.T. Last (1885))"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
+            "source": "My cattle are at the water."
+          },
+          {
+            "target": "Mũndũ mũka nũũkua kĩw'ũ na mbisu.",
+            "source": "The woman is carrying water with a pot."
+          },
+          {
+            "target": "Mũũnda witũ wĩ na mbemba mbingĩ.",
+            "source": "Our farm has plenty of maize."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Vindya\" mean in English?",
+            "correctAnswer": "Be quiet",
+            "options": [
+              "Go away / Leave",
+              "All is well",
+              "Myself",
+              "Be quiet"
+            ],
+            "hint": "Hinde Ulu: pindia; Nganyawa: monakilongo"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Thi / Enda\" mean in English?",
+            "correctAnswer": "Go away / Leave",
+            "options": [
+              "All is well",
+              "Myself",
+              "Go away / Leave",
+              "Be quiet"
+            ],
+            "hint": "Hinde Ulu: eenda or thi"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kũtĩ ũthũku\" mean in English?",
+            "correctAnswer": "All is well",
+            "options": [
+              "Myself",
+              "All is well",
+              "Be quiet",
+              "Go away / Leave"
+            ],
+            "hint": "Literally 'there is no evil / trouble'"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"All is well\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Kũtĩ ũthũku",
+            "options": [
+              "Kũtĩ ũthũku",
+              "Vindya",
+              "Thi / Enda",
+              "Ng'o yakwa"
+            ],
+            "hint": "koo-tee oo-thoo-koo"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Myself\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ng'o yakwa",
+            "options": [
+              "Vindya",
+              "Thi / Enda",
+              "Kũtĩ ũthũku",
+              "Ng'o yakwa"
+            ],
+            "hint": "ngoh yah-kwah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Ourselves\" in Kamba (Kĩkamba)?",
+            "correctAnswer": "Ng'o sitũ",
+            "options": [
+              "Thi / Enda",
+              "Kũtĩ ũthũku",
+              "Ng'o sitũ",
+              "Vindya"
+            ],
+            "hint": "ngoh see-too"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
+            "correctAnswer": "Vindya: Be quiet, Thi / Enda: Go away / Leave, Kũtĩ ũthũku: All is well, Ng'o yakwa: Myself",
+            "pairs": [
+              {
+                "left": "Vindya",
+                "right": "Be quiet"
+              },
+              {
+                "left": "Thi / Enda",
+                "right": "Go away / Leave"
+              },
+              {
+                "left": "Kũtĩ ũthũku",
+                "right": "All is well"
+              },
+              {
+                "left": "Ng'o yakwa",
+                "right": "Myself"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete: \"_____\" means \"Be quiet\" in Kamba (Kĩkamba).",
+            "correctAnswer": "Vindya",
+            "options": [
+              "Vindya",
+              "Thi / Enda",
+              "Kũtĩ ũthũku",
+              "Ng'o yakwa"
+            ],
+            "hint": "veen-dyah"
+          }
+        ]
+      }
+    ]
   }
 ];

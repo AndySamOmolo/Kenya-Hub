@@ -118,5 +118,52 @@ export const KISII_GRAMMAR_SECTIONS: KisiiGrammarSection[] = [
       { kisii: 'Togotagana', english: 'We love one another', explanation: 'Reciprocal extension -ana' },
       { kisii: 'Ogosomia abamura', english: 'To teach the youth', explanation: 'Causative extension -ia' }
     ]
+  },
+  // ── EXPANDED GRAMMAR SECTIONS ──
+  {
+    "id": "kisii-possessives-demonstratives",
+    "title": "Possessive Stems & Three-Way Demonstratives in Ekegusii",
+    "summary": "Ekegusii possessives (-one, -ao, -aye, -ito, -aino, -abo) and demonstratives harmonize with the noun class prefix.",
+    "content": "In Wilfred Whiteley's (1956) *A Practical Introduction to Gusii*, the six possessive stems attach to the class concord prefix:\n- **-one** (my): *omwana one* (my child), *chiombe chiane* (my cattle).\n- **-ao** (your sg.): *omogondo oao* (your farm).\n- **-aye** (his/her): *enyomba yaye* (his/her house).\n- **-ito** (our): *ense yaito* (our land/country), *abanto baito* (our people).\n- **-aino** (your pl.): *chisukuru chiaino* (your schools).\n- **-abo** (their): *ebinto biabo* (their things).\n\nDemonstratives distinguish three distances:\n- **Near Speaker**: *oyo* (Cl. 1 - *omonto oyo*, this person), *aba* (Cl. 2 - *abanto aba*), *eye* (Cl. 9 - *enyomba eye*).\n- **Near Listener / Referential**: *oio* (that person near you), *abo* (those people).\n- **Remote / Yonder**: *oliya* (*omonto oliya* - that person over there), *abariya* (*abanto abariya*).",
+    "examples": [
+      {
+        "kisii": "omwana one / abana bane",
+        "english": "my child / my children",
+        "explanation": "Class 1 o- vs. Class 2 ba- possessive concord"
+      },
+      {
+        "kisii": "ense yaito",
+        "english": "our land / country",
+        "explanation": "Class 9 ya- + -ito"
+      },
+      {
+        "kisii": "omonto oyo vs. omonto oliya",
+        "english": "this person vs. that person yonder",
+        "explanation": "Proximal vs. remote demonstrative"
+      }
+    ]
+  },
+  {
+    "id": "kisii-negation-interrogatives",
+    "title": "Verbal Negation (ti- / ta-) & Question Words",
+    "summary": "Ekegusii negates main-clause verbs with the prefix ti- (or -ta- in relative/subordinate clauses) and uses rich interrogative particles.",
+    "content": "Whiteley (1960) *The Tense System of Gusii* details how Ekegusii forms negative verb tenses and questions:\n- **Main Clause Negative Prefix (ti- / to- / ta-)**:\n  - 1s: **ting'enda** (I do not go)\n  - 2s: **togenda** (you do not go)\n  - 3s: **tagenda** (he/she does not go)\n  - 1p: **titogenda** (we do not go)\n  - 2p: **timogenda** (you pl. do not go)\n  - 3p: **tibagenda** (they do not go)\n- **Subordinate / Negative Infinitive (-ta-)**: *ogotamanya* (not to know).\n- **Core Interrogatives**:\n  - **Ningo?** (Who? pl. *Bango?*)\n  - **Inki?** (What?)\n  - **Arari? / Inka?** (Where?)\n  - **Ri?** (When?)\n  - **Naki?** (How?)",
+    "examples": [
+      {
+        "kisii": "Ting'eti maache.",
+        "english": "I do not have water.",
+        "explanation": "1s negative ti-"
+      },
+      {
+        "kisii": "Ningo oyo?",
+        "english": "Who is this?",
+        "explanation": "Interrogative Ningo"
+      },
+      {
+        "kisii": "Inki okogora?",
+        "english": "What are you buying?",
+        "explanation": "Interrogative Inki"
+      }
+    ]
   }
 ];

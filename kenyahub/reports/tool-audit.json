@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T16:06:18.719Z",
+  "generatedAt": "2026-10-20T12:18:34.109Z",
   "summary": {
     "registryTools": 45,
     "routeDirectories": 45,
@@ -7,19 +7,19 @@
     "staleOrReview": 29
   },
   "issues": [
-    "cbc-curriculum: data is 641 days old (maximum 365)",
-    "cbc-grade-age: data is 641 days old (maximum 365)",
-    "kuccps-cluster-calculator: data is 582 days old (maximum 365)",
-    "number-plate-decoder: data is 641 days old (maximum 365)",
-    "mobile-number-prefix: data is 641 days old (maximum 365)",
+    "cbc-curriculum: data is 657 days old (maximum 365)",
+    "cbc-grade-age: data is 657 days old (maximum 365)",
+    "kuccps-cluster-calculator: data is 598 days old (maximum 365)",
+    "number-plate-decoder: data is 657 days old (maximum 365)",
+    "mobile-number-prefix: data is 657 days old (maximum 365)",
     "stamp-duty-calculator: imported data has no parseable lastUpdated metadata",
     "helb-calculator: imported data has no parseable lastUpdated metadata",
     "housing-levy-calculator: imported data has no parseable lastUpdated metadata",
-    "vehicle-insurance-calculator: data is 642 days old (maximum 365)",
-    "kplc-token-calculator: data is 642 days old (maximum 365)",
-    "traffic-fines: data is 642 days old (maximum 365)",
-    "child-growth-schedule: data is 1008 days old (maximum 365)",
-    "kenya-postal-codes: data is 642 days old (maximum 365)",
+    "vehicle-insurance-calculator: data is 658 days old (maximum 365)",
+    "kplc-token-calculator: data is 658 days old (maximum 365)",
+    "traffic-fines: data is 658 days old (maximum 365)",
+    "child-growth-schedule: data is 1024 days old (maximum 365)",
+    "kenya-postal-codes: data is 658 days old (maximum 365)",
     "water-bill-calculator: imported data has no parseable lastUpdated metadata",
     "solar-roi-calculator: imported data has no parseable lastUpdated metadata",
     "ward-constituency-finder: imported data has no parseable lastUpdated metadata",
@@ -35,7 +35,7 @@
     "kenya-soil-types: imported data has no parseable lastUpdated metadata",
     "livestock-market-prices: imported data has no parseable lastUpdated metadata",
     "kikuyu-proverbs: imported data has no parseable lastUpdated metadata",
-    "kcse-school-rankings: data is 582 days old (maximum 365)"
+    "kcse-school-rankings: data is 598 days old (maximum 365)"
   ],
   "sourceChecks": [],
   "tools": [
@@ -44,7 +44,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
       "maxAgeDays": 365,
-      "ageDays": 95,
+      "ageDays": 111,
       "data": [
         {
           "file": "src/data/paye-bands.json",
@@ -59,7 +59,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "maxAgeDays": 365,
-      "ageDays": 64,
+      "ageDays": 80,
       "data": [
         {
           "file": "src/data/mpesa-tariffs.json",
@@ -74,7 +74,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 641,
+      "ageDays": 657,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -89,7 +89,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 641,
+      "ageDays": 657,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -104,7 +104,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 582,
+      "ageDays": 598,
       "data": [
         {
           "file": "src/data/kuccps-clusters.json",
@@ -128,7 +128,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 276,
+      "ageDays": 292,
       "data": [
         {
           "file": "src/data/public-holidays.json",
@@ -143,7 +143,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 641,
+      "ageDays": 657,
       "data": [
         {
           "file": "src/data/number-plate-prefixes.json",
@@ -158,7 +158,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 641,
+      "ageDays": 657,
       "data": [
         {
           "file": "src/data/mobile-prefixes.json",
@@ -173,7 +173,7 @@
       "routeExists": true,
       "sourceUrl": "https://education.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 276,
+      "ageDays": 292,
       "data": [
         {
           "file": "src/data/school-terms.json",
@@ -233,7 +233,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 642,
+      "ageDays": 658,
       "data": [
         {
           "file": "src/data/vehicle-insurance-rates.json",
@@ -248,7 +248,7 @@
       "routeExists": true,
       "sourceUrl": "https://kplc.co.ke/faq/tariff",
       "maxAgeDays": 365,
-      "ageDays": 642,
+      "ageDays": 658,
       "data": [
         {
           "file": "src/data/kplc-tariff.json",
@@ -263,7 +263,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 642,
+      "ageDays": 658,
       "data": [
         {
           "file": "src/data/traffic-fines.json",
@@ -278,7 +278,7 @@
       "routeExists": true,
       "sourceUrl": "https://immigration.go.ke/type-and-fees/",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 16,
       "data": [
         {
           "file": "src/data/passport-id-fees.json",
@@ -293,7 +293,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 16,
       "data": [
         {
           "file": "src/data/driving-license-guide.json",
@@ -308,7 +308,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 1008,
+      "ageDays": 1024,
       "data": [
         {
           "file": "src/data/vaccination-schedule.json",
@@ -323,7 +323,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 642,
+      "ageDays": 658,
       "data": [
         {
           "file": "src/data/postal-codes.json",
@@ -548,7 +548,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 277,
+      "ageDays": 293,
       "data": [
         {
           "file": "src/data/fertilizer-subsidy.json",
@@ -563,7 +563,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 277,
+      "ageDays": 293,
       "data": [
         {
           "file": "src/data/agrovets.json",
@@ -578,7 +578,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 277,
+      "ageDays": 293,
       "data": [
         {
           "file": "src/data/forest-reserves.json",
@@ -593,7 +593,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 277,
+      "ageDays": 293,
       "data": [
         {
           "file": "src/data/professional-bodies.json",
@@ -608,7 +608,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 277,
+      "ageDays": 293,
       "data": [
         {
           "file": "src/data/kenya-languages.json",
@@ -628,7 +628,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 3,
+      "ageDays": 19,
       "data": [
         {
           "file": "src/data/dictionaries/swahili.json",
@@ -732,7 +732,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 276,
+      "ageDays": 292,
       "data": [
         {
           "file": "src/data/economic-calendar.json",
@@ -747,7 +747,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 582,
+      "ageDays": 598,
       "data": [
         {
           "file": "src/data/kcse-rankings.json",

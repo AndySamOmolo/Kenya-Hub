@@ -40,7 +40,7 @@ const faq = [
   {
     question: "What is the lifeline tariff?",
     answer:
-      "The lifeline tariff is a subsidized rate for the first 0–6 cubic metres of water consumed per month. It ensures basic water access for low-income households at a very low cost (typically KES 2–3 per m³).",
+      "The lifeline tariff is a subsidized rate for the first 0–6 cubic metres of water consumed per month. It ensures basic water access for low-income households at a very low cost (typically KES 33–45 per m³ under WASREB domestic tariff bands).",
   },
   {
     question: "How much water does an average Kenyan household use?",

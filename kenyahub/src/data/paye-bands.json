@@ -1,14 +1,39 @@
 {
   "fiscalYear": "2026",
-  "effectiveFrom": "2026-07-01",
-  "lastUpdated": "2026-07-01",
-  "source": "Kenya Revenue Authority (KRA)",
+  "effectiveFrom": "2026-02-01",
+  "lastUpdated": "2026-10-20",
+  "source": "Kenya Revenue Authority (KRA) \u2014 Finance Act 2023, Tax Laws (Amendment) Act 2024 & NSSF Year 4 Schedule (Feb 2026)",
   "payeBands": [
-    { "min": 0, "max": 24000, "rate": 10, "label": "First KES 24,000" },
-    { "min": 24001, "max": 32333, "rate": 25, "label": "Next KES 8,333" },
-    { "min": 32334, "max": 500000, "rate": 30, "label": "Next KES 467,667" },
-    { "min": 500001, "max": 800000, "rate": 32.5, "label": "Next KES 300,000" },
-    { "min": 800001, "max": null, "rate": 35, "label": "Above KES 800,000" }
+    {
+      "min": 0,
+      "max": 24000,
+      "rate": 10,
+      "label": "First KES 24,000"
+    },
+    {
+      "min": 24001,
+      "max": 32333,
+      "rate": 25,
+      "label": "Next KES 8,333"
+    },
+    {
+      "min": 32334,
+      "max": 500000,
+      "rate": 30,
+      "label": "Next KES 467,667"
+    },
+    {
+      "min": 500001,
+      "max": 800000,
+      "rate": 32.5,
+      "label": "Next KES 300,000"
+    },
+    {
+      "min": 800001,
+      "max": null,
+      "rate": 35,
+      "label": "Above KES 800,000"
+    }
   ],
   "personalRelief": 2400,
   "insuranceRelief": {
@@ -20,19 +45,22 @@
   },
   "sha": {
     "rate": 2.75,
+    "minContribution": 300,
+    "taxDeductible": true,
     "basis": "gross salary",
-    "note": "Social Health Insurance Fund contribution remitted to the Social Health Authority. It replaces NHIF and is not an income-banded NHIF deduction."
+    "note": "Social Health Insurance Fund (SHIF) contribution is 2.75% of gross salary (minimum KES 300/month) remitted to the Social Health Authority (SHA). Under the Tax Laws (Amendment) Act, 2024, SHIF is a full pre-tax allowable deduction."
   },
   "nssf": {
-    "tier1Limit": 7000,
-    "tier2Limit": 36000,
+    "tier1Limit": 9000,
+    "tier2Limit": 108000,
     "rate": 6,
-    "pensionablePayLimit": 36000,
-    "note": "NSSF contribution rates and pensionable earnings limits are subject to the current NSSF Year 4 schedule. Confirm the applicable payroll month before filing."
+    "pensionablePayLimit": 108000,
+    "note": "Under the NSSF Act, 2013 Third Schedule (Year 4, effective February 2026), Tier I Lower Earnings Limit is KES 9,000 (max KES 540) and Tier II Upper Earnings Limit is KES 108,000 (max KES 5,940; total max KES 6,480/month matched by employer)."
   },
   "housingLevy": {
     "employeeRate": 1.5,
     "employerRate": 1.5,
-    "note": "Affordable Housing Levy is 1.5% of gross salary for the employee and employer. Confirm current deductibility treatment with KRA payroll guidance."
+    "taxDeductible": true,
+    "note": "Affordable Housing Levy is 1.5% of gross salary for both employee and employer. Under the Tax Laws (Amendment) Act, 2024 (effective 27 Dec 2024), the employee's contribution is a full pre-tax deductible expense when computing taxable pay."
   }
 }

@@ -204,11 +204,33 @@ export function MobilePrefixFinder() {
 /** 3. Public Holidays Tool */
 export function PublicHolidaysTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
-  const holidays = holidaysData.holidays["2026"] || [];
+  const [selectedYear, setSelectedYear] = useState<"2025" | "2026" | "2027">("2026");
+  const holidays = (holidaysData.holidays as any)[selectedYear] || holidaysData.holidays["2026"] || [];
 
   return (
     <View style={styles.toolWrap}>
-      <Text style={styles.subHeading}>Gazetted Kenyan Public Holidays (2026)</Text>
+      <View style={{ flexDirection: "row", gap: 8 }}>
+        {(["2025", "2026", "2027"] as const).map((yr) => (
+          <Pressable
+            key={yr}
+            onPress={() => setSelectedYear(yr)}
+            style={{
+              flex: 1,
+              paddingVertical: 8,
+              borderRadius: 999,
+              borderWidth: 1,
+              alignItems: "center",
+              backgroundColor: selectedYear === yr ? theme.gold : theme.bgCard,
+              borderColor: selectedYear === yr ? theme.gold : theme.border,
+            }}
+          >
+            <Text style={{ fontSize: 12, fontWeight: "800", color: selectedYear === yr ? theme.kenyaBlack : theme.textPrimary }}>
+              {yr}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+      <Text style={styles.subHeading}>Gazetted Kenyan Public Holidays ({selectedYear})</Text>
       {holidays.map((h: any, i: number) => {
         const d = new Date(h.date);
         const dayName = d.toLocaleDateString("en-US", { weekday: "short" });

@@ -1,7 +1,7 @@
-import React, { useState, useMemo, useRef } from "react";
+import React, { useState, useMemo } from "react";
 import { useRouter } from "expo-router";
 import {
-  Animated,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -11,8 +11,12 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useTheme, KenyaStripe } from "../../src/theme";
-import { BrandLogo } from "../../src/components/BrandLogo";
+import {
+  useTheme,
+  KenyaStripe,
+  AndroidTopAppBar,
+  androidRipple,
+} from "../../src/theme";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 
 interface RouteItem {
@@ -26,88 +30,116 @@ interface RouteItem {
   stages?: string[];
 }
 
-function RouteCard({ route }: { route: RouteItem }) {
+function RouteCard({ route }: { route: RouteItem & { townName?: string } }) {
   const router = useRouter();
   const { theme } = useTheme();
-  const scale = useRef(new Animated.Value(1)).current;
 
   return (
-    <Animated.View style={{ transform: [{ scale }] }}>
+    <View
+      style={[
+        styles.routeWrap,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: theme.outlineVariant,
+        },
+      ]}
+    >
       <Pressable
+        android_ripple={androidRipple(theme.rippleColor)}
         onPress={() =>
           router.push({
             pathname: "/matatu/[slug]",
             params: { slug: route.slug },
           })
         }
-        onPressIn={() =>
-          Animated.spring(scale, { toValue: 0.98, useNativeDriver: true }).start()
-        }
-        onPressOut={() =>
-          Animated.spring(scale, {
-            toValue: 1,
-            friction: 4,
-            useNativeDriver: true,
-          }).start()
-        }
-        style={[
-          styles.route,
-          {
-            backgroundColor: theme.bgCard,
-            borderColor: theme.border,
-          },
-        ]}
+        style={styles.route}
       >
-        <View style={[styles.routeIcon, { backgroundColor: `${theme.gold}15`, borderColor: `${theme.gold}30` }]}>
+        <View
+          style={[
+            styles.routeIcon,
+            {
+              backgroundColor: theme.primaryContainer,
+              borderColor: `${theme.gold}40`,
+            },
+          ]}
+        >
           <Ionicons name="bus" size={20} color={theme.gold} />
         </View>
         <View style={styles.routeBody}>
-          <Text style={[styles.routeText, { color: theme.textPrimary }]} numberOfLines={1}>
+          <Text
+            style={[styles.routeText, { color: theme.textPrimary }]}
+            numberOfLines={1}
+          >
             {route.name}
           </Text>
           <View style={styles.routeMetaRow}>
-            <View style={[styles.fareBadge, { backgroundColor: `${theme.gold}20`, borderColor: `${theme.gold}40` }]}>
-              <Text style={[styles.fareText, { color: theme.gold }]}>
+            <View
+              style={[
+                styles.fareBadge,
+                {
+                  backgroundColor: theme.primaryContainer,
+                  borderColor: `${theme.gold}45`,
+                },
+              ]}
+            >
+              <Text
+                style={[styles.fareText, { color: theme.onPrimaryContainer }]}
+              >
                 KES {route.fareMin}–{route.fareMax}
               </Text>
             </View>
-            <Text style={[styles.saccoText, { color: theme.textSecondary }]} numberOfLines={1}>
+            <Text
+              style={[styles.saccoText, { color: theme.textSecondary }]}
+              numberOfLines={1}
+            >
               {route.saccoName}
             </Text>
           </View>
         </View>
-        <Ionicons name="chevron-forward" size={18} color={theme.textMuted} />
+        <View
+          style={[
+            styles.trailingCircle,
+            { backgroundColor: theme.surfaceContainerHigh },
+          ]}
+        >
+          <Ionicons
+            name="arrow-forward"
+            size={16}
+            color={theme.textSecondary}
+          />
+        </View>
       </Pressable>
-    </Animated.View>
+    </View>
   );
 }
 
 export default function MatatuScreen() {
-  const { theme, isDark, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   const [search, setSearch] = useState("");
   const [selectedTown, setSelectedTown] = useState<string>("all");
 
   const towns = (matatuData as any).towns || [];
   const allRoutesByTown = (matatuData as any).routes || {};
 
-  // Flatten all routes with their town
-  const allRoutes: (RouteItem & { townName: string })[] = useMemo(() => {
-    const list: (RouteItem & { townName: string })[] = [];
-    for (const [townId, routes] of Object.entries(allRoutesByTown)) {
-      const townObj = towns.find((t: any) => t.id === townId);
-      const townName = townObj ? townObj.name : townId;
-      for (const r of routes as RouteItem[]) {
-        list.push({ ...r, townName });
+  const allRoutes: (RouteItem & { townId: string; townName: string })[] =
+    useMemo(() => {
+      const list: (RouteItem & { townId: string; townName: string })[] = [];
+      for (const [townId, routes] of Object.entries(allRoutesByTown)) {
+        const townObj = towns.find((t: any) => t.id === townId);
+        const townName = townObj ? townObj.name : townId;
+        for (const r of routes as RouteItem[]) {
+          list.push({ ...r, townId, townName });
+        }
       }
-    }
-    return list;
-  }, [allRoutesByTown, towns]);
+      return list;
+    }, [allRoutesByTown, towns]);
 
   const filteredRoutes = useMemo(() => {
     const q = search.trim().toLowerCase();
     return allRoutes.filter((r) => {
       const matchesTown =
         selectedTown === "all" ||
+        r.townId === selectedTown ||
         (r as any).town === selectedTown ||
         r.townName.toLowerCase() === selectedTown.toLowerCase();
       const matchesSearch =
@@ -125,33 +157,40 @@ export default function MatatuScreen() {
   }, [allRoutes, search, selectedTown]);
 
   return (
-    <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]} edges={["top", "left", "right"]}>
+    <SafeAreaView
+      style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+      edges={["top", "left", "right"]}
+    >
       <KenyaStripe />
 
-      {/* Header */}
-      <View style={[styles.header, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
-        <View style={styles.headerTop}>
-          <BrandLogo size="sm" showText={false} />
-          <View style={{ flex: 1 }}>
-            <Text style={[styles.heading, { color: theme.textPrimary }]}>Matatu Routes & Fares</Text>
-            <Text style={[styles.description, { color: theme.textSecondary }]}>
-              Nairobi stages, corridors, operators & fare guide
-            </Text>
-          </View>
-          <Pressable
-            onPress={toggleTheme}
-            style={[styles.themeBtn, { backgroundColor: theme.bgCard, borderColor: theme.border }]}
-            hitSlop={8}
-          >
-            <Ionicons name={isDark ? "sunny-outline" : "moon-outline"} size={16} color={theme.gold} />
-          </Pressable>
-        </View>
+      <AndroidTopAppBar
+        showBrandLogo
+        title="Matatu Routes & Fares"
+        subtitle={`${allRoutes.length} routes across ${towns.length} hubs`}
+      />
 
-        {/* Search */}
-        <View style={[styles.searchBar, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-          <Ionicons name="search" size={18} color={theme.textMuted} />
+      <View
+        style={[
+          styles.header,
+          {
+            backgroundColor: theme.surfaceContainerLow,
+            borderBottomColor: theme.outlineVariant,
+          },
+        ]}
+      >
+        {/* Material 3 Search Bar */}
+        <View
+          style={[
+            styles.searchBar,
+            {
+              backgroundColor: theme.surfaceContainerHigh,
+              borderColor: theme.outlineVariant,
+            },
+          ]}
+        >
+          <Ionicons name="search" size={20} color={theme.gold} />
           <TextInput
-            placeholder="Search route, destination, or SACCO (e.g. Rongai, 44)..."
+            placeholder="Search route, stage, or SACCO (e.g. Rongai, 44)..."
             placeholderTextColor={theme.textMuted}
             value={search}
             onChangeText={setSearch}
@@ -159,45 +198,72 @@ export default function MatatuScreen() {
           />
           {search.length > 0 && (
             <Pressable onPress={() => setSearch("")} hitSlop={8}>
-              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+              <Ionicons
+                name="close-circle"
+                size={20}
+                color={theme.textMuted}
+              />
             </Pressable>
           )}
         </View>
 
-        {/* Stats Bar */}
-        <View style={[styles.statsRow, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-          <View style={styles.statCard}>
-            <Text style={[styles.statNumber, { color: theme.gold }]}>{allRoutes.length}</Text>
-            <Text style={[styles.statLabel, { color: theme.textMuted }]}>Total Routes</Text>
-          </View>
-          <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
-          <View style={styles.statCard}>
-            <Text style={[styles.statNumber, { color: theme.gold }]}>{towns.length}</Text>
-            <Text style={[styles.statLabel, { color: theme.textMuted }]}>Towns & Hubs</Text>
-          </View>
-          <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
-          <View style={styles.statCard}>
-            <View style={styles.offlineWrap}>
-              <Ionicons
-                name="cloud-offline-outline"
-                size={14}
-                color={theme.kenyaGreenLight}
-              />
-              <Text
-                style={[
-                  styles.statNumber,
-                  { color: theme.kenyaGreenLight, marginLeft: 4 },
-                ]}
-              >
-                Offline
-              </Text>
-            </View>
-            <Text style={[styles.statLabel, { color: theme.textMuted }]}>100% Ready</Text>
-          </View>
-        </View>
+        {/* Town Filter Chips */}
+        {towns.length > 0 && (
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.townChipsRow}
+          >
+            {[{ id: "all", name: "All Towns" }, ...towns].map((t: any) => {
+              const active = selectedTown === t.id;
+              return (
+                <View
+                  key={t.id}
+                  style={[
+                    styles.townChipWrap,
+                    active
+                      ? {
+                          backgroundColor: theme.primaryContainer,
+                          borderColor: theme.gold,
+                        }
+                      : {
+                          backgroundColor: theme.surfaceContainer,
+                          borderColor: theme.outlineVariant,
+                        },
+                  ]}
+                >
+                  <Pressable
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    onPress={() => setSelectedTown(t.id)}
+                    style={styles.townChip}
+                  >
+                    {active && (
+                      <Ionicons
+                        name="checkmark"
+                        size={14}
+                        color={theme.onPrimaryContainer}
+                      />
+                    )}
+                    <Text
+                      style={[
+                        styles.townChipText,
+                        {
+                          color: active
+                            ? theme.onPrimaryContainer
+                            : theme.textSecondary,
+                        },
+                      ]}
+                    >
+                      {t.name}
+                    </Text>
+                  </Pressable>
+                </View>
+              );
+            })}
+          </ScrollView>
+        )}
       </View>
 
-      {/* Route List */}
       <ScrollView
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
@@ -213,9 +279,11 @@ export default function MatatuScreen() {
         {filteredRoutes.length === 0 && (
           <View style={styles.empty}>
             <Ionicons name="bus-outline" size={48} color={theme.textMuted} />
-            <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>No routes found</Text>
+            <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
+              No routes found
+            </Text>
             <Text style={[styles.emptySubtitle, { color: theme.textMuted }]}>
-              Try searching with another destination or corridor
+              Try searching with another stage, destination, or corridor.
             </Text>
           </View>
         )}
@@ -229,82 +297,44 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    borderBottomWidth: 1,
+    borderBottomWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: 16,
     paddingTop: 12,
     paddingBottom: 12,
-  },
-  headerTop: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginBottom: 12,
-  },
-  busIconBox: {
-    width: 44,
-    height: 44,
-    borderRadius: 14,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: 12,
-  },
-  themeBtn: {
-    width: 36,
-    height: 36,
-    borderRadius: 10,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  heading: {
-    fontFamily: "Outfit_800ExtraBold",
-    fontSize: 20,
-  },
-  description: {
-    fontSize: 12,
-    marginTop: 2,
   },
   searchBar: {
     flexDirection: "row",
     alignItems: "center",
     borderWidth: 1,
-    borderRadius: 12,
-    paddingHorizontal: 12,
-    height: 42,
-    marginBottom: 10,
+    borderRadius: 26,
+    paddingHorizontal: 16,
+    height: 48,
+    elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchInput: {
     flex: 1,
-    marginLeft: 8,
-    fontSize: 13,
-  },
-  statsRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderRadius: 10,
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-    borderWidth: 1,
-  },
-  statCard: {
-    flex: 1,
-    alignItems: "center",
-  },
-  statNumber: {
-    fontFamily: "Outfit_700Bold",
+    marginLeft: 10,
     fontSize: 14,
   },
-  statLabel: {
-    fontSize: 10,
-    marginTop: 1,
+  townChipsRow: {
+    paddingTop: 10,
+    gap: 8,
   },
-  statDivider: {
-    width: 1,
-    height: 20,
+  townChipWrap: {
+    borderRadius: 8,
+    borderWidth: 1,
+    overflow: "hidden",
   },
-  offlineWrap: {
+  townChip: {
     flexDirection: "row",
     alignItems: "center",
+    gap: 5,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+  },
+  townChipText: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 12,
   },
   content: {
     padding: 16,
@@ -314,30 +344,42 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginBottom: 12,
   },
-  route: {
+  routeWrap: {
     borderRadius: 16,
     borderWidth: 1,
-    padding: 14,
     marginBottom: 10,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 2 : 0,
+  },
+  route: {
+    padding: 15,
     flexDirection: "row",
     alignItems: "center",
   },
   routeIcon: {
-    width: 42,
-    height: 42,
-    borderRadius: 12,
+    width: 44,
+    height: 44,
+    borderRadius: 14,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
     marginRight: 12,
+  },
+  trailingCircle: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    alignItems: "center",
+    justifyContent: "center",
+    marginLeft: 8,
   },
   routeBody: {
     flex: 1,
   },
   routeText: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 15,
-    marginBottom: 4,
+    fontSize: 15.5,
+    marginBottom: 5,
   },
   routeMetaRow: {
     flexDirection: "row",
@@ -347,7 +389,7 @@ const styles = StyleSheet.create({
   fareBadge: {
     borderWidth: 1,
     borderRadius: 6,
-    paddingHorizontal: 6,
+    paddingHorizontal: 7,
     paddingVertical: 2,
   },
   fareText: {
@@ -355,20 +397,22 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   saccoText: {
-    fontSize: 11,
+    fontSize: 12,
     flex: 1,
   },
   empty: {
     alignItems: "center",
-    paddingVertical: 50,
+    paddingVertical: 48,
   },
   emptyTitle: {
+    fontFamily: "Outfit_700Bold",
     fontSize: 16,
-    fontWeight: "700",
     marginTop: 12,
   },
   emptySubtitle: {
     fontSize: 13,
+    textAlign: "center",
     marginTop: 4,
+    maxWidth: 240,
   },
 });

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -14,6 +15,8 @@ import {
   useTheme,
   categoryColorMap,
   KenyaStripe,
+  AndroidTopAppBar,
+  androidRipple,
 } from "../../src/theme";
 import {
   TOOLS,
@@ -53,7 +56,6 @@ import {
 } from "../../src/tools/EducationCultureTools";
 
 import { LanguageLearningTool } from "../../src/tools/LanguageCourseTool";
-
 import { KenyanTranslatorTool } from "../../src/tools/KenyanTranslatorTool";
 import {
   SolarRoiTool,
@@ -61,7 +63,6 @@ import {
   CbcCurriculumTool,
   KuccpsClusterTool,
 } from "../../src/tools/AdvancedTools";
-
 import { ReferenceDirectoryTool } from "../../src/tools/ReferenceDirectoryTool";
 
 export default function ToolDetailScreen() {
@@ -84,9 +85,16 @@ export default function ToolDetailScreen() {
       <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]}>
         <View style={styles.notFound}>
           <Ionicons name="search" size={48} color={theme.textMuted} />
-          <Text style={[styles.notFoundTitle, { color: theme.textPrimary }]}>Tool not found</Text>
-          <Pressable onPress={() => router.back()} style={[styles.backButton, { backgroundColor: theme.gold }]}>
-            <Text style={[styles.backButtonText, { color: theme.kenyaBlack }]}>Go back</Text>
+          <Text style={[styles.notFoundTitle, { color: theme.textPrimary }]}>
+            Tool not found
+          </Text>
+          <Pressable
+            onPress={() => router.back()}
+            style={[styles.backButton, { backgroundColor: theme.gold }]}
+          >
+            <Text style={[styles.backButtonText, { color: theme.kenyaBlack }]}>
+              Go back
+            </Text>
           </Pressable>
         </View>
       </SafeAreaView>
@@ -108,7 +116,6 @@ export default function ToolDetailScreen() {
 
   const renderToolComponent = () => {
     switch (tool.slug) {
-      // Finance & Tax
       case "paye-calculator":
         return <PayeCalculator />;
       case "mpesa-fee-calculator":
@@ -127,8 +134,6 @@ export default function ToolDetailScreen() {
         return <WaterBillCalculator />;
       case "solar-roi-calculator":
         return <SolarRoiTool />;
-
-      // Transport & Government
       case "number-plate-decoder":
         return <NumberPlateDecoder />;
       case "mobile-number-prefix":
@@ -145,8 +150,6 @@ export default function ToolDetailScreen() {
         return <PassportFeesTool />;
       case "ward-constituency-finder":
         return <WardConstituencyFinderTool />;
-
-      // Education & Culture
       case "cbc-grade-age":
         return <CbcGradeAgeTool />;
       case "cbc-curriculum":
@@ -165,136 +168,183 @@ export default function ToolDetailScreen() {
         return <KcseRankingsTool />;
       case "school-terms":
         return <SchoolTermsTool />;
-
       case "matatu-routes":
         return <MatatuRoutesTool />;
-
-      // Universal Directory Reference for all other tools
       default:
         return <ReferenceDirectoryTool slug={tool.slug} />;
     }
   };
 
   return (
-    <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]} edges={["top", "left", "right"]}>
+    <SafeAreaView
+      style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+      edges={["top", "left", "right"]}
+    >
       <KenyaStripe />
 
-      {/* Top Navbar */}
-      <View style={[styles.navBar, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
-        <Pressable onPress={() => router.back()} style={[styles.navBackBtn, { backgroundColor: theme.bgCard, borderColor: theme.border }]} hitSlop={12}>
-          <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
-        </Pressable>
-        <View style={{ flex: 1 }}>
-          <Text style={[styles.navTitle, { color: theme.textPrimary }]} numberOfLines={1}>
-            {tool.shortTitle}
-          </Text>
-          <Text style={[styles.navSub, { color: theme.gold }]}>KenyaHub Tool</Text>
-        </View>
-        <Pressable onPress={toggleSaved} style={[styles.navPinBtn, { backgroundColor: `${theme.gold}20` }]} hitSlop={12}>
-          <Ionicons
-            name={saved ? "bookmark" : "bookmark-outline"}
-            size={22}
-            color={theme.gold}
-          />
-        </Pressable>
-      </View>
+      <AndroidTopAppBar
+        title={tool.shortTitle}
+        subtitle={tool.category.replace("-", " & ").toUpperCase()}
+        onBack={() => router.back()}
+        rightAction={
+          <Pressable
+            onPress={toggleSaved}
+            android_ripple={androidRipple(theme.rippleColor, true)}
+            style={[
+              styles.pinIconBtn,
+              {
+                backgroundColor: saved
+                  ? theme.primaryContainer
+                  : theme.surfaceContainerHigh,
+                borderColor: saved ? theme.gold : theme.outlineVariant,
+              },
+            ]}
+            hitSlop={8}
+          >
+            <Ionicons
+              name={saved ? "bookmark" : "bookmark-outline"}
+              size={20}
+              color={theme.gold}
+            />
+          </Pressable>
+        }
+      />
 
       <ScrollView
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
       >
-        {/* Tool Shell Header matching website */}
-        <View style={[styles.toolHeaderCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-          <View style={styles.toolHeaderInner}>
-            {/* Breadcrumbs */}
-            <View style={styles.breadcrumbs}>
-              <Text style={[styles.breadcrumbItem, { color: theme.textMuted }]}>Home</Text>
-              <Text style={[styles.breadcrumbDivider, { color: theme.textMuted }]}>›</Text>
-              <Text style={[styles.breadcrumbItem, { color: theme.textMuted }]}>Tools</Text>
-              <Text style={[styles.breadcrumbDivider, { color: theme.textMuted }]}>›</Text>
-              <Text style={[styles.breadcrumbItem, { color: theme.gold }]} numberOfLines={1}>
-                {tool.shortTitle}
-              </Text>
-            </View>
-
-            {/* Title & Icon */}
+        {/* Material 3 Tool Info Banner (compact for 'learn' so course takes center stage) */}
+        {tool.slug !== "learn" && (
+          <View
+            style={[
+              styles.toolHeaderCard,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
             <View style={styles.heroRow}>
-              <View style={[styles.heroIconBox, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
-                <DynamicIcon emoji={tool.icon} size={28} color={theme.gold} />
-              </View>
-              <View style={{ flex: 1, marginLeft: 12 }}>
-                <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>{tool.title}</Text>
-              </View>
-            </View>
-
-            <Text style={[styles.heroDescription, { color: theme.textSecondary }]}>{tool.description}</Text>
-
-            {/* Meta Badges */}
-            <View style={[styles.badgesRow, { borderTopColor: theme.border }]}>
               <View
                 style={[
-                  styles.categoryBadge,
+                  styles.heroIconBox,
                   {
-                    backgroundColor: `${categoryColor}15`,
-                    borderColor: `${categoryColor}35`,
+                    backgroundColor: `${categoryColor}1A`,
+                    borderColor: `${categoryColor}38`,
                   },
                 ]}
               >
-                <View style={[styles.badgeDot, { backgroundColor: categoryColor }]} />
-                <Text style={[styles.categoryBadgeText, { color: categoryColor }]}>
-                  {tool.category.replace("-", " & ").toUpperCase()}
+                <DynamicIcon emoji={tool.icon} size={26} color={categoryColor} />
+              </View>
+              <View style={{ flex: 1, marginLeft: 12 }}>
+                <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>
+                  {tool.title}
+                </Text>
+                <Text
+                  style={[styles.heroDescription, { color: theme.textSecondary }]}
+                >
+                  {tool.description}
                 </Text>
               </View>
+            </View>
 
-              <View style={[styles.sourceTag, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
-                <Ionicons name="shield-checkmark" size={12} color={theme.gold} />
-                <Text style={[styles.sourceTagText, { color: theme.textMuted }]} numberOfLines={1}>
-                  {tool.dataSource}
-                </Text>
-              </View>
-
-              <View style={[styles.sourceTag, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
-                <Ionicons name="cloud-offline" size={12} color={theme.kenyaGreenLight} />
-                <Text style={[styles.sourceTagText, { color: theme.kenyaGreenLight }]}>
-                  100% Offline
+            <View
+              style={[styles.badgesRow, { borderTopColor: theme.outlineVariant }]}
+            >
+              <View
+                style={[
+                  styles.sourceTag,
+                  {
+                    backgroundColor: theme.surfaceContainerHigh,
+                    borderColor: theme.outlineVariant,
+                  },
+                ]}
+              >
+                <Ionicons
+                  name="shield-checkmark"
+                  size={13}
+                  color={theme.kenyaGreenLight}
+                />
+                <Text style={[styles.sourceText, { color: theme.textSecondary }]}>
+                  Source: {tool.dataSource}
                 </Text>
               </View>
             </View>
           </View>
-        </View>
+        )}
 
-        {/* ── TOOL INTERACTIVE COMPONENT ── */}
-        <View style={styles.interactiveArea}>{renderToolComponent()}</View>
+        {/* Interactive Tool Component */}
+        <View style={styles.toolContentWrap}>{renderToolComponent()}</View>
 
-        {/* ── RELATED TOOLS SECTION ── */}
+        {/* Related Tools */}
         {related.length > 0 && (
           <View style={styles.relatedSection}>
-            <Text style={[styles.relatedHeading, { color: theme.gold }]}>Related Tools</Text>
-            {related.map((rel) => (
-              <Pressable
-                key={rel.slug}
-                onPress={() =>
-                  router.push({
-                    pathname: "/tools/[slug]",
-                    params: { slug: rel.slug },
-                  })
-                }
-                style={[styles.relatedCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}
-              >
-                <Text style={styles.relatedEmoji}>{rel.icon}</Text>
-                <View style={{ flex: 1, marginLeft: 12 }}>
-                  <Text style={[styles.relatedTitle, { color: theme.textPrimary }]}>{rel.shortTitle}</Text>
-                  <Text style={[styles.relatedDesc, { color: theme.textMuted }]} numberOfLines={1}>
-                    {rel.description}
-                  </Text>
-                </View>
-                <Ionicons
-                  name="chevron-forward"
-                  size={16}
-                  color={theme.textMuted}
-                />
-              </Pressable>
-            ))}
+            <Text style={[styles.relatedHeading, { color: theme.gold }]}>
+              RELATED TOOLS
+            </Text>
+            <View style={styles.relatedList}>
+              {related.map((rel) => {
+                const relColor = categoryColorMap[rel.category] || theme.gold;
+                return (
+                  <View
+                    key={rel.slug}
+                    style={[
+                      styles.relatedCardWrap,
+                      {
+                        backgroundColor: theme.surfaceContainer,
+                        borderColor: theme.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Pressable
+                      android_ripple={androidRipple(theme.rippleColor)}
+                      onPress={() =>
+                        router.push({
+                          pathname: "/tools/[slug]",
+                          params: { slug: rel.slug },
+                        })
+                      }
+                      style={styles.relatedCard}
+                    >
+                      <View
+                        style={[
+                          styles.relatedIconBox,
+                          { backgroundColor: `${relColor}1A` },
+                        ]}
+                      >
+                        <DynamicIcon emoji={rel.icon} size={20} color={relColor} />
+                      </View>
+                      <View style={{ flex: 1, marginLeft: 12 }}>
+                        <Text
+                          style={[
+                            styles.relatedTitle,
+                            { color: theme.textPrimary },
+                          ]}
+                        >
+                          {rel.shortTitle}
+                        </Text>
+                        <Text
+                          style={[
+                            styles.relatedDesc,
+                            { color: theme.textSecondary },
+                          ]}
+                          numberOfLines={1}
+                        >
+                          {rel.description}
+                        </Text>
+                      </View>
+                      <Ionicons
+                        name="arrow-forward"
+                        size={16}
+                        color={theme.textMuted}
+                      />
+                    </Pressable>
+                  </View>
+                );
+              })}
+            </View>
           </View>
         )}
       </ScrollView>
@@ -306,30 +356,14 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
   },
-  navBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderBottomWidth: 1,
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-  },
-  navBackBtn: {
-    padding: 8,
-    marginRight: 8,
-    borderRadius: 10,
+  pinIconBtn: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
     borderWidth: 1,
-  },
-  navTitle: {
-    fontSize: 17,
-    fontWeight: "800",
-  },
-  navSub: {
-    fontSize: 11,
-    fontWeight: "600",
-  },
-  navPinBtn: {
-    padding: 8,
-    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "hidden",
   },
   content: {
     padding: 16,
@@ -338,28 +372,13 @@ const styles = StyleSheet.create({
   toolHeaderCard: {
     borderRadius: 20,
     borderWidth: 1,
-    overflow: "hidden",
-    marginBottom: 20,
-  },
-  toolHeaderInner: {
-    padding: 18,
-  },
-  breadcrumbs: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    marginBottom: 12,
-  },
-  breadcrumbItem: {
-    fontSize: 11,
-    fontWeight: "600",
-  },
-  breadcrumbDivider: {
-    fontSize: 11,
+    padding: 16,
+    marginBottom: 16,
+    elevation: Platform.OS === "android" ? 2 : 0,
   },
   heroRow: {
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-start",
   },
   heroIconBox: {
     width: 48,
@@ -369,137 +388,96 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  heroEmoji: {
-    fontSize: 24,
-  },
   heroTitle: {
-    fontSize: 19,
-    fontWeight: "800",
-    lineHeight: 25,
+    fontFamily: "Outfit_700Bold",
+    fontSize: 18,
+    lineHeight: 23,
   },
   heroDescription: {
-    fontSize: 13,
+    fontSize: 12.5,
     lineHeight: 18,
-    marginTop: 10,
+    marginTop: 4,
   },
   badgesRow: {
     flexDirection: "row",
     flexWrap: "wrap",
     gap: 8,
-    marginTop: 14,
-    paddingTop: 12,
-    borderTopWidth: 1,
-  },
-  categoryBadge: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
-    borderWidth: 1,
-  },
-  badgeDot: {
-    width: 5,
-    height: 5,
-    borderRadius: 2.5,
-  },
-  categoryBadgeText: {
-    fontSize: 9,
-    fontWeight: "800",
-    letterSpacing: 0.5,
+    marginTop: 12,
+    paddingTop: 10,
+    borderTopWidth: StyleSheet.hairlineWidth,
   },
   sourceTag: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
-    borderWidth: 1,
-  },
-  sourceTagText: {
-    fontSize: 10,
-  },
-  interactiveArea: {
-    marginBottom: 24,
-  },
-  matatuPromoCard: {
-    borderWidth: 1,
-    borderRadius: 16,
-    padding: 20,
-    alignItems: "center",
-    gap: 10,
-  },
-  matatuPromoTitle: {
-    fontSize: 17,
-    fontWeight: "800",
-  },
-  matatuPromoDesc: {
-    fontSize: 13,
-    textAlign: "center",
-    lineHeight: 18,
-  },
-  matatuPromoBtn: {
-    flexDirection: "row",
-    alignItems: "center",
     gap: 6,
-    paddingHorizontal: 20,
-    paddingVertical: 12,
-    borderRadius: 12,
-    marginTop: 6,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 8,
+    borderWidth: 1,
   },
-  matatuPromoBtnText: {
-    fontSize: 14,
-    fontWeight: "800",
+  sourceText: {
+    fontSize: 11,
+  },
+  toolContentWrap: {
+    marginBottom: 20,
   },
   relatedSection: {
-    marginTop: 12,
-    gap: 10,
+    marginTop: 8,
   },
   relatedHeading: {
-    fontSize: 13,
-    fontWeight: "800",
-    letterSpacing: 0.8,
-    textTransform: "uppercase",
-    marginBottom: 4,
+    fontFamily: "Outfit_700Bold",
+    fontSize: 11,
+    letterSpacing: 1.2,
+    marginBottom: 10,
+  },
+  relatedList: {
+    gap: 8,
+  },
+  relatedCardWrap: {
+    borderRadius: 16,
+    borderWidth: 1,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 1 : 0,
   },
   relatedCard: {
-    borderWidth: 1,
-    borderRadius: 14,
-    padding: 12,
     flexDirection: "row",
     alignItems: "center",
+    padding: 12,
   },
-  relatedEmoji: {
-    fontSize: 22,
+  relatedIconBox: {
+    width: 40,
+    height: 40,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
   },
   relatedTitle: {
+    fontFamily: "Outfit_700Bold",
     fontSize: 14,
-    fontWeight: "700",
   },
   relatedDesc: {
-    fontSize: 11,
-    marginTop: 2,
+    fontSize: 11.5,
+    marginTop: 1,
   },
   notFound: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
+    justifyContent: "center",
     padding: 24,
   },
   notFoundTitle: {
+    fontFamily: "Outfit_700Bold",
     fontSize: 18,
-    fontWeight: "800",
     marginTop: 12,
   },
   backButton: {
+    marginTop: 16,
     paddingHorizontal: 20,
     paddingVertical: 10,
-    borderRadius: 10,
-    marginTop: 16,
+    borderRadius: 20,
   },
   backButtonText: {
-    fontWeight: "800",
+    fontFamily: "Outfit_700Bold",
+    fontSize: 14,
   },
 });

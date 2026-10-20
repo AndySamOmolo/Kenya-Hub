@@ -128,21 +128,22 @@ export function PayeCalculator() {
 
   const calc = useMemo(() => {
     const gross = salary;
-    // 1. NSSF (New NSSF Act Tier 1 & 2)
-    const nssfTier1Limit = 7000;
-    const nssfTier2Limit = 36000;
-    const nssfTier1 = Math.min(gross, nssfTier1Limit) * 0.06;
-    const nssfTier2 = Math.max(0, Math.min(gross, nssfTier2Limit) - nssfTier1Limit) * 0.06;
-    const totalNssf = Math.min(2160, nssfTier1 + nssfTier2);
+    // 1. NSSF (NSSF Act 2013 Year 4 Tier 1 & 2 — KES 9,000 / KES 108,000)
+    const nssfTier1Limit = payeData.nssf.tier1Limit || 9000;
+    const nssfTier2Limit = payeData.nssf.tier2Limit || 108000;
+    const nssfRate = (payeData.nssf.rate || 6) / 100;
+    const nssfTier1 = Math.min(gross, nssfTier1Limit) * nssfRate;
+    const nssfTier2 = Math.max(0, Math.min(gross, nssfTier2Limit) - nssfTier1Limit) * nssfRate;
+    const totalNssf = Math.round((nssfTier1 + nssfTier2) * 100) / 100;
 
     // 2. Affordable Housing Levy (1.5% of gross)
-    const housingLevy = gross * 0.015;
+    const housingLevy = Math.round(gross * ((payeData.housingLevy.employeeRate || 1.5) / 100) * 100) / 100;
 
     // 3. SHA / SHIF (2.75% of gross, min 300)
-    const sha = Math.max(300, gross * 0.0275);
+    const sha = gross > 0 ? Math.max(300, Math.round(gross * ((payeData.sha.rate || 2.75) / 100) * 100) / 100) : 0;
 
-    // 4. Taxable Income (gross minus NSSF and Housing levy relief)
-    const taxableIncome = Math.max(0, gross - totalNssf - housingLevy);
+    // 4. Taxable Income (Tax Laws Amendment Act 2024: NSSF, SHIF & Housing Levy are pre-tax allowable deductions)
+    const taxableIncome = Math.max(0, gross - totalNssf - sha - housingLevy);
 
     // 5. PAYE Tax Bands
     let grossTax = 0;
@@ -250,11 +251,12 @@ export function PayeCalculator() {
 export function MpesaCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [amountText, setAmountText] = useState("3500");
-  const [tab, setTab] = useState<"send_registered" | "withdraw_agent" | "withdraw_atm" | "paybill">("send_registered");
+  const [tab, setTab] = useState<"sendRegistered" | "sendUnregistered" | "withdrawAgent" | "withdrawATM" | "buyGoods" | "payBill">("sendRegistered");
   const amount = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
 
   const tariff = useMemo(() => {
-    const list = (mpesaData as any)[tab] || [];
+    const txTypes = (mpesaData as any).transactionTypes || {};
+    const list = txTypes[tab]?.bands || (mpesaData as any)[tab] || [];
     const match = list.find((item: any) => amount >= item.min && amount <= (item.max ?? Infinity));
     const fee = match ? match.fee : 0;
     const totalCost = amount + fee;
@@ -262,7 +264,7 @@ export function MpesaCalculator() {
     return {
       fee,
       totalCost,
-      tier: match ? `KES ${match.min.toLocaleString()} – ${match.max?.toLocaleString() ?? "Max"}` : "Standard",
+      tier: match ? `KES ${match.min.toLocaleString()} – ${match.max?.toLocaleString() ?? "Max"}` : "Out of Band Range",
     };
   }, [amount, tab]);
 
@@ -277,10 +279,10 @@ export function MpesaCalculator() {
       {/* Type Selector Tabs */}
       <View style={styles.pillSelector}>
         {[
-          { id: "send_registered", label: "Send Money" },
-          { id: "withdraw_agent", label: "Agent Withdraw" },
-          { id: "withdraw_atm", label: "ATM" },
-          { id: "paybill", label: "Paybill" },
+          { id: "sendRegistered", label: "Send Money" },
+          { id: "withdrawAgent", label: "Agent Withdraw" },
+          { id: "withdrawATM", label: "ATM Withdraw" },
+          { id: "buyGoods", label: "Buy Goods" },
         ].map((item) => (
           <Pressable
             key={item.id}

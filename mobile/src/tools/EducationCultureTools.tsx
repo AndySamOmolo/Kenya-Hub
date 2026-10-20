@@ -410,11 +410,33 @@ export function KcseRankingsTool() {
 /** 5. School Terms Calendar */
 export function SchoolTermsTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
-  const terms = termsData.years?.["2025"]?.terms || [];
+  const [selectedYear, setSelectedYear] = useState<"2025" | "2026">("2026");
+  const terms = (termsData.years as any)?.[selectedYear]?.terms || termsData.years?.["2026"]?.terms || [];
 
   return (
     <View style={styles.toolWrap}>
-      <Text style={styles.subHeading}>Ministry of Education School Term Dates</Text>
+      <View style={{ flexDirection: "row", gap: 8 }}>
+        {(["2025", "2026"] as const).map((yr) => (
+          <Pressable
+            key={yr}
+            onPress={() => setSelectedYear(yr)}
+            style={{
+              flex: 1,
+              paddingVertical: 8,
+              borderRadius: 999,
+              borderWidth: 1,
+              alignItems: "center",
+              backgroundColor: selectedYear === yr ? theme.gold : theme.bgCard,
+              borderColor: selectedYear === yr ? theme.gold : theme.border,
+            }}
+          >
+            <Text style={{ fontSize: 12, fontWeight: "800", color: selectedYear === yr ? theme.kenyaBlack : theme.textPrimary }}>
+              {yr} Academic Calendar
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+      <Text style={styles.subHeading}>Ministry of Education School Term Dates ({selectedYear})</Text>
       {terms.map((t: any) => (
         <View key={t.term} style={styles.termCard}>
           <View style={styles.termHeader}>

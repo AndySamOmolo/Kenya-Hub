@@ -89,5 +89,52 @@ Post-nominal modifiers:
       { maasai: 'ol-tungani supat', english: 'a good / upright person', explanation: 'Noun + qualifying adjective' },
       { maasai: 'in-kishu tomon', english: 'ten cattle', explanation: 'Noun + postposed numeral' }
     ]
+  },
+  // ── EXPANDED GRAMMAR SECTIONS ──
+  {
+    "id": "maasai-pluralization-patterns",
+    "title": "Noun Pluralization Patterns in Olmaa (il- / in- Prefixes & Suffixes)",
+    "summary": "Maasai shifts gender prefixes from singular ol-/en- to plural il-/in- while changing the stem suffix.",
+    "content": "As Charles Richmond's *Maasai Dictionary* demonstrates, Maasai nouns form plurals by combining a **gender prefix shift** (Masculine `ol-` → `il-`; Feminine/Place `en-/e-` → `in-/i-`) with a **stem plural suffix** (`-i`, `-n`, `-a`, `-ishi`, `-itin`) or suppletive root:\n- **Suffix -i / -ni**: *ol-morani* (warrior) → **il-moran**; *ol-ashe* (calf) → **il-asho**.\n- **Suffix -n / -in**: *en-kang'* (homestead/kraal) → **in-kang'itie**; *ol-doinyo* (mountain) → **il-doinyo**.\n- **Suppletive Pastorals**:\n  - *en-kiteng'* (cow) → **in-kishu** (cattle)\n  - *ol-tung'ani* (person) → **il-tung'ana** (people)\n  - *en-kerai* (child) → **in-kera** (children).",
+    "examples": [
+      {
+        "maasai": "en-kiteng' → in-kishu",
+        "english": "cow → cattle",
+        "explanation": "Suppletive feminine plural"
+      },
+      {
+        "maasai": "ol-tung'ani → il-tung'ana",
+        "english": "person → people",
+        "explanation": "Masculine ol- → il- + suffix -a"
+      },
+      {
+        "maasai": "en-kerai → in-kera",
+        "english": "child → children",
+        "explanation": "Feminine en- → in-"
+      }
+    ]
+  },
+  {
+    "id": "maasai-possessives-negation",
+    "title": "Gender-Inflected Possessives & Verbal Negation (m- / me-)",
+    "summary": "Maasai possessives inflect for both the gender and number of the possessed noun, while verbs negate with m-/me-.",
+    "content": "1. **Possessive Pronouns**: Agree with Masculine (`l-`) vs. Feminine (`n-`) and Singular (`a-`) vs. Plural (`aa-`):\n   - **My (1s)**: Masc. sg. **lai** (*ol-chore lai* - my male friend), Fem. sg. **nai** (*en-kiteng' nai* - my cow), Masc. pl. **lainei** (*il-choreta lainei*), Fem. pl. **nainei** (*in-kishu nainei* - my cattle).\n   - **Your (2s)**: Masc. sg. **lino**, Fem. sg. **nino**.\n   - **Our (1p)**: Masc. sg. **laang'**, Fem. sg. **naang'**.\n2. **Verbal Negation**:\n   - Present/Habitual negation prefixes **m-** (1st/2nd person) or **me-** (3rd person) to the verb:\n     - *Aiolou* (I know) → **Maiolo** (I do not know).\n     - *Elo* (He goes) → **Melo** (He does not go).",
+    "examples": [
+      {
+        "maasai": "ol-chore lai / en-kiteng' nai",
+        "english": "my friend (m.) / my cow (f.)",
+        "explanation": "Masculine lai vs. Feminine nai"
+      },
+      {
+        "maasai": "in-kishu nainei",
+        "english": "my cattle (fem. plural)",
+        "explanation": "Feminine plural possessive nainei"
+      },
+      {
+        "maasai": "Maiolo / Melo",
+        "english": "I do not know / He does not go",
+        "explanation": "Negative prefixes m- (1s) and me- (3s)"
+      }
+    ]
   }
 ];

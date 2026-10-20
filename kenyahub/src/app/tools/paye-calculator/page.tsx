@@ -27,7 +27,8 @@ function calculatePAYE(grossSalary: number) {
 }
 
 function calculateSHA(grossSalary: number) {
-  return Math.round(grossSalary * (payeData.sha.rate / 100) * 100) / 100;
+  if (grossSalary <= 0) return 0;
+  return Math.max(300, Math.round(grossSalary * (payeData.sha.rate / 100) * 100) / 100);
 }
 
 function calculateNSSF(grossSalary: number) {
@@ -53,12 +54,12 @@ const faq = [
   {
     question: "Is the Affordable Housing Levy mandatory?",
     answer:
-      "Yes, since the Finance Act 2023 and the Supreme Court ruling upholding it, all employed persons pay 1.5% of gross salary as the Affordable Housing Levy. The employer also contributes 1.5%. The employee portion qualifies as a tax relief.",
+      "Yes, since the Finance Act 2023 and the Supreme Court ruling upholding it, all employed persons pay 1.5% of gross salary as the Affordable Housing Levy. The employer also contributes 1.5%. Under the Tax Laws (Amendment) Act, 2024, the employee's Housing Levy and SHIF contributions are full pre-tax allowable deductions.",
   },
   {
     question: "What are the new NSSF rates in Kenya?",
     answer:
-      "Under the NSSF Act 2013 (now in effect), employees contribute 6% of pensionable pay. Tier I covers up to KES 7,000 (max KES 420) and Tier II covers KES 7,001–36,000 (max KES 1,740). The employer matches these contributions.",
+      "Under the NSSF Act 2013 (now in effect), employees contribute 6% of pensionable pay. Under the Year 4 schedule (effective February 2026), Tier I covers up to KES 9,000 (max KES 540) and Tier II covers KES 9,001–108,000 (max KES 5,940; total max KES 6,480/month). The employer matches these contributions.",
   },
   {
     question: "How is SHA calculated in Kenya?",
@@ -81,9 +82,9 @@ export default function PAYECalculatorPage() {
     const nssfEmployee = calculateNSSF(gross);
     const sha = calculateSHA(gross);
 
-    // Housing levy relief reduces taxable income for PAYE
-    const taxableAfterRelief = gross - nssfEmployee - housingLevy;
-    const paye = calculatePAYE(taxableAfterRelief > 0 ? taxableAfterRelief : gross);
+    // Under the Tax Laws (Amendment) Act 2024, NSSF, SHIF (SHA), and Housing Levy are pre-tax allowable deductions
+    const taxableAfterRelief = Math.max(0, gross - nssfEmployee - sha - housingLevy);
+    const paye = calculatePAYE(taxableAfterRelief);
 
     const totalDeductions = paye + sha + nssfEmployee + housingLevy;
     const netPay = gross - totalDeductions;

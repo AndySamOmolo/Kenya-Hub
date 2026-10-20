@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import {
+  Platform,
   StyleSheet,
   Text,
   View,
@@ -10,8 +11,12 @@ import {
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useTheme, KenyaStripe } from "../../src/theme";
-import { BrandLogo } from "../../src/components/BrandLogo";
+import {
+  useTheme,
+  KenyaStripe,
+  AndroidTopAppBar,
+  androidRipple,
+} from "../../src/theme";
 import countiesData from "../../src/shared/data/counties.json";
 
 interface County {
@@ -32,7 +37,7 @@ interface County {
 
 export default function CountyScreen() {
   const router = useRouter();
-  const { theme, isDark, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   const [query, setQuery] = useState("");
   const counties: County[] = countiesData.counties;
 
@@ -49,31 +54,37 @@ export default function CountyScreen() {
   }, [query, counties]);
 
   return (
-    <SafeAreaView style={[styles.container, { backgroundColor: theme.bgPrimary }]} edges={["top", "left", "right"]}>
+    <SafeAreaView
+      style={[styles.container, { backgroundColor: theme.bgPrimary }]}
+      edges={["top", "left", "right"]}
+    >
       <KenyaStripe />
 
-      {/* Header */}
-      <View style={[styles.header, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
-        <View style={styles.headerTop}>
-          <BrandLogo size="sm" showText={false} />
-          <View style={{ flex: 1 }}>
-            <Text style={[styles.headerTitle, { color: theme.textPrimary }]}>County Governments</Text>
-            <Text style={[styles.headerSubtitle, { color: theme.textSecondary }]}>
-              All 47 devolved governments of Kenya
-            </Text>
-          </View>
-          <Pressable
-            onPress={toggleTheme}
-            style={[styles.themeBtn, { backgroundColor: theme.bgCard, borderColor: theme.border }]}
-            hitSlop={8}
-          >
-            <Ionicons name={isDark ? "sunny-outline" : "moon-outline"} size={16} color={theme.gold} />
-          </Pressable>
-        </View>
+      <AndroidTopAppBar
+        showBrandLogo
+        title="47 Counties of Kenya"
+        subtitle="290 constituencies · Devolved governments"
+      />
 
-        {/* Search Input */}
-        <View style={[styles.searchBar, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-          <Ionicons name="search" size={18} color={theme.textMuted} />
+      <View
+        style={[
+          styles.header,
+          {
+            backgroundColor: theme.surfaceContainerLow,
+            borderBottomColor: theme.outlineVariant,
+          },
+        ]}
+      >
+        <View
+          style={[
+            styles.searchBar,
+            {
+              backgroundColor: theme.surfaceContainerHigh,
+              borderColor: theme.outlineVariant,
+            },
+          ]}
+        >
+          <Ionicons name="search" size={20} color={theme.gold} />
           <TextInput
             placeholder="Search by county, capital, governor, or code..."
             placeholderTextColor={theme.textMuted}
@@ -83,31 +94,16 @@ export default function CountyScreen() {
           />
           {query.length > 0 && (
             <Pressable onPress={() => setQuery("")} hitSlop={8}>
-              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+              <Ionicons
+                name="close-circle"
+                size={20}
+                color={theme.textMuted}
+              />
             </Pressable>
           )}
         </View>
-
-        {/* Stats strip */}
-        <View style={[styles.statsStrip, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-          <View style={styles.statItem}>
-            <Text style={[styles.statNumber, { color: theme.gold }]}>47</Text>
-            <Text style={[styles.statLabel, { color: theme.textMuted }]}>Counties</Text>
-          </View>
-          <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
-          <View style={styles.statItem}>
-            <Text style={[styles.statNumber, { color: theme.gold }]}>290</Text>
-            <Text style={[styles.statLabel, { color: theme.textMuted }]}>Constituencies</Text>
-          </View>
-          <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
-          <View style={styles.statItem}>
-            <Text style={[styles.statNumber, { color: theme.gold }]}>50M+</Text>
-            <Text style={[styles.statLabel, { color: theme.textMuted }]}>Total Pop.</Text>
-          </View>
-        </View>
       </View>
 
-      {/* Counties List */}
       <ScrollView
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
@@ -119,62 +115,166 @@ export default function CountyScreen() {
         {filtered.map((item) => {
           const codeFormatted = String(item.code).padStart(3, "0");
           return (
-            <Pressable
+            <View
               key={item.code}
-              style={({ pressed }) => [
-                styles.countyCard,
+              style={[
+                styles.countyCardWrap,
                 {
-                  backgroundColor: pressed ? theme.bgCardHover : theme.bgCard,
-                  borderColor: pressed ? theme.gold : theme.border,
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
                 },
               ]}
-              onPress={() => router.push(`/county/${item.slug}` as any)}
             >
-              <View style={styles.cardHeaderRow}>
-                <View style={[styles.codeBadge, { backgroundColor: `${theme.gold}18`, borderColor: `${theme.gold}35` }]}>
-                  <Text style={[styles.codeText, { color: theme.gold }]}>{codeFormatted}</Text>
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                style={styles.countyCard}
+                onPress={() => router.push(`/county/${item.slug}` as any)}
+              >
+                <View style={styles.cardHeaderRow}>
+                  <View
+                    style={[
+                      styles.codeBadge,
+                      {
+                        backgroundColor: theme.primaryContainer,
+                        borderColor: `${theme.gold}40`,
+                      },
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.codeText,
+                        { color: theme.onPrimaryContainer },
+                      ]}
+                    >
+                      {codeFormatted}
+                    </Text>
+                  </View>
+                  <View style={{ flex: 1, marginLeft: 12 }}>
+                    <Text
+                      style={[styles.countyName, { color: theme.textPrimary }]}
+                    >
+                      {item.name}
+                    </Text>
+                    <Text
+                      style={[
+                        styles.countyCapital,
+                        { color: theme.textSecondary },
+                      ]}
+                    >
+                      Capital:{" "}
+                      <Text
+                        style={{ color: theme.textPrimary, fontWeight: "600" }}
+                      >
+                        {item.capital}
+                      </Text>
+                    </Text>
+                  </View>
+                  <View
+                    style={[
+                      styles.trailingCircle,
+                      { backgroundColor: theme.surfaceContainerHigh },
+                    ]}
+                  >
+                    <Ionicons
+                      name="arrow-forward"
+                      size={16}
+                      color={theme.textSecondary}
+                    />
+                  </View>
                 </View>
-                <View style={{ flex: 1, marginLeft: 12 }}>
-                  <Text style={[styles.countyName, { color: theme.textPrimary }]}>{item.name}</Text>
-                  <Text style={[styles.countyCapital, { color: theme.textSecondary }]}>
-                    Headquarters: <Text style={{ color: theme.textPrimary, fontWeight: "600" }}>{item.capital}</Text>
-                  </Text>
-                </View>
-                <Ionicons
-                  name="chevron-forward"
-                  size={18}
-                  color={theme.textMuted}
-                />
-              </View>
 
-              <View style={[styles.cardInfoRow, { borderTopColor: theme.border }]}>
-                <View style={[styles.infoPill, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
-                  <Ionicons name="person-circle-outline" size={14} color={theme.gold} />
-                  <Text style={[styles.infoPillText, { color: theme.textSecondary }]} numberOfLines={1}>
-                    Gov. {item.governor}
-                  </Text>
+                <View
+                  style={[
+                    styles.cardInfoRow,
+                    { borderTopColor: theme.outlineVariant },
+                  ]}
+                >
+                  <View
+                    style={[
+                      styles.infoPill,
+                      {
+                        backgroundColor: theme.surfaceContainerHigh,
+                        borderColor: theme.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Ionicons
+                      name="person-circle-outline"
+                      size={14}
+                      color={theme.gold}
+                    />
+                    <Text
+                      style={[
+                        styles.infoPillText,
+                        { color: theme.textSecondary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      Gov. {item.governor}
+                    </Text>
+                  </View>
+                  <View
+                    style={[
+                      styles.infoPill,
+                      {
+                        backgroundColor: theme.surfaceContainerHigh,
+                        borderColor: theme.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Ionicons
+                      name="people-outline"
+                      size={14}
+                      color={theme.sky}
+                    />
+                    <Text
+                      style={[
+                        styles.infoPillText,
+                        { color: theme.textSecondary },
+                      ]}
+                    >
+                      {item.population
+                        ? item.population >= 1000000
+                          ? `${(item.population / 1000000).toFixed(1)}M`
+                          : `${Math.round(item.population / 1000)}k`
+                        : "—"}
+                    </Text>
+                  </View>
+                  <View
+                    style={[
+                      styles.infoPill,
+                      {
+                        backgroundColor: theme.surfaceContainerHigh,
+                        borderColor: theme.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Ionicons
+                      name="map-outline"
+                      size={14}
+                      color={theme.kenyaGreenLight}
+                    />
+                    <Text
+                      style={[
+                        styles.infoPillText,
+                        { color: theme.textSecondary },
+                      ]}
+                    >
+                      {item.constituencies.length} Sub-counties
+                    </Text>
+                  </View>
                 </View>
-                <View style={[styles.infoPill, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
-                  <Ionicons name="people-outline" size={14} color={theme.sky} />
-                  <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
-                    {item.population ? (item.population >= 1000000 ? `${(item.population / 1000000).toFixed(1)}M` : `${Math.round(item.population / 1000)}k`) : "—"}
-                  </Text>
-                </View>
-                <View style={[styles.infoPill, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
-                  <Ionicons name="map-outline" size={14} color={theme.kenyaGreenLight} />
-                  <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
-                    {item.constituencies.length} Sub-counties
-                  </Text>
-                </View>
-              </View>
-            </Pressable>
+              </Pressable>
+            </View>
           );
         })}
 
         {filtered.length === 0 && (
           <View style={styles.emptyState}>
             <Ionicons name="search-outline" size={48} color={theme.textMuted} />
-            <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>No counties found</Text>
+            <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
+              No counties found
+            </Text>
             <Text style={[styles.emptySubtitle, { color: theme.textMuted }]}>
               Try searching with a different name, governor, or county code
             </Text>
@@ -193,76 +293,21 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 12,
     paddingBottom: 12,
-    borderBottomWidth: 1,
-  },
-  headerTop: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginBottom: 12,
-  },
-  iconBox: {
-    width: 44,
-    height: 44,
-    borderRadius: 14,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: 12,
-  },
-  themeBtn: {
-    width: 36,
-    height: 36,
-    borderRadius: 10,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  headerTitle: {
-    fontFamily: "Outfit_800ExtraBold",
-    fontSize: 20,
-  },
-  headerSubtitle: {
-    fontSize: 12,
-    marginTop: 2,
+    borderBottomWidth: StyleSheet.hairlineWidth,
   },
   searchBar: {
     flexDirection: "row",
     alignItems: "center",
     borderWidth: 1,
-    borderRadius: 12,
-    paddingHorizontal: 12,
-    height: 42,
+    borderRadius: 26,
+    paddingHorizontal: 16,
+    height: 48,
+    elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchInput: {
     flex: 1,
-    marginLeft: 8,
-    fontSize: 13,
-  },
-  statsStrip: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    borderRadius: 10,
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    marginTop: 10,
-    borderWidth: 1,
-  },
-  statItem: {
-    alignItems: "center",
-    flex: 1,
-  },
-  statNumber: {
-    fontFamily: "Outfit_700Bold",
+    marginLeft: 10,
     fontSize: 14,
-  },
-  statLabel: {
-    fontSize: 10,
-    marginTop: 1,
-  },
-  statDivider: {
-    width: 1,
-    height: 20,
   },
   listContent: {
     padding: 16,
@@ -272,20 +317,24 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginBottom: 12,
   },
-  countyCard: {
+  countyCardWrap: {
     borderRadius: 16,
     borderWidth: 1,
-    padding: 14,
     marginBottom: 10,
+    overflow: "hidden",
+    elevation: Platform.OS === "android" ? 2 : 0,
+  },
+  countyCard: {
+    padding: 15,
   },
   cardHeaderRow: {
     flexDirection: "row",
     alignItems: "center",
   },
   codeBadge: {
-    width: 40,
-    height: 40,
-    borderRadius: 10,
+    width: 44,
+    height: 44,
+    borderRadius: 12,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
@@ -293,6 +342,13 @@ const styles = StyleSheet.create({
   codeText: {
     fontFamily: "Outfit_800ExtraBold",
     fontSize: 13,
+  },
+  trailingCircle: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    alignItems: "center",
+    justifyContent: "center",
   },
   countyName: {
     fontFamily: "Outfit_700Bold",
@@ -308,14 +364,14 @@ const styles = StyleSheet.create({
     gap: 6,
     marginTop: 10,
     paddingTop: 10,
-    borderTopWidth: 1,
+    borderTopWidth: StyleSheet.hairlineWidth,
   },
   infoPill: {
     flexDirection: "row",
     alignItems: "center",
     gap: 4,
     paddingHorizontal: 8,
-    paddingVertical: 3,
+    paddingVertical: 4,
     borderRadius: 8,
     borderWidth: 1,
   },
@@ -328,7 +384,7 @@ const styles = StyleSheet.create({
   },
   emptyTitle: {
     fontSize: 16,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
     marginTop: 12,
   },
   emptySubtitle: {

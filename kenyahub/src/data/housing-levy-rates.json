@@ -1,17 +1,16 @@
 {
-  "effectiveDate": "2023-07-01",
-  "legalBasis": "Finance Act 2023, Section 84A",
+  "effectiveDate": "2024-12-27",
+  "legalBasis": "Affordable Housing Act, 2024 & Tax Laws (Amendment) Act, 2024",
   "employeeRate": 1.5,
   "employerRate": 1.5,
   "taxReliefApplicable": true,
-  "taxReliefDescription": "The employee's Housing Levy contribution qualifies as a tax relief, effectively reducing PAYE payable",
+  "taxReliefDescription": "Under the Tax Laws (Amendment) Act, 2024 (effective 27 Dec 2024), the employee's 1.5% Housing Levy contribution is deducted directly from gross pay as an allowable pre-tax deduction before calculating PAYE.",
   "notes": [
-    "The Affordable Housing Levy (AHL) was introduced by the Finance Act 2023",
-    "The Supreme Court of Kenya upheld the levy's constitutionality in November 2023",
-    "Both employer and employee each contribute 1.5% of gross salary",
-    "The employee's contribution qualifies for tax relief against PAYE",
-    "Contributions are remitted through the eCitizen/i-Tax platform by the 9th of the following month",
-    "Self-employed persons also contribute 1.5% of their declared income",
-    "The levy funds the Affordable Housing Programme aimed at delivering 250,000 housing units"
+    "The Affordable Housing Levy (AHL) is governed by the Affordable Housing Act, 2024 (enacted March 2024)",
+    "Both employer and employee each contribute 1.5% of gross monthly salary (total 3% remitted to KRA)",
+    "Effective 27 December 2024 under the Tax Laws (Amendment) Act, 2024, the employee's 1.5% contribution is a full pre-tax allowable deduction when computing taxable income for PAYE",
+    "Contributions are remitted through KRA iTax by the 9th working day of the following month",
+    "Non-salaried / self-employed individuals also contribute 1.5% of their gross income",
+    "Proceeds fund the Affordable Housing Programme (Boma Yangu) across all 47 counties"
   ]
 }

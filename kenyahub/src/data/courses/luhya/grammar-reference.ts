@@ -121,5 +121,52 @@ The negative replaces the initial prefix with *shi-* or *kha-*:
       { luhya: 'Eekhaafu yeefwe', english: 'Our cow', explanation: 'Bukusu term eekhaafu with 1st person plural possessive' },
       { luhya: 'Kameechi k\'okunywa', english: 'Drinking water', explanation: 'Bukusu term kameechi (water)' }
     ]
+  },
+  // ── EXPANDED GRAMMAR SECTIONS ──
+  {
+    "id": "luhya-locative-classes",
+    "title": "The Three Locative Noun Classes: Ha- (16), Hu-/Khu- (17) & Mu- (18)",
+    "summary": "Luyia preserves the full Proto-Bantu triad of locative prefixes governing precise spatial agreement.",
+    "content": "In L.L. Appleby's *A First Luyia Grammar*, Anangwe & Marlo (2008) *Wanga*, and Marlo et al. (2008) *Bukusu*, three productive locative prefixes attach to nouns and govern their own concords:\n1. **Class 16 (ha- / a-)**: Specific, definite spot ('at / right by').\n   - *handu halayi* (a good specific place), *hamulyango* (right at the doorway).\n2. **Class 17 (hu- / khu-)**: General direction, surface, or 'on / to / from'.\n   - *khumusaala* (on the tree), *khunjira* (on the road/way), *khulwaro* (on the grinding stone).\n3. **Class 18 (mu-)**: Interiority ('inside / within').\n   - *munzu* (inside the house), *mumatsi* (in the water), *mumugunda* (inside the garden).",
+    "examples": [
+      {
+        "luhya": "Abana bali munzu.",
+        "english": "The children are inside the house.",
+        "explanation": "Class 18 interior locative mu-"
+      },
+      {
+        "luhya": "Yikhala khukom.",
+        "english": "Sit on the chair.",
+        "explanation": "Class 17 surface locative khu-"
+      },
+      {
+        "luhya": "Handu hano ni halayi.",
+        "english": "This specific place is good.",
+        "explanation": "Class 16 concord ha-"
+      }
+    ]
+  },
+  {
+    "id": "luhya-tense-aspect-negation",
+    "title": "Tense-Aspect Prefixes & Circumfixal Negation (si-...-ta / se-...-ta)",
+    "summary": "Luhya varieties distinguish hodiernal (today), hesternal (yesterday), and remote pasts, and negate verbs with a two-part frame.",
+    "content": "Across Central Luyia, Olushiwanga, and Lubukusu, verbal negation uses a distinctive **circumfix** (a negative prefix before the subject marker PLUS the enclitic particle **ta / tawe / da** after the verb):\n- **Central Luyia & Wanga**: **si-** + Subject + Verb + **ta(we)**\n  - *Achendanga* (He walks) → **Siachendanga tawe** (He does not walk).\n  - *Ndola* (I see) → **Sindola ta** (I do not see).\n- **Lubukusu**: **se-** + Subject + Verb + **ta**\n  - *Khwama* (We come from) → **Sekhwama ta** (We do not come from).\n- **Negative Subjunctive / Imperative**: Uses **lekha** + infinitive (*Lekha okhutsia!* - Do not go!) or infix **-kha-**.",
+    "examples": [
+      {
+        "luhya": "Sindola omundu tawe.",
+        "english": "I do not see anybody.",
+        "explanation": "Circumfixal negation si-...-tawe"
+      },
+      {
+        "luhya": "Siachenda bwangu ta.",
+        "english": "He/she does not walk fast.",
+        "explanation": "3s negative si-a-...-ta"
+      },
+      {
+        "luhya": "Lekha okhulira!",
+        "english": "Stop crying! / Do not cry!",
+        "explanation": "Prohibitive auxiliary lekha + infinitive"
+      }
+    ]
   }
 ];

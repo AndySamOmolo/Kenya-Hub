@@ -13,7 +13,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "0.2.0",
-  "lastUpdated": "2026-09",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Dholuo is a River-Lake Nilotic language spoken in the Lake Victoria basin of Western Kenya. Core data rebuilt from 'A Handbook of the Kavirondo Language' by Mill-Hill Fathers (1920), supplemented by Tiba Foundation community references.",
   "categories": [
     {
@@ -929,6 +929,394 @@
           "translation": "Chogo",
           "pronunciation": "choh-goh",
           "context": "Pl: Choke",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs-actions",
+      "name": "Verbs & Actions (1920 Handbook)",
+      "entries": [
+        {
+          "english": "To speak / talk",
+          "translation": "Wacho",
+          "pronunciation": "wah-choh",
+          "context": "Root: wach. Present: Awacho (I speak)",
+          "audioFile": null
+        },
+        {
+          "english": "To cook / boil",
+          "translation": "Tedo",
+          "pronunciation": "teh-doh",
+          "context": "Root: ted. Agent: Jatedo (cook)",
+          "audioFile": null
+        },
+        {
+          "english": "To go",
+          "translation": "Dhiyo / Dhi",
+          "pronunciation": "dhee-yoh",
+          "context": "Imperative: Dhi! Pl: Dhiuru!",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "Biro",
+          "pronunciation": "bee-roh",
+          "context": "Irregular root: Bi. Imperative: Bi! (Come!)",
+          "audioFile": null
+        },
+        {
+          "english": "To bring",
+          "translation": "Kelo",
+          "pronunciation": "keh-loh",
+          "context": "Root: kel. Passive: Osekel (has been brought)",
+          "audioFile": null
+        },
+        {
+          "english": "To worship / adore / pray",
+          "translation": "Lamo / Lemo",
+          "pronunciation": "lah-moh / leh-moh",
+          "context": "Religious worship and prayer",
+          "audioFile": null
+        },
+        {
+          "english": "To visit",
+          "translation": "Limo",
+          "pronunciation": "lee-moh",
+          "context": "Dak ibi lima? (Won't you come visit me?)",
+          "audioFile": null
+        },
+        {
+          "english": "To see / find",
+          "translation": "Neno / Nwang'o",
+          "pronunciation": "neh-noh / nwah-ngoh",
+          "context": "Irregular root of Neno: Ne",
+          "audioFile": null
+        },
+        {
+          "english": "To greet",
+          "translation": "Moso",
+          "pronunciation": "moh-soh",
+          "context": "Amosi! (I greet you!)",
+          "audioFile": null
+        },
+        {
+          "english": "To watch / guard / keep",
+          "translation": "Rito",
+          "pronunciation": "ree-toh",
+          "context": "Nyasaye riti (May God protect you)",
+          "audioFile": null
+        },
+        {
+          "english": "To hold / catch",
+          "translation": "Mako",
+          "pronunciation": "mah-koh",
+          "context": "Maki mos (Hold carefully)",
+          "audioFile": null
+        },
+        {
+          "english": "To begin / start first",
+          "translation": "Kwongo / Chako",
+          "pronunciation": "kwoh-ngoh / chah-koh",
+          "context": "Mokwongo (first)",
+          "audioFile": null
+        },
+        {
+          "english": "To change / turn",
+          "translation": "Loko / Lokore",
+          "pronunciation": "loh-koh",
+          "context": "Reflexive: Lokore (to turn oneself)",
+          "audioFile": null
+        },
+        {
+          "english": "To sweep / breathe / rest",
+          "translation": "Yweyo",
+          "pronunciation": "yweh-yoh",
+          "context": "Waywe kaeni (Let us rest here)",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "Hero",
+          "pronunciation": "heh-roh",
+          "context": "Aheri ahinya (I love you very much)",
+          "audioFile": null
+        },
+        {
+          "english": "To work",
+          "translation": "Tiyo",
+          "pronunciation": "tee-yoh",
+          "context": "Root: ti. Noun: Tich (work), Jatich (workman)",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "Miyo",
+          "pronunciation": "mee-yoh",
+          "context": "Root: mi. Mia pi (Give me water)",
+          "audioFile": null
+        },
+        {
+          "english": "To finish / complete",
+          "translation": "Tieko",
+          "pronunciation": "tyeh-koh",
+          "context": "Atieko (I have finished)",
+          "audioFile": null
+        },
+        {
+          "english": "To bathe / wash oneself",
+          "translation": "Lwokore",
+          "pronunciation": "lwoh-koh-reh",
+          "context": "Alwokora pile (I bathe every day)",
+          "audioFile": null
+        },
+        {
+          "english": "To learn / study / practise",
+          "translation": "Puonjore",
+          "pronunciation": "pwohn-joh-reh",
+          "context": "From Puonjo (to teach)",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / dig",
+          "translation": "Puro / Pur",
+          "pronunciation": "poo-roh",
+          "context": "Ing'eyo pur? (Do you understand cultivation?)",
+          "audioFile": null
+        },
+        {
+          "english": "To plant",
+          "translation": "Pidho",
+          "pronunciation": "pee-dhoh",
+          "context": "Kiny nopidhi rabuon (Tomorrow he will plant potatoes)",
+          "audioFile": null
+        },
+        {
+          "english": "To buy / sell",
+          "translation": "Ng'iewo",
+          "pronunciation": "ngyeh-woh",
+          "context": "Dhi ng'iew e chiro (Go and buy in the market)",
+          "audioFile": null
+        },
+        {
+          "english": "To surpass / defeat",
+          "translation": "Loyo / Hingo / Yombo",
+          "pronunciation": "loh-yoh",
+          "context": "Used for comparative and superlative degrees",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "construct-plurals",
+      "name": "Plurals & Construct Possessives",
+      "entries": [
+        {
+          "english": "Knives (pl. of Pala)",
+          "translation": "Pelini",
+          "pronunciation": "peh-lee-nee",
+          "context": "Construct: Pand (e.g. Panda - my knife)",
+          "audioFile": null
+        },
+        {
+          "english": "Houses (pl. of Ot)",
+          "translation": "Udi",
+          "pronunciation": "oo-dee",
+          "context": "Construct: Od (e.g. Od ruoth - the chief's house)",
+          "audioFile": null
+        },
+        {
+          "english": "Chiefs (pl. of Ruoth)",
+          "translation": "Ruodhi",
+          "pronunciation": "rwoh-dhee",
+          "context": "Construct: Ruodhi",
+          "audioFile": null
+        },
+        {
+          "english": "Villages (pl. of Dala)",
+          "translation": "Mier",
+          "pronunciation": "myehr",
+          "context": "Irregular plural of Dala",
+          "audioFile": null
+        },
+        {
+          "english": "Workmen (pl. of Jatich)",
+          "translation": "Jotich",
+          "pronunciation": "joh-teech",
+          "context": "Agent prefix Ja- becomes Jo- in plural",
+          "audioFile": null
+        },
+        {
+          "english": "Friends (pl. of Osiep)",
+          "translation": "Osiepe",
+          "pronunciation": "oh-syeh-peh",
+          "context": "1s possessive: Osiepna (my friend)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountains / Hills (pl. of Got)",
+          "translation": "Gode",
+          "pronunciation": "goh-deh",
+          "context": "Construct: Godi (e.g. Godi Nandi)",
+          "audioFile": null
+        },
+        {
+          "english": "Gardens / Fields (pl. of Puodho)",
+          "translation": "Puothe",
+          "pronunciation": "pwoh-theh",
+          "context": "Construct: Puothi (e.g. Puothi bel)",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking pot of (Construct of Agulu)",
+          "translation": "Aguch",
+          "pronunciation": "ah-gooch",
+          "context": "e.g. Aguch nyako (the cooking pot of the girl)",
+          "audioFile": null
+        },
+        {
+          "english": "Language / Mouth of (Construct of Dhok)",
+          "translation": "Dho",
+          "pronunciation": "dhoh",
+          "context": "e.g. Dho Luo (the language of the Luo)",
+          "audioFile": null
+        },
+        {
+          "english": "Daughter of (Construct of Nyako)",
+          "translation": "Nyar",
+          "pronunciation": "nyahr",
+          "context": "e.g. Nyar Seme (a daughter/girl from Seme)",
+          "audioFile": null
+        },
+        {
+          "english": "Son of (Construct of Woyi)",
+          "translation": "Wodi",
+          "pronunciation": "woh-dee",
+          "context": "Pl. construct: Yawoti",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "time-traditional",
+      "name": "Time & Traditional Daily Clock",
+      "entries": [
+        {
+          "english": "Yesterday",
+          "translation": "Nyoro",
+          "pronunciation": "nyoh-roh",
+          "context": "Verbs may prefix Nyo- (Nyabiro nyoro)",
+          "audioFile": null
+        },
+        {
+          "english": "Day before yesterday",
+          "translation": "Nyocha",
+          "pronunciation": "nyoh-chah",
+          "context": "Two days ago",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Tinende / Kawuono",
+          "pronunciation": "tee-nehn-deh",
+          "context": "Also Nende / Tinde",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Kiny",
+          "pronunciation": "keeny",
+          "context": "Kiny wanadhi (Tomorrow we shall go)",
+          "audioFile": null
+        },
+        {
+          "english": "Day after tomorrow",
+          "translation": "Orucha",
+          "pronunciation": "oh-roo-chah",
+          "context": "In two days' time",
+          "audioFile": null
+        },
+        {
+          "english": "At cock-crow (very early dawn)",
+          "translation": "Kogwen",
+          "pronunciation": "koh-gwehn",
+          "context": "Traditional pastoral time (~4:30–5:30 a.m.)",
+          "audioFile": null
+        },
+        {
+          "english": "At dawn / daybreak",
+          "translation": "Ka piny oru / Oyawore",
+          "pronunciation": "kah peeny oh-roo",
+          "context": "When the land dawns",
+          "audioFile": null
+        },
+        {
+          "english": "Midday / Daytime",
+          "translation": "Odiechieng'",
+          "pronunciation": "oh-dyeh-chyeng",
+          "context": "During the day",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle-return time (~5:00 p.m.)",
+          "translation": "Kar donjo dhok",
+          "pronunciation": "kahr dohn-joh dhohk",
+          "context": "Traditional pastoral time milestone",
+          "audioFile": null
+        },
+        {
+          "english": "Milking time (~5:30 p.m.)",
+          "translation": "Kar nyiedho dhok",
+          "pronunciation": "kahr nyeh-dhoh dhohk",
+          "context": "Traditional evening milking hour",
+          "audioFile": null
+        },
+        {
+          "english": "At night",
+          "translation": "Otieno",
+          "pronunciation": "oh-tyeh-noh",
+          "context": "Nighttime",
+          "audioFile": null
+        },
+        {
+          "english": "At midnight",
+          "translation": "Odiewor",
+          "pronunciation": "oh-dyeh-wohr",
+          "context": "Middle of the night",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "proverbs-riddles",
+      "name": "Proverbs (Ngeche) & Riddles (Miero)",
+      "entries": [
+        {
+          "english": "Greed ('I eat till full') killed the mosquito",
+          "translation": "Acham ayieng' ne onego suna",
+          "pronunciation": "ah-chahm ah-yeeng neh oh-neh-goh soo-nah",
+          "context": "Proverb warning against greed and complacency",
+          "audioFile": null
+        },
+        {
+          "english": "I always sit on three chairs (Answer: Cooking pot on three hearthstones)",
+          "translation": "Abet e kombe adek kinde duto",
+          "pronunciation": "ah-beht eh kohm-beh ah-dehk",
+          "context": "Traditional Dholuo riddle (Miero)",
+          "audioFile": null
+        },
+        {
+          "english": "A hut in a hole surrounded by thorns (Answer: Tongue among teeth)",
+          "translation": "Abila ei bur moluor gi kudho",
+          "pronunciation": "ah-bee-lah ehy boor",
+          "context": "Traditional Dholuo riddle (Miero)",
+          "audioFile": null
+        },
+        {
+          "english": "The hippo fears the elephant, and the elephant fears the hippo",
+          "translation": "Rawo luor liel, liel luor rawo",
+          "pronunciation": "rah-woh lwohr lyehl",
+          "context": "Classic Dholuo tongue twister",
           "audioFile": null
         }
       ]
