@@ -19,6 +19,90 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Chief",
+          "translation": "Eloket / Ekapolon",
+          "pronunciation": "eh-kah-poh-lohn",
+          "context": "Chief or leader",
+          "audioFile": null
+        },
+        {
+          "english": "King",
+          "translation": "Ekabaka / Emorimor",
+          "pronunciation": "eh-moh-ree-mor",
+          "context": "Paramount leader / king",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Esokoni",
+          "pronunciation": "eh-soh-koh-nee",
+          "context": "Market",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Etau",
+          "pronunciation": "eh-tah-oo",
+          "context": "Heart",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Akou",
+          "pronunciation": "ah-koh-oo",
+          "context": "Head",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Agaria",
+          "pronunciation": "ah-gah-ryah",
+          "context": "Fish",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Kojoto ejok",
+          "pronunciation": "koh-joh-toh eh-johk",
+          "context": "Sleep well",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Amina",
+          "pronunciation": "ah-mee-nah",
+          "context": "Love",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Ainapakina",
+          "pronunciation": "ai-nah-pah-kee-nah",
+          "context": "Peace",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Akim",
+          "pronunciation": "ah-keem",
+          "context": "Fire",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "Epajan / Epapero",
+          "pronunciation": "eh-pah-peh-roh",
+          "context": "Friend",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Edeke / Lokasuban",
+          "pronunciation": "eh-deh-keh",
+          "context": "God, the Creator",
+          "audioFile": null
+        },
+        {
           "english": "Hello / How are you?",
           "translation": "Yoga",
           "pronunciation": "yoh-gah",

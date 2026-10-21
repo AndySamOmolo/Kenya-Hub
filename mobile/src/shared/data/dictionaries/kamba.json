@@ -21,6 +21,104 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Chief",
+          "translation": "Mũnene",
+          "pronunciation": "moo-neh-neh",
+          "context": "Chief or leader",
+          "audioFile": null
+        },
+        {
+          "english": "King",
+          "translation": "Mũsumbĩ",
+          "pronunciation": "moo-soom-bee",
+          "context": "King",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Wĩa",
+          "pronunciation": "wee-ah",
+          "context": "Work",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Sokoni / Kĩng'ang'i",
+          "pronunciation": "soh-koh-nee",
+          "context": "Market",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Mbesa",
+          "pronunciation": "mbeh-sah",
+          "context": "Money",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Ĩyoo",
+          "pronunciation": "ee-yoh",
+          "context": "Yesterday",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Ũnĩ",
+          "pronunciation": "oo-nee",
+          "context": "Tomorrow",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Ũmũnthĩ",
+          "pronunciation": "oo-moon-thee",
+          "context": "Today",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Ũtukũ",
+          "pronunciation": "oo-too-koo",
+          "context": "Night",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Mũthenya",
+          "pronunciation": "moo-theh-nyah",
+          "context": "Day",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Koma nesa",
+          "pronunciation": "koh-mah neh-sah",
+          "context": "Sleep well / good night",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Wendo",
+          "pronunciation": "wehn-doh",
+          "context": "Love",
+          "audioFile": null
+        },
+        {
+          "english": "Home",
+          "translation": "Mũsyĩ",
+          "pronunciation": "moo-syee",
+          "context": "Home or homestead",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Nyũmba",
+          "pronunciation": "nyoom-bah",
+          "context": "House",
+          "audioFile": null
+        },
+        {
           "english": "How are you?",
           "translation": "Ũvoo?",
           "pronunciation": "oo-voh",

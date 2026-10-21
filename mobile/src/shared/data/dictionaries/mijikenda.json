@@ -21,6 +21,307 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Elder",
+          "translation": "Mutumia / Mzee wa Kaya",
+          "pronunciation": "moo-too-myah",
+          "context": "Respected Kaya elder",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Chifu / Mzee wa Kaya",
+          "pronunciation": "m-zeh-eh wah kah-yah",
+          "context": "Kaya Elder / Chief",
+          "audioFile": null
+        },
+        {
+          "english": "King",
+          "translation": "Mfalme",
+          "pronunciation": "m-fahl-meh",
+          "context": "King",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Kazi / Mihang'o",
+          "pronunciation": "kah-zee",
+          "context": "Work",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Sokoni",
+          "pronunciation": "soh-koh-nee",
+          "context": "Market",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Pesa / Fedha",
+          "pronunciation": "peh-sah",
+          "context": "Money",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Dzana",
+          "pronunciation": "dzah-nah",
+          "context": "Yesterday",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Machero",
+          "pronunciation": "mah-cheh-roh",
+          "context": "Tomorrow",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Rero",
+          "pronunciation": "reh-roh",
+          "context": "Today",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Usiku",
+          "pronunciation": "oo-see-koo",
+          "context": "Night",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Siku",
+          "pronunciation": "see-koo",
+          "context": "Day",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Milatso",
+          "pronunciation": "mee-lah-tsoh",
+          "context": "Blood",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Moyo",
+          "pronunciation": "moh-yoh",
+          "context": "Heart",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "Mukono",
+          "pronunciation": "moo-koh-noh",
+          "context": "Hand",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Dzitso",
+          "pronunciation": "dzee-tsoh",
+          "context": "Eye",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Chitswa",
+          "pronunciation": "chee-tswah",
+          "context": "Head",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Komba / Samaki",
+          "pronunciation": "kohm-bah",
+          "context": "Fish",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Tsongwe / Nyuni",
+          "pronunciation": "nyoo-nee",
+          "context": "Bird",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Dia",
+          "pronunciation": "dee-ah",
+          "context": "Dog",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Mbuzi",
+          "pronunciation": "mboo-zee",
+          "context": "Goat",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Nyama",
+          "pronunciation": "nyah-mah",
+          "context": "Meat",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Mazia",
+          "pronunciation": "mah-zee-ah",
+          "context": "Milk",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Mvula",
+          "pronunciation": "mvoo-lah",
+          "context": "Rain",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Muhi",
+          "pronunciation": "moo-hee",
+          "context": "Tree",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Bule / A-a",
+          "pronunciation": "boo-leh",
+          "context": "No",
+          "audioFile": null
+        },
+        {
+          "english": "Yes",
+          "translation": "Inde / Haya",
+          "pronunciation": "een-deh",
+          "context": "Yes",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Karibu / Ndzoni",
+          "pronunciation": "ndzoh-nee",
+          "context": "Welcome",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Lalani bule",
+          "pronunciation": "lah-lah-nee boo-leh",
+          "context": "Sleep well",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Mudzatsendza",
+          "pronunciation": "moo-dzah-tsehn-dzah",
+          "context": "Good morning",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Upendo / Rohendzo",
+          "pronunciation": "roh-hehn-dzoh",
+          "context": "Love",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "eri / Dheri",
+          "pronunciation": "dheh-ree",
+          "context": "Peace",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Muche",
+          "pronunciation": "moo-cheh",
+          "context": "Adult woman",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "Mulume",
+          "pronunciation": "moo-loo-meh",
+          "context": "Adult man",
+          "audioFile": null
+        },
+        {
+          "english": "Home",
+          "translation": "Mudzini / Kwehu",
+          "pronunciation": "moo-dzee-nee",
+          "context": "Home",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Nyumba",
+          "pronunciation": "nyoom-bah",
+          "context": "House",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Moho",
+          "pronunciation": "moh-hoh",
+          "context": "Fire",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "Dzuwa",
+          "pronunciation": "dzoo-wah",
+          "context": "Sun",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "Musena",
+          "pronunciation": "moo-seh-nah",
+          "context": "Friend",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "Ng'ombe",
+          "pronunciation": "ngohm-beh",
+          "context": "Cow / cattle",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "Chakurya / Wali",
+          "pronunciation": "chah-koo-ryah",
+          "context": "Food",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Mama / Mma",
+          "pronunciation": "mah-mah",
+          "context": "Mother",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Baba / Dde",
+          "pronunciation": "bah-bah",
+          "context": "Father",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Mulungu",
+          "pronunciation": "moo-loo-ngoo",
+          "context": "God, the Supreme Creator",
+          "audioFile": null
+        },
+        {
           "english": "Hello",
           "translation": "Jomba",
           "pronunciation": "johm-bah",

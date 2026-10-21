@@ -295,7 +295,7 @@ export default function LanguageCourseTool() {
     if (currentCourse?.units?.length) {
       const initialExpanded: Record<string, boolean> = {};
       currentCourse.units.forEach((u, idx) => {
-        initialExpanded[u.id] = idx < 2; // Expand first 2 units by default
+        initialExpanded[u.id] = true; // Expand all units by default so all modules are accessible at once
       });
       setExpandedUnitIds(initialExpanded);
       if (currentCourse.units[0]?.skills[0]) {

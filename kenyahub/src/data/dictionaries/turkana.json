@@ -19,6 +19,34 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "King",
+          "translation": "Ekapolon",
+          "pronunciation": "eh-kah-poh-lohn",
+          "context": "Supreme leader",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Etic",
+          "pronunciation": "eh-teech",
+          "context": "Work",
+          "audioFile": null
+        },
+        {
+          "english": "Home",
+          "translation": "Awii",
+          "pronunciation": "ah-wee",
+          "context": "Homestead / home",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Ekisil",
+          "pronunciation": "eh-kee-seel",
+          "context": "Peace",
+          "audioFile": null
+        },
+        {
           "english": "Hello",
           "translation": "Ejok",
           "pronunciation": "eh-johk",

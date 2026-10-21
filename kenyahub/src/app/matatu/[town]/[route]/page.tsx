@@ -38,16 +38,16 @@ export async function generateMetadata({
 
   const canonicalUrl = `https://kenyahub.me/matatu/${townObj.slug}/${routeObj.slug}/`;
   const title = `Route ${routeObj.routeNumber}: ${routeObj.name} (${townObj.name}) — Fares, Stages & Map`;
-  const description = `${townObj.name} Matatu Route ${routeObj.routeNumber} (${routeObj.origin} to ${routeObj.destination}). Off-peak fare KES ${routeObj.fareOffPeak.min}–${routeObj.fareOffPeak.max}, peak fare KES ${routeObj.farePeak.min}–${routeObj.farePeak.max}. Stages: ${routeObj.stages.map((s) => s.name).join(", ")}.`;
+  const description = `${townObj.name} Matatu Route ${routeObj.routeNumber} (${routeObj.terminusA} to ${routeObj.terminusB}). Fare range KES ${routeObj.fareMin}–${routeObj.fareMax}, operated by ${routeObj.saccoName} (${routeObj.operatingHours}). Stages: ${routeObj.stages.map((s) => s.name).join(", ")}.`;
 
   return {
     title,
     description,
     keywords: [
       `Route ${routeObj.routeNumber} ${townObj.name}`,
-      `matatu to ${routeObj.destination}`,
-      `${routeObj.origin} to ${routeObj.destination} matatu fare`,
-      ...(routeObj.saccos || []),
+      `matatu to ${routeObj.terminusB}`,
+      `${routeObj.terminusA} to ${routeObj.terminusB} matatu fare`,
+      routeObj.saccoName,
     ],
     openGraph: {
       title: `${title} | KenyaHub`,

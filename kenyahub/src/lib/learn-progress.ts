@@ -172,12 +172,10 @@ export function updateStreak(progress: UserProgress): UserProgress {
   const yesterday = getYesterdayString();
 
   if (progress.lastActiveDate === today) {
-    // Already active today
     return progress;
   }
 
   if (progress.lastActiveDate === yesterday) {
-    // Consecutive day — increment streak.
     return {
       ...progress,
       streak: progress.streak + 1,
@@ -187,7 +185,6 @@ export function updateStreak(progress: UserProgress): UserProgress {
   }
 
   if (progress.streakFreezes > 0 && progress.lastActiveDate === getDateStringDaysAgo(2)) {
-    // A freeze preserves the streak after one missed day.
     return {
       ...progress,
       streakFreezes: progress.streakFreezes - 1,
@@ -196,7 +193,6 @@ export function updateStreak(progress: UserProgress): UserProgress {
     };
   }
 
-  // Streak reset
   return {
     ...progress,
     streak: progress.lastActiveDate ? 0 : 1,
@@ -216,20 +212,15 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
     reviewQueue: [...progress.reviewQueue],
   };
 
-  // Update skill level
   const currentLevel = updated.skillLevels[result.skillId] || 0;
   if (result.level > currentLevel) {
     updated.skillLevels[result.skillId] = result.level;
   }
 
-  // Add XP
   updated.xp += result.xpEarned;
   updated.todayXp += result.xpEarned;
-
-  // Track lessons completed
   updated.lessonsCompleted += 1;
 
-  // Add new words
   const wordSet = new Set(updated.wordsLearned);
   result.newWordsLearned.forEach((w) => wordSet.add(w));
   updated.wordsLearned = Array.from(wordSet);
@@ -239,7 +230,6 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
   result.reviewItems.forEach((item) => reviewById.set(item.id, item));
   updated.reviewQueue = Array.from(reviewById.values()).sort((a, b) => a.dueAt - b.dueAt);
 
-  // Update streak
   const today = getTodayString();
   if (updated.lastActiveDate !== today) {
     const yesterday = getYesterdayString();
@@ -256,7 +246,6 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
     updated.lastActiveDate = today;
   }
 
-  // Refill hearts (practice lessons give hearts back)
   updated.hearts = Math.min(MAX_HEARTS, result.heartsRemaining + (result.perfectLesson ? 1 : 0));
   if (updated.hearts >= MAX_HEARTS) {
     updated.heartsLastRefill = Date.now();
@@ -264,7 +253,6 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
     updated.heartsLastRefill = Date.now();
   }
 
-  // Check achievements
   const newAchievements = [...updated.achievements];
   for (const achievement of ACHIEVEMENTS) {
     if (!newAchievements.includes(achievement.id)) {
@@ -286,30 +274,18 @@ export function getDueReviews(progress: UserProgress, now = Date.now()): LessonR
 
 /* ─── Skill Unlocking ──────────────────────────────── */
 
+/**
+ * All units and skill modules are unlocked from the start so learners can freely
+ * access any module at once while still earning 1–5 mastery stars per module.
+ */
 export function isSkillUnlocked(
-  skillId: string,
-  skillIndex: number,
-  unitIndex: number,
-  skillLevels: Record<string, number>,
-  allUnits: { skills: { id: string }[] }[]
+  _skillId: string,
+  _skillIndex: number,
+  _unitIndex: number,
+  _skillLevels: Record<string, number>,
+  _allUnits: { skills: { id: string }[] }[]
 ): boolean {
-  // First skill of first unit is always unlocked
-  if (unitIndex === 0 && skillIndex === 0) return true;
-
-  // Within same unit: previous skill must be at least level 1
-  if (skillIndex > 0) {
-    const prevSkill = allUnits[unitIndex].skills[skillIndex - 1];
-    return (skillLevels[prevSkill.id] || 0) >= 1;
-  }
-
-  // First skill of a new unit: last skill of previous unit must be at least level 1
-  if (unitIndex > 0) {
-    const prevUnit = allUnits[unitIndex - 1];
-    const lastSkill = prevUnit.skills[prevUnit.skills.length - 1];
-    return (skillLevels[lastSkill.id] || 0) >= 1;
-  }
-
-  return false;
+  return true;
 }
 
 /* ─── Level Helpers ────────────────────────────────── */

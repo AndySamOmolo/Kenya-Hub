@@ -299,17 +299,24 @@ export function KenyanTranslatorTool() {
   // Comparison Results Across All 13 Languages
   const comparisonResults = useMemo(() => {
     if (viewMode !== "compare" || !searchQuery.trim()) return [];
-    const q = searchQuery.toLowerCase().trim();
+    const cleanTerm = (s: string) =>
+      s
+        .toLowerCase()
+        .replace(/\s*\([^)]*\)/g, "")
+        .replace(/[!?.]/g, "")
+        .trim();
+
+    const q = cleanTerm(searchQuery);
 
     // Check if query matches a local translation in any dictionary
     let matchedEnglish = q;
     for (const d of ALL_DICTS) {
       for (const cat of d.categories) {
         for (const entry of cat.entries) {
-          const trans = entry.translation.toLowerCase().trim();
-          const transParts = trans.split(/[/,(]/).map((s) => s.trim());
-          if (trans === q || transParts.includes(q)) {
-            matchedEnglish = entry.english.toLowerCase().trim();
+          const transClean = cleanTerm(entry.translation);
+          const transParts = transClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
+          if (transClean === q || transParts.includes(q)) {
+            matchedEnglish = cleanTerm(entry.english);
             break;
           }
         }
@@ -320,6 +327,10 @@ export function KenyanTranslatorTool() {
 
     const targetWords = [q];
     if (matchedEnglish !== q) targetWords.unshift(matchedEnglish);
+    const slashParts = matchedEnglish.split(/[\/,;]/).map((s) => s.trim().toLowerCase()).filter(Boolean);
+    slashParts.forEach((sp) => {
+      if (!targetWords.includes(sp)) targetWords.push(sp);
+    });
 
     const list: {
       dict: Dictionary;
@@ -331,16 +342,50 @@ export function KenyanTranslatorTool() {
       if (!dict) return;
       let found: DictEntry | null = null;
 
+      // Pass 1: Exact headword or synonym match (stripping parenthetical notes)
       for (const cat of dict.categories) {
         for (const entry of cat.entries) {
-          const eng = entry.english.toLowerCase().trim();
-          const trans = entry.translation.toLowerCase().trim();
-          if (targetWords.some((tw) => eng === tw || trans === tw || eng.includes(tw))) {
+          const engRaw = entry.english.toLowerCase().trim();
+          const engClean = cleanTerm(entry.english);
+          const engParts = engClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
+          const transClean = cleanTerm(entry.translation);
+          const transParts = transClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
+
+          if (
+            targetWords.some(
+              (tw) =>
+                engRaw === tw ||
+                engClean === tw ||
+                engParts.includes(tw) ||
+                engParts.includes(`to ${tw}`) ||
+                transClean === tw ||
+                transParts.includes(tw)
+            )
+          ) {
             found = entry;
             break;
           }
         }
         if (found) break;
+      }
+
+      // Pass 2: Only match multi-word phrases if the user searched a multi-word phrase
+      if (!found) {
+        for (const cat of dict.categories) {
+          for (const entry of cat.entries) {
+            const engClean = cleanTerm(entry.english);
+            if (
+              targetWords.some((tw) => {
+                if (!tw.includes(" ")) return false;
+                return engClean.includes(tw);
+              })
+            ) {
+              found = entry;
+              break;
+            }
+          }
+          if (found) break;
+        }
       }
 
       list.push({ dict, entry: found });

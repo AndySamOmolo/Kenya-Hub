@@ -2,35 +2,31 @@
 import { getSourcesForLanguage } from "@/data/language-sources";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
-
 import { useState } from "react";
 import {
-  Lock,
   Check,
   Star,
   ChevronDown,
   ChevronRight,
-  Volume2,
   Lightbulb,
-  Zap,
   Heart,
   Flame,
   Trophy,
   Target,
   Crown,
   Sparkles,
+  Layers,
 } from "lucide-react";
 import type { CourseUnit, UserProgress, LanguageConfig } from "@/data/courses/types";
-import { MAX_SKILL_LEVEL, LEVELS, ACHIEVEMENTS, MAX_HEARTS } from "@/data/courses/types";
+import { MAX_SKILL_LEVEL, ACHIEVEMENTS, MAX_HEARTS } from "@/data/courses/types";
 import {
-  isSkillUnlocked,
   getXpLevel,
   minutesToNextHeart,
   getDueReviews,
 } from "@/lib/learn-progress";
 
 /* ═══════════════════════════════════════════════════════
-   SKILL TREE — Interactive learning path
+   SKILL TREE — Interactive learning path (All modules open & unlocked)
    ═══════════════════════════════════════════════════════ */
 
 interface SkillTreeProps {
@@ -51,11 +47,26 @@ export default function SkillTree({
   onGoBack,
 }: SkillTreeProps) {
   const sources = getSourcesForLanguage(config.id);
-  const [expandedUnit, setExpandedUnit] = useState<string | null>(
-    units[0]?.id || null
+  // All units expanded by default so the user can view & access all modules at once
+  const [expandedUnits, setExpandedUnits] = useState<Record<string, boolean>>(() =>
+    Object.fromEntries(units.map((u) => [u.id, true]))
   );
   const [showProfile, setShowProfile] = useState(false);
   const [showAchievements, setShowAchievements] = useState(false);
+
+  const allExpanded = units.every((u) => expandedUnits[u.id] !== false);
+
+  const toggleAllUnits = () => {
+    const nextState = !allExpanded;
+    setExpandedUnits(Object.fromEntries(units.map((u) => [u.id, nextState])));
+  };
+
+  const toggleUnit = (unitId: string) => {
+    setExpandedUnits((prev) => ({
+      ...prev,
+      [unitId]: prev[unitId] === false ? true : false,
+    }));
+  };
 
   const levelInfo = getXpLevel(progress.xp);
   const nextHeartMin = minutesToNextHeart(progress);
@@ -65,9 +76,6 @@ export default function SkillTree({
   const totalSkills = units.reduce((s, u) => s + u.skills.length, 0);
   const completedSkills = Object.values(progress.skillLevels).filter(
     (v) => v >= 1
-  ).length;
-  const masteredSkills = Object.values(progress.skillLevels).filter(
-    (v) => v >= MAX_SKILL_LEVEL
   ).length;
 
   return (
@@ -102,9 +110,9 @@ export default function SkillTree({
         <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-5 sm:p-6">
           <div className="flex items-center gap-4">
             <div className="flex-1 min-w-0">
-              <h1 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary sm:text-2xl">
-                {config.name}
-              </h1>
+              <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary sm:text-2xl">
+                {config.name} ({config.nativeName})
+              </h2>
               <p className="text-xs text-text-secondary">{config.description}</p>
               {sources.length > 0 && (
                 <div className="mt-2 space-y-1 text-[0.65rem] leading-relaxed text-text-muted">
@@ -130,7 +138,7 @@ export default function SkillTree({
             </div>
             <div className="text-center">
               <div className="text-base font-bold text-text-primary sm:text-lg">{completedSkills}/{totalSkills}</div>
-              <div className="text-[0.6rem] text-text-muted">Skills</div>
+              <div className="text-[0.6rem] text-text-muted">Modules</div>
             </div>
             <div className="text-center">
               <div className="text-base font-bold text-text-primary sm:text-lg">{progress.wordsLearned.length}</div>
@@ -209,8 +217,8 @@ export default function SkillTree({
         {/* Achievements button */}
         <button
           onClick={() => setShowAchievements(!showAchievements)}
-            aria-expanded={showAchievements}
-            aria-controls="achievements-panel"
+          aria-expanded={showAchievements}
+          aria-controls="achievements-panel"
           className="mt-3 flex w-full items-center justify-between rounded-xl border border-border bg-bg-card px-4 py-3 transition-all active:bg-bg-elevated sm:hover:border-gold/30"
         >
           <div className="flex items-center gap-2">
@@ -265,10 +273,42 @@ export default function SkillTree({
         )}
       </div>
 
-      {/* ─── Skill Tree Path ─────────────────────── */}
-      <div className="space-y-3">
-        {units.map((unit, unitIdx) => {
-          const isExpanded = expandedUnit === unit.id;
+      {/* ─── All Units & Modules Controls ─────────── */}
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+        <div className="flex items-center gap-2">
+          <Layers className="h-4 w-4 text-gold" />
+          <span className="text-xs font-bold uppercase tracking-wider text-text-secondary">
+            All {units.length} Units &amp; {totalSkills} Modules Unlocked
+          </span>
+        </div>
+        <button
+          onClick={toggleAllUnits}
+          className="rounded-lg border border-border bg-bg-card px-3 py-1.5 text-xs font-semibold text-gold hover:border-gold/50 transition-colors"
+        >
+          {allExpanded ? "Collapse All Units" : "Expand All Units"}
+        </button>
+      </div>
+
+      {/* Quick Jump Unit Pills */}
+      <div className="mb-4 flex gap-1.5 overflow-x-auto pb-1.5 scrollbar-hide">
+        {units.map((unit, idx) => (
+          <a
+            key={unit.id}
+            href={`#unit-block-${unit.id}`}
+            onClick={() =>
+              setExpandedUnits((prev) => ({ ...prev, [unit.id]: true }))
+            }
+            className="shrink-0 rounded-full border border-border bg-bg-card px-3 py-1 text-xs font-medium text-text-secondary hover:border-gold hover:text-gold transition-colors"
+          >
+            Unit {idx + 1}: {unit.title.replace(/^Unit \d+:\s*/i, "")}
+          </a>
+        ))}
+      </div>
+
+      {/* ─── Skill Tree Path (All Modules Accessible) ─── */}
+      <div className="space-y-4">
+        {units.map((unit) => {
+          const isExpanded = expandedUnits[unit.id] !== false;
           const unitCompleted = unit.skills.every(
             (s) => (progress.skillLevels[s.id] || 0) >= 1
           );
@@ -276,24 +316,11 @@ export default function SkillTree({
             (s) => (progress.skillLevels[s.id] || 0) >= MAX_SKILL_LEVEL
           );
 
-          // Is this unit accessible?
-          const unitUnlocked =
-            unitIdx === 0 ||
-            isSkillUnlocked(
-              unit.skills[0].id,
-              0,
-              unitIdx,
-              progress.skillLevels,
-              units
-            );
-
           return (
-            <div key={unit.id}>
+            <div key={unit.id} id={`unit-block-${unit.id}`}>
               {/* Unit header */}
               <button
-                onClick={() =>
-                  setExpandedUnit(isExpanded ? null : unit.id)
-                }
+                onClick={() => toggleUnit(unit.id)}
                 aria-expanded={isExpanded}
                 aria-controls={`unit-${unit.id}-skills`}
                 className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 transition-all ${
@@ -301,9 +328,7 @@ export default function SkillTree({
                     ? "border-gold/30 bg-gold/5"
                     : unitCompleted
                     ? "border-kenya-green/30 bg-kenya-green/5"
-                    : unitUnlocked
-                    ? "border-border bg-bg-card active:bg-bg-elevated sm:hover:border-gold/40"
-                    : "border-border/50 bg-bg-card/50 opacity-60"
+                    : "border-border bg-bg-card active:bg-bg-elevated sm:hover:border-gold/40"
                 }`}
               >
                 <span className="text-2xl"><DynamicIcon emoji={unit.icon} className="w-[1em] h-[1em]" /></span>
@@ -312,7 +337,7 @@ export default function SkillTree({
                     {unit.title}
                   </h3>
                   <p className="text-[0.6rem] text-text-muted truncate">
-                    {unit.description}
+                    {unit.description} · {unit.skills.length} modules
                   </p>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
@@ -322,7 +347,6 @@ export default function SkillTree({
                   {unitCompleted && !unitMastered && (
                     <Check className="h-4 w-4 text-kenya-green" />
                   )}
-                  {!unitUnlocked && <Lock className="h-4 w-4 text-text-muted" />}
                   <ChevronDown
                     className={`h-4 w-4 text-text-muted transition-transform ${
                       isExpanded ? "rotate-180" : ""
@@ -334,16 +358,9 @@ export default function SkillTree({
               {/* Skills list */}
               {isExpanded && (
                 <div id={`unit-${unit.id}-skills`} className="mt-2 ml-4 space-y-2 border-l-2 border-border pl-4 sm:ml-6 sm:pl-5">
-                  {unit.skills.map((skill, skillIdx) => {
+                  {unit.skills.map((skill) => {
                     const skillLevel =
                       progress.skillLevels[skill.id] || 0;
-                    const unlocked = isSkillUnlocked(
-                      skill.id,
-                      skillIdx,
-                      unitIdx,
-                      progress.skillLevels,
-                      units
-                    );
                     const nextLevel = Math.min(
                       skillLevel + 1,
                       MAX_SKILL_LEVEL
@@ -353,11 +370,9 @@ export default function SkillTree({
                       <div
                         key={skill.id}
                         className={`relative rounded-xl border p-4 transition-all ${
-                          !unlocked
-                            ? "border-border/50 bg-bg-card/50 opacity-50"
-                            : skillLevel >= MAX_SKILL_LEVEL
+                          skillLevel >= MAX_SKILL_LEVEL
                             ? "border-gold/30 bg-gradient-to-r from-gold/5 to-bg-card"
-                            : "border-border bg-bg-card"
+                            : "border-border bg-bg-card hover:border-gold/30"
                         }`}
                       >
                         {/* Connector dot */}
@@ -367,9 +382,7 @@ export default function SkillTree({
                               ? "border-gold bg-gold"
                               : skillLevel > 0
                               ? "border-kenya-green bg-kenya-green"
-                              : unlocked
-                              ? "border-gold bg-bg-primary"
-                              : "border-border bg-bg-elevated"
+                              : "border-gold bg-bg-primary"
                           }`}
                         />
 
@@ -380,7 +393,7 @@ export default function SkillTree({
                               {skill.title}
                             </h4>
                             <p className="text-[0.6rem] text-text-muted truncate">
-                              {skill.description}
+                              {skill.description} · {skill.words.length} words
                             </p>
 
                             {/* Star progress */}
@@ -403,39 +416,31 @@ export default function SkillTree({
                             </div>
                           </div>
 
-                          {/* Action button */}
-                          {unlocked ? (
-                            <button
-                              onClick={() =>
-                                onStartLesson(skill.id, nextLevel)
-                              }
-                              disabled={
-                                (progress.hearts <= 0 && dueReviewCount === 0) ||
-                                skillLevel >= MAX_SKILL_LEVEL
-                              }
-                              className={`ml-auto shrink-0 rounded-xl px-4 py-2.5 text-xs font-bold transition-all active:scale-95 ${
-                                skillLevel >= MAX_SKILL_LEVEL
-                                  ? "border border-gold/30 bg-gold/5 text-gold"
-                                  : progress.hearts > 0
-                                  ? "bg-gold text-kenya-black sm:hover:brightness-110"
-                                  : "bg-bg-elevated text-text-muted cursor-not-allowed"
-                              }`}
-                            >
-                              {skillLevel >= MAX_SKILL_LEVEL ? (
-                                <span className="inline-flex items-center gap-1"><Sparkles className="h-3.5 w-3.5" /> Mastered</span>
-                              ) : skillLevel === 0
-                                ? progress.hearts <= 0 && dueReviewCount > 0
-                                  ? "Review"
-                                  : "Start"
-                                : `Level ${nextLevel}`}
-                            </button>
-                          ) : (
-                            <Lock className="h-5 w-5 shrink-0 text-text-muted" />
-                          )}
+                          {/* Action button — always enabled so all modules are accessible at once */}
+                          <button
+                            onClick={() =>
+                              onStartLesson(skill.id, nextLevel)
+                            }
+                            className={`ml-auto shrink-0 rounded-xl px-4 py-2.5 text-xs font-bold transition-all active:scale-95 ${
+                              skillLevel >= MAX_SKILL_LEVEL
+                                ? "border border-gold/40 bg-gold/10 text-gold hover:bg-gold/20"
+                                : "bg-gold text-kenya-black sm:hover:brightness-110"
+                            }`}
+                          >
+                            {skillLevel >= MAX_SKILL_LEVEL ? (
+                              <span className="inline-flex items-center gap-1">
+                                <Sparkles className="h-3.5 w-3.5" /> Practice Again
+                              </span>
+                            ) : skillLevel === 0 ? (
+                              "Start Module"
+                            ) : (
+                              `Level ${nextLevel}`
+                            )}
+                          </button>
                         </div>
 
                         {/* Tips preview */}
-                        {skill.tips && unlocked && skillLevel === 0 && (
+                        {skill.tips && (
                           <div className="mt-3 flex items-start gap-2 rounded-lg bg-gold/5 p-2.5">
                             <Lightbulb className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold" />
                             <p className="text-[0.6rem] leading-relaxed text-text-secondary line-clamp-2">

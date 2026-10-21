@@ -30,7 +30,7 @@ export async function generateMetadata({
 
   const canonicalUrl = `https://kenyahub.me/matatu/${townObj.slug}/`;
   const title = `${townObj.name} Matatu Routes, Stages, Fares & SACCOs (${routes.length} Routes)`;
-  const description = `Complete guide to ${routes.length} matatu and PSV routes in ${townObj.name} (${townObj.county} County). View CBD terminals, stages, peak and off-peak fares, and registered SACCO operators.`;
+  const description = `Complete guide to ${routes.length} matatu and PSV routes in ${townObj.name}. ${townObj.description} View stages, fare ranges, operating hours, and registered SACCO operators.`;
 
   return {
     title,

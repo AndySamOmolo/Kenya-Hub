@@ -22,6 +22,125 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Elder",
+          "translation": "Jaduong'",
+          "pronunciation": "jah-dwong",
+          "context": "Respected elder",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Ruoth / Jatelo",
+          "pronunciation": "rwohth / jah-teh-loh",
+          "context": "Chief or leader",
+          "audioFile": null
+        },
+        {
+          "english": "King",
+          "translation": "Ruoth",
+          "pronunciation": "rwohth",
+          "context": "King, lord, or sovereign",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Tich",
+          "pronunciation": "teech",
+          "context": "Work or labor (noun); Tiyo (to work)",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Chiro",
+          "pronunciation": "chee-roh",
+          "context": "Marketplace",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Pesa / Mwandu",
+          "pronunciation": "peh-sah",
+          "context": "Money or wealth",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Otieno /ewor",
+          "pronunciation": "oh-tyeh-noh",
+          "context": "Nighttime",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Chuny",
+          "pronunciation": "choony",
+          "context": "Heart or spirit",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Machiegni / Donjuru",
+          "pronunciation": "mah-chyeg-nee",
+          "context": "Welcome inside",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Oimore / Nind maber",
+          "pronunciation": "oh-ee-moh-reh",
+          "context": "Evening greeting / sleep well",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Oyawore",
+          "pronunciation": "oh-yah-woh-reh",
+          "context": "Morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Hera",
+          "pronunciation": "heh-rah",
+          "context": "Love or affection (noun); Hero (to love)",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Kwe",
+          "pronunciation": "kweh",
+          "context": "Peace and calm",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Dhako / Miyo",
+          "pronunciation": "dhah-koh",
+          "context": "Adult woman",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "Dichuo / Ng'ato",
+          "pronunciation": "dee-chwoh",
+          "context": "Adult man",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Misawa / Ber",
+          "pronunciation": "mee-sah-wah / behr",
+          "context": "Standard greeting",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Nyasaye / Were",
+          "pronunciation": "nya-sah-yeh / weh-reh",
+          "context": "Supreme Creator (Nyasaye / Were)",
+          "audioFile": null
+        },
+        {
           "english": "Peace! / Hello!",
           "translation": "Misawa!",
           "pronunciation": "mee-sah-wah",

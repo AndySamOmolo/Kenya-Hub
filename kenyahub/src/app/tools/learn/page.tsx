@@ -12,6 +12,8 @@ import {
   Flame,
   Star,
   Zap,
+  Layers,
+  ChevronDown,
 } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import type { LanguageConfig } from "@/data/courses/types";
@@ -20,12 +22,6 @@ import { TOOLS } from "@/lib/tools-registry";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
-/* ═══════════════════════════════════════════════════════
-   LANGUAGE PICKER — Choose your language to learn
-   ═══════════════════════════════════════════════════════ */
-
-// Published course metadata comes from the registry. Remaining entries are
-// placeholders until their courses are reviewed.
 const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })[] = [
   ...PUBLISHED_COURSES.map(({ config, units }) => ({
     ...config,
@@ -60,7 +56,6 @@ const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })
   },
 ];
 
-// Load saved progress for a language
 function getLanguageXp(languageId: string): { xp: number; streak: number } {
   if (typeof window === "undefined") return { xp: 0, streak: 0 };
   try {
@@ -77,6 +72,7 @@ export default function LearnPage() {
   const [progressMap, setProgressMap] = useState<
     Record<string, { xp: number; streak: number }>
   >({});
+  const [showAllModules, setShowAllModules] = useState(true);
 
   useEffect(() => {
     const map: Record<string, { xp: number; streak: number }> = {};
@@ -88,47 +84,66 @@ export default function LearnPage() {
 
   const readyLangs = AVAILABLE_LANGUAGES.filter((l) => l.ready);
   const comingLangs = AVAILABLE_LANGUAGES.filter((l) => !l.ready);
+  const totalModulesCount = PUBLISHED_COURSES.reduce(
+    (sum, c) => sum + c.units.reduce((s, u) => s + u.skills.length, 0),
+    0
+  );
 
   return (
     <ToolShell tool={LEARN_TOOL}>
-      <div className="mx-auto max-w-3xl px-4 pb-8">
+      <div className="mx-auto max-w-4xl px-0 sm:px-4 pb-8">
         {/* Hero */}
         <div className="mb-6 rounded-2xl border border-border bg-gradient-to-br from-bg-card via-bg-card to-gold/5 p-6 text-center sm:p-8">
           <div className="flex justify-center mb-3"><DynamicIcon emoji="🗣️" className="w-12 h-12 text-gold" /></div>
           <h2 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
             Learn a Kenyan Language
           </h2>
-          <p className="mx-auto mt-2 max-w-md text-sm text-text-secondary">
+          <p className="mx-auto mt-2 max-w-lg text-sm text-text-secondary">
             Interactive lessons with vocabulary, grammar, cultural notes, and
-            spaced repetition. Pick a language and start your journey.
+            mini-games. All units and modules are unlocked so you can start at any level.
           </p>
 
           {/* Global stats */}
-          <div className="mt-5 flex justify-center gap-4">
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
             <div className="flex items-center gap-1.5 rounded-full border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-secondary">
               <BookOpen className="h-3.5 w-3.5 text-gold" />{" "}
-              {readyLangs.length} language{readyLangs.length !== 1 ? "s" : ""}{" "}
-              available
+              {readyLangs.length} Courses Live
+            </div>
+            <div className="flex items-center gap-1.5 rounded-full border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-secondary">
+              <Layers className="h-3.5 w-3.5 text-kenya-green-light" />{" "}
+              {totalModulesCount} Unlocked Modules
             </div>
             <div className="flex items-center gap-1.5 rounded-full border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-secondary">
               <Globe2 className="h-3.5 w-3.5 text-gold" />{" "}
-              {comingLangs.length} coming soon
+              {comingLangs.length} Coming Soon
             </div>
           </div>
         </div>
 
         {/* Available Languages */}
-        <h3 className="mb-3 flex items-center gap-2 text-sm font-bold text-text-primary">
-          <Star className="h-4 w-4 text-gold" /> Available Courses
-        </h3>
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="mb-3 flex items-center justify-between">
+          <h3 className="flex items-center gap-2 text-sm font-bold text-text-primary">
+            <Star className="h-4 w-4 text-gold" /> Available Language Courses ({readyLangs.length})
+          </h3>
+          <button
+            onClick={() => setShowAllModules(!showAllModules)}
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-bg-card px-3 py-1.5 text-xs font-semibold text-gold hover:border-gold/50 transition-colors"
+          >
+            <Layers className="h-3.5 w-3.5" />
+            {showAllModules ? "Hide Module Previews" : "Show All Modules at Once"}
+            <ChevronDown className={`h-3.5 w-3.5 transition-transform ${showAllModules ? "rotate-180" : ""}`} />
+          </button>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2">
           {readyLangs.map((lang) => {
             const xpData = progressMap[lang.id] || { xp: 0, streak: 0 };
+            const courseObj = PUBLISHED_COURSES.find((c) => c.config.id === lang.id);
+
             return (
-              <Link
+              <div
                 key={lang.id}
-                href={`/tools/learn/${lang.id}`}
-                className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-5 transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+                className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-5 transition-all sm:hover:border-gold/40"
               >
                 {/* Color accent */}
                 <div
@@ -136,31 +151,33 @@ export default function LearnPage() {
                   style={{ backgroundColor: lang.color }}
                 />
 
-                <div className="flex items-center gap-4">
-                  <div className="flex-1 min-w-0">
-                    <h4 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors truncate">
-                      {lang.name}
-                      <span className="ml-1 text-xs font-normal text-text-muted">
-                        ({lang.nativeName})
-                      </span>
-                    </h4>
-                    <p className="mt-1 text-[0.7rem] text-text-secondary line-clamp-2 leading-relaxed">
-                      {lang.description}
-                    </p>
-                    <div className="mt-2.5 flex flex-wrap items-center gap-2 sm:gap-3">
-                      <span className="flex items-center gap-1 rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
-                        <Users className="h-3 w-3" /> {lang.speakers}
-                      </span>
-                      <span className="flex items-center gap-1 rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
-                        <BookOpen className="h-3 w-3" /> {lang.skills} skills
-                      </span>
-                      <span className="rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
-                        {lang.family}
-                      </span>
+                <Link href={`/tools/learn/${lang.id}`} className="block">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors truncate">
+                        {lang.name}
+                        <span className="ml-1 text-xs font-normal text-text-muted">
+                          ({lang.nativeName})
+                        </span>
+                      </h4>
+                      <p className="mt-1 text-[0.7rem] text-text-secondary line-clamp-2 leading-relaxed">
+                        {lang.description}
+                      </p>
+                      <div className="mt-2.5 flex flex-wrap items-center gap-2">
+                        <span className="flex items-center gap-1 rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
+                          <Users className="h-3 w-3" /> {lang.speakers}
+                        </span>
+                        <span className="flex items-center gap-1 rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-kenya-green-light font-semibold">
+                          <BookOpen className="h-3 w-3" /> {lang.skills} modules unlocked
+                        </span>
+                        <span className="rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
+                          {lang.family}
+                        </span>
+                      </div>
                     </div>
+                    <ArrowRight className="h-5 w-5 shrink-0 text-text-muted transition-transform group-hover:translate-x-1 group-hover:text-gold" />
                   </div>
-                  <ArrowRight className="h-5 w-5 shrink-0 text-text-muted transition-transform group-hover:translate-x-1 group-hover:text-gold" />
-                </div>
+                </Link>
 
                 {/* Progress bar if started */}
                 {xpData.xp > 0 && (
@@ -183,7 +200,30 @@ export default function LearnPage() {
                     )}
                   </div>
                 )}
-              </Link>
+
+                {/* All Units & Modules Preview inside the card */}
+                {showAllModules && courseObj && (
+                  <div className="mt-4 pt-3 border-t border-border/60 space-y-2">
+                    <p className="text-[0.625rem] font-bold uppercase tracking-wider text-text-muted">
+                      {courseObj.units.length} Units · Direct Module Access:
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {courseObj.units.map((unit) =>
+                        unit.skills.map((skill) => (
+                          <Link
+                            key={skill.id}
+                            href={`/tools/learn/${lang.id}#unit-block-${unit.id}`}
+                            className="inline-flex items-center gap-1 rounded-lg border border-border bg-bg-elevated/70 px-2 py-1 text-[0.65rem] text-text-secondary hover:border-gold hover:text-gold transition-colors"
+                          >
+                            <DynamicIcon emoji={skill.icon} className="w-3 h-3" />
+                            <span>{skill.title}</span>
+                          </Link>
+                        ))
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
             );
           })}
         </div>
@@ -233,4 +273,3 @@ export default function LearnPage() {
     </ToolShell>
   );
 }
-

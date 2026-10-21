@@ -20,6 +20,76 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "King",
+          "translation": "Omorwoti",
+          "pronunciation": "oh-moh-rwoh-tee",
+          "context": "King or chief",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Chiro / Esoko",
+          "pronunciation": "chee-roh",
+          "context": "Market",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Tsinsendi / Ebela",
+          "pronunciation": "tseen-sehn-dee",
+          "context": "Money",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Igoro",
+          "pronunciation": "ee-goh-roh",
+          "context": "Yesterday",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Rara buya",
+          "pronunciation": "rah-rah boo-yah",
+          "context": "Sleep well / good night",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Obwanchani",
+          "pronunciation": "oh-bwahn-chah-nee",
+          "context": "Love",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Omorembe",
+          "pronunciation": "oh-moh-rehm-beh",
+          "context": "Peace",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Baba / Ng'ina",
+          "pronunciation": "bah-bah",
+          "context": "Mother",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Tata / Ise",
+          "pronunciation": "tah-tah",
+          "context": "Father",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Engoro / Nyasae",
+          "pronunciation": "eh-ngoh-roh / nyah-sah-eh",
+          "context": "Supreme Creator",
+          "audioFile": null
+        },
+        {
           "english": "Hello / Morning greeting",
           "translation": "Bwakiire",
           "pronunciation": "bwah-kee-reh",

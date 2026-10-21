@@ -22,6 +22,48 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "King",
+          "translation": "Omwami",
+          "pronunciation": "oh-mwah-mee",
+          "context": "King or paramount ruler",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Esoko / Eshiro",
+          "pronunciation": "eh-shee-roh",
+          "context": "Marketplace",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Amang'ondo / Tsisendi",
+          "pronunciation": "tsee-sehn-dee",
+          "context": "Money",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Inyanga / Eshikha",
+          "pronunciation": "ee-nyah-ngah",
+          "context": "Day",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "kona bulayi",
+          "pronunciation": "koh-nah boo-lah-yee",
+          "context": "Sleep well / good night",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Obulayi / Okhukunda",
+          "pronunciation": "oh-boo-lah-yee",
+          "context": "Love and affection",
+          "audioFile": null
+        },
+        {
           "english": "Hello",
           "translation": "Mulembe",
           "pronunciation": "moo-lehm-beh",

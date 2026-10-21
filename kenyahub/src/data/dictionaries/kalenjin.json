@@ -26,6 +26,216 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Elder",
+          "translation": "Boisiek /Chejosiek",
+          "pronunciation": "boy-syeht",
+          "context": "Respected elder",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Kiruogindet",
+          "pronunciation": "kee-rwoh-geen-deht",
+          "context": "Chief or leader",
+          "audioFile": null
+        },
+        {
+          "english": "King",
+          "translation": "Orkoiyot / Kiruogindet",
+          "pronunciation": "ohr-koy-yoht",
+          "context": "Supreme leader / ruler",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Boisiet",
+          "pronunciation": "boy-syeht",
+          "context": "Work",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Sokon",
+          "pronunciation": "soh-kohn",
+          "context": "Market",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Rabinik",
+          "pronunciation": "rah-bee-neek",
+          "context": "Money",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Koonin / Amut",
+          "pronunciation": "ah-moot",
+          "context": "Yesterday",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Mutai",
+          "pronunciation": "moo-tai",
+          "context": "Tomorrow",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Rani",
+          "pronunciation": "rah-nee",
+          "context": "Today",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Kembout",
+          "pronunciation": "kehm-boh-oot",
+          "context": "Night",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Betut",
+          "pronunciation": "beh-toot",
+          "context": "Day",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Korotik",
+          "pronunciation": "koh-roh-teek",
+          "context": "Blood",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Muguleldo",
+          "pronunciation": "moo-goo-lehl-doh",
+          "context": "Heart",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "Eut",
+          "pronunciation": "eh-oot",
+          "context": "Hand or arm",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Kong'da",
+          "pronunciation": "kohng-dah",
+          "context": "Eye",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Metit",
+          "pronunciation": "meh-teet",
+          "context": "Head",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Injuriet",
+          "pronunciation": "een-joo-ryeht",
+          "context": "Fish",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Tarityet",
+          "pronunciation": "tah-reet-yeht",
+          "context": "Bird",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Ng'okto",
+          "pronunciation": "ngohk-toh",
+          "context": "Dog",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Ng'ororiet / Artet",
+          "pronunciation": "ahr-teht",
+          "context": "Goat or sheep",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Pendo",
+          "pronunciation": "pehn-doh",
+          "context": "Meat",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Ketit",
+          "pronunciation": "keh-teet",
+          "context": "Tree",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Ru komnyo",
+          "pronunciation": "roo kohm-nyoh",
+          "context": "Sleep well / good night",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Chamnyet",
+          "pronunciation": "chahm-nyeht",
+          "context": "Love (noun)",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Kalyet",
+          "pronunciation": "kahl-yeht",
+          "context": "Peace",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Kwondo / Chepyoset",
+          "pronunciation": "kwohn-doh",
+          "context": "Adult woman",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "Muren / Chito",
+          "pronunciation": "moo-ren",
+          "context": "Adult man",
+          "audioFile": null
+        },
+        {
+          "english": "Home",
+          "translation": "Kaa",
+          "pronunciation": "kah",
+          "context": "Home or homestead",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Koot / Kor",
+          "pronunciation": "koht",
+          "context": "House",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Mat",
+          "pronunciation": "maht",
+          "context": "Fire",
+          "audioFile": null
+        },
+        {
           "english": "Hello / How are you?",
           "translation": "Chamge?",
           "pronunciation": "chahm-geh",

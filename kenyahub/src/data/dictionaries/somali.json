@@ -22,6 +22,244 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Elder",
+          "translation": "Oday",
+          "pronunciation": "oh-day",
+          "context": "Respected elder",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Ugaas / Suldaan",
+          "pronunciation": "oo-gahs",
+          "context": "Traditional clan leader / chief",
+          "audioFile": null
+        },
+        {
+          "english": "King",
+          "translation": "Boqor",
+          "pronunciation": "boh-qor",
+          "context": "King",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Shaqo",
+          "pronunciation": "shah-qoh",
+          "context": "Work",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Suuq",
+          "pronunciation": "sooq",
+          "context": "Market",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Lacag",
+          "pronunciation": "lah-ahg",
+          "context": "Money",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Shalay",
+          "pronunciation": "shah-lay",
+          "context": "Yesterday",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Berri",
+          "pronunciation": "behr-ree",
+          "context": "Tomorrow",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Maanta",
+          "pronunciation": "mahn-tah",
+          "context": "Today",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Habeen",
+          "pronunciation": "hah-behn",
+          "context": "Night",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Maalin",
+          "pronunciation": "mah-leen",
+          "context": "Day",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Dhiig",
+          "pronunciation": "dheeg",
+          "context": "Blood",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Wadne",
+          "pronunciation": "wahd-neh",
+          "context": "Heart",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "Gacan",
+          "pronunciation": "gah-ahn",
+          "context": "Hand",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Il",
+          "pronunciation": "eel",
+          "context": "Eye (pl. Indho)",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Madax",
+          "pronunciation": "mah-dahkh",
+          "context": "Head",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Kalluun",
+          "pronunciation": "kahl-loon",
+          "context": "Fish",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Shimbir",
+          "pronunciation": "sheem-beer",
+          "context": "Bird",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Eey",
+          "pronunciation": "ehy",
+          "context": "Dog",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Riyo / Ari",
+          "pronunciation": "ree-yoh",
+          "context": "Goat",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Hilib",
+          "pronunciation": "hee-leeb",
+          "context": "Meat",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "Roob",
+          "pronunciation": "rohb",
+          "context": "Rain",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Geed",
+          "pronunciation": "gehd",
+          "context": "Tree",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Soo dhawoow",
+          "pronunciation": "soh dhah-wow",
+          "context": "Welcome",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Habeen wanaagsan",
+          "pronunciation": "hah-behn wah-nahg-sahn",
+          "context": "Good night",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Jacayl",
+          "pronunciation": "jah-ayl",
+          "context": "Love",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Naag / Haweenay",
+          "pronunciation": "hah-weh-nay",
+          "context": "Adult woman",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "Nin",
+          "pronunciation": "neen",
+          "context": "Adult man",
+          "audioFile": null
+        },
+        {
+          "english": "Home",
+          "translation": "Hoy / Guri",
+          "pronunciation": "hoy",
+          "context": "Home",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Guri / Aqal",
+          "pronunciation": "goo-ree",
+          "context": "House",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Dab",
+          "pronunciation": "dahb",
+          "context": "Fire",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "Qorrax",
+          "pronunciation": "qor-rahkh",
+          "context": "Sun",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "Saaxiib",
+          "pronunciation": "sah-kheeb",
+          "context": "Friend",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "Sac / Lo'",
+          "pronunciation": "sah-ah",
+          "context": "Cow / cattle",
+          "audioFile": null
+        },
+        {
           "english": "Peace be upon you",
           "translation": "Assalamu alaikum",
           "pronunciation": "ah-sah-lah-moo ah-lah-ee-koom",

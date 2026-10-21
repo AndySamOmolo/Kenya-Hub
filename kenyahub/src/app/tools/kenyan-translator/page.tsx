@@ -341,18 +341,24 @@ export default function KenyanTranslatorPage() {
     if (viewMode !== "compare" || !searchQuery.trim()) {
       return { comparisonResults: [], resolvedEnglish: null };
     }
-    const q = searchQuery.toLowerCase().trim();
+    const cleanTerm = (s: string) =>
+      s
+        .toLowerCase()
+        .replace(/\s*\([^)]*\)/g, "")
+        .replace(/[!?.]/g, "")
+        .trim();
+
+    const q = cleanTerm(searchQuery);
 
     // Check if query matches a local language translation in any dictionary
-    // e.g. user typed "ejok" (Turkana for Hello) or "ngakipi" (Turkana for Water)
     let matchedEnglish = q;
     for (const d of ALL_DICTS) {
       for (const cat of d.categories) {
         for (const entry of cat.entries) {
-          const trans = entry.translation.toLowerCase().trim();
-          const transParts = trans.split(/[\/,\(]/).map((s) => s.trim());
-          if (trans === q || transParts.includes(q)) {
-            matchedEnglish = entry.english.toLowerCase().trim();
+          const transClean = cleanTerm(entry.translation);
+          const transParts = transClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
+          if (transClean === q || transParts.includes(q)) {
+            matchedEnglish = cleanTerm(entry.english);
             break;
           }
         }
@@ -365,7 +371,7 @@ export default function KenyanTranslatorPage() {
     if (matchedEnglish !== q) {
       targetWords.unshift(matchedEnglish);
     }
-    const slashParts = matchedEnglish.split("/").map((s) => s.trim().toLowerCase()).filter(Boolean);
+    const slashParts = matchedEnglish.split(/[\/,;]/).map((s) => s.trim().toLowerCase()).filter(Boolean);
     slashParts.forEach((sp) => {
       if (!targetWords.includes(sp)) targetWords.push(sp);
     });
@@ -377,20 +383,23 @@ export default function KenyanTranslatorPage() {
       if (!dict) return;
       let found: DictEntry | null = null;
 
-      // Pass 1: Exact matches on English or Translation
+      // Pass 1: Exact headword or synonym match (stripping parenthetical notes like "(The Creator)")
       for (const cat of dict.categories) {
         for (const entry of cat.entries) {
-          const eng = entry.english.toLowerCase().trim();
-          const engParts = eng.split("/").map((s) => s.trim());
-          const trans = entry.translation.toLowerCase().trim();
-          const transParts = trans.split("/").map((s) => s.trim());
+          const engRaw = entry.english.toLowerCase().trim();
+          const engClean = cleanTerm(entry.english);
+          const engParts = engClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
+          const transClean = cleanTerm(entry.translation);
+          const transParts = transClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
 
           if (
             targetWords.some(
               (tw) =>
-                eng === tw ||
+                engRaw === tw ||
+                engClean === tw ||
                 engParts.includes(tw) ||
-                trans === tw ||
+                engParts.includes(`to ${tw}`) ||
+                transClean === tw ||
                 transParts.includes(tw)
             )
           ) {
@@ -401,15 +410,15 @@ export default function KenyanTranslatorPage() {
         if (found) break;
       }
 
-      // Pass 2: Word-boundary / partial inclusion matches on English
+      // Pass 2: Only match multi-word phrases if the user searched a multi-word phrase
       if (!found) {
         for (const cat of dict.categories) {
           for (const entry of cat.entries) {
-            const eng = entry.english.toLowerCase().trim();
+            const engClean = cleanTerm(entry.english);
             if (
               targetWords.some((tw) => {
-                const words = eng.split(/[\s,\/]+/);
-                return words.includes(tw) || eng.includes(tw);
+                if (!tw.includes(" ")) return false;
+                return engClean.includes(tw);
               })
             ) {
               found = entry;

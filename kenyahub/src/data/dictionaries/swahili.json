@@ -23,6 +23,153 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Elder",
+          "translation": "Mzee",
+          "pronunciation": "m-zeh-eh",
+          "context": "Respected elder",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Chifu / Mtemi",
+          "pronunciation": "chee-foo",
+          "context": "Administrative or traditional chief",
+          "audioFile": null
+        },
+        {
+          "english": "King",
+          "translation": "Mfalme",
+          "pronunciation": "m-fahl-meh",
+          "context": "King or monarch",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Kazi",
+          "pronunciation": "kah-zee",
+          "context": "Work or employment",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Siku / Mchana",
+          "pronunciation": "see-koo",
+          "context": "Day / daytime",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Damu",
+          "pronunciation": "dah-moo",
+          "context": "Blood",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Moyo",
+          "pronunciation": "moh-yoh",
+          "context": "Heart",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "Mkono",
+          "pronunciation": "m-koh-noh",
+          "context": "Hand or arm",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Jicho",
+          "pronunciation": "jee-choh",
+          "context": "Eye (pl. Macho)",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Kichwa",
+          "pronunciation": "kee-chwah",
+          "context": "Head",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Ndege",
+          "pronunciation": "n-deh-geh",
+          "context": "Bird",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Mbwa",
+          "pronunciation": "m-bwah",
+          "context": "Domestic dog",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Nyama",
+          "pronunciation": "nyah-mah",
+          "context": "Meat",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Upendo / Mapenzi",
+          "pronunciation": "oo-peh-ndoh",
+          "context": "Love or affection",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Amani",
+          "pronunciation": "ah-mah-nee",
+          "context": "Peace and harmony",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Mwanamke",
+          "pronunciation": "mwah-nahm-keh",
+          "context": "Adult woman",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "Mwanaume",
+          "pronunciation": "mwah-nah-oo-meh",
+          "context": "Adult man",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "Moto",
+          "pronunciation": "moh-toh",
+          "context": "Fire or heat",
+          "audioFile": null
+        },
+        {
+          "english": "Home",
+          "translation": "Nyumbani / Kwetu",
+          "pronunciation": "nyoo-mbah-nee",
+          "context": "Home / homestead",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Nyumba",
+          "pronunciation": "nyoo-mbah",
+          "context": "House or building",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Mungu / Mola",
+          "pronunciation": "moo-ngoo / moh-lah",
+          "context": "Supreme Creator",
+          "audioFile": null
+        },
+        {
           "english": "Hello",
           "translation": "Jambo",
           "pronunciation": "jahm-boh",

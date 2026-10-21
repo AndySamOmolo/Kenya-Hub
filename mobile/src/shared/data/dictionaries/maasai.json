@@ -21,6 +21,111 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "King",
+          "translation": "Oloiboni / Olaiguenani",
+          "pronunciation": "oh-loi-boh-nee",
+          "context": "Supreme spiritual / traditional leader",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Esiai",
+          "pronunciation": "eh-syai",
+          "context": "Work",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Esokoni",
+          "pronunciation": "eh-soh-koh-nee",
+          "context": "Market",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Impisai / Iropiyiani",
+          "pronunciation": "ee-roh-pee-yah-nee",
+          "context": "Money",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Ng'ole",
+          "pronunciation": "ngoh-leh",
+          "context": "Yesterday",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Taisere",
+          "pronunciation": "tai-seh-reh",
+          "context": "Tomorrow",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Taata",
+          "pronunciation": "tah-tah",
+          "context": "Today",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Enkolong'",
+          "pronunciation": "ehn-koh-lohng",
+          "context": "Day / sun",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Oldia",
+          "pronunciation": "ohl-dyah",
+          "context": "Domestic dog",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Girai / Lala sere",
+          "pronunciation": "lah-lah seh-reh",
+          "context": "Good night / sleep in peace",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Supai / Kasserian ing'era",
+          "pronunciation": "soo-pai",
+          "context": "Morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Enchom / Enyorrata",
+          "pronunciation": "ehn-yor-rah-tah",
+          "context": "Love",
+          "audioFile": null
+        },
+        {
+          "english": "Home",
+          "translation": "Enkang'",
+          "pronunciation": "ehn-kahng",
+          "context": "Homestead / kraal",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Enkaji",
+          "pronunciation": "ehn-kah-jee",
+          "context": "House",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Enkai / Parmuat",
+          "pronunciation": "ehn-kai",
+          "context": "God / Supreme Deity",
+          "audioFile": null
+        },
+        {
           "english": "Hello (to a man)",
           "translation": "Sopa, Supai",
           "pronunciation": "soh-pah, soo-pah-ee",

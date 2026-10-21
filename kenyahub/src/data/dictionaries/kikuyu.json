@@ -23,6 +23,132 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Chief",
+          "translation": "Mũnene / Ciĩfu",
+          "pronunciation": "moo-neh-neh",
+          "context": "Chief or administrator",
+          "audioFile": null
+        },
+        {
+          "english": "King",
+          "translation": "Mũthamaki",
+          "pronunciation": "moo-thah-mah-kee",
+          "context": "King or supreme leader",
+          "audioFile": null
+        },
+        {
+          "english": "Work",
+          "translation": "Wĩra",
+          "pronunciation": "wee-rah",
+          "context": "Work or duty",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "Thoko / Kĩng'ang'i",
+          "pronunciation": "thoh-koh",
+          "context": "Marketplace",
+          "audioFile": null
+        },
+        {
+          "english": "Money",
+          "translation": "Mbeca",
+          "pronunciation": "mbeh-chah",
+          "context": "Money",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Ira",
+          "pronunciation": "ee-rah",
+          "context": "Yesterday",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Rũciũ",
+          "pronunciation": "roo-shyoo",
+          "context": "Tomorrow",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Ũmũthĩ",
+          "pronunciation": "oo-moo-thee",
+          "context": "Today",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Ũtukũ",
+          "pronunciation": "oo-too-koo",
+          "context": "Nighttime",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Mũthenya",
+          "pronunciation": "moo-theh-nyah",
+          "context": "Day or daytime",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Thamaki",
+          "pronunciation": "thah-mah-kee",
+          "context": "Fish",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Ngũi",
+          "pronunciation": "ngoo-ee",
+          "context": "Domestic dog",
+          "audioFile": null
+        },
+        {
+          "english": "Good night",
+          "translation": "Koma wega",
+          "pronunciation": "koh-mah weh-gah",
+          "context": "Sleep well / good night",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Wĩ mwega rũciinĩ",
+          "pronunciation": "wee mweh-gah roo-chee-nee",
+          "context": "Morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Wendo",
+          "pronunciation": "weh-ndoh",
+          "context": "Love (noun); Kwenda (to love)",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Thayũ",
+          "pronunciation": "thah-yoo",
+          "context": "Peace and well-being",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Nyũmba",
+          "pronunciation": "nyoom-bah",
+          "context": "Family house",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Ngai / Mwene-Nyaga",
+          "pronunciation": "ngai / mweh-neh nyah-gah",
+          "context": "God, the Supreme Creator",
+          "audioFile": null
+        },
+        {
           "english": "How is your morning?",
           "translation": "Ũhoro wa rũciinĩ",
           "pronunciation": "oo-hoh-roh wah roo-chee-nee",
