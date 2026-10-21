@@ -2829,9 +2829,18 @@ export default function LanguageCourseTool() {
           {(wisdomLang === 'kikuyu' || (wisdomLang === 'luo' && luoSubTab === 'proverbs')) && (
             <View style={styles.langChipsGrid}>
               {(wisdomLang === 'kikuyu'
-                ? ['All', ...(kikuyuProverbsData.categories || [])]
+                ? [
+                    'All',
+                    ...Array.from(
+                      new Set(
+                        (Array.isArray(kikuyuProverbsData) ? kikuyuProverbsData : [])
+                          .map((item: any) => item.category)
+                          .filter(Boolean)
+                      )
+                    ),
+                  ]
                 : ['All', 'wisdom', 'warning', 'truth', 'patience', 'family', 'character', 'life']
-              ).map((cat) => {
+              ).map((cat: string) => {
                 const active = proverbCategory === cat;
                 return (
                   <Pressable
@@ -2869,14 +2878,16 @@ export default function LanguageCourseTool() {
           {wisdomLang === 'kikuyu' &&
             (() => {
               const q = proverbSearch.trim().toLowerCase();
-              const filtered = (kikuyuProverbsData.proverbs || []).filter((p) => {
+              const rawList = Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : [];
+              const filtered = rawList.filter((p: any) => {
                 if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
                 if (!q) return true;
                 return (
-                  p.kikuyu.toLowerCase().includes(q) ||
-                  p.literal.toLowerCase().includes(q) ||
-                  p.meaning.toLowerCase().includes(q) ||
-                  String(p.number) === q
+                  (p.kikuyu || '').toLowerCase().includes(q) ||
+                  (p.translation || '').toLowerCase().includes(q) ||
+                  (p.explanation || '').toLowerCase().includes(q) ||
+                  (p.englishEquivalent || '').toLowerCase().includes(q) ||
+                  String(p.id) === q
                 );
               });
               const visible = filtered.slice(0, proverbPage * 20);
@@ -2885,9 +2896,9 @@ export default function LanguageCourseTool() {
                   <Text style={{ fontSize: 11, color: colors.textMuted }}>
                     Showing {visible.length} of {filtered.length} Gĩkũyũ proverbs
                   </Text>
-                  {visible.map((p) => (
+                  {visible.map((p: any) => (
                     <View
-                      key={p.number}
+                      key={p.id}
                       style={[
                         styles.grammarAccordionCard,
                         {
@@ -2900,7 +2911,7 @@ export default function LanguageCourseTool() {
                     >
                       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                         <Text style={{ fontSize: 11, fontWeight: '800', color: '#10B981' }}>
-                          Proverb #{p.number}
+                          Proverb #{p.id}
                         </Text>
                         <Text style={{ fontSize: 11, color: colors.textMuted }}>{p.category}</Text>
                       </View>
@@ -2908,11 +2919,16 @@ export default function LanguageCourseTool() {
                         “{p.kikuyu}”
                       </Text>
                       <Text style={{ fontSize: 12.5, fontStyle: 'italic', color: colors.textSecondary }}>
-                        Literal: {p.literal}
+                        Literal: {p.translation}
                       </Text>
-                      {p.meaning && p.meaning !== p.literal ? (
+                      {p.explanation ? (
                         <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
-                          💡 {p.meaning}
+                          💡 {p.explanation}
+                        </Text>
+                      ) : null}
+                      {p.englishEquivalent ? (
+                        <Text style={{ fontSize: 11.5, color: '#10B981', marginTop: 2 }}>
+                          Equivalent: {p.englishEquivalent}
                         </Text>
                       ) : null}
                     </View>

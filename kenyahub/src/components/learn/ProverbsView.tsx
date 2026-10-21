@@ -3,22 +3,45 @@
 import { useState, useMemo } from "react";
 import { Search, Shuffle, Eye, EyeOff, Sparkles, BookOpen } from "lucide-react";
 import kikuyuProverbsData from "@/data/kikuyu-proverbs.json";
-import { luoProverbs } from "@/data/courses/luo/proverbs";
-import { luoRiddles } from "@/data/courses/luo/riddles";
-import { luoTongueTwisters } from "@/data/courses/luo/tongue-twisters";
+import { luoProverbs, type ProverbEntry } from "@/data/courses/luo/proverbs";
+import { luoRiddles, type RiddleEntry } from "@/data/courses/luo/riddles";
+import { luoTongueTwisters, type TongueTwisterEntry } from "@/data/courses/luo/tongue-twisters";
+
+export interface KikuyuProverbItem {
+  id: number;
+  kikuyu: string;
+  translation: string;
+  explanation: string | null;
+  englishEquivalent: string | null;
+  category: string;
+}
+
+const KIKUYU_PROVERBS: KikuyuProverbItem[] = Array.isArray(kikuyuProverbsData)
+  ? (kikuyuProverbsData as KikuyuProverbItem[])
+  : [];
+
+function normalizeDiacritics(str: string): string {
+  return str
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
 
 type WisdomLanguage = "kikuyu" | "luo";
 type LuoSubTab = "proverbs" | "riddles" | "twisters";
 
 export default function ProverbsView({
+  defaultLanguageId,
   initialLanguage = "kikuyu",
   accentColor = "#10B981",
 }: {
+  defaultLanguageId?: string;
   initialLanguage?: string;
   accentColor?: string;
 }) {
+  const resolvedInitial = defaultLanguageId || initialLanguage;
   const [selectedLang, setSelectedLang] = useState<WisdomLanguage>(
-    initialLanguage === "luo" ? "luo" : "kikuyu"
+    resolvedInitial === "luo" ? "luo" : "kikuyu"
   );
   const [luoSubTab, setLuoSubTab] = useState<LuoSubTab>("proverbs");
   const [search, setSearch] = useState("");
@@ -27,10 +50,12 @@ export default function ProverbsView({
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 24;
 
-  const kikuyuCategories = useMemo(
-    () => ["All", ...(kikuyuProverbsData.categories || [])],
-    []
-  );
+  const kikuyuCategories = useMemo(() => {
+    const cats = Array.from(
+      new Set(KIKUYU_PROVERBS.map((p: KikuyuProverbItem) => p.category).filter(Boolean))
+    );
+    return ["All", ...cats];
+  }, []);
 
   const luoCategories = [
     "All",
@@ -45,21 +70,24 @@ export default function ProverbsView({
 
   const filteredKikuyu = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return (kikuyuProverbsData.proverbs || []).filter((p) => {
+    const normQ = normalizeDiacritics(q);
+    return KIKUYU_PROVERBS.filter((p: KikuyuProverbItem) => {
       if (selectedCategory !== "All" && p.category !== selectedCategory) return false;
       if (!q) return true;
       return (
         p.kikuyu.toLowerCase().includes(q) ||
-        p.literal.toLowerCase().includes(q) ||
-        p.meaning.toLowerCase().includes(q) ||
-        String(p.number) === q
+        normalizeDiacritics(p.kikuyu).includes(normQ) ||
+        p.translation.toLowerCase().includes(q) ||
+        (p.explanation || "").toLowerCase().includes(q) ||
+        (p.englishEquivalent || "").toLowerCase().includes(q) ||
+        String(p.id) === q
       );
     });
   }, [search, selectedCategory]);
 
   const filteredLuoProverbs = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return luoProverbs.filter((p) => {
+    return luoProverbs.filter((p: ProverbEntry) => {
       if (selectedCategory !== "All" && p.category !== selectedCategory) return false;
       if (!q) return true;
       return (
@@ -75,7 +103,7 @@ export default function ProverbsView({
     const q = search.trim().toLowerCase();
     if (!q) return luoRiddles;
     return luoRiddles.filter(
-      (r) =>
+      (r: RiddleEntry) =>
         r.luo.toLowerCase().includes(q) ||
         r.english.toLowerCase().includes(q) ||
         r.answer.toLowerCase().includes(q)
@@ -86,16 +114,16 @@ export default function ProverbsView({
     const q = search.trim().toLowerCase();
     if (!q) return luoTongueTwisters;
     return luoTongueTwisters.filter(
-      (t) => t.luo.toLowerCase().includes(q) || t.english.toLowerCase().includes(q)
+      (t: TongueTwisterEntry) =>
+        t.luo.toLowerCase().includes(q) || t.english.toLowerCase().includes(q)
     );
   }, [search]);
 
   const pickRandom = () => {
     setSelectedCategory("All");
     if (selectedLang === "kikuyu") {
-      const list = kikuyuProverbsData.proverbs;
-      const item = list[Math.floor(Math.random() * list.length)];
-      if (item) setSearch(String(item.number));
+      const item = KIKUYU_PROVERBS[Math.floor(Math.random() * KIKUYU_PROVERBS.length)];
+      if (item) setSearch(String(item.id));
     } else if (luoSubTab === "proverbs") {
       const item = luoProverbs[Math.floor(Math.random() * luoProverbs.length)];
       if (item) setSearch(item.luo.slice(0, 18));
@@ -111,7 +139,10 @@ export default function ProverbsView({
       <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-5">
         <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: `${accentColor}15`, color: accentColor }}>
+            <div
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider mb-2"
+              style={{ backgroundColor: `${accentColor}15`, color: accentColor }}
+            >
               <Sparkles className="w-3.5 h-3.5" />
               Kenyan Oral Literature & Cultural Wisdom
             </div>
@@ -119,7 +150,8 @@ export default function ProverbsView({
               Proverbs, Riddles & Tongue Twisters
             </h2>
             <p className="text-xs text-[var(--text-secondary)] mt-1">
-              Explore 989 verified Gĩkũyũ proverbs (Fr. G. Barra, 1939) and 600+ Dholuo proverbs, riddles, and tongue twisters — integrated directly into the Language Learning Hub.
+              Explore {KIKUYU_PROVERBS.length} verified Gĩkũyũ proverbs (Fr. G. Barra, 1939) and{" "}
+              {luoProverbs.length + luoRiddles.length + luoTongueTwisters.length} Dholuo proverbs, riddles, and tongue twisters — integrated directly into the Language Learning Hub.
             </p>
           </div>
 
@@ -137,7 +169,7 @@ export default function ProverbsView({
                   : "bg-[var(--bg-elevated)] text-[var(--text-secondary)] border-[var(--border)]"
               }`}
             >
-              🌿 Gĩkũyũ Proverbs (989)
+              🌿 Gĩkũyũ Proverbs ({KIKUYU_PROVERBS.length})
             </button>
             <button
               onClick={() => {
@@ -196,7 +228,7 @@ export default function ProverbsView({
               }}
               placeholder={
                 selectedLang === "kikuyu"
-                  ? "Search by Gĩkũyũ word, English meaning, or proverb # (1–989)..."
+                  ? "Search by Gĩkũyũ word (u matches ũ), English meaning, or # (1–1000)..."
                   : "Search Dholuo text, literal translation, or moral lesson..."
               }
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--gold)]"
@@ -225,7 +257,7 @@ export default function ProverbsView({
 
         {(selectedLang === "kikuyu" || (selectedLang === "luo" && luoSubTab === "proverbs")) && (
           <div className="flex flex-wrap gap-1.5 mt-3.5">
-            {(selectedLang === "kikuyu" ? kikuyuCategories : luoCategories).map((cat) => {
+            {(selectedLang === "kikuyu" ? kikuyuCategories : luoCategories).map((cat: string) => {
               const active = selectedCategory === cat;
               return (
                 <button
@@ -250,35 +282,42 @@ export default function ProverbsView({
 
       {selectedLang === "kikuyu" && (
         <>
-          <div className="flex items-center justify-between text-xs text-[var(--text-muted)] px-1">
-            <span>Showing {Math.min(filteredKikuyu.length, page * PAGE_SIZE)} of {filteredKikuyu.length} Gĩkũyũ proverbs</span>
+          <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[var(--text-muted)] px-1">
+            <span>
+              Showing {Math.min(filteredKikuyu.length, page * PAGE_SIZE)} of {filteredKikuyu.length} Gĩkũyũ proverbs
+            </span>
             <span className="inline-flex items-center gap-1">
-              <BookOpen className="w-3.5 h-3.5" /> Source: {kikuyuProverbsData.source}
+              <BookOpen className="w-3.5 h-3.5" /> Source: Fr. G. Barra (1939), 1,000 Kikuyu Proverbs
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-            {filteredKikuyu.slice(0, page * PAGE_SIZE).map((p) => (
+            {filteredKikuyu.slice(0, page * PAGE_SIZE).map((p: KikuyuProverbItem) => (
               <div
-                key={p.number}
+                key={p.id}
                 className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 hover:border-emerald-500/30 transition-all"
               >
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">
-                    #{p.number}
+                    #{p.id}
                   </span>
-                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[var(--bg-elevated)] text-[var(--text-muted)]">
+                  <span className="text-[10px] font-semibold capitalize px-2 py-0.5 rounded-full bg-[var(--bg-elevated)] text-[var(--text-muted)]">
                     {p.category}
                   </span>
                 </div>
-                <p className="text-base font-bold text-[var(--text-primary)] font-[family-name:var(--font-display)] mb-1.5">
+                <p className="text-base font-bold text-[var(--text-primary)] font-[family-name:var(--font-display)] mb-1.5 break-words">
                   “{p.kikuyu}”
                 </p>
-                <p className="text-xs italic text-[var(--text-secondary)] mb-2">
-                  Literal: {p.literal}
+                <p className="text-xs italic text-[var(--text-secondary)] mb-2 break-words">
+                  Literal: {p.translation}
                 </p>
-                {p.meaning && p.meaning !== p.literal && (
-                  <p className="text-xs text-[var(--text-muted)] pt-2 border-t border-[var(--border)]">
-                    <strong className="text-[var(--text-secondary)]">Wisdom:</strong> {p.meaning}
+                {p.explanation && (
+                  <p className="text-xs text-[var(--text-muted)] pt-2 border-t border-[var(--border)] break-words">
+                    <strong className="text-[var(--text-secondary)]">Meaning:</strong> {p.explanation}
+                  </p>
+                )}
+                {p.englishEquivalent && (
+                  <p className="text-[11px] text-emerald-400/90 mt-1.5 break-words">
+                    <strong>Equivalent:</strong> {p.englishEquivalent}
                   </p>
                 )}
               </div>
@@ -303,7 +342,7 @@ export default function ProverbsView({
             Showing {Math.min(filteredLuoProverbs.length, page * PAGE_SIZE)} of {filteredLuoProverbs.length} Dholuo proverbs
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-            {filteredLuoProverbs.slice(0, page * PAGE_SIZE).map((p, idx) => (
+            {filteredLuoProverbs.slice(0, page * PAGE_SIZE).map((p: ProverbEntry, idx: number) => (
               <div
                 key={p.id || idx}
                 className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 hover:border-sky-500/30 transition-all"
@@ -318,14 +357,14 @@ export default function ProverbsView({
                     </span>
                   )}
                 </div>
-                <p className="text-base font-bold text-[var(--text-primary)] font-[family-name:var(--font-display)] mb-1.5">
+                <p className="text-base font-bold text-[var(--text-primary)] font-[family-name:var(--font-display)] mb-1.5 break-words">
                   “{p.luo}”
                 </p>
-                <p className="text-xs italic text-[var(--text-secondary)] mb-2">
+                <p className="text-xs italic text-[var(--text-secondary)] mb-2 break-words">
                   {p.english}
                 </p>
                 {(p.meaning || p.explanation) && (
-                  <p className="text-xs text-[var(--text-muted)] pt-2 border-t border-[var(--border)]">
+                  <p className="text-xs text-[var(--text-muted)] pt-2 border-t border-[var(--border)] break-words">
                     <strong className="text-[var(--text-secondary)]">Meaning:</strong>{" "}
                     {p.meaning || p.explanation}
                   </p>
@@ -348,7 +387,7 @@ export default function ProverbsView({
 
       {selectedLang === "luo" && luoSubTab === "riddles" && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-          {filteredLuoRiddles.map((r) => {
+          {filteredLuoRiddles.map((r: RiddleEntry) => {
             const key = `riddle-${r.id}`;
             const revealed = !!revealedIds[key];
             return (
@@ -370,14 +409,14 @@ export default function ProverbsView({
                     {revealed ? "Hide Answer" : "Reveal Answer"}
                   </button>
                 </div>
-                <p className="text-sm font-bold text-[var(--text-primary)] mb-1">
+                <p className="text-sm font-bold text-[var(--text-primary)] mb-1 break-words">
                   “{r.luo}”
                 </p>
-                <p className="text-xs text-[var(--text-secondary)] mb-3">
+                <p className="text-xs text-[var(--text-secondary)] mb-3 break-words">
                   {r.english}
                 </p>
                 {revealed && (
-                  <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-xs text-emerald-300">
+                  <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-xs text-emerald-300 break-words">
                     <strong>Answer:</strong> {r.answer}
                   </div>
                 )}
@@ -389,7 +428,7 @@ export default function ProverbsView({
 
       {selectedLang === "luo" && luoSubTab === "twisters" && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-          {filteredLuoTwisters.map((t) => (
+          {filteredLuoTwisters.map((t: TongueTwisterEntry) => (
             <div
               key={t.id}
               className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4"
@@ -397,10 +436,10 @@ export default function ProverbsView({
               <span className="inline-block text-[11px] font-bold px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 mb-2">
                 Tongue Twister #{t.id}
               </span>
-              <p className="text-sm font-bold text-[var(--text-primary)] mb-1.5">
+              <p className="text-sm font-bold text-[var(--text-primary)] mb-1.5 break-words">
                 “{t.luo}”
               </p>
-              <p className="text-xs text-[var(--text-secondary)]">
+              <p className="text-xs text-[var(--text-secondary)] break-words">
                 {t.english}
               </p>
             </div>
