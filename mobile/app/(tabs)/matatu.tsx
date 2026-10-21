@@ -365,7 +365,7 @@ export default function MatatuScreen() {
 
         {/* Fare Range & Sort Controls (mirrors web TownMatatuView) */}
         <View style={styles.filterSubRow}>
-          <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
             {(
               [
                 { id: "all", label: "All Fares" },
@@ -401,7 +401,7 @@ export default function MatatuScreen() {
                 </Pressable>
               );
             })}
-          </View>
+          </ScrollView>
 
           <View
             style={[
@@ -454,7 +454,7 @@ export default function MatatuScreen() {
       >
         {/* SACCO Filter Pills */}
         {availableSaccos.length > 1 && (
-          <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6, marginBottom: 12  }}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 12 }}>
             {["all", ...availableSaccos].map((sacco) => {
               const active = saccoFilter === sacco;
               return (
@@ -488,7 +488,7 @@ export default function MatatuScreen() {
                 </Pressable>
               );
             })}
-          </View>
+          </ScrollView>
         )}
 
         <Text style={[styles.resultsCount, { color: theme.textMuted }]}>

@@ -692,8 +692,24 @@ export default function KenyanTranslatorPage() {
             {!searchQuery && targetDict && (
               <>
                 <div>
-                  <h3 className="text-sm font-bold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">Browse by Category</h3>
-                  <div className="flex flex-wrap gap-2">
+                  <h3 className="text-sm font-bold text-text-primary mb-2.5 font-[family-name:var(--font-outfit)]">Browse by Category</h3>
+                  <div className="sm:hidden mb-2">
+                    <CustomSelect
+                      value={activeCategory || ""}
+                      onValueChange={(val) => setActiveCategory(val || null)}
+                      options={[
+                        { value: "", label: "Select a vocabulary category..." },
+                        ...ALL_CATEGORY_IDS.filter((cat) =>
+                          targetDict.categories.some((c) => c.id === cat.id && c.entries.length > 0)
+                        ).map((cat) => ({
+                          value: cat.id,
+                          label: cat.name,
+                        })),
+                      ]}
+                      className="w-full text-xs"
+                    />
+                  </div>
+                  <div className="hidden sm:flex sm:flex-wrap gap-2">
                     {ALL_CATEGORY_IDS.map((cat) => {
                       const hasEntries = targetDict.categories.some((c) => c.id === cat.id && c.entries.length > 0);
                       return (
@@ -839,7 +855,7 @@ export default function KenyanTranslatorPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-nowrap overflow-x-auto no-scrollbar pb-1 sm:pb-0 sm:flex-wrap gap-1.5 sm:gap-2">
                   {ALL_DICTS.map((d) => {
                     const isSelected = compareLanguages.includes(d.languageId);
                     return (
@@ -850,7 +866,7 @@ export default function KenyanTranslatorPage() {
                             isSelected ? prev.filter((l) => l !== d.languageId) : [...prev, d.languageId]
                           );
                         }}
-                        className={`px-2.5 py-1 rounded-full text-[0.65rem] font-medium transition-all flex items-center gap-1 ${
+                        className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-full text-[0.65rem] font-medium transition-all flex items-center gap-1 ${
                           isSelected
                             ? "text-white shadow-sm"
                             : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"

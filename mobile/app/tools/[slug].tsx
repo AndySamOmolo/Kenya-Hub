@@ -458,7 +458,7 @@ export default function ToolDetailScreen() {
                 >
                   {activeSuite.name.toUpperCase()}
                 </Text>
-                <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
                   {activeSuite.hubRoute && (
                     <Pressable
                       onPress={() => router.push(activeSuite.hubRoute as any)}
@@ -524,7 +524,7 @@ export default function ToolDetailScreen() {
                       </Pressable>
                     );
                   })}
-                </View>
+                </ScrollView>
               </View>
             )}
           </View>

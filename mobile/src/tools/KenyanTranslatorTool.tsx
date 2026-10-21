@@ -116,6 +116,7 @@ export function KenyanTranslatorTool() {
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [showTargetPicker, setShowTargetPicker] = useState(false);
 
   // Random word of the day
   const [randomWord, setRandomWord] = useState<{
@@ -609,45 +610,58 @@ export function KenyanTranslatorTool() {
               <Ionicons name="swap-horizontal" size={20} color={theme.gold} />
             </Pressable>
 
-            {/* Target */}
-            <View style={styles.langPickerBox}>
-              <Text style={styles.langPickerLabel}>To</Text>
-              <Text style={styles.langPickerValue}>
-                {targetLanguage === "english"
-                  ? "English"
-                  : targetDict?.languageName?.split("(")[0]?.trim() || "Swahili"}
-              </Text>
-            </View>
+            {/* Target (Tap to switch target language) */}
+            <Pressable
+              onPress={() => setShowTargetPicker((v) => !v)}
+              style={styles.langPickerBox}
+            >
+              <Text style={styles.langPickerLabel}>To (Tap to change)</Text>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginTop: 2 }}>
+                <Text style={[styles.langPickerValue, { marginTop: 0 }]}>
+                  {targetLanguage === "english"
+                    ? "English"
+                    : targetDict?.languageName?.split("(")[0]?.trim() || "Swahili"}
+                </Text>
+                <Ionicons
+                  name={showTargetPicker ? "chevron-up" : "chevron-down"}
+                  size={14}
+                  color={theme.gold}
+                />
+              </View>
+            </Pressable>
           </View>
 
-          {/* Target Language Selection Pills */}
-          <View style={styles.horizontalPills}>
-            {ALL_DICTS.map((d) => {
-              const active = d.languageId === targetLanguage;
-              return (
-                <Pressable
-                  key={d.languageId}
-                  onPress={() => {
-                    setTargetLanguage(d.languageId);
-                    if (sourceLanguage !== "english") setSourceLanguage("english");
-                  }}
-                  style={[
-                    styles.langChip,
-                    active && { backgroundColor: theme.gold, borderColor: theme.gold },
-                  ]}
-                >
-                  <Text
+          {/* Target Language Selection Pills (Collapsible so it never fills the screen) */}
+          {showTargetPicker && (
+            <View style={[styles.horizontalPills, { flexWrap: "wrap" }]}>
+              {ALL_DICTS.map((d) => {
+                const active = d.languageId === targetLanguage;
+                return (
+                  <Pressable
+                    key={d.languageId}
+                    onPress={() => {
+                      setTargetLanguage(d.languageId);
+                      if (sourceLanguage !== "english") setSourceLanguage("english");
+                      setShowTargetPicker(false);
+                    }}
                     style={[
-                      styles.langChipText,
-                      active && { color: theme.kenyaBlack, fontWeight: "800" },
+                      styles.langChip,
+                      active && { backgroundColor: theme.gold, borderColor: theme.gold },
                     ]}
                   >
-                    {d.languageName.split("(")[0].trim()}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </View>
+                    <Text
+                      style={[
+                        styles.langChipText,
+                        active && { color: theme.kenyaBlack, fontWeight: "800" },
+                      ]}
+                    >
+                      {d.languageName.split("(")[0].trim()}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </View>
+          )}
 
           {/* Search Input */}
           <View style={styles.searchBar}>

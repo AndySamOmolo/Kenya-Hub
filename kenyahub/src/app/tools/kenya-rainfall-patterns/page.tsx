@@ -3,6 +3,7 @@
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import rainData from "@/data/rainfall-patterns.json";
 import SearchInput from "@/components/ui/SearchInput";
@@ -45,7 +46,18 @@ export default function KenyaRainfallPatternsPage() {
         {/* Search & filters */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search county..." className="input-field text-sm" id="rain-search"  onClear={() => setSearch("")} />
-          <div className="flex flex-wrap gap-2">
+          <div className="sm:hidden">
+            <CustomSelect
+              value={zoneFilter}
+              onValueChange={(val) => setZoneFilter(val)}
+              options={[
+                { value: "all", label: "All Climate Zones" },
+                ...rainData.climateZones.map((z) => ({ value: z.id, label: z.id })),
+              ]}
+              className="w-full text-xs"
+            />
+          </div>
+          <div className="hidden sm:flex sm:flex-wrap gap-2">
             <button onClick={() => setZoneFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${zoneFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Zones</button>
             {rainData.climateZones.map((z) => (
               <button key={z.id} onClick={() => setZoneFilter(z.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${zoneFilter === z.id ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>{z.id}</button>

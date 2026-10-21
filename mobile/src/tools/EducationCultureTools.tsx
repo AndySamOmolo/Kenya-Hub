@@ -322,7 +322,7 @@ export function KcseCalculatorTool() {
                 {grades[idx]} ({gradePoints[grades[idx]]} pts)
               </Text>
             </View>
-            <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 4  }}>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
               {possibleGrades.map((g) => (
                 <Pressable
                   key={g}
@@ -342,7 +342,7 @@ export function KcseCalculatorTool() {
                   </Text>
                 </Pressable>
               ))}
-            </View>
+            </ScrollView>
           </View>
         ))}
       </View>
@@ -676,7 +676,7 @@ export function KikuyuProverbsTool() {
       </View>
 
       {/* Theme Category Filter Pills */}
-      <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         {PROVERB_CATEGORIES.map((cat) => {
           const active = selectedCategory === cat.id;
           return (
@@ -697,7 +697,7 @@ export function KikuyuProverbsTool() {
             </Pressable>
           );
         })}
-      </View>
+      </ScrollView>
 
       {/* Sort & Equivalent Filter Controls */}
       <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
@@ -925,7 +925,7 @@ export function KcseRankingsTool() {
       </View>
 
       {/* County Filter Scroll */}
-      <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         {counties.map((c) => (
           <Pressable
             key={c}
@@ -940,7 +940,7 @@ export function KcseRankingsTool() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ScrollView>
 
       <Text style={styles.subHeading}>
         Showing {filteredSchools.length} Top KCSE Schools ({rankingsData.year})

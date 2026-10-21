@@ -626,7 +626,7 @@ export function TrafficFinesTool() {
       </View>
 
       {/* Category Filter Pills */}
-      <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         <Pressable
           onPress={() => setSelectedCat("all")}
           style={[
@@ -671,7 +671,7 @@ export function TrafficFinesTool() {
             </Pressable>
           );
         })}
-      </View>
+      </ScrollView>
 
       {/* Sort By Bar */}
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
@@ -825,7 +825,7 @@ export function PostalCodesTool() {
       </View>
 
       {/* County Filter Pills */}
-      <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         {["all", ...counties].map((c) => {
           const active = selectedCounty === c;
           return (
@@ -851,7 +851,7 @@ export function PostalCodesTool() {
             </Pressable>
           );
         })}
-      </View>
+      </ScrollView>
 
       {/* Sort Row */}
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>

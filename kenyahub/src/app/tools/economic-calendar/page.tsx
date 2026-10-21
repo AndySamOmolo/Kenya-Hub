@@ -3,6 +3,7 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/economic-calendar.json";
 const tool = TOOLS.find((t) => t.slug === "economic-calendar")!;
@@ -25,8 +26,28 @@ export default function EconomicCalendarPage() {
   return (
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
-        <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <div className="flex flex-wrap gap-2">
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5 space-y-3">
+          <div className="grid grid-cols-2 gap-2 sm:hidden">
+            <CustomSelect
+              value={catFilter}
+              onValueChange={(val) => setCatFilter(val)}
+              options={[
+                { value: "all", label: "All Categories" },
+                ...data.categories.map((c) => ({ value: c.id, label: c.id })),
+              ]}
+              className="w-full text-xs"
+            />
+            <CustomSelect
+              value={freqFilter}
+              onValueChange={(val) => setFreqFilter(val)}
+              options={[
+                { value: "all", label: "All Frequencies" },
+                ...frequencies.map((f) => ({ value: f, label: f })),
+              ]}
+              className="w-full text-xs"
+            />
+          </div>
+          <div className="hidden sm:flex sm:flex-wrap gap-2">
             <button onClick={() => setCatFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Categories</button>
             {data.categories.map((c) => (
               <button key={c.id} onClick={() => setCatFilter(c.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === c.id ? "text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`} style={catFilter === c.id ? { backgroundColor: c.color } : {}}>
@@ -34,7 +55,7 @@ export default function EconomicCalendarPage() {
               </button>
             ))}
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="hidden sm:flex sm:flex-wrap gap-2">
             <button onClick={() => setFreqFilter("all")} className={`px-2.5 py-1 rounded text-[0.65rem] font-medium transition-all ${freqFilter === "all" ? "bg-bg-elevated border border-gold/50 text-gold" : "bg-bg-elevated border border-border text-text-muted hover:text-gold"}`}>All</button>
             {frequencies.map((f) => (
               <button key={f} onClick={() => setFreqFilter(f)} className={`px-2.5 py-1 rounded text-[0.65rem] font-medium transition-all ${freqFilter === f ? "bg-bg-elevated border border-gold/50 text-gold" : "bg-bg-elevated border border-border text-text-muted hover:text-gold"}`}>{f}</button>

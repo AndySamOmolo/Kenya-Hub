@@ -269,14 +269,14 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
 
         {/* Consolidated Suite Switcher Bar */}
         {activeSuite && (
-          <div className="mt-5 p-3.5 rounded-xl bg-bg-card border border-border flex flex-wrap items-center gap-2">
-            <span className="text-[0.65rem] font-bold uppercase tracking-wider text-gold mr-1">
+          <div className="mt-4 p-2 rounded-xl bg-bg-card border border-border flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+            <span className="hidden sm:inline text-[0.65rem] font-bold uppercase tracking-wider text-gold mr-1 shrink-0">
               {activeSuite.name}:
             </span>
             {activeSuite.hubHref && (
               <Link
                 href={activeSuite.hubHref}
-                className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-gold/15 text-gold border border-gold/30 hover:bg-gold/25 transition-colors"
+                className="shrink-0 whitespace-nowrap px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 text-gold border border-gold/30 hover:bg-gold/25 transition-colors"
               >
                 {activeSuite.hubLabel}
               </Link>
@@ -289,7 +289,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
                 <Link
                   key={mSlug}
                   href={`/tools/${mSlug}`}
-                  className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 ${
+                  className={`shrink-0 whitespace-nowrap px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 ${
                     isCurrent
                       ? "bg-kenya-green text-white font-semibold"
                       : "bg-bg-elevated border border-border text-text-secondary hover:border-gold hover:text-text-primary"

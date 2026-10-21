@@ -4,6 +4,7 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import foodData from "@/data/kenyan-foods-nutrition.json";
 import SearchInput from "@/components/ui/SearchInput";
@@ -51,7 +52,18 @@ export default function KenyanFoodNutritionPage() {
         {/* Search & Categories */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search foods (e.g., 'ugali', 'omena', 'chapati')..." className="input-field text-sm" id="food-search"  onClear={() => setSearch("")} />
-          <div className="flex flex-wrap gap-2">
+          <div className="sm:hidden">
+            <CustomSelect
+              value={catFilter}
+              onValueChange={(val) => setCatFilter(val)}
+              options={[
+                { value: "all", label: "All Food Categories" },
+                ...foodData.categories.map((c) => ({ value: c.id, label: c.name })),
+              ]}
+              className="w-full text-xs"
+            />
+          </div>
+          <div className="hidden sm:flex sm:flex-wrap gap-2">
             <button onClick={() => setCatFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Foods</button>
             {foodData.categories.map((c) => (
               <button key={c.id} onClick={() => setCatFilter(c.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === c.id ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>

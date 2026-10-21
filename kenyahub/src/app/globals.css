@@ -66,7 +66,7 @@
   --text-primary: #F2EDE6;
   --text-secondary: #A89F94;
   --text-muted: #6D6358;
-  --glass-bg: rgba(12,10,8,0.78);
+  --glass-bg: rgba(12,10,8,0.96);
   --glass-border: rgba(255,255,255,0.06);
   color-scheme: dark;
 }
@@ -89,7 +89,7 @@
   --text-primary: #1A1108;
   --text-secondary: #5C503E;
   --text-muted: #8C8070;
-  --glass-bg: rgba(250,247,242,0.82);
+  --glass-bg: rgba(250,247,242,0.97);
   --glass-border: rgba(0,0,0,0.06);
   color-scheme: light;
 }
@@ -991,3 +991,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Hide scrollbar for compact horizontal navbars */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

@@ -289,6 +289,8 @@ export default function LanguageCourseTool() {
 
   // ── Skill Tree State ──
   const [expandedUnitIds, setExpandedUnitIds] = useState<Record<string, boolean>>({});
+  const [showLangPicker, setShowLangPicker] = useState<boolean>(false);
+  const [showThemePicker, setShowThemePicker] = useState<boolean>(false);
   const [activeSkillId, setActiveSkillId] = useState<string>('');
 
   const allSkills = useMemo(
@@ -1528,48 +1530,79 @@ export default function LanguageCourseTool() {
         )}
       </View>
 
-      {/* 2. Multi-Row Wrapping Language Filter Grid (No Horizontal Scrolling) */}
-      <View style={styles.langChipsGrid}>
-        {PUBLISHED_COURSES.map((course) => {
-          const isSelected = course.config.id === selectedLangId;
-          return (
-            <Pressable
-              key={course.config.id}
-              android_ripple={ripple}
-              onPress={() => {
-                setSelectedLangId(course.config.id);
-                setCardIndex(0);
-                setIsCardFlipped(false);
-                setActiveGame('menu');
-              }}
-              style={[
-                styles.langFilterChip,
-                {
-                  backgroundColor: isSelected
-                    ? `${course.config.color}24`
-                    : colors.surfaceContainerLow,
-                  borderColor: isSelected ? course.config.color : colors.outlineVariant,
-                },
-              ]}
-            >
-              {isSelected ? (
-                <Feather name="check" size={14} color={course.config.color} />
-              ) : (
-                <View style={[styles.langColorDot, { backgroundColor: course.config.color }]} />
-              )}
-              <Text
-                style={{
-                  fontSize: 12.5,
-                  fontWeight: isSelected ? '800' : '600',
-                  color: isSelected ? colors.text : colors.textSecondary,
+      {/* 2. Compact 1-Row Language Course Switcher (expands on tap) */}
+      <Pressable
+        android_ripple={ripple}
+        onPress={() => setShowLangPicker((v) => !v)}
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          paddingHorizontal: 14,
+          paddingVertical: 10,
+          borderRadius: 14,
+          borderWidth: 1,
+          backgroundColor: colors.surfaceContainerLow,
+          borderColor: showLangPicker ? langColor : colors.outlineVariant,
+        }}
+      >
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <View style={[styles.langColorDot, { backgroundColor: langColor }]} />
+          <Text style={{ fontSize: 13, fontWeight: '800', color: colors.text }}>
+            Course: {currentCourse?.config.name} ({currentCourse?.config.nativeName})
+          </Text>
+        </View>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+          <Text style={{ fontSize: 11.5, fontWeight: '700', color: langColor }}>
+            {showLangPicker ? 'Close' : `Switch (${PUBLISHED_COURSES.length})`}
+          </Text>
+          <Feather name={showLangPicker ? 'chevron-up' : 'chevron-down'} size={15} color={langColor} />
+        </View>
+      </Pressable>
+      {showLangPicker && (
+        <View style={styles.langChipsGrid}>
+          {PUBLISHED_COURSES.map((course) => {
+            const isSelected = course.config.id === selectedLangId;
+            return (
+              <Pressable
+                key={course.config.id}
+                android_ripple={ripple}
+                onPress={() => {
+                  setSelectedLangId(course.config.id);
+                  setCardIndex(0);
+                  setIsCardFlipped(false);
+                  setActiveGame('menu');
+                  setShowLangPicker(false);
                 }}
+                style={[
+                  styles.langFilterChip,
+                  {
+                    backgroundColor: isSelected
+                      ? `${course.config.color}24`
+                      : colors.surfaceContainerLow,
+                    borderColor: isSelected ? course.config.color : colors.outlineVariant,
+                  },
+                ]}
               >
-                {course.config.name}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </View>
+                {isSelected ? (
+                  <Feather name="check" size={14} color={course.config.color} />
+                ) : (
+                  <View style={[styles.langColorDot, { backgroundColor: course.config.color }]} />
+                )}
+                <Text
+                  style={{
+                    fontSize: 12.5,
+                    fontWeight: isSelected ? '800' : '600',
+                    color: isSelected ? colors.text : colors.textSecondary,
+                  }}
+                >
+                  {course.config.name}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      )}
 
       {/* 3. Selected Language Banner + Verified Sources */}
       {currentCourse && (
@@ -2825,9 +2858,35 @@ export default function LanguageCourseTool() {
             )}
           </View>
 
-          {/* Wrapping Theme Chips (No Horizontal Scroll) */}
+          {/* Compact 1-Row Theme Filter Trigger (expands on tap) */}
           {(wisdomLang === 'kikuyu' || (wisdomLang === 'luo' && luoSubTab === 'proverbs')) && (
-            <View style={styles.langChipsGrid}>
+            <>
+              <Pressable
+                onPress={() => setShowThemePicker((v) => !v)}
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  paddingHorizontal: 12,
+                  paddingVertical: 8,
+                  borderRadius: 12,
+                  borderWidth: 1,
+                  backgroundColor: colors.surfaceContainerLow,
+                  borderColor: showThemePicker ? langColor : colors.outlineVariant,
+                }}
+              >
+                <Text style={{ fontSize: 12, fontWeight: '700', color: colors.text }}>
+                  Theme: {proverbCategory}
+                </Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                  <Text style={{ fontSize: 11, fontWeight: '700', color: langColor }}>
+                    {showThemePicker ? 'Close' : 'Filter Theme'}
+                  </Text>
+                  <Feather name={showThemePicker ? 'chevron-up' : 'chevron-down'} size={14} color={langColor} />
+                </View>
+              </Pressable>
+              {showThemePicker && (
+                <View style={styles.langChipsGrid}>
               {(wisdomLang === 'kikuyu'
                 ? [
                     'All',
@@ -2848,6 +2907,7 @@ export default function LanguageCourseTool() {
                     onPress={() => {
                       setProverbCategory(cat);
                       setProverbPage(1);
+                      setShowThemePicker(false);
                     }}
                     style={{
                       paddingHorizontal: 10,
@@ -2871,7 +2931,9 @@ export default function LanguageCourseTool() {
                   </Pressable>
                 );
               })}
-            </View>
+                </View>
+              )}
+            </>
           )}
 
           {/* Kikuyu Proverbs List */}
@@ -3249,22 +3311,20 @@ const styles = StyleSheet.create({
   },
   m3SegmentedBar: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexWrap: 'nowrap',
     borderRadius: 16,
     borderWidth: 1,
-    padding: 6,
-    gap: 6,
+    padding: 4,
+    gap: 4,
   },
   m3SegmentBtn: {
-    flexGrow: 1,
-    flexBasis: '28%',
-    minWidth: 92,
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 6,
-    paddingHorizontal: 10,
-    paddingVertical: 9,
+    gap: 3,
+    paddingHorizontal: 4,
+    paddingVertical: 8,
     borderRadius: 12,
   },
   unitListWrap: {

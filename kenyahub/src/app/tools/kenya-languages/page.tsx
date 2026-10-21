@@ -2,6 +2,7 @@
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/kenya-languages.json";
 import SearchInput from "@/components/ui/SearchInput";
@@ -42,7 +43,18 @@ export default function KenyaLanguagesPage() {
         </div>
         {/* Family filters */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <div className="flex flex-wrap gap-2">
+          <div className="sm:hidden">
+            <CustomSelect
+              value={familyFilter}
+              onValueChange={(val) => setFamilyFilter(val)}
+              options={[
+                { value: "all", label: "All Language Families" },
+                ...data.families.map((f) => ({ value: f.id, label: f.name })),
+              ]}
+              className="w-full text-xs"
+            />
+          </div>
+          <div className="hidden sm:flex sm:flex-wrap gap-2">
             <button onClick={() => setFamilyFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${familyFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Families</button>
             {data.families.map((f) => (
               <button key={f.id} onClick={() => setFamilyFilter(f.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all flex items-center gap-1.5 ${familyFilter === f.id ? "text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`} style={familyFilter === f.id ? { backgroundColor: f.color } : {}}>

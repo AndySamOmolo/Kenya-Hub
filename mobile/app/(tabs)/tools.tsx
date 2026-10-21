@@ -297,31 +297,42 @@ export default function ToolsScreen() {
           )}
         </View>
 
-        {/* Multi-Row Wrapping Category Grid (No Horizontal Scrolling Required) */}
-        <View style={styles.catHeaderRow}>
-          <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
-            CATEGORY ({categories.find((c) => c.id === category)?.name || "All"})
-          </Text>
-          <Pressable
-            onPress={() => setShowAllCats((v) => !v)}
-            hitSlop={8}
-            style={{ flexDirection: "row", alignItems: "center", gap: 4 }}
-          >
+        {/* Compact 1-Row Category Dropdown Trigger (expands only when tapped) */}
+        <Pressable
+          onPress={() => setShowAllCats((v) => !v)}
+          style={[
+            styles.catHeaderRow,
+            {
+              backgroundColor: theme.surfaceContainer,
+              borderWidth: 1,
+              borderColor: showAllCats ? theme.gold : theme.outlineVariant,
+              borderRadius: 12,
+              paddingHorizontal: 12,
+              paddingVertical: 8,
+            },
+          ]}
+        >
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+            <Ionicons name="apps-outline" size={14} color={theme.gold} />
+            <Text style={{ fontSize: 12, fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
+              Category: {categories.find((c) => c.id === category)?.name || "All"} (
+              {categories.find((c) => c.id === category)?.count ?? TOOLS.length})
+            </Text>
+          </View>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
             <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.gold }}>
-              {showAllCats ? "Compact View" : `Show All (${categories.length})`}
+              {showAllCats ? "Close" : "Change"}
             </Text>
             <Ionicons
               name={showAllCats ? "chevron-up" : "chevron-down"}
-              size={13}
+              size={14}
               color={theme.gold}
             />
-          </Pressable>
-        </View>
-        <View style={styles.chipsWrapGrid}>
-          {(showAllCats
-            ? categories
-            : categories.filter((c, i) => i < 5 || c.id === category)
-          ).map((item) => {
+          </View>
+        </Pressable>
+        {showAllCats && (
+          <View style={styles.chipsWrapGrid}>
+            {categories.map((item) => {
             const active = item.id === category;
             return (
               <View
@@ -341,7 +352,10 @@ export default function ToolsScreen() {
               >
                 <Pressable
                   android_ripple={androidRipple(theme.rippleColor)}
-                  onPress={() => setCategory(item.id)}
+                  onPress={() => {
+                    setCategory(item.id);
+                    setShowAllCats(false);
+                  }}
                   style={styles.chip}
                 >
                   {active ? (
@@ -373,7 +387,8 @@ export default function ToolsScreen() {
               </View>
             );
           })}
-        </View>
+          </View>
+        )}
 
         {/* Material 3 Segmented Sort Row (mirrors web Sort: Most used | A-Z | Category) */}
         <View style={styles.sortRow}>

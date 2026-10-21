@@ -151,8 +151,8 @@ function ToolsContent() {
         </div>
       )}
 
-      {/* Search and Sort */}
-      <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-between mb-6">
+      {/* Search, Mobile Category Dropdown, and Sort */}
+      <div className="flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center justify-between mb-5">
         <div className="flex-1 max-w-lg">
           <SearchInput
             type="text"
@@ -164,35 +164,53 @@ function ToolsContent() {
             onClear={() => setSearchQuery("")}
           />
         </div>
-        <div className="flex items-center gap-2 shrink-0">
-          <label htmlFor="tools-sort" className="text-xs font-semibold uppercase tracking-wider text-text-muted shrink-0">
-            Sort:
-          </label>
-          <div className="relative inline-flex items-center">
-            {sortBy === "popular" ? (
-              <TrendingUp className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
-            ) : sortBy === "category" ? (
-              <LayoutList className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
-            ) : (
-              <ArrowDownAZ className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
-            )}
+        <div className="grid grid-cols-2 sm:flex items-center gap-2 shrink-0">
+          {/* Mobile Category Dropdown (replaces full-screen button wall) */}
+          <div className="md:hidden">
             <CustomSelect
-              id="tools-sort"
-              value={sortBy}
-              onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
+              id="tools-category-mobile"
+              value={selectedCategory}
+              onValueChange={(val) => setSelectedCategory(val)}
               options={[
-                { value: "popular", label: "Most used" },
-                { value: "alphabetical", label: "A-Z" },
-                { value: "category", label: "Category" },
+                { value: "all", label: `All Categories (${TOOLS.length})` },
+                ...TOOL_CATEGORIES.map((cat) => ({
+                  value: cat.id,
+                  label: `${cat.name} (${TOOLS.filter((t) => t.category === cat.id).length})`,
+                })),
               ]}
-              className="min-w-[9rem] has-leading-icon"
+              className="w-full text-xs"
             />
+          </div>
+          <div className="flex items-center gap-2">
+            <label htmlFor="tools-sort" className="hidden sm:inline text-xs font-semibold uppercase tracking-wider text-text-muted shrink-0">
+              Sort:
+            </label>
+            <div className="relative inline-flex items-center w-full sm:w-auto">
+              {sortBy === "popular" ? (
+                <TrendingUp className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
+              ) : sortBy === "category" ? (
+                <LayoutList className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
+              ) : (
+                <ArrowDownAZ className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
+              )}
+              <CustomSelect
+                id="tools-sort"
+                value={sortBy}
+                onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
+                options={[
+                  { value: "popular", label: "Most used" },
+                  { value: "alphabetical", label: "A-Z" },
+                  { value: "category", label: "Category" },
+                ]}
+                className="w-full sm:min-w-[9rem] has-leading-icon text-xs"
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Category Tabs — horizontal scroll on mobile */}
-      <div className="-mx-4 px-4 sm:mx-0 sm:px-0 mb-8">
+      {/* Category Pills — Desktop only so mobile never shows a wall of category buttons */}
+      <div className="hidden md:block mb-8">
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSelectedCategory("all")}

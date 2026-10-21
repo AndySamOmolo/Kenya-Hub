@@ -9,6 +9,7 @@ import hospitalsData from "@/data/nhif-hospitals.json";
 import postalData from "@/data/postal-codes.json";
 import rankingsData from "@/data/kcse-rankings.json";
 import SearchInput from "@/components/ui/SearchInput";
+import CustomSelect from "@/components/ui/CustomSelect";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 type ActiveTab = "directory" | "budgets" | "constituencies" | "climate" | "compare";
@@ -242,28 +243,29 @@ export default function CountyIndexPage() {
         </div>
       </div>
 
-      {/* Consolidated Hub Mode Tabs */}
-      <div className="flex flex-wrap gap-2 pb-2 mb-6 border-b border-border">
+      {/* Consolidated Hub Mode Tabs — Single Horizontal Row */}
+      <div className="flex flex-nowrap items-center gap-1 sm:gap-2 overflow-x-auto no-scrollbar pb-2 mb-5 border-b border-border">
         {([
-          { id: "directory", label: "47 Counties Directory", icon: "🏛️" },
-          { id: "budgets", label: "Budgets & Absorption (FY 2025/26)", icon: "📊" },
-          { id: "constituencies", label: "290 Constituencies & Leaders", icon: "🗳️" },
-          { id: "climate", label: "Climate & Rainfall by County", icon: "🌧️" },
-          { id: "compare", label: "Compare 2 Counties", icon: "⚖️" },
+          { id: "directory", shortLabel: "Counties", label: "47 Counties Directory", icon: "🏛️" },
+          { id: "budgets", shortLabel: "Budgets", label: "Budgets & Absorption", icon: "📊" },
+          { id: "constituencies", shortLabel: "MPs (290)", label: "290 Constituencies", icon: "🗳️" },
+          { id: "climate", shortLabel: "Climate", label: "Climate & Rainfall", icon: "🌧️" },
+          { id: "compare", shortLabel: "Compare", label: "Compare 2 Counties", icon: "⚖️" },
         ] as const).map((tab) => {
           const active = activeTab === tab.id;
           return (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`shrink-0 px-4 py-2.5 rounded-t-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 border-b-2 ${
+              className={`shrink-0 whitespace-nowrap px-2.5 sm:px-4 py-2 rounded-t-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 border-b-2 ${
                 active
                   ? "bg-gold/15 text-gold border-gold"
                   : "text-text-secondary hover:text-text-primary border-transparent hover:bg-bg-card"
               }`}
             >
-              <DynamicIcon emoji={tab.icon} className="w-4 h-4" />
-              {tab.label}
+              <DynamicIcon emoji={tab.icon} className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <span className="sm:hidden">{tab.shortLabel}</span>
+              <span className="hidden sm:inline">{tab.label}</span>
             </button>
           );
         })}
@@ -285,75 +287,63 @@ export default function CountyIndexPage() {
           </div>
 
           {activeTab === "directory" && (
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-semibold text-text-muted uppercase tracking-wider">Sort:</span>
-              {([
-                { id: "code", label: "Code (001–047)" },
-                { id: "name", label: "A–Z" },
-                { id: "population", label: "Population" },
-                { id: "area", label: "Area km²" },
-                { id: "density", label: "Density" },
-                { id: "budget", label: "Budget" },
-                { id: "rainfall", label: "Rainfall" },
-              ] as const).map((opt) => (
-                <button
-                  key={opt.id}
-                  onClick={() => setSortBy(opt.id)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
-                    sortBy === opt.id
-                      ? "bg-gold text-kenya-black"
-                      : "bg-bg-card border border-border text-text-secondary hover:border-gold"
-                  }`}
-                >
-                  {opt.label}
-                </button>
-              ))}
+            <div className="grid grid-cols-2 sm:flex items-center gap-2">
+              <CustomSelect
+                value={climateFilter}
+                onValueChange={(val) => setClimateFilter(val)}
+                options={climateZones.map((z) => ({
+                  value: z,
+                  label: z === "All" ? "All Climate Zones (47)" : z,
+                }))}
+                className="w-full sm:w-48 text-xs"
+              />
+              <CustomSelect
+                value={sortBy}
+                onValueChange={(val) => setSortBy(val as typeof sortBy)}
+                options={[
+                  { value: "code", label: "Sort: Code (001–047)" },
+                  { value: "name", label: "Sort: Name (A–Z)" },
+                  { value: "population", label: "Sort: Population" },
+                  { value: "area", label: "Sort: Area km²" },
+                  { value: "density", label: "Sort: Density" },
+                  { value: "budget", label: "Sort: Budget" },
+                  { value: "rainfall", label: "Sort: Rainfall" },
+                ]}
+                className="w-full sm:w-48 text-xs"
+              />
+            </div>
+          )}
+
+          {activeTab === "climate" && (
+            <div className="w-full sm:w-56">
+              <CustomSelect
+                value={climateFilter}
+                onValueChange={(val) => setClimateFilter(val)}
+                options={climateZones.map((z) => ({
+                  value: z,
+                  label: z === "All" ? "All Climate Zones (47)" : z,
+                }))}
+                className="w-full text-xs"
+              />
             </div>
           )}
 
           {activeTab === "budgets" && (
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-semibold text-text-muted uppercase tracking-wider">Sort Budgets:</span>
-              {([
-                { id: "allocation", label: "Equitable Share" },
-                { id: "ownSourceRevenue", label: "Own-Source Rev" },
-                { id: "expenditure", label: "Expenditure" },
-                { id: "absorptionRate", label: "Absorption %" },
-                { id: "county", label: "County A–Z" },
-              ] as const).map((opt) => (
-                <button
-                  key={opt.id}
-                  onClick={() => setBudgetSort(opt.id)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
-                    budgetSort === opt.id
-                      ? "bg-gold text-kenya-black"
-                      : "bg-bg-card border border-border text-text-secondary hover:border-gold"
-                  }`}
-                >
-                  {opt.label}
-                </button>
-              ))}
+            <div className="w-full sm:w-56">
+              <CustomSelect
+                value={budgetSort}
+                onValueChange={(val) => setBudgetSort(val as typeof budgetSort)}
+                options={[
+                  { value: "allocation", label: "Sort: Equitable Share" },
+                  { value: "ownSourceRevenue", label: "Sort: Own-Source Rev" },
+                  { value: "expenditure", label: "Sort: Expenditure" },
+                  { value: "absorptionRate", label: "Sort: Absorption %" },
+                  { value: "county", label: "Sort: County A–Z" },
+                ]}
+                className="w-full text-xs"
+              />
             </div>
           )}
-        </div>
-      )}
-
-      {/* Climate Zone Filter Pills (Directory & Climate tabs) */}
-      {(activeTab === "directory" || activeTab === "climate") && (
-        <div className="flex flex-wrap gap-2 pb-2 mb-6">
-          {climateZones.map((zone) => (
-            <button
-              key={zone}
-              onClick={() => setClimateFilter(zone)}
-              className={`shrink-0 px-3 py-1 rounded-full text-xs font-medium transition-colors ${
-                climateFilter === zone
-                  ? "bg-kenya-green text-white"
-                  : "bg-bg-card border border-border text-text-muted hover:text-text-primary"
-              }`}
-            >
-              {zone === "All" ? "All Climate Zones (47)" : zone}
-            </button>
-          ))}
         </div>
       )}
 

@@ -2,6 +2,7 @@
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/forest-reserves.json";
 import SearchInput from "@/components/ui/SearchInput";
@@ -28,7 +29,18 @@ export default function ForestReservesPage() {
       <div className="space-y-6">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search forests by name or county..." className="input-field text-sm" id="forest-search"  onClear={() => setSearch("")} />
-          <div className="flex flex-wrap gap-2">
+          <div className="sm:hidden">
+            <CustomSelect
+              value={ecoFilter}
+              onValueChange={(val) => setEcoFilter(val)}
+              options={[
+                { value: "all", label: "All Ecosystems" },
+                ...data.ecosystemTypes.map((e) => ({ value: e.type, label: e.type })),
+              ]}
+              className="w-full text-xs"
+            />
+          </div>
+          <div className="hidden sm:flex sm:flex-wrap gap-2">
             <button onClick={() => setEcoFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${ecoFilter === "all" ? "bg-kenya-green text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-kenya-green-light"}`}>All Ecosystems</button>
             {data.ecosystemTypes.map((e) => (<button key={e.type} onClick={() => setEcoFilter(e.type)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${ecoFilter === e.type ? "bg-kenya-green text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-kenya-green-light"}`}>{e.type}</button>))}
           </div>

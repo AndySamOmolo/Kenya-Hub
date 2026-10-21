@@ -140,7 +140,7 @@ export default function CountyScreen() {
         ]}
       >
         {/* Consolidated Mode Tabs */}
-        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6, paddingBottom: 10  }}>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6, paddingBottom: 10 }}>
           {([
             { id: "directory", label: "🏛️ Directory" },
             { id: "budgets", label: "📊 Budgets (FY 25/26)" },
@@ -173,7 +173,7 @@ export default function CountyScreen() {
               </Pressable>
             );
           })}
-        </View>
+        </ScrollView>
 
         {activeTab !== "compare" && (
           <>
@@ -204,7 +204,7 @@ export default function CountyScreen() {
             {/* Sort By Row */}
             <View style={styles.sortRow}>
               <Text style={[styles.sortLabel, { color: theme.textMuted }]}>SORT BY</Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 4  }}>
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
                 {(
                   [
                     { id: "code", label: "Code" },
@@ -243,7 +243,7 @@ export default function CountyScreen() {
                     </Pressable>
                   );
                 })}
-              </View>
+              </ScrollView>
             </View>
           </>
         )}
@@ -576,7 +576,7 @@ export default function CountyScreen() {
             <Text style={{ fontSize: 11, color: theme.textSecondary }}>
               Select First County ({countyA.name}):
             </Text>
-            <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
               {enrichedCounties.map((c) => (
                 <Pressable
                   key={`a-${c.slug}`}
@@ -600,12 +600,12 @@ export default function CountyScreen() {
                   </Text>
                 </Pressable>
               ))}
-            </View>
+            </ScrollView>
 
             <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
               Select Second County ({countyB.name}):
             </Text>
-            <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
               {enrichedCounties.map((c) => (
                 <Pressable
                   key={`b-${c.slug}`}
@@ -629,7 +629,7 @@ export default function CountyScreen() {
                   </Text>
                 </Pressable>
               ))}
-            </View>
+            </ScrollView>
 
             <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: theme.outlineVariant, paddingTop: 8, gap: 8 }}>
               {[

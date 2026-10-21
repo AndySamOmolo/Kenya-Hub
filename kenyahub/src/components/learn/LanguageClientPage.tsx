@@ -2,13 +2,14 @@
 "use client";
 
 import { useCallback, useEffect, useState, useMemo } from "react";
-import { Gamepad2, GraduationCap, HelpCircle, PartyPopper, BookOpen, Layers, Search, ScrollText } from "lucide-react";
+import { Gamepad2, GraduationCap, HelpCircle, PartyPopper, BookOpen, Layers, Search, ScrollText, ChevronLeft } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
 import LessonPlayer from "@/components/learn/LessonPlayer";
 import GamesHub from "@/components/learn/GamesHub";
 import GrammarView from "@/components/learn/GrammarView";
 import ProverbsView from "@/components/learn/ProverbsView";
+import CustomSelect from "@/components/ui/CustomSelect";
 import type {
   CourseSkill,
   UserProgress,
@@ -25,6 +26,7 @@ import {
 import { TOOLS } from "@/lib/tools-registry";
 import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
@@ -32,6 +34,7 @@ type PageView = "lessons" | "modules" | "games" | "playing" | "grammar" | "prove
 
 export default function LanguageClientPage({ languageId }: { languageId: string }) {
   const course = getCourse(languageId);
+  const router = useRouter();
 
   const [progress, setProgress] = useState<UserProgress | null>(null);
   const [view, setView] = useState<PageView>("lessons");
@@ -194,30 +197,55 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     );
   }
 
+  const hasGrammar = Boolean(course.grammarSections && course.grammarSections.length > 0);
+
   return (
     <ToolShell
       tool={LEARN_TOOL}
       breadcrumbSuffix={[{ label: course.config.name }]}
     >
-      {/* Multi-Row Wrapping Language Switcher Grid (no horizontal scrolling) */}
+      {/* Compact Language Switcher: Single-row dropdown on mobile, pills on desktop */}
       {view !== "playing" && (
-        <div className="mb-5 flex flex-wrap gap-1.5">
-          {PUBLISHED_COURSES.map((c) => {
-            const active = c.config.id === course.config.id;
-            return (
-              <Link
-                key={c.config.id}
-                href={`/tools/learn/${c.config.id}`}
-                className={`rounded-xl px-3 py-1.5 text-xs font-semibold transition-all border ${
-                  active
-                    ? "bg-gold text-kenya-black border-gold font-bold"
-                    : "bg-bg-card border-border text-text-secondary hover:border-gold hover:text-text-primary"
-                }`}
-              >
-                {c.config.name} ({c.config.nativeName})
-              </Link>
-            );
-          })}
+        <div className="mb-4">
+          {/* Mobile: Compact 1-row bar with All Languages back link + Course Switcher Dropdown */}
+          <div className="flex sm:hidden items-center justify-between gap-2">
+            <Link
+              href="/tools/learn"
+              className="inline-flex items-center gap-1 rounded-xl border border-border bg-bg-card px-3 py-2 text-xs font-semibold text-text-secondary hover:text-text-primary shrink-0"
+            >
+              <ChevronLeft className="h-3.5 w-3.5" />
+              All Languages
+            </Link>
+            <CustomSelect
+              value={course.config.id}
+              onValueChange={(val) => router.push(`/tools/learn/${val}`)}
+              options={PUBLISHED_COURSES.map((c) => ({
+                value: c.config.id,
+                label: `${c.config.name} (${c.config.nativeName})`,
+              }))}
+              className="flex-1 max-w-[230px] text-xs"
+            />
+          </div>
+
+          {/* Desktop: Compact pill row */}
+          <div className="hidden sm:flex sm:flex-wrap items-center gap-1.5">
+            {PUBLISHED_COURSES.map((c) => {
+              const active = c.config.id === course.config.id;
+              return (
+                <Link
+                  key={c.config.id}
+                  href={`/tools/learn/${c.config.id}`}
+                  className={`rounded-xl px-3 py-1.5 text-xs font-semibold transition-all border ${
+                    active
+                      ? "bg-gold text-kenya-black border-gold font-bold"
+                      : "bg-bg-card border-border text-text-secondary hover:border-gold hover:text-text-primary"
+                  }`}
+                >
+                  {c.config.name} ({c.config.nativeName})
+                </Link>
+              );
+            })}
+          </div>
         </div>
       )}
 
@@ -231,61 +259,63 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         </div>
       )}
 
-      {/* Wrapping Navigation Tabs (Skill Path | All Modules | Games | Grammar | Proverbs & Wisdom) */}
+      {/* Single-Row Horizontal Navigation Bar (never stacks vertically on mobile) */}
       {view !== "playing" && (
-        <div className="mb-6 flex justify-center px-1">
-          <div className="flex flex-wrap items-center justify-center gap-1 rounded-2xl border border-border bg-bg-card p-1.5 shadow-sm w-full sm:w-auto">
+        <div className="mb-5">
+          <div className="flex flex-nowrap items-center justify-between sm:justify-center gap-1 rounded-2xl border border-border bg-bg-card p-1 shadow-sm w-full sm:w-auto sm:mx-auto overflow-x-auto no-scrollbar">
             <button
               onClick={() => setView("lessons")}
               role="tab"
               aria-selected={view === "lessons"}
-              className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
+              className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
                 view === "lessons"
                   ? "bg-gold text-kenya-black shadow-xs font-bold"
                   : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
               }`}
             >
-              <GraduationCap className="h-4 w-4 shrink-0" />
-              <span>Skill Path</span>
+              <GraduationCap className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
+              <span className="sm:hidden">Path</span>
+              <span className="hidden sm:inline">Skill Path</span>
             </button>
             <button
               onClick={() => setView("modules")}
               role="tab"
               aria-selected={view === "modules"}
-              className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
+              className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
                 view === "modules"
                   ? "bg-gold text-kenya-black shadow-xs font-bold"
                   : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
               }`}
             >
-              <Layers className="h-4 w-4 shrink-0" />
-              <span>All Modules &amp; Vocab</span>
+              <Layers className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
+              <span className="sm:hidden">Vocab</span>
+              <span className="hidden sm:inline">All Modules &amp; Vocab</span>
             </button>
             <button
               onClick={() => setView("games")}
               role="tab"
               aria-selected={view === "games"}
-              className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
+              className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
                 view === "games"
                   ? "bg-gold text-kenya-black shadow-xs font-bold"
                   : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
               }`}
             >
-              <Gamepad2 className="h-4 w-4 shrink-0" />
+              <Gamepad2 className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
               <span>Games</span>
             </button>
-            {course.grammarSections && course.grammarSections.length > 0 && (
+            {hasGrammar && (
               <button
                 onClick={() => setView("grammar")}
                 role="tab"
                 aria-selected={view === "grammar"}
-                className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
+                className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
                   view === "grammar"
                     ? "bg-gold text-kenya-black shadow-xs font-bold"
                     : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
                 }`}
               >
-                <BookOpen className="h-4 w-4 shrink-0" />
+                <BookOpen className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
                 <span>Grammar</span>
               </button>
             )}
@@ -293,14 +323,15 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               onClick={() => setView("proverbs")}
               role="tab"
               aria-selected={view === "proverbs"}
-              className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
+              className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
                 view === "proverbs"
                   ? "bg-gold text-kenya-black shadow-xs font-bold"
                   : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
               }`}
             >
-              <ScrollText className="h-4 w-4 shrink-0" />
-              <span>Proverbs &amp; Wisdom</span>
+              <ScrollText className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
+              <span className="sm:hidden">Wisdom</span>
+              <span className="hidden sm:inline">Proverbs &amp; Wisdom</span>
             </button>
           </div>
         </div>
@@ -319,54 +350,39 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         />
       ) : view === "modules" ? (
         <div className="mx-auto max-w-3xl space-y-5 pb-8">
-          <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div>
-                <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-                  All {course.config.name} Modules &amp; Vocabulary ({filteredModules.length})
-                </h2>
-                <p className="text-xs text-text-secondary">
-                  Browse every module, grammar tip, and vocabulary word table at once, or launch any lesson directly.
-                </p>
+          <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 space-y-3.5">
+            <div>
+              <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+                All {course.config.name} Modules &amp; Vocabulary ({filteredModules.length})
+              </h2>
+              <p className="text-xs text-text-secondary">
+                Browse every module, grammar tip, and vocabulary word table at once, or launch any lesson directly.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-2.5">
+              <div className="relative flex-1">
+                <Search className="w-4 h-4 text-text-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  value={moduleSearch}
+                  onChange={(e) => setModuleSearch(e.target.value)}
+                  placeholder={`Search ${course.config.name} or English words...`}
+                  className="input-field w-full pl-10 text-sm"
+                />
               </div>
-            </div>
-
-            <div className="relative">
-              <Search className="w-4 h-4 text-text-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
-              <input
-                type="text"
-                value={moduleSearch}
-                onChange={(e) => setModuleSearch(e.target.value)}
-                placeholder={`Search ${course.config.name} or English words across all modules...`}
-                className="input-field w-full pl-10 text-sm"
+              <CustomSelect
+                value={selectedUnitFilter}
+                onValueChange={(val) => setSelectedUnitFilter(val)}
+                options={[
+                  { value: "all", label: `All Units (${course.units.length})` },
+                  ...course.units.map((u, idx) => ({
+                    value: u.id,
+                    label: `Unit ${idx + 1}: ${u.title.replace(/^Unit \d+:\s*/i, "")}`,
+                  })),
+                ]}
+                className="w-full sm:w-64 text-xs"
               />
-            </div>
-
-            {/* Wrapping Unit Filter Chips (no horizontal scrolling) */}
-            <div className="flex flex-wrap gap-1.5">
-              <button
-                onClick={() => setSelectedUnitFilter("all")}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold ${
-                  selectedUnitFilter === "all"
-                    ? "bg-gold text-kenya-black font-bold"
-                    : "bg-bg-elevated border border-border text-text-secondary hover:border-gold/40"
-                }`}
-              >
-                All Units ({course.units.length})
-              </button>
-              {course.units.map((u, idx) => (
-                <button
-                  key={u.id}
-                  onClick={() => setSelectedUnitFilter(u.id)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold ${
-                    selectedUnitFilter === u.id
-                      ? "bg-gold text-kenya-black font-bold"
-                      : "bg-bg-elevated border border-border text-text-secondary hover:border-gold/40"
-                  }`}
-                >
-                  Unit {idx + 1}: {u.title.replace(/^Unit \d+:\s*/i, "")}
-                </button>
-              ))}
             </div>
           </div>
 

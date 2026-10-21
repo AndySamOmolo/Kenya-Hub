@@ -58,7 +58,15 @@ export default function CropPlantingCalendarPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <div>
             <label className="text-xs text-text-muted block mb-2">Select your farming region</label>
-            <div className="flex flex-wrap gap-2">
+            <div className="sm:hidden">
+              <CustomSelect
+                value={regionFilter}
+                onValueChange={(val) => setRegionFilter(val)}
+                options={cropData.regions.map((r) => ({ value: r.id, label: r.name }))}
+                className="w-full text-xs"
+              />
+            </div>
+            <div className="hidden sm:flex sm:flex-wrap gap-2">
               {cropData.regions.map((r) => (
                 <button key={r.id} onClick={() => setRegionFilter(r.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${regionFilter === r.id ? "bg-kenya-green text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-kenya-green-light"}`}>
                   {r.name}

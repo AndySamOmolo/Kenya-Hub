@@ -4,6 +4,7 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import finesData from "@/data/traffic-fines.json";
 import SearchInput from "@/components/ui/SearchInput";
@@ -80,7 +81,18 @@ export default function TrafficFinesPage() {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap gap-2">
+        <div className="sm:hidden">
+          <CustomSelect
+            value={selectedCategory}
+            onValueChange={(val) => setSelectedCategory(val)}
+            options={[
+              { value: "all", label: "All Offence Categories" },
+              ...finesData.categories.map((cat) => ({ value: cat.id, label: cat.name })),
+            ]}
+            className="w-full text-xs"
+          />
+        </div>
+        <div className="hidden sm:flex sm:flex-wrap gap-2">
           <button
             onClick={() => setSelectedCategory("all")}
             className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${

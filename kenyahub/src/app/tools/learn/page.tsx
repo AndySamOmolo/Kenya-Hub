@@ -122,26 +122,30 @@ export default function LearnPage() {
           </div>
 
           {/* Hub Switcher: Courses vs Proverbs & Oral Literature */}
-          <div className="mt-6 inline-flex flex-wrap justify-center gap-2 rounded-2xl border border-border bg-bg-elevated/80 p-1.5">
+          <div className="mt-5 grid grid-cols-2 sm:inline-flex gap-1.5 rounded-2xl border border-border bg-bg-elevated/80 p-1.5 w-full sm:w-auto">
             <button
               onClick={() => setActiveHubTab("courses")}
-              className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-xs sm:text-sm font-bold transition-all ${
+              className={`inline-flex items-center justify-center gap-1.5 rounded-xl px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
                 activeHubTab === "courses"
                   ? "bg-gold text-kenya-black shadow-sm"
                   : "text-text-secondary hover:text-text-primary"
               }`}
             >
-              <BookOpen className="w-4 h-4" /> Language Courses ({readyLangs.length})
+              <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <span className="sm:hidden">Courses ({readyLangs.length})</span>
+              <span className="hidden sm:inline">Language Courses ({readyLangs.length})</span>
             </button>
             <button
               onClick={() => setActiveHubTab("proverbs")}
-              className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-xs sm:text-sm font-bold transition-all ${
+              className={`inline-flex items-center justify-center gap-1.5 rounded-xl px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
                 activeHubTab === "proverbs"
                   ? "bg-gold text-kenya-black shadow-sm"
                   : "text-text-secondary hover:text-text-primary"
               }`}
             >
-              <ScrollText className="w-4 h-4" /> Proverbs, Riddles &amp; Oral Wisdom
+              <ScrollText className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <span className="sm:hidden">Proverbs &amp; Wisdom</span>
+              <span className="hidden sm:inline">Proverbs, Riddles &amp; Oral Wisdom</span>
             </button>
           </div>
         </div>

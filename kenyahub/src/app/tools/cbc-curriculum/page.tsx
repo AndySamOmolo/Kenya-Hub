@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import cbcData from "@/data/cbc-curriculum.json";
 
@@ -23,7 +24,15 @@ export default function CBCCurriculumPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         {/* Level Selector */}
-        <div className="flex flex-wrap gap-2">
+        <div className="sm:hidden">
+          <CustomSelect
+            value={selectedLevel}
+            onValueChange={(val) => setSelectedLevel(val)}
+            options={cbcData.levels.map((l) => ({ value: l.id, label: l.name }))}
+            className="w-full text-xs"
+          />
+        </div>
+        <div className="hidden sm:flex sm:flex-wrap gap-2">
           {cbcData.levels.map((l) => (
             <button
               key={l.id}

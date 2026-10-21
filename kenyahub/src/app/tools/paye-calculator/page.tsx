@@ -214,26 +214,27 @@ export default function PAYECalculatorPage() {
       <div className="space-y-6">
         {/* Calculation Direction Mode Switcher */}
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-5">
-          <div className="flex flex-wrap gap-2">
+          <div className="grid grid-cols-2 sm:flex gap-2">
             <button
               onClick={() => setCalcMode("grossToNet")}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+              className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-center whitespace-nowrap ${
                 calcMode === "grossToNet"
                   ? "bg-gold text-kenya-black"
                   : "bg-bg-elevated border border-border text-text-secondary hover:border-gold/50"
               }`}
             >
-              Gross Salary → Net Pay
+              Gross → Net Pay
             </button>
             <button
               onClick={() => setCalcMode("netToGross")}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+              className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-center whitespace-nowrap ${
                 calcMode === "netToGross"
                   ? "bg-gold text-kenya-black"
                   : "bg-bg-elevated border border-border text-text-secondary hover:border-gold/50"
               }`}
             >
-              Target Net Pay → Required Gross (Salary Negotiation)
+              <span className="sm:hidden">Target Net → Gross</span>
+              <span className="hidden sm:inline">Target Net Pay → Required Gross (Negotiation)</span>
             </button>
           </div>
 
