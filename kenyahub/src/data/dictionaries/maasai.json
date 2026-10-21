@@ -12,7 +12,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "1.1.0",
-  "lastUpdated": "2026-10",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Maasai (Maa) is a Plains Nilotic language spoken by the pastoralist Maasai people of Kenya and Tanzania. The Samburu dialect (Samburu County) is closely related. Enriched with authentic entries from \"Maasai Dictionary\" by Charles Richmond (c.1940, Humboldt State University Press, 2016), verified line-by-line for singular/plural morphology, grammatical parts of speech, and cultural authenticity.",
   "categories": [
     {
@@ -675,8 +675,8 @@
           "english": "Bushbuck",
           "translation": "Ol-bua",
           "pronunciation": "ohl-boo-ah",
-          "context": "Plural: il-buan"
-          ,"audioFile": null
+          "context": "Plural: il-buan",
+          "audioFile": null
         },
         {
           "english": "Reedbuck",
@@ -2752,5 +2752,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

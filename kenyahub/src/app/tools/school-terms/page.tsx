@@ -10,7 +10,7 @@ const tool = TOOLS.find((t) => t.slug === "school-terms")!;
 
 const faq = [
   { question: "How many school terms does Kenya have?", answer: "Kenya has 3 school terms per year: Term 1 (January–April), Term 2 (May–August), and Term 3 (August/September–October/November). Each term has a mid-term break, and there are longer holidays between terms." },
-  { question: "When do Kenya schools open in 2025?", answer: "Term 1 opens on January 6, 2025 and closes on April 4, 2025. Term 2 opens on April 28, 2025. Term 3 opens on August 25, 2025." },
+  { question: "When do Kenya schools open in 2026?", answer: "In 2026, Term 1 runs from January 5 to April 2, 2026 (13 weeks). Term 2 runs from April 27 to July 31, 2026 (14 weeks). Term 3 runs from August 24 to October 23, 2026 (10 weeks), followed by national examinations." },
   { question: "When is the December holiday for schools?", answer: "The long December holiday typically runs from early November to early January — about 9 weeks. It's the longest school break in the Kenyan calendar." },
   { question: "Do all schools follow the same term dates?", answer: "Public schools follow the Ministry of Education's official calendar. Private and international schools may set their own calendars, though most align closely with the MoE dates." },
 ];
@@ -35,7 +35,7 @@ function isCurrentHoliday(start: string, end: string) {
 }
 
 export default function SchoolTermsPage() {
-  const [selectedYear, setSelectedYear] = useState("2025");
+  const [selectedYear, setSelectedYear] = useState("2026");
   const years = Object.keys(termsData.years);
   const yearData = (termsData.years as Record<string, typeof termsData.years["2025"]>)[selectedYear];
 

@@ -12,7 +12,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "1.1.0",
-  "lastUpdated": "2026-10",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Kamba (Kĩkamba) is a Bantu language spoken across Machakos, Makueni, and Kitui counties of Kenya. Vocabulary enriched with systematic comparative dialectal data from 'Grammar of the Kamba Language' by J.T. Last (CMS, 1885), 'Vocabularies of the Kamba and Kikuyu Languages' by Hildegarde Hinde (Cambridge University Press, 1904), and standard Kĩkamba linguistic references.",
   "categories": [
     {
@@ -1331,5 +1331,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

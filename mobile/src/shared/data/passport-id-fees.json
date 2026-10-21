@@ -1,6 +1,6 @@
 {
-  "source": "Department of Immigration & National Registration Bureau (NRB)",
-  "lastUpdated": "2026-10-04",
+  "source": "Directorate of Immigration Services & National Registration Bureau (eCitizen 2026)",
+  "lastUpdated": "2026-10-20",
   "passport": {
     "types": [
       {
@@ -70,11 +70,36 @@
   },
   "nationalId": {
     "types": [
-      { "type": "First Application (age 18+)", "fee": 300, "processingTime": "30 – 60 working days", "notes": "Mandatory for all Kenyan citizens turning 18" },
-      { "type": "Replacement (Lost ID)", "fee": 0, "processingTime": "30 – 60 working days", "notes": "Currently free under the replacement-fee waiver; requires a police abstract report" },
-      { "type": "Replacement (Damaged ID)", "fee": 0, "processingTime": "30 – 60 working days", "notes": "Currently free under the replacement-fee waiver; surrender the damaged physical card" },
-      { "type": "Change of Particulars", "fee": 0, "processingTime": "30 – 60 working days", "notes": "Currently free under the replacement-fee waiver; requires supporting documents (marriage cert, deed poll)" },
-      { "type": "Waiting Card (Interim)", "fee": 0, "processingTime": "Same day", "notes": "Temporary ID slip issued upon biometric capture" }
+      {
+        "type": "First Application (age 18+)",
+        "fee": 300,
+        "processingTime": "30 – 60 working days",
+        "notes": "Mandatory for all Kenyan citizens turning 18"
+      },
+      {
+        "type": "Replacement (Lost ID)",
+        "fee": 0,
+        "processingTime": "30 – 60 working days",
+        "notes": "Currently free under the replacement-fee waiver; requires a police abstract report"
+      },
+      {
+        "type": "Replacement (Damaged ID)",
+        "fee": 0,
+        "processingTime": "30 – 60 working days",
+        "notes": "Currently free under the replacement-fee waiver; surrender the damaged physical card"
+      },
+      {
+        "type": "Change of Particulars",
+        "fee": 0,
+        "processingTime": "30 – 60 working days",
+        "notes": "Currently free under the replacement-fee waiver; requires supporting documents (marriage cert, deed poll)"
+      },
+      {
+        "type": "Waiting Card (Interim)",
+        "fee": 0,
+        "processingTime": "Same day",
+        "notes": "Temporary ID slip issued upon biometric capture"
+      }
     ],
     "requiredDocuments": [
       "Birth certificate (original and copy)",
@@ -85,11 +110,31 @@
     ]
   },
   "otherDocuments": [
-    { "type": "Alien Certificate", "fee": 1000, "description": "For foreign nationals resident in Kenya" },
-    { "type": "Foreign Nationals Registration", "fee": 1000, "description": "Registration of foreign nationals" },
-    { "type": "Birth Certificate (late registration)", "fee": 150, "description": "For births registered after 6 months" },
-    { "type": "Death Certificate", "fee": 50, "description": "Registration of death" },
-    { "type": "Marriage Certificate", "fee": 600, "description": "Civil marriage registration" }
+    {
+      "type": "Alien Certificate",
+      "fee": 1000,
+      "description": "For foreign nationals resident in Kenya"
+    },
+    {
+      "type": "Foreign Nationals Registration",
+      "fee": 1000,
+      "description": "Registration of foreign nationals"
+    },
+    {
+      "type": "Birth Certificate (late registration)",
+      "fee": 150,
+      "description": "For births registered after 6 months"
+    },
+    {
+      "type": "Death Certificate",
+      "fee": 50,
+      "description": "Registration of death"
+    },
+    {
+      "type": "Marriage Certificate",
+      "fee": 600,
+      "description": "Civil marriage registration"
+    }
   ],
   "hudumaLocations": [
     "Nairobi — Huduma Centre GPO, Makadara, Kibera",

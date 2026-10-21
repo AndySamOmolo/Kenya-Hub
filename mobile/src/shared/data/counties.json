@@ -1053,5 +1053,7 @@
     "Area is in km²",
     "County codes follow the official KNBS/IEBC numbering (1 = Mombasa to 47 = Nairobi)",
     "Constituencies listed are parliamentary constituencies (not county assembly wards)"
-  ]
+  ],
+  "lastUpdated": "2026-10-20",
+  "source": "IEBC (2022 Election Data) & KNBS Population and Housing Census"
 }

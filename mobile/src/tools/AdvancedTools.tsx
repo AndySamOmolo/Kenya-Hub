@@ -57,7 +57,6 @@ export function KenyanTranslatorTool() {
     return ALL_DICTS.find((d) => d.languageId === selectedLang) || swahiliDict;
   }, [selectedLang]);
 
-  // Flatten entries
   const allEntries = useMemo(() => {
     const list: {
       category: string;
@@ -98,7 +97,6 @@ export function KenyanTranslatorTool() {
 
   return (
     <View style={styles.toolWrap}>
-      {/* Language Selector Pills */}
       <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
         Select Language ({ALL_DICTS.length} available)
       </Text>
@@ -137,7 +135,6 @@ export function KenyanTranslatorTool() {
         })}
       </ScrollView>
 
-      {/* Language Info Banner */}
       <View
         style={[
           styles.infoCard,
@@ -159,7 +156,6 @@ export function KenyanTranslatorTool() {
         </Text>
       </View>
 
-      {/* Search Input */}
       <View
         style={[
           styles.searchBox,
@@ -181,7 +177,6 @@ export function KenyanTranslatorTool() {
         )}
       </View>
 
-      {/* Category Pills */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -233,7 +228,6 @@ export function KenyanTranslatorTool() {
         })}
       </ScrollView>
 
-      {/* Vocabulary Results */}
       <Text style={[styles.countLabel, { color: theme.textMuted }]}>
         Showing {filteredEntries.length} phrases & words
       </Text>
@@ -295,16 +289,18 @@ export function SolarRoiTool() {
   const d = solarData.systemDefaults;
   const [monthlyBill, setMonthlyBill] = useState("5000");
   const [regionId, setRegionId] = useState("nairobi");
+  const [costPerKw, setCostPerKw] = useState(String(d.avgCostPerKw || 130000));
 
   const results = useMemo(() => {
     const billNum = Math.max(500, parseFloat(monthlyBill) || 0);
+    const customCostPerKw = Math.max(50000, parseFloat(costPerKw) || d.avgCostPerKw);
     const region = solarData.regions.find((r) => r.id === regionId) || solarData.regions[0];
     const irradiance = region.irradiance;
-    const monthlyKwh = billNum / d.kplcAvgRatePerKwh;
+    const monthlyKwh = Math.round(billNum / d.kplcAvgRatePerKwh);
     const dailyKwh = monthlyKwh / 30;
     const systemSizeKw = dailyKwh / (irradiance * d.panelEfficiency * (1 - d.systemLosses));
     const recommendedSize = Math.ceil(systemSizeKw * 10) / 10;
-    const systemCost = Math.round(recommendedSize * d.avgCostPerKw);
+    const systemCost = Math.round(recommendedSize * customCostPerKw);
     const monthlyGeneration = Math.round(
       recommendedSize * irradiance * d.panelEfficiency * (1 - d.systemLosses) * 30
     );
@@ -320,6 +316,10 @@ export function SolarRoiTool() {
     const roofArea = Math.round(recommendedSize * d.panelAreaPerKw * 10) / 10;
 
     return {
+      region,
+      irradiance,
+      monthlyKwh,
+      monthlyGeneration,
       recommendedSize,
       systemCost,
       effectiveSavings,
@@ -328,7 +328,7 @@ export function SolarRoiTool() {
       netProfit,
       roofArea,
     };
-  }, [monthlyBill, regionId, d]);
+  }, [monthlyBill, regionId, costPerKw, d]);
 
   return (
     <View style={styles.toolWrap}>
@@ -352,7 +352,7 @@ export function SolarRoiTool() {
           />
         </View>
         <View style={styles.presetRow}>
-          {[2000, 5000, 10000, 20000].map((amount) => (
+          {[2000, 5000, 10000, 20000, 50000].map((amount) => (
             <Pressable
               key={amount}
               onPress={() => setMonthlyBill(String(amount))}
@@ -377,6 +377,55 @@ export function SolarRoiTool() {
                 ]}
               >
                 {amount >= 1000 ? `${amount / 1000}k` : amount}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+      </View>
+
+      {/* Adjustable System Cost per kW */}
+      <View
+        style={[
+          styles.cardBox,
+          { backgroundColor: theme.bgCard, borderColor: theme.border },
+        ]}
+      >
+        <Text style={[styles.fieldLabel, { color: theme.textSecondary }]}>
+          System Cost per kW (KES — Typical KES 110k–180k)
+        </Text>
+        <View style={styles.kesInputRow}>
+          <Text style={[styles.kesPrefix, { color: theme.gold, fontSize: 16 }]}>KES</Text>
+          <TextInput
+            keyboardType="numeric"
+            value={costPerKw}
+            onChangeText={setCostPerKw}
+            style={[styles.bigInput, { color: theme.textPrimary, fontSize: 20 }]}
+          />
+        </View>
+        <View style={styles.presetRow}>
+          {[110000, 130000, 150000, 180000].map((c) => (
+            <Pressable
+              key={c}
+              onPress={() => setCostPerKw(String(c))}
+              style={[
+                styles.presetBtn,
+                {
+                  backgroundColor:
+                    costPerKw === String(c) ? theme.gold : theme.bgElevated,
+                  borderColor: theme.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.presetText,
+                  {
+                    color:
+                      costPerKw === String(c) ? theme.kenyaBlack : theme.textPrimary,
+                  },
+                ]}
+              >
+                {c / 1000}k/kW
               </Text>
             </Pressable>
           ))}
@@ -488,6 +537,22 @@ export function SolarRoiTool() {
 
         <View style={[styles.divider, { backgroundColor: theme.border }]} />
 
+        {/* Detailed System Breakdown Table */}
+        <View style={{ gap: 6 }}>
+          {[
+            { label: "Current Monthly Consumption", val: `~${results.monthlyKwh} kWh / month` },
+            { label: "Estimated Solar Generation", val: `~${results.monthlyGeneration} kWh / month` },
+            { label: "Solar Irradiance (${results.region.name})".replace("${results.region.name}", results.region.name), val: `${results.irradiance} kWh/m²/day` },
+            { label: "Roof Area Needed", val: `~${results.roofArea} m² (${Math.ceil(results.recommendedSize * 2)} panels)` },
+            { label: "25-Year Cumulative Savings", val: `KES ${results.cumulativeSavings.toLocaleString()}` },
+          ].map((row) => (
+            <View key={row.label} style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 3 }}>
+              <Text style={{ fontSize: 12, color: theme.textSecondary }}>{row.label}</Text>
+              <Text style={{ fontSize: 12, fontWeight: "700", color: theme.textPrimary }}>{row.val}</Text>
+            </View>
+          ))}
+        </View>
+
         <View style={[styles.highlightBox, { backgroundColor: `${theme.kenyaGreenLight}15` }]}>
           <Text style={[styles.highlightLabel, { color: theme.kenyaGreenLight }]}>
             25-Year Net Profit: KES {results.netProfit.toLocaleString()}
@@ -503,6 +568,7 @@ export function WardConstituencyFinderTool() {
   const { theme } = useTheme();
   const [selectedSlug, setSelectedSlug] = useState("nairobi");
   const [search, setSearch] = useState("");
+  const [sortBy, setSortBy] = useState<"order" | "alpha">("order");
 
   const currentCounty = useMemo(() => {
     return (
@@ -513,11 +579,23 @@ export function WardConstituencyFinderTool() {
 
   const filteredConstituencies = useMemo(() => {
     const q = search.trim().toLowerCase();
-    if (!q) return currentCounty.constituencies;
-    return currentCounty.constituencies.filter((c) =>
-      c.toLowerCase().includes(q)
-    );
-  }, [currentCounty, search]);
+    const indexed = currentCounty.constituencies.map((name, i) => ({
+      name,
+      num: i + 1,
+    }));
+    const list = !q
+      ? indexed
+      : indexed.filter((c) => c.name.toLowerCase().includes(q));
+    if (sortBy === "alpha") {
+      return [...list].sort((a, b) => a.name.localeCompare(b.name));
+    }
+    return list;
+  }, [currentCounty, search, sortBy]);
+
+  const density = useMemo(() => {
+    if (!currentCounty.area) return 0;
+    return Math.round(currentCounty.population / currentCounty.area);
+  }, [currentCounty]);
 
   return (
     <View style={styles.toolWrap}>
@@ -550,12 +628,55 @@ export function WardConstituencyFinderTool() {
                   { color: active ? theme.kenyaBlack : theme.textPrimary },
                 ]}
               >
-                {c.name}
+                {String(c.code).padStart(3, "0")} · {c.name}
               </Text>
             </Pressable>
           );
         })}
       </ScrollView>
+
+      {/* County Statistics Card */}
+      <View
+        style={[
+          styles.infoCard,
+          { backgroundColor: theme.bgCard, borderColor: theme.border },
+        ]}
+      >
+        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+          <Text style={[styles.infoTitle, { color: theme.textPrimary }]}>
+            {currentCounty.name} County (#{String(currentCounty.code).padStart(3, "0")})
+          </Text>
+          <Text style={{ fontSize: 12, fontWeight: "700", color: theme.gold }}>
+            HQ: {currentCounty.capital}
+          </Text>
+        </View>
+        <View style={[styles.leadersGrid, { marginTop: 8 }]}>
+          <View style={styles.leaderItem}>
+            <Text style={[styles.leaderRole, { color: theme.textMuted }]}>Population (2019)</Text>
+            <Text style={[styles.leaderVal, { color: theme.textPrimary }]}>
+              {currentCounty.population.toLocaleString()}
+            </Text>
+          </View>
+          <View style={styles.leaderItem}>
+            <Text style={[styles.leaderRole, { color: theme.textMuted }]}>Land Area</Text>
+            <Text style={[styles.leaderVal, { color: theme.textPrimary }]}>
+              {currentCounty.area.toLocaleString()} km²
+            </Text>
+          </View>
+          <View style={styles.leaderItem}>
+            <Text style={[styles.leaderRole, { color: theme.textMuted }]}>Pop. Density</Text>
+            <Text style={[styles.leaderVal, { color: theme.sky }]}>
+              {density.toLocaleString()} / km²
+            </Text>
+          </View>
+          <View style={styles.leaderItem}>
+            <Text style={[styles.leaderRole, { color: theme.textMuted }]}>Constituencies</Text>
+            <Text style={[styles.leaderVal, { color: theme.gold }]}>
+              {currentCounty.constituencies.length}
+            </Text>
+          </View>
+        </View>
+      </View>
 
       {/* Leadership Card */}
       <View
@@ -603,21 +724,50 @@ export function WardConstituencyFinderTool() {
         </View>
       </View>
 
-      {/* Constituencies Filter */}
-      <View
-        style={[
-          styles.searchBox,
-          { backgroundColor: theme.bgCard, borderColor: theme.border },
-        ]}
-      >
-        <Ionicons name="search" size={18} color={theme.textMuted} />
-        <TextInput
-          placeholder="Filter constituencies / wards..."
-          placeholderTextColor={theme.textMuted}
-          value={search}
-          onChangeText={setSearch}
-          style={[styles.searchInput, { color: theme.textPrimary }]}
-        />
+      {/* Constituencies Filter & Sort */}
+      <View style={{ flexDirection: "row", gap: 8, alignItems: "center" }}>
+        <View
+          style={[
+            styles.searchBox,
+            { backgroundColor: theme.bgCard, borderColor: theme.border, flex: 1 },
+          ]}
+        >
+          <Ionicons name="search" size={18} color={theme.textMuted} />
+          <TextInput
+            placeholder="Filter constituencies..."
+            placeholderTextColor={theme.textMuted}
+            value={search}
+            onChangeText={setSearch}
+            style={[styles.searchInput, { color: theme.textPrimary }]}
+          />
+        </View>
+        {([
+          { key: "order", label: "# Order" },
+          { key: "alpha", label: "A–Z" },
+        ] as const).map((opt) => (
+          <Pressable
+            key={opt.key}
+            onPress={() => setSortBy(opt.key)}
+            style={[
+              styles.catPill,
+              {
+                backgroundColor: sortBy === opt.key ? theme.gold : theme.bgCard,
+                borderColor: sortBy === opt.key ? theme.gold : theme.border,
+                height: 42,
+                justifyContent: "center",
+              },
+            ]}
+          >
+            <Text
+              style={[
+                styles.catPillText,
+                { color: sortBy === opt.key ? theme.kenyaBlack : theme.textSecondary },
+              ]}
+            >
+              {opt.label}
+            </Text>
+          </Pressable>
+        ))}
       </View>
 
       <Text style={[styles.countLabel, { color: theme.textMuted }]}>
@@ -625,9 +775,9 @@ export function WardConstituencyFinderTool() {
       </Text>
 
       <View style={styles.constituenciesGrid}>
-        {filteredConstituencies.map((c, idx) => (
+        {filteredConstituencies.map((c) => (
           <View
-            key={idx}
+            key={c.num}
             style={[
               styles.constituencyBox,
               { backgroundColor: theme.bgCard, borderColor: theme.border },
@@ -635,11 +785,11 @@ export function WardConstituencyFinderTool() {
           >
             <View style={[styles.numberCircle, { backgroundColor: `${theme.gold}20` }]}>
               <Text style={[styles.numberCircleText, { color: theme.gold }]}>
-                {idx + 1}
+                {c.num}
               </Text>
             </View>
             <Text style={[styles.constituencyTitle, { color: theme.textPrimary }]}>
-              {c}
+              {c.name}
             </Text>
           </View>
         ))}
@@ -653,9 +803,11 @@ export function CbcCurriculumTool() {
   const { theme } = useTheme();
   const [levelId, setLevelId] = useState(cbcData.levels[0].id);
 
-  const level = useMemo(() => {
+  const level: any = useMemo(() => {
     return cbcData.levels.find((l) => l.id === levelId) || cbcData.levels[0];
   }, [levelId]);
+
+  const gradeAgeMapping: any[] = (cbcData as any).gradeAgeMapping || [];
 
   return (
     <View style={styles.toolWrap}>
@@ -708,7 +860,43 @@ export function CbcCurriculumTool() {
         <Text style={[styles.levelOld, { color: theme.textMuted }]}>
           Old 8-4-4 equivalent: {level.previousSystem}
         </Text>
+        {level.assessment && (
+          <Text style={[styles.infoDesc, { color: theme.textSecondary, marginTop: 4 }]}>
+            <Text style={{ fontWeight: "800", color: theme.sky }}>Assessment: </Text>
+            {level.assessment}
+          </Text>
+        )}
       </View>
+
+      {/* Senior Secondary Pathways (when viewing Senior Secondary or available) */}
+      {Array.isArray(level.pathways) && level.pathways.length > 0 && (
+        <>
+          <Text style={[styles.sectionLabel, { color: theme.gold }]}>
+            Senior Secondary Career Pathways (Grades 10–12)
+          </Text>
+          <View style={styles.entriesList}>
+            {level.pathways.map((pw: any, pIdx: number) => (
+              <View
+                key={pIdx}
+                style={[
+                  styles.entryCard,
+                  { backgroundColor: theme.bgCard, borderColor: theme.border },
+                ]}
+              >
+                <Text style={[styles.areaName, { color: theme.gold }]}>{pw.name}</Text>
+                <Text style={[styles.areaDesc, { color: theme.textSecondary }]}>
+                  <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Core: </Text>
+                  {Array.isArray(pw.core) ? pw.core.join(", ") : ""}
+                </Text>
+                <Text style={[styles.areaDesc, { color: theme.textSecondary }]}>
+                  <Text style={{ fontWeight: "700", color: theme.kenyaGreenLight }}>Electives: </Text>
+                  {Array.isArray(pw.electives) ? pw.electives.join(", ") : ""}
+                </Text>
+              </View>
+            ))}
+          </View>
+        </>
+      )}
 
       {/* Learning Areas */}
       <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
@@ -740,6 +928,40 @@ export function CbcCurriculumTool() {
           </View>
         ))}
       </View>
+
+      {/* CBC vs 8-4-4 Grade-Age Comparison Table */}
+      <Text style={[styles.sectionLabel, { color: theme.gold, marginTop: 8 }]}>
+        CBC (2-6-3-3-3) vs Old 8-4-4 System Comparison
+      </Text>
+      <View
+        style={[
+          styles.infoCard,
+          { backgroundColor: theme.bgCard, borderColor: theme.border },
+        ]}
+      >
+        {gradeAgeMapping.map((row: any, idx: number) => (
+          <View
+            key={row.cbcGrade}
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              paddingVertical: 7,
+              borderBottomWidth: idx < gradeAgeMapping.length - 1 ? 1 : 0,
+              borderBottomColor: theme.border,
+            }}
+          >
+            <Text style={{ fontSize: 12, fontWeight: "800", color: theme.textPrimary, flex: 1 }}>
+              {row.cbcGrade} ({row.age} yrs)
+            </Text>
+            <Text style={{ fontSize: 12, color: theme.textSecondary, flex: 1 }}>
+              {row.old844}
+            </Text>
+            <Text style={{ fontSize: 11, fontWeight: "700", color: theme.gold, flex: 1, textAlign: "right" }}>
+              {row.level}
+            </Text>
+          </View>
+        ))}
+      </View>
     </View>
   );
 }
@@ -748,6 +970,25 @@ export function CbcCurriculumTool() {
 export function KuccpsClusterTool() {
   const { theme } = useTheme();
   const grades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"];
+  const allSubjects: string[] = (kuccpsData as any).subjects || [
+    "Mathematics",
+    "English",
+    "Kiswahili",
+    "Biology",
+    "Physics",
+    "Chemistry",
+    "History & Government",
+    "Geography",
+    "CRE",
+    "Business Studies",
+    "Agriculture",
+    "Computer Studies",
+  ];
+
+  const [showAllSubjects, setShowAllSubjects] = useState(false);
+  const [sortBy, setSortBy] = useState<"points" | "id" | "cutoff">("points");
+  const [expandedCluster, setExpandedCluster] = useState<number | null>(1);
+
   const [selectedGrades, setSelectedGrades] = useState<Record<string, string>>({
     Mathematics: "A",
     English: "A-",
@@ -755,154 +996,303 @@ export function KuccpsClusterTool() {
     Biology: "A-",
     Physics: "B+",
     Chemistry: "A",
+    "History & Government": "B+",
+    "Business Studies": "A-",
   });
 
   const gradePoints: Record<string, number> = kuccpsData.gradePoints as any;
 
+  const displayedSubjects = showAllSubjects ? allSubjects : allSubjects.slice(0, 8);
+
+  const summary = useMemo(() => {
+    const entries = Object.entries(selectedGrades).filter(([_, g]) => Boolean(g));
+    const totalPts = entries.reduce((sum, [_, g]) => sum + (gradePoints[g] || 0), 0);
+    const meanPts = entries.length > 0 ? (totalPts / entries.length).toFixed(2) : "0.00";
+    return { count: entries.length, totalPts, meanPts };
+  }, [selectedGrades, gradePoints]);
+
   const clusterResults = useMemo(() => {
-    return kuccpsData.clusters.map((cluster: any) => {
+    const list = kuccpsData.clusters.map((cluster: any) => {
       let totalWeight = 0;
-      const breakdown: { subject: string; grade: string; weighted: number }[] = [];
+      const usedSubjects = new Set<string>();
+      const breakdown: {
+        reqName: string;
+        matchedSubject: string;
+        grade: string;
+        points: number;
+        weight: number;
+        weighted: number;
+      }[] = [];
 
       for (const req of cluster.subjects) {
-        const options = req.name.split("/").map((s: string) => s.trim());
         let bestGrade = "";
         let bestPoints = 0;
+        let matchedSubject = req.name;
 
-        for (const opt of options) {
-          if (selectedGrades[opt] && gradePoints[selectedGrades[opt]] > bestPoints) {
-            bestGrade = selectedGrades[opt];
-            bestPoints = gradePoints[selectedGrades[opt]];
+        if (req.name.toLowerCase().includes("any other")) {
+          // Pick the highest unused subject grade
+          for (const [subj, g] of Object.entries(selectedGrades)) {
+            if (!g || usedSubjects.has(subj)) continue;
+            const pts = gradePoints[g] || 0;
+            if (pts > bestPoints) {
+              bestPoints = pts;
+              bestGrade = g;
+              matchedSubject = subj;
+            }
+          }
+        } else {
+          const options = req.name.split("/").map((s: string) => s.trim());
+          for (const opt of options) {
+            if (selectedGrades[opt] && !usedSubjects.has(opt)) {
+              const pts = gradePoints[selectedGrades[opt]] || 0;
+              if (pts > bestPoints) {
+                bestPoints = pts;
+                bestGrade = selectedGrades[opt];
+                matchedSubject = opt;
+              }
+            }
           }
         }
 
         if (bestPoints > 0) {
+          usedSubjects.add(matchedSubject);
           const weighted = bestPoints * req.weight;
           totalWeight += weighted;
           breakdown.push({
-            subject: req.name,
+            reqName: req.name,
+            matchedSubject,
             grade: bestGrade,
-            weighted,
+            points: bestPoints,
+            weight: req.weight,
+            weighted: Math.round(weighted * 10) / 10,
           });
         }
       }
+
+      const minCutoffNum = parseFloat(String(cluster.typicalCutoff).split("–")[0]) || 30;
 
       return {
         id: cluster.id,
         name: cluster.name,
         typicalCutoff: cluster.typicalCutoff,
+        minCutoffNum,
         courses: cluster.courses,
         totalWeight: Math.round(totalWeight * 10) / 10,
         breakdown,
       };
     });
-  }, [selectedGrades, gradePoints]);
+
+    return [...list].sort((a, b) => {
+      if (sortBy === "points") return b.totalWeight - a.totalWeight;
+      if (sortBy === "cutoff") return a.minCutoffNum - b.minCutoffNum;
+      return a.id - b.id;
+    });
+  }, [selectedGrades, gradePoints, sortBy]);
+
+  const highestClusterWeight = useMemo(() => {
+    return clusterResults.reduce((max, c) => Math.max(max, c.totalWeight), 0);
+  }, [clusterResults]);
 
   return (
     <View style={styles.toolWrap}>
-      <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
-        Set Your Core KCSE Subject Grades
-      </Text>
-
-      <View style={styles.subjectsGrid}>
-        {["Mathematics", "English", "Kiswahili", "Biology", "Physics", "Chemistry"].map(
-          (subj) => (
-            <View
-              key={subj}
-              style={[
-                styles.subjCard,
-                { backgroundColor: theme.bgCard, borderColor: theme.border },
-              ]}
-            >
-              <Text style={[styles.subjName, { color: theme.textPrimary }]}>
-                {subj}
-              </Text>
-              <ScrollView
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                contentContainerStyle={styles.gradeScroll}
-              >
-                {grades.slice(0, 7).map((g) => {
-                  const active = selectedGrades[subj] === g;
-                  return (
-                    <Pressable
-                      key={g}
-                      onPress={() =>
-                        setSelectedGrades((prev) => ({ ...prev, [subj]: g }))
-                      }
-                      style={[
-                        styles.gradeBtn,
-                        {
-                          backgroundColor: active ? theme.gold : theme.bgElevated,
-                          borderColor: theme.border,
-                        },
-                      ]}
-                    >
-                      <Text
-                        style={[
-                          styles.gradeBtnText,
-                          {
-                            color: active ? theme.kenyaBlack : theme.textPrimary,
-                          },
-                        ]}
-                      >
-                        {g}
-                      </Text>
-                    </Pressable>
-                  );
-                })}
-              </ScrollView>
-            </View>
-          )
-        )}
+      {/* Summary Row */}
+      <View style={{ flexDirection: "row", gap: 8 }}>
+        <View style={[styles.infoCard, { flex: 1, backgroundColor: theme.bgCard, borderColor: theme.border, alignItems: "center" }]}>
+          <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>SUBJECTS</Text>
+          <Text style={{ fontSize: 18, fontWeight: "900", color: theme.textPrimary }}>{summary.count}</Text>
+        </View>
+        <View style={[styles.infoCard, { flex: 1, backgroundColor: theme.bgCard, borderColor: theme.border, alignItems: "center" }]}>
+          <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>MEAN POINTS</Text>
+          <Text style={{ fontSize: 18, fontWeight: "900", color: theme.sky }}>{summary.meanPts}</Text>
+        </View>
+        <View style={[styles.infoCard, { flex: 1, backgroundColor: theme.bgCard, borderColor: theme.border, alignItems: "center" }]}>
+          <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>TOP CLUSTER</Text>
+          <Text style={{ fontSize: 18, fontWeight: "900", color: theme.gold }}>{highestClusterWeight} / 48</Text>
+        </View>
       </View>
 
-      <Text style={[styles.sectionLabel, { color: theme.textSecondary, marginTop: 16 }]}>
-        Calculated Cluster Points Across Degree Programmes
-      </Text>
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
+          Select Your KCSE Subject Grades ({displayedSubjects.length} / {allSubjects.length})
+        </Text>
+        <Pressable
+          onPress={() => setShowAllSubjects(!showAllSubjects)}
+          style={[styles.catPill, { backgroundColor: theme.bgCard, borderColor: theme.gold }]}
+        >
+          <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>
+            {showAllSubjects ? "Show Core 8" : `Show All ${allSubjects.length} Subjects`}
+          </Text>
+        </Pressable>
+      </View>
 
-      <View style={styles.entriesList}>
-        {clusterResults.map((c) => (
+      <View style={styles.subjectsGrid}>
+        {displayedSubjects.map((subj) => (
           <View
-            key={c.id}
+            key={subj}
             style={[
-              styles.entryCard,
+              styles.subjCard,
               { backgroundColor: theme.bgCard, borderColor: theme.border },
             ]}
           >
-            <View style={styles.clusterHeaderRow}>
-              <View style={{ flex: 1 }}>
-                <Text style={[styles.clusterName, { color: theme.textPrimary }]}>
-                  {c.name}
-                </Text>
-                <Text style={[styles.clusterCutoff, { color: theme.textMuted }]}>
-                  Typical Cutoff: {c.typicalCutoff} pts
-                </Text>
-              </View>
-              <View style={[styles.clusterBadge, { backgroundColor: `${theme.gold}20` }]}>
-                <Text style={[styles.clusterPointsText, { color: theme.gold }]}>
-                  {c.totalWeight} pts
-                </Text>
-              </View>
-            </View>
-
-            <View style={styles.coursesRow}>
-              {c.courses.map((course: string, idx: number) => (
-                <View
-                  key={idx}
-                  style={[
-                    styles.courseChip,
-                    { backgroundColor: theme.bgElevated, borderColor: theme.border },
-                  ]}
-                >
-                  <Text style={[styles.courseChipText, { color: theme.textSecondary }]}>
-                    {course}
-                  </Text>
-                </View>
-              ))}
-            </View>
+            <Text style={[styles.subjName, { color: theme.textPrimary }]} numberOfLines={1}>
+              {subj}
+            </Text>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.gradeScroll}
+            >
+              <Pressable
+                onPress={() =>
+                  setSelectedGrades((prev) => {
+                    const next = { ...prev };
+                    delete next[subj];
+                    return next;
+                  })
+                }
+                style={[
+                  styles.gradeBtn,
+                  {
+                    backgroundColor: !selectedGrades[subj] ? theme.bgSecondary : theme.bgElevated,
+                    borderColor: theme.border,
+                  },
+                ]}
+              >
+                <Text style={[styles.gradeBtnText, { color: theme.textMuted }]}>—</Text>
+              </Pressable>
+              {grades.map((g) => {
+                const active = selectedGrades[subj] === g;
+                return (
+                  <Pressable
+                    key={g}
+                    onPress={() =>
+                      setSelectedGrades((prev) => ({ ...prev, [subj]: g }))
+                    }
+                    style={[
+                      styles.gradeBtn,
+                      {
+                        backgroundColor: active ? theme.gold : theme.bgElevated,
+                        borderColor: theme.border,
+                      },
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.gradeBtnText,
+                        {
+                          color: active ? theme.kenyaBlack : theme.textPrimary,
+                        },
+                      ]}
+                    >
+                      {g}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </ScrollView>
           </View>
         ))}
+      </View>
+
+      {/* Sort Controls */}
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 10 }}>
+        <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
+          Degree Clusters ({clusterResults.length})
+        </Text>
+        <View style={{ flexDirection: "row", gap: 6 }}>
+          {([
+            { key: "points", label: "Highest Pts" },
+            { key: "id", label: "Cluster #" },
+            { key: "cutoff", label: "Lowest Cutoff" },
+          ] as const).map((opt) => (
+            <Pressable
+              key={opt.key}
+              onPress={() => setSortBy(opt.key)}
+              style={[
+                styles.catPill,
+                {
+                  backgroundColor: sortBy === opt.key ? theme.gold : theme.bgCard,
+                  borderColor: sortBy === opt.key ? theme.gold : theme.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.catPillText,
+                  { color: sortBy === opt.key ? theme.kenyaBlack : theme.textSecondary },
+                ]}
+              >
+                {opt.label}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+      </View>
+
+      <View style={styles.entriesList}>
+        {clusterResults.map((c) => {
+          const isExpanded = expandedCluster === c.id;
+          return (
+            <Pressable
+              key={c.id}
+              onPress={() => setExpandedCluster(isExpanded ? null : c.id)}
+              style={[
+                styles.entryCard,
+                { backgroundColor: theme.bgCard, borderColor: theme.border },
+              ]}
+            >
+              <View style={styles.clusterHeaderRow}>
+                <View style={{ flex: 1 }}>
+                  <Text style={[styles.clusterName, { color: theme.textPrimary }]}>
+                    Cluster {c.id}: {c.name}
+                  </Text>
+                  <Text style={[styles.clusterCutoff, { color: theme.textMuted }]}>
+                    Typical Cutoff: {c.typicalCutoff} pts · Tap for weight breakdown
+                  </Text>
+                </View>
+                <View style={[styles.clusterBadge, { backgroundColor: `${theme.gold}20` }]}>
+                  <Text style={[styles.clusterPointsText, { color: theme.gold }]}>
+                    {c.totalWeight} / 48
+                  </Text>
+                </View>
+              </View>
+
+              {isExpanded && c.breakdown.length > 0 && (
+                <View style={{ marginTop: 8, paddingTop: 8, borderTopWidth: 1, borderTopColor: theme.border, gap: 4 }}>
+                  <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>
+                    SUBJECT WEIGHT BREAKDOWN
+                  </Text>
+                  {c.breakdown.map((b, bIdx) => (
+                    <View key={bIdx} style={{ flexDirection: "row", justifyContent: "space-between" }}>
+                      <Text style={{ fontSize: 11, color: theme.textSecondary, flex: 1 }}>
+                        {b.reqName} ({b.matchedSubject})
+                      </Text>
+                      <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary }}>
+                        {b.grade} ({b.points} × {b.weight} = {b.weighted})
+                      </Text>
+                    </View>
+                  ))}
+                </View>
+              )}
+
+              <View style={styles.coursesRow}>
+                {c.courses.map((course: string, idx: number) => (
+                  <View
+                    key={idx}
+                    style={[
+                      styles.courseChip,
+                      { backgroundColor: theme.bgElevated, borderColor: theme.border },
+                    ]}
+                  >
+                    <Text style={[styles.courseChipText, { color: theme.textSecondary }]}>
+                      {course}
+                    </Text>
+                  </View>
+                ))}
+              </View>
+            </Pressable>
+          );
+        })}
       </View>
     </View>
   );
@@ -1239,9 +1629,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   subjName: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: "700",
-    width: 100,
+    width: 110,
   },
   gradeScroll: {
     gap: 6,

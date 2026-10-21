@@ -1,6 +1,8 @@
-import React from "react";
-import { useRouter } from "expo-router";
+import React, { useCallback, useMemo, useState } from "react";
+import { useRouter, useFocusEffect } from "expo-router";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
+  Modal,
   Platform,
   Pressable,
   ScrollView,
@@ -20,14 +22,20 @@ import {
 import {
   TOOLS,
   TOOL_CATEGORIES,
-  getPopularTools,
+  getToolUsageScore,
+  getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
+import {
+  STATIC_BLOG_POSTS,
+  StaticBlogPost,
+} from "../../src/shared/data/blog-posts";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
   const router = useRouter();
   const { theme } = useTheme();
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
+  const catInfo = getCategoryInfo(tool.category);
 
   return (
     <View
@@ -70,7 +78,7 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
                 ]}
               />
               <Text style={[styles.categoryPillText, { color: categoryColor }]}>
-                {tool.category.replace("-", " & ").toUpperCase()}
+                {(catInfo?.name || tool.category).toUpperCase()}
               </Text>
             </View>
             <Text
@@ -129,7 +137,75 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
 export default function HomeScreen() {
   const router = useRouter();
   const { theme } = useTheme();
-  const popular = getPopularTools(6);
+  const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
+  const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
+  const [selectedPost, setSelectedPost] = useState<StaticBlogPost | null>(null);
+  const [selectedBlogTag, setSelectedBlogTag] = useState<string>("All");
+
+  useFocusEffect(
+    useCallback(() => {
+      AsyncStorage.getItem("kh-saved-tools")
+        .then((val) => setPinnedSlugs(val?.split(",").filter(Boolean) ?? []))
+        .catch(() => setPinnedSlugs([]));
+
+      AsyncStorage.getItem("kh-tool-visits")
+        .then((raw) => {
+          if (!raw) {
+            setVisitCounts({});
+            return;
+          }
+          const parsed = JSON.parse(raw);
+          setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
+        })
+        .catch(() => setVisitCounts({}));
+    }, [])
+  );
+
+  // Mirrors web PopularToolsSection: sort by real visit counts if any, else baseline usage score
+  const popular = useMemo(() => {
+    const hasVisits = Object.values(visitCounts).some((c) => c > 0);
+    return [...TOOLS]
+      .sort((a, b) => {
+        const labelComparison = a.shortTitle.localeCompare(
+          b.shortTitle,
+          undefined,
+          { numeric: true, sensitivity: "base" }
+        );
+        if (hasVisits) {
+          const aV = visitCounts[a.slug] ?? 0;
+          const bV = visitCounts[b.slug] ?? 0;
+          if (bV !== aV) return bV - aV;
+        }
+        return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
+      })
+      .slice(0, 6);
+  }, [visitCounts]);
+
+  const pinnedTools = useMemo(
+    () =>
+      pinnedSlugs
+        .map((s) => TOOLS.find((t) => t.slug === s))
+        .filter(Boolean) as (typeof TOOLS)[0][],
+    [pinnedSlugs]
+  );
+
+  // Sorted blog posts from web STATIC_BLOG_POSTS (newest first)
+  const blogTags = useMemo(() => {
+    const tags = new Set<string>();
+    STATIC_BLOG_POSTS.forEach((p) => (p.tags || []).forEach((t) => tags.add(t)));
+    return ["All", ...Array.from(tags)];
+  }, []);
+
+  const sortedPosts = useMemo(() => {
+    const list =
+      selectedBlogTag === "All"
+        ? STATIC_BLOG_POSTS
+        : STATIC_BLOG_POSTS.filter((p) => p.tags?.includes(selectedBlogTag));
+    return [...list].sort(
+      (a, b) =>
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+    );
+  }, [selectedBlogTag]);
 
   return (
     <SafeAreaView
@@ -186,7 +262,10 @@ export default function HomeScreen() {
           >
             <Ionicons name="search" size={20} color={theme.gold} />
             <Text
-              style={[styles.m3SearchPlaceholder, { color: theme.textSecondary }]}
+              style={[
+                styles.m3SearchPlaceholder,
+                { color: theme.textSecondary },
+              ]}
               numberOfLines={1}
             >
               Search PAYE, M-Pesa, KPLC, Languages...
@@ -245,8 +324,9 @@ export default function HomeScreen() {
             </Text>
 
             <Text style={[styles.heroSubtitle, { color: theme.textSecondary }]}>
-              Calculate net salary, explore the CBC curriculum, learn Kenyan
-              languages, and check M-Pesa tariffs offline.
+              Calculate your net salary, explore CBC curriculum, decode number
+              plates, check M-Pesa fees — all powered by official Kenyan
+              government data. Zero sign-ups, zero cost.
             </Text>
 
             <View style={styles.heroButtons}>
@@ -256,12 +336,8 @@ export default function HomeScreen() {
                   onPress={() => router.push("/(tabs)/tools")}
                   style={[styles.btnFilled, { backgroundColor: theme.gold }]}
                 >
-                  <Ionicons
-                    name="apps"
-                    size={16}
-                    color={theme.kenyaBlack}
-                  />
-                  <Text style={styles.btnFilledText}>All Tools</Text>
+                  <Ionicons name="apps" size={16} color={theme.kenyaBlack} />
+                  <Text style={styles.btnFilledText}>Explore All Tools</Text>
                 </Pressable>
               </View>
 
@@ -279,16 +355,16 @@ export default function HomeScreen() {
                   onPress={() =>
                     router.push({
                       pathname: "/tools/[slug]",
-                      params: { slug: "learn" },
+                      params: { slug: "paye-calculator" },
                     })
                   }
                   style={styles.btnTonal}
                 >
-                  <Ionicons name="school" size={16} color={theme.gold} />
+                  <Ionicons name="calculator" size={16} color={theme.gold} />
                   <Text
                     style={[styles.btnTonalText, { color: theme.textPrimary }]}
                   >
-                    Learn Languages
+                    Try PAYE Calculator
                   </Text>
                 </Pressable>
               </View>
@@ -303,12 +379,36 @@ export default function HomeScreen() {
           contentContainerStyle={styles.quickChipsScroll}
         >
           {[
-            { slug: "paye-calculator", label: "PAYE Salary", icon: "calculator" as const },
-            { slug: "mpesa-fee-calculator", label: "M-Pesa Fees", icon: "phone-portrait" as const },
-            { slug: "kplc-token-calculator", label: "KPLC Tokens", icon: "flash" as const },
-            { slug: "learn", label: "Language Courses", icon: "chatbubbles" as const },
-            { slug: "kenyan-translator", label: "Translator", icon: "language" as const },
-            { slug: "number-plate-decoder", label: "Number Plates", icon: "car" as const },
+            {
+              slug: "paye-calculator",
+              label: "PAYE Salary",
+              icon: "calculator" as const,
+            },
+            {
+              slug: "mpesa-fee-calculator",
+              label: "M-Pesa Fees",
+              icon: "phone-portrait" as const,
+            },
+            {
+              slug: "kplc-token-calculator",
+              label: "KPLC Tokens",
+              icon: "flash" as const,
+            },
+            {
+              slug: "learn",
+              label: "Language Courses",
+              icon: "chatbubbles" as const,
+            },
+            {
+              slug: "kenyan-translator",
+              label: "Translator",
+              icon: "language" as const,
+            },
+            {
+              slug: "number-plate-decoder",
+              label: "Number Plates",
+              icon: "car" as const,
+            },
           ].map((action) => (
             <View
               key={action.slug}
@@ -341,7 +441,41 @@ export default function HomeScreen() {
           ))}
         </ScrollView>
 
-        {/* Popular Tools */}
+        {/* Pinned Tools Section (mirrors web PinnedToolsHomeSection) */}
+        {pinnedTools.length > 0 && (
+          <>
+            <View style={styles.sectionHeader}>
+              <View>
+                <Text style={[styles.sectionOverline, { color: theme.gold }]}>
+                  YOUR FAVORITES
+                </Text>
+                <Text
+                  style={[styles.sectionTitle, { color: theme.textPrimary }]}
+                >
+                  Pinned Tools ({pinnedTools.length})
+                </Text>
+              </View>
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor, true)}
+                onPress={() => router.push("/(tabs)/saved")}
+                style={styles.seeAllBtn}
+              >
+                <Text style={[styles.seeAllText, { color: theme.gold }]}>
+                  Manage
+                </Text>
+                <Ionicons name="arrow-forward" size={14} color={theme.gold} />
+              </Pressable>
+            </View>
+
+            <View style={styles.toolList}>
+              {pinnedTools.slice(0, 4).map((t) => (
+                <ToolCard key={`home-pinned-${t.slug}`} tool={t} />
+              ))}
+            </View>
+          </>
+        )}
+
+        {/* Popular Tools (mirrors web PopularToolsSection) */}
         <View style={styles.sectionHeader}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
@@ -445,7 +579,7 @@ export default function HomeScreen() {
                 47 Counties
               </Text>
               <Text style={[styles.hubDesc, { color: theme.textSecondary }]}>
-                Governors, capitals & sub-counties
+                Governors, capitals, budgets & sub-counties
               </Text>
               <View style={styles.hubLink}>
                 <Text style={[styles.hubLinkText, { color: theme.sky }]}>
@@ -534,7 +668,302 @@ export default function HomeScreen() {
             );
           })}
         </View>
+
+        {/* KenyaHub Guides & Blog Articles (synced from web STATIC_BLOG_POSTS) */}
+        <View style={[styles.sectionHeader, { marginTop: 26 }]}>
+          <View>
+            <Text style={[styles.sectionOverline, { color: theme.gold }]}>
+              KENYAHUB EDITORIAL
+            </Text>
+            <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+              Guides & Articles ({sortedPosts.length})
+            </Text>
+          </View>
+        </View>
+
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{
+            paddingHorizontal: 16,
+            gap: 8,
+            marginBottom: 12,
+          }}
+        >
+          {blogTags.map((tag) => {
+            const active = selectedBlogTag === tag;
+            return (
+              <Pressable
+                key={tag}
+                onPress={() => setSelectedBlogTag(tag)}
+                style={{
+                  paddingHorizontal: 12,
+                  paddingVertical: 6,
+                  borderRadius: 16,
+                  borderWidth: 1,
+                  backgroundColor: active
+                    ? theme.primaryContainer
+                    : theme.surfaceContainer,
+                  borderColor: active ? theme.gold : theme.outlineVariant,
+                }}
+              >
+                <Text
+                  style={{
+                    fontSize: 12,
+                    fontFamily: "Outfit_700Bold",
+                    color: active
+                      ? theme.onPrimaryContainer
+                      : theme.textSecondary,
+                  }}
+                >
+                  {tag}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </ScrollView>
+
+        <View style={styles.toolList}>
+          {sortedPosts.map((post) => (
+            <View
+              key={post.slug}
+              style={[
+                styles.toolCardWrap,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                onPress={() => setSelectedPost(post)}
+                style={styles.toolCard}
+              >
+                <View
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: 8,
+                    marginBottom: 6,
+                  }}
+                >
+                  {(post.tags || []).slice(0, 2).map((t) => (
+                    <View
+                      key={t}
+                      style={{
+                        backgroundColor: `${theme.gold}1A`,
+                        paddingHorizontal: 8,
+                        paddingVertical: 2,
+                        borderRadius: 6,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 10,
+                          fontFamily: "Outfit_700Bold",
+                          color: theme.gold,
+                        }}
+                      >
+                        {t}
+                      </Text>
+                    </View>
+                  ))}
+                  <Text style={{ fontSize: 11, color: theme.textMuted }}>
+                    {post.readTime} min read ·{" "}
+                    {new Date(post.publishedAt).toLocaleDateString("en-KE", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </Text>
+                </View>
+                <Text
+                  style={[styles.toolTitle, { color: theme.textPrimary }]}
+                >
+                  {post.title}
+                </Text>
+                <Text
+                  style={[styles.toolDesc, { color: theme.textSecondary }]}
+                  numberOfLines={2}
+                >
+                  {post.excerpt}
+                </Text>
+                <View
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: 4,
+                    marginTop: 10,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontSize: 12,
+                      fontFamily: "Outfit_700Bold",
+                      color: theme.gold,
+                    }}
+                  >
+                    Read Full Guide
+                  </Text>
+                  <Ionicons name="arrow-forward" size={13} color={theme.gold} />
+                </View>
+              </Pressable>
+            </View>
+          ))}
+        </View>
       </ScrollView>
+
+      {/* Full-Screen Blog Guide Reader Modal */}
+      <Modal
+        visible={!!selectedPost}
+        animationType="slide"
+        onRequestClose={() => setSelectedPost(null)}
+      >
+        <SafeAreaView
+          style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+        >
+          <KenyaStripe />
+          <AndroidTopAppBar
+            title={selectedPost?.title || "Guide"}
+            subtitle={
+              selectedPost
+                ? `${selectedPost.author} · ${selectedPost.readTime} min read`
+                : ""
+            }
+            onBack={() => setSelectedPost(null)}
+          />
+          {selectedPost && (
+            <ScrollView
+              contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
+              showsVerticalScrollIndicator={false}
+            >
+              <View
+                style={[
+                  styles.heroCard,
+                  {
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: theme.outlineVariant,
+                    marginBottom: 16,
+                  },
+                ]}
+              >
+                <View
+                  style={{
+                    flexDirection: "row",
+                    flexWrap: "wrap",
+                    gap: 6,
+                    marginBottom: 8,
+                  }}
+                >
+                  {(selectedPost.tags || []).map((t) => (
+                    <View
+                      key={t}
+                      style={{
+                        backgroundColor: `${theme.gold}20`,
+                        paddingHorizontal: 8,
+                        paddingVertical: 3,
+                        borderRadius: 6,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 10,
+                          fontFamily: "Outfit_700Bold",
+                          color: theme.gold,
+                        }}
+                      >
+                        {t}
+                      </Text>
+                    </View>
+                  ))}
+                </View>
+                <Text
+                  style={{
+                    fontFamily: "Outfit_800ExtraBold",
+                    fontSize: 20,
+                    color: theme.textPrimary,
+                    lineHeight: 26,
+                  }}
+                >
+                  {selectedPost.title}
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 13,
+                    color: theme.textSecondary,
+                    marginTop: 6,
+                    lineHeight: 19,
+                  }}
+                >
+                  {selectedPost.excerpt}
+                </Text>
+              </View>
+
+              <View
+                style={[
+                  styles.heroCard,
+                  {
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: theme.outlineVariant,
+                    gap: 10,
+                  },
+                ]}
+              >
+                {selectedPost.content.split("\n\n").map((block, idx) => {
+                  const trimmed = block.trim();
+                  if (!trimmed) return null;
+                  if (trimmed.startsWith("## ")) {
+                    return (
+                      <Text
+                        key={idx}
+                        style={{
+                          fontFamily: "Outfit_700Bold",
+                          fontSize: 17,
+                          color: theme.gold,
+                          marginTop: 8,
+                        }}
+                      >
+                        {trimmed.replace("## ", "")}
+                      </Text>
+                    );
+                  }
+                  if (trimmed.startsWith("### ")) {
+                    return (
+                      <Text
+                        key={idx}
+                        style={{
+                          fontFamily: "Outfit_700Bold",
+                          fontSize: 15,
+                          color: theme.textPrimary,
+                          marginTop: 4,
+                        }}
+                      >
+                        {trimmed.replace("### ", "")}
+                      </Text>
+                    );
+                  }
+                  const cleanText = trimmed
+                    .replace(/\*\*(.*?)\*\*/g, "$1")
+                    .replace(/\[(.*?)\]\((.*?)\)/g, "$1");
+                  return (
+                    <Text
+                      key={idx}
+                      style={{
+                        fontSize: 13.5,
+                        lineHeight: 21,
+                        color: theme.textSecondary,
+                      }}
+                    >
+                      {cleanText}
+                    </Text>
+                  );
+                })}
+              </View>
+            </ScrollView>
+          )}
+        </SafeAreaView>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -640,6 +1069,7 @@ const styles = StyleSheet.create({
   },
   heroButtons: {
     flexDirection: "row",
+    flexWrap: "wrap",
     gap: 10,
   },
   btnFilledWrap: {

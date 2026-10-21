@@ -12,7 +12,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-07",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Mijikenda encompasses nine sub-groups (Giriama, Digo, Duruma, Chonyi, Jibana, Kambe, Ribe, Rabai, Kauma). This uses the Giriama dialect as the most widely spoken. Coastal Kenya.",
   "categories": [
     {
@@ -175,5 +175,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

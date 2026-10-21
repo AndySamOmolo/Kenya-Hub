@@ -8,11 +8,38 @@
       "pH": "5.0–6.5",
       "fertility": "High",
       "description": "Deep, well-drained red soils from volcanic parent material. Among the most fertile soils in Kenya.",
-      "regions": ["Central Highlands", "Parts of Rift Valley", "Kisii Highlands"],
-      "counties": ["Kiambu", "Murang'a", "Nyeri", "Kirinyaga", "Meru", "Embu", "Kisii", "Nyamira", "Kericho"],
-      "bestCrops": ["Tea", "Coffee", "Potatoes", "Maize", "Vegetables"],
-      "deficiencies": ["Phosphorus fixation common", "Can become acidic over time"],
-      "improvement": ["Apply lime to correct acidity", "Add organic matter to improve structure", "Use phosphorus-rich fertilizers (DAP, TSP)"]
+      "regions": [
+        "Central Highlands",
+        "Parts of Rift Valley",
+        "Kisii Highlands"
+      ],
+      "counties": [
+        "Kiambu",
+        "Murang'a",
+        "Nyeri",
+        "Kirinyaga",
+        "Meru",
+        "Embu",
+        "Kisii",
+        "Nyamira",
+        "Kericho"
+      ],
+      "bestCrops": [
+        "Tea",
+        "Coffee",
+        "Potatoes",
+        "Maize",
+        "Vegetables"
+      ],
+      "deficiencies": [
+        "Phosphorus fixation common",
+        "Can become acidic over time"
+      ],
+      "improvement": [
+        "Apply lime to correct acidity",
+        "Add organic matter to improve structure",
+        "Use phosphorus-rich fertilizers (DAP, TSP)"
+      ]
     },
     {
       "id": "ferralsols",
@@ -22,11 +49,35 @@
       "pH": "4.5–5.5",
       "fertility": "Low–Medium",
       "description": "Heavily weathered soils with high iron and aluminum content. Common in warm, humid lowland areas.",
-      "regions": ["Western Kenya lowlands", "Parts of Coast"],
-      "counties": ["Kakamega", "Bungoma", "Busia", "Vihiga", "Kilifi", "Kwale"],
-      "bestCrops": ["Sugarcane", "Maize", "Tea (with amendments)", "Cassava"],
-      "deficiencies": ["Very low phosphorus availability", "Aluminum toxicity risk", "Low CEC (nutrient-holding capacity)"],
-      "improvement": ["Heavy liming essential", "Regular organic matter additions", "Phosphate rock applications", "Mulching to prevent surface crusting"]
+      "regions": [
+        "Western Kenya lowlands",
+        "Parts of Coast"
+      ],
+      "counties": [
+        "Kakamega",
+        "Bungoma",
+        "Busia",
+        "Vihiga",
+        "Kilifi",
+        "Kwale"
+      ],
+      "bestCrops": [
+        "Sugarcane",
+        "Maize",
+        "Tea (with amendments)",
+        "Cassava"
+      ],
+      "deficiencies": [
+        "Very low phosphorus availability",
+        "Aluminum toxicity risk",
+        "Low CEC (nutrient-holding capacity)"
+      ],
+      "improvement": [
+        "Heavy liming essential",
+        "Regular organic matter additions",
+        "Phosphate rock applications",
+        "Mulching to prevent surface crusting"
+      ]
     },
     {
       "id": "vertisols",
@@ -36,11 +87,37 @@
       "pH": "6.5–8.5",
       "fertility": "Medium–High",
       "description": "Dark, heavy clay soils that swell when wet and crack when dry. Difficult to work but naturally fertile.",
-      "regions": ["Rift Valley floor", "Lake Victoria basin", "Parts of Eastern"],
-      "counties": ["Narok", "Kajiado", "Siaya", "Homa Bay", "Migori", "Kitui", "Machakos"],
-      "bestCrops": ["Cotton", "Sorghum", "Rice", "Wheat"],
-      "deficiencies": ["Poor drainage", "Difficult tillage", "Zinc deficiency common"],
-      "improvement": ["Add gypsum to improve structure", "Plant in raised beds for drainage", "Avoid working when very wet — forms clods", "Ideal for rice paddies due to water-holding capacity"]
+      "regions": [
+        "Rift Valley floor",
+        "Lake Victoria basin",
+        "Parts of Eastern"
+      ],
+      "counties": [
+        "Narok",
+        "Kajiado",
+        "Siaya",
+        "Homa Bay",
+        "Migori",
+        "Kitui",
+        "Machakos"
+      ],
+      "bestCrops": [
+        "Cotton",
+        "Sorghum",
+        "Rice",
+        "Wheat"
+      ],
+      "deficiencies": [
+        "Poor drainage",
+        "Difficult tillage",
+        "Zinc deficiency common"
+      ],
+      "improvement": [
+        "Add gypsum to improve structure",
+        "Plant in raised beds for drainage",
+        "Avoid working when very wet — forms clods",
+        "Ideal for rice paddies due to water-holding capacity"
+      ]
     },
     {
       "id": "andosols",
@@ -50,11 +127,36 @@
       "pH": "5.5–6.5",
       "fertility": "High",
       "description": "Young volcanic soils found on the slopes of Mt. Kenya, Mt. Elgon, and the Aberdares. Extremely productive.",
-      "regions": ["Mt. Kenya slopes", "Aberdares", "Mt. Elgon"],
-      "counties": ["Nyeri", "Nyandarua", "Meru", "Tharaka-Nithi", "Trans Nzoia", "Bungoma (Mt. Elgon)"],
-      "bestCrops": ["Potatoes", "Wheat", "Pyrethrum", "Vegetables", "Dairy pastures"],
-      "deficiencies": ["Phosphorus fixation (allophane clays)", "Prone to erosion on steep slopes"],
-      "improvement": ["Terracing on slopes is critical", "Apply rock phosphate", "Cover crops to prevent erosion", "Excellent for intensive horticulture"]
+      "regions": [
+        "Mt. Kenya slopes",
+        "Aberdares",
+        "Mt. Elgon"
+      ],
+      "counties": [
+        "Nyeri",
+        "Nyandarua",
+        "Meru",
+        "Tharaka-Nithi",
+        "Trans Nzoia",
+        "Bungoma (Mt. Elgon)"
+      ],
+      "bestCrops": [
+        "Potatoes",
+        "Wheat",
+        "Pyrethrum",
+        "Vegetables",
+        "Dairy pastures"
+      ],
+      "deficiencies": [
+        "Phosphorus fixation (allophane clays)",
+        "Prone to erosion on steep slopes"
+      ],
+      "improvement": [
+        "Terracing on slopes is critical",
+        "Apply rock phosphate",
+        "Cover crops to prevent erosion",
+        "Excellent for intensive horticulture"
+      ]
     },
     {
       "id": "luvisols",
@@ -64,11 +166,32 @@
       "pH": "6.0–7.5",
       "fertility": "Medium–High",
       "description": "Well-developed soils with clay accumulation in the subsoil. Common in transitional zones between highlands and lowlands.",
-      "regions": ["Mid-altitude Eastern", "Parts of Rift Valley"],
-      "counties": ["Machakos", "Makueni", "Nakuru", "Baringo", "Laikipia"],
-      "bestCrops": ["Maize", "Beans", "Fruits (mango, citrus)", "Coffee"],
-      "deficiencies": ["Subsoil compaction possible", "Moderate organic matter"],
-      "improvement": ["Deep ploughing to break subsoil pan", "Crop rotation with legumes", "Organic manure applications"]
+      "regions": [
+        "Mid-altitude Eastern",
+        "Parts of Rift Valley"
+      ],
+      "counties": [
+        "Machakos",
+        "Makueni",
+        "Nakuru",
+        "Baringo",
+        "Laikipia"
+      ],
+      "bestCrops": [
+        "Maize",
+        "Beans",
+        "Fruits (mango, citrus)",
+        "Coffee"
+      ],
+      "deficiencies": [
+        "Subsoil compaction possible",
+        "Moderate organic matter"
+      ],
+      "improvement": [
+        "Deep ploughing to break subsoil pan",
+        "Crop rotation with legumes",
+        "Organic manure applications"
+      ]
     },
     {
       "id": "arenosols",
@@ -78,11 +201,33 @@
       "pH": "5.0–7.0",
       "fertility": "Low",
       "description": "Light, sandy soils with poor water and nutrient retention. Found in coastal and semi-arid areas.",
-      "regions": ["Coastal strip", "Parts of North Eastern"],
-      "counties": ["Lamu", "Tana River", "Garissa", "Kilifi (coastal strip)"],
-      "bestCrops": ["Coconut", "Cashew nuts", "Sisal", "Drought-tolerant crops"],
-      "deficiencies": ["Very low water retention", "Nutrient leaching", "Low organic matter"],
-      "improvement": ["Heavy mulching", "Drip irrigation essential", "Add clay or compost to improve water-holding", "Manure every season"]
+      "regions": [
+        "Coastal strip",
+        "Parts of North Eastern"
+      ],
+      "counties": [
+        "Lamu",
+        "Tana River",
+        "Garissa",
+        "Kilifi (coastal strip)"
+      ],
+      "bestCrops": [
+        "Coconut",
+        "Cashew nuts",
+        "Sisal",
+        "Drought-tolerant crops"
+      ],
+      "deficiencies": [
+        "Very low water retention",
+        "Nutrient leaching",
+        "Low organic matter"
+      ],
+      "improvement": [
+        "Heavy mulching",
+        "Drip irrigation essential",
+        "Add clay or compost to improve water-holding",
+        "Manure every season"
+      ]
     },
     {
       "id": "solonchaks",
@@ -92,11 +237,33 @@
       "pH": "8.0–10.5",
       "fertility": "Very Low",
       "description": "Salt-affected soils found around alkaline lakes and in poorly drained ASAL areas. Very challenging for agriculture.",
-      "regions": ["Rift Valley lake shores", "North Eastern lowlands"],
-      "counties": ["Nakuru (Lake Nakuru area)", "Baringo", "Turkana", "Garissa", "Wajir"],
-      "bestCrops": ["Salt-tolerant grasses", "Prosopis (though invasive)", "Limited — mostly pastoral"],
-      "deficiencies": ["Extreme salinity/sodicity", "Toxic sodium levels", "Almost no organic matter"],
-      "improvement": ["Gypsum application to displace sodium", "Leaching with clean water", "Salt-tolerant crop varieties only", "Often better suited for pastoral/rangeland use"]
+      "regions": [
+        "Rift Valley lake shores",
+        "North Eastern lowlands"
+      ],
+      "counties": [
+        "Nakuru (Lake Nakuru area)",
+        "Baringo",
+        "Turkana",
+        "Garissa",
+        "Wajir"
+      ],
+      "bestCrops": [
+        "Salt-tolerant grasses",
+        "Prosopis (though invasive)",
+        "Limited — mostly pastoral"
+      ],
+      "deficiencies": [
+        "Extreme salinity/sodicity",
+        "Toxic sodium levels",
+        "Almost no organic matter"
+      ],
+      "improvement": [
+        "Gypsum application to displace sodium",
+        "Leaching with clean water",
+        "Salt-tolerant crop varieties only",
+        "Often better suited for pastoral/rangeland use"
+      ]
     },
     {
       "id": "acrisols",
@@ -106,11 +273,33 @@
       "pH": "4.0–5.5",
       "fertility": "Low–Medium",
       "description": "Acidic soils with clay accumulation. Common in high-rainfall areas that have been heavily weathered.",
-      "regions": ["Coastal hinterland", "Western highlands margins"],
-      "counties": ["Taita-Taveta", "Kwale (hinterland)", "Nandi", "parts of Kakamega"],
-      "bestCrops": ["Tea (acid-tolerant)", "Cassava", "Sweet potatoes", "Pineapple"],
-      "deficiencies": ["Strong acidity", "Aluminum toxicity", "Low phosphorus availability"],
-      "improvement": ["Liming is essential (apply 2–4 tonnes/ha)", "Organic matter additions", "Acid-tolerant crop varieties", "Avoid ammonium-based fertilizers that increase acidity"]
+      "regions": [
+        "Coastal hinterland",
+        "Western highlands margins"
+      ],
+      "counties": [
+        "Taita-Taveta",
+        "Kwale (hinterland)",
+        "Nandi",
+        "parts of Kakamega"
+      ],
+      "bestCrops": [
+        "Tea (acid-tolerant)",
+        "Cassava",
+        "Sweet potatoes",
+        "Pineapple"
+      ],
+      "deficiencies": [
+        "Strong acidity",
+        "Aluminum toxicity",
+        "Low phosphorus availability"
+      ],
+      "improvement": [
+        "Liming is essential (apply 2–4 tonnes/ha)",
+        "Organic matter additions",
+        "Acid-tolerant crop varieties",
+        "Avoid ammonium-based fertilizers that increase acidity"
+      ]
     }
   ],
   "notes": [
@@ -119,5 +308,7 @@
     "County-level assignments are approximate. Soil type can vary within a county depending on altitude, drainage, and parent material.",
     "Soil pH is critical: most crops prefer 5.5–7.0. Test pH before planting and amend with lime (acidic) or gypsum (alkaline) as needed.",
     "For personalized soil management advice, contact your county agricultural extension officer or visit the nearest KALRO research station."
-  ]
+  ],
+  "lastUpdated": "2026-10-20",
+  "source": "Kenya Soil Survey (KALRO) & FAO-UNESCO Soil Map"
 }

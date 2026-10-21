@@ -15,9 +15,8 @@ export default function Footer() {
                 KenyaHub
               </span>
             </Link>
-            <p className="text-xs text-text-muted leading-relaxed max-w-[200px]">
-              Free, accurate tools built with official Kenyan government data.
-              No sign-up required.
+            <p className="text-xs text-text-muted leading-relaxed max-w-[240px]">
+              Independent Kenyan public digital utility providing free, accurate calculators and structured reference data from official Kenyan government publications.
             </p>
           </div>
 
@@ -42,7 +41,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-[0.6875rem] font-bold text-text-secondary mb-3 uppercase tracking-[0.1em]">
-              More
+              More Categories
             </h3>
             <ul className="space-y-2">
               {TOOL_CATEGORIES.slice(5).map((cat) => (
@@ -61,16 +60,17 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-[0.6875rem] font-bold text-text-secondary mb-3 uppercase tracking-[0.1em]">
-              Popular Tools
+              Flagship Hubs &amp; Tools
             </h3>
             <ul className="space-y-2">
               {[
-                { href: "/matatu", label: "Matatu Routes" },
-                { href: "/tools/paye-calculator", label: "PAYE Calculator" },
-                { href: "/tools/mpesa-fee-calculator", label: "M-Pesa Fees" },
-                { href: "/tools/kuccps-cluster-calculator", label: "KUCCPS Calculator" },
-                { href: "/tools/cbc-curriculum", label: "CBC Curriculum" },
-                { href: "/tools/public-holidays", label: "Public Holidays" },
+                { href: "/county", label: "47 Counties Hub" },
+                { href: "/matatu", label: "Matatu Routes Hub" },
+                { href: "/blog", label: "Kenya Guides & Blog" },
+                { href: "/tools/paye-calculator", label: "PAYE Salary Calculator" },
+                { href: "/tools/mpesa-fee-calculator", label: "M-Pesa Fee Calculator" },
+                { href: "/tools/kuccps-cluster-calculator", label: "KUCCPS Cluster Calculator" },
+                { href: "/tools/cbc-curriculum", label: "CBC Curriculum Explorer" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -89,10 +89,10 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex flex-wrap items-center gap-4">
             <p className="text-[0.65rem] text-text-muted">
-              © {new Date().getFullYear()} KenyaHub
+              © {new Date().getFullYear()} KenyaHub · Nairobi, Kenya
             </p>
             <Link href="/about" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
-              About
+              About Us
             </Link>
             <Link href="/contact" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
               Contact
@@ -101,12 +101,12 @@ export default function Footer() {
               Privacy Policy
             </Link>
             <Link href="/terms" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
-              Terms of Use
+              Terms of Service
             </Link>
             <CookieSettingsFooterLink />
           </div>
           <p className="text-[0.65rem] text-text-muted">
-            Data sourced from official Kenyan government publications
+            Informational public utility · Data sourced from official Kenyan government publications
           </p>
         </div>
       </div>

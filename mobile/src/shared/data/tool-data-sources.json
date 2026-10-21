@@ -3,43 +3,59 @@
   "tools": {
     "paye-calculator": {
       "official": true,
-      "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye"
+      "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
+      "lastUpdated": "2026-10-20"
     },
     "mpesa-fee-calculator": {
       "official": true,
-      "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits"
+      "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
+      "lastUpdated": "2026-10-20"
     },
     "passport-id-fees": {
       "official": true,
-      "sourceUrl": "https://immigration.go.ke/type-and-fees/"
+      "sourceUrl": "https://immigration.go.ke/type-and-fees/",
+      "lastUpdated": "2026-10-20"
     },
     "driving-license-guide": {
       "official": true,
-      "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence"
+      "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence",
+      "lastUpdated": "2026-10-20"
     },
     "nhif-hospital-finder": {
       "official": true,
-      "sourceUrl": "https://provider.sha.go.ke/"
+      "sourceUrl": "https://provider.sha.go.ke/",
+      "lastUpdated": "2026-10-20"
     },
     "school-terms": {
       "official": true,
-      "sourceUrl": "https://education.go.ke/"
+      "sourceUrl": "https://education.go.ke/",
+      "lastUpdated": "2026-10-20"
     },
-    "vaccination-schedule": {
+    "child-growth-schedule": {
       "official": true,
-      "sourceUrl": "https://guidelines.health.go.ke/"
+      "sourceUrl": "https://guidelines.health.go.ke/",
+      "lastUpdated": "2026-10-20"
     },
     "kplc-token-calculator": {
       "official": true,
-      "sourceUrl": "https://kplc.co.ke/faq/tariff"
+      "sourceUrl": "https://kplc.co.ke/faq/tariff",
+      "lastUpdated": "2026-10-20"
     },
     "traffic-fines": {
       "official": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/"
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-10-20"
     },
     "public-holidays": {
       "official": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/"
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kikuyu-proverbs": {
+      "official": false,
+      "sourceUrl": "https://archive.org/details/1000kikuyuproverbs",
+      "lastUpdated": "2026-10-20",
+      "source": "1,000 Kikuyu Proverbs by Fr. G. Barra (Consolata Catholic Mission)"
     }
   }
 }

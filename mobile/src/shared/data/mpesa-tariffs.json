@@ -1,6 +1,6 @@
 {
-  "source": "Safaricom M-Pesa Tariff Schedule",
-  "lastUpdated": "2025-2026",
+  "source": "Safaricom PLC — Official M-Pesa Consumer Tariff Schedule (2026)",
+  "lastUpdated": "2026-10-20",
   "transactionTypes": {
     "sendRegistered": {
       "label": "Send Money (to Registered User)",
@@ -303,5 +303,12 @@
     "minSendUnregistered": 101,
     "minWithdrawAgent": 50,
     "minWithdrawATM": 200
-  }
+  },
+  "notes": [
+    "Sending KES 100 or less to registered M-Pesa customers is completely FREE.",
+    "Lipa Na M-Pesa Buy Goods (Till to Customer) transactions are FREE across all tariff bands.",
+    "Maximum single M-Pesa transaction limit is KES 250,000; maximum daily transaction and wallet balance limit is KES 500,000.",
+    "Receiving money into your M-Pesa account is always free; tariff fees apply only to the sender or person withdrawing.",
+    "ATM withdrawals require a minimum of KES 200 and are capped at KES 35,000 per withdrawal."
+  ]
 }

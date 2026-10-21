@@ -2,7 +2,7 @@
   "fiscalYear": "2026",
   "effectiveFrom": "2026-02-01",
   "lastUpdated": "2026-10-20",
-  "source": "Kenya Revenue Authority (KRA) \u2014 Finance Act 2023, Tax Laws (Amendment) Act 2024 & NSSF Year 4 Schedule (Feb 2026)",
+  "source": "Kenya Revenue Authority (KRA) — Finance Act 2023, Tax Laws (Amendment) Act 2024 & NSSF Year 4 Schedule (Feb 2026)",
   "payeBands": [
     {
       "min": 0,
@@ -62,5 +62,12 @@
     "employerRate": 1.5,
     "taxDeductible": true,
     "note": "Affordable Housing Levy is 1.5% of gross salary for both employee and employer. Under the Tax Laws (Amendment) Act, 2024 (effective 27 Dec 2024), the employee's contribution is a full pre-tax deductible expense when computing taxable pay."
-  }
+  },
+  "notes": [
+    "PAYE is calculated on taxable income after deducting NSSF, SHIF (SHA), and Affordable Housing Levy (per the Tax Laws Amendment Act, 2024).",
+    "Every resident individual taxpayer receives a mandatory Personal Relief of KES 2,400 per month (KES 28,800 per year).",
+    "NSSF Year 4 rates (effective February 2026): 6% of pensionable pay with Tier I capped at KES 9,000 (KES 540) and Tier II up to KES 108,000 (max total KES 6,480/month, matched by employer).",
+    "Social Health Insurance Fund (SHIF) under SHA is 2.75% of gross monthly salary (minimum KES 300/month), fully tax-deductible.",
+    "Affordable Housing Levy (AHL) is 1.5% of gross monthly salary from the employee and 1.5% from the employer, with the employee portion fully tax-deductible."
+  ]
 }

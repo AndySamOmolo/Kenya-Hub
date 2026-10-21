@@ -10,13 +10,20 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
+        disallow: ["/api/", "/_next/", "/admin/"],
       },
       {
         userAgent: "Mediapartners-Google",
         allow: "/",
+        disallow: ["/admin/"],
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+        disallow: ["/api/", "/_next/", "/admin/"],
       },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,
+    host: BASE_URL,
   };
 }

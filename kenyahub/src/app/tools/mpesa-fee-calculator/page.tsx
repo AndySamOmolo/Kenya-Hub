@@ -47,7 +47,7 @@ const faq = [
   },
   {
     question: "What is the M-Pesa maximum transaction limit?",
-    answer: "The maximum single transaction is KES 150,000. The maximum daily transaction total is KES 300,000. The maximum M-Pesa balance is KES 300,000.",
+    answer: "The maximum single M-Pesa transaction is KES 250,000. The maximum daily transaction total is KES 500,000, and the maximum M-Pesa account balance is KES 500,000.",
   },
   {
     question: "Is receiving money on M-Pesa free?",
@@ -97,7 +97,7 @@ export default function MpesaFeeCalculatorPage() {
               onChange={(e) => setAmount(Math.max(0, Number(e.target.value)))}
               className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
               min={0}
-              max={150000}
+              max={250000}
               id="mpesa-amount-input"
             />
           </div>

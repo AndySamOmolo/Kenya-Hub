@@ -17,7 +17,7 @@ const faq = [
   { question: "What is NHIF accreditation?", answer: "NHIF accreditation means a hospital or clinic has been approved by the National Hospital Insurance Fund to provide healthcare services to NHIF members. Only accredited facilities can accept NHIF cover directly." },
   { question: "What does hospital level mean in Kenya?", answer: "Kenya's health system has 6 levels: Level 1 (community), Level 2 (dispensary), Level 3 (health centre), Level 4 (sub-county hospital with surgery), Level 5 (county referral with specialists), Level 6 (national referral — KNH, MTRH)." },
   { question: "Can I use NHIF at a private hospital?", answer: "Yes, many private hospitals are NHIF-accredited. However, NHIF cover at private facilities may require a co-payment for services that exceed NHIF rebate limits." },
-  { question: "Is NHIF transitioning to SHA?", answer: "Yes, NHIF is transitioning to the Social Health Authority (SHA) under the Social Health Insurance Act 2023. Coverage and accreditation status may change during this transition." },
+  { question: "Has NHIF transitioned to SHA / SHIF?", answer: "Yes, the Social Health Authority (SHA) and Social Health Insurance Fund (SHIF) officially replaced NHIF on October 1, 2024 under the Social Health Insurance Act 2023. Salaried employees contribute 2.75% of gross salary, and accredited Level 2–6 facilities provide outpatient and inpatient care." },
   { question: "How do I check if my hospital is NHIF-accredited?", answer: "You can check at nhif.or.ke or call the NHIF toll-free line 0800 720 601. This tool also lists major accredited facilities across Kenya." },
 ];
 

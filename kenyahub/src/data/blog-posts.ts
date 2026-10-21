@@ -22,7 +22,7 @@ export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
     slug: "how-paye-tax-works-in-kenya",
     title: "How PAYE Tax Works in Kenya — A Complete 2026 Guide",
     excerpt:
-      "Understanding Kenya's Pay As You Earn tax system: current tax bands, deductions, personal relief, and how to calculate your net salary after PAYE, NHIF, NSSF, and Housing Levy.",
+      "Understanding Kenya's Pay As You Earn tax system: current tax bands, deductions, personal relief, and how to calculate your net salary after PAYE, SHA (SHIF), NSSF, and Housing Levy.",
     author: "KenyaHub",
     publishedAt: "2026-07-15T10:00:00.000Z",
     updatedAt: "2026-09-01T08:00:00.000Z",
@@ -34,7 +34,7 @@ export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
 
 PAYE applies to all employment income — including basic salary, allowances, bonuses, overtime pay, and non-cash benefits. The legal basis is the **Income Tax Act, Cap 470** and the annual Finance Acts that adjust rates.
 
-## Current PAYE Tax Bands (FY 2024/25)
+## Current PAYE Tax Bands (FY 2025/26)
 
 Kenya uses a **progressive tax system**, meaning higher portions of your income are taxed at higher rates:
 
@@ -52,37 +52,34 @@ A **personal relief of KES 2,400 per month** (KES 28,800 annually) is deducted f
 
 Beyond PAYE, several other statutory deductions are taken from your salary:
 
-### NHIF (National Hospital Insurance Fund)
+### SHA / SHIF (Social Health Insurance Fund)
 
-NHIF contributions are based on income bands with fixed monthly amounts. For example:
-- Salary KES 6,000 – 7,999: KES 300/month
-- Salary KES 12,000 – 14,999: KES 500/month
-- Salary above KES 100,000: KES 1,700/month
+Replaced NHIF on October 1, 2024. Every salaried employee contributes **2.75% of gross monthly salary** (minimum KES 300/month) to the Social Health Authority (SHA). Under the Tax Laws (Amendment) Act, 2024, SHIF is a full pre-tax allowable deduction.
 
-### NSSF (National Social Security Fund)
+### NSSF (National Social Security Fund — Year 4 Schedule, Feb 2026)
 
-Under the NSSF Act 2013, contributions are calculated at **6% of pensionable pay**:
-- **Tier I**: Up to KES 7,000 (max contribution KES 420)
-- **Tier II**: KES 7,001 – 36,000 (max contribution KES 1,740)
+Under the NSSF Act 2013 (Year 4 implementation effective February 2026), contributions are calculated at **6% of pensionable pay**:
+- **Tier I**: Up to KES 9,000 (max contribution KES 540)
+- **Tier II**: KES 9,001 – 108,000 (max contribution KES 5,940; total max KES 6,480/month)
 
-Your employer matches these contributions.
+Your employer matches these contributions 100%, and your employee NSSF contribution is deducted before computing taxable income.
 
-### Affordable Housing Levy
+### Affordable Housing Levy (AHL)
 
-Since the Finance Act 2023, all employed persons contribute **1.5% of gross salary** to the Affordable Housing Levy. The employer also contributes 1.5%. The employee's portion qualifies as a tax relief, effectively reducing your PAYE.
+Under the Affordable Housing Act 2024, all employed persons contribute **1.5% of gross salary** to the Affordable Housing Levy, matched by 1.5% from the employer. Under the Tax Laws (Amendment) Act 2024, the employee's 1.5% contribution is a full pre-tax allowable deduction.
 
 ## How to Calculate Your Net Salary
 
-Here is a simplified step-by-step process:
+Here is the official step-by-step process for 2026:
 
 1. Start with your **gross monthly salary**
-2. Calculate **NSSF** (6% of gross, capped at Tier I + II limits)
-3. Calculate **Housing Levy** (1.5% of gross)
-4. Subtract NSSF and Housing Levy from gross to get **taxable income**
-5. Apply **PAYE tax bands** to taxable income
-6. Subtract **personal relief** (KES 2,400) from calculated tax
-7. Calculate **NHIF** based on your income band
-8. **Net Pay** = Gross − PAYE − NHIF − NSSF − Housing Levy
+2. Calculate **NSSF** (6% of gross, capped at KES 6,480 for salaries ≥ KES 108,000)
+3. Calculate **SHIF / SHA** (2.75% of gross, minimum KES 300)
+4. Calculate **Housing Levy** (1.5% of gross)
+5. Subtract NSSF, SHIF, and Housing Levy from gross pay to get **taxable income**
+6. Apply **PAYE tax bands** to taxable income
+7. Subtract **personal relief** (KES 2,400) from gross tax to get net PAYE
+8. **Net Pay** = Gross − PAYE − SHIF − NSSF − Housing Levy
 
 For a quick calculation, use the [KenyaHub PAYE Calculator](/tools/paye-calculator/) which handles all of these automatically.
 

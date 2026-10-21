@@ -13,7 +13,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "1.2.0",
-  "lastUpdated": "2026-10",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Compiled from 'A First Course in Luyia Grammar' (G. Donohew, Kima) and 'A First Luyia Grammar' (L. L. Appleby, 1961, East African Literature Bureau) with standard Luyia cross-dialect orthography. Enriched with authentic Oluluyia / Olushiwanga vocabulary from the 'Wanga-English Dictionary' (Alfred Anangwe & Michael R. Marlo, 2008) and comprehensive Lubukusu dialect vocabulary from the 'Bukusu-English Dictionary' (Michael Marlo, Adrian Sifuna & Aggrey Wasike, 2008).",
   "categories": [
     {
@@ -2536,5 +2536,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

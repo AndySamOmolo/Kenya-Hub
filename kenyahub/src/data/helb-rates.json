@@ -8,13 +8,31 @@
   "latePenaltyPercent": 5,
   "loanAmounts": {
     "undergraduate": {
-      "publicUniversity": { "min": 38000, "max": 60000, "label": "Public University (per year)" },
-      "privateUniversity": { "min": 30000, "max": 40000, "label": "Private University (per year)" },
-      "tvet": { "min": 30000, "max": 37000, "label": "TVET Institution (per year)" }
+      "publicUniversity": {
+        "min": 38000,
+        "max": 60000,
+        "label": "Public University (per year)"
+      },
+      "privateUniversity": {
+        "min": 30000,
+        "max": 40000,
+        "label": "Private University (per year)"
+      },
+      "tvet": {
+        "min": 30000,
+        "max": 37000,
+        "label": "TVET Institution (per year)"
+      }
     },
     "postgraduate": {
-      "masters": { "amount": 200000, "label": "Masters (total)" },
-      "phd": { "amount": 300000, "label": "PhD (total)" }
+      "masters": {
+        "amount": 200000,
+        "label": "Masters (total)"
+      },
+      "phd": {
+        "amount": 300000,
+        "label": "PhD (total)"
+      }
     }
   },
   "repaymentNotes": [
@@ -25,5 +43,7 @@
     "Maximum repayment period is 15 years from the start of repayment",
     "Employers are required to deduct HELB repayments from salary (statutory deduction)",
     "Lump sum payments can be made to reduce the principal and shorten the repayment period"
-  ]
+  ],
+  "lastUpdated": "2026-10-20",
+  "source": "Higher Education Loans Board (HELB Act & helb.co.ke)"
 }

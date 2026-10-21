@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "0.3.0",
-  "lastUpdated": "2026-10",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Turkana (Ng'aturukana) is an Eastern Nilotic (Ateker / Plains Nilotic) language spoken across Turkana County in northwestern Kenya. Dataset compiled from 'A Classified Vocabulary of the Turkana in Northwestern Kenya' by Itaru Ohta (Center for African Area Studies, Kyoto University, 1989), systematically enriched with historical grammatical notes, seasonal calendar, pastoral greetings, numbers, and vocabulary from 'Turkana Grammatical Notes and Vocabulary' by Juxon Barton (Journal of the Royal Anthropological Institute, 1921).",
   "categories": [
     {
@@ -2848,5 +2848,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

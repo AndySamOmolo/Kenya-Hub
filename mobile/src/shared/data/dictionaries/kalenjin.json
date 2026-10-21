@@ -17,7 +17,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-07",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Kalenjin is a group of Highland Nilotic languages including Nandi, Kipsigis, Tugen, Pokot, Marakwet, and Sabaot. This dictionary uses the Nandi/Kipsigis standard as the most widely spoken variants.",
   "categories": [
     {
@@ -354,5 +354,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

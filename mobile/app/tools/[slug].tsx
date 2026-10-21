@@ -21,7 +21,9 @@ import {
 import {
   TOOLS,
   getRelatedTools,
+  getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
+import toolGuidesData from "../../src/shared/data/tool-guides.json";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 // Interactive Tools
@@ -65,18 +67,109 @@ import {
 } from "../../src/tools/AdvancedTools";
 import { ReferenceDirectoryTool } from "../../src/tools/ReferenceDirectoryTool";
 
+interface ToolGuideEntry {
+  faq?: { question: string; answer: string }[];
+  notesTitle?: string;
+  notes?: string[];
+}
+
+interface SuiteConfig {
+  name: string;
+  hubRoute?: "/(tabs)/county" | "/(tabs)/matatu";
+  hubLabel?: string;
+  members: string[];
+}
+
+const CONSOLIDATED_SUITES: SuiteConfig[] = [
+  {
+    name: "47 Counties & Civic Suite",
+    hubRoute: "/(tabs)/county",
+    hubLabel: "🏛️ 47 Counties Hub",
+    members: [
+      "ward-constituency-finder",
+      "county-budget-tracker",
+      "kenya-rainfall-patterns",
+      "kenya-postal-codes",
+    ],
+  },
+  {
+    name: "Salary, Tax & Deductions Suite",
+    members: [
+      "paye-calculator",
+      "housing-levy-calculator",
+      "helb-calculator",
+      "mpesa-fee-calculator",
+    ],
+  },
+  {
+    name: "CBC & School Calendar Suite",
+    members: ["cbc-curriculum", "cbc-grade-age", "school-terms"],
+  },
+  {
+    name: "KCSE & University Placement Suite",
+    members: [
+      "kcse-grade-calculator",
+      "kuccps-cluster-calculator",
+      "kcse-school-rankings",
+    ],
+  },
+  {
+    name: "NTSA Motorist & Transport Suite",
+    hubRoute: "/(tabs)/matatu",
+    hubLabel: "🚌 Matatu Hub",
+    members: [
+      "matatu-routes",
+      "number-plate-decoder",
+      "driving-license-guide",
+      "traffic-fines",
+      "vehicle-insurance-calculator",
+    ],
+  },
+  {
+    name: "Kenyan Languages & Cultural Suite",
+    members: [
+      "learn",
+      "kenyan-translator",
+      "kikuyu-proverbs",
+      "kenya-languages",
+    ],
+  },
+  {
+    name: "Kenya Farming & Agribusiness Suite",
+    members: [
+      "crop-planting-calendar",
+      "kenya-soil-types",
+      "fertilizer-subsidy-guide",
+      "livestock-market-prices",
+      "agrovet-finder",
+    ],
+  },
+];
+
 export default function ToolDetailScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
   const { theme } = useTheme();
   const tool = TOOLS.find((item) => item.slug === slug);
   const [saved, setSaved] = useState(false);
+  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
 
   useEffect(() => {
     if (tool) {
       AsyncStorage.getItem("kh-saved-tools").then((value) =>
         setSaved(value?.split(",").includes(tool.slug) ?? false)
       );
+      AsyncStorage.getItem("kh-tool-visits")
+        .then((raw) => {
+          const parsed = raw ? JSON.parse(raw) : {};
+          const counts =
+            parsed && typeof parsed === "object" ? parsed : {};
+          counts[tool.slug] = (Number(counts[tool.slug]) || 0) + 1;
+          return AsyncStorage.setItem("kh-tool-visits", JSON.stringify(counts));
+        })
+        .catch(() => {
+          // ignore storage errors
+        });
     }
   }, [tool]);
 
@@ -111,8 +204,28 @@ export default function ToolDetailScreen() {
     setSaved(!saved);
   };
 
-  const related = getRelatedTools(tool.slug, 3);
+  const related = getRelatedTools(tool.slug, 4);
+  const categoryInfo = getCategoryInfo(tool.category);
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
+  const guide: ToolGuideEntry =
+    ((toolGuidesData as any)?.guides?.[tool.slug] as ToolGuideEntry) ||
+    ((toolGuidesData as any)?.tools?.[tool.slug] as ToolGuideEntry) ||
+    {};
+  const faqs = guide.faq || [];
+  const notes = guide.notes || [];
+  const notesTitle = guide.notesTitle || "Important Notes & About the Data";
+  const activeSuite = CONSOLIDATED_SUITES.find((s) =>
+    s.members.includes(tool.slug)
+  );
+
+  const frequencyLabel =
+    tool.updateFrequency === "static"
+      ? "Verified 2026 Reference"
+      : tool.updateFrequency === "annual"
+      ? "Updated for 2026"
+      : tool.updateFrequency === "periodic"
+      ? "Updated periodically"
+      : "Live data";
 
   const renderToolComponent = () => {
     switch (tool.slug) {
@@ -184,7 +297,10 @@ export default function ToolDetailScreen() {
 
       <AndroidTopAppBar
         title={tool.shortTitle}
-        subtitle={tool.category.replace("-", " & ").toUpperCase()}
+        subtitle={
+          categoryInfo?.name.toUpperCase() ||
+          tool.category.replace("-", " & ").toUpperCase()
+        }
         onBack={() => router.back()}
         rightAction={
           <Pressable
@@ -215,7 +331,7 @@ export default function ToolDetailScreen() {
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
       >
-        {/* Material 3 Tool Info Banner (compact for 'learn' so course takes center stage) */}
+        {/* Material 3 Tool Info Banner (mirrors web ToolShell header) */}
         {tool.slug !== "learn" && (
           <View
             style={[
@@ -253,6 +369,32 @@ export default function ToolDetailScreen() {
             <View
               style={[styles.badgesRow, { borderTopColor: theme.outlineVariant }]}
             >
+              {categoryInfo && (
+                <View
+                  style={[
+                    styles.sourceTag,
+                    {
+                      backgroundColor: `${categoryColor}16`,
+                      borderColor: `${categoryColor}35`,
+                    },
+                  ]}
+                >
+                  <DynamicIcon
+                    emoji={categoryInfo.icon}
+                    size={12}
+                    color={categoryColor}
+                  />
+                  <Text
+                    style={[
+                      styles.sourceText,
+                      { color: categoryColor, fontWeight: "700" },
+                    ]}
+                  >
+                    {categoryInfo.name}
+                  </Text>
+                </View>
+              )}
+
               <View
                 style={[
                   styles.sourceTag,
@@ -268,15 +410,250 @@ export default function ToolDetailScreen() {
                   color={theme.kenyaGreenLight}
                 />
                 <Text style={[styles.sourceText, { color: theme.textSecondary }]}>
-                  Source: {tool.dataSource}
+                  {tool.dataSource}
+                </Text>
+              </View>
+
+              <View
+                style={[
+                  styles.sourceTag,
+                  {
+                    backgroundColor: theme.surfaceContainerHigh,
+                    borderColor: theme.outlineVariant,
+                  },
+                ]}
+              >
+                <Ionicons name="sync-outline" size={12} color={theme.gold} />
+                <Text style={[styles.sourceText, { color: theme.textMuted }]}>
+                  {frequencyLabel}
                 </Text>
               </View>
             </View>
+
+            {/* Consolidated Suite Quick-Switch Bar */}
+            {activeSuite && (
+              <View
+                style={{
+                  marginTop: 12,
+                  paddingTop: 10,
+                  borderTopWidth: StyleSheet.hairlineWidth,
+                  borderTopColor: theme.outlineVariant,
+                }}
+              >
+                <Text
+                  style={{
+                    fontSize: 10,
+                    fontFamily: "Outfit_700Bold",
+                    color: theme.gold,
+                    letterSpacing: 0.8,
+                    marginBottom: 6,
+                  }}
+                >
+                  {activeSuite.name.toUpperCase()}
+                </Text>
+                <ScrollView
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
+                  contentContainerStyle={{ gap: 6 }}
+                >
+                  {activeSuite.hubRoute && (
+                    <Pressable
+                      onPress={() => router.push(activeSuite.hubRoute as any)}
+                      style={{
+                        paddingHorizontal: 10,
+                        paddingVertical: 5,
+                        borderRadius: 8,
+                        backgroundColor: `${theme.gold}20`,
+                        borderWidth: 1,
+                        borderColor: theme.gold,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 11,
+                          fontWeight: "800",
+                          color: theme.gold,
+                        }}
+                      >
+                        {activeSuite.hubLabel}
+                      </Text>
+                    </Pressable>
+                  )}
+                  {activeSuite.members.map((mSlug) => {
+                    const mTool = TOOLS.find((t) => t.slug === mSlug);
+                    if (!mTool) return null;
+                    const isCurrent = mSlug === tool.slug;
+                    return (
+                      <Pressable
+                        key={mSlug}
+                        onPress={() => {
+                          if (!isCurrent) {
+                            router.push({
+                              pathname: "/tools/[slug]",
+                              params: { slug: mSlug },
+                            });
+                          }
+                        }}
+                        style={{
+                          paddingHorizontal: 10,
+                          paddingVertical: 5,
+                          borderRadius: 8,
+                          backgroundColor: isCurrent
+                            ? theme.kenyaGreenLight
+                            : theme.surfaceContainerHigh,
+                          borderWidth: 1,
+                          borderColor: isCurrent
+                            ? theme.kenyaGreenLight
+                            : theme.outlineVariant,
+                        }}
+                      >
+                        <Text
+                          style={{
+                            fontSize: 11,
+                            fontWeight: "700",
+                            color: isCurrent
+                              ? theme.kenyaBlack
+                              : theme.textPrimary,
+                          }}
+                        >
+                          {mTool.shortTitle}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </ScrollView>
+              </View>
+            )}
           </View>
         )}
 
         {/* Interactive Tool Component */}
         <View style={styles.toolContentWrap}>{renderToolComponent()}</View>
+
+        {/* Important Notes / About the Data Section */}
+        {tool.slug !== "learn" && notes.length > 0 && (
+          <View
+            style={[
+              styles.notesSectionCard,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            <View style={styles.notesHeaderRow}>
+              <View
+                style={[
+                  styles.notesIconBadge,
+                  { backgroundColor: `${theme.gold}1A` },
+                ]}
+              >
+                <Ionicons
+                  name="information-circle-outline"
+                  size={18}
+                  color={theme.gold}
+                />
+              </View>
+              <Text style={[styles.notesTitle, { color: theme.textPrimary }]}>
+                {notesTitle}
+              </Text>
+            </View>
+            <View style={styles.notesList}>
+              {notes.map((note, idx) => (
+                <View key={idx} style={styles.noteRow}>
+                  <Text style={[styles.noteBullet, { color: theme.gold }]}>
+                    •
+                  </Text>
+                  <Text
+                    style={[styles.noteText, { color: theme.textSecondary }]}
+                  >
+                    {note}
+                  </Text>
+                </View>
+              ))}
+            </View>
+          </View>
+        )}
+
+        {/* Frequently Asked Questions Section */}
+        {tool.slug !== "learn" && faqs.length > 0 && (
+          <View style={styles.faqSection}>
+            <View style={styles.faqHeaderRow}>
+              <View
+                style={[
+                  styles.notesIconBadge,
+                  { backgroundColor: `${theme.gold}1A` },
+                ]}
+              >
+                <Ionicons
+                  name="help-circle-outline"
+                  size={18}
+                  color={theme.gold}
+                />
+              </View>
+              <Text style={[styles.faqHeading, { color: theme.textPrimary }]}>
+                Frequently Asked Questions
+              </Text>
+            </View>
+
+            <View style={styles.faqList}>
+              {faqs.map((item, idx) => {
+                const isOpen = openFaqIdx === idx;
+                return (
+                  <View
+                    key={idx}
+                    style={[
+                      styles.faqCard,
+                      {
+                        backgroundColor: theme.surfaceContainer,
+                        borderColor: isOpen
+                          ? `${theme.gold}50`
+                          : theme.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Pressable
+                      android_ripple={androidRipple(theme.rippleColor)}
+                      onPress={() => setOpenFaqIdx(isOpen ? null : idx)}
+                      style={styles.faqQuestionRow}
+                    >
+                      <Text
+                        style={[
+                          styles.faqQuestionText,
+                          { color: isOpen ? theme.gold : theme.textPrimary },
+                        ]}
+                      >
+                        {item.question}
+                      </Text>
+                      <Ionicons
+                        name={isOpen ? "chevron-up" : "chevron-down"}
+                        size={18}
+                        color={isOpen ? theme.gold : theme.textMuted}
+                      />
+                    </Pressable>
+                    {isOpen && (
+                      <View
+                        style={[
+                          styles.faqAnswerBox,
+                          { borderTopColor: theme.outlineVariant },
+                        ]}
+                      >
+                        <Text
+                          style={[
+                            styles.faqAnswerText,
+                            { color: theme.textSecondary },
+                          ]}
+                        >
+                          {item.answer}
+                        </Text>
+                      </View>
+                    )}
+                  </View>
+                );
+              })}
+            </View>
+          </View>
+        )}
 
         {/* Related Tools */}
         {related.length > 0 && (
@@ -287,6 +664,7 @@ export default function ToolDetailScreen() {
             <View style={styles.relatedList}>
               {related.map((rel) => {
                 const relColor = categoryColorMap[rel.category] || theme.gold;
+                const relCat = getCategoryInfo(rel.category);
                 return (
                   <View
                     key={rel.slug}
@@ -334,6 +712,18 @@ export default function ToolDetailScreen() {
                         >
                           {rel.description}
                         </Text>
+                        {relCat && (
+                          <Text
+                            style={{
+                              fontSize: 10,
+                              color: relColor,
+                              fontWeight: "700",
+                              marginTop: 2,
+                            }}
+                          >
+                            {relCat.name}
+                          </Text>
+                        )}
                       </View>
                       <Ionicons
                         name="arrow-forward"
@@ -353,9 +743,7 @@ export default function ToolDetailScreen() {
 }
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-  },
+  screen: { flex: 1 },
   pinIconBtn: {
     width: 40,
     height: 40,
@@ -409,30 +797,103 @@ const styles = StyleSheet.create({
   sourceTag: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 6,
+    gap: 5,
     paddingHorizontal: 10,
     paddingVertical: 4,
     borderRadius: 8,
     borderWidth: 1,
   },
-  sourceText: {
-    fontSize: 11,
-  },
-  toolContentWrap: {
+  sourceText: { fontSize: 11 },
+  toolContentWrap: { marginBottom: 20 },
+  notesSectionCard: {
+    borderRadius: 18,
+    borderWidth: 1,
+    padding: 16,
     marginBottom: 20,
+    gap: 10,
   },
-  relatedSection: {
-    marginTop: 8,
+  notesHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
   },
+  notesIconBadge: {
+    width: 32,
+    height: 32,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  notesTitle: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 15,
+    flex: 1,
+  },
+  notesList: { gap: 8 },
+  noteRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 8,
+  },
+  noteBullet: {
+    fontSize: 14,
+    fontWeight: "900",
+    lineHeight: 19,
+  },
+  noteText: {
+    flex: 1,
+    fontSize: 12.5,
+    lineHeight: 18,
+  },
+  faqSection: { marginBottom: 20 },
+  faqHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    marginBottom: 12,
+  },
+  faqHeading: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 16,
+  },
+  faqList: { gap: 8 },
+  faqCard: {
+    borderRadius: 16,
+    borderWidth: 1,
+    overflow: "hidden",
+  },
+  faqQuestionRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 14,
+    paddingVertical: 13,
+    gap: 10,
+  },
+  faqQuestionText: {
+    flex: 1,
+    fontFamily: "Outfit_700Bold",
+    fontSize: 13.5,
+    lineHeight: 19,
+  },
+  faqAnswerBox: {
+    paddingHorizontal: 14,
+    paddingBottom: 14,
+    paddingTop: 10,
+    borderTopWidth: StyleSheet.hairlineWidth,
+  },
+  faqAnswerText: {
+    fontSize: 12.5,
+    lineHeight: 18.5,
+  },
+  relatedSection: { marginTop: 4 },
   relatedHeading: {
     fontFamily: "Outfit_700Bold",
     fontSize: 11,
     letterSpacing: 1.2,
     marginBottom: 10,
   },
-  relatedList: {
-    gap: 8,
-  },
+  relatedList: { gap: 8 },
   relatedCardWrap: {
     borderRadius: 16,
     borderWidth: 1,

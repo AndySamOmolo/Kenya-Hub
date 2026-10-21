@@ -11,7 +11,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-07",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Meru is a Bantu language spoken on the eastern slopes of Mt. Kenya. Related to Kikuyu and Embu. Data from community references.",
   "categories": [
     {
@@ -251,5 +251,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

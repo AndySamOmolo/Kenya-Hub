@@ -1,5 +1,6 @@
-import React, { useMemo, useState } from "react";
-import { useRouter, useLocalSearchParams } from "expo-router";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { useRouter, useLocalSearchParams, useFocusEffect } from "expo-router";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   FlatList,
   Platform,
@@ -22,13 +23,21 @@ import {
   TOOLS,
   TOOL_CATEGORIES,
   getToolUsageScore,
+  getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
-function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
+function ToolItem({
+  item,
+  isPinned = false,
+}: {
+  item: (typeof TOOLS)[0];
+  isPinned?: boolean;
+}) {
   const router = useRouter();
   const { theme } = useTheme();
   const categoryColor = categoryColorMap[item.category] || theme.gold;
+  const catInfo = getCategoryInfo(item.category);
 
   return (
     <View
@@ -36,7 +45,7 @@ function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
         styles.cardWrap,
         {
           backgroundColor: theme.surfaceContainer,
-          borderColor: theme.outlineVariant,
+          borderColor: isPinned ? `${theme.gold}66` : theme.outlineVariant,
         },
       ]}
     >
@@ -68,8 +77,21 @@ function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
                 style={[styles.categoryDot, { backgroundColor: categoryColor }]}
               />
               <Text style={[styles.categoryPillText, { color: categoryColor }]}>
-                {item.category.replace("-", " & ").toUpperCase()}
+                {(catInfo?.name || item.category).toUpperCase()}
               </Text>
+              {isPinned && (
+                <View
+                  style={[
+                    styles.pinnedTag,
+                    { backgroundColor: `${theme.gold}20` },
+                  ]}
+                >
+                  <Ionicons name="bookmark" size={10} color={theme.gold} />
+                  <Text style={[styles.pinnedTagText, { color: theme.gold }]}>
+                    PINNED
+                  </Text>
+                </View>
+              )}
             </View>
             <Text
               style={[styles.title, { color: theme.textPrimary }]}
@@ -121,19 +143,62 @@ function ToolItem({ item }: { item: (typeof TOOLS)[0] }) {
 
 export default function ToolsScreen() {
   const { theme } = useTheme();
-  const params = useLocalSearchParams<{ category?: string }>();
-  const [query, setQuery] = useState("");
+  const params = useLocalSearchParams<{ category?: string; q?: string }>();
+  const [query, setQuery] = useState(params.q ?? "");
   const [category, setCategory] = useState(params.category ?? "all");
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">(
     "popular"
+  );
+  const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
+  const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    if (params.category) setCategory(params.category);
+    if (params.q) setQuery(params.q);
+  }, [params.category, params.q]);
+
+  useFocusEffect(
+    useCallback(() => {
+      AsyncStorage.getItem("kh-saved-tools")
+        .then((val) => {
+          setPinnedSlugs(val?.split(",").filter(Boolean) ?? []);
+        })
+        .catch(() => setPinnedSlugs([]));
+
+      AsyncStorage.getItem("kh-tool-visits")
+        .then((raw) => {
+          if (!raw) {
+            setVisitCounts({});
+            return;
+          }
+          const parsed = JSON.parse(raw);
+          setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
+        })
+        .catch(() => setVisitCounts({}));
+    }, [])
+  );
+
+  const hasAnyVisits = useMemo(
+    () => Object.values(visitCounts).some((c) => c > 0),
+    [visitCounts]
+  );
+
+  const pinnedTools = useMemo(
+    () =>
+      pinnedSlugs
+        .map((s) => TOOLS.find((t) => t.slug === s))
+        .filter(Boolean) as (typeof TOOLS)[0][],
+    [pinnedSlugs]
   );
 
   const filtered = useMemo(() => {
     const list = TOOLS.filter((tool) => {
       const matchesCategory = category === "all" || tool.category === category;
+      const q = query.toLowerCase().trim();
+      if (!q) return matchesCategory;
       const haystack =
         `${tool.title} ${tool.shortTitle} ${tool.description} ${tool.keywords.join(" ")}`.toLowerCase();
-      return matchesCategory && haystack.includes(query.toLowerCase().trim());
+      return matchesCategory && haystack.includes(q);
     });
 
     return [...list].sort((a, b) => {
@@ -148,14 +213,31 @@ export default function ToolsScreen() {
       if (sortBy === "alphabetical") return labelComparison;
       if (sortBy === "category")
         return a.category.localeCompare(b.category) || labelComparison;
+
+      // "popular" (Most used) — matches web tools/page.tsx:
+      // use real visit counts if user has any, otherwise curated baseline usage scores
+      if (hasAnyVisits) {
+        const aVisits = visitCounts[a.slug] ?? 0;
+        const bVisits = visitCounts[b.slug] ?? 0;
+        if (bVisits !== aVisits) return bVisits - aVisits;
+      }
       return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
     });
-  }, [category, query, sortBy]);
+  }, [category, query, sortBy, hasAnyVisits, visitCounts]);
 
   const categories = useMemo(
-    () => [{ id: "all", name: "All", icon: "🧰" }, ...TOOL_CATEGORIES],
+    () => [
+      { id: "all", name: "All", icon: "🧰", count: TOOLS.length },
+      ...TOOL_CATEGORIES.map((cat) => ({
+        ...cat,
+        count: TOOLS.filter((t) => t.category === cat.id).length,
+      })),
+    ],
     []
   );
+
+  const showPinnedSection =
+    pinnedTools.length > 0 && query.trim() === "" && category === "all";
 
   return (
     <SafeAreaView
@@ -166,8 +248,8 @@ export default function ToolsScreen() {
 
       <AndroidTopAppBar
         showBrandLogo
-        title="KenyaHub Tools"
-        subtitle={`${filtered.length} calculators & public guides`}
+        title="All Tools"
+        subtitle={`${TOOLS.length} free tools built for Kenya — search or browse by category`}
       />
 
       <View
@@ -198,7 +280,7 @@ export default function ToolsScreen() {
           <TextInput
             value={query}
             onChangeText={setQuery}
-            placeholder="Search all 45 tools, KRA, M-Pesa, CBC..."
+            placeholder="Search tools — e.g. 'PAYE', 'matatu', 'CBC', 'M-Pesa'..."
             placeholderTextColor={theme.textMuted}
             style={[styles.searchInput, { color: theme.textPrimary }]}
             autoCorrect={false}
@@ -214,7 +296,7 @@ export default function ToolsScreen() {
           )}
         </View>
 
-        {/* Material 3 Filter Chips */}
+        {/* Material 3 Filter Chips with Tool Counts (mirrors web tools/page.tsx) */}
         <FlatList
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -266,7 +348,7 @@ export default function ToolsScreen() {
                       },
                     ]}
                   >
-                    {item.name}
+                    {item.name} ({item.count})
                   </Text>
                 </Pressable>
               </View>
@@ -274,7 +356,7 @@ export default function ToolsScreen() {
           }}
         />
 
-        {/* Material 3 Segmented Sort Row */}
+        {/* Material 3 Segmented Sort Row (mirrors web Sort: Most used | A-Z | Category) */}
         <View style={styles.sortRow}>
           <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
             SORT BY
@@ -290,9 +372,9 @@ export default function ToolsScreen() {
           >
             {(
               [
-                { id: "popular", label: "Popular" },
-                { id: "alphabetical", label: "A–Z" },
-                { id: "category", label: "Topic" },
+                { id: "popular", label: "Most used", icon: "trending-up" as const },
+                { id: "alphabetical", label: "A–Z", icon: "text" as const },
+                { id: "category", label: "Category", icon: "list" as const },
               ] as const
             ).map((option) => {
               const active = sortBy === option.id;
@@ -306,6 +388,11 @@ export default function ToolsScreen() {
                     active && { backgroundColor: theme.primaryContainer },
                   ]}
                 >
+                  <Ionicons
+                    name={option.icon}
+                    size={12}
+                    color={active ? theme.onPrimaryContainer : theme.gold}
+                  />
                   <Text
                     style={[
                       styles.segmentText,
@@ -330,16 +417,88 @@ export default function ToolsScreen() {
         keyExtractor={(item) => item.slug}
         contentContainerStyle={styles.list}
         showsVerticalScrollIndicator={false}
-        renderItem={({ item }) => <ToolItem item={item} />}
+        ListHeaderComponent={
+          <>
+            {(query.trim() !== "" || category !== "all") &&
+              filtered.length > 0 && (
+                <View style={styles.resultsBar}>
+                  <Text style={[styles.resultsText, { color: theme.textMuted }]}>
+                    Showing {filtered.length} of {TOOLS.length} tools
+                    {query.trim() ? ` matching "${query.trim()}"` : ""}
+                  </Text>
+                  <Pressable
+                    onPress={() => {
+                      setQuery("");
+                      setCategory("all");
+                    }}
+                    hitSlop={8}
+                  >
+                    <Text style={[styles.clearFilterText, { color: theme.gold }]}>
+                      Clear filter
+                    </Text>
+                  </Pressable>
+                </View>
+              )}
+
+            {showPinnedSection && (
+              <View style={styles.pinnedSection}>
+                <View style={styles.pinnedHeaderRow}>
+                  <Ionicons name="bookmark" size={16} color={theme.gold} />
+                  <Text
+                    style={[styles.pinnedSectionTitle, { color: theme.textPrimary }]}
+                  >
+                    Pinned Tools ({pinnedTools.length})
+                  </Text>
+                </View>
+                <View style={{ gap: 10 }}>
+                  {pinnedTools.map((pt) => (
+                    <ToolItem key={`pinned-${pt.slug}`} item={pt} isPinned />
+                  ))}
+                </View>
+                <Text
+                  style={[
+                    styles.allToolsDividerLabel,
+                    { color: theme.gold },
+                  ]}
+                >
+                  ALL TOOLS ({filtered.length})
+                </Text>
+              </View>
+            )}
+          </>
+        }
+        renderItem={({ item }) => (
+          <ToolItem item={item} isPinned={pinnedSlugs.includes(item.slug)} />
+        )}
         ListEmptyComponent={
           <View style={styles.emptyWrap}>
             <Ionicons name="search-outline" size={44} color={theme.textMuted} />
             <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
-              No matching tools
+              No tools found matching &ldquo;{query}&rdquo;
             </Text>
             <Text style={[styles.emptySub, { color: theme.textSecondary }]}>
-              Try clearing your filter or searching another keyword.
+              Try clearing your search or selecting another category.
             </Text>
+            <Pressable
+              onPress={() => {
+                setQuery("");
+                setCategory("all");
+              }}
+              style={[
+                styles.clearAllBtn,
+                { backgroundColor: theme.primaryContainer },
+              ]}
+            >
+              <Text
+                style={{
+                  color: theme.onPrimaryContainer,
+                  fontFamily: "Outfit_700Bold",
+                  fontSize: 12,
+                }}
+              >
+                Clear search & filters
+              </Text>
+            </Pressable>
           </View>
         }
       />
@@ -412,8 +571,11 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   segmentBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
     paddingHorizontal: 12,
-    paddingVertical: 5,
+    paddingVertical: 6,
   },
   segmentText: {
     fontFamily: "Outfit_700Bold",
@@ -423,6 +585,39 @@ const styles = StyleSheet.create({
     padding: 16,
     paddingBottom: 32,
     gap: 10,
+  },
+  resultsBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 8,
+  },
+  resultsText: {
+    fontSize: 12,
+  },
+  clearFilterText: {
+    fontSize: 12,
+    fontFamily: "Outfit_700Bold",
+  },
+  pinnedSection: {
+    marginBottom: 8,
+  },
+  pinnedHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginBottom: 10,
+  },
+  pinnedSectionTitle: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 15,
+  },
+  allToolsDividerLabel: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 11,
+    letterSpacing: 1,
+    marginTop: 16,
+    marginBottom: 4,
   },
   cardWrap: {
     borderRadius: 16,
@@ -472,6 +667,19 @@ const styles = StyleSheet.create({
     fontFamily: "Outfit_700Bold",
     letterSpacing: 0.5,
   },
+  pinnedTag: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 3,
+    paddingHorizontal: 6,
+    paddingVertical: 1,
+    borderRadius: 6,
+    marginLeft: 4,
+  },
+  pinnedTagText: {
+    fontSize: 8,
+    fontFamily: "Outfit_700Bold",
+  },
   title: {
     fontFamily: "Outfit_700Bold",
     fontSize: 16,
@@ -505,5 +713,11 @@ const styles = StyleSheet.create({
     fontSize: 13,
     marginTop: 4,
     textAlign: "center",
+  },
+  clearAllBtn: {
+    marginTop: 14,
+    paddingHorizontal: 16,
+    paddingVertical: 9,
+    borderRadius: 18,
   },
 });

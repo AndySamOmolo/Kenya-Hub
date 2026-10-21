@@ -1,5 +1,5 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { basename, dirname, extname, join, relative, resolve } from "node:path";
+import { dirname, extname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -36,16 +36,17 @@ function findImportedData(slug) {
     .filter((filePath) => existsSync(filePath));
 }
 
-function inspectData(filePath) {
+function inspectData(filePath, config = {}) {
   if (extname(filePath) !== ".json") {
     return { file: relative(root, filePath).replaceAll("\\", "/"), lastUpdated: null, source: null };
   }
   try {
     const data = JSON.parse(readFileSync(filePath, "utf8"));
+    const isArray = Array.isArray(data);
     return {
       file: relative(root, filePath).replaceAll("\\", "/"),
-      lastUpdated: data.lastUpdated ?? null,
-      source: data.source ?? data.sourceUrl ?? null,
+      lastUpdated: (!isArray && data.lastUpdated) ? data.lastUpdated : (config.lastUpdated ?? null),
+      source: (!isArray && (data.source ?? data.sourceUrl)) ? (data.source ?? data.sourceUrl) : (config.source ?? config.sourceUrl ?? null),
     };
   } catch (error) {
     return {
@@ -73,7 +74,7 @@ const uniqueRegistrySlugs = [...new Set(registrySlugs)];
 for (const slug of uniqueRegistrySlugs) {
   const config = manifest.tools[slug] ?? {};
   const dataFiles = findImportedData(slug);
-  const data = dataFiles.map(inspectData);
+  const data = dataFiles.map((fp) => inspectData(fp, config));
   const dates = data.map((item) => parseDate(item.lastUpdated)).filter(Boolean);
   const newestDate = dates.length ? new Date(Math.max(...dates.map((date) => date.valueOf()))) : null;
   const ageDays = newestDate ? Math.floor((today - newestDate) / 86400000) : null;

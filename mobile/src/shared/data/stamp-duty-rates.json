@@ -1,5 +1,5 @@
 {
-  "fiscalYear": "2024/25",
+  "fiscalYear": "2025/26",
   "stampDuty": {
     "urban": 4,
     "rural": 2,
@@ -7,11 +7,41 @@
     "description": "Stamp Duty Act (Cap 480), updated per Finance Act 2023 for AHF exemption"
   },
   "conveyancingFees": [
-    { "min": 0, "max": 1000000, "rate": 1.25, "minimumFee": 12500, "label": "Up to KES 1M" },
-    { "min": 1000001, "max": 2000000, "rate": 1.0, "minimumFee": null, "label": "KES 1M – 2M" },
-    { "min": 2000001, "max": 5000000, "rate": 0.75, "minimumFee": null, "label": "KES 2M – 5M" },
-    { "min": 5000001, "max": 100000000, "rate": 0.5, "minimumFee": null, "label": "KES 5M – 100M" },
-    { "min": 100000001, "max": null, "rate": 0.25, "minimumFee": null, "label": "Above KES 100M" }
+    {
+      "min": 0,
+      "max": 1000000,
+      "rate": 1.25,
+      "minimumFee": 12500,
+      "label": "Up to KES 1M"
+    },
+    {
+      "min": 1000001,
+      "max": 2000000,
+      "rate": 1.0,
+      "minimumFee": null,
+      "label": "KES 1M – 2M"
+    },
+    {
+      "min": 2000001,
+      "max": 5000000,
+      "rate": 0.75,
+      "minimumFee": null,
+      "label": "KES 2M – 5M"
+    },
+    {
+      "min": 5000001,
+      "max": 100000000,
+      "rate": 0.5,
+      "minimumFee": null,
+      "label": "KES 5M – 100M"
+    },
+    {
+      "min": 100000001,
+      "max": null,
+      "rate": 0.25,
+      "minimumFee": null,
+      "label": "Above KES 100M"
+    }
   ],
   "otherCosts": {
     "registrationFee": 5000,
@@ -24,5 +54,7 @@
     "First-time buyers under the Affordable Housing Fund (AHF) scheme are exempt from stamp duty",
     "LSK conveyancing fees are calculated on a progressive scale similar to tax bands",
     "Land rent and rates clearance are additional county-specific costs for leasehold properties"
-  ]
+  ],
+  "lastUpdated": "2026-10-20",
+  "source": "Stamp Duty Act (Cap 480) & LSK Advocates Remuneration Order"
 }

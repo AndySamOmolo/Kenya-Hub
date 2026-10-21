@@ -14,7 +14,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Gĩkũyũ (Kikuyu) is a Central Bantu language spoken across Central Kenya (Kiambu, Murang'a, Nyeri, Kirinyaga, and Nyandarua counties). Vocabulary and grammar systematically compiled from 'A Short Kikuyu Grammar' (Macmillan), 'First Lessons in Kikuyu' by L.S.B. Leakey (East African Literature Bureau, 1959), '1,000 Kikuyu Proverbs' by G. Barra (Consolata Catholic Mission, Nyeri), and standard 7-vowel Gĩkũyũ orthography (ĩ, ũ, th).",
   "categories": [
     {
@@ -1333,5 +1333,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

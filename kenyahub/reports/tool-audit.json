@@ -1,42 +1,12 @@
 {
-  "generatedAt": "2026-10-20T12:18:34.109Z",
+  "generatedAt": "2026-10-21T12:11:25.868Z",
   "summary": {
     "registryTools": 45,
     "routeDirectories": 45,
     "errors": 0,
-    "staleOrReview": 29
+    "staleOrReview": 0
   },
-  "issues": [
-    "cbc-curriculum: data is 657 days old (maximum 365)",
-    "cbc-grade-age: data is 657 days old (maximum 365)",
-    "kuccps-cluster-calculator: data is 598 days old (maximum 365)",
-    "number-plate-decoder: data is 657 days old (maximum 365)",
-    "mobile-number-prefix: data is 657 days old (maximum 365)",
-    "stamp-duty-calculator: imported data has no parseable lastUpdated metadata",
-    "helb-calculator: imported data has no parseable lastUpdated metadata",
-    "housing-levy-calculator: imported data has no parseable lastUpdated metadata",
-    "vehicle-insurance-calculator: data is 658 days old (maximum 365)",
-    "kplc-token-calculator: data is 658 days old (maximum 365)",
-    "traffic-fines: data is 658 days old (maximum 365)",
-    "child-growth-schedule: data is 1024 days old (maximum 365)",
-    "kenya-postal-codes: data is 658 days old (maximum 365)",
-    "water-bill-calculator: imported data has no parseable lastUpdated metadata",
-    "solar-roi-calculator: imported data has no parseable lastUpdated metadata",
-    "ward-constituency-finder: imported data has no parseable lastUpdated metadata",
-    "county-budget-tracker: imported data has no parseable lastUpdated metadata",
-    "national-parks-directory: imported data has no parseable lastUpdated metadata",
-    "nhif-hospital-finder: imported data has no parseable lastUpdated metadata",
-    "trademark-cost-kenya: imported data has no parseable lastUpdated metadata",
-    "real-estate-agent-checker: imported data has no parseable lastUpdated metadata",
-    "kenya-customs-restricted-items: imported data has no parseable lastUpdated metadata",
-    "kenya-rainfall-patterns: imported data has no parseable lastUpdated metadata",
-    "kenyan-food-nutrition: imported data has no parseable lastUpdated metadata",
-    "crop-planting-calendar: imported data has no parseable lastUpdated metadata",
-    "kenya-soil-types: imported data has no parseable lastUpdated metadata",
-    "livestock-market-prices: imported data has no parseable lastUpdated metadata",
-    "kikuyu-proverbs: imported data has no parseable lastUpdated metadata",
-    "kcse-school-rankings: data is 598 days old (maximum 365)"
-  ],
+  "issues": [],
   "sourceChecks": [],
   "tools": [
     {
@@ -44,12 +14,12 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
       "maxAgeDays": 365,
-      "ageDays": 111,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/paye-bands.json",
-          "lastUpdated": "2026-07-01",
-          "source": "Kenya Revenue Authority (KRA)"
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Revenue Authority (KRA) — Finance Act 2023, Tax Laws (Amendment) Act 2024 & NSSF Year 4 Schedule (Feb 2026)"
         }
       ],
       "status": "ok"
@@ -59,12 +29,72 @@
       "routeExists": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "maxAgeDays": 365,
-      "ageDays": 80,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/mpesa-tariffs.json",
-          "lastUpdated": "2026-08-01",
-          "source": "Safaricom M-Pesa Tariff Schedule"
+          "lastUpdated": "2026-10-20",
+          "source": "Safaricom PLC — Official M-Pesa Consumer Tariff Schedule (2026)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "helb-calculator",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/helb-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Higher Education Loans Board (HELB Act & helb.co.ke)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "housing-levy-calculator",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/housing-levy-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Affordable Housing Act, 2024 & Tax Laws (Amendment) Act, 2024"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "stamp-duty-calculator",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/stamp-duty-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Stamp Duty Act (Cap 480) & LSK Advocates Remuneration Order"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "vehicle-insurance-calculator",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/vehicle-insurance-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Insurance Regulatory Authority (IRA) — Motor Insurance Guidelines"
         }
       ],
       "status": "ok"
@@ -74,45 +104,45 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 657,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
-          "lastUpdated": "2025-01-01",
+          "lastUpdated": "2026-10-20",
           "source": "Kenya Institute of Curriculum Development (KICD)"
         }
       ],
-      "status": "stale"
+      "status": "ok"
     },
     {
       "slug": "cbc-grade-age",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 657,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
-          "lastUpdated": "2025-01-01",
+          "lastUpdated": "2026-10-20",
           "source": "Kenya Institute of Curriculum Development (KICD)"
         }
       ],
-      "status": "stale"
+      "status": "ok"
     },
     {
       "slug": "kuccps-cluster-calculator",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 598,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kuccps-clusters.json",
-          "lastUpdated": "2025-03-01",
-          "source": "Kenya Universities and Colleges Central Placement Service (KUCCPS)"
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Universities and Colleges Central Placement Service (KUCCPS 2026 Placement Cycle)"
         }
       ],
-      "status": "stale"
+      "status": "ok"
     },
     {
       "slug": "kcse-grade-calculator",
@@ -124,18 +154,42 @@
       "status": "ok"
     },
     {
-      "slug": "public-holidays",
+      "slug": "kcse-school-rankings",
       "routeExists": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 292,
+      "ageDays": 1,
       "data": [
         {
-          "file": "src/data/public-holidays.json",
-          "lastUpdated": "2026-01-01",
-          "source": "Public Holidays Act (Cap 110) + Kenya Gazette annual notices"
+          "file": "src/data/kcse-rankings.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya National Examinations Council (KNEC) & Ministry of Education"
         }
       ],
+      "status": "ok"
+    },
+    {
+      "slug": "school-terms",
+      "routeExists": true,
+      "sourceUrl": "https://education.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/school-terms.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Ministry of Education, Kenya — Official School Calendar (2025–2027)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "matatu-routes",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": null,
+      "data": [],
       "status": "ok"
     },
     {
@@ -143,147 +197,12 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 657,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/number-plate-prefixes.json",
-          "lastUpdated": "2025-01-01",
-          "source": "National Transport and Safety Authority (NTSA) / Traffic Act"
-        }
-      ],
-      "status": "stale"
-    },
-    {
-      "slug": "mobile-number-prefix",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": 657,
-      "data": [
-        {
-          "file": "src/data/mobile-prefixes.json",
-          "lastUpdated": "2025-01-01",
-          "source": "Communications Authority of Kenya (CA) — Number Allocation Plan"
-        }
-      ],
-      "status": "stale"
-    },
-    {
-      "slug": "school-terms",
-      "routeExists": true,
-      "sourceUrl": "https://education.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 292,
-      "data": [
-        {
-          "file": "src/data/school-terms.json",
-          "lastUpdated": "2026-01-01",
-          "source": "Ministry of Education, Kenya"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "stamp-duty-calculator",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/stamp-duty-rates.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "helb-calculator",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/helb-rates.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "housing-levy-calculator",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/housing-levy-rates.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "vehicle-insurance-calculator",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": 658,
-      "data": [
-        {
-          "file": "src/data/vehicle-insurance-rates.json",
-          "lastUpdated": "2024",
-          "source": "Insurance Regulatory Authority (IRA) — Motor Insurance Minimum Premium Rates"
-        }
-      ],
-      "status": "stale"
-    },
-    {
-      "slug": "kplc-token-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://kplc.co.ke/faq/tariff",
-      "maxAgeDays": 365,
-      "ageDays": 658,
-      "data": [
-        {
-          "file": "src/data/kplc-tariff.json",
-          "lastUpdated": "2024",
-          "source": "EPRA/KPLC Electricity Tariff — Domestic Consumer (DC) Category"
-        }
-      ],
-      "status": "stale"
-    },
-    {
-      "slug": "traffic-fines",
-      "routeExists": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/",
-      "maxAgeDays": 365,
-      "ageDays": 658,
-      "data": [
-        {
-          "file": "src/data/traffic-fines.json",
-          "lastUpdated": "2024",
-          "source": "Traffic Act (Cap 403) + NTSA Published Fine Schedule"
-        }
-      ],
-      "status": "stale"
-    },
-    {
-      "slug": "passport-id-fees",
-      "routeExists": true,
-      "sourceUrl": "https://immigration.go.ke/type-and-fees/",
-      "maxAgeDays": 365,
-      "ageDays": 16,
-      "data": [
-        {
-          "file": "src/data/passport-id-fees.json",
-          "lastUpdated": "2026-10-04",
-          "source": "Department of Immigration & National Registration Bureau (NRB)"
+          "lastUpdated": "2026-10-20",
+          "source": "National Transport and Safety Authority (NTSA) / Registrar of Motor Vehicles"
         }
       ],
       "status": "ok"
@@ -293,267 +212,117 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence",
       "maxAgeDays": 365,
-      "ageDays": 16,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/driving-license-guide.json",
-          "lastUpdated": "2026-10-04",
-          "source": "NTSA (ntsa.go.ke) + Traffic Act"
+          "lastUpdated": "2026-10-20",
+          "source": "National Transport and Safety Authority (NTSA) & Traffic Act"
         }
       ],
       "status": "ok"
     },
     {
-      "slug": "child-growth-schedule",
+      "slug": "traffic-fines",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 1024,
+      "ageDays": 1,
       "data": [
         {
-          "file": "src/data/vaccination-schedule.json",
-          "lastUpdated": "2023",
-          "source": "MOH Kenya Expanded Programme on Immunization (KEPI) + WHO Child Growth Standards"
+          "file": "src/data/traffic-fines.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Traffic Act (Cap 403) & NTSA Instant Fines Schedule"
         }
       ],
-      "status": "stale"
-    },
-    {
-      "slug": "kenya-postal-codes",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": 658,
-      "data": [
-        {
-          "file": "src/data/postal-codes.json",
-          "lastUpdated": "2024",
-          "source": "Posta Kenya (posta.co.ke) — Kenya Postal Codes Directory"
-        }
-      ],
-      "status": "stale"
-    },
-    {
-      "slug": "water-bill-calculator",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/water-tariffs.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "solar-roi-calculator",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/solar-irradiance.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "ward-constituency-finder",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/counties.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "county-budget-tracker",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/county-budgets.json",
-          "lastUpdated": null,
-          "source": "Controller of Budget (cob.go.ke) — Annual County Budget Implementation Review Report"
-        }
-      ],
-      "status": "review"
+      "status": "ok"
     },
     {
       "slug": "national-parks-directory",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": null,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/national-parks.json",
-          "lastUpdated": null,
-          "source": null
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Wildlife Service (KWS) Conservation Fees Schedule"
         }
       ],
-      "status": "review"
-    },
-    {
-      "slug": "nhif-hospital-finder",
-      "routeExists": true,
-      "sourceUrl": "https://provider.sha.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/nhif-hospitals.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "trademark-cost-kenya",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/trademark-fees.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "real-estate-agent-checker",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/real-estate-agents.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "kenya-customs-restricted-items",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/customs-restricted-items.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "kenya-rainfall-patterns",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/rainfall-patterns.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
-    },
-    {
-      "slug": "kenyan-food-nutrition",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [
-        {
-          "file": "src/data/kenyan-foods-nutrition.json",
-          "lastUpdated": null,
-          "source": null
-        }
-      ],
-      "status": "review"
+      "status": "ok"
     },
     {
       "slug": "crop-planting-calendar",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": null,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/crop-planting-calendar.json",
-          "lastUpdated": null,
-          "source": null
+          "lastUpdated": "2026-10-20",
+          "source": "KALRO & Ministry of Agriculture Seasonal Planting Bulletins"
         }
       ],
-      "status": "review"
+      "status": "ok"
     },
     {
       "slug": "kenya-soil-types",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": null,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/soil-types.json",
-          "lastUpdated": null,
-          "source": null
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Soil Survey (KALRO) & FAO-UNESCO Soil Map"
         }
       ],
-      "status": "review"
+      "status": "ok"
     },
     {
-      "slug": "livestock-market-prices",
+      "slug": "kenya-rainfall-patterns",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": null,
+      "ageDays": 1,
       "data": [
         {
-          "file": "src/data/livestock-prices.json",
-          "lastUpdated": "2025-Q4",
-          "source": null
+          "file": "src/data/rainfall-patterns.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Meteorological Department (meteo.go.ke)"
         }
       ],
-      "status": "review"
+      "status": "ok"
     },
     {
       "slug": "fertilizer-subsidy-guide",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 293,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/fertilizer-subsidy.json",
-          "lastUpdated": "2025",
-          "source": null
+          "lastUpdated": "2026-10-20",
+          "source": "National Cereals and Produce Board (NCPB) & Ministry of Agriculture (KIAMIS 2026)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "livestock-market-prices",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/livestock-prices.json",
+          "lastUpdated": "2026-10-20",
+          "source": "National Agriculture and Livestock Markets Commission (NALMC) 2026 Market Reports"
         }
       ],
       "status": "ok"
@@ -563,12 +332,12 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 293,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/agrovets.json",
-          "lastUpdated": "2025",
-          "source": null
+          "lastUpdated": "2026-10-20",
+          "source": "Pest Control Products Board (PCPB) & KEPHIS"
         }
       ],
       "status": "ok"
@@ -578,127 +347,72 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 293,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/forest-reserves.json",
-          "lastUpdated": "2025",
-          "source": null
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Forest Service (KFS) & Kenya Forest Research Institute (KEFRI)"
         }
       ],
       "status": "ok"
     },
     {
-      "slug": "professional-bodies-kenya",
+      "slug": "ward-constituency-finder",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 293,
+      "ageDays": 1,
       "data": [
         {
-          "file": "src/data/professional-bodies.json",
-          "lastUpdated": "2025",
-          "source": null
+          "file": "src/data/counties.json",
+          "lastUpdated": "2026-10-20",
+          "source": "IEBC (2022 Election Data) & KNBS Population and Housing Census"
         }
       ],
       "status": "ok"
     },
     {
-      "slug": "kenya-languages",
+      "slug": "county-budget-tracker",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 293,
+      "ageDays": 1,
       "data": [
         {
-          "file": "src/data/kenya-languages.json",
-          "lastUpdated": "2025",
-          "source": null
-        },
-        {
-          "file": "src/data/language-sources",
-          "lastUpdated": null,
-          "source": null
+          "file": "src/data/county-budgets.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Controller of Budget (cob.go.ke) — County Budget Implementation Review Report FY 2025/26"
         }
       ],
       "status": "ok"
     },
     {
-      "slug": "kenyan-translator",
+      "slug": "kenya-postal-codes",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 19,
+      "ageDays": 1,
       "data": [
         {
-          "file": "src/data/dictionaries/swahili.json",
-          "lastUpdated": "2026-07",
-          "source": null
-        },
+          "file": "src/data/postal-codes.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Postal Corporation of Kenya (Posta Kenya — posta.co.ke)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "mobile-number-prefix",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
         {
-          "file": "src/data/dictionaries/kikuyu.json",
-          "lastUpdated": "2026-10",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/luo.json",
-          "lastUpdated": "2026-09",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/kalenjin.json",
-          "lastUpdated": "2026-07",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/luhya.json",
-          "lastUpdated": "2026-10",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/kamba.json",
-          "lastUpdated": "2026-10",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/meru.json",
-          "lastUpdated": "2026-07",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/maasai.json",
-          "lastUpdated": "2026-10",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/kisii.json",
-          "lastUpdated": "2026-10",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/somali.json",
-          "lastUpdated": "2026-07",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/turkana.json",
-          "lastUpdated": "2026-10",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/mijikenda.json",
-          "lastUpdated": "2026-07",
-          "source": null
-        },
-        {
-          "file": "src/data/dictionaries/teso.json",
-          "lastUpdated": "2026-10",
-          "source": null
-        },
-        {
-          "file": "src/data/kenya-languages.json",
-          "lastUpdated": "2025",
-          "source": null
+          "file": "src/data/mobile-prefixes.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Communications Authority of Kenya (CA) — National Numbering Plan"
         }
       ],
       "status": "ok"
@@ -713,57 +427,313 @@
       "status": "ok"
     },
     {
-      "slug": "kikuyu-proverbs",
+      "slug": "kenyan-translator",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": null,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/dictionaries/swahili.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/kikuyu.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/luo.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/kalenjin.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/luhya.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/kamba.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/meru.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/maasai.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/kisii.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/somali.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/turkana.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/mijikenda.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/dictionaries/teso.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KenyaHub Community & Linguistic Reference Dictionary"
+        },
+        {
+          "file": "src/data/kenya-languages.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KNBS Census, Ethnologue & UNESCO Atlas of Languages"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kikuyu-proverbs",
+      "routeExists": true,
+      "sourceUrl": "https://archive.org/details/1000kikuyuproverbs",
+      "maxAgeDays": 365,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kikuyu-proverbs.json",
-          "lastUpdated": null,
-          "source": null
+          "lastUpdated": "2026-10-20",
+          "source": "1,000 Kikuyu Proverbs by Fr. G. Barra (Consolata Catholic Mission)"
         }
       ],
-      "status": "review"
+      "status": "ok"
     },
     {
-      "slug": "economic-calendar",
+      "slug": "kenya-languages",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 292,
+      "ageDays": 1,
       "data": [
         {
-          "file": "src/data/economic-calendar.json",
-          "lastUpdated": "2026-01",
+          "file": "src/data/kenya-languages.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KNBS Census, Ethnologue & UNESCO Atlas of Languages"
+        },
+        {
+          "file": "src/data/language-sources",
+          "lastUpdated": null,
           "source": null
         }
       ],
       "status": "ok"
     },
     {
-      "slug": "kcse-school-rankings",
+      "slug": "trademark-cost-kenya",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 598,
+      "ageDays": 1,
       "data": [
         {
-          "file": "src/data/kcse-rankings.json",
-          "lastUpdated": "2025-03",
-          "source": null
+          "file": "src/data/trademark-fees.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Industrial Property Institute (KIPI — Industrial Property Act)"
         }
       ],
-      "status": "stale"
+      "status": "ok"
     },
     {
-      "slug": "matatu-routes",
+      "slug": "real-estate-agent-checker",
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [],
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/real-estate-agents.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Estate Agents Registration Board (EARB — Cap 533)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "professional-bodies-kenya",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/professional-bodies.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Statutory Professional Regulatory Bodies of Kenya"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "economic-calendar",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/economic-calendar.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KNBS, Central Bank of Kenya (CBK) & National Treasury (2026 Schedule)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "public-holidays",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/public-holidays.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Public Holidays Act (Cap 110) & Kenya Gazette Notices"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "passport-id-fees",
+      "routeExists": true,
+      "sourceUrl": "https://immigration.go.ke/type-and-fees/",
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/passport-id-fees.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Directorate of Immigration Services & National Registration Bureau (eCitizen 2026)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kenya-customs-restricted-items",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/customs-restricted-items.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Revenue Authority (KRA) Customs & EAC Customs Management Act"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "nhif-hospital-finder",
+      "routeExists": true,
+      "sourceUrl": "https://provider.sha.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/nhif-hospitals.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Social Health Authority (SHA / SHIF) & Ministry of Health Master Facility List"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "child-growth-schedule",
+      "routeExists": true,
+      "sourceUrl": "https://guidelines.health.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/vaccination-schedule.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Ministry of Health KEPI & WHO Child Growth Standards"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kenyan-food-nutrition",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/kenyan-foods-nutrition.json",
+          "lastUpdated": "2026-10-20",
+          "source": "FAO/WHO Food Composition Tables for Sub-Saharan Africa & KEMRI"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kplc-token-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://kplc.co.ke/faq/tariff",
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/kplc-tariff.json",
+          "lastUpdated": "2026-10-20",
+          "source": "EPRA Approved Retail Electricity Tariff (2023/24 – 2025/26) — Domestic Consumer (DC1 / DC2 / DC3)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "water-bill-calculator",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/water-tariffs.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Water Services Regulatory Board (WASREB) Approved Utility Tariffs"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "solar-roi-calculator",
+      "routeExists": true,
+      "sourceUrl": null,
+      "maxAgeDays": 365,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/solar-irradiance.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Meteorological Department & EPRA Solar PV Guidelines"
+        }
+      ],
       "status": "ok"
     }
   ]

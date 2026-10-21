@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "1.1.0",
-  "lastUpdated": "2026-10",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Compiled from 'An Introduction to the Ateso Language' by J.H. Hilders and J.C.D. Lawrence (Eagle Press / East African Literature Bureau, 1957). Ateso is an Eastern Nilotic language of the Teso-Turkana group, spoken primarily in Busia County (Teso North and Teso South sub-counties), Kenya, and widely across Eastern Uganda (Soroti, Kumi, Ngora, Bukedea, Katakwi, Amuria, Tororo). Thoroughly analyzed and structured with accurate grammatical gender (masculine e-, feminine a-, diminutive i-), plural noun classes, and verbal classes (ko- and ki-).",
   "categories": [
     {
@@ -1749,5 +1749,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

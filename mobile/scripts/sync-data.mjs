@@ -7,7 +7,7 @@ const root = resolve(__dirname, "../..");
 const source = resolve(root, "kenyahub/src");
 const destination = resolve(__dirname, "../src/shared");
 
-await rm(destination, { recursive: true, force: true });
+await rm(destination, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
 await mkdir(destination, { recursive: true });
 await cp(resolve(source, "data"), resolve(destination, "data"), { recursive: true });
 await mkdir(resolve(destination, "lib"), { recursive: true });

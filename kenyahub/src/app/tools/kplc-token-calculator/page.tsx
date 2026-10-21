@@ -90,11 +90,11 @@ function calculateTokens(amountPaid: number) {
 const faq = [
   {
     question: "How many KPLC units will I get for KES 1,000?",
-    answer: "The number of units depends on whether the fixed monthly charge (KES 150 + VAT) has been fully paid. After the fixed charge is deducted, the remaining amount buys units at the applicable tariff band rate. Use the calculator above for an exact figure.",
+    answer: "Under the EPRA 2023–2026 tariff structure, KES 1,000 buys approximately 38 kWh on the Lifeline tariff (DC1, 0–30 kWh/month) or ~31 kWh on the Domestic Ordinary tariff (DC2, 31–100 kWh/month) after Fuel Energy Cost, Forex Adjustment, EPRA/WRA/REP levies, and 16% VAT.",
   },
   {
     question: "What is the KPLC fixed charge of KES 150?",
-    answer: "KPLC charges a fixed monthly service fee of KES 150 (plus 16% VAT = KES 174). This is deducted from your prepaid token purchases until fully paid each month. After it's paid, all subsequent purchases go toward units.",
+    answer: "EPRA abolished the monthly KES 150 fixed standing charge for domestic prepaid customers under the 2023–2026 tariff review. Every shilling you pay goes directly toward energy units and per-unit statutory levies/VAT.",
   },
   {
     question: "What is the lifeline tariff?",

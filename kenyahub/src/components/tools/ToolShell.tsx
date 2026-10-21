@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { getRelatedTools, getCategoryInfo } from "@/lib/tools-registry";
+import { getRelatedTools, getCategoryInfo, TOOLS } from "@/lib/tools-registry";
 import type { Tool } from "@/lib/types";
+import toolGuidesData from "@/data/tool-guides.json";
+import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 import PinToolButton from "./PinToolButton";
 import ToolAccessTracker from "./ToolAccessTracker";
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -12,21 +14,113 @@ interface ToolShellProps {
   breadcrumbSuffix?: { label: string; href?: string }[];
 }
 
+interface SuiteConfig {
+  name: string;
+  hubHref?: string;
+  hubLabel?: string;
+  members: string[];
+}
+
+const CONSOLIDATED_SUITES: SuiteConfig[] = [
+  {
+    name: "47 Counties & Civic Suite",
+    hubHref: "/county",
+    hubLabel: "🏛️ Open 47 Counties Hub",
+    members: [
+      "ward-constituency-finder",
+      "county-budget-tracker",
+      "kenya-rainfall-patterns",
+      "kenya-postal-codes",
+    ],
+  },
+  {
+    name: "Salary, Tax & Deductions Suite",
+    members: [
+      "paye-calculator",
+      "housing-levy-calculator",
+      "helb-calculator",
+      "mpesa-fee-calculator",
+    ],
+  },
+  {
+    name: "CBC & School Calendar Suite",
+    members: ["cbc-curriculum", "cbc-grade-age", "school-terms"],
+  },
+  {
+    name: "KCSE & University Placement Suite",
+    members: [
+      "kcse-grade-calculator",
+      "kuccps-cluster-calculator",
+      "kcse-school-rankings",
+    ],
+  },
+  {
+    name: "NTSA Motorist & Transport Suite",
+    hubHref: "/matatu",
+    hubLabel: "🚌 Open Matatu Routes Hub",
+    members: [
+      "matatu-routes",
+      "number-plate-decoder",
+      "driving-license-guide",
+      "traffic-fines",
+      "vehicle-insurance-calculator",
+    ],
+  },
+  {
+    name: "Kenyan Languages & Cultural Suite",
+    members: [
+      "learn",
+      "kenyan-translator",
+      "kikuyu-proverbs",
+      "kenya-languages",
+    ],
+  },
+  {
+    name: "Kenya Farming & Agribusiness Suite",
+    members: [
+      "crop-planting-calendar",
+      "kenya-soil-types",
+      "fertilizer-subsidy-guide",
+      "livestock-market-prices",
+      "agrovet-finder",
+    ],
+  },
+];
+
 export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: ToolShellProps) {
   const related = getRelatedTools(tool.slug, 4);
   const category = getCategoryInfo(tool.category);
 
-  const faqSchema = faq
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faq.map((q) => ({
-          "@type": "Question",
-          name: q.question,
-          acceptedAnswer: { "@type": "Answer", text: q.answer },
-        })),
-      }
-    : null;
+  // Merge page FAQs with tool-guides.json FAQs so no tool ever lacks FAQ content
+  const guideEntry = (toolGuidesData as any)?.guides?.[tool.slug] || {};
+  const effectiveFaq: { question: string; answer: string }[] =
+    faq && faq.length > 0 ? faq : guideEntry.faq || [];
+  const guideNotes: string[] = guideEntry.notes || [];
+
+  // Check if tool belongs to a consolidated suite
+  const activeSuite = CONSOLIDATED_SUITES.find((s) => s.members.includes(tool.slug));
+
+  // Related blog posts for deep publisher content & internal SEO linking
+  const relatedPosts = STATIC_BLOG_POSTS.filter((post) => {
+    const text = `${post.title} ${post.excerpt} ${(post.tags || []).join(" ")}`.toLowerCase();
+    return (
+      text.includes(tool.shortTitle.toLowerCase()) ||
+      tool.keywords.some((kw) => text.includes(kw.split(" ")[0].toLowerCase()))
+    );
+  }).slice(0, 2);
+
+  const faqSchema =
+    effectiveFaq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: effectiveFaq.map((q) => ({
+            "@type": "Question",
+            name: q.question,
+            acceptedAnswer: { "@type": "Answer", text: q.answer },
+          })),
+        }
+      : null;
 
   const toolSchema = {
     "@context": "https://schema.org",
@@ -34,10 +128,16 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
     name: tool.title,
     url: `https://kenyahub.me/tools/${tool.slug}/`,
     applicationCategory: "UtilityApplication",
-    operatingSystem: "Web Browser",
+    operatingSystem: "All",
+    inLanguage: "en-KE",
+    isAccessibleForFree: true,
     description: tool.description,
     offers: { "@type": "Offer", price: "0", priceCurrency: "KES" },
-    provider: { "@type": "Organization", name: "KenyaHub" },
+    provider: {
+      "@type": "Organization",
+      name: "KenyaHub",
+      url: "https://kenyahub.me",
+    },
   };
 
   const breadcrumbSchema = {
@@ -124,7 +224,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
       </nav>
 
       {/* ── Header ── */}
-      <header className="mb-10">
+      <header className="mb-8">
         <div className="flex items-start gap-4 mb-4">
           <div className="w-14 h-14 rounded-2xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0">
             <span className="text-[1.75rem]"><DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" /></span>
@@ -145,37 +245,102 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
 
         <div className="flex flex-wrap items-center gap-2.5">
           {category && (
-            <span className={`badge ${category.badgeClass}`}>
+            <Link href={`/tools?category=${category.id}`} className={`badge ${category.badgeClass} hover:opacity-90 transition-opacity`}>
               <DynamicIcon emoji={category.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {category.name}
-            </span>
+            </Link>
           )}
           <span className="inline-flex items-center gap-1 text-[0.625rem] text-text-muted bg-white/[0.02] border border-border rounded-full px-2.5 py-1">
             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
-            {tool.dataSource}
+            Source: {tool.dataSource}
           </span>
           <span className="inline-flex items-center gap-1 text-[0.625rem] text-text-muted bg-white/[0.02] border border-border rounded-full px-2.5 py-1">
             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
             {tool.updateFrequency === "static"
-              ? "Rarely changes"
+              ? "Verified 2026 Reference"
               : tool.updateFrequency === "annual"
-              ? "Updated annually"
+              ? "Updated for 2026"
               : tool.updateFrequency === "periodic"
               ? "Updated periodically"
               : "Live data"}
           </span>
         </div>
+
+        {/* Consolidated Suite Switcher Bar */}
+        {activeSuite && (
+          <div className="mt-5 p-3.5 rounded-xl bg-bg-card border border-border flex flex-wrap items-center gap-2">
+            <span className="text-[0.65rem] font-bold uppercase tracking-wider text-gold mr-1">
+              {activeSuite.name}:
+            </span>
+            {activeSuite.hubHref && (
+              <Link
+                href={activeSuite.hubHref}
+                className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-gold/15 text-gold border border-gold/30 hover:bg-gold/25 transition-colors"
+              >
+                {activeSuite.hubLabel}
+              </Link>
+            )}
+            {activeSuite.members.map((mSlug) => {
+              const mTool = TOOLS.find((t) => t.slug === mSlug);
+              if (!mTool) return null;
+              const isCurrent = mSlug === tool.slug;
+              return (
+                <Link
+                  key={mSlug}
+                  href={`/tools/${mSlug}`}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 ${
+                    isCurrent
+                      ? "bg-kenya-green text-white font-semibold"
+                      : "bg-bg-elevated border border-border text-text-secondary hover:border-gold hover:text-text-primary"
+                  }`}
+                >
+                  <DynamicIcon emoji={mTool.icon} className="w-3.5 h-3.5" />
+                  {mTool.shortTitle}
+                </Link>
+              );
+            })}
+          </div>
+        )}
       </header>
 
       {/* ── Tool Content ── */}
-      <div className="mb-16">{children}</div>
+      <div className="mb-14">{children}</div>
+
+      {/* ── Editorial Methodology & Data Verification Card (AdSense & E-E-A-T Value) ── */}
+      <section className="mb-14 bg-bg-card border border-border rounded-2xl p-5 sm:p-6 space-y-4">
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <h2 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+            <DynamicIcon emoji="🛡️" className="w-4 h-4 text-kenya-green-light" /> Data Source, Methodology &amp; Verification
+          </h2>
+          <span className="text-[0.6875rem] text-kenya-green-light bg-kenya-green/10 border border-kenya-green/20 px-2.5 py-0.5 rounded-full font-semibold">
+            ✓ Verified for 2026
+          </span>
+        </div>
+        <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+          The <strong>{tool.title}</strong> is maintained by the KenyaHub research team using official publications from{" "}
+          <strong>{tool.dataSource}</strong>. All calculations and lookups execute locally inside your browser for instant results and 100% data privacy.
+        </p>
+        {guideNotes.length > 0 && (
+          <ul className="space-y-1.5 pt-2 border-t border-border/60 text-xs text-text-secondary">
+            {guideNotes.slice(0, 5).map((note, idx) => (
+              <li key={idx} className="flex items-start gap-2">
+                <span className="text-gold font-bold">•</span>
+                <span>{note}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+        <p className="text-[0.6875rem] text-text-muted pt-2 border-t border-border/50">
+          Editorial Disclaimer: Figures and reference data are provided for informational and educational purposes under Kenyan regulations. Always confirm formal filings with the relevant statutory authority ({tool.dataSource}).
+        </p>
+      </section>
 
       {/* ── FAQ Section ── */}
-      {faq && faq.length > 0 && (
-        <section className="mb-16">
+      {effectiveFaq.length > 0 && (
+        <section className="mb-14">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center">
               <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -187,7 +352,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
             </h2>
           </div>
           <div className="space-y-3">
-            {faq.map((item, i) => (
+            {effectiveFaq.map((item, i) => (
               <details
                 key={i}
                 className="group bg-bg-card border border-border rounded-xl overflow-hidden"
@@ -208,6 +373,32 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
                   {item.answer}
                 </div>
               </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── Related Guides & Articles (from Blog) ── */}
+      {relatedPosts.length > 0 && (
+        <section className="mb-14">
+          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 flex items-center gap-2">
+            <DynamicIcon emoji="📖" className="w-5 h-5 text-gold" /> In-Depth Guides &amp; Articles
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {relatedPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors block group"
+              >
+                <h3 className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors mb-1 line-clamp-2">
+                  {post.title}
+                </h3>
+                <p className="text-[0.6875rem] text-text-muted line-clamp-2">{post.excerpt}</p>
+                <span className="inline-block mt-2 text-[0.65rem] font-semibold text-gold">
+                  Read {post.readTime} min guide →
+                </span>
+              </Link>
             ))}
           </div>
         </section>

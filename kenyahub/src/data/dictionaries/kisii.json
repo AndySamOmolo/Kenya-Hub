@@ -11,7 +11,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "1.1.0",
-  "lastUpdated": "2026-10",
+  "lastUpdated": "2026-10-20",
   "contributorNote": "Carefully curated from 'A Practical Introduction to Gusii' (1956) and 'The Tense System of Gusii' (1960) by Wilfred H. Whiteley (East African Literature Bureau / EAISR), with verified Highland Ekegusii phonology, syntax, and kinship terminology assisted by Erasto Abuga.",
   "categories": [
     {
@@ -1281,5 +1281,6 @@
         }
       ]
     }
-  ]
+  ],
+  "source": "KenyaHub Community & Linguistic Reference Dictionary"
 }

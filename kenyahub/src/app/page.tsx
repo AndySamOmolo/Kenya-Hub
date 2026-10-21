@@ -1,18 +1,19 @@
 import Link from "next/link";
-import { MapPin, ShieldCheck, BadgeCheck, Smartphone } from "lucide-react";
+import { MapPin, ShieldCheck, BadgeCheck, Smartphone, Landmark, BusFront } from "lucide-react";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import PopularToolsSection from "@/components/tools/PopularToolsSection";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function HomePage() {
-
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "KenyaHub",
     url: "https://kenyahub.me",
-    description: "Free online tools built for Kenya — PAYE salary calculator, M-Pesa fee calculator, CBC curriculum explorer, KUCCPS cluster points, public holidays, and more.",
+    inLanguage: "en-KE",
+    description:
+      "Free online tools and verified public data built for Kenya — 2026 PAYE salary calculator, M-Pesa fee calculator, 47 Counties Hub, CBC curriculum explorer, KUCCPS cluster points, public holidays, and more.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://kenyahub.me/tools?q={search_term_string}",
@@ -25,6 +26,14 @@ export default function HomePage() {
     "@type": "Organization",
     name: "KenyaHub",
     url: "https://kenyahub.me",
+    logo: "https://kenyahub.me/og-image.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "andysamonyango@gmail.com",
+      contactType: "customer support",
+      areaServed: "KE",
+      availableLanguage: ["English", "Swahili"],
+    },
   };
 
   return (
@@ -37,18 +46,13 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      {/* ═══════════════════════════════════════════
-          HERO — radial gradient with Kenyan flag colors
-          subtle decorative elements
-          ═══════════════════════════════════════════ */}
+
+      {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="gradient-hero min-h-[560px] sm:min-h-[600px] flex items-center">
-          {/* Decorative background geometry — Maasai diamond pattern */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Large diamond */}
             <div className="absolute -top-20 -right-20 w-96 h-96 border border-white/[0.03] rotate-45 rounded-3xl" />
             <div className="absolute -bottom-32 -left-16 w-80 h-80 border border-white/[0.03] rotate-45 rounded-3xl" />
-            {/* Gold accent dot pattern */}
             <div className="absolute top-1/4 right-1/4 w-2 h-2 rounded-full bg-gold/20 animate-float" />
             <div className="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-kenya-green/20 animate-float" style={{ animationDelay: "1s" }} />
             <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
@@ -56,14 +60,13 @@ export default function HomePage() {
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20">
             <div className="max-w-2xl">
-              {/* Status pill */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] mb-8">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-kenya-green opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-kenya-green-light" />
                 </span>
                 <span className="text-xs font-medium text-text-secondary tracking-wide">
-                  {TOOLS.length}+ tools · Free forever · Official data
+                  {TOOLS.length} tools · 47 Counties Hub · Free forever · Official 2026 data
                 </span>
               </div>
 
@@ -74,60 +77,99 @@ export default function HomePage() {
               </h1>
 
               <p className="text-base sm:text-lg text-text-secondary leading-relaxed mb-10 max-w-xl">
-                Calculate your net salary, explore CBC curriculum, decode number
-                plates, check M-Pesa fees — all powered by official Kenyan
-                government data. Zero sign-ups, zero cost.
+                Calculate your 2026 net salary, explore all 47 county budgets and constituencies, decode number plates, check M-Pesa fees, and plan matatu routes — powered by official Kenyan public data.
               </p>
 
               <div className="flex flex-wrap gap-3">
                 <Link href="/tools" className="btn-gold text-[0.9375rem] px-7 py-3.5">
-                  Explore All Tools
+                  Explore All {TOOLS.length} Tools
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Link>
                 <Link
-                  href="/tools/paye-calculator"
+                  href="/county"
                   className="btn-outline text-[0.9375rem] px-7 py-3.5"
                 >
-                  Try PAYE Calculator
+                  Explore 47 Counties Hub
                 </Link>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Gradient fade transition */}
         <div className="h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
       </section>
 
-      {/* ═══════════════════════════════════════════
-          PINNED TOOLS
-          ═══════════════════════════════════════════ */}
+      {/* PINNED TOOLS */}
       <PinnedToolsHomeSection />
 
-      {/* ═══════════════════════════════════════════
-          POPULAR TOOLS — sorted by real user usage
-          ═══════════════════════════════════════════ */}
+      {/* POPULAR TOOLS */}
       <PopularToolsSection />
 
-      {/* Section divider */}
       <div className="section-divider mx-auto max-w-7xl" />
 
-      {/* ═══════════════════════════════════════════
-          CATEGORIES — browse by topic
-          ═══════════════════════════════════════════ */}
+      {/* FLAGSHIP PUBLIC DATA HUBS (47 COUNTIES & MATATU ROUTES) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <Link
+            href="/county"
+            className="group bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-6 sm:p-8 transition-colors flex flex-col justify-between"
+          >
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-kenya-green/10 border border-kenya-green/20 text-kenya-green-light text-xs font-semibold mb-4">
+                <Landmark className="w-3.5 h-3.5" /> Consolidated Civic Module
+              </div>
+              <h2 className="text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary group-hover:text-gold transition-colors mb-2">
+                Kenya 47 Counties Intelligence Hub
+              </h2>
+              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-4">
+                All county tools united in one hub — compare Governors, Senators, Woman Representatives,{" "}
+                <strong>290 Constituencies</strong>, <strong>FY 2025/26 Controller of Budget Allocations</strong>,{" "}
+                <strong>12-Month Rainfall &amp; Climate Zones</strong>, SHA Hospitals, Postal Codes, and side-by-side county comparisons.
+              </p>
+            </div>
+            <span className="text-xs font-bold text-gold group-hover:underline">
+              Open 47 Counties Hub (Directory · Budgets · Constituencies · Climate · Compare) →
+            </span>
+          </Link>
+
+          <Link
+            href="/matatu"
+            className="group bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-6 sm:p-8 transition-colors flex flex-col justify-between"
+          >
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold text-xs font-semibold mb-4">
+                <BusFront className="w-3.5 h-3.5" /> Interactive Transit Module
+              </div>
+              <h2 className="text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary group-hover:text-gold transition-colors mb-2">
+                Kenya Matatu Routes, Stages &amp; Fares Hub
+              </h2>
+              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-4">
+                Navigate public transport across <strong>Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika</strong>. View CBD boarding stages, route numbers, peak vs off-peak fares, and registered SACCO operators on interactive maps.
+              </p>
+            </div>
+            <span className="text-xs font-bold text-gold group-hover:underline">
+              Open Matatu Routes Explorer (80+ Verified Routes Across 6 Towns) →
+            </span>
+          </Link>
+        </div>
+      </section>
+
+      <div className="section-divider mx-auto max-w-7xl" />
+
+      {/* CATEGORIES */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         <div className="text-center mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Browse by Category
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight">
-            9 categories, one platform
+            {TOOL_CATEGORIES.length} categories, one platform
           </h2>
           <p className="text-text-muted text-sm mt-3 max-w-md mx-auto">
             Every aspect of life in Kenya — from finances to farming, education
-            to energy.
+            to energy, counties to languages.
           </p>
         </div>
 
@@ -163,12 +205,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section divider */}
       <div className="section-divider mx-auto max-w-7xl" />
 
-      {/* ═══════════════════════════════════════════
-          WHY KENYAHUB — trust pillars
-          ═══════════════════════════════════════════ */}
+      {/* WHY KENYAHUB */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         <div className="text-center mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
@@ -184,25 +223,25 @@ export default function HomePage() {
             {
               icon: <MapPin className="w-8 h-8 text-kenya-green mb-1" />,
               title: "100% Kenyan",
-              desc: "Every tool uses real Kenyan data — KRA tax bands, Safaricom tariffs, KICD curriculum.",
+              desc: "Every tool uses real Kenyan data — 2026 KRA tax bands, Safaricom tariffs, KICD curriculum.",
               accent: "from-kenya-green/10 to-transparent",
             },
             {
               icon: <ShieldCheck className="w-8 h-8 text-gold mb-1" />,
               title: "Officially Sourced",
-              desc: "Data from KRA, KUCCPS, NHIF, KICD, NTSA, and other government bodies.",
+              desc: "Data from KRA, KUCCPS, SHA, KICD, NTSA, KNBS, COB, and other public institutions.",
               accent: "from-gold/10 to-transparent",
             },
             {
               icon: <BadgeCheck className="w-8 h-8 text-sky mb-1" />,
               title: "Free Forever",
-              desc: "No registration, no hidden fees, no premium tiers. Every tool is free.",
+              desc: "No registration, no hidden fees, no paywalls. Every calculator and directory is free.",
               accent: "from-sky/10 to-transparent",
             },
             {
               icon: <Smartphone className="w-8 h-8 text-kenya-red mb-1" />,
-              title: "Mobile-First",
-              desc: "Built for phones first — because most Kenyans access the web on mobile.",
+              title: "Mobile-First & Privacy-Safe",
+              desc: "All calculations run locally on your device — your salary or financial numbers never leave your browser.",
               accent: "from-kenya-red/10 to-transparent",
             },
           ].map((item, i) => (
@@ -222,9 +261,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════
-          CTA — bottom banner
-          ═══════════════════════════════════════════ */}
+      {/* CTA */}
       <section className="relative overflow-hidden">
         <div className="maasai-border-top" />
         <div className="bg-bg-secondary py-10 sm:py-20">
@@ -233,8 +270,7 @@ export default function HomePage() {
               Ready to find the tool you need?
             </h2>
             <p className="text-text-muted text-sm mb-8 max-w-md mx-auto">
-              From PAYE calculations to CBC curriculum — whatever you need as a
-              Kenyan, we&apos;ve built it.
+              From PAYE calculations to CBC curriculum and all 47 county budgets — whatever you need as a Kenyan, we&apos;ve built it.
             </p>
             <Link href="/tools" className="btn-gold text-base px-8 py-4">
               Explore All Tools

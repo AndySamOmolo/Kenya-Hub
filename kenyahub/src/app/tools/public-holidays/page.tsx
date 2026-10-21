@@ -48,7 +48,7 @@ function generateICS(holidays: { date: string; name: string }[], year: string) {
 }
 
 export default function PublicHolidaysPage() {
-  const [selectedYear, setSelectedYear] = useState("2025");
+  const [selectedYear, setSelectedYear] = useState("2026");
   const years = Object.keys(holidaysData.holidays);
   const holidays = (holidaysData.holidays as Record<string, { date: string; name: string; description: string }[]>)[selectedYear] || [];
 

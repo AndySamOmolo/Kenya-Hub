@@ -5,6 +5,7 @@ import {
   View,
   TextInput,
   Pressable,
+  ScrollView,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles, ThemeColors } from "../theme";
@@ -22,11 +23,13 @@ function KESInput({
   value,
   onChangeText,
   placeholder = "e.g. 50,000",
+  subtext,
 }: {
   label: string;
   value: string;
   onChangeText: (text: string) => void;
   placeholder?: string;
+  subtext?: string;
 }) {
   const { theme, styles } = useDynamicStyles(createStyles);
   return (
@@ -45,6 +48,7 @@ function KESInput({
           style={styles.textInput}
         />
       </View>
+      {subtext ? <Text style={styles.inputHint}>{subtext}</Text> : null}
     </View>
   );
 }
@@ -83,11 +87,13 @@ function Row({
   label,
   value,
   isDeduction = false,
+  isPositive = false,
   isTotal = false,
 }: {
   label: string;
   value: string;
   isDeduction?: boolean;
+  isPositive?: boolean;
   isTotal?: boolean;
 }) {
   const { theme, styles } = useDynamicStyles(createStyles);
@@ -95,7 +101,11 @@ function Row({
     <View
       style={[
         styles.tableRow,
-        isTotal && { borderTopWidth: 1, borderTopColor: theme.borderLight, paddingTop: 10 },
+        isTotal && {
+          borderTopWidth: 1,
+          borderTopColor: theme.borderLight,
+          paddingTop: 10,
+        },
       ]}
     >
       <Text
@@ -110,6 +120,7 @@ function Row({
         style={[
           styles.rowValue,
           isDeduction && { color: theme.kenyaRedLight },
+          isPositive && { color: theme.kenyaGreenLight },
           isTotal && { fontWeight: "800", color: theme.gold, fontSize: 15 },
         ]}
       >
@@ -119,53 +130,56 @@ function Row({
   );
 }
 
-/** 1. PAYE Calculator */
+/** 1. PAYE Calculator (mirrors kenyahub/src/app/tools/paye-calculator/page.tsx) */
 export function PayeCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
-  const [salaryText, setSalaryText] = useState("80000");
+  const [salaryText, setSalaryText] = useState("100000");
   const [showAnnual, setShowAnnual] = useState(false);
   const salary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
 
   const calc = useMemo(() => {
     const gross = salary;
-    // 1. NSSF (NSSF Act 2013 Year 4 Tier 1 & 2 — KES 9,000 / KES 108,000)
     const nssfTier1Limit = payeData.nssf.tier1Limit || 9000;
     const nssfTier2Limit = payeData.nssf.tier2Limit || 108000;
     const nssfRate = (payeData.nssf.rate || 6) / 100;
     const nssfTier1 = Math.min(gross, nssfTier1Limit) * nssfRate;
-    const nssfTier2 = Math.max(0, Math.min(gross, nssfTier2Limit) - nssfTier1Limit) * nssfRate;
+    const nssfTier2 =
+      Math.max(0, Math.min(gross, nssfTier2Limit) - nssfTier1Limit) * nssfRate;
     const totalNssf = Math.round((nssfTier1 + nssfTier2) * 100) / 100;
 
-    // 2. Affordable Housing Levy (1.5% of gross)
-    const housingLevy = Math.round(gross * ((payeData.housingLevy.employeeRate || 1.5) / 100) * 100) / 100;
+    const housingLevy =
+      Math.round(gross * ((payeData.housingLevy.employeeRate || 1.5) / 100) * 100) /
+      100;
 
-    // 3. SHA / SHIF (2.75% of gross, min 300)
-    const sha = gross > 0 ? Math.max(300, Math.round(gross * ((payeData.sha.rate || 2.75) / 100) * 100) / 100) : 0;
+    const sha =
+      gross > 0
+        ? Math.max(
+            300,
+            Math.round(gross * ((payeData.sha.rate || 2.75) / 100) * 100) / 100
+          )
+        : 0;
 
-    // 4. Taxable Income (Tax Laws Amendment Act 2024: NSSF, SHIF & Housing Levy are pre-tax allowable deductions)
     const taxableIncome = Math.max(0, gross - totalNssf - sha - housingLevy);
 
-    // 5. PAYE Tax Bands
     let grossTax = 0;
     for (const band of payeData.payeBands) {
       const upper = band.max ?? Infinity;
       if (taxableIncome > band.min) {
-        const taxableInBand = Math.min(taxableIncome, upper) - (band.min > 0 ? band.min - 1 : 0);
+        const taxableInBand =
+          Math.min(taxableIncome, upper) - (band.min > 0 ? band.min - 1 : 0);
         if (taxableInBand > 0) {
           grossTax += taxableInBand * (band.rate / 100);
         }
       }
     }
 
-    // 6. Personal relief KES 2,400
     const personalRelief = payeData.personalRelief || 2400;
     const netPaye = Math.max(0, grossTax - personalRelief);
-
-    // Total deductions & Net Salary
     const totalDeductions = netPaye + sha + housingLevy + totalNssf;
     const netSalary = Math.max(0, gross - totalDeductions);
+    const effectiveTaxRate =
+      gross > 0 ? Math.round((netPaye / gross) * 10000) / 100 : 0;
 
-    // Employer matching contributions
     const employerNssf = totalNssf;
     const employerHousing = housingLevy;
     const totalEmployerCost = gross + employerNssf + employerHousing;
@@ -183,6 +197,7 @@ export function PayeCalculator() {
       netPaye: netPaye * mult,
       totalDeductions: totalDeductions * mult,
       netSalary: netSalary * mult,
+      effectiveTaxRate,
       employerNssf: employerNssf * mult,
       employerHousing: employerHousing * mult,
       totalEmployerCost: totalEmployerCost * mult,
@@ -192,149 +207,384 @@ export function PayeCalculator() {
   return (
     <View style={styles.toolWrap}>
       {/* Monthly / Annual Toggle */}
-      <View style={{ flexDirection: "row", backgroundColor: theme.bgCard, borderRadius: 10, padding: 3, borderWidth: 1, borderColor: theme.border, alignSelf: "flex-end" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          backgroundColor: theme.bgCard,
+          borderRadius: 10,
+          padding: 3,
+          borderWidth: 1,
+          borderColor: theme.border,
+          alignSelf: "flex-end",
+        }}
+      >
         <Pressable
           onPress={() => setShowAnnual(false)}
-          style={{ paddingHorizontal: 12, paddingVertical: 5, borderRadius: 8, backgroundColor: !showAnnual ? theme.gold : "transparent" }}
+          style={{
+            paddingHorizontal: 14,
+            paddingVertical: 6,
+            borderRadius: 8,
+            backgroundColor: !showAnnual ? theme.gold : "transparent",
+          }}
         >
-          <Text style={{ fontSize: 11, fontWeight: "800", color: !showAnnual ? theme.kenyaBlack : theme.textSecondary }}>
+          <Text
+            style={{
+              fontSize: 12,
+              fontWeight: "800",
+              color: !showAnnual ? theme.kenyaBlack : theme.textSecondary,
+            }}
+          >
             Monthly
           </Text>
         </Pressable>
         <Pressable
           onPress={() => setShowAnnual(true)}
-          style={{ paddingHorizontal: 12, paddingVertical: 5, borderRadius: 8, backgroundColor: showAnnual ? theme.gold : "transparent" }}
+          style={{
+            paddingHorizontal: 14,
+            paddingVertical: 6,
+            borderRadius: 8,
+            backgroundColor: showAnnual ? theme.gold : "transparent",
+          }}
         >
-          <Text style={{ fontSize: 11, fontWeight: "800", color: showAnnual ? theme.kenyaBlack : theme.textSecondary }}>
+          <Text
+            style={{
+              fontSize: 12,
+              fontWeight: "800",
+              color: showAnnual ? theme.kenyaBlack : theme.textSecondary,
+            }}
+          >
             Annual (12 Mos)
           </Text>
         </Pressable>
       </View>
 
       <KESInput
-        label="Gross Monthly Salary"
+        label="Monthly Gross Salary (KES)"
         value={salaryText}
         onChangeText={setSalaryText}
       />
 
-      <StatCard
-        label={`TAKE-HOME NET SALARY (${showAnnual ? "ANNUAL" : "MONTHLY"})`}
-        value={`KES ${Math.round(calc.netSalary).toLocaleString()}`}
-        highlight
-        subtext={`Total deductions: KES ${Math.round(calc.totalDeductions).toLocaleString()}`}
-      />
-
-      <Text style={styles.subHeading}>Itemized Statutory Deductions (KRA Bands)</Text>
-      <View style={styles.card}>
-        <Row label="Gross Salary" value={`KES ${Math.round(calc.gross).toLocaleString()}`} />
-        <Row label="NSSF Pension (Tier I & II)" value={`- KES ${Math.round(calc.totalNssf).toLocaleString()}`} isDeduction />
-        <Row label="Taxable Income (after relief)" value={`KES ${Math.round(calc.taxableIncome).toLocaleString()}`} />
-        <Row label="Personal Tax Relief" value={`- KES ${Math.round(calc.personalRelief).toLocaleString()}`} isDeduction />
-        <Row label="Net PAYE Income Tax" value={`- KES ${Math.round(calc.netPaye).toLocaleString()}`} isDeduction />
-        <Row label="Social Health Auth. (SHA 2.75%)" value={`- KES ${Math.round(calc.sha).toLocaleString()}`} isDeduction />
-        <Row label="Affordable Housing Levy (1.5%)" value={`- KES ${Math.round(calc.housingLevy).toLocaleString()}`} isDeduction />
-        <Row label="Total Statutory Deductions" value={`KES ${Math.round(calc.totalDeductions).toLocaleString()}`} isTotal />
-      </View>
-
-      {/* Employer Contributions Card */}
-      <Text style={styles.subHeading}>Employer Statutory Contributions</Text>
-      <View style={styles.card}>
-        <Row label="Employer NSSF Match" value={`KES ${Math.round(calc.employerNssf).toLocaleString()}`} />
-        <Row label="Employer Housing Levy Match (1.5%)" value={`KES ${Math.round(calc.employerHousing).toLocaleString()}`} />
-        <Row label="Total Employer Cost of Employment" value={`KES ${Math.round(calc.totalEmployerCost).toLocaleString()}`} isTotal />
-      </View>
-    </View>
-  );
-}
-
-/** 2. M-Pesa Fee Calculator */
-export function MpesaCalculator() {
-  const { theme, styles } = useDynamicStyles(createStyles);
-  const [amountText, setAmountText] = useState("3500");
-  const [tab, setTab] = useState<"sendRegistered" | "sendUnregistered" | "withdrawAgent" | "withdrawATM" | "buyGoods" | "payBill">("sendRegistered");
-  const amount = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
-
-  const tariff = useMemo(() => {
-    const txTypes = (mpesaData as any).transactionTypes || {};
-    const list = txTypes[tab]?.bands || (mpesaData as any)[tab] || [];
-    const match = list.find((item: any) => amount >= item.min && amount <= (item.max ?? Infinity));
-    const fee = match ? match.fee : 0;
-    const totalCost = amount + fee;
-
-    return {
-      fee,
-      totalCost,
-      tier: match ? `KES ${match.min.toLocaleString()} – ${match.max?.toLocaleString() ?? "Max"}` : "Out of Band Range",
-    };
-  }, [amount, tab]);
-
-  return (
-    <View style={styles.toolWrap}>
-      <KESInput
-        label="Transaction Amount"
-        value={amountText}
-        onChangeText={setAmountText}
-      />
-
-      {/* Type Selector Tabs */}
+      {/* Quick Salary Presets */}
       <View style={styles.pillSelector}>
-        {[
-          { id: "sendRegistered", label: "Send Money" },
-          { id: "withdrawAgent", label: "Agent Withdraw" },
-          { id: "withdrawATM", label: "ATM Withdraw" },
-          { id: "buyGoods", label: "Buy Goods" },
-        ].map((item) => (
+        {[30000, 50000, 80000, 100000, 200000, 500000].map((amt) => (
           <Pressable
-            key={item.id}
-            onPress={() => setTab(item.id as any)}
-            style={[styles.pillBtn, tab === item.id && styles.pillBtnActive]}
+            key={amt}
+            onPress={() => setSalaryText(String(amt))}
+            style={[
+              styles.pillBtn,
+              salary === amt && styles.pillBtnActive,
+            ]}
           >
             <Text
               style={[
                 styles.pillBtnText,
-                tab === item.id && styles.pillBtnTextActive,
+                salary === amt && styles.pillBtnTextActive,
               ]}
             >
-              {item.label}
+              {amt >= 1000 ? `KES ${amt / 1000}K` : amt}
             </Text>
           </Pressable>
         ))}
       </View>
 
       <StatCard
-        label="M-PESA TRANSACTION CHARGE"
-        value={tariff.fee === 0 ? "FREE (KES 0)" : `KES ${tariff.fee.toLocaleString()}`}
+        label={`NET TAKE-HOME PAY (${showAnnual ? "ANNUAL" : "MONTHLY"})`}
+        value={`KES ${Math.round(calc.netSalary).toLocaleString()}`}
         highlight
-        subtext={`Total deduction from M-Pesa: KES ${tariff.totalCost.toLocaleString()}`}
+        subtext={`Effective PAYE rate: ${calc.effectiveTaxRate}% · Total deductions: KES ${Math.round(calc.totalDeductions).toLocaleString()}`}
       />
 
+      <Text style={styles.subHeading}>Deductions Breakdown</Text>
       <View style={styles.card}>
-        <Row label="Transaction Amount" value={`KES ${amount.toLocaleString()}`} />
-        <Row label="Safaricom Tariff Charge" value={`KES ${tariff.fee.toLocaleString()}`} isDeduction={tariff.fee > 0} />
-        <Row label="Tariff Tier Band" value={tariff.tier} />
-        <Row label="Total Withdrawn / Sent" value={`KES ${tariff.totalCost.toLocaleString()}`} isTotal />
+        <Row
+          label="Gross Salary"
+          value={`KES ${Math.round(calc.gross).toLocaleString()}`}
+        />
+        <Row
+          label="PAYE (Income Tax)"
+          value={`− KES ${Math.round(calc.netPaye).toLocaleString()}`}
+          isDeduction
+        />
+        <Row
+          label="SHA / SHIF (2.75%)"
+          value={`− KES ${Math.round(calc.sha).toLocaleString()}`}
+          isDeduction
+        />
+        <Row
+          label="NSSF (Employee Tier I & II)"
+          value={`− KES ${Math.round(calc.totalNssf).toLocaleString()}`}
+          isDeduction
+        />
+        <Row
+          label="Housing Levy (1.5%)"
+          value={`− KES ${Math.round(calc.housingLevy).toLocaleString()}`}
+          isDeduction
+        />
+        <Row
+          label="Taxable Income (after pre-tax deductions)"
+          value={`KES ${Math.round(calc.taxableIncome).toLocaleString()}`}
+        />
+        <Row
+          label="Personal Tax Relief Applied"
+          value={`KES ${Math.round(calc.personalRelief).toLocaleString()}`}
+          isPositive
+        />
+        <Row
+          label="Total Deductions"
+          value={`− KES ${Math.round(calc.totalDeductions).toLocaleString()}`}
+          isDeduction
+        />
+        <Row
+          label="Net Take-Home Pay"
+          value={`KES ${Math.round(calc.netSalary).toLocaleString()}`}
+          isTotal
+        />
       </View>
 
-      {/* Savings Tip */}
-      <View style={styles.tipCard}>
-        <Ionicons name="bulb-outline" size={18} color={theme.gold} />
-        <Text style={styles.tipText}>
-          Tip: Sending KES 100 or less to any M-Pesa customer is completely free.
-        </Text>
+      {/* Employer Additional Costs */}
+      <Text style={styles.subHeading}>Employer Additional Costs</Text>
+      <View style={styles.card}>
+        <Row
+          label="NSSF (Employer Match)"
+          value={`KES ${Math.round(calc.employerNssf).toLocaleString()}`}
+        />
+        <Row
+          label="Housing Levy (Employer 1.5%)"
+          value={`KES ${Math.round(calc.employerHousing).toLocaleString()}`}
+        />
+        <Row
+          label="Total Cost to Employer"
+          value={`KES ${Math.round(calc.totalEmployerCost).toLocaleString()}`}
+          isTotal
+        />
+      </View>
+
+      {/* PAYE Tax Bands Reference Table (mirrors web paye-calculator/page.tsx) */}
+      <Text style={styles.subHeading}>
+        PAYE Tax Bands — FY {payeData.fiscalYear}
+      </Text>
+      <View style={styles.card}>
+        {payeData.payeBands.map((band, i) => (
+          <Row
+            key={i}
+            label={`KES ${band.min.toLocaleString()} – ${
+              band.max ? `KES ${band.max.toLocaleString()}` : "Above"
+            } (${band.label})`}
+            value={`${band.rate}%`}
+          />
+        ))}
+        <Row
+          label="Personal Relief"
+          value={`KES ${payeData.personalRelief.toLocaleString()}/month`}
+          isPositive
+        />
+        <Row
+          label="Insurance Relief"
+          value={`${payeData.insuranceRelief.rate}% (Max KES ${payeData.insuranceRelief.maxPerMonth.toLocaleString()}/mo)`}
+        />
+        <Row
+          label="Disability Tax Exemption"
+          value={`Up to KES ${payeData.disabilityExemption.maxPerMonth.toLocaleString()}/mo`}
+          isTotal
+        />
       </View>
     </View>
   );
 }
 
-/** 3. KPLC Token Calculator */
+/** 2. M-Pesa Fee Calculator (mirrors kenyahub/src/app/tools/mpesa-fee-calculator/page.tsx) */
+type MpesaTxType =
+  | "sendRegistered"
+  | "sendUnregistered"
+  | "withdrawAgent"
+  | "withdrawATM"
+  | "buyGoods"
+  | "payBill";
+
+function calcMpesaFee(amount: number, type: MpesaTxType): number | null {
+  const bands = (mpesaData.transactionTypes as any)[type]?.bands || [];
+  for (const b of bands) {
+    if (amount >= b.min && amount <= b.max) return b.fee;
+  }
+  return null;
+}
+
+function findMpesaSavingTip(amount: number, type: MpesaTxType): string | null {
+  const bands = (mpesaData.transactionTypes as any)[type]?.bands || [];
+  for (let i = 0; i < bands.length - 1; i++) {
+    const currentBand = bands[i];
+    const nextBand = bands[i + 1];
+    if (amount >= nextBand.min && amount <= nextBand.min + 100) {
+      if (currentBand.fee < nextBand.fee) {
+        return `Sending KES ${currentBand.max.toLocaleString()} instead of KES ${amount.toLocaleString()} would save you KES ${(
+          nextBand.fee - currentBand.fee
+        ).toLocaleString()} in fees (same band boundary).`;
+      }
+    }
+  }
+  return null;
+}
+
+export function MpesaCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
+  const [amountText, setAmountText] = useState("1000");
+  const [tab, setTab] = useState<MpesaTxType>("sendRegistered");
+  const amount = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
+
+  const txTypes = mpesaData.transactionTypes as Record<
+    MpesaTxType,
+    { label: string; bands: { min: number; max: number; fee: number; note?: string }[] }
+  >;
+
+  const results = useMemo(() => {
+    const fee = calcMpesaFee(amount, tab);
+    const savingTip = findMpesaSavingTip(amount, tab);
+    const totalCost = fee !== null ? amount + fee : null;
+    const allFees = (Object.entries(txTypes) as [MpesaTxType, any][]).map(
+      ([key, val]) => ({
+        key,
+        label: val.label,
+        fee: calcMpesaFee(amount, key),
+      })
+    );
+    return { fee, savingTip, totalCost, allFees };
+  }, [amount, tab, txTypes]);
+
+  return (
+    <View style={styles.toolWrap}>
+      <KESInput
+        label="Transaction Amount (KES)"
+        value={amountText}
+        onChangeText={setAmountText}
+        subtext={`Max single transaction: KES ${mpesaData.limits.maxSingleTransaction.toLocaleString()}`}
+      />
+
+      {/* All 6 Transaction Type Selector Pills */}
+      <Text style={styles.inputLabel}>Transaction Type</Text>
+      <View style={styles.pillSelector}>
+        {(Object.entries(txTypes) as [MpesaTxType, any][]).map(([id, info]) => (
+          <Pressable
+            key={id}
+            onPress={() => setTab(id)}
+            style={[styles.pillBtn, tab === id && styles.pillBtnActive]}
+          >
+            <Text
+              style={[
+                styles.pillBtnText,
+                tab === id && styles.pillBtnTextActive,
+              ]}
+            >
+              {info.label}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <StatCard
+        label="M-PESA TRANSACTION FEE"
+        value={
+          results.fee === null
+            ? "Out of Range"
+            : results.fee === 0
+            ? "FREE (KES 0)"
+            : `KES ${results.fee.toLocaleString()}`
+        }
+        highlight
+        subtext={
+          results.totalCost !== null
+            ? `Amount: KES ${amount.toLocaleString()} · Total Cost: KES ${results.totalCost.toLocaleString()}`
+            : `Check minimum/maximum band limits below`
+        }
+      />
+
+      {/* Smart Saving Tip */}
+      {results.savingTip && (
+        <View style={styles.tipCard}>
+          <Ionicons name="bulb-outline" size={18} color={theme.gold} />
+          <Text style={styles.tipText}>{results.savingTip}</Text>
+        </View>
+      )}
+
+      {/* Fee Comparison Across All 6 Transaction Types */}
+      <Text style={styles.subHeading}>
+        Fee Comparison for KES {amount.toLocaleString()}
+      </Text>
+      <View style={styles.card}>
+        {results.allFees.map((item) => (
+          <Row
+            key={item.key}
+            label={`${item.label}${item.key === tab ? " ← Selected" : ""}`}
+            value={
+              item.fee === null
+                ? "N/A"
+                : item.fee === 0
+                ? "FREE"
+                : `KES ${item.fee.toLocaleString()}`
+            }
+            isPositive={item.fee === 0}
+            isTotal={item.key === tab}
+          />
+        ))}
+      </View>
+
+      {/* Full M-Pesa Tariff Table for Selected Type */}
+      <Text style={styles.subHeading}>
+        Full M-Pesa Tariff — {txTypes[tab].label}
+      </Text>
+      <View style={styles.card}>
+        {txTypes[tab].bands.map((band, idx) => {
+          const isActive = amount >= band.min && amount <= band.max;
+          return (
+            <Row
+              key={idx}
+              label={`KES ${band.min.toLocaleString()} – KES ${band.max.toLocaleString()}${
+                isActive ? " ← Your amount" : ""
+              }`}
+              value={band.fee === 0 ? "FREE" : `KES ${band.fee.toLocaleString()}`}
+              isPositive={band.fee === 0}
+              isTotal={isActive}
+            />
+          );
+        })}
+      </View>
+
+      {/* M-Pesa Transaction Limits */}
+      <Text style={styles.subHeading}>M-Pesa Transaction Limits</Text>
+      <View style={styles.card}>
+        <Row
+          label="Maximum Account Balance"
+          value={`KES ${mpesaData.limits.maxBalance.toLocaleString()}`}
+        />
+        <Row
+          label="Maximum Daily Transaction Total"
+          value={`KES ${mpesaData.limits.maxTransactionPerDay.toLocaleString()}`}
+        />
+        <Row
+          label="Maximum Single Transaction"
+          value={`KES ${mpesaData.limits.maxSingleTransaction.toLocaleString()}`}
+        />
+        <Row
+          label="Minimum Agent Withdrawal"
+          value={`KES ${mpesaData.limits.minWithdrawAgent.toLocaleString()}`}
+        />
+        <Row
+          label="Minimum ATM Withdrawal"
+          value={`KES ${mpesaData.limits.minWithdrawATM.toLocaleString()}`}
+        />
+        <Row label="Receiving Money" value="Always FREE" isPositive isTotal />
+      </View>
+    </View>
+  );
+}
+
+/** 3. KPLC Token Calculator (mirrors kenyahub/src/app/tools/kplc-token-calculator/page.tsx) */
 export function KplcTokenCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [amountText, setAmountText] = useState("1000");
-  const [firstPurchaseOfMonth, setFirstPurchaseOfMonth] = useState(false);
   const amountPaid = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
 
   const result = useMemo(() => {
-    const fixedCharge = firstPurchaseOfMonth ? (kplcData.fixedCharge || 150) : 0;
+    const fixedCharge = kplcData.fixedCharge ?? 0;
     const vatRate = (kplcData.levies.vat || 16) / 100;
     const fixedChargeWithVat = fixedCharge * (1 + vatRate);
 
@@ -350,9 +600,14 @@ export function KplcTokenCalculator() {
 
     let remainingAmount = amountForUnits;
     let totalUnits = 0;
-    const breakdown: { band: string; units: number; rate: number; cost: number }[] = [];
+    const breakdown: {
+      band: string;
+      units: number;
+      rate: number;
+      cost: number;
+    }[] = [];
 
-    for (const band of (kplcData.energyBands || [])) {
+    for (const band of kplcData.energyBands || []) {
       if (remainingAmount <= 0) break;
       const bandMax = band.max ?? 100000;
       const bandMin = band.min;
@@ -379,157 +634,453 @@ export function KplcTokenCalculator() {
       }
     }
 
-    const totalEnergyCost = breakdown.reduce((sum, b) => sum + b.units * b.rate, 0);
+    const totalEnergyCost = breakdown.reduce(
+      (sum, b) => sum + b.units * b.rate,
+      0
+    );
     const totalLevies = totalUnits * levyPerUnit;
     const totalFCC = totalUnits * (fccPerUnit + ferfa);
-    const totalVAT = (totalEnergyCost + totalLevies + totalFCC) * vatRate + (fixedCharge * vatRate);
+    const totalVAT =
+      (totalEnergyCost + totalLevies + totalFCC) * vatRate +
+      fixedCharge * vatRate;
 
     return {
       totalUnits,
       fixedCharge,
       fixedChargeVat: Math.round(fixedCharge * vatRate * 100) / 100,
-      totalEnergyCost: Math.round(totalEnergyCost),
+      totalEnergyCost: Math.round(totalEnergyCost * 100) / 100,
       totalLevies: Math.round(totalLevies * 100) / 100,
       totalFCC: Math.round(totalFCC * 100) / 100,
       totalVAT: Math.round(totalVAT * 100) / 100,
       breakdown,
+      effectiveCostPerUnit:
+        totalUnits > 0 ? Math.round((amountPaid / totalUnits) * 100) / 100 : 0,
     };
-  }, [amountPaid, firstPurchaseOfMonth]);
+  }, [amountPaid]);
 
   return (
     <View style={styles.toolWrap}>
       <KESInput
-        label="Amount Paid for Tokens"
+        label="Amount to Purchase (KES)"
         value={amountText}
         onChangeText={setAmountText}
       />
 
-      {/* First Purchase of Month Checkbox */}
-      <Pressable
-        onPress={() => setFirstPurchaseOfMonth(!firstPurchaseOfMonth)}
-        style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 4 }}
-      >
-        <Ionicons
-          name={firstPurchaseOfMonth ? "checkbox" : "square-outline"}
-          size={20}
-          color={theme.gold}
-        />
-        <Text style={{ fontSize: 12, color: theme.textSecondary, fontWeight: "600" }}>
-          First token purchase this month (deducts KES 150 fixed fee + VAT)
-        </Text>
-      </Pressable>
+      <View style={styles.pillSelector}>
+        {[500, 1000, 2000, 3500, 5000, 10000].map((amt) => (
+          <Pressable
+            key={amt}
+            onPress={() => setAmountText(String(amt))}
+            style={[
+              styles.pillBtn,
+              amountPaid === amt && styles.pillBtnActive,
+            ]}
+          >
+            <Text
+              style={[
+                styles.pillBtnText,
+                amountPaid === amt && styles.pillBtnTextActive,
+              ]}
+            >
+              KES {amt.toLocaleString()}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
 
       <StatCard
-        label="TOTAL ELECTRICITY UNITS (kWh)"
-        value={`${result.totalUnits} Units`}
+        label="UNITS YOU WILL RECEIVE"
+        value={`${result.totalUnits.toLocaleString()} kWh`}
         highlight
-        subtext={`Exact units computed using official EPRA domestic tariff bands`}
+        subtext={
+          result.totalUnits > 0
+            ? `KES ${result.effectiveCostPerUnit.toFixed(2)} effective cost/unit · EPRA 2023–2026 Domestic Tariffs`
+            : "Enter an amount to calculate KPLC prepaid units"
+        }
       />
 
+      <Text style={styles.subHeading}>Where Your Money Goes</Text>
       <View style={styles.card}>
-        <Row label="Token Payment Amount" value={`KES ${amountPaid.toLocaleString()}`} />
-        {result.fixedCharge > 0 && (
-          <Row label="Monthly Standing Service Fee" value={`- KES ${result.fixedCharge.toLocaleString()}`} isDeduction />
-        )}
-        <Row label="Net Energy Charge" value={`KES ${result.totalEnergyCost.toLocaleString()}`} />
-        <Row label="Fuel Energy Cost (FCC & FERFA)" value={`KES ${result.totalFCC.toLocaleString()}`} />
-        <Row label="EPRA, WARMA & REP Levies" value={`KES ${result.totalLevies.toLocaleString()}`} />
-        <Row label="16% Value Added Tax (VAT)" value={`KES ${result.totalVAT.toLocaleString()}`} isDeduction />
-        <Row label="Total Units Received" value={`${result.totalUnits} kWh`} isTotal />
+        <Row
+          label="Fixed Standing Charge (Monthly)"
+          value={`KES ${result.fixedCharge.toFixed(2)}`}
+        />
+        <Row
+          label={`Energy Charges (${result.totalUnits} kWh)`}
+          value={`KES ${result.totalEnergyCost.toFixed(2)}`}
+        />
+        <Row
+          label="Levies (REP + EPRA + WARMA)"
+          value={`KES ${result.totalLevies.toFixed(2)}`}
+        />
+        <Row
+          label="Fuel Cost + Forex Adjustment (FCC + FERFA)"
+          value={`KES ${result.totalFCC.toFixed(2)}`}
+        />
+        <Row
+          label="16% Value Added Tax (VAT)"
+          value={`KES ${result.totalVAT.toFixed(2)}`}
+          isDeduction
+        />
+        <Row
+          label="Total Units Received"
+          value={`${result.totalUnits} kWh`}
+          isTotal
+        />
+      </View>
+
+      {result.breakdown.length > 0 && (
+        <>
+          <Text style={styles.subHeading}>Tariff Band Breakdown</Text>
+          <View style={styles.card}>
+            {result.breakdown.map((b, i) => (
+              <Row
+                key={i}
+                label={`${b.band} (${b.units} kWh)`}
+                value={`KES ${b.rate.toFixed(2)}/kWh`}
+              />
+            ))}
+          </View>
+        </>
+      )}
+
+      <Text style={styles.subHeading}>KPLC Domestic Tariff Bands</Text>
+      <View style={styles.card}>
+        {kplcData.energyBands.map((band, i) => (
+          <Row
+            key={i}
+            label={band.label}
+            value={`KES ${band.rate.toFixed(2)} / kWh`}
+          />
+        ))}
+        <Row
+          label="Fuel Cost Charge (FCC)"
+          value={`KES ${kplcData.fuelCostCharge.rate.toFixed(2)} / kWh`}
+        />
+        <Row
+          label="Forex Adjustment (FERFA)"
+          value={`KES ${kplcData.forexAdjustment.rate.toFixed(2)} / kWh`}
+        />
       </View>
     </View>
   );
 }
 
-/** 4. HELB Loan Calculator */
+/** 4. HELB Loan Calculator (mirrors kenyahub/src/app/tools/helb-calculator/page.tsx) */
 export function HelbCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
-  const [salaryText, setSalaryText] = useState("60000");
-  const salary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
+  const currentYear = 2026;
+  const [loanText, setLoanText] = useState("240000");
+  const [yearBorrowed, setYearBorrowed] = useState<number>(2018);
+  const [salaryText, setSalaryText] = useState("50000");
 
-  const monthlyDeduction = useMemo(() => {
-    if (salary <= 0) return 0;
-    // Statutory HELB deduction is min 1,500 or graduated ~10%
-    return Math.max(1500, Math.round(salary * 0.05));
-  }, [salary]);
+  const loanAmount = Math.max(0, Number(loanText.replace(/,/g, "")) || 0);
+  const grossSalary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
+
+  const results = useMemo(() => {
+    const yearsSinceBorrow = Math.max(0, currentYear - yearBorrowed);
+    const totalInterest = Math.round(
+      loanAmount * (helbData.interestRate / 100) * yearsSinceBorrow
+    );
+    const currentBalance = loanAmount + totalInterest;
+
+    const monthlyBySalary = Math.round(
+      grossSalary * (helbData.minimumSalaryPercent / 100)
+    );
+    const monthlyObligation = Math.max(
+      helbData.minimumMonthly,
+      monthlyBySalary
+    );
+
+    const monthsToRepay =
+      monthlyObligation > 0
+        ? Math.ceil(currentBalance / monthlyObligation)
+        : 0;
+    const yearsToRepay = Math.round((monthsToRepay / 12) * 10) / 10;
+    const completionYear = Math.min(
+      currentYear + Math.ceil(yearsToRepay),
+      currentYear + helbData.maxRepaymentYears
+    );
+    const latePenalty = Math.round(
+      currentBalance * (helbData.latePenaltyPercent / 100)
+    );
+
+    return {
+      loanAmount,
+      yearsSinceBorrow,
+      totalInterest,
+      currentBalance,
+      monthlyObligation,
+      monthsToRepay,
+      yearsToRepay,
+      completionYear,
+      latePenalty,
+    };
+  }, [loanAmount, yearBorrowed, grossSalary]);
+
+  const yearsList = useMemo(
+    () => Array.from({ length: 20 }, (_, i) => currentYear - i),
+    []
+  );
 
   return (
     <View style={styles.toolWrap}>
       <KESInput
-        label="Gross Monthly Salary"
+        label="Total Loan Amount Borrowed (KES)"
+        value={loanText}
+        onChangeText={setLoanText}
+        subtext="Sum of all HELB disbursements over your study period"
+      />
+
+      <Text style={styles.inputLabel}>Year First Borrowed ({yearBorrowed})</Text>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{ gap: 6, paddingBottom: 4 }}
+      >
+        {yearsList.map((yr) => (
+          <Pressable
+            key={yr}
+            onPress={() => setYearBorrowed(yr)}
+            style={[
+              styles.pillBtn,
+              yearBorrowed === yr && styles.pillBtnActive,
+            ]}
+          >
+            <Text
+              style={[
+                styles.pillBtnText,
+                yearBorrowed === yr && styles.pillBtnTextActive,
+              ]}
+            >
+              {yr}
+            </Text>
+          </Pressable>
+        ))}
+      </ScrollView>
+
+      <KESInput
+        label="Monthly Gross Salary (KES)"
         value={salaryText}
         onChangeText={setSalaryText}
+        subtext={`Statutory deduction is ${helbData.minimumSalaryPercent}% of gross salary or min KES ${helbData.minimumMonthly.toLocaleString()}`}
       />
 
       <StatCard
-        label="STATUTORY HELB DEDUCTION"
-        value={`KES ${monthlyDeduction.toLocaleString()} / mo`}
+        label="MONTHLY HELB REPAYMENT OBLIGATION"
+        value={`KES ${results.monthlyObligation.toLocaleString()} / mo`}
         highlight
-        subtext="4% per annum simple interest on outstanding balance"
+        subtext={`Repayment Period: ~${results.yearsToRepay} yrs (${results.monthsToRepay} mos) · Projected Completion: ${results.completionYear}`}
       />
 
+      <Text style={styles.subHeading}>Repayment Breakdown</Text>
       <View style={styles.card}>
-        <Row label="Gross Salary" value={`KES ${salary.toLocaleString()}`} />
-        <Row label="Monthly HELB Deduction" value={`KES ${monthlyDeduction.toLocaleString()}`} isDeduction />
-        <Row label="Annual Repayment Total" value={`KES ${(monthlyDeduction * 12).toLocaleString()}`} />
-        <Row label="Interest Rate" value="4% Simple Interest" />
-        <Row label="Grace Period" value="1 Year after completion" isTotal />
+        <Row
+          label="Original Loan Principal"
+          value={`KES ${results.loanAmount.toLocaleString()}`}
+        />
+        <Row
+          label={`Accrued Interest (${helbData.interestRate}% × ${results.yearsSinceBorrow} yrs)`}
+          value={`+ KES ${results.totalInterest.toLocaleString()}`}
+          isDeduction
+        />
+        <Row
+          label="Estimated Current Balance"
+          value={`KES ${results.currentBalance.toLocaleString()}`}
+          isTotal
+        />
+        <Row
+          label="Monthly Repayment"
+          value={`KES ${results.monthlyObligation.toLocaleString()}`}
+        />
+        <Row
+          label="Projected Completion Year"
+          value={`${results.completionYear}`}
+          isPositive
+        />
+        <Row
+          label={`Late Payment Penalty (${helbData.latePenaltyPercent}% if defaulted)`}
+          value={`+ KES ${results.latePenalty.toLocaleString()}`}
+          isDeduction
+        />
       </View>
     </View>
   );
 }
 
-/** 5. Housing Levy Calculator */
+/** 5. Housing Levy Calculator (mirrors kenyahub/src/app/tools/housing-levy-calculator/page.tsx) */
 export function HousingLevyCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
-  const [salaryText, setSalaryText] = useState("75000");
-  const salary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
+  const [salaryText, setSalaryText] = useState("100000");
+  const [showAnnual, setShowAnnual] = useState(false);
+  const gross = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
 
-  const employee = Math.round(salary * 0.015);
-  const employer = Math.round(salary * 0.015);
-  const totalMonthly = employee + employer;
+  const mult = showAnnual ? 12 : 1;
+  const employee = Math.round(gross * (housingData.employeeRate / 100) * mult);
+  const employer = Math.round(gross * (housingData.employerRate / 100) * mult);
+  const totalRemitted = employee + employer;
 
   return (
     <View style={styles.toolWrap}>
+      <View
+        style={{
+          flexDirection: "row",
+          backgroundColor: theme.bgCard,
+          borderRadius: 10,
+          padding: 3,
+          borderWidth: 1,
+          borderColor: theme.border,
+          alignSelf: "flex-end",
+        }}
+      >
+        <Pressable
+          onPress={() => setShowAnnual(false)}
+          style={{
+            paddingHorizontal: 14,
+            paddingVertical: 6,
+            borderRadius: 8,
+            backgroundColor: !showAnnual ? theme.gold : "transparent",
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 12,
+              fontWeight: "800",
+              color: !showAnnual ? theme.kenyaBlack : theme.textSecondary,
+            }}
+          >
+            Monthly
+          </Text>
+        </Pressable>
+        <Pressable
+          onPress={() => setShowAnnual(true)}
+          style={{
+            paddingHorizontal: 14,
+            paddingVertical: 6,
+            borderRadius: 8,
+            backgroundColor: showAnnual ? theme.gold : "transparent",
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 12,
+              fontWeight: "800",
+              color: showAnnual ? theme.kenyaBlack : theme.textSecondary,
+            }}
+          >
+            Annual
+          </Text>
+        </Pressable>
+      </View>
+
       <KESInput
-        label="Gross Monthly Salary"
+        label="Monthly Gross Salary (KES)"
         value={salaryText}
         onChangeText={setSalaryText}
       />
 
       <StatCard
-        label="MONTHLY EMPLOYEE LEVY (1.5%)"
+        label={`${showAnnual ? "ANNUAL" : "MONTHLY"} EMPLOYEE LEVY (1.5%)`}
         value={`KES ${employee.toLocaleString()}`}
         highlight
-        subtext={`Total with Employer Match: KES ${totalMonthly.toLocaleString()}`}
+        subtext={`Employer Match (1.5%): KES ${employer.toLocaleString()} · Total to Housing Fund: KES ${totalRemitted.toLocaleString()}`}
       />
 
+      <Text style={styles.subHeading}>Impact on Your Pay</Text>
       <View style={styles.card}>
-        <Row label="Employee Contribution (1.5%)" value={`KES ${employee.toLocaleString()}`} isDeduction />
-        <Row label="Employer Match (1.5%)" value={`KES ${employer.toLocaleString()}`} />
-        <Row label="Total Monthly Remitted" value={`KES ${totalMonthly.toLocaleString()}`} isTotal />
-        <Row label="Annual Contribution (12 mo)" value={`KES ${(totalMonthly * 12).toLocaleString()}`} />
+        <Row
+          label="Gross Salary"
+          value={`KES ${(gross * mult).toLocaleString()}`}
+        />
+        <Row
+          label={`Employee Levy (${housingData.employeeRate}%)`}
+          value={`− KES ${employee.toLocaleString()}`}
+          isDeduction
+        />
+        <Row
+          label="Pre-Tax Allowable Deduction (PAYE Relief)"
+          value={`+ KES ${employee.toLocaleString()}`}
+          isPositive
+        />
+        <Row
+          label={`Employer Levy (${housingData.employerRate}%)`}
+          value={`KES ${employer.toLocaleString()}`}
+        />
+        <Row
+          label="Total to Affordable Housing Fund (3.0%)"
+          value={`KES ${totalRemitted.toLocaleString()}`}
+          isTotal
+        />
       </View>
     </View>
   );
 }
 
-/** 6. Stamp Duty Calculator */
+/** 6. Stamp Duty Calculator (mirrors kenyahub/src/app/tools/stamp-duty-calculator/page.tsx) */
+function calcConveyancing(value: number) {
+  let totalFee = 0;
+  const breakdown: { band: string; amount: number }[] = [];
+  let remaining = value;
+
+  for (const band of stampData.conveyancingFees) {
+    if (remaining <= 0) break;
+    const bandMax = band.max ?? Infinity;
+    const bandMin = band.min;
+    const taxableInBand = Math.min(remaining, bandMax - bandMin + 1);
+    if (taxableInBand > 0) {
+      const fee = Math.round(taxableInBand * (band.rate / 100));
+      totalFee += fee;
+      breakdown.push({ band: band.label, amount: fee });
+    }
+    remaining -= taxableInBand;
+  }
+
+  const minFee = stampData.conveyancingFees[0]?.minimumFee ?? 0;
+  if (totalFee < minFee && value > 0) totalFee = minFee;
+
+  return { total: totalFee, breakdown };
+}
+
 export function StampDutyCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [valueText, setValueText] = useState("5000000");
   const [isUrban, setIsUrban] = useState(true);
+  const [isFirstTimeBuyer, setIsFirstTimeBuyer] = useState(false);
   const value = Math.max(0, Number(valueText.replace(/,/g, "")) || 0);
 
-  const rate = isUrban ? 4 : 2;
-  const stampDuty = Math.round((value * rate) / 100);
-  const registrationFee = 5000;
-  const total = stampDuty + registrationFee;
+  const results = useMemo(() => {
+    const rate = isFirstTimeBuyer
+      ? 0
+      : isUrban
+      ? stampData.stampDuty.urban
+      : stampData.stampDuty.rural;
+    const stampDuty = Math.round(value * (rate / 100));
+    const conveyancing = calcConveyancing(value);
+    const registrationFee = stampData.otherCosts.registrationFee;
+    const searchFee = stampData.otherCosts.searchFee;
+    const consent = stampData.otherCosts.consentToTransfer;
+    const total =
+      stampDuty + conveyancing.total + registrationFee + searchFee + consent;
+    const percentOfValue =
+      value > 0 ? Math.round((total / value) * 10000) / 100 : 0;
+
+    return {
+      rate,
+      stampDuty,
+      conveyancing: conveyancing.total,
+      conveyancingBreakdown: conveyancing.breakdown,
+      registrationFee,
+      searchFee,
+      consent,
+      total,
+      percentOfValue,
+    };
+  }, [value, isUrban, isFirstTimeBuyer]);
 
   return (
     <View style={styles.toolWrap}>
       <KESInput
-        label="Property Purchase Price / Value"
+        label="Property Value (KES)"
         value={valueText}
         onChangeText={setValueText}
       />
@@ -539,7 +1090,9 @@ export function StampDutyCalculator() {
           onPress={() => setIsUrban(true)}
           style={[styles.pillBtn, isUrban && styles.pillBtnActive]}
         >
-          <Text style={[styles.pillBtnText, isUrban && styles.pillBtnTextActive]}>
+          <Text
+            style={[styles.pillBtnText, isUrban && styles.pillBtnTextActive]}
+          >
             Urban / Municipality (4%)
           </Text>
         </Pressable>
@@ -547,118 +1100,388 @@ export function StampDutyCalculator() {
           onPress={() => setIsUrban(false)}
           style={[styles.pillBtn, !isUrban && styles.pillBtnActive]}
         >
-          <Text style={[styles.pillBtnText, !isUrban && styles.pillBtnTextActive]}>
+          <Text
+            style={[styles.pillBtnText, !isUrban && styles.pillBtnTextActive]}
+          >
             Rural Land (2%)
           </Text>
         </Pressable>
       </View>
 
+      {/* First-Time Buyer Exemption Toggle */}
+      <Pressable
+        onPress={() => setIsFirstTimeBuyer(!isFirstTimeBuyer)}
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          gap: 8,
+          paddingVertical: 6,
+        }}
+      >
+        <Ionicons
+          name={isFirstTimeBuyer ? "checkbox" : "square-outline"}
+          size={20}
+          color={theme.gold}
+        />
+        <Text
+          style={{
+            fontSize: 13,
+            color: theme.textPrimary,
+            fontWeight: "600",
+          }}
+        >
+          First-time home buyer under Affordable Housing scheme (AHF Stamp Duty Exempt)
+        </Text>
+      </Pressable>
+
       <StatCard
-        label="STAMP DUTY PAYABLE"
-        value={`KES ${stampDuty.toLocaleString()}`}
+        label="TOTAL PROPERTY TRANSFER COST"
+        value={`KES ${results.total.toLocaleString()}`}
         highlight
-        subtext={`Rate applied: ${rate}% of property valuation`}
+        subtext={`${results.percentOfValue}% of property value · Stamp Duty: KES ${results.stampDuty.toLocaleString()}`}
       />
 
+      <Text style={styles.subHeading}>Cost Breakdown</Text>
       <View style={styles.card}>
-        <Row label="Declared Property Value" value={`KES ${value.toLocaleString()}`} />
-        <Row label={`Stamp Duty (${rate}%)`} value={`KES ${stampDuty.toLocaleString()}`} />
-        <Row label="Land Registry Filing Fee" value="KES 5,000" />
-        <Row label="Official Search Fee" value="KES 520" />
-        <Row label="Total Statutory Transfer Cost" value={`KES ${(total + 520).toLocaleString()}`} isTotal />
+        <Row
+          label="Declared Property Value"
+          value={`KES ${value.toLocaleString()}`}
+        />
+        <Row
+          label={`Stamp Duty (${results.rate}%)${
+            isFirstTimeBuyer ? " — AHF EXEMPT" : ""
+          }`}
+          value={`KES ${results.stampDuty.toLocaleString()}`}
+          isPositive={isFirstTimeBuyer}
+        />
+        <Row
+          label="LSK Conveyancing Legal Fees"
+          value={`KES ${results.conveyancing.toLocaleString()}`}
+        />
+        <Row
+          label="Land Registry Registration Fee"
+          value={`KES ${results.registrationFee.toLocaleString()}`}
+        />
+        <Row
+          label="Official Land Search Fee"
+          value={`KES ${results.searchFee.toLocaleString()}`}
+        />
+        <Row
+          label="Consent to Transfer Fee"
+          value={`KES ${results.consent.toLocaleString()}`}
+        />
+        <Row
+          label="Total Transfer Cost"
+          value={`KES ${results.total.toLocaleString()}`}
+          isTotal
+        />
       </View>
     </View>
   );
 }
 
-/** 7. Vehicle Insurance Calculator */
+/** 7. Vehicle Insurance Calculator (mirrors kenyahub/src/app/tools/vehicle-insurance-calculator/page.tsx) */
 export function VehicleInsuranceCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
+  const [vehicleClass, setVehicleClass] = useState("private");
   const [valText, setValText] = useState("1500000");
   const value = Math.max(0, Number(valText.replace(/,/g, "")) || 0);
 
-  const comprehensiveRate = 0.05; // 5%
-  const comprehensive = Math.max(35000, Math.round(value * comprehensiveRate));
-  const thirdParty = 7500;
+  const selectedClass = useMemo(
+    () =>
+      insuranceData.vehicleClasses.find((c) => c.id === vehicleClass) ||
+      insuranceData.vehicleClasses[0],
+    [vehicleClass]
+  );
+
+  const results = useMemo(() => {
+    const thirdPartyMin = selectedClass.thirdParty.minimumPremium;
+    const compRateMin = selectedClass.comprehensive.rateMin;
+    const compRateMax = selectedClass.comprehensive.rateMax;
+    const compMin = Math.max(
+      selectedClass.comprehensive.minimumPremium,
+      Math.round(value * (compRateMin / 100))
+    );
+    const compMax = Math.max(
+      selectedClass.comprehensive.minimumPremium,
+      Math.round(value * (compRateMax / 100))
+    );
+    return {
+      thirdPartyMin,
+      compMin,
+      compMax,
+      compRateMin,
+      compRateMax,
+    };
+  }, [selectedClass, value]);
 
   return (
     <View style={styles.toolWrap}>
+      <Text style={styles.inputLabel}>Vehicle Class</Text>
+      <View style={styles.pillSelector}>
+        {insuranceData.vehicleClasses.map((vc) => (
+          <Pressable
+            key={vc.id}
+            onPress={() => setVehicleClass(vc.id)}
+            style={[
+              styles.pillBtn,
+              vehicleClass === vc.id && styles.pillBtnActive,
+            ]}
+          >
+            <Text
+              style={[
+                styles.pillBtnText,
+                vehicleClass === vc.id && styles.pillBtnTextActive,
+              ]}
+            >
+              {vc.name}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+      <Text style={styles.inputHint}>{selectedClass.description}</Text>
+
       <KESInput
-        label="Vehicle Market Value"
+        label="Vehicle Market Value (KES) — for Comprehensive Quote"
         value={valText}
         onChangeText={setValText}
       />
 
       <StatCard
-        label="COMPREHENSIVE PREMIUM (ESTIMATED)"
-        value={`KES ${comprehensive.toLocaleString()}`}
+        label="COMPREHENSIVE ANNUAL PREMIUM (ESTIMATE)"
+        value={`KES ${results.compMin.toLocaleString()} – ${results.compMax.toLocaleString()}`}
         highlight
-        subtext="Covers own damage, theft, fire, third party liability"
+        subtext={`${results.compRateMin}%–${results.compRateMax}% of value · Third Party Minimum: KES ${results.thirdPartyMin.toLocaleString()}/yr`}
       />
 
+      <Text style={styles.subHeading}>Coverage Comparison</Text>
       <View style={styles.card}>
-        <Row label="Vehicle Valuation" value={`KES ${value.toLocaleString()}`} />
-        <Row label="Comprehensive Annual Rate" value="5.0% (approx 4.0% – 6.0%)" />
-        <Row label="Comprehensive Annual Premium" value={`KES ${comprehensive.toLocaleString()}`} isTotal />
-        <Row label="Third Party Only (TPO) Legal Minimum" value={`KES ${thirdParty.toLocaleString()}`} />
-        <Row label="Training Levy & PCF" value="Included in premium" />
+        <Row
+          label="Third Party Only (Minimum Legal)"
+          value={`KES ${results.thirdPartyMin.toLocaleString()} / yr`}
+          isPositive
+        />
+        <Row
+          label="Comprehensive Estimate Range"
+          value={`KES ${results.compMin.toLocaleString()} – ${results.compMax.toLocaleString()}`}
+          isTotal
+        />
+        <Row label="Third party injury / death" value="✓ Both TPO & Comp." />
+        <Row label="Third party property damage" value="✓ Both TPO & Comp." />
+        <Row label="Own vehicle accident damage" value="✓ Comprehensive Only" />
+        <Row label="Theft & fire protection" value="✓ Comprehensive Only" />
+        <Row label="Windscreen cover" value="✓ Comprehensive Only" />
+      </View>
+
+      <Text style={styles.subHeading}>Optional Add-On Covers</Text>
+      <View style={styles.card}>
+        {insuranceData.additionalCovers.map((cover, idx) => (
+          <View
+            key={idx}
+            style={{
+              paddingVertical: 8,
+              borderBottomWidth:
+                idx === insuranceData.additionalCovers.length - 1 ? 0 : 1,
+              borderBottomColor: theme.border,
+            }}
+          >
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 13,
+                  fontWeight: "700",
+                  color: theme.textPrimary,
+                }}
+              >
+                {cover.name}
+              </Text>
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontWeight: "700",
+                  color: theme.gold,
+                }}
+              >
+                {cover.premium}
+              </Text>
+            </View>
+            <Text
+              style={{
+                fontSize: 11.5,
+                color: theme.textSecondary,
+                marginTop: 2,
+              }}
+            >
+              {cover.description}
+            </Text>
+          </View>
+        ))}
       </View>
     </View>
   );
 }
 
-/** 8. Water Bill Calculator */
+/** 8. Water Bill Calculator (mirrors kenyahub/src/app/tools/water-bill-calculator/page.tsx) */
 export function WaterBillCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
+  const [utilityId, setUtilityId] = useState("ncwsc");
   const [unitsText, setUnitsText] = useState("15");
-  const units = Math.max(0, Number(unitsText) || 0);
+  const consumption = Math.max(0, Number(unitsText) || 0);
 
   const calc = useMemo(() => {
-    // Nairobi NCWSC tiered
-    let waterCost = 0;
-    if (units <= 6) {
-      waterCost = units * 3.18;
-    } else if (units <= 20) {
-      waterCost = 6 * 3.18 + (units - 6) * 47;
-    } else {
-      waterCost = 6 * 3.18 + 14 * 47 + (units - 20) * 55;
+    const utility =
+      waterData.utilities.find((u) => u.id === utilityId) ||
+      waterData.utilities[0];
+    let waterCharge = 0;
+    const breakdown: {
+      band: string;
+      units: number;
+      rate: number;
+      amount: number;
+    }[] = [];
+    let remaining = consumption;
+
+    for (const band of utility.bands) {
+      if (remaining <= 0) break;
+      const bandMax = band.max ?? Infinity;
+      const bandSize =
+        band.max !== null
+          ? bandMax - (band.min === 0 ? 0 : band.min - 1)
+          : Infinity;
+      const unitsInBand = Math.min(remaining, bandSize);
+      const amount = Math.round(unitsInBand * band.rate);
+      waterCharge += amount;
+      breakdown.push({
+        band: band.label,
+        units: unitsInBand,
+        rate: band.rate,
+        amount,
+      });
+      remaining -= unitsInBand;
     }
-    const sewerage = waterCost * 0.75;
-    const meterRent = 100;
-    const total = waterCost + sewerage + meterRent;
+
+    const sewerageCharge = Math.round(waterCharge * utility.sewerageRate);
+    const meterRent = utility.meterRent;
+    const total = waterCharge + sewerageCharge + meterRent;
 
     return {
-      waterCost: Math.round(waterCost),
-      sewerage: Math.round(sewerage),
+      utility,
+      waterCharge,
+      sewerageCharge,
       meterRent,
-      total: Math.round(total),
+      total,
+      breakdown,
     };
-  }, [units]);
+  }, [utilityId, consumption]);
 
   return (
     <View style={styles.toolWrap}>
+      <Text style={styles.inputLabel}>Select Water Utility</Text>
+      <View style={styles.pillSelector}>
+        {waterData.utilities.map((u) => (
+          <Pressable
+            key={u.id}
+            onPress={() => setUtilityId(u.id)}
+            style={[
+              styles.pillBtn,
+              utilityId === u.id && styles.pillBtnActive,
+            ]}
+          >
+            <Text
+              style={[
+                styles.pillBtnText,
+                utilityId === u.id && styles.pillBtnTextActive,
+              ]}
+            >
+              {u.city}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
       <View style={styles.inputGroup}>
-        <Text style={styles.inputLabel}>Water Consumed (Cubic Meters / m³)</Text>
+        <Text style={styles.inputLabel}>
+          Monthly Water Consumption (Cubic Meters / m³)
+        </Text>
         <TextInput
           keyboardType="numeric"
           value={unitsText}
           onChangeText={setUnitsText}
-          style={[styles.textInput, { borderWidth: 1, borderColor: theme.border, borderRadius: 12, paddingHorizontal: 14 }]}
+          style={[
+            styles.textInput,
+            {
+              backgroundColor: theme.bgCard,
+              borderWidth: 1,
+              borderColor: theme.border,
+              borderRadius: 12,
+            },
+          ]}
         />
       </View>
 
+      <View style={styles.pillSelector}>
+        {[6, 10, 15, 25, 40, 60].map((m3) => (
+          <Pressable
+            key={m3}
+            onPress={() => setUnitsText(String(m3))}
+            style={[
+              styles.pillBtn,
+              consumption === m3 && styles.pillBtnActive,
+            ]}
+          >
+            <Text
+              style={[
+                styles.pillBtnText,
+                consumption === m3 && styles.pillBtnTextActive,
+              ]}
+            >
+              {m3} m³
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
       <StatCard
-        label="TOTAL ESTIMATED WATER BILL"
+        label="ESTIMATED MONTHLY WATER BILL"
         value={`KES ${calc.total.toLocaleString()}`}
         highlight
-        subtext="Nairobi City Water & Sewerage Company (NCWSC) Rates"
+        subtext={`${calc.utility.name} · ${consumption} m³ consumed`}
       />
 
+      <Text style={styles.subHeading}>Bill Breakdown</Text>
       <View style={styles.card}>
-        <Row label={`Water Consumption (${units} m³)`} value={`KES ${calc.waterCost.toLocaleString()}`} />
-        <Row label="Sewerage Charge (75% of water)" value={`KES ${calc.sewerage.toLocaleString()}`} />
-        <Row label="Monthly Meter Rent" value={`KES ${calc.meterRent.toLocaleString()}`} />
-        <Row label="Total Payable" value={`KES ${calc.total.toLocaleString()}`} isTotal />
+        {calc.breakdown.map((b, i) => (
+          <Row
+            key={i}
+            label={`${b.band} (${b.units} m³ × KES ${b.rate}/m³)`}
+            value={`KES ${b.amount.toLocaleString()}`}
+          />
+        ))}
+        <Row
+          label="Water Consumption Charge"
+          value={`KES ${calc.waterCharge.toLocaleString()}`}
+        />
+        <Row
+          label={`Sewerage Charge (${Math.round(
+            calc.utility.sewerageRate * 100
+          )}%)`}
+          value={`KES ${calc.sewerageCharge.toLocaleString()}`}
+        />
+        <Row
+          label="Monthly Meter Rent"
+          value={`KES ${calc.meterRent.toLocaleString()}`}
+        />
+        <Row
+          label="Total Monthly Bill"
+          value={`KES ${calc.total.toLocaleString()}`}
+          isTotal
+        />
       </View>
     </View>
   );
@@ -670,13 +1493,18 @@ const createStyles = (theme: ThemeColors) =>
       gap: 14,
     },
     inputGroup: {
-      marginBottom: 6,
+      marginBottom: 4,
     },
     inputLabel: {
       fontSize: 12,
       fontWeight: "700",
       color: theme.textSecondary,
       marginBottom: 6,
+    },
+    inputHint: {
+      fontSize: 11,
+      color: theme.textMuted,
+      marginTop: 4,
     },
     inputBox: {
       flexDirection: "row",
@@ -736,6 +1564,7 @@ const createStyles = (theme: ThemeColors) =>
       fontSize: 11,
       color: theme.textMuted,
       marginTop: 4,
+      textAlign: "center",
     },
     card: {
       backgroundColor: theme.bgCard,
@@ -749,14 +1578,15 @@ const createStyles = (theme: ThemeColors) =>
       justifyContent: "space-between",
       alignItems: "center",
       paddingVertical: 8,
+      gap: 8,
     },
     rowLabel: {
-      fontSize: 13,
+      fontSize: 12.5,
       color: theme.textSecondary,
       flex: 1,
     },
     rowValue: {
-      fontSize: 13,
+      fontSize: 12.5,
       fontWeight: "700",
       color: theme.textPrimary,
     },
@@ -798,16 +1628,16 @@ const createStyles = (theme: ThemeColors) =>
       flexDirection: "row",
       alignItems: "center",
       gap: 10,
-      backgroundColor: `${theme.gold}12`,
+      backgroundColor: `${theme.gold}15`,
       borderWidth: 1,
-      borderColor: `${theme.gold}30`,
+      borderColor: `${theme.gold}35`,
       borderRadius: 12,
       padding: 12,
     },
     tipText: {
       flex: 1,
       fontSize: 12,
-      color: theme.textSecondary,
-      lineHeight: 16,
+      color: theme.textPrimary,
+      lineHeight: 17,
     },
   });
