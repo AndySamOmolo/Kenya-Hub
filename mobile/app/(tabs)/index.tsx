@@ -31,6 +31,293 @@ import {
 } from "../../src/shared/data/blog-posts";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
+function renderInlineMarkdown(text: string, theme: any, baseStyle: any): React.ReactNode[] {
+  const cleaned = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1");
+  const tokenRegex = /(\*\*\*[\s\S]+?\*\*\*|\*\*(?:\\\*|[^*]|\*[^*]+\*)+?\*\*|\*[^*\n]+?\*|`[^`]+`)/g;
+  const nodes: React.ReactNode[] = [];
+  let lastIdx = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+
+  while ((match = tokenRegex.exec(cleaned)) !== null) {
+    if (match.index > lastIdx) {
+      nodes.push(cleaned.slice(lastIdx, match.index));
+    }
+    const raw = match[0];
+    if (raw.startsWith("***") && raw.endsWith("***")) {
+      nodes.push(
+        <Text
+          key={key++}
+          style={[baseStyle, { fontFamily: "Outfit_700Bold", fontStyle: "italic", color: theme.textPrimary }]}
+        >
+          {raw.slice(3, -3)}
+        </Text>
+      );
+    } else if (raw.startsWith("**") && raw.endsWith("**")) {
+      const inner = raw.slice(2, -2);
+      // Handle nested *italic* inside **bold**
+      const subParts = inner.split(/(\*[^*]+\*)/g);
+      nodes.push(
+        <Text key={key++} style={[baseStyle, { fontFamily: "Outfit_700Bold", color: theme.textPrimary }]}>
+          {subParts.map((sp, sIdx) =>
+            sp.startsWith("*") && sp.endsWith("*") ? (
+              <Text key={sIdx} style={{ fontStyle: "italic", color: theme.gold }}>
+                {sp.slice(1, -1)}
+              </Text>
+            ) : (
+              sp
+            )
+          )}
+        </Text>
+      );
+    } else if (raw.startsWith("*") && raw.endsWith("*")) {
+      nodes.push(
+        <Text key={key++} style={[baseStyle, { fontStyle: "italic", color: theme.textPrimary }]}>
+          {raw.slice(1, -1)}
+        </Text>
+      );
+    } else if (raw.startsWith("`") && raw.endsWith("`")) {
+      nodes.push(
+        <Text
+          key={key++}
+          style={[
+            baseStyle,
+            {
+              fontFamily: Platform.OS === "android" ? "monospace" : "Courier",
+              backgroundColor: theme.surfaceContainerHigh,
+              color: theme.gold,
+              fontSize: 12,
+            },
+          ]}
+        >
+          {" "}{raw.slice(1, -1)}{" "}
+        </Text>
+      );
+    }
+    lastIdx = tokenRegex.lastIndex;
+  }
+  if (lastIdx < cleaned.length) {
+    nodes.push(cleaned.slice(lastIdx));
+  }
+  return nodes;
+}
+
+function BlogMarkdownContent({ content, theme }: { content: string; theme: any }) {
+  const lines = content.replace(/\r\n/g, "\n").split("\n");
+  const blocks: React.ReactNode[] = [];
+  let i = 0;
+
+  const bodyStyle = {
+    fontSize: 13.5,
+    lineHeight: 21,
+    color: theme.textSecondary,
+  };
+
+  while (i < lines.length) {
+    const rawLine = lines[i];
+    const trimmed = rawLine.trim();
+
+    if (!trimmed) {
+      i++;
+      continue;
+    }
+
+    if (/^---+$/.test(trimmed)) {
+      blocks.push(
+        <View
+          key={`hr-${i}`}
+          style={{
+            height: 1,
+            backgroundColor: theme.outlineVariant,
+            marginVertical: 8,
+          }}
+        />
+      );
+      i++;
+      continue;
+    }
+
+    if (trimmed.startsWith("## ")) {
+      blocks.push(
+        <Text
+          key={`h2-${i}`}
+          style={{
+            fontFamily: "Outfit_700Bold",
+            fontSize: 17,
+            color: theme.gold,
+            marginTop: 10,
+            marginBottom: 2,
+          }}
+        >
+          {renderInlineMarkdown(trimmed.slice(3), theme, { fontSize: 17, color: theme.gold })}
+        </Text>
+      );
+      i++;
+      continue;
+    }
+
+    if (trimmed.startsWith("### ")) {
+      blocks.push(
+        <Text
+          key={`h3-${i}`}
+          style={{
+            fontFamily: "Outfit_700Bold",
+            fontSize: 15,
+            color: theme.textPrimary,
+            marginTop: 6,
+            marginBottom: 2,
+          }}
+        >
+          {renderInlineMarkdown(trimmed.slice(4), theme, { fontSize: 15, color: theme.textPrimary })}
+        </Text>
+      );
+      i++;
+      continue;
+    }
+
+    if (trimmed.startsWith(">")) {
+      const quoteLines: string[] = [];
+      while (i < lines.length && lines[i].trim().startsWith(">")) {
+        quoteLines.push(lines[i].trim().replace(/^>\s?/, ""));
+        i++;
+      }
+      blocks.push(
+        <View
+          key={`quote-${i}`}
+          style={{
+            borderLeftWidth: 3,
+            borderLeftColor: theme.gold,
+            backgroundColor: `${theme.gold}12`,
+            paddingHorizontal: 12,
+            paddingVertical: 8,
+            borderRadius: 8,
+            marginVertical: 4,
+          }}
+        >
+          <Text style={[bodyStyle, { fontStyle: "italic", color: theme.textPrimary }]}>
+            {renderInlineMarkdown(quoteLines.join(" "), theme, bodyStyle)}
+          </Text>
+        </View>
+      );
+      continue;
+    }
+
+    if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
+      const tableRows: string[][] = [];
+      while (i < lines.length && lines[i].trim().startsWith("|")) {
+        const rowStr = lines[i].trim();
+        if (!/^\|[\s\-:|]+\|$/.test(rowStr)) {
+          const cells = rowStr
+            .slice(1, -1)
+            .split("|")
+            .map((c) => c.trim());
+          tableRows.push(cells);
+        }
+        i++;
+      }
+      if (tableRows.length > 0) {
+        blocks.push(
+          <View
+            key={`tbl-${i}`}
+            style={{
+              borderWidth: 1,
+              borderColor: theme.outlineVariant,
+              borderRadius: 10,
+              overflow: "hidden",
+              marginVertical: 6,
+            }}
+          >
+            {tableRows.map((row, rIdx) => (
+              <View
+                key={`tr-${rIdx}`}
+                style={{
+                  flexDirection: "row",
+                  backgroundColor:
+                    rIdx === 0 ? theme.surfaceContainerHigh : "transparent",
+                  borderBottomWidth: rIdx < tableRows.length - 1 ? 1 : 0,
+                  borderBottomColor: theme.outlineVariant,
+                  paddingVertical: 7,
+                  paddingHorizontal: 8,
+                  gap: 6,
+                }}
+              >
+                {row.map((cell, cIdx) => (
+                  <Text
+                    key={`tc-${cIdx}`}
+                    style={{
+                      flex: 1,
+                      fontSize: 11.5,
+                      lineHeight: 16,
+                      fontFamily: rIdx === 0 ? "Outfit_700Bold" : undefined,
+                      color: rIdx === 0 ? theme.gold : theme.textSecondary,
+                    }}
+                  >
+                    {renderInlineMarkdown(cell, theme, {
+                      fontSize: 11.5,
+                      color: rIdx === 0 ? theme.gold : theme.textSecondary,
+                    })}
+                  </Text>
+                ))}
+              </View>
+            ))}
+          </View>
+        );
+      }
+      continue;
+    }
+
+    const bulletMatch = rawLine.match(/^(\s*)([-*]|\d+\.)\s+(.*)$/);
+    if (bulletMatch) {
+      const indent = bulletMatch[1].length >= 2 ? 16 : 0;
+      const marker = /^\d+\./.test(bulletMatch[2]) ? bulletMatch[2] : indent > 0 ? "◦" : "•";
+      const itemText = bulletMatch[3];
+      blocks.push(
+        <View
+          key={`li-${i}`}
+          style={{
+            flexDirection: "row",
+            alignItems: "flex-start",
+            paddingLeft: indent,
+            gap: 8,
+            marginVertical: 2,
+          }}
+        >
+          <Text style={{ color: theme.gold, fontFamily: "Outfit_700Bold", fontSize: 13, lineHeight: 21 }}>
+            {marker}
+          </Text>
+          <Text style={[bodyStyle, { flex: 1 }]}>
+            {renderInlineMarkdown(itemText, theme, bodyStyle)}
+          </Text>
+        </View>
+      );
+      i++;
+      continue;
+    }
+
+    const paraLines: string[] = [trimmed];
+    i++;
+    while (
+      i < lines.length &&
+      lines[i].trim() !== "" &&
+      !lines[i].trim().startsWith("#") &&
+      !lines[i].trim().startsWith(">") &&
+      !lines[i].trim().startsWith("|") &&
+      !/^---+$/.test(lines[i].trim()) &&
+      !/^(\s*)([-*]|\d+\.)\s+/.test(lines[i])
+    ) {
+      paraLines.push(lines[i].trim());
+      i++;
+    }
+    blocks.push(
+      <Text key={`p-${i}`} style={bodyStyle}>
+        {renderInlineMarkdown(paraLines.join(" "), theme, bodyStyle)}
+      </Text>
+    );
+  }
+
+  return <View style={{ gap: 8 }}>{blocks}</View>;
+}
+
 function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
   const router = useRouter();
   const { theme } = useTheme();
@@ -83,7 +370,7 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
             </View>
             <Text
               style={[styles.toolTitle, { color: theme.textPrimary }]}
-              numberOfLines={1}
+              
             >
               {tool.shortTitle}
             </Text>
@@ -104,7 +391,7 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
 
         <Text
           style={[styles.toolDesc, { color: theme.textSecondary }]}
-          numberOfLines={2}
+          
         >
           {tool.description}
         </Text>
@@ -123,7 +410,7 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[0] }) {
             />
             <Text
               style={[styles.sourceText, { color: theme.textMuted }]}
-              numberOfLines={1}
+              
             >
               {tool.dataSource}
             </Text>
@@ -266,7 +553,7 @@ export default function HomeScreen() {
                 styles.m3SearchPlaceholder,
                 { color: theme.textSecondary },
               ]}
-              numberOfLines={1}
+              
             >
               Search PAYE, M-Pesa, KPLC, Languages...
             </Text>
@@ -372,12 +659,8 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* Material 3 Quick Action Chips */}
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.quickChipsScroll}
-        >
+        {/* Material 3 Quick Action Chips (Wrapping Grid — No Horizontal Scroll) */}
+        <View style={styles.quickChipsGrid}>
           {[
             {
               slug: "paye-calculator",
@@ -439,7 +722,7 @@ export default function HomeScreen() {
               </Pressable>
             </View>
           ))}
-        </ScrollView>
+        </View>
 
         {/* Pinned Tools Section (mirrors web PinnedToolsHomeSection) */}
         {pinnedTools.length > 0 && (
@@ -659,7 +942,7 @@ export default function HomeScreen() {
                   </Text>
                   <Text
                     style={[styles.catDescription, { color: theme.textMuted }]}
-                    numberOfLines={2}
+                    
                   >
                     {cat.description}
                   </Text>
@@ -681,13 +964,13 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{
+        <View
+          style={{
+            flexDirection: "row",
+            flexWrap: "wrap",
             paddingHorizontal: 16,
             gap: 8,
-            marginBottom: 12,
+            marginBottom: 14,
           }}
         >
           {blogTags.map((tag) => {
@@ -721,7 +1004,7 @@ export default function HomeScreen() {
               </Pressable>
             );
           })}
-        </ScrollView>
+        </View>
 
         <View style={styles.toolList}>
           {sortedPosts.map((post) => (
@@ -785,7 +1068,7 @@ export default function HomeScreen() {
                 </Text>
                 <Text
                   style={[styles.toolDesc, { color: theme.textSecondary }]}
-                  numberOfLines={2}
+                  
                 >
                   {post.excerpt}
                 </Text>
@@ -910,55 +1193,7 @@ export default function HomeScreen() {
                   },
                 ]}
               >
-                {selectedPost.content.split("\n\n").map((block, idx) => {
-                  const trimmed = block.trim();
-                  if (!trimmed) return null;
-                  if (trimmed.startsWith("## ")) {
-                    return (
-                      <Text
-                        key={idx}
-                        style={{
-                          fontFamily: "Outfit_700Bold",
-                          fontSize: 17,
-                          color: theme.gold,
-                          marginTop: 8,
-                        }}
-                      >
-                        {trimmed.replace("## ", "")}
-                      </Text>
-                    );
-                  }
-                  if (trimmed.startsWith("### ")) {
-                    return (
-                      <Text
-                        key={idx}
-                        style={{
-                          fontFamily: "Outfit_700Bold",
-                          fontSize: 15,
-                          color: theme.textPrimary,
-                          marginTop: 4,
-                        }}
-                      >
-                        {trimmed.replace("### ", "")}
-                      </Text>
-                    );
-                  }
-                  const cleanText = trimmed
-                    .replace(/\*\*(.*?)\*\*/g, "$1")
-                    .replace(/\[(.*?)\]\((.*?)\)/g, "$1");
-                  return (
-                    <Text
-                      key={idx}
-                      style={{
-                        fontSize: 13.5,
-                        lineHeight: 21,
-                        color: theme.textSecondary,
-                      }}
-                    >
-                      {cleanText}
-                    </Text>
-                  );
-                })}
+                <BlogMarkdownContent content={selectedPost.content} theme={theme} />
               </View>
             </ScrollView>
           )}
@@ -1106,7 +1341,9 @@ const styles = StyleSheet.create({
     fontFamily: "Outfit_700Bold",
     fontSize: 13,
   },
-  quickChipsScroll: {
+  quickChipsGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
     paddingHorizontal: 16,
     paddingTop: 14,
     paddingBottom: 4,
@@ -1277,7 +1514,9 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   categoryCardWrap: {
-    width: "48.2%",
+    flexGrow: 1,
+    flexBasis: "45%",
+    minWidth: 145,
     borderRadius: 16,
     borderWidth: 1,
     overflow: "hidden",

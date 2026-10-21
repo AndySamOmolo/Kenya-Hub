@@ -154,11 +154,11 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
               <div className="bg-bg-elevated/60 border border-border/50 rounded-lg p-3 mb-4 space-y-1.5 text-xs">
                 <div className="flex items-center justify-between">
                   <span className="text-text-muted">Start:</span>
-                  <span className="font-medium text-text-primary truncate max-w-[180px]">{r.terminusA}</span>
+                  <span className="font-medium text-text-primary break-words">{r.terminusA}</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-text-muted">End:</span>
-                  <span className="font-medium text-text-primary truncate max-w-[180px]">{r.terminusB}</span>
+                  <span className="font-medium text-text-primary break-words">{r.terminusB}</span>
                 </div>
                 <div className="flex items-center justify-between text-[0.65rem] text-text-muted pt-1 border-t border-border/30">
                   <span>Stages: {r.stages.length}</span>

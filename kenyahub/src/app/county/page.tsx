@@ -243,7 +243,7 @@ export default function CountyIndexPage() {
       </div>
 
       {/* Consolidated Hub Mode Tabs */}
-      <div className="flex gap-2 overflow-x-auto pb-2 mb-6 border-b border-border">
+      <div className="flex flex-wrap gap-2 pb-2 mb-6 border-b border-border">
         {([
           { id: "directory", label: "47 Counties Directory", icon: "🏛️" },
           { id: "budgets", label: "Budgets & Absorption (FY 2025/26)", icon: "📊" },
@@ -340,7 +340,7 @@ export default function CountyIndexPage() {
 
       {/* Climate Zone Filter Pills (Directory & Climate tabs) */}
       {(activeTab === "directory" || activeTab === "climate") && (
-        <div className="flex gap-2 overflow-x-auto pb-2 mb-6">
+        <div className="flex flex-wrap gap-2 pb-2 mb-6">
           {climateZones.map((zone) => (
             <button
               key={zone}
@@ -382,10 +382,10 @@ export default function CountyIndexPage() {
                 <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-1 group-hover:text-gold transition-colors">
                   {county.name} County
                 </h2>
-                <p className="text-xs text-text-secondary mb-1 line-clamp-1">
+                <p className="text-xs text-text-secondary mb-1">
                   Gov. <span className="font-medium text-text-primary">{county.governor}</span>
                 </p>
-                <p className="text-[0.6875rem] text-text-muted mb-4 line-clamp-1">
+                <p className="text-[0.6875rem] text-text-muted mb-4">
                   {county.constituencies.length} Constituencies · {county.rain?.climateZone || "Kenya"}
                 </p>
 

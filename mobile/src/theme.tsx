@@ -263,8 +263,15 @@ export function AndroidTopAppBar({
             <View style={{ flex: 1 }}>
               {title && (
                 <Text
-                  style={[appBarStyles.title, { color: theme.textPrimary }]}
-                  numberOfLines={1}
+                  style={[
+                    appBarStyles.title,
+                    {
+                      color: theme.textPrimary,
+                      fontSize: title.length > 24 ? 15.5 : 18.5,
+                      lineHeight: title.length > 24 ? 20 : 23,
+                    },
+                  ]}
+                  numberOfLines={2}
                 >
                   {title}
                 </Text>
@@ -272,7 +279,7 @@ export function AndroidTopAppBar({
               {subtitle && (
                 <Text
                   style={[appBarStyles.subtitle, { color: theme.textSecondary }]}
-                  numberOfLines={1}
+                  numberOfLines={2}
                 >
                   {subtitle}
                 </Text>

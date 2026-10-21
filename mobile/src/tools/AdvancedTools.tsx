@@ -100,11 +100,7 @@ export function KenyanTranslatorTool() {
       <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
         Select Language ({ALL_DICTS.length} available)
       </Text>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.horizontalPills}
-      >
+      <View style={styles.horizontalPills}>
         {ALL_DICTS.map((d) => {
           const active = d.languageId === selectedLang;
           return (
@@ -133,7 +129,7 @@ export function KenyanTranslatorTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </View>
 
       <View
         style={[
@@ -177,11 +173,7 @@ export function KenyanTranslatorTool() {
         )}
       </View>
 
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.horizontalPills}
-      >
+      <View style={styles.horizontalPills}>
         <Pressable
           onPress={() => setSelectedCat("all")}
           style={[
@@ -226,7 +218,7 @@ export function KenyanTranslatorTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </View>
 
       <Text style={[styles.countLabel, { color: theme.textMuted }]}>
         Showing {filteredEntries.length} phrases & words
@@ -603,11 +595,7 @@ export function WardConstituencyFinderTool() {
       <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
         Select County ({countiesData.counties.length} available)
       </Text>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.horizontalPills}
-      >
+      <View style={styles.horizontalPills}>
         {countiesData.counties.map((c) => {
           const active = c.slug === selectedSlug;
           return (
@@ -633,7 +621,7 @@ export function WardConstituencyFinderTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </View>
 
       {/* County Statistics Card */}
       <View
@@ -812,11 +800,7 @@ export function CbcCurriculumTool() {
   return (
     <View style={styles.toolWrap}>
       {/* Level Selector */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.horizontalPills}
-      >
+      <View style={styles.horizontalPills}>
         {cbcData.levels.map((l) => {
           const active = l.id === levelId;
           return (
@@ -842,7 +826,7 @@ export function CbcCurriculumTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </View>
 
       {/* Level Card */}
       <View
@@ -1134,14 +1118,10 @@ export function KuccpsClusterTool() {
               { backgroundColor: theme.bgCard, borderColor: theme.border },
             ]}
           >
-            <Text style={[styles.subjName, { color: theme.textPrimary }]} numberOfLines={1}>
+            <Text style={[styles.subjName, { color: theme.textPrimary }]} >
               {subj}
             </Text>
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={styles.gradeScroll}
-            >
+            <View style={[styles.gradeScroll, { flexDirection: "row", flexWrap: "wrap" }]}>
               <Pressable
                 onPress={() =>
                   setSelectedGrades((prev) => {
@@ -1189,7 +1169,7 @@ export function KuccpsClusterTool() {
                   </Pressable>
                 );
               })}
-            </ScrollView>
+            </View>
           </View>
         ))}
       </View>
@@ -1478,7 +1458,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 10,
     borderWidth: 1,
-    width: "48%",
+    flexGrow: 1, flexBasis: "45%", minWidth: 140,
   },
   regionName: {
     fontSize: 13,
@@ -1539,7 +1519,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   leaderItem: {
-    width: "48%",
+    flexGrow: 1, flexBasis: "45%", minWidth: 140,
     gap: 2,
   },
   leaderRole: {
@@ -1563,7 +1543,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 1,
     gap: 8,
-    width: "48%",
+    flexGrow: 1, flexBasis: "45%", minWidth: 140,
   },
   numberCircle: {
     width: 22,

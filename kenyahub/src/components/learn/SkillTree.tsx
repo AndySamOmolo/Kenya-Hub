@@ -16,6 +16,8 @@ import {
   Crown,
   Sparkles,
   Layers,
+  Lock,
+  Unlock,
 } from "lucide-react";
 import type { CourseUnit, UserProgress, LanguageConfig } from "@/data/courses/types";
 import { MAX_SKILL_LEVEL, ACHIEVEMENTS, MAX_HEARTS } from "@/data/courses/types";
@@ -23,11 +25,8 @@ import {
   getXpLevel,
   minutesToNextHeart,
   getDueReviews,
+  isSkillUnlocked,
 } from "@/lib/learn-progress";
-
-/* ═══════════════════════════════════════════════════════
-   SKILL TREE — Interactive learning path (All modules open & unlocked)
-   ═══════════════════════════════════════════════════════ */
 
 interface SkillTreeProps {
   units: CourseUnit[];
@@ -35,6 +34,7 @@ interface SkillTreeProps {
   config: LanguageConfig;
   onStartLesson: (skillId: string, level: number) => void;
   onStartReview: () => void;
+  onToggleUnlockAll: () => void;
   onGoBack: () => void;
 }
 
@@ -44,10 +44,10 @@ export default function SkillTree({
   config,
   onStartLesson,
   onStartReview,
+  onToggleUnlockAll,
   onGoBack,
 }: SkillTreeProps) {
   const sources = getSourcesForLanguage(config.id);
-  // All units expanded by default so the user can view & access all modules at once
   const [expandedUnits, setExpandedUnits] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(units.map((u) => [u.id, true]))
   );
@@ -55,6 +55,7 @@ export default function SkillTree({
   const [showAchievements, setShowAchievements] = useState(false);
 
   const allExpanded = units.every((u) => expandedUnits[u.id] !== false);
+  const isAllUnlocked = Boolean(progress.unlockAll);
 
   const toggleAllUnits = () => {
     const nextState = !allExpanded;
@@ -72,7 +73,6 @@ export default function SkillTree({
   const nextHeartMin = minutesToNextHeart(progress);
   const dueReviewCount = getDueReviews(progress).length;
 
-  // Count totals
   const totalSkills = units.reduce((s, u) => s + u.skills.length, 0);
   const completedSkills = Object.values(progress.skillLevels).filter(
     (v) => v >= 1
@@ -82,7 +82,6 @@ export default function SkillTree({
     <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
       {/* ─── Header ──────────────────────────────── */}
       <div className="mb-6">
-        {/* Language badge */}
         <div className="mb-4 flex items-center justify-between">
           <button
             onClick={onGoBack}
@@ -239,7 +238,6 @@ export default function SkillTree({
           </div>
         </button>
 
-        {/* Achievements panel */}
         {showAchievements && (
           <div id="achievements-panel" className="mt-2 rounded-xl border border-border bg-bg-card p-3">
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
@@ -273,24 +271,53 @@ export default function SkillTree({
         )}
       </div>
 
-      {/* ─── All Units & Modules Controls ─────────── */}
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+      {/* ─── Unlock Mode & Unit Controls Bar ─────────── */}
+      <div className="mb-4 rounded-xl border border-border bg-bg-card p-3.5 flex flex-wrap items-center justify-between gap-2.5">
         <div className="flex items-center gap-2">
           <Layers className="h-4 w-4 text-gold" />
-          <span className="text-xs font-bold uppercase tracking-wider text-text-secondary">
-            All {units.length} Units &amp; {totalSkills} Modules Unlocked
-          </span>
+          <div>
+            <span className="text-xs font-bold text-text-primary block">
+              {isAllUnlocked
+                ? `All ${totalSkills} Modules Unlocked (Free-Browse Mode)`
+                : `Progressive Path Mode (${completedSkills}/${totalSkills} Completed)`}
+            </span>
+            <span className="text-[0.65rem] text-text-muted">
+              {isAllUnlocked
+                ? "Jump into any unit or module directly, or switch back to guided progression."
+                : "Complete each module to unlock the next, or tap Unlock All to skip ahead."}
+            </span>
+          </div>
         </div>
-        <button
-          onClick={toggleAllUnits}
-          className="rounded-lg border border-border bg-bg-card px-3 py-1.5 text-xs font-semibold text-gold hover:border-gold/50 transition-colors"
-        >
-          {allExpanded ? "Collapse All Units" : "Expand All Units"}
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={onToggleUnlockAll}
+            className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-bold transition-all ${
+              isAllUnlocked
+                ? "border-kenya-green/40 bg-kenya-green/15 text-kenya-green-light hover:bg-kenya-green/25"
+                : "border-gold bg-gold text-kenya-black hover:brightness-110"
+            }`}
+          >
+            {isAllUnlocked ? (
+              <>
+                <Lock className="h-3.5 w-3.5" /> Lock to Progressive Path
+              </>
+            ) : (
+              <>
+                <Unlock className="h-3.5 w-3.5" /> Unlock All Modules
+              </>
+            )}
+          </button>
+          <button
+            onClick={toggleAllUnits}
+            className="rounded-lg border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-secondary hover:border-gold/50 hover:text-gold transition-colors"
+          >
+            {allExpanded ? "Collapse All" : "Expand All"}
+          </button>
+        </div>
       </div>
 
-      {/* Quick Jump Unit Pills */}
-      <div className="mb-4 flex gap-1.5 overflow-x-auto pb-1.5 scrollbar-hide">
+      {/* Multi-Row Wrapping Unit Jump Chips (no horizontal scrolling required) */}
+      <div className="mb-4 flex flex-wrap gap-1.5">
         {units.map((unit, idx) => (
           <a
             key={unit.id}
@@ -298,16 +325,16 @@ export default function SkillTree({
             onClick={() =>
               setExpandedUnits((prev) => ({ ...prev, [unit.id]: true }))
             }
-            className="shrink-0 rounded-full border border-border bg-bg-card px-3 py-1 text-xs font-medium text-text-secondary hover:border-gold hover:text-gold transition-colors"
+            className="rounded-lg border border-border bg-bg-card px-2.5 py-1 text-xs font-medium text-text-secondary hover:border-gold hover:text-gold transition-colors"
           >
             Unit {idx + 1}: {unit.title.replace(/^Unit \d+:\s*/i, "")}
           </a>
         ))}
       </div>
 
-      {/* ─── Skill Tree Path (All Modules Accessible) ─── */}
+      {/* ─── Skill Tree Path ─── */}
       <div className="space-y-4">
-        {units.map((unit) => {
+        {units.map((unit, uIdx) => {
           const isExpanded = expandedUnits[unit.id] !== false;
           const unitCompleted = unit.skills.every(
             (s) => (progress.skillLevels[s.id] || 0) >= 1
@@ -333,10 +360,10 @@ export default function SkillTree({
               >
                 <span className="text-2xl"><DynamicIcon emoji={unit.icon} className="w-[1em] h-[1em]" /></span>
                 <div className="flex-1 min-w-0 text-left">
-                  <h3 className="text-sm font-bold text-text-primary truncate">
+                  <h3 className="text-sm font-bold text-text-primary break-words">
                     {unit.title}
                   </h3>
-                  <p className="text-[0.6rem] text-text-muted truncate">
+                  <p className="text-[0.65rem] text-text-muted leading-snug break-words">
                     {unit.description} · {unit.skills.length} modules
                   </p>
                 </div>
@@ -358,19 +385,29 @@ export default function SkillTree({
               {/* Skills list */}
               {isExpanded && (
                 <div id={`unit-${unit.id}-skills`} className="mt-2 ml-4 space-y-2 border-l-2 border-border pl-4 sm:ml-6 sm:pl-5">
-                  {unit.skills.map((skill) => {
+                  {unit.skills.map((skill, sIdx) => {
                     const skillLevel =
                       progress.skillLevels[skill.id] || 0;
                     const nextLevel = Math.min(
                       skillLevel + 1,
                       MAX_SKILL_LEVEL
                     );
+                    const unlocked = isSkillUnlocked(
+                      skill.id,
+                      sIdx,
+                      uIdx,
+                      progress.skillLevels,
+                      units,
+                      isAllUnlocked
+                    );
 
                     return (
                       <div
                         key={skill.id}
                         className={`relative rounded-xl border p-4 transition-all ${
-                          skillLevel >= MAX_SKILL_LEVEL
+                          !unlocked
+                            ? "border-border/50 bg-bg-card/50 opacity-65"
+                            : skillLevel >= MAX_SKILL_LEVEL
                             ? "border-gold/30 bg-gradient-to-r from-gold/5 to-bg-card"
                             : "border-border bg-bg-card hover:border-gold/30"
                         }`}
@@ -378,7 +415,9 @@ export default function SkillTree({
                         {/* Connector dot */}
                         <div
                           className={`absolute -left-[1.35rem] top-5 h-3 w-3 rounded-full border-2 sm:-left-[1.65rem] ${
-                            skillLevel >= MAX_SKILL_LEVEL
+                            !unlocked
+                              ? "border-border bg-bg-elevated"
+                              : skillLevel >= MAX_SKILL_LEVEL
                               ? "border-gold bg-gold"
                               : skillLevel > 0
                               ? "border-kenya-green bg-kenya-green"
@@ -389,10 +428,11 @@ export default function SkillTree({
                         <div className="flex flex-wrap items-center gap-3">
                           <span className="text-2xl"><DynamicIcon emoji={skill.icon} className="w-[1em] h-[1em]" /></span>
                           <div className="flex-1 min-w-0">
-                            <h4 className="text-sm font-bold text-text-primary truncate">
+                            <h4 className="text-sm font-bold text-text-primary flex flex-wrap items-center gap-1.5 break-words">
                               {skill.title}
+                              {!unlocked && <Lock className="w-3.5 h-3.5 text-text-muted inline" />}
                             </h4>
-                            <p className="text-[0.6rem] text-text-muted truncate">
+                            <p className="text-[0.65rem] text-text-muted leading-snug break-words">
                               {skill.description} · {skill.words.length} words
                             </p>
 
@@ -416,34 +456,44 @@ export default function SkillTree({
                             </div>
                           </div>
 
-                          {/* Action button — always enabled so all modules are accessible at once */}
-                          <button
-                            onClick={() =>
-                              onStartLesson(skill.id, nextLevel)
-                            }
-                            className={`ml-auto shrink-0 rounded-xl px-4 py-2.5 text-xs font-bold transition-all active:scale-95 ${
-                              skillLevel >= MAX_SKILL_LEVEL
-                                ? "border border-gold/40 bg-gold/10 text-gold hover:bg-gold/20"
-                                : "bg-gold text-kenya-black sm:hover:brightness-110"
-                            }`}
-                          >
-                            {skillLevel >= MAX_SKILL_LEVEL ? (
-                              <span className="inline-flex items-center gap-1">
-                                <Sparkles className="h-3.5 w-3.5" /> Practice Again
-                              </span>
-                            ) : skillLevel === 0 ? (
-                              "Start Module"
-                            ) : (
-                              `Level ${nextLevel}`
-                            )}
-                          </button>
+                          {/* Action button */}
+                          {unlocked ? (
+                            <button
+                              onClick={() =>
+                                onStartLesson(skill.id, nextLevel)
+                              }
+                              className={`ml-auto shrink-0 rounded-xl px-4 py-2.5 text-xs font-bold transition-all active:scale-95 ${
+                                skillLevel >= MAX_SKILL_LEVEL
+                                  ? "border border-gold/40 bg-gold/10 text-gold hover:bg-gold/20"
+                                  : "bg-gold text-kenya-black sm:hover:brightness-110"
+                              }`}
+                            >
+                              {skillLevel >= MAX_SKILL_LEVEL ? (
+                                <span className="inline-flex items-center gap-1">
+                                  <Sparkles className="h-3.5 w-3.5" /> Practice Again
+                                </span>
+                              ) : skillLevel === 0 ? (
+                                "Start Module"
+                              ) : (
+                                `Level ${nextLevel}`
+                              )}
+                            </button>
+                          ) : (
+                            <button
+                              onClick={onToggleUnlockAll}
+                              title="Tap to unlock all modules"
+                              className="ml-auto shrink-0 rounded-xl border border-border bg-bg-elevated px-3.5 py-2 text-xs font-semibold text-text-muted hover:border-gold/50 hover:text-gold transition-all inline-flex items-center gap-1.5"
+                            >
+                              <Lock className="h-3.5 w-3.5" /> Locked · Unlock All
+                            </button>
+                          )}
                         </div>
 
                         {/* Tips preview */}
-                        {skill.tips && (
+                        {skill.tips && unlocked && (
                           <div className="mt-3 flex items-start gap-2 rounded-lg bg-gold/5 p-2.5">
                             <Lightbulb className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold" />
-                            <p className="text-[0.6rem] leading-relaxed text-text-secondary line-clamp-2">
+                            <p className="text-[0.65rem] leading-relaxed text-text-secondary">
                               {skill.tips}
                             </p>
                           </div>

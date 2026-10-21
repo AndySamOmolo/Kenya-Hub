@@ -82,7 +82,7 @@ function RouteCard({
             <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
               <Text
                 style={[styles.routeText, { color: theme.textPrimary, flex: 1 }]}
-                numberOfLines={1}
+                
               >
                 {route.name}
               </Text>
@@ -125,7 +125,7 @@ function RouteCard({
               </View>
               <Text
                 style={[styles.saccoText, { color: theme.textSecondary }]}
-                numberOfLines={1}
+                
               >
                 {route.saccoName}
               </Text>
@@ -302,11 +302,7 @@ export default function MatatuScreen() {
 
         {/* Town Filter Chips */}
         {towns.length > 0 && (
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.townChipsRow}
-          >
+          <View style={[styles.townChipsRow, { flexDirection: "row", flexWrap: "wrap" }]}>
             {[
               { slug: "all", name: `All Cities (${allRoutes.length})` },
               ...towns
@@ -364,16 +360,12 @@ export default function MatatuScreen() {
                 </View>
               );
             })}
-          </ScrollView>
+          </View>
         )}
 
         {/* Fare Range & Sort Controls (mirrors web TownMatatuView) */}
         <View style={styles.filterSubRow}>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ gap: 6 }}
-          >
+          <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
             {(
               [
                 { id: "all", label: "All Fares" },
@@ -409,7 +401,7 @@ export default function MatatuScreen() {
                 </Pressable>
               );
             })}
-          </ScrollView>
+          </View>
 
           <View
             style={[
@@ -462,11 +454,7 @@ export default function MatatuScreen() {
       >
         {/* SACCO Filter Pills */}
         {availableSaccos.length > 1 && (
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ gap: 6, marginBottom: 12 }}
-          >
+          <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6, marginBottom: 12  }}>
             {["all", ...availableSaccos].map((sacco) => {
               const active = saccoFilter === sacco;
               return (
@@ -500,7 +488,7 @@ export default function MatatuScreen() {
                 </Pressable>
               );
             })}
-          </ScrollView>
+          </View>
         )}
 
         <Text style={[styles.resultsCount, { color: theme.textMuted }]}>

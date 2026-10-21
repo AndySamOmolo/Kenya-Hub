@@ -633,7 +633,7 @@ While mainstream religious affiliations in Kenya have evolved over the past cent
 ---
 
 ### Explore More Kenyan Cultural Heritage on KenyaHub:
-- [Explore 1,000 Authentic Kikuyu Proverbs (Thimo cia Gĩkũyũ)](/tools/kikuyu-proverbs/)
+- [Explore 1,000 Authentic Kikuyu Proverbs (Thimo cia Gĩkũyũ)](/tools/learn/kikuyu/)
 - [Learn the Gĩkũyũ Language Online](/tools/learn/kikuyu/)
 - [Kenyan Languages Translator & Vocabulary Directory](/tools/kenyan-translator/)
 - [Complete Guide to Kenya's 42+ Ethnic Languages](/tools/kenya-languages/)`,
@@ -728,7 +728,7 @@ The technological legacy of Kenya's pre-colonial ironworkers did not vanish with
 
 ### Related Cultural Resources on KenyaHub:
 - [Traditional Bantu Beliefs & Magic in Kenya (Full Guide)](/blog/traditional-bantu-beliefs-and-magic-in-kenya/)
-- [1,000 Kikuyu Proverbs (Thimo cia Gĩkũyũ) Explorer](/tools/kikuyu-proverbs/)
+- [1,000 Kikuyu Proverbs (Thimo cia Gĩkũyũ) Explorer](/tools/learn/kikuyu/)
 - [Kenyan Languages Translator & Vocabulary Directory](/tools/kenyan-translator/)`,
   },
   {
@@ -1101,7 +1101,7 @@ When we protect the canopy, bless the seeds, purify our contamination, and resol
 ### Explore More Kenyan Cultural Heritage on KenyaHub:
 - [Traditional Bantu Beliefs & Sacred Wisdom in Kenya: Full 1922 Fieldwork Guide](/blog/traditional-bantu-beliefs-and-magic-in-kenya/)
 - [Ancient Blacksmith Guilds in Pre-Colonial Kenya: Mystical Metallurgy & Peace Rings](/blog/ancient-blacksmith-guilds-in-precolonial-kenya/)
-- [Interactive Kikuyu Proverbs Explorer (1,000 Thimo cia Gĩkũyũ)](/tools/kikuyu-proverbs/)
+- [Interactive Kikuyu Proverbs Explorer (1,000 Thimo cia Gĩkũyũ)](/tools/learn/kikuyu/)
 - [Kenyan Languages Translator & Vocabulary Directory](/tools/kenyan-translator/)
 - [Bantu Noun Classes: The Brilliant Architecture of African Languages](/blog/how-bantu-languages-work-noun-classes-guide/)`,
   },
@@ -1220,7 +1220,7 @@ Many language learners assume that having 16 noun classes makes Bantu languages 
 ### Practice Kenyan Languages on KenyaHub:
 - [Interactive Language Courses (Kikuyu, Kisii, Luhya, Luo, Turkana, Kamba, Maasai)](/tools/learn/)
 - [Kenyan Languages Translator & Vocabulary Directory](/tools/kenyan-translator/)
-- [1,000 Kikuyu Proverbs with English Meanings](/tools/kikuyu-proverbs/)`,
+- [1,000 Kikuyu Proverbs with English Meanings](/tools/learn/kikuyu/)`,
   },
   {
     slug: "restorative-justice-kikuyu-kamba-councils-oaths",
@@ -1320,7 +1320,7 @@ The pre-colonial Akamba and Agĩkũyũ demonstrated that a society does not requ
 ### Further Exploration on KenyaHub:
 - [Learn Kĩkamba Language & Cultural Concepts](/tools/learn/kamba)
 - [Learn Gĩkũyũ Language & History](/tools/learn/kikuyu)
-- [Browse 1,000 Historical Kikuyu Proverbs](/tools/kikuyu-proverbs)
+- [Browse 1,000 Historical Kikuyu Proverbs](/tools/learn/kikuyu/)
 - [Read the Editorial Sources Corpus](/tools/kenyan-translator)`,
   },
   {

@@ -201,7 +201,7 @@ export default function CountyDetailScreen() {
           <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
         </Pressable>
         <View style={{ flex: 1 }}>
-          <Text style={[styles.headerBarTitle, { color: theme.textPrimary }]} numberOfLines={1}>
+          <Text style={[styles.headerBarTitle, { color: theme.textPrimary }]} >
             {county.name} County
           </Text>
           <Text style={[styles.headerBarSubtitle, { color: theme.textSecondary }]}>
@@ -585,7 +585,7 @@ export default function CountyDetailScreen() {
                 >
                   <Ionicons name="globe-outline" size={18} color={theme.sky} />
                   <View style={{ flex: 1 }}>
-                    <Text style={[styles.contactText, { color: theme.textPrimary }]} numberOfLines={1}>
+                    <Text style={[styles.contactText, { color: theme.textPrimary }]} >
                       {county.website}
                     </Text>
                     <Text style={{ fontSize: 11, color: theme.textMuted }}>Official County Government Portal</Text>

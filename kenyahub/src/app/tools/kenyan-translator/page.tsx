@@ -936,7 +936,7 @@ export default function KenyanTranslatorPage() {
                     <div key={result.languageId} className="px-4 py-3 flex items-center gap-3 hover:bg-bg-card-hover transition-colors">
                       <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[result.family] }} />
                       <div className="w-28 sm:w-36 flex-shrink-0">
-                        <p className="text-xs font-medium text-text-primary truncate">{result.languageName}</p>
+                        <p className="text-xs font-medium text-text-primary break-words">{result.languageName}</p>
                         <p className="text-[0.6rem] text-text-muted capitalize">{result.family}</p>
                       </div>
                       {result.entry ? (

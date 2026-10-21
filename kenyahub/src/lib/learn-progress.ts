@@ -1,6 +1,6 @@
 // ============================================================
 // Language Learning Progress Manager
-// Handles localStorage persistence, hearts, XP, streaks
+// Handles localStorage persistence, hearts, XP, streaks, and optional Unlock All
 // ============================================================
 
 import type { UserProgress, LessonResult } from '@/data/courses/types';
@@ -21,6 +21,7 @@ function createDefaultProgress(languageId: string): UserProgress {
     version: PROGRESS_VERSION,
     languageId,
     skillLevels: {},
+    unlockAll: false,
     xp: 0,
     streak: 0,
     lastActiveDate: '',
@@ -73,6 +74,7 @@ function migrateProgress(languageId: string, value: unknown): UserProgress {
     version: PROGRESS_VERSION,
     languageId,
     skillLevels,
+    unlockAll: typeof value.unlockAll === 'boolean' ? value.unlockAll : false,
     xp: toBoundedNumber(value.xp, defaults.xp, 0, Number.MAX_SAFE_INTEGER),
     streak: toBoundedNumber(value.streak, defaults.streak, 0, Number.MAX_SAFE_INTEGER),
     lastActiveDate: typeof value.lastActiveDate === 'string' ? value.lastActiveDate : defaults.lastActiveDate,
@@ -275,16 +277,33 @@ export function getDueReviews(progress: UserProgress, now = Date.now()): LessonR
 /* ─── Skill Unlocking ──────────────────────────────── */
 
 /**
- * All units and skill modules are unlocked from the start so learners can freely
- * access any module at once while still earning 1–5 mastery stars per module.
+ * By default, skills unlock progressively (first skill of Unit 1 is open;
+ * each subsequent skill unlocks once the preceding skill reaches at least Level 1).
+ * Users can explicitly toggle `unlockAll` to open all units and skills at once.
  */
 export function isSkillUnlocked(
-  _skillId: string,
-  _skillIndex: number,
-  _unitIndex: number,
-  _skillLevels: Record<string, number>,
-  _allUnits: { skills: { id: string }[] }[]
+  skillId: string,
+  skillIndex: number,
+  unitIndex: number,
+  skillLevels: Record<string, number>,
+  allUnits: { skills: { id: string }[] }[],
+  unlockAll: boolean = false
 ): boolean {
+  if (unlockAll) return true;
+  if ((skillLevels[skillId] || 0) >= 1) return true;
+  if (unitIndex === 0 && skillIndex === 0) return true;
+
+  if (skillIndex > 0) {
+    const prevSkill = allUnits[unitIndex]?.skills[skillIndex - 1];
+    return prevSkill ? (skillLevels[prevSkill.id] || 0) >= 1 : true;
+  }
+
+  if (unitIndex > 0) {
+    const prevUnit = allUnits[unitIndex - 1];
+    const lastSkillInPrevUnit = prevUnit?.skills[prevUnit.skills.length - 1];
+    return lastSkillInPrevUnit ? (skillLevels[lastSkillInPrevUnit.id] || 0) >= 1 : true;
+  }
+
   return true;
 }
 

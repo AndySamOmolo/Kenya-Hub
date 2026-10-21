@@ -116,6 +116,8 @@ export interface UserProgress {
   languageId: string;
   /** Completed skill levels: { "basics-1": 3 } means level 3/5 completed */
   skillLevels: Record<string, number>;
+  /** Explicit user toggle to unlock all units/skills without sequential gatekeeping */
+  unlockAll?: boolean;
   /** Total XP earned */
   xp: number;
   /** Current daily streak */
@@ -249,8 +251,8 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     id: 'memory-king',
     name: 'Memory King',
-    description: 'Learn 200 words',
+    description: 'Learn 50 words',
     icon: '🧠',
-    condition: (p) => p.wordsLearned.length >= 200,
+    condition: (p) => p.wordsLearned.length >= 50,
   },
 ];

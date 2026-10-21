@@ -61,7 +61,7 @@ export default function PinnedToolsHomeSection() {
                   <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
                 </span>
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-[0.9375rem] font-semibold text-text-primary mb-1.5 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug truncate">
+                  <h3 className="text-[0.9375rem] font-semibold text-text-primary mb-1.5 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug break-words">
                     {tool.shortTitle}
                   </h3>
                   <p className="text-xs text-text-muted line-clamp-2 leading-relaxed">

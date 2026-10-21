@@ -317,12 +317,12 @@ export function KcseCalculatorTool() {
         {subjects.map((sub, idx) => (
           <View key={idx} style={[styles.subjectRow, idx === subjects.length - 1 && { borderBottomWidth: 0 }]}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-              <Text style={styles.subjectLabel} numberOfLines={1}>{sub}</Text>
+              <Text style={styles.subjectLabel} >{sub}</Text>
               <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>
                 {grades[idx]} ({gradePoints[grades[idx]]} pts)
               </Text>
             </View>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 4 }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 4  }}>
               {possibleGrades.map((g) => (
                 <Pressable
                   key={g}
@@ -342,7 +342,7 @@ export function KcseCalculatorTool() {
                   </Text>
                 </Pressable>
               ))}
-            </ScrollView>
+            </View>
           </View>
         ))}
       </View>
@@ -401,7 +401,7 @@ export function KcseCalculatorTool() {
               <View
                 key={b.grade}
                 style={{
-                  width: "31%",
+                  flexGrow: 1, flexBasis: "29%", minWidth: 96,
                   padding: 8,
                   borderRadius: 10,
                   borderWidth: 1,
@@ -676,7 +676,7 @@ export function KikuyuProverbsTool() {
       </View>
 
       {/* Theme Category Filter Pills */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
         {PROVERB_CATEGORIES.map((cat) => {
           const active = selectedCategory === cat.id;
           return (
@@ -697,7 +697,7 @@ export function KikuyuProverbsTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </View>
 
       {/* Sort & Equivalent Filter Controls */}
       <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
@@ -843,23 +843,23 @@ export function KcseRankingsTool() {
     <View style={styles.toolWrap}>
       {/* National Summary Stats */}
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-        <View style={[styles.card, { width: "48%", alignItems: "center", paddingVertical: 10 }]}>
+        <View style={[styles.card, { flexGrow: 1, flexBasis: "45%", minWidth: 140, alignItems: "center", paddingVertical: 10 }]}>
           <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>EXAM YEAR</Text>
           <Text style={{ fontSize: 18, fontWeight: "900", color: theme.gold }}>{(rankingsData as any).year}</Text>
         </View>
-        <View style={[styles.card, { width: "48%", alignItems: "center", paddingVertical: 10 }]}>
+        <View style={[styles.card, { flexGrow: 1, flexBasis: "45%", minWidth: 140, alignItems: "center", paddingVertical: 10 }]}>
           <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>CANDIDATES</Text>
           <Text style={{ fontSize: 18, fontWeight: "900", color: theme.textPrimary }}>
             {(((rankingsData as any).totalCandidates || 993226) / 1000).toFixed(0)}K
           </Text>
         </View>
-        <View style={[styles.card, { width: "48%", alignItems: "center", paddingVertical: 10 }]}>
+        <View style={[styles.card, { flexGrow: 1, flexBasis: "45%", minWidth: 140, alignItems: "center", paddingVertical: 10 }]}>
           <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>EXAM CENTRES</Text>
           <Text style={{ fontSize: 18, fontWeight: "900", color: theme.sky }}>
             {((rankingsData as any).totalSchools || 10680).toLocaleString()}
           </Text>
         </View>
-        <View style={[styles.card, { width: "48%", alignItems: "center", paddingVertical: 10 }]}>
+        <View style={[styles.card, { flexGrow: 1, flexBasis: "45%", minWidth: 140, alignItems: "center", paddingVertical: 10 }]}>
           <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>TOP SCHOOL MEAN</Text>
           <Text style={{ fontSize: 18, fontWeight: "900", color: theme.kenyaGreenLight }}>
             {schools[0]?.meanScore?.toFixed(2) || "10.89"}
@@ -925,7 +925,7 @@ export function KcseRankingsTool() {
       </View>
 
       {/* County Filter Scroll */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
         {counties.map((c) => (
           <Pressable
             key={c}
@@ -940,7 +940,7 @@ export function KcseRankingsTool() {
             </Text>
           </Pressable>
         ))}
-      </ScrollView>
+      </View>
 
       <Text style={styles.subHeading}>
         Showing {filteredSchools.length} Top KCSE Schools ({rankingsData.year})
@@ -1197,8 +1197,9 @@ function createStyles(colors: ThemeColors) {
     },
     tableRow: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
-      alignItems: "center",
+      alignItems: "flex-start",
       paddingVertical: 8,
     },
     rowLabel: {

@@ -621,11 +621,7 @@ export function KenyanTranslatorTool() {
           </View>
 
           {/* Target Language Selection Pills */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.horizontalPills}
-          >
+          <View style={styles.horizontalPills}>
             {ALL_DICTS.map((d) => {
               const active = d.languageId === targetLanguage;
               return (
@@ -651,7 +647,7 @@ export function KenyanTranslatorTool() {
                 </Pressable>
               );
             })}
-          </ScrollView>
+          </View>
 
           {/* Search Input */}
           <View style={styles.searchBar}>
@@ -840,11 +836,7 @@ export function KenyanTranslatorTool() {
           </Text>
 
           {/* Quick word pills */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.horizontalPills}
-          >
+          <View style={styles.horizontalPills}>
             {POPULAR_COMPARE_WORDS.map((w) => {
               const active = searchQuery.toLowerCase() === w.toLowerCase();
               return (
@@ -867,7 +859,7 @@ export function KenyanTranslatorTool() {
                 </Pressable>
               );
             })}
-          </ScrollView>
+          </View>
 
           {/* Search Input */}
           <View style={styles.searchBar}>
@@ -923,7 +915,7 @@ export function KenyanTranslatorTool() {
                           </Text>
                         ) : null}
                         {entry.context ? (
-                          <Text style={styles.compareContext} numberOfLines={1}>
+                          <Text style={styles.compareContext} >
                             {entry.context}
                           </Text>
                         ) : null}
@@ -965,11 +957,7 @@ export function KenyanTranslatorTool() {
       {viewMode === "browse" && (
         <View style={styles.modeWrap}>
           {/* Target Language Selection Pills */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.horizontalPills}
-          >
+          <View style={styles.horizontalPills}>
             {ALL_DICTS.map((d) => {
               const active = d.languageId === targetLanguage;
               return (
@@ -992,14 +980,10 @@ export function KenyanTranslatorTool() {
                 </Pressable>
               );
             })}
-          </ScrollView>
+          </View>
 
           {/* Category Chips */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.horizontalPills}
-          >
+          <View style={styles.horizontalPills}>
             {targetDict.categories.map((c) => {
               const active = c.id === activeCategory;
               return (
@@ -1022,7 +1006,7 @@ export function KenyanTranslatorTool() {
                 </Pressable>
               );
             })}
-          </ScrollView>
+          </View>
 
           {/* Entries for selected category */}
           <View style={styles.resultsWrap}>

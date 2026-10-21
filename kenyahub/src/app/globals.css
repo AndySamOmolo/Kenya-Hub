@@ -782,7 +782,25 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
   margin: 2.5rem 0;
   opacity: 0.4;
 }
-.prose-blog strong { color: var(--text-primary); }
+.prose strong,
+.prose-blog strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.prose em,
+.prose-blog em {
+  color: var(--text-primary);
+  font-style: italic;
+}
+.prose-blog ul ul,
+.prose-blog ol ul {
+  margin: 0.5rem 0 0.5rem 0;
+  padding-left: 1.5rem;
+  list-style-type: circle;
+}
+.prose-blog li > blockquote {
+  margin: 0.75rem 0;
+}
 .blog-table-wrapper,
 .prose-blog .blog-table-wrapper {
   margin: 1.5rem 0;

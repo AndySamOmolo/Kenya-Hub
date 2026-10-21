@@ -57,7 +57,7 @@ export default function MatatuRouteScreen() {
           <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
         </Pressable>
         <View style={{ flex: 1 }}>
-          <Text style={[styles.navBarTitle, { color: theme.textPrimary }]} numberOfLines={1}>
+          <Text style={[styles.navBarTitle, { color: theme.textPrimary }]} >
             Route {route.routeNumber}: {route.name}
           </Text>
           <Text style={[styles.navBarSubtitle, { color: theme.gold }]}>
@@ -281,7 +281,7 @@ export default function MatatuRouteScreen() {
                     </Text>
                   </View>
                   <View style={{ flex: 1, marginLeft: 10 }}>
-                    <Text style={{ fontSize: 13.5, fontWeight: "700", color: theme.textPrimary }} numberOfLines={1}>
+                    <Text style={{ fontSize: 13.5, fontWeight: "700", color: theme.textPrimary }} >
                       {r.name}
                     </Text>
                     <Text style={{ fontSize: 11.5, color: theme.textMuted }}>

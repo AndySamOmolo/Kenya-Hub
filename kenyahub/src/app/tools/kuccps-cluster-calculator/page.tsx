@@ -116,7 +116,7 @@ export default function KUCCPSCalculatorPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {subjects.map((subject) => (
               <div key={subject} className="flex items-center gap-2">
-                <label className="text-xs text-text-secondary w-32 flex-shrink-0 truncate" title={subject}>
+                <label className="text-xs text-text-secondary w-36 sm:w-44 flex-shrink-0 break-words leading-tight" title={subject}>
                   {subject}
                 </label>
                 <CustomSelect

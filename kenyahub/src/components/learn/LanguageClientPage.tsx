@@ -2,12 +2,13 @@
 "use client";
 
 import { useCallback, useEffect, useState, useMemo } from "react";
-import { Gamepad2, GraduationCap, HelpCircle, PartyPopper, BookOpen, Layers, Search } from "lucide-react";
+import { Gamepad2, GraduationCap, HelpCircle, PartyPopper, BookOpen, Layers, Search, ScrollText } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
 import LessonPlayer from "@/components/learn/LessonPlayer";
 import GamesHub from "@/components/learn/GamesHub";
 import GrammarView from "@/components/learn/GrammarView";
+import ProverbsView from "@/components/learn/ProverbsView";
 import type {
   CourseSkill,
   UserProgress,
@@ -27,7 +28,7 @@ import Link from "next/link";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
-type PageView = "lessons" | "modules" | "games" | "playing" | "grammar";
+type PageView = "lessons" | "modules" | "games" | "playing" | "grammar" | "proverbs";
 
 export default function LanguageClientPage({ languageId }: { languageId: string }) {
   const course = getCourse(languageId);
@@ -54,6 +55,16 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     saveProgress(withHearts);
   }, [languageId]);
 
+  const handleToggleUnlockAll = useCallback(() => {
+    if (!progress) return;
+    const updated: UserProgress = {
+      ...progress,
+      unlockAll: !progress.unlockAll,
+    };
+    setProgress(updated);
+    saveProgress(updated);
+  }, [progress]);
+
   const findSkill = useCallback(
     (skillId: string): CourseSkill | null => {
       if (!course) return null;
@@ -71,7 +82,6 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       const skill = findSkill(skillId);
       if (!skill || !progress) return;
       const reviewItems = getDueReviews(progress);
-      // Ensure the user can always start any module even if hearts ran low
       if (progress.hearts <= 0) {
         const restored = { ...progress, hearts: MAX_HEARTS, heartsLastRefill: Date.now() };
         setProgress(restored);
@@ -123,7 +133,6 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     }
   }, [progress]);
 
-  // Filtered units/skills for the "All Modules & Vocabulary" overview tab
   const filteredModules = useMemo(() => {
     if (!course) return [];
     const q = moduleSearch.trim().toLowerCase();
@@ -190,16 +199,16 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       tool={LEARN_TOOL}
       breadcrumbSuffix={[{ label: course.config.name }]}
     >
-      {/* Quick Language Switcher Across All Published Courses */}
+      {/* Multi-Row Wrapping Language Switcher Grid (no horizontal scrolling) */}
       {view !== "playing" && (
-        <div className="mb-5 flex gap-1.5 overflow-x-auto pb-1.5 scrollbar-hide">
+        <div className="mb-5 flex flex-wrap gap-1.5">
           {PUBLISHED_COURSES.map((c) => {
             const active = c.config.id === course.config.id;
             return (
               <Link
                 key={c.config.id}
                 href={`/tools/learn/${c.config.id}`}
-                className={`shrink-0 rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all border ${
+                className={`rounded-xl px-3 py-1.5 text-xs font-semibold transition-all border ${
                   active
                     ? "bg-gold text-kenya-black border-gold font-bold"
                     : "bg-bg-card border-border text-text-secondary hover:border-gold hover:text-text-primary"
@@ -222,14 +231,15 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         </div>
       )}
 
+      {/* Wrapping Navigation Tabs (Skill Path | All Modules | Games | Grammar | Proverbs & Wisdom) */}
       {view !== "playing" && (
-        <div className="mb-6 flex justify-center px-2 sm:px-4">
-          <div className="inline-flex items-center gap-1 rounded-2xl border border-border bg-bg-card p-1 shadow-sm max-w-full overflow-x-auto scrollbar-hide">
+        <div className="mb-6 flex justify-center px-1">
+          <div className="flex flex-wrap items-center justify-center gap-1 rounded-2xl border border-border bg-bg-card p-1.5 shadow-sm w-full sm:w-auto">
             <button
               onClick={() => setView("lessons")}
               role="tab"
               aria-selected={view === "lessons"}
-              className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3.5 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
                 view === "lessons"
                   ? "bg-gold text-kenya-black shadow-xs font-bold"
                   : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
@@ -242,7 +252,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               onClick={() => setView("modules")}
               role="tab"
               aria-selected={view === "modules"}
-              className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3.5 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
                 view === "modules"
                   ? "bg-gold text-kenya-black shadow-xs font-bold"
                   : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
@@ -255,7 +265,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               onClick={() => setView("games")}
               role="tab"
               aria-selected={view === "games"}
-              className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3.5 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
                 view === "games"
                   ? "bg-gold text-kenya-black shadow-xs font-bold"
                   : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
@@ -269,7 +279,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 onClick={() => setView("grammar")}
                 role="tab"
                 aria-selected={view === "grammar"}
-                className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3.5 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all whitespace-nowrap ${
+                className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
                   view === "grammar"
                     ? "bg-gold text-kenya-black shadow-xs font-bold"
                     : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
@@ -279,6 +289,19 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 <span>Grammar</span>
               </button>
             )}
+            <button
+              onClick={() => setView("proverbs")}
+              role="tab"
+              aria-selected={view === "proverbs"}
+              className={`flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold transition-all ${
+                view === "proverbs"
+                  ? "bg-gold text-kenya-black shadow-xs font-bold"
+                  : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
+              }`}
+            >
+              <ScrollText className="h-4 w-4 shrink-0" />
+              <span>Proverbs &amp; Wisdom</span>
+            </button>
           </div>
         </div>
       )}
@@ -319,13 +342,14 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               />
             </div>
 
-            <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-hide">
+            {/* Wrapping Unit Filter Chips (no horizontal scrolling) */}
+            <div className="flex flex-wrap gap-1.5">
               <button
                 onClick={() => setSelectedUnitFilter("all")}
-                className={`shrink-0 px-3 py-1 rounded-full text-xs font-semibold ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold ${
                   selectedUnitFilter === "all"
-                    ? "bg-gold text-kenya-black"
-                    : "bg-bg-elevated border border-border text-text-secondary"
+                    ? "bg-gold text-kenya-black font-bold"
+                    : "bg-bg-elevated border border-border text-text-secondary hover:border-gold/40"
                 }`}
               >
                 All Units ({course.units.length})
@@ -334,10 +358,10 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 <button
                   key={u.id}
                   onClick={() => setSelectedUnitFilter(u.id)}
-                  className={`shrink-0 px-3 py-1 rounded-full text-xs font-semibold ${
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold ${
                     selectedUnitFilter === u.id
-                      ? "bg-gold text-kenya-black"
-                      : "bg-bg-elevated border border-border text-text-secondary"
+                      ? "bg-gold text-kenya-black font-bold"
+                      : "bg-bg-elevated border border-border text-text-secondary hover:border-gold/40"
                   }`}
                 >
                   Unit {idx + 1}: {u.title.replace(/^Unit \d+:\s*/i, "")}
@@ -422,6 +446,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           sections={course.grammarSections}
           languageName={course.config.name}
         />
+      ) : view === "proverbs" ? (
+        <ProverbsView defaultLanguageId={course.config.id} />
       ) : (
         <SkillTree
           units={course.units}
@@ -429,6 +455,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           config={course.config}
           onStartLesson={handleStartLesson}
           onStartReview={handleStartReview}
+          onToggleUnlockAll={handleToggleUnlockAll}
           onGoBack={() => {
             window.location.href = "/tools/learn";
           }}

@@ -1,0 +1,16 @@
+{
+  "lastUpdated": "2026-10-01",
+  "source": "SASRA (SACCO Societies Regulatory Authority) Annual Supervision Report",
+  "sourceUrl": "https://www.sasra.go.ke",
+  "withholdingTaxRate": 0.05,
+  "topSaccos": [
+    { "id": "mwalimu", "name": "Mwalimu National SACCO", "dividendRate": 14.0, "rebateRate": 11.0, "loanMultiplier": 3.5, "monthlyInterestReducing": 1.0, "minShareCapital": 30000 },
+    { "id": "stima", "name": "Stima SACCO", "dividendRate": 15.0, "rebateRate": 11.0, "loanMultiplier": 4.0, "monthlyInterestReducing": 1.0, "minShareCapital": 25000 },
+    { "id": "kentours", "name": "Kentours SACCO", "dividendRate": 16.5, "rebateRate": 12.5, "loanMultiplier": 3.5, "monthlyInterestReducing": 1.0, "minShareCapital": 20000 },
+    { "id": "safaricom", "name": "Safaricom SACCO", "dividendRate": 16.0, "rebateRate": 12.0, "loanMultiplier": 4.0, "monthlyInterestReducing": 1.0, "minShareCapital": 40000 },
+    { "id": "polisi", "name": "Kenya National Police DT SACCO", "dividendRate": 17.0, "rebateRate": 11.5, "loanMultiplier": 4.0, "monthlyInterestReducing": 1.0, "minShareCapital": 25000 },
+    { "id": "harambee", "name": "Harambee SACCO", "dividendRate": 12.0, "rebateRate": 9.5, "loanMultiplier": 3.0, "monthlyInterestReducing": 1.0, "minShareCapital": 30000 },
+    { "id": "tower", "name": "Tower SACCO", "dividendRate": 20.0, "rebateRate": 13.0, "loanMultiplier": 3.5, "monthlyInterestReducing": 1.0, "minShareCapital": 30000 },
+    { "id": "unaitas", "name": "Unaitas SACCO", "dividendRate": 12.5, "rebateRate": 10.0, "loanMultiplier": 3.5, "monthlyInterestReducing": 1.0, "minShareCapital": 20000 }
+  ]
+}

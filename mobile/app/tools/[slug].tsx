@@ -36,6 +36,9 @@ import {
   StampDutyCalculator,
   VehicleInsuranceCalculator,
   WaterBillCalculator,
+  KraCarImportCalculator,
+  MjengoConstructionCalculator,
+  SaccoChamaCalculator,
 } from "../../src/tools/FinanceTools";
 
 import {
@@ -87,7 +90,6 @@ const CONSOLIDATED_SUITES: SuiteConfig[] = [
     hubLabel: "🏛️ 47 Counties Hub",
     members: [
       "ward-constituency-finder",
-      "county-budget-tracker",
       "kenya-rainfall-patterns",
       "kenya-postal-codes",
     ],
@@ -96,7 +98,7 @@ const CONSOLIDATED_SUITES: SuiteConfig[] = [
     name: "Salary, Tax & Deductions Suite",
     members: [
       "paye-calculator",
-      "housing-levy-calculator",
+      "sacco-chama-calculator",
       "helb-calculator",
       "mpesa-fee-calculator",
     ],
@@ -118,7 +120,7 @@ const CONSOLIDATED_SUITES: SuiteConfig[] = [
     hubRoute: "/(tabs)/matatu",
     hubLabel: "🚌 Matatu Hub",
     members: [
-      "matatu-routes",
+      "kra-car-import-calculator",
       "number-plate-decoder",
       "driving-license-guide",
       "traffic-fines",
@@ -130,7 +132,6 @@ const CONSOLIDATED_SUITES: SuiteConfig[] = [
     members: [
       "learn",
       "kenyan-translator",
-      "kikuyu-proverbs",
       "kenya-languages",
     ],
   },
@@ -245,6 +246,12 @@ export default function ToolDetailScreen() {
         return <VehicleInsuranceCalculator />;
       case "water-bill-calculator":
         return <WaterBillCalculator />;
+      case "kra-car-import-calculator":
+        return <KraCarImportCalculator />;
+      case "mjengo-construction-calculator":
+        return <MjengoConstructionCalculator />;
+      case "sacco-chama-calculator":
+        return <SaccoChamaCalculator />;
       case "solar-roi-calculator":
         return <SolarRoiTool />;
       case "number-plate-decoder":
@@ -272,7 +279,7 @@ export default function ToolDetailScreen() {
       case "kcse-grade-calculator":
         return <KcseCalculatorTool />;
       case "kikuyu-proverbs":
-        return <KikuyuProverbsTool />;
+        return <LanguageLearningTool />;
       case "kenyan-translator":
         return <KenyanTranslatorTool />;
       case "learn":
@@ -451,11 +458,7 @@ export default function ToolDetailScreen() {
                 >
                   {activeSuite.name.toUpperCase()}
                 </Text>
-                <ScrollView
-                  horizontal
-                  showsHorizontalScrollIndicator={false}
-                  contentContainerStyle={{ gap: 6 }}
-                >
+                <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
                   {activeSuite.hubRoute && (
                     <Pressable
                       onPress={() => router.push(activeSuite.hubRoute as any)}
@@ -521,7 +524,7 @@ export default function ToolDetailScreen() {
                       </Pressable>
                     );
                   })}
-                </ScrollView>
+                </View>
               </View>
             )}
           </View>
@@ -708,7 +711,7 @@ export default function ToolDetailScreen() {
                             styles.relatedDesc,
                             { color: theme.textSecondary },
                           ]}
-                          numberOfLines={1}
+                          
                         >
                           {rel.description}
                         </Text>

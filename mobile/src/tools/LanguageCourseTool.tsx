@@ -13,6 +13,10 @@ import { Feather } from '@expo/vector-icons';
 import { useTheme, androidRipple } from '../theme';
 import { PUBLISHED_COURSES, getCourse } from '../shared/data/courses/registry';
 import { getSourcesForLanguage } from '../shared/data/language-sources';
+import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
+import { luoProverbs } from '../shared/data/courses/luo/proverbs';
+import { luoRiddles } from '../shared/data/courses/luo/riddles';
+import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
 import { generateExercises, checkAnswer } from '../shared/lib/learn-engine';
 import {
   isSkillUnlocked,
@@ -65,6 +69,7 @@ interface LanguageProgress {
   gamesPlayed: number;
   perfectLessons: number;
   unlockedAchievements: string[];
+  unlockAll?: boolean;
 }
 
 const STORAGE_KEY_V2 = '@kenyahub_course_progress_v2';
@@ -87,6 +92,7 @@ function createDefaultLanguageProgress(langId: string): LanguageProgress {
     gamesPlayed: 0,
     perfectLessons: 0,
     unlockedAchievements: [],
+    unlockAll: false,
   };
 }
 
@@ -150,7 +156,7 @@ function renderFormattedText(
   return <Text style={baseStyle}>{parts}</Text>;
 }
 
-type MainTab = 'learn' | 'cards' | 'games' | 'grammar';
+type MainTab = 'learn' | 'cards' | 'games' | 'grammar' | 'proverbs';
 type LessonStage = 'idle' | 'learn' | 'practice' | 'complete';
 type ActiveGame = 'menu' | 'scramble' | 'speed' | 'memory' | 'wordle';
 
@@ -367,6 +373,14 @@ export default function LanguageCourseTool() {
   // ── Grammar Tab State ──
   const [grammarSearch, setGrammarSearch] = useState('');
   const [expandedGrammarId, setExpandedGrammarId] = useState<string | null>(null);
+
+  // ── Proverbs & Oral Wisdom Tab State ──
+  const [wisdomLang, setWisdomLang] = useState<'kikuyu' | 'luo'>('kikuyu');
+  const [luoSubTab, setLuoSubTab] = useState<'proverbs' | 'riddles' | 'twisters'>('proverbs');
+  const [proverbSearch, setProverbSearch] = useState('');
+  const [proverbCategory, setProverbCategory] = useState('All');
+  const [proverbPage, setProverbPage] = useState(1);
+  const [revealedRiddles, setRevealedRiddles] = useState<Record<number, boolean>>({});
 
   // ── Helper: Initialize Exercise State for Current Exercise ──
   const setupExerciseState = useCallback((ex: Exercise | undefined) => {
@@ -1514,12 +1528,8 @@ export default function LanguageCourseTool() {
         )}
       </View>
 
-      {/* 2. Horizontal M3 Language Filter Chips */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.langChipsScroll}
-      >
+      {/* 2. Multi-Row Wrapping Language Filter Grid (No Horizontal Scrolling) */}
+      <View style={styles.langChipsGrid}>
         {PUBLISHED_COURSES.map((course) => {
           const isSelected = course.config.id === selectedLangId;
           return (
@@ -1549,7 +1559,7 @@ export default function LanguageCourseTool() {
               )}
               <Text
                 style={{
-                  fontSize: 13,
+                  fontSize: 12.5,
                   fontWeight: isSelected ? '800' : '600',
                   color: isSelected ? colors.text : colors.textSecondary,
                 }}
@@ -1559,7 +1569,7 @@ export default function LanguageCourseTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </View>
 
       {/* 3. Selected Language Banner + Verified Sources */}
       {currentCourse && (
@@ -1605,7 +1615,7 @@ export default function LanguageCourseTool() {
           {languageSources.length > 0 && (
             <View style={styles.sourcesRow}>
               <Feather name="book" size={11} color={colors.textMuted} />
-              <Text style={[styles.sourcesText, { color: colors.textMuted }]} numberOfLines={2}>
+              <Text style={[styles.sourcesText, { color: colors.textMuted }]} >
                 Built from: {languageSources.map((s) => `${s.title} (${s.published})`).join(' • ')}
               </Text>
             </View>
@@ -1628,6 +1638,7 @@ export default function LanguageCourseTool() {
             ...(grammarSections.length > 0
               ? [{ id: 'grammar', label: 'Grammar', icon: 'book-open' }]
               : []),
+            { id: 'proverbs', label: 'Wisdom', icon: 'feather' },
           ] as { id: MainTab; label: string; icon: keyof typeof Feather.glyphMap }[]
         ).map((tab) => {
           const active = activeTab === tab.id;
@@ -1665,6 +1676,60 @@ export default function LanguageCourseTool() {
          ======================================================================== */}
       {activeTab === 'learn' && currentCourse && (
         <View style={styles.unitListWrap}>
+          {/* Progressive Path vs. Unlock All Modules Toggle */}
+          <View
+            style={[
+              styles.unlockBannerCard,
+              {
+                backgroundColor: colors.surfaceContainerLow,
+                borderColor: progress.unlockAll ? langColor : colors.outlineVariant,
+              },
+            ]}
+          >
+            <View style={{ flex: 1 }}>
+              <Text style={{ fontSize: 12.5, fontWeight: '800', color: colors.text }}>
+                {progress.unlockAll ? '🔓 All Modules Unlocked' : '🔒 Progressive Skill Path'}
+              </Text>
+              <Text style={{ fontSize: 11, color: colors.textSecondary, marginTop: 2 }}>
+                {progress.unlockAll
+                  ? 'Jump into any unit or skill immediately.'
+                  : 'Complete each skill to unlock the next, or unlock all at once.'}
+              </Text>
+            </View>
+            <Pressable
+              android_ripple={ripple}
+              onPress={() =>
+                saveLanguageProgress((prev) => ({
+                  ...prev,
+                  unlockAll: !prev.unlockAll,
+                }))
+              }
+              style={[
+                styles.unlockToggleBtn,
+                {
+                  backgroundColor: progress.unlockAll
+                    ? `${langColor}24`
+                    : colors.surfaceContainerHigh,
+                  borderColor: progress.unlockAll ? langColor : colors.outlineVariant,
+                },
+              ]}
+            >
+              <Feather
+                name={progress.unlockAll ? 'lock' : 'unlock'}
+                size={13}
+                color={progress.unlockAll ? langColor : colors.text}
+              />
+              <Text
+                style={{
+                  fontSize: 11.5,
+                  fontWeight: '800',
+                  color: progress.unlockAll ? langColor : colors.text,
+                }}
+              >
+                {progress.unlockAll ? 'Lock Path' : 'Unlock All'}
+              </Text>
+            </Pressable>
+          </View>
           {currentCourse.units.map((unit: CourseUnit, uIdx: number) => {
             const isExpanded = !!expandedUnitIds[unit.id];
             const completedInUnit = unit.skills.filter(
@@ -1697,7 +1762,7 @@ export default function LanguageCourseTool() {
 
                   <View style={{ flex: 1 }}>
                     <Text style={[styles.unitTitleText, { color: colors.text }]}>{unit.title}</Text>
-                    <Text style={[styles.unitDescText, { color: colors.textSecondary }]} numberOfLines={2}>
+                    <Text style={[styles.unitDescText, { color: colors.textSecondary }]} >
                       {unit.description}
                     </Text>
                     <Text style={{ fontSize: 11, fontWeight: '700', color: langColor, marginTop: 4 }}>
@@ -1726,7 +1791,8 @@ export default function LanguageCourseTool() {
                         sIdx,
                         uIdx,
                         skillLevelsMap,
-                        currentCourse.units
+                        currentCourse.units,
+                        Boolean(progress.unlockAll)
                       );
 
                       return (
@@ -1772,7 +1838,7 @@ export default function LanguageCourseTool() {
                               </View>
                               <Text
                                 style={[styles.skillNodeDesc, { color: colors.textSecondary }]}
-                                numberOfLines={2}
+                                
                               >
                                 {skill.description}
                               </Text>
@@ -1829,20 +1895,37 @@ export default function LanguageCourseTool() {
 
                               <Pressable
                                 android_ripple={ripple}
+                                disabled={!unlocked}
                                 onPress={() => startSkillLesson(skill, false)}
                                 style={[
                                   styles.skillStartBtn,
-                                  { backgroundColor: langColor },
+                                  {
+                                    backgroundColor: unlocked
+                                      ? langColor
+                                      : colors.surfaceContainerHighest,
+                                  },
                                 ]}
                               >
-                                <Text style={{ fontSize: 12, fontWeight: '800', color: '#000' }}>
-                                  {skillLevel === 0
+                                <Text
+                                  style={{
+                                    fontSize: 12,
+                                    fontWeight: '800',
+                                    color: unlocked ? '#000' : colors.textMuted,
+                                  }}
+                                >
+                                  {!unlocked
+                                    ? 'Locked'
+                                    : skillLevel === 0
                                     ? 'Start Lesson'
                                     : skillLevel >= 5
                                     ? 'Mastered • Review'
                                     : `Level ${skillLevel} → ${skillLevel + 1}`}
                                 </Text>
-                                <Feather name="arrow-right" size={13} color="#000" />
+                                <Feather
+                                  name={unlocked ? 'arrow-right' : 'lock'}
+                                  size={13}
+                                  color={unlocked ? '#000' : colors.textMuted}
+                                />
                               </Pressable>
                             </View>
                           </View>
@@ -2318,7 +2401,7 @@ export default function LanguageCourseTool() {
                           color: isOpen ? colors.text : colors.textMuted,
                           textAlign: 'center',
                         }}
-                        numberOfLines={2}
+                        
                       >
                         {isOpen ? card.text : '?'}
                       </Text>
@@ -2519,7 +2602,7 @@ export default function LanguageCourseTool() {
                     </Text>
                     <Text
                       style={[styles.grammarSectionSummary, { color: colors.textSecondary }]}
-                      numberOfLines={isOpen ? undefined : 2}
+                      
                     >
                       {section.summary}
                     </Text>
@@ -2618,6 +2701,380 @@ export default function LanguageCourseTool() {
           })}
         </View>
       )}
+      {/* ========================================================================
+          TAB 5: PROVERBS, RIDDLES & ORAL WISDOM (GĨKŨYŨ & DHOLUO)
+         ======================================================================== */}
+      {activeTab === 'proverbs' && (
+        <View style={styles.grammarTabWrap}>
+          {/* Language Switcher for Oral Wisdom */}
+          <View
+            style={[
+              styles.courseInfoCard,
+              { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant },
+            ]}
+          >
+            <Text style={{ fontSize: 14, fontWeight: '800', color: colors.text }}>
+              Kenyan Proverbs, Riddles & Oral Literature
+            </Text>
+            <Text style={{ fontSize: 12, color: colors.textSecondary }}>
+              Explore 989 verified Gĩkũyũ proverbs (Fr. G. Barra, 1939) and 600+ Dholuo proverbs, riddles, and tongue twisters.
+            </Text>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 6 }}>
+              <Pressable
+                onPress={() => {
+                  setWisdomLang('kikuyu');
+                  setProverbCategory('All');
+                  setProverbPage(1);
+                }}
+                style={[
+                  styles.langFilterChip,
+                  {
+                    backgroundColor:
+                      wisdomLang === 'kikuyu' ? 'rgba(16,185,129,0.2)' : colors.surfaceContainerHigh,
+                    borderColor: wisdomLang === 'kikuyu' ? '#10B981' : colors.outlineVariant,
+                  },
+                ]}
+              >
+                <Text style={{ fontSize: 12, fontWeight: '800', color: colors.text }}>
+                  🌿 Gĩkũyũ Proverbs (989)
+                </Text>
+              </Pressable>
+              <Pressable
+                onPress={() => {
+                  setWisdomLang('luo');
+                  setProverbCategory('All');
+                  setProverbPage(1);
+                }}
+                style={[
+                  styles.langFilterChip,
+                  {
+                    backgroundColor:
+                      wisdomLang === 'luo' ? 'rgba(14,165,233,0.2)' : colors.surfaceContainerHigh,
+                    borderColor: wisdomLang === 'luo' ? '#0EA5E9' : colors.outlineVariant,
+                  },
+                ]}
+              >
+                <Text style={{ fontSize: 12, fontWeight: '800', color: colors.text }}>
+                  🌊 Dholuo Wisdom ({luoProverbs.length + luoRiddles.length + luoTongueTwisters.length})
+                </Text>
+              </Pressable>
+            </View>
+
+            {wisdomLang === 'luo' && (
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 6 }}>
+                {[
+                  { id: 'proverbs' as const, label: `Proverbs (${luoProverbs.length})` },
+                  { id: 'riddles' as const, label: `Riddles (${luoRiddles.length})` },
+                  { id: 'twisters' as const, label: `Tongue Twisters (${luoTongueTwisters.length})` },
+                ].map((sub) => (
+                  <Pressable
+                    key={sub.id}
+                    onPress={() => {
+                      setLuoSubTab(sub.id);
+                      setProverbPage(1);
+                    }}
+                    style={{
+                      paddingHorizontal: 10,
+                      paddingVertical: 6,
+                      borderRadius: 10,
+                      backgroundColor:
+                        luoSubTab === sub.id ? '#0EA5E9' : colors.surfaceContainerHigh,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontSize: 11.5,
+                        fontWeight: '800',
+                        color: luoSubTab === sub.id ? '#000' : colors.textSecondary,
+                      }}
+                    >
+                      {sub.label}
+                    </Text>
+                  </Pressable>
+                ))}
+              </View>
+            )}
+          </View>
+
+          {/* Search Input */}
+          <View
+            style={[
+              styles.m3SearchBar,
+              { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant },
+            ]}
+          >
+            <Feather name="search" size={16} color={colors.textMuted} />
+            <TextInput
+              value={proverbSearch}
+              onChangeText={(t) => {
+                setProverbSearch(t);
+                setProverbPage(1);
+              }}
+              placeholder={
+                wisdomLang === 'kikuyu'
+                  ? 'Search Gĩkũyũ proverb, English meaning, or #...'
+                  : 'Search Dholuo proverb, riddle, or meaning...'
+              }
+              placeholderTextColor={colors.textMuted}
+              style={{ flex: 1, fontSize: 13, color: colors.text, paddingVertical: 6 }}
+            />
+            {proverbSearch.length > 0 && (
+              <Pressable onPress={() => setProverbSearch('')}>
+                <Feather name="x-circle" size={15} color={colors.textMuted} />
+              </Pressable>
+            )}
+          </View>
+
+          {/* Wrapping Theme Chips (No Horizontal Scroll) */}
+          {(wisdomLang === 'kikuyu' || (wisdomLang === 'luo' && luoSubTab === 'proverbs')) && (
+            <View style={styles.langChipsGrid}>
+              {(wisdomLang === 'kikuyu'
+                ? ['All', ...(kikuyuProverbsData.categories || [])]
+                : ['All', 'wisdom', 'warning', 'truth', 'patience', 'family', 'character', 'life']
+              ).map((cat) => {
+                const active = proverbCategory === cat;
+                return (
+                  <Pressable
+                    key={cat}
+                    onPress={() => {
+                      setProverbCategory(cat);
+                      setProverbPage(1);
+                    }}
+                    style={{
+                      paddingHorizontal: 10,
+                      paddingVertical: 5,
+                      borderRadius: 10,
+                      borderWidth: 1,
+                      backgroundColor: active ? `${langColor}22` : colors.surfaceContainerLow,
+                      borderColor: active ? langColor : colors.outlineVariant,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontSize: 11,
+                        fontWeight: active ? '800' : '600',
+                        color: active ? colors.text : colors.textSecondary,
+                        textTransform: 'capitalize',
+                      }}
+                    >
+                      {cat}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </View>
+          )}
+
+          {/* Kikuyu Proverbs List */}
+          {wisdomLang === 'kikuyu' &&
+            (() => {
+              const q = proverbSearch.trim().toLowerCase();
+              const filtered = (kikuyuProverbsData.proverbs || []).filter((p) => {
+                if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
+                if (!q) return true;
+                return (
+                  p.kikuyu.toLowerCase().includes(q) ||
+                  p.literal.toLowerCase().includes(q) ||
+                  p.meaning.toLowerCase().includes(q) ||
+                  String(p.number) === q
+                );
+              });
+              const visible = filtered.slice(0, proverbPage * 20);
+              return (
+                <View style={{ gap: 10 }}>
+                  <Text style={{ fontSize: 11, color: colors.textMuted }}>
+                    Showing {visible.length} of {filtered.length} Gĩkũyũ proverbs
+                  </Text>
+                  {visible.map((p) => (
+                    <View
+                      key={p.number}
+                      style={[
+                        styles.grammarAccordionCard,
+                        {
+                          backgroundColor: colors.surfaceContainerLow,
+                          borderColor: colors.outlineVariant,
+                          padding: 14,
+                          gap: 6,
+                        },
+                      ]}
+                    >
+                      <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <Text style={{ fontSize: 11, fontWeight: '800', color: '#10B981' }}>
+                          Proverb #{p.number}
+                        </Text>
+                        <Text style={{ fontSize: 11, color: colors.textMuted }}>{p.category}</Text>
+                      </View>
+                      <Text style={{ fontSize: 15, fontWeight: '800', color: colors.text }}>
+                        “{p.kikuyu}”
+                      </Text>
+                      <Text style={{ fontSize: 12.5, fontStyle: 'italic', color: colors.textSecondary }}>
+                        Literal: {p.literal}
+                      </Text>
+                      {p.meaning && p.meaning !== p.literal ? (
+                        <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
+                          💡 {p.meaning}
+                        </Text>
+                      ) : null}
+                    </View>
+                  ))}
+                  {filtered.length > visible.length && (
+                    <Pressable
+                      onPress={() => setProverbPage((pg) => pg + 1)}
+                      style={[
+                        styles.m3OutlinedBtn,
+                        { alignSelf: 'center', borderColor: langColor },
+                      ]}
+                    >
+                      <Text style={{ fontSize: 12, fontWeight: '800', color: langColor }}>
+                        Load More ({filtered.length - visible.length} remaining)
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
+              );
+            })()}
+
+          {/* Luo Proverbs / Riddles / Twisters */}
+          {wisdomLang === 'luo' && luoSubTab === 'proverbs' &&
+            (() => {
+              const q = proverbSearch.trim().toLowerCase();
+              const filtered = luoProverbs.filter((p) => {
+                if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
+                if (!q) return true;
+                return (
+                  p.luo.toLowerCase().includes(q) ||
+                  (p.english || '').toLowerCase().includes(q) ||
+                  (p.meaning || '').toLowerCase().includes(q)
+                );
+              });
+              const visible = filtered.slice(0, proverbPage * 20);
+              return (
+                <View style={{ gap: 10 }}>
+                  <Text style={{ fontSize: 11, color: colors.textMuted }}>
+                    Showing {visible.length} of {filtered.length} Dholuo proverbs
+                  </Text>
+                  {visible.map((p, idx) => (
+                    <View
+                      key={p.id || idx}
+                      style={[
+                        styles.grammarAccordionCard,
+                        {
+                          backgroundColor: colors.surfaceContainerLow,
+                          borderColor: colors.outlineVariant,
+                          padding: 14,
+                          gap: 6,
+                        },
+                      ]}
+                    >
+                      <Text style={{ fontSize: 15, fontWeight: '800', color: colors.text }}>
+                        “{p.luo}”
+                      </Text>
+                      <Text style={{ fontSize: 12.5, fontStyle: 'italic', color: colors.textSecondary }}>
+                        {p.english}
+                      </Text>
+                      {(p.meaning || p.explanation) ? (
+                        <Text style={{ fontSize: 12, color: colors.textMuted }}>
+                          💡 {p.meaning || p.explanation}
+                        </Text>
+                      ) : null}
+                    </View>
+                  ))}
+                  {filtered.length > visible.length && (
+                    <Pressable
+                      onPress={() => setProverbPage((pg) => pg + 1)}
+                      style={[
+                        styles.m3OutlinedBtn,
+                        { alignSelf: 'center', borderColor: '#0EA5E9' },
+                      ]}
+                    >
+                      <Text style={{ fontSize: 12, fontWeight: '800', color: '#0EA5E9' }}>
+                        Load More ({filtered.length - visible.length} remaining)
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
+              );
+            })()}
+
+          {wisdomLang === 'luo' && luoSubTab === 'riddles' && (
+            <View style={{ gap: 10 }}>
+              {luoRiddles
+                .filter((r) => {
+                  const q = proverbSearch.trim().toLowerCase();
+                  return (
+                    !q ||
+                    r.luo.toLowerCase().includes(q) ||
+                    r.english.toLowerCase().includes(q) ||
+                    r.answer.toLowerCase().includes(q)
+                  );
+                })
+                .map((r) => {
+                  const open = !!revealedRiddles[r.id];
+                  return (
+                    <View
+                      key={r.id}
+                      style={[
+                        styles.grammarAccordionCard,
+                        {
+                          backgroundColor: colors.surfaceContainerLow,
+                          borderColor: colors.outlineVariant,
+                          padding: 14,
+                          gap: 6,
+                        },
+                      ]}
+                    >
+                      <Text style={{ fontSize: 14, fontWeight: '800', color: colors.text }}>
+                        “{r.luo}”
+                      </Text>
+                      <Text style={{ fontSize: 12.5, color: colors.textSecondary }}>
+                        {r.english}
+                      </Text>
+                      <Pressable
+                        onPress={() =>
+                          setRevealedRiddles((prev) => ({ ...prev, [r.id]: !prev[r.id] }))
+                        }
+                        style={{ alignSelf: 'flex-start', marginTop: 4 }}
+                      >
+                        <Text style={{ fontSize: 12, fontWeight: '800', color: langColor }}>
+                          {open ? 'Hide Answer' : 'Tap to Reveal Answer'}
+                        </Text>
+                      </Pressable>
+                      {open && (
+                        <Text style={{ fontSize: 12.5, fontWeight: '700', color: '#10B981' }}>
+                          → {r.answer}
+                        </Text>
+                      )}
+                    </View>
+                  );
+                })}
+            </View>
+          )}
+
+          {wisdomLang === 'luo' && luoSubTab === 'twisters' && (
+            <View style={{ gap: 10 }}>
+              {luoTongueTwisters.map((t) => (
+                <View
+                  key={t.id}
+                  style={[
+                    styles.grammarAccordionCard,
+                    {
+                      backgroundColor: colors.surfaceContainerLow,
+                      borderColor: colors.outlineVariant,
+                      padding: 14,
+                      gap: 6,
+                    },
+                  ]}
+                >
+                  <Text style={{ fontSize: 14, fontWeight: '800', color: colors.text }}>
+                    “{t.luo}”
+                  </Text>
+                  <Text style={{ fontSize: 12.5, color: colors.textSecondary }}>{t.english}</Text>
+                </View>
+              ))}
+            </View>
+          )}
+        </View>
+      )}
     </View>
   );
 }
@@ -2692,9 +3149,30 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
   },
-  langChipsScroll: {
+  langChipsGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: 8,
     paddingVertical: 2,
+  },
+  unlockBannerCard: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 10,
+    padding: 12,
+    borderRadius: 16,
+    borderWidth: 1,
+  },
+  unlockToggleBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 999,
+    borderWidth: 1,
   },
   langFilterChip: {
     flexDirection: 'row',
@@ -2755,19 +3233,23 @@ const styles = StyleSheet.create({
   },
   m3SegmentedBar: {
     flexDirection: 'row',
-    borderRadius: 999,
+    flexWrap: 'wrap',
+    borderRadius: 16,
     borderWidth: 1,
-    padding: 4,
-    gap: 4,
+    padding: 6,
+    gap: 6,
   },
   m3SegmentBtn: {
-    flex: 1,
+    flexGrow: 1,
+    flexBasis: '28%',
+    minWidth: 92,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 5,
+    gap: 6,
+    paddingHorizontal: 10,
     paddingVertical: 9,
-    borderRadius: 999,
+    borderRadius: 12,
   },
   unitListWrap: {
     gap: 12,
@@ -2812,6 +3294,7 @@ const styles = StyleSheet.create({
   },
   skillNodeTop: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     gap: 8,
@@ -2832,9 +3315,11 @@ const styles = StyleSheet.create({
   },
   skillNodeFooter: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginTop: 2,
+    gap: 8,
+    marginTop: 4,
   },
   skillSmallBtn: {
     flexDirection: 'row',
@@ -3312,13 +3797,15 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   memoryTile: {
-    width: '31%',
-    minHeight: 68,
+    flexGrow: 1,
+    flexBasis: '29%',
+    minWidth: 92,
+    minHeight: 74,
     borderRadius: 14,
     borderWidth: 1.5,
-    padding: 8,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 8,
   },
   wordleCell: {
     width: 38,

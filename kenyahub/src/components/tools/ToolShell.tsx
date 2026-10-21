@@ -28,7 +28,6 @@ const CONSOLIDATED_SUITES: SuiteConfig[] = [
     hubLabel: "🏛️ Open 47 Counties Hub",
     members: [
       "ward-constituency-finder",
-      "county-budget-tracker",
       "kenya-rainfall-patterns",
       "kenya-postal-codes",
     ],
@@ -37,7 +36,7 @@ const CONSOLIDATED_SUITES: SuiteConfig[] = [
     name: "Salary, Tax & Deductions Suite",
     members: [
       "paye-calculator",
-      "housing-levy-calculator",
+      "sacco-chama-calculator",
       "helb-calculator",
       "mpesa-fee-calculator",
     ],
@@ -59,7 +58,7 @@ const CONSOLIDATED_SUITES: SuiteConfig[] = [
     hubHref: "/matatu",
     hubLabel: "🚌 Open Matatu Routes Hub",
     members: [
-      "matatu-routes",
+      "kra-car-import-calculator",
       "number-plate-decoder",
       "driving-license-guide",
       "traffic-fines",
@@ -71,7 +70,6 @@ const CONSOLIDATED_SUITES: SuiteConfig[] = [
     members: [
       "learn",
       "kenyan-translator",
-      "kikuyu-proverbs",
       "kenya-languages",
     ],
   },

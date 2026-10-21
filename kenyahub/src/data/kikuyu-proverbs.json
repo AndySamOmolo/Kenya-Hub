@@ -122,8 +122,8 @@
   {
     "id": 16,
     "kikuyu": "Cia athuri inyuagira thutha",
-    "translation": "The elders drink afterwards (i.e.",
-    "explanation": "after the others).",
+    "translation": "The elders drink afterwards (i.e. after the others).",
+    "explanation": null,
     "englishEquivalent": "Elderly people are not in such a hurry as young ones.",
     "category": "community"
   },
@@ -131,7 +131,7 @@
     "id": 17,
     "kikuyu": "Ciakorire wacũ mũgũnda",
     "translation": "The food found Wacũ in the field.",
-    "explanation": "The proverb originates in the legend of Wacũ, the most despised amongst the wives of a rich man who never",
+    "explanation": "The proverb originates in the legend of Wacũ, the most despised amongst the wives of a rich man who never gave her any presents. One day, when a banquet was being held at home, she went to work in the field, since she knew there would be nothing for her at home. In the middle of the banquet a raven swooped down in the courtyard where the meat was being roasted, snatched a big piece and brought it to Wacũ. The Kikuyu use the proverb to say that God takes care of His poor.",
     "englishEquivalent": null,
     "category": "family"
   },
@@ -145,15 +145,15 @@
   },
   {
     "id": 19,
-    "kikuyu": "Cia mūciĩ irĩ gacūgūma gacio gatathukagio ni mūthuri",
-    "translation": "ūngĩ tīga mweneguo Home affairs have their staff, which cannot be brandished by anyone but the head of the house.",
+    "kikuyu": "Cia mũciĩ irĩ gacũgũma gacio gatathũkagio nĩ mũthuri ũngĩ tiga mweneguo",
+    "translation": "Home affairs have their staff, which cannot be brandished by anyone but the head of the house.",
     "explanation": "The proverb means either that private matters must not be spoken of to strangers or that in each house there must be only one in authority.",
     "englishEquivalent": null,
     "category": "family"
   },
   {
     "id": 20,
-    "kikuyu": "Cia mūciĩ itiumaga ndira",
+    "kikuyu": "Cia mũciĩ itiumaga ndira",
     "translation": "Home affairs must not go into the open.",
     "explanation": null,
     "englishEquivalent": "Do not wash dirty linen in public",
@@ -161,7 +161,7 @@
   },
   {
     "id": 21,
-    "kikuyu": "Cia mūciĩ ti como",
+    "kikuyu": "Cia mũciĩ ti como",
     "translation": "Home affairs cannot be told in public.",
     "explanation": null,
     "englishEquivalent": "Do not wash dirty linen in public",
@@ -177,9 +177,9 @@
   },
   {
     "id": 23,
-    "kikuyu": "Ciathanaga ikigũā, itiathanaga ikiũmbũka",
+    "kikuyu": "Ciathanaga ikigũa, itiathanaga ikiũmbũka",
     "translation": "Birds agree when flying down, but do not agree when flying up.",
-    "explanation": null,
+    "explanation": "The proverb means that it is easy for a swarm of birds to alight together, while it is difficult to get up together since after eating their fill they will fly up separately. Morally the proverb means that men easily agree when deciding on an enterprise, but will probably quarrel as soon as they have obtained what they want.",
     "englishEquivalent": null,
     "category": "nature"
   },
@@ -233,7 +233,7 @@
   },
   {
     "id": 30,
-    "kikuyu": "Cira mūnene ni wa ūthoni ūgikua",
+    "kikuyu": "Cira mũnene ni wa ũthoni ũgikua",
     "translation": "The breaking-up of a betrothal is no small matter.",
     "explanation": "Marrying a girl means giving a large number of goats or cattle to her family. Starting from the day of the betrothal the price is paid gradually. Evidently it is no simple matter if the would-be husband breaks his contract and demands the return of the marriage price.",
     "englishEquivalent": null,
@@ -241,7 +241,7 @@
   },
   {
     "id": 31,
-    "kikuyu": "Cira wa kirimũ ūtindaga kiharo",
+    "kikuyu": "Cira wa kirimũ ũtindaga kiharo",
     "translation": "The lawsuit of a fool keeps the court (sitting) all day.",
     "explanation": null,
     "englishEquivalent": "The lawsuit of a fool never comes to an end.",
@@ -249,7 +249,7 @@
   },
   {
     "id": 32,
-    "kikuyu": "Cira wa mūciĩ ndumagirio kiharo",
+    "kikuyu": "Cira wa mũciĩ ndumagirio kiharo",
     "translation": "Home affairs are not to be carried on in the public square.",
     "explanation": null,
     "englishEquivalent": "Do not wash dirty linen in public.",
@@ -265,7 +265,7 @@
   },
   {
     "id": 34,
-    "kikuyu": "Ciunagwo rūkomo, kimenyi akamenya ikiunwo",
+    "kikuyu": "Ciunagwo rũkomo, kimenyi akamenya ikiunwo",
     "translation": "We speak by proverbs: he who is intelligent will understand .",
     "explanation": null,
     "englishEquivalent": "Intelligenti pauca.",
@@ -321,7 +321,7 @@
   },
   {
     "id": 41,
-    "kikuyu": "Gathutha konagia mündũ njira",
+    "kikuyu": "Gathutha konagia mũndũ njira",
     "translation": "A little, contemptible path is sometimes the one that leads you to the highway.",
     "explanation": null,
     "englishEquivalent": "Little strokes fell great oaks.",
@@ -353,7 +353,7 @@
   },
   {
     "id": 45,
-    "kikuyu": "Gatuma kainagia mūrigwa",
+    "kikuyu": "Gatuma kainagia mũrigwa",
     "translation": "Darkness causes to dance even him who cannot.",
     "explanation": null,
     "englishEquivalent": "All cats are the same in colour at night.",
@@ -377,7 +377,7 @@
   },
   {
     "id": 48,
-    "kikuyu": "Giathi kiri mūrugirwo",
+    "kikuyu": "Giathi kiri mũrugirwo",
     "translation": "Every feast has its guest of honour.",
     "explanation": null,
     "englishEquivalent": null,
@@ -393,7 +393,7 @@
   },
   {
     "id": 50,
-    "kikuyu": "Giathi kiũũ no kia mūrokerero",
+    "kikuyu": "Giathi kiũũ no kia mũrokerero",
     "translation": "That of circumcision is a hard appointment.",
     "explanation": "The Kikuyu circumcision is a civil and religious rite by which the adolescent is admitted into the public life of the tribe and becomes a man in the full possession of his rights. The ceremony is physically painful, but the candidate is expected to face the operation without wincing.",
     "englishEquivalent": "There are no gains without pains.",
@@ -411,8 +411,8 @@
     "id": 52,
     "kikuyu": "Gicegũ kia andũ aingi ti kiega",
     "translation": "The 'gicegũ' of many men is not good.",
-    "explanation": null,
-    "englishEquivalent": null,
+    "explanation": "‘Gĩcegũ’ is that part of the Kikuyu hut where they enclose the ram in order to fatten it.",
+    "englishEquivalent": "Too many cooks spoil the broth.",
     "category": "wisdom"
   },
   {
@@ -537,7 +537,7 @@
   },
   {
     "id": 68,
-    "kikuyu": "Gūceera ni kūhīga",
+    "kikuyu": "Gũceera ni kũhĩga",
     "translation": "Travelling is learning.",
     "explanation": null,
     "englishEquivalent": "The world is a great book, of which they that never stir read only one page.",
@@ -545,7 +545,7 @@
   },
   {
     "id": 69,
-    "kikuyu": "Gūcekeha ti gūicūhio",
+    "kikuyu": "Gũcekeha ti gũicũhio",
     "translation": "To be slim does not mean having been pared.",
     "explanation": null,
     "englishEquivalent": "Do not scorn little things.",
@@ -553,7 +553,7 @@
   },
   {
     "id": 70,
-    "kikuyu": "Gūciara kunaga irigū ngingo",
+    "kikuyu": "Gũciara kunaga irigũ ngingo",
     "translation": "The woman who gives birth to a child is like the banana tree that breaks under the weight of its fruit.",
     "explanation": null,
     "englishEquivalent": "Maternity means pain to the mother.",
@@ -561,7 +561,7 @@
   },
   {
     "id": 71,
-    "kikuyu": "Gūciara ūru ti kwenda kwa mwene",
+    "kikuyu": "Gũciara ũru ti kwenda kwa mwene",
     "translation": "It is not the mother’s will to have a bad offspring.",
     "explanation": null,
     "englishEquivalent": null,
@@ -569,7 +569,7 @@
   },
   {
     "id": 72,
-    "kikuyu": "Gūcukagwo ūtagūteo",
+    "kikuyu": "Gũcukagwo ũtagũteo",
     "translation": "People slander somebody even if they do not despise him.",
     "explanation": null,
     "englishEquivalent": null,
@@ -577,7 +577,7 @@
   },
   {
     "id": 73,
-    "kikuyu": "Gūkiara na gūtonga ititiganaga",
+    "kikuyu": "Gũkiara na gũtonga ititiganaga",
     "translation": "Riches and poverty do not leave each other.",
     "explanation": null,
     "englishEquivalent": null,
@@ -585,7 +585,7 @@
   },
   {
     "id": 74,
-    "kikuyu": "Gūkira kūri ngatho",
+    "kikuyu": "Gũkira kũri ngatho",
     "translation": "To keep one’s tongue is worthy of praise.",
     "explanation": null,
     "englishEquivalent": "Silence is golden.",
@@ -593,7 +593,7 @@
   },
   {
     "id": 75,
-    "kikuyu": "Gūkira ni gūthūrana",
+    "kikuyu": "Gũkira ni gũthũrana",
     "translation": "Not to talk is to hate.",
     "explanation": null,
     "englishEquivalent": "One keeps silence with people one does not like.",
@@ -601,7 +601,7 @@
   },
   {
     "id": 76,
-    "kikuyu": "Gūkiririria kwagira kieha",
+    "kikuyu": "Gũkiririria kwagira kieha",
     "translation": "Indulgence breeds regret.",
     "explanation": null,
     "englishEquivalent": null,
@@ -609,7 +609,7 @@
   },
   {
     "id": 77,
-    "kikuyu": "Gūkūra ni kūru: ngathī ūrīrī ngicayaga",
+    "kikuyu": "Gũkũra ni kũru: ngathĩ ũrĩrĩ ngicayaga",
     "translation": "It is bad to get old, for one goes to bed grumbling.",
     "explanation": null,
     "englishEquivalent": "Old sacks want much patching.",
@@ -617,7 +617,7 @@
   },
   {
     "id": 78,
-    "kikuyu": "Gūkuhiriria mbaara tikuo kūrūa",
+    "kikuyu": "Gũkuhiriria mbaara tikuo kũrũa",
     "translation": "The fact that you have gone near the battle-field does not mean that you fought.",
     "explanation": null,
     "englishEquivalent": null,
@@ -625,7 +625,7 @@
   },
   {
     "id": 79,
-    "kikuyu": "Gükungagwo ūtukũ ti mũthenya",
+    "kikuyu": "Gũkungagwo ũtukũ ti mũthenya",
     "translation": "Thieves conceal themselves in the night not in the day.",
     "explanation": null,
     "englishEquivalent": "The night is a cloak for sinners.",
@@ -633,7 +633,7 @@
   },
   {
     "id": 80,
-    "kikuyu": "Guota mwaki ni gúcera",
+    "kikuyu": "Guota mwaki ni gũcera",
     "translation": "To get the warmth of fire one must stir the embers.",
     "explanation": null,
     "englishEquivalent": "No gains without pains.",
@@ -641,7 +641,7 @@
   },
   {
     "id": 81,
-    "kikuyu": "Guoya ūtūragia ūkia mūcii",
+    "kikuyu": "Guoya ũtũragia ũkia mũcii",
     "translation": "The fear (of toil) keeps your house poor.",
     "explanation": null,
     "englishEquivalent": "Idleness is the key of beggary.",
@@ -649,7 +649,7 @@
   },
   {
     "id": 82,
-    "kikuyu": "Gūteithagio witeithitie",
+    "kikuyu": "Gũteithagio witeithitie",
     "translation": "If you help yourself you will be helped.",
     "explanation": null,
     "englishEquivalent": "God helps those who help themselves.",
@@ -657,7 +657,7 @@
   },
   {
     "id": 83,
-    "kikuyu": "Gūtema na kanua ti gūtema na rūhiū",
+    "kikuyu": "Gũtema na kanua ti gũtema na rũhiũ",
     "translation": "Cutting by the tongue is different from cutting by the knife.",
     "explanation": "Slander is not mortal stabbing.",
     "englishEquivalent": "Hard words break no bones.",
@@ -665,7 +665,7 @@
   },
   {
     "id": 84,
-    "kikuyu": "Gūthama nikuo kūhika kwa arūme",
+    "kikuyu": "Gũthama nikuo kũhika kwa arũme",
     "translation": "A man changing his abode is like a woman marrying.",
     "explanation": "As a woman, on marrying, adopts the customs of the family she enters, so a man going to live in a strange country, must accept its customs.",
     "englishEquivalent": "When in Rome do as Rome does.",
@@ -673,7 +673,7 @@
   },
   {
     "id": 85,
-    "kikuyu": "Gūthekererwo ni andũ ti kūririrwo ni hiti",
+    "kikuyu": "Gũthekererwo ni andũ ti kũririrwo ni hiti",
     "translation": "To be laughed at by men is not to be wept by hyenas.",
     "explanation": null,
     "englishEquivalent": "Better to be laughed at than to die.",
@@ -681,7 +681,7 @@
   },
   {
     "id": 86,
-    "kikuyu": "Gūthekererwo ti kūririrwo",
+    "kikuyu": "Gũthekererwo ti kũririrwo",
     "translation": "To be laughed at is not to be pitied.",
     "explanation": "One starting any enterprise ought not to fear what others say of him.",
     "englishEquivalent": "Do well and dread no shame.",
@@ -689,7 +689,7 @@
   },
   {
     "id": 87,
-    "kikuyu": "Gūthekio ti kwendwo",
+    "kikuyu": "Gũthekio ti kwendwo",
     "translation": "If anybody makes you laugh, it is not always because he loves you.",
     "explanation": null,
     "englishEquivalent": "Eat a peck of salt with a man before you trust him.",
@@ -697,7 +697,7 @@
   },
   {
     "id": 88,
-    "kikuyu": "Gũthigagio mbura gũtongítwo matũgũta",
+    "kikuyu": "Gũthigagio mbura gũtongĩtwo matũgũta",
     "translation": "Some hope for rain even though they have not prepared their fields.",
     "explanation": null,
     "englishEquivalent": "He who hopes for favours should have prepared himself to profit by them.",
@@ -769,7 +769,7 @@
   },
   {
     "id": 97,
-    "kikuyu": "Gũthũragwo mündũ ũriendwo",
+    "kikuyu": "Gũthũragwo mũndũ ũriendwo",
     "translation": "A man is (sometimes) scorned who will be loved (later on).",
     "explanation": null,
     "englishEquivalent": "Judge not of men or things at first sight.",
@@ -825,7 +825,7 @@
   },
   {
     "id": 104,
-    "kikuyu": "Gũtiri mũciĩ na mũcũthĩríria",
+    "kikuyu": "Gũtiri mũciĩ na mũcũthĩrĩria",
     "translation": "There is no difference between the thief and the looker-on.",
     "explanation": null,
     "englishEquivalent": null,
@@ -841,7 +841,7 @@
   },
   {
     "id": 106,
-    "kikuyu": "Gũtirĩ mündũ ũĩ haria egũthĩĩ no haria ekuuma",
+    "kikuyu": "Gũtirĩ mũndũ ũĩ haria egũthĩĩ no haria ekuuma",
     "translation": "Nobody knows where he goes, but only whence he comes.",
     "explanation": null,
     "englishEquivalent": "No one can see into the future.",
@@ -849,7 +849,7 @@
   },
   {
     "id": 107,
-    "kikuyu": "Gũtirĩ mündũ wendaga gũtũngana na nyoni njũru",
+    "kikuyu": "Gũtirĩ mũndũ wendaga gũtũngana na nyoni njũru",
     "translation": "Nobody wants to meet an ill-omened bird.",
     "explanation": "To the Kikuyu many birds foreshadow calamity. The cry of the owl forebodes mishap. If the owl cries, perched on the top of a hut, the oldest man in that village will die very soon. If someone, about to make a journey, hears the cry of any bird of ill-omen, he must not start on any account.",
     "englishEquivalent": "Nobody seeks his own ruin.",
@@ -857,7 +857,7 @@
   },
   {
     "id": 108,
-    "kikuyu": "Gũtirĩ mündũ ũtangituĩka wa ndigwa",
+    "kikuyu": "Gũtirĩ mũndũ ũtangituĩka wa ndigwa",
     "translation": "There is no man that cannot become an orphan.",
     "explanation": null,
     "englishEquivalent": "No flying from fate.",
@@ -865,7 +865,7 @@
   },
   {
     "id": 109,
-    "kikuyu": "Gũtirĩ mündũ wonaga wega wake, no kuonwo wonagwo",
+    "kikuyu": "Gũtirĩ mũndũ wonaga wega wake, no kuonwo wonagwo",
     "translation": "Nobody can see his own goodness: it can be seen only by others.",
     "explanation": null,
     "englishEquivalent": null,
@@ -889,7 +889,7 @@
   },
   {
     "id": 112,
-    "kikuyu": "Gūtiri mūtumia wenjagirwo mbūi kwa nyina",
+    "kikuyu": "Gũtiri mũtumia wenjagirwo mbũi kwa nyina",
     "translation": "No married woman will have her white hair shaved at her mother's.",
     "explanation": "The Kikuyu girls go around with bald heads which they get periodically shaved by their relations. So the woman, who by being married has left her house and relations, will never be shaved at her mother's.",
     "englishEquivalent": "Once sold, ever sold.",
@@ -897,7 +897,7 @@
   },
   {
     "id": 113,
-    "kikuyu": "Gūtiri mwana ūngitema agiemera ithe",
+    "kikuyu": "Gũtiri mwana ũngitema agiemera ithe",
     "translation": "The son does not cut his finger in cutting meat for his father.",
     "explanation": null,
     "englishEquivalent": "Sons are stingier than their parents.",
@@ -905,7 +905,7 @@
   },
   {
     "id": 114,
-    "kikuyu": "Gūtiri ngware ītari mūhurrie wayo",
+    "kikuyu": "Gũtiri ngware ĩtari mũhurrie wayo",
     "translation": "There is no partridge which does not know its own way of scratching.",
     "explanation": null,
     "englishEquivalent": null,
@@ -913,7 +913,7 @@
   },
   {
     "id": 115,
-    "kikuyu": "Gūtiri ngware nyinyi mahurrio-ini",
+    "kikuyu": "Gũtiri ngware nyinyi mahurrio-ini",
     "translation": "No partridge is small when it claws the soil.",
     "explanation": null,
     "englishEquivalent": "Every one can do great good or evil according to his possibilities.",
@@ -921,7 +921,7 @@
   },
   {
     "id": 116,
-    "kikuyu": "Gūtiri njamba īrumaga imera igiri",
+    "kikuyu": "Gũtiri njamba ĩrumaga imera igiri",
     "translation": "No prepotent man will insult other people for two consecutive seasons.",
     "explanation": null,
     "englishEquivalent": "Prepotence comes quickly to an end.",
@@ -929,7 +929,7 @@
   },
   {
     "id": 117,
-    "kikuyu": "Gūtiri nyama na ngirinyū",
+    "kikuyu": "Gũtiri nyama na ngirinyũ",
     "translation": "Meat has no choice morsel.",
     "explanation": null,
     "englishEquivalent": "When distributing the meat or anything else one must not favour any one person.",
@@ -937,7 +937,7 @@
   },
   {
     "id": 118,
-    "kikuyu": "Gūtiri nyoni njega mwere-ini",
+    "kikuyu": "Gũtiri nyoni njega mwere-ini",
     "translation": "There is no nice bird in the millet.",
     "explanation": "Millet is one of the staple crops of the Kikuyu. They protect it from birds by building pulpit-like huts in which boys or women stand to frighten them whilst the harvest is ripening.",
     "englishEquivalent": "Even sugar itself may spoil a good dish.",
@@ -945,7 +945,7 @@
   },
   {
     "id": 119,
-    "kikuyu": "Gütiri ūciaragwo ari mūgi",
+    "kikuyu": "Gũtiri ũciaragwo ari mũgi",
     "translation": "Nobody is born wise.",
     "explanation": null,
     "englishEquivalent": null,
@@ -953,71 +953,71 @@
   },
   {
     "id": 120,
-    "kikuyu": "Gütiri ūcokaga haria arūmīiwo kaara",
+    "kikuyu": "Gũtirĩ ũcokaga harĩa arũmĩirwo kaara",
     "translation": "Nobody returns where he got his finger bitten.",
     "explanation": null,
-    "englishEquivalent": null,
+    "englishEquivalent": "Once bitten twice shy.",
     "category": "wisdom"
   },
   {
     "id": 121,
-    "kikuyu": "Gütiri ūkagia ūtūmī atari na haria akuratha",
-    "translation": "Once bitten twice shy.",
-    "explanation": null,
+    "kikuyu": "Gũtirĩ ũkagia ũtũmĩ atarĩ na harĩa akũratha",
+    "translation": "Nobody prepares his bow-string without having a target to shoot at.",
+    "explanation": "There is a reason for everything.",
     "englishEquivalent": null,
     "category": "wisdom"
   },
   {
     "id": 122,
-    "kikuyu": "Gütiri ūkinyaga mukinyire wa ūngī",
-    "translation": "There is a reason for everything.",
+    "kikuyu": "Gũtirĩ ũkinyaga mũkinyĩre wa ũngĩ",
+    "translation": "Nobody walks with another man's gait.",
     "explanation": null,
-    "englishEquivalent": null,
+    "englishEquivalent": "Every man in his own way.",
     "category": "family"
   },
   {
     "id": 123,
-    "kikuyu": "Gütiri ūndū ūtarī kihumo",
-    "translation": "Nobody walks with another man's gait.",
+    "kikuyu": "Gũtirĩ ũndũ ũtarĩ kĩhumo",
+    "translation": "There is nothing without a cause.",
     "explanation": null,
-    "englishEquivalent": null,
+    "englishEquivalent": "All things have a beginning.",
     "category": "wisdom"
   },
   {
     "id": 124,
-    "kikuyu": "Gütiri ūragio ni ūtonga no ūkia",
-    "translation": "There is nothing without a cause.",
+    "kikuyu": "Gũtirĩ ũragio nĩ ũtonga no ũkĩa",
+    "translation": "Nobody grumbles at being rich, all at being poor.",
     "explanation": null,
     "englishEquivalent": null,
     "category": "wisdom"
   },
   {
     "id": 125,
-    "kikuyu": "Gütiri ūragio ni ūkia wene",
-    "translation": "All things have a beginning.",
+    "kikuyu": "Gũtirĩ ũragio nĩ ũkĩa wene",
+    "translation": "Nobody is troubled by another person's poverty.",
     "explanation": null,
     "englishEquivalent": null,
     "category": "wisdom"
   },
   {
     "id": 126,
-    "kikuyu": "Gütiri ūrirū ūtonwo",
-    "translation": "Nobody grumbles at being rich, all at being poor.",
+    "kikuyu": "Gũtirĩ ũrĩrũ ũtonwo",
+    "translation": "There is no mischance you are guaranteed against.",
     "explanation": null,
     "englishEquivalent": null,
     "category": "work-wealth"
   },
   {
     "id": 127,
-    "kikuyu": "Gütiri ūru ūtūraga, no wega ūtūraga",
-    "translation": "There is no mischance you are guaranteed against.",
+    "kikuyu": "Gũtirĩ ũũru ũtũũraga, no wega ũtũũraga",
+    "translation": "Evil does not last forever; only goodness endures.",
     "explanation": null,
     "englishEquivalent": null,
     "category": "wisdom"
   },
   {
     "id": 128,
-    "kikuyu": "Gütiri ūta utari nyama",
+    "kikuyu": "Gũtiri ũta utari nyama",
     "translation": "There is no bow without its meat.",
     "explanation": null,
     "englishEquivalent": null,
@@ -1025,7 +1025,7 @@
   },
   {
     "id": 129,
-    "kikuyu": "Gütiri ritwa ritakuria mwana",
+    "kikuyu": "Gũtiri ritwa ritakuria mwana",
     "translation": "There is no name which cannot distinguish a child.",
     "explanation": null,
     "englishEquivalent": "Every bird is known by its feathers.",
@@ -1033,7 +1033,7 @@
   },
   {
     "id": 130,
-    "kikuyu": "Gũtiri thingira ūciraga ta ūngĩ",
+    "kikuyu": "Gũtiri thingira ũciraga ta ũngĩ",
     "translation": "There is no location which discusses its affairs in the same way as the other does.",
     "explanation": null,
     "englishEquivalent": "Every man in his way.",
@@ -1041,7 +1041,7 @@
   },
   {
     "id": 131,
-    "kikuyu": "Gũtiri ūthũire tiga akiaga",
+    "kikuyu": "Gũtiri ũthũire tiga akiaga",
     "translation": "A man is poor not because he scorns possessions, but because he possesses nothing.",
     "explanation": null,
     "englishEquivalent": "Sour grapes, as the fox said when he could not reach them.",
@@ -1073,7 +1073,7 @@
   },
   {
     "id": 135,
-    "kikuyu": "Gũtiri witaga ithe wa ūngĩ baba",
+    "kikuyu": "Gũtiri witaga ithe wa ũngĩ baba",
     "translation": "Nobody calls another’s father ‘dad’.",
     "explanation": null,
     "englishEquivalent": null,
@@ -1097,7 +1097,7 @@
   },
   {
     "id": 138,
-    "kikuyu": "Gütungata gütingigiria mündü agatungatwo",
+    "kikuyu": "Gũtungata gũtingigiria mũndũ agatungatwo",
     "translation": "The man that serves is not prevented from being served in turn.",
     "explanation": null,
     "englishEquivalent": "Every dog has its day, and every man his hour.",
@@ -1155,13 +1155,13 @@
     "id": 145,
     "kikuyu": "Haro ni ya muka ũri ũlii",
     "translation": "Quarrelling is peculiar to the woman who has got male children.",
-    "explanation": null,
-    "englishEquivalent": null,
+    "explanation": "They use the proverb to mean that since sons are more mischievous than daughters, and mothers are more proud of their sons than of their daughters, women are inclined to quarrel to defend or to exalt their sons.",
+    "englishEquivalent": "No mother is so wicked but desires to have good children.",
     "category": "family"
   },
   {
     "id": 146,
-    "kikuyu": "Haro ni ya mūka ũri thiri",
+    "kikuyu": "Haro ni ya mũka ũri thiri",
     "translation": "Quarrelling is peculiar to the woman who has debts.",
     "explanation": null,
     "englishEquivalent": "A woman in debt is quarrelsome.",
@@ -1265,7 +1265,7 @@
   },
   {
     "id": 159,
-    "kikuyu": "ĩciaraga ũru mwene oine",
+    "kikuyu": "Ĩciaraga ũru mwene oine",
     "translation": "The cow has a bad delivery though her owner is present.",
     "explanation": null,
     "englishEquivalent": "Misfortunes may come in spite of watchfulness.",
@@ -1273,7 +1273,7 @@
   },
   {
     "id": 160,
-    "kikuyu": "ĩganagwo yaari iria yakua",
+    "kikuyu": "Ĩganagwo yaari iria yakua",
     "translation": "The good milking cow is praised after her death.",
     "explanation": null,
     "englishEquivalent": "A friend is never known till needed.",
@@ -1281,7 +1281,7 @@
   },
   {
     "id": 161,
-    "kikuyu": "ĩgitunywo mwana iikagirio mũngũ",
+    "kikuyu": "Ĩgitunywo mwana iikagirio mũngũ",
     "translation": "The cow is given a present when her calf is carried away.",
     "explanation": null,
     "englishEquivalent": "When one thing distresses you, another consoles you.",
@@ -1289,15 +1289,15 @@
   },
   {
     "id": 162,
-    "kikuyu": "ĩgũkua ihuragia kiara",
+    "kikuyu": "Ĩgũkua ihuragia kiara",
     "translation": "The ox that claws the ‘kĩara’ will die.",
-    "explanation": "‘Kĩara’ is the dunghill you will find in every Kikuyu",
-    "englishEquivalent": null,
+    "explanation": "‘Kĩara’ is the dunghill found in every Kikuyu homestead. The Kikuyu regarded it as a ritual place dedicated by the traditional healer so that evil spirits expelled from a hut would remain in the ‘kĩara’ with the sweepings.",
+    "englishEquivalent": "Touch pitch and you will be defiled.",
     "category": "caution"
   },
   {
     "id": 163,
-    "kikuyu": "Īkurūma ndioragia mūgūgūta",
+    "kikuyu": "Ĩkurũma ndioragia mũgũgũta",
     "translation": "The ox that feeds itself does not spoil its skin.",
     "explanation": null,
     "englishEquivalent": null,
@@ -1305,7 +1305,7 @@
   },
   {
     "id": 164,
-    "kikuyu": "Īkurūra yarahūraga īmamiī",
+    "kikuyu": "Ĩkurũra yarahũraga ĩmamiĩ",
     "translation": "The animal rambling in the stable makes the sleeping ones rise too.",
     "explanation": null,
     "englishEquivalent": "Ill examples are like contagious diseases.",
@@ -1313,7 +1313,7 @@
   },
   {
     "id": 165,
-    "kikuyu": "Īkurūrio ti noru",
+    "kikuyu": "Ĩkurũrio ti noru",
     "translation": "The ram that is shown around is not fat.",
     "explanation": "A really fat ram will easily find a buyer and does not need to be carried around and shown in the markets.",
     "englishEquivalent": "Good ware makes a quick market.",
@@ -1321,7 +1321,7 @@
   },
   {
     "id": 166,
-    "kikuyu": "Īreragīra rūkū-ini na īkaya kūigana",
+    "kikuyu": "Ĩreragĩra rũkũ-ini na ĩkaya kũigana",
     "translation": "The cimex lives in the firewood and still it reaches its full growth.",
     "explanation": null,
     "englishEquivalent": "Where there is a will there is a way.",
@@ -1329,7 +1329,7 @@
   },
   {
     "id": 167,
-    "kikuyu": "Īrī gūciarīra riūa-ini yongithagiria o ho",
+    "kikuyu": "Ĩrĩ gũciarĩra riũa-ini yongithagiria o ho",
     "translation": "The cow that drops her calf in the sun feeds it there too.",
     "explanation": null,
     "englishEquivalent": "One likes the place where one does well.",
@@ -1337,7 +1337,7 @@
   },
   {
     "id": 168,
-    "kikuyu": "Īrī gūkūra īriagwo īguku nī aka",
+    "kikuyu": "Ĩrĩ gũkũra ĩriagwo ĩguku nĩ aka",
     "translation": "The hump of the ox that has grown old must be eaten by women.",
     "explanation": "The hump is a choice morsel for young men when the ox is young. But if it is old women must eat it.",
     "englishEquivalent": "Rubbish is women's portion.",
@@ -1345,7 +1345,7 @@
   },
   {
     "id": 169,
-    "kikuyu": "Īrī gūkūra ndiri mwiroreri",
+    "kikuyu": "Ĩrĩ gũkũra ndiri mwiroreri",
     "translation": "The ox which has grown old has no admirer.",
     "explanation": null,
     "englishEquivalent": "Nobody looks after elderly people.",
@@ -1353,7 +1353,7 @@
   },
   {
     "id": 170,
-    "kikuyu": "ĩri gũtũ ĩhũgagia mwene",
+    "kikuyu": "Ĩri gũtũ ĩhũgagia mwene",
     "translation": "The flea troubles him who has got it in his ear.",
     "explanation": null,
     "englishEquivalent": null,
@@ -1361,7 +1361,7 @@
   },
   {
     "id": 171,
-    "kikuyu": "ĩri kũhinja ndiri muniri ngũ",
+    "kikuyu": "Ĩri kũhinja ndiri muniri ngũ",
     "translation": "Nobody gathers firewood to roast a thin goat.",
     "explanation": null,
     "englishEquivalent": "Poor people have no friends.",
@@ -1369,7 +1369,7 @@
   },
   {
     "id": 172,
-    "kikuyu": "ĩri kũhũma ndiri mũti itangigwatirira",
+    "kikuyu": "Ĩri kũhũma ndiri mũti itangigwatirira",
     "translation": "There is no tree which a panting animal would not cling to.",
     "explanation": null,
     "englishEquivalent": "A drowning man will catch at a straw.",
@@ -1377,7 +1377,7 @@
   },
   {
     "id": 173,
-    "kikuyu": "ĩri kũra ndiri mũhti",
+    "kikuyu": "Ĩri kũra ndiri mũhti",
     "translation": "The ox that ran away cannot be caught.",
     "explanation": null,
     "englishEquivalent": "Resist the beginnings.",
@@ -1385,7 +1385,7 @@
   },
   {
     "id": 174,
-    "kikuyu": "ĩri kũruga ni ĩgũta, ĩgũtirira ni nguũ",
+    "kikuyu": "Ĩri kũruga ni ĩgũta, ĩgũtirira ni nguũ",
     "translation": "The cooking pot on the fire leaks, when pouring water it is broken.",
     "explanation": null,
     "englishEquivalent": "Misfortunes come by forties.",
@@ -1393,7 +1393,7 @@
   },
   {
     "id": 175,
-    "kikuyu": "ĩri mürungu ĩgiritagia ĩri kahia",
+    "kikuyu": "Ĩri mũrungu ĩgiritagia ĩri kahia",
     "translation": "The ox which has no horns, relies for help on the one that has them.",
     "explanation": null,
     "englishEquivalent": "He who feels weak relies on the friend he knows is strong.",
@@ -1401,7 +1401,7 @@
   },
   {
     "id": 176,
-    "kikuyu": "ĩri mũthece kinya tene ndioyagira ĩngi",
+    "kikuyu": "Ĩri mũthece kinya tene ndioyagira ĩngi",
     "translation": "The bird who has always possessed a beak, does not pick up for another.",
     "explanation": null,
     "englishEquivalent": "Content is more than a kingdom.",
@@ -1409,7 +1409,7 @@
   },
   {
     "id": 177,
-    "kikuyu": "ĩri nyite ni mũtego ndithũre gwiteithũra",
+    "kikuyu": "Ĩri nyite ni mũtego ndithũre gwiteithũra",
     "translation": "The animal caught in the trap does not refuse to set itself free.",
     "explanation": null,
     "englishEquivalent": "No man likes his fetters, though of gold.",
@@ -1417,7 +1417,7 @@
   },
   {
     "id": 178,
-    "kikuyu": "ĩri tha ni ĩri iria",
+    "kikuyu": "Ĩri tha ni ĩri iria",
     "translation": "It is he who has got milk that is merciful.",
     "explanation": "‘Milk’ here has the sense of money; possessions. The proverb means that the rich should help needy people, since the poor cannot do it.",
     "englishEquivalent": null,
@@ -1425,7 +1425,7 @@
   },
   {
     "id": 179,
-    "kikuyu": "ĩri thoni inyuaga munju",
+    "kikuyu": "Ĩri thoni inyuaga munju",
     "translation": "The timid ox drinks muddy water.",
     "explanation": "He goes to the river only when others have come away leaving the water dirty.",
     "englishEquivalent": "Faint heart never won fair lady.",
@@ -1433,7 +1433,7 @@
   },
   {
     "id": 180,
-    "kikuyu": "ĩrũgamaga ni ĩkurumaga",
+    "kikuyu": "Ĩrũgamaga ni ĩkurumaga",
     "translation": "He who goes around with his body upright, later on will go crawling.",
     "explanation": null,
     "englishEquivalent": "Young today, old tomorrow.",
@@ -1441,7 +1441,7 @@
   },
   {
     "id": 181,
-    "kikuyu": "ĩtakuura igwatagia rũhuho",
+    "kikuyu": "Ĩtakuura igwatagia rũhuho",
     "translation": "To blame the wind for the rain that does not fall.",
     "explanation": null,
     "englishEquivalent": "It refers to boasting people who try to make silly excuses for themselves.",
@@ -1449,7 +1449,7 @@
   },
   {
     "id": 182,
-    "kikuyu": "ĩtari thahu igunagwo ni makoro ma njira",
+    "kikuyu": "Ĩtari thahu igunagwo ni makoro ma njira",
     "translation": "The man who has no impurity will be helped even by the peels he sees on the road.",
     "explanation": "There are many ways by which a Kikuyu can contract impurity and he fears the baneful effects which will follow it. That is why a man able to avoid all legal uncleanness is said to be so lucky.",
     "englishEquivalent": "God helps honest people.",
@@ -1457,7 +1457,7 @@
   },
   {
     "id": 183,
-    "kikuyu": "ĩthinjagirwo mũrwaru igakora warwarire tene",
+    "kikuyu": "Ĩthinjagirwo mũrwaru igakora warwarire tene",
     "translation": "The goat slaughtered for a man who is sick now, finds another who was sick long before.",
     "explanation": null,
     "englishEquivalent": "God cures and the doctor takes the fee.",
@@ -1465,7 +1465,7 @@
   },
   {
     "id": 184,
-    "kikuyu": "ĩthimbaga na ndiure",
+    "kikuyu": "Ĩthimbaga na ndiure",
     "translation": "The sky is heavy with rain, but rain does not come.",
     "explanation": "It refers to people who are always promising great things which they never do.",
     "englishEquivalent": "Great boast, small roast.",
@@ -1473,7 +1473,7 @@
   },
   {
     "id": 185,
-    "kikuyu": "ĩtunyagwo mbũ ni gũciara",
+    "kikuyu": "Ĩtunyagwo mbũ ni gũciara",
     "translation": "A plant loses its blossom as soon as it bears fruit.",
     "explanation": null,
     "englishEquivalent": "Woman's beauty is spoilt by maternity.",
@@ -1481,9 +1481,9 @@
   },
   {
     "id": 186,
-    "kikuyu": "Igai ria mûtündũ ritigiragia kiriti kiunwo",
-    "translation": "A branch of ‘mûtündũ’ does not hinder the division of a field.",
-    "explanation": "‘Mûtündũ’ is a small tree growing in the bush.",
+    "kikuyu": "Igai ria mũtũndũ ritigiragia kiriti kiunwo",
+    "translation": "A branch of ‘mũtũndũ’ does not hinder the division of a field.",
+    "explanation": "‘Mũtũndũ’ is a small tree growing in the bush.",
     "englishEquivalent": "It is not used by the natives, except as firewood.",
     "category": "caution"
   },
@@ -1513,7 +1513,7 @@
   },
   {
     "id": 190,
-    "kikuyu": "Ihiĩ na igwa ikûragĩra ũthũ-inĩ",
+    "kikuyu": "Ihiĩ na igwa ikũragĩra ũthũ-inĩ",
     "translation": "Boys and sugar-cane grow up as enemies (because boys are all the time eating sugar-cane).",
     "explanation": null,
     "englishEquivalent": null,
@@ -1537,7 +1537,7 @@
   },
   {
     "id": 193,
-    "kikuyu": "Ikinya rĩa mûkûrũ rikinyaga mûruna",
+    "kikuyu": "Ikinya rĩa mũkũrũ rikinyaga mũruna",
     "translation": "Old people’s walking teaches young ones to walk.",
     "explanation": null,
     "englishEquivalent": "That that comes of a cat will catch mice.",
@@ -1545,7 +1545,7 @@
   },
   {
     "id": 194,
-    "kikuyu": "Ikūūra inya na inyanya",
+    "kikuyu": "Ikũũra inya na inyanya",
     "translation": "One can lose four and eight.",
     "explanation": null,
     "englishEquivalent": "All covet all lose.",
@@ -1553,7 +1553,7 @@
   },
   {
     "id": 195,
-    "kikuyu": "Indo ciene iri mūtino",
+    "kikuyu": "Indo ciene iri mũtino",
     "translation": "Stolen things bring in misfortune.",
     "explanation": null,
     "englishEquivalent": "Ill-gotten goods seldom prosper.",
@@ -1561,7 +1561,7 @@
   },
   {
     "id": 196,
-    "kikuyu": "Indo ni kūrimithanio",
+    "kikuyu": "Indo ni kũrimithanio",
     "translation": "Riches are found in cultivating together.",
     "explanation": null,
     "englishEquivalent": "Many hands make light work.",
@@ -1569,7 +1569,7 @@
   },
   {
     "id": 197,
-    "kikuyu": "Irīaga na mbugi kūri na ūgwati",
+    "kikuyu": "Irĩaga na mbugi kũri na ũgwati",
     "translation": "The goats pasture with bells hanging from their necks in order not to stray.",
     "explanation": null,
     "englishEquivalent": null,
@@ -1577,7 +1577,7 @@
   },
   {
     "id": 198,
-    "kikuyu": "Irī gūthua ndongoria itikinyagira nyeki",
+    "kikuyu": "Irĩ gũthua ndongoria itikinyagira nyeki",
     "translation": "If the first goat goes lame, those that follow will not reach the pasture.",
     "explanation": null,
     "englishEquivalent": "Ill examples are like contagious diseases.",
@@ -1585,7 +1585,7 @@
   },
   {
     "id": 199,
-    "kikuyu": "Irī gwīthamba iticokaga gwota mwaki",
+    "kikuyu": "Irĩ gwĩthamba iticokaga gwota mwaki",
     "translation": "Candidates for circumcision after washing do not return to warm themselves at their father's (but go straightway to the place of the ceremony to show their courage).",
     "explanation": null,
     "englishEquivalent": "In things that must be it is good to be resolute.",
@@ -1593,7 +1593,7 @@
   },
   {
     "id": 200,
-    "kikuyu": "Irī kanua itiri nda",
+    "kikuyu": "Irĩ kanua itiri nda",
     "translation": "The food that is in the mouth is not yet in the belly.",
     "explanation": null,
     "englishEquivalent": "Do not cry herrings till they are in the net.",
@@ -1601,7 +1601,7 @@
   },
   {
     "id": 201,
-    "kikuyu": "Irī kūhia itioragīrwo",
+    "kikuyu": "Irĩ kũhia itioragĩrwo",
     "translation": "When the food is cooked there is no need to wait before eating it.",
     "explanation": null,
     "englishEquivalent": null,
@@ -1609,7 +1609,7 @@
   },
   {
     "id": 202,
-    "kikuyu": "Irī Ukabi itiri Gikūyū",
+    "kikuyu": "Irĩ Ukabi itiri Gikũyũ",
     "translation": "What is in Masai is not in Kikuyu.",
     "explanation": null,
     "englishEquivalent": "There is many a slip 'twixt the cup and the lip.",
@@ -1633,7 +1633,7 @@
   },
   {
     "id": 205,
-    "kikuyu": "Irio hiu itiumaga mbūri",
+    "kikuyu": "Irio hiu itiumaga mbũri",
     "translation": "Cooked food is not sold for goats (but is given to friends, visitors and pilgrims).",
     "explanation": null,
     "englishEquivalent": "God helps the poor for the rich can help themselves.",
@@ -1665,10 +1665,10 @@
   },
   {
     "id": 209,
-    "kikuyu": "Ithare riagũka gúcokaga mūgumo",
-    "translation": "When ‘ithare’ is uprooted ‘mūgumo’ grows in its place.",
-    "explanation": "‘Ithare’ is a kind of cane growing on the river banks. The Kikuyu say it is of no use. ‘Mūgumo’ is a kind of fig tree (Ficus Hochstetteri) which does not grow except leaning on another tree or twisting around it like a creeper.",
-    "englishEquivalent": "This is why they think that the ‘mūgumo’ is worse than the ‘ithare’.",
+    "kikuyu": "Ithare riagũka gũcokaga mũgumo",
+    "translation": "When ‘ithare’ is uprooted ‘mũgumo’ grows in its place.",
+    "explanation": "‘Ithare’ is a kind of cane growing on the river banks. The Kikuyu say it is of no use. ‘Mũgumo’ is a kind of fig tree (Ficus Hochstetteri) which does not grow except leaning on another tree or twisting around it like a creeper.",
+    "englishEquivalent": "This is why they think that the ‘mũgumo’ is worse than the ‘ithare’.",
     "category": "nature"
   },
   {
@@ -1689,7 +1689,7 @@
   },
   {
     "id": 212,
-    "kikuyu": "Itherũ ritirutagirwo mūgũi",
+    "kikuyu": "Itherũ ritirutagirwo mũgũi",
     "translation": "For a jest one should not take the arrow out of the quiver.",
     "explanation": null,
     "englishEquivalent": null,
@@ -1713,7 +1713,7 @@
   },
   {
     "id": 215,
-    "kikuyu": "Itherũ ti mūgũi",
+    "kikuyu": "Itherũ ti mũgũi",
     "translation": "A trick is not an arrow.",
     "explanation": null,
     "englishEquivalent": "Good jests bite like lambs not like dogs.",
@@ -1739,7 +1739,7 @@
     "id": 218,
     "kikuyu": "Itũũra riri kanoro ritituhagia kahiũ",
     "translation": "The village which has got a whetstone does not blunt the knife.",
-    "explanation": "The sense of the proverb is that if in a village there is a good whetstone it does not mean that the villagers should",
+    "explanation": "The sense of the proverb is that if in a village there is a good whetstone it does not mean that the villagers should always be sharpening their knives without need.",
     "englishEquivalent": null,
     "category": "nature"
   },
@@ -1761,7 +1761,7 @@
   },
   {
     "id": 221,
-    "kikuyu": "Kaana karere ni ūcūwe gatingirūngika",
+    "kikuyu": "Kaana karere ni ũcũwe gatingirũngika",
     "translation": "The baby nursed by its grand-mother can never be corrected.",
     "explanation": null,
     "englishEquivalent": null,
@@ -1769,7 +1769,7 @@
   },
   {
     "id": 222,
-    "kikuyu": "Kaara kamwe gatingiyūragira ndaa",
+    "kikuyu": "Kaara kamwe gatingiyũragira ndaa",
     "translation": "One finger does not kill a louse.",
     "explanation": null,
     "englishEquivalent": "Union is strength.",
@@ -1793,7 +1793,7 @@
   },
   {
     "id": 225,
-    "kikuyu": "Kahii ka mwatthi kamenyaga kūgereka",
+    "kikuyu": "Kahii ka mwatthi kamenyaga kũgereka",
     "translation": "The hunter's son knows how to hunt.",
     "explanation": "Like father, like son. purposely blunted their tools in order to whet them. The time will come when the whetstone will have to be used.",
     "englishEquivalent": "Every thing is good in its season.",
@@ -1865,7 +1865,7 @@
   },
   {
     "id": 234,
-    "kikuyu": "Kamūhũthia kaharũkagia mwatũ",
+    "kikuyu": "Kamũhũthia kaharũkagia mwatũ",
     "translation": "A little idleness causes the ruin of the beehive.",
     "explanation": "The Kikuyu hang beehives on the branches of the forest trees, and it is their custom to visit them often to make sure that they are all right. For it might happen that if out of idleness one did not see them regularly, one would ultimately find the branch broken, the beehive fallen and the contents spoilt.",
     "englishEquivalent": null,
@@ -2010,8 +2010,8 @@
   {
     "id": 252,
     "kikuyu": "Kareraria kagarũragwo na mũti",
-    "translation": "The sleeping dog is turned by a stick; i.e.",
-    "explanation": "it turns round to bite if disturbed or touched by a stick.",
+    "translation": "The sleeping dog is turned by a stick; i.e. it turns round to bite if disturbed or touched by a stick.",
+    "explanation": null,
     "englishEquivalent": "Let sleeping dogs lie.",
     "category": "justice"
   },
@@ -2057,7 +2057,7 @@
   },
   {
     "id": 258,
-    "kikuyu": "Kiambi nda nikio giakûra",
+    "kikuyu": "Kiambi nda nikio giakũra",
     "translation": "The food eaten first lasts longest in the stomach.",
     "explanation": null,
     "englishEquivalent": "First impressions are most lasting.",
@@ -2065,7 +2065,7 @@
   },
   {
     "id": 259,
-    "kikuyu": "Kiara kiyûragio ni güta ihuti",
+    "kikuyu": "Kiara kiyũragio ni gũta ihuti",
     "translation": "The dunghill grows by straws thrown upon it.",
     "explanation": null,
     "englishEquivalent": "Every little helps.",
@@ -2105,7 +2105,7 @@
   },
   {
     "id": 264,
-    "kikuyu": "Kigina gitininûkagio irio hande itari ngûrû",
+    "kikuyu": "Kigina gitininũkagio irio hande itari ngũrũ",
     "translation": "The seeds kept are not finished before the ripening of the crops planted in the field.",
     "explanation": null,
     "englishEquivalent": "Every thing has its time, and that time must be watched.",
@@ -2113,7 +2113,7 @@
   },
   {
     "id": 265,
-    "kikuyu": "Kihooto gituthaga rûga rûtunge",
+    "kikuyu": "Kihooto gituthaga rũga rũtunge",
     "translation": "The argument breaks the strained cord of the bow.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2121,7 +2121,7 @@
   },
   {
     "id": 266,
-    "kikuyu": "Kihooto kigetũraga ũta mũgeṭe",
+    "kikuyu": "Kĩhooto kĩgetũraga ũta mũgete",
     "translation": "The argument relaxes the bent bow.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2153,7 +2153,7 @@
   },
   {
     "id": 270,
-    "kikuyu": "Kinandũ kia mũciĩ gitihakagwo mügeni",
+    "kikuyu": "Kinandũ kia mũciĩ gitihakagwo mũgeni",
     "translation": "The fat of the ‘kinandũ’ is not used to anoint a stranger.",
     "explanation": "For the meaning of the word ‘kinandũ’ see No. 228.",
     "englishEquivalent": "Charity begins at home.",
@@ -2193,7 +2193,7 @@
   },
   {
     "id": 275,
-    "kikuyu": "Kindong’o kiariiire maini ũndũ wa kwaga mayũ ma gũkira",
+    "kikuyu": "Kĩndong’o kĩarĩire mai nĩ ũndũ wa kwaga njoya cia gũkĩra",
     "translation": "The beetle feeds on excrement for it can’t fly high.",
     "explanation": null,
     "englishEquivalent": "If thou hast not a capon, feed on an onion.",
@@ -2235,8 +2235,8 @@
     "id": 280,
     "kikuyu": "Kiriro kia mburi ni ndara",
     "translation": "It is the gridiron that cries (for the slaughtered goat).",
-    "explanation": "Everyone rejoices when a goat is killed, for each will have his piece of meat; only the gridiron on which the meat is roasted, weeps, i.e.",
-    "englishEquivalent": "crackles.",
+    "explanation": "Everyone rejoices when a goat is killed, for each will have his piece of meat; only the gridiron on which the meat is roasted weeps, i.e. crackles.",
+    "englishEquivalent": null,
     "category": "work-wealth"
   },
   {
@@ -2297,7 +2297,7 @@
   },
   {
     "id": 288,
-    "kikuyu": "Kiringĩri gia aka ni rwenji rükirega",
+    "kikuyu": "Kiringĩri gia aka ni rwenji rũkirega",
     "translation": "To force a woman to do something she doesn't like is like forcing a blunt shaving-knife to shave.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2409,7 +2409,7 @@
   },
   {
     "id": 302,
-    "kikuyu": "Kūgārū ni irata thi",
+    "kikuyu": "Kũgũrũ nĩ iratu thĩ",
     "translation": "The foot goes all the world over.",
     "explanation": null,
     "englishEquivalent": "It is perseverance that prevails.",
@@ -2417,7 +2417,7 @@
   },
   {
     "id": 303,
-    "kikuyu": "Kūgunagwo mwthiomeri ti muthiomerwo",
+    "kikuyu": "Kũgunagwo mwthiomeri ti muthiomerwo",
     "translation": "It is he who speaks that profits, not he who is spoken for.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2425,7 +2425,7 @@
   },
   {
     "id": 304,
-    "kikuyu": "Kūguniwo mwana no ta kūguniwo nyina",
+    "kikuyu": "Kũguniwo mwana no ta kũguniwo nyina",
     "translation": "To make the son happy is to make the mother happy.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2433,7 +2433,7 @@
   },
   {
     "id": 305,
-    "kikuyu": "Kūhika ni kuuna",
+    "kikuyu": "Kũhika ni kuuna",
     "translation": "Hurrying is breaking.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2441,7 +2441,7 @@
   },
   {
     "id": 306,
-    "kikuyu": "Kūhitia ni kwa njamba",
+    "kikuyu": "Kũhitia ni kwa njamba",
     "translation": "Haste makes waste.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2449,7 +2449,7 @@
   },
   {
     "id": 307,
-    "kikuyu": "Kūhonoka ti gitiţura",
+    "kikuyu": "Kũhonoka ti gũtũũra",
     "translation": "To err is human.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2457,7 +2457,7 @@
   },
   {
     "id": 308,
-    "kikuyu": "Kūhoya kwa arüne ni maitio",
+    "kikuyu": "Kũhoya kwa arũme nĩ maitho",
     "translation": "One can escape the rocks and perish in the sand.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2465,7 +2465,7 @@
   },
   {
     "id": 309,
-    "kikuyu": "Kūhoya ti kuţya",
+    "kikuyu": "Kũhoya ti kũiya",
     "translation": "To beg is not to steal.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2473,7 +2473,7 @@
   },
   {
     "id": 310,
-    "kikuyu": "Kūhüţa na kūhüna ititiganaga",
+    "kikuyu": "Kũhũũta na kũhũna ititiganaga",
     "translation": "Hunger and surfeit do not leave each other.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2481,7 +2481,7 @@
   },
   {
     "id": 311,
-    "kikuyu": "Kūhüra maai na ndiri",
+    "kikuyu": "Kũhũra maai na ndiri",
     "translation": "Riches have wings.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2489,7 +2489,7 @@
   },
   {
     "id": 312,
-    "kikuyu": "Kūira ti kūria",
+    "kikuyu": "Kũira ti kũria",
     "translation": "To be black is not to be stupid.",
     "explanation": null,
     "englishEquivalent": "Little bodies may have great souls.",
@@ -2505,7 +2505,7 @@
   },
   {
     "id": 314,
-    "kikuyu": "Kũmatha güţirĩ hiuya ta kũramata",
+    "kikuyu": "Kũmatha gũtirĩ hinya ta kũramata",
     "translation": "To harvest is not so difficult as to keep the harvest.",
     "explanation": null,
     "englishEquivalent": "Keep some till more comes.",
@@ -2513,7 +2513,7 @@
   },
   {
     "id": 315,
-    "kikuyu": "Kũmenya muño ni kũmenyũka",
+    "kikuyu": "Kũmenya mũno nĩ kũmenyũka",
     "translation": "Knowing too much is like being ignorant.",
     "explanation": null,
     "englishEquivalent": "Too much breaks the bag.",
@@ -2537,7 +2537,7 @@
   },
   {
     "id": 318,
-    "kikuyu": "Kũnyiha ti güniio",
+    "kikuyu": "Kũnyiha ti gũniio",
     "translation": "To become small is not the same as being cut.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2561,7 +2561,7 @@
   },
   {
     "id": 321,
-    "kikuyu": "Kũri güciara ũru ta kihia güciara na mĩtĩwe",
+    "kikuyu": "Kũri gũciara ũru ta kihia gũciara na mĩtĩwe",
     "translation": "Some good, some bad, as sheep come to the fold.",
     "explanation": "There are women who give forth a bad issue, just like the sorghum that bears its fruit on the head (instead of growing it underground like most Kikuyu crops).",
     "englishEquivalent": null,
@@ -2569,15 +2569,15 @@
   },
   {
     "id": 322,
-    "kikuyu": "Kũri güakahika güticokaga ndebe",
+    "kikuyu": "Kũri gũakahika gũticokaga ndebe",
     "translation": "One cannot put the 'ndebe' into a broken ear-lobe.",
-    "explanation": null,
+    "explanation": "‘Ndebe’ is the wooden ring put into the pierced ear-lobe as an ornament. The proverb means that there are things which once broken cannot be mended.",
     "englishEquivalent": "'Ndebe' is the wooden ring put into the pierced ear-lobe",
     "category": "wisdom"
   },
   {
     "id": 323,
-    "kikuyu": "Kūri gũkua mūrio ta kigwa",
+    "kikuyu": "Kũri gũkua mũrio ta kigwa",
     "translation": "There are people who, like sugar cane, are killed for being sweet.",
     "explanation": null,
     "englishEquivalent": "He who makes himself a sheep shall be eaten by the wolf.",
@@ -2585,7 +2585,7 @@
   },
   {
     "id": 324,
-    "kikuyu": "Kūri mwoni na mūrata thi",
+    "kikuyu": "Kũri mwoni na mũrata thi",
     "translation": "There are lucky and unlucky people.",
     "explanation": null,
     "englishEquivalent": "The wind of luck is inconstant.",
@@ -2593,7 +2593,7 @@
   },
   {
     "id": 325,
-    "kikuyu": "Kūri ūku ūtatumwo, ta wa nyūngũ",
+    "kikuyu": "Kũri ũku ũtatumwo, ta wa nyũngũ",
     "translation": "There are things, like the earthen pot, which if ever broken can't be repaired.",
     "explanation": null,
     "englishEquivalent": "For some evils there is no remedy.",
@@ -2601,7 +2601,7 @@
   },
   {
     "id": 326,
-    "kikuyu": "Kūria mbere ti gūkoroka",
+    "kikuyu": "Kũria mbere ti gũkoroka",
     "translation": "To eat first is not to be a glutton.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2609,7 +2609,7 @@
   },
   {
     "id": 327,
-    "kikuyu": "Kūria mūno ni kuoria nda",
+    "kikuyu": "Kũria mũno ni kuoria nda",
     "translation": "To eat much means to spoil one's belly.",
     "explanation": null,
     "englishEquivalent": "Too much breaks the bag.",
@@ -2617,7 +2617,7 @@
   },
   {
     "id": 328,
-    "kikuyu": "Kūria nai gūtigiragia mündũ akaria wega",
+    "kikuyu": "Kũria nai gũtigiragia mũndũ akaria wega",
     "translation": "To eat bad food (today) does not prevent a person from having good food (tomorrow).",
     "explanation": null,
     "englishEquivalent": "Change of fortune is the lot of life.",
@@ -2625,7 +2625,7 @@
   },
   {
     "id": 329,
-    "kikuyu": "Kūria thi ti kūria tiri",
+    "kikuyu": "Kũria thi ti kũria tiri",
     "translation": "One does not eat the soil, but the fruit thereon.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2633,7 +2633,7 @@
   },
   {
     "id": 330,
-    "kikuyu": "Kūria thiri ni kūriha",
+    "kikuyu": "Kũria thiri ni kũriha",
     "translation": "The way of eating a debt is paying it.",
     "explanation": null,
     "englishEquivalent": "He that gets out of debt grows rich.",
@@ -2641,7 +2641,7 @@
   },
   {
     "id": 331,
-    "kikuyu": "Kūriithia ĩmwe ti kwenda kwa mwene",
+    "kikuyu": "Kũriithia ĩmwe ti kwenda kwa mwene",
     "translation": "To graze only one goat is not the owner's will.",
     "explanation": null,
     "englishEquivalent": "Evils come though we do not want them.",
@@ -2649,7 +2649,7 @@
   },
   {
     "id": 332,
-    "kikuyu": "Kūrikanira gūtigiragia ndeto ihitane",
+    "kikuyu": "Kũrikanira gũtigiragia ndeto ihitane",
     "translation": "To have come to an agreement does not mean that the agreement may not be broken.",
     "explanation": null,
     "englishEquivalent": "The cat and the dog may kiss, yet are none the better friends.",
@@ -2657,7 +2657,7 @@
   },
   {
     "id": 333,
-    "kikuyu": "Kūrima ni kwienda",
+    "kikuyu": "Kũrima ni kwienda",
     "translation": "To till the land is to love oneself.",
     "explanation": null,
     "englishEquivalent": "Work is well done that is well loved.",
@@ -2665,7 +2665,7 @@
   },
   {
     "id": 334,
-    "kikuyu": "Kūrita ni kūru",
+    "kikuyu": "Kũrita ni kũru",
     "translation": "It is bad to be a fool.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2673,7 +2673,7 @@
   },
   {
     "id": 335,
-    "kikuyu": "Kūrūga ti kwega, amu kiūra kioragire ūthoni na irūga",
+    "kikuyu": "Kũrũga ti kwega, amu kiũra kioragire ũthoni na irũga",
     "translation": "To leap is bad, since the male-frog by his leaping broke up the betrothal.",
     "explanation": "The proverb originates in the following fable. One day the male-frog went to his fiancée’s home to arrange the marriage with her father. But as soon as the fiancée noticed the indecorous leaping-posture assumed by the male-frog during the conversation, she refused to marry him. The Kikuyu tell the proverb to express their esteem for decency and modesty.",
     "englishEquivalent": "Loquacity storms the ear, but modesty takes the heart.",
@@ -2681,7 +2681,7 @@
   },
   {
     "id": 336,
-    "kikuyu": "Kūrua, kūgūrana na kūriha thiri gūtiriragwo",
+    "kikuyu": "Kũrua, kũgũrana na kũriha thiri gũtiriragwo",
     "translation": "Nobody feels sorry for having been circumcised, for having bought his wife and for having paid his debts.",
     "explanation": "The proverb means that there are certain things that leave no regrets.",
     "englishEquivalent": null,
@@ -2689,7 +2689,7 @@
   },
   {
     "id": 337,
-    "kikuyu": "Kūrua ni kūhĩa",
+    "kikuyu": "Kũrua ni kũhĩa",
     "translation": "Being circumcised is like being scalded.",
     "explanation": null,
     "englishEquivalent": "This means that the pain of the circumcision is a few minutes’ pain.",
@@ -2697,7 +2697,7 @@
   },
   {
     "id": 338,
-    "kikuyu": "Kūrua ni kwara itara",
+    "kikuyu": "Kũrua ni kwara itara",
     "translation": "Being circumcised is like building the ‘itara’.",
     "explanation": "The ‘itara’ is a trellis of twigs suspended a short distance above the fire-place in the Kikuyu hut to prevent sparks from setting fire to the thatched roof. The same word is often used to mean the whole hut. Thus this proverb means that a young man as soon as circumcised, must realise that the years of irresponsibility are over and that he must see about building his hut and starting a new home.",
     "englishEquivalent": "A married man must turn his staff into a stake.",
@@ -2737,7 +2737,7 @@
   },
   {
     "id": 343,
-    "kikuyu": "Kwa mũnegeni gũkiūra, kwa mũkiri kworire tene",
+    "kikuyu": "Kwa mũnegeni gũkiũra, kwa mũkiri kworire tene",
     "translation": "The house of the talkative man perished long after that of the quiet.",
     "explanation": null,
     "englishEquivalent": "It is easy for somebody who is friendly to get help from others.",
@@ -2913,7 +2913,7 @@
   },
   {
     "id": 365,
-    "kikuyu": "Maithori ti rüthioni",
+    "kikuyu": "Maithori ti rũthioni",
     "translation": "Tears are no language.",
     "explanation": null,
     "englishEquivalent": null,
@@ -2921,7 +2921,7 @@
   },
   {
     "id": 366,
-    "kikuyu": "Marakara ma arime matitütaga ta ma aka",
+    "kikuyu": "Marakara ma arime matitũtaga ta ma aka",
     "translation": "Men's anger does not last so long as women's.",
     "explanation": null,
     "englishEquivalent": "Women are as prone to revenge injuries as men to forgive them.",
@@ -2945,9 +2945,9 @@
   },
   {
     "id": 369,
-    "kikuyu": "Matari maku mahitükaga ugikünja itüma",
-    "translation": "The water that is not yours flows away while you are folding the 'itüma'.",
-    "explanation": "'Itüma' is the leaf of a kind of edible arum. Out of these large leaves the Kikuyu used to drink water.",
+    "kikuyu": "Matari maku mahitũkaga ugikũnja itũma",
+    "translation": "The water that is not yours flows away while you are folding the 'itũma'.",
+    "explanation": "'Itũma' is the leaf of a kind of edible arum. Out of these large leaves the Kikuyu used to drink water.",
     "englishEquivalent": null,
     "category": "nature"
   },
@@ -2961,9 +2961,9 @@
   },
   {
     "id": 371,
-    "kikuyu": "Matienda mwako mendaga mürugürio",
-    "translation": "Some people do not like the building of a hut, though they like the 'mürugürio'.",
-    "explanation": "'Mürugürio' is a kind of dedication-ceremony held by the witch-doctor to solemnize the completion of a new hut. On such occasion the owner of the hut distributes beer to his relations and to the people who assisted him in the building.",
+    "kikuyu": "Matienda mwako mendaga mũrugũrio",
+    "translation": "Some people do not like the building of a hut, though they like the 'mũrugũrio'.",
+    "explanation": "'Mũrugũrio' is a kind of dedication-ceremony held by the witch-doctor to solemnize the completion of a new hut. On such occasion the owner of the hut distributes beer to his relations and to the people who assisted him in the building.",
     "englishEquivalent": "There is scarcity of friendship but not of friends.",
     "category": "community"
   },
@@ -2994,8 +2994,8 @@
   {
     "id": 375,
     "kikuyu": "Matukũ ni thigo",
-    "translation": "The days are a hurry, i.e.",
-    "explanation": "go quickly.",
+    "translation": "The days are a hurry, i.e. go quickly.",
+    "explanation": null,
     "englishEquivalent": "Time fleeth away without delay.",
     "category": "wisdom"
   },
@@ -3041,7 +3041,7 @@
   },
   {
     "id": 381,
-    "kikuyu": "Mbaara ya aka ndīrī ng'ondu",
+    "kikuyu": "Mbaara ya aka ndĩrĩ ng'ondu",
     "translation": "Women's strife has no sheep.",
     "explanation": "According to the Kikuyu custom the one that wounds another in a quarrel must pay a sheep as a fine. The proverb means that in women's strifes nobody incurs such a fine, for their quarrels are usually words only.",
     "englishEquivalent": "Words are for women, actions for men.",
@@ -3065,7 +3065,7 @@
   },
   {
     "id": 384,
-    "kikuyu": "Mbere ndīriragwo ta thutha",
+    "kikuyu": "Mbere ndĩriragwo ta thutha",
     "translation": "The future is not so much regretted as the past.",
     "explanation": null,
     "englishEquivalent": null,
@@ -3081,7 +3081,7 @@
   },
   {
     "id": 386,
-    "kikuyu": "Mbere no mbere thutha no mūgiano",
+    "kikuyu": "Mbere no mbere thutha no mũgiano",
     "translation": "Before is before: afterwards there is nothing but repining.",
     "explanation": null,
     "englishEquivalent": "Resist the beginnings.",
@@ -3089,7 +3089,7 @@
   },
   {
     "id": 387,
-    "kikuyu": "Mbogo nyingi itirī nyama",
+    "kikuyu": "Mbogo nyingi itirĩ nyama",
     "translation": "Many buffaloes are no meat.",
     "explanation": null,
     "englishEquivalent": "If you run after two hares, you will catch neither.",
@@ -3097,7 +3097,7 @@
   },
   {
     "id": 388,
-    "kikuyu": "Mbūi nyinyi ndīrī munge",
+    "kikuyu": "Mbũi nyinyi ndĩrĩ munge",
     "translation": "A small flower has no smell.",
     "explanation": null,
     "englishEquivalent": "A little barrel can give but little meal.",
@@ -3105,7 +3105,7 @@
   },
   {
     "id": 389,
-    "kikuyu": "Mbūri īgucagio ni mūnyū",
+    "kikuyu": "Mbũri ĩgucagio ni mũnyũ",
     "translation": "The goat is attracted by salt.",
     "explanation": null,
     "englishEquivalent": "The bait not the hook catches the fish.",
@@ -3113,7 +3113,7 @@
   },
   {
     "id": 390,
-    "kikuyu": "Mbūri itiugagīrwo mbu",
+    "kikuyu": "Mbũri itiugagĩrwo mbu",
     "translation": "No alarm is shouted for a goat (because it is not a dangerous beast).",
     "explanation": null,
     "englishEquivalent": "Do not waste time and money on unworthy things.",
@@ -3121,7 +3121,7 @@
   },
   {
     "id": 391,
-    "kikuyu": "Mbūri na kaana itirumagwo",
+    "kikuyu": "Mbũri na kaana itirumagwo",
     "translation": "The goat and the child are not insulted (because they cannot defend themselves).",
     "explanation": null,
     "englishEquivalent": null,
@@ -3129,7 +3129,7 @@
   },
   {
     "id": 392,
-    "kikuyu": "Mbūri ya mai ndiemaga",
+    "kikuyu": "Mbũri ya mai ndiemaga",
     "translation": "One can always find the goat to pay the penalty for having defecated in another's house.",
     "explanation": "According to Kikuyu customs he who defecates in another's house is liable to be fined a goat. The proverb means that he who incurred such penalty will contrive to find the means to pay it.",
     "englishEquivalent": "Necessity sharpens industry.",
@@ -3137,7 +3137,7 @@
   },
   {
     "id": 393,
-    "kikuyu": "Mbūri ya rwagatha ndikiraga",
+    "kikuyu": "Mbũri ya rwagatha ndikiraga",
     "translation": "A chattering goat does not keep its tongue.",
     "explanation": "The word 'goat' is here used instead of 'people'.",
     "englishEquivalent": "A fool may ask more questions in an hour than a wise man can answer in seven years.",
@@ -3145,15 +3145,15 @@
   },
   {
     "id": 394,
-    "kikuyu": "Mbūri yene mūthā ni gūtū",
-    "translation": "The best part of another's goat is the car.",
+    "kikuyu": "Mbũri yene mũtha nĩ gũtũ",
+    "translation": "The best part of another's goat is the ear.",
     "explanation": "The proverb means that a stranger coming in when a slaughtered goat is distributed, must not expect to be given a choice morsel, but rather an inferior part like an ear. Metaphorically the proverb means that a prudent person keeps for himself and his family the best parts of anything instead of giving them away to his visitors and friends.",
     "englishEquivalent": "Charity begins at home.",
     "category": "family"
   },
   {
     "id": 395,
-    "kikuyu": "Mbūri ndia mūhu ndingirigaria",
+    "kikuyu": "Mbũri ndia mũhu ndingirigaria",
     "translation": "The goat which eats ashes does not hide its habit.",
     "explanation": "The Kikuyu live under the same roof as their animals. So if any goat forms the habit of leaving its place and coming to lick ashes at the fire, it will soon be discovered.",
     "englishEquivalent": "In the same manner the vices of the wicked will soon be known.",
@@ -3201,8 +3201,8 @@
   },
   {
     "id": 401,
-    "kikuyu": "Mburungo nyinyi ũĩ mũthiomeri ũrugite nene itari",
-    "translation": "mũthiomeri A trifle well presented becomes more precious than a thing of great value badly presented.",
+    "kikuyu": "Mburungo nyinyi ĩrĩ mũthiomeri ĩrũgĩte nene ĩtarĩ mũthiomeri",
+    "translation": "A trifle well presented becomes more precious than a thing of great value badly presented.",
     "explanation": null,
     "englishEquivalent": "It is not the value of a gift that matters but the intentions of the giver.",
     "category": "wisdom"
@@ -3289,7 +3289,7 @@
   },
   {
     "id": 412,
-    "kikuyu": "Mūbatari ndaconokaga",
+    "kikuyu": "Mũbatari ndaconokaga",
     "translation": "He who is in necessity does not feel ashamed (to ask for help).",
     "explanation": null,
     "englishEquivalent": null,
@@ -3297,7 +3297,7 @@
   },
   {
     "id": 413,
-    "kikuyu": "Mūcakwe ūgũthagia njamba",
+    "kikuyu": "Mũcakwe ũgũthagia njamba",
     "translation": "A cob of maize can knock down a giant.",
     "explanation": null,
     "englishEquivalent": "A small leak will sink a great ship.",
@@ -3305,7 +3305,7 @@
   },
   {
     "id": 414,
-    "kikuyu": "Mūcangacangi onaga mūguongo",
+    "kikuyu": "Mũcangacangi onaga mũguongo",
     "translation": "It is he who travels that finds the tusk.",
     "explanation": null,
     "englishEquivalent": "God helps those who help themselves.",
@@ -3313,7 +3313,7 @@
   },
   {
     "id": 415,
-    "kikuyu": "Mūcari ūrutagwo ndūgū-ini",
+    "kikuyu": "Mũcari ũrutagwo ndũgũ-ini",
     "translation": "Yaws is caught through friendship.",
     "explanation": "The proverb means that just as the disease is contracted by contact with infected people, so bad habits are acquired by consorting with bad people.",
     "englishEquivalent": "Who keeps company with a wolf will learn to howl.",
@@ -3321,7 +3321,7 @@
   },
   {
     "id": 416,
-    "kikuyu": "Mūcaria ūngĩ ndamwagaga",
+    "kikuyu": "Mũcaria ũngĩ ndamwagaga",
     "translation": "He who looks for another must find him.",
     "explanation": null,
     "englishEquivalent": "He who will seek may find.",
@@ -3329,7 +3329,7 @@
   },
   {
     "id": 417,
-    "kikuyu": "Mūceera na mūkündũ akündükaga taguo",
+    "kikuyu": "Mũceera na mũkũndũ akũndũkaga taguo",
     "translation": "He who walks with a mangy man becomes mangy.",
     "explanation": null,
     "englishEquivalent": "He who keeps company with a wolf will learn to howl.",
@@ -3337,7 +3337,7 @@
   },
   {
     "id": 418,
-    "kikuyu": "Mūciari ari tha",
+    "kikuyu": "Mũciari ari tha",
     "translation": "Parents are merciful.",
     "explanation": null,
     "englishEquivalent": null,
@@ -3345,7 +3345,7 @@
   },
   {
     "id": 419,
-    "kikuyu": "Mūciari ndairagio ngoro ni kimira kia mwana wake",
+    "kikuyu": "Mũciari ndairagio ngoro ni kimira kia mwana wake",
     "translation": "Parents do not feel sick when wiping the mucus from their child's nose.",
     "explanation": null,
     "englishEquivalent": null,
@@ -3353,15 +3353,15 @@
   },
   {
     "id": 420,
-    "kikuyu": "Mūciari ndathikũragia igwa itina",
+    "kikuyu": "Mũciari ndathikũragia igwa itina",
     "translation": "Parents do not take away the earth that covers the root of the sugar cane.",
-    "explanation": null,
+    "explanation": "As a good farmer does not uncover the roots of the sugar cane lest it may dry, so good parents have a limit also in punishing their children.",
     "englishEquivalent": "As a good farmer does not uncover the roots of the",
     "category": "work-wealth"
   },
   {
     "id": 421,
-    "kikuyu": "Mūciari ni etiagira",
+    "kikuyu": "Mũciari ni etiagira",
     "translation": "Parents are proud of their children.",
     "explanation": null,
     "englishEquivalent": null,
@@ -3369,7 +3369,7 @@
   },
   {
     "id": 422,
-    "kikuyu": "Mūci ndwathagwo ni ũtawakire",
+    "kikuyu": "Mũci ndwathagwo ni ũtawakire",
     "translation": "The house is not ruled by him that did not build it.",
     "explanation": null,
     "englishEquivalent": "Mind your own business.",
@@ -3377,7 +3377,7 @@
   },
   {
     "id": 423,
-    "kikuyu": "Mūci ni kūrarwo ũraragwo, ndūtindagwo",
+    "kikuyu": "Mũci ni kũrarwo ũraragwo, ndũtindagwo",
     "translation": "The house is for sleeping in by night, not for staying in by day.",
     "explanation": null,
     "englishEquivalent": "There is a time for all things.",
@@ -3385,7 +3385,7 @@
   },
   {
     "id": 424,
-    "kikuyu": "Mūci ũri mbūri ndwagaga kihuno",
+    "kikuyu": "Mũci ũri mbũri ndwagaga kihuno",
     "translation": "The house which has goats does not lack miscarriages.",
     "explanation": null,
     "englishEquivalent": "Who has land, has war.",
@@ -3393,7 +3393,7 @@
   },
   {
     "id": 425,
-    "kikuyu": "Mūcingũ mūnene unaga hiti kūgūrũ",
+    "kikuyu": "Mũcingũ mũnene unaga hiti kũgũrũ",
     "translation": "The strong smell (of roasting meat) causes the hyena to break its leg.",
     "explanation": null,
     "englishEquivalent": "Hasty climbers have sudden falls.",
@@ -3401,23 +3401,23 @@
   },
   {
     "id": 426,
-    "kikuyu": "Mūciriri kirimũ ndaigaga mūthīgī thi",
-    "translation": "He who advises a fool does not lay down his ‘mūthīgī’.",
+    "kikuyu": "Mũciriri kirimũ ndaigaga mũthĩgĩ thi",
+    "translation": "He who advises a fool does not lay down his ‘mũthĩgĩ’.",
     "explanation": null,
-    "englishEquivalent": "‘Mūthīgī’ is the staff of the elders.",
+    "englishEquivalent": "‘Mũthĩgĩ’ is the staff of the elders.",
     "category": "wisdom"
   },
   {
     "id": 427,
-    "kikuyu": "Mūciri ūmwe ndagambaga",
-    "translation": "One man alone in a tribunal can say nothing, i.e.",
+    "kikuyu": "Mũciri ũmwe ndagambaga",
+    "translation": "One man alone in a tribunal can say nothing, i.e. can take no decision.",
     "explanation": null,
-    "englishEquivalent": "can take no decision.",
+    "englishEquivalent": null,
     "category": "wisdom"
   },
   {
     "id": 428,
-    "kikuyu": "Mūcukani ndari mūci mwega",
+    "kikuyu": "Mũcukani ndari mũci mwega",
     "translation": "A slanderer has no peaceful home.",
     "explanation": null,
     "englishEquivalent": "Slander flings stones at itself.",
@@ -3425,7 +3425,7 @@
   },
   {
     "id": 429,
-    "kikuyu": "Mūgambo ũri kūgūa thi nduoyagwo; woyagwo na ũngĩ",
+    "kikuyu": "Mũgambo ũri kũgũa thi nduoyagwo; woyagwo na ũngĩ",
     "translation": "A word that has fallen to the ground cannot be picked up: it is picked up by another.",
     "explanation": null,
     "englishEquivalent": "Time and words can never be recalled.",
@@ -3433,7 +3433,7 @@
   },
   {
     "id": 430,
-    "kikuyu": "Mūgambo ũroigwo ndugũkagwo",
+    "kikuyu": "Mũgambo ũroigwo ndugũkagwo",
     "translation": "A word given must not be retaken.",
     "explanation": null,
     "englishEquivalent": null,
@@ -3465,7 +3465,7 @@
   },
   {
     "id": 434,
-    "kikuyu": "Mügeni amiaga mbirira",
+    "kikuyu": "Mũgeni amiaga mbirira",
     "translation": "The foreigner evacuates in the cemetery (for he does not know the place and its customs).",
     "explanation": null,
     "englishEquivalent": null,
@@ -3473,7 +3473,7 @@
   },
   {
     "id": 435,
-    "kikuyu": "Mügeni kirimũ ndarugagirwo njohi",
+    "kikuyu": "Mũgeni kirimũ ndarugagirwo njohi",
     "translation": "One does not give any beer to a foolish visitor.",
     "explanation": "The proverb means both that it is not honourable for the host to give hospitality to a fool, and that it is silly to give beer to a fool since he does not enjoy it.",
     "englishEquivalent": "He is not the fool that the fool is, but he that with the fools deals.",
@@ -3481,23 +3481,23 @@
   },
   {
     "id": 436,
-    "kikuyu": "Mügeni ndahũhitaga",
-    "translation": "A guest does not eat as much as he wants; i.e.",
+    "kikuyu": "Mũgeni ndahũhitaga",
+    "translation": "A guest does not eat as much as he wants; i.e. he must not be greedy.",
     "explanation": null,
-    "englishEquivalent": "he must not be greedy.",
+    "englishEquivalent": null,
     "category": "community"
   },
   {
     "id": 437,
-    "kikuyu": "Mügeni ni rũĩĩ",
-    "translation": "The guest is like a river, i.e.",
-    "explanation": "he passes quickly.",
+    "kikuyu": "Mũgeni ni rũĩĩ",
+    "translation": "The guest is like a river, i.e. he passes quickly.",
+    "explanation": null,
     "englishEquivalent": "Fish and guests smell at three days old.",
     "category": "community"
   },
   {
     "id": 438,
-    "kikuyu": "Mügeni ũtukũ agethire kiri muura",
+    "kikuyu": "Mũgeni ũtukũ agethire kiri muura",
     "translation": "He who harvests by night, reaps chaff.",
     "explanation": null,
     "englishEquivalent": "There is a time for all things.",
@@ -3505,7 +3505,7 @@
   },
   {
     "id": 439,
-    "kikuyu": "Mügeni ni mwire",
+    "kikuyu": "Mũgeni ni mwire",
     "translation": "He who has been advised is wise.",
     "explanation": null,
     "englishEquivalent": "A man forewarned is forearmed.",
@@ -3513,7 +3513,7 @@
   },
   {
     "id": 440,
-    "kikuyu": "Mũgiri rwa kũnyitūra agirire rwa kũnyitia",
+    "kikuyu": "Mũgiri rwa kũnyitũra agirire rwa kũnyitia",
     "translation": "One can cause the illness which he wanted to cure.",
     "explanation": null,
     "englishEquivalent": "The cure may be worse than the disease.",
@@ -3537,7 +3537,7 @@
   },
   {
     "id": 443,
-    "kikuyu": "Mũgoma mûrungu ni ũtũraga nyũngũ",
+    "kikuyu": "Mũgoma mũrungu ni ũtũraga nyũngũ",
     "translation": "The she-sheep can break the cooking pot, and still she has no horn.",
     "explanation": "Cooking pot means here an affair of great importance.",
     "englishEquivalent": "The meaning of the proverb is that a fool can spoil wise people's affairs.",
@@ -3546,8 +3546,8 @@
   {
     "id": 444,
     "kikuyu": "Mũgũnda ũraga na rũtere",
-    "translation": "A field begins to become a wilderness from a side; i.e.",
-    "explanation": "from a small place.",
+    "translation": "A field begins to become a wilderness from a side; i.e. from a small place.",
+    "explanation": null,
     "englishEquivalent": "A little neglect may breed a great mischief.",
     "category": "wisdom"
   },
@@ -3577,7 +3577,7 @@
   },
   {
     "id": 448,
-    "kikuyu": "Mũgũi ũtarĩ wa awa ni ũkündembũrĩra thiaka",
+    "kikuyu": "Mũgũi ũtarĩ wa awa ni ũkũndembũrĩra thiaka",
     "translation": "The arrow which is not my father's, pierces my quiver.",
     "explanation": null,
     "englishEquivalent": "Ill gotten goods seldom prosper.",
@@ -3585,7 +3585,7 @@
   },
   {
     "id": 449,
-    "kikuyu": "Mūhaka na ciake itimuragia thakame",
+    "kikuyu": "Mũhaka na ciake itimuragia thakame",
     "translation": "He who pays another with his own things, does not bleed.",
     "explanation": "The proverb means that one spends his money willingly when he needs help.",
     "englishEquivalent": null,
@@ -3593,7 +3593,7 @@
   },
   {
     "id": 450,
-    "kikuyu": "Mūhakana na ciake itimūragīra",
+    "kikuyu": "Mũhakana na ciake itimũragĩra",
     "translation": "He who stands close to his things does not lose them.",
     "explanation": null,
     "englishEquivalent": "The master's eye makes the horse fat.",
@@ -3601,7 +3601,7 @@
   },
   {
     "id": 451,
-    "kikuyu": "Mūhaki ndari hiū igiri",
+    "kikuyu": "Mũhaki ndari hiũ igiri",
     "translation": "The messenger of peace has no two knives (presents).",
     "explanation": null,
     "englishEquivalent": "Messengers should neither be beheaded nor hanged.",
@@ -3609,7 +3609,7 @@
   },
   {
     "id": 452,
-    "kikuyu": "Mūhandi tiwe mūrii",
+    "kikuyu": "Mũhandi tiwe mũrii",
     "translation": "He who plants is not he who eats.",
     "explanation": null,
     "englishEquivalent": "Man proposes, God disposes.",
@@ -3617,7 +3617,7 @@
   },
   {
     "id": 453,
-    "kikuyu": "Mūharwo niwe ūthingataga githaka",
+    "kikuyu": "Mũharwo niwe ũthingataga githaka",
     "translation": "The one with diarrhoea must look for a bush.",
     "explanation": null,
     "englishEquivalent": "Let him that is cold blow the coal.",
@@ -3625,7 +3625,7 @@
   },
   {
     "id": 454,
-    "kikuyu": "Mūhehwo na matū meri ndaiguaga",
+    "kikuyu": "Mũhehwo na matũ meri ndaiguaga",
     "translation": "He who is spoken to at both ears does not understand.",
     "explanation": null,
     "englishEquivalent": "Too much consulting confounds.",
@@ -3633,7 +3633,7 @@
   },
   {
     "id": 455,
-    "kikuyu": "Mūhenania ndathekaga",
+    "kikuyu": "Mũhenania ndathekaga",
     "translation": "A liar does not laugh (for if a liar laughs when he tells a lie he is not believed).",
     "explanation": null,
     "englishEquivalent": null,
@@ -3641,7 +3641,7 @@
   },
   {
     "id": 456,
-    "kikuyu": "Mūhenia ago oigaga mūrimū ūri gūthira",
+    "kikuyu": "Mũhenia ago oigaga mũrimũ ũri gũthira",
     "translation": "He who would deceive the witch-doctors says that his illness is finished.",
     "explanation": null,
     "englishEquivalent": "Hide nothing from thy minister, physician and lawyer.",
@@ -3649,7 +3649,7 @@
   },
   {
     "id": 457,
-    "kikuyu": "Mūhenio ari matukũ kũrĩ mūhenania",
+    "kikuyu": "Mũhenio ari matukũ kũrĩ mũhenania",
     "translation": "The deceived has many more days than the deceiver.",
     "explanation": null,
     "englishEquivalent": "Liars have short wings.",
@@ -3657,7 +3657,7 @@
   },
   {
     "id": 458,
-    "kikuyu": "Mūhenio ti mūgĩ ta mūhenania",
+    "kikuyu": "Mũhenio ti mũgĩ ta mũhenania",
     "translation": "The deceived is not so cunning as the deceiver.",
     "explanation": null,
     "englishEquivalent": null,
@@ -3665,7 +3665,7 @@
   },
   {
     "id": 459,
-    "kikuyu": "Mūheo ndagathimaga",
+    "kikuyu": "Mũheo ndagathimaga",
     "translation": "He who receives must not measure.",
     "explanation": null,
     "englishEquivalent": "Do not look a gift horse in the mouth.",
@@ -3682,8 +3682,8 @@
   {
     "id": 461,
     "kikuyu": "Mũhiki ariaga rũbia",
-    "translation": "He who hastens eats money; i.e.",
-    "explanation": "wastes his money.",
+    "translation": "He who hastens eats money; i.e. wastes his money.",
+    "explanation": null,
     "englishEquivalent": "Haste makes waste.",
     "category": "work-wealth"
   },
@@ -3721,7 +3721,7 @@
   },
   {
     "id": 466,
-    "kikuyu": "Mũũũnu etaga ũhũtiĩ mukoroku",
+    "kikuyu": "Mũhũnu etaga ũhũtiĩ mũkoroku",
     "translation": "He who is surfeited calls the hungry one glutton.",
     "explanation": null,
     "englishEquivalent": "It is easy preaching to the fasting with a full belly.",
@@ -3745,7 +3745,7 @@
   },
   {
     "id": 469,
-    "kikuyu": "Mũici na mündũ muka atigaga kieha akua",
+    "kikuyu": "Mũici na mũndũ muka atigaga kieha akua",
     "translation": "He who robbed in company with a woman, will live in fear until she dies (for a woman cannot keep a secret).",
     "explanation": null,
     "englishEquivalent": "Woman conceals only what she knows not.",
@@ -3762,8 +3762,8 @@
   {
     "id": 471,
     "kikuyu": "Mũici ũri hunyũ arindagira ũri maguta",
-    "translation": "An ugly thief is more likely to be caught than one smeared with fat: i.e.",
-    "explanation": "carefully dressed. The proverb means that a robber who cannot dissemble will soon be discovered, while the thief who can sham, will continue to flourish.",
+    "translation": "An ugly thief is more likely to be caught than one smeared with fat: i.e. carefully dressed.",
+    "explanation": "The proverb means that a robber who cannot dissemble will soon be discovered, while the thief who can sham, will continue to flourish.",
     "englishEquivalent": null,
     "category": "justice"
   },
@@ -3817,7 +3817,7 @@
   },
   {
     "id": 478,
-    "kikuyu": "Mũikaranio nīguo mūbarano",
+    "kikuyu": "Mũikaranio nĩguo mũbarano",
     "translation": "To stay together is to know each other.",
     "explanation": null,
     "englishEquivalent": null,
@@ -3825,7 +3825,7 @@
   },
   {
     "id": 479,
-    "kikuyu": "Mũikari mūĩ gitina niwe ūĩ kiria thambo ūriaga",
+    "kikuyu": "Mũikari mũĩ gitina niwe ũĩ kiria thambo ũriaga",
     "translation": "He who stays at the foot of the tree knows what ‘thambo’ eat.",
     "explanation": "‘Thambo’ are the black ants which live and nest on the trees. The proverb means that nobody knows the affairs of a home, society, etc. better than he who lives or has a part in it.",
     "englishEquivalent": "Every man knows his own business best.",
@@ -3833,7 +3833,7 @@
   },
   {
     "id": 480,
-    "kikuyu": "Mũikari na hunyũ ndakoragwo onete maguta akarega kwīhaka",
+    "kikuyu": "Mũikari na hunyũ ndakoragwo onete maguta akarega kwĩhaka",
     "translation": "He who is ugly, is not so because he refused to smear himself with fat (but rather because he had no fat to smear himself with).",
     "explanation": null,
     "englishEquivalent": "We are but what God made us.",
@@ -3841,7 +3841,7 @@
   },
   {
     "id": 481,
-    "kikuyu": "Mũikia ndōĩ mwehereri",
+    "kikuyu": "Mũikia ndoĩ mwehereri",
     "translation": "He that shoots an arrow does not know whom he will hit.",
     "explanation": null,
     "englishEquivalent": "You know not where a stone may light.",
@@ -3849,7 +3849,7 @@
   },
   {
     "id": 482,
-    "kikuyu": "Mũimwo ni irĩ ndatūũraga",
+    "kikuyu": "Mũimwo ni irĩ ndatũũraga",
     "translation": "He on whom fortune has frowned cannot live long.",
     "explanation": null,
     "englishEquivalent": null,
@@ -3906,8 +3906,8 @@
   {
     "id": 489,
     "kikuyu": "Mũka wa mwathi ahingaga na kũgũrũ etereire kiguru-mũki oke",
-    "translation": "The hunter's wife, awaiting her husband's return, closes the door only with her foot; i.e.",
-    "explanation": "she leaves the door unbolted so that her husband may enter more quickly with his prey.",
+    "translation": "The hunter's wife, awaiting her husband's return, closes the door only with her foot; i.e. she leaves the door unbolted so that her husband may enter more quickly with his prey.",
+    "explanation": null,
     "englishEquivalent": null,
     "category": "family"
   },
@@ -3945,7 +3945,7 @@
   },
   {
     "id": 494,
-    "kikuyu": "Mũükiri tene ainükaga tene",
+    "kikuyu": "Mũũkiri tene ainũkaga tene",
     "translation": "He who gets up early returns early.",
     "explanation": null,
     "englishEquivalent": "The early bird catches the worm.",
@@ -3953,7 +3953,7 @@
   },
   {
     "id": 495,
-    "kikuyu": "Mükürira githũnũ ndamenyagwo",
+    "kikuyu": "Mũkũrira githũnũ ndamenyagwo",
     "translation": "He who ages in the 'githũnũ' is not known by other people how old he is.",
     "explanation": "'Githũnũ' is a dormitory where unmarried people sleep. The proverb means that he who has not hut and no wife will age without having children to tell him how old he is.",
     "englishEquivalent": null,
@@ -3961,7 +3961,7 @@
   },
   {
     "id": 496,
-    "kikuyu": "Mükũũ, gaya, ũnyonte mũgai",
+    "kikuyu": "Mũkũũ, gaya, ũnyonte mũgai",
     "translation": "Old man, divide, and teach me how to divide.",
     "explanation": "This proverb shows how the Kikuyu respected old people, to whom was left the distribution of meat, beer, etc. at all gatherings.",
     "englishEquivalent": "Old age is honourable",
@@ -3985,7 +3985,7 @@
   },
   {
     "id": 499,
-    "kikuyu": "Mũmeni mündũ ũngĩ amwitaaga kiongo kia njau",
+    "kikuyu": "Mũmeni mũndũ ũngĩ amwitaaga kiongo kia njau",
     "translation": "He who despises another man, calls him 'head of calf'.",
     "explanation": "Owing to their esteem for oxen, it is not dishonourable for the Kikuyu to be told he has a head as big as that of an ox.",
     "englishEquivalent": "But it is shameful to be called 'head of calf' since the calf is a useless animal.",
@@ -3994,14 +3994,14 @@
   {
     "id": 500,
     "kikuyu": "Mũmeni ũngĩ amũutaga mbaki inĩrũ",
-    "translation": "He who despises another steals even the snuff from his nose; i.e.",
+    "translation": "He who despises another steals even the snuff from his nose; i.e. has no respect for him.",
     "explanation": null,
-    "englishEquivalent": "has no respect for him.",
+    "englishEquivalent": null,
     "category": "justice"
   },
   {
     "id": 501,
-    "kikuyu": "Mündũ ageraga mainwo, ndageraga maheo",
+    "kikuyu": "Mũndũ ageraga mainwo, ndageraga maheo",
     "translation": "Man counts what he is refused, not what he is given.",
     "explanation": null,
     "englishEquivalent": "We are more mindful of injuries than benefits.",
@@ -4009,7 +4009,7 @@
   },
   {
     "id": 502,
-    "kikuyu": "Mündũ mūgi ndari mūhere wa ūhoro",
+    "kikuyu": "Mũndũ mũgi ndari mũhere wa ũhoro",
     "translation": "A wise man does not need to be told a thing twice.",
     "explanation": null,
     "englishEquivalent": "A word is enough to the wise.",
@@ -4017,7 +4017,7 @@
   },
   {
     "id": 503,
-    "kikuyu": "Mündũ mūgo nderagūragira",
+    "kikuyu": "Mũndũ mũgo nderagũragira",
     "translation": "The witch-doctor cannot do for himself what he does for others.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4025,15 +4025,15 @@
   },
   {
     "id": 504,
-    "kikuyu": "Mündũ mūgo wa gwthokia ndari rūa",
-    "translation": "The witch-doctor who goes to see a patient without being sent for, will not have the hide of the slaughtered goat; i.e.",
-    "explanation": "will have no reward.",
+    "kikuyu": "Mũndũ mũgo wa gwthokia ndari rũa",
+    "translation": "The witch-doctor who goes to see a patient without being sent for, will not have the hide of the slaughtered goat; i.e. will have no reward.",
+    "explanation": null,
     "englishEquivalent": "Give neither counsel nor salt till you are asked for it.",
     "category": "work-wealth"
   },
   {
     "id": 505,
-    "kikuyu": "Mündũ mūgo wa itūūra ndagaga",
+    "kikuyu": "Mũndũ mũgo wa itũũra ndagaga",
     "translation": "The witch-doctor of the place is not needed.",
     "explanation": null,
     "englishEquivalent": "Never a prophet was valued in his own country.",
@@ -4041,7 +4041,7 @@
   },
   {
     "id": 506,
-    "kikuyu": "Mündũ mūka na igūrū itimenyagirwo",
+    "kikuyu": "Mũndũ mũka na igũrũ itimenyagirwo",
     "translation": "Woman and sky cannot be understood.",
     "explanation": null,
     "englishEquivalent": "Woman, wind and fortune are ever changing.",
@@ -4049,7 +4049,7 @@
   },
   {
     "id": 507,
-    "kikuyu": "Mündũ mūka ndoragagwo",
+    "kikuyu": "Mũndũ mũka ndoragagwo",
     "translation": "A woman must not be killed.",
     "explanation": "The reasons for this proverb are the facts that the woman is too weak to defend herself and that only the woman can produce children.",
     "englishEquivalent": null,
@@ -4057,7 +4057,7 @@
   },
   {
     "id": 508,
-    "kikuyu": "Mündũ mūka ndatūmagwo thiri-ini",
+    "kikuyu": "Mũndũ mũka ndatũmagwo thiri-ini",
     "translation": "A woman is not sent to collect debts.",
     "explanation": null,
     "englishEquivalent": "Let women spin and not preach.",
@@ -4065,7 +4065,7 @@
   },
   {
     "id": 509,
-    "kikuyu": "Mündũ mūigwa nī mūhootani",
+    "kikuyu": "Mũndũ mũigwa nĩ mũhootani",
     "translation": "The obedient man gets through.",
     "explanation": null,
     "englishEquivalent": "Do what thou ought and dread no shame.",
@@ -4073,7 +4073,7 @@
   },
   {
     "id": 510,
-    "kikuyu": "Mündũ mūrūme nī wa karūgī",
+    "kikuyu": "Mũndũ mũrũme nĩ wa karũgĩ",
     "translation": "Men act promptly.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4081,15 +4081,15 @@
   },
   {
     "id": 511,
-    "kikuyu": "Mündũ ūrakanyuira niwe ūī karī rita",
-    "translation": "He that has drunk once, knows that to drink is a pleasure;",
+    "kikuyu": "Mũndũ ũrakanyuira niwe ũĩ karĩ rita",
+    "translation": "He that has drunk once, knows that to drink is a pleasure; i.e. he who has experienced something knows whether it is good or bad.",
     "explanation": null,
-    "englishEquivalent": null,
+    "englishEquivalent": "Experience is the father of wisdom.",
     "category": "wisdom"
   },
   {
     "id": 512,
-    "kikuyu": "Mündũ ũri na ũndũ otaga mwaki na riũa",
+    "kikuyu": "Mũndũ ũri na ũndũ otaga mwaki na riũa",
     "translation": "The man who warms himself at the fire while the sun is shining, does so for some reason.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4097,7 +4097,7 @@
   },
   {
     "id": 513,
-    "kikuyu": "Mündũ ũtari mbũri ndendaga nyama",
+    "kikuyu": "Mũndũ ũtari mbũri ndendaga nyama",
     "translation": "People who have no goat do not desire meat.",
     "explanation": null,
     "englishEquivalent": "'Sour grapes,' as the fox said when he could not reach them.",
@@ -4105,15 +4105,15 @@
   },
   {
     "id": 514,
-    "kikuyu": "Mündũ ũtathiga athinjaga mwati atoindũrũme irigicegũ",
-    "translation": "He that does not travel slaughters the she-goat as he is ignorant of a ram in his fold; i.e.",
+    "kikuyu": "Mũndũ ũtathiga athinjaga mwati atoindũrũme irigicegũ",
+    "translation": "He that does not travel slaughters the she-goat as he is ignorant of a ram in his fold; i.e. he is stupid.",
     "explanation": null,
-    "englishEquivalent": "he is stupid.",
+    "englishEquivalent": null,
     "category": "work-wealth"
   },
   {
     "id": 515,
-    "kikuyu": "Mündũ ũtathiaga oi no nyina ũrugaga",
+    "kikuyu": "Mũndũ ũtathiaga oi no nyina ũrugaga",
     "translation": "He that does not travel knows only his mother's cooking.",
     "explanation": "Both the proverbs mean that he that does not leave his native place will have a very limited knowledge. The world is a great book, of which they who never stir from home read only one page.",
     "englishEquivalent": null,
@@ -4121,7 +4121,7 @@
   },
   {
     "id": 516,
-    "kikuyu": "Mündũ wa rurugi ourugagwo akerwo niwe wurugana",
+    "kikuyu": "Mũndũ wa rurugi ourugagwo akerwo niwe wurugana",
     "translation": "He who is wont to provoke others, is called a provoker even when he is provoked.",
     "explanation": null,
     "englishEquivalent": "A liar is not believed when he speaks the truth.",
@@ -4129,7 +4129,7 @@
   },
   {
     "id": 517,
-    "kikuyu": "Mündwithia rimwe ndagacoka kündwithia ringĩ",
+    "kikuyu": "Mũndwithia rimwe ndagacoka kũndwithia ringĩ",
     "translation": "He who has circumcised me once does not return to do it again.",
     "explanation": "The proverb means that he who has erred or has been cheated once, becomes wise and will not be cheated a second time.",
     "englishEquivalent": "He who stumbles twice over one stone deserves to break his shins.",
@@ -4138,14 +4138,14 @@
   {
     "id": 518,
     "kikuyu": "Mũnua ũmwe ni ũgarũragĩrwo",
-    "translation": "One mouth must be changed; i.e.",
-    "explanation": "it is not good to talk always with the same person nor about the same things.",
+    "translation": "One mouth must be changed; i.e. it is not good to talk always with the same person nor about the same things.",
+    "explanation": null,
     "englishEquivalent": "Change of pasture makes fat calves.",
     "category": "family"
   },
   {
     "id": 519,
-    "kikuyu": "Mũnyaka ni ũnyakükagwo",
+    "kikuyu": "Mũnyaka ni ũnyakũkagwo",
     "translation": "Fortune passes.",
     "explanation": null,
     "englishEquivalent": "When fortune smiles take the advantage.",
@@ -4154,8 +4154,8 @@
   {
     "id": 520,
     "kikuyu": "Mũnyaka ũri mbere ya kahinga",
-    "translation": "Fortune is beyond the bush, i.e.",
-    "explanation": "the obstacle.",
+    "translation": "Fortune is beyond the bush, i.e. the obstacle.",
+    "explanation": null,
     "englishEquivalent": "He that endures overcomes.",
     "category": "wisdom"
   },
@@ -4177,7 +4177,7 @@
   },
   {
     "id": 523,
-    "kikuyu": "Mũra na mündũ ti mũra na hiti",
+    "kikuyu": "Mũra na mũndũ ti mũra na hiti",
     "translation": "To be robbed by a person is different from being robbed by a hyena.",
     "explanation": "The proverb means that if you were robbed by a person, you can hope to be recompensed for the damage; but if a member of your family or a head of your herd has been stolen by a hyena, there is no hope of redress.",
     "englishEquivalent": "There are injuries beyond redress.",
@@ -4217,7 +4217,7 @@
   },
   {
     "id": 528,
-    "kikuyu": "Mũri kūria ta athi a thatū",
+    "kikuyu": "Mũri kũria ta athi a thatũ",
     "translation": "Sometimes one eats bad food like the hunters when they are out hunting in the misty season.",
     "explanation": "The proverb comes from the fact that hunters, who stay in the forest or in the plain for rather a long time must often be content with cold, raw food.",
     "englishEquivalent": "When bread is wanting, oaten cakes are excellent.",
@@ -4289,7 +4289,7 @@
   },
   {
     "id": 537,
-    "kikuyu": "Mūrio ndūminaga ng'aragu",
+    "kikuyu": "Mũrio ndũminaga ng'aragu",
     "translation": "Sweetness does not satisfy hunger.",
     "explanation": "The proverb means that pleasures do not quench the thirst for many more pleasures.",
     "englishEquivalent": "But it is also used when we should say: ‘Sweet words butter no parsnips.’",
@@ -4297,7 +4297,7 @@
   },
   {
     "id": 538,
-    "kikuyu": "Mūrio ndūnenganagirwo",
+    "kikuyu": "Mũrio ndũnenganagirwo",
     "translation": "Pleasure cannot be communicated.",
     "explanation": "The proverb means that he who has any reason for rejoicing, cannot feel unhappy even if his friends or neighbours are grieved.",
     "englishEquivalent": null,
@@ -4305,7 +4305,7 @@
   },
   {
     "id": 539,
-    "kikuyu": "Mūrio ndūtūraga ta ngatho",
+    "kikuyu": "Mũrio ndũtũraga ta ngatho",
     "translation": "Pleasure does not last so much as gratitude.",
     "explanation": "The proverb means that few virtues are as great as gratitude and that few joys are greater than that of being thanked for a service.",
     "englishEquivalent": "Gratitude surpasses all other virtues.",
@@ -4313,15 +4313,15 @@
   },
   {
     "id": 540,
-    "kikuyu": "Mūrio ni wirīagira",
-    "translation": "Sweetness eats up itself and",
+    "kikuyu": "Mũrĩo nĩ wĩrĩagĩra",
+    "translation": "Sweetness eats up itself and brings ruin to the one who indulges excessively.",
     "explanation": null,
     "englishEquivalent": null,
     "category": "wisdom"
   },
   {
     "id": 541,
-    "kikuyu": "Mūrio ūgīraga kieha",
+    "kikuyu": "Mũrio ũgĩraga kieha",
     "translation": "Sweetness brings sorrow.",
     "explanation": null,
     "englishEquivalent": "Pleasure stings even though it pleases.",
@@ -4329,7 +4329,7 @@
   },
   {
     "id": 542,
-    "kikuyu": "Mūrio ūminaga magego",
+    "kikuyu": "Mũrio ũminaga magego",
     "translation": "Sweetness spoils teeth.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4337,7 +4337,7 @@
   },
   {
     "id": 543,
-    "kikuyu": "Mūrio ūrutaga hūngũ mūtī igūrũ",
+    "kikuyu": "Mũrio ũrutaga hũngũ mũtĩ igũrũ",
     "translation": "Sweetness makes the vulture descend from the tree.",
     "explanation": null,
     "englishEquivalent": "Beauty draws more than oxen.",
@@ -4345,7 +4345,7 @@
   },
   {
     "id": 544,
-    "kikuyu": "Mūrio wa njohi ni ūriūkagwo, no wa indo ndūriūkagwo",
+    "kikuyu": "Mũrio wa njohi ni ũriũkagwo, no wa indo ndũriũkagwo",
     "translation": "The drunkenness of beer passes away, but the drunkenness of wealth lasts forever.",
     "explanation": null,
     "englishEquivalent": "Avarice increases with wealth.",
@@ -4377,7 +4377,7 @@
   },
   {
     "id": 548,
-    "kikuyu": "Mũrimũ wa mücoka nìguo ũragaga mündũ",
+    "kikuyu": "Mũrimũ wa mũcoka nĩguo ũragaga mũndũ",
     "translation": "It is the illness that returns that kills people.",
     "explanation": null,
     "englishEquivalent": "Resist the beginnings.",
@@ -4402,8 +4402,8 @@
   {
     "id": 551,
     "kikuyu": "Mũrugiri arũme ndagaga ngiha",
-    "translation": "He who cooks food for men, does not lack big veins, i.e.",
-    "explanation": "bruises. The proverb means that he who works for a master must do his duty to avoid punishment.",
+    "translation": "He who cooks food for men, does not lack big veins, i.e. bruises.",
+    "explanation": "The proverb means that he who works for a master must do his duty to avoid punishment.",
     "englishEquivalent": "Men like facts not words.",
     "category": "work-wealth"
   },
@@ -4417,15 +4417,15 @@
   },
   {
     "id": 553,
-    "kikuyu": "Mûruri ndwakaga",
-    "translation": "The ‘mûruri’ does not build.",
-    "explanation": "‘Mûruri’ is a forest tree with beautiful red flowers, but yielding very poor timber.",
+    "kikuyu": "Mũruri ndwakaga",
+    "translation": "The ‘mũruri’ does not build.",
+    "explanation": "‘Mũruri’ is a forest tree with beautiful red flowers, but yielding very poor timber.",
     "englishEquivalent": "All is not gold that glitters.",
     "category": "work-wealth"
   },
   {
     "id": 554,
-    "kikuyu": "Mûrwithia arûme aari kihîi",
+    "kikuyu": "Mũrwithia arũme aari kihĩi",
     "translation": "He who circumcises the boy was a boy, too.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4433,7 +4433,7 @@
   },
   {
     "id": 555,
-    "kikuyu": "Mûrwithia arûme ni arwithagio",
+    "kikuyu": "Mũrwithia arũme ni arwithagio",
     "translation": "He who circumcises the males was circumcised.",
     "explanation": null,
     "englishEquivalent": "The child is father of the man.",
@@ -4441,7 +4441,7 @@
   },
   {
     "id": 556,
-    "kikuyu": "Mûtego ti ngoro, ni wathi warera",
+    "kikuyu": "Mũtego ti ngoro, ni wathi warera",
     "translation": "It is not the trap that counts, but the art of trapping.",
     "explanation": null,
     "englishEquivalent": "A good archer is known by his aim, not his arrows.",
@@ -4449,7 +4449,7 @@
   },
   {
     "id": 557,
-    "kikuyu": "Mûteng’erania na mûteng’erio gûtiri ûtanogaga",
+    "kikuyu": "Mũteng’erania na mũteng’erio gũtiri ũtanogaga",
     "translation": "Both he that chases and he that is chased become tired.",
     "explanation": null,
     "englishEquivalent": "Everyone has his own troubles.",
@@ -4457,15 +4457,15 @@
   },
   {
     "id": 558,
-    "kikuyu": "Mûthakwa wa athi ndûthiragwo ni gicanjara",
-    "translation": "The ‘mûthakwa-tree’ will not discontinue to produce branches of only one shape.",
+    "kikuyu": "Mũthakwa wa athi ndũthiragwo ni gicanjara",
+    "translation": "The ‘mũthakwa-tree’ will not discontinue to produce branches of only one shape.",
     "explanation": null,
     "englishEquivalent": "Like father like son.",
     "category": "family"
   },
   {
     "id": 559,
-    "kikuyu": "Mûthamaki ûterwo ti mûthamaki",
+    "kikuyu": "Mũthamaki ũterwo ti mũthamaki",
     "translation": "The wise man who is not taught is not a wise man.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4473,7 +4473,7 @@
   },
   {
     "id": 560,
-    "kikuyu": "Mûthinio ni kuona arûga mûthinio ni wagi",
+    "kikuyu": "Mũthinio ni kuona arũga mũthinio ni wagi",
     "translation": "He who is troubled by having (property) is better off than he who is troubled by poverty.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4481,7 +4481,7 @@
   },
   {
     "id": 561,
-    "kikuyu": "Mûthiirwo ûgo-ini no ûria arirwo",
+    "kikuyu": "Mũthiirwo ũgo-ini no ũria arirwo",
     "translation": "He who sends somebody to a witch-doctor on his behalf must believe all he is told.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4489,7 +4489,7 @@
   },
   {
     "id": 562,
-    "kikuyu": "Mûthiganwo ni ûri nja ndahonokaga",
+    "kikuyu": "Mũthiganwo ni ũri nja ndahonokaga",
     "translation": "He who is sought by a man already in the courtyard, has no way of escape.",
     "explanation": null,
     "englishEquivalent": "To understand this proverb one must bear in mind that",
@@ -4497,7 +4497,7 @@
   },
   {
     "id": 573,
-    "kikuyu": "Mũthũri mündũ tiwe Ngai",
+    "kikuyu": "Mũthũri mũndũ tiwe Ngai",
     "translation": "He that dislikes a person—is he God?",
     "explanation": "The proverb means that if anyone is hated by men, he is not necessarily hated also by God.",
     "englishEquivalent": "God is just.",
@@ -4529,7 +4529,7 @@
   },
   {
     "id": 577,
-    "kikuyu": "Mũĩ ũgũagira mündũ ũri hakuhĩ",
+    "kikuyu": "Mũĩ ũgũagira mũndũ ũri hakuhĩ",
     "translation": "The tree falls on the man who stands by it.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4569,7 +4569,7 @@
   },
   {
     "id": 582,
-    "kikuyu": "Mütino ūrutaga mündũ ūriri",
+    "kikuyu": "Mũtino ũrutaga mũndũ ũriri",
     "translation": "Danger makes a man rise from bed.",
     "explanation": null,
     "englishEquivalent": "Men in danger need no spur.",
@@ -4577,7 +4577,7 @@
   },
   {
     "id": 583,
-    "kikuyu": "Mütino ūthagia ndigīrīri",
+    "kikuyu": "Mũtino ũthagia ndigĩrĩri",
     "translation": "Misfortune frustrates one's plans.",
     "explanation": null,
     "englishEquivalent": "Man proposes, God disposes.",
@@ -4585,7 +4585,7 @@
   },
   {
     "id": 584,
-    "kikuyu": "Mütirima wa kirimũ witirimagia na mūgi",
+    "kikuyu": "Mũtirima wa kirimũ witirimagia na mũgi",
     "translation": "A fool's walking-stick helps the wise man to stand.",
     "explanation": "The proverb means that wise people know how to get profit from things that a fool thinks useless.",
     "englishEquivalent": "A wise man gets learning from those who have none themselves.",
@@ -4593,7 +4593,7 @@
   },
   {
     "id": 585,
-    "kikuyu": "Mütūũri mūno ndagaga",
+    "kikuyu": "Mũtũũri mũno ndagaga",
     "translation": "He who lives a long time (in one place) must find what he wants.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4601,15 +4601,15 @@
   },
   {
     "id": 586,
-    "kikuyu": "Mütumia angikūra atarĩ mwana ndangiona mütahīri maai",
-    "translation": "The woman that gets old without bearing a child, will have nobody to draw water for her, i.e.",
-    "explanation": "will have nobody to help her.",
+    "kikuyu": "Mũtumia angikũra atarĩ mwana ndangiona mũtahĩri maai",
+    "translation": "The woman that gets old without bearing a child, will have nobody to draw water for her, i.e. will have nobody to help her.",
+    "explanation": null,
     "englishEquivalent": "Children are poor men's riches.",
     "category": "family"
   },
   {
     "id": 587,
-    "kikuyu": "Mütumia na kionje ni ūndũ ūmwe",
+    "kikuyu": "Mũtumia na kionje ni ũndũ ũmwe",
     "translation": "A woman and an invalid man are the same thing.",
     "explanation": null,
     "englishEquivalent": "Words for women, actions for men.",
@@ -4617,7 +4617,7 @@
   },
   {
     "id": 588,
-    "kikuyu": "Mutumia ndatūraga mütwe na ndaikagia ndahi ndua",
+    "kikuyu": "Mutumia ndatũraga mũtwe na ndaikagia ndahi ndua",
     "translation": "A woman does not split the head (of the slaughtered goat) nor dip the cup into the beer (because both are men's jobs).",
     "explanation": null,
     "englishEquivalent": "Let women spin and not preach.",
@@ -4625,7 +4625,7 @@
   },
   {
     "id": 589,
-    "kikuyu": "Müturi tiwe mūhurutiri",
+    "kikuyu": "Mũturi tiwe mũhurutiri",
     "translation": "He that hands the hammer is not the same as the man who pulls the bellows.",
     "explanation": null,
     "englishEquivalent": "You cannot drink and whistle at the same time.",
@@ -4633,7 +4633,7 @@
   },
   {
     "id": 590,
-    "kikuyu": "Mütumumu ndonagia ūria ūngĩ njira",
+    "kikuyu": "Mũtumumu ndonagia ũria ũngĩ njira",
     "translation": "A blind man does not show another the way.",
     "explanation": null,
     "englishEquivalent": "Blind does not lead blind.",
@@ -4641,7 +4641,7 @@
   },
   {
     "id": 591,
-    "kikuyu": "Mūtwari ndari ūhoro",
+    "kikuyu": "Mũtwari ndari ũhoro",
     "translation": "He who carries an embassy has no concern in it.",
     "explanation": null,
     "englishEquivalent": "Messengers should neither be beheaded nor hanged.",
@@ -4649,7 +4649,7 @@
   },
   {
     "id": 592,
-    "kikuyu": "Mūtwe ūmwe ndwatūraga ng'ũndũ",
+    "kikuyu": "Mũtwe ũmwe ndwatũraga ng'ũndũ",
     "translation": "Only one head does not divide a field.",
     "explanation": null,
     "englishEquivalent": "Four eyes see more than two.",
@@ -4657,7 +4657,7 @@
   },
   {
     "id": 593,
-    "kikuyu": "Mūtwe wa mündũ ūmwe ni ithino",
+    "kikuyu": "Mũtwe wa mũndũ ũmwe ni ithino",
     "translation": "One man’s head is a solitary place.",
     "explanation": null,
     "englishEquivalent": "Counsel is not of one.",
@@ -4665,7 +4665,7 @@
   },
   {
     "id": 594,
-    "kikuyu": "Mugi ndoi ūria akerwo",
+    "kikuyu": "Mugi ndoi ũria akerwo",
     "translation": "He who speaks does not know what others will reply.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4673,7 +4673,7 @@
   },
   {
     "id": 595,
-    "kikuyu": "Mūmagari onaga ūnene",
+    "kikuyu": "Mũmagari onaga ũnene",
     "translation": "He who travels sees great things.",
     "explanation": "The world is a great book, of which they who never stir from home read only one page.",
     "englishEquivalent": null,
@@ -4681,8 +4681,8 @@
   },
   {
     "id": 596,
-    "kikuyu": "Muni kiriti niwe ūĩ ūria thina ūigana wa migogo na",
-    "translation": "nyamũ It is the forest clearer who knows the troubles caused by trunks and animals.",
+    "kikuyu": "Mũni kĩrĩti nĩwe ũĩ ũrĩa thĩna ũigana wa mĩgogo na nyamũ",
+    "translation": "It is the forest clearer who knows the troubles caused by trunks and animals.",
     "explanation": null,
     "englishEquivalent": "Every man knows his own business best.",
     "category": "nature"
@@ -4705,7 +4705,7 @@
   },
   {
     "id": 599,
-    "kikuyu": "Mwagi maguta oigaga hünyũ ni ūmwe na maguta",
+    "kikuyu": "Mwagi maguta oigaga hũnyũ ni ũmwe na maguta",
     "translation": "He that lacks fat says ugliness is the same as beauty.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4777,7 +4777,7 @@
   },
   {
     "id": 608,
-    "kikuyu": "Mwana ndahüragwo ithe ari ho",
+    "kikuyu": "Mwana ndahũragwo ithe ari ho",
     "translation": "The son is not beaten when the father is near.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4794,9 +4794,9 @@
   {
     "id": 610,
     "kikuyu": "Mwana ũri kio ndasaga mũhambia",
-    "translation": "A child who likes work does not lack one to wash him, i.e.",
+    "translation": "A child who likes work does not lack one to wash him, i.e. to take care of him.",
     "explanation": null,
-    "englishEquivalent": "to take care of him.",
+    "englishEquivalent": null,
     "category": "family"
   },
   {
@@ -4835,8 +4835,8 @@
     "id": 615,
     "kikuyu": "Mwana wa rwendo ariaga nyina na itie",
     "translation": "The Kikuyu used to wear rattles on their feet when dancing.",
-    "explanation": "The proverb has the obvious meaning that the son who",
-    "englishEquivalent": null,
+    "explanation": "The Kikuyu used to wear rattles on their feet when dancing. The proverb has the meaning that the pampered son who realizes he is his parents' favourite gives them the most trouble.",
+    "englishEquivalent": "To nourish a viper in one's bosom.",
     "category": "family"
   },
   {
@@ -4881,7 +4881,7 @@
   },
   {
     "id": 621,
-    "kikuyu": "Mwari mwega ahitükira thome wa ngia",
+    "kikuyu": "Mwari mwega ahitũkira thome wa ngia",
     "translation": "A fair girl does not stop at a poor youth's (for he could not buy her).",
     "explanation": null,
     "englishEquivalent": null,
@@ -4905,7 +4905,7 @@
   },
   {
     "id": 624,
-    "kikuyu": "Mwatū ndwiragirwo mwana",
+    "kikuyu": "Mwatũ ndwiragirwo mwana",
     "translation": "A boy is not sent to collect the honey (for he does not know how to collect it).",
     "explanation": null,
     "englishEquivalent": "Every man does his own business best.",
@@ -4913,7 +4913,7 @@
   },
   {
     "id": 625,
-    "kikuyu": "Mwatūkiria ki? Aca no thũmbĩ na rũhuho",
+    "kikuyu": "Mwatũkiria ki? Aca no thũmbĩ na rũhuho",
     "translation": "What have you that we have not?",
     "explanation": "Nothing but ‘thũmbĩ’ and wind. ‘Thũmbĩ’ is the piece of cloth or leather used to fasten ostrich and other birds’ feathers around the head. The proverb means, ‘There is no news’.",
     "englishEquivalent": null,
@@ -4953,15 +4953,15 @@
   },
   {
     "id": 630,
-    "kikuyu": "Mwendi mũhiriga ũtuikane etagia rũrĩmĩ na mbere",
-    "translation": "ndarũriaga He who wants to cause disagreement within the clan asks for the tongue (of the slaughtered goat) which he was not wont to eat before.",
+    "kikuyu": "Mwendi mũhĩrĩga ũtuĩkane etagia rũrĩmĩ na mbere ndarũrĩaga",
+    "translation": "He who wants to cause disagreement within the clan asks for the tongue (of the slaughtered goat) which he was not wont to eat before.",
     "explanation": "The tongue of the goat is a choice morsel which belongs by right to the head of the family or clan. The proverb means that he who wants a pretext for quarrelling, asks for something which he cannot be given.",
     "englishEquivalent": null,
     "category": "family"
   },
   {
     "id": 631,
-    "kikuyu": "Mwendi ūru ni awonaga",
+    "kikuyu": "Mwendi ũru ni awonaga",
     "translation": "He who seeks evil finds it.",
     "explanation": null,
     "englishEquivalent": null,
@@ -4969,7 +4969,7 @@
   },
   {
     "id": 632,
-    "kikuyu": "Mwendi ūthaka ndacayaga",
+    "kikuyu": "Mwendi ũthaka ndacayaga",
     "translation": "He who wants beauty does not complain (if it costs him some pain).",
     "explanation": null,
     "englishEquivalent": "No gains without pains.",
@@ -4977,7 +4977,7 @@
   },
   {
     "id": 633,
-    "kikuyu": "Mwendia ni agūraga",
+    "kikuyu": "Mwendia ni agũraga",
     "translation": "He who sells buys.",
     "explanation": null,
     "englishEquivalent": "To buy and to sell are both business.",
@@ -5001,7 +5001,7 @@
   },
   {
     "id": 636,
-    "kikuyu": "Mwere mwega ūmenyagwo na ngetho",
+    "kikuyu": "Mwere mwega ũmenyagwo na ngetho",
     "translation": "The good millet is known at the harvest time.",
     "explanation": null,
     "englishEquivalent": "A tree is known by its fruit.",
@@ -5009,10 +5009,10 @@
   },
   {
     "id": 637,
-    "kikuyu": "Mwetereri ariaga ya mūgwato",
-    "translation": "He who waits gets the best food, i.e.",
-    "explanation": "the biggest potato, the sweetest maize, etc.",
-    "englishEquivalent": "and can eat better cooked food.",
+    "kikuyu": "Mwetereri ariaga ya mũgwato",
+    "translation": "He who waits gets the best food, i.e. the biggest potato, the sweetest maize, etc. and can eat better cooked food.",
+    "explanation": null,
+    "englishEquivalent": "Everything comes to him who waits.",
     "category": "work-wealth"
   },
   {
@@ -5025,7 +5025,7 @@
   },
   {
     "id": 639,
-    "kikuyu": "Mwigerekanio wateire kiūra matina",
+    "kikuyu": "Mwigerekanio wateire kiũra matina",
     "translation": "The frog that compared itself to the ox lost its buttocks.",
     "explanation": "There is a fable, that a frog seeing what big buttocks the ox had, thought it could grow as big by swelling. But it burst and so lost buttocks and life.",
     "englishEquivalent": "All covet, all lose.",
@@ -5105,7 +5105,7 @@
   },
   {
     "id": 649,
-    "kikuyu": "Mwitaari ndari ūthũ",
+    "kikuyu": "Mwitaari ndari ũthũ",
     "translation": "He who takes counsel only from himself meets no hatred.",
     "explanation": null,
     "englishEquivalent": null,
@@ -5121,7 +5121,7 @@
   },
   {
     "id": 651,
-    "kikuyu": "Mwoni ūmũthĩ tiwe mwoni rũciũ",
+    "kikuyu": "Mwoni ũmũthĩ tiwe mwoni rũciũ",
     "translation": "He who sees today does not see tomorrow.",
     "explanation": null,
     "englishEquivalent": "Today thee, tomorrow me.",
@@ -5129,7 +5129,7 @@
   },
   {
     "id": 652,
-    "kikuyu": "Narua, mũgogo ūtanatendera",
+    "kikuyu": "Narua, mũgogo ũtanatendera",
     "translation": "Haste, before the trunk-bridge becomes slippery.",
     "explanation": "It must be borne in mind that native bridges consist mostly of only one trunk spanning the two banks of the river.",
     "englishEquivalent": "Hence passing on such bridges in wet weather is dangerous.",
@@ -5163,8 +5163,8 @@
     "id": 656,
     "kikuyu": "Ndakũrama kinganga nawe wanama kingware?",
     "translation": "I gave you the beauty of a guinea fowl and you give me the beauty of a francolin.",
-    "explanation": "The proverb originates in the following fable.",
-    "englishEquivalent": "Once 79",
+    "explanation": "Once upon a time the guinea fowl, wanting to go to a dance, called upon the francolin to have its feathers dressed. The francolin, hoping to have the same favour returned, assented; but the guinea fowl excused itself saying the dance was about to begin and left the francolin in the lurch.",
+    "englishEquivalent": "To do good to the ungrateful is to throw rose-water into the sea.",
     "category": "caution"
   },
   {
@@ -5193,7 +5193,7 @@
   },
   {
     "id": 660,
-    "kikuyu": "Ndegwa nyinyi ihaicaga ng'ombe na mûtwe",
+    "kikuyu": "Ndegwa nyinyi ihaicaga ng'ombe na mũtwe",
     "translation": "The young bull mounts the cows from the head.",
     "explanation": null,
     "englishEquivalent": "Young is the goose that will not eat oats.",
@@ -5217,7 +5217,7 @@
   },
   {
     "id": 663,
-    "kikuyu": "Ndía kahora īgiaga gūkameria",
+    "kikuyu": "Ndĩa kahora ĩgiaga gũkameria",
     "translation": "The animal that eats slowly can swallow well.",
     "explanation": null,
     "englishEquivalent": "He that goes softly, goes safely.",
@@ -5225,8 +5225,8 @@
   },
   {
     "id": 664,
-    "kikuyu": "Ndiakagwo na ya wakinī",
-    "translation": "Nobody is forced to build his hut on the pattern of his ‘wakinī’.",
+    "kikuyu": "Ndiakagwo na ya wakinĩ",
+    "translation": "Nobody is forced to build his hut on the pattern of his ‘wakinĩ’.",
     "explanation": "‘Wakini’ is a person circumcised at the same time— somebody of the same age-group.",
     "englishEquivalent": "Every one to his own taste.",
     "category": "family"
@@ -5249,7 +5249,7 @@
   },
   {
     "id": 667,
-    "kikuyu": "Ndīgūre: Konyū kegūra ni komirie ikwa",
+    "kikuyu": "Ndĩgũre: Konyũ kegũra ni komirie ikwa",
     "translation": "Humble yourself: the inhabitants of Konyu were able to grow the yams after humbling themselves.",
     "explanation": "The proverb originates in the legend that the people of Konyu, a place in Kikuyu country, who had been at war with their neighbours of Mathira, ceased to be raided and could till their fields in peace, only by submitting.",
     "englishEquivalent": "He makes a good war that makes a good peace.",
@@ -5257,7 +5257,7 @@
   },
   {
     "id": 668,
-    "kikuyu": "Ndīkūraga na migiria",
+    "kikuyu": "Ndĩkũraga na migiria",
     "translation": "The ox does not become old with strong muscles.",
     "explanation": "The proverb means that man cannot expect to age and to retain the vigour of his youth.",
     "englishEquivalent": null,
@@ -5265,7 +5265,7 @@
   },
   {
     "id": 669,
-    "kikuyu": "Ndīrī ndiiyūragira kūria ikūgaragario",
+    "kikuyu": "Ndĩrĩ ndiiyũragira kũria ikũgaragario",
     "translation": "The mortar is not filled with juice in the place where it is rolled.",
     "explanation": "The proverb means that anything is found useful only in that place and by those people who are in need of it.",
     "englishEquivalent": "Everything is good in its own season.",
@@ -5298,8 +5298,8 @@
   {
     "id": 673,
     "kikuyu": "Ndithũire mũnyoni ta mũnyaniriri",
-    "translation": "I do not hate him who sees me so much as him who reveals me, i.e.",
-    "explanation": "my faults.",
+    "translation": "I do not hate him who sees me so much as him who reveals me, i.e. my faults.",
+    "explanation": null,
     "englishEquivalent": "Nobody is willing to acknowledge he is in fault.",
     "category": "justice"
   },
@@ -5322,7 +5322,7 @@
   {
     "id": 676,
     "kikuyu": "Ndonga nanu ĩrũgitwo ni mũkari",
-    "translation": "A rich evil-doer is worse than a miser",
+    "translation": "A rich evil-doer is worse than a miser.",
     "explanation": null,
     "englishEquivalent": null,
     "category": "work-wealth"
@@ -5330,22 +5330,22 @@
   {
     "id": 677,
     "kikuyu": "Ndonga ĩmwe ndihingaga iriũko",
-    "translation": "One rich man cannot close the ford; i.e.",
-    "explanation": "cannot do all he would.",
+    "translation": "One rich man cannot close the ford; i.e. cannot do all he would.",
+    "explanation": null,
     "englishEquivalent": "No living man all things can.",
     "category": "work-wealth"
   },
   {
     "id": 678,
-    "kikuyu": "Ndūgate kūgūrū ta Nyakinyua",
-    "translation": "Do not give your foot the position which ‘Nyakīnyua’ gives.",
+    "kikuyu": "Ndũgate kũgũrũ ta Nyakinyua",
+    "translation": "Do not give your foot the position which ‘Nyakĩnyua’ gives.",
     "explanation": null,
-    "englishEquivalent": "‘Nyakīnyua’ is used to mean old women, who often sit unbecomingly.",
+    "englishEquivalent": "‘Nyakĩnyua’ is used to mean old women, who often sit unbecomingly.",
     "category": "family"
   },
   {
     "id": 679,
-    "kikuyu": "Ndūgira na kaigwa kayo",
+    "kikuyu": "Ndũgira na kaigwa kayo",
     "translation": "Every little hole of the ear has its little thorn.",
     "explanation": "The Kikuyu used to put little sticks or thorns in the pierced upper part of the ear.",
     "englishEquivalent": "Every sparrow to its ear of wheat.",
@@ -5353,7 +5353,7 @@
   },
   {
     "id": 680,
-    "kikuyu": "Ndūgetange ta kīhia kīa mūcai",
+    "kikuyu": "Ndũgetange ta kĩhia kĩa mũcai",
     "translation": "Do not torment yourself as you torment the seeds of the broom-tree (which you scatter everywhere without any regard).",
     "explanation": null,
     "englishEquivalent": null,
@@ -5361,7 +5361,7 @@
   },
   {
     "id": 681,
-    "kikuyu": "Ndūgū irutagwo njira",
+    "kikuyu": "Ndũgũ irutagwo njira",
     "translation": "Friendship begins with meeting at a road.",
     "explanation": null,
     "englishEquivalent": null,
@@ -5369,15 +5369,15 @@
   },
   {
     "id": 682,
-    "kikuyu": "Ndūgū ni makinya",
-    "translation": "Friendship is steps, i.e.",
-    "explanation": "it consists in going to see one another.",
+    "kikuyu": "Ndũgũ ni makinya",
+    "translation": "Friendship is steps, i.e. it consists in going to see one another.",
+    "explanation": null,
     "englishEquivalent": "Friendship consists in visiting friends.",
     "category": "community"
   },
   {
     "id": 683,
-    "kikuyu": "Ndūgū nyingī ithatagia mūhuko",
+    "kikuyu": "Ndũgũ nyingĩ ithatagia mũhuko",
     "translation": "Many friends make one’s pocket empty.",
     "explanation": null,
     "englishEquivalent": "Friends are pick-pockets.",
@@ -5385,7 +5385,7 @@
   },
   {
     "id": 684,
-    "kikuyu": "Ndūgū ya mwana īmatagio ni nyina",
+    "kikuyu": "Ndũgũ ya mwana ĩmatagio ni nyina",
     "translation": "The friendship of the son is strengthened by his mother.",
     "explanation": null,
     "englishEquivalent": "Children’s joys are parents’ joys.",
@@ -5393,7 +5393,7 @@
   },
   {
     "id": 685,
-    "kikuyu": "Ndūire nyiki ta mūrogi",
+    "kikuyu": "Ndũire nyiki ta mũrogi",
     "translation": "I live alone like a poisoner.",
     "explanation": "The proverb illustrates the Kikuyu’s dislike for poisoners and wizards.",
     "englishEquivalent": null,
@@ -5401,7 +5401,7 @@
   },
   {
     "id": 686,
-    "kikuyu": "Ndūrio ni mata ta thua",
+    "kikuyu": "Ndũrio ni mata ta thua",
     "translation": "I live on saliva like a flea.",
     "explanation": null,
     "englishEquivalent": "To live from hand to mouth.",
@@ -5489,7 +5489,7 @@
   },
   {
     "id": 697,
-    "kikuyu": "Ni hiti mūgambire",
+    "kikuyu": "Ni hiti mũgambire",
     "translation": "It is the hyena that howls.",
     "explanation": "The proverb is applied to boisterous people.",
     "englishEquivalent": "Barking dogs seldom bite.",
@@ -5505,7 +5505,7 @@
   },
   {
     "id": 699,
-    "kikuyu": "Ni mūguanite ta gikwa na mūkũngũ",
+    "kikuyu": "Ni mũguanite ta gikwa na mũkũngũ",
     "translation": "You agree like the yam and the tree to which it clings.",
     "explanation": null,
     "englishEquivalent": "To be like David and Jonathan.",
@@ -5513,7 +5513,7 @@
   },
   {
     "id": 700,
-    "kikuyu": "Ni gũkaga mūkira mwite",
+    "kikuyu": "Ni gũkaga mũkira mwite",
     "translation": "Somebody may come in higher in dignity than he who was firstly invited.",
     "explanation": "The proverb has almost the same meaning as the words of the Gospel: 'When thou art invited to a wedding sit not down in the first seats at the table, lest perhaps one more honourable than thou be invited by him'; etc.",
     "englishEquivalent": "Humility often gains more than pride.",
@@ -5537,7 +5537,7 @@
   },
   {
     "id": 703,
-    "kikuyu": "Ng’aragu ya mündũ ũngĩ ndingigiria ngome",
+    "kikuyu": "Ng’aragu ya mũndũ ũngĩ ndingigiria ngome",
     "translation": "Other people’s hunger does not hinder me from sleeping.",
     "explanation": null,
     "englishEquivalent": null,
@@ -5593,7 +5593,7 @@
   },
   {
     "id": 710,
-    "kikuyu": "Ng'enda thi ndiagaga mūtegi",
+    "kikuyu": "Ng'enda thi ndiagaga mũtegi",
     "translation": "The animal that treads on the earth may find its trapper.",
     "explanation": "The proverb means: ‘To err is human’.",
     "englishEquivalent": null,
@@ -5601,7 +5601,7 @@
   },
   {
     "id": 711,
-    "kikuyu": "Ngia na mūigwa itikomaga",
+    "kikuyu": "Ngia na mũigwa itikomaga",
     "translation": "The poor and the thorn do not sleep.",
     "explanation": "The former, say the Kikuyu, is kept awake by his anxieties whilst the latter is always on the alert in order to sting anyone who happens to touch it.",
     "englishEquivalent": "Poverty breeds strife.",
@@ -5609,7 +5609,7 @@
   },
   {
     "id": 712,
-    "kikuyu": "Ngia yethagwo mūkuha wayo",
+    "kikuyu": "Ngia yethagwo mũkuha wayo",
     "translation": "The poor man is robbed even of his awl.",
     "explanation": null,
     "englishEquivalent": "The poor man turns his cake, and another comes and takes it away.",
@@ -5617,7 +5617,7 @@
   },
   {
     "id": 713,
-    "kikuyu": "Ngi imwe yoragia mūgūgūta",
+    "kikuyu": "Ngi imwe yoragia mũgũgũta",
     "translation": "One fly spoils an ox-hide.",
     "explanation": null,
     "englishEquivalent": "A little leak will sink a great ship.",
@@ -5625,7 +5625,7 @@
   },
   {
     "id": 714,
-    "kikuyu": "Ngi ndiri rūga",
+    "kikuyu": "Ngi ndiri rũga",
     "translation": "The fly has no sinew.",
     "explanation": null,
     "englishEquivalent": "You cannot make a silk purse from a sow’s ear.",
@@ -5633,7 +5633,7 @@
   },
   {
     "id": 715,
-    "kikuyu": "Ngi irathagwo ūigana mūkiha ūria īri naguo",
+    "kikuyu": "Ngi irathagwo ũigana mũkiha ũria ĩri naguo",
     "translation": "The fly is bled proportionately to its veins.",
     "explanation": null,
     "englishEquivalent": "If you squeeze a cork, you will get but little juice.",
@@ -5641,7 +5641,7 @@
   },
   {
     "id": 716,
-    "kikuyu": "Ngingo ndikiraga mūtwe",
+    "kikuyu": "Ngingo ndikiraga mũtwe",
     "translation": "The neck does not grow above the head.",
     "explanation": null,
     "englishEquivalent": "Everything to its place.",
@@ -5649,7 +5649,7 @@
   },
   {
     "id": 717,
-    "kikuyu": "Ngingo ya mūria-ng’ūrū ni githitū na rūrigi",
+    "kikuyu": "Ngingo ya mũria-ng’ũrũ ni githitũ na rũrigi",
     "translation": "The neck of him who sells too dear, is all amulets and necklaces (for nobody buys from him).",
     "explanation": null,
     "englishEquivalent": "All covet, all lose.",
@@ -5681,7 +5681,7 @@
   },
   {
     "id": 721,
-    "kikuyu": "Ngoro ni mũrũ wa nyina na mündũ",
+    "kikuyu": "Ngoro ni mũrũ wa nyina na mũndũ",
     "translation": "Every man's brother is his heart.",
     "explanation": null,
     "englishEquivalent": "Few hearts that are not double, few tongues that are not cloves.",
@@ -5689,7 +5689,7 @@
   },
   {
     "id": 722,
-    "kikuyu": "Ngoro ni mũtĩtĩ mũtumanu na ndũngitonyeka ni mündũ",
+    "kikuyu": "Ngoro ni mũtĩtĩ mũtumanu na ndũngitonyeka ni mũndũ",
     "translation": "The heart is a thick forest which cannot be penetrated by anybody.",
     "explanation": null,
     "englishEquivalent": "What is in one's heart man's eyes see not.",
@@ -5897,7 +5897,7 @@
   },
   {
     "id": 748,
-    "kikuyu": "Njohi ni gacuhüra",
+    "kikuyu": "Njohi ni gacuhũra",
     "translation": "The beer is a thing that unites (the tongue).",
     "explanation": null,
     "englishEquivalent": "When the wine is in the wit is out.",
@@ -5905,7 +5905,7 @@
   },
   {
     "id": 749,
-    "kikuyu": "Njoya na múthece ndiyagira ingi",
+    "kikuyu": "Njoya na mũthece ndiyagira ingi",
     "translation": "A bird that picks food with the beak does not collect food for another bird.",
     "explanation": null,
     "englishEquivalent": null,
@@ -5921,7 +5921,7 @@
   },
   {
     "id": 751,
-    "kikuyu": "Njugüma ya njamba ithukagirio ũgeni-ini",
+    "kikuyu": "Njugũma ya njamba ithukagirio ũgeni-ini",
     "translation": "A strong man's club is tested by foreigners.",
     "explanation": "The proverb means that it is foreigners who actually test the strength of a man, for they dare measure themselves with him. Whilst the people who live with him, judging his strength as a thing beyond any doubt, are afraid of testing it.",
     "englishEquivalent": "The proof of a pudding is in the eating.",
@@ -5929,7 +5929,7 @@
   },
   {
     "id": 752,
-    "kikuyu": "Njukü irügite rüü rüyüru",
+    "kikuyu": "Njukũ irũgite rũũ rũyũru",
     "translation": "Slander is worse than a river in flood.",
     "explanation": null,
     "englishEquivalent": "The most dangerous of wild beasts is a slanderer, of tame ones a flatterer.",
@@ -6009,7 +6009,7 @@
   },
   {
     "id": 762,
-    "kikuyu": "Nyoneka narua yūraga narna",
+    "kikuyu": "Nyoneka narua yũraga narna",
     "translation": "What is found quickly, is quickly lost.",
     "explanation": null,
     "englishEquivalent": "Quick come, quick lost.",
@@ -6025,7 +6025,7 @@
   },
   {
     "id": 764,
-    "kikuyu": "Nyoni yakaga nyũmba na mũthice ūmwe",
+    "kikuyu": "Nyoni yakaga nyũmba na mũthice ũmwe",
     "translation": "The bird makes its nest only with one beak.",
     "explanation": null,
     "englishEquivalent": null,
@@ -6137,7 +6137,7 @@
   },
   {
     "id": 778,
-    "kikuyu": "Rigu ndütwaranagio",
+    "kikuyu": "Rigu ndũtwaranagio",
     "translation": "The food which one takes as provision for one’s journey, is not carried by another person.",
     "explanation": null,
     "englishEquivalent": "Take heed is a good read.",
@@ -6169,15 +6169,15 @@
   },
   {
     "id": 782,
-    "kikuyu": "Rigi ria nyũmba ritirutagwo ria gũtiria nyũmba ya",
-    "translation": "ũngĩ The door of one’s hut is not taken to close another’s hut.",
+    "kikuyu": "Rigi rĩa nyũmba rĩtirutagwo rĩa gũtiria nyũmba ya ũngĩ",
+    "translation": "The door of one’s hut is not taken to close another’s hut.",
     "explanation": null,
     "englishEquivalent": "He who has but one coat cannot lend it.",
     "category": "wisdom"
   },
   {
     "id": 783,
-    "kikuyu": "Rika na nyũmba itiürüga",
+    "kikuyu": "Rika na nyũmba itiũrũga",
     "translation": "One does not lose the age-grade nor the clan-right.",
     "explanation": "Kikuyu circumcised in a particular season are banded together in an age group to which a name is given, after a special event of the season. This age-grade as well as the clan imply certain rights which no Kikuyu wants to give up.",
     "englishEquivalent": "No man is willing to waive his rights.",
@@ -6226,8 +6226,8 @@
   {
     "id": 789,
     "kikuyu": "Ritho rimenaga njamba",
-    "translation": "The eye scorns heroes; i.e.",
-    "explanation": "it can judge falsely of what it sees.",
+    "translation": "The eye scorns heroes; i.e. it can judge falsely of what it sees.",
+    "explanation": null,
     "englishEquivalent": "Never judge from appearances.",
     "category": "justice"
   },
@@ -6273,7 +6273,7 @@
   },
   {
     "id": 795,
-    "kikuyu": "Rūĩa rũkũhi rũĩri thogora",
+    "kikuyu": "Rũĩa rũkũhi rũĩri thogora",
     "translation": "A short hide is of no value.",
     "explanation": null,
     "englishEquivalent": null,
@@ -6281,7 +6281,7 @@
   },
   {
     "id": 796,
-    "kikuyu": "Rūĩa rwa mwene rũĩri irĩga",
+    "kikuyu": "Rũĩa rwa mwene rũĩri irĩga",
     "translation": "The owner of the goat does not give away its hide.",
     "explanation": "The proverb refers to the fact that the skin of a slaughtered goat belongs by right to the animal's owner, who does not allow anybody else to have it for nothing.",
     "englishEquivalent": "Metaphorically it means that nobody gives his life but for a cause worthy of it.",
@@ -6289,7 +6289,7 @@
   },
   {
     "id": 797,
-    "kikuyu": "Rūga runaga ũta",
+    "kikuyu": "Rũga runaga ũta",
     "translation": "The string (too tightly strung) breaks the bow.",
     "explanation": null,
     "englishEquivalent": "A bow long bent at last waxeth weak.",
@@ -6297,7 +6297,7 @@
   },
   {
     "id": 798,
-    "kikuyu": "Rūgendo rwa njũa na rwa mbũri iĩĩtwaranaga",
+    "kikuyu": "Rũgendo rwa njũa na rwa mbũri iĩĩtwaranaga",
     "translation": "Hides and goats do not keep the same pace (when they are taken to market).",
     "explanation": "In fact goats go on foot while hides are carried by men, who actually go more quickly.",
     "englishEquivalent": "Every man in his way.",
@@ -6305,7 +6305,7 @@
   },
   {
     "id": 799,
-    "kikuyu": "Rūgūtena rūtagaga īgeca",
+    "kikuyu": "Rũgũtena rũtagaga ĩgeca",
     "translation": "The cutting knife does not lack bruises.",
     "explanation": null,
     "englishEquivalent": "Touch pitch and you will be defiled.",
@@ -6313,7 +6313,7 @@
   },
   {
     "id": 800,
-    "kikuyu": "Rūĩĩr ũgi ni rũĩilikaga",
+    "kikuyu": "Rũĩĩr ũgi ni rũĩilikaga",
     "translation": "A knife too well sharpened easily breaks.",
     "explanation": null,
     "englishEquivalent": "To kill with kindness.",
@@ -6321,7 +6321,7 @@
   },
   {
     "id": 801,
-    "kikuyu": "Ruhonge rwa mũti rũtithendikaga mündũ",
+    "kikuyu": "Ruhonge rwa mũti rũtithendikaga mũndũ",
     "translation": "A tree branch cannot put forth a man.",
     "explanation": null,
     "englishEquivalent": "Nothing comes out of the sack but what was in it.",
@@ -6329,7 +6329,7 @@
   },
   {
     "id": 802,
-    "kikuyu": "Rūĩ runenelagio ni ũthĩma",
+    "kikuyu": "Rũĩ runenelagio ni ũthĩma",
     "translation": "The river is made bigger by the small springs.",
     "explanation": null,
     "englishEquivalent": "Little winnings make a heavy purse.",
@@ -6337,7 +6337,7 @@
   },
   {
     "id": 803,
-    "kikuyu": "Rūĩ rũthamaga mũkuru waro",
+    "kikuyu": "Rũĩ rũthamaga mũkuru waro",
     "translation": "A river is not made to flow out of its bed.",
     "explanation": null,
     "englishEquivalent": "Every sparrow to its ear of wheat.",
@@ -6409,7 +6409,7 @@
   },
   {
     "id": 812,
-    "kikuyu": "Rũri mūciĩ rũri mūgündā",
+    "kikuyu": "Rũri mũciĩ rũri mũgũnda",
     "translation": "If you have a pain at home, you have it in the field too.",
     "explanation": null,
     "englishEquivalent": "No place is fenced against suffering.",
@@ -6426,9 +6426,9 @@
   {
     "id": 814,
     "kikuyu": "Rũrira rũtithambagio rũĩ",
-    "translation": "Family-ties cannot be washed at the river, i.e.",
+    "translation": "Family-ties cannot be washed at the river, i.e. cannot be untied.",
     "explanation": null,
-    "englishEquivalent": "cannot be untied.",
+    "englishEquivalent": null,
     "category": "family"
   },
   {
@@ -6441,7 +6441,7 @@
   },
   {
     "id": 816,
-    "kikuyu": "Rũrigĩ rwetagiriria mündũ mũkwa",
+    "kikuyu": "Rũrigĩ rwetagiriria mũndũ mũkwa",
     "translation": "The string can be useful until a rope (of hide) can be got Little is better than nothing.",
     "explanation": null,
     "englishEquivalent": null,
@@ -6625,7 +6625,7 @@
   },
   {
     "id": 839,
-    "kikuyu": "Thina ndūtīgaga handū ūramenyera",
+    "kikuyu": "Thina ndũtĩgaga handũ ũramenyera",
     "translation": "Affliction does not leave a place which is already known to her.",
     "explanation": null,
     "englishEquivalent": "One danger is seldom overcome without another.",
@@ -6633,7 +6633,7 @@
   },
   {
     "id": 840,
-    "kikuyu": "Thina ndūtūraga",
+    "kikuyu": "Thina ndũtũraga",
     "translation": "Affliction does not last.",
     "explanation": null,
     "englishEquivalent": "After a storm comes a calm.",
@@ -6641,15 +6641,15 @@
   },
   {
     "id": 841,
-    "kikuyu": "Thina ni rūhiũ rwa gūicūhia mūro",
-    "translation": "Affliction is a good knife to sharpen the ‘mūro’.",
-    "explanation": "‘Mūro’ is a short stick used to beat the earth, to plant, to dig out potatoes, etc.",
+    "kikuyu": "Thina ni rũhiũ rwa gũicũhia mũro",
+    "translation": "Affliction is a good knife to sharpen the ‘mũro’.",
+    "explanation": "‘Mũro’ is a short stick used to beat the earth, to plant, to dig out potatoes, etc.",
     "englishEquivalent": "Necessity sharpens industry.",
     "category": "work-wealth"
   },
   {
     "id": 842,
-    "kikuyu": "Thia ndīthiragwo nī mīhūmū",
+    "kikuyu": "Thia ndĩthiragwo nĩ mĩhũmũ",
     "translation": "The duiker cannot help panting.",
     "explanation": null,
     "englishEquivalent": "The leopard cannot change his spots.",
@@ -6657,7 +6657,7 @@
   },
   {
     "id": 843,
-    "kikuyu": "Thia ndīthiragwo nī mūnīthī",
+    "kikuyu": "Thia ndĩthiragwo nĩ mũnĩthĩ",
     "translation": "The duiker is not found without head stripes.",
     "explanation": null,
     "englishEquivalent": "Man is what God has made him and nothing else.",
@@ -6665,7 +6665,7 @@
   },
   {
     "id": 844,
-    "kikuyu": "Thiaka nī ūta",
+    "kikuyu": "Thiaka nĩ ũta",
     "translation": "Quiver means bow (for there is no quiver but it has also its bow).",
     "explanation": null,
     "englishEquivalent": null,
@@ -6673,7 +6673,7 @@
   },
   {
     "id": 845,
-    "kikuyu": "Thiaka ūnīī ndwagaga gūīta migwi",
+    "kikuyu": "Thiaka ũnĩĩ ndwagaga gũĩta migwi",
     "translation": "A quiver upside down cannot fail to pour out its arrows.",
     "explanation": "The proverb is an excuse for an error which depends only on human weakness.",
     "englishEquivalent": "To err is human.",
@@ -6681,7 +6681,7 @@
   },
   {
     "id": 846,
-    "kikuyu": "Thiari ndīreregā kwa ngīa",
+    "kikuyu": "Thiari ndĩrerega kwa ngĩa",
     "translation": "The ‘thiari’ does not hover above a poor man’s house.",
     "explanation": "‘Thiari’ is the tick-bird. The proverb says that this bird does not stay with the poor for there are no oxen to provide ticks.",
     "englishEquivalent": "A poor man has no friends.",
@@ -6689,7 +6689,7 @@
   },
   {
     "id": 847,
-    "kikuyu": "Thiri ūtarīhagio no wa ūrogī",
+    "kikuyu": "Thiri ũtarĩhagio no wa ũrogĩ",
     "translation": "The debt of poisoning a person is a debt which cannot be paid.",
     "explanation": "All the other crimes can be paid for with a number of goats, but the crime of bewitching must be expiated by heavier punishment.",
     "englishEquivalent": null,
@@ -6697,7 +6697,7 @@
   },
   {
     "id": 848,
-    "kikuyu": "Thiriti ni īteanaga",
+    "kikuyu": "Thiriti ni ĩteanaga",
     "translation": "Friendships dissolve.",
     "explanation": null,
     "englishEquivalent": null,
@@ -6705,7 +6705,7 @@
   },
   {
     "id": 849,
-    "kikuyu": "Thiriti ni ya andū erī, ya atatū ni rūmena",
+    "kikuyu": "Thiriti ni ya andũ erĩ, ya atatũ ni rũmena",
     "translation": "Friendship can exist between two people, friendship of three people would mean strife.",
     "explanation": null,
     "englishEquivalent": "Two’s company, three’s none.",
@@ -6713,7 +6713,7 @@
   },
   {
     "id": 850,
-    "kikuyu": "Thiriti yagia kīhehū no ithire",
+    "kikuyu": "Thiriti yagia kĩhehũ no ithire",
     "translation": "Friendship finishes if there are whisperings.",
     "explanation": null,
     "englishEquivalent": null,
@@ -6721,7 +6721,7 @@
   },
   {
     "id": 851,
-    "kikuyu": "Thogora ni mūrurumo ūtarūo",
+    "kikuyu": "Thogora ni mũrurumo ũtarũo",
     "translation": "Buying (and selling) brings in much noise but no strife.",
     "explanation": null,
     "englishEquivalent": null,
@@ -6729,7 +6729,7 @@
   },
   {
     "id": 852,
-    "kikuyu": "Thogora ndūri nyina na mwana",
+    "kikuyu": "Thogora ndũri nyina na mwana",
     "translation": "Buying and selling has neither mother nor son.",
     "explanation": null,
     "englishEquivalent": "Friendship is friendship and business is business.",
@@ -6737,7 +6737,7 @@
   },
   {
     "id": 853,
-    "kikuyu": "Thome wa anake ndūri thogora no tharo",
+    "kikuyu": "Thome wa anake ndũri thogora no tharo",
     "translation": "Young unmarried men do not buy in their ‘thome’: they steal things.",
     "explanation": "‘Thome’ is the pathway leading up to the entrance of the Kikuyu homestead. It is made in the shape of a narrow passage which can be closed at night or in time of danger. The proverb means that nothing orderly can be done when only youngsters are present.",
     "englishEquivalent": null,
@@ -6745,7 +6745,7 @@
   },
   {
     "id": 854,
-    "kikuyu": "Thoni itirī gathuthuma",
+    "kikuyu": "Thoni itirĩ gathuthuma",
     "translation": "Shyness has no sucking.",
     "explanation": "It means that if a calf is shy it will be afraid to approach its mother and consequently will get no milk.",
     "englishEquivalent": null,
@@ -6753,7 +6753,7 @@
   },
   {
     "id": 855,
-    "kikuyu": "Thoni nene ni ūkārī",
+    "kikuyu": "Thoni nene ni ũkarĩ",
     "translation": "Too much shyness means miserliness.",
     "explanation": null,
     "englishEquivalent": "There is measure in all things.",
@@ -6761,7 +6761,7 @@
   },
   {
     "id": 856,
-    "kikuyu": "Thũ ndigüaga haria likagio",
+    "kikuyu": "Thũ ndigũaga haria likagio",
     "translation": "The enemy does not fall where one throws him.",
     "explanation": null,
     "englishEquivalent": "Man proposes, God disposes.",
@@ -6770,9 +6770,9 @@
   {
     "id": 857,
     "kikuyu": "Thũ ndigaga mwenji",
-    "translation": "An enemy does not lack someone to shave him; i.e.",
+    "translation": "An enemy does not lack someone to shave him; i.e. to keep him informed of what is going about him, and very often to give him help.",
     "explanation": null,
-    "englishEquivalent": "to keep him informed of what is going about him, and very often to give him help.",
+    "englishEquivalent": null,
     "category": "community"
   },
   {
@@ -6786,9 +6786,9 @@
   {
     "id": 859,
     "kikuyu": "Thurania gũkua na kũhona",
-    "translation": "Choose between dying and living; i.e.",
+    "translation": "Choose between dying and living; i.e. between death and life, war and peace.",
     "explanation": null,
-    "englishEquivalent": "between death and life, war and peace.",
+    "englishEquivalent": null,
     "category": "caution"
   },
   {
@@ -6817,7 +6817,7 @@
   },
   {
     "id": 863,
-    "kikuyu": "Thutha wa maündu mothe ni Mwathani",
+    "kikuyu": "Thutha wa maũndu mothe ni Mwathani",
     "translation": "After all, there is God.",
     "explanation": null,
     "englishEquivalent": "Man proposes, God disposes.",
@@ -6905,7 +6905,7 @@
   },
   {
     "id": 874,
-    "kikuyu": "Ūbataire ahũrithagia kĩhiĩ ime",
+    "kikuyu": "Ũbataire ahũrithagia kĩhiĩ ime",
     "translation": "He who is in need sends his boy when there is still the dew.",
     "explanation": null,
     "englishEquivalent": "Need makes the naked man trot.",
@@ -6913,7 +6913,7 @@
   },
   {
     "id": 875,
-    "kikuyu": "Ūbataire ndaconokaga",
+    "kikuyu": "Ũbataire ndaconokaga",
     "translation": "The person who is in need does not feel ashamed.",
     "explanation": null,
     "englishEquivalent": "Need makes the naked queen spin.",
@@ -6921,7 +6921,7 @@
   },
   {
     "id": 876,
-    "kikuyu": "Ūbataire niwe ūhuraga ūrĩri",
+    "kikuyu": "Ũbataire niwe ũhuraga ũrĩri",
     "translation": "It is the person who feels the need (of sleeping) that prepares the bed.",
     "explanation": null,
     "englishEquivalent": "Let him that is cold blow the coal.",
@@ -6929,7 +6929,7 @@
   },
   {
     "id": 877,
-    "kikuyu": "Ūcamba ndũringaga tũhuro twiri",
+    "kikuyu": "Ũcamba ndũringaga tũhuro twiri",
     "translation": "(Even) bravery does not cross two valleys (at one time).",
     "explanation": null,
     "englishEquivalent": "Samson was a strong man, yet could not pay money before he had it.",
@@ -6937,7 +6937,7 @@
   },
   {
     "id": 878,
-    "kikuyu": "Ūcokereru ni ūkigu",
+    "kikuyu": "Ũcokereru ni ũkigu",
     "translation": "To return (to the same thing, argument, etc.) is foolishness.",
     "explanation": null,
     "englishEquivalent": "A tale twice told is cabbage twice sold.",
@@ -6945,7 +6945,7 @@
   },
   {
     "id": 879,
-    "kikuyu": "Ūcukagwo na ndũgũteo",
+    "kikuyu": "Ũcukagwo na ndũgũteo",
     "translation": "You are slandered without being thrown away.",
     "explanation": null,
     "englishEquivalent": null,
@@ -6953,15 +6953,15 @@
   },
   {
     "id": 880,
-    "kikuyu": "Ũgakinya mūhā gūtari gati",
-    "translation": "(The time will come when) you will step on the ‘mūhā’ in a place where there is no other plant.",
-    "explanation": "‘Mūhā’ is a common forest tree yielding a very poor timber. The proverb means that he who despises this tree because it is of little value and there is plenty of good timber, will go so far as to scorn it even when no better timber is available.",
+    "kikuyu": "Ũgakinya mũha gũtari gati",
+    "translation": "(The time will come when) you will step on the ‘mũha’ in a place where there is no other plant.",
+    "explanation": "‘Mũha’ is a common forest tree yielding a very poor timber. The proverb means that he who despises this tree because it is of little value and there is plenty of good timber, will go so far as to scorn it even when no better timber is available.",
     "englishEquivalent": "Half a loaf is better than no bread.",
     "category": "work-wealth"
   },
   {
     "id": 881,
-    "kikuyu": "Ũgakinya na mūtwe, wirite nī magūrū",
+    "kikuyu": "Ũgakinya na mũtwe, wirite nĩ magũrũ",
     "translation": "You will move on the head thinking it is the feet.",
     "explanation": "It is said to proud people who think they know everything .",
     "englishEquivalent": "Do as most men do and men will speak well of thee.",
@@ -6969,7 +6969,7 @@
   },
   {
     "id": 882,
-    "kikuyu": "Ũgathina ta ritho gwakīa",
+    "kikuyu": "Ũgathina ta ritho gwakĩa",
     "translation": "You shall have pains like the eye that opens in the morning.",
     "explanation": "The proverb is a curse, and refers to the pain which one’s eyes are supposed to feel when, after a night’s pleasant dreams, they open again to this world’s miseries.",
     "englishEquivalent": null,
@@ -6977,7 +6977,7 @@
   },
   {
     "id": 883,
-    "kikuyu": "Ũgi mūnene ūtuaga ithanwa",
+    "kikuyu": "Ũgi mũnene ũtuaga ithanwa",
     "translation": "Too great a wisdom breaks the axe.",
     "explanation": null,
     "englishEquivalent": "Too much breaks the bag.",
@@ -6985,9 +6985,9 @@
   },
   {
     "id": 884,
-    "kikuyu": "Ũgi ndūtongoragia ta ūrimū",
-    "translation": "Wisdom does not go in front as foolishness; i.e.",
-    "explanation": "is not so easily attained as foolishness.",
+    "kikuyu": "Ũgi ndũtongoragia ta ũrimũ",
+    "translation": "Wisdom does not go in front as foolishness; i.e. is not so easily attained as foolishness.",
+    "explanation": null,
     "englishEquivalent": "No man is born wise or learned.",
     "category": "wisdom"
   },
@@ -7001,7 +7001,7 @@
   },
   {
     "id": 886,
-    "kikuyu": "Ũgi ūgigū",
+    "kikuyu": "Ũgi ũgigũ",
     "translation": "(There is) wisdom (that is) a bluff.",
     "explanation": null,
     "englishEquivalent": "All is not gold that glitters.",
@@ -7009,7 +7009,7 @@
   },
   {
     "id": 887,
-    "kikuyu": "Ũgi ūkirite hinya",
+    "kikuyu": "Ũgi ũkirite hinya",
     "translation": "Wisdom outweighs strength.",
     "explanation": null,
     "englishEquivalent": null,
@@ -7017,7 +7017,7 @@
   },
   {
     "id": 888,
-    "kikuyu": "Ūgĩ wa arũme ūtemaga ta hiũ",
+    "kikuyu": "Ũgĩ wa arũme ũtemaga ta hiũ",
     "translation": "Men's skill cuts like knives.",
     "explanation": null,
     "englishEquivalent": "Words are for women, actions for men.",
@@ -7025,7 +7025,7 @@
   },
   {
     "id": 889,
-    "kikuyu": "Ūgĩ wa mündũ ūmwe ndũrimaga",
+    "kikuyu": "Ũgĩ wa mũndũ ũmwe ndũrimaga",
     "translation": "Only one man's ability cannot till (all the fields).",
     "explanation": null,
     "englishEquivalent": "No living man all things can.",
@@ -7033,7 +7033,7 @@
   },
   {
     "id": 890,
-    "kikuyu": "Ūgeni wa nyama ndũoyagĩrĩo nguo",
+    "kikuyu": "Ũgeni wa nyama ndũoyagĩrĩo nguo",
     "translation": "He who has been invited to eat meat does not waste time looking for good clothes.",
     "explanation": "The proverb means that if anyone has received an invitation for a feast he does not waste time in adorning himself at the risk of arriving too late.",
     "englishEquivalent": null,
@@ -7041,7 +7041,7 @@
   },
   {
     "id": 891,
-    "kikuyu": "Ugithondekera mūciĩ ndũngĩuga ni ūrikora ūngĩ",
+    "kikuyu": "Ugithondekera mũciĩ ndũngĩuga ni ũrikora ũngĩ",
     "translation": "While you adorn your house, you do not imagine that you will find another (more adorned than yours).",
     "explanation": "The proverb refers to self confident people who go to discuss a question with the certainty of getting the best of it, and do not think that perhaps they will meet an adversary stronger than they are.",
     "englishEquivalent": "The first caper of fools is to esteem themselves wise.",
@@ -7049,7 +7049,7 @@
   },
   {
     "id": 892,
-    "kikuyu": "Ūgwitherima mūtino",
+    "kikuyu": "Ũgwitherima mũtino",
     "translation": "You smear yourself with misfortune.",
     "explanation": "The proverb is told as an advice to people who are on the point of doing something which sooner or later will become a cause of misfortune.",
     "englishEquivalent": "He that cuts himself wilfully, will deserve no balsam.",
@@ -7057,7 +7057,7 @@
   },
   {
     "id": 893,
-    "kikuyu": "Ūhere ni ūgwatanagio",
+    "kikuyu": "Ũhere ni ũgwatanagio",
     "translation": "Scabies is contracted (by contact).",
     "explanation": null,
     "englishEquivalent": "A rotten sheep infects the whole flock.",
@@ -7065,15 +7065,15 @@
   },
   {
     "id": 894,
-    "kikuyu": "Ūhiĩ ni umagwo, no ūka ndumagwo",
+    "kikuyu": "Ũhiĩ ni umagwo, no ũka ndumagwo",
     "translation": "The man comes out of childhood, but the woman never comes out of womanhood.",
-    "explanation": null,
+    "explanation": "In traditional custom, after initiation a youth entered the council of men with full rights and responsibilities.",
     "englishEquivalent": "To understand the proverb, it must be remembered that 109",
     "category": "family"
   },
   {
     "id": 895,
-    "kikuyu": "Úhori ni ñgariñire",
+    "kikuyu": "Ũhoro nĩ ũgarũrĩre",
     "translation": "Asking for something is like turning (potatoes in the fire or meat on the spit).",
     "explanation": "The proverb means that he who wants to succeed in a petition tries all ways, just as he who is roasting his food turns it on all sides.",
     "englishEquivalent": null,
@@ -7081,7 +7081,7 @@
   },
   {
     "id": 896,
-    "kikuyu": "Úhoro wa maitho ti wa ñuthiñi",
+    "kikuyu": "Ũhoro wa maitho ti wa rũthiomi",
     "translation": "What one sees with one's eyes is not what one hears from another's tongue.",
     "explanation": null,
     "englishEquivalent": "One eye-witness is better than ten hearsays.",
@@ -7089,7 +7089,7 @@
   },
   {
     "id": 897,
-    "kikuyu": "Ùhuniñi ndari kieha",
+    "kikuyu": "Ũhũniĩ ndarĩ kĩeha",
     "translation": "He who is sated has no affection.",
     "explanation": null,
     "englishEquivalent": "What cannot be cured must be endured.",
@@ -7097,7 +7097,7 @@
   },
   {
     "id": 899,
-    "kikuyu": "Ùi tene i ...",
+    "kikuyu": "Ũi tene ĩ!",
     "translation": "Oh, for the (good) past!",
     "explanation": "This is an expression often heard in the mouths of Kikuyu elders and corresponds to: 'Past and to come seem best: things present, worst'.",
     "englishEquivalent": null,
@@ -7105,10 +7105,10 @@
   },
   {
     "id": 900,
-    "kikuyu": "Ùkabi ni mññññu mññu",
-    "translation": "The Masai have had their fill of flour.",
-    "explanation": "The Kikuyu used to sell maize and millet flour to their neighbours the Masai. But if they happened to sell it a little too dear, the flour trade became the spark which kindled one of the many raids which ended only when the British Government confined the Masai to their present territory. The proverb had the meaning of an alarm, as to say:",
-    "englishEquivalent": null,
+    "kikuyu": "Ũkabi nĩ mũhũnu mũtu",
+    "translation": "The Maasai have had their fill of flour.",
+    "explanation": "The Kikuyu used to trade maize and millet flour with their neighbours the Maasai. When disputes arose over trade, the proverb was used as a watchword meaning: ‘Now that they have had their fill of flour, be alert for a dispute.’",
+    "englishEquivalent": "A little spark can kindle a great fire.",
     "category": "community"
   },
   {
@@ -7177,7 +7177,7 @@
   },
   {
     "id": 909,
-    "kikuyu": "Ūndū ūkwendwo ndūtanukagwo ni kūmerio ūmeragio",
+    "kikuyu": "Ũndũ ũkwendwo ndũtanukagwo ni kũmerio ũmeragio",
     "translation": "The thing that one finds palatable is not chewed, but it is swallowed quickly.",
     "explanation": null,
     "englishEquivalent": null,
@@ -7185,7 +7185,7 @@
   },
   {
     "id": 910,
-    "kikuyu": "Ūngīguā īgikaya ni nūme",
+    "kikuyu": "Ũngĩgua ĩgikaya ni nũme",
     "translation": "If you hear a goat moan, it is because she has been bitten.",
     "explanation": null,
     "englishEquivalent": "No smoke without fire.",
@@ -7193,7 +7193,7 @@
   },
   {
     "id": 911,
-    "kikuyu": "Ūndū ūrekwo ndūcokagirwo",
+    "kikuyu": "Ũndũ ũrekwo ndũcokagirwo",
     "translation": "One must not return on the work done.",
     "explanation": "The proverb means that one must not be too attentive to the details of his work if one wants to finish it, since— Perfection is not of this world.",
     "englishEquivalent": null,
@@ -7201,7 +7201,7 @@
   },
   {
     "id": 912,
-    "kikuyu": "Ūngigacema mūno kahahūka",
+    "kikuyu": "Ũngigacema mũno kahahũka",
     "translation": "If you go too carefully, (the chance) will pass away.",
     "explanation": null,
     "englishEquivalent": "Sleeping foxes catch no poultry.",
@@ -7209,15 +7209,15 @@
   },
   {
     "id": 913,
-    "kikuyu": "Ūngīguā kaana gakiuga ūndū ūgakahūra: menya",
-    "translation": "kaiguīte na ithe When you hear your child say anything, you beat him; remember that he says what he has heard from his father.",
+    "kikuyu": "Ũngĩigua kaana gakĩuga ũndũ ũgakahũra: menya kaiguĩte na ithe",
+    "translation": "When you hear your child say anything, you beat him; remember that he says what he has heard from his father.",
     "explanation": null,
     "englishEquivalent": "Children pick up words as pigeons peas, and utter them again as God shall please.",
     "category": "family"
   },
   {
     "id": 914,
-    "kikuyu": "Ūngīria irio cia mūthembā ūmwe iri kinyiria",
+    "kikuyu": "Ũngĩria irio cia mũthemba ũmwe iri kinyiria",
     "translation": "If you eat ever of the same food, it becomes bitter: it is a good thing to change.",
     "explanation": null,
     "englishEquivalent": "Change of pasture makes fat calves.",
@@ -7225,7 +7225,7 @@
   },
   {
     "id": 915,
-    "kikuyu": "Ūngionā īkirite, īmeretī īngī",
+    "kikuyu": "Ũngiona ĩkirite, ĩmeretĩ ĩngĩ",
     "translation": "If you see a quiet snake, it is because it swallowed another snake.",
     "explanation": null,
     "englishEquivalent": "Beware of a silent dog and still water.",
@@ -7233,7 +7233,7 @@
   },
   {
     "id": 916,
-    "kikuyu": "Ūracama ari njeme",
+    "kikuyu": "Ũracama ari njeme",
     "translation": "He who has tasted (food) has its appetite.",
     "explanation": "The proverb means that, if a man has willingly started to do some job, he is not satisfied until he completes it.",
     "englishEquivalent": null,
@@ -7241,7 +7241,7 @@
   },
   {
     "id": 917,
-    "kikuyu": "Ūrathīna mūgündā wa mwana ndarī",
+    "kikuyu": "Ũrathĩna mũgũnda wa mwana ndarĩ",
     "translation": "He who is in trouble lacks (also) a field for his son.",
     "explanation": null,
     "englishEquivalent": "Misfortunes seldom come alone.",
@@ -7249,7 +7249,7 @@
   },
   {
     "id": 918,
-    "kikuyu": "Ūri kūhitia na mbugi, ndūrathaga na njoya",
+    "kikuyu": "Ũri kũhitia na mbugi, ndũrathaga na njoya",
     "translation": "If you have missed with the point (of the arrow) you do not hit with the feathers.",
     "explanation": null,
     "englishEquivalent": "Resist the beginnings.",
@@ -7257,7 +7257,7 @@
   },
   {
     "id": 919,
-    "kikuyu": "Ūri kūngariūra ta mūtura wa ihī",
+    "kikuyu": "Ũri kũngariũra ta mũtura wa ihĩ",
     "translation": "You have tried to roast me as boys roast goat’s bowels.",
     "explanation": "When a goat or an ox is slaughtered, it is a Kikuyu custom to give the bowels to the uncircumcised for them to roast. The proverb is a contemptuous expression meaning ‘I know that you want to deceive me: but don’t expect to succeed as easily as boys succeed in roasting the bowels they are given’.",
     "englishEquivalent": null,
@@ -7265,7 +7265,7 @@
   },
   {
     "id": 920,
-    "kikuyu": "Ūri kwīirūkira ndūngithondekeka",
+    "kikuyu": "Ũri kwĩirũkira ndũngithondekeka",
     "translation": "If you despair you are not cured.",
     "explanation": "The proverb refers to women who go to the witch-doctors for a remedy for their sterility.",
     "englishEquivalent": "Not to have hope is the poorest of all conditions.",
@@ -7273,7 +7273,7 @@
   },
   {
     "id": 921,
-    "kikuyu": "Ūri mwega no ūkamenyeka",
+    "kikuyu": "Ũri mwega no ũkamenyeka",
     "translation": "If you are good you are known.",
     "explanation": null,
     "englishEquivalent": "Good wine needs no bush.",
@@ -7281,7 +7281,7 @@
   },
   {
     "id": 922,
-    "kikuyu": "Ūri na ithe ndaringagwo wa ngoro",
+    "kikuyu": "Ũri na ithe ndaringagwo wa ngoro",
     "translation": "He who has a father is not knocked down by any of those words or deeds that hurt one’s heart (for he has somebody to defend him).",
     "explanation": null,
     "englishEquivalent": null,
@@ -7289,15 +7289,15 @@
   },
   {
     "id": 923,
-    "kikuyu": "Ūri ndūgū nyīngi ndatukagirirwo",
-    "translation": "He who has many friends is not caught by darkness in the road; i.e.",
+    "kikuyu": "Ũri ndũgũ nyĩngi ndatukagirirwo",
+    "translation": "He who has many friends is not caught by darkness in the road; i.e. he has a lodging for the night.",
     "explanation": null,
-    "englishEquivalent": "he has a lodging for the night.",
+    "englishEquivalent": null,
     "category": "community"
   },
   {
     "id": 924,
-    "kikuyu": "Ūri witū ūtandīga na ndūnjerera",
+    "kikuyu": "Ũri witũ ũtandĩga na ndũnjerera",
     "translation": "You are a person who neither leaves nor waits for me.",
     "explanation": null,
     "englishEquivalent": "To have two strings to one bow.",
@@ -7305,7 +7305,7 @@
   },
   {
     "id": 925,
-    "kikuyu": "Uri wona rüküre?",
+    "kikuyu": "Uri wona rũkũre?",
     "translation": "Have you ever seen an unsheathed knife (a thing that has frightened you)?",
     "explanation": null,
     "englishEquivalent": "Scalded cats fear even cold water.",
@@ -7353,7 +7353,7 @@
   },
   {
     "id": 931,
-    "kikuyu": "Utahetwo ni nügire",
+    "kikuyu": "Utahetwo ni nũgire",
     "translation": "Also for the man who has not yet received a present, there is something put aside for him.",
     "explanation": null,
     "englishEquivalent": "Everything comes to him who waits.",
@@ -7369,15 +7369,15 @@
   },
   {
     "id": 933,
-    "kikuyu": "Utana uminagira murokerwo ng'ombe",
-    "translation": "Prodigality ruined the man who used to give away his oven.",
-    "explanation": "The legend, from which this proverb originates, tells that a very rich man used to present all his visitors with",
-    "englishEquivalent": null,
+    "kikuyu": "Ũtana ũminagĩra mũrokerwo ng'ombe",
+    "translation": "Prodigality ruined the man who used to give away his oxen.",
+    "explanation": "The legend from which this proverb originates tells that a very rich man used to present all his morning visitors with an ox, with the result that very soon he found himself reduced to poverty.",
+    "englishEquivalent": "Prodigality brings a man to a morsel of bread.",
     "category": "community"
   },
   {
     "id": 934,
-    "kikuyu": "Ūtana wa ngia ūragira ngoro",
+    "kikuyu": "Ũtana wa ngia ũragira ngoro",
     "translation": "A poor man's generosity is lost in his heart (for he has nothing to show it with).",
     "explanation": null,
     "englishEquivalent": null,
@@ -7385,7 +7385,7 @@
   },
   {
     "id": 935,
-    "kikuyu": "Ūtari kondō arĩ kagara",
+    "kikuyu": "Ũtarĩ kondo arĩ kagara",
     "translation": "The person who has not a small bag, has a small basket.",
     "explanation": null,
     "englishEquivalent": "Every man has his lot.",
@@ -7393,7 +7393,7 @@
   },
   {
     "id": 936,
-    "kikuyu": "Ūtari ndari ngoro",
+    "kikuyu": "Ũtari ndari ngoro",
     "translation": "He who has nothing has no heart.",
     "explanation": "The proverb means that a poor man, though refused what he asks for, does not feel so much pain as a rich man would, for the latter knows the difference between possessing and not possessing what one needs.",
     "englishEquivalent": "Nothing have, nothing crave.",
@@ -7401,7 +7401,7 @@
   },
   {
     "id": 937,
-    "kikuyu": "Ūtari maitho ndatumaga kĩnya",
+    "kikuyu": "Ũtari maitho ndatumaga kĩnya",
     "translation": "A blind man does not sew a gourd.",
     "explanation": "The Kikuyu make use of the dried shell of gourds as dippers and ladles. They mend them with a rough thread when they crack.",
     "englishEquivalent": "Blind men should not judge of colours.",
@@ -7409,7 +7409,7 @@
   },
   {
     "id": 938,
-    "kikuyu": "Ūtari ndetagwo ndundu",
+    "kikuyu": "Ũtari ndetagwo ndundu",
     "translation": "A poor man is not invited to a private discussion.",
     "explanation": null,
     "englishEquivalent": null,
@@ -7417,7 +7417,7 @@
   },
   {
     "id": 939,
-    "kikuyu": "Ūtarĩ ciene na ndarĩa ciake",
+    "kikuyu": "Ũtarĩ ciene na ndarĩa ciake",
     "translation": "He is a person that does not eat other's food, nor his own.",
     "explanation": "The proverb refers to people who are not able to take advantage of their own things, nor of those of other people.",
     "englishEquivalent": null,
@@ -7425,7 +7425,7 @@
   },
   {
     "id": 940,
-    "kikuyu": "Ūtatiga ndakora",
+    "kikuyu": "Ũtatiga ndakora",
     "translation": "He who does not leave, will not find.",
     "explanation": null,
     "englishEquivalent": "No gains without pains.",
@@ -7433,15 +7433,15 @@
   },
   {
     "id": 941,
-    "kikuyu": "Ūtenderũ ndũri njamba",
-    "translation": "Slipping has no hero, i.e.",
-    "explanation": "nobody however clever he may be, is guaranteed against a fall when walking on a slippery road.",
+    "kikuyu": "Ũtenderũ ndũri njamba",
+    "translation": "Slipping has no hero, i.e. nobody however clever he may be, is guaranteed against a fall when walking on a slippery road.",
+    "explanation": null,
     "englishEquivalent": "No fence against ill fortune.",
     "category": "wisdom"
   },
   {
     "id": 942,
-    "kikuyu": "Ūtenderũ ũri nja ndũri muthemere",
+    "kikuyu": "Ũtenderũ ũri nja ndũri muthemere",
     "translation": "Nobody can avoid the slippery place that is in the courtyard.",
     "explanation": null,
     "englishEquivalent": "What cannot be cured must be endured.",
@@ -7449,7 +7449,7 @@
   },
   {
     "id": 943,
-    "kikuyu": "Ūthayo na ng'aragu ni mündũ na mürü wa nyina",
+    "kikuyu": "Ũthayo na ng'aragu ni mũndũ na mũrũ wa nyina",
     "translation": "Laziness and starvation are like a man and his brother.",
     "explanation": null,
     "englishEquivalent": "Laziness travels so slowly that poverty soon overtakes him.",
@@ -7457,7 +7457,7 @@
   },
   {
     "id": 944,
-    "kikuyu": "Ūthaka ndũriagwo",
+    "kikuyu": "Ũthaka ndũriagwo",
     "translation": "Beauty is not eaten.",
     "explanation": null,
     "englishEquivalent": "Beauty will buy no beef.",
@@ -7465,7 +7465,7 @@
   },
   {
     "id": 945,
-    "kikuyu": "Ūthuuri wa gitonga ndũnungaga",
+    "kikuyu": "Ũthuuri wa gitonga ndũnungaga",
     "translation": "A rich man's old age has no bad smell.",
     "explanation": null,
     "englishEquivalent": "Rich men have no faults.",
@@ -7473,7 +7473,7 @@
   },
   {
     "id": 946,
-    "kikuyu": "Ūthuuri wa kanua ūkirite wa miaka",
+    "kikuyu": "Ũthuuri wa kanua ũkirite wa miaka",
     "translation": "Mouth's old age is better than year's old age.",
     "explanation": "The proverb means that it is of no use to be old in years, if one does not show this old age by wise words, too.",
     "englishEquivalent": "An old goat is never the more revered for his beard.",
@@ -7481,7 +7481,7 @@
   },
   {
     "id": 947,
-    "kikuyu": "Ūthũ ndũhingagia",
+    "kikuyu": "Ũthũ ndũhingagia",
     "translation": "Hatred does not affect all.",
     "explanation": "The proverb means that he who is hated by some people is not necessarily hated also by all the others.",
     "englishEquivalent": null,
@@ -7489,7 +7489,7 @@
   },
   {
     "id": 948,
-    "kikuyu": "Ūthuuro mwega ndũyũraga ikũmbĩ",
+    "kikuyu": "Ũthuuro mwega ndũyũraga ikũmbĩ",
     "translation": "The picking up of only the good things does not fill one's barn.",
     "explanation": null,
     "englishEquivalent": null,
@@ -7497,15 +7497,15 @@
   },
   {
     "id": 949,
-    "kikuyu": "Ūtoi karirũĩ, oi waci",
+    "kikuyu": "Ũtoi karirũĩ, oi waci",
     "translation": "He who does not know how to dance the 'karirui' knows how to dance the 'waci'.",
-    "explanation": null,
+    "explanation": "‘Karĩrũĩ’ and ‘waci’ are two traditional dances. Everyone has their own talent even if they lack another.",
     "englishEquivalent": null,
     "category": "community"
   },
   {
     "id": 950,
-    "kikuyu": "Ūtoī ūū, oi ūū",
+    "kikuyu": "Ũtoĩ ũũ, oi ũũ",
     "translation": "He who does not know one thing, knows another.",
     "explanation": null,
     "englishEquivalent": "Every man hath his lot.",
@@ -7513,7 +7513,7 @@
   },
   {
     "id": 951,
-    "kikuyu": "Ūtonga ndūhanyūkagirwo",
+    "kikuyu": "Ũtonga ndũhanyũkagirwo",
     "translation": "Riches are not attained by running.",
     "explanation": null,
     "englishEquivalent": null,
@@ -7521,7 +7521,7 @@
   },
   {
     "id": 952,
-    "kikuyu": "Ūtonga ni kīgunyi",
+    "kikuyu": "Ũtonga ni kĩgunyi",
     "translation": "Riches are a shadow.",
     "explanation": null,
     "englishEquivalent": "Riches have wings.",
@@ -7529,7 +7529,7 @@
   },
   {
     "id": 953,
-    "kikuyu": "Ūtonga ndūrī nyoni",
+    "kikuyu": "Ũtonga ndũrĩ nyoni",
     "translation": "Riches have no bird of ill omen.",
     "explanation": null,
     "englishEquivalent": null,
@@ -7537,7 +7537,7 @@
   },
   {
     "id": 954,
-    "kikuyu": "Ūtonga wa mūici ndūthunaga, na ni ūteaga wake",
+    "kikuyu": "Ũtonga wa mũici ndũthunaga, na ni ũteaga wake",
     "translation": "Unlawful riches do not increase, but rather spoil the lawful ones.",
     "explanation": null,
     "englishEquivalent": "Ill-gotten things seldom prosper.",
@@ -7545,7 +7545,7 @@
   },
   {
     "id": 955,
-    "kikuyu": "Ūtukū ndūtumagwo nguo",
+    "kikuyu": "Ũtukũ ndũtumagwo nguo",
     "translation": "One does not sew clothes by night.",
     "explanation": null,
     "englishEquivalent": "There is a time for all things.",
@@ -7561,7 +7561,7 @@
   },
   {
     "id": 957,
-    "kikuyu": "Wa haraya ūhoragira njira",
+    "kikuyu": "Wa haraya ũhoragira njira",
     "translation": "The fire which comes from afar dies out in the way.",
     "explanation": null,
     "englishEquivalent": "Out of sight, out of mind.",
@@ -7657,7 +7657,7 @@
   },
   {
     "id": 969,
-    "kikuyu": "Wa mwene ūthūire thakame",
+    "kikuyu": "Wa mwene ũthũire thakame",
     "translation": "One hates to see the blood of a thing that belongs to him.",
     "explanation": "The proverb means that one’s heart is affected by the pains of the persons and animals whom one loves.",
     "englishEquivalent": "Whom we love best, them we want to be happy.",
@@ -7665,7 +7665,7 @@
   },
   {
     "id": 970,
-    "kikuyu": "Wa mwīrī ndūmenyagwo",
+    "kikuyu": "Wa mwĩrĩ ndũmenyagwo",
     "translation": "What is inside the body is not known.",
     "explanation": null,
     "englishEquivalent": "No one knows the weight of another’s burden.",
@@ -7673,7 +7673,7 @@
   },
   {
     "id": 971,
-    "kikuyu": "Wa mwīfūmo ndūremaga",
+    "kikuyu": "Wa mwĩfũmo ndũremaga",
     "translation": "The work one imposed on oneself is never impossible.",
     "explanation": null,
     "englishEquivalent": "Where there is a will there is a way.",
@@ -7689,7 +7689,7 @@
   },
   {
     "id": 973,
-    "kikuyu": "Wairire ndakerūha",
+    "kikuyu": "Wairire ndakerũha",
     "translation": "He who has ever been black will never become white.",
     "explanation": null,
     "englishEquivalent": "A leopard cannot change his spots.",
@@ -7697,7 +7697,7 @@
   },
   {
     "id": 974,
-    "kikuyu": "Wanyua īnyuaga mūguī",
+    "kikuyu": "Wanyua ĩnyuaga mũguĩ",
     "translation": "He who drinks (beer in company) drinks an arrow at the same time.",
     "explanation": "The proverb means that people who drink beer together as a token of friendship, drink as well an arrow which they will use to shoot one another as soon as their friendship breaks.",
     "englishEquivalent": null,
@@ -7705,7 +7705,7 @@
   },
   {
     "id": 975,
-    "kikuyu": "Warīire athinirie waigire",
+    "kikuyu": "Warĩire athinirie waigire",
     "translation": "He who has eaten (all his food) vexes him who has put some aside.",
     "explanation": null,
     "englishEquivalent": "A fool and his money are soon parted.",
@@ -7713,7 +7713,7 @@
   },
   {
     "id": 976,
-    "kikuyu": "Warūgaga ni atobokaga",
+    "kikuyu": "Warũgaga ni atobokaga",
     "translation": "He who used to jump across now wades through.",
     "explanation": null,
     "englishEquivalent": "Old age creeps in.",
@@ -7721,10 +7721,10 @@
   },
   {
     "id": 977,
-    "kikuyu": "We ūrī karīa nime",
+    "kikuyu": "We ũrĩ karĩa nime",
     "translation": "You are one who eats the fruit of what your father has planted.",
-    "explanation": null,
-    "englishEquivalent": null,
+    "explanation": "The proverb is a reproach and a warning to young people who expend lavishly what they have inherited from their parents.",
+    "englishEquivalent": "What costs little is little esteemed.",
     "category": "family"
   },
   {
@@ -7746,14 +7746,14 @@
   {
     "id": 980,
     "kikuyu": "Wega ũri mbere ya kahinga",
-    "translation": "The good is to be found beyond the bush, i.e.",
-    "explanation": "the obstacle.",
+    "translation": "The good is to be found beyond the bush, i.e. the obstacle.",
+    "explanation": null,
     "englishEquivalent": "No gains without pains.",
     "category": "wisdom"
   },
   {
     "id": 981,
-    "kikuyu": "Wega umaga mūciĩ",
+    "kikuyu": "Wega umaga mũciĩ",
     "translation": "Prosperity is found in one’s home.",
     "explanation": null,
     "englishEquivalent": "Look to the cow, and the sow, and the wheat mow, and all will be well now.",
@@ -7794,7 +7794,7 @@
   {
     "id": 986,
     "kikuyu": "Wira wa ndĩngĩ uragaga kirimĩ",
-    "translation": "Many people's work kills the fool (because he does alone what should be done by many),",
+    "translation": "Many people's work kills the fool (because he does alone what should be done by many).",
     "explanation": null,
     "englishEquivalent": null,
     "category": "community"
@@ -7817,8 +7817,8 @@
   },
   {
     "id": 989,
-    "kikuyu": "Wona ciene waruta ndũngũrũ, wona ciaku wacokia",
-    "translation": "ndũngũrũ When you see another's things your mouth waters; when you see your own you swallow such water.",
+    "kikuyu": "Wona ciene waruta ndũngũrũ, wona ciaku wacokia ndũngũrũ",
+    "translation": "When you see another's things your mouth waters; when you see your own you swallow such water.",
     "explanation": null,
     "englishEquivalent": null,
     "category": "caution"

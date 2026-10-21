@@ -15,10 +15,13 @@ const today = new Date();
 const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
 const registryText = readFileSync(join(sourceRoot, "lib", "tools-registry.ts"), "utf8");
 const registrySlugs = [...registryText.matchAll(/slug:\s*['"]([^'"]+)['"]/g)].map((match) => match[1]);
-const routeSlugs = readdirSync(toolsRoot, { withFileTypes: true })
-  .filter((entry) => entry.isDirectory() && entry.name !== "[slug]")
-  .map((entry) => entry.name)
-  .filter((slug) => slug !== "layout");
+const routeSlugs = [...new Set([
+  ...readdirSync(toolsRoot, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && entry.name !== "[slug]")
+    .map((entry) => entry.name)
+    .filter((slug) => slug !== "layout"),
+  ...registrySlugs.filter((slug) => existsSync(join(toolsRoot, slug, "page.tsx"))),
+])];
 
 function parseDate(value) {
   if (!value) return null;

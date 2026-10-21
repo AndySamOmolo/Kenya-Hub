@@ -4,12 +4,27 @@
     "paye-calculator": {
       "official": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
-      "lastUpdated": "2026-10-20"
+      "lastUpdated": "2026-10-21"
     },
     "mpesa-fee-calculator": {
       "official": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
-      "lastUpdated": "2026-10-20"
+      "lastUpdated": "2026-10-21"
+    },
+    "kra-car-import-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
+      "lastUpdated": "2026-10-21"
+    },
+    "mjengo-construction-calculator": {
+      "official": true,
+      "sourceUrl": "https://nca.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "sacco-chama-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.sasra.go.ke/",
+      "lastUpdated": "2026-10-21"
     },
     "passport-id-fees": {
       "official": true,
@@ -50,12 +65,6 @@
       "official": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "lastUpdated": "2026-10-20"
-    },
-    "kikuyu-proverbs": {
-      "official": false,
-      "sourceUrl": "https://archive.org/details/1000kikuyuproverbs",
-      "lastUpdated": "2026-10-20",
-      "source": "1,000 Kikuyu Proverbs by Fr. G. Barra (Consolata Catholic Mission)"
     }
   }
 }

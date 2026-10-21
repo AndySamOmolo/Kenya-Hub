@@ -1,0 +1,31 @@
+{
+  "lastUpdated": "2026-10-01",
+  "source": "Architectural Association of Kenya (AAK) Construction Cost Handbook & KNBS Building Materials Index",
+  "sourceUrl": "https://www.nca.go.ke",
+  "regions": [
+    { "id": "nairobi", "name": "Nairobi & Kiambu (Ndarugo / Juja Quarry)", "multiplier": 1.0, "stonePrice": 48, "cementBag": 780, "sandTonne": 2200, "ballastTonne": 1950 },
+    { "id": "central", "name": "Central & Mt. Kenya (Nyeri, Murang'a, Meru)", "multiplier": 0.94, "stonePrice": 44, "cementBag": 800, "sandTonne": 2100, "ballastTonne": 1900 },
+    { "id": "rift", "name": "Rift Valley (Nakuru, Eldoret, Naivasha)", "multiplier": 0.92, "stonePrice": 42, "cementBag": 810, "sandTonne": 1950, "ballastTonne": 1850 },
+    { "id": "western", "name": "Western & Nyanza (Kisumu, Kakamega, Kisii)", "multiplier": 1.04, "stonePrice": 54, "cementBag": 840, "sandTonne": 2000, "ballastTonne": 2150 },
+    { "id": "coast", "name": "Coast (Mombasa, Kilifi, Kwale Coral Block)", "multiplier": 0.98, "stonePrice": 46, "cementBag": 740, "sandTonne": 2150, "ballastTonne": 2050 }
+  ],
+  "housePresets": [
+    { "id": "bedsitter-block", "name": "1-Bedroom / Studio Cottage", "sqm": 48, "bedrooms": 1, "bathrooms": 1 },
+    { "id": "2br-bungalow", "name": "2-Bedroom Bungalow", "sqm": 85, "bedrooms": 2, "bathrooms": 2 },
+    { "id": "3br-bungalow", "name": "3-Bedroom Master Ensuite Bungalow", "sqm": 130, "bedrooms": 3, "bathrooms": 2 },
+    { "id": "4br-maisonette", "name": "4-Bedroom Maisonette (2 Floors)", "sqm": 210, "bedrooms": 4, "bathrooms": 4 }
+  ],
+  "finishTiers": [
+    { "id": "standard", "name": "Standard Fundi Finish (Box Profile Mabati + Ceramic Tiles)", "costPerSqm": 38500 },
+    { "id": "middle", "name": "Mid-Range Modern (Versatile / Decra Roof + Granite & Gypsum)", "costPerSqm": 51000 },
+    { "id": "executive", "name": "Executive Luxury Finish (Clay Tiles / Flat Roof + Porcelain)", "costPerSqm": 68000 }
+  ],
+  "stageBreakdownPct": [
+    { "stage": "1. Substructure (Foundation, Hardcore, Anti-Termite & Oversite Slab)", "pct": 0.19 },
+    { "stage": "2. Superstructure Walling, Columns, Ring Beam & Lintels", "pct": 0.23 },
+    { "stage": "3. Roofing Structure (Trusses, Mabati / Decra, Fascia & Gutters)", "pct": 0.15 },
+    { "stage": "4. Plastering, Screeding, Windows & External Steel/Mahogany Doors", "pct": 0.14 },
+    { "stage": "5. Plumbing, Biodigester/Septic & Electrical Conduit + Wiring", "pct": 0.12 },
+    { "stage": "6. Finishes (Floor & Wall Tiles, Gypsum Ceiling, Kitchen Cabinets & Paint)", "pct": 0.17 }
+  ]
+}

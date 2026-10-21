@@ -140,11 +140,7 @@ export default function CountyScreen() {
         ]}
       >
         {/* Consolidated Mode Tabs */}
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{ gap: 6, paddingBottom: 10 }}
-        >
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6, paddingBottom: 10  }}>
           {([
             { id: "directory", label: "🏛️ Directory" },
             { id: "budgets", label: "📊 Budgets (FY 25/26)" },
@@ -177,7 +173,7 @@ export default function CountyScreen() {
               </Pressable>
             );
           })}
-        </ScrollView>
+        </View>
 
         {activeTab !== "compare" && (
           <>
@@ -208,7 +204,7 @@ export default function CountyScreen() {
             {/* Sort By Row */}
             <View style={styles.sortRow}>
               <Text style={[styles.sortLabel, { color: theme.textMuted }]}>SORT BY</Text>
-              <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 4 }}>
+              <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 4  }}>
                 {(
                   [
                     { id: "code", label: "Code" },
@@ -247,7 +243,7 @@ export default function CountyScreen() {
                     </Pressable>
                   );
                 })}
-              </ScrollView>
+              </View>
             </View>
           </>
         )}
@@ -335,7 +331,7 @@ export default function CountyScreen() {
                     <View style={[styles.cardInfoRow, { borderTopColor: theme.outlineVariant }]}>
                       <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
                         <Ionicons name="person-circle-outline" size={14} color={theme.gold} />
-                        <Text style={[styles.infoPillText, { color: theme.textSecondary }]} numberOfLines={1}>
+                        <Text style={[styles.infoPillText, { color: theme.textSecondary }]} >
                           Gov. {item.governor}
                         </Text>
                       </View>
@@ -580,7 +576,7 @@ export default function CountyScreen() {
             <Text style={{ fontSize: 11, color: theme.textSecondary }}>
               Select First County ({countyA.name}):
             </Text>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
               {enrichedCounties.map((c) => (
                 <Pressable
                   key={`a-${c.slug}`}
@@ -604,12 +600,12 @@ export default function CountyScreen() {
                   </Text>
                 </Pressable>
               ))}
-            </ScrollView>
+            </View>
 
             <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
               Select Second County ({countyB.name}):
             </Text>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
               {enrichedCounties.map((c) => (
                 <Pressable
                   key={`b-${c.slug}`}
@@ -633,7 +629,7 @@ export default function CountyScreen() {
                   </Text>
                 </Pressable>
               ))}
-            </ScrollView>
+            </View>
 
             <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: theme.outlineVariant, paddingTop: 8, gap: 8 }}>
               {[

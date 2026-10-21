@@ -1,5 +1,5 @@
-import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -7,11 +7,39 @@ const root = resolve(__dirname, "../..");
 const source = resolve(root, "kenyahub/src");
 const destination = resolve(__dirname, "../src/shared");
 
-await rm(destination, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
-await mkdir(destination, { recursive: true });
-await cp(resolve(source, "data"), resolve(destination, "data"), { recursive: true });
-await mkdir(resolve(destination, "lib"), { recursive: true });
+async function copyDirFiltered(srcDir, destDir) {
+  await mkdir(destDir, { recursive: true });
+  const entries = await readdir(srcDir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.name === "languages data" || entry.name === "raw" || entry.name === "__pycache__") continue;
+    if (entry.name.endsWith(".pyc") || entry.name.endsWith(".log") || entry.name.endsWith(".pdf")) continue;
+    const sPath = join(srcDir, entry.name);
+    const dPath = join(destDir, entry.name);
+    if (entry.isDirectory()) {
+      await copyDirFiltered(sPath, dPath);
+    } else if (entry.isFile()) {
+      const buf = await readFile(sPath);
+      await writeFile(dPath, buf);
+    }
+  }
+}
 
+await copyDirFiltered(resolve(source, "data"), resolve(destination, "data"));
+
+const explicitDataFiles = [
+  "kra-car-import-crsp.json",
+  "mjengo-construction-rates.json",
+  "sacco-chama-rates.json",
+  "tool-guides.json",
+  "kikuyu-proverbs.json",
+  "blog-posts.ts",
+];
+for (const df of explicitDataFiles) {
+  const buf = await readFile(resolve(source, "data", df));
+  await writeFile(resolve(destination, "data", df), buf);
+}
+
+await mkdir(resolve(destination, "lib"), { recursive: true });
 const libFiles = ["types.ts", "tools-registry.ts", "learn-engine.ts", "learn-progress.ts"];
 for (const file of libFiles) {
   const srcPath = resolve(source, "lib", file);
@@ -23,7 +51,6 @@ for (const file of libFiles) {
   await writeFile(destPath, normalized, "utf8");
 }
 
-// Ensure registry.ts uses relative import for language-sources in mobile/src/shared
 const registryPath = resolve(destination, "data/courses/registry.ts");
 const registryContent = await readFile(registryPath, "utf8");
 await writeFile(

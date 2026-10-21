@@ -130,7 +130,7 @@ export default function MatatuPage() {
                     <DynamicIcon emoji="🚌" className="w-5 h-5 text-gold flex-shrink-0" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <span className="text-xs font-semibold text-text-primary truncate">Route {r.routeNumber}: {r.name}</span>
+                        <span className="text-xs font-semibold text-text-primary break-words">Route {r.routeNumber}: {r.name}</span>
                         <span className="text-[0.55rem] bg-gold/15 text-gold px-1.5 py-0.5 rounded font-medium">{r.townName}</span>
                       </div>
                       <p className="text-[0.65rem] text-text-muted">{r.terminusA} → {r.terminusB} · KES {r.fareMin}–{r.fareMax}</p>
@@ -180,7 +180,7 @@ export default function MatatuPage() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1.5">
-                  <h3 className="text-sm font-semibold text-text-primary group-hover:text-gold transition-colors truncate">{route.name}</h3>
+                  <h3 className="text-sm font-semibold text-text-primary group-hover:text-gold transition-colors break-words">{route.name}</h3>
                   <span className="text-[0.55rem] bg-bg-elevated border border-border px-1.5 py-0.5 rounded text-text-muted flex-shrink-0">{route.townName}</span>
                 </div>
                 <p className="text-[0.65rem] text-text-muted mt-0.5">{route.stages.length} stages · {route.saccoName}</p>

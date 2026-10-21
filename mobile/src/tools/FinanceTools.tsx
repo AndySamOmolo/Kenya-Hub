@@ -17,6 +17,9 @@ import housingData from "../shared/data/housing-levy-rates.json";
 import stampData from "../shared/data/stamp-duty-rates.json";
 import insuranceData from "../shared/data/vehicle-insurance-rates.json";
 import waterData from "../shared/data/water-tariffs.json";
+import crspData from "../shared/data/kra-car-import-crsp.json";
+import mjengoData from "../shared/data/mjengo-construction-rates.json";
+import saccoData from "../shared/data/sacco-chama-rates.json";
 
 function KESInput({
   label,
@@ -134,8 +137,50 @@ function Row({
 export function PayeCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [salaryText, setSalaryText] = useState("100000");
+  const [mode, setMode] = useState<"grossToNet" | "netToGross">("grossToNet");
+  const [pensionText, setPensionText] = useState("0");
+  const [mortgageText, setMortgageText] = useState("0");
+  const [insuranceText, setInsuranceText] = useState("0");
+  const [showReliefs, setShowReliefs] = useState(false);
   const [showAnnual, setShowAnnual] = useState(false);
-  const salary = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
+  const inputAmount = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
+  const pension = Math.min(30000, Math.max(0, Number(pensionText.replace(/,/g, "")) || 0));
+  const mortgage = Math.min(30000, Math.max(0, Number(mortgageText.replace(/,/g, "")) || 0));
+  const insurancePrem = Math.max(0, Number(insuranceText.replace(/,/g, "")) || 0);
+  const insuranceRelief = Math.min(5000, Math.round(insurancePrem * 0.15));
+
+  const computeFromGross = (g: number) => {
+    const t1 = Math.min(g, payeData.nssf.tier1Limit || 9000) * ((payeData.nssf.rate || 6) / 100);
+    const t2 = Math.max(0, Math.min(g, payeData.nssf.tier2Limit || 108000) - (payeData.nssf.tier1Limit || 9000)) * ((payeData.nssf.rate || 6) / 100);
+    const nssf = Math.round((t1 + t2) * 100) / 100;
+    const hLevy = Math.round(g * ((payeData.housingLevy.employeeRate || 1.5) / 100) * 100) / 100;
+    const shaVal = g > 0 ? Math.max(300, Math.round(g * ((payeData.sha.rate || 2.75) / 100) * 100) / 100) : 0;
+    const taxInc = Math.max(0, g - nssf - shaVal - hLevy - pension - mortgage);
+    let gTax = 0;
+    for (const band of payeData.payeBands) {
+      const upper = band.max ?? Infinity;
+      if (taxInc > band.min) {
+        const inBand = Math.min(taxInc, upper) - (band.min > 0 ? band.min - 1 : 0);
+        if (inBand > 0) gTax += inBand * (band.rate / 100);
+      }
+    }
+    const pRelief = payeData.personalRelief || 2400;
+    const nPaye = Math.max(0, gTax - pRelief - insuranceRelief);
+    const totDed = nPaye + shaVal + hLevy + nssf;
+    return g - totDed;
+  };
+
+  const salary = useMemo(() => {
+    if (mode === "grossToNet" || inputAmount <= 0) return inputAmount;
+    let lo = inputAmount;
+    let hi = inputAmount * 2.2 + 50000;
+    for (let i = 0; i < 40; i++) {
+      const mid = (lo + hi) / 2;
+      if (computeFromGross(mid) < inputAmount) lo = mid;
+      else hi = mid;
+    }
+    return Math.round((lo + hi) / 2);
+  }, [inputAmount, mode, pension, mortgage, insuranceRelief]);
 
   const calc = useMemo(() => {
     const gross = salary;
@@ -159,7 +204,7 @@ export function PayeCalculator() {
           )
         : 0;
 
-    const taxableIncome = Math.max(0, gross - totalNssf - sha - housingLevy);
+    const taxableIncome = Math.max(0, gross - totalNssf - sha - housingLevy - pension - mortgage);
 
     let grossTax = 0;
     for (const band of payeData.payeBands) {
@@ -174,7 +219,7 @@ export function PayeCalculator() {
     }
 
     const personalRelief = payeData.personalRelief || 2400;
-    const netPaye = Math.max(0, grossTax - personalRelief);
+    const netPaye = Math.max(0, grossTax - personalRelief - insuranceRelief);
     const totalDeductions = netPaye + sha + housingLevy + totalNssf;
     const netSalary = Math.max(0, gross - totalDeductions);
     const effectiveTaxRate =
@@ -202,7 +247,7 @@ export function PayeCalculator() {
       employerHousing: employerHousing * mult,
       totalEmployerCost: totalEmployerCost * mult,
     };
-  }, [salary, showAnnual]);
+  }, [salary, showAnnual, pension, mortgage, insuranceRelief]);
 
   return (
     <View style={styles.toolWrap}>
@@ -258,11 +303,46 @@ export function PayeCalculator() {
         </Pressable>
       </View>
 
+      <View style={styles.pillSelector}>
+        <Pressable
+          onPress={() => setMode("grossToNet")}
+          style={[styles.pillBtn, mode === "grossToNet" && styles.pillBtnActive]}
+        >
+          <Text style={[styles.pillBtnText, mode === "grossToNet" && styles.pillBtnTextActive]}>
+            Gross → Net Pay
+          </Text>
+        </Pressable>
+        <Pressable
+          onPress={() => setMode("netToGross")}
+          style={[styles.pillBtn, mode === "netToGross" && styles.pillBtnActive]}
+        >
+          <Text style={[styles.pillBtnText, mode === "netToGross" && styles.pillBtnTextActive]}>
+            Target Net → Gross (Reverse)
+          </Text>
+        </Pressable>
+      </View>
+
       <KESInput
-        label="Monthly Gross Salary (KES)"
+        label={mode === "grossToNet" ? "Monthly Gross Salary (KES)" : "Target Monthly Take-Home Net Pay (KES)"}
         value={salaryText}
         onChangeText={setSalaryText}
       />
+
+      <Pressable
+        onPress={() => setShowReliefs((v) => !v)}
+        style={{ alignSelf: "flex-start", marginBottom: 4 }}
+      >
+        <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
+          {showReliefs ? "− Hide Tax Reliefs (Pension, Mortgage & Insurance)" : "+ Add Tax-Deductible Pension, Mortgage or Insurance"}
+        </Text>
+      </Pressable>
+      {showReliefs && (
+        <View style={{ gap: 8 }}>
+          <KESInput label="Pension Contribution (Max KES 30k/mo deductible)" value={pensionText} onChangeText={setPensionText} />
+          <KESInput label="Mortgage Interest (Max KES 30k/mo deductible)" value={mortgageText} onChangeText={setMortgageText} />
+          <KESInput label="Life/Education/Health Insurance Premium (15% relief)" value={insuranceText} onChangeText={setInsuranceText} />
+        </View>
+      )}
 
       {/* Quick Salary Presets */}
       <View style={styles.pillSelector}>
@@ -429,6 +509,7 @@ export function MpesaCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [amountText, setAmountText] = useState("1000");
   const [tab, setTab] = useState<MpesaTxType>("sendRegistered");
+  const [includeWithdrawal, setIncludeWithdrawal] = useState(false);
   const amount = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
 
   const txTypes = mpesaData.transactionTypes as Record<
@@ -480,8 +561,25 @@ export function MpesaCalculator() {
         ))}
       </View>
 
+      <Pressable
+        onPress={() => setIncludeWithdrawal((v) => !v)}
+        style={[
+          styles.tipCard,
+          includeWithdrawal && { borderColor: theme.gold, backgroundColor: `${theme.gold}24` },
+        ]}
+      >
+        <Ionicons
+          name={includeWithdrawal ? "checkbox" : "square-outline"}
+          size={18}
+          color={theme.gold}
+        />
+        <Text style={[styles.tipText, { fontWeight: "700" }]}>
+          “Tuma na ya Kutoa” — Add Agent Withdrawal Fee ({calcMpesaFee(amount, "withdrawAgent") !== null ? `KES ${calcMpesaFee(amount, "withdrawAgent")}` : "N/A"}) so recipient gets exact KES {amount.toLocaleString()} cash
+        </Text>
+      </Pressable>
+
       <StatCard
-        label="M-PESA TRANSACTION FEE"
+        label={includeWithdrawal ? "TOTAL SEND + AGENT WITHDRAWAL FEE" : "M-PESA TRANSACTION FEE"}
         value={
           results.fee === null
             ? "Out of Range"
@@ -1487,6 +1585,279 @@ export function WaterBillCalculator() {
   );
 }
 
+
+/** 9. KRA Car Import Duty & CRSP Calculator */
+export function KraCarImportCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
+  const [selectedModelId, setSelectedModelId] = useState(crspData.popularModels[0].id);
+  const [ageIndex, setAgeIndex] = useState(7);
+  const [cifUsdText, setCifUsdText] = useState(String(crspData.popularModels[0].avgCifUsd));
+
+  const preset = useMemo(
+    () => crspData.popularModels.find((m) => m.id === selectedModelId) || crspData.popularModels[0],
+    [selectedModelId]
+  );
+
+  const calc = useMemo(() => {
+    const crsp = preset.crspKes;
+    const cc = preset.cc;
+    const fuel = preset.fuel;
+    const depBand = crspData.depreciationBands[ageIndex] || crspData.depreciationBands[7];
+    const depRate = depBand.rate;
+
+    let exciseRate = crspData.rates.exciseSmallPetrol;
+    if (fuel === "petrol")
+      exciseRate = cc > 1500 ? crspData.rates.exciseLargePetrol : crspData.rates.exciseSmallPetrol;
+    else if (fuel === "diesel")
+      exciseRate = cc > 2500 ? crspData.rates.exciseLargeDiesel : crspData.rates.exciseSmallDiesel;
+
+    const taxMult =
+      (1 + crspData.rates.importDuty) * (1 + exciseRate) * (1 + crspData.rates.vat) +
+      crspData.rates.idf +
+      crspData.rates.rdl;
+    const customsValue = (crsp / (taxMult * 1.08)) * (1 - depRate);
+    const importDuty = customsValue * crspData.rates.importDuty;
+    const exciseDuty = (customsValue + importDuty) * exciseRate;
+    const vat = (customsValue + importDuty + exciseDuty) * crspData.rates.vat;
+    const idf = customsValue * crspData.rates.idf;
+    const rdl = customsValue * crspData.rates.rdl;
+    const totalKraDuty = importDuty + exciseDuty + vat + idf + rdl;
+    const ntsaFee =
+      (crspData.ntsaRegistration.find((r) => cc <= r.maxCc) || crspData.ntsaRegistration[5]).fee;
+    const portAndKebs = crspData.rates.kebsInspectionKes + crspData.rates.portClearingKes;
+    const cifKes = (Math.max(0, Number(cifUsdText) || preset.avgCifUsd)) * 129;
+    const totalLanded = cifKes + totalKraDuty + ntsaFee + portAndKebs;
+
+    return {
+      crsp,
+      depBand,
+      customsValue,
+      importDuty,
+      exciseDuty,
+      vat,
+      idf,
+      rdl,
+      totalKraDuty,
+      ntsaFee,
+      portAndKebs,
+      cifKes,
+      totalLanded,
+    };
+  }, [preset, ageIndex, cifUsdText]);
+
+  return (
+    <View style={styles.toolWrap}>
+      <Text style={styles.inputLabel}>Select Popular Kenyan Import Vehicle</Text>
+      <View style={styles.pillSelector}>
+        {crspData.popularModels.map((m) => (
+          <Pressable
+            key={m.id}
+            onPress={() => {
+              setSelectedModelId(m.id);
+              setCifUsdText(String(m.avgCifUsd));
+            }}
+            style={[styles.pillBtn, selectedModelId === m.id && styles.pillBtnActive]}
+          >
+            <Text style={[styles.pillBtnText, selectedModelId === m.id && styles.pillBtnTextActive]}>
+              {m.make} {m.model.split(" ")[0]}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <Text style={styles.inputLabel}>Vehicle Age (Depreciation Band)</Text>
+      <View style={styles.pillSelector}>
+        {crspData.depreciationBands.map((b, idx) => (
+          <Pressable
+            key={b.label}
+            onPress={() => setAgeIndex(idx)}
+            style={[styles.pillBtn, ageIndex === idx && styles.pillBtnActive]}
+          >
+            <Text style={[styles.pillBtnText, ageIndex === idx && styles.pillBtnTextActive]}>
+              {Math.round(b.rate * 100)}% ({b.minYears}–{b.maxYears}y)
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <StatCard
+        label="TOTAL KRA PORT TAXES"
+        value={`KES ${Math.round(calc.totalKraDuty).toLocaleString()}`}
+        highlight
+        subtext={`Estimated Total On-the-Road: KES ${Math.round(calc.totalLanded).toLocaleString()}`}
+      />
+
+      <Text style={styles.subHeading}>KRA Duty & Clearance Breakdown</Text>
+      <View style={styles.card}>
+        <Row label="KRA Base CRSP" value={`KES ${Math.round(calc.crsp).toLocaleString()}`} />
+        <Row label={`Depreciated Customs Value (${Math.round(calc.depBand.rate * 100)}%)`} value={`KES ${Math.round(calc.customsValue).toLocaleString()}`} />
+        <Row label="Import Duty (35%)" value={`KES ${Math.round(calc.importDuty).toLocaleString()}`} isDeduction />
+        <Row label="Excise Duty" value={`KES ${Math.round(calc.exciseDuty).toLocaleString()}`} isDeduction />
+        <Row label="VAT (16%)" value={`KES ${Math.round(calc.vat).toLocaleString()}`} isDeduction />
+        <Row label="IDF (2.5%) + RDL (2.0%)" value={`KES ${Math.round(calc.idf + calc.rdl).toLocaleString()}`} isDeduction />
+        <Row label="NTSA Registration + KEBS/Port" value={`KES ${Math.round(calc.ntsaFee + calc.portAndKebs).toLocaleString()}`} />
+        <Row label="Total On-the-Road Landed Cost" value={`KES ${Math.round(calc.totalLanded).toLocaleString()}`} isTotal />
+      </View>
+    </View>
+  );
+}
+
+/** 10. Mjengo Construction & Building Material Calculator */
+export function MjengoConstructionCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
+  const [sqmText, setSqmText] = useState("130");
+  const [regionId, setRegionId] = useState(mjengoData.regions[0].id);
+  const [finishId, setFinishId] = useState(mjengoData.finishTiers[1].id);
+
+  const region = mjengoData.regions.find((r) => r.id === regionId) || mjengoData.regions[0];
+  const finish = mjengoData.finishTiers.find((f) => f.id === finishId) || mjengoData.finishTiers[1];
+  const sqm = Math.max(15, Number(sqmText.replace(/,/g, "")) || 130);
+
+  const calc = useMemo(() => {
+    const ratePerSqm = finish.costPerSqm * region.multiplier;
+    const totalCost = sqm * ratePerSqm;
+    const stones = Math.ceil(sqm * 2.55 * 13.5);
+    const cement = Math.ceil(sqm * 4.4);
+    const sand = Math.ceil(sqm * 0.58);
+    const ballast = Math.ceil(sqm * 0.48);
+    const steel = Math.ceil(sqm * 0.85);
+    const mabati = Math.ceil((sqm * 1.38) / 2.4);
+    return { ratePerSqm, totalCost, stones, cement, sand, ballast, steel, mabati };
+  }, [sqm, region, finish]);
+
+  return (
+    <View style={styles.toolWrap}>
+      <Text style={styles.inputLabel}>House Size Presets</Text>
+      <View style={styles.pillSelector}>
+        {mjengoData.housePresets.map((p) => (
+          <Pressable
+            key={p.id}
+            onPress={() => setSqmText(String(p.sqm))}
+            style={[styles.pillBtn, sqm === p.sqm && styles.pillBtnActive]}
+          >
+            <Text style={[styles.pillBtnText, sqm === p.sqm && styles.pillBtnTextActive]}>
+              {p.name} ({p.sqm}m²)
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <Text style={styles.inputLabel}>Region & Quarry Zone</Text>
+      <View style={styles.pillSelector}>
+        {mjengoData.regions.map((r) => (
+          <Pressable
+            key={r.id}
+            onPress={() => setRegionId(r.id)}
+            style={[styles.pillBtn, regionId === r.id && styles.pillBtnActive]}
+          >
+            <Text style={[styles.pillBtnText, regionId === r.id && styles.pillBtnTextActive]}>
+              {r.name.split("(")[0].trim()}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <Text style={styles.inputLabel}>Finish Tier</Text>
+      <View style={styles.pillSelector}>
+        {mjengoData.finishTiers.map((f) => (
+          <Pressable
+            key={f.id}
+            onPress={() => setFinishId(f.id)}
+            style={[styles.pillBtn, finishId === f.id && styles.pillBtnActive]}
+          >
+            <Text style={[styles.pillBtnText, finishId === f.id && styles.pillBtnTextActive]}>
+              {f.name.split("(")[0].trim()}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <StatCard
+        label="ESTIMATED TOTAL MJENGO COST"
+        value={`KES ${Math.round(calc.totalCost).toLocaleString()}`}
+        highlight
+        subtext={`${sqm} m² @ KES ${Math.round(calc.ratePerSqm).toLocaleString()}/m²`}
+      />
+
+      <Text style={styles.subHeading}>Key Materials Estimate (Bill of Quantities)</Text>
+      <View style={styles.card}>
+        <Row label="9×9 Machine-Cut Quarry Stones" value={`${calc.stones.toLocaleString()} pcs`} />
+        <Row label="50kg Cement Bags (32.5R / 42.5N)" value={`${calc.cement.toLocaleString()} bags`} />
+        <Row label="Clean River Sand" value={`${calc.sand} tonnes`} />
+        <Row label="Crushed Ballast" value={`${calc.ballast} tonnes`} />
+        <Row label="High-Tensile Steel Bars (D12/D16)" value={`${calc.steel} lengths`} />
+        <Row label="28-Gauge Mabati Sheets (3m)" value={`${calc.mabati} sheets`} isTotal />
+      </View>
+    </View>
+  );
+}
+
+/** 11. SACCO Dividend, Loan & Chama Calculator */
+export function SaccoChamaCalculator() {
+  const { theme, styles } = useDynamicStyles(createStyles);
+  const [selectedSaccoId, setSelectedSaccoId] = useState(saccoData.topSaccos[0].id);
+  const [sharesText, setSharesText] = useState("40000");
+  const [depositsText, setDepositsText] = useState("250000");
+  const [monthlyText, setMonthlyText] = useState("15000");
+
+  const sacco = saccoData.topSaccos.find((s) => s.id === selectedSaccoId) || saccoData.topSaccos[0];
+  const shares = Math.max(0, Number(sharesText.replace(/,/g, "")) || 0);
+  const opening = Math.max(0, Number(depositsText.replace(/,/g, "")) || 0);
+  const monthly = Math.max(0, Number(monthlyText.replace(/,/g, "")) || 0);
+
+  const calc = useMemo(() => {
+    const grossDiv = shares * (sacco.dividendRate / 100);
+    const grossReb = opening * (sacco.rebateRate / 100) + monthly * 12 * (sacco.rebateRate / 100) * (6.5 / 12);
+    const grossTotal = grossDiv + grossReb;
+    const wht = grossTotal * saccoData.withholdingTaxRate;
+    const netPayout = grossTotal - wht;
+    const yearEndDeposits = opening + monthly * 12;
+    const maxLoan = yearEndDeposits * sacco.loanMultiplier;
+    const r = sacco.monthlyInterestReducing / 100;
+    const monthlyRepay = maxLoan > 0 ? (maxLoan * r * Math.pow(1 + r, 36)) / (Math.pow(1 + r, 36) - 1) : 0;
+    return { grossDiv, grossReb, wht, netPayout, yearEndDeposits, maxLoan, monthlyRepay };
+  }, [shares, opening, monthly, sacco]);
+
+  return (
+    <View style={styles.toolWrap}>
+      <Text style={styles.inputLabel}>Select SASRA DT-SACCO Benchmark</Text>
+      <View style={styles.pillSelector}>
+        {saccoData.topSaccos.map((s) => (
+          <Pressable
+            key={s.id}
+            onPress={() => setSelectedSaccoId(s.id)}
+            style={[styles.pillBtn, selectedSaccoId === s.id && styles.pillBtnActive]}
+          >
+            <Text style={[styles.pillBtnText, selectedSaccoId === s.id && styles.pillBtnTextActive]}>
+              {s.name.replace(" SACCO", "")}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <KESInput label="Share Capital (KES)" value={sharesText} onChangeText={setSharesText} />
+      <KESInput label="Opening BOSA Deposits (KES)" value={depositsText} onChangeText={setDepositsText} />
+      <KESInput label="Monthly BOSA Contribution (KES)" value={monthlyText} onChangeText={setMonthlyText} />
+
+      <StatCard
+        label="NET ANNUAL DIVIDEND + REBATE"
+        value={`KES ${Math.round(calc.netPayout).toLocaleString()}`}
+        highlight
+        subtext={`Max BOSA Loan (${sacco.loanMultiplier}×): KES ${Math.round(calc.maxLoan).toLocaleString()}`}
+      />
+
+      <Text style={styles.subHeading}>{sacco.name} Breakdown</Text>
+      <View style={styles.card}>
+        <Row label={`Share Capital Dividend (${sacco.dividendRate}%)`} value={`KES ${Math.round(calc.grossDiv).toLocaleString()}`} />
+        <Row label={`Weighted BOSA Interest Rebate (${sacco.rebateRate}%)`} value={`KES ${Math.round(calc.grossReb).toLocaleString()}`} />
+        <Row label="Withholding Tax (5% WHT)" value={`− KES ${Math.round(calc.wht).toLocaleString()}`} isDeduction />
+        <Row label="Net FOSA Cash Payout" value={`KES ${Math.round(calc.netPayout).toLocaleString()}`} isPositive />
+        <Row label="36-Month Loan Repayment (1%/mo reducing)" value={`KES ${Math.round(calc.monthlyRepay).toLocaleString()}/mo`} isTotal />
+      </View>
+    </View>
+  );
+}
+
 const createStyles = (theme: ThemeColors) =>
   StyleSheet.create({
     toolWrap: {
@@ -1575,8 +1946,9 @@ const createStyles = (theme: ThemeColors) =>
     },
     tableRow: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
-      alignItems: "center",
+      alignItems: "flex-start",
       paddingVertical: 8,
       gap: 8,
     },

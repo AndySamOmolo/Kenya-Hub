@@ -37,6 +37,7 @@ export default function TabLayout() {
         tabBarActiveTintColor: theme.gold,
         tabBarInactiveTintColor: theme.textSecondary,
         tabBarHideOnKeyboard: true,
+        tabBarAllowFontScaling: false,
         tabBarStyle: [
           styles.tabBar,
           {
@@ -131,7 +132,7 @@ export default function TabLayout() {
 const styles = StyleSheet.create({
   tabBar: {
     borderTopWidth: StyleSheet.hairlineWidth,
-    height: Platform.OS === "android" ? 76 : 88,
+    minHeight: Platform.OS === "android" ? 74 : 88,
     paddingBottom: Platform.OS === "android" ? 10 : 26,
     paddingTop: 8,
     elevation: 16,
@@ -141,7 +142,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: -4 },
   },
   iconPill: {
-    width: 64,
+    width: 50,
     height: 32,
     borderRadius: 16,
     alignItems: "center",

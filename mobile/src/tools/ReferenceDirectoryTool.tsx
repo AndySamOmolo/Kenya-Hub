@@ -119,7 +119,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </View>
             </View>
           </View>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6, marginTop: 6 }}>
+          <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6, marginTop: 6  }}>
             {[0, 2, 3, 6, 9, 12, 18, 24, 36, 60].map((m) => (
               <Pressable
                 key={m}
@@ -131,7 +131,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
                 </Text>
               </Pressable>
             ))}
-          </ScrollView>
+          </View>
         </View>
 
         {/* Expected Weight & Next Vaccine Summary */}
@@ -154,7 +154,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             <Text style={{ fontSize: 16, fontWeight: "900", color: theme.textPrimary }}>
               {nextStage?.age}
             </Text>
-            <Text style={{ fontSize: 11, color: theme.textSecondary }} numberOfLines={2}>
+            <Text style={{ fontSize: 11, color: theme.textSecondary }} >
               {(nextStage?.vaccines || []).map((v: any) => v.name).join(", ")}
             </Text>
           </View>
@@ -257,7 +257,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
     return (
       <View style={styles.toolWrap}>
         <Text style={styles.subHeading}>Select Intellectual Property Type (KIPI & KECOBO)</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {ipKeys.map((k) => {
             const active = ipType === k;
             return (
@@ -272,7 +272,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Pressable>
             );
           })}
-        </ScrollView>
+        </View>
 
         {ipType === "trademark" && (
           <View style={styles.card}>
@@ -393,7 +393,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
     return (
       <View style={styles.toolWrap}>
         <Text style={styles.subHeading}>Select Farming Agro-Ecological Region</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {regions.map((r) => {
             const active = r.id === cropRegion;
             return (
@@ -408,7 +408,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Pressable>
             );
           })}
-        </ScrollView>
+        </View>
         {currentRegionObj && (
           <Text style={{ fontSize: 11, color: theme.textMuted }}>
             Active Region: <Text style={{ color: theme.gold, fontWeight: "700" }}>{currentRegionObj.name}</Text>
@@ -426,7 +426,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             style={styles.searchInput}
           />
         </View>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {categories.map((cat) => (
             <Pressable
               key={cat}
@@ -438,7 +438,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <Text style={styles.subHeading}>
           Crop Planting & Harvesting Schedule ({filteredCrops.length} Crops)
@@ -572,7 +572,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
           />
         </View>
 
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {zones.map((z) => (
             <Pressable
               key={z}
@@ -582,7 +582,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               <Text style={[styles.pillBtnText, filterA === z && styles.pillBtnTextActive]}>{z}</Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
           <Text style={styles.subHeading}>{filtered.length} Counties</Text>
@@ -717,7 +717,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
         </View>
 
         {/* Category Filter */}
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {categories.map((cat) => (
             <Pressable
               key={cat}
@@ -729,7 +729,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         {/* Sort Controls */}
         <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 6 }}>
@@ -839,25 +839,25 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
       <View style={styles.toolWrap}>
         {/* 4 National Summary Cards */}
         <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-          <View style={[styles.card, { width: "48%", paddingVertical: 10 }]}>
+          <View style={[styles.card, { flexGrow: 1, flexBasis: "45%", minWidth: 140, paddingVertical: 10 }]}>
             <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>EQUITABLE SHARE</Text>
             <Text style={{ fontSize: 16, fontWeight: "900", color: theme.gold }}>
               KES {(totals.alloc / 1000).toFixed(1)}B
             </Text>
           </View>
-          <View style={[styles.card, { width: "48%", paddingVertical: 10 }]}>
+          <View style={[styles.card, { flexGrow: 1, flexBasis: "45%", minWidth: 140, paddingVertical: 10 }]}>
             <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>OWN-SOURCE REV</Text>
             <Text style={{ fontSize: 16, fontWeight: "900", color: theme.sky }}>
               KES {(totals.osr / 1000).toFixed(1)}B
             </Text>
           </View>
-          <View style={[styles.card, { width: "48%", paddingVertical: 10 }]}>
+          <View style={[styles.card, { flexGrow: 1, flexBasis: "45%", minWidth: 140, paddingVertical: 10 }]}>
             <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>EXPENDITURE</Text>
             <Text style={{ fontSize: 16, fontWeight: "900", color: theme.kenyaGreenLight }}>
               KES {(totals.exp / 1000).toFixed(1)}B
             </Text>
           </View>
-          <View style={[styles.card, { width: "48%", paddingVertical: 10 }]}>
+          <View style={[styles.card, { flexGrow: 1, flexBasis: "45%", minWidth: 140, paddingVertical: 10 }]}>
             <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>AVG ABSORPTION</Text>
             <Text style={{ fontSize: 16, fontWeight: "900", color: theme.textPrimary }}>
               {totals.avgAbs}%
@@ -995,7 +995,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
           />
         </View>
 
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {ecosystems.map((e) => (
             <Pressable
               key={e}
@@ -1005,7 +1005,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               <Text style={[styles.pillBtnText, filterA === e && styles.pillBtnTextActive]}>{e}</Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 6 }}>
           <View style={{ flexDirection: "row", gap: 6 }}>
@@ -1120,7 +1120,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
         </View>
 
         {/* County Filter */}
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {counties.map((c) => (
             <Pressable
               key={c}
@@ -1132,7 +1132,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         {/* Facility Type & Level Filters */}
         <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", gap: 6 }}>
@@ -1463,7 +1463,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
           />
         </View>
 
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {types.map((t) => (
             <Pressable
               key={t}
@@ -1473,9 +1473,9 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               <Text style={[styles.pillBtnText, filterA === t && styles.pillBtnTextActive]}>{t}</Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {marketNames.map((m) => (
             <Pressable
               key={m}
@@ -1487,7 +1487,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
           <Text style={styles.subHeading}>{filtered.length} Market Quotes</Text>
@@ -1598,7 +1598,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
           />
         </View>
 
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {regions.map((r) => (
             <Pressable
               key={r}
@@ -1610,7 +1610,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", gap: 6 }}>
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
@@ -1849,7 +1849,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             style={styles.searchInput}
           />
         </View>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {categories.map((c) => (
             <Pressable
               key={c}
@@ -1859,8 +1859,8 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               <Text style={[styles.pillBtnText, filterA === c && styles.pillBtnTextActive]}>{c}</Text>
             </Pressable>
           ))}
-        </ScrollView>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        </View>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {frequencies.map((f) => (
             <Pressable
               key={f}
@@ -1872,7 +1872,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <Text style={styles.subHeading}>Kenya Economic Data Releases ({filtered.length})</Text>
         {filtered.map((e: any, idx: number) => (
@@ -1930,7 +1930,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             style={styles.searchInput}
           />
         </View>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {["All", ...soils.map((s) => s.name)].map((nm) => (
             <Pressable
               key={nm}
@@ -1942,7 +1942,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <Text style={styles.subHeading}>Kenya Agricultural Soil Profiles ({filtered.length})</Text>
         {filtered.map((s: any, idx: number) => (
@@ -2031,7 +2031,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             style={styles.searchInput}
           />
         </View>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           <Pressable
             onPress={() => setFilterA("All")}
             style={[styles.pillBtn, filterA === "All" && styles.pillBtnActive]}
@@ -2049,7 +2049,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <Text style={styles.subHeading}>KRA Customs Rules & Allowances ({filtered.length})</Text>
         {filtered.map((it, idx) => (
@@ -2136,7 +2136,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
             style={styles.searchInput}
           />
         </View>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap",  gap: 6  }}>
           {counties.map((c) => (
             <Pressable
               key={c}
@@ -2148,7 +2148,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               </Text>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
 
         <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
           <Text style={styles.subHeading}>KEPHIS / PCPB Licensed Agrovets ({filtered.length})</Text>

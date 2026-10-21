@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-21T13:10:19.325Z",
+  "generatedAt": "2026-10-21T17:22:56.104Z",
   "summary": {
-    "registryTools": 45,
-    "routeDirectories": 45,
+    "registryTools": 44,
+    "routeDirectories": 44,
     "errors": 0,
     "staleOrReview": 0
   },
@@ -40,6 +40,21 @@
       "status": "ok"
     },
     {
+      "slug": "sacco-chama-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.sasra.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 20,
+      "data": [
+        {
+          "file": "src/data/sacco-chama-rates.json",
+          "lastUpdated": "2026-10-01",
+          "source": "SASRA (SACCO Societies Regulatory Authority) Annual Supervision Report"
+        }
+      ],
+      "status": "ok"
+    },
+    {
       "slug": "helb-calculator",
       "routeExists": true,
       "sourceUrl": null,
@@ -50,21 +65,6 @@
           "file": "src/data/helb-rates.json",
           "lastUpdated": "2026-10-20",
           "source": "Higher Education Loans Board (HELB Act & helb.co.ke)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "housing-levy-calculator",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": 1,
-      "data": [
-        {
-          "file": "src/data/housing-levy-rates.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Affordable Housing Act, 2024 & Tax Laws (Amendment) Act, 2024"
         }
       ],
       "status": "ok"
@@ -184,12 +184,18 @@
       "status": "ok"
     },
     {
-      "slug": "matatu-routes",
+      "slug": "kra-car-import-calculator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
       "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [],
+      "ageDays": 20,
+      "data": [
+        {
+          "file": "src/data/kra-car-import-crsp.json",
+          "lastUpdated": "2026-10-01",
+          "source": "KRA Customs & Border Control Valuation Schedule (CRSP) & Finance Act"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -373,21 +379,6 @@
       "status": "ok"
     },
     {
-      "slug": "county-budget-tracker",
-      "routeExists": true,
-      "sourceUrl": null,
-      "maxAgeDays": 365,
-      "ageDays": 1,
-      "data": [
-        {
-          "file": "src/data/county-budgets.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Controller of Budget (cob.go.ke) — County Budget Implementation Review Report FY 2025/26"
-        }
-      ],
-      "status": "ok"
-    },
-    {
       "slug": "kenya-postal-codes",
       "routeExists": true,
       "sourceUrl": null,
@@ -507,21 +498,6 @@
       "status": "ok"
     },
     {
-      "slug": "kikuyu-proverbs",
-      "routeExists": true,
-      "sourceUrl": "https://archive.org/details/1000kikuyuproverbs",
-      "maxAgeDays": 365,
-      "ageDays": 1,
-      "data": [
-        {
-          "file": "src/data/kikuyu-proverbs.json",
-          "lastUpdated": "2026-10-20",
-          "source": "1,000 Kikuyu Proverbs by Fr. G. Barra (Consolata Catholic Mission)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
       "slug": "kenya-languages",
       "routeExists": true,
       "sourceUrl": null,
@@ -537,6 +513,21 @@
           "file": "src/data/language-sources",
           "lastUpdated": null,
           "source": null
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "mjengo-construction-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://nca.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 20,
+      "data": [
+        {
+          "file": "src/data/mjengo-construction-rates.json",
+          "lastUpdated": "2026-10-01",
+          "source": "Architectural Association of Kenya (AAK) Construction Cost Handbook & KNBS Building Materials Index"
         }
       ],
       "status": "ok"

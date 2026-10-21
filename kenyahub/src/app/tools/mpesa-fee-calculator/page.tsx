@@ -21,66 +21,97 @@ function calculateFee(amount: number, type: TransactionType): number | null {
   return null;
 }
 
-function findSavingTip(amount: number, type: TransactionType): string | null {
+function findOptimalSplit(amount: number, type: TransactionType) {
+  const singleFee = calculateFee(amount, type);
+  if (singleFee === null || singleFee === 0 || amount <= 100) return null;
+
+  let bestTotalFee = singleFee;
+  let bestSplitDesc: string | null = null;
+
+  // Test splitting into 2 parts at band upper limits
   const bands = mpesaData.transactionTypes[type].bands;
-  for (let i = 0; i < bands.length - 1; i++) {
-    const currentBand = bands[i];
-    const nextBand = bands[i + 1];
-    // If the amount falls in the start of a higher-fee band
-    if (amount >= nextBand.min && amount <= nextBand.min + 100) {
-      if (currentBand.fee < nextBand.fee) {
-        return `Sending KES ${currentBand.max.toLocaleString()} instead of KES ${amount.toLocaleString()} would save you KES ${(nextBand.fee - currentBand.fee).toLocaleString()} in fees (same band boundary).`;
-      }
+  for (const b of bands) {
+    if (b.max >= amount) break;
+    const part1 = b.max;
+    const part2 = amount - part1;
+    const fee1 = calculateFee(part1, type);
+    const fee2 = calculateFee(part2, type);
+    if (fee1 !== null && fee2 !== null && fee1 + fee2 < bestTotalFee) {
+      bestTotalFee = fee1 + fee2;
+      const saved = singleFee - bestTotalFee;
+      bestSplitDesc = `Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee — saving you KES ${saved.toLocaleString()}!`;
     }
   }
-  return null;
+
+  return bestSplitDesc;
 }
 
 const faq = [
   {
+    question: "How does 'Tuma na ya Kutoa' (Send + Withdrawal Fee) work?",
+    answer:
+      "When you want a recipient to withdraw an exact cash amount (e.g. KES 5,000) from an M-Pesa Agent, you must send KES 5,000 plus the agent withdrawal fee for that bracket so they aren't short. Our built-in 'Tuma na ya Kutoa' calculator computes the exact amount to send, the recipient's withdrawal fee, and your sending fee.",
+  },
+  {
     question: "Are M-Pesa Buy Goods (Lipa Na M-Pesa) transactions free?",
-    answer: "Yes, Safaricom does not charge customers any fee for Buy Goods (till number) transactions. This makes Lipa Na M-Pesa the cheapest way to pay for goods and services.",
+    answer:
+      "Yes, Safaricom does not charge customers any fee for Buy Goods (till number) transactions. Always ask merchants for their Till Number instead of sending to a personal number.",
   },
   {
-    question: "How much does M-Pesa charge to send money?",
-    answer: "M-Pesa charges vary by amount and whether the recipient is registered. Sending to a registered user ranges from KES 0 (for amounts under KES 100) to KES 108 (for amounts over KES 25,000). Sending to unregistered users costs more.",
-  },
-  {
-    question: "What is the M-Pesa maximum transaction limit?",
-    answer: "The maximum single M-Pesa transaction is KES 250,000. The maximum daily transaction total is KES 500,000, and the maximum M-Pesa account balance is KES 500,000.",
-  },
-  {
-    question: "Is receiving money on M-Pesa free?",
-    answer: "Yes, receiving money on M-Pesa is always free regardless of the amount. You only pay fees when sending money or withdrawing.",
-  },
-  {
-    question: "How can I save on M-Pesa fees?",
-    answer: "Use Buy Goods (Lipa Na M-Pesa) whenever possible as it's free. When sending money, check the fee boundaries — sometimes sending KES 500 instead of KES 501 can save you fees because of tariff band transitions.",
+    question: "What is the M-Pesa maximum transaction limit in 2026?",
+    answer:
+      "The maximum single M-Pesa transaction is KES 250,000, the maximum daily transaction limit is KES 500,000, and the maximum M-Pesa wallet balance is KES 500,000.",
   },
 ];
 
 export default function MpesaFeeCalculatorPage() {
-  const [amount, setAmount] = useState<number>(1000);
+  const [amount, setAmount] = useState<number>(5000);
   const [txType, setTxType] = useState<TransactionType>("sendRegistered");
+  const [includeWithdrawal, setIncludeWithdrawal] = useState<boolean>(false);
 
   const results = useMemo(() => {
-    const fee = calculateFee(amount, txType);
-    const savingTip = findSavingTip(amount, txType);
-    const totalCost = fee !== null ? amount + fee : null;
+    const withdrawalFeeForTarget =
+      calculateFee(amount, "withdrawAgent") ?? 0;
+    const amountToSend = includeWithdrawal
+      ? amount + withdrawalFeeForTarget
+      : amount;
 
-    // Calculate fees for all transaction types for comparison
-    const allFees = Object.entries(mpesaData.transactionTypes).map(([key, value]) => {
-      const f = calculateFee(amount, key as TransactionType);
-      return { key: key as TransactionType, label: value.label, fee: f };
-    });
+    // Check if adding withdrawal fee pushed recipient into next withdrawal band!
+    const actualAgentWithdrawFee =
+      calculateFee(amountToSend, "withdrawAgent") ?? withdrawalFeeForTarget;
+    const adjustedAmountToSend =
+      includeWithdrawal && actualAgentWithdrawFee > withdrawalFeeForTarget
+        ? amount + actualAgentWithdrawFee
+        : amountToSend;
 
-    return { fee, savingTip, totalCost, allFees };
-  }, [amount, txType]);
+    const fee = calculateFee(adjustedAmountToSend, txType);
+    const splitTip = findOptimalSplit(adjustedAmountToSend, txType);
+    const totalSenderWalletNeeded =
+      fee !== null ? adjustedAmountToSend + fee : null;
 
-  const txTypeOptions = Object.entries(mpesaData.transactionTypes).map(([key, value]) => ({
-    key: key as TransactionType,
-    label: value.label,
-  }));
+    const allFees = Object.entries(mpesaData.transactionTypes).map(
+      ([key, value]) => {
+        const f = calculateFee(adjustedAmountToSend, key as TransactionType);
+        return { key: key as TransactionType, label: value.label, fee: f };
+      }
+    );
+
+    return {
+      amountToSend: adjustedAmountToSend,
+      agentWithdrawalFee: includeWithdrawal ? actualAgentWithdrawFee : 0,
+      fee,
+      splitTip,
+      totalSenderWalletNeeded,
+      allFees,
+    };
+  }, [amount, txType, includeWithdrawal]);
+
+  const txTypeOptions = Object.entries(mpesaData.transactionTypes).map(
+    ([key, value]) => ({
+      key: key as TransactionType,
+      label: value.label,
+    })
+  );
 
   return (
     <ToolShell tool={tool} faq={faq}>
@@ -89,7 +120,9 @@ export default function MpesaFeeCalculatorPage() {
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-4">
           <div>
             <label className="block text-sm font-medium text-text-secondary mb-2">
-              Transaction Amount (KES)
+              {includeWithdrawal
+                ? "Net Cash Recipient Must Withdraw at Agent (KES)"
+                : "Transaction Amount (KES)"}
             </label>
             <input
               type="number"
@@ -101,6 +134,35 @@ export default function MpesaFeeCalculatorPage() {
               id="mpesa-amount-input"
             />
           </div>
+
+          <div className="flex flex-wrap gap-2">
+            {[500, 1000, 2500, 5000, 10000, 20000, 50000].map((preset) => (
+              <button
+                key={preset}
+                onClick={() => setAmount(preset)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
+                  amount === preset
+                    ? "bg-gold text-kenya-black border-gold"
+                    : "bg-bg-elevated border-border text-text-secondary hover:border-gold/50"
+                }`}
+              >
+                KES {preset.toLocaleString()}
+              </button>
+            ))}
+          </div>
+
+          {/* Tuma na ya Kutoa Toggle */}
+          <label className="flex items-center gap-2.5 p-3 rounded-xl bg-gold/10 border border-gold/30 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={includeWithdrawal}
+              onChange={(e) => setIncludeWithdrawal(e.target.checked)}
+              className="rounded accent-gold"
+            />
+            <span className="text-xs sm:text-sm font-semibold text-text-primary">
+              Include &ldquo;Ya Kutoa&rdquo; (Add M-Pesa Agent Withdrawal Fee so recipient withdraws exact KES {amount.toLocaleString()})
+            </span>
+          </label>
 
           <div>
             <label className="block text-sm font-medium text-text-secondary mb-2">
@@ -123,34 +185,51 @@ export default function MpesaFeeCalculatorPage() {
 
         {/* Result */}
         <div className="result-box">
-          <div className="grid grid-cols-3 gap-4 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
             <div>
-              <p className="text-xs text-text-muted mb-1">Amount</p>
-              <p className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                KES {amount.toLocaleString()}
+              <p className="text-xs text-text-muted mb-1">
+                {includeWithdrawal ? "Amount to Send (+Ya Kutoa)" : "Amount"}
+              </p>
+              <p className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                KES {results.amountToSend.toLocaleString()}
+              </p>
+              {includeWithdrawal && (
+                <p className="text-[0.65rem] text-gold mt-0.5">
+                  Includes KES {results.agentWithdrawalFee} agent withdrawal fee
+                </p>
+              )}
+            </div>
+            <div>
+              <p className="text-xs text-text-muted mb-1">Sending / Tx Fee</p>
+              <p className="text-xl font-bold text-kenya-red-light font-[family-name:var(--font-outfit)]">
+                {results.fee !== null
+                  ? `KES ${results.fee.toLocaleString()}`
+                  : "N/A"}
               </p>
             </div>
             <div>
-              <p className="text-xs text-text-muted mb-1">Fee</p>
-              <p className="text-lg font-bold text-kenya-red-light font-[family-name:var(--font-outfit)]">
-                {results.fee !== null ? `KES ${results.fee.toLocaleString()}` : "N/A"}
+              <p className="text-xs text-text-muted mb-1">
+                Total Needed in Your M-Pesa
               </p>
-            </div>
-            <div>
-              <p className="text-xs text-text-muted mb-1">Total Cost</p>
-              <p className="text-lg font-bold text-kenya-green-light font-[family-name:var(--font-outfit)]">
-                {results.totalCost !== null
-                  ? `KES ${results.totalCost.toLocaleString()}`
+              <p className="text-xl font-bold text-kenya-green-light font-[family-name:var(--font-outfit)]">
+                {results.totalSenderWalletNeeded !== null
+                  ? `KES ${results.totalSenderWalletNeeded.toLocaleString()}`
                   : "N/A"}
               </p>
             </div>
           </div>
         </div>
 
-        {/* Saving Tip */}
-        {results.savingTip && (
+        {/* Smart Split Saving Tip */}
+        {results.splitTip && (
           <div className="bg-gold/10 border border-gold/30 rounded-xl p-4">
-            <div className="flex items-start gap-2"><DynamicIcon emoji="💡" className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" /><p className="text-sm text-gold-light">{results.savingTip}</p></div>
+            <div className="flex items-start gap-2">
+              <DynamicIcon
+                emoji="💡"
+                className="w-4 h-4 text-gold flex-shrink-0 mt-0.5"
+              />
+              <p className="text-sm text-gold-light">{results.splitTip}</p>
+            </div>
           </div>
         )}
 
@@ -158,7 +237,7 @@ export default function MpesaFeeCalculatorPage() {
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              Fee Comparison for KES {amount.toLocaleString()}
+              Fee Comparison for KES {results.amountToSend.toLocaleString()}
             </h3>
           </div>
           <div className="overflow-x-auto">
@@ -176,15 +255,25 @@ export default function MpesaFeeCalculatorPage() {
                     className={item.key === txType ? "bg-gold/5" : ""}
                   >
                     <td
-                      className={`text-text-secondary ${item.key === txType ? "font-semibold text-gold" : ""}`}
+                      className={`text-text-secondary ${
+                        item.key === txType ? "font-semibold text-gold" : ""
+                      }`}
                     >
                       {item.label}
                       {item.key === txType && " ←"}
                     </td>
                     <td className="text-right">
                       {item.fee !== null ? (
-                        <span className={item.fee === 0 ? "text-kenya-green-light font-semibold" : "text-text-primary"}>
-                          {item.fee === 0 ? "FREE" : `KES ${item.fee.toLocaleString()}`}
+                        <span
+                          className={
+                            item.fee === 0
+                              ? "text-kenya-green-light font-semibold"
+                              : "text-text-primary"
+                          }
+                        >
+                          {item.fee === 0
+                            ? "FREE"
+                            : `KES ${item.fee.toLocaleString()}`}
                         </span>
                       ) : (
                         <span className="text-text-muted">N/A</span>
@@ -194,70 +283,6 @@ export default function MpesaFeeCalculatorPage() {
                 ))}
               </tbody>
             </table>
-          </div>
-        </div>
-
-        {/* Full Tariff Reference */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-          <div className="px-5 py-3 border-b border-border bg-bg-elevated">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              Full M-Pesa Tariff — {mpesaData.transactionTypes[txType].label}
-            </h3>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Amount Range</th>
-                  <th className="text-right">Fee</th>
-                </tr>
-              </thead>
-              <tbody>
-                {mpesaData.transactionTypes[txType].bands.map((band, i) => {
-                  const isActive = amount >= band.min && amount <= band.max;
-                  return (
-                    <tr key={i} className={isActive ? "bg-gold/5" : ""}>
-                      <td className={isActive ? "font-semibold text-gold" : "text-text-secondary"}>
-                        KES {band.min.toLocaleString()} – KES {band.max.toLocaleString()}
-                        {isActive && " ← Your amount"}
-                      </td>
-                      <td className={`text-right ${isActive ? "font-semibold text-gold" : ""}`}>
-                        {band.fee === 0 ? (
-                          <span className="text-kenya-green-light">FREE</span>
-                        ) : (
-                          `KES ${band.fee}`
-                        )}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* Transaction Limits */}
-        <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            M-Pesa Transaction Limits
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-            <div>
-              <p className="text-text-muted text-xs">Max Balance</p>
-              <p className="font-semibold text-text-primary">KES {mpesaData.limits.maxBalance.toLocaleString()}</p>
-            </div>
-            <div>
-              <p className="text-text-muted text-xs">Max Per Day</p>
-              <p className="font-semibold text-text-primary">KES {mpesaData.limits.maxTransactionPerDay.toLocaleString()}</p>
-            </div>
-            <div>
-              <p className="text-text-muted text-xs">Max Single Tx</p>
-              <p className="font-semibold text-text-primary">KES {mpesaData.limits.maxSingleTransaction.toLocaleString()}</p>
-            </div>
-            <div>
-              <p className="text-text-muted text-xs">Receive Money</p>
-              <p className="font-semibold text-kenya-green-light">Always FREE</p>
-            </div>
           </div>
         </div>
       </div>

@@ -95,7 +95,7 @@ function ToolItem({
             </View>
             <Text
               style={[styles.title, { color: theme.textPrimary }]}
-              numberOfLines={1}
+              
             >
               {item.shortTitle}
             </Text>
@@ -116,7 +116,7 @@ function ToolItem({
 
         <Text
           style={[styles.description, { color: theme.textSecondary }]}
-          numberOfLines={2}
+          
         >
           {item.description}
         </Text>
@@ -131,7 +131,7 @@ function ToolItem({
           />
           <Text
             style={[styles.source, { color: theme.textMuted }]}
-            numberOfLines={1}
+            
           >
             {item.dataSource}
           </Text>
@@ -146,6 +146,7 @@ export default function ToolsScreen() {
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
   const [category, setCategory] = useState(params.category ?? "all");
+  const [showAllCats, setShowAllCats] = useState(true);
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">(
     "popular"
   );
@@ -280,7 +281,7 @@ export default function ToolsScreen() {
           <TextInput
             value={query}
             onChangeText={setQuery}
-            placeholder="Search tools — e.g. 'PAYE', 'matatu', 'CBC', 'M-Pesa'..."
+            placeholder="Search tools (PAYE, M-Pesa, KRA, CBC)..."
             placeholderTextColor={theme.textMuted}
             style={[styles.searchInput, { color: theme.textPrimary }]}
             autoCorrect={false}
@@ -296,17 +297,35 @@ export default function ToolsScreen() {
           )}
         </View>
 
-        {/* Material 3 Filter Chips with Tool Counts (mirrors web tools/page.tsx) */}
-        <FlatList
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          data={categories}
-          keyExtractor={(item) => item.id}
-          contentContainerStyle={styles.chips}
-          renderItem={({ item }) => {
+        {/* Multi-Row Wrapping Category Grid (No Horizontal Scrolling Required) */}
+        <View style={styles.catHeaderRow}>
+          <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
+            CATEGORY ({categories.find((c) => c.id === category)?.name || "All"})
+          </Text>
+          <Pressable
+            onPress={() => setShowAllCats((v) => !v)}
+            hitSlop={8}
+            style={{ flexDirection: "row", alignItems: "center", gap: 4 }}
+          >
+            <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.gold }}>
+              {showAllCats ? "Compact View" : `Show All (${categories.length})`}
+            </Text>
+            <Ionicons
+              name={showAllCats ? "chevron-up" : "chevron-down"}
+              size={13}
+              color={theme.gold}
+            />
+          </Pressable>
+        </View>
+        <View style={styles.chipsWrapGrid}>
+          {(showAllCats
+            ? categories
+            : categories.filter((c, i) => i < 5 || c.id === category)
+          ).map((item) => {
             const active = item.id === category;
             return (
               <View
+                key={item.id}
                 style={[
                   styles.chipWrap,
                   active
@@ -328,13 +347,13 @@ export default function ToolsScreen() {
                   {active ? (
                     <Ionicons
                       name="checkmark"
-                      size={15}
+                      size={14}
                       color={theme.onPrimaryContainer}
                     />
                   ) : (
                     <DynamicIcon
                       emoji={item.icon}
-                      size={14}
+                      size={13}
                       color={theme.textSecondary}
                     />
                   )}
@@ -353,8 +372,8 @@ export default function ToolsScreen() {
                 </Pressable>
               </View>
             );
-          }}
-        />
+          })}
+        </View>
 
         {/* Material 3 Segmented Sort Row (mirrors web Sort: Most used | A-Z | Category) */}
         <View style={styles.sortRow}>
@@ -522,7 +541,8 @@ const styles = StyleSheet.create({
     borderRadius: 26,
     borderWidth: 1,
     paddingHorizontal: 16,
-    height: 48,
+    minHeight: 48,
+    paddingVertical: 4,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchIcon: {
@@ -532,10 +552,18 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 14,
   },
-  chips: {
-    paddingTop: 12,
+  catHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginTop: 10,
+    marginBottom: 6,
+  },
+  chipsWrapGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 6,
     paddingBottom: 4,
-    gap: 8,
   },
   chipWrap: {
     borderRadius: 8,
@@ -555,8 +583,10 @@ const styles = StyleSheet.create({
   },
   sortRow: {
     flexDirection: "row",
+    flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "space-between",
+    gap: 8,
     marginTop: 10,
   },
   sortLabel: {

@@ -74,13 +74,13 @@ function SavedToolCard({
           </View>
           <Text
             style={[styles.title, { color: theme.textPrimary }]}
-            numberOfLines={1}
+            
           >
             {tool.shortTitle}
           </Text>
           <Text
             style={[styles.description, { color: theme.textSecondary }]}
-            numberOfLines={1}
+            
           >
             {tool.description}
           </Text>
@@ -256,7 +256,7 @@ export default function SavedScreen() {
                           styles.suggestDesc,
                           { color: theme.textMuted },
                         ]}
-                        numberOfLines={1}
+                        
                       >
                         {item.description}
                       </Text>

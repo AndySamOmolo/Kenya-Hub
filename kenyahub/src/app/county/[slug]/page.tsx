@@ -219,7 +219,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        <span className="text-text-secondary truncate">{county.name} County (#{codeStr})</span>
+        <span className="text-text-secondary break-words">{county.name} County (#{codeStr})</span>
       </nav>
 
       {/* Header */}
@@ -318,7 +318,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="📊" className="w-5 h-5 text-gold" /> FY {(budgetsData as any).fiscalYear || "2025/26"} Budget &amp; Fiscal Performance
             </h2>
-            <Link href="/tools/county-budget-tracker" className="text-xs font-semibold text-gold hover:underline">
+            <Link href="/county" className="text-xs font-semibold text-gold hover:underline">
               Compare All 47 Budgets →
             </Link>
           </div>
@@ -549,7 +549,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
               {countyPostalCodes.map((p: any, idx: number) => (
                 <div key={idx} className="p-2.5 rounded-lg bg-bg-elevated/60 border border-border/60">
                   <span className="font-mono text-xs font-bold text-gold block">{p.code}</span>
-                  <span className="text-xs text-text-primary truncate block">{p.town}</span>
+                  <span className="text-xs text-text-primary break-words block">{p.town}</span>
                 </div>
               ))}
             </div>
@@ -702,8 +702,8 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
                 <span className="text-xs font-mono text-gold font-bold">
                   #{String(oc.code).padStart(3, "0")}
                 </span>
-                <p className="text-xs font-semibold text-text-primary truncate">{oc.name} County</p>
-                <p className="text-[0.65rem] text-text-muted truncate">HQ: {oc.capital}</p>
+                <p className="text-xs font-semibold text-text-primary break-words">{oc.name} County</p>
+                <p className="text-[0.65rem] text-text-muted break-words">HQ: {oc.capital}</p>
               </Link>
             ))}
           </div>

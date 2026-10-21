@@ -103,19 +103,19 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
               <p className="text-[0.65rem] text-text-muted">Start Terminus</p>
-              <p className="text-xs font-bold text-kenya-green-light mt-1 truncate">{route.terminusA}</p>
+              <p className="text-xs font-bold text-kenya-green-light mt-1 break-words">{route.terminusA}</p>
             </div>
             <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
               <p className="text-[0.65rem] text-text-muted">Destination</p>
-              <p className="text-xs font-bold text-kenya-red-light mt-1 truncate">{route.terminusB}</p>
+              <p className="text-xs font-bold text-kenya-red-light mt-1 break-words">{route.terminusB}</p>
             </div>
             <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
               <p className="text-[0.65rem] text-text-muted">Operator SACCO</p>
-              <p className="text-xs font-bold text-gold mt-1 truncate">{route.saccoName}</p>
+              <p className="text-xs font-bold text-gold mt-1 break-words">{route.saccoName}</p>
             </div>
             <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
               <p className="text-[0.65rem] text-text-muted">Operating Hours</p>
-              <p className="text-xs font-bold text-text-primary mt-1 truncate">{route.operatingHours}</p>
+              <p className="text-xs font-bold text-text-primary mt-1 break-words">{route.operatingHours}</p>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                   <span className="text-xs font-bold text-gold bg-gold/10 px-2 py-0.5 rounded">
                     R{r.routeNumber}
                   </span>
-                  <span className="text-xs font-semibold text-text-primary group-hover:text-gold transition-colors truncate">
+                  <span className="text-xs font-semibold text-text-primary group-hover:text-gold transition-colors break-words">
                     {r.name}
                   </span>
                 </div>

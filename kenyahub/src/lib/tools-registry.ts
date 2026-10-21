@@ -1,27 +1,27 @@
 import { ToolCategory, Tool } from './types';
 
 export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; description: string; badgeClass: string }[] = [
-  { id: 'finance-tax', name: 'Finance & Tax', icon: '💰', description: 'PAYE salary calculator, M-Pesa fees, HELB, stamp duty & insurance', badgeClass: 'badge-finance' },
+  { id: 'finance-tax', name: 'Finance, Tax & SACCOs', icon: '💰', description: 'PAYE reverse salary calculator, M-Pesa (+Ya Kutoa), SACCO loans, HELB & stamp duty', badgeClass: 'badge-finance' },
   { id: 'education-cbc', name: 'Education & CBC', icon: '🎓', description: 'CBC curriculum & grade-age, KUCCPS clusters, KCSE grades & rankings', badgeClass: 'badge-education' },
-  { id: 'transport-travel', name: 'Transport & Travel', icon: '🚌', description: 'Matatu routes, number plates, driving licenses, NTSA fines & parks', badgeClass: 'badge-transport' },
+  { id: 'transport-travel', name: 'Transport, Cars & Travel', icon: '🚗', description: 'KRA CRSP car import duty calculator, number plates, driving licenses, NTSA fines & parks', badgeClass: 'badge-transport' },
   { id: 'agriculture-environment', name: 'Agriculture & Climate', icon: '🌾', description: 'Crop calendars, soil types, county rainfall, fertilizer & livestock prices', badgeClass: 'badge-agriculture' },
-  { id: 'data-reference', name: 'Counties, Postal & Telecom', icon: '📍', description: '47 county budgets, constituencies, postal codes & mobile prefixes', badgeClass: 'badge-reference' },
-  { id: 'language-learning', name: 'Languages & Culture', icon: '🗣️', description: 'Interactive courses, 13-language translator, Kikuyu proverbs & dialects', badgeClass: 'badge-reference' },
-  { id: 'business-investment', name: 'Business & Economy', icon: '📊', description: 'KIPI trademark fees, EARB agents, professional bodies & economic calendar', badgeClass: 'badge-business' },
+  { id: 'data-reference', name: 'Counties, Postal & Telecom', icon: '📍', description: 'Constituencies, postal codes & mobile network prefixes', badgeClass: 'badge-reference' },
+  { id: 'language-learning', name: 'Languages, Proverbs & Culture', icon: '🗣️', description: 'Interactive courses, 13-language translator, 1,600+ Gĩkũyũ & Dholuo proverbs/riddles & dialects', badgeClass: 'badge-reference' },
+  { id: 'business-investment', name: 'Business, Mjengo & Economy', icon: '🏗️', description: 'Kenya Mjengo construction calculator, KIPI trademark fees, EARB agents & economic calendar', badgeClass: 'badge-business' },
   { id: 'government-legal', name: 'Government & Legal', icon: '🏛️', description: 'Public holidays, passport & ID fees, and KRA customs regulations', badgeClass: 'badge-government' },
   { id: 'health-wellness', name: 'Health & Nutrition', icon: '🏥', description: 'SHA / SHIF hospitals, child KEPI vaccination tracker & Kenyan food nutrition', badgeClass: 'badge-health' },
   { id: 'utilities-energy', name: 'Utilities & Energy', icon: '⚡', description: 'KPLC token calculator, county water bill estimator & solar ROI', badgeClass: 'badge-utilities' },
 ];
 
 export const TOOLS: Tool[] = [
-  // ── 1. Finance & Tax (6 tools) ──
+  // ── 1. Finance, Tax & SACCOs (6 tools) ──
   {
     slug: 'paye-calculator',
-    title: 'Kenya PAYE Salary Calculator 2026 (With SHA, NSSF & Housing Levy)',
-    shortTitle: 'PAYE Calculator',
-    description: 'Calculate your 2026 net salary after KRA PAYE tax, SHA (2.75%), NSSF Tier I & II (Year 4), and Affordable Housing Levy (1.5%) deductions with an itemized payslip breakdown.',
+    title: 'Kenya PAYE Salary Calculator 2026 (Gross ↔ Net, SHA, NSSF, Housing Levy & Pension)',
+    shortTitle: 'PAYE & Net-to-Gross',
+    description: 'Calculate 2026 net salary or reverse-negotiate gross salary from target net pay after KRA PAYE, SHA (2.75%), NSSF Year 4, Housing Levy (1.5%), pension & mortgage relief.',
     category: 'finance-tax',
-    keywords: ['PAYE calculator Kenya 2026', 'net salary Kenya', 'Kenya salary after tax', 'KRA tax calculator', 'SHA NSSF housing levy calculator'],
+    keywords: ['PAYE calculator Kenya 2026', 'net to gross calculator Kenya', 'Kenya salary after tax', 'KRA tax calculator', 'SHA NSSF housing levy calculator'],
     updateFrequency: 'annual',
     dataSource: 'Kenya Revenue Authority (KRA)',
     isLive: true,
@@ -29,15 +29,27 @@ export const TOOLS: Tool[] = [
   },
   {
     slug: 'mpesa-fee-calculator',
-    title: 'M-Pesa Transaction Fee Calculator 2026 — Send, Withdraw & PayBill',
-    shortTitle: 'M-Pesa Fees',
-    description: 'Calculate exact 2026 M-Pesa charges for Send Money, Agent Withdrawal, ATM, PayBill, Buy Goods, and Pochi la Biashara. Includes smart fee-splitting analysis.',
+    title: 'M-Pesa Transaction Fee & "Tuma na ya Kutoa" Calculator 2026',
+    shortTitle: 'M-Pesa (+Ya Kutoa)',
+    description: 'Calculate exact 2026 M-Pesa charges for Send Money, Agent Withdrawal, PayBill, and Buy Goods — with built-in "Tuma na ya Kutoa" withdrawal adder and smart split savings.',
     category: 'finance-tax',
-    keywords: ['mpesa charges calculator 2026', 'mpesa tariff Kenya', 'how much does mpesa charge', 'safaricom mpesa withdrawal charges'],
+    keywords: ['mpesa charges calculator 2026', 'tuma na ya kutoa calculator', 'mpesa tariff Kenya', 'safaricom mpesa withdrawal charges'],
     updateFrequency: 'annual',
     dataSource: 'Safaricom M-Pesa Tariff Schedule',
     isLive: true,
     icon: '📱',
+  },
+  {
+    slug: 'sacco-chama-calculator',
+    title: 'Kenya SACCO Loan (3x/4x Multiplier), Dividend & Chama Calculator',
+    shortTitle: 'SACCO & Chama Loans',
+    description: 'Calculate your 3x/4x BOSA deposit loan limit, 12% reducing-balance monthly repayments vs bank loans, net annual dividends after 5% WHT, and SASRA Tier-1 SACCO benchmarks.',
+    category: 'finance-tax',
+    keywords: ['SACCO loan calculator Kenya', 'Stima Mwalimu Police SACCO dividends', '12% reducing balance SACCO loan', 'Chama table banking calculator Kenya'],
+    updateFrequency: 'annual',
+    dataSource: 'SACCO Societies Regulatory Authority (SASRA)',
+    isLive: true,
+    icon: '🏦',
   },
   {
     slug: 'helb-calculator',
@@ -50,18 +62,6 @@ export const TOOLS: Tool[] = [
     dataSource: 'HELB Act & Higher Education Loans Board (helb.co.ke)',
     isLive: true,
     icon: '🎓',
-  },
-  {
-    slug: 'housing-levy-calculator',
-    title: 'Kenya Affordable Housing Levy (AHL) & Tax Relief Calculator',
-    shortTitle: 'Housing Levy',
-    description: 'Calculate the 1.5% Affordable Housing Levy deduction, employer match, and 15% pre-tax PAYE relief impact on your monthly and annual take-home pay.',
-    category: 'finance-tax',
-    keywords: ['affordable housing levy Kenya', '1.5% housing levy calculator', 'AHL Kenya tax relief', 'housing levy impact on salary'],
-    updateFrequency: 'annual',
-    dataSource: 'Affordable Housing Act 2024 & KRA',
-    isLive: true,
-    icon: '🏗️',
   },
   {
     slug: 'stamp-duty-calculator',
@@ -162,18 +162,18 @@ export const TOOLS: Tool[] = [
     icon: '🏫',
   },
 
-  // ── 3. Transport & Travel (5 tools) ──
+  // ── 3. Transport, Cars & Travel (5 tools) ──
   {
-    slug: 'matatu-routes',
-    title: 'Kenya Matatu Routes, Stages & Fares Explorer',
-    shortTitle: 'Matatu Routes',
-    description: 'Interactive matatu route finder across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika. Search by stage, route number, SACCO operator, and peak/off-peak fares.',
+    slug: 'kra-car-import-calculator',
+    title: 'KRA Car Import Duty & CRSP Calculator 2026 (Mombasa Port Clearing)',
+    shortTitle: 'Car Import Duty (CRSP)',
+    description: 'Calculate exact KRA motor vehicle import taxes from the official CRSP schedule — including up to 65% age depreciation (KEBS 8-year rule), Import Duty (35%), Excise, VAT (16%), IDF, RDL, and NTSA registration.',
     category: 'transport-travel',
-    keywords: ['matatu routes Nairobi', 'matatu fare Nairobi', 'matatu stages', 'Nairobi public transport map'],
-    updateFrequency: 'periodic',
-    dataSource: 'Commuter Reports & NTSA Licensed SACCOs',
+    keywords: ['KRA car import duty calculator 2026', 'CRSP calculator Kenya', 'cost of importing a car from Japan to Kenya', 'KEBS 8 year rule Kenya'],
+    updateFrequency: 'annual',
+    dataSource: 'Kenya Revenue Authority (KRA CRSP) & KEBS',
     isLive: true,
-    icon: '🚌',
+    icon: '🚢',
   },
   {
     slug: 'number-plate-decoder',
@@ -310,7 +310,7 @@ export const TOOLS: Tool[] = [
     icon: '🌲',
   },
 
-  // ── 5. Counties, Postal & Telecom Reference (4 tools) ──
+  // ── 5. Counties, Postal & Telecom Reference (3 tools) ──
   {
     slug: 'ward-constituency-finder',
     title: 'Kenya Counties, Constituencies & Elected Leaders Finder',
@@ -322,18 +322,6 @@ export const TOOLS: Tool[] = [
     dataSource: 'IEBC & Council of Governors',
     isLive: true,
     icon: '🗳️',
-  },
-  {
-    slug: 'county-budget-tracker',
-    title: 'Kenya County Budget & Absorption Rate Tracker (FY 2025/26)',
-    shortTitle: 'County Budgets',
-    description: 'Track how all 47 county governments raise and spend public funds. Compare Equitable Share allocations, Own-Source Revenue (OSR), actual expenditure, and absorption rates.',
-    category: 'data-reference',
-    keywords: ['county government budget Kenya', 'Nairobi county budget', 'Controller of Budget report Kenya', 'county absorption rate Kenya'],
-    updateFrequency: 'annual',
-    dataSource: 'Office of the Controller of Budget (cob.go.ke)',
-    isLive: true,
-    icon: '📊',
   },
   {
     slug: 'kenya-postal-codes',
@@ -360,16 +348,16 @@ export const TOOLS: Tool[] = [
     icon: '📞',
   },
 
-  // ── 6. Languages & Culture (4 tools) ──
+  // ── 6. Languages, Proverbs & Culture (3 tools) ──
   {
     slug: 'learn',
-    title: 'Learn Kenyan Languages — Interactive Courses & Lessons',
-    shortTitle: 'Learn Languages',
-    description: 'Master Kenyan languages through interactive lessons with vocabulary, grammar notes, exercises, XP, and streaks — featuring Swahili, Kikuyu, Dholuo, Ekegusii, Luhya, Kalenjin, and Turkana.',
+    title: 'Learn Kenyan Languages, Proverbs & Oral Wisdom Hub',
+    shortTitle: 'Learn & Proverbs Hub',
+    description: 'Master Kenyan languages through guided lessons (with optional Unlock All), grammar guides, 989 Gĩkũyũ Proverbs (Thimo cia Gĩkũyũ), and 600+ Dholuo Proverbs, Riddles & Tongue Twisters.',
     category: 'language-learning',
-    keywords: ['learn Kenyan languages', 'Kikuyu lessons', 'Dholuo course', 'Ekegusii course', 'Swahili course', 'Luhya Kalenjin lessons'],
+    keywords: ['learn Kenyan languages', 'Kikuyu proverbs Thimo cia Gikuyu', 'Dholuo proverbs and riddles', 'Kikuyu Luo Luhya Kamba Kisii Maasai Teso Turkana lessons'],
     updateFrequency: 'periodic',
-    dataSource: 'Linguistic references, community curriculum & authentic texts',
+    dataSource: 'Linguistic references, Fr. G. Barra Proverbs & community curriculum',
     isLive: true,
     icon: '🗣️',
   },
@@ -386,18 +374,6 @@ export const TOOLS: Tool[] = [
     icon: '🌍',
   },
   {
-    slug: 'kikuyu-proverbs',
-    title: '1,000 Kikuyu Proverbs (Thimo cia Gĩkũyũ) — Meanings & Cultural Guide',
-    shortTitle: 'Kikuyu Proverbs',
-    description: 'Explore 989 authentic Agĩkũyũ proverbs (Thimo cia Gĩkũyũ) collected by Fr. C. Barra. Search with diacritic tolerance, filter by 7 life themes, and read cultural explanations.',
-    category: 'language-learning',
-    keywords: ['Kikuyu proverbs', 'Thimo cia Gikuyu', 'Gikuyu proverbs with meaning', 'C Barra Kikuyu proverbs', 'Kenyan proverbs'],
-    updateFrequency: 'static',
-    dataSource: '1,000 Kikuyu Proverbs by Fr. C. Barra (Consolata Mission)',
-    isLive: true,
-    icon: '📜',
-  },
-  {
     slug: 'kenya-languages',
     title: 'Kenya Languages & Dialects Guide — 42+ Communities',
     shortTitle: 'Languages Guide',
@@ -410,7 +386,19 @@ export const TOOLS: Tool[] = [
     icon: '🏺',
   },
 
-  // ── 7. Business & Economy (4 tools) ──
+  // ── 7. Business, Mjengo & Economy (5 tools) ──
+  {
+    slug: 'mjengo-construction-calculator',
+    title: 'Kenya Mjengo (House Construction) Material & BoQ Cost Calculator 2026',
+    shortTitle: 'Mjengo Cost Calculator',
+    description: 'Estimate exact quantities of machine-cut stones (mawe), 50kg cement bags, river sand, ballast, Y12/Y16 steel bars, mabati roofing sheets, and BORAQS regional building costs per m².',
+    category: 'business-investment',
+    keywords: ['cost of building a 3 bedroom house in Kenya 2026', 'mjengo calculator Kenya', 'how many stones to build a 3 bedroom house', 'BORAQS construction cost per square metre Kenya'],
+    updateFrequency: 'annual',
+    dataSource: 'BORAQS & National Construction Authority (NCA)',
+    isLive: true,
+    icon: '🧱',
+  },
   {
     slug: 'trademark-cost-kenya',
     title: 'Kenya Trademark, Patent & Copyright Registration Cost Calculator (KIPI)',
@@ -580,18 +568,20 @@ export function getToolsByCategory(category: ToolCategory): Tool[] {
 }
 
 const TOOL_USAGE_SCORES: Record<string, number> = {
-  // Financial tools — most used across Kenya
+  // Financial & high-demand Kenyan calculators
   'mpesa-fee-calculator': 100,
   'paye-calculator': 98,
+  'kra-car-import-calculator': 97,
   'kplc-token-calculator': 96,
+  'mjengo-construction-calculator': 95,
+  'sacco-chama-calculator': 92,
   'helb-calculator': 90,
-  'housing-levy-calculator': 72,
   'stamp-duty-calculator': 65,
   'vehicle-insurance-calculator': 60,
   'solar-roi-calculator': 48,
   'water-bill-calculator': 55,
 
-  // Education — surges during exam/admission season
+  // Education
   'kcse-grade-calculator': 94,
   'kuccps-cluster-calculator': 93,
   'kcse-school-rankings': 91,
@@ -606,17 +596,12 @@ const TOOL_USAGE_SCORES: Record<string, number> = {
   'passport-id-fees': 74,
   'driving-license-guide': 70,
   'ward-constituency-finder': 58,
-  'county-budget-tracker': 50,
   'kenya-customs-restricted-items': 45,
-
-  // Transport
-  'matatu-routes': 86,
   'national-parks-directory': 47,
 
   // Language & culture
-  'kenyan-translator': 80,
-  'learn': 79,
-  'kikuyu-proverbs': 62,
+  'learn': 89,
+  'kenyan-translator': 84,
   'kenya-languages': 56,
 
   // Data & reference

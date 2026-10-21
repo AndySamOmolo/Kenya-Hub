@@ -130,7 +130,7 @@ function ToolsContent() {
                     </span>
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center justify-between mb-1">
-                        <h3 className="text-sm font-semibold text-text-primary group-hover:text-gold transition-colors truncate">
+                        <h3 className="text-sm font-semibold text-text-primary group-hover:text-gold transition-colors break-words">
                           {tool.shortTitle}
                         </h3>
                       </div>
@@ -193,7 +193,7 @@ function ToolsContent() {
 
       {/* Category Tabs — horizontal scroll on mobile */}
       <div className="-mx-4 px-4 sm:mx-0 sm:px-0 mb-8">
-        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide sm:flex-wrap sm:overflow-visible sm:pb-0">
+        <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSelectedCategory("all")}
             className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
