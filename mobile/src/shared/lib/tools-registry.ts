@@ -653,3 +653,7 @@ export function getRelatedTools(slug: string, count: number = 4): Tool[] {
 export function getCategoryInfo(category: ToolCategory) {
   return TOOL_CATEGORIES.find(c => c.id === category);
 }
+
+export function getToolBySlug(slug: string): Tool | undefined {
+  return TOOLS.find((t) => t.slug === slug);
+}

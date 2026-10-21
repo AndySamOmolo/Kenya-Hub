@@ -2,10 +2,10 @@
 
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
-import { getToolBySlug } from "@/lib/tools-registry";
+import { TOOLS } from "@/lib/tools-registry";
 import saccoData from "@/data/sacco-chama-rates.json";
 
-const tool = getToolBySlug("sacco-chama-calculator")!;
+const tool = TOOLS.find((t) => t.slug === "sacco-chama-calculator")!;
 
 function formatKES(n: number): string {
   return Math.round(n).toLocaleString("en-KE");

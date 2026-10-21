@@ -2,10 +2,10 @@
 
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
-import { getToolBySlug } from "@/lib/tools-registry";
+import { TOOLS } from "@/lib/tools-registry";
 import mjengoData from "@/data/mjengo-construction-rates.json";
 
-const tool = getToolBySlug("mjengo-construction-calculator")!;
+const tool = TOOLS.find((t) => t.slug === "mjengo-construction-calculator")!;
 
 function formatKES(n: number): string {
   return Math.round(n).toLocaleString("en-KE");

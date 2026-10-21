@@ -3,7 +3,8 @@ import { TOOLS } from "./tools-registry";
 
 const BASE_URL = "https://kenyahub.me";
 
-export function generateToolMetadata(slug: string): Metadata {
+export function generateToolMetadata(slugOrTool: string | { slug: string }): Metadata {
+  const slug = typeof slugOrTool === "string" ? slugOrTool : slugOrTool.slug;
   const tool = TOOLS.find((t) => t.slug === slug);
 
   if (!tool) {

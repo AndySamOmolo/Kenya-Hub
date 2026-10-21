@@ -1,8 +1,7 @@
+import type { Metadata } from "next";
 import { generateToolMetadata } from "@/lib/seo";
-import { getToolBySlug } from "@/lib/tools-registry";
 
-const tool = getToolBySlug("mjengo-construction-calculator")!;
-export const metadata = generateToolMetadata(tool);
+export const metadata: Metadata = generateToolMetadata("mjengo-construction-calculator");
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return children;

@@ -2,10 +2,10 @@
 
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
-import { getToolBySlug } from "@/lib/tools-registry";
+import { TOOLS } from "@/lib/tools-registry";
 import crspData from "@/data/kra-car-import-crsp.json";
 
-const tool = getToolBySlug("kra-car-import-calculator")!;
+const tool = TOOLS.find((t) => t.slug === "kra-car-import-calculator")!;
 
 function formatKES(n: number): string {
   return Math.round(n).toLocaleString("en-KE");
