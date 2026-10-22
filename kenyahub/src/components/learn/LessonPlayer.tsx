@@ -56,8 +56,26 @@ export default function LessonPlayer({
   reviewOnly = false,
 }: LessonPlayerProps) {
   /* ─── State ────────────────────────────────────── */
-  const [exercises, setExercises] = useState<Exercise[]>([]);
-  const [isLoadingExercises, setIsLoadingExercises] = useState(true);
+  const buildLessonExercises = useCallback(() => {
+    const reviewExercises: Exercise[] = reviewItems.map((item) => ({
+      type: item.type || "translate_to_english",
+      prompt: item.prompt,
+      correctAnswer: item.answer,
+      acceptedAnswers: item.acceptedAnswers,
+      hint: item.hint,
+      reviewId: item.id,
+    }));
+    return [
+      ...reviewExercises.slice(0, EXERCISES_PER_LESSON),
+      ...generateExercises(
+        skill,
+        reviewOnly ? 0 : Math.max(0, EXERCISES_PER_LESSON - reviewExercises.length)
+      ),
+    ];
+  }, [reviewItems, reviewOnly, skill]);
+
+  const [exercises, setExercises] = useState<Exercise[]>(() => buildLessonExercises());
+  const [isLoadingExercises, setIsLoadingExercises] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hearts, setHearts] = useState(progress.hearts);
   const [xpEarned, setXpEarned] = useState(0);
@@ -93,33 +111,38 @@ export default function LessonPlayer({
   const [teachingIndex, setTeachingIndex] = useState(0);
 
   const inputRef = useRef<HTMLInputElement>(null);
+  const playerTopRef = useRef<HTMLDivElement>(null);
+
+  const forceScrollTop = useCallback(() => {
+    if (typeof window === "undefined") return;
+    const prevBehavior = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      document.documentElement.style.scrollBehavior = prevBehavior;
+    }, 60);
+  }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
-    }
-  }, [lessonStage, teachingIndex, currentIndex, lessonComplete]);
+    forceScrollTop();
+  }, [lessonStage, teachingIndex, currentIndex, lessonComplete, forceScrollTop]);
 
-  /* ─── Initialize exercises ─────────────────────── */
+  /* ─── Re-initialize exercises if skill changes ─── */
   useEffect(() => {
-    const reviewExercises: Exercise[] = reviewItems.map((item) => ({
-      type: item.type || "translate_to_english",
-      prompt: item.prompt,
-      correctAnswer: item.answer,
-      acceptedAnswers: item.acceptedAnswers,
-      hint: item.hint,
-      reviewId: item.id,
-    }));
-    const exs = [
-      ...reviewExercises.slice(0, EXERCISES_PER_LESSON),
-      ...generateExercises(
-        skill,
-        reviewOnly ? 0 : Math.max(0, EXERCISES_PER_LESSON - reviewExercises.length)
-      ),
-    ];
-    setExercises(exs);
+    setExercises(buildLessonExercises());
     setIsLoadingExercises(false);
-  }, [reviewItems, reviewOnly, skill]);
+    forceScrollTop();
+  }, [buildLessonExercises, forceScrollTop]);
 
   const exercise = exercises[currentIndex];
   const teachingCard = skill.words[teachingIndex];
@@ -422,7 +445,7 @@ export default function LessonPlayer({
         exercise.type === "listen_type") &&
       !isChecked
     ) {
-      setTimeout(() => inputRef.current?.focus(), 100);
+      setTimeout(() => inputRef.current?.focus({ preventScroll: true }), 100);
     }
   }, [exercise, isChecked]);
 

@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import {
   View,
   Text,
@@ -8,10 +8,12 @@ import {
   ScrollView,
   TextInput,
   Platform,
+  Modal,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather } from '@expo/vector-icons';
-import { useTheme, androidRipple } from '../theme';
+import { useTheme, androidRipple, KenyaStripe } from '../theme';
 import { PUBLISHED_COURSES, getCourse } from '../shared/data/courses/registry';
 import { getSourcesForLanguage } from '../shared/data/language-sources';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
@@ -459,9 +461,15 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
     [setupExerciseState, onScrollToTop]
   );
 
+  const lessonScrollRef = useRef<ScrollView>(null);
+
   // Scroll to top whenever lessonStage, card index, exercise index, tab, or game changes
   useEffect(() => {
     onScrollToTop?.();
+    lessonScrollRef.current?.scrollTo({ y: 0, animated: false });
+    requestAnimationFrame(() => {
+      lessonScrollRef.current?.scrollTo({ y: 0, animated: false });
+    });
   }, [lessonStage, learnCardIdx, exIndex, activeTab, selectedLangId, activeGame, onScrollToTop]);
 
   // ── Submit Current Exercise Answer ──
@@ -784,8 +792,21 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
         : 1;
 
     return (
-      <View style={[styles.lessonContainer, { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant }]}>
-        {/* Top Lesson Bar */}
+      <Modal
+        visible={true}
+        animationType="fade"
+        onRequestClose={() => setLessonStage('idle')}
+      >
+        <SafeAreaView style={{ flex: 1, backgroundColor: colors.bgPrimary }} edges={['top', 'left', 'right', 'bottom']}>
+          <KenyaStripe />
+          <ScrollView
+            ref={lessonScrollRef}
+            contentContainerStyle={{ padding: 14, paddingBottom: 36 }}
+            showsVerticalScrollIndicator={false}
+            keyboardShouldPersistTaps="handled"
+          >
+            <View style={[styles.lessonContainer, { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant }]}>
+              {/* Top Lesson Bar */}
         <View style={styles.lessonTopBar}>
           <Pressable
             android_ripple={ripple}
@@ -1453,7 +1474,10 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
             </View>
           </View>
         )}
-      </View>
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+      </Modal>
     );
   }
 

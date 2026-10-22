@@ -36,7 +36,6 @@ export default function CustomSelect({
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   
-  // Extract options from children if `options` prop is not provided
   const parsedOptions = React.useMemo(() => {
     if (options) return options;
     const items: Option[] = [];
@@ -86,11 +85,11 @@ export default function CustomSelect({
     setIsOpen(false);
   };
 
-  // Extract layout classes for the wrapper, filtering out input-specific styles
-  const wrapperClasses = className
+  const filteredTokens = className
     .split(" ")
     .filter(
       (c) =>
+        Boolean(c) &&
         ![
           "input-field",
           "select-field",
@@ -106,9 +105,16 @@ export default function CustomSelect({
           "has-leading-icon",
         ].includes(c)
     )
-    .map((c) => (c === "w-auto" ? "w-auto min-w-[9.5rem]" : c))
-    .join(" ");
+    .map((c) => (c === "w-auto" ? "w-auto min-w-[9.5rem]" : c));
 
+  const hasWidthToken = filteredTokens.some(
+    (c) => c.startsWith("w-") || c.includes(":w-") || c.startsWith("min-w-") || c.startsWith("flex-")
+  );
+  if (!hasWidthToken) {
+    filteredTokens.push("w-full");
+  }
+
+  const wrapperClasses = filteredTokens.join(" ");
   const isTextXs = className.includes("text-xs");
   const isCompact = className.includes("py-1.5") || isTextXs;
   const hasLeadingIcon = className.includes("has-leading-icon");

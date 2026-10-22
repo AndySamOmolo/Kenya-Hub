@@ -40,7 +40,18 @@ export default function ExpandablePillRow({
   if (count <= threshold) {
     return (
       <div
-        className={`w-full max-w-full flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 ${className}`}
+        className={`no-scrollbar ${className}`}
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          gap: "8px",
+          width: "100%",
+          maxWidth: "100%",
+          overflowX: "auto",
+          paddingTop: "2px",
+          paddingBottom: "2px",
+        }}
       >
         {children}
       </div>
@@ -49,15 +60,42 @@ export default function ExpandablePillRow({
 
   return (
     <div
-      className={`w-full max-w-full grid grid-cols-[minmax(0,1fr)_auto] ${
-        expanded ? "items-start" : "items-center"
-      } gap-1.5 ${className}`}
+      className={className}
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        alignItems: expanded ? "flex-start" : "center",
+        gap: "8px",
+        width: "100%",
+        maxWidth: "100%",
+        overflow: "hidden",
+      }}
     >
       <div
-        className={
+        className="no-scrollbar"
+        style={
           expanded
-            ? "min-w-0 w-full flex flex-wrap items-center gap-1.5 py-0.5"
-            : "min-w-0 w-full flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5"
+            ? {
+                flex: "1 1 0%",
+                minWidth: 0,
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "6px",
+                paddingTop: "2px",
+                paddingBottom: "2px",
+              }
+            : {
+                flex: "1 1 0%",
+                minWidth: 0,
+                display: "flex",
+                flexWrap: "nowrap",
+                alignItems: "center",
+                gap: "6px",
+                overflowX: "auto",
+                paddingTop: "2px",
+                paddingBottom: "2px",
+              }
         }
       >
         {children}
@@ -70,9 +108,19 @@ export default function ExpandablePillRow({
           expanded ? "Collapse pills" : `Show all ${count} pills vertically`
         }
         title={expanded ? "Collapse to single row" : `Show all (${count})`}
-        className={`shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full border transition-all cursor-pointer shadow-sm ${
+        style={{
+          width: "30px",
+          height: "30px",
+          borderRadius: "9999px",
+          flexShrink: 0,
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: expanded ? "2px" : "0px",
+        }}
+        className={`border transition-all cursor-pointer shadow-sm ${
           expanded
-            ? "border-gold bg-gold/20 text-gold mt-0.5"
+            ? "border-gold bg-gold/20 text-gold"
             : "border-gold/40 bg-bg-card text-gold hover:border-gold hover:bg-gold/10"
         }`}
       >
