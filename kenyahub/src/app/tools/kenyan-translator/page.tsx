@@ -479,26 +479,28 @@ export default function KenyanTranslatorPage() {
           </div>
         )}
 
-        {/* ── View Mode Tabs ── */}
-        <div className="flex gap-1 bg-bg-elevated rounded-xl p-1 border border-border">
+        {/* ── View Mode Tabs (Standalone Horizontal Pills) ── */}
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
           {([
-            { id: "translate" as const, label: "Translate", icon: <Repeat className="w-4 h-4" /> },
-            { id: "compare" as const, label: "Compare", icon: <BarChart className="w-4 h-4" /> },
-            { id: "browse" as const, label: "Browse", icon: <BookOpen className="w-4 h-4" /> },
-          ]).map((mode) => (
-            <button
-              key={mode.id}
-              onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
-              className={`flex-1 px-3 py-2 rounded-lg text-xs font-medium transition-all flex items-center justify-center gap-1.5 ${
-                viewMode === mode.id
-                  ? "bg-gold text-kenya-black shadow-sm"
-                  : "text-text-secondary hover:text-text-primary"
-              }`}
-            >
-              <span>{mode.icon}</span>
-              <span>{mode.label}</span>
-            </button>
-          ))}
+            { id: "translate" as const, label: "Translate" },
+            { id: "compare" as const, label: "Compare" },
+            { id: "browse" as const, label: "Browse" },
+          ]).map((mode) => {
+            const active = viewMode === mode.id;
+            return (
+              <button
+                key={mode.id}
+                onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {mode.label}
+              </button>
+            );
+          })}
         </div>
 
         {/* ═══════════════════════════════════════ */}
@@ -693,40 +695,24 @@ export default function KenyanTranslatorPage() {
               <>
                 <div>
                   <h3 className="text-sm font-bold text-text-primary mb-2.5 font-[family-name:var(--font-outfit)]">Browse by Category</h3>
-                  <div className="sm:hidden mb-2">
-                    <CustomSelect
-                      value={activeCategory || ""}
-                      onValueChange={(val) => setActiveCategory(val || null)}
-                      options={[
-                        { value: "", label: "Select a vocabulary category..." },
-                        ...ALL_CATEGORY_IDS.filter((cat) =>
-                          targetDict.categories.some((c) => c.id === cat.id && c.entries.length > 0)
-                        ).map((cat) => ({
-                          value: cat.id,
-                          label: cat.name,
-                        })),
-                      ]}
-                      className="w-full text-xs"
-                    />
-                  </div>
-                  <div className="hidden sm:flex sm:flex-wrap gap-2">
+                  <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
                     {ALL_CATEGORY_IDS.map((cat) => {
                       const hasEntries = targetDict.categories.some((c) => c.id === cat.id && c.entries.length > 0);
+                      const active = activeCategory === cat.id;
                       return (
                         <button
                           key={cat.id}
-                          onClick={() => setActiveCategory(activeCategory === cat.id ? null : cat.id)}
+                          onClick={() => setActiveCategory(active ? null : cat.id)}
                           disabled={!hasEntries}
-                          className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all flex items-center gap-1.5 ${
-                            activeCategory === cat.id
-                              ? "bg-gold text-kenya-black shadow-sm"
+                          className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                            active
+                              ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                               : hasEntries
-                              ? "bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/30"
-                              : "bg-bg-elevated/50 border border-border/50 text-text-muted/50 cursor-not-allowed"
+                              ? "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                              : "border-border/50 bg-bg-elevated/40 text-text-muted/40 cursor-not-allowed"
                           }`}
                         >
-                          <span><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /></span>
-                          <span>{cat.name}</span>
+                          {cat.name}
                         </button>
                       );
                     })}

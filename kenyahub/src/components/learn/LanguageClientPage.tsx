@@ -2,7 +2,7 @@
 "use client";
 
 import { useCallback, useEffect, useState, useMemo } from "react";
-import { Gamepad2, GraduationCap, HelpCircle, PartyPopper, BookOpen, Layers, Search, ScrollText, ChevronLeft } from "lucide-react";
+import { HelpCircle, PartyPopper, Search, ChevronLeft, Flame } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
 import LessonPlayer from "@/components/learn/LessonPlayer";
@@ -204,47 +204,37 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       tool={LEARN_TOOL}
       breadcrumbSuffix={[{ label: course.config.name }]}
     >
-      {/* Compact Language Switcher: Single-row dropdown on mobile, pills on desktop */}
+      {/* Top Bar: Compact Language Dropdown on Left + XP on Right */}
       {view !== "playing" && (
-        <div className="mb-4">
-          {/* Mobile: Compact 1-row bar with All Languages back link + Course Switcher Dropdown */}
-          <div className="flex sm:hidden items-center justify-between gap-2">
+        <div className="mb-3.5 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
             <Link
               href="/tools/learn"
-              className="inline-flex items-center gap-1 rounded-xl border border-border bg-bg-card px-3 py-2 text-xs font-semibold text-text-secondary hover:text-text-primary shrink-0"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light transition-colors shrink-0"
+              aria-label="All Languages"
+              title="All Languages"
             >
-              <ChevronLeft className="h-3.5 w-3.5" />
-              All Languages
+              <ChevronLeft className="h-4 w-4" />
             </Link>
             <CustomSelect
               value={course.config.id}
               onValueChange={(val) => router.push(`/tools/learn/${val}`)}
               options={PUBLISHED_COURSES.map((c) => ({
                 value: c.config.id,
-                label: `${c.config.name} (${c.config.nativeName})`,
+                label: c.config.name,
               }))}
-              className="flex-1 max-w-[230px] text-xs"
+              className="w-40 sm:w-48 text-xs"
             />
           </div>
 
-          {/* Desktop: Compact pill row */}
-          <div className="hidden sm:flex sm:flex-wrap items-center gap-1.5">
-            {PUBLISHED_COURSES.map((c) => {
-              const active = c.config.id === course.config.id;
-              return (
-                <Link
-                  key={c.config.id}
-                  href={`/tools/learn/${c.config.id}`}
-                  className={`rounded-xl px-3 py-1.5 text-xs font-semibold transition-all border ${
-                    active
-                      ? "bg-gold text-kenya-black border-gold font-bold"
-                      : "bg-bg-card border-border text-text-secondary hover:border-gold hover:text-text-primary"
-                  }`}
-                >
-                  {c.config.name} ({c.config.nativeName})
-                </Link>
-              );
-            })}
+          <div className="flex items-center gap-2 text-xs font-semibold text-text-secondary shrink-0">
+            <span className="text-gold font-bold">{progress.xp} XP</span>
+            {progress.streak > 0 && (
+              <span className="inline-flex items-center gap-1 text-orange-400">
+                <Flame className="h-3.5 w-3.5" />
+                {progress.streak}
+              </span>
+            )}
           </div>
         </div>
       )}
@@ -259,81 +249,33 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         </div>
       )}
 
-      {/* Single-Row Horizontal Navigation Bar (never stacks vertically on mobile) */}
+      {/* Horizontal Scrolling Pill Tabs (No outer container box, clean text pills) */}
       {view !== "playing" && (
-        <div className="mb-5">
-          <div className="flex flex-nowrap items-center justify-between sm:justify-center gap-1 rounded-2xl border border-border bg-bg-card p-1 shadow-sm w-full sm:w-auto sm:mx-auto overflow-x-auto no-scrollbar">
-            <button
-              onClick={() => setView("lessons")}
-              role="tab"
-              aria-selected={view === "lessons"}
-              className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
-                view === "lessons"
-                  ? "bg-gold text-kenya-black shadow-xs font-bold"
-                  : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
-              }`}
-            >
-              <GraduationCap className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-              <span className="sm:hidden">Path</span>
-              <span className="hidden sm:inline">Skill Path</span>
-            </button>
-            <button
-              onClick={() => setView("modules")}
-              role="tab"
-              aria-selected={view === "modules"}
-              className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
-                view === "modules"
-                  ? "bg-gold text-kenya-black shadow-xs font-bold"
-                  : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
-              }`}
-            >
-              <Layers className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-              <span className="sm:hidden">Vocab</span>
-              <span className="hidden sm:inline">All Modules &amp; Vocab</span>
-            </button>
-            <button
-              onClick={() => setView("games")}
-              role="tab"
-              aria-selected={view === "games"}
-              className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
-                view === "games"
-                  ? "bg-gold text-kenya-black shadow-xs font-bold"
-                  : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
-              }`}
-            >
-              <Gamepad2 className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-              <span>Games</span>
-            </button>
-            {hasGrammar && (
+        <div className="mb-5 flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          {[
+            { id: "lessons" as const, label: "Path" },
+            { id: "modules" as const, label: "Vocab" },
+            { id: "games" as const, label: "Games" },
+            ...(hasGrammar ? [{ id: "grammar" as const, label: "Grammar" }] : []),
+            { id: "proverbs" as const, label: "Wisdom" },
+          ].map((tab) => {
+            const active = view === tab.id;
+            return (
               <button
-                onClick={() => setView("grammar")}
+                key={tab.id}
+                onClick={() => setView(tab.id)}
                 role="tab"
-                aria-selected={view === "grammar"}
-                className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
-                  view === "grammar"
-                    ? "bg-gold text-kenya-black shadow-xs font-bold"
-                    : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
+                aria-selected={active}
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
                 }`}
               >
-                <BookOpen className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-                <span>Grammar</span>
+                {tab.label}
               </button>
-            )}
-            <button
-              onClick={() => setView("proverbs")}
-              role="tab"
-              aria-selected={view === "proverbs"}
-              className={`flex-1 sm:flex-initial shrink-0 flex items-center justify-center gap-1.5 rounded-xl px-2 sm:px-3.5 py-2 text-[11px] sm:text-xs font-semibold transition-all whitespace-nowrap ${
-                view === "proverbs"
-                  ? "bg-gold text-kenya-black shadow-xs font-bold"
-                  : "text-text-muted hover:text-text-primary active:bg-bg-elevated"
-              }`}
-            >
-              <ScrollText className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-              <span className="sm:hidden">Wisdom</span>
-              <span className="hidden sm:inline">Proverbs &amp; Wisdom</span>
-            </button>
-          </div>
+            );
+          })}
         </div>
       )}
 

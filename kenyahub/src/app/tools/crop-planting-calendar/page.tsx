@@ -58,20 +58,23 @@ export default function CropPlantingCalendarPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <div>
             <label className="text-xs text-text-muted block mb-2">Select your farming region</label>
-            <div className="sm:hidden">
-              <CustomSelect
-                value={regionFilter}
-                onValueChange={(val) => setRegionFilter(val)}
-                options={cropData.regions.map((r) => ({ value: r.id, label: r.name }))}
-                className="w-full text-xs"
-              />
-            </div>
-            <div className="hidden sm:flex sm:flex-wrap gap-2">
-              {cropData.regions.map((r) => (
-                <button key={r.id} onClick={() => setRegionFilter(r.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${regionFilter === r.id ? "bg-kenya-green text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-kenya-green-light"}`}>
-                  {r.name}
-                </button>
-              ))}
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+              {cropData.regions.map((r) => {
+                const active = regionFilter === r.id;
+                return (
+                  <button
+                    key={r.id}
+                    onClick={() => setRegionFilter(r.id)}
+                    className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                      active
+                        ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                        : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                    }`}
+                  >
+                    {r.name}
+                  </button>
+                );
+              })}
             </div>
           </div>
           {selectedRegion && (

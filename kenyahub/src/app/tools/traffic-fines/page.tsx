@@ -80,42 +80,34 @@ export default function TrafficFinesPage() {
            onClear={() => setSearchQuery("")} />
         </div>
 
-        {/* Category Filter */}
-        <div className="sm:hidden">
-          <CustomSelect
-            value={selectedCategory}
-            onValueChange={(val) => setSelectedCategory(val)}
-            options={[
-              { value: "all", label: "All Offence Categories" },
-              ...finesData.categories.map((cat) => ({ value: cat.id, label: cat.name })),
-            ]}
-            className="w-full text-xs"
-          />
-        </div>
-        <div className="hidden sm:flex sm:flex-wrap gap-2">
+        {/* Category Filter — Horizontal Scrolling Pills */}
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
           <button
             onClick={() => setSelectedCategory("all")}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+            className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
               selectedCategory === "all"
-                ? "bg-gold text-kenya-black"
-                : "bg-bg-card border border-border text-text-secondary hover:text-gold"
+                ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
             }`}
           >
             All Categories
           </button>
-          {finesData.categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
-                selectedCategory === cat.id
-                  ? "bg-gold text-kenya-black"
-                  : "bg-bg-card border border-border text-text-secondary hover:text-gold"
-              }`}
-            >
-              <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name}
-            </button>
-          ))}
+          {finesData.categories.map((cat) => {
+            const active = selectedCategory === cat.id;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id)}
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {cat.name}
+              </button>
+            );
+          })}
         </div>
 
         <p className="text-xs text-text-muted">

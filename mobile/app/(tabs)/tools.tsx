@@ -5,6 +5,7 @@ import {
   FlatList,
   Platform,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -297,98 +298,41 @@ export default function ToolsScreen() {
           )}
         </View>
 
-        {/* Compact 1-Row Category Dropdown Trigger (expands only when tapped) */}
-        <Pressable
-          onPress={() => setShowAllCats((v) => !v)}
-          style={[
-            styles.catHeaderRow,
-            {
-              backgroundColor: theme.surfaceContainer,
-              borderWidth: 1,
-              borderColor: showAllCats ? theme.gold : theme.outlineVariant,
-              borderRadius: 12,
-              paddingHorizontal: 12,
-              paddingVertical: 8,
-            },
-          ]}
+        {/* Horizontal Scrolling Category Pills (Standalone rounded-full pills) */}
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 2 }}
         >
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-            <Ionicons name="apps-outline" size={14} color={theme.gold} />
-            <Text style={{ fontSize: 12, fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
-              Category: {categories.find((c) => c.id === category)?.name || "All"} (
-              {categories.find((c) => c.id === category)?.count ?? TOOLS.length})
-            </Text>
-          </View>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
-            <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.gold }}>
-              {showAllCats ? "Close" : "Change"}
-            </Text>
-            <Ionicons
-              name={showAllCats ? "chevron-up" : "chevron-down"}
-              size={14}
-              color={theme.gold}
-            />
-          </View>
-        </Pressable>
-        {showAllCats && (
-          <View style={styles.chipsWrapGrid}>
-            {categories.map((item) => {
+          {categories.map((item) => {
             const active = item.id === category;
             return (
-              <View
+              <Pressable
                 key={item.id}
-                style={[
-                  styles.chipWrap,
-                  active
-                    ? {
-                        backgroundColor: theme.primaryContainer,
-                        borderColor: theme.gold,
-                      }
-                    : {
-                        backgroundColor: theme.surfaceContainer,
-                        borderColor: theme.outlineVariant,
-                      },
-                ]}
+                android_ripple={androidRipple(theme.rippleColor)}
+                onPress={() => setCategory(item.id)}
+                style={{
+                  paddingHorizontal: 14,
+                  paddingVertical: 7,
+                  borderRadius: 999,
+                  borderWidth: 1,
+                  backgroundColor: active ? `${theme.gold}22` : theme.surfaceContainer,
+                  borderColor: active ? theme.gold : theme.outlineVariant,
+                }}
               >
-                <Pressable
-                  android_ripple={androidRipple(theme.rippleColor)}
-                  onPress={() => {
-                    setCategory(item.id);
-                    setShowAllCats(false);
+                <Text
+                  style={{
+                    fontSize: 12,
+                    fontFamily: active ? "Outfit_700Bold" : "PlusJakartaSans_600SemiBold",
+                    color: active ? theme.gold : theme.textSecondary,
                   }}
-                  style={styles.chip}
                 >
-                  {active ? (
-                    <Ionicons
-                      name="checkmark"
-                      size={14}
-                      color={theme.onPrimaryContainer}
-                    />
-                  ) : (
-                    <DynamicIcon
-                      emoji={item.icon}
-                      size={13}
-                      color={theme.textSecondary}
-                    />
-                  )}
-                  <Text
-                    style={[
-                      styles.chipText,
-                      {
-                        color: active
-                          ? theme.onPrimaryContainer
-                          : theme.textSecondary,
-                      },
-                    ]}
-                  >
-                    {item.name} ({item.count})
-                  </Text>
-                </Pressable>
-              </View>
+                  {item.name} ({item.count})
+                </Text>
+              </Pressable>
             );
           })}
-          </View>
-        )}
+        </ScrollView>
 
         {/* Material 3 Segmented Sort Row (mirrors web Sort: Most used | A-Z | Category) */}
         <View style={styles.sortRow}>

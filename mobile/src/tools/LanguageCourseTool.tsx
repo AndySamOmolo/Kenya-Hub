@@ -1656,23 +1656,22 @@ export default function LanguageCourseTool() {
         </View>
       )}
 
-      {/* 4. Material 3 Segmented Navigation Bar (Learn | Cards | Games | Grammar) */}
-      <View
-        style={[
-          styles.m3SegmentedBar,
-          { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant },
-        ]}
+      {/* 4. Standalone Horizontal Pill Navigation Bar (Path | Vocab | Games | Grammar | Wisdom) */}
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}
       >
         {(
           [
-            { id: 'learn', label: 'Path', icon: 'git-commit' },
-            { id: 'cards', label: 'Cards', icon: 'layers' },
-            { id: 'games', label: 'Games', icon: 'cpu' },
+            { id: 'learn', label: 'Path' },
+            { id: 'cards', label: 'Vocab' },
+            { id: 'games', label: 'Games' },
             ...(grammarSections.length > 0
-              ? [{ id: 'grammar', label: 'Grammar', icon: 'book-open' }]
+              ? [{ id: 'grammar', label: 'Grammar' }]
               : []),
-            { id: 'proverbs', label: 'Wisdom', icon: 'feather' },
-          ] as { id: MainTab; label: string; icon: keyof typeof Feather.glyphMap }[]
+            { id: 'proverbs', label: 'Wisdom' },
+          ] as { id: MainTab; label: string }[]
         ).map((tab) => {
           const active = activeTab === tab.id;
           return (
@@ -1680,21 +1679,20 @@ export default function LanguageCourseTool() {
               key={tab.id}
               android_ripple={ripple}
               onPress={() => setActiveTab(tab.id)}
-              style={[
-                styles.m3SegmentBtn,
-                active && { backgroundColor: `${langColor}26` },
-              ]}
+              style={{
+                paddingHorizontal: 16,
+                paddingVertical: 7,
+                borderRadius: 999,
+                borderWidth: 1,
+                backgroundColor: active ? `${langColor}22` : colors.surfaceContainerLow,
+                borderColor: active ? langColor : colors.outlineVariant,
+              }}
             >
-              <Feather
-                name={tab.icon}
-                size={14}
-                color={active ? langColor : colors.textSecondary}
-              />
               <Text
                 style={{
-                  fontSize: 12,
+                  fontSize: 12.5,
                   fontWeight: active ? '800' : '600',
-                  color: active ? colors.text : colors.textSecondary,
+                  color: active ? langColor : colors.textSecondary,
                 }}
               >
                 {tab.label}
@@ -1702,7 +1700,7 @@ export default function LanguageCourseTool() {
             </Pressable>
           );
         })}
-      </View>
+      </ScrollView>
 
       {/* ========================================================================
           TAB 1: SKILL TREE PATH (UNITS ACCORDION + 5-STAR MASTERY + LESSON LAUNCH)
@@ -2739,67 +2737,64 @@ export default function LanguageCourseTool() {
          ======================================================================== */}
       {activeTab === 'proverbs' && (
         <View style={styles.grammarTabWrap}>
-          {/* Language Switcher for Oral Wisdom */}
-          <View
-            style={[
-              styles.courseInfoCard,
-              { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant },
-            ]}
+          {/* Standalone Horizontal Pill Menu for Wisdom Language & Sub-Tabs */}
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}
           >
-            <Text style={{ fontSize: 14, fontWeight: '800', color: colors.text }}>
-              Kenyan Proverbs, Riddles & Oral Literature
-            </Text>
-            <Text style={{ fontSize: 12, color: colors.textSecondary }}>
-              Explore 989 verified Gĩkũyũ proverbs (Fr. G. Barra, 1939) and 600+ Dholuo proverbs, riddles, and tongue twisters.
-            </Text>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 6 }}>
-              <Pressable
-                onPress={() => {
-                  setWisdomLang('kikuyu');
-                  setProverbCategory('All');
-                  setProverbPage(1);
-                }}
-                style={[
-                  styles.langFilterChip,
-                  {
-                    backgroundColor:
-                      wisdomLang === 'kikuyu' ? 'rgba(16,185,129,0.2)' : colors.surfaceContainerHigh,
-                    borderColor: wisdomLang === 'kikuyu' ? '#10B981' : colors.outlineVariant,
-                  },
-                ]}
-              >
-                <Text style={{ fontSize: 12, fontWeight: '800', color: colors.text }}>
-                  🌿 Gĩkũyũ Proverbs (989)
-                </Text>
-              </Pressable>
-              <Pressable
-                onPress={() => {
-                  setWisdomLang('luo');
-                  setProverbCategory('All');
-                  setProverbPage(1);
-                }}
-                style={[
-                  styles.langFilterChip,
-                  {
-                    backgroundColor:
-                      wisdomLang === 'luo' ? 'rgba(14,165,233,0.2)' : colors.surfaceContainerHigh,
-                    borderColor: wisdomLang === 'luo' ? '#0EA5E9' : colors.outlineVariant,
-                  },
-                ]}
-              >
-                <Text style={{ fontSize: 12, fontWeight: '800', color: colors.text }}>
-                  🌊 Dholuo Wisdom ({luoProverbs.length + luoRiddles.length + luoTongueTwisters.length})
-                </Text>
-              </Pressable>
-            </View>
+            {[
+              { id: 'kikuyu' as const, label: 'Gĩkũyũ (989)' },
+              {
+                id: 'luo' as const,
+                label: `Dholuo (${luoProverbs.length + luoRiddles.length + luoTongueTwisters.length})`,
+              },
+            ].map((item) => {
+              const active = wisdomLang === item.id;
+              return (
+                <Pressable
+                  key={item.id}
+                  onPress={() => {
+                    setWisdomLang(item.id);
+                    setProverbCategory('All');
+                    setProverbPage(1);
+                  }}
+                  style={{
+                    paddingHorizontal: 16,
+                    paddingVertical: 7,
+                    borderRadius: 999,
+                    borderWidth: 1,
+                    backgroundColor: active ? `${langColor}22` : colors.surfaceContainerLow,
+                    borderColor: active ? langColor : colors.outlineVariant,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontSize: 12.5,
+                      fontWeight: active ? '800' : '600',
+                      color: active ? langColor : colors.textSecondary,
+                    }}
+                  >
+                    {item.label}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </ScrollView>
 
-            {wisdomLang === 'luo' && (
-              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 6 }}>
-                {[
-                  { id: 'proverbs' as const, label: `Proverbs (${luoProverbs.length})` },
-                  { id: 'riddles' as const, label: `Riddles (${luoRiddles.length})` },
-                  { id: 'twisters' as const, label: `Tongue Twisters (${luoTongueTwisters.length})` },
-                ].map((sub) => (
+          {wisdomLang === 'luo' && (
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}
+            >
+              {[
+                { id: 'proverbs' as const, label: `Proverbs (${luoProverbs.length})` },
+                { id: 'riddles' as const, label: `Riddles (${luoRiddles.length})` },
+                { id: 'twisters' as const, label: `Twisters (${luoTongueTwisters.length})` },
+              ].map((sub) => {
+                const active = luoSubTab === sub.id;
+                return (
                   <Pressable
                     key={sub.id}
                     onPress={() => {
@@ -2807,27 +2802,28 @@ export default function LanguageCourseTool() {
                       setProverbPage(1);
                     }}
                     style={{
-                      paddingHorizontal: 10,
+                      paddingHorizontal: 14,
                       paddingVertical: 6,
-                      borderRadius: 10,
-                      backgroundColor:
-                        luoSubTab === sub.id ? '#0EA5E9' : colors.surfaceContainerHigh,
+                      borderRadius: 999,
+                      borderWidth: 1,
+                      backgroundColor: active ? 'rgba(14,165,233,0.18)' : colors.surfaceContainerLow,
+                      borderColor: active ? '#0EA5E9' : colors.outlineVariant,
                     }}
                   >
                     <Text
                       style={{
-                        fontSize: 11.5,
-                        fontWeight: '800',
-                        color: luoSubTab === sub.id ? '#000' : colors.textSecondary,
+                        fontSize: 12,
+                        fontWeight: active ? '800' : '600',
+                        color: active ? '#0EA5E9' : colors.textSecondary,
                       }}
                     >
                       {sub.label}
                     </Text>
                   </Pressable>
-                ))}
-              </View>
-            )}
-          </View>
+                );
+              })}
+            </ScrollView>
+          )}
 
           {/* Search Input */}
           <View

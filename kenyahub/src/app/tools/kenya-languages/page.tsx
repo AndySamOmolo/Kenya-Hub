@@ -43,24 +43,33 @@ export default function KenyaLanguagesPage() {
         </div>
         {/* Family filters */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <div className="sm:hidden">
-            <CustomSelect
-              value={familyFilter}
-              onValueChange={(val) => setFamilyFilter(val)}
-              options={[
-                { value: "all", label: "All Language Families" },
-                ...data.families.map((f) => ({ value: f.id, label: f.name })),
-              ]}
-              className="w-full text-xs"
-            />
-          </div>
-          <div className="hidden sm:flex sm:flex-wrap gap-2">
-            <button onClick={() => setFamilyFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${familyFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Families</button>
-            {data.families.map((f) => (
-              <button key={f.id} onClick={() => setFamilyFilter(f.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all flex items-center gap-1.5 ${familyFilter === f.id ? "text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`} style={familyFilter === f.id ? { backgroundColor: f.color } : {}}>
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: f.color }} />{f.name}
-              </button>
-            ))}
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <button
+              onClick={() => setFamilyFilter("all")}
+              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                familyFilter === "all"
+                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                  : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+              }`}
+            >
+              All Families
+            </button>
+            {data.families.map((f) => {
+              const active = familyFilter === f.id;
+              return (
+                <button
+                  key={f.id}
+                  onClick={() => setFamilyFilter(f.id)}
+                  className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                    active
+                      ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                      : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                  }`}
+                >
+                  {f.name}
+                </button>
+              );
+            })}
           </div>
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search languages or counties..." className="input-field text-sm" id="lang-search"  onClear={() => setSearch("")} />
         </div>

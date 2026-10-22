@@ -76,77 +76,6 @@ interface ToolGuideEntry {
   notes?: string[];
 }
 
-interface SuiteConfig {
-  name: string;
-  hubRoute?: "/(tabs)/county" | "/(tabs)/matatu";
-  hubLabel?: string;
-  members: string[];
-}
-
-const CONSOLIDATED_SUITES: SuiteConfig[] = [
-  {
-    name: "47 Counties & Civic Suite",
-    hubRoute: "/(tabs)/county",
-    hubLabel: "🏛️ 47 Counties Hub",
-    members: [
-      "ward-constituency-finder",
-      "kenya-rainfall-patterns",
-      "kenya-postal-codes",
-    ],
-  },
-  {
-    name: "Salary, Tax & Deductions Suite",
-    members: [
-      "paye-calculator",
-      "sacco-chama-calculator",
-      "helb-calculator",
-      "mpesa-fee-calculator",
-    ],
-  },
-  {
-    name: "CBC & School Calendar Suite",
-    members: ["cbc-curriculum", "cbc-grade-age", "school-terms"],
-  },
-  {
-    name: "KCSE & University Placement Suite",
-    members: [
-      "kcse-grade-calculator",
-      "kuccps-cluster-calculator",
-      "kcse-school-rankings",
-    ],
-  },
-  {
-    name: "NTSA Motorist & Transport Suite",
-    hubRoute: "/(tabs)/matatu",
-    hubLabel: "🚌 Matatu Hub",
-    members: [
-      "kra-car-import-calculator",
-      "number-plate-decoder",
-      "driving-license-guide",
-      "traffic-fines",
-      "vehicle-insurance-calculator",
-    ],
-  },
-  {
-    name: "Kenyan Languages & Cultural Suite",
-    members: [
-      "learn",
-      "kenyan-translator",
-      "kenya-languages",
-    ],
-  },
-  {
-    name: "Kenya Farming & Agribusiness Suite",
-    members: [
-      "crop-planting-calendar",
-      "kenya-soil-types",
-      "fertilizer-subsidy-guide",
-      "livestock-market-prices",
-      "agrovet-finder",
-    ],
-  },
-];
-
 export default function ToolDetailScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
@@ -215,10 +144,6 @@ export default function ToolDetailScreen() {
   const faqs = guide.faq || [];
   const notes = guide.notes || [];
   const notesTitle = guide.notesTitle || "Important Notes & About the Data";
-  const activeSuite = CONSOLIDATED_SUITES.find((s) =>
-    s.members.includes(tool.slug)
-  );
-
   const frequencyLabel =
     tool.updateFrequency === "static"
       ? "Verified 2026 Reference"
@@ -436,97 +361,6 @@ export default function ToolDetailScreen() {
                 </Text>
               </View>
             </View>
-
-            {/* Consolidated Suite Quick-Switch Bar */}
-            {activeSuite && (
-              <View
-                style={{
-                  marginTop: 12,
-                  paddingTop: 10,
-                  borderTopWidth: StyleSheet.hairlineWidth,
-                  borderTopColor: theme.outlineVariant,
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: 10,
-                    fontFamily: "Outfit_700Bold",
-                    color: theme.gold,
-                    letterSpacing: 0.8,
-                    marginBottom: 6,
-                  }}
-                >
-                  {activeSuite.name.toUpperCase()}
-                </Text>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-                  {activeSuite.hubRoute && (
-                    <Pressable
-                      onPress={() => router.push(activeSuite.hubRoute as any)}
-                      style={{
-                        paddingHorizontal: 10,
-                        paddingVertical: 5,
-                        borderRadius: 8,
-                        backgroundColor: `${theme.gold}20`,
-                        borderWidth: 1,
-                        borderColor: theme.gold,
-                      }}
-                    >
-                      <Text
-                        style={{
-                          fontSize: 11,
-                          fontWeight: "800",
-                          color: theme.gold,
-                        }}
-                      >
-                        {activeSuite.hubLabel}
-                      </Text>
-                    </Pressable>
-                  )}
-                  {activeSuite.members.map((mSlug) => {
-                    const mTool = TOOLS.find((t) => t.slug === mSlug);
-                    if (!mTool) return null;
-                    const isCurrent = mSlug === tool.slug;
-                    return (
-                      <Pressable
-                        key={mSlug}
-                        onPress={() => {
-                          if (!isCurrent) {
-                            router.push({
-                              pathname: "/tools/[slug]",
-                              params: { slug: mSlug },
-                            });
-                          }
-                        }}
-                        style={{
-                          paddingHorizontal: 10,
-                          paddingVertical: 5,
-                          borderRadius: 8,
-                          backgroundColor: isCurrent
-                            ? theme.kenyaGreenLight
-                            : theme.surfaceContainerHigh,
-                          borderWidth: 1,
-                          borderColor: isCurrent
-                            ? theme.kenyaGreenLight
-                            : theme.outlineVariant,
-                        }}
-                      >
-                        <Text
-                          style={{
-                            fontSize: 11,
-                            fontWeight: "700",
-                            color: isCurrent
-                              ? theme.kenyaBlack
-                              : theme.textPrimary,
-                          }}
-                        >
-                          {mTool.shortTitle}
-                        </Text>
-                      </Pressable>
-                    );
-                  })}
-                </ScrollView>
-              </View>
-            )}
           </View>
         )}
 

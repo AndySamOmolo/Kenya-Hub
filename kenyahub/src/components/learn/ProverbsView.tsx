@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Search, Shuffle, Eye, EyeOff, Sparkles, BookOpen } from "lucide-react";
+import { Search, Shuffle, Eye, EyeOff, BookOpen } from "lucide-react";
 import kikuyuProverbsData from "@/data/kikuyu-proverbs.json";
 import { luoProverbs, type ProverbEntry } from "@/data/courses/luo/proverbs";
 import { luoRiddles, type RiddleEntry } from "@/data/courses/luo/riddles";
@@ -139,89 +139,81 @@ export default function ProverbsView({
 
   return (
     <div className="space-y-5">
-      <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-          <div>
-            <div
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider mb-1.5"
-              style={{ backgroundColor: `${accentColor}15`, color: accentColor }}
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              Kenyan Oral Literature &amp; Cultural Wisdom
-            </div>
-            <h2 className="text-lg sm:text-xl font-bold text-[var(--text-primary)] font-[family-name:var(--font-display)]">
-              Proverbs, Riddles &amp; Tongue Twisters
-            </h2>
-            <p className="text-xs text-[var(--text-secondary)] mt-0.5">
-              {KIKUYU_PROVERBS.length} verified Gĩkũyũ proverbs (Fr. G. Barra, 1939) &amp;{" "}
-              {luoProverbs.length + luoRiddles.length + luoTongueTwisters.length} Dholuo proverbs, riddles, and tongue twisters.
-            </p>
-          </div>
-
-          {/* Single-row 2-button horizontal switcher */}
-          <div className="grid grid-cols-2 sm:flex gap-2 shrink-0">
-            <button
-              onClick={() => {
-                setSelectedLang("kikuyu");
-                setSelectedCategory("All");
-                setSearch("");
-                setPage(1);
-              }}
-              className={`px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer border text-center whitespace-nowrap ${
-                selectedLang === "kikuyu"
-                  ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/40"
-                  : "bg-[var(--bg-elevated)] text-[var(--text-secondary)] border-[var(--border)]"
-              }`}
-            >
-              🌿 Gĩkũyũ ({KIKUYU_PROVERBS.length})
-            </button>
-            <button
-              onClick={() => {
-                setSelectedLang("luo");
-                setSelectedCategory("All");
-                setSearch("");
-                setPage(1);
-              }}
-              className={`px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer border text-center whitespace-nowrap ${
-                selectedLang === "luo"
-                  ? "bg-sky-500/15 text-sky-400 border-sky-500/40"
-                  : "bg-[var(--bg-elevated)] text-[var(--text-secondary)] border-[var(--border)]"
-              }`}
-            >
-              🌊 Dholuo ({luoProverbs.length + luoRiddles.length + luoTongueTwisters.length})
-            </button>
-          </div>
+      {/* Standalone Horizontal Pill Menu for Language & Sub-Tabs */}
+      <div className="space-y-2.5">
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          {[
+            { id: "kikuyu" as const, label: `Gĩkũyũ (${KIKUYU_PROVERBS.length})` },
+            {
+              id: "luo" as const,
+              label: `Dholuo (${luoProverbs.length + luoRiddles.length + luoTongueTwisters.length})`,
+            },
+          ].map((item) => {
+            const active = selectedLang === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => {
+                  setSelectedLang(item.id);
+                  setSelectedCategory("All");
+                  setSearch("");
+                  setPage(1);
+                }}
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {item.label}
+              </button>
+            );
+          })}
         </div>
 
-        {/* Single-row horizontal sub-tabs for Dholuo */}
         {selectedLang === "luo" && (
-          <div className="grid grid-cols-3 sm:flex gap-1.5 mb-3.5 pt-3 border-t border-[var(--border)]">
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
             {(
               [
                 { id: "proverbs", label: `Proverbs (${luoProverbs.length})` },
                 { id: "riddles", label: `Riddles (${luoRiddles.length})` },
                 { id: "twisters", label: `Twisters (${luoTongueTwisters.length})` },
               ] as const
-            ).map((sub) => (
-              <button
-                key={sub.id}
-                onClick={() => {
-                  setLuoSubTab(sub.id);
-                  setPage(1);
-                }}
-                className={`px-2.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold transition-all cursor-pointer text-center whitespace-nowrap ${
-                  luoSubTab === sub.id
-                    ? "bg-sky-500 text-black font-bold"
-                    : "bg-[var(--bg-elevated)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
-                }`}
-              >
-                {sub.label}
-              </button>
-            ))}
+            ).map((sub) => {
+              const active = luoSubTab === sub.id;
+              return (
+                <button
+                  key={sub.id}
+                  onClick={() => {
+                    setLuoSubTab(sub.id);
+                    setPage(1);
+                  }}
+                  className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all cursor-pointer ${
+                    active
+                      ? "border-sky/50 bg-sky/15 text-sky-light font-semibold"
+                      : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                  }`}
+                >
+                  {sub.label}
+                </button>
+              );
+            })}
           </div>
         )}
+      </div>
 
-        {/* Search + Category Dropdown + Random button in a compact layout */}
+      <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 space-y-3.5">
+        <div>
+          <h2 className="text-base sm:text-lg font-bold text-[var(--text-primary)] font-[family-name:var(--font-display)]">
+            Proverbs, Riddles &amp; Tongue Twisters
+          </h2>
+          <p className="text-xs text-[var(--text-secondary)] mt-0.5">
+            {KIKUYU_PROVERBS.length} verified Gĩkũyũ proverbs (Fr. G. Barra, 1939) &amp;{" "}
+            {luoProverbs.length + luoRiddles.length + luoTongueTwisters.length} Dholuo proverbs, riddles, and tongue twisters.
+          </p>
+        </div>
+
+        {/* Search + Category Dropdown + Random button */}
         <div className="flex flex-col sm:flex-row gap-2">
           <div className="relative flex-1">
             <Search className="w-4 h-4 text-[var(--text-muted)] absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -242,21 +234,6 @@ export default function ProverbsView({
           </div>
 
           <div className="flex items-center gap-2">
-            {(selectedLang === "kikuyu" || (selectedLang === "luo" && luoSubTab === "proverbs")) && (
-              <CustomSelect
-                value={selectedCategory}
-                onValueChange={(val) => {
-                  setSelectedCategory(val);
-                  setPage(1);
-                }}
-                options={activeCategoryOptions.map((cat) => ({
-                  value: cat,
-                  label: cat === "All" ? "All Themes" : cat.charAt(0).toUpperCase() + cat.slice(1),
-                }))}
-                className="flex-1 sm:w-44 text-xs"
-              />
-            )}
-
             <button
               onClick={pickRandom}
               className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-[var(--bg-elevated)] border border-[var(--border)] hover:border-[var(--gold)]/40 text-xs font-semibold text-[var(--text-primary)] cursor-pointer transition-all shrink-0"
@@ -279,6 +256,30 @@ export default function ProverbsView({
             )}
           </div>
         </div>
+
+        {(selectedLang === "kikuyu" || (selectedLang === "luo" && luoSubTab === "proverbs")) && (
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 pt-1">
+            {activeCategoryOptions.map((cat) => {
+              const active = selectedCategory === cat;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => {
+                    setSelectedCategory(cat);
+                    setPage(1);
+                  }}
+                  className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-medium border transition-all capitalize cursor-pointer ${
+                    active
+                      ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                      : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                  }`}
+                >
+                  {cat === "All" ? "All Themes" : cat}
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {selectedLang === "kikuyu" && (

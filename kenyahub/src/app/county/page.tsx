@@ -243,29 +243,27 @@ export default function CountyIndexPage() {
         </div>
       </div>
 
-      {/* Consolidated Hub Mode Tabs — Single Horizontal Row */}
-      <div className="flex flex-nowrap items-center gap-1 sm:gap-2 overflow-x-auto no-scrollbar pb-2 mb-5 border-b border-border">
+      {/* Consolidated Hub Mode Tabs (Standalone Horizontal Pills) */}
+      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 mb-5">
         {([
-          { id: "directory", shortLabel: "Counties", label: "47 Counties Directory", icon: "🏛️" },
-          { id: "budgets", shortLabel: "Budgets", label: "Budgets & Absorption", icon: "📊" },
-          { id: "constituencies", shortLabel: "MPs (290)", label: "290 Constituencies", icon: "🗳️" },
-          { id: "climate", shortLabel: "Climate", label: "Climate & Rainfall", icon: "🌧️" },
-          { id: "compare", shortLabel: "Compare", label: "Compare 2 Counties", icon: "⚖️" },
+          { id: "directory", label: "Counties" },
+          { id: "budgets", label: "Budgets" },
+          { id: "constituencies", label: "Constituencies" },
+          { id: "climate", label: "Climate" },
+          { id: "compare", label: "Compare" },
         ] as const).map((tab) => {
           const active = activeTab === tab.id;
           return (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`shrink-0 whitespace-nowrap px-2.5 sm:px-4 py-2 rounded-t-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 border-b-2 ${
+              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
                 active
-                  ? "bg-gold/15 text-gold border-gold"
-                  : "text-text-secondary hover:text-text-primary border-transparent hover:bg-bg-card"
+                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                  : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
               }`}
             >
-              <DynamicIcon emoji={tab.icon} className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-              <span className="sm:hidden">{tab.shortLabel}</span>
-              <span className="hidden sm:inline">{tab.label}</span>
+              {tab.label}
             </button>
           );
         })}

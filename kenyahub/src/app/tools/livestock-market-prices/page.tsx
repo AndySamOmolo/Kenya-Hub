@@ -24,22 +24,33 @@ export default function LivestockPricesPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <div className="sm:hidden">
-            <CustomSelect
-              value={typeFilter}
-              onValueChange={(val) => setTypeFilter(val)}
-              options={[
-                { value: "all", label: "All Livestock Types" },
-                ...data.livestock.map((l) => ({ value: l.type, label: l.type.split(" (")[0] })),
-              ]}
-              className="w-full text-xs"
-            />
-          </div>
-          <div className="hidden sm:flex sm:flex-wrap gap-2">
-            <button onClick={() => setTypeFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${typeFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Livestock</button>
-            {data.livestock.map((l) => (
-              <button key={l.type} onClick={() => setTypeFilter(l.type)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${typeFilter === l.type ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}><DynamicIcon emoji={l.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {l.type.split(" (")[0]}</button>
-            ))}
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <button
+              onClick={() => setTypeFilter("all")}
+              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                typeFilter === "all"
+                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                  : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+              }`}
+            >
+              All Livestock
+            </button>
+            {data.livestock.map((l) => {
+              const active = typeFilter === l.type;
+              return (
+                <button
+                  key={l.type}
+                  onClick={() => setTypeFilter(l.type)}
+                  className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                    active
+                      ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                      : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                  }`}
+                >
+                  {l.type.split(" (")[0]}
+                </button>
+              );
+            })}
           </div>
           <CustomSelect value={marketFilter} onChange={(e) => setMarketFilter(e.target.value)} className="input-field text-sm" id="market-filter">
             <option value="all">All Markets</option>

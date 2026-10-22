@@ -52,24 +52,33 @@ export default function KenyanFoodNutritionPage() {
         {/* Search & Categories */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search foods (e.g., 'ugali', 'omena', 'chapati')..." className="input-field text-sm" id="food-search"  onClear={() => setSearch("")} />
-          <div className="sm:hidden">
-            <CustomSelect
-              value={catFilter}
-              onValueChange={(val) => setCatFilter(val)}
-              options={[
-                { value: "all", label: "All Food Categories" },
-                ...foodData.categories.map((c) => ({ value: c.id, label: c.name })),
-              ]}
-              className="w-full text-xs"
-            />
-          </div>
-          <div className="hidden sm:flex sm:flex-wrap gap-2">
-            <button onClick={() => setCatFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Foods</button>
-            {foodData.categories.map((c) => (
-              <button key={c.id} onClick={() => setCatFilter(c.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === c.id ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>
-                <DynamicIcon emoji={c.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {c.name}
-              </button>
-            ))}
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <button
+              onClick={() => setCatFilter("all")}
+              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                catFilter === "all"
+                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                  : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+              }`}
+            >
+              All Foods
+            </button>
+            {foodData.categories.map((c) => {
+              const active = catFilter === c.id;
+              return (
+                <button
+                  key={c.id}
+                  onClick={() => setCatFilter(c.id)}
+                  className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                    active
+                      ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                      : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                  }`}
+                >
+                  {c.name}
+                </button>
+              );
+            })}
           </div>
           <p className="text-xs text-text-muted">{filtered.length} foods found • Values per 100g unless noted</p>
         </div>

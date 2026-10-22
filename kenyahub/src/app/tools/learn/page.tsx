@@ -105,49 +105,33 @@ export default function LearnPage() {
             Master Kenyan indigenous languages with step-by-step guided skill trees (plus a 1-click option to unlock all modules at once), grammar guides, and over 1,600 authentic Gĩkũyũ and Dholuo proverbs and riddles.
           </p>
 
-          {/* Global stats */}
-          <div className="mt-5 flex flex-wrap justify-center gap-3">
-            <div className="flex items-center gap-1.5 rounded-full border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-secondary">
-              <BookOpen className="h-3.5 w-3.5 text-gold" />{" "}
-              {readyLangs.length} Interactive Courses
-            </div>
-            <div className="flex items-center gap-1.5 rounded-full border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-secondary">
-              <Layers className="h-3.5 w-3.5 text-kenya-green-light" />{" "}
-              {totalModulesCount} Skill Modules
-            </div>
-            <div className="flex items-center gap-1.5 rounded-full border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-secondary">
-              <ScrollText className="h-3.5 w-3.5 text-gold" />{" "}
-              989 Gĩkũyũ Proverbs &amp; 600+ Luo Proverbs/Riddles
-            </div>
-          </div>
+          {/* Compact stats line */}
+          <p className="mt-3 text-xs font-medium text-gold">
+            {readyLangs.length} Courses · {totalModulesCount} Modules · 1,600+ Proverbs &amp; Riddles
+          </p>
+        </div>
 
-          {/* Hub Switcher: Courses vs Proverbs & Oral Literature */}
-          <div className="mt-5 grid grid-cols-2 sm:inline-flex gap-1.5 rounded-2xl border border-border bg-bg-elevated/80 p-1.5 w-full sm:w-auto">
-            <button
-              onClick={() => setActiveHubTab("courses")}
-              className={`inline-flex items-center justify-center gap-1.5 rounded-xl px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
-                activeHubTab === "courses"
-                  ? "bg-gold text-kenya-black shadow-sm"
-                  : "text-text-secondary hover:text-text-primary"
-              }`}
-            >
-              <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-              <span className="sm:hidden">Courses ({readyLangs.length})</span>
-              <span className="hidden sm:inline">Language Courses ({readyLangs.length})</span>
-            </button>
-            <button
-              onClick={() => setActiveHubTab("proverbs")}
-              className={`inline-flex items-center justify-center gap-1.5 rounded-xl px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
-                activeHubTab === "proverbs"
-                  ? "bg-gold text-kenya-black shadow-sm"
-                  : "text-text-secondary hover:text-text-primary"
-              }`}
-            >
-              <ScrollText className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-              <span className="sm:hidden">Proverbs &amp; Wisdom</span>
-              <span className="hidden sm:inline">Proverbs, Riddles &amp; Oral Wisdom</span>
-            </button>
-          </div>
+        {/* Standalone Horizontal Pill Menu (Courses | Proverbs & Wisdom) */}
+        <div className="mb-5 flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          {[
+            { id: "courses" as const, label: `Courses (${readyLangs.length})` },
+            { id: "proverbs" as const, label: "Proverbs & Wisdom" },
+          ].map((tab) => {
+            const active = activeHubTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveHubTab(tab.id)}
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
         </div>
 
         {activeHubTab === "proverbs" ? (

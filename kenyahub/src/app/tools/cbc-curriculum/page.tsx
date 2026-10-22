@@ -23,29 +23,24 @@ export default function CBCCurriculumPage() {
   return (
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
-        {/* Level Selector */}
-        <div className="sm:hidden">
-          <CustomSelect
-            value={selectedLevel}
-            onValueChange={(val) => setSelectedLevel(val)}
-            options={cbcData.levels.map((l) => ({ value: l.id, label: l.name }))}
-            className="w-full text-xs"
-          />
-        </div>
-        <div className="hidden sm:flex sm:flex-wrap gap-2">
-          {cbcData.levels.map((l) => (
-            <button
-              key={l.id}
-              onClick={() => setSelectedLevel(l.id)}
-              className={
-                selectedLevel === l.id
-                  ? "btn-gold !py-2 !px-4 !text-sm"
-                  : "btn-outline !py-2 !px-4 !text-sm"
-              }
-            >
-              {l.name}
-            </button>
-          ))}
+        {/* Level Selector — Horizontal Scrolling Pills */}
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          {cbcData.levels.map((l) => {
+            const active = selectedLevel === l.id;
+            return (
+              <button
+                key={l.id}
+                onClick={() => setSelectedLevel(l.id)}
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {l.name}
+              </button>
+            );
+          })}
         </div>
 
         {/* Level Info */}

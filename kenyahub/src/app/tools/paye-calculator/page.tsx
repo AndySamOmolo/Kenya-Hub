@@ -214,28 +214,26 @@ export default function PAYECalculatorPage() {
       <div className="space-y-6">
         {/* Calculation Direction Mode Switcher */}
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-5">
-          <div className="grid grid-cols-2 sm:flex gap-2">
-            <button
-              onClick={() => setCalcMode("grossToNet")}
-              className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-center whitespace-nowrap ${
-                calcMode === "grossToNet"
-                  ? "bg-gold text-kenya-black"
-                  : "bg-bg-elevated border border-border text-text-secondary hover:border-gold/50"
-              }`}
-            >
-              Gross → Net Pay
-            </button>
-            <button
-              onClick={() => setCalcMode("netToGross")}
-              className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-center whitespace-nowrap ${
-                calcMode === "netToGross"
-                  ? "bg-gold text-kenya-black"
-                  : "bg-bg-elevated border border-border text-text-secondary hover:border-gold/50"
-              }`}
-            >
-              <span className="sm:hidden">Target Net → Gross</span>
-              <span className="hidden sm:inline">Target Net Pay → Required Gross (Negotiation)</span>
-            </button>
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            {[
+              { id: "grossToNet" as const, label: "Gross → Net Pay" },
+              { id: "netToGross" as const, label: "Target Net → Gross" },
+            ].map((m) => {
+              const active = calcMode === m.id;
+              return (
+                <button
+                  key={m.id}
+                  onClick={() => setCalcMode(m.id)}
+                  className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                    active
+                      ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                      : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                  }`}
+                >
+                  {m.label}
+                </button>
+              );
+            })}
           </div>
 
           {calcMode === "grossToNet" ? (

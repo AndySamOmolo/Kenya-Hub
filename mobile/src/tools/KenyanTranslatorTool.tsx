@@ -530,64 +530,41 @@ export function KenyanTranslatorTool() {
         </View>
       )}
 
-      {/* 3 Main View Tabs */}
-      <View style={styles.tabBar}>
-        <Pressable
-          onPress={() => setViewMode("translate")}
-          style={[styles.tabBtn, viewMode === "translate" && styles.tabBtnActive]}
-        >
-          <Ionicons
-            name="book-outline"
-            size={16}
-            color={viewMode === "translate" ? theme.kenyaBlack : theme.textSecondary}
-          />
-          <Text
-            style={[
-              styles.tabBtnText,
-              viewMode === "translate" && styles.tabBtnTextActive,
-            ]}
-          >
-            Translate
-          </Text>
-        </Pressable>
-
-        <Pressable
-          onPress={() => setViewMode("compare")}
-          style={[styles.tabBtn, viewMode === "compare" && styles.tabBtnActive]}
-        >
-          <Ionicons
-            name="stats-chart-outline"
-            size={16}
-            color={viewMode === "compare" ? theme.kenyaBlack : theme.textSecondary}
-          />
-          <Text
-            style={[
-              styles.tabBtnText,
-              viewMode === "compare" && styles.tabBtnTextActive,
-            ]}
-          >
-            Compare (13)
-          </Text>
-        </Pressable>
-
-        <Pressable
-          onPress={() => setViewMode("browse")}
-          style={[styles.tabBtn, viewMode === "browse" && styles.tabBtnActive]}
-        >
-          <Ionicons
-            name="folder-open-outline"
-            size={16}
-            color={viewMode === "browse" ? theme.kenyaBlack : theme.textSecondary}
-          />
-          <Text
-            style={[
-              styles.tabBtnText,
-              viewMode === "browse" && styles.tabBtnTextActive,
-            ]}
-          >
-            Categories
-          </Text>
-        </Pressable>
+      {/* 3 Main View Tabs (Standalone Horizontal Pills) */}
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 2 }}>
+        {(
+          [
+            { id: "translate" as const, label: "Translate" },
+            { id: "compare" as const, label: "Compare (13)" },
+            { id: "browse" as const, label: "Categories" },
+          ]
+        ).map((tab) => {
+          const active = viewMode === tab.id;
+          return (
+            <Pressable
+              key={tab.id}
+              onPress={() => setViewMode(tab.id)}
+              style={{
+                paddingHorizontal: 16,
+                paddingVertical: 7,
+                borderRadius: 999,
+                borderWidth: 1,
+                backgroundColor: active ? `${theme.gold}22` : theme.bgCard,
+                borderColor: active ? theme.gold : theme.border,
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 12.5,
+                  fontWeight: active ? "800" : "600",
+                  color: active ? theme.gold : theme.textSecondary,
+                }}
+              >
+                {tab.label}
+              </Text>
+            </Pressable>
+          );
+        })}
       </View>
 
       {/* ────────────────── 1. TRANSLATE MODE ────────────────── */}

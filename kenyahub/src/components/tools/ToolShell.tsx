@@ -14,77 +14,6 @@ interface ToolShellProps {
   breadcrumbSuffix?: { label: string; href?: string }[];
 }
 
-interface SuiteConfig {
-  name: string;
-  hubHref?: string;
-  hubLabel?: string;
-  members: string[];
-}
-
-const CONSOLIDATED_SUITES: SuiteConfig[] = [
-  {
-    name: "47 Counties & Civic Suite",
-    hubHref: "/county",
-    hubLabel: "🏛️ Open 47 Counties Hub",
-    members: [
-      "ward-constituency-finder",
-      "kenya-rainfall-patterns",
-      "kenya-postal-codes",
-    ],
-  },
-  {
-    name: "Salary, Tax & Deductions Suite",
-    members: [
-      "paye-calculator",
-      "sacco-chama-calculator",
-      "helb-calculator",
-      "mpesa-fee-calculator",
-    ],
-  },
-  {
-    name: "CBC & School Calendar Suite",
-    members: ["cbc-curriculum", "cbc-grade-age", "school-terms"],
-  },
-  {
-    name: "KCSE & University Placement Suite",
-    members: [
-      "kcse-grade-calculator",
-      "kuccps-cluster-calculator",
-      "kcse-school-rankings",
-    ],
-  },
-  {
-    name: "NTSA Motorist & Transport Suite",
-    hubHref: "/matatu",
-    hubLabel: "🚌 Open Matatu Routes Hub",
-    members: [
-      "kra-car-import-calculator",
-      "number-plate-decoder",
-      "driving-license-guide",
-      "traffic-fines",
-      "vehicle-insurance-calculator",
-    ],
-  },
-  {
-    name: "Kenyan Languages & Cultural Suite",
-    members: [
-      "learn",
-      "kenyan-translator",
-      "kenya-languages",
-    ],
-  },
-  {
-    name: "Kenya Farming & Agribusiness Suite",
-    members: [
-      "crop-planting-calendar",
-      "kenya-soil-types",
-      "fertilizer-subsidy-guide",
-      "livestock-market-prices",
-      "agrovet-finder",
-    ],
-  },
-];
-
 export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: ToolShellProps) {
   const related = getRelatedTools(tool.slug, 4);
   const category = getCategoryInfo(tool.category);
@@ -94,9 +23,6 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
   const effectiveFaq: { question: string; answer: string }[] =
     faq && faq.length > 0 ? faq : guideEntry.faq || [];
   const guideNotes: string[] = guideEntry.notes || [];
-
-  // Check if tool belongs to a consolidated suite
-  const activeSuite = CONSOLIDATED_SUITES.find((s) => s.members.includes(tool.slug));
 
   // Related blog posts for deep publisher content & internal SEO linking
   const relatedPosts = STATIC_BLOG_POSTS.filter((post) => {
@@ -266,42 +192,6 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
               : "Live data"}
           </span>
         </div>
-
-        {/* Consolidated Suite Switcher Bar */}
-        {activeSuite && (
-          <div className="mt-4 p-2 rounded-xl bg-bg-card border border-border flex items-center gap-1.5 overflow-x-auto no-scrollbar">
-            <span className="hidden sm:inline text-[0.65rem] font-bold uppercase tracking-wider text-gold mr-1 shrink-0">
-              {activeSuite.name}:
-            </span>
-            {activeSuite.hubHref && (
-              <Link
-                href={activeSuite.hubHref}
-                className="shrink-0 whitespace-nowrap px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 text-gold border border-gold/30 hover:bg-gold/25 transition-colors"
-              >
-                {activeSuite.hubLabel}
-              </Link>
-            )}
-            {activeSuite.members.map((mSlug) => {
-              const mTool = TOOLS.find((t) => t.slug === mSlug);
-              if (!mTool) return null;
-              const isCurrent = mSlug === tool.slug;
-              return (
-                <Link
-                  key={mSlug}
-                  href={`/tools/${mSlug}`}
-                  className={`shrink-0 whitespace-nowrap px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 ${
-                    isCurrent
-                      ? "bg-kenya-green text-white font-semibold"
-                      : "bg-bg-elevated border border-border text-text-secondary hover:border-gold hover:text-text-primary"
-                  }`}
-                >
-                  <DynamicIcon emoji={mTool.icon} className="w-3.5 h-3.5" />
-                  {mTool.shortTitle}
-                </Link>
-              );
-            })}
-          </div>
-        )}
       </header>
 
       {/* ── Tool Content ── */}

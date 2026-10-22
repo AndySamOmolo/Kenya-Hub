@@ -82,30 +82,6 @@ export default function SkillTree({
     <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
       {/* ─── Header ──────────────────────────────── */}
       <div className="mb-6">
-        <div className="mb-3 flex items-center justify-between">
-          <button
-            onClick={onGoBack}
-            className="hidden sm:flex items-center gap-2 text-sm font-semibold text-text-muted transition-colors active:text-text-primary sm:hover:text-text-primary"
-          >
-            <ChevronRight className="h-4 w-4 rotate-180" /> Languages
-          </button>
-          <span className="sm:hidden text-xs font-semibold text-text-muted">Course Progress</span>
-          <button
-            onClick={() => setShowProfile(!showProfile)}
-            className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-3 py-1.5 text-xs font-semibold transition-all active:bg-bg-elevated sm:hover:border-gold/40"
-          >
-            <span><DynamicIcon emoji={levelInfo.current.icon} className="w-[1em] h-[1em]" /></span>
-            <span className="text-gold">{progress.xp} XP</span>
-            {progress.streak > 0 && (
-              <>
-                <span className="text-border">|</span>
-                <Flame className="h-3 w-3 text-orange-400" />
-                <span className="text-orange-400">{progress.streak}</span>
-              </>
-            )}
-          </button>
-        </div>
-
         {/* Hero card */}
         <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-5 sm:p-6">
           <div className="flex items-center gap-4">
@@ -317,30 +293,20 @@ export default function SkillTree({
         </div>
       </div>
 
-      {/* Compact Unit Quick-Jump Selector */}
-      <div className="mb-4 flex items-center gap-2">
-        <label htmlFor="unit-quick-jump" className="text-xs font-semibold text-text-muted shrink-0">
-          Jump to Unit:
-        </label>
-        <select
-          id="unit-quick-jump"
-          defaultValue=""
-          onChange={(e) => {
-            const uid = e.target.value;
-            if (!uid) return;
-            setExpandedUnits((prev) => ({ ...prev, [uid]: true }));
-            const el = document.getElementById(`unit-block-${uid}`);
-            if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-          className="input-field !py-1.5 !px-3 text-xs flex-1 sm:max-w-xs"
-        >
-          <option value="">Select a unit ({units.length} units)...</option>
-          {units.map((unit, idx) => (
-            <option key={unit.id} value={unit.id}>
-              Unit {idx + 1}: {unit.title.replace(/^Unit \d+:\s*/i, "")}
-            </option>
-          ))}
-        </select>
+      {/* Horizontal Scrolling Unit Quick-Jump Pills */}
+      <div className="mb-4 flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+        {units.map((unit, idx) => (
+          <a
+            key={unit.id}
+            href={`#unit-block-${unit.id}`}
+            onClick={() =>
+              setExpandedUnits((prev) => ({ ...prev, [unit.id]: true }))
+            }
+            className="shrink-0 whitespace-nowrap rounded-full border border-border bg-bg-card px-3.5 py-1.5 text-xs font-medium text-text-secondary hover:border-gold/50 hover:bg-gold/15 hover:text-gold transition-all"
+          >
+            Unit {idx + 1}: {unit.title.replace(/^Unit \d+:\s*/i, "")}
+          </a>
+        ))}
       </div>
 
       {/* ─── Skill Tree Path ─── */}

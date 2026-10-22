@@ -110,23 +110,26 @@ export default function KraCarImportCalculatorPage() {
                 Select a popular Kenyan import model or enter any CRSP value from the KRA schedule.
               </p>
             </div>
-            <div className="inline-flex rounded-lg bg-[var(--bg-elevated)] p-1 border border-[var(--border)]">
-              <button
-                onClick={() => setCustomMode(false)}
-                className={`px-3 py-1.5 rounded-md text-xs font-semibold transition-all cursor-pointer ${
-                  !customMode ? "bg-[var(--gold)] text-black font-bold" : "text-[var(--text-secondary)]"
-                }`}
-              >
-                Popular Kenyan Imports
-              </button>
-              <button
-                onClick={() => setCustomMode(true)}
-                className={`px-3 py-1.5 rounded-md text-xs font-semibold transition-all cursor-pointer ${
-                  customMode ? "bg-[var(--gold)] text-black font-bold" : "text-[var(--text-secondary)]"
-                }`}
-              >
-                Custom CRSP & Engine
-              </button>
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+              {[
+                { custom: false, label: "Popular Imports" },
+                { custom: true, label: "Custom CRSP" },
+              ].map((m) => {
+                const active = customMode === m.custom;
+                return (
+                  <button
+                    key={m.label}
+                    onClick={() => setCustomMode(m.custom)}
+                    className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
+                      active
+                        ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                        : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"
+                    }`}
+                  >
+                    {m.label}
+                  </button>
+                );
+              })}
             </div>
           </div>
 

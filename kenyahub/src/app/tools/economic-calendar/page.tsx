@@ -26,40 +26,62 @@ export default function EconomicCalendarPage() {
   return (
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
-        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5 space-y-3">
-          <div className="grid grid-cols-2 gap-2 sm:hidden">
-            <CustomSelect
-              value={catFilter}
-              onValueChange={(val) => setCatFilter(val)}
-              options={[
-                { value: "all", label: "All Categories" },
-                ...data.categories.map((c) => ({ value: c.id, label: c.id })),
-              ]}
-              className="w-full text-xs"
-            />
-            <CustomSelect
-              value={freqFilter}
-              onValueChange={(val) => setFreqFilter(val)}
-              options={[
-                { value: "all", label: "All Frequencies" },
-                ...frequencies.map((f) => ({ value: f, label: f })),
-              ]}
-              className="w-full text-xs"
-            />
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5 space-y-2.5">
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <button
+              onClick={() => setCatFilter("all")}
+              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                catFilter === "all"
+                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                  : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+              }`}
+            >
+              All Categories
+            </button>
+            {data.categories.map((c) => {
+              const active = catFilter === c.id;
+              return (
+                <button
+                  key={c.id}
+                  onClick={() => setCatFilter(c.id)}
+                  className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                    active
+                      ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                      : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                  }`}
+                >
+                  {c.id}
+                </button>
+              );
+            })}
           </div>
-          <div className="hidden sm:flex sm:flex-wrap gap-2">
-            <button onClick={() => setCatFilter("all")} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === "all" ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>All Categories</button>
-            {data.categories.map((c) => (
-              <button key={c.id} onClick={() => setCatFilter(c.id)} className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${catFilter === c.id ? "text-white" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`} style={catFilter === c.id ? { backgroundColor: c.color } : {}}>
-                <DynamicIcon emoji={c.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {c.id}
-              </button>
-            ))}
-          </div>
-          <div className="hidden sm:flex sm:flex-wrap gap-2">
-            <button onClick={() => setFreqFilter("all")} className={`px-2.5 py-1 rounded text-[0.65rem] font-medium transition-all ${freqFilter === "all" ? "bg-bg-elevated border border-gold/50 text-gold" : "bg-bg-elevated border border-border text-text-muted hover:text-gold"}`}>All</button>
-            {frequencies.map((f) => (
-              <button key={f} onClick={() => setFreqFilter(f)} className={`px-2.5 py-1 rounded text-[0.65rem] font-medium transition-all ${freqFilter === f ? "bg-bg-elevated border border-gold/50 text-gold" : "bg-bg-elevated border border-border text-text-muted hover:text-gold"}`}>{f}</button>
-            ))}
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <button
+              onClick={() => setFreqFilter("all")}
+              className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
+                freqFilter === "all"
+                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                  : "border-border bg-bg-elevated text-text-muted hover:text-text-primary"
+              }`}
+            >
+              All Frequencies
+            </button>
+            {frequencies.map((f) => {
+              const active = freqFilter === f;
+              return (
+                <button
+                  key={f}
+                  onClick={() => setFreqFilter(f)}
+                  className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
+                    active
+                      ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                      : "border-border bg-bg-elevated text-text-muted hover:text-text-primary"
+                  }`}
+                >
+                  {f}
+                </button>
+              );
+            })}
           </div>
         </div>
         <div className="space-y-3">

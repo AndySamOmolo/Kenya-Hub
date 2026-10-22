@@ -164,24 +164,8 @@ function ToolsContent() {
             onClear={() => setSearchQuery("")}
           />
         </div>
-        <div className="grid grid-cols-2 sm:flex items-center gap-2 shrink-0">
-          {/* Mobile Category Dropdown (replaces full-screen button wall) */}
-          <div className="md:hidden">
-            <CustomSelect
-              id="tools-category-mobile"
-              value={selectedCategory}
-              onValueChange={(val) => setSelectedCategory(val)}
-              options={[
-                { value: "all", label: `All Categories (${TOOLS.length})` },
-                ...TOOL_CATEGORIES.map((cat) => ({
-                  value: cat.id,
-                  label: `${cat.name} (${TOOLS.filter((t) => t.category === cat.id).length})`,
-                })),
-              ]}
-              className="w-full text-xs"
-            />
-          </div>
-          <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-2 w-full sm:w-auto">
             <label htmlFor="tools-sort" className="hidden sm:inline text-xs font-semibold uppercase tracking-wider text-text-muted shrink-0">
               Sort:
             </label>
@@ -209,36 +193,35 @@ function ToolsContent() {
         </div>
       </div>
 
-      {/* Category Pills — Desktop only so mobile never shows a wall of category buttons */}
-      <div className="hidden md:block mb-8">
-        <div className="flex flex-wrap gap-2">
-          <button
-            onClick={() => setSelectedCategory("all")}
-            className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-              selectedCategory === "all"
-                ? "bg-gold text-kenya-black"
-                : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
-            }`}
-          >
-            All ({TOOLS.length})
-          </button>
-          {TOOL_CATEGORIES.map((cat) => {
-            const count = TOOLS.filter((t) => t.category === cat.id).length;
-            return (
-              <button
-                key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
-                className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-all whitespace-nowrap ${
-                  selectedCategory === cat.id
-                    ? "bg-gold text-kenya-black"
-                    : "bg-bg-card border border-border text-text-secondary hover:border-gold hover:text-gold"
-                }`}
-              >
-                <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name} ({count})
-              </button>
-            );
-          })}
-        </div>
+      {/* Category Pills — Single-line horizontal scrolling pills in the highlighted screenshot style */}
+      <div className="mb-6 flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+        <button
+          onClick={() => setSelectedCategory("all")}
+          className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+            selectedCategory === "all"
+              ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+              : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+          }`}
+        >
+          All ({TOOLS.length})
+        </button>
+        {TOOL_CATEGORIES.map((cat) => {
+          const count = TOOLS.filter((t) => t.category === cat.id).length;
+          const active = selectedCategory === cat.id;
+          return (
+            <button
+              key={cat.id}
+              onClick={() => setSelectedCategory(cat.id)}
+              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                active
+                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                  : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+              }`}
+            >
+              {cat.name} ({count})
+            </button>
+          );
+        })}
       </div>
 
       {/* Results count */}
