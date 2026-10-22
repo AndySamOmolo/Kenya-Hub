@@ -12,9 +12,11 @@ interface ToolShellProps {
   children: React.ReactNode;
   faq?: { question: string; answer: string }[];
   breadcrumbSuffix?: { label: string; href?: string }[];
+  hideHeader?: boolean;
+  hideFooter?: boolean;
 }
 
-export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: ToolShellProps) {
+export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideHeader = false, hideFooter = false }: ToolShellProps) {
   const related = getRelatedTools(tool.slug, 4);
   const category = getCategoryInfo(tool.category);
 
@@ -148,6 +150,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
       </nav>
 
       {/* ── Header ── */}
+      {!hideHeader && (
       <header className="mb-8">
         <div className="flex items-start gap-4 mb-4">
           <div className="w-14 h-14 rounded-2xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0">
@@ -193,10 +196,13 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
           </span>
         </div>
       </header>
+      )}
 
       {/* ── Tool Content ── */}
-      <div className="mb-14">{children}</div>
+      <div className={hideFooter ? "mb-4" : "mb-14"}>{children}</div>
 
+      {!hideFooter && (
+        <>
       {/* ── Editorial Methodology & Data Verification Card (AdSense & E-E-A-T Value) ── */}
       <section className="mb-14 bg-bg-card border border-border rounded-2xl p-5 sm:p-6 space-y-4">
         <div className="flex items-center justify-between flex-wrap gap-2">
@@ -337,6 +343,8 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: Too
             })}
           </div>
         </section>
+      )}
+        </>
       )}
     </div>
   );

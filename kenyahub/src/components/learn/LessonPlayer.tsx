@@ -94,6 +94,12 @@ export default function LessonPlayer({
 
   const inputRef = useRef<HTMLInputElement>(null);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+    }
+  }, [lessonStage, teachingIndex, currentIndex, lessonComplete]);
+
   /* ─── Initialize exercises ─────────────────────── */
   useEffect(() => {
     const reviewExercises: Exercise[] = reviewItems.map((item) => ({

@@ -14,6 +14,16 @@ interface CustomSelectProps extends Omit<React.SelectHTMLAttributes<HTMLSelectEl
   onValueChange?: (value: string) => void;
 }
 
+function extractText(node: ReactNode): string {
+  if (node === null || node === undefined || typeof node === "boolean") return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(extractText).join("");
+  if (React.isValidElement(node)) {
+    return extractText((node.props as { children?: ReactNode }).children);
+  }
+  return "";
+}
+
 export default function CustomSelect({ 
   value, 
   onChange, 
@@ -31,7 +41,6 @@ export default function CustomSelect({
     if (options) return options;
     const items: Option[] = [];
     
-    // Helper to traverse children recursively to find options
     const traverse = (node: ReactNode) => {
       React.Children.forEach(node, (child) => {
         if (!React.isValidElement(child)) return;
@@ -39,8 +48,8 @@ export default function CustomSelect({
         const childProps = child.props as Record<string, unknown>;
         if (child.type === "option") {
           items.push({
-            value: childProps.value?.toString() || "",
-            label: childProps.children?.toString() || "",
+            value: childProps.value !== undefined && childProps.value !== null ? String(childProps.value) : "",
+            label: extractText(childProps.children as ReactNode),
           });
         } else if (childProps && childProps.children) {
           traverse(childProps.children as ReactNode);
@@ -68,7 +77,6 @@ export default function CustomSelect({
     if (onValueChange) {
       onValueChange(newValue);
     } else if (onChange) {
-      // Fake event for drop-in replacement of native select
       const event = {
         target: { value: newValue },
         currentTarget: { value: newValue }
@@ -98,6 +106,7 @@ export default function CustomSelect({
           "has-leading-icon",
         ].includes(c)
     )
+    .map((c) => (c === "w-auto" ? "w-auto min-w-[9.5rem]" : c))
     .join(" ");
 
   const isTextXs = className.includes("text-xs");
@@ -128,7 +137,7 @@ export default function CustomSelect({
       </button>
 
       {isOpen && (
-        <div className="absolute z-50 w-full mt-1 bg-bg-card border border-border rounded-lg shadow-xl shadow-black/20 max-h-60 overflow-y-auto animate-fade-in-up">
+        <div className="absolute left-0 z-50 min-w-full w-max max-w-[85vw] mt-1 bg-bg-card border border-border rounded-xl shadow-xl shadow-black/25 max-h-64 overflow-y-auto animate-fade-in-up">
           <ul className="py-1">
             {parsedOptions.map((option, idx) => {
               const isSelected = option.value === String(value);
@@ -137,11 +146,11 @@ export default function CustomSelect({
                   <button
                     type="button"
                     onClick={() => handleSelect(option.value)}
-                    className={`w-full text-left px-3 py-2.5 text-sm flex items-center justify-between hover:bg-bg-elevated transition-colors ${
-                      isSelected ? "text-gold bg-gold/5" : "text-text-primary"
+                    className={`w-full text-left px-3.5 py-2 text-xs sm:text-sm flex items-center justify-between gap-3 hover:bg-bg-elevated transition-colors cursor-pointer ${
+                      isSelected ? "text-gold bg-gold/10 font-semibold" : "text-text-primary"
                     }`}
                   >
-                    <span className="truncate">{option.label}</span>
+                    <span className="break-words">{option.label}</span>
                     {isSelected && <Check className="w-4 h-4 text-gold flex-shrink-0" />}
                   </button>
                 </li>

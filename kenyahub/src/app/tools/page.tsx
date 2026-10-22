@@ -153,7 +153,7 @@ function ToolsContent() {
       )}
 
       {/* Search, Mobile Category Dropdown, and Sort */}
-      <div className="flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center justify-between mb-5">
+      <div className="flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center justify-between mb-3">
         <div className="flex-1 max-w-lg">
           <SearchInput
             type="text"
@@ -195,10 +195,10 @@ function ToolsContent() {
       </div>
 
       {/* Category Pills — Single-line horizontal scrolling pills in the highlighted screenshot style */}
-      <ExpandablePillRow className="mb-6">
+      <ExpandablePillRow className="mb-3.5">
         <button
           onClick={() => setSelectedCategory("all")}
-          className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+          className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
             selectedCategory === "all"
               ? "border-gold/50 bg-gold/15 text-gold font-semibold"
               : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -213,7 +213,7 @@ function ToolsContent() {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+              className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
                 active
                   ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                   : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"

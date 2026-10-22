@@ -1,7 +1,7 @@
 import { ToolCategory, Tool } from './types';
 
 export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; description: string; badgeClass: string }[] = [
-  { id: 'finance-tax', name: 'Finance, Tax & SACCOs', icon: '💰', description: 'PAYE reverse salary calculator, M-Pesa (+Ya Kutoa), SACCO loans, HELB & stamp duty', badgeClass: 'badge-finance' },
+  { id: 'finance-tax', name: 'Finance, Tax & SACCOs', icon: '💰', description: 'PAYE reverse salary calculator, M-Pesa fees, SACCO loans, HELB & stamp duty', badgeClass: 'badge-finance' },
   { id: 'education-cbc', name: 'Education & CBC', icon: '🎓', description: 'CBC curriculum & grade-age, KUCCPS clusters, KCSE grades & rankings', badgeClass: 'badge-education' },
   { id: 'transport-travel', name: 'Transport, Cars & Travel', icon: '🚗', description: 'KRA CRSP car import duty calculator, number plates, driving licenses, NTSA fines & parks', badgeClass: 'badge-transport' },
   { id: 'agriculture-environment', name: 'Agriculture & Climate', icon: '🌾', description: 'Crop calendars, soil types, county rainfall, fertilizer & livestock prices', badgeClass: 'badge-agriculture' },
@@ -29,11 +29,11 @@ export const TOOLS: Tool[] = [
   },
   {
     slug: 'mpesa-fee-calculator',
-    title: 'M-Pesa Transaction Fee & "Tuma na ya Kutoa" Calculator 2026',
-    shortTitle: 'M-Pesa (+Ya Kutoa)',
-    description: 'Calculate exact 2026 M-Pesa charges for Send Money, Agent Withdrawal, PayBill, and Buy Goods — with built-in "Tuma na ya Kutoa" withdrawal adder and smart split savings.',
+    title: 'M-Pesa Transaction & Withdrawal Fee Calculator 2026',
+    shortTitle: 'M-Pesa Fee Calculator',
+    description: 'Calculate exact 2026 M-Pesa charges for Send Money, Agent Withdrawal, PayBill, and Buy Goods — with built-in agent withdrawal fee adder and smart split savings.',
     category: 'finance-tax',
-    keywords: ['mpesa charges calculator 2026', 'tuma na ya kutoa calculator', 'mpesa tariff Kenya', 'safaricom mpesa withdrawal charges'],
+    keywords: ['mpesa charges calculator 2026', 'mpesa withdrawal fee calculator', 'mpesa tariff Kenya', 'safaricom mpesa withdrawal charges'],
     updateFrequency: 'annual',
     dataSource: 'Safaricom M-Pesa Tariff Schedule',
     isLive: true,

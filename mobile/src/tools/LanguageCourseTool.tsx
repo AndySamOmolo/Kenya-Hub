@@ -162,11 +162,11 @@ type MainTab = 'learn' | 'cards' | 'games' | 'grammar' | 'proverbs';
 type LessonStage = 'idle' | 'learn' | 'practice' | 'complete';
 type ActiveGame = 'menu' | 'scramble' | 'speed' | 'memory' | 'wordle';
 
-export function LanguageLearningTool() {
-  return <LanguageCourseTool />;
+export function LanguageLearningTool({ onScrollToTop }: { onScrollToTop?: () => void }) {
+  return <LanguageCourseTool onScrollToTop={onScrollToTop} />;
 }
 
-export default function LanguageCourseTool() {
+export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { colors, isDark } = useTheme();
   const ripple = useMemo(() => androidRipple(colors.rippleColor), [colors.rippleColor]);
 
@@ -454,9 +454,15 @@ export default function LanguageCourseTool() {
       setMissedItems([]);
       setupExerciseState(generated[0]);
       setLessonStage(skipLearn ? 'practice' : 'learn');
+      onScrollToTop?.();
     },
-    [setupExerciseState]
+    [setupExerciseState, onScrollToTop]
   );
+
+  // Scroll to top whenever lessonStage, card index, exercise index, tab, or game changes
+  useEffect(() => {
+    onScrollToTop?.();
+  }, [lessonStage, learnCardIdx, exIndex, activeTab, selectedLangId, activeGame, onScrollToTop]);
 
   // ── Submit Current Exercise Answer ──
   const handleCheckExercise = useCallback(() => {

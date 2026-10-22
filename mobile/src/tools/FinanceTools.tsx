@@ -575,7 +575,7 @@ export function MpesaCalculator() {
           color={theme.gold}
         />
         <Text style={[styles.tipText, { fontWeight: "700" }]}>
-          “Tuma na ya Kutoa” — Add Agent Withdrawal Fee ({calcMpesaFee(amount, "withdrawAgent") !== null ? `KES ${calcMpesaFee(amount, "withdrawAgent")}` : "N/A"}) so recipient gets exact KES {amount.toLocaleString()} cash
+          Add Agent Withdrawal Fee ({calcMpesaFee(amount, "withdrawAgent") !== null ? `KES ${calcMpesaFee(amount, "withdrawAgent")}` : "N/A"}) so recipient gets exact KES {amount.toLocaleString()} cash
         </Text>
       </Pressable>
 

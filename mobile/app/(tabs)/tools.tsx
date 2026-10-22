@@ -309,8 +309,8 @@ export default function ToolsScreen() {
                 android_ripple={androidRipple(theme.rippleColor)}
                 onPress={() => setCategory(item.id)}
                 style={{
-                  paddingHorizontal: 14,
-                  paddingVertical: 7,
+                  paddingHorizontal: 12,
+                  paddingVertical: 4.5,
                   borderRadius: 999,
                   borderWidth: 1,
                   backgroundColor: active ? `${theme.gold}22` : theme.surfaceContainer,
@@ -486,8 +486,8 @@ const styles = StyleSheet.create({
   },
   filterHeader: {
     paddingHorizontal: 16,
-    paddingTop: 12,
-    paddingBottom: 12,
+    paddingTop: 9,
+    paddingBottom: 9,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   searchWrap: {
@@ -497,7 +497,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     paddingHorizontal: 14,
     height: 44,
-    marginBottom: 12,
+    marginBottom: 8,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchIcon: {
@@ -543,7 +543,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     gap: 8,
-    marginTop: 10,
+    marginTop: 7,
   },
   sortLabel: {
     fontFamily: "Outfit_700Bold",

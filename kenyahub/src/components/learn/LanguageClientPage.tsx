@@ -52,6 +52,12 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   );
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+    }
+  }, [view, activeLesson]);
+
+  useEffect(() => {
     if (!languageId) return;
     const p = loadProgress(languageId);
     const withHearts = refillHearts(p);
@@ -93,6 +99,9 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       }
       setActiveLesson({ skill, level, reviewItems, reviewOnly: false });
       setView("playing");
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+      }
     },
     [findSkill, progress]
   );
@@ -107,6 +116,9 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
     setActiveLesson({ skill, level: progress.skillLevels[skill.id] || 1, reviewItems, reviewOnly: true });
     setView("playing");
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+    }
   }, [course, findSkill, progress]);
 
   const handleLessonComplete = useCallback(
@@ -206,6 +218,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     <ToolShell
       tool={LEARN_TOOL}
       breadcrumbSuffix={[{ label: course.config.name }]}
+      hideHeader={view === "playing"}
+      hideFooter={view === "playing"}
     >
       {/* Top Bar: Compact Language Dropdown on Left + XP on Right */}
       {view !== "playing" && (

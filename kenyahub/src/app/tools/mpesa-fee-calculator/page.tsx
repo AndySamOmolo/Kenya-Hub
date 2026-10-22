@@ -49,9 +49,9 @@ function findOptimalSplit(amount: number, type: TransactionType) {
 
 const faq = [
   {
-    question: "How does 'Tuma na ya Kutoa' (Send + Withdrawal Fee) work?",
+    question: "How does the Include Agent Withdrawal Fee option work?",
     answer:
-      "When you want a recipient to withdraw an exact cash amount (e.g. KES 5,000) from an M-Pesa Agent, you must send KES 5,000 plus the agent withdrawal fee for that bracket so they aren't short. Our built-in 'Tuma na ya Kutoa' calculator computes the exact amount to send, the recipient's withdrawal fee, and your sending fee.",
+      "When you want a recipient to withdraw an exact cash amount (e.g. KES 5,000) from an M-Pesa Agent, you must send KES 5,000 plus the agent withdrawal fee for that bracket so they aren't short. Enabling the Agent Withdrawal Fee option computes the exact amount to send, the recipient's withdrawal fee, and your sending fee.",
   },
   {
     question: "Are M-Pesa Buy Goods (Lipa Na M-Pesa) transactions free?",
@@ -161,7 +161,7 @@ export default function MpesaFeeCalculatorPage() {
               className="rounded accent-gold"
             />
             <span className="text-xs sm:text-sm font-semibold text-text-primary">
-              Include &ldquo;Ya Kutoa&rdquo; (Add M-Pesa Agent Withdrawal Fee so recipient withdraws exact KES {amount.toLocaleString()})
+              Include Agent Withdrawal Fee (Add M-Pesa Agent Withdrawal Fee so recipient withdraws exact KES {amount.toLocaleString()})
             </span>
           </label>
 
@@ -189,7 +189,7 @@ export default function MpesaFeeCalculatorPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
             <div>
               <p className="text-xs text-text-muted mb-1">
-                {includeWithdrawal ? "Amount to Send (+Ya Kutoa)" : "Amount"}
+                {includeWithdrawal ? "Amount to Send (+Withdrawal Fee)" : "Amount"}
               </p>
               <p className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)]">
                 KES {results.amountToSend.toLocaleString()}

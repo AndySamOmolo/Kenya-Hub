@@ -169,7 +169,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <ThemeProvider>
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 w-full min-w-0 max-w-full overflow-x-hidden">{children}</main>
           <Footer />
           <CookieConsent />
         </ThemeProvider>

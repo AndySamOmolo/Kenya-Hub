@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
@@ -83,6 +83,11 @@ export default function ToolDetailScreen() {
   const tool = TOOLS.find((item) => item.slug === slug);
   const [saved, setSaved] = useState(false);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
+  const scrollRef = useRef<ScrollView>(null);
+  const scrollToTop = () => {
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
+    requestAnimationFrame(() => scrollRef.current?.scrollTo({ y: 0, animated: false }));
+  };
 
   useEffect(() => {
     if (tool) {
@@ -204,11 +209,11 @@ export default function ToolDetailScreen() {
       case "kcse-grade-calculator":
         return <KcseCalculatorTool />;
       case "kikuyu-proverbs":
-        return <LanguageLearningTool />;
+        return <LanguageLearningTool onScrollToTop={scrollToTop} />;
       case "kenyan-translator":
         return <KenyanTranslatorTool />;
       case "learn":
-        return <LanguageLearningTool />;
+        return <LanguageLearningTool onScrollToTop={scrollToTop} />;
       case "kcse-school-rankings":
         return <KcseRankingsTool />;
       case "school-terms":
@@ -259,6 +264,7 @@ export default function ToolDetailScreen() {
       />
 
       <ScrollView
+        ref={scrollRef}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
@@ -493,7 +499,7 @@ export default function ToolDetailScreen() {
         )}
 
         {/* Related Tools */}
-        {related.length > 0 && (
+        {tool.slug !== "learn" && related.length > 0 && (
           <View style={styles.relatedSection}>
             <Text style={[styles.relatedHeading, { color: theme.gold }]}>
               RELATED TOOLS

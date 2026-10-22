@@ -1262,13 +1262,16 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   heroWrap: {
-    paddingHorizontal: 16,
-    paddingTop: 14,
+    paddingHorizontal: 10,
+    paddingTop: 12,
+    paddingBottom: 16,
   },
   heroCard: {
     borderRadius: 24,
     borderWidth: 1,
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingTop: 20,
+    paddingBottom: 24,
     elevation: Platform.OS === "android" ? 2 : 0,
   },
   statusPill: {
