@@ -74,6 +74,7 @@ export function markdownToHtml(content: string): string {
   let i = 0;
 
   while (i < lines.length) {
+    const loopStartI = i;
     const line = lines[i];
     const trimmed = line.trim();
 
@@ -207,24 +208,32 @@ export function markdownToHtml(content: string): string {
         const curTrim = curRaw.trim();
         if (!curTrim) break;
 
-        const matchTopUl = !isOl && /^[-*]\s+(.*)$/.test(curRaw);
-        const matchTopOl = isOl && /^\d+\.\s+(.*)$/.test(curRaw);
+        const matchTopUl = !isOl && /^[-*]\s+(.*)$/.test(curTrim);
+        const matchTopOl = isOl && /^\d+\.\s+(.*)$/.test(curTrim);
 
         if (matchTopUl || matchTopOl) {
-          const mainText = curRaw.replace(/^(\d+\.|[-*])\s+/, "").trim();
+          const mainText = curTrim.replace(/^(\d+\.|[-*])\s+/, "").trim();
           let liContent = formatInlineMarkdown(mainText);
           i++;
 
-          // Collect any indented sub-bullets or indented blockquotes belonging to this list item
-          const subBullets: string[] = [];
+          // Collect any indented sub-bullets, indented numbered items, or indented blockquotes belonging to this list item
+          const subUlBullets: string[] = [];
+          const subOlBullets: string[] = [];
           const subQuotes: string[] = [];
           while (i < lines.length) {
             const subRaw = lines[i];
             const subTrim = subRaw.trim();
             if (/^\s{2,}[-*]\s+/.test(subRaw)) {
-              subBullets.push(
+              subUlBullets.push(
                 `<li>${formatInlineMarkdown(
                   subTrim.replace(/^[-*]\s+/, "")
+                )}</li>`
+              );
+              i++;
+            } else if (/^\s{2,}\d+\.\s+/.test(subRaw)) {
+              subOlBullets.push(
+                `<li>${formatInlineMarkdown(
+                  subTrim.replace(/^\d+\.\s+/, "")
                 )}</li>`
               );
               i++;
@@ -238,8 +247,11 @@ export function markdownToHtml(content: string): string {
             }
           }
 
-          if (subBullets.length > 0) {
-            liContent += `\n<ul>${subBullets.join("\n")}</ul>`;
+          if (subUlBullets.length > 0) {
+            liContent += `\n<ul>${subUlBullets.join("\n")}</ul>`;
+          }
+          if (subOlBullets.length > 0) {
+            liContent += `\n<ol>${subOlBullets.join("\n")}</ol>`;
           }
           if (subQuotes.length > 0) {
             liContent += `\n<blockquote>${subQuotes.join("<br />")}</blockquote>`;
@@ -250,7 +262,12 @@ export function markdownToHtml(content: string): string {
         }
       }
 
-      blocks.push(`<${listTag}>\n${itemsHtml.join("\n")}\n</${listTag}>`);
+      if (itemsHtml.length > 0) {
+        blocks.push(`<${listTag}>\n${itemsHtml.join("\n")}\n</${listTag}>`);
+      }
+      if (i === loopStartI) {
+        i++;
+      }
       continue;
     }
 
@@ -274,6 +291,7 @@ export function markdownToHtml(content: string): string {
         !pTrim ||
         /^#{1,4}\s+/.test(pTrim) ||
         /^---+$/.test(pTrim) ||
+        /^\*\*\*+$/.test(pTrim) ||
         /^>\s*/.test(pTrim) ||
         /^[-*]\s+/.test(pTrim) ||
         /^\d+\.\s+/.test(pTrim) ||
@@ -291,6 +309,9 @@ export function markdownToHtml(content: string): string {
     }
     if (paraLines.length > 0) {
       blocks.push(`<p>${paraLines.join(" ")}</p>`);
+    }
+    if (i === loopStartI) {
+      i++;
     }
   }
 
