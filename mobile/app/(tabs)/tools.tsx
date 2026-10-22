@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter, useLocalSearchParams, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -299,11 +300,7 @@ export default function ToolsScreen() {
         </View>
 
         {/* Horizontal Scrolling Category Pills (Standalone rounded-full pills) */}
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 2 }}
-        >
+        <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 2 }}>
           {categories.map((item) => {
             const active = item.id === category;
             return (
@@ -332,22 +329,14 @@ export default function ToolsScreen() {
               </Pressable>
             );
           })}
-        </ScrollView>
+        </ExpandablePillRow>
 
         {/* Material 3 Segmented Sort Row (mirrors web Sort: Most used | A-Z | Category) */}
         <View style={styles.sortRow}>
           <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
             SORT BY
           </Text>
-          <View
-            style={[
-              styles.segmentedGroup,
-              {
-                backgroundColor: theme.surfaceContainer,
-                borderColor: theme.outlineVariant,
-              },
-            ]}
-          >
+          <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
             {(
               [
                 { id: "popular", label: "Most used", icon: "trending-up" as const },
@@ -361,10 +350,17 @@ export default function ToolsScreen() {
                   key={option.id}
                   android_ripple={androidRipple(theme.rippleColor)}
                   onPress={() => setSortBy(option.id)}
-                  style={[
-                    styles.segmentBtn,
-                    active && { backgroundColor: theme.primaryContainer },
-                  ]}
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: 5,
+                    paddingHorizontal: 12,
+                    paddingVertical: 6,
+                    borderRadius: 999,
+                    borderWidth: 1,
+                    backgroundColor: active ? theme.primaryContainer : theme.surfaceContainer,
+                    borderColor: active ? theme.gold : theme.outlineVariant,
+                  }}
                 >
                   <Ionicons
                     name={option.icon}
@@ -386,7 +382,7 @@ export default function ToolsScreen() {
                 </Pressable>
               );
             })}
-          </View>
+          </ExpandablePillRow>
         </View>
       </View>
 
@@ -497,11 +493,11 @@ const styles = StyleSheet.create({
   searchWrap: {
     flexDirection: "row",
     alignItems: "center",
-    borderRadius: 26,
+    borderRadius: 24,
     borderWidth: 1,
-    paddingHorizontal: 16,
-    minHeight: 48,
-    paddingVertical: 4,
+    paddingHorizontal: 14,
+    height: 44,
+    marginBottom: 12,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchIcon: {
@@ -509,7 +505,8 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
-    fontSize: 14,
+    fontSize: 13.5,
+    paddingVertical: 0,
   },
   catHeaderRow: {
     flexDirection: "row",
@@ -635,16 +632,19 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     alignItems: "center",
     justifyContent: "center",
+    marginLeft: 10,
   },
   body: {
     flex: 1,
-    marginLeft: 14,
+    marginLeft: 12,
+    marginRight: 4,
   },
   categoryPillWrap: {
     flexDirection: "row",
+    flexWrap: "wrap",
     alignItems: "center",
     gap: 5,
-    marginBottom: 2,
+    marginBottom: 3,
   },
   categoryDot: {
     width: 5,

@@ -1,7 +1,9 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import mjengoData from "@/data/mjengo-construction-rates.json";
 
@@ -76,27 +78,24 @@ export default function MjengoConstructionCalculatorPage() {
             <label className="block text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2">
               Quick House Size Presets
             </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+            <ExpandablePillRow>
               {mjengoData.housePresets.map((p) => {
                 const active = Number(floorArea) === p.sqm;
                 return (
                   <button
                     key={p.id}
                     onClick={() => setFloorArea(String(p.sqm))}
-                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                    className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
                       active
-                        ? "bg-[var(--gold)]/15 border-[var(--gold)]/50 text-[var(--text-primary)]"
-                        : "bg-[var(--bg-elevated)] border-[var(--border)] text-[var(--text-secondary)]"
+                        ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                        : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
                     }`}
                   >
-                    <p className="text-xs font-bold text-[var(--text-primary)]">{p.name}</p>
-                    <p className="text-[11px] text-[var(--gold)] font-semibold mt-0.5">
-                      {p.sqm} m² ({p.bedrooms} Bed · {p.bathrooms} Bath)
-                    </p>
+                    {p.name} ({p.sqm} m² · {p.bedrooms}BR)
                   </button>
                 );
               })}
-            </div>
+            </ExpandablePillRow>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -131,33 +130,29 @@ export default function MjengoConstructionCalculatorPage() {
               <label className="block text-xs text-[var(--text-secondary)] mb-1">
                 Region & Quarry Transport Zone
               </label>
-              <select
+              <CustomSelect
                 value={regionId}
-                onChange={(e) => setRegionId(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-xs font-semibold text-[var(--text-primary)]"
-              >
-                {mjengoData.regions.map((r) => (
-                  <option key={r.id} value={r.id}>
-                    {r.name}
-                  </option>
-                ))}
-              </select>
+                onValueChange={(val) => setRegionId(val)}
+                options={mjengoData.regions.map((r) => ({
+                  value: r.id,
+                  label: r.name,
+                }))}
+                className="w-full text-xs"
+              />
             </div>
             <div>
               <label className="block text-xs text-[var(--text-secondary)] mb-1">
                 Finishing Tier (Roofing, Tiles & Joinery)
               </label>
-              <select
+              <CustomSelect
                 value={finishId}
-                onChange={(e) => setFinishId(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-xs font-semibold text-[var(--text-primary)]"
-              >
-                {mjengoData.finishTiers.map((f) => (
-                  <option key={f.id} value={f.id}>
-                    {f.name}
-                  </option>
-                ))}
-              </select>
+                onValueChange={(val) => setFinishId(val)}
+                options={mjengoData.finishTiers.map((f) => ({
+                  value: f.id,
+                  label: f.name,
+                }))}
+                className="w-full text-xs"
+              />
             </div>
           </div>
         </div>

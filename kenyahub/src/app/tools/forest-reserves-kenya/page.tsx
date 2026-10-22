@@ -1,4 +1,5 @@
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
@@ -29,7 +30,7 @@ export default function ForestReservesPage() {
       <div className="space-y-6">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search forests by name or county..." className="input-field text-sm" id="forest-search"  onClear={() => setSearch("")} />
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          <ExpandablePillRow>
             <button
               onClick={() => setEcoFilter("all")}
               className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
@@ -56,7 +57,7 @@ export default function ForestReservesPage() {
                 </button>
               );
             })}
-          </div>
+          </ExpandablePillRow>
           <label className="flex items-center gap-2 cursor-pointer">
             <input type="checkbox" checked={hikingOnly} onChange={(e) => setHikingOnly(e.target.checked)} className="rounded" />
             <span className="text-xs text-text-secondary"><DynamicIcon emoji="🥾" className="w-3.5 h-3.5 text-gold inline-block mr-1" />Show hiking-accessible only</span>

@@ -1,10 +1,10 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { BusFront, Check } from "lucide-react";
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
-import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
 
 interface TownMatatuViewProps {
@@ -17,7 +17,6 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
 
   const [search, setSearch] = useState("");
   const [saccoFilter, setSaccoFilter] = useState("all");
-  const [fareFilter, setFareFilter] = useState("all");
 
   const saccos = useMemo(() => {
     return Array.from(new Set(routes.map((r) => r.saccoName))).sort();
@@ -26,9 +25,6 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
   const filteredRoutes = useMemo(() => {
     return routes.filter((r) => {
       if (saccoFilter !== "all" && r.saccoName !== saccoFilter) return false;
-      if (fareFilter === "under50" && r.fareMax > 50) return false;
-      if (fareFilter === "50to100" && (r.fareMax < 50 || r.fareMin > 100)) return false;
-      if (fareFilter === "above100" && r.fareMax <= 100) return false;
 
       if (search.trim()) {
         const q = search.toLowerCase();
@@ -43,7 +39,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
       }
       return true;
     });
-  }, [routes, saccoFilter, fareFilter, search]);
+  }, [routes, saccoFilter, search]);
 
   if (!townInfo) {
     return (
@@ -77,47 +73,36 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
       </div>
 
       {/* Filter panel */}
-      <div className="bg-bg-card border border-border rounded-xl p-5 mb-8 space-y-4">
+      <div className="bg-bg-card border border-border rounded-xl p-5 mb-8 space-y-3.5">
         <SearchInput
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search by route number, destination, stage, or SACCO (e.g. 'Route 33', 'Rongai', 'Kencom')..."
+          placeholder="Search by route number, destination, stage, or SACCO..."
           className="input-field text-sm"
           id="town-matatu-search"
-         onClear={() => setSearch("")} />
+          onClear={() => setSearch("")}
+        />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label className="text-[0.65rem] text-text-muted block mb-1">Filter by SACCO</label>
-            <CustomSelect
-              value={saccoFilter}
-              onChange={(e) => setSaccoFilter(e.target.value)}
-              className="input-field text-sm"
-              id="sacco-filter"
-            >
-              <option value="all">All SACCOs ({saccos.length})</option>
-              {saccos.map((s) => (
-                <option key={s} value={s}>{s}</option>
-              ))}
-            </CustomSelect>
-          </div>
-
-          <div>
-            <label className="text-[0.65rem] text-text-muted block mb-1">Filter by Fare Range</label>
-            <CustomSelect
-              value={fareFilter}
-              onChange={(e) => setFareFilter(e.target.value)}
-              className="input-field text-sm"
-              id="fare-filter"
-            >
-              <option value="all">All Fare Ranges</option>
-              <option value="under50">Under KES 50</option>
-              <option value="50to100">KES 50 – KES 100</option>
-              <option value="above100">Above KES 100</option>
-            </CustomSelect>
-          </div>
-        </div>
+        {/* Horizontal Pill Bar for SACCO Filter */}
+        <ExpandablePillRow className="pt-1">
+          {["all", ...saccos].map((s) => {
+            const active = saccoFilter === s;
+            return (
+              <button
+                key={s}
+                onClick={() => setSaccoFilter(s)}
+                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {s === "all" ? `All SACCOs (${saccos.length})` : s}
+              </button>
+            );
+          })}
+        </ExpandablePillRow>
       </div>
 
       <p className="text-xs text-text-muted mb-4">{filteredRoutes.length} routes found</p>
@@ -181,7 +166,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
         <div className="text-center py-16 bg-bg-card border border-border rounded-xl">
           <div className="flex justify-center mb-4"><BusFront className="w-10 h-10 text-gold" /></div>
           <p className="text-sm font-semibold text-text-primary mb-1">No routes found</p>
-          <p className="text-xs text-text-muted">Try adjusting your search query or filters.</p>
+          <p className="text-xs text-text-muted">Try adjusting your search query or SACCO filter.</p>
         </div>
       )}
     </div>

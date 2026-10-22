@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import {
   View,
@@ -17,6 +18,7 @@ import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
 import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
+import { getCulturalWisdomForLanguage, type CulturalWisdomItem } from '../shared/data/courses/cultural-wisdom';
 import { generateExercises, checkAnswer } from '../shared/lib/learn-engine';
 import {
   isSkillUnlocked,
@@ -266,17 +268,44 @@ export default function LanguageCourseTool() {
         const current = prevAll[selectedLangId] || createDefaultLanguageProgress(selectedLangId);
         const updated = updater(current);
 
-        // Check achievements
+        // Check all 18 achievements & award XP bonuses
         const unlocked = new Set(updated.unlockedAchievements);
         const totalLessons = Object.values(updated.skills).reduce((s, k) => s + k.lessonsCompleted, 0);
-        const wordsLearnedCount = Object.keys(updated.wordStrengths).length;
-        if (totalLessons >= 1) unlocked.add('first-steps');
-        if (updated.streak >= 7) unlocked.add('on-fire');
-        if (updated.perfectLessons >= 1) unlocked.add('perfect-score');
-        if (wordsLearnedCount >= 100) unlocked.add('bookworm');
-        if (totalLessons >= 20) unlocked.add('dedicated');
-        if (updated.totalXP >= 8000) unlocked.add('diamond');
-        if (wordsLearnedCount >= 200) unlocked.add('memory-king');
+        const skillLevelsRecord: Record<string, number> = {};
+        for (const [k, v] of Object.entries(updated.skills)) {
+          skillLevelsRecord[k] = v.level;
+        }
+        const pseudoProgress = {
+          version: 2,
+          languageId: updated.languageId,
+          skillLevels: skillLevelsRecord,
+          unlockAll: updated.unlockAll,
+          xp: updated.totalXP,
+          streak: updated.streak,
+          lastActiveDate: updated.lastPracticeDate,
+          dailyGoal: updated.dailyGoal,
+          todayXp: updated.dailyXP,
+          hearts: updated.hearts,
+          heartsLastRefill: updated.heartsLastRefill,
+          achievements: Array.from(unlocked),
+          wordsLearned: Object.keys(updated.wordStrengths),
+          lessonsCompleted: totalLessons,
+          perfectLessons: updated.perfectLessons,
+          gamesPlayed: updated.gamesPlayed,
+          streakFreezes: 0,
+          reviewQueue: [],
+        };
+        let bonusXp = 0;
+        for (const ach of ACHIEVEMENTS) {
+          if (!unlocked.has(ach.id) && ach.condition(pseudoProgress)) {
+            unlocked.add(ach.id);
+            bonusXp += ach.xpReward || 0;
+          }
+        }
+        if (bonusXp > 0) {
+          updated.totalXP += bonusXp;
+          updated.dailyXP += bonusXp;
+        }
         updated.unlockedAchievements = Array.from(unlocked);
 
         const nextAll = { ...prevAll, [selectedLangId]: updated };
@@ -550,8 +579,9 @@ export default function LanguageCourseTool() {
       // Complete Lesson & Persist Mastery
       const total = Math.max(1, exercises.length);
       const accuracy = Math.round((correctCount / total) * 100);
-      const completionBonus = accuracy === 100 ? 25 : 15;
-      const finalLessonXP = xpEarned + completionBonus;
+      const completionBonus = accuracy === 100 ? 50 : 20;
+      const streakBonus = Math.min(Math.max(1, progress.streak), 7) * 5;
+      const finalLessonXP = xpEarned + completionBonus + streakBonus;
       setXpEarned(finalLessonXP);
 
       if (activeSkill) {
@@ -1518,9 +1548,14 @@ export default function LanguageCourseTool() {
                 >
                   <Text style={{ fontSize: 16 }}>{ach.icon}</Text>
                   <View style={{ flex: 1 }}>
-                    <Text style={{ fontSize: 11, fontWeight: '800', color: colors.text }}>
-                      {ach.name}
-                    </Text>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
+                      <Text style={{ fontSize: 11, fontWeight: '800', color: colors.text }}>
+                        {ach.name}
+                      </Text>
+                      <Text style={{ fontSize: 10, fontWeight: '800', color: isUnlocked ? '#10B981' : langColor }}>
+                        +{ach.xpReward} XP
+                      </Text>
+                    </View>
                     <Text style={{ fontSize: 10, color: colors.textMuted }}>{ach.description}</Text>
                   </View>
                 </View>
@@ -1530,79 +1565,51 @@ export default function LanguageCourseTool() {
         )}
       </View>
 
-      {/* 2. Compact 1-Row Language Course Switcher (expands on tap) */}
-      <Pressable
-        android_ripple={ripple}
-        onPress={() => setShowLangPicker((v) => !v)}
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          paddingHorizontal: 14,
-          paddingVertical: 10,
-          borderRadius: 14,
-          borderWidth: 1,
-          backgroundColor: colors.surfaceContainerLow,
-          borderColor: showLangPicker ? langColor : colors.outlineVariant,
-        }}
-      >
-        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-          <View style={[styles.langColorDot, { backgroundColor: langColor }]} />
-          <Text style={{ fontSize: 13, fontWeight: '800', color: colors.text }}>
-            Course: {currentCourse?.config.name} ({currentCourse?.config.nativeName})
-          </Text>
-        </View>
-        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-          <Text style={{ fontSize: 11.5, fontWeight: '700', color: langColor }}>
-            {showLangPicker ? 'Close' : `Switch (${PUBLISHED_COURSES.length})`}
-          </Text>
-          <Feather name={showLangPicker ? 'chevron-up' : 'chevron-down'} size={15} color={langColor} />
-        </View>
-      </Pressable>
-      {showLangPicker && (
-        <View style={styles.langChipsGrid}>
-          {PUBLISHED_COURSES.map((course) => {
-            const isSelected = course.config.id === selectedLangId;
-            return (
-              <Pressable
-                key={course.config.id}
-                android_ripple={ripple}
-                onPress={() => {
-                  setSelectedLangId(course.config.id);
-                  setCardIndex(0);
-                  setIsCardFlipped(false);
-                  setActiveGame('menu');
-                  setShowLangPicker(false);
+      {/* 2. Horizontal Scrolling Pill Selector for Language Courses */}
+      <ExpandablePillRow contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}>
+        {PUBLISHED_COURSES.map((course) => {
+          const isSelected = course.config.id === selectedLangId;
+          return (
+            <Pressable
+              key={course.config.id}
+              android_ripple={ripple}
+              onPress={() => {
+                setSelectedLangId(course.config.id);
+                setProverbCategory('All');
+                setProverbSearch('');
+                setProverbPage(1);
+                setCardIndex(0);
+                setIsCardFlipped(false);
+                setActiveGame('menu');
+              }}
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                gap: 6,
+                paddingHorizontal: 14,
+                paddingVertical: 7,
+                borderRadius: 999,
+                borderWidth: 1,
+                backgroundColor: isSelected
+                  ? `${course.config.color}24`
+                  : colors.surfaceContainerLow,
+                borderColor: isSelected ? course.config.color : colors.outlineVariant,
+              }}
+            >
+              <View style={[styles.langColorDot, { backgroundColor: course.config.color }]} />
+              <Text
+                style={{
+                  fontSize: 12.5,
+                  fontWeight: isSelected ? '800' : '600',
+                  color: isSelected ? colors.text : colors.textSecondary,
                 }}
-                style={[
-                  styles.langFilterChip,
-                  {
-                    backgroundColor: isSelected
-                      ? `${course.config.color}24`
-                      : colors.surfaceContainerLow,
-                    borderColor: isSelected ? course.config.color : colors.outlineVariant,
-                  },
-                ]}
               >
-                {isSelected ? (
-                  <Feather name="check" size={14} color={course.config.color} />
-                ) : (
-                  <View style={[styles.langColorDot, { backgroundColor: course.config.color }]} />
-                )}
-                <Text
-                  style={{
-                    fontSize: 12.5,
-                    fontWeight: isSelected ? '800' : '600',
-                    color: isSelected ? colors.text : colors.textSecondary,
-                  }}
-                >
-                  {course.config.name}
-                </Text>
-              </Pressable>
-            );
-          })}
-        </View>
-      )}
+                {course.config.name}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </ExpandablePillRow>
 
       {/* 3. Selected Language Banner + Verified Sources */}
       {currentCourse && (
@@ -1657,11 +1664,7 @@ export default function LanguageCourseTool() {
       )}
 
       {/* 4. Standalone Horizontal Pill Navigation Bar (Path | Vocab | Games | Grammar | Wisdom) */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}
-      >
+      <ExpandablePillRow contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}>
         {(
           [
             { id: 'learn', label: 'Path' },
@@ -1700,7 +1703,7 @@ export default function LanguageCourseTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </ExpandablePillRow>
 
       {/* ========================================================================
           TAB 1: SKILL TREE PATH (UNITS ACCORDION + 5-STAR MASTERY + LESSON LAUNCH)
@@ -2733,61 +2736,13 @@ export default function LanguageCourseTool() {
         </View>
       )}
       {/* ========================================================================
-          TAB 5: PROVERBS, RIDDLES & ORAL WISDOM (GĨKŨYŨ & DHOLUO)
+          TAB 5: PROVERBS, RIDDLES & ORAL WISDOM (LOCKED TO SELECTED LANGUAGE)
          ======================================================================== */}
       {activeTab === 'proverbs' && (
         <View style={styles.grammarTabWrap}>
-          {/* Standalone Horizontal Pill Menu for Wisdom Language & Sub-Tabs */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}
-          >
-            {[
-              { id: 'kikuyu' as const, label: 'Gĩkũyũ (989)' },
-              {
-                id: 'luo' as const,
-                label: `Dholuo (${luoProverbs.length + luoRiddles.length + luoTongueTwisters.length})`,
-              },
-            ].map((item) => {
-              const active = wisdomLang === item.id;
-              return (
-                <Pressable
-                  key={item.id}
-                  onPress={() => {
-                    setWisdomLang(item.id);
-                    setProverbCategory('All');
-                    setProverbPage(1);
-                  }}
-                  style={{
-                    paddingHorizontal: 16,
-                    paddingVertical: 7,
-                    borderRadius: 999,
-                    borderWidth: 1,
-                    backgroundColor: active ? `${langColor}22` : colors.surfaceContainerLow,
-                    borderColor: active ? langColor : colors.outlineVariant,
-                  }}
-                >
-                  <Text
-                    style={{
-                      fontSize: 12.5,
-                      fontWeight: active ? '800' : '600',
-                      color: active ? langColor : colors.textSecondary,
-                    }}
-                  >
-                    {item.label}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </ScrollView>
-
-          {wisdomLang === 'luo' && (
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}
-            >
+          {/* Sub-Tabs for Dholuo only (Proverbs | Riddles | Twisters) */}
+          {selectedLangId === 'luo' && (
+            <ExpandablePillRow contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}>
               {[
                 { id: 'proverbs' as const, label: `Proverbs (${luoProverbs.length})` },
                 { id: 'riddles' as const, label: `Riddles (${luoRiddles.length})` },
@@ -2822,14 +2777,18 @@ export default function LanguageCourseTool() {
                   </Pressable>
                 );
               })}
-            </ScrollView>
+            </ExpandablePillRow>
           )}
 
-          {/* Search Input */}
+          {/* Search Input (with bottom spacing before theme pills) */}
           <View
             style={[
               styles.m3SearchBar,
-              { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant },
+              {
+                backgroundColor: colors.surfaceContainerLow,
+                borderColor: colors.outlineVariant,
+                marginBottom: 4,
+              },
             ]}
           >
             <Feather name="search" size={16} color={colors.textMuted} />
@@ -2839,12 +2798,9 @@ export default function LanguageCourseTool() {
                 setProverbSearch(t);
                 setProverbPage(1);
               }}
-              placeholder={
-                wisdomLang === 'kikuyu'
-                  ? 'Search Gĩkũyũ proverb, English meaning, or #...'
-                  : 'Search Dholuo proverb, riddle, or meaning...'
-              }
+              placeholder={`Search ${currentCourse?.config.name || ''} wisdom or meaning...`}
               placeholderTextColor={colors.textMuted}
+              numberOfLines={1}
               style={{ flex: 1, fontSize: 13, color: colors.text, paddingVertical: 6 }}
             />
             {proverbSearch.length > 0 && (
@@ -2854,36 +2810,10 @@ export default function LanguageCourseTool() {
             )}
           </View>
 
-          {/* Compact 1-Row Theme Filter Trigger (expands on tap) */}
-          {(wisdomLang === 'kikuyu' || (wisdomLang === 'luo' && luoSubTab === 'proverbs')) && (
-            <>
-              <Pressable
-                onPress={() => setShowThemePicker((v) => !v)}
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  paddingHorizontal: 12,
-                  paddingVertical: 8,
-                  borderRadius: 12,
-                  borderWidth: 1,
-                  backgroundColor: colors.surfaceContainerLow,
-                  borderColor: showThemePicker ? langColor : colors.outlineVariant,
-                }}
-              >
-                <Text style={{ fontSize: 12, fontWeight: '700', color: colors.text }}>
-                  Theme: {proverbCategory}
-                </Text>
-                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                  <Text style={{ fontSize: 11, fontWeight: '700', color: langColor }}>
-                    {showThemePicker ? 'Close' : 'Filter Theme'}
-                  </Text>
-                  <Feather name={showThemePicker ? 'chevron-up' : 'chevron-down'} size={14} color={langColor} />
-                </View>
-              </Pressable>
-              {showThemePicker && (
-                <View style={styles.langChipsGrid}>
-              {(wisdomLang === 'kikuyu'
+          {/* Horizontal Scrolling Pill Filter for Themes */}
+          {(selectedLangId !== 'luo' || luoSubTab === 'proverbs') && (
+            <ExpandablePillRow contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}>
+              {(selectedLangId === 'kikuyu'
                 ? [
                     'All',
                     ...Array.from(
@@ -2894,7 +2824,19 @@ export default function LanguageCourseTool() {
                       )
                     ),
                   ]
-                : ['All', 'wisdom', 'warning', 'truth', 'patience', 'family', 'character', 'life']
+                : selectedLangId === 'luo'
+                ? ['All', 'wisdom', 'warning', 'truth', 'patience', 'family', 'character', 'life']
+                : [
+                    'All',
+                    ...Array.from(
+                      new Set(
+                        getCulturalWisdomForLanguage(selectedLangId)
+                          .map((item) => item.category)
+                          .filter(Boolean)
+                      )
+                    ),
+                    'tradition',
+                  ]
               ).map((cat: string) => {
                 const active = proverbCategory === cat;
                 return (
@@ -2903,12 +2845,11 @@ export default function LanguageCourseTool() {
                     onPress={() => {
                       setProverbCategory(cat);
                       setProverbPage(1);
-                      setShowThemePicker(false);
                     }}
                     style={{
-                      paddingHorizontal: 10,
-                      paddingVertical: 5,
-                      borderRadius: 10,
+                      paddingHorizontal: 14,
+                      paddingVertical: 6,
+                      borderRadius: 999,
                       borderWidth: 1,
                       backgroundColor: active ? `${langColor}22` : colors.surfaceContainerLow,
                       borderColor: active ? langColor : colors.outlineVariant,
@@ -2916,24 +2857,22 @@ export default function LanguageCourseTool() {
                   >
                     <Text
                       style={{
-                        fontSize: 11,
+                        fontSize: 11.5,
                         fontWeight: active ? '800' : '600',
-                        color: active ? colors.text : colors.textSecondary,
+                        color: active ? langColor : colors.textSecondary,
                         textTransform: 'capitalize',
                       }}
                     >
-                      {cat}
+                      {cat === 'All' ? 'All Themes' : cat}
                     </Text>
                   </Pressable>
                 );
               })}
-                </View>
-              )}
-            </>
+            </ExpandablePillRow>
           )}
 
-          {/* Kikuyu Proverbs List */}
-          {wisdomLang === 'kikuyu' &&
+          {/* 1. Kikuyu Proverbs List */}
+          {selectedLangId === 'kikuyu' &&
             (() => {
               const q = proverbSearch.trim().toLowerCase();
               const rawList = Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : [];
@@ -3008,8 +2947,8 @@ export default function LanguageCourseTool() {
               );
             })()}
 
-          {/* Luo Proverbs / Riddles / Twisters */}
-          {wisdomLang === 'luo' && luoSubTab === 'proverbs' &&
+          {/* 2. Dholuo Proverbs / Riddles / Twisters */}
+          {selectedLangId === 'luo' && luoSubTab === 'proverbs' &&
             (() => {
               const q = proverbSearch.trim().toLowerCase();
               const filtered = luoProverbs.filter((p) => {
@@ -3070,7 +3009,7 @@ export default function LanguageCourseTool() {
               );
             })()}
 
-          {wisdomLang === 'luo' && luoSubTab === 'riddles' && (
+          {selectedLangId === 'luo' && luoSubTab === 'riddles' && (
             <View style={{ gap: 10 }}>
               {luoRiddles
                 .filter((r) => {
@@ -3124,7 +3063,7 @@ export default function LanguageCourseTool() {
             </View>
           )}
 
-          {wisdomLang === 'luo' && luoSubTab === 'twisters' && (
+          {selectedLangId === 'luo' && luoSubTab === 'twisters' && (
             <View style={{ gap: 10 }}>
               {luoTongueTwisters.map((t) => (
                 <View
@@ -3147,6 +3086,92 @@ export default function LanguageCourseTool() {
               ))}
             </View>
           )}
+
+          {/* 3. Luhya, Kamba, Kisii, Maasai, Teso & Turkana Wisdom (Locked to selectedLangId) */}
+          {selectedLangId !== 'kikuyu' && selectedLangId !== 'luo' &&
+            (() => {
+              const q = proverbSearch.trim().toLowerCase();
+              const baseItems = getCulturalWisdomForLanguage(selectedLangId);
+              const noteItems: CulturalWisdomItem[] = [];
+              if (currentCourse) {
+                const seen = new Set<string>();
+                currentCourse.units.forEach((u) => {
+                  u.skills.forEach((s) => {
+                    if (
+                      s.culturalNote &&
+                      !s.culturalNote.startsWith('Source attribution:') &&
+                      !seen.has(s.culturalNote)
+                    ) {
+                      seen.add(s.culturalNote);
+                      const w0 = s.words[0];
+                      noteItems.push({
+                        id: `${selectedLangId}-note-${s.id}`,
+                        languageId: selectedLangId,
+                        nativeText: w0 ? `${w0.target} — "${w0.source}"` : s.title,
+                        literalTranslation: s.title,
+                        meaning: s.culturalNote,
+                        category: 'tradition',
+                      });
+                    }
+                  });
+                });
+              }
+              const combined = [...baseItems, ...noteItems];
+              const filtered = combined.filter((item) => {
+                if (proverbCategory !== 'All' && item.category !== proverbCategory) return false;
+                if (!q) return true;
+                return (
+                  item.nativeText.toLowerCase().includes(q) ||
+                  item.literalTranslation.toLowerCase().includes(q) ||
+                  item.meaning.toLowerCase().includes(q) ||
+                  (item.englishEquivalent || '').toLowerCase().includes(q)
+                );
+              });
+              return (
+                <View style={{ gap: 10 }}>
+                  <Text style={{ fontSize: 11, color: colors.textMuted }}>
+                    Showing {filtered.length} {currentCourse?.config.name} proverbs & cultural wisdom entries
+                  </Text>
+                  {filtered.map((item, idx) => (
+                    <View
+                      key={item.id}
+                      style={[
+                        styles.grammarAccordionCard,
+                        {
+                          backgroundColor: colors.surfaceContainerLow,
+                          borderColor: colors.outlineVariant,
+                          padding: 14,
+                          gap: 6,
+                        },
+                      ]}
+                    >
+                      <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <Text style={{ fontSize: 11, fontWeight: '800', color: langColor }}>
+                          {item.category === 'tradition' ? `Tradition #${idx + 1}` : `Proverb #${idx + 1}`}
+                        </Text>
+                        <Text style={{ fontSize: 11, color: colors.textMuted, textTransform: 'capitalize' }}>
+                          {item.category}
+                        </Text>
+                      </View>
+                      <Text style={{ fontSize: 15, fontWeight: '800', color: colors.text }}>
+                        “{item.nativeText}”
+                      </Text>
+                      <Text style={{ fontSize: 12.5, fontStyle: 'italic', color: colors.textSecondary }}>
+                        Literal: {item.literalTranslation}
+                      </Text>
+                      <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
+                        💡 {item.meaning}
+                      </Text>
+                      {item.englishEquivalent ? (
+                        <Text style={{ fontSize: 11.5, color: langColor, marginTop: 2 }}>
+                          Equivalent: {item.englishEquivalent}
+                        </Text>
+                      ) : null}
+                    </View>
+                  ))}
+                </View>
+              );
+            })()}
         </View>
       )}
     </View>

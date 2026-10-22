@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
 import {
   StyleSheet,
@@ -303,7 +304,7 @@ export function PayeCalculator() {
         </Pressable>
       </View>
 
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         <Pressable
           onPress={() => setMode("grossToNet")}
           style={[styles.pillBtn, mode === "grossToNet" && styles.pillBtnActive]}
@@ -320,7 +321,7 @@ export function PayeCalculator() {
             Target Net → Gross (Reverse)
           </Text>
         </Pressable>
-      </View>
+      </ExpandablePillRow>
 
       <KESInput
         label={mode === "grossToNet" ? "Monthly Gross Salary (KES)" : "Target Monthly Take-Home Net Pay (KES)"}
@@ -345,7 +346,7 @@ export function PayeCalculator() {
       )}
 
       {/* Quick Salary Presets */}
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {[30000, 50000, 80000, 100000, 200000, 500000].map((amt) => (
           <Pressable
             key={amt}
@@ -365,7 +366,7 @@ export function PayeCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <StatCard
         label={`NET TAKE-HOME PAY (${showAnnual ? "ANNUAL" : "MONTHLY"})`}
@@ -542,7 +543,7 @@ export function MpesaCalculator() {
 
       {/* All 6 Transaction Type Selector Pills */}
       <Text style={styles.inputLabel}>Transaction Type</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {(Object.entries(txTypes) as [MpesaTxType, any][]).map(([id, info]) => (
           <Pressable
             key={id}
@@ -559,7 +560,7 @@ export function MpesaCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <Pressable
         onPress={() => setIncludeWithdrawal((v) => !v)}
@@ -764,7 +765,7 @@ export function KplcTokenCalculator() {
         onChangeText={setAmountText}
       />
 
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {[500, 1000, 2000, 3500, 5000, 10000].map((amt) => (
           <Pressable
             key={amt}
@@ -784,7 +785,7 @@ export function KplcTokenCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <StatCard
         label="UNITS YOU WILL RECEIVE"
@@ -931,11 +932,7 @@ export function HelbCalculator() {
       />
 
       <Text style={styles.inputLabel}>Year First Borrowed ({yearBorrowed})</Text>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ gap: 6, paddingBottom: 4 }}
-      >
+      <ExpandablePillRow contentContainerStyle={{ gap: 6, paddingBottom: 4 }}>
         {yearsList.map((yr) => (
           <Pressable
             key={yr}
@@ -955,7 +952,7 @@ export function HelbCalculator() {
             </Text>
           </Pressable>
         ))}
-      </ScrollView>
+      </ExpandablePillRow>
 
       <KESInput
         label="Monthly Gross Salary (KES)"
@@ -1183,7 +1180,7 @@ export function StampDutyCalculator() {
         onChangeText={setValueText}
       />
 
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         <Pressable
           onPress={() => setIsUrban(true)}
           style={[styles.pillBtn, isUrban && styles.pillBtnActive]}
@@ -1204,7 +1201,7 @@ export function StampDutyCalculator() {
             Rural Land (2%)
           </Text>
         </Pressable>
-      </View>
+      </ExpandablePillRow>
 
       {/* First-Time Buyer Exemption Toggle */}
       <Pressable
@@ -1316,7 +1313,7 @@ export function VehicleInsuranceCalculator() {
   return (
     <View style={styles.toolWrap}>
       <Text style={styles.inputLabel}>Vehicle Class</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {insuranceData.vehicleClasses.map((vc) => (
           <Pressable
             key={vc.id}
@@ -1336,7 +1333,7 @@ export function VehicleInsuranceCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
       <Text style={styles.inputHint}>{selectedClass.description}</Text>
 
       <KESInput
@@ -1481,7 +1478,7 @@ export function WaterBillCalculator() {
   return (
     <View style={styles.toolWrap}>
       <Text style={styles.inputLabel}>Select Water Utility</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {waterData.utilities.map((u) => (
           <Pressable
             key={u.id}
@@ -1501,7 +1498,7 @@ export function WaterBillCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>
@@ -1523,7 +1520,7 @@ export function WaterBillCalculator() {
         />
       </View>
 
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {[6, 10, 15, 25, 40, 60].map((m3) => (
           <Pressable
             key={m3}
@@ -1543,7 +1540,7 @@ export function WaterBillCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <StatCard
         label="ESTIMATED MONTHLY WATER BILL"
@@ -1648,7 +1645,7 @@ export function KraCarImportCalculator() {
   return (
     <View style={styles.toolWrap}>
       <Text style={styles.inputLabel}>Select Popular Kenyan Import Vehicle</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {crspData.popularModels.map((m) => (
           <Pressable
             key={m.id}
@@ -1663,10 +1660,10 @@ export function KraCarImportCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <Text style={styles.inputLabel}>Vehicle Age (Depreciation Band)</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {crspData.depreciationBands.map((b, idx) => (
           <Pressable
             key={b.label}
@@ -1678,7 +1675,7 @@ export function KraCarImportCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <StatCard
         label="TOTAL KRA PORT TAXES"
@@ -1728,7 +1725,7 @@ export function MjengoConstructionCalculator() {
   return (
     <View style={styles.toolWrap}>
       <Text style={styles.inputLabel}>House Size Presets</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {mjengoData.housePresets.map((p) => (
           <Pressable
             key={p.id}
@@ -1740,10 +1737,10 @@ export function MjengoConstructionCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <Text style={styles.inputLabel}>Region & Quarry Zone</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {mjengoData.regions.map((r) => (
           <Pressable
             key={r.id}
@@ -1755,10 +1752,10 @@ export function MjengoConstructionCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <Text style={styles.inputLabel}>Finish Tier</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {mjengoData.finishTiers.map((f) => (
           <Pressable
             key={f.id}
@@ -1770,7 +1767,7 @@ export function MjengoConstructionCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <StatCard
         label="ESTIMATED TOTAL MJENGO COST"
@@ -1821,7 +1818,7 @@ export function SaccoChamaCalculator() {
   return (
     <View style={styles.toolWrap}>
       <Text style={styles.inputLabel}>Select SASRA DT-SACCO Benchmark</Text>
-      <View style={styles.pillSelector}>
+      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {saccoData.topSaccos.map((s) => (
           <Pressable
             key={s.id}
@@ -1833,7 +1830,7 @@ export function SaccoChamaCalculator() {
             </Text>
           </Pressable>
         ))}
-      </View>
+      </ExpandablePillRow>
 
       <KESInput label="Share Capital (KES)" value={sharesText} onChangeText={setSharesText} />
       <KESInput label="Opening BOSA Deposits (KES)" value={depositsText} onChangeText={setDepositsText} />
@@ -1946,21 +1943,23 @@ const createStyles = (theme: ThemeColors) =>
     },
     tableRow: {
       flexDirection: "row",
-      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "flex-start",
       paddingVertical: 8,
-      gap: 8,
+      gap: 12,
     },
     rowLabel: {
       fontSize: 12.5,
       color: theme.textSecondary,
-      flex: 1,
+      flexShrink: 0,
+      maxWidth: "48%",
     },
     rowValue: {
       fontSize: 12.5,
       fontWeight: "700",
       color: theme.textPrimary,
+      flex: 1,
+      textAlign: "right",
     },
     subHeading: {
       fontSize: 13,
@@ -1972,17 +1971,18 @@ const createStyles = (theme: ThemeColors) =>
     },
     pillSelector: {
       flexDirection: "row",
-      flexWrap: "wrap",
+      alignItems: "center",
       gap: 8,
+      paddingVertical: 2,
       marginBottom: 4,
     },
     pillBtn: {
       backgroundColor: theme.bgCard,
       borderWidth: 1,
       borderColor: theme.border,
-      paddingHorizontal: 12,
-      paddingVertical: 8,
-      borderRadius: 10,
+      paddingHorizontal: 14,
+      paddingVertical: 7,
+      borderRadius: 999,
     },
     pillBtnActive: {
       backgroundColor: theme.gold,

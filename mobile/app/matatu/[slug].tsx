@@ -3,7 +3,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useTheme, KenyaStripe } from "../../src/theme";
+import { useTheme, KenyaStripe, AndroidTopAppBar } from "../../src/theme";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 import { MatatuMap } from "../../src/components/MatatuMap";
 
@@ -51,20 +51,11 @@ export default function MatatuRouteScreen() {
     <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]} edges={["top", "left", "right"]}>
       <KenyaStripe />
 
-      {/* Header Bar */}
-      <View style={[styles.headerBar, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
-        <Pressable onPress={() => router.back()} style={[styles.navBackBtn, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-          <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
-        </Pressable>
-        <View style={{ flex: 1 }}>
-          <Text style={[styles.navBarTitle, { color: theme.textPrimary }]} >
-            Route {route.routeNumber}: {route.name}
-          </Text>
-          <Text style={[styles.navBarSubtitle, { color: theme.gold }]}>
-            {townName} · {route.saccoName || "Matatu SACCO"}
-          </Text>
-        </View>
-      </View>
+      <AndroidTopAppBar
+        title={`Route ${route.routeNumber}: ${route.name}`}
+        subtitle={`${townName} · ${route.saccoName || "Matatu SACCO"}`}
+        onBack={() => router.back()}
+      />
 
       <ScrollView
         contentContainerStyle={styles.content}

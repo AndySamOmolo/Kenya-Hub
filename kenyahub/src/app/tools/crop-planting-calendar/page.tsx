@@ -1,4 +1,5 @@
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 
@@ -58,7 +59,7 @@ export default function CropPlantingCalendarPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <div>
             <label className="text-xs text-text-muted block mb-2">Select your farming region</label>
-            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <ExpandablePillRow>
               {cropData.regions.map((r) => {
                 const active = regionFilter === r.id;
                 return (
@@ -75,7 +76,7 @@ export default function CropPlantingCalendarPage() {
                   </button>
                 );
               })}
-            </div>
+            </ExpandablePillRow>
           </div>
           {selectedRegion && (
             <p className="text-xs text-text-muted">Counties: {selectedRegion.counties.join(", ")}</p>

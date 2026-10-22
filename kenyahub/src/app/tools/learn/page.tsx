@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -112,7 +113,7 @@ export default function LearnPage() {
         </div>
 
         {/* Standalone Horizontal Pill Menu (Courses | Proverbs & Wisdom) */}
-        <div className="mb-5 flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+        <ExpandablePillRow className="mb-5">
           {[
             { id: "courses" as const, label: `Courses (${readyLangs.length})` },
             { id: "proverbs" as const, label: "Proverbs & Wisdom" },
@@ -132,7 +133,7 @@ export default function LearnPage() {
               </button>
             );
           })}
-        </div>
+        </ExpandablePillRow>
 
         {activeHubTab === "proverbs" ? (
           <ProverbsView defaultLanguageId="kikuyu" />

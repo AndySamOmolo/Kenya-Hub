@@ -251,7 +251,7 @@ export default function ToolDetailScreen() {
           >
             <Ionicons
               name={saved ? "bookmark" : "bookmark-outline"}
-              size={20}
+              size={17}
               color={theme.gold}
             />
           </Pressable>
@@ -582,9 +582,9 @@ export default function ToolDetailScreen() {
 const styles = StyleSheet.create({
   screen: { flex: 1 },
   pinIconBtn: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",

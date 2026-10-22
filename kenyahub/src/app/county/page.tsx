@@ -1,5 +1,6 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import countiesData from "@/data/counties.json";
@@ -244,7 +245,7 @@ export default function CountyIndexPage() {
       </div>
 
       {/* Consolidated Hub Mode Tabs (Standalone Horizontal Pills) */}
-      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 mb-5">
+      <ExpandablePillRow className="mb-5">
         {([
           { id: "directory", label: "Counties" },
           { id: "budgets", label: "Budgets" },
@@ -267,7 +268,7 @@ export default function CountyIndexPage() {
             </button>
           );
         })}
-      </div>
+      </ExpandablePillRow>
 
       {/* Shared Search & Filter Bar (for Directory, Budgets, Constituencies, Climate) */}
       {activeTab !== "compare" && (
@@ -608,33 +609,29 @@ export default function CountyIndexPage() {
               <label className="text-xs font-semibold text-text-muted uppercase block mb-1.5">
                 First County
               </label>
-              <select
+              <CustomSelect
                 value={compareSlugA}
-                onChange={(e) => setCompareSlugA(e.target.value)}
-                className="input-field w-full text-sm"
-              >
-                {enrichedCounties.map((c) => (
-                  <option key={c.slug} value={c.slug}>
-                    {String(c.code).padStart(3, "0")} — {c.name} County
-                  </option>
-                ))}
-              </select>
+                onValueChange={(val) => setCompareSlugA(val)}
+                options={enrichedCounties.map((c) => ({
+                  value: c.slug,
+                  label: `${String(c.code).padStart(3, "0")} — ${c.name} County`,
+                }))}
+                className="w-full text-sm"
+              />
             </div>
             <div>
               <label className="text-xs font-semibold text-text-muted uppercase block mb-1.5">
                 Second County
               </label>
-              <select
+              <CustomSelect
                 value={compareSlugB}
-                onChange={(e) => setCompareSlugB(e.target.value)}
-                className="input-field w-full text-sm"
-              >
-                {enrichedCounties.map((c) => (
-                  <option key={c.slug} value={c.slug}>
-                    {String(c.code).padStart(3, "0")} — {c.name} County
-                  </option>
-                ))}
-              </select>
+                onValueChange={(val) => setCompareSlugB(val)}
+                options={enrichedCounties.map((c) => ({
+                  value: c.slug,
+                  label: `${String(c.code).padStart(3, "0")} — ${c.name} County`,
+                }))}
+                className="w-full text-sm"
+              />
             </div>
           </div>
 

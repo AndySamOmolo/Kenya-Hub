@@ -1,5 +1,6 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -63,14 +64,21 @@ export default function SolarROIPage() {
         {/* Region selector */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
           <label className="block text-sm font-medium text-text-secondary mb-3">Your Location</label>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <ExpandablePillRow>
             {solarData.regions.map((r) => (
-              <button key={r.id} onClick={() => setRegionId(r.id)} className={`px-3 py-2.5 rounded-lg text-xs font-medium transition-all ${regionId === r.id ? "bg-gold text-kenya-black" : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"}`}>
-                {r.name}
-                <span className="block text-[0.6rem] mt-0.5 opacity-70">{r.irradiance} kWh/m²/day</span>
+              <button
+                key={r.id}
+                onClick={() => setRegionId(r.id)}
+                className={`shrink-0 whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-medium border transition-all cursor-pointer ${
+                  regionId === r.id
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {r.name} ({r.irradiance} kWh/m²)
               </button>
             ))}
-          </div>
+          </ExpandablePillRow>
         </div>
 
         {/* System cost override */}

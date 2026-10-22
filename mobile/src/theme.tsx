@@ -211,7 +211,7 @@ export function KenyaStripe() {
 }
 
 /**
- * Material Design 3 Top App Bar for Android
+ * Compact, Uniform 52dp Top App Bar for Android
  */
 export function AndroidTopAppBar({
   title,
@@ -251,27 +251,23 @@ export function AndroidTopAppBar({
             ]}
             hitSlop={8}
           >
-            <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
+            <Ionicons name="arrow-back" size={18} color={theme.textPrimary} />
           </Pressable>
         )}
 
         {showBrandLogo && !title ? (
-          <BrandLogo size="md" />
+          <BrandLogo size="sm" />
         ) : (
           <View style={appBarStyles.titleGroup}>
             {showBrandLogo && <BrandLogo size="sm" showText={false} />}
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, justifyContent: "center" }}>
               {title && (
                 <Text
                   style={[
                     appBarStyles.title,
-                    {
-                      color: theme.textPrimary,
-                      fontSize: title.length > 24 ? 15.5 : 18.5,
-                      lineHeight: title.length > 24 ? 20 : 23,
-                    },
+                    { color: theme.textPrimary },
                   ]}
-                  numberOfLines={2}
+                  numberOfLines={1}
                 >
                   {title}
                 </Text>
@@ -279,7 +275,7 @@ export function AndroidTopAppBar({
               {subtitle && (
                 <Text
                   style={[appBarStyles.subtitle, { color: theme.textSecondary }]}
-                  numberOfLines={2}
+                  numberOfLines={1}
                 >
                   {subtitle}
                 </Text>
@@ -307,7 +303,7 @@ export function AndroidTopAppBar({
           >
             <Ionicons
               name={isDark ? "sunny-outline" : "moon-outline"}
-              size={20}
+              size={17}
               color={theme.gold}
             />
           </Pressable>
@@ -329,47 +325,48 @@ const stripeStyles = StyleSheet.create({
 
 const appBarStyles = StyleSheet.create({
   container: {
-    minHeight: 64,
-    paddingHorizontal: 16,
-    paddingVertical: 10,
+    height: 52,
+    paddingHorizontal: 14,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     borderBottomWidth: StyleSheet.hairlineWidth,
-    elevation: Platform.OS === "android" ? 3 : 0,
+    elevation: Platform.OS === "android" ? 2 : 0,
   },
   leftRow: {
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
-    gap: 12,
+    gap: 10,
     marginRight: 8,
   },
   titleGroup: {
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
-    gap: 10,
+    gap: 8,
   },
   title: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 20,
+    fontSize: 15.5,
+    lineHeight: 19,
     letterSpacing: -0.2,
   },
   subtitle: {
     fontFamily: "Inter_500Medium",
-    fontSize: 12,
+    fontSize: 10.5,
+    lineHeight: 13,
     marginTop: 1,
   },
   actionsRow: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 8,
+    gap: 6,
   },
   iconBtn: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
     alignItems: "center",
     justifyContent: "center",
     overflow: "hidden",

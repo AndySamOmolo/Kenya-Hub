@@ -1,4 +1,5 @@
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 import { useState, useMemo } from "react";
@@ -24,7 +25,7 @@ export default function LivestockPricesPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          <ExpandablePillRow>
             <button
               onClick={() => setTypeFilter("all")}
               className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
@@ -51,7 +52,7 @@ export default function LivestockPricesPage() {
                 </button>
               );
             })}
-          </div>
+          </ExpandablePillRow>
           <CustomSelect value={marketFilter} onChange={(e) => setMarketFilter(e.target.value)} className="input-field text-sm" id="market-filter">
             <option value="all">All Markets</option>
             {data.markets.map((m) => (<option key={m.name} value={m.name}>{m.name} — {m.county}</option>))}

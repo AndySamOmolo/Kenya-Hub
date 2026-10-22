@@ -10,7 +10,7 @@ import {
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useTheme, KenyaStripe } from "../../src/theme";
+import { useTheme, KenyaStripe, AndroidTopAppBar } from "../../src/theme";
 import countiesData from "../../src/shared/data/counties.json";
 import budgetsData from "../../src/shared/data/county-budgets.json";
 import rainfallData from "../../src/shared/data/rainfall-patterns.json";
@@ -195,20 +195,11 @@ export default function CountyDetailScreen() {
     <SafeAreaView style={[styles.container, { backgroundColor: theme.bgPrimary }]} edges={["top", "left", "right"]}>
       <KenyaStripe />
 
-      {/* Top Navbar */}
-      <View style={[styles.headerBar, { backgroundColor: theme.bgSecondary, borderBottomColor: theme.border }]}>
-        <Pressable onPress={() => router.back()} style={[styles.backButton, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-          <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
-        </Pressable>
-        <View style={{ flex: 1 }}>
-          <Text style={[styles.headerBarTitle, { color: theme.textPrimary }]} >
-            {county.name} County
-          </Text>
-          <Text style={[styles.headerBarSubtitle, { color: theme.textSecondary }]}>
-            County {codeFormatted} · HQ: {county.capital}
-          </Text>
-        </View>
-      </View>
+      <AndroidTopAppBar
+        title={`${county.name} County`}
+        subtitle={`County ${codeFormatted} · HQ: ${county.capital}`}
+        onBack={() => router.back()}
+      />
 
       <ScrollView
         contentContainerStyle={styles.content}

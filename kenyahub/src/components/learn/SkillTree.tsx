@@ -1,4 +1,5 @@
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { getSourcesForLanguage } from "@/data/language-sources";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
@@ -7,7 +8,6 @@ import {
   Check,
   Star,
   ChevronDown,
-  ChevronRight,
   Lightbulb,
   Heart,
   Flame,
@@ -18,9 +18,10 @@ import {
   Layers,
   Lock,
   Unlock,
+  Zap,
 } from "lucide-react";
 import type { CourseUnit, UserProgress, LanguageConfig } from "@/data/courses/types";
-import { MAX_SKILL_LEVEL, ACHIEVEMENTS, MAX_HEARTS } from "@/data/courses/types";
+import { MAX_SKILL_LEVEL, ACHIEVEMENTS, MAX_HEARTS, LEVELS } from "@/data/courses/types";
 import {
   getXpLevel,
   minutesToNextHeart,
@@ -45,14 +46,13 @@ export default function SkillTree({
   onStartLesson,
   onStartReview,
   onToggleUnlockAll,
-  onGoBack,
 }: SkillTreeProps) {
   const sources = getSourcesForLanguage(config.id);
   const [expandedUnits, setExpandedUnits] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(units.map((u) => [u.id, true]))
   );
-  const [showProfile, setShowProfile] = useState(false);
   const [showAchievements, setShowAchievements] = useState(false);
+  const [achCategory, setAchCategory] = useState<string>("all");
 
   const allExpanded = units.every((u) => expandedUnits[u.id] !== false);
   const isAllUnlocked = Boolean(progress.unlockAll);
@@ -77,6 +77,13 @@ export default function SkillTree({
   const completedSkills = Object.values(progress.skillLevels).filter(
     (v) => v >= 1
   ).length;
+  const masteredSkills = Object.values(progress.skillLevels).filter(
+    (v) => v >= MAX_SKILL_LEVEL
+  ).length;
+
+  const filteredAchievements = ACHIEVEMENTS.filter(
+    (a) => achCategory === "all" || a.category === achCategory
+  );
 
   return (
     <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
@@ -108,46 +115,69 @@ export default function SkillTree({
 
           {/* Quick stats row */}
           <div className="mt-4 grid grid-cols-4 gap-2">
-            <div className="text-center">
-              <div className="text-base font-bold text-gold sm:text-lg"><DynamicIcon emoji={levelInfo.current.icon} className="w-[1em] h-[1em]" /></div>
-              <div className="text-[0.6rem] text-text-muted">{levelInfo.current.name}</div>
+            <div className="rounded-xl bg-bg-elevated/60 border border-border/50 p-2 text-center">
+              <div className="text-base font-bold text-gold sm:text-lg flex items-center justify-center gap-1">
+                <DynamicIcon emoji={levelInfo.current.icon} className="w-[1em] h-[1em]" />
+                <span>{progress.xp}</span>
+              </div>
+              <div className="text-[0.6rem] text-text-muted">Total XP</div>
             </div>
-            <div className="text-center">
-              <div className="text-base font-bold text-text-primary sm:text-lg">{completedSkills}/{totalSkills}</div>
-              <div className="text-[0.6rem] text-text-muted">Modules</div>
+            <div className="rounded-xl bg-bg-elevated/60 border border-border/50 p-2 text-center">
+              <div className="text-base font-bold text-text-primary sm:text-lg">
+                {completedSkills}/{totalSkills}
+              </div>
+              <div className="text-[0.6rem] text-text-muted">
+                Modules {masteredSkills > 0 ? `(${masteredSkills}★)` : ""}
+              </div>
             </div>
-            <div className="text-center">
-              <div className="text-base font-bold text-text-primary sm:text-lg">{progress.wordsLearned.length}</div>
-              <div className="text-[0.6rem] text-text-muted">Words</div>
+            <div className="rounded-xl bg-bg-elevated/60 border border-border/50 p-2 text-center">
+              <div className="text-base font-bold text-text-primary sm:text-lg">
+                {progress.wordsLearned.length}
+              </div>
+              <div className="text-[0.6rem] text-text-muted">Words Learned</div>
             </div>
-            <div className="text-center">
+            <div className="rounded-xl bg-bg-elevated/60 border border-border/50 p-2 text-center">
               <div className="flex items-center justify-center gap-0.5 text-base font-bold text-red-400 sm:text-lg">
                 <Heart className="h-3.5 w-3.5" fill="currentColor" />{progress.hearts}
               </div>
               <div className="text-[0.6rem] text-text-muted">
-                {progress.hearts < MAX_HEARTS ? `+1 in ${nextHeartMin}m` : "Full"}
+                {progress.hearts < MAX_HEARTS ? `+1 in ${nextHeartMin}m` : "Full Hearts"}
               </div>
             </div>
           </div>
 
-          {/* XP Progress bar */}
-          {levelInfo.next && (
-            <div className="mt-4">
-              <div className="flex items-center justify-between text-[0.6rem] text-text-muted">
-                <span>{levelInfo.current.name}</span>
-                <span>{levelInfo.next.name}</span>
-              </div>
-              <div className="mt-1 h-2 overflow-hidden rounded-full bg-bg-elevated">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-700"
-                  style={{ width: `${levelInfo.progressToNext}%` }}
-                />
-              </div>
-              <div className="mt-0.5 text-center text-[0.55rem] text-text-muted">
-                {progress.xp} / {levelInfo.next.minXp} XP
-              </div>
+          {/* XP Rank Progress bar */}
+          <div className="mt-4 rounded-xl border border-border/60 bg-bg-elevated/40 p-3">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-bold text-gold flex items-center gap-1.5">
+                <DynamicIcon emoji={levelInfo.current.icon} className="w-4 h-4" />
+                {levelInfo.current.name}
+              </span>
+              {levelInfo.next ? (
+                <span className="text-[0.65rem] text-text-muted">
+                  {levelInfo.next.minXp - progress.xp} XP to {levelInfo.next.name}
+                </span>
+              ) : (
+                <span className="text-[0.65rem] text-emerald-400 font-semibold">
+                  Highest Rank Reached!
+                </span>
+              )}
             </div>
-          )}
+            <div className="mt-2 h-2 overflow-hidden rounded-full bg-bg-elevated">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-700"
+                style={{ width: `${levelInfo.progressToNext}%` }}
+              />
+            </div>
+            <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-[0.6rem] text-text-muted">
+              <span className="inline-flex items-center gap-1">
+                <Zap className="h-3 w-3 text-gold" /> +10 XP/answer · +50 XP Perfect Lesson
+              </span>
+              <span className="inline-flex items-center gap-1 text-orange-400">
+                <Flame className="h-3 w-3" /> Streak Bonus: +{Math.min(Math.max(1, progress.streak), 7) * 5} XP/lesson
+              </span>
+            </div>
+          </div>
 
           {/* Daily goal */}
           <div className="mt-3 rounded-lg border border-border/50 bg-bg-elevated/50 p-2.5">
@@ -155,7 +185,7 @@ export default function SkillTree({
               <div className="flex items-center gap-1.5">
                 <Target className="h-3.5 w-3.5 text-gold" />
                 <span className="text-[0.65rem] font-semibold text-text-secondary">
-                  Daily Goal
+                  Daily Goal (+25 XP Bonus on Completion)
                 </span>
               </div>
               <span className="text-[0.65rem] font-bold text-gold">
@@ -178,7 +208,7 @@ export default function SkillTree({
             <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-kenya-green" />
             <div className="flex min-w-0 flex-1 items-center justify-between gap-3">
               <p className="text-xs leading-relaxed text-text-secondary">
-                {dueReviewCount} item{dueReviewCount === 1 ? "" : "s"} ready for review.
+                {dueReviewCount} item{dueReviewCount === 1 ? "" : "s"} ready for spaced-repetition review.
               </p>
               <button
                 onClick={onStartReview}
@@ -200,12 +230,12 @@ export default function SkillTree({
           <div className="flex items-center gap-2">
             <Trophy className="h-4 w-4 text-gold" />
             <span className="text-sm font-semibold text-text-primary">
-              Achievements
+              Achievements &amp; XP Milestones
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs text-text-muted">
-              {progress.achievements.length}/{ACHIEVEMENTS.length}
+            <span className="rounded-full bg-gold/15 border border-gold/30 px-2.5 py-0.5 text-xs font-bold text-gold">
+              {progress.achievements.length}/{ACHIEVEMENTS.length} Unlocked
             </span>
             <ChevronDown
               className={`h-4 w-4 text-text-muted transition-transform ${
@@ -216,33 +246,98 @@ export default function SkillTree({
         </button>
 
         {showAchievements && (
-          <div id="achievements-panel" className="mt-2 rounded-xl border border-border bg-bg-card p-3">
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-              {ACHIEVEMENTS.map((ach) => {
+          <div id="achievements-panel" className="mt-2 rounded-xl border border-border bg-bg-card p-3.5 space-y-3">
+            {/* Horizontal Pill Filter for Achievement Categories */}
+            <ExpandablePillRow>
+              {[
+                { id: "all", label: `All (${ACHIEVEMENTS.length})` },
+                { id: "lessons", label: "Lessons" },
+                { id: "streak", label: "Streaks" },
+                { id: "vocabulary", label: "Vocabulary" },
+                { id: "mastery", label: "Mastery & Ranks" },
+              ].map((cat) => {
+                const active = achCategory === cat.id;
+                return (
+                  <button
+                    key={cat.id}
+                    onClick={() => setAchCategory(cat.id)}
+                    className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 text-xs font-medium border transition-all cursor-pointer ${
+                      active
+                        ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                        : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"
+                    }`}
+                  >
+                    {cat.label}
+                  </button>
+                );
+              })}
+            </ExpandablePillRow>
+
+            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3">
+              {filteredAchievements.map((ach) => {
                 const earned = progress.achievements.includes(ach.id);
                 return (
                   <div
                     key={ach.id}
-                    className={`flex flex-col items-center rounded-lg p-2.5 text-center transition-all ${
+                    className={`flex flex-col justify-between rounded-xl p-3 text-left transition-all ${
                       earned
-                        ? "bg-gold/10 border border-gold/20"
-                        : "opacity-40 border border-border/30"
+                        ? "bg-gold/10 border border-gold/30"
+                        : "opacity-60 border border-border bg-bg-elevated/40"
                     }`}
                   >
-                    <span className="text-2xl"><DynamicIcon emoji={ach.icon} className="w-[1em] h-[1em]" /></span>
-                    <span
-                      className={`mt-1 text-[0.6rem] font-semibold ${
-                        earned ? "text-gold" : "text-text-muted"
-                      }`}
-                    >
-                      {ach.name}
-                    </span>
-                    <span className="text-[0.5rem] text-text-muted">
-                      {ach.description}
-                    </span>
+                    <div className="flex items-start justify-between gap-2">
+                      <span className="text-xl"><DynamicIcon emoji={ach.icon} className="w-5 h-5" /></span>
+                      <span
+                        className={`rounded-full px-2 py-0.5 text-[0.6rem] font-bold ${
+                          earned
+                            ? "bg-emerald-500/20 text-emerald-400"
+                            : "bg-bg-card text-gold"
+                        }`}
+                      >
+                        {earned ? `✓ +${ach.xpReward} XP` : `+${ach.xpReward} XP`}
+                      </span>
+                    </div>
+                    <div className="mt-2">
+                      <span
+                        className={`block text-xs font-bold ${
+                          earned ? "text-gold" : "text-text-primary"
+                        }`}
+                      >
+                        {ach.name}
+                      </span>
+                      <span className="block mt-0.5 text-[0.65rem] text-text-muted leading-snug">
+                        {ach.description}
+                      </span>
+                    </div>
                   </div>
                 );
               })}
+            </div>
+
+            {/* 10-Rank Progression Ladder */}
+            <div className="pt-2 border-t border-border/60">
+              <p className="text-[0.65rem] font-bold uppercase tracking-wider text-text-muted mb-2">
+                10-Tier Rank Ladder
+              </p>
+              <ExpandablePillRow>
+                {LEVELS.map((lvl) => {
+                  const reached = progress.xp >= lvl.minXp;
+                  return (
+                    <div
+                      key={lvl.name}
+                      className={`shrink-0 rounded-full border px-3 py-1 text-[0.65rem] font-medium flex items-center gap-1.5 ${
+                        reached
+                          ? "border-gold/40 bg-gold/10 text-gold font-semibold"
+                          : "border-border bg-bg-elevated/50 text-text-muted"
+                      }`}
+                    >
+                      <DynamicIcon emoji={lvl.icon} className="w-3.5 h-3.5" />
+                      <span>{lvl.name}</span>
+                      <span className="opacity-75">({lvl.minXp} XP)</span>
+                    </div>
+                  );
+                })}
+              </ExpandablePillRow>
             </div>
           </div>
         )}
@@ -294,7 +389,7 @@ export default function SkillTree({
       </div>
 
       {/* Horizontal Scrolling Unit Quick-Jump Pills */}
-      <div className="mb-4 flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+      <ExpandablePillRow className="mb-4">
         {units.map((unit, idx) => (
           <a
             key={unit.id}
@@ -307,7 +402,7 @@ export default function SkillTree({
             Unit {idx + 1}: {unit.title.replace(/^Unit \d+:\s*/i, "")}
           </a>
         ))}
-      </div>
+      </ExpandablePillRow>
 
       {/* ─── Skill Tree Path ─── */}
       <div className="space-y-4">

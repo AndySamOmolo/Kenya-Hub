@@ -1,7 +1,9 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import saccoData from "@/data/sacco-chama-rates.json";
 
@@ -75,27 +77,24 @@ export default function SaccoChamaCalculatorPage() {
             <label className="block text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2">
               Select SASRA Regulated DT-SACCO Benchmark
             </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+            <ExpandablePillRow>
               {saccoData.topSaccos.map((s) => {
                 const active = s.id === selectedSaccoId;
                 return (
                   <button
                     key={s.id}
                     onClick={() => setSelectedSaccoId(s.id)}
-                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                    className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
                       active
-                        ? "bg-[var(--gold)]/15 border-[var(--gold)]/50 text-[var(--text-primary)]"
-                        : "bg-[var(--bg-elevated)] border-[var(--border)] text-[var(--text-secondary)]"
+                        ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                        : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
                     }`}
                   >
-                    <p className="text-xs font-bold text-[var(--text-primary)] break-words">{s.name}</p>
-                    <p className="text-[11px] text-[var(--gold)] font-semibold mt-0.5">
-                      Div: {s.dividendRate}% · Rebate: {s.rebateRate}% · {s.loanMultiplier}× Loan
-                    </p>
+                    {s.name} ({s.dividendRate}% Div · {s.rebateRate}% Rebate)
                   </button>
                 );
               })}
-            </div>
+            </ExpandablePillRow>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -139,17 +138,18 @@ export default function SaccoChamaCalculatorPage() {
               <label className="block text-xs text-[var(--text-secondary)] mb-1">
                 BOSA Loan Tenor (Months)
               </label>
-              <select
+              <CustomSelect
                 value={loanMonths}
-                onChange={(e) => setLoanMonths(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
-              >
-                <option value="12">12 Months (1 Yr)</option>
-                <option value="24">24 Months (2 Yrs)</option>
-                <option value="36">36 Months (3 Yrs)</option>
-                <option value="48">48 Months (4 Yrs)</option>
-                <option value="60">60 Months (5 Yrs)</option>
-              </select>
+                onValueChange={(val) => setLoanMonths(val)}
+                options={[
+                  { value: "12", label: "12 Months (1 Yr)" },
+                  { value: "24", label: "24 Months (2 Yrs)" },
+                  { value: "36", label: "36 Months (3 Yrs)" },
+                  { value: "48", label: "48 Months (4 Yrs)" },
+                  { value: "60", label: "60 Months (5 Yrs)" },
+                ]}
+                className="w-full text-sm"
+              />
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -214,7 +215,7 @@ export default function PAYECalculatorPage() {
       <div className="space-y-6">
         {/* Calculation Direction Mode Switcher */}
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-5">
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          <ExpandablePillRow>
             {[
               { id: "grossToNet" as const, label: "Gross → Net Pay" },
               { id: "netToGross" as const, label: "Target Net → Gross" },
@@ -234,7 +235,7 @@ export default function PAYECalculatorPage() {
                 </button>
               );
             })}
-          </div>
+          </ExpandablePillRow>
 
           {calcMode === "grossToNet" ? (
             <div>

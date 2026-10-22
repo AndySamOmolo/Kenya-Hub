@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
 import {
   StyleSheet,
@@ -73,7 +74,7 @@ export function CbcGradeAgeTool() {
           placeholderTextColor={theme.textMuted}
           style={styles.textInput}
         />
-        <View style={[styles.pillSelector, { marginTop: 8 }]}>
+        <ExpandablePillRow contentContainerStyle={[styles.pillSelector, { marginTop: 8 }]}>
           {["2022", "2020", "2018", "2016", "2014", "2011", "2009"].map((yr) => (
             <Pressable
               key={yr}
@@ -93,7 +94,7 @@ export function CbcGradeAgeTool() {
               </Text>
             </Pressable>
           ))}
-        </View>
+        </ExpandablePillRow>
       </View>
 
       <View style={styles.statCard}>
@@ -322,7 +323,7 @@ export function KcseCalculatorTool() {
                 {grades[idx]} ({gradePoints[grades[idx]]} pts)
               </Text>
             </View>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+            <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
               {possibleGrades.map((g) => (
                 <Pressable
                   key={g}
@@ -342,7 +343,7 @@ export function KcseCalculatorTool() {
                   </Text>
                 </Pressable>
               ))}
-            </ScrollView>
+            </ExpandablePillRow>
           </View>
         ))}
       </View>
@@ -664,7 +665,7 @@ export function KikuyuProverbsTool() {
             setQ(val);
             setPage(1);
           }}
-          placeholder="Search 989 proverbs (u matches ũ, i matches ĩ)..."
+          placeholder="Search Gĩkũyũ proverbs or meaning..."
           placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
         />
@@ -676,7 +677,7 @@ export function KikuyuProverbsTool() {
       </View>
 
       {/* Theme Category Filter Pills */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+      <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         {PROVERB_CATEGORIES.map((cat) => {
           const active = selectedCategory === cat.id;
           return (
@@ -697,7 +698,7 @@ export function KikuyuProverbsTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </ExpandablePillRow>
 
       {/* Sort & Equivalent Filter Controls */}
       <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
@@ -925,7 +926,7 @@ export function KcseRankingsTool() {
       </View>
 
       {/* County Filter Scroll */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+      <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         {counties.map((c) => (
           <Pressable
             key={c}
@@ -940,7 +941,7 @@ export function KcseRankingsTool() {
             </Text>
           </Pressable>
         ))}
-      </ScrollView>
+      </ExpandablePillRow>
 
       <Text style={styles.subHeading}>
         Showing {filteredSchools.length} Top KCSE Schools ({rankingsData.year})
@@ -1197,20 +1198,23 @@ function createStyles(colors: ThemeColors) {
     },
     tableRow: {
       flexDirection: "row",
-      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "flex-start",
       paddingVertical: 8,
+      gap: 10,
     },
     rowLabel: {
       fontSize: 12,
       color: colors.textSecondary,
-      flex: 1,
+      flexShrink: 0,
+      maxWidth: "46%",
     },
     rowValue: {
       fontSize: 13,
       fontWeight: "700",
       color: colors.textPrimary,
+      flex: 1,
+      textAlign: "right",
     },
     subHeading: {
       fontSize: 13,
@@ -1340,16 +1344,17 @@ function createStyles(colors: ThemeColors) {
     },
     pillSelector: {
       flexDirection: "row",
-      flexWrap: "wrap",
-      gap: 6,
+      alignItems: "center",
+      gap: 8,
+      paddingVertical: 2,
     },
     pillBtn: {
       backgroundColor: colors.bgCard,
       borderWidth: 1,
       borderColor: colors.border,
-      paddingHorizontal: 12,
+      paddingHorizontal: 14,
       paddingVertical: 7,
-      borderRadius: 10,
+      borderRadius: 999,
     },
     pillBtnActive: {
       backgroundColor: colors.gold,

@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
 import { useRouter } from "expo-router";
 import {
@@ -82,7 +83,6 @@ function RouteCard({
             <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
               <Text
                 style={[styles.routeText, { color: theme.textPrimary, flex: 1 }]}
-                
               >
                 {route.name}
               </Text>
@@ -90,9 +90,9 @@ function RouteCard({
                 <View
                   style={{
                     backgroundColor: theme.surfaceContainerHigh,
-                    paddingHorizontal: 6,
+                    paddingHorizontal: 7,
                     paddingVertical: 2,
-                    borderRadius: 6,
+                    borderRadius: 999,
                   }}
                 >
                   <Text
@@ -125,7 +125,6 @@ function RouteCard({
               </View>
               <Text
                 style={[styles.saccoText, { color: theme.textSecondary }]}
-                
               >
                 {route.saccoName}
               </Text>
@@ -159,12 +158,7 @@ export default function MatatuScreen() {
   const [search, setSearch] = useState("");
   const [selectedTown, setSelectedTown] = useState<string>("all");
   const [saccoFilter, setSaccoFilter] = useState<string>("all");
-  const [fareFilter, setFareFilter] = useState<
-    "all" | "under50" | "50to100" | "above100"
-  >("all");
-  const [sortBy, setSortBy] = useState<"route" | "fare" | "stages" | "name">(
-    "route"
-  );
+  const [sortBy, setSortBy] = useState<"route" | "stages" | "name">("route");
 
   const towns = (matatuData as any).towns || [];
   const allRoutesByTown = (matatuData as any).routes || {};
@@ -213,13 +207,6 @@ export default function MatatuScreen() {
       if (!matchesTown) return false;
 
       if (saccoFilter !== "all" && r.saccoName !== saccoFilter) return false;
-      if (fareFilter === "under50" && r.fareMax > 50) return false;
-      if (
-        fareFilter === "50to100" &&
-        (r.fareMax < 50 || r.fareMin > 100)
-      )
-        return false;
-      if (fareFilter === "above100" && r.fareMax <= 100) return false;
 
       if (!q) return true;
       return (
@@ -238,7 +225,6 @@ export default function MatatuScreen() {
     });
 
     return [...list].sort((a, b) => {
-      if (sortBy === "fare") return a.fareMin - b.fareMin || a.fareMax - b.fareMax;
       if (sortBy === "stages")
         return (b.stages?.length || 0) - (a.stages?.length || 0);
       if (sortBy === "name") return a.name.localeCompare(b.name);
@@ -247,7 +233,7 @@ export default function MatatuScreen() {
         sensitivity: "base",
       });
     });
-  }, [allRoutes, search, selectedTown, saccoFilter, fareFilter, sortBy]);
+  }, [allRoutes, search, selectedTown, saccoFilter, sortBy]);
 
   return (
     <SafeAreaView
@@ -258,7 +244,7 @@ export default function MatatuScreen() {
 
       <AndroidTopAppBar
         showBrandLogo
-        title="Matatu Routes & Fares"
+        title="Matatu Routes"
         subtitle={`${allRoutes.length} routes · ${totalStages} stages · ${availableSaccos.length} SACCOs`}
       />
 
@@ -271,7 +257,7 @@ export default function MatatuScreen() {
           },
         ]}
       >
-        {/* Material 3 Search Bar */}
+        {/* Material 3 Search Bar with clean single-line text and bottom spacing */}
         <View
           style={[
             styles.searchBar,
@@ -281,28 +267,29 @@ export default function MatatuScreen() {
             },
           ]}
         >
-          <Ionicons name="search" size={20} color={theme.gold} />
+          <Ionicons name="search" size={18} color={theme.gold} />
           <TextInput
-            placeholder="Search route, stage, or SACCO (e.g. Rongai, 44)..."
+            placeholder="Search route, stage, or SACCO..."
             placeholderTextColor={theme.textMuted}
             value={search}
             onChangeText={setSearch}
+            numberOfLines={1}
             style={[styles.searchInput, { color: theme.textPrimary }]}
           />
           {search.length > 0 && (
             <Pressable onPress={() => setSearch("")} hitSlop={8}>
               <Ionicons
                 name="close-circle"
-                size={20}
+                size={18}
                 color={theme.textMuted}
               />
             </Pressable>
           )}
         </View>
 
-        {/* Town Filter Chips */}
+        {/* Horizontal Scrolling Pill Bar for Cities */}
         {towns.length > 0 && (
-          <View style={[styles.townChipsRow, { flexDirection: "row", flexWrap: "wrap" }]}>
+          <ExpandablePillRow contentContainerStyle={styles.townChipsRow}>
             {[
               { slug: "all", name: `All Cities (${allRoutes.length})` },
               ...towns
@@ -314,10 +301,15 @@ export default function MatatuScreen() {
             ].map((t: any) => {
               const active = selectedTown === t.slug;
               return (
-                <View
+                <Pressable
                   key={t.slug}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    setSelectedTown(t.slug);
+                    setSaccoFilter("all");
+                  }}
                   style={[
-                    styles.townChipWrap,
+                    styles.townChip,
                     active
                       ? {
                           backgroundColor: theme.primaryContainer,
@@ -329,93 +321,47 @@ export default function MatatuScreen() {
                         },
                   ]}
                 >
-                  <Pressable
-                    android_ripple={androidRipple(theme.rippleColor)}
-                    onPress={() => {
-                      setSelectedTown(t.slug);
-                      setSaccoFilter("all");
-                    }}
-                    style={styles.townChip}
-                  >
-                    {active && (
-                      <Ionicons
-                        name="checkmark"
-                        size={14}
-                        color={theme.onPrimaryContainer}
-                      />
-                    )}
-                    <Text
-                      style={[
-                        styles.townChipText,
-                        {
-                          color: active
-                            ? theme.onPrimaryContainer
-                            : theme.textSecondary,
-                        },
-                      ]}
-                    >
-                      {t.name}
-                    </Text>
-                  </Pressable>
-                </View>
-              );
-            })}
-          </View>
-        )}
-
-        {/* Fare Range & Sort Controls (mirrors web TownMatatuView) */}
-        <View style={styles.filterSubRow}>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-            {(
-              [
-                { id: "all", label: "All Fares" },
-                { id: "under50", label: "< KES 50" },
-                { id: "50to100", label: "KES 50–100" },
-                { id: "above100", label: "> KES 100" },
-              ] as const
-            ).map((f) => {
-              const active = fareFilter === f.id;
-              return (
-                <Pressable
-                  key={f.id}
-                  onPress={() => setFareFilter(f.id)}
-                  style={[
-                    styles.miniFilterChip,
-                    {
-                      backgroundColor: active
-                        ? `${theme.gold}25`
-                        : theme.surfaceContainer,
-                      borderColor: active ? theme.gold : theme.outlineVariant,
-                    },
-                  ]}
-                >
+                  {active && (
+                    <Ionicons
+                      name="checkmark"
+                      size={13}
+                      color={theme.onPrimaryContainer}
+                    />
+                  )}
                   <Text
-                    style={{
-                      fontSize: 11,
-                      fontWeight: "700",
-                      color: active ? theme.gold : theme.textSecondary,
-                    }}
+                    style={[
+                      styles.townChipText,
+                      {
+                        color: active
+                          ? theme.onPrimaryContainer
+                          : theme.textSecondary,
+                      },
+                    ]}
                   >
-                    {f.label}
+                    {t.name}
                   </Text>
                 </Pressable>
               );
             })}
-          </ScrollView>
+          </ExpandablePillRow>
+        )}
 
-          <View
-            style={[
-              styles.segmentedGroup,
-              {
-                backgroundColor: theme.surfaceContainer,
-                borderColor: theme.outlineVariant,
-              },
-            ]}
+        {/* Sort Controls (Route # | Stages | A–Z — no fare sorting) */}
+        <View style={styles.filterSubRow}>
+          <Text
+            style={{
+              fontSize: 10.5,
+              fontFamily: "Inter_600SemiBold",
+              color: theme.textMuted,
+              letterSpacing: 0.6,
+            }}
           >
+            SORT BY
+          </Text>
+          <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
             {(
               [
-                { id: "route", label: "R#" },
-                { id: "fare", label: "Fare" },
+                { id: "route", label: "Route #" },
                 { id: "stages", label: "Stages" },
                 { id: "name", label: "A–Z" },
               ] as const
@@ -425,14 +371,20 @@ export default function MatatuScreen() {
                 <Pressable
                   key={opt.id}
                   onPress={() => setSortBy(opt.id)}
-                  style={[
-                    styles.segmentBtn,
-                    active && { backgroundColor: theme.primaryContainer },
-                  ]}
+                  style={{
+                    paddingHorizontal: 13,
+                    paddingVertical: 5,
+                    borderRadius: 999,
+                    borderWidth: 1,
+                    backgroundColor: active
+                      ? theme.primaryContainer
+                      : theme.surfaceContainer,
+                    borderColor: active ? theme.gold : theme.outlineVariant,
+                  }}
                 >
                   <Text
                     style={{
-                      fontSize: 10.5,
+                      fontSize: 11,
                       fontFamily: "Outfit_700Bold",
                       color: active
                         ? theme.onPrimaryContainer
@@ -444,7 +396,7 @@ export default function MatatuScreen() {
                 </Pressable>
               );
             })}
-          </View>
+          </ExpandablePillRow>
         </View>
       </View>
 
@@ -454,7 +406,12 @@ export default function MatatuScreen() {
       >
         {/* SACCO Filter Pills */}
         {availableSaccos.length > 1 && (
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 12 }}>
+          <ExpandablePillRow contentContainerStyle={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 8,
+              marginBottom: 12,
+            }}>
             {["all", ...availableSaccos].map((sacco) => {
               const active = saccoFilter === sacco;
               return (
@@ -462,9 +419,9 @@ export default function MatatuScreen() {
                   key={sacco}
                   onPress={() => setSaccoFilter(sacco)}
                   style={{
-                    paddingHorizontal: 10,
-                    paddingVertical: 5,
-                    borderRadius: 8,
+                    paddingHorizontal: 12,
+                    paddingVertical: 6,
+                    borderRadius: 999,
                     borderWidth: 1,
                     backgroundColor: active
                       ? theme.primaryContainer
@@ -488,7 +445,7 @@ export default function MatatuScreen() {
                 </Pressable>
               );
             })}
-          </ScrollView>
+          </ExpandablePillRow>
         )}
 
         <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
@@ -506,12 +463,12 @@ export default function MatatuScreen() {
               No routes found
             </Text>
             <Text style={[styles.emptySubtitle, { color: theme.textMuted }]}>
-              Try adjusting your search query, SACCO, or fare filter.
+              Try adjusting your search query, city, or SACCO filter.
             </Text>
           </View>
         )}
 
-        {/* About Kenya Matatu Routes & Public Transport (from web matatu/page.tsx & matatu-routes.json) */}
+        {/* About Kenya Matatu Routes & Public Transport */}
         <View
           style={[
             styles.aboutCard,
@@ -558,38 +515,39 @@ const styles = StyleSheet.create({
   header: {
     borderBottomWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: 16,
-    paddingTop: 12,
+    paddingTop: 10,
     paddingBottom: 12,
   },
   searchBar: {
     flexDirection: "row",
     alignItems: "center",
     borderWidth: 1,
-    borderRadius: 26,
-    paddingHorizontal: 16,
-    height: 48,
+    borderRadius: 24,
+    paddingHorizontal: 14,
+    height: 44,
+    marginBottom: 12,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchInput: {
     flex: 1,
-    marginLeft: 10,
-    fontSize: 14,
+    marginLeft: 8,
+    fontSize: 13.5,
+    paddingVertical: 0,
   },
   townChipsRow: {
-    paddingTop: 10,
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
-  },
-  townChipWrap: {
-    borderRadius: 8,
-    borderWidth: 1,
-    overflow: "hidden",
+    paddingBottom: 2,
   },
   townChip: {
     flexDirection: "row",
     alignItems: "center",
     gap: 5,
-    paddingHorizontal: 12,
+    paddingHorizontal: 13,
     paddingVertical: 6,
+    borderRadius: 999,
+    borderWidth: 1,
   },
   townChipText: {
     fontFamily: "Inter_600SemiBold",
@@ -600,23 +558,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     marginTop: 10,
-    gap: 8,
-  },
-  miniFilterChip: {
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 12,
-    borderWidth: 1,
-  },
-  segmentedGroup: {
-    flexDirection: "row",
-    borderRadius: 14,
-    borderWidth: 1,
-    overflow: "hidden",
-  },
-  segmentBtn: {
-    paddingHorizontal: 9,
-    paddingVertical: 5,
+    gap: 10,
   },
   content: {
     padding: 16,

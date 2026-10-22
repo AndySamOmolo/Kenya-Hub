@@ -1,5 +1,6 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -24,7 +25,7 @@ export default function CBCCurriculumPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         {/* Level Selector — Horizontal Scrolling Pills */}
-        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+        <ExpandablePillRow>
           {cbcData.levels.map((l) => {
             const active = selectedLevel === l.id;
             return (
@@ -41,7 +42,7 @@ export default function CBCCurriculumPage() {
               </button>
             );
           })}
-        </div>
+        </ExpandablePillRow>
 
         {/* Level Info */}
         <div className="result-box">

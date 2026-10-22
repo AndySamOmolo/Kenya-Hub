@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
 import {
   StyleSheet,
@@ -192,7 +193,7 @@ export function NumberPlateDecoder() {
         <TextInput
           value={seriesSearch}
           onChangeText={setSeriesSearch}
-          placeholder="Search prefix or year (e.g. KDA, KCE, 2018)..."
+          placeholder="Search prefix or year (e.g. KDA)..."
           placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
         />
@@ -614,7 +615,7 @@ export function TrafficFinesTool() {
         <TextInput
           value={search}
           onChangeText={setSearch}
-          placeholder="Search offences (speeding, seatbelt, DUI, insurance)..."
+          placeholder="Search traffic offences..."
           placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
         />
@@ -626,7 +627,7 @@ export function TrafficFinesTool() {
       </View>
 
       {/* Category Filter Pills */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+      <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         <Pressable
           onPress={() => setSelectedCat("all")}
           style={[
@@ -671,7 +672,7 @@ export function TrafficFinesTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </ExpandablePillRow>
 
       {/* Sort By Bar */}
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
@@ -813,7 +814,7 @@ export function PostalCodesTool() {
         <TextInput
           value={q}
           onChangeText={setQ}
-          placeholder="Search by postal code, town, or county (e.g. 00100, Westlands)..."
+          placeholder="Search postal code, town, or county..."
           placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
         />
@@ -825,7 +826,7 @@ export function PostalCodesTool() {
       </View>
 
       {/* County Filter Pills */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+      <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         {["all", ...counties].map((c) => {
           const active = selectedCounty === c;
           return (
@@ -851,7 +852,7 @@ export function PostalCodesTool() {
             </Pressable>
           );
         })}
-      </ScrollView>
+      </ExpandablePillRow>
 
       {/* Sort Row */}
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
@@ -1760,21 +1761,23 @@ const createStyles = (theme: ThemeColors) =>
     },
     tableRow: {
       flexDirection: "row",
-      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "flex-start",
       paddingVertical: 8,
-      gap: 8,
+      gap: 12,
     },
     rowLabel: {
       fontSize: 13,
       color: theme.textSecondary,
-      flex: 1,
+      flexShrink: 0,
+      maxWidth: "46%",
     },
     rowValue: {
       fontSize: 13,
       fontWeight: "700",
       color: theme.textPrimary,
+      flex: 1,
+      textAlign: "right",
     },
     carrierHeader: {
       flexDirection: "row",

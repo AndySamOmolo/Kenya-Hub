@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useCallback, useEffect, useState, useMemo } from "react";
 import { HelpCircle, PartyPopper, Search, ChevronLeft, Flame } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
@@ -15,7 +16,7 @@ import type {
   UserProgress,
   LessonResult,
 } from "@/data/courses/types";
-import { MAX_HEARTS } from "@/data/courses/types";
+import { MAX_HEARTS, ACHIEVEMENTS } from "@/data/courses/types";
 import {
   loadProgress,
   saveProgress,
@@ -115,11 +116,13 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       setProgress(updated);
       saveProgress(updated);
 
-      const newAchievements = updated.achievements.filter(
+      const newAchievementIds = updated.achievements.filter(
         (a) => !progress.achievements.includes(a)
       );
-      if (newAchievements.length > 0) {
-        setShowCompletionToast(`Achievement unlocked: ${newAchievements[0]}!`);
+      if (newAchievementIds.length > 0) {
+        const ach = ACHIEVEMENTS.find((item) => item.id === newAchievementIds[0]);
+        const label = ach ? `${ach.name} (+${ach.xpReward} XP)` : newAchievementIds[0];
+        setShowCompletionToast(`Achievement unlocked: ${label}!`);
         setTimeout(() => setShowCompletionToast(null), 4000);
       }
     },
@@ -249,9 +252,9 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         </div>
       )}
 
-      {/* Horizontal Scrolling Pill Tabs (No outer container box, clean text pills) */}
+      {/* Horizontal Scrolling Pill Tabs */}
       {view !== "playing" && (
-        <div className="mb-5 flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+        <ExpandablePillRow className="mb-5">
           {[
             { id: "lessons" as const, label: "Path" },
             { id: "modules" as const, label: "Vocab" },
@@ -276,7 +279,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               </button>
             );
           })}
-        </div>
+        </ExpandablePillRow>
       )}
 
       {view === "playing" && activeLesson ? (
@@ -405,7 +408,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           languageName={course.config.name}
         />
       ) : view === "proverbs" ? (
-        <ProverbsView defaultLanguageId={course.config.id} />
+        <ProverbsView lockedLanguageId={course.config.id} />
       ) : (
         <SkillTree
           units={course.units}

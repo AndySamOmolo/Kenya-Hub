@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
 import {
   Platform,
@@ -140,7 +141,7 @@ export default function CountyScreen() {
         ]}
       >
         {/* Consolidated Mode Tabs */}
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6, paddingBottom: 10 }}>
+        <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6, paddingBottom: 10 }}>
           {([
             { id: "directory", label: "🏛️ Directory" },
             { id: "budgets", label: "📊 Budgets (FY 25/26)" },
@@ -173,7 +174,7 @@ export default function CountyScreen() {
               </Pressable>
             );
           })}
-        </ScrollView>
+        </ExpandablePillRow>
 
         {activeTab !== "compare" && (
           <>
@@ -188,7 +189,8 @@ export default function CountyScreen() {
             >
               <Ionicons name="search" size={20} color={theme.gold} />
               <TextInput
-                placeholder="Search county, governor, senator, HQ, constituency..."
+                placeholder="Search county, governor, or HQ..."
+                numberOfLines={1}
                 placeholderTextColor={theme.textMuted}
                 value={query}
                 onChangeText={setQuery}
@@ -204,7 +206,7 @@ export default function CountyScreen() {
             {/* Sort By Row */}
             <View style={styles.sortRow}>
               <Text style={[styles.sortLabel, { color: theme.textMuted }]}>SORT BY</Text>
-              <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+              <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
                 {(
                   [
                     { id: "code", label: "Code" },
@@ -224,7 +226,7 @@ export default function CountyScreen() {
                         styles.segmentBtn,
                         {
                           backgroundColor: active ? theme.primaryContainer : theme.surfaceContainer,
-                          borderRadius: 10,
+                          borderRadius: 999,
                           borderWidth: 1,
                           borderColor: active ? theme.gold : theme.outlineVariant,
                         },
@@ -243,7 +245,7 @@ export default function CountyScreen() {
                     </Pressable>
                   );
                 })}
-              </ScrollView>
+              </ExpandablePillRow>
             </View>
           </>
         )}
@@ -576,7 +578,7 @@ export default function CountyScreen() {
             <Text style={{ fontSize: 11, color: theme.textSecondary }}>
               Select First County ({countyA.name}):
             </Text>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+            <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
               {enrichedCounties.map((c) => (
                 <Pressable
                   key={`a-${c.slug}`}
@@ -600,12 +602,12 @@ export default function CountyScreen() {
                   </Text>
                 </Pressable>
               ))}
-            </ScrollView>
+            </ExpandablePillRow>
 
             <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
               Select Second County ({countyB.name}):
             </Text>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+            <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
               {enrichedCounties.map((c) => (
                 <Pressable
                   key={`b-${c.slug}`}
@@ -629,7 +631,7 @@ export default function CountyScreen() {
                   </Text>
                 </Pressable>
               ))}
-            </ScrollView>
+            </ExpandablePillRow>
 
             <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: theme.outlineVariant, paddingTop: 8, gap: 8 }}>
               {[

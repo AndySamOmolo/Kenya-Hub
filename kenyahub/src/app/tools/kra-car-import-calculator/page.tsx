@@ -1,7 +1,9 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import crspData from "@/data/kra-car-import-crsp.json";
 
@@ -110,7 +112,7 @@ export default function KraCarImportCalculatorPage() {
                 Select a popular Kenyan import model or enter any CRSP value from the KRA schedule.
               </p>
             </div>
-            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <ExpandablePillRow>
               {[
                 { custom: false, label: "Popular Imports" },
                 { custom: true, label: "Custom CRSP" },
@@ -130,37 +132,36 @@ export default function KraCarImportCalculatorPage() {
                   </button>
                 );
               })}
-            </div>
+            </ExpandablePillRow>
           </div>
 
           {!customMode ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
-              {crspData.popularModels.map((m) => {
-                const active = m.id === selectedModelId;
-                return (
-                  <button
-                    key={m.id}
-                    onClick={() => {
-                      setSelectedModelId(m.id);
-                      setCifUsd(String(m.avgCifUsd));
-                    }}
-                    className={`text-left p-3 rounded-xl border transition-all cursor-pointer ${
-                      active
-                        ? "bg-[var(--gold)]/15 border-[var(--gold)]/50 text-[var(--text-primary)]"
-                        : "bg-[var(--bg-elevated)] border-[var(--border)] text-[var(--text-secondary)] hover:border-[var(--border-light)]"
-                    }`}
-                  >
-                    <div className="flex items-center justify-between text-[11px] font-bold text-[var(--gold)] mb-0.5">
-                      <span>{m.make}</span>
-                      <span>{m.cc} cc · {m.fuel.toUpperCase()}</span>
-                    </div>
-                    <p className="text-xs font-bold text-[var(--text-primary)] break-words">{m.model}</p>
-                    <p className="text-[11px] text-[var(--text-muted)] mt-1">
-                      CRSP: KES {formatKES(m.crspKes)}
-                    </p>
-                  </button>
-                );
-              })}
+            <div className="space-y-3">
+              <ExpandablePillRow>
+                {crspData.popularModels.map((m) => {
+                  const active = m.id === selectedModelId;
+                  return (
+                    <button
+                      key={m.id}
+                      onClick={() => {
+                        setSelectedModelId(m.id);
+                        setCifUsd(String(m.avgCifUsd));
+                      }}
+                      className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
+                        active
+                          ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                          : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                      }`}
+                    >
+                      {m.model} ({m.cc}cc)
+                    </button>
+                  );
+                })}
+              </ExpandablePillRow>
+              <div className="rounded-xl bg-bg-elevated/60 border border-border p-3 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <span className="font-bold text-text-primary">{activePreset.make} — {activePreset.model}</span>
+                <span className="text-gold font-semibold">CRSP: KES {formatKES(activePreset.crspKes)} · {activePreset.cc} cc · {activePreset.fuel.toUpperCase()}</span>
+              </div>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -192,15 +193,16 @@ export default function KraCarImportCalculatorPage() {
                 <label className="block text-xs text-[var(--text-secondary)] mb-1">
                   Fuel Type
                 </label>
-                <select
+                <CustomSelect
                   value={customFuel}
-                  onChange={(e) => setCustomFuel(e.target.value as "petrol" | "diesel" | "electric")}
-                  className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
-                >
-                  <option value="petrol">Petrol / Hybrid</option>
-                  <option value="diesel">Diesel</option>
-                  <option value="electric">100% Electric (EV)</option>
-                </select>
+                  onValueChange={(val) => setCustomFuel(val as "petrol" | "diesel" | "electric")}
+                  options={[
+                    { value: "petrol", label: "Petrol / Hybrid" },
+                    { value: "diesel", label: "Diesel" },
+                    { value: "electric", label: "100% Electric (EV)" },
+                  ]}
+                  className="w-full text-sm"
+                />
               </div>
             </div>
           )}
@@ -210,17 +212,15 @@ export default function KraCarImportCalculatorPage() {
               <label className="block text-xs text-[var(--text-secondary)] mb-1">
                 Vehicle Age (Since First Registration)
               </label>
-              <select
-                value={ageIndex}
-                onChange={(e) => setAgeIndex(Number(e.target.value))}
-                className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-xs font-semibold text-[var(--text-primary)]"
-              >
-                {crspData.depreciationBands.map((b, idx) => (
-                  <option key={b.label} value={idx}>
-                    {b.label}
-                  </option>
-                ))}
-              </select>
+              <CustomSelect
+                value={String(ageIndex)}
+                onValueChange={(val) => setAgeIndex(Number(val))}
+                options={crspData.depreciationBands.map((b, idx) => ({
+                  value: String(idx),
+                  label: b.label,
+                }))}
+                className="w-full text-xs"
+              />
             </div>
             <div>
               <label className="block text-xs text-[var(--text-secondary)] mb-1">

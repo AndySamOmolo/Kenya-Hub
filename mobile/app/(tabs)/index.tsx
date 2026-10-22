@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
 import React, { useCallback, useMemo, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -553,9 +554,9 @@ export default function HomeScreen() {
                 styles.m3SearchPlaceholder,
                 { color: theme.textSecondary },
               ]}
-              
+              numberOfLines={1}
             >
-              Search PAYE, M-Pesa, KPLC, Languages...
+              Search PAYE, M-Pesa, KPLC, tools...
             </Text>
             <View
               style={[
@@ -659,8 +660,14 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* Material 3 Quick Action Chips (Wrapping Grid — No Horizontal Scroll) */}
-        <View style={styles.quickChipsGrid}>
+        {/* Horizontal Scrolling Pill Bar for Quick Actions */}
+        <ExpandablePillRow contentContainerStyle={{
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 8,
+            paddingHorizontal: 16,
+            marginBottom: 8,
+          }}>
           {[
             {
               slug: "paye-calculator",
@@ -693,36 +700,40 @@ export default function HomeScreen() {
               icon: "car" as const,
             },
           ].map((action) => (
-            <View
+            <Pressable
               key={action.slug}
-              style={[
-                styles.assistChipWrap,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
-              ]}
+              android_ripple={androidRipple(theme.rippleColor)}
+              onPress={() =>
+                router.push({
+                  pathname: "/tools/[slug]",
+                  params: { slug: action.slug },
+                })
+              }
+              style={{
+                flexDirection: "row",
+                alignItems: "center",
+                gap: 7,
+                paddingHorizontal: 14,
+                paddingVertical: 8,
+                borderRadius: 999,
+                borderWidth: 1,
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+              }}
             >
-              <Pressable
-                android_ripple={androidRipple(theme.rippleColor)}
-                onPress={() =>
-                  router.push({
-                    pathname: "/tools/[slug]",
-                    params: { slug: action.slug },
-                  })
-                }
-                style={styles.assistChip}
+              <Ionicons name={action.icon} size={14} color={theme.gold} />
+              <Text
+                style={{
+                  fontFamily: "Inter_600SemiBold",
+                  fontSize: 12.5,
+                  color: theme.textPrimary,
+                }}
               >
-                <Ionicons name={action.icon} size={15} color={theme.gold} />
-                <Text
-                  style={[styles.assistChipText, { color: theme.textPrimary }]}
-                >
-                  {action.label}
-                </Text>
-              </Pressable>
-            </View>
+                {action.label}
+              </Text>
+            </Pressable>
           ))}
-        </View>
+        </ExpandablePillRow>
 
         {/* Pinned Tools Section (mirrors web PinnedToolsHomeSection) */}
         {pinnedTools.length > 0 && (
@@ -964,15 +975,13 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        <View
-          style={{
+        <ExpandablePillRow contentContainerStyle={{
             flexDirection: "row",
-            flexWrap: "wrap",
+            alignItems: "center",
             paddingHorizontal: 16,
             gap: 8,
             marginBottom: 14,
-          }}
-        >
+          }}>
           {blogTags.map((tag) => {
             const active = selectedBlogTag === tag;
             return (
@@ -980,9 +989,9 @@ export default function HomeScreen() {
                 key={tag}
                 onPress={() => setSelectedBlogTag(tag)}
                 style={{
-                  paddingHorizontal: 12,
+                  paddingHorizontal: 14,
                   paddingVertical: 6,
-                  borderRadius: 16,
+                  borderRadius: 999,
                   borderWidth: 1,
                   backgroundColor: active
                     ? theme.primaryContainer
@@ -1004,7 +1013,7 @@ export default function HomeScreen() {
               </Pressable>
             );
           })}
-        </View>
+        </ExpandablePillRow>
 
         <View style={styles.toolList}>
           {sortedPosts.map((post) => (

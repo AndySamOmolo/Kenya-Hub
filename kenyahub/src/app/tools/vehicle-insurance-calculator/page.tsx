@@ -1,5 +1,6 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
@@ -71,21 +72,21 @@ export default function VehicleInsuranceCalculatorPage() {
           <label className="block text-sm font-medium text-text-secondary mb-3">
             Vehicle Class
           </label>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <ExpandablePillRow>
             {insuranceData.vehicleClasses.map((vc) => (
               <button
                 key={vc.id}
                 onClick={() => setVehicleClass(vc.id)}
-                className={`px-3 py-3 rounded-lg text-sm font-medium transition-all text-center ${
+                className={`shrink-0 whitespace-nowrap px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
                   vehicleClass === vc.id
-                    ? "bg-gold text-kenya-black"
-                    : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
                 }`}
               >
                 {vc.name}
               </button>
             ))}
-          </div>
+          </ExpandablePillRow>
           <p className="text-xs text-text-muted mt-2">{selectedClass.description}</p>
         </div>
 

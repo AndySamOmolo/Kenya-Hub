@@ -138,6 +138,10 @@ export interface UserProgress {
   wordsLearned: string[];
   /** Total lessons completed */
   lessonsCompleted: number;
+  /** Total perfect (100% accuracy) lessons completed */
+  perfectLessons?: number;
+  /** Total mini-games completed */
+  gamesPlayed?: number;
   /** Streak freeze count */
   streakFreezes: number;
   /** Missed items scheduled for later review */
@@ -177,6 +181,8 @@ export interface Achievement {
   name: string;
   description: string;
   icon: string;
+  xpReward: number;
+  category: 'streak' | 'lessons' | 'vocabulary' | 'mastery';
   condition: (progress: UserProgress) => boolean;
 }
 
@@ -187,15 +193,21 @@ export const HEART_REFILL_MINUTES = 30;
 export const XP_PER_CORRECT = 10;
 export const XP_PER_CORRECT_WITH_HINT = 5;
 export const XP_PERFECT_BONUS = 50;
+export const XP_DAILY_GOAL_BONUS = 25;
 export const EXERCISES_PER_LESSON = 15;
 export const MAX_SKILL_LEVEL = 5;
 
 export const LEVELS = [
-  { name: 'Bronze', icon: '🥉', minXp: 0, color: '#CD7F32' },
-  { name: 'Silver', icon: '🥈', minXp: 300, color: '#C0C0C0' },
-  { name: 'Gold', icon: '🥇', minXp: 1000, color: '#FFD700' },
-  { name: 'Sapphire', icon: '💎', minXp: 3000, color: '#0F52BA' },
-  { name: 'Diamond', icon: '👑', minXp: 8000, color: '#B9F2FF' },
+  { name: 'Bronze I • Learner', icon: '🥉', minXp: 0, color: '#CD7F32' },
+  { name: 'Bronze II • Initiate', icon: '🛡️', minXp: 150, color: '#D99058' },
+  { name: 'Silver I • Speaker', icon: '🥈', minXp: 350, color: '#C0C0C0' },
+  { name: 'Silver II • Storyteller', icon: '📜', minXp: 700, color: '#94A3B8' },
+  { name: 'Gold I • Scholar', icon: '🥇', minXp: 1200, color: '#FFD700' },
+  { name: 'Gold II • Orator', icon: '🎙️', minXp: 2000, color: '#F59E0B' },
+  { name: 'Sapphire • Keeper of Wisdom', icon: '💎', minXp: 3200, color: '#0EA5E9' },
+  { name: 'Emerald • Council Sage', icon: '🌿', minXp: 5000, color: '#10B981' },
+  { name: 'Ruby • Master of Tongues', icon: '🔥', minXp: 8000, color: '#EF4444' },
+  { name: 'Diamond • Elder of the Council', icon: '👑', minXp: 12000, color: '#B9F2FF' },
 ] as const;
 
 export const ACHIEVEMENTS: Achievement[] = [
@@ -204,55 +216,161 @@ export const ACHIEVEMENTS: Achievement[] = [
     name: 'First Steps',
     description: 'Complete your first lesson',
     icon: '🌱',
+    xpReward: 25,
+    category: 'lessons',
     condition: (p) => p.lessonsCompleted >= 1,
+  },
+  {
+    id: 'spark-streak',
+    name: '3-Day Spark',
+    description: 'Reach a 3-day learning streak',
+    icon: '⚡',
+    xpReward: 40,
+    category: 'streak',
+    condition: (p) => p.streak >= 3,
   },
   {
     id: 'on-fire',
     name: 'On Fire',
-    description: '7-day learning streak',
+    description: 'Reach a 7-day learning streak',
     icon: '🔥',
+    xpReward: 75,
+    category: 'streak',
     condition: (p) => p.streak >= 7,
+  },
+  {
+    id: 'unstoppable',
+    name: 'Unstoppable',
+    description: 'Reach a 14-day learning streak',
+    icon: '🌋',
+    xpReward: 150,
+    category: 'streak',
+    condition: (p) => p.streak >= 14,
+  },
+  {
+    id: 'monthly-legend',
+    name: '30-Day Legend',
+    description: 'Reach a 30-day learning streak',
+    icon: '🌞',
+    xpReward: 300,
+    category: 'streak',
+    condition: (p) => p.streak >= 30,
   },
   {
     id: 'perfect-score',
     name: 'Perfect Score',
-    description: 'Complete a lesson with no mistakes',
+    description: 'Complete a lesson with 100% accuracy',
     icon: '⭐',
-    condition: () => false, // Checked at lesson completion
+    xpReward: 50,
+    category: 'mastery',
+    condition: (p) => (p.perfectLessons || 0) >= 1,
   },
   {
-    id: 'bookworm',
-    name: 'Bookworm',
-    description: 'Learn 100 words',
-    icon: '📚',
-    condition: (p) => p.wordsLearned.length >= 100,
+    id: 'sharp-shooter',
+    name: 'Sharp Shooter',
+    description: 'Complete 5 lessons with 100% accuracy',
+    icon: '🎯',
+    xpReward: 120,
+    category: 'mastery',
+    condition: (p) => (p.perfectLessons || 0) >= 5,
   },
   {
-    id: 'dedicated',
-    name: 'Dedicated',
-    description: 'Complete 20 lessons',
-    icon: '🏅',
-    condition: (p) => p.lessonsCompleted >= 20,
-  },
-  {
-    id: 'master',
-    name: 'Master',
-    description: 'Master all skills in a language',
-    icon: '👑',
-    condition: () => false, // Checked per-language
-  },
-  {
-    id: 'diamond',
-    name: 'Diamond',
-    description: 'Reach Diamond level',
-    icon: '💎',
-    condition: (p) => p.xp >= 8000,
+    id: 'vocab-starter',
+    name: 'Word Collector',
+    description: 'Learn 25 vocabulary words',
+    icon: '📝',
+    xpReward: 35,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 25,
   },
   {
     id: 'memory-king',
     name: 'Memory King',
-    description: 'Learn 50 words',
+    description: 'Learn 50 vocabulary words',
     icon: '🧠',
+    xpReward: 60,
+    category: 'vocabulary',
     condition: (p) => p.wordsLearned.length >= 50,
+  },
+  {
+    id: 'bookworm',
+    name: 'Bookworm',
+    description: 'Learn 100 vocabulary words',
+    icon: '📚',
+    xpReward: 100,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 100,
+  },
+  {
+    id: 'lexicon-master',
+    name: 'Lexicon Master',
+    description: 'Learn 250 vocabulary words',
+    icon: '🏛️',
+    xpReward: 200,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 250,
+  },
+  {
+    id: 'living-dictionary',
+    name: 'Living Dictionary',
+    description: 'Learn 500 vocabulary words',
+    icon: '🌍',
+    xpReward: 400,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 500,
+  },
+  {
+    id: 'dedicated-10',
+    name: 'Consistent Learner',
+    description: 'Complete 10 lessons',
+    icon: '🥉',
+    xpReward: 50,
+    category: 'lessons',
+    condition: (p) => p.lessonsCompleted >= 10,
+  },
+  {
+    id: 'dedicated',
+    name: 'Dedicated Scholar',
+    description: 'Complete 20 lessons',
+    icon: '🏅',
+    xpReward: 100,
+    category: 'lessons',
+    condition: (p) => p.lessonsCompleted >= 20,
+  },
+  {
+    id: 'centurion',
+    name: 'Half-Century',
+    description: 'Complete 50 lessons',
+    icon: '🏆',
+    xpReward: 250,
+    category: 'lessons',
+    condition: (p) => p.lessonsCompleted >= 50,
+  },
+  {
+    id: 'crown-collector',
+    name: 'Crown Collector',
+    description: 'Reach 5-Star mastery in any skill module',
+    icon: '👑',
+    xpReward: 100,
+    category: 'mastery',
+    condition: (p) => Object.values(p.skillLevels).some((lvl) => lvl >= 5),
+  },
+  {
+    id: 'master',
+    name: 'Polyglot Pioneer',
+    description: 'Complete at least 10 distinct skill modules',
+    icon: '🎓',
+    xpReward: 250,
+    category: 'mastery',
+    condition: (p) => Object.values(p.skillLevels).filter((lvl) => lvl >= 1).length >= 10,
+  },
+  {
+    id: 'diamond',
+    name: 'Elder of the Council',
+    description: 'Earn 8,000+ total XP',
+    icon: '💎',
+    xpReward: 500,
+    category: 'mastery',
+    condition: (p) => p.xp >= 8000,
   },
 ];

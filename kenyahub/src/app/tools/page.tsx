@@ -1,5 +1,6 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -194,7 +195,7 @@ function ToolsContent() {
       </div>
 
       {/* Category Pills — Single-line horizontal scrolling pills in the highlighted screenshot style */}
-      <div className="mb-6 flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+      <ExpandablePillRow className="mb-6">
         <button
           onClick={() => setSelectedCategory("all")}
           className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
@@ -222,7 +223,7 @@ function ToolsContent() {
             </button>
           );
         })}
-      </div>
+      </ExpandablePillRow>
 
       {/* Results count */}
       {(searchQuery || selectedCategory !== "all") && filteredTools.length > 0 && (

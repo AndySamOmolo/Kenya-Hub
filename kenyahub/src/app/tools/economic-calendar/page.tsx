@@ -1,4 +1,5 @@
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 import { useState, useMemo } from "react";
@@ -27,7 +28,7 @@ export default function EconomicCalendarPage() {
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5 space-y-2.5">
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          <ExpandablePillRow>
             <button
               onClick={() => setCatFilter("all")}
               className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
@@ -54,8 +55,8 @@ export default function EconomicCalendarPage() {
                 </button>
               );
             })}
-          </div>
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          </ExpandablePillRow>
+          <ExpandablePillRow>
             <button
               onClick={() => setFreqFilter("all")}
               className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
@@ -82,7 +83,7 @@ export default function EconomicCalendarPage() {
                 </button>
               );
             })}
-          </div>
+          </ExpandablePillRow>
         </div>
         <div className="space-y-3">
           {filtered.map((event) => {

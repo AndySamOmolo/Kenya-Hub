@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
 import {
   StyleSheet,
@@ -100,7 +101,7 @@ export function KenyanTranslatorTool() {
       <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
         Select Language ({ALL_DICTS.length} available)
       </Text>
-      <View style={styles.horizontalPills}>
+      <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
         {ALL_DICTS.map((d) => {
           const active = d.languageId === selectedLang;
           return (
@@ -129,7 +130,7 @@ export function KenyanTranslatorTool() {
             </Pressable>
           );
         })}
-      </View>
+      </ExpandablePillRow>
 
       <View
         style={[
@@ -173,7 +174,7 @@ export function KenyanTranslatorTool() {
         )}
       </View>
 
-      <View style={styles.horizontalPills}>
+      <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
         <Pressable
           onPress={() => setSelectedCat("all")}
           style={[
@@ -218,7 +219,7 @@ export function KenyanTranslatorTool() {
             </Pressable>
           );
         })}
-      </View>
+      </ExpandablePillRow>
 
       <Text style={[styles.countLabel, { color: theme.textMuted }]}>
         Showing {filteredEntries.length} phrases & words
@@ -595,7 +596,7 @@ export function WardConstituencyFinderTool() {
       <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
         Select County ({countiesData.counties.length} available)
       </Text>
-      <View style={styles.horizontalPills}>
+      <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
         {countiesData.counties.map((c) => {
           const active = c.slug === selectedSlug;
           return (
@@ -621,7 +622,7 @@ export function WardConstituencyFinderTool() {
             </Pressable>
           );
         })}
-      </View>
+      </ExpandablePillRow>
 
       {/* County Statistics Card */}
       <View
@@ -800,7 +801,7 @@ export function CbcCurriculumTool() {
   return (
     <View style={styles.toolWrap}>
       {/* Level Selector */}
-      <View style={styles.horizontalPills}>
+      <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
         {cbcData.levels.map((l) => {
           const active = l.id === levelId;
           return (
@@ -826,7 +827,7 @@ export function CbcCurriculumTool() {
             </Pressable>
           );
         })}
-      </View>
+      </ExpandablePillRow>
 
       {/* Level Card */}
       <View
@@ -1450,7 +1451,6 @@ const styles = StyleSheet.create({
   },
   regionGrid: {
     flexDirection: "row",
-    flexWrap: "wrap",
     gap: 8,
   },
   regionBtn: {

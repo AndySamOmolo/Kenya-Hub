@@ -1,4 +1,5 @@
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 
@@ -81,7 +82,7 @@ export default function TrafficFinesPage() {
         </div>
 
         {/* Category Filter — Horizontal Scrolling Pills */}
-        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+        <ExpandablePillRow>
           <button
             onClick={() => setSelectedCategory("all")}
             className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
@@ -108,7 +109,7 @@ export default function TrafficFinesPage() {
               </button>
             );
           })}
-        </div>
+        </ExpandablePillRow>
 
         <p className="text-xs text-text-muted">
           Showing {totalOffences} offence{totalOffences !== 1 ? "s" : ""}

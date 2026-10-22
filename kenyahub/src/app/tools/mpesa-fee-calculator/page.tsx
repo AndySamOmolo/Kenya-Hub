@@ -1,5 +1,6 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
@@ -135,21 +136,21 @@ export default function MpesaFeeCalculatorPage() {
             />
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <ExpandablePillRow>
             {[500, 1000, 2500, 5000, 10000, 20000, 50000].map((preset) => (
               <button
                 key={preset}
                 onClick={() => setAmount(preset)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
+                className={`shrink-0 whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-medium border transition-all cursor-pointer ${
                   amount === preset
-                    ? "bg-gold text-kenya-black border-gold"
-                    : "bg-bg-elevated border-border text-text-secondary hover:border-gold/50"
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
                 }`}
               >
                 KES {preset.toLocaleString()}
               </button>
             ))}
-          </div>
+          </ExpandablePillRow>
 
           {/* Tuma na ya Kutoa Toggle */}
           <label className="flex items-center gap-2.5 p-3 rounded-xl bg-gold/10 border border-gold/30 cursor-pointer">

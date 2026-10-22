@@ -1,3 +1,4 @@
+import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import {
   StyleSheet,
@@ -610,7 +611,7 @@ export function KenyanTranslatorTool() {
 
           {/* Target Language Selection Pills (Collapsible so it never fills the screen) */}
           {showTargetPicker && (
-            <View style={[styles.horizontalPills, { flexWrap: "wrap" }]}>
+            <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
               {ALL_DICTS.map((d) => {
                 const active = d.languageId === targetLanguage;
                 return (
@@ -637,7 +638,7 @@ export function KenyanTranslatorTool() {
                   </Pressable>
                 );
               })}
-            </View>
+            </ExpandablePillRow>
           )}
 
           {/* Search Input */}
@@ -827,7 +828,7 @@ export function KenyanTranslatorTool() {
           </Text>
 
           {/* Quick word pills */}
-          <View style={styles.horizontalPills}>
+          <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
             {POPULAR_COMPARE_WORDS.map((w) => {
               const active = searchQuery.toLowerCase() === w.toLowerCase();
               return (
@@ -850,13 +851,13 @@ export function KenyanTranslatorTool() {
                 </Pressable>
               );
             })}
-          </View>
+          </ExpandablePillRow>
 
           {/* Search Input */}
           <View style={styles.searchBar}>
             <Ionicons name="search" size={18} color={theme.textMuted} />
             <TextInput
-              placeholder="Type any word to compare (e.g. Water, Hello)..."
+              placeholder="Type word to compare (e.g. Water)..."
               placeholderTextColor={theme.textMuted}
               value={searchQuery}
               onChangeText={setSearchQuery}
@@ -948,7 +949,7 @@ export function KenyanTranslatorTool() {
       {viewMode === "browse" && (
         <View style={styles.modeWrap}>
           {/* Target Language Selection Pills */}
-          <View style={styles.horizontalPills}>
+          <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
             {ALL_DICTS.map((d) => {
               const active = d.languageId === targetLanguage;
               return (
@@ -971,10 +972,10 @@ export function KenyanTranslatorTool() {
                 </Pressable>
               );
             })}
-          </View>
+          </ExpandablePillRow>
 
           {/* Category Chips */}
-          <View style={styles.horizontalPills}>
+          <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
             {targetDict.categories.map((c) => {
               const active = c.id === activeCategory;
               return (
@@ -997,7 +998,7 @@ export function KenyanTranslatorTool() {
                 </Pressable>
               );
             })}
-          </View>
+          </ExpandablePillRow>
 
           {/* Entries for selected category */}
           <View style={styles.resultsWrap}>
@@ -1430,7 +1431,6 @@ const createStyles = (theme: ThemeColors) =>
     },
     recentsRow: {
       flexDirection: "row",
-      flexWrap: "wrap",
       gap: 6,
     },
     recentChip: {

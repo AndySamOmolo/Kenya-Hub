@@ -1,5 +1,6 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
@@ -46,7 +47,7 @@ export default function KenyaRainfallPatternsPage() {
         {/* Search & filters */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search county..." className="input-field text-sm" id="rain-search"  onClear={() => setSearch("")} />
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          <ExpandablePillRow>
             <button
               onClick={() => setZoneFilter("all")}
               className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
@@ -73,7 +74,7 @@ export default function KenyaRainfallPatternsPage() {
                 </button>
               );
             })}
-          </div>
+          </ExpandablePillRow>
         </div>
 
         {/* Climate Zones Reference */}

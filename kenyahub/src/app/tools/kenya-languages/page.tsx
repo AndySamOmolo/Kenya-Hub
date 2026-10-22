@@ -1,4 +1,5 @@
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
@@ -43,7 +44,7 @@ export default function KenyaLanguagesPage() {
         </div>
         {/* Family filters */}
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          <ExpandablePillRow>
             <button
               onClick={() => setFamilyFilter("all")}
               className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
@@ -70,7 +71,7 @@ export default function KenyaLanguagesPage() {
                 </button>
               );
             })}
-          </div>
+          </ExpandablePillRow>
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search languages or counties..." className="input-field text-sm" id="lang-search"  onClear={() => setSearch("")} />
         </div>
         {familyFilter !== "all" && (

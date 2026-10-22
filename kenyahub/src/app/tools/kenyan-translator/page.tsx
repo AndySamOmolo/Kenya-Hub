@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 
@@ -480,7 +481,7 @@ export default function KenyanTranslatorPage() {
         )}
 
         {/* ── View Mode Tabs (Standalone Horizontal Pills) ── */}
-        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+        <ExpandablePillRow>
           {([
             { id: "translate" as const, label: "Translate" },
             { id: "compare" as const, label: "Compare" },
@@ -501,7 +502,7 @@ export default function KenyanTranslatorPage() {
               </button>
             );
           })}
-        </div>
+        </ExpandablePillRow>
 
         {/* ═══════════════════════════════════════ */}
         {/* ── TRANSLATE MODE ── */}
@@ -695,7 +696,7 @@ export default function KenyanTranslatorPage() {
               <>
                 <div>
                   <h3 className="text-sm font-bold text-text-primary mb-2.5 font-[family-name:var(--font-outfit)]">Browse by Category</h3>
-                  <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+                  <ExpandablePillRow>
                     {ALL_CATEGORY_IDS.map((cat) => {
                       const hasEntries = targetDict.categories.some((c) => c.id === cat.id && c.entries.length > 0);
                       const active = activeCategory === cat.id;
@@ -716,7 +717,7 @@ export default function KenyanTranslatorPage() {
                         </button>
                       );
                     })}
-                  </div>
+                  </ExpandablePillRow>
                 </div>
 
                 {/* Category Entries Table */}
@@ -841,7 +842,7 @@ export default function KenyanTranslatorPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-nowrap overflow-x-auto no-scrollbar pb-1 sm:pb-0 sm:flex-wrap gap-1.5 sm:gap-2">
+                <ExpandablePillRow>
                   {ALL_DICTS.map((d) => {
                     const isSelected = compareLanguages.includes(d.languageId);
                     return (
@@ -864,7 +865,7 @@ export default function KenyanTranslatorPage() {
                       </button>
                     );
                   })}
-                </div>
+                </ExpandablePillRow>
               </div>
 
               <div className="space-y-2">
