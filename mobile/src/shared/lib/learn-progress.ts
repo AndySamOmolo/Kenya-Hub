@@ -40,7 +40,7 @@ function createDefaultProgress(languageId: string): UserProgress {
   };
 }
 
-function isRecord(value: unknown): unknown is Record<string, unknown> {
+function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
