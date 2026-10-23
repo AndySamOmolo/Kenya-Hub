@@ -8,9 +8,9 @@ import { useState, useMemo, useCallback, useEffect } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
-import { Repeat, BarChart, BookOpen, Dices, Folder, Search, Hash, Plus, X, Check, Send, Sparkles } from "lucide-react";
+import { BarChart, BookOpen, Dices, Folder, Search, Hash, Plus, X, Check, Send, ArrowRight } from "lucide-react";
 
-// Import all dictionaries
+// Import all 22 Kenyan language dictionaries
 import swahiliDict from "@/data/dictionaries/swahili.json";
 import kikuyuDict from "@/data/dictionaries/kikuyu.json";
 import luoDict from "@/data/dictionaries/luo.json";
@@ -24,8 +24,16 @@ import somaliDict from "@/data/dictionaries/somali.json";
 import turkanaDict from "@/data/dictionaries/turkana.json";
 import mijikendaDict from "@/data/dictionaries/mijikenda.json";
 import tesoDict from "@/data/dictionaries/teso.json";
+import embuDict from "@/data/dictionaries/embu.json";
+import taitaDict from "@/data/dictionaries/taita.json";
+import samburuDict from "@/data/dictionaries/samburu.json";
+import boranaDict from "@/data/dictionaries/borana.json";
+import rendilleDict from "@/data/dictionaries/rendille.json";
+import pokomoDict from "@/data/dictionaries/pokomo.json";
+import ilchamusDict from "@/data/dictionaries/ilchamus.json";
+import pokotDict from "@/data/dictionaries/pokot.json";
+import tavetaDict from "@/data/dictionaries/taveta.json";
 
-// Import language metadata for "coming soon" languages
 import langData from "@/data/kenya-languages.json";
 import { addContribution } from "@/lib/contributions";
 
@@ -62,21 +70,55 @@ interface Dictionary {
   categories: DictCategory[];
 }
 
-// ─── All dictionaries indexed ───
+interface TranslationResultItem {
+  entry: DictEntry;
+  sourceEntry?: DictEntry;
+  pivotEnglish?: string;
+  categoryName: string;
+  categoryIcon: string;
+  languageId: string;
+  languageName: string;
+  family: string;
+  matchType: "exact" | "partial";
+  missingTarget?: boolean;
+}
+
+// ─── All 22 dictionaries indexed ───
 const ALL_DICTS: Dictionary[] = [
-  swahiliDict, kikuyuDict, luoDict, kalenjinDict,
-  luhyaDict, kambaDict, meruDict, maasaiDict,
-  kisiiDict, somaliDict, turkanaDict, mijikendaDict, tesoDict,
+  swahiliDict,
+  kikuyuDict,
+  luoDict,
+  kalenjinDict,
+  luhyaDict,
+  kambaDict,
+  meruDict,
+  maasaiDict,
+  kisiiDict,
+  somaliDict,
+  turkanaDict,
+  mijikendaDict,
+  tesoDict,
+  embuDict,
+  taitaDict,
+  samburuDict,
+  boranaDict,
+  rendilleDict,
+  pokomoDict,
+  ilchamusDict,
+  pokotDict,
+  tavetaDict,
 ];
 
 const DICT_MAP: Record<string, Dictionary> = {};
-ALL_DICTS.forEach((d) => { DICT_MAP[d.languageId] = d; });
+ALL_DICTS.forEach((d) => {
+  DICT_MAP[d.languageId] = d;
+});
 
 // Languages that have no dictionary yet
 const COMING_SOON_LANGUAGES = langData.languages
   .filter((l) => {
     const id = l.name.split("(")[0].trim().toLowerCase().replace(/\s+/g, "");
-    return !DICT_MAP[id] && id !== "swahili";
+    return !DICT_MAP[id] && id !== "swahili" && id !== "dholuo";
   })
   .map((l) => ({
     name: l.name,
@@ -120,19 +162,45 @@ const POPULAR_COMPARE_WORDS = [
   "God", "Cow", "One", "Two", "Friend", "Sun", "Fire", "House"
 ];
 
+/**
+ * Normalize an English or indigenous headword into clean comparable tokens
+ * so English can serve as an accurate middleman/bridge between any two Kenyan languages.
+ */
+function extractNormalizedTerms(raw: string): string[] {
+  const cleaned = raw
+    .toLowerCase()
+    .replace(/^\[[^\]]*\]\s*/g, "")
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(/[!?.]/g, "")
+    .trim();
+  const parts = cleaned
+    .split(/[\/,;]/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const out = new Set<string>();
+  if (cleaned) {
+    out.add(cleaned);
+    if (cleaned.startsWith("to ")) out.add(cleaned.slice(3).trim());
+  }
+  for (const p of parts) {
+    out.add(p);
+    if (p.startsWith("to ")) out.add(p.slice(3).trim());
+  }
+  return Array.from(out);
+}
+
 // ─── FAQ ───
 const faq = [
-  { question: "What languages does this translator support?", answer: `Currently 12 Kenyan languages with seed vocabularies: Swahili, Kikuyu, Dholuo (Luo), Kalenjin, Luhya (Bukusu), Kamba, Meru, Maasai, Kisii, Somali, Turkana, and Mijikenda (Giriama). More languages and vocabulary are being added continuously.` },
-  { question: "Is this a machine translation tool?", answer: "No — this is a curated dictionary-based translator. Each translation has been verified by community contributors. It translates individual words and common phrases, not full sentences. This makes it more reliable than machine translation for Kenyan languages, which are often poorly supported by AI translators." },
-  { question: "Can I contribute translations?", answer: "Yes! We're actively looking for native speakers to help expand the dictionaries. Use the 'Contribute' button on any language card to submit corrections or new vocabulary. All contributions are credited." },
-  { question: "Why don't some languages have dictionaries yet?", answer: "We're building this project incrementally. Languages like Embu, Taita, Pokomo, Samburu, and others are planned. If you speak one of these languages, please reach out to help us build the dictionary!" },
-  { question: "How accurate are the pronunciations?", answer: "Pronunciations use an approximate English phonetic guide. They're designed to help non-speakers get a rough idea of how words sound. For precise pronunciation, audio recordings (coming soon) will be more reliable." },
+  { question: "What languages does this translator support?", answer: `Currently ${ALL_DICTS.length} Kenyan languages with verified public-domain and community vocabularies: Swahili, Kikuyu, Dholuo (Luo), Kalenjin, Luhya, Kamba, Meru, Maasai, Kisii, Somali, Turkana, Mijikenda, Teso, Embu, Taita, Samburu, Borana (Oromo), Rendille, Pokomo, Ilchamus (Njemps), Pokot (Pökoot), and Taveta.` },
+  { question: "How does translating between two Kenyan languages work?", answer: "When you choose any Kenyan language as your 'From' language and another Kenyan language (or 'All Languages') as your 'To' language, the translator uses English as a middleman bridge — matching your word in the source dictionary, resolving its English concept, and finding the corresponding translation in your target Kenyan language(s)." },
+  { question: "Is this a machine translation tool?", answer: "No — this is a curated dictionary-based translator grounded in verified public-domain linguistic monographs (1844–1927), Unicode CLDR, and community contributors. It translates words and common phrases accurately without AI hallucination." },
+  { question: "Can I contribute translations?", answer: "Yes! Use the 'Contribute' button on any language card to submit corrections or new vocabulary. All contributions are credited." },
 ];
 
 // ─── Component ───
 export default function KenyanTranslatorPage() {
   const [sourceLanguage, setSourceLanguage] = useState("english");
-  const [targetLanguage, setTargetLanguage] = useState("kamba");
+  const [targetLanguage, setTargetLanguage] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<"translate" | "compare" | "browse">("translate");
@@ -172,7 +240,6 @@ export default function KenyanTranslatorPage() {
     e.preventDefault();
     if (!contributeLanguage) return;
 
-    // Save to KenyaHub contributions store for Admin Panel review & approval
     try {
       addContribution({
         language: contributeLanguage,
@@ -188,7 +255,6 @@ export default function KenyanTranslatorPage() {
       console.error("Failed to add contribution:", err);
     }
 
-    // Save locally as backup
     try {
       const saved = localStorage.getItem("kh-user-contributions");
       const existing = saved ? JSON.parse(saved) : [];
@@ -207,7 +273,6 @@ export default function KenyanTranslatorPage() {
       localStorage.setItem("kh-user-contributions", JSON.stringify([newEntry, ...existing]));
     } catch { /* ignore */ }
 
-    // Optional mailto client fallback
     const typeLabel =
       contributeType === "new_word"
         ? "New Word"
@@ -275,91 +340,259 @@ export default function KenyanTranslatorPage() {
 
   // Swap languages
   const swapLanguages = useCallback(() => {
-    setSourceLanguage(targetLanguage);
-    setTargetLanguage(sourceLanguage);
+    if (targetLanguage === "all") {
+      setSourceLanguage("swahili");
+      setTargetLanguage("english");
+    } else {
+      setSourceLanguage(targetLanguage);
+      setTargetLanguage(sourceLanguage);
+    }
     setSearchQuery("");
   }, [sourceLanguage, targetLanguage]);
 
-  // Get target dictionary
-  const targetDict = DICT_MAP[targetLanguage];
+  const targetDict = targetLanguage !== "english" && targetLanguage !== "all" ? DICT_MAP[targetLanguage] : null;
   const sourceDict = sourceLanguage !== "english" ? DICT_MAP[sourceLanguage] : null;
 
-  // ─── Search / Translation Logic ───
-  const searchResults = useMemo(() => {
-    if (!searchQuery.trim()) return [];
+  // ─── Search / Translation Logic (Supports English->X, X->English, X->Y via English middleman, and X/English->All Languages) ───
+  const { searchResults, detectedPivotWords } = useMemo(() => {
+    if (!searchQuery.trim()) return { searchResults: [], detectedPivotWords: [] as string[] };
     const q = searchQuery.toLowerCase().trim();
+    const qClean = extractNormalizedTerms(q)[0] || q;
 
-    // Add to recent
     if (q.length > 2) {
-      // defer to avoid setState during render
       setTimeout(() => addRecentSearch(q), 0);
     }
 
-    const results: { entry: DictEntry; categoryName: string; categoryIcon: string; languageId: string; languageName: string; matchType: "exact" | "partial" }[] = [];
+    const results: TranslationResultItem[] = [];
+    const pivotWordsSet = new Set<string>();
+
+    // Helper to search a target dictionary by a list of English pivot terms
+    const findInDictByEnglishPivots = (
+      dict: Dictionary,
+      pivots: string[],
+      sourceMatch?: DictEntry
+    ): TranslationResultItem[] => {
+      const exactMatches: TranslationResultItem[] = [];
+      const partialMatches: TranslationResultItem[] = [];
+
+      for (const cat of dict.categories) {
+        for (const entry of cat.entries) {
+          const engTerms = extractNormalizedTerms(entry.english);
+          const engLower = entry.english.toLowerCase();
+
+          const isExact = pivots.some(
+            (pw) => engLower === pw || engTerms.includes(pw)
+          );
+          if (isExact) {
+            exactMatches.push({
+              entry,
+              sourceEntry: sourceMatch,
+              pivotEnglish: sourceMatch ? sourceMatch.english : entry.english,
+              categoryName: cat.name,
+              categoryIcon: cat.icon || "📖",
+              languageId: dict.languageId,
+              languageName: dict.languageName,
+              family: dict.family,
+              matchType: "exact",
+            });
+          } else if (
+            pivots.some((pw) => pw.length >= 3 && engTerms.some((et) => et.includes(pw)))
+          ) {
+            partialMatches.push({
+              entry,
+              sourceEntry: sourceMatch,
+              pivotEnglish: sourceMatch ? sourceMatch.english : entry.english,
+              categoryName: cat.name,
+              categoryIcon: cat.icon || "📖",
+              languageId: dict.languageId,
+              languageName: dict.languageName,
+              family: dict.family,
+              matchType: "partial",
+            });
+          }
+        }
+      }
+      return [...exactMatches, ...partialMatches];
+    };
 
     if (sourceLanguage === "english") {
-      // English → Target language
-      if (targetDict) {
-        targetDict.categories.forEach((cat) => {
-          cat.entries.forEach((entry) => {
-            const engLower = entry.english.toLowerCase();
-            if (engLower === q) {
-              results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon || "📖", languageId: targetDict.languageId, languageName: targetDict.languageName, matchType: "exact" });
-            } else if (engLower.includes(q)) {
-              results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon || "📖", languageId: targetDict.languageId, languageName: targetDict.languageName, matchType: "partial" });
-            }
-          });
-        });
+      const pivots = extractNormalizedTerms(q);
+      if (targetLanguage === "all") {
+        // Translate English -> All 22 Kenyan languages
+        for (const dict of ALL_DICTS) {
+          const matches = findInDictByEnglishPivots(dict, pivots);
+          if (matches.length > 0) {
+            results.push(matches[0]);
+          }
+        }
+      } else if (targetLanguage === "english") {
+        // English -> English (show matches across all dictionaries as reference)
+        for (const dict of ALL_DICTS) {
+          const matches = findInDictByEnglishPivots(dict, pivots);
+          if (matches.length > 0) results.push(matches[0]);
+        }
+      } else if (targetDict) {
+        // English -> Specific Kenyan language
+        results.push(...findInDictByEnglishPivots(targetDict, pivots));
       }
     } else if (sourceDict) {
-      // Kenyan language → English (reverse lookup)
-      sourceDict.categories.forEach((cat) => {
-        cat.entries.forEach((entry) => {
+      // Source is a Kenyan language: first match in sourceDict
+      const exactSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
+      const partialSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
+
+      for (const cat of sourceDict.categories) {
+        for (const entry of cat.entries) {
+          const transTerms = extractNormalizedTerms(entry.translation);
           const transLower = entry.translation.toLowerCase();
-          if (transLower === q) {
-            results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon || "📖", languageId: sourceDict.languageId, languageName: sourceDict.languageName, matchType: "exact" });
-          } else if (transLower.includes(q)) {
-            results.push({ entry, categoryName: cat.name, categoryIcon: cat.icon || "📖", languageId: sourceDict.languageId, languageName: sourceDict.languageName, matchType: "partial" });
+          if (transLower === q || transTerms.includes(qClean)) {
+            exactSourceMatches.push({ entry, cat });
+          } else if (transLower.includes(q) || transTerms.some((t) => t.includes(qClean))) {
+            partialSourceMatches.push({ entry, cat });
           }
-        });
-      });
+        }
+      }
+
+      // Fallback: if user typed an English word while a Kenyan language was selected as "From", still match it!
+      if (exactSourceMatches.length === 0 && partialSourceMatches.length === 0) {
+        for (const cat of sourceDict.categories) {
+          for (const entry of cat.entries) {
+            const engTerms = extractNormalizedTerms(entry.english);
+            if (engTerms.includes(qClean)) {
+              exactSourceMatches.push({ entry, cat });
+            } else if (entry.english.toLowerCase().includes(q)) {
+              partialSourceMatches.push({ entry, cat });
+            }
+          }
+        }
+      }
+
+      const combinedSource = [...exactSourceMatches, ...partialSourceMatches];
+
+      if (targetLanguage === "english" || targetLanguage === sourceLanguage) {
+        // Kenyan language -> English
+        for (const sm of combinedSource) {
+          const isExact = exactSourceMatches.includes(sm);
+          results.push({
+            entry: sm.entry,
+            categoryName: sm.cat.name,
+            categoryIcon: sm.cat.icon || "📖",
+            languageId: sourceDict.languageId,
+            languageName: sourceDict.languageName,
+            family: sourceDict.family,
+            matchType: isExact ? "exact" : "partial",
+          });
+        }
+      } else if (targetLanguage === "all") {
+        // Kenyan language -> ALL languages using English as the middleman!
+        const primarySources = exactSourceMatches.length > 0 ? exactSourceMatches.slice(0, 3) : partialSourceMatches.slice(0, 3);
+        const allPivots: string[] = [];
+        for (const sm of primarySources) {
+          for (const pw of extractNormalizedTerms(sm.entry.english)) {
+            pivotWordsSet.add(pw);
+            if (!allPivots.includes(pw)) allPivots.push(pw);
+          }
+        }
+
+        if (primarySources.length > 0) {
+          const bestSource = primarySources[0].entry;
+          for (const dict of ALL_DICTS) {
+            if (dict.languageId === sourceDict.languageId) continue;
+            const dictMatches = findInDictByEnglishPivots(dict, allPivots, bestSource);
+            if (dictMatches.length > 0) {
+              results.push(dictMatches[0]);
+            }
+          }
+        }
+      } else if (targetDict) {
+        // Kenyan language A -> Kenyan language B using English as the middleman!
+        const primarySources = exactSourceMatches.length > 0 ? exactSourceMatches.slice(0, 5) : partialSourceMatches.slice(0, 5);
+        const seenTargetKeys = new Set<string>();
+
+        for (const sm of primarySources) {
+          const pivots = extractNormalizedTerms(sm.entry.english);
+          pivots.forEach((pw) => pivotWordsSet.add(pw));
+          const targetMatches = findInDictByEnglishPivots(targetDict, pivots, sm.entry);
+
+          if (targetMatches.length > 0) {
+            for (const tm of targetMatches) {
+              const key = `${tm.entry.english}::${tm.entry.translation}`;
+              if (!seenTargetKeys.has(key)) {
+                seenTargetKeys.add(key);
+                results.push(tm);
+              }
+            }
+          } else {
+            // Even if targetDict lacks this entry, show the resolved English bridge meaning
+            const key = `bridge::${sm.entry.english}`;
+            if (!seenTargetKeys.has(key)) {
+              seenTargetKeys.add(key);
+              results.push({
+                entry: sm.entry,
+                sourceEntry: sm.entry,
+                pivotEnglish: sm.entry.english,
+                categoryName: sm.cat.name,
+                categoryIcon: sm.cat.icon || "📖",
+                languageId: targetDict.languageId,
+                languageName: targetDict.languageName,
+                family: targetDict.family,
+                matchType: "partial",
+                missingTarget: true,
+              });
+            }
+          }
+        }
+      }
     }
 
-    // Sort: exact matches first
-    results.sort((a, b) => (a.matchType === "exact" ? -1 : 1) - (b.matchType === "exact" ? -1 : 1));
-    return results;
+    results.sort((a, b) => {
+      if (a.missingTarget !== b.missingTarget) return a.missingTarget ? 1 : -1;
+      return (a.matchType === "exact" ? -1 : 1) - (b.matchType === "exact" ? -1 : 1);
+    });
+
+    return {
+      searchResults: results,
+      detectedPivotWords: Array.from(pivotWordsSet),
+    };
   }, [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, addRecentSearch]);
 
-  // ─── Category Browser ───
+  // ─── Category Browser (Supports direct browsing OR Kenyan-to-Kenyan pivot browsing!) ───
+  const browseDict = targetDict || sourceDict || DICT_MAP.swahili;
   const categoryEntries = useMemo(() => {
-    if (!activeCategory || !targetDict) return [];
-    const cat = targetDict.categories.find((c) => c.id === activeCategory);
+    if (!activeCategory || !browseDict) return [];
+    const cat = browseDict.categories.find((c) => c.id === activeCategory);
     return cat ? cat.entries : [];
-  }, [activeCategory, targetDict]);
+  }, [activeCategory, browseDict]);
+
+  // Map English headword -> sourceDict entry when browsing a category in Kenyan A -> Kenyan B mode
+  const sourcePivotMap = useMemo(() => {
+    if (!sourceDict) return new Map<string, DictEntry>();
+    const map = new Map<string, DictEntry>();
+    for (const cat of sourceDict.categories) {
+      for (const entry of cat.entries) {
+        for (const term of extractNormalizedTerms(entry.english)) {
+          if (!map.has(term)) map.set(term, entry);
+        }
+      }
+    }
+    return map;
+  }, [sourceDict]);
 
   // ─── Compare Mode: word across multiple languages ───
   const { comparisonResults, resolvedEnglish } = useMemo(() => {
     if (viewMode !== "compare" || !searchQuery.trim()) {
       return { comparisonResults: [], resolvedEnglish: null };
     }
-    const cleanTerm = (s: string) =>
-      s
-        .toLowerCase()
-        .replace(/\s*\([^)]*\)/g, "")
-        .replace(/[!?.]/g, "")
-        .trim();
-
-    const q = cleanTerm(searchQuery);
+    const qTerms = extractNormalizedTerms(searchQuery);
+    const q = qTerms[0] || searchQuery.toLowerCase().trim();
 
     // Check if query matches a local language translation in any dictionary
     let matchedEnglish = q;
     for (const d of ALL_DICTS) {
       for (const cat of d.categories) {
         for (const entry of cat.entries) {
-          const transClean = cleanTerm(entry.translation);
-          const transParts = transClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
-          if (transClean === q || transParts.includes(q)) {
-            matchedEnglish = cleanTerm(entry.english);
+          const transTerms = extractNormalizedTerms(entry.translation);
+          if (transTerms.includes(q)) {
+            matchedEnglish = extractNormalizedTerms(entry.english)[0] || entry.english.toLowerCase();
             break;
           }
         }
@@ -368,14 +601,7 @@ export default function KenyanTranslatorPage() {
       if (matchedEnglish !== q) break;
     }
 
-    const targetWords = [q];
-    if (matchedEnglish !== q) {
-      targetWords.unshift(matchedEnglish);
-    }
-    const slashParts = matchedEnglish.split(/[\/,;]/).map((s) => s.trim().toLowerCase()).filter(Boolean);
-    slashParts.forEach((sp) => {
-      if (!targetWords.includes(sp)) targetWords.push(sp);
-    });
+    const targetWords = Array.from(new Set([matchedEnglish, ...qTerms, ...extractNormalizedTerms(matchedEnglish)]));
 
     const results: { languageId: string; languageName: string; family: string; entry: DictEntry | null }[] = [];
 
@@ -384,24 +610,17 @@ export default function KenyanTranslatorPage() {
       if (!dict) return;
       let found: DictEntry | null = null;
 
-      // Pass 1: Exact headword or synonym match (stripping parenthetical notes like "(The Creator)")
       for (const cat of dict.categories) {
         for (const entry of cat.entries) {
-          const engRaw = entry.english.toLowerCase().trim();
-          const engClean = cleanTerm(entry.english);
-          const engParts = engClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
-          const transClean = cleanTerm(entry.translation);
-          const transParts = transClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
+          const engTerms = extractNormalizedTerms(entry.english);
+          const transTerms = extractNormalizedTerms(entry.translation);
 
           if (
             targetWords.some(
               (tw) =>
-                engRaw === tw ||
-                engClean === tw ||
-                engParts.includes(tw) ||
-                engParts.includes(`to ${tw}`) ||
-                transClean === tw ||
-                transParts.includes(tw)
+                entry.english.toLowerCase().trim() === tw ||
+                engTerms.includes(tw) ||
+                transTerms.includes(tw)
             )
           ) {
             found = entry;
@@ -411,16 +630,12 @@ export default function KenyanTranslatorPage() {
         if (found) break;
       }
 
-      // Pass 2: Only match multi-word phrases if the user searched a multi-word phrase
       if (!found) {
         for (const cat of dict.categories) {
           for (const entry of cat.entries) {
-            const engClean = cleanTerm(entry.english);
+            const engTerms = extractNormalizedTerms(entry.english);
             if (
-              targetWords.some((tw) => {
-                if (!tw.includes(" ")) return false;
-                return engClean.includes(tw);
-              })
+              targetWords.some((tw) => tw.includes(" ") && engTerms.some((et) => et.includes(tw)))
             ) {
               found = entry;
               break;
@@ -441,7 +656,6 @@ export default function KenyanTranslatorPage() {
 
   // Stats
   const totalEntries = ALL_DICTS.reduce((sum, d) => sum + d.categories.reduce((s, c) => s + c.entries.length, 0), 0);
-  const activeTargetCategories = targetDict?.categories.filter((c) => c.entries.length > 0) ?? [];
 
   // ─── Random Word Feature ───
   const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string } | null>(null);
@@ -458,15 +672,17 @@ export default function KenyanTranslatorPage() {
 
   useEffect(() => { getRandomWord(); }, [getRandomWord]);
 
+  const isPivotMode = sourceLanguage !== "english" && targetLanguage !== "english";
+
   return (
     <ToolShell tool={tool} faq={faq}>
-      <div className="space-y-6">
+      <div className="space-y-4 sm:space-y-6">
 
         {/* ── Random Word of the Moment ── */}
         {randomWord && (
-          <div className="bg-gradient-to-r from-gold/10 to-kenya-green/10 border border-gold/20 rounded-xl p-4 flex items-center justify-between gap-4">
+          <div className="bg-gradient-to-r from-gold/10 to-kenya-green/10 border border-gold/20 rounded-xl p-3.5 sm:p-4 flex items-center justify-between gap-3 sm:gap-4">
             <div className="min-w-0">
-              <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-1 flex items-center gap-1.5"><Dices className="w-3 h-3" /> Discover a word</p>
+              <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-0.5 sm:mb-1 flex items-center gap-1.5"><Dices className="w-3 h-3" /> Discover a word ({ALL_DICTS.length} Kenyan languages)</p>
               <p className="text-sm font-bold text-text-primary">&ldquo;{randomWord.entry.english}&rdquo;</p>
               <p className="text-xs text-text-secondary mt-0.5">
                 <span className="text-gold font-medium">{randomWord.entry.translation}</span>
@@ -487,16 +703,16 @@ export default function KenyanTranslatorPage() {
         {/* ── View Mode Tabs (Standalone Horizontal Pills) ── */}
         <ExpandablePillRow>
           {([
-            { id: "translate" as const, label: "Translate" },
-            { id: "compare" as const, label: "Compare" },
-            { id: "browse" as const, label: "Browse" },
+            { id: "translate" as const, label: "Translate (Any → Any / All)" },
+            { id: "compare" as const, label: `Compare (${ALL_DICTS.length} Languages)` },
+            { id: "browse" as const, label: "Browse Dictionaries" },
           ]).map((mode) => {
             const active = viewMode === mode.id;
             return (
               <button
                 key={mode.id}
                 onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -514,10 +730,10 @@ export default function KenyanTranslatorPage() {
         {viewMode === "translate" && (
           <>
             {/* Language Selector */}
-            <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
+            <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5">
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
                 <div className="w-full sm:flex-1 min-w-0">
-                  <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">From</label>
+                  <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1 font-medium">From (Source Language)</label>
                   <CustomSelect
                     value={sourceLanguage}
                     onValueChange={setSourceLanguage}
@@ -531,7 +747,7 @@ export default function KenyanTranslatorPage() {
 
                 <button
                   onClick={swapLanguages}
-                  className="my-1 sm:my-0 sm:mt-5 w-10 h-10 rounded-full bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-all hover:rotate-180 duration-300 flex-shrink-0 transform rotate-90 sm:rotate-0"
+                  className="my-0.5 sm:my-0 sm:mt-5 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-all hover:rotate-180 duration-300 flex-shrink-0 transform rotate-90 sm:rotate-0"
                   title="Swap languages"
                 >
                   <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -540,11 +756,12 @@ export default function KenyanTranslatorPage() {
                 </button>
 
                 <div className="w-full sm:flex-1 min-w-0">
-                  <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1.5 font-medium">To</label>
+                  <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1 font-medium">To (Target Language)</label>
                   <CustomSelect
                     value={targetLanguage}
                     onValueChange={setTargetLanguage}
                     options={[
+                      { value: "all", label: `✨ All ${ALL_DICTS.length} Kenyan Languages` },
                       { value: "english", label: "English" },
                       ...ALL_DICTS.map((d) => ({ value: d.languageId, label: d.languageName }))
                     ]}
@@ -553,15 +770,32 @@ export default function KenyanTranslatorPage() {
                 </div>
               </div>
 
+              {/* Bridge Indicator Badge when translating Kenyan -> Kenyan or Kenyan -> All */}
+              {isPivotMode && (
+                <div className="mt-2.5 px-3 py-1.5 rounded-lg bg-gold/10 border border-gold/25 flex items-center gap-2 text-[0.6875rem] text-text-secondary">
+                  <span className="text-gold font-semibold">🔗 English Middleman Active:</span>
+                  <span>
+                    Translating from <strong>{sourceDict?.languageName}</strong>{" "}
+                    <ArrowRight className="inline w-3 h-3 text-gold mx-0.5" /> <strong>English</strong>{" "}
+                    <ArrowRight className="inline w-3 h-3 text-gold mx-0.5" />{" "}
+                    <strong>{targetLanguage === "all" ? `All ${ALL_DICTS.length - 1} Other Kenyan Languages` : targetDict?.languageName}</strong>
+                  </span>
+                </div>
+              )}
+
               {/* Search Input */}
-              <div className="mt-4 relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-text-muted" />
+              <div className="mt-3 sm:mt-4 relative">
+                <Search className="absolute left-3.5 sm:left-4 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-text-muted" />
                 <input
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={sourceLanguage === "english" ? "Search in English..." : `Search in ${sourceDict?.languageName ?? ""}...`}
-                  className="input-field text-sm w-full !pl-12 !pr-10"
+                  placeholder={
+                    sourceLanguage === "english"
+                      ? "Type an English word (e.g. Water, Sun, Mother, One, Fire)..."
+                      : `Type a word in ${sourceDict?.languageName ?? "source language"} (or English)...`
+                  }
+                  className="input-field text-sm w-full !pl-10 sm:!pl-12 !pr-10"
                   id="translator-search"
                   autoComplete="off"
                 />
@@ -574,27 +808,42 @@ export default function KenyanTranslatorPage() {
                 )}
               </div>
 
-              {/* Recent Searches */}
-              {!searchQuery && recentSearches.length > 0 && (
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  <span className="text-[0.6rem] text-text-muted mt-1">Recent:</span>
-                  {recentSearches.slice(0, 5).map((s) => (
-                    <button key={s} onClick={() => setSearchQuery(s)} className="text-[0.65rem] px-2 py-0.5 rounded-full bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/30 transition-colors">
-                      {s}
+              {/* Quick Suggestions & Recent Searches */}
+              {!searchQuery && (
+                <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
+                  <span className="text-[0.6rem] text-text-muted">Try:</span>
+                  {POPULAR_COMPARE_WORDS.slice(0, 8).map((w) => (
+                    <button
+                      key={w}
+                      type="button"
+                      onClick={() => setSearchQuery(w)}
+                      className="text-[0.65rem] px-2 py-0.5 rounded-full bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/30 transition-colors"
+                    >
+                      {w}
                     </button>
                   ))}
+                  {recentSearches.length > 0 && (
+                    <>
+                      <span className="text-[0.6rem] text-text-muted ml-1">Recent:</span>
+                      {recentSearches.slice(0, 4).map((s) => (
+                        <button key={s} onClick={() => setSearchQuery(s)} className="text-[0.65rem] px-2 py-0.5 rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors">
+                          {s}
+                        </button>
+                      ))}
+                    </>
+                  )}
                 </div>
               )}
             </div>
 
             {/* Target Language Info Banner */}
             {targetDict && !searchQuery && (
-              <div className="bg-bg-card border border-border rounded-xl p-4 flex items-start gap-3">
+              <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 flex items-start gap-3">
                 <span className="w-2.5 h-2.5 rounded-full mt-1 flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[targetDict.family] }} />
                 <div className="min-w-0">
                   <h3 className="text-sm font-bold text-text-primary">{targetDict.languageName}</h3>
                   <p className="text-[0.65rem] text-text-muted mt-0.5">
-                    {targetDict.nativeName} · {(targetDict.speakerCount / 1000000).toFixed(1)}M speakers · {targetDict.family.charAt(0).toUpperCase() + targetDict.family.slice(1)} family
+                    {targetDict.nativeName} · {(targetDict.speakerCount / 1000000).toFixed(2).replace(/\.?0+$/, "")}M speakers · {targetDict.family.charAt(0).toUpperCase() + targetDict.family.slice(1)} family
                   </p>
                   <p className="text-[0.6rem] text-text-muted mt-1">{targetDict.counties.join(", ")}</p>
                   <div className="flex items-center gap-4 mt-2">
@@ -615,101 +864,174 @@ export default function KenyanTranslatorPage() {
             {/* Search Results */}
             {searchQuery && (
               <div className="space-y-2">
-                <p className="text-xs text-text-muted">
-                  {searchResults.length} result{searchResults.length !== 1 ? "s" : ""} for &ldquo;{searchQuery}&rdquo;
-                  {targetDict && <span> in {targetDict.languageName}</span>}
-                </p>
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <p className="text-xs text-text-muted">
+                    {searchResults.length} result{searchResults.length !== 1 ? "s" : ""} for &ldquo;{searchQuery}&rdquo;
+                    {targetLanguage === "all" ? (
+                      <span> across all Kenyan languages</span>
+                    ) : targetDict ? (
+                      <span> in {targetDict.languageName}</span>
+                    ) : (
+                      <span> in English</span>
+                    )}
+                  </p>
+                  {detectedPivotWords.length > 0 && (
+                    <span className="text-[0.65rem] bg-gold/10 border border-gold/25 text-gold px-2.5 py-0.5 rounded-full font-medium">
+                      English bridge: &ldquo;{detectedPivotWords.slice(0, 3).join(", ")}&rdquo;
+                    </span>
+                  )}
+                </div>
 
                 {searchResults.length === 0 && (
-                  <div className="bg-bg-card border border-border rounded-xl p-8 text-center">
+                  <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
                     <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-8 h-8 text-text-muted" /></div>
                     <p className="text-sm font-medium text-text-primary mb-1">No translations found</p>
                     <p className="text-xs text-text-muted max-w-sm mx-auto">
-                      Try a different word or browse categories below. You can also submit this word to help expand the dictionary!
+                      Try searching a core word (e.g. Water, Fire, Sun, Mother, One) or switch &ldquo;To&rdquo; to <strong>All {ALL_DICTS.length} Kenyan Languages</strong>.
                     </p>
-                    <button
-                      type="button"
-                      onClick={() => openContributeModal(targetDict?.languageName || "Swahili", searchQuery)}
-                      className="mt-3 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 hover:bg-gold/25 text-gold border border-gold/30 transition-all cursor-pointer"
-                    >
-                      <Plus className="w-3.5 h-3.5" />
-                      <span>Contribute &ldquo;{searchQuery}&rdquo; translation</span>
-                    </button>
+                    <div className="mt-3 flex flex-wrap justify-center gap-2">
+                      {targetLanguage !== "all" && (
+                        <button
+                          type="button"
+                          onClick={() => setTargetLanguage("all")}
+                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-kenya-green/15 hover:bg-kenya-green/25 text-kenya-green-light border border-kenya-green/30 transition-all cursor-pointer"
+                        >
+                          <span>Translate &ldquo;{searchQuery}&rdquo; to All {ALL_DICTS.length} Languages</span>
+                        </button>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() => openContributeModal(targetDict?.languageName || sourceDict?.languageName || "Swahili", searchQuery)}
+                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 hover:bg-gold/25 text-gold border border-gold/30 transition-all cursor-pointer"
+                      >
+                        <Plus className="w-3.5 h-3.5" />
+                        <span>Contribute &ldquo;{searchQuery}&rdquo; translation</span>
+                      </button>
+                    </div>
                   </div>
                 )}
 
-                {searchResults.map((result, i) => {
-                  const favKey = `${result.languageId}:${result.entry.english}`;
-                  const isFav = favorites.includes(favKey);
-                  const isReverse = sourceLanguage !== "english";
-                  return (
-                    <div key={i} className={`bg-bg-card border rounded-xl p-4 transition-all hover:border-gold/30 ${result.matchType === "exact" ? "border-gold/20" : "border-border"}`}>
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="min-w-0 flex-1">
-                          <div className="flex items-center gap-2 mb-1">
-                            <span className="text-xs">{result.categoryIcon}</span>
-                            <span className="text-[0.6rem] text-text-muted">{result.categoryName}</span>
-                            {result.matchType === "exact" && (
-                              <span className="text-[0.55rem] bg-gold/15 text-gold px-1.5 py-0.5 rounded font-medium">Exact</span>
-                            )}
-                          </div>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
-                            <div>
-                              <p className="text-[0.6rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverse ? result.languageName : "English"}</p>
-                              <p className="text-sm font-bold text-text-primary">{isReverse ? result.entry.translation : result.entry.english}</p>
-                            </div>
-                            <div>
-                              <p className="text-[0.6rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverse ? "English" : result.languageName}</p>
-                              <p className="text-sm font-bold text-gold">{isReverse ? result.entry.english : result.entry.translation}</p>
-                              {result.entry.pronunciation && (
-                                <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
+                <div className={targetLanguage === "all" ? "grid grid-cols-1 sm:grid-cols-2 gap-2.5" : "space-y-2"}>
+                  {searchResults.map((result, i) => {
+                    const favKey = `${result.languageId}:${result.entry.english}`;
+                    const isFav = favorites.includes(favKey);
+                    const isReverseToEnglish = sourceLanguage !== "english" && targetLanguage === "english";
+
+                    return (
+                      <div key={i} className={`bg-bg-card border rounded-xl p-3.5 sm:p-4 transition-all hover:border-gold/30 ${result.matchType === "exact" ? "border-gold/25" : "border-border"}`}>
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center gap-2 mb-1 flex-wrap">
+                              <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[result.family] || "#C8961E" }} />
+                              <span className="text-xs font-bold text-text-primary">{result.languageName}</span>
+                              <span className="text-[0.6rem] text-text-muted">· {result.categoryIcon} {result.categoryName}</span>
+                              {result.matchType === "exact" && (
+                                <span className="text-[0.55rem] bg-gold/15 text-gold px-1.5 py-0.5 rounded font-medium">Exact</span>
                               )}
                             </div>
+
+                            {/* 3-Column Pivot View when translating Kenyan A -> Kenyan B */}
+                            {result.sourceEntry && sourceDict ? (
+                              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 pt-2 border-t border-border/40">
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{sourceDict.languageName}</p>
+                                  <p className="text-xs font-bold text-text-primary">{result.sourceEntry.translation}</p>
+                                </div>
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">English (Middleman)</p>
+                                  <p className="text-xs font-medium text-text-secondary">{result.pivotEnglish}</p>
+                                </div>
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{result.languageName}</p>
+                                  {result.missingTarget ? (
+                                    <div className="flex items-center gap-2">
+                                      <span className="text-xs text-text-muted italic">Not yet recorded in {result.languageName}</span>
+                                      <button
+                                        type="button"
+                                        onClick={() => openContributeModal(result.languageName, result.pivotEnglish)}
+                                        className="text-[0.6rem] text-gold hover:underline font-semibold"
+                                      >
+                                        + Add
+                                      </button>
+                                    </div>
+                                  ) : (
+                                    <>
+                                      <p className="text-sm font-bold text-gold">{result.entry.translation}</p>
+                                      {result.entry.pronunciation && (
+                                        <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
+                                      )}
+                                    </>
+                                  )}
+                                </div>
+                              </div>
+                            ) : (
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1.5">
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverseToEnglish ? result.languageName : "English"}</p>
+                                  <p className="text-xs sm:text-sm font-semibold text-text-primary">{isReverseToEnglish ? result.entry.translation : result.entry.english}</p>
+                                </div>
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverseToEnglish ? "English" : result.languageName}</p>
+                                  <p className="text-sm font-bold text-gold">{isReverseToEnglish ? result.entry.english : result.entry.translation}</p>
+                                  {result.entry.pronunciation && (
+                                    <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
+                                  )}
+                                </div>
+                              </div>
+                            )}
+
+                            {result.entry.context && !result.missingTarget && (
+                              <p className="text-[0.65rem] text-text-muted mt-2 bg-bg-elevated rounded-lg px-2.5 py-1 flex items-start gap-1.5">
+                                <DynamicIcon emoji="💡" className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" />
+                                <span>{result.entry.context}</span>
+                              </p>
+                            )}
                           </div>
-                          {result.entry.context && (
-                            <p className="text-[0.65rem] text-text-muted mt-2 bg-bg-elevated rounded-lg px-3 py-1.5 flex items-start gap-1.5"><DynamicIcon emoji="💡" className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" /> <span>{result.entry.context}</span></p>
+                          {!result.missingTarget && (
+                            <div className="flex flex-col gap-1 flex-shrink-0">
+                              <button onClick={() => copyToClipboard(isReverseToEnglish ? result.entry.english : result.entry.translation)} className="w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title="Copy translation">
+                                {copiedText === (isReverseToEnglish ? result.entry.english : result.entry.translation) ? (
+                                  <svg className="w-3.5 h-3.5 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                  </svg>
+                                ) : (
+                                  <svg className="w-3.5 h-3.5 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                )}
+                              </button>
+                              <button onClick={() => toggleFavorite(favKey)} className="w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title={isFav ? "Remove from favorites" : "Add to favorites"}>
+                                <svg className={`w-3.5 h-3.5 ${isFav ? "text-kenya-red fill-kenya-red" : "text-text-muted"}`} fill={isFav ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                              </button>
+                            </div>
                           )}
                         </div>
-                        <div className="flex flex-col gap-1 flex-shrink-0">
-                          <button onClick={() => copyToClipboard(result.entry.translation)} className="w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title="Copy translation">
-                            {copiedText === result.entry.translation ? (
-                              <svg className="w-3.5 h-3.5 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                              </svg>
-                            ) : (
-                              <svg className="w-3.5 h-3.5 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                              </svg>
-                            )}
-                          </button>
-                          <button onClick={() => toggleFavorite(favKey)} className="w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title={isFav ? "Remove from favorites" : "Add to favorites"}>
-                            <svg className={`w-3.5 h-3.5 ${isFav ? "text-kenya-red fill-kenya-red" : "text-text-muted"}`} fill={isFav ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                            </svg>
-                          </button>
-                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             )}
 
             {/* Category Browser (when not searching) */}
-            {!searchQuery && targetDict && (
+            {!searchQuery && browseDict && (
               <>
                 <div>
-                  <h3 className="text-sm font-bold text-text-primary mb-2.5 font-[family-name:var(--font-outfit)]">Browse by Category</h3>
+                  <h3 className="text-sm font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
+                    Browse {browseDict.languageName} by Category
+                  </h3>
                   <ExpandablePillRow>
                     {ALL_CATEGORY_IDS.map((cat) => {
-                      const hasEntries = targetDict.categories.some((c) => c.id === cat.id && c.entries.length > 0);
+                      const hasEntries = browseDict.categories.some((c) => c.id === cat.id && c.entries.length > 0);
                       const active = activeCategory === cat.id;
                       return (
                         <button
                           key={cat.id}
                           onClick={() => setActiveCategory(active ? null : cat.id)}
                           disabled={!hasEntries}
-                          className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                          className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
                             active
                               ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                               : hasEntries
@@ -727,27 +1049,37 @@ export default function KenyanTranslatorPage() {
                 {/* Category Entries Table */}
                 {activeCategory && categoryEntries.length > 0 && (
                   <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-                    <div className="px-4 py-3 border-b border-border bg-bg-elevated/50">
+                    <div className="px-4 py-2.5 border-b border-border bg-bg-elevated/50">
                       <h4 className="text-sm font-semibold text-text-primary flex items-center gap-2">
                         <span><DynamicIcon emoji={ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.icon} className="w-[1em] h-[1em]" /></span>
-                        {ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name}
+                        {ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name} — {browseDict.languageName}
                         <span className="text-[0.6rem] text-text-muted font-normal">({categoryEntries.length} entries)</span>
                       </h4>
                     </div>
                     <div className="divide-y divide-border">
                       {categoryEntries.map((entry, i) => {
-                        const favKey = `${targetLanguage}:${entry.english}`;
+                        const favKey = `${browseDict.languageId}:${entry.english}`;
                         const isFav = favorites.includes(favKey);
+                        const matchedSource =
+                          sourceDict && targetDict && sourceDict.languageId !== targetDict.languageId
+                            ? extractNormalizedTerms(entry.english).map((t) => sourcePivotMap.get(t)).find(Boolean)
+                            : undefined;
+
                         return (
-                          <div key={i} className="px-4 py-3 hover:bg-bg-card-hover transition-colors">
+                          <div key={i} className="px-3.5 sm:px-4 py-2.5 sm:py-3 hover:bg-bg-card-hover transition-colors">
                             <div className="flex items-start justify-between gap-3">
                               <div className="min-w-0 flex-1 grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-3">
                                 <div>
-                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5 sm:hidden">English</p>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">
+                                    {matchedSource && sourceDict ? `${sourceDict.languageName} → English` : "English"}
+                                  </p>
+                                  {matchedSource && sourceDict && (
+                                    <p className="text-xs font-bold text-kenya-green-light">{matchedSource.translation}</p>
+                                  )}
                                   <p className="text-[0.8125rem] text-text-primary font-medium">{entry.english}</p>
                                 </div>
                                 <div>
-                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5 sm:hidden">{targetDict.languageName}</p>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{browseDict.languageName}</p>
                                   <p className="text-[0.8125rem] text-gold font-bold">{entry.translation}</p>
                                 </div>
                                 <div>
@@ -794,7 +1126,7 @@ export default function KenyanTranslatorPage() {
         {/* ═══════════════════════════════════════ */}
         {viewMode === "compare" && (
           <>
-            <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5 space-y-4">
+            <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 space-y-3.5">
               <div>
                 <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
                   <label className="text-[0.6rem] uppercase tracking-wider text-text-muted font-medium">
@@ -806,14 +1138,13 @@ export default function KenyanTranslatorPage() {
                       onClick={() => setCompareLanguages(ALL_DICTS.map((d) => d.languageId))}
                       className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
                     >
-                      All (12)
+                      All ({ALL_DICTS.length})
                     </button>
                     <span className="text-[0.6rem] text-border">|</span>
                     <button
                       type="button"
                       onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "nilotic").map((d) => d.languageId))}
                       className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
-                      title="Luo, Kalenjin, Maasai, Turkana"
                     >
                       Nilotic
                     </button>
@@ -822,7 +1153,6 @@ export default function KenyanTranslatorPage() {
                       type="button"
                       onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "bantu").map((d) => d.languageId))}
                       className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
-                      title="Swahili, Kikuyu, Luhya, Kamba, Meru, Kisii, Mijikenda"
                     >
                       Bantu
                     </button>
@@ -831,7 +1161,6 @@ export default function KenyanTranslatorPage() {
                       type="button"
                       onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "cushitic").map((d) => d.languageId))}
                       className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
-                      title="Somali"
                     >
                       Cushitic
                     </button>
@@ -877,7 +1206,7 @@ export default function KenyanTranslatorPage() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onClear={() => setSearchQuery("")}
-                  placeholder="Type an English or Kenyan word (e.g. Water, Ngakipi, Ejok, Maji)..."
+                  placeholder="Type any English or Kenyan word (e.g. Water, Maĩ, Bishaan, Nkárɛ́, Maji)..."
                   id="compare-search"
                 />
                 <div className="flex items-center gap-1.5 flex-wrap pt-0.5">
@@ -901,15 +1230,14 @@ export default function KenyanTranslatorPage() {
             </div>
 
             {!searchQuery && (
-              <div className="bg-bg-card border border-border rounded-xl p-8 text-center space-y-4">
+              <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center space-y-4">
                 <div className="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center mx-auto">
                   <BarChart className="w-6 h-6" />
                 </div>
                 <div className="max-w-md mx-auto">
-                  <h4 className="text-sm font-semibold text-text-primary">Compare Across 12 Kenyan Languages</h4>
+                  <h4 className="text-sm font-semibold text-text-primary">Compare Across {ALL_DICTS.length} Kenyan Languages</h4>
                   <p className="text-xs text-text-muted mt-1 leading-relaxed">
-                    Instantly compare vocabulary across Turkana, Swahili, Luo, Kikuyu, Maasai, Somali, and more.
-                    Type any word above or pick a quick comparison topic below:
+                    Instantly compare vocabulary across Swahili, Kikuyu, Dholuo, Kalenjin, Maasai, Samburu, Embu, Taita, Borana, Rendille, Pokomo, Pokot, Taveta, and more.
                   </p>
                 </div>
                 <div className="flex flex-wrap justify-center gap-2 pt-1 max-w-xl mx-auto">
@@ -932,7 +1260,7 @@ export default function KenyanTranslatorPage() {
               <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
                 <div className="px-4 py-3 border-b border-border bg-bg-elevated/50 flex items-center justify-between flex-wrap gap-2">
                   <h4 className="text-sm font-semibold text-text-primary">
-                    &ldquo;{searchQuery}&rdquo; {resolvedEnglish && resolvedEnglish !== searchQuery.toLowerCase() ? <span className="text-text-muted font-normal text-xs"> (translates to &ldquo;{resolvedEnglish}&rdquo;)</span> : null} in {compareLanguages.length} languages
+                    &ldquo;{searchQuery}&rdquo; {resolvedEnglish && resolvedEnglish !== searchQuery.toLowerCase() ? <span className="text-text-muted font-normal text-xs"> (English middleman: &ldquo;{resolvedEnglish}&rdquo;)</span> : null} in {compareLanguages.length} languages
                   </h4>
                   <span className="text-[0.65rem] text-text-muted">
                     {comparisonResults.filter((r) => r.entry).length} of {compareLanguages.length} found
@@ -940,7 +1268,7 @@ export default function KenyanTranslatorPage() {
                 </div>
                 <div className="divide-y divide-border">
                   {comparisonResults.map((result) => (
-                    <div key={result.languageId} className="px-4 py-3 flex items-center gap-3 hover:bg-bg-card-hover transition-colors">
+                    <div key={result.languageId} className="px-4 py-2.5 sm:py-3 flex items-center gap-3 hover:bg-bg-card-hover transition-colors">
                       <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[result.family] }} />
                       <div className="w-28 sm:w-36 flex-shrink-0">
                         <p className="text-xs font-medium text-text-primary break-words">{result.languageName}</p>
@@ -961,7 +1289,7 @@ export default function KenyanTranslatorPage() {
                           <p className="text-xs text-text-muted italic">Not in dictionary yet</p>
                           <button
                             type="button"
-                            onClick={() => openContributeModal(result.languageName, searchQuery)}
+                            onClick={() => openContributeModal(result.languageName, resolvedEnglish || searchQuery)}
                             className="text-[0.65rem] text-gold hover:text-gold-light bg-gold/10 hover:bg-gold/20 px-2 py-0.5 rounded font-medium transition-colors flex items-center gap-1 cursor-pointer"
                           >
                             <Plus className="w-3 h-3" />
@@ -987,28 +1315,20 @@ export default function KenyanTranslatorPage() {
                 </div>
               </div>
             )}
-
-            {searchQuery && comparisonResults.length === 0 && (
-              <div className="bg-bg-card border border-border rounded-xl p-8 text-center">
-                <BarChart className="w-8 h-8 text-text-muted mx-auto mb-3" />
-                <p className="text-sm font-medium text-text-primary mb-1">Select languages to compare</p>
-                <p className="text-xs text-text-muted">Pick at least one language above, then search for a word.</p>
-              </div>
-            )}
           </>
         )}
 
         {/* ═══════════════════════════════════════ */}
-        {/* ── BROWSE MODE — All Languages ── */}
+        {/* ── BROWSE MODE — All 22 Languages ── */}
         {/* ═══════════════════════════════════════ */}
         {viewMode === "browse" && (
           <>
             <div className="flex items-center justify-between gap-4 mb-3 flex-wrap">
               <div>
                 <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                  All Languages ({ALL_DICTS.length} with dictionaries)
+                  All Kenyan Languages ({ALL_DICTS.length} active dictionaries)
                 </h3>
-                <p className="text-[0.65rem] text-text-muted">{totalEntries} total words verified by contributors</p>
+                <p className="text-[0.65rem] text-text-muted">{totalEntries.toLocaleString()} total verified words &amp; phrases</p>
               </div>
               <button
                 type="button"
@@ -1021,15 +1341,15 @@ export default function KenyanTranslatorPage() {
             </div>
 
             {/* Active Language Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
               {ALL_DICTS.map((dict) => {
                 const entryCount = dict.categories.reduce((s, c) => s + c.entries.length, 0);
-                const maxEntries = 120; // Swahili benchmark
+                const maxEntries = 120;
                 const coverage = Math.min(100, (entryCount / maxEntries) * 100);
                 return (
                   <div
                     key={dict.languageId}
-                    className="bg-bg-card border border-border rounded-xl p-4 flex flex-col justify-between group hover:border-gold/30 transition-all"
+                    className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 flex flex-col justify-between group hover:border-gold/30 transition-all"
                   >
                     <div>
                       <div className="flex items-start justify-between gap-2 mb-2">
@@ -1043,7 +1363,7 @@ export default function KenyanTranslatorPage() {
                             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[dict.family] }} />
                             <span className="text-[0.6rem] text-text-muted capitalize">{dict.family}</span>
                             <span className="text-[0.5rem] text-text-muted">·</span>
-                            <span className="text-[0.6rem] text-text-muted">{(dict.speakerCount / 1000000).toFixed(1)}M speakers</span>
+                            <span className="text-[0.6rem] text-text-muted">{dict.nativeName}</span>
                           </div>
                         </button>
                         <span className="text-xs font-bold text-gold">{entryCount}</span>
@@ -1054,11 +1374,9 @@ export default function KenyanTranslatorPage() {
                           <span key={cat.id} className="text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.entries.length}</span>
                         ))}
                       </div>
-                      {/* Coverage bar */}
                       <div className="h-1 bg-bg-elevated rounded-full overflow-hidden">
                         <div className="h-full rounded-full transition-all" style={{ width: `${coverage}%`, backgroundColor: FAMILY_COLORS[dict.family] }} />
                       </div>
-                      <p className="text-[0.55rem] text-text-muted mt-1">{Math.round(coverage)}% coverage</p>
                     </div>
 
                     <div className="flex items-center justify-between gap-2 mt-3 pt-2.5 border-t border-border/60">
@@ -1083,75 +1401,33 @@ export default function KenyanTranslatorPage() {
                 );
               })}
             </div>
-
-            {/* Coming Soon Languages */}
-            {COMING_SOON_LANGUAGES.length > 0 && (
-              <div className="mt-6">
-                <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
-                  <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                    Coming Soon — Help Us Build These Dictionaries
-                  </h3>
-                  <span className="text-[0.65rem] text-gold bg-gold/10 px-2 py-0.5 rounded-full font-medium">
-                    Native speakers wanted
-                  </span>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                  {COMING_SOON_LANGUAGES.map((lang) => (
-                    <div key={lang.name} className="bg-bg-card border border-border/50 hover:border-gold/30 rounded-xl p-3 transition-all flex flex-col justify-between">
-                      <div>
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="w-2 h-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[lang.family] }} />
-                          <h4 className="text-xs font-semibold text-text-primary">{lang.name}</h4>
-                        </div>
-                        <p className="text-[0.6rem] text-text-muted">
-                          {(lang.speakers / 1000000).toFixed(1)}M speakers · {lang.counties.slice(0, 2).join(", ")}
-                        </p>
-                      </div>
-                      <div className="mt-2.5 pt-2 border-t border-border/40 flex items-center justify-between gap-1">
-                        <span className="text-[0.55rem] text-text-muted">Needs seed words</span>
-                        <button
-                          type="button"
-                          onClick={() => openContributeModal(lang.name)}
-                          className="text-[0.65rem] bg-gold text-kenya-black hover:bg-gold-light font-semibold px-2.5 py-1 rounded-md transition-colors flex items-center gap-1 cursor-pointer shadow-sm"
-                        >
-                          <Plus className="w-3 h-3" />
-                          <span>Contribute</span>
-                        </button>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </>
         )}
 
         {/* ── Stats Footer ── */}
-        <div className="bg-bg-card border border-border rounded-xl p-5">
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
           <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About This Translator</h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
             <div className="text-center">
               <p className="text-lg font-bold text-gold">{ALL_DICTS.length}</p>
-              <p className="text-[0.6rem] text-text-muted">Languages</p>
+              <p className="text-[0.6rem] text-text-muted">Kenyan Languages</p>
             </div>
             <div className="text-center">
-              <p className="text-lg font-bold text-gold">{totalEntries}</p>
-              <p className="text-[0.6rem] text-text-muted">Words & Phrases</p>
+              <p className="text-lg font-bold text-gold">{totalEntries.toLocaleString()}</p>
+              <p className="text-[0.6rem] text-text-muted">Words &amp; Phrases</p>
             </div>
             <div className="text-center">
               <p className="text-lg font-bold text-gold">{ALL_CATEGORY_IDS.length}</p>
               <p className="text-[0.6rem] text-text-muted">Categories</p>
             </div>
             <div className="text-center">
-              <p className="text-lg font-bold text-gold">3</p>
-              <p className="text-[0.6rem] text-text-muted">Language Families</p>
+              <p className="text-lg font-bold text-gold">Any ↔ Any</p>
+              <p className="text-[0.6rem] text-text-muted">English Bridge</p>
             </div>
           </div>
           <ul className="space-y-1.5">
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>This is a curated, offline dictionary — not machine translation. Every entry has been verified.</span></li>
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Pronunciations use approximate English phonetics. Audio recordings coming soon.</span></li>
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Dictionary data is community-sourced. Found an error? Let us know via the contact page.</span></li>
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>We&apos;re actively expanding to cover all 42+ Kenyan ethnic languages.</span></li>
+            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Translate between any two Kenyan languages (or into all {ALL_DICTS.length} languages at once) using English as an automatic semantic bridge.</span></li>
+            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Grounded in verified public-domain monographs (1844–1927), Unicode CLDR, and community linguistic contributions.</span></li>
           </ul>
         </div>
 
@@ -1192,7 +1468,6 @@ export default function KenyanTranslatorPage() {
                   </p>
                 </div>
 
-                {/* Contribution Type Selector */}
                 <div>
                   <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                     Contribution Type
@@ -1220,7 +1495,6 @@ export default function KenyanTranslatorPage() {
                   </div>
                 </div>
 
-                {/* Language Selection */}
                 <div>
                   <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                     Target Language
@@ -1238,7 +1512,6 @@ export default function KenyanTranslatorPage() {
 
                 {contributeType !== "reviewer" ? (
                   <>
-                    {/* English Term */}
                     <div>
                       <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                         English Word or Phrase <span className="text-kenya-red">*</span>
@@ -1253,7 +1526,6 @@ export default function KenyanTranslatorPage() {
                       />
                     </div>
 
-                    {/* Native Translation */}
                     <div>
                       <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                         {contributeLanguage} Translation <span className="text-kenya-red">*</span>
@@ -1268,7 +1540,6 @@ export default function KenyanTranslatorPage() {
                       />
                     </div>
 
-                    {/* Pronunciation & Context */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       <div>
                         <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
@@ -1317,7 +1588,6 @@ export default function KenyanTranslatorPage() {
                   </div>
                 )}
 
-                {/* Contributor Info */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 border-t border-border/60">
                   <div>
                     <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
@@ -1345,7 +1615,6 @@ export default function KenyanTranslatorPage() {
                   </div>
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex items-center justify-end gap-2 pt-2">
                   <button
                     type="button"
@@ -1377,42 +1646,7 @@ export default function KenyanTranslatorPage() {
                   </p>
                 </div>
 
-                <div className="bg-bg-elevated border border-border rounded-xl p-3.5 text-left text-xs space-y-1.5 max-w-md mx-auto">
-                  <p className="text-[0.65rem] uppercase tracking-wider text-gold font-bold">Contribution Summary</p>
-                  <p><span className="text-text-muted">Language:</span> <strong className="text-text-primary">{contributeLanguage}</strong></p>
-                  {contributeEnglish && <p><span className="text-text-muted">English:</span> <span className="text-text-primary">{contributeEnglish}</span></p>}
-                  {contributeTranslation && <p><span className="text-text-muted">Translation:</span> <span className="text-gold font-bold">{contributeTranslation}</span></p>}
-                  {contributePronunciation && <p><span className="text-text-muted">Pronunciation:</span> <span className="italic text-text-muted">/{contributePronunciation}/</span></p>}
-                  <p><span className="text-text-muted">Attribution:</span> <span className="text-text-primary">{contributorName || "Anonymous Contributor"}</span></p>
-                </div>
-
                 <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      const summary = `KenyaHub Language Contribution:\nLanguage: ${contributeLanguage}\nEnglish: ${contributeEnglish}\nTranslation: ${contributeTranslation}\nPronunciation: ${contributePronunciation}\nContributor: ${contributorName || "Anonymous"}`;
-                      navigator.clipboard.writeText(summary);
-                      setContributeCopied(true);
-                      setTimeout(() => setContributeCopied(false), 2000);
-                    }}
-                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-elevated border border-border text-text-secondary hover:text-gold transition-colors flex items-center gap-1.5 cursor-pointer"
-                  >
-                    {contributeCopied ? <Check className="w-3.5 h-3.5 text-kenya-green-light" /> : <DynamicIcon emoji="📋" className="w-3.5 h-3.5" />}
-                    <span>{contributeCopied ? "Copied!" : "Copy Summary"}</span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setContributeEnglish("");
-                      setContributeTranslation("");
-                      setContributePronunciation("");
-                      setContributeContext("");
-                      setContributeSubmitted(false);
-                    }}
-                    className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-colors cursor-pointer"
-                  >
-                    Submit Another Word
-                  </button>
                   <button
                     type="button"
                     onClick={closeContributeModal}
@@ -1429,4 +1663,3 @@ export default function KenyanTranslatorPage() {
     </ToolShell>
   );
 }
-

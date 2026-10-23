@@ -1,0 +1,606 @@
+{
+  "languageId": "pokot",
+  "languageName": "Pokot (Pökoot)",
+  "family": "nilotic",
+  "nativeName": "Pökoot / Kimukon",
+  "script": "Latin",
+  "speakerCount": 783000,
+  "counties": [
+    "West Pokot",
+    "Baringo"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Pokot (Pökoot / Suk) dictionary compiled from Mervyn W. H. Beech ('The Suk: Their Language and Folklore', Clarendon Press Oxford, 1911 — Public Domain), Juxon Barton (1921 — Public Domain), Roger van Otterloo (1979), and Wikipedia Nilotic & Kalenjin comparative tables.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / How are you?",
+          "translation": "Chamnyan / Bo kalyon?",
+          "pronunciation": "cham-nyan / bo kal-yon",
+          "context": "Pokot (Pökoot) traditional greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / All is well",
+          "translation": "Kalyon / Kalya",
+          "pronunciation": "kal-yon / kal-ya",
+          "context": "Pokot (Pökoot) greeting response ('Peace')",
+          "audioFile": null
+        },
+        {
+          "english": "I say, you! (Man-to-man vocative address)",
+          "translation": "Werno (pl. wer-chara)",
+          "pronunciation": "wer-no (pl. wer-cha-ra)",
+          "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Kanyul / Kongoi",
+          "pronunciation": "ka-nyul",
+          "context": "Pokot (Pökoot) expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Very fierce",
+          "translation": "Korom nyaman",
+          "pronunciation": "ko-rom nya-man",
+          "context": "Juxon Barton (1921) — Suk/Pokot comparative note",
+          "audioFile": null
+        },
+        {
+          "english": "Understand / hear thoroughly",
+          "translation": "Lima nyaman",
+          "pronunciation": "li-ma nya-man",
+          "context": "Juxon Barton (1921) — Suk/Pokot comparative note",
+          "audioFile": null
+        },
+        {
+          "english": "Very / Indeed / Thoroughly",
+          "translation": "nyaman",
+          "pronunciation": "nya-man",
+          "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "àkɔ́ɔ́ŋkɔ̀ (akong'o)",
+          "pronunciation": "a-koong-ko",
+          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "oɣë̀ë̀ŋ / òdë̀ë̀ŋ (odeng')",
+          "pronunciation": "o-deeng",
+          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "sä́mä́k (somok)",
+          "pronunciation": "sa-mak",
+          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "àŋwân (ang'wan)",
+          "pronunciation": "ang-wan",
+          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "múut (muut)",
+          "pronunciation": "muut",
+          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀ (5 + 1)",
+          "pronunciation": "muut ngo a-koong-o",
+          "context": "Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "múut ŋɡɔ́ òdë̀ë̀ŋ (5 + 2)",
+          "pronunciation": "muut ngo o-deeng",
+          "context": "Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "múut ŋɡɔ́ sä́mä́k (5 + 3)",
+          "pronunciation": "muut ngo sa-mak",
+          "context": "Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "múut ŋɡɔ́ àŋwân (5 + 4)",
+          "pronunciation": "muut ngo ang-wan",
+          "context": "Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "támàn (taman)",
+          "pronunciation": "ta-man",
+          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Person / People",
+          "translation": "piich (sg. chii)",
+          "pronunciation": "piich (sg. chii)",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "papa / kapo",
+          "pronunciation": "pa-pa",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "yö / iye",
+          "pronunciation": "yo / i-ye",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Wife / Woman",
+          "translation": "korko (pl. korok)",
+          "pronunciation": "kor-ko (pl. ko-rok)",
+          "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Youth / Young man",
+          "translation": "karachona (sg. karachonait)",
+          "pronunciation": "ka-ra-cho-na",
+          "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "moning' (pl. moning'is)",
+          "pronunciation": "mo-ning'",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "God / Sky / Sun",
+          "translation": "Tororut / Asiis",
+          "pronunciation": "to-ro-rut / a-siis",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "ka̱ːyne̱ːt (kainet)",
+          "pronunciation": "kaay-neet",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Eye",
+          "translation": "koːŋ (kong')",
+          "pronunciation": "koong",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "yiːt (yit)",
+          "pronunciation": "yiit",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "sa̱r̃ (sar)",
+          "pronunciation": "sar",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "ke̱ːla̱t (kelat)",
+          "pronunciation": "kee-lat",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "ŋa̱lya̱p (ng'alyap)",
+          "pronunciation": "ng'al-yap",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "ku̱ːt (kut)",
+          "pronunciation": "kuut",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "kisʉn (kisun)",
+          "pronunciation": "ki-sun",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "kaːwaʔ (kawa)",
+          "pronunciation": "kaa-wa",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "met (metit)",
+          "pronunciation": "met",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "egh (eghit)",
+          "pronunciation": "egh",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "kel (kelyen)",
+          "pronunciation": "kel",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach / Belly",
+          "translation": "mo (moot)",
+          "pronunciation": "mo",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Cow / Cattle",
+          "translation": "tany (pl. tich)",
+          "pronunciation": "tany (pl. tich)",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "aran (pl. aror)",
+          "pronunciation": "a-ran",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "kechir",
+          "pronunciation": "ke-chir",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Honeybee (African honeybee)",
+          "translation": "sakamin",
+          "pronunciation": "sa-ka-min",
+          "context": "CGSpace East Pokot traditional foodways & Beech (1911)",
+          "audioFile": null
+        },
+        {
+          "english": "Stingless bee",
+          "translation": "kulum",
+          "pronunciation": "ku-lum",
+          "context": "CGSpace East Pokot traditional foodways",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "ng'atuny",
+          "pronunciation": "ng'a-tuny",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "pelion",
+          "pronunciation": "pe-lion",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "kimagey",
+          "pronunciation": "ki-ma-gey",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "kuki",
+          "pronunciation": "ku-ki",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "tarit",
+          "pronunciation": "ta-rit",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "eren",
+          "pronunciation": "e-ren",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "pʉːɣ (pogh / poy)",
+          "pronunciation": "puugh / pogh",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Wood",
+          "translation": "keːt (ket)",
+          "pronunciation": "keet",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "asis (asista)",
+          "pronunciation": "a-sis",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "araw (arawet)",
+          "pronunciation": "a-raw",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "mat (maat)",
+          "pronunciation": "maat",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "rop (ropta)",
+          "pronunciation": "rop",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "tul (tulwet)",
+          "pronunciation": "tul-wet",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "River / Stream",
+          "translation": "lalan (lalang')",
+          "pronunciation": "la-lan",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "kogh (koghet)",
+          "pronunciation": "kogh",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Country",
+          "translation": "kor (koret)",
+          "pronunciation": "ko-ret",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "sus (suswek)",
+          "pronunciation": "sus",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "Honey",
+          "translation": "kipketin (kh'pketin)",
+          "pronunciation": "kip-ke-tin",
+          "context": "CGSpace East Pokot traditional foodways & Beech (1911)",
+          "audioFile": null
+        },
+        {
+          "english": "Stingless bee honey",
+          "translation": "lowiana",
+          "pronunciation": "lo-wia-na",
+          "context": "CGSpace East Pokot traditional foodways",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "che (chego)",
+          "pronunciation": "che / che-go",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "pany",
+          "pronunciation": "pany",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Food / Millet",
+          "translation": "omisyö / matai",
+          "pronunciation": "o-mi-syo / ma-tai",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "kö (köt)",
+          "pronunciation": "ko / kot",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Book / Written language",
+          "translation": "kitapu (Kitapu ngala pökot)",
+          "pronunciation": "ki-ta-pu",
+          "context": "Wikipedia Pökoot_language",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "ng'ot",
+          "pronunciation": "ng'ot",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Eat",
+          "translation": "keam",
+          "pronunciation": "ke-am",
+          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "keigh (igh)",
+          "pronunciation": "ke-igh",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Hear / Understand",
+          "translation": "lima (kelim)",
+          "pronunciation": "li-ma",
+          "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "kewe (we)",
+          "pronunciation": "ke-we",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kechö (chö)",
+          "pronunciation": "ke-cho",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "kesor (sor)",
+          "pronunciation": "ke-sor",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "keru (ru)",
+          "pronunciation": "ke-ru",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Die",
+          "translation": "keme (me)",
+          "pronunciation": "ke-me",
+          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Speak / Language",
+          "translation": "ng'ala (ng'al)",
+          "pronunciation": "ng'a-la",
+          "context": "Wikipedia Pökoot_language & Beech (1911)",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

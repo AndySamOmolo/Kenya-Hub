@@ -1,0 +1,612 @@
+{
+  "languageId": "rendille",
+  "languageName": "Rendille (Afi Ren'dille)",
+  "family": "cushitic",
+  "nativeName": "Afi Ren'dille",
+  "script": "Latin",
+  "speakerCount": 96000,
+  "counties": [
+    "Marsabit"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Rendille (Afi Ren'dille) dictionary compiled from Bernd Heine ('Notes on the Rendille Language', Afrika und Übersee 59, 1976 & 'Proto-Baz', 1979), Harold C. Fleming ('Baiso and Rendille', 1964), and Wikipedia Rendille_language.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / Peace",
+          "translation": "Nabad / Sooriyo",
+          "pronunciation": "na-bad / soo-ri-yo",
+          "context": "Rendille traditional greeting & blessing",
+          "audioFile": null
+        },
+        {
+          "english": "How are you? (Is it peace?)",
+          "translation": "Ma nabad?",
+          "pronunciation": "ma na-bad",
+          "context": "Rendille Cushitic greeting",
+          "audioFile": null
+        },
+        {
+          "english": "It is peace / I am fine",
+          "translation": "Aa nabad",
+          "pronunciation": "aa na-bad",
+          "context": "Rendille greeting reply",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you / Blessing",
+          "translation": "Waaq a ku barikoy",
+          "pronunciation": "waaq a ku ba-ri-koy",
+          "context": "Rendille blessing ('May God bless you')",
+          "audioFile": null
+        },
+        {
+          "english": "Yes",
+          "translation": "Aa",
+          "pronunciation": "aa",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "No / Not",
+          "translation": "Male / Ma-",
+          "pronunciation": "ma-le",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "ków (adj. kaldai)",
+          "pronunciation": "kow / kal-dai",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "láma",
+          "pronunciation": "la-ma",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "séyyah",
+          "pronunciation": "sey-yah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "áfar",
+          "pronunciation": "a-far",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "chán",
+          "pronunciation": "chan",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "líh",
+          "pronunciation": "lih",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "tebá",
+          "pronunciation": "te-ba",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "síet",
+          "pronunciation": "si-et",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "saagál",
+          "pronunciation": "saa-gal",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "tomón",
+          "pronunciation": "to-mon",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven (Ten plus one)",
+          "translation": "tomón icóú kow",
+          "pronunciation": "to-mon i-cou kow",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Person / People",
+          "translation": "enyenyet (pl. enyenyó)",
+          "pronunciation": "en-yen-yet",
+          "context": "Bernd Heine (1976) & Fleming (1964) — Rendille",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband",
+          "translation": "et (pl. rág)",
+          "pronunciation": "et (pl. rag)",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "maxábal (pl. obórri)",
+          "pronunciation": "ma-xa-bal / o-bor-ri",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Child / Boy",
+          "translation": "ínam (pl. yéyye)",
+          "pronunciation": "i-nam (pl. yey-ye)",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Girl / Daughter",
+          "translation": "ináam",
+          "pronunciation": "i-naam",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "abá",
+          "pronunciation": "a-ba",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "ayó",
+          "pronunciation": "a-yo",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "God / Sky",
+          "translation": "Waaq / Waaх",
+          "pronunciation": "waaq",
+          "context": "Rendille Cushitic sky/Supreme Being",
+          "audioFile": null
+        },
+        {
+          "english": "Rendille language",
+          "translation": "Afi Ren'dille",
+          "pronunciation": "a-fi ren-dil-le",
+          "context": "Wikipedia Rendille_language",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "magáh",
+          "pronunciation": "ma-gah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "matáh",
+          "pronunciation": "ma-tah",
+          "context": "Bernd Heine (1976 & 1979) — Rendille",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "íl (pl. indó)",
+          "pronunciation": "il (pl. in-do)",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "nábah (pl. nabhó)",
+          "pronunciation": "na-bah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "sám",
+          "pronunciation": "sam",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / Language",
+          "translation": "áf",
+          "pronunciation": "af",
+          "context": "Bernd Heine (1976) & Wikipedia Rendille_language",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "íllax",
+          "pronunciation": "il-lax",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "harráb",
+          "pronunciation": "har-rab",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "dahán",
+          "pronunciation": "da-han",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "lúх",
+          "pronunciation": "lux",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "díig",
+          "pronunciation": "diig",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "láf",
+          "pronunciation": "laf",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "náh",
+          "pronunciation": "nah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "wáam",
+          "pronunciation": "waam",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Camel (herd)",
+          "translation": "gaal (sg. nyíro / ayr)",
+          "pronunciation": "gaal",
+          "context": "Bernd Heine (1976) — Rendille camel pastoralism",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "lólyo (sg. sáa)",
+          "pronunciation": "lol-yo / saa",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "rriyó",
+          "pronunciation": "rri-yo",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "óno",
+          "pronunciation": "o-no",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "kár (pl. karró)",
+          "pronunciation": "kar",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "chimbír",
+          "pronunciation": "chim-bir",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "tóf",
+          "pronunciation": "tof",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "bahási",
+          "pronunciation": "ba-ha-si",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Louse",
+          "translation": "injír",
+          "pronunciation": "in-jir",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "biche (biché)",
+          "pronunciation": "bi-che",
+          "context": "Bernd Heine (1976) & Fleming (1964) — Rendille",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "dáb",
+          "pronunciation": "dab",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "orráh",
+          "pronunciation": "or-rah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "yéyah",
+          "pronunciation": "ye-yah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "bakál",
+          "pronunciation": "ba-kal",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "hír",
+          "pronunciation": "hir",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Wood",
+          "translation": "géed (pl. geedó)",
+          "pronunciation": "geed",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Grass / Pasture",
+          "translation": "hós",
+          "pronunciation": "hos",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "dagáh",
+          "pronunciation": "da-gah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Ground / Sand",
+          "translation": "hárra",
+          "pronunciation": "har-ra",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "ibéen",
+          "pronunciation": "i-been",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "sáah",
+          "pronunciation": "saah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "gúu",
+          "pronunciation": "guu",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "Milk",
+          "translation": "haan (háan)",
+          "pronunciation": "haan",
+          "context": "Bernd Heine (1976) — Rendille pastoral staple",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "jíid",
+          "pronunciation": "jiid",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Enclosure / Kraal",
+          "translation": "súm (pl. sumám)",
+          "pronunciation": "sum (pl. su-mam)",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "House / Tent",
+          "translation": "mính (pl. minán)",
+          "pronunciation": "minh (pl. mi-nan)",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "tór",
+          "pronunciation": "tor",
+          "context": "Bernd Heine (1979) — Proto-Baz & Rendille",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Eat",
+          "translation": "ahám (a-ham)",
+          "pronunciation": "a-ham",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "abhúg (a-bhug)",
+          "pronunciation": "a-bhug",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Suck",
+          "translation": "nug (a-nug)",
+          "pronunciation": "nug",
+          "context": "Wikipedia Southern_Nilotic_languages — Rendille cognate",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "imít (a-imit)",
+          "pronunciation": "i-mit",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "irdá (a-irda)",
+          "pronunciation": "ir-da",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "agár (a-agar)",
+          "pronunciation": "a-gar",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hear",
+          "translation": "dagáh (a-dagah)",
+          "pronunciation": "da-gah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "urúd (a-urud)",
+          "pronunciation": "u-rud",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Die",
+          "translation": "amút (a-amut)",
+          "pronunciation": "a-mut",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Give",
+          "translation": "sií (a-sii)",
+          "pronunciation": "sii",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

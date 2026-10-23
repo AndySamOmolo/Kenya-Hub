@@ -1,0 +1,1333 @@
+{
+  "languageId": "taita",
+  "languageName": "Taita (Kidawida)",
+  "family": "bantu",
+  "nativeName": "Kidaw'ida / Kisagala",
+  "script": "Latin",
+  "speakerCount": 410000,
+  "counties": [
+    "Taita-Taveta"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Taita (Kidaw'ida & Kisagala) dictionary compiled from Rev. J. A. Wray ('An Elementary Introduction to the Taita Language', SPCK London, 1894 — Public Domain), A. Downes Shaw ('A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages', 1885 — Public Domain), Kunihiko Sakamoto (2003–2005), and Unicode CLDR (dav.xml).",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / How are you? (Dawida)",
+          "translation": "Mwakucha / Uko wedi?",
+          "pronunciation": "mwakucha / uko wedi",
+          "context": "Taita (Kidawida) traditional greeting",
+          "audioFile": null
+        },
+        {
+          "english": "I am fine / well",
+          "translation": "Niko wedi",
+          "pronunciation": "niko wedi",
+          "context": "Taita (Kidawida) greeting response",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning (Have you dawned well?)",
+          "translation": "Mwakucha wedi?",
+          "pronunciation": "mwakucha wedi",
+          "context": "Taita (Kidawida) morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Chavuche / Asante",
+          "pronunciation": "chavuche",
+          "context": "Taita (Kidawida) expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / Goodness",
+          "translation": "Wedi",
+          "pronunciation": "wedi",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida / Kisagala",
+          "audioFile": null
+        },
+        {
+          "english": "Yes",
+          "translation": "Ee / Haya",
+          "pronunciation": "ee / haya",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "Ndu / A'a",
+          "pronunciation": "ndu",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "imweri (-mweri)",
+          "pronunciation": "imweri",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "iwi (-wi / -bili)",
+          "pronunciation": "iwi",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "idadu (-dadu)",
+          "pronunciation": "idadu",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "ina (-na)",
+          "pronunciation": "ina",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "isanu (-sanu)",
+          "pronunciation": "isanu",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "irandadu (-randadu)",
+          "pronunciation": "irandadu",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "mfungade",
+          "pronunciation": "mfungade",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "wunyanya",
+          "pronunciation": "wunyanya",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "ikenda",
+          "pronunciation": "ikenda",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "ikumi",
+          "pronunciation": "ikumi",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven",
+          "translation": "ikumi na imweri",
+          "pronunciation": "ikumi na imweri",
+          "context": "CLDR (dav.xml) & Sakamoto (2003)",
+          "audioFile": null
+        },
+        {
+          "english": "Twelve",
+          "translation": "ikumi na iwi",
+          "pronunciation": "ikumi na iwi",
+          "context": "CLDR (dav.xml) & Sakamoto (2003)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Person / Human being",
+          "translation": "mundu (pl. wandu)",
+          "pronunciation": "mundu (pl. wandu)",
+          "context": "Wray (1894), Shaw (1885) & Sakamoto (2003)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "aba / baba",
+          "pronunciation": "aba / baba",
+          "context": "Wray (1894) & Shaw (1885) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "mao / mamo",
+          "pronunciation": "mao / mamo",
+          "context": "Wray (1894) & Shaw (1885) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "mwana (pl. wana)",
+          "pronunciation": "mwana (pl. wana)",
+          "context": "Wray (1894) & Sakamoto (2003)",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband",
+          "translation": "mume (pl. waume)",
+          "pronunciation": "mume (pl. waume)",
+          "context": "Wray (1894) & Shaw (1885) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "muka (pl. waka)",
+          "pronunciation": "muka (pl. waka)",
+          "context": "Wray (1894) & Shaw (1885) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Elder",
+          "translation": "mghosi (pl. waghosi)",
+          "pronunciation": "mghosi (pl. waghosi)",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "mbuya",
+          "pronunciation": "mbuya",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Mlungu",
+          "pronunciation": "mlungu",
+          "context": "Wray (1894) & Wiktionary Taita lemmas",
+          "audioFile": null
+        },
+        {
+          "english": "Creator / Potter",
+          "translation": "Mumbi (pl. Wambi)",
+          "pronunciation": "mumbi",
+          "context": "Sakamoto (2003) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "zina (pl. mazina)",
+          "pronunciation": "zina (pl. mazina)",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "chongo (pl. vyongo) / mtwe",
+          "pronunciation": "chongo / mtwe",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "righo / izo (pl. meso)",
+          "pronunciation": "righo / meso",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "kutu (pl. matu)",
+          "pronunciation": "kutu (pl. matu)",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "mbula",
+          "pronunciation": "mbula",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "momu / mlomo",
+          "pronunciation": "momu / mlomo",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "igego (pl. magego)",
+          "pronunciation": "igego (pl. magego)",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "lumi (pl. ndumi)",
+          "pronunciation": "lumi (pl. ndumi)",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "mkono (pl. mikono)",
+          "pronunciation": "mkono (pl. mikono)",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "kighulu (pl. vighulu)",
+          "pronunciation": "kighulu (pl. vighulu)",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "ngolo",
+          "pronunciation": "ngolo",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "baga / sakame",
+          "pronunciation": "baga / sakame",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "ifindi (pl. mafindi)",
+          "pronunciation": "ifindi (pl. mafindi)",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach / Belly",
+          "translation": "nda /kifu",
+          "pronunciation": "nda / kifu",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Cow / Cattle",
+          "translation": "ng'ombe",
+          "pronunciation": "ng'ombe",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "mbuzi",
+          "pronunciation": "mbuzi",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "ng'ondi",
+          "pronunciation": "ng'ondi",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "koshi (pl. vikoshi)",
+          "pronunciation": "koshi",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken / Fowl",
+          "translation": "nguku",
+          "pronunciation": "nguku",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "nyonyi",
+          "pronunciation": "nyonyi",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "simba",
+          "pronunciation": "simba",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "ndovu / njovu",
+          "pronunciation": "ndovu",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "nyoka",
+          "pronunciation": "nyoka",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "samaki / nguluma",
+          "pronunciation": "nguluma",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "mazi / machi",
+          "pronunciation": "mazi / machi",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "mdo / moto",
+          "pronunciation": "mdo / moto",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "izuwa",
+          "pronunciation": "izuwa",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "mori (pl. miori)",
+          "pronunciation": "mori (pl. miori)",
+          "context": "CLDR (dav.xml) & Wray (1894)",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "nyota / ndondwa",
+          "pronunciation": "ndondwa",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "mvula",
+          "pronunciation": "mvula",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Wind / Cold",
+          "translation": "mbeho",
+          "pronunciation": "mbeho",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "mgondi / mlima",
+          "pronunciation": "mgondi / mlima",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "mdi (pl. midi)",
+          "pronunciation": "mdi (pl. midi)",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "ighwe (pl. maghwe)",
+          "pronunciation": "ighwe (pl. maghwe)",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Country",
+          "translation": "isi / ntsi",
+          "pronunciation": "isi",
+          "context": "Wray (1894) & CLDR (dav.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "ituku (pl. matuku)",
+          "pronunciation": "ituku (pl. matuku)",
+          "context": "CLDR (dav.xml) & Wray (1894)",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "kilo",
+          "pronunciation": "kilo",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Path / Road",
+          "translation": "njia",
+          "pronunciation": "njia",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "River / Stream",
+          "translation": "mto / mfereji",
+          "pronunciation": "mto",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "January (Month 1)",
+          "translation": "Mori ghwa imbiri (Imb)",
+          "pronunciation": "mori ghwa imbiri (imb)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "February (Month 2)",
+          "translation": "Mori ghwa kawi (Kaw)",
+          "pronunciation": "mori ghwa kawi (kaw)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "March (Month 3)",
+          "translation": "Mori ghwa kadadu (Kad)",
+          "pronunciation": "mori ghwa kadadu (kad)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "April (Month 4)",
+          "translation": "Mori ghwa kana (Kan)",
+          "pronunciation": "mori ghwa kana (kan)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "May (Month 5)",
+          "translation": "Mori ghwa kasanu (Kas)",
+          "pronunciation": "mori ghwa kasanu (kas)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "June (Month 6)",
+          "translation": "Mori ghwa karandadu (Kar)",
+          "pronunciation": "mori ghwa karandadu (kar)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "July (Month 7)",
+          "translation": "Mori ghwa mfungade (Mfu)",
+          "pronunciation": "mori ghwa mfungade (mfu)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "August (Month 8)",
+          "translation": "Mori ghwa wunyanya (Wun)",
+          "pronunciation": "mori ghwa wunyanya (wun)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "September (Month 9)",
+          "translation": "Mori ghwa ikenda (Ike)",
+          "pronunciation": "mori ghwa ikenda (ike)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "October (Month 10)",
+          "translation": "Mori ghwa ikumi (Iku)",
+          "pronunciation": "mori ghwa ikumi (iku)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "November (Month 11)",
+          "translation": "Mori ghwa ikumi na imweri (Imw)",
+          "pronunciation": "mori ghwa ikumi na imweri (imw)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "December (Month 12)",
+          "translation": "Mori ghwa ikumi na iwi (Iwi)",
+          "pronunciation": "mori ghwa ikumi na iwi (iwi)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Ituku ja jumwa (Jum)",
+          "pronunciation": "ituku ja jumwa (jum)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Kuramuka jimweri (Jim)",
+          "pronunciation": "kuramuka jimweri (jim)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Kuramuka kawi (Kaw)",
+          "pronunciation": "kuramuka kawi (kaw)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Kuramuka kadadu (Kad)",
+          "pronunciation": "kuramuka kadadu (kad)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Kuramuka kana (Kan)",
+          "pronunciation": "kuramuka kana (kan)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Kuramuka kasanu (Kas)",
+          "pronunciation": "kuramuka kasanu (kas)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Kifula nguwo (Ngu)",
+          "pronunciation": "kifula nguwo (ngu)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Iguo",
+          "pronunciation": "iguo",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Idime",
+          "pronunciation": "idime",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Kesho",
+          "pronunciation": "kesho",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "Luma lwa K",
+          "pronunciation": "luma lwa k",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "luma lwa p",
+          "pronunciation": "luma lwa p",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "Ngelo",
+          "pronunciation": "ngelo",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Year (calendar unit)",
+          "translation": "Mwaka",
+          "pronunciation": "mwaka",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Month (calendar unit)",
+          "translation": "Mori",
+          "pronunciation": "mori",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Week (calendar unit)",
+          "translation": "Juma",
+          "pronunciation": "juma",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Day (calendar unit)",
+          "translation": "Ituku",
+          "pronunciation": "ituku",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Hour (time unit)",
+          "translation": "Saa",
+          "pronunciation": "saa",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Minute (time unit)",
+          "translation": "Dakika",
+          "pronunciation": "dakika",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Second (time unit)",
+          "translation": "Sekunde",
+          "pronunciation": "sekunde",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Kenyan Shilling (KES)",
+          "translation": "Shilingi ya Kenya",
+          "pronunciation": "shilingi ya kenya",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopian Birr (ETB)",
+          "translation": "Bir ya Uhabeshi",
+          "pronunciation": "bir ya uhabeshi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sudanese Pound (SDG)",
+          "translation": "Pauni ya Sudani",
+          "pronunciation": "pauni ya sudani",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Nigerian Naira (NGN)",
+          "translation": "Naira ya Nijeria",
+          "pronunciation": "naira ya nijeria",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Malagasy Ariary (MGA)",
+          "translation": "Ariary ya Bukini",
+          "pronunciation": "ariary ya bukini",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Seychellois Rupee (SCR)",
+          "translation": "Rupia ya Shelisheli",
+          "pronunciation": "rupia ya shelisheli",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Algerian Dinar (DZD)",
+          "translation": "Dinari ya Aljeria",
+          "pronunciation": "dinari ya aljeria",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Faranga CFA BCEAO",
+          "pronunciation": "faranga cfa bceao",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Faranga CFA BEAC",
+          "pronunciation": "faranga cfa beac",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese Yuan (CNY)",
+          "translation": "Yuan Renminbi ya China",
+          "pronunciation": "yuan renminbi ya china",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese Yen (JPY)",
+          "translation": "Sarafu ya Kijapani",
+          "pronunciation": "sarafu ya kijapani",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Dola ya Kanada",
+          "pronunciation": "dola ya kanada",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Uhabeshi",
+          "pronunciation": "uhabeshi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Nijeri",
+          "pronunciation": "nijeri",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Ginekweta",
+          "pronunciation": "ginekweta",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Uswazi",
+          "pronunciation": "uswazi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Bukini",
+          "pronunciation": "bukini",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Uingereza",
+          "pronunciation": "uingereza",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Hispania",
+          "pronunciation": "hispania",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Ukraini",
+          "pronunciation": "ukraini",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
+          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Katari",
+          "pronunciation": "katari",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Uajemi",
+          "pronunciation": "uajemi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Brazili",
+          "pronunciation": "brazili",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Taita (Language)",
+          "translation": "Kitaita",
+          "pronunciation": "kitaita",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "English (Language)",
+          "translation": "Kingereza",
+          "pronunciation": "kingereza",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ukrainian (Language)",
+          "translation": "Kiukrania",
+          "pronunciation": "kiukrania",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Czech (Language)",
+          "translation": "Kichecki",
+          "pronunciation": "kichecki",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Bangla (Language)",
+          "translation": "Kibangla",
+          "pronunciation": "kibangla",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tamil (Language)",
+          "translation": "Kitamil",
+          "pronunciation": "kitamil",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Thai (Language)",
+          "translation": "Kitailandi",
+          "pronunciation": "kitailandi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Malay (Language)",
+          "translation": "Kimalesia",
+          "pronunciation": "kimalesia",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Akan (Language)",
+          "translation": "Kiakan",
+          "pronunciation": "kiakan",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "House",
+          "translation": "nyumba",
+          "pronunciation": "nyumba",
+          "context": "Wray (1894) & Sakamoto (2003) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Thing",
+          "translation": "kidu (pl. vidu)",
+          "pronunciation": "kidu (pl. vidu)",
+          "context": "Sakamoto (2003) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Song",
+          "translation": "lumbo (pl. nyimbo)",
+          "pronunciation": "lumbo (pl. nyimbo)",
+          "context": "Sakamoto (2003) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "kajo / chakuria",
+          "pronunciation": "kajo",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "nyama",
+          "pronunciation": "nyama",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "maziwa / mabela",
+          "pronunciation": "mabela",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "iru (pl. maru)",
+          "pronunciation": "iru (pl. maru)",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Maize",
+          "translation": "mabemba",
+          "pronunciation": "mabemba",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Knife",
+          "translation": "kisu / mundu",
+          "pronunciation": "mundu",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "fumo (pl. mafumo)",
+          "pronunciation": "fumo (pl. mafumo)",
+          "context": "Shaw (1885) & Wray (1894) — Ki-Taita",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Eat",
+          "translation": "kuja / kula",
+          "pronunciation": "kuja",
+          "context": "Wray (1894) & Sakamoto (2005) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "kunwa",
+          "pronunciation": "kunwa",
+          "context": "Wray (1894) & Sakamoto (2005) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "kugenda",
+          "pronunciation": "kugenda",
+          "context": "Wray (1894) & Sakamoto (2005) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kucha",
+          "pronunciation": "kucha",
+          "context": "Wray (1894) & Sakamoto (2005) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "kuona / kulola",
+          "pronunciation": "kulola",
+          "context": "Wray (1894) & Sakamoto (2005) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Hear",
+          "translation": "kusikira",
+          "pronunciation": "kusikira",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Speak / Say",
+          "translation": "kugamba / kuteta",
+          "pronunciation": "kugamba / kuteta",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "kulala",
+          "pronunciation": "kulala",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Die",
+          "translation": "kufa",
+          "pronunciation": "kufa",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Give",
+          "translation": "kuneka",
+          "pronunciation": "kuneka",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Love / Want",
+          "translation": "kukunda",
+          "pronunciation": "kukunda",
+          "context": "Wray (1894) & Sakamoto (2005) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Know",
+          "translation": "kumanya",
+          "pronunciation": "kumanya",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Sing",
+          "translation": "kuimba / kubora",
+          "pronunciation": "kubora",
+          "context": "Sakamoto (2003) — Kidawida",
+          "audioFile": null
+        },
+        {
+          "english": "Work / Cultivate",
+          "translation": "kulima / kudeka",
+          "pronunciation": "kulima",
+          "context": "Wray (1894) — Taita",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives, Pronouns & Grammar",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "I / Me",
+          "translation": "imi",
+          "pronunciation": "imi",
+          "context": "Sakamoto (2005) — Kidawida pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "uwe",
+          "pronunciation": "uwe",
+          "context": "Sakamoto (2005) — Kidawida pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "iye",
+          "pronunciation": "iye",
+          "context": "Sakamoto (2005) — Kidawida pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "We / Us",
+          "translation": "isi",
+          "pronunciation": "isi",
+          "context": "Sakamoto (2005) — Kidawida pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "You (plural)",
+          "translation": "inyu / nainyu",
+          "pronunciation": "inyu",
+          "context": "Sakamoto (2005) — Kidawida pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "They / Them",
+          "translation": "iwo",
+          "pronunciation": "iwo",
+          "context": "Sakamoto (2005) — Kidawida pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "-edi (wedi)",
+          "pronunciation": "wedi",
+          "context": "Wray (1894) & Sakamoto (2003)",
+          "audioFile": null
+        },
+        {
+          "english": "Big / Great",
+          "translation": "-baha",
+          "pronunciation": "baha",
+          "context": "Wray (1894) & Sakamoto (2003)",
+          "audioFile": null
+        },
+        {
+          "english": "Small / Little",
+          "translation": "-dini",
+          "pronunciation": "dini",
+          "context": "Wray (1894) & Sakamoto (2003)",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

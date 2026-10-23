@@ -1,0 +1,2495 @@
+{
+  "languageId": "embu",
+  "languageName": "Embu (Kĩembu)",
+  "family": "bantu",
+  "nativeName": "Kĩembu",
+  "script": "Latin",
+  "speakerCount": 580000,
+  "counties": [
+    "Embu"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Embu (Kĩembu / Kimbeere) dictionary compiled from the Wikipedia Embu_language 150-word lexicon and conversational phrase table, Unicode CLDR (ebu.xml), and PanLex CC0.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Peace / blessing",
+          "translation": "Thayũ",
+          "pronunciation": "thayu",
+          "context": "Kîembu traditional greeting & blessing",
+          "audioFile": null
+        },
+        {
+          "english": "You are educated",
+          "translation": "Wĩ mũthomũ",
+          "pronunciation": "wi muthomu",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Stop the nonsense",
+          "translation": "Tiga wana / Tigana na ũrimũ",
+          "pronunciation": "tiga wana",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Give me some money",
+          "translation": "Mve mbeca / Mva mbia",
+          "pronunciation": "mve mbeca / mva mbia",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "God is good",
+          "translation": "Ngai nĩ mwaro",
+          "pronunciation": "ngai ni mwaro",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "I am blessed",
+          "translation": "Nĩmũrathime",
+          "pronunciation": "nimurathime",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "I will phone you",
+          "translation": "Nĩngũkũvũrĩra thimũ",
+          "pronunciation": "ningukuvurira thimu",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Come here",
+          "translation": "Ũka ava / Ũkava",
+          "pronunciation": "uka ava / ukava",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "I love you",
+          "translation": "Nĩngwendete",
+          "pronunciation": "ningwendete",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye, be blessed",
+          "translation": "Tigwa na wega / Tigwaa na thayũ",
+          "pronunciation": "tigwa na wega / tigwaa na thayu",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Are you a friend?",
+          "translation": "Wĩ mũrata?",
+          "pronunciation": "wi murata",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Help me",
+          "translation": "Ndethia",
+          "pronunciation": "ndethia",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "I am hungry",
+          "translation": "Nĩ mũvũtu",
+          "pronunciation": "ni muvutu",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Please give me some water",
+          "translation": "Mve maĩ / Ngundia maĩ",
+          "pronunciation": "mve mai / ngundia mai",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "I am good / fine",
+          "translation": "Nĩ mwaro",
+          "pronunciation": "ni mwaro",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "How are you doing?",
+          "translation": "Wĩ mwaro?",
+          "pronunciation": "wi mwaro",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Ũvoro waku? / Kũvana atĩa?",
+          "pronunciation": "uvoro waku / kuvana atia",
+          "context": "Wikipedia Embu_language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "friend (pl. friends)",
+          "translation": "mũrata (pl. arata)",
+          "pronunciation": "mũrata (pl. arata)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Ĩmwe",
+          "pronunciation": "imwe",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "Igĩrĩ",
+          "pronunciation": "igiri",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "Ithatũ",
+          "pronunciation": "ithatu",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "Inya",
+          "pronunciation": "inya",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "Ithano",
+          "pronunciation": "ithano",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Ithathatũ / Ithanthatũ",
+          "pronunciation": "ithathatu",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "Mũgwanja",
+          "pronunciation": "mugwanja",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "Inyanya",
+          "pronunciation": "inyanya",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "Kenda",
+          "pronunciation": "kenda",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "Ikũmi",
+          "pronunciation": "ikumi",
+          "context": "Wikipedia Embu_language — Kîembu numerals",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Person / Human being",
+          "translation": "mũndũ (pl. andũ)",
+          "pronunciation": "mundu (pl. andu)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Men",
+          "translation": "mũndũ mũrũme (pl. andũ arũme)",
+          "pronunciation": "mundu murume",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Women",
+          "translation": "mũtumia (pl. atumia) / mũndũ mũka (pl. andũ aka)",
+          "pronunciation": "mutumia / mundu muka",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Husband",
+          "translation": "mũthuri (pl. athuri)",
+          "pronunciation": "muthuri (pl. athuri)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Child / Children",
+          "translation": "mwana (pl. ciana)",
+          "pronunciation": "mwana (pl. ciana)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "mũrata (pl. arata)",
+          "pronunciation": "murata (pl. arata)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "ava / vava",
+          "pronunciation": "ava / vava",
+          "context": "Kîembu kinship",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "maitũ / nyina",
+          "pronunciation": "maitu / nyina",
+          "context": "Kîembu kinship",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "rĩĩtwa (pl. marĩĩtwa)",
+          "pronunciation": "riitwa (pl. mariitwa)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Ngai",
+          "pronunciation": "ngai",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Council of Elders",
+          "translation": "Kiama kia Ngome",
+          "pronunciation": "kiama kia ngome",
+          "context": "Traditional Aembu council of elders",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Mouth",
+          "translation": "kanyua",
+          "pronunciation": "kanyua",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "rĩitho (pl. metho)",
+          "pronunciation": "riitho (pl. metho)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "kĩongo (pl. ciongo)",
+          "pronunciation": "kiongo (pl. ciongo)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "njuĩrĩ",
+          "pronunciation": "njuiri",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "ĩgego (pl. magego)",
+          "pronunciation": "igego (pl. magego)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "rũrĩmĩ (pl. irĩmĩ)",
+          "pronunciation": "rurimi (pl. irimi)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "inyiũrũ (pl. manyiũrũ)",
+          "pronunciation": "inyiuru (pl. manyiuru)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "gũtũ (pl. matũ)",
+          "pronunciation": "gutu (pl. matu)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "ngingo",
+          "pronunciation": "ngingo",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "njara",
+          "pronunciation": "njara",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Arm",
+          "translation": "kĩvĩ (pl. ivĩ)",
+          "pronunciation": "kivi (pl. ivi)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Throat",
+          "translation": "mũmero (pl. mĩmero)",
+          "pronunciation": "mumero (pl. mimero)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "nyondo",
+          "pronunciation": "nyondo",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Claw / Fingernail",
+          "translation": "ngunyu",
+          "pronunciation": "ngunyu",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "kũgũrũ (pl. magũrũ) / gĩtende (pl. itende)",
+          "pronunciation": "kuguru (pl. maguru)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Buttock",
+          "translation": "itina (pl. matina)",
+          "pronunciation": "itina (pl. matina)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Belly / Stomach",
+          "translation": "nda / ĩvũ",
+          "pronunciation": "nda / ivu",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Navel",
+          "translation": "ĩkonye",
+          "pronunciation": "ikonye",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Intestines / Guts",
+          "translation": "mara",
+          "pronunciation": "mara",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "nthakame",
+          "pronunciation": "nthakame",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Urine",
+          "translation": "mathugumo",
+          "pronunciation": "mathugumo",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "ĩvĩndĩ (pl. mavĩndĩ)",
+          "pronunciation": "ivindi (pl. mavindi)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Skin",
+          "translation": "ngothi",
+          "pronunciation": "ngothi",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Sweat",
+          "translation": "nthithina",
+          "pronunciation": "nthithina",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Animal",
+          "translation": "nyamũ",
+          "pronunciation": "nyamu",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "ngũĩ",
+          "pronunciation": "ngui",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "njogu",
+          "pronunciation": "njogu",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "mbũri",
+          "pronunciation": "mburi",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "ng'ombe",
+          "pronunciation": "ng'ombe",
+          "context": "Mount Kenya Bantu",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "gĩconi (pl. iconi)",
+          "pronunciation": "giconi (pl. iconi)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Tortoise",
+          "translation": "ngũrũ",
+          "pronunciation": "nguru",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "njoka",
+          "pronunciation": "njoka",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "nthamaki",
+          "pronunciation": "nthamaki",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Louse",
+          "translation": "mũthũĩ (pl. mĩthũĩ)",
+          "pronunciation": "muthui (pl. mithui)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Wing",
+          "translation": "ĩthagu (pl. mathagu)",
+          "pronunciation": "ithagu (pl. mathagu)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Feather",
+          "translation": "ĩvuta (pl. mavuta)",
+          "pronunciation": "ivuta (pl. mavuta)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Horn",
+          "translation": "rũvia (pl. ivia / mvia)",
+          "pronunciation": "ruvia (pl. mvia)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Tail",
+          "translation": "mũkĩa (pl. mĩkĩa)",
+          "pronunciation": "mukia (pl. mikia)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "ĩtumbĩ (pl. matumbĩ)",
+          "pronunciation": "itumbi (pl. matumbi)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Lake / Sea / Ocean",
+          "translation": "ĩria (pl. maria)",
+          "pronunciation": "iria (pl. maria)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Root",
+          "translation": "mũri (pl. mĩri)",
+          "pronunciation": "muri (pl. miri)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Leaf",
+          "translation": "ĩthangũ (pl. mathangũ)",
+          "pronunciation": "ithangu (pl. mathangu)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Bark (of tree)",
+          "translation": "ĩkoni",
+          "pronunciation": "ikoni",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "mũtĩ (pl. mĩtĩ)",
+          "pronunciation": "muti (pl. miti)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Ash",
+          "translation": "mũũ",
+          "pronunciation": "muu",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "ndogo",
+          "pronunciation": "ndogo",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Firewood",
+          "translation": "rũkũ (pl. ngũũ)",
+          "pronunciation": "ruku (pl. nguu)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "mwaki",
+          "pronunciation": "mwaki",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Hill / Mountain",
+          "translation": "karĩma / kĩrĩma",
+          "pronunciation": "karima / kirima",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Stream / River",
+          "translation": "karũnjĩ / rũnjĩ",
+          "pronunciation": "karunji / runji",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Path / Road",
+          "translation": "gacĩra / njĩra",
+          "pronunciation": "gacira / njira",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Sand",
+          "translation": "mũthanga",
+          "pronunciation": "muthanga",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Ground / Earth",
+          "translation": "nthĩ",
+          "pronunciation": "nthi",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "mbura",
+          "pronunciation": "mbura",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Dew",
+          "translation": "ime",
+          "pronunciation": "ime",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "ĩtu (pl. matu)",
+          "pronunciation": "itu (pl. matu)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "rũvuvo",
+          "pronunciation": "ruvuvo",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "ũtukũ",
+          "pronunciation": "utuku",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Sky",
+          "translation": "matũ / igũrũ",
+          "pronunciation": "matu / iguru",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "mweri",
+          "pronunciation": "mweri",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "rĩũa",
+          "pronunciation": "riua",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "maĩ / manjĩ",
+          "pronunciation": "mai / manji",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "person (pl. people) (Class 1/2)",
+          "translation": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
+          "pronunciation": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "young uninitiated boy (pl. boys) (Class 12/13)",
+          "translation": "kavĩcĩ (pl. tũvĩcĩ)",
+          "pronunciation": "kavĩcĩ (pl. tũvĩcĩ)",
+          "context": "Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "young girl (pl. girls)",
+          "translation": "karĩgũ (pl. tũrĩgũ)",
+          "pronunciation": "karĩgũ (pl. tũrĩgũ)",
+          "context": "Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "tree, wood, herbal medicine (Class 3/4)",
+          "translation": "mũtĩ (pl. mĩtĩ)",
+          "pronunciation": "mũtĩ (pl. mĩtĩ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "hill, mountain (Kĩrĩnyaga = Mount Kenya)",
+          "translation": "mũrĩma (pl. mĩrĩma) / kĩrĩma",
+          "pronunciation": "mũrĩma (pl. mĩrĩma) / kĩrĩma",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "stone, rock (Class 5/6)",
+          "translation": "ĩvia (pl. mavia) / ĩiga",
+          "pronunciation": "ĩvia (pl. mavia) / ĩiga",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "head",
+          "translation": "mũtwe (pl. mĩtwe)",
+          "pronunciation": "mũtwe (pl. mĩtwe)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "eye (pl. eyes)",
+          "translation": "rĩitho (pl. metho)",
+          "pronunciation": "rĩitho (pl. metho)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "ear (pl. ears)",
+          "translation": "gũtũ (pl. matũ)",
+          "pronunciation": "gũtũ (pl. matũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "nose",
+          "translation": "inyũrũ (pl. manyũrũ)",
+          "pronunciation": "inyũrũ (pl. manyũrũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "mouth",
+          "translation": "kanyua (pl. tũnyua)",
+          "pronunciation": "kanyua (pl. tũnyua)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "tooth (pl. teeth)",
+          "translation": "ĩrĩo (pl. meeno)",
+          "pronunciation": "ĩrĩo (pl. meeno)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "tongue, language",
+          "translation": "rũrĩmĩ (pl. ndĩmĩ)",
+          "pronunciation": "rũrĩmĩ (pl. ndĩmĩ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "hand, arm",
+          "translation": "njara /oko (pl. moko)",
+          "pronunciation": "njara /oko (pl. moko)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "leg, foot",
+          "translation": "kũgũrũ (pl. magũrũ)",
+          "pronunciation": "kũgũrũ (pl. magũrũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "heart, spirit, mind",
+          "translation": "ngoro",
+          "pronunciation": "ngoro",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "food, traditional mashed meal",
+          "translation": "irio",
+          "pronunciation": "irio",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "one (1), two (2), three (3), four (4), five (5)",
+          "translation": "ĩmwe, igĩrĩ, ithatũ, inya, ithano",
+          "pronunciation": "ĩmwe, igĩrĩ, ithatũ, inya, ithano",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "six (6), seven (7), eight (8), nine (9), ten (10)",
+          "translation": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
+          "pronunciation": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "How are you? (I am fine)",
+          "translation": "Ũrĩ mwega? (resp. Nĩ mwega)",
+          "pronunciation": "ũrĩ mwega? (resp. nĩ mwega)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "How are you all? (We are fine)",
+          "translation": "Mũrĩ ega? (resp. Tũrĩ ega)",
+          "pronunciation": "mũrĩ ega? (resp. tũrĩ ega)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Wĩtagwa atĩa? / Rĩĩtwa rĩaku nĩ ũũ?",
+          "pronunciation": "wĩtagwa atĩa? / rĩĩtwa rĩaku nĩ ũũ?",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you from?",
+          "translation": "Ũrĩĩte kũ? / Wĩ mũciĩ kũ?",
+          "pronunciation": "ũrĩĩte kũ? / wĩ mũciĩ kũ?",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Nĩwega mũno",
+          "pronunciation": "nĩwega mũno",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Stay well / Go well (Goodbye)",
+          "translation": "Tigwa na wega / Thiĩ na wega",
+          "pronunciation": "tigwa na wega / thiĩ na wega",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme traditional council of elders of the Aembu people",
+          "translation": "Kiama kia Ngome",
+          "pronunciation": "kiama kia ngome",
+          "context": "Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Creator dwelling on Mount Kenya (Kĩrĩnyaga)",
+          "translation": "Murungu / Ngai",
+          "pronunciation": "murungu / ngai",
+          "context": "Kĩmĩĩrũ / Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "January (Month 1)",
+          "translation": "Mweri wa mbere (Mbe)",
+          "pronunciation": "mweri wa mbere (mbe)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "February (Month 2)",
+          "translation": "Mweri wa kaĩri (Kai)",
+          "pronunciation": "mweri wa kaĩri (kai)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "March (Month 3)",
+          "translation": "Mweri wa kathatũ (Kat)",
+          "pronunciation": "mweri wa kathatũ (kat)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "April (Month 4)",
+          "translation": "Mweri wa kana (Kan)",
+          "pronunciation": "mweri wa kana (kan)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "May (Month 5)",
+          "translation": "Mweri wa gatano (Gat)",
+          "pronunciation": "mweri wa gatano (gat)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "June (Month 6)",
+          "translation": "Mweri wa gatantatũ (Gan)",
+          "pronunciation": "mweri wa gatantatũ (gan)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "July (Month 7)",
+          "translation": "Mweri wa mũgwanja (Mug)",
+          "pronunciation": "mweri wa mũgwanja (mug)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "August (Month 8)",
+          "translation": "Mweri wa kanana (Knn)",
+          "pronunciation": "mweri wa kanana (knn)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "September (Month 9)",
+          "translation": "Mweri wa kenda (Ken)",
+          "pronunciation": "mweri wa kenda (ken)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "October (Month 10)",
+          "translation": "Mweri wa ikũmi (Iku)",
+          "pronunciation": "mweri wa ikũmi (iku)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "November (Month 11)",
+          "translation": "Mweri wa ikũmi na ũmwe (Imw)",
+          "pronunciation": "mweri wa ikũmi na ũmwe (imw)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "December (Month 12)",
+          "translation": "Mweri wa ikũmi na Kaĩrĩ (Igi)",
+          "pronunciation": "mweri wa ikũmi na kaĩrĩ (igi)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Kiumia (Kma)",
+          "pronunciation": "kiumia (kma)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Njumatatu (Tat)",
+          "pronunciation": "njumatatu (tat)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Njumaine (Ine)",
+          "pronunciation": "njumaine (ine)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Njumatano (Tan)",
+          "pronunciation": "njumatano (tan)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Aramithi (Arm)",
+          "pronunciation": "aramithi (arm)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Njumaa (Maa)",
+          "pronunciation": "njumaa (maa)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "NJumamothii (NMM)",
+          "pronunciation": "njumamothii (nmm)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Before Christ (BC / Historical Era)",
+          "translation": "Mbere ya Kristo",
+          "pronunciation": "mbere ya kristo",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Anno Domini (AD / Common Era)",
+          "translation": "Thutha wa Kristo",
+          "pronunciation": "thutha wa kristo",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "KI",
+          "pronunciation": "ki",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "UT",
+          "pronunciation": "ut",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "Ivinda",
+          "pronunciation": "ivinda",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Year (calendar unit)",
+          "translation": "Mwaka",
+          "pronunciation": "mwaka",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Month (calendar unit)",
+          "translation": "Mweri",
+          "pronunciation": "mweri",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Week (calendar unit)",
+          "translation": "Kiumia",
+          "pronunciation": "kiumia",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Day of the week",
+          "translation": "Mũthenya kiumia-inĩ",
+          "pronunciation": "mũthenya kiumia-inĩ",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Day (calendar unit)",
+          "translation": "Mũthenya",
+          "pronunciation": "mũthenya",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Hour (time unit)",
+          "translation": "Ithaa",
+          "pronunciation": "ithaa",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Minute (time unit)",
+          "translation": "Ndagĩka",
+          "pronunciation": "ndagĩka",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Second (time unit)",
+          "translation": "Sekondi",
+          "pronunciation": "sekondi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Kenyan Shilling (KES)",
+          "translation": "Shilingi ya Kenya",
+          "pronunciation": "shilingi ya kenya",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopian Birr (ETB)",
+          "translation": "Bir ya Uhabeshi",
+          "pronunciation": "bir ya uhabeshi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sudanese Pound (SDG)",
+          "translation": "Pauni ya Sudani",
+          "pronunciation": "pauni ya sudani",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Nigerian Naira (NGN)",
+          "translation": "Naira ya Nijeria",
+          "pronunciation": "naira ya nijeria",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Malagasy Ariary (MGA)",
+          "translation": "Ariary ya Bukini",
+          "pronunciation": "ariary ya bukini",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Seychellois Rupee (SCR)",
+          "translation": "Rupia ya Shelisheli",
+          "pronunciation": "rupia ya shelisheli",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Algerian Dinar (DZD)",
+          "translation": "Dinari ya Aljeria",
+          "pronunciation": "dinari ya aljeria",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Faranga CFA BCEAO",
+          "pronunciation": "faranga cfa bceao",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Faranga CFA BEAC",
+          "pronunciation": "faranga cfa beac",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese Yuan (CNY)",
+          "translation": "Yuan Renminbi ya China",
+          "pronunciation": "yuan renminbi ya china",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese Yen (JPY)",
+          "translation": "Sarafu ya Kijapani",
+          "pronunciation": "sarafu ya kijapani",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Dola ya Kanada",
+          "pronunciation": "dola ya kanada",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Australian Dollar (AUD)",
+          "translation": "Dora ya Australia",
+          "pronunciation": "dora ya australia",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Uhabeshi",
+          "pronunciation": "uhabeshi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Nijeri",
+          "pronunciation": "nijeri",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Ginekweta",
+          "pronunciation": "ginekweta",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Uswazi",
+          "pronunciation": "uswazi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Bukini",
+          "pronunciation": "bukini",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Uingereza",
+          "pronunciation": "uingereza",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Hispania",
+          "pronunciation": "hispania",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Ukraini",
+          "pronunciation": "ukraini",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
+          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Katari",
+          "pronunciation": "katari",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Uajemi",
+          "pronunciation": "uajemi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Brazili",
+          "pronunciation": "brazili",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "man, husband",
+          "translation": "mũrũme (pl. arũme)",
+          "pronunciation": "mũrũme (pl. arũme)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "woman, wife",
+          "translation": "mũka (pl. aka) / mũtumĩĩa",
+          "pronunciation": "mũka (pl. aka) / mũtumĩĩa",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "child (pl. children)",
+          "translation": "mwana (pl. ciana / aana)",
+          "pronunciation": "mwana (pl. ciana / aana)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "young man, warrior",
+          "translation": "mwanake (pl. anake)",
+          "pronunciation": "mwanake (pl. anake)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "young woman, maiden",
+          "translation": "mwĩrĩtu (pl. aĩrĩtu)",
+          "pronunciation": "mwĩrĩtu (pl. aĩrĩtu)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "guest, visitor, stranger",
+          "translation": "mũgeni (pl. ageni)",
+          "pronunciation": "mũgeni (pl. ageni)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "farmer, cultivator",
+          "translation": "mũrĩmi (pl. arĩmi)",
+          "pronunciation": "mũrĩmi (pl. arĩmi)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "teacher",
+          "translation": "mũrutani (pl. arutani)",
+          "pronunciation": "mũrutani (pl. arutani)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "forest, woodland",
+          "translation": "mũrũrĩ (pl. mĩrũrĩ)",
+          "pronunciation": "mũrũrĩ (pl. mĩrũrĩ)",
+          "context": "Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "river, stream",
+          "translation": "rũũĩ (pl. njũũĩ)",
+          "pronunciation": "rũũĩ (pl. njũũĩ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "water (Class 6)",
+          "translation": "manjĩ / maĩ",
+          "pronunciation": "manjĩ / maĩ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "sun, day",
+          "translation": "riũa",
+          "pronunciation": "riũa",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "moon, month",
+          "translation": "mweri (pl. mĩeri)",
+          "pronunciation": "mweri (pl. mĩeri)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "star, stars",
+          "translation": "njata",
+          "pronunciation": "njata",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "fire",
+          "translation": "mwaki (pl. mĩaki)",
+          "pronunciation": "mwaki (pl. mĩaki)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "soil, earth, ground",
+          "translation": "mũthetu / tĩĩri",
+          "pronunciation": "mũthetu / tĩĩri",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "path, road, way",
+          "translation": "njĩra",
+          "pronunciation": "njĩra",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "cow, cattle",
+          "translation": "ng'ombe",
+          "pronunciation": "ng'ombe",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "goat",
+          "translation": "mbũri",
+          "pronunciation": "mbũri",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "sheep",
+          "translation": "ng'ondu",
+          "pronunciation": "ng'ondu",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "chicken",
+          "translation": "ngũkũ",
+          "pronunciation": "ngũkũ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "dog",
+          "translation": "ngui / ngũĩ",
+          "pronunciation": "ngui / ngũĩ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "bird",
+          "translation": "nyoni / nyũnyi",
+          "pronunciation": "nyoni / nyũnyi",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "snake",
+          "translation": "njoka",
+          "pronunciation": "njoka",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "elephant",
+          "translation": "njogu",
+          "pronunciation": "njogu",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "lion",
+          "translation": "mũrũthi / ngatunyũ",
+          "pronunciation": "mũrũthi / ngatunyũ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "hare, rabbit",
+          "translation": "mbũkũ",
+          "pronunciation": "mbũkũ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "milk",
+          "translation": "ĩria",
+          "pronunciation": "ĩria",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "meat",
+          "translation": "nyama",
+          "pronunciation": "nyama",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "maize, corn",
+          "translation": "mbembe",
+          "pronunciation": "mbembe",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "beans / cowpeas",
+          "translation": "mboso / nthooko",
+          "pronunciation": "mboso / nthooko",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "banana (pl. bananas)",
+          "translation": "ĩrĩgũ (pl. marĩgũ)",
+          "pronunciation": "ĩrĩgũ (pl. marĩgũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "house, family home",
+          "translation": "nyomba / nyũmba",
+          "pronunciation": "nyomba / nyũmba",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "homestead, home village",
+          "translation": "mũciĩ (pl. mĩciĩ)",
+          "pronunciation": "mũciĩ (pl. mĩciĩ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "chair, stool",
+          "translation": "kĩvĩrĩ / gĩtĩ",
+          "pronunciation": "kĩvĩrĩ / gĩtĩ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "clay cooking pot",
+          "translation": "nyũngũ",
+          "pronunciation": "nyũngũ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to eat",
+          "translation": "kũrĩa",
+          "pronunciation": "kũrĩa",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to drink",
+          "translation": "kũnyua",
+          "pronunciation": "kũnyua",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to look at / to see",
+          "translation": "kũrora / kwona",
+          "pronunciation": "kũrora / kwona",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to hear, listen, feel",
+          "translation": "kũigua",
+          "pronunciation": "kũigua",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to speak, talk",
+          "translation": "kwaria",
+          "pronunciation": "kwaria",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to go",
+          "translation": "gũthiĩ / kũthiĩ",
+          "pronunciation": "gũthiĩ / kũthiĩ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to come (Kîembu gũũka / Kĩmĩĩrũ kwĩja)",
+          "translation": "gũũka / kwĩja",
+          "pronunciation": "gũũka / kwĩja",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to work / to cultivate",
+          "translation": "kũruta wĩra / kũrĩma",
+          "pronunciation": "kũruta wĩra / kũrĩma",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to love, want, like",
+          "translation": "kwenda",
+          "pronunciation": "kwenda",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to know, understand",
+          "translation": "kũmenya",
+          "pronunciation": "kũmenya",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to sleep, lie down",
+          "translation": "kũmama / kũkoma",
+          "pronunciation": "kũmama / kũkoma",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to stand up",
+          "translation": "kũrũgama",
+          "pronunciation": "kũrũgama",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to sit down",
+          "translation": "gũikara nthĩ",
+          "pronunciation": "gũikara nthĩ",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to buy / to sell",
+          "translation": "kũgũra / kwenderia",
+          "pronunciation": "kũgũra / kwenderia",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "to cook",
+          "translation": "kũruga",
+          "pronunciation": "kũruga",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "My name is",
+          "translation": "Njĩtagwa",
+          "pronunciation": "njĩtagwa...",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Ĩgoro",
+          "pronunciation": "ĩgoro",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Ũmũnthĩ",
+          "pronunciation": "ũmũnthĩ",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Rũciũ",
+          "pronunciation": "rũciũ",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Time zone",
+          "translation": "Gĩthaa",
+          "pronunciation": "gĩthaa",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Embu (Language)",
+          "translation": "Kĩembu",
+          "pronunciation": "kĩembu",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Somali (Language)",
+          "translation": "Kĩsomali",
+          "pronunciation": "kĩsomali",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "English (Language)",
+          "translation": "Kĩthungu",
+          "pronunciation": "kĩthungu",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "French (Language)",
+          "translation": "Kĩfaransa",
+          "pronunciation": "kĩfaransa",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "German (Language)",
+          "translation": "Kĩnjeremani",
+          "pronunciation": "kĩnjeremani",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Spanish (Language)",
+          "translation": "Kĩhispania",
+          "pronunciation": "kĩhispania",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Portuguese (Language)",
+          "translation": "Kĩreno",
+          "pronunciation": "kĩreno",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Italian (Language)",
+          "translation": "Kĩitaliano",
+          "pronunciation": "kĩitaliano",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Dutch (Language)",
+          "translation": "Kĩholanzi",
+          "pronunciation": "kĩholanzi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Russian (Language)",
+          "translation": "Kĩrusi",
+          "pronunciation": "kĩrusi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Polish (Language)",
+          "translation": "Kĩpolandi",
+          "pronunciation": "kĩpolandi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ukrainian (Language)",
+          "translation": "Kĩukrania",
+          "pronunciation": "kĩukrania",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Czech (Language)",
+          "translation": "Kĩcheki",
+          "pronunciation": "kĩcheki",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Greek (Language)",
+          "translation": "Kĩngriki",
+          "pronunciation": "kĩngriki",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Turkish (Language)",
+          "translation": "Kĩturuki",
+          "pronunciation": "kĩturuki",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Arabic (Language)",
+          "translation": "Kĩarabu",
+          "pronunciation": "kĩarabu",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Persian (Language)",
+          "translation": "Kĩanjemi",
+          "pronunciation": "kĩanjemi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Urdu (Language)",
+          "translation": "Kĩurdu",
+          "pronunciation": "kĩurdu",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Hindi (Language)",
+          "translation": "Kĩhindĩ",
+          "pronunciation": "kĩhindĩ",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Bangla (Language)",
+          "translation": "Kĩbangla",
+          "pronunciation": "kĩbangla",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Punjabi (Language)",
+          "translation": "Kĩpunjabi",
+          "pronunciation": "kĩpunjabi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tamil (Language)",
+          "translation": "Kĩtamil",
+          "pronunciation": "kĩtamil",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Thai (Language)",
+          "translation": "Kĩtailandi",
+          "pronunciation": "kĩtailandi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Vietnamese (Language)",
+          "translation": "Kĩvietinamu",
+          "pronunciation": "kĩvietinamu",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Indonesian (Language)",
+          "translation": "Kĩindonesia",
+          "pronunciation": "kĩindonesia",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Malay (Language)",
+          "translation": "Kĩmalesia",
+          "pronunciation": "kĩmalesia",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese (Language)",
+          "translation": "Kĩchina",
+          "pronunciation": "kĩchina",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese (Language)",
+          "translation": "Kĩnjapani",
+          "pronunciation": "kĩnjapani",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Korean (Language)",
+          "translation": "Kĩkorea",
+          "pronunciation": "kĩkorea",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Amharic (Language)",
+          "translation": "Kĩamhari",
+          "pronunciation": "kĩamhari",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Hausa (Language)",
+          "translation": "Kĩhausa",
+          "pronunciation": "kĩhausa",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Igbo (Language)",
+          "translation": "Kĩigbo",
+          "pronunciation": "kĩigbo",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Yoruba (Language)",
+          "translation": "Kĩyoruba",
+          "pronunciation": "kĩyoruba",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Zulu (Language)",
+          "translation": "Kĩzulu",
+          "pronunciation": "kĩzulu",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Kinyarwanda (Language)",
+          "translation": "Kĩnyarwanda",
+          "pronunciation": "kĩnyarwanda",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Akan (Language)",
+          "translation": "Kĩakan",
+          "pronunciation": "kĩakan",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "House",
+          "translation": "nyomba",
+          "pronunciation": "nyomba",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "nyama",
+          "pronunciation": "nyama",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "irio",
+          "pronunciation": "irio",
+          "context": "Mount Kenya Bantu (Kîembu)",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "cumbĩ",
+          "pronunciation": "cumbi",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Oil / Fat",
+          "translation": "maguta",
+          "pronunciation": "maguta",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger (general)",
+          "translation": "ng'aragu",
+          "pronunciation": "ng'aragu",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger for meat",
+          "translation": "ngũmba",
+          "pronunciation": "ngumba",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Knife",
+          "translation": "kavĩũ (pl. tũvĩũ)",
+          "pronunciation": "kaviu (pl. tuviu)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Rope",
+          "translation": "mũkanda (pl. mĩkanda)",
+          "pronunciation": "mukanda (pl. mikanda)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "ĩtũmũ (pl. matũmũ)",
+          "pronunciation": "itumu (pl. matumu)",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Iron (metal)",
+          "translation": "cũma",
+          "pronunciation": "cuma",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "School",
+          "translation": "cukuru",
+          "pronunciation": "cukuru",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Church",
+          "translation": "kanitha",
+          "pronunciation": "kanitha",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "War",
+          "translation": "mbaara",
+          "pronunciation": "mbaara",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Advice",
+          "translation": "ũtaro",
+          "pronunciation": "utaro",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Come",
+          "translation": "ũka",
+          "pronunciation": "uka",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Send",
+          "translation": "tũma",
+          "pronunciation": "tuma",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Walk / Go",
+          "translation": "thiĩ",
+          "pronunciation": "thii",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Fall",
+          "translation": "gũa",
+          "pronunciation": "gua",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Leave / Come out",
+          "translation": "uma",
+          "pronunciation": "uma",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Fly",
+          "translation": "gũrũka",
+          "pronunciation": "guruka",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Pour",
+          "translation": "itũrũra",
+          "pronunciation": "iturura",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Strike / Hit",
+          "translation": "rĩnga / kũgoma",
+          "pronunciation": "ringa / kugoma",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Bite",
+          "translation": "rũma",
+          "pronunciation": "ruma",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Wash",
+          "translation": "thambia",
+          "pronunciation": "thambia",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Split",
+          "translation": "atũra",
+          "pronunciation": "atura",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Give",
+          "translation": "va",
+          "pronunciation": "va",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Steal",
+          "translation": "ĩĩa",
+          "pronunciation": "iia",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Squeeze",
+          "translation": "vĩvĩnya",
+          "pronunciation": "vivinya",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Cultivate / Farm",
+          "translation": "rĩma",
+          "pronunciation": "rima",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Bury",
+          "translation": "thika",
+          "pronunciation": "thika",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Burn",
+          "translation": "vĩvia",
+          "pronunciation": "vivia",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "rĩa",
+          "pronunciation": "ria",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "nyua",
+          "pronunciation": "nyua",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Vomit",
+          "translation": "tavĩka",
+          "pronunciation": "tavika",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Suck",
+          "translation": "onga",
+          "pronunciation": "onga",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Spit",
+          "translation": "tua",
+          "pronunciation": "tua",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Blow",
+          "translation": "vũva",
+          "pronunciation": "vuva",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Swell",
+          "translation": "imba",
+          "pronunciation": "imba",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Give birth",
+          "translation": "ciara",
+          "pronunciation": "ciara",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Die",
+          "translation": "kua",
+          "pronunciation": "kua",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Kill",
+          "translation": "ũraga",
+          "pronunciation": "uraga",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Push",
+          "translation": "tindĩka",
+          "pronunciation": "tindika",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Pull",
+          "translation": "gucia",
+          "pronunciation": "gucia",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Sing",
+          "translation": "ina",
+          "pronunciation": "ina",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Play",
+          "translation": "thaaka",
+          "pronunciation": "thaaka",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Be afraid / Fear",
+          "translation": "ĩtigĩre",
+          "pronunciation": "itigire",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Want / Love",
+          "translation": "enda",
+          "pronunciation": "enda",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Say",
+          "translation": "uga",
+          "pronunciation": "uga",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Smell",
+          "translation": "nungĩra",
+          "pronunciation": "nungira",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "ona",
+          "pronunciation": "ona",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Show",
+          "translation": "onia",
+          "pronunciation": "onia",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Hear",
+          "translation": "igua",
+          "pronunciation": "igua",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Know",
+          "translation": "menya",
+          "pronunciation": "menya",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Count",
+          "translation": "tara",
+          "pronunciation": "tara",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Advise",
+          "translation": "taara",
+          "pronunciation": "taara",
+          "context": "Wikipedia Embu_language",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

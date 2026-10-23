@@ -1,0 +1,647 @@
+{
+  "languageId": "pokomo",
+  "languageName": "Pokomo (Kipfokomo)",
+  "family": "bantu",
+  "nativeName": "Kipfokomo",
+  "script": "Latin",
+  "speakerCount": 120000,
+  "counties": [
+    "Tana River"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Pokomo (Kipfokomo) dictionary compiled from Ferdinand Würtz ('Wörterbuch des Ki-Tikuu und des Ki-Pokomo', Zeitschrift für afrikanische und ozeanische Sprachen, 1895 — Public Domain), Sir Harry H. Johnston (1919 — Public Domain), Nurse & Hinnebusch (1993), and Wikipedia Pokomo_language.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / How are you? (Tana River greeting)",
+          "translation": "Hujambo / Habari za mudzi?",
+          "pronunciation": "ha-ba-ri za mu-dzi",
+          "context": "Kipfokomo (Sabaki Coastal Bantu) greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / Well-being",
+          "translation": "Usalama / Kheri",
+          "pronunciation": "u-sa-la-ma",
+          "context": "Kipfokomo greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Asante / Nashukuru",
+          "pronunciation": "a-san-te",
+          "context": "Kipfokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Karibu mudzini",
+          "pronunciation": "ka-ri-bu mu-dzi-ni",
+          "context": "Kipfokomo ('Welcome to the village')",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestor language of Pokomo & Swahili",
+          "translation": "Kingozi",
+          "pronunciation": "kin-go-zi",
+          "context": "Wikipedia Pokomo_language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "motsi (-motsi)",
+          "pronunciation": "mo-tsi",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "mbili (-wili)",
+          "pronunciation": "mbi-li",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "tahu (-tahu)",
+          "pronunciation": "ta-hu",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "nne (-nne)",
+          "pronunciation": "nne",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "tsano (-tsano)",
+          "pronunciation": "tsa-no",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "tandahu",
+          "pronunciation": "tan-da-hu",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "mfungate",
+          "pronunciation": "mfun-ga-te",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "nane",
+          "pronunciation": "na-ne",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "kenda",
+          "pronunciation": "ken-da",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "kumi",
+          "pronunciation": "ku-mi",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Person / People",
+          "translation": "muntu (pl. wantu)",
+          "pronunciation": "mun-tu (pl. wan-tu)",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "baba / ise",
+          "pronunciation": "ba-ba / i-se",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "mama / nina",
+          "pronunciation": "ma-ma / ni-na",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "mwana (pl. wana)",
+          "pronunciation": "mwa-na (pl. wa-na)",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband",
+          "translation": "mulume (pl. walume)",
+          "pronunciation": "mu-lu-me",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "muke (pl. wake)",
+          "pronunciation": "mu-ke (pl. wa-ke)",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Brother / Sibling",
+          "translation": "ndugu",
+          "pronunciation": "ndu-gu",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "msena / rafiki",
+          "pronunciation": "mse-na",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Mungu / Mulungu",
+          "pronunciation": "mu-lun-gu",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "dzina (pl. madzina)",
+          "pronunciation": "dzi-na (pl. ma-dzi-na)",
+          "context": "Würtz (1895) & Nurse & Hinnebusch (1993) — Kipokomo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "kitswa (pl. vitswa)",
+          "pronunciation": "ki-tswa",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "dzitso (pl. matso)",
+          "pronunciation": "dzi-tso (pl. ma-tso)",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "sikio (pl. masikio)",
+          "pronunciation": "si-ki-o",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "pula",
+          "pronunciation": "pu-la",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / Lip",
+          "translation": "mulomo (pl. milomo) / kanwa",
+          "pronunciation": "mu-lo-mo / kan-wa",
+          "context": "Würtz (1895) & Nurse & Hinnebusch (1993)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "dzino (pl. meno)",
+          "pronunciation": "dzi-no (pl. me-no)",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "ulimi (pl. ndimi)",
+          "pronunciation": "u-li-mi",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "mukono (pl. mikono)",
+          "pronunciation": "mu-ko-no",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "muguu (pl. miguu)",
+          "pronunciation": "mu-guu",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "damu / mwazi",
+          "pronunciation": "mwa-zi",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "mfupa (pl. mifupa)",
+          "pronunciation": "mfu-pa",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Skin / Hide",
+          "translation": "ngozi",
+          "pronunciation": "ngo-zi",
+          "context": "Wikipedia Pokomo_language & Würtz (1895)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "moyo (pl. mioyo)",
+          "pronunciation": "mo-yo",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Fish",
+          "translation": "nswi / samaki",
+          "pronunciation": "nswi",
+          "context": "Würtz (1895) & Nurse & Hinnebusch (1993) — Tana River Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "ngwena",
+          "pronunciation": "ngwe-na",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "nguu",
+          "pronunciation": "nguu",
+          "context": "Würtz (1895) — Tana River Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "ndzovu",
+          "pronunciation": "ndzo-vu",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "simba",
+          "pronunciation": "sim-ba",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "nyuni",
+          "pronunciation": "nyu-ni",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "nyoka",
+          "pronunciation": "nyo-ka",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "ng'ombe",
+          "pronunciation": "ng'om-be",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "mbuzi",
+          "pronunciation": "mbu-zi",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Chicken / Fowl",
+          "translation": "nkuku",
+          "pronunciation": "nku-ku",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "mbwa",
+          "pronunciation": "mbwa",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "iyai (pl. mayai)",
+          "pronunciation": "i-yai",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "madzi (maji)",
+          "pronunciation": "ma-dzi",
+          "context": "Würtz (1895) & Nurse & Hinnebusch (1993) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "River (Tana River)",
+          "translation": "muho (Tsana)",
+          "pronunciation": "mu-ho",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "moho (moto)",
+          "pronunciation": "mo-ho",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "dzuwa",
+          "pronunciation": "dzu-wa",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "mwezi",
+          "pronunciation": "mwe-zi",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "nyoha (nyota)",
+          "pronunciation": "nyo-ha",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "mvula",
+          "pronunciation": "mvu-la",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "muhi (pl. mihi)",
+          "pronunciation": "mu-hi (pl. mi-hi)",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "dziwe (pl. mawe)",
+          "pronunciation": "dzi-we (pl. ma-we)",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Country / Land",
+          "translation": "ntsi",
+          "pronunciation": "ntsi",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Path / Road",
+          "translation": "ndzila",
+          "pronunciation": "ndzi-la",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "siku",
+          "pronunciation": "si-ku",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "usiku",
+          "pronunciation": "u-si-ku",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "Village / Town",
+          "translation": "mudzi (pl. midzi)",
+          "pronunciation": "mu-dzi",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "nyumba",
+          "pronunciation": "nyum-ba",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Canoe / Dugout boat",
+          "translation": "dau / mtumbwi",
+          "pronunciation": "mtum-bwi",
+          "context": "Würtz (1895) — Tana River Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "izu (pl. mazu)",
+          "pronunciation": "i-zu (pl. ma-zu)",
+          "context": "Würtz (1895) — Tana River staple crop",
+          "audioFile": null
+        },
+        {
+          "english": "Rice",
+          "translation": "mpunga / mchele",
+          "pronunciation": "mpun-ga",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Maize",
+          "translation": "mahemba",
+          "pronunciation": "ma-hem-ba",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "nyama",
+          "pronunciation": "nya-ma",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "chakurya",
+          "pronunciation": "cha-ku-rya",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Eat",
+          "translation": "kurya (kula)",
+          "pronunciation": "ku-rya",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "kunwa",
+          "pronunciation": "kun-wa",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Draw water",
+          "translation": "kuteka madzi",
+          "pronunciation": "ku-te-ka ma-dzi",
+          "context": "Pokomo oral tradition & Würtz (1895)",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kuja / kudza",
+          "pronunciation": "ku-dza",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "kwenda",
+          "pronunciation": "kwen-da",
+          "context": "Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "kuona",
+          "pronunciation": "ku-o-na",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Hear",
+          "translation": "kusikia",
+          "pronunciation": "ku-si-ki-a",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "kulala",
+          "pronunciation": "ku-la-la",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Die",
+          "translation": "kufa",
+          "pronunciation": "ku-fa",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Give",
+          "translation": "kupa",
+          "pronunciation": "ku-pa",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Cultivate / Farm",
+          "translation": "kulima",
+          "pronunciation": "ku-li-ma",
+          "context": "Würtz (1895) — Kipokomo",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

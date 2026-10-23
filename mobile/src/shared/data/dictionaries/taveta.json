@@ -1,0 +1,598 @@
+{
+  "languageId": "taveta",
+  "languageName": "Taveta (Kitaveta)",
+  "family": "bantu",
+  "nativeName": "Kitaveta / Kituweta",
+  "script": "Latin",
+  "speakerCount": 25000,
+  "counties": [
+    "Taita-Taveta"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Taveta (Kitaveta / Kituweta) dictionary compiled from A. C. Hollis ('Taveta Sayings and Proverbs', Journal of the African Society 9, 1910 & 'Taveta Enigmas', Vol. 10, 1911 — Public Domain), Rev. A. R. Steggall (1892–1906 CMS Taveta translations — Public Domain), Sir Harry H. Johnston (1919 — Public Domain), and Wikipedia Taveta_language.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello",
+          "translation": "Jahako",
+          "pronunciation": "ja-ha-ko",
+          "context": "Wikipedia Taveta_language — Taveta greetings",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (Reply: Good, how are you?)",
+          "translation": "Jedi yoko jahako",
+          "pronunciation": "je-di yo-ko ja-ha-ko",
+          "context": "Wikipedia Taveta_language — Taveta greetings",
+          "audioFile": null
+        },
+        {
+          "english": "Good news / Gospel",
+          "translation": "Sumu yedi",
+          "pronunciation": "su-mu ye-di",
+          "context": "Rev. A. R. Steggall (1892) & Wikipedia Taveta_language",
+          "audioFile": null
+        },
+        {
+          "english": "It is he who feels cold that approaches the fire (Proverb #4)",
+          "translation": "Esikie mbeho niye esongeria moto",
+          "pronunciation": "e-si-kie mbe-ho ni-ye e-son-ge-ria mo-to",
+          "context": "A. C. Hollis (1910) 'Taveta Sayings and Proverbs' #4",
+          "audioFile": null
+        },
+        {
+          "english": "If you kill a snake, kill it entirely (Proverb #6)",
+          "translation": "Ukakoma nyoka, mhome na kamwe",
+          "pronunciation": "u-ka-ko-ma nyo-ka mho-me na kam-we",
+          "context": "A. C. Hollis (1910) 'Taveta Sayings and Proverbs' #6",
+          "audioFile": null
+        },
+        {
+          "english": "Of the hyena that howls and that does not howl, the bad one is the one that does not howl (Proverb #8)",
+          "translation": "Ibau liiya na lisiiya, iwiwi ni lisiiya",
+          "pronunciation": "i-bau lii-ya na li-sii-ya i-wi-wi ni li-sii-ya",
+          "context": "A. C. Hollis (1910) 'Taveta Sayings and Proverbs' #8",
+          "audioFile": null
+        },
+        {
+          "english": "If one bird ceases singing the dawn will not stop (Proverb #10)",
+          "translation": "Ideghe imwe likaremwa kuiya teheshigha kucha",
+          "pronunciation": "i-de-ghe im-we li-ka-rem-wa kui-ya te-he-shi-gha ku-cha",
+          "context": "A. C. Hollis (1910) 'Taveta Sayings and Proverbs' #10",
+          "audioFile": null
+        },
+        {
+          "english": "The elephant's bed is slept on by the gazelle (Proverb #14)",
+          "translation": "Iraro la zowu liyaiwa ni suni",
+          "pronunciation": "i-ra-ro la zo-wu li-yai-wa ni su-ni",
+          "context": "A. C. Hollis (1910) 'Taveta Sayings and Proverbs' #14",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One / Once",
+          "translation": "imwe (kamwe)",
+          "pronunciation": "im-we / kam-we",
+          "context": "A. C. Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Two / Second",
+          "translation": "iwi (cha keri)",
+          "pronunciation": "i-wi / cha ke-ri",
+          "context": "Rev. A. R. Steggall (1897) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "itatu",
+          "pronunciation": "i-ta-tu",
+          "context": "Johnston (1919) — Kitaveta numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "ina",
+          "pronunciation": "i-na",
+          "context": "Johnston (1919) — Kitaveta numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "ishano",
+          "pronunciation": "i-sha-no",
+          "context": "Johnston (1919) — Kitaveta numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "mtandatu",
+          "pronunciation": "mtan-da-tu",
+          "context": "Johnston (1919) — Kitaveta numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "mfungate",
+          "pronunciation": "mfun-ga-te",
+          "context": "Johnston (1919) — Kitaveta numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "mnane",
+          "pronunciation": "mna-ne",
+          "context": "Johnston (1919) — Kitaveta numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "kenda",
+          "pronunciation": "ken-da",
+          "context": "Johnston (1919) — Kitaveta numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "ikumi",
+          "pronunciation": "i-ku-mi",
+          "context": "Johnston (1919) — Kitaveta numerals",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Person / People",
+          "translation": "mundu (pl. wandu)",
+          "pronunciation": "mun-du (pl. wan-du)",
+          "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Messengers / Apostles",
+          "translation": "waondo (sg. mwondo)",
+          "pronunciation": "wa-on-do",
+          "context": "Rev. A. R. Steggall (1900) — Mihiro ya Waondo",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "papa / baba",
+          "pronunciation": "ba-ba",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "mama / mamo",
+          "pronunciation": "ma-ma",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "mwana (pl. wana)",
+          "pronunciation": "mwa-na",
+          "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Mlungu / Izuba",
+          "pronunciation": "mlun-gu / i-zu-ba",
+          "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "zina (pl. mazina)",
+          "pronunciation": "zi-na",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "mtwe (pl. mitwe)",
+          "pronunciation": "mtwe",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "risho (pl. mesho)",
+          "pronunciation": "ri-sho (pl. me-sho)",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "kutu (pl. matu)",
+          "pronunciation": "ku-tu (pl. ma-tu)",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "mbula",
+          "pronunciation": "mbu-la",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "mlomo",
+          "pronunciation": "mlo-mo",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "ijego (pl. majego)",
+          "pronunciation": "i-je-go",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "ulimi",
+          "pronunciation": "u-li-mi",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "mkono (pl. mikono)",
+          "pronunciation": "mko-no",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "kighulu (pl. vighulu)",
+          "pronunciation": "ki-ghu-lu",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "sakame",
+          "pronunciation": "sa-ka-me",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Snake",
+          "translation": "nyoka",
+          "pronunciation": "nyo-ka",
+          "context": "A. C. Hollis (1910) Taveta Proverb #6",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "ibau (pl. mabau)",
+          "pronunciation": "i-bau",
+          "context": "A. C. Hollis (1910) Taveta Proverb #8",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "ideghe (pl. madeghe)",
+          "pronunciation": "i-de-ghe",
+          "context": "A. C. Hollis (1910) Taveta Proverb #10",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "zowu (nzowu)",
+          "pronunciation": "zo-wu",
+          "context": "A. C. Hollis (1910) Taveta Proverb #14",
+          "audioFile": null
+        },
+        {
+          "english": "Gazelle / Antelope",
+          "translation": "suni",
+          "pronunciation": "su-ni",
+          "context": "A. C. Hollis (1910) Taveta Proverb #14",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "ng'ombe",
+          "pronunciation": "ng'om-be",
+          "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "mbuzi",
+          "pronunciation": "mbu-zi",
+          "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "simba",
+          "pronunciation": "sim-ba",
+          "context": "Hollis (1910) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "samaki / nguluma",
+          "pronunciation": "sa-ma-ki",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Fire",
+          "translation": "moto",
+          "pronunciation": "mo-to",
+          "context": "A. C. Hollis (1910) Taveta Proverb #4",
+          "audioFile": null
+        },
+        {
+          "english": "Cold / Wind",
+          "translation": "mbeho",
+          "pronunciation": "mbe-ho",
+          "context": "A. C. Hollis (1910) Taveta Proverb #4",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "mazi",
+          "pronunciation": "ma-zi",
+          "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "izuwa / izuba",
+          "pronunciation": "i-zu-wa",
+          "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "mwezi",
+          "pronunciation": "mwe-zi",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "mti (pl. miti)",
+          "pronunciation": "mti (pl. mi-ti)",
+          "context": "A. C. Hollis (1910) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Dawn / Morning",
+          "translation": "kucha",
+          "pronunciation": "ku-cha",
+          "context": "A. C. Hollis (1910) Taveta Proverb #10",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "mvula",
+          "pronunciation": "mvu-la",
+          "context": "Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "msitu",
+          "pronunciation": "msi-tu",
+          "context": "Hollis (1910) — Taveta Lumi River forest",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "Bed / Sleeping place",
+          "translation": "iraro (pl. mararo)",
+          "pronunciation": "i-ra-ro",
+          "context": "A. C. Hollis (1910) Taveta Proverb #14",
+          "audioFile": null
+        },
+        {
+          "english": "Book",
+          "translation": "kitamo (pl. vitamo)",
+          "pronunciation": "ki-ta-mo",
+          "context": "Rev. A. R. Steggall (1894) — Taveta Kitamo cha Kuomba",
+          "audioFile": null
+        },
+        {
+          "english": "Words / Speech / Language",
+          "translation": "viteto (sg. kiteto)",
+          "pronunciation": "vi-te-to",
+          "context": "Rev. A. R. Steggall (1905) — viteto vya kituweta",
+          "audioFile": null
+        },
+        {
+          "english": "Psalms / Hymns / Praises",
+          "translation": "malumbo (sg. ilumbo)",
+          "pronunciation": "ma-lum-bo",
+          "context": "Rev. A. R. Steggall (1905) — Malumbo",
+          "audioFile": null
+        },
+        {
+          "english": "Acts / Deeds",
+          "translation": "mihiro",
+          "pronunciation": "mi-hi-ro",
+          "context": "Rev. A. R. Steggall (1900) — Mihiro ya Waondo",
+          "audioFile": null
+        },
+        {
+          "english": "Letters / Epistles",
+          "translation": "mawaraka",
+          "pronunciation": "ma-wa-ra-ka",
+          "context": "Rev. A. R. Steggall (1900) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "nyumba",
+          "pronunciation": "nyum-ba",
+          "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "iru (pl. maru)",
+          "pronunciation": "i-ru (pl. ma-ru)",
+          "context": "Hollis (1910) — Taveta staple crop",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Feel / Hear",
+          "translation": "kusikia (esikie = he who feels)",
+          "pronunciation": "ku-si-kia",
+          "context": "A. C. Hollis (1910) Taveta Proverb #4",
+          "audioFile": null
+        },
+        {
+          "english": "Approach / Draw near",
+          "translation": "kusongeria",
+          "pronunciation": "ku-son-ge-ria",
+          "context": "A. C. Hollis (1910) Taveta Proverb #4",
+          "audioFile": null
+        },
+        {
+          "english": "Kill / Strike",
+          "translation": "kukoma / kuhoma",
+          "pronunciation": "ku-ko-ma / ku-ho-ma",
+          "context": "A. C. Hollis (1910) Taveta Proverb #6",
+          "audioFile": null
+        },
+        {
+          "english": "Cry / Howl / Sing",
+          "translation": "kuiya",
+          "pronunciation": "kui-ya",
+          "context": "A. C. Hollis (1910) Taveta Proverbs #8 & #10",
+          "audioFile": null
+        },
+        {
+          "english": "Fail / Be unable / Cease",
+          "translation": "kuremwa",
+          "pronunciation": "ku-rem-wa",
+          "context": "A. C. Hollis (1910) Taveta Proverb #10",
+          "audioFile": null
+        },
+        {
+          "english": "Leave / Stop",
+          "translation": "kushigha",
+          "pronunciation": "ku-shi-gha",
+          "context": "A. C. Hollis (1910) Taveta Proverb #10",
+          "audioFile": null
+        },
+        {
+          "english": "Dawn",
+          "translation": "kucha",
+          "pronunciation": "ku-cha",
+          "context": "A. C. Hollis (1910) Taveta Proverb #10",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep / Be slept on",
+          "translation": "kuyala (pass. kuyaiwa)",
+          "pronunciation": "ku-ya-la / ku-yai-wa",
+          "context": "A. C. Hollis (1910) Taveta Proverb #14",
+          "audioFile": null
+        },
+        {
+          "english": "Pray / Beg",
+          "translation": "kuomba",
+          "pronunciation": "ku-om-ba",
+          "context": "Rev. A. R. Steggall (1894) — Taveta Kitamo cha Kuomba",
+          "audioFile": null
+        },
+        {
+          "english": "Come out / Exit (Exodus)",
+          "translation": "kufuma",
+          "pronunciation": "ku-fu-ma",
+          "context": "Rev. A. R. Steggall (1897) — Kitamo cha Kufuma",
+          "audioFile": null
+        },
+        {
+          "english": "Be called / Named",
+          "translation": "kuitangwa (chaitangwa)",
+          "pronunciation": "kui-tan-gwa",
+          "context": "Rev. A. R. Steggall (1897) — Kitaveta",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives, Pronouns & Grammar",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Good / Fine",
+          "translation": "yedi (-edi)",
+          "pronunciation": "ye-di",
+          "context": "Rev. A. R. Steggall (1892) & Wikipedia Taveta_language",
+          "audioFile": null
+        },
+        {
+          "english": "Bad / Evil",
+          "translation": "iwiwi (-wiwi)",
+          "pronunciation": "i-wi-wi",
+          "context": "A. C. Hollis (1910) Taveta Proverb #8",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

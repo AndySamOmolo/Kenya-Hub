@@ -1,0 +1,486 @@
+{
+  "languageId": "ilchamus",
+  "languageName": "Ilchamus (Njemps)",
+  "family": "nilotic",
+  "nativeName": "Ilchamus / Camus",
+  "script": "Latin",
+  "speakerCount": 35000,
+  "counties": [
+    "Baringo"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Ilchamus (Camus / Njemps) dictionary compiled from Rainer Vossen ('The Eastern Nilotes', 1982 — Camus comparative vocabulary on Wikipedia Eastern_Nilotic_languages) and Sir Harry H. Johnston ('The Uganda Protectorate', 1902 — Public Domain).",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / Greetings",
+          "translation": "Sopa / Supa",
+          "pronunciation": "soh-pah",
+          "context": "Ilchamus (Camus / North Maa) greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (Reply)",
+          "translation": "Epa / Ipa",
+          "pronunciation": "eh-pah",
+          "context": "Ilchamus greeting response",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "Serian",
+          "pronunciation": "seh-ri-an",
+          "context": "Ilchamus (Camus) greeting & blessing",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Ashe / Ashe oleng",
+          "pronunciation": "ah-sheh",
+          "context": "Ilchamus expression of gratitude",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "nabo (fem.) / obo (masc.)",
+          "pronunciation": "na-bo / o-bo",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "are (fem.) / waare (masc.)",
+          "pronunciation": "a-re / waa-re",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "uni (fem.) / okuni (masc.)",
+          "pronunciation": "u-ni / o-ku-ni",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "ong'wan",
+          "pronunciation": "ong-wan",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "imiet / imjet",
+          "pronunciation": "i-miet",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "ile",
+          "pronunciation": "i-le",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "sapa",
+          "pronunciation": "sa-pa",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "isiet",
+          "pronunciation": "i-siet",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "saal",
+          "pronunciation": "saal",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "tomon",
+          "pronunciation": "to-mon",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "People of Ilchamus ('People who see far')",
+          "translation": "Ilchamus (sg. Olchamus)",
+          "pronunciation": "il-cha-mus",
+          "context": "Wikipedia Ilchamus_people",
+          "audioFile": null
+        },
+        {
+          "english": "Person / People",
+          "translation": "ltung'ani (pl. ltung'ana)",
+          "pronunciation": "ltung-a-ni",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "papa / menye",
+          "pronunciation": "pa-pa / me-nye",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "yeyo / ng'oto",
+          "pronunciation": "ye-yo",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "nkerai (pl. ngera)",
+          "pronunciation": "nke-rai",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Nkai",
+          "pronunciation": "nkai",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "ŋ-kárn-á (nkarna)",
+          "pronunciation": "nkar-na",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Eye",
+          "translation": "ŋ-kɔŋ-ʊ́ (nkong'u)",
+          "pronunciation": "nkong-u",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "ŋ-ké-ok (nkeok)",
+          "pronunciation": "nke-ok",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "ŋ-kawar-íé (nkawarie)",
+          "pronunciation": "nka-wa-rie",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "l-alá-ɪ̀ (lalai)",
+          "pronunciation": "la-lai",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "l-ŋɛjɛp (lng'ejep)",
+          "pronunciation": "lng'e-jep",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / Language",
+          "translation": "ŋ-kʊtʊ́k (nkutuk)",
+          "pronunciation": "nku-tuk",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "l-ɔɗɔ́ (lod'o)",
+          "pronunciation": "lo-do",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "l-óì-tò (loito)",
+          "pronunciation": "loi-to",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "lukunya",
+          "pronunciation": "lu-ku-nya",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "nkaina",
+          "pronunciation": "nkai-na",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "lkeju",
+          "pronunciation": "lke-ju",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Fish (Lake Baringo)",
+          "translation": "lsing'iri (pl. lsing'ir)",
+          "pronunciation": "lsing-i-ri",
+          "context": "Ilchamus Lake Baringo fishing vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "nkiteng' (pl. nkishu)",
+          "pronunciation": "nki-teng'",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "nkine",
+          "pronunciation": "nki-ne",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "nker",
+          "pronunciation": "nker",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus (Lake Baringo)",
+          "translation": "lmakau",
+          "pronunciation": "lma-kau",
+          "context": "Ilchamus Lake Baringo fauna",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "lkinyang'",
+          "pronunciation": "lki-nyang'",
+          "context": "Ilchamus Lake Baringo fauna",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "nkweny",
+          "pronunciation": "nkweny",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "lasurai",
+          "pronunciation": "la-su-rai",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Water / Lake / River",
+          "translation": "ŋ-kár-ɛ́ (nkare)",
+          "pronunciation": "nka-re",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Wood",
+          "translation": "l-caní (lchani)",
+          "pronunciation": "lcha-ni",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "nkolong'",
+          "pronunciation": "nko-long'",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "lapa",
+          "pronunciation": "la-pa",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "nkima",
+          "pronunciation": "nki-ma",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "nchan",
+          "pronunciation": "nchan",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Land",
+          "translation": "nkop",
+          "pronunciation": "nkop",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "nkujit",
+          "pronunciation": "nku-jit",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "Milk",
+          "translation": "kule",
+          "pronunciation": "ku-le",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "nkiri",
+          "pronunciation": "nki-ri",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "House / Homestead",
+          "translation": "nkaji / nkang'",
+          "pronunciation": "nka-ji",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Boat / Balsa reed canoe (Lake Baringo)",
+          "translation": "lkadich",
+          "pronunciation": "lka-dich",
+          "context": "Traditional Ilchamus ambatch reed boat on Lake Baringo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Eat",
+          "translation": "a-ɲá (anya)",
+          "pronunciation": "a-nya",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "a-ok (aok)",
+          "pronunciation": "a-ok",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "a-lo (alo)",
+          "pronunciation": "a-lo",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "a-lotu (alotu)",
+          "pronunciation": "a-lo-tu",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "a-dol (adol)",
+          "pronunciation": "a-dol",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Hear",
+          "translation": "a-ning' (aning')",
+          "pronunciation": "a-ning'",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "a-irrag (airrag)",
+          "pronunciation": "air-rag",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

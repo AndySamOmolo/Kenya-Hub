@@ -13,7 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useDynamicStyles, ThemeColors } from "../theme";
 
-// Import all 13 dictionaries
+// Import all 22 Kenyan language dictionaries
 import swahiliDict from "../shared/data/dictionaries/swahili.json";
 import kikuyuDict from "../shared/data/dictionaries/kikuyu.json";
 import luoDict from "../shared/data/dictionaries/luo.json";
@@ -27,6 +27,15 @@ import somaliDict from "../shared/data/dictionaries/somali.json";
 import turkanaDict from "../shared/data/dictionaries/turkana.json";
 import mijikendaDict from "../shared/data/dictionaries/mijikenda.json";
 import tesoDict from "../shared/data/dictionaries/teso.json";
+import embuDict from "../shared/data/dictionaries/embu.json";
+import taitaDict from "../shared/data/dictionaries/taita.json";
+import samburuDict from "../shared/data/dictionaries/samburu.json";
+import boranaDict from "../shared/data/dictionaries/borana.json";
+import rendilleDict from "../shared/data/dictionaries/rendille.json";
+import pokomoDict from "../shared/data/dictionaries/pokomo.json";
+import ilchamusDict from "../shared/data/dictionaries/ilchamus.json";
+import pokotDict from "../shared/data/dictionaries/pokot.json";
+import tavetaDict from "../shared/data/dictionaries/taveta.json";
 
 interface DictEntry {
   english: string;
@@ -69,6 +78,15 @@ const ALL_DICTS: Dictionary[] = [
   turkanaDict,
   mijikendaDict,
   tesoDict,
+  embuDict,
+  taitaDict,
+  samburuDict,
+  boranaDict,
+  rendilleDict,
+  pokomoDict,
+  ilchamusDict,
+  pokotDict,
+  tavetaDict,
 ] as any[];
 
 const DICT_MAP: Record<string, Dictionary> = {};
@@ -100,6 +118,29 @@ const POPULAR_COMPARE_WORDS = [
   "House",
 ];
 
+function extractNormalizedTerms(raw: string): string[] {
+  const cleaned = raw
+    .toLowerCase()
+    .replace(/^\[[^\]]*\]\s*/g, "")
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(/[!?.]/g, "")
+    .trim();
+  const parts = cleaned
+    .split(/[\/,;]/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const out = new Set<string>();
+  if (cleaned) {
+    out.add(cleaned);
+    if (cleaned.startsWith("to ")) out.add(cleaned.slice(3).trim());
+  }
+  for (const p of parts) {
+    out.add(p);
+    if (p.startsWith("to ")) out.add(p.slice(3).trim());
+  }
+  return Array.from(out);
+}
+
 export function KenyanTranslatorTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
 
@@ -107,7 +148,7 @@ export function KenyanTranslatorTool() {
     "translate"
   );
   const [sourceLanguage, setSourceLanguage] = useState<string>("english");
-  const [targetLanguage, setTargetLanguage] = useState<string>("kamba");
+  const [targetLanguage, setTargetLanguage] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string>("greetings");
 
@@ -117,6 +158,7 @@ export function KenyanTranslatorTool() {
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [showSourcePicker, setShowSourcePicker] = useState(false);
   const [showTargetPicker, setShowTargetPicker] = useState(false);
 
   // Random word of the day
@@ -136,7 +178,6 @@ export function KenyanTranslatorTool() {
   const [contribName, setContribName] = useState("");
   const [contribSubmitted, setContribSubmitted] = useState(false);
 
-  // Load saved recent searches & favorites
   useEffect(() => {
     AsyncStorage.getItem("kh-translator-recent").then((raw) => {
       if (raw) {
@@ -184,7 +225,6 @@ export function KenyanTranslatorTool() {
     });
   };
 
-  // Roll random word
   const rollRandomWord = useCallback(() => {
     const populatedDicts = ALL_DICTS.filter((d) => d.categories.some((c: any) => c.entries.length > 0));
     if (populatedDicts.length === 0) return;
@@ -206,28 +246,35 @@ export function KenyanTranslatorTool() {
 
   // Swap languages
   const swapLanguages = () => {
-    if (sourceLanguage === "english") {
-      setSourceLanguage(targetLanguage);
+    if (targetLanguage === "all") {
+      setSourceLanguage("swahili");
       setTargetLanguage("english");
     } else {
       const prevSource = sourceLanguage;
-      setSourceLanguage("english");
+      setSourceLanguage(targetLanguage);
       setTargetLanguage(prevSource);
     }
     setSearchQuery("");
   };
 
-  const targetDict = DICT_MAP[targetLanguage] || DICT_MAP.swahili;
+  const targetDict =
+    targetLanguage !== "english" && targetLanguage !== "all"
+      ? DICT_MAP[targetLanguage]
+      : null;
   const sourceDict =
     sourceLanguage !== "english" ? DICT_MAP[sourceLanguage] : null;
+  const browseDict = targetDict || sourceDict || DICT_MAP.swahili;
 
-  // Search Results
+  // Search Results (Supports English->X, X->English, X->Y via English middleman, and X/English->All Languages)
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
     const q = searchQuery.toLowerCase().trim();
+    const qClean = extractNormalizedTerms(q)[0] || q;
 
     const results: {
       entry: DictEntry;
+      sourceEntry?: DictEntry;
+      pivotEnglish?: string;
       categoryName: string;
       categoryIcon: string;
       languageId: string;
@@ -236,91 +283,164 @@ export function KenyanTranslatorTool() {
       matchType: "exact" | "partial";
     }[] = [];
 
-    if (sourceLanguage === "english") {
-      // English -> Target Kenyan Language
-      if (targetDict) {
-        targetDict.categories.forEach((cat) => {
-          cat.entries.forEach((entry) => {
-            const engLower = entry.english.toLowerCase();
-            if (engLower === q) {
-              results.push({
-                entry,
-                categoryName: cat.name,
-                categoryIcon: cat.icon,
-                languageId: targetDict.languageId,
-                languageName: targetDict.languageName,
-                family: targetDict.family,
-                matchType: "exact",
-              });
-            } else if (engLower.includes(q)) {
-              results.push({
-                entry,
-                categoryName: cat.name,
-                categoryIcon: cat.icon,
-                languageId: targetDict.languageId,
-                languageName: targetDict.languageName,
-                family: targetDict.family,
-                matchType: "partial",
-              });
-            }
-          });
-        });
-      }
-    } else if (sourceDict) {
-      // Kenyan Language -> English
-      sourceDict.categories.forEach((cat) => {
-        cat.entries.forEach((entry) => {
-          const transLower = entry.translation.toLowerCase();
-          if (transLower === q) {
-            results.push({
+    const findInDictByEnglishPivots = (
+      dict: Dictionary,
+      pivots: string[],
+      sourceMatch?: DictEntry
+    ) => {
+      const exactMatches: typeof results = [];
+      const partialMatches: typeof results = [];
+
+      for (const cat of dict.categories) {
+        for (const entry of cat.entries) {
+          const engTerms = extractNormalizedTerms(entry.english);
+          const engLower = entry.english.toLowerCase();
+          if (pivots.some((pw) => engLower === pw || engTerms.includes(pw))) {
+            exactMatches.push({
               entry,
+              sourceEntry: sourceMatch,
+              pivotEnglish: sourceMatch ? sourceMatch.english : entry.english,
               categoryName: cat.name,
               categoryIcon: cat.icon,
-              languageId: sourceDict.languageId,
-              languageName: sourceDict.languageName,
-              family: sourceDict.family,
+              languageId: dict.languageId,
+              languageName: dict.languageName,
+              family: dict.family,
               matchType: "exact",
             });
-          } else if (transLower.includes(q)) {
-            results.push({
+          } else if (
+            pivots.some(
+              (pw) => pw.length >= 3 && engTerms.some((et) => et.includes(pw))
+            )
+          ) {
+            partialMatches.push({
               entry,
+              sourceEntry: sourceMatch,
+              pivotEnglish: sourceMatch ? sourceMatch.english : entry.english,
               categoryName: cat.name,
               categoryIcon: cat.icon,
-              languageId: sourceDict.languageId,
-              languageName: sourceDict.languageName,
-              family: sourceDict.family,
+              languageId: dict.languageId,
+              languageName: dict.languageName,
+              family: dict.family,
               matchType: "partial",
             });
           }
-        });
-      });
+        }
+      }
+      return [...exactMatches, ...partialMatches];
+    };
+
+    if (sourceLanguage === "english") {
+      const pivots = extractNormalizedTerms(q);
+      if (targetLanguage === "all" || targetLanguage === "english") {
+        for (const dict of ALL_DICTS) {
+          const matches = findInDictByEnglishPivots(dict, pivots);
+          if (matches.length > 0) results.push(matches[0]);
+        }
+      } else if (targetDict) {
+        results.push(...findInDictByEnglishPivots(targetDict, pivots));
+      }
+    } else if (sourceDict) {
+      const exactSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
+      const partialSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
+
+      for (const cat of sourceDict.categories) {
+        for (const entry of cat.entries) {
+          const transTerms = extractNormalizedTerms(entry.translation);
+          const transLower = entry.translation.toLowerCase();
+          if (transLower === q || transTerms.includes(qClean)) {
+            exactSourceMatches.push({ entry, cat });
+          } else if (
+            transLower.includes(q) ||
+            transTerms.some((t) => t.includes(qClean))
+          ) {
+            partialSourceMatches.push({ entry, cat });
+          }
+        }
+      }
+
+      if (exactSourceMatches.length === 0 && partialSourceMatches.length === 0) {
+        for (const cat of sourceDict.categories) {
+          for (const entry of cat.entries) {
+            const engTerms = extractNormalizedTerms(entry.english);
+            if (engTerms.includes(qClean)) {
+              exactSourceMatches.push({ entry, cat });
+            } else if (entry.english.toLowerCase().includes(q)) {
+              partialSourceMatches.push({ entry, cat });
+            }
+          }
+        }
+      }
+
+      const combinedSource = [...exactSourceMatches, ...partialSourceMatches];
+
+      if (targetLanguage === "english" || targetLanguage === sourceLanguage) {
+        for (const sm of combinedSource) {
+          results.push({
+            entry: sm.entry,
+            categoryName: sm.cat.name,
+            categoryIcon: sm.cat.icon,
+            languageId: sourceDict.languageId,
+            languageName: sourceDict.languageName,
+            family: sourceDict.family,
+            matchType: exactSourceMatches.includes(sm) ? "exact" : "partial",
+          });
+        }
+      } else if (targetLanguage === "all") {
+        const primarySources =
+          exactSourceMatches.length > 0
+            ? exactSourceMatches.slice(0, 3)
+            : partialSourceMatches.slice(0, 3);
+        const allPivots: string[] = [];
+        for (const sm of primarySources) {
+          for (const pw of extractNormalizedTerms(sm.entry.english)) {
+            if (!allPivots.includes(pw)) allPivots.push(pw);
+          }
+        }
+        if (primarySources.length > 0) {
+          const bestSource = primarySources[0].entry;
+          for (const dict of ALL_DICTS) {
+            if (dict.languageId === sourceDict.languageId) continue;
+            const dictMatches = findInDictByEnglishPivots(
+              dict,
+              allPivots,
+              bestSource
+            );
+            if (dictMatches.length > 0) results.push(dictMatches[0]);
+          }
+        }
+      } else if (targetDict) {
+        const primarySources =
+          exactSourceMatches.length > 0
+            ? exactSourceMatches.slice(0, 5)
+            : partialSourceMatches.slice(0, 5);
+        for (const sm of primarySources) {
+          const pivots = extractNormalizedTerms(sm.entry.english);
+          results.push(
+            ...findInDictByEnglishPivots(targetDict, pivots, sm.entry)
+          );
+        }
+      }
     }
 
     results.sort((a, b) => (a.matchType === "exact" ? -1 : 1));
     return results;
-  }, [searchQuery, sourceLanguage, targetDict, sourceDict]);
+  }, [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict]);
 
-  // Comparison Results Across All 13 Languages
+  // Comparison Results Across All 22 Languages
   const comparisonResults = useMemo(() => {
     if (viewMode !== "compare" || !searchQuery.trim()) return [];
-    const cleanTerm = (s: string) =>
-      s
-        .toLowerCase()
-        .replace(/\s*\([^)]*\)/g, "")
-        .replace(/[!?.]/g, "")
-        .trim();
+    const qTerms = extractNormalizedTerms(searchQuery);
+    const q = qTerms[0] || searchQuery.toLowerCase().trim();
 
-    const q = cleanTerm(searchQuery);
-
-    // Check if query matches a local translation in any dictionary
     let matchedEnglish = q;
     for (const d of ALL_DICTS) {
       for (const cat of d.categories) {
         for (const entry of cat.entries) {
-          const transClean = cleanTerm(entry.translation);
-          const transParts = transClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
-          if (transClean === q || transParts.includes(q)) {
-            matchedEnglish = cleanTerm(entry.english);
+          const transTerms = extractNormalizedTerms(entry.translation);
+          if (transTerms.includes(q)) {
+            matchedEnglish =
+              extractNormalizedTerms(entry.english)[0] ||
+              entry.english.toLowerCase();
             break;
           }
         }
@@ -329,12 +449,13 @@ export function KenyanTranslatorTool() {
       if (matchedEnglish !== q) break;
     }
 
-    const targetWords = [q];
-    if (matchedEnglish !== q) targetWords.unshift(matchedEnglish);
-    const slashParts = matchedEnglish.split(/[\/,;]/).map((s) => s.trim().toLowerCase()).filter(Boolean);
-    slashParts.forEach((sp) => {
-      if (!targetWords.includes(sp)) targetWords.push(sp);
-    });
+    const targetWords = Array.from(
+      new Set([
+        matchedEnglish,
+        ...qTerms,
+        ...extractNormalizedTerms(matchedEnglish),
+      ])
+    );
 
     const list: {
       dict: Dictionary;
@@ -346,24 +467,17 @@ export function KenyanTranslatorTool() {
       if (!dict) return;
       let found: DictEntry | null = null;
 
-      // Pass 1: Exact headword or synonym match (stripping parenthetical notes)
       for (const cat of dict.categories) {
         for (const entry of cat.entries) {
-          const engRaw = entry.english.toLowerCase().trim();
-          const engClean = cleanTerm(entry.english);
-          const engParts = engClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
-          const transClean = cleanTerm(entry.translation);
-          const transParts = transClean.split(/[\/,;]/).map((s) => s.trim()).filter(Boolean);
+          const engTerms = extractNormalizedTerms(entry.english);
+          const transTerms = extractNormalizedTerms(entry.translation);
 
           if (
             targetWords.some(
               (tw) =>
-                engRaw === tw ||
-                engClean === tw ||
-                engParts.includes(tw) ||
-                engParts.includes(`to ${tw}`) ||
-                transClean === tw ||
-                transParts.includes(tw)
+                entry.english.toLowerCase().trim() === tw ||
+                engTerms.includes(tw) ||
+                transTerms.includes(tw)
             )
           ) {
             found = entry;
@@ -373,16 +487,15 @@ export function KenyanTranslatorTool() {
         if (found) break;
       }
 
-      // Pass 2: Only match multi-word phrases if the user searched a multi-word phrase
       if (!found) {
         for (const cat of dict.categories) {
           for (const entry of cat.entries) {
-            const engClean = cleanTerm(entry.english);
+            const engTerms = extractNormalizedTerms(entry.english);
             if (
-              targetWords.some((tw) => {
-                if (!tw.includes(" ")) return false;
-                return engClean.includes(tw);
-              })
+              targetWords.some(
+                (tw) =>
+                  tw.includes(" ") && engTerms.some((et) => et.includes(tw))
+              )
             ) {
               found = entry;
               break;
@@ -398,7 +511,6 @@ export function KenyanTranslatorTool() {
     return list;
   }, [searchQuery, viewMode, compareLanguages]);
 
-  // Total dictionary entries
   const totalEntriesCount = useMemo(() => {
     return ALL_DICTS.reduce(
       (sum, d) => sum + d.categories.reduce((s, c) => s + c.entries.length, 0),
@@ -406,15 +518,14 @@ export function KenyanTranslatorTool() {
     );
   }, []);
 
-  // Category browser entries
   const categoryEntries = useMemo(() => {
-    if (!targetDict) return [];
-    const cat = targetDict.categories.find((c) => c.id === activeCategory);
+    if (!browseDict) return [];
+    const cat = browseDict.categories.find((c) => c.id === activeCategory);
     return cat ? cat.entries : [];
-  }, [targetDict, activeCategory]);
+  }, [browseDict, activeCategory]);
 
   const handleOpenContribute = (defaultEng?: string) => {
-    setContribLang(targetDict?.languageName?.split("(")[0]?.trim() || "Swahili");
+    setContribLang(browseDict?.languageName?.split("(")[0]?.trim() || "Swahili");
     setContribEnglish(defaultEng || searchQuery || "");
     setContribTranslation("");
     setContribPronounce("");
@@ -453,7 +564,6 @@ export function KenyanTranslatorTool() {
 
   return (
     <View style={styles.toolWrap}>
-      {/* Toast */}
       {toastMessage && (
         <View style={styles.toastBox}>
           <Ionicons name="checkmark-circle" size={16} color={theme.kenyaGreenLight} />
@@ -474,8 +584,8 @@ export function KenyanTranslatorTool() {
         </View>
         <View style={styles.statDivider} />
         <View style={styles.statItem}>
-          <Text style={styles.statNumber}>42+</Text>
-          <Text style={styles.statCaption}>Dialect Groups</Text>
+          <Text style={styles.statNumber}>Any ↔ Any</Text>
+          <Text style={styles.statCaption}>English Bridge</Text>
         </View>
       </View>
 
@@ -533,12 +643,12 @@ export function KenyanTranslatorTool() {
         </View>
       )}
 
-      {/* 3 Main View Tabs (Standalone Horizontal Pills) */}
+      {/* 3 Main View Tabs */}
       <View style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 2 }}>
         {(
           [
             { id: "translate" as const, label: "Translate" },
-            { id: "compare" as const, label: "Compare (13)" },
+            { id: "compare" as const, label: `Compare (${ALL_DICTS.length})` },
             { id: "browse" as const, label: "Categories" },
           ]
         ).map((tab) => {
@@ -575,15 +685,28 @@ export function KenyanTranslatorTool() {
         <View style={styles.modeWrap}>
           {/* Language Pair Selector */}
           <View style={styles.langPairRow}>
-            {/* Source */}
-            <View style={styles.langPickerBox}>
-              <Text style={styles.langPickerLabel}>From</Text>
-              <Text style={styles.langPickerValue}>
-                {sourceLanguage === "english"
-                  ? "English"
-                  : sourceDict?.languageName?.split("(")[0]?.trim() || "English"}
-              </Text>
-            </View>
+            {/* Source (Tap to change source language) */}
+            <Pressable
+              onPress={() => {
+                setShowSourcePicker((v) => !v);
+                setShowTargetPicker(false);
+              }}
+              style={styles.langPickerBox}
+            >
+              <Text style={styles.langPickerLabel}>From (Tap to change)</Text>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginTop: 2 }}>
+                <Text style={[styles.langPickerValue, { marginTop: 0 }]}>
+                  {sourceLanguage === "english"
+                    ? "English"
+                    : sourceDict?.languageName?.split("(")[0]?.trim() || "English"}
+                </Text>
+                <Ionicons
+                  name={showSourcePicker ? "chevron-up" : "chevron-down"}
+                  size={14}
+                  color={theme.gold}
+                />
+              </View>
+            </Pressable>
 
             {/* Swap Button */}
             <Pressable onPress={swapLanguages} style={styles.swapBtn} hitSlop={10}>
@@ -592,13 +715,18 @@ export function KenyanTranslatorTool() {
 
             {/* Target (Tap to switch target language) */}
             <Pressable
-              onPress={() => setShowTargetPicker((v) => !v)}
+              onPress={() => {
+                setShowTargetPicker((v) => !v);
+                setShowSourcePicker(false);
+              }}
               style={styles.langPickerBox}
             >
               <Text style={styles.langPickerLabel}>To (Tap to change)</Text>
               <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginTop: 2 }}>
                 <Text style={[styles.langPickerValue, { marginTop: 0 }]}>
-                  {targetLanguage === "english"
+                  {targetLanguage === "all"
+                    ? `All (${ALL_DICTS.length})`
+                    : targetLanguage === "english"
                     ? "English"
                     : targetDict?.languageName?.split("(")[0]?.trim() || "Swahili"}
                 </Text>
@@ -611,9 +739,115 @@ export function KenyanTranslatorTool() {
             </Pressable>
           </View>
 
-          {/* Target Language Selection Pills (Collapsible so it never fills the screen) */}
+          {/* Source Language Selection Pills */}
+          {showSourcePicker && (
+            <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
+              <Pressable
+                onPress={() => {
+                  setSourceLanguage("english");
+                  setShowSourcePicker(false);
+                }}
+                style={[
+                  styles.langChip,
+                  sourceLanguage === "english" && {
+                    backgroundColor: theme.gold,
+                    borderColor: theme.gold,
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.langChipText,
+                    sourceLanguage === "english" && {
+                      color: theme.kenyaBlack,
+                      fontWeight: "800",
+                    },
+                  ]}
+                >
+                  English
+                </Text>
+              </Pressable>
+              {ALL_DICTS.map((d) => {
+                const active = d.languageId === sourceLanguage;
+                return (
+                  <Pressable
+                    key={d.languageId}
+                    onPress={() => {
+                      setSourceLanguage(d.languageId);
+                      setShowSourcePicker(false);
+                    }}
+                    style={[
+                      styles.langChip,
+                      active && { backgroundColor: theme.gold, borderColor: theme.gold },
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.langChipText,
+                        active && { color: theme.kenyaBlack, fontWeight: "800" },
+                      ]}
+                    >
+                      {d.languageName.split("(")[0].trim()}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </ExpandablePillRow>
+          )}
+
+          {/* Target Language Selection Pills */}
           {showTargetPicker && (
             <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
+              <Pressable
+                onPress={() => {
+                  setTargetLanguage("all");
+                  setShowTargetPicker(false);
+                }}
+                style={[
+                  styles.langChip,
+                  targetLanguage === "all" && {
+                    backgroundColor: theme.gold,
+                    borderColor: theme.gold,
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.langChipText,
+                    targetLanguage === "all" && {
+                      color: theme.kenyaBlack,
+                      fontWeight: "800",
+                    },
+                  ]}
+                >
+                  ✨ All ({ALL_DICTS.length})
+                </Text>
+              </Pressable>
+              <Pressable
+                onPress={() => {
+                  setTargetLanguage("english");
+                  setShowTargetPicker(false);
+                }}
+                style={[
+                  styles.langChip,
+                  targetLanguage === "english" && {
+                    backgroundColor: theme.gold,
+                    borderColor: theme.gold,
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.langChipText,
+                    targetLanguage === "english" && {
+                      color: theme.kenyaBlack,
+                      fontWeight: "800",
+                    },
+                  ]}
+                >
+                  English
+                </Text>
+              </Pressable>
               {ALL_DICTS.map((d) => {
                 const active = d.languageId === targetLanguage;
                 return (
@@ -621,7 +855,6 @@ export function KenyanTranslatorTool() {
                     key={d.languageId}
                     onPress={() => {
                       setTargetLanguage(d.languageId);
-                      if (sourceLanguage !== "english") setSourceLanguage("english");
                       setShowTargetPicker(false);
                     }}
                     style={[
@@ -698,6 +931,8 @@ export function KenyanTranslatorTool() {
                 const isFav = favorites.includes(
                   `${item.languageId}:${item.entry.english}`
                 );
+                const isReverseToEnglish =
+                  sourceLanguage !== "english" && targetLanguage === "english";
                 return (
                   <View key={idx} style={styles.resultCard}>
                     <View style={styles.resultHeader}>
@@ -732,7 +967,6 @@ export function KenyanTranslatorTool() {
                         </View>
                       </View>
 
-                      {/* Favorite Button */}
                       <Pressable
                         onPress={() =>
                           toggleFavorite(`${item.languageId}:${item.entry.english}`)
@@ -747,12 +981,19 @@ export function KenyanTranslatorTool() {
                       </Pressable>
                     </View>
 
-                    {/* Translations */}
                     <Text style={styles.resultTranslation}>
-                      {item.entry.translation}
+                      {isReverseToEnglish
+                        ? item.entry.english
+                        : item.entry.translation}
                     </Text>
                     <Text style={styles.resultEnglish}>
-                      {item.entry.english}
+                      {item.sourceEntry && sourceDict
+                        ? `${sourceDict.languageName.split("(")[0].trim()}: ${
+                            item.sourceEntry.translation
+                          } → English: "${item.pivotEnglish}"`
+                        : isReverseToEnglish
+                        ? item.entry.translation
+                        : item.entry.english}
                     </Text>
 
                     {item.entry.pronunciation ? (
@@ -800,11 +1041,10 @@ export function KenyanTranslatorTool() {
             </View>
           )}
 
-          {/* If search query is empty: show quick suggestions */}
           {searchQuery.trim().length === 0 && (
             <View style={styles.quickPromptBox}>
               <Text style={styles.quickPromptTitle}>
-                Popular phrases to translate:
+                Popular words to translate across {ALL_DICTS.length} languages:
               </Text>
               <View style={styles.popularRow}>
                 {POPULAR_COMPARE_WORDS.slice(0, 8).map((word) => (
@@ -826,10 +1066,9 @@ export function KenyanTranslatorTool() {
       {viewMode === "compare" && (
         <View style={styles.modeWrap}>
           <Text style={styles.modeDescription}>
-            Compare how a word or concept is expressed across all 13 Kenyan indigenous languages.
+            Compare how a word or concept is expressed across all {ALL_DICTS.length} Kenyan indigenous languages.
           </Text>
 
-          {/* Quick word pills */}
           <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
             {POPULAR_COMPARE_WORDS.map((w) => {
               const active = searchQuery.toLowerCase() === w.toLowerCase();
@@ -855,7 +1094,6 @@ export function KenyanTranslatorTool() {
             })}
           </ExpandablePillRow>
 
-          {/* Search Input */}
           <View style={styles.searchBar}>
             <Ionicons name="search" size={18} color={theme.textMuted} />
             <TextInput
@@ -872,7 +1110,6 @@ export function KenyanTranslatorTool() {
             )}
           </View>
 
-          {/* Comparison Cards Grid */}
           {searchQuery.trim().length > 0 ? (
             <View style={styles.comparisonGrid}>
               {comparisonResults.map(({ dict, entry }) => {
@@ -909,7 +1146,7 @@ export function KenyanTranslatorTool() {
                           </Text>
                         ) : null}
                         {entry.context ? (
-                          <Text style={styles.compareContext} >
+                          <Text style={styles.compareContext}>
                             {entry.context}
                           </Text>
                         ) : null}
@@ -940,7 +1177,7 @@ export function KenyanTranslatorTool() {
               <Ionicons name="sparkles-outline" size={28} color={theme.gold} />
               <Text style={styles.promptHelperText}>
                 Tap any word chip above or enter an English or Kenyan word to see
-                all 13 translations side-by-side!
+                all {ALL_DICTS.length} translations side-by-side!
               </Text>
             </View>
           )}
@@ -950,10 +1187,9 @@ export function KenyanTranslatorTool() {
       {/* ────────────────── 3. BROWSE BY CATEGORY ────────────────── */}
       {viewMode === "browse" && (
         <View style={styles.modeWrap}>
-          {/* Target Language Selection Pills */}
           <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
             {ALL_DICTS.map((d) => {
-              const active = d.languageId === targetLanguage;
+              const active = d.languageId === browseDict.languageId;
               return (
                 <Pressable
                   key={d.languageId}
@@ -976,9 +1212,8 @@ export function KenyanTranslatorTool() {
             })}
           </ExpandablePillRow>
 
-          {/* Category Chips */}
           <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
-            {targetDict.categories.map((c) => {
+            {browseDict.categories.map((c) => {
               const active = c.id === activeCategory;
               return (
                 <Pressable
@@ -1002,11 +1237,10 @@ export function KenyanTranslatorTool() {
             })}
           </ExpandablePillRow>
 
-          {/* Entries for selected category */}
           <View style={styles.resultsWrap}>
             <Text style={styles.resultsCount}>
               Showing {categoryEntries.length} phrases in{" "}
-              {targetDict.languageName.split("(")[0].trim()}
+              {browseDict.languageName.split("(")[0].trim()}
             </Text>
 
             {categoryEntries.map((e, idx) => (
@@ -1015,19 +1249,19 @@ export function KenyanTranslatorTool() {
                   <Text style={styles.resultEnglish}>{e.english}</Text>
                   <Pressable
                     onPress={() =>
-                      toggleFavorite(`${targetDict.languageId}:${e.english}`)
+                      toggleFavorite(`${browseDict.languageId}:${e.english}`)
                     }
                     hitSlop={8}
                   >
                     <Ionicons
                       name={
-                        favorites.includes(`${targetDict.languageId}:${e.english}`)
+                        favorites.includes(`${browseDict.languageId}:${e.english}`)
                           ? "star"
                           : "star-outline"
                       }
                       size={18}
                       color={
-                        favorites.includes(`${targetDict.languageId}:${e.english}`)
+                        favorites.includes(`${browseDict.languageId}:${e.english}`)
                           ? theme.gold
                           : theme.textMuted
                       }
@@ -1286,36 +1520,6 @@ const createStyles = (theme: ThemeColors) =>
     },
     familyPillText: {
       fontSize: 10,
-      fontWeight: "800",
-    },
-    tabBar: {
-      flexDirection: "row",
-      backgroundColor: theme.bgCard,
-      borderRadius: 12,
-      borderWidth: 1,
-      borderColor: theme.border,
-      padding: 4,
-      gap: 4,
-    },
-    tabBtn: {
-      flex: 1,
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: 6,
-      paddingVertical: 8,
-      borderRadius: 8,
-    },
-    tabBtnActive: {
-      backgroundColor: theme.gold,
-    },
-    tabBtnText: {
-      fontSize: 12,
-      fontWeight: "700",
-      color: theme.textSecondary,
-    },
-    tabBtnTextActive: {
-      color: theme.kenyaBlack,
       fontWeight: "800",
     },
     modeWrap: {

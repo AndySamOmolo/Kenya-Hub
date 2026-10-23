@@ -1,0 +1,1315 @@
+{
+  "languageId": "borana",
+  "languageName": "Borana (Oromo)",
+  "family": "cushitic",
+  "nativeName": "Afaan Borana / Afaan Oromoo",
+  "script": "Latin",
+  "speakerCount": 350000,
+  "counties": [
+    "Marsabit",
+    "Isiolo",
+    "Tana River (Orma)",
+    "Garissa"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Borana / Oromo (Afaan Borana / Afaan Oromoo) dictionary compiled from Karl Tutschek ('Dictionary of the Galla Language', Munich, 1844 — Public Domain), Wiktionary's Afroasiatic Swadesh list, and Wikipedia's Oromo language grammatical & lexical tables.",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / Peace be with you",
+          "translation": "Nagaa / Baga nagaan dhufte",
+          "pronunciation": "na-gaa",
+          "context": "Borana / Oromo traditional greeting ('Peace')",
+          "audioFile": null
+        },
+        {
+          "english": "How are you? (Do you have peace?)",
+          "translation": "Nagaa qabdaa? / Akkam jirta?",
+          "pronunciation": "na-gaa qab-daa / ak-kam jir-ta",
+          "context": "Borana / Oromo greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / Everything is peaceful",
+          "translation": "Nagaa / Naguma",
+          "pronunciation": "na-gaa / na-gu-ma",
+          "context": "Borana / Oromo response",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning (Did you spend the night in peace?)",
+          "translation": "Bulte nagaa? / Akkam bulte?",
+          "pronunciation": "bul-te na-gaa",
+          "context": "Borana / Oromo morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Good afternoon / How was your day?",
+          "translation": "Oolte nagaa? / Akkam oolte?",
+          "pronunciation": "ool-te na-gaa",
+          "context": "Borana / Oromo daytime greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Galatoomi (sg.) / Galatoomaa (pl.)",
+          "pronunciation": "ga-la-too-mi",
+          "context": "Borana / Oromo expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Baga nagaan dhufte",
+          "pronunciation": "ba-ga na-gaan dhuf-te",
+          "context": "Borana / Oromo welcome",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye (Stay in peace)",
+          "translation": "Nagaatti",
+          "pronunciation": "na-gaat-ti",
+          "context": "Borana / Oromo farewell",
+          "audioFile": null
+        },
+        {
+          "english": "Yes",
+          "translation": "Eeyyee / Ee",
+          "pronunciation": "eey-yee",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "No / Not",
+          "translation": "Lakki / Haa'a / ii'ii",
+          "pronunciation": "lak-ki / ii-ii",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "tokko",
+          "pronunciation": "tok-ko",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "lama",
+          "pronunciation": "la-ma",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "sadii",
+          "pronunciation": "sa-dii",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "afur",
+          "pronunciation": "a-fur",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "shan",
+          "pronunciation": "shan",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "jaha / ja'a",
+          "pronunciation": "ja-ha",
+          "context": "Wikipedia Southern_Nilotic_languages — East Cushitic cognates",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "torba",
+          "pronunciation": "tor-ba",
+          "context": "Borana / Oromo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "saddeet",
+          "pronunciation": "sad-deet",
+          "context": "Borana / Oromo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "sagal",
+          "pronunciation": "sa-gal",
+          "context": "Wikipedia Southern_Nilotic_languages — East Cushitic cognates",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "kudhan",
+          "pronunciation": "ku-dhan",
+          "context": "Borana / Oromo numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "dhibba",
+          "pronunciation": "dhib-ba",
+          "context": "Borana / Oromo numerals",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Person / Human being",
+          "translation": "nama (pl. namoota)",
+          "pronunciation": "na-ma (pl. na-moo-ta)",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "abbaa",
+          "pronunciation": "ab-baa",
+          "context": "Wikipedia Oromo_language & Tutschek (1844)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "haadha (nom. haati)",
+          "pronunciation": "haa-dha",
+          "context": "Wikipedia Oromo_language & Tutschek (1844)",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "mucaa / ijoollee",
+          "pronunciation": "mu-caa / i-jool-lee",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Son",
+          "translation": "ilma (pl. ilmaan)",
+          "pronunciation": "il-ma (pl. il-maan)",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Daughter / Girl",
+          "translation": "intala",
+          "pronunciation": "in-ta-la",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "obboleessa",
+          "pronunciation": "ob-bo-lees-sa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "obboleettii",
+          "pronunciation": "ob-bo-leet-tii",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband",
+          "translation": "dhiira / abbaa warraa",
+          "pronunciation": "dhii-ra",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "dubartii / niitii / haadha warraa",
+          "pronunciation": "du-bar-tii / nii-tii",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "hiriyaa (pl. hiriyoota)",
+          "pronunciation": "hi-ri-yaa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Teacher",
+          "translation": "barsiisaa (pl. barsiisota)",
+          "pronunciation": "bar-sii-saa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Priest / Spiritual leader",
+          "translation": "qaalluu (m. qaallicha / f. qaallittii)",
+          "pronunciation": "qaal-luu",
+          "context": "Wikipedia Oromo_language — Borana/Oromo Qaallu institution",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "maqaa (nom. maqaan)",
+          "pronunciation": "ma-qaa",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "God / Sky",
+          "translation": "Waaqa",
+          "pronunciation": "waa-qa",
+          "context": "Wiktionary Afroasiatic Swadesh list & Tutschek (1844)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "mataa",
+          "pronunciation": "ma-taa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "ija",
+          "pronunciation": "i-ja",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "gurra",
+          "pronunciation": "gur-ra",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "funyaan (fuññaan)",
+          "pronunciation": "fun-yaan",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / Language",
+          "translation": "afaan",
+          "pronunciation": "a-faan",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "ilkaan",
+          "pronunciation": "il-kaan",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "arraba",
+          "pronunciation": "ar-ra-ba",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Fingernail / Claw",
+          "translation": "qeensa",
+          "pronunciation": "qeen-sa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Foot / Leg",
+          "translation": "miilla / luka / hojjaa",
+          "pronunciation": "miil-la / lu-ka",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "jilba",
+          "pronunciation": "jil-ba",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "harka (instr. harkaan)",
+          "pronunciation": "har-ka",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Belly / Stomach",
+          "translation": "garaa",
+          "pronunciation": "ga-raa",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Guts / Intestines",
+          "translation": "mar'umaan",
+          "pronunciation": "mar-u-maan",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Neck / Throat",
+          "translation": "qoosee / morma",
+          "pronunciation": "qoo-see / mor-ma",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "dugda",
+          "pronunciation": "dug-da",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "harma",
+          "pronunciation": "har-ma",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "onnee",
+          "pronunciation": "on-nee",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Liver",
+          "translation": "tiruu",
+          "pronunciation": "ti-ruu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "dhiiga (d'iiga)",
+          "pronunciation": "dhii-ga",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "lafee",
+          "pronunciation": "la-fee",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Skin / Hide",
+          "translation": "gogaa / ittillee",
+          "pronunciation": "go-gaa / it-til-lee",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Fat (noun)",
+          "translation": "moora",
+          "pronunciation": "moo-ra",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Cow / Cattle",
+          "translation": "loon / sa'a",
+          "pronunciation": "loon / sa-a",
+          "context": "Borana / Oromo pastoral vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Ox / Bull",
+          "translation": "sangaa / ooroo",
+          "pronunciation": "san-gaa / oo-roo",
+          "context": "Wikipedia Oromo_language & Southern_Nilotic_languages",
+          "audioFile": null
+        },
+        {
+          "english": "Camel",
+          "translation": "gaala",
+          "pronunciation": "gaa-la",
+          "context": "Borana / Oromo pastoral vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "re'ee",
+          "pronunciation": "re-ee",
+          "context": "Borana / Oromo pastoral vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "hoolaa",
+          "pronunciation": "hoo-laa",
+          "context": "Borana / Oromo pastoral vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "saree",
+          "pronunciation": "sa-ree",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "simbirroo / cirrii (c'irrii)",
+          "pronunciation": "sim-bir-roo / cir-rii",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "qurxummii (qurt'ummii)",
+          "pronunciation": "qur-xum-mii",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "bofa / mar'ataa / shaawwisa",
+          "pronunciation": "bo-fa / mar-a-taa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Louse",
+          "translation": "cinii (c'inii) / injiraan",
+          "pronunciation": "ci-nii / in-ji-raan",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "leenca",
+          "pronunciation": "leen-ca",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "arba",
+          "pronunciation": "ar-ba",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "killee / buuphaa (bup'p'aa)",
+          "pronunciation": "kil-lee",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Horn",
+          "translation": "gaafa",
+          "pronunciation": "gaa-fa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Tail",
+          "translation": "eegee",
+          "pronunciation": "ee-gee",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "bishaan (bisaan)",
+          "pronunciation": "bi-shaan / bi-saan",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "aduu",
+          "pronunciation": "a-duu",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "urjii",
+          "pronunciation": "ur-jii",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "ji'a / baatii",
+          "pronunciation": "ji-a / baa-tii",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Sky / God",
+          "translation": "waaqa",
+          "pronunciation": "waa-qa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "duumessa",
+          "pronunciation": "duu-mes-sa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "rooba / bokkaa",
+          "pronunciation": "roo-ba / bok-kaa",
+          "context": "Wikipedia Southern_Nilotic_languages & Borana/Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "qilleensa",
+          "pronunciation": "qil-leen-sa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "ibidda / bobaa / giimii",
+          "pronunciation": "i-bid-da",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "aara",
+          "pronunciation": "aa-ra",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Ash",
+          "translation": "barbadaa / daaraa",
+          "pronunciation": "bar-ba-daa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Land / Ground",
+          "translation": "lafa (nom. lafti) / biyya",
+          "pronunciation": "la-fa / biy-ya",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "gaara / tulluu",
+          "pronunciation": "gaa-ra / tul-luu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "laga (pl. laggeen)",
+          "pronunciation": "la-ga (pl. lag-geen)",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Lake",
+          "translation": "haroo (def. harittii) / hara",
+          "pronunciation": "ha-roo / ha-ra",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Wood",
+          "translation": "muka",
+          "pronunciation": "mu-ka",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "daggala / baqqoo / bosona",
+          "pronunciation": "dag-ga-la",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Leaf",
+          "translation": "baala",
+          "pronunciation": "baa-la",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Flower",
+          "translation": "daraaraa",
+          "pronunciation": "da-raa-raa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "marga / ees",
+          "pronunciation": "mar-ga",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Seed",
+          "translation": "sanyii (saññii) / garii",
+          "pronunciation": "san-yii",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Fruit",
+          "translation": "ija mukaa",
+          "pronunciation": "i-ja mu-kaa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Road / Path",
+          "translation": "karaa (def. karicha)",
+          "pronunciation": "ka-raa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "guyyaa",
+          "pronunciation": "guy-yaa",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "halkan",
+          "pronunciation": "hal-kan",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "waggaa (pl. waggaawwan) / bara",
+          "pronunciation": "wag-gaa / ba-ra",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "kaleessa",
+          "pronunciation": "ka-lees-sa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Time",
+          "translation": "yeroo",
+          "pronunciation": "ye-roo",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "House / Home",
+          "translation": "mana (pl. manoota)",
+          "pronunciation": "ma-na (pl. ma-noo-ta)",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Market",
+          "translation": "gabaa",
+          "pronunciation": "ga-baa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Village",
+          "translation": "ganda",
+          "pronunciation": "gan-da",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Coffee",
+          "translation": "buna",
+          "pronunciation": "bu-na",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Cafe (Coffee house)",
+          "translation": "mana bunaa",
+          "pronunciation": "ma-na bu-naa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "aannan",
+          "pronunciation": "aan-nan",
+          "context": "Wikipedia Oromo_language ('Bilisummaan Aannaani')",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "foon",
+          "pronunciation": "foon",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "nyaata / midhaan",
+          "pronunciation": "nyaa-ta",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "damma",
+          "pronunciation": "dam-ma",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "soogidda",
+          "pronunciation": "soo-gid-da",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Car / Vehicle",
+          "translation": "konkolaataa",
+          "pronunciation": "kon-ko-laa-taa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Job / Work",
+          "translation": "hojii",
+          "pronunciation": "ho-jii",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Education / Study",
+          "translation": "barumsa",
+          "pronunciation": "ba-rum-sa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Eat",
+          "translation": "nyachuu (nyaadhu)",
+          "pronunciation": "nya-chuu",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "dhuguu (dhug-)",
+          "pronunciation": "dhu-guu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "dhufuu (dhuf-)",
+          "pronunciation": "dhu-fuu",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Go / Walk",
+          "translation": "adeemuu / deemuu",
+          "pronunciation": "a-dee-muu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "arguu (arga)",
+          "pronunciation": "ar-guu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Hear",
+          "translation": "dhaga'uu (dhaga'a)",
+          "pronunciation": "dha-ga-uu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Know",
+          "translation": "beekuu (beek-)",
+          "pronunciation": "bee-kuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Learn",
+          "translation": "baruu",
+          "pronunciation": "ba-ruu",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Say / Tell",
+          "translation": "jedhuu (jedh-) / himuu (himi)",
+          "pronunciation": "je-dhuu / hi-muu",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "rafuu (rafa)",
+          "pronunciation": "ra-fuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Lie down",
+          "translation": "ciisuu (c'iisa)",
+          "pronunciation": "cii-suu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Stand",
+          "translation": "dhaabachuu (d'aabad'd'a) / ijaajuu",
+          "pronunciation": "dhaa-ba-chuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Live / Remain",
+          "translation": "jiraachuu / raaguu",
+          "pronunciation": "ji-raa-chuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Die",
+          "translation": "du'uu (du'a)",
+          "pronunciation": "du-uu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Kill",
+          "translation": "ajjeesuu (ajjeesa) / qaluu",
+          "pronunciation": "aj-jee-suu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Give",
+          "translation": "kennuu (kenna)",
+          "pronunciation": "ken-nuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Buy",
+          "translation": "bituu (binne = we bought)",
+          "pronunciation": "bi-tuu",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Have / Possess",
+          "translation": "qabaachuu (qaba = he has)",
+          "pronunciation": "qa-baa-chuu",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Come out / Exit",
+          "translation": "bawuu",
+          "pronunciation": "ba-wuu",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Laugh",
+          "translation": "kolfuu (kolfa)",
+          "pronunciation": "kol-fuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Blow",
+          "translation": "afuufuu (afuufa / buufa)",
+          "pronunciation": "a-fuu-fuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Suck",
+          "translation": "hodhuu (hod'a) / xuuxuu",
+          "pronunciation": "ho-dhuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Fear",
+          "translation": "na'uu (na'a) / sodaachuu",
+          "pronunciation": "na-uu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Hunt",
+          "translation": "adamo / adamuu",
+          "pronunciation": "a-da-muu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Swim",
+          "translation": "daakuu (daaka)",
+          "pronunciation": "daa-kuu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Fly",
+          "translation": "barrisuu (barrisa / barara)",
+          "pronunciation": "bar-ri-suu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Pull",
+          "translation": "harkisuu (harkisa)",
+          "pronunciation": "har-ki-suu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Push",
+          "translation": "dhiibuu (dhiib-)",
+          "pronunciation": "dhii-buu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Sew",
+          "translation": "erbuu (erba) / hodhuu",
+          "pronunciation": "er-buu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives, Pronouns & Grammar",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "I / Me",
+          "translation": "ani / an (obj. ana / na)",
+          "pronunciation": "a-ni / a-na",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "ati (obj. si)",
+          "pronunciation": "a-ti / si",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "He",
+          "translation": "inni (obj. isa)",
+          "pronunciation": "in-ni / i-sa",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "She",
+          "translation": "ishiin / isiin (obj. ishii / isii)",
+          "pronunciation": "i-shiin / i-shii",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "We / Us",
+          "translation": "nuti / nuy (obj. nu)",
+          "pronunciation": "nu-ti / nu",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "You (plural)",
+          "translation": "isini (obj. isin)",
+          "pronunciation": "i-si-ni / i-sin",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "They / Them",
+          "translation": "isaani (obj. isaan)",
+          "pronunciation": "i-saa-ni / i-saan",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "My / Mine",
+          "translation": "koo / kiyya (m.) ; too / tiyya (f.)",
+          "pronunciation": "koo / kiy-ya",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Your (singular)",
+          "translation": "kee (m.) / tee (f.)",
+          "pronunciation": "kee / tee",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Our",
+          "translation": "keenna / keenya (m.) ; teenna / teenya (f.)",
+          "pronunciation": "keen-ya",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "This",
+          "translation": "kana (m.) / tana (f.)",
+          "pronunciation": "ka-na / ta-na",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "That",
+          "translation": "san / sana",
+          "pronunciation": "san / sa-na",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Who",
+          "translation": "eenyu (eeññu)",
+          "pronunciation": "een-yu",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "What",
+          "translation": "maal",
+          "pronunciation": "maal",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "All",
+          "translation": "hundaa",
+          "pronunciation": "hun-daa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Other / Another",
+          "translation": "biraa",
+          "pronunciation": "bi-raa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Wide",
+          "translation": "bal'aa / booccoo",
+          "pronunciation": "bal-aa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "diimaa",
+          "pronunciation": "dii-maa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Green",
+          "translation": "bifa margaa",
+          "pronunciation": "bi-fa mar-gaa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Yellow",
+          "translation": "boora",
+          "pronunciation": "boo-ra",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "adii",
+          "pronunciation": "a-dii",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "gurraacha (gur'aaccaa)",
+          "pronunciation": "gur-raa-cha",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Warm / Hot",
+          "translation": "o'aa / buluqaa",
+          "pronunciation": "o-aa / bu-lu-qaa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Cold",
+          "translation": "qorraa",
+          "pronunciation": "qor-raa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "New",
+          "translation": "haaraa",
+          "pronunciation": "haa-raa",
+          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "audioFile": null
+        },
+        {
+          "english": "Old",
+          "translation": "moofaa / dulloomaa",
+          "pronunciation": "moo-faa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "gaarii / dansaa (Borana)",
+          "pronunciation": "gaa-rii / dan-saa",
+          "context": "Borana / Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "badaa / hamaa",
+          "pronunciation": "ba-daa",
+          "context": "Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "Wet",
+          "translation": "jiidhaa (jiid'aa)",
+          "pronunciation": "jii-dhaa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Near",
+          "translation": "dhiyoo (d'i'oo)",
+          "pronunciation": "dhi-yoo",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Far",
+          "translation": "fagoo",
+          "pronunciation": "fa-goo",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Right (direction)",
+          "translation": "mirga",
+          "pronunciation": "mir-ga",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "Left (direction)",
+          "translation": "bitaa",
+          "pronunciation": "bi-taa",
+          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:25:17.170Z",
+  "generatedAt": "2026-10-23T08:03:28.993Z",
   "summary": {
     "registryTools": 44,
     "routeDirectories": 44,
@@ -422,7 +422,7 @@
       "routeExists": true,
       "sourceUrl": null,
       "maxAgeDays": 365,
-      "ageDays": 3,
+      "ageDays": 0,
       "data": [
         {
           "file": "src/data/dictionaries/swahili.json",
@@ -488,6 +488,51 @@
           "file": "src/data/dictionaries/teso.json",
           "lastUpdated": "2026-10-20",
           "source": "Public Domain Dictionary Scaffold"
+        },
+        {
+          "file": "src/data/dictionaries/embu.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
+        },
+        {
+          "file": "src/data/dictionaries/taita.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
+        },
+        {
+          "file": "src/data/dictionaries/samburu.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
+        },
+        {
+          "file": "src/data/dictionaries/borana.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
+        },
+        {
+          "file": "src/data/dictionaries/rendille.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
+        },
+        {
+          "file": "src/data/dictionaries/pokomo.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
+        },
+        {
+          "file": "src/data/dictionaries/ilchamus.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
+        },
+        {
+          "file": "src/data/dictionaries/pokot.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
+        },
+        {
+          "file": "src/data/dictionaries/taveta.json",
+          "lastUpdated": "2026-10-23",
+          "source": null
         },
         {
           "file": "src/data/kenya-languages.json",

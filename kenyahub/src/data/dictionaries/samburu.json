@@ -1,0 +1,1476 @@
+{
+  "languageId": "samburu",
+  "languageName": "Samburu (Sampur)",
+  "family": "nilotic",
+  "nativeName": "Sampur / ɔl Maa",
+  "script": "Latin",
+  "speakerCount": 310000,
+  "counties": [
+    "Samburu",
+    "Marsabit",
+    "Isiolo",
+    "Laikipia"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "contributorNote": "Samburu (Sampur / North Maa) dictionary compiled from Rainer Vossen ('The Eastern Nilotes: Linguistic and Historical Reconstructions', 1982), Wikipedia Nilotic & Eastern Nilotic comparative tables, and Unicode CLDR (saq.xml).",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Common Phrases",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Hello / Greetings",
+          "translation": "Sopa / Supa",
+          "pronunciation": "soh-pah",
+          "context": "Standard daily greeting among the Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (Reply)",
+          "translation": "Epa / Ipa",
+          "pronunciation": "eh-pah",
+          "context": "Standard response to 'Sopa' in Samburu",
+          "audioFile": null
+        },
+        {
+          "english": "Greetings to elders / Respectful greeting",
+          "translation": "Chamge / Nabo",
+          "pronunciation": "nah-boh",
+          "context": "Samburu respectful address",
+          "audioFile": null
+        },
+        {
+          "english": "How are you? (How are the children and cattle?)",
+          "translation": "Kejaa ngera oo nkishu?",
+          "pronunciation": "keh-jaa ngeh-rah oo nki-shu",
+          "context": "Pastoral greeting inquiring after family and herds",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / Serenity",
+          "translation": "Serian",
+          "pronunciation": "seh-ri-an",
+          "context": "North Maa greeting & blessing ('Peace')",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Ashe / Ashe oleng",
+          "pronunciation": "ah-sheh oh-leng",
+          "context": "Samburu expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye / Stay in peace",
+          "translation": "Kiserian",
+          "pronunciation": "ki-seh-ri-an",
+          "context": "Samburu farewell",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "naɓô (fem.) / oɓô (masc.) / noɓô (place)",
+          "pronunciation": "na-bo / o-bo",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "aré (fem.) / waáre (masc.)",
+          "pronunciation": "a-re / waa-re",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "uní (fem.) / okúni (masc.)",
+          "pronunciation": "u-ni / o-ku-ni",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "onɠwán (fem.) / oónɠwan (masc.)",
+          "pronunciation": "on-gwan",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "ímɟêt / ímʄêt",
+          "pronunciation": "im-jet",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "ílê",
+          "pronunciation": "i-le",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "sápâ",
+          "pronunciation": "sa-pa",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "ísɟêt / ísʄêt",
+          "pronunciation": "is-jet",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "sâːl",
+          "pronunciation": "saal",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "tômôn",
+          "pronunciation": "to-mon",
+          "context": "Wikipedia Nilotic_languages — Samburu numerals",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "People, Family & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Person / People (Owners of the land)",
+          "translation": "ltung'ani (pl. ltung'ana) / Lokop",
+          "pronunciation": "ltung'ani / lo-kop",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "papa / menye",
+          "pronunciation": "pa-pa / me-nye",
+          "context": "Samburu (North Maa) kinship",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "yeyo / ng'oto",
+          "pronunciation": "ye-yo / ng'o-to",
+          "context": "Samburu (North Maa) kinship",
+          "audioFile": null
+        },
+        {
+          "english": "Child / Children",
+          "translation": "nkerai (pl. ngera)",
+          "pronunciation": "nke-rai (pl. ngera)",
+          "context": "Samburu (North Maa) kinship",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior / Youth",
+          "translation": "lmurrani (pl. lmurran)",
+          "pronunciation": "lmur-ra-ni (pl. lmur-ran)",
+          "context": "Samburu age-set warrior",
+          "audioFile": null
+        },
+        {
+          "english": "Elder / Man",
+          "translation": "lpayian (pl. lpayiani)",
+          "pronunciation": "lpa-yian",
+          "context": "Samburu married elder",
+          "audioFile": null
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "ng'oroyioni (pl. ng'oroyok)",
+          "pronunciation": "ng'o-ro-yio-ni",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "lchore (pl. lchoreta)",
+          "pronunciation": "lcho-re",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Nkai",
+          "pronunciation": "nkai",
+          "context": "Samburu (North Maa) Supreme Being",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "ŋ-kárn-á (nkárná)",
+          "pronunciation": "nkar-na",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Eye",
+          "translation": "ŋ-kɔŋ-ʊ́ (nkong'u)",
+          "pronunciation": "nkong-u",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "ŋ-kɪ́-yyɔk (nkiyyok)",
+          "pronunciation": "nkiy-yok",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "ŋ-kwar-íé (nkwarie)",
+          "pronunciation": "nkwa-rie",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "l-alá-ɪ̀ (lalai)",
+          "pronunciation": "la-lai",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "l-ŋɛ́jɛ́p (lng'ejep)",
+          "pronunciation": "lng'e-jep",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / Language",
+          "translation": "ŋ-kʊtʊ́k (nkutuk)",
+          "pronunciation": "nku-tuk",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "l-ɔɗɔ́ (lod'o)",
+          "pronunciation": "lo-do",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "l-óì-tò (loito)",
+          "pronunciation": "loi-to",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "lukunya",
+          "pronunciation": "lu-ku-nya",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "nkaina (pl. nkainito)",
+          "pronunciation": "nkai-na",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "lkeju (pl. lkejek)",
+          "pronunciation": "lke-ju",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "ltau (pl. ltauja)",
+          "pronunciation": "ltau",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "traditional Samburu leather carrying bag; origin of the name Samburu",
+          "translation": "saamburr (Sampur)",
+          "pronunciation": "saamburr (sampur)",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Samburu self-designation ('owners of the land')",
+          "translation": "Loikop / Lokop",
+          "pronunciation": "loikop / lokop",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "eye",
+          "translation": "ŋ-kɔŋ-ʊ́",
+          "pronunciation": "ŋ-kɔŋ-ʊ́ (samburu) / en-kong'u (maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "ear",
+          "translation": "ŋ-kɪ́-yyɔk",
+          "pronunciation": "ŋ-kɪ́-yyɔk (samburu) / en-kiok (maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "tooth",
+          "translation": "l-alá-ɪ̀",
+          "pronunciation": "l-alá-ɪ̀ (samburu) / ol-alai (maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "tongue",
+          "translation": "l-ŋɛ́jɛ́p",
+          "pronunciation": "l-ŋɛ́jɛ́p (samburu) / ol-ng'ejep (maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "mouth, language",
+          "translation": "ŋ-kʊtʊ́k",
+          "pronunciation": "ŋ-kʊtʊ́k (samburu) / en-gutyuk (maasai)",
+          "context": "Samburu & Maasai (Hollis 1905 & Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "bone",
+          "translation": "l-óì-tò",
+          "pronunciation": "l-óì-tò (samburu) / ol-oito (maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "tree, wood, herbal medicine",
+          "translation": "l-caní",
+          "pronunciation": "l-caní (samburu) / ol-chani (maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "water, stream",
+          "translation": "ŋ-kár-ɛ́",
+          "pronunciation": "ŋ-kár-ɛ́ (samburu) / en-gare (maasai)",
+          "context": "Samburu & Maasai (Hollis 1905 & Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "name",
+          "translation": "ŋ-kárn-á",
+          "pronunciation": "ŋ-kárn-á (samburu) / en-karna (maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "one (1 — feminine / masculine / place)",
+          "translation": "naɓô / oɓô / noɓô",
+          "pronunciation": "naɓô / oɓô / noɓô (samburu)",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "two (2 — feminine / masculine)",
+          "translation": "aré / waáre",
+          "pronunciation": "aré / waáre (samburu)",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "four (4 — illustrating implosive /ɠ/)",
+          "translation": "onɠwán",
+          "pronunciation": "onɠwán (samburu)",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "five (5), six (6), seven (7), eight (8), nine (9), ten (10)",
+          "translation": "ímɟêt, ílê, sápâ, ísɟêt, sâːl, tômôn",
+          "pronunciation": "ímɟêt, ílê, sápâ, ísɟêt, sâːl, tômôn",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "nose",
+          "translation": "ŋ-kwar-íé",
+          "pronunciation": "ŋ-kwar-íé (samburu)",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "blood",
+          "translation": "l-ɔɗɔ́ / osarge (Maasai)",
+          "pronunciation": "l-ɔɗɔ́ (samburu) / osarge (maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "to eat",
+          "translation": "a-ɲá (Samburu & Maasai)",
+          "pronunciation": "a-ɲá (samburu & maasai)",
+          "context": "Samburu & Maasai (Vossen 1982)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🐄",
+      "entries": [
+        {
+          "english": "Cow / Cattle",
+          "translation": "nkishu (sg. nkiteng')",
+          "pronunciation": "nki-shu / nki-teng'",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Camel",
+          "translation": "ntamesi (pl. ntamesin)",
+          "pronunciation": "nta-me-si",
+          "context": "Samburu pastoral vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "nkine (pl. nkineji)",
+          "pronunciation": "nki-ne",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "nker (pl. nkerra)",
+          "pronunciation": "nker",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "lng'atuny (pl. lng'atunyo)",
+          "pronunciation": "lng'a-tuny",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "ltome (pl. ltomia)",
+          "pronunciation": "lto-me",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "ldia (pl. ldiein)",
+          "pronunciation": "ldia",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "nkweny (pl. nkwenyi)",
+          "pronunciation": "nkweny",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "lasurai (pl. lasur)",
+          "pronunciation": "la-su-rai",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Time",
+      "icon": "🌍",
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "ŋ-kár-ɛ́ (nkare)",
+          "pronunciation": "nka-re",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Wood / Medicine",
+          "translation": "l-caní (lchani)",
+          "pronunciation": "lcha-ni",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "nkolong'",
+          "pronunciation": "nko-long'",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "lapa (pl. lapaitin)",
+          "pronunciation": "la-pa",
+          "context": "CLDR (saq.xml) & North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "nkima",
+          "pronunciation": "nki-ma",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "nchan",
+          "pronunciation": "nchan",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "ldoinyo (pl. ldoinyo)",
+          "pronunciation": "ldoi-nyo",
+          "context": "Samburu (North Maa) — e.g. Mt. Nyiro",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "lkeju / nkare",
+          "pronunciation": "lke-ju",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Land",
+          "translation": "nkop",
+          "pronunciation": "nkop",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass / Pasture",
+          "translation": "nkujit",
+          "pronunciation": "nku-jit",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "mpari",
+          "pronunciation": "mpa-ri",
+          "context": "CLDR (saq.xml) — Samburu",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "nkewarie",
+          "pronunciation": "nke-wa-rie",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "January (Month 1)",
+          "translation": "Lapa le obo (Obo)",
+          "pronunciation": "lapa le obo (obo)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "February (Month 2)",
+          "translation": "Lapa le waare (Waa)",
+          "pronunciation": "lapa le waare (waa)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "March (Month 3)",
+          "translation": "Lapa le okuni (Oku)",
+          "pronunciation": "lapa le okuni (oku)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "April (Month 4)",
+          "translation": "Lapa le ong’wan (Ong)",
+          "pronunciation": "lapa le ong’wan (ong)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "May (Month 5)",
+          "translation": "Lapa le imet (Ime)",
+          "pronunciation": "lapa le imet (ime)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "June (Month 6)",
+          "translation": "Lapa le ile (Ile)",
+          "pronunciation": "lapa le ile (ile)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "July (Month 7)",
+          "translation": "Lapa le sapa (Sap)",
+          "pronunciation": "lapa le sapa (sap)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "August (Month 8)",
+          "translation": "Lapa le isiet (Isi)",
+          "pronunciation": "lapa le isiet (isi)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "September (Month 9)",
+          "translation": "Lapa le saal (Saa)",
+          "pronunciation": "lapa le saal (saa)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "October (Month 10)",
+          "translation": "Lapa le tomon (Tom)",
+          "pronunciation": "lapa le tomon (tom)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "November (Month 11)",
+          "translation": "Lapa le tomon obo (Tob)",
+          "pronunciation": "lapa le tomon obo (tob)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "December (Month 12)",
+          "translation": "Lapa le tomon waare (Tow)",
+          "pronunciation": "lapa le tomon waare (tow)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Mderot ee are (Are)",
+          "pronunciation": "mderot ee are (are)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Mderot ee kuni (Kun)",
+          "pronunciation": "mderot ee kuni (kun)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Mderot ee ong’wan (Ong)",
+          "pronunciation": "mderot ee ong’wan (ong)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Mderot ee inet (Ine)",
+          "pronunciation": "mderot ee inet (ine)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Mderot ee ile (Ile)",
+          "pronunciation": "mderot ee ile (ile)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Mderot ee sapa (Sap)",
+          "pronunciation": "mderot ee sapa (sap)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Mderot ee kwe (Kwe)",
+          "pronunciation": "mderot ee kwe (kwe)",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "Tesiran",
+          "pronunciation": "tesiran",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "Teipa",
+          "pronunciation": "teipa",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "Nyamata",
+          "pronunciation": "nyamata",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Year (calendar unit)",
+          "translation": "Lari",
+          "pronunciation": "lari",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Month (calendar unit)",
+          "translation": "Lapa",
+          "pronunciation": "lapa",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Week (calendar unit)",
+          "translation": "Saipa napo",
+          "pronunciation": "saipa napo",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Day (calendar unit)",
+          "translation": "Mpari",
+          "pronunciation": "mpari",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Hour (time unit)",
+          "translation": "Saai",
+          "pronunciation": "saai",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Minute (time unit)",
+          "translation": "Idakika",
+          "pronunciation": "idakika",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Second (time unit)",
+          "translation": "Isekondi",
+          "pronunciation": "isekondi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Kenyan Shilling (KES)",
+          "translation": "Njilingi eel Kenya",
+          "pronunciation": "njilingi eel kenya",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tanzanian Shilling (TZS)",
+          "translation": "Njilingi eel Tanzania",
+          "pronunciation": "njilingi eel tanzania",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ugandan Shilling (UGX)",
+          "translation": "Njilingi eel Uganda",
+          "pronunciation": "njilingi eel uganda",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopian Birr (ETB)",
+          "translation": "Njilingi eel Uhabeshi",
+          "pronunciation": "njilingi eel uhabeshi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Somali Shilling (SOS)",
+          "translation": "Njilingi eel Somalia",
+          "pronunciation": "njilingi eel somalia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Rwandan Franc (RWF)",
+          "translation": "Njilingi eel Rwanda",
+          "pronunciation": "njilingi eel rwanda",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Burundian Franc (BIF)",
+          "translation": "Njilingi eel Burundi",
+          "pronunciation": "njilingi eel burundi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Sudanese Pound (SDG)",
+          "translation": "Paunt eel Sudani",
+          "pronunciation": "paunt eel sudani",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Congolese Franc (CDF)",
+          "translation": "Njilingi eel Kongo",
+          "pronunciation": "njilingi eel kongo",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "South African Rand (ZAR)",
+          "translation": "Njilingi eel Afrika Kusini",
+          "pronunciation": "njilingi eel afrika kusini",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigerian Naira (NGN)",
+          "translation": "Njilingi eel Nijeria",
+          "pronunciation": "njilingi eel nijeria",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Egyptian Pound (EGP)",
+          "translation": "Njilingi eel Misri",
+          "pronunciation": "njilingi eel misri",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Malawian Kwacha (MWK)",
+          "translation": "Njilingi eel Malawi",
+          "pronunciation": "njilingi eel malawi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Zambian Kwacha (ZMW)",
+          "translation": "Njilingi eel Zambia",
+          "pronunciation": "njilingi eel zambia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Angolan Kwanza (AOA)",
+          "translation": "Njilingi eel Angola",
+          "pronunciation": "njilingi eel angola",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Botswanan Pula (BWP)",
+          "translation": "Njilingi eel Botswana",
+          "pronunciation": "njilingi eel botswana",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Namibian Dollar (NAD)",
+          "translation": "Njilingi eel Namibia",
+          "pronunciation": "njilingi eel namibia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Malagasy Ariary (MGA)",
+          "translation": "Njilingi eel Bukini",
+          "pronunciation": "njilingi eel bukini",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Mauritian Rupee (MUR)",
+          "translation": "Njilingi eel Morisi",
+          "pronunciation": "njilingi eel morisi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Seychellois Rupee (SCR)",
+          "translation": "Njilingi eel Shelisheli",
+          "pronunciation": "njilingi eel shelisheli",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Djiboutian Franc (DJF)",
+          "translation": "Njilingi eel Jibuti",
+          "pronunciation": "njilingi eel jibuti",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Eritrean Nakfa (ERN)",
+          "translation": "Njilingi eel Eritrea",
+          "pronunciation": "njilingi eel eritrea",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Libyan Dinar (LYD)",
+          "translation": "Njilingi eel Libya",
+          "pronunciation": "njilingi eel libya",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tunisian Dinar (TND)",
+          "translation": "Njilingi eel Tunisia",
+          "pronunciation": "njilingi eel tunisia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Algerian Dinar (DZD)",
+          "translation": "Njilingi eel Aljeria",
+          "pronunciation": "njilingi eel aljeria",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Moroccan Dirham (MAD)",
+          "translation": "Njilingi eel Moroko",
+          "pronunciation": "njilingi eel moroko",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Gambian Dalasi (GMD)",
+          "translation": "Njilingi eel Gambia",
+          "pronunciation": "njilingi eel gambia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Liberian Dollar (LRD)",
+          "translation": "Dola eel Liberia",
+          "pronunciation": "dola eel liberia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Njilingi eel CFA BCEAO",
+          "pronunciation": "njilingi eel cfa bceao",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Njilingi eel CFA BEAC",
+          "pronunciation": "njilingi eel cfa beac",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "US Dollar (USD)",
+          "translation": "Dola eel Marekani",
+          "pronunciation": "dola eel marekani",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "British Pound (GBP)",
+          "translation": "Njilingi eel Uingereza",
+          "pronunciation": "njilingi eel uingereza",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Indian Rupee (INR)",
+          "translation": "Njilingi eel India",
+          "pronunciation": "njilingi eel india",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese Yuan (CNY)",
+          "translation": "Njilingi eel China",
+          "pronunciation": "njilingi eel china",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese Yen (JPY)",
+          "translation": "Njilingi eel Kijapani",
+          "pronunciation": "njilingi eel kijapani",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Riyal (SAR)",
+          "translation": "Njilingi eel Saudia",
+          "pronunciation": "njilingi eel saudia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates Dirham (AED)",
+          "translation": "Njilingi eel Falme za Kiarabu",
+          "pronunciation": "njilingi eel falme za kiarabu",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Swiss Franc (CHF)",
+          "translation": "Njilingi eel Uswisi",
+          "pronunciation": "njilingi eel uswisi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Njilingi eel Kanada",
+          "pronunciation": "njilingi eel kanada",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Australian Dollar (AUD)",
+          "translation": "Njilingi eel Australia",
+          "pronunciation": "njilingi eel australia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Uhabeshi",
+          "pronunciation": "uhabeshi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Nijeri",
+          "pronunciation": "nijeri",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Ginekweta",
+          "pronunciation": "ginekweta",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Uswazi",
+          "pronunciation": "uswazi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Bukini",
+          "pronunciation": "bukini",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Uingereza",
+          "pronunciation": "uingereza",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Hispania",
+          "pronunciation": "hispania",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Ukraini",
+          "pronunciation": "ukraini",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
+          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Katari",
+          "pronunciation": "katari",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Uajemi",
+          "pronunciation": "uajemi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Brazili",
+          "pronunciation": "brazili",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Ng’ole",
+          "pronunciation": "ng’ole",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Duo",
+          "pronunciation": "duo",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Taisere",
+          "pronunciation": "taisere",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Samburu (Language)",
+          "translation": "Kisampur",
+          "pronunciation": "kisampur",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "English (Language)",
+          "translation": "Kingereza",
+          "pronunciation": "kingereza",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukrainian (Language)",
+          "translation": "Kiukrania",
+          "pronunciation": "kiukrania",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Czech (Language)",
+          "translation": "Kichecki",
+          "pronunciation": "kichecki",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Bangla (Language)",
+          "translation": "Kibangla",
+          "pronunciation": "kibangla",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tamil (Language)",
+          "translation": "Kitamil",
+          "pronunciation": "kitamil",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Thai (Language)",
+          "translation": "Kitailandi",
+          "pronunciation": "kitailandi",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Malay (Language)",
+          "translation": "Kimalesia",
+          "pronunciation": "kimalesia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Akan (Language)",
+          "translation": "Kiakan",
+          "pronunciation": "kiakan",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Agriculture & Home",
+      "icon": "🌾",
+      "entries": [
+        {
+          "english": "Milk",
+          "translation": "kule",
+          "pronunciation": "ku-le",
+          "context": "Samburu (North Maa) staple food",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "nkiri",
+          "pronunciation": "nki-ri",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "ndaiki",
+          "pronunciation": "ndai-ki",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "House / Homestead",
+          "translation": "nkaji (pl. nkajijik) / nkang'",
+          "pronunciation": "nka-ji / nkang'",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Leather carrying bag (Origin of name Samburu)",
+          "translation": "saamburr",
+          "pronunciation": "saam-burr",
+          "context": "Wikipedia Samburu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "lperre (pl. lperren)",
+          "pronunciation": "lper-re",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Eat",
+          "translation": "a-ɲá (anya)",
+          "pronunciation": "a-nya",
+          "context": "Rainer Vossen (1982) — Sampur",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "a-ok (aok)",
+          "pronunciation": "a-ok",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "a-lo (alo)",
+          "pronunciation": "a-lo",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "a-lotu (alotu)",
+          "pronunciation": "a-lo-tu",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "a-dol (adol)",
+          "pronunciation": "a-dol",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Hear",
+          "translation": "a-ning' (aning')",
+          "pronunciation": "a-ning'",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Speak / Say",
+          "translation": "a-iro (airo)",
+          "pronunciation": "ai-ro",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "a-irrag (airrag)",
+          "pronunciation": "air-rag",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Love / Like",
+          "translation": "a-nyor (anyor)",
+          "pronunciation": "a-nyor",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        },
+        {
+          "english": "Know",
+          "translation": "a-iyiolo (aiyiolo)",
+          "pronunciation": "ai-yio-lo",
+          "context": "Samburu (North Maa)",
+          "audioFile": null
+        }
+      ]
+    }
+  ]
+}

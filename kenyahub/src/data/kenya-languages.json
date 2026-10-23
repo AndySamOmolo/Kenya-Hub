@@ -239,6 +239,25 @@
         "Baringo"
       ],
       "notes": "Lake Baringo fishermen/farmers. Related to Maasai/Samburu. Endangered language."
+    },
+    {
+      "name": "Pokot (Pökoot)",
+      "family": "nilotic",
+      "speakers": 783000,
+      "counties": [
+        "West Pokot",
+        "Baringo"
+      ],
+      "notes": "Highland Nilotes (Northern Kalenjin branch). Pastoralists and terrace farmers in West Pokot and Baringo counties; documented in Mervyn Beech's 1911 monograph."
+    },
+    {
+      "name": "Taveta (Kitaveta)",
+      "family": "bantu",
+      "speakers": 25000,
+      "counties": [
+        "Taita-Taveta"
+      ],
+      "notes": "Northeast Coast Bantu (Pare-Taveta group) spoken around Taveta and Lake Jipe; rich oral proverb tradition documented by A. C. Hollis (1910)."
     }
   ],
   "officialLanguages": [
