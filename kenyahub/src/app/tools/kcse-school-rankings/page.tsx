@@ -6,6 +6,17 @@ import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/kcse-rankings.json";
 import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
+
+interface KcseSchool {
+  name: string;
+  county: string;
+  type: string;
+  meanScore: number;
+  aGrades: number;
+  change: number;
+}
+
+const schools: KcseSchool[] = data.schools as KcseSchool[];
 const tool = TOOLS.find((t) => t.slug === "kcse-school-rankings")!;
 const faq = [
   { question: "How are KCSE school rankings determined?", answer: "Rankings are based on each school's mean score — the average of all students' mean grades on a 12-point scale (A=12, E=1). This is calculated by KNEC (Kenya National Examinations Council)." },
@@ -18,10 +29,10 @@ export default function KcseSchoolRankingsPage() {
   const [countyFilter, setCountyFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
   const [sortBy, setSortBy] = useState<"meanScore" | "aGrades" | "change">("meanScore");
-  const counties = useMemo(() => Array.from(new Set(data.schools.map((s) => s.county))).sort(), []);
-  const types = useMemo(() => Array.from(new Set(data.schools.map((s) => s.type))).sort(), []);
+  const counties = useMemo(() => Array.from(new Set(schools.map((s) => s.county))).sort(), []);
+  const types = useMemo(() => Array.from(new Set(schools.map((s) => s.type))).sort(), []);
   const filtered = useMemo(() => {
-    return data.schools.filter((s) => {
+    return schools.filter((s) => {
       if (countyFilter !== "all" && s.county !== countyFilter) return false;
       if (typeFilter !== "all" && s.type !== typeFilter) return false;
       if (search.trim()) { const q = search.toLowerCase(); return s.name.toLowerCase().includes(q) || s.county.toLowerCase().includes(q); }

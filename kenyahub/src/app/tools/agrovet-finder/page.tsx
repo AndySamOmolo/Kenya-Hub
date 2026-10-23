@@ -6,6 +6,17 @@ import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/agrovets.json";
 import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
+
+interface Agrovet {
+  name: string;
+  county: string;
+  town: string;
+  services: string[];
+  licensed?: boolean;
+  phone: string;
+}
+
+const agrovets: Agrovet[] = data.agrovets as Agrovet[];
 const tool = TOOLS.find((t) => t.slug === "agrovet-finder")!;
 const faq = [
   { question: "How do I know if an agrovet is licensed?", answer: "Licensed agrovets should display a PCPB (Pest Control Products Board) license for agrochemicals and a veterinary permit for animal drugs. Ask to see their license before purchasing." },
@@ -15,9 +26,9 @@ const faq = [
 export default function AgrovetFinderPage() {
   const [search, setSearch] = useState("");
   const [countyFilter, setCountyFilter] = useState("all");
-  const counties = useMemo(() => Array.from(new Set(data.agrovets.map((a) => a.county))).sort(), []);
+  const counties = useMemo(() => Array.from(new Set(agrovets.map((a) => a.county))).sort(), []);
   const filtered = useMemo(() => {
-    return data.agrovets.filter((a) => {
+    return agrovets.filter((a) => {
       if (countyFilter !== "all" && a.county !== countyFilter) return false;
       if (search.trim()) { const q = search.toLowerCase(); return a.name.toLowerCase().includes(q) || a.county.toLowerCase().includes(q) || a.town.toLowerCase().includes(q) || a.services.some((s) => s.toLowerCase().includes(q)); }
       return true;

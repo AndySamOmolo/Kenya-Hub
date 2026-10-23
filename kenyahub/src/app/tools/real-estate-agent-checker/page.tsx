@@ -7,6 +7,14 @@ import { TOOLS } from "@/lib/tools-registry";
 import agentData from "@/data/real-estate-agents.json";
 import SearchInput from "@/components/ui/SearchInput";
 
+interface SampleAgent {
+  name: string;
+  type: string;
+  county: string;
+  specialization: string;
+}
+
+const sampleAgents: SampleAgent[] = agentData.sampleAgents as SampleAgent[];
 const tool = TOOLS.find((t) => t.slug === "real-estate-agent-checker")!;
 
 const faq = [
@@ -20,8 +28,8 @@ export default function RealEstateAgentCheckerPage() {
   const [search, setSearch] = useState("");
 
   const sampleFiltered = search.trim()
-    ? agentData.sampleAgents.filter((a) => a.name.toLowerCase().includes(search.toLowerCase()) || a.county.toLowerCase().includes(search.toLowerCase()))
-    : agentData.sampleAgents;
+    ? sampleAgents.filter((a) => a.name.toLowerCase().includes(search.toLowerCase()) || a.county.toLowerCase().includes(search.toLowerCase()))
+    : sampleAgents;
 
   return (
     <ToolShell tool={tool} faq={faq}>
@@ -31,7 +39,7 @@ export default function RealEstateAgentCheckerPage() {
           <DynamicIcon emoji="⚠️" className="w-6 h-6 text-gold mt-0.5 shrink-0" />
           <div>
             <h3 className="text-sm font-bold text-kenya-red-light mb-1">Warning: Real Estate Fraud is Common</h3>
-            <p className="text-xs text-text-secondary leading-relaxed">Never pay money (viewing fees, deposits) to an agent you haven't verified. Always insist on seeing an official EARB registration certificate before engaging their services.</p>
+            <p className="text-xs text-text-secondary leading-relaxed">Never pay money (viewing fees, deposits) to an agent you haven&apos;t verified. Always insist on seeing an official EARB registration certificate before engaging their services.</p>
           </div>
         </div>
 

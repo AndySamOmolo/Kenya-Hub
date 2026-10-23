@@ -20,7 +20,7 @@ import {
 import ToolShell from "@/components/tools/ToolShell";
 import ProverbsView from "@/components/learn/ProverbsView";
 import type { LanguageConfig } from "@/data/courses/types";
-import { COURSE_REGISTRY } from "@/data/courses/registry";
+import { COURSE_REGISTRY, PUBLISHED_COURSES } from "@/data/courses/registry";
 import { TOOLS } from "@/lib/tools-registry";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
