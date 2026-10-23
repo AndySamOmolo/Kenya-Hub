@@ -1061,7 +1061,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         authoredExercises: [
           {
             type: 'multiple_choice',
-            prompt: 'Which character is the clever trickster hare in W. E. Taylor's 1891 Giriama folktales?',
+            prompt: "Which character is the clever trickster hare in W. E. Taylor's 1891 Giriama folktales?",
             correctAnswer: 'katsungula',
             options: ['katsungula', 'simba', 'fisi', 'kikokora'],
             hint: 'Katsungula na Simba = The Little Hare and the Lion'
