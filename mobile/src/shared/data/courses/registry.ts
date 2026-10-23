@@ -6,11 +6,6 @@ import { KISII_CONFIG, KISII_UNITS } from "./kisii/course";
 import { TESO_CONFIG, TESO_UNITS } from "./teso/course";
 import { KAMBA_CONFIG, KAMBA_UNITS } from "./kamba/course";
 import { MAASAI_CONFIG, MAASAI_UNITS } from "./maasai/course";
-import { SWAHILI_CONFIG, SWAHILI_UNITS } from "./swahili/course";
-import { KALENJIN_CONFIG, KALENJIN_UNITS } from "./kalenjin/course";
-import { MIJIKENDA_CONFIG, MIJIKENDA_UNITS } from "./mijikenda/course";
-import { MERU_CONFIG, MERU_UNITS } from "./meru/course";
-import { SOMALI_CONFIG, SOMALI_UNITS } from "./somali/course";
 import type { CourseUnit, LanguageConfig, GrammarSection } from "./types";
 import { validateCourse, type CourseValidationIssue } from "./validation";
 import { getSourcesForLanguage } from "../language-sources";
@@ -22,11 +17,23 @@ import { TESO_GRAMMAR_SECTIONS } from "./teso/grammar-reference";
 import { KAMBA_GRAMMAR_SECTIONS } from "./kamba/grammar-reference";
 import { MAASAI_GRAMMAR_SECTIONS } from "./maasai/grammar-reference";
 import { TURKANA_GRAMMAR_SECTIONS } from "./turkana/grammar-reference";
-import { SWAHILI_GRAMMAR_SECTIONS } from "./swahili/grammar-reference";
-import { KALENJIN_GRAMMAR_SECTIONS } from "./kalenjin/grammar-reference";
-import { MIJIKENDA_GRAMMAR_SECTIONS } from "./mijikenda/grammar-reference";
-import { MERU_GRAMMAR_SECTIONS } from "./meru/grammar-reference";
-import { SOMALI_GRAMMAR_SECTIONS } from "./somali/grammar-reference";
+import {
+  SWAHILI_CONFIG,
+  SWAHILI_UNITS,
+  SWAHILI_GRAMMAR_SECTIONS,
+  KALENJIN_CONFIG,
+  KALENJIN_UNITS,
+  KALENJIN_GRAMMAR_SECTIONS,
+  MIJIKENDA_CONFIG,
+  MIJIKENDA_UNITS,
+  MIJIKENDA_GRAMMAR_SECTIONS,
+  MERU_CONFIG,
+  MERU_UNITS,
+  MERU_GRAMMAR_SECTIONS,
+  SOMALI_CONFIG,
+  SOMALI_UNITS,
+  SOMALI_GRAMMAR_SECTIONS,
+} from "./cultural-wisdom";
 
 export interface CourseDefinition {
   config: LanguageConfig;
