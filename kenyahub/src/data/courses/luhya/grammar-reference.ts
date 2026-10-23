@@ -1,8 +1,6 @@
 // ============================================================
-// Luhya (Oluluhya / Oluluyia) Grammar Reference Guide
-// Based on "A First Luyia Grammar" by L.L. Appleby (Eagle Press, 1961),
-// "Wanga-English Dictionary" by Alfred Anangwe & Michael R. Marlo (2008),
-// and "Bukusu-English Dictionary" by Michael Marlo, Adrian Sifuna & Aggrey Wasike (2008).
+// Luhya (Oluluyia) Grammar Reference Guide
+// Based on Open-Web Comparative Linguistic Data (Wikipedia Luhya_language & Wiktionary Bantu Swadesh Lists — Zone J30)
 // ============================================================
 
 export interface LuhyaGrammarSection {
@@ -15,158 +13,42 @@ export interface LuhyaGrammarSection {
 
 export const LUHYA_GRAMMAR_SECTIONS: LuhyaGrammarSection[] = [
   {
-    id: 'luhya-noun-classes',
-    title: 'Noun Classes & Initial Vowels (Pre-prefixes)',
-    summary: 'Luhya dialects preserve the ancient Bantu augments (initial vowels) before noun class prefixes, which govern strict agreement.',
-    content: `Appleby (1961) details the classical Luyia noun class system with its characteristic initial vowels (augments):
-1. **Class 1/2 (Omu- / Aba-)**: Persons.
-   - *omundu* (person) → *abandu* (people)
-   - *omusiani* (boy) → *abasiani* (boys)
-   - *omukhana* (girl) → *abakhana* (girls)
-2. **Class 3/4 (Omu- / Emi-)**: Trees, inanimate forces, body parts.
-   - *omusaala* (tree) → *emisaala* (trees)
-   - *omuliro* (fire) → *emiliro* (fires)
-3. **Class 5/6 (Eli- / Ama-)**: Paired body parts, fruits, natural objects.
-   - *eliba* (stone) → *amaba* (stones)
-   - *eliino* (tooth) → *ameeno* (teeth)
-   - *eliso* (eye) → *ameeso* (eyes)
-4. **Class 7/8 (Eshi- / Ebi-)**: Objects, tools, languages, customs.
-   - *eshindu* (thing) → *ebindu* (things)
-   - *eshitabu* (book) → *ebitabu* (books)
-   - *Olwanga* / *Luluhya* (languages)
-5. **Class 9/10 (In- / Tsin-)**: Animals, domestic articles.
-   - *ing\'ombe* (cow) → *tsing\'ombe* (cattle)
-   - *inzu* (house) → *tsinzu* (houses)
-   - *imbusi* (goat) → *tsimbusi* (goats)
-6. **Class 11/10 (Olu- / Tsin-)**: Long, slender items.
-   - *olukuku* (fence) → *tsinguku* (fences)
-   - *oluche* (river) → *tsinche* (rivers)
-7. **Class 12/13 (Oka- / Utu-)**: Diminutives.
-   - *okana* (small child) → *utwana* (small children)
-8. **Class 15 (Okhu-)**: Infinitives and body parts.
-   - *okhukola* (to do / to make)
-   - *okhugulu* (leg) → *amagulu* (legs)
-9. **Class 16/17/18 (Aha- / Okhu- / Omu-)**: Locatives.
-   - *ahandu* (at a place), *okhundu* (towards a place), *omundu* (inside a place).`,
+    id: "luhya-dialects-comparison",
+    title: "The Luhya (Zone J30) Dialect Continuum & Core Mutual Intelligibility",
+    summary: "Oluluyia comprises a continuum of Western Kenyan Bantu varieties (including Wanga, Kisa, Marama, Tsotso, Kabras, Nyole, Logoli, and Bukusu) sharing core Bantu noun-class morphology.",
+    content: `As documented in comparative Bantu linguistics (Guthrie Zone JE.32 / J30):
+1. **Core Central Varieties & Sister Languages**:
+   - Central Luhya varieties (*OluWanga, OluShisa/Kisa, OluMarama, OluTsotso, LuKabarasi, LuNyala*) share high mutual intelligibility, while northern *Lubukusu* (Masaba cluster) and southern *Lulogooli* (Maragoli) display distinctive consonant correspondences.
+2. **Cross-Dialect Lexical Correspondences**:
+   - **1st Person Singular ("I / me")**: *eshie* (Kisa), *esie* (Wanga), *ise* (Nyole/Bukusu), *nzi / inze* (Logoli).
+   - **Words / Matters**: *amakhuwa* (Kisa, Wanga, Nyole) vs. *makuva* (Logoli).
+   - **Chair**: *eshifumbi* (Kisa), *eshisala* (Wanga), *indebe* (Nyole), *indeve* (Logoli).
+   - **Head**: *omurwe / om'rwe* (Kisa, Nyole, Wanga) vs. *mutwi* (Logoli).`,
     examples: [
-      { luhya: 'omundu mulahi', english: 'a good person', explanation: 'Class 1 concord on noun and adjective' },
-      { luhya: 'abandu balahi', english: 'good people', explanation: 'Class 2 plural concord: ba-' },
-      { luhya: 'eshitabu shianje', english: 'my book', explanation: 'Class 7 possessive concord: shi-' },
-      { luhya: 'ebitabu bianje', english: 'my books', explanation: 'Class 8 plural possessive concord: bi-' }
+      { luhya: "esie / eshie / ise / inze", english: "I / me (1st person singular)", explanation: "Wanga/Kisa/Nyole/Logoli pronominal correspondence" },
+      { luhya: "amakhuwa (Wanga/Kisa) vs. makuva (Logoli)", english: "words / matters", explanation: "Regular kh ~ v consonant correspondence across Luhya dialects" },
+      { luhya: "omurwe (Wanga/Kisa/Nyole) vs. mutwi (Logoli)", english: "head", explanation: "Retention of preprefix o- in central Luhya" }
     ]
   },
   {
-    id: 'luhya-subject-prefixes',
-    title: 'Subject Prefixes & Verb Conjugation',
-    summary: 'Verbs are conjugated by attaching subjectival concords corresponding to person or noun class.',
-    content: `Personal subject prefixes in Luyia/Wanga:
-- 1st Sing (I): *e-* / *n-* (e.g., *ndola* - I see, *ekhola* - I do)
-- 2nd Sing (You): *o-* (e.g., *okhola* - you do)
-- 3rd Sing (He/She): *a-* (e.g., *akhola* - he/she does)
-- 1st Plur (We): *khu-* (e.g., *khukhola* - we do)
-- 2nd Plur (You pl.): *mu-* (e.g., *mukhola* - you all do)
-- 3rd Plur (They): *ba-* (e.g., *bakhola* - they do)
-
-The negative replaces the initial prefix with *shi-* or *kha-*:
-- *shekhola ta* (I do not do).
-- In Luyia, the post-verbal negative particle *ta* or *tawe* reinforces negation.`,
+    id: "luhya-noun-classes-infinitives",
+    title: "Preprefixal Noun Classes (Omu-/Aba-, Eshi-/Ebi-, Li-/Ama-) & Okhu- Infinitives",
+    summary: "Oluluyia retains Bantu preprefixes (augment vowels o-, a-, e-, i-) on nouns and forms verbal infinitives with the prefix okhu-.",
+    content: `Key morphological structures visible across the Zone J30 Luhya Swadesh lexicon:
+1. **Preprefixal Noun Classes**:
+   - **Class 1/2 (*omu- / aba-*)**: *omundu → abandu* (person → people), *omukhasi → abakhasi* (woman → women), *omusatsa → abasatsa* (man → men), *omwana → abana* (child → children).
+   - **Class 3/4 (*omu- / emi-*)**: *omurwe → emirwe* (head → heads), *omukhono → emikhono* (hand/arm → hands), *omuliro* (fire).
+   - **Class 5/6 (*li- / ama-*)**: *libuyu → amabuyu* (egg → eggs), *likumba → amakumba* (bone → bones), *libale / lichina* (stone), *amaatsi* (water).
+   - **Class 7/8 (*eshi- / ebi-*)**: *eshiamo → ebiamo* (fruit → fruits), *eshimuli → ebimuli* (flower → flowers), *eshirwi* (ear).
+   - **Class 9/10 (*in- / tsin-*)**: *imbwa → tsimbwa* (dog → dogs), *inzokha → tsinzokha* (snake → snakes), *inyeni* (fish).
+   - **Class 11/10 (*olu- / tsin-*)**: *olulimi → tsinzimi* (tongue → tongues), *olukulu* (mountain).
+2. **Verbal Infinitives (*okhu-* / *okhw-*)**:
+   - Verbs take the Class 15 infinitive prefix **okhu-** (becoming **okhw-** before vowel-initial stems):
+   - *okhunywa* (to drink), *okhuliira* (to eat), *okhulola* (to see), *okhuulira* (to hear), *okhumanya* (to know), *okhuchenda* (to walk), *okhwitsa* (to come), *okhwimba* (to sing).`,
     examples: [
-      { luhya: 'Ndekha omukati', english: 'I am cooking bread', explanation: '1st person singular prefix n-' },
-      { luhya: 'Bakhola emirimo', english: 'They are working', explanation: '3rd person plural prefix ba-' },
-      { luhya: 'Shetsia tawe', english: 'I am not going', explanation: 'Negative shi- with sentence-final tawe' }
-    ]
-  },
-  {
-    id: 'luhya-verbal-extensions',
-    title: 'Verbal Extensions in Wanga & Central Luyia',
-    summary: 'As documented by Anangwe & Marlo (2008), verbal derivation adds nuanced semantic extensions to the verb stem.',
-    content: `Verbal extensions are suffixes added to verb roots before the final vowel:
-1. **Applicative (-ela / -ila)**: Doing for or towards.
-   - *okhusoma* (to read) → *okhusomela* (to read for).
-2. **Causative (-ia / -isia)**: Causing an action.
-   - *okhulola* (to see) → *okhulolesia* (to show / reveal).
-   - *okhulia* (to eat) → *okhulisia* (to feed).
-3. **Reciprocal (-ana)**: Mutual interaction.
-   - *okhwenda* (to love) → *okwendana* (to love one another).
-4. **Stative / Potential (-ikha / -ekha)**: Capability or resulting condition.
-   - *okhukola* (to make) → *okhukolekha* (to be doable / possible).
-5. **Reversive (-ula / -ulula)**: Undoing an action.
-   - *okhuboho* (to tie) → *okhubohola* (to untie).`,
-    examples: [
-      { luhya: 'Somelanje ebaluwa', english: 'Read the letter for me', explanation: 'Applicative extension -ela' },
-      { luhya: 'Bachekhana', english: 'They are laughing at one another', explanation: 'Reciprocal extension -ana' },
-      { luhya: 'Lolesia amani ketsio', english: 'Show your strength', explanation: 'Causative extension -esia' }
-    ]
-  },
-  {
-    id: 'luhya-bukusu-phonology',
-    title: 'Bukusu (Lubukusu) Phonology, Augments & Dialectal Correspondences',
-    summary: 'Documented by Marlo, Sifuna & Wasike (2008), Lubukusu features distinctive phonological traits, including voiceless velar fricatives (kh), bilabial fricatives (b / [β]), vowel length distinctions, and specific noun augmentations.',
-    content: `Lubukusu is the most widely spoken variety of the Luhya cluster (predominantly in Bungoma and Trans-Nzoia counties). As documented by Michael Marlo, Adrian Sifuna, and Aggrey Wasike (2008):
-1. **Phonological Identity**:
-   - Lubukusu preserves the voiceless velar fricative **kh** [x] where other dialects use [h] or stop consonants:
-     - *khúúlya* (to eat), *khúúnywa* (to drink), *khuukeenda* (to walk), *khuubona* (to see).
-   - The letter **b** represents a voiced bilabial fricative [β] intervocalically (e.g. *babaandu* [βaβa:ndu] - people), and a stop [b] after nasals (*embusi* - goat).
-   - Phonemic vowel length is contrastive: *ndala* (one) vs. *liitaala* (homestead).
-2. **Dialect Lexical Comparisons**:
-   - **Cow**: Bukusu *eekhaafu* (pl. *chiikhaafu*) vs. Central Luyia *ing\'ombe* (pl. *tsing\'ombe*).
-   - **Water**: Bukusu *kameechi* vs. Central Luyia *amatsi*.
-   - **Milk**: Bukusu *kamabeele* vs. Central Luyia *amabele*.
-   - **Greetings**: Bukusu *Bwaasyeele!* (Good morning!) and *Ke.akoloba!* (Good evening!) alongside universal *Muleembe!*
-   - **Thank You**: Bukusu *Oryo!* / *Oryo muno!* (Thanks very much) and *Khuusiima* (to appreciate).
-   - **Farewell**: Bukusu *Ákhuliinde!* / *Oliindwe!* (Goodbye / may you be protected).`,
-    examples: [
-      { luhya: 'Bwaasyeele! — Bwaasyeele muno.', english: 'Good morning! — Good morning indeed.', explanation: 'Bukusu early morning greeting at dawn' },
-      { luhya: 'Oryo muno!', english: 'Thank you very much!', explanation: 'Bukusu gratitude expression recorded in Marlo et al. (2008)' },
-      { luhya: 'Eekhaafu yeefwe', english: 'Our cow', explanation: 'Bukusu term eekhaafu with 1st person plural possessive' },
-      { luhya: 'Kameechi k\'okunywa', english: 'Drinking water', explanation: 'Bukusu term kameechi (water)' }
-    ]
-  },
-  // ── EXPANDED GRAMMAR SECTIONS ──
-  {
-    "id": "luhya-locative-classes",
-    "title": "The Three Locative Noun Classes: Ha- (16), Hu-/Khu- (17) & Mu- (18)",
-    "summary": "Luyia preserves the full Proto-Bantu triad of locative prefixes governing precise spatial agreement.",
-    "content": "In L.L. Appleby's *A First Luyia Grammar*, Anangwe & Marlo (2008) *Wanga*, and Marlo et al. (2008) *Bukusu*, three productive locative prefixes attach to nouns and govern their own concords:\n1. **Class 16 (ha- / a-)**: Specific, definite spot ('at / right by').\n   - *handu halayi* (a good specific place), *hamulyango* (right at the doorway).\n2. **Class 17 (hu- / khu-)**: General direction, surface, or 'on / to / from'.\n   - *khumusaala* (on the tree), *khunjira* (on the road/way), *khulwaro* (on the grinding stone).\n3. **Class 18 (mu-)**: Interiority ('inside / within').\n   - *munzu* (inside the house), *mumatsi* (in the water), *mumugunda* (inside the garden).",
-    "examples": [
-      {
-        "luhya": "Abana bali munzu.",
-        "english": "The children are inside the house.",
-        "explanation": "Class 18 interior locative mu-"
-      },
-      {
-        "luhya": "Yikhala khukom.",
-        "english": "Sit on the chair.",
-        "explanation": "Class 17 surface locative khu-"
-      },
-      {
-        "luhya": "Handu hano ni halayi.",
-        "english": "This specific place is good.",
-        "explanation": "Class 16 concord ha-"
-      }
-    ]
-  },
-  {
-    "id": "luhya-tense-aspect-negation",
-    "title": "Tense-Aspect Prefixes & Circumfixal Negation (si-...-ta / se-...-ta)",
-    "summary": "Luhya varieties distinguish hodiernal (today), hesternal (yesterday), and remote pasts, and negate verbs with a two-part frame.",
-    "content": "Across Central Luyia, Olushiwanga, and Lubukusu, verbal negation uses a distinctive **circumfix** (a negative prefix before the subject marker PLUS the enclitic particle **ta / tawe / da** after the verb):\n- **Central Luyia & Wanga**: **si-** + Subject + Verb + **ta(we)**\n  - *Achendanga* (He walks) → **Siachendanga tawe** (He does not walk).\n  - *Ndola* (I see) → **Sindola ta** (I do not see).\n- **Lubukusu**: **se-** + Subject + Verb + **ta**\n  - *Khwama* (We come from) → **Sekhwama ta** (We do not come from).\n- **Negative Subjunctive / Imperative**: Uses **lekha** + infinitive (*Lekha okhutsia!* - Do not go!) or infix **-kha-**.",
-    "examples": [
-      {
-        "luhya": "Sindola omundu tawe.",
-        "english": "I do not see anybody.",
-        "explanation": "Circumfixal negation si-...-tawe"
-      },
-      {
-        "luhya": "Siachenda bwangu ta.",
-        "english": "He/she does not walk fast.",
-        "explanation": "3s negative si-a-...-ta"
-      },
-      {
-        "luhya": "Lekha okhulira!",
-        "english": "Stop crying! / Do not cry!",
-        "explanation": "Prohibitive auxiliary lekha + infinitive"
-      }
+      { luhya: "omundu → abandu • omwana → abana", english: "person → people • child → children", explanation: "Class 1/2 human noun prefixation omu-/aba-" },
+      { luhya: "eshiamo → ebiamo • eshimuli → ebimuli", english: "fruit → fruits • flower → flowers", explanation: "Class 7/8 eshi-/ebi- noun prefixation" },
+      { luhya: "okhunywa, okhuliira, okhulola, okhumanya", english: "to drink, to eat, to see, to know", explanation: "Class 15 infinitive prefix okhu-" }
     ]
   }
 ];

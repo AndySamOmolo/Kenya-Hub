@@ -18,7 +18,7 @@
   "hasAudio": false,
   "dictionaryVersion": "0.1.0",
   "lastUpdated": "2026-10-20",
-  "contributorNote": "Kalenjin is a group of Highland Nilotic languages including Nandi, Kipsigis, Tugen, Pokot, Marakwet, and Sabaot. This dictionary uses the Nandi/Kipsigis standard as the most widely spoken variants.",
+  "contributorNote": "Kalenjin dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
       "id": "greetings",
@@ -26,269 +26,31 @@
       "icon": "👋",
       "entries": [
         {
-          "english": "Elder",
-          "translation": "Boisiek /Chejosiek",
-          "pronunciation": "boy-syeht",
-          "context": "Respected elder",
+          "english": "I say to you / I tell you (origin of the ethnonym 'Kalenjin')",
+          "translation": "Kalenjin",
+          "pronunciation": "Kalenjin",
+          "context": "Wikipedia Kalenjin languages — Etymology",
           "audioFile": null
         },
         {
-          "english": "Chief",
-          "translation": "Kiruogindet",
-          "pronunciation": "kee-rwoh-geen-deht",
-          "context": "Chief or leader",
+          "english": "I say you (man-to-man address, Suk/Pokot note in Barton 1921)",
+          "translation": "werno (pl. wer-chara)",
+          "pronunciation": "werno (pl. wer-chara)",
+          "context": "Juxon Barton (1921) — Suk/Pokot comparative note",
           "audioFile": null
         },
         {
-          "english": "King",
-          "translation": "Orkoiyot / Kiruogindet",
-          "pronunciation": "ohr-koy-yoht",
-          "context": "Supreme leader / ruler",
+          "english": "morning, tomorrow morning",
+          "translation": "mutai",
+          "pronunciation": "mutai",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 153)",
           "audioFile": null
         },
         {
-          "english": "Work",
-          "translation": "Boisiet",
-          "pronunciation": "boy-syeht",
-          "context": "Work",
-          "audioFile": null
-        },
-        {
-          "english": "Market",
-          "translation": "Sokon",
-          "pronunciation": "soh-kohn",
-          "context": "Market",
-          "audioFile": null
-        },
-        {
-          "english": "Money",
-          "translation": "Rabinik",
-          "pronunciation": "rah-bee-neek",
-          "context": "Money",
-          "audioFile": null
-        },
-        {
-          "english": "Yesterday",
-          "translation": "Koonin / Amut",
-          "pronunciation": "ah-moot",
-          "context": "Yesterday",
-          "audioFile": null
-        },
-        {
-          "english": "Tomorrow",
-          "translation": "Mutai",
-          "pronunciation": "moo-tai",
-          "context": "Tomorrow",
-          "audioFile": null
-        },
-        {
-          "english": "Today",
-          "translation": "Rani",
-          "pronunciation": "rah-nee",
-          "context": "Today",
-          "audioFile": null
-        },
-        {
-          "english": "Night",
-          "translation": "Kembout",
-          "pronunciation": "kehm-boh-oot",
-          "context": "Night",
-          "audioFile": null
-        },
-        {
-          "english": "Day",
-          "translation": "Betut",
-          "pronunciation": "beh-toot",
-          "context": "Day",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "Korotik",
-          "pronunciation": "koh-roh-teek",
-          "context": "Blood",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "Muguleldo",
-          "pronunciation": "moo-goo-lehl-doh",
-          "context": "Heart",
-          "audioFile": null
-        },
-        {
-          "english": "Hand",
-          "translation": "Eut",
-          "pronunciation": "eh-oot",
-          "context": "Hand or arm",
-          "audioFile": null
-        },
-        {
-          "english": "Eye",
-          "translation": "Kong'da",
-          "pronunciation": "kohng-dah",
-          "context": "Eye",
-          "audioFile": null
-        },
-        {
-          "english": "Head",
-          "translation": "Metit",
-          "pronunciation": "meh-teet",
-          "context": "Head",
-          "audioFile": null
-        },
-        {
-          "english": "Fish",
-          "translation": "Injuriet",
-          "pronunciation": "een-joo-ryeht",
-          "context": "Fish",
-          "audioFile": null
-        },
-        {
-          "english": "Bird",
-          "translation": "Tarityet",
-          "pronunciation": "tah-reet-yeht",
-          "context": "Bird",
-          "audioFile": null
-        },
-        {
-          "english": "Dog",
-          "translation": "Ng'okto",
-          "pronunciation": "ngohk-toh",
-          "context": "Dog",
-          "audioFile": null
-        },
-        {
-          "english": "Goat",
-          "translation": "Ng'ororiet / Artet",
-          "pronunciation": "ahr-teht",
-          "context": "Goat or sheep",
-          "audioFile": null
-        },
-        {
-          "english": "Meat",
-          "translation": "Pendo",
-          "pronunciation": "pehn-doh",
-          "context": "Meat",
-          "audioFile": null
-        },
-        {
-          "english": "Tree",
-          "translation": "Ketit",
-          "pronunciation": "keh-teet",
-          "context": "Tree",
-          "audioFile": null
-        },
-        {
-          "english": "Good night",
-          "translation": "Ru komnyo",
-          "pronunciation": "roo kohm-nyoh",
-          "context": "Sleep well / good night",
-          "audioFile": null
-        },
-        {
-          "english": "Love",
-          "translation": "Chamnyet",
-          "pronunciation": "chahm-nyeht",
-          "context": "Love (noun)",
-          "audioFile": null
-        },
-        {
-          "english": "Peace",
-          "translation": "Kalyet",
-          "pronunciation": "kahl-yeht",
-          "context": "Peace",
-          "audioFile": null
-        },
-        {
-          "english": "Woman",
-          "translation": "Kwondo / Chepyoset",
-          "pronunciation": "kwohn-doh",
-          "context": "Adult woman",
-          "audioFile": null
-        },
-        {
-          "english": "Man",
-          "translation": "Muren / Chito",
-          "pronunciation": "moo-ren",
-          "context": "Adult man",
-          "audioFile": null
-        },
-        {
-          "english": "Home",
-          "translation": "Kaa",
-          "pronunciation": "kah",
-          "context": "Home or homestead",
-          "audioFile": null
-        },
-        {
-          "english": "House",
-          "translation": "Koot / Kor",
-          "pronunciation": "koht",
-          "context": "House",
-          "audioFile": null
-        },
-        {
-          "english": "Fire",
-          "translation": "Mat",
-          "pronunciation": "maht",
-          "context": "Fire",
-          "audioFile": null
-        },
-        {
-          "english": "Hello / How are you?",
-          "translation": "Chamge?",
-          "pronunciation": "chahm-geh",
-          "context": "Standard greeting. Reply: 'Chamge mising' (I'm very fine)",
-          "audioFile": null
-        },
-        {
-          "english": "I am fine",
-          "translation": "Chamge mising",
-          "pronunciation": "chahm-geh mee-sing",
-          "context": "Reply to 'Chamge?'",
-          "audioFile": null
-        },
-        {
-          "english": "Good morning",
-          "translation": "Chamge tai",
-          "pronunciation": "chahm-geh tah-ee",
-          "context": "Morning greeting",
-          "audioFile": null
-        },
-        {
-          "english": "Good evening",
-          "translation": "Chamge kewerin",
-          "pronunciation": "chahm-geh keh-weh-reen",
-          "context": "Evening greeting",
-          "audioFile": null
-        },
-        {
-          "english": "Thank you",
-          "translation": "Kongoi",
-          "pronunciation": "kohn-goy",
-          "context": "'Kongoi mising' = thank you very much",
-          "audioFile": null
-        },
-        {
-          "english": "Goodbye",
-          "translation": "Sait",
-          "pronunciation": "sah-eet",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Welcome",
-          "translation": "Karibu",
-          "pronunciation": "kah-ree-boo",
-          "context": "Borrowed from Swahili",
-          "audioFile": null
-        },
-        {
-          "english": "Please",
-          "translation": "Akok",
-          "pronunciation": "ah-kohk",
-          "context": "",
+          "english": "evening, nightfall",
+          "translation": "lakat",
+          "pronunciation": "lakat",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 153)",
           "audioFile": null
         }
       ]
@@ -300,72 +62,100 @@
       "entries": [
         {
           "english": "One",
-          "translation": "Agenge",
-          "pronunciation": "ah-gehn-geh",
-          "context": "",
+          "translation": "akeenge (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
+          "pronunciation": "akeenge (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Two",
-          "translation": "Aeng'",
-          "pronunciation": "ah-ehng",
-          "context": "",
+          "translation": "aeng' / ayeeng' (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
+          "pronunciation": "aeng' / ayeeng' (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Three",
-          "translation": "Somok",
-          "pronunciation": "soh-mohk",
-          "context": "",
+          "translation": "somok (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+          "pronunciation": "somok (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Four",
-          "translation": "Ang'wan",
-          "pronunciation": "ah-ng'wahn",
-          "context": "",
+          "translation": "ang'wan (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+          "pronunciation": "ang'wan (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Five",
-          "translation": "Mut",
-          "pronunciation": "moot",
-          "context": "",
+          "translation": "muut (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+          "pronunciation": "muut (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Six",
-          "translation": "Lo",
-          "pronunciation": "loh",
-          "context": "",
+          "translation": "lo (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Marakwet)",
+          "pronunciation": "lo (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Marakwet)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Seven",
-          "translation": "Tisap",
-          "pronunciation": "tee-sahp",
-          "context": "",
+          "translation": "tisap (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Marakwet)",
+          "pronunciation": "tisap (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Marakwet)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "Sisit",
-          "pronunciation": "see-seet",
-          "context": "",
+          "translation": "sisiit (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Marakwet)",
+          "pronunciation": "sisiit (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Marakwet)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Nine",
-          "translation": "Sogol",
-          "pronunciation": "soh-gohl",
-          "context": "",
+          "translation": "sokol / sogool (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Marakwet)",
+          "pronunciation": "sokol / sogool (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Marakwet)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
           "audioFile": null
         },
         {
           "english": "Ten",
-          "translation": "Taman",
-          "pronunciation": "tah-mahn",
-          "context": "",
+          "translation": "taman (All Kalenjin dialects)",
+          "pronunciation": "taman (All Kalenjin dialects)",
+          "context": "Wikipedia Nilotic languages — Kalenjin numerals",
+          "audioFile": null
+        },
+        {
+          "english": "forty (40)",
+          "translation": "artam / tamanwogik ang'wan",
+          "pronunciation": "artam / tamanwogik ang'wan",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "fifty (50)",
+          "translation": "konom / tamanwogik muut",
+          "pronunciation": "konom / tamanwogik muut",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "one hundred (100)",
+          "translation": "pokol",
+          "pronunciation": "pokol",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "Second (time unit)",
+          "translation": "Sekondit",
+          "pronunciation": "sekondit",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
           "audioFile": null
         }
       ]
@@ -376,101 +166,1060 @@
       "icon": "🗣️",
       "entries": [
         {
-          "english": "Yes",
-          "translation": "Ee",
-          "pronunciation": "eh-eh",
-          "context": "",
+          "english": "To eat",
+          "translation": "keam (All Kalenjin dialects)",
+          "pronunciation": "keam (All Kalenjin dialects)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
           "audioFile": null
         },
         {
-          "english": "No",
-          "translation": "Achicha",
-          "pronunciation": "ah-chee-chah",
-          "context": "",
+          "english": "Very fierce (Suk/Pokot comparative note in Barton 1921)",
+          "translation": "korom nyaman",
+          "pronunciation": "korom nyaman",
+          "context": "Juxon Barton (1921) & Wikipedia Kalenjin — Suk/Pokot comparative note",
           "audioFile": null
         },
         {
-          "english": "What is your name?",
-          "translation": "Ng'oo ingong'ung'?",
-          "pronunciation": "ng'oh een-gong-oong",
-          "context": "",
+          "english": "Understand / hear thoroughly (Suk/Pokot comparative note in Barton 1921)",
+          "translation": "lima nyaman",
+          "pronunciation": "lima nyaman",
+          "context": "Juxon Barton (1921) — Suk/Pokot comparative note",
           "audioFile": null
         },
         {
-          "english": "My name is...",
-          "translation": "Akainenyun...",
-          "pronunciation": "ah-kah-ee-neh-nyoon",
-          "context": "",
+          "english": "gives birth to, bears, begets",
+          "translation": "ii-e",
+          "pronunciation": "ii-e",
+          "context": "Nandi (Hollis 1909, p. 152)",
           "audioFile": null
         },
         {
-          "english": "I love you",
-          "translation": "Achaming'in",
-          "pronunciation": "ah-chah-meen-geen",
-          "context": "",
+          "english": "back of the neck, nape",
+          "translation": "kumut (kumut-i)",
+          "pronunciation": "kumut (kumut-i)",
+          "context": "Nandi (Hollis 1909, p. 152)",
           "audioFile": null
         },
         {
-          "english": "Water",
-          "translation": "Peek",
-          "pronunciation": "peehk",
-          "context": "",
+          "english": "can you see for yourself (to see, look at)",
+          "translation": "i-ker-i-ke (ke-keer)",
+          "pronunciation": "i-ker-i-ke (ke-keer)",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 152)",
           "audioFile": null
         },
         {
-          "english": "Food",
-          "translation": "Amik",
-          "pronunciation": "ah-meek",
-          "context": "",
+          "english": "ox, cow, head of cattle",
+          "translation": "tany (primary: teta, pl. tuga)",
+          "pronunciation": "tany (primary: teta, pl. tuga)",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 231) — e.g. Iput-i tany aku pa-kelek angwan. (The ox falls in spite of its four legs (Hollis 1909, p. 231).)",
           "audioFile": null
         },
         {
-          "english": "Milk",
-          "translation": "Kechek",
-          "pronunciation": "keh-chehk",
-          "context": "Kalenjin communities are traditionally pastoralist",
+          "english": "legs, feet (also teeth in context)",
+          "translation": "kelek (sg. keldo / keldä)",
+          "pronunciation": "kelek (sg. keldo / keldä)",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 231)",
           "audioFile": null
         },
         {
-          "english": "Child",
-          "translation": "Lakwa",
-          "pronunciation": "lahk-wah",
-          "context": "",
+          "english": "cow's udder / teat (lit. breast of the cow)",
+          "translation": "kina-ap-teta",
+          "pronunciation": "kina-ap-teta",
+          "context": "Nandi (Hollis 1909, p. 153) — e.g. Apuk ma-pa. — Kina-ap-teta. (It pours out; it does not go. — A cow's udder (Hollis 1909 Riddle #4).)",
           "audioFile": null
         },
         {
-          "english": "Mother",
-          "translation": "Kogo",
-          "pronunciation": "koh-goh",
-          "context": "",
+          "english": "it pours out (milk or water)",
+          "translation": "apuk",
+          "pronunciation": "apuk",
+          "context": "Nandi (Hollis 1909, p. 153)",
           "audioFile": null
         },
         {
-          "english": "Father",
-          "translation": "Kwanda",
-          "pronunciation": "kwahn-dah",
-          "context": "",
+          "english": "daughter, girl (cheptan-nyo = my daughter)",
+          "translation": "chepto (poss. cheptan-nyo)",
+          "pronunciation": "chepto (poss. cheptan-nyo)",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 153)",
           "audioFile": null
         },
         {
-          "english": "God",
-          "translation": "Asis / Cheptalel",
-          "pronunciation": "ah-sees / chep-tah-lehl",
-          "context": "Asis = Sun/God. Cheptalel = supreme being",
+          "english": "muddy water stirred up by cattle hooves",
+          "translation": "tururik",
+          "pronunciation": "tururik",
+          "context": "Nandi (Hollis 1909, p. 153) — e.g. I-ie tururik annan i-ie che-tililin. (Do you drink water made dirty by the feet of oxen or clean water? (Riddle #17))",
           "audioFile": null
         },
         {
-          "english": "Come",
-          "translation": "Ipwa",
-          "pronunciation": "eep-wah",
-          "context": "",
+          "english": "clean, pure, clear (water); holy/pure",
+          "translation": "che-tililin (tilil)",
+          "pronunciation": "che-tililin (tilil)",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 153)",
           "audioFile": null
         },
         {
-          "english": "Go",
-          "translation": "Ituito",
-          "pronunciation": "ee-too-ee-toh",
-          "context": "",
+          "english": "you drink (to drink)",
+          "translation": "i-ie (ke-ie)",
+          "pronunciation": "i-ie (ke-ie)",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 153)",
+          "audioFile": null
+        },
+        {
+          "english": "the Sun; traditional Supreme Deity in Kalenjin cosmology",
+          "translation": "Asiis (Asista)",
+          "pronunciation": "asiis (asista)",
+          "context": "Nandi / Kipsigis / Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "flock, herd of grazing livestock",
+          "translation": "akweet",
+          "pronunciation": "akweet",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "death (< Proto-Nilotic *mɛɛr)",
+          "translation": "meet",
+          "pronunciation": "meet",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "homestead, family house of, lineage place of (locative prefix)",
+          "translation": "Kaap (kap-)",
+          "pronunciation": "kaap (kap-)",
+          "context": "Nandi / Kipsigis / Sabaot",
+          "audioFile": null
+        },
+        {
+          "english": "ancestral homeland (lit. place of our grandfathers, Mount Elgon)",
+          "translation": "Kapkugo",
+          "pronunciation": "kapkugo",
+          "context": "Sabaot / Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "livestock kraal, cattle enclosure",
+          "translation": "piyuut",
+          "pronunciation": "piyuut",
+          "context": "Kipsigis / Nandi",
+          "audioFile": null
+        },
+        {
+          "english": "traditional Kalenjin fermented milk cured in a charcoal-lined gourd (sotet)",
+          "translation": "mursik",
+          "pronunciation": "mursik",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "stiff millet or maize meal porridge (ugali)",
+          "translation": "kimyet",
+          "pronunciation": "kimyet",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "fresh milk (< Proto-Nilotic *caVk)",
+          "translation": "chego",
+          "pronunciation": "chego",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "meat, flesh (< Proto-Nilotic *rɪŋ)",
+          "translation": "pendo",
+          "pronunciation": "pendo",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "one born during a time of prosperity/abundance (masculine name)",
+          "translation": "Kibor",
+          "pronunciation": "kibor",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "masculine ('son of / born at') and feminine ('daughter of / born at') naming prefixes",
+          "translation": "Kip- / Chep- (Che-)",
+          "pronunciation": "kip- / chep- (che-)",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "Hello! Greetings! (lit. Is there peace/love? — Very much peace!)",
+          "translation": "Chamgei! (resp. Chamgei mising!)",
+          "pronunciation": "chamgei! (resp. chamgei mising!)",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you (Thank you very much)",
+          "translation": "Kongoi (Kongoi mising)",
+          "pronunciation": "kongoi (kongoi mising)",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "initiated young man, warrior",
+          "translation": "murenet (pl. murenik)",
+          "pronunciation": "murenet (pl. murenik)",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "ritual prophet, spiritual and military seer",
+          "translation": "orkoiyot (pl. orkoik)",
+          "pronunciation": "orkoiyot (pl. orkoik)",
+          "context": "Nandi / Kipsigis (Hobley 1922 & Hollis 1909)",
+          "audioFile": null
+        },
+        {
+          "english": "neighbourhood village council of elders",
+          "translation": "kokwet",
+          "pronunciation": "kokwet",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "rotational age-set (e.g., Maina, Chumo, Sawe, Kipkoimet, Kaplelach, Kimnyige, Nyongi)",
+          "translation": "ipinda",
+          "pronunciation": "ipinda",
+          "context": "Nandi / Kipsigis (Hollis 1909)",
+          "audioFile": null
+        },
+        {
+          "english": "sin, ritual transgression, curse (< Proto-Nilotic *ŋɔk)",
+          "translation": "ng'oki",
+          "pronunciation": "ng'oki",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "blood (< Proto-Nilotic)",
+          "translation": "korotiik",
+          "pronunciation": "korotiik",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "bone (< Proto-Nilotic *kɔ́wá)",
+          "translation": "kovoet / kowoet",
+          "pronunciation": "kovoet / kowoet",
+          "context": "Nandi / Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "tree, wood, medicine (< Proto-Nilotic *jyat)",
+          "translation": "keetit (pl. keetik)",
+          "pronunciation": "keetit (pl. keetik)",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "fire (< Proto-Nilotic *ma)",
+          "translation": "maat",
+          "pronunciation": "maat",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "star, stars (< Proto-Nilotic *kɛɛl)",
+          "translation": "kechei (pl. kecheik)",
+          "pronunciation": "kechei (pl. kecheik)",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "earth, ground, down (< Proto-Nilotic *pɪɲ)",
+          "translation": "ng'ony",
+          "pronunciation": "ng'ony",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "road, path, clan lineage (< Proto-Nilotic *kɔr)",
+          "translation": "orek / oret",
+          "pronunciation": "orek / oret",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "name (< Proto-Nilotic *kɛrɪn)",
+          "translation": "kaina (kainet)",
+          "pronunciation": "kaina (kainet)",
+          "context": "Nandi / Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "bird (< Proto-Nilotic *kʊ-tarɪt)",
+          "translation": "tarit (tarityet)",
+          "pronunciation": "tarit (tarityet)",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Kotisap (Kts)",
+          "pronunciation": "kotisap (kts)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Kotaai (Kot)",
+          "pronunciation": "kotaai (kot)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Koaeng’ (Koo)",
+          "pronunciation": "koaeng’ (koo)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Kosomok (Kos)",
+          "pronunciation": "kosomok (kos)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Koang’wan (Koa)",
+          "pronunciation": "koang’wan (koa)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Komuut (Kom)",
+          "pronunciation": "komuut (kom)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Kolo (Kol)",
+          "pronunciation": "kolo (kol)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Before Christ (BC / Historical Era)",
+          "translation": "Amait kesich Jesu",
+          "pronunciation": "amait kesich jesu",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Anno Domini (AD / Common Era)",
+          "translation": "Kokakesich Jesu",
+          "pronunciation": "kokakesich jesu",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "karoon",
+          "pronunciation": "karoon",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "kooskoliny",
+          "pronunciation": "kooskoliny",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "Ibinta",
+          "pronunciation": "ibinta",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Day of the week",
+          "translation": "Betutab wikit",
+          "pronunciation": "betutab wikit",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "South African Rand (ZAR)",
+          "translation": "Randitab Afrika nebo murot tai",
+          "pronunciation": "randitab afrika nebo murot tai",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leonit",
+          "pronunciation": "leonit",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Rabisiekab CFA BCEAO",
+          "pronunciation": "rabisiekab cfa bceao",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Rabisiekab CFA BEAC",
+          "pronunciation": "rabisiekab cfa beac",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates Dirham (AED)",
+          "translation": "Rabisiekab Kibagegeitab arabuk",
+          "pronunciation": "rabisiekab kibagegeitab arabuk",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Kenya (Country / Territory)",
+          "translation": "Emetab Kenya",
+          "pronunciation": "emetab kenya",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tanzania (Country / Territory)",
+          "translation": "Emetab Tanzania",
+          "pronunciation": "emetab tanzania",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Uganda (Country / Territory)",
+          "translation": "Emetab Uganda",
+          "pronunciation": "emetab uganda",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Emetab Ethiopia",
+          "pronunciation": "emetab ethiopia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Somalia (Country / Territory)",
+          "translation": "Emetab Somalia",
+          "pronunciation": "emetab somalia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Rwanda (Country / Territory)",
+          "translation": "Emetab Rwanda",
+          "pronunciation": "emetab rwanda",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Burundi (Country / Territory)",
+          "translation": "Emetab Burundi",
+          "pronunciation": "emetab burundi",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Emetab Sudan",
+          "pronunciation": "emetab sudan",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Kinshasa (Country / Territory)",
+          "translation": "Emetab Congo - Kinshasa",
+          "pronunciation": "emetab congo - kinshasa",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Emetab Congo - Brazzaville",
+          "pronunciation": "emetab congo - brazzaville",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "South Africa (Country / Territory)",
+          "translation": "Emetab Afrika nebo Murot tai",
+          "pronunciation": "emetab afrika nebo murot tai",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Emetab Nigeria",
+          "pronunciation": "emetab nigeria",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Egypt (Country / Territory)",
+          "translation": "Emetab Misiri",
+          "pronunciation": "emetab misiri",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ghana (Country / Territory)",
+          "translation": "Emetab Ghana",
+          "pronunciation": "emetab ghana",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Cameroon (Country / Territory)",
+          "translation": "Emetab Cameroon",
+          "pronunciation": "emetab cameroon",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Senegal (Country / Territory)",
+          "translation": "Emetab Senegal",
+          "pronunciation": "emetab senegal",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Emetab Côte d’Ivoire",
+          "pronunciation": "emetab côte d’ivoire",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Mali (Country / Territory)",
+          "translation": "Emetab Mali",
+          "pronunciation": "emetab mali",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Burkina Faso (Country / Territory)",
+          "translation": "Emetab Burkina Faso",
+          "pronunciation": "emetab burkina faso",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Emetab niger",
+          "pronunciation": "emetab niger",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Emetab Chad",
+          "pronunciation": "emetab chad",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Central African Republic (Country / Territory)",
+          "translation": "Emetab Afrika nebo Kwen",
+          "pronunciation": "emetab afrika nebo kwen",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Emetab Gabon",
+          "pronunciation": "emetab gabon",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Emetab Equatorial Guinea",
+          "pronunciation": "emetab equatorial guinea",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Zambia (Country / Territory)",
+          "translation": "Emetab Zambia",
+          "pronunciation": "emetab zambia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Zimbabwe (Country / Territory)",
+          "translation": "Emetab Zimbabwe",
+          "pronunciation": "emetab zimbabwe",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Malawi (Country / Territory)",
+          "translation": "Emetab Malawi",
+          "pronunciation": "emetab malawi",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Mozambique (Country / Territory)",
+          "translation": "Emetab Mozambique",
+          "pronunciation": "emetab mozambique",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Angola (Country / Territory)",
+          "translation": "Emetab Angola",
+          "pronunciation": "emetab angola",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Namibia (Country / Territory)",
+          "translation": "Emetab Namibia",
+          "pronunciation": "emetab namibia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Botswana (Country / Territory)",
+          "translation": "Emetab Botswana",
+          "pronunciation": "emetab botswana",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Lesotho (Country / Territory)",
+          "translation": "Emetab Lesotho",
+          "pronunciation": "emetab lesotho",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Emetab Swaziland",
+          "pronunciation": "emetab swaziland",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Emetab Madagascar",
+          "pronunciation": "emetab madagascar",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Mauritius (Country / Territory)",
+          "translation": "Emetab Mauritius",
+          "pronunciation": "emetab mauritius",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Emetab Seychelles",
+          "pronunciation": "emetab seychelles",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Comoros (Country / Territory)",
+          "translation": "Emetab Comoros",
+          "pronunciation": "emetab comoros",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Djibouti (Country / Territory)",
+          "translation": "Emetab Djibouti",
+          "pronunciation": "emetab djibouti",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Eritrea (Country / Territory)",
+          "translation": "Emetab Eritrea",
+          "pronunciation": "emetab eritrea",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Libya (Country / Territory)",
+          "translation": "Emetab Libya",
+          "pronunciation": "emetab libya",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tunisia (Country / Territory)",
+          "translation": "Emetab Tunisia",
+          "pronunciation": "emetab tunisia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Algeria (Country / Territory)",
+          "translation": "Emetab Algeria",
+          "pronunciation": "emetab algeria",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Emetab Morocco",
+          "pronunciation": "emetab morocco",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Mauritania (Country / Territory)",
+          "translation": "Emetab Mauritania",
+          "pronunciation": "emetab mauritania",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Gambia (Country / Territory)",
+          "translation": "Emetab Gambia",
+          "pronunciation": "emetab gambia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leone (Country / Territory)",
+          "translation": "Emetab Sierra Leone",
+          "pronunciation": "emetab sierra leone",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Liberia (Country / Territory)",
+          "translation": "Emetab Liberia",
+          "pronunciation": "emetab liberia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Guinea (Country / Territory)",
+          "translation": "Emetab Guinea",
+          "pronunciation": "emetab guinea",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Guinea-Bissau (Country / Territory)",
+          "translation": "Emetab Guinea-Bissau",
+          "pronunciation": "emetab guinea-bissau",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Ikwembeyotab Cape Verde",
+          "pronunciation": "ikwembeyotab cape verde",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "São Tomé & Príncipe (Country / Territory)",
+          "translation": "Emetab São Tomé and Príncipe",
+          "pronunciation": "emetab são tomé and príncipe",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "United States (Country / Territory)",
+          "translation": "Emetab amerika",
+          "pronunciation": "emetab amerika",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Emetab Kibagenge nebo Uingereza",
+          "pronunciation": "emetab kibagenge nebo uingereza",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "France (Country / Territory)",
+          "translation": "Emetab France",
+          "pronunciation": "emetab france",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Germany (Country / Territory)",
+          "translation": "Emetab Geruman",
+          "pronunciation": "emetab geruman",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Italy (Country / Territory)",
+          "translation": "Emetab Italy",
+          "pronunciation": "emetab italy",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Emetab Spain",
+          "pronunciation": "emetab spain",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Portugal (Country / Territory)",
+          "translation": "Emetab Portugal",
+          "pronunciation": "emetab portugal",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Netherlands (Country / Territory)",
+          "translation": "Emetab Holand",
+          "pronunciation": "emetab holand",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Belgium (Country / Territory)",
+          "translation": "Emetab Belgium",
+          "pronunciation": "emetab belgium",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Switzerland (Country / Territory)",
+          "translation": "Emetab Switzerland",
+          "pronunciation": "emetab switzerland",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Russia (Country / Territory)",
+          "translation": "Emetab Russia",
+          "pronunciation": "emetab russia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Emetab Ukrainie",
+          "pronunciation": "emetab ukrainie",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Emetab Poland",
+          "pronunciation": "emetab poland",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Turkey (Country / Territory)",
+          "translation": "Emetab Turkey",
+          "pronunciation": "emetab turkey",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Greece (Country / Territory)",
+          "translation": "Emetab Greece",
+          "pronunciation": "emetab greece",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Israel (Country / Territory)",
+          "translation": "Emetab Israel",
+          "pronunciation": "emetab israel",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Emetab Palestine",
+          "pronunciation": "emetab palestine",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Emetab Saudi Arabia",
+          "pronunciation": "emetab saudi arabia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates (Country / Territory)",
+          "translation": "Emetab kibagenge nebo arabuk",
+          "pronunciation": "emetab kibagenge nebo arabuk",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Emetab Qatar",
+          "pronunciation": "emetab qatar",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Emetab Iran",
+          "pronunciation": "emetab iran",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Iraq (Country / Territory)",
+          "translation": "Emetab Iraq",
+          "pronunciation": "emetab iraq",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "India (Country / Territory)",
+          "translation": "Emetab India",
+          "pronunciation": "emetab india",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Pakistan (Country / Territory)",
+          "translation": "Emetab Pakistan",
+          "pronunciation": "emetab pakistan",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "China (Country / Territory)",
+          "translation": "Emetab China",
+          "pronunciation": "emetab china",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Japan (Country / Territory)",
+          "translation": "Emetab Japan",
+          "pronunciation": "emetab japan",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "South Korea (Country / Territory)",
+          "translation": "Emetab korea nebo murot tai",
+          "pronunciation": "emetab korea nebo murot tai",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Indonesia (Country / Territory)",
+          "translation": "Emetab Indonesia",
+          "pronunciation": "emetab indonesia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Emetab Philippines",
+          "pronunciation": "emetab philippines",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Australia (Country / Territory)",
+          "translation": "Emetab Australia",
+          "pronunciation": "emetab australia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "New Zealand (Country / Territory)",
+          "translation": "Emetab New Zealand",
+          "pronunciation": "emetab new zealand",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Canada (Country / Territory)",
+          "translation": "Emetab Canada",
+          "pronunciation": "emetab canada",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Mexico (Country / Territory)",
+          "translation": "Emetab Mexico",
+          "pronunciation": "emetab mexico",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Emetab Brazil",
+          "pronunciation": "emetab brazil",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Argentina (Country / Territory)",
+          "translation": "Emetab Argentina",
+          "pronunciation": "emetab argentina",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Cuba (Country / Territory)",
+          "translation": "Emetab Cuba",
+          "pronunciation": "emetab cuba",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Jamaica (Country / Territory)",
+          "translation": "Emetab Jamaica",
+          "pronunciation": "emetab jamaica",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "November (First Kipsuunde harvest festival month) / December (Second Kipsuunde month)",
+          "translation": "Kipsuunde ne taai / Kipsuunde nebo aeng'",
+          "pronunciation": "kipsuunde ne taai / kipsuunde nebo aeng'",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml) & Hollis (1909)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Kalenjin ecological months (January to June)",
+          "translation": "Mulgul, Ng'atyaato, Kiptaamo, Iwootkuut, Mamuut, Paagi",
+          "pronunciation": "mulgul, ng'atyaato, kiptaamo, iwootkuut, mamuut, paagi",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Kalenjin ecological months (July to October; Rooptui = dark/heavy rains)",
+          "translation": "Ng'eiyeet, Rooptui, Bureet, Epeeso",
+          "pronunciation": "ng'eiyeet, rooptui, bureet, epeeso",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml)",
           "audioFile": null
         }
       ]
@@ -480,38 +1229,80 @@
       "name": "Family & People",
       "entries": [
         {
-          "english": "Mother",
-          "translation": "Koko / Eiyo",
-          "pronunciation": "eh-ee-yoh",
-          "context": "Respectful term for mother",
+          "english": "Eye (primary/secondary form)",
+          "translation": "koonda / koong' (Nandi, Kipsigis, Keiyo, Tugen, Sabaot)",
+          "pronunciation": "koonda / koong' (Nandi, Kipsigis, Keiyo, Tugen, Sabaot)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
           "audioFile": null
         },
         {
-          "english": "Father",
-          "translation": "Kwandanyo / Abba",
-          "pronunciation": "kwahn-dah-nyoh",
-          "context": "Father / Elder",
+          "english": "Ear",
+          "translation": "iitit / iit (Nandi, Kipsigis, Keiyo, Tugen, Sabaot)",
+          "pronunciation": "iitit / iit (Nandi, Kipsigis, Keiyo, Tugen, Sabaot)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
           "audioFile": null
         },
         {
-          "english": "Child",
-          "translation": "Lakwet",
-          "pronunciation": "lah-kweht",
-          "context": "Plural: Lagok (children)",
+          "english": "Nose",
+          "translation": "seruut / ser (Nandi, Kipsigis, Keiyo, Tugen; Sabaot: serwut)",
+          "pronunciation": "seruut / ser (Nandi, Kipsigis, Keiyo, Tugen; Sabaot: serwut)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
           "audioFile": null
         },
         {
-          "english": "Friend",
-          "translation": "Chorwet",
-          "pronunciation": "chohr-weht",
-          "context": "Plural: Choronok",
+          "english": "Tooth",
+          "translation": "keeldet / keelat (Nandi, Kipsigis, Keiyo, Tugen; Terik: keendet)",
+          "pronunciation": "keeldet / keelat (Nandi, Kipsigis, Keiyo, Tugen; Terik: keendet)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
           "audioFile": null
         },
         {
-          "english": "Visitor / Guest",
-          "translation": "Toondet",
-          "pronunciation": "tohn-deht",
-          "context": "Plural: Toek",
+          "english": "Tongue",
+          "translation": "ng'elyepta / ng'elyep (Nandi, Kipsigis, Keiyo, Tugen; Pokot/Marakwet: ng'alyap)",
+          "pronunciation": "ng'elyepta / ng'elyep (Nandi, Kipsigis, Keiyo, Tugen; Pokot/Marakwet: ng'alyap)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / language",
+          "translation": "kuutit / kuut (Nandi, Kipsigis, Keiyo, Tugen, Sabaot, Pokot)",
+          "pronunciation": "kuutit / kuut (Nandi, Kipsigis, Keiyo, Tugen, Sabaot, Pokot)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "kaayneet / kaayne (Nandi, Kipsigis, Keiyo, Tugen, Sabaot; Marakwet: karen)",
+          "pronunciation": "kaayneet / kaayne (Nandi, Kipsigis, Keiyo, Tugen, Sabaot; Marakwet: karen)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Fingernail / claw (Elgon/Terik Kalenjin)",
+          "translation": "puntet",
+          "pronunciation": "puntet",
+          "context": "Wikipedia Terik language — Elgon Kalenjin lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "person (pl. people)",
+          "translation": "chiito (indef. chii, pl. piik)",
+          "pronunciation": "chiito (indef. chii, pl. piik)",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "child (pl. children)",
+          "translation": "lakwet (pl. lagok)",
+          "pronunciation": "lakwet (pl. lagok)",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "woman, wife",
+          "translation": "kwondo (pl. kwonyik)",
+          "pronunciation": "kwondo (pl. kwonyik)",
+          "context": "Nandi / Kipsigis",
           "audioFile": null
         }
       ]
@@ -521,49 +1312,847 @@
       "name": "Food, Livestock & Nature",
       "entries": [
         {
-          "english": "Milk (fermented mursik)",
-          "translation": "Chego / Mursik",
-          "pronunciation": "cheh-goh / moor-seek",
-          "context": "Traditional gourd-fermented milk",
+          "english": "Blood",
+          "translation": "korotiik / koroti (Nandi, Kipsigis, Keiyo, Tugen, Sabaot; Pokot: kisun)",
+          "pronunciation": "korotiik / koroti (Nandi, Kipsigis, Keiyo, Tugen, Sabaot; Pokot: kisun)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
           "audioFile": null
         },
         {
-          "english": "Ugali / Stiff porridge",
-          "translation": "Kimiet",
-          "pronunciation": "kee-myeht",
-          "context": "Staple meal served with milk or greens",
+          "english": "Bone",
+          "translation": "kaaweet / kaawe (Nandi, Kipsigis, Keiyo, Tugen, Sabaot)",
+          "pronunciation": "kaaweet / kaawe (Nandi, Kipsigis, Keiyo, Tugen, Sabaot)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "keetit / keet (Nandi, Kipsigis, Keiyo, Tugen, Sabaot, Pokot)",
+          "pronunciation": "keetit / keet (Nandi, Kipsigis, Keiyo, Tugen, Sabaot, Pokot)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
           "audioFile": null
         },
         {
           "english": "Water",
-          "translation": "Peek",
-          "pronunciation": "pehk",
-          "context": "Fresh water",
+          "translation": "beek / beey (Nandi, Kipsigis, Keiyo, Tugen; Sabaot: peego; Marakwet: bur)",
+          "pronunciation": "beek / beey (Nandi, Kipsigis, Keiyo, Tugen; Sabaot: peego; Marakwet: bur)",
+          "context": "Wikipedia Kalenjin languages — Comparative vocabulary (van Otterloo 1979)",
           "audioFile": null
         },
         {
-          "english": "Cow / Cattle",
-          "translation": "Teta / Tuga",
-          "pronunciation": "teh-tah / too-gah",
-          "context": "Singular: Teta, Plural: Tuga",
+          "english": "Snail (Elgon/Terik Kalenjin)",
+          "translation": "murwaket",
+          "pronunciation": "murwaket",
+          "context": "Wikipedia Terik language — Elgon Kalenjin lexicon",
           "audioFile": null
         },
         {
-          "english": "Sun / God",
-          "translation": "Asis",
-          "pronunciation": "ah-sees",
-          "context": "Sun and traditional name for the Creator (Cheptalel)",
+          "english": "Sheep's tail (Elgon/Terik Kalenjin)",
+          "translation": "musempet",
+          "pronunciation": "musempet",
+          "context": "Wikipedia Terik language — Elgon Kalenjin lexicon",
           "audioFile": null
         },
         {
-          "english": "Rain",
-          "translation": "Robta",
-          "pronunciation": "rohb-tah",
-          "context": "Blessing for pasture and crops",
+          "english": "lion",
+          "translation": "ngetuny",
+          "pronunciation": "ngetuny",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 152) — e.g. Ii-e ngetuny lel. (The lion bears a hyena/jackal (Hollis 1909 Proverb #2).)",
+          "audioFile": null
+        },
+        {
+          "english": "hyena, jackal",
+          "translation": "lel / kimaget",
+          "pronunciation": "lel / kimaget",
+          "context": "Nandi (Hollis 1909, p. 152)",
+          "audioFile": null
+        },
+        {
+          "english": "clever, wise, intelligent",
+          "translation": "ngom",
+          "pronunciation": "ngom",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 152) — e.g. Inga-i ngom, i-ker-i-ke kumut-i? (However clever you may be, can you see the back of your neck? (Hollis 1909 Proverb #4))",
+          "audioFile": null
+        },
+        {
+          "english": "hares, rabbits",
+          "translation": "kiplengoi (sg. kiplengwet)",
+          "pronunciation": "kiplengoi (sg. kiplengwet)",
+          "context": "Nandi / Kipsigis (Hollis 1909, p. 152) — e.g. Iok-toi kiplengoi pelio. (Send hares to the elephant, not elephants to the hare (Hollis 1909 Proverb #7).)",
+          "audioFile": null
+        },
+        {
+          "english": "elephant",
+          "translation": "pelio (peliot)",
+          "pronunciation": "pelio (peliot)",
+          "context": "Nandi / Kalenjin (Hollis 1909, p. 152)",
+          "audioFile": null
+        },
+        {
+          "english": "to send on an errand, dispatch",
+          "translation": "iok-toi (ke-iokto)",
+          "pronunciation": "iok-toi (ke-iokto)",
+          "context": "Nandi (Hollis 1909, p. 152)",
+          "audioFile": null
+        },
+        {
+          "english": "falls, stumbles, trips",
+          "translation": "iput-i (ke-ibut)",
+          "pronunciation": "iput-i (ke-ibut)",
+          "context": "Nandi (Hollis 1909, p. 231)",
+          "audioFile": null
+        },
+        {
+          "english": "to sleep hungry, fast overnight",
+          "translation": "rukut (ko-rukut)",
+          "pronunciation": "rukut (ko-rukut)",
+          "context": "Nandi (Hollis 1909, p. 153)",
+          "audioFile": null
+        },
+        {
+          "english": "broom, sweeping brush",
+          "translation": "kweyot",
+          "pronunciation": "kweyot",
+          "context": "Nandi (Hollis 1909, p. 153) — e.g. A-tinye cheptan-nyo ne-piiy-onyi mutai ko-rukut lakat. — Kweyot. (I have a daughter who gets a good meal every morning, but goes to bed hungry at night. — A broom (Riddle #7).)",
+          "audioFile": null
+        },
+        {
+          "english": "rain",
+          "translation": "roopta",
+          "pronunciation": "roopta",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "horn, ceremonial horn",
+          "translation": "igoondiit",
+          "pronunciation": "igoondiit",
+          "context": "Kipsigis / Nandi",
+          "audioFile": null
+        },
+        {
+          "english": "calabash milk gourd",
+          "translation": "sotet",
+          "pronunciation": "sotet",
+          "context": "Kalenjin",
+          "audioFile": null
+        },
+        {
+          "english": "no",
+          "translation": "achicha / ailing'",
+          "pronunciation": "achicha / ailing'",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "yes",
+          "translation": "ee / wei",
+          "pronunciation": "ee / wei",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "moon, month",
+          "translation": "arawet",
+          "pronunciation": "arawet",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "stone, rock",
+          "translation": "koita (pl. koik)",
+          "pronunciation": "koita (pl. koik)",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "snake",
+          "translation": "erenet",
+          "pronunciation": "erenet",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "fish",
+          "translation": "injiriet",
+          "pronunciation": "injiriet",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "sheep",
+          "translation": "kecheeret (pl. kecheerik)",
+          "pronunciation": "kecheeret (pl. kecheerik)",
+          "context": "Nandi / Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "January (Month 1)",
+          "translation": "Mulgul (Mul)",
+          "pronunciation": "mulgul (mul)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "February (Month 2)",
+          "translation": "Ng’atyaato (Ngat)",
+          "pronunciation": "ng’atyaato (ngat)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "March (Month 3)",
+          "translation": "Kiptaamo (Taa)",
+          "pronunciation": "kiptaamo (taa)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "April (Month 4)",
+          "translation": "Iwootkuut (Iwo)",
+          "pronunciation": "iwootkuut (iwo)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "May (Month 5)",
+          "translation": "Mamuut (Mam)",
+          "pronunciation": "mamuut (mam)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "June (Month 6)",
+          "translation": "Paagi (Paa)",
+          "pronunciation": "paagi (paa)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "July (Month 7)",
+          "translation": "Ng’eiyeet (Nge)",
+          "pronunciation": "ng’eiyeet (nge)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "August (Month 8)",
+          "translation": "Rooptui (Roo)",
+          "pronunciation": "rooptui (roo)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "September (Month 9)",
+          "translation": "Bureet (Bur)",
+          "pronunciation": "bureet (bur)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "October (Month 10)",
+          "translation": "Epeeso (Epe)",
+          "pronunciation": "epeeso (epe)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "November (Month 11)",
+          "translation": "Kipsuunde ne taai (Kpt)",
+          "pronunciation": "kipsuunde ne taai (kpt)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "December (Month 12)",
+          "translation": "Kipsuunde nebo aeng’ (Kpa)",
+          "pronunciation": "kipsuunde nebo aeng’ (kpa)",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Amut",
+          "pronunciation": "amut",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Raini",
+          "pronunciation": "raini",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Mutai",
+          "pronunciation": "mutai",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Year (calendar unit)",
+          "translation": "Kenyit",
+          "pronunciation": "kenyit",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Month (calendar unit)",
+          "translation": "Arawet",
+          "pronunciation": "arawet",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Week (calendar unit)",
+          "translation": "Wikit",
+          "pronunciation": "wikit",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Day (calendar unit)",
+          "translation": "Betut",
+          "pronunciation": "betut",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Hour (time unit)",
+          "translation": "Sait",
+          "pronunciation": "sait",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Minute (time unit)",
+          "translation": "Minitit",
+          "pronunciation": "minitit",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Time zone",
+          "translation": "Saitab sonit",
+          "pronunciation": "saitab sonit",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Kenyan Shilling (KES)",
+          "translation": "Silingitab ya Kenya",
+          "pronunciation": "silingitab ya kenya",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tanzanian Shilling (TZS)",
+          "translation": "silingitab Tanzania",
+          "pronunciation": "silingitab tanzania",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ugandan Shilling (UGX)",
+          "translation": "Silingitab Uganda",
+          "pronunciation": "silingitab uganda",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopian Birr (ETB)",
+          "translation": "Rabisiekab Ethiopia",
+          "pronunciation": "rabisiekab ethiopia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Somali Shilling (SOS)",
+          "translation": "siligitab Somalia",
+          "pronunciation": "siligitab somalia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Rwandan Franc (RWF)",
+          "translation": "Rabisiekab Rwanda",
+          "pronunciation": "rabisiekab rwanda",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Burundian Franc (BIF)",
+          "translation": "Rabisiekab Burundi",
+          "pronunciation": "rabisiekab burundi",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Sudanese Pound (SDG)",
+          "translation": "Pouditab Sudan",
+          "pronunciation": "pouditab sudan",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Congolese Franc (CDF)",
+          "translation": "Rabisiekab Congo",
+          "pronunciation": "rabisiekab congo",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Nigerian Naira (NGN)",
+          "translation": "Rabisiekab Nigeria",
+          "pronunciation": "rabisiekab nigeria",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Egyptian Pound (EGP)",
+          "translation": "Pauditab Misri",
+          "pronunciation": "pauditab misri",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Malawian Kwacha (MWK)",
+          "translation": "Rabisiekaby Malawi",
+          "pronunciation": "rabisiekaby malawi",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Zambian Kwacha (ZMW)",
+          "translation": "Kwachaitab Zambia",
+          "pronunciation": "kwachaitab zambia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Angolan Kwanza (AOA)",
+          "translation": "Rabisiekab Angolan",
+          "pronunciation": "rabisiekab angolan",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Botswanan Pula (BWP)",
+          "translation": "Rabisiekab Botswana",
+          "pronunciation": "rabisiekab botswana",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Namibian Dollar (NAD)",
+          "translation": "Dolaitab Namibia",
+          "pronunciation": "dolaitab namibia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Malagasy Ariary (MGA)",
+          "translation": "Rabisiekab Malagasy",
+          "pronunciation": "rabisiekab malagasy",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Mauritian Rupee (MUR)",
+          "translation": "Rabisiekab Mauritius",
+          "pronunciation": "rabisiekab mauritius",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Seychellois Rupee (SCR)",
+          "translation": "Rabisiekab Shelisheli",
+          "pronunciation": "rabisiekab shelisheli",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Djiboutian Franc (DJF)",
+          "translation": "Rabisiekab Jibuti",
+          "pronunciation": "rabisiekab jibuti",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Eritrean Nakfa (ERN)",
+          "translation": "Rabisiekab Eritrea",
+          "pronunciation": "rabisiekab eritrea",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Libyan Dinar (LYD)",
+          "translation": "Rabisiekab Libya",
+          "pronunciation": "rabisiekab libya",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tunisian Dinar (TND)",
+          "translation": "RabisiekabTunisia",
+          "pronunciation": "rabisiekabtunisia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Algerian Dinar (DZD)",
+          "translation": "Rabisiekab Algerian",
+          "pronunciation": "rabisiekab algerian",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Moroccan Dirham (MAD)",
+          "translation": "Rabisiekab Moroccan",
+          "pronunciation": "rabisiekab moroccan",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Gambian Dalasi (GMD)",
+          "translation": "Rabisiekab Gambia",
+          "pronunciation": "rabisiekab gambia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Liberian Dollar (LRD)",
+          "translation": "Dolaitab Liberia",
+          "pronunciation": "dolaitab liberia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "US Dollar (USD)",
+          "translation": "Dolaitab ya Amareka",
+          "pronunciation": "dolaitab ya amareka",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "British Pound (GBP)",
+          "translation": "pounditab Uingereza",
+          "pronunciation": "pounditab uingereza",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Euro (EUR)",
+          "translation": "Yuroit",
+          "pronunciation": "yuroit",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Indian Rupee (INR)",
+          "translation": "Rabisiekab India",
+          "pronunciation": "rabisiekab india",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese Yuan (CNY)",
+          "translation": "Rabisiekab China",
+          "pronunciation": "rabisiekab china",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese Yen (JPY)",
+          "translation": "Rabisiekab Japan",
+          "pronunciation": "rabisiekab japan",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Riyal (SAR)",
+          "translation": "Rabisiekab Saudia",
+          "pronunciation": "rabisiekab saudia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Swiss Franc (CHF)",
+          "translation": "Rabisiekab Swiss",
+          "pronunciation": "rabisiekab swiss",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Dolaitab Kanada",
+          "pronunciation": "dolaitab kanada",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Australian Dollar (AUD)",
+          "translation": "Dolaitab Australian",
+          "pronunciation": "dolaitab australian",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Kalenjin (Language)",
+          "translation": "Kalenjin",
+          "pronunciation": "kalenjin",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Somali (Language)",
+          "translation": "kutitab Somaliek",
+          "pronunciation": "kutitab somaliek",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "English (Language)",
+          "translation": "kutitab Uingeresa",
+          "pronunciation": "kutitab uingeresa",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "French (Language)",
+          "translation": "kutitab Kifaransa",
+          "pronunciation": "kutitab kifaransa",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "German (Language)",
+          "translation": "kutitab Chermani",
+          "pronunciation": "kutitab chermani",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Spanish (Language)",
+          "translation": "kutitab Espianik",
+          "pronunciation": "kutitab espianik",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Portuguese (Language)",
+          "translation": "kutitab Portugal",
+          "pronunciation": "kutitab portugal",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Italian (Language)",
+          "translation": "kutitab Talianek",
+          "pronunciation": "kutitab talianek",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Dutch (Language)",
+          "translation": "kutitab Boa",
+          "pronunciation": "kutitab boa",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Russian (Language)",
+          "translation": "kutitab Russia",
+          "pronunciation": "kutitab russia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Polish (Language)",
+          "translation": "kutitap Poland",
+          "pronunciation": "kutitap poland",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Ukrainian (Language)",
+          "translation": "kutitab Ukraine",
+          "pronunciation": "kutitab ukraine",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Czech (Language)",
+          "translation": "kutitab Chek",
+          "pronunciation": "kutitab chek",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Greek (Language)",
+          "translation": "kutitab Greece",
+          "pronunciation": "kutitab greece",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Turkish (Language)",
+          "translation": "kutitab Turkey",
+          "pronunciation": "kutitab turkey",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Arabic (Language)",
+          "translation": "kutitab Arabuk",
+          "pronunciation": "kutitab arabuk",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Persian (Language)",
+          "translation": "kutitab Persia",
+          "pronunciation": "kutitab persia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Urdu (Language)",
+          "translation": "kutitab Urdu",
+          "pronunciation": "kutitab urdu",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Hindi (Language)",
+          "translation": "kutitab Maindiik",
+          "pronunciation": "kutitab maindiik",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Bangla (Language)",
+          "translation": "kutitab Bengali",
+          "pronunciation": "kutitab bengali",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Punjabi (Language)",
+          "translation": "kutitab Punjab",
+          "pronunciation": "kutitab punjab",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Tamil (Language)",
+          "translation": "kutitab Tamil",
+          "pronunciation": "kutitab tamil",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Thai (Language)",
+          "translation": "kutitab Thailand",
+          "pronunciation": "kutitab thailand",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Vietnamese (Language)",
+          "translation": "kutitab Vietnam",
+          "pronunciation": "kutitab vietnam",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Indonesian (Language)",
+          "translation": "kutitab Indonesia",
+          "pronunciation": "kutitab indonesia",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Malay (Language)",
+          "translation": "kutitab Malay",
+          "pronunciation": "kutitab malay",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese (Language)",
+          "translation": "kutitab China",
+          "pronunciation": "kutitab china",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese (Language)",
+          "translation": "kutitap Japan",
+          "pronunciation": "kutitap japan",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Korean (Language)",
+          "translation": "kutitab Korea",
+          "pronunciation": "kutitab korea",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Amharic (Language)",
+          "translation": "kutitab Amariek",
+          "pronunciation": "kutitab amariek",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Hausa (Language)",
+          "translation": "kutitab Hausa",
+          "pronunciation": "kutitab hausa",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Igbo (Language)",
+          "translation": "kutitab Igbo",
+          "pronunciation": "kutitab igbo",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Yoruba (Language)",
+          "translation": "kutitab Yoruba",
+          "pronunciation": "kutitab yoruba",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Zulu (Language)",
+          "translation": "kutitab Zulu",
+          "pronunciation": "kutitab zulu",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Kinyarwanda (Language)",
+          "translation": "kutitab Kinyarwanda",
+          "pronunciation": "kutitab kinyarwanda",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Akan (Language)",
+          "translation": "kutitab Aka",
+          "pronunciation": "kutitab aka",
+          "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "KenyaHub Community & Linguistic Reference Dictionary"
+  "source": "Public Domain Dictionary Scaffold"
 }

@@ -1,7 +1,9 @@
 // ============================================================
-// Maasai (Maa) Grammar Reference Guide
-// Based on "Maasai Dictionary" by Charles Richmond (circa 1940,
-// Humboldt State University Press) and Hollis (1905).
+// Maasai (ɔl Maa) Grammar Reference Guide
+// Based on Public Domain & Open-Web Linguistic Sources:
+// 1. A. C. Hollis (1905) "The Masai: Their Language and Folklore" (Clarendon Press, Oxford — Public Domain)
+// 2. C. W. Hobley (1922) "Bantu Beliefs and Magic" (Glossary — Public Domain)
+// 3. Wikipedia Maasai_language, Eastern_Nilotic_languages (Vossen 1982) & Nilotic_languages
 // ============================================================
 
 export interface MaasaiGrammarSection {
@@ -14,127 +16,48 @@ export interface MaasaiGrammarSection {
 
 export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
   {
-    id: 'maasai-gender-articles',
-    title: 'Grammatical Gender Articles & Concord',
-    summary: 'Every Maa noun incorporates an initial gender article marking Masculine (Ol- / Il-) or Feminine (En- / In-), which also encodes size and diminutives.',
-    content: `Charles Richmond (c. 1940) and Hollis (1905) documented the fundamental gender article system of Maa:
-1. **Masculine Articles**:
-   - Singular: **ol-**, **o-**, or **or-** before certain consonants.
-   - Plural: **il-** or **i-**.
-   - Examples:
-     - *ol-tungani* (man) → *il-tungana* (men)
-     - *ol-morani* (warrior) → *il-moran* (warriors)
-     - *ol-ashe* (male calf) → *il-asho* (calves)
-2. **Feminine Articles**:
-   - Singular: **en-**, **eng-**, or **e-**.
-   - Plural: **in-**, **ing-**, or **i-**.
-   - Examples:
-     - *en-gitok* (woman) → *in-gituak* (women)
-     - *en-kerai* (child) → *in-kera* (children)
-     - *eng-are* (water) → *ing-ariak* (waters)
-3. **Semantic Shifts by Gender Alternation**:
-   - Shifting a noun from feminine to masculine augments its scale (makes it larger or coarser), while shifting masculine to feminine imparts a diminutive or affectionate quality:
-     - *ol-chani* (tree / large timber) vs *en-chani* (small shrub / medicinal herb).
-     - *ol-dia* (large dog) vs *en-dia* (small dog / puppy).`,
+    id: "maasai-atr-vowel-harmony-tone",
+    title: "Nine-Vowel ATR Harmony, Implosive Stops & Grammatical Tone in ɔl Maa",
+    summary: "Maa contrasts +ATR (/i, e, o, u/) and -ATR (/ɪ, ɛ, ʊ, ɔ/) vowel sets with neutral /a/, four implosive stops (/ɓ, ɗ, ʄ, ɠ/), and tonal case/aspect inflection.",
+    content: `As documented in Nilotic linguistics and Wikipedia's *Maasai language* reference:
+1. **Advanced Tongue Root (ATR) Vowel Harmony**:
+   - Maa has nine vowel phonemes divided into two harmonic sets plus neutral **/a/**:
+   - **+ATR Set (/i, e, o, u/)**: e.g., **ébúl** (S/he will pierce it), **ol-mosorrî** (egg), **en-kitojó** (rabbit/hare), **atumokî** (to have a good opportunity).
+   - **-ATR Set (/ɪ ⟨ɨ⟩, ɛ, ʊ ⟨ʉ⟩, ɔ/)**: e.g., **ɛ́bʉ́l** (S/he will prosper), **ɛn-kʉ́tʉ́k** (mouth), **kɨʉ́tɨshɔ** (index finger), **atʉmʉ́k** (to brew).
+2. **Tonal Case & Voice Inflection (VSO Word Order)**:
+   - Word order is predominantly **Verb–Subject–Object (VSO)**, and tone patterns distinguish Nominative (subject) from Accusative (object) case as well as active vs. middle voice:
+   - **ɛ́yɛ́tá ɛmʊtí** = "She removed (meat) from the pot" (active perfective; *ɛmʊtí* in Low-High accusative tone).
+   - **ɛyɛ́ta ɛmʊ́ti** = "The pot is de-meated" (imperfective middle; *ɛmʊ́ti* in High-Low nominative tone).`,
     examples: [
-      { maasai: 'ol-morani', english: 'the warrior (masculine singular)', explanation: 'Article ol-' },
-      { maasai: 'il-moran', english: 'the warriors (masculine plural)', explanation: 'Article il-' },
-      { maasai: 'en-kiteng', english: 'the cow (feminine singular)', explanation: 'Article en-' },
-      { maasai: 'in-kishu', english: 'the cattle (feminine plural)', explanation: 'Suppletive plural with feminine article in-' }
+      { maasai: "ébúl (+ATR) vs. ɛ́bʉ́l (-ATR)", english: "S/he will pierce it vs. S/he will prosper", explanation: "Minimal pair contrasting +ATR /u/ and -ATR /ʊ/" },
+      { maasai: "ol-mosorrî • en-kitojó • ɛn-kʉ́tʉ́k", english: "egg • rabbit • mouth", explanation: "Masculine ol- and feminine en- nouns with ATR harmony" },
+      { maasai: "ɛ́yɛ́tá ɛmʊtí vs. ɛyɛ́ta ɛmʊ́ti", english: "She removed meat from the pot vs. The pot is de-meated", explanation: "Tonal inflection marking voice and case in VSO syntax" }
     ]
   },
   {
-    id: 'maasai-verb-conjugation',
-    title: 'The Two Verb Classes & Person Prefixes',
-    summary: 'Maa verbs belong to Class 1 (root verbs) or Class 2 (I-prefix verbs), taking person prefixes that indicate the subject.',
-    content: `Maa divides verbs into two morphophonological classes:
-1. **Class 1 (Primitive Verbs)**:
-   - Stems without an inherent initial *i-*:
-   - *a-lo* (to go), *a-lotu* (to come), *a-nya* (to eat), *a-ok* (to drink), *a-dol* (to see), *a-ning* (to hear).
-2. **Class 2 (Derived / I-Verbs)**:
-   - Stems with an inherent prefix *i-*:
-   - *a-irrag* (to lie down / sleep), *a-iro* (to speak), *a-isoma* (to read), *a-itobir* (to fix / prepare).
-
-Subject Prefixes (Indicative Present):
-- 1st Sing (I): **a-** (*a-lo* = I go, *a-ning* = I hear)
-- 2nd Sing (You): **i-** (*i-lo* = you go, *i-ning* = you hear)
-- 3rd Sing (He/She/It): **e-** (*e-lo* = he/she goes, *e-ning* = he/she hears)
-- 1st Plur (We): **ki-** (*ki-lo* = we go, *ki-ning* = we hear)
-- 2nd Plur (You pl.): **i-...-te** (*i-lotu-tu* = you pl. come)
-- 3rd Plur (They): **e-** (*e-lo* = they go, *e-ning* = they hear).`,
+    id: "maasai-noun-genders-numerals-folklore",
+    title: "Three Noun Gender Classes (Ol-, En-, E-), Gendered Numerals & Hollis (1905) Oral Literature",
+    summary: "Maa prefixes mark Masculine (ol-/ɔl-, pl. il-), Feminine/Diminutive (en-/ɛn-, pl. in-), and Place (e-), with numerals 1–4, 7, and 9 inflecting for gender.",
+    content: `From A. C. Hollis (1905) *The Masai: Their Language and Folklore*, C. W. Hobley (1922), and Vossen (1982):
+1. **Three Grammatical Genders (Masculine, Feminine & Place)**:
+   - **Masculine (*ol- / ɔl-*, pl. *il- / ɪl-*)**: Associated with large size, strength, or male beings: *ɔl-aláshɛ̀* (brother), *ol-ŋatúny* (male lion), *ɔl-caní* (tree/medicine), *ol-oiboni* (ritual prophet, pl. *il-oibonok*), *ol-murani* (warrior, pl. *il-muran*).
+   - **Feminine (*en- / ɛn- / e-*, pl. *in- / ɪn-*)**: Associated with female beings, smaller items, or interior spaces: *ɛn-kái / Eng-ai* (God/sky/rain), *e-ŋatúny* (lioness), *ɛŋ-kár-ɛ́* (water/river), *eng-aji* (Maasai house), *en-gerr* (sheep).
+   - **Place Gender (*e- / ne-*)**: Used for locations and spatial pronouns.
+2. **Gender-Inflected Numerals (1–10)**:
+   - Numerals 1, 2, 3, 4, 7, and 9 agree in gender with the noun counted:
+   - **1**: *nabô* (fem.) / *obô* (masc.) / *nebô* (place)
+   - **2**: *aré* (fem.) / *aàre, ɔáre* (masc.)
+   - **3**: *uní* (fem.) / *okúni* (masc.)
+   - **4**: *oŋwán* (fem.) / *oóŋwan* (masc.)
+   - **5**: *ímíêt* • **6**: *ílɛ̂* • **7**: *naápishana* (f.) / *oópishana* (m.) • **8**: *ísíêt* • **9**: *naáudo* (f.) / *oódó* (m.) • **10**: *tɔ́mɔ̂n*.
+3. **Hollis (1905) Proverbs & Riddles**:
+   - *Eata en-gewarie 'n-giyaa* ("The night has ears", Proverb #3).
+   - *Ekwenikye 'n-guk in-guruon* ("Coals laugh at the ashes", Proverb #6).
+   - *Aata 'n-dapan ainei are naarisyo: Eng-ai o en-gap* ("I have two skins, one to lie on and the other to cover myself with: The bare ground and the sky", Riddle #5).`,
     examples: [
-      { maasai: 'A-ramat in-kishu', english: 'I tend the cattle', explanation: 'Class 1 verb with 1st person prefix a-' },
-      { maasai: 'E-sha en-chan', english: 'Rain is falling', explanation: '3rd person singular e-' },
-      { maasai: 'Ki-ok kule', english: 'We drink milk', explanation: '1st person plural ki-' },
-      { maasai: 'I-ning ol-aigwanani?', english: 'Do you hear the council speaker?', explanation: '2nd person singular i-' }
-    ]
-  },
-  {
-    id: 'maasai-word-order',
-    title: 'VSO Syntax & Postposed Modifiers',
-    summary: 'Maa is predominantly a Verb-Subject-Object (VSO) language, where modifying adjectives and numbers follow the noun.',
-    content: `In standard declarative sentences, the verb appears at the beginning of the clause:
-**Verb + Subject + Object**
-- *E-nya ol-morani en-giringo.* = Eats the warrior the meat (The warrior is eating meat).
-- *E-irrag ol-payian te ng-aji.* = Lies down the elder in the house (The elder sleeps in the house).
-
-Post-nominal modifiers:
-- Modifiers follow the noun:
-  - *ol-tungani supat* = a good man
-  - *in-kera sidain* = good children
-  - *in-kishu tomon* = ten cows
-  - *eng-ang ai* = my homestead.`,
-    examples: [
-      { maasai: 'E-nya ol-morani en-giringo', english: 'The warrior is eating meat', explanation: 'VSO: Verb (E-nya) + Subject (ol-morani) + Object (en-giringo)' },
-      { maasai: 'ol-tungani supat', english: 'a good / upright person', explanation: 'Noun + qualifying adjective' },
-      { maasai: 'in-kishu tomon', english: 'ten cattle', explanation: 'Noun + postposed numeral' }
-    ]
-  },
-  // ── EXPANDED GRAMMAR SECTIONS ──
-  {
-    "id": "maasai-pluralization-patterns",
-    "title": "Noun Pluralization Patterns in Olmaa (il- / in- Prefixes & Suffixes)",
-    "summary": "Maasai shifts gender prefixes from singular ol-/en- to plural il-/in- while changing the stem suffix.",
-    "content": "As Charles Richmond's *Maasai Dictionary* demonstrates, Maasai nouns form plurals by combining a **gender prefix shift** (Masculine `ol-` → `il-`; Feminine/Place `en-/e-` → `in-/i-`) with a **stem plural suffix** (`-i`, `-n`, `-a`, `-ishi`, `-itin`) or suppletive root:\n- **Suffix -i / -ni**: *ol-morani* (warrior) → **il-moran**; *ol-ashe* (calf) → **il-asho**.\n- **Suffix -n / -in**: *en-kang'* (homestead/kraal) → **in-kang'itie**; *ol-doinyo* (mountain) → **il-doinyo**.\n- **Suppletive Pastorals**:\n  - *en-kiteng'* (cow) → **in-kishu** (cattle)\n  - *ol-tung'ani* (person) → **il-tung'ana** (people)\n  - *en-kerai* (child) → **in-kera** (children).",
-    "examples": [
-      {
-        "maasai": "en-kiteng' → in-kishu",
-        "english": "cow → cattle",
-        "explanation": "Suppletive feminine plural"
-      },
-      {
-        "maasai": "ol-tung'ani → il-tung'ana",
-        "english": "person → people",
-        "explanation": "Masculine ol- → il- + suffix -a"
-      },
-      {
-        "maasai": "en-kerai → in-kera",
-        "english": "child → children",
-        "explanation": "Feminine en- → in-"
-      }
-    ]
-  },
-  {
-    "id": "maasai-possessives-negation",
-    "title": "Gender-Inflected Possessives & Verbal Negation (m- / me-)",
-    "summary": "Maasai possessives inflect for both the gender and number of the possessed noun, while verbs negate with m-/me-.",
-    "content": "1. **Possessive Pronouns**: Agree with Masculine (`l-`) vs. Feminine (`n-`) and Singular (`a-`) vs. Plural (`aa-`):\n   - **My (1s)**: Masc. sg. **lai** (*ol-chore lai* - my male friend), Fem. sg. **nai** (*en-kiteng' nai* - my cow), Masc. pl. **lainei** (*il-choreta lainei*), Fem. pl. **nainei** (*in-kishu nainei* - my cattle).\n   - **Your (2s)**: Masc. sg. **lino**, Fem. sg. **nino**.\n   - **Our (1p)**: Masc. sg. **laang'**, Fem. sg. **naang'**.\n2. **Verbal Negation**:\n   - Present/Habitual negation prefixes **m-** (1st/2nd person) or **me-** (3rd person) to the verb:\n     - *Aiolou* (I know) → **Maiolo** (I do not know).\n     - *Elo* (He goes) → **Melo** (He does not go).",
-    "examples": [
-      {
-        "maasai": "ol-chore lai / en-kiteng' nai",
-        "english": "my friend (m.) / my cow (f.)",
-        "explanation": "Masculine lai vs. Feminine nai"
-      },
-      {
-        "maasai": "in-kishu nainei",
-        "english": "my cattle (fem. plural)",
-        "explanation": "Feminine plural possessive nainei"
-      },
-      {
-        "maasai": "Maiolo / Melo",
-        "english": "I do not know / He does not go",
-        "explanation": "Negative prefixes m- (1s) and me- (3s)"
-      }
+      { maasai: "ol-ŋatúny (masc.) vs. e-ŋatúny (fem.)", english: "male lion vs. lioness", explanation: "Productive gender prefix alternation ol- vs. e-" },
+      { maasai: "nabô / obô / nebô (1) • aré / aàre (2) • uní / okúni (3)", english: "one (f./m./place) • two (f./m.) • three (f./m.)", explanation: "Gendered cardinal numerals in Maa" },
+      { maasai: "Eata en-gewarie 'n-giyaa", english: "The night has ears", explanation: "A. C. Hollis (1905) The Masai: Their Language and Folklore, p. 238" }
     ]
   }
 ];

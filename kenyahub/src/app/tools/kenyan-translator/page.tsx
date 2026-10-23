@@ -132,7 +132,7 @@ const faq = [
 // ─── Component ───
 export default function KenyanTranslatorPage() {
   const [sourceLanguage, setSourceLanguage] = useState("english");
-  const [targetLanguage, setTargetLanguage] = useState("swahili");
+  const [targetLanguage, setTargetLanguage] = useState("kamba");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<"translate" | "compare" | "browse">("translate");
@@ -446,10 +446,14 @@ export default function KenyanTranslatorPage() {
   // ─── Random Word Feature ───
   const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string } | null>(null);
   const getRandomWord = useCallback(() => {
-    const dict = ALL_DICTS[Math.floor(Math.random() * ALL_DICTS.length)];
-    const cat = dict.categories[Math.floor(Math.random() * dict.categories.length)];
+    const populatedDicts = ALL_DICTS.filter((d) => d.categories.some((c) => c.entries.length > 0));
+    if (populatedDicts.length === 0) return;
+    const dict = populatedDicts[Math.floor(Math.random() * populatedDicts.length)];
+    const validCats = dict.categories.filter((c) => c.entries.length > 0);
+    if (validCats.length === 0) return;
+    const cat = validCats[Math.floor(Math.random() * validCats.length)];
     const entry = cat.entries[Math.floor(Math.random() * cat.entries.length)];
-    setRandomWord({ entry, langName: dict.languageName });
+    if (entry) setRandomWord({ entry, langName: dict.languageName });
   }, []);
 
   useEffect(() => { getRandomWord(); }, [getRandomWord]);

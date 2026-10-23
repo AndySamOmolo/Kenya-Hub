@@ -365,7 +365,7 @@
         "Speaker numbers are estimates based on KNBS 2019 Census ethnic population data (language \u2248 ethnicity for most groups).",
         "County-level language dominance is approximate. Urban areas (especially Nairobi, Mombasa) are highly multilingual.",
         "Several Kenyan languages are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Suba, and Omotik.",
-        "Data compiled from KNBS 2019 Census, Ethnologue, and UNESCO Atlas of the World's Languages in Danger."
+        "Data compiled from KNBS 2019 Census and public-domain linguistic records."
       ],
       "faq": [
         {
@@ -1679,7 +1679,7 @@
         "Speaker numbers are estimates based on KNBS 2019 Census ethnic population data (language \u2248 ethnicity for most groups).",
         "County-level language dominance is approximate. Urban areas (especially Nairobi, Mombasa) are highly multilingual.",
         "Several Kenyan languages are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Suba, and Omotik.",
-        "Data compiled from KNBS 2019 Census, Ethnologue, and UNESCO Atlas of the World's Languages in Danger."
+        "Data compiled from KNBS 2019 Census and public-domain linguistic records."
       ],
       "faq": [
         {
@@ -1853,7 +1853,7 @@
       "slug": "kikuyu-proverbs",
       "notesTitle": "Important Notes & About the Data",
       "notes": [
-        "Digitized from \"G\u0129k\u0169y\u0169 Proverbs\" by Father C. Barra (Consolata Missionaries, Nyeri, 1939; 2nd ed. Kenya Literature Bureau, 1960).",
+        "Public domain oral wisdom and historical linguistic scaffold (1885–1922).",
         "Contains 989 authentic Ag\u0129k\u0169y\u0169 proverbs (Thimo cia G\u0129k\u0169y\u0169) with literal translations, cultural explanations, and English equivalents.",
         "Search is diacritic-tolerant: typing u or i automatically matches G\u0129k\u0169y\u0169 tilded vowels \u0169 and \u0129."
       ],
@@ -1863,7 +1863,7 @@
           "answer": "Thimo cia G\u0129k\u0169y\u0169 are traditional Kikuyu proverbs that embody the philosophical, moral, legal, and communal wisdom of the Ag\u0129k\u0169y\u0169 people. They were traditionally transmitted orally across generations and served as legal precedents in traditional elders' courts (k\u0129ama), moral lessons for youth, and concise summaries of human nature."
         },
         {
-          "question": "Who was Fr. G. Barra and what is the source of these proverbs?",
+          "question": "What are the sources for the language and proverb hub?",
           "answer": "Father G. Barra was an Italian Catholic missionary of the Consolata Fathers who worked extensively among the Ag\u0129k\u0169y\u0169 in Central Kenya (particularly Nyeri). In 1939, he compiled and published '1,000 Kikuyu Proverbs' (reprinted by the Kenya Literature Bureau / Macmillan). His collection is one of the most authoritative and comprehensive records of Kikuyu proverbial lore in existence."
         },
         {

@@ -14,7 +14,7 @@
   "hasAudio": false,
   "dictionaryVersion": "0.2.0",
   "lastUpdated": "2026-10-20",
-  "contributorNote": "Dholuo is a River-Lake Nilotic language spoken in the Lake Victoria basin of Western Kenya. Core data rebuilt from 'A Handbook of the Kavirondo Language' by Mill-Hill Fathers (1920), supplemented by Tiba Foundation community references.",
+  "contributorNote": "Dholuo public-domain vocabulary compiled from 'A Handbook of the Kavirondo Language' by the Fathers of St. Joseph's Society (Mill-Hill, London / Kisumu, 1920).",
   "categories": [
     {
       "id": "greetings",
@@ -314,6 +314,62 @@
           "pronunciation": "mee-ah",
           "context": "'Mia' borrowed from Kiswahili",
           "audioFile": null
+        },
+        {
+          "english": "Bring three chairs",
+          "translation": "Kel kombe adek",
+          "pronunciation": "kel kombe adek.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "All",
+          "translation": "Dundo",
+          "pronunciation": "dundo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Few, little",
+          "translation": "Matin",
+          "pronunciation": "matin",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Many",
+          "translation": "Mang'eny",
+          "pronunciation": "mang'eny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "First",
+          "translation": "Marachiel",
+          "pronunciation": "marachiel",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Second",
+          "translation": "Mar ariyo",
+          "pronunciation": "mar ariyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Half",
+          "translation": "Kuchiel",
+          "pronunciation": "kuchiel",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Second (time unit)",
+          "translation": "nyiriri mar saa",
+          "pronunciation": "nyiriri mar saa",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
         }
       ]
     },
@@ -411,6 +467,258 @@
           "translation": "Osiep",
           "pronunciation": "oh-see-ehp",
           "context": "Osiepna = my friend",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Kombe mag won ni malo",
+          "pronunciation": "kombe mag won ni malo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Min",
+          "pronunciation": "min",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Girl",
+          "translation": "Nyako",
+          "pronunciation": "nyako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A man",
+          "translation": "Dhano",
+          "pronunciation": "dhano",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A woman",
+          "translation": "Dhako",
+          "pronunciation": "dhako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A girl",
+          "translation": "Nyako",
+          "pronunciation": "nyako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A female child",
+          "translation": "Nyathi manyako",
+          "pronunciation": "nyathi manyako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Ruoth",
+          "pronunciation": "ruoth",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bride",
+          "translation": "Miaha",
+          "pronunciation": "miaha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestor",
+          "translation": "Kwar",
+          "pronunciation": "kwar",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Servant",
+          "translation": "Boy",
+          "pronunciation": "boy",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Youth",
+          "translation": "Rawera",
+          "pronunciation": "rawera",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A lame person",
+          "translation": "Rang'ol",
+          "pronunciation": "rang'ol",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "Dhano",
+          "pronunciation": "dhano",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Dhako",
+          "pronunciation": "dhako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Boy",
+          "translation": "Woyi",
+          "pronunciation": "woyi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Person",
+          "translation": "Ng'ato",
+          "pronunciation": "ng'ato",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Slave",
+          "translation": "Misumba",
+          "pronunciation": "misumba",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Orphan",
+          "translation": "Kich",
+          "pronunciation": "kich",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Husband",
+          "translation": "Chwo",
+          "pronunciation": "chwo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Wife",
+          "translation": "Dhako",
+          "pronunciation": "dhako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Son",
+          "translation": "Woyi",
+          "pronunciation": "woyi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Person",
+          "translation": "Ng’ato",
+          "pronunciation": "ng’ato",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "My sister",
+          "translation": "Nyamera",
+          "pronunciation": "nyamera",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A person stays",
+          "translation": "Ng'ato odelo",
+          "pronunciation": "ng'ato odelo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A sick person",
+          "translation": "Ng’amatuwo",
+          "pronunciation": "ng’amatuwo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sick people",
+          "translation": "Jomatuwo",
+          "pronunciation": "jomatuwo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A crooked man",
+          "translation": "Rabam",
+          "pronunciation": "rabam",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A lame person",
+          "translation": "Rang’ol",
+          "pronunciation": "rang’ol",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A crooked man",
+          "translation": "Jarabam",
+          "pronunciation": "jarabam",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "An ordinary chief",
+          "translation": "Ruoth aruotha",
+          "pronunciation": "ruoth aruotha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "First-born of twins",
+          "translation": "Opiyo (m.) / Apiyo (f.)",
+          "pronunciation": "opiyo (m.) / apiyo (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Kinship & birth order",
+          "audioFile": null
+        },
+        {
+          "english": "Second-born of twins",
+          "translation": "Odongo (m.) / Adongo (f.)",
+          "pronunciation": "odongo (m.) / adongo (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Kinship & birth order",
+          "audioFile": null
+        },
+        {
+          "english": "Child born immediately after twins",
+          "translation": "Okelo (m.) / Akelo (f.)",
+          "pronunciation": "okelo (m.) / akelo (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Kinship & birth order",
+          "audioFile": null
+        },
+        {
+          "english": "Only child",
+          "translation": "Obong'o (m.) / Abong'o (f.)",
+          "pronunciation": "obong'o (m.) / abong'o (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Kinship & birth order",
+          "audioFile": null
+        },
+        {
+          "english": "Born during a council meeting (root: bura = assembly/council)",
+          "translation": "Obura (m.) / Abura (f.)",
+          "pronunciation": "obura (m.) / abura (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Cultural naming",
           "audioFile": null
         }
       ]
@@ -516,6 +824,104 @@
           "translation": "Kong'o",
           "pronunciation": "kohng-oh",
           "context": "Traditional brew",
+          "audioFile": null
+        },
+        {
+          "english": "Drink clean water",
+          "translation": "Madhi pi malew",
+          "pronunciation": "madhi pi malew.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Wimbi",
+          "translation": "Kal",
+          "pronunciation": "kal",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Fruit",
+          "translation": "Olemo",
+          "pronunciation": "olemo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pumpkin",
+          "translation": "Budho",
+          "pronunciation": "budho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Gourd",
+          "translation": "Puga",
+          "pronunciation": "puga",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The tobacco of",
+          "translation": "Nandi",
+          "pronunciation": "nandi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Feast, pl",
+          "translation": "Sawo",
+          "pronunciation": "sawo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Ring’o",
+          "pronunciation": "ring’o",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Beer",
+          "translation": "Kong’o",
+          "pronunciation": "kong’o",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Salt",
+          "translation": "Bala",
+          "pronunciation": "bala",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A cook",
+          "translation": "Jatedo",
+          "pronunciation": "jatedo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sudanese Pound (SDG)",
+          "translation": "Pauni ya Sudani",
+          "pronunciation": "pauni ya sudani",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Egyptian Pound (EGP)",
+          "translation": "Paund mar Misri",
+          "pronunciation": "paund mar misri",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "British Pound (GBP)",
+          "translation": "Pauni mar Uingereza",
+          "pronunciation": "pauni mar uingereza",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
@@ -629,6 +1035,300 @@
           "pronunciation": "nyahng",
           "context": "",
           "audioFile": null
+        },
+        {
+          "english": "Moth",
+          "translation": "Liny",
+          "pronunciation": "liny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ram",
+          "translation": "Yim",
+          "pronunciation": "yim",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Rat",
+          "translation": "Yieyo",
+          "pronunciation": "yieyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Herd",
+          "translation": "Kweth",
+          "pronunciation": "kweth",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A bull",
+          "translation": "Ruath",
+          "pronunciation": "ruath",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A cow",
+          "translation": "Dwasi",
+          "pronunciation": "dwasi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A heifer",
+          "translation": "Roya",
+          "pronunciation": "roya",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A calf",
+          "translation": "Nyaroya",
+          "pronunciation": "nyaroya",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hyaena",
+          "translation": "Ondiek",
+          "pronunciation": "ondiek",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Rhino",
+          "translation": "Omuga",
+          "pronunciation": "omuga",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "Dwasi",
+          "pronunciation": "dwasi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Caterpillar",
+          "translation": "Ombembo",
+          "pronunciation": "ombembo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mole",
+          "translation": "Fuko",
+          "pronunciation": "fuko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hide",
+          "translation": "Pien",
+          "pronunciation": "pien",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hornet",
+          "translation": "Pino",
+          "pronunciation": "pino",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A black ant",
+          "translation": "Olang’",
+          "pronunciation": "olang’",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Duck",
+          "translation": "Atudo",
+          "pronunciation": "atudo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Tick",
+          "translation": "Okwodo",
+          "pronunciation": "okwodo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Monkey",
+          "translation": "Ong’er",
+          "pronunciation": "ong’er",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pigeon",
+          "translation": "Akuru",
+          "pronunciation": "akuru",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Rabbit",
+          "translation": "Apwoyo",
+          "pronunciation": "apwoyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey",
+          "translation": "Kanyina",
+          "pronunciation": "kanyina",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Calf",
+          "translation": "Roya",
+          "pronunciation": "roya",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ostrich",
+          "translation": "Udo",
+          "pronunciation": "udo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hippo",
+          "translation": "Ravo",
+          "pronunciation": "ravo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle",
+          "translation": "Dhiang'",
+          "pronunciation": "dhiang'",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Fowl",
+          "translation": "Gweno",
+          "pronunciation": "gweno",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A bull-calf",
+          "translation": "Nyaruath",
+          "pronunciation": "nyaruath",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bull-calves",
+          "translation": "Nyiruedhi",
+          "pronunciation": "nyiruedhi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Guog",
+          "pronunciation": "guog",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle",
+          "translation": "Dhok",
+          "pronunciation": "dhok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bee",
+          "translation": "Kich",
+          "pronunciation": "kich",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "Dhiang’",
+          "pronunciation": "dhiang’",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle",
+          "translation": "Jamini",
+          "pronunciation": "jamini",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Winjo",
+          "pronunciation": "winjo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Tortoise",
+          "translation": "Opuk",
+          "pronunciation": "opuk",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "That tortoise",
+          "translation": "Opugno",
+          "pronunciation": "opugno",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Stork",
+          "translation": "Magungugungu marabou",
+          "pronunciation": "magungugungu\nmarabou",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "Rao / Rawo",
+          "pronunciation": "rao / rawo",
+          "context": "Wiktionary Appendix:Luo surnames — Animal lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "Omuga / Muga",
+          "pronunciation": "omuga / muga",
+          "context": "Wiktionary Appendix:Luo surnames — Animal lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Wild cat",
+          "translation": "Ogwang'",
+          "pronunciation": "ogwang'",
+          "context": "Wiktionary Appendix:Luo surnames — Animal lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Lizard",
+          "translation": "Ogweyo",
+          "pronunciation": "ogweyo",
+          "context": "Wiktionary Appendix:Luo surnames — Animal lexicon",
+          "audioFile": null
         }
       ]
     },
@@ -720,6 +1420,363 @@
           "pronunciation": "mahch",
           "context": "",
           "audioFile": null
+        },
+        {
+          "english": "Country",
+          "translation": "Piny",
+          "pronunciation": "piny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A hole",
+          "translation": "Bur",
+          "pronunciation": "bur",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Yath",
+          "pronunciation": "yath",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mushroom",
+          "translation": "Obwolo",
+          "pronunciation": "obwolo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A tree",
+          "translation": "Siala",
+          "pronunciation": "siala",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Shadow",
+          "translation": "Tipo",
+          "pronunciation": "tipo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "Got",
+          "pronunciation": "got",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Thorn",
+          "translation": "Kudho",
+          "pronunciation": "kudho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hole",
+          "translation": "Bur",
+          "pronunciation": "bur",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Kigelia tree",
+          "translation": "Yago",
+          "pronunciation": "yago",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Seed",
+          "translation": "Kodhi",
+          "pronunciation": "kodhi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Season",
+          "translation": "Higa",
+          "pronunciation": "higa",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hole",
+          "translation": "Bugo",
+          "pronunciation": "bugo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Twig",
+          "translation": "Kedo",
+          "pronunciation": "kedo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sleeping place",
+          "translation": "Karnindo",
+          "pronunciation": "karnindo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sitting place",
+          "translation": "Karbet",
+          "pronunciation": "karbet",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "Dwe",
+          "pronunciation": "dwe",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Chieng'",
+          "pronunciation": "chieng'",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Road",
+          "translation": "Yo",
+          "pronunciation": "yo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "Bungu",
+          "pronunciation": "bungu",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Fungus",
+          "translation": "Obwolo",
+          "pronunciation": "obwolo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The road",
+          "translation": "Kibos",
+          "pronunciation": "kibos",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Land",
+          "translation": "Piny",
+          "pronunciation": "piny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Rock",
+          "translation": "Lwanda",
+          "pronunciation": "lwanda",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Spring",
+          "translation": "Soko",
+          "pronunciation": "soko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ravine",
+          "translation": "Hoho",
+          "pronunciation": "hoho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Day after to-morrow",
+          "translation": "Orucha",
+          "pronunciation": "orucha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Day before yesterday",
+          "translation": "Nocha",
+          "pronunciation": "nocha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Since yesterday",
+          "translation": "Manyakanyoro",
+          "pronunciation": "manyakanyoro",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Across the river",
+          "translation": "Lokacha",
+          "pronunciation": "lokacha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "On the ground",
+          "translation": "Piny",
+          "pronunciation": "piny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Well",
+          "translation": "Maber",
+          "pronunciation": "maber",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A road",
+          "translation": "Wang’yo",
+          "pronunciation": "wang’yo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Born during a locust swarm (root: bonyo = locust)",
+          "translation": "Obonyo (m.) / Abonyo (f.)",
+          "pronunciation": "obonyo (m.) / abonyo (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Environmental naming",
+          "audioFile": null
+        },
+        {
+          "english": "Lake Victoria (the great expanse)",
+          "translation": "Nam Lolwe",
+          "pronunciation": "nam lolwe",
+          "context": "Wikipedia Dholuo — Geographic lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "January (Month 1)",
+          "translation": "Dwe mar Achiel (DAC)",
+          "pronunciation": "dwe mar achiel (dac)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "February (Month 2)",
+          "translation": "Dwe mar Ariyo (DAR)",
+          "pronunciation": "dwe mar ariyo (dar)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "March (Month 3)",
+          "translation": "Dwe mar Adek (DAD)",
+          "pronunciation": "dwe mar adek (dad)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "April (Month 4)",
+          "translation": "Dwe mar Ang’wen (DAN)",
+          "pronunciation": "dwe mar ang’wen (dan)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "May (Month 5)",
+          "translation": "Dwe mar Abich (DAH)",
+          "pronunciation": "dwe mar abich (dah)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "June (Month 6)",
+          "translation": "Dwe mar Auchiel (DAU)",
+          "pronunciation": "dwe mar auchiel (dau)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "July (Month 7)",
+          "translation": "Dwe mar Abiriyo (DAO)",
+          "pronunciation": "dwe mar abiriyo (dao)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "August (Month 8)",
+          "translation": "Dwe mar Aboro (DAB)",
+          "pronunciation": "dwe mar aboro (dab)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "September (Month 9)",
+          "translation": "Dwe mar Ochiko (DOC)",
+          "pronunciation": "dwe mar ochiko (doc)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "October (Month 10)",
+          "translation": "Dwe mar Apar (DAP)",
+          "pronunciation": "dwe mar apar (dap)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "November (Month 11)",
+          "translation": "Dwe mar gi achiel (DGI)",
+          "pronunciation": "dwe mar gi achiel (dgi)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "December (Month 12)",
+          "translation": "Dwe mar Apar gi ariyo (DAG)",
+          "pronunciation": "dwe mar apar gi ariyo (dag)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "kawuono",
+          "pronunciation": "kawuono",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Year (calendar unit)",
+          "translation": "higa",
+          "pronunciation": "higa",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Month (calendar unit)",
+          "translation": "dwe",
+          "pronunciation": "dwe",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Day (calendar unit)",
+          "translation": "chieng’",
+          "pronunciation": "chieng’",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
         }
       ]
     },
@@ -810,6 +1867,314 @@
           "translation": "Kwesi",
           "pronunciation": "kweh-see",
           "context": "Pl: Kwesini",
+          "audioFile": null
+        },
+        {
+          "english": "We love home",
+          "translation": "Wan wahero pacho",
+          "pronunciation": "wan wahero pacho.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Garden",
+          "translation": "Paodho",
+          "pronunciation": "paodho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Roof",
+          "translation": "Tado",
+          "pronunciation": "tado",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Village",
+          "translation": "Dala",
+          "pronunciation": "dala",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Basket",
+          "translation": "Asoka",
+          "pronunciation": "asoka",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Basket",
+          "translation": "Adita",
+          "pronunciation": "adita",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A spear",
+          "translation": "Dindo",
+          "pronunciation": "dindo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Athero",
+          "pronunciation": "athero",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Kraal",
+          "translation": "Kul",
+          "pronunciation": "kul",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mat",
+          "translation": "Par",
+          "pronunciation": "par",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Basket",
+          "translation": "Odheru",
+          "pronunciation": "odheru",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pot",
+          "translation": "Dak",
+          "pronunciation": "dak",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Book",
+          "translation": "Kitabu",
+          "pronunciation": "kitabu",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ring",
+          "translation": "Bony",
+          "pronunciation": "bony",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth",
+          "translation": "Law",
+          "pronunciation": "law",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Fishing net",
+          "translation": "Gogo",
+          "pronunciation": "gogo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Water pot",
+          "translation": "Dapi",
+          "pronunciation": "dapi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Boundary",
+          "translation": "Tong'gweng'",
+          "pronunciation": "tong'gweng'",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Axe",
+          "translation": "Le",
+          "pronunciation": "le",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Canoe",
+          "translation": "Yie",
+          "pronunciation": "yie",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hat",
+          "translation": "Kondo",
+          "pronunciation": "kondo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "Agulu",
+          "pronunciation": "agulu",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hut",
+          "translation": "Abila",
+          "pronunciation": "abila",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Garden",
+          "translation": "Ndalo",
+          "pronunciation": "ndalo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Oar",
+          "translation": "Nyaye",
+          "pronunciation": "nyaye",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bellows",
+          "translation": "Buk",
+          "pronunciation": "buk",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The bellows",
+          "translation": "Bug theth",
+          "pronunciation": "bug theth",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A water pot",
+          "translation": "Dapi",
+          "pronunciation": "dapi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Village",
+          "translation": "Pacho",
+          "pronunciation": "pacho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Chair, pl",
+          "translation": "Kom",
+          "pronunciation": "kom",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "My chair",
+          "translation": "Koma",
+          "pronunciation": "koma",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Vessel",
+          "translation": "Dak",
+          "pronunciation": "dak",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Club",
+          "translation": "Rungu",
+          "pronunciation": "rungu",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Kraal",
+          "translation": "Dipo",
+          "pronunciation": "dipo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "My arrow",
+          "translation": "Athecha",
+          "pronunciation": "athecha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Village",
+          "translation": "Mier",
+          "pronunciation": "mier",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "That garden",
+          "translation": "Puodhono",
+          "pronunciation": "puodhono",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bell",
+          "translation": "Okot",
+          "pronunciation": "okot",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "At home",
+          "translation": "Pacho",
+          "pronunciation": "pacho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Home",
+          "translation": "Thuehegi",
+          "pronunciation": "thuehegi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A fence",
+          "translation": "Aluor",
+          "pronunciation": "aluor",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A mill",
+          "translation": "Regerege",
+          "pronunciation": "regerege",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Spoon",
+          "translation": "Kijiko",
+          "pronunciation": "kijiko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Seychellois Rupee (SCR)",
+          "translation": "Rupia ya Shelisheli",
+          "pronunciation": "rupia ya shelisheli",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
@@ -958,6 +2323,2407 @@
           "pronunciation": "dhee-yoh",
           "context": "",
           "audioFile": null
+        },
+        {
+          "english": "Dholuo has no English letters c, j, q, v, x, z",
+          "translation": "Dholuo onge herufi c, j, q, v, x, z mag dho ngere",
+          "pronunciation": "dholuo onge herufi c, j, q, v, x, z mag dho ngere.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "We speak Dholuo well",
+          "translation": "Wawacho dholuo maber",
+          "pronunciation": "wawacho dholuo maber.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Read these words well",
+          "translation": "Soma wechegi maber",
+          "pronunciation": "soma wechegi maber.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The teacher reads his books",
+          "translation": "Japuonj somo bugene",
+          "pronunciation": "japuonj somo bugene.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "When we build a good house",
+          "translation": "Ka wagero ot maber",
+          "pronunciation": "ka wagero ot maber.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "He is still asleep in the house",
+          "translation": "Podi onindo e ot",
+          "pronunciation": "podi onindo e ot.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The cook cooks food",
+          "translation": "Jatedo tedi chiemo",
+          "pronunciation": "jatedo tedi chiemo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A good person came",
+          "translation": "Dhano maber obiro",
+          "pronunciation": "dhano maber obiro.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The girl goes here",
+          "translation": "Nyako dhi ka",
+          "pronunciation": "nyako dhi ka.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The boy wants food",
+          "translation": "Woyi dwaro kuon",
+          "pronunciation": "woyi dwaro kuon.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Otieno was born at night",
+          "translation": "Otieno nonyuol gotieno",
+          "pronunciation": "otieno nonyuol gotieno.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Akinyi was born in the morning",
+          "translation": "Akinyi nonyuol gokinyi",
+          "pronunciation": "akinyi nonyuol gokinyi.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "All the dogs are running",
+          "translation": "Guogi duto ringo",
+          "pronunciation": "guogi duto ringo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The cattle are in the yard",
+          "translation": "Dhok ni e laro",
+          "pronunciation": "dhok ni e laro.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The children are sleeping",
+          "translation": "Nyithindo nindo",
+          "pronunciation": "nyithindo nindo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The chicken eats millet",
+          "translation": "Gweno chamo kal",
+          "pronunciation": "gweno chamo kal.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Peter",
+          "translation": "Kwesi mar Petrus ni ka",
+          "pronunciation": "kwesi mar petrus ni ka.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mother and father love the child",
+          "translation": "Min gi won ohero nyathi",
+          "pronunciation": "min gi won ohero nyathi.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "My house is near the river",
+          "translation": "Oda ni but aora",
+          "pronunciation": "oda ni but aora.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "All the home people are sleeping",
+          "translation": "Jo dala duto nindo",
+          "pronunciation": "jo dala duto nindo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Grandmother cooks good ugali",
+          "translation": "Dayo tedi kuon maber",
+          "pronunciation": "dayo tedi kuon maber.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I have two people",
+          "translation": "An gi ji ariyo",
+          "pronunciation": "an gi ji ariyo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I am going to the market",
+          "translation": "An adhi e chiro",
+          "pronunciation": "an adhi e chiro.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I myself built my house",
+          "translation": "An awuon aloso oda",
+          "pronunciation": "an awuon aloso oda.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "He lives there alone",
+          "translation": "En kende odak kanyo",
+          "pronunciation": "en kende odak kanyo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "This house is mine",
+          "translation": "Ot ma en mara",
+          "pronunciation": "ot ma en mara.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Those people are going to the market",
+          "translation": "Ji macha dhi chiro",
+          "pronunciation": "ji macha dhi chiro.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I love my pipe",
+          "translation": "Ahero kwesi mara",
+          "pronunciation": "ahero kwesi mara.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I loved good food",
+          "translation": "Nahero chiemo maber",
+          "pronunciation": "nahero chiemo maber.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I have loved the journey very much",
+          "translation": "Asehero wuoth ahinya",
+          "pronunciation": "asehero wuoth ahinya.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "They had loved reading books",
+          "translation": "Negisehero somo buge",
+          "pronunciation": "negisehero somo buge.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "We shall love our home",
+          "translation": "Wanaher pacho marwa",
+          "pronunciation": "wanaher pacho marwa.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "They will love good deeds",
+          "translation": "Giniher timbe mabeyo",
+          "pronunciation": "giniher timbe mabeyo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I do not want food now",
+          "translation": "Ok adwar chiemo sani",
+          "pronunciation": "ok adwar chiemo sani.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Do not go to the river",
+          "translation": "Kik idhi e aora",
+          "pronunciation": "kik idhi e aora.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I love myself very much",
+          "translation": "Aherora ahinya",
+          "pronunciation": "aherora ahinya.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "All people assemble here",
+          "translation": "Ji duto chokore kaeni",
+          "pronunciation": "ji duto chokore kaeni.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I want to eat fish with ugali",
+          "translation": "Adwaro chamo rech gi kuon",
+          "pronunciation": "adwaro chamo rech gi kuon.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow we shall go home",
+          "translation": "Kiny wanadhi pacho",
+          "pronunciation": "kiny wanadhi pacho.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Today it is raining",
+          "translation": "Tinende koth chwe",
+          "pronunciation": "tinende koth chwe.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Speak slowly so that I understand you",
+          "translation": "Wach mos mondo awinji",
+          "pronunciation": "wach mos mondo awinji.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "He worked very hard",
+          "translation": "Otiyo matek ahinya",
+          "pronunciation": "otiyo matek ahinya.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning, how are you?",
+          "translation": "Oyawore, nade?",
+          "pronunciation": "oyawore, nade?",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye, we shall see each other again",
+          "translation": "Oriti, wanenre kendo",
+          "pronunciation": "oriti, wanenre kendo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A snake is in the house",
+          "translation": "Thuol ni e ot",
+          "pronunciation": "thuol ni e ot.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cook food so that we eat",
+          "translation": "Tedi kuon mondo wacham",
+          "pronunciation": "tedi kuon mondo wacham.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Wisdom surpasses physical strength",
+          "translation": "Rieko oloyo tek",
+          "pronunciation": "rieko oloyo tek.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Kinship remains kinship even from afar",
+          "translation": "Wat en wat kata mabor",
+          "pronunciation": "wat en wat kata mabor.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I always sit on three chairs",
+          "translation": "Abet e kombe adek kinde duto",
+          "pronunciation": "abet e kombe adek kinde duto.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I live among thorns",
+          "translation": "Adak e kind kuthe",
+          "pronunciation": "adak e kind kuthe.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The hippo fears the elephant, and the elephant fears the hippo",
+          "translation": "Rawo luor liel, liel luor rawo",
+          "pronunciation": "rawo luor liel, liel luor rawo.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "I tie the basket rope, and the basket rope snaps",
+          "translation": "Atud tond atonga, tond atonga chodi",
+          "pronunciation": "atud tond atonga, tond atonga chodi.",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A fishscreen",
+          "translation": "Kek",
+          "pronunciation": "kek",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Fishbone",
+          "translation": "Sara",
+          "pronunciation": "sara",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Tweezers",
+          "translation": "Ndemo",
+          "pronunciation": "ndemo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Carp",
+          "translation": "Ngege",
+          "pronunciation": "ngege",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cowardice",
+          "translation": "Ngoro",
+          "pronunciation": "ngoro",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A figtree",
+          "translation": "Ng'owo",
+          "pronunciation": "ng'owo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "Matin",
+          "pronunciation": "matin",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To breathe",
+          "translation": "Yweyo",
+          "pronunciation": "yweyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Eternal",
+          "translation": "Manyakacieng'",
+          "pronunciation": "manyakacieng'",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "When we build a house",
+          "translation": "K'wagero ot",
+          "pronunciation": "k'wagero ot",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Crowd",
+          "translation": "Oganda",
+          "pronunciation": "oganda",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Dream",
+          "translation": "Lek",
+          "pronunciation": "lek",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Knives",
+          "translation": "Pelini",
+          "pronunciation": "pelini",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Commandment",
+          "translation": "Bura",
+          "pronunciation": "bura",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Witchdoctor",
+          "translation": "Ajuoga",
+          "pronunciation": "ajuoga",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Chigre",
+          "translation": "Mineme",
+          "pronunciation": "mineme",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Shell",
+          "translation": "Gagi",
+          "pronunciation": "gagi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The souls",
+          "translation": "Chuny ji",
+          "pronunciation": "chuny ji",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The characters",
+          "translation": "Kit ji",
+          "pronunciation": "kit ji",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Broth",
+          "translation": "Kuon",
+          "pronunciation": "kuon",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Story",
+          "translation": "Sigana",
+          "pronunciation": "sigana",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Earthen shelf",
+          "translation": "Bop",
+          "pronunciation": "bop",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "District",
+          "translation": "Gweng’",
+          "pronunciation": "gweng’",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Dogdaisy",
+          "translation": "Get",
+          "pronunciation": "get",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A single grain, has a",
+          "translation": "Rath",
+          "pronunciation": "rath",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hymn",
+          "translation": "Wer",
+          "pronunciation": "wer",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Handle",
+          "translation": "Rapur",
+          "pronunciation": "rapur",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pitchfork",
+          "translation": "Ragwar",
+          "pronunciation": "ragwar",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Grandchild",
+          "translation": "Nyakwar",
+          "pronunciation": "nyakwar",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Handle",
+          "translation": "Lok",
+          "pronunciation": "lok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Loin",
+          "translation": "Rok",
+          "pronunciation": "rok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Furrow",
+          "translation": "Kiew",
+          "pronunciation": "kiew",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cross",
+          "translation": "Musalaba",
+          "pronunciation": "musalaba",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Handfull",
+          "translation": "Sanja",
+          "pronunciation": "sanja",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Wheel",
+          "translation": "Ndiga",
+          "pronunciation": "ndiga",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Swamp",
+          "translation": "Dago",
+          "pronunciation": "dago",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Brasswire",
+          "translation": "Mula",
+          "pronunciation": "mula",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Marvel",
+          "translation": "Hono",
+          "pronunciation": "hono",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Workman",
+          "translation": "Jatich",
+          "pronunciation": "jatich",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "An idiot",
+          "translation": "Ng'amofuwo",
+          "pronunciation": "ng'amofuwo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sleeping sickness",
+          "translation": "Nyalolwe",
+          "pronunciation": "nyalolwe",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ants",
+          "translation": "Biye",
+          "pronunciation": "biye",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Locusts",
+          "translation": "Dede",
+          "pronunciation": "dede",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Doctrine",
+          "translation": "Puonj",
+          "pronunciation": "puonj",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Wisdom",
+          "translation": "Rieko",
+          "pronunciation": "rieko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Thing",
+          "translation": "Gi",
+          "pronunciation": "gi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sacrifice",
+          "translation": "Liswa",
+          "pronunciation": "liswa",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A pup",
+          "translation": "Nyaguok",
+          "pronunciation": "nyaguok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Dogs",
+          "translation": "Guogi",
+          "pronunciation": "guogi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pups",
+          "translation": "Nyiguogi",
+          "pronunciation": "nyiguogi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bulls",
+          "translation": "Ruedhi",
+          "pronunciation": "ruedhi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A kitten",
+          "translation": "Nyathi paka",
+          "pronunciation": "nyathi\npaka",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The slave of the chief",
+          "translation": "Misumba ruoth",
+          "pronunciation": "misumba ruoth",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The",
+          "translation": "Luo",
+          "pronunciation": "luo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The shelf of the house",
+          "translation": "Bop ot",
+          "pronunciation": "bop ot",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The whole of a rat",
+          "translation": "Bur oyieyo",
+          "pronunciation": "bur oyieyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The work of teaching",
+          "translation": "Tich puonj",
+          "pronunciation": "tich puonj",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Word",
+          "translation": "Wach",
+          "pronunciation": "wach",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Matama",
+          "translation": "Bel",
+          "pronunciation": "bel",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The story of the girl",
+          "translation": "Sigandi nyako",
+          "pronunciation": "sigandi nyako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The oar of the canoe",
+          "translation": "Ngach yie",
+          "pronunciation": "ngach yie",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The market of the foreigners",
+          "translation": "Mwa",
+          "pronunciation": "mwa",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The bone of a fish",
+          "translation": "Sas rech",
+          "pronunciation": "sas\nrech",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The roof of the house",
+          "translation": "Tat ot",
+          "pronunciation": "tat ot",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A garden of matama",
+          "translation": "Puothi bel",
+          "pronunciation": "puothi bel",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The",
+          "translation": "Remb ruath",
+          "pronunciation": "remb ruath",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The",
+          "translation": "Chiemb guok",
+          "pronunciation": "chiemb guok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The handle of the",
+          "translation": "Log le",
+          "pronunciation": "log le",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The nail of the",
+          "translation": "Kok lwedo",
+          "pronunciation": "kok lwedo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The milk of a cow",
+          "translation": "Cha dhiang’",
+          "pronunciation": "cha dhiang’",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A pot for matama porridge",
+          "translation": "Dakuon",
+          "pronunciation": "dakuon",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A pipe",
+          "translation": "Da ndawa",
+          "pronunciation": "da ndawa",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "District",
+          "translation": "Gweng",
+          "pronunciation": "gweng",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The fire of the pipe",
+          "translation": "Ma kwesi",
+          "pronunciation": "ma kwesi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The fame of the chief",
+          "translation": "Humb ruoth",
+          "pronunciation": "humb ruoth",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Girls",
+          "translation": "Nyiri",
+          "pronunciation": "nyiri",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sons",
+          "translation": "Yawoyi",
+          "pronunciation": "yawoyi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The fat of the",
+          "translation": "Mor dhiang",
+          "pronunciation": "mor dhiang",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The hair of the",
+          "translation": "Yie wish",
+          "pronunciation": "yie wish",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Women",
+          "translation": "Mon",
+          "pronunciation": "mon",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "Maber",
+          "pronunciation": "maber",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Heavy",
+          "translation": "Mapek",
+          "pronunciation": "mapek",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cruel",
+          "translation": "Masasi",
+          "pronunciation": "masasi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Enough",
+          "translation": "Maromo",
+          "pronunciation": "maromo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Some",
+          "translation": "Moko",
+          "pronunciation": "moko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Maber",
+          "translation": "Good",
+          "pronunciation": "good",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mabor, maboyo",
+          "translation": "High",
+          "pronunciation": "high",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Matin, matindo",
+          "translation": "Small",
+          "pronunciation": "small",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Madit, madito",
+          "translation": "Grown up",
+          "pronunciation": "grown up",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Marachar",
+          "translation": "White",
+          "pronunciation": "white",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pier ariyo",
+          "translation": "Twenty",
+          "pronunciation": "twenty",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pier adek",
+          "translation": "Thirty",
+          "pronunciation": "thirty",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pier apar",
+          "translation": "Hundred",
+          "pronunciation": "hundred",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Diichiel",
+          "translation": "One",
+          "pronunciation": "one",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Diiro on ayadiyo",
+          "translation": "Twice",
+          "pronunciation": "twice",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ludha",
+          "translation": "My stick",
+          "pronunciation": "my stick",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Swelling",
+          "translation": "Bura",
+          "pronunciation": "bura",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Verandah",
+          "translation": "Agola",
+          "pronunciation": "agola",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Groin",
+          "translation": "Achiak",
+          "pronunciation": "achiak",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Debt",
+          "translation": "Gowi",
+          "pronunciation": "gowi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Grace",
+          "translation": "Nema",
+          "pronunciation": "nema",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Fetter",
+          "translation": "Seny",
+          "pronunciation": "seny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Soul",
+          "translation": "Chuny",
+          "pronunciation": "chuny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Deed",
+          "translation": "Tim",
+          "pronunciation": "tim",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Foolishness",
+          "translation": "Fup",
+          "pronunciation": "fup",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Journey",
+          "translation": "Woth",
+          "pronunciation": "woth",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Flogging",
+          "translation": "Chwat",
+          "pronunciation": "chwat",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Washing",
+          "translation": "Lwokruok",
+          "pronunciation": "lwokruok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Crown",
+          "translation": "Ligise",
+          "pronunciation": "ligise",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Arrows",
+          "translation": "Atheche",
+          "pronunciation": "atheche",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Your gar",
+          "translation": "Pootheu",
+          "pronunciation": "pootheu",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Side",
+          "translation": "Kor",
+          "pronunciation": "kor",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Strength",
+          "translation": "Teko",
+          "pronunciation": "teko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "That tree over yonder",
+          "translation": "Yath cha",
+          "pronunciation": "yath cha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "That man over there",
+          "translation": "Jandecha",
+          "pronunciation": "jandecha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "That man, is generall, used of",
+          "translation": "Nyieno",
+          "pronunciation": "nyieno",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The other, is more defined",
+          "translation": "Machielo",
+          "pronunciation": "machielo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To love",
+          "translation": "Hero",
+          "pronunciation": "hero",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Delay",
+          "translation": "Delo",
+          "pronunciation": "delo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A person delays me",
+          "translation": "Ng'ato odelo",
+          "pronunciation": "ng'ato odelo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hero",
+          "translation": "Wa",
+          "pronunciation": "wa",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hero",
+          "translation": "Gi",
+          "pronunciation": "gi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Love ye",
+          "translation": "Heruru",
+          "pronunciation": "heruru",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Look",
+          "translation": "Ne",
+          "pronunciation": "ne",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Look ye",
+          "translation": "Neuru",
+          "pronunciation": "neuru",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "See him, look at",
+          "translation": "Nene",
+          "pronunciation": "nene",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Look ye at him",
+          "translation": "Neneuru",
+          "pronunciation": "neneuru",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "That, in order that",
+          "translation": "Nimondo",
+          "pronunciation": "nimondo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Lest",
+          "translation": "Di",
+          "pronunciation": "di",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "It behoves, it fits",
+          "translation": "Oromo",
+          "pronunciation": "oromo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Love",
+          "translation": "Her",
+          "pronunciation": "her",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The praise",
+          "translation": "Pwoyo",
+          "pronunciation": "pwoyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Take care of yourselves",
+          "translation": "Ritreuru",
+          "pronunciation": "ritreuru",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Lwokore",
+          "translation": "To bathe",
+          "pronunciation": "to bathe",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Lokore",
+          "translation": "To turn",
+          "pronunciation": "to turn",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Landore",
+          "translation": "To spread",
+          "pronunciation": "to spread",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Chokore",
+          "translation": "To assemble",
+          "pronunciation": "to assemble",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Losore, ikore",
+          "translation": "To prepare",
+          "pronunciation": "to prepare",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Puonjore",
+          "translation": "To practise",
+          "pronunciation": "to practise",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Nyagore",
+          "translation": "To incline",
+          "pronunciation": "to incline",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Chukore",
+          "translation": "To recover",
+          "pronunciation": "to recover",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Rwakore",
+          "translation": "To dress",
+          "pronunciation": "to dress",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Gonyore",
+          "translation": "To undress",
+          "pronunciation": "to undress",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Pukore",
+          "translation": "To pour",
+          "pronunciation": "to pour",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Very",
+          "translation": "Gilala",
+          "pronunciation": "gilala",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Very",
+          "translation": "Ngang'",
+          "pronunciation": "ngang'",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Very far",
+          "translation": "Lolwe",
+          "pronunciation": "lolwe",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Exceedingly",
+          "translation": "Moloyo",
+          "pronunciation": "moloyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Utterly, quite, outright",
+          "translation": "Chutho",
+          "pronunciation": "chutho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Nearly",
+          "translation": "Both",
+          "pronunciation": "both",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "When",
+          "translation": "Karang'o",
+          "pronunciation": "karang'o",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "Kawon",
+          "pronunciation": "kawon",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "Gonyo",
+          "pronunciation": "gonyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Still, yet",
+          "translation": "Podi",
+          "pronunciation": "podi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To-morrow",
+          "translation": "Kiny",
+          "pronunciation": "kiny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Daily, often, constantly",
+          "translation": "Pilepile",
+          "pronunciation": "pilepile",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "In the day time",
+          "translation": "Odiechieng’",
+          "pronunciation": "odiechieng’",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Afterwards, later on",
+          "translation": "Bang'e",
+          "pronunciation": "bang'e",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Continually, constantly",
+          "translation": "Manyakanende",
+          "pronunciation": "manyakanende",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "From eternity, from all ages",
+          "translation": "Mahito",
+          "pronunciation": "mahito",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Eternally",
+          "translation": "Mochwere",
+          "pronunciation": "mochwere",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Some time ago",
+          "translation": "Nene",
+          "pronunciation": "nene",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Formerly, before",
+          "translation": "Yande",
+          "pronunciation": "yande",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Early, long ago",
+          "translation": "Chon",
+          "pronunciation": "chon",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Presently, soon",
+          "translation": "Bin",
+          "pronunciation": "bin",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Soon, presently, immediately",
+          "translation": "Wang'",
+          "pronunciation": "wang'",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "There, is an exception",
+          "translation": "Eri",
+          "pronunciation": "eri",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "This side",
+          "translation": "Koni",
+          "pronunciation": "koni",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "That side",
+          "translation": "Kono",
+          "pronunciation": "kono",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "This",
+          "translation": "Konni",
+          "pronunciation": "konni",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "On the other side",
+          "translation": "Kocha",
+          "pronunciation": "kocha",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Side",
+          "translation": "Loka",
+          "pronunciation": "loka",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Somewhere, anywhere",
+          "translation": "Kamoro",
+          "pronunciation": "kamoro",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Somewhere",
+          "translation": "Kwonde moko",
+          "pronunciation": "kwonde moko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Everywhere",
+          "translation": "Kwonde duto",
+          "pronunciation": "kwonde duto",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "On top",
+          "translation": "Malo",
+          "pronunciation": "malo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "On top",
+          "translation": "Mwalo",
+          "pronunciation": "mwalo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Below",
+          "translation": "Mwalo",
+          "pronunciation": "mwalo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Inside",
+          "translation": "Iye",
+          "pronunciation": "iye",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "It is inside",
+          "translation": "Ni iye",
+          "pronunciation": "ni iye",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Outside",
+          "translation": "Oko",
+          "pronunciation": "oko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "In the open",
+          "translation": "Lela",
+          "pronunciation": "lela",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "On purpose",
+          "translation": "Mar oyiem",
+          "pronunciation": "mar oyiem",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "In vain, for nothing",
+          "translation": "Kayiem",
+          "pronunciation": "kayiem",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Perhaps",
+          "translation": "Mita",
+          "pronunciation": "mita",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Also too",
+          "translation": "Bende",
+          "pronunciation": "bende",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "How",
+          "translation": "Nade",
+          "pronunciation": "nade",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Publicly",
+          "translation": "Ratiro",
+          "pronunciation": "ratiro",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Together",
+          "translation": "Arum",
+          "pronunciation": "arum",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Incessantly, constantly, for a long time",
+          "translation": "Aming'a",
+          "pronunciation": "aming'a",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Consequently",
+          "translation": "Miti",
+          "pronunciation": "miti",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Why, wherefore",
+          "translation": "N'ang'o",
+          "pronunciation": "n'ang'o",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Again",
+          "translation": "Kendo",
+          "pronunciation": "kendo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Goodness",
+          "translation": "Ber",
+          "pronunciation": "ber",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Badness",
+          "translation": "Rach",
+          "pronunciation": "rach",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Badly",
+          "translation": "Marach",
+          "pronunciation": "marach",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hardness",
+          "translation": "Tek",
+          "pronunciation": "tek",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hard",
+          "translation": "Matek",
+          "pronunciation": "matek",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Stealthily",
+          "translation": "Apanda",
+          "pronunciation": "apanda",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Together with",
+          "translation": "Kodi implies",
+          "pronunciation": "kodi implies",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Now, is used in a naration",
+          "translation": "Koro",
+          "pronunciation": "koro",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "But",
+          "translation": "To",
+          "pronunciation": "to",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A guide",
+          "translation": "Jatelo",
+          "pronunciation": "jatelo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Teachers",
+          "translation": "Jopuonj",
+          "pronunciation": "jopuonj",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A workman",
+          "translation": "Jatich",
+          "pronunciation": "jatich",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Workmen",
+          "translation": "Jotich",
+          "pronunciation": "jotich",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To tempt",
+          "translation": "Temo",
+          "pronunciation": "temo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Temptation",
+          "translation": "Tem",
+          "pronunciation": "tem",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A tempter",
+          "translation": "Jatem",
+          "pronunciation": "jatem",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Tempters",
+          "translation": "Jotem",
+          "pronunciation": "jotem",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A lie",
+          "translation": "Miriambo",
+          "pronunciation": "miriambo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A liar",
+          "translation": "Jamiriambo",
+          "pronunciation": "jamiriambo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Liars",
+          "translation": "Jomiriambo",
+          "pronunciation": "jomiriambo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Madness",
+          "translation": "Neko",
+          "pronunciation": "neko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A madman",
+          "translation": "Janeko",
+          "pronunciation": "janeko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Madmen",
+          "translation": "Joneko",
+          "pronunciation": "joneko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A fool",
+          "translation": "Ng’amafuwo",
+          "pronunciation": "ng’amafuwo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Fools",
+          "translation": "Jomafuwo",
+          "pronunciation": "jomafuwo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A leper",
+          "translation": "Radhoho",
+          "pronunciation": "radhoho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A hump",
+          "translation": "Kuom",
+          "pronunciation": "kuom",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Baldness",
+          "translation": "Bonde",
+          "pronunciation": "bonde",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A baldman",
+          "translation": "Rabondo",
+          "pronunciation": "rabondo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A leper",
+          "translation": "Jaradhoho",
+          "pronunciation": "jaradhoho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A baldman",
+          "translation": "Jarabondo",
+          "pronunciation": "jarabondo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A pitchfork",
+          "translation": "Ragwar",
+          "pronunciation": "ragwar",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A slasher",
+          "translation": "Rabete",
+          "pronunciation": "rabete",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A ladder",
+          "translation": "Raidhi",
+          "pronunciation": "raidhi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A deed, an action",
+          "translation": "Tim",
+          "pronunciation": "tim",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A lesson, a doctrine",
+          "translation": "Puonj",
+          "pronunciation": "puonj",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A stroll",
+          "translation": "Bach",
+          "pronunciation": "bach",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A beating",
+          "translation": "Goch",
+          "pronunciation": "goch",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Diarrhoea",
+          "translation": "Diep",
+          "pronunciation": "diep",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Accompaniment",
+          "translation": "Kop",
+          "pronunciation": "kop",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A flogging",
+          "translation": "Chwat",
+          "pronunciation": "chwat",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A fright",
+          "translation": "Bwok",
+          "pronunciation": "bwok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A division",
+          "translation": "Pok",
+          "pronunciation": "pok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Delight",
+          "translation": "Mor",
+          "pronunciation": "mor",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To ascend, rise",
+          "translation": "Dum",
+          "pronunciation": "dum",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ascension, flight",
+          "translation": "Dum",
+          "pronunciation": "dum",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "An end",
+          "translation": "Giko",
+          "pronunciation": "giko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Cruelty",
+          "translation": "Gero",
+          "pronunciation": "gero",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A shout",
+          "translation": "Koko",
+          "pronunciation": "koko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A curse, insult",
+          "translation": "Ayany",
+          "pronunciation": "ayany",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Nettles",
+          "translation": "Aila",
+          "pronunciation": "aila",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bathing",
+          "translation": "Lwokruok",
+          "pronunciation": "lwokruok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Misbehaviour",
+          "translation": "Dwanyruok",
+          "pronunciation": "dwanyruok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Giddiness",
+          "translation": "Wirawira",
+          "pronunciation": "wirawira",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A swing",
+          "translation": "Runderunde",
+          "pronunciation": "runderunde",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A waterpot",
+          "translation": "Dapi",
+          "pronunciation": "dapi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Jalousy",
+          "translation": "Ichlit",
+          "pronunciation": "ichlit",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Headache",
+          "translation": "Wichbar",
+          "pronunciation": "wichbar",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Soap",
+          "translation": "Sabun",
+          "pronunciation": "sabun",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "The despised vegetable is the one that finishes the ugali (What you look down upon may save you)",
+          "translation": "Alot michayo ema tieko kuon",
+          "pronunciation": "alot michayo ema tieko kuon",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "The croaking/swelling of a frog does not stop a cow from drinking water",
+          "translation": "Kuot ogwal ok mon dhiang' modho pi",
+          "pronunciation": "kuot ogwal ok mon dhiang' modho pi",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "You cannot kill a louse with one finger (Unity is strength)",
+          "translation": "Ok inyal nego chwarni gi lwedo achiel",
+          "pronunciation": "ok inyal nego chwarni gi lwedo achiel",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "Kinship is strengthened with friendship",
+          "translation": "Wat imedo gi osiep",
+          "pronunciation": "wat imedo gi osiep",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "The river of kinship is crossed gently",
+          "translation": "Aora mar wat iridore mos",
+          "pronunciation": "aora mar wat iridore mos",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "A watched cooking pot does not boil (Patience)",
+          "translation": "Agulu mirito ok yieny",
+          "pronunciation": "agulu mirito ok yieny",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "While you are still in the water, do not insult the crocodile",
+          "translation": "Kipod in e pi kik iyany nyang'",
+          "pronunciation": "kipod in e pi kik iyany nyang'",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "Starting early is better than going to the diviner (A stitch in time saves nine)",
+          "translation": "Chako chon oloyo dhi e ajuoga",
+          "pronunciation": "chako chon oloyo dhi e ajuoga",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "Where you bathe is not where you dry yourself",
+          "translation": "Kama iluokorie ok itwoe",
+          "pronunciation": "kama iluokorie ok itwoe",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "Even teeth are bones (Relatives share the same nature)",
+          "translation": "Lak chogo",
+          "pronunciation": "lak chogo",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "God is never despised (Mill-Hill Fathers 1920)",
+          "translation": "Nyasaye nyak ocha (Nyasaye nyak ichayo)",
+          "pronunciation": "nyasaye nyak ocha (nyasaye nyak ichayo)",
+          "context": "Dholuo Proverb (Mill-Hill 1920)",
+          "audioFile": null
+        },
+        {
+          "english": "Speak gently; cease hurrying (Mill-Hill Fathers 1920)",
+          "translation": "Wach mos, we ruyo",
+          "pronunciation": "wach mos, we ruyo",
+          "context": "Dholuo Proverb (Mill-Hill 1920)",
+          "audioFile": null
+        },
+        {
+          "english": "Simply work; do not abandon the work (Mill-Hill Fathers 1920)",
+          "translation": "Turu atiya, kik uwe tich",
+          "pronunciation": "turu atiya, kik uwe tich",
+          "context": "Dholuo Saying (Mill-Hill 1920)",
+          "audioFile": null
+        },
+        {
+          "english": "The eye that is being treated is the one that sheds tears",
+          "translation": "Wang' ma ithiedho ema golo pi",
+          "pronunciation": "wang' ma ithiedho ema golo pi",
+          "context": "Dholuo Proverb",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Jumapil (JMP)",
+          "pronunciation": "jumapil (jmp)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Wuok Tich (WUT)",
+          "pronunciation": "wuok tich (wut)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Tich Ariyo (TAR)",
+          "pronunciation": "tich ariyo (tar)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Tich Adek (TAD)",
+          "pronunciation": "tich adek (tad)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Tich Ang’wen (TAN)",
+          "pronunciation": "tich ang’wen (tan)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Tich Abich (TAB)",
+          "pronunciation": "tich abich (tab)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Ngeso (NGS)",
+          "pronunciation": "ngeso (ngs)",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Before Christ (BC / Historical Era)",
+          "translation": "Kapok Kristo obiro",
+          "pronunciation": "kapok kristo obiro",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Anno Domini (AD / Common Era)",
+          "translation": "Ka Kristo osebiro",
+          "pronunciation": "ka kristo osebiro",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "OD",
+          "pronunciation": "od",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "OT",
+          "pronunciation": "ot",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "ndalo",
+          "pronunciation": "ndalo",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Day of the week",
+          "translation": "ndalo mar juma",
+          "pronunciation": "ndalo mar juma",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Faranga CFA BCEAO",
+          "pronunciation": "faranga cfa bceao",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Faranga CFA BEAC",
+          "pronunciation": "faranga cfa beac",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Kinshasa (Country / Territory)",
+          "translation": "Democratic Republic of the Congo",
+          "pronunciation": "democratic republic of the congo",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Congo",
+          "pronunciation": "congo",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Côte d",
+          "pronunciation": "côte d",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Swaziland",
+          "pronunciation": "swaziland",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Cape Verde Islands",
+          "pronunciation": "cape verde islands",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "São Tomé & Príncipe (Country / Territory)",
+          "translation": "São Tomé gi Príncipe",
+          "pronunciation": "são tomé gi príncipe",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United States (Country / Territory)",
+          "translation": "USA",
+          "pronunciation": "usa",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Palestinian West Bank gi Gaza",
+          "pronunciation": "palestinian west bank gi gaza",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "South Korea (Country / Territory)",
+          "translation": "Korea Milambo",
+          "pronunciation": "korea milambo",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
         }
       ]
     },
@@ -1048,6 +4814,167 @@
           "translation": "Chogo",
           "pronunciation": "choh-goh",
           "context": "Pl: Choke",
+          "audioFile": null
+        },
+        {
+          "english": "A cure",
+          "translation": "Thieth",
+          "pronunciation": "thieth",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sore, wound",
+          "translation": "Adhola",
+          "pronunciation": "adhola",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Voice",
+          "translation": "Dwol",
+          "pronunciation": "dwol",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "Wich",
+          "pronunciation": "wich",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Thigh",
+          "translation": "Em",
+          "pronunciation": "em",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "Wang’",
+          "pronunciation": "wang’",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Palm",
+          "translation": "Othith",
+          "pronunciation": "othith",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "Lwedo",
+          "pronunciation": "lwedo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "Gok",
+          "pronunciation": "gok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Nail",
+          "translation": "Kogono",
+          "pronunciation": "kogono",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Kidney",
+          "translation": "Nyaragono",
+          "pronunciation": "nyaragono",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Waist",
+          "translation": "Kowono",
+          "pronunciation": "kowono",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Measles",
+          "translation": "Ang'iew",
+          "pronunciation": "ang'iew",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Smallpox",
+          "translation": "Nundu",
+          "pronunciation": "nundu",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth, language",
+          "translation": "Dhok",
+          "pronunciation": "dhok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "Yier",
+          "pronunciation": "yier",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Hip",
+          "translation": "Bam",
+          "pronunciation": "bam",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "My hip",
+          "translation": "Bamna",
+          "pronunciation": "bamna",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Adundo",
+          "pronunciation": "adundo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "Behind, back",
+          "translation": "Chien",
+          "pronunciation": "chien",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A hunchback",
+          "translation": "Bakuom",
+          "pronunciation": "bakuom",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "A hunchback",
+          "translation": "Jarakuom",
+          "pronunciation": "jarakuom",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "An open wound",
+          "translation": "Adhola",
+          "pronunciation": "adhola",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         }
       ]
@@ -1223,6 +5150,545 @@
           "pronunciation": "loh-yoh",
           "context": "Used for comparative and superlative degrees",
           "audioFile": null
+        },
+        {
+          "english": "To be crooked",
+          "translation": "Bam",
+          "pronunciation": "bam",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To speak definitely",
+          "translation": "Tobo",
+          "pronunciation": "tobo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To speak",
+          "translation": "Wacho",
+          "pronunciation": "wacho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "Tedo",
+          "pronunciation": "tedo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To go",
+          "translation": "Dhiyo",
+          "pronunciation": "dhiyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be foolish",
+          "translation": "Fuwo",
+          "pronunciation": "fuwo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To reach over",
+          "translation": "Gamo",
+          "pronunciation": "gamo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To split",
+          "translation": "Kago",
+          "pronunciation": "kago",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To cut deeply",
+          "translation": "Hato",
+          "pronunciation": "hato",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To despise",
+          "translation": "Jaro",
+          "pronunciation": "jaro",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To worship, adore",
+          "translation": "Lamo",
+          "pronunciation": "lamo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be lost",
+          "translation": "Lal",
+          "pronunciation": "lal",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To kill",
+          "translation": "Nego",
+          "pronunciation": "nego",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "Neno",
+          "pronunciation": "neno",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be rotten",
+          "translation": "Top",
+          "pronunciation": "top",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To hurt",
+          "translation": "Ramo",
+          "pronunciation": "ramo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To scratch",
+          "translation": "Gwaro",
+          "pronunciation": "gwaro",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To watch",
+          "translation": "Rito",
+          "pronunciation": "rito",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To forge",
+          "translation": "Thedho",
+          "pronunciation": "thedho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To hold",
+          "translation": "Mako",
+          "pronunciation": "mako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To pray",
+          "translation": "Lemo",
+          "pronunciation": "lemo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To clean",
+          "translation": "Lendo",
+          "pronunciation": "lendo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be clean",
+          "translation": "Ler",
+          "pronunciation": "ler",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To begin",
+          "translation": "Kwongo",
+          "pronunciation": "kwongo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To change",
+          "translation": "Loko",
+          "pronunciation": "loko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be barren",
+          "translation": "Lur",
+          "pronunciation": "lur",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To sweep",
+          "translation": "Yweyo",
+          "pronunciation": "yweyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To rob",
+          "translation": "Yako",
+          "pronunciation": "yako",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To get angry",
+          "translation": "Kiny",
+          "pronunciation": "kiny",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To build",
+          "translation": "Gedo",
+          "pronunciation": "gedo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To refuse",
+          "translation": "Dagi",
+          "pronunciation": "dagi",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To believe",
+          "translation": "Yiye",
+          "pronunciation": "yiye",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To live",
+          "translation": "Dak",
+          "pronunciation": "dak",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To cry",
+          "translation": "Ywak",
+          "pronunciation": "ywak",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To gossip",
+          "translation": "Twak",
+          "pronunciation": "twak",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To creep",
+          "translation": "Lak",
+          "pronunciation": "lak",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be drunk, etc",
+          "translation": "Mer",
+          "pronunciation": "mer",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To stay",
+          "translation": "Delo",
+          "pronunciation": "delo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To stand",
+          "translation": "Chungo",
+          "pronunciation": "chungo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To grow",
+          "translation": "Dongo",
+          "pronunciation": "dongo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To stay, stop away, etc",
+          "translation": "Siko",
+          "pronunciation": "siko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To insult",
+          "translation": "Yanyo",
+          "pronunciation": "yanyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To watch",
+          "translation": "Neno",
+          "pronunciation": "neno",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To lov",
+          "translation": "Herore",
+          "pronunciation": "herore",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To beat",
+          "translation": "Goyo",
+          "pronunciation": "goyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To bind",
+          "translation": "Tweyo",
+          "pronunciation": "tweyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To miss",
+          "translation": "Bayo",
+          "pronunciation": "bayo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To stare",
+          "translation": "Ng’iyo",
+          "pronunciation": "ng’iyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To shake",
+          "translation": "Yiengini",
+          "pronunciation": "yiengini",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To shiver",
+          "translation": "Kirini",
+          "pronunciation": "kirini",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be shiny, etc",
+          "translation": "Ng’ang’ini",
+          "pronunciation": "ng’ang’ini",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To hide",
+          "translation": "Pando",
+          "pronunciation": "pando",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To its intrinsic value, age, etc",
+          "translation": "Romo",
+          "pronunciation": "romo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To lead",
+          "translation": "Telo",
+          "pronunciation": "telo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To teach",
+          "translation": "Puonjo",
+          "pronunciation": "puonjo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be sick",
+          "translation": "Tuwo",
+          "pronunciation": "tuwo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be lame",
+          "translation": "Ng’olo",
+          "pronunciation": "ng’olo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To slash",
+          "translation": "Beto",
+          "pronunciation": "beto",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To climb",
+          "translation": "Idho",
+          "pronunciation": "idho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To dream",
+          "translation": "Leko",
+          "pronunciation": "leko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To do",
+          "translation": "Timo",
+          "pronunciation": "timo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To stroll",
+          "translation": "Bayo",
+          "pronunciation": "bayo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To have diarrhoea",
+          "translation": "Diewo",
+          "pronunciation": "diewo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To accompany",
+          "translation": "Kowo",
+          "pronunciation": "kowo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To flog",
+          "translation": "Chwado",
+          "pronunciation": "chwado",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To cure",
+          "translation": "Thiedho",
+          "pronunciation": "thiedho",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To frighten",
+          "translation": "Bwogo",
+          "pronunciation": "bwogo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To divide",
+          "translation": "Pogo",
+          "pronunciation": "pogo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be glad",
+          "translation": "Mor",
+          "pronunciation": "mor",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To finish",
+          "translation": "Gik",
+          "pronunciation": "gik",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To be cruel",
+          "translation": "Ger",
+          "pronunciation": "ger",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To shout",
+          "translation": "Kok",
+          "pronunciation": "kok",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To surround",
+          "translation": "Luoro",
+          "pronunciation": "luoro",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To form a wound",
+          "translation": "Dholo",
+          "pronunciation": "dholo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To itch",
+          "translation": "Ilo",
+          "pronunciation": "ilo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To wash",
+          "translation": "Lwcko",
+          "pronunciation": "lwcko",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
+        },
+        {
+          "english": "To maltreat",
+          "translation": "Dwanyo",
+          "pronunciation": "dwanyo",
+          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
+          "audioFile": null
         }
       ]
     },
@@ -1312,6 +5778,34 @@
           "translation": "Wodi",
           "pronunciation": "woh-dee",
           "context": "Pl. construct: Yawoti",
+          "audioFile": null
+        },
+        {
+          "english": "Bone of a dog (alienable possession: chogo guok) vs. cow bone (inalienable construct state: chok dhiang')",
+          "translation": "chogo guok vs. chok dhiang'",
+          "pronunciation": "chogo guok vs. chok dhiang'",
+          "context": "Wikipedia Dholuo — Construct state possession",
+          "audioFile": null
+        },
+        {
+          "english": "Hill (absolute: got) → hill of (construct state: god)",
+          "translation": "got → god",
+          "pronunciation": "got → god",
+          "context": "Wikipedia Construct state — Dholuo morphophonology",
+          "audioFile": null
+        },
+        {
+          "english": "Stick (absolute: luth) → stick of (construct state: ludh)",
+          "translation": "luth → ludh",
+          "pronunciation": "luth → ludh",
+          "context": "Wikipedia Construct state — Dholuo morphophonology",
+          "audioFile": null
+        },
+        {
+          "english": "Appearance/character (absolute: kido) → character of (construct state: kit)",
+          "translation": "kido → kit",
+          "pronunciation": "kido → kit",
+          "context": "Wikipedia Construct state — Dholuo morphophonology",
           "audioFile": null
         }
       ]
@@ -1403,43 +5897,275 @@
           "pronunciation": "oh-dyeh-wohr",
           "context": "Middle of the night",
           "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "proverbs-riddles",
-      "name": "Proverbs (Ngeche) & Riddles (Miero)",
-      "entries": [
+        },
         {
-          "english": "Greed ('I eat till full') killed the mosquito",
-          "translation": "Acham ayieng' ne onego suna",
-          "pronunciation": "ah-chahm ah-yeeng neh oh-neh-goh soo-nah",
-          "context": "Proverb warning against greed and complacency",
+          "english": "Born with the sun shining (midday, 12–2pm); root: chieng' (sun)",
+          "translation": "Ochieng' (m.) / Achieng' (f.)",
+          "pronunciation": "ochieng' (m.) / achieng' (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Traditional time-of-day naming",
           "audioFile": null
         },
         {
-          "english": "I always sit on three chairs (Answer: Cooking pot on three hearthstones)",
-          "translation": "Abet e kombe adek kinde duto",
-          "pronunciation": "ah-beht eh kohm-beh ah-dehk",
-          "context": "Traditional Dholuo riddle (Miero)",
+          "english": "Born in the afternoon / around dusk (3–6pm); root: odhiambo (afternoon)",
+          "translation": "Odhiambo (m.) / Adhiambo (f.)",
+          "pronunciation": "odhiambo (m.) / adhiambo (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Traditional time-of-day naming",
           "audioFile": null
         },
         {
-          "english": "A hut in a hole surrounded by thorns (Answer: Tongue among teeth)",
-          "translation": "Abila ei bur moluor gi kudho",
-          "pronunciation": "ah-bee-lah ehy boor",
-          "context": "Traditional Dholuo riddle (Miero)",
+          "english": "Born at night (7–11pm); root: otieno (night)",
+          "translation": "Otieno (m.) / Atieno (f.)",
+          "pronunciation": "otieno (m.) / atieno (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Traditional time-of-day naming",
           "audioFile": null
         },
         {
-          "english": "The hippo fears the elephant, and the elephant fears the hippo",
-          "translation": "Rawo luor liel, liel luor rawo",
-          "pronunciation": "rah-woh lwohr lyehl",
-          "context": "Classic Dholuo tongue twister",
+          "english": "Born around midnight (11pm–2am); root: wuor (midnight)",
+          "translation": "Owuor / Odiwuor (m.) / Awuor (f.)",
+          "pronunciation": "owuor / odiwuor (m.) / awuor (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Traditional time-of-day naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born around early dawn (4–6am)",
+          "translation": "Omolo (m.) / Amolo (f.)",
+          "pronunciation": "omolo (m.) / amolo (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Traditional time-of-day naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born at dawn / early morning (6–10am); root: okinyi (dawn)",
+          "translation": "Omondi / Okinyi (m.) / Akinyi / Amondi (f.)",
+          "pronunciation": "omondi / okinyi (m.) / akinyi / amondi (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Traditional time-of-day naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born in the mid-morning (10am–noon); root: onyango (morning sun)",
+          "translation": "Onyango (m.) / Anyango (f.)",
+          "pronunciation": "onyango (m.) / anyango (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Traditional time-of-day naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born during the rainy season (root: koth = rain)",
+          "translation": "Okoth (m.) / Akoth (f.)",
+          "pronunciation": "okoth (m.) / akoth (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Seasonal naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born during a cloudy/misty season (root: luoch = cloud/fog)",
+          "translation": "Oluoch (m.) / Aluoch (f.)",
+          "pronunciation": "oluoch (m.) / aluoch (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Seasonal naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born during the dry season / drought (root: oro = drought)",
+          "translation": "Ooro (m.) / Aoro (f.)",
+          "pronunciation": "ooro (m.) / aoro (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Seasonal naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born during harvest time (root: keyo = harvest)",
+          "translation": "Okeyo (m.) / Akeyo (f.)",
+          "pronunciation": "okeyo (m.) / akeyo (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Seasonal naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born during weeding season (root: doyo = to weed)",
+          "translation": "Odoyo (m.) / Adoyo (f.)",
+          "pronunciation": "odoyo (m.) / adoyo (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Seasonal naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born during a period of abundance (root: dero = granary)",
+          "translation": "Odero (m.) / Adero (f.)",
+          "pronunciation": "odero (m.) / adero (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Seasonal naming",
+          "audioFile": null
+        },
+        {
+          "english": "Born during famine (root: kech = hunger/famine)",
+          "translation": "Okech (m.) / Akech (f.)",
+          "pronunciation": "okech (m.) / akech (f.)",
+          "context": "Wiktionary Appendix:Luo surnames — Seasonal naming",
+          "audioFile": null
+        },
+        {
+          "english": "Week (calendar unit)",
+          "translation": "juma",
+          "pronunciation": "juma",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Hour (time unit)",
+          "translation": "saa",
+          "pronunciation": "saa",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Minute (time unit)",
+          "translation": "dakika",
+          "pronunciation": "dakika",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Time zone",
+          "translation": "kar saa",
+          "pronunciation": "kar saa",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Kenyan Shilling (KES)",
+          "translation": "Siling mar Kenya",
+          "pronunciation": "siling mar kenya",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopian Birr (ETB)",
+          "translation": "Birr mar Ethiopia",
+          "pronunciation": "birr mar ethiopia",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigerian Naira (NGN)",
+          "translation": "Naira ya Nijeria",
+          "pronunciation": "naira ya nijeria",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Botswanan Pula (BWP)",
+          "translation": "Pula mar Botswana",
+          "pronunciation": "pula mar botswana",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malagasy Ariary (MGA)",
+          "translation": "Ariary ya Bukini",
+          "pronunciation": "ariary ya bukini",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Algerian Dinar (DZD)",
+          "translation": "Dinari ya Aljeria",
+          "pronunciation": "dinari ya aljeria",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Liberian Dollar (LRD)",
+          "translation": "Dola mar Liberia",
+          "pronunciation": "dola mar liberia",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "US Dollar (USD)",
+          "translation": "Dola",
+          "pronunciation": "dola",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese Yuan (CNY)",
+          "translation": "Yuan Renminbi ya China",
+          "pronunciation": "yuan renminbi ya china",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese Yen (JPY)",
+          "translation": "Yen mar Japan",
+          "pronunciation": "yen mar japan",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Dola mar Kanada",
+          "pronunciation": "dola mar kanada",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Luo (Language)",
+          "translation": "Dholuo",
+          "pronunciation": "dholuo",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "English (Language)",
+          "translation": "Kingereza",
+          "pronunciation": "kingereza",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukrainian (Language)",
+          "translation": "Kiukrania",
+          "pronunciation": "kiukrania",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Czech (Language)",
+          "translation": "Kichecki",
+          "pronunciation": "kichecki",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Bangla (Language)",
+          "translation": "Kibangla",
+          "pronunciation": "kibangla",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tamil (Language)",
+          "translation": "Kitamil",
+          "pronunciation": "kitamil",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Thai (Language)",
+          "translation": "Kitailandi",
+          "pronunciation": "kitailandi",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malay (Language)",
+          "translation": "Kimalesia",
+          "pronunciation": "kimalesia",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Akan (Language)",
+          "translation": "Kiakan",
+          "pronunciation": "kiakan",
+          "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "KenyaHub Community & Linguistic Reference Dictionary"
+  "source": "Public Domain Historical Lexicon (Mill-Hill Fathers 1920)"
 }

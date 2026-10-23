@@ -12,7 +12,7 @@
   "hasAudio": false,
   "dictionaryVersion": "1.1.0",
   "lastUpdated": "2026-10-20",
-  "contributorNote": "Carefully curated from 'A Practical Introduction to Gusii' (1956) and 'The Tense System of Gusii' (1960) by Wilfred H. Whiteley (East African Literature Bureau / EAISR), with verified Highland Ekegusii phonology, syntax, and kinship terminology assisted by Erasto Abuga.",
+  "contributorNote": "Kisii (Ekegusii) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
       "id": "greetings",
@@ -20,171 +20,24 @@
       "icon": "👋",
       "entries": [
         {
-          "english": "King",
-          "translation": "Omorwoti",
-          "pronunciation": "oh-moh-rwoh-tee",
-          "context": "King or chief",
-          "audioFile": null
-        },
-        {
-          "english": "Market",
-          "translation": "Chiro / Esoko",
-          "pronunciation": "chee-roh",
-          "context": "Market",
-          "audioFile": null
-        },
-        {
-          "english": "Money",
-          "translation": "Tsinsendi / Ebela",
-          "pronunciation": "tseen-sehn-dee",
-          "context": "Money",
-          "audioFile": null
-        },
-        {
-          "english": "Yesterday",
-          "translation": "Igoro",
-          "pronunciation": "ee-goh-roh",
-          "context": "Yesterday",
+          "english": "Good morning",
+          "translation": "Bwakire buya",
+          "pronunciation": "Bwakire buya",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
           "english": "Good night",
-          "translation": "Rara buya",
-          "pronunciation": "rah-rah boo-yah",
-          "context": "Sleep well / good night",
+          "translation": "Obotuko obuya",
+          "pronunciation": "Obotuko obuya",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Love",
-          "translation": "Obwanchani",
-          "pronunciation": "oh-bwahn-chah-nee",
-          "context": "Love",
-          "audioFile": null
-        },
-        {
-          "english": "Peace",
-          "translation": "Omorembe",
-          "pronunciation": "oh-moh-rehm-beh",
-          "context": "Peace",
-          "audioFile": null
-        },
-        {
-          "english": "Mother",
-          "translation": "Baba / Ng'ina",
-          "pronunciation": "bah-bah",
-          "context": "Mother",
-          "audioFile": null
-        },
-        {
-          "english": "Father",
-          "translation": "Tata / Ise",
-          "pronunciation": "tah-tah",
-          "context": "Father",
-          "audioFile": null
-        },
-        {
-          "english": "God",
-          "translation": "Engoro / Nyasae",
-          "pronunciation": "eh-ngoh-roh / nyah-sah-eh",
-          "context": "Supreme Creator",
-          "audioFile": null
-        },
-        {
-          "english": "Hello / Morning greeting",
-          "translation": "Bwakiire",
-          "pronunciation": "bwah-kee-reh",
-          "context": "Universal morning salutation (lit. 'How did it dawn?')",
-          "audioFile": null
-        },
-        {
-          "english": "Good morning",
-          "translation": "Mbuya omuerio",
-          "pronunciation": "m-boo-yah oh-mweh-ree-oh",
-          "context": "Traditional morning greeting wishing a good morning",
-          "audioFile": null
-        },
-        {
-          "english": "Good afternoon",
-          "translation": "Mbuya omotienyi",
-          "pronunciation": "m-boo-yah oh-moh-tee-ehn-yee",
-          "context": "Afternoon greeting (lit. 'good daylight/sun period')",
-          "audioFile": null
-        },
-        {
-          "english": "Good evening",
-          "translation": "Mbuya mogari",
-          "pronunciation": "m-boo-yah moh-gah-ree",
-          "context": "Evening greeting as dusk approaches",
-          "audioFile": null
-        },
-        {
-          "english": "Goodnight / Evening greeting",
-          "translation": "Bwairire",
-          "pronunciation": "bwah-ee-ree-reh",
-          "context": "Salutation used from midday onwards and into dusk / night",
-          "audioFile": null
-        },
-        {
-          "english": "Welcome / Hello",
-          "translation": "Oyagore",
-          "pronunciation": "oh-yah-goh-reh",
-          "context": "Warm welcoming salutation to guests",
-          "audioFile": null
-        },
-        {
-          "english": "Response: I am well",
-          "translation": "Mbuya mono",
-          "pronunciation": "m-boo-yah moh-noh",
-          "context": "Standard reply to Bwakiire ('Very well / good')",
-          "audioFile": null
-        },
-        {
-          "english": "How are you?",
-          "translation": "Naki ase?",
-          "pronunciation": "nah-kee ah-seh",
-          "context": "Common conversational inquiry ('How is it with you?')",
-          "audioFile": null
-        },
-        {
-          "english": "I am fine / well",
-          "translation": "Ndi botire",
-          "pronunciation": "n-dee boh-tee-reh",
-          "context": "Standard affirmative reply",
-          "audioFile": null
-        },
-        {
-          "english": "Good morning (Daylight)",
-          "translation": "Orogoro",
-          "pronunciation": "oh-roh-goh-roh",
-          "context": "Salutation honoring early daylight",
-          "audioFile": null
-        },
-        {
-          "english": "Thank you",
-          "translation": "Ase mono / Buya mono",
-          "pronunciation": "ah-seh moh-noh / boo-yah moh-noh",
-          "context": "'Ase mono' = thank you very much",
-          "audioFile": null
-        },
-        {
-          "english": "Go well",
-          "translation": "Genda buya",
-          "pronunciation": "gehn-dah boo-yah",
-          "context": "Blessing spoken to departing traveler",
-          "audioFile": null
-        },
-        {
-          "english": "Stay well",
-          "translation": "Manya buya",
-          "pronunciation": "mah-nyah boo-yah",
-          "context": "Spoken to the host remaining behind",
-          "audioFile": null
-        },
-        {
-          "english": "Goodbye / We shall converse",
-          "translation": "Togokoana",
-          "pronunciation": "toh-goh-koh-ah-nah",
-          "context": "Courteous parting phrase",
+          "english": "Evening",
+          "translation": "mogoroba",
+          "pronunciation": "mogoroba",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         }
       ]
@@ -195,101 +48,150 @@
       "icon": "🔢",
       "entries": [
         {
-          "english": "One",
-          "translation": "Emwe / Eyemo",
-          "pronunciation": "ehm-weh / eh-yeh-moh",
-          "context": "Numeral 1 (Adjective stem: -mo)",
+          "english": "One (1)",
+          "translation": "eyemo",
+          "pronunciation": "eyemo",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Two",
-          "translation": "Ebere / Ibere",
-          "pronunciation": "eh-beh-reh / ee-beh-reh",
-          "context": "Numeral 2 (Adjective stem: -bere)",
+          "english": "Two (2)",
+          "translation": "ibere",
+          "pronunciation": "ibere",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Three",
-          "translation": "Isatu / Etato",
-          "pronunciation": "ee-sah-too / eh-tah-toh",
-          "context": "Numeral 3 (Adjective stem: -tatu / -shato)",
+          "english": "Three (3)",
+          "translation": "isato",
+          "pronunciation": "isato",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Four",
-          "translation": "Inye / Ene",
-          "pronunciation": "een-yeh / eh-neh",
-          "context": "Numeral 4 (Adjective stem: -ne)",
+          "english": "Four (4)",
+          "translation": "inye",
+          "pronunciation": "inye",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Five",
-          "translation": "Isaano / Etano",
-          "pronunciation": "ee-sah-ah-noh / eh-tah-noh",
-          "context": "Numeral 5 (Adjective stem: -taano)",
+          "english": "Five (5)",
+          "translation": "isano",
+          "pronunciation": "isano",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Six",
-          "translation": "Esita",
-          "pronunciation": "eh-see-tah",
-          "context": "Numeral 6",
+          "english": "Six (6, lit. 5+1)",
+          "translation": "isano nemo",
+          "pronunciation": "isano nemo",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Seven",
-          "translation": "Esobaa / Musaafo",
-          "pronunciation": "eh-soh-bah / moo-sah-ah-foh",
-          "context": "Numeral 7",
+          "english": "Seven (7, lit. 5+2)",
+          "translation": "isano na ibere",
+          "pronunciation": "isano na ibere",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Eight",
-          "translation": "Enane",
-          "pronunciation": "eh-nah-neh",
-          "context": "Numeral 8",
+          "english": "Eight (8, lit. 5+3)",
+          "translation": "isano na isato",
+          "pronunciation": "isano na isato",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Nine",
-          "translation": "Engenda",
-          "pronunciation": "ehn-gehn-dah",
-          "context": "Numeral 9",
+          "english": "Nine (9)",
+          "translation": "kianda",
+          "pronunciation": "kianda",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Ten",
-          "translation": "Ekoome",
-          "pronunciation": "eh-koh-meh",
-          "context": "Numeral 10 (Plural: Amakoome)",
+          "english": "Ten (10)",
+          "translation": "ikomi",
+          "pronunciation": "ikomi",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Twenty",
-          "translation": "Amakoome abere",
-          "pronunciation": "ah-mah-koh-meh ah-beh-reh",
-          "context": "Lit. 'two tens'",
+          "english": "Eleven (11)",
+          "translation": "ikomi nemo",
+          "pronunciation": "ikomi nemo",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Thirty",
-          "translation": "Amakoome atato",
-          "pronunciation": "ah-mah-koh-meh ah-tah-toh",
-          "context": "Lit. 'three tens'",
+          "english": "Twelve (12)",
+          "translation": "ikomi na ibere",
+          "pronunciation": "ikomi na ibere",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Fifty",
-          "translation": "Amakoome ataano",
-          "pronunciation": "ah-mah-koh-meh ah-tah-ah-noh",
-          "context": "Lit. 'five tens'",
+          "english": "Thirteen (13)",
+          "translation": "ikomi na isato",
+          "pronunciation": "ikomi na isato",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
           "audioFile": null
         },
         {
-          "english": "Hundred",
-          "translation": "Egana / Rigana",
-          "pronunciation": "eh-gah-nah / ree-gah-nah",
-          "context": "Numeral 100 (also Emerongo ekomi)",
+          "english": "Fourteen (14)",
+          "translation": "ikomi na inye",
+          "pronunciation": "ikomi na inye",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
+          "audioFile": null
+        },
+        {
+          "english": "Fifteen (15)",
+          "translation": "ikomi na isano",
+          "pronunciation": "ikomi na isano",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
+          "audioFile": null
+        },
+        {
+          "english": "Sixteen (16)",
+          "translation": "ikomi na isano nemo",
+          "pronunciation": "ikomi na isano nemo",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
+          "audioFile": null
+        },
+        {
+          "english": "Seventeen (17)",
+          "translation": "ikomi na isano na ibere",
+          "pronunciation": "ikomi na isano na ibere",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
+          "audioFile": null
+        },
+        {
+          "english": "Eighteen (18)",
+          "translation": "ikomi na isano na isato",
+          "pronunciation": "ikomi na isano na isato",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
+          "audioFile": null
+        },
+        {
+          "english": "Nineteen (19)",
+          "translation": "ikomi na kianda",
+          "pronunciation": "ikomi na kianda",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty (20)",
+          "translation": "emerongo ebere",
+          "pronunciation": "emerongo ebere",
+          "context": "Wikipedia Gusii language — Gusii Numeral System",
+          "audioFile": null
+        },
+        {
+          "english": "Second (time unit)",
+          "translation": "Esekendi",
+          "pronunciation": "esekendi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
@@ -300,171 +202,73 @@
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
-          "english": "My father",
-          "translation": "Tata",
-          "pronunciation": "tah-tah",
-          "context": "My father (Whiteley Ch. 48, p. 90)",
+          "english": "Person / human (Class 1/2: omo-/aba-)",
+          "translation": "omonto (pl. abanto)",
+          "pronunciation": "omonto (pl. abanto)",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
-          "english": "Your father",
-          "translation": "So / Iso",
-          "pronunciation": "soh / ee-soh",
-          "context": "Your father (2nd person singular kinship)",
+          "english": "Humanity / Ubuntu philosophy",
+          "translation": "obonto",
+          "pronunciation": "obonto",
+          "context": "Wikipedia Ubuntu philosophy — Ekegusii",
           "audioFile": null
         },
         {
-          "english": "His/her father",
-          "translation": "Ise",
-          "pronunciation": "ee-seh",
-          "context": "His or her father (3rd person singular kinship)",
-          "audioFile": null
-        },
-        {
-          "english": "My mother",
-          "translation": "Baba / Baaba",
-          "pronunciation": "bah-bah / bah-ah-bah",
-          "context": "My mother (Whiteley Ch. 48, p. 90)",
-          "audioFile": null
-        },
-        {
-          "english": "Your mother",
-          "translation": "Nyoko",
-          "pronunciation": "nyoh-koh",
-          "context": "Your mother (2nd person maternal kinship)",
-          "audioFile": null
-        },
-        {
-          "english": "His/her mother",
-          "translation": "Ngina / Ng'ina",
-          "pronunciation": "ngee-nah / ng-ee-nah",
-          "context": "His or her mother (3rd person maternal kinship)",
-          "audioFile": null
-        },
-        {
-          "english": "Child",
-          "translation": "Omwana",
-          "pronunciation": "ohm-wah-nah",
-          "context": "Child (Class 1/2, plural: Abaana)",
+          "english": "Mother",
+          "translation": "baba",
+          "pronunciation": "baba",
+          "context": "Wikipedia Gusii language — Phonology",
           "audioFile": null
         },
         {
           "english": "Children",
-          "translation": "Abaana",
-          "pronunciation": "ah-bah-ah-nah",
-          "context": "Children (Class 2 plural of Omwana)",
+          "translation": "abana",
+          "pronunciation": "abana",
+          "context": "Wikipedia Gusii language — Phonology",
           "audioFile": null
         },
         {
-          "english": "Young man / Warrior",
-          "translation": "Omomura",
-          "pronunciation": "oh-moh-moo-rah",
-          "context": "Unmarried circumcised youth (Class 1/2, pl: Abamura)",
+          "english": "Our people / brothers and sisters",
+          "translation": "baminto",
+          "pronunciation": "baminto",
+          "context": "Wikipedia Gusii language — Phonology",
           "audioFile": null
         },
         {
-          "english": "Young woman / Maiden",
-          "translation": "Omoiseke",
-          "pronunciation": "oh-moh-ee-seh-keh",
-          "context": "Unmarried young woman / maiden (Class 1/2, pl: Abaiseke)",
-          "audioFile": null
-        },
-        {
-          "english": "Elderly woman",
-          "translation": "Omongina / Omong'ina",
-          "pronunciation": "oh-moh-ngee-nah",
-          "context": "Revered elder woman (Class 1/2, pl: Abang'ina)",
-          "audioFile": null
-        },
-        {
-          "english": "Elderly man / Elder",
-          "translation": "Omogaaka",
-          "pronunciation": "oh-moh-gah-ah-kah",
-          "context": "Revered elder or old man (Class 1/2, pl: Abagaaka)",
-          "audioFile": null
-        },
-        {
-          "english": "Ancestor / Grandchild",
-          "translation": "Omochakoro / Omochokoro",
-          "pronunciation": "oh-moh-chah-koh-roh",
-          "context": "Lineage forebear, ancestor, or grandchild (Class 1/2, pl: Abachokoro)",
-          "audioFile": null
-        },
-        {
-          "english": "Brother / Sister (Sibling)",
-          "translation": "Mwana'nto / Momura ominto",
-          "pronunciation": "mwah-nah-n-toh / moh-moo-rah oh-meen-toh",
-          "context": "'Mwana'nto' = sibling; 'Momura ominto' = my/our brother",
-          "audioFile": null
-        },
-        {
-          "english": "Sister (my/our sister)",
-          "translation": "Moiseke ominto",
-          "pronunciation": "moh-ee-seh-keh oh-meen-toh",
-          "context": "My/our unmarried sister (for married sister: Mosubaati ominto)",
-          "audioFile": null
-        },
-        {
-          "english": "Man / Husband",
-          "translation": "Omosaacha",
-          "pronunciation": "oh-moh-sah-ah-chah",
-          "context": "Adult male or husband (Class 1/2, pl: Abasaacha)",
-          "audioFile": null
-        },
-        {
-          "english": "Woman / Wife",
-          "translation": "Omokungu",
-          "pronunciation": "oh-moh-koon-goo",
-          "context": "Adult married woman or wife (Class 1/2, pl: Abakungu; respectful: Omorugi)",
-          "audioFile": null
-        },
-        {
-          "english": "Young boy",
-          "translation": "Omoisia",
-          "pronunciation": "oh-moh-ee-see-ah",
-          "context": "Young uncircumcised boy (Class 1/2, pl: Abaisia)",
+          "english": "Girl (Class 9/2)",
+          "translation": "omoiseke (pl. abaiseke)",
+          "pronunciation": "omoiseke (pl. abaiseke)",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Grandfather",
-          "translation": "Sokoro",
-          "pronunciation": "soh-koh-roh",
-          "context": "Grandfather on either side (pl: Chisokoro)",
+          "translation": "sokoro",
+          "pronunciation": "sokoro",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Grandmother",
-          "translation": "Maagokoro",
-          "pronunciation": "mah-ah-goh-koh-roh",
-          "context": "Grandmother on either side (pl: Abamaagokoro)",
+          "english": "Lady / married woman",
+          "translation": "omosubati",
+          "pronunciation": "omosubati",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Maternal uncle",
-          "translation": "Maame",
-          "pronunciation": "mah-ah-meh",
-          "context": "Mother's brother (Class 1/2, pl: Abamaame)",
+          "english": "Fighter / warrior",
+          "translation": "omorwani",
+          "pronunciation": "omorwani",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Person / Human being",
-          "translation": "Omonto",
-          "pronunciation": "oh-mohn-toh",
-          "context": "Human being / person (Class 1/2, pl: Abanto)",
-          "audioFile": null
-        },
-        {
-          "english": "Friend / Comrade",
-          "translation": "Omosaani / Osomwabo",
-          "pronunciation": "oh-moh-sah-ah-nee / oh-sohm-wah-boh",
-          "context": "Friend or trusted companion (Class 1/2)",
-          "audioFile": null
-        },
-        {
-          "english": "Leader / Chief",
-          "translation": "Omogambi",
-          "pronunciation": "oh-moh-gahm-bee",
-          "context": "Adjudicator, chief, or leader (Class 1/2, pl: Abagambi)",
+          "english": "child (pl. children)",
+          "translation": "Omwana (pl. Abana)",
+          "pronunciation": "omwana (pl. abana)",
+          "context": "Ekegusii",
           "audioFile": null
         }
       ]
@@ -475,143 +279,178 @@
       "icon": "🌿",
       "entries": [
         {
-          "english": "Sun / Sunlight",
-          "translation": "Erioba / Omobaso",
-          "pronunciation": "eh-ree-oh-bah / oh-moh-bah-soh",
-          "context": "The sun or daylight (Class 5/6 Rioba; Class 3/4 Omobaso)",
+          "english": "Earth / world",
+          "translation": "ense",
+          "pronunciation": "ense",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Water",
-          "translation": "Amache / Amaache",
-          "pronunciation": "ah-mah-cheh / ah-mah-ah-cheh",
-          "context": "Water (Class 6 plural liquid noun)",
+          "english": "Sun / daytime",
+          "translation": "risase / omobaso",
+          "pronunciation": "risase / omobaso",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Rain",
-          "translation": "Embura / Enyaroka",
-          "pronunciation": "ehm-boo-rah / ehn-yah-roh-kah",
-          "context": "Rain (Class 9/10; verb: -twa = to rain)",
+          "english": "Upperside / hillside (standard dialect region)",
+          "translation": "rogoro",
+          "pronunciation": "rogoro",
+          "context": "Wikipedia Gusii language — Dialects & Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Cloud",
-          "translation": "Emondo / Rire",
-          "pronunciation": "eh-mohn-doh / ree-reh",
-          "context": "Cloud in the sky (Class 5/6 Rire, pl: Amare)",
+          "english": "Lowerside (southwestern dialect region)",
+          "translation": "maate",
+          "pronunciation": "maate",
+          "context": "Wikipedia Gusii language — Dialects",
           "audioFile": null
         },
         {
-          "english": "Forest / Woodland",
-          "translation": "Egetutu / Orosaana",
-          "pronunciation": "eh-geh-too-too / oh-roh-sah-ah-nah",
-          "context": "Forest or wooded area (Class 7/8 Egetutu; Class 11/10a Orosaana; also Rinani)",
+          "english": "Lake / sea",
+          "translation": "enyancha",
+          "pronunciation": "enyancha",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "River",
-          "translation": "Oroche / Orooche",
-          "pronunciation": "oh-roh-cheh / oh-roh-oh-cheh",
-          "context": "River or stream (Class 11/10a, pl: Chindoche)",
+          "english": "Desert / wilderness",
+          "translation": "eroro",
+          "pronunciation": "eroro",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Mountain / Hill",
-          "translation": "Emotwe / Egetunwa",
-          "pronunciation": "eh-moh-tweh / eh-geh-toon-wah",
-          "context": "Hill or mountain (Class 7/8 Egetunwa, pl: Ebitunwa)",
+          "english": "water (Class 6)",
+          "translation": "Amache",
+          "pronunciation": "amache",
+          "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "Tree",
-          "translation": "Omote",
-          "pronunciation": "oh-moh-teh",
-          "context": "Tree (Class 3/4, pl: Emete)",
+          "english": "fire (Class 3)",
+          "translation": "Omororro",
+          "pronunciation": "omororro",
+          "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "Fire",
-          "translation": "Omorero",
-          "pronunciation": "oh-moh-reh-roh",
-          "context": "Fire or flames (Class 3/4, pl: Emerero)",
+          "english": "rain (Class 9)",
+          "translation": "Embura",
+          "pronunciation": "embura",
+          "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "Moon / Month",
+          "english": "January (Month 1)",
+          "translation": "Chanuari (Can)",
+          "pronunciation": "chanuari (can)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "February (Month 2)",
+          "translation": "Feburari (Feb)",
+          "pronunciation": "feburari (feb)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "March (Month 3)",
+          "translation": "Machi (Mac)",
+          "pronunciation": "machi (mac)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "April (Month 4)",
+          "translation": "Apiriri (Apr)",
+          "pronunciation": "apiriri (apr)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "May (Month 5)",
+          "translation": "Mei",
+          "pronunciation": "mei",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "June (Month 6)",
+          "translation": "Juni (Jun)",
+          "pronunciation": "juni (jun)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "July (Month 7)",
+          "translation": "Chulai (Cul)",
+          "pronunciation": "chulai (cul)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "August (Month 8)",
+          "translation": "Agosti (Agt)",
+          "pronunciation": "agosti (agt)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "September (Month 9)",
+          "translation": "Septemba (Sep)",
+          "pronunciation": "septemba (sep)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "October (Month 10)",
+          "translation": "Okitoba (Okt)",
+          "pronunciation": "okitoba (okt)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "November (Month 11)",
+          "translation": "Nobemba (Nob)",
+          "pronunciation": "nobemba (nob)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "December (Month 12)",
+          "translation": "Disemba (Dis)",
+          "pronunciation": "disemba (dis)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Igoro",
+          "pronunciation": "igoro",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Year (calendar unit)",
+          "translation": "Omwaka",
+          "pronunciation": "omwaka",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Month (calendar unit)",
           "translation": "Omotienyi",
-          "pronunciation": "oh-moh-tee-ehn-yee",
-          "context": "Moon or calendar month (Class 3/4, pl: Emetienyi)",
+          "pronunciation": "omotienyi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
-          "english": "Grass",
-          "translation": "Obonyansi",
-          "pronunciation": "oh-boh-nyahn-see",
-          "context": "Grass or pasture (Class 14/6; Dry grass: Rise)",
-          "audioFile": null
-        },
-        {
-          "english": "Wind",
-          "translation": "Embeo",
-          "pronunciation": "ehm-beh-oh",
-          "context": "Wind or cool breeze (Class 9/10)",
-          "audioFile": null
-        },
-        {
-          "english": "Lake / Sea",
-          "translation": "Enyancha",
-          "pronunciation": "ehn-yahn-chah",
-          "context": "Lake Victoria or open sea (Class 9/10)",
-          "audioFile": null
-        },
-        {
-          "english": "Stone / Rock",
-          "translation": "Rigena",
-          "pronunciation": "ree-geh-nah",
-          "context": "Stone (Class 5/6, pl: Amagena; small pebble: Akagena)",
-          "audioFile": null
-        },
-        {
-          "english": "Day / Daylight",
+          "english": "Day (calendar unit)",
           "translation": "Rituko",
-          "pronunciation": "ree-too-koh",
-          "context": "Day (Class 5/6, pl: Amatuko; daytime: Mobaso)",
-          "audioFile": null
-        },
-        {
-          "english": "Night",
-          "translation": "Obotuko",
-          "pronunciation": "oh-boh-too-koh",
-          "context": "Night (Class 14/6; Botuko = during the night)",
-          "audioFile": null
-        },
-        {
-          "english": "Smoke",
-          "translation": "Erioki",
-          "pronunciation": "eh-ree-oh-kee",
-          "context": "Smoke from fire (Class 5/6, pl: Amarioki)",
-          "audioFile": null
-        },
-        {
-          "english": "Sand",
-          "translation": "Omochanga / Omokenye",
-          "pronunciation": "oh-moh-chahn-gah / oh-moh-keh-nyeh",
-          "context": "Sand (Class 3/4)",
-          "audioFile": null
-        },
-        {
-          "english": "Farm / Shamba",
-          "translation": "Omogondo",
-          "pronunciation": "oh-moh-gohn-doh",
-          "context": "Cultivated farm or field (Class 3/4, pl: Emegondo)",
-          "audioFile": null
-        },
-        {
-          "english": "God (Supreme Creator)",
-          "translation": "Engoro / Nyasae",
-          "pronunciation": "ehn-goh-roh / nyah-sah-eh",
-          "context": "Supreme Deity (Engoro is classical Gusii; Nyasae assimilated)",
+          "pronunciation": "rituko",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
@@ -622,108 +461,45 @@
       "icon": "🐄",
       "entries": [
         {
-          "english": "Cow / Cattle",
-          "translation": "Eng'ombe",
-          "pronunciation": "ehng-ohm-beh",
-          "context": "Cow or cattle (Class 9/10, pl: Ching'ombe)",
+          "english": "Cow / cattle (Class 9/10: e-/chi-)",
+          "translation": "eng'ombe (pl. chiombe)",
+          "pronunciation": "eng'ombe (pl. chiombe)",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
-          "english": "Goat",
-          "translation": "Embene / Embori",
-          "pronunciation": "ehm-beh-neh / ehm-boh-ree",
-          "context": "Goat (Class 9/10, pl: Chimbene / Chimbori)",
+          "english": "Cat (Rogoro vs. Maate dialect)",
+          "translation": "ekemoni (Rogoro) / ekebusi (Maate)",
+          "pronunciation": "ekemoni (Rogoro) / ekebusi (Maate)",
+          "context": "Wikipedia Gusii language — Dialectal lexicon",
           "audioFile": null
         },
         {
-          "english": "Chicken / Hen",
-          "translation": "Engoko",
-          "pronunciation": "ehn-goh-koh",
-          "context": "Chicken or hen (Class 9/10, pl: Chingoko)",
+          "english": "Donkey",
+          "translation": "etigere / ebunda",
+          "pronunciation": "etigere / ebunda",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
           "english": "Dog",
-          "translation": "Embwa / Ese",
-          "pronunciation": "ehm-bwah / eh-seh",
-          "context": "Domestic dog (Class 9/10, pl: Chise)",
+          "translation": "esese",
+          "pronunciation": "esese",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Mole / Badger",
-          "translation": "Etuko / Eng'uko",
-          "pronunciation": "eh-too-koh / ehng-oo-koh",
-          "context": "Mole or burrowing creature (featured in Gusii folk stories, Class 9/10)",
+          "english": "She-goat",
+          "translation": "esibeni",
+          "pronunciation": "esibeni",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Leopard",
-          "translation": "Engwe",
-          "pronunciation": "ehn-gweh",
-          "context": "Leopard (Class 9/10, pl: Chingwe)",
-          "audioFile": null
-        },
-        {
-          "english": "Lion",
-          "translation": "Entaare / Endo",
-          "pronunciation": "ehn-tah-ah-reh / ehn-doh",
-          "context": "Lion (Class 9/10, pl: Chintaare / Chindo)",
-          "audioFile": null
-        },
-        {
-          "english": "Elephant",
-          "translation": "Enchogu",
-          "pronunciation": "ehn-choh-goo",
-          "context": "Elephant (Class 9/10, pl: Chinchogu)",
-          "audioFile": null
-        },
-        {
-          "english": "Sheep",
-          "translation": "Eng'ondi / Endaiga",
-          "pronunciation": "ehng-ohn-dee / ehn-dah-ee-gah",
-          "context": "Sheep (Class 9/10, pl: Ching'ondi / Chindaiga)",
-          "audioFile": null
-        },
-        {
-          "english": "Calf / Heifer",
-          "translation": "Emoori",
-          "pronunciation": "eh-moh-oh-ree",
-          "context": "Calf or young heifer (Class 9/10, pl: Chimoori)",
-          "audioFile": null
-        },
-        {
-          "english": "Bird",
-          "translation": "Enyoni",
-          "pronunciation": "ehn-yoh-nee",
-          "context": "Bird (Class 9/10, pl: Chinyoni)",
-          "audioFile": null
-        },
-        {
-          "english": "Fish",
-          "translation": "Enswe",
-          "pronunciation": "ehn-sweh",
-          "context": "Fish (Class 9/10, pl: Chinswe)",
-          "audioFile": null
-        },
-        {
-          "english": "Hare",
-          "translation": "Egesusu",
-          "pronunciation": "eh-geh-soo-soo",
-          "context": "Hare (Class 7/8, pl: Ebisusu)",
-          "audioFile": null
-        },
-        {
-          "english": "Bull",
-          "translation": "Eeeri",
-          "pronunciation": "eh-eh-eh-ree",
-          "context": "Bull (Class 9/10, pl: Chieeri)",
-          "audioFile": null
-        },
-        {
-          "english": "Wild beast / Snake",
-          "translation": "Eng'iti",
-          "pronunciation": "ehng-ee-tee",
-          "context": "General term for wild animal or snake (Class 9/10, pl: Ching'iti)",
+          "english": "Hyena",
+          "translation": "nyang'au",
+          "pronunciation": "nyang'au",
+          "context": "Wiktionary Appendix:Luo surnames — Kisii origin note",
           "audioFile": null
         }
       ]
@@ -734,115 +510,38 @@
       "icon": "🍲",
       "entries": [
         {
-          "english": "Ugali / Porridge",
-          "translation": "Obokima",
-          "pronunciation": "oh-boh-kee-mah",
-          "context": "Highland staple ugali / stiff grain porridge (Class 14/6)",
+          "english": "Cup (Class 7/8: ege-/ebi-)",
+          "translation": "egekombe (pl. ebikombe)",
+          "pronunciation": "egekombe (pl. ebikombe)",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
-          "english": "Milk",
-          "translation": "Amabere / Amabeere",
-          "pronunciation": "ah-mah-beh-reh / ah-mah-beh-eh-reh",
-          "context": "Fresh cow milk (Class 6 plural liquid noun)",
+          "english": "Fruit (Class 5/6: ri-/ama-)",
+          "translation": "ritunda (pl. amatunda)",
+          "pronunciation": "ritunda (pl. amatunda)",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
-          "english": "Meat",
-          "translation": "Enyama",
-          "pronunciation": "ehn-yah-mah",
-          "context": "Meat (Class 9/10, pl: Chinyama)",
+          "english": "Milk (Class 6: ama-)",
+          "translation": "amabere",
+          "pronunciation": "amabere",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
-          "english": "Food",
-          "translation": "Chindagera / Endaagera",
-          "pronunciation": "cheen-dah-geh-rah / ehn-dah-ah-geh-rah",
-          "context": "Food or sustenance (Class 9/10, derived from verb -raagera)",
+          "english": "Water",
+          "translation": "amache",
+          "pronunciation": "amache",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Banana / Matoke",
-          "translation": "Ritooke / Ritoke",
-          "pronunciation": "ree-toh-oh-keh / ree-toh-keh",
-          "context": "Banana or cooking plantain (Class 5/6, pl: Amatooke)",
-          "audioFile": null
-        },
-        {
-          "english": "Maize / Corn",
-          "translation": "Egetuuma / Ebando",
-          "pronunciation": "eh-geh-too-oo-mah / eh-bahn-doh",
-          "context": "Maize cobs or grain (Class 7/8 Egetuuma; Class 9/10 Ebando)",
-          "audioFile": null
-        },
-        {
-          "english": "Beans",
-          "translation": "Ching'ende",
-          "pronunciation": "cheen-gehn-deh",
-          "context": "Cooked or harvested beans (Class 10 plural of Eng'ende)",
-          "audioFile": null
-        },
-        {
-          "english": "Vegetables / Greens",
-          "translation": "Enyeni / Nyeni",
-          "pronunciation": "ehn-yeh-nee / nyeh-nee",
-          "context": "Edible green vegetables (Class 9/10, pl: Chinyeni; also Orweni)",
-          "audioFile": null
-        },
-        {
-          "english": "Flour",
-          "translation": "Obosie",
-          "pronunciation": "oh-boh-see-eh",
-          "context": "Milled flour for preparing porridge (Class 14/6)",
-          "audioFile": null
-        },
-        {
-          "english": "Millet",
-          "translation": "Obori",
-          "pronunciation": "oh-boh-ree",
-          "context": "Bulrush millet, traditional ancestral grain (Class 14)",
-          "audioFile": null
-        },
-        {
-          "english": "Sorghum",
-          "translation": "Amaemba / Riemba",
-          "pronunciation": "ah-mah-ehm-bah / ree-ehm-bah",
-          "context": "Sorghum grain (Class 5/6, usually plural Amaemba)",
-          "audioFile": null
-        },
-        {
-          "english": "Salt",
-          "translation": "Omoonyo",
-          "pronunciation": "oh-moh-ohn-yoh",
-          "context": "Salt for seasoning (Class 3/4)",
-          "audioFile": null
-        },
-        {
-          "english": "Cooking fat / Oil",
-          "translation": "Amaguta",
-          "pronunciation": "ah-mah-goo-tah",
-          "context": "Fat, butter, or cooking oil (Class 6)",
-          "audioFile": null
-        },
-        {
-          "english": "Cassava",
-          "translation": "Omwogo",
-          "pronunciation": "ohm-woh-goh",
-          "context": "Cassava tuber (Class 3/4, pl: Emiogo)",
-          "audioFile": null
-        },
-        {
-          "english": "Gruel / Porridge",
-          "translation": "Erongoori",
-          "pronunciation": "eh-rohn-goh-oh-ree",
-          "context": "Thin gruel / porridge drink (Class 9/10)",
-          "audioFile": null
-        },
-        {
-          "english": "Egg",
-          "translation": "Rigena ri'engoko",
-          "pronunciation": "ree-geh-nah ree-ehn-goh-koh",
-          "context": "Egg (lit. 'stone of a chicken', Class 5/6, pl: Amagena y'engoko)",
+          "english": "Sudanese Pound (SDG)",
+          "translation": "Pauni ya Sudani",
+          "pronunciation": "pauni ya sudani",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
@@ -853,115 +552,31 @@
       "icon": "🏠",
       "entries": [
         {
-          "english": "House / Home",
-          "translation": "Enyomba",
-          "pronunciation": "ehn-yohm-bah",
-          "context": "House or family abode (Class 9/10, pl: Chinyomba)",
+          "english": "Sandals / shoes (Rogoro vs. Maate dialect)",
+          "translation": "chisiripasi (Rogoro) / chitaratara (Maate)",
+          "pronunciation": "chisiripasi (Rogoro) / chitaratara (Maate)",
+          "context": "Wikipedia Gusii language — Dialectal lexicon",
           "audioFile": null
         },
         {
-          "english": "Bed",
-          "translation": "Egetanda / Oborere",
-          "pronunciation": "eh-geh-tahn-dah / oh-boh-reh-reh",
-          "context": "Bed (Class 7/8 Egetanda; Class 14/6 Oborere)",
+          "english": "Homestead / at home",
+          "translation": "inka",
+          "pronunciation": "inka",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Chair / Stool",
-          "translation": "Ekerogo",
-          "pronunciation": "eh-keh-roh-goh",
-          "context": "Stool or wooden seat (Class 7/8, pl: Ebirogo)",
+          "english": "Cow dung",
+          "translation": "esike",
+          "pronunciation": "esike",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Cooking pot",
-          "translation": "Enyongo",
-          "pronunciation": "ehn-yohn-goh",
-          "context": "Clay cooking pot (Class 9/10, pl: Chinyongo)",
-          "audioFile": null
-        },
-        {
-          "english": "Knife",
-          "translation": "Omoyio",
-          "pronunciation": "oh-moh-yee-oh",
-          "context": "Knife (Class 3/4, pl: Emeyio)",
-          "audioFile": null
-        },
-        {
-          "english": "Hoe",
-          "translation": "Obokombe",
-          "pronunciation": "oh-boh-kohm-beh",
-          "context": "Agricultural hoe (Class 14/6, pl: Amakombe)",
-          "audioFile": null
-        },
-        {
-          "english": "Basket",
-          "translation": "Egetonga",
-          "pronunciation": "eh-geh-tohn-gah",
-          "context": "Storage or carrying basket (Class 7/8, pl: Ebitonga)",
-          "audioFile": null
-        },
-        {
-          "english": "Gourd / Calabash",
-          "translation": "Ekerandi",
-          "pronunciation": "eh-keh-rahn-dee",
-          "context": "Gourd container (Class 7/8, pl: Ebirandi)",
-          "audioFile": null
-        },
-        {
-          "english": "Village / Homestead",
-          "translation": "Omochie",
-          "pronunciation": "oh-moh-chee-eh",
-          "context": "Village, homestead, or settlement (Class 3/4, pl: Emechie)",
-          "audioFile": null
-        },
-        {
-          "english": "Door (family entrance)",
-          "translation": "Egesieri",
-          "pronunciation": "eh-geh-see-eh-ree",
-          "context": "Everyday entrance door (Class 7/8, pl: Ebisieri)",
-          "audioFile": null
-        },
-        {
-          "english": "Fence",
-          "translation": "Orobago",
-          "pronunciation": "oh-roh-bah-goh",
-          "context": "Garden or compound fence (Class 11/10a, pl: Chimbago)",
-          "audioFile": null
-        },
-        {
-          "english": "Spear",
-          "translation": "Ritimo",
-          "pronunciation": "ree-tee-moh",
-          "context": "Traditional spear (Class 5/6, pl: Amatimo)",
-          "audioFile": null
-        },
-        {
-          "english": "Granary",
-          "translation": "Ekiage",
-          "pronunciation": "eh-kee-ah-geh",
-          "context": "Cereal storage granary (Class 7/8, pl: Ebiage)",
-          "audioFile": null
-        },
-        {
-          "english": "Firewood",
-          "translation": "Oroko",
-          "pronunciation": "oh-roh-koh",
-          "context": "Stick of firewood (Class 11/10a, pl: Chinko)",
-          "audioFile": null
-        },
-        {
-          "english": "Courtyard",
-          "translation": "Ekeoreri",
-          "pronunciation": "eh-keh-oh-reh-ree",
-          "context": "Homestead forecourt or courtyard (Class 7/8, pl: Ebioreri)",
-          "audioFile": null
-        },
-        {
-          "english": "Cattle byre",
-          "translation": "Obweeri",
-          "pronunciation": "oh-bweh-eh-ree",
-          "context": "Enclosure for livestock (Class 14/6, pl: Ameeri)",
+          "english": "Seychellois Rupee (SCR)",
+          "translation": "Rupia ya Shelisheli",
+          "pronunciation": "rupia ya shelisheli",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
@@ -972,94 +587,17 @@
       "icon": "🧠",
       "entries": [
         {
-          "english": "Head",
-          "translation": "Omotwe",
-          "pronunciation": "oh-moh-tweh",
-          "context": "Head (Class 3/4, pl: Emetwe)",
-          "audioFile": null
-        },
-        {
-          "english": "Body",
-          "translation": "Omobere",
-          "pronunciation": "oh-moh-beh-reh",
-          "context": "Human body (Class 3/4, pl: Emebere)",
-          "audioFile": null
-        },
-        {
-          "english": "Eye",
-          "translation": "Riiso",
-          "pronunciation": "ree-ee-soh",
-          "context": "Eye (Class 5/6, pl: Amaiso)",
-          "audioFile": null
-        },
-        {
-          "english": "Tooth",
-          "translation": "Riino",
-          "pronunciation": "ree-ee-noh",
-          "context": "Tooth (Class 5/6, pl: Amaino)",
+          "english": "Head (Class 3/4: omo-/eme-)",
+          "translation": "omotwe (pl. emetwe)",
+          "pronunciation": "omotwe (pl. emetwe)",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Ear",
-          "translation": "Okutu / Ogoto",
-          "pronunciation": "oh-koo-too / oh-goh-toh",
-          "context": "Ear (Class 15/6, pl: Amatwi / Amagoto)",
-          "audioFile": null
-        },
-        {
-          "english": "Hand / Arm",
-          "translation": "Okoboko",
-          "pronunciation": "oh-koh-boh-koh",
-          "context": "Arm or hand (Class 15/6, pl: Amaboko)",
-          "audioFile": null
-        },
-        {
-          "english": "Leg / Foot",
-          "translation": "Okogoro",
-          "pronunciation": "oh-koh-goh-roh",
-          "context": "Leg or foot (Class 15/6, pl: Amagoro)",
-          "audioFile": null
-        },
-        {
-          "english": "Heart / Conscience",
-          "translation": "Engoro",
-          "pronunciation": "ehn-goh-roh",
-          "context": "Heart or soul (Class 9/10)",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "Amanyinga",
-          "pronunciation": "ah-mah-nyeen-gah",
-          "context": "Blood (Class 6 plural)",
-          "audioFile": null
-        },
-        {
-          "english": "Finger",
-          "translation": "Ekiara",
-          "pronunciation": "eh-kee-ah-rah",
-          "context": "Finger (Class 7/8, pl: Ebiara)",
-          "audioFile": null
-        },
-        {
-          "english": "Forehead",
-          "translation": "Obosio",
-          "pronunciation": "oh-boh-see-oh",
-          "context": "Forehead (Class 14/6)",
-          "audioFile": null
-        },
-        {
-          "english": "Face",
-          "translation": "Ekiyeni",
-          "pronunciation": "eh-kee-yeh-nee",
-          "context": "Face, appearance (Class 7/8, pl: Ebiyeni)",
-          "audioFile": null
-        },
-        {
-          "english": "Bone",
-          "translation": "Riuga",
-          "pronunciation": "ree-oo-gah",
-          "context": "Bone (Class 5/6, pl: Amauga)",
+          "translation": "ogoto",
+          "pronunciation": "ogoto",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         }
       ]
@@ -1070,157 +608,101 @@
       "icon": "⚡",
       "entries": [
         {
-          "english": "To do / work",
-          "translation": "Gokora",
-          "pronunciation": "goh-koh-rah",
-          "context": "Infinitive verb: to do, work, or make (Stem: -kora)",
-          "audioFile": null
-        },
-        {
-          "english": "To read / learn",
-          "translation": "Gosoma",
-          "pronunciation": "goh-soh-mah",
-          "context": "Infinitive verb: to read or learn (Stem: -soma)",
-          "audioFile": null
-        },
-        {
-          "english": "To return / go home",
-          "translation": "Gotaaha",
-          "pronunciation": "goh-tah-ah-hah",
-          "context": "Infinitive verb: to return home, enter (Stem: -taaha)",
-          "audioFile": null
-        },
-        {
-          "english": "To come",
-          "translation": "Gocha",
-          "pronunciation": "goh-chah",
-          "context": "Infinitive verb: to arrive, come (Stem: -cha; Imperative: Nchuo!)",
-          "audioFile": null
-        },
-        {
-          "english": "To go",
-          "translation": "Gogenda",
-          "pronunciation": "goh-gehn-dah",
-          "context": "Infinitive verb: to go, depart (Stem: -genda; also Gochia)",
-          "audioFile": null
-        },
-        {
-          "english": "To laugh",
-          "translation": "Goseka",
-          "pronunciation": "goh-seh-kah",
-          "context": "Infinitive verb: to laugh (Stem: -seka)",
-          "audioFile": null
-        },
-        {
-          "english": "To eat",
-          "translation": "Koria",
-          "pronunciation": "koh-ree-ah",
-          "context": "Infinitive verb: to consume food (Stem: -ria; also -raagera)",
-          "audioFile": null
-        },
-        {
-          "english": "To drink",
-          "translation": "Konywa",
-          "pronunciation": "koh-nywah",
-          "context": "Infinitive verb: to drink liquids (Stem: -nywa)",
-          "audioFile": null
-        },
-        {
-          "english": "To see",
-          "translation": "Korora",
-          "pronunciation": "koh-roh-rah",
-          "context": "Infinitive verb: to see, look, behold (Stem: -rora)",
-          "audioFile": null
-        },
-        {
-          "english": "To hear / feel",
-          "translation": "Koigwa",
-          "pronunciation": "koh-ee-gwah",
-          "context": "Infinitive verb: to hear, perceive, feel (Stem: -iigwa)",
-          "audioFile": null
-        },
-        {
-          "english": "To leave / abandon",
-          "translation": "Gotiga",
-          "pronunciation": "goh-tee-gah",
-          "context": "Infinitive verb: to leave behind, abandon (Stem: -tiga)",
-          "audioFile": null
-        },
-        {
-          "english": "To love / like",
-          "translation": "Gokunda / Kwanche",
-          "pronunciation": "goh-koon-dah / kwahn-cheh",
-          "context": "Infinitive verb: to love, like, care for (Stem: -kunda / -ancha)",
+          "english": "To miss (short vowel) vs. To say/tell (long vowel)",
+          "translation": "bóra (to miss) vs. bóóra (to say)",
+          "pronunciation": "bóra (to miss) vs. bóóra (to say)",
+          "context": "Wikipedia Gusii language — Contrastive vowel length",
           "audioFile": null
         },
         {
           "english": "To know",
-          "translation": "Komanya",
-          "pronunciation": "koh-mah-nyah",
-          "context": "Infinitive verb: to know, understand (Stem: -manya)",
+          "translation": "komanya (-manya)",
+          "pronunciation": "komanya (-manya)",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To speak / converse",
-          "translation": "Gokoana",
-          "pronunciation": "goh-koh-ah-nah",
-          "context": "Infinitive verb: to speak, talk, converse (Stem: -kwana)",
+          "english": "To milk",
+          "translation": "gokama (-kama)",
+          "pronunciation": "gokama (-kama)",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To cook",
-          "translation": "Goruga",
-          "pronunciation": "goh-roo-gah",
-          "context": "Infinitive verb: to cook porridge (Stem: -ruga; -yeka = to boil/stew)",
+          "english": "To dwell / live",
+          "translation": "komenya (menya)",
+          "pronunciation": "komenya (menya)",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To cultivate",
-          "translation": "Gorema",
-          "pronunciation": "goh-reh-mah",
-          "context": "Infinitive verb: to hoe, dig, farm (Stem: -rema)",
+          "english": "To stand",
+          "translation": "gotenena (-tenena)",
+          "pronunciation": "gotenena (-tenena)",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To sleep",
-          "translation": "Goraara",
-          "pronunciation": "goh-rah-ah-rah",
-          "context": "Infinitive verb: to sleep, rest (Stem: -raara)",
+          "english": "To see",
+          "translation": "korora (-rora)",
+          "pronunciation": "korora (-rora)",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To sing",
-          "translation": "Goteera",
-          "pronunciation": "goh-teh-eh-rah",
-          "context": "Infinitive verb: to sing (Stem: -teera)",
+          "english": "To roll over",
+          "translation": "-garagara",
+          "pronunciation": "-garagara",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To buy",
-          "translation": "Gogora",
-          "pronunciation": "goh-goh-rah",
-          "context": "Infinitive verb: to buy or trade (Stem: -gora)",
+          "english": "To harvest / harvest season",
+          "translation": "gesa (verb) / rigesa (noun)",
+          "pronunciation": "gesa (verb) / rigesa (noun)",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To wash / bathe",
-          "translation": "Geesibia",
-          "pronunciation": "geh-eh-see-bee-ah",
-          "context": "Infinitive reflexive: to wash oneself, bathe (Stem: -eesibia)",
+          "english": "To cry",
+          "translation": "rera",
+          "pronunciation": "rera",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To run",
-          "translation": "Gominyoka / Gotama",
-          "pronunciation": "goh-mee-nyoh-kah / goh-tah-mah",
-          "context": "Infinitive verb: to run, flee (Stem: -minyoka / -tama)",
+          "english": "To walk",
+          "translation": "tara",
+          "pronunciation": "tara",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "To help / assist",
-          "translation": "Gokoonya",
-          "pronunciation": "goh-koh-ohn-yah",
-          "context": "Infinitive verb: to aid, assist (Stem: -koonya)",
+          "english": "To look / observe",
+          "translation": "rigereria",
+          "pronunciation": "rigereria",
+          "context": "Wikipedia Gusii language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "to eat / to drink (Class 15 infinitives)",
+          "translation": "okoria / okonywa",
+          "pronunciation": "okoria / okonywa",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "to go / to come (illustrating Dahl's Law voicing okogenda vs. ogocha)",
+          "translation": "okogenda / ogocha",
+          "pronunciation": "okogenda / ogocha",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "to see / to hear, feel",
+          "translation": "okorora / okoigwa",
+          "pronunciation": "okorora / okoigwa",
+          "context": "Ekegusii",
           "audioFile": null
         }
       ]
@@ -1231,126 +713,595 @@
       "icon": "💬",
       "entries": [
         {
-          "english": "Yes",
-          "translation": "Eee / Ee",
-          "pronunciation": "eh-eh",
-          "context": "Universal affirmative particle ('Yes!')",
-          "audioFile": null
-        },
-        {
-          "english": "No",
-          "translation": "Yaya / Yaaya",
-          "pronunciation": "yah-yah",
-          "context": "Universal negative particle ('No!')",
-          "audioFile": null
-        },
-        {
-          "english": "I love you",
-          "translation": "Nkogokunda / Nkwanchire",
-          "pronunciation": "n-koh-goh-koon-dah / n-kwahn-chee-reh",
-          "context": "Expression of love and affection",
-          "audioFile": null
-        },
-        {
-          "english": "Where are you going?",
-          "translation": "Inka ogochia?",
-          "pronunciation": "een-kah oh-goh-chee-ah",
-          "context": "Everyday inquiry to travelers ('Where are you heading?')",
-          "audioFile": null
-        },
-        {
-          "english": "Come here",
-          "translation": "Incha aiga / Nchuo aiga",
-          "pronunciation": "een-chah ah-ee-gah / n-choo-oh ah-ee-gah",
-          "context": "Direct imperative command ('Come here!')",
-          "audioFile": null
-        },
-        {
-          "english": "What is your name?",
-          "translation": "Rieta riao ningo?",
-          "pronunciation": "ree-eh-tah ree-ah-oh neen-goh",
-          "context": "Courteous question asking for someone's name",
-          "audioFile": null
-        },
-        {
-          "english": "My name is...",
-          "translation": "Erieta riane nere...",
-          "pronunciation": "eh-ree-eh-tah ree-ah-neh neh-reh",
-          "context": "Standard self-introduction ('My name is...')",
-          "audioFile": null
-        },
-        {
-          "english": "Very well / truly",
-          "translation": "Mbuya mono",
-          "pronunciation": "m-boo-yah moh-noh",
-          "context": "Expression of praise, confirmation, or gratitude",
-          "audioFile": null
-        },
-        {
-          "english": "Thank you very much",
-          "translation": "Ase mono",
-          "pronunciation": "ah-seh moh-noh",
-          "context": "Standard formula of gratitude",
-          "audioFile": null
-        },
-        {
-          "english": "Now",
-          "translation": "Bono",
-          "pronunciation": "boh-noh",
-          "context": "Temporal adverb: at present, now",
-          "audioFile": null
-        },
-        {
           "english": "Today",
-          "translation": "Reero",
-          "pronunciation": "reh-eh-roh",
-          "context": "Temporal adverb: today",
+          "translation": "rero",
+          "pronunciation": "rero",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
           "english": "Tomorrow",
-          "translation": "Ankio",
-          "pronunciation": "ahn-kee-oh",
-          "context": "Temporal adverb: tomorrow (Ankiende = day after tomorrow)",
+          "translation": "mambia",
+          "pronunciation": "mambia",
+          "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
-          "english": "Because",
-          "translation": "Ekiaagera",
-          "pronunciation": "eh-kee-ah-ah-geh-rah",
-          "context": "Conjunction stating cause or reason",
+          "english": "Cowardice / fear (Class 14: obw-)",
+          "translation": "obwoba",
+          "pronunciation": "obwoba",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
-          "english": "When",
-          "translation": "Ekero",
-          "pronunciation": "eh-keh-roh",
-          "context": "Temporal conjunction ('when / at the time that')",
+          "english": "The Gusii language (Class 7: eke-)",
+          "translation": "Ekegusii",
+          "pronunciation": "Ekegusii",
+          "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
-          "english": "But",
-          "translation": "Korende",
-          "pronunciation": "koh-rehn-deh",
-          "context": "Adversative conjunction ('but / however')",
+          "english": "Good morning! (lit. It has dawned! — It has dawned well!)",
+          "translation": "Bwakire! (resp. Bwakire buya!)",
+          "pronunciation": "bwakire! (resp. bwakire buya!)",
+          "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "Why?",
-          "translation": "Nki kiaagera?",
-          "pronunciation": "n-kee kee-ah-ah-geh-rah",
-          "context": "Interrogative expression ('What caused it? / Why?')",
+          "english": "Good evening! (lit. It has grown dark!)",
+          "translation": "Bwairire! (resp. Bwairire buya!)",
+          "pronunciation": "bwairire! (resp. bwairire buya!)",
+          "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "Who?",
-          "translation": "Ng'o?",
-          "pronunciation": "ng-oh",
-          "context": "Interrogative pronoun ('Who?')",
+          "english": "Thank you very much! / Very well!",
+          "translation": "Mbuya mono!",
+          "pronunciation": "mbuya mono!",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "cooked finger millet or maize cornmeal (ugali)",
+          "translation": "Obokima",
+          "pronunciation": "obokima",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "milk (specifically sour/fermented milk)",
+          "translation": "Amabere",
+          "pronunciation": "amabere",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "spiderplant / vine spinach (traditional Kisii leafy greens)",
+          "translation": "Chinsaga / Enderema",
+          "pronunciation": "chinsaga / enderema",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "house (pl. houses) (Class 9/10)",
+          "translation": "Enyomba (pl. Chinyomba)",
+          "pronunciation": "enyomba (pl. chinyomba)",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "homestead, village (Class 3/4)",
+          "translation": "Omochie (pl. Emechie)",
+          "pronunciation": "omochie (pl. emechie)",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "traditional Gusii council of elders and community court",
+          "translation": "Etureti",
+          "pronunciation": "etureti",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Creator / God in Gusii cosmology",
+          "translation": "Engoro / Nyasae",
+          "pronunciation": "engoro / nyasae",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "traditional eight-stringed Gusii bass lyre",
+          "translation": "Obokano",
+          "pronunciation": "obokano",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "Kisii person (pl. Kisii people) (Class 1/2)",
+          "translation": "Omogusii (pl. Abagusii)",
+          "pronunciation": "omogusii (pl. abagusii)",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "woman, wife (pl. women)",
+          "translation": "Omokungu (pl. Abakungu)",
+          "pronunciation": "omokungu (pl. abakungu)",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "man, husband (pl. men)",
+          "translation": "Omosacha (pl. Abasacha)",
+          "pronunciation": "omosacha (pl. abasacha)",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "respected male elder, grandfather",
+          "translation": "Omogaka (pl. Abagaka)",
+          "pronunciation": "omogaka (pl. abagaka)",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "respected female elder, grandmother, mother",
+          "translation": "Omong'ina (pl. Abang'ina)",
+          "pronunciation": "omong'ina (pl. abang'ina)",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "sun, sky, day (Class 5)",
+          "translation": "Erioba",
+          "pronunciation": "erioba",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "moon, month (Class 3)",
+          "translation": "Omotienyi",
+          "pronunciation": "omotienyi",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "chair, stool (Class 7/8)",
+          "translation": "Ekerogo (pl. Ebirogo)",
+          "pronunciation": "ekerogo (pl. ebirogo)",
+          "context": "Ekegusii",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Chumapiri (Cpr)",
+          "pronunciation": "chumapiri (cpr)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Chumatato (Ctt)",
+          "pronunciation": "chumatato (ctt)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Chumaine (Cmn)",
+          "pronunciation": "chumaine (cmn)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Chumatano (Cmt)",
+          "pronunciation": "chumatano (cmt)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Aramisi (Ars)",
+          "pronunciation": "aramisi (ars)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Ichuma (Icm)",
+          "pronunciation": "ichuma (icm)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Esabato (Est)",
+          "pronunciation": "esabato (est)",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Before Christ (BC / Historical Era)",
+          "translation": "Yeso ataiborwa",
+          "pronunciation": "yeso ataiborwa",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Anno Domini (AD / Common Era)",
+          "translation": "Yeso kaiboirwe",
+          "pronunciation": "yeso kaiboirwe",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "Mambia",
+          "pronunciation": "mambia",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "Mog",
+          "pronunciation": "mog",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "Ebiro",
+          "pronunciation": "ebiro",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Week (calendar unit)",
+          "translation": "Omokubio",
+          "pronunciation": "omokubio",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Day of the week",
+          "translation": "Rituko r’ewiki",
+          "pronunciation": "rituko r’ewiki",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Hour (time unit)",
+          "translation": "Ensa",
+          "pronunciation": "ensa",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Minute (time unit)",
+          "translation": "Edakika",
+          "pronunciation": "edakika",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Time zone",
+          "translation": "Chinse ‘chimo",
+          "pronunciation": "chinse ‘chimo",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Kenyan Shilling (KES)",
+          "translation": "Shilingi ya Kenya",
+          "pronunciation": "shilingi ya kenya",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopian Birr (ETB)",
+          "translation": "Bir ya Uhabeshi",
+          "pronunciation": "bir ya uhabeshi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigerian Naira (NGN)",
+          "translation": "Naira ya Nijeria",
+          "pronunciation": "naira ya nijeria",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malagasy Ariary (MGA)",
+          "translation": "Ariary ya Bukini",
+          "pronunciation": "ariary ya bukini",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Algerian Dinar (DZD)",
+          "translation": "Dinari ya Aljeria",
+          "pronunciation": "dinari ya aljeria",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Faranga CFA BCEAO",
+          "pronunciation": "faranga cfa bceao",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Faranga CFA BEAC",
+          "pronunciation": "faranga cfa beac",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese Yuan (CNY)",
+          "translation": "Yuan Renminbi ya China",
+          "pronunciation": "yuan renminbi ya china",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese Yen (JPY)",
+          "translation": "Sarafu ya Kijapani",
+          "pronunciation": "sarafu ya kijapani",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Dola ya Kanada",
+          "pronunciation": "dola ya kanada",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Uhabeshi",
+          "pronunciation": "uhabeshi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Nijeri",
+          "pronunciation": "nijeri",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Ginekweta",
+          "pronunciation": "ginekweta",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Uswazi",
+          "pronunciation": "uswazi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Bukini",
+          "pronunciation": "bukini",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Uingereza",
+          "pronunciation": "uingereza",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Hispania",
+          "pronunciation": "hispania",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Ukraini",
+          "pronunciation": "ukraini",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
+          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Katari",
+          "pronunciation": "katari",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Uajemi",
+          "pronunciation": "uajemi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Brazili",
+          "pronunciation": "brazili",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Gusii (Language)",
+          "translation": "Ekegusii",
+          "pronunciation": "ekegusii",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "English (Language)",
+          "translation": "Kingereza",
+          "pronunciation": "kingereza",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukrainian (Language)",
+          "translation": "Kiukrania",
+          "pronunciation": "kiukrania",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Czech (Language)",
+          "translation": "Kichecki",
+          "pronunciation": "kichecki",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Bangla (Language)",
+          "translation": "Kibangla",
+          "pronunciation": "kibangla",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tamil (Language)",
+          "translation": "Kitamil",
+          "pronunciation": "kitamil",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Thai (Language)",
+          "translation": "Kitailandi",
+          "pronunciation": "kitailandi",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malay (Language)",
+          "translation": "Kimalesia",
+          "pronunciation": "kimalesia",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Akan (Language)",
+          "translation": "Kiakan",
+          "pronunciation": "kiakan",
+          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "KenyaHub Community & Linguistic Reference Dictionary"
+  "source": "Public Domain Dictionary Scaffold"
 }

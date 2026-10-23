@@ -13,7 +13,7 @@
   "hasAudio": false,
   "dictionaryVersion": "0.1.0",
   "lastUpdated": "2026-10-20",
-  "contributorNote": "Mijikenda encompasses nine sub-groups (Giriama, Digo, Duruma, Chonyi, Jibana, Kambe, Ribe, Rabai, Kauma). This uses the Giriama dialect as the most widely spoken. Coastal Kenya.",
+  "contributorNote": "Mijikenda (Giriama) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
       "id": "greetings",
@@ -21,339 +21,45 @@
       "icon": "👋",
       "entries": [
         {
-          "english": "Elder",
-          "translation": "Mutumia / Mzee wa Kaya",
-          "pronunciation": "moo-too-myah",
-          "context": "Respected Kaya elder",
+          "english": "The Nine Homesteads / Sacred Kayas (origin of 'Mijikenda')",
+          "translation": "Mijikenda / Midzi Chenda",
+          "pronunciation": "Mijikenda / Midzi Chenda",
+          "context": "Wikipedia Sabaki languages & Digo language",
           "audioFile": null
         },
         {
-          "english": "Chief",
-          "translation": "Chifu / Mzee wa Kaya",
-          "pronunciation": "m-zeh-eh wah kah-yah",
-          "context": "Kaya Elder / Chief",
+          "english": "The Digo language (Southern Mijikenda)",
+          "translation": "Chidigo",
+          "pronunciation": "Chidigo",
+          "context": "Wikipedia Digo language",
           "audioFile": null
         },
         {
-          "english": "King",
-          "translation": "Mfalme",
-          "pronunciation": "m-fahl-meh",
-          "context": "King",
+          "english": "The Duruma language (Southern Mijikenda)",
+          "translation": "Chiduruma",
+          "pronunciation": "Chiduruma",
+          "context": "Wiktionary Category:Mijikenda languages",
           "audioFile": null
         },
         {
-          "english": "Work",
-          "translation": "Kazi / Mihang'o",
-          "pronunciation": "kah-zee",
-          "context": "Work",
+          "english": "The Giriama language (Northern Mijikenda)",
+          "translation": "Kigiryama",
+          "pronunciation": "Kigiryama",
+          "context": "Wiktionary Reconstruction:Proto-Sabaki",
           "audioFile": null
         },
         {
-          "english": "Market",
-          "translation": "Sokoni",
-          "pronunciation": "soh-koh-nee",
-          "context": "Market",
+          "english": "The Chonyi-Dzihana-Kauma language",
+          "translation": "Chichonyi-Chidzihana-Chikauma",
+          "pronunciation": "Chichonyi-Chidzihana-Chikauma",
+          "context": "Wiktionary Category:Mijikenda languages",
           "audioFile": null
         },
         {
-          "english": "Money",
-          "translation": "Pesa / Fedha",
-          "pronunciation": "peh-sah",
-          "context": "Money",
-          "audioFile": null
-        },
-        {
-          "english": "Yesterday",
-          "translation": "Dzana",
-          "pronunciation": "dzah-nah",
-          "context": "Yesterday",
-          "audioFile": null
-        },
-        {
-          "english": "Tomorrow",
-          "translation": "Machero",
-          "pronunciation": "mah-cheh-roh",
-          "context": "Tomorrow",
-          "audioFile": null
-        },
-        {
-          "english": "Today",
-          "translation": "Rero",
-          "pronunciation": "reh-roh",
-          "context": "Today",
-          "audioFile": null
-        },
-        {
-          "english": "Night",
-          "translation": "Usiku",
-          "pronunciation": "oo-see-koo",
-          "context": "Night",
-          "audioFile": null
-        },
-        {
-          "english": "Day",
-          "translation": "Siku",
-          "pronunciation": "see-koo",
-          "context": "Day",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "Milatso",
-          "pronunciation": "mee-lah-tsoh",
-          "context": "Blood",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "Moyo",
-          "pronunciation": "moh-yoh",
-          "context": "Heart",
-          "audioFile": null
-        },
-        {
-          "english": "Hand",
-          "translation": "Mukono",
-          "pronunciation": "moo-koh-noh",
-          "context": "Hand",
-          "audioFile": null
-        },
-        {
-          "english": "Eye",
-          "translation": "Dzitso",
-          "pronunciation": "dzee-tsoh",
-          "context": "Eye",
-          "audioFile": null
-        },
-        {
-          "english": "Head",
-          "translation": "Chitswa",
-          "pronunciation": "chee-tswah",
-          "context": "Head",
-          "audioFile": null
-        },
-        {
-          "english": "Fish",
-          "translation": "Komba / Samaki",
-          "pronunciation": "kohm-bah",
-          "context": "Fish",
-          "audioFile": null
-        },
-        {
-          "english": "Bird",
-          "translation": "Tsongwe / Nyuni",
-          "pronunciation": "nyoo-nee",
-          "context": "Bird",
-          "audioFile": null
-        },
-        {
-          "english": "Dog",
-          "translation": "Dia",
-          "pronunciation": "dee-ah",
-          "context": "Dog",
-          "audioFile": null
-        },
-        {
-          "english": "Goat",
-          "translation": "Mbuzi",
-          "pronunciation": "mboo-zee",
-          "context": "Goat",
-          "audioFile": null
-        },
-        {
-          "english": "Meat",
-          "translation": "Nyama",
-          "pronunciation": "nyah-mah",
-          "context": "Meat",
-          "audioFile": null
-        },
-        {
-          "english": "Milk",
-          "translation": "Mazia",
-          "pronunciation": "mah-zee-ah",
-          "context": "Milk",
-          "audioFile": null
-        },
-        {
-          "english": "Rain",
-          "translation": "Mvula",
-          "pronunciation": "mvoo-lah",
-          "context": "Rain",
-          "audioFile": null
-        },
-        {
-          "english": "Tree",
-          "translation": "Muhi",
-          "pronunciation": "moo-hee",
-          "context": "Tree",
-          "audioFile": null
-        },
-        {
-          "english": "No",
-          "translation": "Bule / A-a",
-          "pronunciation": "boo-leh",
-          "context": "No",
-          "audioFile": null
-        },
-        {
-          "english": "Yes",
-          "translation": "Inde / Haya",
-          "pronunciation": "een-deh",
-          "context": "Yes",
-          "audioFile": null
-        },
-        {
-          "english": "Welcome",
-          "translation": "Karibu / Ndzoni",
-          "pronunciation": "ndzoh-nee",
-          "context": "Welcome",
-          "audioFile": null
-        },
-        {
-          "english": "Good night",
-          "translation": "Lalani bule",
-          "pronunciation": "lah-lah-nee boo-leh",
-          "context": "Sleep well",
-          "audioFile": null
-        },
-        {
-          "english": "Good morning",
-          "translation": "Mudzatsendza",
-          "pronunciation": "moo-dzah-tsehn-dzah",
-          "context": "Good morning",
-          "audioFile": null
-        },
-        {
-          "english": "Love",
-          "translation": "Upendo / Rohendzo",
-          "pronunciation": "roh-hehn-dzoh",
-          "context": "Love",
-          "audioFile": null
-        },
-        {
-          "english": "Peace",
-          "translation": "eri / Dheri",
-          "pronunciation": "dheh-ree",
-          "context": "Peace",
-          "audioFile": null
-        },
-        {
-          "english": "Woman",
-          "translation": "Muche",
-          "pronunciation": "moo-cheh",
-          "context": "Adult woman",
-          "audioFile": null
-        },
-        {
-          "english": "Man",
-          "translation": "Mulume",
-          "pronunciation": "moo-loo-meh",
-          "context": "Adult man",
-          "audioFile": null
-        },
-        {
-          "english": "Home",
-          "translation": "Mudzini / Kwehu",
-          "pronunciation": "moo-dzee-nee",
-          "context": "Home",
-          "audioFile": null
-        },
-        {
-          "english": "House",
-          "translation": "Nyumba",
-          "pronunciation": "nyoom-bah",
-          "context": "House",
-          "audioFile": null
-        },
-        {
-          "english": "Fire",
-          "translation": "Moho",
-          "pronunciation": "moh-hoh",
-          "context": "Fire",
-          "audioFile": null
-        },
-        {
-          "english": "Sun",
-          "translation": "Dzuwa",
-          "pronunciation": "dzoo-wah",
-          "context": "Sun",
-          "audioFile": null
-        },
-        {
-          "english": "Friend",
-          "translation": "Musena",
-          "pronunciation": "moo-seh-nah",
-          "context": "Friend",
-          "audioFile": null
-        },
-        {
-          "english": "Cow",
-          "translation": "Ng'ombe",
-          "pronunciation": "ngohm-beh",
-          "context": "Cow / cattle",
-          "audioFile": null
-        },
-        {
-          "english": "Food",
-          "translation": "Chakurya / Wali",
-          "pronunciation": "chah-koo-ryah",
-          "context": "Food",
-          "audioFile": null
-        },
-        {
-          "english": "Mother",
-          "translation": "Mama / Mma",
-          "pronunciation": "mah-mah",
-          "context": "Mother",
-          "audioFile": null
-        },
-        {
-          "english": "Father",
-          "translation": "Baba / Dde",
-          "pronunciation": "bah-bah",
-          "context": "Father",
-          "audioFile": null
-        },
-        {
-          "english": "God",
-          "translation": "Mulungu",
-          "pronunciation": "moo-loo-ngoo",
-          "context": "God, the Supreme Creator",
-          "audioFile": null
-        },
-        {
-          "english": "Hello",
-          "translation": "Jomba",
-          "pronunciation": "johm-bah",
-          "context": "General greeting",
-          "audioFile": null
-        },
-        {
-          "english": "How are you?",
-          "translation": "Uwe mudziro?",
-          "pronunciation": "oo-weh moo-dzee-roh",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "I am fine",
-          "translation": "Ni mudziro",
-          "pronunciation": "nee moo-dzee-roh",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Thank you",
-          "translation": "Ahsante",
-          "pronunciation": "ah-sahn-teh",
-          "context": "Influenced by Swahili",
-          "audioFile": null
-        },
-        {
-          "english": "Goodbye",
-          "translation": "Kwaheri",
-          "pronunciation": "kwah-heh-ree",
-          "context": "Borrowed from Swahili",
+          "english": "Matter / word / greeting affair (Proto-Sabaki *i̧jambo → dzambo)",
+          "translation": "dzambo (pl. mambo)",
+          "pronunciation": "dzambo (pl. mambo)",
+          "context": "Wiktionary Category:Digo links — Proto-Sabaki *i̧jambo",
           "audioFile": null
         }
       ]
@@ -364,73 +70,52 @@
       "icon": "🔢",
       "entries": [
         {
+          "english": "Nine (Chenda / Kenda in Mijikenda)",
+          "translation": "chenda / kenda",
+          "pronunciation": "chenda / kenda",
+          "context": "Wikipedia Sabaki languages & Bantu numeral cognates",
+          "audioFile": null
+        },
+        {
           "english": "One",
-          "translation": "Moja",
-          "pronunciation": "moh-jah",
-          "context": "",
+          "translation": "mwenga / mosi",
+          "pronunciation": "mwenga / mosi",
+          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
           "audioFile": null
         },
         {
           "english": "Two",
-          "translation": "Mbiri",
-          "pronunciation": "m-bee-ree",
-          "context": "",
+          "translation": "mbiri / phiri",
+          "pronunciation": "mbiri / phiri",
+          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
           "audioFile": null
         },
         {
           "english": "Three",
-          "translation": "Datu",
-          "pronunciation": "dah-too",
-          "context": "",
+          "translation": "tahu / tatu",
+          "pronunciation": "tahu / tatu",
+          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
           "audioFile": null
         },
         {
           "english": "Four",
-          "translation": "Nye",
-          "pronunciation": "nyeh",
-          "context": "",
+          "translation": "nne",
+          "pronunciation": "nne",
+          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
           "audioFile": null
         },
         {
           "english": "Five",
-          "translation": "Tsano",
-          "pronunciation": "tsah-noh",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Six",
-          "translation": "Sita",
-          "pronunciation": "see-tah",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Seven",
-          "translation": "Fung'ate",
-          "pronunciation": "foong-ah-teh",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Eight",
-          "translation": "Nane",
-          "pronunciation": "nah-neh",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Nine",
-          "translation": "Tisa",
-          "pronunciation": "tee-sah",
-          "context": "",
+          "translation": "tsano / tano",
+          "pronunciation": "tsano / tano",
+          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
           "audioFile": null
         },
         {
           "english": "Ten",
-          "translation": "Kumi",
-          "pronunciation": "koo-mee",
-          "context": "",
+          "translation": "ikumi / kumi",
+          "pronunciation": "ikumi / kumi",
+          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
           "audioFile": null
         }
       ]
@@ -440,42 +125,1232 @@
       "name": "Common Phrases, Family & Coast",
       "entries": [
         {
-          "english": "Thank you",
-          "translation": "Asante / Ni wega",
-          "pronunciation": "ah-sahn-teh",
-          "context": "Polite gratitude",
+          "english": "Sacred fortified forest settlement of the Mijikenda",
+          "translation": "Kaya (pl. Makaya)",
+          "pronunciation": "Kaya (pl. Makaya)",
+          "context": "Wikipedia Mijikenda / Sabaki languages",
           "audioFile": null
         },
         {
-          "english": "Water",
-          "translation": "Madzi",
-          "pronunciation": "mah-dzee",
-          "context": "Fresh water",
+          "english": "Class 5 noun prefix (Giryama, Chonyi, Duruma, Digo: dzi- before monosyllabic stems)",
+          "translation": "dzi- (pl. ma-)",
+          "pronunciation": "dzi- (pl. ma-)",
+          "context": "Wiktionary Reconstruction:Proto-Sabaki/i̧-",
           "audioFile": null
         },
         {
-          "english": "Coconut palm",
-          "translation": "Mnazi",
-          "pronunciation": "m-nah-zee",
-          "context": "Tree of life along the Kenyan coast",
+          "english": "Stone (Proto-Sabaki *i̧we → Mijikenda dziwe)",
+          "translation": "dziwe (pl. mawe)",
+          "pronunciation": "dziwe (pl. mawe)",
+          "context": "Wiktionary Category:Digo links — Proto-Sabaki *i̧we",
           "audioFile": null
         },
         {
-          "english": "Sacred forest homestead",
-          "translation": "Kaya",
-          "pronunciation": "kah-yah",
-          "context": "UNESCO-recognized sacred Mijikenda forest",
+          "english": "Water (Proto-Bantu *màjíjɪ̀ → Mijikenda madzi)",
+          "translation": "madzi",
+          "pronunciation": "madzi",
+          "context": "Wiktionary Category:Digo links — Proto-Bantu *màjíjɪ̀",
           "audioFile": null
         },
         {
-          "english": "Child",
-          "translation": "Mwana",
-          "pronunciation": "mwah-nah",
-          "context": "Plural: Ahoho / Ana",
+          "english": "Fire (Proto-Bantu *mʊ̀jótò → Mijikenda/Sabaki moto)",
+          "translation": "moto",
+          "pronunciation": "moto",
+          "context": "Wiktionary Category:Digo links — Proto-Bantu *mʊ̀jótò",
+          "audioFile": null
+        },
+        {
+          "english": "God / Spirit (Proto-Bantu *mʊ̀dímʊ̀ → Mulungu)",
+          "translation": "Mulungu",
+          "pronunciation": "Mulungu",
+          "context": "Wiktionary Category:Digo links — Proto-Bantu *mʊ̀dímʊ̀",
+          "audioFile": null
+        },
+        {
+          "english": "To resemble / be like each other (Digo: -fanana ~ -fwanana)",
+          "translation": "-fwanana / -fanana",
+          "pronunciation": "-fwanana / -fanana",
+          "context": "Wiktionary Reconstruction:Proto-Sabaki/fwanana",
+          "audioFile": null
+        },
+        {
+          "english": "To walk (Maate/Coastal Bantu root -tara)",
+          "translation": "-tara",
+          "pronunciation": "-tara",
+          "context": "Comparative Northeast Bantu lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "little hare (trickster hero of Giriama folktales)",
+          "translation": "katsungula",
+          "pronunciation": "katsungula",
+          "context": "Kigiryama (W. E. Taylor 1891) — e.g. Katsungula na Simba (The Little Hare and the Lion (Taylor 1891))",
+          "audioFile": null
+        },
+        {
+          "english": "lion",
+          "translation": "simba",
+          "pronunciation": "simba",
+          "context": "Kigiryama / Mijikenda (W. E. Taylor 1891) — e.g. Fisi na Simba na Katsungula (The Hyena, the Lion, and the Little Hare (Taylor 1891))",
+          "audioFile": null
+        },
+        {
+          "english": "hyena",
+          "translation": "fisi",
+          "pronunciation": "fisi",
+          "context": "Kigiryama / Mijikenda (W. E. Taylor 1891)",
+          "audioFile": null
+        },
+        {
+          "english": "chicken, domestic fowl",
+          "translation": "k'uku",
+          "pronunciation": "k'uku",
+          "context": "Kigiryama (W. E. Taylor 1891) — e.g. K'uku na Katsungula (The Fowl and the Little Hare (Taylor 1891))",
+          "audioFile": null
+        },
+        {
+          "english": "woman, wife",
+          "translation": "muche (pl. ache)",
+          "pronunciation": "muche (pl. ache)",
+          "context": "Kigiryama (W. E. Taylor 1891) — e.g. Kuononga kwa Muche (The Havoc Wrought by the Woman (Taylor 1891))",
+          "audioFile": null
+        },
+        {
+          "english": "man, husband",
+          "translation": "mwalume (pl. alume)",
+          "pronunciation": "mwalume (pl. alume)",
+          "context": "Kigiryama (W. E. Taylor 1891) — e.g. Fw-alume ahahu (We are three men (Taylor 1891 Riddle #6))",
+          "audioFile": null
+        },
+        {
+          "english": "death, to die",
+          "translation": "kufwa",
+          "pronunciation": "kufwa",
+          "context": "Kigiryama (W. E. Taylor 1891) — e.g. Kuandika kwa Kufwa (The Origin of Death (Taylor 1891))",
+          "audioFile": null
+        },
+        {
+          "english": "three cooking stones of the hearth",
+          "translation": "mafigo (sg. figo)",
+          "pronunciation": "mafigo (sg. figo)",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 138) — e.g. Fw-alume ahahu, akiuka mumwenga, k'afurya wari. Ni mafigo. (We are three men; when one goes away, we eat no cornmeal. It is the three hearth-stones.)",
+          "audioFile": null
+        },
+        {
+          "english": "cooked cornmeal porridge (ugali) or cooked rice",
+          "translation": "wari",
+          "pronunciation": "wari",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 138)",
+          "audioFile": null
+        },
+        {
+          "english": "food",
+          "translation": "chakurya",
+          "pronunciation": "chakurya",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 138)",
+          "audioFile": null
+        },
+        {
+          "english": "to cook",
+          "translation": "kugit'ira",
+          "pronunciation": "kugit'ira",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 138)",
+          "audioFile": null
+        },
+        {
+          "english": "to be able",
+          "translation": "kuadima",
+          "pronunciation": "kuadima",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 138)",
+          "audioFile": null
+        },
+        {
+          "english": "to eat",
+          "translation": "kurya",
+          "pronunciation": "kurya",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 138)",
+          "audioFile": null
+        },
+        {
+          "english": "to go away, depart, rise",
+          "translation": "kuuka",
+          "pronunciation": "kuuka",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 138)",
+          "audioFile": null
+        },
+        {
+          "english": "elbow",
+          "translation": "kikokora (pl. vikokora)",
+          "pronunciation": "kikokora (pl. vikokora)",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 139) — e.g. K'akilumika. Ni kikokora. (It cannot be bitten. It is the elbow. (Riddle #8))",
+          "audioFile": null
+        },
+        {
+          "english": "to be bitten / to bite",
+          "translation": "kulumika / kuluma",
+          "pronunciation": "kulumika / kuluma",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 139)",
+          "audioFile": null
+        },
+        {
+          "english": "breasts",
+          "translation": "mahombo (sg. hombo)",
+          "pronunciation": "mahombo (sg. hombo)",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 140) — e.g. Magoma mairi lwanda-ni. Ni mahombo. (Two cows in the open field. It is the breasts. (Riddle #18))",
+          "audioFile": null
+        },
+        {
+          "english": "open field, clearing, treeless plain",
+          "translation": "lwanda (loc. lwanda-ni)",
+          "pronunciation": "lwanda (loc. lwanda-ni)",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 140)",
+          "audioFile": null
+        },
+        {
+          "english": "full-grown cows",
+          "translation": "magoma",
+          "pronunciation": "magoma",
+          "context": "Kigiryama (W. E. Taylor 1891, p. 140)",
+          "audioFile": null
+        },
+        {
+          "english": "one (Class 1 / counting form)",
+          "translation": "mumwenga / mwenga",
+          "pronunciation": "mumwenga / mwenga",
+          "context": "Kigiryama (W. E. Taylor 1891)",
+          "audioFile": null
+        },
+        {
+          "english": "two (Class 6 concord)",
+          "translation": "mairi",
+          "pronunciation": "mairi",
+          "context": "Kigiryama (W. E. Taylor 1891)",
+          "audioFile": null
+        },
+        {
+          "english": "three (Class 2 concord / root)",
+          "translation": "ahahu / hahu",
+          "pronunciation": "ahahu / hahu",
+          "context": "Kigiryama (W. E. Taylor 1891)",
+          "audioFile": null
+        },
+        {
+          "english": "supreme council of elders governing a Mijikenda Kaya",
+          "translation": "Kambi",
+          "pronunciation": "kambi",
+          "context": "Kigiryama / Mijikenda",
+          "audioFile": null
+        },
+        {
+          "english": "carved sacred hardwood memorial statues erected for deceased Gohu elders",
+          "translation": "vigango (sg. kigango)",
+          "pronunciation": "vigango (sg. kigango)",
+          "context": "Kigiryama / Mijikenda",
+          "audioFile": null
+        },
+        {
+          "english": "elders, senior council members of the Kaya",
+          "translation": "atumia (sg. mutumia)",
+          "pronunciation": "atumia (sg. mutumia)",
+          "context": "Kigiryama / Chichonyi",
+          "audioFile": null
+        },
+        {
+          "english": "God, the Supreme Creator",
+          "translation": "Mulingu / Mulungu",
+          "pronunciation": "mulingu / mulungu",
+          "context": "Kigiryama / Chichonyi / Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "chair, stool (illustrating Giryama ki- vs. Chonyi chi- dialectal shift)",
+          "translation": "kihi (Giryama) / chihi (Chonyi)",
+          "pronunciation": "kihi (giryama) / chihi (chonyi)",
+          "context": "Kigiryama & Chichonyi",
+          "audioFile": null
+        },
+        {
+          "english": "traditional Mijikenda xylophone (marimba) music",
+          "translation": "chiring'ong'o",
+          "pronunciation": "chiring'ong'o",
+          "context": "Chichonyi / Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "seeds for planting (also a traditional Giriama feminine name)",
+          "translation": "mbeyu",
+          "pronunciation": "mbeyu",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "provider, breadwinner (traditional Giriama masculine name)",
+          "translation": "tsuma",
+          "pronunciation": "tsuma",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "rainy season; one born during the rains (< mvula 'rain')",
+          "translation": "nyamvula",
+          "pronunciation": "nyamvula",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "sower, planter of crops",
+          "translation": "mnyazi",
+          "pronunciation": "mnyazi",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "helper, rescuer, helpful person",
+          "translation": "mokoli",
+          "pronunciation": "mokoli",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "great river (from muho 'river' + mkulu 'great')",
+          "translation": "muho mkulu",
+          "pronunciation": "muho mkulu",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "person (pl. people) (< Proto-Sabaki *muntu / *antu)",
+          "translation": "mut'u (pl. at'u)",
+          "pronunciation": "mut'u (pl. at'u)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "dead person (< Proto-Sabaki *mufu)",
+          "translation": "mufu (pl. afu)",
+          "pronunciation": "mufu (pl. afu)",
+          "context": "Kigiryama & Kipfokomo",
+          "audioFile": null
+        },
+        {
+          "english": "laughter (< Proto-Sabaki *kiceko)",
+          "translation": "kitseko (pl. vitseko)",
+          "pronunciation": "kitseko (pl. vitseko)",
+          "context": "Kigiryama & Kipfokomo",
+          "audioFile": null
+        },
+        {
+          "english": "journey, gait, manner of walking (< Proto-Sabaki *muendo)",
+          "translation": "mwendo (pl. miendo)",
+          "pronunciation": "mwendo (pl. miendo)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "coarse grain, crushed maize gruel (< Proto-Sabaki *cenga)",
+          "translation": "ts'enga",
+          "pronunciation": "ts'enga",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "bitterness, poison, pain (< Proto-Sabaki *ucungu)",
+          "translation": "utsungu",
+          "pronunciation": "utsungu",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "snoring, sleeping breath (< Proto-Sabaki *muono)",
+          "translation": "myono",
+          "pronunciation": "myono",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "to speak, say (< Proto-Bantu *-gamba)",
+          "translation": "-gomba (kugomba)",
+          "pronunciation": "-gomba (kugomba)",
+          "context": "Chichonyi & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "to suckle, nurse (< Proto-Bantu *-nyamua)",
+          "translation": "-amwa (kuamwa)",
+          "pronunciation": "-amwa (kuamwa)",
+          "context": "Kigiryama, Chiduruma & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "to buy, barter (< Proto-Sabaki *-gula)",
+          "translation": "-gula (kugula)",
+          "pronunciation": "-gula (kugula)",
+          "context": "Kigiryama & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "to sell (< Proto-Sabaki *-gulya)",
+          "translation": "-guza (kuguza)",
+          "pronunciation": "-guza (kuguza)",
+          "context": "Kigiryama & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "to read, study, recite (< Proto-Sabaki *-cona)",
+          "translation": "-shoma (Giryama) / -fyoma (Duruma)",
+          "pronunciation": "-shoma (giryama) / -fyoma (duruma)",
+          "context": "Kigiryama & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "to dig, cultivate (< Proto-Sabaki *-cimba)",
+          "translation": "-tsimba (kutsimba)",
+          "pronunciation": "-tsimba (kutsimba)",
+          "context": "Kigiryama & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "to build, construct (< Proto-Sabaki *-jenga)",
+          "translation": "-dzenga (Giryama) / -jenga (Duruma)",
+          "pronunciation": "-dzenga (giryama) / -jenga (duruma)",
+          "context": "Kigiryama & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "to carve wood, whittle to a point (< Proto-Sabaki *-conga)",
+          "translation": "-tsonga (kutsonga)",
+          "pronunciation": "-tsonga (kutsonga)",
+          "context": "Kigiryama & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "to begin, start (< Proto-Sabaki *-anja)",
+          "translation": "-andza (kuandza)",
+          "pronunciation": "-andza (kuandza)",
+          "context": "Kigiryama & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "to burn brightly, shine (< Proto-Sabaki *-waka)",
+          "translation": "-aka (kuaka)",
+          "pronunciation": "-aka (kuaka)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "to be clean, clear, bright, white (< Proto-Sabaki *-wela)",
+          "translation": "-era (kuera)",
+          "pronunciation": "-era (kuera)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "black, dark (< Proto-Sabaki *-yilu)",
+          "translation": "-iru",
+          "pronunciation": "-iru",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "other, another (< Proto-Sabaki *-ngine)",
+          "translation": "-ngine (Giryama) / -njine (Duruma)",
+          "pronunciation": "-ngine (giryama) / -njine (duruma)",
+          "context": "Kigiryama & Chiduruma",
+          "audioFile": null
+        },
+        {
+          "english": "many, abundant (< Proto-Bantu *-yingi)",
+          "translation": "-inji / -nji",
+          "pronunciation": "-inji / -nji",
+          "context": "Chichonyi, Chiduruma & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "to get, obtain, find (< Proto-Sabaki *-pata)",
+          "translation": "-pata (Duruma) / -βata (Digo)",
+          "pronunciation": "-pata (duruma) / -βata (digo)",
+          "context": "Chiduruma & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "to cook, boil (< Proto-Sabaki *-pika)",
+          "translation": "-βika (Chonyi) / -pika (Digo)",
+          "pronunciation": "-βika (chonyi) / -pika (digo)",
+          "context": "Chichonyi & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "to try, measure, test (< Proto-Sabaki *-gejya)",
+          "translation": "-jeza / -eza (Giryama) / -heza (Digo)",
+          "pronunciation": "-jeza / -eza (giryama) / -heza (digo)",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "to destroy, ruin (< Proto-Sabaki *-angamija)",
+          "translation": "-angamiza (kuangamiza)",
+          "pronunciation": "-angamiza (kuangamiza)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "to spread, distribute (< Proto-Sabaki *-yeneja)",
+          "translation": "-jeneza (kujeneza)",
+          "pronunciation": "-jeneza (kujeneza)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "to prod, poke, provoke (< Proto-Sabaki *-cocya)",
+          "translation": "-tsotsa (kutsotsa)",
+          "pronunciation": "-tsotsa (kutsotsa)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "to tread, step on, trample (< Proto-Sabaki *-kanyaga)",
+          "translation": "-kanyaga (kukanyaga)",
+          "pronunciation": "-kanyaga (kukanyaga)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "to hate, detest (< Proto-Sabaki *-cukila)",
+          "translation": "-tsukira (kutsukira)",
+          "pronunciation": "-tsukira (kutsukira)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "to be full, satisfied with food (< Proto-Sabaki *-kuta)",
+          "translation": "-akuha (kuakuha)",
+          "pronunciation": "-akuha (kuakuha)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "to imitate, learn (< Proto-Sabaki *-yiga)",
+          "translation": "-iga (kuiga)",
+          "pronunciation": "-iga (kuiga)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "that, whether, if (complementizer < *-gamba)",
+          "translation": "kwamba",
+          "pronunciation": "kwamba",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "bird (< Proto-Bantu *-nyoni)",
+          "translation": "nyuni",
+          "pronunciation": "nyuni",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "snake (< Proto-Bantu *-nyoka)",
+          "translation": "nyoka",
+          "pronunciation": "nyoka",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "dog",
+          "translation": "mbwa / dia",
+          "pronunciation": "mbwa / dia",
+          "context": "Chidigo / Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "cow, cattle",
+          "translation": "ng'ombe",
+          "pronunciation": "ng'ombe",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "goat",
+          "translation": "mbuzi",
+          "pronunciation": "mbuzi",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "pig, bushpig",
+          "translation": "nguluwe",
+          "pronunciation": "nguluwe",
+          "context": "Kigiryama & Kipfokomo",
+          "audioFile": null
+        },
+        {
+          "english": "tree, herbal medicine",
+          "translation": "muti (pl. miti)",
+          "pronunciation": "muti (pl. miti)",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "fire (Chidigo/Kigiryama shift *t > h from *moto)",
+          "translation": "moho",
+          "pronunciation": "moho",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "sun, day",
+          "translation": "dzua",
+          "pronunciation": "dzua",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "moon, month",
+          "translation": "mwezi",
+          "pronunciation": "mwezi",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "star, stars",
+          "translation": "nyenyezi",
+          "pronunciation": "nyenyezi",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "rain",
+          "translation": "mvula",
+          "pronunciation": "mvula",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "sand, soil, earth",
+          "translation": "mchanga / mutsanga",
+          "pronunciation": "mchanga / mutsanga",
+          "context": "Chidigo / Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "eye (pl. eyes)",
+          "translation": "dzits'o (pl. mats'o)",
+          "pronunciation": "dzits'o (pl. mats'o)",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "ear (pl. ears)",
+          "translation": "tsikio (pl. matsikio)",
+          "pronunciation": "tsikio (pl. matsikio)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "nose",
+          "translation": "p'ula",
+          "pronunciation": "p'ula",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "mouth, lip",
+          "translation": "mulomo (pl. milomo)",
+          "pronunciation": "mulomo (pl. milomo)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "tooth (pl. teeth)",
+          "translation": "dzino (pl. meno)",
+          "pronunciation": "dzino (pl. meno)",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "tongue",
+          "translation": "ulimi",
+          "pronunciation": "ulimi",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "head",
+          "translation": "kitswa",
+          "pronunciation": "kitswa",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "hand, arm",
+          "translation": "mkono (pl. mikono)",
+          "pronunciation": "mkono (pl. mikono)",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "leg, foot",
+          "translation": "kigulu (pl. vigulu)",
+          "pronunciation": "kigulu (pl. vigulu)",
+          "context": "Kigiryama",
+          "audioFile": null
+        },
+        {
+          "english": "heart, spirit",
+          "translation": "moyo",
+          "pronunciation": "moyo",
+          "context": "Kigiryama & Chidigo",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] January (Month 1)",
+          "translation": "Mori ghwa imbiri (Imb)",
+          "pronunciation": "mori ghwa imbiri (imb)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] February (Month 2)",
+          "translation": "Mori ghwa kawi (Kaw)",
+          "pronunciation": "mori ghwa kawi (kaw)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] March (Month 3)",
+          "translation": "Mori ghwa kadadu (Kad)",
+          "pronunciation": "mori ghwa kadadu (kad)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] April (Month 4)",
+          "translation": "Mori ghwa kana (Kan)",
+          "pronunciation": "mori ghwa kana (kan)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] May (Month 5)",
+          "translation": "Mori ghwa kasanu (Kas)",
+          "pronunciation": "mori ghwa kasanu (kas)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] June (Month 6)",
+          "translation": "Mori ghwa karandadu (Kar)",
+          "pronunciation": "mori ghwa karandadu (kar)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] July (Month 7)",
+          "translation": "Mori ghwa mfungade (Mfu)",
+          "pronunciation": "mori ghwa mfungade (mfu)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] August (Month 8)",
+          "translation": "Mori ghwa wunyanya (Wun)",
+          "pronunciation": "mori ghwa wunyanya (wun)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] September (Month 9)",
+          "translation": "Mori ghwa ikenda (Ike)",
+          "pronunciation": "mori ghwa ikenda (ike)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] October (Month 10)",
+          "translation": "Mori ghwa ikumi (Iku)",
+          "pronunciation": "mori ghwa ikumi (iku)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] November (Month 11)",
+          "translation": "Mori ghwa ikumi na imweri (Imw)",
+          "pronunciation": "mori ghwa ikumi na imweri (imw)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] December (Month 12)",
+          "translation": "Mori ghwa ikumi na iwi (Iwi)",
+          "pronunciation": "mori ghwa ikumi na iwi (iwi)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Sunday (Day of the week)",
+          "translation": "Ituku ja jumwa (Jum)",
+          "pronunciation": "ituku ja jumwa (jum)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Monday (Day of the week)",
+          "translation": "Kuramuka jimweri (Jim)",
+          "pronunciation": "kuramuka jimweri (jim)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Tuesday (Day of the week)",
+          "translation": "Kuramuka kawi (Kaw)",
+          "pronunciation": "kuramuka kawi (kaw)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Wednesday (Day of the week)",
+          "translation": "Kuramuka kadadu (Kad)",
+          "pronunciation": "kuramuka kadadu (kad)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Thursday (Day of the week)",
+          "translation": "Kuramuka kana (Kan)",
+          "pronunciation": "kuramuka kana (kan)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Friday (Day of the week)",
+          "translation": "Kuramuka kasanu (Kas)",
+          "pronunciation": "kuramuka kasanu (kas)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Saturday (Day of the week)",
+          "translation": "Kifula nguwo (Ngu)",
+          "pronunciation": "kifula nguwo (ngu)",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Yesterday",
+          "translation": "Iguo",
+          "pronunciation": "iguo",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Today",
+          "translation": "Idime",
+          "pronunciation": "idime",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Tomorrow",
+          "translation": "Kesho",
+          "pronunciation": "kesho",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] In the morning (AM day period)",
+          "translation": "Luma lwa K",
+          "pronunciation": "luma lwa k",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] In the afternoon / evening (PM day period)",
+          "translation": "luma lwa p",
+          "pronunciation": "luma lwa p",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Era / historical age",
+          "translation": "Ngelo",
+          "pronunciation": "ngelo",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Year (calendar unit)",
+          "translation": "Mwaka",
+          "pronunciation": "mwaka",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Month (calendar unit)",
+          "translation": "Mori",
+          "pronunciation": "mori",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Week (calendar unit)",
+          "translation": "Juma",
+          "pronunciation": "juma",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Day (calendar unit)",
+          "translation": "Ituku",
+          "pronunciation": "ituku",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Hour (time unit)",
+          "translation": "Saa",
+          "pronunciation": "saa",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Minute (time unit)",
+          "translation": "Dakika",
+          "pronunciation": "dakika",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Second (time unit)",
+          "translation": "Sekunde",
+          "pronunciation": "sekunde",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Kenyan Shilling (KES)",
+          "translation": "Shilingi ya Kenya",
+          "pronunciation": "shilingi ya kenya",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Ethiopian Birr (ETB)",
+          "translation": "Bir ya Uhabeshi",
+          "pronunciation": "bir ya uhabeshi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Sudanese Pound (SDG)",
+          "translation": "Pauni ya Sudani",
+          "pronunciation": "pauni ya sudani",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Nigerian Naira (NGN)",
+          "translation": "Naira ya Nijeria",
+          "pronunciation": "naira ya nijeria",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Malagasy Ariary (MGA)",
+          "translation": "Ariary ya Bukini",
+          "pronunciation": "ariary ya bukini",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Seychellois Rupee (SCR)",
+          "translation": "Rupia ya Shelisheli",
+          "pronunciation": "rupia ya shelisheli",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Algerian Dinar (DZD)",
+          "translation": "Dinari ya Aljeria",
+          "pronunciation": "dinari ya aljeria",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] West African CFA Franc (XOF)",
+          "translation": "Faranga CFA BCEAO",
+          "pronunciation": "faranga cfa bceao",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Central African CFA Franc (XAF)",
+          "translation": "Faranga CFA BEAC",
+          "pronunciation": "faranga cfa beac",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Chinese Yuan (CNY)",
+          "translation": "Yuan Renminbi ya China",
+          "pronunciation": "yuan renminbi ya china",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Japanese Yen (JPY)",
+          "translation": "Sarafu ya Kijapani",
+          "pronunciation": "sarafu ya kijapani",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Canadian Dollar (CAD)",
+          "translation": "Dola ya Kanada",
+          "pronunciation": "dola ya kanada",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Ethiopia (Country / Territory)",
+          "translation": "Uhabeshi",
+          "pronunciation": "uhabeshi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Niger (Country / Territory)",
+          "translation": "Nijeri",
+          "pronunciation": "nijeri",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Equatorial Guinea (Country / Territory)",
+          "translation": "Ginekweta",
+          "pronunciation": "ginekweta",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Eswatini (Country / Territory)",
+          "translation": "Uswazi",
+          "pronunciation": "uswazi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Madagascar (Country / Territory)",
+          "translation": "Bukini",
+          "pronunciation": "bukini",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] United Kingdom (Country / Territory)",
+          "translation": "Uingereza",
+          "pronunciation": "uingereza",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Spain (Country / Territory)",
+          "translation": "Hispania",
+          "pronunciation": "hispania",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Ukraine (Country / Territory)",
+          "translation": "Ukraini",
+          "pronunciation": "ukraini",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Palestinian Territories (Country / Territory)",
+          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
+          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Qatar (Country / Territory)",
+          "translation": "Katari",
+          "pronunciation": "katari",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Iran (Country / Territory)",
+          "translation": "Uajemi",
+          "pronunciation": "uajemi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Brazil (Country / Territory)",
+          "translation": "Brazili",
+          "pronunciation": "brazili",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Taita (Language)",
+          "translation": "Kitaita",
+          "pronunciation": "kitaita",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] English (Language)",
+          "translation": "Kingereza",
+          "pronunciation": "kingereza",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Ukrainian (Language)",
+          "translation": "Kiukrania",
+          "pronunciation": "kiukrania",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Czech (Language)",
+          "translation": "Kichecki",
+          "pronunciation": "kichecki",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Bangla (Language)",
+          "translation": "Kibangla",
+          "pronunciation": "kibangla",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Tamil (Language)",
+          "translation": "Kitamil",
+          "pronunciation": "kitamil",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Thai (Language)",
+          "translation": "Kitailandi",
+          "pronunciation": "kitailandi",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Malay (Language)",
+          "translation": "Kimalesia",
+          "pronunciation": "kimalesia",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kidaw'ida] Akan (Language)",
+          "translation": "Kiakan",
+          "pronunciation": "kiakan",
+          "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "KenyaHub Community & Linguistic Reference Dictionary"
+  "source": "Public Domain Dictionary Scaffold"
 }

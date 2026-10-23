@@ -11,7 +11,7 @@ import {
   getCulturalWisdomForLanguage,
   type CulturalWisdomItem,
 } from "@/data/courses/cultural-wisdom";
-import { PUBLISHED_COURSES, getCourse } from "@/data/courses/registry";
+import { COURSE_REGISTRY, getCourse } from "@/data/courses/registry";
 
 export interface KikuyuProverbItem {
   id: number;
@@ -38,7 +38,7 @@ type LuoSubTab = "proverbs" | "riddles" | "twisters";
 export default function ProverbsView({
   lockedLanguageId,
   defaultLanguageId,
-  initialLanguage = "kikuyu",
+  initialLanguage = "kamba",
 }: {
   /** When set (e.g. inside a specific language course), ONLY show wisdom of this language and hide cross-language tabs */
   lockedLanguageId?: string;
@@ -227,7 +227,7 @@ export default function ProverbsView({
       {/* Only show cross-language selector on the main Hub when NOT locked to a specific language */}
       {!lockedLanguageId && (
         <ExpandablePillRow>
-          {PUBLISHED_COURSES.map(({ config }) => {
+          {Object.values(COURSE_REGISTRY).map(({ config }) => {
             const count =
               config.id === "kikuyu"
                 ? KIKUYU_PROVERBS.length
@@ -299,7 +299,7 @@ export default function ProverbsView({
           </h2>
           <p className="text-xs text-[var(--text-secondary)] mt-0.5">
             {activeLang === "kikuyu"
-              ? `${KIKUYU_PROVERBS.length} verified Gĩkũyũ proverbs from Fr. G. Barra (1939), 1,000 Kikuyu Proverbs.`
+              ? `${KIKUYU_PROVERBS.length} public-domain Gĩkũyũ proverbs loaded (Barra 1939/KLB copyrighted entries removed; ready for public-domain additions).`
               : activeLang === "luo"
               ? `${luoProverbs.length} Dholuo proverbs, ${luoRiddles.length} interactive riddles, and ${luoTongueTwisters.length} tongue twisters.`
               : `Authentic ${langDisplayName} (${langNativeName}) proverbs, moral sayings, and cultural traditions.`}
@@ -381,7 +381,7 @@ export default function ProverbsView({
               {filteredKikuyu.length} Gĩkũyũ proverbs
             </span>
             <span className="inline-flex items-center gap-1">
-              <BookOpen className="w-3.5 h-3.5" /> Source: Fr. G. Barra (1939), 1,000 Kikuyu Proverbs
+              <BookOpen className="w-3.5 h-3.5" /> Source: Public Domain Oral Wisdom Corpus
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">

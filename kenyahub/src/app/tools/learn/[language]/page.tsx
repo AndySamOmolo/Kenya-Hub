@@ -1,9 +1,9 @@
 import LanguageClientPage from "@/components/learn/LanguageClientPage";
-import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
+import { getCourse, COURSE_REGISTRY } from "@/data/courses/registry";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
-  return PUBLISHED_COURSES.map(({ config }) => ({ language: config.id }));
+  return Object.values(COURSE_REGISTRY).map(({ config }) => ({ language: config.id }));
 }
 
 export async function generateMetadata({

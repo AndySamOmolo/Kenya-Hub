@@ -107,7 +107,7 @@ export function KenyanTranslatorTool() {
     "translate"
   );
   const [sourceLanguage, setSourceLanguage] = useState<string>("english");
-  const [targetLanguage, setTargetLanguage] = useState<string>("swahili");
+  const [targetLanguage, setTargetLanguage] = useState<string>("kamba");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string>("greetings");
 
@@ -186,8 +186,10 @@ export function KenyanTranslatorTool() {
 
   // Roll random word
   const rollRandomWord = useCallback(() => {
-    const dict = ALL_DICTS[Math.floor(Math.random() * ALL_DICTS.length)];
-    const validCats = dict.categories.filter((c) => c.entries.length > 0);
+    const populatedDicts = ALL_DICTS.filter((d) => d.categories.some((c: any) => c.entries.length > 0));
+    if (populatedDicts.length === 0) return;
+    const dict = populatedDicts[Math.floor(Math.random() * populatedDicts.length)];
+    const validCats = dict.categories.filter((c: any) => c.entries.length > 0);
     if (validCats.length === 0) return;
     const cat = validCats[Math.floor(Math.random() * validCats.length)];
     const entry = cat.entries[Math.floor(Math.random() * cat.entries.length)];

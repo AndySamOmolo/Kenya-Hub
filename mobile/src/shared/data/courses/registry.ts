@@ -6,6 +6,11 @@ import { KISII_CONFIG, KISII_UNITS } from "./kisii/course";
 import { TESO_CONFIG, TESO_UNITS } from "./teso/course";
 import { KAMBA_CONFIG, KAMBA_UNITS } from "./kamba/course";
 import { MAASAI_CONFIG, MAASAI_UNITS } from "./maasai/course";
+import { SWAHILI_CONFIG, SWAHILI_UNITS } from "./swahili/course";
+import { KALENJIN_CONFIG, KALENJIN_UNITS } from "./kalenjin/course";
+import { MIJIKENDA_CONFIG, MIJIKENDA_UNITS } from "./mijikenda/course";
+import { MERU_CONFIG, MERU_UNITS } from "./meru/course";
+import { SOMALI_CONFIG, SOMALI_UNITS } from "./somali/course";
 import type { CourseUnit, LanguageConfig, GrammarSection } from "./types";
 import { validateCourse, type CourseValidationIssue } from "./validation";
 import { getSourcesForLanguage } from "../language-sources";
@@ -17,6 +22,11 @@ import { TESO_GRAMMAR_SECTIONS } from "./teso/grammar-reference";
 import { KAMBA_GRAMMAR_SECTIONS } from "./kamba/grammar-reference";
 import { MAASAI_GRAMMAR_SECTIONS } from "./maasai/grammar-reference";
 import { TURKANA_GRAMMAR_SECTIONS } from "./turkana/grammar-reference";
+import { SWAHILI_GRAMMAR_SECTIONS } from "./swahili/grammar-reference";
+import { KALENJIN_GRAMMAR_SECTIONS } from "./kalenjin/grammar-reference";
+import { MIJIKENDA_GRAMMAR_SECTIONS } from "./mijikenda/grammar-reference";
+import { MERU_GRAMMAR_SECTIONS } from "./meru/grammar-reference";
+import { SOMALI_GRAMMAR_SECTIONS } from "./somali/grammar-reference";
 
 export interface CourseDefinition {
   config: LanguageConfig;
@@ -36,14 +46,6 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     sourceIds: getSourcesForLanguage(KIKUYU_CONFIG.id).map((source) => source.id),
     grammarSections: KIKUYU_GRAMMAR_SECTIONS as unknown as GrammarSection[],
   },
-  kisii: {
-    config: KISII_CONFIG,
-    units: KISII_UNITS,
-    ready: true,
-    validationIssues: validateCourse(KISII_UNITS),
-    sourceIds: getSourcesForLanguage(KISII_CONFIG.id).map((source) => source.id),
-    grammarSections: KISII_GRAMMAR_SECTIONS as unknown as GrammarSection[],
-  },
   luo: {
     config: LUO_CONFIG,
     units: LUO_UNITS,
@@ -51,30 +53,6 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     validationIssues: validateCourse(LUO_UNITS),
     sourceIds: getSourcesForLanguage(LUO_CONFIG.id).map((source) => source.id),
     grammarSections: LUO_GRAMMAR_SECTIONS,
-  },
-  turkana: {
-    config: TURKANA_CONFIG,
-    units: TURKANA_UNITS,
-    ready: true,
-    validationIssues: validateCourse(TURKANA_UNITS),
-    sourceIds: getSourcesForLanguage(TURKANA_CONFIG.id).map((source) => source.id),
-    grammarSections: TURKANA_GRAMMAR_SECTIONS as unknown as GrammarSection[],
-  },
-  luhya: {
-    config: LUHYA_CONFIG,
-    units: LUHYA_UNITS,
-    ready: true,
-    validationIssues: validateCourse(LUHYA_UNITS),
-    sourceIds: getSourcesForLanguage(LUHYA_CONFIG.id).map((source) => source.id),
-    grammarSections: LUHYA_GRAMMAR_SECTIONS as unknown as GrammarSection[],
-  },
-  teso: {
-    config: TESO_CONFIG,
-    units: TESO_UNITS,
-    ready: true,
-    validationIssues: validateCourse(TESO_UNITS),
-    sourceIds: getSourcesForLanguage(TESO_CONFIG.id).map((source) => source.id),
-    grammarSections: TESO_GRAMMAR_SECTIONS as unknown as GrammarSection[],
   },
   kamba: {
     config: KAMBA_CONFIG,
@@ -84,6 +62,62 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     sourceIds: getSourcesForLanguage(KAMBA_CONFIG.id).map((source) => source.id),
     grammarSections: KAMBA_GRAMMAR_SECTIONS as unknown as GrammarSection[],
   },
+  turkana: {
+    config: TURKANA_CONFIG,
+    units: TURKANA_UNITS,
+    ready: true,
+    validationIssues: validateCourse(TURKANA_UNITS),
+    sourceIds: getSourcesForLanguage(TURKANA_CONFIG.id).map((source) => source.id),
+    grammarSections: TURKANA_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  swahili: {
+    config: SWAHILI_CONFIG,
+    units: SWAHILI_UNITS,
+    ready: true,
+    validationIssues: validateCourse(SWAHILI_UNITS),
+    sourceIds: getSourcesForLanguage(SWAHILI_CONFIG.id).map((source) => source.id),
+    grammarSections: SWAHILI_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  luhya: {
+    config: LUHYA_CONFIG,
+    units: LUHYA_UNITS,
+    ready: true,
+    validationIssues: validateCourse(LUHYA_UNITS),
+    sourceIds: getSourcesForLanguage(LUHYA_CONFIG.id).map((source) => source.id),
+    grammarSections: LUHYA_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  kalenjin: {
+    config: KALENJIN_CONFIG,
+    units: KALENJIN_UNITS,
+    ready: true,
+    validationIssues: validateCourse(KALENJIN_UNITS),
+    sourceIds: getSourcesForLanguage(KALENJIN_CONFIG.id).map((source) => source.id),
+    grammarSections: KALENJIN_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  kisii: {
+    config: KISII_CONFIG,
+    units: KISII_UNITS,
+    ready: true,
+    validationIssues: validateCourse(KISII_UNITS),
+    sourceIds: getSourcesForLanguage(KISII_CONFIG.id).map((source) => source.id),
+    grammarSections: KISII_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  meru: {
+    config: MERU_CONFIG,
+    units: MERU_UNITS,
+    ready: true,
+    validationIssues: validateCourse(MERU_UNITS),
+    sourceIds: getSourcesForLanguage(MERU_CONFIG.id).map((source) => source.id),
+    grammarSections: MERU_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  mijikenda: {
+    config: MIJIKENDA_CONFIG,
+    units: MIJIKENDA_UNITS,
+    ready: true,
+    validationIssues: validateCourse(MIJIKENDA_UNITS),
+    sourceIds: getSourcesForLanguage(MIJIKENDA_CONFIG.id).map((source) => source.id),
+    grammarSections: MIJIKENDA_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
   maasai: {
     config: MAASAI_CONFIG,
     units: MAASAI_UNITS,
@@ -91,6 +125,22 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     validationIssues: validateCourse(MAASAI_UNITS),
     sourceIds: getSourcesForLanguage(MAASAI_CONFIG.id).map((source) => source.id),
     grammarSections: MAASAI_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  somali: {
+    config: SOMALI_CONFIG,
+    units: SOMALI_UNITS,
+    ready: true,
+    validationIssues: validateCourse(SOMALI_UNITS),
+    sourceIds: getSourcesForLanguage(SOMALI_CONFIG.id).map((source) => source.id),
+    grammarSections: SOMALI_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  teso: {
+    config: TESO_CONFIG,
+    units: TESO_UNITS,
+    ready: true,
+    validationIssues: validateCourse(TESO_UNITS),
+    sourceIds: getSourcesForLanguage(TESO_CONFIG.id).map((source) => source.id),
+    grammarSections: TESO_GRAMMAR_SECTIONS as unknown as GrammarSection[],
   },
 };
 

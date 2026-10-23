@@ -73,78 +73,7 @@
       "risk": "All property transactions should have written documentation"
     }
   ],
-  "sampleAgents": [
-    {
-      "name": "Knight Frank Kenya",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Commercial & Residential",
-      "registered": true
-    },
-    {
-      "name": "HassConsult Ltd",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Residential & Land",
-      "registered": true
-    },
-    {
-      "name": "Pam Golding Properties Kenya",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Luxury Residential",
-      "registered": true
-    },
-    {
-      "name": "Lloyd Masika Ltd",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Valuation & Agency",
-      "registered": true
-    },
-    {
-      "name": "Tysons Limited",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Commercial & Industrial",
-      "registered": true
-    },
-    {
-      "name": "Broll Kenya",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Property Management",
-      "registered": true
-    },
-    {
-      "name": "Regent Management Ltd",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Property Management",
-      "registered": true
-    },
-    {
-      "name": "Sagana Real Estate",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Residential",
-      "registered": true
-    },
-    {
-      "name": "Villa Care Ltd",
-      "type": "Firm",
-      "county": "Mombasa",
-      "specialization": "Coastal Properties",
-      "registered": true
-    },
-    {
-      "name": "Homes Kenya Ltd",
-      "type": "Firm",
-      "county": "Nairobi",
-      "specialization": "Residential & Commercial",
-      "registered": true
-    }
-  ],
+  "sampleAgents": [],
   "notes": [
     "The Estate Agents Registration Board (EARB) regulates estate agents in Kenya under the Estate Agents Act (Cap 533)",
     "It is illegal to act as an estate agent without EARB registration — Section 4 of the Act",

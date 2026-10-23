@@ -14,7 +14,7 @@
   "hasAudio": false,
   "dictionaryVersion": "0.1.0",
   "lastUpdated": "2026-10-20",
-  "contributorNote": "Somali is a Cushitic language dominant in North Eastern Kenya. Cross-border with Somalia and Ethiopia. Uses the Latin-based Somali alphabet officially since 1972.",
+  "contributorNote": "Somali dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
       "id": "greetings",
@@ -22,297 +22,10 @@
       "icon": "👋",
       "entries": [
         {
-          "english": "Elder",
-          "translation": "Oday",
-          "pronunciation": "oh-day",
-          "context": "Respected elder",
-          "audioFile": null
-        },
-        {
-          "english": "Chief",
-          "translation": "Ugaas / Suldaan",
-          "pronunciation": "oo-gahs",
-          "context": "Traditional clan leader / chief",
-          "audioFile": null
-        },
-        {
-          "english": "King",
-          "translation": "Boqor",
-          "pronunciation": "boh-qor",
-          "context": "King",
-          "audioFile": null
-        },
-        {
-          "english": "Work",
-          "translation": "Shaqo",
-          "pronunciation": "shah-qoh",
-          "context": "Work",
-          "audioFile": null
-        },
-        {
-          "english": "Market",
-          "translation": "Suuq",
-          "pronunciation": "sooq",
-          "context": "Market",
-          "audioFile": null
-        },
-        {
-          "english": "Money",
-          "translation": "Lacag",
-          "pronunciation": "lah-ahg",
-          "context": "Money",
-          "audioFile": null
-        },
-        {
-          "english": "Yesterday",
-          "translation": "Shalay",
-          "pronunciation": "shah-lay",
-          "context": "Yesterday",
-          "audioFile": null
-        },
-        {
-          "english": "Tomorrow",
-          "translation": "Berri",
-          "pronunciation": "behr-ree",
-          "context": "Tomorrow",
-          "audioFile": null
-        },
-        {
-          "english": "Today",
-          "translation": "Maanta",
-          "pronunciation": "mahn-tah",
-          "context": "Today",
-          "audioFile": null
-        },
-        {
-          "english": "Night",
-          "translation": "Habeen",
-          "pronunciation": "hah-behn",
-          "context": "Night",
-          "audioFile": null
-        },
-        {
-          "english": "Day",
-          "translation": "Maalin",
-          "pronunciation": "mah-leen",
-          "context": "Day",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "Dhiig",
-          "pronunciation": "dheeg",
-          "context": "Blood",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "Wadne",
-          "pronunciation": "wahd-neh",
-          "context": "Heart",
-          "audioFile": null
-        },
-        {
-          "english": "Hand",
-          "translation": "Gacan",
-          "pronunciation": "gah-ahn",
-          "context": "Hand",
-          "audioFile": null
-        },
-        {
-          "english": "Eye",
-          "translation": "Il",
-          "pronunciation": "eel",
-          "context": "Eye (pl. Indho)",
-          "audioFile": null
-        },
-        {
-          "english": "Head",
-          "translation": "Madax",
-          "pronunciation": "mah-dahkh",
-          "context": "Head",
-          "audioFile": null
-        },
-        {
-          "english": "Fish",
-          "translation": "Kalluun",
-          "pronunciation": "kahl-loon",
-          "context": "Fish",
-          "audioFile": null
-        },
-        {
-          "english": "Bird",
-          "translation": "Shimbir",
-          "pronunciation": "sheem-beer",
-          "context": "Bird",
-          "audioFile": null
-        },
-        {
-          "english": "Dog",
-          "translation": "Eey",
-          "pronunciation": "ehy",
-          "context": "Dog",
-          "audioFile": null
-        },
-        {
-          "english": "Goat",
-          "translation": "Riyo / Ari",
-          "pronunciation": "ree-yoh",
-          "context": "Goat",
-          "audioFile": null
-        },
-        {
-          "english": "Meat",
-          "translation": "Hilib",
-          "pronunciation": "hee-leeb",
-          "context": "Meat",
-          "audioFile": null
-        },
-        {
-          "english": "Rain",
-          "translation": "Roob",
-          "pronunciation": "rohb",
-          "context": "Rain",
-          "audioFile": null
-        },
-        {
-          "english": "Tree",
-          "translation": "Geed",
-          "pronunciation": "gehd",
-          "context": "Tree",
-          "audioFile": null
-        },
-        {
-          "english": "Welcome",
-          "translation": "Soo dhawoow",
-          "pronunciation": "soh dhah-wow",
-          "context": "Welcome",
-          "audioFile": null
-        },
-        {
-          "english": "Good night",
-          "translation": "Habeen wanaagsan",
-          "pronunciation": "hah-behn wah-nahg-sahn",
-          "context": "Good night",
-          "audioFile": null
-        },
-        {
-          "english": "Love",
-          "translation": "Jacayl",
-          "pronunciation": "jah-ayl",
-          "context": "Love",
-          "audioFile": null
-        },
-        {
-          "english": "Woman",
-          "translation": "Naag / Haweenay",
-          "pronunciation": "hah-weh-nay",
-          "context": "Adult woman",
-          "audioFile": null
-        },
-        {
-          "english": "Man",
-          "translation": "Nin",
-          "pronunciation": "neen",
-          "context": "Adult man",
-          "audioFile": null
-        },
-        {
-          "english": "Home",
-          "translation": "Hoy / Guri",
-          "pronunciation": "hoy",
-          "context": "Home",
-          "audioFile": null
-        },
-        {
-          "english": "House",
-          "translation": "Guri / Aqal",
-          "pronunciation": "goo-ree",
-          "context": "House",
-          "audioFile": null
-        },
-        {
-          "english": "Fire",
-          "translation": "Dab",
-          "pronunciation": "dahb",
-          "context": "Fire",
-          "audioFile": null
-        },
-        {
-          "english": "Sun",
-          "translation": "Qorrax",
-          "pronunciation": "qor-rahkh",
-          "context": "Sun",
-          "audioFile": null
-        },
-        {
-          "english": "Friend",
-          "translation": "Saaxiib",
-          "pronunciation": "sah-kheeb",
-          "context": "Friend",
-          "audioFile": null
-        },
-        {
-          "english": "Cow",
-          "translation": "Sac / Lo'",
-          "pronunciation": "sah-ah",
-          "context": "Cow / cattle",
-          "audioFile": null
-        },
-        {
-          "english": "Peace be upon you",
-          "translation": "Assalamu alaikum",
-          "pronunciation": "ah-sah-lah-moo ah-lah-ee-koom",
-          "context": "Standard greeting (Islamic influence). Reply: 'Wa alaikum assalam'",
-          "audioFile": null
-        },
-        {
-          "english": "Hello",
-          "translation": "Iska warran",
-          "pronunciation": "ees-kah wah-rahn",
-          "context": "Casual greeting: 'What news?'",
-          "audioFile": null
-        },
-        {
-          "english": "How are you?",
-          "translation": "Sidee tahay?",
-          "pronunciation": "see-deh tah-hah-ee",
-          "context": "General inquiry",
-          "audioFile": null
-        },
-        {
-          "english": "I am fine",
-          "translation": "Waan fiicanahay",
-          "pronunciation": "wah-ahn fee-chah-nah-hah-ee",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Thank you",
-          "translation": "Mahadsanid",
-          "pronunciation": "mah-hahd-sah-need",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Goodbye",
-          "translation": "Nabad gelyo",
-          "pronunciation": "nah-bahd gehl-yoh",
-          "context": "Literally 'Peace and love'",
-          "audioFile": null
-        },
-        {
-          "english": "Good morning",
-          "translation": "Subax wanaagsan",
-          "pronunciation": "soo-bahx wah-nah-gsahn",
-          "context": "",
-          "audioFile": null
-        },
-        {
-          "english": "Good evening",
-          "translation": "Fiid wanaagsan",
-          "pronunciation": "feed wah-nah-gsahn",
-          "context": "",
+          "english": "welcome!",
+          "translation": "soo dhawoow (pl. soo dhawaada)",
+          "pronunciation": "soo dhawoow (pl. soo dhawaada)",
+          "context": "Af-Soomaali",
           "audioFile": null
         }
       ]
@@ -323,73 +36,122 @@
       "icon": "🔢",
       "entries": [
         {
+          "english": "All",
+          "translation": "dhan / kulli",
+          "pronunciation": "dhan / kulli",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Many / much",
+          "translation": "badan",
+          "pronunciation": "badan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
           "english": "One",
-          "translation": "Kow",
-          "pronunciation": "kow",
-          "context": "",
+          "translation": "kow / hal",
+          "pronunciation": "kow / hal",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Two",
-          "translation": "Laba",
-          "pronunciation": "lah-bah",
-          "context": "",
+          "translation": "laba",
+          "pronunciation": "laba",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Three",
-          "translation": "Saddex",
-          "pronunciation": "sahd-dehx",
-          "context": "",
+          "translation": "saddex",
+          "pronunciation": "saddex",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Four",
-          "translation": "Afar",
-          "pronunciation": "ah-fahr",
-          "context": "",
+          "translation": "afar",
+          "pronunciation": "afar",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Five",
-          "translation": "Shan",
-          "pronunciation": "shahn",
-          "context": "",
+          "translation": "shan",
+          "pronunciation": "shan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Six",
-          "translation": "Lix",
-          "pronunciation": "leex",
-          "context": "",
+          "translation": "lix",
+          "pronunciation": "lix",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Seven",
-          "translation": "Toddoba",
-          "pronunciation": "tohd-doh-bah",
-          "context": "",
+          "translation": "toddoba",
+          "pronunciation": "toddoba",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "Siddeed",
-          "pronunciation": "seed-deed",
-          "context": "",
+          "translation": "siddeed",
+          "pronunciation": "siddeed",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Nine",
-          "translation": "Sagaal",
-          "pronunciation": "sah-gah-ahl",
-          "context": "",
+          "translation": "sagaal",
+          "pronunciation": "sagaal",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Ten",
-          "translation": "Toban",
-          "pronunciation": "toh-bahn",
-          "context": "",
+          "translation": "toban",
+          "pronunciation": "toban",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "labaatan",
+          "pronunciation": "labaatan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "boqol",
+          "pronunciation": "boqol",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Thousand",
+          "translation": "kun",
+          "pronunciation": "kun",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To count",
+          "translation": "tirin",
+          "pronunciation": "tirin",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Second (time unit)",
+          "translation": "ilbiriqsi",
+          "pronunciation": "ilbiriqsi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
@@ -400,87 +162,2026 @@
       "icon": "🗣️",
       "entries": [
         {
-          "english": "Yes",
-          "translation": "Haa",
-          "pronunciation": "hah",
-          "context": "",
+          "english": "I (1st person singular)",
+          "translation": "aniga (clitic subject: aan, object: i)",
+          "pronunciation": "aniga (clitic subject: aan, object: i)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "No",
-          "translation": "Maya",
-          "pronunciation": "mah-yah",
-          "context": "",
+          "english": "You (2nd person singular)",
+          "translation": "adiga (clitic subject: aad, object: ku)",
+          "pronunciation": "adiga (clitic subject: aad, object: ku)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Please",
-          "translation": "Fadlan",
-          "pronunciation": "fahd-lahn",
-          "context": "",
+          "english": "He (3rd person masculine singular)",
+          "translation": "isaga / asaga (clitic subject: uu)",
+          "pronunciation": "isaga / asaga (clitic subject: uu)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Sorry",
-          "translation": "Waan ka xumahay",
-          "pronunciation": "wah-ahn kah xoo-mah-hah-ee",
-          "context": "",
+          "english": "She (3rd person feminine singular)",
+          "translation": "iyada (clitic subject: ay)",
+          "pronunciation": "iyada (clitic subject: ay)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "We (1st person plural inclusive)",
+          "translation": "innaga (clitic subject: aynu, object: ina)",
+          "pronunciation": "innaga (clitic subject: aynu, object: ina)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "We (1st person plural exclusive)",
+          "translation": "annaga / anaga (clitic subject: aannu, object: na)",
+          "pronunciation": "annaga / anaga (clitic subject: aannu, object: na)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "You (2nd person plural)",
+          "translation": "idinka (clitic subject: aydin, object: idin)",
+          "pronunciation": "idinka (clitic subject: aydin, object: idin)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "They (3rd person plural)",
+          "translation": "iyaga / ayaga (clitic subject: ay)",
+          "pronunciation": "iyaga / ayaga (clitic subject: ay)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "This (proximal suffix)",
+          "translation": "-kan (masc.) / -tan (fem.)",
+          "pronunciation": "-kan (masc.) / -tan (fem.)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "That (distal suffix)",
+          "translation": "-kaas (masc.) / -taas (fem.)",
+          "pronunciation": "-kaas (masc.) / -taas (fem.)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Here",
+          "translation": "inta / halkan",
+          "pronunciation": "inta / halkan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "There",
+          "translation": "xaggaas / halkaas",
+          "pronunciation": "xaggaas / halkaas",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "yaa? / kee?",
+          "pronunciation": "yaa? / kee?",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "maxaa?",
+          "pronunciation": "maxaa?",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "xaggee? / halkee?",
+          "pronunciation": "xaggee? / halkee?",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "When?",
+          "translation": "markee? / goormee?",
+          "pronunciation": "markee? / goormee?",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "How?",
+          "translation": "see? / sidee?",
+          "pronunciation": "see? / sidee?",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Not (negation particle)",
+          "translation": "ma / aan",
+          "pronunciation": "ma / aan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Some / a little",
+          "translation": "xoogaa",
+          "pronunciation": "xoogaa",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Few / small amount",
+          "translation": "wax yar",
+          "pronunciation": "wax yar",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Other / another",
+          "translation": "kale",
+          "pronunciation": "kale",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Big / large",
+          "translation": "weyn",
+          "pronunciation": "weyn",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Long / tall",
+          "translation": "dheer",
+          "pronunciation": "dheer",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Wide / broad",
+          "translation": "ballaaran (balaar)",
+          "pronunciation": "ballaaran (balaar)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Thick",
+          "translation": "qaro weyn (qardan)",
+          "pronunciation": "qaro weyn (qardan)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Heavy",
+          "translation": "culus",
+          "pronunciation": "culus",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Small / young",
+          "translation": "yar",
+          "pronunciation": "yar",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Short",
+          "translation": "gaaban",
+          "pronunciation": "gaaban",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Narrow",
+          "translation": "ciriiri",
+          "pronunciation": "ciriiri",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Thin / lean",
+          "translation": "caato / dhuuban",
+          "pronunciation": "caato / dhuuban",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Human being / person",
+          "translation": "qof / bini'aadam",
+          "pronunciation": "qof / bini'aadam",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / plant",
+          "translation": "geed",
+          "pronunciation": "geed",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Forest / wilderness",
+          "translation": "duur / kayn",
+          "pronunciation": "duur / kayn",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Stick / staff",
+          "translation": "ul",
+          "pronunciation": "ul",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Leaf",
+          "translation": "caleen",
+          "pronunciation": "caleen",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Root",
+          "translation": "xidid / sal",
+          "pronunciation": "xidid / sal",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Tree bark",
+          "translation": "qolfo",
+          "pronunciation": "qolfo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Flower",
+          "translation": "ubax",
+          "pronunciation": "ubax",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "caws",
+          "pronunciation": "caws",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Rope",
+          "translation": "xarig",
+          "pronunciation": "xarig",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Skin / body",
+          "translation": "jir / maqaar",
+          "pronunciation": "jir / maqaar",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "dhiig (diig)",
+          "pronunciation": "dhiig (diig)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "laf",
+          "pronunciation": "laf",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Fat",
+          "translation": "baruur",
+          "pronunciation": "baruur",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "timo",
+          "pronunciation": "timo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Head / leader",
+          "translation": "madax",
+          "pronunciation": "madax",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "dheg (deg)",
+          "pronunciation": "dheg (deg)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "il (pl. indho)",
+          "pronunciation": "il (pl. indho)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "san",
+          "pronunciation": "san",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / language",
+          "translation": "af",
+          "pronunciation": "af",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "ilig (pl. ilkaha)",
+          "pronunciation": "ilig (pl. ilkaha)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "carrab",
+          "pronunciation": "carrab",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Fingernail",
+          "translation": "ciddi",
+          "pronunciation": "ciddi",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "cag",
+          "pronunciation": "cag",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "lug",
+          "pronunciation": "lug",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "jilib",
+          "pronunciation": "jilib",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / arm",
+          "translation": "gacan (def. gacanta)",
+          "pronunciation": "gacan (def. gacanta)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Belly / stomach",
+          "translation": "calool",
+          "pronunciation": "calool",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "luqun / dhuun",
+          "pronunciation": "luqun / dhuun",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "dhabar",
+          "pronunciation": "dhabar",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Chest / breast",
+          "translation": "laab / xabad",
+          "pronunciation": "laab / xabad",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "wadne",
+          "pronunciation": "wadne",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Liver / farm",
+          "translation": "beer",
+          "pronunciation": "beer",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To bite",
+          "translation": "qaniin / qaniinid",
+          "pronunciation": "qaniin / qaniinid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To spit",
+          "translation": "tuf / tufid",
+          "pronunciation": "tuf / tufid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To vomit",
+          "translation": "matag",
+          "pronunciation": "matag",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To blow",
+          "translation": "afuuf",
+          "pronunciation": "afuuf",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To breathe",
+          "translation": "neefsan",
+          "pronunciation": "neefsan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To laugh",
+          "translation": "qosol",
+          "pronunciation": "qosol",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "arkid / arag",
+          "pronunciation": "arkid / arag",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "maqal / maqlid",
+          "pronunciation": "maqal / maqlid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "ogaan / garasho",
+          "pronunciation": "ogaan / garasho",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To think",
+          "translation": "fakarid / malayn",
+          "pronunciation": "fakarid / malayn",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To smell",
+          "translation": "urin",
+          "pronunciation": "urin",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To fear",
+          "translation": "baqid (biqid)",
+          "pronunciation": "baqid (biqid)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep",
+          "translation": "seexo / hurdo",
+          "pronunciation": "seexo / hurdo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To live / exist",
+          "translation": "noolaan / jirid",
+          "pronunciation": "noolaan / jirid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To die",
+          "translation": "dhimasho (dimasho)",
+          "pronunciation": "dhimasho (dimasho)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To kill",
+          "translation": "dilid",
+          "pronunciation": "dilid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To fight",
+          "translation": "dagaal / dagaallamid",
+          "pronunciation": "dagaal / dagaallamid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To hunt",
+          "translation": "ugaarsi",
+          "pronunciation": "ugaarsi",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To hit",
+          "translation": "ku dhufasho",
+          "pronunciation": "ku dhufasho",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To cut",
+          "translation": "goyn / jarid",
+          "pronunciation": "goyn / jarid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To split / divide",
+          "translation": "qaybin",
+          "pronunciation": "qaybin",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To scratch",
+          "translation": "xagid",
+          "pronunciation": "xagid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To dig",
+          "translation": "qodid",
+          "pronunciation": "qodid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To swim",
+          "translation": "dabaalan",
+          "pronunciation": "dabaalan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To walk / go",
+          "translation": "socod /bax",
+          "pronunciation": "socod /bax",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "imaan / kaalay",
+          "pronunciation": "imaan / kaalay",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To lie down",
+          "translation": "jiifsan",
+          "pronunciation": "jiifsan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To sit",
+          "translation": "fariisan",
+          "pronunciation": "fariisan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To stand",
+          "translation": "taagnaanid / istaag",
+          "pronunciation": "taagnaanid / istaag",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To turn",
+          "translation": "leexan",
+          "pronunciation": "leexan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To fall",
+          "translation": "dhacid",
+          "pronunciation": "dhacid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "siin",
+          "pronunciation": "siin",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To hold / have",
+          "translation": "hay / haysasho",
+          "pronunciation": "hay / haysasho",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To wash",
+          "translation": "dhiqid / maydhid",
+          "pronunciation": "dhiqid / maydhid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To wipe",
+          "translation": "tirtirid",
+          "pronunciation": "tirtirid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To pull",
+          "translation": "jiidid",
+          "pronunciation": "jiidid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To push",
+          "translation": "riixid",
+          "pronunciation": "riixid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To throw",
+          "translation": "tuuris / tuurid",
+          "pronunciation": "tuuris / tuurid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To tie / close",
+          "translation": "xirid",
+          "pronunciation": "xirid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To sew",
+          "translation": "tolid",
+          "pronunciation": "tolid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To say / tell",
+          "translation": "sheegid / odhan",
+          "pronunciation": "sheegid / odhan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To sing",
+          "translation": "heesid",
+          "pronunciation": "heesid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To play",
+          "translation": "ciyaarid",
+          "pronunciation": "ciyaarid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To float",
+          "translation": "sabbeyn",
+          "pronunciation": "sabbeyn",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To swell",
+          "translation": "barar",
+          "pronunciation": "barar",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To bring",
+          "translation": "keen / keenid (present: waan keenaa)",
+          "pronunciation": "keen / keenid (present: waan keenaa)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "qorrax",
+          "pronunciation": "qorrax",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "dayax",
+          "pronunciation": "dayax",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "xiddig",
+          "pronunciation": "xiddig",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Water",
-          "translation": "Biyo",
-          "pronunciation": "bee-yoh",
-          "context": "",
+          "translation": "biyo",
+          "pronunciation": "biyo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Food",
-          "translation": "Cunto",
-          "pronunciation": "choon-toh",
-          "context": "",
+          "english": "Rain",
+          "translation": "roob",
+          "pronunciation": "roob",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Mother",
-          "translation": "Hooyo",
-          "pronunciation": "hoh-yoh",
-          "context": "",
+          "english": "River",
+          "translation": "webi",
+          "pronunciation": "webi",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Father",
-          "translation": "Aabo",
-          "pronunciation": "ah-boh",
-          "context": "",
+          "english": "Lake",
+          "translation": "haro",
+          "pronunciation": "haro",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Child",
-          "translation": "Ilmo / Cunug",
-          "pronunciation": "eel-moh / choo-noog",
-          "context": "",
+          "english": "Sea / ocean",
+          "translation": "bad",
+          "pronunciation": "bad",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Camel",
-          "translation": "Geel",
-          "pronunciation": "geel",
-          "context": "Camels are central to NE Kenyan pastoralist culture",
+          "english": "Stone / rock",
+          "translation": "dhagax",
+          "pronunciation": "dhagax",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "God",
-          "translation": "Ilaah / Allah",
-          "pronunciation": "ee-lah / ah-lah",
-          "context": "",
+          "english": "Sand",
+          "translation": "ciid",
+          "pronunciation": "ciid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "I love you",
-          "translation": "Waan ku jeclahay",
-          "pronunciation": "wah-ahn koo jeh-clah-hah-ee",
-          "context": "",
+          "english": "Dust",
+          "translation": "dhas / boor",
+          "pronunciation": "dhas / boor",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / soil",
+          "translation": "carro / dhul",
+          "pronunciation": "carro / dhul",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "daruur",
+          "pronunciation": "daruur",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Fog / mist",
+          "translation": "caad / ceeryaamo",
+          "pronunciation": "caad / ceeryaamo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Sky",
+          "translation": "cirka / samo",
+          "pronunciation": "cirka / samo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "dabayl",
+          "pronunciation": "dabayl",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Ice / snow",
+          "translation": "baraf",
+          "pronunciation": "baraf",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "qiiq",
+          "pronunciation": "qiiq",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "dab",
+          "pronunciation": "dab",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Ash",
+          "translation": "dambas (danbas)",
+          "pronunciation": "dambas (danbas)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To burn",
+          "translation": "gubid",
+          "pronunciation": "gubid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Road / path",
+          "translation": "jid / waddo",
+          "pronunciation": "jid / waddo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "buur",
+          "pronunciation": "buur",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "casaan / guduud",
+          "pronunciation": "casaan / guduud",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Green",
+          "translation": "cagaar",
+          "pronunciation": "cagaar",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Yellow",
+          "translation": "huruud / jaalle",
+          "pronunciation": "huruud / jaalle",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "caddaan (cadaan)",
+          "pronunciation": "caddaan (cadaan)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "madow",
+          "pronunciation": "madow",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "habeen",
+          "pronunciation": "habeen",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "maalin",
+          "pronunciation": "maalin",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "sanad",
+          "pronunciation": "sanad",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Warm",
+          "translation": "dugsan / diirran",
+          "pronunciation": "dugsan / diirran",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Cold",
+          "translation": "qabow",
+          "pronunciation": "qabow",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "New",
+          "translation": "cusub (cusayb)",
+          "pronunciation": "cusub (cusayb)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Old",
+          "translation": "duug / gaboobay",
+          "pronunciation": "duug / gaboobay",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Good / fine",
+          "translation": "fiican / wanaagsan",
+          "pronunciation": "fiican / wanaagsan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "xun",
+          "pronunciation": "xun",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Dirty",
+          "translation": "wasakh",
+          "pronunciation": "wasakh",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Straight",
+          "translation": "toos",
+          "pronunciation": "toos",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Round",
+          "translation": "wareegsan / gooban",
+          "pronunciation": "wareegsan / gooban",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Sharp",
+          "translation": "afaysan",
+          "pronunciation": "afaysan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Smooth",
+          "translation": "malaas / siman",
+          "pronunciation": "malaas / siman",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Wet",
+          "translation": "qoyan",
+          "pronunciation": "qoyan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Dry",
+          "translation": "qalalan",
+          "pronunciation": "qalalan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Correct / true",
+          "translation": "sax / run",
+          "pronunciation": "sax / run",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Near",
+          "translation": "dhow",
+          "pronunciation": "dhow",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Far",
+          "translation": "fog",
+          "pronunciation": "fog",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Right (side)",
+          "translation": "midig",
+          "pronunciation": "midig",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Left (side)",
+          "translation": "bidix",
+          "pronunciation": "bidix",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "In / middle",
+          "translation": "dhex",
+          "pronunciation": "dhex",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "With",
+          "translation": "la",
+          "pronunciation": "la",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "And",
+          "translation": "iyo",
+          "pronunciation": "iyo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "If",
+          "translation": "haddii (hadii)",
+          "pronunciation": "haddii (hadii)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "magac",
+          "pronunciation": "magac",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Book (absolutive: buug, definite: buugga)",
+          "translation": "buug / buugga",
+          "pronunciation": "buug / buugga",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Peace / Hello (traditional greeting)",
+          "translation": "Nabad / Ma nabad baa?",
+          "pronunciation": "Nabad / Ma nabad baa?",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "peace (Have you told of peace? — traditional Somali greeting)",
+          "translation": "nabad (Nabad ma sheegtay?)",
+          "pronunciation": "nabad (nabad ma sheegtay?)",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "thank you (thank you very much)",
+          "translation": "mahadsanid (aad baad u mahadsan tahay)",
+          "pronunciation": "mahadsanid (aad baad u mahadsan tahay)",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "goodbye (lit. enter into peace)",
+          "translation": "nabad gelyo",
+          "pronunciation": "nabad gelyo",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "camels (collective), camel herd (< Proto-East Cushitic *gaal-)",
+          "translation": "geel (sg. hal / awr)",
+          "pronunciation": "geel (sg. hal / awr)",
+          "context": "Af-Soomaali (Bender 2020)",
+          "audioFile": null
+        },
+        {
+          "english": "cattle, cows (< Proto-East Cushitic *lo'-)",
+          "translation": "lo' (sg. sac)",
+          "pronunciation": "lo' (sg. sac)",
+          "context": "Af-Soomaali (Bender 2020)",
+          "audioFile": null
+        },
+        {
+          "english": "sheep (collective; lax = ewe)",
+          "translation": "ido (sg. lax)",
+          "pronunciation": "ido (sg. lax)",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "hyena (< Proto-East Cushitic *waraab-)",
+          "translation": "waraabe / dhurwaa",
+          "pronunciation": "waraabe / dhurwaa",
+          "context": "Af-Soomaali (Bender 2020)",
+          "audioFile": null
+        },
+        {
+          "english": "bird (< Proto-East Cushitic *kimbir-)",
+          "translation": "shimbir (pl. shimbiro)",
+          "pronunciation": "shimbir (pl. shimbiro)",
+          "context": "Af-Soomaali (Bender 2020)",
+          "audioFile": null
+        },
+        {
+          "english": "milk (< Proto-East Cushitic)",
+          "translation": "caano (caanaha)",
+          "pronunciation": "caano (caanaha)",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "cooked cornmeal porridge / fermented flatbread",
+          "translation": "soor / canjeero",
+          "pronunciation": "soor / canjeero",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "traditional nomadic dome house",
+          "translation": "aqal (aqalka)",
+          "pronunciation": "aqal (aqalka)",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "family, nomadic homestead, lineage clan",
+          "translation": "reer",
+          "pronunciation": "reer",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "traditional Somali customary law and social contract",
+          "translation": "xeer",
+          "pronunciation": "xeer",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "proverb, alliterative wise saying",
+          "translation": "maahmaah (pl. maahmaahyo)",
+          "pronunciation": "maahmaah (pl. maahmaahyo)",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "classical Somali alliterative oral poem",
+          "translation": "gabay",
+          "pronunciation": "gabay",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "one (1), two (2), three (3), four (4), five (5) (< Proto-East Cushitic *kaw-, *lamma, *saddih-, *afar-, *kan-)",
+          "translation": "kow, laba, saddex, afar, shan",
+          "pronunciation": "kow, laba, saddex, afar, shan",
+          "context": "Af-Soomaali (Bender 2020)",
+          "audioFile": null
+        },
+        {
+          "english": "six (6), seven (7), eight (8), nine (9), ten (10) (< Proto-East Cushitic *lihx-, *todb-, *siddet-, *sagal-, *tomman-)",
+          "translation": "lix,on-todoba, sideed, sagaal, toban",
+          "pronunciation": "lix,on-todoba, sideed, sagaal, toban",
+          "context": "Af-Soomaali (Bender 2020)",
+          "audioFile": null
+        },
+        {
+          "english": "one hundred (100) / one thousand (1,000) (< Proto-East Cushitic *kuma)",
+          "translation": "boqol / kun",
+          "pronunciation": "boqol / kun",
+          "context": "Af-Soomaali (Bender 2020)",
+          "audioFile": null
+        },
+        {
+          "english": "the man (absolutive object vs. nominative subject case suffix)",
+          "translation": "nin-ka (abs.) / nin-ku (nom.)",
+          "pronunciation": "nin-ka (abs.) / nin-ku (nom.)",
+          "context": "Af-Soomaali (Wikipedia Somali_grammar)",
+          "audioFile": null
+        },
+        {
+          "english": "the woman (feminine definite article -ta vs. nominative -tu)",
+          "translation": "naag-ta (abs.) / naag-tu (nom.)",
+          "pronunciation": "naag-ta (abs.) / naag-tu (nom.)",
+          "context": "Af-Soomaali (Wikipedia Somali_grammar)",
+          "audioFile": null
+        },
+        {
+          "english": "declarative verb focus marker (waa) and noun-phrase focus particles (baa, ayaa, waxaa)",
+          "translation": "waa / baa / ayaa / waxaa",
+          "pronunciation": "waa / baa / ayaa / waxaa",
+          "context": "Af-Soomaali (Wikipedia Somali_grammar)",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Axad (Axd)",
+          "pronunciation": "axad (axd)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Isniin (Isn)",
+          "pronunciation": "isniin (isn)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Talaado (Tldo)",
+          "pronunciation": "talaado (tldo)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Arbaco (Arbc)",
+          "pronunciation": "arbaco (arbc)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Khamiis (Khms)",
+          "pronunciation": "khamiis (khms)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Jimco (Jmc)",
+          "pronunciation": "jimco (jmc)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Sabti (Sbti)",
+          "pronunciation": "sabti (sbti)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Before Christ (BC / Historical Era)",
+          "translation": "Ciise Hortii",
+          "pronunciation": "ciise hortii",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Anno Domini (AD / Common Era)",
+          "translation": "Ciise Dabadii",
+          "pronunciation": "ciise dabadii",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "GH",
+          "pronunciation": "gh",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "GD",
+          "pronunciation": "gd",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "saman",
+          "pronunciation": "saman",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Day of the week",
+          "translation": "maalinta toddobaadka",
+          "pronunciation": "maalinta toddobaadka",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "South African Rand (ZAR)",
+          "translation": "Randka Koonfur Afrika",
+          "pronunciation": "randka koonfur afrika",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leonka Sira Leon",
+          "pronunciation": "leonka sira leon",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Faranka CFA Galbeedka Afrika",
+          "pronunciation": "faranka cfa galbeedka afrika",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Faranka CFA ee Bartamaha Afrika",
+          "pronunciation": "faranka cfa ee bartamaha afrika",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates Dirham (AED)",
+          "translation": "Dirhamka Isutaga Imaaraatka Carabta",
+          "pronunciation": "dirhamka isutaga imaaraatka carabta",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tanzania (Country / Territory)",
+          "translation": "Tansaaniya",
+          "pronunciation": "tansaaniya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Uganda (Country / Territory)",
+          "translation": "Ugaanda",
+          "pronunciation": "ugaanda",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Itoobiya",
+          "pronunciation": "itoobiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Somalia (Country / Territory)",
+          "translation": "Soomaaliya",
+          "pronunciation": "soomaaliya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Rwanda (Country / Territory)",
+          "translation": "Ruwanda",
+          "pronunciation": "ruwanda",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Suudaan",
+          "pronunciation": "suudaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "South Sudan (Country / Territory)",
+          "translation": "Koonfur Suudaan",
+          "pronunciation": "koonfur suudaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Kinshasa (Country / Territory)",
+          "translation": "Jamhuuriyadda Dimuquraadiga Kongo",
+          "pronunciation": "jamhuuriyadda dimuquraadiga kongo",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "South Africa (Country / Territory)",
+          "translation": "Koonfur Afrika",
+          "pronunciation": "koonfur afrika",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Nayjeeriya",
+          "pronunciation": "nayjeeriya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Egypt (Country / Territory)",
+          "translation": "Masar",
+          "pronunciation": "masar",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ghana (Country / Territory)",
+          "translation": "Gaana",
+          "pronunciation": "gaana",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Cameroon (Country / Territory)",
+          "translation": "Kaameruun",
+          "pronunciation": "kaameruun",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Senegal (Country / Territory)",
+          "translation": "Sinigaal",
+          "pronunciation": "sinigaal",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Ayfori Koost",
+          "pronunciation": "ayfori koost",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mali (Country / Territory)",
+          "translation": "Maali",
+          "pronunciation": "maali",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Burkina Faso (Country / Territory)",
+          "translation": "Burkiina Faaso",
+          "pronunciation": "burkiina faaso",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Nayjer",
+          "pronunciation": "nayjer",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Jaad",
+          "pronunciation": "jaad",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African Republic (Country / Territory)",
+          "translation": "Jamhuuriyadda Afrikada Dhexe",
+          "pronunciation": "jamhuuriyadda afrikada dhexe",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Gaaboon",
+          "pronunciation": "gaaboon",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Ekuwatooriyal Gini",
+          "pronunciation": "ekuwatooriyal gini",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Zambia (Country / Territory)",
+          "translation": "Saambiya",
+          "pronunciation": "saambiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Zimbabwe (Country / Territory)",
+          "translation": "Simbaabwe",
+          "pronunciation": "simbaabwe",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malawi (Country / Territory)",
+          "translation": "Malaawi",
+          "pronunciation": "malaawi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mozambique (Country / Territory)",
+          "translation": "Musambiik",
+          "pronunciation": "musambiik",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Angola (Country / Territory)",
+          "translation": "Angoola",
+          "pronunciation": "angoola",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Namibia (Country / Territory)",
+          "translation": "Namiibiya",
+          "pronunciation": "namiibiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Botswana (Country / Territory)",
+          "translation": "Botuswaana",
+          "pronunciation": "botuswaana",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Lesotho (Country / Territory)",
+          "translation": "Losooto",
+          "pronunciation": "losooto",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Eswaatiini",
+          "pronunciation": "eswaatiini",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Madagaskar",
+          "pronunciation": "madagaskar",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mauritius (Country / Territory)",
+          "translation": "Mawrishiyaas",
+          "pronunciation": "mawrishiyaas",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Sishelis",
+          "pronunciation": "sishelis",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Comoros (Country / Territory)",
+          "translation": "Komooros",
+          "pronunciation": "komooros",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Djibouti (Country / Territory)",
+          "translation": "Jabuuti",
+          "pronunciation": "jabuuti",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Eritrea (Country / Territory)",
+          "translation": "Eritreeya",
+          "pronunciation": "eritreeya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Libya (Country / Territory)",
+          "translation": "Liibya",
+          "pronunciation": "liibya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tunisia (Country / Territory)",
+          "translation": "Tuniisiya",
+          "pronunciation": "tuniisiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Algeria (Country / Territory)",
+          "translation": "Aljeeriya",
+          "pronunciation": "aljeeriya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Morooko",
+          "pronunciation": "morooko",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mauritania (Country / Territory)",
+          "translation": "Muritaaniya",
+          "pronunciation": "muritaaniya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Gambia (Country / Territory)",
+          "translation": "Gambiya",
+          "pronunciation": "gambiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leone (Country / Territory)",
+          "translation": "Siraaliyoon",
+          "pronunciation": "siraaliyoon",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Liberia (Country / Territory)",
+          "translation": "Laybeeriya",
+          "pronunciation": "laybeeriya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Guinea (Country / Territory)",
+          "translation": "Gini",
+          "pronunciation": "gini",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Guinea-Bissau (Country / Territory)",
+          "translation": "Gini-Bisaaw",
+          "pronunciation": "gini-bisaaw",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Jasiiradda Kayb Faarde",
+          "pronunciation": "jasiiradda kayb faarde",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "São Tomé & Príncipe (Country / Territory)",
+          "translation": "Sao Tome & Birincibal",
+          "pronunciation": "sao tome & birincibal",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United States (Country / Territory)",
+          "translation": "Maraykanka",
+          "pronunciation": "maraykanka",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Boqortooyada Midowday",
+          "pronunciation": "boqortooyada midowday",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "France (Country / Territory)",
+          "translation": "Faransiis",
+          "pronunciation": "faransiis",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Germany (Country / Territory)",
+          "translation": "Jarmal",
+          "pronunciation": "jarmal",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Italy (Country / Territory)",
+          "translation": "Talyaani",
+          "pronunciation": "talyaani",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Isbeyn",
+          "pronunciation": "isbeyn",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Portugal (Country / Territory)",
+          "translation": "Bortugaal",
+          "pronunciation": "bortugaal",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Netherlands (Country / Territory)",
+          "translation": "Nederlaands",
+          "pronunciation": "nederlaands",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Belgium (Country / Territory)",
+          "translation": "Biljam",
+          "pronunciation": "biljam",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Switzerland (Country / Territory)",
+          "translation": "Swiiserlaand",
+          "pronunciation": "swiiserlaand",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Russia (Country / Territory)",
+          "translation": "Ruush",
+          "pronunciation": "ruush",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Yukrayn",
+          "pronunciation": "yukrayn",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Booland",
+          "pronunciation": "booland",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Turkey (Country / Territory)",
+          "translation": "Turki",
+          "pronunciation": "turki",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Greece (Country / Territory)",
+          "translation": "Giriig",
+          "pronunciation": "giriig",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Israel (Country / Territory)",
+          "translation": "Israaʼiil",
+          "pronunciation": "israaʼiil",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Dhulka Falastiiniyiinta daanta galbeed iyo marinka qasa",
+          "pronunciation": "dhulka falastiiniyiinta daanta galbeed iyo marinka qasa",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Sacuudi Carabiya",
+          "pronunciation": "sacuudi carabiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates (Country / Territory)",
+          "translation": "Midawga Imaaraatka Carabta",
+          "pronunciation": "midawga imaaraatka carabta",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Qadar",
+          "pronunciation": "qadar",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Iiraan",
+          "pronunciation": "iiraan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Iraq (Country / Territory)",
+          "translation": "Ciraaq",
+          "pronunciation": "ciraaq",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "India (Country / Territory)",
+          "translation": "Hindiya",
+          "pronunciation": "hindiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Pakistan (Country / Territory)",
+          "translation": "Bakistaan",
+          "pronunciation": "bakistaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "China (Country / Territory)",
+          "translation": "Shiinaha",
+          "pronunciation": "shiinaha",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Japan (Country / Territory)",
+          "translation": "Jabaan",
+          "pronunciation": "jabaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "South Korea (Country / Territory)",
+          "translation": "Kuuriyada Koonfureed",
+          "pronunciation": "kuuriyada koonfureed",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Indonesia (Country / Territory)",
+          "translation": "Indoneesiya",
+          "pronunciation": "indoneesiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Filibiin",
+          "pronunciation": "filibiin",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Australia (Country / Territory)",
+          "translation": "Awstaraaliya",
+          "pronunciation": "awstaraaliya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "New Zealand (Country / Territory)",
+          "translation": "Niyuusiilaand",
+          "pronunciation": "niyuusiilaand",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Baraasiil",
+          "pronunciation": "baraasiil",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Argentina (Country / Territory)",
+          "translation": "Arjentiina",
+          "pronunciation": "arjentiina",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Cuba (Country / Territory)",
+          "translation": "Kuuba",
+          "pronunciation": "kuuba",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Jamaica (Country / Territory)",
+          "translation": "Jamaaika",
+          "pronunciation": "jamaaika",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
@@ -490,49 +2191,1050 @@
       "name": "Family, Pastoralism & Sustenance",
       "entries": [
         {
+          "english": "Woman",
+          "translation": "naag / haween",
+          "pronunciation": "naag / haween",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Man (adult male)",
+          "translation": "nin (def. ninka)",
+          "pronunciation": "nin (def. ninka)",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "cunug / ilmo",
+          "pronunciation": "cunug / ilmo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Boy / son",
+          "translation": "wiil (def. wiilka) / ínan",
+          "pronunciation": "wiil (def. wiilka) / ínan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Girl / daughter",
+          "translation": "gabadh / inán",
+          "pronunciation": "gabadh / inán",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Wife",
+          "translation": "xaas / afo",
+          "pronunciation": "xaas / afo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Husband",
+          "translation": "say / nin",
+          "pronunciation": "say / nin",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
           "english": "Mother",
-          "translation": "Hooyo",
-          "pronunciation": "hoh-yoh",
-          "context": "Mother",
+          "translation": "hooyo",
+          "pronunciation": "hooyo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Father",
-          "translation": "Aabbe",
-          "pronunciation": "ah-beh",
-          "context": "Father",
+          "translation": "aabbe",
+          "pronunciation": "aabbe",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Animal / livestock",
+          "translation": "xoolo / xayawaan",
+          "pronunciation": "xoolo / xayawaan",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Camel",
-          "translation": "Geel",
-          "pronunciation": "gehl",
-          "context": "Collective noun for camels — pillar of Somali pastoralism",
+          "translation": "geel",
+          "pronunciation": "geel",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "malay / kalluun",
+          "pronunciation": "malay / kalluun",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "shimbir",
+          "pronunciation": "shimbir",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "ay / eey",
+          "pronunciation": "ay / eey",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Louse",
+          "translation": "cinjir / injir",
+          "pronunciation": "cinjir / injir",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "mas",
+          "pronunciation": "mas",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Worm",
+          "translation": "dirxi",
+          "pronunciation": "dirxi",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Fruit / seed",
+          "translation": "miro",
+          "pronunciation": "miro",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "hilib",
+          "pronunciation": "hilib",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "ukun / beed",
+          "pronunciation": "ukun / beed",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Horn / side",
+          "translation": "gees",
+          "pronunciation": "gees",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Tail",
+          "translation": "seyn / dabo",
+          "pronunciation": "seyn / dabo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "Feather / wing",
+          "translation": "baal",
+          "pronunciation": "baal",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To drink",
+          "translation": "cab / cabbid",
+          "pronunciation": "cab / cabbid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To eat",
+          "translation": "cun / cunid",
+          "pronunciation": "cun / cunid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To suck",
+          "translation": "nuug / nuugid",
+          "pronunciation": "nuug / nuugid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "To fly",
+          "translation": "duulid",
+          "pronunciation": "duulid",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
           "english": "Milk",
-          "translation": "Caano",
-          "pronunciation": "ah-noh",
-          "context": "Caano geel (camel milk)",
+          "translation": "caano",
+          "pronunciation": "caano",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Water",
-          "translation": "Biyo",
-          "pronunciation": "bee-yoh",
-          "context": "Drinking water",
+          "english": "Salt",
+          "translation": "cusbo",
+          "pronunciation": "cusbo",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
           "audioFile": null
         },
         {
-          "english": "Peace",
-          "translation": "Nabad",
-          "pronunciation": "nah-bahd",
-          "context": "Root of greetings: Nabad miyaa? (Is there peace?)",
+          "english": "Full",
+          "translation": "buux",
+          "pronunciation": "buux",
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+          "audioFile": null
+        },
+        {
+          "english": "goat (pl. goats)",
+          "translation": "ri' (pl. riyo)",
+          "pronunciation": "ri' (pl. riyo)",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "lion",
+          "translation": "libaax",
+          "pronunciation": "libaax",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "elephant",
+          "translation": "maroodi",
+          "pronunciation": "maroodi",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "council of elders",
+          "translation": "guurti / odayaal",
+          "pronunciation": "guurti / odayaal",
+          "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "January (Month 1)",
+          "translation": "Jannaayo (Jan)",
+          "pronunciation": "jannaayo (jan)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "February (Month 2)",
+          "translation": "Febraayo (Feb)",
+          "pronunciation": "febraayo (feb)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "March (Month 3)",
+          "translation": "Maarso (Mar)",
+          "pronunciation": "maarso (mar)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "April (Month 4)",
+          "translation": "Abriil (Abr)",
+          "pronunciation": "abriil (abr)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "May (Month 5)",
+          "translation": "May",
+          "pronunciation": "may",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "June (Month 6)",
+          "translation": "Juun (Jun)",
+          "pronunciation": "juun (jun)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "July (Month 7)",
+          "translation": "Luuliyo (Lul)",
+          "pronunciation": "luuliyo (lul)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "August (Month 8)",
+          "translation": "Ogosto (Ogs)",
+          "pronunciation": "ogosto (ogs)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "September (Month 9)",
+          "translation": "Sebteembar (Seb)",
+          "pronunciation": "sebteembar (seb)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "October (Month 10)",
+          "translation": "Oktoobar (Okt)",
+          "pronunciation": "oktoobar (okt)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "November (Month 11)",
+          "translation": "Noofeembar (Nof)",
+          "pronunciation": "noofeembar (nof)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "December (Month 12)",
+          "translation": "Diseembar (Dis)",
+          "pronunciation": "diseembar (dis)",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Shalay",
+          "pronunciation": "shalay",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Maanta",
+          "pronunciation": "maanta",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Berri",
+          "pronunciation": "berri",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Year (calendar unit)",
+          "translation": "Sannad",
+          "pronunciation": "sannad",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Month (calendar unit)",
+          "translation": "Bil",
+          "pronunciation": "bil",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Week (calendar unit)",
+          "translation": "Toddobaad",
+          "pronunciation": "toddobaad",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Day (calendar unit)",
+          "translation": "maalin",
+          "pronunciation": "maalin",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Hour (time unit)",
+          "translation": "Saacad",
+          "pronunciation": "saacad",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Minute (time unit)",
+          "translation": "daqiiqad",
+          "pronunciation": "daqiiqad",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Time zone",
+          "translation": "wakhtiga aagga",
+          "pronunciation": "wakhtiga aagga",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Kenyan Shilling (KES)",
+          "translation": "Shilingka Kenya",
+          "pronunciation": "shilingka kenya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tanzanian Shilling (TZS)",
+          "translation": "Shilingka Tansaaniya",
+          "pronunciation": "shilingka tansaaniya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ugandan Shilling (UGX)",
+          "translation": "Shilingka Yugandha",
+          "pronunciation": "shilingka yugandha",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopian Birr (ETB)",
+          "translation": "Birta Itoobbiya",
+          "pronunciation": "birta itoobbiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Somali Shilling (SOS)",
+          "translation": "Shilingka Soomaaliya",
+          "pronunciation": "shilingka soomaaliya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Rwandan Franc (RWF)",
+          "translation": "Faranka Ruwanda",
+          "pronunciation": "faranka ruwanda",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Burundian Franc (BIF)",
+          "translation": "Faranka Burundi",
+          "pronunciation": "faranka burundi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sudanese Pound (SDG)",
+          "translation": "Bowndka Suudaan",
+          "pronunciation": "bowndka suudaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Congolese Franc (CDF)",
+          "translation": "Faranka Kongo",
+          "pronunciation": "faranka kongo",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigerian Naira (NGN)",
+          "translation": "Nairada Neyjeeriya",
+          "pronunciation": "nairada neyjeeriya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Egyptian Pound (EGP)",
+          "translation": "Bowndka Masar",
+          "pronunciation": "bowndka masar",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ghanaian Cedi (GHS)",
+          "translation": "Sedida Gana",
+          "pronunciation": "sedida gana",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malawian Kwacha (MWK)",
+          "translation": "Kawajada Malawi",
+          "pronunciation": "kawajada malawi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Zambian Kwacha (ZMW)",
+          "translation": "Kawajada Sambiya",
+          "pronunciation": "kawajada sambiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mozambican Metical (MZN)",
+          "translation": "Metikalka Mosambik",
+          "pronunciation": "metikalka mosambik",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Angolan Kwanza (AOA)",
+          "translation": "Kawansada Angola",
+          "pronunciation": "kawansada angola",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Botswanan Pula (BWP)",
+          "translation": "Buulada Botswana",
+          "pronunciation": "buulada botswana",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Namibian Dollar (NAD)",
+          "translation": "Doolarka Namibiya",
+          "pronunciation": "doolarka namibiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malagasy Ariary (MGA)",
+          "translation": "Arayrida Madagaskar",
+          "pronunciation": "arayrida madagaskar",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mauritian Rupee (MUR)",
+          "translation": "Rubiga Mowrishiya",
+          "pronunciation": "rubiga mowrishiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Seychellois Rupee (SCR)",
+          "translation": "Rubiga Siisalis",
+          "pronunciation": "rubiga siisalis",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Djiboutian Franc (DJF)",
+          "translation": "Faran Jabuuti",
+          "pronunciation": "faran jabuuti",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Eritrean Nakfa (ERN)",
+          "translation": "Nakfada Eritriya",
+          "pronunciation": "nakfada eritriya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Libyan Dinar (LYD)",
+          "translation": "Dinaarka Libya",
+          "pronunciation": "dinaarka libya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tunisian Dinar (TND)",
+          "translation": "Dinaarka Tunisiya",
+          "pronunciation": "dinaarka tunisiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Algerian Dinar (DZD)",
+          "translation": "Dinaarka Aljeriya",
+          "pronunciation": "dinaarka aljeriya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Moroccan Dirham (MAD)",
+          "translation": "Dirhamka Moroko",
+          "pronunciation": "dirhamka moroko",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Gambian Dalasi (GMD)",
+          "translation": "Dalasida Gambiya",
+          "pronunciation": "dalasida gambiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Liberian Dollar (LRD)",
+          "translation": "Doolarka Liberiya",
+          "pronunciation": "doolarka liberiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "US Dollar (USD)",
+          "translation": "Doolarka Mareeykanka",
+          "pronunciation": "doolarka mareeykanka",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "British Pound (GBP)",
+          "translation": "Bowndka Biritishka",
+          "pronunciation": "bowndka biritishka",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Euro (EUR)",
+          "translation": "Yuuroo",
+          "pronunciation": "yuuroo",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Indian Rupee (INR)",
+          "translation": "Rubiga Hindiya",
+          "pronunciation": "rubiga hindiya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese Yuan (CNY)",
+          "translation": "Yuwanta Shiinaha",
+          "pronunciation": "yuwanta shiinaha",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese Yen (JPY)",
+          "translation": "Yenta Jabaan",
+          "pronunciation": "yenta jabaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Riyal (SAR)",
+          "translation": "Riyaalka Sacuudiga",
+          "pronunciation": "riyaalka sacuudiga",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Swiss Franc (CHF)",
+          "translation": "Faranka Iswiska",
+          "pronunciation": "faranka iswiska",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Doolarka Kanada",
+          "pronunciation": "doolarka kanada",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Australian Dollar (AUD)",
+          "translation": "Doolarka Astaraaliya",
+          "pronunciation": "doolarka astaraaliya",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Kikuyu (Language)",
+          "translation": "Kikuuyu",
+          "pronunciation": "kikuuyu",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Kamba (Language)",
+          "translation": "Kaamba",
+          "pronunciation": "kaamba",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Luo (Language)",
+          "translation": "Luwada",
+          "pronunciation": "luwada",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Masai (Language)",
+          "translation": "Masaay",
+          "pronunciation": "masaay",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Samburu (Language)",
+          "translation": "Sambuuru",
+          "pronunciation": "sambuuru",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Gusii (Language)",
+          "translation": "Guusii",
+          "pronunciation": "guusii",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Meru (Language)",
+          "translation": "Meeru",
+          "pronunciation": "meeru",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Teso (Language)",
+          "translation": "Teeso",
+          "pronunciation": "teeso",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Taita (Language)",
+          "translation": "Taiita",
+          "pronunciation": "taiita",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Somali (Language)",
+          "translation": "Soomaali",
+          "pronunciation": "soomaali",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Swahili (Language)",
+          "translation": "Sawaaxili",
+          "pronunciation": "sawaaxili",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "English (Language)",
+          "translation": "Ingiriisi",
+          "pronunciation": "ingiriisi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "French (Language)",
+          "translation": "Faransiis",
+          "pronunciation": "faransiis",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "German (Language)",
+          "translation": "Jarmal",
+          "pronunciation": "jarmal",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Spanish (Language)",
+          "translation": "Isbaanish",
+          "pronunciation": "isbaanish",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Portuguese (Language)",
+          "translation": "Boortaqiis",
+          "pronunciation": "boortaqiis",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Italian (Language)",
+          "translation": "Talyaani",
+          "pronunciation": "talyaani",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Dutch (Language)",
+          "translation": "Holandays",
+          "pronunciation": "holandays",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Russian (Language)",
+          "translation": "Ruush",
+          "pronunciation": "ruush",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Polish (Language)",
+          "translation": "Boolish",
+          "pronunciation": "boolish",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukrainian (Language)",
+          "translation": "Yukreeniyaan",
+          "pronunciation": "yukreeniyaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Czech (Language)",
+          "translation": "Jeeg",
+          "pronunciation": "jeeg",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Greek (Language)",
+          "translation": "Giriik",
+          "pronunciation": "giriik",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Arabic (Language)",
+          "translation": "Carabi",
+          "pronunciation": "carabi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Hebrew (Language)",
+          "translation": "Cibraani",
+          "pronunciation": "cibraani",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Persian (Language)",
+          "translation": "Faarisi",
+          "pronunciation": "faarisi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Urdu (Language)",
+          "translation": "Urduu",
+          "pronunciation": "urduu",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Bangla (Language)",
+          "translation": "Bangladesh",
+          "pronunciation": "bangladesh",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Punjabi (Language)",
+          "translation": "Bunjaabi",
+          "pronunciation": "bunjaabi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tamil (Language)",
+          "translation": "Tamiil",
+          "pronunciation": "tamiil",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Telugu (Language)",
+          "translation": "Teluugu",
+          "pronunciation": "teluugu",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Thai (Language)",
+          "translation": "Taaylandays",
+          "pronunciation": "taaylandays",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Vietnamese (Language)",
+          "translation": "Fiitnaamays",
+          "pronunciation": "fiitnaamays",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Indonesian (Language)",
+          "translation": "Indunusiyaan",
+          "pronunciation": "indunusiyaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malay (Language)",
+          "translation": "Malaay",
+          "pronunciation": "malaay",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese (Language)",
+          "translation": "Shiinaha Mandarin",
+          "pronunciation": "shiinaha mandarin",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese (Language)",
+          "translation": "Jabaaniis",
+          "pronunciation": "jabaaniis",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Korean (Language)",
+          "translation": "Kuuriyaan",
+          "pronunciation": "kuuriyaan",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Amharic (Language)",
+          "translation": "Axmaar",
+          "pronunciation": "axmaar",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Hausa (Language)",
+          "translation": "Hawsa",
+          "pronunciation": "hawsa",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Yoruba (Language)",
+          "translation": "Yoruuba",
+          "pronunciation": "yoruuba",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Zulu (Language)",
+          "translation": "Zuulu",
+          "pronunciation": "zuulu",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Xhosa (Language)",
+          "translation": "Hoosta",
+          "pronunciation": "hoosta",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Kinyarwanda (Language)",
+          "translation": "Ruwaandha",
+          "pronunciation": "ruwaandha",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Rundi (Language)",
+          "translation": "Rundhi",
+          "pronunciation": "rundhi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ganda (Language)",
+          "translation": "Gandha",
+          "pronunciation": "gandha",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Nyanja (Language)",
+          "translation": "Inyaanja",
+          "pronunciation": "inyaanja",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Shona (Language)",
+          "translation": "Shoona",
+          "pronunciation": "shoona",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Southern Sotho (Language)",
+          "translation": "Sesooto",
+          "pronunciation": "sesooto",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ewe (Language)",
+          "translation": "Eewe",
+          "pronunciation": "eewe",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Wolof (Language)",
+          "translation": "Woolof",
+          "pronunciation": "woolof",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Fula (Language)",
+          "translation": "Fuulah",
+          "pronunciation": "fuulah",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Bambara (Language)",
+          "translation": "Bambaara",
+          "pronunciation": "bambaara",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Malagasy (Language)",
+          "translation": "Malagaasi",
+          "pronunciation": "malagaasi",
+          "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "KenyaHub Community & Linguistic Reference Dictionary"
+  "source": "Public Domain Dictionary Scaffold"
 }

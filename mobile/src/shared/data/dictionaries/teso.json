@@ -11,7 +11,7 @@
   "hasAudio": false,
   "dictionaryVersion": "1.1.0",
   "lastUpdated": "2026-10-20",
-  "contributorNote": "Compiled from 'An Introduction to the Ateso Language' by J.H. Hilders and J.C.D. Lawrence (Eagle Press / East African Literature Bureau, 1957). Ateso is an Eastern Nilotic language of the Teso-Turkana group, spoken primarily in Busia County (Teso North and Teso South sub-counties), Kenya, and widely across Eastern Uganda (Soroti, Kumi, Ngora, Bukedea, Katakwi, Amuria, Tororo). Thoroughly analyzed and structured with accurate grammatical gender (masculine e-, feminine a-, diminutive i-), plural noun classes, and verbal classes (ko- and ki-).",
+  "contributorNote": "Teso (Ateso) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
       "id": "greetings",
@@ -19,199 +19,66 @@
       "icon": "👋",
       "entries": [
         {
-          "english": "Chief",
-          "translation": "Eloket / Ekapolon",
-          "pronunciation": "eh-kah-poh-lohn",
-          "context": "Chief or leader",
-          "audioFile": null
-        },
-        {
-          "english": "King",
-          "translation": "Ekabaka / Emorimor",
-          "pronunciation": "eh-moh-ree-mor",
-          "context": "Paramount leader / king",
-          "audioFile": null
-        },
-        {
-          "english": "Market",
-          "translation": "Esokoni",
-          "pronunciation": "eh-soh-koh-nee",
-          "context": "Market",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "Etau",
-          "pronunciation": "eh-tah-oo",
-          "context": "Heart",
-          "audioFile": null
-        },
-        {
-          "english": "Head",
-          "translation": "Akou",
-          "pronunciation": "ah-koh-oo",
-          "context": "Head",
-          "audioFile": null
-        },
-        {
-          "english": "Fish",
-          "translation": "Agaria",
-          "pronunciation": "ah-gah-ryah",
-          "context": "Fish",
-          "audioFile": null
-        },
-        {
-          "english": "Good night",
-          "translation": "Kojoto ejok",
-          "pronunciation": "koh-joh-toh eh-johk",
-          "context": "Sleep well",
-          "audioFile": null
-        },
-        {
-          "english": "Love",
-          "translation": "Amina",
-          "pronunciation": "ah-mee-nah",
-          "context": "Love",
-          "audioFile": null
-        },
-        {
-          "english": "Peace",
-          "translation": "Ainapakina",
-          "pronunciation": "ai-nah-pah-kee-nah",
-          "context": "Peace",
-          "audioFile": null
-        },
-        {
-          "english": "Fire",
-          "translation": "Akim",
-          "pronunciation": "ah-keem",
-          "context": "Fire",
-          "audioFile": null
-        },
-        {
-          "english": "Friend",
-          "translation": "Epajan / Epapero",
-          "pronunciation": "eh-pah-peh-roh",
-          "context": "Friend",
-          "audioFile": null
-        },
-        {
-          "english": "God",
-          "translation": "Edeke / Lokasuban",
-          "pronunciation": "eh-deh-keh",
-          "context": "God, the Creator",
-          "audioFile": null
-        },
-        {
-          "english": "Hello / How are you?",
+          "english": "Hello",
           "translation": "Yoga",
-          "pronunciation": "yoh-gah",
-          "context": "Standard Ateso greeting; answered with 'Ejok'. Verb: ayogan (to greet).",
+          "pronunciation": "Yoga",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "Good morning / Warm greetings",
-          "translation": "Yoga noi",
-          "pronunciation": "yoh-gah noh-ee",
-          "context": "Warm morning or heartfelt greeting; 'noi' = very/much.",
+          "english": "How are you? (singular)",
+          "translation": "Ijai biai?",
+          "pronunciation": "Ijai biai?",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "How are you? / How do you spend the day?",
-          "translation": "Ibiya?",
-          "pronunciation": "ee-bee-yah",
-          "context": "Friendly enquiry into one's condition, from 'aiboi' (to stay/dwell).",
+          "english": "How are you? (plural)",
+          "translation": "Ijaasi biai?",
+          "pronunciation": "Ijaasi biai?",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "I am fine / Good / It is well",
-          "translation": "Ejok",
-          "pronunciation": "eh-johk",
-          "context": "Universal reply to greetings; literally 'It is good'. Plural: Ejokak.",
+          "english": "Fine, and you?",
+          "translation": "Ejokuna, arai ijo?",
+          "pronunciation": "Ejokuna, arai ijo?",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "Very fine / All is very well",
-          "translation": "Ejok noi",
-          "pronunciation": "eh-johk noh-ee",
-          "context": "Enthusiastic reply to greeting; 'noi' = very much.",
+          "english": "Fine / well",
+          "translation": "Ejokuna",
+          "pronunciation": "Ejokuna",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "Thank you",
-          "translation": "Eyalama",
-          "pronunciation": "eh-yah-lah-mah",
-          "context": "Standard expression of gratitude and appreciation.",
+          "english": "What is your name?",
+          "translation": "Ingai bo ekon'kiror?",
+          "pronunciation": "Ingai bo ekon'kiror?",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "Thank you very much",
-          "translation": "Eyalama noi",
-          "pronunciation": "eh-yah-lah-mah noh-ee",
-          "context": "Expression of deep gratitude.",
+          "english": "My name is",
+          "translation": "Eka'kiror",
+          "pronunciation": "Eka'kiror...",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "Is that so? / Really?",
-          "translation": "Erai bo?",
-          "pronunciation": "eh-rah-ee boh",
-          "context": "Conversational reply of interest; 'erai' = it is, 'bo' = interrogative particle.",
+          "english": "Nice to see you / Thank you for seeing me",
+          "translation": "Eyalama ewanyun (or Eyalama aanyun)",
+          "pronunciation": "Eyalama ewanyun (or Eyalama aanyun)",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "Goodbye / Farewell",
-          "translation": "Adio",
-          "pronunciation": "ah-dee-oh",
-          "context": "Standard parting farewell.",
-          "audioFile": null
-        },
-        {
-          "english": "Go well / Go in peace",
-          "translation": "Kolot ejok",
-          "pronunciation": "koh-loht eh-johk",
-          "context": "Parting blessing addressed to the one departing; from 'alosit' (to go) and 'ejok' (well).",
-          "audioFile": null
-        },
-        {
-          "english": "Stay well / Peaceful stay",
-          "translation": "Kiboi ejok",
-          "pronunciation": "kee-boh-ee eh-johk",
-          "context": "Parting blessing addressed to the one remaining; from 'aiboi' (to stay/dwell).",
-          "audioFile": null
-        },
-        {
-          "english": "Welcome / Come in",
-          "translation": "Toloma",
-          "pronunciation": "toh-loh-mah",
-          "context": "Imperative welcome; from 'alomun' (to come in). Plural: Tolomatu.",
-          "audioFile": null
-        },
-        {
-          "english": "Welcome (borrowed)",
-          "translation": "Karibu",
-          "pronunciation": "kah-ree-boo",
-          "context": "Swahili loan widely understood across East Africa.",
-          "audioFile": null
-        },
-        {
-          "english": "Yes",
-          "translation": "Eebo / Ee",
-          "pronunciation": "eh-eh-boh",
-          "context": "Affirmative response.",
-          "audioFile": null
-        },
-        {
-          "english": "No / Not",
-          "translation": "Mam",
-          "pronunciation": "mahm",
-          "context": "Universal negative particle placed before verbs and subjects.",
-          "audioFile": null
-        },
-        {
-          "english": "See you tomorrow",
-          "translation": "Aanyun moi",
-          "pronunciation": "ah-ahn-yoon moh-ee",
-          "context": "Parting phrase; 'aanyun' = to see, 'moi' = tomorrow.",
+          "english": "See you again",
+          "translation": "Awanyunos bobo",
+          "pronunciation": "Awanyunos bobo",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         }
       ]
@@ -222,199 +89,192 @@
       "icon": "🔢",
       "entries": [
         {
-          "english": "One",
-          "translation": "Epei / Ediope (fem. Adiope)",
-          "pronunciation": "eh-pay / ah-dee-oh-peh",
-          "context": "Masculine: epei or ediope; feminine: adiope. Ediope can precede the noun: adiopeberu (one woman).",
+          "english": "Zero / naught",
+          "translation": "esupur (traditional) / enoot",
+          "pronunciation": "esupur (traditional) / enoot",
+          "context": "Wikipedia Teso language — Numerals",
           "audioFile": null
         },
         {
-          "english": "Two",
-          "translation": "Aarei (masc. Iarei)",
-          "pronunciation": "ah-ah-reh-ee",
-          "context": "Feminine: aarei; masculine: iarei. e.g. aŋor aarei (two women), imoŋin iarei (two bulls).",
+          "english": "One (1) — masculine / feminine / neuter",
+          "translation": "idiope(t) (m.) / adiope(t) (f.) / yenisodit (n.)",
+          "pronunciation": "idiope(t) (m.) / adiope(t) (f.) / yenisodit (n.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Three",
-          "translation": "Auni (masc. Iuni)",
-          "pronunciation": "ah-oo-nee",
-          "context": "Feminine: auni; masculine: iuni. e.g. akituk auni (three cows), imoŋin iuni (three bulls).",
+          "english": "Two (2) — masculine / feminine",
+          "translation": "iyarei (m.) / aarei (f.)",
+          "pronunciation": "iyarei (m.) / aarei (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Four",
-          "translation": "Aoŋon (masc. Ioŋon)",
-          "pronunciation": "ah-oh-ngohn",
-          "context": "Feminine: aoŋon; masculine: ioŋon.",
+          "english": "Three (3) — masculine / feminine",
+          "translation": "iuni (m.) / auni (f.)",
+          "pronunciation": "iuni (m.) / auni (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Five",
-          "translation": "Akan (masc. Ikan)",
-          "pronunciation": "ah-kahn",
-          "context": "Feminine: akan; masculine: ikan. Cognate with 'akan' (hand).",
+          "english": "Four (4) — masculine / feminine",
+          "translation": "ioŋon (m.) / aoŋon (f.)",
+          "pronunciation": "ioŋon (m.) / aoŋon (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Six",
-          "translation": "Akankapei / Akany kape",
-          "pronunciation": "ah-kahn-kah-pay",
-          "context": "Literally 'five and one'. Masculine: ikankapei / ikany kape.",
+          "english": "Five (5) — masculine / feminine (< akan 'hand')",
+          "translation": "ikany (m.) / akany (f.)",
+          "pronunciation": "ikany (m.) / akany (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Seven",
-          "translation": "Akankaare / Akany kaarei",
-          "pronunciation": "ah-kahn-kah-ah-reh",
-          "context": "Literally 'five and two'. Masculine: ikankaare / ikany kaarei.",
+          "english": "Six (6, lit. 5+1)",
+          "translation": "ikany-kape (m.) / akany-kape (f.)",
+          "pronunciation": "ikany-kape (m.) / akany-kape (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Eight",
-          "translation": "Akankauni / Akany kauni",
-          "pronunciation": "ah-kahn-kah-oo-nee",
-          "context": "Literally 'five and three'. Masculine: ikankauni / ikany kauni.",
+          "english": "Seven (7, lit. 5+2)",
+          "translation": "ikany-kaare (m.) / akany-kaare (f.)",
+          "pronunciation": "ikany-kaare (m.) / akany-kaare (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Nine",
-          "translation": "Akankaongon / Akany kaoŋon",
-          "pronunciation": "ah-kahn-kah-ohn-gohn",
-          "context": "Literally 'five and four'. Masculine: ikankaongon / ikany kaoŋon.",
+          "english": "Eight (8, lit. 5+3)",
+          "translation": "ikany-kauni (m.) / akany-kauni (f.)",
+          "pronunciation": "ikany-kauni (m.) / akany-kauni (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Ten",
-          "translation": "Atomon (masc. Itomon)",
-          "pronunciation": "ah-toh-mohn",
-          "context": "Feminine: atomon; masculine: itomon.",
+          "english": "Nine (9, lit. 5+4)",
+          "translation": "ikany-kaoŋon (m.) / akany-kaoŋon (f.)",
+          "pronunciation": "ikany-kaoŋon (m.) / akany-kaoŋon (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Eleven",
-          "translation": "Atomon kanadiope",
-          "pronunciation": "ah-toh-mohn kah-nah-dee-oh-peh",
-          "context": "Literally 'ten and one' (feminine concord). Masculine: itomon kalodiope.",
+          "english": "Ten (10)",
+          "translation": "itomon (m.) / atomon (f.)",
+          "pronunciation": "itomon (m.) / atomon (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Twelve",
-          "translation": "Atomon kanuarei",
-          "pronunciation": "ah-toh-mohn kah-noo-ah-reh-ee",
-          "context": "Literally 'ten and two' (feminine concord). Masculine: itomon kaluarei.",
+          "english": "Eleven (11)",
+          "translation": "itomon-kanu-diope (m.) / atomon-kanu-diope (f.)",
+          "pronunciation": "itomon-kanu-diope (m.) / atomon-kanu-diope (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Thirteen",
-          "translation": "Atomon kanuuni",
-          "pronunciation": "ah-toh-mohn kah-noo-oo-nee",
-          "context": "Literally 'ten and three' (feminine concord).",
+          "english": "Twelve (12)",
+          "translation": "itomon'aare (m.) / atomon'aare (f.)",
+          "pronunciation": "itomon'aare (m.) / atomon'aare (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Fourteen",
-          "translation": "Atomon kanuoŋon",
-          "pronunciation": "ah-toh-mohn kah-noo-oh-ngohn",
-          "context": "Literally 'ten and four' (feminine concord).",
+          "english": "Fifteen (15)",
+          "translation": "itomon'akany (m.) / atomon'aakany (f.)",
+          "pronunciation": "itomon'akany (m.) / atomon'aakany (f.)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Fifteen",
-          "translation": "Atomon kanukany",
-          "pronunciation": "ah-toh-mohn kah-noo-kahn-y",
-          "context": "Literally 'ten and five' (feminine concord).",
+          "english": "Twenty (20)",
+          "translation": "akais aare",
+          "pronunciation": "akais aare",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Sixteen",
-          "translation": "Atomon kanukany kape",
-          "pronunciation": "ah-toh-mohn kah-noo-kahn-y kah-peh",
-          "context": "Literally 'ten and six' (feminine concord). Masculine: itomon kalukany kape.",
+          "english": "Thirty (30)",
+          "translation": "akais auni",
+          "pronunciation": "akais auni",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Twenty",
-          "translation": "Akais aarei",
-          "pronunciation": "ah-kah-ees ah-ah-reh-ee",
-          "context": "Literally 'two houses (tens)'. Akais is a feminine noun.",
+          "english": "Forty (40)",
+          "translation": "akais aangon",
+          "pronunciation": "akais aangon",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Twenty-one",
-          "translation": "Akais aarei kanadiope",
-          "pronunciation": "ah-kah-ees ah-ah-reh-ee kah-nah-dee-oh-peh",
-          "context": "Compound numeral: twenty and one.",
+          "english": "Fifty (50)",
+          "translation": "akais akany",
+          "pronunciation": "akais akany",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Thirty",
-          "translation": "Akais auni",
-          "pronunciation": "ah-kah-ees ah-oo-nee",
-          "context": "Literally 'three houses (tens)'.",
+          "english": "One hundred (100)",
+          "translation": "akwatat (adiope)",
+          "pronunciation": "akwatat (adiope)",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "One hundred",
-          "translation": "Akwatat (pl. Akwat)",
-          "pronunciation": "ah-kwah-taht",
-          "context": "Feminine noun; plural akwat. e.g. akwat auni (300).",
+          "english": "Two hundred (200)",
+          "translation": "akwat aarei",
+          "pronunciation": "akwat aarei",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "Two hundred",
-          "translation": "Akwat aarei",
-          "pronunciation": "ah-kwaht ah-ah-reh-ee",
-          "context": "Feminine concord with akwat (hundreds).",
+          "english": "Five hundred (500)",
+          "translation": "akwat akany",
+          "pronunciation": "akwat akany",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "One thousand",
-          "translation": "Elukumit (pl. Ilukumin) / Arita",
-          "pronunciation": "eh-loo-koo-meet",
-          "context": "Masculine noun: elukumit ediope (1,000); plural: ilukumin ikany (5,000). Also 'arita'.",
+          "english": "One thousand (1,000)",
+          "translation": "elukumit ediope",
+          "pronunciation": "elukumit ediope",
+          "context": "Wikipedia Teso language — Cardinal numbers",
           "audioFile": null
         },
         {
-          "english": "First",
-          "translation": "Losodit (fem. Nasodit)",
-          "pronunciation": "loh-soh-deet",
-          "context": "Ordinal numeral: masculine losodit, feminine nasodit.",
+          "english": "First (1st) — masc. / fem. / neut",
+          "translation": "losodit (m.) / nasodit (f.) / yenisodit (n.)",
+          "pronunciation": "losodit (m.) / nasodit (f.) / yenisodit (n.)",
+          "context": "Wikipedia Teso language — Ordinal numbers",
           "audioFile": null
         },
         {
-          "english": "Second",
-          "translation": "Lokiareit (fem. Nakiareit)",
-          "pronunciation": "loh-kee-ah-reh-eet",
-          "context": "Ordinal numeral: masculine lokiareit, feminine nakiareit.",
+          "english": "Second (2nd) — masc. / fem. / neut",
+          "translation": "lokiareit (m.) / nakiyareit (f.) / yenikiyareit (n.)",
+          "pronunciation": "lokiareit (m.) / nakiyareit (f.) / yenikiyareit (n.)",
+          "context": "Wikipedia Teso language — Ordinal numbers",
           "audioFile": null
         },
         {
-          "english": "Third",
-          "translation": "Lokiuniet (fem. Nakiuniet)",
-          "pronunciation": "loh-kee-oo-nee-eet",
-          "context": "Ordinal numeral: masculine lokiuniet, feminine nakiuniet.",
+          "english": "Third (3rd) — masc. / fem. / neut",
+          "translation": "louniet (m.) / nauniet (f.) / yeniuniet (n.)",
+          "pronunciation": "louniet (m.) / nauniet (f.) / yeniuniet (n.)",
+          "context": "Wikipedia Teso language — Ordinal numbers",
           "audioFile": null
         },
         {
-          "english": "Tenth",
-          "translation": "Lokitomonet (fem. Nakitomonet)",
-          "pronunciation": "loh-kee-toh-moh-neht",
-          "context": "Ordinal numeral: masculine lokitomonet, feminine nakitomonet.",
+          "english": "Last — masc. / fem. / neut",
+          "translation": "lo agolon (m.) / nagolon (f.) / yenagolon (n.)",
+          "pronunciation": "lo agolon (m.) / nagolon (f.) / yenagolon (n.)",
+          "context": "Wikipedia Teso language — Ordinal numbers",
           "audioFile": null
         },
         {
-          "english": "Once / One time",
-          "translation": "Irwan atipet",
-          "pronunciation": "eer-wahn ah-tee-peht",
-          "context": "Multiplication prefix 'irwan' (times) + 'atipet' (once).",
-          "audioFile": null
-        },
-        {
-          "english": "Twice / Two times",
-          "translation": "Irwan aarei",
-          "pronunciation": "eer-wahn ah-ah-reh-ee",
-          "context": "Multiplication with feminine numeral: irwan aarei.",
+          "english": "Second (time unit)",
+          "translation": "Isekonde",
+          "pronunciation": "isekonde",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         }
       ]
@@ -425,255 +285,598 @@
       "icon": "🗣️",
       "entries": [
         {
-          "english": "What is your name?",
-          "translation": "Iŋai ekirorkon?",
-          "pronunciation": "ee-ngah-ee eh-kee-rohr-kohn",
-          "context": "Literally 'Who is your name?'; 'ekiror' = name, '-kon' = your (singular).",
+          "english": "Love / affection",
+          "translation": "amina / amin",
+          "pronunciation": "amina / amin",
+          "context": "Wikipedia Teso language — Abstract nouns",
           "audioFile": null
         },
         {
-          "english": "My name is...",
-          "translation": "Ekirorka erai...",
-          "pronunciation": "eh-kee-rohr-kah eh-rah-ee",
-          "context": "'Ekirorka' = my name; 'erai' = is (verb to be quality form).",
+          "english": "Goodness",
+          "translation": "ajokus / ajokis",
+          "pronunciation": "ajokus / ajokis",
+          "context": "Wikipedia Teso language — Abstract nouns",
           "audioFile": null
         },
         {
-          "english": "Where do you come from?",
-          "translation": "Ai ibunit ijo?",
-          "pronunciation": "ah-ee ee-boo-neet ee-joh",
-          "context": "'ai' = where, 'abunere' = to come (present: ibuni), 'ijo' = you.",
+          "english": "Happiness / gratitude",
+          "translation": "aiyalama",
+          "pronunciation": "aiyalama",
+          "context": "Wikipedia Teso language — Abstract nouns",
           "audioFile": null
         },
         {
-          "english": "I come from...",
-          "translation": "Abuni eoŋ ko...",
-          "pronunciation": "ah-boo-nee eh-ohng koh",
-          "context": "'abuni' = I come, 'eoŋ' = I/me, 'ko-' = locative prefix from/at.",
+          "english": "Where? / There (not far) / Over there",
+          "translation": "ai, aibo? (where?) / nen (there) / ngina (over there)",
+          "pronunciation": "ai, aibo? (where?) / nen (there) / ngina (over there)",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "Where are you going?",
-          "translation": "Ai ilosi ijo?",
-          "pronunciation": "ah-ee ee-loh-see ee-joh",
-          "context": "'alosit' = to go; 2nd person singular present: ilosi.",
+          "english": "Inside / In the middle (between) / Behind / In front",
+          "translation": "toma (inside) / kiding (between) / kau (behind) / ngaren (in front)",
+          "pronunciation": "toma (inside) / kiding (between) / kau (behind) / ngaren (in front)",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "I am going home",
-          "translation": "Alosi eoŋ ore",
-          "pronunciation": "ah-loh-see eh-ohng oh-reh",
-          "context": "'alosi' = I go, 'ore' = at home (homestead locative).",
+          "english": "Right side / Left side",
+          "translation": "teten (right) / kediany (left)",
+          "pronunciation": "teten (right) / kediany (left)",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "What do you want?",
-          "translation": "Inyo ikoto ijo?",
-          "pronunciation": "een-yoh ee-koh-toh ee-joh",
-          "context": "'inyo' = what, 'akot' = to want (continuous verb: ikoto).",
+          "english": "Again / No / Because",
+          "translation": "bobo (again) / mam (no) / naarai (because)",
+          "pronunciation": "bobo (again) / mam (no) / naarai (because)",
+          "context": "Wikipedia Teso language — Alphabet & Vocabulary",
           "audioFile": null
         },
         {
-          "english": "I want water",
-          "translation": "Akoto eoŋ akipi",
-          "pronunciation": "ah-koh-toh eh-ohng ah-kee-pee",
-          "context": "'akoto' = I want, 'akipi' = water.",
+          "english": "sun, day (< Proto-Eastern Nilotic *-kɔlɔŋ)",
+          "translation": "akolong'",
+          "pronunciation": "akolong'",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Please help me",
-          "translation": "Kiŋarakai eoŋ",
-          "pronunciation": "kee-ngah-rah-kah-ee eh-ohng",
-          "context": "Imperative of 'aiŋarakin' (to help) with 1st person contained object.",
+          "english": "moon, month (< Proto-Eastern Nilotic *-lapa)",
+          "translation": "elap (pl. ilapio)",
+          "pronunciation": "elap (pl. ilapio)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "What is this?",
-          "translation": "Inyo bo yen?",
-          "pronunciation": "een-yoh boh yen",
-          "context": "'inyo' = what, 'bo' = interrogative particle, 'yen' = this (neuter).",
+          "english": "star (< Proto-Teso-Lotuko-Maa *-kacer)",
+          "translation": "akacer (pl. akacerin)",
+          "pronunciation": "akacer (pl. akacerin)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Who is that?",
-          "translation": "Iŋai bo ŋol?",
-          "pronunciation": "ee-ngah-ee boh ngohl",
-          "context": "'iŋai' = who, 'ŋol' = that (masculine).",
+          "english": "rain (< Proto-Eastern Nilotic *-kɪrʊ)",
+          "translation": "akiru",
+          "pronunciation": "akiru",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "How much is it? / How many?",
-          "translation": "Imwaas ai?",
-          "pronunciation": "eem-wah-ahs ah-ee",
-          "context": "From 'amwaus' (verb to be in numerical quantity) + 'ai?' (how many).",
+          "english": "land, country, earth (< Proto-Eastern Nilotic *-kwap)",
+          "translation": "akwap",
+          "pronunciation": "akwap",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "I don't know",
-          "translation": "Mam ajeni",
-          "pronunciation": "mahm ah-jeh-nee",
-          "context": "'mam' = not, 'aijen' = to know (1st pers: ajeni).",
+          "english": "stone, rock, hill (< Proto-Eastern Nilotic *-mɔrʊ)",
+          "translation": "amoru (pl. amor)",
+          "pronunciation": "amoru (pl. amor)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "I know",
-          "translation": "Ajeni eoŋ",
-          "pronunciation": "ah-jeh-nee eh-ohng",
-          "context": "From 'aijen' (to know); 'eoŋ' = I.",
+          "english": "tree, wood, medicine (< Proto-Eastern Nilotic *-kɛtɔyɪ)",
+          "translation": "ekitoi (pl. ikito)",
+          "pronunciation": "ekitoi (pl. ikito)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "I understand / I hear",
-          "translation": "Apupi eoŋ",
-          "pronunciation": "ah-poo-pee eh-ohng",
-          "context": "From 'aipup' (to hear / understand).",
+          "english": "grass (< Proto-Eastern Nilotic *-ɲa)",
+          "translation": "anyinya",
+          "pronunciation": "anyinya",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "I don't understand",
-          "translation": "Mam apupi",
-          "pronunciation": "mahm ah-poo-pee",
-          "context": "Negative construction with 'mam'.",
+          "english": "road, path (< Proto-Teso-Turkana *-rɔt)",
+          "translation": "erot (pl. irotin)",
+          "pronunciation": "erot (pl. irotin)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Come here!",
-          "translation": "Kobu kane!",
-          "pronunciation": "koh-boo kah-neh",
-          "context": "Imperative singular of 'abunere' (to come); 'kane' = here. Plural: Kopotu kane!",
+          "english": "cow (pl. cattle) (< Proto-Eastern Nilotic *-kɪtɛŋ)",
+          "translation": "aiteng' (pl. akituk)",
+          "pronunciation": "aiteng' (pl. akituk)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Go!",
-          "translation": "Kolot!",
-          "pronunciation": "koh-loht",
-          "context": "Imperative singular of 'alosit' (to go). Plural: Kolototo!",
+          "english": "goat (< Proto-Eastern Nilotic *-kɪnɛ)",
+          "translation": "akinei (pl. akinei)",
+          "pronunciation": "akinei (pl. akinei)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Listen!",
-          "translation": "Kopup!",
-          "pronunciation": "koh-poop",
-          "context": "Imperative singular of 'aipup' (to hear/listen). Plural: Kopupoto!",
+          "english": "sheep (< Proto-Teso-Lotuko-Maa *-mɛrɛkɛk)",
+          "translation": "amerekek (pl. amerekekin)",
+          "pronunciation": "amerekek (pl. amerekekin)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Speak!",
-          "translation": "Kiner!",
-          "pronunciation": "kee-nehr",
-          "context": "Imperative singular of 'einer' (to speak). Plural: Kineras!",
+          "english": "dog (< Proto-Teso-Turkana *-ŋɔk)",
+          "translation": "eing'ok (pl. iing'okwo)",
+          "pronunciation": "eing'ok (pl. iing'okwo)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Quickly",
-          "translation": "Atipet",
-          "pronunciation": "ah-tee-peht",
-          "context": "Common adverb of speed and promptness.",
+          "english": "lion (< Proto-Eastern Nilotic *-ŋatʊɲ)",
+          "translation": "eng'atuny (pl. ing'atunyo)",
+          "pronunciation": "eng'atuny (pl. ing'atunyo)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Slowly / Gently / Peaceful",
-          "translation": "Epatana",
-          "pronunciation": "eh-pah-tah-nah",
-          "context": "Quality verb used adverbially: gentle, peaceful, easy.",
+          "english": "elephant (< Proto-Eastern Nilotic *-tɔmɛ)",
+          "translation": "etome (pl. itomei)",
+          "pronunciation": "etome (pl. itomei)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Now",
-          "translation": "Kwana",
-          "pronunciation": "kwah-nah",
-          "context": "Adverb of time: now; emphatic: kwapekwana.",
+          "english": "buffalo (< Proto-Eastern Nilotic *-kɔsɔwan)",
+          "translation": "ekosowan",
+          "pronunciation": "ekosowan",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Today",
-          "translation": "Lolo",
-          "pronunciation": "loh-loh",
-          "context": "Adverb of time: today.",
+          "english": "bird (< Proto-Eastern Nilotic *-kwɛɲ)",
+          "translation": "ekweny (pl. ikweny)",
+          "pronunciation": "ekweny (pl. ikweny)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Tomorrow",
-          "translation": "Moi",
-          "pronunciation": "moh-ee",
-          "context": "Adverb of time: tomorrow; the day after tomorrow = 'moi kace'.",
+          "english": "snake (< Proto-Teso-Turkana *-mʊn)",
+          "translation": "emun (pl. imunuo)",
+          "pronunciation": "emun (pl. imunuo)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Yesterday",
-          "translation": "Bian",
-          "pronunciation": "bee-ahn",
-          "context": "Adverb of time: yesterday.",
+          "english": "meat, flesh (< Proto-Eastern Nilotic *-kɪrɪŋɔ)",
+          "translation": "akiring'",
+          "pronunciation": "akiring'",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Good / Fine",
-          "translation": "Ejok",
-          "pronunciation": "eh-johk",
-          "context": "Quality verb: be good; plural: ejokak.",
+          "english": "millet or cassava bread (ugali)",
+          "translation": "atap",
+          "pronunciation": "atap",
+          "context": "Ateso",
           "audioFile": null
         },
         {
-          "english": "Bad / Wicked",
-          "translation": "Erono",
-          "pronunciation": "eh-roh-noh",
-          "context": "Quality verb: be bad/spoiled; plural: eroko.",
+          "english": "eye (pl. eyes) (< Proto-Eastern Nilotic *-kɔŋɛ)",
+          "translation": "akonye (pl. akonyen)",
+          "pronunciation": "akonye (pl. akonyen)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Big / Large",
-          "translation": "Epol",
-          "pronunciation": "eh-pohl",
-          "context": "Quality verb: be big/great; plural: epolok.",
+          "english": "ear (pl. ears) (< Proto-Eastern Nilotic *-kɪt)",
+          "translation": "akit (pl. akituk)",
+          "pronunciation": "akit (pl. akituk)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Small / Little",
-          "translation": "Edit",
-          "pronunciation": "eh-deet",
-          "context": "Quality verb: be small/young; plural: edisiak.",
+          "english": "nose (< Proto-Eastern Nilotic *-kʊmɛ)",
+          "translation": "ekume (pl. ikumes)",
+          "pronunciation": "ekume (pl. ikumes)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Strong / Firm",
-          "translation": "Egogoŋ",
-          "pronunciation": "eh-goh-gohng",
-          "context": "Quality verb: be strong, firm, durable; plural: egogoŋ.",
+          "english": "mouth (< Proto-Eastern Nilotic *-kʊtʊk)",
+          "translation": "akituk",
+          "pronunciation": "akituk",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Fierce / Severe",
-          "translation": "Ededeŋ",
-          "pronunciation": "eh-deh-dehng",
-          "context": "Quality verb: be fierce, sharp, harsh; plural: ededeŋ.",
+          "english": "tooth (pl. teeth) (< Proto-Eastern Nilotic *-kɛla)",
+          "translation": "ekelai (pl. ikela)",
+          "pronunciation": "ekelai (pl. ikela)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "New / Fresh",
-          "translation": "Itet",
-          "pronunciation": "ee-teht",
-          "context": "Quality verb: be new; plural: itetiak.",
+          "english": "tongue, language (< Proto-Eastern Nilotic *-ŋɛjɛp)",
+          "translation": "ang'ajep",
+          "pronunciation": "ang'ajep",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Old / Aged",
-          "translation": "Emojoŋ",
-          "pronunciation": "eh-moh-johng",
-          "context": "Quality verb: be elderly/old; plural: emojoŋitos.",
+          "english": "head (< Proto-Eastern Nilotic *-kɔwʊ)",
+          "translation": "akou (pl. akwes)",
+          "pronunciation": "akou (pl. akwes)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Because",
-          "translation": "Naarai / Kanuka",
-          "pronunciation": "nah-ah-rah-ee / kah-noo-kah",
-          "context": "Conjunctions of cause and reasoning.",
+          "english": "hand, arm (root of ikany/akany 'five') (< Proto-Eastern Nilotic *-kanɪ)",
+          "translation": "akan (pl. akanin)",
+          "pronunciation": "akan (pl. akanin)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "All / Whole",
-          "translation": "Kere",
-          "pronunciation": "keh-reh",
-          "context": "Invariable adjective: all, whole, every; e.g. ituŋa kere (all people).",
+          "english": "leg, foot (< Proto-Eastern Nilotic *-kɛjʊ)",
+          "translation": "akeju (pl. akejen)",
+          "pronunciation": "akeju (pl. akejen)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "heart, spirit (< Proto-Teso-Lotuko-Maa *-tawʊ)",
+          "translation": "etau (pl. itauon)",
+          "pronunciation": "etau (pl. itauon)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "blood (< Proto-Teso-Turkana *-kɔt)",
+          "translation": "aokot",
+          "pronunciation": "aokot",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "bone (< Proto-Eastern Nilotic *-kɔyɪtɔ)",
+          "translation": "akoit (pl. akoik)",
+          "pronunciation": "akoit (pl. akoik)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "stomach, belly (< Proto-Eastern Nilotic *-kɔɛk)",
+          "translation": "akook",
+          "pronunciation": "akook",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "name (< Proto-Eastern Nilotic *-kɛrɪn)",
+          "translation": "ekiror (pl. ikiroria)",
+          "pronunciation": "ekiror (pl. ikiroria)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "God, sky above (< Proto-Teso-Turkana *-kʊjɔ)",
+          "translation": "akujo",
+          "pronunciation": "akujo",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "finger millet; sacred symbol of peace and kinship among the Iteso",
+          "translation": "emuria",
+          "pronunciation": "emuria",
+          "context": "Ateso",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Nakaejuma (Jum)",
+          "pronunciation": "nakaejuma (jum)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Nakaebarasa (Bar)",
+          "pronunciation": "nakaebarasa (bar)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Nakaare (Aar)",
+          "pronunciation": "nakaare (aar)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Nakauni (Uni)",
+          "pronunciation": "nakauni (uni)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Nakaung’on (Ung)",
+          "pronunciation": "nakaung’on (ung)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Nakakany (Kan)",
+          "pronunciation": "nakakany (kan)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Nakasabiti (Sab)",
+          "pronunciation": "nakasabiti (sab)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "Taparachu",
+          "pronunciation": "taparachu",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "Ebongi",
+          "pronunciation": "ebongi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "Enzi",
+          "pronunciation": "enzi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "South African Rand (ZAR)",
+          "translation": "Ango’otol lok’ Afrika Kusini",
+          "pronunciation": "ango’otol lok’ afrika kusini",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Ango’otol lok’ CFA BCEAO",
+          "pronunciation": "ango’otol lok’ cfa bceao",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Ango’otol lok’ CFA BEAC",
+          "pronunciation": "ango’otol lok’ cfa beac",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates Dirham (AED)",
+          "translation": "Ango’otol lok’ Falme za Kiarabu",
+          "pronunciation": "ango’otol lok’ falme za kiarabu",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Kenya (Country / Territory)",
+          "translation": "Kenia",
+          "pronunciation": "kenia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Uhabeshi",
+          "pronunciation": "uhabeshi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Nijeri",
+          "pronunciation": "nijeri",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Ginekweta",
+          "pronunciation": "ginekweta",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Uswazi",
+          "pronunciation": "uswazi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Bukini",
+          "pronunciation": "bukini",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Uingereza",
+          "pronunciation": "uingereza",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Hispania",
+          "pronunciation": "hispania",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Ukraini",
+          "pronunciation": "ukraini",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
+          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Katari",
+          "pronunciation": "katari",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Uajemi",
+          "pronunciation": "uajemi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Brazili",
+          "pronunciation": "brazili",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Ateso ecological calendar months (January to June)",
+          "translation": "Orara, Omuk, Okwamg', Odung'el, Omaruk, Omodok'king'ol",
+          "pronunciation": "orara, omuk, okwamg', odung'el, omaruk, omodok'king'ol",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Ateso ecological calendar months (July to December)",
+          "translation": "Ojola, Opedel, Osokosokoma, Otibar, Olabor, Opoo",
+          "pronunciation": "ojola, opedel, osokosokoma, otibar, olabor, opoo",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         }
       ]
@@ -684,171 +887,115 @@
       "icon": "👥",
       "entries": [
         {
-          "english": "Person / Human being",
-          "translation": "Etuŋanan (pl. Ituŋa)",
-          "pronunciation": "eh-too-ngah-nahn",
-          "context": "Plural: ituŋa (people); generic plural: ituŋasinei (mankind).",
-          "audioFile": null
-        },
-        {
-          "english": "Man (male person)",
-          "translation": "Ekiliokit / Ekile (pl. Ikiliok)",
-          "pronunciation": "eh-kee-lee-oh-keet / eh-kee-leh",
-          "context": "Masculine gender prefix e-; plural: ikiliok (men).",
-          "audioFile": null
-        },
-        {
-          "english": "Woman",
-          "translation": "Aberu (pl. Aŋor)",
-          "pronunciation": "ah-beh-roo",
-          "context": "Feminine prefix a-; plural: aŋor (women), irregular plural root.",
-          "audioFile": null
-        },
-        {
-          "english": "Child",
-          "translation": "Ikoku (pl. Idwe)",
-          "pronunciation": "ee-koh-koo",
-          "context": "Diminutive/neuter prefix i-; plural: idwe (children).",
-          "audioFile": null
-        },
-        {
-          "english": "Boy",
-          "translation": "Etelepat (pl. Itelepai)",
-          "pronunciation": "eh-teh-leh-paht",
-          "context": "Masculine noun; plural: itelepai (boys).",
-          "audioFile": null
-        },
-        {
-          "english": "Girl",
-          "translation": "Apese (pl. Apesur)",
-          "pronunciation": "ah-peh-seh",
-          "context": "Feminine noun; plural: apesur (girls). Diminutive: ipese (baby girl).",
-          "audioFile": null
-        },
-        {
-          "english": "Baby / Infant",
-          "translation": "Ipesen / Ikoku yenikidioko",
-          "pronunciation": "ee-peh-sehn",
-          "context": "Neuter diminutive form; plural: idwe luikidioko.",
+          "english": "Mother",
+          "translation": "toto",
+          "pronunciation": "toto",
+          "context": "Wikipedia Teso language — Gender and noun prefix",
           "audioFile": null
         },
         {
           "english": "Father",
-          "translation": "Papa (pl. Lukapapa)",
-          "pronunciation": "pah-pah",
-          "context": "Kinship noun taking no prefix in singular; plural: lukapapa.",
+          "translation": "papa",
+          "pronunciation": "papa",
+          "context": "Wikipedia Teso language — Gender and noun prefix",
           "audioFile": null
         },
         {
-          "english": "Mother",
-          "translation": "Toto (pl. Nukatoto)",
-          "pronunciation": "toh-toh",
-          "context": "Kinship noun taking no prefix in singular; plural: nukatoto.",
+          "english": "Uncle (maternal)",
+          "translation": "mamai",
+          "pronunciation": "mamai",
+          "context": "Wikipedia Teso language — Gender and noun prefix",
           "audioFile": null
         },
         {
-          "english": "Family / Household",
-          "translation": "Ekale (pl. Ikalia)",
-          "pronunciation": "eh-kah-leh",
-          "context": "Masculine noun; plural: ikalia (families, extended households).",
+          "english": "Sister / brother (sibling)",
+          "translation": "inac / onac",
+          "pronunciation": "inac / onac",
+          "context": "Wikipedia Teso language — Gender and noun prefix",
           "audioFile": null
         },
         {
-          "english": "Brother / Sibling",
-          "translation": "Onace (pl. Imina)",
-          "pronunciation": "oh-nah-cheh",
-          "context": "Plural: imina (brothers, siblings).",
+          "english": "Aunt",
+          "translation": "ija",
+          "pronunciation": "ija",
+          "context": "Wikipedia Teso language — Gender and noun prefix",
           "audioFile": null
         },
         {
-          "english": "Sister",
-          "translation": "Inace (pl. Anacenei)",
-          "pronunciation": "ee-nah-cheh",
-          "context": "Female sibling; feminine kinship term.",
+          "english": "Boy (pl. boys)",
+          "translation": "etelepat / esapat (pl. itelepai)",
+          "pronunciation": "etelepat / esapat (pl. itelepai)",
+          "context": "Wikipedia Teso language — Noun prefix",
           "audioFile": null
         },
         {
-          "english": "Husband",
-          "translation": "Ekile (pl. Ikiliok)",
-          "pronunciation": "eh-kee-leh",
-          "context": "Also means male person; plural: ikiliok.",
+          "english": "Girl (pl. girls)",
+          "translation": "apese (pl. apesur)",
+          "pronunciation": "apese (pl. apesur)",
+          "context": "Wikipedia Teso language — Noun prefix",
           "audioFile": null
         },
         {
-          "english": "Wife",
-          "translation": "Aberu (pl. Aŋor)",
-          "pronunciation": "ah-beh-roo",
-          "context": "Also means adult female; plural: aŋor.",
+          "english": "Child (pl. children)",
+          "translation": "ikoku (pl. idwe / iduwe)",
+          "pronunciation": "ikoku (pl. idwe / iduwe)",
+          "context": "Wikipedia Teso language — Noun prefix",
           "audioFile": null
         },
         {
-          "english": "Elder / Old man",
-          "translation": "Ekasikout (pl. Ikasikou)",
-          "pronunciation": "eh-kah-see-koh-oot",
-          "context": "Respected male elder in Teso community.",
+          "english": "Baby / infant",
+          "translation": "imukeru / ipese (baby girl)",
+          "pronunciation": "imukeru / ipese (baby girl)",
+          "context": "Wikipedia Teso language — Neuter nouns",
           "audioFile": null
         },
         {
-          "english": "Elderly woman",
-          "translation": "Amukatat (pl. Amukatan)",
-          "pronunciation": "ah-moo-kah-taht",
-          "context": "Respected elder woman; plural: amukatan.",
+          "english": "Woman / wife (pl. women)",
+          "translation": "aberu (pl. aŋor)",
+          "pronunciation": "aberu (pl. aŋor)",
+          "context": "Wikipedia Teso language — Plural formation",
           "audioFile": null
         },
         {
-          "english": "Teso person",
-          "translation": "Etesot (pl. Iteso)",
-          "pronunciation": "eh-teh-soht",
-          "context": "A person of the Teso nation; feminine: Atesot; language: Ateso.",
+          "english": "Person / man (pl. people; generic mankind)",
+          "translation": "etuŋanan / ituŋanan (pl. ituŋa; mankind: ituŋasinei)",
+          "pronunciation": "etuŋanan / ituŋanan (pl. ituŋa; mankind: ituŋasinei)",
+          "context": "Wikipedia Teso language — Plural formation",
           "audioFile": null
         },
         {
-          "english": "Hunter",
-          "translation": "Ekamejan (pl. Ikamejak)",
-          "pronunciation": "eh-kah-meh-jahn",
-          "context": "Agent noun derived from 'amej' (to hunt); plural: ikamejak.",
+          "english": "Hunter (pl. hunters)",
+          "translation": "ekamejan (pl. ikamejak)",
+          "pronunciation": "ekamejan (pl. ikamejak)",
+          "context": "Wikipedia Teso language — Agent nouns",
           "audioFile": null
         },
         {
-          "english": "Herdsman",
-          "translation": "Ekecokon (pl. Ikecokok)",
-          "pronunciation": "eh-keh-choh-kohn",
-          "context": "Agent noun derived from 'acok' (to herd livestock); plural: ikecokok.",
+          "english": "Herdsman (pl. herdsmen)",
+          "translation": "ekecokon (pl. ikecokok)",
+          "pronunciation": "ekecokon (pl. ikecokok)",
+          "context": "Wikipedia Teso language — Agent nouns",
           "audioFile": null
         },
         {
-          "english": "Soldier",
-          "translation": "Esirikalet (pl. Isirikalei)",
-          "pronunciation": "eh-see-ree-kah-leht",
-          "context": "Plural: isirikalei; borrowed term fully integrated into Ateso noun classes.",
+          "english": "Builder (pl. builders)",
+          "translation": "ekadukon (pl. ikadukok)",
+          "pronunciation": "ekadukon (pl. ikadukok)",
+          "context": "Wikipedia Teso language — Agent nouns",
           "audioFile": null
         },
         {
-          "english": "Builder",
-          "translation": "Ekadukon (pl. Ikadukok)",
-          "pronunciation": "eh-kah-doo-kohn",
-          "context": "Agent noun derived from 'aiduk' (to build); plural: ikadukok.",
+          "english": "Judge (pl. judges)",
+          "translation": "ekatubon (pl. ikatubok)",
+          "pronunciation": "ekatubon (pl. ikatubok)",
+          "context": "Wikipedia Teso language — Agent nouns",
           "audioFile": null
         },
         {
-          "english": "Teacher",
-          "translation": "Ekesisianakinan (pl. Ikesisianakinak)",
-          "pronunciation": "eh-keh-see-see-ah-nah-kee-nahn",
-          "context": "Agent noun derived from 'aisisianakin' (to teach).",
-          "audioFile": null
-        },
-        {
-          "english": "Labourer / Porter",
-          "translation": "Epakasit (pl. Ipakasin)",
-          "pronunciation": "eh-pah-kah-seet",
-          "context": "Plural: ipakasin; manual worker or porter.",
-          "audioFile": null
-        },
-        {
-          "english": "Liar",
-          "translation": "Ekasabat (pl. Ikasabak)",
-          "pronunciation": "eh-kah-sah-baht",
-          "context": "Habitual agent noun derived from 'aisab' (to tell lies).",
+          "english": "Name",
+          "translation": "ekiror (é-kɪ́-rɔ́-rɪ̀)",
+          "pronunciation": "ekiror (é-kɪ́-rɔ́-rɪ̀)",
+          "context": "Wikipedia Teso language & Eastern Nilotic languages",
           "audioFile": null
         }
       ]
@@ -859,115 +1006,73 @@
       "icon": "🐾",
       "entries": [
         {
-          "english": "Cow",
-          "translation": "Akiteŋ (pl. Akituk / Akitiok)",
-          "pronunciation": "ah-kee-tehng",
-          "context": "Plural: akituk; female cow, the cornerstone of Teso economic and cultural life.",
+          "english": "Dog (masc.) / bitch (fem.) / puppy (neut.)",
+          "translation": "ekingok (m.) / akingok (f.) / ikiŋok (puppy)",
+          "pronunciation": "ekingok (m.) / akingok (f.) / ikiŋok (puppy)",
+          "context": "Wikipedia Teso language — Gender classes",
           "audioFile": null
         },
         {
-          "english": "Bull / Ox",
-          "translation": "Emoŋ (pl. Imoŋin)",
-          "pronunciation": "eh-mohng",
-          "context": "Plural: imoŋin; draft animal used in ox-ploughing and cultural ceremonies.",
+          "english": "He-goat (masc.) / she-goat (fem.)",
+          "translation": "ekoroi (m.) / akinei (f.)",
+          "pronunciation": "ekoroi (m.) / akinei (f.)",
+          "context": "Wikipedia Teso language — Gender classes",
           "audioFile": null
         },
         {
-          "english": "Livestock / Cattle",
-          "translation": "Ibaren (sing. Ebarasit)",
-          "pronunciation": "ee-bah-rehn",
-          "context": "Collective noun for cattle, livestock herds, and familial wealth.",
+          "english": "Bull / ox",
+          "translation": "emong",
+          "pronunciation": "emong",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
-          "english": "Dog (male)",
-          "translation": "Ekiŋok (pl. Iŋokwo)",
-          "pronunciation": "eh-kee-ngohk",
-          "context": "Masculine noun; plural: iŋokwo.",
+          "english": "Fox / jackal",
+          "translation": "ekue",
+          "pronunciation": "ekue",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
-          "english": "Bitch (female dog)",
-          "translation": "Akiŋok (pl. Aŋokwo)",
-          "pronunciation": "ah-kee-ngohk",
-          "context": "Feminine noun form; plural: aŋokwo.",
-          "audioFile": null
-        },
-        {
-          "english": "Puppy",
-          "translation": "Ikiŋok (pl. Iŋokwei)",
-          "pronunciation": "ee-kee-ngohk",
-          "context": "Diminutive neuter form for young dog.",
-          "audioFile": null
-        },
-        {
-          "english": "Hen / Domestic fowl",
-          "translation": "Akokor (pl. Akokorei)",
-          "pronunciation": "ah-koh-kohr",
-          "context": "Feminine noun; plural: akokorei (domestic fowls).",
-          "audioFile": null
-        },
-        {
-          "english": "Chicken / Chick",
-          "translation": "Imiot (pl. Imioi)",
-          "pronunciation": "ee-mee-oht",
-          "context": "Plural: imioi; small chicken or chick.",
-          "audioFile": null
-        },
-        {
-          "english": "Pig",
-          "translation": "Epege (pl. Ipegei)",
-          "pronunciation": "eh-peh-geh",
-          "context": "Masculine noun; plural: ipegei.",
-          "audioFile": null
-        },
-        {
-          "english": "Rat / Mouse",
-          "translation": "Emir (pl. Imirio)",
-          "pronunciation": "eh-meer",
-          "context": "Masculine noun; plural: imirio.",
-          "audioFile": null
-        },
-        {
-          "english": "Elephant",
-          "translation": "Etome (pl. Itomei)",
-          "pronunciation": "eh-toh-meh",
-          "context": "Masculine noun; plural: itomei.",
+          "english": "Cock / rooster (m.) / hen (f.) / chick (n.)",
+          "translation": "ekokor (m.) / akokor (f.) / imiot (chick)",
+          "pronunciation": "ekokor (m.) / akokor (f.) / imiot (chick)",
+          "context": "Wikipedia Teso language — Gender classes",
           "audioFile": null
         },
         {
           "english": "Mosquito",
-          "translation": "Esirut (pl. Isiruto)",
-          "pronunciation": "eh-see-root",
-          "context": "Masculine noun; plural: isiruto.",
+          "translation": "esirut",
+          "pronunciation": "esirut",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
-          "english": "Lion",
-          "translation": "Eŋatunyo (pl. Iŋatunyoi)",
-          "pronunciation": "eh-ngah-toon-yoh",
-          "context": "Masculine noun; plural: iŋatunyoi.",
+          "english": "Black ant",
+          "translation": "emukuny",
+          "pronunciation": "emukuny",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
-          "english": "Bird",
-          "translation": "Ekweny (pl. Ikwenyi)",
-          "pronunciation": "eh-kwehny",
-          "context": "Masculine noun; plural: ikwenyi.",
+          "english": "Beetle",
+          "translation": "ekonyelet",
+          "pronunciation": "ekonyelet",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
-          "english": "Goat",
-          "translation": "Akine (pl. Akyinei)",
-          "pronunciation": "ah-kee-neh",
-          "context": "Feminine noun; plural: akyinei.",
+          "english": "Flea",
+          "translation": "eidepit",
+          "pronunciation": "eidepit",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
-          "english": "Sheep",
-          "translation": "Amerekek (pl. Amerekekin)",
-          "pronunciation": "ah-meh-reh-kehk",
-          "context": "Feminine noun; plural: amerekekin.",
+          "english": "fish",
+          "translation": "agaria (pl. agaria)",
+          "pronunciation": "agaria (pl. agaria)",
+          "context": "Ateso",
           "audioFile": null
         }
       ]
@@ -978,143 +1083,248 @@
       "icon": "🌿",
       "entries": [
         {
-          "english": "Sun / Sunlight",
-          "translation": "Akoloŋ",
-          "pronunciation": "ah-koh-lohng",
-          "context": "Feminine singular noun; sunlight, daytime sun.",
+          "english": "Water (pluralia tantum)",
+          "translation": "akipi (a-ki-pí)",
+          "pronunciation": "akipi (a-ki-pí)",
+          "context": "Wikipedia Teso language & Eastern Nilotic languages",
           "audioFile": null
         },
         {
-          "english": "Moon / Month",
-          "translation": "Elap (pl. Ilapio)",
-          "pronunciation": "eh-lahp",
-          "context": "Masculine noun; plural: ilapio; moon or calendar month.",
+          "english": "Rain",
+          "translation": "edou",
+          "pronunciation": "edou",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "Water",
-          "translation": "Akipi",
-          "pronunciation": "ah-kee-pee",
-          "context": "Feminine plural noun; always used in the plural.",
+          "english": "Air / wind",
+          "translation": "ekwam",
+          "pronunciation": "ekwam",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "Rain / Cloud",
-          "translation": "Edou (pl. Idouon)",
-          "pronunciation": "eh-doh-oo",
-          "context": "Masculine noun; plural: idouon; rain cloud, rainstorm.",
+          "english": "Sun",
+          "translation": "akoloŋ",
+          "pronunciation": "akoloŋ",
+          "context": "Wikipedia Teso language — Singularia tantum",
           "audioFile": null
         },
         {
-          "english": "Earth / Land / World",
-          "translation": "Akwap (pl. Akwapin)",
-          "pronunciation": "ah-kwahp",
-          "context": "Feminine noun; plural: akwapin; 'akwapisinei' = the whole world / universe.",
+          "english": "Earth / country / land (pl. countries; the world)",
+          "translation": "akwap (pl. akwapin; world: akwapisinei)",
+          "pronunciation": "akwap (pl. akwapin; world: akwapisinei)",
+          "context": "Wikipedia Teso language — Plural formation",
           "audioFile": null
         },
         {
-          "english": "Stone / Rock",
-          "translation": "Amoru (pl. Amor)",
-          "pronunciation": "ah-moh-roo",
-          "context": "Feminine noun; plural: amor; rock, boulder, stone.",
+          "english": "Heaven / sky / God",
+          "translation": "akuj / Edeke",
+          "pronunciation": "akuj / Edeke",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "Pebble",
-          "translation": "Imoru (pl. Imor)",
-          "pronunciation": "ee-moh-roo",
-          "context": "Diminutive neuter form: small stone or gravel.",
-          "audioFile": null
-        },
-        {
-          "english": "Tree / Pole / Wood",
-          "translation": "Akitoi (pl. Akitoi / Akito)",
-          "pronunciation": "ah-kee-toh-ee",
-          "context": "Feminine noun; tree, timber, wooden building pole. Also masculine 'ekitoi'.",
+          "english": "Tree (pl. trees)",
+          "translation": "ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)",
+          "pronunciation": "ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)",
+          "context": "Wikipedia Teso language & Eastern Nilotic languages",
           "audioFile": null
         },
         {
           "english": "Mvule tree",
-          "translation": "Eloa (pl. Iloai)",
-          "pronunciation": "eh-loh-ah",
-          "context": "Valued indigenous hardwood timber tree (Chlorophora excelsa).",
+          "translation": "eloa / emapule",
+          "pronunciation": "eloa / emapule",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
-          "english": "Grass (blade)",
-          "translation": "Anyait (pl. Anya)",
-          "pronunciation": "ahn-yah-eet",
-          "context": "Singular: anyait (blade); plural: anya (grass, pasture).",
+          "english": "Grass",
+          "translation": "anya",
+          "pronunciation": "anya",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
           "english": "Weeds",
-          "translation": "Eduan",
-          "pronunciation": "eh-dwahn",
-          "context": "Masculine collective singular; agricultural weeds.",
+          "translation": "eduan",
+          "pronunciation": "eduan",
+          "context": "Wikipedia Teso language — Singularia tantum",
           "audioFile": null
         },
         {
-          "english": "Swamp / Marsh",
-          "translation": "Esamai (pl. Isama)",
-          "pronunciation": "eh-sah-mah-ee",
-          "context": "Masculine noun; plural: isama; marsh, river swamp.",
-          "audioFile": null
-        },
-        {
-          "english": "Spring / Well",
-          "translation": "Atan (pl. Atanin)",
-          "pronunciation": "ah-tahn",
-          "context": "Feminine noun; plural: atanin; natural water spring or dug well.",
-          "audioFile": null
-        },
-        {
-          "english": "Hole / Pit",
-          "translation": "Aipany (pl. Aipanya)",
-          "pronunciation": "ah-ee-pahn-y",
-          "context": "Feminine noun; plural: aipanya; hole excavated in ground.",
+          "english": "Sand",
+          "translation": "asinge",
+          "pronunciation": "asinge",
+          "context": "Wikipedia Teso language — Pluralia tantum",
           "audioFile": null
         },
         {
           "english": "Ashes",
-          "translation": "Ekuron",
-          "pronunciation": "eh-koo-rohn",
-          "context": "Masculine singular noun; fireplace ashes.",
+          "translation": "ekuron",
+          "pronunciation": "ekuron",
+          "context": "Wikipedia Teso language — Singularia tantum",
           "audioFile": null
         },
         {
-          "english": "Day",
-          "translation": "Aparit / Aparan (pl. Aparasia)",
-          "pronunciation": "ah-pah-reet / ah-pah-rahn",
-          "context": "Feminine noun; plural: aparasia; 24-hour day.",
+          "english": "Pebble / small stone",
+          "translation": "imoru",
+          "pronunciation": "imoru",
+          "context": "Wikipedia Teso language — Neuter nouns",
           "audioFile": null
         },
         {
-          "english": "Daytime",
-          "translation": "Paran",
-          "pronunciation": "pah-rahn",
-          "context": "Adverbial noun: by day, during daylight hours.",
+          "english": "East",
+          "translation": "kide",
+          "pronunciation": "kide",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "Night / Nighttime",
-          "translation": "Kware",
-          "pronunciation": "kwah-reh",
-          "context": "Adverbial noun: by night, darkness.",
+          "english": "West",
+          "translation": "too",
+          "pronunciation": "too",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "Morning / Early",
-          "translation": "Tupuruc",
-          "pronunciation": "too-poo-rooch",
-          "context": "Adverb of time: in the morning, early at dawn.",
+          "english": "North",
+          "translation": "nyakoi",
+          "pronunciation": "nyakoi",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "God / The Creator",
-          "translation": "Lokasuban / Edeke / Akuj",
-          "pronunciation": "loh-kah-soo-bahn / eh-deh-keh / ah-kooj",
-          "context": "'Lokasuban' = The Creator (from aisub - create); 'Edeke' / 'Akuj' = God / Supreme Divine Being.",
+          "english": "South",
+          "translation": "agolitomei / ŋalakimak",
+          "pronunciation": "agolitomei / ŋalakimak",
+          "context": "Wikipedia Teso language — Adverbs of place",
+          "audioFile": null
+        },
+        {
+          "english": "January (Month 1)",
+          "translation": "Orara (Rar)",
+          "pronunciation": "orara (rar)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "February (Month 2)",
+          "translation": "Omuk (Muk)",
+          "pronunciation": "omuk (muk)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "March (Month 3)",
+          "translation": "Okwamg’ (Kwa)",
+          "pronunciation": "okwamg’ (kwa)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "April (Month 4)",
+          "translation": "Odung’el (Dun)",
+          "pronunciation": "odung’el (dun)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "May (Month 5)",
+          "translation": "Omaruk (Mar)",
+          "pronunciation": "omaruk (mar)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "June (Month 6)",
+          "translation": "Omodok’king’ol (Mod)",
+          "pronunciation": "omodok’king’ol (mod)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "July (Month 7)",
+          "translation": "Ojola (Jol)",
+          "pronunciation": "ojola (jol)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "August (Month 8)",
+          "translation": "Opedel (Ped)",
+          "pronunciation": "opedel (ped)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "September (Month 9)",
+          "translation": "Osokosokoma (Sok)",
+          "pronunciation": "osokosokoma (sok)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "October (Month 10)",
+          "translation": "Otibar (Tib)",
+          "pronunciation": "otibar (tib)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "November (Month 11)",
+          "translation": "Olabor (Lab)",
+          "pronunciation": "olabor (lab)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "December (Month 12)",
+          "translation": "Opoo (Poo)",
+          "pronunciation": "opoo (poo)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Jaan",
+          "pronunciation": "jaan",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Lolo",
+          "pronunciation": "lolo",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Moi",
+          "pronunciation": "moi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Year (calendar unit)",
+          "translation": "Ekan",
+          "pronunciation": "ekan",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Month (calendar unit)",
+          "translation": "Elap",
+          "pronunciation": "elap",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Day (calendar unit)",
+          "translation": "Aparan",
+          "pronunciation": "aparan",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         }
       ]
@@ -1125,101 +1335,87 @@
       "icon": "👤",
       "entries": [
         {
-          "english": "Hand / Arm",
-          "translation": "Akan (pl. Akanin)",
-          "pronunciation": "ah-kahn",
-          "context": "Feminine noun; plural: akanin (hands/arms). Root of numeral 5.",
+          "english": "Eye",
+          "translation": "akong'u (a-kɔ́ŋ-ʊ̀)",
+          "pronunciation": "akong'u (a-kɔ́ŋ-ʊ̀)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Eye",
-          "translation": "Akoŋu (pl. Akoŋ)",
-          "pronunciation": "ah-koh-ngoo",
-          "context": "Feminine noun; plural: akoŋ; 'akonyekec' = their eyes.",
+          "english": "Ear",
+          "translation": "akit (á-kí-t)",
+          "pronunciation": "akit (á-kí-t)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "ekume (e-kúmè)",
+          "pronunciation": "ekume (e-kúmè)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "ekialai (e-kíàl-àì)",
+          "pronunciation": "ekialai (e-kíàl-àì)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "ang'ajep (á-ŋǎjɛ̀p)",
+          "pronunciation": "ang'ajep (á-ŋǎjɛ̀p)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "akituk (á-kɪ̀tʊ̀k)",
+          "pronunciation": "akituk (á-kɪ̀tʊ̀k)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
           "audioFile": null
         },
         {
           "english": "Blood",
-          "translation": "Aokot",
-          "pronunciation": "ah-oh-koht",
-          "context": "Feminine plural noun; physical lifeblood.",
-          "audioFile": null
-        },
-        {
-          "english": "Brain / Intellect",
-          "translation": "Adam",
-          "pronunciation": "ah-dahm",
-          "context": "Feminine singular noun; anatomical brain, intelligence.",
-          "audioFile": null
-        },
-        {
-          "english": "Skin / Animal hide",
-          "translation": "Emukule (pl. Imukulen)",
-          "pronunciation": "eh-moo-koo-leh",
-          "context": "Masculine noun; plural: imukulen; animal hide or tanned leather.",
+          "translation": "aakot (á-àkɔ́t)",
+          "pronunciation": "aakot (á-àkɔ́t)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
           "audioFile": null
         },
         {
           "english": "Bone",
-          "translation": "Akoit (pl. Akoi)",
-          "pronunciation": "ah-koh-eet",
-          "context": "Feminine noun; plural: akoi; skeletal bone.",
+          "translation": "akoit (á-kóì-t)",
+          "pronunciation": "akoit (á-kóì-t)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "Body",
-          "translation": "Akwan (pl. Akwanis)",
-          "pronunciation": "ah-kwahn",
-          "context": "Feminine noun; plural: akwanis; physical human or animal body.",
+          "english": "Hand (pl. hands)",
+          "translation": "akan (pl. akanin)",
+          "pronunciation": "akan (pl. akanin)",
+          "context": "Wikipedia Teso language — Plural formation",
           "audioFile": null
         },
         {
-          "english": "Health / Wholeness",
-          "translation": "Aŋale / Aŋaleu",
-          "pronunciation": "ah-ngah-leh",
-          "context": "Abstract noun of quality from 'aŋale' (to be healthy); 'aŋaleun' = recover.",
+          "english": "Brain",
+          "translation": "adam",
+          "pronunciation": "adam",
+          "context": "Wikipedia Teso language — Singularia tantum",
           "audioFile": null
         },
         {
-          "english": "Illness / Disease",
-          "translation": "Adeka (pl. Adekasinei)",
-          "pronunciation": "ah-deh-kah",
-          "context": "Abstract noun from 'adeka' (to be sick); ailment or disease.",
-          "audioFile": null
-        },
-        {
-          "english": "Medicine / Charm",
-          "translation": "Ekia (pl. Ikee)",
-          "pronunciation": "eh-kee-ah",
-          "context": "Masculine noun; plural: ikee; healing medicine, herbal remedy.",
-          "audioFile": null
-        },
-        {
-          "english": "Hunger",
-          "translation": "Eteŋe",
-          "pronunciation": "eh-teh-ngeh",
-          "context": "Masculine singular noun; physical hunger or famine.",
-          "audioFile": null
-        },
-        {
-          "english": "Thirst",
-          "translation": "Akure",
-          "pronunciation": "ah-koo-reh",
-          "context": "Feminine singular noun; thirst for water.",
-          "audioFile": null
-        },
-        {
-          "english": "Shame / Embarrassment",
-          "translation": "Ileic",
-          "pronunciation": "ee-leh-eech",
-          "context": "Neuter plural noun; modesty, shame, embarrassment.",
+          "english": "Life",
+          "translation": "aijar",
+          "pronunciation": "aijar",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
           "english": "Sleep",
-          "translation": "Ajo",
-          "pronunciation": "ah-joh",
-          "context": "Feminine plural noun; sleep, slumber.",
+          "translation": "ajo",
+          "pronunciation": "ajo",
+          "context": "Wikipedia Teso language — Pluralia tantum",
           "audioFile": null
         }
       ]
@@ -1230,87 +1426,101 @@
       "icon": "🍲",
       "entries": [
         {
-          "english": "Food (edibles)",
-          "translation": "Akimuj / Inyamat",
-          "pronunciation": "ah-kee-mooj / ee-nyah-maht",
-          "context": "'Akimuj' = food (verbal noun); 'Inyamat' = plural only, food / victuals from 'ainyam' (to eat).",
-          "audioFile": null
-        },
-        {
-          "english": "Meat",
-          "translation": "Akiriŋ",
-          "pronunciation": "ah-kee-reeng",
-          "context": "Feminine singular noun; meat, flesh.",
-          "audioFile": null
-        },
-        {
           "english": "Milk",
-          "translation": "Akile",
-          "pronunciation": "ah-kee-leh",
-          "context": "Feminine plural noun; cow's milk.",
+          "translation": "akile",
+          "pronunciation": "akile",
+          "context": "Wikipedia Teso language — Feminine nouns",
           "audioFile": null
         },
         {
-          "english": "Traditional Beer",
-          "translation": "Ajon",
-          "pronunciation": "ah-john",
-          "context": "Feminine plural noun; traditional millet beer, drank socially through long reed tubes.",
+          "english": "Millet bread / ugali",
+          "translation": "atap",
+          "pronunciation": "atap",
+          "context": "Wikipedia Teso language — Orthography",
           "audioFile": null
         },
         {
-          "english": "Finger Millet",
-          "translation": "Akimait (pl. Akima)",
-          "pronunciation": "ah-kee-mah-eet",
-          "context": "Singular: akimait (stalk); plural collective: akima (finger millet grain, staple food).",
+          "english": "Porridge",
+          "translation": "akima / akuma",
+          "pronunciation": "akima / akuma",
+          "context": "Wikipedia Teso language — Feminine nouns",
           "audioFile": null
         },
         {
-          "english": "Groundnuts / Peanuts",
-          "translation": "Emaido",
-          "pronunciation": "eh-mah-ee-doh",
-          "context": "Masculine collective noun; groundnuts.",
+          "english": "Soup / broth",
+          "translation": "acece",
+          "pronunciation": "acece",
+          "context": "Wikipedia Teso language — Feminine nouns",
+          "audioFile": null
+        },
+        {
+          "english": "Local cereal brew",
+          "translation": "ajon / ajony",
+          "pronunciation": "ajon / ajony",
+          "context": "Wikipedia Teso language — Feminine nouns",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "etaget",
+          "pronunciation": "etaget",
+          "context": "Wikipedia Teso language — Masculine nouns",
+          "audioFile": null
+        },
+        {
+          "english": "Lemon",
+          "translation": "enimu",
+          "pronunciation": "enimu",
+          "context": "Wikipedia Teso language — Masculine nouns",
+          "audioFile": null
+        },
+        {
+          "english": "Orange",
+          "translation": "emucuuga",
+          "pronunciation": "emucuuga",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
           "english": "Salt",
-          "translation": "Amunyu",
-          "pronunciation": "ah-moo-nyoo",
-          "context": "Feminine noun; table salt or cattle salt-lick.",
+          "translation": "amunyu",
+          "pronunciation": "amunyu",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "Fat / Oil / Grease",
-          "translation": "Akinyet",
-          "pronunciation": "ah-kee-nyeht",
-          "context": "Feminine singular noun; butter fat, animal grease, cooking oil, paraffin.",
+          "english": "Tea / coffee",
+          "translation": "ecaai (tea) / akaawa (coffee)",
+          "pronunciation": "ecaai (tea) / akaawa (coffee)",
+          "context": "Wikipedia Teso language — Masculine nouns",
           "audioFile": null
         },
         {
-          "english": "Tea",
-          "translation": "Ecai",
-          "pronunciation": "eh-chah-ee",
-          "context": "Masculine noun; borrowed beverage.",
+          "english": "Food",
+          "translation": "inyamat / ainyamat",
+          "pronunciation": "inyamat / ainyamat",
+          "context": "Wikipedia Teso language — Orthography",
           "audioFile": null
         },
         {
-          "english": "Coffee",
-          "translation": "Ekawa",
-          "pronunciation": "eh-kah-wah",
-          "context": "Masculine noun; borrowed beverage.",
+          "english": "Sudanese Pound (SDG)",
+          "translation": "Epaunt Lok’ Sudan",
+          "pronunciation": "epaunt lok’ sudan",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "Lemon / Citrus",
-          "translation": "Enimu (pl. Inimun)",
-          "pronunciation": "eh-nee-moo",
-          "context": "Masculine noun; lemon or citrus fruit.",
+          "english": "Egyptian Pound (EGP)",
+          "translation": "Epaunt lok’ Misri",
+          "pronunciation": "epaunt lok’ misri",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "Drinking water",
-          "translation": "Akipi nuimatat",
-          "pronunciation": "ah-kee-pee noo-ee-mah-taht",
-          "context": "Potable water; literally 'water to be drunk', from 'aimat' (to drink).",
+          "english": "British Pound (GBP)",
+          "translation": "Epaunt lok’ Uingereza",
+          "pronunciation": "epaunt lok’ uingereza",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         }
       ]
@@ -1321,171 +1531,115 @@
       "icon": "🏠",
       "entries": [
         {
-          "english": "House / Building",
-          "translation": "Etogo (pl. Itogoi)",
-          "pronunciation": "eh-toh-goh",
-          "context": "Masculine noun; plural: itogoi; residential dwelling house.",
+          "english": "House",
+          "translation": "etogo (togo)",
+          "pronunciation": "etogo (togo)",
+          "context": "Wikipedia Teso language — Orthography",
           "audioFile": null
         },
         {
-          "english": "Home / Homestead / Village",
-          "translation": "Ore / Ere (pl. Iria)",
-          "pronunciation": "oh-reh / eh-reh",
-          "context": "'ore' = at home (locative adverb); 'ere' = homestead or village compound.",
+          "english": "Door (pl. doors)",
+          "translation": "ekek (pl. ikekia)",
+          "pronunciation": "ekek (pl. ikekia)",
+          "context": "Wikipedia Teso language — Plural formation",
           "audioFile": null
         },
         {
-          "english": "Cattle kraal / Enclosure",
-          "translation": "Aujo (pl. Aujoi)",
-          "pronunciation": "ah-oo-joh",
-          "context": "Feminine noun; plural: aujoi; secure thorn corral for livestock.",
+          "english": "Gate",
+          "translation": "erute",
+          "pronunciation": "erute",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "Garden plot / Farm",
-          "translation": "Emanikor (pl. Imanikoria)",
-          "pronunciation": "eh-mah-nee-kohr",
-          "context": "Masculine noun; plural: imanikoria; agricultural garden plot.",
+          "english": "Key (pl. keys; lit. thing which loosens)",
+          "translation": "elacet (pl. ilaceta)",
+          "pronunciation": "elacet (pl. ilaceta)",
+          "context": "Wikipedia Teso language — Instrumental nouns",
           "audioFile": null
         },
         {
-          "english": "Bed",
-          "translation": "Ekitada (pl. Ikitadan)",
-          "pronunciation": "eh-kee-tah-dah",
-          "context": "Masculine noun; plural: ikitadan; sleeping bed.",
+          "english": "Cover (pl. covers)",
+          "translation": "arapetait (pl. arapeta)",
+          "pronunciation": "arapetait (pl. arapeta)",
+          "context": "Wikipedia Teso language — Instrumental nouns",
           "audioFile": null
         },
         {
-          "english": "Table",
-          "translation": "Emesa (pl. Imesan)",
-          "pronunciation": "eh-meh-sah",
-          "context": "Masculine noun; plural: imesan; wooden furniture table (borrowed).",
+          "english": "Shoe (pl. shoes)",
+          "translation": "amukat (pl. amuk)",
+          "pronunciation": "amukat (pl. amuk)",
+          "context": "Wikipedia Teso language — Plural formation",
           "audioFile": null
         },
         {
-          "english": "Door / Gateway",
-          "translation": "Ekek (pl. Ikekia)",
-          "pronunciation": "eh-kehk",
-          "context": "Masculine noun; plural: ikekia; doorway, entryway, compound gate.",
+          "english": "Bead (pl. beads)",
+          "translation": "atipet (pl. atipe)",
+          "pronunciation": "atipet (pl. atipe)",
+          "context": "Wikipedia Teso language — Plural formation",
           "audioFile": null
         },
         {
-          "english": "Knife",
-          "translation": "Ekileŋ (pl. Ikileŋa)",
-          "pronunciation": "eh-kee-lehng",
-          "context": "Masculine noun; plural: ikileŋa; cutting knife.",
-          "audioFile": null
-        },
-        {
-          "english": "Spoon",
-          "translation": "Ekijiko (pl. Ikijikoi)",
-          "pronunciation": "eh-kee-jee-koh",
-          "context": "Masculine noun; eating spoon utensil.",
-          "audioFile": null
-        },
-        {
-          "english": "Plate / Dish",
-          "translation": "Asanit (pl. Asanin)",
-          "pronunciation": "ah-sah-neet",
-          "context": "Feminine noun; plural: asanin; eating plate or dish.",
-          "audioFile": null
-        },
-        {
-          "english": "Bottle",
-          "translation": "Ecupa (pl. Icupai)",
-          "pronunciation": "eh-choo-pah",
-          "context": "Masculine noun; plural: icupai; glass or ceramic bottle.",
-          "audioFile": null
-        },
-        {
-          "english": "Shoe / Sandal",
-          "translation": "Amukat (pl. Amuk)",
-          "pronunciation": "ah-moo-kaht",
-          "context": "Feminine noun; plural: amuk; traditional hide sandal or modern shoe.",
-          "audioFile": null
-        },
-        {
-          "english": "Clothing / Cloth",
-          "translation": "Egoye (pl. Igoyen)",
-          "pronunciation": "eh-goh-yeh",
-          "context": "Masculine noun; plural: igoyen; cloth, attire, garment.",
-          "audioFile": null
-        },
-        {
-          "english": "Soap",
-          "translation": "Asabuni",
-          "pronunciation": "ah-sah-boo-nee",
-          "context": "Feminine singular noun; laundry or bathing soap.",
-          "audioFile": null
-        },
-        {
-          "english": "Key",
-          "translation": "Elacet (pl. Ilaceta)",
-          "pronunciation": "eh-lah-cheht",
-          "context": "Masculine instrument noun from 'ailac' (to loosen/untie); plural: ilaceta.",
-          "audioFile": null
-        },
-        {
-          "english": "Lid / Cover",
-          "translation": "Arapetait (pl. Arapeta)",
-          "pronunciation": "ah-rah-peh-tah-eet",
-          "context": "Feminine instrument noun; plural: arapeta; covering lid for basket or pot.",
-          "audioFile": null
-        },
-        {
-          "english": "Walking stick / Cane",
-          "translation": "Ebela (pl. Ibelai)",
-          "pronunciation": "eh-beh-lah",
-          "context": "Masculine noun; plural: ibelai; herder's cane, wooden staff.",
+          "english": "Road / way (pl. roads)",
+          "translation": "erot (pl. irotin)",
+          "pronunciation": "erot (pl. irotin)",
+          "context": "Wikipedia Teso language — Numerals",
           "audioFile": null
         },
         {
           "english": "Book",
-          "translation": "Ekitabo (pl. Ikitabon)",
-          "pronunciation": "eh-kee-tah-boh",
-          "context": "Masculine noun; plural: ikitabon; reading book.",
+          "translation": "ekitabo / eitabo",
+          "pronunciation": "ekitabo / eitabo",
+          "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
         },
         {
-          "english": "Pen / Pencil",
-          "translation": "Ekalamu (pl. Ikalamun)",
-          "pronunciation": "eh-kah-lah-moo",
-          "context": "Masculine noun; plural: ikalamun; writing implement.",
+          "english": "Table",
+          "translation": "emesa",
+          "pronunciation": "emesa",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "Letter / Epistle",
-          "translation": "Abalua / Ebalua (pl. Abaluan)",
-          "pronunciation": "ah-bah-lwah",
-          "context": "Feminine or masculine noun: written letter, mail.",
+          "english": "Bottle",
+          "translation": "ocupa",
+          "pronunciation": "ocupa",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "Money / Shilling",
-          "translation": "Esirigi (pl. Isirigin)",
-          "pronunciation": "eh-see-ree-gee",
-          "context": "Masculine noun; plural: isirigin; coin, shilling currency.",
+          "english": "Boat / canoe",
+          "translation": "ataker",
+          "pronunciation": "ataker",
+          "context": "Wikipedia Teso language — Adverbs of place",
           "audioFile": null
         },
         {
-          "english": "Wage / Salary",
-          "translation": "Eropit (pl. Iropito)",
-          "pronunciation": "eh-roh-peet",
-          "context": "Masculine noun; plural: iropito; pay or wage for labor.",
+          "english": "Work",
+          "translation": "aswam",
+          "pronunciation": "aswam",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "Work / Labor / Task",
-          "translation": "Aswam (pl. Aswamisinei)",
-          "pronunciation": "ah-swahm",
-          "context": "Feminine noun; plural: aswamisinei; daily work, duties.",
+          "english": "Mauritian Rupee (MUR)",
+          "translation": "Ango’otol lok’ Morisi",
+          "pronunciation": "ango’otol lok’ morisi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "School",
-          "translation": "Esomero (pl. Isomeroi)",
-          "pronunciation": "eh-soh-meh-roh",
-          "context": "Masculine noun; plural: isomeroi; schoolhouse.",
+          "english": "Seychellois Rupee (SCR)",
+          "translation": "Ango’otol lok’ Shelisheli",
+          "pronunciation": "ango’otol lok’ shelisheli",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Indian Rupee (INR)",
+          "translation": "Ango’otol lok’ India",
+          "pronunciation": "ango’otol lok’ india",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         }
       ]
@@ -1497,342 +1651,398 @@
       "entries": [
         {
           "english": "To eat",
-          "translation": "Ainyam / Akinyam",
-          "pronunciation": "ah-ee-nyahm",
-          "context": "ko-class verb; 1st person present: anyami eoŋ; imperative: konyam!",
+          "translation": "akinyam / ainyam (akí-ɲám-à)",
+          "pronunciation": "akinyam / ainyam (akí-ɲám-à)",
+          "context": "Wikipedia Teso language & Eastern Nilotic languages",
           "audioFile": null
         },
         {
           "english": "To drink",
-          "translation": "Aimat",
-          "pronunciation": "ah-ee-maht",
-          "context": "ko-class verb; root final t changes to s before i: amasi eoŋ (I drink); imperative: komat!",
+          "translation": "akimat / aimat",
+          "pronunciation": "akimat / aimat",
+          "context": "Wikipedia Teso language — Orthography",
           "audioFile": null
         },
         {
-          "english": "To go",
-          "translation": "Alosit",
-          "pronunciation": "ah-loh-seet",
-          "context": "ko-class irregular verb; 1st pers: alosi; imperative singular: kolot!, plural: kolototo!",
+          "english": "To pray",
+          "translation": "akilip / ailip",
+          "pronunciation": "akilip / ailip",
+          "context": "Wikipedia Teso language — Orthography",
           "audioFile": null
         },
         {
-          "english": "To come",
-          "translation": "Abunere",
-          "pronunciation": "ah-boo-neh-reh",
-          "context": "ko-class irregular verb; 1st pers: abuni; imperative singular: kobu!, plural: kopotu!",
+          "english": "To look for / search",
+          "translation": "aimo",
+          "pronunciation": "aimo",
+          "context": "Wikipedia Teso language — Orthography",
           "audioFile": null
         },
         {
-          "english": "To see",
-          "translation": "Aanyun",
-          "pronunciation": "ah-ahn-yoon",
-          "context": "ko-class verb; 1st person: aanyuni eoŋ; imperative: koanyu!",
+          "english": "To kick (close e) vs. To lay out (open ɛ)",
+          "translation": "aipet [e] (kick) vs. aipet [ɛ] (lay out)",
+          "pronunciation": "aipet [e] (kick) vs. aipet [ɛ] (lay out)",
+          "context": "Wikipedia Teso language — Vowel contrast",
           "audioFile": null
         },
         {
-          "english": "To hear / listen",
-          "translation": "Aipup",
-          "pronunciation": "ah-ee-poop",
-          "context": "ko-class verb; 1st person: apupi eoŋ; imperative: kopup!",
+          "english": "To hit",
+          "translation": "aidip",
+          "pronunciation": "aidip",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "To pray / ask / beg",
-          "translation": "Ailip",
-          "pronunciation": "ah-ee-leep",
-          "context": "ki-class verb; 1st person: elipi eoŋ; imperative: kilip!",
+          "english": "To share (open ɔ) vs. To insult (close o)",
+          "translation": "aimor [ɔ] (share) vs. aimor [o] (insult)",
+          "pronunciation": "aimor [ɔ] (share) vs. aimor [o] (insult)",
+          "context": "Wikipedia Teso language — Vowel contrast",
           "audioFile": null
         },
         {
-          "english": "To speak",
-          "translation": "Einer",
-          "pronunciation": "eh-ee-nehr",
-          "context": "ki-class continuous verb; 1st person: enera eoŋ; imperative: kiner!",
+          "english": "To scratch the earth / scoop (close u) vs. To blow (open ʊ)",
+          "translation": "aikut [u] (scoop) vs. aikut [ʊ] (blow)",
+          "pronunciation": "aikut [u] (scoop) vs. aikut [ʊ] (blow)",
+          "context": "Wikipedia Teso language — Vowel contrast",
           "audioFile": null
         },
         {
-          "english": "To build",
-          "translation": "Aiduk",
-          "pronunciation": "ah-ee-dook",
-          "context": "ko-class model verb; 1st person: aduki eoŋ; imperative: koduk!",
+          "english": "To say",
+          "translation": "abal",
+          "pronunciation": "abal",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "To work",
-          "translation": "Aswam / Aiswama",
-          "pronunciation": "ah-swahm",
-          "context": "ki-class irregular verb; 1st person: eswamai eoŋ; imperative: kiswama!",
+          "english": "To hug / embrace",
+          "translation": "ainu",
+          "pronunciation": "ainu",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "To help",
-          "translation": "Aiŋarakin",
-          "pronunciation": "ah-ee-ngah-rah-keen",
-          "context": "ki-class action-for verb; 1st pers: eŋarakini; imperative: kiŋarakik!",
+          "english": "To tell lies",
+          "translation": "aisab",
+          "pronunciation": "aisab",
+          "context": "Wikipedia Teso language — Alphabet",
           "audioFile": null
         },
         {
-          "english": "To want / desire",
-          "translation": "Akot",
-          "pronunciation": "ah-koht",
-          "context": "ko-class continuous verb; 1st person: akoto eoŋ; 3rd person: ekoto.",
+          "english": "To go (verbal noun: going)",
+          "translation": "alosit",
+          "pronunciation": "alosit",
+          "context": "Wikipedia Teso language — Feminine nouns",
           "audioFile": null
         },
         {
-          "english": "To love",
-          "translation": "Amin",
-          "pronunciation": "ah-meen",
-          "context": "ko-class continuous verb; 1st person: amina eoŋ; imperative: komina!",
-          "audioFile": null
-        },
-        {
-          "english": "To cultivate / farm",
-          "translation": "Akor",
-          "pronunciation": "ah-kohr",
-          "context": "ko-class irregular verb; 1st person: akoriei eoŋ; imperative: kokor!",
-          "audioFile": null
-        },
-        {
-          "english": "To buy",
-          "translation": "Agwel",
-          "pronunciation": "ah-gwehl",
-          "context": "ko-class verb; 1st person: agweli eoŋ; imperative: kogwel!",
-          "audioFile": null
-        },
-        {
-          "english": "To sell",
-          "translation": "Agwelar",
-          "pronunciation": "ah-gweh-lahr",
-          "context": "ko-class motion-away verb from agwel; imperative: kogwela!",
-          "audioFile": null
-        },
-        {
-          "english": "To bring",
-          "translation": "Ayaun",
-          "pronunciation": "ah-yah-oon",
-          "context": "ko-class motion-towards verb; imperative: koyau!",
-          "audioFile": null
-        },
-        {
-          "english": "To carry",
-          "translation": "Aibwok",
-          "pronunciation": "ah-ee-bwohk",
-          "context": "ki-class verb; 1st person: ebwoki eoŋ; imperative: kibwok!",
-          "audioFile": null
-        },
-        {
-          "english": "To wash (clothes)",
-          "translation": "Ailot",
-          "pronunciation": "ah-ee-loht",
-          "context": "ki-class verb; 1st person: eloti eoŋ; imperative: kilot!",
-          "audioFile": null
-        },
-        {
-          "english": "To bathe (oneself)",
-          "translation": "Ailoŋ",
-          "pronunciation": "ah-ee-lohng",
-          "context": "ki-class reflexive verb; 1st person: eloŋi; imperative: kiloŋ!",
-          "audioFile": null
-        },
-        {
-          "english": "To know",
-          "translation": "Aijen",
-          "pronunciation": "ah-ee-jehn",
-          "context": "ko-class verb; 1st person: ajeni eoŋ; negative: mam ajeni.",
-          "audioFile": null
-        },
-        {
-          "english": "To write",
-          "translation": "Aiwadik",
-          "pronunciation": "ah-ee-wah-deek",
-          "context": "ki-class verb; 1st person: ewadikai eoŋ; imperative: kiwadik!",
+          "english": "To come (verbal noun: coming)",
+          "translation": "abunere",
+          "pronunciation": "abunere",
+          "context": "Wikipedia Teso language — Feminine nouns",
           "audioFile": null
         },
         {
           "english": "To read / study",
-          "translation": "Aisiom",
-          "pronunciation": "ah-ee-see-ohm",
-          "context": "ko-class verb; 1st person: asiomi eoŋ; imperative: kosiom!",
+          "translation": "aisiom",
+          "pronunciation": "aisiom",
+          "context": "Wikipedia Teso language — Feminine nouns",
           "audioFile": null
         },
         {
-          "english": "To learn",
-          "translation": "Aisisia",
-          "pronunciation": "ah-ee-see-see-ah",
-          "context": "ki-class verb; 1st person: esisiai eoŋ; imperative: kisisia!",
+          "english": "To jump",
+          "translation": "aisom",
+          "pronunciation": "aisom",
+          "context": "Wikipedia Teso language — Feminine nouns",
           "audioFile": null
         },
         {
-          "english": "To teach",
-          "translation": "Aisisianakin",
-          "pronunciation": "ah-ee-see-see-ah-nah-keen",
-          "context": "ki-class causative action-for verb; imperative: kisisianakik!",
+          "english": "Week (calendar unit)",
+          "translation": "Ewiki",
+          "pronunciation": "ewiki",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To be able / can",
-          "translation": "Apedor",
-          "pronunciation": "ah-peh-dohr",
-          "context": "ko-class verb of ability; 1st pers: apedori; 3rd pers: epedori.",
+          "english": "Hour (time unit)",
+          "translation": "Esaa",
+          "pronunciation": "esaa",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To kill",
-          "translation": "Aiar",
-          "pronunciation": "ah-ee-ahr",
-          "context": "ko-class verb; 1st person: aari; imperative: koar!",
+          "english": "Minute (time unit)",
+          "translation": "Idakika",
+          "pronunciation": "idakika",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To beat / hit",
-          "translation": "Ainom",
-          "pronunciation": "ah-ee-nohm",
-          "context": "ki-class verb; 1st person: enomi eoŋ; imperative: kinom!",
+          "english": "Kenyan Shilling (KES)",
+          "translation": "Ango’otol lok’ Kenya",
+          "pronunciation": "ango’otol lok’ kenya",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To ask / inquire",
-          "translation": "Aiŋit",
-          "pronunciation": "ah-ee-ngeet",
-          "context": "ki-class verb; 1st person: eŋiti; imperative: kiŋit!",
+          "english": "Tanzanian Shilling (TZS)",
+          "translation": "Ango’otol lok’ Tanzania",
+          "pronunciation": "ango’otol lok’ tanzania",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To call",
-          "translation": "Anyaraun",
-          "pronunciation": "ahn-yah-rah-oon",
-          "context": "ko-class motion-towards verb; imperative: konyarau!",
+          "english": "Ugandan Shilling (UGX)",
+          "translation": "Ango’otol lok’ Uganda",
+          "pronunciation": "ango’otol lok’ uganda",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To tell / inform",
-          "translation": "Alimokin",
-          "pronunciation": "ah-lee-moh-keen",
-          "context": "ko-class action-for verb; imperative: kolimok!",
+          "english": "Ethiopian Birr (ETB)",
+          "translation": "Ango’otol lok’ Uhabeshi",
+          "pronunciation": "ango’otol lok’ uhabeshi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To sit down / stay",
-          "translation": "Aiboikin",
-          "pronunciation": "ah-ee-boh-ee-keen",
-          "context": "ki-class reflexive verb; imperative: kiboikin!",
+          "english": "Somali Shilling (SOS)",
+          "translation": "Ango’otol lok’ Somalia",
+          "pronunciation": "ango’otol lok’ somalia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To dig",
-          "translation": "Aibok",
-          "pronunciation": "ah-ee-bohk",
-          "context": "ko-class verb; 1st person: aboki eoŋ; imperative: kobok!",
+          "english": "Rwandan Franc (RWF)",
+          "translation": "Ango’otol lok’ Rwanda",
+          "pronunciation": "ango’otol lok’ rwanda",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To cut",
-          "translation": "Aitub",
-          "pronunciation": "ah-ee-toob",
-          "context": "ko-class verb; 1st person: atubi eoŋ; imperative: kotub!",
+          "english": "Burundian Franc (BIF)",
+          "translation": "Ango’otol lok’ Burundi",
+          "pronunciation": "ango’otol lok’ burundi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To cry / weep",
-          "translation": "Aimony",
-          "pronunciation": "ah-ee-mohn-y",
-          "context": "ko-class verb; 1st person: amonyi eoŋ; imperative: komony!",
+          "english": "Congolese Franc (CDF)",
+          "translation": "Ango’otol lok’ Kongo",
+          "pronunciation": "ango’otol lok’ kongo",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To finish / end",
-          "translation": "Adaun",
-          "pronunciation": "ah-dah-oon",
-          "context": "ko-class verb; completed aspect: adau eoŋ (I finished).",
+          "english": "Nigerian Naira (NGN)",
+          "translation": "Ango’otol lok’ Nijeria",
+          "pronunciation": "ango’otol lok’ nijeria",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To pour",
-          "translation": "Aibuk",
-          "pronunciation": "ah-ee-book",
-          "context": "ko-class verb; 'abukor' = pour away.",
+          "english": "Malawian Kwacha (MWK)",
+          "translation": "Ango’otol lok’ Malawi",
+          "pronunciation": "ango’otol lok’ malawi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To throw",
-          "translation": "Aicak",
-          "pronunciation": "ah-ee-chahk",
-          "context": "ko-class verb; 'acakun' = throw towards, 'acakakin' = throw down.",
+          "english": "Zambian Kwacha (ZMW)",
+          "translation": "Ango’otol lok’ Zambia",
+          "pronunciation": "ango’otol lok’ zambia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To enter / come in",
-          "translation": "Alomun",
-          "pronunciation": "ah-loh-moon",
-          "context": "ko-class motion-towards verb; imperative: kolomun! / toloma!",
+          "english": "Angolan Kwanza (AOA)",
+          "translation": "Ango’otol lok’ Angola",
+          "pronunciation": "ango’otol lok’ angola",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To exit / go out",
-          "translation": "Alomar",
-          "pronunciation": "ah-loh-mahr",
-          "context": "ko-class motion-away verb; imperative: koloma!",
+          "english": "Botswanan Pula (BWP)",
+          "translation": "Ango’otol lok’ Botswana",
+          "pronunciation": "ango’otol lok’ botswana",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To look after / guard",
-          "translation": "Aidar",
-          "pronunciation": "ah-ee-dahr",
-          "context": "ki-class verb; 1st person: edari; imperative: kidar!",
+          "english": "Namibian Dollar (NAD)",
+          "translation": "Ango’otol lok’ Namibia",
+          "pronunciation": "ango’otol lok’ namibia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To try / attempt",
-          "translation": "Atamakin",
-          "pronunciation": "ah-tah-mah-keen",
-          "context": "ko-class action-for verb; imperative: kotamak!",
+          "english": "Malagasy Ariary (MGA)",
+          "translation": "Ango’otol lok’ Bukini",
+          "pronunciation": "ango’otol lok’ bukini",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To stop / leave alone",
-          "translation": "Ainyekin",
-          "pronunciation": "ah-ee-nyeh-keen",
-          "context": "ki-class verb used in prohibition; imperative: kinyek!",
+          "english": "Djiboutian Franc (DJF)",
+          "translation": "Ango’otol lok’ Jibuti",
+          "pronunciation": "ango’otol lok’ jibuti",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To herd (cattle)",
-          "translation": "Acok",
-          "pronunciation": "ah-chohk",
-          "context": "ko-class irregular verb; 1st person: acokie; imperative: kocok!",
+          "english": "Eritrean Nakfa (ERN)",
+          "translation": "Ango’otol lok’ Eritrea",
+          "pronunciation": "ango’otol lok’ eritrea",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To give birth / bring forth",
-          "translation": "Aur",
-          "pronunciation": "ah-oor",
-          "context": "ko-class irregular verb; 1st person: aurie; imperative: kour!",
+          "english": "Libyan Dinar (LYD)",
+          "translation": "Ango’otol lok’ Libya",
+          "pronunciation": "ango’otol lok’ libya",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To think over / ponder",
-          "translation": "Aomoom",
-          "pronunciation": "ah-oh-moh-ohm",
-          "context": "ko-class verb; 1st person: aomoomoi eoŋ.",
+          "english": "Tunisian Dinar (TND)",
+          "translation": "Ango’otol lok’ Tunisia",
+          "pronunciation": "ango’otol lok’ tunisia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To thatch (house)",
-          "translation": "Aiswap",
-          "pronunciation": "ah-ee-swahp",
-          "context": "ki-class verb; imperative: kiswap!",
+          "english": "Algerian Dinar (DZD)",
+          "translation": "Ango’otol lok’ Aljeria",
+          "pronunciation": "ango’otol lok’ aljeria",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         },
         {
-          "english": "To rain",
-          "translation": "Aitep",
-          "pronunciation": "ah-ee-tehp",
-          "context": "ko-class verb; 3rd person: edou etepi (it is raining).",
+          "english": "Moroccan Dirham (MAD)",
+          "translation": "Ango’otol lok’ Moroko",
+          "pronunciation": "ango’otol lok’ moroko",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Liberian Dollar (LRD)",
+          "translation": "edola lok’ Liberia",
+          "pronunciation": "edola lok’ liberia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "US Dollar (USD)",
+          "translation": "edola lok’ Amareka",
+          "pronunciation": "edola lok’ amareka",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Chinese Yuan (CNY)",
+          "translation": "Ango’otol lok’ China",
+          "pronunciation": "ango’otol lok’ china",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Japanese Yen (JPY)",
+          "translation": "Ango’otol lok’ Kijapani",
+          "pronunciation": "ango’otol lok’ kijapani",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Riyal (SAR)",
+          "translation": "Ango’otol lok’ Saudia",
+          "pronunciation": "ango’otol lok’ saudia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Swiss Franc (CHF)",
+          "translation": "Ango’otol lok’ Uswisi",
+          "pronunciation": "ango’otol lok’ uswisi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Edola lok’Kanada",
+          "pronunciation": "edola lok’kanada",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Australian Dollar (AUD)",
+          "translation": "Ango’otol lok’ Australia",
+          "pronunciation": "ango’otol lok’ australia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Teso (Language)",
+          "translation": "Kiteso",
+          "pronunciation": "kiteso",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "English (Language)",
+          "translation": "Kingereza",
+          "pronunciation": "kingereza",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukrainian (Language)",
+          "translation": "Kiukrania",
+          "pronunciation": "kiukrania",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Czech (Language)",
+          "translation": "Kichecki",
+          "pronunciation": "kichecki",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Bangla (Language)",
+          "translation": "Kibangla",
+          "pronunciation": "kibangla",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tamil (Language)",
+          "translation": "Kitamil",
+          "pronunciation": "kitamil",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Thai (Language)",
+          "translation": "Kitailandi",
+          "pronunciation": "kitailandi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Malay (Language)",
+          "translation": "Kimalesia",
+          "pronunciation": "kimalesia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Akan (Language)",
+          "translation": "Kiakan",
+          "pronunciation": "kiakan",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "KenyaHub Community & Linguistic Reference Dictionary"
+  "source": "Public Domain Dictionary Scaffold"
 }

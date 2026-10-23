@@ -20,44 +20,17 @@ import {
 import ToolShell from "@/components/tools/ToolShell";
 import ProverbsView from "@/components/learn/ProverbsView";
 import type { LanguageConfig } from "@/data/courses/types";
-import { PUBLISHED_COURSES } from "@/data/courses/registry";
+import { COURSE_REGISTRY } from "@/data/courses/registry";
 import { TOOLS } from "@/lib/tools-registry";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
-const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })[] = [
-  ...PUBLISHED_COURSES.map(({ config, units }) => ({
+const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number })[] =
+  Object.values(COURSE_REGISTRY).map(({ config, units, ready }) => ({
     ...config,
-    ready: true,
+    ready,
     skills: units.reduce((total, unit) => total + unit.skills.length, 0),
-  })),
-  {
-    id: "swahili",
-    name: "Kiswahili",
-    nativeName: "Kiswahili",
-    family: "Bantu",
-    counties: ["All counties"],
-    speakers: "15M+",
-    speechLocale: "sw-KE",
-    description: "Kenya's national language — the lingua franca of East Africa",
-    color: "#2196F3",
-    ready: false,
-    skills: 0,
-  },
-  {
-    id: "kalenjin",
-    name: "Kalenjin",
-    nativeName: "Kalenjin",
-    family: "Nilotic",
-    counties: ["Nandi", "Uasin Gishu", "Kericho", "Baringo", "Elgeyo-Marakwet"],
-    speakers: "5.1M",
-    speechLocale: "sw-KE",
-    description: "A Highland Nilotic language from Kenya's Rift Valley",
-    color: "#9C27B0",
-    ready: false,
-    skills: 0,
-  },
-];
+  }));
 
 function getLanguageXp(languageId: string): { xp: number; streak: number } {
   if (typeof window === "undefined") return { xp: 0, streak: 0 };

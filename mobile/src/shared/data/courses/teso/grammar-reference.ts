@@ -1,7 +1,6 @@
 // ============================================================
 // Teso (Ateso) Grammar Reference Guide
-// Based on "An Introduction to the Ateso Language"
-// by J.H. Hilders & J.C.D. Lawrence (The Eagle Press, 1957).
+// Based on Open-Web Linguistic Data (Wikipedia Teso_language & Eastern_Nilotic_languages / Vossen 1982)
 // ============================================================
 
 export interface TesoGrammarSection {
@@ -14,145 +13,50 @@ export interface TesoGrammarSection {
 
 export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
   {
-    id: 'teso-gender-prefixes',
-    title: 'The Tri-Gender Noun Prefix System',
-    summary: 'Every noun in Ateso carries a morphological prefix indicating gender: Masculine (E-), Feminine (A-), or Neuter/Diminutive (I-).',
-    content: `Hilders & Lawrence (1957) define the three inherent grammatical genders of Ateso:
-1. **Masculine (E- / pl. I-)**:
-   - *ekiliokit* (man) → *ikiliok* (men)
-   - *edodia* (tree / pole) → *idodiai* (trees)
-   - *etogo* (house) → *itogoi* (houses)
-2. **Feminine (A- / pl. A-)**:
-   - *aberu* (woman) → *angor* (women)
-   - *akiteng* (cow) → *aatuk* (cattle)
-   - *akipi* (water)
-3. **Neuter / Diminutive (I- / pl. I-)**:
-   - *ikoku* (child) → *idwe* (children)
-   - *itaba* (tobacco)
-   - *itout* (small calf) → *itaok* (calves)
-
-Pluralization in Ateso combines prefix changes with varied suffix mutations:
-- *-in / -an*: *akipi* (water), *alupok* (earth)
-- *-ok / -ek*: *ikiliok* (men), *idodiai* (trees).`,
+    id: "teso-phonology-orthography",
+    title: "ATR Vowel Contrast, Semi-Mute Shadow Vowels & Kenyan–Tororo K-Retention",
+    summary: "Ateso contrasts close (+ATR) and open (-ATR) vowels, inserts shadow vowels to prevent consonant clusters, and retains intervocalic /k/ in Kenya (Busia) and Tororo.",
+    content: `Key phonological and orthographic rules of Ateso (Teso–Turkana / Ateker cluster):
+1. **Close (+ATR) vs. Open (-ATR) Vowels**:
+   - The five vowel letters (*a, e, i, o, u*) represent both close (+ATR) and open (-ATR) phonemes that distinguish verb roots and govern conjugation harmony:
+   - **aipet** [e] (to kick) vs. **aipet** [ɛ] (to lay out).
+   - **aimor** [o] (to insult) vs. **aimor** [ɔ] (to share).
+   - **aikut** [u] (to scoop earth) vs. **aikut** [ʊ] (to blow).
+   - Tone/pitch also distinguishes tense on identical spellings: *élípì* (I am praying) vs. *elìpǐ* (I was praying) vs. *elipí* (he/she was praying).
+2. **Semi-Mute "Shadow" Vowels & Cluster Avoidance**:
+   - Two consonants never stand together in Ateso; words ending in a consonant carry a semi-mute "shadow" vowel that surfaces when followed by another consonant or possessive suffix:
+   - Written *elosete aŋor togo* (the women go to the house), pronounced *elosete aŋoro togo*; with possessive: *elosete aŋoroke togo* (his women go to the house).
+   - *Elacet-kon* (your key) is written and pronounced **elacetekon**.
+3. **Kenyan (Busia) & Tororo Retention of /k/**:
+   - Speakers in Busia County (Kenya) and Tororo retain the *k* prefix in infinitives and demonstratives (*akilip lok'asuban* 'to pray to the Creator', *akinyam atap* 'to eat millet bread', *akimat akile* 'to drink milk'), whereas central Ugandan varieties often elide *k* (*ailip*, *ainyam*, *aimat*).`,
     examples: [
-      { teso: 'ekiliokit', english: 'man', explanation: 'Masculine singular E-' },
-      { teso: 'aberu', english: 'woman', explanation: 'Feminine singular A-' },
-      { teso: 'ikoku', english: 'child', explanation: 'Neuter/Diminutive singular I-' },
-      { teso: 'ikiliok', english: 'men', explanation: 'Masculine plural I-' }
+      { teso: "akilip lok'asuban • akinyam atap • akimat akile", english: "to pray to the Creator • to eat bread • to drink milk", explanation: "Kenyan Ateso retention of k- in infinitives" },
+      { teso: "aimor [ɔ] (to share) vs. aimor [o] (to insult)", english: "to share vs. to insult", explanation: "Open (-ATR) vs. Close (+ATR) vowel contrast" },
+      { teso: "elacet + -kon → elacetekon", english: "your key", explanation: "Insertion of shadow vowel -e- between consonants" }
     ]
   },
   {
-    id: 'teso-verb-classes',
-    title: 'Verb Classes (Ko- and Ki- Classes)',
-    summary: 'Ateso verbs belong to two fundamental morphological conjugation groups: Ko-class and Ki-class.',
-    content: `Like other Nilotic languages of the Teso-Turkana cluster, Ateso distinguishes between:
-1. **Ko-Class (Class 1)**:
-   - Infinitives prefixed with *ai-*: e.g., *ainyam* (to eat), *aimat* (to drink), *alosit* (to go).
-   - Imperatives take *to-* or *ta-*: *Tanyama!* (Eat!), *Toloto!* (Go!).
-2. **Ki-Class (Class 2)**:
-   - Infinitives prefixed with *aki-*: e.g., *akilep* (to milk), *akisom* (to read).
-   - Imperatives take *ki-* or *ko-*: *Kilepu!* (Milk!), *Koisomu!* (Read!).
-
-Personal subject prefixes for the present tense:
-- 1st sing (I): *e-* / *a-*
-- 2nd sing (You): *i-*
-- 3rd sing (He/She): *e-*
-- 1st plur (We): *i-...-te*
-- 2nd plur (You pl.): *i-...-te*
-- 3rd plur (They): *e-...-te*`,
+    id: "teso-gender-plurals-numerals",
+    title: "Three Grammatical Genders (E-/O-, A-, I-), Agentive/Instrumental Plurals & Quinary Numerals",
+    summary: "Ateso divides all nouns into Masculine (e-/o-), Feminine (a-), and Neuter/Diminutive (i-) classes and counts via a gender-agreed base-5/base-10 system.",
+    content: `Grammatical gender, pluralization, and numerals in Ateso:
+1. **Three Grammatical Genders (Singular → Plural Prefixes)**:
+   - **Masculine (*e-, o- → i-, o-*)**: Male beings, most trees/fruits, insects, and non-indigenous liquids (*etelepat → itelepai* 'boy → boys', *ekingok* 'dog', *emong* 'bull', *ekitoi* 'tree').
+   - **Feminine (*a- → a-*)**: Female beings, languages/countries, indigenous liquids, abstract nouns, and verbal nouns (*apese → apesur* 'girl → girls', *aberu → aŋor* 'woman → women', *Ateso*, *akipi* 'water', *akile* 'milk', *amina* 'love').
+   - **Neuter / Diminutive (*i- → i-*)**: Generic or small objects (*ikoku → idwe* 'child → children', *ituŋanan → ituŋa* 'person → people', *ikiŋok* 'puppy', *imoru* 'pebble').
+   - *Exceptions without gender prefix*: Kinship and cardinal directions (*toto* 'mother', *papa* 'father', *mamai* 'uncle', *inac* 'sister', *ija* 'aunt'; *kide* 'east', *too* 'west', *nyakoi* 'north', *agolitomei* 'south').
+2. **Productive Verbal Noun Plurals**:
+   - **Agentive Nouns (*-an/-on → -ak/-ok*)**: *ekamejan → ikamejak* (hunter → hunters), *ekecokon → ikecokok* (herdsman → herdsmen), *ekadukon → ikadukok* (builder → builders), *ekatubon → ikatubok* (judge → judges).
+   - **Instrumental Nouns (*-et/-etait → -eta*)**: *elacet → ilaceta* (key → keys), *arapetait → arapeta* (cover → covers).
+   - **Generic Collective (*-sinei*)**: *ituŋa* (men/people) → *ituŋasinei* (mankind); *akwapin* (countries) → *akwapisinei* (the world).
+3. **Gender-Agreed Quinary-Decimal Numerals**:
+   - Numerals agree in gender (*i-* masc./neut. vs. *a-* fem.):
+   - **1–5**: *idiope / adiope* (1), *iyarei / aarei* (2), *iuni / auni* (3 — e.g. *itelepai iuni* 'three boys' vs. *apesur auni* 'three girls'), *ioŋon / aoŋon* (4), *ikany / akany* (5).
+   - **6–10**: *ikany-kape* (6 = 5+1), *ikany-kaare* (7 = 5+2), *ikany-kauni* (8 = 5+3), *ikany-kaoŋon* (9 = 5+4), *itomon / atomon* (10), *akais aare* (20), *akwatat* (100), *elukumit ediope* (1,000).`,
     examples: [
-      { teso: 'Enami ekiliokit akiring', english: 'The man is eating meat', explanation: 'Ko-class verb with 3rd person prefix e-' },
-      { teso: 'Elepi aberu aatuk', english: 'The woman is milking cattle', explanation: 'Ki-class verb' },
-      { teso: 'Tanyama!', english: 'Eat! (Imperative)', explanation: 'Ko-class imperative prefix ta-' },
-      { teso: 'Kilepu!', english: 'Milk! (Imperative)', explanation: 'Ki-class imperative prefix ki-' }
-    ]
-  },
-  {
-    id: 'teso-past-auxiliary',
-    title: 'Past Tense Formation with the Auxiliary "Abu"',
-    summary: 'The standard past tense in Ateso is constructed using the inflected auxiliary verb "abu" followed by the subjunctive.',
-    content: `A distinctive characteristic of Ateso syntax is the pervasive use of the auxiliary *abu* to express completed past action:
-- *Abu kanyam* = I ate
-- *Abu inyam* = You ate
-- *Abu kinyam* = He/she ate
-- *Kabu kinyamutu* = We ate
-- *Ibu inyamutu* = You (pl) ate
-- *Kebu kinyamutu* = They ate
-
-For negative past sentences, *mam* precedes the clause:
-- *Mam abu kanyam* = I did not eat.`,
-    examples: [
-      { teso: 'Abu kalot ore', english: 'I went home', explanation: 'Past auxiliary abu + 1st person subjunctive' },
-      { teso: 'Abu kiseseni', english: 'He saw it', explanation: 'Past auxiliary abu + 3rd person' },
-      { teso: 'Mam abu kisese', english: 'He did not see it', explanation: 'Negative past with mam' }
-    ]
-  },
-  {
-    id: 'teso-syntax',
-    title: 'Word Order & Post-Nominal Modifiers',
-    summary: 'Ateso clauses exhibit basic Verb-Subject-Object (VSO) order, and all determiners and adjectives follow the noun.',
-    content: `In declarative clauses without focal fronting, the inflected verb leads the sentence:
-**Verb + Subject + Object**
-- *Ebuni ekiliokit.* = Comes the man (The man is coming).
-- *Emasi ekiliokit akipi.* = Drinks the man water (The man drinks water).
-
-All adjectives, demonstratives, and possessive pronouns follow the noun they modify:
-- *etogo lo* = this house (masculine demonstrative *lo*)
-- *akiteng na* = this cow (feminine demonstrative *na*)
-- *ikoku lo* = this child
-- *etogo kang* = my house
-- *akiteng ka* = my cow`,
-    examples: [
-      { teso: 'Ebuni ekiliokit', english: 'The man is coming', explanation: 'VSO order: Verb + Subject' },
-      { teso: 'etogo lo', english: 'this house', explanation: 'Noun + masculine demonstrative lo' },
-      { teso: 'akiteng na', english: 'this cow', explanation: 'Noun + feminine demonstrative na' }
-    ]
-  },
-  // ── EXPANDED GRAMMAR SECTIONS ──
-  {
-    "id": "teso-pronouns-possessives",
-    "title": "Personal Pronouns, Inclusive/Exclusive 'We' & Gendered Possessives",
-    "summary": "Ateso distinguishes inclusive ('oni') vs. exclusive ('isyo') 1st person plural and inflects possessives for noun gender.",
-    "content": "In Hilders & Lawrance (1957) *An Introduction to the Ateso Language*, independent personal pronouns are:\n- **1s**: *eong* (I / me)\n- **2s**: *ijo* (you sg.)\n- **3s**: *ngesi* (he / she / it)\n- **1p Inclusive**: *oni* (we — including the person addressed)\n- **1p Exclusive**: *isyo* (we — excluding the person addressed)\n- **2p**: *yes* (you pl.)\n- **3p**: *kes* (they / them)\n\nPossessive adjectives suffix to the gender linker (**lo-** masculine, **na-** feminine, **lu-** masc. pl., **nu-** fem. pl.):\n- *etogo loka* (my house — masc.), *aberu naka* (my wife — fem.), *idwe luka* (my children).",
-    "examples": [
-      {
-        "teso": "Eong ka ijo — oni.",
-        "english": "I and you — we (inclusive).",
-        "explanation": "Inclusive pronoun oni"
-      },
-      {
-        "teso": "etogo loka / aberu naka",
-        "english": "my house (m.) / my wife (f.)",
-        "explanation": "Gender-agreed possessive loka vs. naka"
-      },
-      {
-        "teso": "Emina ngesi idwe luke.",
-        "english": "He/she loves his/her children.",
-        "explanation": "3s pronoun ngesi + plural possessive luke"
-      }
-    ]
-  },
-  {
-    "id": "teso-negation-extensions",
-    "title": "Negation with 'Mam' & Verbal Extensions (Applicative, Causative, Passive)",
-    "summary": "Ateso negates declarative clauses with the particle 'mam' (or 'mere' for nouns) and derives verbs with suffixal extensions.",
-    "content": "Hilders & Lawrance (1957) describe two primary negation strategies in Ateso:\n1. **Verbal Negation with 'mam'**: Placed before the conjugated verb:\n   - *Ajeni eong* (I know) → **Mam eong ajeni** (I do not know).\n   - *Elosi ngesi* (He goes) → **Mam ngesi elosi** (He does not go).\n2. **Nominal / Copular Negation with 'mere'**:\n   - *Mere eong ekokolak* (I am not a thief).\n3. **Verbal Extensions**:\n   - **Applicative (-ikin / -okin)**: Action done for or toward someone (*inyamikin* - eat for/at).\n   - **Causative (isi- / it-)**: Prefix added to the verb stem (*isinyam* - feed / cause to eat; *isisiaun* - teach).\n   - **Reflexive / Middle Voice (-ar / -or)**: Action directed upon oneself.",
-    "examples": [
-      {
-        "teso": "Mam eong ajeni Ateso.",
-        "english": "I do not know Ateso.",
-        "explanation": "Negative auxiliary mam"
-      },
-      {
-        "teso": "Isisiauni ekapolon idwe.",
-        "english": "The teacher teaches the children.",
-        "explanation": "Causative prefix isi-"
-      },
-      {
-        "teso": "Mere ngol etogo loka.",
-        "english": "That is not my house.",
-        "explanation": "Nominal negator mere"
-      }
+      { teso: "etelepat → itelepai (m.) • apese → apesur (f.) • ikoku → idwe (n.)", english: "boy → boys • girl → girls • child → children", explanation: "Masculine (e-→i-), Feminine (a-→a-), and Neuter (i-→i-) prefixes" },
+      { teso: "ekadukon → ikadukok • ekatubon → ikatubok", english: "builder → builders • judge → judges", explanation: "Agentive singular -on to plural -ok" },
+      { teso: "itelepai iuni vs. apesur auni", english: "three boys vs. three girls", explanation: "Gender agreement on cardinal numerals (iuni masc. vs. auni fem.)" }
     ]
   }
 ];

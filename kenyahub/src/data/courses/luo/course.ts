@@ -2412,7 +2412,6 @@ export const LUO_UNITS: CourseUnit[] = [
   ...GRAMMAR_MODULE_UNITS,
   PHRASEBOOK_UNIT,
   EXERCISES_UNIT,
-  ORAL_LITERATURE_UNIT,
 ];
 
 export default LUO_COURSE;
