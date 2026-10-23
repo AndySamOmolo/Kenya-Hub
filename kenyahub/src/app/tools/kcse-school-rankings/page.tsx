@@ -8,11 +8,14 @@ import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
 
 interface KcseSchool {
+  rank?: number;
   name: string;
   county: string;
   type: string;
+  candidates?: number;
   meanScore: number;
   aGrades: number;
+  prevMeanScore?: number;
   change: number;
 }
 
@@ -53,26 +56,26 @@ export default function KcseSchoolRankingsPage() {
   const getChangeColor = (c: number) => c > 0 ? "text-kenya-green-light" : c < 0 ? "text-kenya-red-light" : "text-text-muted";
   return (
     <ToolShell tool={tool} faq={faq}>
-      <div className="space-y-6">
+      <div className="space-y-4 sm:space-y-6">
         {/* Stats bar */}
-        <div className="grid grid-cols-3 gap-3">
-          <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-            <p className="text-2xl font-bold text-gold">{data.year}</p>
+        <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
+          <div className="bg-bg-card border border-border rounded-xl p-3 sm:p-4 text-center">
+            <p className="text-xl sm:text-2xl font-bold text-gold">{data.year}</p>
             <p className="text-[0.65rem] text-text-muted">Results Year</p>
           </div>
-          <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-            <p className="text-2xl font-bold text-text-primary">{(data.totalCandidates / 1000).toFixed(0)}K</p>
+          <div className="bg-bg-card border border-border rounded-xl p-3 sm:p-4 text-center">
+            <p className="text-xl sm:text-2xl font-bold text-text-primary">{(data.totalCandidates / 1000).toFixed(0)}K</p>
             <p className="text-[0.65rem] text-text-muted">Total Candidates</p>
           </div>
-          <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-            <p className="text-2xl font-bold text-text-primary">{data.totalSchools.toLocaleString()}</p>
+          <div className="bg-bg-card border border-border rounded-xl p-3 sm:p-4 text-center">
+            <p className="text-xl sm:text-2xl font-bold text-text-primary">{data.totalSchools.toLocaleString()}</p>
             <p className="text-[0.65rem] text-text-muted">Schools</p>
           </div>
         </div>
         {/* Filters */}
-        <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
+        <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 space-y-2.5 sm:space-y-3">
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search school name or county..." className="input-field text-sm" id="kcse-search"  onClear={() => setSearch("")} />
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3">
             <CustomSelect value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-sm" id="kcse-county">
               <option value="all">All Counties</option>
               {counties.map((c) => (<option key={c} value={c}>{c}</option>))}
@@ -93,42 +96,42 @@ export default function KcseSchoolRankingsPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-xs">
               <thead><tr className="border-b border-border bg-bg-elevated">
-                <th className="text-left px-4 py-2.5 text-text-muted font-medium w-10">#</th>
-                <th className="text-left px-4 py-2.5 text-text-muted font-medium">School</th>
-                <th className="text-left px-4 py-2.5 text-text-muted font-medium hidden sm:table-cell">County</th>
-                <th className="text-left px-4 py-2.5 text-text-muted font-medium hidden md:table-cell">Type</th>
-                <th className="text-right px-4 py-2.5 text-text-muted font-medium">Mean</th>
-                <th className="text-right px-4 py-2.5 text-text-muted font-medium">A&apos;s</th>
-                <th className="text-right px-4 py-2.5 text-text-muted font-medium">YoY</th>
+                <th className="text-left px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium w-8 sm:w-10">#</th>
+                <th className="text-left px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">School</th>
+                <th className="text-left px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium hidden sm:table-cell">County</th>
+                <th className="text-left px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium hidden md:table-cell">Type</th>
+                <th className="text-right px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">Mean</th>
+                <th className="text-right px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">A&apos;s</th>
+                <th className="text-right px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">YoY</th>
               </tr></thead>
               <tbody>
                 {filtered.map((s, i) => (
                   <tr key={s.name} className="border-b border-border/50 last:border-0 hover:bg-bg-elevated/50 transition-colors">
-                    <td className="px-4 py-3 font-bold text-text-muted">{i + 1}</td>
-                    <td className="px-4 py-3">
+                    <td className="px-3 sm:px-4 py-2.5 sm:py-3 font-bold text-text-muted">{i + 1}</td>
+                    <td className="px-3 sm:px-4 py-2.5 sm:py-3">
                       <p className="font-semibold text-text-primary">{s.name}</p>
                       <p className="text-[0.6rem] text-text-muted sm:hidden">{s.county} · {s.type}</p>
                     </td>
-                    <td className="px-4 py-3 text-text-secondary hidden sm:table-cell">{s.county}</td>
-                    <td className="px-4 py-3 hidden md:table-cell"><span className="text-[0.6rem] bg-bg-elevated border border-border px-2 py-0.5 rounded text-text-muted">{s.type}</span></td>
-                    <td className={`px-4 py-3 text-right font-bold ${getScoreColor(s.meanScore)}`}>{s.meanScore.toFixed(2)}</td>
-                    <td className="px-4 py-3 text-right font-semibold text-gold">{s.aGrades}</td>
-                    <td className={`px-4 py-3 text-right font-semibold ${getChangeColor(s.change)}`}>{getChangeIcon(s.change)} {Math.abs(s.change).toFixed(2)}</td>
+                    <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-text-secondary hidden sm:table-cell">{s.county}</td>
+                    <td className="px-3 sm:px-4 py-2.5 sm:py-3 hidden md:table-cell"><span className="text-[0.6rem] bg-bg-elevated border border-border px-2 py-0.5 rounded text-text-muted">{s.type}</span></td>
+                    <td className={`px-3 sm:px-4 py-2.5 sm:py-3 text-right font-bold ${getScoreColor(s.meanScore)}`}>{s.meanScore.toFixed(2)}</td>
+                    <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-right font-semibold text-gold">{s.aGrades}</td>
+                    <td className={`px-3 sm:px-4 py-2.5 sm:py-3 text-right font-semibold ${getChangeColor(s.change)}`}>{getChangeIcon(s.change)} {Math.abs(s.change).toFixed(2)}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
         </div>
-        {filtered.length === 0 && <div className="text-center py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🏆" className="w-10 h-10 text-gold" /></div><p className="text-text-secondary text-sm">No schools found</p></div>}
+        {filtered.length === 0 && <div className="text-center py-8 sm:py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🏆" className="w-10 h-10 text-gold" /></div><p className="text-text-secondary text-sm">No schools found</p></div>}
         {/* Grade distribution */}
-        <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-bold text-text-primary mb-4 font-[family-name:var(--font-outfit)]"><DynamicIcon emoji="📊" className="w-4 h-4 text-gold inline-block mr-1.5" />National Grade Distribution ({data.year})</h3>
-          <div className="space-y-2">
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
+          <h3 className="text-sm font-bold text-text-primary mb-3 sm:mb-4 font-[family-name:var(--font-outfit)]"><DynamicIcon emoji="📊" className="w-4 h-4 text-gold inline-block mr-1.5" />National Grade Distribution ({data.year})</h3>
+          <div className="space-y-1.5 sm:space-y-2">
             {Object.entries(data.gradeDistribution).map(([grade, pct]) => (
               <div key={grade} className="flex items-center gap-3">
                 <span className="text-xs font-bold text-text-primary w-6">{grade}</span>
-                <div className="flex-1 h-4 bg-bg-elevated rounded-full overflow-hidden">
+                <div className="flex-1 h-3.5 sm:h-4 bg-bg-elevated rounded-full overflow-hidden">
                   <div className="h-full rounded-full bg-gradient-to-r from-gold to-gold-vivid transition-all" style={{ width: `${(pct as number) * 6}%` }} />
                 </div>
                 <span className="text-xs text-text-muted w-12 text-right">{pct}%</span>
@@ -136,9 +139,9 @@ export default function KcseSchoolRankingsPage() {
             ))}
           </div>
         </div>
-        <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About the Data</h3>
-          <ul className="space-y-2">{data.notes.map((n, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>{n}</span></li>))}</ul>
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
+          <h3 className="text-sm font-semibold text-text-primary mb-2.5 sm:mb-3 font-[family-name:var(--font-outfit)]">About the Data</h3>
+          <ul className="space-y-1.5 sm:space-y-2">{data.notes.map((n, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>{n}</span></li>))}</ul>
         </div>
       </div>
     </ToolShell>

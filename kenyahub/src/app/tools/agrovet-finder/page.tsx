@@ -36,8 +36,8 @@ export default function AgrovetFinderPage() {
   }, [search, countyFilter]);
   return (
     <ToolShell tool={tool} faq={faq}>
-      <div className="space-y-6">
-        <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
+      <div className="space-y-4 sm:space-y-6">
+        <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 space-y-2.5 sm:space-y-3">
           <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search agrovets, counties, services..." className="input-field text-sm" id="agrovet-search"  onClear={() => setSearch("")} />
           <CustomSelect value={countyFilter} onChange={(e) => setCountyFilter(e.target.value)} className="input-field text-sm" id="agrovet-county">
             <option value="all">All Counties</option>
@@ -45,25 +45,25 @@ export default function AgrovetFinderPage() {
           </CustomSelect>
         </div>
         <p className="text-xs text-text-muted">{filtered.length} agrovets found</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
           {filtered.map((a, i) => (
-            <div key={i} className="bg-bg-card border border-border rounded-xl p-4">
-              <div className="flex items-start justify-between gap-2 mb-2">
+            <div key={i} className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4">
+              <div className="flex items-start justify-between gap-2 mb-1.5 sm:mb-2">
                 <h3 className="text-sm font-bold text-text-primary">{a.name}</h3>
                 {a.licensed && <span className="text-[0.6rem] bg-kenya-green/15 text-kenya-green-light px-2 py-0.5 rounded flex-shrink-0 inline-flex items-center gap-1"><DynamicIcon emoji="✓" className="w-3 h-3" /> Licensed</span>}
               </div>
               <p className="text-xs text-text-muted mb-2 flex items-center gap-1"><DynamicIcon emoji="📍" className="w-3.5 h-3.5 text-gold flex-shrink-0" /> {a.town}, {a.county}</p>
-              <div className="flex flex-wrap gap-1 mb-3">
+              <div className="flex flex-wrap gap-1 mb-2.5 sm:mb-3">
                 {a.services.map((s) => (<span key={s} className="text-[0.6rem] bg-bg-elevated border border-border px-2 py-0.5 rounded text-text-secondary">{s}</span>))}
               </div>
               <a href={`tel:${a.phone}`} className="text-xs text-gold hover:underline inline-flex items-center gap-1"><DynamicIcon emoji="📞" className="w-3.5 h-3.5 flex-shrink-0" /> {a.phone}</a>
             </div>
           ))}
         </div>
-        {filtered.length === 0 && <div className="text-center py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div><p className="text-text-secondary text-sm">No agrovets found matching your search</p></div>}
-        <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About the Data</h3>
-          <ul className="space-y-2">{data.notes.map((n, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>{n}</span></li>))}</ul>
+        {filtered.length === 0 && <div className="text-center py-8 sm:py-12"><div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div><p className="text-text-secondary text-sm">No agrovets found matching your search</p></div>}
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
+          <h3 className="text-sm font-semibold text-text-primary mb-2.5 sm:mb-3 font-[family-name:var(--font-outfit)]">About the Data</h3>
+          <ul className="space-y-1.5 sm:space-y-2">{data.notes.map((n, i) => (<li key={i} className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>{n}</span></li>))}</ul>
         </div>
       </div>
     </ToolShell>

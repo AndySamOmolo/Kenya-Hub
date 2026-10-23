@@ -15,18 +15,18 @@ export default function Navbar() {
   return (
     <>
       {/* Kenyan flag stripe */}
-      <div className="kenya-stripe w-full mb-2 lg:mb-3" />
+      <div className="kenya-stripe w-full" />
 
       <nav className="sticky top-0 z-50 glass">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-[50px]">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-11 sm:h-[50px]">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-              <div className="relative w-8 h-8 flex items-center justify-center">
+            <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group shrink-0">
+              <div className="relative w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-kenya-green via-gold to-kenya-red opacity-20 group-hover:opacity-40 transition-opacity" />
-                <img src="/kenya-flag.svg" alt="Kenya Flag" className="relative w-5 h-auto rounded-[1px] shadow-sm" />
+                <img src="/kenya-flag.svg" alt="Kenya Flag" className="relative w-4 sm:w-5 h-auto rounded-[1px] shadow-sm" />
               </div>
-              <span className="text-lg font-extrabold font-[family-name:var(--font-outfit)] gradient-text-kenya tracking-tight">
+              <span className="text-base sm:text-lg font-extrabold font-[family-name:var(--font-outfit)] gradient-text-kenya tracking-tight">
                 KenyaHub
               </span>
             </Link>
@@ -183,7 +183,7 @@ export default function Navbar() {
               </button>
 
               <button
-                className="relative w-10 h-10 flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors rounded-lg"
+                className="relative w-9 h-9 flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors rounded-lg"
                 onClick={() => setMobileOpen(!mobileOpen)}
                 aria-label="Menu"
               >
@@ -199,43 +199,43 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden absolute left-0 right-0 top-[50px] h-[calc(100vh-50px)] border-t border-border bg-bg-card/98 backdrop-blur-xl animate-fade-in-up flex flex-col shadow-2xl">
-            <div className="flex-1 overflow-y-auto px-4 py-6 pb-20 space-y-1">
-              <Link href="/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 flex items-center justify-center shrink-0"><Home className="w-5 h-5 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Home
+          <div className="md:hidden absolute left-0 right-0 top-11 h-[calc(100vh-44px)] border-t border-border bg-bg-card/98 backdrop-blur-xl animate-fade-in-up flex flex-col shadow-2xl">
+            <div className="flex-1 overflow-y-auto px-3.5 py-3.5 pb-16 space-y-0.5">
+              <Link href="/" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Home className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Home
               </Link>
-              <Link href="/matatu" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-gold hover:text-gold-light rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 flex items-center justify-center shrink-0"><BusFront className="w-5 h-5 text-gold group-hover:text-gold-light transition-colors shrink-0" /></span> Matatu Routes
+              <Link href="/matatu" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gold hover:text-gold-light rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><BusFront className="w-4 h-4 text-gold group-hover:text-gold-light transition-colors shrink-0" /></span> Matatu Routes
               </Link>
-              <Link href="/blog" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 flex items-center justify-center shrink-0"><Edit3 className="w-5 h-5 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Blog
+              <Link href="/blog" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Edit3 className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Blog
               </Link>
-              <Link href="/county" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 flex items-center justify-center shrink-0"><Landmark className="w-5 h-5 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Counties
+              <Link href="/county" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Landmark className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Counties
               </Link>
-              <Link href="/about" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 flex items-center justify-center shrink-0"><Info className="w-5 h-5 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> About Us
+              <Link href="/about" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Info className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> About Us
               </Link>
-              <Link href="/contact" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 flex items-center justify-center shrink-0"><Mail className="w-5 h-5 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Contact
+              <Link href="/contact" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Mail className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Contact
               </Link>
-              <Link href="/tools" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="w-8 flex items-center justify-center shrink-0"><Wrench className="w-5 h-5 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> All Tools
+              <Link href="/tools" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Wrench className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> All Tools
               </Link>
 
-              <div className="section-divider my-3" />
+              <div className="section-divider my-2" />
 
-              <p className="px-3 py-1.5 text-[0.625rem] font-bold text-text-muted uppercase tracking-[0.12em]">
+              <p className="px-3 py-1 text-[0.625rem] font-bold text-text-muted uppercase tracking-[0.12em]">
                 Categories
               </p>
               {TOOL_CATEGORIES.map((cat) => (
                 <Link
                   key={cat.id}
                   href={`/tools?category=${cat.id}`}
-                  className="group flex items-center gap-3 px-3 py-2.5 text-sm text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors"
+                  className="group flex items-center gap-2.5 px-3 py-2 text-sm text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
-                  <span className="w-8 flex items-center justify-center shrink-0 text-base"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /></span>
+                  <span className="w-7 flex items-center justify-center shrink-0 text-base"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /></span>
                   {cat.name}
                 </Link>
               ))}

@@ -12,6 +12,7 @@ interface SampleAgent {
   type: string;
   county: string;
   specialization: string;
+  registered?: boolean;
 }
 
 const sampleAgents: SampleAgent[] = agentData.sampleAgents as SampleAgent[];
@@ -33,10 +34,10 @@ export default function RealEstateAgentCheckerPage() {
 
   return (
     <ToolShell tool={tool} faq={faq}>
-      <div className="space-y-6">
+      <div className="space-y-4 sm:space-y-6">
         {/* Warning Banner */}
-        <div className="bg-kenya-red/10 border border-kenya-red/20 rounded-xl p-5 flex gap-4">
-          <DynamicIcon emoji="⚠️" className="w-6 h-6 text-gold mt-0.5 shrink-0" />
+        <div className="bg-kenya-red/10 border border-kenya-red/20 rounded-xl p-4 sm:p-5 flex gap-3 sm:gap-4">
+          <DynamicIcon emoji="⚠️" className="w-5 h-5 sm:w-6 sm:h-6 text-gold mt-0.5 shrink-0" />
           <div>
             <h3 className="text-sm font-bold text-kenya-red-light mb-1">Warning: Real Estate Fraud is Common</h3>
             <p className="text-xs text-text-secondary leading-relaxed">Never pay money (viewing fees, deposits) to an agent you haven&apos;t verified. Always insist on seeing an official EARB registration certificate before engaging their services.</p>
@@ -44,14 +45,14 @@ export default function RealEstateAgentCheckerPage() {
         </div>
 
         {/* Verification Steps */}
-        <div className="bg-bg-card border border-border rounded-xl p-6">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-5">{agentData.verificationGuide.title}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-6">
+          <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3.5 sm:mb-5">{agentData.verificationGuide.title}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {agentData.verificationGuide.steps.map((step) => (
-              <div key={step.step} className="bg-bg-elevated rounded-lg p-5 border border-border/50">
-                <div className="w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold mb-3">{step.step}</div>
-                <h3 className="text-sm font-semibold text-text-primary mb-2">{step.title}</h3>
-                <p className="text-xs text-text-secondary leading-relaxed mb-3">{step.description}</p>
+              <div key={step.step} className="bg-bg-elevated rounded-lg p-3.5 sm:p-5 border border-border/50">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold mb-2 sm:mb-3 text-xs sm:text-sm">{step.step}</div>
+                <h3 className="text-sm font-semibold text-text-primary mb-1.5 sm:mb-2">{step.title}</h3>
+                <p className="text-xs text-text-secondary leading-relaxed mb-2 sm:mb-3">{step.description}</p>
                 {step.link && (
                   <a href={step.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs font-semibold text-gold hover:underline">
                     Visit Website <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
@@ -63,11 +64,11 @@ export default function RealEstateAgentCheckerPage() {
         </div>
 
         {/* Red Flags */}
-        <div className="bg-bg-card border border-border rounded-xl p-6">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4"><DynamicIcon emoji="🚩" className="w-5 h-5 text-kenya-red-light inline-block mr-2" />Red Flags to Watch Out For</h2>
-          <div className="space-y-3">
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-6">
+          <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3 sm:mb-4"><DynamicIcon emoji="🚩" className="w-5 h-5 text-kenya-red-light inline-block mr-2" />Red Flags to Watch Out For</h2>
+          <div className="space-y-2.5 sm:space-y-3">
             {agentData.redFlags.map((flag, i) => (
-              <div key={i} className="flex gap-3 items-start border-b border-border/50 pb-3 last:border-0 last:pb-0">
+              <div key={i} className="flex gap-2.5 sm:gap-3 items-start border-b border-border/50 pb-2.5 sm:pb-3 last:border-0 last:pb-0">
                 <DynamicIcon emoji="✗" className="w-4 h-4 text-kenya-red-light font-bold mt-0.5 shrink-0" />
                 <div>
                   <p className="text-sm font-medium text-text-primary">{flag.flag}</p>
@@ -79,16 +80,16 @@ export default function RealEstateAgentCheckerPage() {
         </div>
 
         {/* Sample Agents */}
-        <div className="bg-bg-card border border-border rounded-xl p-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-5">
-            <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">Sample Verified Agents</h2>
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4 mb-3 sm:mb-5">
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">Sample Verified Agents</h2>
             <SearchInput type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search sample agents..." className="input-field text-sm sm:max-w-xs"  onClear={() => setSearch("")} />
           </div>
-          <p className="text-xs text-text-muted mb-4">Note: This is a small sample list. Thousands of agents are registered. Always verify directly on earb.go.ke.</p>
+          <p className="text-xs text-text-muted mb-3 sm:mb-4">Note: This is a small sample list. Thousands of agents are registered. Always verify directly on earb.go.ke.</p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3">
             {sampleFiltered.map((agent, i) => (
-              <div key={i} className="bg-bg-elevated border border-border/50 rounded-lg p-4">
+              <div key={i} className="bg-bg-elevated border border-border/50 rounded-lg p-3.5 sm:p-4">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-sm font-semibold text-text-primary leading-tight">{agent.name}</h3>
                   <span className="bg-kenya-green/10 text-kenya-green-light text-[0.6rem] px-1.5 py-0.5 rounded font-bold uppercase">Verified</span>
@@ -105,9 +106,9 @@ export default function RealEstateAgentCheckerPage() {
         </div>
 
         {/* EARB Contact */}
-        <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">EARB Contact Information</h3>
-          <div className="space-y-2 text-xs text-text-secondary">
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
+          <h3 className="text-sm font-semibold text-text-primary mb-2.5 sm:mb-3 font-[family-name:var(--font-outfit)]">EARB Contact Information</h3>
+          <div className="space-y-1.5 sm:space-y-2 text-xs text-text-secondary">
             <p className="flex items-center gap-2"><DynamicIcon emoji="🏢" className="w-3.5 h-3.5 text-gold shrink-0" /> {agentData.earbInfo.address}</p>
             <p className="flex items-center gap-2"><DynamicIcon emoji="📞" className="w-3.5 h-3.5 text-gold shrink-0" /> {agentData.earbInfo.phone}</p>
             <p className="flex items-center gap-2"><DynamicIcon emoji="📧" className="w-3.5 h-3.5 text-gold shrink-0" /> {agentData.earbInfo.email}</p>

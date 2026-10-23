@@ -96,13 +96,13 @@ function ToolsContent() {
   }, [selectedCategory, searchQuery, sortBy, visitCounts]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-8">
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-2">
+      <div className="mb-4 sm:mb-8">
+        <h1 className="text-2xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2">
           <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
         </h1>
-        <p className="text-text-muted">
+        <p className="text-xs sm:text-base text-text-muted">
           {TOOLS.length} free tools built for Kenya — search or browse by
           category
         </p>
@@ -110,11 +110,11 @@ function ToolsContent() {
 
       {/* Pinned Tools */}
       {mounted && pinnedToolSlugs.length > 0 && searchQuery === "" && selectedCategory === "all" && (
-        <div className="mb-10">
-          <h2 className="flex items-center gap-2 text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">
+        <div className="mb-6 sm:mb-10">
+          <h2 className="flex items-center gap-2 text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2.5 sm:mb-4">
             <Pin className="h-4 w-4 text-gold" /> Pinned Tools
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4">
             {pinnedToolSlugs.map((slug) => {
               const tool = TOOLS.find((t) => t.slug === slug);
               if (!tool) return null;
@@ -123,14 +123,14 @@ function ToolsContent() {
                 <Link
                   key={tool.slug}
                   href={`/tools/${tool.slug}`}
-                  className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl p-4 sm:p-5 block group"
+                  className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl p-3.5 sm:p-5 block group"
                 >
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <span className="text-2xl tool-icon flex-shrink-0">
                       <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
                     </span>
                     <div className="min-w-0 flex-1">
-                      <div className="flex items-center justify-between mb-1">
+                      <div className="flex items-center justify-between mb-0.5 sm:mb-1">
                         <h3 className="text-sm font-semibold text-text-primary group-hover:text-gold transition-colors break-words">
                           {tool.shortTitle}
                         </h3>
@@ -139,7 +139,7 @@ function ToolsContent() {
                         {tool.description}
                       </p>
                       {cat && (
-                        <span className={`badge ${cat.badgeClass} mt-2`}>
+                        <span className={`badge ${cat.badgeClass} mt-1.5 sm:mt-2`}>
                           <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name}
                         </span>
                       )}
@@ -153,7 +153,7 @@ function ToolsContent() {
       )}
 
       {/* Search, Mobile Category Dropdown, and Sort */}
-      <div className="flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center justify-between mb-3">
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-2.5 items-stretch sm:items-center justify-between mb-2.5 sm:mb-3">
         <div className="flex-1 max-w-lg">
           <SearchInput
             type="text"
@@ -195,10 +195,10 @@ function ToolsContent() {
       </div>
 
       {/* Category Pills — Single-line horizontal scrolling pills in the highlighted screenshot style */}
-      <ExpandablePillRow className="mb-3.5">
+      <ExpandablePillRow className="mb-3 sm:mb-3.5">
         <button
           onClick={() => setSelectedCategory("all")}
-          className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
+          className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-3.5 text-xs font-medium border transition-all ${
             selectedCategory === "all"
               ? "border-gold/50 bg-gold/15 text-gold font-semibold"
               : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -213,7 +213,7 @@ function ToolsContent() {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
+              className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-3.5 text-xs font-medium border transition-all ${
                 active
                   ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                   : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -227,7 +227,7 @@ function ToolsContent() {
 
       {/* Results count */}
       {(searchQuery || selectedCategory !== "all") && filteredTools.length > 0 && (
-        <p className="text-xs text-text-muted mb-4">
+        <p className="text-xs text-text-muted mb-3 sm:mb-4">
           Showing {filteredTools.length} of {TOOLS.length} tools
           {searchQuery && <> matching &quot;{searchQuery}&quot;</>}
           {selectedCategory !== "all" && (
@@ -243,7 +243,7 @@ function ToolsContent() {
 
       {/* Tools Grid */}
       {filteredTools.length === 0 ? (
-        <div className="text-center py-10 sm:py-16">
+        <div className="text-center py-8 sm:py-16">
           <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div>
           <p className="text-text-secondary text-sm mb-3">
             No tools found matching &quot;{searchQuery}&quot;
@@ -259,24 +259,24 @@ function ToolsContent() {
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4">
           {filteredTools.map((tool) => {
             const cat = getCategoryInfo(tool.category);
             return (
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}`}
-                className="tool-card bg-bg-card border border-border rounded-xl p-4 sm:p-5 block group"
+                className="tool-card bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 block group"
               >
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2.5 sm:gap-3">
                   <span className="text-2xl tool-icon transition-transform flex-shrink-0">
                     <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
                   </span>
                   <div className="min-w-0">
-                    <h2 className="text-sm font-semibold text-text-primary mb-1 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
+                    <h2 className="text-sm font-semibold text-text-primary mb-0.5 sm:mb-1 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
                       {tool.shortTitle}
                     </h2>
-                    <p className="text-xs text-text-muted line-clamp-2 leading-relaxed mb-2">
+                    <p className="text-xs text-text-muted line-clamp-2 leading-relaxed mb-1.5 sm:mb-2">
                       {tool.description}
                     </p>
                     {cat && (

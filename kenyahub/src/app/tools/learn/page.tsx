@@ -68,25 +68,25 @@ export default function LearnPage() {
 
   return (
     <ToolShell tool={LEARN_TOOL}>
-      <div className="mx-auto max-w-4xl px-0 sm:px-4 pb-8">
+      <div className="mx-auto max-w-4xl px-0 sm:px-4 pb-4 sm:pb-8">
         {/* Hero */}
-        <div className="mb-6 rounded-2xl border border-border bg-gradient-to-br from-bg-card via-bg-card to-gold/5 p-6 text-center sm:p-8">
-          <div className="flex justify-center mb-3"><DynamicIcon emoji="🗣️" className="w-12 h-12 text-gold" /></div>
-          <h2 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
+        <div className="mb-4 sm:mb-6 rounded-2xl border border-border bg-gradient-to-br from-bg-card via-bg-card to-gold/5 p-4 text-center sm:p-8">
+          <div className="flex justify-center mb-2 sm:mb-3"><DynamicIcon emoji="🗣️" className="w-10 h-10 sm:w-12 sm:h-12 text-gold" /></div>
+          <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary sm:text-3xl">
             Kenyan Languages, Proverbs &amp; Oral Wisdom Hub
           </h2>
-          <p className="mx-auto mt-2 max-w-lg text-sm text-text-secondary">
+          <p className="mx-auto mt-1.5 sm:mt-2 max-w-lg text-xs sm:text-sm text-text-secondary">
             Master Kenyan indigenous languages with step-by-step guided skill trees (plus a 1-click option to unlock all modules at once), grammar guides, and over 1,600 authentic Gĩkũyũ and Dholuo proverbs and riddles.
           </p>
 
           {/* Compact stats line */}
-          <p className="mt-3 text-xs font-medium text-gold">
+          <p className="mt-2 sm:mt-3 text-xs font-medium text-gold">
             {readyLangs.length} Courses · {totalModulesCount} Modules · 1,600+ Proverbs &amp; Riddles
           </p>
         </div>
 
         {/* Standalone Horizontal Pill Menu (Courses | Proverbs & Wisdom) */}
-        <ExpandablePillRow className="mb-5">
+        <ExpandablePillRow className="mb-3.5 sm:mb-5">
           {[
             { id: "courses" as const, label: `Courses (${readyLangs.length})` },
             { id: "proverbs" as const, label: "Proverbs & Wisdom" },
@@ -96,7 +96,7 @@ export default function LearnPage() {
               <button
                 key={tab.id}
                 onClick={() => setActiveHubTab(tab.id)}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -113,13 +113,13 @@ export default function LearnPage() {
         ) : (
           <>
             {/* Available Languages */}
-            <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-              <h3 className="flex items-center gap-2 text-sm font-bold text-text-primary">
+            <div className="mb-2.5 sm:mb-3 flex flex-wrap items-center justify-between gap-2">
+              <h3 className="flex items-center gap-1.5 sm:gap-2 text-sm font-bold text-text-primary">
                 <Star className="h-4 w-4 text-gold" /> Available Language Courses ({readyLangs.length})
               </h3>
               <button
                 onClick={() => setShowAllModules(!showAllModules)}
-                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-bg-card px-3 py-1.5 text-xs font-semibold text-gold hover:border-gold/50 transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-bg-card px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-semibold text-gold hover:border-gold/50 transition-colors"
               >
                 <Layers className="h-3.5 w-3.5" />
                 {showAllModules ? "Hide Module Previews" : "Preview All Modules"}
@@ -127,7 +127,7 @@ export default function LearnPage() {
               </button>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
               {readyLangs.map((lang) => {
                 const xpData = progressMap[lang.id] || { xp: 0, streak: 0 };
                 const courseObj = PUBLISHED_COURSES.find((c) => c.config.id === lang.id);
@@ -135,7 +135,7 @@ export default function LearnPage() {
                 return (
                   <div
                     key={lang.id}
-                    className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-5 transition-all sm:hover:border-gold/40"
+                    className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-3.5 sm:p-5 transition-all sm:hover:border-gold/40"
                   >
                     <div
                       className="absolute inset-x-0 top-0 h-1 opacity-60"
@@ -143,9 +143,9 @@ export default function LearnPage() {
                     />
 
                     <Link href={`/tools/learn/${lang.id}`} className="block">
-                      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-3 sm:gap-4">
                         <div className="flex-1 min-w-0">
-                          <h4 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors break-words">
+                          <h4 className="text-sm sm:text-base font-bold text-text-primary group-hover:text-gold transition-colors break-words">
                             {lang.name}
                             <span className="ml-1 text-xs font-normal text-text-muted">
                               ({lang.nativeName})
@@ -154,7 +154,7 @@ export default function LearnPage() {
                           <p className="mt-1 text-[0.7rem] text-text-secondary line-clamp-2 leading-relaxed">
                             {lang.description}
                           </p>
-                          <div className="mt-2.5 flex flex-wrap items-center gap-2">
+                          <div className="mt-2 flex flex-wrap items-center gap-1.5 sm:gap-2">
                             <span className="flex items-center gap-1 rounded-full border border-border bg-white/[0.02] px-2 py-0.5 text-[0.6rem] text-text-muted">
                               <Users className="h-3 w-3" /> {lang.speakers}
                             </span>
@@ -166,12 +166,12 @@ export default function LearnPage() {
                             </span>
                           </div>
                         </div>
-                        <ArrowRight className="h-5 w-5 shrink-0 text-text-muted transition-transform group-hover:translate-x-1 group-hover:text-gold" />
+                        <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-text-muted transition-transform group-hover:translate-x-1 group-hover:text-gold" />
                       </div>
                     </Link>
 
                     {xpData.xp > 0 && (
-                      <div className="mt-3 flex items-center gap-2">
+                      <div className="mt-2.5 sm:mt-3 flex items-center gap-2">
                         <div className="flex-1 h-1.5 rounded-full bg-bg-elevated overflow-hidden">
                           <div
                             className="h-full rounded-full bg-gold"
@@ -192,7 +192,7 @@ export default function LearnPage() {
                     )}
 
                     {showAllModules && courseObj && (
-                      <div className="mt-4 pt-3 border-t border-border/60 space-y-2">
+                      <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-border/60 space-y-2">
                         <p className="text-[0.625rem] font-bold uppercase tracking-wider text-text-muted">
                           {courseObj.units.length} Units · Direct Module Preview:
                         </p>
@@ -220,14 +220,14 @@ export default function LearnPage() {
             {/* Coming Soon */}
             {comingLangs.length > 0 && (
               <>
-                <h3 className="mb-3 mt-8 flex items-center gap-2 text-sm font-bold text-text-primary">
+                <h3 className="mb-2.5 sm:mb-3 mt-5 sm:mt-8 flex items-center gap-2 text-sm font-bold text-text-primary">
                   <Globe2 className="h-4 w-4 text-text-muted" /> Coming Soon
                 </h3>
                 <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
                   {comingLangs.map((lang) => (
                     <div
                       key={lang.id}
-                      className="rounded-xl border border-border/50 bg-bg-card/60 p-4 opacity-70"
+                      className="rounded-xl border border-border/50 bg-bg-card/60 p-3.5 sm:p-4 opacity-70"
                     >
                       <div className="flex items-center gap-3">
                         <div className="flex-1 min-w-0">
