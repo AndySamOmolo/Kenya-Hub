@@ -10,7 +10,7 @@
     "Nyamira"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
+  "dictionaryVersion": "3.2",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Kisii (Ekegusii) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
@@ -1700,10 +1700,17 @@
           "audioFile": null
         },
         {
+          "english": "Mugirango Ancestral Genealogy Recorded by C. W. Hobley (1903, pp. 330–331)",
+          "translation": "Mugirango (recorded in Gori Kogalo's South Kavirondo genealogy as the ancestral progenitor of the Kisii [Abagusii], Bantu Kavirondo, and Waganda)",
+          "pronunciation": "mu-gi-ran-go",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 330–331",
+          "audioFile": null
+        },
+        {
           "english": "God / Supreme Creator (identified with the Sun in early records)",
-          "translation": "Engoro / Erioba",
+          "translation": "Engoro / Erioba (Johnston 1902 & 1919 #7 Ki-guzii) • iviricha (\"God\") & iriuba (\"Sky/Sun\") in Hobley (1902, pp. 89–90 Kossova)",
           "pronunciation": "en-go-ro / e-ri-o-ba",
-          "context": "C. W. Hobley (1902, p. 64) & Sir Harry H. Johnston (1919, p. 57) — #7 Ki-guzii",
+          "context": "C. W. Hobley (1902, pp. 89–90 Kossova) & Sir Harry H. Johnston (1902, p. 905; 1919, Vol. I, p. 57 #7 Ki-guzii)",
           "audioFile": null
         },
         {
@@ -1724,14 +1731,49 @@
           "english": "Spear / Shield / Bow / Arrow / Sword-knife",
           "translation": "ritimo (pl. amatimo) / enguba / obota / omogwe / orobanga",
           "pronunciation": "ri-ti-mo / en-gu-ba / o-bo-ta / o-mo-gwe / o-ro-ban-ga",
-          "context": "C. W. Hobley (1902, pp. 61–79) & Sir Harry H. Johnston (1919, pp. 56–58)",
+          "context": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, pp. 56–58 #7 Ki-guzii)",
           "audioFile": null
         },
         {
           "english": "Finger-millet (wimbi) / Sorghum / Banana / Sweet potato / Honey",
           "translation": "obori / amaemba / rigomia (ritoke) / erabuoni / obouki",
           "pronunciation": "o-bo-ri / a-ma-em-ba / ri-to-ke / o-bo-u-ki",
-          "context": "C. W. Hobley (1902, pp. 61–79) & Sir Harry H. Johnston (1919, pp. 56–58)",
+          "context": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, pp. 56–58 #7 Ki-guzii)",
+          "audioFile": null
+        },
+        {
+          "english": "21 Kossova (Kisii / Abagusii) Clans & 1900 Chiefs Recorded by C. W. Hobley (1902, pp. 50–51)",
+          "translation": "(1) Ugirango (chief Yawanga), (2) Mukimusi (Kimaina), (3) Msasuri (Munari), (4) Magichana (Borura), (5) Manweni (Minyigo), (6) Mkanyimbo (Uturi & Mtaruki), (7) Nyaliwali (Yamombo), (8) Mowasi (Maina), (9) Umachogi (Kitubo), (10) Mukura (Maina & Ndieki), (11) Ukeiri (Mwesaba), (12) Wa Koma (Mwakwega), (13) Woyeki (Sianyo), (14) Mwachawi (Samevita), (15) Ukitaa (Morema), (16) Umwaliwa (Uroo), (17) Umulenda (Munyanja), (18) Mugika (Wato), (19) Yamugei (Sakawa), (20) Mugusero (Umbachi), (21) Matala (Siambe), plus Chief Kitoto of the Kitoto (Kano) plain noted as a pure-bred Kisii (p. 9)",
+          "pronunciation": "u-gi-ran-go / u-ma-cho-gi / u-ki-ta-a / ya-mu-ge-i / sa-ka-wa / mu-gu-se-ro",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. I p. 9 & Ch. V § 1 pp. 50–51",
+          "audioFile": null
+        },
+        {
+          "english": "6 Noun Classes in Kossova (Kisii) Recorded by C. W. Hobley (1902, p. 86)",
+          "translation": "Class I um- → aw- (umuntu → awantu 'person → people', umkungu → awakungu 'woman → women'); Class II o- → mi- (okuwoko → mikowoko 'arm → arms') & u- → i- (umogwe → imegwe 'arrow → arrows', umuchi → imichi 'town → towns'); Class III unchanged (muriro 'fire'); Class IV iki-, ichi- → ivi- (ikisiri → ivisiri 'axe → axes', ichiara → iviara 'finger → fingers', ikirandi → ivirandi 'gourd → gourds'); Class V u- → ama- (uwusio → amasio 'face → faces'), li-, ili- → ma-, ama- (liliga → amaliga 'tear → tears', ligina → amagina 'stone/egg → stones/eggs', ilikori → amakori 'path → paths'), ki- → mi- (kisimba → misimba 'cat → cats'), e-, l- → ama- (erino/lino → amaino 'ivory/tooth → teeth'); Class VI e-, i- → chi-, achi-, si- (imbandi → chimbandi 'groundnut', enjoka → chinjoka 'snake', enzwi → sinzwi 'fish', engoko → achingoko 'fowl', imburi → achimburi 'goat')",
+          "pronunciation": "u-mun-tu a-wan-tu / i-ki-si-ri i-vi-si-ri / li-gi-na a-ma-gi-na / im-bu-ri a-chim-bu-ri",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. VI, p. 86",
+          "audioFile": null
+        },
+        {
+          "english": "Kossova (Kisii) Vocabulary, Numerals, Pronouns & Verb Phrases (Hobley 1902, pp. 89–91)",
+          "translation": "Lexicon (pp. 89–91): iviricha (God), iriuba (sky), insoih (sun), umweri (moon), tzinini (stars), imvula (rain), amachi (water), isekawa (chief), amaemba (dhurra/mtama), owoli (wimbi), matoki (banana), amarua (beer), kisale (twins) • Numerals (p. 91): 1 ejemo, 2 wa-wili / chi-wili, 3 wa-tatu / chi-tatu, 4 wa-nne / chi-nne, 5 tano, 6 tano na emo, 7 tano na eviri, 8 tano na etatu, 9 kienda, 10 ekumi, 20 makumiyawiri, 100 emirongo ekumi • Pronouns & Verbs (p. 91): ninchi (I), nururi (thou), nururio (he), nitwi (we), ninwi (you), embabu (they); ncha hano (come here), genda (go away), ninchi nagenda (I go), narorire (I have seen)",
+          "pronunciation": "i-vi-ri-cha / i-se-ka-wa / e-je-mo / wa-wi-li / ki-en-da / e-ku-mi / n-cha ha-no",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. VII § I, pp. 89–91",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1919–1922) Sub-Group A 6 (#7 Ki-guzii & #7a Ki-kωria) & #8 Ki-šaši Comparative Corpus",
+          "translation": "Vowel Lowering & Prefixes (Vol. I, p. 85 & Vol. II, pp. 24–25): Replacement of i by e and u by ω in prefixes (Ωmω-/Ava-, Ωmω-/Eme-, Eri-/Ama-, Eke-[Ege-]/Evi-, E-[En-]/Ci-[Cin-], Ωrω-/Cin-, Eke- [Class 13 dim.], Ωbω-, Ωkω-/Ωgω-) • Numerals (p. 81): #7 Ki-guzii uses quinary 6–8 (-sanω na i-mω, -sanω na i-were, -sanω na i-satu, ki-anda, i-kumi/ωmu-roṅgω), whereas #7a Ki-kωria uses -sansaba (6), mu-huṅgati (7), mω-nane (8), ki-anda/k-enda (9), i-kumi/ωmu-roṅgu (10), eri-gana (100) • Distinctive A 6 Roots (pp. 73–80): Eri-gωmia/Eri-tωki (banana), Amany-iṅga/Ama-sere (#7a) (blood), Eri/Ici-eri (bull), Omw-ami/Ωmu-nda/Umw-isia (#7) vs. Ωmω-kama (#7a) (chief), E-sese (dog), Eke-reṅge/Eke-sanyi (foot/hand), Omw-iseke/Ωmω-subati (girl/sister), Eri-uba/Ivi-rica/Eny-asai (God), Iny-anaω (#7) vs. E-ṅiti (#7a) (hyena), Eke-iri/Eṅ-gō (#7) vs. Eri-gwe (#7a) (leopard), Ωmu-tienyi (#7) vs. Ωmu-eri (#7a) (moon), Ωmu-basu (sun), Eki-sare (twins)",
+          "pronunciation": "ki-gu-zii / ki-kω-ri-a / sa-nsa-ba / mu-hu-nga-ti / o-mω-su-ba-ti",
+          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 73–97; Vol. II, 1922, pp. 24–26, 497–498)",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 746, 993–1000) Vocabulary Set 9 (#49 Igizii of Kōsōva & Lower Nyando Valley): Complete Lexicon, Numerals, Pronouns & Verbs",
+          "translation": "Tribal distribution (p. 746, 993): known amongst themselves as Aba-kisii (and near Lake Victoria as Awa-kisingiri) and called Kósova by the Masai, inhabiting the hills between the Mau plateau and Lake Victoria and part of the lower Nyando Valley • Complete #49 Igizii Vocabulary (pp. 993–1000): Ant Kinsanako • Termite Cincoke • Hartebeest Eñira • Arm Mokωno (pl. Makono) • Arrow Umugwe (pl. Migwe) • Axe Igizire (pl. Bisire) • Baboon Riño • Back Mωgongo • Banana Rigωmia (pl. Magωmia) • Beard Oboya (Chin Kanyenyωbω) • Bee Cinjuki (Honey Obusie) • Belly Indá • Bird Cinyωni • Blood Manyinga • Body Umubiri • Bone Erigwa (pl. Maγwa) • Bow Ubuta • Brains Owongo • Breast Olubere • Brother Mwana mintu (Sister Omwiseke) • Buffalo Enti enyi mwamo • Buttocks Enyuma • Canoe Ebwatω • Cat Igisimba • Chief Mwami • Child/Son Omwana (my son: Omwana wane) • Cloth Eñgobω • Country Ekibala (pl. Ebi-; Ground Rirωba) • Cow Eñombe (pl. Ciñombe; Ox Nombe eeri) • Crocodile Egugbwie • Date palm Rikendo (Raphia Licemω) • Day/Night Obutuko / Obutukω (Daylight Etera; Darkness Kirima; To-day Rero) • Devil Uruswa (pl. Cinswa; Ghost Mukira) • Dog Sese • Donkey Ritegere • Door Gesie (Doorway Ekige) • Drum Eñoma • Ear Ωutu / Ogutu • Egg Irige (pl. Ama-) • Elephant Enjωbu (Ivory Irinω) • Excrement Amabi • Eye Irisω (pl. Amaisω) • Face Obusiω • Fat Amaguta • Fear Ωmutí • Finger/Toe Ekiala / Ekiara (pl. Ebi-) • Fire Muriro • Fish Kinswe • Foot Ekereñge (Leg Okuguru; Heel Yetíngiro; Knee Eriru) • Forest Egisaka • Fowl Eñkoko • Goat Emburi • God Eriuba (Sun Mubasu) • Grass Obunyanzi • Guinea-fowl Ikanga • Gun Murondo • Hair Etukia • Hand Gisanyi • Head Mutwe • Heart Enteme • Hippo Ifubu • Horn Cingu injala • House Enyumba • Hunger Injala • Hyena Iñyañaō • Iron Ebiuma • Island Riwunju • Knife Umweyu • Lake Enyanja • Leopard Ekeīri • Lips Munua • Magic Rirωgo / Obukanga (Witch Omurωki) • Maize Amadumo • Man Omuntu (pl. Abantu) • Meat Inyama • Moon Mutienyi • Mountain Egitunwa • Nail Ekicara • Name Eriema • Neck Bigωti • Nose Miōlω • Beer Amarwa • Pig Eñkurú • Pigeon Rīrumá • Place Hālia / Ahalia • Rain Imbura • Rat Imbeba • River Orωci • Road Iñgira • Sheep Ñondi • Shield Enguba • Skin Rikoba • Sky Līguru • Sleep Citorω • Smoke Liωki • Snake Injωka • Song Oruembo (pl. Nyembo) • Spear Litumo • Star Etciñeneñene • Stick Enyimbo • Stone Riena • Sweet potato/Yam Libwωni • Tear Ririga • Thief Omwibi (pl. Abaibi) • Thing Egentu (pl. Ebintu) • Thorn Rigwa • Tobacco Tumbato • Tongue Olumeme • Tooth Irinω • Town Omuji • Tree Litumbe / Umute (Wood Ciñkω) • Twins Ekisare • Urine Menyali • War Esegi • Wart-hog Iñgiri • Water Amaji • White man Muzungu • Wife Omukungu (Woman Omωke) • Wind Embeho • Year Omwaka • Zebra Cinjage • Numerals, Pronouns & Verbs (pp. 999–1000): 1 Imu/Yemu, 2 Cibere, 3 Isatu, 4 Inye, 5 Isano, 6 Isano ne mω, 7 Isano na īwere, 8 Isano na isatu, 9 Kianda, 10 Ikumi, 11 Ikumi ne mω, 20 Amakumi awirí, 30 Amakumi gatatu, 40 Amakumi ganne, 50 Amakumi gatano, 100 Emirongo; Ninje (I), Iwe (thou), Ωlia (he), Iewi (we), Inyue (you), Abω (they); -onsi / bonsi (all), Omuntu ωyu / uuria (this / that man), Umute uyu / ulia (this / that tree), Enyumba yane / yāo / yake (my / thy / his house), Omuji uitu (our town), Riroba rienu (your country), Abana babo (their children); -bi (bad), Enkari/-kari (female), -uya/-ya (good: Abantu baya = good men), -kuru (great), -kĕ (little), -saja/-gore (male), Endabu (white), Emuamu (black), -ñgi (plenty), Aīya/Aiga (here), Ariá (there), Yaya (no/not), Inje ndu (I am), Narēnta (I bring), Ngωja / Nangire (I come / I come not), Ngωtenga (I dance)",
+          "pronunciation": "i-mu, ci-be-re, i-sa-tu, i-nye, i-sa-no, ki-an-da, i-ku-mi",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 9 (#49 Igizii), pp. 993–1000",
           "audioFile": null
         }
       ]

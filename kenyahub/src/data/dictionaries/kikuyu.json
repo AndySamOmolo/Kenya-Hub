@@ -618,7 +618,7 @@
           "audioFile": null
         },
         {
-          "english": "5 times",
+          "english": "6 times (six times)",
           "translation": "kathanthatu",
           "pronunciation": "kathanthatu",
           "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
@@ -650,6 +650,13 @@
           "translation": "Sekunde",
           "pronunciation": "sekunde",
           "context": "Gĩkũyũ — GitHub unicode-org/cldr (ki.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Cardinals 1–10,000 & Ordinals in Rev. Fr. A. Hémery (1903, pp. 4–5)",
+          "translation": "Cardinals: 1 imwe/omwe, 2 igere/ere, 3 itato/isato, 4 inya, 5 isano, 6 itandato (isandato), 7 mgwandja, 8 inyanya, 9 kenda, 10 ikumi, 20 merongo ere, 30 merongo isato, 40 merongo ena, 50 merongo etano, 60 merongo itandato, 70 merongo mgwandja, 80 merongo enana, 90 merongo kenda, 100 igana (200 magana mere, 300 magana atato, 800 magana anana), 1,000 ngiri (10,000 ngiri ikumi) — numerals 1, 2, 3, 4, 5, 6, 8 and -igana ('how many?') agree in class prefix • Ordinals: 1st -a mbereirie ('of the beginning'), 2nd -a igere, 3rd -a isato, 4th -a ana, 5th -a tano, 6th -a tandato, 7th -a mgwandja, 8th -a anana, 9th -a kenda, 10th -a kumi, last -a suza",
+          "pronunciation": "im-we, i-ge-re, i-sa-to, i-nya, i-sa-no, i-tan-da-to, m-gwan-dja, i-nya-nya, ken-da, i-ku-mi",
+          "context": "Rev. Fr. A. Hémery, C.S.Sp. (1903) 'English-Kikuyu Hand-Book', Ch. III, Art. II–III, pp. 4–5",
           "audioFile": null
         }
       ]
@@ -11139,24 +11146,24 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "The 13 Agĩkũyũ Clans (Mĩhĩrĩga / Irika) & Totems Recorded by W. S. & K. Routledge (1910 p. 20)",
-          "translation": "Anjiru, Agachiku, Achera, Ambui, Angari (Aithekahuno), Akiuru (Ethaga, ironworkers & rain-makers), Agathigia (Aicakamuyu), Abaura (Angechi), Aregi, Athinuri, Agetunu, Amboi, Aca",
-          "pronunciation": "a-nji-ru, a-ga-chi-ku, a-che-ra, a-mbui, a-n-ga-ri, e-tha-ga",
-          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People: The Akikuyu of British East Africa', p. 20",
+          "english": "The 13 Akikúyu Clans (I-ri-ka / Mĩhĩrĩga), Totemic Prohibitions & Clan Marks Recorded by W. S. & K. Routledge (1910, pp. 20–23)",
+          "translation": "1. A-ché-ra (Thomson’s gazelle totem) • 2. A-ga-chí-ku (forbidden to work iron or act as circumcisors; zebra totem) • 3. A-ga-thi-gí-a (warthog totem) • 4. Ai-cha-ka-mú-yo • 5. Ai-rí-mu • 6. A-ki-ú-ru / M'we-sá-ga / M'bú-ru (forbidden to work iron; males see and stop rain, possess the evil eye cured by spittle-mud on temple, throat, and stomach, and preserve woodland; wild game totem) • 7. Am-bú-i (fish totem) • 8. An-gá-ri / Ai-the-ka-hú-no (sheep’s stomach totem) • 9. An-jí-ru (headed by Chief N'duíni, son of Ra-zí-mi; elephant & birds totem) • 10. An-gó-i • 11. E-thá-ga • 12. Ai-ze-ran'-du (hippopotamus totem) • 13. Ai-zi-e-gé-ni (impala totem)",
+          "pronunciation": "a-che-ra, a-ga-chi-ku, a-ga-thi-gi-a, a-ki-u-ru, m-we-sa-ga, am-bu-i, an-ga-ri, an-ji-ru",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People: The Akikuyu of British East Africa', pp. 20–23 (with C. W. Hobley 1906 totem note on p. 22)",
           "audioFile": null
         },
         {
-          "english": "The 10 Historical Generation Ages (Rĩĩka) & Generational Transfer Ceremony (Itwika, Routledge 1910 p. 9)",
-          "translation": "Tene → Agu → Manduti → Chuma → Ciira → Mathathi → Ndemi → Iregi → Maina → Mwangi (Ceremony: Itwika)",
-          "pronunciation": "te-ne, a-gu, ma-tha-thi, nde-mi, i-re-gi, mai-na, mwan-gi, i-twi-ka",
-          "context": "W. S. & K. Routledge (1910) 'With a Prehistoric People', pp. 8–11 & C. W. Hobley (1922, p. 306)",
+          "english": "The 10 Chronological Ages Since Creation (Rĩĩka) & Generational Transfer (Ai-twi-ka / Itwika, Routledge 1910, p. 9)",
+          "translation": "1. Man-jí-ri (God spoke to first man Mam'-ba, who told his son N'jí-ri to dig channels and drain the earth) → 2. Man-dó-ti (age of evildoers) → 3. Chi-éra (people increased greatly) → 4. Masaí (smearing with red earth became fashionable) → 5. Ma-thá-thi (Akikúyu came from the Akam'ba) → 6. N'dé-mi ('to cut' — Akikúyu cut forest trees) → 7. I-ré-gi ('the revolters' — uprising against the Somalis) → 8. Ma-í-na (generation now dying off) → 9. Mwan'gi (generation in middle life, e.g., Chief Mungé) → 10. Mu-i-run'-gu (rising generation) • Generational ceremony: Ai-twi-ka (Itwika, pp. 9, 237–238)",
+          "pronunciation": "man-ji-ri, man-do-ti, chi-e-ra, ma-sa-i, ma-tha-thi, n-de-mi, i-re-gi, ma-i-na, mwan-gi, mu-i-run-gu",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', pp. 8–11, 237–238",
           "audioFile": null
         },
         {
-          "english": "17 Named Circumcision Initiation Years (1891–1908, Routledge 1910 p. 11)",
-          "translation": "Ngigi (Locusts), Kienjeku, Mutung'u (Smallpox), Ngaragu ya Ruraya (Great Famine), Kamande, Kanyutu, Njenga, Wakanene",
-          "pronunciation": "ngi-gi, mu-tun-gu, nga-ra-gu, ka-man-de",
-          "context": "W. S. & K. Routledge (1910) 'With a Prehistoric People', p. 11",
+          "english": "The 17 Annual Circumcision Initiation Years (1891–1907) Recorded by Rev. A. W. McGregor in Routledge (1910, pp. 10–11)",
+          "translation": "1891 Ngan'do • 1892 Ngi'-ge (large locust) • 1893 Nyon'go (cattle disease) • 1894 Mutung'o (smallpox) • 1895 Thungu'-ya (scented flower) • 1896 Ka-gi'-cha (clan reference) • 1897 Ki-angwa'chi (m'wele failed, sweet potatoes prolific) • 1898 Nu'-thi (jigger / burrowing flea) • 1899 Ki-en-je'ku (septic circumcision wound) • 1900 Ndi'-mu (manioc crop failed) • 1901 Hit'-ti (hyenas) • 1902 Ka-man'di (spear) • 1903 Mo-chi'-ri (a judge) • 1904 Ki-hur'i-a (the scratcher) • 1905 Kan-yo'-to (certain animal) • 1906 Nga'-ra (putting in little heaps) • 1907 Ka-ban'go ('the year on the back')",
+          "pronunciation": "ngan-do, ngi-ge, nyon-go, mu-tung-o, thun-gu-ya, ki-en-je-ku, ka-man-di, mo-chi-ri, ka-ban-go",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', pp. 10–11 (supplied by Rev. A. W. McGregor)",
           "audioFile": null
         },
         {
@@ -11181,10 +11188,10 @@
           "audioFile": null
         },
         {
-          "english": "15 Traditional Kikuyu Herbal Medicines (Mĩthaiga, Routledge 1910 Appendix pp. 346–348)",
-          "translation": "mũthaiga (herbal medicine), mũkawa, mũtamaiyũ (wild olive), mũringa, mũkũyũ, mũgumo, mũthĩga",
-          "pronunciation": "mu-thai-ga / mu-ta-mai-yu / mu-ri-nga / mu-gu-mo",
-          "context": "W. S. & K. Routledge (1910) 'With a Prehistoric People', pp. 346–348",
+          "english": "15 Traditional Kikuyu Medicines (Mu-thái-ga), 5 Initiation Gourds (M'boo-thu) & Divination Lot-Gourd (M'wá-no) in Routledge (1910, pp. 253, 277–279)",
+          "translation": "15 Medicines from Kahiga (Mundu Mugo of Angare/Kahuno clan in Tuso, pp. 277–279): 1. Chembe (children’s diarrhoea), 2. Kagumo (wound healing), 3. Kanugu (magical health), 4. Kihoho (from Kihinga, mixed with Omu, Ngondu, Mukuruka & Lusuko for purifying village and shielding crops from locusts), 5. Kinoria (mixed with Chembe, Mukuyu & Mururi to fatten lean children), 6. Lusuko (from Muhukura, ceremonial initiation), 7. Muchanja Muka (mixed with Kagumo for pneumonia/cough), 8. Mukosho (headache & nausea), 9. Mukuruka (magical & child stomachache), 10. Mukuyu (strengthening children), 11. Mururi (strengthening children), 12. Mwitia (charms for young men/maidens at dances), 13. Ngondu (ceremonial purification), 14. Omu (from Mtanda Mbogo, dysentery & childbirth retention), 15. Siari (vomiting/purgative) + Ira (white diatomaceous earth from Mt. Kenia, River Muimbi, p. 279) • 5 Initiation Gourds (m'boo-thu, p. 253): ru-sú-ku, gon'-du, u'-mu, u-then'-gi, í-ra • Divination Lot-Gourd (pp. 250–254): m'wá-no gourd with m'be-gu pebble/seed/figurine counters and cow-tail stopper ge-chi-si",
+          "pronunciation": "chem-be, ka-gu-mo, ki-ho-ho, lu-su-ku, mu-ku-ru-ka, ngon-du, o-mu, i-ra, m-boo-thu, m-wa-no",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', pp. 250–254, 277–279",
           "audioFile": null
         },
         {
@@ -11193,9 +11200,135 @@
           "pronunciation": "gu-chia-rwo na mbu-ri",
           "context": "W. S. & K. Routledge (1910, pp. 151–153) & C. W. Hobley (1910, p. 105)",
           "audioFile": null
+        },
+        {
+          "english": "Rev. Fr. A. Hémery's (1903, pp. 1–4) Nine Noun Classes, Diminutives (ka-/to-) & Augmentatives (ke-)",
+          "translation": "Cl. I m-, mu-, mo- → a- (mundu/andu, mkikuyu/akikuyu, mzungu/azungu, mnene/anene 'chief', moireto/aireto 'girl'); Cl. II m-, mo-, mw- → me- (mote/mete 'tree', mweri/meeri 'moon', motoe/metoe 'head', mwere/meere 'body', mkiha/mekiha 'vein', mrigo/merigo 'load', mwaka/meaka 'year', mgunda/megunda 'field', mtito/metito 'forest'); Cl. III invariable (nyumba, nyama, ngombe, ngondu, ndigiri, nyoni, ndjogu, ndjira, mbura); Cl. IV ke- → i- (kendo/indo 'thing', kesaka/isaka 'bush/field', kekwa/ikwa 'yam', kelima/ilima 'hill', keroto/iroto 'dream'); Cl. V i- → ma- (inyoro/manyoro 'nose', igongona/magongona 'sacrifice', ihiga/mahiga 'stone', irima/marima 'hole', itumbe/matumbe 'egg', igego/magego 'tooth', plus koto/mato 'ear' & kogoro/magoro 'foot'); Cl. VI zero → ma- (letwa/maletwa 'name', ondo/maondo 'cause/affair', taama/mataama 'cloth'); Cl. VII l-, lo-, lw- → n-/ny-/nd- (logito/ngito 'roof', lwimbo/nyimbo 'song', loleme/ndeme 'tongue', lorigi/ndigi 'rope', loara/ndoara 'nail/claw', loere/ndoere 'side'); Cl. VIII ki- → shi- (kiombe/shiombe 'person/creature', kiongoyo/shiongoyo 'fish', kiara/shiara 'finger', kiuga/shiuga 'dish', kiaro/shiaro 'caravan', kiondo/shiondo 'basket', kiura/shiura 'toad'); Cl. IX ko- verbal nouns (kokwa, kosie, kooraga) • Diminutives: ka- (kangondu, kamunyu, kangombe) & to- (tomae 'a little water', toirio 'a little food'); Augmentatives: ke- (kengombe 'big ox', kemunyu 'plenty of salt')",
+          "pronunciation": "mun-du an-du / ken-do in-do / ki-om-be shi-om-be / ka-ngon-du / to-ma-e",
+          "context": "Rev. Fr. A. Hémery, C.S.Sp. (1903) 'English-Kikuyu Hand-Book', Ch. I, pp. 1–4",
+          "audioFile": null
+        },
+        {
+          "english": "Conjugation of kohora ('to beat') Across 5 Moods & 5 Derivative Forms (Hémery 1903, pp. 9–11)",
+          "translation": "Present: Aff. Ndahora, Ne wahora, Ne ahora, Ne twahora, Ne mwahora, Ne mahora | Neg. Ndihora, Ndohora, Ndehora, Totihora, Motihora, Matihora • Past: Aff. Nderahora / Ndehorete / Ndehorile | Neg. Ndinahora / Ndinahorile, Ndonahora, Ndenahora, Totinahora, Motinahora, Matinahora • Preterit: Ndakehora, Okehora, Akehora • Future: Aff. Ne ngohora, Ne okohora, Ne akohora, Ne tokohora, Ne mokohora, Ne makohora | Neg. Ndikohora, Ndokohora, Ndekohora, Totikohora, Motikohora, Matikohora • Imperative: hora! (pl. horai! / horani!) • Subjunctive: Aff. Njehore / nekahore | Neg. Ndihore / ndikahore • Conditional Pres.: Aff. Ningehora, Ne ongehora, Ne angehora, Ne tongehora, Ne mongehora, Ne mangehora | Neg. Ndingehora (Past: Ningehorile / ningehorete | Neg. Ndingehorile) • Infinitive: Kohora (Neg. Kotihora; habitual suffix -ga: kohoraga, kolyaga, komenyaga) • 5 Derivative Forms (p. 11): (I) Determinative -era (koluta → kolutera, kokinya → kokinyera), (II) Passive -wo/-ilwo (kohora → kohorwo, koona → koonwo), (III) Causative -ia/-ya (kohona → kohonya, koikoroka → koikorokia), (IV) Reflexive -e- (kooraga → koeoraga, kogora → koegora), (V) Reciprocal -na/-ana (kokwenda → kokwendana, kokora → kokorana, kohora → kohorana)",
+          "pronunciation": "nda-ho-ra / ndi-ho-ra / nde-ra-ho-ra / ndi-na-ho-ra / ne ngo-ho-ra / nin-ge-ho-ra",
+          "context": "Rev. Fr. A. Hémery, C.S.Sp. (1903) 'English-Kikuyu Hand-Book', Ch. V, pp. 9–11",
+          "audioFile": null
+        },
+        {
+          "english": "Enclitics (-le, -tya, -ko), 5-Day Relative Time Sequence, Salutations & Phrase-Book Dialogues (Hémery 1903, pp. 13–14, 77–87)",
+          "translation": "Affixed enclitics (p. 13): -le ('when/if': Ndalutara werale negokwata rupia 'If I work I shall get Rupees'; Waigua ngengele-le? oke 'Come when you hear the bell'), -tya ('how/what?': Waekatya? 'What do you do?', Waetagwa-tya? 'What is your name?'), -ko ('where/whence?': We huma-ko? 'Where do you come from?', Wasie-ko? 'Where are you going?') • 5-Day Sequence (p. 13): Iyo (day before yesterday) → Ira (yesterday; mwaka wa ira = last year, mwaka wa iyo = year before last) → Reu / reu-reu (today / now) → Rochio (tomorrow) → Oke (day after tomorrow) • Attention & Salutations (p. 14): Aderere! ('Listen to me!'), Ne muhoro? / We muhoro? → Nde muhoro, muhoro mwega; Farewell: Tiguo uhoro (pl. Tiguoni uhoro) • 5 Phrase-Book Sections (pp. 77–87): I. Usual, II. Servants & Meals, III. A Visit to a Village (msie, ucholo gruel, djohi liquor from oke honey or igwa sugar-cane), IV. Working (mgunda), V. In Caravan (kiaro, akui porters, keraro camp)",
+          "pronunciation": "a-de-re-re / ne mu-ho-ro / ti-guo u-ho-ro / i-yo i-ra re-u ro-chio o-ke",
+          "context": "Rev. Fr. A. Hémery, C.S.Sp. (1903) 'English-Kikuyu Hand-Book', pp. 13–14, 75, 77–87",
+          "audioFile": null
+        },
+        {
+          "english": "Core Cultural & Material Lexicon in Hémery's 1903 Nairobi Vocabulary (pp. 15–75)",
+          "translation": "mzamaki / mnene (chief/judge), mundu mugo (doctor/diviner), mrogi / urogi (wizard / magic), mturi kegera (blacksmith), igongona (sacrifice: kolutera igongona 'to worship by sacrifice'), muma (oath: konywa muma 'to swear an oath'), mugiro (unlawful/taboo), kezito (amulet/charm), chira (advice/council case), some (council), sile (debt: kolya sile 'to borrow'), muku (revenge/retaliation: kolehia muku), mahaza (twins), mberera / mterera (grave/burial-place), ndere (wooden grain mortar), ikombe (store-room/granary), mtoriro (flute), cholo / choro (gruel; also war-horn/trumpet), siaka (quiver for arrows), mkunga-mbura (rainbow), ndamazia (python), huria (rhinoceros), ndwiga (giraffe), njage (zebra), keshwaine (the Coast / Mombasa), Ungudja (Zanzibar)",
+          "pronunciation": "m-za-ma-ki / i-gon-go-na / ko-nywa mu-ma / mu-gi-ro / ke-zi-to / mkun-ga mbu-ra",
+          "context": "Rev. Fr. A. Hémery, C.S.Sp. (1903) 'English-Kikuyu Hand-Book', Vocabulary A–Z, pp. 15–75",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. A. W. McGregor's (1904, pp. iii–iv, 5) Kabeti (Fort Smith) Geography & Orthography (koteng'era vs. kuing'gata)",
+          "translation": "Kabeti (Fort Smith station, Uganda Railway miles 326–360, altitude 4,000–18,000 ft up to Kirinyaga / Kilinyatha / Kireira 'Mount Kenia', pp. iii–iv, 95) • S and Z are not used in Kabeti, Th always taking their places; L and R are interchangeable • ng' (pure velar nasal): koteng'era ('to run / abscond', pronounced koteng-era, not koten-gera) vs. ng'g (velar nasal + hard g): kuing'gata ('to drive away / banish / conquer')",
+          "pronunciation": "ka-be-ti / ki-ri-nya-ga / ko-teng-e-ra / kui-ng-ga-ta",
+          "context": "Rev. A. W. McGregor (1904) 'English-Kikuyu Vocabulary' (SPCK, London), Preface pp. iii–iv & Note p. 5",
+          "audioFile": null
+        },
+        {
+          "english": "Suppletive Kinship Possessives & Family Hierarchy (McGregor 1904, pp. 27, 40, 43, 63, 69, 76, 114, 158–159)",
+          "translation": "Father (p. 63): Baba (my father), Thoguo (your father), Ithi (his/her father), pl. Maithi (forefather: Baba wa tene, pl. Maithi wa tene, p. 69) • Mother (p. 114): Maito (my mother), Nyukwa (your mother), Nyina (his/her mother), pl. Manyina • Siblings & In-Laws: Mwana / Muru wa maito (brother), Mwari wa maito (sister, pl. Ari), Mwari wa nyina / Maramu (sister-in-law, pl. A-), Muthoni (brother-in-law / son-in-law / cousin, pl. A-), Guka / Gukawe (grandfather / grandchild, pl. Maguka / Magukawe, pp. 43, 76), Chocho (grandmother, pl. Machocho)",
+          "pronunciation": "ba-ba / tho-guo / i-thi / mai-to / nyu-kwa / nyi-na / gu-ka / cho-cho",
+          "context": "Rev. A. W. McGregor (1904) 'English-Kikuyu Vocabulary', pp. 27, 40, 43, 63, 69, 76, 114, 158–159",
+          "audioFile": null
+        },
+        {
+          "english": "Three Agricultural Cropping Seasons, Two Rainy Seasons, Directions & 7-Day Time Span (McGregor 1904, pp. 44, 54, 114, 142, 154, 170, 186, 188)",
+          "translation": "Three Cropping Seasons (p. 154): Mwaka wa Njahi (Dolichos lablab bean season), Mwaka wa Mweri (bulrush millet season), Mwaka wa Muheha / Mohea (sorghum season; 'last year' = Mwaka wa njahi or mweri, p. 191) • Two Rainy Seasons (pp. 142, 188): Kathano / Mwaka wa heho (greater rainy / cold season) & Mwaka wa kehu (lesser rainy season) • 7-Day Relative Sequence (pp. 44, 114, 170, 192): Iyo (day before yesterday) → Ira (yesterday) → Reu / Omothi (today) → Rochio (tomorrow) → Oke (day after tomorrow) → Matukwatatu (2 days after tomorrow) → Matukwana (3 days after tomorrow) • Directions & Sky (pp. 29, 34, 54, 111, 160, 182, 186): Itherero (East / sunrise), Naruguru / Gothoa (West / sunset), Mutuiini (zenith, p. 192), Gechigo kya njata (constellation), Njata ya kimure (meteor), Nyata ya rochiini (morning star), Kerima kya mwaki / Kerima kya Ngai (volcano)",
+          "pronunciation": "mwa-ka wa nja-hi / mwa-ka wa mwe-ri / mwa-ka wa mu-he-ha / ka-tha-no / ma-tu-kwa-ta-tu / i-the-re-ro",
+          "context": "Rev. A. W. McGregor (1904) 'English-Kikuyu Vocabulary', pp. 29, 34, 44, 54, 111, 114, 142, 154, 160, 170, 182, 186, 188, 191–192",
+          "audioFile": null
+        },
+        {
+          "english": "Marriage, Law, Blood-Money, Fire-Making & Livestock Terminology in McGregor (1904, pp. 26, 36, 66, 73, 108, 120, 124, 146, 156–157, 185)",
+          "translation": "Marriage (pp. 26, 73, 108, 185): Rorachio (pl. Marorachio, bridewealth paid to bride's father), Wathiomo (ritual goat gift), Kohikia / Kogurana (to marry, of a man; Mugurani bridegroom) vs. Kohika / Koguruo (to marry, of a woman; Muhiki / Muguruo bride), Kirero / Kiriro (wedding) • Law, Ordeal & War (pp. 36, 66, 120, 124, 146, 157): Magambo / Mugambo (blood-money fine for murder; general fine = Irehi, pl. Ma-), Konyua muma (to drink the muma oath/ordeal cup), Thahu & Mugiru (pl. Migiri, ritual defilement/taboo), Ndundu (secret council), Muramati (heir; Oramati inheritance/birthright), Mungu (pl. Miungu, underground war refuge cavern), Ithagu (pl. Mathagu, war-cloak), Githitu (pl. I-, charm) • Fire-Making & Livestock (pp. 29, 66, 75, 156): Kithigethi (pl. I-, firesticks; Kothigetha mwaki 'to twirl fire with sticks'), Kategwa / Kachou (male calf, pl. Tu-) vs. Mori / Kamori (female calf/heifer), Thengi (he-goat) vs. Kaharika (young she-goat) vs. Mugoma (bearing she-goat), Ndoromi (ram/sheep) vs. Muwati (young ewe not yet bearing) vs. Ng'ondu (bearing ewe)",
+          "pronunciation": "ro-ra-chio / wa-thi-o-mo / ma-gam-bo / i-re-hi / mu-ra-ma-ti / ki-thi-ge-thi",
+          "context": "Rev. A. W. McGregor (1904) 'English-Kikuyu Vocabulary', pp. 26, 29, 36, 66, 73, 75, 108, 120, 124, 146, 156–157, 185",
+          "audioFile": null
+        },
+        {
+          "english": "C. W. Hobley's (1910, pp. 134–145) Eyewitness Account of the Southern Kikuyu Kithathi Ordeal, Ku'ringa-thengi Oath, Kamiri's Kutagura Divination & Okiek Land Purchase",
+          "translation": "Early Highland History & Land Tenure (pp. 134–138): Chief Katirimu's purchase of Kiambu forest land from the aboriginal Okiek (Asi / Azi, origin of Athi River name; Chief Karuri born of an Okiek father and Kikuyu mother) for up to 300 goats • Southern Kikuyu Kithathi Trial (pp. 139–142): 4-holed reddish clay tube kept buried in bush, carried in dry banana leaves, placed on a forked stick under a Mwerothi tree; spectators wear Mukengeria creeping grass round the neck while the accused swears with 10 twigs of Mugeri & Munyururu and is purified with white clay Ira before 3 months' isolation • Ku'ringa-thengi Oath (pp. 142–143): Performed by Kuria wa Karuga of the Mu-withiageni (Aizia-geni) or Amberi clan (forbidden to Agachiko, Achero, Mwithaga), binding a speckled male goat with 7 plants (Muhondu, Matura thongu, Mugeri, Lujoi, Mutongu, Rudioi, Muthumba) and breaking its limbs with a stone • Kutagura Twig Divination by Kamiri of Anjiru Clan (pp. 143–145): Using 8 notched twigs (Mugaga, Muchatha, Murumbawe, Mutongo), Mbuthu gourd with Ira chalk, Mwanu pebble gourd stopped with Kichuthu cow's tail, and Mwarisa black powder",
+          "pronunciation": "ki-tha-thi / ku-rin-ga then-gi / ku-ta-gu-ra / ka-mi-ri / o-ki-ek / ka-ti-ri-mu",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. III–IV, pp. 130–145",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 993–1001) Vocabulary Set 9 (#50 Kikuyu or Ikuyu): Phonological Notes (p/f/b → h), Complete Lexicon, Numerals & Negative Verb Paradigm",
+          "translation": "Phonological & grammatical notes (p. 1001): Kikuyu intensifies the avoidance of p, f, and b, shifting them to h (e.g., Bantu root piti / fisi 'hyena' → Hiti), reduces Class 2 prefix Ba- to A- (Mundu → Andu), and uses locative Haha rather than Kamba Pa- • Complete #50 Kikuyu Vocabulary (pp. 993–1000): Ant Kigunyu (pl. Igunyu) • Termite Ukω • Hartebeest Ngondi • Grant's gazelle Ndaratari • Rhino Hulia • Impala Iroña • Colobus Nguyω • Arm Uōkō (pl. Moko) • Arrow Mogue (pl. Megue) • Axe Idānūa • Baboon Nωgω • Back Mugongo • Banana Irigω (pl. Ma-) • Beard Nderu (Chin Kireru) • Bee Juki (Honey Ωωki) • Belly Ndā • Bird Nyωni • Blood Sakamḗ • Body Mwiri • Bone Iende (pl. Ma-) • Bow Ωttắ • Bowels Mara • Brains Tombo • Breast Iria (pl. Maria) • Brother Muru amaitω (Sister Moi retu) • Buffalo Mbωgω • Buttocks Lωcuzḗ • Cat Moruaru • Chief Mozamaki • Child/Son Mwana (pl. Ana; my son: Mwana wakωa; little children: Twana) • Cloth Nguω • Country Sena (Your country: Lukoñgo luanyu; Ground Teri) • Cow Ñombe (Ox Degwa) • Date palm Mukindu • Day/Night Otuku / Otukkω (Daylight/To-day Ωmωzi / Ωmūzi; Darkness Duma) • Spirit/Devil Ngωma (Ghost Ωkuā) • Dog Hui • Door Moromoiné • Dream Irota • Drum Keembe • Ear Γutu (pl. Matu) • Egg Itumbe • Elephant Njōgu (Ivory Luhia la njωgu) • Excrement Mai • Eye Dizω (pl. Maizω) • Face Uziω • Fat Mafuta • Fear Ikorora • Finger/Toe/Nail Kiara / Luara (pl. Ciara) • Fire Moāki • Fish Kiunguyω (pl. Ci-) • Foot Gωnyārere (Leg Mωzimω; Heel Soñūa; Knee Irū; Thigh Kerω) • Forest Izakáinĕ • Goat Mburi • God Ñgai • Grass Nyĕki • Guinea-fowl Nkānga • Gun Mwicinga • Hair Njūere • Hand Luhe (pl. Hĕ) • Head Mutūe (pl. Mi-) • Heart Ngoro • Hippo Ngūω • Horn Lūhia • House Nyumba (Nyumba yakωa / yaku / yake = my / thy / his house) • Hunger Naragu • Hyena Hiti • Iron Mureñga (Beads Megazi) • Island Kecunga • Knife Lωhiω • Lake Iria • Leopard Ngare • Lion Morωzi • Lips Kirωmω / Irωmω • Magic Ωrωgi (Witch Murωgi) • Maize Mbemba • Male Murume (-rume) • Man Mundu (pl. Andu) • Meat Nyama • Monkey Ngema • Moon Mωeri • Mountain Kirima • Name Retōa • Neck Ngingō • Nose Inyurω • Beer Njωhi • Pig Ngurūwe • Pigeon Dutura • Place Haha • Rain Mbura • Rat Mbea • River Luhuī • Road Njira • Sheep Ñondu • Shield Ngō • Skin Luyūa • Sky Itu • Sleep Torω • Smoke Ndωgω • Snake Muraru • Song Ngωcu • Spear İtimω (pl. Ma-) • Star Njata • Stick Siyare (pl. Masiare) • Stone Ihiga • Sun Liyūa • Sweet potato Ekwa (Yam Nguaci) • Tear Leizωli (pl. Mai-) • Thief Mwiẓi • Thing Kindu (pl. Indu) • Thorn Mwigūa • Tobacco Mbake • Tongue Lulimi • Tooth Igegω (pl. Ma-) • Town Mujie (Our town: Muju witu) • Tree Muti (Wood Lωkū, pl. Ngu) • Twins Maaza • Urine Maziguma • War Ita • Wart-hog Ngiri • Water Mae • White man Muzungu • Wife Mundu muka (pl. Andu aka; Maid Karēgo, pl. Turēgo) • Wind Lωhuγω (cold: eho) • Year Mwaka • Zebra Njage • Numerals, Pronouns & Verb Conjugation (pp. 999–1000): 1 Emūĕ, 2 Ihiri (-iri), 3 Izatu, 4 Inya, 5 Izanω, 6 Sasatω, 7 Ngūānja, 8 Nyanya, 9 Kenda, 10 Kumi, 11 Kumi nē mwe, 20 Mirongo iiri, 30 Mirongo ītatω, 40 Makumi anna, 50 Makumi atanω, 100 Igana; Nie (I), Wēĕ (thou), Ulia (he), Izwe (we), Inyue (you), Weu (they); Ōse (all), -ru (bad), Mwega/-ega (good), -nene (great), -nyenyi (little), -eru (white), -iru/wiru (black), -ingi (plenty), Ndiōta (no/not); Narēnta → Ndarehe (I bring), Ndeγωka / Ndiωka (I come / I come not), Neñgωina (I dance), Ndegωkūa (I die), Neñgωnyua / Nendiganyuire / Ndi nānyua (I drink / I drank / I drank not), Nendalīa (I eat) vs. Negative Present Eat Paradigm: Ndikulia/Ndirea (I eat not), Ndulia (thou eatest not), Ndalea (he eats not), Tωtirēa (we eat not), Mutirea (you eat not), Matirēa (they eat not); Nendahehe / Nendakuhĕĕ / Nenda mūhĕĕ (I give / I give you / I gave him), Nendāzie / Nendirazire (I go / I went)",
+          "pronunciation": "e-mue, i-hi-ri, i-za-tu, i-nya, i-za-no, sa-sa-to, ngu-an-ja, nya-nya, ken-da, ku-mi",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 9 (#50 Kikuyu or Ikuyu), pp. 993–1001",
+          "audioFile": null
+        },
+        {
+          "english": "Hildegarde Hinde's (1904, pp. v–xviii, 2–75) Jogowini (Fort Hall / Murang'a) Kikuyu Dialect, 6 Age-Grade Dances, Ornaments & Ku-tinda Verb Paradigm",
+          "translation": "Jogowini Dialect & 6 Plural Classes (pp. vi–vii): recorded by Hildegarde Hinde at Fort Hall (Sept. 1902); (1) mu- → a- (muka → aka, Mukikuyu → Akikuyu), (2) mu- → mi- (muti → miti), (3) i- → ma- (ihiga → mahiga), (4) ki- → i- (kiratu → iratu), (5) n- invariable (nyumba), (6) ka-/ki- → twa-/shi- (kana → twana/siana, kiara → shiara) • Complete Ku-tinda ('to conquer') Paradigm (pp. xii–xviii): Present n-a-tinda; Present Imperfect ni-ki-tinda; Present Perfect ni-tind-eti/-iti; Past Perfect ni-tind-eri, wa/u-tind-eri, a-tind-eri, tu-tind-eri, mu-tind-eri, me/ma-tind-eri; Future ni/nin-ka/ga-tinda (conversational nin-ku-shoka 'I will return'); Imperative tinda! (pl. tindani! / tindai!); Subjunctive ni-tinde; Negative Present n-di-tinda; Negative Past Perfect n-di-na-tinda; Negative Future n-di-ka/ga-tinda; Negative Imperative di/ndi-tinda!; Negative Subjunctive n-di-tinde • Six Age-Grade Dances & 2 War-Songs (pp. 17, 65): muthun guuchi (elders' dance), ngushu (children's dance), kishukia (warriors' dance), nduumo (young women's dance), kitiiro (old women's dance), reegu (uncircumcised boys' dance); War-songs (p. 65): nduugu (sung when going to war) vs. karre (sung when returning from war) • Traditional Ear Ornaments & Salutation (pp. 15, 21, 75): thūmbi (colobus monkey head-dress), ndĕbe (round ear-lobe ornaments), nyorri (curved or double ear-sticks), ichuhi (women's earrings), ndugirri (top edge of ear), mōnni (ear-lobe), ūttu (hole in ear-lobe); Salutation (p. 75): mwohoro! — Reply: mwohoro mwēga! / mwēga munnu!",
+          "pronunciation": "mu-ki-ku-yu a-ki-ku-yu / ni-tind-e-ri / ki-shu-kia / nduu-mo / ki-tii-ro / mwo-ho-ro mwe-ga",
+          "context": "Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages of East Africa', pp. v–xviii, 2–75",
+          "audioFile": null
+        },
+        {
+          "english": "Aboriginal Forest Predecessors of the Akikúyu: The A'si (A-ki-e-ki / N'doróbo) & Pit-Dwelling A-gum'-ba (Routledge 1910, pp. 3–6, 39)",
+          "translation": "A'si / A-ki-e-ki (N'doróbo forest hunters from whom the Akikúyu purchased forest clearings for ~30 goats) • A-gum'-ba (also called A-mai-tho ma chi-a-na / Maitho ma chi-a-na = 'enemies of the children' or 'children’s eyes', dwarfish 4 ft 6 in pit-hut dwellers who dug circular pits on ridges, roofed them with poles and earth, used obsidian implements and wild banana seeds Pl. CVI, and vanished westward)",
+          "pronunciation": "a-si / a-ki-e-ki / a-gum-ba / a-mai-tho ma chi-a-na",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', Ch. I, pp. 3–6, 39 & Plate CVI",
+          "audioFile": null
+        },
+        {
+          "english": "10 Male & 7 Female Life-Stage Terms in W. S. & K. Routledge (1910, pp. 25, 139, 141, 171, 367–380)",
+          "translation": "10 Male Life Stages (p. 25): 1. Ka'-he (small boy) → 2. Ki'-he (pl. i'-hee, big uninitiated boy) → 3. Mu'-mo (newly circumcised youth) → 4. M'wa-na'-ke (adult warrior) → 5. Wa-ka-ny-u-ku (newly married man) → 6. Mun'-du mu-ge'-ma (married man with a child) → 7. Ka-ra-bai' (married man whose children are growing up) → 8. M'zur'-i (elderly man / father of circumcised child) → 9. M'zur'-i a ki-a-na (elderly man needing a walking stick) → 10. M'zur'-i a bou'i (tottering white-headed old man) • 7 Female Life Stages (p. 141): 1. Ka-re'-go (small girl) → 2. Ki-ré-gu / Ki-ri'-gu (big uninitiated girl) → 3. Moi-re'-tu (pl. ai-, initiated maiden) → 4. Mu-hi'-ki (betrothed/married woman not yet a mother) → 5. Wa-bai / M'wa-na-mú-ke (mother of young children) → 6. Mu-ti-mi'-a / Mu-te-mi-a (mother of an initiated child, who shaves her head completely and wears ki-chan'-ga copper earrings) → 7. I-he'-ti (toothless old woman, revered as 'filled with intelligence' and accorded burial, pp. 139, 171)",
+          "pronunciation": "ka-he, ki-he, mu-mo, m-wa-na-ke, m-zur-i, ka-re-go, ki-re-gu, moi-re-tu, mu-hi-ki, mu-ti-mi-a, i-he-ti",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', pp. 25, 139, 141, 171, 367–380",
+          "audioFile": null
+        },
+        {
+          "english": "Official Ranks (Mo-ran'-ja, Ki-á-ma, N'já-ma), Ceremonial Ox-Division & Wergild Scale (Routledge 1910, pp. 44, 195–220)",
+          "translation": "Three Official Ranks (pp. 196–205): 1. Mo-ran'-ja (called N'dun'-du in Karúri’s district, Ke-thi-ga near Nairobi: 1st rank entered by father of a 2nd child upon paying 2–3 sheep) → 2. Ki-á-ma (council of elders/judges, entered by father of a circumcised child paying 1 goat to N'jáma and 2 goats to Kiáma; carries staff of Mu-ti'-gi, Mun'-deren'-du, or Mú-ta-zi, wears ki-chan'-go earring, and carries Ma-tu-ra N'gu-ru leaves) → 3. N'já-ma (co-opted executive & police council of warriors; chief = Mu-tha-má-ki, spokesman = Mo-chí-ri) • Ceremonial Ox Division (p. 202): N'jáma = breast; Kiáma = belly & saddle; Moran'ja = back; Young men = head, neck & ribs; Women = inside • Wergild, Fines & Bridewealth (pp. 44, 215): Killing a man = 100–120 goats + 1 cow (or 9 milk goats / 9 sheep); killing a woman = 30–40 goats (+ 6 sheep); loss of arm or leg = 40–60 goats; whole finger = 30 goats; each finger joint = 10 goats; marriage marli = 30 goats + 5–6 sheep (1 cow = 13 goats; 1 goat = 120 n'da-ra skewered meat pieces, p. 59)",
+          "pronunciation": "mo-ran-ja, n-dun-du, ki-a-ma, n-ja-ma, mu-tha-ma-ki, mo-chi-ri, n-da-ra",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', pp. 44, 59, 195–220",
+          "audioFile": null
+        },
+        {
+          "english": "11 Traditional Dances, 6 Transcribed Songs (Dr. C. S. Myers), Picture-Rattle (Ki-shan'-di) & 5 Guso Riddles (Routledge 1910, pp. 109–116, 178–192)",
+          "translation": "11 Dances by Age & Sex (p. 179): Boys = Ke-boí-i-a, N'goi-í-sa, Mam-bú-ra (great pre-initiation gathering displaying m'wen-gu wooden shield-arch and ma-rú-ngai oval plank shields, pp. 156–164); Men = N'dor-ó-si (forbidden in fort), Ki-bá-ta / N'di'-ri, and Maize-harvest dance with clay figurine; Men & Women = Mui-goí-o (performed at night holding burning brands), Ke-chú-ki-a, Ke-o-na-no, Ku-i-ne-né-ra; Women = Ge-ti-ro, N'dú-mo • Picture-Rattle Performance (pp. 109–112): ku-i'-nya ki-shan'-di (fee: 1 goatskin; Rattle I has 47 incised symbols & Rattle II has 37 symbols including Ndamathia snake, hyena-trap marīga, Orion’s belt mirī ya sulu, Pleiades kirīmera, honey-bird ngūhi, bamboo flute mūtūriru) • 6 Songs Notated by Dr. C. S. Myers (pp. 113–116): Ku-lan-gí-ri (hoeing song), Dú-mo (women’s marriage chorus), Mu-goí-i-o I & II, Ku-lu-mí-si-a (sick-cattle song), and War Song • 5 Verbatim Guso ('Do you hear?') Riddles (p. 192): (1) What hangs down? — Bananas; (2) Why do I hear a noise? — The birds are in the shamba; (3) What takes a winding course? — An N'doróbo on the road; (4) The young men go, the old men stay? — The ashes are poured out, the hearth-stones remain; (5) What goes from hill to hill? — The foot",
+          "pronunciation": "ke-boi-i-a, mam-bu-ra, ki-ba-ta, mui-goi-o, ge-ti-ro, n-du-mo, ki-shan-di, gu-so",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', pp. 109–116, 156–164, 178–192",
+          "audioFile": null
+        },
+        {
+          "english": "Religion, Sacrifice to N'gaí (Mwi-nin-ya-ga), N'da-ma-thi-a River-Snake Worship, N'gor'o vs. N'góma, 29 Thá-hu Offences & Ki-tha-si (Routledge 1910, pp. 225–281)",
+          "translation": "Supreme Deity (pp. 225–236): N'gaí / Mwi-nin-ya-ga ('Possessor of Whiteness') dwelling on Ki-ri-nya-ga / Ki-re-í-ra (Mt. Kenya) and Ny-an-da-rou (Mt. Kinangop); sacrificed to beneath sacred Mu-gú-mu (Ficus) enclosed by 8 shrubs with responses 'N'ga-na!' (Amen) and 'Sa-i! Sa-i!' (Hear, hear!, p. 235) • Ai-twi-ka Snake Worship (pp. 237–238): river-creature N'da-ma-thi-a in the Mathioya River (in charge of Mu-tha-ka, held 1891 & 1903 near Chieftainess Wan'-go, lured out by two N'don-go-ru horns so hairs from its tail are plucked for generational blessing) • Soul vs. Ancestral Spirit (pp. 239–244): N'gor'o (living soul/heart/breath) vs. N'góma (ancestral spirit entering the ta-tu caterpillar, hyena, hun-gu kite, Mu-gú-mu tree, or hearth fire, and dwelling in the underworld Mi-i-ri-ni-ya Mi-kon-go-i) • 29 Causes of Thá-hu & Purification Formulas (pp. 256–263): 'Ta-hí-ka thá-hu!' ('Vomit the sin!'), 'Ta-hí-ka ki-ú-ru!' ('Expel what is bad!'), and 'Ni-da-ni-na thá-hu wa-ku' ('I have purged your sin', swept with 9-plant besoms) • Ki-tha-si Curse Stone (pp. 273–275): 14-holed ancient stone (7 holes on each side) held by De-gua wa Ki-ma-ni near Tú-su, invoked with 7 goats and 7 sticks",
+          "pronunciation": "n-gai, mwi-nin-ya-ga, n-da-ma-thi-a, n-gor-o, n-go-ma, mi-i-ri-ni-ya mi-kon-go-i, ta-hi-ka tha-hu, ki-tha-si",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', Part III, Ch. XII–XIV, pp. 225–281",
+          "audioFile": null
+        },
+        {
+          "english": "Origin Myths & 13 Verbatim Folktales (Ro-gá-no, pl. N'gá-no) in W. S. & K. Routledge (1910, Part IV, pp. 283–328)",
+          "translation": "Origin Myths (pp. 283–284): Mt. Kenya created as God’s resting place when the earth was shallow water; Sun (husband) & Moon (wife) with Stars as Moon’s children, and Mu-ti-ru-m'we-ri (sacred day of rest after the dead moon) • 13 Folktales (pp. 285–328): 1. The Maiden Sacrificed for Rain (Wanjíru sinks into the ground and is rescued by her warrior lover); 2. The Lost Sister (Wagacharaíbu rescues M'wer'u; variant Wam'wéa & Wachéra); 3. The Four Young Warriors (killed by a falling rock after boasting and cursing the path); 4. Kacham'bi & the Kaniónikan'ga Bird (father killed by the giant bird, son Kacham'bi slays it and becomes chief); 5. Wanjíru & the Birds (du-tu-ra doves carry abused stepdaughter to a rich husband); 6. The Greedy Hyena, Sungúra (Hare) & Kihúru (Mongoose/Civet); 7. The Elephants & the Hyenas (hyena eats elephant’s marrow and carries the dead elephant on his head); 8. The Giant of the Great Water (Mukun'ga M'bura / Rainbow-Snake slain by surviving twin brother); 9. The Snake from the Great Water (marries Wadúa, slain by her brother Washúma with his sword); 10. M'wambía & the N'jengé (two-mouthed cannibal outwitted by the boy M'wambía); 11. The Girl who Cut the Hair of the N'jengé (Ilímu); 12. The Forty Girls (Washíshi rescues Moiréwanyína from the Ilímu’s bag); 13. The Man who Became a Hyena (Ilímu shape-shifter exposed by Wanjíru’s little brother)",
+          "pronunciation": "ro-ga-no, n-ga-no, wan-ji-ru, ka-cham-bi, mu-kun-ga m-bu-ra, n-jen-ge, i-li-mu",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', Part IV: Folk-Lore, pp. 283–328",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Material Culture, Dress, Craft & Ritual Glossary in W. S. & K. Routledge (1910, Glossaries pp. 367–380)",
+          "translation": "Dress & Ornaments: chiu-ma (small glass beads), gí-tá-li (zig-zag wire ornament), han-gí (string + wire beads), i-chú-hi (wedding finger ring), i-rú-tu (pl. ma-, earlobe plug of green leaves), ka-thí-ga (white stone shell bead), ke-nói-i (solid wooden ear cylinder), ki-chán-ga / ki-chán-go (wire ring with 3 blue beads worn by mothers of circumcised children & Kiáma elders), m'bu-gú-i (dancing belt of iron jingles), m'nior-o (chain earlobe ornament), mu-niún-gi (brass hoop earrings), mu-rín-ga (collars & bracelets of coiled wire), mu-thí-gi (long staff showing standard of life), n'dé-be (wood ring in perforated earlobe), n'gú-o (woman’s skin petticoat), nió-ri (3 small cane studs in upper ear), thum'-bi (ostrich/colobus warrior headdress) • Weapons, Ironwork & Crafts: ge-chú-hi (iron wedge for splitting logs), gi-ká-ma (slag/dross), í-ha (pig-skin quiver), i-rú-a (tweezers), ka-hiu' (razor), ke-gí-na (white sandy quartz iron ore), kí-gá-ro (barbed arrow-head), ki-rí-a (chisel), kir-í-ha (iron anvil; stone anvil = i-hí-ga), mo-rá-ta (tongs), mu-gwí (pl. mi-, arrow), mu-kó-a (leather strap for carrying loads on forehead), mú-ra (goat-skin bellows), mu-thí-a (plain iron arrow-head), mu-tú-ri (blacksmith; apprentice = mu-rú-gi), n'do-gó-ta (wooden spear-rest used until bridewealth is paid), n'dó-me (warrior’s arm-ring shield), n'gó-i (skin cradle for carrying baby on back), n'gó-zi (sheep-skin shoulder cape), niun'-gu (earthenware pot; broken potneck support = n'gá-ta), ro-híu (double-edged sword in crimson sheath chiu-ra), ru-kó-re (wooden spoon), ru-wén-gu (magical iron rod inherited from father), thé-gi (3-legged wooden stool carved in one piece), thu-rú-a (tuyere clay nozzle), u'-ta (bow) • Homestead, Food & Ritual: ché-hi (gruel of m'wé-le), ge-thú-no (meat feast structure in bush), gí-thá-ka (woodland estate), í-hé-ha (small sleeping hut for unmarried men), i-kúm-bi (granary basket), ki-gó-ro (hut shrine to N'gaí), ki-rá-ro (4-day seclusion in hut after birth), ku-hó-ya N'gaí (to pray/ask N'gaí), ku-rá-gu-ra (to divine), ku-ró-ga (to bewitch), ma-gón-gó-na (sacrifices to N'gaí), ma-hó-ri (lungs), m'bú-ri ya n'gó-ma (sacrifice to spirits), mo-ró-gi (poisoner/wizard), mu-chá-ri (wild date palm stripped for famine pith), mu-kí-ma (mashed banana & beans), mu-rá-tá-na (sausage tree Kigelia africana whose fruit ferments beer), mu-tú-ra (blood & mince-meat sausage), n'gá-ri (leopard, sacred animal across Kikúyu), n'gó-ni (special mark on tongue/teeth), n'jó-hi (sugar-cane beer), ny-úm-ba (woman’s hut), ru-én-i (cleared common grazing ground), thin-gí-ra (man’s hut), u-chú-ru (maize gruel)",
+          "pronunciation": "chiu-ma, ki-chan-ga, m-bu-gu-i, gi-ka-ma, ke-gi-na, kir-i-ha, n-do-go-ta, ru-wen-gu, mu-ra-ta-na",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People', English–Kikúyu & Kikúyu–English Glossaries, pp. 367–380",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910 & Hobley 1910/1922)"
+  "source": "Public Domain Historical Lexicons (Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910 & Hobley 1910/1922); Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II; Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages; W. Scoresby & Katherine Routledge (1910) With a Prehistoric People: The Akikuyu of British East Africa"
 }

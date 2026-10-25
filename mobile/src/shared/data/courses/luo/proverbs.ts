@@ -125,9 +125,9 @@ export const luoProverbs: ProverbEntry[] = [
   },
   {
     id: 15,
-    luo: "Chieng' wuok ne ji duto: Onyango, Oching', Odiambo, gi Otieno (Northcote 1907).",
-    english: "The sun (Chieng') rises for all people across every watch of the day: morning (Onyango), noon (Oching'), afternoon (Odiambo), and night (Otieno).",
-    meaning: "Grounded in G. A. S. Northcote's 'The Nilotic Kavirondo' (1907, p. 62) documenting the Dholuo time-of-day birth-naming system and reverence for Chieng' (the Sun).",
+    luo: "Chieng' wuok ne ji duto: onyango, oching, odiambo, gi otieno • Nying' mag luongo: obele, oliech, gi obonyo (Northcote 1907).",
+    english: "The sun (Chieng') rises for all people across every watch of the day: morning (onyango), noon (oching), afternoon (odiambo), and night (otieno) • Hereditary nicknames: obele (owner of much mtama millet), oliech (slayer of an elephant), and obonyo (the man like a locust).",
+    meaning: "Grounded in G. A. S. Northcote's 'The Nilotic Kavirondo' (1907, p. 62) documenting the 4 verbatim time-of-day birth names (onyango, oching, odiambo, otieno), dream/posthumous ancestral naming, and the 3 hereditary nicknames (obele, oliech, obonyo).",
     category: "life"
   },
   {

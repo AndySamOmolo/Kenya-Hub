@@ -21,9 +21,9 @@
       "entries": [
         {
           "english": "Friend",
-          "translation": "chito-ap-kalyet / weri",
-          "pronunciation": "chee-toh ahp kahl-yeht",
-          "context": "Beech 1911 Suk vocabulary",
+          "translation": "theli-aʻ (pl. theli-ei) / weri",
+          "pronunciation": "theh-lee-ah / weh-ree",
+          "context": "Mervyn W. H. Beech (1911, pp. 54, 109, 117) Suk vocabulary",
           "audioFile": null
         },
         {
@@ -35,9 +35,9 @@
         },
         {
           "english": "Greetings! (Elder/warrior salutation & reply in Beech 1911)",
-          "translation": "Tokwes! (Reply: Tokwes!) / Chamke! (Reply: Chamke!)",
+          "translation": "Tokwes! Chamke-t! — Chamke-cha! — Chamke-kau! — Chamke-sapon! — Chamke-rurwa! — Chamke-cheghwa! / Subai! (Reply: Subai! or Ērpa!) / Tapkwenya! (Reply: Īgo!)",
           "pronunciation": "tok-wes / cham-ke",
-          "context": "Mervyn W. H. Beech (1911, p. 91) — Suk Salutations",
+          "context": "Mervyn W. H. Beech (1911, p. 91) — Full elder greeting litany, male greeting, and female greeting",
           "audioFile": null
         },
         {
@@ -56,9 +56,9 @@
         },
         {
           "english": "Thank you",
-          "translation": "Kanyul / Kongoi",
-          "pronunciation": "ka-nyul",
-          "context": "Pokot (Pökoot) expression of gratitude",
+          "translation": "Sĕra! / Sĕre! (verb: o-soiyen-an) / Kanyul / Kongoi",
+          "pronunciation": "seh-rah / seh-reh / kah-nyool",
+          "context": "Mervyn W. H. Beech (1911, pp. 96, 143) & Pokot gratitude",
           "audioFile": null
         },
         {
@@ -84,79 +84,93 @@
         },
         {
           "english": "I / me",
-          "translation": "ani (ane, prefix a-)",
+          "translation": "ani (subj. prefix o- & suffix -an; obj. suffix -anan; emphatic: ande)",
           "pronunciation": "ah-nee",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 69, 73, 76)",
           "audioFile": null
         },
         {
           "english": "You (singular)",
-          "translation": "inyi (prefix i-)",
+          "translation": "nyī (subj. prefix i- & suffix -enyi; obj. suffix -inyi; emphatic: nyinde)",
           "pronunciation": "ee-nyee",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 69, 73, 76)",
           "audioFile": null
         },
         {
           "english": "He / She",
-          "translation": "ine (prefix ko-)",
+          "translation": "nyende / nye (pl. chane / cha)",
           "pronunciation": "ee-neh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 69, 73)",
           "audioFile": null
         },
         {
           "english": "We / us",
-          "translation": "achak (prefix ki-)",
+          "translation": "acha (subj. prefix ki- & suffix -echa; obj. suffix -acha; emphatic: achane)",
           "pronunciation": "ah-chahk",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 69, 73, 76)",
           "audioFile": null
         },
         {
           "english": "They / them",
-          "translation": "ichak",
+          "translation": "chane / cha (2nd pl. 'ye': akwa, prefix o- & suffix -ekwa)",
           "pronunciation": "ee-chahk",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 69, 73, 76)",
           "audioFile": null
         },
         {
           "english": "Who?",
-          "translation": "ng'o?",
+          "translation": "ñgô? (whose?: po ñgô?)",
           "pronunciation": "ngoh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, p. 74)",
           "audioFile": null
         },
         {
           "english": "What?",
-          "translation": "ne?",
+          "translation": "nē? (of what sort / why?: kue-ne?; why?: mbĕ-ne?)",
           "pronunciation": "neh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 74–75, 90)",
           "audioFile": null
         },
         {
           "english": "Where?",
-          "translation": "ano?",
+          "translation": "ngō? / nyuno? / 'uno? (how?: le-ne? / lata-ne?; when?: ôyu?; how many?: ata?)",
           "pronunciation": "ah-noh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, p. 90)",
           "audioFile": null
         },
         {
           "english": "Today",
-          "translation": "achek (nguno)",
+          "translation": "asis-ei / asis-yetei / asis-ye (now: yē)",
           "pronunciation": "ah-chehk",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 89, 129, 144)",
           "audioFile": null
         },
         {
           "english": "Tomorrow",
-          "translation": "asiis (mutai)",
+          "translation": "asiyech (tomorrow morning: obĕsu; day after tomorrow: kaiy'-oghi)",
           "pronunciation": "ah-sees",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 90, 144)",
           "audioFile": null
         },
         {
           "english": "Yesterday",
-          "translation": "omut",
+          "translation": "omatu (yesterday evening: amena; day before yesterday: oghi)",
           "pronunciation": "oh-moot",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "context": "Mervyn W. H. Beech (1911, pp. 90, 149)",
+          "audioFile": null
+        },
+        {
+          "english": "Good-bye! / Parting salutation: I have gone! (Reply: Thou art going!)",
+          "translation": "Korôton! / Ka-rôt-on! (Reply: I-rôt-enyi!)",
+          "pronunciation": "koh-roh-tohn / ee-roh-teh-nyee",
+          "context": "Mervyn W. H. Beech (1911, pp. 92, 119, 125) — Suk farewells",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Interjections & Conversational Imperatives (Beech 1911, pp. 90–96)",
+          "translation": "ō-wei! / ô! (yes!), ērwoʻ (no! emphatic: erwoʻ-woʻ-woʻ-woʻ-woʻ!), hô! (astonishment), hei-wei! (surprise), woi-ye! (grief), het! (disgust), pfer! (contempt), ĕso! (who knows?), kebe! (forward! let us go!), nam-a! (take hold!), lĭm-a! (listen!), sis-a! (silence!), pist-ena! (leave it!), ros-a! (look!), tep-ena ñgmwen! (sit down!)",
+          "pronunciation": "oh-wey / ehr-woh / keh-beh / lĭm-ah / sees-ah / peest-eh-nah / rohs-ah",
+          "context": "Mervyn W. H. Beech (1911, pp. 90–96) — Suk interjections and idiomatic phrases",
           "audioFile": null
         }
       ]
@@ -170,84 +184,91 @@
           "english": "One",
           "translation": "àkɔ́ɔ́ŋkɔ̀ (akong'o / okongo)",
           "pronunciation": "a-koong-ko",
-          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Two",
           "translation": "oɣë̀ë̀ŋ / òdë̀ë̀ŋ (oghien / odeng')",
           "pronunciation": "o-deeng",
-          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Three",
           "translation": "sä́mä́k (somok)",
           "pronunciation": "sa-mak",
-          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Four",
           "translation": "àŋwân (ang'wan)",
           "pronunciation": "ang-wan",
-          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Five",
           "translation": "múut (muut)",
           "pronunciation": "muut",
-          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Six",
           "translation": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀ (mut ngô okongo, 5 + 1)",
           "pronunciation": "muut ngo a-koong-o",
-          "context": "Beech (1911, p. 62) — Quinary finger-counting system",
+          "context": "Beech (1911, pp. 66–68) — Quinary finger-counting system",
           "audioFile": null
         },
         {
           "english": "Seven",
           "translation": "múut ŋɡɔ́ òdë̀ë̀ŋ (mut ngô oghien, 5 + 2)",
           "pronunciation": "muut ngo o-deeng",
-          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Eight",
           "translation": "múut ŋɡɔ́ sä́mä́k (mut ngô somok, 5 + 3)",
           "pronunciation": "muut ngo sa-mak",
-          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Nine",
           "translation": "múut ŋɡɔ́ àŋwân (mut ngô angwan, 5 + 4)",
           "pronunciation": "muut ngo ang-wan",
-          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Ten",
           "translation": "támàn (taman)",
           "pronunciation": "ta-man",
-          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Twenty (One complete man: all fingers and toes)",
-          "translation": "tiptem / pich okongo",
+          "translation": "tiptem / taman ut-oghieñg",
           "pronunciation": "tip-tem / pich o-kon-go",
-          "context": "Beech (1911, p. 62) — Suk vigesimal/decimal counting",
+          "context": "Mervyn W. H. Beech (1911, p. 67) — Suk cardinals",
           "audioFile": null
         },
         {
           "english": "One hundred",
           "translation": "pokol",
           "pronunciation": "po-kol",
-          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
+          "context": "Beech (1911, pp. 66–68) — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Tens 30–100, Turkana Loan-Numerals (6–9, 70) & Finger-Counting Gestures (Beech 1911, pp. 67–68)",
+          "translation": "6 mut ngô okoñgô / akan-kapei • 7 mut ngô oghieñg / akan-kare • 8 mut ngô somok / akan-kowuni • 9 mut ngô añgwan / akan-ko-mwan • 20 tiptem (taman ut-oghieñg) • 30 sosom • 40 artam • 50 konom • 60 konom ngô taman • 70 konom ngô tiptem / listam • 80 konom ngô sosom • 90 konom ngô artam • 100 pokol (pl. pokoloi-pokoloi, hundreds and hundreds; 1,000 pokol-oi taman)",
+          "pronunciation": "ah-kahn-kah-pey, ah-kahn-kah-reh, ah-kahn-koh-woo-nee, ah-kahn-koh-mwahn • soh-sohm, ahr-tahm, koh-nohm, lees-tahm, poh-kohl",
+          "context": "Mervyn W. H. Beech (1911, pp. 67–68, 144) — Quinary numerals, Turkana borrowings, and finger-counting signs",
           "audioFile": null
         }
       ]
@@ -340,6 +361,20 @@
           "pronunciation": "kaay-neet",
           "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
           "audioFile": null
+        },
+        {
+          "english": "Suk Kinship, Marriage & Social Ranks (Beech 1911, pp. 5–6, 56–63, 99–149)",
+          "translation": "bapu (father, offspring speaking; pl. bapu-tin) vs. kwanda (father, others speaking) • iyu (my mother) / kômet (thy mother) / kame (his mother) • weri / weri-nja (brother, pl. werkoʻ / werkecha) • chep-te-nja (sister, pl. tipi-cha) • mŭnuñg (child/boy/son, pl. mūnuñg; baby/my child: monde-nyan) • chep-to (girl/daughter, pl. ti-pin) • kôrkôʻ (woman/wife, pl. kôru / kôr; old woman: kokōn-yon, pl. kokun) • chi-tañgu (husband, pl. pi-koku) • kukŏʻ (male ancestor/grandfather/grandchild, pl. kuko-tin) & kŏkō (female ancestor/grandmother, pl. koko-tin) • kapikoi / ŏpoi (father-in-law) • pô-ker ('she of the sheep') / pô-tich ('she of the cattle') / po-mwa ('she of the ox', mother-in-law, p. 128) • torus-ion (circumcised youth, pl. torus-tin) & chemer-ion (circumcised girl, pl. chemer-e-tin) • werkoi-yon (medicine-man, pl. werkoi) & che-saket-ian (doctor, pl. che-saket-is) • mongor-ion (rich man, pl. mongôr) vs. mi-won / panan (poor/destitute person, pl. mi / penon)",
+          "pronunciation": "bah-poo / kwahn-dah / ee-yoo / koh-meht / weh-ree / chehp-toh / kohr-koh / koo-koh / poh-kehr",
+          "context": "Mervyn W. H. Beech (1911, pp. 5–6, 56–63, 114–115, 127–128) — Suk kinship and social vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Names for Neighbouring Tribes & Peoples (Pereris, Beech 1911, pp. 56, 145)",
+          "translation": "Pechon (pl. Pôkwut, Suk) • Pi'-pa-pagh ('Seed-people', Agricultural Hill Suk) vs. Pi'-pa-tich ('Cattle-people', Pastoral Suk) • Che-bleñg-in (pl. Chebleñg, Endo & Maragwet of Elgeyo escarpment) • Tikan-in (pl. Tikan, Kamasia/Tugen) • Chemwel-in (pl. Chemwel, Nandi) • Mēi-won (pl. Mēi, Dorobo/Okiek) • Turkonei-in (pl. Tūrkăna, Turkana) • Chambus-in (pl. Chambus, En-jemusi/Ilchamus) • Mosei-in (pl. Masai, Maasai) • Kokoiy-on (pl. Kokoiy-o, Kikuyu) • Ketok-in (pl. Ketoch, Kavirondo) • Kichembei-in (pl. Kichembaʻ, Swahili/Kamba/Baganda) • Marambiy-an (pl. Marambu, Arab) • Muzungu-yon (pl. Muzungu, European)",
+          "pronunciation": "peh-chohn poh-kwoot • cheh-blehng • tee-kahn • chehm-wehl • mey-wohn • chahm-boos • keh-tohk-een",
+          "context": "Mervyn W. H. Beech (1911, pp. 56, 145) — Suk ethnonyms",
+          "audioFile": null
         }
       ]
     },
@@ -352,42 +387,42 @@
           "english": "Eye",
           "translation": "koːŋ (kong', pl. konyen)",
           "pronunciation": "koong",
-          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
+          "context": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Ear",
           "translation": "yiːt (yit, pl. yitwen)",
           "pronunciation": "yiit",
-          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
+          "context": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Nose",
           "translation": "sa̱r̃ (sar, pl. sarin)",
           "pronunciation": "sar",
-          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
+          "context": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Tooth",
           "translation": "ke̱ːla̱t (kelat, pl. kelek)",
           "pronunciation": "kee-lat",
-          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
+          "context": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Tongue",
           "translation": "ŋa̱lya̱p (ng'alyap)",
           "pronunciation": "ng'al-yap",
-          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
+          "context": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Mouth",
           "translation": "ku̱ːt (kut, pl. kutin)",
           "pronunciation": "kuut",
-          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
+          "context": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)",
           "audioFile": null
         },
         {
@@ -535,6 +570,20 @@
           "translation": "eren / onyet (moroi)",
           "pronunciation": "e-ren / on-yet / mo-roi",
           "context": "Beech (1911, p. 20) — Suk ancestral snake belief",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Cattle Terminology, Coat Colours & Horn Shapes (Beech 1911, pp. 8–9, 51–52, 130–131)",
+          "translation": "tainy (pl. tich, cattle in general) • teta (pl. toka, female cow; tainy-nya-le-teta) • kiruk (pl. kir, bull) • egh (pl. egh-in, bullock/ox) • moser (pl. mosôr, heifer) • maugh (pl. mōgh, young calf) & toñgmw-a (pl. toñgmw-oi, half-grown calf) • yōs (pl. yōs-wa, old cow) • arak (pl. arak-ai, cow whose calf has died) • pero-won (pl. pero, raided cattle) • min-yon (pl. min, ox-hide, vs. sera sheep/goat skin) • Coat Colours & Horn Shapes (pp. 130–131): kamar (pl. kamar-tin, prized warrior dance-ox with one horn pointing forward and one backward, p. 8), chemasas (ox with cut ears), koron-doʻ (black & white), cheptoya (dark-coloured ox), kepen-doʻ (white-sided), rel-met (white-headed), sirwei (piebald), kūri (white & brown), tolil-io (cream-coloured), muken-doʻ (brown), samogh (grey), orus (light grey), lemu (hornless), ñgatip (upright horns), kŏdaʻ (horns pointing forward), setan-e (crumpled horns)",
+          "pronunciation": "tah-eeny / teh-tah / kee-rook / ehgh / moh-sehr / mah-oogh • kah-mahr / chehp-toy-yah / see-rwey",
+          "context": "Mervyn W. H. Beech (1911, pp. 8–9, 51–52, 130–131) — Suk cattle classification",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Small Stock, Antelopes, Birds & Wild Fauna (Beech 1911, pp. 51, 100–106, 118–149)",
+          "translation": "Small Stock (p. 51, 119, 138): aran / aretan (pl. ñgaror, goat), kwaghagh (pl. kweghegh, he-goat), sepel-ion (young she-goat), kech (pl. kech-ir, sheep/ewe), makal (pl. mokol, ram), setim (castrated goat/ram), wawa (pl. wara, kid/lamb) • Antelopes & Game (p. 101): chemel (impala), akuete (Grant's gazelle), wabet / kip-tuko (eland), adar (oryx), sīran (dik-dik), sarômat (greater kudu), amusomus / chem-nerechei ('the angry one', waterbuck, taboo to pregnant women, p. 11), chem-nyokos-oʻ (hartebeest), asarich (topi), pogh-an (bushbuck), parañg (reedbuck), sôy (pl. sôy-en, buffalo), kapau (pl. kapau-tin, rhinoceros), mokŏgh / endaruka (hippopotamus), akori (giraffe), che-marmar (zebra), kawagh (pl. kowŏgh, hyena), chep-kônoʻ (jackal), kip-torainy (giant forest pig, p. 10), mulunj-oʻ (warthog/pig) • Birds (p. 104): akalis (ostrich), koñgoi-yon (crested crane), kōkaiy (crow), mangarech (guinea-fowl), sirer-a (hawk), sīch (white hawk/eagle), apiligaret (spur-fowl), achilokokut (marabou stork), tieltel (omen bird, p. 25, 129)",
+          "pronunciation": "ah-rahn ngah-rohr / kehch keh-cheer • cheh-mehl / wah-beht / chehm-neh-reh-chey / kah-pah-oo / kah-wahgh",
+          "context": "Mervyn W. H. Beech (1911, pp. 10–11, 25, 51, 101, 104, 119, 138)",
           "audioFile": null
         }
       ]
@@ -732,6 +781,20 @@
           "pronunciation": "ng'ot / a-kul",
           "context": "Beech (1911, p. 13) — The Suk: Their Language and Folklore",
           "audioFile": null
+        },
+        {
+          "english": "Suk Dress, the Siolip Mud-Chignon Head-Dress, Ornaments & Weapons (Beech 1911, pp. 12–15, 104–141)",
+          "translation": "Garments (pp. 12–13): kalacha (man's V-shaped skin spinal cape), arobet (man's oblong frontal apron), adiñgô (warrior's beaded belt with ter-oi iron-wire beads), koliko (young girl's dress), cheretei / cherit (women's skin clothes, taboo for men to touch), chamunyoʻ (women's festival dress), leget-ioʻ (pregnant woman's cowrie belt), perkeiy-i-pa-kel (below-knee leg garters) • The Siolip Head-Dress & Ornaments (pp. 13–14, 120): siolip (oval ancestral-hair chignon dressed with grey mud munyan), adukus (ostrich-feather ball at nape), kô-pa-songol (gut sockets holding dyed ostrich feathers songol), aloket (curved wire tail at base tipped with hare's tail atērdĭü), aturo (checkered mud forelock), aparparat (warrior's brass/iron nose-plate), wotut (gap where 2 lower middle incisors are extracted & lower-lip piercing), alakam (iron-wire necklets), aturpopo (brass ear-rings), ñgecher (neck/head-stool) vs. kip-tepoñgmwen (sitting stool, p. 137), kweghah (pl. kweghih, hide sandals) • Weapons (pp. 14–15): ñgôt (pl. ñgôt-wa, long tamarind-shafted spear with iron butt-spike asipet & blade guards mal-tin), loñg-ô (narrow oblong hide or wicker shield with central rib ka'-pa-loñgô & handle apapai), kwoañg (bow) & kôti (arrows in merongit quiver: supet wooden head, pem harpoon barb, olkich-oʻ square iron head, rokos round iron point, tipped with mwôno poison), chôk / chŭk (short hill-sword), acharkes (sickle finger-knife) & akoliʻ (finger-hook), akul (circular wrist-knife)",
+          "pronunciation": "kah-lah-chah / ah-roh-beht / see-oh-leep / ah-loo-keht / ah-pahr-pah-raht / ngoht-wah / lohn-goh / ah-chahr-kehs / ah-kool",
+          "context": "Mervyn W. H. Beech (1911, pp. 12–15, 104–141) — Suk material culture, attire, and weaponry",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Agriculture, Pottery (Koko-ter), Metallurgy (Ki-tong-in) & Three Dances (Beech 1911, pp. 15–19, 24)",
+          "translation": "Agriculture & Diet (pp. 9–12, 15–17): musong (lowland irrigated millet), matai (highland rain-fed eleusine), pembe (maize), pagh (corn/grain ground into pesia flour in ken mortar with wero-ken pestle to cook musar porridge), tabaʻ (tobacco carried in akidein snuff-box), komat (honey) & koman (honey-wine fermented with roton bark), pĕrăk (Hill Suk palm-wine), muk-a (milk calabash washed with cow urine and charcoal) vs. sĕt (water calabash), terema (arrow for bleeding cattle necks), kapemb-oʻ (wooden/iron hoe), wasaʻ (bill-hook), torôkwa & tumet (aromatic gum-tree branches placed in plantations to ward off elephants, p. 16) • Pottery & Ironworking (pp. 17–18): koko-ter ('old woman of the pot' making towit meat/vegetable pots, ter-ô-mwôno poison pots, and kesum honey-wine jars from mĕno clay), ki-toñg-in (pl. ki-toñg-u, Hill Suk smiths smelting ñgoriyim iron ore from Kaparloñg with kôpan bellows; no woman may watch them work) • Three Dances & Music (p. 24): (1) amumūr (war-dance with elder's chant, twofold 'amen' bow, animal-mimicry pairs, and bassoon-like wooden trumpet kond-a), (2) kedoñgô (kraal leaping dance), (3) tum (wet-season circumcision and grass-thanksgiving dance), plus pākan (6-stringed tortoise-shell lyre played by elders)",
+          "pronunciation": "moo-sohng / mah-tah-ee / koh-mahn / moo-kah / koh-koh-tehr / kee-tohn-geen / ah-moo-moor / keh-dohn-goh / toom / pah-kahn",
+          "context": "Mervyn W. H. Beech (1911, pp. 9–12, 15–19, 24) — Suk agriculture, crafts, and music",
+          "audioFile": null
         }
       ]
     },
@@ -853,15 +916,15 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "The two Suk tribal moieties & 8 geographical sections",
-          "translation": "Kasauria & Kiplegit (Sections: Seker,wek, Kasauria, Kipkomo, Batei,imo, Endo/Chep-bleng, Marakwet)",
+          "english": "Origin of the Suk (Chôk & Sekēr), the 2 Moieties (Kasauria & Kiplegit), 3 Totemic Clans & 8 Geographical Sections (Beech 1911, pp. 1–5)",
+          "translation": "2 Original Elgeyo Escarpment Tribes (p. 2): Chôk / Chŭk ('short sword') & Sekēr ('cowrie shells') • 2 Intermarrying Tribal Moieties (p. 5): Kasauria (named from sauria, a skin rope used to draw water from a deep rock cistern) & Kiplegit (with branch Kacheribkwaʻ at Kapukōgh) • 3 Exogamous Totemic Clans Recorded from Elder Tiamalok (p. 5 fn. 4): (1) Sopan (Totem: Elephant), (2) Terchon (Totem: Rain; sacrifice a black goat in a dry waterhole during drought), (3) Lakenion (Totem: Bull-frog; harming a frog brings poverty and death in childbirth) • 8 Geographical Sections (p. 1): (1) Chep-tulel, (2) Kerūt (called Weiwei on maps, though wëiwëi means 'lake'), (3) Maghan, (4) Sekēr, (5) Kapkoma (upper Merich river), (6) Muinoʻ (upper Kerūt river), (7) Kapukōgh (beyond the Suam/Turkwel in Uganda), (8) Tiati (Pastoral Suk in the Kerio valley from Mt. Laterok to Lake Baringo)",
           "pronunciation": "ka-sau-ria / kip-le-git",
-          "context": "Mervyn W. H. Beech (1911, pp. 3–5) — The Suk: Their Language and Folklore",
+          "context": "Mervyn W. H. Beech (1911, pp. 1–5) — The Suk: Their Language and Folklore",
           "audioFile": null
         },
         {
-          "english": "The 8 Cyclic Suk Circumcision Age-Sets",
-          "translation": "Mainaʻ, Nyongu, Merkutwa, Kablelach, Kip-koimet, Karongoro, Sowa, Jumoʻ",
+          "english": "The 8 Cyclic Suk Circumcision Age-Sets (Pĕn), 3 Sub-Grades & Prominent Ki-ruwok-u Advisers (Beech 1911, pp. 5–7)",
+          "translation": "8 Cyclic Age-Sets (Pĕn, ~15-year generations, p. 6): (1) Mainaʻ (ages 15–30 in 1911), (2) Nyongu (ages 30–45), (3) Merkutwa (ages 45–60), (4) Kablelach (>60 yrs), (5) Kip-koimet (>75 yrs), (6) Karongoro, (7) Sowa, (8) Jumoʻ (cycle then restarts with Mainaʻ) • 3 Sub-Grades within each Age-Set (p. 6): (1) Nerkau or Chagen-ôpero (seniors; nerkau = reedbuck), (2) Ñgiru (middle; 'a kind of fruit'), (3) Nimur (juniors; 'boulders of rock') • Prominent Ki-ruwok-u (Advisers) & Military Leaders in 1909–1911 (pp. 6–7): Karôle of Rībkoʻ (wealthiest adviser of the Northern Suk), Lowelan & Kamuta (near Baringo), Latanyale (of Tiati), and elected Mainaʻ (Nerkau) war-commanders Kidarile & Lôrimo",
           "pronunciation": "mai-na, nyon-gu, mer-kut-wa, kab-le-lach",
           "context": "Mervyn W. H. Beech (1911, p. 6) — The Suk: Their Language and Folklore",
           "audioFile": null
@@ -874,17 +937,17 @@
           "audioFile": null
         },
         {
-          "english": "Riddle #1: I have two wives who never see each other. — Answer: The eyes.",
-          "translation": "Tiangoi! A-tiny-e korok-chan a-re che-ker-key. — Kôñg.",
-          "pronunciation": "a-ti-nye ko-rok-chan a-re che-ker-key — kong",
-          "context": "Mervyn W. H. Beech (1911, p. 44, Riddle #1)",
+          "english": "Riddle #1 (Beech 1911, p. 43): Unstable so-it-may-not-be-climbed. — Answer: A chain.",
+          "translation": "Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon. (Wrong guess reply: Donguch!)",
+          "pronunciation": "tyahn-goy — tyah! nyehl-nyehl mah-keh-lahny — see-reem-nyohn",
+          "context": "Mervyn W. H. Beech (1911, p. 43, Riddle #1)",
           "audioFile": null
         },
         {
-          "english": "Riddle #2: What goes through the thick forest without being caught by thorns? — Answer: Raindrops / Wind.",
-          "translation": "Tiangoi! Ngo ne-wete tim nte-nam kat? — Ropta.",
-          "pronunciation": "ngo ne-we-te tim nte-nam kat — rop-ta",
-          "context": "Mervyn W. H. Beech (1911, p. 44, Riddle #2)",
+          "english": "Riddle #2 (Beech 1911, pp. 43–44): I wash myself in a goat-horn cup. — Answer: A white-ant's hill.",
+          "translation": "Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
+          "pronunciation": "oh-woond-oy-ah soh-ghoh — tool",
+          "context": "Mervyn W. H. Beech (1911, pp. 43–44, Riddle #2)",
           "audioFile": null
         },
         {
@@ -895,10 +958,10 @@
           "audioFile": null
         },
         {
-          "english": "17 Pokot (Suk / Bawgott) Clans & Totems in Baringo (Baboon, Elephant, Rain, Frog, Lightning, Hawk, Snake, Hyena, Sun, Oribi, Buffalo)",
-          "translation": "Il-Kapis, Il-Parsaina, Sokom, Terik, Talai, Kipketin, Kaptakwong, Kapsogot, Legenion, Sotot, Kamia",
-          "pronunciation": "so-kom, te-rik, ta-lai, le-ge-nion",
-          "context": "Hon. K. R. Dundas (1910, pp. 57–58) & Beech (1911, p. 5)",
+          "english": "24 Suk (Bawgott / Pokot) Exogamous Clans (Orten, sg. Oro) & Their Totems Recorded by Hon. K. R. Dundas (1910, p. 59)",
+          "translation": "Frog (3 clans): Kagorondor, Kaborai, Chepbai • Buffalo (5 clans): Chemmergwan, Sangei, Chebokvo, Kajonyir, Moiyoi • Baboon (1 clan): Kachemmergaw • Sun (1 clan): Kagiserr • Kite (2 clans): Saniak, Kachigawk • Lion (2 clans): Chibberwongo, Chebarsitch • God or Rain (Ellat, 2 clans): Araboin, Kibbesetim • Hyena (2 clans): Chibbekapturu, Legen • Bee (1 clan): Chebajigwo • Zebra (1 clan): Turgoll • Ant-eater (1 clan): Orror • Elephant (1 clan): Sopan • Hyrax (1 clan): Chepbau • Oil-bearing Tree (1 clan): Cheman • Unknown totem: Terem",
+          "pronunciation": "ohr-tehn (sg. oh-roh) • kah-goh-rohn-dohr, chehm-mehr-gwahn, ah-rah-boyn, soh-pahn",
+          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, p. 59",
           "audioFile": null
         },
         {
@@ -1019,6 +1082,55 @@
           "pronunciation": "moh-roy",
           "context": "Beech 1911 & Johnston 1902 Suk",
           "audioFile": null
+        },
+        {
+          "english": "11 Geographical Divisions of the Suk (Bawgott), the 5 Pastoral Sub-Tribes & 11 Hill Suk Sections (Dundas 1910, pp. 56–58, 62)",
+          "translation": "11 Main Geographical Divisions (p. 57): (1) Kapukou, (2) Shok (oldest clan, named from the short sword they manufacture on the Krut/Wehe River above Maerich Pass; descended from Tirruk of Angata e-'m-barta), (3) Kapkoma, (4) Sekerr, (5) Magan, (6) Maerich, (7) Muino, (8) Ngorror, (9) Krut, (10) Cheptulel, (11) Pastoral nomadic Suk of Baringo (~3,000 souls) • 5 Pastoral & Kapukou Sub-Tribes (pp. 56–58): (1) Kasauria (branch of Kapkoma beyond the Suom/Tirkwel River, named from a deep cistern drawn by stages in a bullock skin; raided the stone-kraal builders Moiven / Muttia / Il-Mokwan / I-Sirikwa at Kaparamen → Sirgoit), (2) Kacheripko, (3) Cheptulel, (4) Kiplegit, and (5) Kachenwono (formerly at Ngingyang, exterminated by Samburu), plus Kamiriongo, Tawl (from Chebleng), and Beyus (Kibeyus, p. 62) • 11 Hill Suk Sections from South to North (p. 62): Cheptulel group (1. Laepei, 2. Chepkoa, 3. Kivas, 4. Seya, 5. Soito), Krut group (6. Kaptakau, 7. Ngorror), Maerich group (8. Songutua, 9. Maerich, 10. Chepbinyi), and 11. Sekerr",
+          "pronunciation": "bahw-gohtt • kah-poo-koh-oo, shohk, kah-sah-oo-ree-ah, chehp-too-lehl",
+          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, pp. 56–58, 62",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Deities (Ellap/Ellat, Kerial & Mount Alongol), Healing Prayer, Burial Lustrations & Elephant Preserve Law (Dundas 1910, pp. 59–61, 64)",
+          "translation": "Triad of Deities (pp. 60–61): (1) Ellap / Ellat (benevolent sky and rain god), (2) Kerial (god of thunder), and (3) the Nether-World God at Mount Alongol (where steam vents rise and mirages of flocks and people appear) • Communal Healing Prayer (p. 61): Spoken by an elder standing in the centre of a squatting ring with deep choral responses: 'If this sickness be of the rain or of the grass or of the earth, or if it be from yourself, take it away' • Burial, Twins & Circumcision (pp. 59–60): Married men buried in cattle kraal with milk-gourd and tobacco; ornaments cleansed with milk lustrations after 1 full month; boys circumcised in July (Sukuku) and girls 3 weeks later • Elephant-Hunting Preserve Law (p. 64): Scrub divided into section preserves; if an elephant is wounded in one preserve and dies in another, the ivory belongs to the first wounder and the meat to the section owning the preserve where it died (Kaptakau use poisoned arrows; Maerich & Sekerr hunt on foot with spears; Ngorror spear from tree-platforms)",
+          "pronunciation": "ehl-lahp / ehl-laht • keh-ree-ahl • ah-lohn-gohl • soo-koo-koo",
+          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, pp. 59–61, 64",
+          "audioFile": null
+        },
+        {
+          "english": "The 12-Month Suk (Pokot) Agricultural Calendar Across Kamei & Bengat Seasons (Dundas 1910, p. 72)",
+          "translation": "Wet Season — Kamei ('The months of empty bellies', Sept–Feb): (1) Sept: Tabatch (waddy thorn trees bloom; men & women work in shambas), (2) Oct: Kapsatt (windy; women sow seed), (3) Nov: Kawgelyon (starry nights; women weed), (4) Dec: Kawgei (sheep & goats call to each other; men irrigate), (5) Jan: Mou (whole earth dries up, no food; grain ripening, women & children scare birds), (6) Feb: Terter (small showers lick up the dust; harvest begins) • Dry/Harvest Season — Bengat ('The months of full bellies', March–Aug): (7) March: Bogogma (month of flying ants; men & women in shambas), (8) April: Regesa (heavy rain prevents going abroad; women sow), (9) May: Perrowa (people get about again; women weed), (10) June: Meluwon / Meldag (small supplies of early food from shambas), (11) July: Sukuku (month of mists; boys' circumcision; scaring birds), (12) Aug: Mugeyon (grass dries; main harvest & most honey)",
+          "pronunciation": "kah-mey (tah-bahtch, kahp-sahtt, kahw-gehl-yohn, kahw-gey, moh-oo, tehr-tehr) • behn-gaht (boh-gohg-mah, reh-geh-sah, pehr-roh-wah, meh-loo-wohn, soo-koo-koo, moo-geh-yohn)",
+          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, p. 72",
+          "audioFile": null
+        },
+        {
+          "english": "All 18 Verbatim Suk Riddles (Tiangoi! — Tia!) Recorded by Mervyn W. H. Beech (1911, pp. 43–45)",
+          "translation": "(1) Nyelnyel ma-ke-lany. — Sirim-nyon (Unstable so it cannot be climbed. — A chain) • (2) O-wund-oi-a' soghoʻ. — Tŭl (I wash myself in a horn-cup. — A white-ant hill) • (3) Rel-e' ti'-chu lopai pirir kirokit. — Kelat ngô ñgaliep (White are all my cows, red is the bull. — Teeth and tongue) • (4) Ka-terer-an ôr. — Arawaʻ (I lingered on the road. — The moon) • (5) Ko-choit-a' sirim-nyon kowoʻ kiau. — Ôr ny'o-wet-ei (I threw a chain into the open plain. — The winding road I shall take) • (6) Ka-rat kwoañg. — Kuntopal (He has strung his bow. — Rainbow) • (7) Ko-wuit-a' minyon to chep-toyaʻ. — Yim (I stretched out the skin of a dark-coloured ox. — Clear dark-blue sky) • (8) Ko-lit-a' ñgeñg ke-pirir met. — Terema (I entered a salt-lick and my head became red. — Cattle-bleeding arrow) • (9) Ki-meriensi-oʻ. — Nekergh-is (They stood in a threatening attitude. — Three cooking-pot stones) • (10) Mit-o kwan mu. — Kô ole-mi pich (There are entrails in the stomach. — A house with men in it) • (11) Mi kokel opelion. — Ki-sion (There are stars on the plain. — Yellow Solanum berries) • (12) K-o-p-a' set-a-pogh ka-ma-iyit-an. — Krīsioʻ (I carried a jar of water and did not spill it. — An udder) • (13) Ko-lim-anan atô-ocha loh. — Kadoñgut (I am heard even if afar off. — A cow-bell) • (14) O-cha pertat ma-mi-nye chi nya-nyuru-acha. — Konyen (Swift I am so no one can catch me. — Eyes) • (15) O-cha kogh ma-mi-nye. — Ôr (I am long, none longer. — A road) • (16) I-chi nyelnyel ngô auü. — Sirim-nyon (You are limp yet strong. — A chain) • (17) O-mwuich-a' tuku'-lopai. — Ñgaliep (I am able for everything / lord of all. — The tongue) • (18) M-o-mwulmwul-an-nye. — Tŭl (I do not rock about. — White-ant hill)",
+          "pronunciation": "tyahn-goy — tyah! (dohn-gooch!)",
+          "context": "Mervyn W. H. Beech (1911, Chapter III, pp. 43–45) — Complete corpus of 18 Suk riddles",
+          "audioFile": null
+        },
+        {
+          "english": "The 12 Suk Folk-Tales & 2 Bilingual Interlinear Stories Recorded by Mervyn W. H. Beech (1911, pp. 38–43, 97–98)",
+          "translation": "(1) Kip-kokech ngô Ki-blerkwa ('Mr. Tortoise and Mr. Hare', pp. 38, 97: Tortoise places his brother weriñgwa halfway kareran in the valley ñgenñgen and wins the race) • (2) Kechir ngô Ñgaror ('Sheep and Goats', pp. 38–39, 97–98: Sheep defeat goats in battle ke-pôr-ioʻ and award goats sharp tails sarôr-ai cha ñgatip-ech, beards tamo'-w-ai, and fat bellies, while sheep take fat tails, dewlaps theghiʻ, thick hair, and all coat colours munyan) • (3) The Leopard and the Goat (p. 39: why goats prefer men with black fingers to the leopard's white claws) • (4) Why Some Animals Became Domesticated (p. 39: Torôrut lit a fire in the jungle; wild beasts fled, while cattle, sheep, and goats stayed) • (5) Why the Leopard Walks by Night (pp. 39–40: fear of the jealous lion after feeding the lioness and cub) • (6) The Old Man and His Two Wives (p. 40: the outcast barren wife warns her husband of cattle raiders and is restored) • (7) The Hare and the Elephant (p. 41: hare eats the honey jar on elephant's back, replacing the weight with stones and sand) • (8) The Rhinoceros and the Mason Bees (pp. 41–42: mason bees sting the rhino's nostrils until he yields his waterhole) • (9) The Elephant and the Rhinoceros (p. 42: why the defeated rhino scatters its dung with its horn) • (10) The Elephant and the Hares (p. 42: why hares have short tails and pile their droppings together) • (11) The Origin of War (pp. 42–43: the cow conquered the buffalo, took the hump, and went to villages to become a source of strife to men) • (12) The Power of the Axe (p. 43: debate between the constructive axe öiw-aʻ and destructive fire maʻ)",
+          "pronunciation": "keep-koh-kehch ngoh kee-blehr-kwah • keh-cheer ngoh ngah-rohr",
+          "context": "Mervyn W. H. Beech (1911, Chapter III pp. 38–43 & Part II pp. 97–98)",
+          "audioFile": null
+        },
+        {
+          "english": "Comparative Oaths, Customary Law & Governance of Pastoral Suk, Hill Suk & Endo (Chep-bleñg) (Beech 1911, pp. 2–3, 27–37)",
+          "translation": "Endo (Chep-bleñg) Migration & 4 Chiefs (pp. 2–3, 36): Migrated from Kaptapar beyond Sirgoi after a bird warned them of a falling rock pillar; governed by 4 chiefs wearing a sacred black-and-white goatskin: Lōseron of Merich, Lotiram of Kowo, Wiraporoa of Kumarin, and Kapkornis of Sakat • Oaths (p. 28): Pastoral Suk step over 2 spears point-to-point or smear disputed cattle blood on a dead hyena's teeth; Hill Suk inflate a goat's skin before flaying, pat the suspect's belly with a sandal, or step 3 times over 2 spears facing 3 poisoned arrows while spectators cry 'i-mēgh!' ('You will die!'); Endo drink water poured over the stolen item or murdered man's clothes • Customary Penalties & Bride-Price (pp. 29–35): Pastoral Suk murder fine = 50 cows (never capital punishment); Hill Suk confiscate all property & burn house; Endo hurl a poor murderer from a high rock or fine a rich man 20 goats • Theft: Pastoral Suk = 10x value; Hill Suk = all property (habitual thief killed by his own brother); Endo = 5x value • Bride-Price: Pastoral Suk = 10 cows + 20 sheep; Hill Suk & Endo = 4 jars of palm/honey-wine • Inheritance: Eldest son takes most of father's property, youngest takes most of mother's property (maternal uncle acts as trustee for minors)",
+          "pronunciation": "loh-seh-rohn, loh-tee-rahm, wee-rah-poh-roh-ah, kahp-kohr-nees • ee-mehgh",
+          "context": "Mervyn W. H. Beech (1911, Chapter I pp. 2–3 & Chapter II pp. 27–37)",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 839–854, 903–911) Sūk (Pökoot) Ethnography & Vocabulary Set 1 (#3 Sūk): Chignon Hair-Bags, Circumcision, Musical Notation & Complete Lexicon",
+          "translation": "Ethnography (pp. 839–854): tall stature (up to 6 ft 6 in; Dr. Shrubsall's anthropometric tables on pp. 491–506 record 10 Suk subjects #59–68 with average male height 1,716 mm and cephalic index 76.3); men train hair with fat, clay, and inherited paternal felt into a waist-length bag (chignon) with an opening behind the nape of the neck holding fire-stick and drill, snuff, and beads, decorated with dyed ostrich feathers and a curved wire tail; nose-septum flat florin-sized brass disc, lower-lip quill/brass rod, unmarried girls' cock's-comb sagittal hair ridge, Beisa oryx-horn tobacco box, tiny 8-inch 3-legged forked-branch stool (Fig. 474), mountain Suk circular huts of vertical hewn wooden billets with tall extinguisher-shaped sorghum-stalk roofs, circumcision near Baringo and Upper Kerio, horseshoe-circle jumping dance with stiff erect bodies and arms pressed to sides (Figs. 476–479), and phonograph musical notation of a Suk solo and chorus song (p. 851) • Set 1 Vocabulary (#3 Sūk, pp. 903–908): Termite Toygon/Toygen • Hartebeest Pōʻen • Grant's gazelle Tyebligwe-tión • Kudu Amagatá • Eland Adir • Bushbuck Tyemnerēje • Reedbuck Serán • Oribi Sō • Dik-dik Tyebtergit • Rhino Kopau/Kopan • Giraffe Aguri • Impala Tiāmel • Colobus Kisetyó • Arm/Hand Eγ'/Ēʻ • Arrow Kωyañ • Axe Ωyuōʻ • Baboon Mayos • Back Kurót • Banana Warain • Beard Tamω • Bee Sagam • Belly Mū • Bird Motoin • Blood Kisen • Body Portó • Bone Kōwō • Borassus palm Koañ • Brains Koinyot • Breast Kētán • Brother/Sister Cebtenyō/Ceptenyó • Buffalo Soñgok • Canoe Matemāta • Cat Korinya • Chief Kiruokin • Child Monu/Mondó/Nunω (f. Ciebī/Cep) • Cloth Nañga • Country/Place Ñwoiny/Nonyoin • Cow Tai (f. tai sagate; Ox Tīt/Tuīt) • Crocodile Kūgū • Wild date Sosion • Day Katωwet (To-day Iyḗ) • Daylight/Sun Asess/Ases • Devil Kammá • Dog Kūkwi (f. Nyωle korketoi) • Donkey Sigiria • Door Kukat • Dream Kiruótitó • Drum Tögō/Tokö • Ear Yīt • Egg Rωtin • Elephant Pelion (Ivory Kelat) • Eye Koñ • Face Tokoit • Fat Mwaγ • Fear Tigūs/Tiggis • Finger/Toe Mörn/Mören • Fire Māʻ • Fish Kaγa • Foot Kel (Leg Tωga) • Fowl Aluru • Ghost Kamyān • Goat Artan (m.) / Sakate (f.) / Norōr, Aranya (flock) • God Elī́t • Grass Susuon • Guinea-fowl Mañgarek • Gun Gitiole • Hair Pution • Head Māt/Met • Heart Ramas • Heel Tutuin • Hippo Makan • Honey/Mead Kumāt/Komat • Horn Kuiyeγ • Horse Añωle • House Goʻ • Hunger Kamĕi • Hyena Kawaγ • Hyphæne palm Orōn • Iron Kamonai • Island Tortoren • Knee Kūtun • Knife Rωtuĕ • Leopard Merīl • Lion Ñotūny • Lips Kōte • Magic/Witch Pōnin • Maize Paγ • Man Kitō (pl. Pik) • Meat Pēny' • Monkey Kenkenna • Moon Arāwa • Mountain Tuluo • Mouth Naliap • Nail Nwōno • Name Kainat • Neck Kāt • Night Oγuō / Kalug-wōγwo • Nose Serr • Pig Mulunjō • Pigeon Căporom • Rain Karōbon • Rat Muriān • River Pωγ/Pwey • Road Orr • Sheep Kḗcĕ • Shield Loño • Skin/Hide Sera/Serḗ • Sky Poltó • Sleep Rūen • Smoke Iγet • Snake Moroi • Son Munu • Song Tūm • Spear Ñot • Star Kogel • Stick Topōγ • Stone Kōγ • Tear Lωg • Thief Tsorin / Corin • Thigh Kupes • Thing Tugun • Thorn Katá/Katĕ • Tobacco Taba • Tongue Ñaliep • Tooth Kēlat • Town Nópop • Tree Két (Wood Kuen) • Twins Solωwa/Salá • Urine Ñol • War Lūk/Lukĕ • Wart-hog Kubgoigoit • Water Pōye • White man Kucomba • Wife Korkó • Wind Yomat • Woman Diebtó (young Ciēbē) • Year Peñat • Zebra Tyamarmar • Numerals, Pronouns & Verbs (pp. 909–911): 1 Okoño, 2 Ωyeñ, 3 Somok, 4 Añwan, 5 Mūt, 6 Ekani kapei, 7 Mūt' oyeñ, 8 Gangaūni, 9 Ekan kumwon, 10 Tommon, 11 Tommon ga pei, 12 Tommon ga are, 13 Tommon ga uni, 14 Tommon g'oñwan, 15 Tommon omet, 20 Tiptem, 30 Ωsom, 40 Tommon oñwan, 50 Tommon mūt, 100 Pokol; Anḗ (I), Nyi (thou), Cicinω (he), Mū (we), Agwa (you), Pucuno/picuno (they); Tokol (all), Karām (good), Yā/rā (bad), Wω! (great), Manneñ (little), Riel (white), Tω (black), Cañ (plenty), Kacer (no/not); Ko-inyω (my house), Kō-nyanyi (thy house), Ka-yinω/Kō-munyi (his house), Kat' anja (our town), Kore gwa (your country), Mone cā (their children); Ane kañon / Mωñunanye (I come / I come not), Kedoñó (I dance), Kamḗ (I die), Ωluwăn / Kωluanu omutu (I drink / I drank yesterday), Ane kāman (I eat), Kḗpĕ (I go), Oñgetan / Mongetanye (I know / I know not), Ωcaminyi (thou lovest), Kainet erūa (Why art thou sleeping?), Kewe niōno (Where did he go?)",
+          "pronunciation": "o-ko-no, o-yeng, so-mok, ang-wan, mut, tip-tem, o-som, po-kol",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 839–854 & Ch. XX, Set 1 (#3 Sūk), pp. 903–911",
+          "audioFile": null
         }
       ]
     },
@@ -1029,54 +1141,55 @@
       "entries": [
         {
           "english": "Small",
-          "translation": "mening (chering)",
+          "translation": "meneñg (pl. mingech)",
           "pronunciation": "meh-neeng",
-          "context": "Mervyn Beech 1911 p. 68 Suk adjectives",
+          "context": "Mervyn Beech 1911 pp. 63–66 Suk adjectives",
           "audioFile": null
         },
         {
           "english": "Big",
-          "translation": "oo (echin)",
+          "translation": "wō (pl. echen)",
           "pronunciation": "oh / eh-cheen",
-          "context": "Mervyn Beech 1911 p. 68 Suk adjectives",
+          "context": "Mervyn Beech 1911 pp. 63–66 Suk adjectives",
           "audioFile": null
         },
         {
           "english": "Bad",
-          "translation": "ya (oko)",
+          "translation": "ghaʻ / thāʻ (pl. ghach / thach)",
           "pronunciation": "yah / oh-koh",
-          "context": "Mervyn Beech 1911 p. 68 Suk adjectives",
+          "context": "Mervyn Beech 1911 pp. 63–66 Suk adjectives",
           "audioFile": null
         },
         {
           "english": "Good",
-          "translation": "karam (nyikan)",
+          "translation": "karam (pl. karam-ech)",
           "pronunciation": "kah-rahm",
-          "context": "Mervyn Beech 1911 p. 68 Suk adjectives",
+          "context": "Mervyn Beech 1911 pp. 63–66 Suk adjectives",
           "audioFile": null
         },
         {
           "english": "White",
-          "translation": "ril (leel)",
+          "translation": "ril / rel (pl. rel-ech)",
           "pronunciation": "reel / lehl",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         },
         {
           "english": "Black",
-          "translation": "tuw (tui)",
+          "translation": "tōgh (pl. tu-w-ech)",
           "pronunciation": "toow",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         },
         {
           "english": "Red",
-          "translation": "pirir",
+          "translation": "pirir (pl. pirech)",
           "pronunciation": "pee-reer",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]
     }
-  ]
+  ],
+  "source": "; Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II"
 }

@@ -2591,14 +2591,14 @@
           "english": "Mount Kenya Southeastern & Eastern Dialect Varieties Recorded by Sir Harry Johnston (1919 #11)",
           "translation": "Kîembu (Embu), Kimbeere (Emberre), Gĩcuka (Cuka), Kĩmwimbi (Mwimbe), Kĩtharaka (Tharaka), Kĩigoji (Igoji)",
           "pronunciation": "ki-em-bu, ki-mbee-re, gi-chu-ka, ki-mwim-bi",
-          "context": "Sir Harry H. Johnston (1919) 'A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, p. 66",
+          "context": "Sir Harry H. Johnston (1919) 'A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 98–112",
           "audioFile": null
         },
         {
           "english": "Cardinal Numerals 1–10 in Johnston (1919 #11 Embu / Emberre)",
           "translation": "imwe (1), igiri (2), ithatu (3), inya (4), ithano (5), ithathatu (6), mugwanja (7), inyanya (8), kenda (9), ikumi (10)",
           "pronunciation": "i-mwe, i-gi-ri, i-tha-tu, i-nya, i-tha-no",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 72)",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107)",
           "audioFile": null
         },
         {
@@ -2606,6 +2606,13 @@
           "translation": "Kiama kia Ngome & Mũtĩ wa Ngai (Mũgumo sacred fig tree)",
           "pronunciation": "ki-a-ma kia ngo-me / mu-gu-mo",
           "context": "C. W. Hobley (1910, pp. 146–155) & Johnston (1919)",
+          "audioFile": null
+        },
+        {
+          "english": "Mount Kenya Dialect Variants in Johnston (1919, Vol. I, pp. 98–112 #11 E. Embu, C. Cuka, Mw. Mwimbe, M. Meru #11a, Emb. Emberre, Þ. Þeraka, Ig. Igωji)",
+          "translation": "Dialectal Variants Recorded by Johnston (pp. 98–106): Mū-kω (white ant/termite, Embu), M-buta (back, Cuka), Ki-ai pl. ci- (man's breast, Embu) / Ru-ria pl. n-dia (Meru) / Ru-gωnω (Mwimbe), Mū-rata (brother, Meru/Mwimbe), N-jamba (bull, Cuka/Meru), Rū-sena (country, Meru), Mu-tinjire (doctor/diviner, Embu/Meru), Ṅ-giti (dog, Meru/Embu), Mū-raṅgω (door, Meru), A-va (father, Embu) / Ba-va (father/grandfather, Meru) / Ūma (grandfather, Embu), G-itigirra (fear, Meru) / Ṅ-korora (fear, Mwimbe), Gi-þaka (forest, Meru), N-kuā (ghost, Meru), Ki-hīa (he-goat, Meru), Mu-ruṅgu (God, Cuka/Embu/Meru), Mū-þiginyω (heel, Embu) / N-tωgigω (Meru) / Ki-soṅua (Mwimbe), Kī-būtū (hoe, Embu) / I-þanwa (hoe, Meru), Gī-þūnω (hut, Embu), M-būta (hunger, Meru), N-gatia (lion, Nyeri/Meru), Mami (mother, Meru), N-jīwa (pigeon, Meru), Kī-gwū/Gωcu (song, Embu) / Mū-ūmba (song, Meru), Kī-rāma (spear, Meru), Siyare (stick, Meru), N-twmōi (tail, Meru), Mā-zigūma (urine, Meru), Rω-e (water, Meru), Mū-gūrra (woman, Meru), Kī-šīī (womb, Meru)",
+          "pronunciation": "mu-kω / ki-ai / mu-ti-nji-re / gi-bu-tu / gi-thu-nω / ki-gwu",
+          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 98–112; Vol. II, 1922, pp. 28–30)",
           "audioFile": null
         }
       ]

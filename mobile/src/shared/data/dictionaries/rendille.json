@@ -799,7 +799,7 @@
           "english": "Camel (Collective)",
           "translation": "gaal (nyirakh = camel calf)",
           "pronunciation": "gahl / nyee-rahkh",
-          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
@@ -834,91 +834,98 @@
           "english": "Donkey",
           "translation": "eyhel",
           "pronunciation": "ey-hehl",
-          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Horse",
           "translation": "faras",
           "pronunciation": "fah-rahs",
-          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Leopard",
           "translation": "kabih",
           "pronunciation": "kah-bee",
-          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Elephant",
           "translation": "arbah",
           "pronunciation": "ahr-bah",
-          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Rhinoceros",
           "translation": "worsis",
           "pronunciation": "wohr-sees",
-          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Ostrich",
           "translation": "nyugul",
           "pronunciation": "nyoo-gool",
-          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Shield",
           "translation": "gashan",
           "pronunciation": "gah-shahn",
-          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Sword / Knife",
           "translation": "bilau",
           "pronunciation": "bee-lah-oo",
-          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Bow",
           "translation": "biso",
           "pronunciation": "bee-soh",
-          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Arrow",
           "translation": "laho",
           "pronunciation": "lah-hoh",
-          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Iron",
           "translation": "birlab",
           "pronunciation": "beer-lahb",
-          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Cooking Pot",
           "translation": "diri",
           "pronunciation": "dee-ree",
-          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
           "audioFile": null
         },
         {
           "english": "Tobacco",
           "translation": "tumbo",
           "pronunciation": "toom-boh",
-          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "The 7 Rendille (Rāndili) Names for the Days of the Week & Sabbath/Travel Prohibitions (Hobley 1910, pp. 162–163)",
+          "translation": "1st day: Hahat (fast day — no animals slaughtered for food; prayer to God) • 2nd day: Hura hakhan (Rendille Sabbath — no work done, though animals may be slaughtered; hura = sun) • 3rd day: Sere (sere = day) • 4th day: Kumat • 5th day: Ser hakhan (prohibited day — may not travel, move grazing ground, or make cattle medicine) • 6th day: Sere adi ('the day of the goats and sheep') • 7th day: Sere gal ('day of the camel')",
+          "pronunciation": "ha-hat, hu-ra ha-khan, se-re, ku-mat, ser ha-khan, se-re a-di, se-re gal",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 162–163",
           "audioFile": null
         }
       ]

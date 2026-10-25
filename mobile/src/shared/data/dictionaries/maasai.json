@@ -13,7 +13,7 @@
   "hasAudio": false,
   "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
-  "contributorNote": "Maasai (Maa) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
+  "contributorNote": "Maasai (ɔl Maa) public-domain vocabulary compiled strictly from Hildegarde Hinde (1901) 'The Masai Language: Grammatical Notes Together with a Vocabulary' (Cambridge University Press), Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', A. C. Hollis (1905) 'The Masai: Their Language and Folklore' (Clarendon Press, Oxford), and C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes' (Cambridge University Press).",
   "categories": [
     {
       "id": "greetings",
@@ -59,7 +59,7 @@
           "english": "Hello",
           "translation": "Sopai! (resp. Epa!) / Takwenya! (resp. Iko!)",
           "pronunciation": "soh-pah-ee / tah-kweh-nyah",
-          "context": "Hinde 1901 p. 29 & Hollis 1905 p. 99 salutations",
+          "context": "Hinde 1901 p. 41 & Hollis 1905 pp. 101–102, 284–285 salutations",
           "audioFile": null
         },
         {
@@ -2642,7 +2642,7 @@
           "english": "wisdom, knowledge, cleverness",
           "translation": "eng-eno (enkeno)",
           "pronunciation": "eng-eno (enkeno)",
-          "context": "Maasai (Hollis 1905, p. 248)",
+          "context": "Maasai (Hollis 1905, p. 243, Proverb #29)",
           "audioFile": null
         },
         {
@@ -2656,7 +2656,7 @@
           "english": "udder",
           "translation": "e-nyawa",
           "pronunciation": "e-nyawa",
-          "context": "Maasai (Hollis 1905, p. 254)",
+          "context": "Maasai (Hollis 1905, p. 255, Riddle #8)",
           "audioFile": null
         },
         {
@@ -3269,24 +3269,24 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "Traditional Maasai Salutations (Hinde 1901 p. 29 & Hollis 1905 p. 99): Warriors/Men & Women/Elders",
-          "translation": "Sopai! — Reply: Epa! (Men/Warriors) | Takwenya! — Reply: Iko! (Women/Elders)",
+          "english": "Traditional Maasai Salutations (Hinde 1901 p. 41 & Hollis 1905 p. 99): Warriors/Men & Women/Elders",
+          "translation": "Sopai! / Soboi! — Reply: Epa! / Eber! (Men/Warriors) | Takwenya! / Tagwenia! (pl. Tagwenia bōōgi!) — Reply: Iko! / Īgo! (Women/Elders) | Nassak! (On shaking hands, Hinde 1901 p. 41)",
           "pronunciation": "so-pai / e-pa / ta-kwe-nya / i-ko",
-          "context": "Hildegarde Hinde (1901) 'The Masai Language', p. 29 & A. C. Hollis (1905) 'The Masai', p. 99",
+          "context": "Hildegarde Hinde (1901) 'The Masai Language', p. 41 & A. C. Hollis (1905) 'The Masai', p. 99",
           "audioFile": null
         },
         {
-          "english": "Major Maasai Tribal Divisions, Sub-Districts & Clans (Hollis 1905 pp. 260–264)",
-          "translation": "Il-Aiser (L-Aiser, clan of the Oloiboni), Il-ukumai (L-ukumai), Il-Mokesen (L-Mokesen), Il-Molelian (L-Molelian), Il-Tarosero (L-Tarosero)",
+          "english": "Major Maasai Tribal Divisions: 2 Moieties, 4 Principal Clans, 22 Sub-Clans & 5 Districts (Hollis 1905 pp. 260–261)",
+          "translation": "2 Moieties & 4 Clans: (I) 'L-oodo-kishu ('the blood-red cattle'): (1) 'L-Aiser ('N-Gidongi [Oloiboni's family], Il-Parkeneti, Il-Lughumae, Il-Partimaro), (2) Il-Mengana ('L-Aitayok, 'Siria, Il-Marumae, Il-Makuperia); (II) 'L-oorook-kishu ('the black cattle'): (3) Il-Mokesen (Il-Mokesen-aate, Il-Partalale, Il-Tarosero, Il-Kiporon [snake-charmers/rain-makers], Il-Tanap-owaru [lion-killers]), (4) Il-Molelyan (Il-Molelyan-aate, Il-Mamasita, Il-Pojos, Il-Kipuyoni [smiths], Il-Moshono, Il-Masangua, Il-Mokorere) • 5 Districts (il-oshon): Kaputiei, En-aiposha (Naivasha), Kisongo, 'L-uasin-gishu, 'L-Aikipyak",
           "pronunciation": "il-ai-ser, il-lu-ku-mai, il-mo-ke-sen, il-mo-le-li-an, il-ta-ro-se-ro",
-          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', pp. 260–264",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Part IV, pp. 260–261",
           "audioFile": null
         },
         {
-          "english": "Maasai Place-Name Etymologies Recorded by Hildegarde Hinde (1901 p. 36) & Hollis (1905)",
-          "translation": "En-gare Nyrobi (Nairobi = 'Cold Water'), Ol-doinyo Oibor (Mt. Kilimanjaro/Kenya = 'White Mountain'), En-gare Na-okwa (Naivasha), Ol-doinyo Eburru ('Steaming Mountain')",
+          "english": "Maasai Place-Name Etymologies, 3 Traditional Songs & 3 Social Castes Recorded by Hildegarde Hinde (1901 p. 42) & Hollis (1905)",
+          "translation": "8 Toponyms in Hinde (1901, p. 42): (1) Kenia = Oldonyo gēri ('the striped mountain'), (2) Kilima Njaro = Oldonyo eborr ('the white mountain'), (3) Suswa = Oldonyo kenyuki ('the red mountain'), (4) Nairobi = 'Cold' (the river emerging icy cold from the forest into the open), (5) Ngongo bagas = 'the eye of the Spring', (6) Eldonyo sabuk = 'the big mountain', (7) Gwasso kidong = 'the river of the ollokidong quiver-wood trees', (8) Enaibasha (Naivasha) = 'the great water or sea' • 3 Social Castes (p. 42): Orrmāssani (pl. Elmāsai, Pastoral Maasai), Olldōrrobon (pl. Dōrrobo, Hunters), Orrgunoni (pl. Elgunonu, Iron-workers) • 3 Verbatim Songs (p. 42): (1) Children's Rain Song: 'Siumbi aielisiumbi ngai kijaiga eo!' ('God we sing, God rain we pray thee oh!'), (2) Medicine Song: 'Aamon yi ngai, aamon m\\'Batian' ('We pray God, we pray Mbatian'), (3) Warriors' War Song against Sendeyo: 'Sendeyo manoloimoti tendeboi errakenja bonik oldash irremeta' ('Sendeyo has done evil, we were friends once but now we go to fight him with our spears, the big ones in front, the small behind')",
           "pronunciation": "en-ga-re ny-ro-bi / ol-doi-nyo oi-bor / ol-doi-nyo e-bur-ru",
-          "context": "Hildegarde Hinde (1901) 'The Masai Language', p. 36 & A. C. Hollis (1905)",
+          "context": "Hildegarde Hinde (1901) 'The Masai Language', p. 42 & A. C. Hollis (1905)",
           "audioFile": null
         },
         {
@@ -3309,9 +3309,79 @@
           "pronunciation": "eng-ai na-rok / eng-ai na-nyo-kie",
           "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', p. 264",
           "audioFile": null
+        },
+        {
+          "english": "Classified Table of Maasai Gilat (Orot / Njomito) Across Oodo Mongi (Red Bull) & Orok Kiteng (Black Cattle) (Hobley 1910, pp. 119–125)",
+          "translation": "I. OODO MONGI (Red Bull): (1) Il-Mokesen (13 sub-gilat: Le-Seko, Il-Mamasita, L-Omoll, M-Birrda [Rasiti], Le-Rakita, Le-Kaiki, Le-Kipolonga, Le-Makiri, L-Taarongojine, Le-Kirikoris, Le-Parkinambe, Il-Kiporōn, L-Oiger), (2) L-Taarosero (2 sub-gilat: Loomishir Olengoilii, Le-Napowaru), (3) Il-Molelyan (8 sub-gilat: Il-Parsekero, Le-Lema [Ol-Egelishu], Le-Dagua, Il-Moingo, Il-Massangua, Il-Keri Ngishu, L-Eparsagaa, Il-Enditi), (4) L-Mamasita • II. OROK KITENG (Black Cattle): (5) Il-Lugumai (5 sub-gilat: Le-Parseroi [Kilengo & Masikonde], Le-Tootu, Le-Parkurito, Il-Motosio, Le-Shombo), (6) L-Aitayok (4 sub-gilat: Il-Miñgana, Sumaga, L-Siria [Dalalogotok of Nyeri], Il-Moshono), (7) L-Aiser (7 sub-gilat: L-Partimaro / N-Gidongi [Ol-Onana & Sabori], L-Kitoe, Le-Parsoi, Le-Kuluo, Le-Toya, Le-Musere, Lodogishu) • Blood-money (pp. 122–123): 100 cattle for unprovoked murder (100 sheep if provoked; 30 sheep for a woman), contributed and distributed across sub-gilat",
+          "pronunciation": "oo-do mon-gi / o-rok ki-teng / il-mo-ke-sen / l-taa-ro-se-ro / il-mo-le-lyan / il-lu-gu-mai / l-ai-ta-yok / l-ai-ser",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. I, pp. 119–125",
+          "audioFile": null
+        },
+        {
+          "english": "Eo Endomono Child-Naming Ceremony, 7 Sirata Shield Patterns & 4 Uasingishu Totemic Gilat (Hobley 1910, pp. 126–129, 161)",
+          "translation": "Eo Endomono Naming Rite (pp. 126–127): Performed at age 2 on the 4th (girl) or 5th–8th (boy) day of the moon (avoiding Ol-adalo month), roasting a dark red sheep, shaving heads with milk/water and anointing with sheep fat & Engoina red earth; married wife nicknames Na Tahana ('from near by') vs. Nadungwangop ('from afar') • 7 Sirata Shield Patterns (pp. 127–128): (1) Sirata ol orasha (crested crane Naitolya markings — Sigirari, Loitai, Damat), (2) Sirata Sambu (zebra markings introduced by Laiboso of Il Peles — Purko, Gekonyuki, Dalalogotok), (3) Sirata ol ebor (white kraal center — Matapato, Kapotei, Dogilani), (4) Sirata ol enapita legai (half red, half white — junior Gekonyuki, Matapato, Kapotei), (5) Sirata ol olorika / ol engerere (spotted cattle / stool — Purko junior), (6) Sirata el engameta (ndito bead chevron designed by Naiterukop — El Kereao), (7) Sirata el langarbwali & ol longño star (red bravery badge awarded by head laigwanan) • 4 Uasingishu Totemic Gilat (p. 161): El Mogishu (totem Emogishui blue starling; laibon Ol Emberei), El Masarunye (totem Hyaena; Mlarininyi), El Siria (totem Enjoshowi honeyguide; Ol Nangoris), L-Nyaya (totem Lion; Lutuno Ol Enolul Sayen)",
+          "pronunciation": "e-o en-do-mo-no / si-ra-ta sam-bu / si-ra-ta ol e-bor / el-la-ngar-bwa-li / el mo-gi-shu",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. II pp. 126–129 & Ch. VI p. 161",
+          "audioFile": null
+        },
+        {
+          "english": "Hildegarde Hinde's (1901) Grammatical Corpus: 23 Rules, Sexagesimal Īp (= 60), 39 Verb Conjugations, Suppletive Kinship & Vocabulary (pp. v–ix, 1–75)",
+          "translation": "Sexagesimal Counting & Finger-Gestures (Rule 10, p. 5): 1 nabu, 2 ari/are, 3 ūni, 4 ungwun, 5 miet (closed fist), 6 elle, 7 nabishāna, 8 issiet, 9 nawdu/endōrroi, 10 tomon (two closed fists), 20 tigitum, 30 ossom, 40 arrtam, 50 orrnom, 60 = īp (equalling a warrior company of 60 men, signaled by snapping the fingers; īp ari = two sixties), tangasaino (first), korom (last) • Negation & Interrogative Liaison (Rules 3 & 23, pp. 2–3, 10): meti / mer (before consonants except s) / me (before s: me sidai, me sabuk) / m- (before vowels: maiulu 'I do not know') & ete / etwa / etu; ainyo inserts b / be / ba (ainyo berora / oberora 'why sleep?', ainyo belo 'why go?', ainyo basidai 'why good?') • Suppletive Parental Reference (p. 35 n.): baba (my father) & yeyu (my mother) are taboo for others' parents, which take minyi / menye (thy/his/their father) & ngutungy / ngotongy / notorn (thy/his/their mother) • Selected Cultural & Lexical Items (pp. 43–75): tudungu orrori (adjudge, lit. 'cut the palaver/noise', p. 47), engiondo (basket, from Kikuyu, p. 48), ngwashin (potato, from Kikuyu, p. 65), ndudu (jigger, from Swahili, p. 59), ngaioulu (syphilis, lit. 'God knows', p. 70), etau ngolong engang (rainbow, lit. 'the boma of the sun', p. 66), ngare nairora (pools, lit. 'sleeping waters', p. 65), embwāda (lower central incisor extraction gap, p. 72), lalalegishia (two upper front teeth, p. 70), naiseologunia (pl. esseologunia, shaven-headed probationary warrior, p. 73), emanyata (warriors' village, p. 73), ollobul (warriors' meat-eating camp, p. 52), bagerr / bageten (father-/mother-in-law, p. 55), elashomba / enganjura / lorrida (Swahili people, p. 70), luungū (Wakamba, p. 73), geshuaini (coast/Europe, p. 54)",
+          "pronunciation": "ip / ta-nga-sai-no / ko-rom / tu-du-ngu or-ro-ri / e-tau ngo-long en-gang / em-bwa-da / e-ma-nya-ta / ol-lo-bul",
+          "context": "Hildegarde Hinde (1901) 'The Masai Language: Grammatical Notes Together with a Vocabulary' (Cambridge University Press, pp. v–ix, 1–75)",
+          "audioFile": null
+        },
+        {
+          "english": "A. C. Hollis's (1905) 16 Chronological Masai Age-Sets (Il-porori, 1791–1904) & 3 Circumcision Cuts (pp. 261–263)",
+          "translation": "2 Ages (ol-poror, ~7.5 yrs: Right-hand e-murata e-tatene & Left-hand e-murata e-kedyanye) = 1 Generation (ol-aji, ~15 yrs) • 3 Cuts per Age: (1) 'L-changen-opir ('The big ostrich feathers'), (2) 'L-tareto ('The helpers'), (3) 'L-paringotwa lang ('Our fleet runners') • 16 Remembered Ages (p. 262): 1. Il-Tapari (1791), 2. Il-Kinyoyo (1799), 3. Il-Merisho (1806), 4. Il-Meirishari (1814), 5. Il-Kidotu (1821), 6. Il-Tuati (1829, Supeet's age), 7. Il-Kigirie (1836), 8. Il-Changen-opir (1844), 9. Il-Kimunyak (1851, Mbatyany's age), 10. Il-nyangusi I (1859), 11. Il-nyangusi II / Il-Aimer (1866), 12. Il-Laimer / Il-Dalala (1874), 13. Il-Talala / Il-Kishumu (1881), 14. Il-Kiponi / Il-Chungen (1889), 15. Il-Kishon / 'Seure / Il-Kitoip (1896, Lenana & Sendeyo's age), 16. Il-Meitaroni (1904)",
+          "pronunciation": "il-po-ro-ri / ol-a-ji / e-mu-ra-ta e-ta-te-ne / e-mu-ra-ta e-ke-dya-nye / l-cha-ngen-o-pir",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Part IV, pp. 261–263",
+          "audioFile": null
+        },
+        {
+          "english": "A. C. Hollis's (1905) 4 Masai Seasons ('N-gataitin oo-'l-apaitin), 12 Lunar Months & Divisions of the Day (pp. 332–334)",
+          "translation": "I. Ol-okii (Heavy Rains): 1. Kara-obo / Loo-'n-gokwa ('very wet'), 2. Kipern ('heavy showers'), 3. L'-iarat ('green valleys') • II. Ol-oiorujuj (Drizzling / Cold Season): 4. Pushuke ('flowering o-sinandei'), 5. 'N-dungus ('all night drizzling'), 6. Ol-oiborare ('clearing clouds') • III. Ol-tumuret (Short Rains): 7. Ol-gisan ('showering'), 8. Ol-odalu ('scorching sun', inauspicious month for weddings/circumcision), 9. Loo-'n-gushu ('fresh green grass') • IV. Ol-ameyu (Dry / Hunger Season): 10. Kuj-orok ('black grass after fire'), 11. Oani-oingok ('restless bulls'), 12. Loo-'n-Gokwa / Ol-oingoni ('evening Pleiades') • Divisions of the Day (p. 332): En-gululunget / En-daikinoi (4–5 a.m. twilight), E-nyorno (5–6 a.m. dawn), Eng-akenya (6–8 a.m. sunrise), E-muti-ang (8–10 a.m.), En-dama (10 a.m.–4 p.m. midday), E-ilata-ang (4–6 p.m.), E-teipa (6–8 p.m. evening), En-gewarie (night)",
+          "pronunciation": "ol-o-kii / ol-oi-o-ru-juj / ol-tu-mu-ret / ol-a-me-yu / ka-ra-o-bo / ki-pern / l-ia-rat / pu-shu-ke",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Part VI, pp. 332–334",
+          "audioFile": null
+        },
+        {
+          "english": "Masai Cosmology, Myths of Naiteru-kop & Le-eyo, Astronomy & the Oloiboni Genealogy (Hollis 1905, pp. 264–281, 324–329)",
+          "translation": "Myths (pp. 264–281): Eng-ai Narok (benevolent black god whose thunder says 'Ruru-ruru-ruru: Tapala, miar!') vs. Eng-ai Nanyokye (red god above whose thunder says 'Pel-pel-pel'); En-e-'n-aunir (one-legged half-man half-stone/lion forest devil); Naiteru-kop ('Beginner of the Earth'), the Dorobo, Elephant & 5-headed Serpent; Le-eyo's reversal of the death spell ('Tungani, tua, niitu; ol-apa, tua, nilotye' — 'Man, die and do not return; Moon, die and return') and bequest of the ol-lenywa fly-whisk to his younger son • Astronomy (pp. 273–278): Sun (eng-olong, f.) & Moon (ol-apa, m.); Pleiades ('N-Gokwa), Orion's sword ('L-moruak 'old men') & belt ('Ng-apyak 'widows'), Morning star (Kileghen / Ol-akira le-'ng-akenya), Evening star (Leghen), Milky Way (eng-oitoi), Rainbow (ol-akir'-ai / ol-kila le-papa), Comet (ol-akira lo-'l-kidongoi), Sheet lightning (ol-motonyi le-'ng-ai), Earthquake (en-gikirikir oo-'l-oshon), Volcanoes (Ol-doinyo le-'ng-Ai, Ol-doinyo opuru) • Oloiboni Genealogy of 'N-Gidongi (pp. 326–329): Ol-le-Mweiya → E-Sigiriaishi → Kidongoi → Parinyombe → Kipepete → Sitonik → Supeet → 'M-Batyany → Ol-Onana (Lenana) & Sendeu (Sendeyo); 4 divination methods & insignia (ol-kuma le-'seghengei iron club, en-gidong horn, ol-tulet gourd, em-bene bag, 'n-doto e-'n-aibon pebbles)",
+          "pronunciation": "nai-te-ru-kop / le-e-yo / n-go-kwa / l-mo-ru-ak / ng-a-pyak / ki-le-ghen / m-ba-tyany / ol-o-na-na",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Parts V–VI, pp. 264–281, 324–329",
+          "audioFile": null
+        },
+        {
+          "english": "Masai Social Customs, Rites of Passage, Reciprocal Kinship Titles, Law, Games, Ethnobotany & Surgery (Hollis 1905, pp. 282–345)",
+          "translation": "Insignia & Salutations (pp. 282–287): Married women's 3 marks ('surutya brass ear-scrolls, 'seghenge oo-'murto iron neck-rings, ol-okesena garment); elders' ol-masangus arm-ring; farewell blessing 'Sere! Toomonoi eng-Ai! I'nepu ake naaserian! Tapaashare 'l-modook! — Endepetai 'n-aishi oo kulle! — Esai!' • Initiation & Marriage (pp. 294–305, 323): Em-bolosata e-sita ('passing the fence' by father before boy's circumcision); el-latim crown-tree & em-bere e-papa fern; 'Sipolio recluse stage shooting blocked arrows (in-gorongoni) & wearing mouse-birds (in-daritik) → 'L-barnot (shaved) → 'L-muran (braided) → E-unoto (choosing Ol-aunoni chief, O-singira kraal & 'N-dorosi raid); reciprocal titles Pakiteng (father-in-law), Pakerr (mother-in-law), Paashe (co-wife), Patureshi (red-bead brother/sister) • Death & Sacred Clan Snakes (pp. 304–310): Renaming everyday words that resemble a dead person's name (en-gaa); sacred ancestral snakes (il-asuria) • Law & Peace (pp. 310–322): Crying 'Muro!' ('Hind-leg / Guilty!'); kitala sanctuary; o-sotwa peace covenant with nursing infants & grass vs. ol-momai blood-brotherhood / ordeal • Games (pp. 320–321): Sambwen (cattle-tag) & en-geshei (mancala board game with up to 50 holes & 'n-doto pebbles) • Ethnobotany & Surgery (pp. 335–344): 40+ medicinal trees (ol-kiloriti acacia bark, o-remit salvadora toothbrush, ol-mokotan albizia vermifuge, o-reteti fig, o-sinandei, ol-okii); il-abaak surgeons setting bones, trepanning, and stitching wounds with sinew",
+          "pronunciation": "su-ru-tya / ol-mas-an-gus / e-mu-ra-ta / si-po-lio / ol-au-no-ni / pa-ki-teng / pa-kerr / en-ge-shei / il-a-baak",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Part VI, pp. 282–345",
+          "audioFile": null
+        },
+        {
+          "english": "20 Masai Folktales & Animal Stories Recorded Verbatim by A. C. Hollis (1905, Part II, pp. 103–237)",
+          "translation": "1. Em-barta o-'l-ngojine (The Horse and the Hyena, pp. 103–106), 2. Ol-owaru o-ata 'l-ulungani o-'l-mangati (The Devil and the Warrior, pp. 107–118), 3. En-gitonjo o-'l-ngojine o-'l-owaru (The Hare, the Hyena, and the Lion, pp. 119–122), 4. En-gerai o-'l-owaru (The Child and the Demon, pp. 122–128), 5. Ol-owaru o-'l-tungani (The Demon and the Man, pp. 129–133), 6. En-gitonjo o-'l-tome (The Hare and the Elephant, pp. 133–139), 7. Il-muran aare (The Two Warriors, pp. 140–149), 8. En-gitonjo o-'l-owaru (The Hare and the Lion, pp. 150–159), 9. En-gitonjo o-'n-gishu (The Hare and the Cattle, pp. 160–163), 10. Ol-ngojine o-ata 'n-gishu (The Hyena and the Cows, pp. 164–168), 11. Ol-owaru o-'sikiria (The Lion and the Donkey, pp. 168–170), 12. Ol-ngatuny o-'l-kondi (The Lion and the Hartebeest, pp. 171–173), 13. En-gitejo o-'l-otome (The Hare and the Elephants, pp. 173–177), 14. En-gerai o-ata 'l-ulungani (The Boy and the Devil, pp. 178–186), 15. Ol-moruo o-ata 'n-gera (The Old Man and His Knee-Child Tinwt / Marogo, pp. 187–197), 16. En-gitejo (The Hare and the Old Woman's Bag, pp. 198–203), 17. Konyek (The Cannibal Son Born to a Woman, pp. 204–214), 18. En-gerai o-'sikiria (The Story of the Crow that Married a Woman, pp. 215–221), 19. Ol-limlim (The Greed of the Old Man and the Monster Ol-limlim, pp. 221–227), 20. En-ulungani (The Story of the Woman and the Children of the Sycamore Tree, pp. 228–237)",
+          "pronunciation": "em-bar-ta / en-gi-ton-jo / ol-ngoj-i-ne / ko-nyek / ol-lim-lim",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Part II: Masai Stories, pp. 103–237",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 796–835) Ethnography of the Pastoral & Agricultural Masai (Naivasha, Gwas' Ngishu, Enjámusi, Burkeneji & Essegelli)",
+          "translation": "Divisions & history (pp. 798–802, 834–835): Pastoral Masai vs. Agricultural Masai — Burkeneji (driven 50 years prior from the Kerio Valley west of Lake Rudolf to the south-east of Lake Rudolf), Gwas' Ngishu (< Gwaso Engishu 'River of Cattle' on the plateau Roñata Nyuki, later settled at Eldama Ravine), Enjámusi / Nyarusi ('wizards', at the south end of Lake Baringo), Essegelli / Segelli (former branch in the Upper Nyando Valley), and Kwavi (at Taveta); unification of pastoral clans ~150 years ago under the Sigirari medicine-man Kibebete, ancestor of Mbatian and his sons Lenana (near Nairobi) and Sendeyo • Physical & material culture (pp. 802–825): lower incisor extraction (attributed by S. L. Hinde to feeding during lockjaw/tetanus), Naivasha women's curved eye/forehead tattoo lines (Fig. 444), upper-left-arm wooden clamp armlet with twin projections, flat-roofed mud-and-dung continuous circular kraal houses of the pastoral Masai (Fig. 449) vs. conical thatched huts and granaries of the Enjámusi (Figs. 450–451), deceiving a cow with a straw-stuffed calfskin so she yields milk, bleeding cattle with a blocked arrow and throat ligature, Acacia verrugosa bark chewed by El Mórran as war-medicine, and heraldic painted oval buffalo/ox-hide shields • Naming etiquette, surgery & four-god origin myth (pp. 826–834): child named at 1 year old while mother assumes her firstborn's name, strict taboo on naming the dead or using personal names in direct address (using Ol Baiyan 'Elder', Koko 'Grandmother/Matron', Baba 'Father', Eñ gitok 'Woman', El Manūa / Selogunya 'shaven-head initiate'), suturing wounds with white acacia thorns laced with bast fibre, chief's skull exhumed after 1 year with goat-blood/milk/honey libation, myth of the 4 ancient deities (Black god on Mount Kenya who founded the Sigirari house, White firmament god Añgai, Grey indifferent god, and Red evil god), clan guardian black snakes, sacred subugo and parasitic retete fig tree, spitting to the 4 cardinal points as blessing, Elgunono helot blacksmiths, and phonograph musical notation of a Masai solo and chorus song (p. 834)",
+          "pronunciation": "gwa-so en-gi-shu / en-ja-mu-si / ol-bai-yan / se-lo-gu-nya / re-te-te / os-sin-go-lio",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 796–835",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 913–926) Vocabulary Set 2 (#7 Masai of Naivasha & #8 Ñgiṣu of Gwas' Ngishu Plateau) & Conversational Sentences",
+          "translation": "Distinctive #7 Masai & #8 Ñgiṣu Vocabulary (pp. 913–921): Ant Endirango/Esemenja (Ñgiṣu: Gasorī́) • Termite Iriri (Ñgiṣu: Olosai) • Hartebeest Orkorikor (Ñgiṣu: Olguseroi) • Grant's gazelle Olwărgas • Thomson's gazelle El oili • Kudu Ol malu • Eland Ωsirwa • Bushbuck El muingu • Reedbuck Erongo • Cobus thomasi Olgipulugen • Oribi Ampūa • Dik-dik Sunu • Rhino Ωmūiny'/Emuny' • Giraffe Ladókira-gata / O' Nωlenyok / El jaña marai (Ñgiṣu: Olado-kiragada) • Impala Oltarawit (Ñgiṣu: Endarawit) • Duiker Embutuwin • Arm Engaina • Arrow Ambai • Ass Os sigiria • Axe Ndωllo • Baboon Olqaldes (Ñgiṣu: Lωtimi) • Back Engorioñ • Banana Olmaisuri (Ñgiṣu: Bωtωte) • Beard Ol mūnyēi • Bee Lotōrok • Belly Ngωṣoge • Bird Motωnyi • Blood Os sargei (Ñgiṣu: As-sarge) • Body Os-sessin • Bone Oloitω (pl. Eloik) • Bow Angawu • Brains El ogoinya • Breast Ωr roγω / Ol kina • Brother Ol lalashe (pl. Añgargenna) • Buffalo Ol ωsωwan / oisā • Buttocks Ol gurūm (Ñgiṣu: Ol giras) • Canoe (Ñgiṣu: Emboyuwet) • Cat Ambarie • Cattle Ngiṣu (Ñgiṣu: Eñgiṣu) • Bull Ol eñōni (white: ĕñōni ĕpor) • Chief Embatiān / Ol aitórienĭ / Lagwainani • Child Eñkarai • Cloth Anañka • Colobus Ol goroi • Country/Place Añkōp • Cow Eñgedeñ leboñ (Ñgiṣu: Eñ kiteñ) • Crocodile El ginyañ • Date palm O' sosiān • Day Ongolloñ / Emūto / Kawārie • Daylight Damma • Devil Ol oiyirwa / manañani • Doctor Ol leiboni • Dog Ol dia (pl. El dīeñ) • Door Ekotoraji / Kusugaji (Ñgiṣu: Kotokaji) • Drum Ulúllul • Ear Eñgiok (Ñgiṣu: Engiari) • Egg Ol mossóri • Elephant Ol lañqaina • Eye Añgoño (pl. Ngoinyek) • Face Ngōmom • Fat Eelata • Finger/Toe Orgimojínno (pl. gimojik) • Fire Añkiemma • Fish Ωsingirri • Foot/Leg Eñgaijo / Eñgeju • Forest En dim • Fowl El ugungu • Ghost Otopiγwo (Ñgiṣu: Ol oipi) • Goat Eñginne (flock: Ndare) • God/Sky Añgai (Ñgiṣu sky: Añgatambo) • Grass Añgωdyett (Ñgiṣu: Ol kωjetá) • Ground-nut Lωdωa • Guinea-fowl Ngeresure • Gun Entiol • Hair El babet • Hand Andap • Head Andōgoya • Heart Elkipiu • Heel Endudunyŏ • Hippo Ol maqau • Honey/Mead Annaiṣu / En naishu / Na mōqa • Horn Mōwarak • Horse Mbarta • House Añ kaji • Hunger Ol lameyu • Hyena Ol oñadyenne • Hyphæne palm Ol tuqai • Iron Señgeñgḗ • Island Lamañgalle • Ivory Elalla longek (Ñgiṣu: Elalla ol dōme) • Jackal Es sūyān • Knife Ol lalem • Leopard Ol luwárugeri (Ñgiṣu: Ol luwara mara) • Lion (Ñgiṣu: Ol ñátūīn) • Lips Añ gotuk • Magic An talañoi (Ñgiṣu: Embanīt) • Maize El paiyek (Ñgiṣu: El bāek) • Man Ol doñani (pl. El toñana) • Meat Ñgiri • Moon Ol laba (pl. Labaitin) • Mountain Ol doinyo (pl. El doinyo) • Mouth/Tongue Eñ ñejep / Ol eñejep • Name Añ garna • Neck Em mūrtu • Nose Eñ gume • Pig Ol bitirr • Pigeon En turkullu • Rain Attashá • Rat Nderωni • River Ehwaso / E'gwaso • Road Añgoitoi • Seed El teñyat • Sheep Eñgerr • Shield El oño • Sister Añganaishai • Skin Endában • Smoke Emburuwo / El burro • Snake Ol lasorai • Song Os singolio • Spear Er remet (Ñgiṣu: Embere) • Star Lakerr (Ñgiṣu: El agerr) • Stick Eñ udi (pl. Eñ usidin) • Stone Os soit (Ñgiṣu: Es soit) • Sun Añgoloñ • Tear Legiyo (Ñgiṣu: El giyo) • Thief Ol oboriχo (Ñgiṣu: Ol aburωni) • Thing En dogi (pl. Dωgitin; Ñgiṣu: Entωki) • Thorn El giokṓ / gigaret (Ñgiṣu: Ol kegwai) • Tobacco Or gumbao • To-day Taata • Tooth Walale (pl. Elalla; molar Entakolla) • Town Manyata (warriors') / Añgañ (tribal) • Tree Ol jata (Wood El gék) • Twins El mau • War En dyore • Wart-hog Ol gūya • Water Eñ gare • White man Lesuñgu • Wife/Woman Eñ getok / Eñgitok (pl. En gedūa; girl Endīto) • Wind Es sessiwi / Eñ gijabe (Ñgiṣu: Alasagutωni) • Witch Ol labanani • Year Ol lari (pl. El larin) • Yesterday Nole • Zebra Ol loitikω • Numerals, Salutations & Sentences (pp. 921–926): 1 Obώ (m.) / nabo (f.), 2 Are, 3 Oguni (m.) / uni (f.), 4 Uñwan/eoñwan, 5 Amiet/imiet, 6 Ellé, 7 Nabiχiana, 8 Isiet, 9 Nandω, 10 Tomon, 20 Tigitam, 30 Tomoni uni, 40 Artam, 50 Onnom, 60 Onnom otomon, 70 Onnom obikitam, 80 Onnom otomoni uni, 90 Onnom artam, 100 Ip, 1000 Ip tomon; Good Seddai (Ñgiṣu: Sobāt); Salutations (p. 926): Sωpa? — Éhwa (Ehpa)! • Sωpa ol baiyan? • Sωpa ol morani? • Tagwēnya eñgetūa! ('laugh! ye women') — Igω, ol baiyan! • Sentences (pp. 925–926): Inyo! (Stand up!) • Tṓtωna! (Sit down!) • Elūa (Lie down!) • Sommo! (Get out!) • Eatara oñole essidai okūni (I killed 3 ostriches yesterday) • Esare sāra! (Hurry up! Quick!) • 'Akĕti-'Akĕti! (Gently! Slowly!) • Sommo ataata p' elωtu taisere (Go away to-day and come to-morrow) • Egŭrŭgūr 'añgai (Thunder) • Iwañ 'añgai (Lightning)",
+          "pronunciation": "sopa ehpa / tagwenya engetua / igo ol baiyan / sommo ataata p'elotu taisere",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 2 (#7 Masai & #8 Ñgiṣu), pp. 913–926",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hinde 1901, Johnston 1902, Hollis 1905 & Hobley 1910, 1922)"
+  "source": "Public Domain Historical Lexicons (Hinde 1901, Johnston 1902, Hollis 1905 & Hobley 1910, 1922); Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II"
 }

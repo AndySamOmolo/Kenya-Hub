@@ -4,17 +4,18 @@
   "family": "cushitic",
   "nativeName": "Afaan Borana / Afaan Oromoo",
   "script": "Latin",
-  "speakerCount": 350000,
+  "speakerCount": 550000,
   "counties": [
     "Marsabit",
     "Isiolo",
+    "Moyale",
     "Tana River (Orma)",
     "Garissa"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
+  "dictionaryVersion": "3.4",
   "lastUpdated": "2026-10-25",
-  "contributorNote": "Borana / Oromo (Afaan Borana / Afaan Oromoo) dictionary compiled from Karl Tutschek ('Dictionary of the Galla Language', Munich, 1844 — Public Domain), Wiktionary's Afroasiatic Swadesh list, and Wikipedia's Oromo language grammatical & lexical tables.",
+  "contributorNote": "Borana / Oromo (Afaan Borana / Afaan Oromoo) dictionary compiled and verified line-by-line from Rev. J. L. Krapf & Rev. C. W. Isenberg (\"Vocabulary of the Galla Language\", London, CMS, 1842, pp. i–ii, 1–42 & \"Vocabulary of Six East-African Languages\", Tübingen, 1850 — Public Domain), Karl & Lawrence Tutschek (\"Dictionary of the Galla Language, Part I: Galla–English–German [Munich, 1844, pp. i–lix, 1–205] & Part II: English–Galla [Munich, 1845, pp. 1–126]\" & \"A Grammar of the Galla Language\", Munich, 1845, pp. i–viii, 1–92 — Public Domain), Wiktionary's Afroasiatic Swadesh list, and Wikipedia's Oromo language grammatical & lexical tables.",
   "categories": [
     {
       "id": "greetings",
@@ -23,16 +24,16 @@
       "entries": [
         {
           "english": "Hello / Peace be with you",
-          "translation": "Nagaa / Baga nagaan dhufte",
-          "pronunciation": "na-gaa",
-          "context": "Borana / Oromo traditional greeting ('Peace')",
+          "translation": "Nagaa / Naga, naga! Fayaketi! / Baga nagaan dhufte",
+          "pronunciation": "na-gaa / fa-ya-ke-ti",
+          "context": "Borana / Oromo traditional greeting ('Peace, peace! Thy health!' — Tutschek 1845, p. 88, Aga's Letter)",
           "audioFile": null
         },
         {
           "english": "How are you? (Do you have peace?)",
-          "translation": "Nagaa qabdaa? / Akkam jirta?",
+          "translation": "Nagaa qabdaa? / Akkam jirta? / Ati faya cabte?",
           "pronunciation": "na-gaa qab-daa / ak-kam jir-ta",
-          "context": "Borana / Oromo greeting",
+          "context": "Borana / Oromo greeting & Tutschek (1845, p. 88)",
           "audioFile": null
         },
         {
@@ -44,23 +45,37 @@
         },
         {
           "english": "Good morning (Did you spend the night in peace?)",
-          "translation": "Bulte nagaa? / Akkam bulte?",
+          "translation": "Bulte nagaa? / Akkam bulte? / Naga ambulte! (Krapf 1842)",
           "pronunciation": "bul-te na-gaa",
-          "context": "Borana / Oromo morning greeting",
+          "context": "Borana / Oromo morning greeting (Krapf 1842, p. 16: \"naga ambulte\" = Good morning!; cf. bula \"pass the night\", Tutschek 1845)",
           "audioFile": null
         },
         {
-          "english": "Good afternoon / How was your day?",
-          "translation": "Oolte nagaa? / Akkam oolte?",
-          "pronunciation": "ool-te na-gaa",
-          "context": "Borana / Oromo daytime greeting",
+          "english": "Good afternoon / Hast thou passed this day in peace?",
+          "translation": "Oolte nagaa? / Akkam oolte? / Ati naga olte har'a?",
+          "pronunciation": "ool-te na-gaa / a-ti na-ga ol-te har-a",
+          "context": "Tutschek (1845, p. 88, Aga's Letter: 'Ati naga olte had'a?')",
           "audioFile": null
         },
         {
-          "english": "Thank you",
-          "translation": "Galatoomi (sg.) / Galatoomaa (pl.)",
-          "pronunciation": "ga-la-too-mi",
-          "context": "Borana / Oromo expression of gratitude",
+          "english": "Good night / Sleep in peace",
+          "translation": "Nagaiti buli! / Nagaatti buli!",
+          "pronunciation": "na-gai-ti bu-li",
+          "context": "Tutschek (1845, p. 90, closing of Otshu Aga's Letter)",
+          "audioFile": null
+        },
+        {
+          "english": "Rest in peace until we meet again",
+          "translation": "Nagan hafi hama nu wal agaruti",
+          "pronunciation": "na-gan ha-fi ha-ma nu wal a-ga-ru-ti",
+          "context": "Tutschek (1845, p. 91, closing of Akafed'e Dalle's Letter)",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you / May God do good to him",
+          "translation": "Galatoomi (sg.) / Galatoomaa (pl.) / Wacayon iza ha tolu",
+          "pronunciation": "ga-la-too-mi / wa-ca-yon i-za ha to-lu",
+          "context": "Borana / Oromo gratitude & Tutschek (1845, p. 90)",
           "audioFile": null
         },
         {
@@ -72,65 +87,114 @@
         },
         {
           "english": "Goodbye (Stay in peace)",
-          "translation": "Nagaatti",
+          "translation": "Nagaatti / Wak' nagaia si kakennu! (\"Farewell! May God give thee peace!\") / Nagaia hafu tshedde",
           "pronunciation": "na-gaat-ti",
-          "context": "Borana / Oromo farewell",
+          "context": "Borana / Oromo farewell & Krapf (1842, pp. 13, 31: \"wak' nagaia si kakennu\", \"nagaia hafu tshedde\" = bid farewell, \"feiuma tshedde / salamata tshedde\" = greet)",
           "audioFile": null
         },
         {
-          "english": "Yes",
-          "translation": "Eeyyee / Ee",
-          "pronunciation": "eey-yee",
-          "context": "Borana / Oromo",
+          "english": "Yes (and answer to a call: O!)",
+          "translation": "Eeyyee / Ee (ee-djed'a = to say yes, affirm; o! = answer to a call)",
+          "pronunciation": "eey-yee / ee / oh",
+          "context": "Tutschek (1845, §§ 52, 93, 165)",
           "audioFile": null
         },
         {
-          "english": "No / Not",
-          "translation": "Lakki / Haa'a / ii'ii",
-          "pronunciation": "lak-ki / ii-ii",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "No / Not / It is not so",
+          "translation": "Wau / Lakki / Haa'a / Akana miti",
+          "pronunciation": "wa-u / lak-ki / a-ka-na mi-ti",
+          "context": "Tutschek (1845, §§ 10, 175, p. 90: 'wau, akana miti')",
+          "audioFile": null
+        },
+        {
+          "english": "It shall be done! / Let it be so!",
+          "translation": "Ha tau! / Hai tau!",
+          "pronunciation": "ha ta-u / hai ta-u",
+          "context": "Tutschek (1845, § 149, p. 44 — ready consent to a request)",
+          "audioFile": null
+        },
+        {
+          "english": "Come! / Come here! / Let us go!",
+          "translation": "Kod'u! (pl. Kod'a! / emph. Kod'uka!) / Benuka! (Benu / Bena!)",
+          "pronunciation": "ko-d'u / ko-d'a / be-nu-ka",
+          "context": "Tutschek (1845, §§ 147–148, 157, pp. 44, 47)",
+          "audioFile": null
+        },
+        {
+          "english": "Pray bring me some water",
+          "translation": "Mê biz'an na fidi!",
+          "pronunciation": "mee bi-shan na fi-di",
+          "context": "Tutschek (1845, § 254, p. 82 — entreating particle mê)",
           "audioFile": null
         },
         {
           "english": "He / She",
-          "translation": "inni (he) / ishiin (she)",
+          "translation": "inni, ini (he, acc. iza) / ishiin, iz'in (she, acc. ishii, iz'i)",
           "pronunciation": "een-nee / ee-sheen",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "context": "Tutschek (1845, § 218, p. 64)",
           "audioFile": null
         },
         {
-          "english": "Who?",
-          "translation": "eenyu?",
-          "pronunciation": "eh-nyoo",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "english": "Who? (and emphatic Who?)",
+          "translation": "eenyu? / eñu? (eñuni, emph. eñutu)",
+          "pronunciation": "eh-nyoo / eh-nyoo-tu",
+          "context": "Tutschek (1845, § 250.1, p. 80)",
           "audioFile": null
         },
         {
-          "english": "What?",
-          "translation": "maali?",
-          "pronunciation": "mah-lee",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "english": "What? / Why? (For what?)",
+          "translation": "maali? / mali? (mal, emph. maltu) / malif? (malifi, maf, mafi)",
+          "pronunciation": "mah-lee / mah-leef",
+          "context": "Tutschek (1845, § 250.2, pp. 80–81)",
           "audioFile": null
         },
         {
-          "english": "Where?",
-          "translation": "eessa?",
-          "pronunciation": "ehs-sah",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "english": "How much? / How many? / Which of the two?",
+          "translation": "mêka? / kami? (emph. kamtu; izakamtu? = which of the two?)",
+          "pronunciation": "mee-ka / ka-mi / kam-tu",
+          "context": "Tutschek (1845, §§ 8, 250.3, pp. 4, 81)",
           "audioFile": null
         },
         {
-          "english": "Today",
-          "translation": "har'a",
-          "pronunciation": "hahr-ah",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "english": "Where? / Whither? / Here / There",
+          "translation": "eessa? (eza) / irge (place, where) / azi (here) / atchi (there)",
+          "pronunciation": "ehs-sah / ir-ge / a-zi / at-chi",
+          "context": "Tutschek (1845, §§ 205, 247, 249.7)",
+          "audioFile": null
+        },
+        {
+          "english": "Today / Immediately today",
+          "translation": "har'a (harʿa, had'a) / harʿuma (had'uma)",
+          "pronunciation": "hahr-ah / hahr-oo-mah",
+          "context": "Tutschek (1845, §§ 36, 148, pp. 8, 44, 89)",
           "audioFile": null
         },
         {
           "english": "Tomorrow",
-          "translation": "bori (boru)",
-          "pronunciation": "boh-ree",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "translation": "bori / boru",
+          "pronunciation": "boh-ree / boh-roo",
+          "context": "Tutschek (1845, pp. 89–90)",
+          "audioFile": null
+        },
+        {
+          "english": "Amen! / So be it! & Praise and glory be unto thee! (Tutschek 1844)",
+          "translation": "hofu! ('Amen!', response to prayer, p. 201) / hocuban zi ha gau! ('Praise and glory be unto thee!', p. 201) / maren! (response of villagers during rain-processions around the sacred wateza tree, p. 166)",
+          "pronunciation": "ho-fu / ho-cu-ban zi ha ga-u / ma-ren",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 166, 201",
+          "audioFile": null
+        },
+        {
+          "english": "Storytelling & Riddling Opening Formulas (Tutschek 1844)",
+          "translation": "rago rag! (exclamation calling upon someone to tell a story or fable raga, p. 152) / hibo hib! or hipo hip! (exclamation when proposing a riddle hibo, p. 198)",
+          "pronunciation": "ra-go rag / hi-bo hib / hi-po hip",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 152, 198",
+          "audioFile": null
+        },
+        {
+          "english": "Promise Ratification & Little-Finger Wagering Formulas (Tutschek 1844)",
+          "translation": "t'wu — aki — t'wu — tili! ('spit out — may it be so — spit out — finish!', spoken while chewing and spitting out blades of tila grass to ratify a solemn promise, p. 91) / cote wal cabad'u (mogezani goñizaniti wali cabu = hooking the little fingers moge together to ratify a wager or promise, pp. 47, 66)",
+          "pronunciation": "t'wu a-ki t'wu ti-li / co-te wal ca-ba-d'u",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 47, 66, 91",
           "audioFile": null
         }
       ]
@@ -142,79 +206,135 @@
       "entries": [
         {
           "english": "One",
-          "translation": "tokko",
+          "translation": "tokko (toko, tak)",
           "pronunciation": "tok-ko",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "context": "Tutschek (1845, § 201, p. 58) & Krapf (1842)",
           "audioFile": null
         },
         {
           "english": "Two",
           "translation": "lama",
           "pronunciation": "la-ma",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "context": "Tutschek (1845, § 201, p. 58) & Krapf (1842)",
           "audioFile": null
         },
         {
           "english": "Three",
-          "translation": "sadii",
+          "translation": "sadii (zadi)",
           "pronunciation": "sa-dii",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "context": "Tutschek (1845, § 201, p. 58) & Krapf (1842)",
           "audioFile": null
         },
         {
           "english": "Four",
-          "translation": "afur",
+          "translation": "afur (afuri)",
           "pronunciation": "a-fur",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "context": "Tutschek (1845, § 201, p. 58) & Krapf (1842)",
           "audioFile": null
         },
         {
           "english": "Five",
-          "translation": "shan",
+          "translation": "shan (z'ani)",
           "pronunciation": "shan",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo/Borana",
+          "context": "Tutschek (1845, § 201, p. 58) & Krapf (1842)",
           "audioFile": null
         },
         {
           "english": "Six",
-          "translation": "jaha / ja'a",
-          "pronunciation": "ja-ha",
-          "context": "Wikipedia Southern_Nilotic_languages — East Cushitic cognates",
+          "translation": "jaha / ja'a (dya)",
+          "pronunciation": "ja-ha / dya",
+          "context": "Tutschek (1845, § 201, p. 58) & Krapf (1842)",
           "audioFile": null
         },
         {
-          "english": "Seven",
-          "translation": "torba",
-          "pronunciation": "tor-ba",
-          "context": "Borana / Oromo numerals",
+          "english": "Seven (and 7-day Week)",
+          "translation": "torba (torbani; torban = week of 7 days)",
+          "pronunciation": "tor-ba / tor-ban",
+          "context": "Tutschek (1845, §§ 7, 201, 203, pp. 3, 58–59)",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "saddeet",
+          "translation": "saddeet (zadeta)",
           "pronunciation": "sad-deet",
-          "context": "Borana / Oromo numerals",
+          "context": "Tutschek (1845, § 201, p. 58)",
           "audioFile": null
         },
         {
           "english": "Nine",
-          "translation": "sagal",
+          "translation": "sagal (zagala)",
           "pronunciation": "sa-gal",
-          "context": "Wikipedia Southern_Nilotic_languages — East Cushitic cognates",
+          "context": "Tutschek (1845, § 201, p. 58)",
           "audioFile": null
         },
         {
-          "english": "Ten",
-          "translation": "kudhan",
-          "pronunciation": "ku-dhan",
-          "context": "Borana / Oromo numerals",
+          "english": "Ten (and 10-day Period / Decade)",
+          "translation": "kudhan (kudani; kurna = set of ten / 10-day period)",
+          "pronunciation": "ku-dhan / kur-na",
+          "context": "Tutschek (1845, §§ 201, 203, pp. 58–59)",
           "audioFile": null
         },
         {
-          "english": "Hundred",
-          "translation": "dhibba",
-          "pronunciation": "dhib-ba",
-          "context": "Borana / Oromo numerals",
+          "english": "Eleven to Nineteen",
+          "translation": "kudatoko (11), kudalama (12), kudazadi (13), kudafuri (14), kudaz'ani (15), kudadya (16), kudatorba (17), kudazadeda (18), kudazagala (19)",
+          "pronunciation": "ku-da-to-ko ... ku-da-za-ga-la",
+          "context": "Tutschek (1845, § 202, p. 59)",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty & Thirty",
+          "translation": "digdama (digetama, digtama = 20) / sodoma (zodoma = 30)",
+          "pronunciation": "dig-da-ma / so-do-ma",
+          "context": "Tutschek (1845, §§ 203–204, pp. 59–60)",
+          "audioFile": null
+        },
+        {
+          "english": "Forty to Ninety",
+          "translation": "afurtama (40), z'antama (50), dyatama (60, nom. dyatamni), torbatama (70), zadettama (80), zagaltama (90)",
+          "pronunciation": "a-fur-ta-ma ... za-gal-ta-ma",
+          "context": "Tutschek (1845, §§ 204, 206, p. 60)",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred, Thousand & Hundred Thousand",
+          "translation": "dhibba (d'iba = 100) / kuma (1,000) / kuntuma (100,000)",
+          "pronunciation": "dhib-ba / ku-ma / kun-tu-ma",
+          "context": "Tutschek (1845, §§ 203–204, pp. 59–60)",
+          "audioFile": null
+        },
+        {
+          "english": "Ordinal Numbers: First (Foremost / First-born) vs. Last (Youngest)",
+          "translation": "ini dura (the first) / hangafa (first-born, best; fem. hangafti) vs. ini boda (the last) / gudiru (youngest child)",
+          "pronunciation": "i-ni du-ra / han-ga-fa / gu-di-ru",
+          "context": "Tutschek (1845, § 207, p. 60)",
+          "audioFile": null
+        },
+        {
+          "english": "Ordinal Numbers (2nd to 11th in -tiana)",
+          "translation": "tokotiana (2nd), lamatiana (3rd), zaditiana (4th), afuritiana (5th), z'anitiana (6th), dyatiana (7th), torbatiana (8th), zadettiana (9th), zagalitiana (10th), kudanitiana / kurnatiana (11th)",
+          "pronunciation": "to-ko-ti-a-na, la-ma-ti-a-na, za-di-ti-a-na",
+          "context": "Tutschek (1845, § 208, pp. 60–61 — formed with postposition -ti + verb ana 'to hang on/join')",
+          "audioFile": null
+        },
+        {
+          "english": "Social Numbers (-anu) & Both",
+          "translation": "latshanu (2 together), zadanu (3 together), arfanu (4 together), z'ananu (5), dyanu (6), torbanu (7), zadetanu (8), zagaltanu (9), kurnanu (10); ladz'u / latshu (both)",
+          "pronunciation": "lat-sha-nu, za-da-nu, ar-fa-nu / la-dju",
+          "context": "Tutschek (1845, §§ 209–210, p. 61)",
+          "audioFile": null
+        },
+        {
+          "english": "Fractional Numbers (Divisions of the Amole Salt-Bar) & Numeral Adverbs",
+          "translation": "tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele / gadele (1/8); gafatoko (once), gafalama (twice), gafazadi (thrice), irgataka (at once), lafa dyala (at first)",
+          "pronunciation": "tchab-na-na / kar-ma-na / gi-ma-shi / ge-de-le",
+          "context": "Tutschek (1845, §§ 212–214, p. 62)",
+          "audioFile": null
+        },
+        {
+          "english": "Rock-Salt Currency (Amole), Fractions & Maria Theresa Silver Dollar (Biri) in Tutschek (1844)",
+          "translation": "amole (piece of rock-salt 2 hands long, 1 hand broad, 2 fingers thick, serving as standard currency, p. 13): mogor / mogora (2 amole, p. 172), tchabnana (1/2 amole, p. 72), kurmana / karmana (1/4 amole, p. 40), gimaz'i (1/8 amole in Dict. p. 61; 3/4 in Grammar p. 62), gedele / gadale / fotoqe (1/12 amole in Dict. pp. 52, 60, 122; 1/8 in Grammar p. 62), zanaga / çarmama (broken amole bound together with bark, pp. 183, 188) / biri (silver & Austrian Maria Theresa dollar with shoulder-clasp & diadem dots and engraver initials S. F., worth 23 amole in Liban or 20 in Goma, p. 135)",
+          "pronunciation": "a-mo-le / mo-go-ra / tchab-na-na / kur-ma-na / gi-ma-shi / ge-de-le / bi-ri",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 13, 40, 52, 60–61, 72, 122, 135, 172, 183, 188",
           "audioFile": null
         }
       ]
@@ -226,107 +346,184 @@
       "entries": [
         {
           "english": "Person / Human being",
-          "translation": "nama (pl. namoota)",
-          "pronunciation": "na-ma (pl. na-moo-ta)",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "translation": "nama (nom. namni, voc. ya namana!, pl. namoota; namitsha = a particular man)",
+          "pronunciation": "na-ma / nam-ni / na-mit-sha",
+          "context": "Tutschek (1845, §§ 184, 188, 241) & Wikipedia Oromo_language",
           "audioFile": null
         },
         {
-          "english": "Father",
-          "translation": "abbaa",
-          "pronunciation": "ab-baa",
-          "context": "Wikipedia Oromo_language & Tutschek (1844)",
+          "english": "Father (and affectionate My Father / Thy Father)",
+          "translation": "abbaa / aba (nom. aban; abanko / abo = my father; abake / abe = thy father)",
+          "pronunciation": "ab-baa / a-ban-ko / a-bo",
+          "context": "Tutschek (1845, §§ 186, 226, 230, pp. 56, 66, 68)",
           "audioFile": null
         },
         {
-          "english": "Mother",
-          "translation": "haadha (nom. haati)",
-          "pronunciation": "haa-dha",
-          "context": "Wikipedia Oromo_language & Tutschek (1844)",
+          "english": "Foster-father (Educator / Guardian)",
+          "translation": "abanko na gudifad'e kuni (from gudiza / gudifad'a = bring up, educate)",
+          "pronunciation": "a-ban-ko na gu-di-fa-d'e ku-ni",
+          "context": "Tutschek (1845, § 249.3, p. 78)",
           "audioFile": null
         },
         {
-          "english": "Child",
-          "translation": "mucaa / ijoollee",
-          "pronunciation": "mu-caa / i-jool-lee",
-          "context": "Borana / Oromo",
+          "english": "Mother (and affectionate My Mother / Thy Mother)",
+          "translation": "haadha / had'a (nom. haati / had'i; had'iko / had'o = my mother; had'ake / had'e = thy mother)",
+          "pronunciation": "haa-dha / ha-d'i / ha-d'o",
+          "context": "Tutschek (1845, §§ 184, 226, 230, pp. 55, 66, 68)",
+          "audioFile": null
+        },
+        {
+          "english": "Child / Boy / Collective Children",
+          "translation": "mutsha (nom. mutshan, child; mutsha guduru = curly-headed child) / gurba (boy) / hidjole (ijoollee, collective children, fem. agreement)",
+          "pronunciation": "mu-caa / gur-ba / i-jool-lee",
+          "context": "Tutschek (1845, §§ 180, 184, 199, p. 86)",
           "audioFile": null
         },
         {
           "english": "Son",
-          "translation": "ilma (pl. ilmaan)",
+          "translation": "ilma (pl. ilmaan / ilman)",
           "pronunciation": "il-ma (pl. il-maan)",
-          "context": "Wikipedia Oromo_language",
+          "context": "Tutschek (1845, § 182, p. 55)",
           "audioFile": null
         },
         {
-          "english": "Daughter / Girl",
-          "translation": "intala",
-          "pronunciation": "in-ta-la",
-          "context": "Wikipedia Oromo_language",
+          "english": "Daughter / Girl / Maiden",
+          "translation": "intala / indalla (indallo = my girl, darling) / durba (girl, maiden)",
+          "pronunciation": "in-ta-la / in-dal-lo / dur-ba",
+          "context": "Tutschek (1845, §§ 230, 242, 243, pp. 68, 72)",
           "audioFile": null
         },
         {
           "english": "Brother",
-          "translation": "obboleessa",
-          "pronunciation": "ob-bo-lees-sa",
-          "context": "Wikipedia Oromo_language",
+          "translation": "obboleessa / oboleza (nom. obolezi, voc. ya ob!, pl. obola / oboloni)",
+          "pronunciation": "ob-bo-lees-sa / o-bo-le-za",
+          "context": "Tutschek (1845, §§ 182, 186, 188, pp. 55–56)",
           "audioFile": null
         },
         {
           "english": "Sister",
-          "translation": "obboleettii",
+          "translation": "obboleettii / oboleti (nom. oboletin)",
           "pronunciation": "ob-bo-leet-tii",
-          "context": "Wikipedia Oromo_language",
+          "context": "Tutschek (1845, §§ 200, 228, 239)",
           "audioFile": null
         },
         {
-          "english": "Man / Husband",
-          "translation": "dhiira / abbaa warraa",
-          "pronunciation": "dhii-ra",
-          "context": "Borana / Oromo",
+          "english": "Man / Husband / Master of the House",
+          "translation": "dhiira (d'ira) / abbaa warraa (aban mana = master of the house; gofta, nom. goftan = lord, master)",
+          "pronunciation": "dhii-ra / a-ban ma-na / gof-ta",
+          "context": "Tutschek (1845, §§ 184, 186, 231, pp. 55–56, 68)",
           "audioFile": null
         },
         {
           "english": "Woman / Wife",
-          "translation": "dubartii / niitii / haadha warraa",
+          "translation": "dubartii / niitii (niti) / haadha warraa",
           "pronunciation": "du-bar-tii / nii-tii",
-          "context": "Borana / Oromo",
+          "context": "Tutschek (1845, § 191, p. 56) & Borana / Oromo",
           "audioFile": null
         },
         {
-          "english": "Friend",
-          "translation": "hiriyaa (pl. hiriyoota)",
-          "pronunciation": "hi-ri-yaa",
-          "context": "Wikipedia Oromo_language",
+          "english": "Youth / Young Men (Collective & Singulative)",
+          "translation": "dargago (nom. dargagon, collective youth) / dargageza (a young man)",
+          "pronunciation": "dar-ga-go / dar-ga-ge-za",
+          "context": "Tutschek (1845, §§ 157, 180, pp. 47, 54)",
+          "audioFile": null
+        },
+        {
+          "english": "Friend / Relative / Family",
+          "translation": "hiriyaa (hiria, pl. hiriyoota) / mitchu (nom. mitchun, friend) / fira (dear friend, kinsman) / lami (relations, kin) / warra (family, household)",
+          "pronunciation": "hi-ri-yaa / mit-chu / fi-ra / la-mi / war-ra",
+          "context": "Tutschek (1845, §§ 228, 247.8, pp. 67, 75, 88, 90–91)",
           "audioFile": null
         },
         {
           "english": "Teacher",
-          "translation": "barsiisaa (pl. barsiisota)",
-          "pronunciation": "bar-sii-saa",
-          "context": "Wikipedia Oromo_language",
+          "translation": "barsiisaa / barziza (nom. barzifni, pl. barsiisota)",
+          "pronunciation": "bar-sii-saa / bar-zif-ni",
+          "context": "Tutschek (1845, § 184.2, p. 55)",
           "audioFile": null
         },
         {
-          "english": "Priest / Spiritual leader",
-          "translation": "qaalluu (m. qaallicha / f. qaallittii)",
-          "pronunciation": "qaal-luu",
-          "context": "Wikipedia Oromo_language — Borana/Oromo Qaallu institution",
+          "english": "Judge / Elder / Merchant / Blacksmith",
+          "translation": "mangudo (judge, elder) / nagade (m. nagaditsha, f. nagaditi = merchant) / tumtu (f. tumtiti = smith, artisan)",
+          "pronunciation": "man-gu-do / na-ga-dit-sha / tum-tu",
+          "context": "Tutschek (1845, §§ 178, 180, pp. 54, 67)",
+          "audioFile": null
+        },
+        {
+          "english": "Priest / Spiritual Leader / Diviner",
+          "translation": "qaalluu (m. qaallicha, f. caliti / qaallittii) / namni mora ilalu (haruspex who inspects the fat)",
+          "pronunciation": "qaal-luu / ca-li-ti",
+          "context": "Tutschek (1845, §§ 180, 249.2, pp. 54, 77)",
+          "audioFile": null
+        },
+        {
+          "english": "Enemy / Thief / Stranger",
+          "translation": "dina (nom. dini, enemy) / hatu (nom. hatun, thief) / orma (stranger, another's)",
+          "pronunciation": "di-na / ha-tu / or-ma",
+          "context": "Tutschek (1845, §§ 20, 167, 180, 192, pp. 6, 50, 54, 57)",
           "audioFile": null
         },
         {
           "english": "Name",
-          "translation": "maqaa (nom. maqaan)",
-          "pronunciation": "ma-qaa",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "translation": "maqaa / maca (nom. maqaan / macan)",
+          "pronunciation": "ma-qaa / ma-ca",
+          "context": "Tutschek (1845, §§ 245, 250.1, pp. 73, 80)",
           "audioFile": null
         },
         {
-          "english": "God / Sky",
-          "translation": "Waaqa",
-          "pronunciation": "waa-qa",
-          "context": "Wiktionary Afroasiatic Swadesh list & Tutschek (1844)",
+          "english": "God / Heaven / Soul",
+          "translation": "Waaqa / Wacayo (Waca, gofta goftan cabne = Lord who has no Lord) / ayana (soul, spirit)",
+          "pronunciation": "waa-qa / wa-ca-yo / a-ya-na",
+          "context": "Tutschek (1845, §§ 6, 97, pp. 3, 27, 84–88)",
+          "audioFile": null
+        },
+        {
+          "english": "Oromo / Galla Autonym & Free Man vs. Servitude (Krapf 1842)",
+          "translation": "ormo (sg., pl. orma = Galla/Oromo person & people: \"kuni ormōda\" = This is a Galla) / ilma namma (free man, vs. gebruma = servitude, gebrumada baie = become free, gerbitsha = male slave, gerbiti = female slave)",
+          "pronunciation": "or-mo / ku-ni or-mo-da / il-ma nam-ma",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842, pp. 15, 26, 32–33)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather / Grandson, Uncle, Aunt & Son-in-law (Krapf 1842)",
+          "translation": "akakeiyu / akakeīu (grandfather, grandson) / abēra (uncle) / adāda (aunt) / sodda (son-in-law) / aiyiyo (affectionate address to mother)",
+          "pronunciation": "a-ka-kei-yu / a-bee-ra / a-daa-da / sod-da / ai-yi-yo",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842, pp. 3, 16, 24, 34, 39)",
+          "audioFile": null
+        },
+        {
+          "english": "Youth, 17-Year-Old Initiate, Bride & Elders (Krapf 1842)",
+          "translation": "kondāla & dergegēsa (young man of 17 years) / baiēsa (vigorous youth) / tenenia, dubra & midagtu (girl, virgin, maid) / durba (bride, bridegroom) / tsharsa, tsharsi (old man, elder) & tsharti (old woman, matron) / herrēa (comrade, age-mate)",
+          "pronunciation": "kon-daa-la / der-ge-gee-sa / tshar-sa / tshar-ti / her-ree-a",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842, pp. 6, 8, 13, 15, 21, 23, 25, 39, 42)",
+          "audioFile": null
+        },
+        {
+          "english": "King, War-Leader (Abadula), Lady, Counsellor, Physician & Priest (Krapf 1842)",
+          "translation": "moti (king, prince; moti angafa = commander; motuma = kingdom) / abadula (general, war-leader) / gofta (lord) & gifti (mistress, lady) / tshawa (counsellor; mari = counsel) / Abba korritsha (physician, lit. \"father of medicine\") / kaletsha (Galla priest, vs. kêsi sidāma = Christian priest, Iltshāma = Muslim) / oggēsa (wise/skilled person)",
+          "pronunciation": "mo-ti / a-ba-du-la / gif-ti / tsha-wa / ab-ba kor-rit-sha / ka-let-sha / og-gee-sa",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842, pp. 1, 3, 7–9, 15, 20–21, 23, 27–30, 41)",
+          "audioFile": null
+        },
+        {
+          "english": "Adoption Rites (Gada Guda, Gada T'ina, Gubifad'a & Balfad'a) in Tutschek (1844)",
+          "translation": "gada (state of adoption, p. 53): gada guda (great/complete adoption with full inheritance rights) vs. gada t'ina (little/incomplete adoption) / gubifad'a (adopting a child when one already has biological children, p. 68) / balfad'a (solemn adoption ceremony in which relatives walk single-file waliti ananiti carrying green twigs of the sacred Meeça tree to deliver the adoptive child baldja to his new father, pp. 94, 131)",
+          "pronunciation": "ga-da gu-da / ga-da t'i-na / gu-bi-fa-d'a / bal-fa-d'a / bal-dja",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 53, 68, 94, 131",
+          "audioFile": null
+        },
+        {
+          "english": "Nuptial Sacrifice (Déca), Nuptial Cow (Rako) & Bride-Price Marriage in Tutschek (1844)",
+          "translation": "déca / déqi (nuptial sacrificial animal slaughtered at a wedding, p. 98) / rako (cow slaughtered at the marriage ceremony whose blood seals the union, p. 152) / muzuro (newly married bride or bridegroom, p. 1) / birmad'u & zadjeda (secondary wives or royal concubines, pp. 136, 180)",
+          "pronunciation": "dee-ca / ra-ko / mu-zu-ro / bir-ma-d'u",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 1, 98, 136, 152, 180",
+          "audioFile": null
+        },
+        {
+          "english": "Funeral Memorial Staff (Ule Dimtu) & Mourning Scratches (Hofola) in Tutschek (1844)",
+          "translation": "ule dimtu ('red staff', wooden staff used to measure the length of a deceased relative's body and preserved in the house as a sacred memorial, p. 26) / hofola (mourning scratches made on the cheeks and temples with thorns or fingernails when lamenting the dead, p. 201) / awala (grave, burial mound, p. 7)",
+          "pronunciation": "u-le dim-tu / ho-fo-la / a-wa-la",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 7, 26, 201",
           "audioFile": null
         }
       ]
@@ -337,17 +534,17 @@
       "icon": "🫀",
       "entries": [
         {
-          "english": "Head",
-          "translation": "mataa",
-          "pronunciation": "ma-taa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Head (and Headache)",
+          "translation": "mataa (mata; matakodif = for my own sake) / bowo (headache; bowafad'a = have a headache)",
+          "pronunciation": "ma-taa / bo-wo",
+          "context": "Tutschek (1845, §§ 52, 97, 233, pp. 13, 28, 69)",
           "audioFile": null
         },
         {
-          "english": "Eye",
-          "translation": "ija",
-          "pronunciation": "i-ja",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Eye / Eyebrow / Glance",
+          "translation": "ija (idya) / ñara (nom. ñari = eyebrow) / libi toko (one glance of the eye)",
+          "pronunciation": "i-ja / nya-ra / li-bi to-ko",
+          "context": "Tutschek (1845, §§ 184, 205, 226, pp. 55, 60, 66)",
           "audioFile": null
         },
         {
@@ -358,17 +555,17 @@
           "audioFile": null
         },
         {
-          "english": "Nose",
-          "translation": "funyaan (fuññaan)",
-          "pronunciation": "fun-yaan",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Nose (and Nasal Mucus)",
+          "translation": "funyaan (fuññaan) / furi (nasal discharge; furifad'a = blow the nose)",
+          "pronunciation": "fun-yaan / fu-ri",
+          "context": "Tutschek (1845, § 97, p. 27) & Swadesh list",
           "audioFile": null
         },
         {
-          "english": "Mouth / Language",
-          "translation": "afaan",
-          "pronunciation": "a-faan",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "Mouth / Language / Jaw",
+          "translation": "afaan (afan, mouth, language) / mangaga (ma˜gaga, jaw)",
+          "pronunciation": "a-faan / man-ga-ga",
+          "context": "Tutschek (1845, § 4, p. 2 & p. 85)",
           "audioFile": null
         },
         {
@@ -380,9 +577,9 @@
         },
         {
           "english": "Tongue",
-          "translation": "arraba",
+          "translation": "arraba (araba; arabza = to insult)",
           "pronunciation": "ar-ra-ba",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "context": "Tutschek (1845, § 97, p. 27)",
           "audioFile": null
         },
         {
@@ -393,31 +590,38 @@
           "audioFile": null
         },
         {
-          "english": "Foot / Leg",
-          "translation": "miilla / luka / hojjaa",
-          "pronunciation": "miil-la / lu-ka",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Foot / Leg / Sole of Foot",
+          "translation": "miilla (milo) / luka / hojjaa / fana (sole of the foot, footprint)",
+          "pronunciation": "miil-la / lu-ka / fa-na",
+          "context": "Tutschek (1845, § 243, p. 72 & p. 89: 'milo na bobae ... fana nu guba')",
           "audioFile": null
         },
         {
           "english": "Knee",
-          "translation": "jilba",
+          "translation": "jilba (dyilba; dyilbefad'a = to kneel)",
           "pronunciation": "jil-ba",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "context": "Tutschek (1845, §§ 52, 97, pp. 13, 27)",
           "audioFile": null
         },
         {
           "english": "Hand / Arm",
-          "translation": "harka (instr. harkaan)",
+          "translation": "harka (instr. harkaan; harkiza / harkifad'a = drag, pull)",
           "pronunciation": "har-ka",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "context": "Tutschek (1845, § 97, p. 28)",
           "audioFile": null
         },
         {
-          "english": "Belly / Stomach",
-          "translation": "garaa",
+          "english": "Belly / Heart / Mind",
+          "translation": "garaa (gara, nom. garan = belly, heart, mind, interior)",
           "pronunciation": "ga-raa",
-          "context": "Borana / Oromo",
+          "context": "Tutschek (1845, p. 87: 'garakotinan zi kad'ad'a' = I entreat thee from my heart)",
+          "audioFile": null
+        },
+        {
+          "english": "Side / Flank / Body",
+          "translation": "tchina (tchinadja) / buke (nom. bukni = side) / d'agna (body, heart)",
+          "pronunciation": "tchi-na / bu-ke / d'ag-na",
+          "context": "Tutschek (1845, § 236, p. 70 & p. 86)",
           "audioFile": null
         },
         {
@@ -450,7 +654,7 @@
         },
         {
           "english": "Heart",
-          "translation": "onnee",
+          "translation": "onnee / garaa",
           "pronunciation": "on-nee",
           "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
           "audioFile": null
@@ -470,24 +674,31 @@
           "audioFile": null
         },
         {
-          "english": "Bone",
-          "translation": "lafee",
-          "pronunciation": "la-fee",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Bone (and Spongy Part of Bone)",
+          "translation": "lafee / aniza (spongy part of bone, diploë; anifad'a = gnaw bones)",
+          "pronunciation": "la-fee / a-ni-za",
+          "context": "Tutschek (1845, §§ 52, 97, pp. 13, 27)",
           "audioFile": null
         },
         {
           "english": "Skin / Hide",
-          "translation": "gogaa / ittillee",
+          "translation": "gogaa / ittillee (lucã / luqiza = prepare raw hides)",
           "pronunciation": "go-gaa / it-til-lee",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "context": "Tutschek (1845, § 74, p. 20) & Swadesh list",
           "audioFile": null
         },
         {
-          "english": "Fat (noun)",
-          "translation": "moora",
-          "pronunciation": "moo-ra",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Fat (and Divination by Fat)",
+          "translation": "moora (mora; namni mora ilalu = diviner who inspects sacrificial fat) / tshoma (to be fat)",
+          "pronunciation": "moo-ra / tsho-ma",
+          "context": "Tutschek (1845, §§ 79, 249.2, pp. 21, 77)",
+          "audioFile": null
+        },
+        {
+          "english": "Health / Corpse / Deaf / Blind",
+          "translation": "faya (health, healthy; fayiza = cure) / rêfa (dead body, corpse) / duda (deaf) / djama (blind)",
+          "pronunciation": "fa-ya / ree-fa / du-da / dja-ma",
+          "context": "Tutschek (1845, §§ 8, 21, 67, 79, pp. 4, 6, 18, 21)",
           "audioFile": null
         }
       ]
@@ -498,17 +709,17 @@
       "icon": "🐄",
       "entries": [
         {
-          "english": "Cow / Cattle",
-          "translation": "loon / sa'a",
-          "pronunciation": "loon / sa-a",
-          "context": "Borana / Oromo pastoral vocabulary",
+          "english": "Cow / Cattle / Herd",
+          "translation": "loon (lon) / sa'a / godiyo (cattle)",
+          "pronunciation": "loon / sa-a / go-di-yo",
+          "context": "Tutschek (1845, § 249.1, p. 76 & p. 86: 'godiyof mid'an')",
           "audioFile": null
         },
         {
           "english": "Ox / Bull",
-          "translation": "sangaa / ooroo",
-          "pronunciation": "san-gaa / oo-roo",
-          "context": "Wikipedia Oromo_language & Southern_Nilotic_languages",
+          "translation": "sangaa / ooroo / korma",
+          "pronunciation": "san-gaa / oo-roo / kor-ma",
+          "context": "Tutschek (1845, § 192, p. 57) & Wikipedia Oromo_language",
           "audioFile": null
         },
         {
@@ -520,9 +731,9 @@
         },
         {
           "english": "Goat",
-          "translation": "re'ee",
-          "pronunciation": "re-ee",
-          "context": "Borana / Oromo pastoral vocabulary",
+          "translation": "re'ee / reeʿ (pl. rooda / rooni)",
+          "pronunciation": "re-ee / roo-da / roo-ni",
+          "context": "Tutschek (1845, §§ 36, 182, pp. 8, 55)",
           "audioFile": null
         },
         {
@@ -533,6 +744,20 @@
           "audioFile": null
         },
         {
+          "english": "Horse",
+          "translation": "farda (pl. faratoni / fardoolii)",
+          "pronunciation": "far-da / fa-ra-to-ni",
+          "context": "Tutschek (1845, § 181, p. 55: 'faratoni d'êd'ti')",
+          "audioFile": null
+        },
+        {
+          "english": "Wild Animal / Beast",
+          "translation": "binenza (bineensa)",
+          "pronunciation": "bi-nen-za",
+          "context": "Tutschek (1845, Prayer 1 v. 8, p. 86: 'binenzaf nama')",
+          "audioFile": null
+        },
+        {
           "english": "Dog",
           "translation": "saree",
           "pronunciation": "sa-ree",
@@ -540,10 +765,17 @@
           "audioFile": null
         },
         {
-          "english": "Bird",
-          "translation": "simbirroo / cirrii (c'irrii)",
-          "pronunciation": "sim-bir-roo / cir-rii",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Bird / Guinea-Fowl / Dove",
+          "translation": "simbirroo (zimbiri) / alati (bird of prey) / zololia (guinea-fowl, Numida meleagris) / bulala (dove)",
+          "pronunciation": "sim-bir-roo / a-la-ti / zo-lo-li-a / bu-la-la",
+          "context": "Tutschek (1845, §§ 247.5, 249.3, pp. 74, 78, 86–87)",
+          "audioFile": null
+        },
+        {
+          "english": "Bee / Wax / Locust / Butterfly / Worm",
+          "translation": "kaniza (nom. kanifni = bee) / gaga (wax) / awaniza (nom. awanifni) & korabiza (locusts) / bilatsha (butterfly) / ramo (nom. ramon = worm)",
+          "pronunciation": "ka-ni-za / ga-ga / a-wa-ni-za / bi-lat-sha / ra-mo",
+          "context": "Tutschek (1845, §§ 12, 184, pp. 4, 55, 85, 87)",
           "audioFile": null
         },
         {
@@ -589,10 +821,10 @@
           "audioFile": null
         },
         {
-          "english": "Horn",
-          "translation": "gaafa",
-          "pronunciation": "gaa-fa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Horn / Cud",
+          "translation": "gaafa / alala (cud, chymus; alalfad'a = ruminate)",
+          "pronunciation": "gaa-fa / a-la-la",
+          "context": "Tutschek (1845, § 97, p. 27) & Swadesh list",
           "audioFile": null
         },
         {
@@ -611,16 +843,16 @@
       "entries": [
         {
           "english": "Water",
-          "translation": "bishaan (bisaan)",
+          "translation": "bishaan (biz'an / bisaan)",
           "pronunciation": "bi-shaan / bi-saan",
-          "context": "Wikipedia Oromo_language",
+          "context": "Tutschek (1845, § 254, p. 82) & Wikipedia Oromo_language",
           "audioFile": null
         },
         {
-          "english": "Sun",
-          "translation": "aduu",
-          "pronunciation": "a-duu",
-          "context": "Wikipedia Oromo_language",
+          "english": "Sun / Sunbeam (Ray) / Shadow",
+          "translation": "aduu (adu, nom. adun) / biftu (nom. biftun = sun; cara = ray: 'biftun cara zodoma' = sun with 30 rays) / gadiza (shadow, shade)",
+          "pronunciation": "a-duu / bif-tun ca-ra zo-do-ma / ga-di-za",
+          "context": "Tutschek (1845, § 184, Prayer 1 vv. 2 & 4, pp. 55, 84–85)",
           "audioFile": null
         },
         {
@@ -632,16 +864,16 @@
         },
         {
           "english": "Moon / Month",
-          "translation": "ji'a / baatii",
+          "translation": "ji'a / baatii (bati, nom. batin: 'batinana bad'te' = when this moon rises)",
           "pronunciation": "ji-a / baa-tii",
-          "context": "Borana / Oromo",
+          "context": "Tutschek (1845, § 184, Prayer 1 v. 3, pp. 55, 85)",
           "audioFile": null
         },
         {
           "english": "Sky / God",
-          "translation": "waaqa",
-          "pronunciation": "waa-qa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "translation": "Waaqa (Waca / Wacayo)",
+          "pronunciation": "waa-qa / wa-ca-yo",
+          "context": "Tutschek (1845, § 6, p. 3)",
           "audioFile": null
         },
         {
@@ -653,30 +885,30 @@
         },
         {
           "english": "Rain",
-          "translation": "rooba / bokkaa",
-          "pronunciation": "roo-ba / bok-kaa",
-          "context": "Wikipedia Southern_Nilotic_languages & Borana/Oromo",
+          "translation": "rooba (roba, verb; III robziza) / bokkaa (boka, nom. bokeñi)",
+          "pronunciation": "roo-ba / bok-kaa / bo-ke-nyi",
+          "context": "Tutschek (1845, §§ 66, 163, 184, pp. 18, 49, 56)",
           "audioFile": null
         },
         {
           "english": "Wind",
-          "translation": "qilleensa",
+          "translation": "qilleensa (qilenza / qile˜za)",
           "pronunciation": "qil-leen-sa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "context": "Tutschek (1845, § 4, p. 2)",
           "audioFile": null
         },
         {
           "english": "Fire",
-          "translation": "ibidda / bobaa / giimii",
+          "translation": "ibidda (ibida) / bobaa / giimii",
           "pronunciation": "i-bid-da",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "context": "Tutschek (1845, § 249.2, p. 76 & p. 90)",
           "audioFile": null
         },
         {
-          "english": "Smoke",
-          "translation": "aara",
-          "pronunciation": "aa-ra",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Smoke / Soot",
+          "translation": "aara (ara = steam, smoke; III arza) / caca (soot)",
+          "pronunciation": "aa-ra / ca-ca",
+          "context": "Tutschek (1845, §§ 12, 75, pp. 4, 20)",
           "audioFile": null
         },
         {
@@ -687,17 +919,17 @@
           "audioFile": null
         },
         {
-          "english": "Earth / Land / Ground",
-          "translation": "lafa (nom. lafti) / biyya",
-          "pronunciation": "la-fa / biy-ya",
-          "context": "Wikipedia Oromo_language",
+          "english": "Earth / Land / Country / Sand",
+          "translation": "lafa (nom. lafti = earth, ground) / biyya (bia = country, homeland) / biyo (nom. biyon = sand, soil)",
+          "pronunciation": "la-fa / laf-ti / bi-ya / bi-yo",
+          "context": "Tutschek (1845, §§ 184, 241, 243, pp. 56, 71–72, 89)",
           "audioFile": null
         },
         {
-          "english": "Mountain / Hill",
-          "translation": "gaara / tulluu",
-          "pronunciation": "gaa-ra / tul-luu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Mountain / Hill / Hole / Deep",
+          "translation": "gaara / tulluu / gawa (nom. gofni = hole, cave) / qileʿ (deep, abyss)",
+          "pronunciation": "gaa-ra / tul-luu / ga-wa / qi-le",
+          "context": "Tutschek (1845, §§ 36, 184, pp. 8, 55)",
           "audioFile": null
         },
         {
@@ -715,17 +947,17 @@
           "audioFile": null
         },
         {
-          "english": "Tree / Wood",
-          "translation": "muka",
-          "pronunciation": "mu-ka",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Tree / Wood / Sacred Trees / Tree Stump",
+          "translation": "muka (nom. mukni = tree, wood) / qilt'u (fig-tree), lafto, makaniza, meçça (sacred trees) / gufu (tree stump)",
+          "pronunciation": "mu-ka / muk-ni / qil-tu / laf-to",
+          "context": "Tutschek (1845, §§ 84, 97, 184, Prayer 1 note 1, pp. 22, 27, 56, 84)",
           "audioFile": null
         },
         {
-          "english": "Forest",
-          "translation": "daggala / baqqoo / bosona",
-          "pronunciation": "dag-ga-la",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Forest / High Reeds",
+          "translation": "bozona (bosona) / daggala (dagala = high grass, reeds; dagaltcha = plait with reeds) / baqqoo",
+          "pronunciation": "bo-zo-na / dag-ga-la",
+          "context": "Tutschek (1845, §§ 97, 249.4, pp. 27, 78)",
           "audioFile": null
         },
         {
@@ -736,17 +968,17 @@
           "audioFile": null
         },
         {
-          "english": "Flower",
-          "translation": "daraaraa",
+          "english": "Flower / To Bloom",
+          "translation": "daraaraa (darara = to bloom: 'ho mid'an darare')",
           "pronunciation": "da-raa-raa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "context": "Tutschek (1845, Prayer 1 v. 14, p. 87)",
           "audioFile": null
         },
         {
-          "english": "Grass",
-          "translation": "marga / ees",
+          "english": "Grass / To Grow",
+          "translation": "marga (grass; as verb marga = to grow, 2s margita / magarta, III magarza = make grow)",
           "pronunciation": "mar-ga",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "context": "Tutschek (1845, §§ 83–84, p. 22)",
           "audioFile": null
         },
         {
@@ -765,51 +997,100 @@
         },
         {
           "english": "Road / Path",
-          "translation": "karaa (def. karicha)",
+          "translation": "karaa (kara, def. karicha; karakora = upon my way)",
           "pronunciation": "ka-raa",
-          "context": "Wikipedia Oromo_language",
+          "context": "Tutschek (1845, Morning Prayer, p. 87)",
           "audioFile": null
         },
         {
-          "english": "Day",
-          "translation": "guyyaa",
-          "pronunciation": "guy-yaa",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "Day / Period of Time / Noon",
+          "translation": "guyyaa (guya) / gafa (day, time: gafazana = on that day) / oba (noon)",
+          "pronunciation": "guy-yaa / ga-fa / o-ba",
+          "context": "Tutschek (1845, §§ 97, 213, 247.8, pp. 27, 62, 75)",
           "audioFile": null
         },
         {
-          "english": "Night",
-          "translation": "halkan",
-          "pronunciation": "hal-kan",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "Morning / Dawn",
+          "translation": "ganama (morning; ganamfad'a = to dawn)",
+          "pronunciation": "ga-na-ma",
+          "context": "Tutschek (1845, § 97, p. 27)",
           "audioFile": null
         },
         {
-          "english": "Year",
-          "translation": "waggaa (pl. waggaawwan) / bara",
-          "pronunciation": "wag-gaa / ba-ra",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "Night / Evening / Darkness",
+          "translation": "halkan (night) / galgala (evening; har'a galgaltana = tonight) / dukanae & lafti dirgimame (it became dark)",
+          "pronunciation": "hal-kan / gal-ga-la / du-ka-na-e",
+          "context": "Tutschek (1845, §§ 95, 241, pp. 26–27, 71, 91)",
           "audioFile": null
         },
         {
-          "english": "Yesterday",
-          "translation": "kaleessa",
-          "pronunciation": "ka-lees-sa",
-          "context": "Wikipedia Oromo_language",
+          "english": "Year / This Year",
+          "translation": "waggaa (pl. waggaawwan) / bara (barrana = this year)",
+          "pronunciation": "wag-gaa / ba-ra / bar-ra-na",
+          "context": "Tutschek (1845, § 84, p. 22: 'qilt'unke hamami magarza barrana?')",
           "audioFile": null
         },
         {
-          "english": "Time",
-          "translation": "yeroo",
-          "pronunciation": "ye-roo",
-          "context": "Wikipedia Oromo_language",
+          "english": "Yesterday / Formerly",
+          "translation": "kaleessa / duri (formerly, long ago)",
+          "pronunciation": "ka-lees-sa / du-ri",
+          "context": "Tutschek (1845, § 158, p. 47 & p. 85)",
+          "audioFile": null
+        },
+        {
+          "english": "Time / Now / Then",
+          "translation": "yeroo / ama (now; amamiti = not now) / yomuzana (then, at that time)",
+          "pronunciation": "ye-roo / a-ma / yo-mu-za-na",
+          "context": "Tutschek (1845, §§ 146, 175, 247.8, pp. 44, 52, 74)",
           "audioFile": null
         },
         {
           "english": "Stone / Rock",
-          "translation": "dhagaa",
-          "pronunciation": "dhah-gah",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "translation": "dhagaa (d'aka)",
+          "pronunciation": "dhah-gah / d'a-ka",
+          "context": "Tutschek (1845, § 249.2, pp. 76–77)",
+          "audioFile": null
+        },
+        {
+          "english": "Seven Days of the Week in Shoa Galla (Krapf 1842)",
+          "translation": "sanbata gudda (Sunday), hutshi dura (Monday, lit. \"first work-day\"), hutshi lamafa (Tuesday, lit. \"second work-day\"), rōbi (Wednesday), kāmis (Thursday), tshimāta (Friday), sanbata tenna (Saturday, lit. \"little Sabbath\")",
+          "pronunciation": "san-ba-ta gud-da, hut-shi du-ra, hut-shi la-ma-fa, roo-bi, kaa-mis, tshi-maa-ta, san-ba-ta ten-na",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842, pp. 15, 24, 31, 35, 37–38, 40)",
+          "audioFile": null
+        },
+        {
+          "english": "Times of Day, Relative Days & Seasons (Krapf 1842)",
+          "translation": "diruma & ganama (daybreak, early morning; borun dimate = dawn; urtshi ganama = morning-star) / safaia (noon, afternoon; safaia dura = forenoon) / wari dertu (midnight) / arda (to-day), borumti (following day), iftān (day after to-morrow), kallēsa (yesterday), dengādda (day before yesterday) / yogga (year; berdingata = last year; berekan = year before last) / bonna (summer, dry season) vs. ganā (winter, rainy season)",
+          "pronunciation": "di-ru-ma / sa-fa-ia / wa-ri der-tu / if-taan / den-gaad-da / bon-na / ga-naa",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842, pp. 1, 9, 12, 14, 23–24, 35, 41–42)",
+          "audioFile": null
+        },
+        {
+          "english": "Seven Days of the Week, Four Seasons, Lunar Months & 5-Year Sequence (Tutschek 1844)",
+          "translation": "7 Days (torbanⁱ = week, p. 87; kurna = 10-day period, p. 38): 1. Gifti ('The Lady') or Kamiza (p. 60), 2. Djimada / Djimata (p. 80), 3. Zambata t'ina (preceded by cadame, pp. 40, 183), 4. Zambata guda (p. 183), 5. Zaño (p. 183), 6. Maczaño or Tafno (pp. 85, 161), 7. Arbi (p. 11) / 4 Seasons: birra (spring, ushered in mid-September when the yellow kelo flower blooms and celebrated with the Magzala / Maczala New Year feast on the duba hearth, pp. 34, 103, 114, 130, 135, 162), bona (summer, p. 139), arfaza (autumn/harvest, p. 11), ganna (winter/rainy season, p. 60) / Months: 1st hadoleza or hadami (p. 190 & Pt. II p. 75), 2nd hagayo (p. 189), 3rd wadabadji (p. 147), furma (p. 124) / 5-Year Relative Sequence (p. 131): barrakan (2 years ago) → barrengata (last year) → barrana (this year) → barragere (next year) → barratchanu (in 2 years)",
+          "pronunciation": "gif-ti, dji-ma-ta, zam-ba-ta t'i-na, zam-ba-ta gu-da, za-nyo, mac-za-nyo, ar-bi / bir-ra, bo-na, ar-fa-za, gan-na",
+          "context": "Karl & Lawrence Tutschek (1844–1845) 'Dictionary of the Galla Language', Part I, pp. 11, 32, 34, 38, 40, 60, 80, 85, 103, 114, 124, 130–131, 135, 139, 147, 161–162, 183, 189–190; Part II, p. 75",
+          "audioFile": null
+        },
+        {
+          "english": "Divisions of the Day & Night in Tutschek (1844)",
+          "translation": "ganama aboro (very early dawn, p. 7) → ganama (sunrise to 8 a.m., p. 59) → dirama (8 to 10 a.m., p. 100) → ware (9 to 10 a.m., p. 148) → ware korate (forenoon before noon, p. 148) → oba / adun guba keza (noon, when calves are watered oba dyabi; afternoon hours counted oba lamuti, oba zaditi, oba afuriti, oba z'aniti, p. 23) → galgala (evening, p. 59) → wari (first night-watch, p. 148) → galgala dimemeza (midnight, p. 101)",
+          "pronunciation": "ga-na-ma a-bo-ro / di-ra-ma / wa-re / o-ba / gal-ga-la di-me-me-za",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 7, 23, 59, 100–101, 138, 148",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Cattle Classification under Lon (Loni) in Tutschek (1844, p. 160 & Pt. II p. 20)",
+          "translation": "Male cattle: tshabi (newborn calf) → djibitcha (young bull-calf) → gorba (3-year-old steer) → wofana (young bullock) → godiyo (pl. godiyoni, gelded plough-ox) → korma (pl. koromi, breeding bull: korma bordeda with erect hump vs. korma gurra with hanging hump, p. 36) → ulfin → zanga (castrated fattened ox) / Female cattle: tshabi (calf) → rad'a / rada (2-year-old heifer) → goromza (breeding heifer) → zã / zawa (cow; zilga = pregnant/milk cow giving colostrum zilga; gua = weaned calf or cow dried up of milk) → dulatcha (aged cow destined for slaughter)",
+          "pronunciation": "tsha-bi, dji-bit-cha, gor-ba, wo-fa-na, go-di-yo, kor-ma, ul-fin, zan-ga / ra-d'a, go-rom-za, za-wa, zil-ga, du-lat-cha",
+          "context": "Karl & Lawrence Tutschek (1844–1845) 'Dictionary of the Galla Language', Part I, pp. 36, 160; Part II, p. 20",
+          "audioFile": null
+        },
+        {
+          "english": "Sun (Biftu vs. Adu), Rainbow (Scarf of Heaven) & Locust (Horse of God) in Tutschek (1844)",
+          "translation": "biftu (the benign, life-giving sun, invoked as 'Wacayo biftun cara zodoma' = 'God thou sun with thirty rays', pp. 44, 134) vs. adu (the scorching, burning sun, p. 5) / zabata Wacayo, bidu & bidigira (rainbow, lit. 'girdle/scarf of Heaven', pp. 134, 181) / farda Wacayo (locust, lit. 'horse of God', p. 119)",
+          "pronunciation": "bif-tu / a-du / za-ba-ta wa-ca-yo / bi-di-gi-ra / far-da wa-ca-yo",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 5, 44, 119, 134, 181",
           "audioFile": null
         }
       ]
@@ -821,9 +1102,9 @@
       "entries": [
         {
           "english": "House / Home",
-          "translation": "mana (pl. manoota)",
-          "pronunciation": "ma-na (pl. ma-noo-ta)",
-          "context": "Wikipedia Oromo_language",
+          "translation": "mana (nom. mani, pl. manoota) / gêe (home: gêekoti = from my home)",
+          "pronunciation": "ma-na / gee-e",
+          "context": "Tutschek (1845, §§ 167, 249.2, pp. 50, 77)",
           "audioFile": null
         },
         {
@@ -842,51 +1123,65 @@
         },
         {
           "english": "Coffee",
-          "translation": "buna",
+          "translation": "buna (mana bunaa = coffee house)",
           "pronunciation": "bu-na",
           "context": "Wikipedia Oromo_language",
           "audioFile": null
         },
         {
-          "english": "Cafe (Coffee house)",
-          "translation": "mana bunaa",
-          "pronunciation": "ma-na bu-naa",
-          "context": "Wikipedia Oromo_language",
+          "english": "Milk / Butter",
+          "translation": "aannan (milk; elma = to milk) / dhadhaa (d'ad'a, nom. d'ad'an = butter)",
+          "pronunciation": "aan-nan / dha-dhaa",
+          "context": "Tutschek (1845, § 83, p. 22 & p. 90: 'd'ad'an ibidti bue hindebiu')",
           "audioFile": null
         },
         {
-          "english": "Milk",
-          "translation": "aannan",
-          "pronunciation": "aan-nan",
-          "context": "Wikipedia Oromo_language ('Bilisummaan Aannaani')",
+          "english": "Meat (and Sacrificial Meat)",
+          "translation": "foon (fon = meat) / dêca (sacrificial flesh)",
+          "pronunciation": "foon / dee-ca",
+          "context": "Tutschek (1845, §§ 150.3, 174, pp. 45, 52)",
           "audioFile": null
         },
         {
-          "english": "Meat",
-          "translation": "foon",
-          "pronunciation": "foon",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Food",
-          "translation": "nyaata / midhaan",
-          "pronunciation": "nyaa-ta",
-          "context": "Borana / Oromo",
+          "english": "Food / Grain / Bread / Wheat / Beans",
+          "translation": "nyaata / midhaan (mid'an = grain, corn) /dan-ga (nourishment) / budena (bread) / zamared'a (nom. zamareni = wheat) / bagila (beans)",
+          "pronunciation": "nyaa-ta / mi-d'an / bu-de-na / za-ma-re-d'a / ba-gi-la",
+          "context": "Tutschek (1845, §§ 13, 20, 150.3, 184, 249.2, pp. 5–6, 45, 56, 77)",
           "audioFile": null
         },
         {
           "english": "Honey",
-          "translation": "damma",
-          "pronunciation": "dam-ma",
-          "context": "Borana / Oromo",
+          "translation": "damma / dagma (nom. dagmi — Sibu dialect damma)",
+          "pronunciation": "dam-ma / dag-ma",
+          "context": "Tutschek (1845, §§ 14, 249.3, pp. 5, 78)",
           "audioFile": null
         },
         {
-          "english": "Salt",
-          "translation": "soogidda",
-          "pronunciation": "soo-gid-da",
-          "context": "Borana / Oromo",
+          "english": "Salt (and Amole Salt-Bar)",
+          "translation": "soogidda (zogita) / amole (rock-salt bar currency)",
+          "pronunciation": "soo-gid-da / a-mo-le",
+          "context": "Tutschek (1845, §§ 6, 212, pp. 3, 62)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth / Garment / Bag / Cord",
+          "translation": "waya (cloth) / zogola (upper garment; zogolfad'a = wrap up) / galgalo (nom. galgalon = bag) / fuño (cord, rope)",
+          "pronunciation": "wa-ya / zo-go-la / gal-ga-lo / fu-nyo",
+          "context": "Tutschek (1845, §§ 97, 158, 249.2–3, pp. 28, 48, 76, 78)",
+          "audioFile": null
+        },
+        {
+          "english": "Sabre / Spear / Gun / Cudgel",
+          "translation": "sodala (instr. sodalan = sabre, sword) / ebo (instr. ebodan = spear) / cawe (gun; caw-djed'a = report) / mut'ut'e (nom. mut'ut'en = cudgel, stick)",
+          "pronunciation": "so-da-la / e-bo / ca-we / mu-tu-te",
+          "context": "Tutschek (1845, §§ 93, 97, 184, 239, pp. 26, 28, 55, 70)",
+          "audioFile": null
+        },
+        {
+          "english": "Wealth / Cattle & Goods / Remainder",
+          "translation": "hori (wealth, cattle, fortune) / hamba (remainder, residue; hambiza / hambifad'a = reserve)",
+          "pronunciation": "ho-ri / ham-ba",
+          "context": "Tutschek (1845, §§ 97, 231, 235, pp. 28, 68–69)",
           "audioFile": null
         },
         {
@@ -898,16 +1193,30 @@
         },
         {
           "english": "Job / Work",
-          "translation": "hojii",
-          "pronunciation": "ho-jii",
-          "context": "Wikipedia Oromo_language",
+          "translation": "hojii (hodjad'a = to work)",
+          "pronunciation": "ho-jii / ho-dja-d'a",
+          "context": "Tutschek (1845, Prayer 1 v. 8, p. 86 & p. 88)",
           "audioFile": null
         },
         {
           "english": "Education / Study",
-          "translation": "barumsa",
+          "translation": "barumsa (bara = learn, III barziza = teach)",
           "pronunciation": "ba-rum-sa",
-          "context": "Wikipedia Oromo_language",
+          "context": "Tutschek (1845, § 76, p. 20) & Wikipedia Oromo_language",
+          "audioFile": null
+        },
+        {
+          "english": "House Consecration Rite (Dadarba) & Hearth (Duba / Gembo) in Tutschek (1844)",
+          "translation": "dadarba (ceremony of consecrating a newly built house by strewing small bitile loaves inside it before moving in, p. 95) / bitile (small round ceremonial cake of bread, p. 136) / cori & cori naga (solemn dish of roasted grain, butter, and salt eaten at the Buta / circumcision feast, p. 48) / gembo (clay fireplace/hearth, p. 60)",
+          "pronunciation": "da-dar-ba / bi-ti-le / co-ri na-ga / gem-bo",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 48, 60, 95, 136",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Tapeworm Remedy (Het'o & D'ogonu) & Beer Libation Vessel (Wile D'ibayu) in Tutschek (1844)",
+          "translation": "het'o (Brayera anthelmintica / Hagenia abyssinica, kousso tree whose flowers and bark are drunk against tapeworm minⁱ; Akafed'e Dalle prepared het'o mixed with mucilaginous d'ogonu leaves in Munich, pp. 116, 170, 198) / wile d'ibayu (sacred gourd vessel from which farzo beer libations d'ibayu or buguri are poured, pp. 113, 141, 151)",
+          "pronunciation": "he-t'o / d'o-go-nu / wi-le d'i-ba-yu / bu-gu-ri",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 113, 116, 141, 151, 170, 198",
           "audioFile": null
         }
       ]
@@ -918,255 +1227,192 @@
       "icon": "🏃",
       "entries": [
         {
-          "english": "Speak",
-          "translation": "dubbachuu (dubbadhu! = speak!, jedha = say)",
-          "pronunciation": "doob-bah-choo / jeh-dhah",
-          "context": "Tutschek 1844 Dictionary & 1845 Grammar",
+          "english": "Speak / Converse / Prattle",
+          "translation": "dubbachuu / dubad'a (neg. imp. hindubad'in! intens. dudubad'a; duba = speak, III dubiza = backbite; hazã / hazofna = converse, talk)",
+          "pronunciation": "doob-bah-choo / du-ba-d'a / ha-zof-na",
+          "context": "Tutschek (1845, §§ 66, 102, 174, 247.7, pp. 18, 29, 52, 74)",
           "audioFile": null
         },
         {
-          "english": "Eat",
-          "translation": "nyachuu (nyaadhu)",
-          "pronunciation": "nya-chuu",
-          "context": "Wikipedia Oromo_language",
+          "english": "Eat / Devour / Graze",
+          "translation": "nyachuu / ñad'a (2s ñad'ta, 3s ñada, II ñad'ad'a, III ñad'z'iza = feed) / d'ud'ã (devour) / d'êd'a (graze, of livestock; III d'êd'z'iza)",
+          "pronunciation": "nya-chuu / nya-d'a / d'ee-d'a",
+          "context": "Tutschek (1845, §§ 17, 19, 21, 89, 137, pp. 5–6, 24, 41)",
           "audioFile": null
         },
         {
-          "english": "Drink",
-          "translation": "dhuguu (dhug-)",
-          "pronunciation": "dhu-guu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Drink (and Be Thirsty)",
+          "translation": "dhuguu / d'uga (III d'ugziza = cause to drink, intens. dud'uga) / deboa (be thirsty, III deboza)",
+          "pronunciation": "dhu-guu / d'u-ga / de-bo-a",
+          "context": "Tutschek (1845, §§ 56, 61, 103, pp. 15–16, 29)",
           "audioFile": null
         },
         {
-          "english": "Come",
-          "translation": "dhufuu (dhuf-)",
-          "pronunciation": "dhu-fuu",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "Come / Arrive / Approach",
+          "translation": "dhufuu / d'ufa (III d'ufziza) / gà (approach, arrive; III geza = lead, conduct) / diã (approach, III dieza = bring near)",
+          "pronunciation": "dhu-fuu / ga / ge-za",
+          "context": "Tutschek (1845, §§ 64, 68, 73, 142, pp. 17–19, 43)",
           "audioFile": null
         },
         {
-          "english": "Go / Walk",
-          "translation": "adeemuu / deemuu",
-          "pronunciation": "a-dee-muu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Go / Walk / Return Home / Travel",
+          "translation": "adeemuu / adema (Conjugation I paradigm verb) / d'aca (walk, go; III dacziza = send) / gala (go home; III galtsha = bring home) / godana (travel)",
+          "pronunciation": "a-de-ma / d'a-ca / ga-la / go-da-na",
+          "context": "Tutschek (1845, §§ 61, 77, 81, 135, pp. 16, 20–21, 39)",
           "audioFile": null
         },
         {
-          "english": "See",
-          "translation": "arguu (arga)",
-          "pronunciation": "ar-guu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Go out / Exit / Rise / Descend",
+          "translation": "bawuu / bâ (II bad'a, III baza = drive out/forgive/pay, IV bafad'a, V baziza) / kâ (rise, III kaza = lift up) / bua (descend, fall; III buza, IV bufad'a = lie down)",
+          "pronunciation": "ba / ba-za / ka / ka-za / bu-a",
+          "context": "Tutschek (1845, §§ 44, 46, 58, pp. 11, 15)",
           "audioFile": null
         },
         {
-          "english": "Hear",
-          "translation": "dhaga'uu (dhaga'a)",
-          "pronunciation": "dha-ga-uu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "See / Look at / Show",
+          "translation": "arguu / arga (2s argita / agarta, III agarziza = show) / ilala (look, see; 1p ilalla, III ilaltshiza = show)",
+          "pronunciation": "ar-ga / a-gar-zi-za / i-la-la",
+          "context": "Tutschek (1845, §§ 27, 78.3, 83, pp. 7, 20, 22)",
           "audioFile": null
         },
         {
-          "english": "Know",
-          "translation": "beekuu (beek-)",
-          "pronunciation": "bee-kuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Hear / Listen",
+          "translation": "dhaga'uu / d'agà (III subjective d'ageza = listen; III objective d'agziza = let hear; neg. pret. hind'ageñe)",
+          "pronunciation": "d'a-ga / d'a-ge-za",
+          "context": "Tutschek (1845, §§ 68–69, 174, pp. 18, 52)",
           "audioFile": null
         },
         {
-          "english": "Learn",
-          "translation": "baruu",
-          "pronunciation": "ba-ruu",
-          "context": "Wikipedia Oromo_language",
+          "english": "Know / Forget / Think",
+          "translation": "beekuu / beka (2s bechta, 1p bechna, III bekziza = inform) / irafad'a (forget, III irafad'z'iza) / yada (think; subst. yada / yado = thought)",
+          "pronunciation": "be-ka / i-ra-fa-d'a / ya-da",
+          "context": "Tutschek (1845, §§ 15, 61, 62, 100, 178, pp. 5, 16, 28, 54)",
           "audioFile": null
         },
         {
-          "english": "Say / Tell",
-          "translation": "jedhuu (jedh-) / himuu (himi)",
-          "pronunciation": "je-dhuu / hi-muu",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "Learn / Teach",
+          "translation": "baruu / bara (learn; III barziza = teach)",
+          "pronunciation": "ba-ra / bar-zi-za",
+          "context": "Tutschek (1845, § 76, p. 20 & Prayer 1 v. 7, p. 85)",
           "audioFile": null
         },
         {
-          "english": "Sleep",
-          "translation": "rafuu (rafa)",
-          "pronunciation": "ra-fuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Say / Tell / Ask / Answer / Call",
+          "translation": "jedhuu / djed'a (say) / hima (tell) / gafad'a (ask, III gafad'z'iza) / oad'a (answer) / wama (call, II wamad'a = call upon/pray, III wamziza)",
+          "pronunciation": "dje-d'a / hi-ma / ga-fa-d'a / o-a-d'a / wa-ma",
+          "context": "Tutschek (1845, §§ 52, 62, 80, 93, pp. 13, 16, 21, 26, 85)",
           "audioFile": null
         },
         {
-          "english": "Lie down",
-          "translation": "ciisuu (c'iisa)",
-          "pronunciation": "cii-suu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Sleep / Pass the Night / Pass the Day",
+          "translation": "rafuu / rafa (III rafziza = lull asleep) / bula (pass the night; III bultsha) / ola (pass the day, pass by; III oltsha = protect, defend)",
+          "pronunciation": "ra-fa / bu-la / o-la",
+          "context": "Tutschek (1845, §§ 64, 77, pp. 17, 20, 85, 87–88)",
           "audioFile": null
         },
         {
-          "english": "Stand",
-          "translation": "dhaabachuu (d'aabad'd'a) / ijaajuu",
-          "pronunciation": "dhaa-ba-chuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Lie down / Sit",
+          "translation": "ciisuu / tshiza (Conjugation II: 2s tshifta, 1p tshifna, III tshibza) / tà (contr. from taya, Conjugation III: 2s teza, 3sf tezi, 1p teña, III teziza = set)",
+          "pronunciation": "tshi-za / ta / te-za",
+          "context": "Tutschek (1845, §§ 72, 85, 135, pp. 19, 22, 39)",
           "audioFile": null
         },
         {
-          "english": "Live / Remain",
-          "translation": "jiraachuu / raaguu",
-          "pronunciation": "ji-raa-chuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Stand / Place / Build",
+          "translation": "dhaabachuu / d'âba (place, set up) / idyara (II idyarad'a = build a house)",
+          "pronunciation": "d'aa-ba / i-dya-ra-d'a",
+          "context": "Tutschek (1845, §§ 150.1, 176.c, pp. 45, 53)",
           "audioFile": null
         },
         {
-          "english": "Die",
-          "translation": "du'uu (du'a)",
-          "pronunciation": "du-uu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Be / Exist / Live",
+          "translation": "jiraachuu / dyira (be, exist; II dyirad'a = live; invariant copula: -d'a)",
+          "pronunciation": "dyi-ra / dyi-ra-d'a",
+          "context": "Tutschek (1845, §§ 163–166, pp. 49–50)",
           "audioFile": null
         },
         {
-          "english": "Kill",
-          "translation": "ajjeesuu (ajjeesa) / qaluu",
-          "pronunciation": "aj-jee-suu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Die / Kill / Bury",
+          "translation": "du'uu / dua (2s duta, III duziza = cause to die) / ajjeesuu / adjeza (kill; cala = slaughter/offer sacrifice; gorâ = slaughter) / awala (bury; subst. tomb)",
+          "pronunciation": "du-a / a-dje-za / a-wa-la",
+          "context": "Tutschek (1845, §§ 21, 57, 176.b, 177, pp. 6, 15, 53–54, 86)",
           "audioFile": null
         },
         {
-          "english": "Give",
-          "translation": "kennuu (kenna)",
-          "pronunciation": "ken-nuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Give / Take / Seek / Bring",
+          "translation": "kennuu / kenna (give; lad'a = give food) / fud'a (take; II fudad'a, III fuziza) / barbada (seek) / fida (bring; 2s fidta)",
+          "pronunciation": "ken-na / fu-d'a / bar-ba-da / fi-da",
+          "context": "Tutschek (1845, §§ 19, 62–63, 145, 150.2, pp. 6, 16–17, 44–45)",
           "audioFile": null
         },
         {
-          "english": "Buy",
-          "translation": "bituu (binne = we bought)",
-          "pronunciation": "bi-tuu",
-          "context": "Wikipedia Oromo_language",
+          "english": "Buy / Sell / Count / Pay",
+          "translation": "bituu (buy) / gurgura (sell) / lakã (contr. from lakawa, 2s lakofta, pass. lakawama = count, pay) / toa (count, pay)",
+          "pronunciation": "bi-tuu / gur-gu-ra / la-ka / la-kof-ta",
+          "context": "Tutschek (1845, §§ 5, 49, 57, 107, 133, pp. 3, 12, 15, 31, 38, 89)",
           "audioFile": null
         },
         {
-          "english": "Have / Possess",
-          "translation": "qabaachuu (qaba = he has)",
-          "pronunciation": "qa-baa-chuu",
-          "context": "Wikipedia Oromo_language",
+          "english": "Have / Seize / Hold / Keep Off",
+          "translation": "qabaachuu / caba (seize, hold, have; III cabziza, pass. cabama; ira caba = keep off, ward off)",
+          "pronunciation": "ca-ba / ca-ba-ma",
+          "context": "Tutschek (1845, §§ 66, 105, Prayer 1 v. 2, pp. 18, 30, 84)",
           "audioFile": null
         },
         {
-          "english": "Come out / Exit",
-          "translation": "bawuu",
-          "pronunciation": "ba-wuu",
-          "context": "Wikipedia Oromo_language",
+          "english": "Make / Do / Create",
+          "translation": "god'a (make, do; III goziza = let make, V goziziza = permit to be done) / uma (form, create; III umziza)",
+          "pronunciation": "go-d'a / go-zi-za / u-ma",
+          "context": "Tutschek (1845, §§ 63.3, 80, 246, pp. 17, 21, 73)",
           "audioFile": null
         },
         {
-          "english": "Laugh",
-          "translation": "kolfuu (kolfa)",
-          "pronunciation": "kol-fuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Love / Pray / Bless",
+          "translation": "jaalachuu / dyalad'a (love; subst. dyalala) & marara (love, cherish; III mararza) / kad'ad'a (pray, entreat) / êbiza (bless, from êba = blessing)",
+          "pronunciation": "dya-la-d'a / ma-ra-ra / ka-d'a-d'a / ee-bi-za",
+          "context": "Tutschek (1845, §§ 75, 97, 177, Prayer 1 vv. 15–16, pp. 20, 27, 54, 87)",
           "audioFile": null
         },
         {
-          "english": "Blow",
-          "translation": "afuufuu (afuufa / buufa)",
-          "pronunciation": "a-fuu-fuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Bind / Untie (Set Free) / Cut / Break",
+          "translation": "hid'a (bind, tie; 1p inhina) / hika (untie, set free; 2s hikta) / kuta (cut, tear; 2s kutta, intens. kukuta) / tchaba (be broken; III tchabza = break, intens. tchatchabza)",
+          "pronunciation": "hi-d'a / hi-ka / ku-ta / tcha-ba",
+          "context": "Tutschek (1845, §§ 65, 102, 136, 158, Prayer 1 v. 15, pp. 18, 29, 41, 48, 87)",
           "audioFile": null
         },
         {
-          "english": "Suck",
-          "translation": "hodhuu (hod'a) / xuuxuu",
-          "pronunciation": "ho-dhuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Weep / Laugh / Dance / Sing",
+          "translation": "boa (boya = weep; 2s boza, 1p boña, III boziza, neg. imp. himboin!) / kolfa (laugh; 2s kolfita / kofalta, III kofalziza) / zirba (dance; 2s zirbita / ziribta, III ziribziza) / wetiza (sing)",
+          "pronunciation": "bo-a / kol-fa / zir-ba / we-ti-za",
+          "context": "Tutschek (1845, §§ 10, 72, 83, 86, 139, pp. 4, 19, 22–23, 42)",
           "audioFile": null
         },
         {
-          "english": "Fear",
-          "translation": "na'uu (na'a) / sodaachuu",
-          "pronunciation": "na-uu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Refuse / Neglect / Fail (The 4 Negative Verbs)",
+          "translation": "dida (refuse, deny intentionally) / bad'a (omit by neglect or inadvertence) / d'aba (fail, lack power; intens. dad'aba = be tired/unable) / ola (pass by, neglect)",
+          "pronunciation": "di-da / ba-d'a / d'a-ba / o-la",
+          "context": "Tutschek (1845, § 176.a–d, pp. 52–53: 'oad'z'udide vs. oad'z'ubad'te vs. oad'z'u d'abe')",
           "audioFile": null
         },
         {
-          "english": "Hunt",
-          "translation": "adamo / adamuu",
-          "pronunciation": "a-da-muu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Blow / Smoke / Swear an Oath",
+          "translation": "afuufuu (afufa = blow) / t'ut'a (2s t'ut'ta, 1p t'ut'na = smoke, suck) / kakad'a (swear an oath, root kaka)",
+          "pronunciation": "a-fu-fa / t'u-t'a / ka-ka-d'a",
+          "context": "Tutschek (1845, §§ 12, 20–21, 92, 136, pp. 4, 6–7, 25, 41)",
           "audioFile": null
         },
         {
-          "english": "Swim",
-          "translation": "daakuu (daaka)",
-          "pronunciation": "daa-kuu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Fear / Tremble",
+          "translation": "zodad'a (fear, be afraid) / birʿefad'a & birr-djed'a (shudder with fear) / rogoma (tremble, III rogomza) / na'uu",
+          "pronunciation": "zo-da-d'a / bir-e-fa-d'a / ro-go-ma",
+          "context": "Tutschek (1845, §§ 52, 79, 93, 150.4, pp. 13, 21, 26, 45)",
           "audioFile": null
         },
         {
-          "english": "Fly",
-          "translation": "barrisuu (barrisa / barara)",
-          "pronunciation": "bar-ri-suu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Pull",
-          "translation": "harkisuu (harkisa)",
-          "pronunciation": "har-ki-suu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Push",
-          "translation": "dhiibuu (dhiib-)",
-          "pronunciation": "dhii-buu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Sew",
-          "translation": "erbuu (erba) / hodhuu",
-          "pronunciation": "er-buu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "To see",
-          "translation": "arguu (laaluu)",
-          "pronunciation": "ahr-goo",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "To hear",
-          "translation": "dhaga'uu (dhageefachuu)",
-          "pronunciation": "dhah-gah-oo",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "To know",
-          "translation": "beekuu",
-          "pronunciation": "beh-koo",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "To love / like",
-          "translation": "jaalachuu",
-          "pronunciation": "jah-lah-choo",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "To give",
-          "translation": "kennuu (nuu kenni = give us)",
-          "pronunciation": "kehn-noo",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "To cook",
-          "translation": "bilcheessuu",
-          "pronunciation": "beel-chehs-soo",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "english": "Cook / Boil / Plough / Sow",
+          "translation": "bilcheessuu (biltshad'a = ripen, be cooked) / afêla (boil, III afêlziza) / cota (plough: 'ini gari cote') / dira (sow, III dirziza)",
+          "pronunciation": "bil-tsha-d'a / a-fee-la / co-ta / di-ra",
+          "context": "Tutschek (1845, §§ 76, 78.2, 194, 249.4, pp. 20, 57, 78)",
           "audioFile": null
         }
       ]
@@ -1177,248 +1423,129 @@
       "icon": "✨",
       "entries": [
         {
-          "english": "Small",
-          "translation": "diqqaa / xiqqaa (tinnaa)",
-          "pronunciation": "deeq-qah / teeq-qah",
-          "context": "Krapf 1842 & Tutschek 1844",
+          "english": "Small / Little",
+          "translation": "t'ina (fem. t'ino) / diqqaa / xiqqaa",
+          "pronunciation": "t'i-na / t'i-no / deeq-qah",
+          "context": "Tutschek (1845, §§ 179, 197, pp. 54, 58) & Krapf (1842)",
           "audioFile": null
         },
         {
-          "english": "Big",
-          "translation": "guddaa (fem. guddoo)",
-          "pronunciation": "good-dah / good-doh",
-          "context": "Krapf 1842 & Tutschek 1844",
+          "english": "Big / Great / Tall",
+          "translation": "guddaa / guda (fem. gudo; III verb gudiza = bring up, educate)",
+          "pronunciation": "good-dah / gu-do",
+          "context": "Tutschek (1845, §§ 63.1, 197, pp. 16, 58)",
           "audioFile": null
         },
         {
-          "english": "I / Me",
-          "translation": "ani / an (obj. ana / na)",
-          "pronunciation": "a-ni / a-na",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "I / Me (and Emphatic I myself)",
+          "translation": "ani / an / ano (nom.) ; ana / na (acc.) ; anatu (emph. I myself) ; nati / naf (to/for me) ; nara / narra (from me)",
+          "pronunciation": "a-ni / a-na / a-na-tu",
+          "context": "Tutschek (1845, §§ 218–221, pp. 64–65)",
           "audioFile": null
         },
         {
-          "english": "You (singular)",
-          "translation": "ati (obj. si)",
-          "pronunciation": "a-ti / si",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "You (singular — and Emphatic Thou thyself)",
+          "translation": "ati (nom.) ; zi / si (acc.) ; zitu (emph. thou thyself, takes 3s verb: 'zitu beka') ; ziti / zif (to/for thee) ; zira (from thee)",
+          "pronunciation": "a-ti / zi / zi-tu",
+          "context": "Tutschek (1845, §§ 218–220, pp. 64–65)",
           "audioFile": null
         },
         {
-          "english": "He",
-          "translation": "inni (obj. isa)",
-          "pronunciation": "in-ni / i-sa",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "english": "He / Him",
+          "translation": "ini / inni (nom.) ; iza / isa (acc.) ; izatu (emph. he himself) ; izati / iti / izaf (to/for him) ; izara (from him)",
+          "pronunciation": "i-ni / i-za / i-za-tu",
+          "context": "Tutschek (1845, §§ 218–220, pp. 64–65)",
           "audioFile": null
         },
         {
-          "english": "She",
-          "translation": "ishiin / isiin (obj. ishii / isii)",
-          "pronunciation": "i-shiin / i-shii",
-          "context": "Wikipedia Oromo_language",
+          "english": "She / Her",
+          "translation": "iz'in / ishiin (nom.) ; iz'i / iz'e / ishii (acc.) ; iz'itu (emph. she herself) ; iz'iti / iz'if (to/for her) ; iz'ira (from her)",
+          "pronunciation": "i-shin / i-shi / i-shi-tu",
+          "context": "Tutschek (1845, §§ 218–220, 224, pp. 64–65)",
           "audioFile": null
         },
         {
           "english": "We / Us",
-          "translation": "nuti / nuy (obj. nu)",
-          "pronunciation": "nu-ti / nu",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "translation": "nu / unu / nuti (nom. & acc.) ; nutu (emph. we ourselves) ; nuti / nuf (to/for us) ; nura (from us)",
+          "pronunciation": "nu / u-nu / nu-tu",
+          "context": "Tutschek (1845, §§ 218–220, pp. 64–65)",
           "audioFile": null
         },
         {
           "english": "You (plural)",
-          "translation": "isini (obj. isin)",
-          "pronunciation": "i-si-ni / i-sin",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "translation": "izin / isini (nom. & acc.) ; izintu (emph.) ; iziniti / izinif (to/for you) ; izinira (from you)",
+          "pronunciation": "i-zin / i-zin-tu",
+          "context": "Tutschek (1845, §§ 218–220, pp. 64–65)",
           "audioFile": null
         },
         {
           "english": "They / Them",
-          "translation": "isaani (obj. isaan)",
-          "pronunciation": "i-saa-ni / i-saan",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
+          "translation": "izan / isaani (nom. & acc.) ; izantu (emph.) ; izaniti / izanif (to/for them) ; izanira (from them)",
+          "pronunciation": "i-zan / i-zan-tu",
+          "context": "Tutschek (1845, §§ 218–220, pp. 64–65)",
           "audioFile": null
         },
         {
-          "english": "My / Mine",
-          "translation": "koo / kiyya (m.) ; too / tiyya (f.)",
-          "pronunciation": "koo / kiy-ya",
-          "context": "Wikipedia Oromo_language",
+          "english": "Possessive Suffixes (My, Thy, His, Her, Our, Your, Their)",
+          "translation": "-ko (my), -ke (thy), -za (his), -z'i / -z'e (her), -keña (our), -kezani (your), -zani (their)",
+          "pronunciation": "ko, ke, za, shi, ke-nya, ke-za-ni, za-ni",
+          "context": "Tutschek (1845, § 225, p. 66)",
           "audioFile": null
         },
         {
-          "english": "Your (singular)",
-          "translation": "kee (m.) / tee (f.)",
-          "pronunciation": "kee / tee",
-          "context": "Wikipedia Oromo_language",
+          "english": "Reflexive (Self) & Reciprocal (Each Other) Pronouns",
+          "translation": "ufi / uf (self, oneself, ipse; uffad'a = dress oneself) / wali / wal (each other: waliti = to each other, walwadjin = together, walkeza = amidst, walaka = middle)",
+          "pronunciation": "u-fi / wa-li / wa-la-ka",
+          "context": "Tutschek (1845, §§ 231–240, pp. 68–71)",
           "audioFile": null
         },
         {
-          "english": "Our",
-          "translation": "keenna / keenya (m.) ; teenna / teenya (f.)",
-          "pronunciation": "keen-ya",
-          "context": "Wikipedia Oromo_language",
+          "english": "This / That / The One — The Other",
+          "translation": "kana (nom. kuni, enclitic -ana, emph. kuno = this) / zana (nom. zuni, emph. zuno = that) / ini kana — ini kana (ini toko — ini toko = the one — the other)",
+          "pronunciation": "ka-na / ku-ni / za-na / zu-ni",
+          "context": "Tutschek (1845, §§ 223, 241–244, pp. 65, 71–73)",
           "audioFile": null
         },
         {
-          "english": "This",
-          "translation": "kana (m.) / tana (f.)",
-          "pronunciation": "ka-na / ta-na",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Someone / Something / Alone / All",
+          "translation": "abalu (fem. abali, emph. abalutu = someone, such-and-such) / wa (emph. watu = something) / koba (alone: kobako = I alone) / qit'uma / huntuma / hundaa (all)",
+          "pronunciation": "a-ba-lu / wa-tu / ko-ba-ko / qit-u-ma",
+          "context": "Tutschek (1845, §§ 227.5, 251, pp. 67, 81)",
           "audioFile": null
         },
         {
-          "english": "That",
-          "translation": "san / sana",
-          "pronunciation": "san / sa-na",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Wide / Long / Short / Round / Strong",
+          "translation": "bal'aa (balʿa, III balʿeza = extend) / d'era (long, III d'ereza) / cacaba (short, III cacabza) / guma (round, III gumeza) / dyaba (strong, III dyabeza)",
+          "pronunciation": "bal-aa / d'e-ra / ca-ca-ba / gu-ma / dya-ba",
+          "context": "Tutschek (1845, §§ 65, 70, pp. 18–19)",
           "audioFile": null
         },
         {
-          "english": "Who",
-          "translation": "eenyu (eeññu)",
-          "pronunciation": "een-yu",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Red / Black / White / Yellow-Gray / Blue",
+          "translation": "diimaa (dima) / gurraacha (guradja, fem. gurati, verb guradjã) / adii / boora (borâ = be gray, III bortcha) / t'ife (blue)",
+          "pronunciation": "dii-maa / gu-ra-dja / gu-ra-ti / boo-ra / t'i-fe",
+          "context": "Tutschek (1845, §§ 20, 59, 73, 192, 197, pp. 6, 15, 19, 57–58)",
           "audioFile": null
         },
         {
-          "english": "What",
-          "translation": "maal",
-          "pronunciation": "maal",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Hot / Tepid / Cold / Wet / Dry",
+          "translation": "owʿa (o'aa, hot; III owʿiza) / buluga (tepid, warm; III bulugza) / qorraa & d'amodz'a (cold) / dyida (jiidhaa, wet; III dyiza) / goga (dry, intens. gogoga, III gogza)",
+          "pronunciation": "ow-a / bu-lu-ga / d'a-mo-dja / dyi-da / go-ga",
+          "context": "Tutschek (1845, §§ 60, 63.2, 82, 102, pp. 15–16, 21, 29, 91)",
           "audioFile": null
         },
         {
-          "english": "All",
-          "translation": "hundaa",
-          "pronunciation": "hun-daa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Good / Fair / Bad / Poor / Rich / Old",
+          "translation": "gari (pl. gagari, inchoative garoma = good, fair) & tola (inchoative toloma) & dansaa / hama (fem. hamtu = bad, evil) / hieza (fem. hieti, pl. hieji, verb hioma = poor) / dureza (verb duroma = rich) / dula (verb duloma = old)",
+          "pronunciation": "ga-ri / to-la / ha-ma / ham-tu / hi-e-za / du-re-za",
+          "context": "Tutschek (1845, §§ 98, 108, 179, 192, 197–198, pp. 28, 31, 54, 57–58)",
           "audioFile": null
         },
         {
-          "english": "Other / Another",
-          "translation": "biraa",
-          "pronunciation": "bi-raa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Wide",
-          "translation": "bal'aa / booccoo",
-          "pronunciation": "bal-aa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Red",
-          "translation": "diimaa",
-          "pronunciation": "dii-maa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Green",
-          "translation": "bifa margaa",
-          "pronunciation": "bi-fa mar-gaa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Yellow",
-          "translation": "boora",
-          "pronunciation": "boo-ra",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "White",
-          "translation": "adii",
-          "pronunciation": "a-dii",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Black",
-          "translation": "gurraacha (gur'aaccaa)",
-          "pronunciation": "gur-raa-cha",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Warm / Hot",
-          "translation": "o'aa / buluqaa",
-          "pronunciation": "o-aa / bu-lu-qaa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Cold",
-          "translation": "qorraa",
-          "pronunciation": "qor-raa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "New",
-          "translation": "haaraa",
-          "pronunciation": "haa-raa",
-          "context": "Wikipedia Oromo_language & Wiktionary Swadesh list",
-          "audioFile": null
-        },
-        {
-          "english": "Old",
-          "translation": "moofaa / dulloomaa",
-          "pronunciation": "moo-faa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Good",
-          "translation": "gaarii / dansaa (Borana)",
-          "pronunciation": "gaa-rii / dan-saa",
-          "context": "Borana / Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Bad",
-          "translation": "badaa / hamaa",
-          "pronunciation": "ba-daa",
-          "context": "Wikipedia Oromo_language",
-          "audioFile": null
-        },
-        {
-          "english": "Wet",
-          "translation": "jiidhaa (jiid'aa)",
-          "pronunciation": "jii-dhaa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Near",
-          "translation": "dhiyoo (d'i'oo)",
-          "pronunciation": "dhi-yoo",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Far",
-          "translation": "fagoo",
-          "pronunciation": "fa-goo",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Right (direction)",
-          "translation": "mirga",
-          "pronunciation": "mir-ga",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
-          "audioFile": null
-        },
-        {
-          "english": "Left (direction)",
-          "translation": "bitaa",
-          "pronunciation": "bi-taa",
-          "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "english": "Postpositions & Conjunctions (Over, Under, Before, After, In, With, Until, While)",
+          "translation": "ira (over, from) / dyala (under) / dura (before) / boda & duba (after, behind) / keza (in, out of) / bira (near, beside) / wadjin (with) / hama (until) / aka (that, like, as) / oto (while; with neg. -ni = without) / ho, yo (if, when; yokan = unless) / male (but, except, only)",
+          "pronunciation": "i-ra / dya-la / du-ra / bo-da / ke-za / wa-djin / o-to",
+          "context": "Tutschek (1845, §§ 116–119, 189, 200, 240, 247.6, 252–255)",
           "audioFile": null
         }
       ]
@@ -1429,31 +1556,73 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "Ordinal Numerals (-tiana) & Social Numerals (-anu): First, Second, Third / Two together, Three together",
-          "translation": "tokotiana (dura), lamatiana, zaditiana / lamanu, zadanu",
-          "pronunciation": "to-ko-ti-a-na, la-ma-ti-a-na / la-ma-nu, za-da-nu",
-          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', pp. 62–64",
+          "english": "Ordinal Numerals (-tiana) & Social Numerals (-anu) in Tutschek (1845)",
+          "translation": "ini dura / hangafa (1st), tokotiana (2nd), lamatiana (3rd), zaditiana (4th) / latshanu (2 together), zadanu (3 together), arfanu (4 together); ladz'u (both)",
+          "pronunciation": "i-ni du-ra, to-ko-ti-a-na, la-ma-ti-a-na / lat-sha-nu, za-da-nu, ar-fa-nu",
+          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', §§ 207–210, pp. 60–61",
           "audioFile": null
         },
         {
-          "english": "Rock-salt currency bar (Amole) & its fractional denominations",
-          "translation": "amole (half: cabala; quarter: kurman; eighth: berba)",
-          "pronunciation": "a-mo-le / ca-ba-la / kur-man / ber-ba",
-          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', p. 65",
+          "english": "Rock-salt currency bar (Amole) & its fractional denominations in Tutschek (1845)",
+          "translation": "amole (half [1/2]: tchabnana; quarter [1/4]: karmana; three-quarters [3/4]: gimaz'i; eighth [1/8]: gedele / gadele)",
+          "pronunciation": "a-mo-le / tchab-na-na / kar-ma-na / gi-ma-shi / ge-de-le",
+          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', § 212, p. 62",
           "audioFile": null
         },
         {
-          "english": "The 8 Derived Verbal Stems in Oromo/Borana (Causative -za/-siza, Middle/Autobenefactive -ad'a/-at, Passive -am)",
-          "translation": "ba (go out) → baza (put out) →ochiza; god'a (make) → god'ad'a (make for oneself) → god'ama (be made)",
-          "pronunciation": "ba -> ba-za / go-d'a -> go-d'a-d'a -> go-d'a-ma",
-          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', pp. 14–28",
+          "english": "The 8 Derived Verbal Forms in Tutschek (1845)",
+          "translation": "I. bâ (go out) → II. bad'a (middle) → III. baza (causative) → IV. bafad'a → V. baziza → VI. bazifad'a → VII. baziziza → VIII. bazizifad'a; Passive in -ama (caba → cabama, mara → marfama)",
+          "pronunciation": "ba -> ba-d'a -> ba-za -> ba-fa-d'a -> ba-zi-za",
+          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', §§ 43–51, 105, pp. 11–12, 30",
           "audioFile": null
         },
         {
-          "english": "Morning & Harvest Prayer to Waaqa (Supreme Sky God)",
-          "translation": "Yaa Waaqa, nagaa nuu kenni! Rooba nagaa nuu roobi!",
-          "pronunciation": "yaa waa-qa na-gaa nuu ken-ni",
-          "context": "Karl & Lawrence Tutschek (1845, pp. 84–86) — Three Native Oromo Prayers",
+          "english": "The 6 Modal Constructions (-u, -re, -mi, -ti, -yi, -ni) in Tutschek (1845)",
+          "translation": "Subjunctive in -u; Interrogative -re ('malif ani zi egare?'); Negative interrogative -mi ('ani zin djenemi?'); Terminative -ti ('t'uri haman ani d'ufuti'); Simultaneity -yi ('oto ati muka dyala tezuyi'); Negative participial -ni ('oto izan homa hiñad'ini galani')",
+          "pronunciation": "e-ga-re / dje-ne-mi / d'u-fu-ti / te-zu-yi / hi-nya-d'i-ni",
+          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', §§ 112–119, pp. 32–34",
+          "audioFile": null
+        },
+        {
+          "english": "Prayer 1 (Akafed'e's Prayer after the War of Hambo and Hamaya, 1845)",
+          "translation": "Wacayo laftana, goftako! ati na guba teza, ani zi dyalan taa. Ho haman nati d'ufe, aka mukni adu narra cabu, ati hama nati cabi, goftako, gadiza na tai! Wacayo, goftako, biftun cara zodoma, ho dini d'ufe ramoke lafati hin adjezizin, ira cabi!",
+          "pronunciation": "wa-ca-yo laf-ta-na gof-ta-ko a-ti na gu-ba te-za",
+          "context": "Karl & Lawrence Tutschek (1845, pp. 84–87, Prayer 1 vv. 1–16 — 'Good God of this earth, my Lord! Thou art above me, I am below thee... be thou my shadow! Thou Sun with thirty rays...')",
+          "audioFile": null
+        },
+        {
+          "english": "Prayer 2 (Morning Prayer in Tutschek 1845)",
+          "translation": "Ya Waca nagan na bultshite nagan na oltshi. Ede inand'aca karakora kan naga naf god'te, ya Waca, milkiko na gadyêlzi... zi wamad'etan ola, gofta goftan cabne.",
+          "pronunciation": "ya wa-ca na-gan na bul-tshi-te na-gan na ol-tshi",
+          "context": "Karl & Lawrence Tutschek (1845, pp. 87–88, Morning Prayer — 'O God, thou hast let me pass the night in peace, let me pass the day in peace... lead my steps... O Lord, who hast no Lord!')",
+          "audioFile": null
+        },
+        {
+          "english": "Prayer 3 (Evening Prayer in Tutschek 1845)",
+          "translation": "Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; zi male dyaban hindyiru, tokitchi gidin cabne. Harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi.",
+          "pronunciation": "ya wa-ca na-gan na ol-tshi-te na-gan na bul-tshi",
+          "context": "Karl & Lawrence Tutschek (1845, p. 88, Evening Prayer — 'O God, thou hast let me pass the day in peace, let me pass the night in peace... Under thy hand I pass the day, under thy hand I pass the night, thou art my mother, thou my father.')",
+          "audioFile": null
+        },
+        {
+          "english": "Historical Proverb in Akafed'e Dalle's Letter (Munich, Oct. 21, 1840)",
+          "translation": "D'ad'an ibidti bue hindebiu ('Butter fallen into the fire comes not back')",
+          "pronunciation": "d'a-d'an i-bid-ti bu-e hin-de-bi-u",
+          "context": "Karl & Lawrence Tutschek (1845, p. 90, Letter 5 from Akafed'e Dalle to Otshu Aga)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Satirical Verse on Merit & Boasting (Tutschek 1845)",
+          "translation": "Bagila ñad'u, malif d'aka lakize? — Zoba dibad'u, malif naca lakize? ('He who eats hard beans, why does he leave stones? He who lies and anoints himself with butter, why omits he woman's foot-rings?')",
+          "pronunciation": "ba-gi-la nya-d'u ma-lif d'a-ka la-ki-ze",
+          "context": "Karl & Lawrence Tutschek (1845, § 249.2, p. 77)",
+          "audioFile": null
+        },
+        {
+          "english": "Drink-Offering (Libation) & Sacred Trees",
+          "translation": "d'ibayu (drink-offering; d'ibafad'a = bring a libation) / odaa, lafto, makaniza, meçça (sacred trees under which prayers are offered)",
+          "pronunciation": "d'i-ba-yu / o-daa / laf-to / ma-ka-ni-za",
+          "context": "Karl & Lawrence Tutschek (1845, § 97, p. 27 & p. 84 note 1)",
           "audioFile": null
         },
         {
@@ -1465,29 +1634,29 @@
         },
         {
           "english": "Horse / Mare / Bridle / Shield / Spear",
-          "translation": "farda (pl. fardoolii) / gama / lugama / gaachana / waraana (eeboo)",
+          "translation": "farda (pl. faratoni / fardoolii) / gama / lugama / gaachana / waraana (eeboo)",
           "pronunciation": "far-da / ga-ma / lu-ga-ma / gaa-cha-na / wa-raa-na",
           "context": "Rev. J. L. Krapf (1842) 'Vocabulary of the Galla Language' & (1850) 'Six East-African Languages'",
           "audioFile": null
         },
         {
           "english": "Honey / Hydromel (Honey-wine) / Barley beer / Coffee ceremonies",
-          "translation": "damma / daadhii / farsoo / buna qalaa",
+          "translation": "damma (dagma) / daadhii / farsoo / buna qalaa",
           "pronunciation": "dam-ma / daa-dhii / far-soo / bu-na qa-laa",
-          "context": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)",
+          "context": "Tutschek (1844–1845) & Krapf (1842)",
           "audioFile": null
         },
         {
           "english": "Wild fig tree (Sacred assembly shade tree)",
-          "translation": "odaa",
-          "pronunciation": "o-daa",
-          "context": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)",
+          "translation": "odaa / qilt'u",
+          "pronunciation": "o-daa / qil-tu",
+          "context": "Tutschek (1844–1845) & Krapf (1842)",
           "audioFile": null
         },
         {
           "english": "Supreme Creator / Sky God",
-          "translation": "Waaqa (Yaa Waaqa! = O God!)",
-          "pronunciation": "wah-qah",
+          "translation": "Waaqa / Wacayo (Yaa Waaqa! = O God!)",
+          "pronunciation": "wah-qah / wa-ca-yo",
           "context": "Krapf 1842 & Tutschek 1844–1845 Oromo/Borana",
           "audioFile": null
         },
@@ -1506,13 +1675,6 @@
           "audioFile": null
         },
         {
-          "english": "Horse",
-          "translation": "farda",
-          "pronunciation": "fahr-dah",
-          "context": "Krapf 1842 & Tutschek 1844",
-          "audioFile": null
-        },
-        {
           "english": "Hyena",
           "translation": "waraabessa",
           "pronunciation": "wah-rah-behs-sah",
@@ -1520,52 +1682,10 @@
           "audioFile": null
         },
         {
-          "english": "Spear",
-          "translation": "eeboo",
-          "pronunciation": "eh-boh",
-          "context": "Krapf 1842 & Tutschek 1844",
-          "audioFile": null
-        },
-        {
-          "english": "Shield",
-          "translation": "gaachana",
-          "pronunciation": "gah-chah-nah",
-          "context": "Krapf 1842 & Tutschek 1844",
-          "audioFile": null
-        },
-        {
-          "english": "Honey-wine / Mead",
-          "translation": "daadhii",
-          "pronunciation": "dah-dhee",
-          "context": "Tutschek 1844 & 1845",
-          "audioFile": null
-        },
-        {
           "english": "Barley / Grain",
-          "translation": "garbuu / midhaan",
+          "translation": "garbuu / midhaan (mid'an)",
           "pronunciation": "gahr-boo / mee-dhahn",
           "context": "Tutschek 1844 & 1845",
-          "audioFile": null
-        },
-        {
-          "english": "Morning",
-          "translation": "ganama",
-          "pronunciation": "gah-nah-mah",
-          "context": "Krapf 1842 & Tutschek 1844",
-          "audioFile": null
-        },
-        {
-          "english": "Evening",
-          "translation": "galgala",
-          "pronunciation": "gahl-gah-lah",
-          "context": "Krapf 1842 & Tutschek 1844",
-          "audioFile": null
-        },
-        {
-          "english": "Mountain",
-          "translation": "gaara / tulluu",
-          "pronunciation": "gah-rah / tool-loo",
-          "context": "Krapf 1842 & Tutschek 1844",
           "audioFile": null
         },
         {
@@ -1573,6 +1693,83 @@
           "translation": "moti (Abbaa Boku)",
           "pronunciation": "moh-tee",
           "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "Proverbs/Fables (Makmaksa), Soothsaying (Tibāra), Reconciliation (Arāra) & Covenant (Kaku) in Krapf (1842)",
+          "translation": "makmaksa (fable, proverb, story, tale; verb makmakse = tell fables/proverbs or foretell) / taba (tale, talk, play; tabate) / tibāra (soothsaying; tibāra hime = foretell) / ayanna (festival) / arāra (peace, reconciliation; ararse = reconcile; kan ararsu = peacemaker/mediator) / kaku & kakate (oath, establish a covenant) / mukabe & mukaba (pray / prayer to Waka)",
+          "pronunciation": "mak-mak-sa / ti-baa-ra / a-raa-ra / ka-ku / mu-ka-ba",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842) \"Vocabulary of the Galla Language\", pp. 8–9, 13–14, 19, 23, 25–28, 34–36",
+          "audioFile": null
+        },
+        {
+          "english": "Tutschek's (1844) Four Oromo/Galla Informants, Religious Sects & Autonyms",
+          "translation": "Akafed'e Dalle (Boranna Galla from Botchi in Hambo, province of Liban, d. May 17, 1841, aged ~22), Otshu Aga (from Urgeza in Sibu, who also transmitted songs from Bilile / Mahbuba of Guma, d. Oct. 27, 1840), and Aman Gonda (from Hibi in Goma, belonging to the wadjo / watcho subdivision of the Boranna sect, son of an aba fuño judicial officer) / Autonyms: oromo (pl. oromoni, p. 24) & himata ('orthodox believer', contrasted with faqi [Falasha], wada, zidama [Christian], and awalini [Muslim], p. 200) / Sects: Boranna (subdivision wadjo, p. 147) vs. djarzo (p. 78)",
+          "pronunciation": "a-ka-fe-d'e dal-le / ot-shu a-ga / a-man gon-da / o-ro-mo / hi-ma-ta / bo-ran-na / wa-djo / djar-zo",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, Preface pp. xii–xiv & pp. 24, 78, 147, 200",
+          "audioFile": null
+        },
+        {
+          "english": "The Five Galla Tribes / Gadaa Circumcision Rank Orders in Tutschek (1844)",
+          "translation": "1st: horad'a ('the first tribe of the Gallas respecting their rank to the circumcision', p. 203) → 2nd: midjile ('the second tribe of the Gallas respecting the order which is observed amongst them at circumcision', p. 169) → 3rd: robale ('the 3d tribe of the Gallas respecting their claim to circumcision', p. 155) → 4th: kilole ('the name of the fourth tribe of the Gallas who have their claim to the order of the circumcision therefrom', p. 34) → 5th: dulo ('the fifth tribe of the Gallas respecting their rank to the circumcision', p. 104); plus djara (surgical circumcision feast held two years after the Gada / Buta festival, p. 78) and tchala (priests officiating at circumcision, p. 73)",
+          "pronunciation": "ho-ra-d'a, mi-dji-le, ro-ba-le, ki-lo-le, du-lo / dja-ra / tcha-la",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 34, 73, 78, 104, 155, 169, 203",
+          "audioFile": null
+        },
+        {
+          "english": "Political, Judicial & Military Hierarchy in Tutschek (1844)",
+          "translation": "moti (king, fem. meti, p. 171; royal palace = mazara, p. 167; royal concubines = zadjeda / birmad'u, p. 180; royal groom leading war-steed farta lola or courser djolle = nao, p. 177) / zoreza, zalgana & momoti (princes, nobles, p. 184) / aba ganda (town governor chosen from the zoreza, pp. xxi, 6) / aba lafa (landed proprietor; settled tenants/vassals = gubziza, p. 68) / mangudo or bera (senate, court of aldermen & judges sitting at the gude dubi or yai dyidu assembly place, pp. 67, 84, 133, 144, 167) / aba fuño ('master of the cord', judicial & police officer under the aba ganda, pp. 6–7, 125) / cuge (sergeant/tipstaff under the aba fuño, p. 49) / cabi (distrainer for debt, p. 41) / erada (bailiff, p. 16) / gindo (wooden leg-stocks prison, p. 62) / findja Lali (waterfall in Hambo used for capital execution, p. 122) / guma (blood-money for homicide or ransom for a captive, p. 71; gumad'a naga = women's peace offerings)",
+          "pronunciation": "mo-ti / zo-re-za / a-ba gan-da / a-ba la-fa / man-gu-do / a-ba fu-nyo / cu-ge / gin-do / gu-ma",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. xxi, 6–7, 16, 41, 49, 62, 67–68, 71, 84, 122, 125, 133, 144, 167, 171, 177, 180, 184",
+          "audioFile": null
+        },
+        {
+          "english": "The Kalatcha Oath-Staff Ceremony & Mora Wal Cabad'a Peace Covenant in Tutschek (1844)",
+          "translation": "kalatcha (staff of wood wreathed with green branches of the sacred meeça tree under the sacred lafto Michaila acacia tree; the accused licks it and swears before the priest Gadyo: 'hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!' = 'May God pluck out and destroy all the property I possess from my house [if I lie]!', pp. 31–32) / mora wal cabad'a ('holding the sacrificial abdominal fat mora together', solemn peace-ratification ceremony between warring parties, pp. 43, 172)",
+          "pronunciation": "ka-lat-cha / laf-to mi-chai-la / mo-ra wal ca-ba-d'a",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 31–32, 43, 172",
+          "audioFile": null
+        },
+        {
+          "english": "Heroic Distinctions (Gondala vs. Gurgudu), Triumphal Song (Gerara) & Insignia in Tutschek (1844)",
+          "translation": "gondala (hero/champion who has slain an enemy, elephant, lion, rhino, or buffalo and earned the right to anoint his head with butter, p. 66, fixing the zariti asparagus-thorn in his hair during the gerara triumphal song so the melting butter does not fall, p. 182, wearing the ivory armlet ilbora, p. 20, round earring d'ugo, p. 116, gold/silver chain ear-pendant loti, p. 159, and military bracelet gudidja, p. 67, while leaving the kuba piece of skin-meat in the field for wild beasts, p. 38) vs. gurgudu (man who has not yet performed a heroic exploit, p. 69)",
+          "pronunciation": "gon-da-la / gur-gu-du / ge-ra-ra / za-ri-ti / il-bo-ra / d'u-go / lo-ti / gu-di-dja",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 20, 38, 66–67, 69, 116, 159, 182",
+          "audioFile": null
+        },
+        {
+          "english": "Priesthood, Divination, Sacrificial Raven (Arageza), Sacred Trees & Folklore Beings in Tutschek (1844)",
+          "translation": "ayana (guardian spirit / soul) & ayanditcha / ayantu (dream-interpreting priest/priestess, p. 8) / calu, calitcha & caliti (high sacrificial priests and priestesses, p. 45) / mora ilalitcha (haruspex who divines the future by inspecting the veins of the sacrificial peritoneum fat mora, p. 172) / djila (magician/healer, p. 80) / arageza (white-necked sacrificial raven Corvus albicollis that consumes offerings on the wooden sacrificial fork muka haçi in place of God, pp. 9, 196) / Sacred trees: wateza (Bruce's Wanzey tree, Cordia abyssinica, p. 147), lafto (acacia, p. 157), meeça (Ilex/palm twig of adoption & oaths, p. 168), makaniza (Croton macrostachyus, p. 161), and ba (sacred tree in Sibu, p. 125) / Folklore beings: bulgu (male man-eating giant/ogre in fables, p. 143), bauda (female half-human cannibal ghost, p. 128), adi (white shape-shifting phantom, pp. 4–5), and buda (sorcerer/evil eye capable of turning into a hyena, p. 141)",
+          "pronunciation": "a-ya-na / ca-lu / mo-ra i-la-lit-cha / a-ra-ge-za / mu-ka ha-tchi / wa-te-za / bul-gu / bau-da",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 4–5, 8–9, 45, 80, 125, 128, 141, 143, 147, 157, 161, 168, 172, 196",
+          "audioFile": null
+        },
+        {
+          "english": "15 Verbatim Galla Proverbs (Magmaga) in Tutschek's Dictionary (1844)",
+          "translation": "(1) 'afan agabudan kad'ad'u' ('Pray with an empty/fasting mouth', p. 3); (2) 'ati malⁱ bechta harka arabu male' ('What knowest thou but to lick off the hand?', p. 9); (3) 'yo argite ebizi, yo d'abte abari' ('When thou receivest, bless; when thou dost not receive, curse!', p. 16); (4) 'ilkanin namni gitᵃumtu fira' ('By the teeth all men are friends — i.e., do not trust every smiling face', pp. 20, 121); (5) 'idya Wacᵃ kaba ura' & 'hadarinza kaba ura' ('The eye of God penetrates the wall' & 'His wisdom penetrates a wall', pp. 27, 190); (6) 'uma Wacayoti hinkolfin' ('Do thou not laugh at any of God's works!', p. 28); (7) 'ini aka kozi tȧ' ('He is like dung — i.e., as good and useful as manure', p. 37); (8) 'yo canqen gaya keza ut'ale namni indua' ('When a spark jumps out of the pipe, someone dies', p. 45); (9) 'ini aka gararati bifaza didirad'a' ('He changes his colour like a chameleon', p. 56); (10) 'Tchaba ati murte Naman bad'z'izin; — Liqi ati fud'te Naman bazizin' ('The wood which thou didst hew, let nobody carry; — The loan which thou didst take, let nobody pay', p. 72); (11) 'tchitinif ibida waliṅ gain; biçanif ibidi wali ha gau' ('Chaff and fire shall not come near each other; water and fire may approach each other', p. 74); (12) 'mukni Wacᵃ careṅ domu' ('The edge of the spear of God is not blunted', p. 102); (13) 'ibidif biçan hirmiṅ cabu, fulif gongon d'okzaṅ cabu' ('Fire and water have no prohibition, face and throat have no concealment', p. 114); (14) 'ini aka falʿanati afan nama dyala d'abad'a' ('He stands like a spoon under the mouth of men', p. 120) & 'madirati hinkolfini' ('Do not laugh during dinner', p. 162); (15) 'hodjad'z'u wayo mo tau wai?' ('Is it better to work or to sit idle?', pp. 146, 201), 'bokeṅi mit'ileṅ adjezu, zi adjeza?' ('The rain kills not even a little ant, will it kill thee?', p. 170), 'handangon qilenza ufiti naqeti ilman god'ad'a?' ('Does the hen lay eggs impregnated by the air?', p. 177), & 'namni ho bola lit'e hadaroma' ('When a man has fallen into the pit, he becomes wise', p. 190)",
+          "pronunciation": "a-fan a-ga-bu-dan ka-d'a-d'u / i-dya wa-ca ka-ba u-ra / u-ma wa-ca-yo-ti hin-kol-fin",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 3, 9, 16, 20, 27–28, 37, 45, 56, 72, 74, 102, 114, 120–121, 146, 162, 170, 177, 190, 201",
+          "audioFile": null
+        },
+        {
+          "english": "7 Verbatim Galla Songs (Wetu) in Tutschek's Dictionary (1844)",
+          "translation": "(1) 'Koromin wal ate, Latshu gugurod'a; — Nadeṅ wal arate, Latshu muzurod'a' ('Bulls gore, both are black; — Women altercate, both recently married', p. 1); (2) 'Ombo z'an bared'a, Maf baretu d'abe? Dyalalti d'ukuba, Maf arera d'abe?' ('Ombo z'an is handsome, why does he not find a fair maiden? Love is an illness, why does it not find medicine [arera]?', p. 10); (3) 'Wanin korriza, Muka cabad'a; Diarzi roriza, Durba kad'ad'a' ('The Wanin monkey growls and grasps a tree; the foolish bald-pate fellow means to win a maiden's heart', p. 36); (4) 'Galani na ñad'e, Giben na gezize; — Ano d'ufa djenan, D'iben na tezize' ('The river devoured me and carried me to the lake; — I said I shall come, but an obstacle detained me', p. 61); (5) 'Gaya t'ut'uko, Tambo na d'abi, Fag'afuftuko, Yambo na wami!' ('My pipe-smoker, put the tobacco here; my flute-player, call the dancers!', pp. 117–118); (6) 'Cotani cotani yaa babazani; Djed'ani djed'ani gargar nu bazani' ('They ploughed, ploughed and made a trench; they chattered, chattered and separated us', p. 127); (7) 'Zila zimalan yaba, Zimali dameṅ cabu; — Zila gandaran gala, Gandatu wareṅ cabu' ('In vain I climb a reed, a reed has no branches; — In vain I return to town, the town has no feeling for glory', p. 148) & 'Lenzan lon guza Bia gubati; D'enzan lon buza Iya nafati' ('Lenza grass causes cattle to dry up on the mountain; flight exposes cattle to screams of desperation', p. 158)",
+          "pronunciation": "ko-ro-min wal a-te / om-bo shan ba-re-d'a / ga-la-ni na nya-d'e",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 1, 10, 36, 61, 117–118, 127, 148, 158",
+          "audioFile": null
+        },
+        {
+          "english": "Dr. Krapf's (1850, pp. viii–ix, 1–64) Dana River (Tana) Kigalla Dialect vs. Shoan Galla & Origin of \"Ormania\"",
+          "translation": "Studied in 1845 from Tana River Galla (Orma / Southern Oromo) near Takaongo and Berrarata to compare with his 1842 Shoan Galla vocabulary (10–12 degrees north) • Autonym & \"Ormania\" (p. ix): Coins \"Ormania\" (\"an African Germania\") from the Galla autonym Orma (\"men / brave people\"), correcting a French writer who confused Orma with morma (\"neck\") • Shared Amharic-Galla roots proved genuinely Cushitic/Galla because the Dana Galla have no contact with Christian Abyssinia • Greetings & Blessings (pp. 20, 24): nagaia bulte? (\"good morning / hast thou passed the night in peace?\") & wakne nágaia si kennu! (\"farewell! may God give thee peace!\")",
+          "pronunciation": "or-ma / or-ma-ni-a / be-rra-ra-ta / na-ga-ia bul-te / wak-ne na-ga-ia si ke-nnu",
+          "context": "Rev. Dr. J. L. Krapf (1850) 'Vocabulary of Six East-African Languages' (Tübingen), Preface pp. viii–ix & pp. 20, 24",
+          "audioFile": null
+        },
+        {
+          "english": "Dana River Kigalla Governance, Law, Religion & Nature Lexicon (Krapf 1850, pp. 1–64)",
+          "translation": "Religion & Priesthood: Wāka (God; soda Wakáti = godliness, p. 23), moru / bersíftu (wise man / priest / teacher, pp. 38, 63), kallu (soothsaying/divination, p. 47), bitta (sacrifice; bitta balfatje = to offer sacrifice, p. 42), kákăno / kákata (oath/covenant, pp. 12, 34), tába & makmáksa (story, fable, proverb, pp. 19, 39, 49) • Governance & War: móti / heiu (king/governor; mótuma / heiyóma = kingdom, p. 29), murra heiuáti (vice-regent, p. 60), subbo / abba duláti (general/commander, p. 22), nama ka yákamsu (judge; yákama = law/judgement, pp. 29–30), nágaia & arára (peace/reconciliation; ka arársu = mediator/peacemaker, pp. 33, 36) • Geography & Trade: Máro (Galla name for the Dana/Tana River, p. vii; gélăna = river, melka = ford, pp. 21, 41), mánia (sea; mánia gudda = ocean, pp. 34, 43), hówolo / hirrino (ship/canoe, p. 44), tjábi dakatjáti (snow/hail on mountains, p. 46), ilka arbu (elephant tusk / ivory traded to Pokomo and Swahili, p. vii & p. 29)",
+          "pronunciation": "wa-ka / mo-ru / ber-sif-tu / ka-llu / bi-tta / mo-ti / hei-u / su-bbo / a-ra-ra / ma-ro / ge-la-na",
+          "context": "Rev. Dr. J. L. Krapf (1850) 'Vocabulary of Six East-African Languages' (Tübingen), Preface pp. vii–ix & pp. 1–64",
           "audioFile": null
         }
       ]

@@ -491,3 +491,29 @@ export const ALPHABET = {
         { letter: 'nd', pronunciation: 'one sound at word start', example: 'Ndawa: tobacco' },
     ],
 };
+
+// ============================================================
+// NORTHCOTE (1907) ONOMASTICS, CUSTOMARY LAW & ETHNOGRAPHY
+// From G. A. S. Northcote, "The Nilotic Kavirondo", JRAI Vol. 37 (1907, pp. 58–66)
+// ============================================================
+export const NORTHCOTE_1907_ONOMASTICS_AND_LAW = {
+    originAndKinship: "Belong to the same Nilotic family as the Dinka of the Sudan and are closely akin to the Aluri (Alur) and Acholi on both sides of the Nile near Wadilai; originally formed one tribe with the Acholi before migrating from the north-west under one big chief (pp. 58–59).",
+    timeOfDayBirthNames: [
+        { verbatim: 'onyango', modern: 'Onyango (m.) / Anyango (f.)', meaning: 'Born in the morning (p. 62)' },
+        { verbatim: 'oching', modern: "Ochieng' (m.) / Achieng' (f.)", meaning: 'Born at noon (p. 62)' },
+        { verbatim: 'odiambo', modern: 'Odhiambo (m.) / Adhiambo (f.)', meaning: 'Born in the afternoon (p. 62)' },
+        { verbatim: 'otieno', modern: 'Otieno (m.) / Atieno (f.)', meaning: 'Born at night (p. 62)' },
+    ],
+    hereditaryNicknames: [
+        { verbatim: 'obele', root: 'bel (mtama millet)', meaning: 'The man who owned much mtama (millet) (p. 62)' },
+        { verbatim: 'oliech', root: 'liech (elephant)', meaning: 'The man who killed an elephant (p. 62)' },
+        { verbatim: 'obonyo', root: 'bonyo (locust)', meaning: 'The man like a locust (p. 62)' },
+    ],
+    customaryLawAndRites: [
+        "Married woman's grass tassel (chieno): discarded upon a husband's death until remarriage; anyone who touches a married woman's grass tassel must pay a fine of 3 goats to her husband (pp. 58–59).",
+        "Succession & inheritance (p. 61): Strict clan exogamy; each wife's allocated cattle pass to her own sons (eldest taking the largest share), and chieftaincy descends to the eldest son of the first/chief wife (mikayi) even if a junior wife bore an older son (or to an adult half-brother/eldest uncle if the heir is an infant).",
+        "Marriage & bride-wealth (pp. 61–62): Preliminary feast sets aside an offering for the sun-god (meat, chicken, mtama, beer); bride cooks the first dinner at the groom's village to signify acceptance; dowry was 20 cattle before the 1883 cattle plague, vs. 7 cattle (handsome dowry) or 1 heifer and 1 bull (or 1 bull and 20 goats) in 1907.",
+        "Funeral rites (p. 63): Bull-charging dance in full war-paint, mock combat behind huge painted buffalo-hide shields (~3.5 ft × 6 ft), mourning for 6 days (chief) or 3 days (commoner), and recumbent burial inside the deceased's own hut, which continues to be occupied by his heir (correcting Sir Charles Eliot).",
+        "Rain-making, fishing & music (pp. 64–66): Rain-maker boils herbs under a sacred tree and blows through a hollow reed before squirting the decoction into the air; fishing with 4-pronged wooden spears, weirs, and woven-grass nets; 8-stringed harp (nyatiti / thum) accompanying extempore songs."
+    ]
+};

@@ -1598,16 +1598,16 @@
       "entries": [
         {
           "english": "Historical Ethnonyms in 1902–1910 Records: People of the White Goats / Butterfly People",
-          "translation": "Il-oikop / Il-Burkeneji (Loiborkeneji) / Sampur",
+          "translation": "Il-oikop / Il-Burkeneji (Naibor Keneji = 'white sheep/goats') / Sampur",
           "pronunciation": "il-oi-kop / il-bur-ke-ne-ji / sam-pur",
-          "context": "Sir Harry H. Johnston (1902, Vol. II) & C. W. Hobley (1910, pp. 156–157)",
+          "context": "Sir Harry H. Johnston (1902, Vol. II) & C. W. Hobley (1910, pp. 159–160, 162 n.)",
           "audioFile": null
         },
         {
           "english": "Major Samburu Phratries / Clan Sections (Masula, Pisikishu, Nyaparai, Lorogishu, Longeli,ukumai)",
-          "translation": "Lmasula, Lpisikishu, Lnyaparai, Llorogishu, Llongeli, Lukumai",
-          "pronunciation": "lma-su-la, lpi-si-ki-shu, lnya-pa-rai",
-          "context": "C. W. Hobley (1910, p. 156) &Hon. K. R. Dundas (1910) — North Maa Clan Divisions",
+          "translation": "9 Sambur Geographical Divisions & Chiefs (Hobley 1910, p. 159): (1) Pusigishu ('grey cattle', Chief Ol-Lelelit), (2) Masola (Chief Lal taram), (3) Lukumai (Chief Ol Emantili), (4) L'orogishu / L'orogichu ('black cattle', Chief Ol Arūs), (5) El Doiju (Chief Paramorijo), (6) El Mwesi (Chief Larandilin), (7) Loimusi (Chief Lanawasai), (8) Longeli (Chief Leiguruguru), (9) Nyabarei (Chief Lolegul) • 3 Sambur Gilat / Orōt Founded by Chieftainess Sitat (p. 159): (1) Sitat (dominant clan), (2) Ol Lesilali, (3) Maletis; Sambur Laibon: Ol Segeteti • 6 Laikipiak Divisions (pp. 159–160): Memerūn, Momonyōt, Il Morijo, El Aibaratari, Muzara, Lanat (Chief Lengila, driven from Kirimar/Irimba by Sitaa/El Duju Bworana) & 3 Laikipiak Gilat: Bartaolin, Sioma, Kisengeni; plus El Keriet hunters of Mariti",
+          "pronunciation": "pu-si-gi-shu, ma-so-la, lu-ku-mai, lo-ro-gi-shu, si-tat, ol le-si-la-li, ma-le-tis",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 159–160",
           "audioFile": null
         },
         {
@@ -1678,6 +1678,20 @@
           "translation": "n-aisho",
           "pronunciation": "nah-ee-shoh",
           "context": "Johnston 1902 Burkeneji & Hollis 1905",
+          "audioFile": null
+        },
+        {
+          "english": "The Mogogodo (Mokogodo / Il Mwesi / Yaaku) Remnant Vocabulary, Numerals & Verb Paradigms Recorded by C. W. Hobley (1910, pp. 146–155)",
+          "translation": "Chiefs Parmashu & Matungi (dwelling at Pore, Doinyo Longishu & Mgur Nanyori; consulting Mweru laibon Lakaibe) • Numerals (p. 153): Wēhet (1), Chei (2), Hāāt (3), Shuen (4), Hobi (5), Kapūn / Apūn (10), Teta (100); Concords (p. 154): Kib wehet / kesei wehet (1 man) → Ke chei (2 men) → Kha haat (3 men), Damatut wehetu (1 woman) → Damatuti chei (2 women), Sungai kiwehet (1 lion) → Sungai muchei/kechei (2 lions) • Core Lexicon (pp. 147–152): Sokho / Engai (Supreme Being), Tezo (sun), Lei (moon), Eso (star), Soho (rain), Antu (water), Ando (lake), Iku (fire), Tirri (earth), Dimin (country), Kaiet (hill/big forest), Keded (tree), Chōl mokōt (wild fig tree), Iei/Sei (man), Oromishi (moran), Roshei (elder), Damatut (woman), Tasat (old woman), Utei (boy), Kerai/Eta (girl), Pashi (own father) vs. Payisi (another's father), Iyo (own mother) vs. Itigarai (another's mother), Tei (brother), Tō (sister), Mitei (head), Ila (eyes), Nibe (ear), Nugha (nose), Injīt (teeth), Erei (tongue/age-set), Ichei (heart), Sogo (blood), Mucho (bone), Wuat/Wāt (cow), Rehei (heifer), Oto (goat), Abūr (sheep), Laūr (camel), Kwehen (dog), Sungai (lion), Shibin (leopard), Sogome (elephant), Orset (rhino), Pie (buffalo), Tōr (spear), Shutei (sword), Reget (shield), Paha (bow), Lah (arrows), Hai (hut), Luata (village), Keshoboshon / Aishei (salutation) • Verb Paradigms (pp. 154–155): Ndeta / Egeto giheji / Egitai / Egeto gihechen (I/he/we/they eat), Ngeheno / Geheno / Cheheno / Kegeheni / Chegehen (know; neg. Ishahanu), Kongo / Kagu / Ke / Kege / Kabu shoboshon(adi) (am/art/is/are good; bad = Ke tepiter), Nalehe / Alehe / Nalehenu / Lehei (coming), Nukha antu (I drink water)",
+          "pronunciation": "mo-go-go-do / we-het, chei, haat, shu-en, ho-bi, ka-pun, te-ta / ke-sho-bo-shon / so-kho",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. V, pp. 146–155",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 798, 802, 843, 849–850) Account of the Burkeneji (Samburu / Loiborkeneji) & Lake Rudolf Pastoralists",
+          "translation": "Burkeneji (Loiborkeneji / Samburu): described by Johnston (pp. 798, 802, 843) as the most primitive branch of the Masai stock, driven some 50 years prior by the Turkana-Sūk from the Kerio Valley and western coast-lands of Lake Rudolf to the country south and south-east of Lake Rudolf; they intermediary-traded camels from Somali/Rendille peoples east of Lake Rudolf to the Turkana (p. 849) and use the characteristic Lake Rudolf concave-sided four-pointed hide shield with a central bow-shaped wooden midrib (p. 850, shared with Turkana, Sūk, and Elmolo)",
+          "pronunciation": "bur-ke-ne-ji / loi-bor-ke-ne-ji",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 798, 802, 843, 849–850",
           "audioFile": null
         }
       ]

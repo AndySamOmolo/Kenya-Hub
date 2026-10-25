@@ -3047,21 +3047,21 @@
           "english": "Cardinal Numerals 1–10 in Johnston (1919 #11a Meru)",
           "translation": "imwe (1), iiri / bairi (2), ithatu (3), inya (4), ithano (5), ithanthatu (6), mũgwanja (7), inyanya (8), kenda (9), ikũmi (10)",
           "pronunciation": "i-mwe, ii-ri, i-tha-tu, i-nya, i-tha-no",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 72) — #11a Meru",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107) — #11a Meru",
           "audioFile": null
         },
         {
           "english": "Personal Pronouns in Johnston (1919 #11a Meru): I / Thou / He, She / We / You (pl.) / They",
           "translation": "niĩ / gwe (we) / we / batũ / bũ / bo",
           "pronunciation": "nii / gwe / we / ba-tu / bu / bo",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 72) — #11a Meru",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107) — #11a Meru",
           "audioFile": null
         },
         {
           "english": "Possessive Stems in Johnston (1919 #11a Meru): My / Thy / His, Her / Our / Your / Their",
           "translation": "-akwa / -aku / -ake / -etũ / -enyu / -abo (-ao)",
           "pronunciation": "-a-kwa / -a-ku / -a-ke / -e-tu / -e-nyu / -a-bo",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 72) — #11a Meru",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107) — #11a Meru",
           "audioFile": null
         },
         {
@@ -3076,6 +3076,34 @@
           "translation": "muntũ (pl. antũ / bantũ) / mũrũme (pl. barũme) / mũka (pl. aka / baka) / mwana (pl. aana / baana)",
           "pronunciation": "mun-tu / an-tu / mu-ru-me / mu-ka / mwa-na",
           "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 68–69) — #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Council of Elders (Njũri Ncheke), Spiritual Dignitary (Mũgwe) & Sacred Grove",
+          "translation": "Njũri Ncheke, Mũgwe, & Mũrũrĩ (sacred forest)",
+          "pronunciation": "nju-ri nche-ke / mu-gwe / mu-ru-ri",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', pp. 156–158 (Mweru) & p. 169 (Tharaka)",
+          "audioFile": null
+        },
+        {
+          "english": "The 22 Mweru Geographical Sub-Tribes, 13 Mwiria Totemic Clans (Netiri) & Ntowaita Exodus Legend (Hobley 1910, pp. 156–158)",
+          "translation": "22 Mweru Sub-Tribes & Chiefs (p. 156): (1) Janjai (Kamuru), (2) Oringo (Njoo), (3) Kunati (Waikaiwa), (4) Mbuya (Waivori), (5) Akithii (Mutwiarando), (6) Athwana (Kirigwa), (7) Muthara (Ndaminuki), (8) Karama, (9) Iembe (Kiliungu), (10) Muchi Muguru (Njaiili), (11) Kithio (Mutiarando), (12) Amwa, (13) Mnithu (Paimwisu), (14) Nyangini, (15) Tera, (16) Ntagira, (17) Karuanjoi, (18) Kithironi, (19) Rukho, (20) Iokhi, (21) Amengñendi, (22) Thaicho (Paratobi) • 13 Mwiria Clans & Netiri Totems (p. 157): (1) Ntowaita (dominant clan, formerly Njiru), (2) Athanya (vyondo basket twine), (3) Njaru (white cattle), (4) Nthia (speckled cattle), (5) Ntuni (red cattle), (6) Amakui (edible root Mukui), (7) Athinga (giraffe), (8) Antuanthama (mpala; antu = people), (9) Singamburi (goats), (10) Antwa mwakia ('greedy people', dik-dik), (11) Angilo (black cattle), (12) Mwianda (lice; anda = louse), (13) Amatu (francolin; matu = ears) • Ntowaita ('ku-ita' = to cut) Exodus Legend (pp. 157–158): Their laibon solved 3 enemy tests (fleas from chopped tail-hair, two-sided hairy sandals from donkey ears, and an iron rod from earth to sky by inspecting a volunteer's entrails) and parted the river waters after pouring ewe/ass/human milk into the river",
+          "pronunciation": "mwi-ri-a / ne-ti-ri / nto-wai-ta / ku-i-ta / jan-jai / o-rin-go / mu-tha-ra / i-em-be",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 156–158",
+          "audioFile": null
+        },
+        {
+          "english": "The 14 Tharaka (Thaka) Clans (Mwiriga / Mbai) & Totems (Nthuku) Recorded by C. W. Hobley (1910 Appendix 6, p. 169)",
+          "translation": "Ntonga (Duiker nthia), Mbua (Baboon Ikuli), Koli (Monkey ntheo), Nya (Aardvark guma), Nkuyu (Dik-dik Kabii), Kamowao (Hartebeest Ando), Kanyaki (Elephant nzoo), Kangina (Wart-hog ngi), Kamugwi (Reedbuck ndoya), Kathoka (Bush-pig ngulwe), Kanjogo (Elephant nzoo), Engimu (Rhino ngimo), Kirundu (Buffalo mbogo), Mutua (Hyaena mbiti); Thaka wizard = Mugao vs. medicine man = Mutu muwao (p. 93 n.), spirit tamarind shrine = Mthumuba (p. 85 n.)",
+          "pronunciation": "mwi-ri-ga / nthu-ku / nton-ga / m-bu-a / ko-li / ka-nya-ki / ki-run-du",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', p. 2, pp. 85, 93 & Appendix (6), p. 169",
+          "audioFile": null
+        },
+        {
+          "english": "Mount Kenya Dialect Variants in Johnston (1919, Vol. I, pp. 98–112 #11 E. Embu, C. Cuka, Mw. Mwimbe, M. Meru #11a, Emb. Emberre, Þ. Þeraka, Ig. Igωji)",
+          "translation": "Dialectal Variants Recorded by Johnston (pp. 98–106): Mū-kω (white ant/termite, Embu), M-buta (back, Cuka), Ki-ai pl. ci- (man's breast, Embu) / Ru-ria pl. n-dia (Meru) / Ru-gωnω (Mwimbe), Mū-rata (brother, Meru/Mwimbe), N-jamba (bull, Cuka/Meru), Rū-sena (country, Meru), Mu-tinjire (doctor/diviner, Embu/Meru), Ṅ-giti (dog, Meru/Embu), Mū-raṅgω (door, Meru), A-va (father, Embu) / Ba-va (father/grandfather, Meru) / Ūma (grandfather, Embu), G-itigirra (fear, Meru) / Ṅ-korora (fear, Mwimbe), Gi-þaka (forest, Meru), N-kuā (ghost, Meru), Ki-hīa (he-goat, Meru), Mu-ruṅgu (God, Cuka/Embu/Meru), Mū-þiginyω (heel, Embu) / N-tωgigω (Meru) / Ki-soṅua (Mwimbe), Kī-būtū (hoe, Embu) / I-þanwa (hoe, Meru), Gī-þūnω (hut, Embu), M-būta (hunger, Meru), N-gatia (lion, Nyeri/Meru), Mami (mother, Meru), N-jīwa (pigeon, Meru), Kī-gwū/Gωcu (song, Embu) / Mū-ūmba (song, Meru), Kī-rāma (spear, Meru), Siyare (stick, Meru), N-twmōi (tail, Meru), Mā-zigūma (urine, Meru), Rω-e (water, Meru), Mū-gūrra (woman, Meru), Kī-šīī (womb, Meru)",
+          "pronunciation": "mu-kω / ki-ai / mu-ti-nji-re / gi-bu-tu / gi-thu-nω / ki-gwu",
+          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 98–112; Vol. II, 1922, pp. 28–30)",
           "audioFile": null
         }
       ]

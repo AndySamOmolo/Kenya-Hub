@@ -11,7 +11,7 @@
   "hasAudio": false,
   "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
-  "contributorNote": "Pokomo (Kipfokomo) dictionary compiled line-by-line from Rev. Dr. J. L. Krapf ('Vocabulary of Six East-African Languages', Tübingen, 1850 — Public Domain), Ferdinand Würtz ('Wörterbuch des Ki-Tikuu und des Ki-Pokomo', 1895 — Public Domain), Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 78–81, #13 Pokomo, 1919 — Public Domain), and Nurse & Hinnebusch (1993).",
+  "contributorNote": "Pokomo (Kipfokomo) dictionary compiled line-by-line from Rev. Dr. J. L. Krapf ('Vocabulary of Six East-African Languages', Tübingen, 1850 — Public Domain), Ferdinand Würtz ('Wörterbuch des Ki-Tikuu und des Ki-Pokomo', 1895 — Public Domain), Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 98–112 & Vol. II, pp. 31–32, #13 Pωkωmω (Pfωkωmω), 1919 — Public Domain), and Nurse & Hinnebusch (1993).",
   "categories": [
     {
       "id": "greetings",
@@ -129,6 +129,48 @@
           "pronunciation": "dzah-nah",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
+        },
+        {
+          "english": "Good morning! (Krapf 1850, p. 29)",
+          "translation": "múya nágaia",
+          "pronunciation": "mu-ya na-ga-ia",
+          "context": "Rev. Dr. J. L. Krapf (1850) \"Vocabulary of Six East-African Languages\", p. 29",
+          "audioFile": null
+        },
+        {
+          "english": "Farewell! May God give thee peace! (Krapf 1850, p. 13)",
+          "translation": "mungu kahúve nágĕa!",
+          "pronunciation": "mun-gu ka-hu-ve na-ge-a",
+          "context": "Rev. Dr. J. L. Krapf (1850) \"Vocabulary of Six East-African Languages\", p. 13",
+          "audioFile": null
+        },
+        {
+          "english": "What is the news? (Krapf 1850, p. 30)",
+          "translation": "mágu gani yaziéo máfia?",
+          "pronunciation": "ma-gu ga-ni ya-zi-e-o ma-fia",
+          "context": "Rev. Dr. J. L. Krapf (1850) \"Vocabulary of Six East-African Languages\", p. 30",
+          "audioFile": null
+        },
+        {
+          "english": "Yes / Truly / Indeed (Krapf 1850, pp. 1, 21, 55, 63)",
+          "translation": "ndifio; háji; ni háji; hajíni",
+          "pronunciation": "ndi-fio / ha-ji / ha-ji-ni",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 1, 21, 55, 63",
+          "audioFile": null
+        },
+        {
+          "english": "Nothing / Not at all / Woe! (Krapf 1850, pp. 24, 30, 61)",
+          "translation": "táfa; taku; táku kántu / hatta / ole!",
+          "pronunciation": "ta-fa / ta-ku kan-tu / o-le",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 24, 30, 31, 61",
+          "audioFile": null
+        },
+        {
+          "english": "Day before yesterday / Day after tomorrow (Krapf 1850, pp. 29, 63)",
+          "translation": "zúsi (before last year: muaka zúsi) / késo kútoa",
+          "pronunciation": "zu-si / ke-so ku-to-a",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 29, 63",
+          "audioFile": null
         }
       ]
     },
@@ -211,7 +253,14 @@
           "english": "Twenty / One hundred",
           "translation": "mirongo miwili (20) / gana (100)",
           "pronunciation": "mi-ron-go mi-wi-li / ga-na",
-          "context": "Krapf (1850) & Johnston (1919, p. 80) — #13 Pokomo",
+          "context": "Krapf (1850) & Johnston (1919, pp. 107–108) — #13 Pokomo",
+          "audioFile": null
+        },
+        {
+          "english": "First / Second / Three times / Seventy (Krapf 1850, pp. 14, 42, 44, 53)",
+          "translation": "wa kwansa (1st) / wa wiwíi (2nd) / mieda miháhu (3 times; múeda mmóza = once) / miongo mifungahe (70)",
+          "pronunciation": "wa kwan-sa / wa wi-wii / mi-e-da mi-ha-hu / mi-on-go mi-fun-ga-he",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 14, 31, 42, 44, 53",
           "audioFile": null
         }
       ]
@@ -289,6 +338,34 @@
           "translation": "dzina (pl. madzina)",
           "pronunciation": "dzi-na (pl. ma-dzi-na)",
           "context": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Grandfather / Grandmother / Grandchild (Krapf 1850, p. 18)",
+          "translation": "zahuáje (grandfather) / tjáuje (grandmother & mistress, pp. 18, 28) / mdóto ja mana (grandson)",
+          "pronunciation": "za-hua-je / tja-u-je / m-do-to ja ma-na",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 18, 28",
+          "audioFile": null
+        },
+        {
+          "english": "Uncle / Sister / Son-in-law / Virgin / Youth (Krapf 1850, pp. 45, 47, 55, 57, 63)",
+          "translation": "mmétje (uncle) / úmbu (sister) / mkúe (son-in-law) / gáltama muke (virgin) / múráni (young son/warrior)",
+          "pronunciation": "m-me-tje / um-bu / m-ku-e / gal-ta-ma mu-ke / mu-ra-ni",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 45, 47, 55, 57, 63",
+          "audioFile": null
+        },
+        {
+          "english": "King / Prince / Judge / Council Residence (Krapf 1850, pp. 17, 18, 23, 36, 39, 41)",
+          "translation": "hátju / háju / heiu (king/prince; kingdom = heiyóma; vice-regent = murra ja hatju) • manguddo (judge/ruler; judgement = yákăma) • gása ya jiháko / gassa ya heiu (residence/council seat)",
+          "pronunciation": "ha-tju / hei-yo-ma / man-gud-do / ya-ka-ma / ga-sa",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 17, 18, 23, 36, 39, 41, 57",
+          "audioFile": null
+        },
+        {
+          "english": "Friend / Neighbour / Guest / Peacemaker (Krapf 1850, pp. 3, 8, 16, 30, 33)",
+          "translation": "bámu / muénsa (friend/comrade) • óla / jirani (neighbour) • mgéni (guest/stranger) • muntu ararsania / muelekánia (peacemaker/mediator; peace = arára / nágea)",
+          "pronunciation": "ba-mu / o-la / m-ge-ni / a-ra-ra",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 3, 8, 16, 18, 27, 30, 33",
           "audioFile": null
         }
       ]
@@ -388,6 +465,34 @@
           "pronunciation": "mo-yo",
           "context": "Krapf (1850) & Würtz (1895) — Kipokomo",
           "audioFile": null
+        },
+        {
+          "english": "Forehead / Cheek / Beard / Throat / Neck (Krapf 1850, pp. 4, 7, 15, 30, 53)",
+          "translation": "adda ya usso (forehead) / pfúnda (cheek) / jiéfu (beard) / anga ja mío (throat) / mnio (neck)",
+          "pronunciation": "ad-da ya us-so / pfun-da / jie-fu / m-ni-o",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 4, 7, 15, 30, 53",
+          "audioFile": null
+        },
+        {
+          "english": "Breast / Shoulder / Armpit / Rib / Navel (Krapf 1850, pp. 2, 6, 30, 40, 44)",
+          "translation": "bágui (breast/chest) / makuáfa (shoulder; kuáfa = armpit) / yuáfu (rib) / jikófu (navel)",
+          "pronunciation": "ba-gui / ma-kua-fa / yua-fu / ji-ko-fu",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 2, 6, 30, 40, 44",
+          "audioFile": null
+        },
+        {
+          "english": "Belly / Liver / Lungs / Marrow / Udder (Krapf 1850, pp. 4, 25–27, 55)",
+          "translation": "mahumbo (belly/stomach) / ini (liver) / ma yafu yáfu (lungs) / mora (marrow) / jiwé (udder)",
+          "pronunciation": "ma-hum-bo / i-ni / ma ya-fu ya-fu / mo-ra / ji-we",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 4, 25–27, 49, 55",
+          "audioFile": null
+        },
+        {
+          "english": "Finger / Fingernail / Knee / Footprint / Tear (Krapf 1850, pp. 14, 15, 23, 30, 52)",
+          "translation": "dóie, pl. madóie (finger; doie ja tjuátjo = toe) / niáa (nail/claw) / kúhi (knee; simáma na kúhi = kneel) / zuátjo, pl. niátjo (sole of foot / footprint) / zósi ja zitso (tear)",
+          "pronunciation": "do-ie / ni-aa / ku-hi / zua-tjo / zo-si",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 7, 14–15, 23, 30, 52, 54",
+          "audioFile": null
         }
       ]
     },
@@ -398,9 +503,9 @@
       "entries": [
         {
           "english": "Sheep",
-          "translation": "ng'ondzi",
-          "pronunciation": "ngohn-dzee",
-          "context": "Krapf 1850 & Johnston 1919 p. 94 #14 Pokomo",
+          "translation": "rē (pl. ma-rē) / ng'ondzi",
+          "pronunciation": "reh (pl. mah-reh) / ngohn-dzee",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 103 & Vol. II, p. 32 #13 Pωkωmω) & Krapf (1850)",
           "audioFile": null
         },
         {
@@ -485,6 +590,34 @@
           "translation": "iyai (pl. mayai)",
           "pronunciation": "i-yai",
           "context": "Krapf (1850) & Würtz (1895) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Ass / Horse / Camel / Bull / Ox (Krapf 1850, pp. 3, 6, 20, 32)",
+          "translation": "harre (ass/donkey) / férada (horse) / ngamia (camel) / sánga ya gnombe (bull) / korma júa gnombe (ox)",
+          "pronunciation": "har-re / fe-ra-da / san-ga / kor-ma",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 3, 6, 20, 32",
+          "audioFile": null
+        },
+        {
+          "english": "He-goat / Buffalo / Leopard / Monkey / Hare (Krapf 1850, pp. 6, 19, 24, 29, 40)",
+          "translation": "pée kóroma / pée muyúme (he-goat; pée = goat) • niáhi (buffalo) • nadóde (leopard) • maiónda (monkey) • kitungúe (hare)",
+          "pronunciation": "pee ko-ro-ma / nia-hi / na-do-de / ma-ion-da / ki-tun-gu-e",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 6, 17, 19, 24, 29, 40",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus / River-dragon / Pig / Frog / Bee (Krapf 1850, pp. 4, 16, 20, 33, 40)",
+          "translation": "ungúu jua zána / ngú (hippopotamus) • unguyúe (pig) • tjuiya / tjúia (frog/toad) • niúji (bee; uji wa niúji = honey; úma wa niúji = bee-sting)",
+          "pronunciation": "un-guu jua za-na / un-gu-yu-e / tjui-ya / niu-ji",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 4, 16, 20, 33, 40, 49, 53",
+          "audioFile": null
+        },
+        {
+          "english": "Pigeon / Raven / Vulture / Fly / Louse / Flea (Krapf 1850, pp. 14–15, 26, 33, 38, 57)",
+          "translation": "nsíwa (pigeon) / tázi (raven) / muéwe & ndéri (vulture) / nsi (fly) / mbúgo (gnat) / nzáwa (louse) / záwa (flea)",
+          "pronunciation": "nsi-wa / ta-zi / mue-we / n-za-wa",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 14–15, 17, 26, 33, 38, 57",
           "audioFile": null
         }
       ]
@@ -598,6 +731,41 @@
           "pronunciation": "moo-hoh",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
+        },
+        {
+          "english": "Tana River (Dana / Pokomo / Maro / Quilimancy) & Brook (Krapf 1850, pp. iv, vii, 6, 40)",
+          "translation": "zána (river; zána kadúdu = brook; jia zána = cross a river) / Pokómo / Dána (Galla: Máro)",
+          "pronunciation": "za-na / po-ko-mo / da-na / ma-ro",
+          "context": "Rev. Dr. J. L. Krapf (1850), Preface pp. iv, vii & pp. 6, 40, 54",
+          "audioFile": null
+        },
+        {
+          "english": "Sea / Ocean / Island / Marsh / Bank (Krapf 1850, pp. 4, 22, 27, 31, 42)",
+          "translation": "rokánga / ukánga (sea; rukánga yukú = ocean) • kissíwa (island) • síwa ja mázi (marsh/lake) • fangáa (river bank) • gérre (coast)",
+          "pronunciation": "ro-kan-ga / u-kan-ga / si-wa ja ma-zi / fan-gaa / ger-re",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 4, 7, 22, 27, 31, 42",
+          "audioFile": null
+        },
+        {
+          "english": "Heaven / Cloud / Wind / Lightning / Thunder (Krapf 1850, pp. 2, 7, 19, 25, 53, 61)",
+          "translation": "yuwíngo (heaven; wíngo, pl. mawíngo = cloud) • ruffúto / rufúto (air/wind/storm) • yuféfe (lightning) • zungurúmu (thunder) • kikúku ja pẹpo (whirlwind)",
+          "pronunciation": "yu-win-go / ruf-fu-to / yu-fe-fe / zun-gu-ru-mu",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 2, 7, 19, 25, 49, 53, 60–61",
+          "audioFile": null
+        },
+        {
+          "english": "Dawn / Morning / Noon / Evening / Morning-Star (Krapf 1850, pp. 9, 12, 29–30)",
+          "translation": "wiwíu (dawn/morning; wiwíde wiwiu = it dawns) • júa ya mskáhi (noon; dinner = jakúja ja mskáhi) • zioni (evening; uzuéo wa zúa = west) • nióha ya magurra (morning star)",
+          "pronunciation": "wi-wiu / jua ya m-ska-hi / zi-o-ni / nio-ha ya ma-gur-ra",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 9–10, 12, 29–30, 59",
+          "audioFile": null
+        },
+        {
+          "english": "Forest / Wilderness / Plain / Valley / Precipice (Krapf 1850, pp. 15, 34, 35, 57, 61)",
+          "translation": "mihu (forest; mihu kadúdu = shrub) • yuwánda (plain/wilderness; kónde ya yuwánda = field) • hambáa (valley) • gerre ya muima (precipice)",
+          "pronunciation": "mi-hu / yu-wan-da / ham-baa / ger-re ya mui-ma",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 14–15, 34–35, 44, 57, 61",
+          "audioFile": null
         }
       ]
     },
@@ -610,7 +778,7 @@
           "english": "Milk",
           "translation": "maziwa (mawele)",
           "pronunciation": "mah-zee-wah / mah-weh-leh",
-          "context": "Krapf 1850 & Johnston 1919 p. 93 #14 Pokomo",
+          "context": "Krapf 1850 & Johnston 1919 p. 101 #13 Pωkωmω",
           "audioFile": null
         },
         {
@@ -668,6 +836,34 @@
           "pronunciation": "cha-ku-rya",
           "context": "Krapf (1850) & Würtz (1895) — Kipokomo",
           "audioFile": null
+        },
+        {
+          "english": "Flour / Bread / Butter / Salt / Sugar (Krapf 1850, pp. 5, 6, 14, 42, 50)",
+          "translation": "uissoa (flour; fāsa = grind, iwe ja ku huéa = millstone) • mkáhe (bread) • mafúha dolli (butter; mafúha = oil/melted butter) • múniu (salt) • sokari (sugar)",
+          "pronunciation": "u-is-so-a / m-ka-he / ma-fu-ha dol-li / mu-niu",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 5–6, 14, 18, 27–28, 42, 50",
+          "audioFile": null
+        },
+        {
+          "english": "Breakfast / Dinner / Supper (Krapf 1850, pp. 6, 10, 50)",
+          "translation": "kilizuío (breakfast) • jakúja ja mskáhi (midday dinner) • jakúja ja zióni (evening supper)",
+          "pronunciation": "ki-li-zui-o / ja-ku-ja ja m-ska-hi / ja-ku-ja ja zi-o-ni",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 6, 10, 50",
+          "audioFile": null
+        },
+        {
+          "english": "Ship / Sewn Boat (Mtepe) / Axe / Iron / Spear (Krapf 1850, pp. 3, 22, 44)",
+          "translation": "dau & mzéfe (ship/vessel; jakási = dhow) • kibéria (axe/hatchet) • kéra (iron & weapons; kolléo ya fuia kéra = blacksmith tongs; búrrisa = anvil) • fúmo (spear) & uha (bow/arrow)",
+          "pronunciation": "dau / m-ze-fe / ki-be-ria / ke-ra / bur-ri-sa",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 2–3, 22, 44, 54, 57",
+          "audioFile": null
+        },
+        {
+          "english": "Door / Fence / Mortar / Sieve / Kettle (Krapf 1850, pp. 11, 19, 23, 29, 45)",
+          "translation": "mjángo (door; mjángo kadúdu = window) • tjuézi / zúezi (hedge/wall) • kinu ja ku sóa (mortar for pounding) • uzéo (sieve; fefénta na uzéo = sift) • niúngu (kettle/pot)",
+          "pronunciation": "m-jan-go / tjue-zi / ki-nu ja ku so-a / u-ze-o / niun-gu",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 11, 14, 19, 23, 29, 45, 58, 61",
+          "audioFile": null
         }
       ]
     },
@@ -680,7 +876,7 @@
           "english": "Speak",
           "translation": "kunena (kuamba)",
           "pronunciation": "koo-neh-nah / kwahm-bah",
-          "context": "Krapf 1850 & Johnston 1919 #14 Pokomo",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
@@ -801,6 +997,41 @@
           "pronunciation": "koo-pee-kah",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
+        },
+        {
+          "english": "Abide / Sit / Build / Cook / Boil (Krapf 1850, pp. 1, 5, 6, 8)",
+          "translation": "kāa (abide/sit) • mbáka (build; mu mbáka niumba = mason) • bíka / mbikia (cook) • hokossa (boil tr.; hokóha = boil intr.)",
+          "pronunciation": "kaa / m-ba-ka / bi-ka / ho-kos-sa",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 1, 5–6, 8, 23, 27",
+          "audioFile": null
+        },
+        {
+          "english": "Accept / Take / Give / Buy / Sell (Krapf 1850, pp. 1, 6, 17, 43)",
+          "translation": "huáa & hikísa (accept/receive/take) • fā / va (give) • gúiya / gúya (buy; vántu va ku guia = market) • gúsa (sell)",
+          "pronunciation": "huaa / hi-ki-sa / fa / gui-ya / gu-sa",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 1, 6, 17, 27, 37, 43",
+          "audioFile": null
+        },
+        {
+          "english": "Love / Want / Ask / Search / Converse (Krapf 1850, pp. 3, 8, 25–26, 42)",
+          "translation": "zákka (love/want; nazakka = I like; mazakko = love/will) • usa (ask) • látja (search/inquire/seek) • hasáua (converse; hasáwa = conversation/story)",
+          "pronunciation": "zak-ka / u-sa / la-tja / ha-sa-wa",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 3, 8, 22, 25–26, 42–43, 49",
+          "audioFile": null
+        },
+        {
+          "english": "Go out / Enter / Return / Run / Jump (Krapf 1850, pp. 17, 23, 39, 41)",
+          "translation": "yáwa (go out/rise) • njia (go in) • útja (return; uza = restore) • dérăma (run/escape) • zúmpa (jump/leap)",
+          "pronunciation": "ya-wa / n-jia / u-tja / de-ra-ma / zum-pa",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 12, 17, 23, 39, 41",
+          "audioFile": null
+        },
+        {
+          "english": "Cut / Kill / Hunt / Sew / Write (Krapf 1850, pp. 9, 20, 23, 43, 62)",
+          "translation": "húna (cut; húna kizoa = behead; húna mnéno = decide) • iyága / iága (kill) • winsa (hunt; mawínso = hunting) • sona (sew) • andíka (write)",
+          "pronunciation": "hu-na / i-ya-ga / win-sa / so-na / an-di-ka",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 4, 9, 20, 23, 43, 62",
+          "audioFile": null
         }
       ]
     },
@@ -813,42 +1044,42 @@
           "english": "Personal Pronouns: I / Thou / He, She / We / You (pl.) / They",
           "translation": "mimi / wewe / yeye / sisi / nyinyi / wao",
           "pronunciation": "mi-mi / we-we / ye-ye / si-si / nyi-nyi / wa-o",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 80) — #13 Pokomo",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #13 Pokomo",
           "audioFile": null
         },
         {
           "english": "Possessive Stems: My / Thy / His, Her / Our / Your / Their",
           "translation": "-angu / -ako / -akwe / -ehu / -enyu / -ao",
           "pronunciation": "-an-gu / -a-ko / -a-kwe / -e-hu / -e-nyu / -a-o",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 80) — #13 Pokomo",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #13 Pokomo",
           "audioFile": null
         },
         {
           "english": "Spear / Bow / Arrow / Knife",
           "translation": "fumo (pl. mafumo) / uha / mvi / kisu",
           "pronunciation": "fu-mo / u-ha / mvi / ki-su",
-          "context": "Rev. Dr. J. L. Krapf (1850) & Johnston (1919, p. 79) — Kipokomo",
+          "context": "Rev. Dr. J. L. Krapf (1850) & Johnston (1919, pp. 98–106) — Kipokomo",
           "audioFile": null
         },
         {
           "english": "Honey / Beeswax / Bee",
           "translation": "uuki (asali) / nta / nyuki",
           "pronunciation": "u-u-ki / nta / nyu-ki",
-          "context": "Rev. Dr. J. L. Krapf (1850) & Johnston (1919, p. 78) — Kipokomo",
+          "context": "Rev. Dr. J. L. Krapf (1850) & Johnston (1919, pp. 98–106) — Kipokomo",
           "audioFile": null
         },
         {
           "english": "Tana River",
           "translation": "Muho wa Tsana",
           "pronunciation": "moo-hoh wah tsah-nah",
-          "context": "Krapf 1850 & Johnston 1919 #14 Kipfokomo",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Dugout Canoe",
           "translation": "waho (pl. mawaho)",
           "pronunciation": "wah-hoh",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
@@ -862,70 +1093,84 @@
           "english": "Honey",
           "translation": "uki",
           "pronunciation": "oo-kee",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Spear",
           "translation": "fumo (pl. mafumo)",
           "pronunciation": "foo-moh",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Bow",
           "translation": "uha",
           "pronunciation": "oo-hah",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Arrow",
           "translation": "muvi (pl. mivi)",
           "pronunciation": "moo-vee",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Village / Homestead",
           "translation": "mudzi (pl. midzi)",
           "pronunciation": "moo-dzee",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Forest",
           "translation": "msitu",
           "pronunciation": "m-see-too",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Leopard",
           "translation": "tsui",
           "pronunciation": "tsoo-ee",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Hyena",
           "translation": "fisi",
           "pronunciation": "fee-see",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Twenty",
           "translation": "milongo miwiri",
           "pronunciation": "mee-lohn-goh mee-wee-ree",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "One hundred",
           "translation": "igana",
           "pronunciation": "ee-gah-nah",
-          "context": "Krapf 1850 & Johnston 1919 #14",
+          "context": "Krapf 1850 & Johnston 1919 #13 Pωkωmω",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1919–1922) #13 Pωkωmω (Pfωkωmω) Corpus: Prefix System, Numerals & Tana River Lexicon",
+          "translation": "Prefixes (Vol. I, p. 111 & Vol. II, p. 32): Class 1 Mu- (subj. mu-, u-, yu-, a-, ka-), 2 Wa-/Va-, 3 Mu-, 4 Mi-, 5 I-/Dzi-/Dz- (concord di-), 6 Ma-, 7 Ki-, 8 Vi-, 9/10 N-/Ma- (i-/zi-), 11 Lu-/U- (older Ru-/Rω-), 12 U- (for Tu-), 13 Ka-, 14 U-, 15 Ku-, 16 Ha-/Fa-/Pfa- (Hā-fa 'here', Fā-lē/Hū-kō 'there', Fēpfī 'near'), 17 Mu- • Numerals (p. 107): -mωdza (1), -wīī/-mbīī (2), -hāhū/N-tāhū (3), -nē/N-nē (4), -tsānω (5), Hāndāhū (6), Fūṅgāhē (7), Nānē (8), K-ēnda (9), Kūmi (10), Mī-rōṅgω mī-wīī (20), Gāna (100), Kī-kwī (1,000) • Distinctive Roots (pp. 98–110): Sempfe (adze), Dzahe/Tsahi (arrow), Tsωka/Berya (axe), M-fūwe pl. va-fūwe (baboon), Hōri/Zefe (canoe), Hacu/Haju (chief), M-pfūya (rain), Tsāna/Dzāna (river), Phēra (rhinoceros), Rē pl. ma-rē (sheep), Wānte/N-gāω (shield), Mū-hūma (slave), U-tēmbo (palm wine), Kī-vīnω (song), Lū-khūni/Lū-kūni (firewood, Errata p. x), Yēω (today), Kēšω (tomorrow), Dzāna (yesterday), Nhā-nhā! (no!)",
+          "pronunciation": "ki-pfω-kω-mω / ha-cu / m-pfu-ya / tsa-na / ha-nda-hu / fu-nga-he",
+          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 98–112; Vol. II, 1922, pp. 31–32)",
+          "audioFile": null
+        },
+        {
+          "english": "Dr. J. L. Krapf's (1850, Preface pp. iv, vii–viii & pp. 1–64) Kipokómo Corpus from Hadji Omar of Kalindi & Mángea Origin Traditions",
+          "translation": "Historical Context (Preface pp. vii–viii): Recorded in 1845 at Takaóngo (near Kilifi Bay) from Hadji Omar, brother of Bonnaia Dadia, chief of Kalindi (first Pokomo village on the Dana / Pokómo / Máro / Quilimancy river), who served as interpreter with the Galla chieftain of Berraráta; preserves the oral traditions that the Wasegéju near Tanga were originally Wapokómo expelled by the Galla, that the Wateita of Kadiáro, Ndara, and Bura call the Wanika Ambakómo from their former residence in Pokomo territory, and that the Kiriama (Giriama) lived at Mángea on the Pokomóni • Distinctive Kipokómo Governance, Kinship & Cushitic-Sabaki Lexicon (pp. 1–64): hátju / heiu (king/chief; heiyóma = kingdom; murra ja hatju = vice-regent; gása ya jiháko / gassa ya heiu = chief's council seat), manguddo (judge; yákăma = judgement, yakámisa = judge), kallu (soothsaying, p. 47), arára & nágea (peace/reconciliation; muntu ararsania = peacemaker, p. 33), zahuáje (grandfather), tjáuje (grandmother/mistress), mmétje (uncle), úmbu (sister), gáltama muke (virgin), múráni (young son/warrior), bámu (friend), óla (neighbour), mágu (news/information), sári (name), mótjo (heart/mind/soul), muázi (blood), gégo pl. magégo (tooth), zuátjo pl. niátjo (footprint/sole), zána (river), rokánga / ukánga (sea/ocean), dau & mzéfe (ship/mtepe), kibéria (axe), kéra (iron), harre (donkey), férada (horse), sánga (bull), korma (ox), nadóde (leopard), maiónda (monkey), kitungúe (hare), ungúu jua zána (hippo), uissoa (flour), kilizuío (breakfast), jakúja ja mskáhi (dinner), jakúja ja zióni (supper), huáa & hikísa (accept/take), zákka (love/want), látja (search/seek), hasáua (converse)",
+          "pronunciation": "ka-lin-di • bon-na-ia da-dia • ha-dji o-mar • man-ge-a • am-ba-ko-mo • ha-tju • man-gud-do",
+          "context": "Rev. Dr. J. L. Krapf (1850) \"Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla)\" (Tübingen, L. F. Fues), Preface pp. iv, vii–viii & pp. 1–64",
           "audioFile": null
         }
       ]
@@ -939,28 +1184,28 @@
           "english": "Small",
           "translation": "-dodo (mudodo, kadodo)",
           "pronunciation": "doh-doh / kah-doh-doh",
-          "context": "Krapf 1850 & Johnston 1919 p. 95 #14 Pokomo",
+          "context": "Krapf 1850 & Johnston 1919 pp. 107–109 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Big",
           "translation": "-kuu (mukuu, kukuu)",
           "pronunciation": "koo / moo-koo",
-          "context": "Krapf 1850 & Johnston 1919 p. 95 #14 Pokomo",
+          "context": "Krapf 1850 & Johnston 1919 pp. 107–109 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Bad",
           "translation": "-wi (muwi, mbwi)",
           "pronunciation": "wee / moo-wee",
-          "context": "Krapf 1850 & Johnston 1919 p. 95 #14 Pokomo",
+          "context": "Krapf 1850 & Johnston 1919 pp. 107–109 #13 Pωkωmω",
           "audioFile": null
         },
         {
           "english": "Good",
           "translation": "-ema (muema, njema)",
           "pronunciation": "eh-mah",
-          "context": "Krapf 1850 & Johnston 1919 p. 95 #14 Pokomo",
+          "context": "Krapf 1850 & Johnston 1919 pp. 107–109 #13 Pωkωmω",
           "audioFile": null
         },
         {
@@ -982,6 +1227,20 @@
           "translation": "-kundu (nyekundu)",
           "pronunciation": "koon-doo",
           "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Long / High / Short / Broad / Heavy / Light (Krapf 1850, pp. 6, 19–20, 25–26, 44)",
+          "translation": "muiyéa / muíea (long/high) • mfúfi (short) • pámfu / fámfu (broad/wide) • msího (heavy) • kiwódo (light) • júmu (hard) • djóo / muóo (smooth/mild)",
+          "pronunciation": "mui-ye-a / m-fu-fi / pam-fu / m-si-ho / ki-wo-do / ju-mu",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 6, 19–20, 25–26, 28, 44, 46",
+          "audioFile": null
+        },
+        {
+          "english": "New / Ancient / All / Alone / Near / Far (Krapf 1850, pp. 2, 12, 16, 30)",
+          "translation": "jifía / kifia (new/fresh) • kái (ancient/old) • ónse / wónse (all) • kajéje (alone/single) • háfupi / hafúfi (near) • kúye (far/remote)",
+          "pronunciation": "ji-fia / kai / on-se / ka-je-je / ha-fu-fi / ku-ye",
+          "context": "Rev. Dr. J. L. Krapf (1850), pp. 2, 12, 16, 30–31, 39",
           "audioFile": null
         }
       ]

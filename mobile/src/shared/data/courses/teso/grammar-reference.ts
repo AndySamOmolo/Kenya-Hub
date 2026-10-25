@@ -19,7 +19,7 @@ export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
     id: "teso-phonology-orthography",
     title: "ATR Vowel Contrast, Semi-Mute Shadow Vowels, Kenyan–Tororo K-Retention & 1902 Elgumi/Wamia Records (Hobley 1902 & Johnston 1902)",
     summary: "Ateso contrasts close (+ATR) and open (-ATR) vowels, inserts shadow vowels to prevent consonant clusters, retains intervocalic /k/ in Kenya (Busia) and Tororo, and is documented historically as 'Elgumi / Wamia' by Hobley (1902) and Johnston (1902).",
-    content: `Key phonological, orthographic, and historical traits of Ateso (Teso–Turkana / Ateker cluster) as recorded in C. W. Hobley (*Eastern Uganda*, 1902, pp. 52–53, 61–79), Sir Harry H. Johnston (*The Uganda Protectorate*, 1902, Vol. II, pp. 842–852), and modern Ateso grammar:
+    content: `Key phonological, orthographic, and historical traits of Ateso (Teso–Turkana / Ateker cluster) as recorded in C. W. Hobley (*Eastern Uganda*, 1902, p. 57, pp. 92–95), Sir Harry H. Johnston (*The Uganda Protectorate*, 1902, Vol. II, pp. 842–852), and modern Ateso grammar:
 1. **Close (+ATR) vs. Open (-ATR) Vowels**:
    - The five vowel letters (*a, e, i, o, u*) represent both close (+ATR) and open (-ATR) phonemes that distinguish verb roots and govern conjugation harmony:
    - **aipet** [e] (to kick) vs. **aipet** [ɛ] (to lay out).
@@ -42,7 +42,7 @@ export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
     id: "teso-gender-plurals-numerals",
     title: "Three Grammatical Genders (E-/O-, A-, I-), Agentive/Instrumental Plurals & Quinary Numerals (Hobley 1902 & Johnston 1902)",
     summary: "Ateso divides all nouns into Masculine (e-/o-), Feminine (a-), and Neuter/Diminutive (i-) classes and counts via a gender-agreed base-5/base-10 system.",
-    content: `Grammatical gender, pluralization, and numerals in Ateso as documented in Hobley (1902, pp. 52–53, 69), Johnston (1902, pp. 842–852), and Wikipedia:
+    content: `Grammatical gender, pluralization, and numerals in Ateso as documented in Hobley (1902, p. 57, p. 95), Johnston (1902, pp. 842–852), and Wikipedia:
 1. **Three Grammatical Genders (Singular → Plural Prefixes)**:
    - **Masculine (*e-, o- → i-, o-, ngi-*)**: Male beings, most trees/fruits, insects, and non-indigenous liquids (*ekile → ikiliok* 'man → men', *etelepat → itelepai* 'boy → boys', *ekingok → ingokwo* 'dog → dogs', *emong → imongin* 'bull/ox → oxen', *ekitoi → ikito* 'tree → trees').
    - **Feminine (*a- → a-, nga-*)**: Female beings, languages/countries, indigenous liquids, abstract nouns, and verbal nouns (*aberu → angor* 'woman → women', *apese → apesur* 'girl → girls', *akiteng → aatuk* 'cow → cattle', *akipi* 'water', *akile* 'milk', *akim* 'fire', *akolong* 'sun').
@@ -50,14 +50,14 @@ export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
    - *Exceptions without gender prefix*: Kinship and cardinal directions (*toto* 'mother', *papa* 'father', *mamai* 'uncle', *inac* 'sister', *ija* 'aunt'; *kide* 'east', *too* 'west', *nyakoi* 'north', *agolitomei* 'south').
 2. **Productive Verbal Noun Plurals**:
    - **Agentive Nouns (*-an/-on → -ak/-ok*)**: *ekamejan → ikamejak* (hunter → hunters), *ekecokon → ikecokok* (herdsman → herdsmen), *ekadukon → ikadukok* (builder → builders), *ekatubon → ikatubok* (judge → judges).
-3. **Gender-Agreed Quinary-Decimal Numerals (Hobley 1902, p. 69 & Johnston 1902)**:
+3. **Gender-Agreed Quinary-Decimal Numerals (Hobley (1902, p. 95) & Johnston 1902)**:
    - Numerals agree in gender (*i-* masc./neut. vs. *a-* fem.):
    - **1–5**: *idiope / adiope (epei)* (1), *iyarei / aarei* (2), *iuni / auni* (3 — e.g. *itelepai iuni* 'three boys' vs. *apesur auni* 'three girls'), *ioŋon / aoŋon (omwon)* (4), *ikany / akany* (5, from *akan* 'hand').
    - **6–10**: *ikany-kape* (6 = 5+1), *ikany-kaare* (7 = 5+2), *ikany-kauni* (8 = 5+3), *ikany-kaoŋon* (9 = 5+4), *itomon / atomon (tomon)* (10), *akais aare (tomon aare)* (20), *akwatat* (100).`,
     examples: [
       { teso: "ekile → ikiliok • aberu → angor • ikoku → idwe • akiteng → aatuk", english: "man → men • woman → women • child → children • cow → cattle", explanation: "Masculine (e-→i-), Feminine (a-→a-), and Neuter (i-→i-) nouns (Hobley 1902 & Johnston 1902)" },
       { teso: "ekadukon → ikadukok • ekatubon → ikatubok", english: "builder → builders • judge → judges", explanation: "Agentive singular -on to plural -ok" },
-      { teso: "idiope, iyarei, iuni, ioŋon, ikany, ikany-kape, ikany-kaare, ikany-kauni, ikany-kaoŋon, itomon", english: "1, 2, 3, 4, 5, 6 (5+1), 7 (5+2), 8 (5+3), 9 (5+4), 10", explanation: "Quinary-decimal cardinal numerals (Hobley 1902, p. 69 & Johnston 1902)" }
+      { teso: "idiope, iyarei, iuni, ioŋon, ikany, ikany-kape, ikany-kaare, ikany-kauni, ikany-kaoŋon, itomon", english: "1, 2, 3, 4, 5, 6 (5+1), 7 (5+2), 8 (5+3), 9 (5+4), 10", explanation: "Quinary-decimal cardinal numerals (Hobley (1902, p. 95) & Johnston 1902)" }
     ]
   }
 ];

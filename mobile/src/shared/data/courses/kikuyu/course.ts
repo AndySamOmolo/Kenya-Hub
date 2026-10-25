@@ -18,7 +18,7 @@ export const KIKUYU_CONFIG: LanguageConfig = {
   speechLocale: 'sw-KE',
   description: 'The most widely spoken ethnic language in Kenya, spoken across the fertile Central Highlands around Mount Kenya (Kĩrĩnyaga). Grounded in Hildegarde Hinde (1904) and C. W. Hobley (1922).',
   color: '#2E7D32',
-  sources: ['kamba-kikuyu-vocabularies', 'bantu-beliefs', 'open-web-swadesh-comparative'],
+  sources: ['johnston-uganda-protectorate-1902', 'hemery-kikuyu-1903', 'kamba-kikuyu-vocabularies', 'mcgregor-kikuyu-1904', 'routledge-kikuyu-1910', 'hobley-akamba-ethnology-1910', 'johnston-bantu-1919', 'bantu-beliefs', 'open-web-swadesh-comparative'],
 };
 
 export const KIKUYU_UNITS: CourseUnit[] = [

@@ -12,7 +12,7 @@
     "Migori"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
+  "dictionaryVersion": "3.2",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Dholuo public-domain vocabulary compiled from 'A Handbook of the Kavirondo Language' by the Fathers of St. Joseph's Society (Mill-Hill, London / Kisumu, 1920).",
   "categories": [
@@ -897,14 +897,14 @@
           "audioFile": null
         },
         {
-          "english": "The tobacco of",
-          "translation": "Nandi",
-          "pronunciation": "nandi",
+          "english": "The tobacco of the Nandi",
+          "translation": "Ndap Nandi",
+          "pronunciation": "ndap nandi",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Feast, pl",
+          "english": "Feast (pl. sepe)",
           "translation": "Sawo",
           "pronunciation": "sawo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -1347,7 +1347,7 @@
         {
           "english": "Stork",
           "translation": "Magungugungu marabou",
-          "pronunciation": "magungugungu\nmarabou",
+          "pronunciation": "magungugungu marabou",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -3153,7 +3153,7 @@
         {
           "english": "A kitten",
           "translation": "Nyathi paka",
-          "pronunciation": "nyathi\npaka",
+          "pronunciation": "nyathi paka",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -3165,9 +3165,9 @@
           "audioFile": null
         },
         {
-          "english": "The",
-          "translation": "Luo",
-          "pronunciation": "luo",
+          "english": "The language of the Luo",
+          "translation": "Dho Luo",
+          "pronunciation": "dho luo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -3179,7 +3179,7 @@
           "audioFile": null
         },
         {
-          "english": "The whole of a rat",
+          "english": "The hole of a rat",
           "translation": "Bur oyieyo",
           "pronunciation": "bur oyieyo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -3222,15 +3222,15 @@
         },
         {
           "english": "The market of the foreigners",
-          "translation": "Mwa",
-          "pronunciation": "mwa",
+          "translation": "Chich Mwa",
+          "pronunciation": "chich mwa",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
           "english": "The bone of a fish",
           "translation": "Sas rech",
-          "pronunciation": "sas\nrech",
+          "pronunciation": "sas rech",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -3249,28 +3249,28 @@
           "audioFile": null
         },
         {
-          "english": "The",
+          "english": "The blood of a bull",
           "translation": "Remb ruath",
           "pronunciation": "remb ruath",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "The",
+          "english": "The food of a dog",
           "translation": "Chiemb guok",
           "pronunciation": "chiemb guok",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "The handle of the",
+          "english": "The handle of the axe",
           "translation": "Log le",
           "pronunciation": "log le",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "The nail of the",
+          "english": "The nail of the hand / finger",
           "translation": "Kok lwedo",
           "pronunciation": "kok lwedo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -3333,16 +3333,16 @@
           "audioFile": null
         },
         {
-          "english": "The fat of the",
-          "translation": "Mor dhiang",
-          "pronunciation": "mor dhiang",
+          "english": "The fat of the cow (butter)",
+          "translation": "Mor dhiang'",
+          "pronunciation": "mor dhiang'",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "The hair of the",
-          "translation": "Yie wish",
-          "pronunciation": "yie wish",
+          "english": "The hair of the head",
+          "translation": "Yie wich",
+          "pronunciation": "yie wich",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -3389,79 +3389,79 @@
           "audioFile": null
         },
         {
-          "english": "Maber",
-          "translation": "Good",
-          "pronunciation": "good",
+          "english": "Good (pl. mabeyo)",
+          "translation": "Maber (pl. mabeyo)",
+          "pronunciation": "maber",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Mabor, maboyo",
-          "translation": "High",
-          "pronunciation": "high",
+          "english": "High, tall, far (pl.)",
+          "translation": "Mabor (pl. maboyo)",
+          "pronunciation": "mabor, maboyo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Matin, matindo",
-          "translation": "Small",
-          "pronunciation": "small",
+          "english": "Small, little (pl.)",
+          "translation": "Matin (pl. matindo)",
+          "pronunciation": "matin, matindo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Madit, madito",
-          "translation": "Grown up",
-          "pronunciation": "grown up",
+          "english": "Grown up (pl.)",
+          "translation": "Madit (pl. madito)",
+          "pronunciation": "madit, madito",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Marachar",
-          "translation": "White",
-          "pronunciation": "white",
+          "english": "White (m.; pl. marachere; f. madibo)",
+          "translation": "Marachar",
+          "pronunciation": "marachar",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Pier ariyo",
-          "translation": "Twenty",
-          "pronunciation": "twenty",
+          "english": "Twenty (20)",
+          "translation": "Pier ariyo",
+          "pronunciation": "pier ariyo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Pier adek",
-          "translation": "Thirty",
-          "pronunciation": "thirty",
+          "english": "Thirty (30)",
+          "translation": "Pier adek",
+          "pronunciation": "pier adek",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Pier apar",
-          "translation": "Hundred",
-          "pronunciation": "hundred",
+          "english": "One hundred (100)",
+          "translation": "Pier apar (Mia)",
+          "pronunciation": "pier apar",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Diichiel",
-          "translation": "One",
-          "pronunciation": "one",
+          "english": "Once (one time)",
+          "translation": "Dichiel",
+          "pronunciation": "dichiel",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Diiro on ayadiyo",
-          "translation": "Twice",
-          "pronunciation": "twice",
+          "english": "Twice (two times)",
+          "translation": "Diriyo / Nyadiriyo",
+          "pronunciation": "diriyo / nyadiriyo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Ludha",
-          "translation": "My stick",
-          "pronunciation": "my stick",
+          "english": "My stick (from luth)",
+          "translation": "Ludha",
+          "pronunciation": "ludha",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -3564,9 +3564,9 @@
           "audioFile": null
         },
         {
-          "english": "Your gar",
-          "translation": "Pootheu",
-          "pronunciation": "pootheu",
+          "english": "Your gardens (pl. of puodho)",
+          "translation": "Puotheu",
+          "pronunciation": "puotheu",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -3599,14 +3599,14 @@
           "audioFile": null
         },
         {
-          "english": "That man, is generall, used of",
+          "english": "That young man (demonstrative)",
           "translation": "Nyieno",
           "pronunciation": "nyieno",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "The other, is more defined",
+          "english": "The other (definite)",
           "translation": "Machielo",
           "pronunciation": "machielo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -3634,16 +3634,16 @@
           "audioFile": null
         },
         {
-          "english": "Hero",
-          "translation": "Wa",
-          "pronunciation": "wa",
+          "english": "We love",
+          "translation": "Wahero",
+          "pronunciation": "wahero",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Hero",
-          "translation": "Gi",
-          "pronunciation": "gi",
+          "english": "They love",
+          "translation": "Gihero",
+          "pronunciation": "gihero",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -3669,7 +3669,7 @@
           "audioFile": null
         },
         {
-          "english": "See him, look at",
+          "english": "See him / look at him",
           "translation": "Nene",
           "pronunciation": "nene",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -3725,79 +3725,79 @@
           "audioFile": null
         },
         {
-          "english": "Lwokore",
-          "translation": "To bathe",
-          "pronunciation": "to bathe",
+          "english": "To bathe oneself",
+          "translation": "Lwokore",
+          "pronunciation": "lwokore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Lokore",
-          "translation": "To turn",
-          "pronunciation": "to turn",
+          "english": "To turn oneself",
+          "translation": "Lokore",
+          "pronunciation": "lokore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Landore",
-          "translation": "To spread",
-          "pronunciation": "to spread",
+          "english": "To spread out (intrans.)",
+          "translation": "Landore",
+          "pronunciation": "landore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Chokore",
-          "translation": "To assemble",
-          "pronunciation": "to assemble",
+          "english": "To assemble / gather together",
+          "translation": "Chokore",
+          "pronunciation": "chokore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Losore, ikore",
-          "translation": "To prepare",
-          "pronunciation": "to prepare",
+          "english": "To prepare oneself",
+          "translation": "Losore / Ikore",
+          "pronunciation": "losore, ikore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Puonjore",
-          "translation": "To practise",
-          "pronunciation": "to practise",
+          "english": "To learn / practise",
+          "translation": "Puonjore",
+          "pronunciation": "puonjore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Nyagore",
-          "translation": "To incline",
-          "pronunciation": "to incline",
+          "english": "To strive / exert oneself",
+          "translation": "Nyagore",
+          "pronunciation": "nyagore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Chukore",
-          "translation": "To recover",
-          "pronunciation": "to recover",
+          "english": "To recover / get well",
+          "translation": "Chukore",
+          "pronunciation": "chukore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Rwakore",
-          "translation": "To dress",
-          "pronunciation": "to dress",
+          "english": "To dress oneself",
+          "translation": "Rwakore",
+          "pronunciation": "rwakore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Gonyore",
-          "translation": "To undress",
-          "pronunciation": "to undress",
+          "english": "To undress oneself / camp",
+          "translation": "Gonyore",
+          "pronunciation": "gonyore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Pukore",
-          "translation": "To pour",
-          "pronunciation": "to pour",
+          "english": "To pour out / spill (intrans.)",
+          "translation": "Pukore",
+          "pronunciation": "pukore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -4026,7 +4026,7 @@
           "audioFile": null
         },
         {
-          "english": "On top",
+          "english": "Below / underneath",
           "translation": "Mwalo",
           "pronunciation": "mwalo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -4187,14 +4187,14 @@
           "audioFile": null
         },
         {
-          "english": "Together with",
-          "translation": "Kodi implies",
-          "pronunciation": "kodi implies",
+          "english": "Together with (accompanied by)",
+          "translation": "Kodi / Kod",
+          "pronunciation": "kodi / kod",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
         {
-          "english": "Now, is used in a naration",
+          "english": "Now / then (in narration)",
           "translation": "Koro",
           "pronunciation": "koro",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -4537,7 +4537,7 @@
           "audioFile": null
         },
         {
-          "english": "Jalousy",
+          "english": "Jealousy / envy",
           "translation": "Ichlit",
           "pronunciation": "ichlit",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -5607,7 +5607,7 @@
           "audioFile": null
         },
         {
-          "english": "To lov",
+          "english": "To love one another",
           "translation": "Herore",
           "pronunciation": "herore",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -5670,7 +5670,7 @@
           "audioFile": null
         },
         {
-          "english": "To its intrinsic value, age, etc",
+          "english": "To be equal / suffice / fit",
           "translation": "Romo",
           "pronunciation": "romo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
@@ -5832,8 +5832,8 @@
         },
         {
           "english": "To wash",
-          "translation": "Lwcko",
-          "pronunciation": "lwcko",
+          "translation": "Lwoko",
+          "pronunciation": "lwoko",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
         },
@@ -6343,45 +6343,122 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "Time-of-Day Birth Names Recorded by G. A. S. Northcote (1907 p. 62): Morning Sun, High Noon, Afternoon, Night",
-          "translation": "Onyango / Anyango (morning sun, 7–9 a.m.), Oching' / Aching' (high noon, chieng'), Odiambo / Adiambo (afternoon, 2–6 p.m.), Otieno / Atieno (night, otieno)",
-          "pronunciation": "o-nyan-go, o-ching, o-diam-bo, o-tie-no",
+          "english": "Four Time-of-Day Birth Names & Posthumous/Dream Naming Recorded Verbatim by G. A. S. Northcote (1907, p. 62)",
+          "translation": "onyango (born in the morning, root: onyango / Anyango f.) • oching (born at noon, Ochieng' m. / Achieng' f., root: chieng' 'sun') • odiambo (born in the afternoon, Odhiambo m. / Adhiambo f.) • otieno (born at night, Otieno m. / Atieno f.) • Or named after a deceased relative appearing to the mother in a dream prior to birth, or after the father's ghost if born posthumously",
+          "pronunciation": "o-nyan-go / o-ching / o-diam-bo / o-tie-no",
           "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, p. 62",
           "audioFile": null
         },
         {
-          "english": "Circumstantial & Twin Birth Names Recorded by G. A. S. Northcote (1907 p. 62)",
-          "translation": "Obele (born during bele 'corn in ear'), Oliech (born when an elephant liech was killed), Obonyo (born during locusts bonyo), Okach (born during famine kech), Opiyo (first-born twin), Odongo (second-born twin)",
-          "pronunciation": "o-be-le, o-liech, o-bo-nyo, o-kach, o-pi-yo, o-don-go",
+          "english": "Three Hereditary Nicknames Recorded Verbatim by G. A. S. Northcote (1907, p. 62): Millet-Owner, Elephant-Slayer & Locust-Man",
+          "translation": "obele ('the man who owned much mtama millet', from bel) • oliech ('the man who killed an elephant', from liech) • obonyo ('the man like a locust', from bonyo) — Nicknames given later in life that become hereditary surnames",
+          "pronunciation": "o-be-le / o-liech / o-bo-nyo",
           "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, p. 62",
           "audioFile": null
         },
         {
-          "english": "Homestead Architecture & Euphorbia Enclosure (Northcote 1907 p. 58)",
-          "translation": "dala (homestead), chiel / ojuok (euphorbia boma hedge), rangach (main gate), simba (bachelors' hut), dero (granary)",
-          "pronunciation": "da-la / chiel / ran-gach / sim-ba / de-ro",
-          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', pp. 58–59",
+          "english": "Circular Village Architecture, Separate Family Huts & Wickerwork Granaries (Northcote 1907, pp. 60–61)",
+          "translation": "dala / pacho (circular homestead fenced with euphorbia ojuok hedge, stone wall, mud wall, or wattling) • kul (central open cattle pen) • dero (wickerwork granaries raised 2 ft off the ground, ~5 ft high × 3 ft diameter, circling the cattle pen) • Separate huts (udi): one for the husband, one for each wife, one for unmarried sons (simba), and one for unmarried daughters living with an old woman/grandmother (siwindhe)",
+          "pronunciation": "da-la / kul / de-ro / sim-ba / si-win-dhe",
+          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, pp. 60–61",
           "audioFile": null
         },
         {
-          "english": "Foundational Ancestors & Migration Genealogy of the Ja-Luo (Hobley 1902 p. 27 & 1903 pp. 326–331)",
-          "translation": "Podho → Ramogi (Got Ramogi) → Chwanya, Jok, Omolo, Kisodhi, Gem, Kano, Sakwa, Seme, Asembo, Uyoma, Karachuonyo",
-          "pronunciation": "po-dho -> ra-mo-gi -> chwa-nya, jok, o-mo-lo",
-          "context": "C. W. Hobley (1902) 'Eastern Uganda', p. 27 & (1903) 'Anthropological Studies in Kavirondo and Nandi', pp. 326–331",
+          "english": "Three Versions of the Origin Legend & Genealogy of Apōdtho and Ramogi (Hobley 1903, pp. 326–331)",
+          "translation": "Apōdtho (descended on Ramogi/Lamogi Hill with cattle, mtama, sem-sem, wimbi, fire, spear, shield, and the Were tree; turned into a rock when his shadow was speared) → Version I (Ugada Ndiek of Usakwa): Apōdtho → Ramogi (Uyoma, Semi, Alego, Gemi, Nyakach, Umia Madok, Owidi, Rachonyo [Kandaia, Kanyaluo, Kaduong, Kabondo], Chwanya [Kisumu, Kanyamwa, Karungu, Kadem, Kaboch, Kachieng]) & Anyango • Version II (Ugada of Korando): Apōdtho → Chindu → Ramogi (Chingiruea → Owidi → Kisumu → Menya → Dedi → Tipo [Nyuto, Umwa, Okech, Nyawegi] → Korando → Abiru → Rombo → Otiendi → Ugada; Atipu → Kogonya; Kaponja; Kalachonyo; Nyakal → Semi; Kasilual → Umia Madok; Uwilo → Uyoma; Kaduet; Gemi loka ['on the other side']; Kanyada; Kadem; Karungu; Nyamkago; Lango) • Version III (Gori Kogalo of Kanyamwa): Apōdtho → Rajoki & Jimbo → Uyua → Ramogi (Mbunga, Uyoma, Semi, Chwanya [Uchieng, Kanyuta, Kalachonyo, Kabondo, Kisumu, Abonyo, Anyango, Beo, Kadem, Owiti, Kaboch], Nyamkago, Ujoa [Gemi, Alego], Alangu, Kanu [Koloa, Kubura]) & Mugirango",
+          "pronunciation": "a-po-dtho / ra-mo-gi / chwa-nya / u-yo-ma / se-mi / a-le-go / ge-mi",
+          "context": "C. W. Hobley (1903) 'British East Africa: Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 326–331",
           "audioFile": null
         },
         {
-          "english": "Clan Totem & Sacred Taboo System (20 Kwero Totems in Hobley 1903 pp. 347–349)",
-          "translation": "kwero (clan totem/taboo: e.g., omieri python, ondiek hyena, winyo bird, rech fish, liech elephant)",
-          "pronunciation": "kwe-ro",
-          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 347–349",
+          "english": "All 20 Nilotic Ja-Luo Totems (Kwero) & Women's Food Taboos Recorded by Hobley (1903, pp. 347–348)",
+          "translation": "1. Nyang (Crocodile) • 2. Ngnech (Nile monitor lizard) • 3. Ndiek (Hyæna) • 4. Nyelo (Python) • 5. Okwach (Leopard) • 6. Gori gori (Mongoose) • 7. Bīm (Baboon) • 8. Kumnēr (Rock hyrax) • 9. Ongner (Cercopithecus monkey) • 10. Upuku (Tortoise) • 11. Ogwang (Wild cat — eaten by Gemi, Lego, and Sakwa) • 12. Kuru (Colobus monkey) • 13. Buwem (Jackal) • 14. Imbirri (Wart hog) • 15. Achut-th (Vulture) • 16. Ogwan (Frog) • 17. Agako (Crow) • 18. Iwang (Crested crane, Balearica gibbericeps — strictly preserved by all Kavirondo except Gemi) • 19. Otenga (Kite) • 20. Arumtich (Ground hornbill) • Additional women's kwero: fowls, eggs, elephant, hippopotamus, and sheep (among Kisumu and Gemi)",
+          "pronunciation": "kwe-ro: nyang, ngnech, ndiek, nye-lo, o-kwach, gori-gori, bim, kum-ner, o-gwang, i-wang, a-rum-tich",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 347–348",
           "audioFile": null
         },
         {
-          "english": "Supreme Sun/Sky Deity & Ancestral Spirit Veneration (Northcote 1907 p. 65 & Hobley 1903)",
-          "translation": "Chieng' (the Sun) / Nyasaye (Were) & tipo / juogi (ancestral spirits)",
-          "pronunciation": "chieng / nya-sa-ye / ti-po / juo-gi",
-          "context": "G. A. S. Northcote (1907, p. 65) & C. W. Hobley (1903, p. 344)",
+          "english": "Kadimu Python Ancestor Cult, Simbi Abūr Crater Legend & Bridge Island (Wa-Nyama kwa Wa-Ware) (Hobley 1903, pp. 326, 341–342, 349–350)",
+          "translation": "Kadimu (Bantu-origin clan speaking Dholuo at the Nzoia mouth who revere the python as their sacred common ancestor with annual hill sacrifices, pp. 326, 349) • Simbi abūr (abūr = 'hole or pit', natron crater lake in Kalachonyo formed when an inhospitable village was submerged by rain after a woman with fire-sparking eyes warned the one couple who fed her, pp. 349–350) • Wa-Nyama kwa Wa-Ware (Bridge Island near Lusinga/Rusinga, where two fighting bulls of the Wa-Nyama and Wa-Ware clans turned into twin granite monoliths, p. 341–342)",
+          "pronunciation": "ka-di-mu / sim-bi a-bur / wa-nya-ma kwa wa-wa-re",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 326, 341–342, 349–350",
+          "audioFile": null
+        },
+        {
+          "english": "11 Personal Amulets & Charms of Chief Ugada Thako of Kisumu, Chieno Fibre Tail & Succession Law (Hobley 1903, pp. 345–347, 350–351, 358–359)",
+          "translation": "Ugada's 11 charms (pp. 345–347): 1. naming iron arrow points, 2. 3-holed iron strip from grandmother Thako, 3. lake quartz crystal in leather cup, 4. father Otiendi's perforated yellow stone, 5. Nya-Luo yellow beads, 6. goat-horn for chest, 7. chicken beak, 8. marine shell helix from Chief Ogalo of Kanyamwa, 9. omeni (4 small sticks on left wrist cord), 10. heavy brass bracelet from Aiyimbo, 11. skin bag for rheumatism • chieno (married woman's 6–8 inch stiff fibre tail made from tuoro aloe, pp. 350–351) • Succession law (p. 359): eldest son of the first-married wife (mikayi), e.g., Umoli + 1st wife Agola → Odera Ulalo & Sejenyi before 2nd wife Kakwari's older son Agina",
+          "pronunciation": "o-me-ni / chie-no / tuo-ro / o-de-ra u-la-lo",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 345–347, 350–351, 358–359",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Sun/Sky Deity, Daylight Sky & Four-Quarters Propitiation Ritual (Hobley 1903, pp. 343–344, 358 & Northcote 1907, p. 65)",
+          "translation": "Chieng' (used indifferently for the Sun and the Deity, believed to return east overhead behind the heavens at night) • Polo (the daylight sky, regarded as distinct from the sun's light, p. 358) • Spirit propitiation (pp. 343–344): throwing small pieces of meat, squirting mouthfuls of beer, and tossing spoonfuls of mtama porridge to the four quarters of the compass at the hut door",
+          "pronunciation": "chieng / po-lo / ti-po / juo-gi",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', pp. 343–344, 358 & G. A. S. Northcote (1907, p. 65)",
+          "audioFile": null
+        },
+        {
+          "english": "13 Nilotic Kavirondo (Ja-Luo / Nife) Tribal Groups & 1900 Chiefs Recorded by C. W. Hobley (1902, pp. 52–56)",
+          "translation": "Ja-Luo (called Awa-Nife/Nyife or Awa-Nyoro by Bantu; clan prefixes Ja-, Ka-, Yaka-; language prefix Tho-): (1) Kami / Gemi (12 sub-tribes, chief Odera Ulalo), (2) Lego (7 sub-tribes, chief Ngongu), (3) Nife / Nyife (5 sub-tribes, chief Gero), (4) Kisumu (7 sub-tribes, chiefdi/Ugada), (5) Semi (6 sub-tribes), (6) Sembo (6 sub-tribes, chiefAmimo), (7) Uyoma (5 sub-tribes, chief Ndeda), (8) Sawakwa / Sakwa (6 sub-tribes, chiefUgada Thako), (9) Timu / Utimu [Kadimu] (5 sub-tribes, chief Anam), (10) Songa (chief Ugada), (11) Kanu / Kadibo [Wa-Kitoto] (12 sub-tribes, chief Kitoto), (12) Khoro, Kaki, Aiendi & Ramba (chief Ugwea), (13) Nyakatch & Kalachonyo (South Kavirondo, chief Gor)",
+          "pronunciation": "ja-lu-o / tho-lu-o / ge-mi / u-yo-ma / ka-di-mu / ka-nu",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. V, § 2, pp. 52–56",
+          "audioFile": null
+        },
+        {
+          "english": "Tho-Luo 8 Noun Plural Classes, Inclusive/Exclusive 'All' (waduto vs. giduto) & Gendered Salutations (Hobley 1902, pp. 61, 76, 84–87)",
+          "translation": "Inclusive vs. Exclusive 'All' (p. 61): waduto ('all of us', speaker included) vs. giduto ('all', other people/things) • Gendered Salutations (p. 76): ukwe (used by men) vs. amosi (used by women) • 8 Plural Classes (p. 87): Cl. I -tot (sere → seretot 'arrow', le → letot 'animal/axe'), Cl. II -ngnen / -wen (winyo → winyongnen 'bird', tong → tongwen 'egg/spear'), Cl. III e- → gi- (enuwadu → ginuwadu 'companion/brother'), Cl. IV -l → -k (diel → diek 'goat'), Cl. V -iji (chong → chongiji 'knee', lak → lakiji 'tooth'), Cl. VI -a/-o → -i (wer → weri 'song', rombo → rombi 'sheep'), Cl. VII unchanged (lueta 'arm/hand'), Cl. VIII irregulars (awang → wanga 'eye', diang → dok 'cow', ot → udi 'house', hega → hegini 'year')",
+          "pronunciation": "wa-du-to / gi-du-to / u-kwe / a-mo-si / di-ang dok / ot u-di",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. VI, pp. 61, 76, 84–87",
+          "audioFile": null
+        },
+        {
+          "english": "Owiti / Awiti ('Thrown-Away' Child Redemption Rite), Twins (Apio & Adongo), Nya-Luo Beads & Kiviri Ordeals (Hobley 1902, pp. 26–35)",
+          "translation": "Owiti (m.) / Awiti (f.): 3rd child born after two infant deaths is placed on a road at dawn, picked up by a neighbour woman, redeemed with a goat, adorned with a right-ear brass ring, and named Owiti/Awiti ('thrown away', p. 28) • Twins: Apio (1st) & Adongo (2nd) (p. 28) • Musical instruments: Thūm (8-string lyre), Būl (drum), Odundu (sorghum-stalk reed harp) (p. 30) • Ancient Nya-Luo blue/green/yellow jasper beads washed out after rain near Maragolia Hills (pp. 31–32) • Jamkingo (night wizard), Kiviri boiling-flour ordeal & mimosa-stopped calabash ordeal, and Ochola battle seed-case charm (pp. 32–34)",
+          "pronunciation": "o-wi-ti / a-wi-ti / a-pi-o / a-don-go / thum / bul / o-dun-du / nya-lu-o / ki-vi-ri",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. III, pp. 26–35",
+          "audioFile": null
+        },
+        {
+          "english": "Nilotic Origin, Dinka/Alur/Acholi Kinship near Wadilai & Secession Law (Northcote 1907, pp. 58–60)",
+          "translation": "Jaluo ('Nilotic Kavirondo'): belong to the same Nilotic family as the Dinka of the Sudan and are closely akin to the Aluri (Alur) and Acholi on both sides of the Nile near Wadilai; originally formed one tribe with the Acholi before migrating from the north-west under one big chief • Semi-feudal chieftaincies (Ruodhi) with sub-chiefs/headmen and an informal council of village heads (patres familiarum), where secession is the traditional constitutional check against an unpopular chief",
+          "pronunciation": "ja-lu-o / a-cho-li / a-lu-ri / ruo-dhi",
+          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, pp. 58–60",
+          "audioFile": null
+        },
+        {
+          "english": "Married Woman's Grass Tassel (Chieno) & the Three-Goat Fine, Warrior Regalia & Huge Painted Buffalo Shields (Northcote 1907, pp. 58–59)",
+          "translation": "chieno (married woman's small grass tassel worn behind from the waist, discarded upon a husband's death until remarriage; anyone who touches a married woman's tassel must pay a fine of 3 goats to her husband, pp. 58–59) • Warrior regalia (p. 59): ostrich-feather or monkey/goat-skin hat, white bead lines across forehead/nose/lip/chin, cowrie leather baldric, black feather boa or wildebeest-tail shoulder ornament, iron-wire broad-bean-pod knee and ankle bells, and shaved crown hair-tuft cut off and worn by the chief mourner at his funeral • Weapons: long-hafted short-bladed spear (tong'), Masai sword, and huge curved buffalo-hide shield (kuot, ~3 ft 6 in high × nearly 6 ft horizontally, painted red, white, and black)",
+          "pronunciation": "chie-no / tong / kuot",
+          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, pp. 58–59",
+          "audioFile": null
+        },
+        {
+          "english": "Strict Clan Exogamy, First-Wife Chieftaincy Succession & Pre-/Post-1883 Cattle-Plague Bride-Wealth (Northcote 1907, pp. 61–62)",
+          "translation": "Strict clan exogamy (p. 61): marriage within the clan is forbidden; a son may inherit his father's widow if not a blood relation, and two sisters may marry one man • Inheritance law (p. 61): each wife's allocated cattle pass to her own sons (her eldest son taking the largest share), and chieftaincy descends to the eldest son of the first/chief wife (mikayi) even if a junior wife bore an older son (or to an adult half-brother/eldest uncle if the heir is an infant, as regency is unknown) • Marriage rites & dowry (pp. 61–62): preliminary feast with an offering set aside for the sun-god (meat, chicken, mtama, and beer), ceremonial abduction, the bride's rite of cooking the first dinner at the groom's village to signify consent, and bride-wealth of 20 cattle before the 1883 cattle plague vs. 7 cattle (handsome dowry) or 1 heifer and 1 bull (or 1 bull and 20 goats) in 1907",
+          "pronunciation": "mi-ka-yi / dho-ot / nyuo-mbo",
+          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, pp. 61–62",
+          "audioFile": null
+        },
+        {
+          "english": "Funeral Bull-Charging Dance, Recumbent In-Hut Burial (Correcting Eliot), Rain-Maker's Reed Ritual & 8-Stringed Harp (Northcote 1907, pp. 63–66)",
+          "translation": "Funeral rites (p. 63): doctors rattle stones in gourds and puff tobacco smoke to drive away evil spirits; warriors in war-paint charge with bulls while holding their tails; mother or chief wife wears the deceased's goatskin and hair-tuft while rattling a gourd; mock combat behind huge shields against invisible spirits; mourning lasts 6 days for a chief and 3 days for a commoner (wailing at sunrise and sunset); corpse buried in a recumbent position inside his own hut (which continues to be occupied by his heir, correcting Sir Charles Eliot's claim that the hut is abandoned) • Rain-maker's ritual (p. 64): boils herbs in a large pot beneath a sacred big tree, transfers decoction to a small pot, blows through a hollow reed to make it bubble, and squirts the liquid into the air with incantations • Fishing & music (pp. 65–66): rod-and-line, sunken trawl lines, weirs, woven-grass nets, 4-pronged wooden fish-spears, hunting with dogs and throwing-sticks, and the 8-stringed harp (thum / nyatiti) accompanying extempore heroic and comic songs",
+          "pronunciation": "lie-l / a-juo-ga / ko-th / thum / nya-ti-ti",
+          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, pp. 63–66",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 779–795) Ethnography of the Ja-luo (Nyifwa): Aluru/Japalua Kinship, Mother-in-Law Goatskin Rule, Papyrus Seines & Peacemaking",
+          "translation": "Origin & kinship (pp. 779–780): closely allied to the Acholi, Lango, Aluru, and Japalua ('Shefalu' of Northern Unyoro), called 'Abanyoro' by their Bantu Kavirondo neighbours • Dress & etiquette (pp. 781–787): married father must never visit his mother-in-law without wearing his small piece of goatskin (even underneath European trousers, under penalty of a goat fine); married woman's rear string tail must be worn when serving food to her husband, and touching it requires a goat sacrifice; 15 brass melon-seed-shaped rings with blue beads pierced along the outer ear-rim and ancient rain-washed nyaluo jasper/chalcedony beads near the Maragolia Hills worth 1 cow per bead; Nilotic stork-like one-legged resting posture • Subsistence & fishing (pp. 787–790): driving fish into conical wickerwork traps (dema) using papyrus-stalk seines and ambatch-wood rafts (Figs. 434–436), night torchlight fish-spearing, and blacksmith caste (Yothetth / Uvino) • Marriage, religion, ordeals & peacemaking (pp. 790–795): bride-wealth up to 6 cows; worshipping Chieng (the Sun) by spitting east in the morning and west in the evening; jamkingo secret magic vs. three kiviri ordeals (boiling wimbi flour pot, mimosa-stopped perforated calabash on a flat stone, and swallowing dry flour); 'thrown-away' child redemption rite naming the child Owiti (m.) / Awiti (f.) with a right-ear brass ring; chief buried in a new hut on an ox-hide with a water-pot over the head and seeds of every grain except sweet potatoes; warrior who slays an enemy hangs a live fowl by its beak around his neck and severs the body before entering the village; inter-tribal peace ratified by exchanging pieces of sheep flesh from a wooden grain-mortar and having an elder of the vanquished side sweep the conqueror's cattle kraal (p. 794)",
+          "pronunciation": "ja-lu-o / nyi-fwa / de-ma / yo-thetth / chieng / ki-vi-ri / o-wi-ti",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XVIII, pp. 779–795",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 927–935) Vocabulary Set 3 (#14 Ja-luo alongside #13 Acholi, #15 Lango & #16 Aluru) & 26 Conversational Sentences",
+          "translation": "Distinctive #14 Ja-luo Lexicon in Set 3 (pp. 927–934): Ant Kudini • Termite Ñwen • Hartebeest Mugēyó • Waterbuck Irugut • Impala Siño • Colobus Dωl • Baboon Bim • Monkey Oñerr • Arm Bāt (Hand Tatu / luwedω) • Arrow Aseri (Bow Atūm) • Ass/Zebra Kainyima / Kainyina • Axe Le • Back Ugurω • Banana Rabωlω (Aluru: Rabωlω) • Beard Yīr (Hair Yiwitc') • Bee Kity' (Honey Mor kītc) • Belly Eity' • Bird Wēnyo • Blood Remo • Body Denda • Bone Cωgω • Brains Obwongo • Breast Tunu • Brother Ωwādwa (Sister Nyamera) • Buffalo Jui • Buttocks Piera • Canoe Iyie • Cat Ωgwanga • Cattle Mañeñ (Cow Diañ, pl. Mañeñ; Bull Rωat matuon; Ox Rωat) • Chief Toñ • Child Nyatĕ (Son Nyatena) • Cloth Lāhω • Country Pīñy' • Crocodile Nyañ • Wild date Kudω • Day Ndalo (To-day Kawuonω) • Night Ωtienu (Darkness Mudω) • Devil Musango (Ghost Juωgi; Magic Ya Juok / Nawi; Witch Jajuok) • Dog Guωk • Door Dōt • Dream Yekuω • Drum Tūm / Būl • Ear Iti • Egg Toñ gweno • Elephant Liētc (Ivory Lāk liec) • Eye/Face Wañ / Waña (Tear Pi wañ) • Fat Bor • Fear Kirni • Finger Luwedu • Fire Mate' / Maty' • Fish Retc • Foot Tāt tielω (Leg Ogwala; Heel Òboñ; Toe Lēt tienda) • Forest Buñge • Fowl Gweno • Giraffe Aduω-duω • Goat Diel • God/Sun Kieñ / Cieñ • Grass Lūm • Ground Lω (Ground-nut Kalīni) • Guinea-fowl Awendo • Gun Būnde • Head Witc • Heart Adundu • Hippo Rao • Horn Tuñ • House Ōt (Oda my house, Odi thy house, Ode ñane his house) • Hunger Kitc / kīc • Hyena Ondiegi • Iron Nyinyω • Island/Lake Nām • Knee Coñga • Knife Pala • Leopard Kuatc • Lion Sibur • Lips Dōk (Mouth Dāl) • Lungs Obω • Maize Ωdωma • Man Dāno • Meat Riñω • Moon Dūwe • Mountain Gōt • Nail Koguno • Name Nyiñ • Neck Nūt (nape Tωk) • Nose Um • Beer Koño • Parrot Kuru • Pig Mbeci • Place Komoro • Rain Kōt • Rat Iyēo • River Aura • Road Iyω • Seed Latc inyωdω • Sheep Rombo • Shield Kuet • Skin/Hide Del / Pien • Sky Malu • Sleep Nendo / Anendo • Smoke Yiro • Snake Tuel • Song Wir • Spear Toñ • Star Sulue • Stick Lωt • Stone Kidi • Thief Jakuω • Thigh Im • Thing Gimoro • Thorn Kudō • Throat Duol • Tobacco Ndawa • Tongue Lep / Lewa • Tooth Lāk (canine Nyaluώgono, molar Nyapuñ lak) • Town Mierr (Ndala wa parwa our town) • Tree Yāt (Wood Iyān) • Twins Ωwωk • War Lueñ • Wart-hog Njiri • Water Pi • White man Musungu • Wife Kiega • Wind Yamω • Woman Nyako (young Ñutu) • Year Iga • Numerals & Adjectives (pp. 932–934): 1 Aciel, 2 Areio, 3 Adek, 4 Añwen, 5 Abity', 6 Awuciel, 7 Aberēo, 8 Aburo, 9 Oñgaciel, 10 Apār, 11 Apar ga ciel, 12 Apar ga reyo, 20 Pirareyo, 30 Pira dek, 40 Pir' añwen, 50 Pir abitc, 100 Haga; Dútω (all), Ratc (bad: Tim ni ratc = your work is bad), Madako (female), Maricuó (male), Bēr (good), Ñoñgo (great), Matēn (little), Racar / Debṓ (white), Ratīñ (black), Tωt (plenty) • All 26 Verbatim Ja-luo Sentences (pp. 934–935): Watimω (We make) • Wawaci (We say) • Wanyeyo / Ukwanyeyo (We sell / We sold not) • Ñωi (He stinks) • Okwalω (He steals) • Giñyero (They laugh) • Giyuak (You weep) • Nite ine inendanaño? (Why art thou sleeping?) • Aia dikanyi? (Where did he go?) • Niñano mωdonjo? (Who comes in?) • Niwacaño? (What do you say?) • Nitem nadi koño? (How do you make palm wine?) • Wañnωa madano? (What shall we drink?) • Ibirω kara año? (When art thou coming?) • Mie ciemω (Give me food) • Añol lut maciek (Cut me a small stick) • Aduarωkí di matīn (I want a little stone) • Gweno manadi mawañni mia? (Which fowl will you give me?) • Nie ōt (He is inside the house) • Weñyo orengo (The birds flew away) • Ubur olōe ai (He is taller than I) • Kasuka iyuak (The parrot screams) • Yat motop ogore piñ (The rotten tree falls) • Niñ yalo neno a? — Uyo, Atuω (Can you see me? — No, I cannot)",
+          "pronunciation": "ni-wa-ca-no / mie cie-mo / nie ot / yat mo-top o-go-re ping",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 3 (#14 Ja-luo), pp. 927–935",
           "audioFile": null
         }
       ]

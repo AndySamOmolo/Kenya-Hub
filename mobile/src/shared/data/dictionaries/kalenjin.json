@@ -16,7 +16,7 @@
     "West Pokot"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
+  "dictionaryVersion": "3.2",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Kalenjin dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
@@ -55,9 +55,9 @@
         },
         {
           "english": "Hello",
-          "translation": "Chamgei! / Subai! (resp. Chamgei mising! / Ebo!)",
+          "translation": "Chamgei! / Sopai! (resp. Chamgei mising! / Epa!)",
           "pronunciation": "chahm-gey / soo-bah-ee",
-          "context": "Hollis 1909 p. 214 & standard Kalenjin salutation",
+          "context": "Hollis (1909, pp. 90–91, 230) Nandi male salutation & universal Kalenjin greeting",
           "audioFile": null
         },
         {
@@ -149,6 +149,27 @@
           "translation": "kekwang' (kwang')",
           "pronunciation": "keh-kwahng",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Greeting to women, elders, or warriors departing on a raid (Reply: Igo!)",
+          "translation": "Takwenya! (pl. Takwenya, chepiosō-chu! / Takwenya, murén-ju! / Takwenya, lukón-ni! — Reply: Igo!)",
+          "pronunciation": "tah-kweh-nyah / ee-goh",
+          "context": "A. C. Hollis (1909, pp. 43, 90–91, 230) Nandi salutations",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Nandi blessing to women: May your health be good, and may the children, cattle, and all at home be well",
+          "translation": "Cham-ke sapon, cham-ke lakōk, cham-ke tuka, cham-ke ka",
+          "pronunciation": "chahm-keh sah-pohn, chahm-keh lah-kohk, chahm-keh too-kah, chahm-keh kah",
+          "context": "A. C. Hollis (1909, p. 91) Nandi salutation blessing",
+          "audioFile": null
+        },
+        {
+          "english": "Good-bye! / Parting salutation: I salute thee (Reply: I salute thee also / I salute you, cattle and people)",
+          "translation": "Saiseri! / Saisere! • A-'kot-in (Reply: A-'kot-in ok inye • A-'kot-ok tuka ak piik)",
+          "pronunciation": "sah-ee-seh-ree / ah-koh-teen",
+          "context": "A. C. Hollis (1909, pp. 91, 231) Nandi farewells",
           "audioFile": null
         }
       ]
@@ -254,6 +275,13 @@
           "translation": "Sekondit",
           "pronunciation": "sekondit",
           "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Cardinals 1–100 & Finger-Counting Gestures (Hollis 1909, pp. 88–89, 183–184)",
+          "translation": "1 akeng • 2 oieñg • 3 somok • 4 angwan • 5 mut • 6 illok / kullo • 7 tisap • 8 sisiit • 9 sokol • 10 taman • 20 tiptem • 30 sosom • 40 artam • 50 konom (onom, p. 263) • 60 ntamanoik illok • 100 pokol",
+          "pronunciation": "ah-kehng, oy-ehng, soh-mohk, ahn-gwahn, moot, eel-lohk, tee-sahp, see-seet, soh-kohl, tah-mahn",
+          "context": "A. C. Hollis (1909, pp. 88–89, 183–184) — 1=index finger raised; 2=index+middle; 3=index+middle+ring; 4=four fingers; 5=closed fist with thumb between index & middle; 6=two thumbs+index touches; 10=clap hands",
           "audioFile": null
         }
       ]
@@ -1591,6 +1619,27 @@
           "pronunciation": "kwondo (pl. kwonyik)",
           "context": "Nandi / Kipsigis",
           "audioFile": null
+        },
+        {
+          "english": "Nandi Kinship System & Terms of Address (Tiliet, Hollis 1909, pp. 92–93)",
+          "translation": "apa / kwan (father, pl. akut-apa), eiyo / kamet (mother, pl. angut-eiyo), mama (maternal uncle, pl. akut-mama; controls nephew's livestock & shields), sēñge (paternal aunt), koko (grandmother/grandchild), akui (grandfather/grandchild), tupchet (brother/sister; address: wei-i m., chep-i f.), lakwet / weirit (son), chepto (daughter), kâp-yukoi (father-in-law), karucho (mother-in-law), sandet (son-in-law/brother-in-law), pamuru (sister-in-law), lemenyi (co-husband's brother / age-set brother)",
+          "pronunciation": "ah-pah / ey-yoh / mah-mah / sehn-geh / koh-koh / ah-kwee / toop-cheht",
+          "context": "A. C. Hollis (1909, pp. 30, 92–93, 159) — Nandi genealogical relationships & maternal uncle (mama) rights",
+          "audioFile": null
+        },
+        {
+          "english": "Male & Female Life-Stage Terms in Nandi (Hollis 1909, pp. 12, 52–60, 168–178)",
+          "translation": "cherere / kipsetmet (infant) → ñgetet (pl. ñgetik, uncircumcised boy wearing ñoiyet goatskin apron) → tarusyot (pl. tarusik, circumcision initiate in menjet hut) → murenet (pl. murenik, warrior living in sigiroinet) → poiyot (pl. poisiek, elder) • tibi / chepto (pl. tibik, uncircumcised girl wearing osiek apron) → chepmeriat (pl. chepmerik, girl initiate) → osotiot / korget (pl. osotik / korusiek, married woman) → chepioset (pl. chepiosok, old woman)",
+          "pronunciation": "ngeh-teht / tah-roo-syoht / moo-reh-neht / poy-yoht • chehp-toh / chehp-meh-ree-aht / oh-soh-tee-oht / cheh-pee-oh-seht",
+          "context": "A. C. Hollis (1909, pp. 12, 52–60, 168–178) — Nandi male and female initiation and life stages",
+          "audioFile": null
+        },
+        {
+          "english": "Blacksmith (Kitóngindet) & Potter (Chepteréniot) in Nandi Craft Specialization (Hollis 1909, pp. 34–38)",
+          "translation": "kitóngindet (pl. kitóngik, male iron-smith; no despised smith caste in Nandi, unlike Maasai il-kunōno; forge: kâp-kitóng, bellows: kupanda, anvil: tanyit, hammer: kiristit) • chepteréniot (pl. chepterénik, female potter making teret cooking pots)",
+          "pronunciation": "kee-tohn-geen-deht / chehp-teh-reh-nee-oht",
+          "context": "A. C. Hollis (1909, pp. 34–38) — Nandi metallurgy and pottery",
+          "audioFile": null
         }
       ],
       "icon": "👨‍👩‍👧‍👦"
@@ -2578,6 +2627,34 @@
           "pronunciation": "koy-tah / koyk",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
+        },
+        {
+          "english": "Nandi Homestead Architecture (Kaita / Kot), Sigiroinet Warrior Hut & Granary (Choket) (Hollis 1909, pp. 14–16)",
+          "translation": "kaita (man's word for house) / kot (woman's word, pl. korik): divided by central mud wall (tolita / parakut) into human quarters (koima, with fireplace mat, mud bed itogut, loft tabot) and livestock half (injor, with goat/calf compartment kâp-nēko); topped on the roof peak by a wooden spike/pot (kimonjokut) to ward off evil • sigiroinet (unmarried warriors' bachelor hut) • choket (raised wickerwork granary for wimbi/eleusine päk)",
+          "pronunciation": "kah-ee-tah / koht / toh-lee-tah / koy-mah / een-johr / kee-mohn-joh-koot / see-gee-roy-neht / choh-keht",
+          "context": "A. C. Hollis (1909, pp. 14–16, 163, 178) — Nandi house layout and homestead architecture",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Livestock Terminology, Cattle Coat Colours & Horn Shapes (Hollis 1909, pp. 19–23, 280–281)",
+          "translation": "tuka (cattle: kirkit bull, eito bullock, teta cow, Roriat heifer, moita calf, kaptich grazing kraal, kâp-koros sacred herd enclosure) • Coat Colours (pp. 280–281): ne-tui (black), ne-lel (white), ne-pirir (red), ne-nyukuk (grey/roan), ne-omu (brown), ne-pus (blue-grey), samoi (spotted), kamar (striped/brindled) • Horn Shapes (p. 281): kipsongoi (horns pointing forward), kipturur (horns pointing down), kipkes (one horn up, one down), kiplul (hornless/polled)",
+          "pronunciation": "keer-keet, ey-toh, teh-tah, roh-ree-aht, moy-tah • keep-sohn-goy, keep-too-roor, keep-kehs, keep-lool",
+          "context": "A. C. Hollis (1909, pp. 19–23, 280–281) — Nandi pastoralism, bleeding arrow (loinet), and milk customs (never boiling milk or mixing meat and milk on the same day)",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Weapons, Shields & Musical Instruments (Hollis 1909, pp. 30–39)",
+          "translation": "ñgotit (spear: lembeita blade,okut socket, mlotit butt-spike; elders' short broad-bladed spear vs. warriors' long narrow-bladed spear), rotwet-ap-chok (sword in choket sheath), loñget (buffalo/antelope-hide shield painted in pororiet designs), kuanget (bow) & kōtik (arrows in mōtit quiver: kipchabit barbed iron arrow, supet wooden bird-arrow), rungut / scharit (club) • Musical Instruments (pp. 38–39): sukutit (war friction-drum), ketuba (5-stringed lyre), ndurerut (flute), ikondit (kudu war-horn)",
+          "pronunciation": "ngoh-teet / roh-tweht-ahp-chohk / lohn-geht / kwahn-geht / soo-koo-teet / keh-too-bah / ee-kohn-deet",
+          "context": "A. C. Hollis (1909, pp. 30–39) — Nandi weapons and musical instruments",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred & Ritual Nandi Flora (Appendix I: List of Nandi Trees, Grasses & Plants, Hollis 1909, pp. 313–316)",
+          "translation": "sinendet (Periploca linearifolia — sacred milky-sap creeper worn at weddings, births, peace oaths & invoked in oaths, p. 85, 315) • korosek (sacred altar branches: simotwet Ficus sp. fig tree, لبotwet Solanum campylacanthum, & tegat bamboo Arundinaria alpina, p. 41, 314–316) • teldet (council shade tree at kâp-kiruogutik, p. 49) • emdit (Olea chrysophylla wild olive, used for sacred fires & fumigating milk gourds, p. 24, 313) • sosit (Phoenix reclinata wild date palm, p. 316) • tepengwet (Acanthus arboreus boundary plant, p. 316) • kiptakchat (rain-maker's root tied to stick in river, p. 52) • kipsarkiat (warrior battle-charm root, p. 45) • ñgotiot (Brunsvigia Kirkii pincushion plant giving its name to January Ñgotioto, p. 95, 315) • seretiot (Cynodon Dactylon sacred couch-grass, p. 315)",
+          "pronunciation": "see-nehn-deht / koh-roh-sehk / see-moh-tweht / tehl-deht / ehm-deet / soh-seet / seh-reh-tee-oht",
+          "context": "A. C. Hollis (1909, Appendix I, pp. 313–316) — Botanical identifications by Dr. Otto Stapf of Kew Gardens",
+          "audioFile": null
         }
       ],
       "icon": "🌿"
@@ -2589,14 +2666,14 @@
       "entries": [
         {
           "english": "The 17 Nandi Clans (Oret) & Totems (Tiondo) Recorded by A. C. Hollis (1909 pp. 5–11)",
-          "translation": "Kipoiis (Jackal/Cockroach), Kipkenda (Bee/Frog), Toiyoi (Soldier Ant/Rain), Kipiegen (Baboon/House-snake), Talai (Lion), Kipasiso (Sun/Mole), Kapchemuri (Leopard), Kipaa (Colobus), Kipkazi (Hyena), Kipkokos (Buzzard), Kipsirgio (Bush-pig), Kipamwi (Duiker), Tungo (Hyena), Kipkoiitim (Elephant/Chameleon), Kiptopke (Cerval),체pkiror (Oribi), Moi (Crested Crane/Buffalo)",
+          "translation": "(1) Kipoiis (Women's names: Mende; Kerus — Totems: Jackal Leluot & Cockroach Solopchot), (2) Kipkoiitim (Kâpongen; Kiram-gel — Elephant Pēliot & Chameleon Nyiritiet), (3) Kipamwi (Ñgemwiyo; Kipketoi — Duiker Cheptirgichet), (4) Kipkenda (Maiimi; Maram-goñg; Ram-dolil; Kuchwa; Kami-pei — Bee Segemyat & Frog Mororochet), (5) Kipkōkōs (Kâpsegoi — Buzzard Chepkōkōsiot), (6) Kipiegen (Ingoke; Katamwa; Kipwalei — Baboon Moset & House rat Muriat), (7) Talai (Kipya-kut; Tule-kut; Kimapelameo — Lion Ñgetundo; clan of the Orkoiik), (8) Toiyoi (Moriso — Soldier ant Pirechet & Rain Robta), (9) Kipsirgoi (Pale-kut; Kâpil; Malet-kam — Bush pig Toret), (10) Sokom (Kâpyupe — Hawk Chepsiriret), (11) Moi (Rarewa; Kâparit-kisapony; Partatukasōs — Crested crane Koñgonyot & Buffalo Soet), (12) Kiptopke (Tuitokoch — Monkey Chereret), (13) Kâmwaïke (Kipongoi — Partridge Taiyuet), (14) Tungo (Korapor; Pale-pēt — Hyena Kimaketyet; judges/umpires & rear-guard), (15) Kipaa (Koros; Kâpcher-Mwamweche — Snake Erenet & Colobus monkey Koroiityet), (16) Kipasiso (Kipkōyo; Kâparakok — Sun Asista & Mole Puñguñgwet), (17) Chemur (Wildcat Kiptuswet)",
           "pronunciation": "kip-oi-is, kip-ken-da, toi-yoi, ta-lai, kip-a-si-so, moi",
-          "context": "A. C. Hollis & Sir Charles Eliot (1909) 'The Nandi: Their Language and Folk-Lore', pp. 5–11 & Hobley (1903, p. 358)",
+          "context": "A. C. Hollis & Sir Charles Eliot (1909) 'The Nandi: Their Language and Folk-Lore', pp. 5–11 & C. W. Hobley (1903, pp. 348–349)",
           "audioFile": null
         },
         {
           "english": "The 7 Cyclic Nandi & Kalenjin Age-Sets (Ipinda) & Saket-ap-Eito Handing-Over Festival (Every ~7.5 Years)",
-          "translation": "Maina, Chumo, Sawe, Kipkoimet, Kaplelach, Kimnyige, Nyongi (Festival: Saket-ap-eito)",
+          "translation": "7 Cyclic Age-Sets (Ipinda, ~53-year cycle, Hollis 1909 p. 12): (1) Maina (1915), (2) Nyonge (1907), (3) Kimnyike (1900), (4) Kâplelach (1892), (5) Kipkoiimet (1885), (6) Sowe (1877), (7) Juma (1870) • 3 Fires (Mat / Mostinuek) within each Age-Set: (1) Changen-opir (senior), (2) Kipal-koñg (middle), (3) Kiptoito (junior) • Handing-Over Ceremony every ~7.5 years (pp. 12–13): Saket-ap-eito (slaughter of a white bullock; retiring warriors exchange ostrich-feather head-dresses for elders' fur caps and simotwet bark garments)",
           "pronunciation": "i-pin-da / sa-ket-ap-ei-to",
           "context": "A. C. Hollis (1909, p. 12) & Hon. K. R. Dundas (1910, p. 60)",
           "audioFile": null
@@ -2605,7 +2682,7 @@
           "english": "The 12 Traditional Nandi Ecological Months (Arawet, Hollis 1909 pp. 94–95)",
           "translation": "Kiptamo (Feb), Iwat-kut (Mar), Wake (Apr), Ngei (May), Roptui (Jun), Puret (Jul), Epeso (Aug), Kipsunde (Sep), Kipsunde oieng (Oct), Mulkul (Nov), Mulkulik oieng (Dec), Ngotioto (Jan)",
           "pronunciation": "kip-ta-mo, i-wat-kut, wa-ke, ngei, rop-tui, pu-ret, e-pe-so, kip-sun-de",
-          "context": "A. C. Hollis (1909, pp. 94–95) & Hon. K. R. Dundas (1910, p. 62 — Tugen/Kamasia & Marakwet Calendar)",
+          "context": "A. C. Hollis (1909, pp. 94–95) & Hon. K. R. Dundas (1910, p. 72 — Tugen/Kamasia, Marakwet, Ndo & Kabkamat Calendars)",
           "audioFile": null
         },
         {
@@ -2635,9 +2712,114 @@
           "pronunciation": "nan-di, kip-si-gis, tu-gen, kei-yo, ma-ra-kwet, sa-ba-ot, o-giek",
           "context": "Sir Harry Johnston (1902, pp. 853–884), C. W. Hobley (1902; 1910, pp. 156–158), & Hon. K. R. Dundas (1910)",
           "audioFile": null
+        },
+        {
+          "english": "8 Nandi Totems Recorded by C. W. Hobley (1903, pp. 348–349)",
+          "translation": "Magetiet (Hyæna), Chebkukuchet (Water tortoise), Leluot (Jackal), Nyeretiat (Chameleon), Chebineret (Kite), Kungonyot (Crested crane), Chebkukusiot (Buzzard), Beliot (Elephant)",
+          "pronunciation": "ma-ge-tiet, cheb-ku-ku-chet, le-lu-ot, nye-re-ti-at, che-bi-ne-ret, kun-go-nyot, cheb-ku-ku-si-ot, be-li-ot",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 348–349",
+          "audioFile": null
+        },
+        {
+          "english": "Mount Kamalinga Migration Legend, Mount Elgon Volcanic Fire Stream & Ilet Lightning Legend of Mount Tinderet (Hobley 1903, pp. 332, 359)",
+          "translation": "Kamalinga (mountain 45 miles NW of Mount Elgon where Nandi lived on the east and Lako/Savei on the west before migrating SE, p. 332) • Lako legend of volcanic fire stream burning Elgon's forests (p. 332) • Ilet (lightning spirit who lived in a cave on Mount Tinderet among the Kamililo Nandi, brought incessant rain killing the Oggiek/Wandorobbo hunters, was wounded by poisoned arrows, and died in Arab Kibosone's country, where Arab = 'son of', p. 359) • 1900 Nandi Peace Medicine (p. 343): native stool bearing a conical mass of moist red clay studded with yellow wild Solanum fruit",
+          "pronunciation": "ka-ma-lin-ga / i-let / tin-de-ret / a-rab ki-bo-so-ne",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 332, 343, 359",
+          "audioFile": null
+        },
+        {
+          "english": "12 Nandi Clans, 3 Laibons, Mount Elgon (El-Gonyi) Tribes & Origin of the Name 'Lumbwa' (Hobley 1902, pp. 58–60)",
+          "translation": "12 Nandi (Nandiek) Clans (pp. 58–59): Koileke, Kakapoch, Kabsili, Kabkibkendi, Kapitalam, Kapsiondoi, Kabkumuno, Kaptumois, Tuken, Kamililo, Kabianga, Tibingnot; the 3 Laibons (1900): Kibelēs (son of Poyisia, buried under a cattle-dung mound, p. 37), Koitalēl, and Kipchumbēr • Mount Elgon (Masawa) Kalenjin Tribes (pp. 59–60): Lako, El-Gonyi (cave-dwellers from whom Joseph Thomson named Mount Elgon), Savei, Sor (Soré), Mbai, and Bumett, plus Nyangnori (Masino, p. 59) • Sikisi (Kipsigis / Lumbwa, p. 60): Burugeu, Bureti, Soti (Sotik); called 'Wa-Lumbwa' after a Sikisi peace delegate named Lumbwa who negotiated peace with the Naivasha Masai ~1880",
+          "pronunciation": "nan-di-ek / koi-ta-lel / ki-be-les / kip-chum-ber / el-go-nyi / si-ki-si",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. IV & Ch. V § 4, pp. 37, 58–60",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Plural Suffixes (-ik, -ek, -ok), Numerals, Peacemaking Ceremonies & Eldorobo Vocabulary (Hobley 1902, pp. 38–42, 84–87, 92–95)",
+          "translation": "Nandi Plurals (p. 87): moset → mosonik (ape), eoot → euek (arm), kōt → koriek (house), aiwet → aonek (axe), makomyet → makomek (banana), kwanget → kwangok (bow), duswet → duswok (cat), makasta → mokuswek (hippo), koita → koiek (egg/stone), masambonin → masambwan (spirit) • Peacemaking Rites (p. 42): chopping a donkey skull or whetstone, Lumbwa bending/throwing a spear into a river, Masai–Lumbwa nursing infant exchange, or breaking a water pot holding flies and a dead rat • Eldorobo of Eldama Ravine Lexicon (pp. 92–95): kortet (arrow), kweanda (bow), teta (cattle), lagwi (child), ōnye (eye), dimda (forest), nego (goat), chingno (good), kaisamo (hill), gasach (hunt), taborgwi (iron wire), netwinda (lion), turgut (plain), nguronani (rain), kipgami (rhino), motit (spear), porlik (stars), tarokwi (trees), ngaita (village), bēk/pēk (water), nyeleli (white)",
+          "pronunciation": "mo-set mo-so-nik / kot ko-ri-ek / kor-tet / kwe-an-da / ne-twin-da",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', pp. 38–42, 84–87, 92–95",
+          "audioFile": null
+        },
+        {
+          "english": "Elgeyo, Kamasia (Tugen), Sotik & Lumbwa (Kipsigis) Totemic Clans (Oret / Korgat) & 12 Elgeyo/Kamasia Months (Hobley 1910, pp. 161–164)",
+          "translation": "9 Elgeyo Oret & Mome Totems (p. 161): Talai (Lion), Korbilo (Bush-pig Toret), Tuyoi (Snake), Teriki (Elephant), Tarkōk (Rhino), Kungñatu (Monkey Tisiet), Tula (Jackal), Kimoi (Buffalo), Soti in Maragwet (Sun) • 7 Kamasia Oret & Totems (p. 161, Chief Kipchillum): Kip-Sojon (Zebra), Kip-Segeja (Buffalo), Kip-Kukoi (Buffalo), Kip-Etu (Hyaena), Kip-Kwikwi (Buffalo), Kip-Sibon / Kisibon (Baboon moset), Kip-Sura (Lion) • 12 Elgeyo & Kamasia Months (p. 162): (1) Iwat kut (big rains), (2) Maumūt (rains), (3) Wagi / waki, (4) Engnei / Ngnei, (5) Robtui, (6) Puret (began 27 July 1906), (7) Kipsundei, (8) Kipsundei, (9) Mulgul (dry weather, circumcision month), (10) Mulgul, (11) Ngnotiotu, (12) Kiptamo (auspicious youth circumcision month) • 7 Lumbwa & Sotik Geographical Districts (p. 163): Murukabto, Kabsili, Kwaigei, Kebeni, Kasanet, Ngetunya, Murieti • 6 Sotik Korgat & Mome Totems (p. 164): Pokuseri (Kite Kisireret), Matabori (Hyaena Magetiet), Kipsamaiek (Lion Ngetundo), Kamogu (Leopard Jablanket), Kibaiek (Crested crane Kungonyot), Paswetek (Frog Mororochet) • 5 Lumbwa Korgat & Totems (p. 164): Kibomwiek (Duiker Cheptirigichet), Kabsioinek (Monkey Tisiet), Kabaranwek (Marabou stork Cheptalamya), Kabtoya (Lightning Ilet), Kiblegenet (Rhino Kipsingit)",
+          "pronunciation": "o-ret / kor-gat / mo-me / i-wat kut, mau-mut, wa-gi, eng-nei, rob-tui, pu-ret, kip-sun-dei, mul-gul, kip-ta-mo",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 161–164",
+          "audioFile": null
+        },
+        {
+          "english": "13 Maragwetta (Chebleng) Sections, Clans & Totems and 20 Kamasia (Tugen) Clans in Kapteberewa & Nderois (Dundas 1910, pp. 61–62, 65–66)",
+          "translation": "Maragwetta (Northernmost Chebleng, 5 Northern Sections, p. 61): (1) Beya — Clan Tallai (Totem: Kogai, crow), (2) Kaksegai — Clan Oreon, (3) Katut — Clan Sirichon (Seran, dikdik), (4) Kabioso — Clan Kamugo (Kogai, crow), (5) Bogorror — Clan Tallai (Kogai, crow) • 8 Southern Maragwetta Sections (p. 62): (1) Sibo — Clan Saban (Elephant, from Krut), (2) Kapsagat — Clan Tallai / Tulin (Crow & jackal; hills behind inhabited by Sangwirr), (3) Kagsegom — Clan Kapsegom (Sirere, kite, from Angata e-'m-barta), (4) Kapsekerr — Clan Tallai (Kogai, crow), (5) Kamarein — Clan Tallai (Kogai, crow), (6) Kauwau — Clan Kapsegom (Sirere, kite), (7) Mareich — Clans Tallai & Legen (Crow & frog), (8) Kabell — Clan Chepbogamwoi (Buffalo) • 14 Kamasia (Kapteberewa) Clans & Totems (p. 65): (1–10) Kapkeruwa (from Sogota), Kaptogongo, Kamengo, Kapchessoito, Kapalangwa, Kameiwan, Kaperchino, Kapsonok, Kapartaber, Kapkolumon — Totem: The Sun (Sot, endogamous marriage permitted); (11) Tallai — Leopard (from Chebleng); (12) Kawbil — Porcupine (sabet, exogamous, from Moiven); (13) Tungaw — Hyena (chesin, exogamous, from Elgeyo & Sangwir); (14) Kirimos — Hyena (chesin, from Moiven) • 6 Kamasia (Nderois) Clans & Totems (p. 65): (1) Kimoi — Buffalo, (2) Mogei — Bee, (3) Tallai — Frog, (4) Sot — Sun, (5) Kimwan — Guinea fowl (Samburu origin), (6) Terriki — Elephant (from Sessivi above Lake Hannington / Ararat)",
+          "pronunciation": "chehb-lehng • koh-gah-ee • see-reh-reh • soht • sah-beht • cheh-seen",
+          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, pp. 61–62, 65–66",
+          "audioFile": null
+        },
+        {
+          "english": "Comparative 12-Month Agricultural Calendars of Ndo (Endo), Maragwetta, Kabkamat (Olmo) & Kamasia (Kapteberewa & Nderois) (Dundas 1910, p. 72)",
+          "translation": "Wet Season ('Months of empty bellies' — Ndo: Kamei; Maragwetta & Kabkamat: Kipgugen; Kamasia: Terrelaw): (1) Sept: Tabatch (Nderois: Moguld), (2) Oct: Ndo Kapsatt / Maragwetta Rawptoi / Kabkamat Kapsett / Kapteberewa Kabsett / Nderois Ngoitioto, (3) Nov: Ndo & Maragwetta Kawgelyon / Kabkamat & Kapteberewa Kaptam / Nderois Kaptama, (4) Dec: Ndo & Maragwetta Kwarra [Maragwetta boys' circumcision] / Kabkamat Kipsiruwa / Kamasia Uwawt, (5) Jan: Ndo & Maragwetta Mou / Kabkamat Lemamut / Kamasia Mamut, (6) Feb: Ndo, Maragwetta & Kabkamat Terter / Kamasia Keblaw • Dry/Harvest Season ('Months of full bellies' — Ndo: Sengartat; Maragwetta: Uwawtgot; Kabkamat & Kamasia: Uwawt): (7) March: Ndo Borgogwa / Maragwetta Mellarawp / Kabkamat Goborgovitch / Kamasia Keptasapp, (8) April: Ndo Regesa / Maragwetta & Kabkamat Burett / Kamasia Sessit, (9) May: Ndo, Maragwetta & Kabkamat Perrowa / Kapteberewa Sokol / Nderois Kiptogawt, (10) June: Ndo, Maragwetta & Kabkamat Meldai / Kamasia Mel [Kapteberewa boys' circumcision], (11) July: Ndo Meletu / Maragwetta Melarok / Kabkamat Meleto / Kapteberewa Meldanga / Nderois Kipsunde, (12) Aug: Ndo [boys' circumcision], Maragwetta, Kabkamat & Kapteberewa Mugeyon / Nderois Molgol • Terraced Hillside Villages & 10-Mile Irrigation Furrows (pp. 62–65): Ndo & Maragwetta build terraced platform villages, irrigate 10 miles of valley from a single river, cultivate eleusine on hillsides and millet in lowlands, and sell half-acre lowland plots for 1 female goat",
+          "pronunciation": "keep-goo-gehn • tehr-reh-lahw • oo-wahwt-goht • sehn-gahr-taht",
+          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, pp. 62–65, 72",
+          "audioFile": null
+        },
+        {
+          "english": "The 6 Nandi Counties (Emotinuek) & 15 Geographical Districts / Regiments (Pororōsiek) (Hollis 1909, p. 4)",
+          "translation": "6 Counties (Emotinuek): (1) Wareñg (North), (2) Masop (East), (3) Soiin / Pelkut (South), (4) Aldai & (5) Chesume (West/South-West), (6) Em-gwen (Central) • 15 Regimental Districts (Pororōsiek): (1) Kâmelilo, (2) Kâpchepkendi, (3) Kâpkiptalam, (4) Koileke, (5) Kâkipoch, (6) Kâpianga, (7) Kâpsile, (8) Tipiñgot, (9) Cheptol, (10) Kimñgoror, (11) Kâkimno, (12) Murk'-ap-Tuk' (Kâpwaren), (13) Kâptumoiis, (14) Kâpsiondoi, (15) Tuken • Siritiet (pl. Siritaiik): parish warrior company of 20–50 men under an Olaitoriot captain",
+          "pronunciation": "eh-moh-tee-nwehk • poh-roh-roh-see-ehk • see-ree-tee-eht",
+          "context": "A. C. Hollis (1909, pp. 4, 48–49) — Territorial and military organization of the Nandi escarpment",
+          "audioFile": null
+        },
+        {
+          "english": "Genealogy of the Nandi Orkoiik (1850–1909), Kimnyole's 1890 Prophecy of the Iron Snake & Governance (Hollis 1909, pp. 48–52)",
+          "translation": "Dual District Governance (pp. 48–49): Kiruogindet (people's spokesman-judge presiding under the teldet tree at kâp-kiruogutik) & Maotiot (pl. Maotik, representative of the Orkoiyot) • Genealogy of the Orkoiik (from the Masai Kipafu/Uasingishu section, Clan Talai, p. 50): 1. Kipsegun → 2. Kopokoii & Ar-ap-Kipsegun → 3. Turukat → 4. Kimnyole (4th Orkoiyot, clubbed to death in 1890 atotik-ap-Kimnyole after calamities, having prophesied that foreigners would come and an iron snake — the Uganda Railway — would spit fire across the land) → 5. Koitalel / Samwei (5th Orkoiyot, killed Oct 1905), Kipchomber / Ar-ap-Koileke (fled to become 1st Lumbwa/Kipsigis Orkoiyot), & 6. Kipeles / Tamasun (6th Nandi Orkoiyot) • Lesser Diviners & Rain-Makers (pp. 51–52): Kipsakeiyot (diviner by tossing pebbles from a club-gourd), Kipungut (diviner by inspecting entrails), Uindet (pl. Uik, rain-maker using kiptakchat root), Sakoranik / Chepkerichot (witches)",
+          "pronunciation": "ohr-koy-yoht • keem-nyoh-leh • koy-tah-lehl • keep-chohm-behr • kee-peh-lehs",
+          "context": "A. C. Hollis (1909, pp. 48–52) — History and genealogy of the Nandi Orkoiik",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Cosmology, Daily Prayers to Asis, War Song & Kipsunde Harvest Festival (Hollis 1909, pp. 40–48)",
+          "translation": "Cosmology (pp. 40–41): Asista / Asis (the Sun, Supreme Creator where the sky Kipsengwet and earth Ngungunyet meet), Īlet ne-mie (benevolent thunder god whose axe-heads fall in forked lightning toiset) vs. Īlet ne-ya (malevolent thunder striking in sheet lightning), Oiik (sg. Oindet, ancestral spirits dwelling underground and appearing in human shadows tomirimir), Chemosit (one-legged, nine-buttocked, half-man half-bird ogre with a glowing red mouth like a lamp, eating children's brains with an iron spoon) • Elders' Daily Morning Prayer (p. 42): 'Asis, ka-a-sa-in tuk-u-a lakōk ak tuka; a-sich sapon. Asis, konech sapon...' ('O God, I have prayed to Thee, guard my children and cattle; may I obtain health...') • Warriors' Mothers' War-Song (p. 44): 'A-ōmon eng-Aï ai, n-a-ōmon M-Batyany' (invoking Eng-Aï and the Masai medicine-man M-Batyany) • Kipsunde Harvest Festival (pp. 46–47): sacred circle (mabwaita) of simotwet, labotwet, and tegat branches where eleusine (päk) is blessed with sheep blood and milk",
+          "pronunciation": "ah-sees-tah • ee-leht neh-myeh • oy-eek • cheh-moh-seet • mah-bway-tah",
+          "context": "A. C. Hollis (1909, pp. 40–48) — Nandi religion, prayers, and sacred ceremonies",
+          "audioFile": null
+        },
+        {
+          "english": "The 30 Nandi Lunar Phase Names (Arawek) & 6 Divisions of the Day (Hollis 1909, pp. 95–97)",
+          "translation": "30 Moon Phases (pp. 95–96): Day 1 Ke-'ro kutik arawet ('the tanners have seen the moon'), Day 2 Ke-'ro pich tukul ('all people have seen it'), Day 3–4 Patai, Day 5–6 Somok-kut, Day 7–8 Angwan-kut, Day 9–10 Mut-kut, Day 11–13 Pelekwek, Day 14–15 Chepkochir, Day 16–17 Tuyech ('full moon'), Day 18–20 Kâp-sioi, Day 21–22 Kâp-neket, Day 23–25 Kâp-leleito, Day 26–27 Kâp-chii, Day 28 Ka-chut ko ('it has entered the house'), Day 29 Ka-me arawet ('the moon is dead'), Day 30 Mesundeit'-ap-arawet ('the moon's darkness') • 6 Divisions of the Day (pp. 96–97): (1) Kaech (5–6 a.m., dawn), (2) Korirun (6–9 a.m., morning), (3) Pēt (9 a.m.–2 p.m., midday), (4) Koskoling (2–6 p.m., afternoon), (5) Karap / Koimen (6–7 p.m., dusk), (6) Kemboi / Lakat (night), plus 28 hourly pastoral markers (from 5 a.m. Ke-rir-e koroi 'the colobus monkeys cry' to 6:30 p.m. Ka-ko-chut tuka 'the cattle have entered the kraal')",
+          "pronunciation": "keh-roh koo-teek ah-rah-weht • too-yehch • meh-soon-dey-tahp-ah-rah-weht • kah-ehch, koh-ree-roon, peht, kohs-koh-leeng, kah-rahp, kehm-boy",
+          "context": "A. C. Hollis (1909, pp. 95–97) — Lunar calendar and pastoral time-reckoning",
+          "audioFile": null
+        },
+        {
+          "english": "19 Nandi Folk-Tales (including Bilingual Interlinear Narratives) Recorded by A. C. Hollis (1909, pp. 97–123)",
+          "translation": "Cosmological & Origin Myths (pp. 97–101): Creation of hill and valley by the Elephant (pēliot) and Thunder (īlet); Origin of the first Dorobo (Okiek) man from whose swollen leg sprang the first boy and girl; Why Death (myat) is permanent (because the dog seset refused to let the dead return like the moon arawet, whereas the mole puñguñgwet agreed); Origin of cattle, sheep, and goats from a struck cooking-pot (teret); Origin of monkeys from lazy men carrying stirring-sticks (kipramet); How warriors tested poisonous wild fruits on women after a girl gave her lover milk first • Interlinear Bilingual Tales (pp. 101–123): Tapand'-ap-emet ('The Edge of the World'), Ñgalek-ap-sesēnik ('The Story of the Dogs' Kingdom'), Ñgalek-ap-tuka ('How Livestock Came to Dwell with Humans'), Kâpchemosīnik-ap-päk ('The Story of the Grain Ogres' & the gourd swelling from a cut toe), Arawet ne-ko-lel ('The White Moon'), Chemosit ak lakōk ('The Chemosit Ogre and the Children'), and the Cumulative Chain Tale Wirua ñgô soroiyo? ('Who threw the wild soroiyo fruit on me?' — wild fruit → tree → elephant → hunter → snake → stick → fire → river → bullock → spider/fly → warrior)",
+          "pronunciation": "tah-pahn-dahp-eh-meht • ngah-lehk-ahp-seh-seh-neek • ngah-lehk-ahp-too-kah • wee-roo-ah ngoh soh-roy-yoh",
+          "context": "A. C. Hollis (1909, pp. 97–123) — Nandi oral narratives and bilingual interlinear texts",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Charles Eliot's Comparative Nilotic Notes: Dorobo (Okiek) Dialect & Masai Kunōno Smiths' Vocabulary (Hollis 1909, pp. xxviii, xxxiii)",
+          "translation": "Dorobo / Okiek Dialect Features (p. xxviii): singular nominal suffix -anda (vs. Nandi -et/-it) and verbal tense prefix ar- • Masai Kunōno Smiths' Special Vocabulary (p. xxxiii): e-samereita (iron), o-siota (knife), en-gandiit (spear), e-wuyuwuyu (axe)",
+          "pronunciation": "oh-kee-ehk (-ahn-dah) • koo-noh-noh (eh-sah-meh-rey-tah, oh-see-oh-tah, ehn-gahn-deet, eh-woo-yoo-woo-yoo)",
+          "context": "Sir Charles Eliot in A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Introduction pp. xxviii, xxxiii",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 853–884) Comparative Ethnography of the Nandi, Lumbwa (Sikisi), Kamásia (El Túkĕn), Elgeyo, Mutei, Elgonyi (Lako/Ñoma), Sabei & Andorobo",
+          "translation": "Tribal divisions (pp. 853–857): Nandiek (Nandi), Lumbwa (autonym Sikisi), Sotik, Kamásia (autonym El Túkĕn), Elgeyo, Mutei, Japtuleil, Elgonyi (Lako / Ñoma of South Elgon), Sabei (North Elgon), and Andorobo / Elgunono • Architecture & material culture (pp. 866–878): Nandi western escarpment cave strongholds holding up to 300 cattle (p. 868 fn. 19), Nandi interior house plan with central 3-stone fireplace, left/right mud bed-platforms, overhead wickerwork grain loft, and rear 1/3 goat partition (Fig. 493), Mutei/Elgeyo hillside excavated cave-dwellings closed with thorn bushes, Sabei perpendicular wooden-billet houses with carved apex poles and land-shell ear ornaments, Andorobo milking-pot-shaped twin-handled wooden ear-lobe cylinders and upper-ear rods (Figs. 258, 481), Lumbwa liquid tobacco juice poured from a goat-horn into the nostrils (p. 872), Acocanthera schimperi arrow poison boiled 6 hours and cleansed with fleshy sage leaves (Figs. 496–498), zingiberaceous root bird-lime and arrow-feather glue (Fig. 499), spiked wooden-ring game snares, and multi-stringed raft zithers with raised bark-strip strings • Customary law, religion & peacemaking (pp. 878–884): bride-price of 4 goats, 1 fowl, and 1 cow in Nandi vs. 6 cattle and 5 goats in Elgeyo (Mr. F. W. Isaac); father's fur-mantle strike curse atoned by sacrificing a goat; Kamásia rain-making root (soaked in a river or pot to bring rain) and three-hole tribal prayer offering (oldest man, oldest woman, and a child burying cooked sheep, flour, milk, and honey in three holes to unite all generations before God); homicide/adultery laws across Nandi (20-goat fine for non-brother homicide), Kamásia (full stock confiscation), Mutei (capital execution by spears), and Elgeyo (fine); peacemaking by chopping a donkey's or human skull, halving a dog, breaking a whetstone, or (between Lumbwa and Masai ~1877) exchanging a Lumbwa baby and a Masai baby to be reared by the opposite tribe (p. 884)",
+          "pronunciation": "nan-di-ek / si-ki-si / el-tu-ken / el-go-nyi / sa-bei / tor-o-rot",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 853–884",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 913–925) Vocabulary Set 2 (#10 Nandi, Elgoiny' [E] & Lumbwa [L], #11 Kamásia [Tūken], #12 Dorωbω) & Verb Paradigms",
+          "translation": "Comparative Vocabulary across Nandi (N), Elgoiny' (E), Lumbwa (L), Kamásia/Tūken (K), and Dorωbω (D) (pp. 913–921): Ant: Pirejik (N), Kimetet (K), Luisusu (D) • Termite: Toiyá / Terrĕrĕ [E] / Embarnūt [K] • Hartebeest: Nyogōswa (K), Temnyegωset (D) • Kudu: Iriombūt (K), Oriombūt (D) • Eland: Siñuitó (K), Siñoitó (D) • Bushbuck: Parkutelyande (K), Saramat (D) • Reedbuck: Iruguttie (K), Erugutiandet (D) • Waterbuck: Kisomere (K), Yapwanoriat (D) • Oribi: Poinet (K, D) • Impala: Tewīretiet (K), Terewetiot (D) • Oryx: Ekonde (K, D) • Arm: Ewūt/Eūnek (N, K), Wistó/Rubeitó (D) • Arrow: Kotett/Kotiek [E] / Kōtē [K] / Mwōk [D] • Axe: Ayuett/Aωnek (N), Aiyuet (D) • Baboon: Mωsω/Mωsωnik (N), Ol lotim (K), Moset (D) • Back: Patét (N, K), Sowet (D) • Beard: Tamnet (N, K), Ñesiemdṓ (D) • Bee: Sagamek (N, K, D) • Belly: Moyet/Mōe/Mōet • Bird: Motonda/Motoñwek (N), Giasambūt (K), Kiabsambot (D) • Blood: Kōrotīk (N, K, D) • Body: Portó (N, K, D) • Bone: Kṓwet/Kōek (N, K), Kawet (D) • Bow: Kuañget (N), Kwēanda (L), Koianda (K), Kuianda (D) • Breast: Kīnet/Kinaek (N), Kindēt (K), Murungūt (D) • Brother: Kitubkie (N), Kiñargenna (K), Tūbcó (D) • Buffalo: Sōet (N), Sumĕ (K), El goisó (D) • Cat: Kiptuswet (N), Keleleitṓ (K), Osembét (D) • Cattle/Cow: Tωγa/Cecā, Teta igwōget (N), Teta nawai (K, D), Bull Kirgit • Chief: Kiruagindet (N), Kirnōginde (K), Kirnogindet (D) • Child: Lakwet (N, K, D) • Cloth: Ānget (N, K, D), Ngorie (L) • Colobus: Koroīt (N, K), Koroitet (D) • Country: Koret (N), Ñoñonyĕ (K), Nwōñyūt (D) • Crocodile: Kūibuīe (K), Kūibūiet (D) • Day/Night: Kēmboi/Pēt (N, K), Kaīc/Pet/Koimen (D) • Devil/Ghost: Musiot (N), Kagomĕ (K, D) • Doctor: Orgoyó laibon (N), Or goyot (D) • Dog: Seset (N, K), Nωkta (L, D) • Door: Kuruget (N), Korkāt (K), Kurgḗt (D) • Drum: Gētet (N, K, D) • Ear: Idit/Itik (N, K), Itit (D) • Egg/Stone: Koitá/Koīk (N, K), Gotá (E), Kpwetenek (D egg) • Elephant: Peliōt (N), Peliondet (L, K), Peniandet (E), Beliot (D) • Eye: Konda/Konyak (N, K, D) • Face: Toget (N, K), Togoitá (D) • Fat: Mwaitā (N, K, D) • Finger: Mornet/Morek (N, K, D) • Fire: Māt (N, K, D; Gun: Māt atcombe [N], Giptūlie [K], Kibtulet [D]) • Fish: Isucṓ (N), Kariyān (K), Kaoyĕ (D) • Foot/Leg: Kendo/Keldō/Keliek (N, K, D), Cātet (D leg) • Forest: Timdó (N, K, D) • Fowl: Ngokiet (N, K, D) • Giraffe: Tombēs (N, K) • Goat: Artet / Negō (N, K), Gĕcĕt (D) • God: Parak (N), Torōrat (L), Tororot (K), Ropta (D) • Grass: Susuet (N, D), Siswe (K) • Guinea-fowl: Tergékiāt (N, D), Diriandet (E), Tergekiañ (K) • Hair: Sumēik (N, K), Putek (E, D) • Hand: Rubei (N), Rubeita (L, E), Rubēūt (K), Rωtiet (D) • Head: Metit (N, K), Medit (D) • Heart: Puōnik (N, K), Puōniondet (L), Puōniet (D) • Hippo: Magasta (N), Mayauta (K), Magauta (D) • Honey: Kumiat (N), Kumī (L), Kumiandet (E, K, D) • House: Kōt (N, K, D), Kōta (E), Town Kaitá (N, D) • Hyena: Kimaget (N), Kimagetiet (L), Magadiet (E), Abēye (K), Abēyet (D) • Iron: Magararia/Segeñgeit (N), Tabōkwe (K), Tabokwet (D) • Knee: Kibser (N), Kibserit (L, K), Utuñdó (D) • Knife: Rōtua (N), Rωtuet (L, K, D), Lωtuet (E) • Leopard: Yabluñget (N, K), Merindó (E), Melilda (D) • Lion: Gatūn (N), Getūndo (K), Ñetundó (D) • Man: Citó / Pik (N, K, D) • Meat: Pendo (N, K, D), Giam (D) • Moon: Aráwet (N, K, D) • Mountain: Tuluēt (N, K, D), Nagamet (E) • Mouth/Tongue: Kaliap / Nĕlyḗta (N), Mesit (E), Ñaliep (K, D) • Neck: Kādet (N, K), Kātet (D) • Nose: Serūt (N, K, D) • Mead: Maiyek (N, K), Komiat (D) • Pig: Butiei (N, K), Cawōyet (D) • Pigeon: Ceptuget (N, K), Sorgoitá (D) • Rain: Károbωl (N), Rωbta (L, E), Karobon (K, D) • Rat: Muriāt (N), Muriandet (E, K, D) • River: Oinet (N, K), Uosto (K), Pēk (D) • Road: Oret (N, K, D) • Sheep: Meñgit (N, K), Kēcĕt (D) • Shield: Loñet (N, K, D) • Skin: Maγatet (N, K, D), Serét (E) • Sky: Pōlik (N), Poldet (L, K), Pondet (E), Robta (D) • Snake: Erenet/Erenik (N, K, D) • Song: Tiendō (N, K, D), Nekwet (E) • Spear: Ñotet (N, K, D) • Star: Kaīcek (N), Keceēk (E), Kogĕlek (K), Tabōek (D) • Stick: Kirūktō (N, K, D), Kiroitó (E) • Sun: Asesta (N, K, D) • Tear: Pe-γap-kō (N, K), Nωgit (E), Garēĕt (D) • Thief: Corindet (N, K), Acorr (D) • Tobacco: Tumbato (N), Tumate (K), Tumatet (D) • Tooth: Kelek (N, K, D) • Tree: Kietīt/Kitīt/Ketet • Twins: Saramek (N), Lōgwegoeñ (K), Mōisiek (D) • War: Luget (N, K, D) • Wart-hog: Toret (N, K), Tomda (D) • Water: Pek (N, K, D), Pēga (E) • Wife/Woman: Korket/Korgo/Kōrūsiek (N, K, D), Diebtó (D), Kiebtó (N virgin) • Year: Īwōtet (N, K, D) • Zebra: Sigiriet (N), Ol loitigie (K), Gelebet (D) • Numerals & Verb Paradigms (pp. 921–925): 1 Akeñge, 2 Aeñ/Oeñ, 3 Sωmω/Sωmok, 4 Añwan, 5 Mutᵘ, 6 Lō/Kollo (L), 7 Tessab, 8 Sisī/Sisīt, 9 Sokol, 10 Taman, 20 Tiptem/Kutiptem (K), 30 Sosōm, 40 Artam, 50 Konom, 60 Bokol, 70 Bokol akonom, 80 Bokol oen, 90 Bokol aksogol, Pokol (countless); Good: Mie (N), Karam (E), Karara (K); White: Lel (N, K), Silwa (E); Black: Tui (N), Nyetoi (E), Tωi (K); Paradigms (p. 925): Kowe ane / Kakwo inne / Kákēpe ācek / Kobe akwek / Kakobā icek (I / he / we / ye / they go); Aoñget ane / Ingetinye / Ingen nī / Kinget acek / Onget akwek / Inget iceke (I / thou / he / we / ye / they know); Maonget / Minget / Minget inne / Mokinget / Nenyu mwōnget / Meñget icek (I...they know not)",
+          "pronunciation": "a-keng-e, a-eng, so-mok, ang-wan, mut, lo, tes-sab, si-sit, so-kol, ta-man",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 2 (#10 Nandi/Elgoiny'/Lumbwa, #11 Kamásia, #12 Dorωbω), pp. 913–925",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, 1910, Johnston 1902, Hollis 1909 & Dundas 1910)"
+  "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, 1910, Johnston 1902, Hollis 1909 & Dundas 1910); Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II"
 }

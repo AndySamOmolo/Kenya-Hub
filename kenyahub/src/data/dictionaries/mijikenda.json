@@ -29,30 +29,30 @@
         },
         {
           "english": "Thank you",
-          "translation": "Asante (Ni wega / Hasante)",
-          "pronunciation": "ah-sahn-teh",
-          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "translation": "Mwadima! Na-m'vera na-we! (also Asante / Ni wega)",
+          "pronunciation": "mwah-dee-mah nah m-veh-rah nah-weh",
+          "context": "Rev. W. E. Taylor (1891, p. 100 under Thank you) & Krapf & Rebmann (1887)",
           "audioFile": null
         },
         {
           "english": "Good evening",
-          "translation": "Udzatsinda? (Reply: Nidzatsinda!)",
-          "pronunciation": "oo-dzah-tseen-dah",
-          "context": "W. E. Taylor 1891 p. 102",
+          "translation": "Dziloni! — Reply: Hmwishamwe! Kwatswa? — Kudzatswa!",
+          "pronunciation": "dzee-loh-nee / hmwee-shah-mweh",
+          "context": "Rev. W. E. Taylor (1891, p. 84 under Salutation)",
           "audioFile": null
         },
         {
           "english": "Good morning",
-          "translation": "Udzalamuka? (Reply: Nidzalamuka!)",
-          "pronunciation": "oo-dzah-lah-moo-kah",
-          "context": "W. E. Taylor 1891 p. 102",
+          "translation": "Lam'kani! — Reply: Hmwishamwe! Mudzalamuka? — Hudzalamuka. — Na hulamuke!",
+          "pronunciation": "lahm-kah-nee / moo-dzah-lah-moo-kah",
+          "context": "Rev. W. E. Taylor (1891, pp. 83–84 under Salutation)",
           "audioFile": null
         },
         {
           "english": "Hello",
-          "translation": "Udzalamuka? (morning) / Udzatsinda? (daytime) / Habari?",
-          "pronunciation": "oo-dzah-lah-moo-kah / oo-dzah-tseen-dah",
-          "context": "W. E. Taylor 1891 p. 102 Giriama salutations",
+          "translation": "Voro! — Voro! Muzima? — M'zima. — Ndo vidzo! — Simanya na-we. — A! na-mi ni m'zīma (pl. Voronī! Mwá zima? — Fwazima)",
+          "pronunciation": "voh-roh / moo-zee-mah / ndoh vee-dzoh",
+          "context": "Rev. W. E. Taylor (1891, p. 83 under Salutation — general adult dialogic greeting)",
           "audioFile": null
         },
         {
@@ -99,23 +99,23 @@
         },
         {
           "english": "White",
-          "translation": "-erupe (kuerupe tsé!)",
-          "pronunciation": "eh-roo-peh",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "translation": "-aruhe (Mwaruhe tsé! / tsetsétse! = snow-white)",
+          "pronunciation": "ah-roo-heh tseh",
+          "context": "Rev. W. E. Taylor (1891, pp. xiv, 132 — falsetto ideophone tsé!)",
           "audioFile": null
         },
         {
           "english": "Black",
-          "translation": "-iru (nyiru, kundama pi!)",
-          "pronunciation": "ee-roo",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "translation": "-iru (Mwiru pi! = jet-black)",
+          "pronunciation": "ee-roo pee",
+          "context": "Rev. W. E. Taylor (1891, p. xiv — falsetto ideophone pi!)",
           "audioFile": null
         },
         {
           "english": "Red",
-          "translation": "-tune (ntune)",
-          "pronunciation": "too-neh",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "translation": "-tune (Mutune do! = bright red)",
+          "pronunciation": "too-neh doh",
+          "context": "Rev. W. E. Taylor (1891, p. xiv — falsetto ideophone do!)",
           "audioFile": null
         },
         {
@@ -148,9 +148,23 @@
         },
         {
           "english": "To give",
-          "translation": "kuha (-ha)",
-          "pronunciation": "koo-hah",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "translation": "ku-p'a (-p'a; Krapf Nika: kuha)",
+          "pronunciation": "koo-p'ah",
+          "context": "Rev. W. E. Taylor (1891, p. 41 under Give) & Krapf & Rebmann (1887)",
+          "audioFile": null
+        },
+        {
+          "english": "Good afternoon / midday salutation (Noon to 2 p.m.)",
+          "translation": "Tsanani! — Reply: Hmwishamwe! Mudzadherwa? — Hudzadherwa. — Na hudherwe!",
+          "pronunciation": "tsah-nah-nee / hmwee-shah-mweh / moo-dzah-dheh-rwah",
+          "context": "Rev. W. E. Taylor (1891, p. 84 under Salutation — midday greeting to the aged)",
+          "audioFile": null
+        },
+        {
+          "english": "Goodbye / Parting salutation",
+          "translation": "Kala uworo! — Reply: Haya, enda matsiya! (or Enda uworo!)",
+          "pronunciation": "kah-lah oo-woh-roh / ehn-dah mah-tsee-yah",
+          "context": "Rev. W. E. Taylor (1891, p. 84 under Salutation & p. 134)",
           "audioFile": null
         }
       ]
@@ -169,9 +183,9 @@
         },
         {
           "english": "Eight",
-          "translation": "nane",
-          "pronunciation": "nah-neh",
-          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "translation": "hnane (in counting, with voiceless nasal hn-) / nane (-nane)",
+          "pronunciation": "hnah-neh / nah-neh",
+          "context": "Rev. W. E. Taylor (1891, p. x & Table I) & Krapf & Rebmann (1887)",
           "audioFile": null
         },
         {
@@ -204,16 +218,16 @@
         },
         {
           "english": "Two",
-          "translation": "mbiri / phiri",
-          "pronunciation": "mbiri / phiri",
-          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
+          "translation": "hiri (in counting) / -iri (airi, miiri, viiri, mairi, uiri) / mbiri (Class III & VII)",
+          "pronunciation": "hee-ree / mbee-ree",
+          "context": "Rev. W. E. Taylor (1891, p. 124 & Table I)",
           "audioFile": null
         },
         {
           "english": "Three",
-          "translation": "tahu / tatu",
-          "pronunciation": "tahu / tatu",
-          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
+          "translation": "hahu (counting & stem -hahu: ahahu, mihahu, vihahu, mahahu) / t'ahu (Class III & VII N+h > t')",
+          "pronunciation": "hah-hoo / t'ah-hoo",
+          "context": "Rev. W. E. Taylor (1891, p. xii & Table I)",
           "audioFile": null
         },
         {
@@ -225,9 +239,9 @@
         },
         {
           "english": "Five",
-          "translation": "tsano / tano",
-          "pronunciation": "tsano / tano",
-          "context": "Sabaki / Northeast Coast Bantu numeral cognate",
+          "translation": "tsano (stem -tsano: atsano, mitsano, vitsano, matsano) / ts'ano (counting & Class III/VII N+ts > ts')",
+          "pronunciation": "tsah-noh / ts'ah-noh",
+          "context": "Rev. W. E. Taylor (1891, p. xii & Table I)",
           "audioFile": null
         },
         {
@@ -1764,63 +1778,367 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "The 13 Historical Giriama Circumcision Cycles (Marika, Taylor 1891 p. 19)",
-          "translation": "Amwendo, Akalunde, Amijoga,anguli, Ap'uku, Angwena, Amlulu, Amtsop'i,Kinyamburi,omba, Kavuta,vulana, Katsungula",
+          "english": "The 13 Historical Giriama Circumcision Cycles (Marika, Taylor 1891 pp. 2, 21)",
+          "translation": "(1) Wula-mbere ('First-rains'), (2) Wula-kahi ('Middle-rains'), (3) Wula-nyuma ('Latter-rains'), (4) T'ungudza ('Tomatoes'), (5) P'uku ('Large wild rats'), (6) Nguluwe ('Pigs'), (7) Vitambi ('Coloured cloths'), (8) Vitsoka ('Hatchets'), (9) Abi-Kizi ('Kizi's-father'), (10) Atsai ('Wizards'), (11) Mafira ('Puff-adders'), (12) Mitseka ('Mats'), (13) Nyoga ('Feathers' — current cycle in 1891, with 'Kavuta' as its 1st sub-rika)",
           "pronunciation": "ma-ri-ka (sg. rika)",
-          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 19 under Circumcision-cycles",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 2 under Age & p. 21 under Circumcision-cycles",
           "audioFile": null
         },
         {
-          "english": "Giriama Elder Governance & Initiation Lodge Degrees (Habasi & K'ambi, Taylor 1891 p. 43)",
-          "translation": "Uhoho → Umondo → Ubora → Gawe → Sayo ra K'oma → M'ng'aro → Kirao → Vaya → Fisi → Enye-ts'i",
-          "pronunciation": "ha-ba-si / k'am-bi / va-ya / e-nye-ts'i",
-          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 43 under Freemasonry",
+          "english": "Giriama Elder Governance & Initiation Lodge Degrees (Habasi & K'ambi, Taylor 1891 pp. 37–38, 79)",
+          "translation": "Preliminaries: Uhoho → Umondo → Ubora | 1st Degree Habasi (Ahoho a Habasi-ni / Nyere under hierophant Muhagizi → Ahoho a Mihaso-ni) | 4 Dances to 2nd Degree K'ambi: (1) Gawe (with Mwandza M'kulu mystic drum under M'kuzi), (2) Sayo ra K'oma (under Mwenye Sayo), (3) M'ng'aro, (4) Kirao (with musichana bamboo drum; wearing luwoo armlet at Nyambura feast & sitting in M'oro parliament) | Senior Elders (Azhere): Waya (bandari club-house) & Fisi ('Hyena' inner circle under M'kuzi, then Mwa-Rima) → 3 Enye-ts'i ('Possessors of the Land')",
+          "pronunciation": "ha-ba-si / k'am-bi / wa-ya / fi-si / e-nye-ts'i",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', pp. 37–38 under Freemasonry & p. 79 under Orders",
           "audioFile": null
         },
         {
-          "english": "The Traditional 4-Day Giriama Market & Farming Week (Taylor 1891 p. 78)",
-          "translation": "Jumwa (Rest/Market day), Kuramuka (1st work day), Kurima-hiri (2nd work day), Kuisa (3rd work day)",
-          "pronunciation": "jum-wa, ku-ra-mu-ka, ku-ri-ma-hi-ri, ku-i-sa",
-          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 78 under Moon",
+          "english": "The 30-Day Giriama Month (3 Makumi), 4-Day Market/Farming Week & Seasons (Taylor 1891 pp. 56, 103, 134)",
+          "translation": "3 Decades (Makumi): kumi ra kwandza, kumi ra kahi, kumi ra kuzimu (new moon hailed with 'Ko——ngo!') | 4-Day Week: (1) Jumwa, (2) Kuramuka, (3) Kurima-hiri, (4) Kuisa | 6-Day Future Sequence (p. 103): rero, machero, muhondo, gorya, mweriyao, mweriyao wa tuto | Seasons (p. 134): Mwaka (March/April Great Rains), Mwaka Musha (Ingathering), Mutsuwo (July/August Lesser Rains), Vuri (October Latter Rains, 1st month Kutsano)",
+          "pronunciation": "jum-wa, ku-ra-mu-ka, ku-ri-ma-hi-ri, ku-i-sa / mwa-ka, mu-tsu-wo, vu-ri",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 56 under Moon, p. 103 under Time & p. 134 under Year",
           "audioFile": null
         },
         {
-          "english": "The 12 Traditional Wanika (Mijikenda) Agricultural Months (Krapf 1882 & 1887)",
-          "translation": "Muvuaka, Mutsano, Mupahu, Mulatso, Muvuo, Muzuka, Mufungate, Munane, Mukenda, Mukumi, Mulongo, Muaki",
-          "pronunciation": "mu-vua-ka, mu-tsa-no, mu-pa-hu, mu-la-tso",
-          "context": "Rev. Dr. L. Krapf (1882, p. 214 under masika) & Krapf & Rebmann (1887) 'A Nika-English Dictionary'",
+          "english": "The 12 Traditional Wanika (Mijikenda) Agricultural Months Across Masika, Furi & Kaskazi (Krapf 1882, p. 205 under masíka)",
+          "translation": "Masika & Furi (April–Nov, 8 farming months): (1) Muezi wa muanzo wa muaka (April — sowing mahindi), (2) Muezi wa viri (May), (3) Muezi wa tahu (June — maize ripens), (4) Muezi wa nne (July — first harvest; furi begins), (5) Muezi wa tzano (Aug — second sowing of maize), (6) Muezi wa handáhu (Sept), (7) Muezi wa fungáhu (Oct), (8) Muezi wa nane (Nov — second harvest) • Madjira ya kaskázi (Dec–March, 4 festival/dry months): (9) Muézi wa matzúla (Dec — tapping coconut palms), (10) Kurri bómu / kurri wa muanzo (Jan — great festival, no field work), (11) Kurri ya magáro (Feb — youth age-grade festival), (12) Muezi wa bózo / Muisho wa kaskazi (March — playing the záyo fiddle before clearing plantations)",
+          "pronunciation": "mweh-zee wah mwah-n-zoh wah mwah-kah ... koo-rree boh-moo ... mweh-zee wah boh-zoh",
+          "context": "Rev. Dr. L. Krapf (1882) 'A Dictionary of the Suahili Language', p. 205 under masíka & Krapf & Rebmann (1887)",
           "audioFile": null
         },
         {
-          "english": "Classical Giriama Morning & Daytime Salutations (Taylor 1891 p. 102)",
-          "translation": "Udzalamuka? — Nidzalamuka! (Morning) | Udzatsinda? — Nidzatsinda! (Afternoon)",
-          "pronunciation": "u-dza-la-mu-ka / u-dza-tsin-da",
-          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 102 under Salutation",
+          "english": "Classical Giriama Adult & Aged Salutations (Taylor 1891 pp. 83–84)",
+          "translation": "Adult (any time): Voro! — Voro! Muzima? — M'zima. — Ndo vidzo! — Simanya na-we. — A! na-mi ni m'zīma | Aged Morning: Lam'kani! — Hmwishamwe. Mudzalamuka? — Hudzalamuka. — Na hulamuke! | Aged Midday: Tsanani! — Hmwishamwe! Mudzadherwa? — Hudzadherwa. — Na hudherwe! | Aged Evening: Dziloni! — Hmwishamwe! Kwatswa? — Kudzatswa! | Parting: Kala uworo! — Haya, enda matsiya!",
+          "pronunciation": "vo-ro / lam-ka-ni / hmwi-sha-mwe / tsa-na-ni / dzi-lo-ni",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', pp. 83–84 under Salutation",
           "audioFile": null
         },
         {
-          "english": "Giriama Proverb #603: One finger cannot crush a louse",
-          "translation": "Chala chimwenga k'achibanda ts'aha",
-          "pronunciation": "cha-la chi-mwen-ga k'a-chi-ban-da ts'a-ha",
-          "context": "Rev. W. E. Taylor (1891) 'African Aphorisms; or, Saws from Swahili-Land', p. 141",
+          "english": "The 3 Geographical Divisions & 70 Districts (Malalo) of Giryama (Taylor 1891 pp. v–viii)",
+          "translation": "1. Weruni (15 malalo: Papea, Mizaheni, Kadzitsoni, Manja, Kibwabwani, Ts'angalaweni ['muvirya' Gate to Kaya-Giryama], Kinagoni, Gotani, Kitswa-cha-Ndzovu, Bĭrini, Makululu, M'tsengo, Kirima cha Kitsomeni, Luvoli, Mwa-Ngongo & C.M.S. Kam'likeni) | 2. Central Giryama (31 malalo: Makonje-mare, Dungicha, Kaziya-m'oyo, Sosoni, Mitangoni, M'che K'endzi, Mihandeni, Mgamboni, M'uyuni, Mereni, Migujini, Bamba, Bi-Rya, Mutomo wa Bi-Rya, Silaloni, Mweza-m'oyo, Mitangani, Mutomo wa Mitangani, Maziya-Chenda ['Nine Pools'], Vigongeni, Mwaina, Peta-nguwo, Mweza, Nyari, Kakuluni, Ziya ra Mawe, Kita, Wacho, Malomani, Muhoni kwa Kadzina, Muhoni kwa Nyungu) | 3. Northern Giryama & Mt. Mangea (24 malalo: Kaziya-M'oyo, M'kauma-K'endzi [Kauma origin 'Hudzire hu-kauma'], M'tsangamale, Magogoni, Nyari, Rare kwa Mwavuwo, Dindiri kwa Ngonyo, Sinikumbe, Ts'angalaweni, Mangea [ancestral seat of Giryama & Taita], Mangea-wa-Nyasi, Kwa Mwana wa Gulicha, Soso-Demu, Mihuhuni, Fuladoyo [Galla 'fuldoya' looking-glass], Migodomani, Kalandzeni, Mwavueni, Mwanguďo, Soso-Dima, Mikalazani, Warawo, Mizijini)",
+          "pronunciation": "ma-la-lo / we-ru-ni / ka-ya gi-rya-ma / ma-nge-a",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', Introduction pp. v–viii",
           "audioFile": null
         },
         {
-          "english": "Giriama Riddle #1 (Ndumo za Kigiryama): My house has no door. — Answer: An egg.",
-          "translation": "Nyumba yangu k'aina muryango. — Ni iji.",
-          "pronunciation": "nyum-ba yan-gu k'a-i-na mu-ryan-go — ni i-ji",
-          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 138, Riddle #1",
+          "english": "Giryama Phonology: Open vs. Close Minimal Pairs, Voiceless Nasals & N-Blending Explosives (Taylor 1891 pp. viii–xiv)",
+          "translation": "Minimal pairs (p. ix): tsama (be sweet) vs. ts*a*ma (migrate); laya (plant) vs. l*a*ya (forget); mwezi (cleansing) vs. mw*e*zi (moon); mweri (pure) vs. mw*e*ri (brass disc); fisi (hyena) vs. f*i*si (back of house); sīswi (not we) vs. s*í*swi (we); lukolo (filthy) vs. luk*o*lo (clan); ulongo (clay soil) vs. ul*o*ngo (lie); k*a*la (be) vs. kāla (stay/dwell) | Voiceless nasals (p. x): hmama, hnane, hvivi, hvoya, hmwinyi, hmwishamwe | Explosives (p. xii): p'ala vs. kapala, *t*'iya vs. ka*t*iya, ts'ongo vs. katsongo, t'ahu vs. hahu, ch'ache vs. vichache, k'olo vs. lukolo | Falsetto ideophones (p. xiv): Mwaruhe tsé! (snow-white), mutune do! (bright red), mwiru pi! (jet-black), yunyemere myá-myá-myá! (dead silent)",
+          "pronunciation": "tsa-ma / hma-ma / hna-ne / p'a-la / ts'o-ngo",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', Introduction pp. viii–xiv",
+          "audioFile": null
+        },
+        {
+          "english": "The 12 Giryama Noun Classes, 8 Derivative Verb Forms & Possessive of Alienation -ngwa (Taylor 1891 pp. xvii–xxv, 9–12, 65)",
+          "translation": "12 Noun Classes: I mu-/a- (mut'u/at'u, subj. ni,u,yu/hu,mu,ma, neg. si,k'u,k'a/k'ahu,k'amu,k'ama), II mu-/mi- (muhi/mihi, u/i), III N/N (nyumba, i/zi), IV ki-/vi- (kit'u/vit'u, ki/vi), V -/ma- (tsoka/matsoka, ri/ga), VI Augmentative ri-(ridzi-)/mi- (ritsoka/mitsoka, ri/i, ku-kuga p. 41), VII lu-/ny- (lufu/nyufu, lu/zi), VIII Diminutive ka-(kadzi-)/u-(udzi-) (katsoka/utsoka, ka/u), IX u-/ma- (ut'u/maut'u, u/ga), X ha- (hat'u, near place), XI ku- (kufwa/kut'u, infinitive/distant place), XII mu- (mumu, interior) | 8 Verbal Derivatives: (1) Causative (-ya/-nya/-sa/-za/-sha/-zha), (2) Resultant (-ika/-eka), (3) Applied (-ira/-era), (4) Reciprocal (-na), (5) Reflexive (-dzi-), (6) Subtractive/Reversive (-ula/-ola), (7) Reduplicated, (8) Intensive enclitic -t'o (ku-hendá-t'o) | Alienation suffix -ngwa (pp. 65, 71): tsoka-ngwa (pl. ma-tsoka-ngwa, someone else's axe), vit'ungwa (other people's property)",
+          "pronunciation": "mu-t'u / ri-tso-ka / ka-tso-ka / ku-hen-da-t'o / tso-ka-ngwa",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', pp. xvii–xxvii, 9–12, 41, 65, 71 & Table I–II",
+          "audioFile": null
+        },
+        {
+          "english": "The 10 Growth Stages of the Domestic Fowl (K'uku, Taylor 1891 p. 36) & Traditional Guilds (p. 133)",
+          "translation": "10 Stages of Fowl: (1) kakuku katsanga → (2) kabuta → (3) kadzonya → (4) kahepe → (5) k'ereng'endze → (6) k'wahe → (7) mitsandzo → (8) p'ora (young cockerel) / mufaranga (pullet) → (9) majogolo (cock) / muhehera (laying hen) → (10) p'ungu (old cock) / kolo ra k'uku (full-grown hen) | Crafts (p. 133): urisa (herding), utsongi (carpentry), usanye (smithing), ukot'i/ususi (chain/mat-making), ugit'i (cooking/brewing), uasi (building), uhambi (travelling), uindza (hunting), uhegi (trapping), uk'urima (farming), ujema (palm-wine tapping), utsimbi wa mihaso (herb-gathering), uumbi (pottery/tobacco), upizi wa ts'andzi (collecting dues), uganga (medicine), upigi wa mburuga (divination), uenye-ts'i (governing)",
+          "pronunciation": "ka-ku-ku ka-tsa-nga / p'o-ra / ma-jo-go-lo / u-e-nye-ts'i",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 36 under Fowl & p. 133 under Work",
+          "audioFile": null
+        },
+        {
+          "english": "Giryama Proverbs in Rev. W. E. Taylor's 'African Aphorisms' (1891, §§ 601–633, pp. 136–143)",
+          "translation": "#601 Ambiri mako, asikiri k'amako (Tellers there are, listeners there are none) • #602 Bandzu, bandzu rámala gogo (Chip, chip finished the block) • #602a Chuwo k'akina mumwenga (Counsel is not of one only) • #603 Fisi rikirya m'kongo, m'zima funga nyumba (When the hyena eats the sick man, O well man, shut up your house) • #606 Kilagane kilagane! Simba k'arya mwana-we (A promise is a promise! The lioness eats not her own cub) • #611 Maneno madzo gausa ndzovu m'nda-ni (Fair speeches turn elephants out of the garden-patch) • #620 Mulungu wahumba, ela hundariwa ni-Ts'i (God created us, but we shall be consumed by Earth) • #621 Mwaka ni hmama, Vuri ni ami-somo (The March Rains are my mother, the Latter Rains my cousin's mother) • #623 Mwenda-mbere k'aheka madzi vundzu (The first to arrive draws no muddy water) • #630 T'embe na t'embe ni mukahe (Grain and grain makes a cake)",
+          "pronunciation": "ban-dzu ban-dzu ra-ma-la go-go / chu-wo k'a-ki-na mu-mwen-ga",
+          "context": "Rev. W. E. Taylor (1891) 'African Aphorisms; or, Saws from Swahili-Land', Giryama Proverbs §§ 601–633, pp. 136–143",
+          "audioFile": null
+        },
+        {
+          "english": "The 22 Classical Giryama Riddles (Ndumo za Kigiryama, Taylor 1891 pp. 76–77, 138–140, #1–#22)",
+          "translation": "Challenge: Chondoni! — Response: Dekeha! (Forfeit if unguessed: P'a mudzi! — Haya enda Kisiwani!) • #1 Baba wákot'a kizimba dzulu ya m'uyu. — Ni p'ula (Father nailed a beehive on the baobab. — The nose) • #2 Bamba k'a lwayo. — Ni iwe (Mr. Flat has no footprint. — A rock) • #3 Choga m'zinga ts'ulu. — Ni sikiro (Fungus round the anthill. — The ear) • #4 Enda na kuno na-mi nenda na kuno, hukatunganane mugolokolo-ni. — Ni fiho za kipesa (Wall sticks) • #5 Fumo ra Mwa-Tela ridunga kosi-kosi. — Ni muts'i (Pestle) • #6 Fw-alume ahahu, akiuka mumwenga, k'afurya wari. — Ni mafigo (Three hearth-stones) • #7 Hawe nereka. — Ni uriri (Bedstead) • #8 K'akilumika. — Ni kikokora (Elbow) • #9 K'akioneka. — Ni k'ogo (Back of the head) • #10 K'akiuka-ts'i. — Ni kisima (Well) • #13 K'uku wa baba ugwiza miya-ni. — Ni ndimu (Lime-fruit) • #15 Kurima m'nda m'bomu ela ukadza vuna loya. — Ni nyere (Shaved hair) • #18 Magoma mairi lwanda-ni. — Ni mahombo (Breasts) • #20 Mbala na mwana-we madzakugonyeza k'unde-zo. — Ni sago na lwalwa (Upper and nether millstone) • #21 Mudhao mure k'aufunga k'uni. — Ni ngira (Path) • #22 Mwa-Mbita, kilolongo! — Ni viguzo zha kipesa (Wall posts)",
+          "pronunciation": "cho-ndo-ni / de-ke-ha / ba-ba wa-ko-t'a ki-zi-mba — ni p'u-la",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', pp. 76–77 under Riddle & Appendix pp. 138–140 (#1–#22)",
+          "audioFile": null
+        },
+        {
+          "english": "The 5 Classical Giryama Folktales & Origin Myths (Ngano za Kigiryama, Taylor 1891 Appendix pp. 129–138)",
+          "translation": "I. Katsungula na Simba (The Little Hare and the Lion — tricking Tortoise [Kobe] & Snouted Rat [Fugu] at the beehives [myato], and crying 'Alume-e-e! ts'i ii idzamera meno!'; closing charm: 'Ngano yangu igomera haha: Mwehu nyumba-ni muna ts'azi ya nyaa', pp. 129–132) • II. Fisi na Simba na Katsungula (The Hyena, the Lion, and the Little Hare — Hare refutes the Lion's claim that his bull bore a calf by running with calabashes saying his father gave birth: 'Mulume ni kuzhala-dze?', pp. 132–134) • III. K'uku na Katsungula (The Fowl and Harey — Fowl hides his head under his wing pretending his herd-boys [arisa] took it to pasture; Harey has his own head cut off and perishes, pp. 134–136) • IV.1 Kuononga kwa Muche (The Havoc Wrought by the Woman — curious wife spies behind a baobab [kolo ra m'uyu] on the headless animals cultivating the fields, who drop their hoes and turn into baboons [nyani] and monkeys [k'ima], pp. 136–137) • IV.2 Kuandika kwa Kufwa (The Origin of Death — Mulungu sends Lumbwi the Chameleon with 'Muzhalane ela matsafwa' [Multiply and die not], but Mugak'a the Lizard outruns him with 'Muzhalane ela mufwe!', pp. 137–138)",
+          "pronunciation": "nga-no za ki-gi-rya-ma / ka-tsu-ngu-la / lu-mbwi na mu-ga-k'a",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', Appendix pp. 129–138",
           "audioFile": null
         },
         {
           "english": "Sacred Friction Drum of the Kaya Elders & Ancestral Memorial Post",
-          "translation": "mwanza (sacred Kaya drum) & kigango (pl. vigango, carved memorial post)",
-          "pronunciation": "mwan-za / ki-gan-go",
-          "context": "Krapf & Rebmann (1887) 'A Nika-English Dictionary' & W. E. Taylor (1891)",
+          "translation": "Mwandza M'kulu (sacred Kaya friction drum of the Gawe degree, p. 38) & kigango (pl. vigango, carved memorial post)",
+          "pronunciation": "mwan-dza m'ku-lu / ki-gan-go",
+          "context": "Rev. W. E. Taylor (1891, p. 38) & Krapf & Rebmann (1887) 'A Nika-English Dictionary'",
           "audioFile": null
+        },
+        {
+          "english": "Nyika (Rabai, Ribe & Digo) Proverbs in Rev. W. E. Taylor's 'African Aphorisms' (1891, §§ 634–664, pp. 144–159)",
+          "translation": "#634a Angwe—ndugu-ye ni ulongo ('They say' is own brother to a lie; kikulu ni kuona mwenye na matso) • #635 Cha muchia k'achenda / Digo: Ra munyonge k'arenda (The poor man's cultivation prospers not) • #637a Madzi gakimwagika, k'agadzoreka (When water is spilt, it cannot be gathered up) • #639 M'oro mudzo k'aulavya dzuwa (A good palaver does not let the sun rise high) • #640a Muhi ukigwa uegemera muya-we (When a tree falls it leans on its neighbour) • #644 Mwana-ts'i k'avundza-ts'i (The child of the land destroys not the land) • #647b Njira mbiri k'azituwika, záremeza fisi (Two roads cannot be followed at once, they were too much for the hyena) • #656 U nga nundu (You are like the bat — neither bird nor beast) • #660 Usena ukira udugu (Friendship surpasses relationship)",
+          "pronunciation": "cha mu-chi-a k'a-chen-da / nji-ra mbi-ri k'a-zi-tu-wi-ka / u-se-na u-ki-ra u-du-gu",
+          "context": "Rev. W. E. Taylor (1891) 'African Aphorisms; or, Saws from Swahili-Land', Nyika Proverbs §§ 634–664, pp. 144–159 (with Rebmann 1887 citations)",
+          "audioFile": null
+        },
+        {
+          "english": "History of Kaya Mutzi Muíru on Mount Reale, Vokéra, Mutzi Múvia (Rabai M'pia) & the Two Mijikenda Brother-Tribe Confederacies (Krapf 1882, pp. 268–269)",
+          "translation": "Ancient Rabai capitals on Mount Reale: Mutzi Muíru (Mutzi mubomu wa Reale) & Mutzi Mudide (later called Mitzi ya Ntzoáni, led by fierce elders Gníro & Nchira); Malando & Kamfuda clans dispersed to Rombo in Chagga, Wadigo, and the Pokomo river, while one division sought refuge with their brother-tribe Chogni (Chogni cha Muadarúko), founded Kaya Vokéra for 9 generations, and later founded Mutzi Múvia (Rabbai M'pia) • Two Brother-Tribe Confederacies: (I) Muravai, Muchogni, Mukiriama, Mtahe; (II) Duruma, Rive, Kambe, Káuma • War-Council at Tziwe ra kizungu & Kizúmo / Salala Chant against Rabai Maboma: 'hukutáne, huenende, hukafunse mutzi hio wa Aravai' → 'Muravai! kuna ndugu! (Chorus: Ho-o!) Ndugúyo ni uha! Uhao ni nduguyo, Kuna ndúgu Muana 'Damu!' • Kóke ya motto / Tange (pp. 166–167, 359, 425): burning new forest clearings with Wawe song ('Wawe koke mana malíme') andRangáite dance (p. 314)",
+          "pronunciation": "moo-tzee mwee-roo • voh-keh-rah • moo-tzee moo-vee-ah",
+          "context": "Rev. Dr. L. Krapf (1882) 'A Dictionary of the Suahili Language', pp. 166–167, 268–269 (under mutzi muíru), 314, 359, 425",
+          "audioFile": null
+        },
+        {
+          "english": "Dr. Krapf's (1850, p. vi) Wanika Ethnography, Mulungu Cosmology & Origin Traditions (Jagga, Ambakómo, Mángea)",
+          "translation": "Wanika Population & Polity (p. vi): ~50,000–60,000 souls living in woodland villages at 1,200–2,000 ft elevation, 15–20 miles inland between 3° and 5° S, governed by a republican council of elders (azee / kambi), believing in a Supreme Being called Mulungu (\"heaven\") and offering sacrifices at ancestral graves (koma) • Four Historical Migration Traditions (p. vi): (1) Rabbai (Rabai) claim their ancestors emigrated from Jagga (Kilimanjaro), where a related tribe still bears their name; (2) Wateita of Kadiáro, Ndara, and Bura call the Wanika \"Ambakómo\" because part of the Wanika formerly lived in the country of Pokómo (Tana River) before fleeing the Galla; (3) Wasegéju near Tanga likewise claim descent from Wapokómo expelled by the Galla; (4) Kiriama (Giriama) assert their forefathers lived at Mount Mángea near the Pokomóni",
+          "pronunciation": "wa-ni-ka / mu-lun-gu / ra-bba-i / a-mba-ko-mo / wa-se-ge-ju / ki-ri-a-ma / ma-nge-a",
+          "context": "Rev. Dr. J. L. Krapf (1850) 'Vocabulary of Six East-African Languages' (Tübingen), Preface p. vi",
+          "audioFile": "",
+          "culturalNote": "Documents the earliest written record (October 14, 1850) of the Mijikenda/Pokomo/Segeju Tana-River and Mangea origin traditions alongside the Rabai-Chagga tradition."
+        }
+      ]
+    },
+    {
+      "id": "krapf-rebmann-1887-kinika",
+      "name": "Kinika / Mijikenda Historical Lexicon & Ethnography (Krapf & Rebmann 1887)",
+      "description": "Kinship, teknonymy (Abe-/Ame-), kaya architecture (mumfiria, m'oro, rungu), the 4 kihendo age-grade orders, 13 solar time divisions (dzua), 7 coconut growth stages, 9 palm-wine calabash sizes (kibaria), crop-specific harvesting verbs, judicial ordeals (kiravo), and ritual traditions from Rev. Dr. L. Krapf & Rev. J. Rebmann's A Nika-English Dictionary (1887).",
+      "entries": [
+        {
+          "english": "Father of — / Mother of — (teknonymic titles taken from the firstborn child, e.g., Abe-Gunja, Abe-Chindua Muambawa, Abe-Mkusi Dzama, Amegnania; Krapf & Rebmann 1887, pp. 1, 6)",
+          "translation": "Father of — / Mother of — (teknonymic titles taken from the firstborn child, e.g., Abe-Gunja, Abe-Chindua Muambawa, Abe-Mkusi Dzama, Amegnania; Krapf & Rebmann 1887, pp. 1, 6)",
+          "pronunciation": "abe-",
+          "context": "Upon the birth of a firstborn child (muahuladzansu / musunduladzansu / mimba mbere), parents drop their youth names and are addressed as Abe-[Child] and Ame-[Child], while Baba and Mayo are used for direct address.",
+          "audioFile": "",
+          "culturalNote": "Upon the birth of a firstborn child (muahuladzansu / musunduladzansu / mimba mbere), parents drop their youth names and are addressed as Abe-[Child] and Ame-[Child], while Baba and Mayo are used for direct address."
+        },
+        {
+          "english": "paternal aunt (father's sister; Krapf & Rebmann 1887, pp. 57, 333)",
+          "translation": "paternal aunt (father's sister; Krapf & Rebmann 1887, pp. 57, 333)",
+          "pronunciation": "dzangasimi",
+          "context": "Contrasted with mayo mufiere (mother's older sister), mayo muhoho / chane (mother's younger sister), and avu (maternal uncle).",
+          "audioFile": "",
+          "culturalNote": "Contrasted with mayo mufiere (mother's older sister), mayo muhoho / chane (mother's younger sister), and avu (maternal uncle)."
+        },
+        {
+          "english": "maternal uncle (mother's brother; Krapf & Rebmann 1887, p. 9)",
+          "translation": "maternal uncle (mother's brother; Krapf & Rebmann 1887, p. 9)",
+          "pronunciation": "avu",
+          "context": "In traditional Mijikenda matrilineal (fugo / lukolo) kinship, the maternal uncle (avu) exercised authority over his sister's children (muhua, pl. ahua).",
+          "audioFile": "",
+          "culturalNote": "In traditional Mijikenda matrilineal (fugo / lukolo) kinship, the maternal uncle (avu) exercised authority over his sister's children (muhua, pl. ahua)."
+        },
+        {
+          "english": "nephew or niece (a man's sister's son or daughter; Krapf & Rebmann 1887, p. 276)",
+          "translation": "nephew or niece (a man's sister's son or daughter; Krapf & Rebmann 1887, p. 276)",
+          "pronunciation": "muhua",
+          "context": "Hiyu ni muhua wangu, muana wa mumbuyangu (This is my nephew/niece, my sister's child).",
+          "audioFile": "",
+          "culturalNote": "Hiyu ni muhua wangu, muana wa mumbuyangu (This is my nephew/niece, my sister's child)."
+        },
+        {
+          "english": "cross-cousin (child of one's maternal uncle avu or paternal aunt dzangasimi; Krapf & Rebmann 1887, p. 279)",
+          "translation": "cross-cousin (child of one's maternal uncle avu or paternal aunt dzangasimi; Krapf & Rebmann 1887, p. 279)",
+          "pronunciation": "mukoi",
+          "context": "Distinguished from parallel cousins: muanababa (paternal parallel cousin) and muanachane / somo (maternal parallel cousin, pp. 262, 301, 351).",
+          "audioFile": "",
+          "culturalNote": "Distinguished from parallel cousins: muanababa (paternal parallel cousin) and muanachane / somo (maternal parallel cousin, pp. 262, 301, 351)."
+        },
+        {
+          "english": "parent-in-law or son-in-law (husband's parents or daughter's husband; Krapf & Rebmann 1887, p. 268)",
+          "translation": "parent-in-law or son-in-law (husband's parents or daughter's husband; Krapf & Rebmann 1887, p. 268)",
+          "pronunciation": "mudzedza",
+          "context": "Governed by strict avoidance and respect (dai); contrasted with abeviala/ameviala (wife's parents), wivi/wifi (husband's sister), and mulamu/mbumaniumba (sibling-in-law, pp. 1, 249, 282, 388).",
+          "audioFile": "",
+          "culturalNote": "Governed by strict avoidance and respect (dai); contrasted with abeviala/ameviala (wife's parents), wivi/wifi (husband's sister), and mulamu/mbumaniumba (sibling-in-law, pp. 1, 249, 282, 388)."
+        },
+        {
+          "english": "grandmother (wawe wangu, waweyo, waweye; Krapf & Rebmann 1887, pp. 383, 387)",
+          "translation": "grandmother (wawe wangu, waweyo, waweye; Krapf & Rebmann 1887, pp. 383, 387)",
+          "pronunciation": "wawe",
+          "context": "At marriage, it is the bride's grandmother who escorts her to her husband's house: Muche akihalua, wawe ndiye a-mu-virikaye kua mulume.",
+          "audioFile": "",
+          "culturalNote": "At marriage, it is the bride's grandmother who escorts her to her husband's house: Muche akihalua, wawe ndiye a-mu-virikaye kua mulume."
+        },
+        {
+          "english": "matrilineal lineage or clan descended from one ancestress (fugo rao ni menga; Krapf & Rebmann 1887, pp. 88, 223, 246)",
+          "translation": "matrilineal lineage or clan descended from one ancestress (fugo rao ni menga; Krapf & Rebmann 1887, pp. 88, 223, 246)",
+          "pronunciation": "fugo",
+          "context": "Lukolo hilu lukaumbana to, lukabadana (This kindred is closely united, p. 370).",
+          "audioFile": "",
+          "culturalNote": "Lukolo hilu lukaumbana to, lukabadana (This kindred is closely united, p. 370)."
+        },
+        {
+          "english": "blood-compensation of two free-born persons (a youth mudana and a maiden musichana) for homicide (Krapf & Rebmann 1887, pp. 192, 339)",
+          "translation": "blood-compensation of two free-born persons (a youth mudana and a maiden musichana) for homicide (Krapf & Rebmann 1887, pp. 192, 339)",
+          "pronunciation": "kore",
+          "context": "For intentional homicide, two free-born relatives (anafiale) were given, the second serving as the kifurifuri ('shadow') of the slain; for accidental homicide (zani ya Mulungu), only one kore was paid.",
+          "audioFile": "",
+          "culturalNote": "For intentional homicide, two free-born relatives (anafiale) were given, the second serving as the kifurifuri ('shadow') of the slain; for accidental homicide (zani ya Mulungu), only one kore was paid."
+        },
+        {
+          "english": "fortified gateway of a kaya (Krapf & Rebmann 1887, pp. 149, 285, 362)",
+          "translation": "fortified gateway of a kaya (Krapf & Rebmann 1887, pp. 149, 285, 362)",
+          "pronunciation": "mumfiria",
+          "context": "Every kaya has three core institutions: the mumfiria (fortified gateway with wooden doorframes ngazi), the m'oro (central judicial assembly place), and the rungu (sacred council house); contrasted with tumbulio / tundumudzi (secret escape postern).",
+          "audioFile": "",
+          "culturalNote": "Every kaya has three core institutions: the mumfiria (fortified gateway with wooden doorframes ngazi), the m'oro (central judicial assembly place), and the rungu (sacred council house); contrasted with tumbulio / tundumudzi (secret escape postern)."
+        },
+        {
+          "english": "central judicial assembly place in a kaya and council oration (Krapf & Rebmann 1887, pp. 149, 259)",
+          "translation": "central judicial assembly place in a kaya and council oration (Krapf & Rebmann 1887, pp. 149, 259)",
+          "pronunciation": "m'oro",
+          "context": "Taboo to women and children except on the day of sayo under penalty of a goat and two fowls (mbuzi na makolo mairi). Proverb: M'oro mudzo ka-u-lavia dzua.",
+          "audioFile": "",
+          "culturalNote": "Taboo to women and children except on the day of sayo under penalty of a goat and two fowls (mbuzi na makolo mairi). Proverb: M'oro mudzo ka-u-lavia dzua."
+        },
+        {
+          "english": "sacred council house in the kaya; heavy wooden club (Krapf & Rebmann 1887, pp. 22, 149, 175, 273, 336)",
+          "translation": "sacred council house in the kaya; heavy wooden club (Krapf & Rebmann 1887, pp. 22, 149, 175, 273, 336)",
+          "pronunciation": "rungu",
+          "context": "Houses the sacred muanza friction-drum, two wooden trays (chano), four heavy clubs (mifungo), and the war charm-stick (kimfedo cha Kaya).",
+          "audioFile": "",
+          "culturalNote": "Houses the sacred muanza friction-drum, two wooden trays (chano), four heavy clubs (mifungo), and the war charm-stick (kimfedo cha Kaya)."
+        },
+        {
+          "english": "initiation order, age-grade rank, or public feast of promotion (Krapf & Rebmann 1887, pp. 30, 40, 105, 115, 167, 273)",
+          "translation": "initiation order, age-grade rank, or public feast of promotion (Krapf & Rebmann 1887, pp. 30, 40, 105, 115, 167, 273)",
+          "pronunciation": "kihendo",
+          "context": "The four great orders: (1) Kihendo cha Muanza, (2) Kihendo cha Kambi (entered after ugnaro for men and gundi for women, with 7 days of dark riani clay mfungahe wa ndani and 7 days of white mau chalk mfungahe wa ndze), (3) Kihendo cha Mfaya, and (4) Kihendo cha Govu (secluded during the Niambura festival).",
+          "audioFile": "",
+          "culturalNote": "The four great orders: (1) Kihendo cha Muanza, (2) Kihendo cha Kambi (entered after ugnaro for men and gundi for women, with 7 days of dark riani clay mfungahe wa ndani and 7 days of white mau chalk mfungahe wa ndze), (3) Kihendo cha Mfaya, and (4) Kihendo cha Govu (secluded during the Niambura festival)."
+        },
+        {
+          "english": "to receive the crowning clay headdress and permanent right-arm lumfo ring upon promotion from mumondo to govu (Krapf & Rebmann 1887, pp. 282, 335, 360)",
+          "translation": "to receive the crowning clay headdress and permanent right-arm lumfo ring upon promotion from mumondo to govu (Krapf & Rebmann 1887, pp. 282, 335, 360)",
+          "pronunciation": "thura",
+          "context": "After receiving the lumfo arm-ring (becoming a mukusi in Kidigo; Kichogni: ku rongera), a man ceases paying tribute to the govu; figuratively viha vidzithura ('the war is completely ended, people have eaten the dzoga peace-mushroom').",
+          "audioFile": "",
+          "culturalNote": "After receiving the lumfo arm-ring (becoming a mukusi in Kidigo; Kichogni: ku rongera), a man ceases paying tribute to the govu; figuratively viha vidzithura ('the war is completely ended, people have eaten the dzoga peace-mushroom')."
+        },
+        {
+          "english": "paramount chief or elder of state (Krapf & Rebmann 1887, pp. 68, 74, 341)",
+          "translation": "paramount chief or elder of state (Krapf & Rebmann 1887, pp. 68, 74, 341)",
+          "pronunciation": "shaha",
+          "context": "Introduced into Rabai by Muansorobo and invested with three insignia of office (ensi): kihi cha ensi (chair of state), pehe ya ensi (ring of state), and ndada ya ensi (staff of state).",
+          "audioFile": "",
+          "culturalNote": "Introduced into Rabai by Muansorobo and invested with three insignia of office (ensi): kihi cha ensi (chair of state), pehe ya ensi (ring of state), and ndada ya ensi (staff of state)."
+        },
+        {
+          "english": "traditional call to announce one's arrival or ask elders to clear the way (Krapf & Rebmann 1887, p. 347)",
+          "translation": "traditional call to announce one's arrival or ask elders to clear the way (Krapf & Rebmann 1887, p. 347)",
+          "pronunciation": "simila!",
+          "context": "Similani kambi! — Resp., Hai! Similani mudzi! — Resp., Hai! Similani bora e! — Resp., Hai! Similani bora soroko! — Resp., Hai!",
+          "audioFile": "",
+          "culturalNote": "Similani kambi! — Resp., Hai! Similani mudzi! — Resp., Hai! Similani bora e! — Resp., Hai! Similani bora soroko! — Resp., Hai!"
+        },
+        {
+          "english": "welcome! (traditional Mijikenda greeting of hospitality; Krapf & Rebmann 1887, p. 390)",
+          "translation": "welcome! (traditional Mijikenda greeting of hospitality; Krapf & Rebmann 1887, p. 390)",
+          "pronunciation": "yoyo!",
+          "context": "Yoyo, mugeni! Yoyo mulumangu! udzihenda to kudza na afia. Yoyo baba! Yoyo nduguyangu!",
+          "audioFile": "",
+          "culturalNote": "Yoyo, mugeni! Yoyo mulumangu! udzihenda to kudza na afia. Yoyo baba! Yoyo nduguyangu!"
+        },
+        {
+          "english": "the sun and the 13 traditional Mijikenda daily time divisions (Krapf & Rebmann 1887, pp. 64, 66)",
+          "translation": "the sun and the 13 traditional Mijikenda daily time divisions (Krapf & Rebmann 1887, pp. 64, 66)",
+          "pronunciation": "dzua",
+          "context": "1. Dzua ridziupuka/ridziombola (sunrise); 2. ridzidana nadzi; 3–5. murauko wa gnombe mudzanga, wegnie, mubomu; 6. rinaradira vidzoa; 7. ridzifikavidzoani / ridididi na vidzoa (noon); 8. ridziogoka; 9–11. lua mudzana lukulu, luegnie (Kid. dzua ra dzonge), lua ku vola; 12. ridzisama rinalewalewa; 13. ridzibodoka/ridzedzua (sunset).",
+          "audioFile": "",
+          "culturalNote": "1. Dzua ridziupuka/ridziombola (sunrise); 2. ridzidana nadzi; 3–5. murauko wa gnombe mudzanga, wegnie, mubomu; 6. rinaradira vidzoa; 7. ridzifikavidzoani / ridididi na vidzoa (noon); 8. ridziogoka; 9–11. lua mudzana lukulu, luegnie (Kid. dzua ra dzonge), lua ku vola; 12. ridzisama rinalewalewa; 13. ridzibodoka/ridzedzua (sunset)."
+        },
+        {
+          "english": "finger or toe (with 5 traditional Mijikenda finger names; Krapf & Rebmann 1887, pp. 20–21, 94–95)",
+          "translation": "finger or toe (with 5 traditional Mijikenda finger names; Krapf & Rebmann 1887, pp. 20–21, 94–95)",
+          "pronunciation": "chala",
+          "context": "1. Chala cha dzalagumba (thumb); 2. chala cha muoloho (forefinger); 3. chala kibomu (middle finger); 4. chala kisicho dzina ('nameless' ring finger); 5. chala cha kanda (little finger). Idiom: ku funsa chala ('to forgive once or twice before punishing on the third offence').",
+          "audioFile": "",
+          "culturalNote": "1. Chala cha dzalagumba (thumb); 2. chala cha muoloho (forefinger); 3. chala kibomu (middle finger); 4. chala kisicho dzina ('nameless' ring finger); 5. chala cha kanda (little finger). Idiom: ku funsa chala ('to forgive once or twice before punishing on the third offence')."
+        },
+        {
+          "english": "palm-wine tapping and measuring calabash graded into 9 traditional sizes (Krapf & Rebmann 1887, pp. 35, 151–152)",
+          "translation": "palm-wine tapping and measuring calabash graded into 9 traditional sizes (Krapf & Rebmann 1887, pp. 35, 151–152)",
+          "pronunciation": "kibaria",
+          "context": "1. Cha ndzofu, 2. kivudzu cha ku noerera (Mueneza), 3. kibomu cha ku noerera cha kiasi, 4. ngabe, 5. muulaga ndzala, 6. viiri musala, 7. viiri kasima cha mbiri, 8. viiri kasima cha via homa, 9. viiri cha via homa ra gnombe; used in the 8-stage tapping process (ku dangadza mianso -> ku noerera/dzumburira libation -> ku gema).",
+          "audioFile": "",
+          "culturalNote": "1. Cha ndzofu, 2. kivudzu cha ku noerera (Mueneza), 3. kibomu cha ku noerera cha kiasi, 4. ngabe, 5. muulaga ndzala, 6. viiri musala, 7. viiri kasima cha mbiri, 8. viiri kasima cha via homa, 9. viiri cha via homa ra gnombe; used in the 8-stage tapping process (ku dangadza mianso -> ku noerera/dzumburira libation -> ku gema)."
+        },
+        {
+          "english": "first button-stage of an unripe coconut in the 7-stage Mijikenda coconut taxonomy (Krapf & Rebmann 1887, pp. 313, 322, 325, 337)",
+          "translation": "first button-stage of an unripe coconut in the 7-stage Mijikenda coconut taxonomy (Krapf & Rebmann 1887, pp. 313, 322, 325, 337)",
+          "pronunciation": "pungapunga",
+          "context": "1. Pungapunga, 2. Kidagna, 3. Kidale, 4. Dafu, 5. Koloma (Nognona), 6. Nazi (Nazi pfu), 7. Muvala. Cutting the palm-cabbage heart (ku piga sala ra munazi) is taboo (dambi) at Rabai.",
+          "audioFile": "",
+          "culturalNote": "1. Pungapunga, 2. Kidagna, 3. Kidale, 4. Dafu, 5. Koloma (Nognona), 6. Nazi (Nazi pfu), 7. Muvala. Cutting the palm-cabbage heart (ku piga sala ra munazi) is taboo (dambi) at Rabai."
+        },
+        {
+          "english": "to reap rice (muvunga), red millet (maere), or eleusine (wimbi) by cutting the ears (Krapf & Rebmann 1887, p. 93)",
+          "translation": "to reap rice (muvunga), red millet (maere), or eleusine (wimbi) by cutting the ears (Krapf & Rebmann 1887, p. 93)",
+          "pronunciation": "funa",
+          "context": "Contrasted with ku tema/fiola (sorghum muhama), ku funsa/koniola (maize madzere), ku hunda (pigeon-peas mbalazi, beans kunde, gram podzo), ku dzimba (sweet potatoes miyokue), ku fuka (groundnuts ndzugu), and ku gnola/durura (cassava mugasija).",
+          "audioFile": "",
+          "culturalNote": "Contrasted with ku tema/fiola (sorghum muhama), ku funsa/koniola (maize madzere), ku hunda (pigeon-peas mbalazi, beans kunde, gram podzo), ku dzimba (sweet potatoes miyokue), ku fuka (groundnuts ndzugu), and ku gnola/durura (cassava mugasija)."
+        },
+        {
+          "english": "judicial ordeal or conditional self-curse administered by a muganga (Krapf & Rebmann 1887, pp. 157, 169, 178, 316)",
+          "translation": "judicial ordeal or conditional self-curse administered by a muganga (Krapf & Rebmann 1887, pp. 157, 169, 178, 316)",
+          "pronunciation": "kiravo",
+          "context": "1. Kiravo cha ndogoe, 2. cha bahasi, 3. cha msegeneko, 4. cha fisi (musafula), 5. cha muansa wa ache, 6. ku piga kiravo (breaking a pot niungu/dzaya), plus the red-hot loaf ordeal (kikahe) and kidudu ordeal.",
+          "audioFile": "",
+          "culturalNote": "1. Kiravo cha ndogoe, 2. cha bahasi, 3. cha msegeneko, 4. cha fisi (musafula), 5. cha muansa wa ache, 6. ku piga kiravo (breaking a pot niungu/dzaya), plus the red-hot loaf ordeal (kikahe) and kidudu ordeal."
+        },
+        {
+          "english": "the 5 nocturnal village taboos enjoined when a muganga wards a town with mafingo charms (Krapf & Rebmann 1887, p. 292)",
+          "translation": "the 5 nocturnal village taboos enjoined when a muganga wards a town with mafingo charms (Krapf & Rebmann 1887, p. 292)",
+          "pronunciation": "musiso",
+          "context": "At night: (1) vasiupuke moho (no fire taken out), (2) vasiupuke madzi (no water taken out), (3) vasifunsue lukuni (no firewood broken), (4) vasidzangue lukuni (no firewood split), and (5) vasivondue (no pounding in a mortar).",
+          "audioFile": "",
+          "culturalNote": "At night: (1) vasiupuke moho (no fire taken out), (2) vasiupuke madzi (no water taken out), (3) vasifunsue lukuni (no firewood broken), (4) vasidzangue lukuni (no firewood split), and (5) vasivondue (no pounding in a mortar)."
+        },
+        {
+          "english": "mythical monster believed to swallow the moon during a lunar eclipse (Krapf & Rebmann 1887, pp. 189, 226)",
+          "translation": "mythical monster believed to swallow the moon during a lunar eclipse (Krapf & Rebmann 1887, pp. 189, 226)",
+          "pronunciation": "koloa",
+          "context": "During an eclipse, people perform the lumue dance and chant: 'Koloa richa muezi, richa!' ('O Koloa, release the moon, release!').",
+          "audioFile": "",
+          "culturalNote": "During an eclipse, people perform the lumue dance and chant: 'Koloa richa muezi, richa!' ('O Koloa, release the moon, release!')."
+        },
+        {
+          "english": "possessing spirit classified into Mudzomba, Munika/Mulungu, and Mukuafi spirits (Krapf & Rebmann 1887, p. 321)",
+          "translation": "possessing spirit classified into Mudzomba, Munika/Mulungu, and Mukuafi spirits (Krapf & Rebmann 1887, p. 321)",
+          "pronunciation": "pepo",
+          "context": "1. Pepo ya Kidzomba demands a kikuku bracelet and written hirisi amulet and is escorted to the sea; 2. Mulungu (Munika) demands bead ornaments (urembo wa ushanga) and is escorted to the wilderness edge; 3. Mukuafi (Maasai spirit) demands a black chain (mukufu muiru) and cowries (ngudu).",
+          "audioFile": "",
+          "culturalNote": "1. Pepo ya Kidzomba demands a kikuku bracelet and written hirisi amulet and is escorted to the sea; 2. Mulungu (Munika) demands bead ornaments (urembo wa ushanga) and is escorted to the wilderness edge; 3. Mukuafi (Maasai spirit) demands a black chain (mukufu muiru) and cowries (ngudu)."
+        },
+        {
+          "english": "communal rain-making charm and three-day ritual restriction (Krapf & Rebmann 1887, p. 352)",
+          "translation": "communal rain-making charm and three-day ritual restriction (Krapf & Rebmann 1887, p. 352)",
+          "pronunciation": "sosonga",
+          "context": "Villagers gather food for two days because on the third day (muhondo) no one may go to the fields; they drag a skin (kichingo) and perform the sosonga rain rite.",
+          "audioFile": "",
+          "culturalNote": "Villagers gather food for two days because on the third day (muhondo) no one may go to the fields; they drag a skin (kichingo) and perform the sosonga rain rite."
+        },
+        {
+          "english": "to observe or meet with a good omen from birds (niuni) or an even number of travellers (muthana) (Krapf & Rebmann 1887, pp. 311–312, 359)",
+          "translation": "to observe or meet with a good omen from birds (niuni) or an even number of travellers (muthana) (Krapf & Rebmann 1887, pp. 311–312, 359)",
+          "pronunciation": "theja",
+          "context": "Kiravai: Nidzipigua ni niuni mudzo / mui ('I have been struck by a good/bad bird omen').",
+          "audioFile": "",
+          "culturalNote": "Kiravai: Nidzipigua ni niuni mudzo / mui ('I have been struck by a good/bad bird omen')."
+        },
+        {
+          "english": "traditional Rabai spicy condiment/vinegar (Krapf & Rebmann 1887, p. 346)",
+          "translation": "traditional Rabai spicy condiment/vinegar (Krapf & Rebmann 1887, p. 346)",
+          "pronunciation": "siki",
+          "context": "Pounded from sorghum flour (unga wa muhama), red pepper (pilipili), kilungakuku herb, palm-wine dregs (muniu zira za uchi), and lemon (ndimu) or makabu fruit.",
+          "audioFile": "",
+          "culturalNote": "Pounded from sorghum flour (unga wa muhama), red pepper (pilipili), kilungakuku herb, palm-wine dregs (muniu zira za uchi), and lemon (ndimu) or makabu fruit."
+        },
+        {
+          "english": "gender-specific cries of bereavement (Krapf & Rebmann 1887, pp. 323, 388–389)",
+          "translation": "gender-specific cries of bereavement (Krapf & Rebmann 1887, pp. 323, 388–389)",
+          "pronunciation": "yabayowe!",
+          "context": "Men lament 'Yabayowe! muchangu we! m'anangu we! baba e!' while women lament 'Mayowe! mulumangu e!'; in former times Rabai widows, sisters, and daughters also turned somersaults (ku piga pindui) at the grave after burial.",
+          "audioFile": "",
+          "culturalNote": "Men lament 'Yabayowe! muchangu we! m'anangu we! baba e!' while women lament 'Mayowe! mulumangu e!'; in former times Rabai widows, sisters, and daughters also turned somersaults (ku piga pindui) at the grave after burial."
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Krapf 1850, Krapf & Rebmann 1887, W. E. Taylor 1891 & Johnston 1919)"
+  "source": "Public Domain Historical Lexicons (Krapf 1850, Krapf & Rebmann 1887, W. E. Taylor 1891 & Johnston 1919); Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (ed. Rev. T. H. Sparshott, SPCK, London, 1887)"
 }

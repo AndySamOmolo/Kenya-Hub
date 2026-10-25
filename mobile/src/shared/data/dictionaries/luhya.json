@@ -12,9 +12,9 @@
     "Busia"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
+  "dictionaryVersion": "3.2",
   "lastUpdated": "2026-10-25",
-  "contributorNote": "Luhya (Luyia) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
+  "contributorNote": "Luhya (Oluluyia / Luwanga / Luhanga / Lubukusu) public-domain vocabulary compiled strictly from C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', C. W. Hobley (1903) 'British East Africa: Anthropological Studies in Kavirondo and Nandi' (JAI Vol. 33), Sir Harry H. Johnston (1919–1922) 'A Comparative Study of the Bantu and Semi-Bantu Languages' (#5–6a), and Rev. N. Stam (1929) 'The Bahanga' (Publications of the Catholic Anthropological Conference, Vol. I, No. 4, pp. 143–179).",
   "categories": [
     {
       "id": "numbers",
@@ -130,7 +130,7 @@
           "english": "King / Chief",
           "translation": "Omwami (Nabongo, pl. Abami)",
           "pronunciation": "oh-mwah-mee / nah-bohn-goh",
-          "context": "Rev. N. Stam 1929 p. 145 Wanga royal title",
+          "context": "Rev. N. Stam 1929 pp. 148–149 Wanga royal title",
           "audioFile": null
         },
         {
@@ -389,7 +389,7 @@
           "english": "God",
           "translation": "Were / Nasayi",
           "pronunciation": "weh-reh / nah-sah-yee",
-          "context": "Rev. N. Stam 1929 p. 148 & Hobley 1903",
+          "context": "Rev. N. Stam 1929 pp. 154, 159–160 & Hobley 1903",
           "audioFile": null
         },
         {
@@ -2381,59 +2381,59 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "10-Generation Royal Genealogy of the Wanga Kingdom (Buhanga, Stam 1929 p. 144)",
-          "translation": "Kwandedi → Wanga → Waballa → Muswi → Wamukoya I → Netya → Osundwa → Wamukoya II → Khyihundu (Shihundu) → Mumia",
-          "pronunciation": "kwa-nde-di -> wan-ga -> khyi-hun-du -> mu-mi-a",
-          "context": "Rev. N. Stam (1929) 'The Bahanga', p. 144 & C. W. Hobley (1903, p. 332)",
+          "english": "Royal Genealogy of the Wanga Kingdom (Hobley 1903, pp. 332–336 & Stam 1929, pp. 143–148)",
+          "translation": "Hobley (1903, pp. 335–336): Kuau (from Tiriki/Tsoso) → Wanga (settled at Manga with Chief Muima, wearing brass armlet of chieftainship, built Shikulu on River Lusimo) → Kisesi or Wawala → Mzui or Chewi → Msindalo → Netia (and brother Kiteji at Rekho) → Sundwa → Mkoya (→ Sundu [d. ~1886] → Mumia) & Kwehu at Kimuri (→ Sakwa [d. 1895] → Tomia & Wombani) • Stam (1929, pp. 143–148): Kwandedi (born in Teriki, settled at Khyira & Bwagwe in Kabras; sons Wanga & Khabiagala) → Wanga (fled to Imanga hill under Maragoli chief Muyima, joined by Bakyero [head Wakhalivu], Banamagwa & Bakhyikawa clans at Bijifi, drove out Bamakambo, founded Mumias & Matungo hill sacred burial place) → Waballa (cattle horn-sawing expert murdered in Bukhayo via brother Murono → Kitai at Marakalu) → Muswi (posthumous son at Matawa named 'girl who has not brought forth', slew 4 attackers with 4 arrows) → Wamukoya I → Netya (killed at Lwanda by Uasin-Gishu Masai) & Kweyu (at Khyimuli → Lumbasi → Sakwa → Lutomiya [→ Rapando, chief of Mukulu], Lwambami, Kiwundu) → Osundwa ('death or victory') → Wamukoya II → Khyihundu (saved by Swahili rifle caravan) → Sons of Khyihundu (Bakhitsetse clan): Mumia (paramount chief & rainmaker at Mumias & Jinja), Murunga (North Kitosh & Wamia), Mulama (Marama), Katima (Samia), Were (Wahola), Kiteki (→ Osundwa II, succeeded retired Mumia in 1928)",
+          "pronunciation": "ku-au -> wan-ga -> ki-se-si -> ne-ti-a -> sun-dwa -> mko-ya -> sun-du -> mu-mi-a",
+          "context": "C. W. Hobley (1903, pp. 332–336) & Rev. N. Stam (1929, pp. 143–148)",
           "audioFile": null
         },
         {
-          "english": "Paramount King of Wanga & Royal Grave Shrine at Matungu",
-          "translation": "Omwami / Nabongo & Ekhyirindwa ekhyo mwami (okhusenera ekhyirindwa)",
+          "english": "Paramount King of Wanga, Royal Burial & Commoners' Burial Rites (Stam 1929, pp. 148–152)",
+          "translation": "Royal Burial (pp. 148–149): Omwami (of the Bakhitsetse clan) is ritually strangled when past recovery by Bakhyero elders, buried sitting in a raw bull-hide in his hut with a beer-sucker in his mouth, eyes propped open with reed-grass, and head covered by a bottomless beerpot guarded by his first wife until decay; 1–2 years later, at okhusenera ekhyirindwa ekhyo mwami ('to fix the grave of the chief'), the new chief spears a bull, and the bones are washed, polished with butter, and placed in an uncovered beerpot under the sacred trees at Matungo • Commoners' Burial (okhufwa = death, okhuyaberwa = burial, ekhyirindwa = grave, pp. 149–152): kraal owner buried inside hut on right side with unpierced & pierced bark-cloth fig leaves on ears and right forehead shaved (woman buried outside left of door on left side with left hair shaved; boy outside right under eaves; girl outside left under eaves, Fig. 1); unplucked burial chicken = inkokho eyo mukulikho; great bewailing = okhuba khu maziga; sons-in-law memorial meal = okhukalusya evigumba ('to return the bones'); final grave-fastening dance 1 year later = omuyima (okhusenera ekhyirindwa)",
           "pronunciation": "o-mwa-mi / na-bon-go / e-khyi-rin-dwa",
-          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 145–146",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 148–152",
           "audioFile": null
         },
         {
-          "english": "Supreme Creator (God of the Sun & Sky) & Morning Sun Prayer",
-          "translation": "Were / Nasayi — 'Were ankhonyere; Nasayi akhulinde!' (May God help me; may God guard you!)",
+          "english": "Supreme Creator (Were / Nasayi), Morning Sun-Spitting Prayer & Myth of the Chameleon and Snake (Stam 1929, pp. 158–162)",
+          "translation": "Nasayi ('the one adored' < sayo 'to adore') / Were (Creator of heaven, earth, and sun liyuba) — 'Were ankhonyere; Nasayi akhulinde!' ('God has helped me; may God protect you!', p. 160); morning sun-spitting blessing (spittle is the sign of life from God, pp. 160–161); Chief's rainmaking under the sacred wild-fig tree (khyembekho) by blowing through a hollow reed into a boiling pot of charm-water until milky froth overflows (pp. 158–159); Myth of the First Man's self-digging hoes ruined by a curious new wife, and the Chameleon who bathed in beer—man refused to drink and became mortal, whereas the snake sipped the beer and is reborn by shedding its skin (p. 161)",
           "pronunciation": "we-re an-kho-nye-re / na-sa-yi a-khu-lin-de",
-          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 148, 151",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 158–162",
           "audioFile": null
         },
         {
-          "english": "Ancestral Sacrifice Stones, Miniature Spirit-Hut & Officiating Elder",
-          "translation": "amagina ake misambwa, khatsu khe misango, & omumali owe misango (okhumala omusango)",
-          "pronunciation": "a-ma-gi-na a-ke mi-sam-bwa / kha-tsu khe mi-san-go",
-          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 148–150 & C. W. Hobley (1903, p. 344)",
+          "english": "Ancestral Sacrifice Stones, Lusiola/Lusambwa Pole & Three-Generation Invocation (Hobley 1903, pp. 342–343 & Stam 1929, pp. 152–158)",
+          "translation": "Masambwa or Muzimo (ancestral spirits) • Ketosh altar (Hobley 1903, p. 342): 4 stones from Sangaro Hill around a wild fig tree (Mrumba) • Awa-Wanga altar (Hobley 1903, p. 342 & Stam 1929, pp. 152–158, Fig. 2): sacrificer = omumali owe misango; sacrifice = omusango (okhumala omusango); 2 ancestral stones (amagina ake misambwa) flanking a 4-ft Markhamia platycalyx pole (lusambwa / lusiola cut from the family grove khyembekho, from obsolete samba 'erect' vs. reversive sambula 'break down'), plus the first wife's miniature shrine-hut (khatsu khe misango, where she sacrifices a female quail isindu eye misango at sowing) and 2 pathway stones to God outside the kraal (amagina ako lunganyi); 3-generation offering prayer (p. 155): 'abakuku mulire omu; evinambwa mulire omu; evisoni mulire omu' (grandfathers, great-grandfathers, great-great-grandfathers, eat here); special goat sacrifice (okhutisa imbusi) for skull fracture, torn clothes, broken waterpot, or spilled grass-ash salt filter; crying-baby in-law naming fowl = inkokho eyakulikhirwamwo (pp. 156–158)",
+          "pronunciation": "ma-sam-bwa / mu-zi-mo / m-rum-ba / si-a-la / m-ta-ra-wan-da",
+          "context": "C. W. Hobley (1903, pp. 342–343) & Rev. N. Stam (1929, pp. 152–158)",
           "audioFile": null
         },
         {
-          "english": "Clan Totem / Sacred Dietary & Marital Taboo",
-          "translation": "ekhyinekha (Stam 1929) / muziro (Hobley 1903)",
-          "pronunciation": "e-khyi-ne-kha / mu-zi-ro",
-          "context": "Rev. N. Stam (1929, p. 152) & C. W. Hobley (1903, p. 347)",
+          "english": "8 Bantu Kavirondo Clan Totems (Muziro / Musiro), Women's & Men's Taboos & Ekhyinekha Soul Concept (Hobley 1903, pp. 347–349 & Stam 1929, pp. 162, 176–177)",
+          "translation": "Muziro (Hobley 1903, p. 348) / musiro ('the thing abstained from', Stam 1929, p. 176; note that ekhyinekha on p. 162 means a person's immortal 'soul or shadow', pl. vikhyeno 'departed spirits' p. 160): All Bahanga abstain from Isaac's antelope / bongo (Boöcercus eurycerus), and Marama Bahanga abstain from the eland (p. 176–177); Hobley's 8 clan totems: 1. Kisesi clan of Awa-Wanga: Imbongo (bushbuck) • 2. Marama, part of Tsoso & Isukha: Kuru / Ikulu (waterbuck) • 3. Awa-Genya & Awa-Mrashi: Liusi (pigeon) • 4. Awa-Shekwi of Nyole: Njofu (elephant) • 5. Ketosh (Bukusu): Makuyi (white-bellied stork) • 6. Tasoni (Ngaki section): Isunu (reedbuck) • 7. Ithako, E. Tsoso, S. Kabras: Imbongo or Ngawe • 8. Kabras: Mbiakalo (flying termites when cooked) • Antidote: Eyarri from Emuthi tree (Hobley p. 349) • Women's Food Taboos (Stam p. 177): chickens, guinea fowl, eggs, sheep, suckling goat, and mudfish (Lepidosiren) • Men's Taboos (p. 177): a son may not sit on his living father's chair, wear his armlet/cowry hat, open his mother's door, sit by her hearth, touch her storehut, or enter his maternal uncle's bananery",
+          "pronunciation": "mu-zi-ro / im-bon-go / i-ku-lu / li-u-si / njo-fu / ma-ku-yi / i-su-nu / m-bi-a-ka-lo / e-yar-ri",
+          "context": "C. W. Hobley (1903, pp. 347–349) & Rev. N. Stam (1929, pp. 162, 176–177)",
           "audioFile": null
         },
         {
-          "english": "Diviner-Healer, Herbalist & Rain-Maker",
-          "translation": "omufumo (diviner), omundu owe misala (herbalist), & omugimba (rain-maker)",
-          "pronunciation": "o-mu-fu-mo / o-mun-du o-we mi-sa-la / o-mu-gim-ba",
-          "context": "Rev. N. Stam (1929, pp. 153–156) & C. W. Hobley (1903, p. 346)",
+          "english": "Spirit Possession (Omusebe), Bewitchers (Balosi), Medicine-Men, Charm-Doctors, Diviners, Poison-Men, Ordeals & Omens (Hobley 1903, pp. 349–350 & Stam 1929, pp. 162–170)",
+          "translation": "1. Possession (omusebe / sitani, pp. 162–163): spirit of a buried Masai enters a person, who is initiated by a mulosi with a pebble-calabash in a basket • 2. Bewitcher (mulosi, pl. balosi, pp. 163–165): nocturnal sorcerer carrying a hidden glowing coal in a small pot, keeping python/cobra/crocodile pets, or laying herb-and-snake-intestine parcels at doors • 3. Medicine-Man (omundu owe misala, p. 165): non-bewitcher healer using cupping horns and leaf-butter rubs • 4. Charm-Doctor (omundu owe mikalo, pp. 165–166): dispenses wooden neck/arm amulets, kraal-pole anti-epizootic bundles, and court-case reed-ash or wild-pig-tooth charms • 5. Oracle-Man / Diviner (omufumo, p. 166): male or female diviner shaking a pebble-calabash to prescribe sacrifices • 6. Poison-Man (omufira, pp. 167–168): prepares walking-stick point poison or buries a 'poison onion' by a rich man's kraal path (cured with sheep-dung & antidote balls for 2 cows) • 7. Ordeals (ekhyilulu, pp. 168–169): intoxicating stick-draught ordeal (2 cows fine for theft, 3 cows for false witchcraft accusation) & spitting on a leopard-victim's skull hung in a tree • 8. Omens (amayoni amabi 'bad birds', pp. 169–170): wildcat crossing left-to-right, bird singing on left, pied crow on roof, barking fox, crowing hen, wind-eggs/pigeon-sized eggs, rooster crowing 2–3 hours after sunset, baby talking prematurely or cutting upper incisors first, stubbing left foot • 9. Nyole Shekwi Rain-Making Dynasty (Hobley 1903, pp. 349–350): Agine/Ashue → Luchiri → Namonwa → Mgahanya",
+          "pronunciation": "o-mu-fu-mo / o-mu-gim-ba / a-gi-ne -> lu-chi-ri -> na-mon-wa -> mga-ha-nya",
+          "context": "C. W. Hobley (1903, pp. 349–350) & Rev. N. Stam (1929, pp. 162–170)",
           "audioFile": null
         },
         {
-          "english": "Twins & Twin Purification Dance",
-          "translation": "amakhwana (twins: Mukhwana & Mulongo) & okhutsiya khu makwana",
+          "english": "Foundling Adoption Rite (Makokha) & Twin Purification Procession (Amakhwana / Okhutsiya khu Makwana) (Stam 1929, pp. 170–173)",
+          "translation": "Foundling Rite (Makokha 'rubbish', pp. 170–171): when previous children have died, the newborn is placed on the road at dawn, 'found' by an old woman, and adopted back by the mother with a pierced mussel-shell, small bead, and ear-ring under the protective name Makokha, with hair unshaven until the next sibling's birth • Twins (amakhwana, pp. 172–173): parents confined for 2 months lest crops dry up and wells turn poisonous; purified at okhutsiya khu makwana when women block the kraal gate with thorns, stage a sham fight, carry off the hut door, wrap the mother in Passifloraceae creeper, dance, smear sheep dung on chests, and escort the mother for a 10-mile radius sprinkling huts and fields from a 'male' beer-pot of sheep dung, Trifolium antidote, and Caesalpiniaceae branches before sinking the twins' waste-pot in deep river water",
           "pronunciation": "a-ma-khwa-na / mu-khwa-na / mu-lon-go",
-          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 157–158",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 170–173",
           "audioFile": null
         },
         {
-          "english": "Betrothal Bridewealth, Ceremonial Marriage Bull & Circumcision Lodge",
-          "translation": "okhukhua omukhana, ingombe yarando, & okhukhyebwa (irumbi)",
+          "english": "Bahanga Marriage (Okhutekherana), Bridewealth, Jumping the Goat,Adornments & Circumcision (Okhukhyebwa) (Stam 1929, pp. 173–179)",
+          "translation": "Marriage (okhutekherana 'to boil for one another', pp. 173–176): paying bridewealth (okhukhua omukhana) = 1 symbolic young bull + 1 heifer plus 8 cows (3 goats = 1 cow); bride's uncle ties a live female quail by its pierced beak to her neck and gives her a spear; she receives 10 + 4 + 4 shillings at the groom's kraal, wears a goat-skin chest mantlet, jumps back and forth over a live goat held across her mother's doorway (okhusira imbusi), shares the 'stripped cow' (ingombe yarando), and after 5–6 months receives her 8-piece household outfit, sets up 3 cooking stones, and splashes hand-washing water in her husband's face while her brother strikes him with a stick (earning her a heifer) • Mutilations & Adornments (pp. 177–178): 4 lower incisors extracted at age 10; 2 rows of ~25 forehead incisions on girls/women; 3 radial cheek marks (\\|/) burned on youths using 3 blades of isambirire grass, saliva, and cobwebs • Circumcision (okhukhyebwa, pp. 178–179): performed every 2–3 years on youths aged 15–25 by Abarebe operators from Kakalelwa; candidates smear white swamp clay, heal for 4–5 months in temporary irumbi lodges tended by a boy and girl, burn the lodges, dance, wash, and shave",
           "pronunciation": "o-khu-khu-a o-mu-kha-na / in-gom-be ya-ran-do / i-rum-bi",
-          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 159–168",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 173–179",
           "audioFile": null
         },
         {
@@ -2441,6 +2441,76 @@
           "translation": "Lunyara, Luwanga (Lurimi), Lukabarasi, Lusinga, Lumasaba, Lukonde (Ketosh)",
           "pronunciation": "lu-nya-ra, lu-wan-ga, lu-ma-sa-ba, lu-kon-de",
           "context": "Sir Harry H. Johnston (1902, pp. 902–929; 1919, Vol. I, pp. 49–55) & C. W. Hobley (1902)",
+          "audioFile": null
+        },
+        {
+          "english": "Murembe Peace Tree (Erythrina tomentosa), Python Atonement (Waka), Naming & Isira Blood-Feud Taboo (Hobley 1903, pp. 343–344, 350–353, 357–358)",
+          "translation": "Murembe (peace & Erythrina tomentosa coral tree under which inter-tribal peace covenants are made, pp. 343–344) • waka (python; child born after python atonement ritual is named Wanawaka [boy] or Newaka [girl], p. 344) • livoya (married woman's 12-inch black-dyed fibre tail, p. 350) • Naming ritual (pp. 352–353): live quail beak + cowrie & kiketi bead on right wrist (boy) or left wrist (girl); historical names Mumia (born during Wamia/Elgumi attack), Jaksini, Martini, Obilo (Hobley) • Isira (blood-feud eating & cooking-pot taboo, pp. 357–358) • Sumba Island spirits off Nyala (pp. 340–341)",
+          "pronunciation": "mu-rem-be / wa-ka / wa-na-wa-ka / ne-wa-ka / li-vo-ya / ki-ke-ti / i-si-ra / sum-ba",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 340–344, 350–353, 357–358",
+          "audioFile": null
+        },
+        {
+          "english": "8 Ama-Wanga Evening Animal Fables & Historical Tales Recorded by C. W. Hobley (1903, pp. 336–339)",
+          "translation": "1. The Leopard and the Hyæna (why leopards store kills in trees) • 2. The Rat and the Cat ('Wait till I am dry') • 3. The Man and the Foolish Woman (who despised short wimbi grain until famine came) • 4. The Buffalo and the Lion (crushed under a fallen tree trunk) • 5. The Kite and the Mole (throwing earth in the kite's eyes) • 6. The Guinea Fowl and the Domestic Chicken (why guinea fowl stays in the woods) • 7. The Ant-Bear (Aardvark) and the Hyæna • 8. The Fight of the Hippopotamus and the Elephant at Chikonesi on the River Nzoia in Chief Kwehu's time",
+          "pronunciation": "chi-ko-ne-si / wim-bi",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 336–339",
+          "audioFile": null
+        },
+        {
+          "english": "17 Bantu Kavirondo Tribes, Clans & 1900 Chiefs Recorded by C. W. Hobley (1902, pp. 43–51)",
+          "translation": "Awa-Limi / Awa-Rimi (generic Bantu Kavirondo; Nilotic name: Ja-Mwa; clan prefix Awa-, language prefix Lu-): (1) Awa-Wanga (9 clans: Kisesi/Kisesa [Mumia], Korwi, Leka, Mwima, Chikao, Nasheni, Kana/Kami, Korwewa Mari, Kolui), (2) Awa-Ketosh / Masawa (11 clans under Majanja + Awa-Tasoni under Kifuma), (3) Awa-Kamuni/Moni, (4) Awa-Kisa, (5) Awa-Marama, (6) Awa-Nyole (Mgahanya), (7) Awa-Nyala/Nyara (Port Victoria), (8) Awa-Samia & Awa-Mrashi/Tawana (iron-smelters, chief Njira), (9) Awa-Tindi/Khaiyo (Tindi → Utanga), (10) Awa-Kikelelwa/Lewi, (11) Awa-Kabras (6 clans), (12) Awa-Wewanda & Awa-Tsoso, (13) Awa-Isukha & Awa-Idhako (together called Kakumega), (14) Awa-Tiriki, (15) Awa-Lakoli/Maragoli (Awa-Mawe, Awa-Kirima, Awa-Kisungu), (16) Awa-Ware / Wa-Chula ('island people' of Lusinga & Lufangano, chiefs Ongnoro, Oburi, Kwazi, Magira), (17) Awa-Kisingiri (salt-makers, chief Aiyoro)",
+          "pronunciation": "a-wa-ri-mi / a-wa-wan-ga / a-wa-ke-tosh / wa-chu-la",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. V, § 1, pp. 43–51",
+          "audioFile": null
+        },
+        {
+          "english": "Lu-Wanga 7 Noun Classes & Plural Prefixes (Hobley 1902, p. 86)",
+          "translation": "Class I m-, mw- → awa- (mundu → awantu 'person', mwami → awami 'chief'); Class II mu-, um(u)- → mi-, imi- (muwano → miwano 'knife', mugongo → migongo 'back', umurui → imirui 'head', umoyo → imioyo 'heart'); Class III n-, in- → n-, in- (inzuki 'bee', inzala 'nail'); Class IV ch-, shi-, tzi- → ivi-, vi-, ifi- (chirifu → virifu 'chest', tzitoleru → ivitoleru 'finger'); Class V li- → ma-, ama- (lisika → amasika 'tear', lilemwa → maremwa 'leaf'); Class VI lu-, olu- → zin- (luimbo → ziniimbo 'song', oluala → zinzala 'finger'); Class VII i- → zi-, tzi- (indaushi → tzindaushi 'walking-stick', inzu → tzinzu 'house', inguo → tzinguo 'cloth')",
+          "pronunciation": "mun-du a-wan-tu / mwa-mi a-wa-mi / in-zu tzin-zu",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. VI, p. 86",
+          "audioFile": null
+        },
+        {
+          "english": "Lu-Wanga, Ketosh & Lusinga (Chula) Numerals 1–100 (Hobley 1902, pp. 84, 95)",
+          "translation": "Lu-Wanga (p. 84): 1 endala / shilala, 2 wa-wiri / vi-wiri / ki-viri / tzi-wiri, 3 wa-taru / tzi-taru / ki-taru / vi-taru, 4 -nne, 5 -ranu, 6 sasaba, 7 -ranu na-wili (mufungate), 8 munane / -ranu na-taru, 9 -ranu na-nne / shienda, 10 ekumi, 20 makum kawiri, 30 makum kataru, 100 esha kumira • Ketosh (p. 95): 1 ndala, 2 vaviri, 3 vataru, 4 vanne, 5 varano, 6 sasaba, 7 mufungate, 8 kinane, 9 kienda, 10 ekumi • Lusinga/Chula (p. 84): 1 endala / mulala, 2 wawili / ewili, 3 watatu / etatu, 4 wanne / enne, 5 watano / etano, 6 sasawe, 7 mfungathi, 8 mnane, 9 kienda, 10 ikumi, 20 makumi awili, 100 chigana",
+          "pronunciation": "en-da-la / wa-wi-ri / wa-ta-ru / sa-sa-ba / mu-fun-ga-te / mu-na-ne / shi-en-da / e-ku-mi",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. VI p. 84 & Ch. VII p. 95",
+          "audioFile": null
+        },
+        {
+          "english": "Lu-Wanga Conjugation of okwidza ('to come') & okwenya ('to want') (Hobley 1902, p. 85)",
+          "translation": "Present: esie nzidza (I come), ewe widza, oyo yedza, ifwe kwidza, inywe mwidza, awo wedza • Perfect: nziitziri (I have come) • Future: nzidza kwidza (I will come) • Imperative: widzi! (come!) • Negative: si-nzidza-ba, su-widza-ba, si-yedza-ba, si-kwidza-ba, si-mwidza-ba, si-wedza-ba • okwenya (to want): esie nenya (neg. si-nenya-ba)",
+          "pronunciation": "e-sie nzi-dza / nzi-it-zi-ri / si-nzi-dza-ba",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. VI, p. 85",
+          "audioFile": null
+        },
+        {
+          "english": "Wanga Royal Ox-Hide Burial at Mutungu, Two-Hearth Taboo, Divination & Oath Over Two Spears (Hobley 1902, pp. 15–22)",
+          "translation": "Two hearths in a Bantu Kavirondo hut (No. 1 for cooking/guests; No. 2 strictly for immediate family, taboo to sons- and daughters-in-law under penalty of goat sacrifice, p. 15); Awa-Kisesa royal clan burial wrapped in raw ox-hide with bones later exhumed for communal reburial at Mutungu (p. 17); Mfumo (pebble-gourd diviner), Mufira (harmless wizard), and Chilulu (20-yard staring ordeal, p. 21); 3-heap entrail divination (Heap A = visitors, Heap B = country, Heap C = host chief) & solemn oath stepping over two spears (mafumo) while holding a dog-tail fly-whisk (isethu) and club (shikongo) (p. 22)",
+          "pronunciation": "mu-tun-gu / m-fu-mo / chi-lu-lu / i-se-thu / shi-kon-go",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. II, pp. 15–22",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1919–1922) Sub-Group A 5 (#5 Lu-nyara, #5a Lu-waṅga, #5b Lu-siṅga, #6 Lu-masaba, #6a Lu-konde) Corpus",
+          "translation": "Full Disyllabic Preprefixes in #6 Lu-masaba & #6a Lu-konde (Vol. I, pp. 7, 19, 85 & Vol. II, pp. 22, 225): Class 1/2 Umu-/Baba- (honorific Na-/Bana-), Class 3/4 Kumu-(Gumu-)/Kimi-(Gimi-), Class 5 Li-/Ri-/Di-/Iri-, Class 6 Kama-/Gama-, Class 7/8 Kiki-/Bibi-, Class 11 Lulu-, Class 14 Bubu-, Class 15 Kuku-, Class 18 Augmentative Gugu- (Gu-bwa/Gugu-bwa 'great dog', pl. Gimi-) • Numerals (p. 81): -lala/-dala (#5–5a) & -twera/-terwa/-dwera (#6–6a) (1), sasaba/sesaba (#5a, 6) & m-kaga (#5b, 6a) (6), n-safu/mu-safu (7), mu-nane/ki-nane (8), ši-enda/ki-enda (9), e-χumi/kumu-rundu/gumu-roṅgω (10), li-kana/e-ša kumira (#5a) & li-tondω (#6) (100), si-zumi (#5) & kama-tondω ki-kumi (#6) (1,000) • Verbal & Addenda Features (Vol. I, p. 757 & Vol. II, p. 24): Preterite -ire & -ine (-bωna → -bωine 'saw'), affirmative copula -isi/-si ('is/was') & -liṅgye & -du/-ru/-lu, negative verbs -bula & Ωxu-buta ('to be without'), Omu-mali (doctor), Omu-kωfu (father), Nya-saye (God, vs. Ωlu-mbe in #5, Eri-uwa in #5a, I-kuru/Uere in #6, Mumu in #6a), Ama-khuwa (things), -lahi (good), -kulundu (great)",
+          "pronunciation": "ku-mu / gi-mi / ga-ma / gu-gu-bwa / -bωi-ne / sa-sa-ba",
+          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 7, 19, 73–85, 757; Vol. II, 1922, pp. 22–24, 225)",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 722–755, 891–901) Ethnography of the Bantu Kavirondo & Discovery of the Archaic Masaba Prepfxes (Gumu-, Gama-, Baba-) & 10th Prefix (Tsi-/Ci-)",
+          "translation": "Tribal divisions (pp. 724, 745–746): Masaba of West Elgon (Bapobo, Bangoko, Bakonde, Bagesu, Basokwia, Bosia) and Kavirondo proper — Banyala (between Samia Hills, Sio River, and Nzoia mouth), Awa-wanga (between Yala and Upper Sio; eastern branch Kakumega / Aba-kumega), Aba-kabarasi ('Ketosh', extending to South Elgon; grouped with Awa-wanga as Awa-rimi by Hobley), and Awa-ware / Awa-singa (Rusinga Island) • Architecture, two-hearth etiquette & material culture (pp. 728–746): circular hut with enclosed grinding-stone verandah on right, rear 1/4 goat partition, high-necked fowl-basket, and two fireplaces (Fireplace No. 1 near door for guests/in-laws vs. Fireplace No. 2 in centre strictly for owner, wives, siblings, and unmarried children — transgression requires sacrificing a goat, wearing skin strips, and smearing chest with dung, Fig. 391); Northern Kavirondo moated mud-walled towns with arched gateways (Figs. 393–395); slanting decoy-quail poles; 3-ft kaolin-plastered basketwork 'matinée hats' (Fig. 390); clay leg-stockings; Egyptian-style clay sesame-oil lamps (p. 741); suspension creeper bridges & pile-and-log weir bridges (p. 744); poker-patterned goat/sheep skins • Customary law, religion & peacemaking (pp. 747–754): bride-wealth of 40 hoes, 20 goats, and 1 cow (with prescriptive right to marry a wife's younger sisters); sitting burial of a chief up to the neck with an earthenware pot over the head until ants clean the skull for reburial in sacred hill groves; women doctors (Ba-fumo, sg. mufumo), white magic (obufira) vs. black magic (obulogo); left side (female) lucky vs. right side (male) unlucky in bird and toe-stumbling omens; deities Awafwa (good spirit) and Ishishemi, ancestral stones, and miniature spirit huts; shutting a hut door with someone inside requires a goat sacrifice, and shutting the door behind a departing wife after a quarrel constitutes immediate divorce; inter-tribal peace sworn by holding the front and hind legs of a halved dog (or placing a dead crow between parties) • Linguistic discovery Confirming Dr. Bleek (pp. 891–895, 898–901): Johnston & Hobley discovered that Kavirondo preserves the 10th prefix (Tsi- / Ci-) and that Masaba (Lukonde/Lusṓkwia) preserves the archaic dissyllabic preprefixes Umu-, Baba-, Gumu-/Kumu- (Cl. 3), Gimi-/Kimi- (Cl. 4), Gama-/Kama- (Cl. 6), Bibi- (Cl. 8), Bubu- (Cl. 14), and locative Ha-, explaining how Cl. 3 Mu- takes gu- concord and Cl. 6 Ma- takes ga- concord (< *Ngumu-, *Ngama-)",
+          "pronunciation": "gu-mu-kho-no / ga-ma-tsi / ba-fu-mo / o-bu-fi-ra / o-bu-lo-go / a-wa-fwa",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XVII, pp. 722–755 & Ch. XX, pp. 891–901",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 980–1001) Vocabulary Sets 8 & 9 (#43 Lunyara, #44 Lukabarasi/Luwanga, #45 Lurimi of Mumia's, #46 Lukonde, #47 Lusṓkwia/Lugesu & #48 Lusinga/Chula)",
+          "translation": "Comparative North Kavirondo & Elgon Bantu Lexicon — Lunyara (Ny), Lukabarasi/Luwanga (Kb), Lurimi of Mumia's (Lr), Lukonde (Lk), Lusṓkwia/Masaba (Ls), and Lusinga/Chula (Lg) (pp. 980–1000): Arm: Omukono (Ny), Muχωno (Kb), Kumuχωnω / pl. Kamaχωnω (Lk, Ls) • Arrow: Esesere (Ny), Umbano / Muwano (Kb), Olusala / Gumuwanω (Lk), Kumubano (Ls), Lisuñgu (Lg) • Axe: Yimbaci / Aiwa (Ny), Haiwa / pl. Tsiaiwa (Kb), Ewaiyua (Lk, Ls) • Banana: Litemwa (Ny), Liremwa (Kb), Edωte / pl. Gamadωte (Lk), Itωre / pl. Kamatωre (Ls), Litoki (Lg) • Bee: Injuki / pl. Cinjuki (Ny), Inziχe (Kb), Induzχi (Lr), Enjuχi / Endzuci (Lk, Ls) • Bird: Liyωni (Ny), Rinωni / pl. Amanωni (Kb), Gisiriri / Inyωnyi (Lk), Inyωni / pl. Zi- (Ls), Enūnyi (Lg) • Blood: Amawanga (Ny), Malasiri (Kb), Gamalasiri / Kamalasiri (Lk, Ls) • Body: Omubiri (Ny), Umubiri (Kb), Gumubiri / Kumubiri (Lk, Ls) • Bone: Likumba (Ny), Ligumba (Kb, Lk, Ls), Iṣikumba (Lr) • Bow: Owingu (Ny), Uwingo (Kb), Ubwīingo / Burra (Lr), Bubuingu (Lk), Wuta (Lg) • Breast: Oluwere (Ny), Liduru (Kb), Odubere (Lr), Libere (Lk, Ls) • Brother: Mwana wama (Ny), Wandae / Muterwa (Kb), Omwana wabo (Lr), Wandaye (Lk, Ls), Wanuwenyu (Lg) • Canoe: Obwaro (Ny), Rialo / pl. Amalo (Kb), Diarrω (Lr), Indĕbĕ (Lk, Ls), Bwatu (Lg) • Cat: Yimondo / Lisimba (Ny, Kb), Enzusi / Injusi (Lk, Ls) • Chief: Omwami / Mwami (all) • Child: Omwana (Ny, Lg), Musiani (m.) / Muχana (f.) (Kb), Ωmwana mukēχē / pl. Babana bakĕχĕ (Ls) • Country: Esialo (Ny, Lr), Ṣiwala / pl. Fiwala (Kb), Ciarω / Sisiarω (Lk, Ls) • Cow: Iñombe / pl. Ci- (Ny), Ñombe / pl. Tsiñombe (Kb), Inkafu / Iχafu (Lk, Ls), Edwasi ñombe (Lg) • Day: Lulalo / pl. Cindalo (Ny), Indalo / pl. Tsindalo (Kb), Kumutiyīñī (Lk, Ls), Muwaso (Lg) • Spirit/Devil: Musambwa (Ny, Kb), Gumusambwa / pl. Gimisambwa (Lk, Ls), Usewi (Lg) • Dog: Yimbwa / Imbwa (all) • Door: Oluīki / pl. Cinjiki (Ny), Oluigi / Omuriango (Kb), Kumuriañgo (Lk, Ls) • Dream: Ndωta (Ny), Liloro (Kb), Ndore (Lr), Bubulota (Lk), Ωrora (Ls) • Drum: Iñωma / Eñωma (all) • Ear: Okutwi / pl. Amakutwi (Ny), Okūrui (Kb), χurui (Lr), Kukutu / Uχuru, pl. Kamaru (Lk, Ls) • Egg: Līki (Ny), Libuyu (Kb), Inyiñgu (Lk, Ls), Egi (Lg) • Elephant: Injωfu (Ny), Ndzωfu (Kb, Lk), Indωfu (Ls), Njωfu (Lg) • Eye/Face: Imωni / Mumωni (Ny, Kb, Lk, Ls), Disω / pl. Gamesω (Lk), Eriso (Lg) • Fat: Amafuta (Ny, Lg), Amafurra / Kamafurra (Kb, Lk, Ls) • Finger: Oluala / pl. Cindala (Ny), Luterre / pl. Tsinderre (Kb), Luwala / Uduwala (Lk, Ls) • Fire: Omulilo (Ny), Muriro (Kb, Lg), Kumurirω / Gumulirω (Lk, Ls) • Fish: Iñgeke (Ny), Inyeni / Kineñi (Kb, Lk, Ls), Emona (Lg) • Foot: Oχukulu (Ny), Cireñge / pl. Fi- (Kb), Sikire / Cigere (Lk, Ls), Ugulu (Lg) • Forest: Ovúmali (Ny), Mutsurru (Kb), Kumuroñgṓlω (Lk, Ls) • Fowl: Ingωχo / Iñgoχo / Ngωhω (all) • Ghost: Esiχienu / pl. Fiχienu (Ny, Kb), Eṣiṣienu (Lr), Lilalu / pl. Kamalalu (Ls) • Goat: Imbuzi / Mbuzi / Imburi • God: Olumbe (Ny), Eriuwa (Kb), Ediuba (Lr), Mūmū (Lk), Ikurei (Ls) • Grass: Obunyasi / Bunyasi (Ny, Kb, Lk, Ls), Usui (Lg) • Ground: Lilωba / Rirωba • Ground-nut: Injugu (Ny), Imbande / pl. Tsimbande (Kb) • Guinea-fowl: Liχañga / Riχañga • Gun: Omurondo / Murondo / Kumulondω • Hair: Lifwiri (Ny), Diswi / pl. Amasu (Kb), Licuni (Lk, Ls) • Hand: Esikala (Ny), Esigalo (Kb), Sikωfu (Lk, Ls), Ukωnω (Lg) • Head: Omutwe (Ny), Murwe (Kb), Gumūtwe / Kumūtwe (Lk, Ls), Mūtwe (Lg) • Heart: Iχωlω (Ny), Moyo (Kb), Gumoyω / Kumoyω (Lk, Ls) • Hippo: Ifubu / pl. Cifubu • Honey: Obuṣi (Kb), Kamana / Bubuci (Lk, Ls) • Horn: Luika / pl. Cinjika (Ny), Oluika / pl. Tsinzika (Kb), Yimbega (Lr), Luiga / pl. Tsintsiga (Lk) • House: Inyumba / pl. Ci- (Ny), Inzu (Kb, Ls), Intzu / pl. Tsintzu (Lk) • Hunger: Injala / Nzala / Injara • Hyena: Yiñu (Ny), Efūsi / Ifisi (Kb, Lr), Namūnyū (Lk, Ls) • Iron: Esiuma (Ny, Lk, Ls), Eχibia / Efiuma (Kb), Eṣibia (Lr), Ecuma (Lg) • Ivory: Elino lye njωfu (Ny), Irinω de ndzωfu (Kb), Gumusañga gwe ndzωfu (Lk) • Knife: Liχande (Ny), Ṣirωdwa (Kb), Yimbalo (Lr), Gumubanω (Lk, Ls), Mwembe (Lg) • Leopard: Yingwe / Ingwe / pl. Tsingwe • Lion: Linani (Ny, Kb), Liñu (Lk, Ls), Endūi (Lg) • Maize: Amadumwa (Ny, Kb), Kamaganda (Lk), Kadūma (Lg) • Man: Omundu / pl. Awandu, Abandu (Ny, Kb, Lr), Umundu / pl. Babandu (Lk) • Moon: Omūsi (Ny), Mwesi / Omwezi (Kb, Lr, Lg), Gumwezi (Lk, Ls) • Mountain: Olugulu / pl. Cingulu (Ny), Lugulu (Kb), Eṣikulu (Lr), Likulu (Lk, Ls) • Name: Erita (Ny), Irira / pl. Amera (Kb), Esina / Lisina (Lk, Ls) • Night: Esiro (Ny), Muṣirω (Kb, Ls), Iṣio (Lr), Sirω (Lk) • Nose: Amωlω / Mωlω / Gamωlω • Beer/Wine: Omweñge / Mwenge (Ny, Kb), Amalua / Gamarwa / Kamarwa (Lr, Lk, Ls) • Place: Alia / Esifω (Ny), Handu / Ahandu (Kb, Lr), Andu (Lk, Ls) • Rain: Ifula / Ifulla (Ny, Kb, Lk, Ls), Mvula (Lg) • River: Omwalo (Ny, Lr), Omucara (Kb), Luluci (Lk, Ls) • Road: Ingira / Njira • Sheep: Likonde (Ny, Lr, Lk), Ligese / Iχese (Kb, Ls), Gonde (Lg) • Shield: Iñgabo (Ny, Kb, Lr, Ls), Ihumba (Lr small), Kikumbi (Lg) • Snake: İnjuχa / Indzuχa / Indzoχa / Ujωka • Spear: Lifumo / Difumo / Ifumo • Star: Iñiniñini (Ny, Kb), Inyenyesi (Ls) • Stone: Likina / Rīgina (Ny, Kb), Libale (Ls) • Sun: Eliuwa (Ny), Ombasa (Kb), Mubasu (Lr), Inyañga (Ls) • Sweet potato: Libwωni / Libωni / Dibwωni • Thing: Esindu / Ebindu (Ny), Eṣindu / Eχindu, pl. Ifindu (Kb), Ikindu / pl. Bibikindu (Lk, Ls) • Town: Lidala (Ny), Ridala / Mugidzi (Kb), Ditala (Lr), Mwitωχω (Ls), Mgizi (Lg) • Tree: Omusala (Ny, Kb, Ls), Gumuti / pl. Gimiti (Lk) • Twins: Amaχana / Amaχwana / Amabasa / Baχwana • Water: Amaci (Ny), Amadzi (Kb), Kamedzi (Ls), Amazi (Lg) • Numerals 1–10 (pp. 987, 999–1000): Lunyara (Silala, Biviri, Bidatu, Binne, Ebitano, Bitano na silala, Bitano na biwiri, Bitano bidatu, Bitano binne, Liχumi; 100 Likana; 1000 Amakana siχumi) • Lukabarasi/Luwanga (Indala, Tsiwiri, Tsitarru, Tsinne, Tsirrāno, Sasaba, Nsafu, Munane, Xienda, Eχumi) • Lurimi (6 Tissasaba, 7 Tirano na tsiwiri, 8 Tirano na tsitaru, 9 Tirano na tsinne) • Lukonde (Gumwe, Tsiwiri, Tsidatu/Iratu, Tsinnā, Tsitanω, Mukaga, Musafu, Kinane, Kienda, Ekumi; 20 Gamakumi gabili) • Lusṓkwia (Muterwa/Mulala, -biri, -taru, -nne, -ranω, Sēsaba, Musafa, Sinane, Sienda, Eχumi; 20 Kamagumi kabili; 100 Miroñgo) • Lusinga (Ulala, Iwiri, Isatu, Nne, Etano, Mukaga, Msamvu, Munane, Kienda, Ekumi; 100 Egana) • Lurimi Sentences (pp. 990–991): Si manyire tawi (I know not) • Oχorirorie olakona? (Why art thou sleeping?) • Atsire hena? (Where did he go?) • Niwina yeñgira? (Who comes in?) • Osongorie? (What do you say?) • Oχorirorie amalua? (How do you make beer?) • Efwe naχunyue ṣina? (What shall we drink?) • Waedzire rīna? (When art thou coming?) • Mb'ωbusuma (Give me food) • Nyenyire aχacina (I want a little stone) • Ali mu nsu (He is inside the house) • Amanωni kakuluiṣe (The birds flew away) • Nuomurambi aṣire 'sie (He is taller than I) • Musala kwabωla kwakwa (The rotten tree falls) • Ωnyala oχundωla! — Tawe; sinyala (Can you see me? — No, I cannot)",
+          "pronunciation": "in-da-la, tsi-wi-ri, tsi-tar-ru, tsi-nne, tsi-ra-no, sa-sa-ba, n-sa-fu, mu-na-ne, khien-da, e-khu-mi",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Sets 8 & 9 (#43–48), pp. 980–1001",
           "audioFile": null
         }
       ]

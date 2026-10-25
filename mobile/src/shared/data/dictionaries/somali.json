@@ -44,9 +44,9 @@
         },
         {
           "english": "Good morning",
-          "translation": "Subax wanaagsan / Ma баrideen?",
-          "pronunciation": "soo-bahkh wah-nahg-sahn",
-          "context": "Kirk 1905 morning salutation",
+          "translation": "Subax wanaagsan / Ma bariden? (resp. Wa nabad!)",
+          "pronunciation": "soo-bahkh wah-nahg-sahn / mah bah-ree-dehn",
+          "context": "Kirk 1905 § 102, p. 51 & p. 113 morning salutation (lit. Have you passed the night well?)",
           "audioFile": null
         },
         {
@@ -208,6 +208,41 @@
           "translation": "ilbiriqsi",
           "pronunciation": "ilbiriqsi",
           "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty (30), Forty (40), Fifty (50)",
+          "translation": "sóddon (30), afárton (40), kónton (50)",
+          "pronunciation": "sod-don, a-far-ton, kon-ton",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 46, p. 26",
+          "audioFile": null
+        },
+        {
+          "english": "Sixty (60), Seventy (70), Eighty (80), Ninety (90)",
+          "translation": "léhhdon (60), todobàton (70), sidèton (80), sagàshon (90)",
+          "pronunciation": "lehh-don, to-do-ba-ton, si-de-ton, sa-ga-shon",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 46, p. 26",
+          "audioFile": null
+        },
+        {
+          "english": "Subtractive Numerals: 19, 29, 99 (lit. lacking one)",
+          "translation": "labàton midla (19), sóddon midla (29), bóghol midla (99)",
+          "pronunciation": "la-ba-ton mid-la, sod-don mid-la, bo-ghol mid-la",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 46 Note 3, p. 27",
+          "audioFile": null
+        },
+        {
+          "english": "Ordinal Numerals 1st–10th (formed with suffix -ad)",
+          "translation": "kôwad / hòre (1st), lábad (2nd), sádehhad (3rd), áfrad (4th), shánad (5th), léhhad (6th), todòbad (7th), sidèdad (8th), sagàlad (9th), tòbnad (10th)",
+          "pronunciation": "ko-wad, la-bad, sa-dehh-ad, af-rad, sha-nad",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 50, p. 28",
+          "audioFile": null
+        },
+        {
+          "english": "Fractions: 1/2, 1/3, 1/4, 1/8, 1/16",
+          "translation": "bađ-ki (1/2), dalòl-ki (1/3), wahh-di (1/4), fallad-di (1/8), rima-di (1/16)",
+          "pronunciation": "badh-ki, da-lol-ki, wahh-di, fal-lad-di, ri-ma-di",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 52, p. 28",
           "audioFile": null
         }
       ]
@@ -1549,8 +1584,8 @@
         },
         {
           "english": "six (6), seven (7), eight (8), nine (9), ten (10) (< Proto-East Cushitic *lihx-, *todb-, *siddet-, *sagal-, *tomman-)",
-          "translation": "lix,on-todoba, sideed, sagaal, toban",
-          "pronunciation": "lix,on-todoba, sideed, sagaal, toban",
+          "translation": "lix (lehh), todoba (todòba), sideed (sidèd), sagaal (sagàl), toban (tòban)",
+          "pronunciation": "lehh, todòba, sidèd, sagàl, tòban",
           "context": "Af-Soomaali (Bender 2020)",
           "audioFile": null
         },
@@ -2336,6 +2371,34 @@
           "translation": "iyaga (clitic ay)",
           "pronunciation": "ee-yah-gah",
           "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Four Degrees of Demonstrative Pronouns (Kirk 1905 § 63, p. 33)",
+          "translation": "kan / tan (this near), kèr / tèr (that near), kas / tas (that further), kò / tò (that yonder; pl. kuò / tuò)",
+          "pronunciation": "kan/tan, ker/ter, kas/tas, ko/to",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 63, p. 33",
+          "audioFile": null
+        },
+        {
+          "english": "Three Definite Article Vowels: -i (past/absent), -a (present/proximate), -u (known subject) (Kirk 1905 §§ 23, 28, 150)",
+          "translation": "ninki / nàgti (-i general/past/remote), ninka / nàgta (-a present/proximate), ninku / nàgtu (-u known/aforementioned subject)",
+          "pronunciation": "nin-ki / nin-ka / nin-ku; nag-ti / nag-ta / nag-tu",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language §§ 23, 28–29, 150–154, pp. 16–18, 79–81",
+          "audioFile": null
+        },
+        {
+          "english": "Seven Irregular & Prefixing Verbs (Kirk 1905 §§ 100–118, pp. 50–59)",
+          "translation": "oll (dwell: al/tal/yal/nal, past il/til/yil/nil), imo (come: imàda/imi), ođo (say, imp. đeh: iđahhda/iđi), ogho (know: aghán/ighín), aho (be: ahai/tahai/yahai/nahai/tihin/yihin), laho (possess: lehahai), wah (fail/be unable: wahya/wai)",
+          "pronunciation": "oll, i-mo, o-dho, o-gho, a-ho, la-ho, wah",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language §§ 100–118, pp. 50–59",
+          "audioFile": null
+        },
+        {
+          "english": "Six Noun Plural Classes & Gender Polarity (Kirk 1905 §§ 34–42, pp. 19–22)",
+          "translation": "(i) Masc. monosyllables reduplicating last consonant keep masc. (dab → dabab-ki, nin → niman-ki); Classes (ii)–(vi) invert gender in plural: (ii) -o (kab-ti → kabo-hi, waran-ki → warmo-di), (iii) -yo (bùr-ti → bùryo-hi), (iv) -i → -io (guri-gi → gurio-di), (v) -o → -oyin (hòyo-di → hoyòyin-ki), (vi) -a/-e → -ayal (abà-hi → abayál-shi)",
+          "pronunciation": "da-bab-ki, ni-man-ki, ka-bo-hi, war-mo-di, hoy-o-yin-ki, a-ba-yal-shi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language §§ 34–42, 164–168",
           "audioFile": null
         }
       ]
@@ -3445,49 +3508,91 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "East African Antelope & Wildlife Lexicon Recorded by Rev. Fr. Evangelist de Larajasse (1897)",
-          "translation": "si‘g (Swayne's hartebeest), garanug / lig (gerenuk), adéryo (lesser kudu), godir (greater kudu), b‘e‘id / bi‘‘id (beisa oryx), sagaro / sakaro (dik-dik), aul (Soemmerring's gazelle), déro (Speke's gazelle)",
-          "pronunciation": "si'g, ga-ra-nug, a-der-yo, go-dir, be-id, sa-ga-ro",
-          "context": "Rev. Fr. Evangelist de Larajasse (1897) 'Somali-English and English-Somali Dictionary'",
+          "english": "East African Antelope & Wildlife Lexicon Recorded by Rev. Fr. Evangelist de Larajasse (1897, pp. 4, 19, 26, 54, 56, 100, 120, 127, 170, 194, 221, 231, 245, 270)",
+          "translation": "si‘g,—gi (m.n., Coke's hartebeest / cow antelope, pp. 127, 221) • garanug,—ti (f.n., Gazella walleri / female gerenuk, p. 54) & lig,—gi (m.n., male garanug, p. 100) • adéryo,—adi (f.n., female kudu, Strepsiceros imberbis), adéryo ‘ari,—gi (lesser kudu, used for both genders), & godir,—ki (m.n., male kudu, Strepsiceros kudu; 'Somals generally make no difference between adéryo and adéryo ‘ari; they call the males godir, and the females adéryo', pp. 4, 56, 231) • b‘e‘id / b‘i‘id / bi‘‘id,—ki (m.n., Beisa oryx antelope, pp. 19, 170, 245) • sagaro / sakaro,—adi (f.n., sand antelope / dik-dik, pp. 120, 194) • dabatag,—ti (f.n., Clarke's roebuck / dibatag, p. 26) • daba galla,—ihi (m.n., earth squirrel living in holes, pp. 26, 270) vs. walo,—adi (f.n., rock squirrel, p. 270)",
+          "pronunciation": "see-g • gah-rah-noog / leeg • ah-dehr-yoh / goh-deer • beh-eed • sah-gah-roh • dah-bah-tahg • dah-bah gahl-lah",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897) 'Somali-English and English-Somali Dictionary', pp. 4, 19, 26, 54, 56, 100, 120, 127, 170, 194, 221, 231, 245, 270",
           "audioFile": null
         },
         {
-          "english": "Kenya/Jubaland Ethnonyms & Trade Terms in de Larajasse (1897)",
-          "translation": "Sawaheli / Sawahili (Swahili Coast people), Wa Debai (Ogaden/Darod country), Daba Galla (Oromo/Borana borderland), rubiad / rubi (rupee/silver coin)",
-          "pronunciation": "sa-wa-he-li / wa de-bai / da-ba gal-la / ru-bi-ad",
-          "context": "Rev. Fr. Evangelist de Larajasse (1897) 'Somali-English and English-Somali Dictionary'",
+          "english": "Phonetic System, Ogaden/Darod Dialect Note, Swahili Coast Terms, Currency (Rubiad/Rubi) & Cultural Lexicon in de Larajasse (1897)",
+          "translation": "Phonetic & Orthographic System (Preface pp. v–xiii): Cerebral d (tongue curved against front of palate, sounding like rd in 'hard'), strong chest aspirate h (Arabic ح), guttural h (representing Arabic غ ق خ, two-thirds from ق), pharyngealized vowels ‘a/a‘, ‘e/e‘, ‘i/i‘, ‘o/o‘, ‘u/u‘ (Arabic ع), hollow diphthong ow, interchangeable k/g and t/d, interdental y in maya ('no', pronounced matha), and absence of p, v, z (replaced by b, f/b, s) • Swahili & Social Status Terms (pp. 123, 127, 242, 266): sawaheli / sawahili,—gi (m.n., Swahili coast person / slave, alongside adon,—ki [m.] / adon,—ti [f.] and bida/bidai,—ihi [m.] / bidad,—di [f.]); singal,—ki (m.n., client who comes under the protection of a powerful patron, p. 127); serkal,—ki (government/authority, p. 123) • Ogaden, Dulbanteh & Darod Dialect Note (Supplement p. 293): wa debai / wa i debai (verbal locution specifically noted as used in the Ogaden and by the Dulbanteh and Darod, vs. standard sino / sinaiso, p. 127) • Currency & Fractions (pp. 118, 293): rubiad,—di (f.n., pl. rubabi; contracted in counting to rubod instead of rubiadod = 1 rupee), rubi (m.n. = 1 shilling / 8 annas, half-rupee), sarrif,—ki (money-changing: 'rubiadda i sarrif', p. 123), dalol,—ki (m.n., numeral fraction one-third, p. 293) • Pastoral, Medical & Domestic Customs (pp. 26, 123, 266, 293): dabsi / dabsin,—ti (separating a young camel from its mother by day or exchanging two sucklings, p. 26); sarsar,—ki (medicinal skin-incision / scarification of sick or pot-bellied children, p. 123); burambur (women's song, p. 293) vs. gabai / hes (song/poetry, gabaya,—ihi singer, p. 266); dardar,—ki (the 3 hearth-stones supporting the cooking pot, p. 293); sibrar,—ki (leathern water-bag, p. 127); 'sadehda dalahod bad igaga furaisantahai' (triple-divorce oath formula under dalah, p. 293)",
+          "pronunciation": "sah-wah-heh-lee • roo-bee-ahd (pl. roo-bah-bee, count. roo-bohd) / roo-bee • see-ngahl • boo-rahm-boor • dahr-dahr",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897) 'Somali-English and English-Somali Dictionary', pp. v–xiii, 26, 118, 123, 127, 242, 266, 293",
           "audioFile": null
         },
         {
-          "english": "The 4 Somali Pastoral Seasons (Kirk 1905 Appendix I, p. 131)",
-          "translation": "Gu' (main rains), Xagaa / Hagaa (hot windy dry season), Dayr / Dair (short rains), Jiilaal / Jilal (cool dry season)",
-          "pronunciation": "gu, ha-gaa, dayr, jii-laal",
-          "context": "Lt. J. W. C. Kirk (1905) 'A Grammar of the Somali Language', Appendix I, p. 131",
+          "english": "The 4 Somali Pastoral Seasons & Kalil Interval (Kirk 1905 Appendix I, p. 134)",
+          "translation": "Jilal / Jiilaal (dry cold season, Dec–April), Kalil (hot windless interval before the rains), Gù / Gu' (heavy spring rains, May–June), Hagar / Xagaa or Karif (hot windy summer monsoon, July–Sept), Dair / Dayr (autumn short rains, Oct–Nov)",
+          "pronunciation": "ji-lal, ka-lil, gu, ha-gar / ka-rif, dair",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 134",
           "audioFile": null
         },
         {
-          "english": "The 12 Traditional Somali Lunar Months (Kirk 1905 Appendix I, p. 132)",
-          "translation": "Dago (Muharram), Safar, Mawlid, Rajal hore, Rajal dhexe, Rajal dambe, Sabuux, Waaberiis, Soon (Ramadan), Soon fur, Sidataal, Arafo",
-          "pronunciation": "da-go, sa-far, maw-lid, ra-jal, sa-buux, waa-be-riis, soon, a-ra-fo",
-          "context": "Lt. J. W. C. Kirk (1905) 'A Grammar of the Somali Language', Appendix I, p. 132",
+          "english": "The 12 Traditional Somali Lunar Months (Kirk 1905 Appendix I, p. 135)",
+          "translation": "1. Dago (Muharram), 2. Durahh hore, 3. Durahh dambe, 4. Rajal hore, 5. Rajal dehhe, 6. Rajal dambe, 7. Sà buha, 8. Wà barìs, 9. Sòn / Soukad (Ramadan fast), 10. Sòn fur (opening of fast), 11. Sidatal, 12. Arafo",
+          "pronunciation": "da-go, du-rahh ho-re, du-rahh dam-be, ra-jal, sa bu-ha, wa ba-ris, son, si-da-tal, a-ra-fo",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 135",
           "audioFile": null
         },
         {
-          "english": "The Three Classical Somali Oral Poetic Genres (Kirk 1905 pp. 170–183)",
-          "translation": "Gabei / Gabay (philosophical epic poem), Gerar / Geeraar (equestrian/warrior chant), Hes / Hees (pastoral watering & dance song)",
-          "pronunciation": "ga-bay / gee-raar / hees",
-          "context": "Lt. J. W. C. Kirk (1905) 'A Grammar of the Somali Language', pp. 170–183 (14 Songs)",
+          "english": "The 18 Somali Divisions of the Day and Night (Kirk 1905 Appendix I, pp. 135–136)",
+          "translation": "arorti hore (4–5 a.m.), wà beri / darairti (daybreak, 5 a.m.), subahhdi / aroorti (6 a.m.), bargháddi (8–11 a.m., cattle watering time), hađki / gàdidki (noon), duhurki (1–2 p.m.), galinki dambe (afternoon), ásarki (3:30–4:30 p.m.), gálabti (4:30–6 p.m.), makhribki (sunset, 6 p.m.), fìdki (6:30–7:30 p.m.), aweisinki (7:30–10 p.m.), habènki (night), sakhdi hore (11 p.m.), sakhđi dehh / habèn bađki (midnight), sakhdi dambe (1–2 a.m.), hìrki (2–4 a.m.)",
+          "pronunciation": "a-ror-ti ho-re, wa be-ri, bar-ghad-di, hadh-ki, du-hur-ki, a-sar-ki, fi-dki, a-wei-sin-ki, sakh-dhi dehh",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, pp. 135–136",
           "audioFile": null
         },
         {
-          "english": "Yibir (Anas) & Midgan (Alowa) Craft-Guild Registers Documented by Lt. J. W. C. Kirk (1905 pp. 184–215)",
-          "translation": "Af-Yibir (Anas) & Af-Midgaan (Alowa) — special guild vocabularies and the Story of Mohammed Hanif",
-          "pronunciation": "af-yi-bir / a-nas / af-mid-gaan / a-lo-wa",
-          "context": "Lt. J. W. C. Kirk (1905) 'A Grammar of the Somali Language', pp. 184–215",
+          "english": "Traditional Somali Currency, Weights & Measures (Kirk 1905 Appendix II, pp. 137–139)",
+          "translation": "Currency: la‘ag-ti (money/silver), rubiad-di / rubi-gi (rupee = 16 annas), bađ-ki / nuss-ki (1/2 rupee = 8 annas), bòlad-di / ruba‘-di (1/4 rupee = 4 annas), antìn-ti (2-anna silver piece), gambo-di (1 anna = 4 pice), beisad-di (pice = 1/4 anna), ardi-gi (1/3 pice) • Weights & Distance: misan-ki (scales/weight), rođol-ki (pound = 16 oz), waghed-di (ounce = 1/16 lb), ba‘-i (fathom = 2 yards), đudun-ti (cubit = 1/2 yard), tako-di (span), geđi-gi (camel march = 3–5 hours / 8–15 miles)",
+          "pronunciation": "la-ag-ti, ru-bi-gi, bo-lad-di, an-tin-ti, gam-bo-di, bei-sad-di, ro-dhol-ki, wa-ghed-di, ge-dhi-gi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix II, pp. 137–139",
+          "audioFile": null
+        },
+        {
+          "english": "Genealogical Divisions of the Somali Tribes (Kirk 1905 Appendix III, pp. 140–142)",
+          "translation": "Asha / Gob: Ishhak (Habr Awal [Sa‘ad Musa, Esa Musa], Habr Tolja‘la, Habr Gerhajis [Eidagalla, Habr Yunis], Arab) & Darud (Warsangeli, Dolbohanta, Majertain, Ogaden, Marehan, Bah Gerri) • Dir: Esa, Gadabursi, Bimal • Sab: Hawiya, plus endogamous guilds Tomal (ironworkers), Midgan (hunters/leatherworkers), Yibir (tanners/jesters)",
+          "pronunciation": "a-sha / gob, ish-hak, da-rud, dir, sab, to-mal, mid-gan, yi-bir",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix III, pp. 140–142",
+          "audioFile": null
+        },
+        {
+          "english": "11 Traditional Somali Prose Narratives & Fables (Kirk 1905 pp. 145–169)",
+          "translation": "Stories I–IV (Lion & Hunting Accounts), V. Laba nin o fulayálah (The Two Cowards), VI. Maski iyo Yibirki (The Snake and the Yibir), VII. Dadghalki (The Cannibal), VIII. Nin o naag la diley (A Murder Trial), IX. Habr Yunis iyo Bimàl (The Habr Yunis and the Bimal), X. Bilàd-ul-Punt (Voyage to the Land of Punt), XI. Warábihi iyo Dawá‘adi (The Hyena and the Jackal)",
+          "pronunciation": "la-ba nin o fu-la-ya-lah, mas-ki i-yo yi-bir-ki, dad-ghal-ki, wa-ra-bi-hi i-yo da-wa-a-di",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Prose Texts I–XI, pp. 145–169",
+          "audioFile": null
+        },
+        {
+          "english": "The Three Classical Somali Oral Poetic Genres & 14 Songs (Kirk 1905 pp. 170–183)",
+          "translation": "Hes / Hees (Songs I–III: To a Baby, Dance Song, Loading Camels) • Gerar / Geeraar (Songs IV–X: Appeal for Peace in d, To my Pony in g & s, Raiding Song in b, On the Raising of the Tribal Horse 1903, Leaving Burao before Jidballi, Object of Fighting) • Gabei / Gabay (Songs XI–XIV: Lament on the Raids of the Mullah 1900–1904, My future Wife, To Dahab, A Love Song)",
+          "pronunciation": "ga-bei / gee-rar / hes",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Songs I–XIV, pp. 170–183",
+          "audioFile": null
+        },
+        {
+          "english": "Yibir (Anas) & Midgan (Alowa) Craft-Guild Registers & Comparative Lexicon (Kirk 1905 pp. 184–214)",
+          "translation": "Origin narrative of Au Barkhadle (Yusuf al-Kowneyn) & Mohamed Hanif (Samatarr scan) establishing the sámanyo birth/marriage fee • Guild lexicon: Anas (Yibir), Alowa (Midgan), Gara‘ (Somali), awel (father), ifir (mother), gàd (man), gàda (woman), yag (camel), walàwih (horse), madah [Yibir] / yohon [Midgan] (water), kàhh [Yibir] / ssidkho [Midgan] (fire), gob [Yibir] / indokhol [Midgan] (eye), anagnag [Yibir] / kulul [Midgan] (milk)",
+          "pronunciation": "a-nas, a-lo-wa, ga-ra, a-wel, i-fir, gad, yag, wa-la-wih, ma-dah, yo-hon",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Notes on the Yibir and Midgan Dialects, pp. 184–214",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 903–909) Somali Vocabulary Set 1 (#1 Somali of Berbera & Lake Rudolf Borderlands): Fauna, Body & Material Culture",
+          "translation": "Ant: Quranjω • Hartebeest: Sīk • Grant's gazelle: Aul • Thomson's gazelle: Derω • Oryx: Deʻid • Kudu: Gωdir • Bushbuck: Deriáyan • Madoqua (dik-dik): Sakarω • Rhinoceros: Wil • Giraffe: Gēri • Baboon/Monkey: Dair • Arm: ʻOdet (pl. ʻOdetu) • Arrow/Bow: Falắḍ, Γānsω (pl. -in) • Axe: Jidib (pl. Jidibu / Jidibadi) • Back: Dabărka • Beard: Găt • Bee: Ṣinni • Belly: Ālōl • Bird: Ṣimbir (pl. -u) • Blood: Dīg • Body: Jitka • Bone: Laf (pl. Laffω) • Brains: Maskah' • Breast: Qapsin • Brother: Wallál (pl. -ω) • Sister: Walaṣe • Buffalo: Lω debadet • Canoe: Sehímat / Huri • Cat: Dinād • Cattle/Cow: Lō / Saʻ (f.) • Chief: Garad • Child: Elmω (pl. Harūr) • Cloth: Dār • Country/Town: Magalω • Crocodile: Jahaz • Day: Maalin (pl. -ω) • Night: Habeīn • Dog: Eī (pl. Eīda / Eīū; f. Edidik) • Donkey: Doberr • Door: Afaf (pl. -iū) • Drum: Durbān • Ear: Deg (pl. Dego) • Egg: Okhan • Elephant: Morωḍi (pl. -u) • Eye: Il (sg.) / Indω (pl.) • Face: Wej • Fat: Subak • Finger: Farr (pl. Farω) • Fire: Dăb • Fish: Kalūn • Foot/Leg: Lug (dual Lugod, pl. Lugω) • Fowl: Tejād (pl. Tejajω) • Goat: Ri (pl. Riω) • God: Ilahe • Grass: Gedω • Ground: ʻId • Guinea-fowl: Tigirin • Hair: Timω • Hand: Gaān • Head: Mădăh' (pl. -iω) • Heart: Gălbi • Hippopotamus: Jēr • Honey: Mălăp • Horn: Gēs (pl. Gēsω) • Horse: Faras (m.) / Gēnio (f.) • House: Aqal • Hunger: Gācω • Hyena: Warāba • Iron: Birr • Ivory: Fōl • Knee: Jīlip • Knife: Mīddī́ • Leopard: Sabēl • Lips: Debīn (pl. Dĕbĕnu) • Man: Nin (pl. Niman) • Meat: Hilip • Moon: Dayah' • Mountain: Bor • Name: Magāʻ • Neck: Kor / Qor • Nose: Săn • Rain: Rōp • River: Dōh' / Webi • Road: Wăḍḍω / Jīd • Sheep: Lah' / Iḍω • Shield: Gaṣān • Skin/Hide: Sān / Hārg • Sky: Dorūr • Sleep: Hurdu • Smoke: Qīq • Snake: Māss • Son: Inăñke • Song: Găbāe • Spear: Waran • Star: Hedig • Stick: ʻΩl • Stone: Dăgăh' • Sun: Orăh' • Tear: Ωhin • Thief: Tūk • Thorn: Kodăh' • Tobacco: Būri • To-day: Māta • Tongue: Arrăp • Tooth: Ilik / Ilkω • Tree: Gēd / Gēdet • Twins: Matanω • War: Derir • Water: Piyω • Wife: Nāk / Affω • Wind: Dabēl • Woman: Inān • Wood: Habω / Koriω • Year: Gū (pl. Guyω) • Zebra: Faru",
+          "pronunciation": "qu-ran-jo / mor-o-di / wa-ra-ba / da-gah / o-rah / pi-yo",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 1 (#1 Somali), pp. 903–908",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 909–912) Somali Numerals (1–1,000), Pronouns, Possessives & Conversational Sentences",
+          "translation": "Numerals (p. 909): 1 Kω • 2 Laba • 3 Sădeh' • 4 Afar • 5 Ṣen • 6 Leh' • 7 Tódωwa • 8 Sedēt • 9 Sagal • 10 Tobān • 11 Kωbiyetω băn • 20 Labātan • 30 Soddăn • 40 Afartan • 50 Kontān • 60 Lihidan • 70 Todobātan • 80 Sidētan • 90 Sagaṣen • 100 Boγol • 1000 Kūn • Pronouns & Possessives (pp. 909–910): An / Anega (I), Adiga / Ku (thou), Isăgă (he), Anakka (we), Idĭñka (you), Yēga (they); Ni kan (this man), Ni kā (that man), Ged kăn (this tree), Ged kā (that tree); Aγal kaegi (my house), Aγal kāgi (thy house), Aγal kisa (his house), Magal ledeni (our town), Magal adini (your country), Harur tωdi (their children) • Adjectives (p. 910): Wahăntai (bad), Wanaksantai / Wanáksen (good), Weiai (great), Wayeriai (little), Lāb (male), Didig (female), ʻAdie / ʻad (white), Medū (black), Bădăn (plenty), Hălkan (here), Halkā (there), Didi / Maya (no, not) • Sentences (pp. 910–912): Hagū tēgĕ? (Where did he go?) • Ya sωgalḗ (Who comes in?) • Mahad lōđai (What do you say?) • Had mad imăn? (When art thou coming?) • Sorissi (Give me food) • ʻΩl yer ijer (Cut me a small stick) • Wahan dωnaya dagah' yer (I want a little stone) • Akal ka gudilusa kūjira (He is inside the house) • Ṣimbr ti wadωṣe (The birds flew away) • Issagu waega deri yahai (He is taller than I) • Ged ki jĕlĕsana dēʻ (The rotten tree falls) • Maye arkaisa? — Maya; didi (Can you see me? — No, I cannot)",
+          "pronunciation": "ko, la-ba, sa-deh, a-far, sen, leh, to-do-wa, se-det, sa-gal, to-ban",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 1 (#1 Somali), pp. 909–912",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (de Larajasse 1897, Johnston 1902 & Kirk 1905)"
+  "source": "Public Domain Historical Lexicons (de Larajasse 1897, Johnston 1902 & Kirk 1905); Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II"
 }

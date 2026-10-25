@@ -11,7 +11,7 @@
   "hasAudio": false,
   "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
-  "contributorNote": "Taveta (Kitaveta / Kituweta) dictionary compiled line-by-line from Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 86–89, #15 Taveta, 1919 — Public Domain), A. C. Hollis ('Taveta Sayings and Proverbs', Journal of the African Society 9, 1910 & 'Taveta Enigmas', Vol. 10, 1911 — Public Domain), Rev. A. R. Steggall (1892–1906 CMS Taveta translations — Public Domain), and Wikipedia Taveta_language.",
+  "contributorNote": "Taveta (Kitaveta / Kituweta) dictionary compiled line-by-line from Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 98–112 & Vol. II, pp. 33–34, #15 Taveita, 1919 — Public Domain), A. C. Hollis ('Taveta Sayings and Proverbs', Journal of the African Society 9, 1910 & 'Taveta Enigmas', Vol. 10, 1911 — Public Domain), Rev. A. R. Steggall (1892–1906 CMS Taveta translations — Public Domain), and Wikipedia Taveta_language.",
   "categories": [
     {
       "id": "greetings",
@@ -246,7 +246,7 @@
           "english": "Twenty / One hundred",
           "translation": "mirongo miwi (20) / igana (100)",
           "pronunciation": "mi-ron-go mi-wi / i-ga-na",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 88) — #15 Taveta",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta",
           "audioFile": null
         }
       ]
@@ -260,14 +260,14 @@
           "english": "Man",
           "translation": "mndu mume (pl. wandu waume)",
           "pronunciation": "m-ndoo moo-meh",
-          "context": "Johnston 1919 p. 93 #16 Taveta",
+          "context": "Johnston 1919 p. 101 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Woman",
           "translation": "mche (pl. wache)",
           "pronunciation": "m-cheh / wah-cheh",
-          "context": "Johnston 1919 p. 95 #16 Taveta & Hollis 1910",
+          "context": "Johnston 1919 pp. 106–109 #15 Taveita & Hollis 1910",
           "audioFile": null
         },
         {
@@ -281,7 +281,7 @@
           "english": "Man / Husband & Woman / Wife",
           "translation": "momi (pl. waomi) / mche (pl. wache)",
           "pronunciation": "mo-mi / mche",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 87) — #15 Taveta",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 100–106) — #15 Taveta",
           "audioFile": null
         },
         {
@@ -414,14 +414,14 @@
           "english": "Sheep",
           "translation": "ng'ondi",
           "pronunciation": "ngohn-dee",
-          "context": "Johnston 1919 p. 94 #16 Taveta",
+          "context": "Johnston 1919 pp. 103–104 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Dog",
           "translation": "kuli (pl. makuli)",
           "pronunciation": "koo-lee",
-          "context": "Johnston 1919 p. 91 #16 Taveta & Hollis 1910",
+          "context": "Johnston 1919 p. 100 #15 Taveita & Hollis 1910",
           "audioFile": null
         },
         {
@@ -498,21 +498,21 @@
           "english": "Day",
           "translation": "mrikazi (kucha = dawn)",
           "pronunciation": "m-ree-kah-zee / koo-chah",
-          "context": "Hollis 1910 Proverb #10 & Johnston 1919 #16",
+          "context": "Hollis 1910 Proverb #10 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Night",
           "translation": "kilo",
           "pronunciation": "kee-loh",
-          "context": "Johnston 1919 p. 93 #16 Taveta & Hollis 1910",
+          "context": "Johnston 1919 p. 101 #15 Taveita & Hollis 1910",
           "audioFile": null
         },
         {
           "english": "Star",
           "translation": "nyota",
           "pronunciation": "nyoh-tah",
-          "context": "Johnston 1919 p. 94 #16 Taveta",
+          "context": "Johnston 1919 pp. 103–104 #15 Taveita",
           "audioFile": null
         },
         {
@@ -610,21 +610,21 @@
           "english": "Meat",
           "translation": "nyama",
           "pronunciation": "nyah-mah",
-          "context": "Hollis 1910 & Johnston 1919 p. 93 #16 Taveta",
+          "context": "Hollis 1910 & Johnston 1919 p. 101 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Milk",
           "translation": "maziwa (mabele)",
           "pronunciation": "mah-zee-wah / mah-beh-leh",
-          "context": "Johnston 1919 p. 93 #16 Taveta",
+          "context": "Johnston 1919 p. 101 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Food",
           "translation": "chakuria (wari = ugali)",
           "pronunciation": "chah-koo-ree-ah / wah-ree",
-          "context": "Hollis 1910 Taveta Proverbs & Johnston 1919 #16",
+          "context": "Hollis 1910 Taveta Proverbs & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
@@ -694,35 +694,35 @@
           "english": "Speak",
           "translation": "kuteta (-teta) / kugamba",
           "pronunciation": "koo-teh-tah / koo-gahm-bah",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Come",
           "translation": "kudza (-dza)",
           "pronunciation": "koo-dzah",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Go",
           "translation": "kugenda (-genda)",
           "pronunciation": "koo-gehn-dah",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Drink",
           "translation": "kunwa (-nwa)",
           "pronunciation": "koo-nwah",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Eat",
           "translation": "kuria (-ria)",
           "pronunciation": "koo-ree-ah",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
@@ -855,28 +855,28 @@
           "english": "Small",
           "translation": "-dori (-ke)",
           "pronunciation": "doh-ree / keh",
-          "context": "Johnston 1919 p. 95 #16 Taveta",
+          "context": "Johnston 1919 pp. 106–109 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Big",
           "translation": "-kulu (-baa)",
           "pronunciation": "koo-loo",
-          "context": "Johnston 1919 p. 95 #16 Taveta",
+          "context": "Johnston 1919 pp. 106–109 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Bad",
           "translation": "-bi (-wi)",
           "pronunciation": "bee / wee",
-          "context": "Johnston 1919 p. 95 #16 Taveta",
+          "context": "Johnston 1919 pp. 106–109 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Good",
           "translation": "-edi (-idzi)",
           "pronunciation": "eh-dee / ee-dzee",
-          "context": "Johnston 1919 p. 95 #16 Taveta",
+          "context": "Johnston 1919 pp. 106–109 #15 Taveita",
           "audioFile": null
         },
         {
@@ -897,14 +897,14 @@
           "english": "Personal Pronouns: I / Thou / He, She / We / You (pl.) / They",
           "translation": "imi / uwe / iye / iswi / inywi / wawo",
           "pronunciation": "i-mi / u-we / i-ye / i-swi / i-nywi / wa-wo",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 88) — #15 Taveta",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta",
           "audioFile": null
         },
         {
           "english": "Possessive Stems: My / Thy / His, Her / Our / Your / Their",
           "translation": "-akwa / -ako / -akwe / -etu / -enyu / -awo",
           "pronunciation": "-a-kwa / -a-ko / -a-kwe / -e-tu / -e-nyu / -a-wo",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 88) — #15 Taveta",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta",
           "audioFile": null
         },
         {
@@ -953,7 +953,7 @@
           "english": "Mount Kilimanjaro",
           "translation": "Kilima Njaro",
           "pronunciation": "kee-lee-mah n-jah-roh",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
@@ -995,49 +995,56 @@
           "english": "Honey",
           "translation": "uki",
           "pronunciation": "oo-kee",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Spear",
           "translation": "fumo (pl. mafumo)",
           "pronunciation": "foo-moh",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Bow",
           "translation": "uta",
           "pronunciation": "oo-tah",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Arrow",
           "translation": "muvi (pl. mivi)",
           "pronunciation": "moo-vee",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Leopard",
           "translation": "ngwe",
           "pronunciation": "ngweh",
-          "context": "Hollis 1910 & Johnston 1919 #16",
+          "context": "Hollis 1910 & Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "Twenty",
           "translation": "mirongo miwiri",
           "pronunciation": "mee-rohn-goh mee-wee-ree",
-          "context": "Johnston 1919 #16 Taveta",
+          "context": "Johnston 1919 #15 Taveita",
           "audioFile": null
         },
         {
           "english": "One hundred",
           "translation": "igana",
           "pronunciation": "ee-gah-nah",
-          "context": "Johnston 1919 #16 Taveta",
+          "context": "Johnston 1919 #15 Taveita",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's (1919–1922) #15 Taveita Corpus: Lumi River Forest Lexicon, Prefixes & Numerals",
+          "translation": "Prefixes (Vol. I, p. 111 & Vol. II, p. 33): Class 1/2 M-/Va- (M-ndū pl. va-ndū 'person', M-kā pl. va-kā 'wife', M-omi 'husband'), Class 16 Ha- (Ā-ha 'here', Hā-lya 'there', Hā-lē 'far', Hā-fūhī 'near', Ha-sī 'below', Kū-zō 'above') • Numerals (p. 107): -mwe (1), -vīrī (2), -tātū (3), -nā/I-nnā (4), -sānω (5), Tāndātū (6), M-fūṅgātē (7), M-nānē (8), K-ēnda (9), I-kūmi (10), Mī-rōṅgω mī-vīrī (20), I-gāna (100), Ki-hīndē/Ki-hīndi (1,000) • Distinctive Roots (pp. 98–110 & Vol. II, p. 34): I-regeṅ/N-ragiñ (baboon), I-diω (banana), Kωlω/Ki-lezu (beard), M-bafu (man's breast), Mṅgwa pl. va- (chief), Suke (cloth), Tere (country), M-ri (day), Mu-γaṅga (doctor), M-baru/Kωši (dog), Lu-veṅge pl. m-beṅge (door), Fωle (fear), N-guluma (fish), N-zeṅge (he-goat), N-gelele (guinea-fowl), Ki-dūwi (hill/mountain), N-gerere (hippopotamus), Baω (hyena), Menya (iron), Ki-dara (island), N-keri (leopard), M-furω (river), I-rīva (cloud), M-zōrω/M-sīṅga (slave), M-wωhe (sleep), I-ša (thorn), I-dīma (today), I-gāma (tomorrow), I-gōlω (yesterday), M-oṅgω (town), Nkōndō (war), M-gūṅgu (wind), I-tīkω (zebra)",
+          "pronunciation": "ki-ta-vei-ta / m-ngwa / m-fu-rω / ki-du-wi / ki-hi-nde",
+          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 98–112; Vol. II, 1922, pp. 33–34)",
           "audioFile": null
         }
       ]

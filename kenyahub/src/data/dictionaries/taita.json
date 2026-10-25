@@ -9,7 +9,7 @@
     "Taita-Taveta"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
+  "dictionaryVersion": "3.2",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Taita (Kidaw'ida & Kisagala) dictionary compiled from Rev. J. A. Wray ('An Elementary Introduction to the Taita Language', SPCK London, 1894 — Public Domain), A. Downes Shaw ('A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages', 1885 — Public Domain), Kunihiko Sakamoto (2003–2005), and Unicode CLDR (dav.xml).",
   "categories": [
@@ -19,10 +19,17 @@
       "icon": "👋",
       "entries": [
         {
-          "english": "Hello",
-          "translation": "Mwakucha! (morning) / Mwatinda! (day) / Uko mzadze?",
-          "pronunciation": "mwah-koo-chah / mwah-teen-dah",
-          "context": "Wray 1894 p. 59 Taita salutations",
+          "english": "Meeting Salutation (Kisagala — Wray 1894, p. 115) / Morning & Day Greeting (Kidawida)",
+          "translation": "Voro! — Voro! Mzima? — Mzima. — Ndo vidzo! — Simanya uwe. — A! nami ni mzima. — Ndo vidzo. (Kidawida: Mwakucha! / Mwatinda!)",
+          "pronunciation": "vo-ro! m-zi-ma? ndo vi-dzo! / mwah-koo-chah",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 115 (Salutation / kurogoa) & Kidawida greetings",
+          "audioFile": null
+        },
+        {
+          "english": "Parting Salutation / Farewell (Wray 1894, p. 115)",
+          "translation": "Nagala ndam kalle maana (banana). — Resp.: Aya! nawe gale banana.",
+          "pronunciation": "na-ga-la ndam kal-le ma-a-na — a-ya! na-we ga-le ba-na-na",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 115 (Parting Salutation)",
           "audioFile": null
         },
         {
@@ -104,72 +111,72 @@
       "entries": [
         {
           "english": "One",
-          "translation": "imweri (-mweri)",
+          "translation": "mosi / -moju (Kisagala) • imweri / -mweri (Kidawida)",
           "pronunciation": "imweri",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Two",
-          "translation": "iwi (-wi / -bili)",
+          "translation": "pili / mbili / -ili (Kisagala) • iwi / -wi (Kidawida)",
           "pronunciation": "iwi",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Three",
-          "translation": "idadu (-dadu)",
+          "translation": "tatu / ndatu / -tatu (Kisagala) • idadu / -dadu (Kidawida)",
           "pronunciation": "idadu",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Four",
-          "translation": "ina (-na)",
+          "translation": "ine / -ne (Kisagala) • ina / -na (Kidawida)",
           "pronunciation": "ina",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Five",
-          "translation": "isanu (-sanu)",
+          "translation": "sano / -sano (Kisagala) • isanu / -sanu (Kidawida)",
           "pronunciation": "isanu",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Six",
-          "translation": "irandadu (-randadu)",
+          "translation": "tandatu / ndandatu / -tandatu (Kisagala) • irandadu (Kidawida)",
           "pronunciation": "irandadu",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Seven",
-          "translation": "mfungade",
+          "translation": "mfungate (Kisagala) • mfungade (Kidawida)",
           "pronunciation": "mfungade",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "wunyanya",
+          "translation": "nane / -nane (Kisagala) • wunyanya / inyanya (Kidawida)",
           "pronunciation": "wunyanya",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Nine",
-          "translation": "ikenda",
+          "translation": "ikenda (Kisagala & Kidawida)",
           "pronunciation": "ikenda",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Ten",
-          "translation": "ikumi",
+          "translation": "ikumi / afwa (e.g., mbuzi afwa \"ten goats\", Wray 1894 p. 22)",
           "pronunciation": "ikumi",
-          "context": "Wray (1894) & Sakamoto (2003) — Kidawida numerals",
+          "context": "Wray (1894, pp. 20–22) Kisagala & Kidawida",
           "audioFile": null
         },
         {
@@ -184,6 +191,27 @@
           "translation": "ikumi na iwi",
           "pronunciation": "ikumi na iwi",
           "context": "CLDR (dav.xml) & Sakamoto (2003)",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty (20) / Score (koruja) / Thirty (30) / Hundred (100) / Thousand (1,000)",
+          "translation": "mirongo miili (or koruja, p. 116) / mirongo mitatu / i'gana (pl. ma'gana) / ma'gana ikumi",
+          "pronunciation": "mi-ron-go mi-i-li / ko-ru-ja / i-ga-na / ma-ga-na i-ku-mi",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 20–21 & p. 116",
+          "audioFile": null
+        },
+        {
+          "english": "Ordinals 1st to 10th & Last (Wray 1894, p. 23)",
+          "translation": "-a hambiri (1st), -a kaili (2nd), -a katatu (3rd), -a kane (4th), -a kasano (5th), -a katandatu (6th), -a mfungate (7th), -a kanane (8th), -a ikenda (9th), -a ikumi (10th), -a mbale (last)",
+          "pronunciation": "-a ham-bi-ri, -a ka-i-li, -a ka-ta-tu, -a m-ba-le",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 23",
+          "audioFile": null
+        },
+        {
+          "english": "Adverbial Numbers: Once, Only once, Twice, Only twice, Thrice, How many times?, Often (Wray 1894, p. 23)",
+          "translation": "kamoju, kamojori, kaili, kaileri, katatu, kalinga?, kingi",
+          "pronunciation": "ka-mo-ju, ka-mo-jo-ri, ka-i-li, ka-i-le-ri, ka-ta-tu, ka-lin-ga",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 23",
           "audioFile": null
         }
       ]
@@ -1454,133 +1482,154 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "The Three Taita Hills Dialect Varieties (Johnston 1919 #14)",
+          "english": "The Three Taita Hills Dialect Varieties (Wray 1894 & Johnston 1919 #14–15)",
           "translation": "Kidawida (Dabida), Kisagala (Sagalla), & Kisighau (Kasigau)",
           "pronunciation": "ki-da-wi-da / ki-sa-ga-la / ki-si-ghau",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 82–85) & Rev. J. A. Wray (1894)",
+          "context": "Rev. J. A. Wray (1894) 'An Elementary Introduction to the Taita Language' & Sir Harry H. Johnston (1919, Vol. I, pp. 82–93)",
           "audioFile": null
         },
         {
-          "english": "7 Verbal Derivative Stems in Kisagala/Taita (Applied -ila/-ela, Causative -isa/-iza, Neuter -ika, Reciprocal -ana, Passive -wa, Reversive -ula)",
-          "translation": "ku-lim-a (cultivate) → ku-lim-ila (cultivate for) → ku-lim-isa (cause to cultivate) → ku-lim-ika → ku-lim-wa",
-          "pronunciation": "ku-li-ma -> ku-li-mi-la -> ku-li-mi-sa",
-          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 47–52",
+          "english": "9 Noun Classes & Concord System in Kisagala (Wray 1894, pp. 9–13)",
+          "translation": "Cl. I m-/wa- (mundu/wandu) • Cl. II m-/mi- (mgunda/migunda, mwiti/mīti) • Cl. III n-/n- (nyumba, mbuzi) • Cl. IV ki-,cha-/vi-,va- (kituli/vituli, chala/vala) • Cl. V i-,u-/ma-,mau- (iwano/mawano, ulili/maulili, meji) • Cl. VI lu-/nyu- (lumbo/nyumbo) • Cl. VII ka-,tu-/vi- Diminutives (kanyumba/vinyumba, tunguku/vinguku) • Cl. VIII andu (place, kwa-) • Cl. IX ku- Infinitives (kugora kwako)",
+          "pronunciation": "mun-du/wan-du, mwi-ti/mi-ti, ka-nyum-ba/vi-nyum-ba, an-du kwa-ngu",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 9–13",
           "audioFile": null
         },
         {
-          "english": "Ideophonic Adverbial Intensifiers (Wray 1894): Snow-white / Pitch-black / Blood-red / Brim-full",
-          "translation": "-erupe zwii! / -ilu tii! / -tunune choo! / ku-idzala ndoo!",
-          "pronunciation": "e-ru-pe zwii / i-lu tii / tu-nu-ne choo",
-          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 62–63",
+          "english": "Class VII Diminutives (ka- & tu- sg. → vi- pl. in Wray 1894, pp. 12–13; ka-/tu- in Johnston 1919 #15)",
+          "translation": "kanyumba → pl. vinyumba (little house), tunguku → pl. vinguku (little fowl), tumwana → pl. viwana (little child); Kidawida: kanyonyi → tunyonyi (little bird), kachi → tuchi (little brook)",
+          "pronunciation": "ka-nyum-ba / vi-nyum-ba, tu-ngu-ku / vi-ngu-ku, tu-mwa-na / vi-wa-na",
+          "context": "Rev. J. Alfred Wray (1894, pp. 12–13) Kisagala Class VII & Sir Harry Johnston (1919, #15) Kidawida",
           "audioFile": null
         },
         {
-          "english": "Chief / Elder of the Homestead / Ancestral Skull Shrine",
-          "translation": "mghosi (pl. waghosi) / mfumu (diviner-healer) / ngoma (ancestral spirits)",
-          "pronunciation": "mgho-si / mfu-mu / ngo-ma",
-          "context": "Rev. J. Alfred Wray (1894, pp. 77–128) & W. E. Taylor (1891, Proverb #665)",
+          "english": "Locative Case Suffix -eni / -ni with kwa- Concord (Wray 1894, p. 13)",
+          "translation": "nyumba → nyumbeni kwangu (in my house), mbua → mbueni (in the garden), boro → boroni (in the cattle-fold), ngileni kwake (in his way), chongoni kwetu (in our heads)",
+          "pronunciation": "nyum-be-ni kwa-ngu, m-bu-e-ni, bo-ro-ni",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 13",
           "audioFile": null
         },
         {
-          "english": "Sugar-cane / Banana grove / Sweet potato / Maize / Millet",
-          "translation": "muwa (pl. miwa) / irugu (pl. marugu) / ikaji / mabemba / mwere",
-          "pronunciation": "mu-wa / i-ru-gu / i-ka-ji / ma-bem-ba / mwe-re",
+          "english": "7 Derivative Verb Forms in Kisagala (Wray 1894, pp. 60–62)",
+          "translation": "1. Frequentative (-na-...-a'ga: tana-dea'ga, wana-lima'ga) • 2. Applied (-ila/-ela: kudeila, kulimila, kuletela) • 3. Causative (-isa/-isha/-sa: kududugisha, kugalisha, kuujisa) • 4. Neuter/Feasible (-ka/-ika/-oka: kuvunjika, kugoloka, kudeika, kukamika) • 5. Reflexive (-ku-...-ēn: naku-kwita mwēn) • 6. Reciprocal (-ana/-anya: kushaiana, kulwanana, kugendanya) • 7. Strengthened/Reduplicated (kupasa-pasa, kuhada-hada)",
+          "pronunciation": "ta-na-de-a-ga / ku-li-mi-la / ku-du-du-gi-sha / ku-vu-nji-ka / ku-sha-i-a-na",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 60–62",
+          "audioFile": null
+        },
+        {
+          "english": "12 Ideophonic Adverbial Enclitics in Kisagala (Wray 1894, pp. 75–76)",
+          "translation": "Nyamala chwi (dead silent) • Ikumi chululu (ten and only ten) • Chanuka buu (smells horridly) • Mkundu lu (bright red) • Onyilu pi/fi (jet black) • Omnyangi tse (snow white) • Chakesua doo (fading red/yellow) • Nagora go (said everything) • Chanakulile ku (very hard) • Chamanga tuku (very fast/firm) • Chaoma ng'we ng'a (bone dry) • Si-shaia ng'o (not at all)",
+          "pronunciation": "nyamala chwi / ikumi chululu / mkundu lu / onyilu pi / omnyangi tse / chaoma ng'we ng'a",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 75–76",
+          "audioFile": null
+        },
+        {
+          "english": "Taita Proverb #665 Recorded by Rev. W. E. Taylor (1891, p. 160): Two occupations were too heavy for the hyena",
+          "translation": "Kazi mbili zam'lema fisi",
+          "pronunciation": "ka-zi m-bi-li zam-le-ma fi-si",
+          "context": "Rev. W. E. Taylor (1891) 'African Aphorisms; or, Saws from Swahili-Land', Taita Proverb § 665, p. 160",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Taita Riddle (Enigma) Formula (Wray 1894, p. 93): My house has no door?",
+          "translation": "Wada! — Resp.: Na wada! — Riddle: Nyumba yangu siiwesi mjango? — If unguessed: Ni-hawe muzi ('Give me a town') — Answer: Igi ('An egg')",
+          "pronunciation": "wa-da! na wa-da! nyum-ba yan-gu si-i-we-si m-jan-go? ni-ha-we mu-zi — i-gi",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 93 (Enigma)",
+          "audioFile": null
+        },
+        {
+          "english": "4 Taita Seasons & Coldest Months (Wray 1894, p. 113 & p. 116)",
+          "translation": "Ishika (mvula ya ishika, March–May greater rains) • Kwalazi (June–Sept cold dry season; June–July = Mtsuo) • Vuli (mvula ya vuli, Oct–Dec lesser rains) • Kaskazi (Jan–Feb hot season)",
+          "pronunciation": "i-shi-ka / kwa-la-zi / m-tsu-o / vu-li / kas-ka-zi",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 113 (Rain) & p. 116 (Season)",
+          "audioFile": null
+        },
+        {
+          "english": "13 Taita Divisions of Day & Night and Lunar Decades (Wray 1894, p. 106 & p. 123)",
+          "translation": "makeo (1st cock-crow), ikesho kiro (2nd cock-crow), ikesho (sunrise), msenya (daytime), msenya 'gati (midday), ijua ku-chunguluka (past noon), hafuka (afternoon/evening), lumisimisi (dusk), kiro (night), nyungu ku-kalla motoni (~9 p.m. 'pot on the fire'), wandu ku-tungura (10–11 p.m. 'people dozing'), haring'a za hambiri (12–2 a.m. 'first sleep'), haring'a za nyuma (3–4 a.m. 'last sleep') • Lunar decades: mwezi kongo (new moon), ikumi lya hambiri, ikumi lya 'gati, ikumi lya kizimu",
+          "pronunciation": "ma-ke-o / i-ke-sho / m-se-nya ga-ti / ha-fu-ka / lu-mi-si-mi-si / ha-rin-ga za ham-bi-ri",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 106 (Month) & p. 123 (Time)",
+          "audioFile": null
+        },
+        {
+          "english": "9 Stages of Maize (ibemba) & 9 Stages of Sorghum (mwemba) Growth (Wray 1894, pp. 87–88)",
+          "translation": "Maize (ibemba/mabemba): 1. ku-oka (sprout), 2. koka (blade), 3. mchokochoko, 4. mwakolola, 5. mwatumbulua, 6. mwavala, 7. mwatunga (forming grain), 8. mwabala, 9. mwaoma (ripe) • Sorghum (mwemba): 1. ku-mera, 2. mwakumbania, 3. mwaguta (hollow stem), 4. mwatunga mimba, 5. mwabuta (ear comes out), 6. mwaalika, 7. mwatunga, 8. mwakomaa, 9. mwaoma",
+          "pronunciation": "i-bem-ba / ma-bem-ba / m-cho-ko-cho-ko / mwem-ba / mwa-gu-ta / mwa-o-ma",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 87–88 (Corn)",
+          "audioFile": null
+        },
+        {
+          "english": "11 Taita Antelope Species & Bush-Buck Bathing Taboo (Wray 1894, pp. 79, 84, 109, 113)",
+          "translation": "sambe (male kudu) & i'galu (female kudu), shakwa (water-buck), makuli (small yellow antelope), isha (steinbok), mbala (gazelle), ngulungu (bush-buck — taboo against washing in streams, p. 84), dom (eland), gwali (hartebeest), nausi (impala), tamahi (oryx, p. 109), ndoli (reed-buck, p. 113)",
+          "pronunciation": "sam-be / i-ga-lu / sha-kwa / ngu-lu-ngu / dom / gwa-li / na-u-si / ta-ma-hi",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 79, 84, 109, 113",
+          "audioFile": null
+        },
+        {
+          "english": "Ivory Tusk Trade Grades, Beads & Cloth Varieties (Wray 1894, pp. 81, 86, 102)",
+          "translation": "Ivory (njovu, p. 102): kibori (very small tusk), tofwa (small), tofwa shagangi (medium), isange (largest prime tusk) • Beads (lukangi/ngangi, p. 81): maziwa (large white), njama (small red), kanyera, kikoromba, mtinikia, ngolole, mbuibui, kipundurya, kisambe • Cloth (nguwo, p. 86): ilesi, kaniki, bafuta, mardufu, kanga, kikoi, shuka, ibusha, kitambi",
+          "pronunciation": "ki-bo-ri / to-fwa / i-san-ge / lu-kan-gi / ngan-gi",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 81, 86, 102",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Musical Instruments & Taita War-Cry (Wray 1894, p. 89 & p. 107)",
+          "translation": "Instruments (p. 107): ngoma (drum), gunda (horn), nderere (flute), nguli (small dance bells), mbewewe (ankle rattles) • War-cry (lukungu, p. 89): 'Mwasasi, mwasasi wome, mwana wa ng'anya mbareni ngolo, mwasasi wome!'",
+          "pronunciation": "ngo-ma / gun-da / nde-re-re / ngu-li / m-be-we-we / lu-kun-gu",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', p. 89 (Cry) & p. 107 (Musical instruments)",
+          "audioFile": null
+        },
+        {
+          "english": "Reciprocal Grandparent/Grandchild Kinship, Ancestral Skull Caves & Ancient Cairns (Wray 1894, pp. 81, 84, 98, 99, 118, 124)",
+          "translation": "wawa (grandfather/grandson reciprocal) & ake (grandmother/granddaughter reciprocal, p. 98) • ngoma / ngomeni (ancestral spirits & sacred skull caves where skulls of elders were preserved after about a year, pp. 84, 118) • mfingiri (ancient stone cairns built by the aboriginal Warwana, p. 99) & Mwibabu (ancient aboriginal people who made red earthenware pots with ears, pp. 81, 124)",
+          "pronunciation": "wa-wa / a-ke / ngo-ma / ngo-me-ni / m-fin-gi-ri / wa-rwa-na / mwi-ba-bu",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 81, 84, 98, 99, 118, 124",
+          "audioFile": null
+        },
+        {
+          "english": "Taita Hills (Dabida), Mount Sagala & Kasigau Peak",
+          "translation": "Mang'u ga Dawida • Mang'u ga Sagala • Kisigau",
+          "pronunciation": "mahn-goo gah dah-wee-dah / sah-gah-lah / kee-see-gah-oo",
+          "context": "Rev. J. A. Wray (1894) & Sir Harry Johnston (1919 #14–15)",
+          "audioFile": null
+        },
+        {
+          "english": "Wise Elder / Diviner-Healer / Homestead",
+          "translation": "mghosi (pl. waghosi) / mfumu (pl. wafumu) / muzi (mudzi, pl. mizi)",
+          "pronunciation": "m-gho-si / m-fu-mu / mu-zi",
           "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 77–128",
           "audioFile": null
         },
         {
-          "english": "Taita Hills (Dabida)",
-          "translation": "Mang'u ga Dawida",
-          "pronunciation": "mahn-goo gah dah-wee-dah",
-          "context": "Wray 1894 & Taylor 1891",
+          "english": "Sugarcane / Banana / Sweet Potato / Maize / Millet / Honey",
+          "translation": "muwa or mugwa (pl. miwa/migwa) / irugu (pl. marugu) / ikaji (pl. makaji) / ibemba (pl. mabemba) / mwemba & mwere / uki (pl. mauki, Class Vd p. 12)",
+          "pronunciation": "mu-wa / i-ru-gu / i-ka-ji / i-bem-ba / mwem-ba / u-ki",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 12, 77–128",
           "audioFile": null
         },
         {
-          "english": "Mount Sagala",
-          "translation": "Mang'u ga Sagala",
-          "pronunciation": "mahn-goo gah sah-gah-lah",
-          "context": "Wray 1894 Elementary Introduction to the Taita Language",
+          "english": "Bow / Arrow / Stool / Mortar / Door",
+          "translation": "uta (pl. mauta, Cl. Vd p. 12; or ndana) / iwano (pl. mawano, Cl. Va p. 11) / kiti (pl. viti) / kituli (pl. vituli, Cl. IV p. 10) / mjango or mlango (pl. mijango/milango)",
+          "pronunciation": "u-ta / ma-u-ta / i-wa-no / ki-tu-li / m-jan-go",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 10–12, 92",
           "audioFile": null
         },
         {
-          "english": "Kasigau Peak",
-          "translation": "Kisigau",
-          "pronunciation": "kee-see-gah-oo",
-          "context": "Wray 1894 & Johnston 1919 #15",
+          "english": "Sir Harry Johnston's (1919–1922) #14 Taita (Ki-dabida, Ki-sagala, Ki-siγau) Comparative Corpus",
+          "translation": "Three Dialects (Vol. I, p. 112 & Vol. II, pp. 32–33): Ki-dabida (Dabida/Bura hills), Ki-sagala (Sagala hills), and Ki-siγau (Mount Kasiγau; in Ki-siγau v replaces w/b, γ stands for g, z for s, d for t, and r for older z) • Pronouns & Particles (pp. 107–110): 1s I-mi/Mīmi (poss. -āpō/-āpwa 'my'), 1p I-swi/I-su (Dū-/Tū-, poss. -ēdū/-ētū 'our'), 3p I-vō/Wāō (Vā-/Wā-, poss. -āvō/-āwō 'their'), -ōsē/-pūtū ('all'), Śi-kātī ('middle'), -a n-dēnyi ('inside', Errata p. x), Ā-ā!/Ndē! ('no!'), negative verb prefixes Ndē-, Sī-, Tā- • Distinctive Roots (pp. 98–106 & Vol. II, p. 33): I-rawa/M-riω/I-vi (arrow), I-fuwe/I-sabaω (baboon), Baga/Bi-gati (blood), N-dana (bow), Sukω/M-zoṅgω (brains), Lagaya/Ki-kua (man's breast), M-zuri/M-fumwa (chief), I-saṅga (country), N-tagω (heifer), Ki-lavu/M-si/I-dime (day), Kωši/Kωci/Cucu (dog), M-ωdω (fire, Errata p. x), Lu-aiyω pl. ny-aiyω (foot, Errata p. x), Ōrω/Hōrω/M-fωgω/Fwandi (he-goat), M-beni/M-buguma (she-goat), C-oṅgω pl. vy-oṅgω (head), Ki-fumvu/Fumbu/M-gondi (hill/mountain), M-garω (bachelors' hut), Mw-ēda/M-ωda (river), I-dīme (today), Mā-zīndē/Kēlω (tomorrow), I-gōlω (yesterday), Fōrω (zebra)",
+          "pronunciation": "ki-da-bi-da / ki-sa-ga-la / ki-si-ghau / -a-po / -pu-tu",
+          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 98–112; Vol. II, 1922, pp. 32–33)",
           "audioFile": null
         },
         {
-          "english": "Wise Elder / Homestead Head",
-          "translation": "mghosi (pl. waghosi)",
-          "pronunciation": "m-ghoh-see / wah-ghoh-see",
-          "context": "Wray 1894 & Taylor 1891 #665",
-          "audioFile": null
-        },
-        {
-          "english": "Ancestral Skull Shrine",
-          "translation": "ngoma (pl. mangoma)",
-          "pronunciation": "ngoh-mah",
-          "context": "Hobley 1910 & Wray 1894 Taita heritage",
-          "audioFile": null
-        },
-        {
-          "english": "Sugarcane",
-          "translation": "mugwa (pl. migwa)",
-          "pronunciation": "moo-gwah",
-          "context": "Wray 1894 p. 20 Class II",
-          "audioFile": null
-        },
-        {
-          "english": "Honey",
-          "translation": "uki",
-          "pronunciation": "oo-kee",
-          "context": "Wray 1894 & Shaw 1885 Ki-Taita",
-          "audioFile": null
-        },
-        {
-          "english": "Bow",
-          "translation": "ndana",
-          "pronunciation": "n-dah-nah",
-          "context": "Wray 1894 & Johnston 1919 #15",
-          "audioFile": null
-        },
-        {
-          "english": "Arrow",
-          "translation": "iwano (pl. mawano)",
-          "pronunciation": "ee-wah-noh",
-          "context": "Wray 1894 & Johnston 1919 #15",
-          "audioFile": null
-        },
-        {
-          "english": "Chair / Stool",
-          "translation": "kiti (pl. viti)",
-          "pronunciation": "kee-tee / vee-tee",
-          "context": "Wray 1894 p. 21 Class III",
-          "audioFile": null
-        },
-        {
-          "english": "Door",
-          "translation": "mlango (pl. milango)",
-          "pronunciation": "m-lahn-goh",
-          "context": "Wray 1894 p. 20 Class II",
-          "audioFile": null
-        },
-        {
-          "english": "Little Bird",
-          "translation": "kanyonyi (pl. tunyonyi)",
-          "pronunciation": "kah-nyoh-nyee / too-nyoh-nyee",
-          "context": "Wray 1894 p. 23 Class VII diminutive",
-          "audioFile": null
-        },
-        {
-          "english": "Little Brook / Stream",
-          "translation": "kachi (pl. tuchi)",
-          "pronunciation": "kah-chee / too-chee",
-          "context": "Wray 1894 p. 23 Class VII diminutive",
+          "english": "Dr. Krapf's (1850, pp. v–vi) Wateita of Kadiáro, Ndara & Bura and the Ethnonym \"Ambakómo\"",
+          "translation": "In his Preface dated October 14, 1850 (pp. v–vi), Rev. Dr. J. L. Krapf records collecting a vocabulary of the Wateita language and documents that the Wateita of the mountains of Kadiáro (Kasigau), Ndara (Sagala), and Bura (Dabida) call the coastal Wanika \"Ambakómo\" — preserving the historical memory that the ancestors of the Wanika formerly dwelt in the Pokómo country along the Tana River before being driven south by the Galla.",
+          "pronunciation": "wa-tei-ta / ka-di-a-ro / n-da-ra / bu-ra / a-mba-ko-mo",
+          "context": "Rev. Dr. J. L. Krapf (1850) 'Vocabulary of Six East-African Languages' (Tübingen), Preface pp. v–vi",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Shaw 1885, Taylor 1891, Wray 1894 & Johnston 1919)"
+  "source": "Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894 & Johnston 1919)"
 }

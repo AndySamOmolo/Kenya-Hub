@@ -51,7 +51,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           { target: 'omukhasi (pl. abakhasi)', source: 'Woman / Wife', pronunciation: 'oh-moo-khah-see', hint: 'Class 1/2 noun' },
           { target: 'omusatsa (pl. abasatsa)', source: 'Man / Husband', pronunciation: 'oh-moo-sah-tsah', hint: 'Class 1/2 noun' },
           { target: 'omwana (pl. abana)', source: 'Child (pl. Children)', pronunciation: 'oh-mwah-nah / ah-bah-nah', hint: 'Class 1/2 noun' },
-          { target: 'omwami (pl. abami)', source: 'King / Paramount Chief (Nabongo)', pronunciation: 'oh-mwah-mee / ah-bah-mee', hint: 'Rev. N. Stam (1929, p. 145) Wanga royal title' },
+          { target: 'omwami (pl. abami)', source: 'King / Paramount Chief (Nabongo)', pronunciation: 'oh-mwah-mee / ah-bah-mee', hint: 'Rev. N. Stam (1929, pp. 148–149) Wanga royal title' },
           { target: 'mama / papa (sese)', source: 'Mother / Father', pronunciation: 'mah-mah / pah-pah', hint: 'Core kinship terms (Hobley 1902)' }
         ],
         sentences: [
@@ -84,7 +84,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         title: 'Numbers 1–10 (Hobley 1902 & Johnston 1919) & Core Descriptive Roots',
         icon: 'Hash',
         description: 'Count from 1 to 10 in Luwanga/Oluluyia and use core descriptive stems.',
-        tips: "Hobley (1902, p. 69) and Johnston (1919, p. 54) record Luwanga/Lunyara numerals 1–10: ndala (-lala, 1), tsimbili (-bili, 2), tsitaru (-taru, 3), tsine (-ne, 4), tsiraano (-raano, 5), tsisaasaba (6), mufungate (tsisaba, 7), munane (8), shenda (9), ikhumi (10).",
+        tips: "Hobley (1902, pp. 84, 95) and Johnston (1919, p. 54) record Luwanga/Lunyara numerals 1–10: ndala (-lala, 1), tsimbili (-bili, 2), tsitaru (-taru, 3), tsine (-ne, 4), tsiraano (-raano, 5), tsisaasaba (6), mufungate (tsisaba, 7), munane (8), shenda (9), ikhumi (10).",
         words: [
           { target: '-lala (ndala)', source: 'One (1)', pronunciation: 'lah-lah', hint: 'Hobley (1902) & Johnston (1919 #5a)' },
           { target: '-bili (tsimbili)', source: 'Two (2)', pronunciation: 'bee-lee', hint: 'Hobley (1902) & Johnston (1919 #5a)' },
@@ -127,11 +127,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
         words: [
           { target: 'amaatsi / madzi', source: 'Water', pronunciation: 'ah-mah-tsee', hint: 'Hobley (1902) & Johnston (1919)' },
           { target: 'omuliro', source: 'Fire', pronunciation: 'oh-moo-lee-roh', hint: 'Hobley (1902) & Johnston (1919)' },
-          { target: 'liyuba (eliuba)', source: 'Sun', pronunciation: 'lee-yoo-bah', hint: 'Rev. N. Stam (1929, p. 151) & Johnston (1919)' },
+          { target: 'liyuba (eliuba)', source: 'Sun', pronunciation: 'lee-yoo-bah', hint: 'Rev. N. Stam (1929, p. 160) & Johnston (1919)' },
           { target: 'ifula', source: 'Rain', pronunciation: 'ee-foo-lah', hint: 'Hobley (1902) & Johnston (1919)' },
-          { target: 'Were / Nasayi', source: 'God, the Supreme Creator', pronunciation: 'weh-reh / nah-sah-yee', hint: 'Rev. N. Stam (1929, p. 148) Wanga religion' },
-          { target: 'Were ankhonyere / Nasayi akhulinde', source: 'May God help me / May God guard you', pronunciation: 'weh-reh ahn-khoh-nyeh-reh', hint: 'Rev. N. Stam (1929, p. 151) traditional blessing' },
-          { target: 'ekhyinekha / muziro', source: 'Clan totem / sacred taboo', pronunciation: 'eh-khyee-neh-khah / moo-zee-roh', hint: 'Stam (1929, p. 152) & Hobley (1903, p. 347)' },
+          { target: 'Were / Nasayi', source: 'God, the Supreme Creator', pronunciation: 'weh-reh / nah-sah-yee', hint: 'Rev. N. Stam (1929, pp. 154, 159–160) Wanga religion' },
+          { target: 'Were ankhonyere / Nasayi akhulinde', source: 'May God help me / May God guard you', pronunciation: 'weh-reh ahn-khoh-nyeh-reh', hint: 'Rev. N. Stam (1929, p. 160) traditional blessing' },
+          { target: 'musiro (muziro) / ekhyinekha', source: 'Clan totem (thing abstained from) / Soul or shadow', pronunciation: 'moo-see-roh / eh-khyee-neh-khah', hint: 'Stam (1929, pp. 162, 176) & Hobley (1903, p. 347)' },
           { target: 'okhunywa / okhuliira', source: 'To drink / To eat', pronunciation: 'oh-khoo-nywah / oh-khoo-lee-rah', hint: 'Class 15 infinitives' },
           { target: 'okhulola / okhumanya', source: 'To see / To know', pronunciation: 'oh-khoo-loh-lah / oh-khoo-mah-nyah', hint: 'Class 15 infinitives' },
           { target: 'okhwitsa / okhuchenda', source: 'To come / To walk', pronunciation: 'oh-khwee-tsah / oh-khoo-chehn-dah', hint: 'Class 15 infinitives' }
