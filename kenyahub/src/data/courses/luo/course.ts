@@ -2282,7 +2282,7 @@ const EXERCISES_UNIT: CourseUnit = {
           addUniqueWord(words, seenTargets, seenSources, {
             target: vocab.luo,
             source: vocab.english,
-            pronunciation: `${vocab.partOfSpeech}${vocab.notes ? ` • ${vocab.notes}` : ''}`,
+            pronunciation: `${vocab.partOfSpeech}${vocab.notes ? * • ${vocab.notes}* : ''}`,
             partOfSpeech: vocab.partOfSpeech,
           });
         }

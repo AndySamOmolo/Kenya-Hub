@@ -79,7 +79,7 @@ export const KAMBA_GRAMMAR_SECTIONS: KambaGrammarSection[] = [
   {
     id: 'kamba-verbal-system',
     title: 'Full Affirmative & Negative Verb Paradigms: Ku-thaima ("To Hunt") & Kw-enda ("To Love") (Last 1885, pp. 26–39 & Hinde 1904)',
-    summary: 'J. T. Last (1885, pp. 26–39) sets out full 9-class conjugation tables for ku-thaima ("to hunt") and kw-enda ("to like/love"), alongside Hinde's (1904) paradigm of ku-tinda.',
+    summary: 'J. T. Last (1885, pp. 26–39) sets out full 9-class conjugation tables for ku-thaima ("to hunt") and kw-enda ("to like/love"), alongside Hinde\x27s (1904) paradigm of ku-tinda.',
     content: `In *Grammar of the Kamba Language* (1885, pp. 26–39), J. T. Last documents the complete affirmative and negative conjugations of **ku-thaima** ("to hunt") and **kw-enda** ("to like/love") across all 9 noun classes:
 1. **Affirmative Indicative Tenses (Last 1885, pp. 27–34)**:
    - **Present Tense (*-a-*)**: 1s *N-a-thaim-a* (I hunt), 2s *W-a-thaim-a*, 3s *Y-a-thaim-a*, 1p *Tw-a-thaim-a*, 2p *Mw-a-thaim-a*, 3p *M-a-thaim-a* (Classes II–IX with *kw-enda*: *w-a-end-a / y-a-end-a*, *y-a-end-a / z-a-end-a*, *ch-a-end-a / y-a-end-a*, *y-a-end-a / g-a-end-a*, *w-a-end-a / z-a-end-a*, *k-a-end-a / tw-a-end-a*, *w-a-end-a*, *kw-a-end-a*).
