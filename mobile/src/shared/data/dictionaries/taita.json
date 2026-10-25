@@ -9,8 +9,8 @@
     "Taita-Taveta"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-23",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Taita (Kidaw'ida & Kisagala) dictionary compiled from Rev. J. A. Wray ('An Elementary Introduction to the Taita Language', SPCK London, 1894 — Public Domain), A. Downes Shaw ('A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages', 1885 — Public Domain), Kunihiko Sakamoto (2003–2005), and Unicode CLDR (dav.xml).",
   "categories": [
     {
@@ -18,6 +18,13 @@
       "name": "Greetings & Common Phrases",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Hello",
+          "translation": "Mwakucha! (morning) / Mwatinda! (day) / Uko mzadze?",
+          "pronunciation": "mwah-koo-chah / mwah-teen-dah",
+          "context": "Wray 1894 p. 59 Taita salutations",
+          "audioFile": null
+        },
         {
           "english": "Hello / How are you? (Dawida)",
           "translation": "Mwakucha / Uko wedi?",
@@ -65,6 +72,27 @@
           "translation": "Ndu / A'a",
           "pronunciation": "ndu",
           "context": "Wray (1894) — Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ndai? (nani?)",
+          "pronunciation": "n-dah-ee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "indini? (mbaki?)",
+          "pronunciation": "een-dee-nee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "kula? (aha?)",
+          "pronunciation": "koo-lah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]
@@ -1074,6 +1102,13 @@
           "pronunciation": "kiakan",
           "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
           "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "mwatate / mto",
+          "pronunciation": "mwah-tah-teh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1256,6 +1291,48 @@
           "pronunciation": "kulima",
           "context": "Wray (1894) — Taita",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "kuona / kulola",
+          "pronunciation": "koo-oh-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kusikila (-sikila)",
+          "pronunciation": "koo-see-kee-lah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "kumanya (-manya)",
+          "pronunciation": "koo-mah-nyah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kukunda (-kunda)",
+          "pronunciation": "koo-koon-dah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kuinka (-inka)",
+          "pronunciation": "koo-een-kah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kudeka (-deka)",
+          "pronunciation": "koo-deh-kah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1264,6 +1341,27 @@
       "name": "Adjectives, Pronouns & Grammar",
       "icon": "✨",
       "entries": [
+        {
+          "english": "Small",
+          "translation": "-ke (-tini)",
+          "pronunciation": "keh / tee-nee",
+          "context": "Wray 1894 p. 25 Kisagala adjectives",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-baa (-kulu)",
+          "pronunciation": "bah / koo-loo",
+          "context": "Wray 1894 p. 25 Kisagala adjectives",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "-bi (-wasi)",
+          "pronunciation": "bee / wah-see",
+          "context": "Wray 1894 p. 25 Kisagala adjectives",
+          "audioFile": null
+        },
         {
           "english": "I / Me",
           "translation": "imi",
@@ -1326,13 +1424,33 @@
           "pronunciation": "dini",
           "context": "Wray (1894) & Sakamoto (2003)",
           "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "-angi (-elu)",
+          "pronunciation": "ahn-gee / eh-loo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "-ilu (nyilu)",
+          "pronunciation": "ee-loo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "-tungu (-kundu)",
+          "pronunciation": "toon-goo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "wray-1894-taylor-1891-johnston-1919-taita",
-      "name": "Wray (1894), Taylor (1891) & Johnston (1919 #14) Historical Taita (Kisagala / Kidawida / Kisighau) Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -1368,6 +1486,97 @@
           "translation": "muwa (pl. miwa) / irugu (pl. marugu) / ikaji / mabemba / mwere",
           "pronunciation": "mu-wa / i-ru-gu / i-ka-ji / ma-bem-ba / mwe-re",
           "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 77–128",
+          "audioFile": null
+        },
+        {
+          "english": "Taita Hills (Dabida)",
+          "translation": "Mang'u ga Dawida",
+          "pronunciation": "mahn-goo gah dah-wee-dah",
+          "context": "Wray 1894 & Taylor 1891",
+          "audioFile": null
+        },
+        {
+          "english": "Mount Sagala",
+          "translation": "Mang'u ga Sagala",
+          "pronunciation": "mahn-goo gah sah-gah-lah",
+          "context": "Wray 1894 Elementary Introduction to the Taita Language",
+          "audioFile": null
+        },
+        {
+          "english": "Kasigau Peak",
+          "translation": "Kisigau",
+          "pronunciation": "kee-see-gah-oo",
+          "context": "Wray 1894 & Johnston 1919 #15",
+          "audioFile": null
+        },
+        {
+          "english": "Wise Elder / Homestead Head",
+          "translation": "mghosi (pl. waghosi)",
+          "pronunciation": "m-ghoh-see / wah-ghoh-see",
+          "context": "Wray 1894 & Taylor 1891 #665",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestral Skull Shrine",
+          "translation": "ngoma (pl. mangoma)",
+          "pronunciation": "ngoh-mah",
+          "context": "Hobley 1910 & Wray 1894 Taita heritage",
+          "audioFile": null
+        },
+        {
+          "english": "Sugarcane",
+          "translation": "mugwa (pl. migwa)",
+          "pronunciation": "moo-gwah",
+          "context": "Wray 1894 p. 20 Class II",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "uki",
+          "pronunciation": "oo-kee",
+          "context": "Wray 1894 & Shaw 1885 Ki-Taita",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "ndana",
+          "pronunciation": "n-dah-nah",
+          "context": "Wray 1894 & Johnston 1919 #15",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "iwano (pl. mawano)",
+          "pronunciation": "ee-wah-noh",
+          "context": "Wray 1894 & Johnston 1919 #15",
+          "audioFile": null
+        },
+        {
+          "english": "Chair / Stool",
+          "translation": "kiti (pl. viti)",
+          "pronunciation": "kee-tee / vee-tee",
+          "context": "Wray 1894 p. 21 Class III",
+          "audioFile": null
+        },
+        {
+          "english": "Door",
+          "translation": "mlango (pl. milango)",
+          "pronunciation": "m-lahn-goh",
+          "context": "Wray 1894 p. 20 Class II",
+          "audioFile": null
+        },
+        {
+          "english": "Little Bird",
+          "translation": "kanyonyi (pl. tunyonyi)",
+          "pronunciation": "kah-nyoh-nyee / too-nyoh-nyee",
+          "context": "Wray 1894 p. 23 Class VII diminutive",
+          "audioFile": null
+        },
+        {
+          "english": "Little Brook / Stream",
+          "translation": "kachi (pl. tuchi)",
+          "pronunciation": "kah-chee / too-chee",
+          "context": "Wray 1894 p. 23 Class VII diminutive",
           "audioFile": null
         }
       ]

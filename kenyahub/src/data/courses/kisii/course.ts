@@ -109,5 +109,50 @@ export const KISII_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'kisii-unit-2',
+    title: 'Unit 2: Dahl’s Law, Agriculture, Craftsmanship & Oral Wisdom (Hobley 1902 & Johnston 1919 #7)',
+    description: 'Master Ekegusii Dahl’s Law voicing (oko-/ogo-, eke-/ege-), highland crops, tools, and traditional Risaga community values.',
+    icon: '🌾',
+    skills: [
+      {
+        id: 'kisii-agriculture-culture',
+        title: 'Highland Crops, Tools, Pronouns & Risaga Solidarity',
+        icon: 'Award',
+        description: 'Learn Ekegusii vocabulary from Hobley (1902 Kossova) and Johnston (1919 #7 Ki-guzii).',
+        tips: "In Ekegusii, Dahl's Law voices k to g before a voiceless consonant in the next syllable: oko-manya (to know) vs. ogo-kama (to milk), eke-moni (cat) vs. ege-kombe (cup).",
+        culturalNote: "In Gusii highland tradition, 'risaga' is cooperative neighbourhood labour where homesteads unite to cultivate finger-millet (obori), thatch houses (chinyomba), and harvest crops.",
+        words: [
+          { target: 'inche, aye, ere, intwe, inywe, barabwo', source: 'I, you (sg.), s/he, we, you (pl.), they', pronunciation: 'een-cheh, ah-yeh, eh-reh, een-tweh', hint: 'Johnston (1919, p. 58 #7 Ki-guzii) pronouns' },
+          { target: 'obori / amaemba / erabuoni', source: 'Finger-millet (wimbi) / Sorghum / Sweet potato', pronunciation: 'oh-boh-ree / ah-mah-ehm-bah', hint: 'Hobley (1902, p. 65) highland staples' },
+          { target: 'obokima / obouki', source: 'Millet ugali / Honey', pronunciation: 'oh-boh-kee-mah / oh-boh-oo-kee', hint: 'Hobley (1902, p. 64)' },
+          { target: 'ritimo (pl. amatimo) / enguba', source: 'Spear (pl. Spears) / Shield', pronunciation: 'ree-tee-moh / ehn-goo-bah', hint: 'Hobley (1902, p. 66) & Johnston (1919 #7)' },
+          { target: 'obota / omogwe / orobanga', source: 'Bow / Arrow / Sword-knife (panga)', pronunciation: 'oh-boh-tah / oh-moh-gweh / oh-roh-bahn-gah', hint: 'Hobley (1902, p. 62)' },
+          { target: 'risaga / egesarate', source: 'Cooperative community work-party / Cattle boma', pronunciation: 'ree-sah-gah / eh-geh-sah-rah-teh', hint: 'Traditional Gusii institutions' },
+          { target: 'rogoro / maate', source: 'Upperside (Northern standard dialect) / Lowerside (South-western dialect)', pronunciation: 'roh-goh-roh / mah-teh', hint: 'Two main Ekegusii dialect zones' },
+          { target: 'gokama (-kama) / okoruga (-ruga)', source: 'To milk (Dahl’s Law ogo-) / To cook (oko-)', pronunciation: 'goh-kah-mah / oh-koh-roo-gah', hint: 'Dahl’s Law voicing before voiceless k' },
+          { target: 'Amaboko abere nigo agokora egesieri', source: 'Two hands together build the doorway (Proverb)', pronunciation: 'ah-mah-boh-koh ah-beh-reh', hint: 'Unity and cooperation' }
+        ],
+        sentences: [
+          { target: 'Amaboko abere nigo agokora egesieri.', source: 'Two hands together build the doorway.' },
+          { target: 'Omwana omonyakige ogokina na abagaka.', source: 'A respectful child sits with elders.' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'Why does the Ekegusii verb "gokama" (to milk) use "go-" instead of "oko-"?',
+            correctAnswer: 'Dahl’s Law voices k to g before the voiceless stem consonant -k-',
+            options: [
+              'Dahl’s Law voices k to g before the voiceless stem consonant -k-',
+              'It is a plural noun in Class 2',
+              'It is a negative past tense',
+              'It means "Good morning"'
+            ],
+            hint: 'oko- + -kama -> ogo-kama (gokama)'
+          }
+        ]
+      }
+    ]
   }
 ];

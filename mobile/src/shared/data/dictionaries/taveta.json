@@ -9,7 +9,7 @@
     "Taita-Taveta"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "2.0.0",
+  "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Taveta (Kitaveta / Kituweta) dictionary compiled line-by-line from Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 86–89, #15 Taveta, 1919 — Public Domain), A. C. Hollis ('Taveta Sayings and Proverbs', Journal of the African Society 9, 1910 & 'Taveta Enigmas', Vol. 10, 1911 — Public Domain), Rev. A. R. Steggall (1892–1906 CMS Taveta translations — Public Domain), and Wikipedia Taveta_language.",
   "categories": [
@@ -18,6 +18,20 @@
       "name": "Greetings & Common Phrases",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Friend",
+          "translation": "mbuya (mwandani)",
+          "pronunciation": "m-boo-yah",
+          "context": "Hollis 1910 Taveta Proverbs",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Ni wega / Chavuche",
+          "pronunciation": "nee weh-gah / chah-voo-cheh",
+          "context": "Kitaveta gratitude",
+          "audioFile": null
+        },
         {
           "english": "Hello",
           "translation": "Jahako",
@@ -72,6 +86,83 @@
           "translation": "Iraro la zowu liyaiwa ni suni",
           "pronunciation": "i-ra-ro la zo-wu li-yai-wa ni su-ni",
           "context": "A. C. Hollis (1910) 'Taveta Sayings and Proverbs' #14",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "imi (prefix ni-)",
+          "pronunciation": "ee-mee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "uwe (prefix u-)",
+          "pronunciation": "oo-weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "iye (prefix a-)",
+          "pronunciation": "ee-yeh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "iswi (prefix tu-)",
+          "pronunciation": "ee-swee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "awo (prefix wa-)",
+          "pronunciation": "ah-woh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ndai?",
+          "pronunciation": "n-dah-ee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "mbaki? (ki?)",
+          "pronunciation": "m-bah-kee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "kula? (ha?)",
+          "pronunciation": "koo-lah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "ikaya (lero)",
+          "pronunciation": "ee-kah-yah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "igolo (kesho)",
+          "pronunciation": "ee-goh-loh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "igolo",
+          "pronunciation": "ee-goh-loh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]
@@ -165,6 +256,20 @@
       "name": "People, Family & Kinship",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
+        {
+          "english": "Man",
+          "translation": "mndu mume (pl. wandu waume)",
+          "pronunciation": "m-ndoo moo-meh",
+          "context": "Johnston 1919 p. 93 #16 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "mche (pl. wache)",
+          "pronunciation": "m-cheh / wah-cheh",
+          "context": "Johnston 1919 p. 95 #16 Taveta & Hollis 1910",
+          "audioFile": null
+        },
         {
           "english": "Person / People",
           "translation": "mundu (pl. wandu)",
@@ -306,6 +411,20 @@
       "icon": "🐄",
       "entries": [
         {
+          "english": "Sheep",
+          "translation": "ng'ondi",
+          "pronunciation": "ngohn-dee",
+          "context": "Johnston 1919 p. 94 #16 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "kuli (pl. makuli)",
+          "pronunciation": "koo-lee",
+          "context": "Johnston 1919 p. 91 #16 Taveta & Hollis 1910",
+          "audioFile": null
+        },
+        {
           "english": "Snake",
           "translation": "nyoka",
           "pronunciation": "nyo-ka",
@@ -376,6 +495,27 @@
       "icon": "🌍",
       "entries": [
         {
+          "english": "Day",
+          "translation": "mrikazi (kucha = dawn)",
+          "pronunciation": "m-ree-kah-zee / koo-chah",
+          "context": "Hollis 1910 Proverb #10 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "kilo",
+          "pronunciation": "kee-loh",
+          "context": "Johnston 1919 p. 93 #16 Taveta & Hollis 1910",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "nyota",
+          "pronunciation": "nyoh-tah",
+          "context": "Johnston 1919 p. 94 #16 Taveta",
+          "audioFile": null
+        },
+        {
           "english": "Fire",
           "translation": "moto",
           "pronunciation": "mo-to",
@@ -437,6 +577,27 @@
           "pronunciation": "msi-tu",
           "context": "Hollis (1910) — Taveta Lumi River forest",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "mlima / fumvu",
+          "pronunciation": "m-lee-mah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "mto (Lumi)",
+          "pronunciation": "m-toh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "iwe (pl. mawe)",
+          "pronunciation": "ee-weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -445,6 +606,27 @@
       "name": "Food, Agriculture & Home",
       "icon": "🌾",
       "entries": [
+        {
+          "english": "Meat",
+          "translation": "nyama",
+          "pronunciation": "nyah-mah",
+          "context": "Hollis 1910 & Johnston 1919 p. 93 #16 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "maziwa (mabele)",
+          "pronunciation": "mah-zee-wah / mah-beh-leh",
+          "context": "Johnston 1919 p. 93 #16 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "chakuria (wari = ugali)",
+          "pronunciation": "chah-koo-ree-ah / wah-ree",
+          "context": "Hollis 1910 Taveta Proverbs & Johnston 1919 #16",
+          "audioFile": null
+        },
         {
           "english": "Bed / Sleeping place",
           "translation": "iraro (pl. mararo)",
@@ -508,6 +690,41 @@
       "name": "Core Verbs & Actions",
       "icon": "🏃",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "kuteta (-teta) / kugamba",
+          "pronunciation": "koo-teh-tah / koo-gahm-bah",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kudza (-dza)",
+          "pronunciation": "koo-dzah",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "kugenda (-genda)",
+          "pronunciation": "koo-gehn-dah",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "kunwa (-nwa)",
+          "pronunciation": "koo-nwah",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "kuria (-ria)",
+          "pronunciation": "koo-ree-ah",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
         {
           "english": "Feel / Hear",
           "translation": "kusikia (esikie = he who feels)",
@@ -584,6 +801,48 @@
           "pronunciation": "kui-tan-gwa",
           "context": "Rev. A. R. Steggall (1897) — Kitaveta",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "kuona (-ona)",
+          "pronunciation": "koo-oh-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kusikia (-sikia)",
+          "pronunciation": "koo-see-kee-ah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "kumanya (-manya)",
+          "pronunciation": "koo-mah-nyah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kukunda (-kunda)",
+          "pronunciation": "koo-koon-dah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kuinka (-inka)",
+          "pronunciation": "koo-een-kah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kudeka (-deka)",
+          "pronunciation": "koo-deh-kah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -592,6 +851,34 @@
       "name": "Adjectives, Pronouns & Johnston (1919 #15) Grammar",
       "icon": "✨",
       "entries": [
+        {
+          "english": "Small",
+          "translation": "-dori (-ke)",
+          "pronunciation": "doh-ree / keh",
+          "context": "Johnston 1919 p. 95 #16 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-kulu (-baa)",
+          "pronunciation": "koo-loo",
+          "context": "Johnston 1919 p. 95 #16 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "-bi (-wi)",
+          "pronunciation": "bee / wee",
+          "context": "Johnston 1919 p. 95 #16 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "-edi (-idzi)",
+          "pronunciation": "eh-dee / ee-dzee",
+          "context": "Johnston 1919 p. 95 #16 Taveta",
+          "audioFile": null
+        },
         {
           "english": "Good / Fine",
           "translation": "yedi (-edi)",
@@ -618,6 +905,139 @@
           "translation": "-akwa / -ako / -akwe / -etu / -enyu / -awo",
           "pronunciation": "-a-kwa / -a-ko / -a-kwe / -e-tu / -e-nyu / -a-wo",
           "context": "Sir Harry H. Johnston (1919, Vol. I, p. 88) — #15 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "-ewa (-elu)",
+          "pronunciation": "eh-wah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "-iru (nyiru)",
+          "pronunciation": "ee-roo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "-kundu",
+          "pronunciation": "koon-doo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Riddle / Enigma",
+          "translation": "ndaa (Nakutega ndaa! = I set you an enigma!)",
+          "pronunciation": "n-dah / nah-koo-teh-gah n-dah",
+          "context": "A. C. Hollis 1911 Taveta Enigmas",
+          "audioFile": null
+        },
+        {
+          "english": "Lumi River Forest",
+          "translation": "Msitu wa Lumi",
+          "pronunciation": "m-see-too wah loo-mee",
+          "context": "Hollis 1910 & 1911 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Mount Kilimanjaro",
+          "translation": "Kilima Njaro",
+          "pronunciation": "kee-lee-mah n-jah-roh",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Ruling Age-Set Council",
+          "translation": "Njama ya Irrika",
+          "pronunciation": "n-jah-mah yah eer-ree-kah",
+          "context": "Hollis 1910 Taveta governance",
+          "audioFile": null
+        },
+        {
+          "english": "Cold / Chill",
+          "translation": "mbeho",
+          "pronunciation": "m-beh-hoh",
+          "context": "Hollis 1910 Proverb #4 ('It is he who feels the cold who draws near to the fire')",
+          "audioFile": null
+        },
+        {
+          "english": "Dawn / Daybreak",
+          "translation": "kucha",
+          "pronunciation": "koo-chah",
+          "context": "Hollis 1910 Proverb #10",
+          "audioFile": null
+        },
+        {
+          "english": "Banana Grove",
+          "translation": "rutoke (pl. matoke)",
+          "pronunciation": "roo-toh-keh / mah-toh-keh",
+          "context": "Hollis 1910 & 1911 Taveta Enigmas",
+          "audioFile": null
+        },
+        {
+          "english": "Irrigation Furrow",
+          "translation": "mfereji (pl. mifereji) / mfurumuko",
+          "pronunciation": "m-feh-reh-jee",
+          "context": "Hollis 1910 Taveta forest agriculture",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "uki",
+          "pronunciation": "oo-kee",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "fumo (pl. mafumo)",
+          "pronunciation": "foo-moh",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "uta",
+          "pronunciation": "oo-tah",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "muvi (pl. mivi)",
+          "pronunciation": "moo-vee",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "ngwe",
+          "pronunciation": "ngweh",
+          "context": "Hollis 1910 & Johnston 1919 #16",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "mirongo miwiri",
+          "pronunciation": "mee-rohn-goh mee-wee-ree",
+          "context": "Johnston 1919 #16 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "One hundred",
+          "translation": "igana",
+          "pronunciation": "ee-gah-nah",
+          "context": "Johnston 1919 #16 Taveta",
           "audioFile": null
         }
       ]

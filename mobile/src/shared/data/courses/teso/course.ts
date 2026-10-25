@@ -108,5 +108,50 @@ export const TESO_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'teso-unit-2',
+    title: 'Unit 2: Hobley (1902) Elgumi Dialogues, Pronouns, Tools & Oral Wisdom',
+    description: 'Learn conversational phrases, personal pronouns, tools, and proverbs from C. W. Hobley (1902) and Sir Harry Johnston (1902).',
+    icon: '🏹',
+    skills: [
+      {
+        id: 'teso-hobley-1902-phrases',
+        title: 'Pronouns, Homestead Tools & Hobley (1902) Phrases',
+        icon: 'MessageCircle',
+        description: 'Master Ateso pronouns, imperatives, and cultural terms recorded in 1902.',
+        tips: "C. W. Hobley (1902, p. 53) recorded everyday conversational imperatives in Ateso (Elgumi): 'Bia ne!' (Come here!), 'Kolot!' (Go away!), 'Koin akipi!' (Bring water!), and 'Icamit nyo?' (What do you want?).",
+        culturalNote: "In Ateso oral wisdom, 'Akan nabo mam epedori aibok akwap' ('One hand alone cannot dig the earth') celebrates community cooperation (aleya) in cultivating finger-millet (akima) and cassava.",
+        words: [
+          { target: 'eong (ayong), ijo, ngesi, isio (oni), yesi, kesi', source: 'I, you (sg.), s/he, we, you (pl.), they', pronunciation: 'eh-ohng, ee-joh, ngeh-see, ee-see-oh', hint: 'Hobley (1902) & Johnston (1902) personal pronouns' },
+          { target: 'Bia ne! / Kolot!', source: 'Come here! / Go!', pronunciation: 'bee-ah neh / koh-loht', hint: 'Hobley (1902, p. 53) conversational imperatives' },
+          { target: 'Koin akipi! / Icamit nyo?', source: 'Bring water! / What do you want?', pronunciation: 'koyn ah-kee-pee / ee-chah-meet nyoh', hint: 'Hobley (1902, p. 53) phrases' },
+          { target: 'Akuj / Edeke (Lokasuban)', source: 'God, the Supreme Creator', pronunciation: 'ah-kooj / eh-deh-keh / loh-kah-soo-bahn', hint: 'Hobley (1902) & Johnston (1902)' },
+          { target: 'atap / akima / ajon', source: 'Millet bread (ugali) / Finger-millet / Traditional cereal brew', pronunciation: 'ah-tahp / ah-kee-mah / ah-john', hint: 'Ateso culinary staples' },
+          { target: 'akwara (pl. ngakwaras) / aupwal (ebuku)', source: 'Spear / Shield', pronunciation: 'ah-kwah-rah / ah-oop-wahl', hint: 'Hobley (1902, p. 66)' },
+          { target: 'akalabai / emal / ekileng', source: 'Bow / Arrow / Knife', pronunciation: 'ah-kah-lah-bah-ee / eh-mahl / eh-kee-lehng', hint: 'Hobley (1902, p. 62)' },
+          { target: 'etogo (pl. itogoi) / ekek (pl. ikekia)', source: 'House (pl. Houses) / Door (pl. Doors)', pronunciation: 'eh-toh-goh / eh-kehk', hint: 'Hobley (1902, p. 64)' },
+          { target: 'Akan nabo mam epedori aibok akwap', source: 'One hand alone cannot dig the earth (Proverb)', pronunciation: 'ah-kahn nah-boh mahm eh-peh-doh-ree', hint: 'Unity in community farming' }
+        ],
+        sentences: [
+          { target: 'Bia ne! Koin akipi!', source: 'Come here! Bring water! (Hobley 1902, p. 53)' },
+          { target: 'Akan nabo mam epedori aibok akwap.', source: 'One hand alone cannot dig the earth.' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'In C. W. Hobley (1902, p. 53), what does the Ateso phrase "Koin akipi!" mean?',
+            correctAnswer: 'Bring water!',
+            options: [
+              'Bring water!',
+              'One hand alone cannot dig the earth',
+              'Spear / Shield',
+              'House (pl. Houses)'
+            ],
+            hint: 'akipi = water'
+          }
+        ]
+      }
+    ]
   }
 ];

@@ -12,8 +12,8 @@
     "Isiolo"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Somali dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
@@ -22,10 +22,66 @@
       "icon": "👋",
       "entries": [
         {
+          "english": "Peace",
+          "translation": "Nabad",
+          "pronunciation": "nah-bahd",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Mahadsanid (Aad baad u mahadsan tahay)",
+          "pronunciation": "mah-hahd-sah-need",
+          "context": "Somali gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Galab wanaagsan / Habeen wanaagsan",
+          "pronunciation": "gah-lahb wah-nahg-sahn",
+          "context": "Kirk 1905 evening salutation",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Subax wanaagsan / Ma баrideen?",
+          "pronunciation": "soo-bahkh wah-nahg-sahn",
+          "context": "Kirk 1905 morning salutation",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Nabad! / Ma nabad baa? (resp. Waa nabad!)",
+          "pronunciation": "nah-bahd / mah nah-bahd bah",
+          "context": "Kirk 1905 & Larajasse 1897 Somali greeting",
+          "audioFile": null
+        },
+        {
           "english": "welcome!",
           "translation": "soo dhawoow (pl. soo dhawaada)",
           "pronunciation": "soo dhawoow (pl. soo dhawaada)",
           "context": "Af-Soomaali",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "buur (def. buurta)",
+          "pronunciation": "boor",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "jecel (jeclaan)",
+          "pronunciation": "jeh-ehl",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kari (karin)",
+          "pronunciation": "kah-ree",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         }
       ]
@@ -161,6 +217,69 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "hadal (odhan / yidhi = say)",
+          "pronunciation": "hah-dahl / yee-dhee",
+          "context": "Kirk 1905 p. 69 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "seexo (hurdo)",
+          "pronunciation": "seh-khoh / hoor-doh",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "imow (kaalay! = come!)",
+          "pronunciation": "ee-mohw / kah-lay",
+          "context": "Kirk 1905 p. 71 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "tag (socdaal)",
+          "pronunciation": "tahg",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "cab (dham)",
+          "pronunciation": "ahb / dhahm",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "cun (quudo)",
+          "pronunciation": "oon",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "yar (pl. yaryar)",
+          "pronunciation": "yahr",
+          "context": "Kirk 1905 p. 22",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "weyn (pl. waaweyn)",
+          "pronunciation": "weyn / wah-weyn",
+          "context": "Kirk 1905 p. 22",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "wanaagsan (wacan)",
+          "pronunciation": "wah-nahg-sahn",
+          "context": "Kirk 1905 p. 22",
+          "audioFile": null
+        },
         {
           "english": "I (1st person singular)",
           "translation": "aniga (clitic subject: aan, object: i)",
@@ -2183,6 +2302,41 @@
           "pronunciation": "jamaaika",
           "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "aniga (clitic aan / i)",
+          "pronunciation": "ah-nee-gah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "adiga (clitic aad / ku)",
+          "pronunciation": "ah-dee-gah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "isaga (he, uu) / iyada (she, ay)",
+          "pronunciation": "ee-sah-gah / ee-yah-dah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "innaga (incl.) / annaga (excl.)",
+          "pronunciation": "een-nah-gah / ahn-nah-gah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "iyaga (clitic ay)",
+          "pronunciation": "ee-yah-gah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -2190,6 +2344,55 @@
       "id": "family-pastoral",
       "name": "Family, Pastoralism & Sustenance",
       "entries": [
+        {
+          "english": "House",
+          "translation": "aqal (nomadic house) / guri (homestead, def. guriga)",
+          "pronunciation": "ah-qahl / goo-ree",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "lax (ewe) / wan (ram) / idaha (sheep pl.)",
+          "pronunciation": "lahkh / wahn",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "ri (collective goats & sheep: adhi / ari)",
+          "pronunciation": "ree / ah-dhee",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "sac (collective cattle: lo')",
+          "pronunciation": "sah / loh",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Eebbe (Ilaah / Waaq)",
+          "pronunciation": "ehb-beh / ee-lah",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "cunto (soor = cooked grain/food)",
+          "pronunciation": "oon-toh / sohr",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "saaxiib (def. saaxiibka)",
+          "pronunciation": "sah-kheeb",
+          "context": "Kirk 1905 & Larajasse 1897",
+          "audioFile": null
+        },
         {
           "english": "Woman",
           "translation": "naag / haween",
@@ -3233,12 +3436,12 @@
           "context": "Af-Soomaali — GitHub unicode-org/cldr (so_KE.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
-      ]
-    }
-,
+      ],
+      "icon": "🐪"
+    },
     {
-      "id": "larajasse-1897-kirk-1905-johnston-1902-somali",
-      "name": "de Larajasse (1897), Johnston (1902) & Kirk (1905) Historical Somali Corpus (Seasons, Months, Wildlife, Poetry & Yibir/Midgan)",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

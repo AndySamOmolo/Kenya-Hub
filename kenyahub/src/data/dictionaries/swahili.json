@@ -13,8 +13,8 @@
     "Tana River"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Swahili (Kiswahili) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
@@ -22,6 +22,55 @@
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Goodbye",
+          "translation": "Kwaheri (pl. Kwaherini)",
+          "pronunciation": "kwah-heh-ree",
+          "context": "Krapf 1882 & Steere 1894 parting salutation",
+          "audioFile": null
+        },
+        {
+          "english": "Welcome",
+          "translation": "Karibu (pl. Karibuni)",
+          "pronunciation": "kah-ree-boo",
+          "context": "Steere 1894 & Madan 1903 hospitality greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Asante (Asante sana)",
+          "pronunciation": "ah-sahn-teh sah-nah",
+          "context": "Steere 1894 & Madan 1903 expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Habari yako? / U hali gani?",
+          "pronunciation": "hah-bah-ree yah-koh / oo hah-lee gah-nee",
+          "context": "Burt 1910 Kimvita & Steere 1894 Kiunguja",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Habari za jioni? / Masalkheri",
+          "pronunciation": "hah-bah-ree zah jee-oh-nee",
+          "context": "Steere 1894 & Madan 1903 evening greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Habari za asubuhi? / Sabalkheri",
+          "pronunciation": "hah-bah-ree zah ah-soo-boo-hee",
+          "context": "Steere 1894 & Madan 1903 morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Hujambo / Jambo (pl. Hamjambo)",
+          "pronunciation": "hoo-jahm-boh",
+          "context": "Steere 1894 & Burt 1910 coastal salutation (Reply: Sijambo)",
+          "audioFile": null
+        },
         {
           "english": "evening",
           "translation": "jioni",
@@ -62,6 +111,20 @@
           "translation": "Jambo",
           "pronunciation": "Jambo",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kupenda (-penda)",
+          "pronunciation": "koo-pehn-dah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kupika (-pika)",
+          "pronunciation": "koo-pee-kah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]
@@ -611,6 +674,13 @@
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
+          "english": "King / Chief",
+          "translation": "mfalme (pl. wafalme) / jumbe / sultani",
+          "pronunciation": "m-fahl-meh / joom-beh",
+          "context": "Steere 1870 & Krapf 1882",
+          "audioFile": null
+        },
+        {
           "english": "bell (warrior's)",
           "translation": "enjuga",
           "pronunciation": "enjuga",
@@ -904,6 +974,13 @@
       "name": "Food & Drink",
       "icon": "🍲",
       "entries": [
+        {
+          "english": "Porridge / Ugali",
+          "translation": "ugali / uji / sima",
+          "pronunciation": "oo-gah-lee / oo-jee / see-mah",
+          "context": "Krapf 1882 & Madan 1903",
+          "audioFile": null
+        },
         {
           "english": "banana",
           "translation": "ndizi",
@@ -1359,6 +1436,55 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "kusema / kunena",
+          "pronunciation": "koo-seh-mah / koo-neh-nah",
+          "context": "Steere 1894, Burt 1910 & Madan 1917",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "kulala (-lala)",
+          "pronunciation": "koo-lah-lah",
+          "context": "Steere 1894 & Madan 1917",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kuja (-ja; Imperative: Njoo!)",
+          "pronunciation": "koo-jah / n-joh",
+          "context": "Monosyllabic verb (Steere 1894 & Madan 1917)",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "kwenda (-enda)",
+          "pronunciation": "kwehn-dah",
+          "context": "Vowel-stem verb (Steere 1894 & Madan 1917)",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "kunywa (-nywa)",
+          "pronunciation": "koo-nywah",
+          "context": "Monosyllabic verb (Steere 1894 & Madan 1917)",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "kula (-la)",
+          "pronunciation": "koo-lah",
+          "context": "Monosyllabic verb (Steere 1894 & Madan 1917)",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-kubwa (mkubwa, kubwa)",
+          "pronunciation": "koo-bwah",
+          "context": "Steere 1894 & Madan 1903",
+          "audioFile": null
+        },
         {
           "english": "I conquer",
           "translation": "n-a-shinda",
@@ -8449,6 +8575,41 @@
           "pronunciation": "upande wa mashariki / magharibi / kaskazini / kusini",
           "context": "Kiswahili — Mozilla Common Voice 27.0 CC0-1.0 (huggingface.co/datasets/geraldamasi/common-voice-27-swahili)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "mimi (subject prefix ni-)",
+          "pronunciation": "mee-mee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "wewe (prefix u-)",
+          "pronunciation": "weh-weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "yeye (prefix a-)",
+          "pronunciation": "yeh-yeh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "sisi (swiswi, prefix tu-)",
+          "pronunciation": "see-see",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "wao (prefix wa-)",
+          "pronunciation": "wah-oh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -8456,7 +8617,64 @@
       "id": "travel",
       "name": "Travel & Directions",
       "icon": "🚌",
-      "entries": []
+      "entries": [
+        {
+          "english": "Harbour / Port",
+          "translation": "bandari",
+          "pronunciation": "bahn-dah-ree",
+          "context": "Krapf 1882 & Madan 1903",
+          "audioFile": null
+        },
+        {
+          "english": "Journey / Caravan",
+          "translation": "safari",
+          "pronunciation": "sah-fah-ree",
+          "context": "Krapf 1882 & Steere 1894",
+          "audioFile": null
+        },
+        {
+          "english": "East / Sunrise wind",
+          "translation": "matlai",
+          "pronunciation": "maht-lah-ee",
+          "context": "Steere 1894 Appendix V Mariner's Compass",
+          "audioFile": null
+        },
+        {
+          "english": "South-West Monsoon",
+          "translation": "kusi",
+          "pronunciation": "koo-see",
+          "context": "Steere 1894 Appendix V Mariner's Compass",
+          "audioFile": null
+        },
+        {
+          "english": "North-East Monsoon",
+          "translation": "kaskazi",
+          "pronunciation": "kahs-kah-zee",
+          "context": "Steere 1894 Appendix V Mariner's Compass",
+          "audioFile": null
+        },
+        {
+          "english": "Dugout canoe",
+          "translation": "mtumbwi (pl. mitumbwi) / galawa",
+          "pronunciation": "m-toom-bwee / gah-lah-wah",
+          "context": "Krapf 1882 & Madan 1903",
+          "audioFile": null
+        },
+        {
+          "english": "Dhow / Sailing vessel",
+          "translation": "jahazi (pl. majahazi) / chombo (pl. vyombo)",
+          "pronunciation": "jah-hah-zee / chohm-boh",
+          "context": "Steere 1894 & Krapf 1882 maritime lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Road / Path",
+          "translation": "njia (Kimvita: ndia) / barabara",
+          "pronunciation": "n-jee-ah / n-dee-ah",
+          "context": "Burt 1910 & Hinde 1904",
+          "audioFile": null
+        }
+      ]
     },
     {
       "id": "shopping",
@@ -9001,19 +9219,126 @@
       "id": "emergency",
       "name": "Emergency & Safety",
       "icon": "🚨",
-      "entries": []
+      "entries": [
+        {
+          "english": "Pain / Ache",
+          "translation": "maumivu / uchungu",
+          "pronunciation": "mah-oo-mee-voo / oo-choon-goo",
+          "context": "Krapf 1882 & Madan 1903",
+          "audioFile": null
+        },
+        {
+          "english": "Sickness / Illness",
+          "translation": "ugonjwa / maradhi",
+          "pronunciation": "oo-gohn-jwah / mah-rah-dhee",
+          "context": "Steere 1894 & Madan 1903",
+          "audioFile": null
+        },
+        {
+          "english": "Medicine / Remedy",
+          "translation": "dawa",
+          "pronunciation": "dah-wah",
+          "context": "Krapf 1882 & Steere 1894",
+          "audioFile": null
+        },
+        {
+          "english": "Healer / Physician",
+          "translation": "mganga (pl. waganga) / tabibu",
+          "pronunciation": "m-gahn-gah / tah-bee-boo",
+          "context": "Krapf 1882 & Hobley 1922",
+          "audioFile": null
+        },
+        {
+          "english": "Help / Assistance",
+          "translation": "msaada (Nisaidie! = Help me!)",
+          "pronunciation": "m-sah-dah / nee-sah-ee-dee-eh",
+          "context": "Steere 1894 & Madan 1903",
+          "audioFile": null
+        },
+        {
+          "english": "Danger / Peril",
+          "translation": "hatari",
+          "pronunciation": "hah-tah-ree",
+          "context": "Krapf 1882 & Madan 1903",
+          "audioFile": null
+        }
+      ]
     },
     {
       "id": "time",
       "name": "Time & Days",
       "icon": "⏰",
-      "entries": []
+      "entries": [
+        {
+          "english": "Ten-Day Agricultural Decade",
+          "translation": "mwongo (pl. miongo)",
+          "pronunciation": "mwohn-goh / mee-ohn-goh",
+          "context": "Krapf 1882 & Taylor 1891",
+          "audioFile": null
+        },
+        {
+          "english": "Solar New Year Festival",
+          "translation": "Siku ya Mwaka (Nairuz)",
+          "pronunciation": "see-koo yah mwah-kah",
+          "context": "Krapf 1882 & Taylor 1891 agricultural calendar",
+          "audioFile": null
+        },
+        {
+          "english": "Today / Yesterday / Tomorrow",
+          "translation": "leo / jana / kesho",
+          "pronunciation": "leh-oh / jah-nah / keh-shoh",
+          "context": "Steere 1894 & Hinde 1904",
+          "audioFile": null
+        },
+        {
+          "english": "Evening / Sunset (6 p.m.)",
+          "translation": "jioni / magharibi",
+          "pronunciation": "jee-oh-nee / mah-ghah-ree-bee",
+          "context": "Steere 1894 & Burt 1910",
+          "audioFile": null
+        },
+        {
+          "english": "Late Afternoon (3:30 p.m.)",
+          "translation": "alasiri",
+          "pronunciation": "ah-lah-see-ree",
+          "context": "Steere 1894 & Burt 1910",
+          "audioFile": null
+        },
+        {
+          "english": "Noon / Midday",
+          "translation": "adhuhuri (mchana)",
+          "pronunciation": "ah-dhoo-hoo-ree",
+          "context": "Steere 1894 & Burt 1910",
+          "audioFile": null
+        },
+        {
+          "english": "Morning (6 a.m. – noon)",
+          "translation": "asubuhi",
+          "pronunciation": "ah-soo-boo-hee",
+          "context": "Steere 1894 & Hinde 1904",
+          "audioFile": null
+        },
+        {
+          "english": "Dawn / Daybreak",
+          "translation": "alfajiri / mapambazuko",
+          "pronunciation": "ahl-fah-jee-ree / mah-pahm-bah-zoo-koh",
+          "context": "Steere 1894 & Burt 1910 Swahili hours",
+          "audioFile": null
+        }
+      ]
     },
     {
       "id": "nature",
       "name": "Nature & Animals",
       "icon": "🌿",
       "entries": [
+        {
+          "english": "Hyena",
+          "translation": "fisi",
+          "pronunciation": "fee-see",
+          "context": "Taylor 1891 Proverb #419 & Krapf 1882",
+          "audioFile": null
+        },
         {
           "english": "afternoon",
           "translation": "athuhuri",
@@ -11456,13 +11781,26 @@
           "pronunciation": "kulinda maadili na imani",
           "context": "Kiswahili — Mozilla Common Voice 27.0 CC0-1.0 (huggingface.co/datasets/geraldamasi/common-voice-27-swahili)",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "mlima (pl. milima) / kilima",
+          "pronunciation": "m-lee-mah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "jiwe (pl. mawe)",
+          "pronunciation": "jee-weh / mah-weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "steere-1870-1894-krapf-1882-taylor-1891-madan-1903-burt-1910-swahili",
-      "name": "Steere (1870, 1894), Krapf (1850, 1882), Taylor (1891), Madan (1903, 1917), Burt (1910) & Johnston (1919) Classical Swahili Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

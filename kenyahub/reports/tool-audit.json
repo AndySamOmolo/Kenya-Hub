@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T13:49:34.367Z",
+  "generatedAt": "2026-10-25T15:38:14.528Z",
   "summary": {
     "registryTools": 44,
     "routeDirectories": 44,
@@ -426,87 +426,87 @@
       "data": [
         {
           "file": "src/data/dictionaries/swahili.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Krapf 1850/1882, Steere 1870/1894, Taylor 1891, Madan 1903/1917, Hinde 1904, Burt 1910 & Johnston 1919)"
         },
         {
           "file": "src/data/dictionaries/kikuyu.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910 & Hobley 1910/1922)"
         },
         {
           "file": "src/data/dictionaries/luo.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, Johnston 1902, Northcote 1907 & Mill-Hill Fathers 1920)"
         },
         {
           "file": "src/data/dictionaries/kalenjin.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, 1910, Johnston 1902, Hollis 1909 & Dundas 1910)"
         },
         {
           "file": "src/data/dictionaries/luhya.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, Johnston 1902, 1919 & Stam 1929)"
         },
         {
           "file": "src/data/dictionaries/kamba.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Johnston 1919 & Lindblom 1920)"
         },
         {
           "file": "src/data/dictionaries/meru.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & CLDR mer.xml)"
         },
         {
           "file": "src/data/dictionaries/maasai.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Hinde 1901, Johnston 1902, Hollis 1905 & Hobley 1910, 1922)"
         },
         {
           "file": "src/data/dictionaries/kisii.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919)"
         },
         {
           "file": "src/data/dictionaries/somali.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (de Larajasse 1897, Johnston 1902 & Kirk 1905)"
         },
         {
           "file": "src/data/dictionaries/turkana.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Juxon Barton 1921)"
         },
         {
           "file": "src/data/dictionaries/mijikenda.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Krapf 1850, Krapf & Rebmann 1887, W. E. Taylor 1891 & Johnston 1919)"
         },
         {
           "file": "src/data/dictionaries/teso.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902)"
         },
         {
           "file": "src/data/dictionaries/embu.json",
-          "lastUpdated": "2026-10-23",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & CLDR ebu.xml)"
         },
         {
           "file": "src/data/dictionaries/taita.json",
-          "lastUpdated": "2026-10-23",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Shaw 1885, Taylor 1891, Wray 1894 & Johnston 1919)"
         },
         {
           "file": "src/data/dictionaries/samburu.json",
-          "lastUpdated": "2026-10-23",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Johnston 1902, Hobley 1910 & Vossen 1982)"
         },
         {
           "file": "src/data/dictionaries/borana.json",
-          "lastUpdated": "2026-10-23",
+          "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Krapf 1842, 1850 & Tutschek 1844–1845)"
         },
         {

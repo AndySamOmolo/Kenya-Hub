@@ -1055,7 +1055,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     id: 'luo-cw-1',
     languageId: 'luo',
     languageName: 'Luo (Dholuo)',
-    indigenous: 'Lwedo achiel okang'o nyuka.',
+    indigenous: "Lwedo achiel okang'o nyuka.",
     literalTranslation: 'One hand alone cannot stir gruel (or clap).',
     meaning: 'Documented in Dholuo oral literature and Mill-Hill Fathers (1920): community solidarity (saga / konyruok) is essential for every great undertaking.',
     englishEquivalent: 'Many hands make light work.',
@@ -2061,6 +2061,759 @@ export const SOMALI_GRAMMAR_SECTIONS: SomaliGrammarSection[] = [
       { somali: "aniga (aan) • adiga (aad) • isaga (uu) • iyada (ay)", english: "I • you (sg.) • he • she", explanation: "Emphatic independent vs. short subject clitic pronouns (Kirk 1905, p. 27)" },
       { somali: "kow, laba, saddex, afar, shan, lix, todoba, sideed, sagaal, toban", english: "1, 2, 3, 4, 5, 6, 7, 8, 9, 10", explanation: "Af-Soomaali cardinal numerals (Kirk 1905, p. 24)" },
       { somali: "Far keliya fool ma dhaqdo • Nin aan dhul marin dhaayo ma leh", english: "A single finger cannot wash a face • A man who has not travelled the land has no insight", explanation: "Classical alliterative Somali Maahmaahyo" }
+    ]
+  }
+];
+
+// ============================================================
+// ADDITIONAL 9 KENYAN LANGUAGE COURSES (ALL 22 DICTIONARY LANGUAGES)
+// Grounded in the 34 Historical Primary Sources (1842–1929)
+// ============================================================
+
+// --- 14. EMBU & MBEERE (Kîembu / Kîmbeere) ---
+export const EMBU_CONFIG: LanguageConfig = {
+  id: 'embu',
+  name: 'Embu',
+  nativeName: 'Kîembu / Kîmbeere',
+  family: 'Bantu',
+  counties: ['Embu', 'Kirinyaga', 'Tharaka-Nithi'],
+  speakers: '610K',
+  speechLocale: 'sw-KE',
+  description: 'A Central Kenya (Mount Kenya) Bantu language spoken on the southern and south-eastern slopes of Kĩrĩnyaga (Mount Kenya) by the Aembu and Ambeere communities. Grounded in Sir Harry H. Johnston (1919 #11 Embu, Chuka, Mwimbe & Emberre) and C. W. Hobley (1910, 1922).',
+  color: '#059669',
+  sources: ['hobley-akamba-ethnology-1910', 'johnston-bantu-1919', 'bantu-beliefs', 'open-web-swadesh-comparative'],
+};
+
+export const EMBU_UNITS: CourseUnit[] = [
+  {
+    id: 'embu-unit-1',
+    title: 'Unit 1: Greetings, Noun Classes, Numerals 1–10 & Kiama Heritage (Johnston 1919 #11 & Hobley 1910)',
+    description: 'Master Kîembu and Kîmbeere greetings, mũ-/a- and kĩ-/ci- noun classes, Dahl’s Law, and numbers 1–10.',
+    icon: '⛰️',
+    skills: [
+      {
+        id: 'embu-greetings-nouns',
+        title: 'Greetings, People & Mount Kenya Nature (Johnston 1919 #11)',
+        icon: 'Users',
+        description: 'Learn everyday Kîembu salutations, kinship nouns, and landscape terms.',
+        tips: "Kîembu preserves palatal/bilabial fricatives (v where Gĩkũyũ has h: e.g., ĩvia 'stone', mũvĩrĩga 'clan') and observes Dahl's Law voicing dissimilation (kũ-thiĩ -> gũthiĩ).",
+        culturalNote: "In Kîembu tradition documented by C. W. Hobley (1910) and Sir Harry Johnston (1919), the Kiama kia Ngome (Council of Elders) met in sacred groves (mũtitũ) to arbitrate community law.",
+        words: [
+          { target: 'Wĩ mwega? (resp. Ndĩ mwega) / Mũrĩ ega?', source: 'How are you? (I am well) / How are you all?', pronunciation: 'wee mweh-gah / n-dee mweh-gah', hint: 'Standard Kîembu salutation' },
+          { target: 'Nĩ wega mũno', source: 'Thank you very much', pronunciation: 'nee weh-gah moo-noh', hint: 'Gratitude' },
+          { target: 'mundũ (pl. andũ)', source: 'Person (pl. People)', pronunciation: 'moon-doo / ahn-doo', hint: 'Johnston (1919, p. 69 #11 Embu)' },
+          { target: 'mũrũme (pl. arũme) / mũka (pl. aka)', source: 'Man, husband / Woman, wife', pronunciation: 'moo-roo-meh / moo-kah', hint: 'Johnston (1919, p. 68 #11 Embu)' },
+          { target: 'mwana (pl. ciana / aana) / baba / maitũ', source: 'Child / Father / Mother', pronunciation: 'mwah-nah / bah-bah / mah-ee-too', hint: 'Johnston (1919 #11 Embu)' },
+          { target: 'maĩ (manjĩ) / mwaki / riũa', source: 'Water / Fire / Sun', pronunciation: 'mah-ee / mwah-kee / ree-oo-ah', hint: 'Johnston (1919, pp. 67, 70 #11 Embu)' },
+          { target: 'mũtĩ (pl. mĩtĩ) / ĩvia (pl. mavia)', source: 'Tree (pl. Trees) / Stone (pl. Stones)', pronunciation: 'moo-tee / ee-vyah', hint: 'Johnston (1919, p. 70 #11 Embu)' },
+          { target: 'Ngai (Murungu) / Киrĩnyaga', source: 'God / Mount Kenya', pronunciation: 'ngah-ee / kee-ree-nyah-gah', hint: 'Johnston (1919, p. 67) & Hobley (1910)' }
+        ],
+        sentences: [
+          { target: 'Wĩ mwega? Ndĩ mwega, nĩ wega mũno.', source: 'How are you? I am well, thank you very much.' },
+          { target: 'Mũtĩ ũmwe ndũtũũragia mũtitũ.', source: 'A single tree does not make a sacred grove.' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'How do you say "Stone (pl. Stones)" in Kîembu (Johnston 1919 #11)?',
+            correctAnswer: 'ĩvia (pl. mavia)',
+            options: ['ĩvia (pl. mavia)', 'mundũ (pl. andũ)', 'maĩ (manjĩ) / mwaki / riũa', 'Nĩ wega mũno'],
+            hint: 'Kîembu preserves v where Gĩkũyũ has h (ihiga)'
+          }
+        ]
+      },
+      {
+        id: 'embu-numbers-verbs',
+        title: 'Numerals 1–10 & Everyday Verbs (Johnston 1919 #11)',
+        icon: 'Hash',
+        description: 'Count from 1 to 10 in Kîembu/Kîmbeere and practice high-frequency verbs.',
+        tips: "Johnston (1919, p. 72 #11) records the numerals 1–10 across Embu and Emberre: ĩmwe (1), igĩrĩ (2), ithatũ (3), inya (4), ithano (5), ithanthatũ (6), mũgwanja (7), inyanya (8), kenda (9), ikũmi (10).",
+        words: [
+          { target: 'ĩmwe, igĩrĩ, ithatũ, inya, ithano', source: '1, 2, 3, 4, 5', pronunciation: 'ee-mweh, ee-gee-ree, ee-thah-too, ee-nyah, ee-thah-noh', hint: 'Johnston (1919, p. 72 #11 Embu)' },
+          { target: 'ithanthatũ, mũgwanja, inyanya, kenda, ikũmi', source: '6, 7, 8, 9, 10', pronunciation: 'ee-thahn-thah-too, moo-gwahn-jah, ee-nyah-nyah, kehn-dah, ee-koo-mee', hint: 'Johnston (1919, p. 72 #11 Embu)' },
+          { target: 'kũrĩa / kũnyua / kũruga', source: 'To eat / To drink / To cook', pronunciation: 'koo-ree-ah / koo-nywah / koo-roo-gah', hint: 'Class 15 infinitives' },
+          { target: 'gũthiĩ / gũũka / kwaria', source: 'To go / To come / To speak', pronunciation: 'goo-thee / goo-kah / kwah-ree-ah', hint: 'Dahl’s Law voicing on gũthiĩ and gũũka' },
+          { target: 'Kiama kia Ngome', source: 'Traditional Council of Elders', pronunciation: 'kyah-mah kyah ngoh-meh', hint: 'Aembu & Ambeere governance' }
+        ],
+        sentences: [
+          { target: 'Andũ aĩrĩ nĩmarĩrũta wĩra.', source: 'Two people are working.' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'Which Kîembu numeral means "Seven (7)"?',
+            correctAnswer: 'mũgwanja',
+            options: ['mũgwanja', 'ĩmwe', 'ithano', 'ikũmi'],
+            hint: 'Shared Mount Kenya Bantu numeral for 7'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const EMBU_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'embu-noun-classes-dahls-law',
+    title: 'Kîembu & Kîmbeere Noun Classes, Bilabial Fricative (v) & Dahl’s Law (Johnston 1919 #11)',
+    summary: 'Kîembu preserves 15+ Bantu noun classes, retains the voiced bilabial fricative v (ĩvia "stone", kũve "to give"), and applies Dahl’s Law voicing dissimilation.',
+    content: `As documented by Sir Harry H. Johnston in *A Comparative Study of the Bantu and Semi-Bantu Languages* (1919, Vol. I, pp. 66–73, Language #11 Embu, Chuka, Mwimbe & Emberre) and C. W. Hobley (1910):
+- **Class 1/2 (*mũ- / a-*)**: *mundũ → andũ* (person → people), *mũrũme → arũme* (man → men), *mũka → aka* (woman → women).
+- **Class 3/4 (*mũ- / mĩ-*)**: *mũtĩ → mĩtĩ* (tree → trees), *mũtitũ → mĩtitũ* (forest/sacred grove).
+- **Class 5/6 (*ĩ-, rĩ- / ma-*)**: *ĩvia → mavia* (stone → stones), *riitho → maitho* (eye → eyes), *maĩ / manjĩ* (water).
+- **Class 12/13 (*ka- / tũ-* Diminutives)**: *kaana → tũana* (small child → small children).
+- **Dahl's Law**: Voiceless prefix *kũ-* or *kĩ-* voices to *gũ-* or *gĩ-* before a voiceless consonant (*gũthiĩ* 'to go', *gĩtĩ* 'stool/chair').`,
+    examples: [
+      { embu: 'mundũ ũyũ mwega → andũ aya ega', english: 'this good person → these good people', explanation: 'Class 1/2 concord in Kîembu (Johnston 1919 #11)' },
+      { embu: 'ĩvia (Kîembu) vs. ihiga (Gĩkũyũ)', english: 'stone', explanation: 'Retention of voiced fricative v in Kîembu/Kîmbeere' }
+    ]
+  }
+];
+
+// --- 15. TAITA (Kidawida & Kisagala) ---
+export const TAITA_CONFIG: LanguageConfig = {
+  id: 'taita',
+  name: 'Taita',
+  nativeName: 'Kidawida / Kisagala',
+  family: 'Bantu',
+  counties: ['Taita-Taveta'],
+  speakers: '350K',
+  speechLocale: 'sw-KE',
+  description: 'The Highland Coastal Bantu languages of the Taita Hills (Dabida, Sagala, and Kasigau) in Taita-Taveta County. Grounded in Krapf (1850), Shaw (1885), W. E. Taylor (1891), Rev. J. Alfred Wray (1894), and Sir Harry Johnston (1919 #15).',
+  color: '#0891B2',
+  sources: ['krapf-six-languages-1850', 'shaw-pocket-vocabulary-taita-1885', 'taylor-aphorisms-1891', 'wray-taita-1894', 'johnston-bantu-1919', 'open-web-swadesh-comparative'],
+};
+
+export const TAITA_UNITS: CourseUnit[] = [
+  {
+    id: 'taita-unit-1',
+    title: 'Unit 1: Salutations, Wray’s (1894) 8 Noun Classes & Numerals 1–10',
+    description: 'Master Kidawida and Kisagala greetings (Mwakucha! / Mwatinda!), 8 noun classes (Wray 1894), and counting 1–10.',
+    icon: '⛰️',
+    skills: [
+      {
+        id: 'taita-greetings-nouns',
+        title: 'Taita Hills Salutations, Noun Classes & Nature (Wray 1894 & Shaw 1885)',
+        icon: 'Users',
+        description: 'Learn greetings and noun classes from Rev. J. A. Wray’s 1894 Taita Grammar.',
+        tips: "Rev. J. Alfred Wray (1894, pp. 19–24) documents 8 noun classes in Taita, including Class VII Diminutives in ka-/tu- (kanyonyi → tunyonyi 'little bird', kachi → tuchi 'little brook').",
+        culturalNote: "In Rev. W. E. Taylor's 'African Aphorisms' (1891, #665) and Wray (1894), 'Mundu mghosi ni kichwa cha mudzi' ('A wise elder is the head of the homestead') reflects Taita respect for elder counsel.",
+        words: [
+          { target: 'Mwakucha! / Mwatinda! / Uko mzadze?', source: 'Good morning! / Good day! / How are you?', pronunciation: 'mwah-koo-chah / mwah-teen-dah / oo-koh m-zah-dzeh', hint: 'Wray (1894, p. 59) Taita salutations' },
+          { target: 'Chavuche (Chavuche sana)', source: 'Thank you (Thank you very much)', pronunciation: 'chah-voo-cheh', hint: 'Gratitude in Kidawida/Kisagala' },
+          { target: 'mundu (pl. wandu) / mghosi (pl. waghosi)', source: 'Person (pl. People) / Wise elder, gentleman', pronunciation: 'moon-doo / wah-ndoo / m-ghoh-see', hint: 'Wray (1894, p. 19) Class I' },
+          { target: 'mwanake (pl. wanake) / mndu mke (pl. wandu wake)', source: 'Child, youth / Woman (pl. Women)', pronunciation: 'mwah-nah-keh / m-ndoo m-keh', hint: 'Wray (1894, p. 19)' },
+          { target: 'machi (mache) / moto / izua', source: 'Water / Fire / Sun', pronunciation: 'mah-chee / moh-toh / ee-zoo-ah', hint: 'Shaw (1885) & Wray (1894)' },
+          { target: 'mti (pl. miti) / nyumba (pl. nyumba)', source: 'Tree (pl. Trees) / House (pl. Houses)', pronunciation: 'm-tee / nyoom-bah', hint: 'Wray (1894, pp. 20–21)' },
+          { target: 'kanyonyi (pl. tunyonyi) / kachi (pl. tuchi)', source: 'Little bird / Little brook (Class VII Diminutive)', pronunciation: 'kah-nyoh-nyee / kah-chee', hint: 'Wray (1894, p. 23) ka-/tu- diminutives' },
+          { target: 'Mlungu', source: 'God, Supreme Creator', pronunciation: 'm-loon-goo', hint: 'Wray (1894) & Shaw (1885)' }
+        ],
+        sentences: [
+          { target: 'Mwakucha! Uko mzadze?', source: 'Good morning! How are you? (Wray 1894)' },
+          { target: 'Mundu mghosi ni kichwa cha mudzi.', source: 'A wise elder is the head of the homestead (Taylor 1891 #665).' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'In Rev. J. A. Wray (1894, p. 23), how does Taita form the diminutive "little bird (pl. little birds)"?',
+            correctAnswer: 'kanyonyi (pl. tunyonyi) / kachi (pl. tuchi)',
+            options: ['kanyonyi (pl. tunyonyi) / kachi (pl. tuchi)', 'mundu (pl. wandu) / mghosi (pl. waghosi)', 'Mwakucha! / Mwatinda! / Uko mzadze?', 'Chavuche (Chavuche sana)'],
+            hint: 'Class VII Diminutive prefixes ka- (sg.) and tu- (pl.)'
+          }
+        ]
+      },
+      {
+        id: 'taita-numbers-verbs',
+        title: 'Numerals 1–10 & Verbal Tenses (Wray 1894 & Johnston 1919 #15)',
+        icon: 'Hash',
+        description: 'Count from 1 to 10 in Taita and conjugate verbs with Wray (1894).',
+        tips: "Wray (1894, p. 29) and Shaw (1885) record Taita numerals 1–10: imweri (1), iwi / mbiri (2), idadu (3), inya (4), isanu (5), irandadu (6), mfungade (7), inyanya / nane (8), ikenda (9), ikumi (10).",
+        words: [
+          { target: 'imweri, iwi (mbiri), idadu, inya, isanu', source: '1, 2, 3, 4, 5', pronunciation: 'eem-weh-ree, ee-wee, ee-dah-doo, ee-nyah, ee-sah-noo', hint: 'Wray (1894, p. 29) & Johnston (1919 #15)' },
+          { target: 'irandadu, mfungade, inyanya (nane), ikenda, ikumi', source: '6, 7, 8, 9, 10', pronunciation: 'ee-rahn-dah-doo, m-foon-gah-deh, ee-nyah-nyah, ee-kehn-dah, ee-koo-mee', hint: 'Wray (1894, p. 29)' },
+          { target: 'kuja / kunwa / kudeka / kugenda', source: 'To eat / To drink / To cook / To go', pronunciation: 'koo-jah / koo-nwah / koo-deh-kah / koo-gehn-dah', hint: 'Wray (1894) Class VIII ku- infinitives' },
+          { target: 'kukunda / kumanya / kulola', source: 'To love, like / To know / To see, look', pronunciation: 'koo-koon-dah / koo-mah-nyah / koo-loh-lah', hint: 'Wray (1894, p. 41) paradigm verb kukunda' }
+        ],
+        sentences: [
+          { target: 'Wandu wawi wekunda machi.', source: 'Two people want water.' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'Which Taita numeral means "Seven (7)" in Wray (1894)?',
+            correctAnswer: 'mfungade',
+            options: ['mfungade', 'imweri', 'isanu', 'ikumi'],
+            hint: 'Cognate with Sabaki mfungate'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const TAITA_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'taita-wray-1894-grammar',
+    title: 'Eight Noun Classes, Diminutives (ka-/tu-) & Verb Conjugation in Wray (1894)',
+    summary: 'Rev. J. Alfred Wray’s 1894 Elementary Introduction to the Taita Language documents 8 noun classes, full concord tables, and agglutinative verb tenses.',
+    content: `From Rev. J. A. Wray (1894) *An Elementary Introduction to the Taita Language (Kisagala)* and Sir Harry Johnston (1919, #15):
+- **Class I (*m- / wa-*)**: *mundu → wandu* (person → people), *mghosi → waghosi* (elder/gentleman).
+- **Class II (*m- / mi-*)**: *mti → miti* (tree → trees), *mugwa → migwa* (sugarcane), *mlango → milango* (door).
+- **Class III (*ki- / vi-*)**: *kiti → viti* (stool/chair), *kishu → vishu* (knife).
+- **Class IV (*n- / n-*)**: *nyumba* (house), *ng'ombe* (cattle), *mbuzi* (goat).
+- **Class V (*i- / ma-*)**: *igomenyi / iwe → mawe* (stone → stones), *izua* (sun), *machi* (water).
+- **Class VI (*lu- / nd-*)**: *lumi → ndumi* (tongue → tongues).
+- **Class VII (*ka- / tu-* Diminutives)**: *kanyonyi → tunyonyi* (little bird), *kachi → tuchi* (little brook).
+- **Verbal Subject Prefixes**: 1s *ni-*, 2s *u-*, 3s *a-*, 1p *tu-*, 2p *mu-*, 3p *wa-* (Negative: *si-, ku-, ka-, katu-, kamu-, kawa-*).`,
+    examples: [
+      { taita: 'kanyonyi kadori → tunyonyi tudori', english: 'a tiny bird → tiny birds', explanation: 'Class VII Diminutive concord in Wray (1894, p. 23)' },
+      { taita: 'Mundu mghosi ni kichwa cha mudzi.', english: 'A wise elder is the head of the homestead.', explanation: 'Taylor (1891, Proverb #665) & Wray (1894)' }
+    ]
+  }
+];
+
+// --- 16. TAVETA (Kitaveta) ---
+export const TAVETA_CONFIG: LanguageConfig = {
+  id: 'taveta',
+  name: 'Taveta',
+  nativeName: 'Kitaveta',
+  family: 'Bantu',
+  counties: ['Taita-Taveta'],
+  speakers: '35K',
+  speechLocale: 'sw-KE',
+  description: 'A Coastal Hinterland Bantu language spoken in the Lumi River forest oasis near Mount Kilimanjaro in Taita-Taveta County. Grounded in A. C. Hollis (1910 "Taveta Sayings and Proverbs" & 1911 "Taveta Enigmas") and Sir Harry Johnston (1919 #16).',
+  color: '#15803D',
+  sources: ['hollis-taveta-proverbs-1910', 'hollis-taveta-enigmas-1911', 'johnston-bantu-1919', 'open-web-swadesh-comparative'],
+};
+
+export const TAVETA_UNITS: CourseUnit[] = [
+  {
+    id: 'taveta-unit-1',
+    title: 'Unit 1: Greetings, Lumi Forest Nouns, Numerals & Hollis (1910–1911) Proverbs & Enigmas',
+    description: 'Learn Kitaveta greetings, noun classes, counting 1–10, and the 79 proverbs and 41 enigmas (ndaa) recorded by A. C. Hollis (1910–1911).',
+    icon: '🌳',
+    skills: [
+      {
+        id: 'taveta-nouns-proverbs',
+        title: 'Kitaveta Nouns & Hollis (1910) Proverbs',
+        icon: 'Scroll',
+        description: 'Master core Kitaveta nouns and proverbs from A. C. Hollis (1910) and Johnston (1919 #16).',
+        tips: "In A. C. Hollis (1911) 'Taveta Enigmas', riddles are introduced with 'Nakutega ndaa!' ('I set you an enigma/trap!'), answered with 'Tega!' ('Set it!').",
+        culturalNote: "A. C. Hollis (1910) documented 79 Kitaveta proverbs and sayings reflecting the forest-irrigation agriculture of the Lumi River and the Njama council of elders.",
+        words: [
+          { target: 'Mwakucha! / Uko mwidzi?', source: 'Good morning! / Are you well?', pronunciation: 'mwah-koo-chah / oo-koh mwee-dzee', hint: 'Kitaveta salutation' },
+          { target: 'mndu (pl. wandu) / mche (pl. wache)', source: 'Person (pl. People) / Woman (pl. Women)', pronunciation: 'm-ndoo / wah-ndoo / m-cheh', hint: 'Johnston (1919, p. 93 #16 Taveta)' },
+          { target: 'mazi / moto / mbeho', source: 'Water / Fire / Cold', pronunciation: 'mah-zee / moh-toh / m-beh-hoh', hint: 'Hollis (1910 Proverb #4) & Johnston (1919 #16)' },
+          { target: 'ideghe (pl. madeghe) / kucha', source: 'Bird (pl. Birds) / Dawn, daybreak', pronunciation: 'ee-deh-gheh / koo-chah', hint: 'Hollis (1910 Proverb #10)' },
+          { target: 'rutoke (pl. matoke) / nyumba', source: 'Banana / House', pronunciation: 'roo-toh-keh / nyoom-bah', hint: 'Hollis (1911 Taveta Enigmas)' },
+          { target: 'Nakutega ndaa! — Tega!', source: 'I set you a riddle! — Set it!', pronunciation: 'nah-koo-teh-gah n-dah', hint: 'Hollis (1911, p. 200) riddle opening formula' },
+          { target: 'Esikie mbeho niye esongeria moto', source: 'He who feels the cold draws near to the fire (Hollis 1910 #4)', pronunciation: 'eh-see-kyeh m-beh-hoh', hint: 'Take initiative when in need' },
+          { target: 'Ideghe imwe likaremwa kuiya teheshigha kucha', source: 'If one bird fails to sing, it does not stop the dawn (Hollis 1910 #10)', pronunciation: 'ee-deh-gheh ee-mweh', hint: 'Time and progress wait for no one' }
+        ],
+        sentences: [
+          { target: 'Esikie mbeho niye esongeria moto.', source: 'It is the one who feels the cold who draws near to the fire (Hollis 1910 #4).' },
+          { target: 'Ideghe imwe likaremwa kuiya teheshigha kucha.', source: 'If one bird fails to sing, it does not stop the dawn from breaking (Hollis 1910 #10).' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'In A. C. Hollis (1910, Proverb #4), what does "Esikie mbeho niye esongeria moto" mean?',
+            correctAnswer: 'He who feels the cold draws near to the fire (Hollis 1910 #4)',
+            options: [
+              'He who feels the cold draws near to the fire (Hollis 1910 #4)',
+              'If one bird fails to sing, it does not stop the dawn (Hollis 1910 #10)',
+              'Good morning! / Are you well?',
+              'Banana / House'
+            ],
+            hint: 'mbeho = cold, moto = fire'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const TAVETA_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'taveta-hollis-1910-johnston-1919',
+    title: 'Kitaveta Noun Classes, Numerals & Oral Literature (Hollis 1910–1911 & Johnston 1919 #16)',
+    summary: 'Kitaveta is a North-East Coastal Bantu language closely allied to Pare/Asu and Chaga-Taita, preserving 15+ noun classes and rich proverb/riddle morphology.',
+    content: `As documented in A. C. Hollis (*Taveta Sayings and Proverbs*, 1910; *Taveta Enigmas*, 1911) and Sir Harry Johnston (*Comparative Study of the Bantu Languages*, 1919, #16 Taveta, pp. 89–96):
+- **Noun Classes**: Class 1/2 *mndu → wandu* (person → people), *mche → wache* (woman → women); Class 3/4 *mti → miti* (tree → trees); Class 5/6 *ideghe → madeghe* (bird → birds), *iwe → mawe* (stone → stones), *mazi* (water); Class 7/8 *kindu → vindu* (thing → things).
+- **Cardinal Numerals (Johnston 1919, p. 95 #16)**: *imwe* (1), *iwiri* (2), *itatu* (3), *inya* (4), *itano* (5), *itandatu* (6), *mfungate* (7), *mnane* (8), *kenda* (9), *ikumi* (10).`,
+    examples: [
+      { taveta: 'Esikie mbeho niye esongeria moto.', english: 'It is the one who feels the cold who draws near to the fire.', explanation: 'A. C. Hollis (1910, Taveta Proverb #4)' },
+      { taveta: 'Ideghe imwe likaremwa kuiya teheshigha kucha.', english: 'If one bird fails to sing, it does not stop the dawn from breaking.', explanation: 'A. C. Hollis (1910, Taveta Proverb #10)' }
+    ]
+  }
+];
+
+// --- 17. POKOMO (Kipfokomo) ---
+export const POKOMO_CONFIG: LanguageConfig = {
+  id: 'pokomo',
+  name: 'Pokomo',
+  nativeName: 'Kipfokomo',
+  family: 'Bantu',
+  counties: ['Tana River', 'Lamu'],
+  speakers: '112K',
+  speechLocale: 'sw-KE',
+  description: 'A Sabaki Bantu language spoken along the Tana River flood-plain from Garissa to Kipini. Grounded in Rev. Dr. J. L. Krapf (1850 "Vocabulary of Six East-African Languages") and Sir Harry H. Johnston (1919 #14 Pokomo).',
+  color: '#0369A1',
+  sources: ['krapf-six-languages-1850', 'johnston-bantu-1919', 'open-web-swadesh-comparative'],
+};
+
+export const POKOMO_UNITS: CourseUnit[] = [
+  {
+    id: 'pokomo-unit-1',
+    title: 'Unit 1: Tana River Greetings, Sabaki Sound Shifts, Numerals & Riverine Life (Krapf 1850 & Johnston 1919 #14)',
+    description: 'Master Kipfokomo greetings, labial-affricate phonology (pf/bf), numerals 1–10, and Tana River vocabulary.',
+    icon: '🛶',
+    skills: [
+      {
+        id: 'pokomo-river-nouns',
+        title: 'Tana River (Muho wa Tsana) Vocabulary, Numerals & Wakijo Governance',
+        icon: 'Compass',
+        description: 'Learn Kipfokomo nouns and numerals from Krapf (1850) and Johnston (1919 #14).',
+        tips: "Like Mijikenda, Kipfokomo belongs to the Sabaki Bantu branch: Proto-Bantu *t shifts to h in muho ('river', cf. Swahili mto) and moho ('fire', cf. moto), while developing distinctive labiodental affricates (pf, bf) as in Kipfokomo.",
+        culturalNote: "Along the Tana River (Muho wa Tsana), Pokomo communities historically governed village life and flood-plain farming through the Wakijo / Gasa council of elders and navigated via carved dugout canoes (waho).",
+        words: [
+          { target: 'Habari! / Uko bwema? (resp. Niko bwema)', source: 'Greetings! / Are you well? (I am well)', pronunciation: 'hah-bah-ree / oo-koh bweh-mah', hint: 'Kipfokomo salutation' },
+          { target: 'munt’u (pl. want’u) / mwana (pl. wana)', source: 'Person (pl. People) / Child (pl. Children)', pronunciation: 'moon-too / wahn-too', hint: 'Krapf (1850) & Johnston (1919 #14)' },
+          { target: 'madzi / moho / muho', source: 'Water / Fire / River (Muho wa Tsana = Tana River)', pronunciation: 'mah-dzee / moh-hoh / moo-hoh', hint: 'Sabaki dzi- & *t > h shift (Krapf 1850)' },
+          { target: 'waho (pl. mawaho) / nswi / mamba', source: 'Dugout canoe / Fish / Crocodile', pronunciation: 'wah-hoh / n-swee / mahm-bah', hint: 'Krapf (1850) & Johnston (1919 #14) riverine lexicon' },
+          { target: 'mudzi (pl. midzi) / nyumba / Wakijo', source: 'Village / House / Council of Elders', pronunciation: 'moo-dzee / nyoom-bah / wah-kee-joh', hint: 'Krapf (1850) & Pokomo governance' },
+          { target: 'imwe, mbiri, tahu, nne, tsano', source: '1, 2, 3, 4, 5', pronunciation: 'ee-mweh, m-bee-ree, tah-hoo, n-neh, tsah-noh', hint: 'Johnston (1919, p. 95 #14 Pokomo) numerals' },
+          { target: 'handahu, fungahe, nane, kenda, kumi', source: '6, 7, 8, 9, 10', pronunciation: 'hahn-dah-hoo, foon-gah-heh, nah-neh, kehn-dah, koo-mee', hint: 'Johnston (1919, p. 95 #14 Pokomo)' },
+          { target: 'Mungu (Mulungu)', source: 'God, Supreme Creator', pronunciation: 'moon-goo / moo-loon-goo', hint: 'Krapf (1850) & Johnston (1919 #14)' }
+        ],
+        sentences: [
+          { target: 'Muho wa Tsana ni muyo wa mudzi.', source: 'The Tana River is the lifeblood of the village.' },
+          { target: 'Chanda kimwe hakibandi ntsaha.', source: 'One finger alone cannot crush a louse.' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'What is the Kipfokomo word for "River" and "Dugout canoe" in Krapf (1850) and Johnston (1919 #14)?',
+            correctAnswer: 'muho / waho',
+            options: ['muho / waho', 'imwe / mbiri', 'handahu / fungahe', 'Habari / Mungu'],
+            hint: 'Muho wa Tsana = Tana River; waho = canoe'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const POKOMO_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'pokomo-sabaki-grammar',
+    title: 'Sabaki Phonology (Kipfokomo pf/bf, *t > h), Noun Classes & Numerals (Krapf 1850 & Johnston 1919 #14)',
+    summary: 'Kipfokomo is a core member of the Sabaki Bantu subgroup alongside Swahili and Mijikenda, preserving Sabaki lenition (*moto > moho, *mto > muho, *-tatu > -hahu) and 15+ noun classes.',
+    content: `Documented by Rev. Dr. J. L. Krapf (*Vocabulary of Six East-African Languages*, 1850) and Sir Harry H. Johnston (*Comparative Study of the Bantu Languages*, 1919, #14 Pokomo, pp. 89–96):
+- **Sabaki Sound Correspondences**: Proto-Bantu *t lenites to *h* (*moho* 'fire', *muho* 'river', *tahu* 'three', *handahu* 'six', *fungahe* 'seven'), while Class 5 uses *dzi- / i-* (*dziwe → mawe* 'stone', *dzua* 'sun', *madzi* 'water').
+- **Noun Classes**: Class 1/2 *munt'u → want'u* (person → people), Class 3/4 *muhi → mihi* (tree → trees), *mudzi → midzi* (village → villages).`,
+    examples: [
+      { pokomo: 'moho • muho • madzi • dziwe (pl. mawe)', english: 'fire • river • water • stone', explanation: 'Sabaki sound laws in Krapf (1850) & Johnston (1919 #14)' },
+      { pokomo: 'imwe, mbiri, tahu, nne, tsano, handahu, fungahe, nane, kenda, kumi', english: '1, 2, 3, 4, 5, 6, 7, 8, 9, 10', explanation: 'Kipfokomo numerals (Johnston 1919, p. 95)' }
+    ]
+  }
+];
+
+// --- 18. BORANA / OROMO (Afaan Borana) ---
+export const BORANA_CONFIG: LanguageConfig = {
+  id: 'borana',
+  name: 'Borana (Oromo)',
+  nativeName: 'Afaan Borana',
+  family: 'Cushitic',
+  counties: ['Marsabit', 'Isiolo', 'Moyale', 'Garissa', 'Tana River'],
+  speakers: '550K',
+  speechLocale: 'om-KE',
+  description: 'A major Lowland East Cushitic language spoken by the Borana, Gabra, Sakuye, and Orma communities of Northern and Eastern Kenya. Grounded in Rev. J. L. Krapf (1842 & 1850) and Karl & Lawrence Tutschek (1844 "Dictionary" & 1845 "Grammar of the Galla Language").',
+  color: '#B45309',
+  sources: ['krapf-galla-vocabulary-1842', 'tutschek-galla-dictionary-1844', 'tutschek-galla-grammar-1845', 'krapf-six-languages-1850', 'open-web-swadesh-comparative'],
+};
+
+export const BORANA_UNITS: CourseUnit[] = [
+  {
+    id: 'borana-unit-1',
+    title: 'Unit 1: Nagaa Borana Greetings, Cushitic Cases, Numerals & Tutschek (1844–1845) Prayers',
+    description: 'Master Afaan Borana greetings (Akkam jirta? / Nagaa!), Nominative vs. Absolutive nouns, counting 1–10, and 1845 prayers to Waaqa.',
+    icon: '🐪',
+    skills: [
+      {
+        id: 'borana-greetings-nouns',
+        title: 'Greetings, Nagaa (Peace), Kinship & Pastoral Nature (Krapf 1842 & Tutschek 1844)',
+        icon: 'Users',
+        description: 'Learn Afaan Borana greetings, pronouns, and core nouns from the 1842–1845 corpus.',
+        tips: "In Afaan Borana (Tutschek 1845, pp. 12–28), sentences follow Subject–Object–Verb (SOV) order, and subjects take the Nominative suffix -ni / -ti (nama 'person [abs.]' → namni 'the person [subj.]', bishaan 'water' → bishaani).",
+        culturalNote: "In Borana tradition and Karl Tutschek's 1845 Grammar (pp. 84–88), 'Nagaa' (Peace) is the foundation of cosmic and social order: every greeting asks after the peace of family, cattle, and pastures ('Yaa Waaqa, nagaa nuu kenni!').",
+        words: [
+          { target: 'Akkam jirta? / Nagaa! (resp. Nagaa, fayyaa!)', source: 'How are you? / Peace! (Peace, well!)', pronunciation: 'ahk-kahm jeer-tah / nah-gah', hint: 'Standard Afaan Borana salutation' },
+          { target: 'Galatoomi (Guddaa galatoomi)', source: 'Thank you (Thank you very much)', pronunciation: 'gah-lah-toh-mee', hint: 'Gratitude' },
+          { target: 'nama (nom. namni) / dhiira / nadheen (dubartii)', source: 'Person / Man / Woman', pronunciation: 'nah-mah / dhee-rah / nah-dhehn', hint: 'Krapf (1842) & Tutschek (1844)' },
+          { target: 'abbaa / haadha / ilmoo (ijoollee)', source: 'Father / Mother / Child (Children)', pronunciation: 'ahb-bah / hah-dhah / eel-moh', hint: 'Krapf (1842) & Tutschek (1844)' },
+          { target: 'bishaan / ibidda / aduu / ji’a', source: 'Water / Fire / Sun / Moon', pronunciation: 'bee-shahn / ee-beed-dah / ah-doo / jee-ah', hint: 'Krapf (1842 & 1850) & Tutschek (1844)' },
+          { target: 'looni (sa’a) / gaala / re’ee / hoolaa', source: 'Cattle (cow) / Camel / Goat / Sheep', pronunciation: 'loh-nee / gah-lah / reh-eh / hoh-lah', hint: 'Krapf (1842) & Tutschek (1844) pastoral livestock' },
+          { target: 'aannan / foon / damma', source: 'Milk / Meat / Honey', pronunciation: 'ahn-nahn / fohn / dahm-mah', hint: 'Tutschek (1844)' },
+          { target: 'Waaqa (Yaa Waaqa, nagaa nuu kenni!)', source: 'God (O God, grant us peace! — Tutschek 1845 Prayer #1)', pronunciation: 'wah-qah', hint: 'Tutschek (1845, p. 84)' }
+        ],
+        sentences: [
+          { target: 'Yaa Waaqa, nagaa nuu kenni!', source: 'O God, grant us peace! (Tutschek 1845, p. 84)' },
+          { target: 'Harka tokko aboottee hin dhaanani.', source: 'One hand alone cannot clap (Tutschek 1844).' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'In Karl Tutschek’s 1845 "Grammar of the Galla Language" (p. 84), what does the invocation "Yaa Waaqa, nagaa nuu kenni!" mean?',
+            correctAnswer: 'God (O God, grant us peace! — Tutschek 1845 Prayer #1)',
+            options: [
+              'God (O God, grant us peace! — Tutschek 1845 Prayer #1)',
+              'Water / Fire / Sun / Moon',
+              'Cattle (cow) / Camel / Goat / Sheep',
+              'Father / Mother / Child (Children)'
+            ],
+            hint: 'Waaqa = God, nagaa = peace, nuu kenni = give to us'
+          }
+        ]
+      },
+      {
+        id: 'borana-numbers-verbs',
+        title: 'Cushitic Numerals 1–10 & SOV Verbs (Tutschek 1845 & Krapf 1842)',
+        icon: 'Hash',
+        description: 'Count from 1 to 10 in Afaan Borana and conjugate SOV verbs.',
+        tips: "Tutschek (1845, p. 32) and Krapf (1842) record Borana/Oromo numerals 1–10: tokko (1), lama (2), sadii (3), afur (4), shan (5), ja'a (6), torba (7), saddeet (8), sagal (9), kudhan (10).",
+        words: [
+          { target: 'tokko, lama, sadii, afur, shan', source: '1, 2, 3, 4, 5', pronunciation: 'tohk-koh, lah-mah, sah-dee, ah-foor, shahn', hint: 'Tutschek (1845, p. 32) & Krapf (1842)' },
+          { target: "ja'a, torba, saddeet, sagal, kudhan", source: '6, 7, 8, 9, 10', pronunciation: 'jah-ah, tohr-bah, sahd-deht, sah-gahl, koo-dhahn', hint: 'Tutschek (1845, p. 32) & Krapf (1842)' },
+          { target: 'digdama / dhibba / kuma', source: '20 / 100 / 1,000', pronunciation: 'deeg-dah-mah / dheeb-bah / koo-mah', hint: 'Tutschek (1845, p. 33)' },
+          { target: 'nyaachuu / dhuguu / deemuu / dhufuu', source: 'To eat / To drink / To go / To come', pronunciation: 'nyah-choo / dhoo-goo / deh-moo / dhoo-foo', hint: 'Tutschek (1844 & 1845) core verbs' }
+        ],
+        sentences: [
+          { target: 'Ani bishaan dhuga.', source: 'I drink water (SOV word order).' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'What are the Afaan Borana numbers 1, 2, 3 (Tutschek 1845)?',
+            correctAnswer: 'tokko, lama, sadii, afur, shan',
+            options: ['tokko, lama, sadii, afur, shan', "ja'a, torba, saddeet, sagal, kudhan", 'digdama / dhibba / kuma', 'nyaachuu / dhuguu / deemuu / dhufuu'],
+            hint: 'tokko (1), lama (2), sadii (3)'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const BORANA_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'borana-tutschek-1845-grammar',
+    title: 'SOV Syntax, Absolutive vs. Nominative Case, Postpositions & Verb Conjugation (Tutschek 1845 & Krapf 1842)',
+    summary: 'Karl & Lawrence Tutschek’s 1845 Grammar of the Galla Language was the first systematic grammar of Oromo/Borana, documenting its SOV word order, case suffixes, and derivative verb stems.',
+    content: `From Karl & Lawrence Tutschek (*Dictionary* 1844 & *Grammar of the Galla Language* 1845) and Rev. J. L. Krapf (1842, 1850):
+- **Absolutive vs. Marked Nominative Case**: The base citation form of a noun is the Absolutive (used for direct objects and predicates, e.g., *nama* 'person', *bishaan* 'water'). When used as the grammatical subject, nouns take Nominative suffixes (**-ni, -ti, -i**): *namni dhufe* ('the man came').
+- **Pronouns (Tutschek 1845, p. 29)**: 1s *ani* (acc. *na*), 2s *ati* (acc. *si*), 3sm *inni* (acc. *isa*), 3sf *ishiin* (acc. *ishii*), 1p *nuti* (acc. *nu*), 2p *isini* (acc. *isin*), 3p *isaan*.
+- **Verbal Derivation**: Causative (**-s / -sis**), Middle/Reflexive (**-adh / -at**), and Passive (**-am**).`,
+    examples: [
+      { borana: 'Yaa Waaqa, nagaa nuu kenni!', english: 'O Waaqa (God), grant us peace!', explanation: 'Tutschek (1845, p. 84, Prayer #1)' },
+      { borana: 'Harka tokko aboottee hin dhaanani.', english: 'One hand alone cannot clap.', explanation: 'Tutschek (1844 Dictionary)' }
+    ]
+  }
+];
+
+// --- 19. RENDILLE (Af-Rendille) ---
+export const RENDILLE_CONFIG: LanguageConfig = {
+  id: 'rendille',
+  name: 'Rendille',
+  nativeName: 'Af-Rendille',
+  family: 'Cushitic',
+  counties: ['Marsabit', 'Isiolo'],
+  speakers: '96K',
+  speechLocale: 'sw-KE',
+  description: 'A Lowland East Cushitic (Omo-Tana) language spoken across the Kaisut and Chalbi deserts of Marsabit County. Grounded in C. W. Hobley (1910 "Ethnology of A-Kamba and Other East African Tribes", Chapter XVII: The Rendile, pp. 156–157).',
+  color: '#DC2626',
+  sources: ['hobley-akamba-ethnology-1910', 'open-web-swadesh-comparative'],
+};
+
+export const RENDILLE_UNITS: CourseUnit[] = [
+  {
+    id: 'rendille-unit-1',
+    title: 'Unit 1: Greetings, Hobley’s (1910) Rendille Camel & Desert Lexicon & Cushitic Numerals',
+    description: 'Master Af-Rendille greetings, camel husbandry vocabulary, wildlife, and numerals 1–10 from C. W. Hobley (1910).',
+    icon: '🐪',
+    skills: [
+      {
+        id: 'rendille-hobley-1910-lexicon',
+        title: 'Greetings, Camel Pastoralism, Wildlife & Numerals (Hobley 1910)',
+        icon: 'Compass',
+        description: 'Learn the historic 1910 Rendille vocabulary recorded by C. W. Hobley in Marsabit.',
+        tips: "Af-Rendille is a Lowland East Cushitic language closely allied to Somali. Unlike Somali, Rendille preserves a prefixing conjugation on a larger class of verbs while sharing Cushitic numerals: kow (1), lamma (2), seyya (3), affar (4), chan (5), lih (6), teba (7), siddet (8), saagal (9), tomon (10).",
+        culturalNote: "In Rendille pastoral society around Marsabit and the Kaisut Desert, the 'gob' (clan settlement) centers on the sacred 'naabo' enclosure where elders offer evening prayers for the camels (gaal) and peace (nabad).",
+        words: [
+          { target: 'Nabad! / Bariya? (resp. Waa nabad!)', source: 'Peace! / Good morning? (It is peace!)', pronunciation: 'nah-bahd / bah-ree-yah', hint: 'Af-Rendille salutation' },
+          { target: 'gaal / ayyu / oor / nyirakh', source: 'Camels (collective) / She-camel / Burden camel / Camel calf', pronunciation: 'gahl / ah-yoo / ohr / nyee-rahkh', hint: 'Hobley (1910, p. 156) Rendille camel lexicon' },
+          { target: 'gob / naabo / min', source: 'Clan settlement / Sacred ritual enclosure / House', pronunciation: 'gohb / nah-boh / meen', hint: 'Hobley (1910, p. 156)' },
+          { target: 'biyo / caano / soor (huun)', source: 'Water / Milk / Food', pronunciation: 'bee-yoh / ah-noh / sohr', hint: 'Hobley (1910, p. 156)' },
+          { target: 'tor / gashan / bilau / biso / laho', source: 'Spear / Shield / Sword-knife / Bow / Arrow', pronunciation: 'tohr / gah-shahn / bee-lah-oo / bee-soh / lah-hoh', hint: 'Hobley (1910, p. 156) Rendille material culture' },
+          { target: 'bahasi / kabih / arbah / worsis / nyugul', source: 'Lion / Leopard / Elephant / Rhinoceros / Ostrich', pronunciation: 'bah-hah-see / kah-bee / ahr-bah / wohr-sees / nyoo-gool', hint: 'Hobley (1910, p. 157) northern wildlife' },
+          { target: 'kow, lamma, seyya, affar, chan', source: '1, 2, 3, 4, 5', pronunciation: 'kohw, lahm-mah, sey-yah, ahf-fahr, chahn', hint: 'Cushitic numerals 1–5' },
+          { target: 'lih, teba, siddet, saagal, tomon', source: '6, 7, 8, 9, 10', pronunciation: 'leeh, teh-bah, seed-deht, sah-gahl, toh-mohn', hint: 'Cushitic numerals 6–10' }
+        ],
+        sentences: [
+          { target: 'Gaal waa nolol; biyo waa nabad.', source: 'The camel is life; water is peace.' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'In C. W. Hobley’s 1910 Rendille vocabulary (p. 157), which words mean "Lion / Leopard / Elephant"?',
+            correctAnswer: 'bahasi / kabih / arbah / worsis / nyugul',
+            options: [
+              'bahasi / kabih / arbah / worsis / nyugul',
+              'kow, lamma, seyya, affar, chan',
+              'biyo / caano / soor (huun)',
+              'Nabad! / Bariya? (resp. Waa nabad!)'
+            ],
+            hint: 'bahasi = lion, kabih = leopard, arbah = elephant'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const RENDILLE_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'rendille-cushitic-grammar',
+    title: 'Af-Rendille Gender Suffixes (-ki / -ti), SOV Word Order & Hobley’s (1910) Comparative Corpus',
+    summary: 'Af-Rendille is an Omo-Tana Lowland East Cushitic language with Masculine (-k-) and Feminine (-t-) gender agreement, SOV syntax, and rich camel-pastoral terminology.',
+    content: `As documented in C. W. Hobley (*Ethnology of A-Kamba and Other East African Tribes*, 1910, Chapter XVII: The Rendile, pp. 156–157):
+- **Masculine (*-k-*) vs. Feminine (*-t-*) Determiners**: Like Somali, Rendille marks masculine gender with **-k-** (*inanki* 'the boy') and feminine gender with **-t-** (*inanti* 'the girl').
+- **Numerals**: *kow* (1), *lamma* (2), *seyya* (3), *affar* (4), *chan* (5), *lih* (6), *teba* (7), *siddet* (8), *saagal* (9), *tomon* (10).`,
+    examples: [
+      { rendille: 'gaal • ayyu • oor • nyirakh', english: 'camels • she-camel • burden camel • camel calf', explanation: 'Rendille camel terminology (Hobley 1910, p. 156)' },
+      { rendille: 'tor • gashan • bilau • biso • laho', english: 'spear • shield • sword-knife • bow • arrow', explanation: 'Hobley (1910, p. 156)' }
+    ]
+  }
+];
+
+// --- 20. SAMBURU (Sampur / North Maa) ---
+export const SAMBURU_CONFIG: LanguageConfig = {
+  id: 'samburu',
+  name: 'Samburu',
+  nativeName: 'Sampur (Лоikop / North Maa)',
+  family: 'Nilotic',
+  counties: ['Samburu', 'Marsabit', 'Isiolo', 'Laikipia'],
+  speakers: '350K',
+  speechLocale: 'sw-KE',
+  description: 'The Northern Maa (Eastern Nilotic) language spoken by the Samburu (Loikop) pastoralists from the Laikipia Plateau to Mount Nyiro and Lake Turkana. Grounded in Hildegarde Hinde (1901), Sir Harry Johnston (1902 Burkeneji/Sampuru), A. C. Hollis (1905), and Hon. K. R. Dundas (1910).',
+  color: '#E11D48',
+  sources: ['hinde-masai-1901', 'johnston-uganda-protectorate-1902', 'hollis-masai-1905', 'dundas-baringo-tribes-1910', 'open-web-swadesh-comparative'],
+};
+
+export const SAMBURU_UNITS: CourseUnit[] = [
+  {
+    id: 'samburu-unit-1',
+    title: 'Unit 1: Northern Maa Salutations, Gender Prefixes (L- / N-), Numerals & Mount Nyiro Heritage',
+    description: 'Master Samburu greetings (Supai! / Takwenya!), l-/n- noun prefixes, counting 1–10, and Northern Maa pastoral culture.',
+    icon: '🏔️',
+    skills: [
+      {
+        id: 'samburu-nouns-numerals',
+        title: 'Sampur Salutations, L-/N- Nouns & Numerals (Johnston 1902 & Hollis 1905)',
+        icon: 'Users',
+        description: 'Learn Northern Maa nouns, greetings, and numerals from Johnston (1902) and Hollis (1905).',
+        tips: "In Samburu (Northern Maa), the masculine singular prefix ol- often reduces to l- (l-murani 'warrior', l-payian 'elder', l-doinyo 'mountain') and feminine en- reduces to n- (nkai 'God/rain', nkare 'water', nkishu 'cattle').",
+        culturalNote: "The name 'Samburu' derives from 'saamburr', the traditional leather carrying bag used by Northern Maa pastoralists, while their self-designation 'Loikop' signifies 'stewards/owners of the land'.",
+        words: [
+          { target: 'Supai! (resp. Epa!) / Takwenya! (resp. Iko!)', source: 'Greetings to men/warriors! / Greetings to women/elders!', pronunciation: 'soo-pah-ee / tah-kweh-nyah', hint: 'Hinde (1901) & Hollis (1905) Maa salutations' },
+          { target: 'Ashe oleng / Serian', source: 'Thank you very much / Peace', pronunciation: 'ah-sheh oh-lehng / seh-ree-ahn', hint: 'Gratitude & peace' },
+          { target: 'saamburr (Sampur) / Loikop', source: 'Traditional leather bag / Samburu self-designation ("owners of the land")', pronunciation: 'sahm-boor / loy-kohp', hint: 'Hinde (1901) & Johnston (1902)' },
+          { target: 'l-murani (pl. l-muran) / l-payian / n-gitok', source: 'Warrior / Elder / Woman', pronunciation: 'l-moo-rah-nee / l-pah-yahn / n-gee-tohk', hint: 'Northern Maa l-/n- prefixes' },
+          { target: 'Nkai / nkare / kule / nkishu', source: 'God (Sky/Rain) / Water / Milk / Cattle', pronunciation: 'n-kah-ee / n-kah-reh / koo-leh / n-kee-shoo', hint: 'Johnston (1902 Burkeneji) & Hollis (1905)' },
+          { target: 'Ol-doinyo Nyiro / E-waso Ngiro', source: 'Mount Nyiro (sacred mountain) / Ewaso Ng\'iro River', pronunciation: 'ohl-doy-nyoh nyee-roh', hint: 'Dundas (1910) & Hinde (1901)' },
+          { target: 'nabo (obo), are (aare), uni (okuni), ongwan, imiet', source: '1, 2, 3, 4, 5', pronunciation: 'nah-boh, ah-reh, oo-nee, oh-ngwahn, ee-mee-eht', hint: 'Johnston (1902) & Hollis (1905) numerals 1–5' },
+          { target: 'ile, sapana, isiet, saal (naudo), tomon', source: '6, 7, 8, 9, 10', pronunciation: 'ee-leh, sah-pah-nah, ee-see-eht, sahl, toh-mohn', hint: 'Northern Maa preserves sapana (7) & saal (9)' }
+        ],
+        sentences: [
+          { target: 'Meeta Nkai ol-openy obo; Nkai oo nkishu.', source: 'God belongs to no single person alone; God is the giver of cattle to all.' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'What is the origin of the name "Samburu" (Sampur) in Northern Maa?',
+            correctAnswer: 'saamburr (Sampur) / Loikop',
+            options: [
+              'saamburr (Sampur) / Loikop',
+              'Ol-doinyo Nyiro / E-waso Ngiro',
+              'nabo (obo), are (aare), uni (okuni), ongwan, imiet',
+              'Supai! (resp. Epa!) / Takwenya! (resp. Iko!)'
+            ],
+            hint: 'saamburr = traditional leather carrying bag'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const SAMBURU_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'samburu-north-maa-grammar',
+    title: 'Northern Maa Phonology (l- / n- Prefixes), Cushitic Numeral Borrowings (sapana, saal) & VSO Syntax',
+    summary: 'Samburu is the primary Northern Maa variety of Eastern Nilotic, sharing VSO syntax and gender prefixes with Maasai while incorporating Cushitic numerals 7 (sapana) and 9 (saal).',
+    content: `As documented in Sir Harry H. Johnston (*The Uganda Protectorate, Vol. II*, 1902, Burkeneji/Sampuru), Hildegarde Hinde (1901), and Hon. K. R. Dundas (1910):
+- **Gender Prefixes**: Masculine **l-** (pl. **l-** / **il-**) vs. Feminine **n-** (pl. **n-** / **in-**): *l-murani* (warrior), *l-doinyo* (mountain), *nkare* (water), *nkishu* (cattle).
+- **Numerals**: *nabo / obo* (1), *are / aare* (2), *uni / okuni* (3), *ongwan* (4), *imiet* (5), *ile* (6), *sapana* (7), *isiet* (8), *saal* (9), *tomon* (10).`,
+    examples: [
+      { samburu: 'l-murani (sg.) → l-muran (pl.) • n-kiteng (sg.) → n-kishu (pl.)', english: 'warrior → warriors • cow → cattle', explanation: 'Northern Maa l-/n- gender prefixes' }
+    ]
+  }
+];
+
+// --- 21. ILCHAMUS (Njemps / Camus) ---
+export const ILCHAMUS_CONFIG: LanguageConfig = {
+  id: 'ilchamus',
+  name: 'Ilchamus (Njemps)',
+  nativeName: 'Ilchamus (Camus)',
+  family: 'Nilotic',
+  counties: ['Baringo'],
+  speakers: '45K',
+  speechLocale: 'sw-KE',
+  description: 'The Northern Maa (Eastern Nilotic) language of the Ilchamus (historically recorded as Njemps or En-jemusi) along the southern shores and rivers of Lake Baringo. Grounded in Sir Harry Johnston (1902 Njemps), A. C. Hollis (1905), and Hon. K. R. Dundas (1910 "Notes on the Tribes Inhabiting the Baringo District").',
+  color: '#0284C7',
+  sources: ['johnston-uganda-protectorate-1902', 'hollis-masai-1905', 'dundas-baringo-tribes-1910', 'open-web-swadesh-comparative'],
+};
+
+export const ILCHAMUS_UNITS: CourseUnit[] = [
+  {
+    id: 'ilchamus-unit-1',
+    title: 'Unit 1: Lake Baringo Salutations, Ilkeroi & Ilmae Irrigation Heritage & Numerals (Dundas 1910 & Johnston 1902)',
+    description: 'Learn Ilchamus greetings, river-irrigation and fishery vocabulary, and numerals 1–10 from Dundas (1910) and Johnston (1902).',
+    icon: '🌊',
+    skills: [
+      {
+        id: 'ilchamus-baringo-heritage',
+        title: 'Baringo Settlements (Ilkeroi & Ilmae), Lake Life & Numerals (Dundas 1910)',
+        icon: 'Compass',
+        description: 'Master Ilchamus vocabulary recorded by Hon. K. R. Dundas (1910) and Sir Harry Johnston (1902).',
+        tips: "Hon. K. R. Dundas (1910, JRAI Vol. 40, pp. 49–54) documented how the Ilchamus of Ilkeroi (Njemps Juu) and Ilmae (Njemps Chini) combined Maa pastoralism with engineered brushwood dams and irrigation furrows from the Perkerra and Molo rivers.",
+        culturalNote: "On Lake Baringo (Mparingo), Ilchamus fishermen traditionally crafted ultra-light buoyant canoes (l-kadich) bound from ambatch (Aeschynomene elaphroxylon) balsa reeds.",
+        words: [
+          { target: 'Supai! (resp. Epa!) / Serian!', source: 'Greetings! / Peace!', pronunciation: 'soo-pah-ee / seh-ree-ahn', hint: 'Ilchamus salutation' },
+          { target: 'Ilkeroi (Njemps Juu) / Ilmae (Njemps Chini)', source: 'The two historic Ilchamus sister settlements at Baringo', pronunciation: 'eel-keh-roy / eel-mah-eh', hint: 'Dundas (1910, p. 50)' },
+          { target: 'Mparingo / l-kadich / l-singiri', source: 'Lake Baringo / Ambatch balsa-reed canoe / Fish', pronunciation: 'm-pah-reen-goh / l-kah-deech / l-seen-gee-ree', hint: 'Lake Baringo maritime & fishing lexicon' },
+          { target: 'nkare / n-kima / n-kolong / Nkai', source: 'Water (River) / Fire / Sun / God', pronunciation: 'n-kah-reh / n-kee-mah / n-koh-lohng / n-kah-ee', hint: 'Johnston (1902 Njemps) & Dundas (1910)' },
+          { target: 'n-kiteng (pl. n-kishu) / l-kinos / l-makau', source: 'Cow (pl. Cattle) / Crocodile / Hippopotamus', pronunciation: 'n-kee-tehng / l-kee-nohs / l-mah-kah-oo', hint: 'Johnston (1902 Njemps)' },
+          { target: 'nabo (obo), are, uni, ongwan, imiet', source: '1, 2, 3, 4, 5', pronunciation: 'nah-boh, ah-reh, oo-nee, oh-ngwahn, ee-mee-eht', hint: 'Johnston (1902 Njemps) numerals 1–5' },
+          { target: 'ile, sapana, isiet, saal, tomon', source: '6, 7, 8, 9, 10', pronunciation: 'ee-leh, sah-pah-nah, ee-see-eht, sahl, toh-mohn', hint: 'Johnston (1902 Njemps) numerals 6–10' }
+        ],
+        sentences: [
+          { target: 'Ilkeroi o Ilmae: Serian enkare oo nkishu.', source: 'Ilkeroi and Ilmae: Peace be to the irrigation waters and the cattle (Dundas 1910).' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'In Hon. K. R. Dundas (1910, p. 50), what are the two historic Ilchamus settlements near Lake Baringo?',
+            correctAnswer: 'Ilkeroi (Njemps Juu) / Ilmae (Njemps Chini)',
+            options: [
+              'Ilkeroi (Njemps Juu) / Ilmae (Njemps Chini)',
+              'nabo (obo), are, uni, ongwan, imiet',
+              'ile, sapana, isiet, saal, tomon',
+              'Supai! (resp. Epa!) / Serian!'
+            ],
+            hint: 'Upper and Lower Njemps'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const ILCHAMUS_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'ilchamus-dundas-1910-grammar',
+    title: 'Ilchamus (Camus) Northern Maa Grammar & Baringo Irrigation Terminology (Dundas 1910 & Johnston 1902)',
+    summary: 'Ilchamus forms the Lake Baringo branch of Northern Maa (Eastern Nilotic), sharing l-/n- gender prefixes and VSO verb structure with Samburu and Maasai.',
+    content: `Documented by Sir Harry H. Johnston (*The Uganda Protectorate, Vol. II*, 1902, Njemps) and Hon. K. R. Dundas (*Notes on the Tribes Inhabiting the Baringo District*, JRAI Vol. 40, 1910, pp. 49–54):
+- **Gender Prefixes**: Masculine **l-** (*l-tungani* 'man/person', *l-kinos* 'crocodile', *l-makau* 'hippopotamus') and Feminine **n-** (*n-gitok* 'woman', *n-kare* 'water', *n-kishu* 'cattle').`,
+    examples: [
+      { ilchamus: 'Ilkeroi o Ilmae: Serian enkare oo nkishu.', english: 'Ilkeroi and Ilmae: Peace be to the waters and the cattle.', explanation: 'Dundas (1910, pp. 49–54)' }
+    ]
+  }
+];
+
+// --- 22. POKOT (Pökoot / Suk) ---
+export const POKOT_CONFIG: LanguageConfig = {
+  id: 'pokot',
+  name: 'Pokot (Pökoot)',
+  nativeName: 'Pökoot (Suk)',
+  family: 'Nilotic',
+  counties: ['West Pokot', 'Baringo', 'Turkana'],
+  speakers: '780K',
+  speechLocale: 'sw-KE',
+  description: 'The northern branch of the Highland (Southern) Nilotic Kalenjin family, spoken across West Pokot and Baringo counties by both agricultural hill-furrow engineers (Pipapagha) and pastoral plains communities (Pipatiich). Grounded in Sir Harry Johnston (1902 Suk), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911 "The Suk: Their Language and Folklore").',
+  color: '#7C3AED',
+  sources: ['johnston-uganda-protectorate-1902', 'dundas-baringo-tribes-1910', 'beech-suk-pokot-1911', 'open-web-swadesh-comparative'],
+};
+
+export const POKOT_UNITS: CourseUnit[] = [
+  {
+    id: 'pokot-unit-1',
+    title: 'Unit 1: Pökoot Greetings, Beech’s (1911) Suk Grammar, Numerals & Tiangoi! Riddles',
+    description: 'Master Pökoot greetings (Chamnyan!), nouns, numerals 1–10, riddles, and the Hymn to Torôrut from Mervyn Beech (1911).',
+    icon: '⛰️',
+    skills: [
+      {
+        id: 'pokot-beech-1911-lexicon',
+        title: 'Greetings, Hill-Furrow & Pastoral Life, Numerals & Riddles (Beech 1911)',
+        icon: 'Scroll',
+        description: 'Learn Pökoot vocabulary, numerals, and riddles from Mervyn W. H. Beech (1911).',
+        tips: "Mervyn W. H. Beech (1911, p. 44) records that Pökoot riddles begin with the challenge 'Tiangoi!' ('Set a riddle!'). Beech also documents the division between Hill Suk (Pipapagha 'People of the Grain', who built cliff-side irrigation channels called rot) and Plains Suk (Pipatiich 'People of the Cattle').",
+        culturalNote: "In Mervyn Beech (1911, p. 19), Torôrut is the Supreme Sky Deity of the Pökoot, while Ilat is the rain-spirit who carries water in the clouds.",
+        words: [
+          { target: 'Chamnyan! / Kalya! (resp. Bo!)', source: 'Greetings! / Peace! (Reply: Peace!)', pronunciation: 'chahm-nyahn / kahl-yah', hint: 'Pökoot salutation' },
+          { target: 'Torôrut / Ilat / Assis', source: 'Supreme Sky God / Rain Spirit / Sun (Day)', pronunciation: 'toh-roh-root / ee-laht / ahs-sees', hint: 'Mervyn Beech (1911, p. 19) Suk cosmology' },
+          { target: 'chito (pl. pich) / muren / korko (pl. korok)', source: 'Person (pl. People) / Warrior / Woman (pl. Women)', pronunciation: 'chee-toh / peech / moo-rehn / kohr-koh', hint: 'Beech (1911, p. 61)' },
+          { target: 'pogh (beek) / mat / rot / kokwa', source: 'Water / Fire / Irrigation furrow / Village council of elders', pronunciation: 'pohgh / maht / roht / koh-kwah', hint: 'Beech (1911, pp. 15, 22)' },
+          { target: 'tany (pl. tuka) / chego / matai / mosong', source: 'Cow (pl. Cattle) / Milk / Finger-millet / Sorghum', pronunciation: 'tahny / too-kah / cheh-goh / mah-tah-ee / moh-sohng', hint: 'Beech (1911, p. 15) pastoral & hill-farming staples' },
+          { target: 'okombo, oghien, somok, angwan, mut', source: '1, 2, 3, 4, 5', pronunciation: 'oh-kohm-boh, oh-ghyehn, soh-mohk, ah-ngwahn, moot', hint: 'Beech (1911, p. 69) & Johnston (1902 Suk) numerals 1–5' },
+          { target: 'lo, tisap, sisit, sokol, taman', source: '6, 7, 8, 9, 10', pronunciation: 'loh, tee-sahp, see-seet, soh-kohl, tah-mahn', hint: 'Beech (1911, p. 69) numerals 6–10' },
+          { target: 'Tiangoi! A-tiny-e korok-chan a-re che-ker-key. — Kôñg.', source: 'Riddle: I have two wives who never see each other. — Answer: The two eyes (Beech 1911 #1)', pronunciation: 'tyahn-goy ... kohng', hint: 'Mervyn Beech (1911, p. 44, Riddle #1)' }
+        ],
+        sentences: [
+          { target: 'Torôrut! Kô-nech robta, kô-nech parak, kô-nech tuka!', source: 'O Torôrut! Give us rain, give us harvest abundance, give us healthy cattle! (Beech 1911, p. 15)' },
+          { target: 'Tiangoi! A-tiny-e korok-chan a-re che-ker-key. — Kôñg.', source: 'Riddle: I have two wives who never see each other. — The two eyes (Beech 1911, p. 44).' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'In Mervyn W. H. Beech’s "The Suk: Their Language and Folklore" (1911, p. 44), what is the answer to Riddle #1 ("I have two wives who never see each other")?',
+            correctAnswer: 'Tiangoi! A-tiny-e korok-chan a-re che-ker-key. — Kôñg.',
+            options: [
+              'Tiangoi! A-tiny-e korok-chan a-re che-ker-key. — Kôñg.',
+              'okombo, oghien, somok, angwan, mut',
+              'tany (pl. tuka) / chego / matai / mosong',
+              'Chamnyan! / Kalya! (resp. Bo!)'
+            ],
+            hint: 'Kôñg = The two eyes'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const POKOT_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: 'pokot-beech-1911-grammar',
+    title: 'Pökoot (Suk) Noun Plurals, Pronouns, VSO Verb Conjugation & Beech (1911) Folklore',
+    summary: 'Mervyn W. H. Beech’s 1911 monograph The Suk: Their Language and Folklore documents Pökoot as the northernmost Highland Nilotic (Kalenjin) language.',
+    content: `From Mervyn W. H. Beech (*The Suk: Their Language and Folklore*, Clarendon Press, Oxford, 1911, pp. 47–98) and Hon. K. R. Dundas (1910):
+- **Pronouns (Beech 1911, p. 69)**: 1s *ani (ane)*, 2s *inyi*, 3s *ine*, 1p *achak*, 2p *akwak*, 3p *ichak*.
+- **Numerals (Beech 1911, p. 69)**: *okombo* (1), *oghien* (2), *somok* (3), *angwan* (4), *mut* (5), *lo* (6), *tisap* (7), *sisit* (8), *sokol* (9), *taman* (10), *tiptem* (20), *sosom* (30), *artam* (40), *konom* (50), *pokol* (100).`,
+    examples: [
+      { pokot: 'Tiangoi! A-tiny-e korok-chan a-re che-ker-key. — Kôñg.', english: 'Riddle: I have two wives who never see each other. — The two eyes.', explanation: 'Mervyn W. H. Beech (1911, p. 44, Riddle #1)' },
+      { pokot: 'Torôrut! Kô-nech robta, kô-nech parak, kô-nech tuka!', english: 'O Torôrut! Give us rain, give us harvest abundance, give us cattle!', explanation: 'Beech (1911, p. 15)' }
     ]
   }
 ];

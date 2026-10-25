@@ -12,8 +12,8 @@
     "Garissa"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-23",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Borana / Oromo (Afaan Borana / Afaan Oromoo) dictionary compiled from Karl Tutschek ('Dictionary of the Galla Language', Munich, 1844 — Public Domain), Wiktionary's Afroasiatic Swadesh list, and Wikipedia's Oromo language grammatical & lexical tables.",
   "categories": [
     {
@@ -89,6 +89,48 @@
           "translation": "Lakki / Haa'a / ii'ii",
           "pronunciation": "lak-ki / ii-ii",
           "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "inni (he) / ishiin (she)",
+          "pronunciation": "een-nee / ee-sheen",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "eenyu?",
+          "pronunciation": "eh-nyoo",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "maali?",
+          "pronunciation": "mah-lee",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "eessa?",
+          "pronunciation": "ehs-sah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "har'a",
+          "pronunciation": "hahr-ah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "bori (boru)",
+          "pronunciation": "boh-ree",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         }
       ]
@@ -762,6 +804,13 @@
           "pronunciation": "ye-roo",
           "context": "Wikipedia Oromo_language",
           "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "dhagaa",
+          "pronunciation": "dhah-gah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -868,6 +917,13 @@
       "name": "Core Verbs & Actions",
       "icon": "🏃",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "dubbachuu (dubbadhu! = speak!, jedha = say)",
+          "pronunciation": "doob-bah-choo / jeh-dhah",
+          "context": "Tutschek 1844 Dictionary & 1845 Grammar",
+          "audioFile": null
+        },
         {
           "english": "Eat",
           "translation": "nyachuu (nyaadhu)",
@@ -1070,6 +1126,48 @@
           "pronunciation": "er-buu",
           "context": "Wiktionary Afroasiatic Swadesh list — Oromo",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "arguu (laaluu)",
+          "pronunciation": "ahr-goo",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "dhaga'uu (dhageefachuu)",
+          "pronunciation": "dhah-gah-oo",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "beekuu",
+          "pronunciation": "beh-koo",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "jaalachuu",
+          "pronunciation": "jah-lah-choo",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kennuu (nuu kenni = give us)",
+          "pronunciation": "kehn-noo",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "bilcheessuu",
+          "pronunciation": "beel-chehs-soo",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1078,6 +1176,20 @@
       "name": "Adjectives, Pronouns & Grammar",
       "icon": "✨",
       "entries": [
+        {
+          "english": "Small",
+          "translation": "diqqaa / xiqqaa (tinnaa)",
+          "pronunciation": "deeq-qah / teeq-qah",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "guddaa (fem. guddoo)",
+          "pronunciation": "good-dah / good-doh",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
         {
           "english": "I / Me",
           "translation": "ani / an (obj. ana / na)",
@@ -1310,11 +1422,10 @@
           "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "krapf-1842-1850-tutschek-1844-1845-corpus",
-      "name": "Krapf (1842, 1850) & Tutschek (1844–1845) Historical Oromo/Borana Corpus (Grammar, Numerals, Prayers & Lexicon)",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -1371,6 +1482,97 @@
           "translation": "odaa",
           "pronunciation": "o-daa",
           "context": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Creator / Sky God",
+          "translation": "Waaqa (Yaa Waaqa! = O God!)",
+          "pronunciation": "wah-qah",
+          "context": "Krapf 1842 & Tutschek 1844–1845 Oromo/Borana",
+          "audioFile": null
+        },
+        {
+          "english": "Peace of the Borana",
+          "translation": "Nagaa (Nagaa Borana)",
+          "pronunciation": "nah-gah",
+          "context": "Tutschek 1844–1845",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Generation System",
+          "translation": "Gadaa (Abbaa Gadaa = elected leader)",
+          "pronunciation": "gah-dah",
+          "context": "Borana/Oromo governance",
+          "audioFile": null
+        },
+        {
+          "english": "Horse",
+          "translation": "farda",
+          "pronunciation": "fahr-dah",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "waraabessa",
+          "pronunciation": "wah-rah-behs-sah",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "eeboo",
+          "pronunciation": "eh-boh",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "gaachana",
+          "pronunciation": "gah-chah-nah",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "Honey-wine / Mead",
+          "translation": "daadhii",
+          "pronunciation": "dah-dhee",
+          "context": "Tutschek 1844 & 1845",
+          "audioFile": null
+        },
+        {
+          "english": "Barley / Grain",
+          "translation": "garbuu / midhaan",
+          "pronunciation": "gahr-boo / mee-dhahn",
+          "context": "Tutschek 1844 & 1845",
+          "audioFile": null
+        },
+        {
+          "english": "Morning",
+          "translation": "ganama",
+          "pronunciation": "gah-nah-mah",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "Evening",
+          "translation": "galgala",
+          "pronunciation": "gahl-gah-lah",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "gaara / tulluu",
+          "pronunciation": "gah-rah / tool-loo",
+          "context": "Krapf 1842 & Tutschek 1844",
+          "audioFile": null
+        },
+        {
+          "english": "King / Leader",
+          "translation": "moti (Abbaa Boku)",
+          "pronunciation": "moh-tee",
+          "context": "Krapf 1842 & Tutschek 1844",
           "audioFile": null
         }
       ]

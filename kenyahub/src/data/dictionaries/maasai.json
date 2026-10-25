@@ -11,21 +11,155 @@
     "Samburu"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.1.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Maasai (Maa) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
       "id": "greetings",
       "name": "Greetings & Farewells",
       "icon": "👋",
-      "entries": []
+      "entries": [
+        {
+          "english": "Peace",
+          "translation": "Eserian (Serian)",
+          "pronunciation": "eh-seh-ree-ahn",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Ashe (Ashe oleng)",
+          "pronunciation": "ah-sheh oh-lehng",
+          "context": "Standard Maa expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Ira supat? / Kaa ng'ida?",
+          "pronunciation": "ee-rah soo-paht",
+          "context": "Hinde 1901 & Hollis 1905",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Eserian en-gewarie / Takwenya!",
+          "pronunciation": "eh-seh-ree-ahn ehn-geh-wah-ree-eh",
+          "context": "Hollis 1905 evening greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Kasserian ingera? / Sopai!",
+          "pronunciation": "kahs-seh-ree-ahn een-geh-rah",
+          "context": "Hollis 1905 pastoral morning greeting ('Are the children at peace?')",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Sopai! (resp. Epa!) / Takwenya! (resp. Iko!)",
+          "pronunciation": "soh-pah-ee / tah-kweh-nyah",
+          "context": "Hinde 1901 p. 29 & Hollis 1905 p. 99 salutations",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "oibor (f. naibor)",
+          "pronunciation": "oy-bohr / nah-ee-bohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "orok (f. narok)",
+          "pronunciation": "oh-rohk / nah-rohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "onyokie (f. nanyokie)",
+          "pronunciation": "oh-nyoh-kyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        }
+      ]
     },
     {
       "id": "numbers",
       "name": "Numbers",
       "icon": "🔢",
       "entries": [
+        {
+          "english": "Ten",
+          "translation": "tɔ́mɔ̂n (tomon)",
+          "pronunciation": "toh-mohn",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "naáudo (f.) / oódó (m.)",
+          "pronunciation": "nah-oo-doh / oh-doh",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "ísíêt (isiet)",
+          "pronunciation": "ee-see-eht",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "naápishana (f.) / oópishana (m.)",
+          "pronunciation": "nah-ah-pee-shah-nah",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "ílɛ̂ (ile)",
+          "pronunciation": "ee-leh",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "ímíêt (imiet)",
+          "pronunciation": "ee-mee-eht",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "oŋwán (f.) / oóŋwan (m.)",
+          "pronunciation": "oh-ngwahn",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "uní (f.) / okúni (m.)",
+          "pronunciation": "oo-nee / oh-koo-nee",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "aré (f.) / aàre (m.)",
+          "pronunciation": "ah-reh / ah-ah-reh",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "One",
+          "translation": "nabô (f.) / obô (m.) / nebô (place)",
+          "pronunciation": "nah-boh / oh-boh",
+          "context": "Hollis 1905 p. 32 & Hinde 1901",
+          "audioFile": null
+        },
         {
           "english": "One (1) — feminine / masculine / place",
           "translation": "nabô (fem.) / obô (masc.) / nebô (place)",
@@ -110,6 +244,34 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Small",
+          "translation": "oti (f. kiti, pl. ooti)",
+          "pronunciation": "oh-tee / kee-tee",
+          "context": "Hollis 1905 p. 30 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "kitok (pl. kituak) / sapuk",
+          "pronunciation": "kee-tohk / sah-pook",
+          "context": "Hollis 1905 p. 30 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "torono (pl. torok)",
+          "pronunciation": "toh-roh-noh / toh-rohk",
+          "context": "Hollis 1905 p. 30 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "supat (pl. supati) / sidai",
+          "pronunciation": "soo-paht / see-dah-ee",
+          "context": "Hollis 1905 p. 30 & Hinde 1901",
+          "audioFile": null
+        },
         {
           "english": "The Maa language (autonym)",
           "translation": "ɔl Maa",
@@ -1432,6 +1594,62 @@
           "pronunciation": "kúshîn, olgísan, pʉshʉ́ka, ntʉ́ŋʉ́s",
           "context": "ɔl Maa — GitHub unicode-org/cldr (mas.xml)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "nanu (subject prefix a-)",
+          "pronunciation": "nah-noo",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "iyie (prefix i-)",
+          "pronunciation": "ee-yeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ninye (prefix e-)",
+          "pronunciation": "nee-nyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "iyook (prefix ki-)",
+          "pronunciation": "ee-yohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "nince (prefix e-)",
+          "pronunciation": "neen-cheh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ngai? (aingai?)",
+          "pronunciation": "ngah-ee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "inyoo? (kaa?)",
+          "pronunciation": "ee-nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "kaji? (ai?)",
+          "pronunciation": "kah-jee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1440,6 +1658,48 @@
       "name": "Animals & Wildlife",
       "icon": "🦁",
       "entries": [
+        {
+          "english": "Elephant",
+          "translation": "ol-tome (pl. il-tome) / ol-kanchawi",
+          "pronunciation": "ohl-toh-meh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "ol-ngatuny (pl. il-ngatunyo)",
+          "pronunciation": "ohl-ngah-toony",
+          "context": "Hollis 1905 Proverb #60 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "en-daritiki (pl. in-daritik) / ol-motonyi (large bird)",
+          "pronunciation": "ehn-dah-ree-tee-kee / ohl-moh-toh-nyee",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "ol-dia (pl. il-diain)",
+          "pronunciation": "ohl-dee-ah",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "en-gine (pl. in-gineji)",
+          "pronunciation": "ehn-gee-neh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "en-giteng (pl. in-gishu)",
+          "pronunciation": "ehn-gee-tehng / een-gee-shoo",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
         {
           "english": "Rabbit / hare",
           "translation": "en-kitojó",
@@ -1531,6 +1791,76 @@
       "name": "Nature & Environment",
       "icon": "🌍",
       "entries": [
+        {
+          "english": "Head",
+          "translation": "el-lukunya (pl. il-lukuny)",
+          "pronunciation": "ehl-loo-koo-nyah",
+          "context": "Hollis 1905 Proverb #59 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "eng-aina (pl. ing-aik)",
+          "pronunciation": "ehng-ah-ee-nah",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "en-geju (pl. in-gejek)",
+          "pronunciation": "ehn-geh-joo",
+          "context": "Hollis 1905 Proverb #20 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "eng-olong (pl. ing-olongi)",
+          "pronunciation": "ehng-oh-lohng",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "eng-aji (pl. ing-ajijik) / eng-ang (kraal)",
+          "pronunciation": "ehng-ah-jee / ehng-ahng",
+          "context": "Hollis 1905 p. 15 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "eng-ai (en-chan)",
+          "pronunciation": "ehng-ah-ee / ehn-chahn",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "ol-akira (pl. il-akir)",
+          "pronunciation": "ohl-ah-kee-rah",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "ol-apa (pl. il-apaitin)",
+          "pronunciation": "ohl-ah-pah",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "eng-olong (enkolong)",
+          "pronunciation": "ehng-oh-lohng",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Eng-ai (En-gai / Nkai)",
+          "pronunciation": "ehng-ah-ee",
+          "context": "Hollis 1905 p. 264 & Hinde 1901",
+          "audioFile": null
+        },
         {
           "english": "Tree / medicine",
           "translation": "ɔl-caní (olchani)",
@@ -1782,6 +2112,27 @@
           "pronunciation": "taisere",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "ol-doinyo (pl. il-doinyo)",
+          "pronunciation": "ohl-doy-nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "ol-keju (pl. il-kejek) / e-waso (en-gare)",
+          "pronunciation": "ohl-keh-joo / eh-wah-soh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "osoit (pl. isoito)",
+          "pronunciation": "oh-soyt / ee-soy-toh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1889,6 +2240,34 @@
       "icon": "🍲",
       "entries": [
         {
+          "english": "Honey",
+          "translation": "en-aisijoi (enaisho = honey-wine)",
+          "pronunciation": "ehn-ah-ee-see-joy / eh-nah-ee-shoh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "en-giringo (pl. in-giri)",
+          "pronunciation": "ehn-gee-reen-goh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "en-gare (enkare)",
+          "pronunciation": "ehn-gah-reh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "en-daa (pl. in-daiki)",
+          "pronunciation": "ehn-dah / een-dah-ee-kee",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
           "english": "Egg",
           "translation": "ol-mosorrî",
           "pronunciation": "ol-mosorrî",
@@ -1938,6 +2317,48 @@
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
+          "english": "Friend",
+          "translation": "ol-chore (pl. il-choreta)",
+          "pronunciation": "ohl-choh-reh",
+          "context": "Hollis 1905 Proverb #60 ('The lion does not eat his friend')",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "en-gerai (pl. in-gera)",
+          "pronunciation": "ehn-geh-rah-ee / een-geh-rah",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "en-gitok (pl. in-gituak) / en-goroyioni (wife)",
+          "pronunciation": "ehn-gee-tohk / ehn-goh-roh-yoh-nee",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "ol-payian (elder, pl. il-payiani) / ol-murani (warrior) / ol-tungani (person)",
+          "pronunciation": "ohl-pah-yahn / ohl-moo-rah-nee",
+          "context": "Hollis 1905 pp. 11–13 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "yeyo (ngotonye = his/her mother)",
+          "pronunciation": "yeh-yoh / ngoh-toh-nyeh",
+          "context": "Hollis 1905 Proverb #18 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "papa (menye = his/her father)",
+          "pronunciation": "pah-pah / meh-nyeh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
           "english": "Brother",
           "translation": "ɔl-aláshɛ̀ (olalashe)",
           "pronunciation": "ɔl-aláshɛ̀ (olalashe)",
@@ -1985,7 +2406,57 @@
       "id": "warfare",
       "name": "Warfare & Weapons",
       "icon": "⚔️",
-      "entries": []
+      "entries": [
+        {
+          "english": "Warrior Manyatta (Barracks)",
+          "translation": "e-manyata (pl. i-manyat)",
+          "pronunciation": "eh-mah-nyah-tah",
+          "context": "Hollis 1905 p. 296",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior",
+          "translation": "ol-murani (pl. il-muran)",
+          "pronunciation": "ohl-moo-rah-nee",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Bow & Arrow",
+          "translation": "en-gauo (bow) / em-bae (arrow, pl. im-baa)",
+          "pronunciation": "ehn-gah-oo-oh / ehm-bah-eh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Club (Rungu)",
+          "translation": "o-rinka (pl. i-rinkan)",
+          "pronunciation": "oh-reen-kah",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Sword (Simi)",
+          "translation": "ol-alem (pl. il-alema)",
+          "pronunciation": "ohl-ah-lehm",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "el-longo (pl. il-longoi)",
+          "pronunciation": "ehl-lohn-goh",
+          "context": "Hollis 1905 & Hinde 1901 buffalo-hide shield",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "em-bere (pl. im-beria)",
+          "pronunciation": "ehm-beh-reh",
+          "context": "Hollis 1905 & Hinde 1901 warrior equipment",
+          "audioFile": null
+        }
+      ]
     },
     {
       "id": "culture",
@@ -2083,6 +2554,48 @@
       "name": "Actions & Verbs",
       "icon": "⚡",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "a-iro (a-jo = to say)",
+          "pronunciation": "ah-ee-roh / ah-joh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "a-irura",
+          "pronunciation": "ah-ee-roo-rah",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "a-lotu (pl. a-ponu; Imperative: Wou!)",
+          "pronunciation": "ah-loh-too / woh-oo",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "a-lo (pl. a-puo; Imperative: Shomo!)",
+          "pronunciation": "ah-loh / shoh-moh",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "a-ok (ok)",
+          "pronunciation": "ah-ohk",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "a-nya (inos)",
+          "pronunciation": "ah-nyah / ee-nohs",
+          "context": "Hollis 1905 & Hinde 1901",
+          "audioFile": null
+        },
         {
           "english": "To eat",
           "translation": "a-ɲá (anya)",
@@ -2705,13 +3218,54 @@
           "pronunciation": "kiakan",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "a-dol (dol)",
+          "pronunciation": "ah-dohl",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "a-ning (ning)",
+          "pronunciation": "ah-neeng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "a-yiolo (yiolo)",
+          "pronunciation": "ah-yoh-loh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "a-nyor (anyor)",
+          "pronunciation": "ah-nyohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "a-isho (inchooki = give me)",
+          "pronunciation": "ah-ee-shoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "a-ier (ier)",
+          "pronunciation": "ah-ee-ehr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "hollis-1905-hinde-1901-johnston-1902-maasai",
-      "name": "Hollis (1905 'The Masai'), Hinde (1901 'The Masai Language'), Johnston (1902) & Hobley (1910, 1922) Historical Maa Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

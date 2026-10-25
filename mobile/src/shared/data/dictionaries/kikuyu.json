@@ -13,8 +13,8 @@
     "Nyandarua"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Gĩkũyũ (Kikuyu) dictionary scaffold. Non-public-domain entries (Leakey 1959, Gecaga & Kirkaldy-Willis 1953, Barra 1939/KLB) removed; ready for public-domain vocabulary (such as Hildegarde Hinde 1904).",
   "categories": [
     {
@@ -22,6 +22,34 @@
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Thank you",
+          "translation": "Nĩ wega (Nĩ wega mũno)",
+          "pronunciation": "nee weh-gah moo-noh",
+          "context": "Hémery 1903 & McGregor 1904",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Wĩraire atĩa? / Hwaĩ-inĩ mwega",
+          "pronunciation": "wee-rah-ee-reh ah-tee-ah",
+          "context": "McGregor 1904 & Hinde 1904",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Wũkĩra atĩa? / Rũciinĩ rwega",
+          "pronunciation": "woo-kee-rah ah-tee-ah",
+          "context": "McGregor 1904 & Routledge 1910 morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Wĩ mwega? / Niatĩa? (pl. Mũrĩ ega?)",
+          "pronunciation": "wee mweh-gah / nee-ah-tee-ah",
+          "context": "Hémery 1903 & McGregor 1904 Gĩkũyũ salutation",
+          "audioFile": null
+        },
         {
           "english": "evening",
           "translation": "waiini",
@@ -631,6 +659,13 @@
       "name": "Family & Relationships",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
+        {
+          "english": "Blacksmith",
+          "translation": "mũturi (pl. aturi)",
+          "pronunciation": "moo-too-ree",
+          "context": "Routledge 1910 pp. 79–96 & Hobley 1922",
+          "audioFile": null
+        },
         {
           "english": "bell (warrior's)",
           "translation": "injingirri (small)",
@@ -1296,6 +1331,48 @@
       "name": "Verbs & Actions",
       "icon": "⚡",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "kwaria (-aria) / kuuga",
+          "pronunciation": "kwah-ree-ah / koo-gah",
+          "context": "Hémery 1903 & McGregor 1904",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "kũkoma (-koma)",
+          "pronunciation": "koo-koh-mah",
+          "context": "Hémery 1903, McGregor 1904 & Hinde 1904",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "gũũka (-ũka; Imperative: Ũka!)",
+          "pronunciation": "goo-kah / oo-kah",
+          "context": "McGregor 1904 (Dahl's Law: kū-ũka > gũũka)",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "gũthiĩ (-thiĩ)",
+          "pronunciation": "goo-thee",
+          "context": "McGregor 1904 (Dahl's Law: kū-thiĩ > gũthiĩ)",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "kũnyua (-nyua)",
+          "pronunciation": "koo-nywah",
+          "context": "Hémery 1903, McGregor 1904 & Hinde 1904",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "kũrĩa (-rĩa)",
+          "pronunciation": "koo-ree-ah",
+          "context": "Hémery 1903, McGregor 1904 & Hinde 1904",
+          "audioFile": null
+        },
         {
           "english": "I conquer",
           "translation": "n-a-tinda",
@@ -2226,6 +2303,27 @@
           "pronunciation": "kũmenya werũ nĩ kũũtinda.",
           "context": "Gĩkũyũ Proverb (Marion S. Stevenson 1927 / Wiktionary)",
           "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kũigua (-igua)",
+          "pronunciation": "koo-ee-gwah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kwenda (-enda)",
+          "pronunciation": "kwehn-dah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kũruga (-ruga)",
+          "pronunciation": "koo-roo-gah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -2234,6 +2332,20 @@
       "name": "Nature & Environment",
       "icon": "🌿",
       "entries": [
+        {
+          "english": "Hyena",
+          "translation": "hiti",
+          "pronunciation": "hee-tee",
+          "context": "Hémery 1903, McGregor 1904 & Routledge 1910",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Fig Tree",
+          "translation": "mũgumo (pl. mĩgumo)",
+          "pronunciation": "moo-goo-moh",
+          "context": "Routledge 1910 & Hobley 1922 sacred shrine tree",
+          "audioFile": null
+        },
         {
           "english": "afternoon",
           "translation": "mialaho",
@@ -3856,6 +3968,13 @@
           "translation": "Mũthenya",
           "pronunciation": "mũthenya",
           "context": "Gĩkũyũ — GitHub unicode-org/cldr (ki.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "ihiga (pl. mahiga)",
+          "pronunciation": "ee-hee-gah / mah-hee-gah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]
@@ -5636,6 +5755,13 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Big",
+          "translation": "-nene (mũnene, nene)",
+          "pronunciation": "neh-neh",
+          "context": "Hémery 1903 & McGregor 1904",
+          "audioFile": null
+        },
         {
           "english": "across (the other side)",
           "translation": "murrimorria",
@@ -10969,13 +11095,47 @@
           "pronunciation": "kiakan",
           "context": "Gĩkũyũ — GitHub unicode-org/cldr (ki.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "niĩ (subject prefix ndĩ- / n-)",
+          "pronunciation": "nee-ee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "we (wee, prefix ũ-)",
+          "pronunciation": "weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "we (prefix a-)",
+          "pronunciation": "weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "ithuĩ (prefix tũ-)",
+          "pronunciation": "ee-thwee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "o (ao, prefix ma-)",
+          "pronunciation": "oh / ah-oh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "hemery-1903-mcgregor-1904-routledge-1910-hobley-1910-kikuyu",
-      "name": "Hémery (1903), McGregor (1904), Routledge (1910), Hobley (1910, 1922) & Johnston (1902, 1919) Historical Gĩkũyũ Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

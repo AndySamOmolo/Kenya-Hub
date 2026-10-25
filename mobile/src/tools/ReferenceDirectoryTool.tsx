@@ -30,6 +30,7 @@ import vaccinesData from "../shared/data/vaccination-schedule.json";
 import bodiesData from "../shared/data/professional-bodies.json";
 import fertilizerData from "../shared/data/fertilizer-subsidy.json";
 import languagesData from "../shared/data/kenya-languages.json";
+import { getSourcesForLanguage } from "../shared/data/language-sources";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
@@ -1703,7 +1704,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
     const filtered = useMemo(() => {
       const q = search.trim().toLowerCase();
       const list = languages.filter((l) => {
-        const matchFam = filterA === "All" || l.family === filterA;
+        const matchFam = filterA === "All" || (l.family && l.family.toLowerCase() === filterA.toLowerCase());
         const matchQ =
           !q ||
           l.name.toLowerCase().includes(q) ||
@@ -1726,7 +1727,7 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
         <View style={styles.card}>
           {official.map((o: any, idx: number) => (
             <View
-              key={o.name}
+              key={o.language || o.name || idx}
               style={{
                 paddingVertical: 6,
                 borderBottomWidth: idx < official.length - 1 ? 1 : 0,
@@ -1734,9 +1735,9 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
               }}
             >
               <Text style={{ fontSize: 13, fontWeight: "800", color: theme.gold }}>
-                {o.name} — {o.status}
+                {o.language || o.name} — {o.status}
               </Text>
-              <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 2 }}>{o.notes}</Text>
+              <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 2 }}>{o.use || o.notes}</Text>
             </View>
           ))}
         </View>
@@ -1805,6 +1806,18 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
                 <Text style={styles.detailLabel}>Primary Counties:</Text>
                 <Text style={styles.detailValue}>{(l.counties || []).join(", ")}</Text>
               </View>
+              {getSourcesForLanguage(l.name.split("(")[0].trim().toLowerCase().replace(/\s+/g, "")).length > 0 && (
+                <View style={{ marginTop: 6, paddingTop: 6, borderTopWidth: 1, borderTopColor: theme.border }}>
+                  <Text style={{ fontSize: 10, fontWeight: "800", color: theme.gold, textTransform: "uppercase" }}>
+                    Historical Reference Sources ({getSourcesForLanguage(l.name.split("(")[0].trim().toLowerCase().replace(/\s+/g, "")).length})
+                  </Text>
+                  {getSourcesForLanguage(l.name.split("(")[0].trim().toLowerCase().replace(/\s+/g, "")).slice(0, 4).map((src: any) => (
+                    <Text key={src.id} style={{ fontSize: 10.5, color: theme.textSecondary, marginTop: 2 }}>
+                      • {src.title}
+                    </Text>
+                  ))}
+                </View>
+              )}
             </View>
           </View>
         ))}

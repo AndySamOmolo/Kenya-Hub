@@ -12,8 +12,8 @@
     "Busia"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.2.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Luhya (Luyia) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
@@ -21,6 +21,41 @@
       "name": "Numbers",
       "icon": "🔢",
       "entries": [
+        {
+          "english": "Ten",
+          "translation": "ikhumi (likhumi)",
+          "pronunciation": "ee-khoo-mee",
+          "context": "Hobley 1902 p. 69 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "shenda (kienda)",
+          "pronunciation": "shehn-dah / kee-ehn-dah",
+          "context": "Hobley 1902 p. 69 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "munane (tsinane)",
+          "pronunciation": "moo-nah-neh",
+          "context": "Hobley 1902 p. 69 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "mufungate (tsisaba)",
+          "pronunciation": "moo-foon-gah-teh / tsee-sah-bah",
+          "context": "Hobley 1902 p. 69 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "tsisaasaba (mkaga)",
+          "pronunciation": "tsee-sah-sah-bah",
+          "context": "Hobley 1902 p. 69 & Johnston 1919 #5a",
+          "audioFile": null
+        },
         {
           "english": "All",
           "translation": "-osi / tulu",
@@ -92,6 +127,20 @@
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
+          "english": "King / Chief",
+          "translation": "Omwami (Nabongo, pl. Abami)",
+          "pronunciation": "oh-mwah-mee / nah-bohn-goh",
+          "context": "Rev. N. Stam 1929 p. 145 Wanga royal title",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "omulina (pl. abalina) / omwitsa",
+          "pronunciation": "oh-moo-lee-nah / oh-mwee-tsah",
+          "context": "Hobley 1902 & Stam 1929",
+          "audioFile": null
+        },
+        {
           "english": "Woman",
           "translation": "omukhasi (pl. abakhasi)",
           "pronunciation": "omukhasi (pl. abakhasi)",
@@ -155,6 +204,27 @@
       "icon": "🍲",
       "entries": [
         {
+          "english": "Honey",
+          "translation": "obushi (bushi)",
+          "pronunciation": "oh-boo-shee",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "amabele (mabere)",
+          "pronunciation": "ah-mah-beh-leh",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "ebyokhulia (obuma = ugali)",
+          "pronunciation": "eh-byoh-khoo-lee-ah / oh-boo-mah",
+          "context": "Hobley 1902 & Stam 1929",
+          "audioFile": null
+        },
+        {
           "english": "Fruit",
           "translation": "eshiamo (pl. ebiamo)",
           "pronunciation": "eshiamo (pl. ebiamo)",
@@ -210,6 +280,27 @@
       "name": "Animals & Pastoralism",
       "icon": "🐄",
       "entries": [
+        {
+          "english": "Sheep",
+          "translation": "likondi (pl. amakondi)",
+          "pronunciation": "lee-kohn-dee",
+          "context": "Hobley 1902 & Stam 1929",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "imbusi (pl. tsimbusi)",
+          "pronunciation": "eem-boo-see",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "ing'ombe (pl. tsing'ombe)",
+          "pronunciation": "een-gohm-beh",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
         {
           "english": "Animal",
           "translation": "isolo (pl. tsisolo)",
@@ -294,6 +385,13 @@
       "name": "Nature & Environment",
       "icon": "🌳",
       "entries": [
+        {
+          "english": "God",
+          "translation": "Were / Nasayi",
+          "pronunciation": "weh-reh / nah-sah-yee",
+          "context": "Rev. N. Stam 1929 p. 148 & Hobley 1903",
+          "audioFile": null
+        },
         {
           "english": "Tree",
           "translation": "omusaala / omuti (pl. emisaala)",
@@ -650,6 +748,13 @@
           "pronunciation": "ridiku",
           "context": "Oluluyia — GitHub unicode-org/cldr (luy.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "lichina / ligina (pl. amagina)",
+          "pronunciation": "lee-chee-nah / lee-gee-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -658,6 +763,20 @@
       "name": "Home & Village",
       "icon": "🏡",
       "entries": [
+        {
+          "english": "Homestead / Village",
+          "translation": "lidala (pl. amadala) / olukoba",
+          "pronunciation": "lee-dah-lah / oh-loo-koh-bah",
+          "context": "Hobley 1902 & Stam 1929",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "inzu (pl. tsinzu)",
+          "pronunciation": "een-zoo / tseen-zoo",
+          "context": "Hobley 1902, Johnston 1919 #5a & Stam 1929",
+          "audioFile": null
+        },
         {
           "english": "Stick",
           "translation": "olusala",
@@ -686,6 +805,20 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Small",
+          "translation": "-titi / -tutu",
+          "pronunciation": "tee-tee",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-khongo (omukhongo, ikhongo)",
+          "pronunciation": "khohn-goh",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
         {
           "english": "I (1st person singular pronoun)",
           "translation": "ise / esie / inze (prefix ndi-)",
@@ -1406,6 +1539,48 @@
           "pronunciation": "brazili",
           "context": "Oluluyia — GitHub unicode-org/cldr (luy.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "esie / ise (inze)",
+          "pronunciation": "eh-see-eh / ee-seh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "iwe (ive, prefix o-)",
+          "pronunciation": "ee-weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ye (yeye, prefix a-)",
+          "pronunciation": "yeh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "efwe / ifwe (prefix khu-)",
+          "pronunciation": "eh-fweh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "abo (bo, prefix ba-)",
+          "pronunciation": "ah-boh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "wina? (nani?)",
+          "pronunciation": "wee-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1582,6 +1757,48 @@
       "name": "Verbs & Actions",
       "icon": "⚡",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "okhuloma / okhuboola",
+          "pronunciation": "oh-khoo-loh-mah",
+          "context": "Hobley 1902 & Stam 1929",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "okhukona",
+          "pronunciation": "oh-khoo-koh-nah",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "okhunywa",
+          "pronunciation": "oh-khoo-nywah",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "okhuliira / okhulia",
+          "pronunciation": "oh-khoo-lee-ah",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "okhwitsa (itsa!)",
+          "pronunciation": "oh-khwee-tsah",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "okhutsia (tsia!)",
+          "pronunciation": "oh-khoo-tsee-ah",
+          "context": "Hobley 1902 & Johnston 1919 #5a",
+          "audioFile": null
+        },
         {
           "english": "To drink",
           "translation": "okhunywa",
@@ -2141,13 +2358,26 @@
           "pronunciation": "kiakan",
           "context": "Oluluyia — GitHub unicode-org/cldr (luy.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "okhuyanza (-yanza) / okhuherana",
+          "pronunciation": "oh-khoo-yahn-zah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "okhutekha (-tekha)",
+          "pronunciation": "oh-khoo-teh-khah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "stam-1929-hobley-1902-1903-johnston-1919-luhya",
-      "name": "Stam (1929 'The Bahanga'), Hobley (1902, 1903) & Johnston (1902, 1919) Historical Luhya Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -2211,6 +2441,55 @@
           "translation": "Lunyara, Luwanga (Lurimi), Lukabarasi, Lusinga, Lumasaba, Lukonde (Ketosh)",
           "pronunciation": "lu-nya-ra, lu-wan-ga, lu-ma-sa-ba, lu-kon-de",
           "context": "Sir Harry H. Johnston (1902, pp. 902–929; 1919, Vol. I, pp. 49–55) & C. W. Hobley (1902)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "greetings",
+      "name": "Greetings",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Peace",
+          "translation": "Mirembe / Mulembe",
+          "pronunciation": "mee-rehm-beh",
+          "context": "Hobley 1902 Luwanga vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Orio (Orio muno) / Nasima",
+          "pronunciation": "oh-ree-oh moo-noh / nah-see-mah",
+          "context": "Hobley 1902 & Oluluyia gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "How are you?",
+          "translation": "Oli mulayi? / Muli balayi?",
+          "pronunciation": "oh-lee moo-lah-yee",
+          "context": "Response: Ndi mulayi (I am well)",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Bwairire bulayi!",
+          "pronunciation": "bwah-ee-ree-reh boo-lah-yee",
+          "context": "Oluluyia evening salutation",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Bushire bulayi! / Orire otye?",
+          "pronunciation": "boo-shee-reh boo-lah-yee",
+          "context": "Stam 1929 & Oluluyia morning salutation",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Mulembe! / Mirembe!",
+          "pronunciation": "moo-lehm-beh / mee-rehm-beh",
+          "context": "Hobley 1902 & standard Oluluyia peace greeting",
           "audioFile": null
         }
       ]

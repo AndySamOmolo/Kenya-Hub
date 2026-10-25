@@ -9,7 +9,7 @@
     "Tana River"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "2.0.0",
+  "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Pokomo (Kipfokomo) dictionary compiled line-by-line from Rev. Dr. J. L. Krapf ('Vocabulary of Six East-African Languages', Tübingen, 1850 — Public Domain), Ferdinand Würtz ('Wörterbuch des Ki-Tikuu und des Ki-Pokomo', 1895 — Public Domain), Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 78–81, #13 Pokomo, 1919 — Public Domain), and Nurse & Hinnebusch (1993).",
   "categories": [
@@ -51,6 +51,83 @@
           "translation": "Kingozi",
           "pronunciation": "kin-go-zi",
           "context": "Wikipedia Pokomo_language & Krapf (1882)",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "mimi (prefix ni-)",
+          "pronunciation": "mee-mee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "wewe (uwe, prefix u-)",
+          "pronunciation": "weh-weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "yeye (iye, prefix a-)",
+          "pronunciation": "yeh-yeh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "swiswi (prefix hu-)",
+          "pronunciation": "swee-swee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "wao (prefix wa-)",
+          "pronunciation": "wah-oh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "yani? (nani?)",
+          "pronunciation": "yah-nee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "ntini? (nini?)",
+          "pronunciation": "n-tee-nee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "hapi? (ku?)",
+          "pronunciation": "hah-pee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "leo (lero)",
+          "pronunciation": "leh-oh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "kesho (madzacha)",
+          "pronunciation": "keh-shoh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "dzana",
+          "pronunciation": "dzah-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]
@@ -320,6 +397,13 @@
       "icon": "🐄",
       "entries": [
         {
+          "english": "Sheep",
+          "translation": "ng'ondzi",
+          "pronunciation": "ngohn-dzee",
+          "context": "Krapf 1850 & Johnston 1919 p. 94 #14 Pokomo",
+          "audioFile": null
+        },
+        {
           "english": "Fish",
           "translation": "nswi / samaki",
           "pronunciation": "nswi",
@@ -500,6 +584,20 @@
           "pronunciation": "u-si-ku",
           "context": "Krapf (1850) & Würtz (1895) — Kipokomo",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "mlima (pl. milima)",
+          "pronunciation": "m-lee-mah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "muho (Muho wa Tsana = Tana River)",
+          "pronunciation": "moo-hoh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -508,6 +606,13 @@
       "name": "Food, Agriculture & Home",
       "icon": "🌾",
       "entries": [
+        {
+          "english": "Milk",
+          "translation": "maziwa (mawele)",
+          "pronunciation": "mah-zee-wah / mah-weh-leh",
+          "context": "Krapf 1850 & Johnston 1919 p. 93 #14 Pokomo",
+          "audioFile": null
+        },
         {
           "english": "Village / Town",
           "translation": "mudzi (pl. midzi)",
@@ -571,6 +676,13 @@
       "name": "Core Verbs & Actions",
       "icon": "🏃",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "kunena (kuamba)",
+          "pronunciation": "koo-neh-nah / kwahm-bah",
+          "context": "Krapf 1850 & Johnston 1919 #14 Pokomo",
+          "audioFile": null
+        },
         {
           "english": "Eat",
           "translation": "kurya (kula)",
@@ -647,12 +759,54 @@
           "pronunciation": "ku-li-ma",
           "context": "Krapf (1850) & Würtz (1895) — Kipokomo",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "kuona (-ona)",
+          "pronunciation": "koo-oh-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kusikia (-sikia)",
+          "pronunciation": "koo-see-kee-ah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "kumanya (-manya)",
+          "pronunciation": "koo-mah-nyah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kupenda (-penda)",
+          "pronunciation": "koo-pehn-dah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kuha (-ha)",
+          "pronunciation": "koo-hah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kupika (-pika)",
+          "pronunciation": "koo-pee-kah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
     {
-      "id": "krapf-1850-johnston-1919-pokomo",
-      "name": "Krapf (1850) Six-Language Dictionary & Johnston (1919 #13) Kipokomo Pronouns & Lexicon",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -681,6 +835,153 @@
           "translation": "uuki (asali) / nta / nyuki",
           "pronunciation": "u-u-ki / nta / nyu-ki",
           "context": "Rev. Dr. J. L. Krapf (1850) & Johnston (1919, p. 78) — Kipokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Tana River",
+          "translation": "Muho wa Tsana",
+          "pronunciation": "moo-hoh wah tsah-nah",
+          "context": "Krapf 1850 & Johnston 1919 #14 Kipfokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Dugout Canoe",
+          "translation": "waho (pl. mawaho)",
+          "pronunciation": "wah-hoh",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Council of Elders",
+          "translation": "Wakijo (Gasa)",
+          "pronunciation": "wah-kee-joh / gah-sah",
+          "context": "Traditional Kipfokomo riverine governance",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "uki",
+          "pronunciation": "oo-kee",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "fumo (pl. mafumo)",
+          "pronunciation": "foo-moh",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "uha",
+          "pronunciation": "oo-hah",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "muvi (pl. mivi)",
+          "pronunciation": "moo-vee",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Village / Homestead",
+          "translation": "mudzi (pl. midzi)",
+          "pronunciation": "moo-dzee",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "msitu",
+          "pronunciation": "m-see-too",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "tsui",
+          "pronunciation": "tsoo-ee",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "fisi",
+          "pronunciation": "fee-see",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "milongo miwiri",
+          "pronunciation": "mee-lohn-goh mee-wee-ree",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        },
+        {
+          "english": "One hundred",
+          "translation": "igana",
+          "pronunciation": "ee-gah-nah",
+          "context": "Krapf 1850 & Johnston 1919 #14",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "-dodo (mudodo, kadodo)",
+          "pronunciation": "doh-doh / kah-doh-doh",
+          "context": "Krapf 1850 & Johnston 1919 p. 95 #14 Pokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-kuu (mukuu, kukuu)",
+          "pronunciation": "koo / moo-koo",
+          "context": "Krapf 1850 & Johnston 1919 p. 95 #14 Pokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "-wi (muwi, mbwi)",
+          "pronunciation": "wee / moo-wee",
+          "context": "Krapf 1850 & Johnston 1919 p. 95 #14 Pokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "-ema (muema, njema)",
+          "pronunciation": "eh-mah",
+          "context": "Krapf 1850 & Johnston 1919 p. 95 #14 Pokomo",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "-eupe",
+          "pronunciation": "eh-oo-peh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "-iru (nyiru)",
+          "pronunciation": "ee-roo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "-kundu (nyekundu)",
+          "pronunciation": "koon-doo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]

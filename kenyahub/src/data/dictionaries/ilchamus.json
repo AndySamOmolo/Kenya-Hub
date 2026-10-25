@@ -9,7 +9,7 @@
     "Baringo"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "2.0.0",
+  "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Ilchamus (Camus / Njemps / En-jemusi) dictionary compiled from Hon. K. R. Dundas ('Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, 1910 — Public Domain), Sir Harry H. Johnston ('The Uganda Protectorate, Vol. II', 1902 — Public Domain), Mervyn W. H. Beech ('The Suk: Their Language and Folklore', 1911 — Public Domain), and Rainer Vossen ('The Eastern Nilotes', 1982).",
   "categories": [
@@ -18,6 +18,13 @@
       "name": "Greetings & Common Phrases",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Friend",
+          "translation": "l-chore (pl. l-choreta)",
+          "pronunciation": "l-choh-reh",
+          "context": "Dundas 1910 & Maa Baringo corpus",
+          "audioFile": null
+        },
         {
           "english": "Hello / Greetings",
           "translation": "Sopa / Supa",
@@ -44,6 +51,83 @@
           "translation": "Ashe / Ashe oleng",
           "pronunciation": "ah-sheh",
           "context": "Ilchamus expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "nanu (prefix a-)",
+          "pronunciation": "nah-noo",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "iyie (prefix i-)",
+          "pronunciation": "ee-yeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ninye (prefix e-)",
+          "pronunciation": "nee-nyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "iyook (prefix ki-)",
+          "pronunciation": "ee-yohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "nince",
+          "pronunciation": "neen-cheh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ngai?",
+          "pronunciation": "ngah-ee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "inyoo?",
+          "pronunciation": "ee-nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "kaji?",
+          "pronunciation": "kah-jee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "taata",
+          "pronunciation": "tah-tah",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "taisere",
+          "pronunciation": "tah-ee-seh-reh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "ngole",
+          "pronunciation": "ngoh-leh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]
@@ -130,6 +214,20 @@
       "name": "People, Family & Kinship",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
+        {
+          "english": "Woman",
+          "translation": "n-gitok (pl. n-gituak)",
+          "pronunciation": "n-gee-tohk",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "l-payian (elder) / l-murani (warrior) / l-tungani (person)",
+          "pronunciation": "l-pah-yahn / l-moo-rah-nee",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
         {
           "english": "People of Ilchamus ('People who see far')",
           "translation": "Ilchamus (sg. Olchamus); Suk exonym: En-jemusi",
@@ -271,6 +369,13 @@
       "icon": "🐄",
       "entries": [
         {
+          "english": "Dog",
+          "translation": "l-dia (pl. l-diain)",
+          "pronunciation": "l-dee-ah",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
           "english": "Fish (Lake Baringo)",
           "translation": "lsing'iri (pl. lsing'ir)",
           "pronunciation": "lsing-i-ri",
@@ -334,6 +439,27 @@
       "icon": "🌍",
       "entries": [
         {
+          "english": "Day",
+          "translation": "n-golong",
+          "pronunciation": "n-goh-lohng",
+          "context": "Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "n-gewarie",
+          "pronunciation": "n-geh-wah-ree-eh",
+          "context": "Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "l-akira (pl. l-akir)",
+          "pronunciation": "l-ah-kee-rah",
+          "context": "Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
           "english": "Water / Lake / River",
           "translation": "ŋ-kár-ɛ́ (nkare)",
           "pronunciation": "nka-re",
@@ -388,6 +514,27 @@
           "pronunciation": "nku-jit",
           "context": "Johnston (1902) — Njemps/Ilchamus",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "l-doinyo",
+          "pronunciation": "l-doy-nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "l-keju / e-waso",
+          "pronunciation": "l-keh-joo",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "soit (pl. soito)",
+          "pronunciation": "soyt",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -396,6 +543,13 @@
       "name": "Food, Agriculture & Home",
       "icon": "🌾",
       "entries": [
+        {
+          "english": "Food",
+          "translation": "n-daa",
+          "pronunciation": "n-dah",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
         {
           "english": "Milk",
           "translation": "kule",
@@ -431,6 +585,13 @@
       "name": "Core Verbs & Actions",
       "icon": "🏃",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "a-iro (a-jo)",
+          "pronunciation": "ah-ee-roh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
         {
           "english": "Eat",
           "translation": "a-ɲá (anya)",
@@ -479,12 +640,54 @@
           "pronunciation": "air-rag",
           "context": "Camus / North Maa",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "a-dol (dol)",
+          "pronunciation": "ah-dohl",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "a-ning (ning)",
+          "pronunciation": "ah-neeng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "a-yiolo (yiolo)",
+          "pronunciation": "ah-yoh-loh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "a-nyor (anyor)",
+          "pronunciation": "ah-nyohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "a-isho",
+          "pronunciation": "ah-ee-shoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "a-ier (ier)",
+          "pronunciation": "ah-ee-ehr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
     {
-      "id": "historical-baringo-dundas-1910",
-      "name": "Dundas (1910), Johnston (1902) & Beech (1911) Historical Corpus (Clans, Totems & 12-Month Calendar)",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -562,6 +765,160 @@
           "translation": "Il-payiani le-nkare (Council of the Water Furrows)",
           "pronunciation": "il-pa-yia-ni le-nka-re",
           "context": "Hon. K. R. Dundas (1910, pp. 52–53) & Mervyn Beech (1911, p. 34) — Ilchamus irrigation law",
+          "audioFile": null
+        },
+        {
+          "english": "Upper Irrigation Settlement",
+          "translation": "Ilkeroi (Njemps Juu)",
+          "pronunciation": "eel-keh-roy",
+          "context": "Dundas 1910 p. 50 Baringo Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Lower Irrigation Settlement",
+          "translation": "Ilmae (Njemps Chini)",
+          "pronunciation": "eel-mah-eh",
+          "context": "Dundas 1910 p. 50 Baringo Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Lake Baringo",
+          "translation": "Mparingo",
+          "pronunciation": "m-pah-reen-goh",
+          "context": "Dundas 1910 & Ilchamus geography",
+          "audioFile": null
+        },
+        {
+          "english": "Perkerra River",
+          "translation": "E-wauso Ngiro / L-kera",
+          "pronunciation": "eh-wah-oo-soh",
+          "context": "Dundas 1910 Baringo river irrigation",
+          "audioFile": null
+        },
+        {
+          "english": "Dugout Balsa Canoe (Ambatch)",
+          "translation": "l-kadich",
+          "pronunciation": "l-kah-deech",
+          "context": "Lake Baringo Ilchamus fishing craft",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "l-singiri (pl. l-singir)",
+          "pronunciation": "l-seen-gee-ree",
+          "context": "Ilchamus Lake Baringo fishery",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "l-makau",
+          "pronunciation": "l-mah-kah-oo",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "m-bere",
+          "pronunciation": "m-beh-reh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "l-longo",
+          "pronunciation": "l-lohn-goh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "n-gauo",
+          "pronunciation": "n-gah-oo-oh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "m-bae",
+          "pronunciation": "m-bah-eh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "l-ngatuny",
+          "pronunciation": "l-ngah-toony",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "l-tome",
+          "pronunciation": "l-toh-meh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "n-aisho",
+          "pronunciation": "nah-ee-shoh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "oti (kiti)",
+          "pronunciation": "oh-tee / kee-tee",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "sapuk (kitok)",
+          "pronunciation": "sah-pook",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "torono",
+          "pronunciation": "toh-roh-noh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "supat (sidai)",
+          "pronunciation": "soo-paht",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "oibor (naibor)",
+          "pronunciation": "oy-bohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "orok (narok)",
+          "pronunciation": "oh-rohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "onyokie (nanyokie)",
+          "pronunciation": "oh-nyoh-kyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]

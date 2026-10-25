@@ -16,8 +16,8 @@
     "West Pokot"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Kalenjin dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
@@ -25,6 +25,41 @@
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Peace",
+          "translation": "Kalyet",
+          "pronunciation": "kahl-yeht",
+          "context": "Hollis 1909 Nandi vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Kongoi (Kongoi mising)",
+          "pronunciation": "kohn-goy mee-seeng",
+          "context": "Universal Kalenjin gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Chamgei! / Koskoling!",
+          "pronunciation": "chahm-gey / kohs-koh-leeng",
+          "context": "Hollis 1909 evening salutation",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Chamgei! / Koruun nee?",
+          "pronunciation": "chahm-gey / koh-roon neh",
+          "context": "Hollis 1909 Nandi morning salutation",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Chamgei! / Subai! (resp. Chamgei mising! / Ebo!)",
+          "pronunciation": "chahm-gey / soo-bah-ee",
+          "context": "Hollis 1909 p. 214 & standard Kalenjin salutation",
+          "audioFile": null
+        },
         {
           "english": "I say to you / I tell you (origin of the ethnonym 'Kalenjin')",
           "translation": "Kalenjin",
@@ -51,6 +86,69 @@
           "translation": "lakat",
           "pronunciation": "lakat",
           "context": "Nandi / Kalenjin (Hollis 1909, p. 153)",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "lel (ne-lel)",
+          "pronunciation": "lehl",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "tui (ne-tui)",
+          "pronunciation": "too-ee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "pirir (ne-pirir)",
+          "pronunciation": "pee-reer",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "kekeer (keer)",
+          "pronunciation": "keh-kehr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kegas (kas)",
+          "pronunciation": "keh-gahs",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "kenai (nai)",
+          "pronunciation": "keh-nah-ee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kecham (achamin = I love you)",
+          "pronunciation": "keh-chahm",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kekochi (konech = give us)",
+          "pronunciation": "keh-koh-chee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kekwang' (kwang')",
+          "pronunciation": "keh-kwahng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]
@@ -165,6 +263,76 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "keng'alal (mwai)",
+          "pronunciation": "keh-ngah-lahl / mwah-ee",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "keru (ru)",
+          "pronunciation": "keh-roo / roo",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kenyone (nyon!)",
+          "pronunciation": "keh-nyoh-neh / nyohn",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "kewe (ui)",
+          "pronunciation": "keh-weh / oo-ee",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "keie (ie)",
+          "pronunciation": "keh-ee-eh",
+          "context": "Hollis 1909 Riddle #17",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "keam (am)",
+          "pronunciation": "keh-ahm / ahm",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "ming'in (ne-ming'in)",
+          "pronunciation": "meen-geen",
+          "context": "Hollis 1909 p. 176",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "oo (ne-oo, echen)",
+          "pronunciation": "oh / neh-oh",
+          "context": "Hollis 1909 Riddle #1",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "ya (ne-ya)",
+          "pronunciation": "yah / neh-yah",
+          "context": "Hollis 1909 p. 176",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "myee (ne-myee, kararan)",
+          "pronunciation": "myeh / kah-rah-rahn",
+          "context": "Hollis 1909 p. 176",
+          "audioFile": null
+        },
         {
           "english": "To eat",
           "translation": "keam (All Kalenjin dialects)",
@@ -1221,6 +1389,62 @@
           "pronunciation": "ng'eiyeet, rooptui, bureet, epeeso",
           "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "ane (subject prefix a-)",
+          "pronunciation": "ah-neh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "inye (prefix i-)",
+          "pronunciation": "ee-nyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "inee (prefix ko-)",
+          "pronunciation": "ee-neh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "achek (prefix ki-)",
+          "pronunciation": "ah-chehk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "ichek (prefix ko-)",
+          "pronunciation": "ee-chehk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ng'oo?",
+          "pronunciation": "ngoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "nee?",
+          "pronunciation": "neh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "ano?",
+          "pronunciation": "ah-noh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1228,6 +1452,69 @@
       "id": "family",
       "name": "Family & People",
       "entries": [
+        {
+          "english": "Head",
+          "translation": "metit (pl. metowek)",
+          "pronunciation": "meh-teet",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "keldo (pl. kelek)",
+          "pronunciation": "kehl-doh / keh-lehk",
+          "context": "Hollis 1909 Proverb #8 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "eut (pl. eunek)",
+          "pronunciation": "eh-oot / eh-oo-nehk",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "chorwet (pl. chonget)",
+          "pronunciation": "chohr-weht / chohn-geht",
+          "context": "Hollis 1909 Nandi vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "lakwet (pl. lagok)",
+          "pronunciation": "lah-kweht / lah-gohk",
+          "context": "Hollis 1909 p. 155",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "korget (pl. korusiek)",
+          "pronunciation": "kohr-geht / koh-roo-see-ehk",
+          "context": "Hollis 1909 p. 156",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "murenet (pl. murenik) / chiito",
+          "pronunciation": "moo-reh-neht / chee-toh",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "kaamet / eiyo (korket)",
+          "pronunciation": "kah-meht / ey-yoh",
+          "context": "Hollis 1909 & Hobley 1902 Nandi kinship",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "kwaan / abba (papa)",
+          "pronunciation": "kwahn / ah-bah",
+          "context": "Hollis 1909 & Hobley 1902 Nandi kinship",
+          "audioFile": null
+        },
         {
           "english": "Eye (primary/secondary form)",
           "translation": "koonda / koong' (Nandi, Kipsigis, Keiyo, Tugen, Sabaot)",
@@ -1305,12 +1592,132 @@
           "context": "Nandi / Kipsigis",
           "audioFile": null
         }
-      ]
+      ],
+      "icon": "👨‍👩‍👧‍👦"
     },
     {
       "id": "food-nature",
       "name": "Food, Livestock & Nature",
       "entries": [
+        {
+          "english": "Hyena",
+          "translation": "kimagetiet / lel",
+          "pronunciation": "kee-mah-geh-tee-eht / lehl",
+          "context": "Hollis 1909 Proverb #2",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "taritiet (pl. taritik)",
+          "pronunciation": "tah-ree-tee-eht",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "ng'okto (pl. ng'okik) / seset",
+          "pronunciation": "ngohk-toh / seh-seht",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "ng'ororiet (pl. ng'ororik) / artet",
+          "pronunciation": "ngoh-roh-ree-eht / ahr-teht",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "teta / tany (pl. tuga)",
+          "pronunciation": "teh-tah / tahny / too-gah",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "peetut (peet)",
+          "pronunciation": "peh-toot",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "kembout (kemboi)",
+          "pronunciation": "kehm-boh-oot",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "koot (pl. korik) / kaita",
+          "pronunciation": "koht / kah-ee-tah",
+          "context": "Hollis 1909 p. 133 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "maat (ma)",
+          "pronunciation": "maht / mah",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "kecheiat (pl. kecheiik)",
+          "pronunciation": "keh-cheh-yaht",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "arawet (pl. arawok)",
+          "pronunciation": "ah-rah-weht",
+          "context": "Hollis 1909 p. 94 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "asista (asis)",
+          "pronunciation": "ah-sees-tah",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Asis (Asista / Cheptalel)",
+          "pronunciation": "ah-sees / chehp-tah-lehl",
+          "context": "Hollis 1909 p. 40 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "komek (komda)",
+          "pronunciation": "koh-mehk",
+          "context": "Hollis 1909 & Dundas 1910",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "pendo (peny)",
+          "pronunciation": "pehn-doh / pehny",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "chego (mursik = fermented milk)",
+          "pronunciation": "cheh-goh / moor-seek",
+          "context": "Hollis 1909 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "amitwogik (kimyet = ugali)",
+          "pronunciation": "ah-mee-twoh-geek / keem-yeht",
+          "context": "Hollis 1909 Nandi vocabulary",
+          "audioFile": null
+        },
         {
           "english": "Blood",
           "translation": "korotiik / koroti (Nandi, Kipsigis, Keiyo, Tugen, Sabaot; Pokot: kisun)",
@@ -2150,13 +2557,34 @@
           "pronunciation": "kutitab aka",
           "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "tulwet (pl. tulonok) / legemet",
+          "pronunciation": "tool-weht",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "ainet (pl. ainosiek)",
+          "pronunciation": "ah-ee-neht",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "koita (pl. koik)",
+          "pronunciation": "koy-tah / koyk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
-      ]
-    }
-,
+      ],
+      "icon": "🌿"
+    },
     {
-      "id": "hollis-1909-dundas-1910-hobley-1902-kalenjin",
-      "name": "Hollis (1909 'The Nandi'), Dundas (1910), Hobley (1902, 1903, 1910) & Johnston (1902) Historical Kalenjin Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

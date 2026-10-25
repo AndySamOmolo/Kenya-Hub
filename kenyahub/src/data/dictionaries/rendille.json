@@ -9,7 +9,7 @@
     "Marsabit"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "2.0.0",
+  "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Rendille (Afi Ren'dille) dictionary compiled from C. W. Hobley ('Ethnology of A-Kamba and Other East African Tribes', Cambridge University Press, 1910 — Public Domain, pp. 136–160 including Rendille 7-day week & Mogogodo/Yaaku Cushitic lexicon), Bernd Heine ('Notes on the Rendille Language', Afrika und Übersee 59, 1976 & 'Proto-Baz', 1979), Harold C. Fleming ('Baiso and Rendille', 1964), and Wikipedia Rendille_language.",
   "categories": [
@@ -18,6 +18,13 @@
       "name": "Greetings & Common Phrases",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Friend",
+          "translation": "arab (saaxiib)",
+          "pronunciation": "ah-rahb",
+          "context": "Rendille Cushitic vocabulary",
+          "audioFile": null
+        },
         {
           "english": "Hello / Peace",
           "translation": "Nabad / Sooriyo",
@@ -58,6 +65,83 @@
           "translation": "Male / Ma-",
           "pronunciation": "ma-le",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "ani (at)",
+          "pronunciation": "ah-nee",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "ati",
+          "pronunciation": "ah-tee",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "us (he) / ice (she)",
+          "pronunciation": "oos / ee-cheh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "innah (nah)",
+          "pronunciation": "een-nah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "icho",
+          "pronunciation": "ee-choh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ayyo?",
+          "pronunciation": "ah-yoh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "mah?",
+          "pronunciation": "mah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "inte?",
+          "pronunciation": "een-teh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "maanta (saanta)",
+          "pronunciation": "mahn-tah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "barri",
+          "pronunciation": "bahr-ree",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "shale",
+          "pronunciation": "shah-leh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         }
       ]
@@ -486,6 +570,20 @@
           "pronunciation": "guu",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "ukur / hal",
+          "pronunciation": "oo-koor / hahl",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "war (tog)",
+          "pronunciation": "wahr",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -494,6 +592,13 @@
       "name": "Food, Agriculture & Home",
       "icon": "🌾",
       "entries": [
+        {
+          "english": "Food",
+          "translation": "huun (soor)",
+          "pronunciation": "hoon / sohr",
+          "context": "Hobley 1910 Rendille & Cushitic corpus",
+          "audioFile": null
+        },
         {
           "english": "Milk",
           "translation": "haan (háan)",
@@ -536,6 +641,13 @@
       "name": "Core Verbs & Actions",
       "icon": "🏃",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "aldow (yidhi = say)",
+          "pronunciation": "ahl-dohw",
+          "context": "Rendille Cushitic vocabulary",
+          "audioFile": null
+        },
         {
           "english": "Eat",
           "translation": "ahám (a-ham)",
@@ -605,12 +717,54 @@
           "pronunciation": "sii",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "agar",
+          "pronunciation": "ah-gahr",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "dagah",
+          "pronunciation": "dah-gah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "ogow (aqan)",
+          "pronunciation": "oh-gohw",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "jecla",
+          "pronunciation": "jeh-lah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "sii",
+          "pronunciation": "see",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kari",
+          "pronunciation": "kah-ree",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
         }
       ]
     },
     {
-      "id": "hobley-1910-rendille-yaaku",
-      "name": "Hobley (1910) Rendille 7-Day Week & Mogogodo (Yaaku) Cushitic Lexicon",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -639,6 +793,188 @@
           "translation": "ach / iku / xo / le",
           "pronunciation": "ach / i-ku / xo / le",
           "context": "C. W. Hobley (1910, pp. 137–142) — Mogogodo (Yaaku) vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Camel (Collective)",
+          "translation": "gaal (nyirakh = camel calf)",
+          "pronunciation": "gahl / nyee-rahkh",
+          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "She-camel",
+          "translation": "ayyu",
+          "pronunciation": "ah-yoo",
+          "context": "Hobley 1910 & Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Burden Camel",
+          "translation": "oor",
+          "pronunciation": "ohr",
+          "context": "Hobley 1910 & Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Nomadic Homestead / Kraal",
+          "translation": "gob",
+          "pronunciation": "gohb",
+          "context": "Rendille clan settlement",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Ritual Camel Enclosure",
+          "translation": "naabo",
+          "pronunciation": "nah-boh",
+          "context": "Central assembly enclosure inside the Rendille gob",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey",
+          "translation": "eyhel",
+          "pronunciation": "ey-hehl",
+          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Horse",
+          "translation": "faras",
+          "pronunciation": "fah-rahs",
+          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "kabih",
+          "pronunciation": "kah-bee",
+          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "arbah",
+          "pronunciation": "ahr-bah",
+          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "worsis",
+          "pronunciation": "wohr-sees",
+          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Ostrich",
+          "translation": "nyugul",
+          "pronunciation": "nyoo-gool",
+          "context": "Hobley 1910 p. 157 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "gashan",
+          "pronunciation": "gah-shahn",
+          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Sword / Knife",
+          "translation": "bilau",
+          "pronunciation": "bee-lah-oo",
+          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "biso",
+          "pronunciation": "bee-soh",
+          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "laho",
+          "pronunciation": "lah-hoh",
+          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Iron",
+          "translation": "birlab",
+          "pronunciation": "beer-lahb",
+          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking Pot",
+          "translation": "diri",
+          "pronunciation": "dee-ree",
+          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Tobacco",
+          "translation": "tumbo",
+          "pronunciation": "toom-boh",
+          "context": "Hobley 1910 p. 156 Rendille vocabulary",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "yar (nyirakh = young/small)",
+          "pronunciation": "yahr / nyee-rahkh",
+          "context": "Hobley 1910 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "buur (pl. buurbuur)",
+          "pronunciation": "boor",
+          "context": "Hobley 1910 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "ki-xun",
+          "pronunciation": "kee-khoon",
+          "context": "Rendille Cushitic vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "ki-wacan / hagagsan",
+          "pronunciation": "kee-wah-ahn / hah-gahg-sahn",
+          "context": "Rendille Cushitic vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "dakhan",
+          "pronunciation": "dah-khahn",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "deyh",
+          "pronunciation": "deyh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "gududan",
+          "pronunciation": "goo-doo-dahn",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         }
       ]

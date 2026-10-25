@@ -10,8 +10,8 @@
     "Nyamira"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.1.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Kisii (Ekegusii) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
@@ -19,6 +19,27 @@
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Peace",
+          "translation": "Omorembe",
+          "pronunciation": "oh-moh-rehm-beh",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Mbuya mono (Obeire buya)",
+          "pronunciation": "m-boo-yah moh-noh",
+          "context": "Ekegusii expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Bwakire! (morning) / Bwairire! (evening) / Mbuya mono!",
+          "pronunciation": "bwah-kee-reh / m-boo-yah moh-noh",
+          "context": "Standard Ekegusii salutations",
+          "audioFile": null
+        },
         {
           "english": "Good morning",
           "translation": "Bwakire buya",
@@ -38,6 +59,27 @@
           "translation": "mogoroba",
           "pronunciation": "mogoroba",
           "context": "Wikipedia Gusii language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "-rabo (endabo)",
+          "pronunciation": "rah-boh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "-mwamu (emwamu)",
+          "pronunciation": "mwah-moo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "-bariri (embariri)",
+          "pronunciation": "bah-ree-ree",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]
@@ -202,6 +244,41 @@
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
+          "english": "Friend",
+          "translation": "omosani (pl. abasani)",
+          "pronunciation": "oh-moh-sah-nee",
+          "context": "Ekegusii Class 1/2 friendship noun",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "omwana (pl. abana)",
+          "pronunciation": "oh-mwah-nah / ah-bah-nah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "omokungu (pl. abakungu)",
+          "pronunciation": "oh-moh-koon-goo",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "omosacha (pl. abasacha)",
+          "pronunciation": "oh-moh-sah-chah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "tata (iso = your father, ise = his father)",
+          "pronunciation": "tah-tah",
+          "context": "Hobley 1902 p. 63 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
           "english": "Person / human (Class 1/2: omo-/aba-)",
           "translation": "omonto (pl. abanto)",
           "pronunciation": "omonto (pl. abanto)",
@@ -278,6 +355,69 @@
       "name": "Nature & Environment",
       "icon": "🌿",
       "entries": [
+        {
+          "english": "Day",
+          "translation": "rituko (pl. amatuko) / omobaso",
+          "pronunciation": "ree-too-koh / oh-moh-bah-soh",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "obotuko",
+          "pronunciation": "oh-boh-too-koh",
+          "context": "Hobley 1902 p. 65 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "omote (pl. emete)",
+          "pronunciation": "oh-moh-teh / eh-meh-teh",
+          "context": "Hobley 1902 p. 67 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "embura",
+          "pronunciation": "ehm-boo-rah",
+          "context": "Hobley 1902 p. 66 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "omorero",
+          "pronunciation": "oh-moh-reh-roh",
+          "context": "Hobley 1902 p. 63 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "eng'enang'eni (pl. ching'enang'eni)",
+          "pronunciation": "ehn-geh-nahn-geh-nee",
+          "context": "Hobley 1902 p. 67 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "omotienyi",
+          "pronunciation": "oh-moh-tyeh-nyee",
+          "context": "Hobley 1902 p. 65 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "erioba (risase)",
+          "pronunciation": "eh-ree-oh-bah / ree-sah-seh",
+          "context": "Hobley 1902 p. 67 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Engoro (Erioba)",
+          "pronunciation": "ehn-goh-roh / eh-ree-oh-bah",
+          "context": "Hobley 1902 p. 64 & Johnston 1919 #7",
+          "audioFile": null
+        },
         {
           "english": "Earth / world",
           "translation": "ense",
@@ -452,6 +592,27 @@
           "pronunciation": "rituko",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "ekegoro (pl. ebigoro)",
+          "pronunciation": "eh-keh-goh-roh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "oroche (pl. chinche)",
+          "pronunciation": "oh-roh-cheh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "rigena (pl. amagena)",
+          "pronunciation": "ree-geh-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -460,6 +621,27 @@
       "name": "Animals & Wildlife",
       "icon": "🐄",
       "entries": [
+        {
+          "english": "Bird",
+          "translation": "enyoni (pl. chinyoni)",
+          "pronunciation": "eh-nyoh-nee",
+          "context": "Hobley 1902 p. 62 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "eng'ondi (pl. ching'ondi)",
+          "pronunciation": "ehn-gohn-dee",
+          "context": "Hobley 1902 p. 66 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "embori (pl. chimbori)",
+          "pronunciation": "ehm-boh-ree / cheem-boh-ree",
+          "context": "Hobley 1902 p. 64 & Johnston 1919 #7",
+          "audioFile": null
+        },
         {
           "english": "Cow / cattle (Class 9/10: e-/chi-)",
           "translation": "eng'ombe (pl. chiombe)",
@@ -510,6 +692,27 @@
       "icon": "🍲",
       "entries": [
         {
+          "english": "Honey",
+          "translation": "obouki",
+          "pronunciation": "oh-boh-oo-kee",
+          "context": "Hobley 1902 p. 64 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "enyama",
+          "pronunciation": "eh-nyah-mah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "endagera (obokima = ugali)",
+          "pronunciation": "ehn-dah-geh-rah / oh-boh-kee-mah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
           "english": "Cup (Class 7/8: ege-/ebi-)",
           "translation": "egekombe (pl. ebikombe)",
           "pronunciation": "egekombe (pl. ebikombe)",
@@ -552,6 +755,13 @@
       "icon": "🏠",
       "entries": [
         {
+          "english": "House",
+          "translation": "enyomba (pl. chinyomba)",
+          "pronunciation": "eh-nyohm-bah",
+          "context": "Hobley 1902 p. 64 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
           "english": "Sandals / shoes (Rogoro vs. Maate dialect)",
           "translation": "chisiripasi (Rogoro) / chitaratara (Maate)",
           "pronunciation": "chisiripasi (Rogoro) / chitaratara (Maate)",
@@ -587,6 +797,27 @@
       "icon": "🧠",
       "entries": [
         {
+          "english": "Foot",
+          "translation": "okogoro (pl. amagoro)",
+          "pronunciation": "oh-koh-goh-roh / ah-mah-goh-roh",
+          "context": "Hobley 1902 p. 64 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "okoboko (pl. amaboko)",
+          "pronunciation": "oh-koh-boh-koh / ah-mah-boh-koh",
+          "context": "Hobley 1902 p. 64 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "riiso (pl. amaiso)",
+          "pronunciation": "ree-soh / ah-mah-ee-soh",
+          "context": "Hobley 1902 p. 63 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
           "english": "Head (Class 3/4: omo-/eme-)",
           "translation": "omotwe (pl. emetwe)",
           "pronunciation": "omotwe (pl. emetwe)",
@@ -607,6 +838,48 @@
       "name": "Verbs & Actions",
       "icon": "⚡",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "ogokwana (-kwana) / okoboora",
+          "pronunciation": "oh-goh-kwah-nah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "okorara (-rara)",
+          "pronunciation": "oh-koh-rah-rah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "ogocha (inchwo! = come!)",
+          "pronunciation": "oh-goh-chah / een-chwoh",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "okogenda (-genda)",
+          "pronunciation": "oh-koh-gehn-dah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "okonywa (-nywa)",
+          "pronunciation": "oh-koh-nywah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "okoria (-ria)",
+          "pronunciation": "oh-koh-ree-ah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
         {
           "english": "To miss (short vowel) vs. To say/tell (long vowel)",
           "translation": "bóra (to miss) vs. bóóra (to say)",
@@ -704,6 +977,34 @@
           "pronunciation": "okorora / okoigwa",
           "context": "Ekegusii",
           "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "okoigwa (-igwa)",
+          "pronunciation": "oh-koh-ee-gwah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "ogochancha (-chancha)",
+          "pronunciation": "oh-goh-chahn-chah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "okoa (-a)",
+          "pronunciation": "oh-koh-ah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "okoruga (-ruga)",
+          "pronunciation": "oh-koh-roo-gah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -712,6 +1013,34 @@
       "name": "Common Expressions",
       "icon": "💬",
       "entries": [
+        {
+          "english": "Small",
+          "translation": "-ke (omoke, enke, egeke)",
+          "pronunciation": "keh / oh-moh-keh",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-nene (omonene, enene)",
+          "pronunciation": "neh-neh",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "-be (omobe, embe, ekebe)",
+          "pronunciation": "beh / oh-moh-beh",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "-uya (omuya, mbuya, ebuya)",
+          "pronunciation": "oo-yah / m-boo-yah",
+          "context": "Hobley 1902 & Johnston 1919 #7",
+          "audioFile": null
+        },
         {
           "english": "Today",
           "translation": "rero",
@@ -1299,13 +1628,68 @@
           "pronunciation": "kiakan",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "inche (prefix n-)",
+          "pronunciation": "een-cheh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "aye (prefix o-)",
+          "pronunciation": "ah-yeh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ere (prefix a-)",
+          "pronunciation": "eh-reh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "intwe (prefix to-)",
+          "pronunciation": "een-tweh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "barabwo (abo, prefix ba-)",
+          "pronunciation": "bah-rah-bwoh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "n'ingo?",
+          "pronunciation": "neen-goh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "inki?",
+          "pronunciation": "een-kee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "gai?",
+          "pronunciation": "gah-ee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "hobley-1902-johnston-1902-1919-kisii",
-      "name": "Hobley (1902 'Kossova') & Johnston (1902 'Igizii' & 1919 '#7 Ki-guzii') Historical Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

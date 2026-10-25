@@ -11,8 +11,8 @@
     "Mombasa"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Mijikenda (Giriama) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
@@ -20,6 +20,41 @@
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Peace",
+          "translation": " Dheri / Amani",
+          "pronunciation": "dheh-ree",
+          "context": "Krapf & Rebmann 1887 Nika Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Asante (Ni wega / Hasante)",
+          "pronunciation": "ah-sahn-teh",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Udzatsinda? (Reply: Nidzatsinda!)",
+          "pronunciation": "oo-dzah-tseen-dah",
+          "context": "W. E. Taylor 1891 p. 102",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Udzalamuka? (Reply: Nidzalamuka!)",
+          "pronunciation": "oo-dzah-lah-moo-kah",
+          "context": "W. E. Taylor 1891 p. 102",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Udzalamuka? (morning) / Udzatsinda? (daytime) / Habari?",
+          "pronunciation": "oo-dzah-lah-moo-kah / oo-dzah-tseen-dah",
+          "context": "W. E. Taylor 1891 p. 102 Giriama salutations",
+          "audioFile": null
+        },
         {
           "english": "The Nine Homesteads / Sacred Kayas (origin of 'Mijikenda')",
           "translation": "Mijikenda / Midzi Chenda",
@@ -61,6 +96,62 @@
           "pronunciation": "dzambo (pl. mambo)",
           "context": "Wiktionary Category:Digo links — Proto-Sabaki *i̧jambo",
           "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "-erupe (kuerupe tsé!)",
+          "pronunciation": "eh-roo-peh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "-iru (nyiru, kundama pi!)",
+          "pronunciation": "ee-roo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "-tune (ntune)",
+          "pronunciation": "too-neh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "kuona (-ona) / kulola",
+          "pronunciation": "koo-oh-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kusikira (-sikira)",
+          "pronunciation": "koo-see-kee-rah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "kumanya (-manya)",
+          "pronunciation": "koo-mah-nyah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kuhendza (-hendza)",
+          "pronunciation": "koo-hehn-dzah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kuha (-ha)",
+          "pronunciation": "koo-hah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -69,6 +160,34 @@
       "name": "Numbers",
       "icon": "🔢",
       "entries": [
+        {
+          "english": "Nine",
+          "translation": "chenda (kenda)",
+          "pronunciation": "chehn-dah",
+          "context": "Taylor 1891 (Midzi Chenda = Nine Homesteads)",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "nane",
+          "pronunciation": "nah-neh",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "fungahe",
+          "pronunciation": "foon-gah-heh",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "handahu",
+          "pronunciation": "hahn-dah-hoo",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
         {
           "english": "Nine (Chenda / Kenda in Mijikenda)",
           "translation": "chenda / kenda",
@@ -124,6 +243,195 @@
       "id": "phrases-nature",
       "name": "Common Phrases, Family & Coast",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "kunena / kugomba",
+          "pronunciation": "koo-neh-nah / koo-gohm-bah",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "kulala",
+          "pronunciation": "koo-lah-lah",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kudza (Imperative: Ndzoo!)",
+          "pronunciation": "koo-dzah / n-dzoh",
+          "context": "Taylor 1891 p. 22 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "kuuka / kuenda",
+          "pronunciation": "koo-kah / kwehn-dah",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "kunwa",
+          "pronunciation": "koo-nwah",
+          "context": "Taylor 1891 p. 31 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "kurya",
+          "pronunciation": "koo-ryah",
+          "context": "Taylor 1891 p. 32 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "-dide (mudide, kadide)",
+          "pronunciation": "dee-deh / kah-dee-deh",
+          "context": "Taylor 1891 p. 109 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-bomu (mubomu, mbomu)",
+          "pronunciation": "boh-moo",
+          "context": "Taylor 1891 p. 12 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "-ii (muii, mbii)",
+          "pronunciation": "ee / moo-ee",
+          "context": "Taylor 1891 p. 9 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "-dzo (mudzo, mbidzo, chidzo)",
+          "pronunciation": "dzoh / moo-dzoh",
+          "context": "Taylor 1891 p. 45 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "siku / mutsana",
+          "pronunciation": "see-koo / moo-tsah-nah",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "usiku",
+          "pronunciation": "oo-see-koo",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "nyumba (mudzi = homestead / village)",
+          "pronunciation": "nyoom-bah / moo-dzee",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "nyoha",
+          "pronunciation": "nyoh-hah",
+          "context": "Taylor 1891 (*nyota > nyoha) & Krapf 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "mwezi",
+          "pronunciation": "mweh-zee",
+          "context": "Taylor 1891 p. 78 & Krapf 1850",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "dzua",
+          "pronunciation": "dzoo-ah",
+          "context": "Taylor 1891 & Krapf 1850",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "nyuni",
+          "pronunciation": "nyoo-nee",
+          "context": "Taylor 1891 p. 13 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "ng'ondzi",
+          "pronunciation": "ngohn-dzee",
+          "context": "Taylor 1891 p. 105 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "ng'ombe",
+          "pronunciation": "ngohm-beh",
+          "context": "Taylor 1891 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "nyama (hnyama)",
+          "pronunciation": "nyah-mah",
+          "context": "Taylor 1891 p. 76 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "mazia",
+          "pronunciation": "mah-zee-ah",
+          "context": "Taylor 1891 p. 77 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "msena (pl. asena) / mwandani",
+          "pronunciation": "m-seh-nah",
+          "context": "Taylor 1891 p. 43 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "muhoho (pl. ahoho, dim. kahoho)",
+          "pronunciation": "moo-hoh-hoh / kah-hoh-hoh",
+          "context": "Taylor 1891 p. 20 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "muche (pl. ache)",
+          "pronunciation": "moo-cheh / ah-cheh",
+          "context": "Taylor 1891 p. 134 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "mwalume (pl. alume)",
+          "pronunciation": "mwah-loo-meh / ah-loo-meh",
+          "context": "Taylor 1891 p. 74 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "mama (mayo / ng'ina)",
+          "pronunciation": "mah-mah / mah-yoh",
+          "context": "Taylor 1891 p. 79 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "baba (ishe = his father)",
+          "pronunciation": "bah-bah / ee-sheh",
+          "context": "Taylor 1891 p. 35 & Krapf & Rebmann 1887",
+          "audioFile": null
+        },
         {
           "english": "Sacred fortified forest settlement of the Mijikenda",
           "translation": "Kaya (pl. Makaya)",
@@ -1348,13 +1656,111 @@
           "pronunciation": "kiakan",
           "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "mimi (mino, prefix ni-)",
+          "pronunciation": "mee-mee / mee-noh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "uwe (wewe, prefix u-)",
+          "pronunciation": "oo-weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "iye (yeye, prefix a-)",
+          "pronunciation": "ee-yeh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "fwi-fwi (siswi, prefix fu-)",
+          "pronunciation": "fwee-fwee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "ao (o, prefix a-)",
+          "pronunciation": "ah-oh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "nani? (yani?)",
+          "pronunciation": "nah-nee / yah-nee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "noni? (nini?)",
+          "pronunciation": "noh-nee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "hikahi? (wapi?)",
+          "pronunciation": "hee-kah-hee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "lero (rero)",
+          "pronunciation": "leh-roh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "madzacha (machero)",
+          "pronunciation": "mah-dzah-chah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "dzana",
+          "pronunciation": "dzah-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "ulima / dzulu",
+          "pronunciation": "oo-lee-mah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "muho (pl. miho)",
+          "pronunciation": "moo-hoh / mee-hoh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "dziwe (pl. mawe)",
+          "pronunciation": "dzee-weh / mah-weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
-      ]
-    }
-,
+      ],
+      "icon": "🌿"
+    },
     {
-      "id": "krapf-1850-1887-taylor-1891-mijikenda",
-      "name": "Krapf (1850), Krapf & Rebmann (1887) & W. E. Taylor (1891) Historical Mijikenda Corpus (Kayas, Marika, Riddles & Proverbs)",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

@@ -118,5 +118,51 @@ export const MAASAI_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'maasai-unit-2',
+    title: 'Unit 2: Maa Place-Names (Hinde 1901), Clans, Age-Sets & Folktales (Hollis 1905)',
+    description: 'Explore historical Maa toponyms (Nairobi, Kilimanjaro, Naivasha), the 5 major clans, warrior ceremonies, and Hollis (1905) folktales and riddles.',
+    icon: '🦁',
+    skills: [
+      {
+        id: 'maasai-toponyms-clans-folklore',
+        title: 'Maa Place-Names, Clans & Ceremonies (Hinde 1901 & Hollis 1905)',
+        icon: 'Compass',
+        description: 'Learn the Maa meanings of iconic East African landmarks, clan names, and ceremonies.',
+        tips: "Hildegarde Hinde (1901, p. 36) and A. C. Hollis (1905, pp. 260–302) document the Maa origins of East African place-names: En-gare Nyrobi ('Cold Water' = Nairobi), Ol-doinyo Oibor ('White Mountain' = Kilimanjaro/Kenya), and E-waso Ngiro ('Brown/Muddy River').",
+        culturalNote: "In A. C. Hollis's 'The Masai: Their Language and Folklore' (1905, p. 264), the Maasai invoke both Eng-ai Narok (the Benevolent Black Rain-Cloud God) and Eng-ai Nanyokie (the Red Sky) while holding sacred pasture grass (en-gujit) as a sign of peace.",
+        words: [
+          { target: 'En-gare Nyrobi', source: 'Nairobi (lit. Cold Water / Cold Stream)', pronunciation: 'ehn-gah-reh ny-roh-bee', hint: 'Hinde (1901, p. 36) & Hollis (1905)' },
+          { target: 'Ol-doinyo Oibor', source: 'White Mountain (Mount Kilimanjaro / Mount Kenya)', pronunciation: 'ohl-doy-nyoh oy-bohr', hint: 'Hinde (1901, p. 36) & Hollis (1905)' },
+          { target: 'E-waso Ngiro / En-gare Na-okwa', source: 'Ewaso Ng\'iro (Brown River) / Lake Naivasha', pronunciation: 'eh-wah-soh n-gee-roh', hint: 'Hinde (1901, p. 36) & Hollis (1905)' },
+          { target: 'Il-Aiser, Il-Mokesen, Il-Molelian, Il-Tarosero, Il-ukumai', source: 'The 5 Major Maasai Clans (Hollis 1905, p. 260)', pronunciation: 'eel-ah-ee-sehr / eel-moh-leh-lyahn', hint: 'Il-Aiser is the clan of the Oloiboni' },
+          { target: 'Emorata / E-unoto / Ol-ngesher', source: 'Initiation / Warrior Graduation / Elderhood Ceremony', pronunciation: 'eh-moh-rah-tah / eh-oo-noh-toh / ohl-ngeh-shehr', hint: 'Hollis (1905, pp. 294–302) age-grade ceremonies' },
+          { target: 'en-gujit', source: 'Sacred pasture grass held in peace and prayer', pronunciation: 'ehn-goo-jeet', hint: 'Hollis (1905) peace emblem' },
+          { target: 'Eng-ai Narok / Eng-ai Nanyokie', source: 'The Black (Rain-giving) God / The Red Sky', pronunciation: 'ehng-ah-ee nah-rohk', hint: 'Hollis (1905, p. 264)' },
+          { target: 'em-bere (pl. im-beria) / el-longo (pl. il-longoi)', source: 'Spear / Shield', pronunciation: 'ehm-beh-reh / ehl-lohn-goh', hint: 'Hollis (1905) & Hinde (1901)' },
+          { target: 'ol-alem (pl. il-alema) / o-rinka', source: 'Sword (simi) / Club (rungu)', pronunciation: 'ohl-ah-lehm / oh-reen-kah', hint: 'Hollis (1905) & Hinde (1901)' },
+          { target: 'Menya ol-ngatuny ol-chore', source: 'The lion does not eat his friend (Hollis 1905 Proverb #60)', pronunciation: 'meh-nyah ohl-ngah-toony ohl-choh-reh', hint: 'Sacredness of covenant friendship' }
+        ],
+        sentences: [
+          { target: 'Menya ol-ngatuny ol-chore.', source: 'The lion does not eat his friend (Hollis 1905 Proverb #60).' },
+          { target: 'Medany ol-kimojino obo el-lughunya.', source: 'One finger does not split a louse (Hollis 1905 Proverb #52).' }
+        ],
+        authoredExercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'According to Hildegarde Hinde (1901, p. 36) and A. C. Hollis (1905), what is the literal meaning of "En-gare Nyrobi" (Nairobi)?',
+            correctAnswer: 'Nairobi (lit. Cold Water / Cold Stream)',
+            options: [
+              'Nairobi (lit. Cold Water / Cold Stream)',
+              'White Mountain (Mount Kilimanjaro / Mount Kenya)',
+              'Spear / Shield',
+              'Sacred pasture grass held in peace and prayer'
+            ],
+            hint: 'en-gare = water/river, nyrobi = cold'
+          }
+        ]
+      }
+    ]
   }
 ];

@@ -12,8 +12,8 @@
     "Migori"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "0.2.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Dholuo public-domain vocabulary compiled from 'A Handbook of the Kavirondo Language' by the Fathers of St. Joseph's Society (Mill-Hill, London / Kisumu, 1920).",
   "categories": [
     {
@@ -21,6 +21,20 @@
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Thank you",
+          "translation": "Erokamano (Erokamano ahinya)",
+          "pronunciation": "eh-roh-kah-mah-noh",
+          "context": "Mill-Hill Fathers 1920 Dholuo gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Good evening",
+          "translation": "Oimore (resp. Oimore ahinya)",
+          "pronunciation": "oh-ee-moh-reh",
+          "context": "Mill-Hill Fathers 1920 evening greeting",
+          "audioFile": null
+        },
         {
           "english": "Elder",
           "translation": "Jaduong'",
@@ -222,6 +236,27 @@
           "translation": "Oling'",
           "pronunciation": "oh-leeng",
           "context": "Polite reply — things are calm",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "rachar (machar)",
+          "pronunciation": "rah-chahr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "rateng' (mateng')",
+          "pronunciation": "rah-tehng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "rakwar (makwar)",
+          "pronunciation": "rah-kwahr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]
@@ -931,6 +966,20 @@
       "name": "Animals",
       "icon": "🐄",
       "entries": [
+        {
+          "english": "Elephant",
+          "translation": "liech (pl. lieye)",
+          "pronunciation": "lee-ehch",
+          "context": "Hobley 1902 & Mill-Hill Fathers 1920",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "rombo (pl. rombe)",
+          "pronunciation": "rohm-boh / rohm-beh",
+          "context": "Hobley 1902 Nife & Mill-Hill Fathers 1920",
+          "audioFile": null
+        },
         {
           "english": "Cow / Cattle",
           "translation": "Dhiang'",
@@ -1777,6 +1826,13 @@
           "pronunciation": "chieng’",
           "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "kidi (pl. kite)",
+          "pronunciation": "kee-dee / kee-teh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -2184,6 +2240,55 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "wacho (wuoyo)",
+          "pronunciation": "wah-choh / woo-oh-yoh",
+          "context": "Mill-Hill Fathers 1920",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "biro (bi!)",
+          "pronunciation": "bee-roh / bee",
+          "context": "Mill-Hill Fathers 1920",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "dhiyo (dhi)",
+          "pronunciation": "dhee-yoh / dhee",
+          "context": "Mill-Hill Fathers 1920",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "nindo",
+          "pronunciation": "neen-doh",
+          "context": "Mill-Hill Fathers 1920 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "madho (amadho pi = I drink water)",
+          "pronunciation": "mah-dhoh",
+          "context": "Mill-Hill Fathers 1920 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "chamo (chiemo = to eat food)",
+          "pronunciation": "chah-moh / chyeh-moh",
+          "context": "Mill-Hill Fathers 1920 & Hobley 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "duong' (maduong', pl. madongo)",
+          "pronunciation": "dwohng / mah-dwohng",
+          "context": "Mill-Hill Fathers 1920 p. 18",
+          "audioFile": null
+        },
         {
           "english": "Yes",
           "translation": "Ee / Aee",
@@ -4724,6 +4829,55 @@
           "pronunciation": "korea milambo",
           "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "an (subject prefix a-)",
+          "pronunciation": "ahn",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "in (prefix i-)",
+          "pronunciation": "een",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "en (prefix o-)",
+          "pronunciation": "ehn",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "wan (prefix wa-)",
+          "pronunciation": "wahn",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "gin (prefix gi-)",
+          "pronunciation": "geen",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ng'a? (ng'ano?)",
+          "pronunciation": "ngah / ngah-noh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "ang'o?",
+          "pronunciation": "ah-ngoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -5689,8 +5843,23 @@
           "pronunciation": "dwanyo",
           "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
           "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "winjo (awinjo = I hear)",
+          "pronunciation": "ween-joh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "ng'eyo (ang'eyo = I know)",
+          "pronunciation": "ngeh-yoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
-      ]
+      ],
+      "icon": "⚡"
     },
     {
       "id": "construct-plurals",
@@ -5808,7 +5977,8 @@
           "context": "Wikipedia Construct state — Dholuo morphophonology",
           "audioFile": null
         }
-      ]
+      ],
+      "icon": "🔤"
     },
     {
       "id": "time-traditional",
@@ -6164,12 +6334,12 @@
           "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         }
-      ]
-    }
-,
+      ],
+      "icon": "⏳"
+    },
     {
-      "id": "northcote-1907-hobley-1902-1903-johnston-1902-luo",
-      "name": "Northcote (1907 'The Nilotic Kavirondo'), Hobley (1902, 1903) & Johnston (1902) Historical Dholuo Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

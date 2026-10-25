@@ -125,19 +125,31 @@ function extractNormalizedTerms(raw: string): string[] {
     .replace(/\s*\([^)]*\)/g, "")
     .replace(/[!?.]/g, "")
     .trim();
+  const baseHead = cleaned.split(/\s*[—–:|•]\s*/)[0].trim();
   const parts = cleaned
-    .split(/[\/,;]/)
+    .split(/[\/,;—–:|•]/)
     .map((s) => s.trim())
     .filter(Boolean);
   const out = new Set<string>();
-  if (cleaned) {
-    out.add(cleaned);
-    if (cleaned.startsWith("to ")) out.add(cleaned.slice(3).trim());
-  }
-  for (const p of parts) {
-    out.add(p);
-    if (p.startsWith("to ")) out.add(p.slice(3).trim());
-  }
+  const addVariant = (v: string) => {
+    if (!v) return;
+    out.add(v);
+    const nfd = v.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (nfd) out.add(nfd);
+    const noApostrophe = nfd.replace(/['’‘ʻ]/g, "");
+    if (noApostrophe && noApostrophe.length >= 2) out.add(noApostrophe);
+    if (v.startsWith("to ")) {
+      const bare = v.slice(3).trim();
+      addVariant(bare);
+    }
+    if (v.startsWith("-")) {
+      const bare = v.slice(1).trim();
+      if (bare.length >= 2) addVariant(bare);
+    }
+  };
+  addVariant(cleaned);
+  addVariant(baseHead);
+  for (const p of parts) addVariant(p);
   return Array.from(out);
 }
 
@@ -422,6 +434,66 @@ export function KenyanTranslatorTool() {
       }
     }
 
+    const wordTokens = q
+      .replace(/[^a-zA-Z0-9\u00C0-\u024F'\s-]/g, " ")
+      .split(/\s+/)
+      .map((w) => w.trim())
+      .filter((w) => w.length >= 2 && !["the", "a", "an", "please"].includes(w));
+
+    if (wordTokens.length >= 2 && sourceLanguage === "english") {
+      const synthesizeForDict = (dict: Dictionary) => {
+        const translatedParts: string[] = [];
+        const pronParts: string[] = [];
+        let matchedCount = 0;
+        for (const tok of wordTokens) {
+          const tokMatches = findInDictByEnglishPivots(dict, extractNormalizedTerms(tok));
+          const exact = tokMatches.find((m) => m.matchType === "exact") || tokMatches[0];
+          if (exact) {
+            matchedCount++;
+            const cleanT = exact.entry.translation.split(/[\/;(]/)[0].trim();
+            translatedParts.push(cleanT);
+            if (exact.entry.pronunciation) {
+              pronParts.push(exact.entry.pronunciation.split("/")[0].trim());
+            }
+          }
+        }
+        if (matchedCount >= 2) {
+          return {
+            entry: {
+              english: searchQuery.trim(),
+              translation: translatedParts.join(" + "),
+              pronunciation: pronParts.join(" · "),
+              context: `Word-by-word synthesis (${matchedCount}/${wordTokens.length} words matched in ${dict.languageName})`,
+              audioFile: null,
+            },
+            categoryName: "Word-by-Word Phrase Bridge",
+            categoryIcon: "🔗",
+            languageId: dict.languageId,
+            languageName: dict.languageName,
+            family: dict.family,
+            matchType: (matchedCount === wordTokens.length ? "exact" : "partial") as "exact" | "partial",
+          };
+        }
+        return null;
+      };
+
+      if (targetLanguage === "all") {
+        for (const dict of ALL_DICTS) {
+          if (!results.some((r) => r.languageId === dict.languageId && r.matchType === "exact")) {
+            const syn = synthesizeForDict(dict);
+            if (syn) results.push(syn);
+          }
+        }
+      } else if (targetDict && !results.some((r) => r.matchType === "exact")) {
+        const syn = synthesizeForDict(targetDict);
+        if (syn) results.unshift(syn);
+        for (const tok of wordTokens) {
+          const tokMatches = findInDictByEnglishPivots(targetDict, extractNormalizedTerms(tok));
+          if (tokMatches.length > 0) results.push(tokMatches[0]);
+        }
+      }
+    }
+
     results.sort((a, b) => (a.matchType === "exact" ? -1 : 1));
     return results;
   }, [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict]);
@@ -432,21 +504,38 @@ export function KenyanTranslatorTool() {
     const qTerms = extractNormalizedTerms(searchQuery);
     const q = qTerms[0] || searchQuery.toLowerCase().trim();
 
-    let matchedEnglish = q;
+    let isKnownEnglish = false;
     for (const d of ALL_DICTS) {
       for (const cat of d.categories) {
         for (const entry of cat.entries) {
-          const transTerms = extractNormalizedTerms(entry.translation);
-          if (transTerms.includes(q)) {
-            matchedEnglish =
-              extractNormalizedTerms(entry.english)[0] ||
-              entry.english.toLowerCase();
+          const engTerms = extractNormalizedTerms(entry.english);
+          if (entry.english.toLowerCase().trim() === q || engTerms.includes(q)) {
+            isKnownEnglish = true;
             break;
           }
         }
+        if (isKnownEnglish) break;
+      }
+      if (isKnownEnglish) break;
+    }
+
+    let matchedEnglish = q;
+    if (!isKnownEnglish) {
+      for (const d of ALL_DICTS) {
+        for (const cat of d.categories) {
+          for (const entry of cat.entries) {
+            const transTerms = extractNormalizedTerms(entry.translation);
+            if (transTerms.includes(q)) {
+              matchedEnglish =
+                extractNormalizedTerms(entry.english)[0] ||
+                entry.english.toLowerCase();
+              break;
+            }
+          }
+          if (matchedEnglish !== q) break;
+        }
         if (matchedEnglish !== q) break;
       }
-      if (matchedEnglish !== q) break;
     }
 
     const targetWords = Array.from(
@@ -470,14 +559,11 @@ export function KenyanTranslatorTool() {
       for (const cat of dict.categories) {
         for (const entry of cat.entries) {
           const engTerms = extractNormalizedTerms(entry.english);
-          const transTerms = extractNormalizedTerms(entry.translation);
-
           if (
             targetWords.some(
               (tw) =>
                 entry.english.toLowerCase().trim() === tw ||
-                engTerms.includes(tw) ||
-                transTerms.includes(tw)
+                engTerms.includes(tw)
             )
           ) {
             found = entry;
@@ -485,6 +571,19 @@ export function KenyanTranslatorTool() {
           }
         }
         if (found) break;
+      }
+
+      if (!found && !isKnownEnglish) {
+        for (const cat of dict.categories) {
+          for (const entry of cat.entries) {
+            const transTerms = extractNormalizedTerms(entry.translation);
+            if (targetWords.some((tw) => transTerms.includes(tw))) {
+              found = entry;
+              break;
+            }
+          }
+          if (found) break;
+        }
       }
 
       if (!found) {
@@ -518,9 +617,18 @@ export function KenyanTranslatorTool() {
     );
   }, []);
 
+  useEffect(() => {
+    if (browseDict && browseDict.categories.length > 0) {
+      const exists = browseDict.categories.some((c) => c.id === activeCategory && c.entries.length > 0);
+      if (!exists) {
+        setActiveCategory(browseDict.categories[0].id);
+      }
+    }
+  }, [browseDict, activeCategory]);
+
   const categoryEntries = useMemo(() => {
     if (!browseDict) return [];
-    const cat = browseDict.categories.find((c) => c.id === activeCategory);
+    const cat = browseDict.categories.find((c) => c.id === activeCategory) || browseDict.categories[0];
     return cat ? cat.entries : [];
   }, [browseDict, activeCategory]);
 

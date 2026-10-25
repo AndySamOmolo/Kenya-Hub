@@ -10,7 +10,7 @@
     "Baringo"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "2.0.0",
+  "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
   "contributorNote": "Pokot (Pökoot / Suk) and Endo (Chep-bleñg) dictionary compiled line-by-line from Mervyn W. H. Beech ('The Suk: Their Language and Folklore', Clarendon Press Oxford, 1911 — Public Domain), Hon. K. R. Dundas ('Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, 1910 — Public Domain), Sir Harry H. Johnston ('The Uganda Protectorate, Vol. II', 1902 — Public Domain), Juxon Barton (1921 — Public Domain), and Roger van Otterloo (1979).",
   "categories": [
@@ -19,6 +19,13 @@
       "name": "Greetings & Common Phrases",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Friend",
+          "translation": "chito-ap-kalyet / weri",
+          "pronunciation": "chee-toh ahp kahl-yeht",
+          "context": "Beech 1911 Suk vocabulary",
+          "audioFile": null
+        },
         {
           "english": "Hello / How are you?",
           "translation": "Chamnyan / Bo kalyon?",
@@ -73,6 +80,83 @@
           "translation": "nyaman",
           "pronunciation": "nya-man",
           "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "ani (ane, prefix a-)",
+          "pronunciation": "ah-nee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "inyi (prefix i-)",
+          "pronunciation": "ee-nyee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ine (prefix ko-)",
+          "pronunciation": "ee-neh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "achak (prefix ki-)",
+          "pronunciation": "ah-chahk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "ichak",
+          "pronunciation": "ee-chahk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ng'o?",
+          "pronunciation": "ngoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "ne?",
+          "pronunciation": "neh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "ano?",
+          "pronunciation": "ah-noh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "achek (nguno)",
+          "pronunciation": "ah-chehk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "asiis (mutai)",
+          "pronunciation": "ah-sees",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "omut",
+          "pronunciation": "oh-moot",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]
@@ -173,6 +257,13 @@
       "name": "People, Family & Kinship",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
+        {
+          "english": "Man",
+          "translation": "chito (pl. pich) / muren (warrior)",
+          "pronunciation": "chee-toh / moo-rehn",
+          "context": "Beech 1911 p. 61 & Johnston 1902 Suk",
+          "audioFile": null
+        },
         {
           "english": "Person / People",
           "translation": "piich (sg. chii)",
@@ -454,6 +545,34 @@
       "icon": "🌍",
       "entries": [
         {
+          "english": "Day",
+          "translation": "peet (assis)",
+          "pronunciation": "peht / ahs-sees",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "yech (kwegh)",
+          "pronunciation": "yehch / kwehgh",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "kokel (pl. kokelik)",
+          "pronunciation": "koh-kehl",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Torôrut (Ilat = Rain-spirit)",
+          "pronunciation": "toh-roh-root / ee-laht",
+          "context": "Mervyn Beech 1911 p. 19 Suk religion",
+          "audioFile": null
+        },
+        {
           "english": "Water",
           "translation": "pʉːɣ (pogh / poy)",
           "pronunciation": "puugh / pogh",
@@ -542,6 +661,13 @@
           "translation": "sus (suswek)",
           "pronunciation": "sus",
           "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "lalyan (ainet)",
+          "pronunciation": "lahl-yahn",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]
@@ -676,12 +802,54 @@
           "pronunciation": "ng'a-la",
           "context": "Wikipedia Pökoot_language & Beech (1911)",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "kesow (sow)",
+          "pronunciation": "keh-sohw",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kelim (lim)",
+          "pronunciation": "keh-leem",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "kesow (nget)",
+          "pronunciation": "keh-sohw",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kecham (cham)",
+          "pronunciation": "keh-chahm",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kô (kô-nech = give us)",
+          "pronunciation": "koh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kekwang'",
+          "pronunciation": "keh-kwahng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
     {
-      "id": "beech-1911-dundas-1910-corpus",
-      "name": "Beech (1911) & Dundas (1910) Historical Corpus (Age-Sets, Clans, Riddles & Phrases)",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -731,6 +899,181 @@
           "translation": "Il-Kapis, Il-Parsaina, Sokom, Terik, Talai, Kipketin, Kaptakwong, Kapsogot, Legenion, Sotot, Kamia",
           "pronunciation": "so-kom, te-rik, ta-lai, le-ge-nion",
           "context": "Hon. K. R. Dundas (1910, pp. 57–58) & Beech (1911, p. 5)",
+          "audioFile": null
+        },
+        {
+          "english": "Riddle Challenge!",
+          "translation": "Tiangoi!",
+          "pronunciation": "tyahn-goy",
+          "context": "Mervyn Beech 1911 p. 44 Suk riddle opening formula",
+          "audioFile": null
+        },
+        {
+          "english": "Furrow Irrigation Channel",
+          "translation": "rot (pl. rotok)",
+          "pronunciation": "roht",
+          "context": "Beech 1911 p. 15 Marakwet/Pokot escarpment irrigation",
+          "audioFile": null
+        },
+        {
+          "english": "Village Council of Elders",
+          "translation": "kokwa",
+          "pronunciation": "koh-kwah",
+          "context": "Beech 1911 p. 22 Suk governance",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Sky Deity",
+          "translation": "Torôrut",
+          "pronunciation": "toh-roh-root",
+          "context": "Beech 1911 p. 19 Suk religion",
+          "audioFile": null
+        },
+        {
+          "english": "Rain Spirit",
+          "translation": "Ilat",
+          "pronunciation": "ee-laht",
+          "context": "Beech 1911 p. 19 ('son/servant of Torôrut who carries water')",
+          "audioFile": null
+        },
+        {
+          "english": "Finger-millet (Eleusine)",
+          "translation": "matai",
+          "pronunciation": "mah-tah-ee",
+          "context": "Beech 1911 p. 15 Suk agriculture",
+          "audioFile": null
+        },
+        {
+          "english": "Sorghum (Mtama)",
+          "translation": "mosong",
+          "pronunciation": "moh-sohng",
+          "context": "Beech 1911 p. 15 Suk agriculture",
+          "audioFile": null
+        },
+        {
+          "english": "Tobacco",
+          "translation": "tuma",
+          "pronunciation": "too-mah",
+          "context": "Beech 1911 p. 16",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "ng'otwa (pl. ng'otwek)",
+          "pronunciation": "ngoh-twah",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "longet (pl. longok)",
+          "pronunciation": "lohn-geht",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "kwang (pl. kwangik)",
+          "pronunciation": "kwahng",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "koto (pl. kotok)",
+          "pronunciation": "koh-toh",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        },
+        {
+          "english": "Headrest / Neck-stool",
+          "translation": "ng'echer",
+          "pronunciation": "ngeh-chehr",
+          "context": "Beech 1911 pastoral headrest",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "meril",
+          "pronunciation": "meh-reel",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "kipsang'an",
+          "pronunciation": "keep-sahn-gahn",
+          "context": "Beech 1911 Suk fauna",
+          "audioFile": null
+        },
+        {
+          "english": "Camel",
+          "translation": "tompolo",
+          "pronunciation": "tohm-poh-loh",
+          "context": "Beech 1911 Suk fauna",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "moroi",
+          "pronunciation": "moh-roy",
+          "context": "Beech 1911 & Johnston 1902 Suk",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "mening (chering)",
+          "pronunciation": "meh-neeng",
+          "context": "Mervyn Beech 1911 p. 68 Suk adjectives",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "oo (echin)",
+          "pronunciation": "oh / eh-cheen",
+          "context": "Mervyn Beech 1911 p. 68 Suk adjectives",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "ya (oko)",
+          "pronunciation": "yah / oh-koh",
+          "context": "Mervyn Beech 1911 p. 68 Suk adjectives",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "karam (nyikan)",
+          "pronunciation": "kah-rahm",
+          "context": "Mervyn Beech 1911 p. 68 Suk adjectives",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "ril (leel)",
+          "pronunciation": "reel / lehl",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "tuw (tui)",
+          "pronunciation": "toow",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "pirir",
+          "pronunciation": "pee-reer",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]

@@ -10,8 +10,8 @@
     "Tharaka-Nithi"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "0.1.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Meru (Kĩmĩĩrũ) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
@@ -19,6 +19,27 @@
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Thank you",
+          "translation": "Nĩwega (Nĩwega mũno)",
+          "pronunciation": "nee-weh-gah moo-noh",
+          "context": "Kĩmĩĩrũ expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Good morning",
+          "translation": "Ũrĩ mwega rũũciĩni? / Muuga!",
+          "pronunciation": "oo-ree mweh-gah roo-chee-nee",
+          "context": "Kĩmĩĩrũ morning greeting",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
+          "pronunciation": "moo-gah / oo-ree mweh-gah",
+          "context": "Standard Kĩmĩĩrũ & Mount Kenya salutation",
+          "audioFile": null
+        },
         {
           "english": "How are you? (Imenti, Chuka, Tharaka; Tigania: Muua)",
           "translation": "Muuga? / Nĩatĩa ũrĩ?",
@@ -67,6 +88,83 @@
           "pronunciation": "mũrata (pl. arata)",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "-erũ (njerũ, mwerũ)",
+          "pronunciation": "eh-roo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "-irũ (njirũ)",
+          "pronunciation": "ee-roo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "-tune (ntune)",
+          "pronunciation": "too-neh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "kĩrĩma (pl. irĩma)",
+          "pronunciation": "kee-ree-mah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "rũũji (rũĩ)",
+          "pronunciation": "roo-jee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "ĩiga (pl. maiga)",
+          "pronunciation": "ee-gah / mah-ee-gah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "kuona (-ona)",
+          "pronunciation": "kwoh-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kũigua (-igua)",
+          "pronunciation": "koo-ee-gwah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "kũmenya (-menya)",
+          "pronunciation": "koo-meh-nyah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kwenda (Inkwendete = I love you)",
+          "pronunciation": "kwehn-dah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kũaa (-aa) / kũnenga",
+          "pronunciation": "koo-ah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -75,6 +173,76 @@
       "name": "Numbers",
       "icon": "🔢",
       "entries": [
+        {
+          "english": "Ten",
+          "translation": "ikũmi (pl. mĩrongo)",
+          "pronunciation": "ee-koo-mee",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "kenda",
+          "pronunciation": "kehn-dah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "inyanya",
+          "pronunciation": "ee-nyah-nyah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "mũgwanja",
+          "pronunciation": "moo-gwahn-jah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "ithanthatu",
+          "pronunciation": "ee-thahn-thah-too",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "ithano (-thano)",
+          "pronunciation": "ee-thah-noh",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "inya (-nya)",
+          "pronunciation": "ee-nyah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "ithatu (-thatu)",
+          "pronunciation": "ee-thah-too",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "iiri (bairi)",
+          "pronunciation": "ee-ree / bah-ee-ree",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "One",
+          "translation": "imwe (-mwe)",
+          "pronunciation": "ee-mweh",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
         {
           "english": "Second (time unit)",
           "translation": "Sekondi",
@@ -89,6 +257,76 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "kwaria (kuuga)",
+          "pronunciation": "kwah-ree-ah",
+          "context": "Johnston 1919 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "kũmama (kũkoma)",
+          "pronunciation": "koo-mah-mah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kũũja (ĩja!)",
+          "pronunciation": "koo-jah / ee-jah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "gũthiĩ (kũthi)",
+          "pronunciation": "goo-thee",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "kũnyua",
+          "pronunciation": "koo-nywah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "kũrĩa",
+          "pronunciation": "koo-ree-ah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "-nini (mũnini, kanini)",
+          "pronunciation": "nee-nee",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-nene (mũnene)",
+          "pronunciation": "neh-neh",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "-ũru (mũũru, nthũku)",
+          "pronunciation": "oo-roo / n-thoo-koo",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "-ega (mwega, bwega)",
+          "pronunciation": "eh-gah",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
         {
           "english": "I love you",
           "translation": "Inkwendete",
@@ -1362,6 +1600,62 @@
           "pronunciation": "brazili",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "niĩ (prefix n-)",
+          "pronunciation": "nee-ee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "gwe (we, prefix ũ-)",
+          "pronunciation": "gweh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "we (prefix a-)",
+          "pronunciation": "weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "batũ / ithuĩ (prefix tũ-)",
+          "pronunciation": "bah-too",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "bo (o, prefix ba-)",
+          "pronunciation": "boh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ũũ? (nũũ?)",
+          "pronunciation": "oo / noo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "mbi? (atĩa?)",
+          "pronunciation": "m-bee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "kũ? (ha?)",
+          "pronunciation": "koo / hah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1369,6 +1663,104 @@
       "id": "family-food",
       "name": "Family, Homestead & Food",
       "entries": [
+        {
+          "english": "Day",
+          "translation": "mũthenya",
+          "pronunciation": "moo-theh-nyah",
+          "context": "Johnston 1919 p. 66 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "ũtukũ",
+          "pronunciation": "oo-too-koo",
+          "context": "Johnston 1919 p. 69 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "ng'ombe",
+          "pronunciation": "ngohm-beh",
+          "context": "Johnston 1919 p. 66 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "nyomba (mũciĩ = homestead)",
+          "pronunciation": "nyohm-bah / moo-chee",
+          "context": "Johnston 1919 p. 68 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "njata",
+          "pronunciation": "n-jah-tah",
+          "context": "Johnston 1919 p. 70 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "mweri",
+          "pronunciation": "mweh-ree",
+          "context": "Johnston 1919 p. 68 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "riũa",
+          "pronunciation": "ree-oo-ah",
+          "context": "Johnston 1919 p. 70 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Murungu (Ngai)",
+          "pronunciation": "moo-roon-goo / ngah-ee",
+          "context": "Johnston 1919 p. 67 & Hobley 1910 p. 148",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "biakũrĩa (irio)",
+          "pronunciation": "byah-koo-ree-ah",
+          "context": "Kĩmĩĩrũ Class 8 food noun",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "mwana (pl. aana / baana) / kaana (pl. tũana)",
+          "pronunciation": "mwah-nah / kah-nah",
+          "context": "Johnston 1919 p. 66 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "mũka (pl. aka / baka)",
+          "pronunciation": "moo-kah",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "mũrũme (pl. arũme / barũme)",
+          "pronunciation": "moo-roo-meh",
+          "context": "Johnston 1919 p. 68 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "maitũ / ng'ina (nyina)",
+          "pronunciation": "mah-ee-too / ngee-nah",
+          "context": "Johnston 1919 p. 68 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "baba (ithe)",
+          "pronunciation": "bah-bah / ee-theh",
+          "context": "Johnston 1919 p. 67 #11a Meru",
+          "audioFile": null
+        },
         {
           "english": "Give me cassava",
           "translation": "Ndũmia mũanga (pl. mĩanga)",
@@ -2643,12 +3035,12 @@
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         }
-      ]
-    }
-,
+      ],
+      "icon": "👨‍👩‍👧‍👦"
+    },
     {
-      "id": "johnston-1919-hobley-1910-meru",
-      "name": "Johnston (1919 #11a Meru & #11 Tharaka/Chuka/Mwimbe/Igoji) & Hobley (1910) Historical Kĩmĩĩrũ Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

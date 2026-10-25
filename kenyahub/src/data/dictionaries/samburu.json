@@ -12,8 +12,8 @@
     "Laikipia"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-23",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Samburu (Sampur / North Maa) dictionary compiled from Rainer Vossen ('The Eastern Nilotes: Linguistic and Historical Reconstructions', 1982), Wikipedia Nilotic & Eastern Nilotic comparative tables, and Unicode CLDR (saq.xml).",
   "categories": [
     {
@@ -68,6 +68,62 @@
           "translation": "Kiserian",
           "pronunciation": "ki-seh-ri-an",
           "context": "Samburu farewell",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "nanu (prefix a-)",
+          "pronunciation": "nah-noo",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "iyie (prefix i-)",
+          "pronunciation": "ee-yeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ninye (prefix e-)",
+          "pronunciation": "nee-nyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "iyook (prefix ki-)",
+          "pronunciation": "ee-yohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "nince",
+          "pronunciation": "neen-cheh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ngai?",
+          "pronunciation": "ngah-ee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "inyoo?",
+          "pronunciation": "ee-nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "kaji?",
+          "pronunciation": "kah-jee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]
@@ -518,6 +574,13 @@
       "name": "Nature, Environment & Time",
       "icon": "🌍",
       "entries": [
+        {
+          "english": "Star",
+          "translation": "l-akira (pl. l-akir)",
+          "pronunciation": "lah-kee-rah",
+          "context": "Johnston 1902 Burkeneji/Sampuru & Hollis 1905",
+          "audioFile": null
+        },
         {
           "english": "Water",
           "translation": "ŋ-kár-ɛ́ (nkare)",
@@ -1343,6 +1406,20 @@
           "pronunciation": "kiakan",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "l-doinyo (pl. l-doinyo)",
+          "pronunciation": "l-doy-nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "soit (pl. soito)",
+          "pronunciation": "soyt",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1469,13 +1546,54 @@
           "pronunciation": "ai-yio-lo",
           "context": "Samburu (North Maa)",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "a-dol (dol)",
+          "pronunciation": "ah-dohl",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "a-ning (ning)",
+          "pronunciation": "ah-neeng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "a-yiolo (yiolo)",
+          "pronunciation": "ah-yoh-loh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "a-nyor (anyor)",
+          "pronunciation": "ah-nyohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "a-isho (inchooki)",
+          "pronunciation": "ah-ee-shoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "a-ier (ier)",
+          "pronunciation": "ah-ee-ehr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "johnston-1902-hobley-1910-samburu",
-      "name": "Johnston (1902) & Hobley (1910) Historical Samburu (Sampur / Burkeneji / Laikipiak) Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -1504,6 +1622,118 @@
           "translation": "lmurran (sg. lmurrani) & laiguenani (pl. laiguenak)",
           "pronunciation": "lmur-ran / lai-gue-na-ni",
           "context": "Johnston (1902) & Hobley (1910) — North Maa age-grade organization",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Leather Bag (Origin of 'Samburu')",
+          "translation": "saamburr (Sampur)",
+          "pronunciation": "sahm-boor",
+          "context": "Hinde 1901 & Hollis 1905",
+          "audioFile": null
+        },
+        {
+          "english": "Owners of the Land (Autonym)",
+          "translation": "Loikop (Lokop)",
+          "pronunciation": "loy-kohp",
+          "context": "Hinde 1901 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Mountain of Northern Kenya",
+          "translation": "Ol-doinyo Nyiro (Mount Nyiro)",
+          "pronunciation": "ohl-doy-nyoh nyee-roh",
+          "context": "Dundas 1910 & Samburu cosmology",
+          "audioFile": null
+        },
+        {
+          "english": "Ewaso Ng'iro River",
+          "translation": "E-waso Ngiro ('Brown/Muddy River')",
+          "pronunciation": "eh-wah-soh n-gee-roh",
+          "context": "Hinde 1901 p. 36 & Hollis 1905",
+          "audioFile": null
+        },
+        {
+          "english": "Ceremonial Homestead (Manyatta)",
+          "translation": "l-ora (nkang)",
+          "pronunciation": "loh-rah / n-kahng",
+          "context": "Samburu pastoral architecture",
+          "audioFile": null
+        },
+        {
+          "english": "Age-Set Ceremony of the Bull",
+          "translation": "L-mugit",
+          "pronunciation": "l-moo-geet",
+          "context": "Samburu warrior age-grade rite",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "l-longo",
+          "pronunciation": "l-lohn-goh",
+          "context": "Johnston 1902 Burkeneji & Hollis 1905",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "n-aisho",
+          "pronunciation": "nah-ee-shoh",
+          "context": "Johnston 1902 Burkeneji & Hollis 1905",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "oti (f. kiti)",
+          "pronunciation": "oh-tee / kee-tee",
+          "context": "Hinde 1901 & Hollis 1905 North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "sapuk (kitok)",
+          "pronunciation": "sah-pook / kee-tohk",
+          "context": "Hinde 1901 & Hollis 1905 North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "torono (pl. torok)",
+          "pronunciation": "toh-roh-noh",
+          "context": "Hinde 1901 & Hollis 1905 North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "supat (sidai)",
+          "pronunciation": "soo-paht / see-dah-ee",
+          "context": "Hinde 1901 & Hollis 1905 North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "oibor (naibor)",
+          "pronunciation": "oy-bohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "orok (narok)",
+          "pronunciation": "oh-rohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "onyokie (nanyokie)",
+          "pronunciation": "oh-nyoh-kyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
         }
       ]

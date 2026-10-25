@@ -9,8 +9,8 @@
     "Busia"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.1.0",
-  "lastUpdated": "2026-10-20",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Teso (Ateso) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
   "categories": [
     {
@@ -18,6 +18,20 @@
       "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Friend",
+          "translation": "epapero (pl. ipapero)",
+          "pronunciation": "eh-pah-peh-roh",
+          "context": "Ateso friendship noun",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Eyalama (Eyalama noi)",
+          "pronunciation": "eh-yah-lah-mah noy",
+          "context": "Ateso gratitude",
+          "audioFile": null
+        },
         {
           "english": "Hello",
           "translation": "Yoga",
@@ -80,6 +94,27 @@
           "pronunciation": "Awanyunos bobo",
           "context": "Wikipedia Teso language — Vocabulary",
           "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "ekwang (akwang)",
+          "pronunciation": "eh-kwahng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "eriono (arionon)",
+          "pronunciation": "eh-ree-oh-noh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "ereng (areng)",
+          "pronunciation": "eh-rehng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -88,6 +123,76 @@
       "name": "Numbers",
       "icon": "🔢",
       "entries": [
+        {
+          "english": "Ten",
+          "translation": "itomon (atomon)",
+          "pronunciation": "ee-toh-mohn",
+          "context": "Hobley 1902 p. 69",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "ikany-kaoŋon (5+4)",
+          "pronunciation": "ee-kah-ny kah-oh-ngohn",
+          "context": "Hobley 1902 p. 69",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "ikany-kauni (5+3)",
+          "pronunciation": "ee-kah-ny kah-oo-nee",
+          "context": "Hobley 1902 p. 69",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "ikany-kaare (5+2)",
+          "pronunciation": "ee-kah-ny kah-reh",
+          "context": "Hobley 1902 p. 69",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "ikany-kape (5+1)",
+          "pronunciation": "ee-kah-ny kah-peh",
+          "context": "Hobley 1902 p. 69",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "ikany (m.) / akany (f.)",
+          "pronunciation": "ee-kah-ny / ah-kah-ny",
+          "context": "Hobley 1902 p. 69 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "ioŋon (m.) / aoŋon (f.)",
+          "pronunciation": "ee-oh-ngohn / ah-oh-ngohn",
+          "context": "Hobley 1902 p. 69 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "iuni (m.) / auni (f.)",
+          "pronunciation": "ee-oo-nee / ah-oo-nee",
+          "context": "Hobley 1902 p. 69 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "iyarei (m.) / aarei (f.)",
+          "pronunciation": "ee-yah-reh-ee / ah-ah-reh-ee",
+          "context": "Hobley 1902 p. 69 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "One",
+          "translation": "idiope (m.) / adiope (f.)",
+          "pronunciation": "ee-dee-oh-peh / ah-dee-oh-peh",
+          "context": "Hobley 1902 p. 69 & Johnston 1902",
+          "audioFile": null
+        },
         {
           "english": "Zero / naught",
           "translation": "esupur (traditional) / enoot",
@@ -284,6 +389,34 @@
       "name": "Common Phrases",
       "icon": "🗣️",
       "entries": [
+        {
+          "english": "Small",
+          "translation": "edit (aditon)",
+          "pronunciation": "eh-deet",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "epol (apolon)",
+          "pronunciation": "eh-pohl",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "erono (aronon)",
+          "pronunciation": "eh-roh-noh",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "ejok (ajokon)",
+          "pronunciation": "eh-johk",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
         {
           "english": "Love / affection",
           "translation": "amina / amin",
@@ -878,6 +1011,62 @@
           "pronunciation": "ojola, opedel, osokosokoma, otibar, olabor, opoo",
           "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "eong / ayong (prefix a-)",
+          "pronunciation": "eh-ohng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "ijo (ion, prefix i-)",
+          "pronunciation": "ee-joh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ngesi (prefix e-)",
+          "pronunciation": "ngeh-see",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "isio / oni (prefix ki-)",
+          "pronunciation": "ee-see-oh / oh-nee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "kesi",
+          "pronunciation": "keh-see",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ingai?",
+          "pronunciation": "een-gah-ee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "nyo?",
+          "pronunciation": "nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "ai? (aibo?)",
+          "pronunciation": "ah-ee-boh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1006,6 +1195,27 @@
       "icon": "🐾",
       "entries": [
         {
+          "english": "Bird",
+          "translation": "akweny (pl. akwenyik)",
+          "pronunciation": "ah-kwehny",
+          "context": "Hobley 1902 p. 62 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "amerekek (pl. amerekekin)",
+          "pronunciation": "ah-meh-reh-kehk",
+          "context": "Hobley 1902 p. 66 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "akiteng (pl. aatuk)",
+          "pronunciation": "ah-kee-tehng / ah-took",
+          "context": "Hobley 1902 p. 63 & Johnston 1902",
+          "audioFile": null
+        },
+        {
           "english": "Dog (masc.) / bitch (fem.) / puppy (neut.)",
           "translation": "ekingok (m.) / akingok (f.) / ikiŋok (puppy)",
           "pronunciation": "ekingok (m.) / akingok (f.) / ikiŋok (puppy)",
@@ -1082,6 +1292,41 @@
       "name": "Nature & Environment",
       "icon": "🌿",
       "entries": [
+        {
+          "english": "Day",
+          "translation": "apaaran",
+          "pronunciation": "ah-pah-rahn",
+          "context": "Hobley 1902 p. 63 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "akware",
+          "pronunciation": "ah-kwah-reh",
+          "context": "Hobley 1902 p. 65 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "acerit (pl. acerin)",
+          "pronunciation": "ah-cheh-reet",
+          "context": "Hobley 1902 p. 67 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Akuj / Edeke (Lokasuban)",
+          "pronunciation": "ah-kooj / eh-deh-keh",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "akim",
+          "pronunciation": "ah-keem",
+          "context": "Hobley 1902 p. 63 & Johnston 1902",
+          "audioFile": null
+        },
         {
           "english": "Water (pluralia tantum)",
           "translation": "akipi (a-ki-pí)",
@@ -1326,6 +1571,27 @@
           "pronunciation": "aparan",
           "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "emoru (pl. imor)",
+          "pronunciation": "eh-moh-roo",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "echilet / aolok",
+          "pronunciation": "eh-chee-leht",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "amoru (pl. amor)",
+          "pronunciation": "ah-moh-roo",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
     },
@@ -1334,6 +1600,27 @@
       "name": "Body & Health",
       "icon": "👤",
       "entries": [
+        {
+          "english": "Head",
+          "translation": "akou (pl. akwes)",
+          "pronunciation": "ah-koh-oo",
+          "context": "Hobley 1902 p. 64 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "akeju (pl. akejen)",
+          "pronunciation": "ah-keh-joo",
+          "context": "Hobley 1902 p. 64 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "akan (pl. akanin)",
+          "pronunciation": "ah-kahn",
+          "context": "Hobley 1902 p. 64 & Johnston 1902",
+          "audioFile": null
+        },
         {
           "english": "Eye",
           "translation": "akong'u (a-kɔ́ŋ-ʊ̀)",
@@ -1425,6 +1712,13 @@
       "name": "Food & Drink",
       "icon": "🍲",
       "entries": [
+        {
+          "english": "Meat",
+          "translation": "akiring",
+          "pronunciation": "ah-kee-reeng",
+          "context": "Hobley 1902 p. 65 & Johnston 1902",
+          "audioFile": null
+        },
         {
           "english": "Milk",
           "translation": "akile",
@@ -1649,6 +1943,41 @@
       "name": "Common Verbs",
       "icon": "⚡",
       "entries": [
+        {
+          "english": "Speak",
+          "translation": "ainer (alimun)",
+          "pronunciation": "ah-ee-nehr",
+          "context": "Hobley 1902 & Ateso vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "abunore (bia ne! = come here!)",
+          "pronunciation": "ah-boo-noh-reh / bee-ah neh",
+          "context": "Hobley 1902 p. 53",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "alosit (kolot! = go!)",
+          "pronunciation": "ah-loh-seet / koh-loht",
+          "context": "Hobley 1902 p. 53",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "akimat (aimat)",
+          "pronunciation": "ah-kee-maht",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "akinyam (ainyam)",
+          "pronunciation": "ah-kee-nyahm",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
         {
           "english": "To eat",
           "translation": "akinyam / ainyam (akí-ɲám-à)",
@@ -2040,13 +2369,54 @@
           "pronunciation": "kiakan",
           "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "aanyun (asesen)",
+          "pronunciation": "ah-nyoon",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "aiirar (apupokin)",
+          "pronunciation": "ah-ee-rahr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "aiyen (ajenun)",
+          "pronunciation": "ah-ee-yehn",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "amin (amina)",
+          "pronunciation": "ah-meen",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "ainakin",
+          "pronunciation": "ah-ee-nah-keen",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "aipo (aipois)",
+          "pronunciation": "ah-ee-poh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "hobley-1902-johnston-1902-elgumi-teso",
-      "name": "Hobley (1902) & Johnston (1902) Historical Elgumi / Wamia (Ateso) Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {

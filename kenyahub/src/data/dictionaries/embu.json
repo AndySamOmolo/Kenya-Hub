@@ -9,8 +9,8 @@
     "Embu"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-23",
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-25",
   "contributorNote": "Embu (Kĩembu / Kimbeere) dictionary compiled from the Wikipedia Embu_language 150-word lexicon and conversational phrase table, Unicode CLDR (ebu.xml), and PanLex CC0.",
   "categories": [
     {
@@ -18,6 +18,20 @@
       "name": "Greetings & Common Phrases",
       "icon": "👋",
       "entries": [
+        {
+          "english": "Thank you",
+          "translation": "Nĩ wega (Nĩ wega mũno)",
+          "pronunciation": "nee weh-gah moo-noh",
+          "context": "Kîembu gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Hello",
+          "translation": "Wĩ mwega? (resp. Ndĩ mwega) / Niatĩa?",
+          "pronunciation": "wee mweh-gah",
+          "context": "Kîembu & Kîmbeere standard salutation",
+          "audioFile": null
+        },
         {
           "english": "Peace / blessing",
           "translation": "Thayũ",
@@ -142,6 +156,27 @@
           "translation": "mũrata (pl. arata)",
           "pronunciation": "mũrata (pl. arata)",
           "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "-erũ (njerũ)",
+          "pronunciation": "eh-roo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "-irũ (njirũ)",
+          "pronunciation": "ee-roo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "-tune (ndune)",
+          "pronunciation": "too-neh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]
@@ -2082,6 +2117,27 @@
           "pronunciation": "kĩakan",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "kĩrĩma (pl. irĩma)",
+          "pronunciation": "kee-ree-mah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "rũũĩ",
+          "pronunciation": "roo-ee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "ĩvia (pl. mavia)",
+          "pronunciation": "ee-vyah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
     },
@@ -2488,13 +2544,47 @@
           "pronunciation": "taara",
           "context": "Wikipedia Embu_language",
           "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "kuona (-ona)",
+          "pronunciation": "kwoh-nah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "kũigua (-igua)",
+          "pronunciation": "koo-ee-gwah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "kũmenya (-menya)",
+          "pronunciation": "koo-meh-nyah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "kwenda (-enda)",
+          "pronunciation": "kwehn-dah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "kũve (-ve)",
+          "pronunciation": "koo-veh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
         }
       ]
-    }
-,
+    },
     {
-      "id": "johnston-1919-hobley-1910-embu",
-      "name": "Johnston (1919 #11 Embu, Emberre, Chuka, Mwimbe) & Hobley (1910) Historical Mount Kenya Bantu Corpus",
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
       "entries": [
         {
@@ -2516,6 +2606,97 @@
           "translation": "Kiama kia Ngome & Mũtĩ wa Ngai (Mũgumo sacred fig tree)",
           "pronunciation": "ki-a-ma kia ngo-me / mu-gu-mo",
           "context": "C. W. Hobley (1910, pp. 146–155) & Johnston (1919)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Phrases",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "-nini (mũnini, kanini)",
+          "pronunciation": "nee-nee",
+          "context": "Johnston 1919 #11 Embu",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-nene (mũnene, nene)",
+          "pronunciation": "neh-neh",
+          "context": "Johnston 1919 #11 Embu",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "-ũru (mũũru, njũru)",
+          "pronunciation": "oo-roo",
+          "context": "Johnston 1919 #11 Embu",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "-ega (mwega, njega)",
+          "pronunciation": "eh-gah",
+          "context": "Johnston 1919 #11 Embu",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "niĩ",
+          "pronunciation": "nee-ee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "we (gwe)",
+          "pronunciation": "weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "we (prefix a-)",
+          "pronunciation": "weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "ithuĩ (prefix tũ-)",
+          "pronunciation": "ee-thwee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "o (ao, prefix ma-)",
+          "pronunciation": "oh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "nũũ?",
+          "pronunciation": "noo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "kĩĩ? (mbi?)",
+          "pronunciation": "kee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "va? (kũ?)",
+          "pronunciation": "vah / koo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         }
       ]

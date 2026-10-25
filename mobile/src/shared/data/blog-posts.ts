@@ -2383,7 +2383,7 @@ Between the Indian Ocean littoral and the interior highlands of Kilimanjaro and 
 
 ---
 
-## 1. Taita (*Kisagala & Kidawida*) in Rev. J. Alfred Wray (1894) & Johnston (1919 `#14`)
+## 1. Taita (*Kisagala & Kidawida*) in Rev. J. Alfred Wray (1894) & Johnston (1919 #14)
 
 Stationed at Sagalla in the Taita Hills from 1883, **Rev. J. Alfred Wray** published *An Elementary Introduction to the Taita Language* (SPCK London, 1894, 128 pages), documenting:
 - **Nine Noun Classes & Locative *-ni* (pp. 9–17)**: Pairing *mundu → wandu* (person → people), *mghosi → waghosi* (elder → elders), *mti → miti* (tree → trees), *ijego → majego* (tooth → teeth), *kindu → vindu* (thing → things), *nyumba → nyumba* (house → houses), *luenyi → nyenyi* (lightning), *kandu → tundu* (small thing → small things), and *wuta → mawuta* (bow → bows).
@@ -2392,9 +2392,9 @@ Stationed at Sagalla in the Taita Hills from 1883, **Rev. J. Alfred Wray** publi
 
 ---
 
-## 2. Taveta (*Kitaveta*) Proverbs & Riddles in A. C. Hollis (1910–1911) & Johnston (1919 `#15`)
+## 2. Taveta (*Kitaveta*) Proverbs & Riddles in A. C. Hollis (1910–1911) & Johnston (1919 #15)
 
-In the *Journal of the African Society* (Vols. 9–10, 1910–1911), **A. C. Hollis** published nearly 100 Kitaveta proverbs and 66 riddles alongside Sir Harry Johnston's comparative tables (`#15 Taveta`):
+In the *Journal of the African Society* (Vols. 9–10, 1910–1911), **A. C. Hollis** published nearly 100 Kitaveta proverbs and 66 riddles alongside Sir Harry Johnston's comparative tables (#15 Taveta):
 - **Proverb #4**: *Esikie mbeho niye esongeria moto.* — "It is the one who feels the cold who draws near to the fire" (initiative belongs to the one in need).
 - **Proverb #6**: *Ukakoma nyoka, mhome na kamwe.* — "If you kill a snake, strike it once and for all" (do not leave a dangerous task half-finished).
 - **Proverb #10**: *Ideghe imwe likaremwa kuiya teheshigha kucha.* — "If one bird fails to sing, it does not stop the dawn from breaking."
@@ -2402,7 +2402,7 @@ In the *Journal of the African Society* (Vols. 9–10, 1910–1911), **A. C. Hol
 
 ---
 
-## 3. Kipfokomo (*Pokomo*) along the Tana River in Krapf (1850), Würtz (1895) & Johnston (1919 `#13`)
+## 3. Kipfokomo (*Pokomo*) along the Tana River in Krapf (1850), Würtz (1895) & Johnston (1919 #13)
 
 As one of the core **Sabaki Bantu** languages alongside Swahili and Mijikenda, **Kipfokomo** preserves direct links to the archaic coastal **Kingozi** poetic register:
 - **Sabaki Sound Correspondences**: *muntu → wantu* (person → people), *kitswa → vitswa* (head → heads), *dzitso → matso* (eye → eyes), *dzino → meno* (tooth → teeth), *madzi* (water), *muho* (river), *moho* (fire), *nswi* (fish), *ngwena* (crocodile), *nguu* (hippopotamus), and *ndzovu* (elephant).
