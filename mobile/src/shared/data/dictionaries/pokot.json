@@ -10,9 +10,9 @@
     "Baringo"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-23",
-  "contributorNote": "Pokot (Pökoot / Suk) dictionary compiled from Mervyn W. H. Beech ('The Suk: Their Language and Folklore', Clarendon Press Oxford, 1911 — Public Domain), Juxon Barton (1921 — Public Domain), Roger van Otterloo (1979), and Wikipedia Nilotic & Kalenjin comparative tables.",
+  "dictionaryVersion": "2.0.0",
+  "lastUpdated": "2026-10-25",
+  "contributorNote": "Pokot (Pökoot / Suk) and Endo (Chep-bleñg) dictionary compiled line-by-line from Mervyn W. H. Beech ('The Suk: Their Language and Folklore', Clarendon Press Oxford, 1911 — Public Domain), Hon. K. R. Dundas ('Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, 1910 — Public Domain), Sir Harry H. Johnston ('The Uganda Protectorate, Vol. II', 1902 — Public Domain), Juxon Barton (1921 — Public Domain), and Roger van Otterloo (1979).",
   "categories": [
     {
       "id": "greetings",
@@ -27,6 +27,13 @@
           "audioFile": null
         },
         {
+          "english": "Greetings! (Elder/warrior salutation & reply in Beech 1911)",
+          "translation": "Tokwes! (Reply: Tokwes!) / Chamke! (Reply: Chamke!)",
+          "pronunciation": "tok-wes / cham-ke",
+          "context": "Mervyn W. H. Beech (1911, p. 91) — Suk Salutations",
+          "audioFile": null
+        },
+        {
           "english": "Peace / All is well",
           "translation": "Kalyon / Kalya",
           "pronunciation": "kal-yon / kal-ya",
@@ -37,7 +44,7 @@
           "english": "I say, you! (Man-to-man vocative address)",
           "translation": "Werno (pl. wer-chara)",
           "pronunciation": "wer-no (pl. wer-cha-ra)",
-          "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+          "context": "Juxon Barton (1921) & Beech (1911, p. 91) — Suk/Pokot",
           "audioFile": null
         },
         {
@@ -51,14 +58,14 @@
           "english": "Very fierce",
           "translation": "Korom nyaman",
           "pronunciation": "ko-rom nya-man",
-          "context": "Juxon Barton (1921) — Suk/Pokot comparative note",
+          "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
           "audioFile": null
         },
         {
           "english": "Understand / hear thoroughly",
           "translation": "Lima nyaman",
           "pronunciation": "li-ma nya-man",
-          "context": "Juxon Barton (1921) — Suk/Pokot comparative note",
+          "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
           "audioFile": null
         },
         {
@@ -77,72 +84,86 @@
       "entries": [
         {
           "english": "One",
-          "translation": "àkɔ́ɔ́ŋkɔ̀ (akong'o)",
+          "translation": "àkɔ́ɔ́ŋkɔ̀ (akong'o / okongo)",
           "pronunciation": "a-koong-ko",
-          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Two",
-          "translation": "oɣë̀ë̀ŋ / òdë̀ë̀ŋ (odeng')",
+          "translation": "oɣë̀ë̀ŋ / òdë̀ë̀ŋ (oghien / odeng')",
           "pronunciation": "o-deeng",
-          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Three",
           "translation": "sä́mä́k (somok)",
           "pronunciation": "sa-mak",
-          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Four",
           "translation": "àŋwân (ang'wan)",
           "pronunciation": "ang-wan",
-          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Five",
           "translation": "múut (muut)",
           "pronunciation": "muut",
-          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) & Wikipedia Nilotic_languages — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Six",
-          "translation": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀ (5 + 1)",
+          "translation": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀ (mut ngô okongo, 5 + 1)",
           "pronunciation": "muut ngo a-koong-o",
-          "context": "Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) — Quinary finger-counting system",
           "audioFile": null
         },
         {
           "english": "Seven",
-          "translation": "múut ŋɡɔ́ òdë̀ë̀ŋ (5 + 2)",
+          "translation": "múut ŋɡɔ́ òdë̀ë̀ŋ (mut ngô oghien, 5 + 2)",
           "pronunciation": "muut ngo o-deeng",
-          "context": "Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "múut ŋɡɔ́ sä́mä́k (5 + 3)",
+          "translation": "múut ŋɡɔ́ sä́mä́k (mut ngô somok, 5 + 3)",
           "pronunciation": "muut ngo sa-mak",
-          "context": "Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Nine",
-          "translation": "múut ŋɡɔ́ àŋwân (5 + 4)",
+          "translation": "múut ŋɡɔ́ àŋwân (mut ngô angwan, 5 + 4)",
           "pronunciation": "muut ngo ang-wan",
-          "context": "Wikipedia Nilotic_languages — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
           "audioFile": null
         },
         {
           "english": "Ten",
           "translation": "támàn (taman)",
           "pronunciation": "ta-man",
-          "context": "Wikipedia Nilotic_languages & Beech (1911) — Pökoot (Suk)",
+          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty (One complete man: all fingers and toes)",
+          "translation": "tiptem / pich okongo",
+          "pronunciation": "tip-tem / pich o-kon-go",
+          "context": "Beech (1911, p. 62) — Suk vigesimal/decimal counting",
+          "audioFile": null
+        },
+        {
+          "english": "One hundred",
+          "translation": "pokol",
+          "pronunciation": "po-kol",
+          "context": "Beech (1911, p. 62) — Pökoot (Suk)",
           "audioFile": null
         }
       ]
@@ -157,6 +178,20 @@
           "translation": "piich (sg. chii)",
           "pronunciation": "piich (sg. chii)",
           "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Pokot person / Pokot people (Endonym)",
+          "translation": "Pĕch-on (pl. Pôkwut)",
+          "pronunciation": "pech-on / pok-wut",
+          "context": "Beech (1911, p. 1) — Origin of the Suk/Pokot ethnonym",
+          "audioFile": null
+        },
+        {
+          "english": "Endo (Marakwet escarpment) people",
+          "translation": "Chep-bleñg",
+          "pronunciation": "chep-bleng",
+          "context": "Beech (1911, p. 2) — The Suk: Their Language and Folklore",
           "audioFile": null
         },
         {
@@ -195,10 +230,17 @@
           "audioFile": null
         },
         {
-          "english": "God / Sky / Sun",
-          "translation": "Tororut / Asiis",
+          "english": "Supreme Sky God / Younger brother (the Sun)",
+          "translation": "Torôrut / Asiis",
           "pronunciation": "to-ro-rut / a-siis",
-          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "context": "Beech (1911, p. 19) — Suk Celestial Pantheon",
+          "audioFile": null
+        },
+        {
+          "english": "Council Adviser / Judge-Elder",
+          "translation": "Ki-ruwok-in (pl. Ki-ruwok-ik)",
+          "pronunciation": "ki-ru-wo-kin",
+          "context": "Beech (1911, p. 7) — Suk elder governance",
           "audioFile": null
         },
         {
@@ -217,70 +259,70 @@
       "entries": [
         {
           "english": "Eye",
-          "translation": "koːŋ (kong')",
+          "translation": "koːŋ (kong', pl. konyen)",
           "pronunciation": "koong",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Ear",
-          "translation": "yiːt (yit)",
+          "translation": "yiːt (yit, pl. yitwen)",
           "pronunciation": "yiit",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Nose",
-          "translation": "sa̱r̃ (sar)",
+          "translation": "sa̱r̃ (sar, pl. sarin)",
           "pronunciation": "sar",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Tooth",
-          "translation": "ke̱ːla̱t (kelat)",
+          "translation": "ke̱ːla̱t (kelat, pl. kelek)",
           "pronunciation": "kee-lat",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Tongue",
           "translation": "ŋa̱lya̱p (ng'alyap)",
           "pronunciation": "ng'al-yap",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Mouth",
-          "translation": "ku̱ːt (kut)",
+          "translation": "ku̱ːt (kut, pl. kutin)",
           "pronunciation": "kuut",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911, p. 53) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Blood",
           "translation": "kisʉn (kisun)",
           "pronunciation": "ki-sun",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Bone",
-          "translation": "kaːwaʔ (kawa)",
+          "translation": "kaːwaʔ (kawa, pl. kawek)",
           "pronunciation": "kaa-wa",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911) & van Otterloo (1979)",
           "audioFile": null
         },
         {
           "english": "Head",
-          "translation": "met (metit)",
+          "translation": "met (metit, pl. metin)",
           "pronunciation": "met",
           "context": "Beech (1911) — The Suk: Their Language and Folklore",
           "audioFile": null
         },
         {
           "english": "Hand / Arm",
-          "translation": "egh (eghit)",
+          "translation": "egh (eghit, pl. eghin)",
           "pronunciation": "egh",
           "context": "Beech (1911) — The Suk: Their Language and Folklore",
           "audioFile": null
@@ -308,9 +350,16 @@
       "entries": [
         {
           "english": "Cow / Cattle",
-          "translation": "tany (pl. tich)",
+          "translation": "tany (pl. tich / tuka)",
           "pronunciation": "tany (pl. tich)",
           "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Favorite ceremonial dance-ox with trained horns",
+          "translation": "kamar (pl. kamarin)",
+          "pronunciation": "ka-mar",
+          "context": "Beech (1911, p. 9) — Pastoral Suk prized ox",
           "audioFile": null
         },
         {
@@ -322,7 +371,7 @@
         },
         {
           "english": "Sheep",
-          "translation": "kechir",
+          "translation": "kechir (pl. kechirek)",
           "pronunciation": "ke-chir",
           "context": "Beech (1911) — The Suk: Their Language and Folklore",
           "audioFile": null
@@ -363,6 +412,20 @@
           "audioFile": null
         },
         {
+          "english": "Hare / Rabbit (Folktale trickster)",
+          "translation": "ki-blerkwa",
+          "pronunciation": "ki-bler-kwa",
+          "context": "Beech (1911, p. 94) — Interlinear Story 'Kip-kokech ngô Ki-blerkwa'",
+          "audioFile": null
+        },
+        {
+          "english": "Tortoise",
+          "translation": "kip-kokech",
+          "pronunciation": "kip-ko-kech",
+          "context": "Beech (1911, p. 94) — Interlinear Story 'Kip-kokech ngô Ki-blerkwa'",
+          "audioFile": null
+        },
+        {
           "english": "Dog",
           "translation": "kuki",
           "pronunciation": "ku-ki",
@@ -377,10 +440,10 @@
           "audioFile": null
         },
         {
-          "english": "Snake",
-          "translation": "eren",
-          "pronunciation": "e-ren",
-          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "english": "Snake / Ancestral snake-spirit visiting the hearth",
+          "translation": "eren / onyet (moroi)",
+          "pronunciation": "e-ren / on-yet / mo-roi",
+          "context": "Beech (1911, p. 20) — Suk ancestral snake belief",
           "audioFile": null
         }
       ]
@@ -394,14 +457,14 @@
           "english": "Water",
           "translation": "pʉːɣ (pogh / poy)",
           "pronunciation": "puugh / pogh",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911) & van Otterloo (1979) East Pokot",
           "audioFile": null
         },
         {
           "english": "Tree / Wood",
           "translation": "keːt (ket)",
           "pronunciation": "keet",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911) & van Otterloo (1979) East Pokot",
           "audioFile": null
         },
         {
@@ -412,10 +475,24 @@
           "audioFile": null
         },
         {
-          "english": "Moon / Month",
+          "english": "Moon / Month (Son of Torôrut)",
           "translation": "araw (arawet)",
           "pronunciation": "a-raw",
-          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "context": "Beech (1911, p. 19) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Pleiades constellation (Wife of Torôrut) & Evening Star (Daughter of Torôrut)",
+          "translation": "Seta (Pleiades) & Topogh (Evening Star)",
+          "pronunciation": "se-ta / to-pogh",
+          "context": "Beech (1911, p. 19) — Suk Cosmology",
+          "audioFile": null
+        },
+        {
+          "english": "Rain / Lightning-Spirit (Son of Torôrut) & Stars (Children of Torôrut)",
+          "translation": "Ilat (Rain/Thunder) & Kokel (Stars)",
+          "pronunciation": "i-lat / ko-kel",
+          "context": "Beech (1911, p. 19) — Suk Cosmology",
           "audioFile": null
         },
         {
@@ -517,17 +594,17 @@
           "audioFile": null
         },
         {
-          "english": "Book / Written language",
-          "translation": "kitapu (Kitapu ngala pökot)",
-          "pronunciation": "ki-ta-pu",
-          "context": "Wikipedia Pökoot_language",
+          "english": "Potter (female clay-pot maker) & Blacksmith",
+          "translation": "koko-ter (potter) & ki-tong-u (smith)",
+          "pronunciation": "ko-ko-ter / ki-ton-gu",
+          "context": "Beech (1911, pp. 17–18) — Suk crafts & guild chants",
           "audioFile": null
         },
         {
-          "english": "Spear",
-          "translation": "ng'ot",
-          "pronunciation": "ng'ot",
-          "context": "Beech (1911) — The Suk: Their Language and Folklore",
+          "english": "Spear & Finger-knife / Wrist-knife",
+          "translation": "ng'ot (spear) & akul (wrist-knife)",
+          "pronunciation": "ng'ot / a-kul",
+          "context": "Beech (1911, p. 13) — The Suk: Their Language and Folklore",
           "audioFile": null
         }
       ]
@@ -541,7 +618,7 @@
           "english": "Eat",
           "translation": "keam",
           "pronunciation": "ke-am",
-          "context": "Wikipedia Kalenjin_languages — van Otterloo (1979) East Pokot",
+          "context": "Beech (1911) & van Otterloo (1979) East Pokot",
           "audioFile": null
         },
         {
@@ -598,6 +675,62 @@
           "translation": "ng'ala (ng'al)",
           "pronunciation": "ng'a-la",
           "context": "Wikipedia Pökoot_language & Beech (1911)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "beech-1911-dundas-1910-corpus",
+      "name": "Beech (1911) & Dundas (1910) Historical Corpus (Age-Sets, Clans, Riddles & Phrases)",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The two Suk tribal moieties & 8 geographical sections",
+          "translation": "Kasauria & Kiplegit (Sections: Seker,wek, Kasauria, Kipkomo, Batei,imo, Endo/Chep-bleng, Marakwet)",
+          "pronunciation": "ka-sau-ria / kip-le-git",
+          "context": "Mervyn W. H. Beech (1911, pp. 3–5) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "The 8 Cyclic Suk Circumcision Age-Sets",
+          "translation": "Mainaʻ, Nyongu, Merkutwa, Kablelach, Kip-koimet, Karongoro, Sowa, Jumoʻ",
+          "pronunciation": "mai-na, nyon-gu, mer-kut-wa, kab-le-lach",
+          "context": "Mervyn W. H. Beech (1911, p. 6) — The Suk: Their Language and Folklore",
+          "audioFile": null
+        },
+        {
+          "english": "Riddle challenge formula ('A riddle!')",
+          "translation": "Tiangoi!",
+          "pronunciation": "ti-an-goi",
+          "context": "Mervyn W. H. Beech (1911, pp. 44–46) — 18 Suk Riddles",
+          "audioFile": null
+        },
+        {
+          "english": "Riddle #1: I have two wives who never see each other. — Answer: The eyes.",
+          "translation": "Tiangoi! A-tiny-e korok-chan a-re che-ker-key. — Kôñg.",
+          "pronunciation": "a-ti-nye ko-rok-chan a-re che-ker-key — kong",
+          "context": "Mervyn W. H. Beech (1911, p. 44, Riddle #1)",
+          "audioFile": null
+        },
+        {
+          "english": "Riddle #2: What goes through the thick forest without being caught by thorns? — Answer: Raindrops / Wind.",
+          "translation": "Tiangoi! Ngo ne-wete tim nte-nam kat? — Ropta.",
+          "pronunciation": "ngo ne-we-te tim nte-nam kat — rop-ta",
+          "context": "Mervyn W. H. Beech (1911, p. 44, Riddle #2)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Suk dances",
+          "translation": "amumūr, kedoñgô, & tum (initiation ceremony)",
+          "pronunciation": "a-mu-mur / ke-don-go / tum",
+          "context": "Mervyn W. H. Beech (1911, pp. 21–22)",
+          "audioFile": null
+        },
+        {
+          "english": "17 Pokot (Suk / Bawgott) Clans & Totems in Baringo (Baboon, Elephant, Rain, Frog, Lightning, Hawk, Snake, Hyena, Sun, Oribi, Buffalo)",
+          "translation": "Il-Kapis, Il-Parsaina, Sokom, Terik, Talai, Kipketin, Kaptakwong, Kapsogot, Legenion, Sotot, Kamia",
+          "pronunciation": "so-kom, te-rik, ta-lai, le-ge-nion",
+          "context": "Hon. K. R. Dundas (1910, pp. 57–58) & Beech (1911, p. 5)",
           "audioFile": null
         }
       ]

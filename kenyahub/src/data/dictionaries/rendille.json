@@ -9,9 +9,9 @@
     "Marsabit"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-23",
-  "contributorNote": "Rendille (Afi Ren'dille) dictionary compiled from Bernd Heine ('Notes on the Rendille Language', Afrika und Übersee 59, 1976 & 'Proto-Baz', 1979), Harold C. Fleming ('Baiso and Rendille', 1964), and Wikipedia Rendille_language.",
+  "dictionaryVersion": "2.0.0",
+  "lastUpdated": "2026-10-25",
+  "contributorNote": "Rendille (Afi Ren'dille) dictionary compiled from C. W. Hobley ('Ethnology of A-Kamba and Other East African Tribes', Cambridge University Press, 1910 — Public Domain, pp. 136–160 including Rendille 7-day week & Mogogodo/Yaaku Cushitic lexicon), Bernd Heine ('Notes on the Rendille Language', Afrika und Übersee 59, 1976 & 'Proto-Baz', 1979), Harold C. Fleming ('Baiso and Rendille', 1964), and Wikipedia Rendille_language.",
   "categories": [
     {
       "id": "greetings",
@@ -330,7 +330,7 @@
           "english": "Camel (herd)",
           "translation": "gaal (sg. nyíro / ayr)",
           "pronunciation": "gaal",
-          "context": "Bernd Heine (1976) — Rendille camel pastoralism",
+          "context": "Bernd Heine (1976) & Hobley (1910, p. 158) — Rendille camel pastoralism",
           "audioFile": null
         },
         {
@@ -604,6 +604,41 @@
           "translation": "sií (a-sii)",
           "pronunciation": "sii",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "hobley-1910-rendille-yaaku",
+      "name": "Hobley (1910) Rendille 7-Day Week & Mogogodo (Yaaku) Cushitic Lexicon",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The 7-Day Rendille Week (Saturday to Friday, Hobley 1910)",
+          "translation": "Seri (Sat), Serehakaw (Sun), Alhadi (Mon), Atanini (Tue), Talada (Wed), Arbah (Thu), Gum (Fri, auspicious camel-moving day)",
+          "pronunciation": "se-ri, se-re-ha-kaw, al-ha-di, a-ta-ni-ni, ta-la-da, ar-bah, gum",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', pp. 158–160",
+          "audioFile": null
+        },
+        {
+          "english": "Auspicious camel-camp migration day in Rendille pastoral tradition",
+          "translation": "Gum (Friday)",
+          "pronunciation": "gum",
+          "context": "C. W. Hobley (1910, p. 159) — Rendille camel management",
+          "audioFile": null
+        },
+        {
+          "english": "[Mogogodo / Yaaku — East Cushitic] Man / Person / Woman / Child",
+          "translation": "muq / kedi / eiyo / ikoko",
+          "pronunciation": "muq / ke-di / ei-yo / i-ko-ko",
+          "context": "C. W. Hobley (1910, pp. 137–142) — First published Mogogodo (Yaaku) vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "[Mogogodo / Yaaku — East Cushitic] Water / Fire / Sun / Moon",
+          "translation": "ach / iku / xo / le",
+          "pronunciation": "ach / i-ku / xo / le",
+          "context": "C. W. Hobley (1910, pp. 137–142) — Mogogodo (Yaaku) vocabulary",
           "audioFile": null
         }
       ]

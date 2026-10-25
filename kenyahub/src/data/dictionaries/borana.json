@@ -1311,5 +1311,70 @@
         }
       ]
     }
-  ]
+,
+    {
+      "id": "krapf-1842-1850-tutschek-1844-1845-corpus",
+      "name": "Krapf (1842, 1850) & Tutschek (1844–1845) Historical Oromo/Borana Corpus (Grammar, Numerals, Prayers & Lexicon)",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Ordinal Numerals (-tiana) & Social Numerals (-anu): First, Second, Third / Two together, Three together",
+          "translation": "tokotiana (dura), lamatiana, zaditiana / lamanu, zadanu",
+          "pronunciation": "to-ko-ti-a-na, la-ma-ti-a-na / la-ma-nu, za-da-nu",
+          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', pp. 62–64",
+          "audioFile": null
+        },
+        {
+          "english": "Rock-salt currency bar (Amole) & its fractional denominations",
+          "translation": "amole (half: cabala; quarter: kurman; eighth: berba)",
+          "pronunciation": "a-mo-le / ca-ba-la / kur-man / ber-ba",
+          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', p. 65",
+          "audioFile": null
+        },
+        {
+          "english": "The 8 Derived Verbal Stems in Oromo/Borana (Causative -za/-siza, Middle/Autobenefactive -ad'a/-at, Passive -am)",
+          "translation": "ba (go out) → baza (put out) →ochiza; god'a (make) → god'ad'a (make for oneself) → god'ama (be made)",
+          "pronunciation": "ba -> ba-za / go-d'a -> go-d'a-d'a -> go-d'a-ma",
+          "context": "Karl & Lawrence Tutschek (1845) 'A Grammar of the Galla Language', pp. 14–28",
+          "audioFile": null
+        },
+        {
+          "english": "Morning & Harvest Prayer to Waaqa (Supreme Sky God)",
+          "translation": "Yaa Waaqa, nagaa nuu kenni! Rooba nagaa nuu roobi!",
+          "pronunciation": "yaa waa-qa na-gaa nuu ken-ni",
+          "context": "Karl & Lawrence Tutschek (1845, pp. 84–86) — Three Native Oromo Prayers",
+          "audioFile": null
+        },
+        {
+          "english": "Sovereign Assembly / Age-Grade Democratic System & Ritual Pilgrim",
+          "translation": "Gadaa (Lubba) & Jila (Abbaa Muudaa)",
+          "pronunciation": "ga-daa / lub-ba / ji-la",
+          "context": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)",
+          "audioFile": null
+        },
+        {
+          "english": "Horse / Mare / Bridle / Shield / Spear",
+          "translation": "farda (pl. fardoolii) / gama / lugama / gaachana / waraana (eeboo)",
+          "pronunciation": "far-da / ga-ma / lu-ga-ma / gaa-cha-na / wa-raa-na",
+          "context": "Rev. J. L. Krapf (1842) 'Vocabulary of the Galla Language' & (1850) 'Six East-African Languages'",
+          "audioFile": null
+        },
+        {
+          "english": "Honey / Hydromel (Honey-wine) / Barley beer / Coffee ceremonies",
+          "translation": "damma / daadhii / farsoo / buna qalaa",
+          "pronunciation": "dam-ma / daa-dhii / far-soo / bu-na qa-laa",
+          "context": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)",
+          "audioFile": null
+        },
+        {
+          "english": "Wild fig tree (Sacred assembly shade tree)",
+          "translation": "odaa",
+          "pronunciation": "o-daa",
+          "context": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)",
+          "audioFile": null
+        }
+      ]
+    }
+  ],
+  "source": "Public Domain Historical Lexicons (Krapf 1842, 1850 & Tutschek 1844–1845)"
 }

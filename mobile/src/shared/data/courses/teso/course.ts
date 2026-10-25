@@ -1,6 +1,9 @@
 // ============================================================
-// Teso (Ateso) Language Course Configuration & Units
-// Based on Open-Web Linguistic Data (Wikipedia Teso_language & Eastern_Nilotic_languages / Vossen 1982)
+// Teso (Ateso / Elgumi / Wamia) Language Course Configuration & Units
+// Based on Public Domain & Open-Web Linguistic Sources:
+// 1. C. W. Hobley (1902) "Eastern Uganda: An Ethnological Survey" (Elgumi vocabulary, numerals & phrases)
+// 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Elgumi / Wamia)
+// 3. Wikipedia Teso_language & Eastern_Nilotic_languages (Vossen 1982)
 // ============================================================
 
 import type { LanguageConfig, CourseUnit } from '../types';
@@ -13,21 +16,25 @@ export const TESO_CONFIG: LanguageConfig = {
   counties: ['Busia'],
   speakers: '468K',
   speechLocale: '',
-  description: 'An Eastern Nilotic language of the Ateker (Teso–Turkana) cluster spoken in Busia County, Western Kenya and eastern Uganda.',
+  description: 'An Eastern Nilotic language of the Ateker (Teso–Turkana) cluster spoken in Busia County, Western Kenya and eastern Uganda. Grounded in C. W. Hobley (1902) and Sir Harry H. Johnston (1902).',
   color: '#6D4C41',
-  sources: ['open-web-swadesh-comparative'],
+  sources: [
+    'hobley-eastern-uganda-1902',
+    'johnston-uganda-protectorate-1902',
+    'open-web-swadesh-comparative',
+  ],
 };
 
 export const TESO_UNITS: CourseUnit[] = [
   {
     id: 'teso-unit-1',
-    title: 'Unit 1: Greetings, Kinship & The Three Noun Genders',
+    title: 'Unit 1: Greetings, Kinship & The Three Noun Genders (Hobley 1902 & Johnston 1902)',
     description: 'Master Ateso greetings (Yoga, Ijai biai, Ejokuna), kinship terms, and Masculine (e-), Feminine (a-), and Neuter (i-) nouns.',
     icon: '👋',
     skills: [
       {
         id: 'teso-greetings-kinship',
-        title: 'Greetings, Introductions & Family',
+        title: 'Greetings, Introductions & Family (Hobley 1902 & Johnston 1902)',
         icon: 'Handshake',
         description: 'Greet elders and friends, introduce yourself, and name family members in Ateso.',
         tips: "The universal greeting in Ateso is 'Yoga!' ('Hello!'), followed by 'Ijai biai?' (How are you? sg.) or 'Ijaasi biai?' (pl.), answered with 'Ejokuna' ('Fine/well'). Kinship terms like 'toto' (mother) and 'papa' (father) do not take gender prefixes.",
@@ -38,10 +45,10 @@ export const TESO_UNITS: CourseUnit[] = [
           { target: "Ingai bo ekon'kiror?", source: 'What is your name?', pronunciation: 'ee-ngah-ee boh eh-kohn kee-rohr', hint: 'ekiror = name' },
           { target: 'Eyalama ewanyun', source: 'Nice to see you / Thank you', pronunciation: 'eh-yah-lah-mah eh-wah-nyoon', hint: 'Gratitude & welcome' },
           { target: 'Awanyunos bobo', source: 'See you again', pronunciation: 'ah-wah-nyoo-nohs boh-boh', hint: 'bobo = again' },
-          { target: 'toto / papa', source: 'Mother / Father', pronunciation: 'toh-toh / pah-pah', hint: 'Prefixless kinship nouns' },
-          { target: 'etelepat (pl. itelepai)', source: 'Boy (pl. Boys)', pronunciation: 'eh-teh-leh-paht', hint: 'Masculine e- → i- noun' },
-          { target: 'apese (pl. apesur)', source: 'Girl (pl. Girls)', pronunciation: 'ah-peh-seh', hint: 'Feminine a- noun' },
-          { target: 'ikoku (pl. idwe)', source: 'Child (pl. Children)', pronunciation: 'ee-koh-koo / ee-dweh', hint: 'Neuter i- noun' }
+          { target: 'toto / papa', source: 'Mother / Father', pronunciation: 'toh-toh / pah-pah', hint: 'Prefixless kinship nouns (Hobley 1902)' },
+          { target: 'ekile (pl. ikiliok) / aberu (pl. angor)', source: 'Man (pl. Men) / Woman (pl. Women)', pronunciation: 'eh-kee-leh / ah-beh-roo', hint: 'Hobley (1902) & Johnston (1902) Elgumi/Wamia' },
+          { target: 'etelepat (pl. itelepai) / apese (pl. apesur)', source: 'Boy (pl. Boys) / Girl (pl. Girls)', pronunciation: 'eh-teh-leh-paht / ah-peh-seh', hint: 'Masculine e- → i- vs. Feminine a-' },
+          { target: 'ikoku (pl. idwe)', source: 'Child (pl. Children)', pronunciation: 'ee-koh-koo / ee-dweh', hint: 'Neuter i- noun (Hobley 1902)' }
         ],
         sentences: [
           { target: 'Yoga! Ijai biai? Ejokuna.', source: 'Hello! How are you? Fine.' },
@@ -70,21 +77,21 @@ export const TESO_UNITS: CourseUnit[] = [
       },
       {
         id: 'teso-numbers-directions',
-        title: 'Quinary Numerals, Spatial Adverbs & Cardinal Directions',
+        title: 'Quinary Numerals, Nature & Cardinal Directions (Hobley 1902 & Johnston 1902)',
         icon: 'Compass',
-        description: 'Count in Masculine and Feminine genders and navigate using Ateso spatial adverbs.',
-        tips: "Ateso numbers 1–5 are idiope/adiope (1), iyarei/aarei (2), iuni/auni (3), ioŋon/aoŋon (4), and ikany/akany (5, from akan 'hand'). Six is ikany-kape (5+1) and ten is itomon/atomon.",
+        description: 'Count in Masculine and Feminine genders and navigate using Ateso spatial adverbs and nature terms.',
+        tips: "Ateso numbers 1–5 are idiope/adiope (1), iyarei/aarei (2), iuni/auni (3), ioŋon/aoŋon (4), and ikany/akany (5, from akan 'hand'). Six is ikany-kape (5+1) and ten is itomon/atomon (Hobley 1902, p. 69).",
         words: [
-          { target: 'idiope (m.) / adiope (f.)', source: 'One (1)', pronunciation: 'ee-dee-oh-peh / ah-dee-oh-peh', hint: 'Agrees with noun gender' },
+          { target: 'idiope (m.) / adiope (f.)', source: 'One (1)', pronunciation: 'ee-dee-oh-peh / ah-dee-oh-peh', hint: 'Agrees with noun gender (Hobley 1902 & Johnston 1902)' },
           { target: 'iyarei (m.) / aarei (f.)', source: 'Two (2)', pronunciation: 'ee-yah-reh-ee / ah-ah-reh-ee', hint: 'Cardinal 2' },
           { target: 'iuni (m.) / auni (f.)', source: 'Three (3)', pronunciation: 'ee-oo-nee / ah-oo-nee', hint: 'Cardinal 3' },
           { target: 'ioŋon (m.) / aoŋon (f.)', source: 'Four (4)', pronunciation: 'ee-oh-ngohn / ah-oh-ngohn', hint: 'Cardinal 4' },
           { target: 'ikany (m.) / akany (f.)', source: 'Five (5)', pronunciation: 'ee-kah-ny / ah-kah-ny', hint: 'Cardinal 5 (< akan hand)' },
-          { target: 'itomon (m.) / atomon (f.)', source: 'Ten (10)', pronunciation: 'ee-toh-mohn / ah-toh-mohn', hint: 'Cardinal 10' },
-          { target: 'kide / too', source: 'East / West', pronunciation: 'kee-deh / toh-oh', hint: 'Cardinal directions' },
-          { target: 'nyakoi / agolitomei', source: 'North / South', pronunciation: 'nyah-koh-ee / ah-goh-lee-toh-meh-ee', hint: 'Cardinal directions' },
-          { target: 'akipi / akile', source: 'Water / Milk', pronunciation: 'ah-kee-pee / ah-kee-leh', hint: 'Indigenous feminine liquids' },
-          { target: 'akinyam / akimat', source: 'To eat / To drink', pronunciation: 'ah-kee-nyahm / ah-kee-maht', hint: 'Core verbs' }
+          { target: 'ikany-kape, ikany-kaare, ikany-kauni, ikany-kaoŋon, itomon', source: '6 (5+1), 7 (5+2), 8 (5+3), 9 (5+4), 10', pronunciation: 'ee-kah-ny kah-peh ... ee-toh-mohn', hint: 'Hobley (1902, p. 69) quinary numerals 6–10' },
+          { target: 'kide / too / nyakoi / agolitomei', source: 'East / West / North / South', pronunciation: 'kee-deh / toh-oh / nyah-koh-ee / ah-goh-lee-toh-meh-ee', hint: 'Cardinal directions' },
+          { target: 'akipi / akile / akim / akolong', source: 'Water / Milk / Fire / Sun', pronunciation: 'ah-kee-pee / ah-kee-leh / ah-keem / ah-koh-lohng', hint: 'Hobley (1902) & Johnston (1902) core feminine nouns' },
+          { target: 'akiteng (pl. aatuk) / emong (pl. imongin)', source: 'Cow (pl. Cattle) / Bull, Ox (pl. Oxen)', pronunciation: 'ah-kee-tehng / ah-took / eh-mohng', hint: 'Hobley (1902) pastoral nouns' },
+          { target: 'akinyam / akimat / aanyun', source: 'To eat / To drink / To see', pronunciation: 'ah-kee-nyahm / ah-kee-maht / ah-nyoon', hint: 'Core verbs (Hobley 1902)' }
         ],
         sentences: [
           { target: 'Itelepai iuni ka apesur auni.', source: 'Three boys and three girls.' },

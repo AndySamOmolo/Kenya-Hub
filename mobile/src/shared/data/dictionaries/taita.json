@@ -1329,5 +1329,49 @@
         }
       ]
     }
-  ]
+,
+    {
+      "id": "wray-1894-taylor-1891-johnston-1919-taita",
+      "name": "Wray (1894), Taylor (1891) & Johnston (1919 #14) Historical Taita (Kisagala / Kidawida / Kisighau) Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The Three Taita Hills Dialect Varieties (Johnston 1919 #14)",
+          "translation": "Kidawida (Dabida), Kisagala (Sagalla), & Kisighau (Kasigau)",
+          "pronunciation": "ki-da-wi-da / ki-sa-ga-la / ki-si-ghau",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 82–85) & Rev. J. A. Wray (1894)",
+          "audioFile": null
+        },
+        {
+          "english": "7 Verbal Derivative Stems in Kisagala/Taita (Applied -ila/-ela, Causative -isa/-iza, Neuter -ika, Reciprocal -ana, Passive -wa, Reversive -ula)",
+          "translation": "ku-lim-a (cultivate) → ku-lim-ila (cultivate for) → ku-lim-isa (cause to cultivate) → ku-lim-ika → ku-lim-wa",
+          "pronunciation": "ku-li-ma -> ku-li-mi-la -> ku-li-mi-sa",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 47–52",
+          "audioFile": null
+        },
+        {
+          "english": "Ideophonic Adverbial Intensifiers (Wray 1894): Snow-white / Pitch-black / Blood-red / Brim-full",
+          "translation": "-erupe zwii! / -ilu tii! / -tunune choo! / ku-idzala ndoo!",
+          "pronunciation": "e-ru-pe zwii / i-lu tii / tu-nu-ne choo",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 62–63",
+          "audioFile": null
+        },
+        {
+          "english": "Chief / Elder of the Homestead / Ancestral Skull Shrine",
+          "translation": "mghosi (pl. waghosi) / mfumu (diviner-healer) / ngoma (ancestral spirits)",
+          "pronunciation": "mgho-si / mfu-mu / ngo-ma",
+          "context": "Rev. J. Alfred Wray (1894, pp. 77–128) & W. E. Taylor (1891, Proverb #665)",
+          "audioFile": null
+        },
+        {
+          "english": "Sugar-cane / Banana grove / Sweet potato / Maize / Millet",
+          "translation": "muwa (pl. miwa) / irugu (pl. marugu) / ikaji / mabemba / mwere",
+          "pronunciation": "mu-wa / i-ru-gu / i-ka-ji / ma-bem-ba / mwe-re",
+          "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 77–128",
+          "audioFile": null
+        }
+      ]
+    }
+  ],
+  "source": "Public Domain Historical Lexicons (Shaw 1885, Taylor 1891, Wray 1894 & Johnston 1919)"
 }

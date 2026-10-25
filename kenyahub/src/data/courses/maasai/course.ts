@@ -1,9 +1,11 @@
 // ============================================================
 // Maasai (ɔl Maa) Language Course Configuration & Units
 // Based on Public Domain & Open-Web Linguistic Sources:
-// 1. A. C. Hollis (1905) "The Masai: Their Language and Folklore" (Clarendon Press, Oxford — Public Domain)
-// 2. C. W. Hobley (1922) "Bantu Beliefs and Magic" (Glossary — Public Domain)
-// 3. Wikipedia Maasai_language, Eastern_Nilotic_languages (Vossen 1982) & Nilotic_languages
+// 1. Hildegarde Hinde (1901) "The Masai Language: Grammatical Notes Together with a Vocabulary" (Cambridge Univ. Press)
+// 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II"
+// 3. A. C. Hollis (1905) "The Masai: Their Language and Folklore" (Clarendon Press, Oxford — Public Domain)
+// 4. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Magic"
+// 5. Wikipedia Maasai_language, Eastern_Nilotic_languages (Vossen 1982) & Nilotic_languages
 // ============================================================
 
 import type { LanguageConfig, CourseUnit } from '../types';
@@ -16,38 +18,45 @@ export const MAASAI_CONFIG: LanguageConfig = {
   counties: ['Narok', 'Kajiado', 'Samburu', 'Laikipia'],
   speakers: '1.5M',
   speechLocale: 'sw-KE',
-  description: 'An Eastern Nilotic language spoken by the Maasai, Samburu, and Ilchamus pastoralist communities across the Great Rift Valley. Grounded in A. C. Hollis (1905) and C. W. Hobley (1922).',
+  description: 'An Eastern Nilotic language spoken by the Maasai, Samburu, and Ilchamus pastoralist communities across the Great Rift Valley. Grounded in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910, 1922).',
   color: '#DC2626',
-  sources: ['hollis-masai-1905', 'bantu-beliefs', 'open-web-swadesh-comparative'],
+  sources: [
+    'hinde-masai-1901',
+    'johnston-uganda-protectorate-1902',
+    'hollis-masai-1905',
+    'hobley-akamba-ethnology-1910',
+    'bantu-beliefs',
+    'open-web-swadesh-comparative',
+  ],
 };
 
 export const MAASAI_UNITS: CourseUnit[] = [
   {
     id: 'maasai-unit-1',
-    title: 'Unit 1: Gender Prefixes (Ol- / En-), People, Nature & Gendered Numerals',
-    description: 'Master Masculine (ol-) and Feminine (en-) nouns, pastoral vocabulary, and gendered counting 1–10 in ɔl Maa.',
+    title: 'Unit 1: Salutations (Sopai! / Takwenya!), Gender Prefixes (Ol- / En-), People & Gendered Numerals (Hinde 1901 & Hollis 1905)',
+    description: 'Master traditional Maa salutations, Masculine (ol-) and Feminine (en-) nouns, pastoral vocabulary, and gendered counting 1–10 in ɔl Maa.',
     icon: '🛡️',
     skills: [
       {
         id: 'maasai-nouns-society',
-        title: 'Masculine (Ol-) & Feminine (En-) Nouns in Pastoral Life',
+        title: 'Salutations & Masculine (Ol-) / Feminine (En-) Nouns in Pastoral Life',
         icon: 'Users',
-        description: 'Learn core nouns for society, wildlife, and landscape from Hollis (1905), Hobley (1922), and Vossen (1982).',
-        tips: "In ɔl Maa, masculine nouns carry the prefix 'ol- / ɔl-' (plural 'il-') and feminine nouns carry 'en- / ɛn-' (plural 'in-'): ol-murani → il-muran (warrior → warriors), ol-oiboni (ritual prophet), en-kai (God/sky/rain), enkare (water/river).",
+        description: 'Learn greetings and core nouns for society, wildlife, and landscape from Hinde (1901), Hollis (1905), and Hobley (1922).',
+        tips: "In ɔl Maa, masculine nouns carry the prefix 'ol- / ɔl-' (plural 'il-') and feminine nouns carry 'en- / ɛn-' (plural 'in-'): ol-murani → il-muran (warrior → warriors), ol-oiboni (ritual prophet), en-kai (God/sky/rain), enkare (water/river). Hinde (1901, p. 29) and Hollis (1905, p. 99) record 'Sopai! — Epa!' and 'Takwenya! — Iko!'.",
         words: [
+          { target: 'Sopai! (resp. Epa!) / Takwenya! (resp. Iko!)', source: 'Greetings to warriors/men! / Greetings to women/elders!', pronunciation: 'soh-pah-ee / eh-pah / tah-kweh-nyah / ee-koh', hint: 'Hinde (1901, p. 29) & Hollis (1905, p. 99) salutations' },
+          { target: 'Ashe (Ashe oleng) / Eserian', source: 'Thank you (very much) / Peace', pronunciation: 'ah-sheh oh-lehng / eh-seh-ree-ahn', hint: 'Gratitude & peace blessing' },
           { target: 'ɛn-kái (Eng-ai)', source: 'God / Sky / Rain', pronunciation: 'ehn-kah-ee', hint: 'Feminine noun prefix en- (Hollis 1905 & Hobley 1922)' },
           { target: 'ol-murani (pl. il-muran)', source: 'Warrior (pl. Warriors)', pronunciation: 'ohl-moo-rah-nee / eel-moo-rahn', hint: 'Hollis (1905) & Hobley (1922) p. 307' },
-          { target: 'ol-oiboni (pl. il-oibonok)', source: 'Ritual prophet / Seer', pronunciation: 'ohl-oh-ee-boh-nee', hint: 'Hobley (1922) p. 307' },
-          { target: 'ɔl-aláshɛ̀', source: 'Brother', pronunciation: 'ohl-ah-lah-sheh', hint: 'Masculine noun (Wikipedia Maasai language)' },
-          { target: 'enkitok', source: 'Respected woman / Lady', pronunciation: 'ehn-kee-tohk', hint: 'Feminine noun' },
-          { target: 'in-gishu (inkishu)', source: 'Cattle / Cows', pronunciation: 'een-gee-shoo', hint: 'Hollis (1905) Riddle #2' },
+          { target: 'ol-oiboni (pl. il-oibonok)', source: 'Ritual prophet / Seer', pronunciation: 'ohl-oh-ee-boh-nee', hint: 'Hollis (1905) & Hobley (1922) p. 307' },
+          { target: 'ol-tungani (pl. il-tungana) / en-gerai (pl. in-gera)', source: 'Person (pl. People) / Child (pl. Children)', pronunciation: 'ohl-toon-gah-nee / ehn-geh-rah-ee', hint: 'Hollis (1905, pp. 11–13) Class I nouns' },
+          { target: 'en-giteng (pl. in-gishu)', source: 'Cow (pl. Cattle)', pronunciation: 'ehn-gee-tehng / een-gee-shoo', hint: 'Hinde (1901) & Hollis (1905)' },
           { target: 'ol-ŋatúny / e-ŋatúny', source: 'Male lion / Lioness', pronunciation: 'ohl-ngah-toony / eh-ngah-toony', hint: 'Masculine ol- vs. Feminine e- prefix' },
-          { target: 'ɛŋ-kár-ɛ́ (enkare)', source: 'Water / River', pronunciation: 'ehn-kah-reh', hint: 'Vossen (1982) Eastern Nilotic' },
-          { target: 'kule', source: 'Milk', pronunciation: 'koo-leh', hint: 'Core pastoral staple' },
-          { target: 'eng-aji (enkaji)', source: 'House / Homestead hut', pronunciation: 'ehng-ah-jee', hint: 'Hollis (1905) Riddle #2' }
+          { target: 'ɛŋ-kár-ɛ́ (en-gare) / kule', source: 'Water, River / Milk', pronunciation: 'ehn-gah-reh / koo-leh', hint: 'Hinde (1901) & Hollis (1905) pastoral liquids' },
+          { target: 'eng-aji (pl. ing-ajijik) / eng-ang', source: 'House, Hut / Homestead kraal', pronunciation: 'ehng-ah-jee / ehng-ahng', hint: 'Hollis (1905, p. 15)' }
         ],
         sentences: [
-          { target: 'Il-muran o in-gishu.', source: 'The warriors and the cattle.' },
+          { target: 'Sopai! Epa! Kejaa in-gishu o in-gera?', source: 'Greetings! Reply! How are the cattle and the children?' },
           { target: 'Eng-ai o en-gap.', source: 'The sky and the bare ground (Hollis 1905 Riddle #5).' }
         ],
         authoredExercises: [
@@ -73,20 +82,21 @@ export const MAASAI_UNITS: CourseUnit[] = [
       },
       {
         id: 'maasai-numbers-proverbs',
-        title: 'Gendered Numerals 1–10 & Hollis (1905) Oral Wisdom',
+        title: 'Gendered Numerals 1–10 & Hollis (1905) Oral Wisdom (75 Proverbs & 24 Riddles)',
         icon: 'Scroll',
         description: 'Count from 1 to 10 across feminine and masculine genders and study classical 1905 proverbs.',
-        tips: "In Maa, numbers 1–4, 7, and 9 change prefix for feminine vs. masculine nouns: nabô/obô (1), aré/aàre (2), uní/okúni (3), oŋwán/oóŋwan (4), whereas 5 (ímíêt), 6 (ílɛ̂), 8 (ísíêt), and 10 (tɔ́mɔ̂n) are invariable.",
+        tips: "In Maa (Hollis 1905, pp. 32–36), numbers 1–4, 7, and 9 change prefix for feminine vs. masculine nouns: nabô/obô (1), aré/aàre (2), uní/okúni (3), oŋwán/oóŋwan (4), whereas 5 (ímíêt), 6 (ílɛ̂), 8 (ísíêt), and 10 (tɔ́mɔ̂n) are invariable.",
         words: [
-          { target: 'nabô (f.) / obô (m.) / nebô (place)', source: 'One (1)', pronunciation: 'nah-boh / oh-boh / neh-boh', hint: 'Three-way gender agreement' },
+          { target: 'nabô (f.) / obô (m.) / nebô (place)', source: 'One (1)', pronunciation: 'nah-boh / oh-boh / neh-boh', hint: 'Three-way gender agreement (Hollis 1905, p. 32)' },
           { target: 'aré (f.) / aàre (m.)', source: 'Two (2)', pronunciation: 'ah-reh / ah-ah-reh', hint: 'Feminine vs. masculine 2' },
           { target: 'uní (f.) / okúni (m.)', source: 'Three (3)', pronunciation: 'oo-nee / oh-koo-nee', hint: 'Feminine vs. masculine 3' },
           { target: 'oŋwán (f.) / oóŋwan (m.)', source: 'Four (4)', pronunciation: 'oh-ngwahn', hint: 'Feminine vs. masculine 4' },
           { target: 'ímíêt / ílɛ̂', source: 'Five (5) / Six (6)', pronunciation: 'ee-mee-eht / ee-leh', hint: 'Cardinals 5 & 6' },
           { target: 'naápishana (f.) / oópishana (m.)', source: 'Seven (7)', pronunciation: 'nah-ah-pee-shah-nah', hint: 'Gendered cardinal 7' },
-          { target: 'ísíêt / tɔ́mɔ̂n', source: 'Eight (8) / Ten (10)', pronunciation: 'ee-see-eht / toh-mohn', hint: 'Cardinals 8 & 10' },
+          { target: 'ísíêt / naáudo (oódó) / tɔ́mɔ̂n', source: 'Eight (8) / Nine (9) / Ten (10)', pronunciation: 'ee-see-eht / nah-oo-doh / toh-mohn', hint: 'Cardinals 8, 9, & 10' },
           { target: "Eata en-gewarie 'n-giyaa", source: 'The night has ears (Hollis 1905 Proverb #3)', pronunciation: 'eh-ah-tah ehn-geh-wah-ree-eh n-gee-yah', hint: 'Walls have ears' },
-          { target: "Ekwenikye 'n-guk in-guruon", source: 'Coals laugh at the ashes (Hollis 1905 Proverb #6)', pronunciation: 'eh-kweh-nee-kyeh n-gook een-goo-roo-ohn', hint: 'Warning against hubris' }
+          { target: "Ekwenikye 'n-guk in-guruon", source: 'Coals laugh at the ashes (Hollis 1905 Proverb #6)', pronunciation: 'eh-kweh-nee-kyeh n-gook een-goo-roo-ohn', hint: 'Warning against hubris' },
+          { target: 'Medany ol-kimojino obo el-lughunya', source: 'One finger does not kill a louse (Hollis 1905 Proverb #52)', pronunciation: 'meh-dahny ohl-kee-moh-jee-noh', hint: 'Unity is strength' }
         ],
         sentences: [
           { target: "Eata en-gewarie 'n-giyaa.", source: 'The night has ears (Hollis 1905).' },
@@ -101,7 +111,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
               'The night has ears (Hollis 1905 Proverb #3)',
               'Coals laugh at the ashes (Hollis 1905 Proverb #6)',
               'One (1)',
-              'Eight (8) / Ten (10)'
+              'Eight (8) / Nine (9) / Ten (10)'
             ],
             hint: 'en-gewarie = the night, in-giyaa = ears'
           }

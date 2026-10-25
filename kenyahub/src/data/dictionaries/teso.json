@@ -2043,6 +2043,49 @@
         }
       ]
     }
+,
+    {
+      "id": "hobley-1902-johnston-1902-elgumi-teso",
+      "name": "Hobley (1902) & Johnston (1902) Historical Elgumi / Wamia (Ateso) Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Historical 1902 Ethnonyms for Kenyan/Mount Elgon Ateso",
+          "translation": "Elgumi / Wamia (Iteso)",
+          "pronunciation": "el-gu-mi / wa-mi-a / i-te-so",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda', pp. 52–53 & Sir Harry Johnston (1902) 'The Uganda Protectorate', pp. 842–852",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Creator / God (Hobley 1902 & Johnston 1902)",
+          "translation": "Akuj (Lokasuban / Edeke)",
+          "pronunciation": "a-kuj / lo-ka-su-ban / e-de-ke",
+          "context": "C. W. Hobley (1902, p. 64) & Sir Harry Johnston (1902, p. 844)",
+          "audioFile": null
+        },
+        {
+          "english": "Personal Pronouns: I / Thou / He, She / We / You (pl.) / They",
+          "translation": "eong (ayong) / ijo (ion) / ngesi / isio (oni) / yesi / kesi",
+          "pronunciation": "e-ong / i-jo / nge-si / i-si-o / ye-si / ke-si",
+          "context": "C. W. Hobley (1902, p. 53) & Sir Harry Johnston (1902, p. 850) — Elgumi/Wamia",
+          "audioFile": null
+        },
+        {
+          "english": "Spear / Shield / Bow / Arrow / Knife",
+          "translation": "akwara (pl. ngakwaras) / aupwal (ebuku) / akalabai / emal / ekileng",
+          "pronunciation": "a-kwa-ra / a-u-pwal / e-ki-leng",
+          "context": "C. W. Hobley (1902, pp. 61–79) & Sir Harry Johnston (1902, pp. 842–849)",
+          "audioFile": null
+        },
+        {
+          "english": "Conversational Phrases (Hobley 1902 p. 53): Come here! / Go away! / Bring water! / What do you want?",
+          "translation": "Bia ne! / Kolot! / Koin akipi! / Icamit nyo?",
+          "pronunciation": "bi-a ne / ko-lot / ko-in a-ki-pi / i-ca-mit nyo",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', p. 53",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902)"
 }

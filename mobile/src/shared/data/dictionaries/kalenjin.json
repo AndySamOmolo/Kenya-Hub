@@ -2153,6 +2153,63 @@
         }
       ]
     }
+,
+    {
+      "id": "hollis-1909-dundas-1910-hobley-1902-kalenjin",
+      "name": "Hollis (1909 'The Nandi'), Dundas (1910), Hobley (1902, 1903, 1910) & Johnston (1902) Historical Kalenjin Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The 17 Nandi Clans (Oret) & Totems (Tiondo) Recorded by A. C. Hollis (1909 pp. 5–11)",
+          "translation": "Kipoiis (Jackal/Cockroach), Kipkenda (Bee/Frog), Toiyoi (Soldier Ant/Rain), Kipiegen (Baboon/House-snake), Talai (Lion), Kipasiso (Sun/Mole), Kapchemuri (Leopard), Kipaa (Colobus), Kipkazi (Hyena), Kipkokos (Buzzard), Kipsirgio (Bush-pig), Kipamwi (Duiker), Tungo (Hyena), Kipkoiitim (Elephant/Chameleon), Kiptopke (Cerval),체pkiror (Oribi), Moi (Crested Crane/Buffalo)",
+          "pronunciation": "kip-oi-is, kip-ken-da, toi-yoi, ta-lai, kip-a-si-so, moi",
+          "context": "A. C. Hollis & Sir Charles Eliot (1909) 'The Nandi: Their Language and Folk-Lore', pp. 5–11 & Hobley (1903, p. 358)",
+          "audioFile": null
+        },
+        {
+          "english": "The 7 Cyclic Nandi & Kalenjin Age-Sets (Ipinda) & Saket-ap-Eito Handing-Over Festival (Every ~7.5 Years)",
+          "translation": "Maina, Chumo, Sawe, Kipkoimet, Kaplelach, Kimnyige, Nyongi (Festival: Saket-ap-eito)",
+          "pronunciation": "i-pin-da / sa-ket-ap-ei-to",
+          "context": "A. C. Hollis (1909, p. 12) & Hon. K. R. Dundas (1910, p. 60)",
+          "audioFile": null
+        },
+        {
+          "english": "The 12 Traditional Nandi Ecological Months (Arawet, Hollis 1909 pp. 94–95)",
+          "translation": "Kiptamo (Feb), Iwat-kut (Mar), Wake (Apr), Ngei (May), Roptui (Jun), Puret (Jul), Epeso (Aug), Kipsunde (Sep), Kipsunde oieng (Oct), Mulkul (Nov), Mulkulik oieng (Dec), Ngotioto (Jan)",
+          "pronunciation": "kip-ta-mo, i-wat-kut, wa-ke, ngei, rop-tui, pu-ret, e-pe-so, kip-sun-de",
+          "context": "A. C. Hollis (1909, pp. 94–95) & Hon. K. R. Dundas (1910, p. 62 — Tugen/Kamasia & Marakwet Calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Sky/Sun Deity, Ancestral Spirits, Ritual Prophet & Village Council Judge",
+          "translation": "Asis (Cheptalel), Oiik (sg. Oindet), Orkoiyot (pl. Orkoiik), & Kiruogindet (pl. Kiruogik, council: Kokwet)",
+          "pronunciation": "a-sis / oi-ik / or-koi-yot / ki-ru-o-gin-det / ko-kwet",
+          "context": "A. C. Hollis (1909, pp. 40–52) — The Nandi: Their Language and Folk-Lore",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Proverbs (Atindonik-ap-Nandi, Hollis 1909 pp. 124–133): Proverb #1 — A cow does not die because another cow is fat",
+          "translation": "Ma-me tany ko-ner tany ake",
+          "pronunciation": "ma-me tany ko-ner tany a-ke",
+          "context": "A. C. Hollis (1909, p. 124, Proverb #1)",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Riddles (Tongōchik-ap-Nandi, Hollis 1909 pp. 133–151): Riddle #1 — I have a large house which has no post in the centre. — Answer: The sky and earth.",
+          "translation": "A-tinye kot-nyo ne-oo a-ma-tinye tolita. — Kipsengwet ak ngungunyet.",
+          "pronunciation": "a-ti-nye kot-nyo ne-oo — kip-sen-gwet ak ngun-gu-nyet",
+          "context": "A. C. Hollis (1909, p. 133, Riddle #1)",
+          "audioFile": null
+        },
+        {
+          "english": "Highland Nilotic Sub-Groups Documented in Johnston (1902), Hobley (1902, 1910) & Dundas (1910)",
+          "translation": "Nandi (Chebleng), Lumbwa / Sikisi (Kipsigis), Kamásia (Tūken / Tugen), Elgeyo (Keiyo), Marakweta & Endo (Ndo), Elgoiny' (Sabaot), Dorωbω (Ogiek)",
+          "pronunciation": "nan-di, kip-si-gis, tu-gen, kei-yo, ma-ra-kwet, sa-ba-ot, o-giek",
+          "context": "Sir Harry Johnston (1902, pp. 853–884), C. W. Hobley (1902; 1910, pp. 156–158), & Hon. K. R. Dundas (1910)",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, 1910, Johnston 1902, Hollis 1909 & Dundas 1910)"
 }

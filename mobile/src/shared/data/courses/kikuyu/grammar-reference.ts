@@ -1,8 +1,12 @@
 // ============================================================
 // Kikuyu (Gĩkũyũ) Grammar Reference Guide
 // Based 100% on Public Domain Sources:
-// 1. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages of East Africa" (Cambridge Univ. Press)
-// 2. C. W. Hobley (1922) "Bantu Beliefs and Magic" (H. F. & G. Witherby, London)
+// 1. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" & (1919) "Comparative Study of the Bantu Languages"
+// 2. Rev. Fr. A. Hémery, C.S.Sp. (1903) "English-Kikuyu Handbook: A Short Grammar, Vocabulary, and Phrase-Book"
+// 3. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages of East Africa" (Cambridge Univ. Press)
+// 4. Rev. A. W. McGregor (1904) "English-Kikuyu Vocabulary" (SPCK, London)
+// 5. W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikuyu of British East Africa" (London)
+// 6. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Magic"
 // ============================================================
 
 export interface KikuyuGrammarSection {
@@ -16,161 +20,139 @@ export interface KikuyuGrammarSection {
 export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
   {
     id: "kikuyu-phonology-orthography",
-    title: "Phonology, Interchangeable Consonants & Penultimate Stress (Hinde 1904)",
-    summary: "Hildegarde Hinde (1904) documents Kikuyu's vowel qualities, strong trilled /rr/, consonant alternations (B/V, G/K, R/L), and penultimate word stress.",
-    content: `In the Preface and Alphabet sections of *Vocabularies of the Kamba and Kikuyu Languages of East Africa* (1904, pp. v–x), Hildegarde Hinde records the foundational phonological traits of Gĩkũyũ:
-1. **Penultimate Stress & Trilled R**:
+    title: "Phonology, Orthography & Penultimate Stress (Hémery 1903, Hinde 1904 & McGregor 1904)",
+    summary: "Rev. Fr. A. Hémery (1903), Hildegarde Hinde (1904), and Rev. A. W. McGregor (1904) document Kikuyu's vowel qualities, interdental th, velar nasal ng' vs. prenasalized ng'g, consonant alternations (B/V, G/K, R/L), and Dahl's Law.",
+    content: `In *English-Kikuyu Handbook* (1903, pp. 5–7), *Vocabularies of the Kamba and Kikuyu Languages* (1904, pp. v–x), and *English-Kikuyu Vocabulary* (1904, p. iv), Hémery, Hinde, and McGregor record the foundational phonological traits of Gĩkũyũ:
+1. **Interdental *Th* & Velar Nasal *Ng'* vs. *Ng'g* (McGregor 1904, p. iv)**:
+   - Where coastal Swahili has *s* or *z*, Gĩkũyũ systematically uses the voiced/voiceless interdental fricative **th** (as in *thahu* 'ceremonial defilement', *thayũ* 'peace', *gũthiĩ* 'to go', *mũthenya* 'day').
+   - McGregor (1904) distinguishes pure velar nasal **ng'** (as in English *singing*, e.g., *ng'ombe* 'cow', *ng'ondu* 'sheep') from prenasalized velar plosive **ng** (as in English *finger*, e.g., *nguku* 'chicken', *ngoro* 'heart').
+2. **Consonant Alternations & Penultimate Stress (Hinde 1904)**:
    - Word stress almost invariably falls on the **penultimate (second-to-last) syllable**.
-   - In contrast to Kĩkamba (which drops *r*), Gĩkũyũ preserves a strongly trilled **r / rr** and frequent aspiration.
-2. **Consonant Alternations**:
-   - **B and V**, **G and K**, **Th and S/Z**, and **R and L** are phonetically interchangeable across regional varieties (such as Jogowini, southern Kenya Province, and Kiambu/Nairobi).
-   - Prenasalized initial consonants (**mb-, nd-, ng-, nj-**) are pronounced as single unitary nasal-onset sounds.
-3. **Infinitive PrefixAssimilation (Dahl's Law)**:
-   - While the standard infinitive prefix is **ku-** (becoming **kw-** before vowels *a, e, i*), it voices to **gu- / gw-** before stems beginning with a voiceless consonant (*k, t, th, c*): e.g., *gu-tinda* (to conquer/spend time), *gw-ĩciria* (to think).`,
+   - **B and V**, **G and K**, and **R and L** alternate across regional varieties (Jogowini/Nyeri vs. Metumi/Murang'a vs. Kabete/Kiambu).
+3. **Infinitive Prefix Assimilation — Dahl's Law (Hémery 1903 & McGregor 1904)**:
+   - The Class 15 infinitive prefix **ku- / kũ-** voices to **gu- / gũ-** whenever the verb root begins with a voiceless consonant (*k, t, th, c*): e.g., *gu-tinda* (to conquer/spend time), *gu-kor-a* (to find), *gu-thi-i* (to go), whereas voiced/vowel stems retain *ku-*: *ku-hora* (to beat/rest), *ku-rĩma* (to cultivate).`,
     examples: [
       { kikuyu: "mwohoro — mwohoro mwēga", english: "greeting (news) — good news / peace", explanation: "Standard Jogowini Kikuyu salutation recorded by Hinde (1904)" },
-      { kikuyu: "ku-tinda / gu-tinda", english: "to conquer / to remain", explanation: "Infinitive prefix ku-/gu- alternation" },
-      { kikuyu: "Mukikuyu (sg.) → Akikuyu (pl.)", english: "Kikuyu person → Kikuyu people", explanation: "Native endonym vs. Swahili Mkikuyu / Wakikuyu (Hinde 1904, p. vi)" }
+      { kikuyu: "ku-hora (to beat) vs. gu-tinda (to conquer) / gu-thiĩ (to go)", english: "to beat vs. to conquer / to go", explanation: "Dahl's Law voicing ku- -> gu- before voiceless root consonant (Hémery 1903 & Hinde 1904)" },
+      { kikuyu: "ng'ombe / ng'ondu vs. ngoro / nguku", english: "cow / sheep vs. heart / fowl", explanation: "Velar nasal ng' vs. prenasalized stop ng (McGregor 1904, p. iv)" }
     ]
   },
   {
     id: "kikuyu-six-noun-classes",
-    title: "The Six Noun Plural Classes & Concordial Agreement (Hinde 1904)",
-    summary: "Hinde (1904, pp. vi–vii) codifies the six primary noun pluralization rules of Gĩkũyũ and demonstrates prefixal concord across adjectives, possessives, and numerals.",
-    content: `As Hildegarde Hinde (1904, pp. vi–vii) explains, Gĩkũyũ lacks grammatical sex gender or definite/indefinite articles; instead, all grammatical inflection takes place at the **beginning of the word** according to six core noun-class patterns:
-1. **Class I — Animate *Mu-* → *A-***:
-   - Nouns denoting human beings beginning with *mu-* form their plural by changing *mu-* to *a-*:
-   - *muka* (woman/wife) → **aka** (women/wives)
-   - *mundu* (person/man) → **andu** (people)
-   - *mwanake* (warrior/youth) → **anake** (warriors)
-   - *mutumia* (elder) → **atumia** (elders)
-2. **Class II — Inanimate *Mu-* → *Mi-***:
-   - Non-human nouns beginning with *mu-* change *mu-* to *mi-* in the plural:
-   - *muti* (tree) → **miti** (trees)
-   - *mwaki* (fire) → **miaki** (fires)
-   - *mugunda* (cultivated farm) → **migunda** (farms)
-3. **Class III — *I-* / *Ri-* → *Ma-***:
-   - Nouns beginning with *i-* (or *ri-*) form their plural in *ma-*:
-   - *ihiga* (stone) → **mahiga** (stones)
-   - *itumbi* (egg) → **matumbi** (eggs)
-   - *ithangu* (leaf) → **mathangu** (leaves)
-   - *riitho* (eye) → **maitho** (eyes)
-4. **Class IV — *Ki-* / *Gi-* → *I-* / *Ci- (Shi-)***:
-   - Artifacts, tools, and body parts beginning with *ki-* change *ki-* to *i-* or *shi-* (*ci-*):
-   - *kiratu* (sandal/shoe) → **iratu** (sandals)
-   - *kiara* (finger) → **shiara / ciara** (fingers)
-   - *kirima* (mountain/hill) → **irima** (mountains)
-5. **Class V — Invariable *N-* Class**:
-   - Nouns beginning with *n-* (*ny-, nd-, ng-, mb-, nj-*) remain identical in singular and plural, distinguished by concord on modifiers:
-   - *nyumba* (house) → **nyumba** (houses)
-   - *ngombe* (cow) → **ngombe** (cattle)
-   - *mbura* (rain), *njira* (road/path).
-6. **Class VI — Diminutive *Ka-* → *Twa-* / *Shiana***:
-   - Diminutive and child nouns beginning with *ka-* form their plural in *twa-* (*tũ-*):
-   - *kana* (child) → **twana** or **shiana / ciana** (children).`,
+    title: "The Nine Noun Classes, Diminutives (Ka-/To-) & Augmentatives (Ke-) (Hémery 1903, Hinde 1904 & Johnston 1919)",
+    summary: "Hémery (1903, pp. 7–14), Hinde (1904, pp. vi–vii), McGregor (1904), and Johnston (1919 #11) codify the noun classes of Gĩkũyũ and their prefixal concord across adjectives, possessives, and numerals.",
+    content: `Rev. Fr. A. Hémery (1903, pp. 7–14) and Hildegarde Hinde (1904, pp. vi–vii) classify Gĩkũyũ nouns into nine prefixal classes:
+1. **Class I — Animate *Mu-* → *A-* (Classes 1/2)**:
+   - *mundu* (person) → **andu** (people); *muka* (woman/wife) → **aka** (women); *mwanake* (warrior) → **anake** (warriors); *mutumia* (elder) → **atumia** (elders); *muiritu* (maiden) → **airitu** (maidens).
+2. **Class II — Inanimate *Mu-* → *Mi-* (Classes 3/4)**:
+   - *muti* (tree) → **miti** (trees); *mwaki* (fire) → **miaki** (fires); *mugunda* (cultivated farm) → **migunda** (farms); *mucii* (homestead) → **micii** (homesteads); *mweri* (moon/month) → **mieri** (months).
+3. **Class III — *I-* / *Ri-* → *Ma-* (Classes 5/6)**:
+   - *ihiga* (stone) → **mahiga** (stones); *itumbi* (egg) → **matumbi** (eggs); *ithangu* (leaf) → **mathangu** (leaves); *riitho* (eye) → **maitho** (eyes); *igego* (tooth) → **magego** (teeth).
+4. **Class IV — *Ki-* / *Gi-* → *I-* / *Ci- (Shi-)* (Classes 7/8 — Tools, Artifacts & Augmentatives)**:
+   - *kindu* (thing) → **indu** (things); *giti* (stool/chair) → **iti** (chairs); *kiratu* (sandal) → **iratu** (sandals); *kiara* (finger) → **ciara / shiara** (fingers); *kirima* (mountain) → **irima** (mountains).
+   - Hémery (1903, p. 11) notes that prefixing **ke- / kĩ-** also forms **augmentatives** (large objects).
+5. **Class V — Invariable *N-* (*Ny-, Nd-, Ng-, Mb-, Nj-*) Class (Classes 9/10)**:
+   - *nyumba* (house/houses), *ng'ombe* (cow/cattle), *mburi* (goat/goats), *mbura* (rain), *njira* (road/path).
+6. **Class VI — *Ru-* → *N-* (Classes 11/10)**:
+   - *rurimi* (tongue) → **ndimi** (tongues); *ruhiu* (sword/knife) → **hiu / njora** (swords); *ruui* (river) → **njui** (rivers); *rukuni* (firewood) → **nguni** (firewood).
+7. **Class VII — Diminutive *Ka-* → *To- (Tũ- / Twa-)* (Classes 12/13)**:
+   - Hémery (1903, p. 11): *kana* (little child) → **twana / toana**; *kaguku* (little chicken) → **toguku**; *kamuti* (little tree) → **tomiti**; *kahee* (little boy) → **tohee**.
+8. **Class VIII & IX — Abstract/Collective *U- (Ũ-)* → *Ma-* (Class 14) & Verbal/Locative *Ku- (Kũ-)* (Classes 15–17)**:
+   - *uta* (bow) → **mata** (bows); *uhoro* (news/affair) → **mohoro**; *utuku* (night); *kundu* (place) → **makundu**.`,
     examples: [
-      { kikuyu: "mundu nimuwega → andu anega", english: "a good person → good people", explanation: "Class I animate singular mu- vs. plural a- concord (Hinde 1904, p. 66)" },
-      { kikuyu: "mti unwega → miti moni mijega", english: "a good tree → good trees", explanation: "Class II inanimate mu-/mi- concord (Hinde 1904, p. 66)" },
-      { kikuyu: "kana kani kiega → twana tuni twega", english: "a good child → good children", explanation: "Class VI diminutive ka-/twa- concord (Hinde 1904, p. 66)" },
-      { kikuyu: "ruhiu rwega → huishiu enjega", english: "a good knife/sword → good knives", explanation: "Singular ru- vs. plural n-/nj- concord (Hinde 1904, p. 66)" }
+      { kikuyu: "mundu mwega → andu ega | muti mwega → miti miega", english: "a good person → good people | a good tree → good trees", explanation: "Classes 1/2 (mu-/a-) and 3/4 (mu-/mi-) adjectival concord (Hémery 1903, p. 15)" },
+      { kikuyu: "kana kega → twana twega | kaguku → toguku", english: "a good child → good children | little chicken → little chickens", explanation: "Diminutive Class 12/13 ka-/to- (tw-) in Hémery (1903, p. 11)" },
+      { kikuyu: "ruhiu rwega → hiu njega | rurimi → ndimi", english: "a good knife/sword → good knives | tongue → tongues", explanation: "Class 11/10 ru-/n- alternation (Hémery 1903 & Hinde 1904)" }
     ]
   },
   {
     id: "kikuyu-affirmative-verb-tenses",
-    title: "Affirmative Verb Conjugation: Present, Imperfect, Perfect, Past & Future (Hinde 1904)",
-    summary: "Complete affirmative conjugation paradigms of gu-tinda ('to conquer/prevail') across five indicative tenses, imperative, and subjunctive from Hinde (1904, pp. xi–xv).",
-    content: `Hildegarde Hinde (1904, pp. xi–xv) sets out the full affirmative conjugation of the regular verb **ku-tinda / gu-tinda** ("to conquer"):
-1. **Present Tense (Prefix *-a-*)**:
-   - 1s **n-a-tinda** (I conquer), 2s **w-a-tinda** (thou conquerest), 3s **a-tinda** (he/she conquers), 1p **tw-a-tinda** (we conquer), 2p **mw-a-tinda** (you conquer), 3p **m-a-tinda** (they conquer).
-2. **Present Imperfect / Progressive (Prefix *-ki-*)**:
-   - 1s **ni-ki-tinda** (I am conquering), 2s **wa-ki-tinda / u-ki-tinda**, 3s **a-ki-tinda**, 1p **tu-ki-tinda**, 2p **mu-ki-tinda**, 3p **me-ki-tinda / ma-ki-tinda**.
-3. **Present Perfect (Suffix *-eti* / *-iti*)**:
-   - Formed by changing final *-a* to **-eti** or **-iti**:
-   - 1s **ni-tind-eti / ni-tind-iti** (I have conquered), 2s **u-tind-iti**, 3s **a-tind-iti**, 1p **tu-tind-iti**, 2p **mu-tind-iti**, 3p **ma-tind-iti**.
-4. **Past Perfect (Suffix *-eri* / *-ire*)**:
-   - Formed in Kikuyu by changing final *-a* to **-eri** (*-ire*):
-   - 1s **ni-tind-eri** (I conquered), 2s **u-tind-eri**, 3s **a-tind-eri**, 1p **tu-tind-eri**, 2p **mu-tind-eri**, 3p **ma-tind-eri**.
-5. **Future Tense (Prefix *-ka-* / *-ga-*)**:
-   - 1s **nin-ka-tinda / ni-ga-tinda** (I shall conquer), 2s **u-ka-tinda**, 3s **a-ka-tinda**, 1p **tu-ka-tinda**, 2p **mu-ka-tinda**, 3p **ma-ka-tinda**.
-   - Colloquial conversational future: *ningathi* (I will go), *ningashōka* (I will return).
-6. **Imperative & Subjunctive**:
-   - **Imperative**: Singular **tinda!** (conquer thou!); Plural **tindani! / tindai!** (conquer ye!).
-   - **Subjunctive (final *-a* → *-e*)**: **ni-tinde** (that I may conquer), **u-tinde**, **a-tinde**, **tu-tinde**, **mu-tinde**, **ma-tinde**.`,
+    title: "Affirmative Verb Conjugation & Five Derivative Verb Stems (Hémery 1903 & Hinde 1904)",
+    summary: "Complete affirmative conjugation paradigms of kohora ('to beat', Hémery 1903) and gu-tinda ('to conquer', Hinde 1904) plus Hémery's 5 verbal derivative forms (-era, -ia, -ika, -ana, -wo).",
+    content: `Rev. Fr. A. Hémery (1903, pp. 24–36) and Hildegarde Hinde (1904, pp. xi–xv) set out the full affirmative conjugation of **kohora** ("to beat") and **ku-tinda / gu-tinda** ("to conquer"):
+1. **Present Tense (Prefix *-a-* / *ndi-*)**:
+   - Hémery (1903, p. 25): *ndihora* (I beat), *ohora* (thou beatest), *ahora* (he beats), *tuhora* (we beat), *muhora* (you beat), *mahora* (they beat).
+   - Hinde (1904): 1s **n-a-tinda**, 2s **w-a-tinda**, 3s **a-tinda**, 1p **tw-a-tinda**, 2p **mw-a-tinda**, 3p **m-a-tinda**.
+2. **Present Imperfect / Progressive (Prefix *-ki-* / *-re-*):**:
+   - 1s **ni-ki-tinda** (I am conquering), 2s **u-ki-tinda**, 3s **a-ki-tinda**, 1p **tu-ki-tinda**, 2p **mu-ki-tinda**, 3p **ma-ki-tinda**.
+3. **Present Perfect (Suffix *-ite* / *-eti* / *-iti*)**:
+   - Hémery (1903): *ndihorite* (I have beaten), *ohorite*, *ahorite*, *tuhorite*, *muhorite*, *mahorite*.
+   - Hinde (1904): **ni-tind-iti** (I have conquered).
+4. **Past Perfect (Suffix *-ire* / *-eri*, with *ra-* or *a-*)**:
+   - Hémery (1903): *ndahorire / ndirahorire* (I beat [past]), *wahorire*, *ahorire*, *twahorire*, *mwahorire*, *mahorire*.
+5. **Future Tense (Infix *-ka-* / *-ga-* or *-rii-*)**:
+   - Hémery (1903): *ngahora / ndiriihora* (I shall beat), *okahora*, *akahora*, *tukahora*, *mukahora*, *makahora*.
+   - Hinde (1904): **nin-ka-tinda / ni-ga-tinda** (I shall conquer).
+6. **Five Derivative Verb Stems (Hémery 1903, pp. 34–36)**:
+   - **(1) Prepositional / Applied (*-era / -ira*)**: *kohorera* (to beat for/with), *kurehera* (to bring to).
+   - **(2) Causative (*-ia / -ithia*)**: *kohoria / kohorithia* (to cause to beat; *kũhoria thahu* 'to cool/purify ritual defilement', Routledge 1910).
+   - **(3) Passive (*-wo / -o*)**: *kohorwo* (to be beaten), *kuonwo* (to be seen).
+   - **(4) Neuter / Stative (*-eka / -ika*)**: *kohoreka* (to be beatable), *kuoneka* (to be visible).
+   - **(5) Reciprocal (*-ana*)**: *kohorana* (to beat each other), *kwendana* (to love each other).`,
     examples: [
-      { kikuyu: "n-a-tinda / ni-ki-tinda / ni-tind-iti", english: "I conquer / I am conquering / I have conquered", explanation: "Present (-a-), Progressive (-ki-), and Perfect (-iti) contrast (Hinde 1904)" },
-      { kikuyu: "ni-tind-eri vs. nin-ka-tinda", english: "I conquered vs. I shall conquer", explanation: "Past suffix -eri vs. Future prefix -ka-/-ga-" },
-      { kikuyu: "ningathi / ningashōka", english: "I will go / I will return", explanation: "Everyday future phrases (Hinde 1904, p. 64)" }
+      { kikuyu: "ndihora / ndihorite / ndahorire / ngahora", english: "I beat / I have beaten / I beat (past) / I shall beat", explanation: "Hémery (1903, pp. 25–27) paradigm of kohora" },
+      { kikuyu: "kohora → kohorera → kohorithia → kohorwo → kohorana", english: "to beat → beat for → cause to beat → be beaten → beat one another", explanation: "Hémery (1903, pp. 34–36) 5 derivative verb stems" },
+      { kikuyu: "n-a-tinda / ni-ki-tinda / ni-tind-iti / nin-ka-tinda", english: "I conquer / I am conquering / I have conquered / I shall conquer", explanation: "Hinde (1904, pp. xi–xiii) paradigm of ku-tinda" }
     ]
   },
   {
     id: "kikuyu-negative-conjugation-locatives",
-    title: "Negative Verb Paradigms (-di- / -ndi-) & Locative Suffix (-ini / -eni) (Hinde 1904)",
-    summary: "Kikuyu forms negative tenses with the prefix -di-/-ndi- (and negative copula ti-) and marks interior/spatial location with the suffix -ini / -eni.",
-    content: `Hinde (1904, pp. xv–xviii, 64–67) details how negation and spatial location operate in Gĩkũyũ:
-1. **Negative Present (Prefix *-di-* / *-ndi-*)**:
-   - 1s **n-di-tinda** (I do not conquer), 2s **u-di-tinda / u-ndi-tinda**, 3s **a-di-tinda**, 1p **tu-di-tinda**, 2p **mu-di-tinda**, 3p **ma-di-tinda**.
-   - Common conversational negatives: **ndiui / ndikumenya** (I do not know), **ndikwenda** (I do not want), **ndionna** (I do not see), **ndingihotta kuthi** (I cannot go).
-2. **Negative Past Perfect (Prefix *-di-na-*)**:
-   - 1s **n-di-na-tinda** (I did not conquer), 2s **u-di-na-tinda**, 3s **a-di-na-tinda**, 1p **tu-di-na-tinda**, 2p **mu-di-na-tinda**, 3p **ma-di-na-tinda**.
-3. **Negative Future (Prefix *-di-ka-* / *-di-ga-*)**:
-   - 1s **n-di-ka-tinda** (I shall not conquer), **ndikathie** (I will not go).
-4. **Negative Imperative & Subjunctive**:
-   - Negative Imperative: **di-tinda! / ndi-tinda!** (do not conquer!), **udikuka!** (do not come!).
-   - Negative Subjunctive: **n-di-tinde** (that I may not conquer).
-5. **Negative Copula (*ti-*)**:
-   - **tiwe** (not you), **tinye** (not he), **tiithui** (not we).
-6. **Locative Suffix (*-ini* / *-eni*)**:
-   - Added to the end of a noun to express "in, at, on, inside":
-   - *mutwe* (head) → **mtueni** (in the head)
-   - *nda* (stomach) → **ndaeni** (in the stomach)
-   - *miti* (trees) → **mitini** (in the trees)
-   - *nyumba* (house) → **nyumbani** (in the house).`,
+    title: "Negative Verb Paradigms (-ti- / -di- / -ndi-) & Locative Suffix (-ini / -eni) (Hémery 1903 & Hinde 1904)",
+    summary: "Kikuyu forms negative tenses with the prefix -ti- (-di-/-ndi- in 1s) and negative copula ti-, and marks interior/spatial location with the suffix -ini / -eni.",
+    content: `Hémery (1903, pp. 29–33) and Hinde (1904, pp. xv–xviii, 64–67) detail how negation and spatial location operate in Gĩkũyũ:
+1. **Negative Present (1s *ndi-*, 2s *ndu-* / *u-ti-*, 3s *nda-* / *a-ti-*, pl. *tu-ti-, mu-ti-, ma-ti-*)**:
+   - Hémery (1903, p. 29): *ndihora* (I do not beat), *nduhora*, *ndahora*, *tutihora*, *mutihora*, *matihora*.
+   - Common conversational negatives: **ndiui / ndikumenya** (I do not know), **ndikwenda** (I do not want), **ndingihota kuthi** (I cannot go).
+2. **Negative Past (Infix *-na-*)**:
+   - Hémery (1903, p. 30) & Hinde (1904, p. xvi): **ndi-na-hora / n-di-na-tinda** (I did not beat / conquer), **u-ti-na-hora**, **a-ti-na-hora**, **tu-ti-na-hora**, **mu-ti-na-hora**, **ma-ti-na-hora**.
+3. **Negative Future (Infix *-ka-* / *-ga-*)**:
+   - **n-di-ka-tinda / ndikahora** (I shall not conquer / beat), **ndikathie** (I will not go).
+4. **Negative Subjunctive / Imperative (*-ti-ka-...-e*)**:
+   - Hémery (1903, p. 31): *utikahore!* (do not beat! sg.), *mutikahore!* (do not beat! pl.).
+5. **Locative Suffix (*-ini* / *-eni*)**:
+   - Added to the end of a noun to express "in, at, on, near": *mutwe* (head) → **mutweni** (on the head), *miti* (trees) → **mitini** (in the trees), *nyumba* (house) → **nyumbani / nyumba-ini** (in the house), *ruui* (river) → **ruuini** (at the river).`,
     examples: [
-      { kikuyu: "ndiui / ndikumenya", english: "I do not know", explanation: "Negative 1st person singular (Hinde 1904, p. 64)" },
-      { kikuyu: "ndingihotta kuthi", english: "I cannot go", explanation: "Negative potential construction (Hinde 1904, p. 64)" },
-      { kikuyu: "mtueni / ndaeni / mitini / nyumbani", english: "in the head / in the stomach / in the trees / in the house", explanation: "Locative suffix -ini/-eni (Hinde 1904, p. 67)" }
+      { kikuyu: "ndina-hora / tutina-hora | ndika-hora / tutika-hora", english: "I/we did not beat | I/we shall not beat", explanation: "Negative past (-na-) and negative future (-ka-) in Hémery (1903, p. 30)" },
+      { kikuyu: "ndiui / ndikumenya • ndingihota kuthi", english: "I do not know • I cannot go", explanation: "Everyday negative expressions (Hinde 1904, p. 64)" },
+      { kikuyu: "mutweni / mitini / nyumbani / ruuini", english: "in the head / in the trees / in the house / at the river", explanation: "Locative suffix -ini/-eni (Hémery 1903 & Hinde 1904)" }
     ]
   },
   {
     id: "kikuyu-numerals-possessives",
-    title: "Decimal Numerals, Adverbial Multipliers (Ka-) & Possessive Concords (Hinde 1904)",
-    summary: "Gĩkũyũ counts in tens (ikumi, mirongo iri, igana), prefixes ka-/kĩ- for 'times' (kirrimue, kēēri, kathatu), and inflects possessives to match the possessed noun.",
-    content: `From Hildegarde Hinde's Numeral and Phrase tables (1904, pp. 62–66):
-1. **Cardinal Numbers (1–100)**:
-   - **1–10**: *imue / ĩmwe* (1), *igiri / igĩrĩ* (2), *ithatu / ithatũ* (3), *inya* (4), *ithanu / ithano* (5), *thanthatu* (6), *muguanja* (7), *inyanya* (8), *ikenda* (9), *ikumi* (10).
-   - **11–90**: *ikumi na imwe* (11), *mirongoiri* (20), *mirongoiri na imue* (21), *mirongo itatu* (30), *mirongo inya* (40), *mirongo ithanu* (50), *mirongo ithanthatu* (60), *mirongo nguanja* (70), *mirongo inyanya* (80), *mirongo kenda* (90).
-   - **100**: *igana* (100).
-2. **Ordinals, Multipliers & Fractions**:
-   - **First / Last**: *kuambirrira / ikinya* (first), *kurrigillia* (last).
-   - **Adverbial Multipliers**: *kirrimue* (once), *kēēri* (twice), *kathatu* (thrice), *kanna* (four times), *kathanthatu* (five/six times).
-   - **Half**: *kishuinji / kechuje / etigia*.
-3. **Possessive Concords**:
-   - Possessive stems (*-akwa / -akua* 'my', *-aku* 'your', *-ake* 'his/her', *-iitu* 'our') take the prefix of the possessed noun:
-   - *mwana wakua* (my child), *siana siaku* (your children), *ngombe siake* (his cows), *uwoko wake* (his hand), *mwitzi wiitu* (our village), *baba wiitu* (our father), *nyina wiitu* (our mother).`,
+    title: "Decimal Numerals, Qualifying Adjectives, Multipliers (Ka-) & Possessive Concords (Hémery 1903 & Hinde 1904)",
+    summary: "Gĩkũyũ counts in tens (ikumi, mirongo iri, igana, ngiri), prefixes ka-/kĩ- for 'times' (kamwe/kirrimue, keeri, kathatu), and inflects adjectives and possessives to match the noun class.",
+    content: `From Rev. Fr. A. Hémery (1903, pp. 14–23) and Hildegarde Hinde (1904, pp. 62–66):
+1. **Cardinal Numbers (1–1,000)**:
+   - **1–10**: *imue / ĩmwe* (1), *igiri / igĩrĩ* (2), *ithatu / ithatũ* (3), *inya* (4), *ithanu / ithano* (5), *thanthatu / ithathatũ* (6), *muguanja / mũgwanja* (7), *inyanya* (8), *ikenda / kenda* (9), *ikumi* (10).
+   - **11–1,000**: *ikumi na imwe* (11), *mirongo iri* (20), *mirongo itatu* (30), *mirongo inya* (40), *mirongo ithanu* (50), *igana* (100, pl. *magana*), *ngiri* (1,000).
+   - Note (Hémery 1903, p. 17): Numbers 1–5 and 8 agree in prefix with the noun counted (*mundu umwe* '1 person', *andu eri* '2 people', *miti itatu* '3 trees', *indu inya* '4 things', *nyumba ithano* '5 houses'), whereas *mugwanja* (7), *kenda* (9), and *ikumi* (10) are invariable.
+2. **Adverbial Multipliers (*Ka-*)**:
+   - *kamwe / kirrimue* (once), *kēēri* (twice), *kathatu* (thrice), *kanna* (four times), *kathano* (five times).
+3. **Possessive Concords (*-akwa, -aku, -ake, -itu, -anyu, -ao*)**:
+   - *mwana wakwa* (my child), *ciana ciaku* (your children), *ng'ombe ciake* (his cows), *guoko gwake* (his arm), *mucii witu* (our homestead), *baba witu* (our father), *nyina witu / mwaitu* (our mother).`,
     examples: [
-      { kikuyu: "imue, igiri, ithatu, inya, ithanu, thanthatu, muguanja, inyanya, ikenda, ikumi", english: "1, 2, 3, 4, 5, 6, 7, 8, 9, 10", explanation: "Cardinal numerals 1–10 (Hinde 1904, p. 62)" },
-      { kikuyu: "kirrimue, kēēri, kathatu, kanna", english: "once, twice, thrice, four times", explanation: "Adverbial frequency prefixes (Hinde 1904, p. 63)" },
-      { kikuyu: "mwana wakua / siana siaku / mwitzi wiitu", english: "my child / your children / our village", explanation: "Noun-class concord on possessives (Hinde 1904, p. 65)" }
+      { kikuyu: "mundu umwe, andu eri, miti itatu, indu inya, nyumba ithano", english: "one person, two people, three trees, four things, five houses", explanation: "Noun-class prefix agreement on numerals 1–5 (Hémery 1903, p. 17)" },
+      { kikuyu: "kamwe (kirrimue), kēēri, kathatu, kanna, kathano", english: "once, twice, thrice, four times, five times", explanation: "Adverbial frequency prefix ka- (Hémery 1903, p. 18 & Hinde 1904, p. 63)" },
+      { kikuyu: "mwana wakwa / ciana ciaku / mucii witu", english: "my child / your children / our homestead", explanation: "Possessive concord across classes (Hémery 1903, p. 20 & Hinde 1904, p. 65)" }
     ]
   },
   {
     id: "kikuyu-cultural-lexicon-hobley",
-    title: "Classical Agĩkũyũ Social, Judicial & Ritual Terminology (Hobley 1922)",
-    summary: "C. W. Hobley's 1922 monograph and glossary preserve key terminology of the Agĩkũyũ council system (Kiama), age-sets (Riika, Itwika), lineage (Muhiriga, Mbari), and sacred ecology (Mugumo).",
-    content: `In *Bantu Beliefs and Magic* (1922, Glossary pp. 305–308), C. W. Hobley documents the institutional vocabulary of pre-colonial Agĩkũyũ society:
-1. **Kinship, Clan & Homestead Architecture**:
-   - **Muhiriga**: Primary clan; **Mbari**: Sub-clan or ridge patrilineage; **Ahoi** (sing. *Muhoi*): Tenants-at-will cultivating land on another lineage's ridge.
-   - **Thingira**: The husband's reception hut; **Nyumba**: The wife's dwelling house and matrilineal hearth; **Mwaitu**: Respectful address meaning "our mother".
-2. **Life Stages, Age-Sets & The *Itwika* Cycle**:
-   - **Kihe** (pl. *Ihe*): Uninitiated boy; **Muiritu** (pl. *Airitu*): Initiated maiden; **Mwanake** (pl. *Anake*): Warrior grade; **Mutumia** (pl. *Atumia*): Senior elder of the council.
-   - **Rika (Riika)**: Circumcision age-set cohort; **Itwika**: The grand generational handing-over ceremony held every 30–35 years between the alternating **Maina** and **Mwangi** ruling generations.
-3. **Governance, Law & Sacred Ecology**:
-   - **Kiama**: Council of elders; **Chira**: Legal deliberation or case; **Muma**: Solemn peace or judicial oath; **Githathi** (pl. *Ithathi*): Sacred perforated oath-stone.
-   - **Ngai**: The Supreme Creator; **Mugumo**: Sacred wild fig tree (*Ficus natalensis*) under which community sacrifices are offered; **Ngoma**: Ancestral spirits; **Mundu Mugo**: Traditional healer and diviner; **Murathi**: Seer/prophet; **Utheru**: Moral and ceremonial purity.`,
+    title: "Classical Agĩkũyũ Social, Judicial, Clan & Ritual Terminology (Routledge 1910 & Hobley 1910, 1922)",
+    summary: "W. S. & K. Routledge (1910) and C. W. Hobley (1910, 1922) preserve the complete terminology of the 13 Agĩkũyũ clans (Mĩhĩrĩga), 10 generation ages (Rĩĩka), council system (Kiama), sacred ecology (Mũgumo), and oral literature (Ngano & Guso).",
+    content: `In *With a Prehistoric People: The Akikuyu of British East Africa* (1910) and *Bantu Beliefs and Magic* (1922, Glossary pp. 305–308), W. S. & K. Routledge and C. W. Hobley document the institutional vocabulary of Agĩkũyũ society:
+1. **The 13 Clans (*Mĩhĩrĩga* / *Irika*, Routledge 1910, p. 20)**:
+   - **Anjiru**, **Agachiku**, **Achera**, **Ambui**, **Angari (Aithekahuno)**, **Akiuru (Ethaga)**, **Agathigia (Aicakamuyu)**, **Abaura (Angechi)**, **Aregi**, **Athinuri**, **Agetunu**, **Amboi**, and **ini / Aca**.
+2. **Generation Ages (*Rĩĩka*) & The *Itwika* Cycle (Routledge 1910, pp. 8–11 & Hobley 1922)**:
+   - Routledge (1910, p. 9) records the sequence of ruling generations: **Tene → Agu → Manduti → Chuma → Ciira → Mathathi → Ndemi → Iregi → Maina → Mwangi**, culminating in the **Itwika** generational transfer ceremony.
+   - Life stages: **Kĩhĩĩ** (uninitiated boy) / **Kĩrĩgũ** (uninitiated girl) → **Mũirĩtu** (initiated maiden) / **Mwanake** (warrior) → **Mũtumia wa Kiama** (council elder) & **Nyakinyua** (senior matron).
+3. **Governance, Law, Craft & Sacred Ecology**:
+   - **Kiama**: Council of elders; **Njama**: Warrior/executive council; **Chira**: Legal deliberation or court case (settled with goat-counts using sticks *mĩtĩ*); **Muma**: Solemn peace or judicial oath; **Gĩthathi / Kĩthathi**: Sacred 7-holed oath-stone.
+   - **Ngai**: The Supreme Creator dwelling on **Kĩrĩnyaga** (Mount Kenya); **Mũgumo**: Sacred wild fig tree; **Ngoma**: Ancestral spirits; **Mũndũ Mũgo**: Traditional healer and diviner; **Thahu**: Ritual defilement purified by *kũhoria thahu* ("cooling the thahu"); **Gĩcandĩ (Kishandi)**: Enigmatic poetic gourd rattle (Routledge 1910, pp. 109–112).`,
     examples: [
-      { kikuyu: "Kiama / Chira / Muma / Githathi", english: "Council of elders / legal case / solemn oath / sacred oath-stone", explanation: "Classical Agĩkũyũ judicial terminology (Hobley 1922, pp. 305–306)" },
-      { kikuyu: "Riika • Maina & Mwangi • Itwika", english: "Age-set • Alternating ruling generations • Generational transfer ceremony", explanation: "Generational governance lexicon (Hobley 1922, pp. 306–307)" },
-      { kikuyu: "Muhiriga & Mbari • Thingira & Nyumba", english: "Clan & ridge lineage • Man's hut & wife's house", explanation: "Social and homestead organization (Hobley 1922, pp. 306–308)" }
+      { kikuyu: "Kiama • Chira • Muma • Gĩthathi (Kĩthathi)", english: "Council of elders • Legal case • Solemn oath • Sacred 7-holed oath-stone", explanation: "Classical Agĩkũyũ judicial terminology (Routledge 1910, pp. 195–220 & Hobley 1922)" },
+      { kikuyu: "Ndemi • Iregi • Maina • Mwangi • Itwika", english: "Historical ruling generations • Generational transfer ceremony", explanation: "Generational governance lexicon (Routledge 1910, p. 9 & Hobley 1922)" },
+      { kikuyu: "Gĩcandĩ (Kishandi) • Rũgano (pl. Ngano) • Guso!", english: "Poetic gourd rattle • Folktale • Riddle challenge ('Guess!')", explanation: "Agĩkũyũ oral literature & music (Routledge 1910, pp. 109, 285)" }
     ]
   }
 ];

@@ -11663,6 +11663,56 @@
         }
       ]
     }
+,
+    {
+      "id": "lindblom-1920-hobley-1910-krapf-1850-kamba",
+      "name": "Lindblom (1920 'The Akamba'), Hobley (1910 'Ethnology of A-Kamba'), Last (1885) & Krapf (1850) Historical Kĩkamba Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The 25 Akamba Clans (Mbai) & Totems Recorded by Hobley (1910 pp. 6–10) & Lindblom (1920 pp. 113–136)",
+          "translation": "Atangwa, Amwei, Ambua, Akitutu, Amutei, Anziu, Akiporo, Aombe, Anzauni, Aethanga, Akanga, Amuuti, Akimi, Aini, Asii",
+          "pronunciation": "mbai (clans): a-tan-gwa, a-mwei, a-mbua, a-ki-tu-tu, a-nza-u-ni",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba', pp. 6–10 & Gerhard Lindblom (1920) 'The Akamba in British East Africa', pp. 113–136",
+          "audioFile": null
+        },
+        {
+          "english": "The Three Traditional Kamba Initiation Grades (Nžaīko, Lindblom 1920 pp. 42–69 & Hobley 1910 pp. 68–77)",
+          "translation": "nžaīko ya kana (1st/small initiation), nžaīko ya kelī / mbavani (2nd/great initiation with pictographic musai sticks), nžaīko ya aūme (3rd/men's secret initiation)",
+          "pronunciation": "nza-i-ko / mu-sa-i",
+          "context": "Gerhard Lindblom (1920, pp. 42–69) & C. W. Hobley (1910, pp. 68–77)",
+          "audioFile": null
+        },
+        {
+          "english": "Pictographic Initiation Stick (Musai) & Wire-Inlaid Elder's Stool (Kĩvila, 8 Patterns in Hobley 1910 pp. 32–36)",
+          "translation": "mũsai (carved symbolic stick) & kĩvila / ibila (brass/copper wire-inlaid stool of the atumĩa)",
+          "pronunciation": "mu-sa-i / ki-vi-la",
+          "context": "C. W. Hobley (1910, pp. 32–36, 70–74) & Gerhard Lindblom (1920, pp. 536–540)",
+          "audioFile": null
+        },
+        {
+          "english": "The 11 Traditional Kamba Ecological Months (Hobley 1910 p. 53 & Lindblom 1920 p. 340)",
+          "translation": "Mwaa, Kĩũũ, Ũtũi, Kĩũnzũ, Ndũa, Mũvĩũ, Kĩlaa, Nyanya, Kenda, Ĩkũmi, Mũongo",
+          "pronunciation": "mwaa, ki-uu, u-tui, ndu-a, mu-vi-u",
+          "context": "C. W. Hobley (1910, p. 53) & Gerhard Lindblom (1920, p. 340)",
+          "audioFile": null
+        },
+        {
+          "english": "In-Law Avoidance Custom (Nðonī) & Women's Name-Avoidance Vocabulary (Kwiūa, Lindblom 1920 pp. 90–102)",
+          "translation": "nðonī (nthoni, respectful avoidance between mũthoni in-laws) & kwiūa (substituting polite synonyms for tabooed in-law names)",
+          "pronunciation": "ntho-ni / kwi-u-a / mu-tho-ni",
+          "context": "Gerhard Lindblom (1920) 'The Akamba in British East Africa', pp. 90–102, 579–581",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Kamba Folktale Genre (Wano) & 6 Classic Tales Recorded by C. W. Hobley (1910 pp. 116–126)",
+          "translation": "wano (folktale: e.g., The Hare and the Lion, The Hyena and the Hare, The Girl and the Iimu Ogre)",
+          "pronunciation": "wa-no / ka-va-lu-ku (hare) / i-i-mu",
+          "context": "C. W. Hobley (1910, pp. 116–126) & Gerhard Lindblom (1920)",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Historical Lexicons (J.T. Last 1885 & Hildegarde Hinde 1904)"
+  "source": "Public Domain Historical Lexicons (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Johnston 1919 & Lindblom 1920)"
 }

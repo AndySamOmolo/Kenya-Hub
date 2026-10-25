@@ -2144,6 +2144,77 @@
         }
       ]
     }
+,
+    {
+      "id": "stam-1929-hobley-1902-1903-johnston-1919-luhya",
+      "name": "Stam (1929 'The Bahanga'), Hobley (1902, 1903) & Johnston (1902, 1919) Historical Luhya Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "10-Generation Royal Genealogy of the Wanga Kingdom (Buhanga, Stam 1929 p. 144)",
+          "translation": "Kwandedi → Wanga → Waballa → Muswi → Wamukoya I → Netya → Osundwa → Wamukoya II → Khyihundu (Shihundu) → Mumia",
+          "pronunciation": "kwa-nde-di -> wan-ga -> khyi-hun-du -> mu-mi-a",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', p. 144 & C. W. Hobley (1903, p. 332)",
+          "audioFile": null
+        },
+        {
+          "english": "Paramount King of Wanga & Royal Grave Shrine at Matungu",
+          "translation": "Omwami / Nabongo & Ekhyirindwa ekhyo mwami (okhusenera ekhyirindwa)",
+          "pronunciation": "o-mwa-mi / na-bon-go / e-khyi-rin-dwa",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 145–146",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Creator (God of the Sun & Sky) & Morning Sun Prayer",
+          "translation": "Were / Nasayi — 'Were ankhonyere; Nasayi akhulinde!' (May God help me; may God guard you!)",
+          "pronunciation": "we-re an-kho-nye-re / na-sa-yi a-khu-lin-de",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 148, 151",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestral Sacrifice Stones, Miniature Spirit-Hut & Officiating Elder",
+          "translation": "amagina ake misambwa, khatsu khe misango, & omumali owe misango (okhumala omusango)",
+          "pronunciation": "a-ma-gi-na a-ke mi-sam-bwa / kha-tsu khe mi-san-go",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 148–150 & C. W. Hobley (1903, p. 344)",
+          "audioFile": null
+        },
+        {
+          "english": "Clan Totem / Sacred Dietary & Marital Taboo",
+          "translation": "ekhyinekha (Stam 1929) / muziro (Hobley 1903)",
+          "pronunciation": "e-khyi-ne-kha / mu-zi-ro",
+          "context": "Rev. N. Stam (1929, p. 152) & C. W. Hobley (1903, p. 347)",
+          "audioFile": null
+        },
+        {
+          "english": "Diviner-Healer, Herbalist & Rain-Maker",
+          "translation": "omufumo (diviner), omundu owe misala (herbalist), & omugimba (rain-maker)",
+          "pronunciation": "o-mu-fu-mo / o-mun-du o-we mi-sa-la / o-mu-gim-ba",
+          "context": "Rev. N. Stam (1929, pp. 153–156) & C. W. Hobley (1903, p. 346)",
+          "audioFile": null
+        },
+        {
+          "english": "Twins & Twin Purification Dance",
+          "translation": "amakhwana (twins: Mukhwana & Mulongo) & okhutsiya khu makwana",
+          "pronunciation": "a-ma-khwa-na / mu-khwa-na / mu-lon-go",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 157–158",
+          "audioFile": null
+        },
+        {
+          "english": "Betrothal Bridewealth, Ceremonial Marriage Bull & Circumcision Lodge",
+          "translation": "okhukhua omukhana, ingombe yarando, & okhukhyebwa (irumbi)",
+          "pronunciation": "o-khu-khu-a o-mu-kha-na / in-gom-be ya-ran-do / i-rum-bi",
+          "context": "Rev. N. Stam (1929) 'The Bahanga', pp. 159–168",
+          "audioFile": null
+        },
+        {
+          "english": "Comparative Luhya Varieties in Johnston (1902 & 1919): Lunyara (#5), Luwanga (#5a), Lusinga/Suba (#5b), Lumasaba (#6), Lukonde/Bukusu (#6a)",
+          "translation": "Lunyara, Luwanga (Lurimi), Lukabarasi, Lusinga, Lumasaba, Lukonde (Ketosh)",
+          "pronunciation": "lu-nya-ra, lu-wan-ga, lu-ma-sa-ba, lu-kon-de",
+          "context": "Sir Harry H. Johnston (1902, pp. 902–929; 1919, Vol. I, pp. 49–55) & C. W. Hobley (1902)",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, Johnston 1902, 1919 & Stam 1929)"
 }

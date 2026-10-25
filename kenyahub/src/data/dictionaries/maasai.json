@@ -2708,6 +2708,56 @@
         }
       ]
     }
+,
+    {
+      "id": "hollis-1905-hinde-1901-johnston-1902-maasai",
+      "name": "Hollis (1905 'The Masai'), Hinde (1901 'The Masai Language'), Johnston (1902) & Hobley (1910, 1922) Historical Maa Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Traditional Maasai Salutations (Hinde 1901 p. 29 & Hollis 1905 p. 99): Warriors/Men & Women/Elders",
+          "translation": "Sopai! — Reply: Epa! (Men/Warriors) | Takwenya! — Reply: Iko! (Women/Elders)",
+          "pronunciation": "so-pai / e-pa / ta-kwe-nya / i-ko",
+          "context": "Hildegarde Hinde (1901) 'The Masai Language', p. 29 & A. C. Hollis (1905) 'The Masai', p. 99",
+          "audioFile": null
+        },
+        {
+          "english": "Major Maasai Tribal Divisions, Sub-Districts & Clans (Hollis 1905 pp. 260–264)",
+          "translation": "Il-Aiser (L-Aiser, clan of the Oloiboni), Il-ukumai (L-ukumai), Il-Mokesen (L-Mokesen), Il-Molelian (L-Molelian), Il-Tarosero (L-Tarosero)",
+          "pronunciation": "il-ai-ser, il-lu-ku-mai, il-mo-ke-sen, il-mo-le-li-an, il-ta-ro-se-ro",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', pp. 260–264",
+          "audioFile": null
+        },
+        {
+          "english": "Maasai Place-Name Etymologies Recorded by Hildegarde Hinde (1901 p. 36) & Hollis (1905)",
+          "translation": "En-gare Nyrobi (Nairobi = 'Cold Water'), Ol-doinyo Oibor (Mt. Kilimanjaro/Kenya = 'White Mountain'), En-gare Na-okwa (Naivasha), Ol-doinyo Eburru ('Steaming Mountain')",
+          "pronunciation": "en-ga-re ny-ro-bi / ol-doi-nyo oi-bor / ol-doi-nyo e-bur-ru",
+          "context": "Hildegarde Hinde (1901) 'The Masai Language', p. 36 & A. C. Hollis (1905)",
+          "audioFile": null
+        },
+        {
+          "english": "Maasai Life-Cycle & Ceremonial Festivals (Hollis 1905 pp. 294–302)",
+          "translation": "Emorata (circumcision), E-unoto (warrior graduation ceremony), Ol-ngesher (elderhood ceremony), En-gipaata (boys' pre-initiation dance)",
+          "pronunciation": "e-mo-ra-ta / e-u-no-to / ol-nge-sher / en-gi-paa-ta",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', pp. 294–302",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Pasture Grass Held in Peace, Prayer & Blessing",
+          "translation": "en-gujit (held in the hand during peace-making and prayer to Eng-ai)",
+          "pronunciation": "en-gu-jit",
+          "context": "A. C. Hollis (1905, p. 289) & C. W. Hobley (1922, p. 305) — Maasai sacred grass symbol",
+          "audioFile": null
+        },
+        {
+          "english": "The Two Aspects of the Supreme Sky Deity (Hollis 1905 p. 264): The Benevolent Black Cloud & The Fierce Red Sky",
+          "translation": "Eng-ai Narok (The Black/Benevolent Rain-bringing God) & Eng-ai Nanyokie (The Red Sky)",
+          "pronunciation": "eng-ai na-rok / eng-ai na-nyo-kie",
+          "context": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', p. 264",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (Hinde 1901, Johnston 1902, Hollis 1905 & Hobley 1910, 1922)"
 }

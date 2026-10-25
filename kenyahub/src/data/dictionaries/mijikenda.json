@@ -1351,6 +1351,70 @@
         }
       ]
     }
+,
+    {
+      "id": "krapf-1850-1887-taylor-1891-mijikenda",
+      "name": "Krapf (1850), Krapf & Rebmann (1887) & W. E. Taylor (1891) Historical Mijikenda Corpus (Kayas, Marika, Riddles & Proverbs)",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The 13 Historical Giriama Circumcision Cycles (Marika, Taylor 1891 p. 19)",
+          "translation": "Amwendo, Akalunde, Amijoga,anguli, Ap'uku, Angwena, Amlulu, Amtsop'i,Kinyamburi,omba, Kavuta,vulana, Katsungula",
+          "pronunciation": "ma-ri-ka (sg. rika)",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 19 under Circumcision-cycles",
+          "audioFile": null
+        },
+        {
+          "english": "Giriama Elder Governance & Initiation Lodge Degrees (Habasi & K'ambi, Taylor 1891 p. 43)",
+          "translation": "Uhoho → Umondo → Ubora → Gawe → Sayo ra K'oma → M'ng'aro → Kirao → Vaya → Fisi → Enye-ts'i",
+          "pronunciation": "ha-ba-si / k'am-bi / va-ya / e-nye-ts'i",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 43 under Freemasonry",
+          "audioFile": null
+        },
+        {
+          "english": "The Traditional 4-Day Giriama Market & Farming Week (Taylor 1891 p. 78)",
+          "translation": "Jumwa (Rest/Market day), Kuramuka (1st work day), Kurima-hiri (2nd work day), Kuisa (3rd work day)",
+          "pronunciation": "jum-wa, ku-ra-mu-ka, ku-ri-ma-hi-ri, ku-i-sa",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 78 under Moon",
+          "audioFile": null
+        },
+        {
+          "english": "The 12 Traditional Wanika (Mijikenda) Agricultural Months (Krapf 1882 & 1887)",
+          "translation": "Muvuaka, Mutsano, Mupahu, Mulatso, Muvuo, Muzuka, Mufungate, Munane, Mukenda, Mukumi, Mulongo, Muaki",
+          "pronunciation": "mu-vua-ka, mu-tsa-no, mu-pa-hu, mu-la-tso",
+          "context": "Rev. Dr. L. Krapf (1882, p. 214 under masika) & Krapf & Rebmann (1887) 'A Nika-English Dictionary'",
+          "audioFile": null
+        },
+        {
+          "english": "Classical Giriama Morning & Daytime Salutations (Taylor 1891 p. 102)",
+          "translation": "Udzalamuka? — Nidzalamuka! (Morning) | Udzatsinda? — Nidzatsinda! (Afternoon)",
+          "pronunciation": "u-dza-la-mu-ka / u-dza-tsin-da",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 102 under Salutation",
+          "audioFile": null
+        },
+        {
+          "english": "Giriama Proverb #603: One finger cannot crush a louse",
+          "translation": "Chala chimwenga k'achibanda ts'aha",
+          "pronunciation": "cha-la chi-mwen-ga k'a-chi-ban-da ts'a-ha",
+          "context": "Rev. W. E. Taylor (1891) 'African Aphorisms; or, Saws from Swahili-Land', p. 141",
+          "audioFile": null
+        },
+        {
+          "english": "Giriama Riddle #1 (Ndumo za Kigiryama): My house has no door. — Answer: An egg.",
+          "translation": "Nyumba yangu k'aina muryango. — Ni iji.",
+          "pronunciation": "nyum-ba yan-gu k'a-i-na mu-ryan-go — ni i-ji",
+          "context": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections', p. 138, Riddle #1",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Friction Drum of the Kaya Elders & Ancestral Memorial Post",
+          "translation": "mwanza (sacred Kaya drum) & kigango (pl. vigango, carved memorial post)",
+          "pronunciation": "mwan-za / ki-gan-go",
+          "context": "Krapf & Rebmann (1887) 'A Nika-English Dictionary' & W. E. Taylor (1891)",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (Krapf 1850, Krapf & Rebmann 1887, W. E. Taylor 1891 & Johnston 1919)"
 }

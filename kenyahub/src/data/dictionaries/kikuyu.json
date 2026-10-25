@@ -10972,6 +10972,70 @@
         }
       ]
     }
+,
+    {
+      "id": "hemery-1903-mcgregor-1904-routledge-1910-hobley-1910-kikuyu",
+      "name": "Hémery (1903), McGregor (1904), Routledge (1910), Hobley (1910, 1922) & Johnston (1902, 1919) Historical Gĩkũyũ Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The 13 Agĩkũyũ Clans (Mĩhĩrĩga / Irika) & Totems Recorded by W. S. & K. Routledge (1910 p. 20)",
+          "translation": "Anjiru, Agachiku, Achera, Ambui, Angari (Aithekahuno), Akiuru (Ethaga, ironworkers & rain-makers), Agathigia (Aicakamuyu), Abaura (Angechi), Aregi, Athinuri, Agetunu, Amboi, Aca",
+          "pronunciation": "a-nji-ru, a-ga-chi-ku, a-che-ra, a-mbui, a-n-ga-ri, e-tha-ga",
+          "context": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People: The Akikuyu of British East Africa', p. 20",
+          "audioFile": null
+        },
+        {
+          "english": "The 10 Historical Generation Ages (Rĩĩka) & Generational Transfer Ceremony (Itwika, Routledge 1910 p. 9)",
+          "translation": "Tene → Agu → Manduti → Chuma → Ciira → Mathathi → Ndemi → Iregi → Maina → Mwangi (Ceremony: Itwika)",
+          "pronunciation": "te-ne, a-gu, ma-tha-thi, nde-mi, i-re-gi, mai-na, mwan-gi, i-twi-ka",
+          "context": "W. S. & K. Routledge (1910) 'With a Prehistoric People', pp. 8–11 & C. W. Hobley (1922, p. 306)",
+          "audioFile": null
+        },
+        {
+          "english": "17 Named Circumcision Initiation Years (1891–1908, Routledge 1910 p. 11)",
+          "translation": "Ngigi (Locusts), Kienjeku, Mutung'u (Smallpox), Ngaragu ya Ruraya (Great Famine), Kamande, Kanyutu, Njenga, Wakanene",
+          "pronunciation": "ngi-gi, mu-tun-gu, nga-ra-gu, ka-man-de",
+          "context": "W. S. & K. Routledge (1910) 'With a Prehistoric People', p. 11",
+          "audioFile": null
+        },
+        {
+          "english": "Enigmatic Pictographic Gourd-Rattle & Poetic Dialogue Song (Routledge 1910 pp. 109–112)",
+          "translation": "gĩcandĩ (kishandi) — carved gourd rattle with symbolic pictographs and cowrie shells",
+          "pronunciation": "gi-cha-ndi / ki-sha-ndi",
+          "context": "W. S. & K. Routledge (1910) 'With a Prehistoric People', pp. 109–112 (2 complete Gĩcandĩ keys)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron Smelting, Wire-Drawing & Smithing Lexicon (Routledge 1910 pp. 79–96 & McGregor 1904)",
+          "translation": "mũturi (blacksmith, pl. aturi), kĩganda (smithy/forge), mũura (bellows), gĩkama (iron ore/bloom), mũrĩnga (drawn brass/copper/iron wire)",
+          "pronunciation": "mu-tu-ri / ki-gan-da / mu-u-ra / gi-ka-ma / mu-rin-ga",
+          "context": "W. S. & K. Routledge (1910, pp. 79–96) & Rev. A. W. McGregor (1904) 'English-Kikuyu Vocabulary'",
+          "audioFile": null
+        },
+        {
+          "english": "Pottery, Basketry & Homestead Architecture (Routledge 1910 pp. 97–105 & Hémery 1903)",
+          "translation": "nyũngũ (clay cooking pot), kĩondo (woven string bag), gĩtĩ (carved 3-legged stool), ikũmbĩ (granary), thingira (man's hut), nyũmba (wife's house)",
+          "pronunciation": "nyun-gu / ki-o-ndo / gi-ti / i-ku-mbi / thi-ngi-ra / nyu-mba",
+          "context": "W. S. & K. Routledge (1910), Rev. Fr. A. Hémery (1903) & Rev. A. W. McGregor (1904)",
+          "audioFile": null
+        },
+        {
+          "english": "15 Traditional Kikuyu Herbal Medicines (Mĩthaiga, Routledge 1910 Appendix pp. 346–348)",
+          "translation": "mũthaiga (herbal medicine), mũkawa, mũtamaiyũ (wild olive), mũringa, mũkũyũ, mũgumo, mũthĩga",
+          "pronunciation": "mu-thai-ga / mu-ta-mai-yu / mu-ri-nga / mu-gu-mo",
+          "context": "W. S. & K. Routledge (1910) 'With a Prehistoric People', pp. 346–348",
+          "audioFile": null
+        },
+        {
+          "english": "Rite of the Second Birth (Kũciarwo Rĩngĩ / Gũciarwo na Mbũri, Routledge 1910 pp. 151–153 & Hobley 1910)",
+          "translation": "gũciarwo na mbũri (ceremonial second birth preceding initiation)",
+          "pronunciation": "gu-chia-rwo na mbu-ri",
+          "context": "W. S. & K. Routledge (1910, pp. 151–153) & C. W. Hobley (1910, p. 105)",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Lexicon Scaffold (Hildegarde Hinde 1904)"
+  "source": "Public Domain Historical Lexicons (Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910 & Hobley 1910/1922)"
 }

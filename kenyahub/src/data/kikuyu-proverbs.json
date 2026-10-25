@@ -43,7 +43,7 @@
     "id": 6,
     "kikuyu": "Ũũgĩ wa mũndũ ũmwe ndũrĩmaga.",
     "translation": "The wisdom of one person alone does not cultivate a field.",
-    "explanation": "True wisdom is shared and tested in council (kiama, Hobley 1922) rather than hoarded by one individual.",
+    "explanation": "True wisdom is shared and tested in council (kiama, Hobley 1922 & Routledge 1910) rather than hoarded by one individual.",
     "englishEquivalent": "In the multitude of counsellors there is safety.",
     "category": "wisdom"
   },
@@ -99,7 +99,7 @@
     "id": 13,
     "kikuyu": "Mũndũ mũgo ndagũragĩra.",
     "translation": "A medicine man (mũndũ mũgo) does not divine for himself.",
-    "explanation": "Even an expert or elder needs the objective counsel of others when facing personal trials (cf. Hobley 1922 on Mundu Mugo).",
+    "explanation": "Even an expert or elder needs the objective counsel of others when facing personal trials (cf. Routledge 1910 & Hobley 1922 on Mundu Mugo).",
     "englishEquivalent": "A physician cannot heal himself.",
     "category": "humility"
   },
@@ -126,5 +126,69 @@
     "explanation": "A visitor passes through briefly like flowing river water and should be welcomed generously while present (Stevenson 1927).",
     "englishEquivalent": "Welcome the coming, speed the parting guest.",
     "category": "hospitality"
+  },
+  {
+    "id": 17,
+    "kikuyu": "Guso! Ndathiĩ kwa mũrata wakwa, ndakora mũtumia wake aigĩte ciana igĩrĩ rũrĩmĩ-inĩ rũmwe. — Nĩ hĩndĩ mũtĩ ũhaaraga mahũa.",
+    "translation": "Riddle (Routledge 1910 #1): I went to my friend's house and found a woman who kept two children on one tongue. — Answer: When a tree puts forth flowers and fruit on one stem.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge in 'With a Prehistoric People: The Akikuyu of British East Africa' (1910, p. 285). Traditional riddles open with the challenge 'Guso!' ('Guess!').",
+    "englishEquivalent": "Nature's twin blossoms on a single bough.",
+    "category": "wisdom"
+  },
+  {
+    "id": 18,
+    "kikuyu": "Guso! Ndathiĩ gũceera ndakora mũndũ ũrĩ na mũtwe mũnene ũtarĩ maitho. — Nĩ kĩgũũ (fungus / mushroom).",
+    "translation": "Riddle (Routledge 1910 #2): I went for a walk and met a person with a big head and no eyes. — Answer: A mushroom / fungus (or round ant-hill).",
+    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285) among the Akikuyu of Nyeri and Murang'a.",
+    "englishEquivalent": "A head without eyes.",
+    "category": "wisdom"
+  },
+  {
+    "id": 19,
+    "kikuyu": "Guso! Nyũmba yakwa ndĩrĩ mũromo. — Nĩ itumbi (an egg).",
+    "translation": "Riddle (Routledge 1910 #3): My house has no door. — Answer: An egg (itumbi).",
+    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285); shared across East African oral literature.",
+    "englishEquivalent": "A seamless house without a door.",
+    "category": "family"
+  },
+  {
+    "id": 20,
+    "kikuyu": "Guso! Ndathiĩ na njĩra ndakora mũtumia ũkuĩte mwana na mũgongo na ndarĩ mĩkwa. — Nĩ mbembe mũtĩ-inĩ wayo.",
+    "translation": "Riddle (Routledge 1910 #4): I went along the road and saw a woman carrying a child on her back without straps (mĩkwa). — Answer: A maize cob growing on its stalk.",
+    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285), comparing the maize cob (mbembe) clasping its stalk to a Kikuyu mother carrying her baby in a leather garment.",
+    "englishEquivalent": "A mother carrying her child without a strap.",
+    "category": "family"
+  },
+  {
+    "id": 21,
+    "kikuyu": "Guso! Nĩ kĩĩ kĩrĩ mũromo mũnene gĩtarĩ nda? — Nĩ irima (a pit / hole in the ground).",
+    "translation": "Riddle (Routledge 1910 #5): What has a wide mouth and no stomach (or swallows everything without filling)? — Answer: A pit or hole in the ground.",
+    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285).",
+    "englishEquivalent": "An open mouth that never fills.",
+    "category": "wisdom"
+  },
+  {
+    "id": 22,
+    "kikuyu": "Thahu wa mũciĩ ũhoragio na ng'ondu (kũhoria thahu).",
+    "translation": "Ceremonial defilement (thahu) of the homestead is cooled and purified with a sacrificial sheep (ng'ondu).",
+    "explanation": "Documented in W. S. & K. Routledge (1910, pp. 254–260) and C. W. Hobley (1910, pp. 104–115): peace and moral order in the homestead require reconciliation and restoration ('cooling').",
+    "englishEquivalent": "Prevention and reconciliation restore peace.",
+    "category": "family"
+  },
+  {
+    "id": 23,
+    "kikuyu": "Kiama kia atumia gĩtũũragia bũrũri na thayũ.",
+    "translation": "The council of elders (Kiama) sustains the land in peace.",
+    "explanation": "Documented by W. S. & K. Routledge (1910, pp. 195–220) and Rev. Fr. A. Hémery (1903, p. 88) on Agĩkũyũ deliberative justice and the sacred oath (muma / kithasi).",
+    "englishEquivalent": "Where there is wise counsel, the people flourish.",
+    "category": "unity"
+  },
+  {
+    "id": 24,
+    "kikuyu": "Mũndũ ũtarĩ mbũri ndarĩ mũciĩ (Hémery 1903).",
+    "translation": "A person who does not care for their flock does not build a lasting homestead.",
+    "explanation": "Grounded in Rev. Fr. A. Hémery's 'English-Kikuyu Handbook' (1903) and McGregor (1904) on pastoral-agricultural stewardship in Gĩkũyũ society.",
+    "englishEquivalent": "Diligence builds the home.",
+    "category": "character"
   }
 ]

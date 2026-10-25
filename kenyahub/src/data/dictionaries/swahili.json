@@ -11459,6 +11459,63 @@
         }
       ]
     }
+,
+    {
+      "id": "steere-1870-1894-krapf-1882-taylor-1891-madan-1903-burt-1910-swahili",
+      "name": "Steere (1870, 1894), Krapf (1850, 1882), Taylor (1891), Madan (1903, 1917), Burt (1910) & Johnston (1919) Classical Swahili Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The 8 Historical Swahili Dialect Varieties Documented by Johnston (1919 #21–21g), Burt (1910) & Krapf (1882)",
+          "translation": "Ki-Ngozi (archaic poetic), Ki-Tikuu / Ki-Bajuni (#21g), Ki-Siu (#21e), Ki-Pate (#21f), Ki-Amu (#21d Lamu), Ki-Mvita (#21c Mombasa), Ki-Unguja (#21 Zanzibar), Ki-Mrima / Ki-Hadimu (#21a)",
+          "pronunciation": "ki-ngo-zi, ki-ti-kuu, ki-si-u, ki-pa-te, ki-a-mu, ki-mvi-ta, ki-un-gu-ja",
+          "context": "Sir Harry Johnston (1919, Vol. I, pp. 122–134), Mrs. F. Burt (1910, pp. 1–6), & Dr. L. Krapf (1882)",
+          "audioFile": null
+        },
+        {
+          "english": "Archaic Kingozi / Kiamu Poetic Vocabulary from 'Hadithi ya Liongo', 'Mashairi ya Liongo' & 'Utumbuizo wa Gungu' (Steere 1870 pp. 439–483)",
+          "translation": "mjakazi / kijakazi (handmaiden), mbango (wild boar), kikaze (brass vessel), kombe (ceremonial platter), gungu (ancient royal wedding dance), tumbuizo (serenade/ode), utenzi (epic poem), shairi (lyric poem)",
+          "pronunciation": "li-on-go / gun-gu / u-ten-zi / sha-i-ri",
+          "context": "Bishop Edward Steere (1870) 'Swahili Tales, as Told by Natives of Zanzibar', pp. 439–488",
+          "audioFile": null
+        },
+        {
+          "english": "18 Classic Swahili Narratives in Steere's 'Swahili Tales' (1870)",
+          "translation": "Kisa cha Punda wa Dobi, Sultani Darai, Hekaya ya Mohammadi Mtepetevu, Sultani Majnuni (Nunda mla watu), Mwalimu Goso, Uza Ghali si Uza Rakhisi, Sungura na Simba, Hassibu Karim ad Dini, Ao Rathi ao Mali, Hadithi ya Liongo, Hadithi ya Waridi (Steere 1894)",
+          "pronunciation": "ha-di-thi ya li-on-go / sul-ta-ni da-ra-i / sul-ta-ni maj-nu-ni",
+          "context": "Bishop Edward Steere (1870) 'Swahili Tales' & (1894) 'A Handbook of the Swahili Language', Appendix III",
+          "audioFile": null
+        },
+        {
+          "english": "Kinyume Syllable-Inversion Cipher (Steere 1894 Appendix I, p. 401 & Krapf 1882)",
+          "translation": "Kinyume (transposing the final syllable to the beginning: e.g., nyumba → mbanyu, kisu → suki, mtu → tumu, njoo → onjo)",
+          "pronunciation": "ki-nyu-me",
+          "context": "Bishop Edward Steere & A. C. Madan (1894) 'A Handbook of the Swahili Language', Appendix I, p. 401",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Swahili Solar Solar-Agricultural New Year (Nairuz) & 10-Day Decade Counting (Mwongo)",
+          "translation": "Siku ya Mwaka (Nairuz) & Mwongo (pl. Miongo — 10-day agricultural decades from Mwongo mosi to Mwongo kumi)",
+          "pronunciation": "si-ku ya mwa-ka / nai-ruz / mwon-go",
+          "context": "Rev. Dr. L. Krapf (1882, p. 255) & Mrs. F. Burt (1910, pp. 166–168)",
+          "audioFile": null
+        },
+        {
+          "english": "Swahili Mariner's 32-Point Compass, Monsoon Winds & Traditional Weights/Measures (Steere 1894 Appendix V & Burt 1910)",
+          "translation": "Kaskazi (NE monsoon), Kusi (SW monsoon), Matlai (East), Magharibi (West), Jahazi (dhow); Kibaba (pint measure), Pishi (4 vibaba), Frasila (~35 lbs), Rupia (64 pesa)",
+          "pronunciation": "kas-ka-zi / ku-si / ki-ba-ba / pi-shi / fra-si-la / ru-pi-a",
+          "context": "Bishop Edward Steere (1894, pp. 453–458), Mrs. F. Burt (1910, pp. 162–168), & Dr. L. Krapf (1882)",
+          "audioFile": null
+        },
+        {
+          "english": "The Enclitic Possessive of Alienation/Intimacy (-ngwa: -ngu, -ko, -we) Recorded by Rev. W. E. Taylor (1891 Appendix p. 166)",
+          "translation": "mamangu, mamako, mamawe (my, thy, his/her mother); babangu, babako, babawe; mwanangu, mwanako, mwanawe; mwenziwe (his companion)",
+          "pronunciation": "ma-man-gu / ba-ban-gu / mwa-nan-gu / mwen-zi-we",
+          "context": "Rev. W. E. Taylor (1891) 'African Aphorisms; or, Saws from Swahili-Land', Appendix, p. 166",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (Krapf 1850/1882, Steere 1870/1894, Taylor 1891, Madan 1903/1917, Hinde 1904, Burt 1910 & Johnston 1919)"
 }

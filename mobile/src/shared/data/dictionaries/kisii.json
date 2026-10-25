@@ -1302,6 +1302,56 @@
         }
       ]
     }
+,
+    {
+      "id": "hobley-1902-johnston-1902-1919-kisii",
+      "name": "Hobley (1902 'Kossova') & Johnston (1902 'Igizii' & 1919 '#7 Ki-guzii') Historical Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Historical ethnonyms for Ekegusii in early 1902–1919 surveys",
+          "translation": "Kossova (Hobley 1902) / Igizii (Johnston 1902) / Ki-guzii (Johnston 1919 #7)",
+          "pronunciation": "kos-so-va / i-gi-zii / ki-gu-zii",
+          "context": "C. W. Hobley (1902, p. 50) & Sir Harry H. Johnston (1902, p. 902; 1919, Vol. I, p. 56)",
+          "audioFile": null
+        },
+        {
+          "english": "God / Supreme Creator (identified with the Sun in early records)",
+          "translation": "Engoro / Erioba",
+          "pronunciation": "en-go-ro / e-ri-o-ba",
+          "context": "C. W. Hobley (1902, p. 64) & Sir Harry H. Johnston (1919, p. 57) — #7 Ki-guzii",
+          "audioFile": null
+        },
+        {
+          "english": "Personal Pronouns: I / Thou / He, She / We / You (pl.) / They",
+          "translation": "inche / aye / ere / intwe / inywe / barabwo (abo)",
+          "pronunciation": "in-che / a-ye / e-re / in-twe / i-nywe / a-bo",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 59) — #7 Ki-guzii",
+          "audioFile": null
+        },
+        {
+          "english": "Possessive Stems: My / Thy / His, Her / Our / Your / Their",
+          "translation": "-ane / -ao / -aye / -into (-aito) / -inyu / -abo",
+          "pronunciation": "-a-ne / -a-o / -a-ye / -in-to / -i-nyu / -a-bo",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 59) — #7 Ki-guzii",
+          "audioFile": null
+        },
+        {
+          "english": "Spear / Shield / Bow / Arrow / Sword-knife",
+          "translation": "ritimo (pl. amatimo) / enguba / obota / omogwe / orobanga",
+          "pronunciation": "ri-ti-mo / en-gu-ba / o-bo-ta / o-mo-gwe / o-ro-ban-ga",
+          "context": "C. W. Hobley (1902, pp. 61–79) & Sir Harry H. Johnston (1919, pp. 56–58)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger-millet (wimbi) / Sorghum / Banana / Sweet potato / Honey",
+          "translation": "obori / amaemba / rigomia (ritoke) / erabuoni / obouki",
+          "pronunciation": "o-bo-ri / a-ma-em-ba / ri-to-ke / o-bo-u-ki",
+          "context": "C. W. Hobley (1902, pp. 61–79) & Sir Harry H. Johnston (1919, pp. 56–58)",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919)"
 }

@@ -9,9 +9,9 @@
     "Taita-Taveta"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-23",
-  "contributorNote": "Taveta (Kitaveta / Kituweta) dictionary compiled from A. C. Hollis ('Taveta Sayings and Proverbs', Journal of the African Society 9, 1910 & 'Taveta Enigmas', Vol. 10, 1911 — Public Domain), Rev. A. R. Steggall (1892–1906 CMS Taveta translations — Public Domain), Sir Harry H. Johnston (1919 — Public Domain), and Wikipedia Taveta_language.",
+  "dictionaryVersion": "2.0.0",
+  "lastUpdated": "2026-10-25",
+  "contributorNote": "Taveta (Kitaveta / Kituweta) dictionary compiled line-by-line from Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 86–89, #15 Taveta, 1919 — Public Domain), A. C. Hollis ('Taveta Sayings and Proverbs', Journal of the African Society 9, 1910 & 'Taveta Enigmas', Vol. 10, 1911 — Public Domain), Rev. A. R. Steggall (1892–1906 CMS Taveta translations — Public Domain), and Wikipedia Taveta_language.",
   "categories": [
     {
       "id": "greetings",
@@ -150,6 +150,13 @@
           "pronunciation": "i-ku-mi",
           "context": "Johnston (1919) — Kitaveta numerals",
           "audioFile": null
+        },
+        {
+          "english": "Twenty / One hundred",
+          "translation": "mirongo miwi (20) / igana (100)",
+          "pronunciation": "mi-ron-go mi-wi / i-ga-na",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 88) — #15 Taveta",
+          "audioFile": null
         }
       ]
     },
@@ -163,6 +170,13 @@
           "translation": "mundu (pl. wandu)",
           "pronunciation": "mun-du (pl. wan-du)",
           "context": "Hollis (1910) & Johnston (1919) — Kitaveta",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband & Woman / Wife",
+          "translation": "momi (pl. waomi) / mche (pl. wache)",
+          "pronunciation": "mo-mi / mche",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 87) — #15 Taveta",
           "audioFile": null
         },
         {
@@ -484,7 +498,7 @@
           "english": "Banana",
           "translation": "iru (pl. maru)",
           "pronunciation": "i-ru (pl. ma-ru)",
-          "context": "Hollis (1910) — Taveta staple crop",
+          "context": "Hollis (1910) & Johnston (1919) — Taveta staple crop",
           "audioFile": null
         }
       ]
@@ -575,21 +589,35 @@
     },
     {
       "id": "adjectives",
-      "name": "Adjectives, Pronouns & Grammar",
+      "name": "Adjectives, Pronouns & Johnston (1919 #15) Grammar",
       "icon": "✨",
       "entries": [
         {
           "english": "Good / Fine",
           "translation": "yedi (-edi)",
           "pronunciation": "ye-di",
-          "context": "Rev. A. R. Steggall (1892) & Wikipedia Taveta_language",
+          "context": "Rev. A. R. Steggall (1892) & Johnston (1919)",
           "audioFile": null
         },
         {
           "english": "Bad / Evil",
           "translation": "iwiwi (-wiwi)",
           "pronunciation": "i-wi-wi",
-          "context": "A. C. Hollis (1910) Taveta Proverb #8",
+          "context": "A. C. Hollis (1910) Taveta Proverb #8 & Johnston (1919)",
+          "audioFile": null
+        },
+        {
+          "english": "Personal Pronouns: I / Thou / He, She / We / You (pl.) / They",
+          "translation": "imi / uwe / iye / iswi / inywi / wawo",
+          "pronunciation": "i-mi / u-we / i-ye / i-swi / i-nywi / wa-wo",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 88) — #15 Taveta",
+          "audioFile": null
+        },
+        {
+          "english": "Possessive Stems: My / Thy / His, Her / Our / Your / Their",
+          "translation": "-akwa / -ako / -akwe / -etu / -enyu / -awo",
+          "pronunciation": "-a-kwa / -a-ko / -a-kwe / -e-tu / -e-nyu / -a-wo",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 88) — #15 Taveta",
           "audioFile": null
         }
       ]

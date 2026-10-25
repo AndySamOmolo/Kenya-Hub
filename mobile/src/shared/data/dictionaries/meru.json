@@ -2645,6 +2645,49 @@
         }
       ]
     }
+,
+    {
+      "id": "johnston-1919-hobley-1910-meru",
+      "name": "Johnston (1919 #11a Meru & #11 Tharaka/Chuka/Mwimbe/Igoji) & Hobley (1910) Historical Kĩmĩĩrũ Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Cardinal Numerals 1–10 in Johnston (1919 #11a Meru)",
+          "translation": "imwe (1), iiri / bairi (2), ithatu (3), inya (4), ithano (5), ithanthatu (6), mũgwanja (7), inyanya (8), kenda (9), ikũmi (10)",
+          "pronunciation": "i-mwe, ii-ri, i-tha-tu, i-nya, i-tha-no",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 72) — #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Personal Pronouns in Johnston (1919 #11a Meru): I / Thou / He, She / We / You (pl.) / They",
+          "translation": "niĩ / gwe (we) / we / batũ / bũ / bo",
+          "pronunciation": "nii / gwe / we / ba-tu / bu / bo",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 72) — #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Possessive Stems in Johnston (1919 #11a Meru): My / Thy / His, Her / Our / Your / Their",
+          "translation": "-akwa / -aku / -ake / -etũ / -enyu / -abo (-ao)",
+          "pronunciation": "-a-kwa / -a-ku / -a-ke / -e-tu / -e-nyu / -a-bo",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 72) — #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Council of Elders (Njũri Ncheke), Spiritual Dignitary (Mũgwe) & Sacred Groove",
+          "translation": "Njũri Ncheke, Mũgwe, & Mũrũrĩ (sacred forest)",
+          "pronunciation": "nju-ri nche-ke / mu-gwe / mu-ru-ri",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', pp. 146–155 (Mweru & Tharaka)",
+          "audioFile": null
+        },
+        {
+          "english": "Person (pl. People) / Man / Woman / Child in Johnston (1919 #11a Meru)",
+          "translation": "muntũ (pl. antũ / bantũ) / mũrũme (pl. barũme) / mũka (pl. aka / baka) / mwana (pl. aana / baana)",
+          "pronunciation": "mun-tu / an-tu / mu-ru-me / mu-ka / mwa-na",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 68–69) — #11a Meru",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & CLDR mer.xml)"
 }

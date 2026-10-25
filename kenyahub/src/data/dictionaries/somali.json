@@ -3235,6 +3235,56 @@
         }
       ]
     }
+,
+    {
+      "id": "larajasse-1897-kirk-1905-johnston-1902-somali",
+      "name": "de Larajasse (1897), Johnston (1902) & Kirk (1905) Historical Somali Corpus (Seasons, Months, Wildlife, Poetry & Yibir/Midgan)",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "East African Antelope & Wildlife Lexicon Recorded by Rev. Fr. Evangelist de Larajasse (1897)",
+          "translation": "si‘g (Swayne's hartebeest), garanug / lig (gerenuk), adéryo (lesser kudu), godir (greater kudu), b‘e‘id / bi‘‘id (beisa oryx), sagaro / sakaro (dik-dik), aul (Soemmerring's gazelle), déro (Speke's gazelle)",
+          "pronunciation": "si'g, ga-ra-nug, a-der-yo, go-dir, be-id, sa-ga-ro",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897) 'Somali-English and English-Somali Dictionary'",
+          "audioFile": null
+        },
+        {
+          "english": "Kenya/Jubaland Ethnonyms & Trade Terms in de Larajasse (1897)",
+          "translation": "Sawaheli / Sawahili (Swahili Coast people), Wa Debai (Ogaden/Darod country), Daba Galla (Oromo/Borana borderland), rubiad / rubi (rupee/silver coin)",
+          "pronunciation": "sa-wa-he-li / wa de-bai / da-ba gal-la / ru-bi-ad",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897) 'Somali-English and English-Somali Dictionary'",
+          "audioFile": null
+        },
+        {
+          "english": "The 4 Somali Pastoral Seasons (Kirk 1905 Appendix I, p. 131)",
+          "translation": "Gu' (main rains), Xagaa / Hagaa (hot windy dry season), Dayr / Dair (short rains), Jiilaal / Jilal (cool dry season)",
+          "pronunciation": "gu, ha-gaa, dayr, jii-laal",
+          "context": "Lt. J. W. C. Kirk (1905) 'A Grammar of the Somali Language', Appendix I, p. 131",
+          "audioFile": null
+        },
+        {
+          "english": "The 12 Traditional Somali Lunar Months (Kirk 1905 Appendix I, p. 132)",
+          "translation": "Dago (Muharram), Safar, Mawlid, Rajal hore, Rajal dhexe, Rajal dambe, Sabuux, Waaberiis, Soon (Ramadan), Soon fur, Sidataal, Arafo",
+          "pronunciation": "da-go, sa-far, maw-lid, ra-jal, sa-buux, waa-be-riis, soon, a-ra-fo",
+          "context": "Lt. J. W. C. Kirk (1905) 'A Grammar of the Somali Language', Appendix I, p. 132",
+          "audioFile": null
+        },
+        {
+          "english": "The Three Classical Somali Oral Poetic Genres (Kirk 1905 pp. 170–183)",
+          "translation": "Gabei / Gabay (philosophical epic poem), Gerar / Geeraar (equestrian/warrior chant), Hes / Hees (pastoral watering & dance song)",
+          "pronunciation": "ga-bay / gee-raar / hees",
+          "context": "Lt. J. W. C. Kirk (1905) 'A Grammar of the Somali Language', pp. 170–183 (14 Songs)",
+          "audioFile": null
+        },
+        {
+          "english": "Yibir (Anas) & Midgan (Alowa) Craft-Guild Registers Documented by Lt. J. W. C. Kirk (1905 pp. 184–215)",
+          "translation": "Af-Yibir (Anas) & Af-Midgaan (Alowa) — special guild vocabularies and the Story of Mohammed Hanif",
+          "pronunciation": "af-yi-bir / a-nas / af-mid-gaan / a-lo-wa",
+          "context": "Lt. J. W. C. Kirk (1905) 'A Grammar of the Somali Language', pp. 184–215",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Dictionary Scaffold"
+  "source": "Public Domain Historical Lexicons (de Larajasse 1897, Johnston 1902 & Kirk 1905)"
 }

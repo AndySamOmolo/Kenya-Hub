@@ -2491,5 +2491,35 @@
         }
       ]
     }
-  ]
+,
+    {
+      "id": "johnston-1919-hobley-1910-embu",
+      "name": "Johnston (1919 #11 Embu, Emberre, Chuka, Mwimbe) & Hobley (1910) Historical Mount Kenya Bantu Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Mount Kenya Southeastern & Eastern Dialect Varieties Recorded by Sir Harry Johnston (1919 #11)",
+          "translation": "Kîembu (Embu), Kimbeere (Emberre), Gĩcuka (Cuka), Kĩmwimbi (Mwimbe), Kĩtharaka (Tharaka), Kĩigoji (Igoji)",
+          "pronunciation": "ki-em-bu, ki-mbee-re, gi-chu-ka, ki-mwim-bi",
+          "context": "Sir Harry H. Johnston (1919) 'A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, p. 66",
+          "audioFile": null
+        },
+        {
+          "english": "Cardinal Numerals 1–10 in Johnston (1919 #11 Embu / Emberre)",
+          "translation": "imwe (1), igiri (2), ithatu (3), inya (4), ithano (5), ithathatu (6), mugwanja (7), inyanya (8), kenda (9), ikumi (10)",
+          "pronunciation": "i-mwe, i-gi-ri, i-tha-tu, i-nya, i-tha-no",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "Elder Council of the Aembu & Sacred Grove",
+          "translation": "Kiama kia Ngome & Mũtĩ wa Ngai (Mũgumo sacred fig tree)",
+          "pronunciation": "ki-a-ma kia ngo-me / mu-gu-mo",
+          "context": "C. W. Hobley (1910, pp. 146–155) & Johnston (1919)",
+          "audioFile": null
+        }
+      ]
+    }
+  ],
+  "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & CLDR ebu.xml)"
 }

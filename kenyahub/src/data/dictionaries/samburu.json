@@ -1472,5 +1472,42 @@
         }
       ]
     }
-  ]
+,
+    {
+      "id": "johnston-1902-hobley-1910-samburu",
+      "name": "Johnston (1902) & Hobley (1910) Historical Samburu (Sampur / Burkeneji / Laikipiak) Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Historical Ethnonyms in 1902–1910 Records: People of the White Goats / Butterfly People",
+          "translation": "Il-oikop / Il-Burkeneji (Loiborkeneji) / Sampur",
+          "pronunciation": "il-oi-kop / il-bur-ke-ne-ji / sam-pur",
+          "context": "Sir Harry H. Johnston (1902, Vol. II) & C. W. Hobley (1910, pp. 156–157)",
+          "audioFile": null
+        },
+        {
+          "english": "Major Samburu Phratries / Clan Sections (Masula, Pisikishu, Nyaparai, Lorogishu, Longeli,ukumai)",
+          "translation": "Lmasula, Lpisikishu, Lnyaparai, Llorogishu, Llongeli, Lukumai",
+          "pronunciation": "lma-su-la, lpi-si-ki-shu, lnya-pa-rai",
+          "context": "C. W. Hobley (1910, p. 156) &Hon. K. R. Dundas (1910) — North Maa Clan Divisions",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Mountain of the Samburu (Mount Nyiro) & Marsabit",
+          "translation": "Ol-doinyo Mara (Mt. Nyiro) & Saku (Marsabit)",
+          "pronunciation": "ol-doi-nyo ma-ra / sa-ku",
+          "context": "C. W. Hobley (1910, p. 156) & Johnston (1902)",
+          "audioFile": null
+        },
+        {
+          "english": "Warrior Age-Set & Ritual Leader of the Age-Set",
+          "translation": "lmurran (sg. lmurrani) & laiguenani (pl. laiguenak)",
+          "pronunciation": "lmur-ran / lai-gue-na-ni",
+          "context": "Johnston (1902) & Hobley (1910) — North Maa age-grade organization",
+          "audioFile": null
+        }
+      ]
+    }
+  ],
+  "source": "Public Domain Historical Lexicons (Johnston 1902, Hobley 1910 & Vossen 1982)"
 }

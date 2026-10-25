@@ -6166,6 +6166,56 @@
         }
       ]
     }
+,
+    {
+      "id": "northcote-1907-hobley-1902-1903-johnston-1902-luo",
+      "name": "Northcote (1907 'The Nilotic Kavirondo'), Hobley (1902, 1903) & Johnston (1902) Historical Dholuo Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Time-of-Day Birth Names Recorded by G. A. S. Northcote (1907 p. 62): Morning Sun, High Noon, Afternoon, Night",
+          "translation": "Onyango / Anyango (morning sun, 7–9 a.m.), Oching' / Aching' (high noon, chieng'), Odiambo / Adiambo (afternoon, 2–6 p.m.), Otieno / Atieno (night, otieno)",
+          "pronunciation": "o-nyan-go, o-ching, o-diam-bo, o-tie-no",
+          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, p. 62",
+          "audioFile": null
+        },
+        {
+          "english": "Circumstantial & Twin Birth Names Recorded by G. A. S. Northcote (1907 p. 62)",
+          "translation": "Obele (born during bele 'corn in ear'), Oliech (born when an elephant liech was killed), Obonyo (born during locusts bonyo), Okach (born during famine kech), Opiyo (first-born twin), Odongo (second-born twin)",
+          "pronunciation": "o-be-le, o-liech, o-bo-nyo, o-kach, o-pi-yo, o-don-go",
+          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', JRAI Vol. 37, p. 62",
+          "audioFile": null
+        },
+        {
+          "english": "Homestead Architecture & Euphorbia Enclosure (Northcote 1907 p. 58)",
+          "translation": "dala (homestead), chiel / ojuok (euphorbia boma hedge), rangach (main gate), simba (bachelors' hut), dero (granary)",
+          "pronunciation": "da-la / chiel / ran-gach / sim-ba / de-ro",
+          "context": "G. A. S. Northcote (1907) 'The Nilotic Kavirondo', pp. 58–59",
+          "audioFile": null
+        },
+        {
+          "english": "Foundational Ancestors & Migration Genealogy of the Ja-Luo (Hobley 1902 p. 27 & 1903 pp. 326–331)",
+          "translation": "Podho → Ramogi (Got Ramogi) → Chwanya, Jok, Omolo, Kisodhi, Gem, Kano, Sakwa, Seme, Asembo, Uyoma, Karachuonyo",
+          "pronunciation": "po-dho -> ra-mo-gi -> chwa-nya, jok, o-mo-lo",
+          "context": "C. W. Hobley (1902) 'Eastern Uganda', p. 27 & (1903) 'Anthropological Studies in Kavirondo and Nandi', pp. 326–331",
+          "audioFile": null
+        },
+        {
+          "english": "Clan Totem & Sacred Taboo System (20 Kwero Totems in Hobley 1903 pp. 347–349)",
+          "translation": "kwero (clan totem/taboo: e.g., omieri python, ondiek hyena, winyo bird, rech fish, liech elephant)",
+          "pronunciation": "kwe-ro",
+          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 347–349",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Sun/Sky Deity & Ancestral Spirit Veneration (Northcote 1907 p. 65 & Hobley 1903)",
+          "translation": "Chieng' (the Sun) / Nyasaye (Were) & tipo / juogi (ancestral spirits)",
+          "pronunciation": "chieng / nya-sa-ye / ti-po / juo-gi",
+          "context": "G. A. S. Northcote (1907, p. 65) & C. W. Hobley (1903, p. 344)",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Historical Lexicon (Mill-Hill Fathers 1920)"
+  "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, Johnston 1902, Northcote 1907 & Mill-Hill Fathers 1920)"
 }

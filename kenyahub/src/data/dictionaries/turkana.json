@@ -13159,6 +13159,35 @@
         }
       ]
     }
+,
+    {
+      "id": "dundas-1910-johnston-1902-beech-1911-turkana",
+      "name": "Dundas (1910), Johnston (1902) & Beech (1911) Historical Turkana Clans, Totems & Comparative Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "10 Turkana Clans & Totems Recorded by Hon. K. R. Dundas (1910 p. 59)",
+          "translation": "Ngissir, Ngimonia, Ngichoro, Ngipucho, Ngimeturona, Ngikatapa, Ngikaleso, Ngissiger, Ngilukumong, Ngipongaa",
+          "pronunciation": "ngis-sir, ngi-mo-ni-a, ngi-cho-ro, ngi-lu-ku-mong",
+          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, p. 59",
+          "audioFile": null
+        },
+        {
+          "english": "12 Traditional Turkana Ecological Months Recorded by Dundas (1910 p. 62) & Barton (1921 p. 71)",
+          "translation": "Lodungi (Jan), Lomoruk (Feb), Loichoto (Mar), Titima (Apr), Yeliyel (May), Lopo (Jun), Lotiak (Jul), Lolingachunu (Aug), Lothaban (Sep), Lolongu (Oct), Lorarrar (Nov), Lugwan (Dec)",
+          "pronunciation": "lo-dun-gi, lo-mo-ruk, loi-cho-to, ti-ti-ma, ye-li-yel, lo-po, lo-ti-ak",
+          "context": "Hon. K. R. Dundas (1910, p. 62) & Juxon Barton (1921, p. 71)",
+          "audioFile": null
+        },
+        {
+          "english": "Turkana–Suk Shared Cognates & Circular Wrist-Knife (Beech 1911 Appendix p. 151 & Johnston 1902)",
+          "translation": "abarait (circular wrist-knife), akwara (spear), ngatuk (cattle), akipi (water), akim (fire), akolong (sun)",
+          "pronunciation": "a-ba-rait / a-kwa-ra / nga-tuk / a-ki-pi",
+          "context": "Sir Harry Johnston (1902, pp. 842–852) & Mervyn W. H. Beech (1911, p. 151)",
+          "audioFile": null
+        }
+      ]
+    }
   ],
-  "source": "Public Domain Historical Lexicon (Juxon Barton 1921)"
+  "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Juxon Barton 1921)"
 }

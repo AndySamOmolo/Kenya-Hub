@@ -9,9 +9,9 @@
     "Baringo"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "1.0.0",
-  "lastUpdated": "2026-10-23",
-  "contributorNote": "Ilchamus (Camus / Njemps) dictionary compiled from Rainer Vossen ('The Eastern Nilotes', 1982 — Camus comparative vocabulary on Wikipedia Eastern_Nilotic_languages) and Sir Harry H. Johnston ('The Uganda Protectorate', 1902 — Public Domain).",
+  "dictionaryVersion": "2.0.0",
+  "lastUpdated": "2026-10-25",
+  "contributorNote": "Ilchamus (Camus / Njemps / En-jemusi) dictionary compiled from Hon. K. R. Dundas ('Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, 1910 — Public Domain), Sir Harry H. Johnston ('The Uganda Protectorate, Vol. II', 1902 — Public Domain), Mervyn W. H. Beech ('The Suk: Their Language and Folklore', 1911 — Public Domain), and Rainer Vossen ('The Eastern Nilotes', 1982).",
   "categories": [
     {
       "id": "greetings",
@@ -132,16 +132,16 @@
       "entries": [
         {
           "english": "People of Ilchamus ('People who see far')",
-          "translation": "Ilchamus (sg. Olchamus)",
-          "pronunciation": "il-cha-mus",
-          "context": "Wikipedia Ilchamus_people",
+          "translation": "Ilchamus (sg. Olchamus); Suk exonym: En-jemusi",
+          "pronunciation": "il-cha-mus / en-je-mu-si",
+          "context": "Dundas (1910), Beech (1911) & Wikipedia Ilchamus_people",
           "audioFile": null
         },
         {
           "english": "Person / People",
           "translation": "ltung'ani (pl. ltung'ana)",
           "pronunciation": "ltung-a-ni",
-          "context": "Camus / North Maa",
+          "context": "Camus / North Maa (Johnston 1902)",
           "audioFile": null
         },
         {
@@ -478,6 +478,90 @@
           "translation": "a-irrag (airrag)",
           "pronunciation": "air-rag",
           "context": "Camus / North Maa",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "historical-baringo-dundas-1910",
+      "name": "Dundas (1910), Johnston (1902) & Beech (1911) Historical Corpus (Clans, Totems & 12-Month Calendar)",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "The two sister Njemps (Ilchamus) settlements on the Tigrish & Molo rivers",
+          "translation": "Ilkeroi (Njemps Kubwa) & Ilmae (Njemps Ndogo)",
+          "pronunciation": "il-ke-roi / il-ma-e",
+          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, p. 50",
+          "audioFile": null
+        },
+        {
+          "english": "Ilchamus Clan #1 (Totem: Baboon & Rain)",
+          "translation": "Il-Kapis",
+          "pronunciation": "il-ka-pis",
+          "context": "Hon. K. R. Dundas (1910) p. 56 — Njemps Clan & Totem Table",
+          "audioFile": null
+        },
+        {
+          "english": "Ilchamus Clan #2 (Totem: Wild Pig)",
+          "translation": "Il-Murtanat",
+          "pronunciation": "il-mur-ta-nat",
+          "context": "Hon. K. R. Dundas (1910) p. 56 — Njemps Clan & Totem Table",
+          "audioFile": null
+        },
+        {
+          "english": "Ilchamus Clan #3 (Totem: Sun & Spit-Cobra)",
+          "translation": "Il-Parsaina",
+          "pronunciation": "il-par-sai-na",
+          "context": "Hon. K. R. Dundas (1910) p. 56 — Njemps Clan & Totem Table",
+          "audioFile": null
+        },
+        {
+          "english": "Ilchamus Clan #4 (Totem: Frog / Toad)",
+          "translation": "Il-Keroi",
+          "pronunciation": "il-ke-roi",
+          "context": "Hon. K. R. Dundas (1910) p. 56 — Njemps Clan & Totem Table",
+          "audioFile": null
+        },
+        {
+          "english": "Ilchamus Clan #5 (Totem: Elephant & Fish)",
+          "translation": "Il-Mae",
+          "pronunciation": "il-ma-e",
+          "context": "Hon. K. R. Dundas (1910) p. 56 — Njemps Clan & Totem Table",
+          "audioFile": null
+        },
+        {
+          "english": "Ilchamus Clan #6 (Totem: Python)",
+          "translation": "Il-Masula",
+          "pronunciation": "il-ma-su-la",
+          "context": "Hon. K. R. Dundas (1910) p. 56 — Njemps Clan & Totem Table",
+          "audioFile": null
+        },
+        {
+          "english": "Ilchamus Clan #7 (Totem: Leopard & Wild Dog)",
+          "translation": "Il-Egoishu / Il-Kumani / Il-Toijo",
+          "pronunciation": "il-e-goi-shu / il-ku-ma-ni / il-toi-jo",
+          "context": "Hon. K. R. Dundas (1910) p. 56 — Njemps Clan & Totem Table",
+          "audioFile": null
+        },
+        {
+          "english": "Ilchamus Clan #8 (Prophet / Ritual Seer lineage)",
+          "translation": "Il-Kesiani / Il-Loibonok / Il-Kesumai",
+          "pronunciation": "il-ke-si-a-ni / il-loi-bo-nok",
+          "context": "Hon. K. R. Dundas (1910) p. 56 — Njemps Clan & Totem Table",
+          "audioFile": null
+        },
+        {
+          "english": "12 Traditional Ilchamus (Njemps) Ecological Months (Dry & Rainy Seasons)",
+          "translation": "Lkujorok, Loirujruj, Lapa le-nkare, Lapa le-nkima, Lapa le-dong'u, Lapa le-morijoi",
+          "pronunciation": "lku-jo-rok, loi-ruj-ruj, la-pa le-nka-re",
+          "context": "Hon. K. R. Dundas (1910) p. 62 — Baringo District 12-Month Calendar",
+          "audioFile": null
+        },
+        {
+          "english": "Elder council regulating the Tigrish/Perkerra irrigation dam & furrows",
+          "translation": "Il-payiani le-nkare (Council of the Water Furrows)",
+          "pronunciation": "il-pa-yia-ni le-nka-re",
+          "context": "Hon. K. R. Dundas (1910, pp. 52–53) & Mervyn Beech (1911, p. 34) — Ilchamus irrigation law",
           "audioFile": null
         }
       ]
