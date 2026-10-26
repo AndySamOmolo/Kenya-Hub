@@ -12,7 +12,8 @@ export async function generateMetadata({
 
   if (!county) {
     return {
-      title: "County Not Found | KenyaHub",
+      title: "County Not Found",
+      robots: { index: false, follow: true },
       description: "This county could not be found on KenyaHub.",
     };
   }

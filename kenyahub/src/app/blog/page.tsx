@@ -5,15 +5,15 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | KenyaHub",
+  title: "Kenya Guides, Tax & Cultural Heritage Blog",
   description: "Articles, guides, and updates on Kenyan tools, government services, education, and culture.",
   alternates: {
-    canonical: "https://kenyahub.me/blog",
+    canonical: "https://kenyahub.me/blog/",
   },
   openGraph: {
-    title: "Blog | KenyaHub",
+    title: "Kenya Guides, Tax & Cultural Heritage Blog",
     description: "Articles, guides, and updates on Kenyan tools, government services, education, and culture.",
-    url: "https://kenyahub.me/blog",
+    url: "https://kenyahub.me/blog/",
     siteName: "KenyaHub",
     type: "website",
   },
@@ -85,7 +85,7 @@ export default async function BlogPage() {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://kenyahub.me/blog",
+        item: "https://kenyahub.me/blog/",
       },
     ],
   };
@@ -125,7 +125,7 @@ export default async function BlogPage() {
             key={post.slug}
             className="bg-bg-card border border-border rounded-xl p-6 hover:border-gold transition-colors group"
           >
-            <Link href={`/blog/${post.slug}`} className="block">
+            <Link href={`/blog/${post.slug}/`} className="block">
               <h2 className="text-xl font-semibold text-text-primary mb-2 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
                 {post.title}
               </h2>

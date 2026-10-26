@@ -1,11 +1,10 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import { useState, useMemo, useEffect, Suspense } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
-import { getCategoryInfo, getToolUsageScore } from "@/lib/tools-registry";
+import { TOOLS, TOOL_CATEGORIES, getCategoryInfo, getToolUsageScore } from "@/lib/tools-registry";
 import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import { ArrowDownAZ, LayoutList, Pin, TrendingUp, Wrench } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -13,10 +12,8 @@ import SearchInput from "@/components/ui/SearchInput";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { useMounted } from "@/lib/useMounted";
 
-function ToolsContent() {
-  const searchParams = useSearchParams();
-  const initialCategory = searchParams.get("category") || "all";
-  const [selectedCategory, setSelectedCategory] = useState(initialCategory);
+export default function ToolsHubPage() {
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">("popular");
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
@@ -24,12 +21,24 @@ function ToolsContent() {
   const mounted = useMounted();
 
   useEffect(() => {
-    const cat = searchParams.get("category");
-    if (cat) setSelectedCategory(cat);
-  }, [searchParams]);
+    const syncFromUrl = () => {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const cat = params.get("category");
+        const q = params.get("q");
+        if (cat) setSelectedCategory(cat);
+        if (q) setSearchQuery(q);
+      } catch {
+        // ignore
+      }
+    };
+
+    syncFromUrl();
+    window.addEventListener("popstate", syncFromUrl);
+    return () => window.removeEventListener("popstate", syncFromUrl);
+  }, []);
 
   useEffect(() => {
-    // Load pinned tools
     const loadPinned = () => {
       try {
         const saved = localStorage.getItem("kh-pinned-tools");
@@ -43,7 +52,6 @@ function ToolsContent() {
       }
     };
 
-    // Load visit counts
     const loadVisits = () => {
       setVisitCounts(getToolVisitCounts());
     };
@@ -85,26 +93,41 @@ function ToolsContent() {
       if (sortBy === "alphabetical") return labelComparison;
       if (sortBy === "category") return a.category.localeCompare(b.category) || labelComparison;
 
-      // "popular" — use real visit counts if user has any, else curated baselines
-      if (hasAnyVisits()) {
+      if (mounted && hasAnyVisits()) {
         const aVisits = visitCounts[a.slug] ?? 0;
         const bVisits = visitCounts[b.slug] ?? 0;
         return bVisits - aVisits || labelComparison;
       }
       return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
     });
-  }, [selectedCategory, searchQuery, sortBy, visitCounts]);
+  }, [selectedCategory, searchQuery, sortBy, visitCounts, mounted]);
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "KenyaHub Free Online Tools & Calculators for Kenya",
+    numberOfItems: TOOLS.length,
+    itemListElement: TOOLS.map((tool, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: tool.title,
+      url: `https://kenyahub.me/tools/${tool.slug}/`,
+    })),
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
       {/* Header */}
       <div className="mb-4 sm:mb-8">
         <h1 className="text-2xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2">
-          <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
+          <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools &amp; Calculators
         </h1>
-        <p className="text-xs sm:text-base text-text-muted">
-          {TOOLS.length} free tools built for Kenya — search or browse by
-          category
+        <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
+          Explore {TOOLS.length} free digital calculators, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 22 Kenyan language courses.
         </p>
       </div>
 
@@ -122,7 +145,7 @@ function ToolsContent() {
               return (
                 <Link
                   key={tool.slug}
-                  href={`/tools/${tool.slug}`}
+                  href={`/tools/${tool.slug}/`}
                   className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl p-3.5 sm:p-5 block group"
                 >
                   <div className="flex items-start gap-3 sm:gap-4">
@@ -194,7 +217,7 @@ function ToolsContent() {
         </div>
       </div>
 
-      {/* Category Pills — Single-line horizontal scrolling pills in the highlighted screenshot style */}
+      {/* Category Pills */}
       <ExpandablePillRow className="mb-3 sm:mb-3.5">
         <button
           onClick={() => setSelectedCategory("all")}
@@ -265,7 +288,7 @@ function ToolsContent() {
             return (
               <Link
                 key={tool.slug}
-                href={`/tools/${tool.slug}`}
+                href={`/tools/${tool.slug}/`}
                 className="tool-card bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 block group"
               >
                 <div className="flex items-start gap-2.5 sm:gap-3">
@@ -293,14 +316,19 @@ function ToolsContent() {
           })}
         </div>
       )}
-    </div>
-  );
-}
 
-export default function ToolsHubPage() {
-  return (
-    <Suspense fallback={<div className="p-8 text-center text-text-muted">Loading tools...</div>}>
-      <ToolsContent />
-    </Suspense>
+      {/* Editorial Directory Guide for Users & Crawlers */}
+      <section className="mt-10 sm:mt-16 bg-bg-card border border-border rounded-2xl p-5 sm:p-8 space-y-4">
+        <h2 className="text-base sm:text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+          About the KenyaHub Public Utility Directory
+        </h2>
+        <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+          Every calculator and reference directory on KenyaHub is engineered around official Kenyan statutory schedules, Gazette Notices, and institutional datasets—including the <strong>Kenya Revenue Authority (KRA)</strong> Income Tax Act bands, <strong>Social Health Authority (SHA/SHIF)</strong> and <strong>NSSF Tier I &amp; II</strong> schedules, <strong>Energy and Petroleum Regulatory Authority (EPRA)</strong> electricity tariffs, <strong>Kenya Institute of Curriculum Development (KICD)</strong> CBC guidelines, and <strong>KUCCPS</strong> degree placement formulas.
+        </p>
+        <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+          All calculations run 100% locally in your web browser without storing personal salary or financial inputs on external servers. Select any tool above to launch the interactive calculator, review step-by-step statutory methodology notes, and read answers to common Kenyan regulatory questions.
+        </p>
+      </section>
+    </div>
   );
 }

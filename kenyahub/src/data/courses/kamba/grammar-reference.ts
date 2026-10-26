@@ -4,7 +4,7 @@
 // 1. Rev. Dr. J. L. Krapf (1850) "Vocabulary of Six East-African Languages" (Tübingen — Public Domain)
 // 2. J. T. Last (1885) "Grammar of the Kamba Language" (SPCK, London — Public Domain)
 // 3. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages" (Cambridge — Public Domain)
-// 4. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Magic"
+// 4. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
 // 5. Sir Harry H. Johnston (1919) "A Comparative Study of the Bantu and Semi-Bantu Languages" (#12 Kamba)
 // 6. Gerhard Lindblom (1920) "The Akamba in British East Africa: An Ethnological Monograph" (Uppsala — Public Domain)
 // ============================================================

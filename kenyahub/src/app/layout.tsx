@@ -108,38 +108,36 @@ const themeScript = `
 const consentModeScript = `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'region': ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH'],
+  'wait_for_update': 500
+});
 try {
   var c = localStorage.getItem('kh-cookie-consent');
   var p = null;
   try { p = JSON.parse(localStorage.getItem('kh-cookie-preferences') || 'null'); } catch(e) {}
-  var analyticsGranted = p ? p.analytics === true : c === 'accepted';
-  var advertisingGranted = p ? p.advertising === true : c === 'accepted';
-  if (analyticsGranted || advertisingGranted) {
+  if (p || c === 'accepted' || c === 'declined') {
+    var analyticsGranted = p ? p.analytics === true : c === 'accepted';
+    var advertisingGranted = p ? p.advertising === true : c === 'accepted';
     gtag('consent', 'default', {
       'ad_storage': advertisingGranted ? 'granted' : 'denied',
       'ad_user_data': advertisingGranted ? 'granted' : 'denied',
       'ad_personalization': advertisingGranted ? 'granted' : 'denied',
-      'analytics_storage': analyticsGranted ? 'granted' : 'denied',
-      'wait_for_update': 500
+      'analytics_storage': analyticsGranted ? 'granted' : 'denied'
     });
   } else {
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied',
-      'analytics_storage': 'denied',
-      'wait_for_update': 500
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted',
+      'analytics_storage': 'granted'
     });
   }
-} catch(e) {
-  gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'analytics_storage': 'denied',
-    'wait_for_update': 500
-  });
-}
+} catch(e) {}
 gtag('js', new Date());
 gtag('config', 'G-Y069879V7Y');
 `;
@@ -167,9 +165,10 @@ export default function RootLayout({
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
       </head>
       <body className="min-h-screen flex flex-col">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-gold focus:text-black focus:font-bold focus:text-xs">Skip to main content</a>
         <ThemeProvider>
           <Navbar />
-          <main className="flex-1 w-full min-w-0 max-w-full overflow-x-hidden">{children}</main>
+          <main id="main-content" className="flex-1 w-full min-w-0 max-w-full overflow-x-hidden">{children}</main>
           <Footer />
           <CookieConsent />
         </ThemeProvider>

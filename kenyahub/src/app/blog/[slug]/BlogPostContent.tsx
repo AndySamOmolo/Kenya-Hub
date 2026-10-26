@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState, useEffect, useCallback, useRef } from "react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { markdownToHtml } from "@/lib/markdown";
+import { getSourceById } from "@/data/language-sources";
 
 interface BlogPost {
   $id: string;
@@ -18,8 +20,6 @@ interface BlogPost {
   content?: string;
   sources?: { sourceId: string; title: string; note: string }[];
 }
-
-import { markdownToHtml } from "@/lib/markdown";
 
 export default function BlogPostContent({ post }: { post: BlogPost | null }) {
   const progressRef = useRef<HTMLDivElement>(null);
@@ -59,7 +59,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
   if (!post) {
     return (
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+      <div data-error-page="true" data-nosnippet="true" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         <div className="flex justify-center mb-4">
           <DynamicIcon emoji="📄" className="w-12 h-12 text-text-muted" />
         </div>
@@ -69,7 +69,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
         <p className="text-text-secondary mb-6">
           The blog post you&apos;re looking for doesn&apos;t exist or has been removed.
         </p>
-        <Link href="/blog" className="btn-primary inline-block">
+        <Link href="/blog/" className="btn-primary inline-block">
           ← Back to Blog
         </Link>
       </div>
@@ -77,12 +77,16 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
   }
 
   const contentHtml = post.content ? markdownToHtml(post.content) : "";
+  const isThinOrEmbedHeavy =
+    (post.content?.length || 0) < 1200 ||
+    Boolean(post.readTime && post.readTime <= 1) ||
+    contentHtml.includes("<iframe");
 
   return (
     <>
       <div ref={progressRef} className="fixed top-0 left-0 z-50 h-0.5 bg-gold transition-all duration-150 ease-out" style={{ width: "0%" }} />
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+      <article data-error-page={isThinOrEmbedHeavy ? "true" : undefined} className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         <nav className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
           <Link href="/" className="hover:text-gold transition-colors">
             Home
@@ -90,7 +94,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
-          <Link href="/blog" className="hover:text-gold transition-colors">
+          <Link href="/blog/" className="hover:text-gold transition-colors">
             Blog
           </Link>
           <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -167,12 +171,36 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           <aside className="mt-10 rounded-xl border border-border bg-bg-card p-4 sm:p-5">
             <h2 className="text-sm font-semibold text-text-primary">Sources and context</h2>
             <div className="mt-3 space-y-3">
-              {post.sources.map((source) => (
-                <div key={source.sourceId}>
-                  <p className="text-xs font-medium text-gold">{source.title}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-text-secondary">{source.note}</p>
-                </div>
-              ))}
+              {post.sources.map((source) => {
+                const sourceMeta = getSourceById(source.sourceId);
+                return (
+                  <div key={source.sourceId} className="border-b border-border/50 last:border-0 pb-3 last:pb-0">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <p className="text-xs font-medium text-gold">{source.title}</p>
+                      {sourceMeta && (
+                        <span className="text-[0.625rem] px-2 py-0.5 rounded bg-bg-elevated border border-border text-text-muted">
+                          Published {sourceMeta.published}
+                        </span>
+                      )}
+                    </div>
+                    <p className="mt-1 text-xs leading-relaxed text-text-secondary">{source.note}</p>
+                    {sourceMeta && sourceMeta.languages.length > 0 && (
+                      <div className="mt-2 flex flex-wrap items-center gap-1.5">
+                        <span className="text-[0.6rem] text-text-muted">Related language courses:</span>
+                        {sourceMeta.languages.map((lang) => (
+                          <Link
+                            key={lang}
+                            href={`/tools/learn/${lang}/`}
+                            className="text-[0.6rem] px-2 py-0.5 rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors capitalize"
+                          >
+                            Learn {lang} →
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </aside>
         )}
@@ -214,7 +242,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
               </div>
             </div>
             <Link
-              href="/blog"
+              href="/blog/"
               className="text-sm text-gold hover:text-gold-light flex items-center gap-1"
             >
               ← Back to all posts

@@ -43,13 +43,16 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
 
   if (!townInfo) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+      <div data-error-page="true" data-nosnippet="true" className="max-w-4xl mx-auto px-4 py-16 text-center">
         <h1 className="text-2xl font-bold text-text-primary mb-2">City Not Found</h1>
         <p className="text-text-muted text-sm mb-6">We don&apos;t have matatu route data for this city yet.</p>
         <Link href="/matatu/" className="text-xs font-semibold text-gold hover:underline">← Back to Matatu Hub</Link>
       </div>
     );
   }
+
+  const minFare = routes.length > 0 ? Math.min(...routes.map((r) => r.fareMin)) : 30;
+  const maxFare = routes.length > 0 ? Math.max(...routes.map((r) => r.fareMax)) : 200;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -65,10 +68,10 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-3xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-          <BusFront className="w-8 h-8 text-gold flex-shrink-0 inline-block mr-2" />{townInfo.name} Matatu Routes
+          <BusFront className="w-8 h-8 text-gold flex-shrink-0 inline-block mr-2" />{townInfo.name} Matatu Routes, Stages &amp; Fares
         </h1>
-        <p className="text-text-muted text-sm">
-          Browse {routes.length} verified matatu routes in {townInfo.name}. View stages, fares, and SACCO details.
+        <p className="text-text-secondary text-sm max-w-3xl leading-relaxed">
+          {townInfo.description} Browse {routes.length} verified PSV corridors across {townInfo.name} ({townInfo.county} County), operated by {saccos.length} registered SACCOs with fares ranging from KES {minFare} to KES {maxFare}.
         </p>
       </div>
 
@@ -112,7 +115,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
         {filteredRoutes.map((r) => (
           <Link
             key={r.slug}
-            href={`/matatu/${townSlug}/${r.slug}`}
+            href={`/matatu/${townSlug}/${r.slug}/`}
             className="bg-bg-card border border-border rounded-xl p-5 hover:border-gold/50 transition-all group flex flex-col justify-between"
           >
             <div>
@@ -122,9 +125,9 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
                     <span className="text-xs font-bold text-gold">{r.routeNumber}</span>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">
+                    <h2 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">
                       {r.name}
-                    </h3>
+                    </h2>
                     <p className="text-[0.65rem] text-text-muted">{r.saccoName}</p>
                   </div>
                 </div>
@@ -155,7 +158,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
             <div className="flex items-center justify-between pt-2 border-t border-border/40 text-xs">
               <span className="font-extrabold text-gold">KES {r.fareMin} – {r.fareMax}</span>
               <span className="text-[0.7rem] text-kenya-green-light font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-                View Map & Stages →
+                View Map &amp; Stages →
               </span>
             </div>
           </Link>
@@ -169,6 +172,21 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
           <p className="text-xs text-text-muted">Try adjusting your search query or SACCO filter.</p>
         </div>
       )}
+
+      {/* Town Commuter Information Section */}
+      <section className="mt-12 bg-bg-card border border-border rounded-2xl p-6 sm:p-8 space-y-4">
+        <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+          Public Transport &amp; Matatu Guide for {townInfo.name} ({townInfo.county} County)
+        </h2>
+        <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+          Public Service Vehicles (PSVs) in <strong>{townInfo.name}</strong> operate along designated corridors regulated by the{" "}
+          <strong>National Transport and Safety Authority (NTSA)</strong> and county transport directorates. Our directory tracks{" "}
+          <strong>{routes.length} primary routes</strong> served by <strong>{saccos.length} registered SACCOs</strong> ({saccos.slice(0, 6).join(", ")}{saccos.length > 6 ? ", and others" : ""}).
+        </p>
+        <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+          Select any route card above to view its interactive stage-by-stage map, exact boarding termini, operating hours, and off-peak versus peak fare estimates.
+        </p>
+      </section>
     </div>
   );
 }

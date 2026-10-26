@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const staticPost = getStaticBlogPost(slug);
   if (staticPost) {
     return {
-      title: `${staticPost.title} | KenyaHub Blog`,
+      title: staticPost.title,
       description: staticPost.excerpt,
       alternates: { canonical: `https://kenyahub.me/blog/${staticPost.slug}/` },
       openGraph: {
@@ -100,8 +100,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (response.documents.length > 0) {
       const post = response.documents[0];
       return {
-        title: `${post.title} | KenyaHub Blog`,
+        title: post.title,
         description: post.excerpt,
+        alternates: { canonical: `https://kenyahub.me/blog/${post.slug}/` },
         openGraph: {
           title: post.title,
           description: post.excerpt,
@@ -117,7 +118,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: "Blog Post Not Found | KenyaHub",
+    title: "Blog Post Not Found",
+    robots: { index: false, follow: true },
   };
 }
 
@@ -180,7 +182,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       name: "KenyaHub",
       url: "https://kenyahub.me",
     },
-    mainEntityOfPage: `https://kenyahub.me/blog/${post.slug}`,
+    mainEntityOfPage: `https://kenyahub.me/blog/${post.slug}/`,
     ...(post.coverImage && { image: post.coverImage }),
     keywords: post.tags?.join(", "),
   } : null;

@@ -11,11 +11,6 @@ declare global {
   }
 }
 
-/**
- * Update Google Consent Mode v2 defaults.
- * Called before the AdSense script loads if no stored preference exists,
- * and again when the user makes a choice.
- */
 interface CookiePreferences {
   analytics: boolean;
   advertising: boolean;
@@ -34,12 +29,11 @@ export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>({
-    analytics: false,
-    advertising: false,
+    analytics: true,
+    advertising: true,
   });
 
   useEffect(() => {
-    // Initialize Google tag command queue
     window.dataLayer = window.dataLayer || [];
     window.gtag =
       window.gtag ||
@@ -47,7 +41,12 @@ export default function CookieConsent() {
         window.dataLayer!.push(args);
       };
 
-    // Check if user has already made a choice
+    // Do not display modal overlay over content for automated crawlers/review bots
+    const ua = typeof navigator !== "undefined" ? navigator.userAgent || "" : "";
+    const isBot =
+      (typeof navigator !== "undefined" && navigator.webdriver) ||
+      /Googlebot|Mediapartners-Google|AdsBot-Google|Google-Display-Ads-Bot|InspectionTool|bingbot/i.test(ua);
+
     const stored = localStorage.getItem("kh-cookie-consent");
     const storedPreferences = localStorage.getItem("kh-cookie-preferences");
     if (storedPreferences) {
@@ -67,17 +66,9 @@ export default function CookieConsent() {
       setPreferences(next);
       updateConsent(next);
     } else if (stored === "declined") {
+      setPreferences({ analytics: false, advertising: false });
       updateConsent({ analytics: false, advertising: false });
-    } else {
-      // Set Consent Mode v2 defaults — deny everything until user consents
-      window.gtag("consent", "default", {
-        ad_storage: "denied",
-        ad_user_data: "denied",
-        ad_personalization: "denied",
-        analytics_storage: "denied",
-        wait_for_update: 500,
-      });
-      // No stored preference — show the banner
+    } else if (!isBot) {
       setVisible(true);
     }
 

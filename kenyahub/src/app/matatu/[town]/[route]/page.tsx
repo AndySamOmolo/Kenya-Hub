@@ -31,7 +31,7 @@ export async function generateMetadata({
 
   if (!townObj || !routeObj) {
     return {
-      title: "Matatu Route Not Found | KenyaHub",
+      title: "Matatu Route Not Found",
       robots: { index: false, follow: true },
     };
   }

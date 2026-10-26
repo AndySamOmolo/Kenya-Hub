@@ -163,11 +163,7 @@ export default function CountyDetailScreen() {
       title: "County Budget & Expenditure Tracker",
       subtitle: "Compare All 47 County Allocations",
       icon: "bar-chart-outline" as const,
-      action: () =>
-        router.push({
-          pathname: "/tools/[slug]",
-          params: { slug: "county-budget-tracker" },
-        }),
+      action: () => router.push("/(tabs)/county"),
     },
     {
       title: "SHA / SHIF Accredited Hospitals",

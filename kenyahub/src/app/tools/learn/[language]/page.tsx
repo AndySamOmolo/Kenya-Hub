@@ -15,7 +15,7 @@ export async function generateMetadata({
   const course = getCourse(language);
   if (!course) {
     return {
-      title: "Language Course Not Found | KenyaHub",
+      title: "Language Course Not Found",
       robots: { index: false, follow: true },
     };
   }

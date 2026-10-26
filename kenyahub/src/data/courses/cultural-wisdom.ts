@@ -31,7 +31,7 @@ import type { CourseUnit, LanguageConfig, GrammarSection } from "./types";
 // - Gerhard Lindblom (1920) "The Akamba in British East Africa" (Uppsala)
 // - Mill-Hill Fathers (1920) "A Handbook of the Kavirondo Language" (London)
 // - Juxon Barton (1921) "Turkana Grammatical Notes and Vocabulary" (JRAI Vol. 51)
-// - C. W. Hobley (1922) "Bantu Beliefs and Magic" (H. F. & G. Witherby, London)
+// - C. W. Hobley (1922) "Bantu Beliefs and Customary Institutions" (H. F. & G. Witherby, London)
 // - Marion S. Stevenson (1927) "Specimens of Kikuyu Proverbs" (Festschrift Meinhof)
 // - Rev. N. Stam (1929) "The Bahanga" (Catholic Anthropological Conference, Washington, D.C.)
 // ============================================================
@@ -101,7 +101,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     indigenous: "Erishunye anaa en-gaa o-'sighiria obo (#13) • Meiyopoo ol-owaru ol-kujita (#41).",
     literalTranslation: "He separates himself from his friends like a sick (or dead) donkey (#13) • The grass does not hide a beast of prey forever (#41).",
     meaning: "Recorded verbatim by A. C. Hollis (1905, p. 240 Proverb #13 & p. 245 Proverb #41): isolating oneself from companions brings peril, and hidden danger or wrongdoing eventually comes to light.",
-    englishEquivalent: "Murder will out.",
+    englishEquivalent: "Truth will always come to light.",
     theme: 'nature',
     sourceCitation: 'A. C. Hollis, The Masai: Their Language and Folklore (1905, p. 240 Proverb #13 & p. 245 Proverb #41)'
   },
@@ -1826,7 +1826,7 @@ export const SWAHILI_GRAMMAR_SECTIONS: SwahiliGrammarSection[] = [
    - **(2) Applied (*Ap.*, *-i- / -e-*, *-li- / -le-*, and doubled *-ili- / -ele-*)**: *fanyia* (do for/at), *fungia* (fasten with/for), *ishiliza* (wait to the end of for a special purpose, p. 109), *kimbilia* (run to/take refuge with vs. *kimbia* run away from, p. 153).
    - **(3) Causal (*Cs.*, *-z- / -sh- / -s- / -y-*) — 6 Varieties of Causation (pp. xi–xii)**: (a) Simple causation (*jaa → jaza* fill), (b) Compulsive (*lipa → lipiza* make pay), (c) Permissive (*ingia → ingiza* let come in), (d) Suasive (*omba → ombesha* induce to beg), (e) Passive (*acha → achisha* let oneself be left), and (f) Consequential (*ogopa → ogofya* cause to fear by being terrible), plus Intensive (*kata → katiza* cut short/interrupt).
    - **(4) Reciprocal (*Rp.*, *-an-*) — 5 Aspects (p. xii)**: (a) Reciprocal proper (*pendana* love each other), (b) Connected/serial (*fuatana* follow in order), (c) Combined/concerted (*fanyana shauri* deliberate together), (d) Interaction of parts (*fungamana* be interlaced, *ungamana*), and (e) Potential *-kana* (*patikana, wezekana, onekana, julikana*).
-   - **(5) Reflexive (*Rf.*, *ji-*, p. xii & p. 116)**: Simple reflexive (*jiua* commit suicide, *jificha* hide oneself) or nuanced shades of automatic action, pleasure, pretence, or conceit (*jienda* go of itself, *jiendea* stroll for pleasure, *jigonjweza* sham sickness, *jiona* be conceited, *jikohoza* give a significant cough).
+   - **(5) Reflexive (*Rf.*, *ji-*, p. xii & p. 116)**: Simple reflexive (*jikinga* protect oneself, *jificha* hide oneself) or nuanced shades of automatic action, pleasure, pretence, or conceit (*jienda* go of itself, *jiendea* stroll for pleasure, *jigonjweza* sham sickness, *jiona* be conceited, *jikohoza* give a significant cough).
    - **(6) Reduplicated (*Rd.*, p. xii)**: Repetition, continuity, intensity, or diminution (*endaenda* go on and on, *engaenga* coddle/pet, *kipakupaku* speckled).
    - **(7) Reversive (*Rv.*, *-u- / -o-*, *Nt. -uk- / -ok-*, p. xii)**: Reversing the root action (*funga → fungua* unfasten, *fuma → fumua* unravel, *fumba → fumbua* unclose, *funda → fundua* untie a knot, *jenga → jengua* demolish, *ezeka → ezua* strip thatch).
    - **(8) Stative (*St.*, *-am-* / *-aman-*, p. xiii & p. 200)**: Denoting a relatively permanent state or posture (*inama* stoop/bow, *simama* stand, *egama* recline propped on elbow, *gandama* coagulate/adhere, *tuama* settle, *lowama* be steeped).
@@ -3089,7 +3089,7 @@ export const BORANA_GRAMMAR_SECTIONS: GrammarSection[] = [
 2. **The Five Galla Tribes / *Gadaa* Circumcision Rank Orders (pp. 34, 73, 78, 104, 155, 169, 203)**:
    - **1st**: **horad'a** (p. 203) → **2nd**: **midjile** (p. 169) → **3rd**: **robale** (p. 155) → **4th**: **kilole** (p. 34) → **5th**: **dulo** (p. 104); plus **djara** (surgical circumcision feast held two years after the *Gada / Buta* festival, p. 78), **tchala** (circumcision priests, p. 73), and **cori naga** (ceremonial *Buta* dish, p. 48).
 3. **Political & Judicial Hierarchy, Adoption, Oaths & Heroic Distinctions**:
-   - **Hierarchy**: **moti** (king, fem. *meti*, palace *mazara*, concubines *zadjeda / birmad'u*, groom *nao* leading war-horse *farta lola* or courser *djolle*), **zoreza / zalgana / momoti** (princes/nobles), **aba ganda** (town governor), **aba lafa** (landlord; settled vassals *gubziza*), **mangudo / bera** (senate/judges sitting at *gude dubi* or *yai dyidu*), **aba fuño** ("master of the cord", judicial officer), **cuge** (sergeant/tipstaff), **cabi** (distrainer), **erada** (bailiff), **gindo** (leg-stocks prison), **findja Lali** (execution waterfall in *Hambo*), and **guma** (homicide blood-money / ransom).
+   - **Hierarchy**: **moti** (king, fem. *meti*, palace *mazara*, royal household *zadjeda / birmad'u*, groom *nao* leading war-horse *farta lola* or courser *djolle*), **zoreza / zalgana / momoti** (princes/nobles), **aba ganda** (town governor), **aba lafa** (landlord; settled vassals *gubziza*), **mangudo / bera** (senate/judges sitting at *gude dubi* or *yai dyidu*), **aba fuño** ("master of the cord", judicial officer), **cuge** (sergeant/tipstaff), **cabi** (distrainer), **erada** (bailiff), **gindo** (leg-stocks prison), **findja Lali** (judicial seat in *Hambo*), and **guma** (customary restitution customary restitution / ransom).
    - **Adoption (*gada / balfad'a*)**: **gada guda** (complete adoption) vs. **gada t'ina** (incomplete adoption, p. 53), **gubifad'a** (adopting when already having children, p. 68), and **balfad'a** (solemn single-file procession *waliti ananiti* carrying green **Meeça** twigs to deliver the adoptive son **baldja**, pp. 94, 131).
    - **Oaths & Peacemaking**: **kalatcha** (oath-staff wreathed with *meeça* under the *lafto Michaila* tree, licked before the priest *Gadyo* with the oath *"hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!"*, pp. 31–32), **t'wu — aki — t'wu — tili!** (spitting chewed *tila* grass to ratify a promise, p. 91), **mora wal cabad'a** (holding sacrificial fat together to ratify peace, pp. 43, 172), and **cote wal cabad'u** (hooking the little fingers *moge* together to wager, pp. 47, 66).
    - **Heroic Distinctions**: **gondala** (hero who has slain an enemy, elephant, lion, or buffalo and anoints his head with butter, fixing the **zariti** thorn in his hair during the **gerara** triumphal song and wearing the ivory armlet **ilbora**, earring **d'ugo**, chain pendant **loti**, and bracelet **gudidja**, pp. 20, 66–67, 116, 159, 182) vs. **gurgudu** (unblooded man, p. 69).

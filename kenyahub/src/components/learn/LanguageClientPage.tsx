@@ -18,6 +18,7 @@ import type {
 } from "@/data/courses/types";
 import { MAX_HEARTS, ACHIEVEMENTS } from "@/data/courses/types";
 import {
+  createDefaultProgress,
   loadProgress,
   saveProgress,
   refillHearts,
@@ -25,7 +26,9 @@ import {
   getDueReviews,
 } from "@/lib/learn-progress";
 import { TOOLS } from "@/lib/tools-registry";
+import type { Tool } from "@/lib/types";
 import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
+import { getSourcesForLanguage } from "@/data/language-sources";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -37,7 +40,9 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const course = getCourse(languageId);
   const router = useRouter();
 
-  const [progress, setProgress] = useState<UserProgress | null>(null);
+  const [progress, setProgress] = useState<UserProgress>(() =>
+    createDefaultProgress(languageId)
+  );
   const [view, setView] = useState<PageView>("lessons");
   const [moduleSearch, setModuleSearch] = useState("");
   const [selectedUnitFilter, setSelectedUnitFilter] = useState<string>("all");
@@ -81,7 +86,6 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   }, [languageId]);
 
   const handleToggleUnlockAll = useCallback(() => {
-    if (!progress) return;
     const updated: UserProgress = {
       ...progress,
       unlockAll: !progress.unlockAll,
@@ -105,7 +109,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const handleStartLesson = useCallback(
     (skillId: string, level: number) => {
       const skill = findSkill(skillId);
-      if (!skill || !progress) return;
+      if (!skill) return;
       const reviewItems = getDueReviews(progress);
       if (progress.hearts <= 0) {
         const restored = { ...progress, hearts: MAX_HEARTS, heartsLastRefill: Date.now() };
@@ -122,7 +126,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   );
 
   const handleStartReview = useCallback(() => {
-    if (!progress || !course) return;
+    if (!course) return;
     const reviewItems = getDueReviews(progress);
     if (reviewItems.length === 0) return;
 
@@ -138,7 +142,6 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   const handleLessonComplete = useCallback(
     (result: LessonResult) => {
-      if (!progress) return;
       const updated = applyLessonResult(progress, result);
       setProgress(updated);
       saveProgress(updated);
@@ -159,11 +162,9 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const handleQuitLesson = useCallback(() => {
     setActiveLesson(null);
     setView("lessons");
-    if (progress) {
-      const refreshed = refillHearts(progress);
-      setProgress(refreshed);
-      saveProgress(refreshed);
-    }
+    const refreshed = refillHearts(progress);
+    setProgress(refreshed);
+    saveProgress(refreshed);
   }, [progress]);
 
   const filteredModules = useMemo(() => {
@@ -197,41 +198,73 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   if (!course) {
     return (
-      <ToolShell tool={LEARN_TOOL}>
-        <div className="flex min-h-[50vh] flex-col items-center justify-center px-4 text-center">
-          <div className="flex justify-center mb-4"><HelpCircle className="w-14 h-14 text-text-muted" /></div>
-          <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary">
-            Course not found
-          </h2>
-          <p className="mt-2 text-sm text-text-secondary">
-            The {languageId} course is not available yet. Check back soon!
-          </p>
-          <a
-            href="/tools/learn"
-            className="mt-4 rounded-xl bg-gold px-6 py-2.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110"
-          >
-            Browse languages
-          </a>
-        </div>
-      </ToolShell>
-    );
-  }
-
-  if (!progress) {
-    return (
-      <ToolShell tool={LEARN_TOOL}>
-        <div className="flex min-h-[50vh] items-center justify-center">
-          <div className="text-sm text-text-muted">Loading your progress...</div>
-        </div>
-      </ToolShell>
+      <div data-error-page="true" data-nosnippet="true">
+        <ToolShell tool={LEARN_TOOL}>
+          <div className="flex min-h-[50vh] flex-col items-center justify-center px-4 text-center">
+            <div className="flex justify-center mb-4"><HelpCircle className="w-14 h-14 text-text-muted" /></div>
+            <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary">
+              Course not found
+            </h2>
+            <p className="mt-2 text-sm text-text-secondary">
+              The {languageId} course is not available yet. Check back soon!
+            </p>
+            <a
+              href="/tools/learn/"
+              className="mt-4 rounded-xl bg-gold px-6 py-2.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110"
+            >
+              Browse languages
+            </a>
+          </div>
+        </ToolShell>
+      </div>
     );
   }
 
   const hasGrammar = Boolean(course.grammarSections && course.grammarSections.length > 0);
+  const totalWords = course.units.reduce(
+    (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
+    0
+  );
+  const totalSkills = course.units.reduce((sum, u) => sum + u.skills.length, 0);
+  const sources = getSourcesForLanguage(course.config.id);
+
+  const courseTool: Tool = {
+    ...LEARN_TOOL,
+    title: `Learn ${course.config.name} (${course.config.nativeName}) — Free Interactive Course`,
+    shortTitle: `Learn ${course.config.name}`,
+    description: course.config.description,
+    dataSource:
+      sources.length > 0
+        ? sources.slice(0, 2).map((s) => s.title.split("(")[0].trim()).join(" & ")
+        : LEARN_TOOL.dataSource,
+  };
+
+  const courseFaq = [
+    {
+      question: `How is the ${course.config.name} (${course.config.nativeName}) course structured on KenyaHub?`,
+      answer: `The ${course.config.name} course is organized into ${course.units.length} structured units and ${totalSkills} skill modules teaching ${totalWords.toLocaleString()}+ verified vocabulary items, sentence patterns, grammar paradigms, and cultural proverbs. Learners progress from foundational greetings and numerals to verb conjugations, kinship, and oral literature.`,
+    },
+    {
+      question: `Where is ${course.config.name} spoken in Kenya and which language family does it belong to?`,
+      answer: `${course.config.name} (${course.config.nativeName}) is a ${course.config.family} language spoken by approximately ${course.config.speakers} speakers across ${course.config.counties.join(", ")} in Kenya.`,
+    },
+    {
+      question: `What primary linguistic sources are used for the ${course.config.name} lessons and grammar reference?`,
+      answer:
+        sources.length > 0
+          ? `The ${course.config.name} curriculum is compiled from verified public-domain monographs and open lexical datasets, including ${sources.map((s) => `${s.title} (${s.published})`).join("; ")}.`
+          : `The ${course.config.name} curriculum is compiled from verified Kenyan linguistic monographs and open lexical corpora.`,
+    },
+    {
+      question: `Is the ${course.config.name} language course completely free to use?`,
+      answer: `Yes. All ${totalSkills} ${course.config.name} skill modules, vocabulary tables, grammar reference chapters, cultural proverbs, and mini-games are 100% free with no account registration required. Progress is saved automatically in your browser.`,
+    },
+  ];
 
   return (
     <ToolShell
-      tool={LEARN_TOOL}
+      tool={courseTool}
+      faq={courseFaq}
       breadcrumbSuffix={[{ label: course.config.name }]}
       hideHeader={view === "playing"}
       hideFooter={view === "playing"}
@@ -241,7 +274,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         <div className="mb-3.5 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Link
-              href="/tools/learn"
+              href="/tools/learn/"
               className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light transition-colors shrink-0"
               aria-label="All Languages"
               title="All Languages"
@@ -250,7 +283,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             </Link>
             <CustomSelect
               value={course.config.id}
-              onValueChange={(val) => router.push(`/tools/learn/${val}`)}
+              onValueChange={(val) => router.push(`/tools/learn/${val}/`)}
               options={PUBLISHED_COURSES.map((c) => ({
                 value: c.config.id,
                 label: c.config.name,
@@ -447,7 +480,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           onStartReview={handleStartReview}
           onToggleUnlockAll={handleToggleUnlockAll}
           onGoBack={() => {
-            window.location.href = "/tools/learn";
+            window.location.href = "/tools/learn/";
           }}
         />
       )}

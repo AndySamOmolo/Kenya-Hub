@@ -514,7 +514,7 @@
         },
         {
           "english": "Nuptial Sacrifice (Déca), Nuptial Cow (Rako) & Bride-Price Marriage in Tutschek (1844)",
-          "translation": "déca / déqi (nuptial sacrificial animal slaughtered at a wedding, p. 98) / rako (cow slaughtered at the marriage ceremony whose blood seals the union, p. 152) / muzuro (newly married bride or bridegroom, p. 1) / birmad'u & zadjeda (secondary wives or royal concubines, pp. 136, 180)",
+          "translation": "déca / déqi (nuptial sacrificial animal prepared at a wedding, p. 98) / rako (cow prepared at the marriage ceremony whose blood seals the union, p. 152) / muzuro (newly married bride or bridegroom, p. 1) / birmad'u & zadjeda (secondary wives or royal concubines, pp. 136, 180)",
           "pronunciation": "dee-ca / ra-ko / mu-zu-ro / bir-ma-d'u",
           "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 1, 98, 136, 152, 180",
           "audioFile": null
@@ -695,8 +695,8 @@
           "audioFile": null
         },
         {
-          "english": "Health / Corpse / Deaf / Blind",
-          "translation": "faya (health, healthy; fayiza = cure) / rêfa (dead body, corpse) / duda (deaf) / djama (blind)",
+          "english": "Health / Deceased Body / Deaf / Blind",
+          "translation": "faya (health, healthy; fayiza = cure) / rêfa (dead body, deceased body) / duda (deaf) / djama (blind)",
           "pronunciation": "fa-ya / ree-fa / du-da / dja-ma",
           "context": "Tutschek (1845, §§ 8, 21, 67, 79, pp. 4, 6, 18, 21)",
           "audioFile": null
@@ -1081,7 +1081,7 @@
         },
         {
           "english": "Complete Cattle Classification under Lon (Loni) in Tutschek (1844, p. 160 & Pt. II p. 20)",
-          "translation": "Male cattle: tshabi (newborn calf) → djibitcha (young bull-calf) → gorba (3-year-old steer) → wofana (young bullock) → godiyo (pl. godiyoni, gelded plough-ox) → korma (pl. koromi, breeding bull: korma bordeda with erect hump vs. korma gurra with hanging hump, p. 36) → ulfin → zanga (castrated fattened ox) / Female cattle: tshabi (calf) → rad'a / rada (2-year-old heifer) → goromza (breeding heifer) → zã / zawa (cow; zilga = pregnant/milk cow giving colostrum zilga; gua = weaned calf or cow dried up of milk) → dulatcha (aged cow destined for slaughter)",
+          "translation": "Male cattle: tshabi (newborn calf) → djibitcha (young bull-calf) → gorba (3-year-old steer) → wofana (young bullock) → godiyo (pl. godiyoni, gelded plough-ox) → korma (pl. koromi, breeding bull: korma bordeda with erect hump vs. korma gurra with hanging hump, p. 36) → ulfin → zanga (castrated fattened ox) / Female cattle: tshabi (calf) → rad'a / rada (2-year-old heifer) → goromza (breeding heifer) → zã / zawa (cow; zilga = pregnant/milk cow giving colostrum zilga; gua = weaned calf or cow dried up of milk) → dulatcha (aged cow destined for ceremonial offering)",
           "pronunciation": "tsha-bi, dji-bit-cha, gor-ba, wo-fa-na, go-di-yo, kor-ma, ul-fin, zan-ga / ra-d'a, go-rom-za, za-wa, zil-ga, du-lat-cha",
           "context": "Karl & Lawrence Tutschek (1844–1845) 'Dictionary of the Galla Language', Part I, pp. 36, 160; Part II, p. 20",
           "audioFile": null
@@ -1333,7 +1333,7 @@
         },
         {
           "english": "Die / Kill / Bury",
-          "translation": "du'uu / dua (2s duta, III duziza = cause to die) / ajjeesuu / adjeza (kill; cala = slaughter/offer sacrifice; gorâ = slaughter) / awala (bury; subst. tomb)",
+          "translation": "du'uu / dua (2s duta, III duziza = cause to die) / ajjeesuu / adjeza (kill; cala = ceremonial offering/offer sacrifice; gorâ = ceremonial offering) / awala (bury; subst. tomb)",
           "pronunciation": "du-a / a-dje-za / a-wa-la",
           "context": "Tutschek (1845, §§ 21, 57, 176.b, 177, pp. 6, 15, 53–54, 86)",
           "audioFile": null
@@ -1718,7 +1718,7 @@
         },
         {
           "english": "Political, Judicial & Military Hierarchy in Tutschek (1844)",
-          "translation": "moti (king, fem. meti, p. 171; royal palace = mazara, p. 167; royal concubines = zadjeda / birmad'u, p. 180; royal groom leading war-steed farta lola or courser djolle = nao, p. 177) / zoreza, zalgana & momoti (princes, nobles, p. 184) / aba ganda (town governor chosen from the zoreza, pp. xxi, 6) / aba lafa (landed proprietor; settled tenants/vassals = gubziza, p. 68) / mangudo or bera (senate, court of aldermen & judges sitting at the gude dubi or yai dyidu assembly place, pp. 67, 84, 133, 144, 167) / aba fuño ('master of the cord', judicial & police officer under the aba ganda, pp. 6–7, 125) / cuge (sergeant/tipstaff under the aba fuño, p. 49) / cabi (distrainer for debt, p. 41) / erada (bailiff, p. 16) / gindo (wooden leg-stocks prison, p. 62) / findja Lali (waterfall in Hambo used for capital execution, p. 122) / guma (blood-money for homicide or ransom for a captive, p. 71; gumad'a naga = women's peace offerings)",
+          "translation": "moti (king, fem. meti, p. 171; royal palace = mazara, p. 167; royal household = zadjeda / birmad'u, p. 180; royal groom leading war-steed farta lola or courser djolle = nao, p. 177) / zoreza, zalgana & momoti (princes, nobles, p. 184) / aba ganda (town governor chosen from the zoreza, pp. xxi, 6) / aba lafa (landed proprietor; settled tenants/vassals = gubziza, p. 68) / mangudo or bera (senate, court of aldermen & judges sitting at the gude dubi or yai dyidu assembly place, pp. 67, 84, 133, 144, 167) / aba fuño ('master of the cord', judicial & police officer under the aba ganda, pp. 6–7, 125) / cuge (sergeant/tipstaff under the aba fuño, p. 49) / cabi (distrainer for debt, p. 41) / erada (bailiff, p. 16) / gindo (wooden leg-stocks prison, p. 62) / findja Lali (waterfall in Hambo used for capital execution, p. 122) / guma (customary restitution for customary restitution or ransom for a captive, p. 71; gumad'a naga = women's peace offerings)",
           "pronunciation": "mo-ti / zo-re-za / a-ba gan-da / a-ba la-fa / man-gu-do / a-ba fu-nyo / cu-ge / gin-do / gu-ma",
           "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. xxi, 6–7, 16, 41, 49, 62, 67–68, 71, 84, 122, 125, 133, 144, 167, 171, 177, 180, 184",
           "audioFile": null

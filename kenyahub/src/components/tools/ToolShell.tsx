@@ -118,7 +118,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        <Link href="/tools" className="hover:text-gold transition-colors">
+        <Link href="/tools/" className="hover:text-gold transition-colors">
           Tools
         </Link>
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -128,7 +128,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
           <span className="text-text-secondary truncate">{tool.shortTitle}</span>
         ) : (
           <>
-            <Link href={`/tools/${tool.slug}`} className="hover:text-gold transition-colors truncate">
+            <Link href={`/tools/${tool.slug}/`} className="hover:text-gold transition-colors truncate">
               {tool.shortTitle}
             </Link>
             {breadcrumbSuffix.map((crumb, idx) => (
@@ -172,7 +172,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
 
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2.5">
           {category && (
-            <Link href={`/tools?category=${category.id}`} className={`badge ${category.badgeClass} hover:opacity-90 transition-opacity`}>
+            <Link href={`/tools/?category=${category.id}`} className={`badge ${category.badgeClass} hover:opacity-90 transition-opacity`}>
               <DynamicIcon emoji={category.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {category.name}
             </Link>
           )}
@@ -282,7 +282,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
             {relatedPosts.map((post) => (
               <Link
                 key={post.slug}
-                href={`/blog/${post.slug}`}
+                href={`/blog/${post.slug}/`}
                 className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 hover:border-gold/50 transition-colors block group"
               >
                 <h3 className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors mb-1 line-clamp-2">
@@ -317,7 +317,7 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
               return (
                 <Link
                   key={rt.slug}
-                  href={`/tools/${rt.slug}`}
+                  href={`/tools/${rt.slug}/`}
                   className="tool-card bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 block group"
                 >
                   <div className="flex items-start gap-2.5 sm:gap-3">

@@ -53,7 +53,7 @@ export default function PinnedToolsHomeSection() {
           return (
             <Link
               key={tool.slug}
-              href={`/tools/${tool.slug}`}
+              href={`/tools/${tool.slug}/`}
               className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl sm:rounded-2xl p-3.5 sm:p-6 block group"
             >
               <div className="flex items-start gap-3 sm:gap-4">

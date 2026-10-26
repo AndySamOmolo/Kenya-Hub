@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CookiePreferencesButton from "@/components/CookiePreferencesButton";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — KenyaHub",
+  title: "Privacy Policy — Data Protection, Cookies & AdSense Disclosure",
   description:
     "KenyaHub Privacy Policy — how we handle user data, local browser calculations, Google Analytics 4 (GA4), Google AdSense policies, and Google Consent Mode v2.",
   alternates: { canonical: "https://kenyahub.me/privacy/" },

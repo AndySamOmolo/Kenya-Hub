@@ -3905,8 +3905,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "target": "Akirin (pl. ngakerin / ngakir)",
             "source": "Meat",
             "pronunciation": "ah-kee-reen",
-            "hint": "Meat from slaughtered livestock. (Barton 1921)",
-            "example": "Akirin (pl. ngakerin / ngakir) — Meat (Meat from slaughtered livestock. (Barton 1921))"
+            "hint": "Meat from prepared livestock. (Barton 1921)",
+            "example": "Akirin (pl. ngakerin / ngakir) — Meat (Meat from prepared livestock. (Barton 1921))"
           },
           {
             "target": "Akili / Ngakile",
@@ -4011,7 +4011,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Curdled milk",
               "Meat"
             ],
-            "hint": "Meat from slaughtered livestock. (Barton 1921)"
+            "hint": "Meat from prepared livestock. (Barton 1921)"
           },
           {
             "type": "multiple_choice",

@@ -111,6 +111,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     id: 'shaw-pocket-vocabulary-taita-1885',
     title: 'A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages',
     fileName: 'taita.json',
+    processedPath: 'dictionaries/taita.json',
     languages: ['taita', 'mijikenda', 'kamba', 'swahili'],
     published: '1885',
     contribution: 'Parallel four-language East African Bantu vocabulary covering core nouns, body parts, numerals, kinship, and everyday verbs (Rev. A. Downes Shaw, SPCK London, 1885 — Public Domain).',
@@ -188,6 +189,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     id: 'wurtz-pokomo-1895',
     title: 'Wörterbuch des Ki-Tikuu und des Ki-Pokomo in Ost-Afrika',
     fileName: 'pokomo.json',
+    processedPath: 'dictionaries/pokomo.json',
     languages: ['pokomo', 'swahili'],
     published: '1895',
     contribution: 'Foundational Kipfokomo (Tana River Sabaki Bantu) lexicon, numerals, riverine ecology, and verb stems (Ferdinand Würtz, Zeitschrift für afrikanische und ozeanische Sprachen, 1895 — Public Domain).',
@@ -421,6 +423,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     id: 'hollis-taveta-1910',
     title: 'Taveta Sayings and Proverbs & Taveta Enigmas',
     fileName: 'taveta.json',
+    processedPath: 'dictionaries/taveta.json',
     languages: ['taveta'],
     published: '1910–1911',
     contribution: 'Collection of ~100 authentic Kitaveta proverbs, 66 riddles, and lexical glosses alongside Rev. A. R. Steggall CMS Taveta texts (1892–1906) (A. C. Hollis, Journal of the African Society Vols. 9–10, 1910–1911 — Public Domain).',
@@ -475,7 +478,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     processedPath: 'language-sources/raw/The Akamba In British East Africa Lindblom 1920.md',
     languages: ['kamba'],
     published: '1920',
-    contribution: 'Encyclopedic 607-page Kamba monograph (35 chapters + Addenda): geography, ethnonyms, childbirth, 3 nžaīko initiation ceremonies, marriage, nðonī avoidance & kwiūa name-taboo vocabulary, kinship system, burial & ŋgondu purification, 25 Kamba clans (mbai) & cattle marks, age/rank classes (asili, nžama, atumīa ma kīvalo, atumīa ma ītiŋo), kīþītū & muma oaths/ordeals, warfare, aīmu/muluŋgu religion, mundu muə divination, medicine & surgery, cosmology & 11-month calendar, music/dances/games, architecture, weapons & mūβaī arrow poison, traps, livestock, beekeeping, agriculture, food, crafts, and women\'s vocabulary (Gerhard Lindblom, Archives d\'Études Orientales Vol. 17, Uppsala, 1920 — Public Domain).',
+    contribution: 'Encyclopedic 607-page Kamba monograph (35 chapters + Addenda): geography, ethnonyms, childbirth, 3 nžaīko initiation ceremonies, marriage, nðonī avoidance & kwiūa name-taboo vocabulary, kinship system, burial & ŋgondu purification, 25 Kamba clans (mbai) & cattle marks, age/rank classes (asili, nžama, atumīa ma kīvalo, atumīa ma ītiŋo), kīþītū & muma oaths/ordeals, warfare, aīmu/muluŋgu religion, mundu muə divination, medicine & surgery, cosmology & 11-month calendar, music/dances/games, architecture, traditional archery & botanical extracts, traps, livestock, beekeeping, agriculture, food, crafts, and women\'s vocabulary (Gerhard Lindblom, Archives d\'Études Orientales Vol. 17, Uppsala, 1920 — Public Domain).',
     appUses: ['dictionary', 'course lessons', 'grammar lessons', 'cultural wisdom'],
     contentTypes: ['vocabulary', 'grammar', 'dialogue', 'cultural-reference'],
     ingestionStatus: 'integrated',
@@ -498,7 +501,6 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     id: 'turkana-grammar',
     title: 'Turkana Grammatical Notes and Vocabulary',
     fileName: 'Turkana Grammatical Notes and Vocabulary (Barton) (1921)_extracted.txt',
-   processedPath: 'language-sources/raw/Turkana Grammatical Notes and Vocabulary (Barton) (1921)_extracted.txt',
     processedPath: 'language-sources/raw/Turkana Grammatical Notes and Vocabulary (Barton) (1921)_extracted.txt',
     languages: ['turkana', 'pokot'],
     published: '1921',
@@ -510,9 +512,8 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
   },
   {
     id: 'bantu-beliefs',
-    title: 'Bantu Beliefs and Magic',
+    title: 'Bantu Beliefs and Customary Institutions',
     fileName: 'bantubeliefsmagi00hobl_extracted.txt',
-   processedPath: 'language-sources/raw/bantubeliefsmagi00hobl_extracted.txt',
     processedPath: 'language-sources/raw/bantubeliefsmagi00hobl_extracted.txt',
     languages: ['kikuyu', 'kamba', 'maasai', 'swahili'],
     published: '1922',
@@ -526,6 +527,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     id: 'stevenson-kikuyu-proverbs-1927',
     title: 'Specimens of Kikuyu Proverbs (Festschrift Meinhof)',
     fileName: 'kikuyu-proverbs.json',
+    processedPath: 'kikuyu-proverbs.json',
     languages: ['kikuyu'],
     published: '1927',
     contribution: 'Early public-domain collection of classical Gĩkũyũ proverbs with literal translations and cultural explanations (Marion S. Stevenson, Festschrift Meinhof, pp. 241–246, 1927 — Public Domain).',
@@ -551,6 +553,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     id: 'github-cldr-huggingface-panlex-cc0',
     title: 'GitHub Unicode CLDR & Hugging Face PanLex / Common Voice CC0-1.0 Corpora',
     fileName: 'dictionaries/*.json',
+    processedPath: 'dictionaries',
     languages: ['kikuyu', 'swahili', 'luhya', 'somali', 'kamba', 'luo', 'kalenjin', 'kisii', 'meru', 'maasai', 'teso', 'mijikenda', 'embu', 'taita', 'samburu', 'borana'],
     published: '2014–2026',
     contribution: '1,760+ strictly indigenous calendar months (including traditional Maasai, Kalenjin, Ateso, and Samburu ecological months), weekdays, relative time phrases, currencies, territories, and language names from GitHub unicode-org/cldr (ki, kam, luo, kln, mas, saq, guz, luy, mer, ebu, teo, dav, om_KE, so_KE, sw_KE) plus CC0-1.0 lexical & sentence datasets on Hugging Face.',
@@ -563,6 +566,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     id: 'open-web-swadesh-comparative',
     title: 'Open-Web Swadesh & Comparative Kenyan Linguistic Tables (Wiktionary, Wikipedia & Academic Reconstructions)',
     fileName: 'dictionaries/*.json',
+    processedPath: 'dictionaries',
     languages: ['kikuyu', 'swahili', 'luhya', 'somali', 'kamba', 'luo', 'kalenjin', 'kisii', 'meru', 'maasai', 'teso', 'mijikenda', 'turkana', 'embu', 'taita', 'samburu', 'borana', 'rendille', 'pokomo', 'ilchamus', 'pokot', 'taveta'],
     published: '1964–2026',
     contribution: 'Clean digital 207-word Swadesh lists (Swahili, Somali, Oromo/Borana, Kikuyu, Luhya), Mount Kenya Bantu (Kîembu/Kĩmĩĩrũ) 150-word lexicon & phrases, Samburu & Ilchamus/Camus Eastern Nilotic tables (Vossen 1982), Rendille lexicon & numerals (Fleming 1964, Heine 1976 & 1979), Kalenjin & East Pokot dialect tables (van Otterloo 1979, Rottland 1982), and Proto-Sabaki/Proto-Bantu comparative tables.',
@@ -574,34 +578,130 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
 ];
 
 const LANGUAGE_ID_ALIASES: Record<string, string> = {
+  // Luo / Dholuo
   dholuo: 'luo',
+  jaluo: 'luo',
+  nilotickavirondo: 'luo',
+  // Luhya / Oluluyia & dialects
   luyia: 'luhya',
+  oluluyia: 'luhya',
   bukusu: 'luhya',
   lubukusu: 'luhya',
   wanga: 'luhya',
   luhanga: 'luhya',
+  maragoli: 'luhya',
+  logooli: 'luhya',
+  idakho: 'luhya',
+  isukha: 'luhya',
+  tiriki: 'luhya',
+  nyore: 'luhya',
+  samia: 'luhya',
+  // Kikuyu / Gĩkũyũ
+  gikuyu: 'kikuyu',
+  akikuyu: 'kikuyu',
+  // Kamba / Kĩkamba
+  kikamba: 'kamba',
+  akamba: 'kamba',
+  // Swahili / Kiswahili & coastal dialects
+  kiswahili: 'swahili',
+  suahili: 'swahili',
+  kimvita: 'swahili',
+  kiunguja: 'swahili',
+  kiamu: 'swahili',
+  kitikuu: 'swahili',
+  kingozi: 'swahili',
+  // Kalenjin & Highland Nilotic sub-groups
+  nandi: 'kalenjin',
+  kipsigis: 'kalenjin',
+  tugen: 'kalenjin',
+  marakwet: 'kalenjin',
+  keiyo: 'kalenjin',
+  elgeyo: 'kalenjin',
+  sabaot: 'kalenjin',
+  terik: 'kalenjin',
+  // Kisii / Ekegusii
   ekegusii: 'kisii',
-  ateso: 'teso',
+  gusii: 'kisii',
+  // Meru / Kĩmĩĩrũ
+  kimiiru: 'meru',
+  kimiru: 'meru',
+  tharaka: 'meru',
+  mwimbi: 'meru',
+  tigania: 'meru',
+  igembe: 'meru',
+  // Maasai / Maa
+  maa: 'maasai',
+  masai: 'maasai',
+  // Turkana
+  ngaturukana: 'turkana',
+  // Embu / Kĩembu
   kiembu: 'embu',
+  mbeere: 'embu',
+  kimbeere: 'embu',
+  // Taita
   kidawida: 'taita',
+  dawida: 'taita',
   kisagala: 'taita',
-  sampur: 'samburu',
+  sagalla: 'taita',
+  kasigau: 'taita',
+  // Mijikenda & Nine Kayas
+  giriama: 'mijikenda',
+  kigiryama: 'mijikenda',
+  giryama: 'mijikenda',
+  digo: 'mijikenda',
+  kidigo: 'mijikenda',
+  duruma: 'mijikenda',
+  kiduruma: 'mijikenda',
+  rabai: 'mijikenda',
+  kirabai: 'mijikenda',
+  chonyi: 'mijikenda',
+  kinika: 'mijikenda',
+  nyika: 'mijikenda',
+  // Cushitic (Somali, Borana/Oromo, Rendille)
+  afsoomaali: 'somali',
   oromo: 'borana',
+  afaanoromoo: 'borana',
   galla: 'borana',
+  kigalla: 'borana',
+  rendile: 'rendille',
+  // Teso / Ateso
+  ateso: 'teso',
+  elgumi: 'teso',
+  // Pokomo
   kipfokomo: 'pokomo',
+  kipokomo: 'pokomo',
+  // Samburu & Ilchamus
+  sampur: 'samburu',
   njemps: 'ilchamus',
   camus: 'ilchamus',
+  enjemusi: 'ilchamus',
+  // Pokot
   suk: 'pokot',
   pokoot: 'pokot',
+  // Taveta
   kitaveta: 'taveta',
 };
 
 export function normalizeLanguageId(languageId: string): string {
-  const normalized = languageId.trim().toLowerCase().replace(/\s+/g, '');
+  const withoutParens = languageId.split('(')[0] ?? languageId;
+  const normalized = withoutParens
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
   return LANGUAGE_ID_ALIASES[normalized] ?? normalized;
 }
 
 export function getSourcesForLanguage(languageId: string): LanguageSource[] {
   const normalizedId = normalizeLanguageId(languageId);
   return LANGUAGE_SOURCES.filter((source) => source.languages.includes(normalizedId));
+}
+
+export function getSourceById(sourceId: string): LanguageSource | undefined {
+  return LANGUAGE_SOURCES.find((source) => source.id === sourceId);
+}
+
+export function getAllLanguageSources(): LanguageSource[] {
+  return LANGUAGE_SOURCES;
 }

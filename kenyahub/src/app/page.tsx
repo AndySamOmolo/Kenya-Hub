@@ -16,7 +16,7 @@ export default function HomePage() {
       "Free online tools and verified public data built for Kenya — 2026 PAYE salary calculator, M-Pesa fee calculator, 47 Counties Hub, CBC curriculum explorer, KUCCPS cluster points, public holidays, and more.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://kenyahub.me/tools?q={search_term_string}",
+      target: "https://kenyahub.me/tools/?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -81,14 +81,14 @@ export default function HomePage() {
               </p>
 
               <div className="flex flex-wrap gap-2.5 sm:gap-3">
-                <Link href="/tools" className="btn-gold text-sm sm:text-[0.9375rem] px-5 py-2.5 sm:px-7 sm:py-3.5">
+                <Link href="/tools/" className="btn-gold text-sm sm:text-[0.9375rem] px-5 py-2.5 sm:px-7 sm:py-3.5">
                   Explore All {TOOLS.length} Tools
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Link>
                 <Link
-                  href="/county"
+                  href="/county/"
                   className="btn-outline text-sm sm:text-[0.9375rem] px-5 py-2.5 sm:px-7 sm:py-3.5"
                 >
                   Explore 47 Counties Hub
@@ -113,7 +113,7 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3.5 sm:gap-6">
           <Link
-            href="/county"
+            href="/county/"
             className="group bg-bg-card border border-border hover:border-gold/50 rounded-xl sm:rounded-2xl p-4 sm:p-8 transition-colors flex flex-col justify-between"
           >
             <div>
@@ -135,7 +135,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="/matatu"
+            href="/matatu/"
             className="group bg-bg-card border border-border hover:border-gold/50 rounded-xl sm:rounded-2xl p-4 sm:p-8 transition-colors flex flex-col justify-between"
           >
             <div>
@@ -150,7 +150,7 @@ export default function HomePage() {
               </p>
             </div>
             <span className="text-xs font-bold text-gold group-hover:underline">
-              Open Matatu Routes Explorer (80+ Verified Routes Across 6 Towns) →
+              Open Matatu Routes Explorer (64+ Verified Routes Across 6 Towns) →
             </span>
           </Link>
         </div>
@@ -179,7 +179,7 @@ export default function HomePage() {
             return (
               <Link
                 key={cat.id}
-                href={`/tools?category=${cat.id}`}
+                href={`/tools/?category=${cat.id}`}
                 className="tool-card bg-bg-card border border-border rounded-xl sm:rounded-2xl p-3.5 sm:p-6 flex items-start gap-3 sm:gap-4 group"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/[0.04] flex items-center justify-center flex-shrink-0 group-hover:bg-white/[0.07] transition-colors">
@@ -272,7 +272,7 @@ export default function HomePage() {
             <p className="text-text-muted text-xs sm:text-sm mb-5 sm:mb-8 max-w-md mx-auto">
               From PAYE calculations to CBC curriculum and all 47 county budgets — whatever you need as a Kenyan, we&apos;ve built it.
             </p>
-            <Link href="/tools" className="btn-gold text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
+            <Link href="/tools/" className="btn-gold text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
               Explore All Tools
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />

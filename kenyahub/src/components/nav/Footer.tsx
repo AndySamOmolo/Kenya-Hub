@@ -29,7 +29,7 @@ export default function Footer() {
               {TOOL_CATEGORIES.slice(0, 5).map((cat) => (
                 <li key={cat.id}>
                   <Link
-                    href={`/tools?category=${cat.id}`}
+                    href={`/tools/?category=${cat.id}`}
                     className="text-xs text-text-muted hover:text-gold transition-colors"
                   >
                     {cat.name}
@@ -47,7 +47,7 @@ export default function Footer() {
               {TOOL_CATEGORIES.slice(5).map((cat) => (
                 <li key={cat.id}>
                   <Link
-                    href={`/tools?category=${cat.id}`}
+                    href={`/tools/?category=${cat.id}`}
                     className="text-xs text-text-muted hover:text-gold transition-colors"
                   >
                     {cat.name}
@@ -64,13 +64,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1.5 sm:space-y-2">
               {[
-                { href: "/county", label: "47 Counties Hub" },
-                { href: "/matatu", label: "Matatu Routes Hub" },
-                { href: "/blog", label: "Kenya Guides & Blog" },
-                { href: "/tools/paye-calculator", label: "PAYE Salary Calculator" },
-                { href: "/tools/mpesa-fee-calculator", label: "M-Pesa Fee Calculator" },
-                { href: "/tools/kuccps-cluster-calculator", label: "KUCCPS Cluster Calculator" },
-                { href: "/tools/cbc-curriculum", label: "CBC Curriculum Explorer" },
+                { href: "/county/", label: "47 Counties Hub" },
+                { href: "/matatu/", label: "Matatu Routes Hub" },
+                { href: "/blog/", label: "Kenya Guides & Blog" },
+                { href: "/tools/paye-calculator/", label: "PAYE Salary Calculator" },
+                { href: "/tools/mpesa-fee-calculator/", label: "M-Pesa Fee Calculator" },
+                { href: "/tools/kuccps-cluster-calculator/", label: "KUCCPS Cluster Calculator" },
+                { href: "/tools/cbc-curriculum/", label: "CBC Curriculum Explorer" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -91,16 +91,16 @@ export default function Footer() {
             <p className="text-[0.65rem] text-text-muted">
               © {new Date().getFullYear()} KenyaHub · Nairobi, Kenya
             </p>
-            <Link href="/about" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
+            <Link href="/about/" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
               About Us
             </Link>
-            <Link href="/contact" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
+            <Link href="/contact/" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
               Contact
             </Link>
-            <Link href="/privacy" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
+            <Link href="/privacy/" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
+            <Link href="/terms/" className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors">
               Terms of Service
             </Link>
             <CookieSettingsFooterLink />

@@ -17,7 +17,7 @@ const PROGRESS_VERSION = 2;
 
 /* ─── Default state ────────────────────────────────── */
 
-function createDefaultProgress(languageId: string): UserProgress {
+export function createDefaultProgress(languageId: string): UserProgress {
   return {
     version: PROGRESS_VERSION,
     languageId,
@@ -29,7 +29,7 @@ function createDefaultProgress(languageId: string): UserProgress {
     dailyGoal: 50,
     todayXp: 0,
     hearts: MAX_HEARTS,
-    heartsLastRefill: Date.now(),
+    heartsLastRefill: 0,
     achievements: [],
     wordsLearned: [],
     lessonsCompleted: 0,

@@ -23,7 +23,7 @@ export async function generateMetadata({
 
   if (!townObj) {
     return {
-      title: "Town Matatu Routes Not Found | KenyaHub",
+      title: "Town Matatu Routes Not Found",
       robots: { index: false, follow: true },
     };
   }

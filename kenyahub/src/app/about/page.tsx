@@ -3,7 +3,7 @@ import Link from "next/link";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export const metadata: Metadata = {
-  title: "About Us — KenyaHub",
+  title: "About Us — Mission, Official Data Sources & Editorial Standards",
   description: "Learn about KenyaHub — Kenya's leading platform for free, accurate digital tools and public data services.",
   alternates: { canonical: "https://kenyahub.me/about/" },
 };

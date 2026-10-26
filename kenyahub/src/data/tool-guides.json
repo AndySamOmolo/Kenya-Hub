@@ -4,13 +4,11 @@
   "guides": {
     "agrovet-finder": {
       "slug": "agrovet-finder",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "This is a representative sample of licensed agrovets. There are thousands of registered agrovets across Kenya.",
-        "Always verify that an agrovet is licensed by the Pest Control Products Board (PCPB) before purchasing agrochemicals.",
-        "KEPHIS-registered seed dealers sell certified seeds with germination guarantees. Look for the KEPHIS certification label on seed packets.",
-        "For veterinary drugs, ensure the agrovet has a licensed veterinary pharmacist on staff as required by the Veterinary Surgeons and Veterinary Para-professionals Act.",
-        "Report counterfeit products to PCPB hotline or your county agricultural office."
+        "Filter registered agro-veterinary suppliers by county or search by product category (certified seeds, crop protection, veterinary pharmaceuticals, or animal feeds).",
+        "Cross-reference supplier credentials with the Pest Control Products Board (PCPB) statutory register and the Kenya Plant Health Inspectorate Service (KEPHIS) seed dealer portal.",
+        "Veterinary prescription medicines and livestock vaccines must be dispensed under the supervision of a Kenya Veterinary Board (KVB) registered practitioner."
       ],
       "faq": [
         {
@@ -23,17 +21,17 @@
         },
         {
           "question": "How do I report counterfeit agricultural products?",
-          "answer": "Report to PCPB hotline or your county agricultural office. Counterfeit seeds and pesticides are a major problem \u2014 always buy from registered dealers."
+          "answer": "Report to PCPB hotline or your county agricultural office. Counterfeit seeds and pesticides are a major problem — always buy from registered dealers."
         }
       ]
     },
     "cbc-curriculum": {
       "slug": "cbc-curriculum",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya's Competency-Based Curriculum (CBC) follows a 2-6-3-3-3 structure: 2 years Pre-Primary, 6 years Primary, 3 years Junior School, 3 years Senior School, and 3+ years University/TVET.",
-        "National transition assessments take place at Grade 6 (KPSEA), Grade 9 (KJSEA), and Grade 12 (Senior School Assessment).",
-        "Senior Secondary (Grades 10\u201312, rolled out in 2026) places learners into three specialized pathways: STEM, Social Sciences, or Arts & Sports Science."
+        "Select any education tier under Kenya's 2-6-3-3-3 Competency-Based Curriculum (Pre-Primary, Lower/Upper Primary, Junior School, or Senior School) to inspect official KICD learning areas.",
+        "Review Senior School (Grades 10–12) specialization tracks across STEM, Social Sciences, and Arts & Sports Science alongside KNEC national assessment milestones (KPSEA, KJSEA, and Senior School Assessment).",
+        "Curriculum structures reflect the Ministry of Education and Kenya Institute of Curriculum Development (KICD) 2026 implementation guidelines."
       ],
       "faq": [
         {
@@ -46,7 +44,7 @@
         },
         {
           "question": "What are the three Senior Secondary pathways?",
-          "answer": "Grade 10\u201312 students choose one of three pathways: STEM (Science, Technology, Engineering, Mathematics), Arts & Sports Science (visual/performing arts, sports), or Social Sciences (humanities, business, economics)."
+          "answer": "Grade 10–12 students choose one of three pathways: STEM (Science, Technology, Engineering, Mathematics), Arts & Sports Science (visual/performing arts, sports), or Social Sciences (humanities, business, economics)."
         },
         {
           "question": "When did CBC start in Kenya?",
@@ -60,11 +58,11 @@
     },
     "cbc-grade-age": {
       "slug": "cbc-grade-age",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya's Competency-Based Curriculum (CBC) follows a 2-6-3-3-3 structure: 2 years Pre-Primary, 6 years Primary, 3 years Junior School, 3 years Senior School, and 3+ years University/TVET.",
-        "National transition assessments take place at Grade 6 (KPSEA), Grade 9 (KJSEA), and Grade 12 (Senior School Assessment).",
-        "Senior Secondary (Grades 10\u201312, rolled out in 2026) places learners into three specialized pathways: STEM, Social Sciences, or Arts & Sports Science."
+        "Enter a learner's date of birth to compute their expected CBC grade placement for the current Kenyan academic calendar year (January to November).",
+        "Compare the learner's current CBC level (PP1–Grade 12) with the corresponding class or form under the legacy 8-4-4 education structure.",
+        "Placement calculations follow the Ministry of Education's standard age-at-entry policy (turning 4 years old in the calendar year of PP1 enrollment)."
       ],
       "faq": [
         {
@@ -83,8 +81,12 @@
     },
     "child-growth-schedule": {
       "slug": "child-growth-schedule",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Enter your child's date of birth and select sex to generate a personalized vaccination timeline based on the Ministry of Health's Kenya Expanded Programme on Immunization (KEPI).",
+        "Track upcoming and completed vaccine visits from Birth (BCG, OPV 0) through 6, 10, and 14 weeks (Pentavalent, PCV-10, Rotavirus) up to 9 and 18 months (Measles-Rubella and Yellow Fever).",
+        "Compare expected weight-for-age benchmarks against World Health Organization (WHO) Child Growth Standards and review key developmental milestones."
+      ],
       "faq": [
         {
           "question": "What is the KEPI schedule?",
@@ -110,18 +112,16 @@
     },
     "crop-planting-calendar": {
       "slug": "crop-planting-calendar",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Planting dates are guidelines based on long-term rainfall averages. Actual timing varies year to year \u2014 consult your local agricultural extension officer.",
-        "Data sourced from KALRO planting guides, Ministry of Agriculture seasonal bulletins, and FAO Kenya crop calendars.",
-        "Climate change is shifting traditional rainfall patterns. Monitor Kenya Meteorological Department (meteo.go.ke) forecasts before planting.",
-        "Intercropping improves soil health, reduces pest pressure, and diversifies income. Traditional combinations (e.g., maize + beans) remain highly effective.",
-        "Certified seed from KEPHIS-registered dealers ensures higher germination rates and disease resistance."
+        "Filter by crop category or Kenyan agro-ecological region to view optimal land preparation, sowing, and harvesting windows for both the Long Rains (March–May) and Short Rains (October–December).",
+        "Review KALRO-recommended seed varieties, altitude ranges, maturity periods, and spacing guidelines tailored to Highland, Midland, Coastal, and ASAL farming zones.",
+        "Combine seasonal planting windows with county-specific historical precipitation data in the Kenya Rainfall Patterns tool before purchasing seed inputs."
       ],
       "faq": [
         {
           "question": "When should I plant maize in Kenya?",
-          "answer": "For the Long Rains season, plant maize in March\u2013April in most regions. For Short Rains, plant in October (Nyanza, Coast, Eastern). Highland areas like the Rift Valley typically only have one season."
+          "answer": "For the Long Rains season, plant maize in March–April in most regions. For Short Rains, plant in October (Nyanza, Coast, Eastern). Highland areas like the Rift Valley typically only have one season."
         },
         {
           "question": "What is intercropping and why is it recommended?",
@@ -133,7 +133,7 @@
         },
         {
           "question": "What are Kenya's two farming seasons?",
-          "answer": "Kenya has two main seasons: the 'Long Rains' (March\u2013May) and 'Short Rains' (October\u2013December). However, highland and western regions may have slightly different timing, and some areas only support one season."
+          "answer": "Kenya has two main seasons: the 'Long Rains' (March–May) and 'Short Rains' (October–December). However, highland and western regions may have slightly different timing, and some areas only support one season."
         },
         {
           "question": "How do I know which crops suit my area?",
@@ -143,8 +143,12 @@
     },
     "driving-license-guide": {
       "slug": "driving-license-guide",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Select a driving license category (Class A motorcycles, Class B light vehicles, Class C commercial trucks, Class D PSVs, or Class G industrial equipment) to view NTSA age, endorsement, and upgrade rules.",
+        "Review step-by-step eCitizen TIMS application procedures from Provisional Driving License (PDL) enrollment through theory/practical testing to Smart Driving License collection.",
+        "Fee schedules reflect published National Transport and Safety Authority (NTSA) citizen service rates."
+      ],
       "faq": [
         {
           "question": "How do I get a driving license in Kenya?",
@@ -170,13 +174,11 @@
     },
     "economic-calendar": {
       "slug": "economic-calendar",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Dates are approximate and based on historical patterns. Actual release dates may vary.",
-        "KNBS publications are available at knbs.or.ke under 'Publications'. Most are free PDF downloads.",
-        "CBK data is published at centralbank.go.ke under 'Statistics' and 'Publications'.",
-        "For real-time alerts on Kenya economic data releases, follow KNBS, CBK, and KRA on Twitter/X.",
-        "The National Treasury publishes the Budget Policy Statement (BPS) in February and the Budget Speech in June each year."
+        "Filter upcoming macroeconomic releases and fiscal events by institution—including Central Bank of Kenya (CBK) Monetary Policy Committee meetings, KNBS monthly CPI inflation releases, and National Treasury budget milestones.",
+        "Use the calendar to track Treasury Bill (91-day, 182-day, 364-day) auction cycles, KRA statutory tax filing deadlines, and Parliamentary budget readings.",
+        "Dates are compiled from official CBK, KNBS, KRA, and National Treasury public schedules."
       ],
       "faq": [
         {
@@ -185,7 +187,7 @@
         },
         {
           "question": "How often does CBK set interest rates?",
-          "answer": "The CBK Monetary Policy Committee (MPC) meets bi-monthly \u2014 approximately every 2 months (January, March, May, July, September, November) \u2014 to decide the Central Bank Rate (CBR)."
+          "answer": "The CBK Monetary Policy Committee (MPC) meets bi-monthly — approximately every 2 months (January, March, May, July, September, November) — to decide the Central Bank Rate (CBR)."
         },
         {
           "question": "When is the Kenya national budget announced?",
@@ -195,13 +197,11 @@
     },
     "fertilizer-subsidy-guide": {
       "slug": "fertilizer-subsidy-guide",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Subsidized prices are set by the government and may change each planting season. Confirm current prices at your nearest NCPB depot.",
-        "Market prices are approximate \u2014 they fluctuate based on global fertilizer commodity markets and exchange rates.",
-        "The subsidy programme may have stock limitations. Register early (2\u20133 months before planting season) to secure allocation.",
-        "Always buy from licensed agrovets or NCPB depots. Counterfeit fertilizer is a serious problem \u2014 check packaging seals and KEBS certification.",
-        "Soil testing is recommended before applying fertilizer. Contact KALRO for soil testing services (KES 500\u20131,500 per sample)."
+        "Review eligibility criteria, e-voucher redemption steps, and gazetted retail prices per 50kg bag under the National Fertilizer Subsidy Programme (NFSP).",
+        "Compare basal planting fertilizers (DAP, NPK 23:23:0, Mavuno) and top-dressing formulations (CAN, Urea, Sulphate of Ammonia) by soil pH suitability and crop stage.",
+        "Distribution protocols reflect Ministry of Agriculture and Livestock Development and National Cereals and Produce Board (NCPB) guidelines."
       ],
       "faq": [
         {
@@ -210,7 +210,7 @@
         },
         {
           "question": "How much cheaper is subsidized fertilizer?",
-          "answer": "Subsidized DAP costs approximately KES 2,500 per 50kg bag vs KES 5,500+ at market prices \u2014 a saving of over 50%. CAN is KES 1,800 subsidized vs KES 4,000 at market price."
+          "answer": "Subsidized DAP costs approximately KES 2,500 per 50kg bag vs KES 5,500+ at market prices — a saving of over 50%. CAN is KES 1,800 subsidized vs KES 4,000 at market price."
         },
         {
           "question": "Which fertilizer should I use for maize?",
@@ -220,13 +220,11 @@
     },
     "forest-reserves-kenya": {
       "slug": "forest-reserves-kenya",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya has approximately 1,200 gazetted forest reserves covering about 7.4% of land area. This directory covers the most significant ones.",
-        "Data sourced from Kenya Forest Service (KFS) and Kenya Forest Research Institute (KEFRI) publications.",
-        "Kenya's '5 Water Towers' (Mt. Kenya, Aberdares, Mau, Cherangani, Mt. Elgon) supply 75% of Kenya's surface water.",
-        "Hiking in gazetted forests requires a KFS permit. Fees: KES 250 (citizen), KES 600 (resident), USD 20 (non-resident) per day.",
-        "Report illegal logging or charcoal burning to KFS hotline: 0800 723 253 (toll-free)."
+        "Search or filter Kenya's gazetted public forest reserves by county, ecosystem type (montane water tower, coastal tropical forest, western rainforest, or dryland woodland), and conservation status.",
+        "Inspect forest acreage, biodiversity highlights, recreational activities, and Kenya Forest Service (KFS) ecotourism entry requirements.",
+        "Data is compiled from Kenya Forest Service (KFS) statutory gazettements and the Forest Conservation and Management Act."
       ],
       "faq": [
         {
@@ -239,14 +237,18 @@
         },
         {
           "question": "What is Kenya's largest forest?",
-          "answer": "The Mau Forest Complex is Kenya's largest indigenous forest at approximately 400,000 hectares. It's a critical water tower \u2014 source of 12 rivers including the Mara River."
+          "answer": "The Mau Forest Complex is Kenya's largest indigenous forest at approximately 400,000 hectares. It's a critical water tower — source of 12 rivers including the Mara River."
         }
       ]
     },
     "helb-calculator": {
       "slug": "helb-calculator",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Enter your total Higher Education Loans Board (HELB) principal loan balance, applicable annual interest rate (typically 4% p.a. for undergraduate loans), and monthly repayment amount.",
+        "Calculate your exact payoff duration in months and years, total cumulative interest payable, and month-by-month amortization schedule.",
+        "Under the HELB Act, statutory employer deductions begin after the 1-year post-graduation grace period; voluntary lump-sum payments directly reduce principal and total interest."
+      ],
       "faq": [
         {
           "question": "What is the HELB loan interest rate?",
@@ -272,12 +274,11 @@
     },
     "kcse-grade-calculator": {
       "slug": "kcse-grade-calculator",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Minimum KCSE mean grade for direct degree placement via KUCCPS in Kenyan universities is C+ (7 points out of 12).",
-        "Each degree programme belongs to one of 15+ subject clusters, requiring 4 specific KCSE subjects weighted by relevance.",
-        "Maximum raw weighted cluster total is 48 points (scoring A = 12 points across all 4 required cluster subjects).",
-        "Cut-off points vary annually per university and course depending on national KCSE performance and declared program capacities."
+        "Select your letter grades (A to E) across 8 KCSE subjects—including compulsory English—to compute your aggregate KNEC points (out of 84 or 96) and official mean grade.",
+        "Review instant eligibility indicators for university degree placement (C+ and above), TVET diploma programmes (C and C-), and artisan/certificate courses.",
+        "Grading boundaries follow the Kenya National Examinations Council (KNEC) 12-point scale."
       ],
       "faq": [
         {
@@ -296,18 +297,16 @@
     },
     "kcse-school-rankings": {
       "slug": "kcse-school-rankings",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Rankings are based on school mean scores. Mean score = average of all students' mean grades (on a 12-point scale where A=12, E=1).",
-        "Data is compiled from KNEC press releases and news reports. Individual student results are confidential.",
-        "School types: National, Extra-County, County, Sub-County, Private. National schools admit students from all 47 counties.",
-        "Year-over-year 'change' shows improvement or decline in mean score compared to the previous year.",
-        "Grade distribution percentages are approximate and based on KNEC summary statistics."
+        "Search and filter top-performing Kenyan secondary schools by county, school category (National, Extra-County, County, or Private), and historical KCSE mean score performance.",
+        "Compare school mean points and university transition trends to support informed Senior School selection.",
+        "Data is compiled from published post-examination academic performance disclosures and Ministry of Education school classifications."
       ],
       "faq": [
         {
           "question": "How are KCSE school rankings determined?",
-          "answer": "Rankings are based on each school's mean score \u2014 the average of all students' mean grades on a 12-point scale (A=12, E=1). This is calculated by KNEC (Kenya National Examinations Council)."
+          "answer": "Rankings are based on each school's mean score — the average of all students' mean grades on a 12-point scale (A=12, E=1). This is calculated by KNEC (Kenya National Examinations Council)."
         },
         {
           "question": "When are KCSE results released?",
@@ -325,14 +324,11 @@
     },
     "kenya-customs-restricted-items": {
       "slug": "kenya-customs-restricted-items",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya uses the Red/Green channel system at international airports",
-        "Green Channel: Nothing to declare (within duty-free allowances)",
-        "Red Channel: Goods to declare or goods exceeding allowances",
-        "Penalties for non-declaration include seizure, fines, and potential prosecution",
-        "EAC citizens (Kenya, Uganda, Tanzania, Rwanda, Burundi, DRC, South Sudan) may have different allowances",
-        "All commercial imports require an Import Declaration Form (IDF) via KRA iTax before shipment"
+        "Search or filter import and export commodities by restriction status (Prohibited, Restricted—Permit Required, or Duty-Free Passenger Allowance) under the East African Community Customs Management Act (EACCMA).",
+        "Identify the exact regulatory agency issuing import/export clearance permits—such as KEBS, KEPHIS, Pharmacy and Poisons Board (PPB), Communications Authority (CA), or KWS.",
+        "Review passenger baggage duty-free thresholds before arriving at Jomo Kenyatta International Airport (JKIA), Moi International Airport, or land border posts."
       ],
       "faq": [
         {
@@ -359,13 +355,11 @@
     },
     "kenya-languages": {
       "slug": "kenya-languages",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya has 42+ recognized ethnic groups speaking 60+ distinct languages and dialects.",
-        "Speaker numbers are estimates based on KNBS 2019 Census ethnic population data (language \u2248 ethnicity for most groups).",
-        "County-level language dominance is approximate. Urban areas (especially Nairobi, Mombasa) are highly multilingual.",
-        "Several Kenyan languages are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Suba, and Omotik.",
-        "Data compiled from KNBS 2019 Census and public-domain linguistic records."
+        "Explore all major indigenous and official languages spoken across Kenya, categorized by linguistic family (Bantu, Nilotic, Cushitic, and Official/Sign languages).",
+        "Filter by language family or search by county distribution to inspect speaker demographics, native autonyms, and linked primary historical linguistic sources.",
+        "Click through to the Kenyan Languages Translator or Interactive Language Courses to practice vocabulary, grammar, and cultural proverbs."
       ],
       "faq": [
         {
@@ -374,7 +368,7 @@
         },
         {
           "question": "What are the main language families in Kenya?",
-          "answer": "Kenya's languages belong to three main families: Bantu (~65% of population \u2014 Kikuyu, Luhya, Kamba, Kisii, etc.), Nilotic (~30% \u2014 Kalenjin, Luo, Maasai, Turkana), and Cushitic (~3% \u2014 Somali, Rendille, Borana)."
+          "answer": "Kenya's languages belong to three main families: Bantu (~65% of population — Kikuyu, Luhya, Kamba, Kisii, etc.), Nilotic (~30% — Kalenjin, Luo, Maasai, Turkana), and Cushitic (~3% — Somali, Rendille, Borana)."
         },
         {
           "question": "Are any Kenyan languages endangered?",
@@ -388,12 +382,11 @@
     },
     "kenya-postal-codes": {
       "slug": "kenya-postal-codes",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya uses a 5-digit numeric postal code system managed by the Postal Corporation of Kenya (Posta Kenya).",
-        "The first digit indicates the postal region: 0 = Nairobi, 1 = Central/Eastern, 2 = Rift Valley (Central), 3 = Rift Valley (North), 4 = Nyanza/Eastern, 5 = Western, 6 = Eastern/North, 7 = North Eastern, 8 = Coast, 9 = Western.",
-        "Nairobi GPO is 00100, City Square is 00200, Westlands is 00800, and Mombasa GPO is 80100.",
-        "Always format Kenyan postal addresses as: Name, P.O. Box [Number] - [5-Digit Code], [Town], Kenya."
+        "Search by town, sub-location, post office name, or 5-digit code (00100 to 90200) or filter by county to look up official Postal Corporation of Kenya (Posta Kenya) routing codes.",
+        "Kenyan postal codes follow a regional prefix structure where the first digit designates the postal region (0 = Nairobi, 1 = Central/Eastern, 2 = Rift Valley/Central, 3 = North Rift, 4 = Nyanza/Eastern, 5 = Kakamega/Western, 6 = Meru/Northern, 7 = North Eastern, 8 = Coast, 9 = Machakos/Makueni).",
+        "Use verified 5-digit postal codes for eCitizen applications, KRA iTax registration, bank KYC forms, and courier addressing."
       ],
       "faq": [
         {
@@ -420,14 +413,11 @@
     },
     "kenya-rainfall-patterns": {
       "slug": "kenya-rainfall-patterns",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Monthly averages are approximate values in millimetres (mm) based on Kenya Meteorological Department 1981\u20132010 climate normals",
-        "Kenya has two main rainy seasons: Long Rains (March\u2013May) and Short Rains (October\u2013December)",
-        "The Rift Valley and Western Kenya can receive rain year-round",
-        "Highlands receive the most rainfall \u2014 Kericho, Kakamega, and Kisii regularly exceed 1,500mm/year",
-        "North Eastern Kenya (Garissa, Wajir, Mandera, Turkana) is extremely arid with less than 350mm/year",
-        "Climate change is affecting traditional rainfall patterns \u2014 actual conditions may vary from historical averages"
+        "Select or compare any of Kenya's 47 counties to inspect 12-month historical precipitation averages (mm), annual rainfall totals, and agro-climatic zone classifications.",
+        "Analyze bimodal rainfall peaks across the Long Rains (MAM: March–May) and Short Rains (OND: October–December) alongside western highland July–August continental rains.",
+        "Climatological baselines are synthesized from Kenya Meteorological Department (KMD) county weather station records."
       ],
       "faq": [
         {
@@ -450,13 +440,11 @@
     },
     "kenya-soil-types": {
       "slug": "kenya-soil-types",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Soil types and distributions are based on the Kenya Soil Survey (KSS/KARI) and the FAO-UNESCO Soil Map of the World.",
-        "Most Kenyan farms have mixed soil types. Get a soil test from KALRO (KES 500\u20131,500 per sample) for specific nutrient recommendations.",
-        "County-level assignments are approximate. Soil type can vary within a county depending on altitude, drainage, and parent material.",
-        "Soil pH is critical: most crops prefer 5.5\u20137.0. Test pH before planting and amend with lime (acidic) or gypsum (alkaline) as needed.",
-        "For personalized soil management advice, contact your county agricultural extension officer or visit the nearest KALRO research station."
+        "Browse Kenya's principal soil orders (Nitisols, Ferralsols, Vertisols, Andosols, Acrisols, Arenosols, Solonetz, and Cambisols) by county distribution and physical-chemical profile.",
+        "Review drainage characteristics, natural fertility levels, optimal crop pairings, and recommended organic and mineral soil amendments.",
+        "Pedological classifications follow the Kenya Soil Survey (KALRO) and FAO-UNESCO World Reference Base for Soil Resources."
       ],
       "faq": [
         {
@@ -465,28 +453,25 @@
         },
         {
           "question": "What is 'black cotton soil' in Kenya?",
-          "answer": "Black cotton soil refers to Vertisols \u2014 heavy dark clay soils that swell when wet and crack when dry. Found in the Rift Valley floor, Lake Victoria basin, and parts of Eastern Kenya. They're fertile but very difficult to work."
+          "answer": "Black cotton soil refers to Vertisols — heavy dark clay soils that swell when wet and crack when dry. Found in the Rift Valley floor, Lake Victoria basin, and parts of Eastern Kenya. They're fertile but very difficult to work."
         },
         {
           "question": "How much does soil testing cost in Kenya?",
-          "answer": "KALRO offers soil testing for KES 500\u20131,500 per sample. You can also use private labs. The test tells you pH, nutrient levels (N, P, K), and gives fertilizer recommendations for your specific soil."
+          "answer": "KALRO offers soil testing for KES 500–1,500 per sample. You can also use private labs. The test tells you pH, nutrient levels (N, P, K), and gives fertilizer recommendations for your specific soil."
         },
         {
           "question": "Why is my soil acidic?",
-          "answer": "Soil acidity in Kenya is common in high-rainfall areas (Western Kenya, tea zones). It's caused by leaching of basic cations. Apply agricultural lime (2\u20134 tonnes/ha) to correct acidity. Always test pH before liming."
+          "answer": "Soil acidity in Kenya is common in high-rainfall areas (Western Kenya, tea zones). It's caused by leaching of basic cations. Apply agricultural lime (2–4 tonnes/ha) to correct acidity. Always test pH before liming."
         }
       ]
     },
     "kenyan-food-nutrition": {
       "slug": "kenyan-food-nutrition",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "All nutritional values are approximate per 100g serving (or per cup for beverages) based on FAO/WHO food composition data for Sub-Saharan Africa",
-        "Values may vary based on preparation method, recipe, and ingredient sourcing",
-        "Traditional Kenyan vegetables (managu, terere, kunde) are exceptionally nutritious and underutilized",
-        "Omena (small Lake Victoria fish) is one of Kenya's most nutrient-dense foods per 100g",
-        "Ugali + sukuma wiki + beans forms a nutritionally complete meal and is Kenya's most affordable balanced diet",
-        "Data compiled from FAO food composition tables, KEMRI nutritional studies, and Kenya Agricultural Research Institute"
+        "Search traditional and everyday Kenyan foods (ugali, sukuma wiki, githeri, mukimo,omena, nyama choma, ndengu, chapati, managu, and matoke) to inspect macronutrient and micronutrient profiles per 100g serving.",
+        "Compare energy (kcal), protein, carbohydrates, dietary fiber, iron, calcium, and vitamin content across staples, legumes, leafy vegetables, and proteins.",
+        "Nutritional values are compiled from the Kenya Food Composition Tables (Ministry of Health / KALRO / FAO)."
       ],
       "faq": [
         {
@@ -505,12 +490,11 @@
     },
     "kenyan-translator": {
       "slug": "kenyan-translator",
-      "notesTitle": "About This Translator",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "This is a curated, offline dictionary \u2014 not machine translation. Every entry has been verified.",
-        "Pronunciations use approximate English phonetics. Audio recordings coming soon.",
-        "Dictionary data is community-sourced. Found an error? Let us know via the contact page.",
-        "We&apos;re actively expanding to cover all 42+ Kenyan ethnic languages."
+        "Select any source and target language across 22 Kenyan languages (Swahili, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Kisii, Meru, Maasai, Somali, Turkana, Mijikenda, Ateso, Embu, Taita, Samburu, Borana, Rendille, Pokomo, Ilchamus, Pokot, and Taveta) plus English.",
+        "Search words or phrases, browse by semantic category (Greetings, Numbers, Family, Food, Nature, Verbs, Proverbs), or compare translations side-by-side across all 22 languages.",
+        "Lexical entries are cross-referenced against 34 public-domain East African linguistic monographs (1842–1929) and Unicode CLDR / CC0 corpora."
       ],
       "faq": [
         {
@@ -519,7 +503,7 @@
         },
         {
           "question": "Is this a machine translation tool?",
-          "answer": "No \u2014 this is a curated dictionary-based translator. Each translation has been verified by community contributors. It translates individual words and common phrases, not full sentences. This makes it more reliable than machine translation for Kenyan languages, which are often poorly supported by AI translators."
+          "answer": "No — this is a curated dictionary-based translator. Each translation has been verified by community contributors. It translates individual words and common phrases, not full sentences. This makes it more reliable than machine translation for Kenyan languages, which are often poorly supported by AI translators."
         },
         {
           "question": "Can I contribute translations?",
@@ -537,26 +521,24 @@
     },
     "kplc-token-calculator": {
       "slug": "kplc-token-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Under the EPRA 2023\u20132026 Retail Tariff Review, there is no monthly fixed standing charge (KES 0) for domestic consumers",
-        "Domestic Lifeline (DC1) covers the first 30 kWh/month at KES 12.14/kWh base energy rate",
-        "Domestic Ordinary (DC2) covers 31\u2013100 kWh/month at KES 16.50/kWh base energy rate",
-        "Consumption above 100 kWh/month (DC3) is billed at KES 19.07/kWh base energy rate",
-        "Each kWh also attracts Fuel Energy Cost (FCC), Forex Adjustment (FERFA), Inflation Adjustment (IA), EPRA Levy (KES 0.18), WRA Levy (KES 0.05), 5% REP Levy, and 16% VAT"
+        "Enter your KPLC prepaid token purchase amount (KES) and select your customer tariff band (Domestic Lifeline DC1, Domestic Ordinary DC2/DC3, or Small Commercial SC) to estimate kilowatt-hours (kWh) received.",
+        "View a transparent itemization of every statutory surcharge deducted before energy units are calculated: Fuel Energy Cost Charge (FECC), Foreign Exchange Rate Fluctuation Adjustment (FERFA), Inflation Adjustment, WARMA & EPRA levies, Rural Electrification Programme (REP 5%), and 16% VAT.",
+        "Tariff bands and Pass-Through adjustment formulas follow Energy and Petroleum Regulatory Authority (EPRA) gazetted retail electricity schedules."
       ],
       "faq": [
         {
           "question": "How many KPLC units will I get for KES 1,000?",
-          "answer": "Under the EPRA 2023\u20132026 tariff structure, KES 1,000 buys approximately 38 kWh on the Lifeline tariff (DC1, 0\u201330 kWh/month) or ~31 kWh on the Domestic Ordinary tariff (DC2, 31\u2013100 kWh/month) after Fuel Energy Cost, Forex Adjustment, EPRA/WRA/REP levies, and 16% VAT."
+          "answer": "Under the EPRA 2023–2026 tariff structure, KES 1,000 buys approximately 38 kWh on the Lifeline tariff (DC1, 0–30 kWh/month) or ~31 kWh on the Domestic Ordinary tariff (DC2, 31–100 kWh/month) after Fuel Energy Cost, Forex Adjustment, EPRA/WRA/REP levies, and 16% VAT."
         },
         {
           "question": "What is the KPLC fixed charge of KES 150?",
-          "answer": "EPRA abolished the monthly KES 150 fixed standing charge for domestic prepaid customers under the 2023\u20132026 tariff review. Every shilling you pay goes directly toward energy units and per-unit statutory levies/VAT."
+          "answer": "EPRA abolished the monthly KES 150 fixed standing charge for domestic prepaid customers under the 2023–2026 tariff review. Every shilling you pay goes directly toward energy units and per-unit statutory levies/VAT."
         },
         {
           "question": "What is the lifeline tariff?",
-          "answer": "Under the EPRA 2023\u20132026 tariff structure, the Domestic Lifeline band (DC1, 0\u201330 kWh/month) is charged at a base rate of KES 12.14/kWh. Ordinary Domestic DC2 (31\u2013100 kWh) is KES 16.50/kWh, and DC3 (above 100 kWh) is KES 19.07/kWh, with no monthly fixed standing charge."
+          "answer": "Under the EPRA 2023–2026 tariff structure, the Domestic Lifeline band (DC1, 0–30 kWh/month) is charged at a base rate of KES 12.14/kWh. Ordinary Domestic DC2 (31–100 kWh) is KES 16.50/kWh, and DC3 (above 100 kWh) is KES 19.07/kWh, with no monthly fixed standing charge."
         },
         {
           "question": "What levies are included in KPLC token charges?",
@@ -570,21 +552,20 @@
     },
     "kuccps-cluster-calculator": {
       "slug": "kuccps-cluster-calculator",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Minimum KCSE mean grade for direct degree placement via KUCCPS in Kenyan universities is C+ (7 points out of 12).",
-        "Each degree programme belongs to one of 15+ subject clusters, requiring 4 specific KCSE subjects weighted by relevance.",
-        "Maximum raw weighted cluster total is 48 points (scoring A = 12 points across all 4 required cluster subjects).",
-        "Cut-off points vary annually per university and course depending on national KCSE performance and declared program capacities."
+        "Enter your KCSE grades in the 4 required cluster subjects plus your overall 8-subject KCSE aggregate points to calculate your weighted KUCCPS cluster score out of 48.",
+        "Compare your computed cluster points against recent university degree cutoff thresholds for Medicine, Engineering, Law, Architecture, Computer Science, Nursing, Education, and Business.",
+        "Calculations implement the official Kenya Universities and Colleges Central Placement Service (KUCCPS) square-root weighting formula."
       ],
       "faq": [
         {
           "question": "How are KUCCPS cluster points calculated?",
-          "answer": "Each university course belongs to a cluster. Each cluster specifies 4 required subjects with weights (typically 2, 1, 0.5, 0.5). Your cluster weight = sum of (Grade points \u00d7 subject weight). Grade points: A=12, A-=11, B+=10, B=9, down to E=1."
+          "answer": "Each university course belongs to a cluster. Each cluster specifies 4 required subjects with weights (typically 2, 1, 0.5, 0.5). Your cluster weight = sum of (Grade points × subject weight). Grade points: A=12, A-=11, B+=10, B=9, down to E=1."
         },
         {
           "question": "What is the maximum cluster weight?",
-          "answer": "The maximum cluster weight is 48 points (if you score A in all 4 weighted subjects: 12\u00d72 + 12\u00d71 + 12\u00d70.5 + 12\u00d70.5 = 48)."
+          "answer": "The maximum cluster weight is 48 points (if you score A in all 4 weighted subjects: 12×2 + 12×1 + 12×0.5 + 12×0.5 = 48)."
         },
         {
           "question": "How many clusters does KUCCPS have?",
@@ -602,19 +583,42 @@
     },
     "learn": {
       "slug": "learn",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
-      "faq": []
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Choose any of 22 indigenous Kenyan language courses—spanning Bantu, Nilotic, and Cushitic language families—to practice structured units, interactive vocabulary drills, grammar lessons, and cultural proverbs.",
+        "Each course combines spaced-repetition exercises (multiple choice, sentence building, pair matching, and translation) with comprehensive reference grammar chapters and authentic historical texts.",
+        "All course progress, XP streaks, and mastered vocabulary are saved privately in your local browser storage with no sign-up required."
+      ],
+      "faq": [
+        {
+          "question": "Which Kenyan languages can I learn for free on KenyaHub?",
+          "answer": "KenyaHub offers 22 free interactive Kenyan language courses covering Bantu (Swahili, Kikuyu, Luhya, Kamba, Kisii, Meru, Mijikenda, Embu, Taita, Taveta, Pokomo), Nilotic (Dholuo, Kalenjin, Maasai, Turkana, Ateso, Samburu, Ilchamus, Pokot), and Cushitic (Somali, Borana/Oromo, Rendille) languages."
+        },
+        {
+          "question": "Where do the vocabulary, grammar lessons, and proverbs come from?",
+          "answer": "Our language curricula are compiled from 34 verified public-domain East African linguistic, grammatical, and ethnographic monographs published between 1842 and 1929 (by scholars and native speakers including Krapf, Tutschek, Steere, Taylor, Madan, Hémery, McGregor, Hollis, Beech, Lindblom, and Stam) alongside Unicode CLDR and CC0 open lexical datasets."
+        },
+        {
+          "question": "How do the interactive language lessons and XP levels work?",
+          "answer": "Each language course is organized into progressive units and skill modules. Completing a lesson tests your recall through multiple-choice questions, word-bank sentence building, pair matching, and translation exercises, awarding XP toward 5-star module mastery and cultural rank badges."
+        },
+        {
+          "question": "Do I need to create an account or pay to access all units?",
+          "answer": "No. Every language course, vocabulary module, reference grammar guide, cultural wisdom collection, and mini-game on KenyaHub is 100% free with no login required. You can also toggle 'Unlock All' at any time to jump directly to advanced grammar or cultural units."
+        },
+        {
+          "question": "Can I browse all vocabulary words and grammar rules without playing a quiz?",
+          "answer": "Yes. Inside any language course, switch from the 'Path' tab to the 'Vocab' tab to search and read every module's word list, pronunciation guide, and usage tips at once, or open the 'Grammar' and 'Wisdom' tabs to study noun classes, verb conjugations, proverbs, and riddles."
+        }
+      ]
     },
     "livestock-market-prices": {
       "slug": "livestock-market-prices",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Prices are approximate ranges based on NALMC weekly reports and market observations. Actual prices vary by animal condition, weight, breed, and season.",
-        "Prices tend to spike before major holidays (Eid, Christmas, Easter) and drop during prolonged droughts when supply increases.",
-        "Grade/dairy cattle prices vary enormously based on breed, age, lactation status, and pedigree documentation.",
-        "The NALMC (National Agriculture and Livestock Markets Commission) publishes weekly market reports available at their offices.",
-        "Always negotiate \u2014 listed prices are typical ranges, not fixed rates."
+        "Filter livestock categories (beef cattle, dairy cows, Dorper/Red Maasai sheep, Galla/Small East African goats, camels, and indigenous poultry) by county market center.",
+        "Compare live-weight price ranges (KES) across major pastoral and terminal markets including Garissa, Isiolo, Kajiado, Dagoretti, Narok, Eldoret, andBomet.",
+        "Market benchmarks reflect State Department for Livestock Development and National Drought Management Authority (NDMA) market surveillance bulletins."
       ],
       "faq": [
         {
@@ -633,12 +637,16 @@
     },
     "mobile-number-prefix": {
       "slug": "mobile-number-prefix",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Type any 4-digit Kenyan mobile prefix (e.g., 0722, 0733, 0770, 0747, 0110, 0100) or full phone number (+254...) to identify the original mobile network operator assigned by the Communications Authority of Kenya (CA).",
+        "Browse the complete prefix allocation directory for Safaricom, Airtel Kenya, Telkom Kenya, Jamii Telecom (Faiba 4G), and Equitel alongside essential USSD service codes.",
+        "Note that under CA Mobile Number Portability (MNP) rules, a subscriber may port an existing number to another network while retaining the original 4-digit prefix."
+      ],
       "faq": [
         {
           "question": "How can I identify which network a Kenyan phone number belongs to?",
-          "answer": "Look at the first 4 digits of the number (e.g. 0722). Safaricom uses 0700\u20130729, 0740\u20130743, 0790\u20130799, 0110\u20130119 among others. Airtel uses 0730\u20130739, 0750\u20130756, 0780\u20130789, 0100\u20130109. Telkom uses 0770\u20130779, 0120\u20130129."
+          "answer": "Look at the first 4 digits of the number (e.g. 0722). Safaricom uses 0700–0729, 0740–0743, 0790–0799, 0110–0119 among others. Airtel uses 0730–0739, 0750–0756, 0780–0789, 0100–0109. Telkom uses 0770–0779, 0120–0129."
         },
         {
           "question": "What is Kenya's country code?",
@@ -656,13 +664,11 @@
     },
     "mpesa-fee-calculator": {
       "slug": "mpesa-fee-calculator",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Sending KES 100 or less to registered M-Pesa customers is completely FREE.",
-        "Lipa Na M-Pesa Buy Goods (Till to Customer) transactions are FREE across all tariff bands.",
-        "Maximum single M-Pesa transaction limit is KES 250,000; maximum daily transaction and wallet balance limit is KES 500,000.",
-        "Receiving money into your M-Pesa account is always free; tariff fees apply only to the sender or person withdrawing.",
-        "ATM withdrawals require a minimum of KES 200 and are capped at KES 35,000 per withdrawal."
+        "Enter any transaction amount between KES 1 and KES 250,000 and select the transaction type (Send to M-Pesa, Send to Unregistered/Other Network, Withdraw at Agent, or ATM Withdrawal) to calculate exact Safaricom M-Pesa charges.",
+        "Compare single-transfer fees against split-transaction strategies and review daily transaction limits (KES 500,000/day, KES 250,000 per single transaction).",
+        "Tariff brackets reflect the current published Safaricom PLC M-Pesa consumer tariff schedule."
       ],
       "faq": [
         {
@@ -683,26 +689,22 @@
         },
         {
           "question": "How can I save on M-Pesa fees?",
-          "answer": "Use Buy Goods (Lipa Na M-Pesa) whenever possible as it's free. When sending money, check the fee boundaries \u2014 sometimes sending KES 500 instead of KES 501 can save you fees because of tariff band transitions."
+          "answer": "Use Buy Goods (Lipa Na M-Pesa) whenever possible as it's free. When sending money, check the fee boundaries — sometimes sending KES 500 instead of KES 501 can save you fees because of tariff band transitions."
         }
       ]
     },
     "national-parks-directory": {
       "slug": "national-parks-directory",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Fees are per person per day unless stated otherwise",
-        "Citizen = Kenyan national (ID required); Resident = non-citizen living in Kenya (work permit/alien ID required)",
-        "Non-resident fees shown in USD; pay at the gate via eCitizen or at KWS offices",
-        "Children rates apply to ages 3\u201318; under 3 is free",
-        "KWS Smart Card ('My Wildlife') offers bulk discounts for frequent visitors",
-        "Fees are reviewed periodically by KWS \u2014 always confirm at kws.go.ke before visiting",
-        "Vehicle entry fees (KES 300\u20131,000 for Kenyan vehicles) are separate from person entry fees"
+        "Filter Kenya's national parks, national reserves, and marine sanctuaries by region, wildlife highlights (Big Five, birding, marine reefs), or management authority (KWS vs. County Government).",
+        "Compare Kenya Wildlife Service (KWS) conservation entry fees across Citizen (KES), East African Resident (KES), and Non-Resident (USD) visitor categories.",
+        "Park fees are paid cashlessly via the eCitizen / KWSPay portal prior to gate entry."
       ],
       "faq": [
         {
           "question": "How much does it cost to enter a national park in Kenya?",
-          "answer": "Entry fees vary by park and visitor category. Kenyan citizens pay KES 200\u2013500/day, residents KES 400\u20132,500/day, and non-residents USD 15\u201390/day. Children pay approximately half. Premium parks like Maasai Mara and Amboseli charge more."
+          "answer": "Entry fees vary by park and visitor category. Kenyan citizens pay KES 200–500/day, residents KES 400–2,500/day, and non-residents USD 15–90/day. Children pay approximately half. Premium parks like Maasai Mara and Amboseli charge more."
         },
         {
           "question": "What is the difference between a national park and a national reserve?",
@@ -714,24 +716,21 @@
         },
         {
           "question": "When is the best time for safari in Kenya?",
-          "answer": "The dry season (June\u2013October) is best for wildlife viewing as animals gather around water sources. The Great Wildebeest Migration crosses into Maasai Mara from July\u2013October. However, the green season (November\u2013May) offers lower rates and fewer crowds."
+          "answer": "The dry season (June–October) is best for wildlife viewing as animals gather around water sources. The Great Wildebeest Migration crosses into Maasai Mara from July–October. However, the green season (November–May) offers lower rates and fewer crowds."
         },
         {
           "question": "How do I book a KWS park visit?",
-          "answer": "You can book through the eCitizen portal (ecitizen.go.ke) or pay at the gate. For popular parks, advance booking is recommended, especially during peak season (July\u2013October and December\u2013January)."
+          "answer": "You can book through the eCitizen portal (ecitizen.go.ke) or pay at the gate. For popular parks, advance booking is recommended, especially during peak season (July–October and December–January)."
         }
       ]
     },
     "nhif-hospital-finder": {
       "slug": "nhif-hospital-finder",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "All listed hospitals are accredited under the Social Health Authority (SHA / SHIF, formerly NHIF).",
-        "Outpatient cover under Primary Healthcare Fund (PHF) requires selecting a primary facility via *147# or sha.go.ke.",
-        "Inpatient cover under SHIF is accessible at accredited Level 4\u20136 facilities across Kenya.",
-        "Emergency treatment is covered at any accredited facility under the Emergency, Critical & Chronic Illness Fund (ECCIF).",
-        "Contribution rates: 2.75% of gross monthly salary (minimum KES 300/month), effective October 1, 2024.",
-        "Verify current facility accreditation status via *147# or https://sha.go.ke."
+        "Search or filter accredited healthcare facilities by county, KEPH hospital level (Level 2 Dispensary through Level 6 National Referral Hospital), ownership (Public, Faith-Based, or Private), and inpatient/outpatient services.",
+        "Verify facility accreditation under the Social Health Authority (SHA / SHIF) Primary Healthcare Fund and Social Health Insurance Fund.",
+        "Facility classifications follow the Kenya Master Health Facility List (KMHFL) and Social Health Authority empanelment records."
       ],
       "faq": [
         {
@@ -740,7 +739,7 @@
         },
         {
           "question": "What does hospital level mean in Kenya?",
-          "answer": "Kenya's health system has 6 levels: Level 1 (community), Level 2 (dispensary), Level 3 (health centre), Level 4 (sub-county hospital with surgery), Level 5 (county referral with specialists), Level 6 (national referral \u2014 KNH, MTRH)."
+          "answer": "Kenya's health system has 6 levels: Level 1 (community), Level 2 (dispensary), Level 3 (health centre), Level 4 (sub-county hospital with surgery), Level 5 (county referral with specialists), Level 6 (national referral — KNH, MTRH)."
         },
         {
           "question": "Can I use NHIF at a private hospital?",
@@ -748,7 +747,7 @@
         },
         {
           "question": "Has NHIF transitioned to SHA / SHIF?",
-          "answer": "Yes, the Social Health Authority (SHA) and Social Health Insurance Fund (SHIF) officially replaced NHIF on October 1, 2024 under the Social Health Insurance Act 2023. Salaried employees contribute 2.75% of gross salary, and accredited Level 2\u20136 facilities provide outpatient and inpatient care."
+          "answer": "Yes, the Social Health Authority (SHA) and Social Health Insurance Fund (SHIF) officially replaced NHIF on October 1, 2024 under the Social Health Insurance Act 2023. Salaried employees contribute 2.75% of gross salary, and accredited Level 2–6 facilities provide outpatient and inpatient care."
         },
         {
           "question": "How do I check if my hospital is NHIF-accredited?",
@@ -758,12 +757,11 @@
     },
     "number-plate-decoder": {
       "slug": "number-plate-decoder",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya registration plates follow the format KXX 000X (3-letter prefix, space, 3 digits, 1 letter suffix).",
-        "The letter 'I' and 'O' are omitted from prefixes to avoid confusion with numbers 1 and 0.",
-        "Registration is centralized in Nairobi \u2014 the prefix does NOT indicate where the vehicle operates, only where it was registered.",
-        "Since 2004, nearly all new registrations are processed in Nairobi, making prefix-to-county mapping less meaningful for newer plates."
+        "Enter any Kenyan vehicle registration prefix (e.g., KDA, KDM, KBZ, GK, CD, KX, ZB) to decode its approximate year of registration, historical county code, or special diplomatic/government series.",
+        "Browse the chronological K-series registration timeline from legacy colonial/provincial prefixes (KA–KZ) through second-generation (KAA–KAZ) and third-generation (KBA–KDZ) NTSA series.",
+        "Reference data is compiled from National Transport and Safety Authority (NTSA) motor vehicle registration records."
       ],
       "faq": [
         {
@@ -790,8 +788,12 @@
     },
     "passport-id-fees": {
       "slug": "passport-id-fees",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Filter official Directorate of Immigration and Citizen Services fees by document category: e-Passports (34-page A Series, 50-page B Series, 66-page C Series), Maisha Namba / National ID cards, Civil Registration (Birth & Death Certificates), and Foreign National permits.",
+        "Review required supporting documents, biometric booking procedures on eCitizen, and standard processing timelines at Nyayo House and regional Huduma Centres.",
+        "All statutory payments must be completed exclusively through the official eCitizen gateway (ecitizen.go.ke)."
+      ],
       "faq": [
         {
           "question": "How much is a new passport in Kenya?",
@@ -799,7 +801,7 @@
         },
         {
           "question": "How long does it take to get a Kenyan passport?",
-          "answer": "The official processing time is 10\u201315 working days after biometric capture. However, wait times can sometimes be longer depending on backlog. An expedited/emergency passport takes 1\u20133 days."
+          "answer": "The official processing time is 10–15 working days after biometric capture. However, wait times can sometimes be longer depending on backlog. An expedited/emergency passport takes 1–3 days."
         },
         {
           "question": "How much does it cost to replace a lost National ID?",
@@ -817,18 +819,16 @@
     },
     "paye-calculator": {
       "slug": "paye-calculator",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "PAYE is calculated on taxable income after deducting NSSF, SHIF (SHA), and Affordable Housing Levy (per the Tax Laws Amendment Act, 2024).",
-        "Every resident individual taxpayer receives a mandatory Personal Relief of KES 2,400 per month (KES 28,800 per year).",
-        "NSSF Year 4 rates (effective February 2026): 6% of pensionable pay with Tier I capped at KES 9,000 (KES 540) and Tier II up to KES 108,000 (max total KES 6,480/month, matched by employer).",
-        "Social Health Insurance Fund (SHIF) under SHA is 2.75% of gross monthly salary (minimum KES 300/month), fully tax-deductible.",
-        "Affordable Housing Levy (AHL) is 1.5% of gross monthly salary from the employee and 1.5% from the employer, with the employee portion fully tax-deductible."
+        "Enter your monthly or annual gross salary (KES) and optional pension or mortgage interest deductions to calculate your exact 2026 net take-home pay.",
+        "View a complete statutory payslip breakdown including NSSF Tier I & II (6% up to KES 108,000 pensionable pay, max KES 6,480), Social Health Insurance Fund (SHIF/SHA at 2.75% of gross), Affordable Housing Levy (1.5% of gross), taxable pay after allowable pre-tax deductions, progressive PAYE bands (10% to 35%), and KES 2,400 monthly personal relief.",
+        "Formulas strictly implement the Income Tax Act (Cap 470), Tax Laws (Amendment) Act 2024, NSSF Act 2013 (Year 4 schedule), and Social Health Insurance Act."
       ],
       "faq": [
         {
           "question": "What PAYE tax bands apply in Kenya?",
-          "answer": "Kenya uses progressive tax bands: 10% for the first KES 24,000, 25% for KES 24,001\u201332,333, 30% for KES 32,334\u2013500,000, 32.5% for KES 500,001\u2013800,000, and 35% above KES 800,000. A personal relief of KES 2,400 per month is applied."
+          "answer": "Kenya uses progressive tax bands: 10% for the first KES 24,000, 25% for KES 24,001–32,333, 30% for KES 32,334–500,000, 32.5% for KES 500,001–800,000, and 35% above KES 800,000. A personal relief of KES 2,400 per month is applied."
         },
         {
           "question": "Is the Affordable Housing Levy mandatory?",
@@ -836,7 +836,7 @@
         },
         {
           "question": "What are the new NSSF rates in Kenya?",
-          "answer": "Under the NSSF Act 2013 (now in effect), employees contribute 6% of pensionable pay. Under the Year 4 schedule (effective February 2026), Tier I covers up to KES 9,000 (max KES 540) and Tier II covers KES 9,001\u2013108,000 (max KES 5,940; total max KES 6,480/month). The employer matches these contributions."
+          "answer": "Under the NSSF Act 2013 (now in effect), employees contribute 6% of pensionable pay. Under the Year 4 schedule (effective February 2026), Tier I covers up to KES 9,000 (max KES 540) and Tier II covers KES 9,001–108,000 (max KES 5,940; total max KES 6,480/month). The employer matches these contributions."
         },
         {
           "question": "How is SHA calculated in Kenya?",
@@ -850,13 +850,11 @@
     },
     "professional-bodies-kenya": {
       "slug": "professional-bodies-kenya",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "This directory covers the major professional regulatory bodies in Kenya. Some professions have both a statutory regulator (e.g., EBK) and a professional association (e.g., IEK).",
-        "Registration fees and renewal fees are approximate and may change. Always verify current fees on the body's official website.",
-        "Practising without valid registration in a regulated profession is a criminal offence under the respective Acts of Parliament.",
-        "Most bodies now offer online registration and renewal through their websites or the eCitizen platform.",
-        "To verify if a professional is registered, use the 'Verification URL' provided or contact the body directly."
+        "Search Kenya's statutory professional regulatory bodies and licensing councils by profession, acronym (LSK, KMPDC, EBK, ICPAK, BORAQS, NCK, PPB, TSC, EARB), or enabling Act of Parliament.",
+        "Compare initial registration fees, annual practicing certificate renewal costs, academic qualification requirements, and direct links to official online practitioner verification registers.",
+        "Always verify a practitioner's current annual license status on the regulator's portal before engaging professional legal, medical, engineering, or financial services."
       ],
       "faq": [
         {
@@ -869,22 +867,22 @@
         },
         {
           "question": "How much does professional registration cost?",
-          "answer": "Costs vary widely \u2014 from KES 1,000 (TSC for teachers) to KES 20,000+ (CMA for investment advisors). Most bodies charge KES 3,000\u201310,000 for initial registration plus annual renewal fees."
+          "answer": "Costs vary widely — from KES 1,000 (TSC for teachers) to KES 20,000+ (CMA for investment advisors). Most bodies charge KES 3,000–10,000 for initial registration plus annual renewal fees."
         }
       ]
     },
     "public-holidays": {
       "slug": "public-holidays",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Under Section 4 of the Public Holidays Act (Cap 110), when a public holiday falls on a Sunday, the following Monday is observed as a public holiday.",
-        "Islamic holidays (Eid ul-Fitr and Eid ul-Adha) depend on the sighting of the moon and are formally gazetted by the Cabinet Secretary for Interior.",
-        "Mazingira Day (10 October) was amended from Utamaduni/Huduma Day in 2024 to dedicate the holiday to national tree planting and environmental conservation."
+        "View all gazetted national public holidays in Kenya for 2026 under the Public Holidays Act (Cap 110), complete with live countdowns and day-of-week observance rules.",
+        "Per Section 4 of the Public Holidays Act, whenever a public holiday falls on a Sunday, the following Monday is observed as an official public holiday.",
+        "Islamic holidays (Idd-ul-Fitr and Idd-ul-Azha) are subject to lunar sighting confirmation and formal Gazette Notice by the Cabinet Secretary for Interior."
       ],
       "faq": [
         {
           "question": "How many public holidays does Kenya have?",
-          "answer": "Kenya has approximately 11\u201313 gazetted public holidays per year. The exact number varies because Islamic holidays (Eid ul-Fitr, Eid ul-Adha) are determined by moon sighting. Additionally, if a holiday falls on a Sunday, Monday is observed."
+          "answer": "Kenya has approximately 11–13 gazetted public holidays per year. The exact number varies because Islamic holidays (Eid ul-Fitr, Eid ul-Adha) are determined by moon sighting. Additionally, if a holiday falls on a Sunday, Monday is observed."
         },
         {
           "question": "What happens when a public holiday falls on a Sunday?",
@@ -906,14 +904,11 @@
     },
     "real-estate-agent-checker": {
       "slug": "real-estate-agent-checker",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "The Estate Agents Registration Board (EARB) regulates estate agents in Kenya under the Estate Agents Act (Cap 533)",
-        "It is illegal to act as an estate agent without EARB registration \u2014 Section 4 of the Act",
-        "Registered agents must renew their license annually by March 31",
-        "Always insist on seeing an agent's EARB registration certificate before engaging their services",
-        "EARB handles complaints against registered agents \u2014 you can file via their website or in person",
-        "The sample agents list is not exhaustive \u2014 always verify directly with EARB"
+        "Understand how to verify whether an estate agent, property manager, or land broker is legally registered with the Estate Agents Registration Board (EARB) under Cap 533.",
+        "Calculate statutory maximum sales and letting commission caps under the Estate Agents (Remuneration) Rules and follow the 7-step Ministry of Lands / Ardhisasa title deed due-diligence checklist.",
+        "Never pay land booking fees or purchase deposits before conducting an official land search and verifying the agent's current EARB annual practicing certificate."
       ],
       "faq": [
         {
@@ -936,16 +931,16 @@
     },
     "school-terms": {
       "slug": "school-terms",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "All public primary, junior secondary, and senior secondary schools follow the Ministry of Education gazetted calendar.",
-        "Term 3 has no mid-term break in order to accommodate national examinations (KPSEA, KJSEA, and KCSE) in late October and November.",
-        "2026 marks the pioneer Grade 10 cohort entering Senior Secondary School (SSS) under the 2-6-3-3-3 CBC structure."
+        "Track official Ministry of Education Term 1, Term 2, and Term 3 opening dates, half-term breaks, closing dates, and August/December school holidays for Kenyan basic education institutions.",
+        "View scheduled national examination windows administered by the Kenya National Examinations Council (KNEC), including KPSEA, KJSEA, and KCSE.",
+        "Calendar dates follow the Ministry of Education's annual circular for pre-primary, primary, junior, and senior schools."
       ],
       "faq": [
         {
           "question": "How many school terms does Kenya have?",
-          "answer": "Kenya has 3 school terms per year: Term 1 (January\u2013April), Term 2 (May\u2013August), and Term 3 (August/September\u2013October/November). Each term has a mid-term break, and there are longer holidays between terms."
+          "answer": "Kenya has 3 school terms per year: Term 1 (January–April), Term 2 (May–August), and Term 3 (August/September–October/November). Each term has a mid-term break, and there are longer holidays between terms."
         },
         {
           "question": "When do Kenya schools open in 2026?",
@@ -953,7 +948,7 @@
         },
         {
           "question": "When is the December holiday for schools?",
-          "answer": "The long December holiday typically runs from early November to early January \u2014 about 9 weeks. It's the longest school break in the Kenyan calendar."
+          "answer": "The long December holiday typically runs from early November to early January — about 9 weeks. It's the longest school break in the Kenyan calendar."
         },
         {
           "question": "Do all schools follow the same term dates?",
@@ -963,47 +958,42 @@
     },
     "solar-roi-calculator": {
       "slug": "solar-roi-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Solar irradiance values are annual averages in kWh/m\u00b2/day based on Kenya Meteorological Department data.",
-        "System cost of ~KES 80,000/kW is an approximate Kenya market average for grid-tied systems (2026).",
-        "Panel efficiency of 20% reflects typical monocrystalline panels available in Kenya.",
-        "System losses (15%) account for inverter efficiency, wiring, dust, and temperature effects.",
-        "Annual degradation of 0.5% is the industry standard for quality solar panels.",
-        "Kenya sits on the equator, providing excellent year-round solar conditions (5.2 to 6.5 peak sun hours/day).",
-        "Actual savings depend on your specific KPLC tariff band (DC1/DC2/DC3) and consumption pattern."
+        "Enter your average monthly KPLC electricity bill (KES) and select your county to estimate the optimal solar PV system size (kWp), battery storage capacity (kWh), upfront installation cost, and payback period.",
+        "Calculations incorporate county-specific Global Horizontal Irradiance (GHI / peak sun hours per day) and current EPRA retail electricity tariffs.",
+        "Under Kenyan tax regulations, qualifying solar photovoltaic modules and deep-cycle solar batteries benefit from VAT exemptions when sourced through EPRA-licensed solar contractors."
       ],
       "faq": [
         {
           "question": "Is solar worth it in Kenya?",
-          "answer": "Yes. Kenya sits on the equator with excellent year-round sunlight (5.3\u20136.5 kWh/m\u00b2/day). Most grid-tied solar systems pay for themselves in 3\u20136 years and generate free electricity for 20+ years after that."
+          "answer": "Yes. Kenya sits on the equator with excellent year-round sunlight (5.3–6.5 kWh/m²/day). Most grid-tied solar systems pay for themselves in 3–6 years and generate free electricity for 20+ years after that."
         },
         {
           "question": "How much does a solar system cost in Kenya?",
-          "answer": "The average cost is approximately KES 80,000 per kilowatt (kW) installed for a grid-tied system including panels, inverter, mounting, and installation. A typical household might need a 2\u20135 kW system (KES 160,000\u2013400,000)."
+          "answer": "The average cost is approximately KES 80,000 per kilowatt (kW) installed for a grid-tied system including panels, inverter, mounting, and installation. A typical household might need a 2–5 kW system (KES 160,000–400,000)."
         },
         {
           "question": "How many solar panels do I need for my home?",
-          "answer": "It depends on your electricity consumption. A household spending KES 5,000/month on KPLC tokens typically needs a 2\u20133 kW system (6\u201310 panels of 330W each)."
+          "answer": "It depends on your electricity consumption. A household spending KES 5,000/month on KPLC tokens typically needs a 2–3 kW system (6–10 panels of 330W each)."
         },
         {
           "question": "What is the payback period for solar in Kenya?",
-          "answer": "Typically 3\u20136 years depending on your location, system size, and current electricity spending. After payback, you enjoy 15\u201320 more years of free electricity."
+          "answer": "Typically 3–6 years depending on your location, system size, and current electricity spending. After payback, you enjoy 15–20 more years of free electricity."
         },
         {
           "question": "Do solar panels work during the rainy season?",
-          "answer": "Yes, but at reduced efficiency. Solar panels still generate electricity on cloudy days, typically at 10\u201330% of their rated capacity. Kenya's rainy seasons are relatively short (March\u2013May and Oct\u2013Dec)."
+          "answer": "Yes, but at reduced efficiency. Solar panels still generate electricity on cloudy days, typically at 10–30% of their rated capacity. Kenya's rainy seasons are relatively short (March–May and Oct–Dec)."
         }
       ]
     },
     "stamp-duty-calculator": {
       "slug": "stamp-duty-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Stamp duty is payable within 30 days of execution of the transfer instrument",
-        "First-time buyers under the Affordable Housing Fund (AHF) scheme are exempt from stamp duty",
-        "LSK conveyancing fees are calculated on a progressive scale similar to tax bands",
-        "Land rent and rates clearance are additional county-specific costs for leasehold properties"
+        "Enter the property purchase price or government valuation and select the location category (Urban/Municipality at 4% vs. Rural/Agricultural at 2%) to calculate Stamp Duty payable on land transfers in Kenya.",
+        "Include advocate legal fee estimates under the Advocates (Remuneration) Order, valuation fees, and Ardhisasa/land registry registration charges to budget your total property closing cost.",
+        "Rates follow the Stamp Duty Act (Cap 480) and Kenya Revenue Authority (KRA) iTax property transfer guidelines."
       ],
       "faq": [
         {
@@ -1030,14 +1020,11 @@
     },
     "trademark-cost-kenya": {
       "slug": "trademark-cost-kenya",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "All fees are in Kenya Shillings (KES) as gazetted by KIPI",
-        "Attorney/agent fees are separate and vary \u2014 typically KES 30,000\u201380,000 for trademark, KES 50,000\u2013150,000 for patent",
-        "KIPI processes applications on a first-come-first-served basis",
-        "Trademark classes follow the Nice Classification system (45 classes)",
-        "Foreign applicants must use a registered Kenyan IP agent",
-        "Late renewal attracts a penalty of 100% of the renewal fee"
+        "Select applicant residency status (Kenyan Citizen/Local Entity vs. Foreign Applicant) and number of Nice Classification classes (1 to 45) to calculate official Kenya Industrial Property Institute (KIPI) trademark registration fees.",
+        "Review stage-by-stage statutory fees from preliminary TM27 search and TM2 application filing through Industrial Property Journal advertisement (60-day opposition window) to 10-year registration certificate issuance.",
+        "Fee schedules reflect the Industrial Property Act and gazetted KIPI tariff regulations."
       ],
       "faq": [
         {
@@ -1046,7 +1033,7 @@
         },
         {
           "question": "How long does trademark registration take in Kenya?",
-          "answer": "Trademark registration typically takes 12\u201318 months from application to certificate issuance. This includes the 60-day opposition period after Gazette publication."
+          "answer": "Trademark registration typically takes 12–18 months from application to certificate issuance. This includes the 60-day opposition period after Gazette publication."
         },
         {
           "question": "What are trademark classes?",
@@ -1054,7 +1041,7 @@
         },
         {
           "question": "What is the difference between a patent and a utility model?",
-          "answer": "A patent protects novel inventions for 20 years and requires thorough examination (costs ~KES 34,650). A utility model (petty patent) is simpler, faster (6\u201312 months), cheaper (~KES 13,750), but only lasts 10 years and has a lower inventiveness threshold."
+          "answer": "A patent protects novel inventions for 20 years and requires thorough examination (costs ~KES 34,650). A utility model (petty patent) is simpler, faster (6–12 months), cheaper (~KES 13,750), but only lasts 10 years and has a lower inventiveness threshold."
         },
         {
           "question": "Do I need an IP attorney?",
@@ -1064,8 +1051,12 @@
     },
     "traffic-fines": {
       "slug": "traffic-fines",
-      "notesTitle": "How to Pay Traffic Fines",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Search or filter traffic offences under the Traffic Act (Cap 403) and NTSA Minor Offences Rules—covering speeding, PSV compliance, driving without valid insurance or license, and vehicle roadworthiness.",
+        "Inspect statutory cash bail/fine ceilings (KES), court penalties, and driver demerit point assessments.",
+        "Minor traffic fines are payable strictly through official eCitizen / NTSA digital channels or designated court registries—never pay unreceipted cash bribes on the road."
+      ],
       "faq": [
         {
           "question": "What is the fine for speeding in Kenya?",
@@ -1073,7 +1064,7 @@
         },
         {
           "question": "What is the NTSA demerit points system?",
-          "answer": "Kenya uses a 24-point demerit system over a 3-year period. Points 1\u201312 result in a warning, 13\u201318 require a mandatory road safety course, 19\u201323 lead to license suspension for 6 months, and 24+ points result in license revocation."
+          "answer": "Kenya uses a 24-point demerit system over a 3-year period. Points 1–12 result in a warning, 13–18 require a mandatory road safety course, 19–23 lead to license suspension for 6 months, and 24+ points result in license revocation."
         },
         {
           "question": "What is the fine for driving without insurance in Kenya?",
@@ -1091,13 +1082,11 @@
     },
     "vehicle-insurance-calculator": {
       "slug": "vehicle-insurance-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Third Party Only insurance is the minimum legal requirement under the Insurance (Motor Vehicle Third Party Risks) Act (Cap 405)",
-        "Driving without valid insurance is a criminal offence with a fine of up to KES 100,000 or imprisonment",
-        "IRA sets minimum premium rates \u2014 actual premiums from insurers may be higher based on risk assessment",
-        "Comprehensive premiums depend on vehicle value, age, driver history, and insurer's underwriting criteria",
-        "PSV vehicles must additionally have a valid NTSA inspection certificate and PSV badge"
+        "Enter your vehicle's current market value (KES), usage class (Private Car, Commercial Own Goods, PSV Matatu/Chauffeured, or Motorcycle), and coverage type (Comprehensive vs. Third Party Only) to estimate annual motor insurance premiums.",
+        "See itemized statutory levies included in Kenyan policies: Insurance Training Levy (0.2%), Policyholders Compensation Fund (PCF 0.25%), and KES 40 Stamp Duty, plus optional Excess Protector and Political Violence & Terrorism (PVT) riders.",
+        "Rate benchmarks follow Insurance Regulatory Authority (IRA) guidelines and Cap 405 compulsory third-party motor insurance requirements."
       ],
       "faq": [
         {
@@ -1110,7 +1099,7 @@
         },
         {
           "question": "What is the difference between Third Party and Comprehensive insurance?",
-          "answer": "Third Party Only covers damage to other people and their property. Comprehensive cover additionally protects your own vehicle against damage, theft, fire, and windscreen breakage. Comprehensive premiums are typically 4\u20136% of your vehicle's value."
+          "answer": "Third Party Only covers damage to other people and their property. Comprehensive cover additionally protects your own vehicle against damage, theft, fire, and windscreen breakage. Comprehensive premiums are typically 4–6% of your vehicle's value."
         },
         {
           "question": "Who sets minimum insurance premiums in Kenya?",
@@ -1124,13 +1113,11 @@
     },
     "ward-constituency-finder": {
       "slug": "ward-constituency-finder",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Population figures are from the 2019 Kenya Population and Housing Census (KNBS)",
-        "Elected officials data is from the 2022 General Election \u2014 valid until the 2027 General Election",
-        "Area is in km\u00b2",
-        "County codes follow the official KNBS/IEBC numbering (1 = Mombasa to 47 = Nairobi)",
-        "Constituencies listed are parliamentary constituencies (not county assembly wards)"
+        "Search across all 47 counties and 290 parliamentary constituencies of Kenya as delimited by the Independent Electoral and Boundaries Commission (IEBC) under the 2010 Constitution.",
+        "Filter by county to view county codes (#001 Mombasa to #047 Nairobi), county headquarters, elected county leadership, and constituent parliamentary constituencies.",
+        "For deeper county comparisons including FY 2025/26 budgets, climate zones, and accredited hospitals, visit the unified 47 Counties Hub."
       ],
       "faq": [
         {
@@ -1157,13 +1144,11 @@
     },
     "water-bill-calculator": {
       "slug": "water-bill-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Water tariffs are approved by the Water Services Regulatory Board (WASREB)",
-        "Sewerage charge is typically 75% of the water bill for connected properties",
-        "Meter rent is a fixed monthly charge regardless of consumption",
-        "Lifeline tariff (0\u20136 m\u00b3) is subsidized for low-income households",
-        "Rates shown are for domestic/residential connections; commercial rates are higher"
+        "Select your county water and sewerage utility (e.g., Nairobi City Water & Sewerage Company, Mombasa Water, Eldowas, Kiwasco, Nakuru Water, or Mawasco) and enter your monthly water consumption in cubic metres (m³).",
+        "Compute your progressive block tariff water charge, sewerage surcharge (typically 75% of water bill where connected), meter rent, and WASREB regulatory levy.",
+        "Tariff blocks reflect Water Services Regulatory Board (WASREB) approved county water utility schedules."
       ],
       "faq": [
         {
@@ -1172,11 +1157,11 @@
         },
         {
           "question": "What is the lifeline tariff?",
-          "answer": "The lifeline tariff is a subsidized rate for the first 0\u20136 cubic metres of water consumed per month. It ensures basic water access for low-income households at a very low cost (typically KES 33\u201345 per m\u00b3 under WASREB domestic tariff bands)."
+          "answer": "The lifeline tariff is a subsidized rate for the first 0–6 cubic metres of water consumed per month. It ensures basic water access for low-income households at a very low cost (typically KES 33–45 per m³ under WASREB domestic tariff bands)."
         },
         {
           "question": "How much water does an average Kenyan household use?",
-          "answer": "An average household of 4\u20135 people in Nairobi uses approximately 10\u201320 cubic metres (m\u00b3) per month. This covers cooking, cleaning, bathing, and laundry. Households with gardens or larger families may use 30+ m\u00b3."
+          "answer": "An average household of 4–5 people in Nairobi uses approximately 10–20 cubic metres (m³) per month. This covers cooking, cleaning, bathing, and laundry. Households with gardens or larger families may use 30+ m³."
         },
         {
           "question": "Why is there a sewerage charge?",
@@ -1190,11 +1175,11 @@
     },
     "kra-car-import-calculator": {
       "slug": "kra-car-import-calculator",
-      "notesTitle": "Important Notes & About KRA CRSP Valuation",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Uses official KRA Current Retail Selling Price (CRSP) depreciation bands up to 65% for vehicles 7\u20138 years old.",
-        "Includes stacked Import Duty (35%), Excise Duty (20%\u201335%), VAT (16%), IDF (2.5%), RDL (2.0%), KEBS inspection, and NTSA registration fees.",
-        "Under KEBS KS 1515:2000, right-hand drive vehicles older than 8 years from the year of first registration are prohibited from importation into Kenya."
+        "Select vehicle make, model, engine capacity, fuel type, and year of first registration to compute total Kenya Revenue Authority (KRA) customs taxes using the official Current Retail Selling Price (CRSP) schedule.",
+        "See a complete statutory breakdown of age depreciation (up to 65% for vehicles 7–8 years old), Import Duty (35%), Excise Duty, 16% VAT, Import Declaration Fee (IDF 2.5%), and Railway Development Levy (RDL 2%).",
+        "Verify KEBS 8-year age limit compliance and NTSA registration fees before shipping a vehicle to the Port of Mombasa."
       ],
       "faq": [
         {
@@ -1209,16 +1194,16 @@
     },
     "mjengo-construction-calculator": {
       "slug": "mjengo-construction-calculator",
-      "notesTitle": "Important Notes & About Kenyan Construction Costs",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Calculates 9x9 machine-cut quarry stone pieces, 50kg cement bags, river sand and ballast tonnes, D12/D16 steel bars, and 28-gauge mabati sheets.",
-        "Includes regional quarry and transport multipliers for Nairobi/Kiambu, Central, Rift Valley, Western/Nyanza, and Coast.",
-        "Stage-by-stage cashflow breakdown helps homeowners plan phased construction from substructure to finishes."
+        "Enter your target floor area (square metres), building typology (bungalow, maisonette, apartments, or commercial perimeter wall), finish standard, and Kenyan region to estimate total construction cost.",
+        "Inspect itemized bill-of-quantities (BQ) estimates for substructure, superstructure walling (machine-cut quarry stone vs. interlocking blocks), roofing, electrical/plumbing, and finishes alongside material quantities (bags of cement, tonnes of steel, sand, and ballast).",
+        "Unit rates are calibrated against the Architectural Association of Kenya (AAK) and Institute of Quantity Surveyors of Kenya (IQSK) building cost handbook."
       ],
       "faq": [
         {
           "question": "Should I buy machine-cut Ndarugo stone or hand-dressed quarry stone?",
-          "answer": "Machine-cut stones (9x9) cost slightly more per piece (KES 45\u201355) than hand-dressed stones (KES 32\u201342), but use 35% less mortar and require much thinner plaster coats."
+          "answer": "Machine-cut stones (9x9) cost slightly more per piece (KES 45–55) than hand-dressed stones (KES 32–42), but use 35% less mortar and require much thinner plaster coats."
         },
         {
           "question": "Are residential houses exempt from the NCA construction levy?",
@@ -1228,20 +1213,20 @@
     },
     "sacco-chama-calculator": {
       "slug": "sacco-chama-calculator",
-      "notesTitle": "Important Notes & About SASRA Regulated DT-SACCOs",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Models weighted monthly BOSA rebates (Interest on Deposits) and Share Capital dividends net of 5% statutory Withholding Tax.",
-        "Includes 3x\u20134x BOSA loan multiplier and 1% per month reducing-balance loan amortization.",
-        "Benchmarked against top SASRA-regulated Deposit-Taking SACCOs in Kenya."
+        "Model your Deposit-Taking SACCO (DT-SACCO) or registered Chama savings growth, BOSA loan multiplier (3x to 4x deposits), monthly reducing-balance loan repayments, and annual dividend/rebate payouts.",
+        "Account for the 5% statutory Withholding Tax (WHT) on SACCO dividends and interest on deposits, and compare effective net borrowing costs after annual deposit rebates.",
+        "Benchmarks reflect SACCO Societies Regulatory Authority (SASRA) supervision reports and standard Kenyan cooperative lending terms."
       ],
       "faq": [
         {
           "question": "What is the difference between SACCO Dividends and Interest on Deposits (Rebates)?",
-          "answer": "Dividends are paid on permanent, non-withdrawable Share Capital (typically 12%\u201320%), while Interest on Deposits (Rebates) is paid on monthly BOSA deposits (typically 9%\u201313%) weighted by how many months each deposit stayed in the SACCO."
+          "answer": "Dividends are paid on permanent, non-withdrawable Share Capital (typically 12%–20%), while Interest on Deposits (Rebates) is paid on monthly BOSA deposits (typically 9%–13%) weighted by how many months each deposit stayed in the SACCO."
         },
         {
           "question": "Why is a reducing-balance SACCO loan cheaper than a flat-rate loan?",
-          "answer": "At 1% per month on a reducing balance (12% p.a.), interest is charged only on the remaining principal each month\u2014equivalent to roughly 6.5% flat rate per year."
+          "answer": "At 1% per month on a reducing balance (12% p.a.), interest is charged only on the remaining principal each month—equivalent to roughly 6.5% flat rate per year."
         }
       ]
     }
@@ -1249,13 +1234,11 @@
   "tools": {
     "agrovet-finder": {
       "slug": "agrovet-finder",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "This is a representative sample of licensed agrovets. There are thousands of registered agrovets across Kenya.",
-        "Always verify that an agrovet is licensed by the Pest Control Products Board (PCPB) before purchasing agrochemicals.",
-        "KEPHIS-registered seed dealers sell certified seeds with germination guarantees. Look for the KEPHIS certification label on seed packets.",
-        "For veterinary drugs, ensure the agrovet has a licensed veterinary pharmacist on staff as required by the Veterinary Surgeons and Veterinary Para-professionals Act.",
-        "Report counterfeit products to PCPB hotline or your county agricultural office."
+        "Filter registered agro-veterinary suppliers by county or search by product category (certified seeds, crop protection, veterinary pharmaceuticals, or animal feeds).",
+        "Cross-reference supplier credentials with the Pest Control Products Board (PCPB) statutory register and the Kenya Plant Health Inspectorate Service (KEPHIS) seed dealer portal.",
+        "Veterinary prescription medicines and livestock vaccines must be dispensed under the supervision of a Kenya Veterinary Board (KVB) registered practitioner."
       ],
       "faq": [
         {
@@ -1268,17 +1251,17 @@
         },
         {
           "question": "How do I report counterfeit agricultural products?",
-          "answer": "Report to PCPB hotline or your county agricultural office. Counterfeit seeds and pesticides are a major problem \u2014 always buy from registered dealers."
+          "answer": "Report to PCPB hotline or your county agricultural office. Counterfeit seeds and pesticides are a major problem — always buy from registered dealers."
         }
       ]
     },
     "cbc-curriculum": {
       "slug": "cbc-curriculum",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya's Competency-Based Curriculum (CBC) follows a 2-6-3-3-3 structure: 2 years Pre-Primary, 6 years Primary, 3 years Junior School, 3 years Senior School, and 3+ years University/TVET.",
-        "National transition assessments take place at Grade 6 (KPSEA), Grade 9 (KJSEA), and Grade 12 (Senior School Assessment).",
-        "Senior Secondary (Grades 10\u201312, rolled out in 2026) places learners into three specialized pathways: STEM, Social Sciences, or Arts & Sports Science."
+        "Select any education tier under Kenya's 2-6-3-3-3 Competency-Based Curriculum (Pre-Primary, Lower/Upper Primary, Junior School, or Senior School) to inspect official KICD learning areas.",
+        "Review Senior School (Grades 10–12) specialization tracks across STEM, Social Sciences, and Arts & Sports Science alongside KNEC national assessment milestones (KPSEA, KJSEA, and Senior School Assessment).",
+        "Curriculum structures reflect the Ministry of Education and Kenya Institute of Curriculum Development (KICD) 2026 implementation guidelines."
       ],
       "faq": [
         {
@@ -1291,7 +1274,7 @@
         },
         {
           "question": "What are the three Senior Secondary pathways?",
-          "answer": "Grade 10\u201312 students choose one of three pathways: STEM (Science, Technology, Engineering, Mathematics), Arts & Sports Science (visual/performing arts, sports), or Social Sciences (humanities, business, economics)."
+          "answer": "Grade 10–12 students choose one of three pathways: STEM (Science, Technology, Engineering, Mathematics), Arts & Sports Science (visual/performing arts, sports), or Social Sciences (humanities, business, economics)."
         },
         {
           "question": "When did CBC start in Kenya?",
@@ -1305,11 +1288,11 @@
     },
     "cbc-grade-age": {
       "slug": "cbc-grade-age",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya's Competency-Based Curriculum (CBC) follows a 2-6-3-3-3 structure: 2 years Pre-Primary, 6 years Primary, 3 years Junior School, 3 years Senior School, and 3+ years University/TVET.",
-        "National transition assessments take place at Grade 6 (KPSEA), Grade 9 (KJSEA), and Grade 12 (Senior School Assessment).",
-        "Senior Secondary (Grades 10\u201312, rolled out in 2026) places learners into three specialized pathways: STEM, Social Sciences, or Arts & Sports Science."
+        "Enter a learner's date of birth to compute their expected CBC grade placement for the current Kenyan academic calendar year (January to November).",
+        "Compare the learner's current CBC level (PP1–Grade 12) with the corresponding class or form under the legacy 8-4-4 education structure.",
+        "Placement calculations follow the Ministry of Education's standard age-at-entry policy (turning 4 years old in the calendar year of PP1 enrollment)."
       ],
       "faq": [
         {
@@ -1328,8 +1311,12 @@
     },
     "child-growth-schedule": {
       "slug": "child-growth-schedule",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Enter your child's date of birth and select sex to generate a personalized vaccination timeline based on the Ministry of Health's Kenya Expanded Programme on Immunization (KEPI).",
+        "Track upcoming and completed vaccine visits from Birth (BCG, OPV 0) through 6, 10, and 14 weeks (Pentavalent, PCV-10, Rotavirus) up to 9 and 18 months (Measles-Rubella and Yellow Fever).",
+        "Compare expected weight-for-age benchmarks against World Health Organization (WHO) Child Growth Standards and review key developmental milestones."
+      ],
       "faq": [
         {
           "question": "What is the KEPI schedule?",
@@ -1360,7 +1347,7 @@
         "All figures are in KES millions and are approximate based on Controller of Budget reports",
         "Allocation = equitable share from national government + conditional grants",
         "Own-source revenue = county-generated revenue (rates, fees, charges, permits)",
-        "Absorption rate = (actual expenditure / total revenue) \u00d7 100",
+        "Absorption rate = (actual expenditure / total revenue) × 100",
         "Nairobi consistently has the highest own-source revenue due to commercial activity",
         "Arid counties (Turkana, Mandera, Wajir) often have lower absorption rates due to infrastructure challenges",
         "Data sourced from Controller of Budget annual County Budget Implementation Review Reports"
@@ -1384,24 +1371,22 @@
         },
         {
           "question": "What is own-source revenue?",
-          "answer": "Own-source revenue is money that a county generates locally \u2014 not from the national government. It includes county rates, market fees, parking charges, business permits, and other local levies. Counties with more commerce generate more own-source revenue."
+          "answer": "Own-source revenue is money that a county generates locally — not from the national government. It includes county rates, market fees, parking charges, business permits, and other local levies. Counties with more commerce generate more own-source revenue."
         }
       ]
     },
     "crop-planting-calendar": {
       "slug": "crop-planting-calendar",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Planting dates are guidelines based on long-term rainfall averages. Actual timing varies year to year \u2014 consult your local agricultural extension officer.",
-        "Data sourced from KALRO planting guides, Ministry of Agriculture seasonal bulletins, and FAO Kenya crop calendars.",
-        "Climate change is shifting traditional rainfall patterns. Monitor Kenya Meteorological Department (meteo.go.ke) forecasts before planting.",
-        "Intercropping improves soil health, reduces pest pressure, and diversifies income. Traditional combinations (e.g., maize + beans) remain highly effective.",
-        "Certified seed from KEPHIS-registered dealers ensures higher germination rates and disease resistance."
+        "Filter by crop category or Kenyan agro-ecological region to view optimal land preparation, sowing, and harvesting windows for both the Long Rains (March–May) and Short Rains (October–December).",
+        "Review KALRO-recommended seed varieties, altitude ranges, maturity periods, and spacing guidelines tailored to Highland, Midland, Coastal, and ASAL farming zones.",
+        "Combine seasonal planting windows with county-specific historical precipitation data in the Kenya Rainfall Patterns tool before purchasing seed inputs."
       ],
       "faq": [
         {
           "question": "When should I plant maize in Kenya?",
-          "answer": "For the Long Rains season, plant maize in March\u2013April in most regions. For Short Rains, plant in October (Nyanza, Coast, Eastern). Highland areas like the Rift Valley typically only have one season."
+          "answer": "For the Long Rains season, plant maize in March–April in most regions. For Short Rains, plant in October (Nyanza, Coast, Eastern). Highland areas like the Rift Valley typically only have one season."
         },
         {
           "question": "What is intercropping and why is it recommended?",
@@ -1413,7 +1398,7 @@
         },
         {
           "question": "What are Kenya's two farming seasons?",
-          "answer": "Kenya has two main seasons: the 'Long Rains' (March\u2013May) and 'Short Rains' (October\u2013December). However, highland and western regions may have slightly different timing, and some areas only support one season."
+          "answer": "Kenya has two main seasons: the 'Long Rains' (March–May) and 'Short Rains' (October–December). However, highland and western regions may have slightly different timing, and some areas only support one season."
         },
         {
           "question": "How do I know which crops suit my area?",
@@ -1423,8 +1408,12 @@
     },
     "driving-license-guide": {
       "slug": "driving-license-guide",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Select a driving license category (Class A motorcycles, Class B light vehicles, Class C commercial trucks, Class D PSVs, or Class G industrial equipment) to view NTSA age, endorsement, and upgrade rules.",
+        "Review step-by-step eCitizen TIMS application procedures from Provisional Driving License (PDL) enrollment through theory/practical testing to Smart Driving License collection.",
+        "Fee schedules reflect published National Transport and Safety Authority (NTSA) citizen service rates."
+      ],
       "faq": [
         {
           "question": "How do I get a driving license in Kenya?",
@@ -1450,13 +1439,11 @@
     },
     "economic-calendar": {
       "slug": "economic-calendar",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Dates are approximate and based on historical patterns. Actual release dates may vary.",
-        "KNBS publications are available at knbs.or.ke under 'Publications'. Most are free PDF downloads.",
-        "CBK data is published at centralbank.go.ke under 'Statistics' and 'Publications'.",
-        "For real-time alerts on Kenya economic data releases, follow KNBS, CBK, and KRA on Twitter/X.",
-        "The National Treasury publishes the Budget Policy Statement (BPS) in February and the Budget Speech in June each year."
+        "Filter upcoming macroeconomic releases and fiscal events by institution—including Central Bank of Kenya (CBK) Monetary Policy Committee meetings, KNBS monthly CPI inflation releases, and National Treasury budget milestones.",
+        "Use the calendar to track Treasury Bill (91-day, 182-day, 364-day) auction cycles, KRA statutory tax filing deadlines, and Parliamentary budget readings.",
+        "Dates are compiled from official CBK, KNBS, KRA, and National Treasury public schedules."
       ],
       "faq": [
         {
@@ -1465,7 +1452,7 @@
         },
         {
           "question": "How often does CBK set interest rates?",
-          "answer": "The CBK Monetary Policy Committee (MPC) meets bi-monthly \u2014 approximately every 2 months (January, March, May, July, September, November) \u2014 to decide the Central Bank Rate (CBR)."
+          "answer": "The CBK Monetary Policy Committee (MPC) meets bi-monthly — approximately every 2 months (January, March, May, July, September, November) — to decide the Central Bank Rate (CBR)."
         },
         {
           "question": "When is the Kenya national budget announced?",
@@ -1475,13 +1462,11 @@
     },
     "fertilizer-subsidy-guide": {
       "slug": "fertilizer-subsidy-guide",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Subsidized prices are set by the government and may change each planting season. Confirm current prices at your nearest NCPB depot.",
-        "Market prices are approximate \u2014 they fluctuate based on global fertilizer commodity markets and exchange rates.",
-        "The subsidy programme may have stock limitations. Register early (2\u20133 months before planting season) to secure allocation.",
-        "Always buy from licensed agrovets or NCPB depots. Counterfeit fertilizer is a serious problem \u2014 check packaging seals and KEBS certification.",
-        "Soil testing is recommended before applying fertilizer. Contact KALRO for soil testing services (KES 500\u20131,500 per sample)."
+        "Review eligibility criteria, e-voucher redemption steps, and gazetted retail prices per 50kg bag under the National Fertilizer Subsidy Programme (NFSP).",
+        "Compare basal planting fertilizers (DAP, NPK 23:23:0, Mavuno) and top-dressing formulations (CAN, Urea, Sulphate of Ammonia) by soil pH suitability and crop stage.",
+        "Distribution protocols reflect Ministry of Agriculture and Livestock Development and National Cereals and Produce Board (NCPB) guidelines."
       ],
       "faq": [
         {
@@ -1490,7 +1475,7 @@
         },
         {
           "question": "How much cheaper is subsidized fertilizer?",
-          "answer": "Subsidized DAP costs approximately KES 2,500 per 50kg bag vs KES 5,500+ at market prices \u2014 a saving of over 50%. CAN is KES 1,800 subsidized vs KES 4,000 at market price."
+          "answer": "Subsidized DAP costs approximately KES 2,500 per 50kg bag vs KES 5,500+ at market prices — a saving of over 50%. CAN is KES 1,800 subsidized vs KES 4,000 at market price."
         },
         {
           "question": "Which fertilizer should I use for maize?",
@@ -1500,13 +1485,11 @@
     },
     "forest-reserves-kenya": {
       "slug": "forest-reserves-kenya",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya has approximately 1,200 gazetted forest reserves covering about 7.4% of land area. This directory covers the most significant ones.",
-        "Data sourced from Kenya Forest Service (KFS) and Kenya Forest Research Institute (KEFRI) publications.",
-        "Kenya's '5 Water Towers' (Mt. Kenya, Aberdares, Mau, Cherangani, Mt. Elgon) supply 75% of Kenya's surface water.",
-        "Hiking in gazetted forests requires a KFS permit. Fees: KES 250 (citizen), KES 600 (resident), USD 20 (non-resident) per day.",
-        "Report illegal logging or charcoal burning to KFS hotline: 0800 723 253 (toll-free)."
+        "Search or filter Kenya's gazetted public forest reserves by county, ecosystem type (montane water tower, coastal tropical forest, western rainforest, or dryland woodland), and conservation status.",
+        "Inspect forest acreage, biodiversity highlights, recreational activities, and Kenya Forest Service (KFS) ecotourism entry requirements.",
+        "Data is compiled from Kenya Forest Service (KFS) statutory gazettements and the Forest Conservation and Management Act."
       ],
       "faq": [
         {
@@ -1519,14 +1502,18 @@
         },
         {
           "question": "What is Kenya's largest forest?",
-          "answer": "The Mau Forest Complex is Kenya's largest indigenous forest at approximately 400,000 hectares. It's a critical water tower \u2014 source of 12 rivers including the Mara River."
+          "answer": "The Mau Forest Complex is Kenya's largest indigenous forest at approximately 400,000 hectares. It's a critical water tower — source of 12 rivers including the Mara River."
         }
       ]
     },
     "helb-calculator": {
       "slug": "helb-calculator",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Enter your total Higher Education Loans Board (HELB) principal loan balance, applicable annual interest rate (typically 4% p.a. for undergraduate loans), and monthly repayment amount.",
+        "Calculate your exact payoff duration in months and years, total cumulative interest payable, and month-by-month amortization schedule.",
+        "Under the HELB Act, statutory employer deductions begin after the 1-year post-graduation grace period; voluntary lump-sum payments directly reduce principal and total interest."
+      ],
       "faq": [
         {
           "question": "What is the HELB loan interest rate?",
@@ -1586,12 +1573,11 @@
     },
     "kcse-grade-calculator": {
       "slug": "kcse-grade-calculator",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Minimum KCSE mean grade for direct degree placement via KUCCPS in Kenyan universities is C+ (7 points out of 12).",
-        "Each degree programme belongs to one of 15+ subject clusters, requiring 4 specific KCSE subjects weighted by relevance.",
-        "Maximum raw weighted cluster total is 48 points (scoring A = 12 points across all 4 required cluster subjects).",
-        "Cut-off points vary annually per university and course depending on national KCSE performance and declared program capacities."
+        "Select your letter grades (A to E) across 8 KCSE subjects—including compulsory English—to compute your aggregate KNEC points (out of 84 or 96) and official mean grade.",
+        "Review instant eligibility indicators for university degree placement (C+ and above), TVET diploma programmes (C and C-), and artisan/certificate courses.",
+        "Grading boundaries follow the Kenya National Examinations Council (KNEC) 12-point scale."
       ],
       "faq": [
         {
@@ -1610,18 +1596,16 @@
     },
     "kcse-school-rankings": {
       "slug": "kcse-school-rankings",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Rankings are based on school mean scores. Mean score = average of all students' mean grades (on a 12-point scale where A=12, E=1).",
-        "Data is compiled from KNEC press releases and news reports. Individual student results are confidential.",
-        "School types: National, Extra-County, County, Sub-County, Private. National schools admit students from all 47 counties.",
-        "Year-over-year 'change' shows improvement or decline in mean score compared to the previous year.",
-        "Grade distribution percentages are approximate and based on KNEC summary statistics."
+        "Search and filter top-performing Kenyan secondary schools by county, school category (National, Extra-County, County, or Private), and historical KCSE mean score performance.",
+        "Compare school mean points and university transition trends to support informed Senior School selection.",
+        "Data is compiled from published post-examination academic performance disclosures and Ministry of Education school classifications."
       ],
       "faq": [
         {
           "question": "How are KCSE school rankings determined?",
-          "answer": "Rankings are based on each school's mean score \u2014 the average of all students' mean grades on a 12-point scale (A=12, E=1). This is calculated by KNEC (Kenya National Examinations Council)."
+          "answer": "Rankings are based on each school's mean score — the average of all students' mean grades on a 12-point scale (A=12, E=1). This is calculated by KNEC (Kenya National Examinations Council)."
         },
         {
           "question": "When are KCSE results released?",
@@ -1639,14 +1623,11 @@
     },
     "kenya-customs-restricted-items": {
       "slug": "kenya-customs-restricted-items",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya uses the Red/Green channel system at international airports",
-        "Green Channel: Nothing to declare (within duty-free allowances)",
-        "Red Channel: Goods to declare or goods exceeding allowances",
-        "Penalties for non-declaration include seizure, fines, and potential prosecution",
-        "EAC citizens (Kenya, Uganda, Tanzania, Rwanda, Burundi, DRC, South Sudan) may have different allowances",
-        "All commercial imports require an Import Declaration Form (IDF) via KRA iTax before shipment"
+        "Search or filter import and export commodities by restriction status (Prohibited, Restricted—Permit Required, or Duty-Free Passenger Allowance) under the East African Community Customs Management Act (EACCMA).",
+        "Identify the exact regulatory agency issuing import/export clearance permits—such as KEBS, KEPHIS, Pharmacy and Poisons Board (PPB), Communications Authority (CA), or KWS.",
+        "Review passenger baggage duty-free thresholds before arriving at Jomo Kenyatta International Airport (JKIA), Moi International Airport, or land border posts."
       ],
       "faq": [
         {
@@ -1673,13 +1654,11 @@
     },
     "kenya-languages": {
       "slug": "kenya-languages",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya has 42+ recognized ethnic groups speaking 60+ distinct languages and dialects.",
-        "Speaker numbers are estimates based on KNBS 2019 Census ethnic population data (language \u2248 ethnicity for most groups).",
-        "County-level language dominance is approximate. Urban areas (especially Nairobi, Mombasa) are highly multilingual.",
-        "Several Kenyan languages are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Suba, and Omotik.",
-        "Data compiled from KNBS 2019 Census and public-domain linguistic records."
+        "Explore all major indigenous and official languages spoken across Kenya, categorized by linguistic family (Bantu, Nilotic, Cushitic, and Official/Sign languages).",
+        "Filter by language family or search by county distribution to inspect speaker demographics, native autonyms, and linked primary historical linguistic sources.",
+        "Click through to the Kenyan Languages Translator or Interactive Language Courses to practice vocabulary, grammar, and cultural proverbs."
       ],
       "faq": [
         {
@@ -1688,7 +1667,7 @@
         },
         {
           "question": "What are the main language families in Kenya?",
-          "answer": "Kenya's languages belong to three main families: Bantu (~65% of population \u2014 Kikuyu, Luhya, Kamba, Kisii, etc.), Nilotic (~30% \u2014 Kalenjin, Luo, Maasai, Turkana), and Cushitic (~3% \u2014 Somali, Rendille, Borana)."
+          "answer": "Kenya's languages belong to three main families: Bantu (~65% of population — Kikuyu, Luhya, Kamba, Kisii, etc.), Nilotic (~30% — Kalenjin, Luo, Maasai, Turkana), and Cushitic (~3% — Somali, Rendille, Borana)."
         },
         {
           "question": "Are any Kenyan languages endangered?",
@@ -1702,12 +1681,11 @@
     },
     "kenya-postal-codes": {
       "slug": "kenya-postal-codes",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya uses a 5-digit numeric postal code system managed by the Postal Corporation of Kenya (Posta Kenya).",
-        "The first digit indicates the postal region: 0 = Nairobi, 1 = Central/Eastern, 2 = Rift Valley (Central), 3 = Rift Valley (North), 4 = Nyanza/Eastern, 5 = Western, 6 = Eastern/North, 7 = North Eastern, 8 = Coast, 9 = Western.",
-        "Nairobi GPO is 00100, City Square is 00200, Westlands is 00800, and Mombasa GPO is 80100.",
-        "Always format Kenyan postal addresses as: Name, P.O. Box [Number] - [5-Digit Code], [Town], Kenya."
+        "Search by town, sub-location, post office name, or 5-digit code (00100 to 90200) or filter by county to look up official Postal Corporation of Kenya (Posta Kenya) routing codes.",
+        "Kenyan postal codes follow a regional prefix structure where the first digit designates the postal region (0 = Nairobi, 1 = Central/Eastern, 2 = Rift Valley/Central, 3 = North Rift, 4 = Nyanza/Eastern, 5 = Kakamega/Western, 6 = Meru/Northern, 7 = North Eastern, 8 = Coast, 9 = Machakos/Makueni).",
+        "Use verified 5-digit postal codes for eCitizen applications, KRA iTax registration, bank KYC forms, and courier addressing."
       ],
       "faq": [
         {
@@ -1734,14 +1712,11 @@
     },
     "kenya-rainfall-patterns": {
       "slug": "kenya-rainfall-patterns",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Monthly averages are approximate values in millimetres (mm) based on Kenya Meteorological Department 1981\u20132010 climate normals",
-        "Kenya has two main rainy seasons: Long Rains (March\u2013May) and Short Rains (October\u2013December)",
-        "The Rift Valley and Western Kenya can receive rain year-round",
-        "Highlands receive the most rainfall \u2014 Kericho, Kakamega, and Kisii regularly exceed 1,500mm/year",
-        "North Eastern Kenya (Garissa, Wajir, Mandera, Turkana) is extremely arid with less than 350mm/year",
-        "Climate change is affecting traditional rainfall patterns \u2014 actual conditions may vary from historical averages"
+        "Select or compare any of Kenya's 47 counties to inspect 12-month historical precipitation averages (mm), annual rainfall totals, and agro-climatic zone classifications.",
+        "Analyze bimodal rainfall peaks across the Long Rains (MAM: March–May) and Short Rains (OND: October–December) alongside western highland July–August continental rains.",
+        "Climatological baselines are synthesized from Kenya Meteorological Department (KMD) county weather station records."
       ],
       "faq": [
         {
@@ -1764,13 +1739,11 @@
     },
     "kenya-soil-types": {
       "slug": "kenya-soil-types",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Soil types and distributions are based on the Kenya Soil Survey (KSS/KARI) and the FAO-UNESCO Soil Map of the World.",
-        "Most Kenyan farms have mixed soil types. Get a soil test from KALRO (KES 500\u20131,500 per sample) for specific nutrient recommendations.",
-        "County-level assignments are approximate. Soil type can vary within a county depending on altitude, drainage, and parent material.",
-        "Soil pH is critical: most crops prefer 5.5\u20137.0. Test pH before planting and amend with lime (acidic) or gypsum (alkaline) as needed.",
-        "For personalized soil management advice, contact your county agricultural extension officer or visit the nearest KALRO research station."
+        "Browse Kenya's principal soil orders (Nitisols, Ferralsols, Vertisols, Andosols, Acrisols, Arenosols, Solonetz, and Cambisols) by county distribution and physical-chemical profile.",
+        "Review drainage characteristics, natural fertility levels, optimal crop pairings, and recommended organic and mineral soil amendments.",
+        "Pedological classifications follow the Kenya Soil Survey (KALRO) and FAO-UNESCO World Reference Base for Soil Resources."
       ],
       "faq": [
         {
@@ -1779,28 +1752,25 @@
         },
         {
           "question": "What is 'black cotton soil' in Kenya?",
-          "answer": "Black cotton soil refers to Vertisols \u2014 heavy dark clay soils that swell when wet and crack when dry. Found in the Rift Valley floor, Lake Victoria basin, and parts of Eastern Kenya. They're fertile but very difficult to work."
+          "answer": "Black cotton soil refers to Vertisols — heavy dark clay soils that swell when wet and crack when dry. Found in the Rift Valley floor, Lake Victoria basin, and parts of Eastern Kenya. They're fertile but very difficult to work."
         },
         {
           "question": "How much does soil testing cost in Kenya?",
-          "answer": "KALRO offers soil testing for KES 500\u20131,500 per sample. You can also use private labs. The test tells you pH, nutrient levels (N, P, K), and gives fertilizer recommendations for your specific soil."
+          "answer": "KALRO offers soil testing for KES 500–1,500 per sample. You can also use private labs. The test tells you pH, nutrient levels (N, P, K), and gives fertilizer recommendations for your specific soil."
         },
         {
           "question": "Why is my soil acidic?",
-          "answer": "Soil acidity in Kenya is common in high-rainfall areas (Western Kenya, tea zones). It's caused by leaching of basic cations. Apply agricultural lime (2\u20134 tonnes/ha) to correct acidity. Always test pH before liming."
+          "answer": "Soil acidity in Kenya is common in high-rainfall areas (Western Kenya, tea zones). It's caused by leaching of basic cations. Apply agricultural lime (2–4 tonnes/ha) to correct acidity. Always test pH before liming."
         }
       ]
     },
     "kenyan-food-nutrition": {
       "slug": "kenyan-food-nutrition",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "All nutritional values are approximate per 100g serving (or per cup for beverages) based on FAO/WHO food composition data for Sub-Saharan Africa",
-        "Values may vary based on preparation method, recipe, and ingredient sourcing",
-        "Traditional Kenyan vegetables (managu, terere, kunde) are exceptionally nutritious and underutilized",
-        "Omena (small Lake Victoria fish) is one of Kenya's most nutrient-dense foods per 100g",
-        "Ugali + sukuma wiki + beans forms a nutritionally complete meal and is Kenya's most affordable balanced diet",
-        "Data compiled from FAO food composition tables, KEMRI nutritional studies, and Kenya Agricultural Research Institute"
+        "Search traditional and everyday Kenyan foods (ugali, sukuma wiki, githeri, mukimo,omena, nyama choma, ndengu, chapati, managu, and matoke) to inspect macronutrient and micronutrient profiles per 100g serving.",
+        "Compare energy (kcal), protein, carbohydrates, dietary fiber, iron, calcium, and vitamin content across staples, legumes, leafy vegetables, and proteins.",
+        "Nutritional values are compiled from the Kenya Food Composition Tables (Ministry of Health / KALRO / FAO)."
       ],
       "faq": [
         {
@@ -1819,12 +1789,11 @@
     },
     "kenyan-translator": {
       "slug": "kenyan-translator",
-      "notesTitle": "About This Translator",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "This is a curated, offline dictionary \u2014 not machine translation. Every entry has been verified.",
-        "Pronunciations use approximate English phonetics. Audio recordings coming soon.",
-        "Dictionary data is community-sourced. Found an error? Let us know via the contact page.",
-        "We&apos;re actively expanding to cover all 42+ Kenyan ethnic languages."
+        "Select any source and target language across 22 Kenyan languages (Swahili, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Kisii, Meru, Maasai, Somali, Turkana, Mijikenda, Ateso, Embu, Taita, Samburu, Borana, Rendille, Pokomo, Ilchamus, Pokot, and Taveta) plus English.",
+        "Search words or phrases, browse by semantic category (Greetings, Numbers, Family, Food, Nature, Verbs, Proverbs), or compare translations side-by-side across all 22 languages.",
+        "Lexical entries are cross-referenced against 34 public-domain East African linguistic monographs (1842–1929) and Unicode CLDR / CC0 corpora."
       ],
       "faq": [
         {
@@ -1833,7 +1802,7 @@
         },
         {
           "question": "Is this a machine translation tool?",
-          "answer": "No \u2014 this is a curated dictionary-based translator. Each translation has been verified by community contributors. It translates individual words and common phrases, not full sentences. This makes it more reliable than machine translation for Kenyan languages, which are often poorly supported by AI translators."
+          "answer": "No — this is a curated dictionary-based translator. Each translation has been verified by community contributors. It translates individual words and common phrases, not full sentences. This makes it more reliable than machine translation for Kenyan languages, which are often poorly supported by AI translators."
         },
         {
           "question": "Can I contribute translations?",
@@ -1854,54 +1823,52 @@
       "notesTitle": "Important Notes & About the Data",
       "notes": [
         "Public domain oral wisdom and historical linguistic scaffold (1885–1922).",
-        "Contains 989 authentic Ag\u0129k\u0169y\u0169 proverbs (Thimo cia G\u0129k\u0169y\u0169) with literal translations, cultural explanations, and English equivalents.",
-        "Search is diacritic-tolerant: typing u or i automatically matches G\u0129k\u0169y\u0169 tilded vowels \u0169 and \u0129."
+        "Contains 989 authentic Agĩkũyũ proverbs (Thimo cia Gĩkũyũ) with literal translations, cultural explanations, and English equivalents.",
+        "Search is diacritic-tolerant: typing u or i automatically matches Gĩkũyũ tilded vowels ũ and ĩ."
       ],
       "faq": [
         {
-          "question": "What are Thimo cia G\u0129k\u0169y\u0169?",
-          "answer": "Thimo cia G\u0129k\u0169y\u0169 are traditional Kikuyu proverbs that embody the philosophical, moral, legal, and communal wisdom of the Ag\u0129k\u0169y\u0169 people. They were traditionally transmitted orally across generations and served as legal precedents in traditional elders' courts (k\u0129ama), moral lessons for youth, and concise summaries of human nature."
+          "question": "What are Thimo cia Gĩkũyũ?",
+          "answer": "Thimo cia Gĩkũyũ are traditional Kikuyu proverbs that embody the philosophical, moral, legal, and communal wisdom of the Agĩkũyũ people. They were traditionally transmitted orally across generations and served as legal precedents in traditional elders' courts (kĩama), moral lessons for youth, and concise summaries of human nature."
         },
         {
           "question": "What are the sources for the language and proverb hub?",
-          "answer": "Father G. Barra was an Italian Catholic missionary of the Consolata Fathers who worked extensively among the Ag\u0129k\u0169y\u0169 in Central Kenya (particularly Nyeri). In 1939, he compiled and published '1,000 Kikuyu Proverbs' (reprinted by the Kenya Literature Bureau / Macmillan). His collection is one of the most authoritative and comprehensive records of Kikuyu proverbial lore in existence."
+          "answer": "Father G. Barra was an Italian Catholic missionary of the Consolata Fathers who worked extensively among the Agĩkũyũ in Central Kenya (particularly Nyeri). In 1939, he compiled and published '1,000 Kikuyu Proverbs' (reprinted by the Kenya Literature Bureau / Macmillan). His collection is one of the most authoritative and comprehensive records of Kikuyu proverbial lore in existence."
         },
         {
-          "question": "Why do Kikuyu vowels have tildes like \u0169 and \u0129?",
-          "answer": "G\u0129k\u0169y\u0169 is a 7-vowel Bantu language (a, e, i, o, u, \u0129, \u0169). The letters \u0129 and \u0169 represent close-mid vowels: '\u0129' is pronounced between 'e' and 'i' (similar to the 'i' in 'pin'), while '\u0169' is pronounced between 'o' and 'u' (similar to the 'oo' in 'book'). Standard keyboards often omit them, but they are phonemically distinct in G\u0129k\u0169y\u0169."
+          "question": "Why do Kikuyu vowels have tildes like ũ and ĩ?",
+          "answer": "Gĩkũyũ is a 7-vowel Bantu language (a, e, i, o, u, ĩ, ũ). The letters ĩ and ũ represent close-mid vowels: 'ĩ' is pronounced between 'e' and 'i' (similar to the 'i' in 'pin'), while 'ũ' is pronounced between 'o' and 'u' (similar to the 'oo' in 'book'). Standard keyboards often omit them, but they are phonemically distinct in Gĩkũyũ."
         },
         {
           "question": "How did Kikuyu elders use proverbs in traditional trials (ciira)?",
-          "answer": "In traditional Ag\u0129k\u0169y\u0169 courts of elders (athuri a k\u0129ama), debates were not conducted in dry legalistic jargon, but through proverbs and parables. A well-placed proverb like 'Ciira w\u0129 k\u0129r\u0129ro ti \u0169iguano' (A lawsuit with weeping is not concord) or 'K\u0129ama g\u0129t\u0129th\u0169ire m\u0169nd\u0169, k\u0129th\u0169ire \u0169horo wake' (The council hates nobody; it only hates their misdeed) could resolve disputes and bring social harmony."
+          "answer": "In traditional Agĩkũyũ courts of elders (athuri a kĩama), debates were not conducted in dry legalistic jargon, but through proverbs and parables. A well-placed proverb like 'Ciira wĩ kĩrĩro ti ũiguano' (A lawsuit with weeping is not concord) or 'Kĩama gĩtĩthũire mũndũ, kĩthũire ũhoro wake' (The council hates nobody; it only hates their misdeed) could resolve disputes and bring social harmony."
         },
         {
-          "question": "How can I learn to speak Kikuyu (G\u0129k\u0169y\u0169)?",
-          "answer": "You can learn G\u0129k\u0169y\u0169 right here on KenyaHub! Check out our interactive Kikuyu Language Course at /tools/learn/kikuyu with guided lessons in greetings, numbers, family kinship, and everyday conversation, or practice vocabulary with our Kenyan Languages Translator at /tools/kenyan-translator."
+          "question": "How can I learn to speak Kikuyu (Gĩkũyũ)?",
+          "answer": "You can learn Gĩkũyũ right here on KenyaHub! Check out our interactive Kikuyu Language Course at /tools/learn/kikuyu with guided lessons in greetings, numbers, family kinship, and everyday conversation, or practice vocabulary with our Kenyan Languages Translator at /tools/kenyan-translator."
         }
       ]
     },
     "kplc-token-calculator": {
       "slug": "kplc-token-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Under the EPRA 2023\u20132026 Retail Tariff Review, there is no monthly fixed standing charge (KES 0) for domestic consumers",
-        "Domestic Lifeline (DC1) covers the first 30 kWh/month at KES 12.14/kWh base energy rate",
-        "Domestic Ordinary (DC2) covers 31\u2013100 kWh/month at KES 16.50/kWh base energy rate",
-        "Consumption above 100 kWh/month (DC3) is billed at KES 19.07/kWh base energy rate",
-        "Each kWh also attracts Fuel Energy Cost (FCC), Forex Adjustment (FERFA), Inflation Adjustment (IA), EPRA Levy (KES 0.18), WRA Levy (KES 0.05), 5% REP Levy, and 16% VAT"
+        "Enter your KPLC prepaid token purchase amount (KES) and select your customer tariff band (Domestic Lifeline DC1, Domestic Ordinary DC2/DC3, or Small Commercial SC) to estimate kilowatt-hours (kWh) received.",
+        "View a transparent itemization of every statutory surcharge deducted before energy units are calculated: Fuel Energy Cost Charge (FECC), Foreign Exchange Rate Fluctuation Adjustment (FERFA), Inflation Adjustment, WARMA & EPRA levies, Rural Electrification Programme (REP 5%), and 16% VAT.",
+        "Tariff bands and Pass-Through adjustment formulas follow Energy and Petroleum Regulatory Authority (EPRA) gazetted retail electricity schedules."
       ],
       "faq": [
         {
           "question": "How many KPLC units will I get for KES 1,000?",
-          "answer": "Under the EPRA 2023\u20132026 tariff structure, KES 1,000 buys approximately 38 kWh on the Lifeline tariff (DC1, 0\u201330 kWh/month) or ~31 kWh on the Domestic Ordinary tariff (DC2, 31\u2013100 kWh/month) after Fuel Energy Cost, Forex Adjustment, EPRA/WRA/REP levies, and 16% VAT."
+          "answer": "Under the EPRA 2023–2026 tariff structure, KES 1,000 buys approximately 38 kWh on the Lifeline tariff (DC1, 0–30 kWh/month) or ~31 kWh on the Domestic Ordinary tariff (DC2, 31–100 kWh/month) after Fuel Energy Cost, Forex Adjustment, EPRA/WRA/REP levies, and 16% VAT."
         },
         {
           "question": "What is the KPLC fixed charge of KES 150?",
-          "answer": "EPRA abolished the monthly KES 150 fixed standing charge for domestic prepaid customers under the 2023\u20132026 tariff review. Every shilling you pay goes directly toward energy units and per-unit statutory levies/VAT."
+          "answer": "EPRA abolished the monthly KES 150 fixed standing charge for domestic prepaid customers under the 2023–2026 tariff review. Every shilling you pay goes directly toward energy units and per-unit statutory levies/VAT."
         },
         {
           "question": "What is the lifeline tariff?",
-          "answer": "Under the EPRA 2023\u20132026 tariff structure, the Domestic Lifeline band (DC1, 0\u201330 kWh/month) is charged at a base rate of KES 12.14/kWh. Ordinary Domestic DC2 (31\u2013100 kWh) is KES 16.50/kWh, and DC3 (above 100 kWh) is KES 19.07/kWh, with no monthly fixed standing charge."
+          "answer": "Under the EPRA 2023–2026 tariff structure, the Domestic Lifeline band (DC1, 0–30 kWh/month) is charged at a base rate of KES 12.14/kWh. Ordinary Domestic DC2 (31–100 kWh) is KES 16.50/kWh, and DC3 (above 100 kWh) is KES 19.07/kWh, with no monthly fixed standing charge."
         },
         {
           "question": "What levies are included in KPLC token charges?",
@@ -1915,21 +1882,20 @@
     },
     "kuccps-cluster-calculator": {
       "slug": "kuccps-cluster-calculator",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Minimum KCSE mean grade for direct degree placement via KUCCPS in Kenyan universities is C+ (7 points out of 12).",
-        "Each degree programme belongs to one of 15+ subject clusters, requiring 4 specific KCSE subjects weighted by relevance.",
-        "Maximum raw weighted cluster total is 48 points (scoring A = 12 points across all 4 required cluster subjects).",
-        "Cut-off points vary annually per university and course depending on national KCSE performance and declared program capacities."
+        "Enter your KCSE grades in the 4 required cluster subjects plus your overall 8-subject KCSE aggregate points to calculate your weighted KUCCPS cluster score out of 48.",
+        "Compare your computed cluster points against recent university degree cutoff thresholds for Medicine, Engineering, Law, Architecture, Computer Science, Nursing, Education, and Business.",
+        "Calculations implement the official Kenya Universities and Colleges Central Placement Service (KUCCPS) square-root weighting formula."
       ],
       "faq": [
         {
           "question": "How are KUCCPS cluster points calculated?",
-          "answer": "Each university course belongs to a cluster. Each cluster specifies 4 required subjects with weights (typically 2, 1, 0.5, 0.5). Your cluster weight = sum of (Grade points \u00d7 subject weight). Grade points: A=12, A-=11, B+=10, B=9, down to E=1."
+          "answer": "Each university course belongs to a cluster. Each cluster specifies 4 required subjects with weights (typically 2, 1, 0.5, 0.5). Your cluster weight = sum of (Grade points × subject weight). Grade points: A=12, A-=11, B+=10, B=9, down to E=1."
         },
         {
           "question": "What is the maximum cluster weight?",
-          "answer": "The maximum cluster weight is 48 points (if you score A in all 4 weighted subjects: 12\u00d72 + 12\u00d71 + 12\u00d70.5 + 12\u00d70.5 = 48)."
+          "answer": "The maximum cluster weight is 48 points (if you score A in all 4 weighted subjects: 12×2 + 12×1 + 12×0.5 + 12×0.5 = 48)."
         },
         {
           "question": "How many clusters does KUCCPS have?",
@@ -1947,19 +1913,42 @@
     },
     "learn": {
       "slug": "learn",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
-      "faq": []
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Choose any of 22 indigenous Kenyan language courses—spanning Bantu, Nilotic, and Cushitic language families—to practice structured units, interactive vocabulary drills, grammar lessons, and cultural proverbs.",
+        "Each course combines spaced-repetition exercises (multiple choice, sentence building, pair matching, and translation) with comprehensive reference grammar chapters and authentic historical texts.",
+        "All course progress, XP streaks, and mastered vocabulary are saved privately in your local browser storage with no sign-up required."
+      ],
+      "faq": [
+        {
+          "question": "Which Kenyan languages can I learn for free on KenyaHub?",
+          "answer": "KenyaHub offers 22 free interactive Kenyan language courses covering Bantu (Swahili, Kikuyu, Luhya, Kamba, Kisii, Meru, Mijikenda, Embu, Taita, Taveta, Pokomo), Nilotic (Dholuo, Kalenjin, Maasai, Turkana, Ateso, Samburu, Ilchamus, Pokot), and Cushitic (Somali, Borana/Oromo, Rendille) languages."
+        },
+        {
+          "question": "Where do the vocabulary, grammar lessons, and proverbs come from?",
+          "answer": "Our language curricula are compiled from 34 verified public-domain East African linguistic, grammatical, and ethnographic monographs published between 1842 and 1929 (by scholars and native speakers including Krapf, Tutschek, Steere, Taylor, Madan, Hémery, McGregor, Hollis, Beech, Lindblom, and Stam) alongside Unicode CLDR and CC0 open lexical datasets."
+        },
+        {
+          "question": "How do the interactive language lessons and XP levels work?",
+          "answer": "Each language course is organized into progressive units and skill modules. Completing a lesson tests your recall through multiple-choice questions, word-bank sentence building, pair matching, and translation exercises, awarding XP toward 5-star module mastery and cultural rank badges."
+        },
+        {
+          "question": "Do I need to create an account or pay to access all units?",
+          "answer": "No. Every language course, vocabulary module, reference grammar guide, cultural wisdom collection, and mini-game on KenyaHub is 100% free with no login required. You can also toggle 'Unlock All' at any time to jump directly to advanced grammar or cultural units."
+        },
+        {
+          "question": "Can I browse all vocabulary words and grammar rules without playing a quiz?",
+          "answer": "Yes. Inside any language course, switch from the 'Path' tab to the 'Vocab' tab to search and read every module's word list, pronunciation guide, and usage tips at once, or open the 'Grammar' and 'Wisdom' tabs to study noun classes, verb conjugations, proverbs, and riddles."
+        }
+      ]
     },
     "livestock-market-prices": {
       "slug": "livestock-market-prices",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Prices are approximate ranges based on NALMC weekly reports and market observations. Actual prices vary by animal condition, weight, breed, and season.",
-        "Prices tend to spike before major holidays (Eid, Christmas, Easter) and drop during prolonged droughts when supply increases.",
-        "Grade/dairy cattle prices vary enormously based on breed, age, lactation status, and pedigree documentation.",
-        "The NALMC (National Agriculture and Livestock Markets Commission) publishes weekly market reports available at their offices.",
-        "Always negotiate \u2014 listed prices are typical ranges, not fixed rates."
+        "Filter livestock categories (beef cattle, dairy cows, Dorper/Red Maasai sheep, Galla/Small East African goats, camels, and indigenous poultry) by county market center.",
+        "Compare live-weight price ranges (KES) across major pastoral and terminal markets including Garissa, Isiolo, Kajiado, Dagoretti, Narok, Eldoret, andBomet.",
+        "Market benchmarks reflect State Department for Livestock Development and National Drought Management Authority (NDMA) market surveillance bulletins."
       ],
       "faq": [
         {
@@ -1981,8 +1970,8 @@
       "notesTitle": "Important Notes & About the Data",
       "notes": [
         "Route numbers: Nairobi uses NTSA numbers. Regional towns use city-prefix prefixes: Mombasa (M-), Kisumu (K-), Nakuru (NK-), Eldoret (EL-), Thika (TK-).",
-        "Fares shown are typical ranges \u2014 they vary by time of day (peak hours are more expensive), weather, and demand.",
-        "Operating hours are approximate. Most routes start early morning and end by 8\u201310 PM.",
+        "Fares shown are typical ranges — they vary by time of day (peak hours are more expensive), weather, and demand.",
+        "Operating hours are approximate. Most routes start early morning and end by 8–10 PM.",
         "SACCO names reflect official registered transport SACCOs operating along these corridors (e.g. 2TS in Thika, 4NTE/Nakuru Line in Nakuru, Kitwek in Eldoret).",
         "Stage coordinates are mapped to actual geographic coordinates of local stages and land marks across each town.",
         "Data verified against public transportation records, NTSA SACCO registries, and local commuter reports."
@@ -1991,12 +1980,16 @@
     },
     "mobile-number-prefix": {
       "slug": "mobile-number-prefix",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Type any 4-digit Kenyan mobile prefix (e.g., 0722, 0733, 0770, 0747, 0110, 0100) or full phone number (+254...) to identify the original mobile network operator assigned by the Communications Authority of Kenya (CA).",
+        "Browse the complete prefix allocation directory for Safaricom, Airtel Kenya, Telkom Kenya, Jamii Telecom (Faiba 4G), and Equitel alongside essential USSD service codes.",
+        "Note that under CA Mobile Number Portability (MNP) rules, a subscriber may port an existing number to another network while retaining the original 4-digit prefix."
+      ],
       "faq": [
         {
           "question": "How can I identify which network a Kenyan phone number belongs to?",
-          "answer": "Look at the first 4 digits of the number (e.g. 0722). Safaricom uses 0700\u20130729, 0740\u20130743, 0790\u20130799, 0110\u20130119 among others. Airtel uses 0730\u20130739, 0750\u20130756, 0780\u20130789, 0100\u20130109. Telkom uses 0770\u20130779, 0120\u20130129."
+          "answer": "Look at the first 4 digits of the number (e.g. 0722). Safaricom uses 0700–0729, 0740–0743, 0790–0799, 0110–0119 among others. Airtel uses 0730–0739, 0750–0756, 0780–0789, 0100–0109. Telkom uses 0770–0779, 0120–0129."
         },
         {
           "question": "What is Kenya's country code?",
@@ -2014,13 +2007,11 @@
     },
     "mpesa-fee-calculator": {
       "slug": "mpesa-fee-calculator",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Sending KES 100 or less to registered M-Pesa customers is completely FREE.",
-        "Lipa Na M-Pesa Buy Goods (Till to Customer) transactions are FREE across all tariff bands.",
-        "Maximum single M-Pesa transaction limit is KES 250,000; maximum daily transaction and wallet balance limit is KES 500,000.",
-        "Receiving money into your M-Pesa account is always free; tariff fees apply only to the sender or person withdrawing.",
-        "ATM withdrawals require a minimum of KES 200 and are capped at KES 35,000 per withdrawal."
+        "Enter any transaction amount between KES 1 and KES 250,000 and select the transaction type (Send to M-Pesa, Send to Unregistered/Other Network, Withdraw at Agent, or ATM Withdrawal) to calculate exact Safaricom M-Pesa charges.",
+        "Compare single-transfer fees against split-transaction strategies and review daily transaction limits (KES 500,000/day, KES 250,000 per single transaction).",
+        "Tariff brackets reflect the current published Safaricom PLC M-Pesa consumer tariff schedule."
       ],
       "faq": [
         {
@@ -2041,26 +2032,22 @@
         },
         {
           "question": "How can I save on M-Pesa fees?",
-          "answer": "Use Buy Goods (Lipa Na M-Pesa) whenever possible as it's free. When sending money, check the fee boundaries \u2014 sometimes sending KES 500 instead of KES 501 can save you fees because of tariff band transitions."
+          "answer": "Use Buy Goods (Lipa Na M-Pesa) whenever possible as it's free. When sending money, check the fee boundaries — sometimes sending KES 500 instead of KES 501 can save you fees because of tariff band transitions."
         }
       ]
     },
     "national-parks-directory": {
       "slug": "national-parks-directory",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Fees are per person per day unless stated otherwise",
-        "Citizen = Kenyan national (ID required); Resident = non-citizen living in Kenya (work permit/alien ID required)",
-        "Non-resident fees shown in USD; pay at the gate via eCitizen or at KWS offices",
-        "Children rates apply to ages 3\u201318; under 3 is free",
-        "KWS Smart Card ('My Wildlife') offers bulk discounts for frequent visitors",
-        "Fees are reviewed periodically by KWS \u2014 always confirm at kws.go.ke before visiting",
-        "Vehicle entry fees (KES 300\u20131,000 for Kenyan vehicles) are separate from person entry fees"
+        "Filter Kenya's national parks, national reserves, and marine sanctuaries by region, wildlife highlights (Big Five, birding, marine reefs), or management authority (KWS vs. County Government).",
+        "Compare Kenya Wildlife Service (KWS) conservation entry fees across Citizen (KES), East African Resident (KES), and Non-Resident (USD) visitor categories.",
+        "Park fees are paid cashlessly via the eCitizen / KWSPay portal prior to gate entry."
       ],
       "faq": [
         {
           "question": "How much does it cost to enter a national park in Kenya?",
-          "answer": "Entry fees vary by park and visitor category. Kenyan citizens pay KES 200\u2013500/day, residents KES 400\u20132,500/day, and non-residents USD 15\u201390/day. Children pay approximately half. Premium parks like Maasai Mara and Amboseli charge more."
+          "answer": "Entry fees vary by park and visitor category. Kenyan citizens pay KES 200–500/day, residents KES 400–2,500/day, and non-residents USD 15–90/day. Children pay approximately half. Premium parks like Maasai Mara and Amboseli charge more."
         },
         {
           "question": "What is the difference between a national park and a national reserve?",
@@ -2072,24 +2059,21 @@
         },
         {
           "question": "When is the best time for safari in Kenya?",
-          "answer": "The dry season (June\u2013October) is best for wildlife viewing as animals gather around water sources. The Great Wildebeest Migration crosses into Maasai Mara from July\u2013October. However, the green season (November\u2013May) offers lower rates and fewer crowds."
+          "answer": "The dry season (June–October) is best for wildlife viewing as animals gather around water sources. The Great Wildebeest Migration crosses into Maasai Mara from July–October. However, the green season (November–May) offers lower rates and fewer crowds."
         },
         {
           "question": "How do I book a KWS park visit?",
-          "answer": "You can book through the eCitizen portal (ecitizen.go.ke) or pay at the gate. For popular parks, advance booking is recommended, especially during peak season (July\u2013October and December\u2013January)."
+          "answer": "You can book through the eCitizen portal (ecitizen.go.ke) or pay at the gate. For popular parks, advance booking is recommended, especially during peak season (July–October and December–January)."
         }
       ]
     },
     "nhif-hospital-finder": {
       "slug": "nhif-hospital-finder",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "All listed hospitals are accredited under the Social Health Authority (SHA / SHIF, formerly NHIF).",
-        "Outpatient cover under Primary Healthcare Fund (PHF) requires selecting a primary facility via *147# or sha.go.ke.",
-        "Inpatient cover under SHIF is accessible at accredited Level 4\u20136 facilities across Kenya.",
-        "Emergency treatment is covered at any accredited facility under the Emergency, Critical & Chronic Illness Fund (ECCIF).",
-        "Contribution rates: 2.75% of gross monthly salary (minimum KES 300/month), effective October 1, 2024.",
-        "Verify current facility accreditation status via *147# or https://sha.go.ke."
+        "Search or filter accredited healthcare facilities by county, KEPH hospital level (Level 2 Dispensary through Level 6 National Referral Hospital), ownership (Public, Faith-Based, or Private), and inpatient/outpatient services.",
+        "Verify facility accreditation under the Social Health Authority (SHA / SHIF) Primary Healthcare Fund and Social Health Insurance Fund.",
+        "Facility classifications follow the Kenya Master Health Facility List (KMHFL) and Social Health Authority empanelment records."
       ],
       "faq": [
         {
@@ -2098,7 +2082,7 @@
         },
         {
           "question": "What does hospital level mean in Kenya?",
-          "answer": "Kenya's health system has 6 levels: Level 1 (community), Level 2 (dispensary), Level 3 (health centre), Level 4 (sub-county hospital with surgery), Level 5 (county referral with specialists), Level 6 (national referral \u2014 KNH, MTRH)."
+          "answer": "Kenya's health system has 6 levels: Level 1 (community), Level 2 (dispensary), Level 3 (health centre), Level 4 (sub-county hospital with surgery), Level 5 (county referral with specialists), Level 6 (national referral — KNH, MTRH)."
         },
         {
           "question": "Can I use NHIF at a private hospital?",
@@ -2106,7 +2090,7 @@
         },
         {
           "question": "Has NHIF transitioned to SHA / SHIF?",
-          "answer": "Yes, the Social Health Authority (SHA) and Social Health Insurance Fund (SHIF) officially replaced NHIF on October 1, 2024 under the Social Health Insurance Act 2023. Salaried employees contribute 2.75% of gross salary, and accredited Level 2\u20136 facilities provide outpatient and inpatient care."
+          "answer": "Yes, the Social Health Authority (SHA) and Social Health Insurance Fund (SHIF) officially replaced NHIF on October 1, 2024 under the Social Health Insurance Act 2023. Salaried employees contribute 2.75% of gross salary, and accredited Level 2–6 facilities provide outpatient and inpatient care."
         },
         {
           "question": "How do I check if my hospital is NHIF-accredited?",
@@ -2116,12 +2100,11 @@
     },
     "number-plate-decoder": {
       "slug": "number-plate-decoder",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Kenya registration plates follow the format KXX 000X (3-letter prefix, space, 3 digits, 1 letter suffix).",
-        "The letter 'I' and 'O' are omitted from prefixes to avoid confusion with numbers 1 and 0.",
-        "Registration is centralized in Nairobi \u2014 the prefix does NOT indicate where the vehicle operates, only where it was registered.",
-        "Since 2004, nearly all new registrations are processed in Nairobi, making prefix-to-county mapping less meaningful for newer plates."
+        "Enter any Kenyan vehicle registration prefix (e.g., KDA, KDM, KBZ, GK, CD, KX, ZB) to decode its approximate year of registration, historical county code, or special diplomatic/government series.",
+        "Browse the chronological K-series registration timeline from legacy colonial/provincial prefixes (KA–KZ) through second-generation (KAA–KAZ) and third-generation (KBA–KDZ) NTSA series.",
+        "Reference data is compiled from National Transport and Safety Authority (NTSA) motor vehicle registration records."
       ],
       "faq": [
         {
@@ -2148,8 +2131,12 @@
     },
     "passport-id-fees": {
       "slug": "passport-id-fees",
-      "notesTitle": "Important Notes & About the Data",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Filter official Directorate of Immigration and Citizen Services fees by document category: e-Passports (34-page A Series, 50-page B Series, 66-page C Series), Maisha Namba / National ID cards, Civil Registration (Birth & Death Certificates), and Foreign National permits.",
+        "Review required supporting documents, biometric booking procedures on eCitizen, and standard processing timelines at Nyayo House and regional Huduma Centres.",
+        "All statutory payments must be completed exclusively through the official eCitizen gateway (ecitizen.go.ke)."
+      ],
       "faq": [
         {
           "question": "How much is a new passport in Kenya?",
@@ -2157,7 +2144,7 @@
         },
         {
           "question": "How long does it take to get a Kenyan passport?",
-          "answer": "The official processing time is 10\u201315 working days after biometric capture. However, wait times can sometimes be longer depending on backlog. An expedited/emergency passport takes 1\u20133 days."
+          "answer": "The official processing time is 10–15 working days after biometric capture. However, wait times can sometimes be longer depending on backlog. An expedited/emergency passport takes 1–3 days."
         },
         {
           "question": "How much does it cost to replace a lost National ID?",
@@ -2175,18 +2162,16 @@
     },
     "paye-calculator": {
       "slug": "paye-calculator",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "PAYE is calculated on taxable income after deducting NSSF, SHIF (SHA), and Affordable Housing Levy (per the Tax Laws Amendment Act, 2024).",
-        "Every resident individual taxpayer receives a mandatory Personal Relief of KES 2,400 per month (KES 28,800 per year).",
-        "NSSF Year 4 rates (effective February 2026): 6% of pensionable pay with Tier I capped at KES 9,000 (KES 540) and Tier II up to KES 108,000 (max total KES 6,480/month, matched by employer).",
-        "Social Health Insurance Fund (SHIF) under SHA is 2.75% of gross monthly salary (minimum KES 300/month), fully tax-deductible.",
-        "Affordable Housing Levy (AHL) is 1.5% of gross monthly salary from the employee and 1.5% from the employer, with the employee portion fully tax-deductible."
+        "Enter your monthly or annual gross salary (KES) and optional pension or mortgage interest deductions to calculate your exact 2026 net take-home pay.",
+        "View a complete statutory payslip breakdown including NSSF Tier I & II (6% up to KES 108,000 pensionable pay, max KES 6,480), Social Health Insurance Fund (SHIF/SHA at 2.75% of gross), Affordable Housing Levy (1.5% of gross), taxable pay after allowable pre-tax deductions, progressive PAYE bands (10% to 35%), and KES 2,400 monthly personal relief.",
+        "Formulas strictly implement the Income Tax Act (Cap 470), Tax Laws (Amendment) Act 2024, NSSF Act 2013 (Year 4 schedule), and Social Health Insurance Act."
       ],
       "faq": [
         {
           "question": "What PAYE tax bands apply in Kenya?",
-          "answer": "Kenya uses progressive tax bands: 10% for the first KES 24,000, 25% for KES 24,001\u201332,333, 30% for KES 32,334\u2013500,000, 32.5% for KES 500,001\u2013800,000, and 35% above KES 800,000. A personal relief of KES 2,400 per month is applied."
+          "answer": "Kenya uses progressive tax bands: 10% for the first KES 24,000, 25% for KES 24,001–32,333, 30% for KES 32,334–500,000, 32.5% for KES 500,001–800,000, and 35% above KES 800,000. A personal relief of KES 2,400 per month is applied."
         },
         {
           "question": "Is the Affordable Housing Levy mandatory?",
@@ -2194,7 +2179,7 @@
         },
         {
           "question": "What are the new NSSF rates in Kenya?",
-          "answer": "Under the NSSF Act 2013 (now in effect), employees contribute 6% of pensionable pay. Under the Year 4 schedule (effective February 2026), Tier I covers up to KES 9,000 (max KES 540) and Tier II covers KES 9,001\u2013108,000 (max KES 5,940; total max KES 6,480/month). The employer matches these contributions."
+          "answer": "Under the NSSF Act 2013 (now in effect), employees contribute 6% of pensionable pay. Under the Year 4 schedule (effective February 2026), Tier I covers up to KES 9,000 (max KES 540) and Tier II covers KES 9,001–108,000 (max KES 5,940; total max KES 6,480/month). The employer matches these contributions."
         },
         {
           "question": "How is SHA calculated in Kenya?",
@@ -2208,13 +2193,11 @@
     },
     "professional-bodies-kenya": {
       "slug": "professional-bodies-kenya",
-      "notesTitle": "About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "This directory covers the major professional regulatory bodies in Kenya. Some professions have both a statutory regulator (e.g., EBK) and a professional association (e.g., IEK).",
-        "Registration fees and renewal fees are approximate and may change. Always verify current fees on the body's official website.",
-        "Practising without valid registration in a regulated profession is a criminal offence under the respective Acts of Parliament.",
-        "Most bodies now offer online registration and renewal through their websites or the eCitizen platform.",
-        "To verify if a professional is registered, use the 'Verification URL' provided or contact the body directly."
+        "Search Kenya's statutory professional regulatory bodies and licensing councils by profession, acronym (LSK, KMPDC, EBK, ICPAK, BORAQS, NCK, PPB, TSC, EARB), or enabling Act of Parliament.",
+        "Compare initial registration fees, annual practicing certificate renewal costs, academic qualification requirements, and direct links to official online practitioner verification registers.",
+        "Always verify a practitioner's current annual license status on the regulator's portal before engaging professional legal, medical, engineering, or financial services."
       ],
       "faq": [
         {
@@ -2227,22 +2210,22 @@
         },
         {
           "question": "How much does professional registration cost?",
-          "answer": "Costs vary widely \u2014 from KES 1,000 (TSC for teachers) to KES 20,000+ (CMA for investment advisors). Most bodies charge KES 3,000\u201310,000 for initial registration plus annual renewal fees."
+          "answer": "Costs vary widely — from KES 1,000 (TSC for teachers) to KES 20,000+ (CMA for investment advisors). Most bodies charge KES 3,000–10,000 for initial registration plus annual renewal fees."
         }
       ]
     },
     "public-holidays": {
       "slug": "public-holidays",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Under Section 4 of the Public Holidays Act (Cap 110), when a public holiday falls on a Sunday, the following Monday is observed as a public holiday.",
-        "Islamic holidays (Eid ul-Fitr and Eid ul-Adha) depend on the sighting of the moon and are formally gazetted by the Cabinet Secretary for Interior.",
-        "Mazingira Day (10 October) was amended from Utamaduni/Huduma Day in 2024 to dedicate the holiday to national tree planting and environmental conservation."
+        "View all gazetted national public holidays in Kenya for 2026 under the Public Holidays Act (Cap 110), complete with live countdowns and day-of-week observance rules.",
+        "Per Section 4 of the Public Holidays Act, whenever a public holiday falls on a Sunday, the following Monday is observed as an official public holiday.",
+        "Islamic holidays (Idd-ul-Fitr and Idd-ul-Azha) are subject to lunar sighting confirmation and formal Gazette Notice by the Cabinet Secretary for Interior."
       ],
       "faq": [
         {
           "question": "How many public holidays does Kenya have?",
-          "answer": "Kenya has approximately 11\u201313 gazetted public holidays per year. The exact number varies because Islamic holidays (Eid ul-Fitr, Eid ul-Adha) are determined by moon sighting. Additionally, if a holiday falls on a Sunday, Monday is observed."
+          "answer": "Kenya has approximately 11–13 gazetted public holidays per year. The exact number varies because Islamic holidays (Eid ul-Fitr, Eid ul-Adha) are determined by moon sighting. Additionally, if a holiday falls on a Sunday, Monday is observed."
         },
         {
           "question": "What happens when a public holiday falls on a Sunday?",
@@ -2264,14 +2247,11 @@
     },
     "real-estate-agent-checker": {
       "slug": "real-estate-agent-checker",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "The Estate Agents Registration Board (EARB) regulates estate agents in Kenya under the Estate Agents Act (Cap 533)",
-        "It is illegal to act as an estate agent without EARB registration \u2014 Section 4 of the Act",
-        "Registered agents must renew their license annually by March 31",
-        "Always insist on seeing an agent's EARB registration certificate before engaging their services",
-        "EARB handles complaints against registered agents \u2014 you can file via their website or in person",
-        "The sample agents list is not exhaustive \u2014 always verify directly with EARB"
+        "Understand how to verify whether an estate agent, property manager, or land broker is legally registered with the Estate Agents Registration Board (EARB) under Cap 533.",
+        "Calculate statutory maximum sales and letting commission caps under the Estate Agents (Remuneration) Rules and follow the 7-step Ministry of Lands / Ardhisasa title deed due-diligence checklist.",
+        "Never pay land booking fees or purchase deposits before conducting an official land search and verifying the agent's current EARB annual practicing certificate."
       ],
       "faq": [
         {
@@ -2294,16 +2274,16 @@
     },
     "school-terms": {
       "slug": "school-terms",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "All public primary, junior secondary, and senior secondary schools follow the Ministry of Education gazetted calendar.",
-        "Term 3 has no mid-term break in order to accommodate national examinations (KPSEA, KJSEA, and KCSE) in late October and November.",
-        "2026 marks the pioneer Grade 10 cohort entering Senior Secondary School (SSS) under the 2-6-3-3-3 CBC structure."
+        "Track official Ministry of Education Term 1, Term 2, and Term 3 opening dates, half-term breaks, closing dates, and August/December school holidays for Kenyan basic education institutions.",
+        "View scheduled national examination windows administered by the Kenya National Examinations Council (KNEC), including KPSEA, KJSEA, and KCSE.",
+        "Calendar dates follow the Ministry of Education's annual circular for pre-primary, primary, junior, and senior schools."
       ],
       "faq": [
         {
           "question": "How many school terms does Kenya have?",
-          "answer": "Kenya has 3 school terms per year: Term 1 (January\u2013April), Term 2 (May\u2013August), and Term 3 (August/September\u2013October/November). Each term has a mid-term break, and there are longer holidays between terms."
+          "answer": "Kenya has 3 school terms per year: Term 1 (January–April), Term 2 (May–August), and Term 3 (August/September–October/November). Each term has a mid-term break, and there are longer holidays between terms."
         },
         {
           "question": "When do Kenya schools open in 2026?",
@@ -2311,7 +2291,7 @@
         },
         {
           "question": "When is the December holiday for schools?",
-          "answer": "The long December holiday typically runs from early November to early January \u2014 about 9 weeks. It's the longest school break in the Kenyan calendar."
+          "answer": "The long December holiday typically runs from early November to early January — about 9 weeks. It's the longest school break in the Kenyan calendar."
         },
         {
           "question": "Do all schools follow the same term dates?",
@@ -2321,47 +2301,42 @@
     },
     "solar-roi-calculator": {
       "slug": "solar-roi-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Solar irradiance values are annual averages in kWh/m\u00b2/day based on Kenya Meteorological Department data.",
-        "System cost of ~KES 80,000/kW is an approximate Kenya market average for grid-tied systems (2026).",
-        "Panel efficiency of 20% reflects typical monocrystalline panels available in Kenya.",
-        "System losses (15%) account for inverter efficiency, wiring, dust, and temperature effects.",
-        "Annual degradation of 0.5% is the industry standard for quality solar panels.",
-        "Kenya sits on the equator, providing excellent year-round solar conditions (5.2 to 6.5 peak sun hours/day).",
-        "Actual savings depend on your specific KPLC tariff band (DC1/DC2/DC3) and consumption pattern."
+        "Enter your average monthly KPLC electricity bill (KES) and select your county to estimate the optimal solar PV system size (kWp), battery storage capacity (kWh), upfront installation cost, and payback period.",
+        "Calculations incorporate county-specific Global Horizontal Irradiance (GHI / peak sun hours per day) and current EPRA retail electricity tariffs.",
+        "Under Kenyan tax regulations, qualifying solar photovoltaic modules and deep-cycle solar batteries benefit from VAT exemptions when sourced through EPRA-licensed solar contractors."
       ],
       "faq": [
         {
           "question": "Is solar worth it in Kenya?",
-          "answer": "Yes. Kenya sits on the equator with excellent year-round sunlight (5.3\u20136.5 kWh/m\u00b2/day). Most grid-tied solar systems pay for themselves in 3\u20136 years and generate free electricity for 20+ years after that."
+          "answer": "Yes. Kenya sits on the equator with excellent year-round sunlight (5.3–6.5 kWh/m²/day). Most grid-tied solar systems pay for themselves in 3–6 years and generate free electricity for 20+ years after that."
         },
         {
           "question": "How much does a solar system cost in Kenya?",
-          "answer": "The average cost is approximately KES 80,000 per kilowatt (kW) installed for a grid-tied system including panels, inverter, mounting, and installation. A typical household might need a 2\u20135 kW system (KES 160,000\u2013400,000)."
+          "answer": "The average cost is approximately KES 80,000 per kilowatt (kW) installed for a grid-tied system including panels, inverter, mounting, and installation. A typical household might need a 2–5 kW system (KES 160,000–400,000)."
         },
         {
           "question": "How many solar panels do I need for my home?",
-          "answer": "It depends on your electricity consumption. A household spending KES 5,000/month on KPLC tokens typically needs a 2\u20133 kW system (6\u201310 panels of 330W each)."
+          "answer": "It depends on your electricity consumption. A household spending KES 5,000/month on KPLC tokens typically needs a 2–3 kW system (6–10 panels of 330W each)."
         },
         {
           "question": "What is the payback period for solar in Kenya?",
-          "answer": "Typically 3\u20136 years depending on your location, system size, and current electricity spending. After payback, you enjoy 15\u201320 more years of free electricity."
+          "answer": "Typically 3–6 years depending on your location, system size, and current electricity spending. After payback, you enjoy 15–20 more years of free electricity."
         },
         {
           "question": "Do solar panels work during the rainy season?",
-          "answer": "Yes, but at reduced efficiency. Solar panels still generate electricity on cloudy days, typically at 10\u201330% of their rated capacity. Kenya's rainy seasons are relatively short (March\u2013May and Oct\u2013Dec)."
+          "answer": "Yes, but at reduced efficiency. Solar panels still generate electricity on cloudy days, typically at 10–30% of their rated capacity. Kenya's rainy seasons are relatively short (March–May and Oct–Dec)."
         }
       ]
     },
     "stamp-duty-calculator": {
       "slug": "stamp-duty-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Stamp duty is payable within 30 days of execution of the transfer instrument",
-        "First-time buyers under the Affordable Housing Fund (AHF) scheme are exempt from stamp duty",
-        "LSK conveyancing fees are calculated on a progressive scale similar to tax bands",
-        "Land rent and rates clearance are additional county-specific costs for leasehold properties"
+        "Enter the property purchase price or government valuation and select the location category (Urban/Municipality at 4% vs. Rural/Agricultural at 2%) to calculate Stamp Duty payable on land transfers in Kenya.",
+        "Include advocate legal fee estimates under the Advocates (Remuneration) Order, valuation fees, and Ardhisasa/land registry registration charges to budget your total property closing cost.",
+        "Rates follow the Stamp Duty Act (Cap 480) and Kenya Revenue Authority (KRA) iTax property transfer guidelines."
       ],
       "faq": [
         {
@@ -2388,14 +2363,11 @@
     },
     "trademark-cost-kenya": {
       "slug": "trademark-cost-kenya",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "All fees are in Kenya Shillings (KES) as gazetted by KIPI",
-        "Attorney/agent fees are separate and vary \u2014 typically KES 30,000\u201380,000 for trademark, KES 50,000\u2013150,000 for patent",
-        "KIPI processes applications on a first-come-first-served basis",
-        "Trademark classes follow the Nice Classification system (45 classes)",
-        "Foreign applicants must use a registered Kenyan IP agent",
-        "Late renewal attracts a penalty of 100% of the renewal fee"
+        "Select applicant residency status (Kenyan Citizen/Local Entity vs. Foreign Applicant) and number of Nice Classification classes (1 to 45) to calculate official Kenya Industrial Property Institute (KIPI) trademark registration fees.",
+        "Review stage-by-stage statutory fees from preliminary TM27 search and TM2 application filing through Industrial Property Journal advertisement (60-day opposition window) to 10-year registration certificate issuance.",
+        "Fee schedules reflect the Industrial Property Act and gazetted KIPI tariff regulations."
       ],
       "faq": [
         {
@@ -2404,7 +2376,7 @@
         },
         {
           "question": "How long does trademark registration take in Kenya?",
-          "answer": "Trademark registration typically takes 12\u201318 months from application to certificate issuance. This includes the 60-day opposition period after Gazette publication."
+          "answer": "Trademark registration typically takes 12–18 months from application to certificate issuance. This includes the 60-day opposition period after Gazette publication."
         },
         {
           "question": "What are trademark classes?",
@@ -2412,7 +2384,7 @@
         },
         {
           "question": "What is the difference between a patent and a utility model?",
-          "answer": "A patent protects novel inventions for 20 years and requires thorough examination (costs ~KES 34,650). A utility model (petty patent) is simpler, faster (6\u201312 months), cheaper (~KES 13,750), but only lasts 10 years and has a lower inventiveness threshold."
+          "answer": "A patent protects novel inventions for 20 years and requires thorough examination (costs ~KES 34,650). A utility model (petty patent) is simpler, faster (6–12 months), cheaper (~KES 13,750), but only lasts 10 years and has a lower inventiveness threshold."
         },
         {
           "question": "Do I need an IP attorney?",
@@ -2422,8 +2394,12 @@
     },
     "traffic-fines": {
       "slug": "traffic-fines",
-      "notesTitle": "How to Pay Traffic Fines",
-      "notes": [],
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Search or filter traffic offences under the Traffic Act (Cap 403) and NTSA Minor Offences Rules—covering speeding, PSV compliance, driving without valid insurance or license, and vehicle roadworthiness.",
+        "Inspect statutory cash bail/fine ceilings (KES), court penalties, and driver demerit point assessments.",
+        "Minor traffic fines are payable strictly through official eCitizen / NTSA digital channels or designated court registries—never pay unreceipted cash bribes on the road."
+      ],
       "faq": [
         {
           "question": "What is the fine for speeding in Kenya?",
@@ -2431,7 +2407,7 @@
         },
         {
           "question": "What is the NTSA demerit points system?",
-          "answer": "Kenya uses a 24-point demerit system over a 3-year period. Points 1\u201312 result in a warning, 13\u201318 require a mandatory road safety course, 19\u201323 lead to license suspension for 6 months, and 24+ points result in license revocation."
+          "answer": "Kenya uses a 24-point demerit system over a 3-year period. Points 1–12 result in a warning, 13–18 require a mandatory road safety course, 19–23 lead to license suspension for 6 months, and 24+ points result in license revocation."
         },
         {
           "question": "What is the fine for driving without insurance in Kenya?",
@@ -2449,13 +2425,11 @@
     },
     "vehicle-insurance-calculator": {
       "slug": "vehicle-insurance-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Third Party Only insurance is the minimum legal requirement under the Insurance (Motor Vehicle Third Party Risks) Act (Cap 405)",
-        "Driving without valid insurance is a criminal offence with a fine of up to KES 100,000 or imprisonment",
-        "IRA sets minimum premium rates \u2014 actual premiums from insurers may be higher based on risk assessment",
-        "Comprehensive premiums depend on vehicle value, age, driver history, and insurer's underwriting criteria",
-        "PSV vehicles must additionally have a valid NTSA inspection certificate and PSV badge"
+        "Enter your vehicle's current market value (KES), usage class (Private Car, Commercial Own Goods, PSV Matatu/Chauffeured, or Motorcycle), and coverage type (Comprehensive vs. Third Party Only) to estimate annual motor insurance premiums.",
+        "See itemized statutory levies included in Kenyan policies: Insurance Training Levy (0.2%), Policyholders Compensation Fund (PCF 0.25%), and KES 40 Stamp Duty, plus optional Excess Protector and Political Violence & Terrorism (PVT) riders.",
+        "Rate benchmarks follow Insurance Regulatory Authority (IRA) guidelines and Cap 405 compulsory third-party motor insurance requirements."
       ],
       "faq": [
         {
@@ -2468,7 +2442,7 @@
         },
         {
           "question": "What is the difference between Third Party and Comprehensive insurance?",
-          "answer": "Third Party Only covers damage to other people and their property. Comprehensive cover additionally protects your own vehicle against damage, theft, fire, and windscreen breakage. Comprehensive premiums are typically 4\u20136% of your vehicle's value."
+          "answer": "Third Party Only covers damage to other people and their property. Comprehensive cover additionally protects your own vehicle against damage, theft, fire, and windscreen breakage. Comprehensive premiums are typically 4–6% of your vehicle's value."
         },
         {
           "question": "Who sets minimum insurance premiums in Kenya?",
@@ -2482,13 +2456,11 @@
     },
     "ward-constituency-finder": {
       "slug": "ward-constituency-finder",
-      "notesTitle": "Important Notes & About the Data",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Population figures are from the 2019 Kenya Population and Housing Census (KNBS)",
-        "Elected officials data is from the 2022 General Election \u2014 valid until the 2027 General Election",
-        "Area is in km\u00b2",
-        "County codes follow the official KNBS/IEBC numbering (1 = Mombasa to 47 = Nairobi)",
-        "Constituencies listed are parliamentary constituencies (not county assembly wards)"
+        "Search across all 47 counties and 290 parliamentary constituencies of Kenya as delimited by the Independent Electoral and Boundaries Commission (IEBC) under the 2010 Constitution.",
+        "Filter by county to view county codes (#001 Mombasa to #047 Nairobi), county headquarters, elected county leadership, and constituent parliamentary constituencies.",
+        "For deeper county comparisons including FY 2025/26 budgets, climate zones, and accredited hospitals, visit the unified 47 Counties Hub."
       ],
       "faq": [
         {
@@ -2515,13 +2487,11 @@
     },
     "water-bill-calculator": {
       "slug": "water-bill-calculator",
-      "notesTitle": "Important Notes",
+      "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
-        "Water tariffs are approved by the Water Services Regulatory Board (WASREB)",
-        "Sewerage charge is typically 75% of the water bill for connected properties",
-        "Meter rent is a fixed monthly charge regardless of consumption",
-        "Lifeline tariff (0\u20136 m\u00b3) is subsidized for low-income households",
-        "Rates shown are for domestic/residential connections; commercial rates are higher"
+        "Select your county water and sewerage utility (e.g., Nairobi City Water & Sewerage Company, Mombasa Water, Eldowas, Kiwasco, Nakuru Water, or Mawasco) and enter your monthly water consumption in cubic metres (m³).",
+        "Compute your progressive block tariff water charge, sewerage surcharge (typically 75% of water bill where connected), meter rent, and WASREB regulatory levy.",
+        "Tariff blocks reflect Water Services Regulatory Board (WASREB) approved county water utility schedules."
       ],
       "faq": [
         {
@@ -2530,11 +2500,11 @@
         },
         {
           "question": "What is the lifeline tariff?",
-          "answer": "The lifeline tariff is a subsidized rate for the first 0\u20136 cubic metres of water consumed per month. It ensures basic water access for low-income households at a very low cost (typically KES 33\u201345 per m\u00b3 under WASREB domestic tariff bands)."
+          "answer": "The lifeline tariff is a subsidized rate for the first 0–6 cubic metres of water consumed per month. It ensures basic water access for low-income households at a very low cost (typically KES 33–45 per m³ under WASREB domestic tariff bands)."
         },
         {
           "question": "How much water does an average Kenyan household use?",
-          "answer": "An average household of 4\u20135 people in Nairobi uses approximately 10\u201320 cubic metres (m\u00b3) per month. This covers cooking, cleaning, bathing, and laundry. Households with gardens or larger families may use 30+ m\u00b3."
+          "answer": "An average household of 4–5 people in Nairobi uses approximately 10–20 cubic metres (m³) per month. This covers cooking, cleaning, bathing, and laundry. Households with gardens or larger families may use 30+ m³."
         },
         {
           "question": "Why is there a sewerage charge?",
@@ -2543,6 +2513,63 @@
         {
           "question": "Which body regulates water tariffs in Kenya?",
           "answer": "The Water Services Regulatory Board (WASREB) approves all water and sewerage tariffs in Kenya. Individual water utilities (like NCWSC for Nairobi) propose tariffs, and WASREB approves them after public consultation."
+        }
+      ]
+    },
+    "kra-car-import-calculator": {
+      "slug": "kra-car-import-calculator",
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Select vehicle make, model, engine capacity, fuel type, and year of first registration to compute total Kenya Revenue Authority (KRA) customs taxes using the official Current Retail Selling Price (CRSP) schedule.",
+        "See a complete statutory breakdown of age depreciation (up to 65% for vehicles 7–8 years old), Import Duty (35%), Excise Duty, 16% VAT, Import Declaration Fee (IDF 2.5%), and Railway Development Levy (RDL 2%).",
+        "Verify KEBS 8-year age limit compliance and NTSA registration fees before shipping a vehicle to the Port of Mombasa."
+      ],
+      "faq": [
+        {
+          "question": "Why does the year of manufacture matter so much for car imports in Kenya?",
+          "answer": "KRA applies progressive depreciation up to 65% on a vehicle's Current Retail Selling Price (CRSP) based on age, and KEBS prohibits the importation of vehicles older than 8 years from the year of first registration."
+        },
+        {
+          "question": "Are all KRA port taxes stacked on top of each other?",
+          "answer": "Yes. Excise Duty applies on (Customs Value + Import Duty), and 16% VAT applies on (Customs Value + Import Duty + Excise Duty), plus IDF (2.5%) and RDL (2.0%)."
+        }
+      ]
+    },
+    "mjengo-construction-calculator": {
+      "slug": "mjengo-construction-calculator",
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Enter your target floor area (square metres), building typology (bungalow, maisonette, apartments, or commercial perimeter wall), finish standard, and Kenyan region to estimate total construction cost.",
+        "Inspect itemized bill-of-quantities (BQ) estimates for substructure, superstructure walling (machine-cut quarry stone vs. interlocking blocks), roofing, electrical/plumbing, and finishes alongside material quantities (bags of cement, tonnes of steel, sand, and ballast).",
+        "Unit rates are calibrated against the Architectural Association of Kenya (AAK) and Institute of Quantity Surveyors of Kenya (IQSK) building cost handbook."
+      ],
+      "faq": [
+        {
+          "question": "Should I buy machine-cut Ndarugo stone or hand-dressed quarry stone?",
+          "answer": "Machine-cut stones (9x9) cost slightly more per piece (KES 45–55) than hand-dressed stones (KES 32–42), but use 35% less mortar and require much thinner plaster coats."
+        },
+        {
+          "question": "Are residential houses exempt from the NCA construction levy?",
+          "answer": "Projects receive county architectural/structural plan approvals and NCA registration; always use an NCA-registered contractor and licensed structural engineer."
+        }
+      ]
+    },
+    "sacco-chama-calculator": {
+      "slug": "sacco-chama-calculator",
+      "notesTitle": "How to Use & Statutory Methodology",
+      "notes": [
+        "Model your Deposit-Taking SACCO (DT-SACCO) or registered Chama savings growth, BOSA loan multiplier (3x to 4x deposits), monthly reducing-balance loan repayments, and annual dividend/rebate payouts.",
+        "Account for the 5% statutory Withholding Tax (WHT) on SACCO dividends and interest on deposits, and compare effective net borrowing costs after annual deposit rebates.",
+        "Benchmarks reflect SACCO Societies Regulatory Authority (SASRA) supervision reports and standard Kenyan cooperative lending terms."
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between SACCO Dividends and Interest on Deposits (Rebates)?",
+          "answer": "Dividends are paid on permanent, non-withdrawable Share Capital (typically 12%–20%), while Interest on Deposits (Rebates) is paid on monthly BOSA deposits (typically 9%–13%) weighted by how many months each deposit stayed in the SACCO."
+        },
+        {
+          "question": "Why is a reducing-balance SACCO loan cheaper than a flat-rate loan?",
+          "answer": "At 1% per month on a reducing balance (12% p.a.), interest is charged only on the remaining principal each month—equivalent to roughly 6.5% flat rate per year."
         }
       ]
     }

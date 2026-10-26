@@ -3,7 +3,7 @@
 // Based on "Grammar of the Kamba Language" by J.T. Last (CMS, 1885),
 // "Vocabularies of the Kamba and Kikuyu Languages"
 // by Hildegarde Hinde (Cambridge University Press, 1904),
-// and "Bantu Beliefs and Magic" by C.W. Hobley (1922).
+// and "Bantu Beliefs and Customary Institutions" by C.W. Hobley (1922).
 // ============================================================
 
 import type { LanguageConfig, CourseUnit } from '../types';
@@ -527,7 +527,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-6-greetings",
     "title": "Unit 6: Greetings & Farewells",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Greetings & Farewells, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Greetings & Farewells, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Handshake",
     "skills": [
       {
@@ -536,7 +536,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Handshake",
         "description": "Master Kamba (Kĩkamba) greetings & farewells vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Greetings & Farewells, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ũvoo?' (How are you?), 'Nĩ mũseo' (I am fine), 'O voo' (Hello / Salutation), 'Wĩa?' (What's the news / What's up?).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Ũvoo?",
@@ -738,7 +738,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-7-numbers",
     "title": "Unit 7: Numbers",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Numbers, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Numbers, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Hash",
     "skills": [
       {
@@ -747,7 +747,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Hash",
         "description": "Master Kamba (Kĩkamba) numbers vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Numbers, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ithano' (Five), 'Thanthantũ' (Six), 'Nyaanya' (Eight), 'Ĩkũmi na ĩmwe' (Eleven).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Ithano",
@@ -935,7 +935,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-8-family",
     "title": "Unit 8: Family & Relationships",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Family & Relationships, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Family & Relationships, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Users",
     "skills": [
       {
@@ -944,7 +944,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Users",
         "description": "Master Kamba (Kĩkamba) family & relationships vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Family & Relationships, pay special attention to pronunciation and morphological prefixes/suffixes: 'Asa / Tata' (Father), 'Mwaitũ / Ĩvaa' (Mother), 'Kaana' (Child), 'Kavĩsĩ' (Boy / Male youth).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Asa / Tata",
@@ -1161,7 +1161,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Users",
         "description": "Master Kamba (Kĩkamba) family & relationships vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Family & Relationships, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mũnyanya' (Friend), 'Mũme' (Husband), 'Mũtanya' (Judge / Arbitrator), 'Mũtongoi' (Guide / Caravan leader).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Mũnyanya",
@@ -1328,7 +1328,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-9-nature",
     "title": "Unit 9: Nature & Environment",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Nature & Environment, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Nature & Environment, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Sun",
     "skills": [
       {
@@ -1337,7 +1337,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Sun",
         "description": "Master Kamba (Kĩkamba) nature & environment vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Syũa' (Sun), 'Mwei' (Moon), 'Ndata' (Star), 'Ĩtu' (Sky / Cloud).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Syũa",
@@ -1560,7 +1560,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-10-animals",
     "title": "Unit 10: Animals & Wildlife",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Animals & Wildlife, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Animals & Wildlife, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Compass",
     "skills": [
       {
@@ -1569,7 +1569,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Compass",
         "description": "Master Kamba (Kĩkamba) animals & wildlife vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ng'ombe' (Cow / Cattle), 'Nzao' (Bull), 'Mbuĩ' (Goat), 'Ĩlondu' (Sheep).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Ng'ombe",
@@ -1786,7 +1786,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Compass",
         "description": "Master Kamba (Kĩkamba) animals & wildlife vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Nzaĩ' (Zebra), 'Ndia' (Giraffe), 'Kĩnyangĩ' (Crocodile), 'Ngũlĩ' (Baboon).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Nzaĩ",
@@ -1967,7 +1967,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-11-food",
     "title": "Unit 11: Food & Drink",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Food & Drink, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Food & Drink, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Utensils",
     "skills": [
       {
@@ -1976,7 +1976,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Utensils",
         "description": "Master Kamba (Kĩkamba) food & drink vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Food & Drink, pay special attention to pronunciation and morphological prefixes/suffixes: 'Lĩu / Ĩlya' (Food), 'Ĩya' (Milk), 'Nyama' (Meat), 'Mbemba' (Maize).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Lĩu / Ĩlya",
@@ -2199,7 +2199,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-12-body",
     "title": "Unit 12: Body Parts",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Body Parts, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Body Parts, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Heart",
     "skills": [
       {
@@ -2208,7 +2208,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Heart",
         "description": "Master Kamba (Kĩkamba) body parts vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mwĩĩ' (Body), 'Mũtwe' (Head), 'Ĩtho' (Eye), 'Kũtũ' (Ear).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Mwĩĩ",
@@ -2425,7 +2425,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Heart",
         "description": "Master Kamba (Kĩkamba) body parts vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ĩvũ' (Stomach / Belly), 'Mũongo' (Back), 'Kwoko' (Arm / Hand), 'Kũũ' (Leg / Foot).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Ĩvũ",
@@ -2613,7 +2613,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-13-tools",
     "title": "Unit 13: Tools & Household Objects",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Tools & Household Objects, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Tools & Household Objects, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Wrench",
     "skills": [
       {
@@ -2622,7 +2622,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Wrench",
         "description": "Master Kamba (Kĩkamba) tools & household objects vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Tools & Household Objects, pay special attention to pronunciation and morphological prefixes/suffixes: 'Kaviu' (Knife), 'Mũsye' (Arrow), 'Thyaka' (Quiver (for arrows)), 'Ĩtũmũ' (Spear).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Kaviu",
@@ -2859,7 +2859,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-14-verbs",
     "title": "Unit 14: Verbs & Actions",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Verbs & Actions, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Verbs & Actions, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "Zap",
     "skills": [
       {
@@ -2868,7 +2868,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Zap",
         "description": "Master Kamba (Kĩkamba) verbs & actions vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Kũĩma' (To cultivate / farm), 'Kwaka' (To build), 'Kũua' (To cook), 'Kũona / Kũkĩĩtha' (To see).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Kũĩma",
@@ -3085,7 +3085,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "Zap",
         "description": "Master Kamba (Kĩkamba) verbs & actions vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Kũsemba' (To run), 'Kũkwa' (To die), 'Kũthamba' (To wash), 'Kũtheka' (To laugh).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Kũsemba",
@@ -3266,7 +3266,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-15-phrases",
     "title": "Unit 15: Common Phrases",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Common Phrases, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Common Phrases, vetted from J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
     "icon": "MessageCircle",
     "skills": [
       {
@@ -3275,7 +3275,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "MessageCircle",
         "description": "Master Kamba (Kĩkamba) common phrases vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ĩĩ / Nĩw'o' (Yes), 'Aiee / Nde' (No), 'Wĩtawa ata?' (What is your name?), 'Nĩtawa...' (My name is...).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Ĩĩ / Nĩw'o",
@@ -3492,7 +3492,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "icon": "MessageCircle",
         "description": "Master Kamba (Kĩkamba) common phrases vocabulary and expressions from verified historical sources.",
         "tips": "In this Kamba (Kĩkamba) skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Vindya' (Be quiet), 'Thi / Enda' (Go away / Leave), 'Kũtĩ ũthũku' (All is well), 'Ng'o yakwa' (Myself).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Magic'.",
+        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
         "words": [
           {
             "target": "Vindya",

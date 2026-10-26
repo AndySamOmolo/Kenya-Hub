@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "All Tools — Free Online Tools for Kenya",
   description:
-    "Browse 45+ free online tools built for Kenya — PAYE calculator, M-Pesa fees, KPLC token calculator, KCSE grades, CBC curriculum, matatu routes, number plate decoder and more. All powered by official data.",
+    "Browse 44 free online tools built for Kenya — PAYE calculator, M-Pesa fees, KPLC token calculator, KCSE grades, CBC curriculum, matatu routes, number plate decoder and more. All powered by official data.",
   keywords: [
     "Kenya online tools",
     "free tools Kenya",
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "All Tools — Free Online Tools for Kenya | KenyaHub",
     description:
-      "45+ free tools covering finance, education, government services, transport, health, agriculture and more — all built for Kenya with official data.",
+      "44 free tools covering finance, education, government services, transport, health, agriculture and more — all built for Kenya with official data.",
     url: "https://kenyahub.me/tools/",
   },
   twitter: {
     card: "summary",
     title: "All Tools — Free Online Tools for Kenya | KenyaHub",
     description:
-      "45+ free tools covering finance, education, government services, transport, health, agriculture and more.",
+      "44 free tools covering finance, education, government services, transport, health, agriculture and more.",
   },
 };
 

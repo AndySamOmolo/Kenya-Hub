@@ -9,8 +9,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
-        disallow: ["/api/", "/_next/", "/admin/"],
+        allow: ["/", "/_next/static/"],
+        disallow: ["/api/", "/admin/"],
       },
       {
         userAgent: "Mediapartners-Google",
@@ -18,9 +18,19 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/"],
       },
       {
-        userAgent: "Googlebot",
+        userAgent: "Google-Display-Ads-Bot",
         allow: "/",
-        disallow: ["/api/", "/_next/", "/admin/"],
+        disallow: ["/admin/"],
+      },
+      {
+        userAgent: "AdsBot-Google",
+        allow: "/",
+        disallow: ["/admin/"],
+      },
+      {
+        userAgent: "Googlebot",
+        allow: ["/", "/_next/static/"],
+        disallow: ["/api/", "/admin/"],
       },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,

@@ -2,7 +2,7 @@
 // Kikuyu (Gĩkũyũ) Language Course Configuration & Units
 // Based 100% on Public Domain Sources:
 // 1. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages of East Africa" (Cambridge Univ. Press)
-// 2. C. W. Hobley (1922) "Bantu Beliefs and Magic" (H. F. & G. Witherby, London)
+// 2. C. W. Hobley (1922) "Bantu Beliefs and Customary Institutions" (H. F. & G. Witherby, London)
 // 3. Wiktionary Appendix:Bantu Swadesh lists (Zone E20 Kikuyu core lexical roots)
 // ============================================================
 

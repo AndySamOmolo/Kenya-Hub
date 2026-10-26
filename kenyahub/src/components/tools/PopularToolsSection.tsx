@@ -58,7 +58,7 @@ export default function PopularToolsSection() {
           </h2>
         </div>
         <Link
-          href="/tools"
+          href="/tools/"
           className="hidden sm:flex items-center gap-1.5 text-sm text-text-muted hover:text-gold transition-colors font-medium"
         >
           View all
@@ -75,7 +75,7 @@ export default function PopularToolsSection() {
           return (
             <Link
               key={tool.slug}
-              href={`/tools/${tool.slug}`}
+              href={`/tools/${tool.slug}/`}
               className="tool-card bg-bg-card border border-border rounded-xl sm:rounded-2xl p-3.5 sm:p-6 block group"
               style={{ animationDelay: `${i * 80}ms` }}
             >
@@ -110,7 +110,7 @@ export default function PopularToolsSection() {
       </div>
 
       <div className="sm:hidden mt-4 text-center">
-        <Link href="/tools" className="btn-outline text-sm">
+        <Link href="/tools/" className="btn-outline text-sm">
           View All Tools →
         </Link>
       </div>

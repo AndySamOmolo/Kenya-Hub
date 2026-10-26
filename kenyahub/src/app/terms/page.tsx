@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — KenyaHub",
+  title: "Terms of Service — Usage Terms & Disclaimers",
   description: "KenyaHub Terms of Service — terms of use, financial disclaimers, intellectual property, and governing law.",
   alternates: { canonical: "https://kenyahub.me/terms/" },
 };

@@ -6,7 +6,7 @@
 // 3. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages of East Africa" (Cambridge Univ. Press)
 // 4. Rev. A. W. McGregor (1904) "English-Kikuyu Vocabulary" (SPCK, London)
 // 5. W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikuyu of British East Africa" (London)
-// 6. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Magic"
+// 6. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
 // ============================================================
 
 export interface KikuyuGrammarSection {
@@ -145,7 +145,7 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
     id: "kikuyu-cultural-lexicon-hobley",
     title: "Classical Agĩkũyũ Social, Judicial, Seasonal, Clan & Ritual Terminology (McGregor 1904, Routledge 1910 & Hobley 1910, 1922)",
     summary: "W. S. & K. Routledge (1910) and C. W. Hobley (1910, 1922) preserve the complete terminology of the 13 Agĩkũyũ clans (Mĩhĩrĩga), 10 generation ages (Rĩĩka), council system (Kiama), sacred ecology (Mũgumo), and oral literature (Ngano & Guso).",
-    content: `In *With a Prehistoric People: The Akikuyu of British East Africa* (1910) and *Bantu Beliefs and Magic* (1922, Glossary pp. 305–308), W. S. & K. Routledge and C. W. Hobley document the institutional vocabulary of Agĩkũyũ society:
+    content: `In *With a Prehistoric People: The Akikuyu of British East Africa* (1910) and *Bantu Beliefs and Customary Institutions* (1922, Glossary pp. 305–308), W. S. & K. Routledge and C. W. Hobley document the institutional vocabulary of Agĩkũyũ society:
 1. **The 13 Clans (*I-ri-ka* / *Mĩhĩrĩga*, Routledge 1910, pp. 20–23)**:
    - **1. A-ché-ra** (Thomson’s gazelle totem), **2. A-ga-chí-ku** (forbidden to work iron or act as circumcisors; zebra totem), **3. A-ga-thi-gí-a** (warthog totem), **4. Ai-cha-ka-mú-yo**, **5. Ai-rí-mu**, **6. A-ki-ú-ru / M'we-sá-ga / M'bú-ru** (forbidden to work iron; males can see and stop rain, possess the evil eye cured with spittle-mud on temple, throat, and stomach, and preserve woodland; wild game totem), **7. Am-bú-i** (fish totem), **8. An-gá-ri / Ai-the-ka-hú-no** (sheep’s stomach totem), **9. An-jí-ru** (elephant & birds totem), **10. An-gó-i**, **11. E-thá-ga**, **12. Ai-ze-ran'-du** (hippo totem), and **13. Ai-zi-e-gé-ni** (impala totem).
 2. **The 10 Chronological Ages (*Rĩĩka*), 17 Initiation Years (1891–1907) & Life Stages (Routledge 1910, pp. 8–11, 25, 141, 237–238)**:
@@ -159,7 +159,7 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
    - **Three Agricultural Cropping Seasons (p. 154)**: **Mwaka wa Njahi** (*Dolichos lablab* season), **Mwaka wa Mweri** (bulrush millet season), and **Mwaka wa Muheha / Mohea** (sorghum season).
    - **Two Rainy Seasons (pp. 142, 188)**: Greater rainy/cold season = **Kathano** (*Mwaka wa heho*); Lesser rainy season = **Mwaka wa kehu**.
    - **7-Day Relative Time Span (pp. 44, 114, 170)**: *Iyo* (day before yesterday) → *Ira* (yesterday) → *Reu / Omothi* (today) → *Rochio* (tomorrow) → *Oke* (day after tomorrow) → **Matukwatatu** (two days after tomorrow) → **Matukwana** (three days after tomorrow); Sunrise/East = **Itherero**, Sunset/West = **Naruguru / Gothoa** (pp. 54, 186).
-   - **Marriage, Inheritance & Law**: **Rorachio** (pl. *Marorachio*, bridewealth to bride's father), **Wathiomo** (ritual goat gift), **Kohikia / Kogurana** (to marry, of a man; *Mugurani* bridegroom) vs. **Kohika / Koguruo** (to marry, of a woman; *Muhiki / Muguruo* bride), **Magambo / Mugambo** (blood-money fine for murder; general fine = **Irehi**, pl. *Ma-*), **Muramati** (heir; *Oramati* inheritance/birthright), **Mungu** (pl. *Miungu*, underground war refuge cavern, p. 146), **Kithigethi** (pl. *I-*, firesticks; *Kothigetha mwaki* 'twirl fire with sticks', p. 66).`,
+   - **Marriage, Inheritance & Law**: **Rorachio** (pl. *Marorachio*, bridewealth to bride's father), **Wathiomo** (ritual goat gift), **Kohikia / Kogurana** (to marry, of a man; *Mugurani* bridegroom) vs. **Kohika / Koguruo** (to marry, of a woman; *Muhiki / Muguruo* bride), **Magambo / Mugambo** (customary restitution fine for grave offence; general fine = **Irehi**, pl. *Ma-*), **Muramati** (heir; *Oramati* inheritance/birthright), **Mungu** (pl. *Miungu*, underground war refuge cavern, p. 146), **Kithigethi** (pl. *I-*, firesticks; *Kothigetha mwaki* 'twirl fire with sticks', p. 66).`,
     examples: [
       { kikuyu: "Kiama • Chira • Muma • Gĩthathi (Kĩthathi)", english: "Council of elders • Legal case • Solemn oath • Sacred 7-holed oath-stone", explanation: "Classical Agĩkũyũ judicial terminology (Routledge 1910, pp. 195–220 & Hobley 1922)" },
       { kikuyu: "Ndemi • Iregi • Maina • Mwangi • Itwika", english: "Historical ruling generations • Generational transfer ceremony", explanation: "Generational governance lexicon (Routledge 1910, p. 9 & Hobley 1922)" },

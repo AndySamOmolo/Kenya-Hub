@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nairobi Matatu Routes — Interactive Route Finder | KenyaHub",
-  description: "Find matatu routes in Nairobi with interactive maps. Search by destination, view stages, fares, and operating hours for 30+ routes. Your guide to Nairobi public transport.",
-  keywords: ["matatu routes Nairobi", "matatu from CBD to Karen", "Nairobi public transport", "which matatu goes to Eastleigh"],
+  title: "Kenya Matatu Routes, Stages & Fares — Interactive Transit Guide",
+  description:
+    "Find verified matatu routes across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika with interactive maps, CBD stages, peak vs off-peak fares, and SACCO operators.",
+  keywords: [
+    "matatu routes Kenya",
+    "matatu routes Nairobi",
+    "Nairobi public transport stages",
+    "Mombasa Kisumu Nakuru Eldoret matatu fares",
+  ],
   openGraph: {
-    title: "Nairobi Matatu Routes — Interactive Route Finder | KenyaHub",
-    description: "Find matatu routes in Nairobi with interactive maps. Search by destination, view stages, fares, and operating hours.",
+    title: "Kenya Matatu Routes, Stages & Fares — Interactive Transit Guide | KenyaHub",
+    description:
+      "Find verified matatu routes across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika with interactive stage maps, fares, and SACCO details.",
     type: "website",
     locale: "en_KE",
     siteName: "KenyaHub",
