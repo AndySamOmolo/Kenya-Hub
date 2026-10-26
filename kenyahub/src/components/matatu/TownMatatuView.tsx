@@ -71,7 +71,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
           <BusFront className="w-8 h-8 text-gold flex-shrink-0 inline-block mr-2" />{townInfo.name} Matatu Routes, Stages &amp; Fares
         </h1>
         <p className="text-text-secondary text-sm max-w-3xl leading-relaxed">
-          {townInfo.description} Browse {routes.length} verified PSV corridors across {townInfo.name} ({townInfo.county} County), operated by {saccos.length} registered SACCOs with fares ranging from KES {minFare} to KES {maxFare}.
+          {townInfo.description} Browse {routes.length} verified PSV corridors across {townInfo.name} ({(townInfo as { county?: string }).county || townInfo.name} County), operated by {saccos.length} registered SACCOs with fares ranging from KES {minFare} to KES {maxFare}.
         </p>
       </div>
 
@@ -176,7 +176,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
       {/* Town Commuter Information Section */}
       <section className="mt-12 bg-bg-card border border-border rounded-2xl p-6 sm:p-8 space-y-4">
         <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-          Public Transport &amp; Matatu Guide for {townInfo.name} ({townInfo.county} County)
+          Public Transport &amp; Matatu Guide for {townInfo.name} ({(townInfo as { county?: string }).county || townInfo.name} County)
         </h2>
         <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
           Public Service Vehicles (PSVs) in <strong>{townInfo.name}</strong> operate along designated corridors regulated by the{" "}

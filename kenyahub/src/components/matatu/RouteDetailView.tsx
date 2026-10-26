@@ -164,7 +164,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
             </h2>
             <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
               <strong>Route {route.routeNumber} ({route.name})</strong> is a key public service vehicle (PSV) transit corridor in{" "}
-              <strong>{townInfo.name}</strong> ({townInfo.county} County). Matatus and buses operated by{" "}
+              <strong>{townInfo.name}</strong> ({(townInfo as { county?: string }).county || townInfo.name} County). Matatus and buses operated by{" "}
               <strong>{route.saccoName}</strong> board passengers at <strong>{route.terminusA}</strong> and travel through{" "}
               {route.stages.length} designated stages ({stageNamesList}) before terminating at{" "}
               <strong>{route.terminusB}</strong>.
