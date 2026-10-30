@@ -13,10 +13,10 @@ import langData from "@/data/kenya-languages.json";
 
 const tool = TOOLS.find((t) => t.slug === "kenya-languages")!;
 
-interface Language { name: string; family: string; speakers: number; percentage: number; counties: string[]; status: string; notes: string; }
-interface Family { id: string; name: string; color: string; description: string; percentage: number; }
+interface Language { name: string; family: string; speakers: number; percentage?: number; counties: string[]; status?: string; notes: string; }
+interface Family { id: string; name: string; color: string; description: string; percentage?: number; }
 
-const data = langData as { families: Family[]; languages: Language[]; notes: string[] };
+const data: { families: Family[]; languages: Language[]; notes: string[] } = langData;
 
 const faq = [
   { question: "How many languages are spoken in Kenya?", answer: "Kenya has over 42 indigenous language communities, broadly grouped into three major African language families: Bantu (~65% of population), Nilotic (~30%), and Cushitic (~4%). English and Kiswahili are the two official languages under the 2010 Constitution." },

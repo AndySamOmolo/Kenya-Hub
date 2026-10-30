@@ -263,6 +263,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -377,6 +378,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -499,6 +501,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -613,6 +616,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -735,6 +739,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -849,6 +854,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -971,6 +977,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -1085,6 +1092,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -1207,6 +1215,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -1321,6 +1330,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -1443,6 +1453,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -1557,6 +1568,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -1679,6 +1691,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -1793,6 +1806,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -1915,6 +1929,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {
@@ -2029,6 +2044,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Maasai (Maa) term to its verified English meaning:",
             "pairs": [
               {

@@ -254,6 +254,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -368,6 +369,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -490,6 +492,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -604,6 +607,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -726,6 +730,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -840,6 +845,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -962,6 +968,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -1076,6 +1083,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -1198,6 +1206,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -1312,6 +1321,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -1434,6 +1444,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {
@@ -1548,6 +1559,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Luhya (Luyia) term to its verified English meaning:",
             "pairs": [
               {

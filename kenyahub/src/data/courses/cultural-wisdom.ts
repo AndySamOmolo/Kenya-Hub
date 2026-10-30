@@ -2705,6 +2705,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -2819,6 +2820,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -2941,6 +2943,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3055,6 +3058,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3177,6 +3181,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3291,6 +3296,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3413,6 +3419,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3527,6 +3534,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3649,6 +3657,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3763,6 +3772,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3885,6 +3895,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -3999,6 +4010,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -4121,6 +4133,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -4235,6 +4248,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -4357,6 +4371,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -4471,6 +4486,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -4593,6 +4609,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -4707,6 +4724,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -4829,6 +4847,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -4943,6 +4962,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -5065,6 +5085,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -5179,6 +5200,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -5301,6 +5323,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -5415,6 +5438,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Swahili (Kiswahili) term to its verified English meaning:",
             "pairs": [
               {
@@ -5770,6 +5794,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -5884,6 +5909,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6006,6 +6032,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6120,6 +6147,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6242,6 +6270,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6356,6 +6385,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6478,6 +6508,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6592,6 +6623,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6714,6 +6746,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6828,6 +6861,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -6950,6 +6984,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -7064,6 +7099,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -7186,6 +7222,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -7300,6 +7337,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -7422,6 +7460,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -7536,6 +7575,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kalenjin term to its verified English meaning:",
             "pairs": [
               {
@@ -7852,6 +7892,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -7966,6 +8007,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -8088,6 +8130,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -8202,6 +8245,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -8324,6 +8368,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -8438,6 +8483,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -8560,6 +8606,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -8674,6 +8721,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -8796,6 +8844,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -8910,6 +8959,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -9032,6 +9082,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -9146,6 +9197,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -9268,6 +9320,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -9382,6 +9435,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -9504,6 +9558,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -9618,6 +9673,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -9740,6 +9796,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -9854,6 +9911,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Mijikenda (Giriama) term to its verified English meaning:",
             "pairs": [
               {
@@ -10124,6 +10182,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -10238,6 +10297,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -10360,6 +10420,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -10474,6 +10535,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -10596,6 +10658,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -10710,6 +10773,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -10832,6 +10896,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -10946,6 +11011,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -11068,6 +11134,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -11182,6 +11249,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -11304,6 +11372,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -11418,6 +11487,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -11540,6 +11610,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -11654,6 +11725,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Meru (Kĩmĩĩrũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -11950,6 +12022,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -12064,6 +12137,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -12186,6 +12260,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -12300,6 +12375,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -12422,6 +12498,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -12536,6 +12613,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -12658,6 +12736,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -12772,6 +12851,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -12894,6 +12974,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13008,6 +13089,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13130,6 +13212,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13244,6 +13327,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13366,6 +13450,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13480,6 +13565,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13602,6 +13688,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13716,6 +13803,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13838,6 +13926,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -13952,6 +14041,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Somali term to its verified English meaning:",
             "pairs": [
               {
@@ -14223,6 +14313,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -14337,6 +14428,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -14459,6 +14551,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -14573,6 +14666,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -14695,6 +14789,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -14809,6 +14904,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -14931,6 +15027,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -15045,6 +15142,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -15167,6 +15265,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -15281,6 +15380,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -15403,6 +15503,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -15517,6 +15618,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -15639,6 +15741,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -15753,6 +15856,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Embu (Kĩembu) term to its verified English meaning:",
             "pairs": [
               {
@@ -15982,6 +16086,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -16096,6 +16201,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -16218,6 +16324,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -16332,6 +16439,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -16454,6 +16562,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -16568,6 +16677,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -16690,6 +16800,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -16804,6 +16915,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -16926,6 +17038,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17040,6 +17153,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17162,6 +17276,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17276,6 +17391,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17398,6 +17514,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17512,6 +17629,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17634,6 +17752,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17748,6 +17867,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17870,6 +17990,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -17984,6 +18105,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taita (Kidawida) term to its verified English meaning:",
             "pairs": [
               {
@@ -18193,6 +18315,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -18307,6 +18430,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -18429,6 +18553,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -18543,6 +18668,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -18665,6 +18791,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -18779,6 +18906,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -18901,6 +19029,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -19015,6 +19144,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -19137,6 +19267,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -19251,6 +19382,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -19373,6 +19505,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -19487,6 +19620,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -19609,6 +19743,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -19723,6 +19858,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Taveta (Kitaveta) term to its verified English meaning:",
             "pairs": [
               {
@@ -19916,6 +20052,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20030,6 +20167,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20152,6 +20290,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20266,6 +20405,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20388,6 +20528,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20502,6 +20643,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20624,6 +20766,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20738,6 +20881,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20860,6 +21004,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -20974,6 +21119,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -21096,6 +21242,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -21210,6 +21357,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -21332,6 +21480,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -21446,6 +21595,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokomo (Kipfokomo) term to its verified English meaning:",
             "pairs": [
               {
@@ -21679,6 +21829,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -21793,6 +21944,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -21915,6 +22067,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22029,6 +22182,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22151,6 +22305,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22265,6 +22420,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22387,6 +22543,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22501,6 +22658,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22623,6 +22781,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22737,6 +22896,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22859,6 +23019,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -22973,6 +23134,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -23095,6 +23257,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -23209,6 +23372,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -23331,6 +23495,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -23445,6 +23610,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -23567,6 +23733,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -23681,6 +23848,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Borana (Oromo) term to its verified English meaning:",
             "pairs": [
               {
@@ -23939,6 +24107,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24053,6 +24222,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24175,6 +24345,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24289,6 +24460,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24411,6 +24583,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24525,6 +24698,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24647,6 +24821,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24761,6 +24936,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24883,6 +25059,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -24997,6 +25174,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -25119,6 +25297,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -25233,6 +25412,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -25355,6 +25535,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -25469,6 +25650,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Rendille (Afi Ren'dille) term to its verified English meaning:",
             "pairs": [
               {
@@ -25666,6 +25848,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -25780,6 +25963,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -25902,6 +26086,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26016,6 +26201,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26138,6 +26324,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26252,6 +26439,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26374,6 +26562,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26488,6 +26677,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26610,6 +26800,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26724,6 +26915,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26846,6 +27038,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -26960,6 +27153,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -27082,6 +27276,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -27196,6 +27391,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Samburu (Sampur) term to its verified English meaning:",
             "pairs": [
               {
@@ -27391,6 +27587,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -27505,6 +27702,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -27627,6 +27825,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -27741,6 +27940,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -27863,6 +28063,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -27977,6 +28178,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -28099,6 +28301,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -28213,6 +28416,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -28335,6 +28539,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -28449,6 +28654,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -28571,6 +28777,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -28685,6 +28892,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -28807,6 +29015,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -28921,6 +29130,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Ilchamus (Njemps) term to its verified English meaning:",
             "pairs": [
               {
@@ -29121,6 +29331,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -29235,6 +29446,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -29357,6 +29569,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -29471,6 +29684,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -29593,6 +29807,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -29707,6 +29922,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -29829,6 +30045,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -29943,6 +30160,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -30065,6 +30283,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -30179,6 +30398,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -30301,6 +30521,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -30415,6 +30636,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -30537,6 +30759,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -30651,6 +30874,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -30773,6 +30997,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -30887,6 +31112,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -31009,6 +31235,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {
@@ -31123,6 +31350,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Pokot (Pökoot) term to its verified English meaning:",
             "pairs": [
               {

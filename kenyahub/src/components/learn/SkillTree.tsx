@@ -201,10 +201,10 @@ export default function SkillTree({
               <span>
                 Daily XP:{" "}
                 <strong className="text-text-primary">
-                  {progress.dailyXp}/{progress.dailyGoal}
+                  {progress.todayXp}/{progress.dailyGoal}
                 </strong>
               </span>
-              {progress.dailyXp >= progress.dailyGoal && (
+              {progress.todayXp >= progress.dailyGoal && (
                 <span className="rounded-full bg-kenya-green/20 px-2 py-0.5 text-[0.6rem] font-semibold text-kenya-green-light">
                   ✓ Goal Met!
                 </span>
@@ -242,7 +242,7 @@ export default function SkillTree({
                 <Crown className="h-4 w-4 text-gold" /> Achievements &amp; Ranks
               </h3>
               <ExpandablePillRow className="w-auto">
-                {["all", "learning", "streak", "mastery", "speed"].map((cat) => (
+                {["all", "lessons", "streak", "vocabulary", "mastery"].map((cat) => (
                   <button
                     key={cat}
                     onClick={() => setAchCategory(cat)}
@@ -296,7 +296,7 @@ export default function SkillTree({
                     <div className="text-xl flex items-center justify-center"><DynamicIcon emoji={ach.icon} className="w-5 h-5" /></div>
                     <div className="min-w-0 flex-1">
                       <div className="text-xs font-bold text-text-primary break-words">
-                        {ach.title}
+                        {ach.name}
                       </div>
                       <div className="text-[0.6rem] text-text-muted leading-tight">
                         {ach.description}
@@ -353,7 +353,7 @@ export default function SkillTree({
       </div>
 
       <div className="space-y-6">
-        {units.map((unit) => {
+        {units.map((unit, uIdx) => {
           const isExpanded = expandedUnits[unit.id] !== false;
           const unitCompleted = unit.skills.filter(
             (sk) => (progress.skillLevels[sk.id] || 0) >= 1
@@ -376,9 +376,9 @@ export default function SkillTree({
                 <div className="flex items-center gap-3">
                   <div
                     className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-bold text-white shadow-sm"
-                    style={{ backgroundColor: unit.color }}
+                    style={{ backgroundColor: unit.color || config.color }}
                   >
-                    U{unit.number}
+                    U{unit.number ?? uIdx + 1}
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
@@ -405,14 +405,14 @@ export default function SkillTree({
               {isExpanded && (
                 <div className="divide-y divide-border/50 p-3 sm:p-4 space-y-3">
                   {unit.skills.map((skill, sIdx) => {
-                    const prevIds =
-                      sIdx === 0
-                        ? []
-                        : [unit.skills[sIdx - 1].id];
-                    const unlocked =
-                      isAllUnlocked ||
-                      (unit.number === 1 && sIdx === 0) ||
-                      isSkillUnlocked(skill.id, prevIds, progress);
+                    const unlocked = isSkillUnlocked(
+                      skill.id,
+                      sIdx,
+                      uIdx,
+                      progress.skillLevels,
+                      units,
+                      isAllUnlocked
+                    );
 
                     const currentLevel = progress.skillLevels[skill.id] || 0;
                     const isMastered = currentLevel >= MAX_SKILL_LEVEL;
@@ -521,22 +521,22 @@ export default function SkillTree({
                         {/* Tip Callout + Preview Vocabulary */}
                         {unlocked && (
                           <div className="mt-2.5 pl-0 sm:pl-15 space-y-2">
-                            {skill.tip && (
+                            {(skill.tips || skill.tip) && (
                               <div className="flex items-start gap-2 rounded-lg bg-bg-elevated/60 border border-border/50 px-3 py-2 text-[0.7rem] text-text-secondary">
                                 <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold mt-0.5" />
-                                <span>{skill.tip}</span>
+                                <span>{skill.tips || skill.tip}</span>
                               </div>
                             )}
 
                             {/* Word chips preview */}
                             <div className="flex flex-wrap gap-1.5">
-                              {skill.words.slice(0, 6).map((w) => {
+                              {skill.words.slice(0, 6).map((w, wIdx) => {
                                 const learned = progress.wordsLearned.includes(
-                                  w.id
+                                  w.target
                                 );
                                 return (
                                   <span
-                                    key={w.id}
+                                    key={`${w.target}-${wIdx}`}
                                     className={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[0.65rem] ${
                                       learned
                                         ? "border-kenya-green/30 bg-kenya-green/10 text-text-primary"
@@ -544,10 +544,10 @@ export default function SkillTree({
                                     }`}
                                   >
                                     <strong className="text-gold">
-                                      {w.luo}
+                                      {w.target}
                                     </strong>
                                     <span className="text-text-muted">·</span>
-                                    <span>{w.english}</span>
+                                    <span>{w.source}</span>
                                   </span>
                                 );
                               })}

@@ -253,6 +253,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -367,6 +368,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -489,6 +491,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -603,6 +606,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -725,6 +729,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -839,6 +844,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -961,6 +967,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -1075,6 +1082,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -1197,6 +1205,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -1311,6 +1320,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -1433,6 +1443,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {
@@ -1547,6 +1558,7 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kisii (Ekegusii) term to its verified English meaning:",
             "pairs": [
               {

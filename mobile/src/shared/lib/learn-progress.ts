@@ -394,5 +394,6 @@ export function getXpLevel(xp: number) {
   const progressToNext = next
     ? ((xp - current.minXp) / (next.minXp - current.minXp)) * 100
     : 100;
-  return { current, next, progressToNext: Math.min(100, progressToNext) };
+  const clamped = Math.min(100, progressToNext);
+  return { current, next, progressToNext: clamped, progressPercent: clamped };
 }

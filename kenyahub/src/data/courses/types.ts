@@ -15,6 +15,7 @@ export interface LanguageConfig {
   speechLocale: string;
   description: string;
   color: string;
+  flag?: string;
   sources?: string[];
 }
 
@@ -33,6 +34,8 @@ export interface CourseUnit {
   title: string;
   description: string;
   icon: string;
+  number?: number;
+  color?: string;
   skills: CourseSkill[];
 }
 
@@ -49,6 +52,7 @@ export interface CourseSkill {
   authoredExercises?: Exercise[];
   /** Grammar/cultural tips shown before the lesson */
   tips?: string;
+  tip?: string;
   /** Cultural note shown after completion */
   culturalNote?: string;
 }
@@ -198,16 +202,16 @@ export const EXERCISES_PER_LESSON = 15;
 export const MAX_SKILL_LEVEL = 5;
 
 export const LEVELS = [
-  { name: 'Bronze I • Learner', icon: '🥉', minXp: 0, color: '#CD7F32' },
-  { name: 'Bronze II • Initiate', icon: '🛡️', minXp: 150, color: '#D99058' },
-  { name: 'Silver I • Speaker', icon: '🥈', minXp: 350, color: '#C0C0C0' },
-  { name: 'Silver II • Storyteller', icon: '📜', minXp: 700, color: '#94A3B8' },
-  { name: 'Gold I • Scholar', icon: '🥇', minXp: 1200, color: '#FFD700' },
-  { name: 'Gold II • Orator', icon: '🎙️', minXp: 2000, color: '#F59E0B' },
-  { name: 'Sapphire • Keeper of Wisdom', icon: '💎', minXp: 3200, color: '#0EA5E9' },
-  { name: 'Emerald • Council Sage', icon: '🌿', minXp: 5000, color: '#10B981' },
-  { name: 'Ruby • Master of Tongues', icon: '🔥', minXp: 8000, color: '#EF4444' },
-  { name: 'Diamond • Elder of the Council', icon: '👑', minXp: 12000, color: '#B9F2FF' },
+  { level: 1, title: 'Bronze I • Learner', name: 'Bronze I • Learner', icon: '🥉', minXp: 0, color: '#CD7F32' },
+  { level: 2, title: 'Bronze II • Initiate', name: 'Bronze II • Initiate', icon: '🛡️', minXp: 150, color: '#D99058' },
+  { level: 3, title: 'Silver I • Speaker', name: 'Silver I • Speaker', icon: '🥈', minXp: 350, color: '#C0C0C0' },
+  { level: 4, title: 'Silver II • Storyteller', name: 'Silver II • Storyteller', icon: '📜', minXp: 700, color: '#94A3B8' },
+  { level: 5, title: 'Gold I • Scholar', name: 'Gold I • Scholar', icon: '🥇', minXp: 1200, color: '#FFD700' },
+  { level: 6, title: 'Gold II • Orator', name: 'Gold II • Orator', icon: '🎙️', minXp: 2000, color: '#F59E0B' },
+  { level: 7, title: 'Sapphire • Keeper of Wisdom', name: 'Sapphire • Keeper of Wisdom', icon: '💎', minXp: 3200, color: '#0EA5E9' },
+  { level: 8, title: 'Emerald • Council Sage', name: 'Emerald • Council Sage', icon: '🌿', minXp: 5000, color: '#10B981' },
+  { level: 9, title: 'Ruby • Master of Tongues', name: 'Ruby • Master of Tongues', icon: '🔥', minXp: 8000, color: '#EF4444' },
+  { level: 10, title: 'Diamond • Elder of the Council', name: 'Diamond • Elder of the Council', icon: '👑', minXp: 12000, color: '#B9F2FF' },
 ] as const;
 
 export const ACHIEVEMENTS: Achievement[] = [

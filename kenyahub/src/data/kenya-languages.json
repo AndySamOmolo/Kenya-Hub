@@ -5,25 +5,29 @@
       "id": "bantu",
       "name": "Bantu",
       "color": "#2FA463",
-      "description": "Largest language family in Kenya (~65% of population). Spread across central, western, and coastal regions."
+      "description": "Largest language family in Kenya (~65% of population). Spread across central, western, and coastal regions.",
+      "percentage": 65
     },
     {
       "id": "nilotic",
       "name": "Nilotic",
       "color": "#C8961E",
-      "description": "Second largest family (~30%). Includes Plains Nilotes (Maasai), Highland Nilotes (Kalenjin), and River-Lake Nilotes (Luo)."
+      "description": "Second largest family (~30%). Includes Plains Nilotes (Maasai), Highland Nilotes (Kalenjin), and River-Lake Nilotes (Luo).",
+      "percentage": 30
     },
     {
       "id": "cushitic",
       "name": "Cushitic",
       "color": "#BE2126",
-      "description": "Found in northern and eastern Kenya (~3%). Includes Somali, Rendille, Oromo, and Borana."
+      "description": "Found in northern and eastern Kenya (~3%). Includes Somali, Rendille, Oromo, and Borana.",
+      "percentage": 3
     },
     {
       "id": "other",
       "name": "Other",
       "color": "#1A8BD1",
-      "description": "Includes Swahili (Bantu-based lingua franca), English (official), and minor language isolates."
+      "description": "Includes Swahili (Bantu-based lingua franca), English (official), and minor language isolates.",
+      "percentage": 2
     }
   ],
   "languages": [

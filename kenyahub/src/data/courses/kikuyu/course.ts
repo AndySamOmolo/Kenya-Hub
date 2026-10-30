@@ -555,6 +555,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -669,6 +670,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -791,6 +793,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -905,6 +908,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -1027,6 +1031,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -1141,6 +1146,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -1263,6 +1269,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -1377,6 +1384,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -1499,6 +1507,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -1613,6 +1622,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -1735,6 +1745,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {
@@ -1849,6 +1860,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Kikuyu (Gĩkũyũ) term to its verified English meaning:",
             "pairs": [
               {

@@ -228,7 +228,7 @@ export default function LearnPage() {
                       className="rounded-xl border border-border bg-bg-card/50 p-4 opacity-60"
                     >
                       <div className="flex items-center gap-2.5">
-                        <span className="text-2xl"><DynamicIcon emoji={lang.flag} className="w-6 h-6" /></span>
+                        <span className="text-2xl"><DynamicIcon emoji={lang.flag || "🗣️"} className="w-6 h-6" /></span>
                         <div>
                           <div className="text-xs font-bold text-text-primary">
                             {lang.name}

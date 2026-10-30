@@ -252,6 +252,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -366,6 +367,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -488,6 +490,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -602,6 +605,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -724,6 +728,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -838,6 +843,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -960,6 +966,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -1074,6 +1081,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -1196,6 +1204,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -1310,6 +1319,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -1432,6 +1442,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
@@ -1546,6 +1557,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
+            "correctAnswer": "",
             "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
             "pairs": [
               {
