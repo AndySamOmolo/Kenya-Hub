@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
@@ -84,10 +84,15 @@ export default function ToolDetailScreen() {
   const [saved, setSaved] = useState(false);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
   const scrollRef = useRef<ScrollView>(null);
-  const scrollToTop = () => {
+  const scrollToTop = useCallback(() => {
     scrollRef.current?.scrollTo({ y: 0, animated: false });
     requestAnimationFrame(() => scrollRef.current?.scrollTo({ y: 0, animated: false }));
-  };
+    setTimeout(() => scrollRef.current?.scrollTo({ y: 0, animated: false }), 50);
+  }, []);
+
+  useEffect(() => {
+    scrollToTop();
+  }, [slug, scrollToTop]);
 
   useEffect(() => {
     if (tool) {
@@ -189,39 +194,39 @@ export default function ToolDetailScreen() {
       case "mobile-number-prefix":
         return <MobilePrefixFinder />;
       case "public-holidays":
-        return <PublicHolidaysTool />;
+        return <PublicHolidaysTool onScrollToTop={scrollToTop} />;
       case "traffic-fines":
-        return <TrafficFinesTool />;
+        return <TrafficFinesTool onScrollToTop={scrollToTop} />;
       case "kenya-postal-codes":
-        return <PostalCodesTool />;
+        return <PostalCodesTool onScrollToTop={scrollToTop} />;
       case "driving-license-guide":
-        return <DrivingLicenseTool />;
+        return <DrivingLicenseTool onScrollToTop={scrollToTop} />;
       case "passport-id-fees":
         return <PassportFeesTool />;
       case "ward-constituency-finder":
-        return <WardConstituencyFinderTool />;
+        return <WardConstituencyFinderTool onScrollToTop={scrollToTop} />;
       case "cbc-grade-age":
         return <CbcGradeAgeTool />;
       case "cbc-curriculum":
-        return <CbcCurriculumTool />;
+        return <CbcCurriculumTool onScrollToTop={scrollToTop} />;
       case "kuccps-cluster-calculator":
-        return <KuccpsClusterTool />;
+        return <KuccpsClusterTool onScrollToTop={scrollToTop} />;
       case "kcse-grade-calculator":
         return <KcseCalculatorTool />;
       case "kikuyu-proverbs":
         return <LanguageLearningTool onScrollToTop={scrollToTop} />;
       case "kenyan-translator":
-        return <KenyanTranslatorTool />;
+        return <KenyanTranslatorTool onScrollToTop={scrollToTop} />;
       case "learn":
         return <LanguageLearningTool onScrollToTop={scrollToTop} />;
       case "kcse-school-rankings":
-        return <KcseRankingsTool />;
+        return <KcseRankingsTool onScrollToTop={scrollToTop} />;
       case "school-terms":
-        return <SchoolTermsTool />;
+        return <SchoolTermsTool onScrollToTop={scrollToTop} />;
       case "matatu-routes":
-        return <MatatuRoutesTool />;
+        return <MatatuRoutesTool onScrollToTop={scrollToTop} />;
       default:
-        return <ReferenceDirectoryTool slug={tool.slug} />;
+        return <ReferenceDirectoryTool slug={tool.slug} onScrollToTop={scrollToTop} />;
     }
   };
 

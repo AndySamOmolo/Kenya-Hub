@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useState, useMemo } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   Platform,
   StyleSheet,
@@ -33,6 +33,10 @@ export default function CountyScreen() {
   const router = useRouter();
   const { theme } = useTheme();
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
+  const scrollRef = useRef<ScrollView>(null);
+  useEffect(() => {
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
+  }, [activeTab]);
   const [query, setQuery] = useState("");
   const [sortBy, setSortBy] = useState<
     "code" | "name" | "population" | "area" | "budget" | "rainfall"
@@ -252,6 +256,7 @@ export default function CountyScreen() {
       </View>
 
       <ScrollView
+        ref={scrollRef}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
       >

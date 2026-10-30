@@ -1,7 +1,8 @@
 "use client";
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import countiesData from "@/data/counties.json";
@@ -19,6 +20,11 @@ const faq = [
 
 export default function WardConstituencyFinderPage() {
   const [selectedCounty, setSelectedCounty] = useState("");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [selectedCounty]);
 
   const county = useMemo(
     () => countiesData.counties.find((c) => c.slug === selectedCounty),

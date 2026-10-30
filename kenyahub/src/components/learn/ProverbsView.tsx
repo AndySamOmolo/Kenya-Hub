@@ -2,7 +2,8 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import SearchInput from "@/components/ui/SearchInput";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import { Search, Shuffle, Eye, EyeOff, BookOpen, Compass } from "lucide-react";
 import kikuyuProverbsData from "@/data/kikuyu-proverbs.json";
 import { luoProverbs, type ProverbEntry } from "@/data/courses/luo/proverbs";
@@ -54,6 +55,15 @@ export default function ProverbsView({
   const [revealedIds, setRevealedIds] = useState<Record<string, boolean>>({});
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 24;
+  const didMountRef = useRef(false);
+
+  useEffect(() => {
+    if (!didMountRef.current) {
+      didMountRef.current = true;
+      return;
+    }
+    scrollToTopIfScrolled(200);
+  }, [selectedLang, luoSubTab, selectedCategory]);
 
   useEffect(() => {
     if (lockedLanguageId) {

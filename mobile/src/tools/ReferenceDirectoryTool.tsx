@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import {
   StyleSheet,
   Text,
@@ -44,7 +44,7 @@ const HOSPITAL_LEVELS_INFO = [
   { level: "Level 6", name: "National Teaching & Referral", desc: "KNH, MTRH, KUTRRH — tertiary sub-specialty & national referral care" },
 ];
 
-export function ReferenceDirectoryTool({ slug }: { slug: string }) {
+export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; onScrollToTop?: () => void }) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [search, setSearch] = useState("");
 
@@ -69,6 +69,25 @@ export function ReferenceDirectoryTool({ slug }: { slug: string }) {
 
   // 4. Forest Reserves Hiking toggle
   const [hikingOnly, setHikingOnly] = useState(false);
+  const didMountRef = useRef(false);
+
+  useEffect(() => {
+    setSearch("");
+    setFilterA("All");
+    setFilterB("All");
+    setFilterC("All");
+    setSortBy("default");
+    setSortAsc(false);
+    onScrollToTop?.();
+  }, [slug, onScrollToTop]);
+
+  useEffect(() => {
+    if (!didMountRef.current) {
+      didMountRef.current = true;
+      return;
+    }
+    onScrollToTop?.();
+  }, [filterA, filterB, filterC, cropRegion, ipType, hikingOnly, onScrollToTop]);
 
   // ─── TOOL 1: CHILD GROWTH & VACCINATION SCHEDULE ───
   if (slug === "child-growth-schedule") {

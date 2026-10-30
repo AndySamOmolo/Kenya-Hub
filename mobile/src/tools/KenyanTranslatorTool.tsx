@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
-import React, { useState, useMemo, useCallback, useEffect } from "react";
+import React, { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import {
   StyleSheet,
   Text,
@@ -153,7 +153,7 @@ function extractNormalizedTerms(raw: string): string[] {
   return Array.from(out);
 }
 
-export function KenyanTranslatorTool() {
+export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
 
   const [viewMode, setViewMode] = useState<"translate" | "compare" | "browse">(
@@ -163,6 +163,15 @@ export function KenyanTranslatorTool() {
   const [targetLanguage, setTargetLanguage] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string>("greetings");
+  const didMountRef = useRef(false);
+
+  useEffect(() => {
+    if (!didMountRef.current) {
+      didMountRef.current = true;
+      return;
+    }
+    onScrollToTop?.();
+  }, [viewMode, targetLanguage, sourceLanguage, activeCategory, onScrollToTop]);
 
   const [compareLanguages, setCompareLanguages] = useState<string[]>(() =>
     ALL_DICTS.map((d) => d.languageId)

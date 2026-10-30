@@ -3,7 +3,8 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
@@ -22,6 +23,11 @@ const faq = [
 export default function KenyanFoodNutritionPage() {
   const [search, setSearch] = useState("");
   const [catFilter, setCatFilter] = useState("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [catFilter]);
   const [sortKey, setSortKey] = useState<SortKey>("name");
   const [sortAsc, setSortAsc] = useState(true);
 

@@ -4,7 +4,8 @@ import SearchInput from "@/components/ui/SearchInput";
 import { getSourcesForLanguage, LANGUAGE_SOURCES } from "@/data/language-sources";
 import { COURSE_REGISTRY } from "@/data/courses/registry";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import { ChevronDown, BookOpen } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
@@ -61,6 +62,11 @@ function normalizeLanguageId(languageName: string): string {
 export default function KenyaLanguagesPage() {
   const [search, setSearch] = useState("");
   const [familyFilter, setFamilyFilter] = useState("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [familyFilter]);
 
   const filtered = useMemo(() => {
     return data.languages.filter((l) => {

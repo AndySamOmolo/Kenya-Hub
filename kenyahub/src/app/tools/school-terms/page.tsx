@@ -1,7 +1,8 @@
 "use client";
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import termsData from "@/data/school-terms.json";
@@ -36,6 +37,11 @@ function isCurrentHoliday(start: string, end: string) {
 
 export default function SchoolTermsPage() {
   const [selectedYear, setSelectedYear] = useState("2026");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [selectedYear]);
   const years = Object.keys(termsData.years);
   const yearData = (termsData.years as Record<string, typeof termsData.years["2025"]>)[selectedYear];
 

@@ -1,7 +1,8 @@
 "use client";
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import parksData from "@/data/national-parks.json";
@@ -24,6 +25,11 @@ export default function NationalParksDirectoryPage() {
   const [search, setSearch] = useState("");
   const [regionFilter, setRegionFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [regionFilter, typeFilter]);
 
   const filtered = useMemo(() => {
     return parksData.parks.filter((p) => {

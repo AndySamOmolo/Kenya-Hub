@@ -3,7 +3,8 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import cropData from "@/data/crop-planting-calendar.json";
@@ -32,6 +33,11 @@ const monthColors = [
 export default function CropPlantingCalendarPage() {
   const [regionFilter, setRegionFilter] = useState("highlands");
   const [categoryFilter, setCategoryFilter] = useState("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [regionFilter, categoryFilter]);
   const [search, setSearch] = useState("");
 
   const categories = useMemo(() => {

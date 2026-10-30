@@ -471,7 +471,7 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
     requestAnimationFrame(() => {
       lessonScrollRef.current?.scrollTo({ y: 0, animated: false });
     });
-  }, [lessonStage, learnCardIdx, exIndex, activeTab, selectedLangId, activeGame, onScrollToTop]);
+  }, [lessonStage, learnCardIdx, exIndex, activeTab, selectedLangId, activeGame, wisdomLang, luoSubTab, proverbCategory, proverbPage, cardMode, onScrollToTop]);
 
   // ── Submit Current Exercise Answer ──
   const handleCheckExercise = useCallback(() => {

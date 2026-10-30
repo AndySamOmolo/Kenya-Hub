@@ -1,7 +1,8 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { scrollToPageTop } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
@@ -19,6 +20,11 @@ const faq = [
 
 export default function CBCCurriculumPage() {
   const [selectedLevel, setSelectedLevel] = useState(cbcData.levels[0].id);
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToPageTop();
+  }, [selectedLevel]);
   const level = cbcData.levels.find((l) => l.id === selectedLevel)!;
 
   return (

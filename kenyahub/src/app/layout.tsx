@@ -7,6 +7,7 @@ import Footer from "@/components/nav/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import CookieConsent from "@/components/CookieConsent";
 import AdSenseLoader from "@/components/AdSenseLoader";
+import ScrollReset from "@/components/ScrollReset";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -151,7 +152,6 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${outfit.variable}`}
-      data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
       <head suppressHydrationWarning>
@@ -167,6 +167,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-gold focus:text-black focus:font-bold focus:text-xs">Skip to main content</a>
         <ThemeProvider>
+          <ScrollReset />
           <Navbar />
           <main id="main-content" className="flex-1 w-full min-w-0 max-w-full overflow-x-hidden">{children}</main>
           <Footer />

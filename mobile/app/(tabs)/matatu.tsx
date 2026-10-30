@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useState, useMemo } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "expo-router";
 import {
   Platform,
@@ -158,6 +158,10 @@ export default function MatatuScreen() {
   const [search, setSearch] = useState("");
   const [selectedTown, setSelectedTown] = useState<string>("all");
   const [saccoFilter, setSaccoFilter] = useState<string>("all");
+  const scrollRef = useRef<ScrollView>(null);
+  useEffect(() => {
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
+  }, [selectedTown, saccoFilter]);
   const [sortBy, setSortBy] = useState<"route" | "stages" | "name">("route");
 
   const towns = (matatuData as any).towns || [];
@@ -401,6 +405,7 @@ export default function MatatuScreen() {
       </View>
 
       <ScrollView
+        ref={scrollRef}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >

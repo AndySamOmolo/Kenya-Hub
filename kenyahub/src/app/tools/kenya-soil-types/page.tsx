@@ -1,7 +1,8 @@
 "use client";
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { scrollToPageTop } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import soilData from "@/data/soil-types.json";
@@ -17,6 +18,11 @@ const faq = [
 
 export default function KenyaSoilTypesPage() {
   const [selectedSoil, setSelectedSoil] = useState<string | null>(null);
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToPageTop();
+  }, [selectedSoil]);
 
   return (
     <ToolShell tool={tool} faq={faq}>

@@ -1,7 +1,8 @@
 "use client";
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
@@ -17,6 +18,11 @@ export default function ForestReservesPage() {
   const [search, setSearch] = useState("");
   const [ecoFilter, setEcoFilter] = useState("all");
   const [hikingOnly, setHikingOnly] = useState(false);
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [ecoFilter, hikingOnly]);
   const filtered = useMemo(() => {
     return data.forests.filter((f) => {
       if (ecoFilter !== "all" && !f.ecosystem.toLowerCase().includes(ecoFilter.toLowerCase())) return false;

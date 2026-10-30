@@ -1,7 +1,8 @@
 "use client";
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import holidaysData from "@/data/public-holidays.json";
@@ -49,6 +50,11 @@ function generateICS(holidays: { date: string; name: string }[], year: string) {
 
 export default function PublicHolidaysPage() {
   const [selectedYear, setSelectedYear] = useState("2026");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [selectedYear]);
   const years = Object.keys(holidaysData.holidays);
   const holidays = (holidaysData.holidays as Record<string, { date: string; name: string; description: string }[]>)[selectedYear] || [];
 

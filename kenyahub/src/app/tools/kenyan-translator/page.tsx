@@ -36,6 +36,7 @@ import tavetaDict from "@/data/dictionaries/taveta.json";
 
 import langData from "@/data/kenya-languages.json";
 import { addContribution } from "@/lib/contributions";
+import { scrollToPageTop, scrollToTopIfScrolled } from "@/lib/scroll";
 
 const tool = TOOLS.find((t) => t.slug === "kenyan-translator")!;
 
@@ -773,6 +774,10 @@ export default function KenyanTranslatorPage() {
 
   useEffect(() => { getRandomWord(); }, [getRandomWord]);
 
+  useEffect(() => {
+    scrollToPageTop();
+  }, [viewMode]);
+
   const isPivotMode = sourceLanguage !== "english" && targetLanguage !== "english";
 
   return (
@@ -812,7 +817,7 @@ export default function KenyanTranslatorPage() {
             return (
               <button
                 key={mode.id}
-                onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
+                onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); scrollToPageTop(); }}
                 className={`shrink-0 whitespace-nowrap rounded-full px-3.5 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
@@ -1121,7 +1126,7 @@ export default function KenyanTranslatorPage() {
                       return (
                         <button
                           key={cat.id}
-                          onClick={() => setActiveCategory(active ? null : cat.id)}
+                          onClick={() => { setActiveCategory(active ? null : cat.id); scrollToTopIfScrolled(250); }}
                           disabled={!hasEntries}
                           className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
                             active
@@ -1447,7 +1452,7 @@ export default function KenyanTranslatorPage() {
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <button
                           type="button"
-                          onClick={() => { setViewMode("translate"); setTargetLanguage(dict.languageId); setSourceLanguage("english"); }}
+                          onClick={() => { const firstCat = dict.categories.find((c) => c.entries.length > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToPageTop(); }}
                           className="text-left group-hover:text-gold transition-colors cursor-pointer"
                         >
                           <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{dict.languageName}</h4>
@@ -1474,7 +1479,7 @@ export default function KenyanTranslatorPage() {
                     <div className="flex items-center justify-between gap-2 mt-3 pt-2.5 border-t border-border/60">
                       <button
                         type="button"
-                        onClick={() => { setViewMode("translate"); setTargetLanguage(dict.languageId); setSourceLanguage("english"); }}
+                        onClick={() => { const firstCat = dict.categories.find((c) => c.entries.length > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToPageTop(); }}
                         className="text-[0.65rem] font-medium text-text-secondary hover:text-gold flex items-center gap-1 transition-colors cursor-pointer"
                       >
                         <span>Translate</span>

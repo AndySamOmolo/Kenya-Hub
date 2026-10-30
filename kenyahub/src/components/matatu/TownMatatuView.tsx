@@ -2,7 +2,8 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { BusFront, Check } from "lucide-react";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
@@ -17,6 +18,11 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
 
   const [search, setSearch] = useState("");
   const [saccoFilter, setSaccoFilter] = useState("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [saccoFilter]);
 
   const saccos = useMemo(() => {
     return Array.from(new Set(routes.map((r) => r.saccoName))).sort();

@@ -2,7 +2,8 @@
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import data from "@/data/livestock-prices.json";
@@ -16,6 +17,11 @@ const faq = [
 export default function LivestockPricesPage() {
   const [typeFilter, setTypeFilter] = useState("all");
   const [marketFilter, setMarketFilter] = useState("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [typeFilter, marketFilter]);
   const filtered = useMemo(() => {
     return data.livestock.filter((l) => typeFilter === "all" || l.type === typeFilter).map((l) => ({
       ...l, prices: l.prices.filter((p) => marketFilter === "all" || p.market === marketFilter),

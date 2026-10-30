@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import {
   StyleSheet,
   Text,
@@ -492,7 +492,7 @@ function getProverbCategories(p: any): string[] {
   return matched;
 }
 
-export function KikuyuProverbsTool() {
+export function KikuyuProverbsTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [q, setQ] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -500,6 +500,11 @@ export function KikuyuProverbsTool() {
   const [sortBy, setSortBy] = useState<"id-asc" | "id-desc" | "alpha">("id-asc");
   const [showGuide, setShowGuide] = useState(false);
   const [page, setPage] = useState(1);
+  const _mountRef = useRef(false);
+  useEffect(() => {
+    if (!_mountRef.current) { _mountRef.current = true; return; }
+    onScrollToTop?.();
+  }, [page, selectedCategory, onlyWithEquivalent, sortBy, onScrollToTop]);
   const pageSize = 25;
 
   const proverbs = Array.isArray(proverbsData) ? proverbsData : [];
@@ -799,7 +804,7 @@ export function KikuyuProverbsTool() {
 }
 
 /** 4. KCSE Top Schools Rankings */
-export function KcseRankingsTool() {
+export function KcseRankingsTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const schools: any[] = (rankingsData as any).schools || [];
   const gradeDistribution: any[] = (rankingsData as any).gradeDistribution || [];
@@ -807,6 +812,11 @@ export function KcseRankingsTool() {
   const [search, setSearch] = useState("");
   const [selectedCounty, setSelectedCounty] = useState("All");
   const [selectedType, setSelectedType] = useState("All");
+  const _mountRef = useRef(false);
+  useEffect(() => {
+    if (!_mountRef.current) { _mountRef.current = true; return; }
+    onScrollToTop?.();
+  }, [selectedCounty, selectedType, onScrollToTop]);
   const [sortBy, setSortBy] = useState<"mean" | "aGrades" | "change">("mean");
 
   const counties = useMemo(() => {
@@ -1018,7 +1028,7 @@ export function KcseRankingsTool() {
 }
 
 /** 5. School Terms Calendar */
-export function SchoolTermsTool() {
+export function SchoolTermsTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const availableYears = Object.keys((termsData as any).years || { "2025": {}, "2026": {}, "2027": {} });
   const [selectedYear, setSelectedYear] = useState<string>(

@@ -32,6 +32,7 @@ import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
 import { getSourcesForLanguage } from "@/data/language-sources";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { scrollToPageTop } from "@/lib/scroll";
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
@@ -76,7 +77,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         document.documentElement.style.scrollBehavior = prev;
       }, 60);
     }
-  }, [view, activeLesson]);
+  }, [view, activeLesson, selectedUnitFilter, languageId]);
 
   useEffect(() => {
     if (!languageId) return;

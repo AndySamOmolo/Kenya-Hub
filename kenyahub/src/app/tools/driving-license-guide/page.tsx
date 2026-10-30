@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { scrollToPageTop } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import licenseData from "@/data/driving-license-guide.json";
@@ -32,6 +33,11 @@ const faq = [
 
 export default function DrivingLicenseGuidePage() {
   const [activeTab, setActiveTab] = useState<"classes" | "process">("classes");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToPageTop();
+  }, [activeTab]);
 
   const fmt = (n: number) => `KES ${n.toLocaleString("en-KE")}`;
 

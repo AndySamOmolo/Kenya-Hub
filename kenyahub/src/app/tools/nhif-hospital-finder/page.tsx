@@ -1,7 +1,8 @@
 "use client";
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import hospitalData from "@/data/nhif-hospitals.json";
@@ -26,6 +27,11 @@ export default function NHIFHospitalFinderPage() {
   const [countyFilter, setCountyFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
   const [levelFilter, setLevelFilter] = useState("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [countyFilter, typeFilter, levelFilter]);
 
   const filtered = useMemo(() => {
     return hospitalData.hospitals.filter((h) => {

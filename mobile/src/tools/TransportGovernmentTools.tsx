@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import {
   StyleSheet,
   Text,
@@ -394,7 +394,7 @@ function daysUntilHoliday(dateStr: string) {
   return Math.ceil((target.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
 }
 
-export function PublicHolidaysTool() {
+export function PublicHolidaysTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [selectedYear, setSelectedYear] = useState<"2025" | "2026" | "2027">("2026");
   const holidays =
@@ -577,7 +577,7 @@ export function PublicHolidaysTool() {
 }
 
 /** 4. Traffic Fines Tool (mirrors kenyahub/src/app/tools/traffic-fines/page.tsx) */
-export function TrafficFinesTool() {
+export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [search, setSearch] = useState("");
   const [selectedCat, setSelectedCat] = useState<string>("all");
@@ -776,7 +776,7 @@ export function TrafficFinesTool() {
 }
 
 /** 5. Postal Codes Lookup (mirrors kenyahub/src/app/tools/kenya-postal-codes/page.tsx) */
-export function PostalCodesTool() {
+export function PostalCodesTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [q, setQ] = useState("");
   const [selectedCounty, setSelectedCounty] = useState("all");
@@ -914,9 +914,14 @@ export function PostalCodesTool() {
 }
 
 /** 6. Driving License Guide (mirrors kenyahub/src/app/tools/driving-license-guide/page.tsx) */
-export function DrivingLicenseTool() {
+export function DrivingLicenseTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [activeTab, setActiveTab] = useState<"classes" | "process">("classes");
+  const _mountRef = useRef(false);
+  useEffect(() => {
+    if (!_mountRef.current) { _mountRef.current = true; return; }
+    onScrollToTop?.();
+  }, [activeTab, onScrollToTop]);
 
   return (
     <View style={styles.toolWrap}>
@@ -1327,7 +1332,7 @@ export function PassportFeesTool() {
 }
 
 /** 8. Matatu Routes Explorer Tool */
-export function MatatuRoutesTool() {
+export function MatatuRoutesTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const router = useRouter();
   const { theme, styles } = useDynamicStyles(createStyles);
   const [selectedTown, setSelectedTown] = useState<string>("nairobi");
@@ -1347,6 +1352,11 @@ export function MatatuRoutesTool() {
   const [selectedRouteSlug, setSelectedRouteSlug] = useState<string>(
     townRoutes[0]?.slug || "111-ngong"
   );
+  const _mountRef = useRef(false);
+  useEffect(() => {
+    if (!_mountRef.current) { _mountRef.current = true; return; }
+    onScrollToTop?.();
+  }, [selectedTown, selectedRouteSlug, onScrollToTop]);
 
   const filteredRoutes = useMemo(() => {
     const q = search.trim().toLowerCase();

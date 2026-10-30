@@ -2,7 +2,8 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import { TOOLS, TOOL_CATEGORIES, getCategoryInfo, getToolUsageScore } from "@/lib/tools-registry";
 import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
@@ -14,6 +15,11 @@ import { useMounted } from "@/lib/useMounted";
 
 export default function ToolsHubPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [selectedCategory]);
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">("popular");
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);

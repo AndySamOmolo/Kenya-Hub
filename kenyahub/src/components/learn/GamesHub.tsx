@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { scrollToPageTop } from "@/lib/scroll";
 
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -90,6 +91,10 @@ export default function GamesHub({
   onBack,
 }: GamesHubProps) {
   const [activeGame, setActiveGame] = useState<GameType>("menu");
+
+  useEffect(() => {
+    scrollToPageTop();
+  }, [activeGame]);
 
   const allWords = useMemo(() => getAllWords(units), [units]);
 

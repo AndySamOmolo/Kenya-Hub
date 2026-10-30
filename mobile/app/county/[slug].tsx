@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import {
   StyleSheet,
   Text,
@@ -46,6 +46,10 @@ export default function CountyDetailScreen() {
   const router = useRouter();
   const { theme } = useTheme();
   const { slug } = useLocalSearchParams<{ slug: string }>();
+  const scrollRef = useRef<ScrollView>(null);
+  useEffect(() => {
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
+  }, [slug]);
 
   const county: County | undefined = countiesData.counties.find(
     (c) => c.slug === slug || String(c.code) === slug
@@ -198,6 +202,7 @@ export default function CountyDetailScreen() {
       />
 
       <ScrollView
+        ref={scrollRef}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >

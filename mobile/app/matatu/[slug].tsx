@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
@@ -12,6 +12,10 @@ export default function MatatuRouteScreen() {
   const router = useRouter();
   const { theme } = useTheme();
   const [reported, setReported] = useState(false);
+  const scrollRef = useRef<ScrollView>(null);
+  useEffect(() => {
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
+  }, [slug]);
 
   const { route, townSlug, townName, otherRoutes } = useMemo(() => {
     const routesByTown = (matatuData as any).routes || {};
@@ -58,6 +62,7 @@ export default function MatatuRouteScreen() {
       />
 
       <ScrollView
+        ref={scrollRef}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >

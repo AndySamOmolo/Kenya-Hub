@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useLocalSearchParams, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
@@ -148,6 +148,10 @@ export default function ToolsScreen() {
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
   const [category, setCategory] = useState(params.category ?? "all");
+  const listRef = useRef<FlatList>(null);
+  useEffect(() => {
+    listRef.current?.scrollToOffset({ offset: 0, animated: false });
+  }, [category]);
   const [showAllCats, setShowAllCats] = useState(true);
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">(
     "popular"
@@ -387,6 +391,7 @@ export default function ToolsScreen() {
       </View>
 
       <FlatList
+        ref={listRef}
         data={filtered}
         keyExtractor={(item) => item.slug}
         contentContainerStyle={styles.list}
