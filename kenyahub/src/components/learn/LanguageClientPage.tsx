@@ -119,7 +119,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     const loaded = loadProgress(languageId);
     const refilled = refillHearts(loaded);
     if (refilled.hearts !== loaded.hearts) {
-      saveProgress(languageId, refilled);
+      saveProgress(refilled);
     }
     setProgress(refilled);
   }, [languageId, course]);
@@ -130,13 +130,13 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         if (prev.hearts >= MAX_HEARTS) return prev;
         const refilled = refillHearts(prev);
         if (refilled.hearts !== prev.hearts) {
-          saveProgress(languageId, refilled);
+          saveProgress(refilled);
         }
         return refilled;
       });
     }, 30_000);
     return () => clearInterval(interval);
-  }, [languageId]);
+  }, []);
 
   const allSkillsFlat = useMemo(() => {
     if (!course) return [];
@@ -218,16 +218,16 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         ...prev,
         unlockAll: !prev.unlockAll,
       };
-      saveProgress(languageId, updated);
+      saveProgress(updated);
       return updated;
     });
-  }, [languageId]);
+  }, []);
 
   const handleLessonComplete = useCallback(
     (result: LessonResult) => {
       const prevAchievements = new Set(progress.achievements);
       const updated = applyLessonResult(progress, result);
-      saveProgress(languageId, updated);
+      saveProgress(updated);
       setProgress(updated);
 
       const newlyUnlocked = updated.achievements.filter(
@@ -241,7 +241,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         }
       }
     },
-    [languageId, progress]
+    [progress]
   );
 
   const handleQuitLesson = useCallback(() => {

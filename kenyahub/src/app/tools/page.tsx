@@ -7,6 +7,7 @@ import { scrollToPageTop, scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES, getCategoryInfo, getToolUsageScore } from "@/lib/tools-registry";
+import type { ToolCategory } from "@/lib/types";
 import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import { ArrowDownAZ, LayoutList, Pin, TrendingUp, Wrench } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -156,7 +157,7 @@ export default function ToolsHubPage() {
   }, []);
 
   const activeCategoryInfo = useMemo(
-    () => (selectedCategory !== "all" ? getCategoryInfo(selectedCategory) : undefined),
+    () => (selectedCategory !== "all" ? getCategoryInfo(selectedCategory as ToolCategory) : undefined),
     [selectedCategory]
   );
 
