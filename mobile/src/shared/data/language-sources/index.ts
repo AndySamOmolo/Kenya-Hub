@@ -702,6 +702,8 @@ export function getSourceById(sourceId: string): LanguageSource | undefined {
   return LANGUAGE_SOURCES.find((source) => source.id === sourceId);
 }
 
+export const LANGUAGE_SOURCE_CORPUS: LanguageSource[] = LANGUAGE_SOURCES;
+
 export function getAllLanguageSources(): LanguageSource[] {
   return LANGUAGE_SOURCES;
 }

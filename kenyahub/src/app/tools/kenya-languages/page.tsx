@@ -1,7 +1,7 @@
 "use client";
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import SearchInput from "@/components/ui/SearchInput";
-import { getSourcesForLanguage, LANGUAGE_SOURCE_CORPUS } from "@/data/language-sources";
+import { getSourcesForLanguage, LANGUAGE_SOURCES } from "@/data/language-sources";
 import { COURSE_REGISTRY } from "@/data/courses/registry";
 
 import { useState, useMemo } from "react";
@@ -210,7 +210,7 @@ export default function KenyaLanguagesPage() {
             <li className="flex items-start gap-2 text-xs text-text-secondary">
               <span className="text-gold mt-0.5">•</span>
               <span>
-                Cross-referenced with {LANGUAGE_SOURCE_CORPUS.length} historical grammars, dictionaries, and comparative vocabularies (1842–1929) plus Unicode CLDR &amp; CC0 lexical resources.
+                Cross-referenced with {LANGUAGE_SOURCES.length} historical grammars, dictionaries, and comparative vocabularies (1842–1929) plus Unicode CLDR &amp; CC0 lexical resources.
               </span>
             </li>
           </ul>
