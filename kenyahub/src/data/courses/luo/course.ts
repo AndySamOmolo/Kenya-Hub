@@ -2615,7 +2615,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         authoredExercises: [
           {
             type: 'multiple_choice',
-            prompt: 'What is the English meaning of "Dala wacho ang'o? — Dala oling'." in Dholuo?',
+            prompt: 'What is the English meaning of "Dala wacho ang\'o? — Dala oling\'." in Dholuo?',
             correctAnswer: 'What is the news of the homestead? — The homestead is peaceful.',
             options: [
               'What is the news of the homestead? — The homestead is peaceful.',
