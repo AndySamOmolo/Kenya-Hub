@@ -15,7 +15,7 @@
   "categories": [
     {
       "id": "greetings",
-      "name": "Greetings & Common Phrases",
+      "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
         {
@@ -337,7 +337,7 @@
     },
     {
       "id": "family",
-      "name": "People, Family & Kinship",
+      "name": "Family, People & Kinship",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
@@ -1016,7 +1016,7 @@
     },
     {
       "id": "nature",
-      "name": "Nature, Environment & Time",
+      "name": "Nature, Environment & Geography",
       "icon": "🌍",
       "entries": [
         {
@@ -2626,7 +2626,7 @@
     },
     {
       "id": "food",
-      "name": "Food, Agriculture & Home",
+      "name": "Food, Drink & Agriculture",
       "icon": "🌾",
       "entries": [
         {
@@ -3192,113 +3192,8 @@
       ]
     },
     {
-      "id": "culture-history",
-      "name": "Culture, Clans & Historical Corpus",
-      "icon": "📜",
-      "entries": [
-        {
-          "english": "Mount Kenya Southeastern & Eastern Dialect Varieties Recorded by Sir Harry Johnston (1919 #11)",
-          "translation": "Kîembu (Embu), Kimbeere (Emberre), Gĩcuka (Cuka), Kĩmwimbi (Mwimbe), Kĩtharaka (Tharaka), Kĩigoji (Igoji)",
-          "pronunciation": "ki-em-bu, ki-mbee-re, gi-chu-ka, ki-mwim-bi",
-          "context": "Sir Harry H. Johnston (1919) 'A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 98–112",
-          "audioFile": null
-        },
-        {
-          "english": "Cardinal Numerals 1–10 in Johnston (1919 #11 Embu / Emberre)",
-          "translation": "imwe (1), igiri (2), ithatu (3), inya (4), ithano (5), ithathatu (6), mugwanja (7), inyanya (8), kenda (9), ikumi (10)",
-          "pronunciation": "i-mwe, i-gi-ri, i-tha-tu, i-nya, i-tha-no",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107)",
-          "audioFile": null
-        },
-        {
-          "english": "Elder Council of the Aembu & Sacred Grove",
-          "translation": "Kiama kia Ngome & Mũtĩ wa Ngai (Mũgumo sacred fig tree)",
-          "pronunciation": "ki-a-ma kia ngo-me / mu-gu-mo",
-          "context": "C. W. Hobley (1910, pp. 146–155) & Johnston (1919)",
-          "audioFile": null
-        },
-        {
-          "english": "Ant, white (termite)",
-          "translation": "Mū-kω",
-          "pronunciation": "moo koh",
-          "context": "11. Embu / Mbeere (Embu) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Breast (man's)",
-          "translation": "ci",
-          "pronunciation": "ci",
-          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Father",
-          "translation": "), A-va",
-          "pronunciation": "a va",
-          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Heel",
-          "translation": "Mū-þiginyω",
-          "pronunciation": "moo thi-giny-oh",
-          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Hoe",
-          "translation": "Kī-būtū",
-          "pronunciation": "kee boo-too",
-          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "House",
-          "translation": "Gī-þūnω",
-          "pronunciation": "gee thoo-noh",
-          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Song",
-          "translation": "Kī-gwū, Gωcu",
-          "pronunciation": "kee gwoo goh-cu",
-          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Sacred grove for community sacrifices (Kĩembu)",
-          "translation": "kĩrĩti / mũtitũ wa igongona",
-          "pronunciation": "kee-ree-ti",
-          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Council of elders (Kĩembu)",
-          "translation": "kiama kĩa athuri",
-          "pronunciation": "kia-ma keea ath-u-ri",
-          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922)",
-          "audioFile": null
-        },
-        {
-          "english": "Generational transfer ceremony (Embu & Mbeere)",
-          "translation": "nduĩko",
-          "pronunciation": "nduee-ko",
-          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922)",
-          "audioFile": null
-        },
-        {
-          "english": "Traditional beehive hung in trees",
-          "translation": "mwatũ (pl. miatũ)",
-          "pronunciation": "mwa-too",
-          "context": "C. W. Hobley (1910, 1922)",
-          "audioFile": null
-        }
-      ]
-    },
-    {
       "id": "phrases",
-      "name": "Phrases",
+      "name": "Common Expressions & Vocabulary",
       "icon": "🗣️",
       "entries": [
         {
@@ -4209,6 +4104,111 @@
           "translation": "kũiga mbeca ngwataniro-inĩ",
           "pronunciation": "kooi-ga mbe-ca ngwa-ta-ni-ro i-nee",
           "context": "Kenyan Financial Lexicon (Anv-ke)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Mount Kenya Southeastern & Eastern Dialect Varieties Recorded by Sir Harry Johnston (1919 #11)",
+          "translation": "Kîembu (Embu), Kimbeere (Emberre), Gĩcuka (Cuka), Kĩmwimbi (Mwimbe), Kĩtharaka (Tharaka), Kĩigoji (Igoji)",
+          "pronunciation": "ki-em-bu, ki-mbee-re, gi-chu-ka, ki-mwim-bi",
+          "context": "Sir Harry H. Johnston (1919) 'A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 98–112",
+          "audioFile": null
+        },
+        {
+          "english": "Cardinal Numerals 1–10 in Johnston (1919 #11 Embu / Emberre)",
+          "translation": "imwe (1), igiri (2), ithatu (3), inya (4), ithano (5), ithathatu (6), mugwanja (7), inyanya (8), kenda (9), ikumi (10)",
+          "pronunciation": "i-mwe, i-gi-ri, i-tha-tu, i-nya, i-tha-no",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107)",
+          "audioFile": null
+        },
+        {
+          "english": "Elder Council of the Aembu & Sacred Grove",
+          "translation": "Kiama kia Ngome & Mũtĩ wa Ngai (Mũgumo sacred fig tree)",
+          "pronunciation": "ki-a-ma kia ngo-me / mu-gu-mo",
+          "context": "C. W. Hobley (1910, pp. 146–155) & Johnston (1919)",
+          "audioFile": null
+        },
+        {
+          "english": "Ant, white (termite)",
+          "translation": "Mū-kω",
+          "pronunciation": "moo koh",
+          "context": "11. Embu / Mbeere (Embu) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast (man's)",
+          "translation": "ci",
+          "pronunciation": "ci",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "), A-va",
+          "pronunciation": "a va",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "Mū-þiginyω",
+          "pronunciation": "moo thi-giny-oh",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Hoe",
+          "translation": "Kī-būtū",
+          "pronunciation": "kee boo-too",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Gī-þūnω",
+          "pronunciation": "gee thoo-noh",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Song",
+          "translation": "Kī-gwū, Gωcu",
+          "pronunciation": "kee gwoo goh-cu",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred grove for community sacrifices (Kĩembu)",
+          "translation": "kĩrĩti / mũtitũ wa igongona",
+          "pronunciation": "kee-ree-ti",
+          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "Council of elders (Kĩembu)",
+          "translation": "kiama kĩa athuri",
+          "pronunciation": "kia-ma keea ath-u-ri",
+          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922)",
+          "audioFile": null
+        },
+        {
+          "english": "Generational transfer ceremony (Embu & Mbeere)",
+          "translation": "nduĩko",
+          "pronunciation": "nduee-ko",
+          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional beehive hung in trees",
+          "translation": "mwatũ (pl. miatũ)",
+          "pronunciation": "mwa-too",
+          "context": "C. W. Hobley (1910, 1922)",
           "audioFile": null
         }
       ]

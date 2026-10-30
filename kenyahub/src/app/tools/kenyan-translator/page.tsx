@@ -8,67 +8,68 @@ import { useState, useMemo, useCallback, useEffect } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
-import { BarChart, BookOpen, Dices, Folder, Search, Hash, Plus, X, Check, Send, ArrowRight } from "lucide-react";
+import { BarChart, BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
-// Import all 22 Kenyan language dictionaries
-import swahiliDict from "@/data/dictionaries/swahili.json";
-import kikuyuDict from "@/data/dictionaries/kikuyu.json";
-import luoDict from "@/data/dictionaries/luo.json";
-import kalenjinDict from "@/data/dictionaries/kalenjin.json";
-import luhyaDict from "@/data/dictionaries/luhya.json";
-import kambaDict from "@/data/dictionaries/kamba.json";
-import meruDict from "@/data/dictionaries/meru.json";
-import maasaiDict from "@/data/dictionaries/maasai.json";
-import kisiiDict from "@/data/dictionaries/kisii.json";
-import somaliDict from "@/data/dictionaries/somali.json";
-import turkanaDict from "@/data/dictionaries/turkana.json";
-import mijikendaDict from "@/data/dictionaries/mijikenda.json";
-import tesoDict from "@/data/dictionaries/teso.json";
-import embuDict from "@/data/dictionaries/embu.json";
-import taitaDict from "@/data/dictionaries/taita.json";
-import samburuDict from "@/data/dictionaries/samburu.json";
-import boranaDict from "@/data/dictionaries/borana.json";
-import rendilleDict from "@/data/dictionaries/rendille.json";
-import pokomoDict from "@/data/dictionaries/pokomo.json";
-import ilchamusDict from "@/data/dictionaries/ilchamus.json";
-import pokotDict from "@/data/dictionaries/pokot.json";
-import tavetaDict from "@/data/dictionaries/taveta.json";
-
+import {
+  ALL_DICT_METAS,
+  DICT_META_MAP,
+  ALL_CATEGORY_IDS,
+  TOTAL_DICTIONARY_ENTRIES,
+  INITIAL_RANDOM_WORDS,
+  type DictEntry,
+  type DictCategory,
+  type Dictionary,
+} from "@/data/dictionaries/metadata";
 import langData from "@/data/kenya-languages.json";
 import { addContribution } from "@/lib/contributions";
 import { scrollToPageTop, scrollToTopIfScrolled } from "@/lib/scroll";
 
 const tool = TOOLS.find((t) => t.slug === "kenyan-translator")!;
 
-// ─── Types ───
-interface DictEntry {
-  english: string;
-  translation: string;
-  pronunciation: string;
-  context: string;
-  audioFile: string | null;
-}
+const CATEGORY_PAGE_SIZE = 50;
+const SEARCH_PAGE_SIZE = 50;
 
-interface DictCategory {
-  id: string;
-  name: string;
-  icon?: string;
-  entries: DictEntry[];
-}
+// ─── Dynamic Dictionary Loader & In-Memory Cache ───
+const DICT_LOADERS: Record<string, () => Promise<{ default: Dictionary }>> = {
+  swahili: () => import("@/data/dictionaries/swahili.json") as Promise<{ default: Dictionary }>,
+  kikuyu: () => import("@/data/dictionaries/kikuyu.json") as Promise<{ default: Dictionary }>,
+  luo: () => import("@/data/dictionaries/luo.json") as Promise<{ default: Dictionary }>,
+  kalenjin: () => import("@/data/dictionaries/kalenjin.json") as Promise<{ default: Dictionary }>,
+  luhya: () => import("@/data/dictionaries/luhya.json") as Promise<{ default: Dictionary }>,
+  kamba: () => import("@/data/dictionaries/kamba.json") as Promise<{ default: Dictionary }>,
+  meru: () => import("@/data/dictionaries/meru.json") as Promise<{ default: Dictionary }>,
+  maasai: () => import("@/data/dictionaries/maasai.json") as Promise<{ default: Dictionary }>,
+  kisii: () => import("@/data/dictionaries/kisii.json") as Promise<{ default: Dictionary }>,
+  somali: () => import("@/data/dictionaries/somali.json") as Promise<{ default: Dictionary }>,
+  turkana: () => import("@/data/dictionaries/turkana.json") as Promise<{ default: Dictionary }>,
+  mijikenda: () => import("@/data/dictionaries/mijikenda.json") as Promise<{ default: Dictionary }>,
+  teso: () => import("@/data/dictionaries/teso.json") as Promise<{ default: Dictionary }>,
+  embu: () => import("@/data/dictionaries/embu.json") as Promise<{ default: Dictionary }>,
+  taita: () => import("@/data/dictionaries/taita.json") as Promise<{ default: Dictionary }>,
+  samburu: () => import("@/data/dictionaries/samburu.json") as Promise<{ default: Dictionary }>,
+  borana: () => import("@/data/dictionaries/borana.json") as Promise<{ default: Dictionary }>,
+  rendille: () => import("@/data/dictionaries/rendille.json") as Promise<{ default: Dictionary }>,
+  pokomo: () => import("@/data/dictionaries/pokomo.json") as Promise<{ default: Dictionary }>,
+  ilchamus: () => import("@/data/dictionaries/ilchamus.json") as Promise<{ default: Dictionary }>,
+  pokot: () => import("@/data/dictionaries/pokot.json") as Promise<{ default: Dictionary }>,
+  taveta: () => import("@/data/dictionaries/taveta.json") as Promise<{ default: Dictionary }>,
+};
 
-interface Dictionary {
-  languageId: string;
-  languageName: string;
-  family: string;
-  nativeName: string;
-  script: string;
-  speakerCount: number;
-  counties: string[];
-  hasAudio: boolean;
-  dictionaryVersion: string;
-  lastUpdated: string;
-  contributorNote: string;
-  categories: DictCategory[];
+const DICT_CACHE: Record<string, Dictionary> = {};
+const DICT_PROMISES: Record<string, Promise<Dictionary>> = {};
+
+async function loadDictionary(langId: string): Promise<Dictionary | null> {
+  if (DICT_CACHE[langId]) return DICT_CACHE[langId];
+  const loader = DICT_LOADERS[langId];
+  if (!loader) return null;
+  if (!DICT_PROMISES[langId]) {
+    DICT_PROMISES[langId] = loader().then((mod) => {
+      const dict = (mod.default || mod) as Dictionary;
+      DICT_CACHE[langId] = dict;
+      return dict;
+    });
+  }
+  return DICT_PROMISES[langId];
 }
 
 interface TranslationResultItem {
@@ -84,42 +85,11 @@ interface TranslationResultItem {
   missingTarget?: boolean;
 }
 
-// ─── All 22 dictionaries indexed ───
-const ALL_DICTS: Dictionary[] = [
-  swahiliDict,
-  kikuyuDict,
-  luoDict,
-  kalenjinDict,
-  luhyaDict,
-  kambaDict,
-  meruDict,
-  maasaiDict,
-  kisiiDict,
-  somaliDict,
-  turkanaDict,
-  mijikendaDict,
-  tesoDict,
-  embuDict,
-  taitaDict,
-  samburuDict,
-  boranaDict,
-  rendilleDict,
-  pokomoDict,
-  ilchamusDict,
-  pokotDict,
-  tavetaDict,
-];
-
-const DICT_MAP: Record<string, Dictionary> = {};
-ALL_DICTS.forEach((d) => {
-  DICT_MAP[d.languageId] = d;
-});
-
 // Languages that have no dictionary yet
 const COMING_SOON_LANGUAGES = langData.languages
   .filter((l) => {
     const id = l.name.split("(")[0].trim().toLowerCase().replace(/\s+/g, "");
-    return !DICT_MAP[id] && id !== "swahili" && id !== "dholuo";
+    return !DICT_META_MAP[id] && id !== "swahili" && id !== "dholuo";
   })
   .map((l) => ({
     name: l.name,
@@ -140,22 +110,10 @@ const CONTACT_EMAIL = "andysamonyango@gmail.com";
 
 const ALL_CONTRIBUTE_LANGUAGES = Array.from(
   new Set([
-    ...ALL_DICTS.map((d) => d.languageName.split("(")[0].trim()),
+    ...ALL_DICT_METAS.map((d) => d.languageName.split("(")[0].trim()),
     ...COMING_SOON_LANGUAGES.map((l) => l.name.split("(")[0].trim()),
   ])
 ).sort();
-
-// All category IDs across all languages (unique, in order)
-const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [];
-const seenCats = new Set<string>();
-ALL_DICTS.forEach((d) =>
-  d.categories.forEach((c) => {
-    if (!seenCats.has(c.id)) {
-      seenCats.add(c.id);
-      ALL_CATEGORY_IDS.push({ id: c.id, name: c.name, icon: c.icon || "📖" });
-    }
-  })
-);
 
 // Popular comparison words across Kenyan dictionaries
 const POPULAR_COMPARE_WORDS = [
@@ -202,9 +160,75 @@ function extractNormalizedTerms(raw: string): string[] {
   return Array.from(out);
 }
 
+// ─── Pre-Normalized O(1) Search Index Per Dictionary ───
+interface IndexedDictEntry {
+  entry: DictEntry;
+  cat: DictCategory;
+  engLower: string;
+  transLower: string;
+  engTerms: string[];
+  transTerms: string[];
+}
+
+interface DictSearchIndex {
+  all: IndexedDictEntry[];
+  byEngTerm: Map<string, IndexedDictEntry[]>;
+  byTransTerm: Map<string, IndexedDictEntry[]>;
+}
+
+const DICT_INDEX_CACHE = new WeakMap<Dictionary, DictSearchIndex>();
+
+function getDictIndex(dict: Dictionary): DictSearchIndex {
+  const cached = DICT_INDEX_CACHE.get(dict);
+  if (cached) return cached;
+
+  const all: IndexedDictEntry[] = [];
+  const byEngTerm = new Map<string, IndexedDictEntry[]>();
+  const byTransTerm = new Map<string, IndexedDictEntry[]>();
+
+  for (const cat of dict.categories) {
+    for (const entry of cat.entries) {
+      const engLower = entry.english.toLowerCase().trim();
+      const transLower = entry.translation.toLowerCase().trim();
+      const engTerms = extractNormalizedTerms(entry.english);
+      const transTerms = extractNormalizedTerms(entry.translation);
+      const item: IndexedDictEntry = {
+        entry,
+        cat,
+        engLower,
+        transLower,
+        engTerms,
+        transTerms,
+      };
+      all.push(item);
+
+      for (const t of engTerms) {
+        let bucket = byEngTerm.get(t);
+        if (!bucket) {
+          bucket = [];
+          byEngTerm.set(t, bucket);
+        }
+        bucket.push(item);
+      }
+      for (const t of transTerms) {
+        let bucket = byTransTerm.get(t);
+        if (!bucket) {
+          bucket = [];
+          byTransTerm.set(t, bucket);
+        }
+        bucket.push(item);
+      }
+    }
+  }
+
+  const index: DictSearchIndex = { all, byEngTerm, byTransTerm };
+  DICT_INDEX_CACHE.set(dict, index);
+  return index;
+}
+
 // ─── FAQ ───
 const faq = [
-  { question: "What languages does this translator support?", answer: `Currently ${ALL_DICTS.length} Kenyan languages with verified public-domain and community vocabularies: Swahili, Kikuyu, Dholuo (Luo), Kalenjin, Luhya, Kamba, Meru, Maasai, Kisii, Somali, Turkana, Mijikenda, Teso, Embu, Taita, Samburu, Borana (Oromo), Rendille, Pokomo, Ilchamus (Njemps), Pokot (Pökoot), and Taveta.` },
+  { question: "What languages does this translator support?", answer: `Currently ${ALL_DICT_METAS.length} Kenyan languages with verified public-domain and community vocabularies: Swahili, Kikuyu, Dholuo (Luo), Kalenjin, Luhya, Kamba, Meru, Maasai, Kisii, Somali, Turkana, Mijikenda, Teso, Embu, Taita, Samburu, Borana (Oromo), Rendille, Pokomo, Ilchamus (Njemps), Pokot (Pökoot), and Taveta.` },
   { question: "How does translating between two Kenyan languages work?", answer: "When you choose any Kenyan language as your 'From' language and another Kenyan language (or 'All Languages') as your 'To' language, the translator uses English as a middleman bridge — matching your word in the source dictionary, resolving its English concept, and finding the corresponding translation in your target Kenyan language(s)." },
   { question: "Is this a machine translation tool?", answer: "No — this is a curated dictionary-based translator grounded in verified public-domain linguistic monographs (1844–1927), Unicode CLDR, and community contributors. It translates words and common phrases accurately without AI hallucination." },
   { question: "Can I contribute translations?", answer: "Yes! Use the 'Contribute' button on any language card to submit corrections or new vocabulary. All contributions are credited." },
@@ -216,11 +240,16 @@ export default function KenyanTranslatorPage() {
   const [targetLanguage, setTargetLanguage] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [categoryPage, setCategoryPage] = useState(1);
+  const [categorySearch, setCategorySearch] = useState("");
+  const [searchPage, setSearchPage] = useState(1);
   const [viewMode, setViewMode] = useState<"translate" | "compare" | "browse">("translate");
-  const [compareLanguages, setCompareLanguages] = useState<string[]>(() => ALL_DICTS.map((d) => d.languageId));
+  const [compareLanguages, setCompareLanguages] = useState<string[]>(() => ALL_DICT_METAS.map((d) => d.languageId));
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [loadedDicts, setLoadedDicts] = useState<Record<string, Dictionary>>(() => ({ ...DICT_CACHE }));
+  const [isLoadingDicts, setIsLoadingDicts] = useState(false);
 
   // ─── Contribute Modal State ───
   const [isContributeOpen, setIsContributeOpen] = useState(false);
@@ -233,20 +262,59 @@ export default function KenyanTranslatorPage() {
   const [contributorName, setContributorName] = useState("");
   const [contributorEmail, setContributorEmail] = useState("");
   const [contributeSubmitted, setContributeSubmitted] = useState(false);
-  const [contributeCopied, setContributeCopied] = useState(false);
+
+  const ensureDictionariesLoaded = useCallback(async (langIds: string[]) => {
+    const missing = langIds.filter((id) => id && id !== "english" && id !== "all" && !DICT_CACHE[id]);
+    if (missing.length === 0) return;
+    setIsLoadingDicts(true);
+    await Promise.all(missing.map((id) => loadDictionary(id)));
+    setLoadedDicts({ ...DICT_CACHE });
+    setIsLoadingDicts(false);
+  }, []);
+
+  // Load required dictionaries on demand
+  useEffect(() => {
+    const toLoad = new Set<string>(["swahili"]);
+    if (sourceLanguage !== "english") toLoad.add(sourceLanguage);
+    if (targetLanguage !== "english" && targetLanguage !== "all") toLoad.add(targetLanguage);
+
+    if (
+      (targetLanguage === "all" && searchQuery.trim().length > 0) ||
+      (viewMode === "compare" && searchQuery.trim().length > 0)
+    ) {
+      ALL_DICT_METAS.forEach((d) => toLoad.add(d.languageId));
+    }
+    ensureDictionariesLoaded(Array.from(toLoad));
+  }, [sourceLanguage, targetLanguage, searchQuery, viewMode, ensureDictionariesLoaded]);
+
+  // Preload remaining dictionaries during browser idle time after initial paint
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      ensureDictionariesLoaded(ALL_DICT_METAS.map((d) => d.languageId));
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, [ensureDictionariesLoaded]);
+
+  // Reset pagination when filters change
+  useEffect(() => {
+    setCategoryPage(1);
+    setCategorySearch("");
+  }, [activeCategory, sourceLanguage, targetLanguage]);
+
+  useEffect(() => {
+    setSearchPage(1);
+  }, [searchQuery, sourceLanguage, targetLanguage]);
 
   const openContributeModal = useCallback((langName?: string, defaultEnglish?: string) => {
     if (langName) setContributeLanguage(langName.split("(")[0].trim());
     if (defaultEnglish) setContributeEnglish(defaultEnglish);
     setContributeSubmitted(false);
-    setContributeCopied(false);
     setIsContributeOpen(true);
   }, []);
 
   const closeContributeModal = useCallback(() => {
     setIsContributeOpen(false);
     setContributeSubmitted(false);
-    setContributeCopied(false);
   }, []);
 
   const handleSubmitContribution = async (e: React.FormEvent) => {
@@ -334,7 +402,17 @@ export default function KenyanTranslatorPage() {
     });
   }, []);
 
-  // Favorites
+  // Debounced recent search recording (outside useMemo)
+  useEffect(() => {
+    const q = searchQuery.toLowerCase().trim();
+    if (q.length <= 2) return;
+    const t = setTimeout(() => addRecentSearch(q), 500);
+    return () => clearTimeout(t);
+  }, [searchQuery, addRecentSearch]);
+
+  // O(1) Favorites Set
+  const favoritesSet = useMemo(() => new Set(favorites), [favorites]);
+
   const toggleFavorite = useCallback((key: string) => {
     setFavorites((prev) => {
       const next = prev.includes(key) ? prev.filter((f) => f !== key) : [...prev, key];
@@ -363,128 +441,147 @@ export default function KenyanTranslatorPage() {
     setSearchQuery("");
   }, [sourceLanguage, targetLanguage]);
 
-  const targetDict = targetLanguage !== "english" && targetLanguage !== "all" ? DICT_MAP[targetLanguage] : null;
-  const sourceDict = sourceLanguage !== "english" ? DICT_MAP[sourceLanguage] : null;
+  const targetMeta = targetLanguage !== "english" && targetLanguage !== "all" ? DICT_META_MAP[targetLanguage] : null;
+  const sourceMeta = sourceLanguage !== "english" ? DICT_META_MAP[sourceLanguage] : null;
+  const targetDict = targetLanguage !== "english" && targetLanguage !== "all" ? loadedDicts[targetLanguage] || null : null;
+  const sourceDict = sourceLanguage !== "english" ? loadedDicts[sourceLanguage] || null : null;
+  const activeDictList = useMemo(
+    () => ALL_DICT_METAS.map((m) => loadedDicts[m.languageId]).filter(Boolean) as Dictionary[],
+    [loadedDicts]
+  );
 
-  // ─── Search / Translation Logic (Supports English->X, X->English, X->Y via English middleman, and X/English->All Languages) ───
+  // ─── Fast Indexed Search / Translation Logic ───
   const { searchResults, detectedPivotWords } = useMemo(() => {
     if (!searchQuery.trim()) return { searchResults: [], detectedPivotWords: [] as string[] };
     const q = searchQuery.toLowerCase().trim();
     const qClean = extractNormalizedTerms(q)[0] || q;
 
-    if (q.length > 2) {
-      setTimeout(() => addRecentSearch(q), 0);
-    }
-
     const results: TranslationResultItem[] = [];
     const pivotWordsSet = new Set<string>();
 
-    // Helper to search a target dictionary by a list of English pivot terms
     const findInDictByEnglishPivots = (
       dict: Dictionary,
       pivots: string[],
-      sourceMatch?: DictEntry
+      sourceMatch?: DictEntry,
+      maxResults = 120
     ): TranslationResultItem[] => {
+      const idx = getDictIndex(dict);
       const exactMatches: TranslationResultItem[] = [];
       const partialMatches: TranslationResultItem[] = [];
+      const seen = new Set<DictEntry>();
 
-      for (const cat of dict.categories) {
-        for (const entry of cat.entries) {
-          const engTerms = extractNormalizedTerms(entry.english);
-          const engLower = entry.english.toLowerCase();
-
-          const isExact = pivots.some(
-            (pw) => engLower === pw || engTerms.includes(pw)
-          );
-          if (isExact) {
+      // Fast O(1) exact lookup first
+      for (const pw of pivots) {
+        const bucket = idx.byEngTerm.get(pw);
+        if (bucket) {
+          for (const item of bucket) {
+            if (seen.has(item.entry)) continue;
+            seen.add(item.entry);
             exactMatches.push({
-              entry,
+              entry: item.entry,
               sourceEntry: sourceMatch,
-              pivotEnglish: sourceMatch ? sourceMatch.english : entry.english,
-              categoryName: cat.name,
-              categoryIcon: cat.icon || "📖",
+              pivotEnglish: sourceMatch ? sourceMatch.english : item.entry.english,
+              categoryName: item.cat.name,
+              categoryIcon: item.cat.icon || "📖",
               languageId: dict.languageId,
               languageName: dict.languageName,
               family: dict.family,
               matchType: "exact",
             });
-          } else if (
-            pivots.some((pw) => pw.length >= 3 && engTerms.some((et) => et.includes(pw)))
-          ) {
-            partialMatches.push({
-              entry,
-              sourceEntry: sourceMatch,
-              pivotEnglish: sourceMatch ? sourceMatch.english : entry.english,
-              categoryName: cat.name,
-              categoryIcon: cat.icon || "📖",
-              languageId: dict.languageId,
-              languageName: dict.languageName,
-              family: dict.family,
-              matchType: "partial",
-            });
           }
         }
       }
+
+      // If we need partial matches, scan pre-normalized terms
+      if (exactMatches.length < maxResults) {
+        const longPivots = pivots.filter((pw) => pw.length >= 3);
+        if (longPivots.length > 0) {
+          for (const item of idx.all) {
+            if (seen.has(item.entry)) continue;
+            if (longPivots.some((pw) => item.engLower.includes(pw) || item.engTerms.some((et) => et.includes(pw)))) {
+              seen.add(item.entry);
+              partialMatches.push({
+                entry: item.entry,
+                sourceEntry: sourceMatch,
+                pivotEnglish: sourceMatch ? sourceMatch.english : item.entry.english,
+                categoryName: item.cat.name,
+                categoryIcon: item.cat.icon || "📖",
+                languageId: dict.languageId,
+                languageName: dict.languageName,
+                family: dict.family,
+                matchType: "partial",
+              });
+              if (exactMatches.length + partialMatches.length >= maxResults) break;
+            }
+          }
+        }
+      }
+
       return [...exactMatches, ...partialMatches];
     };
 
     if (sourceLanguage === "english") {
       const pivots = extractNormalizedTerms(q);
-      if (targetLanguage === "all") {
-        // Translate English -> All 22 Kenyan languages
-        for (const dict of ALL_DICTS) {
-          const matches = findInDictByEnglishPivots(dict, pivots);
+      if (targetLanguage === "all" || targetLanguage === "english") {
+        for (const dict of activeDictList) {
+          const matches = findInDictByEnglishPivots(dict, pivots, undefined, 1);
           if (matches.length > 0) {
             results.push(matches[0]);
           }
         }
-      } else if (targetLanguage === "english") {
-        // English -> English (show matches across all dictionaries as reference)
-        for (const dict of ALL_DICTS) {
-          const matches = findInDictByEnglishPivots(dict, pivots);
-          if (matches.length > 0) results.push(matches[0]);
-        }
       } else if (targetDict) {
-        // English -> Specific Kenyan language
-        results.push(...findInDictByEnglishPivots(targetDict, pivots));
+        results.push(...findInDictByEnglishPivots(targetDict, pivots, undefined, 150));
       }
     } else if (sourceDict) {
-      // Source is a Kenyan language: first match in sourceDict
+      const sourceIdx = getDictIndex(sourceDict);
       const exactSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
       const partialSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
+      const seenSource = new Set<DictEntry>();
 
-      for (const cat of sourceDict.categories) {
-        for (const entry of cat.entries) {
-          const transTerms = extractNormalizedTerms(entry.translation);
-          const transLower = entry.translation.toLowerCase();
-          if (transLower === q || transTerms.includes(qClean)) {
-            exactSourceMatches.push({ entry, cat });
-          } else if (transLower.includes(q) || transTerms.some((t) => t.includes(qClean))) {
-            partialSourceMatches.push({ entry, cat });
-          }
+      const transBucket = sourceIdx.byTransTerm.get(qClean);
+      if (transBucket) {
+        for (const item of transBucket) {
+          seenSource.add(item.entry);
+          exactSourceMatches.push({ entry: item.entry, cat: item.cat });
         }
       }
 
-      // Fallback: if user typed an English word while a Kenyan language was selected as "From", still match it!
+      for (const item of sourceIdx.all) {
+        if (seenSource.has(item.entry)) continue;
+        if (item.transLower === q) {
+          seenSource.add(item.entry);
+          exactSourceMatches.push({ entry: item.entry, cat: item.cat });
+        } else if (item.transLower.includes(q) || item.transTerms.some((t) => t.includes(qClean))) {
+          seenSource.add(item.entry);
+          partialSourceMatches.push({ entry: item.entry, cat: item.cat });
+          if (partialSourceMatches.length >= 60) break;
+        }
+      }
+
+      // Fallback: if user typed an English word while a Kenyan language was selected as "From"
       if (exactSourceMatches.length === 0 && partialSourceMatches.length === 0) {
-        for (const cat of sourceDict.categories) {
-          for (const entry of cat.entries) {
-            const engTerms = extractNormalizedTerms(entry.english);
-            if (engTerms.includes(qClean)) {
-              exactSourceMatches.push({ entry, cat });
-            } else if (entry.english.toLowerCase().includes(q)) {
-              partialSourceMatches.push({ entry, cat });
+        const engBucket = sourceIdx.byEngTerm.get(qClean);
+        if (engBucket) {
+          for (const item of engBucket) {
+            seenSource.add(item.entry);
+            exactSourceMatches.push({ entry: item.entry, cat: item.cat });
+          }
+        }
+        if (exactSourceMatches.length === 0) {
+          for (const item of sourceIdx.all) {
+            if (item.engLower.includes(q)) {
+              partialSourceMatches.push({ entry: item.entry, cat: item.cat });
+              if (partialSourceMatches.length >= 60) break;
             }
           }
         }
       }
 
       const combinedSource = [...exactSourceMatches, ...partialSourceMatches];
+      const exactSet = new Set(exactSourceMatches);
 
       if (targetLanguage === "english" || targetLanguage === sourceLanguage) {
-        // Kenyan language -> English
         for (const sm of combinedSource) {
-          const isExact = exactSourceMatches.includes(sm);
           results.push({
             entry: sm.entry,
             categoryName: sm.cat.name,
@@ -492,11 +589,10 @@ export default function KenyanTranslatorPage() {
             languageId: sourceDict.languageId,
             languageName: sourceDict.languageName,
             family: sourceDict.family,
-            matchType: isExact ? "exact" : "partial",
+            matchType: exactSet.has(sm) ? "exact" : "partial",
           });
         }
       } else if (targetLanguage === "all") {
-        // Kenyan language -> ALL languages using English as the middleman!
         const primarySources = exactSourceMatches.length > 0 ? exactSourceMatches.slice(0, 3) : partialSourceMatches.slice(0, 3);
         const allPivots: string[] = [];
         for (const sm of primarySources) {
@@ -508,23 +604,22 @@ export default function KenyanTranslatorPage() {
 
         if (primarySources.length > 0) {
           const bestSource = primarySources[0].entry;
-          for (const dict of ALL_DICTS) {
+          for (const dict of activeDictList) {
             if (dict.languageId === sourceDict.languageId) continue;
-            const dictMatches = findInDictByEnglishPivots(dict, allPivots, bestSource);
+            const dictMatches = findInDictByEnglishPivots(dict, allPivots, bestSource, 1);
             if (dictMatches.length > 0) {
               results.push(dictMatches[0]);
             }
           }
         }
       } else if (targetDict) {
-        // Kenyan language A -> Kenyan language B using English as the middleman!
         const primarySources = exactSourceMatches.length > 0 ? exactSourceMatches.slice(0, 5) : partialSourceMatches.slice(0, 5);
         const seenTargetKeys = new Set<string>();
 
         for (const sm of primarySources) {
           const pivots = extractNormalizedTerms(sm.entry.english);
           pivots.forEach((pw) => pivotWordsSet.add(pw));
-          const targetMatches = findInDictByEnglishPivots(targetDict, pivots, sm.entry);
+          const targetMatches = findInDictByEnglishPivots(targetDict, pivots, sm.entry, 40);
 
           if (targetMatches.length > 0) {
             for (const tm of targetMatches) {
@@ -535,7 +630,6 @@ export default function KenyanTranslatorPage() {
               }
             }
           } else {
-            // Even if targetDict lacks this entry, show the resolved English bridge meaning
             const key = `bridge::${sm.entry.english}`;
             if (!seenTargetKeys.has(key)) {
               seenTargetKeys.add(key);
@@ -570,7 +664,7 @@ export default function KenyanTranslatorPage() {
         const pronParts: string[] = [];
         let matchedCount = 0;
         for (const tok of wordTokens) {
-          const tokMatches = findInDictByEnglishPivots(dict, extractNormalizedTerms(tok));
+          const tokMatches = findInDictByEnglishPivots(dict, extractNormalizedTerms(tok), undefined, 1);
           const exact = tokMatches.find((m) => m.matchType === "exact") || tokMatches[0];
           if (exact) {
             matchedCount++;
@@ -602,7 +696,7 @@ export default function KenyanTranslatorPage() {
       };
 
       if (targetLanguage === "all") {
-        for (const dict of ALL_DICTS) {
+        for (const dict of activeDictList) {
           if (!results.some((r) => r.languageId === dict.languageId && r.matchType === "exact")) {
             const syn = synthesizeForDict(dict);
             if (syn) results.push(syn);
@@ -612,7 +706,7 @@ export default function KenyanTranslatorPage() {
         const syn = synthesizeForDict(targetDict);
         if (syn) results.unshift(syn);
         for (const tok of wordTokens) {
-          const tokMatches = findInDictByEnglishPivots(targetDict, extractNormalizedTerms(tok));
+          const tokMatches = findInDictByEnglishPivots(targetDict, extractNormalizedTerms(tok), undefined, 1);
           if (tokMatches.length > 0) results.push(tokMatches[0]);
         }
       }
@@ -627,31 +721,55 @@ export default function KenyanTranslatorPage() {
       searchResults: results,
       detectedPivotWords: Array.from(pivotWordsSet),
     };
-  }, [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, addRecentSearch]);
+  }, [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, activeDictList]);
+
+  const visibleSearchResults = useMemo(
+    () => searchResults.slice(0, searchPage * SEARCH_PAGE_SIZE),
+    [searchResults, searchPage]
+  );
 
   // ─── Category Browser (Supports direct browsing OR Kenyan-to-Kenyan pivot browsing!) ───
-  const browseDict = targetDict || sourceDict || DICT_MAP.swahili;
+  const browseLangId =
+    targetLanguage !== "english" && targetLanguage !== "all"
+      ? targetLanguage
+      : sourceLanguage !== "english"
+      ? sourceLanguage
+      : "swahili";
+  const browseMeta = DICT_META_MAP[browseLangId] || DICT_META_MAP.swahili;
+  const browseDict = loadedDicts[browseLangId] || null;
+
   const categoryEntries = useMemo(() => {
     if (!activeCategory || !browseDict) return [];
     const cat = browseDict.categories.find((c) => c.id === activeCategory);
-    return cat ? cat.entries : [];
-  }, [activeCategory, browseDict]);
+    if (!cat) return [];
+    const q = categorySearch.trim().toLowerCase();
+    if (!q) return cat.entries;
+    return cat.entries.filter(
+      (e) =>
+        e.english.toLowerCase().includes(q) ||
+        e.translation.toLowerCase().includes(q) ||
+        (e.context && e.context.toLowerCase().includes(q))
+    );
+  }, [activeCategory, browseDict, categorySearch]);
+
+  const totalCategoryPages = Math.max(1, Math.ceil(categoryEntries.length / CATEGORY_PAGE_SIZE));
+  const paginatedCategoryEntries = useMemo(() => {
+    const start = (categoryPage - 1) * CATEGORY_PAGE_SIZE;
+    return categoryEntries.slice(start, start + CATEGORY_PAGE_SIZE);
+  }, [categoryEntries, categoryPage]);
 
   // Map English headword -> sourceDict entry when browsing a category in Kenyan A -> Kenyan B mode
   const sourcePivotMap = useMemo(() => {
     if (!sourceDict) return new Map<string, DictEntry>();
+    const idx = getDictIndex(sourceDict);
     const map = new Map<string, DictEntry>();
-    for (const cat of sourceDict.categories) {
-      for (const entry of cat.entries) {
-        for (const term of extractNormalizedTerms(entry.english)) {
-          if (!map.has(term)) map.set(term, entry);
-        }
-      }
+    for (const [term, items] of idx.byEngTerm.entries()) {
+      if (items.length > 0) map.set(term, items[0].entry);
     }
     return map;
   }, [sourceDict]);
 
-  // ─── Compare Mode: word across multiple languages ───
+  // ─── Compare Mode: word across multiple languages (using O(1) index) ───
   const { comparisonResults, resolvedEnglish } = useMemo(() => {
     if (viewMode !== "compare" || !searchQuery.trim()) {
       return { comparisonResults: [], resolvedEnglish: null };
@@ -659,37 +777,24 @@ export default function KenyanTranslatorPage() {
     const qTerms = extractNormalizedTerms(searchQuery);
     const q = qTerms[0] || searchQuery.toLowerCase().trim();
 
-    // First check if query already matches an English headword in any dictionary
     let isKnownEnglish = false;
-    for (const d of ALL_DICTS) {
-      for (const cat of d.categories) {
-        for (const entry of cat.entries) {
-          const engTerms = extractNormalizedTerms(entry.english);
-          if (entry.english.toLowerCase().trim() === q || engTerms.includes(q)) {
-            isKnownEnglish = true;
-            break;
-          }
-        }
-        if (isKnownEnglish) break;
+    for (const d of activeDictList) {
+      const idx = getDictIndex(d);
+      if (idx.byEngTerm.has(q)) {
+        isKnownEnglish = true;
+        break;
       }
-      if (isKnownEnglish) break;
     }
 
-    // Only resolve via indigenous translation if query is not already a known English headword
     let matchedEnglish = q;
     if (!isKnownEnglish) {
-      for (const d of ALL_DICTS) {
-        for (const cat of d.categories) {
-          for (const entry of cat.entries) {
-            const transTerms = extractNormalizedTerms(entry.translation);
-            if (transTerms.includes(q)) {
-              matchedEnglish = extractNormalizedTerms(entry.english)[0] || entry.english.toLowerCase();
-              break;
-            }
-          }
-          if (matchedEnglish !== q) break;
+      for (const d of activeDictList) {
+        const idx = getDictIndex(d);
+        const transHits = idx.byTransTerm.get(q);
+        if (transHits && transHits.length > 0) {
+          matchedEnglish = transHits[0].engTerms[0] || transHits[0].engLower;
+          break;
         }
-        if (matchedEnglish !== q) break;
       }
     }
 
@@ -698,52 +803,44 @@ export default function KenyanTranslatorPage() {
     const results: { languageId: string; languageName: string; family: string; entry: DictEntry | null }[] = [];
 
     compareLanguages.forEach((langId) => {
-      const dict = DICT_MAP[langId];
-      if (!dict) return;
+      const meta = DICT_META_MAP[langId];
+      const dict = loadedDicts[langId];
+      if (!meta) return;
+      if (!dict) {
+        results.push({ languageId: meta.languageId, languageName: meta.languageName, family: meta.family, entry: null });
+        return;
+      }
+
+      const idx = getDictIndex(dict);
       let found: DictEntry | null = null;
 
-      for (const cat of dict.categories) {
-        for (const entry of cat.entries) {
-          const engTerms = extractNormalizedTerms(entry.english);
-          if (
-            targetWords.some(
-              (tw) =>
-                entry.english.toLowerCase().trim() === tw ||
-                engTerms.includes(tw)
-            )
-          ) {
-            found = entry;
-            break;
-          }
+      for (const tw of targetWords) {
+        const hits = idx.byEngTerm.get(tw);
+        if (hits && hits.length > 0) {
+          found = hits[0].entry;
+          break;
         }
-        if (found) break;
       }
 
       if (!found && !isKnownEnglish) {
-        for (const cat of dict.categories) {
-          for (const entry of cat.entries) {
-            const transTerms = extractNormalizedTerms(entry.translation);
-            if (targetWords.some((tw) => transTerms.includes(tw))) {
-              found = entry;
-              break;
-            }
+        for (const tw of targetWords) {
+          const hits = idx.byTransTerm.get(tw);
+          if (hits && hits.length > 0) {
+            found = hits[0].entry;
+            break;
           }
-          if (found) break;
         }
       }
 
       if (!found) {
-        for (const cat of dict.categories) {
-          for (const entry of cat.entries) {
-            const engTerms = extractNormalizedTerms(entry.english);
-            if (
-              targetWords.some((tw) => tw.includes(" ") && engTerms.some((et) => et.includes(tw)))
-            ) {
-              found = entry;
+        const phraseTargets = targetWords.filter((tw) => tw.includes(" "));
+        if (phraseTargets.length > 0) {
+          for (const item of idx.all) {
+            if (phraseTargets.some((tw) => item.engTerms.some((et) => et.includes(tw)))) {
+              found = item.entry;
               break;
             }
           }
-          if (found) break;
         }
       }
 
@@ -754,23 +851,33 @@ export default function KenyanTranslatorPage() {
       comparisonResults: results,
       resolvedEnglish: matchedEnglish !== q ? matchedEnglish : null,
     };
-  }, [searchQuery, viewMode, compareLanguages]);
+  }, [searchQuery, viewMode, compareLanguages, activeDictList, loadedDicts]);
 
   // Stats
-  const totalEntries = ALL_DICTS.reduce((sum, d) => sum + d.categories.reduce((s, c) => s + c.entries.length, 0), 0);
+  const totalEntries = TOTAL_DICTIONARY_ENTRIES;
 
   // ─── Random Word Feature ───
-  const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string } | null>(null);
+  const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string } | null>(() => {
+    const sample = INITIAL_RANDOM_WORDS[0];
+    return sample ? { entry: sample.entry, langName: sample.langName } : null;
+  });
+
   const getRandomWord = useCallback(() => {
-    const populatedDicts = ALL_DICTS.filter((d) => d.categories.some((c) => c.entries.length > 0));
-    if (populatedDicts.length === 0) return;
-    const dict = populatedDicts[Math.floor(Math.random() * populatedDicts.length)];
-    const validCats = dict.categories.filter((c) => c.entries.length > 0);
-    if (validCats.length === 0) return;
-    const cat = validCats[Math.floor(Math.random() * validCats.length)];
-    const entry = cat.entries[Math.floor(Math.random() * cat.entries.length)];
-    if (entry) setRandomWord({ entry, langName: dict.languageName });
-  }, []);
+    if (activeDictList.length > 0) {
+      const dict = activeDictList[Math.floor(Math.random() * activeDictList.length)];
+      const validCats = dict.categories.filter((c) => c.entries.length > 0);
+      if (validCats.length > 0) {
+        const cat = validCats[Math.floor(Math.random() * validCats.length)];
+        const entry = cat.entries[Math.floor(Math.random() * cat.entries.length)];
+        if (entry) {
+          setRandomWord({ entry, langName: dict.languageName });
+          return;
+        }
+      }
+    }
+    const sample = INITIAL_RANDOM_WORDS[Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)];
+    if (sample) setRandomWord({ entry: sample.entry, langName: sample.langName });
+  }, [activeDictList]);
 
   useEffect(() => { getRandomWord(); }, [getRandomWord]);
 
@@ -788,7 +895,7 @@ export default function KenyanTranslatorPage() {
         {randomWord && (
           <div className="bg-gradient-to-r from-gold/10 to-kenya-green/10 border border-gold/20 rounded-xl p-3.5 sm:p-4 flex items-center justify-between gap-3 sm:gap-4">
             <div className="min-w-0">
-              <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-0.5 sm:mb-1 flex items-center gap-1.5"><Dices className="w-3 h-3" /> Discover a word ({ALL_DICTS.length} Kenyan languages)</p>
+              <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-0.5 sm:mb-1 flex items-center gap-1.5"><Dices className="w-3 h-3" /> Discover a word ({ALL_DICT_METAS.length} Kenyan languages)</p>
               <p className="text-sm font-bold text-text-primary">&ldquo;{randomWord.entry.english}&rdquo;</p>
               <p className="text-xs text-text-secondary mt-0.5">
                 <span className="text-gold font-medium">{randomWord.entry.translation}</span>
@@ -810,7 +917,7 @@ export default function KenyanTranslatorPage() {
         <ExpandablePillRow>
           {([
             { id: "translate" as const, label: "Translate (Any → Any / All)" },
-            { id: "compare" as const, label: `Compare (${ALL_DICTS.length} Languages)` },
+            { id: "compare" as const, label: `Compare (${ALL_DICT_METAS.length} Languages)` },
             { id: "browse" as const, label: "Browse Dictionaries" },
           ]).map((mode) => {
             const active = viewMode === mode.id;
@@ -845,7 +952,7 @@ export default function KenyanTranslatorPage() {
                     onValueChange={setSourceLanguage}
                     options={[
                       { value: "english", label: "English" },
-                      ...ALL_DICTS.map((d) => ({ value: d.languageId, label: d.languageName }))
+                      ...ALL_DICT_METAS.map((d) => ({ value: d.languageId, label: d.languageName }))
                     ]}
                     id="source-lang"
                   />
@@ -867,9 +974,9 @@ export default function KenyanTranslatorPage() {
                     value={targetLanguage}
                     onValueChange={setTargetLanguage}
                     options={[
-                      { value: "all", label: `✨ All ${ALL_DICTS.length} Kenyan Languages` },
+                      { value: "all", label: `✨ All ${ALL_DICT_METAS.length} Kenyan Languages` },
                       { value: "english", label: "English" },
-                      ...ALL_DICTS.map((d) => ({ value: d.languageId, label: d.languageName }))
+                      ...ALL_DICT_METAS.map((d) => ({ value: d.languageId, label: d.languageName }))
                     ]}
                     id="target-lang"
                   />
@@ -881,10 +988,10 @@ export default function KenyanTranslatorPage() {
                 <div className="mt-2.5 px-3 py-1.5 rounded-lg bg-gold/10 border border-gold/25 flex items-center gap-2 text-[0.6875rem] text-text-secondary">
                   <span className="text-gold font-semibold">🔗 English Middleman Active:</span>
                   <span>
-                    Translating from <strong>{sourceDict?.languageName}</strong>{" "}
+                    Translating from <strong>{sourceMeta?.languageName}</strong>{" "}
                     <ArrowRight className="inline w-3 h-3 text-gold mx-0.5" /> <strong>English</strong>{" "}
                     <ArrowRight className="inline w-3 h-3 text-gold mx-0.5" />{" "}
-                    <strong>{targetLanguage === "all" ? `All ${ALL_DICTS.length - 1} Other Kenyan Languages` : targetDict?.languageName}</strong>
+                    <strong>{targetLanguage === "all" ? `All ${ALL_DICT_METAS.length - 1} Other Kenyan Languages` : targetMeta?.languageName}</strong>
                   </span>
                 </div>
               )}
@@ -898,7 +1005,7 @@ export default function KenyanTranslatorPage() {
                   placeholder={
                     sourceLanguage === "english"
                       ? "Type an English word (e.g. Water, Sun, Mother, One, Fire)..."
-                      : `Type a word in ${sourceDict?.languageName ?? "source language"} (or English)...`
+                      : `Type a word in ${sourceMeta?.languageName ?? "source language"} (or English)...`
                   }
                   className="text-sm w-full"
                   id="translator-search"
@@ -934,24 +1041,24 @@ export default function KenyanTranslatorPage() {
             </div>
 
             {/* Target Language Info Banner */}
-            {targetDict && !searchQuery && (
+            {targetMeta && !searchQuery && (
               <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 flex items-start gap-3">
-                <span className="w-2.5 h-2.5 rounded-full mt-1 flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[targetDict.family] }} />
+                <span className="w-2.5 h-2.5 rounded-full mt-1 flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[targetMeta.family] }} />
                 <div className="min-w-0">
-                  <h3 className="text-sm font-bold text-text-primary">{targetDict.languageName}</h3>
+                  <h3 className="text-sm font-bold text-text-primary">{targetMeta.languageName}</h3>
                   <p className="text-[0.65rem] text-text-muted mt-0.5">
-                    {targetDict.nativeName} · {(targetDict.speakerCount / 1000000).toFixed(2).replace(/\.?0+$/, "")}M speakers · {targetDict.family.charAt(0).toUpperCase() + targetDict.family.slice(1)} family
+                    {targetMeta.nativeName} · {(targetMeta.speakerCount / 1000000).toFixed(2).replace(/\.?0+$/, "")}M speakers · {targetMeta.family.charAt(0).toUpperCase() + targetMeta.family.slice(1)} family
                   </p>
-                  <p className="text-[0.6rem] text-text-muted mt-1">{targetDict.counties.join(", ")}</p>
+                  <p className="text-[0.6rem] text-text-muted mt-1">{targetMeta.counties.join(", ")}</p>
                   <div className="flex items-center gap-4 mt-2">
                     <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
-                      <BookOpen className="w-3.5 h-3.5" /> {targetDict.categories.reduce((s, c) => s + c.entries.length, 0)} words
+                      <BookOpen className="w-3.5 h-3.5" /> {targetMeta.totalEntries.toLocaleString()} words
                     </span>
                     <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
-                      <Folder className="w-3.5 h-3.5" /> {targetDict.categories.length} categories
+                      <Folder className="w-3.5 h-3.5" /> {targetMeta.categories.length} categories
                     </span>
                     <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
-                      <Hash className="w-3.5 h-3.5" /> v{targetDict.dictionaryVersion}
+                      <Hash className="w-3.5 h-3.5" /> v{targetMeta.dictionaryVersion}
                     </span>
                   </div>
                 </div>
@@ -963,11 +1070,11 @@ export default function KenyanTranslatorPage() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between flex-wrap gap-2">
                   <p className="text-xs text-text-muted">
-                    {searchResults.length} result{searchResults.length !== 1 ? "s" : ""} for &ldquo;{searchQuery}&rdquo;
+                    Showing {visibleSearchResults.length} of {searchResults.length} result{searchResults.length !== 1 ? "s" : ""} for &ldquo;{searchQuery}&rdquo;
                     {targetLanguage === "all" ? (
                       <span> across all Kenyan languages</span>
-                    ) : targetDict ? (
-                      <span> in {targetDict.languageName}</span>
+                    ) : targetMeta ? (
+                      <span> in {targetMeta.languageName}</span>
                     ) : (
                       <span> in English</span>
                     )}
@@ -979,12 +1086,12 @@ export default function KenyanTranslatorPage() {
                   )}
                 </div>
 
-                {searchResults.length === 0 && (
+                {searchResults.length === 0 && !isLoadingDicts && (
                   <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
                     <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-8 h-8 text-text-muted" /></div>
                     <p className="text-sm font-medium text-text-primary mb-1">No translations found</p>
                     <p className="text-xs text-text-muted max-w-sm mx-auto">
-                      Try searching a core word (e.g. Water, Fire, Sun, Mother, One) or switch &ldquo;To&rdquo; to <strong>All {ALL_DICTS.length} Kenyan Languages</strong>.
+                      Try searching a core word (e.g. Water, Fire, Sun, Mother, One) or switch &ldquo;To&rdquo; to <strong>All {ALL_DICT_METAS.length} Kenyan Languages</strong>.
                     </p>
                     <div className="mt-3 flex flex-wrap justify-center gap-2">
                       {targetLanguage !== "all" && (
@@ -993,12 +1100,12 @@ export default function KenyanTranslatorPage() {
                           onClick={() => setTargetLanguage("all")}
                           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-kenya-green/15 hover:bg-kenya-green/25 text-kenya-green-light border border-kenya-green/30 transition-all cursor-pointer"
                         >
-                          <span>Translate &ldquo;{searchQuery}&rdquo; to All {ALL_DICTS.length} Languages</span>
+                          <span>Translate &ldquo;{searchQuery}&rdquo; to All {ALL_DICT_METAS.length} Languages</span>
                         </button>
                       )}
                       <button
                         type="button"
-                        onClick={() => openContributeModal(targetDict?.languageName || sourceDict?.languageName || "Swahili", searchQuery)}
+                        onClick={() => openContributeModal(targetMeta?.languageName || sourceMeta?.languageName || "Swahili", searchQuery)}
                         className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 hover:bg-gold/25 text-gold border border-gold/30 transition-all cursor-pointer"
                       >
                         <Plus className="w-3.5 h-3.5" />
@@ -1009,9 +1116,9 @@ export default function KenyanTranslatorPage() {
                 )}
 
                 <div className={targetLanguage === "all" ? "grid grid-cols-1 sm:grid-cols-2 gap-2.5" : "space-y-2"}>
-                  {searchResults.map((result, i) => {
+                  {visibleSearchResults.map((result, i) => {
                     const favKey = `${result.languageId}:${result.entry.english}`;
-                    const isFav = favorites.includes(favKey);
+                    const isFav = favoritesSet.has(favKey);
                     const isReverseToEnglish = sourceLanguage !== "english" && targetLanguage === "english";
 
                     return (
@@ -1028,15 +1135,15 @@ export default function KenyanTranslatorPage() {
                             </div>
 
                             {/* 3-Column Pivot View when translating Kenyan A -> Kenyan B */}
-                            {result.sourceEntry && sourceDict ? (
+                            {result.sourceEntry && sourceMeta ? (
                               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 pt-2 border-t border-border/40">
                                 <div>
-                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{sourceDict.languageName}</p>
-                                  <p className="text-xs font-bold text-text-primary">{result.sourceEntry.translation}</p>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{sourceMeta.languageName}</p>
+                                  <p className="text-xs font-bold text-text-primary break-words">{result.sourceEntry.translation}</p>
                                 </div>
                                 <div>
                                   <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">English (Middleman)</p>
-                                  <p className="text-xs font-medium text-text-secondary">{result.pivotEnglish}</p>
+                                  <p className="text-xs font-medium text-text-secondary break-words">{result.pivotEnglish}</p>
                                 </div>
                                 <div>
                                   <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{result.languageName}</p>
@@ -1053,7 +1160,7 @@ export default function KenyanTranslatorPage() {
                                     </div>
                                   ) : (
                                     <>
-                                      <p className="text-sm font-bold text-gold">{result.entry.translation}</p>
+                                      <p className="text-sm font-bold text-gold break-words">{result.entry.translation}</p>
                                       {result.entry.pronunciation && (
                                         <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
                                       )}
@@ -1065,11 +1172,11 @@ export default function KenyanTranslatorPage() {
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1.5">
                                 <div>
                                   <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverseToEnglish ? result.languageName : "English"}</p>
-                                  <p className="text-xs sm:text-sm font-semibold text-text-primary">{isReverseToEnglish ? result.entry.translation : result.entry.english}</p>
+                                  <p className="text-xs sm:text-sm font-semibold text-text-primary break-words">{isReverseToEnglish ? result.entry.translation : result.entry.english}</p>
                                 </div>
                                 <div>
                                   <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverseToEnglish ? "English" : result.languageName}</p>
-                                  <p className="text-sm font-bold text-gold">{isReverseToEnglish ? result.entry.english : result.entry.translation}</p>
+                                  <p className="text-sm font-bold text-gold break-words">{isReverseToEnglish ? result.entry.english : result.entry.translation}</p>
                                   {result.entry.pronunciation && (
                                     <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
                                   )}
@@ -1109,19 +1216,32 @@ export default function KenyanTranslatorPage() {
                     );
                   })}
                 </div>
+
+                {searchResults.length > visibleSearchResults.length && (
+                  <div className="text-center pt-2">
+                    <button
+                      type="button"
+                      onClick={() => setSearchPage((p) => p + 1)}
+                      className="px-4 py-2 rounded-xl bg-bg-card border border-border hover:border-gold/40 text-xs font-semibold text-gold transition-colors cursor-pointer"
+                    >
+                      Show More Results ({searchResults.length - visibleSearchResults.length} remaining)
+                    </button>
+                  </div>
+                )}
               </div>
             )}
 
             {/* Category Browser (when not searching) */}
-            {!searchQuery && browseDict && (
+            {!searchQuery && browseMeta && (
               <>
                 <div>
                   <h3 className="text-sm font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
-                    Browse {browseDict.languageName} by Category
+                    Browse {browseMeta.languageName} by Category
                   </h3>
                   <ExpandablePillRow>
                     {ALL_CATEGORY_IDS.map((cat) => {
-                      const hasEntries = browseDict.categories.some((c) => c.id === cat.id && c.entries.length > 0);
+                      const catMeta = browseMeta.categories.find((c) => c.id === cat.id);
+                      const hasEntries = Boolean(catMeta && catMeta.count > 0);
                       const active = activeCategory === cat.id;
                       return (
                         <button
@@ -1136,81 +1256,149 @@ export default function KenyanTranslatorPage() {
                               : "border-border/50 bg-bg-elevated/40 text-text-muted/40 cursor-not-allowed"
                           }`}
                         >
-                          {cat.name}
+                          {cat.name} {catMeta ? `(${catMeta.count})` : ""}
                         </button>
                       );
                     })}
                   </ExpandablePillRow>
                 </div>
 
-                {/* Category Entries Table */}
-                {activeCategory && categoryEntries.length > 0 && (
+                {/* Category Entries Table (Paginated for Fast Rendering) */}
+                {activeCategory && (
                   <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-                    <div className="px-4 py-2.5 border-b border-border bg-bg-elevated/50">
-                      <h4 className="text-sm font-semibold text-text-primary flex items-center gap-2">
-                        <span><DynamicIcon emoji={ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.icon} className="w-[1em] h-[1em]" /></span>
-                        {ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name} — {browseDict.languageName}
-                        <span className="text-[0.6rem] text-text-muted font-normal">({categoryEntries.length} entries)</span>
-                      </h4>
-                    </div>
-                    <div className="divide-y divide-border">
-                      {categoryEntries.map((entry, i) => {
-                        const favKey = `${browseDict.languageId}:${entry.english}`;
-                        const isFav = favorites.includes(favKey);
-                        const matchedSource =
-                          sourceDict && targetDict && sourceDict.languageId !== targetDict.languageId
-                            ? extractNormalizedTerms(entry.english).map((t) => sourcePivotMap.get(t)).find(Boolean)
-                            : undefined;
+                    <div className="px-4 py-3 border-b border-border bg-bg-elevated/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                      <div>
+                        <h4 className="text-sm font-semibold text-text-primary flex items-center gap-2">
+                          <span><DynamicIcon emoji={ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.icon} className="w-[1em] h-[1em]" /></span>
+                          {ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name} — {browseMeta.languageName}
+                          <span className="text-[0.65rem] text-text-muted font-normal">
+                            ({categoryEntries.length.toLocaleString()} entries)
+                          </span>
+                        </h4>
+                        {categoryEntries.length > CATEGORY_PAGE_SIZE && (
+                          <p className="text-[0.65rem] text-text-muted mt-0.5">
+                            Showing {((categoryPage - 1) * CATEGORY_PAGE_SIZE) + 1}–{Math.min(categoryPage * CATEGORY_PAGE_SIZE, categoryEntries.length)} of {categoryEntries.length.toLocaleString()}
+                          </p>
+                        )}
+                      </div>
 
-                        return (
-                          <div key={i} className="px-3.5 sm:px-4 py-2.5 sm:py-3 hover:bg-bg-card-hover transition-colors">
-                            <div className="flex items-start justify-between gap-3">
-                              <div className="min-w-0 flex-1 grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-3">
-                                <div>
-                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">
-                                    {matchedSource && sourceDict ? `${sourceDict.languageName} → English` : "English"}
-                                  </p>
-                                  {matchedSource && sourceDict && (
-                                    <p className="text-xs font-bold text-kenya-green-light">{matchedSource.translation}</p>
-                                  )}
-                                  <p className="text-[0.8125rem] text-text-primary font-medium">{entry.english}</p>
-                                </div>
-                                <div>
-                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{browseDict.languageName}</p>
-                                  <p className="text-[0.8125rem] text-gold font-bold">{entry.translation}</p>
-                                </div>
-                                <div>
-                                  {entry.pronunciation && (
-                                    <p className="text-[0.75rem] text-text-muted italic">/{entry.pronunciation}/</p>
-                                  )}
-                                  {entry.context && (
-                                    <p className="text-[0.65rem] text-text-muted mt-0.5">{entry.context}</p>
-                                  )}
+                      <div className="w-full sm:w-64">
+                        <SearchInput
+                          value={categorySearch}
+                          onChange={(e) => {
+                            setCategorySearch(e.target.value);
+                            setCategoryPage(1);
+                          }}
+                          onClear={() => {
+                            setCategorySearch("");
+                            setCategoryPage(1);
+                          }}
+                          placeholder={`Filter within ${ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name}...`}
+                          className="text-xs w-full"
+                        />
+                      </div>
+                    </div>
+
+                    {!browseDict ? (
+                      <div className="p-8 text-center text-xs text-text-muted animate-pulse">
+                        Loading {browseMeta.languageName} dictionary...
+                      </div>
+                    ) : paginatedCategoryEntries.length === 0 ? (
+                      <div className="p-6 text-center text-xs text-text-muted">
+                        No entries match &ldquo;{categorySearch}&rdquo; in this category.
+                      </div>
+                    ) : (
+                      <>
+                        <div className="divide-y divide-border">
+                          {paginatedCategoryEntries.map((entry, i) => {
+                            const favKey = `${browseDict.languageId}:${entry.english}`;
+                            const isFav = favoritesSet.has(favKey);
+                            const matchedSource =
+                              sourceDict && targetDict && sourceDict.languageId !== targetDict.languageId
+                                ? extractNormalizedTerms(entry.english).map((t) => sourcePivotMap.get(t)).find(Boolean)
+                                : undefined;
+
+                            return (
+                              <div key={i} className="px-3.5 sm:px-4 py-2.5 sm:py-3 hover:bg-bg-card-hover transition-colors">
+                                <div className="flex items-start justify-between gap-3">
+                                  <div className="min-w-0 flex-1 grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-3">
+                                    <div>
+                                      <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">
+                                        {matchedSource && sourceDict ? `${sourceDict.languageName} → English` : "English"}
+                                      </p>
+                                      {matchedSource && sourceDict && (
+                                        <p className="text-xs font-bold text-kenya-green-light break-words">{matchedSource.translation}</p>
+                                      )}
+                                      <p className="text-[0.8125rem] text-text-primary font-medium break-words">{entry.english}</p>
+                                    </div>
+                                    <div>
+                                      <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{browseDict.languageName}</p>
+                                      <p className="text-[0.8125rem] text-gold font-bold break-words">{entry.translation}</p>
+                                    </div>
+                                    <div>
+                                      {entry.pronunciation && (
+                                        <p className="text-[0.75rem] text-text-muted italic break-words">/{entry.pronunciation}/</p>
+                                      )}
+                                      {entry.context && (
+                                        <p className="text-[0.65rem] text-text-muted mt-0.5">{entry.context}</p>
+                                      )}
+                                    </div>
+                                  </div>
+                                  <div className="flex gap-1 flex-shrink-0">
+                                    <button onClick={() => copyToClipboard(entry.translation)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title="Copy">
+                                      {copiedText === entry.translation ? (
+                                        <svg className="w-3 h-3 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                      ) : (
+                                        <svg className="w-3 h-3 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                          <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                        </svg>
+                                      )}
+                                    </button>
+                                    <button onClick={() => toggleFavorite(favKey)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors">
+                                      <svg className={`w-3 h-3 ${isFav ? "text-kenya-red fill-kenya-red" : "text-text-muted"}`} fill={isFav ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                      </svg>
+                                    </button>
+                                  </div>
                                 </div>
                               </div>
-                              <div className="flex gap-1 flex-shrink-0">
-                                <button onClick={() => copyToClipboard(entry.translation)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title="Copy">
-                                  {copiedText === entry.translation ? (
-                                    <svg className="w-3 h-3 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                  ) : (
-                                    <svg className="w-3 h-3 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                                      <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                    </svg>
-                                  )}
-                                </button>
-                                <button onClick={() => toggleFavorite(favKey)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors">
-                                  <svg className={`w-3 h-3 ${isFav ? "text-kenya-red fill-kenya-red" : "text-text-muted"}`} fill={isFav ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                  </svg>
-                                </button>
-                              </div>
+                            );
+                          })}
+                        </div>
+
+                        {/* Pagination Footer */}
+                        {totalCategoryPages > 1 && (
+                          <div className="px-4 py-3 border-t border-border bg-bg-elevated/40 flex items-center justify-between gap-2 flex-wrap">
+                            <span className="text-xs text-text-muted">
+                              Page <strong className="text-text-primary">{categoryPage}</strong> of{" "}
+                              <strong className="text-text-primary">{totalCategoryPages}</strong> ({categoryEntries.length.toLocaleString()} entries)
+                            </span>
+                            <div className="flex items-center gap-1.5">
+                              <button
+                                type="button"
+                                disabled={categoryPage <= 1}
+                                onClick={() => setCategoryPage((p) => Math.max(1, p - 1))}
+                                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-bg-card border border-border text-text-secondary hover:text-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                              >
+                                <ChevronLeft className="w-3.5 h-3.5" />
+                                <span>Previous</span>
+                              </button>
+                              <button
+                                type="button"
+                                disabled={categoryPage >= totalCategoryPages}
+                                onClick={() => setCategoryPage((p) => Math.min(totalCategoryPages, p + 1))}
+                                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-bg-card border border-border text-text-secondary hover:text-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                              >
+                                <span>Next</span>
+                                <ChevronRight className="w-3.5 h-3.5" />
+                              </button>
                             </div>
                           </div>
-                        );
-                      })}
-                    </div>
+                        )}
+                      </>
+                    )}
                   </div>
                 )}
               </>
@@ -1227,20 +1415,20 @@ export default function KenyanTranslatorPage() {
               <div>
                 <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
                   <label className="text-[0.6rem] uppercase tracking-wider text-text-muted font-medium">
-                    Compare across languages ({compareLanguages.length}/{ALL_DICTS.length} selected)
+                    Compare across languages ({compareLanguages.length}/{ALL_DICT_METAS.length} selected)
                   </label>
                   <div className="flex items-center gap-1.5 bg-bg-elevated px-2 py-0.5 rounded-lg border border-border">
                     <button
                       type="button"
-                      onClick={() => setCompareLanguages(ALL_DICTS.map((d) => d.languageId))}
+                      onClick={() => setCompareLanguages(ALL_DICT_METAS.map((d) => d.languageId))}
                       className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
                     >
-                      All ({ALL_DICTS.length})
+                      All ({ALL_DICT_METAS.length})
                     </button>
                     <span className="text-[0.6rem] text-border">|</span>
                     <button
                       type="button"
-                      onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "nilotic").map((d) => d.languageId))}
+                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "nilotic").map((d) => d.languageId))}
                       className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
                     >
                       Nilotic
@@ -1248,7 +1436,7 @@ export default function KenyanTranslatorPage() {
                     <span className="text-[0.6rem] text-border">|</span>
                     <button
                       type="button"
-                      onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "bantu").map((d) => d.languageId))}
+                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "bantu").map((d) => d.languageId))}
                       className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
                     >
                       Bantu
@@ -1256,7 +1444,7 @@ export default function KenyanTranslatorPage() {
                     <span className="text-[0.6rem] text-border">|</span>
                     <button
                       type="button"
-                      onClick={() => setCompareLanguages(ALL_DICTS.filter((d) => d.family === "cushitic").map((d) => d.languageId))}
+                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "cushitic").map((d) => d.languageId))}
                       className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
                     >
                       Cushitic
@@ -1273,7 +1461,7 @@ export default function KenyanTranslatorPage() {
                 </div>
 
                 <ExpandablePillRow>
-                  {ALL_DICTS.map((d) => {
+                  {ALL_DICT_METAS.map((d) => {
                     const isSelected = compareLanguages.includes(d.languageId);
                     return (
                       <button
@@ -1332,7 +1520,7 @@ export default function KenyanTranslatorPage() {
                   <BarChart className="w-6 h-6" />
                 </div>
                 <div className="max-w-md mx-auto">
-                  <h4 className="text-sm font-semibold text-text-primary">Compare Across {ALL_DICTS.length} Kenyan Languages</h4>
+                  <h4 className="text-sm font-semibold text-text-primary">Compare Across {ALL_DICT_METAS.length} Kenyan Languages</h4>
                   <p className="text-xs text-text-muted mt-1 leading-relaxed">
                     Instantly compare vocabulary across Swahili, Kikuyu, Dholuo, Kalenjin, Maasai, Samburu, Embu, Taita, Borana, Rendille, Pokomo, Pokot, Taveta, and more.
                   </p>
@@ -1373,7 +1561,7 @@ export default function KenyanTranslatorPage() {
                       </div>
                       {result.entry ? (
                         <div className="min-w-0 flex-1">
-                          <p className="text-sm font-bold text-gold">{result.entry.translation}</p>
+                          <p className="text-sm font-bold text-gold break-words">{result.entry.translation}</p>
                           {result.entry.pronunciation && (
                             <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
                           )}
@@ -1423,7 +1611,7 @@ export default function KenyanTranslatorPage() {
             <div className="flex items-center justify-between gap-4 mb-3 flex-wrap">
               <div>
                 <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                  All Kenyan Languages ({ALL_DICTS.length} active dictionaries)
+                  All Kenyan Languages ({ALL_DICT_METAS.length} active dictionaries)
                 </h3>
                 <p className="text-[0.65rem] text-text-muted">{totalEntries.toLocaleString()} total verified words &amp; phrases</p>
               </div>
@@ -1439,8 +1627,8 @@ export default function KenyanTranslatorPage() {
 
             {/* Active Language Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
-              {ALL_DICTS.map((dict) => {
-                const entryCount = dict.categories.reduce((s, c) => s + c.entries.length, 0);
+              {ALL_DICT_METAS.map((dict) => {
+                const entryCount = dict.totalEntries;
                 const maxEntries = 120;
                 const coverage = Math.min(100, (entryCount / maxEntries) * 100);
                 return (
@@ -1452,7 +1640,7 @@ export default function KenyanTranslatorPage() {
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <button
                           type="button"
-                          onClick={() => { const firstCat = dict.categories.find((c) => c.entries.length > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToPageTop(); }}
+                          onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToPageTop(); }}
                           className="text-left group-hover:text-gold transition-colors cursor-pointer"
                         >
                           <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{dict.languageName}</h4>
@@ -1463,12 +1651,12 @@ export default function KenyanTranslatorPage() {
                             <span className="text-[0.6rem] text-text-muted">{dict.nativeName}</span>
                           </div>
                         </button>
-                        <span className="text-xs font-bold text-gold">{entryCount}</span>
+                        <span className="text-xs font-bold text-gold">{entryCount.toLocaleString()}</span>
                       </div>
                       <p className="text-[0.6rem] text-text-muted mb-2">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
                       <div className="flex flex-wrap gap-1 mb-2">
                         {dict.categories.map((cat) => (
-                          <span key={cat.id} className="text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.entries.length}</span>
+                          <span key={cat.id} className="text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.count}</span>
                         ))}
                       </div>
                       <div className="h-1 bg-bg-elevated rounded-full overflow-hidden">
@@ -1479,7 +1667,7 @@ export default function KenyanTranslatorPage() {
                     <div className="flex items-center justify-between gap-2 mt-3 pt-2.5 border-t border-border/60">
                       <button
                         type="button"
-                        onClick={() => { const firstCat = dict.categories.find((c) => c.entries.length > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToPageTop(); }}
+                        onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToPageTop(); }}
                         className="text-[0.65rem] font-medium text-text-secondary hover:text-gold flex items-center gap-1 transition-colors cursor-pointer"
                       >
                         <span>Translate</span>
@@ -1506,7 +1694,7 @@ export default function KenyanTranslatorPage() {
           <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About This Translator</h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
             <div className="text-center">
-              <p className="text-lg font-bold text-gold">{ALL_DICTS.length}</p>
+              <p className="text-lg font-bold text-gold">{ALL_DICT_METAS.length}</p>
               <p className="text-[0.6rem] text-text-muted">Kenyan Languages</p>
             </div>
             <div className="text-center">
@@ -1523,7 +1711,7 @@ export default function KenyanTranslatorPage() {
             </div>
           </div>
           <ul className="space-y-1.5">
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Translate between any two Kenyan languages (or into all {ALL_DICTS.length} languages at once) using English as an automatic semantic bridge.</span></li>
+            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Translate between any two Kenyan languages (or into all {ALL_DICT_METAS.length} languages at once) using English as an automatic semantic bridge.</span></li>
             <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Grounded in 34 verified public-domain monographs (1842–1929), Unicode CLDR, and community linguistic contributions.</span></li>
           </ul>
         </div>

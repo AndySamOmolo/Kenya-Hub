@@ -162,7 +162,7 @@
     },
     {
       "id": "numbers",
-      "name": "Numbers",
+      "name": "Numbers & Counting",
       "icon": "🔢",
       "entries": [
         {
@@ -462,456 +462,8 @@
       ]
     },
     {
-      "id": "phrases",
-      "name": "Common Phrases",
-      "icon": "🗣️",
-      "entries": [
-        {
-          "english": "Small",
-          "translation": "edit (aditon)",
-          "pronunciation": "eh-deet",
-          "context": "Hobley 1902 & Johnston 1902",
-          "audioFile": null
-        },
-        {
-          "english": "Big",
-          "translation": "epol (apolon)",
-          "pronunciation": "eh-pohl",
-          "context": "Hobley 1902 & Johnston 1902",
-          "audioFile": null
-        },
-        {
-          "english": "Bad",
-          "translation": "erono (aronon)",
-          "pronunciation": "eh-roh-noh",
-          "context": "Hobley 1902 & Johnston 1902",
-          "audioFile": null
-        },
-        {
-          "english": "Good",
-          "translation": "ejok (ajokon)",
-          "pronunciation": "eh-johk",
-          "context": "Hobley 1902 & Johnston 1902",
-          "audioFile": null
-        },
-        {
-          "english": "Love / affection",
-          "translation": "amina / amin",
-          "pronunciation": "amina / amin",
-          "context": "Wikipedia Teso language — Abstract nouns",
-          "audioFile": null
-        },
-        {
-          "english": "Goodness",
-          "translation": "ajokus / ajokis",
-          "pronunciation": "ajokus / ajokis",
-          "context": "Wikipedia Teso language — Abstract nouns",
-          "audioFile": null
-        },
-        {
-          "english": "Happiness / gratitude",
-          "translation": "aiyalama",
-          "pronunciation": "aiyalama",
-          "context": "Wikipedia Teso language — Abstract nouns",
-          "audioFile": null
-        },
-        {
-          "english": "Where? / There (not far) / Over there",
-          "translation": "ai, aibo? (where?) / nen (there) / ngina (over there)",
-          "pronunciation": "ai, aibo? (where?) / nen (there) / ngina (over there)",
-          "context": "Wikipedia Teso language — Adverbs of place",
-          "audioFile": null
-        },
-        {
-          "english": "Inside / In the middle (between) / Behind / In front",
-          "translation": "toma (inside) / kiding (between) / kau (behind) / ngaren (in front)",
-          "pronunciation": "toma (inside) / kiding (between) / kau (behind) / ngaren (in front)",
-          "context": "Wikipedia Teso language — Adverbs of place",
-          "audioFile": null
-        },
-        {
-          "english": "Right side / Left side",
-          "translation": "teten (right) / kediany (left)",
-          "pronunciation": "teten (right) / kediany (left)",
-          "context": "Wikipedia Teso language — Adverbs of place",
-          "audioFile": null
-        },
-        {
-          "english": "Again / No / Because",
-          "translation": "bobo (again) / mam (no) / naarai (because)",
-          "pronunciation": "bobo (again) / mam (no) / naarai (because)",
-          "context": "Wikipedia Teso language — Alphabet & Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "road, path (< Proto-Teso-Turkana -rɔt)",
-          "translation": "erot (pl. irotin)",
-          "pronunciation": "erot (pl. irotin)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "name (< Proto-Eastern Nilotic -kɛrɪn)",
-          "translation": "ekiror (pl. ikiroria)",
-          "pronunciation": "ekiror (pl. ikiroria)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Sunday (Day of the week)",
-          "translation": "Nakaejuma (Jum)",
-          "pronunciation": "nakaejuma (jum)",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Monday (Day of the week)",
-          "translation": "Nakaebarasa (Bar)",
-          "pronunciation": "nakaebarasa (bar)",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Tuesday (Day of the week)",
-          "translation": "Nakaare (Aar)",
-          "pronunciation": "nakaare (aar)",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Wednesday (Day of the week)",
-          "translation": "Nakauni (Uni)",
-          "pronunciation": "nakauni (uni)",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Thursday (Day of the week)",
-          "translation": "Nakaung’on (Ung)",
-          "pronunciation": "nakaung’on (ung)",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Friday (Day of the week)",
-          "translation": "Nakakany (Kan)",
-          "pronunciation": "nakakany (kan)",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Saturday (Day of the week)",
-          "translation": "Nakasabiti (Sab)",
-          "pronunciation": "nakasabiti (sab)",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "In the morning (AM day period)",
-          "translation": "Taparachu",
-          "pronunciation": "taparachu",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "In the afternoon / evening (PM day period)",
-          "translation": "Ebongi",
-          "pronunciation": "ebongi",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Era / historical age",
-          "translation": "Enzi",
-          "pronunciation": "enzi",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "South African Rand (ZAR)",
-          "translation": "Ango’otol lok’ Afrika Kusini",
-          "pronunciation": "ango’otol lok’ afrika kusini",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
-          "translation": "Leoni",
-          "pronunciation": "leoni",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "West African CFA Franc (XOF)",
-          "translation": "Ango’otol lok’ CFA BCEAO",
-          "pronunciation": "ango’otol lok’ cfa bceao",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Central African CFA Franc (XAF)",
-          "translation": "Ango’otol lok’ CFA BEAC",
-          "pronunciation": "ango’otol lok’ cfa beac",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "United Arab Emirates Dirham (AED)",
-          "translation": "Ango’otol lok’ Falme za Kiarabu",
-          "pronunciation": "ango’otol lok’ falme za kiarabu",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Kenya (Country / Territory)",
-          "translation": "Kenia",
-          "pronunciation": "kenia",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Ethiopia (Country / Territory)",
-          "translation": "Uhabeshi",
-          "pronunciation": "uhabeshi",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Sudan (Country / Territory)",
-          "translation": "Sudani",
-          "pronunciation": "sudani",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Congo - Brazzaville (Country / Territory)",
-          "translation": "Kongo",
-          "pronunciation": "kongo",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Nigeria (Country / Territory)",
-          "translation": "Nijeria",
-          "pronunciation": "nijeria",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Côte d’Ivoire (Country / Territory)",
-          "translation": "Kodivaa",
-          "pronunciation": "kodivaa",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Niger (Country / Territory)",
-          "translation": "Nijeri",
-          "pronunciation": "nijeri",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Chad (Country / Territory)",
-          "translation": "Chadi",
-          "pronunciation": "chadi",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Gabon (Country / Territory)",
-          "translation": "Gaboni",
-          "pronunciation": "gaboni",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Equatorial Guinea (Country / Territory)",
-          "translation": "Ginekweta",
-          "pronunciation": "ginekweta",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Eswatini (Country / Territory)",
-          "translation": "Uswazi",
-          "pronunciation": "uswazi",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Madagascar (Country / Territory)",
-          "translation": "Bukini",
-          "pronunciation": "bukini",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Seychelles (Country / Territory)",
-          "translation": "Shelisheli",
-          "pronunciation": "shelisheli",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Morocco (Country / Territory)",
-          "translation": "Moroko",
-          "pronunciation": "moroko",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Cape Verde (Country / Territory)",
-          "translation": "Kepuvede",
-          "pronunciation": "kepuvede",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "United Kingdom (Country / Territory)",
-          "translation": "Uingereza",
-          "pronunciation": "uingereza",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Spain (Country / Territory)",
-          "translation": "Hispania",
-          "pronunciation": "hispania",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Ukraine (Country / Territory)",
-          "translation": "Ukraini",
-          "pronunciation": "ukraini",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Poland (Country / Territory)",
-          "translation": "Polandi",
-          "pronunciation": "polandi",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Palestinian Territories (Country / Territory)",
-          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
-          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Saudi Arabia (Country / Territory)",
-          "translation": "Saudi",
-          "pronunciation": "saudi",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Qatar (Country / Territory)",
-          "translation": "Katari",
-          "pronunciation": "katari",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Iran (Country / Territory)",
-          "translation": "Uajemi",
-          "pronunciation": "uajemi",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Philippines (Country / Territory)",
-          "translation": "Filipino",
-          "pronunciation": "filipino",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Brazil (Country / Territory)",
-          "translation": "Brazili",
-          "pronunciation": "brazili",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Traditional Ateso ecological calendar months (January to June)",
-          "translation": "Orara, Omuk, Okwamg', Odung'el, Omaruk, Omodok'king'ol",
-          "pronunciation": "orara, omuk, okwamg', odung'el, omaruk, omodok'king'ol",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Traditional Ateso ecological calendar months (July to December)",
-          "translation": "Ojola, Opedel, Osokosokoma, Otibar, Olabor, Opoo",
-          "pronunciation": "ojola, opedel, osokosokoma, otibar, olabor, opoo",
-          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "I / me",
-          "translation": "eong / ayong (prefix a-)",
-          "pronunciation": "eh-ohng",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "You (singular)",
-          "translation": "ijo (ion, prefix i-)",
-          "pronunciation": "ee-joh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "He / She",
-          "translation": "ngesi (prefix e-)",
-          "pronunciation": "ngeh-see",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "We / us",
-          "translation": "isio / oni (prefix ki-)",
-          "pronunciation": "ee-see-oh / oh-nee",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "They / them",
-          "translation": "kesi",
-          "pronunciation": "keh-see",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Who?",
-          "translation": "ingai?",
-          "pronunciation": "een-gah-ee",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "What?",
-          "translation": "nyo?",
-          "pronunciation": "nyoh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Where?",
-          "translation": "ai? (aibo?)",
-          "pronunciation": "ah-ee-boh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        }
-      ]
-    },
-    {
       "id": "family",
-      "name": "Family & Society",
+      "name": "Family, People & Kinship",
       "icon": "👥",
       "entries": [
         {
@@ -1064,8 +616,302 @@
       ]
     },
     {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "👤",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "akou (pl. akwes)",
+          "pronunciation": "ah-koh-oo",
+          "context": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "akeju (pl. akejen)",
+          "pronunciation": "ah-keh-joo",
+          "context": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "akan (pl. akanin)",
+          "pronunciation": "ah-kahn",
+          "context": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "akong'u (a-kɔ́ŋ-ʊ̀)",
+          "pronunciation": "akong'u (a-kɔ́ŋ-ʊ̀)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "akit (á-kí-t)",
+          "pronunciation": "akit (á-kí-t)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "ekume (e-kúmè)",
+          "pronunciation": "ekume (e-kúmè)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "ekialai (e-kíàl-àì)",
+          "pronunciation": "ekialai (e-kíàl-àì)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "ang'ajep (á-ŋǎjɛ̀p)",
+          "pronunciation": "ang'ajep (á-ŋǎjɛ̀p)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "akituk (á-kɪ̀tʊ̀k)",
+          "pronunciation": "akituk (á-kɪ̀tʊ̀k)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "aakot (á-àkɔ́t)",
+          "pronunciation": "aakot (á-àkɔ́t)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "akoit (á-kóì-t)",
+          "pronunciation": "akoit (á-kóì-t)",
+          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand (pl. hands)",
+          "translation": "akan (pl. akanin)",
+          "pronunciation": "akan (pl. akanin)",
+          "context": "Wikipedia Teso language — Plural formation",
+          "audioFile": null
+        },
+        {
+          "english": "Brain",
+          "translation": "adam",
+          "pronunciation": "adam",
+          "context": "Wikipedia Teso language — Singularia tantum",
+          "audioFile": null
+        },
+        {
+          "english": "Life",
+          "translation": "aijar",
+          "pronunciation": "aijar",
+          "context": "Wikipedia Teso language — Alphabet",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "ajo",
+          "pronunciation": "ajo",
+          "context": "Wikipedia Teso language — Pluralia tantum",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "ibokori",
+          "pronunciation": "ibokori",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "etim",
+          "pronunciation": "etim",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "akejen",
+          "pronunciation": "akejen",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "murising",
+          "pronunciation": "murising",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Skin",
+          "translation": "ejamu",
+          "pronunciation": "ejamu",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Teeth",
+          "translation": "ekela",
+          "pronunciation": "ekela",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Arm",
+          "translation": "Akan",
+          "pronunciation": "akan",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Añabet",
+          "pronunciation": "añabet",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Belly",
+          "translation": "Akōk",
+          "pronunciation": "akōk",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "Ekisin",
+          "pronunciation": "ekisin",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Esiḗpi",
+          "pronunciation": "esiḗpi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "Atutunyω",
+          "pronunciation": "atutunyω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "Akuñ",
+          "pronunciation": "akuñ",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "meat, flesh (< Proto-Eastern Nilotic -kɪrɪŋɔ)",
+          "translation": "akiring'",
+          "pronunciation": "akiring'",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "eye (pl. eyes) (< Proto-Eastern Nilotic -kɔŋɛ)",
+          "translation": "akonye (pl. akonyen)",
+          "pronunciation": "akonye (pl. akonyen)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "ear (pl. ears) (< Proto-Eastern Nilotic -kɪt)",
+          "translation": "akit (pl. akituk)",
+          "pronunciation": "akit (pl. akituk)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "nose (< Proto-Eastern Nilotic -kʊmɛ)",
+          "translation": "ekume (pl. ikumes)",
+          "pronunciation": "ekume (pl. ikumes)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "mouth (< Proto-Eastern Nilotic -kʊtʊk)",
+          "translation": "akituk",
+          "pronunciation": "akituk",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "tooth (pl. teeth) (< Proto-Eastern Nilotic -kɛla)",
+          "translation": "ekelai (pl. ikela)",
+          "pronunciation": "ekelai (pl. ikela)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "tongue, language (< Proto-Eastern Nilotic -ŋɛjɛp)",
+          "translation": "ang'ajep",
+          "pronunciation": "ang'ajep",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "head (< Proto-Eastern Nilotic -kɔwʊ)",
+          "translation": "akou (pl. akwes)",
+          "pronunciation": "akou (pl. akwes)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "leg, foot (< Proto-Eastern Nilotic -kɛjʊ)",
+          "translation": "akeju (pl. akejen)",
+          "pronunciation": "akeju (pl. akejen)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "heart, spirit (< Proto-Teso-Lotuko-Maa -tawʊ)",
+          "translation": "etau (pl. itauon)",
+          "pronunciation": "etau (pl. itauon)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "blood (< Proto-Teso-Turkana -kɔt)",
+          "translation": "aokot",
+          "pronunciation": "aokot",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "bone (< Proto-Eastern Nilotic -kɔyɪtɔ)",
+          "translation": "akoit (pl. akoik)",
+          "pronunciation": "akoit (pl. akoik)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "stomach, belly (< Proto-Eastern Nilotic -kɔɛk)",
+          "translation": "akook",
+          "pronunciation": "akook",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
       "id": "animals",
-      "name": "Animals & Livestock",
+      "name": "Animals, Livestock & Wildlife",
       "icon": "🐾",
       "entries": [
         {
@@ -1415,7 +1261,7 @@
     },
     {
       "id": "nature",
-      "name": "Nature & Environment",
+      "name": "Nature, Environment & Geography",
       "icon": "🌿",
       "entries": [
         {
@@ -1834,302 +1680,8 @@
       ]
     },
     {
-      "id": "body",
-      "name": "Body & Health",
-      "icon": "👤",
-      "entries": [
-        {
-          "english": "Head",
-          "translation": "akou (pl. akwes)",
-          "pronunciation": "ah-koh-oo",
-          "context": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)",
-          "audioFile": null
-        },
-        {
-          "english": "Foot",
-          "translation": "akeju (pl. akejen)",
-          "pronunciation": "ah-keh-joo",
-          "context": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)",
-          "audioFile": null
-        },
-        {
-          "english": "Hand",
-          "translation": "akan (pl. akanin)",
-          "pronunciation": "ah-kahn",
-          "context": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)",
-          "audioFile": null
-        },
-        {
-          "english": "Eye",
-          "translation": "akong'u (a-kɔ́ŋ-ʊ̀)",
-          "pronunciation": "akong'u (a-kɔ́ŋ-ʊ̀)",
-          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Ear",
-          "translation": "akit (á-kí-t)",
-          "pronunciation": "akit (á-kí-t)",
-          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Nose",
-          "translation": "ekume (e-kúmè)",
-          "pronunciation": "ekume (e-kúmè)",
-          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Tooth",
-          "translation": "ekialai (e-kíàl-àì)",
-          "pronunciation": "ekialai (e-kíàl-àì)",
-          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Tongue",
-          "translation": "ang'ajep (á-ŋǎjɛ̀p)",
-          "pronunciation": "ang'ajep (á-ŋǎjɛ̀p)",
-          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Mouth",
-          "translation": "akituk (á-kɪ̀tʊ̀k)",
-          "pronunciation": "akituk (á-kɪ̀tʊ̀k)",
-          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "aakot (á-àkɔ́t)",
-          "pronunciation": "aakot (á-àkɔ́t)",
-          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Bone",
-          "translation": "akoit (á-kóì-t)",
-          "pronunciation": "akoit (á-kóì-t)",
-          "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "Hand (pl. hands)",
-          "translation": "akan (pl. akanin)",
-          "pronunciation": "akan (pl. akanin)",
-          "context": "Wikipedia Teso language — Plural formation",
-          "audioFile": null
-        },
-        {
-          "english": "Brain",
-          "translation": "adam",
-          "pronunciation": "adam",
-          "context": "Wikipedia Teso language — Singularia tantum",
-          "audioFile": null
-        },
-        {
-          "english": "Life",
-          "translation": "aijar",
-          "pronunciation": "aijar",
-          "context": "Wikipedia Teso language — Alphabet",
-          "audioFile": null
-        },
-        {
-          "english": "Sleep",
-          "translation": "ajo",
-          "pronunciation": "ajo",
-          "context": "Wikipedia Teso language — Pluralia tantum",
-          "audioFile": null
-        },
-        {
-          "english": "Finger",
-          "translation": "ibokori",
-          "pronunciation": "ibokori",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
-          "audioFile": null
-        },
-        {
-          "english": "Hair",
-          "translation": "etim",
-          "pronunciation": "etim",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
-          "audioFile": null
-        },
-        {
-          "english": "Leg",
-          "translation": "akejen",
-          "pronunciation": "akejen",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
-          "audioFile": null
-        },
-        {
-          "english": "Neck",
-          "translation": "murising",
-          "pronunciation": "murising",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
-          "audioFile": null
-        },
-        {
-          "english": "Skin",
-          "translation": "ejamu",
-          "pronunciation": "ejamu",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
-          "audioFile": null
-        },
-        {
-          "english": "Teeth",
-          "translation": "ekela",
-          "pronunciation": "ekela",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
-          "audioFile": null
-        },
-        {
-          "english": "Arm",
-          "translation": "Akan",
-          "pronunciation": "akan",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
-          "audioFile": null
-        },
-        {
-          "english": "Back",
-          "translation": "Añabet",
-          "pronunciation": "añabet",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
-          "audioFile": null
-        },
-        {
-          "english": "Belly",
-          "translation": "Akōk",
-          "pronunciation": "akōk",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
-          "audioFile": null
-        },
-        {
-          "english": "Breast",
-          "translation": "Ekisin",
-          "pronunciation": "ekisin",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "Esiḗpi",
-          "pronunciation": "esiḗpi",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
-          "audioFile": null
-        },
-        {
-          "english": "Heel",
-          "translation": "Atutunyω",
-          "pronunciation": "atutunyω",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
-          "audioFile": null
-        },
-        {
-          "english": "Knee",
-          "translation": "Akuñ",
-          "pronunciation": "akuñ",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
-          "audioFile": null
-        },
-        {
-          "english": "meat, flesh (< Proto-Eastern Nilotic -kɪrɪŋɔ)",
-          "translation": "akiring'",
-          "pronunciation": "akiring'",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "eye (pl. eyes) (< Proto-Eastern Nilotic -kɔŋɛ)",
-          "translation": "akonye (pl. akonyen)",
-          "pronunciation": "akonye (pl. akonyen)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "ear (pl. ears) (< Proto-Eastern Nilotic -kɪt)",
-          "translation": "akit (pl. akituk)",
-          "pronunciation": "akit (pl. akituk)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "nose (< Proto-Eastern Nilotic -kʊmɛ)",
-          "translation": "ekume (pl. ikumes)",
-          "pronunciation": "ekume (pl. ikumes)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "mouth (< Proto-Eastern Nilotic -kʊtʊk)",
-          "translation": "akituk",
-          "pronunciation": "akituk",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "tooth (pl. teeth) (< Proto-Eastern Nilotic -kɛla)",
-          "translation": "ekelai (pl. ikela)",
-          "pronunciation": "ekelai (pl. ikela)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "tongue, language (< Proto-Eastern Nilotic -ŋɛjɛp)",
-          "translation": "ang'ajep",
-          "pronunciation": "ang'ajep",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "head (< Proto-Eastern Nilotic -kɔwʊ)",
-          "translation": "akou (pl. akwes)",
-          "pronunciation": "akou (pl. akwes)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "leg, foot (< Proto-Eastern Nilotic -kɛjʊ)",
-          "translation": "akeju (pl. akejen)",
-          "pronunciation": "akeju (pl. akejen)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "heart, spirit (< Proto-Teso-Lotuko-Maa -tawʊ)",
-          "translation": "etau (pl. itauon)",
-          "pronunciation": "etau (pl. itauon)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "blood (< Proto-Teso-Turkana -kɔt)",
-          "translation": "aokot",
-          "pronunciation": "aokot",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "bone (< Proto-Eastern Nilotic -kɔyɪtɔ)",
-          "translation": "akoit (pl. akoik)",
-          "pronunciation": "akoit (pl. akoik)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "stomach, belly (< Proto-Eastern Nilotic -kɔɛk)",
-          "translation": "akook",
-          "pronunciation": "akook",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        }
-      ]
-    },
-    {
       "id": "food",
-      "name": "Food & Drink",
+      "name": "Food, Drink & Agriculture",
       "icon": "🍲",
       "entries": [
         {
@@ -2238,10 +1790,10 @@
           "audioFile": null
         },
         {
-          "english": "Salutations & Conversational Phrases (Hobley 1902 p. 94 & Johnston 1902 p. 851): Greetings! / Come here! / Go away! / Bring water! / What do you want?",
+          "english": "Salutations & Conversational Phrases",
           "translation": "Mata! / Yoka yoka! (Hobley 1902 p. 94) • Bia ne! / Kolot! / Koin akipi! / Icamit nyo? (Johnston 1902 p. 851)",
           "pronunciation": "bi-a ne / ko-lot / ko-in a-ki-pi / i-ca-mit nyo",
-          "context": "C. W. Hobley (1902, p. 94) & Sir Harry Johnston (1902, p. 851)",
+          "context": "Hobley 1902 p. 94 & Johnston 1902 p. 851): Greetings! / Come here! / Go away! / Bring water! / What do you want? — C. W. Hobley (1902, p. 94) & Sir Harry Johnston (1902, p. 851)",
           "audioFile": null
         },
         {
@@ -2346,7 +1898,7 @@
     },
     {
       "id": "home",
-      "name": "Home & Daily Life",
+      "name": "Home, Tools & Material Culture",
       "icon": "🏠",
       "entries": [
         {
@@ -2479,7 +2031,7 @@
     },
     {
       "id": "verbs",
-      "name": "Common Verbs",
+      "name": "Core Verbs & Actions",
       "icon": "⚡",
       "entries": [
         {
@@ -3080,6 +2632,454 @@
       ]
     },
     {
+      "id": "phrases",
+      "name": "Common Expressions & Vocabulary",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "edit (aditon)",
+          "pronunciation": "eh-deet",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "epol (apolon)",
+          "pronunciation": "eh-pohl",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "erono (aronon)",
+          "pronunciation": "eh-roh-noh",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "ejok (ajokon)",
+          "pronunciation": "eh-johk",
+          "context": "Hobley 1902 & Johnston 1902",
+          "audioFile": null
+        },
+        {
+          "english": "Love / affection",
+          "translation": "amina / amin",
+          "pronunciation": "amina / amin",
+          "context": "Wikipedia Teso language — Abstract nouns",
+          "audioFile": null
+        },
+        {
+          "english": "Goodness",
+          "translation": "ajokus / ajokis",
+          "pronunciation": "ajokus / ajokis",
+          "context": "Wikipedia Teso language — Abstract nouns",
+          "audioFile": null
+        },
+        {
+          "english": "Happiness / gratitude",
+          "translation": "aiyalama",
+          "pronunciation": "aiyalama",
+          "context": "Wikipedia Teso language — Abstract nouns",
+          "audioFile": null
+        },
+        {
+          "english": "Where? / There (not far) / Over there",
+          "translation": "ai, aibo? (where?) / nen (there) / ngina (over there)",
+          "pronunciation": "ai, aibo? (where?) / nen (there) / ngina (over there)",
+          "context": "Wikipedia Teso language — Adverbs of place",
+          "audioFile": null
+        },
+        {
+          "english": "Inside / In the middle (between) / Behind / In front",
+          "translation": "toma (inside) / kiding (between) / kau (behind) / ngaren (in front)",
+          "pronunciation": "toma (inside) / kiding (between) / kau (behind) / ngaren (in front)",
+          "context": "Wikipedia Teso language — Adverbs of place",
+          "audioFile": null
+        },
+        {
+          "english": "Right side / Left side",
+          "translation": "teten (right) / kediany (left)",
+          "pronunciation": "teten (right) / kediany (left)",
+          "context": "Wikipedia Teso language — Adverbs of place",
+          "audioFile": null
+        },
+        {
+          "english": "Again / No / Because",
+          "translation": "bobo (again) / mam (no) / naarai (because)",
+          "pronunciation": "bobo (again) / mam (no) / naarai (because)",
+          "context": "Wikipedia Teso language — Alphabet & Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "road, path (< Proto-Teso-Turkana -rɔt)",
+          "translation": "erot (pl. irotin)",
+          "pronunciation": "erot (pl. irotin)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "name (< Proto-Eastern Nilotic -kɛrɪn)",
+          "translation": "ekiror (pl. ikiroria)",
+          "pronunciation": "ekiror (pl. ikiroria)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Nakaejuma (Jum)",
+          "pronunciation": "nakaejuma (jum)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Nakaebarasa (Bar)",
+          "pronunciation": "nakaebarasa (bar)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Nakaare (Aar)",
+          "pronunciation": "nakaare (aar)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Nakauni (Uni)",
+          "pronunciation": "nakauni (uni)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Nakaung’on (Ung)",
+          "pronunciation": "nakaung’on (ung)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Nakakany (Kan)",
+          "pronunciation": "nakakany (kan)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Nakasabiti (Sab)",
+          "pronunciation": "nakasabiti (sab)",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "Taparachu",
+          "pronunciation": "taparachu",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "Ebongi",
+          "pronunciation": "ebongi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "Enzi",
+          "pronunciation": "enzi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "South African Rand (ZAR)",
+          "translation": "Ango’otol lok’ Afrika Kusini",
+          "pronunciation": "ango’otol lok’ afrika kusini",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Ango’otol lok’ CFA BCEAO",
+          "pronunciation": "ango’otol lok’ cfa bceao",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Ango’otol lok’ CFA BEAC",
+          "pronunciation": "ango’otol lok’ cfa beac",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates Dirham (AED)",
+          "translation": "Ango’otol lok’ Falme za Kiarabu",
+          "pronunciation": "ango’otol lok’ falme za kiarabu",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Kenya (Country / Territory)",
+          "translation": "Kenia",
+          "pronunciation": "kenia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Uhabeshi",
+          "pronunciation": "uhabeshi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Nijeri",
+          "pronunciation": "nijeri",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Ginekweta",
+          "pronunciation": "ginekweta",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Uswazi",
+          "pronunciation": "uswazi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Bukini",
+          "pronunciation": "bukini",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Uingereza",
+          "pronunciation": "uingereza",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Hispania",
+          "pronunciation": "hispania",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Ukraini",
+          "pronunciation": "ukraini",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
+          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Katari",
+          "pronunciation": "katari",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Uajemi",
+          "pronunciation": "uajemi",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Brazili",
+          "pronunciation": "brazili",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Ateso ecological calendar months (January to June)",
+          "translation": "Orara, Omuk, Okwamg', Odung'el, Omaruk, Omodok'king'ol",
+          "pronunciation": "orara, omuk, okwamg', odung'el, omaruk, omodok'king'ol",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Ateso ecological calendar months (July to December)",
+          "translation": "Ojola, Opedel, Osokosokoma, Otibar, Olabor, Opoo",
+          "pronunciation": "ojola, opedel, osokosokoma, otibar, olabor, opoo",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "eong / ayong (prefix a-)",
+          "pronunciation": "eh-ohng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "ijo (ion, prefix i-)",
+          "pronunciation": "ee-joh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ngesi (prefix e-)",
+          "pronunciation": "ngeh-see",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "isio / oni (prefix ki-)",
+          "pronunciation": "ee-see-oh / oh-nee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "kesi",
+          "pronunciation": "keh-see",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ingai?",
+          "pronunciation": "een-gah-ee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "nyo?",
+          "pronunciation": "nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "ai? (aibo?)",
+          "pronunciation": "ah-ee-boh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
       "id": "culture-history",
       "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
@@ -3114,16 +3114,16 @@
         },
         {
           "english": "Wamia (Elgumi / Ateso) Sub-Tribes, 1900 Chiefs & Vocabulary in C. W. Hobley (1902, p. 57 & pp. 92–95)",
-          "translation": "Sub-tribes & Chiefs (p. 57): Telemo (chief Nzoia), Ngoma (chiefs Pakala & Kuresi), Para (chief Kimi), plus chiefs Lemugi, Mwenyikoi, Babukori, Eten, and Oreddi • Elgumi Vocabulary (pp. 92–95): mata & yoka yoka (salutations), akipi (water), akimi (fire), akiteng (cow), akilli (milk), ekiring (meat), emumwa (mtama/sorghum), etapa (food/ugali), ekwara (spear), ekileng (knife), ebuku (shield), ere (village), elap (moon), ekiro (rain), amuru (stone), ekito (tree), ekinok (peace), ekinoko (dog), etome latuk (elephant), ngatuni (lion), okori (giraffe) • Elgumi Numerals (p. 95): 1 epe / apuru, 2 are, 3 auni / uni, 4 aungwen / ongwon, 5 ekan / akanyi, 6 kanyi-kape / akanya-kape, 7 kanyi-kare, 8 kanyi-kauni, 9 kanyi-ki-ongwon / akanya kangwun, 10 atomon",
+          "translation": "Sub-tribes & Chiefs (p. 57): Telemo (chief Nzoia), Ngoma (chiefs Pakala & Kuresi), Para (chief Kimi), plus chiefs Lemugi, Mwenyikoi, Babukori, Eten, and Oreddi • Elgumi Vocabulary (pp. 92–95): mata...",
           "pronunciation": "wa-mi-a / el-gu-mi / te-le-mo / ngo-ma / pa-ra / ma-ta / yo-ka yo-ka",
           "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. V § 3 p. 57 & Ch. VII § II pp. 92–95",
           "audioFile": null
         },
         {
           "english": "Sir Harry Johnston's (1902, Vol. II, pp. 853, 855, 886, 903–906) Elgumi (Wamia / Ateso) Ethnography & Complete Set 1 Vocabulary (#6 Elgumi)",
-          "translation": "Ethnography (pp. 713, 853, 855, 886): the Elgumi (also called Wamia) dwell west and south-west of Mount Elgon, are agriculturalists and ardent hunters who keep many small hunting dogs (Fig. 480), and speak a Masai-Turkana-Karamojo group language • Complete #6 Elgumi Vocabulary Recorded by Johnston (pp. 904–906): Arm Akan • Arrow Ekoyω • Axe Aeb • Baboon Aωsin • Back Añabet • Banana Alaburu • Beard Apenok • Bee Ecucu • Belly Akōk • Bird Atoroqót • Blood Aqot • Body Akwán • Bone Akωit • Bow Emal / Akau • Brains Itim • Breast Ekisin • Brother Anācăkēñe • Buffalo Ekωsogwan • Buttocks Ewωsi • Canoe Atakerr • Cat Awalu • Chief Ajakáit • Child Ekōkō • Cloth Enañga • Country Warret • Cow Akiteñ (f. naberω) • Crocodile Atinyañ • Day Akenyanu • Devil Akiría • Dog Ekiñok • Door Ekek • Dream Adjω • Drum Atāget / Atēnus • Ear Akit • Egg Abei • Elephant Etom • Excrement Acin • Eye Akoñ • Face Akininyirr • Fat Akinyet • Fear Agātorūt • Finger Ebωkorit • Fire Akim • Fish Esessī • Foot Akeju • Forest Amōni • Fowl Ekokorr • Goat Aginé • God Akūt • Grass Inyā • Ground Alūp",
+          "translation": "Ethnography (pp. 713, 853, 855, 886): the Elgumi (also called Wamia) dwell west and south-west of Mount Elgon, are agriculturalists and ardent hunters who keep many small hunting dogs (Fig. 480), a...",
           "pronunciation": "a-kan / e-ko-yo / a-ja-kait / a-ki-teng / e-ki-nok / a-kim / a-kut",
-          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 853, 855 & Ch. XX, Set 1 (#6 Elgumi), pp. 903–906",
+          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 853, 855 & Ch. XX, Set 1 (#6 Elgumi), pp. 903–906 | Additional items: Axe Aeb • Baboon Aωsin • Back Añabet • Banana Alaburu • Beard Apenok • Bee Ecucu • Belly Akōk • Bird Atoroqót...",
           "audioFile": null
         },
         {

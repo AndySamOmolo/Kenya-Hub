@@ -218,7 +218,7 @@
     },
     {
       "id": "numbers",
-      "name": "Numbers",
+      "name": "Numbers & Counting",
       "icon": "🔢",
       "entries": [
         {
@@ -728,260 +728,8 @@
       ]
     },
     {
-      "id": "calendar-seasons",
-      "name": "Calendar & Seasons",
-      "icon": "🗓️",
-      "entries": [
-        {
-          "english": "Rainy season",
-          "translation": "Ageboro",
-          "pronunciation": "ah-geh-boh-roh",
-          "context": "The traditional rainy season in the Turkana pastoral cycle. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Dry season",
-          "translation": "Akamu",
-          "pronunciation": "ah-kah-moo",
-          "context": "The dry season, demanding seasonal herd migrations to mountain grazing reserves. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "January",
-          "translation": "Lodungi",
-          "pronunciation": "loh-doon-gee",
-          "context": "1st month of the Turkana traditional calendar; begins approx. 22 January. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "February",
-          "translation": "Lomoruk",
-          "pronunciation": "loh-moh-rook",
-          "context": "2nd month of the traditional Turkana calendar. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "March",
-          "translation": "Loichoto",
-          "pronunciation": "loh-ee-choh-toh",
-          "context": "3rd month of the traditional Turkana calendar; heralds wet season preparations. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "April",
-          "translation": "Titima",
-          "pronunciation": "tee-tee-mah",
-          "context": "4th month of the traditional Turkana calendar; marks wet season rains and lush grass. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "May",
-          "translation": "Yeliyel",
-          "pronunciation": "yeh-lee-yehl",
-          "context": "5th month of the traditional Turkana calendar; peak milk and calving season. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "June",
-          "translation": "Lopo",
-          "pronunciation": "loh-poh",
-          "context": "6th month of the traditional Turkana calendar; end of rainy season. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "July",
-          "translation": "Lotiak",
-          "pronunciation": "loh-tee-ahk",
-          "context": "7th month of the traditional Turkana calendar; onset of dry season. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "August",
-          "translation": "Lolingachunu",
-          "pronunciation": "loh-leen-gah-choo-noo",
-          "context": "8th month of the traditional Turkana calendar; mid dry season. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "September",
-          "translation": "Lothaban",
-          "pronunciation": "loh-thah-bahn",
-          "context": "9th month of the traditional Turkana calendar. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "October",
-          "translation": "Lolongu",
-          "pronunciation": "loh-lohn-goo",
-          "context": "10th month of the traditional Turkana calendar. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "November",
-          "translation": "Lorarrar",
-          "pronunciation": "loh-rah-rahr",
-          "context": "11th month of the traditional Turkana calendar. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "December",
-          "translation": "Lugwan",
-          "pronunciation": "loog-wahn",
-          "context": "12th month of the traditional Turkana calendar. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Year",
-          "translation": "Ekaru (pl. ngaro)",
-          "pronunciation": "eh-kah-roo",
-          "context": "Year or annual cycle. This year: 'Ekaru lo'; next year: 'Ekaru echi'; last year: 'Ekaru ye'. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Month / Moon",
-          "translation": "Elap (pl. ngelapio)",
-          "pronunciation": "eh-lahp",
-          "context": "Lunar month or moon. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Day",
-          "translation": "Erwait (pl. ngurwa)",
-          "pronunciation": "ehr-wah-eet",
-          "context": "Daytime or daylight period. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Night",
-          "translation": "Akuari (pl. ngakuaretha)",
-          "pronunciation": "ah-kwah-ree",
-          "context": "Night-time darkness. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Dawn / Early morning",
-          "translation": "Ataparach",
-          "pronunciation": "ah-tah-pah-rahch",
-          "context": "First light of dawn and early morning. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Morning",
-          "translation": "Ethimakunyak / Taparach",
-          "pronunciation": "eh-thee-mah-koon-yahk",
-          "context": "Morning hours before intense heat. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Midday / Noon",
-          "translation": "Naparan / Ewi akolon",
-          "pronunciation": "nah-pah-rahn",
-          "context": "Midday when the sun is directly overhead. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Afternoon / Evening",
-          "translation": "Ebon / Ebong",
-          "pronunciation": "eh-bohng",
-          "context": "Late afternoon approaching dusk. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Sunrise (6 a.m.)",
-          "translation": "Alomo akolon",
-          "pronunciation": "ah-loh-moh ah-koh-lohn",
-          "context": "The sun appearing over the horizon at dawn. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Morning sun (7 a.m.)",
-          "translation": "Achou akolon",
-          "pronunciation": "ah-choh-oo ah-koh-lohn",
-          "context": "Morning sun ascending. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Overhead sun (12 p.m.)",
-          "translation": "Ewi akolon",
-          "pronunciation": "eh-wee ah-koh-lohn",
-          "context": "Peak noon sun directly above. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Mid-afternoon sun (2 p.m.)",
-          "translation": "Athom akolon",
-          "pronunciation": "ah-thohm ah-koh-lohn",
-          "context": "Declining afternoon sun. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Sunset (6 p.m.)",
-          "translation": "Aloma akolon",
-          "pronunciation": "ah-loh-mah ah-koh-lohn",
-          "context": "The sun setting into twilight. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Today",
-          "translation": "Tete / Akolon itina",
-          "pronunciation": "teh-teh",
-          "context": "The present day. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Tomorrow",
-          "translation": "Mui",
-          "pronunciation": "moo-ee",
-          "context": "The following day. Tomorrow morning: 'Mui ataparach'. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Day after tomorrow",
-          "translation": "Mui echi akolon",
-          "pronunciation": "moo-ee eh-chee ah-koh-lohn",
-          "context": "Two days forward. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Yesterday",
-          "translation": "Beyen / Ngon",
-          "pronunciation": "beh-yehn / ngohn",
-          "context": "The previous day. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Day before yesterday",
-          "translation": "Ngon echi akolon",
-          "pronunciation": "ngohn eh-chee ah-koh-lohn",
-          "context": "Two days ago. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Now",
-          "translation": "Tokona",
-          "pronunciation": "toh-koh-nah",
-          "context": "At the present moment. Instantly: 'Tokona-tokona'. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "The rainy season",
-          "translation": "Ageboro",
-          "pronunciation": "Ageboro",
-          "context": "Juxon Barton (1921) — Months",
-          "audioFile": null
-        },
-        {
-          "english": "The dry season",
-          "translation": "Akamu",
-          "pronunciation": "Akamu",
-          "context": "Juxon Barton (1921) — Months",
-          "audioFile": null
-        }
-      ]
-    },
-    {
       "id": "family",
-      "name": "Family & People",
+      "name": "Family, People & Kinship",
       "icon": "👥",
       "entries": [
         {
@@ -1692,10 +1440,10 @@
           "audioFile": null
         },
         {
-          "english": "Turkana Life-Stages (Nidue/Egile/Kasikou & Apesur/Aberu/Agemat), Warrior Ages (Asavanissia), Oppa Elders, Deities (Agipie) & Marriage Law (Dundas 1910, pp. 67–69)",
-          "translation": "Male & Female Life-Stages (p. 67): Male: (1) nidue (young boy), (2) egile (warrior), (3) kasikou (old man; titled oppa and entitled to wear a beaded head-dress); Female: (1) apesur (girl), (2) aberu (married woman), (3) agemat (old woman) • Warrior Generations: asavanissia (a new warrior age-set created every 4–5 years; vigorous non-drinking elders form the first line of village defence, subsisting on camel milk and Nessegonn bushes) • Dual Deities (p. 69): Agipie (benevolent sky god) vs. the malevolent Nether-World God dwelling in rocks, mountains, rivers, and underground (where cattle, sheep, goats, and talking people live; thunderstorms are the two gods fighting and hurling lightning) • Bride-Price & Post-Marriage Mock-Assault Feast (p. 68): 20 cattle + 30 donkeys to the bride's mother before marriage, 30 cattle + camels/donkeys/sheep/goats to the father, 5 cattle to each co-wife, and 2 cattle to each sibling (or 30 cattle fine per lover for premarital pregnancy); a married daughter may not enter her father's kraal until he slaughters 2 bullocks in a special enclosure stormed by singing guests imitating an attack on an enemy kraal",
+          "english": "Turkana Life-Stages",
+          "translation": "Male & Female Life-Stages (p. 67): Male: (1) nidue (young boy), (2) egile (warrior), (3) kasikou (old man; titled oppa and entitled to wear a beaded head-dress); Female: (1) apesur (girl), (2) aber...",
           "pronunciation": "nee-doo-eh, eh-gee-leh, kah-see-koh-oo (oh-ppah) • ah-peh-soor, ah-beh-roo, ah-geh-maht • ah-sah-vah-nee-ssee-ah • ah-gee-pee-eh",
-          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, pp. 67–69",
+          "context": "Nidue/Egile/Kasikou & Apesur/Aberu/Agemat), Warrior Ages (Asavanissia), Oppa Elders, Deities (Agipie) & Marriage Law (Dundas 1910, pp. 67–69 — Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, pp. 67–69 | Addition...",
           "audioFile": null
         },
         {
@@ -1708,8 +1456,904 @@
       ]
     },
     {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "👁️",
+      "entries": [
+        {
+          "english": "Head",
+          "translation": "Ako / Akou (pl. nyakis / ngakouō)",
+          "pronunciation": "ah-koh / ah-koh-oo",
+          "context": "Head. Plural: Nyakis / Ngakouo. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "Atimat / Ngetim (pl. ngatim)",
+          "pronunciation": "ah-tee-maht",
+          "context": "Human hair. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Akon / Akong (pl. ngakonyan)",
+          "pronunciation": "ah-kohn",
+          "context": "Eye. Plural: Ngakonyan. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Agit / Akit (pl. nyagi / ngaki)",
+          "pronunciation": "ah-geet / ah-keet",
+          "context": "Ear. Plural: Nyagi / Ngaki. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "Ekumi (pl. ngikumith / ngikumes)",
+          "pronunciation": "eh-koo-mee",
+          "context": "Nose. Plural: Ngikumith. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "Akitok (pl. ngakituka)",
+          "pronunciation": "ah-kee-tohk",
+          "context": "Mouth. Plural: Ngakituka. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Lip",
+          "translation": "Akitok (pl. ngakutoka)",
+          "pronunciation": "ah-koo-toh-kah",
+          "context": "Lips. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "Agelai / Ekelai (pl. ngelai / ngikelai)",
+          "pronunciation": "ah-geh-lah-ee",
+          "context": "Tooth. Plural: Ngelai. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "Aliep / Angajep (pl. ngaliep / ngangajepa)",
+          "pronunciation": "ah-lee-ehp",
+          "context": "Tongue. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Throat",
+          "translation": "Edokoli (pl. ngadokoli)",
+          "pronunciation": "eh-doh-koh-lee",
+          "context": "Throat and larynx. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "Emotherin / Emosingo (pl. ngemotheringa / ngimosingo)",
+          "pronunciation": "eh-moh-theh-reen",
+          "context": "Neck. Plural: Ngemotheringa. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Ebenek (pl. ngebeneka)",
+          "pronunciation": "eh-beh-nehk",
+          "context": "Facial beard or chin whiskers. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "Eret (pl. ngeretin)",
+          "pronunciation": "eh-reht",
+          "context": "Face or brow. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "Ethiket / Ekeget (pl. ngethiketa / ngikegeta)",
+          "pronunciation": "eh-thee-keht",
+          "context": "Shoulder. Plural: Ngethiketa. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Chest",
+          "translation": "Etorob (pl. ngatorobio)",
+          "pronunciation": "eh-toh-rohb",
+          "context": "Chest. Plural: Ngatorobio. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "Ethigina / Ekidi (pl. ngethigin)",
+          "pronunciation": "eh-thee-gee-nah",
+          "context": "Breast. Plural: Ngethigin. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Etou / Etau (pl. ngetai / ngitai)",
+          "pronunciation": "eh-toh-oo / eh-tah-oo",
+          "context": "Anatomical heart and locus of courage. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Abdomen / Belly",
+          "translation": "Akok (pl. akokis)",
+          "pronunciation": "ah-kohk",
+          "context": "Abdomen. Plural: Akokis. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach",
+          "translation": "Eboi (pl. ngaboyo)",
+          "pronunciation": "eh-boh-ee",
+          "context": "Internal stomach organ. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Egur / Eguur (pl. ngurai / ngiguur)",
+          "pronunciation": "eh-goor",
+          "context": "Human back. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Arm / Hand",
+          "translation": "Akan (pl. ngakanin)",
+          "pronunciation": "ah-kahn",
+          "context": "Hand or whole arm. Plural: Ngakanin. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm of hand",
+          "translation": "Etou ya akan (pl. ngetou ya ngakanin)",
+          "pronunciation": "eh-toh-oo yah ah-kahn",
+          "context": "Inner palm of hand. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "Ekimoin (pl. ngemoyo / ngimoyin)",
+          "pronunciation": "eh-kee-moh-een",
+          "context": "Finger. Plural: Ngemoyo. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Thumb",
+          "translation": "Ekimoin labuloi / nabolon",
+          "pronunciation": "eh-kee-moh-een lah-boo-loh-ee",
+          "context": "Thumb (lit. 'big finger'). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Fingernail / Claw",
+          "translation": "Emargoit / Emagarit (pl. ngemagor)",
+          "pronunciation": "eh-mahr-goh-eet",
+          "context": "Fingernail, claw, or animal hoof. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "Akeju (pl. ngakeju)",
+          "pronunciation": "ah-keh-joo",
+          "context": "Leg or foot. Plural: Ngakeju. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "Akun / Akung (pl. ngakungin)",
+          "pronunciation": "ah-koon",
+          "context": "Knee joint. Plural: Ngakungin. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot / Sole",
+          "translation": "Adapal akeju / Etou ya keju",
+          "pronunciation": "ah-dah-pahl ah-keh-joo",
+          "context": "Sole of foot. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Toe",
+          "translation": "Akimoin akejo (pl. ngakimmoio ngakeju)",
+          "pronunciation": "eh-kee-moh-een ah-keh-joh",
+          "context": "Toe of the foot. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Akoit (pl. ngakoiyo)",
+          "pronunciation": "ah-koh-eet",
+          "context": "Bone. Plural: Ngakoiyo. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Nakot / Ngakoot",
+          "pronunciation": "nah-koht",
+          "context": "Living blood; also tapped as pastoral sustenance. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Body / Flesh",
+          "translation": "Akwan (pl. ngouwat) / Akirin (pl. ngakir)",
+          "pronunciation": "ah-kwahn",
+          "context": "Human body or flesh. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Skin",
+          "translation": "Emun-ya / Ejim (pl. ngemunya / ngijimyo)",
+          "pronunciation": "eh-moon-yah",
+          "context": "Human skin or dressed animal pelt. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Abdomen",
+          "translation": "akok, pl. akokis",
+          "pronunciation": "akok, pl. akokis",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "egur, pl. ngurai",
+          "pronunciation": "egur, pl. ngurai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Barren",
+          "translation": "ekolup, pl. ngelupoka",
+          "pronunciation": "ekolup, pl. ngelupoka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "ebenek, pl. ngebeneka",
+          "pronunciation": "ebenek, pl. ngebeneka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Belly",
+          "translation": "akok, pl. akokis",
+          "pronunciation": "akok, pl. akokis",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Blind",
+          "translation": "emudukona",
+          "pronunciation": "emudukona",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "nakot",
+          "pronunciation": "nakot",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Body",
+          "translation": "akwan, pl. ngouwat",
+          "pronunciation": "akwan, pl. ngouwat",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "akoit, pl. ngakoiyo",
+          "pronunciation": "akoit, pl. ngakoiyo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "ethigina, pl. ngethigin",
+          "pronunciation": "ethigina, pl. ngethigin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Breath",
+          "translation": "yarakin",
+          "pronunciation": "yarakin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Cap (head-dress)",
+          "translation": "elim, pl. ngitemoi",
+          "pronunciation": "elim, pl. ngitemoi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Cheek",
+          "translation": "ematanget, pl. ngematangeti",
+          "pronunciation": "ematanget, pl. ngematangeti",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Chest",
+          "translation": "etorob, pl. ngatorobio",
+          "pronunciation": "etorob, pl. ngatorobio",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Chin",
+          "translation": "abokon, pl. ngabokonga",
+          "pronunciation": "abokon, pl. ngabokonga",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Clay (for hair)",
+          "translation": "emunyan",
+          "pronunciation": "emunyan",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Cold",
+          "translation": "elilim, pl. ngelimo",
+          "pronunciation": "elilim, pl. ngelimo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Deceased Body",
+          "translation": "atona, pl. ngatoka",
+          "pronunciation": "atona, pl. ngatoka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Dead body",
+          "translation": "atona, pl. ngatoka",
+          "pronunciation": "atona, pl. ngatoka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "agit, pl. nyagi",
+          "pronunciation": "agit, pl. nyagi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Elbow",
+          "translation": "esidongaror, pl. ngesidongaroria",
+          "pronunciation": "esidongaror, pl. ngesidongaroria",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Entrails",
+          "translation": "amultin, pl. ngamultenya, see \"stomach\"",
+          "pronunciation": "amultin, pl. ngamultenya, see \"stomach\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "akon, pl. ngakonyan",
+          "pronunciation": "akon, pl. ngakonyan",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "eret, pl. ngeretin",
+          "pronunciation": "eret, pl. ngeretin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Fat",
+          "translation": "akimet, pl. ngameta",
+          "pronunciation": "akimet, pl. ngameta",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Female (pregnant)",
+          "translation": "eputi, pl. ngekaputiok",
+          "pronunciation": "eputi, pl. ngekaputiok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Female (barren)",
+          "translation": "esorokona, pl. ngiserok or ekolobana, pl. ngekolobaka",
+          "pronunciation": "esorokona, pl. ngiserok or ekolobana, pl. ngekolobaka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "ekimoin, pl. ngemoyo",
+          "pronunciation": "ekimoin, pl. ngemoyo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Thumb",
+          "translation": "ekimoin labuloi, pl. ngemoyo nglabuloi",
+          "pronunciation": "ekimoin labuloi, pl. ngemoyo nglabuloi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Flesh",
+          "translation": "akirin, pl. ngakir",
+          "pronunciation": "akirin, pl. ngakir",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "adapal akeju, pl. nyadapal ngakeju, see \"palm\", \"sole\", \"shoe\"",
+          "pronunciation": "adapal akeju, pl. nyadapal ngakeju, see \"palm\", \"sole\", \"shoe\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Apron, back (women)",
+          "translation": "abue, pl. nyabuith",
+          "pronunciation": "abue, pl. nyabuith",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "atimat, pl. ngatim",
+          "pronunciation": "atimat, pl. ngatim",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Head-dress",
+          "translation": "amedok, pl. ngemedoi, the distinctive Turkana coiffure",
+          "pronunciation": "amedok, pl. ngemedoi, the distinctive Turkana coiffure",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "akan, pl. ngakanin, see \"palm\"",
+          "pronunciation": "akan, pl. ngakanin, see \"palm\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "ako, pl. nyakis",
+          "pronunciation": "ako, pl. nyakis",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "etou, pl. ngetai",
+          "pronunciation": "etou, pl. ngetai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Illness",
+          "translation": "edege, pl. ngidege",
+          "pronunciation": "edege, pl. ngidege",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Cough",
+          "translation": "awali, pl. ngawalathi",
+          "pronunciation": "awali, pl. ngawalathi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Measles",
+          "translation": "ekurara (? chicken-pox)",
+          "pronunciation": "ekurara (? chicken-pox)",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Sore",
+          "translation": "ajemi, pl. ngijemi",
+          "pronunciation": "ajemi, pl. ngijemi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Spleen, enlarged",
+          "translation": "ariaba etit",
+          "pronunciation": "ariaba etit",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Jaw",
+          "translation": "abokoin, pl. ngabokonya",
+          "pronunciation": "abokoin, pl. ngabokonya",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "akun, pl. ngakungin",
+          "pronunciation": "akun, pl. ngakungin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Knife, wrist",
+          "translation": "abarait, pl. ngibara",
+          "pronunciation": "abarait, pl. ngibara",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Knife, finger",
+          "translation": "akoli, pl. ngakoli",
+          "pronunciation": "akoli, pl. ngakoli",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "akeju, pl. ngakeju, see \"foot\"",
+          "pronunciation": "akeju, pl. ngakeju, see \"foot\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Scar",
+          "translation": "abori, pl. ngabori",
+          "pronunciation": "abori, pl. ngabori",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Medicine",
+          "translation": "ekitoi, pl. ngakito",
+          "pronunciation": "ekitoi, pl. ngakito",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "akitok, pl. ngakituka, see \"tooth\"",
+          "pronunciation": "akitok, pl. ngakituka, see \"tooth\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Teeth",
+          "translation": "agelai, pl. ngelai",
+          "pronunciation": "agelai, pl. ngelai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Throat",
+          "translation": "edokoli, pl. ngadokoli",
+          "pronunciation": "edokoli, pl. ngadokoli",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "aliep, pl. ngaliep",
+          "pronunciation": "aliep, pl. ngaliep",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Mud, head-dress",
+          "translation": "emunyan, see \"class\", \"hair\"",
+          "pronunciation": "emunyan, see \"class\", \"hair\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Ankle-bells",
+          "translation": "echorot, pl. ngechoror",
+          "pronunciation": "echorot, pl. ngechoror",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "emotherin, pl. ngemotheringa",
+          "pronunciation": "emotherin, pl. ngemotheringa",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "ekumi, pl. ngikumith",
+          "pronunciation": "ekumi, pl. ngikumith",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Palm (hand)",
+          "translation": "etou ya akan, pl. ngetou ya ngakanin",
+          "pronunciation": "etou ya akan, pl. ngetou ya ngakanin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Palm (sole)",
+          "translation": "etou ya keju, pl. ngetou ya ngakeju",
+          "pronunciation": "etou ya keju, pl. ngetou ya ngakeju",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Perspiration",
+          "translation": "akininer, pl. ngakineniro, see \"sweat\"",
+          "pronunciation": "akininer, pl. ngakineniro, see \"sweat\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Poison",
+          "translation": "asorich, pl. ngasoricho",
+          "pronunciation": "asorich, pl. ngasoricho",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Saliva",
+          "translation": "ngakimul, see \"spit\"",
+          "pronunciation": "ngakimul, see \"spit\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Scar",
+          "translation": "emachar, pl. ngmacharin, see \"mark\"",
+          "pronunciation": "emachar, pl. ngmacharin, see \"mark\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "ethiket, pl. ngethiketa",
+          "pronunciation": "ethiket, pl. ngethiketa",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Sick",
+          "translation": "edeki, pl. ngedekethin",
+          "pronunciation": "edeki, pl. ngedekethin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Skin (new)",
+          "translation": "ejam, pl. ngejam",
+          "pronunciation": "ejam, pl. ngejam",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Sole (foot)",
+          "translation": "etou ya keju, pl. ngetou ya ngakeju, see \"palm\"",
+          "pronunciation": "etou ya keju, pl. ngetou ya ngakeju, see \"palm\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Sore",
+          "translation": "ejimi, pl. ngajimo",
+          "pronunciation": "ejimi, pl. ngajimo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Boil",
+          "translation": "elibunait, pl. ngelibuno",
+          "pronunciation": "elibunait, pl. ngelibuno",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Soul (heart)",
+          "translation": "etam, pl. ngetowin",
+          "pronunciation": "etam, pl. ngetowin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Spittle",
+          "translation": "arimu, pl. ngakimulak, see \"saliva\"",
+          "pronunciation": "arimu, pl. ngakimulak, see \"saliva\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Spleen",
+          "translation": "etid, pl. ngetidin",
+          "pronunciation": "etid, pl. ngetidin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Stomach",
+          "translation": "eboi, pl. ngaboyo",
+          "pronunciation": "eboi, pl. ngaboyo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Entrails",
+          "translation": "amultin, pl. ngamultenya",
+          "pronunciation": "amultin, pl. ngamultenya",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Water stomach",
+          "translation": "ethurun, pl. ngathurunya",
+          "pronunciation": "ethurun, pl. ngathurunya",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Sweat",
+          "translation": "akinenir, pl. ngakinenira, see \"perspiration\"",
+          "pronunciation": "akinenir, pl. ngakinenira, see \"perspiration\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Tears",
+          "translation": "ngakio",
+          "pronunciation": "ngakio",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Thigh",
+          "translation": "alokidin, pl. ngalokidingo",
+          "pronunciation": "alokidin, pl. ngalokidingo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Throat",
+          "translation": "edokoli, pl. ngadokoli, see mouth, etc",
+          "pronunciation": "edokoli, pl. ngadokoli, see mouth, etc",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Thumb",
+          "translation": "ekimoin nabolon",
+          "pronunciation": "ekimoin nabolon",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Toe",
+          "translation": "akimoin akejo, pl. ngakimmoio ngakeju",
+          "pronunciation": "akimoin akejo, pl. ngakimmoio ngakeju",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "angelai, pl. ngelai, see \"mouth\"",
+          "pronunciation": "angelai, pl. ngelai, see \"mouth\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth, back",
+          "translation": "atitinyo, pl. ngitinyo",
+          "pronunciation": "atitinyo, pl. ngitinyo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Urine",
+          "translation": "ngul",
+          "pronunciation": "ngul",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Voice",
+          "translation": "agituk",
+          "pronunciation": "agituk",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Waist",
+          "translation": "eguro, pl. ngaguria",
+          "pronunciation": "eguro, pl. ngaguria",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Wound",
+          "translation": "ejemi, pl. ngajemit",
+          "pronunciation": "ejemi, pl. ngajemit",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Turkana–Suk Shared Cognates & Circular Wrist-Knife (Beech 1911 Appendix p. 151 & Johnston 1902)",
+          "translation": "abarait (circular wrist-knife), akwara (spear), ngatuk (cattle), akipi (water), akim (fire), akolong (sun)",
+          "pronunciation": "a-ba-rait / a-kwa-ra / nga-tuk / a-ki-pi",
+          "context": "Sir Harry Johnston (1902, pp. 842–852) & Mervyn W. H. Beech (1911, p. 151)",
+          "audioFile": null
+        },
+        {
+          "english": "Sir Harry Johnston's",
+          "translation": "Physical stature & coiffure (pp. 841–846): tallest people on the globe (Capt. Wellby noted districts averaging ~7 ft); men train their hair with fat, clay, and inherited paternal felt into huge bac...",
+          "pronunciation": "nya-up-wel / e-ke-leng / e-ka-pe-lan / nye-bu-ni",
+          "context": "1902, Vol. II, pp. 839–852) Ethnography of the Turkana: Stature, Felted Hair-Bags, Circular Wrist-Knife, Ostrich-Egg Aprons, Dūm-Palm Meal & Elephant Snares — Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 839–852 & Ch. XX, pp...",
+          "audioFile": null
+        },
+        {
+          "english": "Arm",
+          "translation": "Ekan",
+          "pronunciation": "ekan",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Turkana)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "Atutunyω",
+          "pronunciation": "atutunyω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Turkana)",
+          "audioFile": null
+        },
+        {
+          "english": "Brain",
+          "translation": "adam, pl. ngidem",
+          "pronunciation": "adam, pl. ngidem",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Hole where teeth of lower jaw have been extracted",
+          "translation": "ngijili",
+          "pronunciation": "ngijili",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth stick, for cleaning",
+          "translation": "anyakai, pl. nganyakaiya",
+          "pronunciation": "anyakai, pl. nganyakaiya",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        }
+      ]
+    },
+    {
       "id": "animals",
-      "name": "Animals & Wildlife",
+      "name": "Animals, Livestock & Wildlife",
       "icon": "🐾",
       "entries": [
         {
@@ -3125,12 +3769,26 @@
           "pronunciation": "as \"sheep\"",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
+        },
+        {
+          "english": "Oxen",
+          "translation": "ate, pl. ngatuk",
+          "pronunciation": "ate, pl. ngatuk",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Udder",
+          "translation": "eket, pl. ngakitai",
+          "pronunciation": "eket, pl. ngakitai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
         }
       ]
     },
     {
       "id": "nature",
-      "name": "Nature & Environment",
+      "name": "Nature, Environment & Geography",
       "icon": "🌿",
       "entries": [
         {
@@ -4140,900 +4798,11 @@
           "pronunciation": "echotom, pl. ngachoto",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "body",
-      "name": "Body Parts",
-      "icon": "👁️",
-      "entries": [
-        {
-          "english": "Head",
-          "translation": "Ako / Akou (pl. nyakis / ngakouō)",
-          "pronunciation": "ah-koh / ah-koh-oo",
-          "context": "Head. Plural: Nyakis / Ngakouo. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Hair",
-          "translation": "Atimat / Ngetim (pl. ngatim)",
-          "pronunciation": "ah-tee-maht",
-          "context": "Human hair. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Eye",
-          "translation": "Akon / Akong (pl. ngakonyan)",
-          "pronunciation": "ah-kohn",
-          "context": "Eye. Plural: Ngakonyan. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Ear",
-          "translation": "Agit / Akit (pl. nyagi / ngaki)",
-          "pronunciation": "ah-geet / ah-keet",
-          "context": "Ear. Plural: Nyagi / Ngaki. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Nose",
-          "translation": "Ekumi (pl. ngikumith / ngikumes)",
-          "pronunciation": "eh-koo-mee",
-          "context": "Nose. Plural: Ngikumith. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Mouth",
-          "translation": "Akitok (pl. ngakituka)",
-          "pronunciation": "ah-kee-tohk",
-          "context": "Mouth. Plural: Ngakituka. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Lip",
-          "translation": "Akitok (pl. ngakutoka)",
-          "pronunciation": "ah-koo-toh-kah",
-          "context": "Lips. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Tooth",
-          "translation": "Agelai / Ekelai (pl. ngelai / ngikelai)",
-          "pronunciation": "ah-geh-lah-ee",
-          "context": "Tooth. Plural: Ngelai. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Tongue",
-          "translation": "Aliep / Angajep (pl. ngaliep / ngangajepa)",
-          "pronunciation": "ah-lee-ehp",
-          "context": "Tongue. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Throat",
-          "translation": "Edokoli (pl. ngadokoli)",
-          "pronunciation": "eh-doh-koh-lee",
-          "context": "Throat and larynx. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Neck",
-          "translation": "Emotherin / Emosingo (pl. ngemotheringa / ngimosingo)",
-          "pronunciation": "eh-moh-theh-reen",
-          "context": "Neck. Plural: Ngemotheringa. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Beard",
-          "translation": "Ebenek (pl. ngebeneka)",
-          "pronunciation": "eh-beh-nehk",
-          "context": "Facial beard or chin whiskers. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Face",
-          "translation": "Eret (pl. ngeretin)",
-          "pronunciation": "eh-reht",
-          "context": "Face or brow. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Shoulder",
-          "translation": "Ethiket / Ekeget (pl. ngethiketa / ngikegeta)",
-          "pronunciation": "eh-thee-keht",
-          "context": "Shoulder. Plural: Ngethiketa. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Chest",
-          "translation": "Etorob (pl. ngatorobio)",
-          "pronunciation": "eh-toh-rohb",
-          "context": "Chest. Plural: Ngatorobio. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Breast",
-          "translation": "Ethigina / Ekidi (pl. ngethigin)",
-          "pronunciation": "eh-thee-gee-nah",
-          "context": "Breast. Plural: Ngethigin. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "Etou / Etau (pl. ngetai / ngitai)",
-          "pronunciation": "eh-toh-oo / eh-tah-oo",
-          "context": "Anatomical heart and locus of courage. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Abdomen / Belly",
-          "translation": "Akok (pl. akokis)",
-          "pronunciation": "ah-kohk",
-          "context": "Abdomen. Plural: Akokis. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Stomach",
-          "translation": "Eboi (pl. ngaboyo)",
-          "pronunciation": "eh-boh-ee",
-          "context": "Internal stomach organ. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Back",
-          "translation": "Egur / Eguur (pl. ngurai / ngiguur)",
-          "pronunciation": "eh-goor",
-          "context": "Human back. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Arm / Hand",
-          "translation": "Akan (pl. ngakanin)",
-          "pronunciation": "ah-kahn",
-          "context": "Hand or whole arm. Plural: Ngakanin. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Palm of hand",
-          "translation": "Etou ya akan (pl. ngetou ya ngakanin)",
-          "pronunciation": "eh-toh-oo yah ah-kahn",
-          "context": "Inner palm of hand. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Finger",
-          "translation": "Ekimoin (pl. ngemoyo / ngimoyin)",
-          "pronunciation": "eh-kee-moh-een",
-          "context": "Finger. Plural: Ngemoyo. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Thumb",
-          "translation": "Ekimoin labuloi / nabolon",
-          "pronunciation": "eh-kee-moh-een lah-boo-loh-ee",
-          "context": "Thumb (lit. 'big finger'). (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Fingernail / Claw",
-          "translation": "Emargoit / Emagarit (pl. ngemagor)",
-          "pronunciation": "eh-mahr-goh-eet",
-          "context": "Fingernail, claw, or animal hoof. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Leg",
-          "translation": "Akeju (pl. ngakeju)",
-          "pronunciation": "ah-keh-joo",
-          "context": "Leg or foot. Plural: Ngakeju. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Knee",
-          "translation": "Akun / Akung (pl. ngakungin)",
-          "pronunciation": "ah-koon",
-          "context": "Knee joint. Plural: Ngakungin. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Foot / Sole",
-          "translation": "Adapal akeju / Etou ya keju",
-          "pronunciation": "ah-dah-pahl ah-keh-joo",
-          "context": "Sole of foot. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Toe",
-          "translation": "Akimoin akejo (pl. ngakimmoio ngakeju)",
-          "pronunciation": "eh-kee-moh-een ah-keh-joh",
-          "context": "Toe of the foot. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Bone",
-          "translation": "Akoit (pl. ngakoiyo)",
-          "pronunciation": "ah-koh-eet",
-          "context": "Bone. Plural: Ngakoiyo. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "Nakot / Ngakoot",
-          "pronunciation": "nah-koht",
-          "context": "Living blood; also tapped as pastoral sustenance. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Body / Flesh",
-          "translation": "Akwan (pl. ngouwat) / Akirin (pl. ngakir)",
-          "pronunciation": "ah-kwahn",
-          "context": "Human body or flesh. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Skin",
-          "translation": "Emun-ya / Ejim (pl. ngemunya / ngijimyo)",
-          "pronunciation": "eh-moon-yah",
-          "context": "Human skin or dressed animal pelt. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Abdomen",
-          "translation": "akok, pl. akokis",
-          "pronunciation": "akok, pl. akokis",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Back",
-          "translation": "egur, pl. ngurai",
-          "pronunciation": "egur, pl. ngurai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Barren",
-          "translation": "ekolup, pl. ngelupoka",
-          "pronunciation": "ekolup, pl. ngelupoka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Beard",
-          "translation": "ebenek, pl. ngebeneka",
-          "pronunciation": "ebenek, pl. ngebeneka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Belly",
-          "translation": "akok, pl. akokis",
-          "pronunciation": "akok, pl. akokis",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Blind",
-          "translation": "emudukona",
-          "pronunciation": "emudukona",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Blood",
-          "translation": "nakot",
-          "pronunciation": "nakot",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Body",
-          "translation": "akwan, pl. ngouwat",
-          "pronunciation": "akwan, pl. ngouwat",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Bone",
-          "translation": "akoit, pl. ngakoiyo",
-          "pronunciation": "akoit, pl. ngakoiyo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Breast",
-          "translation": "ethigina, pl. ngethigin",
-          "pronunciation": "ethigina, pl. ngethigin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Breath",
-          "translation": "yarakin",
-          "pronunciation": "yarakin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Cap (head-dress)",
-          "translation": "elim, pl. ngitemoi",
-          "pronunciation": "elim, pl. ngitemoi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Cheek",
-          "translation": "ematanget, pl. ngematangeti",
-          "pronunciation": "ematanget, pl. ngematangeti",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Chest",
-          "translation": "etorob, pl. ngatorobio",
-          "pronunciation": "etorob, pl. ngatorobio",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Chin",
-          "translation": "abokon, pl. ngabokonga",
-          "pronunciation": "abokon, pl. ngabokonga",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Clay (for hair)",
-          "translation": "emunyan",
-          "pronunciation": "emunyan",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Cold",
-          "translation": "elilim, pl. ngelimo",
-          "pronunciation": "elilim, pl. ngelimo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Deceased Body",
-          "translation": "atona, pl. ngatoka",
-          "pronunciation": "atona, pl. ngatoka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Dead body",
-          "translation": "atona, pl. ngatoka",
-          "pronunciation": "atona, pl. ngatoka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Ear",
-          "translation": "agit, pl. nyagi",
-          "pronunciation": "agit, pl. nyagi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Elbow",
-          "translation": "esidongaror, pl. ngesidongaroria",
-          "pronunciation": "esidongaror, pl. ngesidongaroria",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Entrails",
-          "translation": "amultin, pl. ngamultenya, see \"stomach\"",
-          "pronunciation": "amultin, pl. ngamultenya, see \"stomach\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Eye",
-          "translation": "akon, pl. ngakonyan",
-          "pronunciation": "akon, pl. ngakonyan",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Face",
-          "translation": "eret, pl. ngeretin",
-          "pronunciation": "eret, pl. ngeretin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Fat",
-          "translation": "akimet, pl. ngameta",
-          "pronunciation": "akimet, pl. ngameta",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Female (pregnant)",
-          "translation": "eputi, pl. ngekaputiok",
-          "pronunciation": "eputi, pl. ngekaputiok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Female (barren)",
-          "translation": "esorokona, pl. ngiserok or ekolobana, pl. ngekolobaka",
-          "pronunciation": "esorokona, pl. ngiserok or ekolobana, pl. ngekolobaka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Finger",
-          "translation": "ekimoin, pl. ngemoyo",
-          "pronunciation": "ekimoin, pl. ngemoyo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Thumb",
-          "translation": "ekimoin labuloi, pl. ngemoyo nglabuloi",
-          "pronunciation": "ekimoin labuloi, pl. ngemoyo nglabuloi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Flesh",
-          "translation": "akirin, pl. ngakir",
-          "pronunciation": "akirin, pl. ngakir",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Foot",
-          "translation": "adapal akeju, pl. nyadapal ngakeju, see \"palm\", \"sole\", \"shoe\"",
-          "pronunciation": "adapal akeju, pl. nyadapal ngakeju, see \"palm\", \"sole\", \"shoe\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Apron, back (women)",
-          "translation": "abue, pl. nyabuith",
-          "pronunciation": "abue, pl. nyabuith",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Hair",
-          "translation": "atimat, pl. ngatim",
-          "pronunciation": "atimat, pl. ngatim",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Head-dress",
-          "translation": "amedok, pl. ngemedoi, the distinctive Turkana coiffure",
-          "pronunciation": "amedok, pl. ngemedoi, the distinctive Turkana coiffure",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Hand",
-          "translation": "akan, pl. ngakanin, see \"palm\"",
-          "pronunciation": "akan, pl. ngakanin, see \"palm\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Head",
-          "translation": "ako, pl. nyakis",
-          "pronunciation": "ako, pl. nyakis",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "etou, pl. ngetai",
-          "pronunciation": "etou, pl. ngetai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Illness",
-          "translation": "edege, pl. ngidege",
-          "pronunciation": "edege, pl. ngidege",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Cough",
-          "translation": "awali, pl. ngawalathi",
-          "pronunciation": "awali, pl. ngawalathi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Measles",
-          "translation": "ekurara (? chicken-pox)",
-          "pronunciation": "ekurara (? chicken-pox)",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Sore",
-          "translation": "ajemi, pl. ngijemi",
-          "pronunciation": "ajemi, pl. ngijemi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Spleen, enlarged",
-          "translation": "ariaba etit",
-          "pronunciation": "ariaba etit",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Jaw",
-          "translation": "abokoin, pl. ngabokonya",
-          "pronunciation": "abokoin, pl. ngabokonya",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Knee",
-          "translation": "akun, pl. ngakungin",
-          "pronunciation": "akun, pl. ngakungin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Knife, wrist",
-          "translation": "abarait, pl. ngibara",
-          "pronunciation": "abarait, pl. ngibara",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Knife, finger",
-          "translation": "akoli, pl. ngakoli",
-          "pronunciation": "akoli, pl. ngakoli",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Leg",
-          "translation": "akeju, pl. ngakeju, see \"foot\"",
-          "pronunciation": "akeju, pl. ngakeju, see \"foot\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Scar",
-          "translation": "abori, pl. ngabori",
-          "pronunciation": "abori, pl. ngabori",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Medicine",
-          "translation": "ekitoi, pl. ngakito",
-          "pronunciation": "ekitoi, pl. ngakito",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Mouth",
-          "translation": "akitok, pl. ngakituka, see \"tooth\"",
-          "pronunciation": "akitok, pl. ngakituka, see \"tooth\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Teeth",
-          "translation": "agelai, pl. ngelai",
-          "pronunciation": "agelai, pl. ngelai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Throat",
-          "translation": "edokoli, pl. ngadokoli",
-          "pronunciation": "edokoli, pl. ngadokoli",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Tongue",
-          "translation": "aliep, pl. ngaliep",
-          "pronunciation": "aliep, pl. ngaliep",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Mud, head-dress",
-          "translation": "emunyan, see \"class\", \"hair\"",
-          "pronunciation": "emunyan, see \"class\", \"hair\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Ankle-bells",
-          "translation": "echorot, pl. ngechoror",
-          "pronunciation": "echorot, pl. ngechoror",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Neck",
-          "translation": "emotherin, pl. ngemotheringa",
-          "pronunciation": "emotherin, pl. ngemotheringa",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Nose",
-          "translation": "ekumi, pl. ngikumith",
-          "pronunciation": "ekumi, pl. ngikumith",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Palm (hand)",
-          "translation": "etou ya akan, pl. ngetou ya ngakanin",
-          "pronunciation": "etou ya akan, pl. ngetou ya ngakanin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Palm (sole)",
-          "translation": "etou ya keju, pl. ngetou ya ngakeju",
-          "pronunciation": "etou ya keju, pl. ngetou ya ngakeju",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Perspiration",
-          "translation": "akininer, pl. ngakineniro, see \"sweat\"",
-          "pronunciation": "akininer, pl. ngakineniro, see \"sweat\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Poison",
-          "translation": "asorich, pl. ngasoricho",
-          "pronunciation": "asorich, pl. ngasoricho",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Saliva",
-          "translation": "ngakimul, see \"spit\"",
-          "pronunciation": "ngakimul, see \"spit\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Scar",
-          "translation": "emachar, pl. ngmacharin, see \"mark\"",
-          "pronunciation": "emachar, pl. ngmacharin, see \"mark\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Shoulder",
-          "translation": "ethiket, pl. ngethiketa",
-          "pronunciation": "ethiket, pl. ngethiketa",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Sick",
-          "translation": "edeki, pl. ngedekethin",
-          "pronunciation": "edeki, pl. ngedekethin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Skin (new)",
-          "translation": "ejam, pl. ngejam",
-          "pronunciation": "ejam, pl. ngejam",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Sole (foot)",
-          "translation": "etou ya keju, pl. ngetou ya ngakeju, see \"palm\"",
-          "pronunciation": "etou ya keju, pl. ngetou ya ngakeju, see \"palm\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Sore",
-          "translation": "ejimi, pl. ngajimo",
-          "pronunciation": "ejimi, pl. ngajimo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Boil",
-          "translation": "elibunait, pl. ngelibuno",
-          "pronunciation": "elibunait, pl. ngelibuno",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Soul (heart)",
-          "translation": "etam, pl. ngetowin",
-          "pronunciation": "etam, pl. ngetowin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Spittle",
-          "translation": "arimu, pl. ngakimulak, see \"saliva\"",
-          "pronunciation": "arimu, pl. ngakimulak, see \"saliva\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Spleen",
-          "translation": "etid, pl. ngetidin",
-          "pronunciation": "etid, pl. ngetidin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Stomach",
-          "translation": "eboi, pl. ngaboyo",
-          "pronunciation": "eboi, pl. ngaboyo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Entrails",
-          "translation": "amultin, pl. ngamultenya",
-          "pronunciation": "amultin, pl. ngamultenya",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Water stomach",
-          "translation": "ethurun, pl. ngathurunya",
-          "pronunciation": "ethurun, pl. ngathurunya",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Sweat",
-          "translation": "akinenir, pl. ngakinenira, see \"perspiration\"",
-          "pronunciation": "akinenir, pl. ngakinenira, see \"perspiration\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Tears",
-          "translation": "ngakio",
-          "pronunciation": "ngakio",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Thigh",
-          "translation": "alokidin, pl. ngalokidingo",
-          "pronunciation": "alokidin, pl. ngalokidingo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Throat",
-          "translation": "edokoli, pl. ngadokoli, see mouth, etc",
-          "pronunciation": "edokoli, pl. ngadokoli, see mouth, etc",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Thumb",
-          "translation": "ekimoin nabolon",
-          "pronunciation": "ekimoin nabolon",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Toe",
-          "translation": "akimoin akejo, pl. ngakimmoio ngakeju",
-          "pronunciation": "akimoin akejo, pl. ngakimmoio ngakeju",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Tooth",
-          "translation": "angelai, pl. ngelai, see \"mouth\"",
-          "pronunciation": "angelai, pl. ngelai, see \"mouth\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Tooth, back",
-          "translation": "atitinyo, pl. ngitinyo",
-          "pronunciation": "atitinyo, pl. ngitinyo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Urine",
-          "translation": "ngul",
-          "pronunciation": "ngul",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Voice",
-          "translation": "agituk",
-          "pronunciation": "agituk",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Waist",
-          "translation": "eguro, pl. ngaguria",
-          "pronunciation": "eguro, pl. ngaguria",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Wound",
-          "translation": "ejemi, pl. ngajemit",
-          "pronunciation": "ejemi, pl. ngajemit",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Turkana–Suk Shared Cognates & Circular Wrist-Knife (Beech 1911 Appendix p. 151 & Johnston 1902)",
-          "translation": "abarait (circular wrist-knife), akwara (spear), ngatuk (cattle), akipi (water), akim (fire), akolong (sun)",
-          "pronunciation": "a-ba-rait / a-kwa-ra / nga-tuk / a-ki-pi",
-          "context": "Sir Harry Johnston (1902, pp. 842–852) & Mervyn W. H. Beech (1911, p. 151)",
-          "audioFile": null
-        },
-        {
-          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 839–852) Ethnography of the Turkana: Stature, Felted Hair-Bags, Circular Wrist-Knife, Ostrich-Egg Aprons, Dūm-Palm Meal & Elephant Snares",
-          "translation": "Physical stature & coiffure (pp. 841–846): tallest people on the globe (Capt. Wellby noted districts averaging ~7 ft); men train their hair with fat, clay, and inherited paternal felt into huge back-bags (chignons) holding fire-sticks, snuff, and beads, or into long pendulous pods terminating in a wire tail, topped by felted human-hair hats sewn with cowries and brass beads or black ostrich-feather caps; women do not shave their heads (unlike Suk and Masai women), twisting their hair into bast-stiffened tails • Ornaments & weapons (pp. 844–850): 2 to 8 brass/iron rings along the outer ear-rim, nose-septum flat brass disc, lower-lip quill, circular steel wrist-knife (sharpened on outer edge, sheathed in leather), right-arm leather band with white cow-tail or colobus tassel, 6-inch-backed brass-beaded goatskin waist-belt, girls' aprons edged with ostrich-egg shell discs, antelope knuckle-bone necklaces, Beisa oryx-horn tobacco boxes, tiny 8-inch carved 3-legged stools/headrests, and concave-sided 4-pointed buffalo/giraffe-hide shields with a bow-shaped wooden midrib topped by a feather plume • Subsistence & elephant snares (pp. 848–850): meal ground from the gingerbread-like rind of Dūm palm (Hyphæne thebaica) fruits, fishing in Lake Rudolf, humped cattle, black-headed sheep, donkeys, and camels (acquired via Burkeneji); catching elephants with raw-hide running nooses anchored to big river-valley trees over muddy watering paths • Language note (p. 887): Turkana uses the negative prefix Nye- (unlike Ma- in Masai/Suk) and masculine e-/l- vs. feminine a-/n-/nya- gender prefixes (p. 910 fn.)",
-          "pronunciation": "nya-up-wel / e-ke-leng / e-ka-pe-lan / nye-bu-ni",
-          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 839–852 & Ch. XX, pp. 887, 910",
-          "audioFile": null
-        },
-        {
-          "english": "Arm",
-          "translation": "Ekan",
-          "pronunciation": "ekan",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Turkana)",
-          "audioFile": null
-        },
-        {
-          "english": "Heel",
-          "translation": "Atutunyω",
-          "pronunciation": "atutunyω",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Turkana)",
-          "audioFile": null
-        },
-        {
-          "english": "Brain",
-          "translation": "adam, pl. ngidem",
-          "pronunciation": "adam, pl. ngidem",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Hole where teeth of lower jaw have been extracted",
-          "translation": "ngijili",
-          "pronunciation": "ngijili",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
         },
         {
-          "english": "Tooth stick, for cleaning",
-          "translation": "anyakai, pl. nganyakaiya",
-          "pronunciation": "anyakai, pl. nganyakaiya",
+          "english": "Dark",
+          "translation": "eriono, pl. ngerioko (black)",
+          "pronunciation": "eriono, pl. ngerioko (black)",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         }
@@ -5041,7 +4810,7 @@
     },
     {
       "id": "food",
-      "name": "Food & Drink",
+      "name": "Food, Drink & Agriculture",
       "icon": "🍲",
       "entries": [
         {
@@ -5470,12 +5239,26 @@
           "pronunciation": "ngapok",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
+        },
+        {
+          "english": "I am thirsty",
+          "translation": "Akori ayon",
+          "pronunciation": "ah-koh-ree ah-yohn",
+          "context": "Expressing thirst for water. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Gourd used as a glass",
+          "translation": "eboli, pl. ngibolai",
+          "pronunciation": "eboli, pl. ngibolai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
         }
       ]
     },
     {
       "id": "home",
-      "name": "Home & Material Culture",
+      "name": "Home, Tools & Material Culture",
       "icon": "🏠",
       "entries": [
         {
@@ -6037,14 +5820,7 @@
           "pronunciation": "emwut, pl. ngemwuti",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "weapons-tools",
-      "name": "Weapons & Tools",
-      "icon": "🗡️",
-      "entries": [
+        },
         {
           "english": "Spear",
           "translation": "Akwara / A'kwara (pl. ngakwarath / ngawarath)",
@@ -6184,12 +5960,19 @@
           "pronunciation": "eh-woo-noh",
           "context": "Noose snare or pitfall trap for wild game. (Barton 1921)",
           "audioFile": null
+        },
+        {
+          "english": "Stick, curved (a weapon)",
+          "translation": "ebelebel, pl. ngebelebellai",
+          "pronunciation": "ebelebel, pl. ngebelebellai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
         }
       ]
     },
     {
       "id": "verbs",
-      "name": "Verbs & Actions",
+      "name": "Core Verbs & Actions",
       "icon": "⚡",
       "entries": [
         {
@@ -9803,474 +9586,12 @@
           "pronunciation": "etiegi",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "phrases",
-      "name": "Common Phrases",
-      "icon": "💬",
-      "entries": [
-        {
-          "english": "What is your name?",
-          "translation": "Ngai akero ekon? / Ngai ekiro kon?",
-          "pronunciation": "ngah-ee ah-keh-roh eh-kohn",
-          "context": "Enquiring someone's identity. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Where are you going?",
-          "translation": "Alothi ai? / Ilotit iwon ai?",
-          "pronunciation": "ah-loh-thee ah-ee",
-          "context": "Enquiring traveller's destination. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Where is he / she?",
-          "translation": "Eyyey ngeth? / Ali ngeth?",
-          "pronunciation": "eh-ee-yeh-ee ngehth",
-          "context": "Asking the location of a person. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Come here",
-          "translation": "Bwa nege! / Tobwo nege!",
-          "pronunciation": "bwah neh-geh",
-          "context": "Command to approach. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Go away",
-          "translation": "Tenyu! / Tolot!",
-          "pronunciation": "tehn-yoo / toh-loht",
-          "context": "Command to leave. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Look out! / Take care!",
-          "translation": "Ngolik! / Engolikini!",
-          "pronunciation": "ngoh-leek",
-          "context": "Warning to be watchful. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Wait a little",
-          "translation": "Darun adojigi / Todar wadio",
-          "pronunciation": "dah-roon ah-doh-jee-gee",
-          "context": "Requesting brief patience. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Leave it alone!",
-          "translation": "Towa thik!",
-          "pronunciation": "toh-wah theek",
-          "context": "Instruction not to touch or disturb. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "What is this?",
-          "translation": "Nyo lo?",
-          "pronunciation": "nyoh loh",
-          "context": "Asking what an object is. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "What do you want?",
-          "translation": "Esagin nyo? / Isagin nyo?",
-          "pronunciation": "eh-sah-geen nyoh",
-          "context": "Asking someone's intent or need. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "What is your tribe?",
-          "translation": "Ali tela kon?",
-          "pronunciation": "ah-lee teh-lah kohn",
-          "context": "Enquiring someone's ethnic section or clan. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Why?",
-          "translation": "Ikwani?",
-          "pronunciation": "ee-kwah-nee",
-          "context": "Asking reason or motive. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "When?",
-          "translation": "Wurre?",
-          "pronunciation": "woo-reh",
-          "context": "Asking about time. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "I don't know",
-          "translation": "Mam ayeni / Aiye",
-          "pronunciation": "mahm ah-yeh-nee",
-          "context": "Expressing lack of knowledge. 'Aiye' = Who knows? (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Speak slowly",
-          "translation": "Kirworo kiyapak",
-          "pronunciation": "kee-rwoh-roh kee-yah-pahk",
-          "context": "Asking someone to speak slower. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "It is true",
-          "translation": "Kere / Iteni robo",
-          "pronunciation": "keh-reh / ee-teh-nee roh-boh",
-          "context": "Affirmation of truth. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "That is a lie",
-          "translation": "Alioko nguna",
-          "pronunciation": "ah-lee-oh-koh ngoo-nah",
-          "context": "Refuting falsehood (alioko = lies). (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Good / Beautiful",
-          "translation": "Ejok (pl. ngejokok)",
-          "pronunciation": "eh-johk",
-          "context": "Describing good or beautiful quality. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Bad / Ugly",
-          "translation": "Arono (pl. ngaroko)",
-          "pronunciation": "ah-roh-noh",
-          "context": "Describing bad or harmful quality. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Big / Great",
-          "translation": "Epol (pl. ngepolok)",
-          "pronunciation": "eh-pohl",
-          "context": "Large stature or high importance. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Small / Little",
-          "translation": "Edit (pl. ngedithok)",
-          "pronunciation": "eh-deet",
-          "context": "Small size or youth. (Barton 1921)",
-          "audioFile": null
         },
         {
           "english": "Very / Truly",
           "translation": "Noi / Kere",
           "pronunciation": "noh-ee / keh-reh",
           "context": "Intensifier adverb denoting thoroughly or very. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "I am sick",
-          "translation": "Adiaka ayon / Adyaka ayong",
-          "pronunciation": "ah-dyah-kah ah-yohng",
-          "context": "Stating illness. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "I am thirsty",
-          "translation": "Akori ayon",
-          "pronunciation": "ah-koh-ree ah-yohn",
-          "context": "Expressing thirst for water. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "It is finished",
-          "translation": "Erika",
-          "pronunciation": "eh-ree-kah",
-          "context": "Expressing completion. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Road / Path",
-          "translation": "Erot / Eerot (pl. ngerotin)",
-          "pronunciation": "eh-roht",
-          "context": "Path, road, or pastoral cattle route. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Far",
-          "translation": "Elwana",
-          "pronunciation": "eh-lwah-nah",
-          "context": "Long distance away. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Near",
-          "translation": "Epii / Api",
-          "pronunciation": "eh-pee-ee / ah-pee",
-          "context": "Close proximity. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Right",
-          "translation": "Teten",
-          "pronunciation": "teh-tehn",
-          "context": "Direction right (akan na lo teten = right hand). (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "Thief!",
-          "translation": "Ekakolon! / Akokolon!",
-          "pronunciation": "eh-kah-koh-lohn",
-          "context": "Alarm alerting that cattle or property is being stolen. (Barton 1921)",
-          "audioFile": null
-        },
-        {
-          "english": "I",
-          "translation": "ayon",
-          "pronunciation": "ayon",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "thou",
-          "translation": "ion",
-          "pronunciation": "ion",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "he, etc",
-          "translation": "ngeth",
-          "pronunciation": "ngeth",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "we",
-          "translation": "thowa",
-          "pronunciation": "thowa",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "ye",
-          "translation": "eth",
-          "pronunciation": "eth",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "they",
-          "translation": "keth",
-          "pronunciation": "keth",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "my",
-          "translation": "akan | ngulu-kan",
-          "pronunciation": "akan | ngulu-kan",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "thy",
-          "translation": "ekon | ngulu-kon",
-          "pronunciation": "ekon | ngulu-kon",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "his, etc",
-          "translation": "ekin | ngulu-kin",
-          "pronunciation": "ekin | ngulu-kin",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "ours",
-          "translation": "ekothi | ngulu-kothi",
-          "pronunciation": "ekothi | ngulu-kothi",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "yours",
-          "translation": "ekuth | ngulu-kuth",
-          "pronunciation": "ekuth | ngulu-kuth",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "theirs",
-          "translation": "ekech | ngulu-kech",
-          "pronunciation": "ekech | ngulu-kech",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "this",
-          "translation": "-en, -lo, or ngol | -elu or -ngul",
-          "pronunciation": "-en, -lo, or ngol | -elu or -ngul",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "that (near)",
-          "translation": "-eya | -ekwa",
-          "pronunciation": "-eya | -ekwa",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "that (remote)",
-          "translation": "-yaga | -kwagwa",
-          "pronunciation": "-yaga | -kwagwa",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "I myself",
-          "translation": "ayon-elopi",
-          "pronunciation": "ayon-elopi",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "thou thyself",
-          "translation": "ion-elopi",
-          "pronunciation": "ion-elopi",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "he, etc., himself",
-          "translation": "ngeth-elopi",
-          "pronunciation": "ngeth-elopi",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "we ourselves",
-          "translation": "thowa-ngilipek",
-          "pronunciation": "thowa-ngilipek",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "ye yourselves",
-          "translation": "eth-ngilipek",
-          "pronunciation": "eth-ngilipek",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "they themselves",
-          "translation": "keth-ngilipek",
-          "pronunciation": "keth-ngilipek",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "I by myself",
-          "translation": "ayon-bon",
-          "pronunciation": "ayon-bon",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "thou by thyself",
-          "translation": "ion-bon",
-          "pronunciation": "ion-bon",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "he by himself",
-          "translation": "ngeth-bon",
-          "pronunciation": "ngeth-bon",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "who ?",
-          "translation": "ngai ?",
-          "pronunciation": "ngai ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "whose ?",
-          "translation": "a-ngai ?",
-          "pronunciation": "a-ngai ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "ngai-ayon ?",
-          "translation": "who is this ?",
-          "pronunciation": "who is this ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "ngai-eth ?",
-          "translation": "who are these ?",
-          "pronunciation": "who are these ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "a-ngai-lo ?",
-          "translation": "whose is this ?",
-          "pronunciation": "whose is this ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "a-ngai-lu ?",
-          "translation": "whose are these ?",
-          "pronunciation": "whose are these ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "what ?",
-          "translation": "nyo ?",
-          "pronunciation": "nyo ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "what is this ?",
-          "translation": "nyo-lo ?",
-          "pronunciation": "nyo-lo ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "what do you want ?",
-          "translation": "esagin-nyo ?",
-          "pronunciation": "esagin-nyo ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "which ?",
-          "translation": "ali ? and aiū ?",
-          "pronunciation": "ali ? and aiū ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "of what sort ?",
-          "translation": "eko-nyai ?",
-          "pronunciation": "eko-nyai ?",
-          "context": "Juxon Barton (1921) — Pronouns",
-          "audioFile": null
-        },
-        {
-          "english": "of what sort is this ?",
-          "translation": "eko-nyai-lo ?",
-          "pronunciation": "eko-nyai-lo ?",
-          "context": "Juxon Barton (1921) — Pronouns",
           "audioFile": null
         },
         {
@@ -10496,6 +9817,1399 @@
           "pronunciation": "tarre wurre ?",
           "context": "Juxon Barton (1921) — Adverbs",
           "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives, Qualities & Grammar",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Wait a little",
+          "translation": "Darun adojigi / Todar wadio",
+          "pronunciation": "dah-roon ah-doh-jee-gee",
+          "context": "Requesting brief patience. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Leave it alone!",
+          "translation": "Towa thik!",
+          "pronunciation": "toh-wah theek",
+          "context": "Instruction not to touch or disturb. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "What is this?",
+          "translation": "Nyo lo?",
+          "pronunciation": "nyoh loh",
+          "context": "Asking what an object is. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Why?",
+          "translation": "Ikwani?",
+          "pronunciation": "ee-kwah-nee",
+          "context": "Asking reason or motive. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "When?",
+          "translation": "Wurre?",
+          "pronunciation": "woo-reh",
+          "context": "Asking about time. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "It is true",
+          "translation": "Kere / Iteni robo",
+          "pronunciation": "keh-reh / ee-teh-nee roh-boh",
+          "context": "Affirmation of truth. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Good / Beautiful",
+          "translation": "Ejok (pl. ngejokok)",
+          "pronunciation": "eh-johk",
+          "context": "Describing good or beautiful quality. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Bad / Ugly",
+          "translation": "Arono (pl. ngaroko)",
+          "pronunciation": "ah-roh-noh",
+          "context": "Describing bad or harmful quality. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Big / Great",
+          "translation": "Epol (pl. ngepolok)",
+          "pronunciation": "eh-pohl",
+          "context": "Large stature or high importance. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Small / Little",
+          "translation": "Edit (pl. ngedithok)",
+          "pronunciation": "eh-deet",
+          "context": "Small size or youth. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "this",
+          "translation": "-en, -lo, or ngol | -elu or -ngul",
+          "pronunciation": "-en, -lo, or ngol | -elu or -ngul",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "that (remote)",
+          "translation": "-yaga | -kwagwa",
+          "pronunciation": "-yaga | -kwagwa",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "who ?",
+          "translation": "ngai ?",
+          "pronunciation": "ngai ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "what ?",
+          "translation": "nyo ?",
+          "pronunciation": "nyo ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "which ?",
+          "translation": "ali ? and aiū ?",
+          "pronunciation": "ali ? and aiū ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "who knows",
+          "translation": "aiye",
+          "pronunciation": "aiye",
+          "context": "Juxon Barton (1921) — Interjections",
+          "audioFile": null
+        },
+        {
+          "english": "Coward",
+          "translation": "ekuriana, pl. nguriaka",
+          "pronunciation": "ekuriana, pl. nguriaka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Ago, long",
+          "translation": "kojolo, and ngorot",
+          "pronunciation": "kojolo, and ngorot",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Alone",
+          "translation": "ayon bon (I by myself)",
+          "pronunciation": "ayon bon (I by myself)",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "arono, pl. ngaroko",
+          "pronunciation": "arono, pl. ngaroko",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Bad tempered",
+          "translation": "ededen, pl. ngadadenga",
+          "pronunciation": "ededen, pl. ngadadenga",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "epol, pl. ngepolok",
+          "pronunciation": "epol, pl. ngepolok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "eriono, pl. ngerioko",
+          "pronunciation": "eriono, pl. ngerioko",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Blunt",
+          "translation": "engini, pl. nganginio",
+          "pronunciation": "engini, pl. nganginio",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Broad",
+          "translation": "adapal",
+          "pronunciation": "adapal",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Black and white",
+          "translation": "longerok, pl. nglongerokoka",
+          "pronunciation": "longerok, pl. nglongerokoka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Brown",
+          "translation": "inyan, pl. nyangaka",
+          "pronunciation": "inyan, pl. nyangaka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Blue",
+          "translation": "yepus, pl. nyeputhiaka",
+          "pronunciation": "yepus, pl. nyeputhiaka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Green",
+          "translation": "alebal, pl. ngalibak",
+          "pronunciation": "alebal, pl. ngalibak",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "eren, pl. ngerenak",
+          "pronunciation": "eren, pl. ngerenak",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "ekwan, pl. ngakwanak",
+          "pronunciation": "ekwan, pl. ngakwanak",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Cool",
+          "translation": "akatorot",
+          "pronunciation": "akatorot",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Coward",
+          "translation": "ekuriana, pl. ngekuriaka",
+          "pronunciation": "ekuriana, pl. ngekuriaka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Different",
+          "translation": "ichi, pl. ngichi",
+          "pronunciation": "ichi, pl. ngichi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Empty",
+          "translation": "elosikongen (? two words)",
+          "pronunciation": "elosikongen (? two words)",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Fast",
+          "translation": "kuwīn",
+          "pronunciation": "kuwīn",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Fierce",
+          "translation": "adedi, pl. ngadedengak",
+          "pronunciation": "adedi, pl. ngadedengak",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "ejok, pl. ngejokok",
+          "pronunciation": "ejok, pl. ngejokok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Good-bye",
+          "translation": "abe, Ans. ii",
+          "pronunciation": "abe, Ans. ii",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Great",
+          "translation": "epol, pl. ngepolok",
+          "pronunciation": "epol, pl. ngepolok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Hard",
+          "translation": "egugo",
+          "pronunciation": "egugo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Heavy",
+          "translation": "eputi, pl. ngeputiok",
+          "pronunciation": "eputi, pl. ngeputiok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "High",
+          "translation": "eway, pl. ngewayok",
+          "pronunciation": "eway, pl. ngewayok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "How ?",
+          "translation": "ebalai or eko nyai ?",
+          "pronunciation": "ebalai or eko nyai ?",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Small-pox",
+          "translation": "ngakodoi (? measles, chicken-pox, or rash)",
+          "pronunciation": "ngakodoi (? measles, chicken-pox, or rash)",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Kind",
+          "translation": "ejok, pl. ngejoka",
+          "pronunciation": "ejok, pl. ngejoka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Large",
+          "translation": "epul, pl. ngepulok",
+          "pronunciation": "epul, pl. ngepulok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Little",
+          "translation": "edit, pl. nyedithak",
+          "pronunciation": "edit, pl. nyedithak",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Long",
+          "translation": "ehoi, pl. ehoiyok",
+          "pronunciation": "ehoi, pl. ehoiyok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Narrow",
+          "translation": "akapithena, pl. ngapithaka",
+          "pronunciation": "akapithena, pl. ngapithaka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "after a little",
+          "translation": "aringa",
+          "pronunciation": "aringa",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Open (adj.)",
+          "translation": "engara, pl. nyangarar",
+          "pronunciation": "engara, pl. nyangarar",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Other",
+          "translation": "echi, pl. ngechi",
+          "pronunciation": "echi, pl. ngechi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Pure",
+          "translation": "mum aloth (lit. \"no dirt\")",
+          "pronunciation": "mum aloth (lit. \"no dirt\")",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Quick",
+          "translation": "kiwanyir",
+          "pronunciation": "kiwanyir",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Sharp",
+          "translation": "ekwana, pl. ngekwaku",
+          "pronunciation": "ekwana, pl. ngekwaku",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Short",
+          "translation": "ouriana, pl. ngouriaka",
+          "pronunciation": "ouriana, pl. ngouriaka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "edit, pl. ngedithok",
+          "pronunciation": "edit, pl. ngedithok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Soft",
+          "translation": "enonok, pl. ngenonoka",
+          "pronunciation": "enonok, pl. ngenonoka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Some",
+          "translation": "echi, pl. ngulu chi",
+          "pronunciation": "echi, pl. ngulu chi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Some thing",
+          "translation": "echi eburi, pl. nguluchi ngeboro",
+          "pronunciation": "echi eburi, pl. nguluchi ngeboro",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "White quartz",
+          "translation": "amoro ekwan, lit. \"stone-white\"",
+          "pronunciation": "amoro ekwan, lit. \"stone-white\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Strong",
+          "translation": "egogon, pl. ngagongonok",
+          "pronunciation": "egogon, pl. ngagongonok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Tall",
+          "translation": "ewai, pl. ngaiwaiok",
+          "pronunciation": "ewai, pl. ngaiwaiok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "That",
+          "translation": "eya, ekwa, yaga, kwagwa",
+          "pronunciation": "eya, ekwa, yaga, kwagwa",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "These",
+          "translation": "elu or ngul",
+          "pronunciation": "elu or ngul",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Thick",
+          "translation": "eput, pl. ngeputiok",
+          "pronunciation": "eput, pl. ngeputiok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Thin",
+          "translation": "arogo, pl. ngurogoi",
+          "pronunciation": "arogo, pl. ngurogoi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "This",
+          "translation": "en, lo, or ngol",
+          "pronunciation": "en, lo, or ngol",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Those",
+          "translation": "ekwa (near), kwagwa (remote)",
+          "pronunciation": "ekwa (near), kwagwa (remote)",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Trough, small",
+          "translation": "etuba, pl. ngatubai",
+          "pronunciation": "etuba, pl. ngatubai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "What",
+          "translation": "nyo",
+          "pronunciation": "nyo",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "ali or eyyey?",
+          "pronunciation": "ali or eyyey?",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Where is he?",
+          "translation": "eyyey ngeth",
+          "pronunciation": "eyyey ngeth",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Which?",
+          "translation": "ali and alu?",
+          "pronunciation": "ali and alu?",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ngai? or nyai?",
+          "pronunciation": "ngai? or nyai?",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Wide",
+          "translation": "elolom, pl. ngelolomoka",
+          "pronunciation": "elolom, pl. ngelolomoka",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "nyo?",
+          "pronunciation": "nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel, Directions & Navigation",
+      "icon": "🧭",
+      "entries": [
+        {
+          "english": "Road / Path",
+          "translation": "Erot / Eerot (pl. ngerotin)",
+          "pronunciation": "eh-roht",
+          "context": "Path, road, or pastoral cattle route. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Far",
+          "translation": "Elwana",
+          "pronunciation": "eh-lwah-nah",
+          "context": "Long distance away. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Near",
+          "translation": "Epii / Api",
+          "pronunciation": "eh-pee-ee / ah-pee",
+          "context": "Close proximity. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Right",
+          "translation": "Teten",
+          "pronunciation": "teh-tehn",
+          "context": "Direction right (akan na lo teten = right hand). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "that (near)",
+          "translation": "-eya | -ekwa",
+          "pronunciation": "-eya | -ekwa",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "Guide",
+          "translation": "akarikoin, pl. ngariko",
+          "pronunciation": "akarikoin, pl. ngariko",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Journey",
+          "translation": "ouwethit, pl. ngouwerthok",
+          "pronunciation": "ouwethit, pl. ngouwerthok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Left",
+          "translation": "kidien",
+          "pronunciation": "kidien",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Right",
+          "translation": "toten",
+          "pronunciation": "toten",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Southern Cross",
+          "translation": "ngeringatom (? Great Bear)",
+          "pronunciation": "ngeringatom (? Great Bear)",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Traveller",
+          "translation": "ebayun, pl. ngebayok",
+          "pronunciation": "ebayun, pl. ngebayok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Out of the Way!",
+          "translation": "kioto ion!",
+          "pronunciation": "kioto ion!",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "Trade, Money & Measures",
+      "icon": "🛒",
+      "entries": [
+        {
+          "english": "Borrow",
+          "translation": "atagagini",
+          "pronunciation": "atagagini",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Debt",
+          "translation": "amecha, pl. ngamechai",
+          "pronunciation": "amecha, pl. ngamechai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Thing of no value",
+          "translation": "mam eburi eyeyi",
+          "pronunciation": "mam eburi eyeyi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Value",
+          "translation": "agelit",
+          "pronunciation": "agelit",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Wealth",
+          "translation": "elalak ngebarin",
+          "pronunciation": "elalak ngebarin",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "emergency",
+      "name": "Health, Safety, Law & Conflict",
+      "icon": "🚨",
+      "entries": [
+        {
+          "english": "That is a lie",
+          "translation": "Alioko nguna",
+          "pronunciation": "ah-lee-oh-koh ngoo-nah",
+          "context": "Refuting falsehood (alioko = lies). (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "I am sick",
+          "translation": "Adiaka ayon / Adyaka ayong",
+          "pronunciation": "ah-dyah-kah ah-yohng",
+          "context": "Stating illness. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Thief!",
+          "translation": "Ekakolon! / Akokolon!",
+          "pronunciation": "eh-kah-koh-lohn",
+          "context": "Alarm alerting that cattle or property is being stolen. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Battle",
+          "translation": "ajori, pl. ngajorethio",
+          "pronunciation": "ajori, pl. ngajorethio",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Death",
+          "translation": "agetū",
+          "pronunciation": "agetū",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Lie",
+          "translation": "alioko, pl. ngaliokoko",
+          "pronunciation": "alioko, pl. ngaliokoko",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Grave Offence",
+          "translation": "achumi, pl. ngachumak",
+          "pronunciation": "achumi, pl. ngachumak",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Oath",
+          "translation": "akilam, pl. ngilomit",
+          "pronunciation": "akilam, pl. ngilomit",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "War",
+          "translation": "achori, pl. ngachorithia",
+          "pronunciation": "achori, pl. ngachorithia",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time, Seasons & Calendar",
+      "icon": "⏰",
+      "entries": [
+        {
+          "english": "Rainy season",
+          "translation": "Ageboro",
+          "pronunciation": "ah-geh-boh-roh",
+          "context": "The traditional rainy season in the Turkana pastoral cycle. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Dry season",
+          "translation": "Akamu",
+          "pronunciation": "ah-kah-moo",
+          "context": "The dry season, demanding seasonal herd migrations to mountain grazing reserves. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "January",
+          "translation": "Lodungi",
+          "pronunciation": "loh-doon-gee",
+          "context": "1st month of the Turkana traditional calendar; begins approx. 22 January. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "February",
+          "translation": "Lomoruk",
+          "pronunciation": "loh-moh-rook",
+          "context": "2nd month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "March",
+          "translation": "Loichoto",
+          "pronunciation": "loh-ee-choh-toh",
+          "context": "3rd month of the traditional Turkana calendar; heralds wet season preparations. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "April",
+          "translation": "Titima",
+          "pronunciation": "tee-tee-mah",
+          "context": "4th month of the traditional Turkana calendar; marks wet season rains and lush grass. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "May",
+          "translation": "Yeliyel",
+          "pronunciation": "yeh-lee-yehl",
+          "context": "5th month of the traditional Turkana calendar; peak milk and calving season. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "June",
+          "translation": "Lopo",
+          "pronunciation": "loh-poh",
+          "context": "6th month of the traditional Turkana calendar; end of rainy season. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "July",
+          "translation": "Lotiak",
+          "pronunciation": "loh-tee-ahk",
+          "context": "7th month of the traditional Turkana calendar; onset of dry season. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "August",
+          "translation": "Lolingachunu",
+          "pronunciation": "loh-leen-gah-choo-noo",
+          "context": "8th month of the traditional Turkana calendar; mid dry season. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "September",
+          "translation": "Lothaban",
+          "pronunciation": "loh-thah-bahn",
+          "context": "9th month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "October",
+          "translation": "Lolongu",
+          "pronunciation": "loh-lohn-goo",
+          "context": "10th month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "November",
+          "translation": "Lorarrar",
+          "pronunciation": "loh-rah-rahr",
+          "context": "11th month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "December",
+          "translation": "Lugwan",
+          "pronunciation": "loog-wahn",
+          "context": "12th month of the traditional Turkana calendar. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "Ekaru (pl. ngaro)",
+          "pronunciation": "eh-kah-roo",
+          "context": "Year or annual cycle. This year: 'Ekaru lo'; next year: 'Ekaru echi'; last year: 'Ekaru ye'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Month / Moon",
+          "translation": "Elap (pl. ngelapio)",
+          "pronunciation": "eh-lahp",
+          "context": "Lunar month or moon. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Erwait (pl. ngurwa)",
+          "pronunciation": "ehr-wah-eet",
+          "context": "Daytime or daylight period. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "Akuari (pl. ngakuaretha)",
+          "pronunciation": "ah-kwah-ree",
+          "context": "Night-time darkness. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Dawn / Early morning",
+          "translation": "Ataparach",
+          "pronunciation": "ah-tah-pah-rahch",
+          "context": "First light of dawn and early morning. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Morning",
+          "translation": "Ethimakunyak / Taparach",
+          "pronunciation": "eh-thee-mah-koon-yahk",
+          "context": "Morning hours before intense heat. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Midday / Noon",
+          "translation": "Naparan / Ewi akolon",
+          "pronunciation": "nah-pah-rahn",
+          "context": "Midday when the sun is directly overhead. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Afternoon / Evening",
+          "translation": "Ebon / Ebong",
+          "pronunciation": "eh-bohng",
+          "context": "Late afternoon approaching dusk. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sunrise (6 a.m.)",
+          "translation": "Alomo akolon",
+          "pronunciation": "ah-loh-moh ah-koh-lohn",
+          "context": "The sun appearing over the horizon at dawn. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Morning sun (7 a.m.)",
+          "translation": "Achou akolon",
+          "pronunciation": "ah-choh-oo ah-koh-lohn",
+          "context": "Morning sun ascending. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Overhead sun (12 p.m.)",
+          "translation": "Ewi akolon",
+          "pronunciation": "eh-wee ah-koh-lohn",
+          "context": "Peak noon sun directly above. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Mid-afternoon sun (2 p.m.)",
+          "translation": "Athom akolon",
+          "pronunciation": "ah-thohm ah-koh-lohn",
+          "context": "Declining afternoon sun. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Sunset (6 p.m.)",
+          "translation": "Aloma akolon",
+          "pronunciation": "ah-loh-mah ah-koh-lohn",
+          "context": "The sun setting into twilight. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "Tete / Akolon itina",
+          "pronunciation": "teh-teh",
+          "context": "The present day. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "Mui",
+          "pronunciation": "moo-ee",
+          "context": "The following day. Tomorrow morning: 'Mui ataparach'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Day after tomorrow",
+          "translation": "Mui echi akolon",
+          "pronunciation": "moo-ee eh-chee ah-koh-lohn",
+          "context": "Two days forward. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Beyen / Ngon",
+          "pronunciation": "beh-yehn / ngohn",
+          "context": "The previous day. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Day before yesterday",
+          "translation": "Ngon echi akolon",
+          "pronunciation": "ngohn eh-chee ah-koh-lohn",
+          "context": "Two days ago. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "Tokona",
+          "pronunciation": "toh-koh-nah",
+          "context": "At the present moment. Instantly: 'Tokona-tokona'. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "The rainy season",
+          "translation": "Ageboro",
+          "pronunciation": "Ageboro",
+          "context": "Juxon Barton (1921) — Months",
+          "audioFile": null
+        },
+        {
+          "english": "The dry season",
+          "translation": "Akamu",
+          "pronunciation": "Akamu",
+          "context": "Juxon Barton (1921) — Months",
+          "audioFile": null
+        },
+        {
+          "english": "Early",
+          "translation": "ebai",
+          "pronunciation": "ebai",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Every time",
+          "translation": "ebunichi (? two words)",
+          "pronunciation": "ebunichi (? two words)",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Formerly",
+          "translation": "kojolon",
+          "pronunciation": "kojolon",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "How often ?",
+          "translation": "ngeyai or nyeyai ?",
+          "pronunciation": "ngeyai or nyeyai ?",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Never",
+          "translation": "nguruthia dan",
+          "pronunciation": "nguruthia dan",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "New",
+          "translation": "ekitet, pl. ngitetia",
+          "pronunciation": "ekitet, pl. ngitetia",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "tokona, see \"time\"",
+          "pronunciation": "tokona, see \"time\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Often",
+          "translation": "jue-jue-jue",
+          "pronunciation": "jue-jue-jue",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Soon",
+          "translation": "eringa adojiji",
+          "pronunciation": "eringa adojiji",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Until now",
+          "translation": "ta erimoi",
+          "pronunciation": "ta erimoi",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Time",
+          "translation": "orwa, pl. orwathin (?)",
+          "pronunciation": "orwa, pl. orwathin (?)",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "To-morrow",
+          "translation": "mui, see \"time\"",
+          "pronunciation": "mui, see \"time\"",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Young",
+          "translation": "asoroko, pl. ngasorok",
+          "pronunciation": "asoroko, pl. ngasorok",
+          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Expressions & Vocabulary",
+      "icon": "💬",
+      "entries": [
+        {
+          "english": "What is your name?",
+          "translation": "Ngai akero ekon? / Ngai ekiro kon?",
+          "pronunciation": "ngah-ee ah-keh-roh eh-kohn",
+          "context": "Enquiring someone's identity. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you going?",
+          "translation": "Alothi ai? / Ilotit iwon ai?",
+          "pronunciation": "ah-loh-thee ah-ee",
+          "context": "Enquiring traveller's destination. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Where is he / she?",
+          "translation": "Eyyey ngeth? / Ali ngeth?",
+          "pronunciation": "eh-ee-yeh-ee ngehth",
+          "context": "Asking the location of a person. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Come here",
+          "translation": "Bwa nege! / Tobwo nege!",
+          "pronunciation": "bwah neh-geh",
+          "context": "Command to approach. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Go away",
+          "translation": "Tenyu! / Tolot!",
+          "pronunciation": "tehn-yoo / toh-loht",
+          "context": "Command to leave. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Look out! / Take care!",
+          "translation": "Ngolik! / Engolikini!",
+          "pronunciation": "ngoh-leek",
+          "context": "Warning to be watchful. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "What do you want?",
+          "translation": "Esagin nyo? / Isagin nyo?",
+          "pronunciation": "eh-sah-geen nyoh",
+          "context": "Asking someone's intent or need. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "What is your tribe?",
+          "translation": "Ali tela kon?",
+          "pronunciation": "ah-lee teh-lah kohn",
+          "context": "Enquiring someone's ethnic section or clan. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "I don't know",
+          "translation": "Mam ayeni / Aiye",
+          "pronunciation": "mahm ah-yeh-nee",
+          "context": "Expressing lack of knowledge. 'Aiye' = Who knows? (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Speak slowly",
+          "translation": "Kirworo kiyapak",
+          "pronunciation": "kee-rwoh-roh kee-yah-pahk",
+          "context": "Asking someone to speak slower. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "It is finished",
+          "translation": "Erika",
+          "pronunciation": "eh-ree-kah",
+          "context": "Expressing completion. (Barton 1921)",
+          "audioFile": null
+        },
+        {
+          "english": "I",
+          "translation": "ayon",
+          "pronunciation": "ayon",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "thou",
+          "translation": "ion",
+          "pronunciation": "ion",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "he, etc",
+          "translation": "ngeth",
+          "pronunciation": "ngeth",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "we",
+          "translation": "thowa",
+          "pronunciation": "thowa",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "ye",
+          "translation": "eth",
+          "pronunciation": "eth",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "they",
+          "translation": "keth",
+          "pronunciation": "keth",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "my",
+          "translation": "akan | ngulu-kan",
+          "pronunciation": "akan | ngulu-kan",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "thy",
+          "translation": "ekon | ngulu-kon",
+          "pronunciation": "ekon | ngulu-kon",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "his, etc",
+          "translation": "ekin | ngulu-kin",
+          "pronunciation": "ekin | ngulu-kin",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "ours",
+          "translation": "ekothi | ngulu-kothi",
+          "pronunciation": "ekothi | ngulu-kothi",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "yours",
+          "translation": "ekuth | ngulu-kuth",
+          "pronunciation": "ekuth | ngulu-kuth",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "theirs",
+          "translation": "ekech | ngulu-kech",
+          "pronunciation": "ekech | ngulu-kech",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "I myself",
+          "translation": "ayon-elopi",
+          "pronunciation": "ayon-elopi",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "thou thyself",
+          "translation": "ion-elopi",
+          "pronunciation": "ion-elopi",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "he, etc., himself",
+          "translation": "ngeth-elopi",
+          "pronunciation": "ngeth-elopi",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "we ourselves",
+          "translation": "thowa-ngilipek",
+          "pronunciation": "thowa-ngilipek",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "ye yourselves",
+          "translation": "eth-ngilipek",
+          "pronunciation": "eth-ngilipek",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "they themselves",
+          "translation": "keth-ngilipek",
+          "pronunciation": "keth-ngilipek",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "I by myself",
+          "translation": "ayon-bon",
+          "pronunciation": "ayon-bon",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "thou by thyself",
+          "translation": "ion-bon",
+          "pronunciation": "ion-bon",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "he by himself",
+          "translation": "ngeth-bon",
+          "pronunciation": "ngeth-bon",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "whose ?",
+          "translation": "a-ngai ?",
+          "pronunciation": "a-ngai ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "ngai-ayon ?",
+          "translation": "who is this ?",
+          "pronunciation": "who is this ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "ngai-eth ?",
+          "translation": "who are these ?",
+          "pronunciation": "who are these ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "a-ngai-lo ?",
+          "translation": "whose is this ?",
+          "pronunciation": "whose is this ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "a-ngai-lu ?",
+          "translation": "whose are these ?",
+          "pronunciation": "whose are these ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "what is this ?",
+          "translation": "nyo-lo ?",
+          "pronunciation": "nyo-lo ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "what do you want ?",
+          "translation": "esagin-nyo ?",
+          "pronunciation": "esagin-nyo ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "of what sort ?",
+          "translation": "eko-nyai ?",
+          "pronunciation": "eko-nyai ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "of what sort is this ?",
+          "translation": "eko-nyai-lo ?",
+          "pronunciation": "eko-nyai-lo ?",
+          "context": "Juxon Barton (1921) — Pronouns",
+          "audioFile": null
         },
         {
           "english": "and, with",
@@ -10575,13 +11289,6 @@
           "audioFile": null
         },
         {
-          "english": "who knows",
-          "translation": "aiye",
-          "pronunciation": "aiye",
-          "context": "Juxon Barton (1921) — Interjections",
-          "audioFile": null
-        },
-        {
           "english": "perhaps",
           "translation": "kure or ayeh (?)",
           "pronunciation": "kure or ayeh (?)",
@@ -10624,13 +11331,6 @@
           "audioFile": null
         },
         {
-          "english": "Coward",
-          "translation": "ekuriana, pl. nguriaka",
-          "pronunciation": "ekuriana, pl. nguriaka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "After",
           "translation": "anita, or affix, ta",
           "pronunciation": "anita, or affix, ta",
@@ -10645,13 +11345,6 @@
           "audioFile": null
         },
         {
-          "english": "Ago, long",
-          "translation": "kojolo, and ngorot",
-          "pronunciation": "kojolo, and ngorot",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Air",
           "translation": "iguuôm",
           "pronunciation": "iguuôm",
@@ -10662,13 +11355,6 @@
           "english": "Alike",
           "translation": "erian, and ekuni",
           "pronunciation": "erian, and ekuni",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Alone",
-          "translation": "ayon bon (I by myself)",
-          "pronunciation": "ayon bon (I by myself)",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -10694,20 +11380,6 @@
           "audioFile": null
         },
         {
-          "english": "Bad",
-          "translation": "arono, pl. ngaroko",
-          "pronunciation": "arono, pl. ngaroko",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Bad tempered",
-          "translation": "ededen, pl. ngadadenga",
-          "pronunciation": "ededen, pl. ngadadenga",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Bare",
           "translation": "eloithi kongen, pl. eloithi kongena (? two words)",
           "pronunciation": "eloithi kongen, pl. eloithi kongena (? two words)",
@@ -10718,20 +11390,6 @@
           "english": "Barrel",
           "translation": "emolich, pl. ngemolicha",
           "pronunciation": "emolich, pl. ngemolicha",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Battle",
-          "translation": "ajori, pl. ngajorethio",
-          "pronunciation": "ajori, pl. ngajorethio",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Big",
-          "translation": "epol, pl. ngepolok",
-          "pronunciation": "epol, pl. ngepolok",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -10757,37 +11415,9 @@
           "audioFile": null
         },
         {
-          "english": "Black",
-          "translation": "eriono, pl. ngerioko",
-          "pronunciation": "eriono, pl. ngerioko",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Blunt",
-          "translation": "engini, pl. nganginio",
-          "pronunciation": "engini, pl. nganginio",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Borrow",
-          "translation": "atagagini",
-          "pronunciation": "atagagini",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Bottom of",
           "translation": "toma",
           "pronunciation": "toma",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Broad",
-          "translation": "adapal",
-          "pronunciation": "adapal",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -10869,34 +11499,6 @@
           "audioFile": null
         },
         {
-          "english": "Black and white",
-          "translation": "longerok, pl. nglongerokoka",
-          "pronunciation": "longerok, pl. nglongerokoka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Brown",
-          "translation": "inyan, pl. nyangaka",
-          "pronunciation": "inyan, pl. nyangaka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Blue",
-          "translation": "yepus, pl. nyeputhiaka",
-          "pronunciation": "yepus, pl. nyeputhiaka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Green",
-          "translation": "alebal, pl. ngalibak",
-          "pronunciation": "alebal, pl. ngalibak",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Purple",
           "translation": "angolipus, pl. ngoliputhia (? probably means \"flower\")",
           "pronunciation": "angolipus, pl. ngoliputhia (? probably means \"flower\")",
@@ -10904,37 +11506,9 @@
           "audioFile": null
         },
         {
-          "english": "Red",
-          "translation": "eren, pl. ngerenak",
-          "pronunciation": "eren, pl. ngerenak",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "White",
-          "translation": "ekwan, pl. ngakwanak",
-          "pronunciation": "ekwan, pl. ngakwanak",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Cool",
-          "translation": "akatorot",
-          "pronunciation": "akatorot",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Costly",
           "translation": "egogo, pl. ngogo",
           "pronunciation": "egogo, pl. ngogo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Coward",
-          "translation": "ekuriana, pl. ngekuriaka",
-          "pronunciation": "ekuriana, pl. ngekuriaka",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -10960,37 +11534,9 @@
           "audioFile": null
         },
         {
-          "english": "Dark",
-          "translation": "eriono, pl. ngerioko (black)",
-          "pronunciation": "eriono, pl. ngerioko (black)",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Death",
-          "translation": "agetū",
-          "pronunciation": "agetū",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Debt",
-          "translation": "amecha, pl. ngamechai",
-          "pronunciation": "amecha, pl. ngamechai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Deep",
           "translation": "itilono, pl. ngitilogo",
           "pronunciation": "itilono, pl. ngitilogo",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Different",
-          "translation": "ichi, pl. ngichi",
-          "pronunciation": "ichi, pl. ngichi",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11005,13 +11551,6 @@
           "english": "Dirt",
           "translation": "eloth, pl. ngelothia",
           "pronunciation": "eloth, pl. ngelothia",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Early",
-          "translation": "ebai",
-          "pronunciation": "ebai",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11033,13 +11572,6 @@
           "english": "Employment",
           "translation": "itichi",
           "pronunciation": "itichi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Empty",
-          "translation": "elosikongen (? two words)",
-          "pronunciation": "elosikongen (? two words)",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11072,13 +11604,6 @@
           "audioFile": null
         },
         {
-          "english": "Every time",
-          "translation": "ebunichi (? two words)",
-          "pronunciation": "ebunichi (? two words)",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Everywhere",
           "translation": "akwop dan",
           "pronunciation": "akwop dan",
@@ -11107,13 +11632,6 @@
           "audioFile": null
         },
         {
-          "english": "Fast",
-          "translation": "kuwīn",
-          "pronunciation": "kuwīn",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Fault",
           "translation": "athichi, pl. ngakithech",
           "pronunciation": "athichi, pl. ngakithech",
@@ -11131,13 +11649,6 @@
           "english": "Female (menstruous)",
           "translation": "eboi, pl. ngeboiyeti",
           "pronunciation": "eboi, pl. ngeboiyeti",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Fierce",
-          "translation": "adedi, pl. ngadedengak",
-          "pronunciation": "adedi, pl. ngadedengak",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11166,13 +11677,6 @@
           "english": "Foreigner",
           "translation": "ebayunun, pl. ngebayok",
           "pronunciation": "ebayunun, pl. ngebayok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Formerly",
-          "translation": "kojolon",
-          "pronunciation": "kojolon",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11275,20 +11779,6 @@
           "audioFile": null
         },
         {
-          "english": "Good",
-          "translation": "ejok, pl. ngejokok",
-          "pronunciation": "ejok, pl. ngejokok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Good-bye",
-          "translation": "abe, Ans. ii",
-          "pronunciation": "abe, Ans. ii",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Gratis",
           "translation": "akiden",
           "pronunciation": "akiden",
@@ -11296,30 +11786,9 @@
           "audioFile": null
         },
         {
-          "english": "Great",
-          "translation": "epol, pl. ngepolok",
-          "pronunciation": "epol, pl. ngepolok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Guide",
-          "translation": "akarikoin, pl. ngariko",
-          "pronunciation": "akarikoin, pl. ngariko",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Gun",
           "translation": "atom, pl. ngetom, see \"elephant\", a section of the tribe who possess rifles and are poachers are known by this name",
           "pronunciation": "atom, pl. ngetom, see \"elephant\", a section of the tribe who possess rifles and are poachers are known by this name",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Hard",
-          "translation": "egugo",
-          "pronunciation": "egugo",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11341,13 +11810,6 @@
           "english": "He",
           "translation": "ngeth",
           "pronunciation": "ngeth",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Heavy",
-          "translation": "eputi, pl. ngeputiok",
-          "pronunciation": "eputi, pl. ngeputiok",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11387,30 +11849,9 @@
           "audioFile": null
         },
         {
-          "english": "High",
-          "translation": "eway, pl. ngewayok",
-          "pronunciation": "eway, pl. ngewayok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Hitherto",
           "translation": "tari-tokona",
           "pronunciation": "tari-tokona",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "How ?",
-          "translation": "ebalai or eko nyai ?",
-          "pronunciation": "ebalai or eko nyai ?",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "How often ?",
-          "translation": "ngeyai or nyeyai ?",
-          "pronunciation": "ngeyai or nyeyai ?",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11474,13 +11915,6 @@
           "english": "Rheumatism",
           "translation": "labai",
           "pronunciation": "labai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Small-pox",
-          "translation": "ngakodoi (? measles, chicken-pox, or rash)",
-          "pronunciation": "ngakodoi (? measles, chicken-pox, or rash)",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11555,20 +11989,6 @@
           "audioFile": null
         },
         {
-          "english": "Journey",
-          "translation": "ouwethit, pl. ngouwerthok",
-          "pronunciation": "ouwethit, pl. ngouwerthok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Kind",
-          "translation": "ejok, pl. ngejoka",
-          "pronunciation": "ejok, pl. ngejoka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Labour",
           "translation": "etich",
           "pronunciation": "etich",
@@ -11590,13 +12010,6 @@
           "audioFile": null
         },
         {
-          "english": "Large",
-          "translation": "epul, pl. ngepulok",
-          "pronunciation": "epul, pl. ngepulok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Lazy",
           "translation": "akalanyana, pl. ngalanyaka",
           "pronunciation": "akalanyana, pl. ngalanyaka",
@@ -11611,23 +12024,9 @@
           "audioFile": null
         },
         {
-          "english": "Left",
-          "translation": "kidien",
-          "pronunciation": "kidien",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Legend",
           "translation": "aken, pl. nyeneti",
           "pronunciation": "aken, pl. nyeneti",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Lie",
-          "translation": "alioko, pl. ngaliokoko",
-          "pronunciation": "alioko, pl. ngaliokoko",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11660,23 +12059,9 @@
           "audioFile": null
         },
         {
-          "english": "Little",
-          "translation": "edit, pl. nyedithak",
-          "pronunciation": "edit, pl. nyedithak",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Loins",
           "translation": "akolukot, pl. ngalukoi",
           "pronunciation": "akolukot, pl. ngalukoi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Long",
-          "translation": "ehoi, pl. ehoiyok",
-          "pronunciation": "ehoi, pl. ehoiyok",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11814,13 +12199,6 @@
           "audioFile": null
         },
         {
-          "english": "Grave Offence",
-          "translation": "achumi, pl. ngachumak",
-          "pronunciation": "achumi, pl. ngachumak",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "My",
           "translation": "akan, pl. ngulukan",
           "pronunciation": "akan, pl. ngulukan",
@@ -11849,30 +12227,9 @@
           "audioFile": null
         },
         {
-          "english": "Narrow",
-          "translation": "akapithena, pl. ngapithaka",
-          "pronunciation": "akapithena, pl. ngapithaka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Neither . . . nor",
           "translation": "ō . . . ō",
           "pronunciation": "ō . . . ō",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Never",
-          "translation": "nguruthia dan",
-          "pronunciation": "nguruthia dan",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "New",
-          "translation": "ekitet, pl. ngitetia",
-          "pronunciation": "ekitet, pl. ngitetia",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11912,13 +12269,6 @@
           "audioFile": null
         },
         {
-          "english": "Now",
-          "translation": "tokona, see \"time\"",
-          "pronunciation": "tokona, see \"time\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "just before",
           "translation": "takai",
           "pronunciation": "takai",
@@ -11933,27 +12283,6 @@
           "audioFile": null
         },
         {
-          "english": "after a little",
-          "translation": "aringa",
-          "pronunciation": "aringa",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Oath",
-          "translation": "akilam, pl. ngilomit",
-          "pronunciation": "akilam, pl. ngilomit",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Often",
-          "translation": "jue-jue-jue",
-          "pronunciation": "jue-jue-jue",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "On",
           "translation": "neni",
           "pronunciation": "neni",
@@ -11964,20 +12293,6 @@
           "english": "On top of",
           "translation": "kidi ama",
           "pronunciation": "kidi ama",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Open (adj.)",
-          "translation": "engara, pl. nyangarar",
-          "pronunciation": "engara, pl. nyangarar",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Other",
-          "translation": "echi, pl. ngechi",
-          "pronunciation": "echi, pl. ngechi",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11999,13 +12314,6 @@
           "english": "Over",
           "translation": "kudiama",
           "pronunciation": "kudiama",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Oxen",
-          "translation": "ate, pl. ngatuk",
-          "pronunciation": "ate, pl. ngatuk",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12080,20 +12388,6 @@
           "audioFile": null
         },
         {
-          "english": "Pure",
-          "translation": "mum aloth (lit. \"no dirt\")",
-          "pronunciation": "mum aloth (lit. \"no dirt\")",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Quick",
-          "translation": "kiwanyir",
-          "pronunciation": "kiwanyir",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Quiet (silent)",
           "translation": "elilingana, pl. ngelingathi",
           "pronunciation": "elilingana, pl. ngelingathi",
@@ -12125,13 +12419,6 @@
           "english": "Rein",
           "translation": "arukoin, pl. arukoines",
           "pronunciation": "arukoin, pl. arukoines",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Right",
-          "translation": "toten",
-          "pronunciation": "toten",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12199,23 +12486,9 @@
           "audioFile": null
         },
         {
-          "english": "Sharp",
-          "translation": "ekwana, pl. ngekwaku",
-          "pronunciation": "ekwana, pl. ngekwaku",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "castrate",
           "translation": "edongi, pl. ngadongok",
           "pronunciation": "edongi, pl. ngadongok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Short",
-          "translation": "ouriana, pl. ngouriaka",
-          "pronunciation": "ouriana, pl. ngouriaka",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12290,13 +12563,6 @@
           "audioFile": null
         },
         {
-          "english": "Small",
-          "translation": "edit, pl. ngedithok",
-          "pronunciation": "edit, pl. ngedithok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Smooth",
           "translation": "enonok, pl. ngenonoka",
           "pronunciation": "enonok, pl. ngenonoka",
@@ -12307,34 +12573,6 @@
           "english": "Puff-adder",
           "translation": "akipom, pl. ngapomia",
           "pronunciation": "akipom, pl. ngapomia",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Soft",
-          "translation": "enonok, pl. ngenonoka",
-          "pronunciation": "enonok, pl. ngenonoka",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Some",
-          "translation": "echi, pl. ngulu chi",
-          "pronunciation": "echi, pl. ngulu chi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Some thing",
-          "translation": "echi eburi, pl. nguluchi ngeboro",
-          "pronunciation": "echi eburi, pl. nguluchi ngeboro",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Soon",
-          "translation": "eringa adojiji",
-          "pronunciation": "eringa adojiji",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12374,30 +12612,9 @@
           "audioFile": null
         },
         {
-          "english": "Southern Cross",
-          "translation": "ngeringatom (? Great Bear)",
-          "pronunciation": "ngeringatom (? Great Bear)",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Stick, curved (a weapon)",
-          "translation": "ebelebel, pl. ngebelebellai",
-          "pronunciation": "ebelebel, pl. ngebelebellai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Stingy",
           "translation": "ekamwunan, pl. ngekamwukak",
           "pronunciation": "ekamwunan, pl. ngekamwukak",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "White quartz",
-          "translation": "amoro ekwan, lit. \"stone-white\"",
-          "pronunciation": "amoro ekwan, lit. \"stone-white\"",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12451,13 +12668,6 @@
           "audioFile": null
         },
         {
-          "english": "Strong",
-          "translation": "egogon, pl. ngagongonok",
-          "pronunciation": "egogon, pl. ngagongonok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Stupid",
           "translation": "ebangana, pl. ngebangaka",
           "pronunciation": "ebangana, pl. ngebangaka",
@@ -12500,13 +12710,6 @@
           "audioFile": null
         },
         {
-          "english": "Tall",
-          "translation": "ewai, pl. ngaiwaiok",
-          "pronunciation": "ewai, pl. ngaiwaiok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Tender",
           "translation": "anonok, pl. nganonoka",
           "pronunciation": "anonok, pl. nganonoka",
@@ -12531,13 +12734,6 @@
           "english": "Tether",
           "translation": "aiyeni",
           "pronunciation": "aiyeni",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "That",
-          "translation": "eya, ekwa, yaga, kwagwa",
-          "pronunciation": "eya, ekwa, yaga, kwagwa",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12570,27 +12766,6 @@
           "audioFile": null
         },
         {
-          "english": "These",
-          "translation": "elu or ngul",
-          "pronunciation": "elu or ngul",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Thick",
-          "translation": "eput, pl. ngeputiok",
-          "pronunciation": "eput, pl. ngeputiok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Thin",
-          "translation": "arogo, pl. ngurogoi",
-          "pronunciation": "arogo, pl. ngurogoi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Thine",
           "translation": "ekon, pl. ngulukan",
           "pronunciation": "ekon, pl. ngulukan",
@@ -12605,30 +12780,9 @@
           "audioFile": null
         },
         {
-          "english": "Thing of no value",
-          "translation": "mam eburi eyeyi",
-          "pronunciation": "mam eburi eyeyi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "think!",
           "translation": "kitam",
           "pronunciation": "kitam",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "This",
-          "translation": "en, lo, or ngol",
-          "pronunciation": "en, lo, or ngol",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Those",
-          "translation": "ekwa (near), kwagwa (remote)",
-          "pronunciation": "ekwa (near), kwagwa (remote)",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12650,20 +12804,6 @@
           "english": "Till",
           "translation": "ta",
           "pronunciation": "ta",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Until now",
-          "translation": "ta erimoi",
-          "pronunciation": "ta erimoi",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Time",
-          "translation": "orwa, pl. orwathin (?)",
-          "pronunciation": "orwa, pl. orwathin (?)",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12717,13 +12857,6 @@
           "audioFile": null
         },
         {
-          "english": "To-morrow",
-          "translation": "mui, see \"time\"",
-          "pronunciation": "mui, see \"time\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Tonsils",
           "translation": "ngachelo, see \"mouth\"",
           "pronunciation": "ngachelo, see \"mouth\"",
@@ -12741,13 +12874,6 @@
           "english": "Totally",
           "translation": "jik",
           "pronunciation": "jik",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Traveller",
-          "translation": "ebayun, pl. ngebayok",
-          "pronunciation": "ebayun, pl. ngebayok",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12774,9 +12900,9 @@
         },
         {
           "english": "Dorobo",
-          "translation": "the Turkana have not met the Andorobo proper, but call their own poor people who hunt and cultivate: ebotonait, pl. ngabotok, not very poor people; akolokit, pl. ngoluki, trappers; egirionait, pl. ngirionokok, no property",
+          "translation": "the Turkana have not met the Andorobo proper, but call their own poor people who hunt and cultivate: ebotonait, pl. ngabotok, not very poor people; akolokit, pl. ngoluki, trappers; egirionait, pl",
           "pronunciation": "the Turkana have not met the Andorobo proper, but call their own poor people who hunt and cultivate: ebotonait, pl. ngabotok, not very poor people; akolokit, pl. ngoluki, trappers; egirionait, pl. ngirionokok, no property",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "context": "Juxon Barton (1921) Turkana Vocabulary — ngirionokok, no property",
           "audioFile": null
         },
         {
@@ -12850,20 +12976,6 @@
           "audioFile": null
         },
         {
-          "english": "Trough, small",
-          "translation": "etuba, pl. ngatubai",
-          "pronunciation": "etuba, pl. ngatubai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Gourd used as a glass",
-          "translation": "eboli, pl. ngibolai",
-          "pronunciation": "eboli, pl. ngibolai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Truly",
           "translation": "kere or akaitini-tini",
           "pronunciation": "kere or akaitini-tini",
@@ -12881,13 +12993,6 @@
           "english": "Twin",
           "translation": "amogo, pl. ngamoain",
           "pronunciation": "amogo, pl. ngamoain",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Udder",
-          "translation": "eket, pl. ngakitai",
-          "pronunciation": "eket, pl. ngakitai",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12983,13 +13088,6 @@
           "audioFile": null
         },
         {
-          "english": "Value",
-          "translation": "agelit",
-          "pronunciation": "agelit",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Vegetables",
           "translation": "akidit, pl. ngadi (marrow tribe)",
           "pronunciation": "akidit, pl. ngadi (marrow tribe)",
@@ -13025,13 +13123,6 @@
           "audioFile": null
         },
         {
-          "english": "War",
-          "translation": "achori, pl. ngachorithia",
-          "pronunciation": "achori, pl. ngachorithia",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Warmth",
           "translation": "emwana",
           "pronunciation": "emwana",
@@ -13060,30 +13151,9 @@
           "audioFile": null
         },
         {
-          "english": "Out of the Way!",
-          "translation": "kioto ion!",
-          "pronunciation": "kioto ion!",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Wealth",
-          "translation": "elalak ngebarin",
-          "pronunciation": "elalak ngebarin",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Weapon",
           "translation": "athowa (lit. \"iron\"), see \"spear\", \"knife\"",
           "pronunciation": "athowa (lit. \"iron\"), see \"spear\", \"knife\"",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "What",
-          "translation": "nyo",
-          "pronunciation": "nyo",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -13109,20 +13179,6 @@
           "audioFile": null
         },
         {
-          "english": "Where?",
-          "translation": "ali or eyyey?",
-          "pronunciation": "ali or eyyey?",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Where is he?",
-          "translation": "eyyey ngeth",
-          "pronunciation": "eyyey ngeth",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Wherefore",
           "translation": "ikwani",
           "pronunciation": "ikwani",
@@ -13137,20 +13193,6 @@
           "audioFile": null
         },
         {
-          "english": "Which?",
-          "translation": "ali and alu?",
-          "pronunciation": "ali and alu?",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Who?",
-          "translation": "ngai? or nyai?",
-          "pronunciation": "ngai? or nyai?",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Whole",
           "translation": "nakidam",
           "pronunciation": "nakidam",
@@ -13161,13 +13203,6 @@
           "english": "Whose?",
           "translation": "a-ngai?",
           "pronunciation": "a-ngai?",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Wide",
-          "translation": "elolom, pl. ngelolomoka",
-          "pronunciation": "elolom, pl. ngelolomoka",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -13270,13 +13305,6 @@
           "audioFile": null
         },
         {
-          "english": "Young",
-          "translation": "asoroko, pl. ngasorok",
-          "pronunciation": "asoroko, pl. ngasorok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Younger",
           "translation": "edit",
           "pronunciation": "edit",
@@ -13324,13 +13352,6 @@
           "pronunciation": "ee-keh-see",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
-        },
-        {
-          "english": "What?",
-          "translation": "nyo?",
-          "pronunciation": "nyoh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
         }
       ]
     },
@@ -13341,37 +13362,37 @@
       "entries": [
         {
           "english": "16 Principal Turkana Tribes & 19 Exogamous Non-Totemic Clans (Attegir) Recorded by Hon. K. R. Dundas (1910, pp. 66–67)",
-          "translation": "16 Principal Turkana Tribes/Sections (p. 66): (1) Ngolio, (2) Ngoitunya, (3) Nittacha, (4) Nessetou, (5) Nbochoross, (6) Ngissir, (7) Nissikir, (8) Kamatak, (9) Lugumong, (10) Oiuaeguara, (11) Nijiye, (12) Ngirriomong, (13) Ngakumuk, (14) Ngalabong, (15) Ngorr, (16) Nikotomungwa • 19 Exogamous Ngoitunya & Ngolio Clans (attegir, non-totemic, p. 67): (1) Nitegorr, (2) Molereto, (3) Tuduya, (4) Ellelet, (5) Ebalang, (6) Kaleso, (7) Ngonom, (8) Ngatap, (9) Moana, (10) Nittacha, (11) Egurerr, (12) Ngaruwo (the rain-makers' clan), (13) Neturana, (14) Erarak, (15) Eraraket, (16) Abuchaw, (17) Ngattigo, (18) Ekkadenya, (19) Ogorok (alongside Barton 1921 clans: Ngissir, Ngimonia, Ngichoro, Ngipucho, Ngimeturona, Ngikatapa, Ngikaleso, Ngissiger, Ngilukumong, Ngipongaa)",
+          "translation": "16 Principal Turkana Tribes/Sections (p. 66): (1) Ngolio, (2) Ngoitunya, (3) Nittacha, (4) Nessetou, (5) Nbochoross, (6) Ngissir, (7) Nissikir, (8) Kamatak, (9) Lugumong, (10) Oiuaeguara, (11) Niji...",
           "pronunciation": "ah-tteh-geer • n-goh-lee-oh, n-goy-too-nyah • n-gah-roo-woh",
           "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, pp. 66–67 & Juxon Barton (1921)",
           "audioFile": null
         },
         {
-          "english": "12 Traditional Turkana Ecological Months Across Nakiborror (Wet Season), Nakamou (Dry Season) & Nait (Dundas 1910, p. 70 & Barton 1921, p. 71)",
-          "translation": "Wet Season — Nakiborror (March–August, Dundas 1910 p. 70): (1) March: Lomaruk, (2) April: Tetimaru, (3) May: Eliel, (4) June: Loichoto, (5) July: Loisoban, (6) August: Loitiak • Dry Season — Nakamou (September–February, Dundas 1910 p. 70): (7) September: Lolongo, (8) October: Lopo, (9) November: Lorara, (10) December: Lomuk, (11) January: Logwang, (12) February: Lodunge (the 3 months Loitiak, Lolongo & Lopo are called Nait because the grass turns yellow; Barton 1921 p. 71 variants: Lodungi, Lomoruk, Loichoto, Titima, Yeliyel, Lopo, Lotiak, Lolingachunu, Lothaban, Lolongu, Lorarrar, Lugwan)",
+          "english": "12 Traditional Turkana Ecological Months Across Nakiborror",
+          "translation": "Wet Season — Nakiborror (March–August, Dundas 1910 p. 70): (1) March: Lomaruk, (2) April: Tetimaru, (3) May: Eliel, (4) June: Loichoto, (5) July: Loisoban, (6) August: Loitiak • Dry Season — Nakamo...",
           "pronunciation": "nah-kee-bohr-rohr (loh-mah-rook, teh-tee-mah-roo, eh-lee-ehl, loy-choh-toh, loy-soh-bahn, loy-tee-ahk) • nah-kah-moh-oo (loh-lohn-goh, loh-poh, loh-rah-rah, loh-mook, loh-gwahng, loh-doon-geh)",
-          "context": "Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, p. 70 & Juxon Barton (1921, p. 71)",
+          "context": "Wet Season), Nakamou (Dry Season) & Nait (Dundas 1910, p. 70 & Barton 1921, p. 71 — Hon. K. R. Dundas (1910) 'Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, p. 70 & Juxon Barton (1921, p. 71)",
           "audioFile": null
         },
         {
-          "english": "Sir Charles Eliot's Comparative Turkana Grammatical Sketch, Numerals, Pronouns & Taveta Mission Scribe Vocabulary (Hollis 1909, pp. xxix–xxxiii)",
-          "translation": "Recorded by a native clerk from the CMS Mission at Taveta for Sir Charles Eliot (Hollis 1909, pp. xxix–xxxiii): Gender & Demonstrative Prefixes: Masculine e- / lo- (pl. ngi- / lu-), Feminine a- / na- (pl. nga- / nu-), Neuter/Diminutive i- / yeni- (pl. ngi-) • Personal Pronouns (p. xxxi): aiyong (I), iyong (thou), ngesi (he/she), suwa (we), eesi (ye), kesi (they) • Cardinal Numerals 1–10 (p. xxx): 1 epei, 2 ngarei, 3 ngauni, 4 ngomwon, 5 ngakan, 6 ngakan-k-apei, 7 ngakan-ka-ngarei, 8 ngakan-ka-ngauni, 9 ngakan-ka-ngomwon, 10 ngatomon • Comparative Nouns & Verbs (pp. xxx–xxxiii): akuj (God/up), akolong (sun), elap (moon), ngakipi (water), akim (fire), etunganan (man, pl. ngitunga), aberu (woman, pl. ngaberu), ikoku (child, pl. ngidwe), aite (cow, pl. ngatuk), akine (goat, pl. ngakinei), emesek (sheep, pl. ngimesekin), eingok (dog, pl. ngiingokwo), akwara (spear), ekipire (feather), a-los-it (to go), a-bun-ere (to come), a-nyam (to eat), a-mat (to drink), a-per (to sleep), a-mina (to love)",
+          "english": "Sir Charles Eliot's Comparative Turkana Grammatical Sketch, Numerals, Pronouns & Taveta Mission Scribe Vocabulary",
+          "translation": "Recorded by a native clerk from the CMS Mission at Taveta for Sir Charles Eliot (Hollis 1909, pp. xxix–xxxiii): Gender & Demonstrative Prefixes: Masculine e- / lo- (pl. ngi- / lu-), Feminine a- / n...",
           "pronunciation": "ai-yong, i-yong, nge-si, su-wa, ee-si, ke-si • e-pei, nga-rei, nga-u-ni, ngo-mwon, nga-kan, nga-to-mon",
-          "context": "Sir Charles Eliot in A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Introduction pp. xxix–xxxiii",
+          "context": "Hollis 1909, pp. xxix–xxxiii — Sir Charles Eliot in A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Introduction pp. xxix–xxxiii | Additional items: Comparative Nouns & Verbs (pp. xxx–xxxiii): akuj (God/up), akolong (sun), elap (moon), ngakip...",
           "audioFile": null
         },
         {
-          "english": "Turkana Dual Leadership (Lemurok Hereditary Seers & Lekatuknok Advisers), Customary Law & Turkana–Suk Comparative Table (Beech 1911, pp. 27–37, 150–151)",
-          "translation": "Recorded from Chief Aijigwa of Naudu and Salali & Hon. A. Bruce (Beech 1911, pp. 27–37, 150–151): Dual Leadership (pp. 36–37): (1) Lemurok (hereditary wizard-chiefs, only two in the whole tribe, whose magic is required before war or moving cattle to new pastures to detect tsetse fly and cattle disease) and (2) Lekatuknok (sectional advisers) • Customary Law (pp. 28–35): Oath by stepping over two spears point-to-point; Grave Offence punished by spearing and confiscation of all property except donkeys (believed to cause the receiver's death); Theft = return of goods on 1st offence, + 1 bullock on 2nd offence; Slander = 1 bullock fine; Bride-price = minimum 5 cattle + 100 sheep; Beggars employed as herders and allowed to acquire stock; Eldest son inherits most of father's property and father's wives • Turkana–Suk Comparative Vocabulary (pp. 150–151): nya-tapor (pl. ñga-taparin, pond), nye-yokon (herdsman), nye-kitoi (pl. ñgi-kito, tree), nye-sikirya (donkey), nya-o (pl. ñga-awa, bee), ñga-kile (milk), nya-muro (pl. ñga-mur, cooking-pot stones), nye-doket (pl. ñgi-doketa, ford), nya-peryet (bed), nye-kori (giraffe), nye-ñgole (horse), apuru (smoke), edoñga (song), akholopoch (spoon), nya-khai (house), nya-rug (hump), nya-khamir (hunger), ekhol-a (fish), asepich (detachment), ekuryana (coward), ñgi-cholongo (chair), akhoit (pl. nya-koyo, bone), ñga-sowa (buffaloes), etyañg (animal), ekwaye (river bank), em-baso (lake, p. 137)",
+          "english": "Turkana Dual Leadership",
+          "translation": "Recorded from Chief Aijigwa of Naudu and Salali & Hon. A. Bruce (Beech 1911, pp. 27–37, 150–151): Dual Leadership (pp. 36–37): (1) Lemurok (hereditary wizard-chiefs, only two in the whole tribe, wh...",
           "pronunciation": "leh-moo-rohk • leh-kah-took-nohk • ah-ee-jee-gwah",
-          "context": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Chapter II pp. 27–37 & Appendix pp. 150–151",
+          "context": "Lemurok Hereditary Seers & Lekatuknok Advisers), Customary Law & Turkana–Suk Comparative Table (Beech 1911, pp. 27–37, 150–151 — Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Chapter II pp. 27–37 & Appendix pp. 150–151",
           "audioFile": null
         },
         {
-          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 903–911) Turkana Vocabulary Set 1 (#2 Turkana): Nouns, Quinary Numerals (1–100), Pronouns & Verb Phrases",
-          "translation": "Nouns (pp. 903–908): Termite Ngadugot • Hartebeest Etulia • Grant's gazelle/Impala Nyagete, Nyákulopo • Kudu Nyeγwapet • Eland Acuria • Bushbuck Emūsemus • Reedbuck Esirω • Oribi Ekusωγwān • Dik-dik Eluloñ • Rhino Emωsin • Giraffe Allokwă • Colobus Akapelimen • Arm/Hand Ekan • Arrow Ekau • Bow Nyakan • Axe Eăp • Baboon Ecum • Back Ekur • Banana Eduñul • Beard Egmoyin • Bee/Honey Nwa, Āω, Nyao • Belly Ebuī • Bird Etórak • Blood Ñakot • Body Nakuān • Bone Ekoīt • Brains Alokoinya • Breast/Heart Etau • Brother/Child Nyekaku • Sister Epēsē • Buffalo Ekupirr • Canoe/Island Nyagibωle • Cat Sedokōʻin • Chief Nyaka serān • Cloth/Skin Elaü, Ellau • Country/Place Nyēkwāp, Ekwāp • Cow Aitḗ (f. Eberω; Ox Natuk) • Crocodile Ekinyañ • Wild date Nyakacurie • Day Nakuare (To-day Nakwarna) • Daylight/Sun Nyokoloñ, Ekoloñ • Devil Atwana • Dog Kiñωk (f. epērω) • Donkey/Horse Amkit, Nyamkit • Door Nyegetoret • Dream Nyamuron • Drum Tωnyωü • Ear Nakit • Egg Nyakelak • Elephant Nyatom (Ivory Ekelkanyatom) • Eye Ekoñ • Face/Head Aku, Akū • Fat Akimnyet • Fear Nyarukom • Finger Akimwoyin • Fire Akim • Fish Nyakedap • Foot/Leg Akeju, Amurώ • Forest Emone • Fowl Nabēlĕ • Ghost Elekes • Goat Nakinne, Akinne • God/Rain Akirū, Akiru • Grass Ñinya • Ground Alup, Nalup • Guinea-fowl Etapīm • Gun Emis • Hair Etim • Heel Atutunyω • Hippo Ebāk • Horn Epuriañ • House Eqol • Hunger Ekurrω • Hyena Ebu • Hyphæne palm/Star Etup • Iron Asowat, Kasωwat' • Knee Nyagipuk • Knife Ekeleñ • Leopard Eris • Lion Eñatūny • Lips/Mouth Akotok, Agedok • Magic/Witch Ekapelān, Akabelān • Maize Emūmwa • Man Etuñunān (pl. Etoña) • Meat Akirriñ • Monkey Agwakumorōi • Moon Elāp • Mountain Akumωwa • Nail Ekomom • Name Atḗ • Neck Amorsen • Night Eyep • Nose Akúme • Pig Ebitir • Pigeon Akuri • Rat Agurien • River Añolol, Akipī • Road Erót • Sheep Amesek • Shield Nyaupwel • Sky Edω • Sleep Ecωtω • Smoke Ebūrr • Snake Emūn • Son Nedwe • Song Akimomor • Spear Ekwarra, Egwarra • Stick Abela • Stone Emuru • Tear Egiyω • Thing Ñipurrω • Thorn Ekωkwei • Tobacco Etaba • Tongue Eñejep • Tooth Engel • Town Nawi / ωi apolon • Tree/Wood Aketoi • Twins Saram • War Ajore • Wart-hog Akumó • Water Akipí • White man Akucomba • Wife Abérω • Wind Ekuywam • Woman Ekākω • Year Agibōró • Zebra Etukω • Numerals (p. 909): 1 Epei, 2 Nare, 3 Naūni, 4 Nωmwon, 5 Ekan, 6 Ekani kapei, 7 Ekani gāre, 8 Egañgaūni, 9 Ekan kumwon, 10 Tommon, 11 Tommon ga pei, 15 Tommon-kankan, 20 Tikitam tommon, 30 Tommon i ūni, 40 Tommon oñwan, 50 Tommon ekān, 100 Pokol • Pronouns & Verbs (pp. 909–911): Año (I), Iyoñ (thou), Ellω (he), Ekōk (we), Ellu (you), Ekui (they); Dān (all), Edjok (good), Eronno (bad), Hebol/Epoi (great), Edep (little), Ekilḗ (male), Kasikω/epero (female), Eboñ (white), Ekriónon (black), Elallak (plenty); Añω abu / Nyebuni (I come / I come not), Atuana (I die), Amasi / Amatañon (I drink / I drank), Anyama (I eat), Ainaʻ / Ainak (I give thee), Alωt (I go), Ayeni / Nyayeni ao (I know / I know not), Acamet (thou lovest)",
+          "english": "Sir Harry Johnston's",
+          "translation": "Nouns (pp. 903–908): Termite Ngadugot • Hartebeest Etulia • Grant's gazelle/Impala Nyagete, Nyákulopo",
           "pronunciation": "e-pei, na-re, na-u-ni, no-mwon, e-kan, tom-mon, po-kol",
-          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 1 (#2 Turkana), pp. 903–911",
+          "context": "1902, Vol. II, pp. 903–911) Turkana Vocabulary Set 1 (#2 Turkana): Nouns, Quinary Numerals (1–100), Pronouns & Verb Phrases — Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 1 (#2 Turkana), pp. 903–911 | Additional items: Kudu N...",
           "audioFile": null
         },
         {

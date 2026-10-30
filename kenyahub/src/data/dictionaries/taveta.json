@@ -15,7 +15,7 @@
   "categories": [
     {
       "id": "greetings",
-      "name": "Greetings & Common Phrases",
+      "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
         {
@@ -330,7 +330,7 @@
     },
     {
       "id": "family",
-      "name": "People, Family & Kinship",
+      "name": "Family, People & Kinship",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
@@ -883,7 +883,7 @@
     },
     {
       "id": "nature",
-      "name": "Nature, Environment & Time",
+      "name": "Nature, Environment & Geography",
       "icon": "🌍",
       "entries": [
         {
@@ -1007,7 +1007,7 @@
         },
         {
           "english": "Sir Harry Johnston's (1919–1922) #15 Taveita Corpus: Lumi River Forest Lexicon, Prefixes & Numerals",
-          "translation": "Prefixes (Vol. I, p. 111 & Vol. II, p. 33): Class 1/2 M-/Va- (M-ndū pl. va-ndū 'person', M-kā pl. va-kā 'wife', M-omi 'husband'), Class 16 Ha- (Ā-ha 'here', Hā-lya 'there', Hā-lē 'far', Hā-fūhī 'near', Ha-sī 'below', Kū-zō 'above') • Numerals (p. 107): -mwe (1), -vīrī (2), -tātū (3), -nā/I-nnā (4), -sānω (5), Tāndātū (6), M-fūṅgātē (7), M-nānē (8), K-ēnda (9), I-kūmi (10), Mī-rōṅgω mī-vīrī (20), I-gāna (100), Ki-hīndē/Ki-hīndi (1,000) • Distinctive Roots (pp. 98–110 & Vol. II, p. 34): I-regeṅ/N-ragiñ (baboon), I-diω (banana), Kωlω/Ki-lezu (beard), M-bafu (man's breast), Mṅgwa pl. va- (chief), Suke (cloth), Tere (country), M-ri (day), Mu-γaṅga (doctor), M-baru/Kωši (dog), Lu-veṅge pl. m-beṅge (door), Fωle (fear), N-guluma (fish), N-zeṅge (he-goat), N-gelele (guinea-fowl), Ki-dūwi (hill/mountain), N-gerere (hippopotamus), Baω (hyena), Menya (iron), Ki-dara (island), N-keri (leopard), M-furω (river), I-rīva (cloud), M-zōrω/M-sīṅga (slave), M-wωhe (sleep), I-ša (thorn), I-dīma (today), I-gāma (tomorrow), I-gōlω (yesterday), M-oṅgω (town), Nkōndō (war), M-gūṅgu (wind), I-tīkω (zebra)",
+          "translation": "Prefixes (Vol. I, p. 111 & Vol. II, p. 33): Class 1/2 M-/Va- (M-ndū pl. va-ndū 'person', M-kā pl. va-kā 'wife', M-omi 'husband'), Class 16 Ha- (Ā-ha 'here', Hā-lya 'there', Hā-lē 'far', Hā-fūhī 'ne...",
           "pronunciation": "ki-ta-vei-ta / m-ngwa / m-fu-rω / ki-du-wi / ki-hi-nde",
           "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 98–112; Vol. II, 1922, pp. 33–34)",
           "audioFile": null
@@ -1149,7 +1149,7 @@
     },
     {
       "id": "food",
-      "name": "Food, Agriculture & Home",
+      "name": "Food, Drink & Agriculture",
       "icon": "🌾",
       "entries": [
         {
@@ -1485,7 +1485,7 @@
     },
     {
       "id": "adjectives",
-      "name": "Adjectives, Pronouns & Johnston (1919 #15) Grammar",
+      "name": "Adjectives, Qualities & Grammar",
       "icon": "✨",
       "entries": [
         {

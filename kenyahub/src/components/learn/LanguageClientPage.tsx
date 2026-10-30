@@ -3,13 +3,10 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useCallback, useEffect, useState, useMemo } from "react";
-import { HelpCircle, PartyPopper, Search, ChevronLeft, Flame } from "lucide-react";
+import dynamic from "next/dynamic";
+import { HelpCircle, PartyPopper, ChevronLeft, Flame } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
-import LessonPlayer from "@/components/learn/LessonPlayer";
-import GamesHub from "@/components/learn/GamesHub";
-import GrammarView from "@/components/learn/GrammarView";
-import ProverbsView from "@/components/learn/ProverbsView";
 import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
 import type {
@@ -32,9 +29,41 @@ import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
 import { getSourcesForLanguage } from "@/data/language-sources";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { scrollToPageTop } from "@/lib/scroll";
+
+const LessonPlayer = dynamic(() => import("@/components/learn/LessonPlayer"), {
+  loading: () => (
+    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+      Loading interactive lesson...
+    </div>
+  ),
+});
+
+const GamesHub = dynamic(() => import("@/components/learn/GamesHub"), {
+  loading: () => (
+    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+      Loading language games...
+    </div>
+  ),
+});
+
+const GrammarView = dynamic(() => import("@/components/learn/GrammarView"), {
+  loading: () => (
+    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+      Loading grammar reference...
+    </div>
+  ),
+});
+
+const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
+  loading: () => (
+    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+      Loading proverbs &amp; oral wisdom...
+    </div>
+  ),
+});
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
+const MODULES_PAGE_SIZE = 8;
 
 type PageView = "lessons" | "modules" | "games" | "playing" | "grammar" | "proverbs";
 
@@ -48,6 +77,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const [view, setView] = useState<PageView>("lessons");
   const [moduleSearch, setModuleSearch] = useState("");
   const [selectedUnitFilter, setSelectedUnitFilter] = useState<string>("all");
+  const [modulesPage, setModulesPage] = useState(1);
   const [activeLesson, setActiveLesson] = useState<{
     skill: CourseSkill;
     level: number;
@@ -78,6 +108,10 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       }, 60);
     }
   }, [view, activeLesson, selectedUnitFilter, languageId]);
+
+  useEffect(() => {
+    setModulesPage(1);
+  }, [moduleSearch, selectedUnitFilter, languageId]);
 
   useEffect(() => {
     if (!languageId) return;
@@ -198,10 +232,15 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     return list;
   }, [course, moduleSearch, selectedUnitFilter]);
 
+  const visibleModules = useMemo(
+    () => filteredModules.slice(0, modulesPage * MODULES_PAGE_SIZE),
+    [filteredModules, modulesPage]
+  );
+
   if (!course) {
     return (
       <div data-error-page="true" data-nosnippet="true">
-        <ToolShell tool={LEARN_TOOL}>
+        <ToolShell tool={LEARN_TOOL} hideSource>
           <div className="flex min-h-[50vh] flex-col items-center justify-center px-4 text-center">
             <div className="flex justify-center mb-4"><HelpCircle className="w-14 h-14 text-text-muted" /></div>
             <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary">
@@ -270,6 +309,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       breadcrumbSuffix={[{ label: course.config.name }]}
       hideHeader={view === "playing"}
       hideFooter={view === "playing"}
+      hideSource
     >
       {/* Top Bar: Compact Language Dropdown on Left + XP on Right */}
       {view !== "playing" && (
@@ -365,7 +405,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 All {course.config.name} Modules &amp; Vocabulary ({filteredModules.length})
               </h2>
               <p className="text-xs text-text-secondary">
-                Browse every module, grammar tip, and vocabulary word table at once, or launch any lesson directly.
+                Browse every module, grammar tip, and vocabulary word table, or launch any lesson directly.
               </p>
             </div>
 
@@ -393,7 +433,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           </div>
 
           <div className="space-y-4">
-            {filteredModules.map(({ unitTitle, skill }) => {
+            {visibleModules.map(({ unitTitle, skill }) => {
               const skillLevel = progress.skillLevels[skill.id] || 0;
               return (
                 <div
@@ -455,6 +495,18 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 </div>
               );
             })}
+
+            {filteredModules.length > visibleModules.length && (
+              <div className="text-center pt-2">
+                <button
+                  type="button"
+                  onClick={() => setModulesPage((p) => p + 1)}
+                  className="px-5 py-2.5 rounded-xl bg-bg-card border border-border hover:border-gold/40 text-xs font-bold text-text-primary cursor-pointer transition-all"
+                >
+                  Load More Modules ({filteredModules.length - visibleModules.length} remaining)
+                </button>
+              </div>
+            )}
           </div>
         </div>
       ) : view === "games" ? (

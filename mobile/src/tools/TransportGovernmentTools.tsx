@@ -781,7 +781,13 @@ export function PostalCodesTool({ onScrollToTop }: { onScrollToTop?: () => void 
   const [q, setQ] = useState("");
   const [selectedCounty, setSelectedCounty] = useState("all");
   const [sortBy, setSortBy] = useState<"code" | "town" | "county">("code");
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 40;
   const list = postalData.codes || [];
+
+  useEffect(() => {
+    setPage(1);
+  }, [q, selectedCounty, sortBy]);
 
   const counties = useMemo(
     () => Array.from(new Set(list.map((item: any) => item.county))).sort(),
@@ -857,7 +863,7 @@ export function PostalCodesTool({ onScrollToTop }: { onScrollToTop?: () => void 
       {/* Sort Row */}
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
         <Text style={styles.subHeading}>
-          Showing {filtered.length} Post Offices
+          Showing {Math.min(filtered.length, page * PAGE_SIZE)} of {filtered.length} Post Offices
         </Text>
         <View style={{ flexDirection: "row", gap: 6 }}>
           {(
@@ -896,7 +902,7 @@ export function PostalCodesTool({ onScrollToTop }: { onScrollToTop?: () => void 
         </View>
       </View>
 
-      {filtered.map((item: any, i: number) => (
+      {filtered.slice(0, page * PAGE_SIZE).map((item: any, i: number) => (
         <View key={item.code + i} style={styles.postalCard}>
           <View style={styles.postalCodeBox}>
             <Text style={styles.postalCodeText}>{item.code}</Text>
@@ -909,6 +915,24 @@ export function PostalCodesTool({ onScrollToTop }: { onScrollToTop?: () => void 
           </View>
         </View>
       ))}
+      {filtered.length > page * PAGE_SIZE && (
+        <Pressable
+          onPress={() => setPage((p) => p + 1)}
+          style={{
+            paddingVertical: 12,
+            borderRadius: 12,
+            borderWidth: 1,
+            borderColor: theme.gold,
+            backgroundColor: `${theme.gold}18`,
+            alignItems: "center",
+            marginTop: 6,
+          }}
+        >
+          <Text style={{ fontSize: 12.5, fontWeight: "800", color: theme.gold }}>
+            Load More Post Offices ({filtered.length - page * PAGE_SIZE} remaining)
+          </Text>
+        </Pressable>
+      )}
     </View>
   );
 }

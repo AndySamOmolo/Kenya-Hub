@@ -4,6 +4,7 @@
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -16,11 +17,18 @@ import {
   ChevronDown,
 } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
-import ProverbsView from "@/components/learn/ProverbsView";
 import type { LanguageConfig } from "@/data/courses/types";
 import { COURSE_REGISTRY, PUBLISHED_COURSES } from "@/data/courses/registry";
 import { TOOLS } from "@/lib/tools-registry";
 import { scrollToPageTop } from "@/lib/scroll";
+
+const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
+  loading: () => (
+    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+      Loading proverbs &amp; oral wisdom...
+    </div>
+  ),
+});
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
@@ -66,7 +74,7 @@ export default function LearnPage() {
   );
 
   return (
-    <ToolShell tool={LEARN_TOOL}>
+    <ToolShell tool={LEARN_TOOL} hideSource>
       <div className="mx-auto max-w-4xl px-0 sm:px-4 pb-4 sm:pb-8">
         {/* Hero */}
         <div className="mb-4 sm:mb-6 rounded-2xl border border-border bg-gradient-to-br from-bg-card via-bg-card to-gold/5 p-4 text-center sm:p-8">

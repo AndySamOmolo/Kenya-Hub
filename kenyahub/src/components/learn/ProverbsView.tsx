@@ -4,7 +4,7 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import SearchInput from "@/components/ui/SearchInput";
 import { useState, useMemo, useEffect, useRef } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
-import { Search, Shuffle, Eye, EyeOff, BookOpen, Compass } from "lucide-react";
+import { Shuffle, Eye, EyeOff, BookOpen, Compass } from "lucide-react";
 import kikuyuProverbsData from "@/data/kikuyu-proverbs.json";
 import { luoProverbs, type ProverbEntry } from "@/data/courses/luo/proverbs";
 import { luoRiddles, type RiddleEntry } from "@/data/courses/luo/riddles";
@@ -499,42 +499,54 @@ export default function ProverbsView({
       )}
 
       {activeLang === "luo" && luoSubTab === "riddles" && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-          {filteredLuoRiddles.slice(0, page * PAGE_SIZE).map((r: RiddleEntry, idx: number) => {
-            const key = String(r.id || idx);
-            const revealed = !!revealedIds[key];
-            return (
-              <div
-                key={key}
-                className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 space-y-2.5"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400">
-                    Ngero / Riddle #{idx + 1}
-                  </span>
-                  <button
-                    onClick={() =>
-                      setRevealedIds((prev) => ({ ...prev, [key]: !prev[key] }))
-                    }
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-sky-400 hover:underline cursor-pointer"
-                  >
-                    {revealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
-                    {revealed ? "Hide Answer" : "Reveal Answer"}
-                  </button>
-                </div>
-                <p className="text-sm font-bold text-[var(--text-primary)]">
-                  &ldquo;{r.luo}&rdquo;
-                </p>
-                <p className="text-xs text-[var(--text-secondary)] italic">{r.english}</p>
-                {revealed && (
-                  <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300 font-semibold">
-                    Answer: {r.answer}
+        <>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+            {filteredLuoRiddles.slice(0, page * PAGE_SIZE).map((r: RiddleEntry, idx: number) => {
+              const key = String(r.id || idx);
+              const revealed = !!revealedIds[key];
+              return (
+                <div
+                  key={key}
+                  className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 space-y-2.5"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400">
+                      Ngero / Riddle #{idx + 1}
+                    </span>
+                    <button
+                      onClick={() =>
+                        setRevealedIds((prev) => ({ ...prev, [key]: !prev[key] }))
+                      }
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-sky-400 hover:underline cursor-pointer"
+                    >
+                      {revealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                      {revealed ? "Hide Answer" : "Reveal Answer"}
+                    </button>
                   </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
+                  <p className="text-sm font-bold text-[var(--text-primary)]">
+                    &ldquo;{r.luo}&rdquo;
+                  </p>
+                  <p className="text-xs text-[var(--text-secondary)] italic">{r.english}</p>
+                  {revealed && (
+                    <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300 font-semibold">
+                      Answer: {r.answer}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          {filteredLuoRiddles.length > page * PAGE_SIZE && (
+            <div className="text-center pt-2">
+              <button
+                onClick={() => setPage((p) => p + 1)}
+                className="px-5 py-2.5 rounded-xl bg-[var(--bg-card)] border border-[var(--border)] hover:border-amber-500/40 text-xs font-bold text-[var(--text-primary)] cursor-pointer transition-all"
+              >
+                Load More Riddles ({filteredLuoRiddles.length - page * PAGE_SIZE} remaining)
+              </button>
+            </div>
+          )}
+        </>
       )}
 
       {activeLang === "luo" && luoSubTab === "twisters" && (
@@ -561,14 +573,15 @@ export default function ProverbsView({
         <>
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[var(--text-muted)] px-1">
             <span>
-              Showing {filteredOtherWisdom.length} {langDisplayName} proverbs &amp; cultural wisdom entries
+              Showing {Math.min(filteredOtherWisdom.length, page * PAGE_SIZE)} of{" "}
+              {filteredOtherWisdom.length} {langDisplayName} proverbs &amp; cultural wisdom entries
             </span>
             <span className="inline-flex items-center gap-1">
               <Compass className="w-3.5 h-3.5 text-gold" /> {langDisplayName} Oral Tradition &amp; Historical Corpus
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-            {filteredOtherWisdom.map((item, idx) => (
+            {filteredOtherWisdom.slice(0, page * PAGE_SIZE).map((item, idx) => (
               <div
                 key={item.id}
                 className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 hover:border-gold/30 transition-all"
@@ -600,6 +613,16 @@ export default function ProverbsView({
               </div>
             ))}
           </div>
+          {filteredOtherWisdom.length > page * PAGE_SIZE && (
+            <div className="text-center pt-2">
+              <button
+                onClick={() => setPage((p) => p + 1)}
+                className="px-5 py-2.5 rounded-xl bg-[var(--bg-card)] border border-[var(--border)] hover:border-gold/40 text-xs font-bold text-[var(--text-primary)] cursor-pointer transition-all"
+              >
+                Load More {langDisplayName} Wisdom ({filteredOtherWisdom.length - page * PAGE_SIZE} remaining)
+              </button>
+            </div>
+          )}
         </>
       )}
     </div>

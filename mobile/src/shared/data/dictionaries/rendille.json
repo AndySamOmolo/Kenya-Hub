@@ -15,7 +15,7 @@
   "categories": [
     {
       "id": "greetings",
-      "name": "Greetings & Common Phrases",
+      "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
         {
@@ -253,7 +253,7 @@
     },
     {
       "id": "family",
-      "name": "People, Family & Kinship",
+      "name": "Family, People & Kinship",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
@@ -568,7 +568,7 @@
     },
     {
       "id": "nature",
-      "name": "Nature, Environment & Time",
+      "name": "Nature, Environment & Geography",
       "icon": "🌍",
       "entries": [
         {
@@ -722,7 +722,7 @@
     },
     {
       "id": "food",
-      "name": "Food, Agriculture & Home",
+      "name": "Food, Drink & Agriculture",
       "icon": "🌾",
       "entries": [
         {
@@ -994,6 +994,62 @@
       ]
     },
     {
+      "id": "adjectives",
+      "name": "Adjectives, Qualities & Grammar",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "yar (nyirakh = young/small)",
+          "pronunciation": "yahr / nyee-rahkh",
+          "context": "Hobley 1910 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "buur (pl. buurbuur)",
+          "pronunciation": "boor",
+          "context": "Hobley 1910 Rendille vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "ki-xun",
+          "pronunciation": "kee-khoon",
+          "context": "Rendille Cushitic vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "ki-wacan / hagagsan",
+          "pronunciation": "kee-wah-ahn / hah-gahg-sahn",
+          "context": "Rendille Cushitic vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "dakhan",
+          "pronunciation": "dah-khahn",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "deyh",
+          "pronunciation": "deyh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "gududan",
+          "pronunciation": "goo-doo-dahn",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
       "id": "culture-history",
       "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
@@ -1154,9 +1210,9 @@
         },
         {
           "english": "The 7 Rendille (Rāndili) Names for the Days of the Week & Sabbath/Travel Prohibitions (Hobley 1910, pp. 162–163)",
-          "translation": "1st day: Hahat (fast day — no animals prepared for food; prayer to God) • 2nd day: Hura hakhan (Rendille Sabbath — no work done, though animals may be prepared; hura = sun) • 3rd day: Sere (sere = day) • 4th day: Kumat • 5th day: Ser hakhan (prohibited day — may not travel, move grazing ground, or make cattle medicine) • 6th day: Sere adi ('the day of the goats and sheep') • 7th day: Sere gal ('day of the camel')",
+          "translation": "1st day: Hahat (fast day — no animals prepared for food; prayer to God) • 2nd day: Hura hakhan (Rendille Sabbath — no work done, though animals may be prepared; hura = sun) • 3rd day: Sere (sere =...",
           "pronunciation": "ha-hat, hu-ra ha-khan, se-re, ku-mat, ser ha-khan, se-re a-di, se-re gal",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 162–163",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 162–163 | Additional items: 4th day: Kumat • 5th day: Ser hakhan (prohibited day — may not travel, move grazing ground, or make cattle medicine) • 6th day: Sere a...",
           "audioFile": null
         },
         {
@@ -1276,62 +1332,6 @@
           "translation": "Almadó",
           "pronunciation": "al-mad",
           "context": "Rendille Ritual Calendar — Schlee (1979)",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "adjectives",
-      "name": "Adjectives",
-      "icon": "✨",
-      "entries": [
-        {
-          "english": "Small",
-          "translation": "yar (nyirakh = young/small)",
-          "pronunciation": "yahr / nyee-rahkh",
-          "context": "Hobley 1910 Rendille vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Big",
-          "translation": "buur (pl. buurbuur)",
-          "pronunciation": "boor",
-          "context": "Hobley 1910 Rendille vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Bad",
-          "translation": "ki-xun",
-          "pronunciation": "kee-khoon",
-          "context": "Rendille Cushitic vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Good",
-          "translation": "ki-wacan / hagagsan",
-          "pronunciation": "kee-wah-ahn / hah-gahg-sahn",
-          "context": "Rendille Cushitic vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "White",
-          "translation": "dakhan",
-          "pronunciation": "dah-khahn",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Black",
-          "translation": "deyh",
-          "pronunciation": "deyh",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Red",
-          "translation": "gududan",
-          "pronunciation": "goo-doo-dahn",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         }
       ]

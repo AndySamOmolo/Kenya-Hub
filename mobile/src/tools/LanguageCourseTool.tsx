@@ -164,19 +164,55 @@ type MainTab = 'learn' | 'cards' | 'games' | 'grammar' | 'proverbs';
 type LessonStage = 'idle' | 'learn' | 'practice' | 'complete';
 type ActiveGame = 'menu' | 'scramble' | 'speed' | 'memory' | 'wordle';
 
-export function LanguageLearningTool({ onScrollToTop }: { onScrollToTop?: () => void }) {
-  return <LanguageCourseTool onScrollToTop={onScrollToTop} />;
+export function LanguageLearningTool({
+  onScrollToTop,
+  initialLanguageId,
+  initialTab,
+}: {
+  onScrollToTop?: () => void;
+  initialLanguageId?: string;
+  initialTab?: MainTab;
+}) {
+  return (
+    <LanguageCourseTool
+      onScrollToTop={onScrollToTop}
+      initialLanguageId={initialLanguageId}
+      initialTab={initialTab}
+    />
+  );
 }
 
-export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
+export default function LanguageCourseTool({
+  onScrollToTop,
+  initialLanguageId,
+  initialTab,
+}: {
+  onScrollToTop?: () => void;
+  initialLanguageId?: string;
+  initialTab?: MainTab;
+} = {}) {
   const { colors, isDark } = useTheme();
   const ripple = useMemo(() => androidRipple(colors.rippleColor), [colors.rippleColor]);
 
   // ── Language & Tab State ──
   const [selectedLangId, setSelectedLangId] = useState<string>(
-    PUBLISHED_COURSES[0]?.config.id || 'kikuyu'
+    initialLanguageId && getCourse(initialLanguageId)
+      ? initialLanguageId
+      : PUBLISHED_COURSES[0]?.config.id || 'kikuyu'
   );
-  const [activeTab, setActiveTab] = useState<MainTab>('learn');
+  const [activeTab, setActiveTab] = useState<MainTab>(initialTab || 'learn');
+
+  useEffect(() => {
+    if (initialLanguageId && getCourse(initialLanguageId)) {
+      setSelectedLangId(initialLanguageId);
+    }
+  }, [initialLanguageId]);
+
+  useEffect(() => {
+    if (initialTab) {
+      setActiveTab(initialTab);
+    }
+  }, [initialTab]);
   const [showAchievements, setShowAchievements] = useState(false);
 
   // ── Progress Store (All Languages) ──
@@ -334,7 +370,7 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
     if (currentCourse?.units?.length) {
       const initialExpanded: Record<string, boolean> = {};
       currentCourse.units.forEach((u, idx) => {
-        initialExpanded[u.id] = true; // Expand all units by default so all modules are accessible at once
+        initialExpanded[u.id] = idx < 2; // Expand first 2 units by default for fast initial render
       });
       setExpandedUnitIds(initialExpanded);
       if (currentCourse.units[0]?.skills[0]) {
@@ -374,9 +410,17 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
   const [missedItems, setMissedItems] = useState<{ prompt: string; correct: string }[]>([]);
 
   // ── Flashcards / Review Tab State ──
-  const [cardMode, setCardMode] = useState<'skill' | 'review'>('skill');
+  const [cardMode, setCardMode] = useState<'skill' | 'review' | 'browse'>('skill');
   const [cardIndex, setCardIndex] = useState(0);
   const [isCardFlipped, setIsCardFlipped] = useState(false);
+  const [vocabSearch, setVocabSearch] = useState('');
+  const [modulesPage, setModulesPage] = useState(1);
+  const MODULES_PAGE_SIZE = 6;
+
+  useEffect(() => {
+    setModulesPage(1);
+    setVocabSearch('');
+  }, [selectedLangId]);
 
   // ── Games Hub State (4 Games: Scramble, Speed Match, Memory, Wordle) ──
   const [activeGame, setActiveGame] = useState<ActiveGame>('menu');
@@ -1778,39 +1822,75 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
                   : 'Complete each skill to unlock the next, or unlock all at once.'}
               </Text>
             </View>
-            <Pressable
-              android_ripple={ripple}
-              onPress={() =>
-                saveLanguageProgress((prev) => ({
-                  ...prev,
-                  unlockAll: !prev.unlockAll,
-                }))
-              }
-              style={[
-                styles.unlockToggleBtn,
-                {
-                  backgroundColor: progress.unlockAll
-                    ? `${langColor}24`
-                    : colors.surfaceContainerHigh,
-                  borderColor: progress.unlockAll ? langColor : colors.outlineVariant,
-                },
-              ]}
-            >
-              <Feather
-                name={progress.unlockAll ? 'lock' : 'unlock'}
-                size={13}
-                color={progress.unlockAll ? langColor : colors.text}
-              />
-              <Text
-                style={{
-                  fontSize: 11.5,
-                  fontWeight: '800',
-                  color: progress.unlockAll ? langColor : colors.text,
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+              <Pressable
+                android_ripple={ripple}
+                onPress={() => {
+                  const allOpen = currentCourse.units.every((u) => expandedUnitIds[u.id]);
+                  const next: Record<string, boolean> = {};
+                  currentCourse.units.forEach((u) => {
+                    next[u.id] = !allOpen;
+                  });
+                  setExpandedUnitIds(next);
                 }}
+                style={[
+                  styles.unlockToggleBtn,
+                  {
+                    backgroundColor: colors.surfaceContainerHigh,
+                    borderColor: colors.outlineVariant,
+                  },
+                ]}
               >
-                {progress.unlockAll ? 'Lock Path' : 'Unlock All'}
-              </Text>
-            </Pressable>
+                <Feather
+                  name={
+                    currentCourse.units.every((u) => expandedUnitIds[u.id])
+                      ? 'minimize-2'
+                      : 'maximize-2'
+                  }
+                  size={12}
+                  color={colors.textSecondary}
+                />
+                <Text style={{ fontSize: 11, fontWeight: '700', color: colors.textSecondary }}>
+                  {currentCourse.units.every((u) => expandedUnitIds[u.id])
+                    ? 'Collapse'
+                    : 'Expand All'}
+                </Text>
+              </Pressable>
+
+              <Pressable
+                android_ripple={ripple}
+                onPress={() =>
+                  saveLanguageProgress((prev) => ({
+                    ...prev,
+                    unlockAll: !prev.unlockAll,
+                  }))
+                }
+                style={[
+                  styles.unlockToggleBtn,
+                  {
+                    backgroundColor: progress.unlockAll
+                      ? `${langColor}24`
+                      : colors.surfaceContainerHigh,
+                    borderColor: progress.unlockAll ? langColor : colors.outlineVariant,
+                  },
+                ]}
+              >
+                <Feather
+                  name={progress.unlockAll ? 'lock' : 'unlock'}
+                  size={13}
+                  color={progress.unlockAll ? langColor : colors.text}
+                />
+                <Text
+                  style={{
+                    fontSize: 11.5,
+                    fontWeight: '800',
+                    color: progress.unlockAll ? langColor : colors.text,
+                  }}
+                >
+                  {progress.unlockAll ? 'Lock Path' : 'Unlock All'}
+                </Text>
+              </Pressable>
+            </View>
           </View>
           {currentCourse.units.map((unit: CourseUnit, uIdx: number) => {
             const isExpanded = !!expandedUnitIds[unit.id];
@@ -2079,12 +2159,173 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
                   color: cardMode === 'review' ? colors.text : colors.textSecondary,
                 }}
               >
-                Review Queue ({reviewDueCount})
+                Review ({reviewDueCount})
+              </Text>
+            </Pressable>
+
+            <Pressable
+              android_ripple={ripple}
+              onPress={() => {
+                setCardMode('browse');
+              }}
+              style={[
+                styles.cardModeChip,
+                {
+                  backgroundColor:
+                    cardMode === 'browse' ? `${langColor}22` : colors.surfaceContainerLow,
+                  borderColor: cardMode === 'browse' ? langColor : colors.outlineVariant,
+                },
+              ]}
+            >
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontWeight: '700',
+                  color: cardMode === 'browse' ? colors.text : colors.textSecondary,
+                }}
+              >
+                All Modules ({allSkills.length})
               </Text>
             </Pressable>
           </View>
 
-          {currentFlashcard ? (
+          {cardMode === 'browse' ? (
+            <View style={{ gap: 10 }}>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  gap: 8,
+                  paddingHorizontal: 12,
+                  paddingVertical: 8,
+                  borderRadius: 12,
+                  borderWidth: 1,
+                  backgroundColor: colors.surfaceContainerLow,
+                  borderColor: colors.outlineVariant,
+                }}
+              >
+                <Feather name="search" size={16} color={colors.textMuted} />
+                <TextInput
+                  value={vocabSearch}
+                  onChangeText={(txt) => {
+                    setVocabSearch(txt);
+                    setModulesPage(1);
+                  }}
+                  placeholder={`Search ${currentCourse?.config.name} words or modules...`}
+                  placeholderTextColor={colors.textMuted}
+                  style={{ flex: 1, fontSize: 13, color: colors.text, paddingVertical: 2 }}
+                />
+                {vocabSearch.length > 0 && (
+                  <Pressable
+                    onPress={() => {
+                      setVocabSearch('');
+                      setModulesPage(1);
+                    }}
+                  >
+                    <Feather name="x-circle" size={16} color={colors.textMuted} />
+                  </Pressable>
+                )}
+              </View>
+              {(() => {
+                const q = vocabSearch.trim().toLowerCase();
+                const filteredSkills = !q
+                  ? allSkills
+                  : allSkills
+                      .map((sk) => ({
+                        ...sk,
+                        words: sk.words.filter(
+                          (w) =>
+                            w.target.toLowerCase().includes(q) ||
+                            w.source.toLowerCase().includes(q) ||
+                            sk.title.toLowerCase().includes(q)
+                        ),
+                      }))
+                      .filter((sk) => sk.words.length > 0);
+                const visibleSkills = filteredSkills.slice(0, modulesPage * MODULES_PAGE_SIZE);
+                return (
+                  <>
+                    <Text style={{ fontSize: 11, color: colors.textMuted }}>
+                      Showing {visibleSkills.length} of {filteredSkills.length} vocabulary modules
+                    </Text>
+                    {visibleSkills.map((sk) => (
+                      <View
+                        key={sk.id}
+                        style={[
+                          styles.grammarAccordionCard,
+                          {
+                            backgroundColor: colors.surfaceContainerLow,
+                            borderColor: colors.outlineVariant,
+                            padding: 12,
+                            gap: 8,
+                          },
+                        ]}
+                      >
+                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                          <Text style={{ fontSize: 13.5, fontWeight: '800', color: colors.text }}>
+                            {sk.title}
+                          </Text>
+                          <Pressable
+                            onPress={() => {
+                              setActiveSkillId(sk.id);
+                              setCardMode('skill');
+                              setCardIndex(0);
+                              setIsCardFlipped(false);
+                            }}
+                            style={{
+                              paddingHorizontal: 8,
+                              paddingVertical: 4,
+                              borderRadius: 999,
+                              backgroundColor: `${langColor}22`,
+                            }}
+                          >
+                            <Text style={{ fontSize: 11, fontWeight: '800', color: langColor }}>
+                              Study Deck ({sk.words.length})
+                            </Text>
+                          </Pressable>
+                        </View>
+                        {sk.words.slice(0, 12).map((w, wIdx) => (
+                          <View
+                            key={w.id || wIdx}
+                            style={{
+                              flexDirection: 'row',
+                              justifyContent: 'space-between',
+                              paddingVertical: 4,
+                              borderTopWidth: wIdx === 0 ? 0 : 1,
+                              borderTopColor: colors.outlineVariant,
+                            }}
+                          >
+                            <Text style={{ fontSize: 12.5, fontWeight: '700', color: langColor, flex: 1 }}>
+                              {w.target}
+                            </Text>
+                            <Text style={{ fontSize: 12.5, color: colors.textSecondary, flex: 1, textAlign: 'right' }}>
+                              {w.source}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    ))}
+                    {filteredSkills.length > visibleSkills.length && (
+                      <Pressable
+                        onPress={() => setModulesPage((p) => p + 1)}
+                        style={[
+                          styles.m3OutlinedBtn,
+                          {
+                            borderColor: langColor,
+                            alignSelf: 'center',
+                            marginTop: 4,
+                          },
+                        ]}
+                      >
+                        <Text style={{ fontSize: 12, fontWeight: '800', color: langColor }}>
+                          Load More Modules ({filteredSkills.length - visibleSkills.length} remaining)
+                        </Text>
+                      </Pressable>
+                    )}
+                  </>
+                );
+              })()}
+            </View>
+          ) : currentFlashcard ? (
             <>
               <Pressable
                 android_ripple={ripple}
@@ -3057,19 +3298,21 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
               );
             })()}
 
-          {selectedLangId === 'luo' && luoSubTab === 'riddles' && (
-            <View style={{ gap: 10 }}>
-              {luoRiddles
-                .filter((r) => {
-                  const q = proverbSearch.trim().toLowerCase();
-                  return (
-                    !q ||
-                    r.luo.toLowerCase().includes(q) ||
-                    r.english.toLowerCase().includes(q) ||
-                    r.answer.toLowerCase().includes(q)
-                  );
-                })
-                .map((r) => {
+          {selectedLangId === 'luo' && luoSubTab === 'riddles' &&
+            (() => {
+              const filteredRiddles = luoRiddles.filter((r) => {
+                const q = proverbSearch.trim().toLowerCase();
+                return (
+                  !q ||
+                  r.luo.toLowerCase().includes(q) ||
+                  r.english.toLowerCase().includes(q) ||
+                  r.answer.toLowerCase().includes(q)
+                );
+              });
+              const visibleRiddles = filteredRiddles.slice(0, proverbPage * 20);
+              return (
+                <View style={{ gap: 10 }}>
+                  {visibleRiddles.map((r) => {
                   const open = !!revealedRiddles[r.id];
                   return (
                     <View
@@ -3108,8 +3351,22 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
                     </View>
                   );
                 })}
-            </View>
-          )}
+                  {filteredRiddles.length > visibleRiddles.length && (
+                    <Pressable
+                      onPress={() => setProverbPage((p) => p + 1)}
+                      style={[
+                        styles.m3OutlinedBtn,
+                        { borderColor: langColor, alignSelf: 'center', marginTop: 6 },
+                      ]}
+                    >
+                      <Text style={{ fontSize: 12, fontWeight: '800', color: langColor }}>
+                        Load More ({filteredRiddles.length - visibleRiddles.length} remaining)
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
+              );
+            })()}
 
           {selectedLangId === 'luo' && luoSubTab === 'twisters' && (
             <View style={{ gap: 10 }}>
@@ -3175,12 +3432,13 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
                   (item.englishEquivalent || '').toLowerCase().includes(q)
                 );
               });
+              const visible = filtered.slice(0, proverbPage * 20);
               return (
                 <View style={{ gap: 10 }}>
                   <Text style={{ fontSize: 11, color: colors.textMuted }}>
-                    Showing {filtered.length} {currentCourse?.config.name} proverbs & cultural wisdom entries
+                    Showing {visible.length} of {filtered.length} {currentCourse?.config.name} proverbs & cultural wisdom entries
                   </Text>
-                  {filtered.map((item, idx) => (
+                  {visible.map((item, idx) => (
                     <View
                       key={item.id}
                       style={[
@@ -3217,6 +3475,19 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
                       ) : null}
                     </View>
                   ))}
+                  {filtered.length > visible.length && (
+                    <Pressable
+                      onPress={() => setProverbPage((p) => p + 1)}
+                      style={[
+                        styles.m3OutlinedBtn,
+                        { borderColor: langColor, alignSelf: 'center', marginTop: 6 },
+                      ]}
+                    >
+                      <Text style={{ fontSize: 12, fontWeight: '800', color: langColor }}>
+                        Load More ({filtered.length - visible.length} remaining)
+                      </Text>
+                    </Pressable>
+                  )}
                 </View>
               );
             })()}

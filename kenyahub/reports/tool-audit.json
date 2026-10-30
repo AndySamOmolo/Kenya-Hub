@@ -1,13 +1,12 @@
 {
-  "generatedAt": "2026-10-30T10:21:41.408Z",
-  "summary": {
-    "registryTools": 44,
-    "routeDirectories": 44,
-    "errors": 0,
-    "staleOrReview": 0
-  },
+  "generatedAt": "2026-10-30T12:14:15.184Z",
+  "registryCount": 44,
+  "routeCount": 44,
+  "okCount": 44,
+  "reviewCount": 0,
+  "staleCount": 0,
+  "errorCount": 0,
   "issues": [],
-  "sourceChecks": [],
   "tools": [
     {
       "slug": "paye-calculator",
@@ -425,6 +424,11 @@
       "ageDays": 0,
       "data": [
         {
+          "file": "src/data/kenya-languages.json",
+          "lastUpdated": "2026-10-30",
+          "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
+        },
+        {
           "file": "src/data/dictionaries/swahili.json",
           "lastUpdated": "2026-10-30",
           "source": "Public Domain Historical Lexicons (Krapf 1850/1882, Steere 1870/1894, Taylor 1891, Madan 1903/1917, Hinde 1904, Burt 1910 & Johnston 1919)"
@@ -533,11 +537,6 @@
           "file": "src/data/dictionaries/taveta.json",
           "lastUpdated": "2026-10-25",
           "source": "Public Domain Historical Lexicons (Steggall 1892–1906, Hollis 1910–1911 & Johnston 1919)"
-        },
-        {
-          "file": "src/data/kenya-languages.json",
-          "lastUpdated": "2026-10-30",
-          "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
         }
       ],
       "status": "ok"

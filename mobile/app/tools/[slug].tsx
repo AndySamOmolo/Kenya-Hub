@@ -77,7 +77,8 @@ interface ToolGuideEntry {
 }
 
 export default function ToolDetailScreen() {
-  const { slug } = useLocalSearchParams<{ slug: string }>();
+  const { slug, lang, tab } = useLocalSearchParams<{ slug: string; lang?: string; tab?: string }>();
+  const isLanguageCourseScreen = tool?.slug === "learn" || tool?.slug === "kikuyu-proverbs";
   const router = useRouter();
   const { theme } = useTheme();
   const tool = TOOLS.find((item) => item.slug === slug);
@@ -214,11 +215,23 @@ export default function ToolDetailScreen() {
       case "kcse-grade-calculator":
         return <KcseCalculatorTool />;
       case "kikuyu-proverbs":
-        return <LanguageLearningTool onScrollToTop={scrollToTop} />;
+        return (
+          <LanguageLearningTool
+            onScrollToTop={scrollToTop}
+            initialLanguageId={lang || "kikuyu"}
+            initialTab={(tab as any) || "proverbs"}
+          />
+        );
       case "kenyan-translator":
         return <KenyanTranslatorTool onScrollToTop={scrollToTop} />;
       case "learn":
-        return <LanguageLearningTool onScrollToTop={scrollToTop} />;
+        return (
+          <LanguageLearningTool
+            onScrollToTop={scrollToTop}
+            initialLanguageId={lang}
+            initialTab={tab as any}
+          />
+        );
       case "kcse-school-rankings":
         return <KcseRankingsTool onScrollToTop={scrollToTop} />;
       case "school-terms":
@@ -275,7 +288,7 @@ export default function ToolDetailScreen() {
         keyboardShouldPersistTaps="handled"
       >
         {/* Material 3 Tool Info Banner (mirrors web ToolShell header) */}
-        {tool.slug !== "learn" && (
+        {!isLanguageCourseScreen && (
           <View
             style={[
               styles.toolHeaderCard,
@@ -379,7 +392,7 @@ export default function ToolDetailScreen() {
         <View style={styles.toolContentWrap}>{renderToolComponent()}</View>
 
         {/* Important Notes / About the Data Section */}
-        {tool.slug !== "learn" && notes.length > 0 && (
+        {!isLanguageCourseScreen && notes.length > 0 && (
           <View
             style={[
               styles.notesSectionCard,
@@ -424,7 +437,7 @@ export default function ToolDetailScreen() {
         )}
 
         {/* Frequently Asked Questions Section */}
-        {tool.slug !== "learn" && faqs.length > 0 && (
+        {!isLanguageCourseScreen && faqs.length > 0 && (
           <View style={styles.faqSection}>
             <View style={styles.faqHeaderRow}>
               <View
@@ -504,7 +517,7 @@ export default function ToolDetailScreen() {
         )}
 
         {/* Related Tools */}
-        {tool.slug !== "learn" && related.length > 0 && (
+        {!isLanguageCourseScreen && related.length > 0 && (
           <View style={styles.relatedSection}>
             <Text style={[styles.relatedHeading, { color: theme.gold }]}>
               RELATED TOOLS

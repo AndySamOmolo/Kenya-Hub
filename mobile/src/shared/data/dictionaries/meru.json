@@ -198,7 +198,7 @@
     },
     {
       "id": "numbers",
-      "name": "Numbers",
+      "name": "Numbers & Counting",
       "icon": "🔢",
       "entries": [
         {
@@ -358,1352 +358,9 @@
       ]
     },
     {
-      "id": "phrases",
-      "name": "Common Phrases",
-      "icon": "🗣️",
-      "entries": [
-        {
-          "english": "Speak",
-          "translation": "kwaria (kuuga)",
-          "pronunciation": "kwah-ree-ah",
-          "context": "Johnston 1919 #11a Meru",
-          "audioFile": null
-        },
-        {
-          "english": "Sleep",
-          "translation": "kũmama (kũkoma)",
-          "pronunciation": "koo-mah-mah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
-          "audioFile": null
-        },
-        {
-          "english": "Come",
-          "translation": "kũũja (ĩja!)",
-          "pronunciation": "koo-jah / ee-jah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
-          "audioFile": null
-        },
-        {
-          "english": "Go",
-          "translation": "gũthiĩ (kũthi)",
-          "pronunciation": "goo-thee",
-          "context": "Johnston 1919 p. 72 #11a Meru",
-          "audioFile": null
-        },
-        {
-          "english": "Small",
-          "translation": "-nini (mũnini, kanini)",
-          "pronunciation": "nee-nee",
-          "context": "Johnston 1919 p. 71 #11a Meru",
-          "audioFile": null
-        },
-        {
-          "english": "Big",
-          "translation": "-nene (mũnene)",
-          "pronunciation": "neh-neh",
-          "context": "Johnston 1919 p. 71 #11a Meru",
-          "audioFile": null
-        },
-        {
-          "english": "Bad",
-          "translation": "-ũru (mũũru, nthũku)",
-          "pronunciation": "oo-roo / n-thoo-koo",
-          "context": "Johnston 1919 p. 71 #11a Meru",
-          "audioFile": null
-        },
-        {
-          "english": "Good",
-          "translation": "-ega (mwega, bwega)",
-          "pronunciation": "eh-gah",
-          "context": "Johnston 1919 p. 71 #11a Meru",
-          "audioFile": null
-        },
-        {
-          "english": "I love you",
-          "translation": "Inkwendete",
-          "pronunciation": "Inkwendete",
-          "context": "Wikipedia Meru language — Sample phrases",
-          "audioFile": null
-        },
-        {
-          "english": "Help me",
-          "translation": "Nteithia / Ntethia",
-          "pronunciation": "Nteithia / Ntethia",
-          "context": "Wikipedia Meru language — Sample phrases",
-          "audioFile": null
-        },
-        {
-          "english": "Come here (Imenti: Ĩja aja; Chuka: Ũka aa; Tigania: Ĩya haa; Tharaka: Ncũ aga)",
-          "translation": "Ĩja aja / Ũka aa",
-          "pronunciation": "Ĩja aja / Ũka aa",
-          "context": "Wikipedia Meru language — Sample phrases & Dialects",
-          "audioFile": null
-        },
-        {
-          "english": "I will phone / call you",
-          "translation": "Ngakũringĩra thimũ",
-          "pronunciation": "Ngakũringĩra thimũ",
-          "context": "Wikipedia Meru language — Sample phrases",
-          "audioFile": null
-        },
-        {
-          "english": "Get out / go outside (Imenti/Chuka/Tharaka: Uma nja; Tigania: Tũra)",
-          "translation": "Uma nja / Tũra",
-          "pronunciation": "Uma nja / Tũra",
-          "context": "Wikipedia Meru language — Dialects",
-          "audioFile": null
-        },
-        {
-          "english": "Get inside / enter (Imenti/Chuka: Kũrũka / Tonya; Tigania: Unkuma; Tharaka: Thũngĩra)",
-          "translation": "Kũrũka / Tonya / Thũngĩra",
-          "pronunciation": "Kũrũka / Tonya / Thũngĩra",
-          "context": "Wikipedia Meru language — Dialects",
-          "audioFile": null
-        },
-        {
-          "english": "Today (Chuka: Ũmũnthi; Imenti: Naarua; Tigania: Ruarii; Tharaka: Ĩmunthĩ)",
-          "translation": "Ũmũnthi / Naarua / Ruarii",
-          "pronunciation": "Ũmũnthi / Naarua / Ruarii",
-          "context": "Wikipedia Meru language — Dialects",
-          "audioFile": null
-        },
-        {
-          "english": "Tomorrow (Chuka/Imenti: Rũjũ / Rũũjũ; Tigania/Tharaka: Rũũ / Rũyũ)",
-          "translation": "Rũjũ / Rũũ",
-          "pronunciation": "Rũjũ / Rũũ",
-          "context": "Wikipedia Meru language — Dialects",
-          "audioFile": null
-        },
-        {
-          "english": "Take (imperative)",
-          "translation": "Jũkia",
-          "pronunciation": "Jũkia",
-          "context": "Wikipedia Meru language — Sample phrases",
-          "audioFile": null
-        },
-        {
-          "english": "Tell me",
-          "translation": "Mbĩra",
-          "pronunciation": "Mbĩra",
-          "context": "Wikipedia Meru language — Sample phrases",
-          "audioFile": null
-        },
-        {
-          "english": "This tall person has come from Nairobi (Class 1 concord)",
-          "translation": "Muntũ ũjũ mũraja auma Nairobi",
-          "pronunciation": "Muntũ ũjũ mũraja auma Nairobi",
-          "context": "Wikipedia Meru language — Noun classes",
-          "audioFile": null
-        },
-        {
-          "english": "These tall people have come from Nairobi (Class 2 concord)",
-          "translation": "Antũ baba baraja bauma Nairobi",
-          "pronunciation": "Antũ baba baraja bauma Nairobi",
-          "context": "Wikipedia Meru language — Noun classes",
-          "audioFile": null
-        },
-        {
-          "english": "person (pl. people) (Class 1/2)",
-          "translation": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
-          "pronunciation": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "young uninitiated boy (pl. boys) (Class 12/13)",
-          "translation": "kavĩcĩ (pl. tũvĩcĩ)",
-          "pronunciation": "kavĩcĩ (pl. tũvĩcĩ)",
-          "context": "Kîembu",
-          "audioFile": null
-        },
-        {
-          "english": "young girl (pl. girls)",
-          "translation": "karĩgũ (pl. tũrĩgũ)",
-          "pronunciation": "karĩgũ (pl. tũrĩgũ)",
-          "context": "Kîembu",
-          "audioFile": null
-        },
-        {
-          "english": "tree, wood, herbal medicine (Class 3/4)",
-          "translation": "mũtĩ (pl. mĩtĩ)",
-          "pronunciation": "mũtĩ (pl. mĩtĩ)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "hill, mountain (Kĩrĩnyaga = Mount Kenya)",
-          "translation": "mũrĩma (pl. mĩrĩma) / kĩrĩma",
-          "pronunciation": "mũrĩma (pl. mĩrĩma) / kĩrĩma",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "stone, rock (Class 5/6)",
-          "translation": "ĩvia (pl. mavia) / ĩiga",
-          "pronunciation": "ĩvia (pl. mavia) / ĩiga",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "head",
-          "translation": "mũtwe (pl. mĩtwe)",
-          "pronunciation": "mũtwe (pl. mĩtwe)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "eye (pl. eyes)",
-          "translation": "rĩitho (pl. metho)",
-          "pronunciation": "rĩitho (pl. metho)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "ear (pl. ears)",
-          "translation": "gũtũ (pl. matũ)",
-          "pronunciation": "gũtũ (pl. matũ)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "nose",
-          "translation": "inyũrũ (pl. manyũrũ)",
-          "pronunciation": "inyũrũ (pl. manyũrũ)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "mouth",
-          "translation": "kanyua (pl. tũnyua)",
-          "pronunciation": "kanyua (pl. tũnyua)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "tooth (pl. teeth)",
-          "translation": "ĩrĩo (pl. meeno)",
-          "pronunciation": "ĩrĩo (pl. meeno)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "tongue, language",
-          "translation": "rũrĩmĩ (pl. ndĩmĩ)",
-          "pronunciation": "rũrĩmĩ (pl. ndĩmĩ)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "hand, arm",
-          "translation": "njara /oko (pl. moko)",
-          "pronunciation": "njara /oko (pl. moko)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "leg, foot",
-          "translation": "kũgũrũ (pl. magũrũ)",
-          "pronunciation": "kũgũrũ (pl. magũrũ)",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "heart, spirit, mind",
-          "translation": "ngoro",
-          "pronunciation": "ngoro",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "What is your name?",
-          "translation": "Wĩtagwa atĩa? / Rĩĩtwa rĩaku nĩ ũũ?",
-          "pronunciation": "wĩtagwa atĩa? / rĩĩtwa rĩaku nĩ ũũ?",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "Where are you from?",
-          "translation": "Ũrĩĩte kũ? / Wĩ mũciĩ kũ?",
-          "pronunciation": "ũrĩĩte kũ? / wĩ mũciĩ kũ?",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "Supreme traditional council of elders of the Ameru people",
-          "translation": "Njũri Ncheke",
-          "pronunciation": "njũri ncheke",
-          "context": "Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "Supreme traditional council of elders of the Aembu people",
-          "translation": "Kiama kia Ngome",
-          "pronunciation": "kiama kia ngome",
-          "context": "Kîembu",
-          "audioFile": null
-        },
-        {
-          "english": "Supreme Creator dwelling on Mount Kenya (Kĩrĩnyaga)",
-          "translation": "Murungu / Ngai",
-          "pronunciation": "murungu / ngai",
-          "context": "Kĩmĩĩrũ / Kîembu",
-          "audioFile": null
-        },
-        {
-          "english": "Sunday (Day of the week)",
-          "translation": "Kiumia (KIU)",
-          "pronunciation": "kiumia (kiu)",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Monday (Day of the week)",
-          "translation": "Muramuko (MRA)",
-          "pronunciation": "muramuko (mra)",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Tuesday (Day of the week)",
-          "translation": "Wairi (WAI)",
-          "pronunciation": "wairi (wai)",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Wednesday (Day of the week)",
-          "translation": "Wethatu (WET)",
-          "pronunciation": "wethatu (wet)",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Thursday (Day of the week)",
-          "translation": "Wena (WEN)",
-          "pronunciation": "wena (wen)",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Friday (Day of the week)",
-          "translation": "Wetano (WTN)",
-          "pronunciation": "wetano (wtn)",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Saturday (Day of the week)",
-          "translation": "Jumamosi (JUM)",
-          "pronunciation": "jumamosi (jum)",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Before Christ (BC / Historical Era)",
-          "translation": "Mbere ya Kristũ",
-          "pronunciation": "mbere ya kristũ",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Anno Domini (AD / Common Era)",
-          "translation": "Nyuma ya Kristũ",
-          "pronunciation": "nyuma ya kristũ",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "In the morning (AM day period)",
-          "translation": "RŨ",
-          "pronunciation": "rũ",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "In the afternoon / evening (PM day period)",
-          "translation": "ŨG",
-          "pronunciation": "ũg",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Era / historical age",
-          "translation": "Ĩgita",
-          "pronunciation": "ĩgita",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Day of the week",
-          "translation": "Ntukũ ya ngũgĩ",
-          "pronunciation": "ntukũ ya ngũgĩ",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "South African Rand (ZAR)",
-          "translation": "Randi ya Afrika ya Sauthi",
-          "pronunciation": "randi ya afrika ya sauthi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
-          "translation": "Leoni",
-          "pronunciation": "leoni",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "West African CFA Franc (XOF)",
-          "translation": "Faranga CFA BCEAO",
-          "pronunciation": "faranga cfa bceao",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Central African CFA Franc (XAF)",
-          "translation": "Faranga CFA BEAC",
-          "pronunciation": "faranga cfa beac",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "United Arab Emirates Dirham (AED)",
-          "translation": "Dirham ya Falme cia Kiarabu",
-          "pronunciation": "dirham ya falme cia kiarabu",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Ethiopia (Country / Territory)",
-          "translation": "Ithiopia",
-          "pronunciation": "ithiopia",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Sudan (Country / Territory)",
-          "translation": "Sudani",
-          "pronunciation": "sudani",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Congo - Kinshasa (Country / Territory)",
-          "translation": "Nthĩ ya Kidemokrasĩ ya Kongo",
-          "pronunciation": "nthĩ ya kidemokrasĩ ya kongo",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Congo - Brazzaville (Country / Territory)",
-          "translation": "Kongo",
-          "pronunciation": "kongo",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "South Africa (Country / Territory)",
-          "translation": "Afrika ya Southi",
-          "pronunciation": "afrika ya southi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Nigeria (Country / Territory)",
-          "translation": "Nijeria",
-          "pronunciation": "nijeria",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Egypt (Country / Territory)",
-          "translation": "Misiri",
-          "pronunciation": "misiri",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Senegal (Country / Territory)",
-          "translation": "Senego",
-          "pronunciation": "senego",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Côte d’Ivoire (Country / Territory)",
-          "translation": "Kodivaa",
-          "pronunciation": "kodivaa",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Niger (Country / Territory)",
-          "translation": "Nija",
-          "pronunciation": "nija",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Chad (Country / Territory)",
-          "translation": "Chadi",
-          "pronunciation": "chadi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Central African Republic (Country / Territory)",
-          "translation": "Nthĩ ya Afrika gatĩgatĩ",
-          "pronunciation": "nthĩ ya afrika gatĩgatĩ",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Gabon (Country / Territory)",
-          "translation": "Gaboni",
-          "pronunciation": "gaboni",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Equatorial Guinea (Country / Territory)",
-          "translation": "Gine ya Iquita",
-          "pronunciation": "gine ya iquita",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Mozambique (Country / Territory)",
-          "translation": "Mozambiki",
-          "pronunciation": "mozambiki",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Eswatini (Country / Territory)",
-          "translation": "Swazilandi",
-          "pronunciation": "swazilandi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Madagascar (Country / Territory)",
-          "translation": "Madagasika",
-          "pronunciation": "madagasika",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Mauritius (Country / Territory)",
-          "translation": "Maurĩtiasi",
-          "pronunciation": "maurĩtiasi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Seychelles (Country / Territory)",
-          "translation": "Shelisheli",
-          "pronunciation": "shelisheli",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Libya (Country / Territory)",
-          "translation": "Lĩbia",
-          "pronunciation": "lĩbia",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Algeria (Country / Territory)",
-          "translation": "Angiria",
-          "pronunciation": "angiria",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Morocco (Country / Territory)",
-          "translation": "Moroko",
-          "pronunciation": "moroko",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Cape Verde (Country / Territory)",
-          "translation": "Kepuvede",
-          "pronunciation": "kepuvede",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "United States (Country / Territory)",
-          "translation": "Amerika",
-          "pronunciation": "amerika",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "United Kingdom (Country / Territory)",
-          "translation": "Ngeretha",
-          "pronunciation": "ngeretha",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "France (Country / Territory)",
-          "translation": "Fransi",
-          "pronunciation": "fransi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Germany (Country / Territory)",
-          "translation": "Njamanĩ",
-          "pronunciation": "njamanĩ",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Italy (Country / Territory)",
-          "translation": "Italĩ",
-          "pronunciation": "italĩ",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Spain (Country / Territory)",
-          "translation": "Spĩni",
-          "pronunciation": "spĩni",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Portugal (Country / Territory)",
-          "translation": "Potogo",
-          "pronunciation": "potogo",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Netherlands (Country / Territory)",
-          "translation": "Holandi",
-          "pronunciation": "holandi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Belgium (Country / Territory)",
-          "translation": "Beronjiamu",
-          "pronunciation": "beronjiamu",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Switzerland (Country / Territory)",
-          "translation": "Swizilandi",
-          "pronunciation": "swizilandi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Russia (Country / Territory)",
-          "translation": "Rashia",
-          "pronunciation": "rashia",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Ukraine (Country / Territory)",
-          "translation": "Ukirĩni",
-          "pronunciation": "ukirĩni",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Poland (Country / Territory)",
-          "translation": "Polandi",
-          "pronunciation": "polandi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Turkey (Country / Territory)",
-          "translation": "Takĩ",
-          "pronunciation": "takĩ",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Greece (Country / Territory)",
-          "translation": "Ngiriki",
-          "pronunciation": "ngiriki",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Israel (Country / Territory)",
-          "translation": "Isiraeli",
-          "pronunciation": "isiraeli",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Palestinian Territories (Country / Territory)",
-          "translation": "Rũtere rwa Westi banki na Gaza cia Palestina",
-          "pronunciation": "rũtere rwa westi banki na gaza cia palestina",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Saudi Arabia (Country / Territory)",
-          "translation": "Saudi",
-          "pronunciation": "saudi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "United Arab Emirates (Country / Territory)",
-          "translation": "Falme cia Kiarabu",
-          "pronunciation": "falme cia kiarabu",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Qatar (Country / Territory)",
-          "translation": "Kata",
-          "pronunciation": "kata",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Iran (Country / Territory)",
-          "translation": "Irani",
-          "pronunciation": "irani",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "South Korea (Country / Territory)",
-          "translation": "Korea Saũthi",
-          "pronunciation": "korea saũthi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Philippines (Country / Territory)",
-          "translation": "Filipino",
-          "pronunciation": "filipino",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Australia (Country / Territory)",
-          "translation": "Austrĩlia",
-          "pronunciation": "austrĩlia",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "New Zealand (Country / Territory)",
-          "translation": "Niuzilandi",
-          "pronunciation": "niuzilandi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Mexico (Country / Territory)",
-          "translation": "Mexiko",
-          "pronunciation": "mexiko",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Brazil (Country / Territory)",
-          "translation": "Brazilu",
-          "pronunciation": "brazilu",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Cuba (Country / Territory)",
-          "translation": "Kiuba",
-          "pronunciation": "kiuba",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] January (Month 1)",
-          "translation": "Mweri wa mbere (Mbe)",
-          "pronunciation": "mweri wa mbere (mbe)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] February (Month 2)",
-          "translation": "Mweri wa kaĩri (Kai)",
-          "pronunciation": "mweri wa kaĩri (kai)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] March (Month 3)",
-          "translation": "Mweri wa kathatũ (Kat)",
-          "pronunciation": "mweri wa kathatũ (kat)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] April (Month 4)",
-          "translation": "Mweri wa kana (Kan)",
-          "pronunciation": "mweri wa kana (kan)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] May (Month 5)",
-          "translation": "Mweri wa gatano (Gat)",
-          "pronunciation": "mweri wa gatano (gat)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] June (Month 6)",
-          "translation": "Mweri wa gatantatũ (Gan)",
-          "pronunciation": "mweri wa gatantatũ (gan)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] July (Month 7)",
-          "translation": "Mweri wa mũgwanja (Mug)",
-          "pronunciation": "mweri wa mũgwanja (mug)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] August (Month 8)",
-          "translation": "Mweri wa kanana (Knn)",
-          "pronunciation": "mweri wa kanana (knn)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] September (Month 9)",
-          "translation": "Mweri wa kenda (Ken)",
-          "pronunciation": "mweri wa kenda (ken)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] October (Month 10)",
-          "translation": "Mweri wa ikũmi (Iku)",
-          "pronunciation": "mweri wa ikũmi (iku)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] November (Month 11)",
-          "translation": "Mweri wa ikũmi na ũmwe (Imw)",
-          "pronunciation": "mweri wa ikũmi na ũmwe (imw)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] December (Month 12)",
-          "translation": "Mweri wa ikũmi na Kaĩrĩ (Igi)",
-          "pronunciation": "mweri wa ikũmi na kaĩrĩ (igi)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Sunday (Day of the week)",
-          "translation": "Kiumia (Kma)",
-          "pronunciation": "kiumia (kma)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Monday (Day of the week)",
-          "translation": "Njumatatu (Tat)",
-          "pronunciation": "njumatatu (tat)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Tuesday (Day of the week)",
-          "translation": "Njumaine (Ine)",
-          "pronunciation": "njumaine (ine)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Wednesday (Day of the week)",
-          "translation": "Njumatano (Tan)",
-          "pronunciation": "njumatano (tan)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Thursday (Day of the week)",
-          "translation": "Aramithi (Arm)",
-          "pronunciation": "aramithi (arm)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Friday (Day of the week)",
-          "translation": "Njumaa (Maa)",
-          "pronunciation": "njumaa (maa)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Saturday (Day of the week)",
-          "translation": "NJumamothii (NMM)",
-          "pronunciation": "njumamothii (nmm)",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Before Christ (BC / Historical Era)",
-          "translation": "Mbere ya Kristo",
-          "pronunciation": "mbere ya kristo",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Anno Domini (AD / Common Era)",
-          "translation": "Thutha wa Kristo",
-          "pronunciation": "thutha wa kristo",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] In the morning (AM day period)",
-          "translation": "KI",
-          "pronunciation": "ki",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] In the afternoon / evening (PM day period)",
-          "translation": "UT",
-          "pronunciation": "ut",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Era / historical age",
-          "translation": "Ivinda",
-          "pronunciation": "ivinda",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Year (calendar unit)",
-          "translation": "Mwaka",
-          "pronunciation": "mwaka",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Month (calendar unit)",
-          "translation": "Mweri",
-          "pronunciation": "mweri",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Week (calendar unit)",
-          "translation": "Kiumia",
-          "pronunciation": "kiumia",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Day of the week",
-          "translation": "Mũthenya kiumia-inĩ",
-          "pronunciation": "mũthenya kiumia-inĩ",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Day (calendar unit)",
-          "translation": "Mũthenya",
-          "pronunciation": "mũthenya",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Hour (time unit)",
-          "translation": "Ithaa",
-          "pronunciation": "ithaa",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Minute (time unit)",
-          "translation": "Ndagĩka",
-          "pronunciation": "ndagĩka",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Kenyan Shilling (KES)",
-          "translation": "Shilingi ya Kenya",
-          "pronunciation": "shilingi ya kenya",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Ethiopian Birr (ETB)",
-          "translation": "Bir ya Uhabeshi",
-          "pronunciation": "bir ya uhabeshi",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Sudanese Pound (SDG)",
-          "translation": "Pauni ya Sudani",
-          "pronunciation": "pauni ya sudani",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Nigerian Naira (NGN)",
-          "translation": "Naira ya Nijeria",
-          "pronunciation": "naira ya nijeria",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Malagasy Ariary (MGA)",
-          "translation": "Ariary ya Bukini",
-          "pronunciation": "ariary ya bukini",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Seychellois Rupee (SCR)",
-          "translation": "Rupia ya Shelisheli",
-          "pronunciation": "rupia ya shelisheli",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Algerian Dinar (DZD)",
-          "translation": "Dinari ya Aljeria",
-          "pronunciation": "dinari ya aljeria",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Sierra Leonean Leone (1964—2022) (SLL)",
-          "translation": "Leoni",
-          "pronunciation": "leoni",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] West African CFA Franc (XOF)",
-          "translation": "Faranga CFA BCEAO",
-          "pronunciation": "faranga cfa bceao",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Central African CFA Franc (XAF)",
-          "translation": "Faranga CFA BEAC",
-          "pronunciation": "faranga cfa beac",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Chinese Yuan (CNY)",
-          "translation": "Yuan Renminbi ya China",
-          "pronunciation": "yuan renminbi ya china",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Japanese Yen (JPY)",
-          "translation": "Sarafu ya Kijapani",
-          "pronunciation": "sarafu ya kijapani",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Canadian Dollar (CAD)",
-          "translation": "Dola ya Kanada",
-          "pronunciation": "dola ya kanada",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Australian Dollar (AUD)",
-          "translation": "Dora ya Australia",
-          "pronunciation": "dora ya australia",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Ethiopia (Country / Territory)",
-          "translation": "Uhabeshi",
-          "pronunciation": "uhabeshi",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Sudan (Country / Territory)",
-          "translation": "Sudani",
-          "pronunciation": "sudani",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Congo - Brazzaville (Country / Territory)",
-          "translation": "Kongo",
-          "pronunciation": "kongo",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Nigeria (Country / Territory)",
-          "translation": "Nijeria",
-          "pronunciation": "nijeria",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Côte d’Ivoire (Country / Territory)",
-          "translation": "Kodivaa",
-          "pronunciation": "kodivaa",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Niger (Country / Territory)",
-          "translation": "Nijeri",
-          "pronunciation": "nijeri",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Chad (Country / Territory)",
-          "translation": "Chadi",
-          "pronunciation": "chadi",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Gabon (Country / Territory)",
-          "translation": "Gaboni",
-          "pronunciation": "gaboni",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Equatorial Guinea (Country / Territory)",
-          "translation": "Ginekweta",
-          "pronunciation": "ginekweta",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Eswatini (Country / Territory)",
-          "translation": "Uswazi",
-          "pronunciation": "uswazi",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Madagascar (Country / Territory)",
-          "translation": "Bukini",
-          "pronunciation": "bukini",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Seychelles (Country / Territory)",
-          "translation": "Shelisheli",
-          "pronunciation": "shelisheli",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Morocco (Country / Territory)",
-          "translation": "Moroko",
-          "pronunciation": "moroko",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Cape Verde (Country / Territory)",
-          "translation": "Kepuvede",
-          "pronunciation": "kepuvede",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] United Kingdom (Country / Territory)",
-          "translation": "Uingereza",
-          "pronunciation": "uingereza",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Spain (Country / Territory)",
-          "translation": "Hispania",
-          "pronunciation": "hispania",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Ukraine (Country / Territory)",
-          "translation": "Ukraini",
-          "pronunciation": "ukraini",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Poland (Country / Territory)",
-          "translation": "Polandi",
-          "pronunciation": "polandi",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Palestinian Territories (Country / Territory)",
-          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
-          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Saudi Arabia (Country / Territory)",
-          "translation": "Saudi",
-          "pronunciation": "saudi",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Qatar (Country / Territory)",
-          "translation": "Katari",
-          "pronunciation": "katari",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Iran (Country / Territory)",
-          "translation": "Uajemi",
-          "pronunciation": "uajemi",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Philippines (Country / Territory)",
-          "translation": "Filipino",
-          "pronunciation": "filipino",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Brazil (Country / Territory)",
-          "translation": "Brazili",
-          "pronunciation": "brazili",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "I / me",
-          "translation": "niĩ (prefix n-)",
-          "pronunciation": "nee-ee",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
-          "audioFile": null
-        },
-        {
-          "english": "You (singular)",
-          "translation": "gwe (we, prefix ũ-)",
-          "pronunciation": "gweh",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
-          "audioFile": null
-        },
-        {
-          "english": "He / She",
-          "translation": "we (prefix a-)",
-          "pronunciation": "weh",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
-          "audioFile": null
-        },
-        {
-          "english": "We / us",
-          "translation": "batũ / ithuĩ (prefix tũ-)",
-          "pronunciation": "bah-too",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
-          "audioFile": null
-        },
-        {
-          "english": "They / them",
-          "translation": "bo (o, prefix ba-)",
-          "pronunciation": "boh",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Who?",
-          "translation": "ũũ? (nũũ?)",
-          "pronunciation": "oo / noo",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
-          "audioFile": null
-        },
-        {
-          "english": "What?",
-          "translation": "mbi? (atĩa?)",
-          "pronunciation": "m-bee",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Where?",
-          "translation": "kũ? (ha?)",
-          "pronunciation": "koo / hah",
-          "context": "Verified comparative entry across Kenyan bantu corpus",
-          "audioFile": null
-        },
-        {
-          "english": "To cut / divide (Mweru)",
-          "translation": "Ku-ita",
-          "pronunciation": "ku i-ta",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 158 — Notes on Mweru)",
-          "audioFile": null
-        },
-        {
-          "english": "Mobile phone money transfer (Kĩmĩĩrũ)",
-          "translation": "Kũtũma mbeca na thimũ",
-          "pronunciation": "koo-too-ma mbe-ca na thi-moo",
-          "context": "African Next Voices (Anv-ke) Modern Kĩmĩĩrũ Corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Digital government service center (Huduma)",
-          "translation": "Kĩrũũngo kĩa ũtungata bwa thirikari",
-          "pronunciation": "kee-roooong-o keea oo-tung-a-ta bwa thi-ri-ka-ri",
-          "context": "African Next Voices (Anv-ke) Modern Kĩmĩĩrũ Corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Maternal and child health clinic",
-          "translation": "Thibitarĩ ya aka na twana",
-          "pronunciation": "thi-bi-ta-ree ya a-ka na twa-na",
-          "context": "African Next Voices (Anv-ke) Healthcare Domain",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "family-food",
-      "name": "Family, Homestead & Food",
+      "id": "food",
+      "name": "Food, Drink & Agriculture",
+      "icon": "🍲",
       "entries": [
         {
           "english": "Day",
@@ -3259,8 +1916,1351 @@
           "context": "African Next Voices (Anv-ke) Agriculture Domain",
           "audioFile": null
         }
-      ],
-      "icon": "👨‍👩‍👧‍👦"
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Expressions & Vocabulary",
+      "icon": "🗣️",
+      "entries": [
+        {
+          "english": "Speak",
+          "translation": "kwaria (kuuga)",
+          "pronunciation": "kwah-ree-ah",
+          "context": "Johnston 1919 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "kũmama (kũkoma)",
+          "pronunciation": "koo-mah-mah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "kũũja (ĩja!)",
+          "pronunciation": "koo-jah / ee-jah",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "gũthiĩ (kũthi)",
+          "pronunciation": "goo-thee",
+          "context": "Johnston 1919 p. 72 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "-nini (mũnini, kanini)",
+          "pronunciation": "nee-nee",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "-nene (mũnene)",
+          "pronunciation": "neh-neh",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "-ũru (mũũru, nthũku)",
+          "pronunciation": "oo-roo / n-thoo-koo",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "-ega (mwega, bwega)",
+          "pronunciation": "eh-gah",
+          "context": "Johnston 1919 p. 71 #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "I love you",
+          "translation": "Inkwendete",
+          "pronunciation": "Inkwendete",
+          "context": "Wikipedia Meru language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Help me",
+          "translation": "Nteithia / Ntethia",
+          "pronunciation": "Nteithia / Ntethia",
+          "context": "Wikipedia Meru language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Come here (Imenti: Ĩja aja; Chuka: Ũka aa; Tigania: Ĩya haa; Tharaka: Ncũ aga)",
+          "translation": "Ĩja aja / Ũka aa",
+          "pronunciation": "Ĩja aja / Ũka aa",
+          "context": "Wikipedia Meru language — Sample phrases & Dialects",
+          "audioFile": null
+        },
+        {
+          "english": "I will phone / call you",
+          "translation": "Ngakũringĩra thimũ",
+          "pronunciation": "Ngakũringĩra thimũ",
+          "context": "Wikipedia Meru language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Get out / go outside (Imenti/Chuka/Tharaka: Uma nja; Tigania: Tũra)",
+          "translation": "Uma nja / Tũra",
+          "pronunciation": "Uma nja / Tũra",
+          "context": "Wikipedia Meru language — Dialects",
+          "audioFile": null
+        },
+        {
+          "english": "Get inside / enter (Imenti/Chuka: Kũrũka / Tonya; Tigania: Unkuma; Tharaka: Thũngĩra)",
+          "translation": "Kũrũka / Tonya / Thũngĩra",
+          "pronunciation": "Kũrũka / Tonya / Thũngĩra",
+          "context": "Wikipedia Meru language — Dialects",
+          "audioFile": null
+        },
+        {
+          "english": "Today (Chuka: Ũmũnthi; Imenti: Naarua; Tigania: Ruarii; Tharaka: Ĩmunthĩ)",
+          "translation": "Ũmũnthi / Naarua / Ruarii",
+          "pronunciation": "Ũmũnthi / Naarua / Ruarii",
+          "context": "Wikipedia Meru language — Dialects",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow (Chuka/Imenti: Rũjũ / Rũũjũ; Tigania/Tharaka: Rũũ / Rũyũ)",
+          "translation": "Rũjũ / Rũũ",
+          "pronunciation": "Rũjũ / Rũũ",
+          "context": "Wikipedia Meru language — Dialects",
+          "audioFile": null
+        },
+        {
+          "english": "Take (imperative)",
+          "translation": "Jũkia",
+          "pronunciation": "Jũkia",
+          "context": "Wikipedia Meru language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "Tell me",
+          "translation": "Mbĩra",
+          "pronunciation": "Mbĩra",
+          "context": "Wikipedia Meru language — Sample phrases",
+          "audioFile": null
+        },
+        {
+          "english": "This tall person has come from Nairobi (Class 1 concord)",
+          "translation": "Muntũ ũjũ mũraja auma Nairobi",
+          "pronunciation": "Muntũ ũjũ mũraja auma Nairobi",
+          "context": "Wikipedia Meru language — Noun classes",
+          "audioFile": null
+        },
+        {
+          "english": "These tall people have come from Nairobi (Class 2 concord)",
+          "translation": "Antũ baba baraja bauma Nairobi",
+          "pronunciation": "Antũ baba baraja bauma Nairobi",
+          "context": "Wikipedia Meru language — Noun classes",
+          "audioFile": null
+        },
+        {
+          "english": "person (pl. people) (Class 1/2)",
+          "translation": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
+          "pronunciation": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "young uninitiated boy (pl. boys) (Class 12/13)",
+          "translation": "kavĩcĩ (pl. tũvĩcĩ)",
+          "pronunciation": "kavĩcĩ (pl. tũvĩcĩ)",
+          "context": "Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "young girl (pl. girls)",
+          "translation": "karĩgũ (pl. tũrĩgũ)",
+          "pronunciation": "karĩgũ (pl. tũrĩgũ)",
+          "context": "Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "tree, wood, herbal medicine (Class 3/4)",
+          "translation": "mũtĩ (pl. mĩtĩ)",
+          "pronunciation": "mũtĩ (pl. mĩtĩ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "hill, mountain (Kĩrĩnyaga = Mount Kenya)",
+          "translation": "mũrĩma (pl. mĩrĩma) / kĩrĩma",
+          "pronunciation": "mũrĩma (pl. mĩrĩma) / kĩrĩma",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "stone, rock (Class 5/6)",
+          "translation": "ĩvia (pl. mavia) / ĩiga",
+          "pronunciation": "ĩvia (pl. mavia) / ĩiga",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "head",
+          "translation": "mũtwe (pl. mĩtwe)",
+          "pronunciation": "mũtwe (pl. mĩtwe)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "eye (pl. eyes)",
+          "translation": "rĩitho (pl. metho)",
+          "pronunciation": "rĩitho (pl. metho)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "ear (pl. ears)",
+          "translation": "gũtũ (pl. matũ)",
+          "pronunciation": "gũtũ (pl. matũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "nose",
+          "translation": "inyũrũ (pl. manyũrũ)",
+          "pronunciation": "inyũrũ (pl. manyũrũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "mouth",
+          "translation": "kanyua (pl. tũnyua)",
+          "pronunciation": "kanyua (pl. tũnyua)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "tooth (pl. teeth)",
+          "translation": "ĩrĩo (pl. meeno)",
+          "pronunciation": "ĩrĩo (pl. meeno)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "tongue, language",
+          "translation": "rũrĩmĩ (pl. ndĩmĩ)",
+          "pronunciation": "rũrĩmĩ (pl. ndĩmĩ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "hand, arm",
+          "translation": "njara /oko (pl. moko)",
+          "pronunciation": "njara /oko (pl. moko)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "leg, foot",
+          "translation": "kũgũrũ (pl. magũrũ)",
+          "pronunciation": "kũgũrũ (pl. magũrũ)",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "heart, spirit, mind",
+          "translation": "ngoro",
+          "pronunciation": "ngoro",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Wĩtagwa atĩa? / Rĩĩtwa rĩaku nĩ ũũ?",
+          "pronunciation": "wĩtagwa atĩa? / rĩĩtwa rĩaku nĩ ũũ?",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Where are you from?",
+          "translation": "Ũrĩĩte kũ? / Wĩ mũciĩ kũ?",
+          "pronunciation": "ũrĩĩte kũ? / wĩ mũciĩ kũ?",
+          "context": "Kîembu / Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme traditional council of elders of the Ameru people",
+          "translation": "Njũri Ncheke",
+          "pronunciation": "njũri ncheke",
+          "context": "Kĩmĩĩrũ",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme traditional council of elders of the Aembu people",
+          "translation": "Kiama kia Ngome",
+          "pronunciation": "kiama kia ngome",
+          "context": "Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme Creator dwelling on Mount Kenya (Kĩrĩnyaga)",
+          "translation": "Murungu / Ngai",
+          "pronunciation": "murungu / ngai",
+          "context": "Kĩmĩĩrũ / Kîembu",
+          "audioFile": null
+        },
+        {
+          "english": "Sunday (Day of the week)",
+          "translation": "Kiumia (KIU)",
+          "pronunciation": "kiumia (kiu)",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Monday (Day of the week)",
+          "translation": "Muramuko (MRA)",
+          "pronunciation": "muramuko (mra)",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Tuesday (Day of the week)",
+          "translation": "Wairi (WAI)",
+          "pronunciation": "wairi (wai)",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Wednesday (Day of the week)",
+          "translation": "Wethatu (WET)",
+          "pronunciation": "wethatu (wet)",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Thursday (Day of the week)",
+          "translation": "Wena (WEN)",
+          "pronunciation": "wena (wen)",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Friday (Day of the week)",
+          "translation": "Wetano (WTN)",
+          "pronunciation": "wetano (wtn)",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Saturday (Day of the week)",
+          "translation": "Jumamosi (JUM)",
+          "pronunciation": "jumamosi (jum)",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Before Christ (BC / Historical Era)",
+          "translation": "Mbere ya Kristũ",
+          "pronunciation": "mbere ya kristũ",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Anno Domini (AD / Common Era)",
+          "translation": "Nyuma ya Kristũ",
+          "pronunciation": "nyuma ya kristũ",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "In the morning (AM day period)",
+          "translation": "RŨ",
+          "pronunciation": "rũ",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "In the afternoon / evening (PM day period)",
+          "translation": "ŨG",
+          "pronunciation": "ũg",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Era / historical age",
+          "translation": "Ĩgita",
+          "pronunciation": "ĩgita",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Day of the week",
+          "translation": "Ntukũ ya ngũgĩ",
+          "pronunciation": "ntukũ ya ngũgĩ",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "South African Rand (ZAR)",
+          "translation": "Randi ya Afrika ya Sauthi",
+          "pronunciation": "randi ya afrika ya sauthi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "West African CFA Franc (XOF)",
+          "translation": "Faranga CFA BCEAO",
+          "pronunciation": "faranga cfa bceao",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African CFA Franc (XAF)",
+          "translation": "Faranga CFA BEAC",
+          "pronunciation": "faranga cfa beac",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates Dirham (AED)",
+          "translation": "Dirham ya Falme cia Kiarabu",
+          "pronunciation": "dirham ya falme cia kiarabu",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethiopia (Country / Territory)",
+          "translation": "Ithiopia",
+          "pronunciation": "ithiopia",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Kinshasa (Country / Territory)",
+          "translation": "Nthĩ ya Kidemokrasĩ ya Kongo",
+          "pronunciation": "nthĩ ya kidemokrasĩ ya kongo",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "South Africa (Country / Territory)",
+          "translation": "Afrika ya Southi",
+          "pronunciation": "afrika ya southi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Egypt (Country / Territory)",
+          "translation": "Misiri",
+          "pronunciation": "misiri",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Senegal (Country / Territory)",
+          "translation": "Senego",
+          "pronunciation": "senego",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Niger (Country / Territory)",
+          "translation": "Nija",
+          "pronunciation": "nija",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Central African Republic (Country / Territory)",
+          "translation": "Nthĩ ya Afrika gatĩgatĩ",
+          "pronunciation": "nthĩ ya afrika gatĩgatĩ",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Equatorial Guinea (Country / Territory)",
+          "translation": "Gine ya Iquita",
+          "pronunciation": "gine ya iquita",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mozambique (Country / Territory)",
+          "translation": "Mozambiki",
+          "pronunciation": "mozambiki",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Eswatini (Country / Territory)",
+          "translation": "Swazilandi",
+          "pronunciation": "swazilandi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Madagascar (Country / Territory)",
+          "translation": "Madagasika",
+          "pronunciation": "madagasika",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mauritius (Country / Territory)",
+          "translation": "Maurĩtiasi",
+          "pronunciation": "maurĩtiasi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Libya (Country / Territory)",
+          "translation": "Lĩbia",
+          "pronunciation": "lĩbia",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Algeria (Country / Territory)",
+          "translation": "Angiria",
+          "pronunciation": "angiria",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United States (Country / Territory)",
+          "translation": "Amerika",
+          "pronunciation": "amerika",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United Kingdom (Country / Territory)",
+          "translation": "Ngeretha",
+          "pronunciation": "ngeretha",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "France (Country / Territory)",
+          "translation": "Fransi",
+          "pronunciation": "fransi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Germany (Country / Territory)",
+          "translation": "Njamanĩ",
+          "pronunciation": "njamanĩ",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Italy (Country / Territory)",
+          "translation": "Italĩ",
+          "pronunciation": "italĩ",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Spain (Country / Territory)",
+          "translation": "Spĩni",
+          "pronunciation": "spĩni",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Portugal (Country / Territory)",
+          "translation": "Potogo",
+          "pronunciation": "potogo",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Netherlands (Country / Territory)",
+          "translation": "Holandi",
+          "pronunciation": "holandi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Belgium (Country / Territory)",
+          "translation": "Beronjiamu",
+          "pronunciation": "beronjiamu",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Switzerland (Country / Territory)",
+          "translation": "Swizilandi",
+          "pronunciation": "swizilandi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Russia (Country / Territory)",
+          "translation": "Rashia",
+          "pronunciation": "rashia",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Ukraine (Country / Territory)",
+          "translation": "Ukirĩni",
+          "pronunciation": "ukirĩni",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Turkey (Country / Territory)",
+          "translation": "Takĩ",
+          "pronunciation": "takĩ",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Greece (Country / Territory)",
+          "translation": "Ngiriki",
+          "pronunciation": "ngiriki",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Israel (Country / Territory)",
+          "translation": "Isiraeli",
+          "pronunciation": "isiraeli",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Palestinian Territories (Country / Territory)",
+          "translation": "Rũtere rwa Westi banki na Gaza cia Palestina",
+          "pronunciation": "rũtere rwa westi banki na gaza cia palestina",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "United Arab Emirates (Country / Territory)",
+          "translation": "Falme cia Kiarabu",
+          "pronunciation": "falme cia kiarabu",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Qatar (Country / Territory)",
+          "translation": "Kata",
+          "pronunciation": "kata",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Iran (Country / Territory)",
+          "translation": "Irani",
+          "pronunciation": "irani",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "South Korea (Country / Territory)",
+          "translation": "Korea Saũthi",
+          "pronunciation": "korea saũthi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Australia (Country / Territory)",
+          "translation": "Austrĩlia",
+          "pronunciation": "austrĩlia",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "New Zealand (Country / Territory)",
+          "translation": "Niuzilandi",
+          "pronunciation": "niuzilandi",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Mexico (Country / Territory)",
+          "translation": "Mexiko",
+          "pronunciation": "mexiko",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Brazil (Country / Territory)",
+          "translation": "Brazilu",
+          "pronunciation": "brazilu",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "Cuba (Country / Territory)",
+          "translation": "Kiuba",
+          "pronunciation": "kiuba",
+          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] January (Month 1)",
+          "translation": "Mweri wa mbere (Mbe)",
+          "pronunciation": "mweri wa mbere (mbe)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] February (Month 2)",
+          "translation": "Mweri wa kaĩri (Kai)",
+          "pronunciation": "mweri wa kaĩri (kai)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] March (Month 3)",
+          "translation": "Mweri wa kathatũ (Kat)",
+          "pronunciation": "mweri wa kathatũ (kat)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] April (Month 4)",
+          "translation": "Mweri wa kana (Kan)",
+          "pronunciation": "mweri wa kana (kan)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] May (Month 5)",
+          "translation": "Mweri wa gatano (Gat)",
+          "pronunciation": "mweri wa gatano (gat)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] June (Month 6)",
+          "translation": "Mweri wa gatantatũ (Gan)",
+          "pronunciation": "mweri wa gatantatũ (gan)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] July (Month 7)",
+          "translation": "Mweri wa mũgwanja (Mug)",
+          "pronunciation": "mweri wa mũgwanja (mug)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] August (Month 8)",
+          "translation": "Mweri wa kanana (Knn)",
+          "pronunciation": "mweri wa kanana (knn)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] September (Month 9)",
+          "translation": "Mweri wa kenda (Ken)",
+          "pronunciation": "mweri wa kenda (ken)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] October (Month 10)",
+          "translation": "Mweri wa ikũmi (Iku)",
+          "pronunciation": "mweri wa ikũmi (iku)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] November (Month 11)",
+          "translation": "Mweri wa ikũmi na ũmwe (Imw)",
+          "pronunciation": "mweri wa ikũmi na ũmwe (imw)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] December (Month 12)",
+          "translation": "Mweri wa ikũmi na Kaĩrĩ (Igi)",
+          "pronunciation": "mweri wa ikũmi na kaĩrĩ (igi)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Sunday (Day of the week)",
+          "translation": "Kiumia (Kma)",
+          "pronunciation": "kiumia (kma)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Monday (Day of the week)",
+          "translation": "Njumatatu (Tat)",
+          "pronunciation": "njumatatu (tat)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Tuesday (Day of the week)",
+          "translation": "Njumaine (Ine)",
+          "pronunciation": "njumaine (ine)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Wednesday (Day of the week)",
+          "translation": "Njumatano (Tan)",
+          "pronunciation": "njumatano (tan)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Thursday (Day of the week)",
+          "translation": "Aramithi (Arm)",
+          "pronunciation": "aramithi (arm)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Friday (Day of the week)",
+          "translation": "Njumaa (Maa)",
+          "pronunciation": "njumaa (maa)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Saturday (Day of the week)",
+          "translation": "NJumamothii (NMM)",
+          "pronunciation": "njumamothii (nmm)",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Before Christ (BC / Historical Era)",
+          "translation": "Mbere ya Kristo",
+          "pronunciation": "mbere ya kristo",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Anno Domini (AD / Common Era)",
+          "translation": "Thutha wa Kristo",
+          "pronunciation": "thutha wa kristo",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] In the morning (AM day period)",
+          "translation": "KI",
+          "pronunciation": "ki",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] In the afternoon / evening (PM day period)",
+          "translation": "UT",
+          "pronunciation": "ut",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Era / historical age",
+          "translation": "Ivinda",
+          "pronunciation": "ivinda",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Year (calendar unit)",
+          "translation": "Mwaka",
+          "pronunciation": "mwaka",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Month (calendar unit)",
+          "translation": "Mweri",
+          "pronunciation": "mweri",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Week (calendar unit)",
+          "translation": "Kiumia",
+          "pronunciation": "kiumia",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Day of the week",
+          "translation": "Mũthenya kiumia-inĩ",
+          "pronunciation": "mũthenya kiumia-inĩ",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Day (calendar unit)",
+          "translation": "Mũthenya",
+          "pronunciation": "mũthenya",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Hour (time unit)",
+          "translation": "Ithaa",
+          "pronunciation": "ithaa",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Minute (time unit)",
+          "translation": "Ndagĩka",
+          "pronunciation": "ndagĩka",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Kenyan Shilling (KES)",
+          "translation": "Shilingi ya Kenya",
+          "pronunciation": "shilingi ya kenya",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Ethiopian Birr (ETB)",
+          "translation": "Bir ya Uhabeshi",
+          "pronunciation": "bir ya uhabeshi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Sudanese Pound (SDG)",
+          "translation": "Pauni ya Sudani",
+          "pronunciation": "pauni ya sudani",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Nigerian Naira (NGN)",
+          "translation": "Naira ya Nijeria",
+          "pronunciation": "naira ya nijeria",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Malagasy Ariary (MGA)",
+          "translation": "Ariary ya Bukini",
+          "pronunciation": "ariary ya bukini",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Seychellois Rupee (SCR)",
+          "translation": "Rupia ya Shelisheli",
+          "pronunciation": "rupia ya shelisheli",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Algerian Dinar (DZD)",
+          "translation": "Dinari ya Aljeria",
+          "pronunciation": "dinari ya aljeria",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Sierra Leonean Leone (1964—2022) (SLL)",
+          "translation": "Leoni",
+          "pronunciation": "leoni",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] West African CFA Franc (XOF)",
+          "translation": "Faranga CFA BCEAO",
+          "pronunciation": "faranga cfa bceao",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Central African CFA Franc (XAF)",
+          "translation": "Faranga CFA BEAC",
+          "pronunciation": "faranga cfa beac",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Chinese Yuan (CNY)",
+          "translation": "Yuan Renminbi ya China",
+          "pronunciation": "yuan renminbi ya china",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Japanese Yen (JPY)",
+          "translation": "Sarafu ya Kijapani",
+          "pronunciation": "sarafu ya kijapani",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Canadian Dollar (CAD)",
+          "translation": "Dola ya Kanada",
+          "pronunciation": "dola ya kanada",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Australian Dollar (AUD)",
+          "translation": "Dora ya Australia",
+          "pronunciation": "dora ya australia",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Ethiopia (Country / Territory)",
+          "translation": "Uhabeshi",
+          "pronunciation": "uhabeshi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Sudan (Country / Territory)",
+          "translation": "Sudani",
+          "pronunciation": "sudani",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Congo - Brazzaville (Country / Territory)",
+          "translation": "Kongo",
+          "pronunciation": "kongo",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Nigeria (Country / Territory)",
+          "translation": "Nijeria",
+          "pronunciation": "nijeria",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Côte d’Ivoire (Country / Territory)",
+          "translation": "Kodivaa",
+          "pronunciation": "kodivaa",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Niger (Country / Territory)",
+          "translation": "Nijeri",
+          "pronunciation": "nijeri",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Chad (Country / Territory)",
+          "translation": "Chadi",
+          "pronunciation": "chadi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Gabon (Country / Territory)",
+          "translation": "Gaboni",
+          "pronunciation": "gaboni",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Equatorial Guinea (Country / Territory)",
+          "translation": "Ginekweta",
+          "pronunciation": "ginekweta",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Eswatini (Country / Territory)",
+          "translation": "Uswazi",
+          "pronunciation": "uswazi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Madagascar (Country / Territory)",
+          "translation": "Bukini",
+          "pronunciation": "bukini",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Seychelles (Country / Territory)",
+          "translation": "Shelisheli",
+          "pronunciation": "shelisheli",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Morocco (Country / Territory)",
+          "translation": "Moroko",
+          "pronunciation": "moroko",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Cape Verde (Country / Territory)",
+          "translation": "Kepuvede",
+          "pronunciation": "kepuvede",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] United Kingdom (Country / Territory)",
+          "translation": "Uingereza",
+          "pronunciation": "uingereza",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Spain (Country / Territory)",
+          "translation": "Hispania",
+          "pronunciation": "hispania",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Ukraine (Country / Territory)",
+          "translation": "Ukraini",
+          "pronunciation": "ukraini",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Poland (Country / Territory)",
+          "translation": "Polandi",
+          "pronunciation": "polandi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Palestinian Territories (Country / Territory)",
+          "translation": "Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina",
+          "pronunciation": "ukingo wa magharibi na ukanda wa gaza wa palestina",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Saudi Arabia (Country / Territory)",
+          "translation": "Saudi",
+          "pronunciation": "saudi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Qatar (Country / Territory)",
+          "translation": "Katari",
+          "pronunciation": "katari",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Iran (Country / Territory)",
+          "translation": "Uajemi",
+          "pronunciation": "uajemi",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Philippines (Country / Territory)",
+          "translation": "Filipino",
+          "pronunciation": "filipino",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "[Kîembu] Brazil (Country / Territory)",
+          "translation": "Brazili",
+          "pronunciation": "brazili",
+          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "niĩ (prefix n-)",
+          "pronunciation": "nee-ee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "gwe (we, prefix ũ-)",
+          "pronunciation": "gweh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "we (prefix a-)",
+          "pronunciation": "weh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "batũ / ithuĩ (prefix tũ-)",
+          "pronunciation": "bah-too",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "bo (o, prefix ba-)",
+          "pronunciation": "boh",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ũũ? (nũũ?)",
+          "pronunciation": "oo / noo",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "mbi? (atĩa?)",
+          "pronunciation": "m-bee",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "kũ? (ha?)",
+          "pronunciation": "koo / hah",
+          "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cut / divide (Mweru)",
+          "translation": "Ku-ita",
+          "pronunciation": "ku i-ta",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 158 — Notes on Mweru)",
+          "audioFile": null
+        },
+        {
+          "english": "Mobile phone money transfer (Kĩmĩĩrũ)",
+          "translation": "Kũtũma mbeca na thimũ",
+          "pronunciation": "koo-too-ma mbe-ca na thi-moo",
+          "context": "African Next Voices (Anv-ke) Modern Kĩmĩĩrũ Corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Digital government service center (Huduma)",
+          "translation": "Kĩrũũngo kĩa ũtungata bwa thirikari",
+          "pronunciation": "kee-roooong-o keea oo-tung-a-ta bwa thi-ri-ka-ri",
+          "context": "African Next Voices (Anv-ke) Modern Kĩmĩĩrũ Corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Maternal and child health clinic",
+          "translation": "Thibitarĩ ya aka na twana",
+          "pronunciation": "thi-bi-ta-ree ya a-ka na twa-na",
+          "context": "African Next Voices (Anv-ke) Healthcare Domain",
+          "audioFile": null
+        }
+      ]
     },
     {
       "id": "culture-history",
@@ -3304,16 +3304,16 @@
         },
         {
           "english": "The 22 Mweru Geographical Sub-Tribes, 13 Mwiria Totemic Clans (Netiri) & Ntowaita Exodus Legend (Hobley 1910, pp. 156–158)",
-          "translation": "22 Mweru Sub-Tribes & Chiefs (p. 156): (1) Janjai (Kamuru), (2) Oringo (Njoo), (3) Kunati (Waikaiwa), (4) Mbuya (Waivori), (5) Akithii (Mutwiarando), (6) Athwana (Kirigwa), (7) Muthara (Ndaminuki), (8) Karama, (9) Iembe (Kiliungu), (10) Muchi Muguru (Njaiili), (11) Kithio (Mutiarando), (12) Amwa, (13) Mnithu (Paimwisu), (14) Nyangini, (15) Tera, (16) Ntagira, (17) Karuanjoi, (18) Kithironi, (19) Rukho, (20) Iokhi, (21) Amengñendi, (22) Thaicho (Paratobi) • 13 Mwiria Clans & Netiri Totems (p. 157): (1) Ntowaita (dominant clan, formerly Njiru), (2) Athanya (vyondo basket twine), (3) Njaru (white cattle), (4) Nthia (speckled cattle), (5) Ntuni (red cattle), (6) Amakui (edible root Mukui), (7) Athinga (giraffe), (8) Antuanthama (mpala; antu = people), (9) Singamburi (goats), (10) Antwa mwakia ('greedy people', dik-dik), (11) Angilo (black cattle), (12) Mwianda (lice; anda = louse), (13) Amatu (francolin; matu = ears) • Ntowaita ('ku-ita' = to cut) Exodus Legend (pp. 157–158): Their laibon solved 3 enemy tests (fleas from chopped tail-hair, two-sided hairy sandals from donkey ears, and an iron rod from earth to sky by inspecting a volunteer's entrails) and parted the river waters after pouring ewe/ass/human milk into the river",
+          "translation": "22 Mweru Sub-Tribes & Chiefs (p. 156): (1) Janjai (Kamuru), (2) Oringo (Njoo), (3) Kunati (Waikaiwa), (4) Mbuya (Waivori), (5) Akithii (Mutwiarando), (6) Athwana (Kirigwa), (7) Muthara (Ndaminuki)...",
           "pronunciation": "mwi-ri-a / ne-ti-ri / nto-wai-ta / ku-i-ta / jan-jai / o-rin-go / mu-tha-ra / i-em-be",
           "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 156–158",
           "audioFile": null
         },
         {
           "english": "The 14 Tharaka (Thaka) Clans (Mwiriga / Mbai) & Totems (Nthuku) Recorded by C. W. Hobley (1910 Appendix 6, p. 169)",
-          "translation": "Ntonga (Duiker nthia), Mbua (Baboon Ikuli), Koli (Monkey ntheo), Nya (Aardvark guma), Nkuyu (Dik-dik Kabii), Kamowao (Hartebeest Ando), Kanyaki (Elephant nzoo), Kangina (Wart-hog ngi), Kamugwi (Reedbuck ndoya), Kathoka (Bush-pig ngulwe), Kanjogo (Elephant nzoo), Engimu (Rhino ngimo), Kirundu (Buffalo mbogo), Mutua (Hyaena mbiti); Thaka wizard = Mugao vs. medicine man = Mutu muwao (p. 93 n.), spirit tamarind shrine = Mthumuba (p. 85 n.)",
+          "translation": "Ntonga (Duiker nthia), Mbua (Baboon Ikuli), Koli (Monkey ntheo), Nya (Aardvark guma), Nkuyu (Dik-dik Kabii), Kamowao (Hartebeest Ando), Kanyaki (Elephant nzoo), Kangina (Wart-hog ngi)",
           "pronunciation": "mwi-ri-ga / nthu-ku / nton-ga / m-bu-a / ko-li / ka-nya-ki / ki-run-du",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', p. 2, pp. 85, 93 & Appendix (6), p. 169",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', p. 2, pp. 85, 93 & Appendix (6), p. 169 — Kamugwi (Reedbuck ndoya), Kathoka (Bush-pig ngulwe), Kanjogo (Elephant nzoo), Engimu (Rhino ngimo), Kirundu (Buffalo mbogo), Mutua (Hyaena mb...",
           "audioFile": null
         },
         {

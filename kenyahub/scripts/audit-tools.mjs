@@ -33,7 +33,7 @@ function findImportedData(slug) {
   const pagePath = join(toolsRoot, slug, "page.tsx");
   if (!existsSync(pagePath)) return [];
   const page = readFileSync(pagePath, "utf8");
-  return [...page.matchAll(/from\s+["']@\/data\/([^"']+)["']/g)]
+  return [...page.matchAll(/(?:from\s+|import\(\s*)["']@\/data\/([^"']+)["']/g)]
     .map((match) => match[1])
     .map((importPath) => join(sourceRoot, "data", importPath))
     .filter((filePath) => existsSync(filePath));
@@ -118,42 +118,50 @@ for (const slug of uniqueRegistrySlugs) {
   tools.push(record);
 }
 
-for (const slug of routeSlugs) {
-  if (!uniqueRegistrySlugs.includes(slug)) {
-    issues.push(`${slug}: route directory is missing from tools-registry.ts`);
-  }
+const orphanRoutes = routeSlugs.filter((slug) => !uniqueRegistrySlugs.includes(slug));
+for (const slug of orphanRoutes) {
+  issues.push(`${slug}: route exists in src/app/tools but is missing from src/lib/tools-registry.ts`);
 }
 
-const sourceChecks = [];
 if (checkSources) {
-  for (const tool of tools.filter((item) => item.sourceUrl)) {
-    sourceChecks.push(await checkUrl(tool.sourceUrl));
+  const urls = [...new Set(tools.map((tool) => tool.sourceUrl).filter(Boolean))];
+  const urlResults = new Map();
+  for (const url of urls) {
+    urlResults.set(url, await checkUrl(url));
   }
-  for (const result of sourceChecks.filter((item) => !item.reachable)) {
-    issues.push(`source URL is unreachable: ${result.url}`);
+  for (const tool of tools) {
+    if (tool.sourceUrl) {
+      tool.sourceCheck = urlResults.get(tool.sourceUrl);
+      if (!tool.sourceCheck.reachable) {
+        tool.status = tool.status === "ok" ? "review" : tool.status;
+        issues.push(`${tool.slug}: source URL check failed (${tool.sourceUrl})`);
+      }
+    }
   }
 }
 
-const report = {
+const summary = {
   generatedAt: today.toISOString(),
-  summary: {
-    registryTools: uniqueRegistrySlugs.length,
-    routeDirectories: routeSlugs.length,
-    errors: issues.filter((issue) => issue.includes("no matching route") || issue.includes("cannot be parsed") || issue.includes("missing from")).length,
-    staleOrReview: issues.filter((issue) => !issue.includes("no matching route") && !issue.includes("cannot be parsed") && !issue.includes("missing from")).length,
-  },
+  registryCount: uniqueRegistrySlugs.length,
+  routeCount: routeSlugs.length,
+  okCount: tools.filter((tool) => tool.status === "ok").length,
+  reviewCount: tools.filter((tool) => tool.status === "review").length,
+  staleCount: tools.filter((tool) => tool.status === "stale").length,
+  errorCount: tools.filter((tool) => tool.status === "error").length + orphanRoutes.length,
   issues,
-  sourceChecks,
   tools,
 };
 
 mkdirSync(reportRoot, { recursive: true });
-writeFileSync(join(reportRoot, "tool-audit.json"), `${JSON.stringify(report, null, 2)}\n`);
+writeFileSync(join(reportRoot, "tool-audit.json"), `${JSON.stringify(summary, null, 2)}\n`);
 
-console.log(`Audited ${report.summary.registryTools} registry tools and ${report.summary.routeDirectories} route directories.`);
-console.log(`Structural errors: ${report.summary.errors}; stale/review findings: ${report.summary.staleOrReview}.`);
-for (const issue of issues) console.log(`- ${issue}`);
+console.log(`Audited ${summary.registryCount} registered tools across ${summary.routeCount} route directories.`);
+console.log(`OK: ${summary.okCount} | Review: ${summary.reviewCount} | Stale: ${summary.staleCount} | Errors: ${summary.errorCount}`);
+if (issues.length) {
+  console.log("\nIssues requiring attention:");
+  for (const issue of issues) console.log(`- ${issue}`);
+}
 
-if (report.summary.errors > 0 || (strict && report.summary.staleOrReview > 0)) {
-  process.exitCode = 1;
+if (strict && summary.errorCount > 0) {
+  process.exit(1);
 }

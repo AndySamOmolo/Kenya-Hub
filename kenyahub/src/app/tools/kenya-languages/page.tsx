@@ -2,7 +2,7 @@
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import SearchInput from "@/components/ui/SearchInput";
 import { getSourcesForLanguage, LANGUAGE_SOURCES } from "@/data/language-sources";
-import { COURSE_REGISTRY } from "@/data/courses/registry";
+import { hasCourse as checkHasCourse } from "@/data/courses/metadata";
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
@@ -128,7 +128,7 @@ export default function KenyaLanguagesPage() {
             const family = data.families.find((f) => f.id === lang.family);
             const langId = normalizeLanguageId(lang.name);
             const sources = getSourcesForLanguage(langId);
-            const hasCourse = Boolean(COURSE_REGISTRY[langId]);
+            const hasCourse = checkHasCourse(langId);
             return (
               <div key={lang.name} className="bg-bg-card border border-border rounded-xl p-4 flex flex-col justify-between">
                 <div>

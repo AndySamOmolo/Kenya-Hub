@@ -30,7 +30,9 @@ import vaccinesData from "../shared/data/vaccination-schedule.json";
 import bodiesData from "../shared/data/professional-bodies.json";
 import fertilizerData from "../shared/data/fertilizer-subsidy.json";
 import languagesData from "../shared/data/kenya-languages.json";
+import { useRouter } from "expo-router";
 import { getSourcesForLanguage, normalizeLanguageId } from "../shared/data/language-sources";
+import { hasCourse } from "../shared/data/courses/metadata";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
@@ -45,7 +47,9 @@ const HOSPITAL_LEVELS_INFO = [
 ];
 
 export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; onScrollToTop?: () => void }) {
+  const router = useRouter();
   const { theme, styles } = useDynamicStyles(createStyles);
+  const [expandedLangSources, setExpandedLangSources] = useState<Record<string, boolean>>({});
   const [search, setSearch] = useState("");
 
   // Shared filter/sort states used across specific tools
@@ -1805,41 +1809,93 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
 
         <Text style={styles.subHeading}>Kenyan Languages ({filtered.length})</Text>
 
-        {filtered.map((l: any, idx: number) => (
-          <View key={idx} style={styles.card}>
-            <View style={styles.cardTop}>
-              <View style={{ flex: 1 }}>
-                <Text style={styles.cardTitle}>{l.name}</Text>
-                <Text style={styles.cardSubtitle}>{l.notes}</Text>
-              </View>
-              <View style={[styles.badge, { backgroundColor: `${theme.gold}20`, borderColor: theme.gold }]}>
-                <Text style={[styles.badgeText, { color: theme.gold }]}>{l.family}</Text>
-              </View>
-            </View>
-            <View style={styles.detailsList}>
-              <View style={styles.detailRow}>
-                <Text style={styles.detailLabel}>Estimated Speakers:</Text>
-                <Text style={styles.detailValue}>{Number(l.speakers).toLocaleString()}</Text>
-              </View>
-              <View style={styles.detailRow}>
-                <Text style={styles.detailLabel}>Primary Counties:</Text>
-                <Text style={styles.detailValue}>{(l.counties || []).join(", ")}</Text>
-              </View>
-              {getSourcesForLanguage(normalizeLanguageId(l.name)).length > 0 && (
-                <View style={{ marginTop: 6, paddingTop: 6, borderTopWidth: 1, borderTopColor: theme.border }}>
-                  <Text style={{ fontSize: 10, fontWeight: "800", color: theme.gold, textTransform: "uppercase" }}>
-                    Historical Reference Sources ({getSourcesForLanguage(normalizeLanguageId(l.name)).length})
-                  </Text>
-                  {getSourcesForLanguage(normalizeLanguageId(l.name)).slice(0, 4).map((src: any) => (
-                    <Text key={src.id} style={{ fontSize: 10.5, color: theme.textSecondary, marginTop: 2 }}>
-                      • {src.title}
-                    </Text>
-                  ))}
+        {filtered.map((l: any, idx: number) => {
+          const langId = normalizeLanguageId(l.name);
+          const sources = getSourcesForLanguage(langId);
+          const courseAvailable = hasCourse(langId);
+          const isSourcesOpen = !!expandedLangSources[langId];
+          return (
+            <View key={idx} style={styles.card}>
+              <View style={styles.cardTop}>
+                <View style={{ flex: 1 }}>
+                  <Text style={styles.cardTitle}>{l.name}</Text>
+                  <Text style={styles.cardSubtitle}>{l.notes}</Text>
                 </View>
-              )}
+                <View style={[styles.badge, { backgroundColor: `${theme.gold}20`, borderColor: theme.gold }]}>
+                  <Text style={[styles.badgeText, { color: theme.gold }]}>{l.family}</Text>
+                </View>
+              </View>
+              <View style={styles.detailsList}>
+                <View style={styles.detailRow}>
+                  <Text style={styles.detailLabel}>Estimated Speakers:</Text>
+                  <Text style={styles.detailValue}>{Number(l.speakers).toLocaleString()}</Text>
+                </View>
+                <View style={styles.detailRow}>
+                  <Text style={styles.detailLabel}>Primary Counties:</Text>
+                  <Text style={styles.detailValue}>{(l.counties || []).join(", ")}</Text>
+                </View>
+                <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 8, marginTop: 8, paddingTop: 8, borderTopWidth: 1, borderTopColor: theme.border }}>
+                  {sources.length > 0 ? (
+                    <Pressable
+                      onPress={() =>
+                        setExpandedLangSources((prev) => ({
+                          ...prev,
+                          [langId]: !prev[langId],
+                        }))
+                      }
+                      style={{ flexDirection: "row", alignItems: "center", gap: 4, paddingVertical: 4 }}
+                    >
+                      <Ionicons name="library-outline" size={13} color={theme.gold} />
+                      <Text style={{ fontSize: 11, fontWeight: "700", color: theme.gold }}>
+                        {sources.length} Reference Source{sources.length > 1 ? "s" : ""}
+                      </Text>
+                      <Ionicons
+                        name={isSourcesOpen ? "chevron-up" : "chevron-down"}
+                        size={13}
+                        color={theme.gold}
+                      />
+                    </Pressable>
+                  ) : <View />}
+                  {courseAvailable && (
+                    <Pressable
+                      onPress={() =>
+                        router.push({
+                          pathname: "/tools/[slug]",
+                          params: { slug: "learn", lang: langId },
+                        })
+                      }
+                      style={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        gap: 5,
+                        backgroundColor: `${theme.gold}22`,
+                        borderColor: theme.gold,
+                        borderWidth: 1,
+                        paddingHorizontal: 10,
+                        paddingVertical: 5,
+                        borderRadius: 999,
+                      }}
+                    >
+                      <Ionicons name="school-outline" size={12} color={theme.gold} />
+                      <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>
+                        Learn {l.name.split("(")[0].trim()}
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
+                {isSourcesOpen && sources.length > 0 && (
+                  <View style={{ marginTop: 6, padding: 8, borderRadius: 8, backgroundColor: theme.bgPrimary }}>
+                    {sources.map((src: any) => (
+                      <Text key={src.id} style={{ fontSize: 10.5, color: theme.textSecondary, marginTop: 2 }}>
+                        • {src.title} ({src.authors}, {src.year})
+                      </Text>
+                    ))}
+                  </View>
+                )}
+              </View>
             </View>
-          </View>
-        ))}
+          );
+        })}
       </View>
     );
   }

@@ -18,7 +18,7 @@
   "categories": [
     {
       "id": "greetings",
-      "name": "Greetings & Common Phrases",
+      "name": "Greetings & Farewells",
       "icon": "👋",
       "entries": [
         {
@@ -249,7 +249,7 @@
     },
     {
       "id": "family",
-      "name": "People, Family & Kinship",
+      "name": "Family, People & Kinship",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
@@ -977,7 +977,7 @@
     },
     {
       "id": "nature",
-      "name": "Nature, Environment & Time",
+      "name": "Nature, Environment & Geography",
       "icon": "🌍",
       "entries": [
         {
@@ -1929,7 +1929,7 @@
     },
     {
       "id": "food",
-      "name": "Food, Agriculture & Home",
+      "name": "Food, Drink & Agriculture",
       "icon": "🌾",
       "entries": [
         {
@@ -2138,6 +2138,566 @@
       ]
     },
     {
+      "id": "adjectives",
+      "name": "Adjectives, Qualities & Grammar",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Small",
+          "translation": "oti (f. kiti)",
+          "pronunciation": "oh-tee / kee-tee",
+          "context": "Hinde 1901 & Hollis 1905 North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Big",
+          "translation": "sapuk (kitok)",
+          "pronunciation": "sah-pook / kee-tohk",
+          "context": "Hinde 1901 & Hollis 1905 North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "torono (pl. torok)",
+          "pronunciation": "toh-roh-noh",
+          "context": "Hinde 1901 & Hollis 1905 North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "supat (sidai)",
+          "pronunciation": "soo-paht / see-dah-ee",
+          "context": "Hinde 1901 & Hollis 1905 North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "oibor (naibor)",
+          "pronunciation": "oy-bohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "orok (narok)",
+          "pronunciation": "oh-rohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "onyokie (nanyokie)",
+          "pronunciation": "oh-nyoh-kyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Gazella granti",
+          "translation": "Olwărgas",
+          "pronunciation": "olwărgas",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Gazella thomsoni",
+          "translation": "El oili",
+          "pronunciation": "el oili",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cobus thomasi",
+          "translation": "Olgipulugen",
+          "pronunciation": "olgipulugen",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Oribi",
+          "translation": "Ampūa",
+          "pronunciation": "ampūa",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Madoqua",
+          "translation": "Sunu",
+          "pronunciation": "sunu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "Ωmūiny'",
+          "pronunciation": "ωmūiny'",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Pallah",
+          "translation": "Endarawit",
+          "pronunciation": "endarawit",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Duyker",
+          "translation": "Embutuwin",
+          "pronunciation": "embutuwin",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Ambai",
+          "pronunciation": "ambai",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Axe",
+          "translation": "Ndωllo",
+          "pronunciation": "ndωllo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Olmūnyēi",
+          "pronunciation": "olmūnyēi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Body",
+          "translation": "Os-sessin",
+          "pronunciation": "os-sessin",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "Angawu",
+          "pronunciation": "angawu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Brains",
+          "translation": "El ogoinya",
+          "pronunciation": "el ogoinya",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Buttocks",
+          "translation": "Ol giras",
+          "pronunciation": "ol giras",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Canoe",
+          "translation": "Emboyuwet",
+          "pronunciation": "emboyuwet",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "(white)",
+          "translation": "ĕñōni ĕpor",
+          "pronunciation": "ĕñōni ĕpor",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bullock",
+          "translation": "giteñ",
+          "pronunciation": "giteñ",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth",
+          "translation": "Anañka",
+          "pronunciation": "anañka",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Colobus",
+          "translation": "Ol goroi",
+          "pronunciation": "ol goroi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Country",
+          "translation": "Añkōp",
+          "pronunciation": "añkōp",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Daylight",
+          "translation": "Damma",
+          "pronunciation": "damma",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Devil",
+          "translation": "Ol oiyirwa, manañani",
+          "pronunciation": "ol oiyirwa,  manañani",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Doctor",
+          "translation": "Ol leiboni (medicine-man)",
+          "pronunciation": "ol leiboni (medicine-man)",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Door",
+          "translation": "Kotokaji",
+          "pronunciation": "kotokaji",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Dream",
+          "translation": "Edatedata",
+          "pronunciation": "edatedata",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Drum",
+          "translation": "Ululul",
+          "pronunciation": "ululul",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "Ol-mossóri",
+          "pronunciation": "ol-mossóri",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Excrement",
+          "translation": "Ngik (of men), Modī́ (of oxen)",
+          "pronunciation": "ngik (of men), modī́ (of oxen)",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "Ngōmom",
+          "pronunciation": "ngōmom",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fear",
+          "translation": "Kurét",
+          "pronunciation": "kurét",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ghost",
+          "translation": "Ol oipi",
+          "pronunciation": "ol oipi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Gun",
+          "translation": "Entiol",
+          "pronunciation": "entiol",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "Ol maqau",
+          "pronunciation": "ol maqau",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Horn",
+          "translation": "Mōwarak",
+          "pronunciation": "mōwarak",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Añ kaji",
+          "pronunciation": "añ kaji",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyphœne palm",
+          "translation": "Ol tuqai",
+          "pronunciation": "ol tuqai",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron",
+          "translation": "Señgeñgḗ",
+          "pronunciation": "señgeñgḗ",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ivory",
+          "translation": "Elalla ol dōme",
+          "pronunciation": "elalla ol dōme",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Knife",
+          "translation": "Ol lalem",
+          "pronunciation": "ol lalem",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Lips",
+          "translation": "Añ gotuk",
+          "pronunciation": "añ gotuk",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Magic",
+          "translation": "Embanīt",
+          "pronunciation": "embanīt",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Men",
+          "translation": "Ol doñani; El toñana",
+          "pronunciation": "ol doñani; el toñana",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Penis",
+          "translation": "En jabo",
+          "pronunciation": "en jabo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Pig",
+          "translation": "Ol bitirr",
+          "pronunciation": "ol bitirr",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Place",
+          "translation": "Añgob",
+          "pronunciation": "añgob",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Rat",
+          "translation": "Nderωni",
+          "pronunciation": "nderωni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Road",
+          "translation": "Añgoitoi",
+          "pronunciation": "añgoitoi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "(my)",
+          "translation": "Eñgaraiai",
+          "pronunciation": "eñgaraiai",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Song",
+          "translation": "Os singolio",
+          "pronunciation": "os singolio",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Stick",
+          "translation": "Eñ udi; Eñ usidin (pl.)",
+          "pronunciation": "eñ udi; eñ usidin (pl.)",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Testicles",
+          "translation": "El derege",
+          "pronunciation": "el derege",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thief",
+          "translation": "Ol aburωni",
+          "pronunciation": "ol aburωni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thing",
+          "translation": "Entωki",
+          "pronunciation": "entωki",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tobacco",
+          "translation": "Or gumbao",
+          "pronunciation": "or gumbao",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "To-day",
+          "translation": "Taata",
+          "pronunciation": "taata",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "molar",
+          "translation": "Entakolla",
+          "pronunciation": "entakolla",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Town or settlement",
+          "translation": "Manyata (warriors'), Añgañ (tribal)",
+          "pronunciation": "manyata (warriors'), añgañ (tribal)",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Twins",
+          "translation": "El mau",
+          "pronunciation": "el mau",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Urine",
+          "translation": "Eñ golak",
+          "pronunciation": "eñ golak",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "War",
+          "translation": "En dyore (or Jore)",
+          "pronunciation": "en dyore (or jore)",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Wart hog",
+          "translation": "Ol gūya",
+          "pronunciation": "ol gūya",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "White man",
+          "translation": "Lesuñgu",
+          "pronunciation": "lesuñgu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Witch",
+          "translation": "Ol-labanani",
+          "pronunciation": "ol-labanani",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Eñgitok",
+          "pronunciation": "eñgitok",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "young",
+          "translation": "Endīto",
+          "pronunciation": "endīto",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "Ol lari; El larin, pl",
+          "pronunciation": "ol lari; el larin, pl",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven",
+          "translation": "Tomon obω",
+          "pronunciation": "tomon obω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Sixty",
+          "translation": "otomon",
+          "pronunciation": "otomon",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Seventy",
+          "translation": "obikitam",
+          "pronunciation": "obikitam",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Eighty",
+          "translation": "otomoni uni",
+          "pronunciation": "otomoni uni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ninety",
+          "translation": "artam",
+          "pronunciation": "artam",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
       "id": "culture-history",
       "name": "Culture, Clans & Historical Corpus",
       "icon": "📜",
@@ -2151,7 +2711,7 @@
         },
         {
           "english": "Major Samburu Phratries / Clan Sections (Masula, Pisikishu, Nyaparai, Lorogishu, Longeli,ukumai)",
-          "translation": "9 Sambur Geographical Divisions & Chiefs (Hobley 1910, p. 159): (1) Pusigishu ('grey cattle', Chief Ol-Lelelit), (2) Masola (Chief Lal taram), (3) Lukumai (Chief Ol Emantili), (4) L'orogishu / L'orogichu ('black cattle', Chief Ol Arūs), (5) El Doiju (Chief Paramorijo), (6) El Mwesi (Chief Larandilin), (7) Loimusi (Chief Lanawasai), (8) Longeli (Chief Leiguruguru), (9) Nyabarei (Chief Lolegul) • 3 Sambur Gilat / Orōt Founded by Chieftainess Sitat (p. 159): (1) Sitat (dominant clan), (2) Ol Lesilali, (3) Maletis; Sambur Laibon: Ol Segeteti • 6 Laikipiak Divisions (pp. 159–160): Memerūn, Momonyōt, Il Morijo, El Aibaratari, Muzara, Lanat (Chief Lengila, driven from Kirimar/Irimba by Sitaa/El Duju Bworana) & 3 Laikipiak Gilat: Bartaolin, Sioma, Kisengeni; plus El Keriet hunters of Mariti",
+          "translation": "9 Sambur Geographical Divisions & Chiefs (Hobley 1910, p. 159): (1) Pusigishu ('grey cattle', Chief Ol-Lelelit), (2) Masola (Chief Lal taram), (3) Lukumai (Chief Ol Emantili), (4) L'orogishu / L'or...",
           "pronunciation": "pu-si-gi-shu, ma-so-la, lu-ku-mai, lo-ro-gi-shu, si-tat, ol le-si-la-li, ma-le-tis",
           "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 159–160",
           "audioFile": null
@@ -2228,16 +2788,16 @@
         },
         {
           "english": "The Mogogodo (Mokogodo / Il Mwesi / Yaaku) Remnant Vocabulary, Numerals & Verb Paradigms Recorded by C. W. Hobley (1910, pp. 146–155)",
-          "translation": "Chiefs Parmashu & Matungi (dwelling at Pore, Doinyo Longishu & Mgur Nanyori; consulting Mweru laibon Lakaibe) • Numerals (p. 153): Wēhet (1), Chei (2), Hāāt (3), Shuen (4), Hobi (5), Kapūn / Apūn (10), Teta (100); Concords (p. 154): Kib wehet / kesei wehet (1 man) → Ke chei (2 men) → Kha haat (3 men), Damatut wehetu (1 woman) → Damatuti chei (2 women), Sungai kiwehet (1 lion) → Sungai muchei/kechei (2 lions) • Core Lexicon (pp. 147–152): Sokho / Engai (Supreme Being), Tezo (sun), Lei (moon), Eso (star), Soho (rain), Antu (water), Ando (lake), Iku (fire), Tirri (earth), Dimin (country), Kaiet (hill/big forest), Keded (tree), Chōl mokōt (wild fig tree), Iei/Sei (man), Oromishi (moran), Roshei (elder), Damatut (woman), Tasat (old woman), Utei (boy), Kerai/Eta (girl), Pashi (own father) vs. Payisi (another's father), Iyo (own mother) vs. Itigarai (another's mother), Tei (brother), Tō (sister), Mitei (head), Ila (eyes), Nibe (ear), Nugha (nose), Injīt (teeth), Erei (tongue/age-set), Ichei (heart), Sogo (blood), Mucho (bone), Wuat/Wāt (cow), Rehei (heifer), Oto (goat), Abūr (sheep), Laūr (camel), Kwehen (dog), Sungai (lion), Shibin (leopard), Sogome (elephant), Orset (rhino), Pie (buffalo), Tōr (spear), Shutei (sword), Reget (shield), Paha (bow), Lah (arrows), Hai (hut), Luata (village), Keshoboshon / Aishei (salutation) • Verb Paradigms (pp. 154–155): Ndeta / Egeto giheji / Egitai / Egeto gihechen (I/he/we/they eat), Ngeheno / Geheno / Cheheno / Kegeheni / Chegehen (know; neg. Ishahanu), Kongo / Kagu / Ke / Kege / Kabu shoboshon(adi) (am/art/is/are good; bad = Ke tepiter), Nalehe / Alehe / Nalehenu / Lehei (coming), Nukha antu (I drink water)",
+          "translation": "Chiefs Parmashu & Matungi (dwelling at Pore, Doinyo Longishu & Mgur Nanyori; consulting Mweru laibon Lakaibe) • Numerals (p. 153): Wēhet (1), Chei (2), Hāāt (3), Shuen (4), Hobi (5), Kapūn / Apūn (...",
           "pronunciation": "mo-go-go-do / we-het, chei, haat, shu-en, ho-bi, ka-pun, te-ta / ke-sho-bo-shon / so-kho",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. V, pp. 146–155",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. V, pp. 146–155 | Additional items: Verb Paradigms (pp. 154–155): Ndeta / Egeto giheji / Egitai / Egeto gihechen (I/he/we/they eat), Ngeheno / Geheno / Cheheno / Kegeheni...",
           "audioFile": null
         },
         {
-          "english": "Sir Harry Johnston's (1902, Vol. II, pp. 798, 802, 843, 849–850) Account of the Burkeneji (Samburu / Loiborkeneji) & Lake Rudolf Pastoralists",
-          "translation": "Burkeneji (Loiborkeneji / Samburu): described by Johnston (pp. 798, 802, 843) as the most primitive branch of the Masai stock, driven some 50 years prior by the Turkana-Sūk from the Kerio Valley and western coast-lands of Lake Rudolf to the country south and south-east of Lake Rudolf; they intermediary-traded camels from Somali/Rendille peoples east of Lake Rudolf to the Turkana (p. 849) and use the characteristic Lake Rudolf concave-sided four-pointed hide shield with a central bow-shaped wooden midrib (p. 850, shared with Turkana, Sūk, and Elmolo)",
+          "english": "Sir Harry Johnston's",
+          "translation": "Burkeneji (Loiborkeneji / Samburu): described by Johnston (pp. 798, 802, 843) as the most primitive branch of the Masai stock",
           "pronunciation": "bur-ke-ne-ji / loi-bor-ke-ne-ji",
-          "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 798, 802, 843, 849–850",
+          "context": "1902, Vol. II, pp. 798, 802, 843, 849–850) Account of the Burkeneji (Samburu / Loiborkeneji) & Lake Rudolf Pastoralists — Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 798, 802, 843, 849–850 — driven some 50 years prior by th...",
           "audioFile": null
         },
         {
@@ -4534,566 +5094,6 @@
           "translation": "Injan",
           "pronunciation": "inj-an",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
-          "audioFile": null
-        }
-      ]
-    },
-    {
-      "id": "adjectives",
-      "name": "Adjectives",
-      "icon": "✨",
-      "entries": [
-        {
-          "english": "Small",
-          "translation": "oti (f. kiti)",
-          "pronunciation": "oh-tee / kee-tee",
-          "context": "Hinde 1901 & Hollis 1905 North Maa",
-          "audioFile": null
-        },
-        {
-          "english": "Big",
-          "translation": "sapuk (kitok)",
-          "pronunciation": "sah-pook / kee-tohk",
-          "context": "Hinde 1901 & Hollis 1905 North Maa",
-          "audioFile": null
-        },
-        {
-          "english": "Bad",
-          "translation": "torono (pl. torok)",
-          "pronunciation": "toh-roh-noh",
-          "context": "Hinde 1901 & Hollis 1905 North Maa",
-          "audioFile": null
-        },
-        {
-          "english": "Good",
-          "translation": "supat (sidai)",
-          "pronunciation": "soo-paht / see-dah-ee",
-          "context": "Hinde 1901 & Hollis 1905 North Maa",
-          "audioFile": null
-        },
-        {
-          "english": "White",
-          "translation": "oibor (naibor)",
-          "pronunciation": "oy-bohr",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Black",
-          "translation": "orok (narok)",
-          "pronunciation": "oh-rohk",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Red",
-          "translation": "onyokie (nanyokie)",
-          "pronunciation": "oh-nyoh-kyeh",
-          "context": "Verified comparative entry across Kenyan nilotic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Gazella granti",
-          "translation": "Olwărgas",
-          "pronunciation": "olwărgas",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Gazella thomsoni",
-          "translation": "El oili",
-          "pronunciation": "el oili",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Cobus thomasi",
-          "translation": "Olgipulugen",
-          "pronunciation": "olgipulugen",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Oribi",
-          "translation": "Ampūa",
-          "pronunciation": "ampūa",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Madoqua",
-          "translation": "Sunu",
-          "pronunciation": "sunu",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Rhinoceros",
-          "translation": "Ωmūiny'",
-          "pronunciation": "ωmūiny'",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Pallah",
-          "translation": "Endarawit",
-          "pronunciation": "endarawit",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Duyker",
-          "translation": "Embutuwin",
-          "pronunciation": "embutuwin",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Arrow",
-          "translation": "Ambai",
-          "pronunciation": "ambai",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Axe",
-          "translation": "Ndωllo",
-          "pronunciation": "ndωllo",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Beard",
-          "translation": "Olmūnyēi",
-          "pronunciation": "olmūnyēi",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Body",
-          "translation": "Os-sessin",
-          "pronunciation": "os-sessin",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Bow",
-          "translation": "Angawu",
-          "pronunciation": "angawu",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Brains",
-          "translation": "El ogoinya",
-          "pronunciation": "el ogoinya",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Buttocks",
-          "translation": "Ol giras",
-          "pronunciation": "ol giras",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Canoe",
-          "translation": "Emboyuwet",
-          "pronunciation": "emboyuwet",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "(white)",
-          "translation": "ĕñōni ĕpor",
-          "pronunciation": "ĕñōni ĕpor",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Bullock",
-          "translation": "giteñ",
-          "pronunciation": "giteñ",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Cloth",
-          "translation": "Anañka",
-          "pronunciation": "anañka",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Colobus",
-          "translation": "Ol goroi",
-          "pronunciation": "ol goroi",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Country",
-          "translation": "Añkōp",
-          "pronunciation": "añkōp",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Daylight",
-          "translation": "Damma",
-          "pronunciation": "damma",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Devil",
-          "translation": "Ol oiyirwa, manañani",
-          "pronunciation": "ol oiyirwa,  manañani",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Doctor",
-          "translation": "Ol leiboni (medicine-man)",
-          "pronunciation": "ol leiboni (medicine-man)",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Door",
-          "translation": "Kotokaji",
-          "pronunciation": "kotokaji",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Dream",
-          "translation": "Edatedata",
-          "pronunciation": "edatedata",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Drum",
-          "translation": "Ululul",
-          "pronunciation": "ululul",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Egg",
-          "translation": "Ol-mossóri",
-          "pronunciation": "ol-mossóri",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Excrement",
-          "translation": "Ngik (of men), Modī́ (of oxen)",
-          "pronunciation": "ngik (of men), modī́ (of oxen)",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Face",
-          "translation": "Ngōmom",
-          "pronunciation": "ngōmom",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Fear",
-          "translation": "Kurét",
-          "pronunciation": "kurét",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Ghost",
-          "translation": "Ol oipi",
-          "pronunciation": "ol oipi",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Gun",
-          "translation": "Entiol",
-          "pronunciation": "entiol",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Hippopotamus",
-          "translation": "Ol maqau",
-          "pronunciation": "ol maqau",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Horn",
-          "translation": "Mōwarak",
-          "pronunciation": "mōwarak",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "House",
-          "translation": "Añ kaji",
-          "pronunciation": "añ kaji",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Hyphœne palm",
-          "translation": "Ol tuqai",
-          "pronunciation": "ol tuqai",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Iron",
-          "translation": "Señgeñgḗ",
-          "pronunciation": "señgeñgḗ",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Ivory",
-          "translation": "Elalla ol dōme",
-          "pronunciation": "elalla ol dōme",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Knife",
-          "translation": "Ol lalem",
-          "pronunciation": "ol lalem",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Lips",
-          "translation": "Añ gotuk",
-          "pronunciation": "añ gotuk",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Magic",
-          "translation": "Embanīt",
-          "pronunciation": "embanīt",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Man / Men",
-          "translation": "Ol doñani; El toñana",
-          "pronunciation": "ol doñani; el toñana",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Penis",
-          "translation": "En jabo",
-          "pronunciation": "en jabo",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Pig",
-          "translation": "Ol bitirr",
-          "pronunciation": "ol bitirr",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Place",
-          "translation": "Añgob",
-          "pronunciation": "añgob",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Rat",
-          "translation": "Nderωni",
-          "pronunciation": "nderωni",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Road",
-          "translation": "Añgoitoi",
-          "pronunciation": "añgoitoi",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "(my)",
-          "translation": "Eñgaraiai",
-          "pronunciation": "eñgaraiai",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Song",
-          "translation": "Os singolio",
-          "pronunciation": "os singolio",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Stick",
-          "translation": "Eñ udi; Eñ usidin (pl.)",
-          "pronunciation": "eñ udi; eñ usidin (pl.)",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Testicles",
-          "translation": "El derege",
-          "pronunciation": "el derege",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Thief",
-          "translation": "Ol aburωni",
-          "pronunciation": "ol aburωni",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Thing",
-          "translation": "Entωki",
-          "pronunciation": "entωki",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Tobacco",
-          "translation": "Or gumbao",
-          "pronunciation": "or gumbao",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "To-day",
-          "translation": "Taata",
-          "pronunciation": "taata",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "molar",
-          "translation": "Entakolla",
-          "pronunciation": "entakolla",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Town or settlement",
-          "translation": "Manyata (warriors'), Añgañ (tribal)",
-          "pronunciation": "manyata (warriors'), añgañ (tribal)",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Twins",
-          "translation": "El mau",
-          "pronunciation": "el mau",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Urine",
-          "translation": "Eñ golak",
-          "pronunciation": "eñ golak",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "War",
-          "translation": "En dyore (or Jore)",
-          "pronunciation": "en dyore (or jore)",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Wart hog",
-          "translation": "Ol gūya",
-          "pronunciation": "ol gūya",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "White man",
-          "translation": "Lesuñgu",
-          "pronunciation": "lesuñgu",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "Ol-labanani",
-          "pronunciation": "ol-labanani",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Woman",
-          "translation": "Eñgitok",
-          "pronunciation": "eñgitok",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "young",
-          "translation": "Endīto",
-          "pronunciation": "endīto",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Year",
-          "translation": "Ol lari; El larin, pl",
-          "pronunciation": "ol lari; el larin, pl",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Eleven",
-          "translation": "Tomon obω",
-          "pronunciation": "tomon obω",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Sixty",
-          "translation": "otomon",
-          "pronunciation": "otomon",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Seventy",
-          "translation": "obikitam",
-          "pronunciation": "obikitam",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Eighty",
-          "translation": "otomoni uni",
-          "pronunciation": "otomoni uni",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
-          "english": "Ninety",
-          "translation": "artam",
-          "pronunciation": "artam",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         }
       ]
