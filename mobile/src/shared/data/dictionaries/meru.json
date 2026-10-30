@@ -22,35 +22,35 @@
         {
           "english": "Thank you",
           "translation": "Nĩwega (Nĩwega mũno)",
-          "pronunciation": "nee-weh-gah moo-noh",
+          "pronunciation": "niwega",
           "context": "Kĩmĩĩrũ expression of gratitude",
           "audioFile": null
         },
         {
           "english": "Good morning",
           "translation": "Ũrĩ mwega rũũciĩni? / Muuga!",
-          "pronunciation": "oo-ree mweh-gah roo-chee-nee",
+          "pronunciation": "uri mwega ruuciini",
           "context": "Kĩmĩĩrũ morning greeting",
           "audioFile": null
         },
         {
           "english": "Hello",
           "translation": "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
-          "pronunciation": "moo-gah / oo-ree mweh-gah",
+          "pronunciation": "muuga",
           "context": "Standard Kĩmĩĩrũ & Mount Kenya salutation",
           "audioFile": null
         },
         {
           "english": "How are you? (Imenti, Chuka, Tharaka; Tigania: Muua)",
           "translation": "Muuga? / Nĩatĩa ũrĩ?",
-          "pronunciation": "Muuga? / Nĩatĩa ũrĩ?",
+          "pronunciation": "muuga",
           "context": "Wikipedia Meru language — Sample phrases & Dialects",
           "audioFile": null
         },
         {
           "english": "How are you doing?",
           "translation": "Ũrĩ ũmwega?",
-          "pronunciation": "Ũrĩ ũmwega?",
+          "pronunciation": "uri umwega",
           "context": "Wikipedia Meru language — Sample phrases",
           "audioFile": null
         },
@@ -83,9 +83,9 @@
           "audioFile": null
         },
         {
-          "english": "friend (pl. friends)",
+          "english": "Friend (pl. friends)",
           "translation": "mũrata (pl. arata)",
-          "pronunciation": "mũrata (pl. arata)",
+          "pronunciation": "murata",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
@@ -99,7 +99,7 @@
         {
           "english": "Black",
           "translation": "-irũ (njirũ)",
-          "pronunciation": "ee-roo",
+          "pronunciation": "-iru",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         },
@@ -127,7 +127,7 @@
         {
           "english": "Stone / Rock",
           "translation": "ĩiga (pl. maiga)",
-          "pronunciation": "ee-gah / mah-ee-gah",
+          "pronunciation": "iiga",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         },
@@ -169,14 +169,14 @@
         {
           "english": "How are you? (I am fine)",
           "translation": "Ũrĩ mwega? (resp. Nĩ mwega)",
-          "pronunciation": "ũrĩ mwega? (resp. nĩ mwega)",
+          "pronunciation": "uri mwega",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
           "english": "How are you all? (We are fine)",
           "translation": "Mũrĩ ega? (resp. Tũrĩ ega)",
-          "pronunciation": "mũrĩ ega? (resp. tũrĩ ega)",
+          "pronunciation": "muri ega",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
@@ -204,7 +204,7 @@
         {
           "english": "Ten",
           "translation": "ikũmi (pl. mĩrongo)",
-          "pronunciation": "ee-koo-mee",
+          "pronunciation": "ikumi",
           "context": "Johnston 1919 p. 72 #11a Meru",
           "audioFile": null
         },
@@ -280,71 +280,64 @@
         },
         {
           "english": "Twenty",
-          "translation": "Mī-rōṅgω ī-gīrī",
-          "pronunciation": "mī-rōṅgω ī-gīrī",
+          "translation": "Mī-rōnggo ī-gīrī",
+          "pronunciation": "mī-rōnggo ī-gīrī",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Thirty",
-          "translation": "Mī-rōṅgω ī-tātū",
-          "pronunciation": "mī-rōṅgω ī-tātū",
+          "translation": "Mī-rōnggo ī-tātū",
+          "pronunciation": "mī-rōnggo ī-tātū",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Forty",
-          "translation": "Mī-rōṅgω ī-nā",
-          "pronunciation": "mī-rōṅgω ī-nā",
+          "translation": "Mī-rōnggo ī-nā",
+          "pronunciation": "mī-rōnggo ī-nā",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Fifty",
-          "translation": "Mī-rōṅgω ī-tānω",
-          "pronunciation": "mī-rōṅgω ī-tānω",
+          "translation": "Mī-rōnggo ī-tāno",
+          "pronunciation": "mī-rōnggo ī-tāno",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Hundred",
           "translation": "I-gāna; ma-gāna",
-          "pronunciation": "i-gāna; ma-gāna",
+          "pronunciation": "i-gana",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Thousand",
           "translation": "Ngīrī; ma-ngīrī",
-          "pronunciation": "ngīrī; ma-ngīrī",
+          "pronunciation": "ngiri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "All",
-          "translation": "-ōþē",
-          "pronunciation": "-ōþē",
+          "translation": "-ōthē",
+          "pronunciation": "-othe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Plenty, many",
-          "translation": "-īṅgī",
-          "pronunciation": "-īṅgī",
+          "translation": "-īnggī",
+          "pronunciation": "-inggi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
-          "english": "one (1), two (2), three (3), four (4), five (5)",
-          "translation": "ĩmwe, igĩrĩ, ithatũ, inya, ithano",
-          "pronunciation": "ĩmwe, igĩrĩ, ithatũ, inya, ithano",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "six (6), seven (7), eight (8), nine (9), ten (10)",
+          "english": "Six (6), seven (7), eight (8), nine (9), ten (10)",
           "translation": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
-          "pronunciation": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
+          "pronunciation": "ithathatu mugwanja inyanya kenda ikumi",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
@@ -372,7 +365,7 @@
         {
           "english": "Night",
           "translation": "ũtukũ",
-          "pronunciation": "oo-too-koo",
+          "pronunciation": "utuku",
           "context": "Johnston 1919 p. 69 #11a Meru",
           "audioFile": null
         },
@@ -386,7 +379,7 @@
         {
           "english": "House",
           "translation": "nyomba (mũciĩ = homestead)",
-          "pronunciation": "nyohm-bah / moo-chee",
+          "pronunciation": "nyomba",
           "context": "Johnston 1919 p. 68 #11a Meru",
           "audioFile": null
         },
@@ -428,7 +421,7 @@
         {
           "english": "Child",
           "translation": "mwana (pl. aana / baana) / kaana (pl. tũana)",
-          "pronunciation": "mwah-nah / kah-nah",
+          "pronunciation": "mwana",
           "context": "Johnston 1919 p. 66 #11a Meru",
           "audioFile": null
         },
@@ -449,7 +442,7 @@
         {
           "english": "Mother",
           "translation": "maitũ / ng'ina (nyina)",
-          "pronunciation": "mah-ee-too / ngee-nah",
+          "pronunciation": "maitu",
           "context": "Johnston 1919 p. 68 #11a Meru",
           "audioFile": null
         },
@@ -463,56 +456,56 @@
         {
           "english": "Give me cassava",
           "translation": "Ndũmia mũanga (pl. mĩanga)",
-          "pronunciation": "Ndũmia mũanga (pl. mĩanga)",
+          "pronunciation": "ndumia muanga",
           "context": "Wikipedia Meru language — Sample phrases",
           "audioFile": null
         },
         {
           "english": "Person / human (Class 1/2: Mũ-/Ba-)",
           "translation": "Muntũ (pl. Antũ)",
-          "pronunciation": "Muntũ (pl. Antũ)",
+          "pronunciation": "muntu",
           "context": "Wikipedia Meru language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Elder (Class 1/2: Mũkũrũ / Akũrũ)",
           "translation": "Mũkũrũ (pl. Akũrũ)",
-          "pronunciation": "Mũkũrũ (pl. Akũrũ)",
+          "pronunciation": "mukuru",
           "context": "Wikipedia Meru language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Child / small child (Class 12/13: Ka-/Tũ-)",
           "translation": "Kana (pl. Twana)",
-          "pronunciation": "Kana (pl. Twana)",
+          "pronunciation": "kana",
           "context": "Wikipedia Meru language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Home / homestead (Imenti/Chuka/Tharaka: Mũciĩ / Nja)",
           "translation": "Mũciĩ / Nja",
-          "pronunciation": "Mũciĩ / Nja",
+          "pronunciation": "mucii",
           "context": "Wikipedia Meru language — Dialects",
           "audioFile": null
         },
         {
           "english": "Tree (Class 3/4: Mũ-/Mĩ-)",
           "translation": "Mũti (pl. Mĩtĩ)",
-          "pronunciation": "Mũti (pl. Mĩtĩ)",
+          "pronunciation": "muti",
           "context": "Wikipedia Meru language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Eye (Class 5/6: Ri-/Ma-)",
           "translation": "Riitho (pl. Meetho)",
-          "pronunciation": "Riitho (pl. Meetho)",
+          "pronunciation": "riitho",
           "context": "Wikipedia Meru language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Finger (Class 7/8: Kĩ-/Bĩ-)",
           "translation": "Kĩara (pl. Bĩara)",
-          "pronunciation": "Kĩara (pl. Bĩara)",
+          "pronunciation": "kiara",
           "context": "Wikipedia Meru language — Noun classes",
           "audioFile": null
         },
@@ -526,14 +519,14 @@
         {
           "english": "Tongue (Class 11/10: Rũ-/N-)",
           "translation": "Rũreme (pl. Ndeme)",
-          "pronunciation": "Rũreme (pl. Ndeme)",
+          "pronunciation": "rureme",
           "context": "Wikipedia Meru language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Porridge / gruel (Class 14: Ũ-/Bũ-)",
           "translation": "Ũcũrũ",
-          "pronunciation": "Ũcũrũ",
+          "pronunciation": "ucuru",
           "context": "Wikipedia Meru language — Noun classes",
           "audioFile": null
         },
@@ -547,7 +540,7 @@
         {
           "english": "Water",
           "translation": "Rũũji / Rũĩ / Rũũyĩ",
-          "pronunciation": "Rũũji / Rũĩ / Rũũyĩ",
+          "pronunciation": "ruuji",
           "context": "Wikipedia Meru language — Dialects",
           "audioFile": null
         },
@@ -559,364 +552,364 @@
           "audioFile": null
         },
         {
-          "english": "man, husband",
+          "english": "Man, husband",
           "translation": "mũrũme (pl. arũme)",
-          "pronunciation": "mũrũme (pl. arũme)",
+          "pronunciation": "murume",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "woman, wife",
+          "english": "Woman, wife",
           "translation": "mũka (pl. aka) / mũtumĩĩa",
-          "pronunciation": "mũka (pl. aka) / mũtumĩĩa",
+          "pronunciation": "muka",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "child (pl. children)",
+          "english": "Child (pl. children)",
           "translation": "mwana (pl. ciana / aana)",
-          "pronunciation": "mwana (pl. ciana / aana)",
+          "pronunciation": "mwana",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "young man, warrior",
+          "english": "Young man, warrior",
           "translation": "mwanake (pl. anake)",
-          "pronunciation": "mwanake (pl. anake)",
+          "pronunciation": "mwanake",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "young woman, maiden",
+          "english": "Young woman, maiden",
           "translation": "mwĩrĩtu (pl. aĩrĩtu)",
-          "pronunciation": "mwĩrĩtu (pl. aĩrĩtu)",
+          "pronunciation": "mwiritu",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "guest, visitor, stranger",
+          "english": "Guest, visitor, stranger",
           "translation": "mũgeni (pl. ageni)",
-          "pronunciation": "mũgeni (pl. ageni)",
+          "pronunciation": "mugeni",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "farmer, cultivator",
+          "english": "Farmer, cultivator",
           "translation": "mũrĩmi (pl. arĩmi)",
-          "pronunciation": "mũrĩmi (pl. arĩmi)",
+          "pronunciation": "murimi",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "teacher",
+          "english": "Teacher",
           "translation": "mũrutani (pl. arutani)",
-          "pronunciation": "mũrutani (pl. arutani)",
+          "pronunciation": "murutani",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "forest, woodland",
+          "english": "Forest, woodland",
           "translation": "mũrũrĩ (pl. mĩrũrĩ)",
-          "pronunciation": "mũrũrĩ (pl. mĩrũrĩ)",
+          "pronunciation": "mururi",
           "context": "Kîembu",
           "audioFile": null
         },
         {
-          "english": "river, stream",
+          "english": "River, stream",
           "translation": "rũũĩ (pl. njũũĩ)",
-          "pronunciation": "rũũĩ (pl. njũũĩ)",
+          "pronunciation": "ruui",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "water (Class 6)",
+          "english": "Water (Class 6)",
           "translation": "manjĩ / maĩ",
-          "pronunciation": "manjĩ / maĩ",
+          "pronunciation": "manji",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "rain",
+          "english": "Rain",
           "translation": "mbura",
           "pronunciation": "mbura",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "sun, day",
+          "english": "Sun, day",
           "translation": "riũa",
           "pronunciation": "riũa",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "moon, month",
+          "english": "Moon, month",
           "translation": "mweri (pl. mĩeri)",
-          "pronunciation": "mweri (pl. mĩeri)",
+          "pronunciation": "mweri",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "star, stars",
+          "english": "Star, stars",
           "translation": "njata",
           "pronunciation": "njata",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "fire",
+          "english": "Fire",
           "translation": "mwaki (pl. mĩaki)",
-          "pronunciation": "mwaki (pl. mĩaki)",
+          "pronunciation": "mwaki",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "soil, earth, ground",
+          "english": "Soil, earth, ground",
           "translation": "mũthetu / tĩĩri",
-          "pronunciation": "mũthetu / tĩĩri",
+          "pronunciation": "muthetu",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "path, road, way",
+          "english": "Path, road, way",
           "translation": "njĩra",
           "pronunciation": "njĩra",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "cow, cattle",
+          "english": "Cow, cattle",
           "translation": "ng'ombe",
           "pronunciation": "ng'ombe",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "goat",
+          "english": "Goat",
           "translation": "mbũri",
           "pronunciation": "mbũri",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "sheep",
+          "english": "Sheep",
           "translation": "ng'ondu",
           "pronunciation": "ng'ondu",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "chicken",
+          "english": "Chicken",
           "translation": "ngũkũ",
           "pronunciation": "ngũkũ",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "dog",
+          "english": "Dog",
           "translation": "ngui / ngũĩ",
-          "pronunciation": "ngui / ngũĩ",
+          "pronunciation": "ngui",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "bird",
+          "english": "Bird",
           "translation": "nyoni / nyũnyi",
-          "pronunciation": "nyoni / nyũnyi",
+          "pronunciation": "nyoni",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "snake",
+          "english": "Snake",
           "translation": "njoka",
           "pronunciation": "njoka",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "elephant",
+          "english": "Elephant",
           "translation": "njogu",
           "pronunciation": "njogu",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "lion",
+          "english": "Lion",
           "translation": "mũrũthi / ngatunyũ",
-          "pronunciation": "mũrũthi / ngatunyũ",
+          "pronunciation": "muruthi",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "hare, rabbit",
+          "english": "Hare, rabbit",
           "translation": "mbũkũ",
           "pronunciation": "mbũkũ",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "milk",
+          "english": "Milk",
           "translation": "ĩria",
-          "pronunciation": "ĩria",
+          "pronunciation": "iria",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "meat",
+          "english": "Meat",
           "translation": "nyama",
           "pronunciation": "nyama",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "maize, corn",
+          "english": "Maize, corn",
           "translation": "mbembe",
           "pronunciation": "mbembe",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "beans / cowpeas",
+          "english": "Beans / cowpeas",
           "translation": "mboso / nthooko",
           "pronunciation": "mboso / nthooko",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "banana (pl. bananas)",
+          "english": "Banana (pl. bananas)",
           "translation": "ĩrĩgũ (pl. marĩgũ)",
-          "pronunciation": "ĩrĩgũ (pl. marĩgũ)",
+          "pronunciation": "irigu",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "house, family home",
+          "english": "House, family home",
           "translation": "nyomba / nyũmba",
-          "pronunciation": "nyomba / nyũmba",
+          "pronunciation": "nyomba",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "homestead, home village",
+          "english": "Homestead, home village",
           "translation": "mũciĩ (pl. mĩciĩ)",
-          "pronunciation": "mũciĩ (pl. mĩciĩ)",
+          "pronunciation": "mucii",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "chair, stool",
+          "english": "Chair, stool",
           "translation": "kĩvĩrĩ / gĩtĩ",
-          "pronunciation": "kĩvĩrĩ / gĩtĩ",
+          "pronunciation": "kiviri",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "clay cooking pot",
+          "english": "Clay cooking pot",
           "translation": "nyũngũ",
           "pronunciation": "nyũngũ",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to eat",
+          "english": "To eat",
           "translation": "kũrĩa",
           "pronunciation": "kũrĩa",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to drink",
+          "english": "To drink",
           "translation": "kũnyua",
           "pronunciation": "kũnyua",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to look at / to see",
+          "english": "To look at / to see",
           "translation": "kũrora / kwona",
-          "pronunciation": "kũrora / kwona",
+          "pronunciation": "kurora",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to hear, listen, feel",
+          "english": "To hear, listen, feel",
           "translation": "kũigua",
           "pronunciation": "kũigua",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to speak, talk",
+          "english": "To speak, talk",
           "translation": "kwaria",
           "pronunciation": "kwaria",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to go",
+          "english": "To go",
           "translation": "gũthiĩ / kũthiĩ",
-          "pronunciation": "gũthiĩ / kũthiĩ",
+          "pronunciation": "guthii",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to come (Kîembu gũũka / Kĩmĩĩrũ kwĩja)",
+          "english": "To come (Kîembu gũũka / Kĩmĩĩrũ kwĩja)",
           "translation": "gũũka / kwĩja",
-          "pronunciation": "gũũka / kwĩja",
+          "pronunciation": "guuka",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to work / to cultivate",
+          "english": "To work / to cultivate",
           "translation": "kũruta wĩra / kũrĩma",
           "pronunciation": "kũruta wĩra / kũrĩma",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to love, want, like",
+          "english": "To love, want, like",
           "translation": "kwenda",
           "pronunciation": "kwenda",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to know, understand",
+          "english": "To know, understand",
           "translation": "kũmenya",
           "pronunciation": "kũmenya",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to sleep, lie down",
+          "english": "To sleep, lie down",
           "translation": "kũmama / kũkoma",
-          "pronunciation": "kũmama / kũkoma",
+          "pronunciation": "kumama",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to stand up",
+          "english": "To stand up",
           "translation": "kũrũgama",
           "pronunciation": "kũrũgama",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to sit down",
+          "english": "To sit down",
           "translation": "gũikara nthĩ",
           "pronunciation": "gũikara nthĩ",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to buy / to sell",
+          "english": "To buy / to sell",
           "translation": "kũgũra / kwenderia",
-          "pronunciation": "kũgũra / kwenderia",
+          "pronunciation": "kugura",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "to cook",
+          "english": "To cook",
           "translation": "kũruga",
           "pronunciation": "kũruga",
           "context": "Kîembu / Kĩmĩĩrũ",
@@ -932,91 +925,91 @@
         {
           "english": "January (Month 1)",
           "translation": "Januarĩ (JAN)",
-          "pronunciation": "januarĩ (jan)",
+          "pronunciation": "januari",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "February (Month 2)",
           "translation": "Feburuarĩ (FEB)",
-          "pronunciation": "feburuarĩ (feb)",
+          "pronunciation": "feburuari",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "March (Month 3)",
           "translation": "Machi (MAC)",
-          "pronunciation": "machi (mac)",
+          "pronunciation": "machi",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "April (Month 4)",
           "translation": "Ĩpurũ (ĨPU)",
-          "pronunciation": "ĩpurũ (ĩpu)",
+          "pronunciation": "ipuru",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "May (Month 5)",
           "translation": "Mĩĩ (MĨĨ)",
-          "pronunciation": "mĩĩ (mĩĩ)",
+          "pronunciation": "mii",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "June (Month 6)",
           "translation": "Njuni (NJU)",
-          "pronunciation": "njuni (nju)",
+          "pronunciation": "njuni",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "July (Month 7)",
           "translation": "Njuraĩ (NJR)",
-          "pronunciation": "njuraĩ (njr)",
+          "pronunciation": "njurai",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "August (Month 8)",
           "translation": "Agasti (AGA)",
-          "pronunciation": "agasti (aga)",
+          "pronunciation": "agasti",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "September (Month 9)",
           "translation": "Septemba (SPT)",
-          "pronunciation": "septemba (spt)",
+          "pronunciation": "septemba",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "October (Month 10)",
           "translation": "Oktũba (OKT)",
-          "pronunciation": "oktũba (okt)",
+          "pronunciation": "oktuba",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "November (Month 11)",
           "translation": "Novemba (NOV)",
-          "pronunciation": "novemba (nov)",
+          "pronunciation": "novemba",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "December (Month 12)",
           "translation": "Dicemba (DEC)",
-          "pronunciation": "dicemba (dec)",
+          "pronunciation": "dicemba",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Yesterday",
           "translation": "Ĩgoro",
-          "pronunciation": "ĩgoro",
+          "pronunciation": "igoro",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -1065,7 +1058,7 @@
         {
           "english": "Hour (time unit)",
           "translation": "Ĩthaa",
-          "pronunciation": "ĩthaa",
+          "pronunciation": "ithaa",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -1091,13 +1084,6 @@
           "audioFile": null
         },
         {
-          "english": "Ethiopian Birr (ETB)",
-          "translation": "Bĩrũ ya Ithiopia",
-          "pronunciation": "bĩrũ ya ithiopia",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
           "english": "Sudanese Pound (SDG)",
           "translation": "Paũndi ya Sudani",
           "pronunciation": "paũndi ya sudani",
@@ -1105,44 +1091,9 @@
           "audioFile": null
         },
         {
-          "english": "Nigerian Naira (NGN)",
-          "translation": "Naira ya Nijeria",
-          "pronunciation": "naira ya nijeria",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
           "english": "Egyptian Pound (EGP)",
           "translation": "Paũndi ya Misri",
           "pronunciation": "paũndi ya misri",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Malagasy Ariary (MGA)",
-          "translation": "Ariarĩ ya Bukini",
-          "pronunciation": "ariarĩ ya bukini",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Mauritian Rupee (MUR)",
-          "translation": "Rupia ya Maurĩtiasi",
-          "pronunciation": "rupia ya maurĩtiasi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Seychellois Rupee (SCR)",
-          "translation": "Rupia ya Shelisheli",
-          "pronunciation": "rupia ya shelisheli",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Algerian Dinar (DZD)",
-          "translation": "Dinari ya Anjĩria",
-          "pronunciation": "dinari ya anjĩria",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -1157,34 +1108,6 @@
           "english": "British Pound (GBP)",
           "translation": "Paũndi ya Ngeretha",
           "pronunciation": "paũndi ya ngeretha",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Chinese Yuan (CNY)",
-          "translation": "Yuan Renminbi ya China",
-          "pronunciation": "yuan renminbi ya china",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Japanese Yen (JPY)",
-          "translation": "Sarafu ya japani",
-          "pronunciation": "sarafu ya japani",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Saudi Riyal (SAR)",
-          "translation": "Riyal ya Saudi Arĩbia",
-          "pronunciation": "riyal ya saudi arĩbia",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Swiss Franc (CHF)",
-          "translation": "Faranga ya Swisilandi",
-          "pronunciation": "faranga ya swisilandi",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -1457,14 +1380,14 @@
         {
           "english": "[Kîembu] Yesterday",
           "translation": "Ĩgoro",
-          "pronunciation": "ĩgoro",
+          "pronunciation": "igoro",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] Today",
           "translation": "Ũmũnthĩ",
-          "pronunciation": "ũmũnthĩ",
+          "pronunciation": "umunthi",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
@@ -1737,105 +1660,105 @@
         {
           "english": "Person (pl. People) / Man / Woman / Child in Johnston (1919 #11a Meru)",
           "translation": "muntũ (pl. antũ / bantũ) / mũrũme (pl. barũme) / mũka (pl. aka / baka) / mwana (pl. aana / baana)",
-          "pronunciation": "mun-tu / an-tu / mu-ru-me / mu-ka / mwa-na",
+          "pronunciation": "muntu",
           "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 68–69) — #11a Meru",
           "audioFile": null
         },
         {
           "english": "Banana",
-          "translation": "I-rigω; ma-. Gi-tωke (fruit)",
-          "pronunciation": "i-rigω; ma-. gi-tωke (fruit)",
+          "translation": "I-rigo; ma-. Gi-toke (fruit)",
+          "pronunciation": "i-rigo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Brother",
           "translation": "Mu-ru wa maiya (K.); a-rūa maiya. Mū-rata (M., Mw.)",
-          "pronunciation": "mu-ru wa maiya (k.); a-rūa maiya. mū-rata (m., mw.)",
+          "pronunciation": "mu-ru wa maiya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Chief",
-          "translation": "Mu-þamaki; a-. Mu-nene; a-",
-          "pronunciation": "mu-þamaki; a-. mu-nene; a-",
+          "translation": "Mu-thamaki; a-. Mu-nene; a-",
+          "pronunciation": "mu-thamaki; a-. mu-nene; a-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Fat, oil",
-          "translation": "Ma-guta. Ṅ-gorωnω (butter)",
-          "pronunciation": "ma-guta.  ṅ-gorωnω (butter)",
+          "translation": "Ma-guta. Ṅ-gorono (butter)",
+          "pronunciation": "ma-guta n-gorono",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Honey",
           "translation": "Ū-ūkī; mō-ūkī",
-          "pronunciation": "ū-ūkī; mō-ūkī",
+          "pronunciation": "u-uki",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Hunger",
           "translation": "N-g'aragu. M-būta (M.)",
-          "pronunciation": "n-g'aragu.  m-būta (m.)",
+          "pronunciation": "n-g'aragu m-buta",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Husband",
-          "translation": "Mū-þūri; a-. Mū-rūme; a-",
-          "pronunciation": "mū-þūri; a-.  mū-rūme; a-",
+          "translation": "Mū-thūri; a-. Mū-rūme; a-",
+          "pronunciation": "mu-thuri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Maize",
           "translation": "M-bembē; ma-",
-          "pronunciation": "m-bembē; ma-",
+          "pronunciation": "m-bembe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Palm wine, beer",
-          "translation": "N-jωhi",
-          "pronunciation": "n-jωhi",
+          "translation": "N-johi",
+          "pronunciation": "n-johi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Salt",
           "translation": "Cūmbī. I-gāta (soda)",
-          "pronunciation": "cūmbī. i-gāta (soda)",
+          "pronunciation": "cumbi i-gata",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Sister",
           "translation": "Mū-rū wa maiya (K.). Mū-ārī wa maitū",
-          "pronunciation": "mū-rū wa maiya (k.). mū-ārī wa maitū",
+          "pronunciation": "mu-ru wa maiya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Son, boy",
           "translation": "Mū-rīū; a-rīū. Kī-hīī; i-hīī (boy)",
-          "pronunciation": "mū-rīū; a-rīū.  kī-hīī; i-hīī (boy)",
+          "pronunciation": "mu-riu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Wife",
           "translation": "Mū-kā; a-kā",
-          "pronunciation": "mū-kā; a-kā",
+          "pronunciation": "mu-ka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Yam",
           "translation": "Gī-kwa; i-kwa",
-          "pronunciation": "gī-kwa; i-kwa",
+          "pronunciation": "gi-kwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -1882,7 +1805,7 @@
           "audioFile": null
         },
         {
-          "english": "food, traditional mashed meal",
+          "english": "Food, traditional mashed meal",
           "translation": "irio",
           "pronunciation": "irio",
           "context": "Kîembu / Kĩmĩĩrũ",
@@ -1940,7 +1863,7 @@
         {
           "english": "Come",
           "translation": "kũũja (ĩja!)",
-          "pronunciation": "koo-jah / ee-jah",
+          "pronunciation": "kuuja",
           "context": "Johnston 1919 p. 72 #11a Meru",
           "audioFile": null
         },
@@ -1968,7 +1891,7 @@
         {
           "english": "Bad",
           "translation": "-ũru (mũũru, nthũku)",
-          "pronunciation": "oo-roo / n-thoo-koo",
+          "pronunciation": "-uru",
           "context": "Johnston 1919 p. 71 #11a Meru",
           "audioFile": null
         },
@@ -1996,7 +1919,7 @@
         {
           "english": "Come here (Imenti: Ĩja aja; Chuka: Ũka aa; Tigania: Ĩya haa; Tharaka: Ncũ aga)",
           "translation": "Ĩja aja / Ũka aa",
-          "pronunciation": "Ĩja aja / Ũka aa",
+          "pronunciation": "ija aja",
           "context": "Wikipedia Meru language — Sample phrases & Dialects",
           "audioFile": null
         },
@@ -2017,21 +1940,21 @@
         {
           "english": "Get inside / enter (Imenti/Chuka: Kũrũka / Tonya; Tigania: Unkuma; Tharaka: Thũngĩra)",
           "translation": "Kũrũka / Tonya / Thũngĩra",
-          "pronunciation": "Kũrũka / Tonya / Thũngĩra",
+          "pronunciation": "kuruka",
           "context": "Wikipedia Meru language — Dialects",
           "audioFile": null
         },
         {
           "english": "Today (Chuka: Ũmũnthi; Imenti: Naarua; Tigania: Ruarii; Tharaka: Ĩmunthĩ)",
           "translation": "Ũmũnthi / Naarua / Ruarii",
-          "pronunciation": "Ũmũnthi / Naarua / Ruarii",
+          "pronunciation": "umunthi",
           "context": "Wikipedia Meru language — Dialects",
           "audioFile": null
         },
         {
           "english": "Tomorrow (Chuka/Imenti: Rũjũ / Rũũjũ; Tigania/Tharaka: Rũũ / Rũyũ)",
           "translation": "Rũjũ / Rũũ",
-          "pronunciation": "Rũjũ / Rũũ",
+          "pronunciation": "ruju",
           "context": "Wikipedia Meru language — Dialects",
           "audioFile": null
         },
@@ -2064,112 +1987,112 @@
           "audioFile": null
         },
         {
-          "english": "person (pl. people) (Class 1/2)",
+          "english": "Person (pl. people) (Class 1/2)",
           "translation": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
-          "pronunciation": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
+          "pronunciation": "mundu",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "young uninitiated boy (pl. boys) (Class 12/13)",
+          "english": "Young uninitiated boy (pl. boys) (Class 12/13)",
           "translation": "kavĩcĩ (pl. tũvĩcĩ)",
-          "pronunciation": "kavĩcĩ (pl. tũvĩcĩ)",
+          "pronunciation": "kavici",
           "context": "Kîembu",
           "audioFile": null
         },
         {
-          "english": "young girl (pl. girls)",
+          "english": "Young girl (pl. girls)",
           "translation": "karĩgũ (pl. tũrĩgũ)",
-          "pronunciation": "karĩgũ (pl. tũrĩgũ)",
+          "pronunciation": "karigu",
           "context": "Kîembu",
           "audioFile": null
         },
         {
-          "english": "tree, wood, herbal medicine (Class 3/4)",
+          "english": "Tree, wood, herbal medicine (Class 3/4)",
           "translation": "mũtĩ (pl. mĩtĩ)",
-          "pronunciation": "mũtĩ (pl. mĩtĩ)",
+          "pronunciation": "muti",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "hill, mountain (Kĩrĩnyaga = Mount Kenya)",
+          "english": "Hill, mountain (Kĩrĩnyaga = Mount Kenya)",
           "translation": "mũrĩma (pl. mĩrĩma) / kĩrĩma",
-          "pronunciation": "mũrĩma (pl. mĩrĩma) / kĩrĩma",
+          "pronunciation": "murima",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "stone, rock (Class 5/6)",
+          "english": "Stone, rock (Class 5/6)",
           "translation": "ĩvia (pl. mavia) / ĩiga",
-          "pronunciation": "ĩvia (pl. mavia) / ĩiga",
+          "pronunciation": "ivia",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "head",
+          "english": "Head",
           "translation": "mũtwe (pl. mĩtwe)",
-          "pronunciation": "mũtwe (pl. mĩtwe)",
+          "pronunciation": "mutwe",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "eye (pl. eyes)",
+          "english": "Eye (pl. eyes)",
           "translation": "rĩitho (pl. metho)",
-          "pronunciation": "rĩitho (pl. metho)",
+          "pronunciation": "riitho",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "ear (pl. ears)",
+          "english": "Ear (pl. ears)",
           "translation": "gũtũ (pl. matũ)",
-          "pronunciation": "gũtũ (pl. matũ)",
+          "pronunciation": "gutu",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "nose",
+          "english": "Nose",
           "translation": "inyũrũ (pl. manyũrũ)",
-          "pronunciation": "inyũrũ (pl. manyũrũ)",
+          "pronunciation": "inyuru",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "mouth",
+          "english": "Mouth",
           "translation": "kanyua (pl. tũnyua)",
-          "pronunciation": "kanyua (pl. tũnyua)",
+          "pronunciation": "kanyua",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "tooth (pl. teeth)",
+          "english": "Tooth (pl. teeth)",
           "translation": "ĩrĩo (pl. meeno)",
-          "pronunciation": "ĩrĩo (pl. meeno)",
+          "pronunciation": "irio",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "tongue, language",
+          "english": "Tongue, language",
           "translation": "rũrĩmĩ (pl. ndĩmĩ)",
-          "pronunciation": "rũrĩmĩ (pl. ndĩmĩ)",
+          "pronunciation": "rurimi",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "hand, arm",
+          "english": "Hand, arm",
           "translation": "njara /oko (pl. moko)",
-          "pronunciation": "njara /oko (pl. moko)",
+          "pronunciation": "njara",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "leg, foot",
+          "english": "Leg, foot",
           "translation": "kũgũrũ (pl. magũrũ)",
-          "pronunciation": "kũgũrũ (pl. magũrũ)",
+          "pronunciation": "kuguru",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
         {
-          "english": "heart, spirit, mind",
+          "english": "Heart, spirit, mind",
           "translation": "ngoro",
           "pronunciation": "ngoro",
           "context": "Kîembu / Kĩmĩĩrũ",
@@ -2185,7 +2108,7 @@
         {
           "english": "Where are you from?",
           "translation": "Ũrĩĩte kũ? / Wĩ mũciĩ kũ?",
-          "pronunciation": "ũrĩĩte kũ? / wĩ mũciĩ kũ?",
+          "pronunciation": "uriite ku",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
@@ -2213,49 +2136,49 @@
         {
           "english": "Sunday (Day of the week)",
           "translation": "Kiumia (KIU)",
-          "pronunciation": "kiumia (kiu)",
+          "pronunciation": "kiumia",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Monday (Day of the week)",
           "translation": "Muramuko (MRA)",
-          "pronunciation": "muramuko (mra)",
+          "pronunciation": "muramuko",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Tuesday (Day of the week)",
           "translation": "Wairi (WAI)",
-          "pronunciation": "wairi (wai)",
+          "pronunciation": "wairi",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Wednesday (Day of the week)",
           "translation": "Wethatu (WET)",
-          "pronunciation": "wethatu (wet)",
+          "pronunciation": "wethatu",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Thursday (Day of the week)",
           "translation": "Wena (WEN)",
-          "pronunciation": "wena (wen)",
+          "pronunciation": "wena",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Friday (Day of the week)",
           "translation": "Wetano (WTN)",
-          "pronunciation": "wetano (wtn)",
+          "pronunciation": "wetano",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Saturday (Day of the week)",
           "translation": "Jumamosi (JUM)",
-          "pronunciation": "jumamosi (jum)",
+          "pronunciation": "jumamosi",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -2283,14 +2206,14 @@
         {
           "english": "In the afternoon / evening (PM day period)",
           "translation": "ŨG",
-          "pronunciation": "ũg",
+          "pronunciation": "ug",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Era / historical age",
           "translation": "Ĩgita",
-          "pronunciation": "ĩgita",
+          "pronunciation": "igita",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -2305,34 +2228,6 @@
           "english": "South African Rand (ZAR)",
           "translation": "Randi ya Afrika ya Sauthi",
           "pronunciation": "randi ya afrika ya sauthi",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
-          "translation": "Leoni",
-          "pronunciation": "leoni",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "West African CFA Franc (XOF)",
-          "translation": "Faranga CFA BCEAO",
-          "pronunciation": "faranga cfa bceao",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Central African CFA Franc (XAF)",
-          "translation": "Faranga CFA BEAC",
-          "pronunciation": "faranga cfa beac",
-          "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "United Arab Emirates Dirham (AED)",
-          "translation": "Dirham ya Falme cia Kiarabu",
-          "pronunciation": "dirham ya falme cia kiarabu",
           "context": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -2696,133 +2591,133 @@
         {
           "english": "[Kîembu] January (Month 1)",
           "translation": "Mweri wa mbere (Mbe)",
-          "pronunciation": "mweri wa mbere (mbe)",
+          "pronunciation": "mweri wa mbere",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] February (Month 2)",
           "translation": "Mweri wa kaĩri (Kai)",
-          "pronunciation": "mweri wa kaĩri (kai)",
+          "pronunciation": "mweri wa kairi",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] March (Month 3)",
           "translation": "Mweri wa kathatũ (Kat)",
-          "pronunciation": "mweri wa kathatũ (kat)",
+          "pronunciation": "mweri wa kathatu",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] April (Month 4)",
           "translation": "Mweri wa kana (Kan)",
-          "pronunciation": "mweri wa kana (kan)",
+          "pronunciation": "mweri wa kana",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] May (Month 5)",
           "translation": "Mweri wa gatano (Gat)",
-          "pronunciation": "mweri wa gatano (gat)",
+          "pronunciation": "mweri wa gatano",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] June (Month 6)",
           "translation": "Mweri wa gatantatũ (Gan)",
-          "pronunciation": "mweri wa gatantatũ (gan)",
+          "pronunciation": "mweri wa gatantatu",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] July (Month 7)",
           "translation": "Mweri wa mũgwanja (Mug)",
-          "pronunciation": "mweri wa mũgwanja (mug)",
+          "pronunciation": "mweri wa mugwanja",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] August (Month 8)",
           "translation": "Mweri wa kanana (Knn)",
-          "pronunciation": "mweri wa kanana (knn)",
+          "pronunciation": "mweri wa kanana",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] September (Month 9)",
           "translation": "Mweri wa kenda (Ken)",
-          "pronunciation": "mweri wa kenda (ken)",
+          "pronunciation": "mweri wa kenda",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] October (Month 10)",
           "translation": "Mweri wa ikũmi (Iku)",
-          "pronunciation": "mweri wa ikũmi (iku)",
+          "pronunciation": "mweri wa ikumi",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] November (Month 11)",
           "translation": "Mweri wa ikũmi na ũmwe (Imw)",
-          "pronunciation": "mweri wa ikũmi na ũmwe (imw)",
+          "pronunciation": "mweri wa ikumi na umwe",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] December (Month 12)",
           "translation": "Mweri wa ikũmi na Kaĩrĩ (Igi)",
-          "pronunciation": "mweri wa ikũmi na kaĩrĩ (igi)",
+          "pronunciation": "mweri wa ikumi na kairi",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] Sunday (Day of the week)",
           "translation": "Kiumia (Kma)",
-          "pronunciation": "kiumia (kma)",
+          "pronunciation": "kiumia",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] Monday (Day of the week)",
           "translation": "Njumatatu (Tat)",
-          "pronunciation": "njumatatu (tat)",
+          "pronunciation": "njumatatu",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] Tuesday (Day of the week)",
           "translation": "Njumaine (Ine)",
-          "pronunciation": "njumaine (ine)",
+          "pronunciation": "njumaine",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] Wednesday (Day of the week)",
           "translation": "Njumatano (Tan)",
-          "pronunciation": "njumatano (tan)",
+          "pronunciation": "njumatano",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] Thursday (Day of the week)",
           "translation": "Aramithi (Arm)",
-          "pronunciation": "aramithi (arm)",
+          "pronunciation": "aramithi",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] Friday (Day of the week)",
           "translation": "Njumaa (Maa)",
-          "pronunciation": "njumaa (maa)",
+          "pronunciation": "njumaa",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
         {
           "english": "[Kîembu] Saturday (Day of the week)",
           "translation": "NJumamothii (NMM)",
-          "pronunciation": "njumamothii (nmm)",
+          "pronunciation": "njumamothii",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
@@ -2918,79 +2813,9 @@
           "audioFile": null
         },
         {
-          "english": "[Kîembu] Ethiopian Birr (ETB)",
-          "translation": "Bir ya Uhabeshi",
-          "pronunciation": "bir ya uhabeshi",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
           "english": "[Kîembu] Sudanese Pound (SDG)",
           "translation": "Pauni ya Sudani",
           "pronunciation": "pauni ya sudani",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Nigerian Naira (NGN)",
-          "translation": "Naira ya Nijeria",
-          "pronunciation": "naira ya nijeria",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Malagasy Ariary (MGA)",
-          "translation": "Ariary ya Bukini",
-          "pronunciation": "ariary ya bukini",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Seychellois Rupee (SCR)",
-          "translation": "Rupia ya Shelisheli",
-          "pronunciation": "rupia ya shelisheli",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Algerian Dinar (DZD)",
-          "translation": "Dinari ya Aljeria",
-          "pronunciation": "dinari ya aljeria",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Sierra Leonean Leone (1964—2022) (SLL)",
-          "translation": "Leoni",
-          "pronunciation": "leoni",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] West African CFA Franc (XOF)",
-          "translation": "Faranga CFA BCEAO",
-          "pronunciation": "faranga cfa bceao",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Central African CFA Franc (XAF)",
-          "translation": "Faranga CFA BEAC",
-          "pronunciation": "faranga cfa beac",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Chinese Yuan (CNY)",
-          "translation": "Yuan Renminbi ya China",
-          "pronunciation": "yuan renminbi ya china",
-          "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
-          "audioFile": null
-        },
-        {
-          "english": "[Kîembu] Japanese Yen (JPY)",
-          "translation": "Sarafu ya Kijapani",
-          "pronunciation": "sarafu ya kijapani",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
           "audioFile": null
         },
@@ -3214,7 +3039,7 @@
         {
           "english": "Who?",
           "translation": "ũũ? (nũũ?)",
-          "pronunciation": "oo / noo",
+          "pronunciation": "uu",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         },
@@ -3228,7 +3053,7 @@
         {
           "english": "Where?",
           "translation": "kũ? (ha?)",
-          "pronunciation": "koo / hah",
+          "pronunciation": "ku",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
         },
@@ -3268,23 +3093,16 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "Cardinal Numerals 1–10 in Johnston (1919 #11a Meru)",
-          "translation": "imwe (1), iiri / bairi (2), ithatu (3), inya (4), ithano (5), ithanthatu (6), mũgwanja (7), inyanya (8), kenda (9), ikũmi (10)",
-          "pronunciation": "i-mwe, ii-ri, i-tha-tu, i-nya, i-tha-no",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107) — #11a Meru",
-          "audioFile": null
-        },
-        {
           "english": "Personal Pronouns in Johnston (1919 #11a Meru): I / Thou / He, She / We / You (pl.) / They",
           "translation": "niĩ / gwe (we) / we / batũ / bũ / bo",
-          "pronunciation": "nii / gwe / we / ba-tu / bu / bo",
+          "pronunciation": "nii",
           "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107) — #11a Meru",
           "audioFile": null
         },
         {
           "english": "Possessive Stems in Johnston (1919 #11a Meru): My / Thy / His, Her / Our / Your / Their",
           "translation": "-akwa / -aku / -ake / -etũ / -enyu / -abo (-ao)",
-          "pronunciation": "-a-kwa / -a-ku / -a-ke / -e-tu / -e-nyu / -a-bo",
+          "pronunciation": "-akwa",
           "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107) — #11a Meru",
           "audioFile": null
         },
@@ -3303,20 +3121,6 @@
           "audioFile": null
         },
         {
-          "english": "The 22 Mweru Geographical Sub-Tribes, 13 Mwiria Totemic Clans (Netiri) & Ntowaita Exodus Legend (Hobley 1910, pp. 156–158)",
-          "translation": "22 Mweru Sub-Tribes & Chiefs (p. 156): (1) Janjai (Kamuru), (2) Oringo (Njoo), (3) Kunati (Waikaiwa), (4) Mbuya (Waivori), (5) Akithii (Mutwiarando), (6) Athwana (Kirigwa), (7) Muthara (Ndaminuki)...",
-          "pronunciation": "mwi-ri-a / ne-ti-ri / nto-wai-ta / ku-i-ta / jan-jai / o-rin-go / mu-tha-ra / i-em-be",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 156–158",
-          "audioFile": null
-        },
-        {
-          "english": "The 14 Tharaka (Thaka) Clans (Mwiriga / Mbai) & Totems (Nthuku) Recorded by C. W. Hobley (1910 Appendix 6, p. 169)",
-          "translation": "Ntonga (Duiker nthia), Mbua (Baboon Ikuli), Koli (Monkey ntheo), Nya (Aardvark guma), Nkuyu (Dik-dik Kabii), Kamowao (Hartebeest Ando), Kanyaki (Elephant nzoo), Kangina (Wart-hog ngi)",
-          "pronunciation": "mwi-ri-ga / nthu-ku / nton-ga / m-bu-a / ko-li / ka-nya-ki / ki-run-du",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', p. 2, pp. 85, 93 & Appendix (6), p. 169 — Kamugwi (Reedbuck ndoya), Kathoka (Bush-pig ngulwe), Kanjogo (Elephant nzoo), Engimu (Rhino ngimo), Kirundu (Buffalo mbogo), Mutua (Hyaena mb...",
-          "audioFile": null
-        },
-        {
           "english": "Adze",
           "translation": "Gi-tanda",
           "pronunciation": "gi-tanda",
@@ -3325,29 +3129,29 @@
         },
         {
           "english": "Animal, wild beast",
-          "translation": "Ny-ama, Ny-amω; pl. same. (M-bωra = game)",
-          "pronunciation": "ny-ama, ny-amω; pl. same. (m-bωra = game)",
+          "translation": "Ny-ama, Ny-amo; pl. same. (M-bora = game)",
+          "pronunciation": "ny-ama ny-amo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Ant",
           "translation": "Þi-girriri, N-digirriri; cia-",
-          "pronunciation": "þi-girriri, n-digirriri; cia-",
+          "pronunciation": "i-girriri n-digirriri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Ant, white (termite)",
-          "translation": "Mu-þwa; mi-þwa. N-guiya. Mū-kω (Embu)",
-          "pronunciation": "mu-þwa; mi-þwa. n-guiya. mū-kω (embu)",
+          "translation": "Mu-thwa; mi-thwa. N-guiya. Mū-ko (Embu)",
+          "pronunciation": "mu-thwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Arm",
-          "translation": "Gu-okω; m-okω",
-          "pronunciation": "gu-okω; m-okω",
+          "translation": "Gu-oko; m-oko",
+          "pronunciation": "gu-oko; m-oko",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3360,36 +3164,36 @@
         },
         {
           "english": "Axe",
-          "translation": "I-þanwa; ma-. Danŭa, I-tsanωa",
-          "pronunciation": "i-þanwa; ma-. danŭa, i-tsanωa",
+          "translation": "I-thanwa; ma-. Danŭa, I-tsanoa",
+          "pronunciation": "i-thanwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Baboon",
-          "translation": "Nωgω or Nugu",
-          "pronunciation": "nωgω or nugu",
+          "translation": "Nogo or Nugu",
+          "pronunciation": "nogo or nugu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Back",
-          "translation": "Mu-goṅgω; mi-. M-buta (Cuka)",
-          "pronunciation": "mu-goṅgω; mi-. m-buta (cuka)",
+          "translation": "Mu-gonggo; mi-. M-buta (Cuka)",
+          "pronunciation": "mu-gonggo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Beard",
           "translation": "ki-reru; ci- (chin). N-deru",
-          "pronunciation": "ki-reru; ci- (chin). n-deru",
+          "pronunciation": "ki-reru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Bee",
           "translation": "N-juki; pl. same",
-          "pronunciation": "n-juki; pl. same",
+          "pronunciation": "n-juki",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3410,28 +3214,28 @@
         {
           "english": "Body",
           "translation": "Mw-īrī; mī-īrī",
-          "pronunciation": "mw-īrī; mī-īrī",
+          "pronunciation": "mw-iri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Bone",
           "translation": "I-hīndī; ma-. Gi-ende",
-          "pronunciation": "i-hīndī; ma-. gi-ende",
+          "pronunciation": "i-hindi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Borassus palm",
-          "translation": "? Mu-þi (M.)",
-          "pronunciation": "? mu-þi (m.)",
+          "translation": "? Mu-thi (M.)",
+          "pronunciation": "mu-thi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Bow",
           "translation": "U-ta; mō-ta",
-          "pronunciation": "u-ta; mō-ta",
+          "pronunciation": "u-ta",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3444,57 +3248,57 @@
         },
         {
           "english": "Brains",
-          "translation": "Tombω; ma-. Kererīω (K.) or Kerriω",
-          "pronunciation": "tombω; ma-. kererīω (k.) or kerriω",
+          "translation": "Tombo; ma-. Kererīo (K.) or Kerrio",
+          "pronunciation": "tombo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Breast (man's)",
-          "translation": "Gi-þūri; i-þūri. Ki-ai; ci- (E.). Ru-ria; n-dia (M.). Ru-gωnω; ṅ- (Mw.)",
-          "pronunciation": "gi-þūri; i-þūri. ki-ai; ci- (e.). ru-ria; n-dia (m.). ru-gωnω; ṅ- (mw.)",
+          "translation": "Gi-thūri; i-thūri. Ki-ai; ci- (E.). Ru-ria; n-dia (M.). Ru-gono; ng- (Mw.)",
+          "pronunciation": "gi-thuri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Breast (woman's)",
-          "translation": "Ny-ondω; cia- or ma-ny-ondω (see above)",
-          "pronunciation": "ny-ondω; cia- or ma-ny-ondω (see above)",
+          "translation": "Ny-ondo; cia- or ma-ny-ondo (see above)",
+          "pronunciation": "ny-ondo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Buffalo",
-          "translation": "M-bωgω; pl. same",
-          "pronunciation": "m-bωgω; pl. same",
+          "translation": "M-bogo; pl. same",
+          "pronunciation": "m-bogo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Bull",
           "translation": "N-degwa; pl. same. N-jamba (C., M.)",
-          "pronunciation": "n-degwa; pl. same. n-jamba (c., m.)",
+          "pronunciation": "n-degwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Buttocks",
-          "translation": "I-tina; ma-. Ma-takω. I-cuze; ma-",
-          "pronunciation": "i-tina; ma-. ma-takω. i-cuze; ma-",
+          "translation": "I-tina; ma-. Ma-tako. I-cuze; ma-",
+          "pronunciation": "i-tina; ma-. ma-tako. i-cuze; ma-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Canoe",
-          "translation": "Mw-atω (K.) (wooden bee-hive). Gi-taru; i-",
-          "pronunciation": "mw-atω (k.) (wooden bee-hive). gi-taru; i-",
+          "translation": "Mw-ato (K.) (wooden bee-hive). Gi-taru; i-",
+          "pronunciation": "mw-ato",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Cat",
-          "translation": "Paka (Swahili). Ki-maṅga; ci- (wild)",
-          "pronunciation": "paka (swahili). ki-maṅga; ci- (wild)",
+          "translation": "Paka (Swahili). Ki-mangga; ci- (wild)",
+          "pronunciation": "paka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3507,141 +3311,141 @@
         },
         {
           "english": "Cloth",
-          "translation": "Tama; ma-. N-guω",
-          "pronunciation": "tama; ma-. n-guω",
+          "translation": "Tama; ma-. N-guo",
+          "pronunciation": "tama; ma-. n-guo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Cold",
-          "translation": "Hehω; pl. same",
-          "pronunciation": "hehω; pl. same",
+          "translation": "Heho; pl. same",
+          "pronunciation": "heho",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Country",
-          "translation": "Bū-rīrī; ma-. Gi-þaka. Rū-sena (M.)",
-          "pronunciation": "bū-rīrī; ma-. gi-þaka. rū-sena (m.)",
+          "translation": "Bū-rīrī; ma-. Gi-thaka. Rū-sena (M.)",
+          "pronunciation": "bu-riri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Crocodile",
-          "translation": "Ki-ṅgaṅgi; i-",
-          "pronunciation": "ki-ṅgaṅgi; i-",
+          "translation": "Ki-ngganggi; i-",
+          "pronunciation": "ki-ngganggi; i-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Devil, evil spirit",
-          "translation": "N-gωma; ma-",
-          "pronunciation": "n-gωma; ma-",
+          "translation": "N-goma; ma-",
+          "pronunciation": "n-goma; ma-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Doctor (medicine man)",
           "translation": "Mū-ragūri; a-. Mu-tinjire (E., M.)",
-          "pronunciation": "mū-ragūri; a-. mu-tinjire (e., m.)",
+          "pronunciation": "mu-raguri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Donkey",
           "translation": "M-būnda, Biūnda",
-          "pronunciation": "m-būnda, biūnda",
+          "pronunciation": "m-bunda biunda",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Door",
-          "translation": "Mū-rωmω, Mū-þωme (K.); mi-. Rigi (door). Mū-raṅgω (M.)",
-          "pronunciation": "mū-rωmω, mū-þωme (k.); mi-. rigi (door). mū-raṅgω (m.)",
+          "translation": "Mū-romo, Mū-thome (K.); mi-. Rigi (door). Mū-ranggo (M.)",
+          "pronunciation": "mu-romo mu-thome",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Dream",
-          "translation": "Kī-rωtω; i-rωtω",
-          "pronunciation": "kī-rωtω; i-rωtω",
+          "translation": "Kī-roto; i-roto",
+          "pronunciation": "ki-roto",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Drum",
-          "translation": "Ki-hembi; i-hembi. Nd-arama; ma-. Mū-gωkω. K-imbω (N.)",
-          "pronunciation": "ki-hembi; i-hembi. nd-arama; ma-. mū-gωkω.  k-imbω (n.)",
+          "translation": "Ki-hembi; i-hembi. Nd-arama; ma-. Mū-goko. K-imbo (N.)",
+          "pronunciation": "ki-hembi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Ear",
           "translation": "Gū-tū; ma-tū",
-          "pronunciation": "gū-tū; ma-tū",
+          "pronunciation": "gu-tu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Egg",
           "translation": "I-tumbī; ma-",
-          "pronunciation": "i-tumbī; ma-",
+          "pronunciation": "i-tumbi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Excrement",
           "translation": "Mai (K.); ma-mai. Mu-rua (N.)",
-          "pronunciation": "mai (k.); ma-mai.  mu-rua (n.)",
+          "pronunciation": "mai",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Eye",
-          "translation": "R-īþω; ma-īþω",
-          "pronunciation": "r-īþω; ma-īþω",
+          "translation": "R-ītho; ma-ītho",
+          "pronunciation": "r-itho",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Face, forehead",
-          "translation": "Ū-þiū; mω-þiū. Ci-eri (M.)",
-          "pronunciation": "ū-þiū; mω-þiū. ci-eri (m.)",
+          "translation": "Ū-thiū; mo-thiū. Ci-eri (M.)",
+          "pronunciation": "u-thiu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Fear",
           "translation": "Gu-oya; mō-oya. G-itigirra (M.). Ṅ-korora (Mw.)",
-          "pronunciation": "gu-oya; mō-oya. g-itigirra (m.).  ṅ-korora (mw.)",
+          "pronunciation": "gu-oya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Finger",
           "translation": "kī-ara; ci-ara",
-          "pronunciation": "kī-ara; ci-ara",
+          "pronunciation": "ki-ara",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Fish",
-          "translation": "Kī-ūṅgūyω, Ki-uṅguī; ci-. N-guluma (N.)",
-          "pronunciation": "kī-ūṅgūyω, ki-uṅguī; ci-. n-guluma (n.)",
+          "translation": "Kī-ūnggūyo, Ki-ungguī; ci-. N-guluma (N.)",
+          "pronunciation": "ki-ungguyo ki-unggui",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Foot",
           "translation": "I-kinya; ma-. Kū-gūrū; ma-",
-          "pronunciation": "i-kinya; ma-. kū-gūrū; ma-",
+          "pronunciation": "i-kinya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Forest",
-          "translation": "Mū-titū; mī-titū. Gi-þaka (M.)",
-          "pronunciation": "mū-titū; mī-titū. gi-þaka (m.)",
+          "translation": "Mū-titū; mī-titū. Gi-thaka (M.)",
+          "pronunciation": "mu-titu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3655,14 +3459,14 @@
         {
           "english": "Frog",
           "translation": "Kī-ūra; ci-ūra",
-          "pronunciation": "kī-ūra; ci-ūra",
+          "pronunciation": "ki-ura",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Ghost",
-          "translation": "Ngωma; ma-. Ki-ruru. N-kuā (M.)",
-          "pronunciation": "ngωma; ma-. ki-ruru. n-kuā (m.)",
+          "translation": "Ngoma; ma-. Ki-ruru. N-kuā (M.)",
+          "pronunciation": "ngoma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3676,28 +3480,28 @@
         {
           "english": "Girl",
           "translation": "Mū-irītu; a-irītu. Kī-rigū; i-rigū",
-          "pronunciation": "mū-irītu; a-irītu.  kī-rigū; i-rigū",
+          "pronunciation": "mu-iritu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Goat (he)",
-          "translation": "N-þeṅgi. Ki-hīa (M.)",
-          "pronunciation": "n-þeṅgi. ki-hīa (m.)",
+          "translation": "N-thenggi. Ki-hīa (M.)",
+          "pronunciation": "n-thenggi ki-hia",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Goat (she)",
-          "translation": "Mū-gωma; mī-. Mū-ka (N., M.)",
-          "pronunciation": "mū-gωma; mī-.  mū-ka (n., m.)",
+          "translation": "Mū-goma; mī-. Mū-ka (N., M.)",
+          "pronunciation": "mu-goma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Grandparent",
           "translation": "Gūka (E.: Ūma, M.: Ba-va) ♂. Cūcū ♀ (K.)",
-          "pronunciation": "gūka (e.: ūma, m.: ba-va) ♂.  cūcū ♀ (k.)",
+          "pronunciation": "guka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3710,71 +3514,71 @@
         },
         {
           "english": "Ground",
-          "translation": "Þī; ma-þī. Tīri (soil)",
-          "pronunciation": "þī; ma-þī. tīri (soil)",
+          "translation": "Þī; ma-thī. Tīri (soil)",
+          "pronunciation": "i",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Ground-nut",
           "translation": "N-jūgū (Cajanu Indicus)",
-          "pronunciation": "n-jūgū (cajanu indicus)",
+          "pronunciation": "n-jugu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Guinea-fowl",
-          "translation": "N-gāṅga",
-          "pronunciation": "n-gāṅga",
+          "translation": "N-gāngga",
+          "pronunciation": "n-gāngga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Gun",
-          "translation": "Mū-ciṅga; mī-",
-          "pronunciation": "mū-ciṅga; mī-",
+          "translation": "Mū-cingga; mī-",
+          "pronunciation": "mu-cingga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Hair",
           "translation": "N-juīrī; pl. same or ma-",
-          "pronunciation": "n-juīrī; pl. same or ma-",
+          "pronunciation": "n-juiri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Hand",
-          "translation": "Rū-hī; hī (palm). Gu-okω; m-okω",
-          "pronunciation": "rū-hī; hī (palm). gu-okω; m-okω",
+          "translation": "Rū-hī; hī (palm). Gu-oko; m-oko",
+          "pronunciation": "ru-hi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Heart",
-          "translation": "Ngorω; ma-",
-          "pronunciation": "ngorω; ma-",
+          "translation": "Ngoro; ma-",
+          "pronunciation": "ngoro; ma-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Heel",
-          "translation": "N-dīra, Gī-tīnyī; i-tīnyī. Gī-tūrwa (N.). Mū-þiginyω (E.). N-tωgigω (M.). Ki-soṅua (Mw.)",
-          "pronunciation": "n-dīra,  gī-tīnyī; i-tīnyī. gī-tūrwa (n.). mū-þiginyω (e.). n-tωgigω (m.). ki-so",
+          "translation": "N-dīra, Gī-tīnyī; i-tīnyī. Gī-tūrwa (N.). Mū-thiginyo (E.). N-togigo (M.). Ki-songua (Mw.)",
+          "pronunciation": "n-dira gi-tinyi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Hide",
           "translation": "Rū-ūa; nj-ūa",
-          "pronunciation": "rū-ūa; nj-ūa",
+          "pronunciation": "ru-ua",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Hill",
           "translation": "Ka-rima; tū-",
-          "pronunciation": "ka-rima; tū-",
+          "pronunciation": "ka-rima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3787,15 +3591,15 @@
         },
         {
           "english": "Hoe",
-          "translation": "I-cembī; ma-. Kī-būtū (E.). Mū-rō (wooden). I-þanwa (M.)",
-          "pronunciation": "i-cembī; ma-.  kī-būtū (e.). mū-rō (wooden). i-þanwa (m.)",
+          "translation": "I-cembī; ma-. Kī-būtū (E.). Mū-rō (wooden). I-thanwa (M.)",
+          "pronunciation": "i-cembi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Horn",
-          "translation": "Rū-hīa; hīa (or m-bīa). Cωrω; ma-",
-          "pronunciation": "rū-hīa; hīa (or m-bīa).  cωrω; ma-",
+          "translation": "Rū-hīa; hīa (or m-bīa). Coro; ma-",
+          "pronunciation": "ru-hia",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3809,126 +3613,126 @@
         {
           "english": "Iron",
           "translation": "Kī-gera; i-gera. Kī-kama (iron ore)",
-          "pronunciation": "kī-gera; i-gera.  kī-kama (iron ore)",
+          "pronunciation": "ki-gera",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Island",
           "translation": "Gī-cigīrīra; i-",
-          "pronunciation": "gī-cigīrīra; i-",
+          "pronunciation": "gi-cigirira",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Ivory",
           "translation": "Mū-gūī; mī-",
-          "pronunciation": "mū-gūī; mī-",
+          "pronunciation": "mu-gui",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Knee",
           "translation": "I-rū; ma-rū",
-          "pronunciation": "i-rū; ma-rū",
+          "pronunciation": "i-ru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Knife",
           "translation": "Rū-hiū; hiū",
-          "pronunciation": "rū-hiū; hiū",
+          "pronunciation": "ru-hiu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Lake",
           "translation": "I-rīa; ma-rīa",
-          "pronunciation": "i-rīa; ma-rīa",
+          "pronunciation": "i-ria",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Leg",
-          "translation": "Kū-gūrū; ma-. Mū-þīrīmω (shin). Kī-zimω",
-          "pronunciation": "kū-gūrū; ma-.  mū-þīrīmω (shin). kī-zimω",
+          "translation": "Kū-gūrū; ma-. Mū-thīrīmo (shin). Kī-zimo",
+          "pronunciation": "ku-guru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Leopard",
           "translation": "N-garī; ma- (N-gare (M.))",
-          "pronunciation": "n-garī; ma- (n-gare (m.))",
+          "pronunciation": "n-gari",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Lips",
-          "translation": "Kī-rωmω; i-. Mū-rωmω; mī- (mouth)",
-          "pronunciation": "kī-rωmω; i-. mū-rωmω; mī- (mouth)",
+          "translation": "Kī-romo; i-. Mū-romo; mī- (mouth)",
+          "pronunciation": "ki-romo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Magic",
-          "translation": "Ū-rωgi; mō-rωgi",
-          "pronunciation": "ū-rωgi; mō-rωgi",
+          "translation": "Ū-rogi; mō-rogi",
+          "pronunciation": "u-rogi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Man, vir.",
           "translation": "Mū-rūmē; a-",
-          "pronunciation": "mū-rūmē; a-",
+          "pronunciation": "mu-rume",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Medicine",
-          "translation": "Mū-þaiga; mī-",
-          "pronunciation": "mū-þaiga; mī-",
+          "translation": "Mū-thaiga; mī-",
+          "pronunciation": "mu-thaiga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Monkey",
           "translation": "N-gīma; ma- (N-kīma (M.))",
-          "pronunciation": "n-gīma; ma- (n-kīma (m.))",
+          "pronunciation": "n-gima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Mountain",
           "translation": "Kī-rīma; i-rīma",
-          "pronunciation": "kī-rīma; i-rīma",
+          "pronunciation": "ki-rima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Nail (of finger or toe)",
           "translation": "Rū-ara; ndw-ara (N.: nj-ara)",
-          "pronunciation": "rū-ara; ndw-ara (n.: nj-ara)",
+          "pronunciation": "ru-ara",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Name",
           "translation": "Rī-ītwā; ma-ītwā",
-          "pronunciation": "rī-ītwā; ma-ītwā",
+          "pronunciation": "ri-itwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Navel",
-          "translation": "Mū-kωnyω; mī-. Rū-rīra (umbilical cord)",
-          "pronunciation": "mū-kωnyω; mī-.  rū-rīra (umbilical cord)",
+          "translation": "Mū-konyo; mī-. Rū-rīra (umbilical cord)",
+          "pronunciation": "mu-konyo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Neck",
-          "translation": "N-giṅgω; ma-",
-          "pronunciation": "n-giṅgω; ma-",
+          "translation": "N-ginggo; ma-",
+          "pronunciation": "n-ginggo; ma-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3941,8 +3745,8 @@
         },
         {
           "english": "Penis",
-          "translation": "Mū-þīta; mī-",
-          "pronunciation": "mū-þīta; mī-",
+          "translation": "Mū-thīta; mī-",
+          "pronunciation": "mu-thita",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -3956,175 +3760,175 @@
         {
           "english": "Pigeon",
           "translation": "N-dūtūra (K.). N-jīwa (M.)",
-          "pronunciation": "n-dūtūra (k.).  n-jīwa (m.)",
+          "pronunciation": "n-dutura",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Place",
           "translation": "Ha-ndū; kū-ndū",
-          "pronunciation": "ha-ndū; kū-ndū",
+          "pronunciation": "ha-ndu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Rat",
           "translation": "M-bīa; pl. same",
-          "pronunciation": "m-bīa; pl. same",
+          "pronunciation": "m-bia",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Rhinoceros",
           "translation": "Hūria; ma-",
-          "pronunciation": "hūria; ma-",
+          "pronunciation": "huria",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Road",
           "translation": "N-jīra; ma-",
-          "pronunciation": "n-jīra; ma-",
+          "pronunciation": "n-jira",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Shame",
-          "translation": "Þωnī",
-          "pronunciation": "þωnī",
+          "translation": "Þonī",
+          "pronunciation": "oni",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Shield",
           "translation": "N-gō; ma-",
-          "pronunciation": "n-gō; ma-",
+          "pronunciation": "n-go",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Shoulder",
           "translation": "Kī-āndi; ci-āndi",
-          "pronunciation": "kī-āndi; ci-āndi",
+          "pronunciation": "ki-andi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Skin",
           "translation": "Rū-ūa; nj-ūa",
-          "pronunciation": "rū-ūa; nj-ūa",
+          "pronunciation": "ru-ua",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Sky",
           "translation": "I-gūrū; ma-. Mā-tū (clouds). Kī-rūmbī (mist)",
-          "pronunciation": "i-gūrū; ma-.  mā-tū (clouds).  kī-rūmbī (mist)",
+          "pronunciation": "i-guru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Slave",
-          "translation": "Ngōmbω; ma-",
-          "pronunciation": "ngōmbω; ma-",
+          "translation": "Ngōmbo; ma-",
+          "pronunciation": "ngombo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Smoke",
-          "translation": "N-dωgω",
-          "pronunciation": "n-dωgω",
+          "translation": "N-dogo",
+          "pronunciation": "n-dogo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Song",
-          "translation": "Rū-īmbω; ny-īmbω. Kī-gwū, Gωcu (E.). Mū-ūmba (M.). Kī-suka (N.)",
-          "pronunciation": "rū-īmbω; ny-īmbω.  kī-gwū, gωcu (e.). mū-ūmba (m.).  kī-suka (n.)",
+          "translation": "Rū-īmbo; ny-īmbo. Kī-gwū, Gocu (E.). Mū-ūmba (M.). Kī-suka (N.)",
+          "pronunciation": "ru-imbo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Spear",
-          "translation": "I-tīmu; ma-. Rū-rōnjω (K.). Kī-rāma (M.)",
-          "pronunciation": "i-tīmu; ma-.  rū-rōnjω (k.). kī-rāma (m.)",
+          "translation": "I-tīmu; ma-. Rū-rōnjo (K.). Kī-rāma (M.)",
+          "pronunciation": "i-timu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Spirit, soul",
           "translation": "Ngōma; ma-. Kī-rūrū",
-          "pronunciation": "ngōma; ma-. kī-rūrū",
+          "pronunciation": "ngoma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Stick",
-          "translation": "Mū-tirīma; mī-. Rū-þanju; þanju. Siyare (M.)",
-          "pronunciation": "mū-tirīma; mī-.  rū-þanju; þanju.  siyare (m.)",
+          "translation": "Mū-tirīma; mī-. Rū-thanju; thanju. Siyare (M.)",
+          "pronunciation": "mu-tirima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Stone",
           "translation": "I-hīga; ma-",
-          "pronunciation": "i-hīga; ma-",
+          "pronunciation": "i-higa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Stool",
           "translation": "Gī-tī; i-tī",
-          "pronunciation": "gī-tī; i-tī",
+          "pronunciation": "gi-ti",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Tail",
-          "translation": "Mū-tīṅgōe; mī-. Gī-þita; i-. N-twmōi (M.)",
-          "pronunciation": "mū-tīṅgōe; mī-.  gī-þita; i-. n-twmōi (m.)",
+          "translation": "Mū-tīnggōe; mī-. Gī-thita; i-. N-twmōi (M.)",
+          "pronunciation": "mu-tinggoe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Tear",
-          "translation": "Rī-īþōrī; ma-īþōrī",
-          "pronunciation": "rī-īþōrī; ma-īþōrī",
+          "translation": "Rī-īthōrī; ma-īthōrī",
+          "pronunciation": "ri-ithori",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Testicles",
           "translation": "Hēkkē (pl.)",
-          "pronunciation": "hēkkē (pl.)",
+          "pronunciation": "hekke",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Thief",
           "translation": "Mū-īci; a-īci",
-          "pronunciation": "mū-īci; a-īci",
+          "pronunciation": "mu-ici",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Thigh",
           "translation": "Kī-ērō; ci-ērō",
-          "pronunciation": "kī-ērō; ci-ērō",
+          "pronunciation": "ki-ero",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Thing",
           "translation": "Kī-ndū; i-ndū",
-          "pronunciation": "kī-ndū; i-ndū",
+          "pronunciation": "ki-ndu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Thorn",
           "translation": "Mū-īgua; mī-īgua",
-          "pronunciation": "mū-īgua; mī-īgua",
+          "pronunciation": "mu-igua",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4137,15 +3941,15 @@
         },
         {
           "english": "To-day",
-          "translation": "Ūmū-þi",
-          "pronunciation": "ūmū-þi",
+          "translation": "Ūmū-thi",
+          "pronunciation": "umu-thi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Toe",
           "translation": "Kī-ara; ci-ara",
-          "pronunciation": "kī-ara; ci-ara",
+          "pronunciation": "ki-ara",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4159,112 +3963,112 @@
         {
           "english": "Tongue",
           "translation": "Rū-rīmi; n-dīmi",
-          "pronunciation": "rū-rīmi; n-dīmi",
+          "pronunciation": "ru-rimi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Tooth",
-          "translation": "I-geγō; ma-",
-          "pronunciation": "i-geγō; ma-",
+          "translation": "I-geghō; ma-",
+          "pronunciation": "i-gegho",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Town",
           "translation": "I-tūūra; ma-. Mū-ciī (homestead)",
-          "pronunciation": "i-tūūra; ma-.  mū-ciī (homestead)",
+          "pronunciation": "i-tuura",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Tree",
           "translation": "Mū-tī; mī-tī",
-          "pronunciation": "mū-tī; mī-tī",
+          "pronunciation": "mu-ti",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Twins",
-          "translation": "Ma-haþa (pl.)",
-          "pronunciation": "ma-haþa (pl.)",
+          "translation": "Ma-hatha (pl.)",
+          "pronunciation": "ma-hatha",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Urine",
-          "translation": "Mā-þugūmū (K.). Mā-zigūma (M.)",
-          "pronunciation": "mā-þugūmū (k.).  mā-zigūma (m.)",
+          "translation": "Mā-thugūmū (K.). Mā-zigūma (M.)",
+          "pronunciation": "ma-thugumu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Vein",
           "translation": "Mū-kīha; mī-",
-          "pronunciation": "mū-kīha; mī-",
+          "pronunciation": "mu-kiha",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "War",
           "translation": "M-bāra; ma-",
-          "pronunciation": "m-bāra; ma-",
+          "pronunciation": "m-bara",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Well, source",
-          "translation": "I-þīma; ma-",
-          "pronunciation": "i-þīma; ma-",
+          "translation": "I-thīma; ma-",
+          "pronunciation": "i-thima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "White man",
-          "translation": "Mū-þūṅgū; a-",
-          "pronunciation": "mū-þūṅgū; a-",
+          "translation": "Mū-thūnggū; a-",
+          "pronunciation": "mu-thunggu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Wind",
           "translation": "Rū-hūhō; hūhō",
-          "pronunciation": "rū-hūhō; hūhō",
+          "pronunciation": "ru-huho",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Witch",
           "translation": "Mū-rōgi; a-",
-          "pronunciation": "mū-rōgi; a-",
+          "pronunciation": "mu-rogi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Witchcraft",
           "translation": "Ū-rōgi",
-          "pronunciation": "ū-rōgi",
+          "pronunciation": "u-rogi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Womb",
-          "translation": "N-da. Ny-ūṅgū (K.). Kī-šīī (M.)",
-          "pronunciation": "n-da.  ny-ūṅgū (k.). kī-šīī (m.)",
+          "translation": "N-da. Ny-ūnggū (K.). Kī-shīī (M.)",
+          "pronunciation": "n-da ny-unggu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Wood",
-          "translation": "Rū-kū; ṅ-gū",
-          "pronunciation": "rū-kū; ṅ-gū",
+          "translation": "Rū-kū; ng-gū",
+          "pronunciation": "ru-ku",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Year",
           "translation": "Mw-āka; mī-āka. Kī-mēra (season)",
-          "pronunciation": "mw-āka; mī-āka.  kī-mēra (season)",
+          "pronunciation": "mw-aka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4285,14 +4089,14 @@
         {
           "english": "I, me, my",
           "translation": "Nīī, Nīē. Ndi-, N-. -n-. -ākwa",
-          "pronunciation": "nīī, nīē.  ndi-, n-. -n-. -ākwa",
+          "pronunciation": "nii nie ndi- n- -n- -akwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Thou, thee, thy",
           "translation": "We, Wee. Ū-. -kū-. -āku",
-          "pronunciation": "we, wee.  ū-. -kū-. -āku",
+          "pronunciation": "we wee u- -ku- -aku",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4305,8 +4109,8 @@
         },
         {
           "english": "We, us, our",
-          "translation": "I-þuī. Tū-. -tū-. -ītū",
-          "pronunciation": "i-þuī. tū-. -tū-. -ītū",
+          "translation": "I-thuī. Tū-. -tū-. -ītū",
+          "pronunciation": "i-thuī. tū-. -tū-. -ītū",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4320,21 +4124,21 @@
         {
           "english": "They, them, their",
           "translation": "O, Mō. A-, Mā-. -mā-. -āō",
-          "pronunciation": "o, mō. a-, mā-. -mā-. -āō",
+          "pronunciation": "o mo a- ma- -ma- -ao",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "This, these",
           "translation": "Ū-yū, ā-ā; ū-yū, ī-nō; rī-rī, mā-yā; gī-kī, ī-cī; ī-nō, ī-cī; rū-rū; tū-tū; kā-kā; ū-yū; kū-kū; hā-hā",
-          "pronunciation": "ū-yū, ā-ā; ū-yū, ī-nō; rī-rī, mā-yā; gī-kī, ī-cī; ī-nō, ī-cī; rū-rū; tū-tū; kā-k",
+          "pronunciation": "u-yu a-a",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "That, those",
           "translation": "Ū-cio, ā-cio; ū-cio, ī-cio; rī-rīa, mā-rīa; kī-rīa, cī-rīa; &c.",
-          "pronunciation": "ū-cio, ā-cio; ū-cio, ī-cio; rī-rīa, mā-rīa; kī-rīa, cī-rīa; &c.",
+          "pronunciation": "u-cio a-cio",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4348,7 +4152,7 @@
         {
           "english": "Fierce, sharp",
           "translation": "-ūrū. -ūgī (sharp)",
-          "pronunciation": "-ūrū. -ūgī (sharp)",
+          "pronunciation": "-uru -ugi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4390,7 +4194,7 @@
         {
           "english": "Rotten",
           "translation": "-ōrū",
-          "pronunciation": "-ōrū",
+          "pronunciation": "-oru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4425,14 +4229,14 @@
         {
           "english": "Behind",
           "translation": "Þūtha",
-          "pronunciation": "þūtha",
+          "pronunciation": "utha",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Below, down",
           "translation": "Þī",
-          "pronunciation": "þī",
+          "pronunciation": "i",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4452,8 +4256,8 @@
         },
         {
           "english": "In, inside",
-          "translation": "-þēnī",
-          "pronunciation": "-þēnī",
+          "translation": "-thēnī",
+          "pronunciation": "-thēnī",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4481,63 +4285,63 @@
         {
           "english": "There",
           "translation": "Hā-rīa, Kū-rīa",
-          "pronunciation": "hā-rīa, kū-rīa",
+          "pronunciation": "ha-ria ku-ria",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "No!",
           "translation": "Ācā!, Tī-gō!",
-          "pronunciation": "ācā!, tī-gō!",
+          "pronunciation": "aca ti-go",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix)",
           "translation": "Ndi-, Tī-, -tī-, -tā-",
-          "pronunciation": "ndi-, tī-, -tī-, -tā-",
+          "pronunciation": "ndi- ti- -ti- -ta-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
-          "english": "To —",
+          "english": "To",
           "translation": "Kū-, Gū-",
-          "pronunciation": "kū-, gū-",
+          "pronunciation": "ku- gu-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "To beat",
-          "translation": "-hūrā, -rīṅgā",
-          "pronunciation": "-hūrā, -rīṅgā",
+          "translation": "-hūrā, -rīnggā",
+          "pronunciation": "-hura -ringga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "To buy / To sell",
           "translation": "-gūrā, -ēndia",
-          "pronunciation": "-gūrā, -ēndia",
+          "pronunciation": "-gura -endia",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "To come",
           "translation": "-ūkā",
-          "pronunciation": "-ūkā",
+          "pronunciation": "-uka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "To cut",
           "translation": "-tīniā, -tēmā",
-          "pronunciation": "-tīniā, -tēmā",
+          "pronunciation": "-tinia -tema",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "To dance",
           "translation": "-īnā",
-          "pronunciation": "-īnā",
+          "pronunciation": "-ina",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4557,15 +4361,15 @@
         },
         {
           "english": "To go",
-          "translation": "-þiī",
-          "pronunciation": "-þiī",
+          "translation": "-thiī",
+          "pronunciation": "-thiī",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "To kill",
           "translation": "-ūragā",
-          "pronunciation": "-ūragā",
+          "pronunciation": "-uraga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4578,8 +4382,8 @@
         },
         {
           "english": "To laugh",
-          "translation": "-þēkā",
-          "pronunciation": "-þēkā",
+          "translation": "-thēkā",
+          "pronunciation": "-thēkā",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4593,21 +4397,21 @@
         {
           "english": "To love / want",
           "translation": "-ēndā",
-          "pronunciation": "-ēndā",
+          "pronunciation": "-enda",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "To see",
           "translation": "-ōnā, -rōrā",
-          "pronunciation": "-ōnā, -rōrā",
+          "pronunciation": "-ona -rora",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
         {
           "english": "To sit / remain / abide",
           "translation": "-īkāra",
-          "pronunciation": "-īkāra",
+          "pronunciation": "-ikara",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4628,7 +4432,7 @@
         {
           "english": "To steal",
           "translation": "-īyā",
-          "pronunciation": "-īyā",
+          "pronunciation": "-iya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
         },
@@ -4641,7 +4445,7 @@
         },
         {
           "english": "Borassus palm",
-          "translation": "? Mu-þi",
+          "translation": "? Mu-thi",
           "pronunciation": "mu thi",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
@@ -4656,14 +4460,14 @@
         {
           "english": "Country",
           "translation": "Rū-sena",
-          "pronunciation": "roo se-na",
+          "pronunciation": "ru-sena",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Door",
-          "translation": "Mū-raṅgω",
-          "pronunciation": "moo rang-oh",
+          "translation": "Mū-ranggo",
+          "pronunciation": "mu-ranggo",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
@@ -4691,13 +4495,13 @@
         {
           "english": "Fear",
           "translation": "Ṅ-korora",
-          "pronunciation": "ng ko-ro-ra",
+          "pronunciation": "n-korora",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Forest",
-          "translation": "Gi-þaka",
+          "translation": "Gi-thaka",
           "pronunciation": "gi tha-ka",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
@@ -4705,34 +4509,34 @@
         {
           "english": "Ghost",
           "translation": "N-kuā",
-          "pronunciation": "n kuah",
+          "pronunciation": "n-kua",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Goat (he)",
           "translation": "Ki-hīa",
-          "pronunciation": "ki heea",
+          "pronunciation": "ki-hia",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Heel",
-          "translation": "N-tωgigω",
+          "translation": "N-togigo",
           "pronunciation": "n toh-gi-goh",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Heel",
-          "translation": "Ki-soṅua",
+          "translation": "Ki-songua",
           "pronunciation": "ki song-ua",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Hoe",
-          "translation": "I-þanwa",
+          "translation": "I-thanwa",
           "pronunciation": "i than-wa",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
@@ -4740,20 +4544,20 @@
         {
           "english": "Hunger",
           "translation": "M-būta",
-          "pronunciation": "m boo-ta",
+          "pronunciation": "m-buta",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Leopard",
-          "translation": "ma- (N-gare",
+          "translation": "ma-",
           "pronunciation": "ma",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Monkey",
-          "translation": "ma- (N-kīma",
+          "translation": "ma-",
           "pronunciation": "ma",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
@@ -4768,21 +4572,21 @@
         {
           "english": "Pigeon",
           "translation": "N-jīwa",
-          "pronunciation": "n jee-wa",
+          "pronunciation": "n-jiwa",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Song",
           "translation": "Mū-ūmba",
-          "pronunciation": "moo oomb-a",
+          "pronunciation": "mu-umba",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Spear",
           "translation": "Kī-rāma",
-          "pronunciation": "kee rah-ma",
+          "pronunciation": "ki-rama",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
@@ -4796,35 +4600,35 @@
         {
           "english": "Tail",
           "translation": "N-twmōi",
-          "pronunciation": "n twmo-hi",
+          "pronunciation": "n-twmoi",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Urine",
           "translation": "Mā-zigūma",
-          "pronunciation": "mah zi-goo-ma",
+          "pronunciation": "ma-ziguma",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Water",
-          "translation": "Mā-ī, Rω-e",
-          "pronunciation": "mah ee roh e",
+          "translation": "Mā-ī, Ro-e",
+          "pronunciation": "ma-i ro-e",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Woman",
           "translation": "Mū-gūrra",
-          "pronunciation": "moo goor-ra",
+          "pronunciation": "mu-gurra",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },
         {
           "english": "Womb",
-          "translation": "Kī-šīī",
-          "pronunciation": "kee sheeee",
+          "translation": "Kī-shīī",
+          "pronunciation": "ki-shii",
           "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
           "audioFile": null
         },

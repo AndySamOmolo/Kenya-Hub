@@ -575,7 +575,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             {countySchools.length > 0 && (
               <div className="bg-bg-elevated/50 border border-border/60 rounded-xl p-4 space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="font-bold text-gold uppercase tracking-wider">🏆 Top KCSE Schools</span>
+                  <span className="font-bold text-gold uppercase tracking-wider inline-flex items-center gap-1.5"><DynamicIcon emoji="🏆" className="w-3.5 h-3.5" /> Top KCSE Schools</span>
                   <Link href="/tools/kcse-school-rankings/" className="text-gold hover:underline">Rankings →</Link>
                 </div>
                 {countySchools.map((s: any) => (
@@ -590,7 +590,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             {(countyParks.length > 0 || countyForests.length > 0) && (
               <div className="bg-bg-elevated/50 border border-border/60 rounded-xl p-4 space-y-2">
                 <span className="font-bold text-kenya-green-light uppercase tracking-wider block">
-                  🦁 Parks &amp; Gazetted Forests
+                  <span className="inline-flex items-center gap-1.5"><DynamicIcon emoji="🦁" className="w-3.5 h-3.5" /> Parks &amp; Gazetted Forests</span>
                 </span>
                 {countyParks.map((p: any) => (
                   <div key={p.name} className="flex justify-between">
@@ -600,7 +600,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
                 ))}
                 {countyForests.map((f: any) => (
                   <div key={f.name} className="flex justify-between">
-                    <span className="font-medium text-text-primary">🌲 {f.name}</span>
+                    <span className="font-medium text-text-primary">{f.name}</span>
                     <span className="text-text-muted">{f.sizeHa.toLocaleString()} ha</span>
                   </div>
                 ))}
@@ -610,7 +610,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             {countyAgrovets.length > 0 && (
               <div className="bg-bg-elevated/50 border border-border/60 rounded-xl p-4 space-y-2">
                 <span className="font-bold text-gold uppercase tracking-wider block">
-                  🏪 Licensed Agrovets in {county.name}
+                  <span className="inline-flex items-center gap-1.5"><DynamicIcon emoji="🏪" className="w-3.5 h-3.5" /> Licensed Agrovets in {county.name}</span>
                 </span>
                 {countyAgrovets.map((a: any) => (
                   <div key={a.name} className="flex justify-between">
@@ -624,7 +624,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             {countyLanguages.length > 0 && (
               <div className="bg-bg-elevated/50 border border-border/60 rounded-xl p-4 space-y-2">
                 <span className="font-bold text-sky-light uppercase tracking-wider block">
-                  🗣️ Local Languages Spoken
+                  <span className="inline-flex items-center gap-1.5"><DynamicIcon emoji="🗣️" className="w-3.5 h-3.5" /> Local Languages Spoken</span>
                 </span>
                 <div className="flex flex-wrap gap-1.5">
                   {countyLanguages.map((l: any) => (
@@ -673,7 +673,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
               href={`tel:${county.phone.replace(/\s+/g, "")}`}
               className="inline-flex items-center gap-2 bg-kenya-green text-white px-5 py-2.5 rounded-lg font-medium text-xs hover:bg-kenya-green-light transition-colors"
             >
-              📞 Call {county.phone}
+              <DynamicIcon emoji="📞" className="w-3.5 h-3.5" /> Call {county.phone}
             </a>
             {county.website && (
               <a
@@ -682,7 +682,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-bg-card border border-border text-gold px-5 py-2.5 rounded-lg font-medium text-xs hover:border-gold transition-colors"
               >
-                🌐 Visit {county.website.replace(/^https?:\/\//, "")} ↗
+                <DynamicIcon emoji="🌐" className="w-3.5 h-3.5" /> Visit {county.website.replace(/^https?:\/\//, "")} ↗
               </a>
             )}
           </div>

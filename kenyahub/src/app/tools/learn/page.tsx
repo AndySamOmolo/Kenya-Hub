@@ -51,6 +51,15 @@ function getLanguageXp(languageId: string): { xp: number; streak: number } {
   }
 }
 
+function formatLanguageDisplay(name: string, nativeName: string): { primary: string; secondary?: string } {
+  const cleanName = name.trim();
+  const cleanNative = (nativeName || "").trim();
+  if (!cleanNative || cleanName.toLowerCase().includes(cleanNative.toLowerCase())) {
+    return { primary: cleanName };
+  }
+  return { primary: cleanName, secondary: cleanNative };
+}
+
 export default function LearnPage() {
   const [progressMap, setProgressMap] = useState<
     Record<string, { xp: number; streak: number }>
@@ -68,30 +77,10 @@ export default function LearnPage() {
 
   const readyLangs = AVAILABLE_LANGUAGES.filter((l) => l.ready);
   const comingLangs = AVAILABLE_LANGUAGES.filter((l) => !l.ready);
-  const totalModulesCount = PUBLISHED_COURSES.reduce(
-    (sum, c) => sum + c.units.reduce((s, u) => s + u.skills.length, 0),
-    0
-  );
 
   return (
     <ToolShell tool={LEARN_TOOL} hideSource>
       <div className="mx-auto max-w-4xl px-0 sm:px-4 pb-4 sm:pb-8">
-        {/* Hero */}
-        <div className="mb-4 sm:mb-6 rounded-2xl border border-border bg-gradient-to-br from-bg-card via-bg-card to-gold/5 p-4 text-center sm:p-8">
-          <div className="flex justify-center mb-2 sm:mb-3"><DynamicIcon emoji="🗣️" className="w-10 h-10 sm:w-12 sm:h-12 text-gold" /></div>
-          <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary sm:text-3xl">
-            Kenyan Languages, Proverbs &amp; Oral Wisdom Hub
-          </h2>
-          <p className="mx-auto mt-1.5 sm:mt-2 max-w-lg text-xs sm:text-sm text-text-secondary">
-            Master {readyLangs.length} Kenyan indigenous languages with step-by-step guided skill trees (plus a 1-click option to unlock all modules at once), reference grammar guides, and authentic proverbs, riddles, and oral wisdom.
-          </p>
-
-          {/* Compact stats line */}
-          <p className="mt-2 sm:mt-3 text-xs font-medium text-gold">
-            {readyLangs.length} Courses · {totalModulesCount} Modules · 34 Historical Linguistic Sources (1842–1929)
-          </p>
-        </div>
-
         {/* Standalone Horizontal Pill Menu (Courses | Proverbs & Wisdom) */}
         <ExpandablePillRow className="mb-3.5 sm:mb-5">
           {[
@@ -138,6 +127,7 @@ export default function LearnPage() {
               {readyLangs.map((lang) => {
                 const xpData = progressMap[lang.id] || { xp: 0, streak: 0 };
                 const courseObj = PUBLISHED_COURSES.find((c) => c.config.id === lang.id);
+                const display = formatLanguageDisplay(lang.name, lang.nativeName);
 
                 return (
                   <div
@@ -153,10 +143,12 @@ export default function LearnPage() {
                       <div className="flex items-center gap-3 sm:gap-4">
                         <div className="flex-1 min-w-0">
                           <h4 className="text-sm sm:text-base font-bold text-text-primary group-hover:text-gold transition-colors break-words">
-                            {lang.name}
-                            <span className="ml-1 text-xs font-normal text-text-muted">
-                              ({lang.nativeName})
-                            </span>
+                            {display.primary}
+                            {display.secondary && (
+                              <span className="ml-1.5 text-xs font-normal text-text-muted">
+                                ({display.secondary})
+                              </span>
+                            )}
                           </h4>
                           <p className="mt-1 text-[0.7rem] text-text-secondary line-clamp-2 leading-relaxed">
                             {lang.description}

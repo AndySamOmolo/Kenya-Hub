@@ -3,6 +3,7 @@ import { Stack, ErrorBoundaryProps } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Pressable } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { Ionicons } from "@expo/vector-icons";
 import {
   useFonts,
   Outfit_400Regular,
@@ -80,7 +81,7 @@ export default function RootLayout() {
 export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
   return (
     <View style={styles.container}>
-      <Text style={styles.errorIcon}>⚠️</Text>
+      <Ionicons name="warning-outline" size={48} color="#F59E0B" style={{ marginBottom: 16 }} />
       <Text style={styles.title}>Something went wrong</Text>
       <Text style={styles.message}>{error.message}</Text>
       <Pressable onPress={retry} style={styles.retryButton}>

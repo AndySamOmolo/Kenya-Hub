@@ -1,4 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
+import { DynamicIcon } from "../components/DynamicIcon";
 import React, { useState, useMemo, useEffect, useRef } from "react";
 import {
   StyleSheet,
@@ -467,7 +468,7 @@ export function PublicHolidaysTool({ onScrollToTop }: { onScrollToTop?: () => vo
             }}
           >
             {daysUntilHoliday(nextHoliday.date) === 0
-              ? "🎉 Today!"
+              ? "Today!"
               : `${daysUntilHoliday(nextHoliday.date)} days away`}
           </Text>
         </View>
@@ -661,14 +662,17 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
                 },
               ]}
             >
-              <Text
-                style={[
-                  styles.categoryChipText,
-                  { color: active ? theme.kenyaBlack : theme.textPrimary },
-                ]}
-              >
-                {cat.icon} {cat.name}
-              </Text>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+                <DynamicIcon emoji={cat.icon} size={13} color={active ? theme.kenyaBlack : theme.gold} />
+                <Text
+                  style={[
+                    styles.categoryChipText,
+                    { color: active ? theme.kenyaBlack : theme.textPrimary },
+                  ]}
+                >
+                  {cat.name}
+                </Text>
+              </View>
             </Pressable>
           );
         })}
@@ -729,7 +733,7 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
           </View>
           <View style={styles.fineBottom}>
             <Text style={styles.fineCat}>
-              {item.categoryIcon} {item.categoryName} · Demerit:{" "}
+              {item.categoryName} · Demerit:{" "}
               <Text style={{ color: theme.gold, fontWeight: "700" }}>
                 {item.demeritPoints} pts
               </Text>
@@ -1676,7 +1680,7 @@ export function MatatuRoutesTool({ onScrollToTop }: { onScrollToTop?: () => void
                 }}
               >
                 <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
-                  🗺️ Interactive Route Map
+                  Interactive Route Map
                 </Text>
                 <Text style={{ fontSize: 11, color: theme.textMuted }}>
                   {activeRoute.stages.length} Stages

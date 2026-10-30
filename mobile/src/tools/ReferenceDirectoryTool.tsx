@@ -1,4 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
+import { DynamicIcon } from "../components/DynamicIcon";
 import React, { useState, useMemo, useEffect, useRef } from "react";
 import {
   StyleSheet,
@@ -477,9 +478,12 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             <View key={c.id || c.name} style={styles.card}>
               <View style={styles.cardTop}>
                 <View style={{ flex: 1 }}>
-                  <Text style={styles.cardTitle}>
-                    {c.icon ? `${c.icon} ` : ""}{c.name} {c.swahili ? `(${c.swahili})` : ""}
-                  </Text>
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+                    {c.icon ? <DynamicIcon emoji={c.icon} size={16} color={theme.kenyaGreenLight} /> : null}
+                    <Text style={styles.cardTitle}>
+                      {c.name} {c.swahili ? `(${c.swahili})` : ""}
+                    </Text>
+                  </View>
                   <Text style={styles.cardSubtitle}>
                     Maturity: {c.maturityDays} days · Altitude: {c.altitudeM}m · Temp: {c.optimalTempC}°C
                   </Text>
@@ -513,7 +517,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
                     >
                       <Text style={{ fontSize: 8, fontWeight: "800", color: theme.textPrimary }}>{m}</Text>
                       <Text style={{ fontSize: 7, color: isPlant ? theme.kenyaGreenLight : isHarvest ? theme.gold : theme.textMuted }}>
-                        {isPlant ? "🌱" : isHarvest ? "🌾" : "·"}
+                        {isPlant ? "P" : isHarvest ? "H" : "·"}
                       </Text>
                     </View>
                   );
@@ -547,7 +551,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
                 )}
                 {c.tips && (
                   <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4, fontStyle: "italic" }}>
-                    💡 Agronomist Tip: {c.tips}
+                    Agronomist Tip: {c.tips}
                   </Text>
                 )}
               </View>
@@ -1056,7 +1060,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             style={[styles.pillBtn, hikingOnly && styles.pillBtnActive]}
           >
             <Text style={[styles.pillBtnText, hikingOnly && styles.pillBtnTextActive]}>
-              🥾 Hiking Open Only
+              Hiking Open Only
             </Text>
           </Pressable>
         </View>
@@ -1259,7 +1263,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         {/* Fraud Warning Banner */}
         <View style={[styles.card, { borderColor: theme.kenyaRedLight, backgroundColor: "rgba(190, 33, 38, 0.1)" }]}>
           <Text style={{ fontSize: 12, fontWeight: "800", color: theme.kenyaRedLight }}>
-            ⚠️ PROPERTY FRAUD ALERT (ESTATE AGENTS ACT CAP 533)
+            PROPERTY FRAUD ALERT (ESTATE AGENTS ACT CAP 533)
           </Text>
           <Text style={{ fontSize: 11, color: theme.textPrimary, lineHeight: 16 }}>
             Under Kenyan law, it is a criminal offense to practice as an estate agent without a current Annual Practicing Certificate from the Estate Agents Registration Board (EARB). Never pay viewing fees or deposit money into a personal M-Pesa account.
@@ -1323,7 +1327,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.card}>
           {redFlags.map((flag, idx) => (
             <Text key={idx} style={{ fontSize: 12, color: theme.textSecondary, marginBottom: 4 }}>
-              🚩 {flag}
+              • {flag}
             </Text>
           ))}
         </View>
@@ -1540,7 +1544,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <View key={idx} style={styles.card}>
             <View style={styles.cardTop}>
               <View style={{ flex: 1 }}>
-                <Text style={styles.cardTitle}>{r.icon} {r.type}</Text>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}><DynamicIcon emoji={r.icon} size={16} color={theme.gold} /><Text style={styles.cardTitle}>{r.type}</Text></View>
                 <Text style={styles.cardSubtitle}>Market: {r.market} · {r.unit}</Text>
               </View>
               <View style={[styles.badge, { backgroundColor: `${theme.gold}20`, borderColor: theme.gold }]}>

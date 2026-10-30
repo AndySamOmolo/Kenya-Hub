@@ -8,7 +8,7 @@ import cbcData from "@/data/cbc-curriculum.json";
 const tool = TOOLS.find((t) => t.slug === "cbc-grade-age")!;
 
 const faq = [
-  { question: "What age should a child start PP1 in Kenya?", answer: "A child should turn 4 years old in the calendar year they join PP1. For example, if a child turns 4 anytime in 2025, they should join PP1 in January 2025." },
+  { question: "What age should a child start PP1 in Kenya?", answer: "A child should turn 4 years old in the calendar year they join PP1. For example, if a child turns 4 anytime in 2026, they should join PP1 in January 2026." },
   { question: "Can my child join Grade 1 at age 5?", answer: "The recommended age for Grade 1 is turning 6 in the calendar year. Starting earlier is generally discouraged by the Ministry of Education, though some private schools may accept younger children." },
   { question: "What is the maximum age for PP1?", answer: "While there is no strict legal maximum, the recommended age is turning 4 in the calendar year. Children who are significantly older may be placed in a higher grade at the school's discretion." },
 ];

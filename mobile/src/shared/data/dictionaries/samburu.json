@@ -136,21 +136,21 @@
         {
           "english": "One",
           "translation": "naɓô (fem.) / oɓô (masc.) / noɓô (place)",
-          "pronunciation": "na-bo / o-bo",
+          "pronunciation": "na o",
           "context": "Wikipedia Nilotic_languages — Samburu numerals",
           "audioFile": null
         },
         {
           "english": "Two",
           "translation": "aré (fem.) / waáre (masc.)",
-          "pronunciation": "a-re / waa-re",
+          "pronunciation": "are",
           "context": "Wikipedia Nilotic_languages — Samburu numerals",
           "audioFile": null
         },
         {
           "english": "Three",
           "translation": "uní (fem.) / okúni (masc.)",
-          "pronunciation": "u-ni / o-ku-ni",
+          "pronunciation": "uni",
           "context": "Wikipedia Nilotic_languages — Samburu numerals",
           "audioFile": null
         },
@@ -276,14 +276,14 @@
         {
           "english": "Child / Children",
           "translation": "nkerai (pl. ngera)",
-          "pronunciation": "nke-rai (pl. ngera)",
+          "pronunciation": "nkerai",
           "context": "Samburu (North Maa) kinship",
           "audioFile": null
         },
         {
           "english": "Warrior / Youth",
           "translation": "lmurrani (pl. lmurran)",
-          "pronunciation": "lmur-ra-ni (pl. lmur-ran)",
+          "pronunciation": "lmurrani",
           "context": "Samburu age-set warrior",
           "audioFile": null
         },
@@ -318,21 +318,21 @@
         {
           "english": "Name",
           "translation": "ŋ-kárn-á (nkárná)",
-          "pronunciation": "nkar-na",
+          "pronunciation": "-karn-a",
           "context": "Rainer Vossen (1982) — Sampur",
           "audioFile": null
         },
         {
           "english": "Brother",
           "translation": "lalashe; Añgargenna (pl.)",
-          "pronunciation": "lalashe; añgargenna (pl.)",
+          "pronunciation": "lalashe",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
         {
           "english": "Chief",
           "translation": "Embatiān, Ol aitórienĭ, Lagwainani",
-          "pronunciation": "embatiān, ol aitórienĭ, lagwainani",
+          "pronunciation": "embatian ol aitorieni lagwainani",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -360,7 +360,7 @@
         {
           "english": "Wife",
           "translation": "Eñ getok; En gedūa (pl.)",
-          "pronunciation": "eñ getok; en gedūa (pl.)",
+          "pronunciation": "en getok",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         }
@@ -374,21 +374,21 @@
         {
           "english": "Eye",
           "translation": "ŋ-kɔŋ-ʊ́ (nkong'u)",
-          "pronunciation": "nkong-u",
+          "pronunciation": "-k -",
           "context": "Rainer Vossen (1982) — Sampur",
           "audioFile": null
         },
         {
           "english": "Ear",
           "translation": "ŋ-kɪ́-yyɔk (nkiyyok)",
-          "pronunciation": "nkiy-yok",
+          "pronunciation": "-k -yy k",
           "context": "Rainer Vossen (1982) — Sampur",
           "audioFile": null
         },
         {
           "english": "Nose",
           "translation": "ŋ-kwar-íé (nkwarie)",
-          "pronunciation": "nkwa-rie",
+          "pronunciation": "-kwar-ie",
           "context": "Rainer Vossen (1982) — Sampur",
           "audioFile": null
         },
@@ -409,7 +409,7 @@
         {
           "english": "Mouth / Language",
           "translation": "ŋ-kʊtʊ́k (nkutuk)",
-          "pronunciation": "nku-tuk",
+          "pronunciation": "-k t k",
           "context": "Rainer Vossen (1982) — Sampur",
           "audioFile": null
         },
@@ -456,9 +456,9 @@
           "audioFile": null
         },
         {
-          "english": "traditional Samburu leather carrying bag; origin of the name Samburu",
+          "english": "Traditional Samburu leather carrying bag; origin of the name Samburu",
           "translation": "saamburr (Sampur)",
-          "pronunciation": "saamburr (sampur)",
+          "pronunciation": "saamburr",
           "context": "Samburu (North Maa)",
           "audioFile": null
         },
@@ -470,114 +470,93 @@
           "audioFile": null
         },
         {
-          "english": "eye",
+          "english": "Eye",
           "translation": "ŋ-kɔŋ-ʊ́",
-          "pronunciation": "ŋ-kɔŋ-ʊ́ (samburu) / en-kong'u (maasai)",
+          "pronunciation": "-k -",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "ear",
+          "english": "Ear",
           "translation": "ŋ-kɪ́-yyɔk",
-          "pronunciation": "ŋ-kɪ́-yyɔk (samburu) / en-kiok (maasai)",
+          "pronunciation": "-k -yy k",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "tooth",
+          "english": "Tooth",
           "translation": "l-alá-ɪ̀",
-          "pronunciation": "l-alá-ɪ̀ (samburu) / ol-alai (maasai)",
+          "pronunciation": "l-ala-",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "tongue",
+          "english": "Tongue",
           "translation": "l-ŋɛ́jɛ́p",
-          "pronunciation": "l-ŋɛ́jɛ́p (samburu) / ol-ng'ejep (maasai)",
+          "pronunciation": "l- j p",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "mouth, language",
+          "english": "Mouth, language",
           "translation": "ŋ-kʊtʊ́k",
-          "pronunciation": "ŋ-kʊtʊ́k (samburu) / en-gutyuk (maasai)",
+          "pronunciation": "-k t k",
           "context": "Samburu & Maasai (Hollis 1905 & Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "bone",
+          "english": "Bone",
           "translation": "l-óì-tò",
-          "pronunciation": "l-óì-tò (samburu) / ol-oito (maasai)",
+          "pronunciation": "l-oi-to",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "tree, wood, herbal medicine",
+          "english": "Tree, wood, herbal medicine",
           "translation": "l-caní",
-          "pronunciation": "l-caní (samburu) / ol-chani (maasai)",
+          "pronunciation": "l-cani",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "water, stream",
+          "english": "Water, stream",
           "translation": "ŋ-kár-ɛ́",
-          "pronunciation": "ŋ-kár-ɛ́ (samburu) / en-gare (maasai)",
+          "pronunciation": "-kar-",
           "context": "Samburu & Maasai (Hollis 1905 & Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "name",
+          "english": "Name",
           "translation": "ŋ-kárn-á",
-          "pronunciation": "ŋ-kárn-á (samburu) / en-karna (maasai)",
+          "pronunciation": "-karn-a",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "one (1 — feminine / masculine / place)",
-          "translation": "naɓô / oɓô / noɓô",
-          "pronunciation": "naɓô / oɓô / noɓô (samburu)",
-          "context": "Samburu (North Maa)",
-          "audioFile": null
-        },
-        {
-          "english": "two (2 — feminine / masculine)",
-          "translation": "aré / waáre",
-          "pronunciation": "aré / waáre (samburu)",
-          "context": "Samburu (North Maa)",
-          "audioFile": null
-        },
-        {
-          "english": "four (4 — illustrating implosive /ɠ/)",
-          "translation": "onɠwán",
-          "pronunciation": "onɠwán (samburu)",
-          "context": "Samburu (North Maa)",
-          "audioFile": null
-        },
-        {
-          "english": "five (5), six (6), seven (7), eight (8), nine (9), ten (10)",
+          "english": "Five (5), six (6), seven (7), eight (8), nine (9), ten (10)",
           "translation": "ímɟêt, ílê, sápâ, ísɟêt, sâːl, tômôn",
-          "pronunciation": "ímɟêt, ílê, sápâ, ísɟêt, sâːl, tômôn",
+          "pronunciation": "im et ile sapa is et sa l tomon",
           "context": "Samburu (North Maa)",
           "audioFile": null
         },
         {
-          "english": "nose",
+          "english": "Nose",
           "translation": "ŋ-kwar-íé",
-          "pronunciation": "ŋ-kwar-íé (samburu)",
+          "pronunciation": "-kwar-ie",
           "context": "Samburu (North Maa)",
           "audioFile": null
         },
         {
-          "english": "blood",
+          "english": "Blood",
           "translation": "l-ɔɗɔ́ / osarge (Maasai)",
-          "pronunciation": "l-ɔɗɔ́ (samburu) / osarge (maasai)",
+          "pronunciation": "l-",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "to eat",
+          "english": "To eat",
           "translation": "a-ɲá (Samburu & Maasai)",
-          "pronunciation": "a-ɲá (samburu & maasai)",
+          "pronunciation": "a- a",
           "context": "Samburu & Maasai (Vossen 1982)",
           "audioFile": null
         },
@@ -597,8 +576,8 @@
         },
         {
           "english": "Belly",
-          "translation": "Ngωṣoge",
-          "pronunciation": "ngωṣoge",
+          "translation": "Ngoṣoge",
+          "pronunciation": "ngoṣoge",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -703,7 +682,7 @@
         {
           "english": "Toe",
           "translation": "El gimojinno; gimojik, pl",
-          "pronunciation": "el gimojinno;  gimojik, pl",
+          "pronunciation": "el gimojinno; gimojik, pl",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         }
@@ -808,7 +787,7 @@
         {
           "english": "Eland",
           "translation": "Ωsirwa",
-          "pronunciation": "ωsirwa",
+          "pronunciation": "sirwa",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -842,8 +821,8 @@
         },
         {
           "english": "Baboon",
-          "translation": "Lωtimi, Lωtini",
-          "pronunciation": "lωtimi, lωtini",
+          "translation": "Lotimi, Lotini",
+          "pronunciation": "lotimi, lotini",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -856,8 +835,8 @@
         },
         {
           "english": "Buffalo",
-          "translation": "Ol ωsωwan, oisā",
-          "pronunciation": "ol ωsωwan,  oisā",
+          "translation": "Ol osowan, oisā",
+          "pronunciation": "ol osowan, oisā",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -899,7 +878,7 @@
         {
           "english": "Fish",
           "translation": "Ωsingirri",
-          "pronunciation": "ωsingirri",
+          "pronunciation": "singirri",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -968,8 +947,8 @@
         },
         {
           "english": "Zebra",
-          "translation": "Ol loitikω",
-          "pronunciation": "ol loitikω",
+          "translation": "Ol loitiko",
+          "pronunciation": "ol loitiko",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         }
@@ -990,7 +969,7 @@
         {
           "english": "Water",
           "translation": "ŋ-kár-ɛ́ (nkare)",
-          "pronunciation": "nka-re",
+          "pronunciation": "-kar-",
           "context": "Rainer Vossen (1982) — Sampur",
           "audioFile": null
         },
@@ -1074,133 +1053,133 @@
         {
           "english": "January (Month 1)",
           "translation": "Lapa le obo (Obo)",
-          "pronunciation": "lapa le obo (obo)",
+          "pronunciation": "lapa le obo",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "February (Month 2)",
           "translation": "Lapa le waare (Waa)",
-          "pronunciation": "lapa le waare (waa)",
+          "pronunciation": "lapa le waare",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "March (Month 3)",
           "translation": "Lapa le okuni (Oku)",
-          "pronunciation": "lapa le okuni (oku)",
+          "pronunciation": "lapa le okuni",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "April (Month 4)",
           "translation": "Lapa le ong’wan (Ong)",
-          "pronunciation": "lapa le ong’wan (ong)",
+          "pronunciation": "lapa le ong wan",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "May (Month 5)",
           "translation": "Lapa le imet (Ime)",
-          "pronunciation": "lapa le imet (ime)",
+          "pronunciation": "lapa le imet",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "June (Month 6)",
           "translation": "Lapa le ile (Ile)",
-          "pronunciation": "lapa le ile (ile)",
+          "pronunciation": "lapa le ile",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "July (Month 7)",
           "translation": "Lapa le sapa (Sap)",
-          "pronunciation": "lapa le sapa (sap)",
+          "pronunciation": "lapa le sapa",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "August (Month 8)",
           "translation": "Lapa le isiet (Isi)",
-          "pronunciation": "lapa le isiet (isi)",
+          "pronunciation": "lapa le isiet",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "September (Month 9)",
           "translation": "Lapa le saal (Saa)",
-          "pronunciation": "lapa le saal (saa)",
+          "pronunciation": "lapa le saal",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "October (Month 10)",
           "translation": "Lapa le tomon (Tom)",
-          "pronunciation": "lapa le tomon (tom)",
+          "pronunciation": "lapa le tomon",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "November (Month 11)",
           "translation": "Lapa le tomon obo (Tob)",
-          "pronunciation": "lapa le tomon obo (tob)",
+          "pronunciation": "lapa le tomon obo",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "December (Month 12)",
           "translation": "Lapa le tomon waare (Tow)",
-          "pronunciation": "lapa le tomon waare (tow)",
+          "pronunciation": "lapa le tomon waare",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "Sunday (Day of the week)",
           "translation": "Mderot ee are (Are)",
-          "pronunciation": "mderot ee are (are)",
+          "pronunciation": "mderot ee are",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "Monday (Day of the week)",
           "translation": "Mderot ee kuni (Kun)",
-          "pronunciation": "mderot ee kuni (kun)",
+          "pronunciation": "mderot ee kuni",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "Tuesday (Day of the week)",
           "translation": "Mderot ee ong’wan (Ong)",
-          "pronunciation": "mderot ee ong’wan (ong)",
+          "pronunciation": "mderot ee ong wan",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "Wednesday (Day of the week)",
           "translation": "Mderot ee inet (Ine)",
-          "pronunciation": "mderot ee inet (ine)",
+          "pronunciation": "mderot ee inet",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "Thursday (Day of the week)",
           "translation": "Mderot ee ile (Ile)",
-          "pronunciation": "mderot ee ile (ile)",
+          "pronunciation": "mderot ee ile",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "Friday (Day of the week)",
           "translation": "Mderot ee sapa (Sap)",
-          "pronunciation": "mderot ee sapa (sap)",
+          "pronunciation": "mderot ee sapa",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
         {
           "english": "Saturday (Day of the week)",
           "translation": "Mderot ee kwe (Kwe)",
-          "pronunciation": "mderot ee kwe (kwe)",
+          "pronunciation": "mderot ee kwe",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
@@ -1296,30 +1275,9 @@
           "audioFile": null
         },
         {
-          "english": "Ethiopian Birr (ETB)",
-          "translation": "Njilingi eel Uhabeshi",
-          "pronunciation": "njilingi eel uhabeshi",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
           "english": "Somali Shilling (SOS)",
           "translation": "Njilingi eel Somalia",
           "pronunciation": "njilingi eel somalia",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Rwandan Franc (RWF)",
-          "translation": "Njilingi eel Rwanda",
-          "pronunciation": "njilingi eel rwanda",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Burundian Franc (BIF)",
-          "translation": "Njilingi eel Burundi",
-          "pronunciation": "njilingi eel burundi",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
@@ -1331,23 +1289,9 @@
           "audioFile": null
         },
         {
-          "english": "Congolese Franc (CDF)",
-          "translation": "Njilingi eel Kongo",
-          "pronunciation": "njilingi eel kongo",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
           "english": "South African Rand (ZAR)",
           "translation": "Njilingi eel Afrika Kusini",
           "pronunciation": "njilingi eel afrika kusini",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Nigerian Naira (NGN)",
-          "translation": "Njilingi eel Nijeria",
-          "pronunciation": "njilingi eel nijeria",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
@@ -1373,13 +1317,6 @@
           "audioFile": null
         },
         {
-          "english": "Angolan Kwanza (AOA)",
-          "translation": "Njilingi eel Angola",
-          "pronunciation": "njilingi eel angola",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
           "english": "Botswanan Pula (BWP)",
           "translation": "Njilingi eel Botswana",
           "pronunciation": "njilingi eel botswana",
@@ -1394,34 +1331,6 @@
           "audioFile": null
         },
         {
-          "english": "Malagasy Ariary (MGA)",
-          "translation": "Njilingi eel Bukini",
-          "pronunciation": "njilingi eel bukini",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Mauritian Rupee (MUR)",
-          "translation": "Njilingi eel Morisi",
-          "pronunciation": "njilingi eel morisi",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Seychellois Rupee (SCR)",
-          "translation": "Njilingi eel Shelisheli",
-          "pronunciation": "njilingi eel shelisheli",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Djiboutian Franc (DJF)",
-          "translation": "Njilingi eel Jibuti",
-          "pronunciation": "njilingi eel jibuti",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
           "english": "Eritrean Nakfa (ERN)",
           "translation": "Njilingi eel Eritrea",
           "pronunciation": "njilingi eel eritrea",
@@ -1429,65 +1338,9 @@
           "audioFile": null
         },
         {
-          "english": "Libyan Dinar (LYD)",
-          "translation": "Njilingi eel Libya",
-          "pronunciation": "njilingi eel libya",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Tunisian Dinar (TND)",
-          "translation": "Njilingi eel Tunisia",
-          "pronunciation": "njilingi eel tunisia",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Algerian Dinar (DZD)",
-          "translation": "Njilingi eel Aljeria",
-          "pronunciation": "njilingi eel aljeria",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Moroccan Dirham (MAD)",
-          "translation": "Njilingi eel Moroko",
-          "pronunciation": "njilingi eel moroko",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Gambian Dalasi (GMD)",
-          "translation": "Njilingi eel Gambia",
-          "pronunciation": "njilingi eel gambia",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
-          "translation": "Leoni",
-          "pronunciation": "leoni",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
           "english": "Liberian Dollar (LRD)",
           "translation": "Dola eel Liberia",
           "pronunciation": "dola eel liberia",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "West African CFA Franc (XOF)",
-          "translation": "Njilingi eel CFA BCEAO",
-          "pronunciation": "njilingi eel cfa bceao",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Central African CFA Franc (XAF)",
-          "translation": "Njilingi eel CFA BEAC",
-          "pronunciation": "njilingi eel cfa beac",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
@@ -1502,48 +1355,6 @@
           "english": "British Pound (GBP)",
           "translation": "Njilingi eel Uingereza",
           "pronunciation": "njilingi eel uingereza",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Indian Rupee (INR)",
-          "translation": "Njilingi eel India",
-          "pronunciation": "njilingi eel india",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Chinese Yuan (CNY)",
-          "translation": "Njilingi eel China",
-          "pronunciation": "njilingi eel china",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Japanese Yen (JPY)",
-          "translation": "Njilingi eel Kijapani",
-          "pronunciation": "njilingi eel kijapani",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Saudi Riyal (SAR)",
-          "translation": "Njilingi eel Saudia",
-          "pronunciation": "njilingi eel saudia",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "United Arab Emirates Dirham (AED)",
-          "translation": "Njilingi eel Falme za Kiarabu",
-          "pronunciation": "njilingi eel falme za kiarabu",
-          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
-          "audioFile": null
-        },
-        {
-          "english": "Swiss Franc (CHF)",
-          "translation": "Njilingi eel Uswisi",
-          "pronunciation": "njilingi eel uswisi",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml)",
           "audioFile": null
         },
@@ -1836,22 +1647,22 @@
         },
         {
           "english": "Grass",
-          "translation": "Ol kωjetá",
-          "pronunciation": "ol kωjetá",
+          "translation": "Ol kojetá",
+          "pronunciation": "ol kojetá",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
         {
           "english": "Ground",
-          "translation": "Ngulubwωk",
-          "pronunciation": "ngulubwωk",
+          "translation": "Ngulubwok",
+          "pronunciation": "ngulubwok",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
         {
           "english": "Ground nut",
-          "translation": "Lωdωa",
-          "pronunciation": "lωdωa",
+          "translation": "Lodoa",
+          "pronunciation": "lodoa",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -1865,7 +1676,7 @@
         {
           "english": "Moon",
           "translation": "Ol laba (pl. Labaitin)",
-          "pronunciation": "ol laba (pl. labaitin)",
+          "pronunciation": "ol laba",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -1913,8 +1724,8 @@
         },
         {
           "english": "Wind",
-          "translation": "Alasagutωni (cold)",
-          "pronunciation": "alasagutωni (cold)",
+          "translation": "Alasagutoni (cold)",
+          "pronunciation": "alasagutoni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -1976,8 +1787,8 @@
         },
         {
           "english": "Banana",
-          "translation": "Bωtωte",
-          "pronunciation": "bωtωte",
+          "translation": "Botote",
+          "pronunciation": "botote",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2229,7 +2040,7 @@
         {
           "english": "Rhinoceros",
           "translation": "Ωmūiny'",
-          "pronunciation": "ωmūiny'",
+          "pronunciation": "muiny'",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2256,8 +2067,8 @@
         },
         {
           "english": "Axe",
-          "translation": "Ndωllo",
-          "pronunciation": "ndωllo",
+          "translation": "Ndollo",
+          "pronunciation": "ndollo",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2306,7 +2117,7 @@
         {
           "english": "(white)",
           "translation": "ĕñōni ĕpor",
-          "pronunciation": "ĕñōni ĕpor",
+          "pronunciation": "enoni epor",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2348,14 +2159,14 @@
         {
           "english": "Devil",
           "translation": "Ol oiyirwa, manañani",
-          "pronunciation": "ol oiyirwa,  manañani",
+          "pronunciation": "ol oiyirwa, manañani",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
         {
           "english": "Doctor",
           "translation": "Ol leiboni (medicine-man)",
-          "pronunciation": "ol leiboni (medicine-man)",
+          "pronunciation": "ol leiboni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2390,7 +2201,7 @@
         {
           "english": "Excrement",
           "translation": "Ngik (of men), Modī́ (of oxen)",
-          "pronunciation": "ngik (of men), modī́ (of oxen)",
+          "pronunciation": "ngik",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2515,8 +2326,8 @@
         },
         {
           "english": "Rat",
-          "translation": "Nderωni",
-          "pronunciation": "nderωni",
+          "translation": "Nderoni",
+          "pronunciation": "nderoni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2544,7 +2355,7 @@
         {
           "english": "Stick",
           "translation": "Eñ udi; Eñ usidin (pl.)",
-          "pronunciation": "eñ udi; eñ usidin (pl.)",
+          "pronunciation": "en udi",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2557,15 +2368,15 @@
         },
         {
           "english": "Thief",
-          "translation": "Ol aburωni",
-          "pronunciation": "ol aburωni",
+          "translation": "Ol aburoni",
+          "pronunciation": "ol aburoni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
         {
           "english": "Thing",
-          "translation": "Entωki",
-          "pronunciation": "entωki",
+          "translation": "Entoki",
+          "pronunciation": "entoki",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2584,7 +2395,7 @@
           "audioFile": null
         },
         {
-          "english": "molar",
+          "english": "Molar",
           "translation": "Entakolla",
           "pronunciation": "entakolla",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
@@ -2593,7 +2404,7 @@
         {
           "english": "Town or settlement",
           "translation": "Manyata (warriors'), Añgañ (tribal)",
-          "pronunciation": "manyata (warriors'), añgañ (tribal)",
+          "pronunciation": "manyata",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2614,7 +2425,7 @@
         {
           "english": "War",
           "translation": "En dyore (or Jore)",
-          "pronunciation": "en dyore (or jore)",
+          "pronunciation": "en dyore",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2647,7 +2458,7 @@
           "audioFile": null
         },
         {
-          "english": "young",
+          "english": "Young",
           "translation": "Endīto",
           "pronunciation": "endīto",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
@@ -2662,8 +2473,8 @@
         },
         {
           "english": "Eleven",
-          "translation": "Tomon obω",
-          "pronunciation": "tomon obω",
+          "translation": "Tomon obo",
+          "pronunciation": "tomon obo",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
           "audioFile": null
         },
@@ -2707,13 +2518,6 @@
           "translation": "Il-oikop / Il-Burkeneji (Naibor Keneji = 'white sheep/goats') / Sampur",
           "pronunciation": "il-oi-kop / il-bur-ke-ne-ji / sam-pur",
           "context": "Sir Harry H. Johnston (1902, Vol. II) & C. W. Hobley (1910, pp. 159–160, 162 n.)",
-          "audioFile": null
-        },
-        {
-          "english": "Major Samburu Phratries / Clan Sections (Masula, Pisikishu, Nyaparai, Lorogishu, Longeli,ukumai)",
-          "translation": "9 Sambur Geographical Divisions & Chiefs (Hobley 1910, p. 159): (1) Pusigishu ('grey cattle', Chief Ol-Lelelit), (2) Masola (Chief Lal taram), (3) Lukumai (Chief Ol Emantili), (4) L'orogishu / L'or...",
-          "pronunciation": "pu-si-gi-shu, ma-so-la, lu-ku-mai, lo-ro-gi-shu, si-tat, ol le-si-la-li, ma-le-tis",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 159–160",
           "audioFile": null
         },
         {
@@ -2787,20 +2591,6 @@
           "audioFile": null
         },
         {
-          "english": "The Mogogodo (Mokogodo / Il Mwesi / Yaaku) Remnant Vocabulary, Numerals & Verb Paradigms Recorded by C. W. Hobley (1910, pp. 146–155)",
-          "translation": "Chiefs Parmashu & Matungi (dwelling at Pore, Doinyo Longishu & Mgur Nanyori; consulting Mweru laibon Lakaibe) • Numerals (p. 153): Wēhet (1), Chei (2), Hāāt (3), Shuen (4), Hobi (5), Kapūn / Apūn (...",
-          "pronunciation": "mo-go-go-do / we-het, chei, haat, shu-en, ho-bi, ka-pun, te-ta / ke-sho-bo-shon / so-kho",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. V, pp. 146–155 | Additional items: Verb Paradigms (pp. 154–155): Ndeta / Egeto giheji / Egitai / Egeto gihechen (I/he/we/they eat), Ngeheno / Geheno / Cheheno / Kegeheni...",
-          "audioFile": null
-        },
-        {
-          "english": "Sir Harry Johnston's",
-          "translation": "Burkeneji (Loiborkeneji / Samburu): described by Johnston (pp. 798, 802, 843) as the most primitive branch of the Masai stock",
-          "pronunciation": "bur-ke-ne-ji / loi-bor-ke-ne-ji",
-          "context": "1902, Vol. II, pp. 798, 802, 843, 849–850) Account of the Burkeneji (Samburu / Loiborkeneji) & Lake Rudolf Pastoralists — Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 798, 802, 843, 849–850 — driven some 50 years prior by th...",
-          "audioFile": null
-        },
-        {
           "english": "Blood",
           "translation": "As-sarge",
           "pronunciation": "as sar-ge",
@@ -2809,7 +2599,7 @@
         },
         {
           "english": "Bone",
-          "translation": "Oloitω; Eloik (pl.)",
+          "translation": "Oloito; Eloik (pl.)",
           "pronunciation": "o-loi-toh",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
@@ -2831,14 +2621,14 @@
         {
           "english": "Elephant",
           "translation": "Ol lañqaina",
-          "pronunciation": "ol la qai-na",
+          "pronunciation": "ol lanqaina",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
         {
           "english": "Eye",
           "translation": "Angoño; Ngoinyek (pl.)",
-          "pronunciation": "ang-o o",
+          "pronunciation": "angono",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
@@ -2907,28 +2697,28 @@
         },
         {
           "english": "I come",
-          "translation": "Alωtu",
+          "translation": "Alotu",
           "pronunciation": "a-loh-tu",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
         {
           "english": "I come not",
-          "translation": "Ma lωtu",
+          "translation": "Ma lotu",
           "pronunciation": "ma loh-tu",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
         {
           "english": "I drank",
-          "translation": "Atωgω",
+          "translation": "Atogo",
           "pronunciation": "a-toh-goh",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
         {
           "english": "I eat",
-          "translation": "Anωsa",
+          "translation": "Anosa",
           "pronunciation": "a-noh-sa",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
@@ -2936,14 +2726,14 @@
         {
           "english": "I give",
           "translation": "Aiṣo",
-          "pronunciation": "ai o",
+          "pronunciation": "aiso",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
         {
           "english": "I give you",
           "translation": "Aiṣo 'yé",
-          "pronunciation": "ai o 'y",
+          "pronunciation": "aiso 'ye",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
@@ -2957,7 +2747,7 @@
         {
           "english": "I go",
           "translation": "Aiṣomo",
-          "pronunciation": "ai o-mo",
+          "pronunciation": "aisomo",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
@@ -2970,14 +2760,14 @@
         },
         {
           "english": "We say",
-          "translation": "Kedjω iyω",
+          "translation": "Kedjo iyo",
           "pronunciation": "ked-joh i-yoh",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
         {
           "english": "We sold not",
-          "translation": "Etu gimiriω",
+          "translation": "Etu gimirio",
           "pronunciation": "e-tu gi-mi-rioh",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
@@ -2985,13 +2775,13 @@
         {
           "english": "He stinks",
           "translation": "Eñu",
-          "pronunciation": "e u",
+          "pronunciation": "enu",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
         {
           "english": "He steals",
-          "translation": "Eburiχo",
+          "translation": "Eburikho",
           "pronunciation": "e-bu-rikh-o",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
@@ -3005,7 +2795,7 @@
         },
         {
           "english": "He is taller than I",
-          "translation": "Eado te nanω",
+          "translation": "Eado te nano",
           "pronunciation": "ea-do te na-noh",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
@@ -3013,7 +2803,7 @@
         {
           "english": "Can you see me?",
           "translation": "Keñworeta nanu",
-          "pronunciation": "ke wo-re-ta na-nu",
+          "pronunciation": "kenworeta nanu",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
           "audioFile": null
         },
@@ -4868,14 +4658,14 @@
         {
           "english": "I do not see (Mogogodo / Dorobo of Mt. Kenya)",
           "translation": "Ila teetei or Ngñen a waakan",
-          "pronunciation": "i-la tee-tei or ng en a",
+          "pronunciation": "ila teetei or ngnen a waakan",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
           "audioFile": null
         },
         {
           "english": "I can't see anything (Mogogodo / Dorobo of Mt. Kenya)",
           "translation": "Ngñen toiyi",
-          "pronunciation": "ng en toi-yi",
+          "pronunciation": "ngnen toiyi",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
           "audioFile": null
         },
@@ -4917,7 +4707,7 @@
         {
           "english": "(Kibaradi says) (Mogogodo / Dorobo of Mt. Kenya)",
           "translation": "(Kibaradi) okhō, Kibaradi is a proper name",
-          "pronunciation": "ki-ba-ra-di okh-oh ki-ba-ra-di is a pro-per",
+          "pronunciation": "kibaradi okho kibaradi is a proper name",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
           "audioFile": null
         },

@@ -1,4 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
+import { DynamicIcon } from "../components/DynamicIcon";
 import React, { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import {
   StyleSheet,
@@ -394,10 +395,20 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
     if (populatedDicts.length > 0) {
       const dict =
         populatedDicts[Math.floor(Math.random() * populatedDicts.length)];
-      const validCats = dict.categories.filter((c: any) => c.entries.length > 0);
-      if (validCats.length > 0) {
-        const cat = validCats[Math.floor(Math.random() * validCats.length)];
-        const entry = cat.entries[Math.floor(Math.random() * cat.entries.length)];
+      const cleanPool = dict.categories
+        .filter((c: any) => c.id !== "culture-history" && c.entries.length > 0)
+        .flatMap((c: any) => c.entries)
+        .filter(
+          (e: any) =>
+            e.english.length >= 2 &&
+            e.english.length <= 32 &&
+            e.translation.length >= 2 &&
+            e.translation.length <= 36 &&
+            !/[();:/[\]"„—]/.test(e.english) &&
+            !/[();:[\]"„—]/.test(e.translation)
+        );
+      if (cleanPool.length > 0) {
+        const entry = cleanPool[Math.floor(Math.random() * cleanPool.length)];
         setRandomWord({
           entry,
           langName: dict.languageName.split("(")[0].trim(),
@@ -909,10 +920,10 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
           </View>
           <View style={styles.randomBody}>
             <Text style={styles.randomTranslation}>{randomWord.entry.translation}</Text>
-            <Text style={styles.randomEnglish}>&ldquo;{randomWord.entry.english}&rdquo;</Text>
+            <Text style={styles.randomEnglish}>{randomWord.entry.english}</Text>
             {randomWord.entry.pronunciation ? (
               <Text style={styles.randomPronounce}>
-                🗣️ /{randomWord.entry.pronunciation}/
+                /{randomWord.entry.pronunciation}/
               </Text>
             ) : null}
             <View style={styles.randomMetaRow}>
@@ -1125,7 +1136,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
                     },
                   ]}
                 >
-                  ✨ All ({ALL_DICT_METAS.length})
+                  All ({ALL_DICT_METAS.length})
                 </Text>
               </Pressable>
               <Pressable
@@ -1316,7 +1327,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
 
                     {item.entry.context ? (
                       <Text style={styles.contextText}>
-                        💡 {item.entry.context}
+                        {item.entry.context}
                       </Text>
                     ) : null}
                   </View>
@@ -1540,14 +1551,17 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
                     active && { backgroundColor: theme.gold, borderColor: theme.gold },
                   ]}
                 >
-                  <Text
-                    style={[
-                      styles.catPillText,
-                      active && { color: theme.kenyaBlack, fontWeight: "800" },
-                    ]}
-                  >
-                    {c.icon} {c.name} ({c.entries ? c.entries.length : c.count})
-                  </Text>
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+                    <DynamicIcon emoji={c.icon} size={13} color={active ? theme.kenyaBlack : theme.gold} />
+                    <Text
+                      style={[
+                        styles.catPillText,
+                        active && { color: theme.kenyaBlack, fontWeight: "800" },
+                      ]}
+                    >
+                      {c.name} ({c.entries ? c.entries.length : c.count})
+                    </Text>
+                  </View>
                 </Pressable>
               );
             })}
@@ -1618,7 +1632,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
                   ) : null}
 
                   {e.context ? (
-                    <Text style={styles.contextText}>💡 {e.context}</Text>
+                    <Text style={styles.contextText}>{e.context}</Text>
                   ) : null}
                 </View>
               );

@@ -160,8 +160,8 @@ export default function ToolsScreen() {
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
 
   useEffect(() => {
-    if (params.category) setCategory(params.category);
-    if (params.q) setQuery(params.q);
+    setCategory(params.category || "all");
+    if (params.q !== undefined) setQuery(params.q);
   }, [params.category, params.q]);
 
   useFocusEffect(
@@ -255,8 +255,12 @@ export default function ToolsScreen() {
 
       <AndroidTopAppBar
         showBrandLogo
-        title="All Tools"
-        subtitle={`${TOOLS.length} free tools built for Kenya — search or browse by category`}
+        title={category !== "all" ? getCategoryInfo(category)?.name || "All Tools" : "All Tools"}
+        subtitle={
+          category !== "all"
+            ? `${filtered.length} tools in ${getCategoryInfo(category)?.name || "this category"}`
+            : `${TOOLS.length} free tools built for Kenya — search or browse by category`
+        }
       />
 
       <View

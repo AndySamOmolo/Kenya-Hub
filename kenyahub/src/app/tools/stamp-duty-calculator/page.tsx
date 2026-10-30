@@ -22,7 +22,8 @@ function calculateConveyancingFees(value: number) {
     if (remaining <= 0) break;
     const bandMax = band.max ?? Infinity;
     const bandMin = band.min;
-    const taxableInBand = Math.min(remaining, bandMax - bandMin + 1);
+    const bandWidth = bandMin === 0 ? bandMax : bandMax - bandMin + 1;
+    const taxableInBand = Math.min(remaining, bandWidth);
 
     if (taxableInBand > 0) {
       const fee = Math.round(taxableInBand * (band.rate / 100));

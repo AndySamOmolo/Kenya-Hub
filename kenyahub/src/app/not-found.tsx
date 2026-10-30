@@ -36,28 +36,28 @@ export default function NotFound() {
           href="/tools/"
           className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
         >
-          <p className="text-sm font-bold text-gold">🧰 Browse All 44 Tools →</p>
+          <p className="text-sm font-bold text-gold flex items-center gap-1.5"><DynamicIcon emoji="🧰" className="w-4 h-4 shrink-0" /> Browse All 44 Tools →</p>
           <p className="text-xs text-text-muted mt-1">PAYE, M-Pesa, KPLC tokens, KCSE, KUCCPS &amp; more</p>
         </Link>
         <Link
           href="/county/"
           className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
         >
-          <p className="text-sm font-bold text-kenya-green-light">🏛️ 47 Counties Hub →</p>
+          <p className="text-sm font-bold text-kenya-green-light flex items-center gap-1.5"><DynamicIcon emoji="🏛️" className="w-4 h-4 shrink-0" /> 47 Counties Hub →</p>
           <p className="text-xs text-text-muted mt-1">Budgets, Governors, 290 Constituencies &amp; Climate</p>
         </Link>
         <Link
           href="/matatu/"
           className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
         >
-          <p className="text-sm font-bold text-sky-light">🚌 Matatu Routes &amp; Fares →</p>
+          <p className="text-sm font-bold text-sky-light flex items-center gap-1.5"><DynamicIcon emoji="🚌" className="w-4 h-4 shrink-0" /> Matatu Routes &amp; Fares →</p>
           <p className="text-xs text-text-muted mt-1">Nairobi, Mombasa, Kisumu, Nakuru, Eldoret &amp; Thika</p>
         </Link>
         <Link
           href="/blog/"
           className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
         >
-          <p className="text-sm font-bold text-text-primary">📖 Kenya Guides &amp; Blog →</p>
+          <p className="text-sm font-bold text-text-primary flex items-center gap-1.5"><DynamicIcon emoji="📖" className="w-4 h-4 shrink-0" /> Kenya Guides &amp; Blog →</p>
           <p className="text-xs text-text-muted mt-1">In-depth articles on tax, education, and public services</p>
         </Link>
       </div>

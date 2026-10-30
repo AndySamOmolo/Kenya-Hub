@@ -563,7 +563,7 @@ export default function AdminTranslationsPage() {
                       {/* Category Badge */}
                       {item.category && (
                         <span className="px-2 py-0.5 rounded-md text-[0.65rem] bg-bg-elevated text-text-muted">
-                          📁 {item.category}
+                          {item.category}
                         </span>
                       )}
 

@@ -147,11 +147,11 @@ export default function CountyScreen() {
         {/* Consolidated Mode Tabs */}
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6, paddingBottom: 10 }}>
           {([
-            { id: "directory", label: "🏛️ Directory" },
-            { id: "budgets", label: "📊 Budgets (FY 25/26)" },
-            { id: "constituencies", label: "🗳️ 290 Constituencies" },
-            { id: "climate", label: "🌧️ Climate & Rain" },
-            { id: "compare", label: "⚖️ Compare 2" },
+            { id: "directory", label: "Directory" },
+            { id: "budgets", label: "Budgets (FY 25/26)" },
+            { id: "constituencies", label: "290 Constituencies" },
+            { id: "climate", label: "Climate & Rain" },
+            { id: "compare", label: "Compare 2" },
           ] as const).map((tab) => {
             const active = activeTab === tab.id;
             return (

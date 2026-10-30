@@ -9,146 +9,559 @@
 import type { LanguageConfig, CourseUnit } from '../types';
 
 export const TESO_CONFIG: LanguageConfig = {
-  id: 'teso',
-  name: 'Teso',
-  nativeName: 'Ateso',
-  family: 'Nilotic',
-  counties: ['Busia'],
-  speakers: '468K',
-  speechLocale: '',
-  description: 'An Eastern Nilotic language of the Ateker (Teso–Turkana) cluster spoken in Busia County, Western Kenya and eastern Uganda. Grounded in C. W. Hobley (1902) and Sir Harry H. Johnston (1902).',
-  color: '#6D4C41',
-  sources: [
-    'hobley-eastern-uganda-1902',
-    'johnston-uganda-protectorate-1902',
-    'open-web-swadesh-comparative',
+  "id": "teso",
+  "name": "Teso",
+  "nativeName": "Ateso",
+  "family": "Nilotic",
+  "counties": [
+    "Busia"
   ],
+  "speakers": "468K",
+  "speechLocale": "",
+  "description": "An Eastern Nilotic language of the Ateker (Teso–Turkana) cluster spoken in Busia County, Western Kenya and eastern Uganda.",
+  "color": "#6D4C41",
+  "sources": [
+    "hobley-eastern-uganda-1902",
+    "johnston-uganda-protectorate-1902",
+    "open-web-swadesh-comparative"
+  ]
 };
 
 export const TESO_UNITS: CourseUnit[] = [
   {
-    id: 'teso-unit-1',
-    title: 'Unit 1: Greetings, Kinship & The Three Noun Genders (Hobley 1902 & Johnston 1902)',
-    description: 'Master Ateso greetings (Yoga, Ijai biai, Ejokuna), kinship terms, and Masculine (e-), Feminine (a-), and Neuter (i-) nouns.',
-    icon: '👋',
-    skills: [
+    "id": "teso-unit-1",
+    "title": "Unit 1: Greetings, Kinship & The Three Noun Genders",
+    "description": "Master Ateso greetings (Yoga, Ijai biai, Ejokuna), kinship terms, and Masculine (e-), Feminine (a-), and Neuter (i-) nouns.",
+    "icon": "Users",
+    "skills": [
       {
-        id: 'teso-greetings-kinship',
-        title: 'Greetings, Introductions & Family (Hobley 1902 & Johnston 1902)',
-        icon: 'Handshake',
-        description: 'Greet elders and friends, introduce yourself, and name family members in Ateso.',
-        tips: "The universal greeting in Ateso is 'Yoga!' ('Hello!'), followed by 'Ijai biai?' (How are you? sg.) or 'Ijaasi biai?' (pl.), answered with 'Ejokuna' ('Fine/well'). Kinship terms like 'toto' (mother) and 'papa' (father) do not take gender prefixes.",
-        words: [
-          { target: 'Yoga', source: 'Hello', pronunciation: 'yoh-gah', hint: 'Standard Ateso greeting' },
-          { target: 'Ijai biai?', source: 'How are you? (singular)', pronunciation: 'ee-jah-ee bee-ah-ee', hint: 'Plural: Ijaasi biai?' },
-          { target: 'Ejokuna, arai ijo?', source: 'Fine, and you?', pronunciation: 'eh-joh-koo-nah ah-rah-ee ee-joh', hint: 'Polite response' },
-          { target: "Ingai bo ekon'kiror?", source: 'What is your name?', pronunciation: 'ee-ngah-ee boh eh-kohn kee-rohr', hint: 'ekiror = name' },
-          { target: 'Eyalama ewanyun', source: 'Nice to see you / Thank you', pronunciation: 'eh-yah-lah-mah eh-wah-nyoon', hint: 'Gratitude & welcome' },
-          { target: 'Awanyunos bobo', source: 'See you again', pronunciation: 'ah-wah-nyoo-nohs boh-boh', hint: 'bobo = again' },
-          { target: 'toto / papa', source: 'Mother / Father', pronunciation: 'toh-toh / pah-pah', hint: 'Prefixless kinship nouns (Hobley 1902)' },
-          { target: 'ekile (pl. ikiliok) / aberu (pl. angor)', source: 'Man (pl. Men) / Woman (pl. Women)', pronunciation: 'eh-kee-leh / ah-beh-roo', hint: 'Hobley (1902) & Johnston (1902) Elgumi/Wamia' },
-          { target: 'etelepat (pl. itelepai) / apese (pl. apesur)', source: 'Boy (pl. Boys) / Girl (pl. Girls)', pronunciation: 'eh-teh-leh-paht / ah-peh-seh', hint: 'Masculine e- → i- vs. Feminine a-' },
-          { target: 'ikoku (pl. idwe)', source: 'Child (pl. Children)', pronunciation: 'ee-koh-koo / ee-dweh', hint: 'Neuter i- noun (Hobley 1902)' }
-        ],
-        sentences: [
-          { target: 'Yoga! Ijai biai? Ejokuna.', source: 'Hello! How are you? Fine.' },
-          { target: 'Aibo ejai toto? Ejai ngina.', source: 'Where is mother? She is over there.' }
-        ],
-        authoredExercises: [
+        "id": "teso-greetings-kinship",
+        "title": "Greetings, Introductions & Family",
+        "icon": "Handshake",
+        "description": "Greet elders and friends, introduce yourself, and name family members in Ateso.",
+        "tips": "The universal greeting in Ateso is 'Yoga!' ('Hello!'), followed by 'Ijai biai?' (How are you? sg.) or 'Ijaasi biai?' (pl.), answered with 'Ejokuna' ('Fine/well'). Kinship terms like 'toto' (mother) and 'papa' (father) do not take gender prefixes.",
+        "words": [
           {
-            type: 'multiple_choice',
-            prompt: 'How do you reply "Fine, and you?" to "Ijai biai?" in Ateso?',
-            correctAnswer: 'Ejokuna, arai ijo?',
-            options: ['Ejokuna, arai ijo?', 'Awanyunos bobo', "Ingai bo ekon'kiror?", 'Yoga'],
-            hint: 'Ejokuna = fine/good'
+            "target": "Yoga",
+            "source": "Hello",
+            "pronunciation": "yoh-gah",
+            "hint": "Standard Ateso greeting"
           },
           {
-            type: 'match_pairs',
-            prompt: 'Match the Ateso greetings and kinship nouns with their meanings:',
-            correctAnswer: 'Yoga: Hello, Ejokuna: Fine, toto / papa: Mother / Father, ikoku (pl. idwe): Child (pl. Children)',
-            pairs: [
-              { left: 'Yoga', right: 'Hello' },
-              { left: 'Ejokuna', right: 'Fine' },
-              { left: 'toto / papa', right: 'Mother / Father' },
-              { left: 'ikoku (pl. idwe)', right: 'Child (pl. Children)' }
+            "target": "Ijai biai?",
+            "source": "How are you? (singular)",
+            "pronunciation": "ee-jah-ee bee-ah-ee",
+            "hint": "Plural: Ijaasi biai?"
+          },
+          {
+            "target": "Ejokuna, arai ijo?",
+            "source": "Fine, and you?",
+            "pronunciation": "eh-joh-koo-nah ah-rah-ee ee-joh",
+            "hint": "Polite response"
+          },
+          {
+            "target": "Ingai bo ekon'kiror?",
+            "source": "What is your name?",
+            "pronunciation": "ee-ngah-ee boh eh-kohn kee-rohr",
+            "hint": "ekiror = name"
+          },
+          {
+            "target": "Eyalama ewanyun",
+            "source": "Nice to see you / Thank you",
+            "pronunciation": "eh-yah-lah-mah eh-wah-nyoon",
+            "hint": "Gratitude & welcome"
+          },
+          {
+            "target": "Awanyunos bobo",
+            "source": "See you again",
+            "pronunciation": "ah-wah-nyoo-nohs boh-boh",
+            "hint": "bobo = again"
+          },
+          {
+            "target": "toto / papa",
+            "source": "Mother / Father",
+            "pronunciation": "toh-toh / pah-pah",
+            "hint": "Prefixless kinship nouns (Hobley 1902)"
+          },
+          {
+            "target": "ekile (pl. ikiliok) / aberu (pl. angor)",
+            "source": "Man (pl. Men) / Woman (pl. Women)",
+            "pronunciation": "eh-kee-leh / ah-beh-roo",
+            "hint": "Hobley (1902) & Johnston (1902) Elgumi/Wamia"
+          },
+          {
+            "target": "etelepat (pl. itelepai) / apese (pl. apesur)",
+            "source": "Boy (pl. Boys) / Girl (pl. Girls)",
+            "pronunciation": "eh-teh-leh-paht / ah-peh-seh",
+            "hint": "Masculine e- → i- vs. Feminine a-"
+          },
+          {
+            "target": "ikoku (pl. idwe)",
+            "source": "Child (pl. Children)",
+            "pronunciation": "ee-koh-koo / ee-dweh",
+            "hint": "Neuter i- noun (Hobley 1902)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Yoga! Ijai biai? Ejokuna.",
+            "source": "Hello! How are you? Fine."
+          },
+          {
+            "target": "Aibo ejai toto? Ejai ngina.",
+            "source": "Where is mother? She is over there."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Yoga\" in Teso?",
+            "correctAnswer": "Hello",
+            "options": [
+              "How are you? (singular)",
+              "Fine, and you?",
+              "What is your name?",
+              "Hello"
+            ],
+            "hint": "Standard Ateso greeting"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ijai biai?\" in Teso?",
+            "correctAnswer": "How are you? (singular)",
+            "options": [
+              "Fine, and you?",
+              "What is your name?",
+              "How are you? (singular)",
+              "Hello"
+            ],
+            "hint": "Plural: Ijaasi biai?"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ejokuna, arai ijo?\" in Teso?",
+            "correctAnswer": "Fine, and you?",
+            "options": [
+              "What is your name?",
+              "Fine, and you?",
+              "Hello",
+              "How are you? (singular)"
+            ],
+            "hint": "Polite response"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Fine, and you?\" in Teso?",
+            "correctAnswer": "Ejokuna, arai ijo?",
+            "options": [
+              "Ejokuna, arai ijo?",
+              "Yoga",
+              "Ijai biai?",
+              "Ingai bo ekon'kiror?"
+            ],
+            "hint": "eh-joh-koo-nah ah-rah-ee ee-joh"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"What is your name?\" in Teso?",
+            "correctAnswer": "Ingai bo ekon'kiror?",
+            "options": [
+              "Yoga",
+              "Ijai biai?",
+              "Ejokuna, arai ijo?",
+              "Ingai bo ekon'kiror?"
+            ],
+            "hint": "ee-ngah-ee boh eh-kohn kee-rohr"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "Yoga: Hello",
+            "pairs": [
+              {
+                "left": "Yoga",
+                "right": "Hello"
+              },
+              {
+                "left": "Ijai biai?",
+                "right": "How are you? (singular)"
+              },
+              {
+                "left": "Ejokuna, arai ijo?",
+                "right": "Fine, and you?"
+              },
+              {
+                "left": "Ingai bo ekon'kiror?",
+                "right": "What is your name?"
+              }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Nice to see you / Thank you\": ___",
+            "correctAnswer": "Eyalama ewanyun",
+            "options": [
+              "Yoga",
+              "Ijai biai?",
+              "Ejokuna, arai ijo?",
+              "Eyalama ewanyun"
+            ],
+            "hint": "Gratitude & welcome"
           }
         ]
       },
       {
-        id: 'teso-numbers-directions',
-        title: 'Quinary Numerals, Nature & Cardinal Directions (Hobley 1902 & Johnston 1902)',
-        icon: 'Compass',
-        description: 'Count in Masculine and Feminine genders and navigate using Ateso spatial adverbs and nature terms.',
-        tips: "Ateso numbers 1–5 are idiope/adiope (1), iyarei/aarei (2), iuni/auni (3), ioŋon/aoŋon (4), and ikany/akany (5, from akan 'hand'). Six is ikany-kape (5+1) and ten is itomon/atomon (Hobley 1902, p. 69).",
-        words: [
-          { target: 'idiope (m.) / adiope (f.)', source: 'One (1)', pronunciation: 'ee-dee-oh-peh / ah-dee-oh-peh', hint: 'Agrees with noun gender (Hobley 1902 & Johnston 1902)' },
-          { target: 'iyarei (m.) / aarei (f.)', source: 'Two (2)', pronunciation: 'ee-yah-reh-ee / ah-ah-reh-ee', hint: 'Cardinal 2' },
-          { target: 'iuni (m.) / auni (f.)', source: 'Three (3)', pronunciation: 'ee-oo-nee / ah-oo-nee', hint: 'Cardinal 3' },
-          { target: 'ioŋon (m.) / aoŋon (f.)', source: 'Four (4)', pronunciation: 'ee-oh-ngohn / ah-oh-ngohn', hint: 'Cardinal 4' },
-          { target: 'ikany (m.) / akany (f.)', source: 'Five (5)', pronunciation: 'ee-kah-ny / ah-kah-ny', hint: 'Cardinal 5 (< akan hand)' },
-          { target: 'ikany-kape, ikany-kaare, ikany-kauni, ikany-kaoŋon, itomon', source: '6 (5+1), 7 (5+2), 8 (5+3), 9 (5+4), 10', pronunciation: 'ee-kah-ny kah-peh ... ee-toh-mohn', hint: 'Hobley (1902, p. 95) & Johnston (1902, p. 851) quinary numerals 6–10' },
-          { target: 'kide / too / nyakoi / agolitomei', source: 'East / West / North / South', pronunciation: 'kee-deh / toh-oh / nyah-koh-ee / ah-goh-lee-toh-meh-ee', hint: 'Cardinal directions' },
-          { target: 'akipi / akile / akim / akolong', source: 'Water / Milk / Fire / Sun', pronunciation: 'ah-kee-pee / ah-kee-leh / ah-keem / ah-koh-lohng', hint: 'Hobley (1902) & Johnston (1902) core feminine nouns' },
-          { target: 'akiteng (pl. aatuk) / emong (pl. imongin)', source: 'Cow (pl. Cattle) / Bull, Ox (pl. Oxen)', pronunciation: 'ah-kee-tehng / ah-took / eh-mohng', hint: 'Hobley (1902) pastoral nouns' },
-          { target: 'akinyam / akimat / aanyun', source: 'To eat / To drink / To see', pronunciation: 'ah-kee-nyahm / ah-kee-maht / ah-nyoon', hint: 'Core verbs (Hobley 1902)' }
-        ],
-        sentences: [
-          { target: 'Itelepai iuni ka apesur auni.', source: 'Three boys and three girls.' },
-          { target: 'Akimat akile ka akinyam atap.', source: 'To drink milk and to eat millet bread.' }
-        ],
-        authoredExercises: [
+        "id": "teso-numbers-directions",
+        "title": "Quinary Numerals, Nature & Cardinal Directions",
+        "icon": "Hash",
+        "description": "Count in Masculine and Feminine genders and navigate using Ateso spatial adverbs and nature terms.",
+        "tips": "Ateso numbers 1–5 are idiope/adiope (1), iyarei/aarei (2), iuni/auni (3), ioŋon/aoŋon (4), and ikany/akany (5, from akan 'hand'). Six is ikany-kape (5+1) and ten is itomon/atomon (Hobley 1902, p. 69).",
+        "words": [
           {
-            type: 'multiple_choice',
-            prompt: 'Which Ateso phrase means "three girls" (showing feminine numeral agreement)?',
-            correctAnswer: 'apesur auni',
-            options: ['apesur auni', 'itelepai iuni', 'ikoku idiope', 'itomon'],
-            hint: 'Feminine plural apesur takes feminine numeral prefix a-'
+            "target": "idiope (m.) / adiope (f.)",
+            "source": "One (1)",
+            "pronunciation": "ee-dee-oh-peh / ah-dee-oh-peh",
+            "hint": "Agrees with noun gender (Hobley 1902 & Johnston 1902)"
+          },
+          {
+            "target": "iyarei (m.) / aarei (f.)",
+            "source": "Two (2)",
+            "pronunciation": "ee-yah-reh-ee / ah-ah-reh-ee",
+            "hint": "Cardinal 2"
+          },
+          {
+            "target": "iuni (m.) / auni (f.)",
+            "source": "Three (3)",
+            "pronunciation": "ee-oo-nee / ah-oo-nee",
+            "hint": "Cardinal 3"
+          },
+          {
+            "target": "ioŋon (m.) / aoŋon (f.)",
+            "source": "Four (4)",
+            "pronunciation": "ee-oh-ngohn / ah-oh-ngohn",
+            "hint": "Cardinal 4"
+          },
+          {
+            "target": "ikany (m.) / akany (f.)",
+            "source": "Five (5)",
+            "pronunciation": "ee-kah-ny / ah-kah-ny",
+            "hint": "Cardinal 5 (< akan hand)"
+          },
+          {
+            "target": "ikany-kape, ikany-kaare, ikany-kauni, ikany-kaoŋon, itomon",
+            "source": "6 (5+1), 7 (5+2), 8 (5+3), 9 (5+4), 10",
+            "pronunciation": "ee-kah-ny kah-peh ... ee-toh-mohn",
+            "hint": "Hobley (1902, p. 95) & Johnston (1902, p. 851) quinary numerals 6–10"
+          },
+          {
+            "target": "kide / too / nyakoi / agolitomei",
+            "source": "East / West / North / South",
+            "pronunciation": "kee-deh / toh-oh / nyah-koh-ee / ah-goh-lee-toh-meh-ee",
+            "hint": "Cardinal directions"
+          },
+          {
+            "target": "akipi / akile / akim / akolong",
+            "source": "Water / Milk / Fire / Sun",
+            "pronunciation": "ah-kee-pee / ah-kee-leh / ah-keem / ah-koh-lohng",
+            "hint": "Hobley (1902) & Johnston (1902) core feminine nouns"
+          },
+          {
+            "target": "akiteng (pl. aatuk) / emong (pl. imongin)",
+            "source": "Cow (pl. Cattle) / Bull, Ox (pl. Oxen)",
+            "pronunciation": "ah-kee-tehng / ah-took / eh-mohng",
+            "hint": "Hobley (1902) pastoral nouns"
+          },
+          {
+            "target": "akinyam / akimat / aanyun",
+            "source": "To eat / To drink / To see",
+            "pronunciation": "ah-kee-nyahm / ah-kee-maht / ah-nyoon",
+            "hint": "Core verbs (Hobley 1902)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Itelepai iuni ka apesur auni.",
+            "source": "Three boys and three girls."
+          },
+          {
+            "target": "Akimat akile ka akinyam atap.",
+            "source": "To drink milk and to eat millet bread."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"idiope (m.) / adiope (f.)\" in Teso?",
+            "correctAnswer": "One (1)",
+            "options": [
+              "Two (2)",
+              "Three (3)",
+              "Four (4)",
+              "One (1)"
+            ],
+            "hint": "Agrees with noun gender (Hobley 1902 & Johnston 1902)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"iyarei (m.) / aarei (f.)\" in Teso?",
+            "correctAnswer": "Two (2)",
+            "options": [
+              "Three (3)",
+              "Four (4)",
+              "Two (2)",
+              "One (1)"
+            ],
+            "hint": "Cardinal 2"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"iuni (m.) / auni (f.)\" in Teso?",
+            "correctAnswer": "Three (3)",
+            "options": [
+              "Four (4)",
+              "Three (3)",
+              "One (1)",
+              "Two (2)"
+            ],
+            "hint": "Cardinal 3"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Three (3)\" in Teso?",
+            "correctAnswer": "iuni (m.) / auni (f.)",
+            "options": [
+              "iuni (m.) / auni (f.)",
+              "idiope (m.) / adiope (f.)",
+              "iyarei (m.) / aarei (f.)",
+              "ioŋon (m.) / aoŋon (f.)"
+            ],
+            "hint": "ee-oo-nee / ah-oo-nee"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Four (4)\" in Teso?",
+            "correctAnswer": "ioŋon (m.) / aoŋon (f.)",
+            "options": [
+              "idiope (m.) / adiope (f.)",
+              "iyarei (m.) / aarei (f.)",
+              "iuni (m.) / auni (f.)",
+              "ioŋon (m.) / aoŋon (f.)"
+            ],
+            "hint": "ee-oh-ngohn / ah-oh-ngohn"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "idiope (m.) / adiope (f.): One (1)",
+            "pairs": [
+              {
+                "left": "idiope (m.) / adiope (f.)",
+                "right": "One (1)"
+              },
+              {
+                "left": "iyarei (m.) / aarei (f.)",
+                "right": "Two (2)"
+              },
+              {
+                "left": "iuni (m.) / auni (f.)",
+                "right": "Three (3)"
+              },
+              {
+                "left": "ioŋon (m.) / aoŋon (f.)",
+                "right": "Four (4)"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Five (5)\": ___",
+            "correctAnswer": "ikany (m.) / akany (f.)",
+            "options": [
+              "idiope (m.) / adiope (f.)",
+              "iyarei (m.) / aarei (f.)",
+              "iuni (m.) / auni (f.)",
+              "ikany (m.) / akany (f.)"
+            ],
+            "hint": "Cardinal 5 (< akan hand)"
           }
         ]
       }
     ]
   },
   {
-    id: 'teso-unit-2',
-    title: 'Unit 2: Hobley (1902) Elgumi Dialogues, Pronouns, Tools & Oral Wisdom',
-    description: 'Learn conversational phrases, personal pronouns, tools, and proverbs from C. W. Hobley (1902) and Sir Harry Johnston (1902).',
-    icon: '🏹',
-    skills: [
+    "id": "teso-unit-2",
+    "title": "Unit 2: Hobley (1902) Elgumi Dialogues, Pronouns, Tools & Oral Wisdom",
+    "description": "Learn conversational phrases, personal pronouns, tools, and proverbs from C. W. Hobley (1902) and Sir Harry Johnston (1902).",
+    "icon": "Award",
+    "skills": [
       {
-        id: 'teso-hobley-1902-phrases',
-        title: 'Pronouns, Homestead Tools & Hobley (1902) Phrases',
-        icon: 'MessageCircle',
-        description: 'Master Ateso pronouns, imperatives, and cultural terms recorded in 1902.',
-        tips: "Sir Harry Johnston (1902, p. 851) and C. W. Hobley (1902, pp. 92–95) recorded everyday salutations ('Mata!', 'Yoka yoka!') and conversational imperatives in Ateso (Elgumi/Wamia): 'Bia ne!' (Come here!), 'Kolot!' (Go away!), 'Koin akipi!' (Bring water!), and 'Icamit nyo?' (What do you want?).",
-        culturalNote: "In Ateso oral wisdom, 'Akan nabo mam epedori aibok akwap' ('One hand alone cannot dig the earth') celebrates community cooperation (aleya) in cultivating finger-millet (akima) and cassava.",
-        words: [
-          { target: 'eong (ayong), ijo, ngesi, isio (oni), yesi, kesi', source: 'I, you (sg.), s/he, we, you (pl.), they', pronunciation: 'eh-ohng, ee-joh, ngeh-see, ee-see-oh', hint: 'Hobley (1902) & Johnston (1902) personal pronouns' },
-          { target: 'Bia ne! / Kolot!', source: 'Come here! / Go!', pronunciation: 'bee-ah neh / koh-loht', hint: 'Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) conversational imperatives' },
-          { target: 'Koin akipi! / Icamit nyo?', source: 'Bring water! / What do you want?', pronunciation: 'koyn ah-kee-pee / ee-chah-meet nyoh', hint: 'Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) phrases' },
-          { target: 'Akuj / Edeke (Lokasuban)', source: 'God, the Supreme Creator', pronunciation: 'ah-kooj / eh-deh-keh / loh-kah-soo-bahn', hint: 'Hobley (1902) & Johnston (1902)' },
-          { target: 'atap / akima / ajon', source: 'Millet bread (ugali) / Finger-millet / Traditional cereal brew', pronunciation: 'ah-tahp / ah-kee-mah / ah-john', hint: 'Ateso culinary staples' },
-          { target: 'akwara (pl. ngakwaras) / aupwal (ebuku)', source: 'Spear / Shield', pronunciation: 'ah-kwah-rah / ah-oop-wahl', hint: 'Hobley (1902, pp. 92–95) & Johnston (1902)' },
-          { target: 'akalabai / emal / ekileng', source: 'Bow / Arrow / Knife', pronunciation: 'ah-kah-lah-bah-ee / eh-mahl / eh-kee-lehng', hint: 'Hobley (1902, pp. 92–95) & Johnston (1902)' },
-          { target: 'etogo (pl. itogoi) / ekek (pl. ikekia)', source: 'House (pl. Houses) / Door (pl. Doors)', pronunciation: 'eh-toh-goh / eh-kehk', hint: 'Hobley (1902, pp. 92–95) & Johnston (1902)' },
-          { target: 'Akan nabo mam epedori aibok akwap', source: 'One hand alone cannot dig the earth (Proverb)', pronunciation: 'ah-kahn nah-boh mahm eh-peh-doh-ree', hint: 'Unity in community farming' }
-        ],
-        sentences: [
-          { target: 'Bia ne! Koin akipi!', source: 'Come here! Bring water! (Hobley 1902, p. 53)' },
-          { target: 'Akan nabo mam epedori aibok akwap.', source: 'One hand alone cannot dig the earth.' }
-        ],
-        authoredExercises: [
+        "id": "teso-hobley-1902-phrases",
+        "title": "Pronouns, Homestead Tools & Hobley (1902) Phrases",
+        "icon": "Home",
+        "description": "Master Ateso pronouns, imperatives, and cultural terms recorded in 1902.",
+        "tips": "Sir Harry Johnston (1902, p. 851) and C. W. Hobley (1902, pp. 92–95) recorded everyday salutations ('Mata!', 'Yoka yoka!') and conversational imperatives in Ateso (Elgumi/Wamia): 'Bia ne!' (Come here!), 'Kolot!' (Go away!), 'Koin akipi!' (Bring water!), and 'Icamit nyo?' (What do you want?).",
+        "culturalNote": "In Ateso oral wisdom, 'Akan nabo mam epedori aibok akwap' ('One hand alone cannot dig the earth') celebrates community cooperation (aleya) in cultivating finger-millet (akima) and cassava.",
+        "words": [
           {
-            type: 'multiple_choice',
-            prompt: 'In C. W. Johnston (1902, p. 851) & Hobley (1902, pp. 92–95), what does the Ateso phrase "Koin akipi!" mean?',
-            correctAnswer: 'Bring water!',
-            options: [
-              'Bring water!',
-              'One hand alone cannot dig the earth',
-              'Spear / Shield',
-              'House (pl. Houses)'
+            "target": "eong (ayong), ijo, ngesi, isio (oni), yesi, kesi",
+            "source": "I, you (sg.), s/he, we, you (pl.), they",
+            "pronunciation": "eh-ohng, ee-joh, ngeh-see, ee-see-oh",
+            "hint": "Hobley (1902) & Johnston (1902) personal pronouns"
+          },
+          {
+            "target": "Bia ne! / Kolot!",
+            "source": "Come here! / Go!",
+            "pronunciation": "bee-ah neh / koh-loht",
+            "hint": "Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) conversational imperatives"
+          },
+          {
+            "target": "Koin akipi! / Icamit nyo?",
+            "source": "Bring water! / What do you want?",
+            "pronunciation": "koyn ah-kee-pee / ee-chah-meet nyoh",
+            "hint": "Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) phrases"
+          },
+          {
+            "target": "Akuj / Edeke (Lokasuban)",
+            "source": "God, the Supreme Creator",
+            "pronunciation": "ah-kooj / eh-deh-keh / loh-kah-soo-bahn",
+            "hint": "Hobley (1902) & Johnston (1902)"
+          },
+          {
+            "target": "atap / akima / ajon",
+            "source": "Millet bread (ugali) / Finger-millet / Traditional cereal brew",
+            "pronunciation": "ah-tahp / ah-kee-mah / ah-john",
+            "hint": "Ateso culinary staples"
+          },
+          {
+            "target": "akwara (pl. ngakwaras) / aupwal (ebuku)",
+            "source": "Spear / Shield",
+            "pronunciation": "ah-kwah-rah / ah-oop-wahl",
+            "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
+          },
+          {
+            "target": "akalabai / emal / ekileng",
+            "source": "Bow / Arrow / Knife",
+            "pronunciation": "ah-kah-lah-bah-ee / eh-mahl / eh-kee-lehng",
+            "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
+          },
+          {
+            "target": "etogo (pl. itogoi) / ekek (pl. ikekia)",
+            "source": "House (pl. Houses) / Door (pl. Doors)",
+            "pronunciation": "eh-toh-goh / eh-kehk",
+            "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
+          },
+          {
+            "target": "Akan nabo mam epedori aibok akwap",
+            "source": "One hand alone cannot dig the earth (Proverb)",
+            "pronunciation": "ah-kahn nah-boh mahm eh-peh-doh-ree",
+            "hint": "Unity in community farming"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Bia ne! Koin akipi!",
+            "source": "Come here! Bring water! (Hobley 1902, p. 53)"
+          },
+          {
+            "target": "Akan nabo mam epedori aibok akwap.",
+            "source": "One hand alone cannot dig the earth."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"eong (ayong), ijo, ngesi, isio (oni), yesi, kesi\" in Teso?",
+            "correctAnswer": "I, you (sg.), s/he, we, you (pl.), they",
+            "options": [
+              "Come here! / Go!",
+              "Bring water! / What do you want?",
+              "God, the Supreme Creator",
+              "I, you (sg.), s/he, we, you (pl.), they"
             ],
-            hint: 'akipi = water'
+            "hint": "Hobley (1902) & Johnston (1902) personal pronouns"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Bia ne! / Kolot!\" in Teso?",
+            "correctAnswer": "Come here! / Go!",
+            "options": [
+              "Bring water! / What do you want?",
+              "God, the Supreme Creator",
+              "Come here! / Go!",
+              "I, you (sg.), s/he, we, you (pl.), they"
+            ],
+            "hint": "Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) conversational imperatives"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Koin akipi! / Icamit nyo?\" in Teso?",
+            "correctAnswer": "Bring water! / What do you want?",
+            "options": [
+              "God, the Supreme Creator",
+              "Bring water! / What do you want?",
+              "I, you (sg.), s/he, we, you (pl.), they",
+              "Come here! / Go!"
+            ],
+            "hint": "Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) phrases"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Bring water! / What do you want?\" in Teso?",
+            "correctAnswer": "Koin akipi! / Icamit nyo?",
+            "options": [
+              "Koin akipi! / Icamit nyo?",
+              "eong (ayong), ijo, ngesi, isio (oni), yesi, kesi",
+              "Bia ne! / Kolot!",
+              "Akuj / Edeke (Lokasuban)"
+            ],
+            "hint": "koyn ah-kee-pee / ee-chah-meet nyoh"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"God, the Supreme Creator\" in Teso?",
+            "correctAnswer": "Akuj / Edeke (Lokasuban)",
+            "options": [
+              "eong (ayong), ijo, ngesi, isio (oni), yesi, kesi",
+              "Bia ne! / Kolot!",
+              "Koin akipi! / Icamit nyo?",
+              "Akuj / Edeke (Lokasuban)"
+            ],
+            "hint": "ah-kooj / eh-deh-keh / loh-kah-soo-bahn"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "eong (ayong), ijo, ngesi, isio (oni), yesi, kesi: I, you (sg.), s/he, we, you (pl.), they",
+            "pairs": [
+              {
+                "left": "eong (ayong), ijo, ngesi, isio (oni), yesi, kesi",
+                "right": "I, you (sg.), s/he, we, you (pl.), they"
+              },
+              {
+                "left": "Bia ne! / Kolot!",
+                "right": "Come here! / Go!"
+              },
+              {
+                "left": "Koin akipi! / Icamit nyo?",
+                "right": "Bring water! / What do you want?"
+              },
+              {
+                "left": "Akuj / Edeke (Lokasuban)",
+                "right": "God, the Supreme Creator"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Millet bread (ugali) / Finger-millet / Traditional cereal brew\": ___",
+            "correctAnswer": "atap / akima / ajon",
+            "options": [
+              "eong (ayong), ijo, ngesi, isio (oni), yesi, kesi",
+              "Bia ne! / Kolot!",
+              "Koin akipi! / Icamit nyo?",
+              "atap / akima / ajon"
+            ],
+            "hint": "Ateso culinary staples"
           }
         ]
       }
@@ -156,15 +569,15 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-3",
-    "title": "Unit 3: Family, Kinship, Clans & Social Organization (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))",
-    "description": "Master family, kinship, clans & social organization in Teso (Ateso) built directly from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
-    "icon": "👨‍👩‍👧‍👦",
+    "title": "Unit 3: Family, Kinship, Clans & Social Organization (C. W. Hobley 1902 Elgumi Vocabulary & Sir Harry Johnston )",
+    "description": "Master family, kinship, clans & social organization in Teso (Ateso) built directly from C.",
+    "icon": "User",
     "skills": [
       {
         "id": "teso-family-kinship-kinship-elders-3",
         "title": "Kinship Terms, Elders & Household Roles",
         "icon": "Users",
-        "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -223,37 +636,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Neuter nouns"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"toto\" ka \"papa\".",
-            "source": "The people know \"Mother\" and \"Father\"."
-          },
-          {
-            "target": "Ejai toma orea \"mamai\" ka \"inac / onac\".",
-            "source": "In the homestead there is \"Uncle (maternal)\" and \"Sister / brother (sibling)\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"ija\" ka \"etelepat / esapat (pl. itelepai)\".",
-            "source": "The elder spoke of \"Aunt\" and \"Boy (pl. boys)\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"toto\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"toto\" in Teso?",
             "correctAnswer": "Mother",
             "options": [
-              "Mother",
               "Father",
               "Uncle (maternal)",
-              "Sister / brother (sibling)"
+              "Sister / brother (sibling)",
+              "Mother"
             ],
             "hint": "Wikipedia Teso language — Gender and noun prefix"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"papa\" in Teso?",
+            "correctAnswer": "Father",
+            "options": [
+              "Uncle (maternal)",
+              "Sister / brother (sibling)",
+              "Father",
+              "Mother"
+            ],
+            "hint": "Wikipedia Teso language — Gender and noun prefix"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"mamai\" in Teso?",
+            "correctAnswer": "Uncle (maternal)",
+            "options": [
+              "Sister / brother (sibling)",
+              "Uncle (maternal)",
+              "Mother",
+              "Father"
+            ],
+            "hint": "Wikipedia Teso language — Gender and noun prefix"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Uncle (maternal)\" in Teso?",
+            "correctAnswer": "mamai",
+            "options": [
+              "mamai",
+              "toto",
+              "papa",
+              "inac / onac"
+            ],
+            "hint": "mamai"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Sister / brother (sibling)\" in Teso?",
+            "correctAnswer": "inac / onac",
+            "options": [
+              "toto",
+              "papa",
+              "mamai",
+              "inac / onac"
+            ],
+            "hint": "inac / onac"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "toto: Mother",
             "pairs": [
               {
                 "left": "toto",
@@ -272,6 +720,18 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Sister / brother (sibling)"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Aunt\": ___",
+            "correctAnswer": "ija",
+            "options": [
+              "toto",
+              "papa",
+              "mamai",
+              "ija"
+            ],
+            "hint": "Wikipedia Teso language — Gender and noun prefix"
           }
         ]
       },
@@ -279,7 +739,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "id": "teso-family-kinship-clans-community-3",
         "title": "Clans, Marriage & Community Life",
         "icon": "Heart",
-        "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -340,35 +800,79 @@ export const TESO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Ejenete itunga \"aberu (pl. aŋor)\" ka \"ekamejan (pl. ikamejak)\".",
-            "source": "The people know \"Woman / wife (pl. women)\" and \"Hunter (pl. hunters)\"."
+            "target": "edwe, epese, ekoko",
+            "source": "Child"
           },
           {
-            "target": "Ejai toma orea \"ekecokon (pl. ikecokok)\" ka \"ekadukon (pl. ikadukok)\".",
-            "source": "In the homestead there is \"Herdsman (pl. herdsmen)\" and \"Builder (pl. builders)\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"ekatubon (pl. ikatubok)\" ka \"ekiror (é-kɪ́-rɔ́-rɪ̀)\".",
-            "source": "The elder spoke of \"Judge (pl. judges)\" and \"Name\"."
+            "target": "ndachakang epesi",
+            "source": "Sister"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"aberu (pl. aŋor)\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"aberu (pl. aŋor)\" in Teso?",
             "correctAnswer": "Woman / wife (pl. women)",
             "options": [
-              "Woman / wife (pl. women)",
               "Hunter (pl. hunters)",
               "Herdsman (pl. herdsmen)",
-              "Builder (pl. builders)"
+              "Builder (pl. builders)",
+              "Woman / wife (pl. women)"
             ],
             "hint": "Wikipedia Teso language — Plural formation"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ekamejan (pl. ikamejak)\" in Teso?",
+            "correctAnswer": "Hunter (pl. hunters)",
+            "options": [
+              "Herdsman (pl. herdsmen)",
+              "Builder (pl. builders)",
+              "Hunter (pl. hunters)",
+              "Woman / wife (pl. women)"
+            ],
+            "hint": "Wikipedia Teso language — Agent nouns"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ekecokon (pl. ikecokok)\" in Teso?",
+            "correctAnswer": "Herdsman (pl. herdsmen)",
+            "options": [
+              "Builder (pl. builders)",
+              "Herdsman (pl. herdsmen)",
+              "Woman / wife (pl. women)",
+              "Hunter (pl. hunters)"
+            ],
+            "hint": "Wikipedia Teso language — Agent nouns"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Herdsman (pl. herdsmen)\" in Teso?",
+            "correctAnswer": "ekecokon (pl. ikecokok)",
+            "options": [
+              "ekecokon (pl. ikecokok)",
+              "aberu (pl. aŋor)",
+              "ekamejan (pl. ikamejak)",
+              "ekadukon (pl. ikadukok)"
+            ],
+            "hint": "ekecokon (pl. ikecokok)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Builder (pl. builders)\" in Teso?",
+            "correctAnswer": "ekadukon (pl. ikadukok)",
+            "options": [
+              "aberu (pl. aŋor)",
+              "ekamejan (pl. ikamejak)",
+              "ekecokon (pl. ikecokok)",
+              "ekadukon (pl. ikadukok)"
+            ],
+            "hint": "ekadukon (pl. ikadukok)"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "aberu (pl. aŋor): Woman / wife (pl. women)",
             "pairs": [
               {
                 "left": "aberu (pl. aŋor)",
@@ -387,6 +891,18 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Builder (pl. builders)"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Judge (pl. judges)\": ___",
+            "correctAnswer": "ekatubon (pl. ikatubok)",
+            "options": [
+              "aberu (pl. aŋor)",
+              "ekamejan (pl. ikamejak)",
+              "ekecokon (pl. ikecokok)",
+              "ekatubon (pl. ikatubok)"
+            ],
+            "hint": "Wikipedia Teso language — Agent nouns"
           }
         ]
       }
@@ -394,15 +910,15 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-4",
-    "title": "Unit 4: Numbers, Counting, Currency & Measures (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))",
-    "description": "Master numbers, counting, currency & measures in Teso (Ateso) built directly from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
-    "icon": "🔢",
+    "title": "Unit 4: Numbers, Counting, Currency & Measures (C. W. Hobley 1902 Elgumi Vocabulary & Sir Harry Johnston )",
+    "description": "Master numbers, counting, currency & measures in Teso (Ateso) built directly from C.",
+    "icon": "Scale",
     "skills": [
       {
         "id": "teso-numbers-measures-cardinals-ordinals-4",
         "title": "Cardinal & Ordinal Numerals",
         "icon": "Hash",
-        "description": "Count fluently and form ordinal numbers using historical numeral tables. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "description": "Count fluently and form ordinal numbers using historical numeral tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -461,37 +977,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Cardinal numbers"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"itomon (atomon)\" ka \"ikany-kaoŋon (5+4)\".",
-            "source": "The people know \"Ten\" and \"Nine\"."
-          },
-          {
-            "target": "Ejai toma orea \"ikany-kauni (5+3)\" ka \"ikany-kaare (5+2)\".",
-            "source": "In the homestead there is \"Eight\" and \"Seven\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"ikany-kape (5+1)\" ka \"esupur (traditional) / enoot\".",
-            "source": "The elder spoke of \"Six\" and \"Zero / naught\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"itomon (atomon)\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"itomon (atomon)\" in Teso?",
             "correctAnswer": "Ten",
             "options": [
-              "Ten",
               "Nine",
               "Eight",
-              "Seven"
+              "Seven",
+              "Ten"
             ],
             "hint": "Hobley 1902 p. 95 (Elgumi) & Johnston 1902 p. 851 (Elgumi/Wamia)"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ikany-kaoŋon (5+4)\" in Teso?",
+            "correctAnswer": "Nine",
+            "options": [
+              "Eight",
+              "Seven",
+              "Nine",
+              "Ten"
+            ],
+            "hint": "Hobley 1902 p. 95 (Elgumi) & Johnston 1902 p. 851 (Elgumi/Wamia)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ikany-kauni (5+3)\" in Teso?",
+            "correctAnswer": "Eight",
+            "options": [
+              "Seven",
+              "Eight",
+              "Ten",
+              "Nine"
+            ],
+            "hint": "Hobley 1902 p. 95 (Elgumi) & Johnston 1902 p. 851 (Elgumi/Wamia)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Eight\" in Teso?",
+            "correctAnswer": "ikany-kauni (5+3)",
+            "options": [
+              "ikany-kauni (5+3)",
+              "itomon (atomon)",
+              "ikany-kaoŋon (5+4)",
+              "ikany-kaare (5+2)"
+            ],
+            "hint": "ee-kah-ny kah-oo-nee"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Seven\" in Teso?",
+            "correctAnswer": "ikany-kaare (5+2)",
+            "options": [
+              "itomon (atomon)",
+              "ikany-kaoŋon (5+4)",
+              "ikany-kauni (5+3)",
+              "ikany-kaare (5+2)"
+            ],
+            "hint": "ee-kah-ny kah-reh"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "itomon (atomon): Ten",
             "pairs": [
               {
                 "left": "itomon (atomon)",
@@ -510,6 +1061,18 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Seven"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Six\": ___",
+            "correctAnswer": "ikany-kape (5+1)",
+            "options": [
+              "itomon (atomon)",
+              "ikany-kaoŋon (5+4)",
+              "ikany-kauni (5+3)",
+              "ikany-kape (5+1)"
+            ],
+            "hint": "Hobley 1902 p. 95 (Elgumi) & Johnston 1902 p. 851 (Elgumi/Wamia)"
           }
         ]
       },
@@ -517,7 +1080,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "id": "teso-numbers-measures-trade-measures-4",
         "title": "Trade, Barter, Currency & Traditional Measures",
         "icon": "Scale",
-        "description": "Learn market exchange, weights, measures, and value expressions. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "description": "Learn market exchange, weights, measures, and value expressions.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -578,35 +1141,83 @@ export const TESO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Ejenete itunga \"ikany-kauni (m.) / akany-kauni (f.)\" ka \"ikany-kaoŋon (m.) / akany-kaoŋon (f.)\".",
-            "source": "The people know \"Eight (8, lit. 5+3)\" and \"Nine (9, lit. 5+4)\"."
+            "target": "akais aare",
+            "source": "Twenty (20)"
           },
           {
-            "target": "Ejai toma orea \"itomon (m.) / atomon (f.)\" ka \"itomon-kanu-diope (m.) / atomon-kanu-diope (f.)\".",
-            "source": "In the homestead there is \"Ten (10)\" and \"Eleven (11)\"."
+            "target": "akais auni",
+            "source": "Thirty (30)"
           },
           {
-            "target": "Abu imakuk kolim \"itomon'aare (m.) / atomon'aare (f.)\" ka \"itomon'akany (m.) / atomon'aakany (f.)\".",
-            "source": "The elder spoke of \"Twelve (12)\" and \"Fifteen (15)\"."
+            "target": "akais aangon",
+            "source": "Forty (40)"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"ikany-kauni (m.) / akany-kauni (f.)\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"ikany-kauni (m.) / akany-kauni (f.)\" in Teso?",
             "correctAnswer": "Eight (8, lit. 5+3)",
             "options": [
-              "Eight (8, lit. 5+3)",
               "Nine (9, lit. 5+4)",
               "Ten (10)",
-              "Eleven (11)"
+              "Eleven (11)",
+              "Eight (8, lit. 5+3)"
             ],
             "hint": "Wikipedia Teso language — Cardinal numbers"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ikany-kaoŋon (m.) / akany-kaoŋon (f.)\" in Teso?",
+            "correctAnswer": "Nine (9, lit. 5+4)",
+            "options": [
+              "Ten (10)",
+              "Eleven (11)",
+              "Nine (9, lit. 5+4)",
+              "Eight (8, lit. 5+3)"
+            ],
+            "hint": "Wikipedia Teso language — Cardinal numbers"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"itomon (m.) / atomon (f.)\" in Teso?",
+            "correctAnswer": "Ten (10)",
+            "options": [
+              "Eleven (11)",
+              "Ten (10)",
+              "Eight (8, lit. 5+3)",
+              "Nine (9, lit. 5+4)"
+            ],
+            "hint": "Wikipedia Teso language — Cardinal numbers"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Ten (10)\" in Teso?",
+            "correctAnswer": "itomon (m.) / atomon (f.)",
+            "options": [
+              "itomon (m.) / atomon (f.)",
+              "ikany-kauni (m.) / akany-kauni (f.)",
+              "ikany-kaoŋon (m.) / akany-kaoŋon (f.)",
+              "itomon-kanu-diope (m.) / atomon-kanu-diope (f.)"
+            ],
+            "hint": "itomon (m.) / atomon (f.)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Eleven (11)\" in Teso?",
+            "correctAnswer": "itomon-kanu-diope (m.) / atomon-kanu-diope (f.)",
+            "options": [
+              "ikany-kauni (m.) / akany-kauni (f.)",
+              "ikany-kaoŋon (m.) / akany-kaoŋon (f.)",
+              "itomon (m.) / atomon (f.)",
+              "itomon-kanu-diope (m.) / atomon-kanu-diope (f.)"
+            ],
+            "hint": "itomon-kanu-diope (m.) / atomon-kanu-diope (f.)"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "ikany-kauni (m.) / akany-kauni (f.): Eight (8, lit. 5+3)",
             "pairs": [
               {
                 "left": "ikany-kauni (m.) / akany-kauni (f.)",
@@ -625,6 +1236,18 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Eleven (11)"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Twelve (12)\": ___",
+            "correctAnswer": "itomon'aare (m.) / atomon'aare (f.)",
+            "options": [
+              "ikany-kauni (m.) / akany-kauni (f.)",
+              "ikany-kaoŋon (m.) / akany-kaoŋon (f.)",
+              "itomon (m.) / atomon (f.)",
+              "itomon'aare (m.) / atomon'aare (f.)"
+            ],
+            "hint": "Wikipedia Teso language — Cardinal numbers"
           }
         ]
       }
@@ -632,15 +1255,15 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-5",
-    "title": "Unit 5: Food, Cuisine, Crops & Livestock Husbandry (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))",
-    "description": "Master food, cuisine, crops & livestock husbandry in Teso (Ateso) built directly from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
-    "icon": "🌾",
+    "title": "Unit 5: Food, Cuisine, Crops & Livestock Husbandry (C. W. Hobley 1902 Elgumi Vocabulary & Sir Harry Johnston )",
+    "description": "Master food, cuisine, crops & livestock husbandry in Teso (Ateso) built directly from C.",
+    "icon": "Tractor",
     "skills": [
       {
         "id": "teso-food-agriculture-staple-foods-cookery-5",
         "title": "Staple Foods, Cookery & Beverages",
-        "icon": "Utensils",
-        "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "icon": "Soup",
+        "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -699,37 +1322,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Masculine nouns"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"akiring\" ka \"akile\".",
-            "source": "The people know \"Meat\" and \"Milk\"."
-          },
-          {
-            "target": "Ejai toma orea \"atap\" ka \"akima / akuma\".",
-            "source": "In the homestead there is \"Millet bread / ugali\" and \"Porridge\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"acece\" ka \"ajon / ajony\".",
-            "source": "The elder spoke of \"Soup / broth\" and \"Local cereal brew\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"akiring\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"akiring\" in Teso?",
             "correctAnswer": "Meat",
             "options": [
-              "Meat",
               "Milk",
               "Millet bread / ugali",
-              "Porridge"
+              "Porridge",
+              "Meat"
             ],
             "hint": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"akile\" in Teso?",
+            "correctAnswer": "Milk",
+            "options": [
+              "Millet bread / ugali",
+              "Porridge",
+              "Milk",
+              "Meat"
+            ],
+            "hint": "Wikipedia Teso language — Feminine nouns"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"atap\" in Teso?",
+            "correctAnswer": "Millet bread / ugali",
+            "options": [
+              "Porridge",
+              "Millet bread / ugali",
+              "Meat",
+              "Milk"
+            ],
+            "hint": "Wikipedia Teso language — Orthography"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Millet bread / ugali\" in Teso?",
+            "correctAnswer": "atap",
+            "options": [
+              "atap",
+              "akiring",
+              "akile",
+              "akima / akuma"
+            ],
+            "hint": "atap"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Porridge\" in Teso?",
+            "correctAnswer": "akima / akuma",
+            "options": [
+              "akiring",
+              "akile",
+              "atap",
+              "akima / akuma"
+            ],
+            "hint": "akima / akuma"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "akiring: Meat",
             "pairs": [
               {
                 "left": "akiring",
@@ -748,14 +1406,26 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Porridge"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Soup / broth\": ___",
+            "correctAnswer": "acece",
+            "options": [
+              "akiring",
+              "akile",
+              "atap",
+              "acece"
+            ],
+            "hint": "Wikipedia Teso language — Feminine nouns"
           }
         ]
       },
       {
         "id": "teso-food-agriculture-crops-livestock-5",
         "title": "Crops, Cultivation & Pastoral Livestock",
-        "icon": "Sprout",
-        "description": "Study indigenous crops, planting seasons, and livestock terminology. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "icon": "Tractor",
+        "description": "Study indigenous crops, planting seasons, and livestock terminology.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -778,24 +1448,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Orthography"
           },
           {
-            "target": "Epaunt Lok’ Sudan",
-            "source": "Sudanese Pound (SDG)",
-            "pronunciation": "epaunt lok’ sudan",
-            "hint": "Ateso — GitHub unicode-org/cldr (teo.xml)"
-          },
-          {
-            "target": "Epaunt lok’ Misri",
-            "source": "Egyptian Pound (EGP)",
-            "pronunciation": "epaunt lok’ misri",
-            "hint": "Ateso — GitHub unicode-org/cldr (teo.xml)"
-          },
-          {
-            "target": "Epaunt lok’ Uingereza",
-            "source": "British Pound (GBP)",
-            "pronunciation": "epaunt lok’ uingereza",
-            "hint": "Ateso — GitHub unicode-org/cldr (teo.xml)"
-          },
-          {
             "target": "ekurididi",
             "source": "Maize",
             "pronunciation": "ekurididi",
@@ -814,37 +1466,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"amunyu\" ka \"ecaai (tea) / akaawa (coffee)\".",
-            "source": "The people know \"Salt\" and \"Tea / coffee\"."
-          },
-          {
-            "target": "Ejai toma orea \"inyamat / ainyamat\" ka \"Epaunt Lok’ Sudan\".",
-            "source": "In the homestead there is \"Food\" and \"Sudanese Pound (SDG)\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"Epaunt lok’ Misri\" ka \"Epaunt lok’ Uingereza\".",
-            "source": "The elder spoke of \"Egyptian Pound (EGP)\" and \"British Pound (GBP)\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"amunyu\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"amunyu\" in Teso?",
             "correctAnswer": "Salt",
             "options": [
-              "Salt",
               "Tea / coffee",
               "Food",
-              "Sudanese Pound (SDG)"
+              "Maize",
+              "Salt"
             ],
             "hint": "Wikipedia Teso language — Adverbs of place"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ecaai (tea) / akaawa (coffee)\" in Teso?",
+            "correctAnswer": "Tea / coffee",
+            "options": [
+              "Food",
+              "Maize",
+              "Tea / coffee",
+              "Salt"
+            ],
+            "hint": "Wikipedia Teso language — Masculine nouns"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"inyamat / ainyamat\" in Teso?",
+            "correctAnswer": "Food",
+            "options": [
+              "Maize",
+              "Food",
+              "Salt",
+              "Tea / coffee"
+            ],
+            "hint": "Wikipedia Teso language — Orthography"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Food\" in Teso?",
+            "correctAnswer": "inyamat / ainyamat",
+            "options": [
+              "inyamat / ainyamat",
+              "amunyu",
+              "ecaai (tea) / akaawa (coffee)",
+              "ekurididi"
+            ],
+            "hint": "inyamat / ainyamat"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Maize\" in Teso?",
+            "correctAnswer": "ekurididi",
+            "options": [
+              "amunyu",
+              "ecaai (tea) / akaawa (coffee)",
+              "inyamat / ainyamat",
+              "ekurididi"
+            ],
+            "hint": "ekurididi"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "amunyu: Salt",
             "pairs": [
               {
                 "left": "amunyu",
@@ -859,10 +1546,22 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Food"
               },
               {
-                "left": "Epaunt Lok’ Sudan",
-                "right": "Sudanese Pound (SDG)"
+                "left": "ekurididi",
+                "right": "Maize"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Water\": ___",
+            "correctAnswer": "akipi",
+            "options": [
+              "amunyu",
+              "ecaai (tea) / akaawa (coffee)",
+              "inyamat / ainyamat",
+              "akipi"
+            ],
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)"
           }
         ]
       }
@@ -870,15 +1569,15 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-6",
-    "title": "Unit 6: Nature, Landscape, Flora & East African Wildlife (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))",
-    "description": "Master nature, landscape, flora & east african wildlife in Teso (Ateso) built directly from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
-    "icon": "🦁",
+    "title": "Unit 6: Nature, Landscape, Flora & East African Wildlife (C. W. Hobley 1902 Elgumi Vocabulary & Sir Harry Johnston )",
+    "description": "Master nature, landscape, flora & east african wildlife in Teso (Ateso) built directly from C.",
+    "icon": "PawPrint",
     "skills": [
       {
         "id": "teso-nature-wildlife-land-sky-water-6",
         "title": "Sky, Weather, Rivers & Landforms",
-        "icon": "Sun",
-        "description": "Describe the natural environment, rivers, mountains, and weather phenomena. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "icon": "CloudRain",
+        "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -937,37 +1636,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Vocabulary"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"apaaran\" ka \"akware\".",
-            "source": "The people know \"Day\" and \"Night\"."
-          },
-          {
-            "target": "Ejai toma orea \"acerit (pl. acerin)\" ka \"akim\".",
-            "source": "In the homestead there is \"Star\" and \"Fire\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"akipi (a-ki-pí)\" ka \"edou\".",
-            "source": "The elder spoke of \"Water (pluralia tantum)\" and \"Rain\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"apaaran\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"apaaran\" in Teso?",
             "correctAnswer": "Day",
             "options": [
-              "Day",
               "Night",
               "Star",
-              "Fire"
+              "Fire",
+              "Day"
             ],
             "hint": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"akware\" in Teso?",
+            "correctAnswer": "Night",
+            "options": [
+              "Star",
+              "Fire",
+              "Night",
+              "Day"
+            ],
+            "hint": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"acerit (pl. acerin)\" in Teso?",
+            "correctAnswer": "Star",
+            "options": [
+              "Fire",
+              "Star",
+              "Day",
+              "Night"
+            ],
+            "hint": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Star\" in Teso?",
+            "correctAnswer": "acerit (pl. acerin)",
+            "options": [
+              "acerit (pl. acerin)",
+              "apaaran",
+              "akware",
+              "akim"
+            ],
+            "hint": "ah-cheh-reet"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Fire\" in Teso?",
+            "correctAnswer": "akim",
+            "options": [
+              "apaaran",
+              "akware",
+              "acerit (pl. acerin)",
+              "akim"
+            ],
+            "hint": "ah-keem"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "apaaran: Day",
             "pairs": [
               {
                 "left": "apaaran",
@@ -986,14 +1720,26 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Fire"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Water (pluralia tantum)\": ___",
+            "correctAnswer": "akipi (a-ki-pí)",
+            "options": [
+              "apaaran",
+              "akware",
+              "acerit (pl. acerin)",
+              "akipi (a-ki-pí)"
+            ],
+            "hint": "Wikipedia Teso language & Eastern Nilotic languages"
           }
         ]
       },
       {
         "id": "teso-nature-wildlife-wildlife-flora-6",
         "title": "East African Fauna, Birds & Sacred Trees",
-        "icon": "Trees",
-        "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "icon": "PawPrint",
+        "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -1052,37 +1798,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Adverbs of place"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)\" ka \"eloa / emapule\".",
-            "source": "The people know \"Tree (pl. trees)\" and \"Mvule tree\"."
-          },
-          {
-            "target": "Ejai toma orea \"anya\" ka \"eduan\".",
-            "source": "In the homestead there is \"Grass\" and \"Weeds\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"asinge\" ka \"ekuron\".",
-            "source": "The elder spoke of \"Sand\" and \"Ashes\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)\" in Teso?",
             "correctAnswer": "Tree (pl. trees)",
             "options": [
-              "Tree (pl. trees)",
               "Mvule tree",
               "Grass",
-              "Weeds"
+              "Weeds",
+              "Tree (pl. trees)"
             ],
             "hint": "Wikipedia Teso language & Eastern Nilotic languages"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"eloa / emapule\" in Teso?",
+            "correctAnswer": "Mvule tree",
+            "options": [
+              "Grass",
+              "Weeds",
+              "Mvule tree",
+              "Tree (pl. trees)"
+            ],
+            "hint": "Wikipedia Teso language — Masculine nouns"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"anya\" in Teso?",
+            "correctAnswer": "Grass",
+            "options": [
+              "Weeds",
+              "Grass",
+              "Tree (pl. trees)",
+              "Mvule tree"
+            ],
+            "hint": "Wikipedia Teso language — Alphabet"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Grass\" in Teso?",
+            "correctAnswer": "anya",
+            "options": [
+              "anya",
+              "ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)",
+              "eloa / emapule",
+              "eduan"
+            ],
+            "hint": "anya"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Weeds\" in Teso?",
+            "correctAnswer": "eduan",
+            "options": [
+              "ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)",
+              "eloa / emapule",
+              "anya",
+              "eduan"
+            ],
+            "hint": "eduan"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "ekitoi (ɛ́-kɪ́tɔ́-ɪ̀): Tree (pl. trees)",
             "pairs": [
               {
                 "left": "ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)",
@@ -1101,6 +1882,18 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Weeds"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Sand\": ___",
+            "correctAnswer": "asinge",
+            "options": [
+              "ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)",
+              "eloa / emapule",
+              "anya",
+              "asinge"
+            ],
+            "hint": "Wikipedia Teso language — Pluralia tantum"
           }
         ]
       }
@@ -1108,15 +1901,15 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-7",
-    "title": "Unit 7: The Human Body, Health, Medicine & Safety (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))",
-    "description": "Master the human body, health, medicine & safety in Teso (Ateso) built directly from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
-    "icon": "🩺",
+    "title": "Unit 7: The Human Body, Health, Medicine & Safety (C. W. Hobley 1902 Elgumi Vocabulary & Sir Harry Johnston )",
+    "description": "Master the human body, health, medicine & safety in Teso (Ateso) built directly from C.",
+    "icon": "Heart",
     "skills": [
       {
         "id": "teso-body-health-anatomy-senses-7",
         "title": "Parts of the Body & Physical Senses",
         "icon": "Activity",
-        "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -1175,37 +1968,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"akou (pl. akwes)\" ka \"akeju (pl. akejen)\".",
-            "source": "The people know \"Head\" and \"Foot\"."
-          },
-          {
-            "target": "Ejai toma orea \"akan (pl. akanin)\" ka \"akong'u (a-kɔ́ŋ-ʊ̀)\".",
-            "source": "In the homestead there is \"Hand\" and \"Eye\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"akit (á-kí-t)\" ka \"ekume (e-kúmè)\".",
-            "source": "The elder spoke of \"Ear\" and \"Nose\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"akou (pl. akwes)\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"akou (pl. akwes)\" in Teso?",
             "correctAnswer": "Head",
             "options": [
-              "Head",
               "Foot",
               "Hand",
-              "Eye"
+              "Eye",
+              "Head"
             ],
             "hint": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"akeju (pl. akejen)\" in Teso?",
+            "correctAnswer": "Foot",
+            "options": [
+              "Hand",
+              "Eye",
+              "Foot",
+              "Head"
+            ],
+            "hint": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"akan (pl. akanin)\" in Teso?",
+            "correctAnswer": "Hand",
+            "options": [
+              "Eye",
+              "Hand",
+              "Head",
+              "Foot"
+            ],
+            "hint": "Hobley 1902 pp. 92–95 (Elgumi) & Johnston 1902 pp. 842–852 (Elgumi/Wamia)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Hand\" in Teso?",
+            "correctAnswer": "akan (pl. akanin)",
+            "options": [
+              "akan (pl. akanin)",
+              "akou (pl. akwes)",
+              "akeju (pl. akejen)",
+              "akong'u (a-kɔ́ŋ-ʊ̀)"
+            ],
+            "hint": "ah-kahn"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Eye\" in Teso?",
+            "correctAnswer": "akong'u (a-kɔ́ŋ-ʊ̀)",
+            "options": [
+              "akou (pl. akwes)",
+              "akeju (pl. akejen)",
+              "akan (pl. akanin)",
+              "akong'u (a-kɔ́ŋ-ʊ̀)"
+            ],
+            "hint": "akong'u (a-kɔ́ŋ-ʊ̀)"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "akou (pl. akwes): Head",
             "pairs": [
               {
                 "left": "akou (pl. akwes)",
@@ -1224,14 +2052,26 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Eye"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Ear\": ___",
+            "correctAnswer": "akit (á-kí-t)",
+            "options": [
+              "akou (pl. akwes)",
+              "akeju (pl. akejen)",
+              "akan (pl. akanin)",
+              "akit (á-kí-t)"
+            ],
+            "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ]
       },
       {
         "id": "teso-body-health-healing-safety-7",
         "title": "Health, Traditional Medicine & Emergency Terms",
-        "icon": "ShieldAlert",
-        "description": "Master expressions for illness, healing remedies, protection, and safety. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "icon": "Hospital",
+        "description": "Master expressions for illness, healing remedies, protection, and safety.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -1290,37 +2130,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"aakot (á-àkɔ́t)\" ka \"akoit (á-kóì-t)\".",
-            "source": "The people know \"Blood\" and \"Bone\"."
-          },
-          {
-            "target": "Ejai toma orea \"adam\" ka \"aijar\".",
-            "source": "In the homestead there is \"Brain\" and \"Life\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"ajo\" ka \"ibokori\".",
-            "source": "The elder spoke of \"Sleep\" and \"Finger\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"aakot (á-àkɔ́t)\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"aakot (á-àkɔ́t)\" in Teso?",
             "correctAnswer": "Blood",
             "options": [
-              "Blood",
               "Bone",
               "Brain",
-              "Life"
+              "Life",
+              "Blood"
             ],
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"akoit (á-kóì-t)\" in Teso?",
+            "correctAnswer": "Bone",
+            "options": [
+              "Brain",
+              "Life",
+              "Bone",
+              "Blood"
+            ],
+            "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"adam\" in Teso?",
+            "correctAnswer": "Brain",
+            "options": [
+              "Life",
+              "Brain",
+              "Blood",
+              "Bone"
+            ],
+            "hint": "Wikipedia Teso language — Singularia tantum"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Brain\" in Teso?",
+            "correctAnswer": "adam",
+            "options": [
+              "adam",
+              "aakot (á-àkɔ́t)",
+              "akoit (á-kóì-t)",
+              "aijar"
+            ],
+            "hint": "adam"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Life\" in Teso?",
+            "correctAnswer": "aijar",
+            "options": [
+              "aakot (á-àkɔ́t)",
+              "akoit (á-kóì-t)",
+              "adam",
+              "aijar"
+            ],
+            "hint": "aijar"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "aakot (á-àkɔ́t): Blood",
             "pairs": [
               {
                 "left": "aakot (á-àkɔ́t)",
@@ -1339,6 +2214,18 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Life"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Sleep\": ___",
+            "correctAnswer": "ajo",
+            "options": [
+              "aakot (á-àkɔ́t)",
+              "akoit (á-kóì-t)",
+              "adam",
+              "ajo"
+            ],
+            "hint": "Wikipedia Teso language — Pluralia tantum"
           }
         ]
       }
@@ -1346,15 +2233,15 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-8",
-    "title": "Unit 8: Core Verbs, Tenses, Negation & Verbal Extensions (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))",
-    "description": "Master core verbs, tenses, negation & verbal extensions in Teso (Ateso) built directly from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
-    "icon": "⚡",
+    "title": "Unit 8: Core Verbs, Tenses, Negation & Verbal Extensions (C. W. Hobley 1902 Elgumi Vocabulary & Sir Harry Johnston )",
+    "description": "Master core verbs, tenses, negation & verbal extensions in Teso (Ateso) built directly from C.",
+    "icon": "BookOpen",
     "skills": [
       {
         "id": "teso-verbs-grammar-action-verbs-8",
         "title": "Essential Action & Motion Verbs",
-        "icon": "Compass",
-        "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "icon": "Zap",
+        "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -1413,37 +2300,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Orthography"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"ainer (alimun)\" ka \"abunore (bia ne! = come here!)\".",
-            "source": "The people know \"Speak\" and \"Come\"."
-          },
-          {
-            "target": "Ejai toma orea \"alosit (kolot! = go!)\" ka \"akimat (aimat)\".",
-            "source": "In the homestead there is \"Go\" and \"Drink\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"akinyam (ainyam)\" ka \"akinyam / ainyam (akí-ɲám-à)\".",
-            "source": "The elder spoke of \"Eat\" and \"To eat\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"ainer (alimun)\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"ainer (alimun)\" in Teso?",
             "correctAnswer": "Speak",
             "options": [
-              "Speak",
               "Come",
               "Go",
-              "Drink"
+              "Drink",
+              "Speak"
             ],
             "hint": "Hobley 1902 & Ateso vocabulary"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"abunore (bia ne! = come here!)\" in Teso?",
+            "correctAnswer": "Come",
+            "options": [
+              "Go",
+              "Drink",
+              "Come",
+              "Speak"
+            ],
+            "hint": "Johnston 1902 p. 851 (Elgumi/Wamia) & Hobley 1902 pp. 92–95"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"alosit (kolot! = go!)\" in Teso?",
+            "correctAnswer": "Go",
+            "options": [
+              "Drink",
+              "Go",
+              "Speak",
+              "Come"
+            ],
+            "hint": "Johnston 1902 p. 851 (Elgumi/Wamia) & Hobley 1902 pp. 92–95"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Go\" in Teso?",
+            "correctAnswer": "alosit (kolot! = go!)",
+            "options": [
+              "alosit (kolot! = go!)",
+              "ainer (alimun)",
+              "abunore (bia ne! = come here!)",
+              "akimat (aimat)"
+            ],
+            "hint": "ah-loh-seet / koh-loht"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Drink\" in Teso?",
+            "correctAnswer": "akimat (aimat)",
+            "options": [
+              "ainer (alimun)",
+              "abunore (bia ne! = come here!)",
+              "alosit (kolot! = go!)",
+              "akimat (aimat)"
+            ],
+            "hint": "ah-kee-maht"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "ainer (alimun): Speak",
             "pairs": [
               {
                 "left": "ainer (alimun)",
@@ -1462,14 +2384,26 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Drink"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"Eat\": ___",
+            "correctAnswer": "akinyam (ainyam)",
+            "options": [
+              "ainer (alimun)",
+              "abunore (bia ne! = come here!)",
+              "alosit (kolot! = go!)",
+              "akinyam (ainyam)"
+            ],
+            "hint": "Hobley 1902 & Johnston 1902"
           }
         ]
       },
       {
         "id": "teso-verbs-grammar-verbal-derivatives-8",
         "title": "Applied, Causative, Reciprocal & Stative Verbs",
-        "icon": "Layers",
-        "description": "Build complex meanings using verbal extensions and grammatical particles. Grounded in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies).",
+        "icon": "RefreshCw",
+        "description": "Build complex meanings using verbal extensions and grammatical particles.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
@@ -1528,37 +2462,72 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Feminine nouns"
           }
         ],
-        "sentences": [
-          {
-            "target": "Ejenete itunga \"aipet [e] (kick) vs. aipet [ɛ] (lay out)\" ka \"aidip\".",
-            "source": "The people know \"To kick (close e) vs. To lay out (open ɛ)\" and \"To hit\"."
-          },
-          {
-            "target": "Ejai toma orea \"aimor [ɔ] (share) vs. aimor [o] (insult)\" ka \"aikut [u] (scoop) vs. aikut [ʊ] (blow)\".",
-            "source": "In the homestead there is \"To share (open ɔ) vs. To insult (close o)\" and \"To scratch the earth / scoop (close u) vs. To blow (open ʊ)\"."
-          },
-          {
-            "target": "Abu imakuk kolim \"abal\" ka \"ainu\".",
-            "source": "The elder spoke of \"To say\" and \"To hug / embrace\"."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"aipet [e] (kick) vs. aipet [ɛ] (lay out)\" mean in English (C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies))?",
+            "prompt": "What is the English meaning of \"aipet [e] (kick) vs. aipet [ɛ] (lay out)\" in Teso?",
             "correctAnswer": "To kick (close e) vs. To lay out (open ɛ)",
             "options": [
-              "To kick (close e) vs. To lay out (open ɛ)",
               "To hit",
               "To share (open ɔ) vs. To insult (close o)",
-              "To scratch the earth / scoop (close u) vs. To blow (open ʊ)"
+              "To scratch the earth / scoop (close u) vs. To blow (open ʊ)",
+              "To kick (close e) vs. To lay out (open ɛ)"
             ],
             "hint": "Wikipedia Teso language — Vowel contrast"
           },
           {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"aidip\" in Teso?",
+            "correctAnswer": "To hit",
+            "options": [
+              "To share (open ɔ) vs. To insult (close o)",
+              "To scratch the earth / scoop (close u) vs. To blow (open ʊ)",
+              "To hit",
+              "To kick (close e) vs. To lay out (open ɛ)"
+            ],
+            "hint": "Wikipedia Teso language — Alphabet"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"aimor [ɔ] (share) vs. aimor [o] (insult)\" in Teso?",
+            "correctAnswer": "To share (open ɔ) vs. To insult (close o)",
+            "options": [
+              "To scratch the earth / scoop (close u) vs. To blow (open ʊ)",
+              "To share (open ɔ) vs. To insult (close o)",
+              "To kick (close e) vs. To lay out (open ɛ)",
+              "To hit"
+            ],
+            "hint": "Wikipedia Teso language — Vowel contrast"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To share (open ɔ) vs. To insult (close o)\" in Teso?",
+            "correctAnswer": "aimor [ɔ] (share) vs. aimor [o] (insult)",
+            "options": [
+              "aimor [ɔ] (share) vs. aimor [o] (insult)",
+              "aipet [e] (kick) vs. aipet [ɛ] (lay out)",
+              "aidip",
+              "aikut [u] (scoop) vs. aikut [ʊ] (blow)"
+            ],
+            "hint": "aimor [ɔ] (share) vs. aimor [o] (insult)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To scratch the earth / scoop (close u) vs. To blow (open ʊ)\" in Teso?",
+            "correctAnswer": "aikut [u] (scoop) vs. aikut [ʊ] (blow)",
+            "options": [
+              "aipet [e] (kick) vs. aipet [ɛ] (lay out)",
+              "aidip",
+              "aimor [ɔ] (share) vs. aimor [o] (insult)",
+              "aikut [u] (scoop) vs. aikut [ʊ] (blow)"
+            ],
+            "hint": "aikut [u] (scoop) vs. aikut [ʊ] (blow)"
+          },
+          {
             "type": "match_pairs",
-            "correctAnswer": "",
-            "prompt": "Match each Teso (Ateso) term to its verified English meaning:",
+            "prompt": "Match each Teso expression with its English meaning:",
+            "correctAnswer": "aipet [e] (kick) vs. aipet [ɛ] (lay out): To kick (close e) vs. To lay out (open ɛ)",
             "pairs": [
               {
                 "left": "aipet [e] (kick) vs. aipet [ɛ] (lay out)",
@@ -1577,6 +2546,18 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "To scratch the earth / scoop (close u) vs. To blow (open ʊ)"
               }
             ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso term for \"To say\": ___",
+            "correctAnswer": "abal",
+            "options": [
+              "aipet [e] (kick) vs. aipet [ɛ] (lay out)",
+              "aidip",
+              "aimor [ɔ] (share) vs. aimor [o] (insult)",
+              "abal"
+            ],
+            "hint": "Wikipedia Teso language — Alphabet"
           }
         ]
       }
@@ -1584,14 +2565,14 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-9-public-domain-corpus",
-    "title": "Unit 9: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+    "title": "Unit 9: Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Teso (Ateso) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
-    "icon": "BookOpen",
+    "icon": "ScrollText",
     "skills": [
       {
         "id": "teso-pd-corpus-9-1",
-        "title": "Historical Monograph & Comparative Roots I (Teso (Ateso))",
-        "icon": "Scroll",
+        "title": "Classical Roots & Naming Traditions",
+        "icon": "Baby",
         "description": "Study verified Teso (Ateso) headwords and dialect forms extracted from primary public-domain monographs.",
         "tips": "Every item in this skill is grounded directly in the historical Teso (Ateso) linguistic corpus with full phonetic pronunciation guides.",
         "words": [
@@ -1605,63 +2586,50 @@ export const TESO_UNITS: CourseUnit[] = [
             "target": "Inyā",
             "source": "Grass",
             "pronunciation": "iny-ah",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Akūt",
             "source": "God",
             "pronunciation": "a-koot",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Aginé",
             "source": "Goat",
             "pronunciation": "a-gin",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Ekokorr",
             "source": "Fowl",
             "pronunciation": "e-ko-kor",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Akeju",
             "source": "Foot",
             "pronunciation": "a-ke-ju",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Esessī",
             "source": "Fish",
             "pronunciation": "e-ses-see",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
-            "target": "Ebωkorit",
+            "target": "Ebokorit",
             "source": "Finger",
             "pronunciation": "e-boh-ko-rit",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           }
         ],
-        "sentences": [
-          {
-            "target": "ateker (pl. atekerin) — Inyā.",
-            "source": "Clan / exogamous kinship group — Grass."
-          },
-          {
-            "target": "Akūt • Aginé.",
-            "source": "God • Goat."
-          },
-          {
-            "target": "Ekokorr (Akeju).",
-            "source": "Fowl (Foot)."
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ateker (pl. atekerin)\" in Teso (Ateso) (Rev. A. L. Kitching, A Handbook of the Ateso Language (1915))?",
+            "prompt": "What is the English meaning of \"ateker (pl. atekerin)\" in Teso?",
             "correctAnswer": "Clan / exogamous kinship group",
             "options": [
               "Clan / exogamous kinship group",
@@ -1704,14 +2672,14 @@ export const TESO_UNITS: CourseUnit[] = [
               "ateker (pl. atekerin)",
               "Inyā"
             ],
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           }
         ]
       },
       {
         "id": "teso-pd-corpus-9-2",
-        "title": "Historical Monograph & Comparative Roots II (Teso (Ateso))",
-        "icon": "Compass",
+        "title": "Homestead, Nature & Everyday Expressions",
+        "icon": "Users",
         "description": "Expand your command of Teso (Ateso) ecological, kinship, and action vocabulary from the archival corpus.",
         "tips": "Compare classical 19th- and early 20th-century Teso (Ateso) transcriptions with modern standardized orthography.",
         "words": [
@@ -1719,69 +2687,61 @@ export const TESO_UNITS: CourseUnit[] = [
             "target": "Akoñ",
             "source": "Eye",
             "pronunciation": "a-ko",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Etom",
             "source": "Elephant",
             "pronunciation": "e-tom",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Akit",
             "source": "Ear",
             "pronunciation": "a-kit",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Ekiñok",
             "source": "Dog",
             "pronunciation": "e-ki ok",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Akenyanu",
             "source": "Day",
             "pronunciation": "a-keny-a-nu",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
-            "target": "Akiteñ; naberω",
+            "target": "Akiteñ; nabero",
             "source": "Cow",
             "pronunciation": "a-ki-te",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Enañga",
             "source": "Cloth",
             "pronunciation": "e-nang-a",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Ekōkō",
             "source": "Child",
             "pronunciation": "e-koh-koh",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           }
         ],
         "sentences": [
           {
-            "target": "Akoñ — Etom.",
-            "source": "Eye — Elephant."
-          },
-          {
-            "target": "Akit • Ekiñok.",
-            "source": "Ear • Dog."
-          },
-          {
-            "target": "Akenyanu (Akiteñ; naberω).",
-            "source": "Day (Cow)."
+            "target": "Akiteñ; nabero",
+            "source": "Cow"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Akoñ\" in Teso (Ateso) (Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)?",
+            "prompt": "What is the English meaning of \"Akoñ\" in Teso?",
             "correctAnswer": "Eye",
             "options": [
               "Eye",
@@ -1789,7 +2749,7 @@ export const TESO_UNITS: CourseUnit[] = [
               "Ear",
               "Dog"
             ],
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "type": "match_pairs",
@@ -1820,11 +2780,11 @@ export const TESO_UNITS: CourseUnit[] = [
             "correctAnswer": "Akenyanu",
             "options": [
               "Akenyanu",
-              "Akiteñ; naberω",
+              "Akiteñ; nabero",
               "Akoñ",
               "Etom"
             ],
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           }
         ]
       }
@@ -1832,14 +2792,14 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-10-open-datasets-modern",
-    "title": "Unit 10: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
-    "description": "Master Teso (Ateso) vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
-    "icon": "Globe",
+    "title": "Unit 10: Core Swadesh & Everyday Community Vocabulary",
+    "description": "Master Teso (Ateso) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
+    "icon": "Landmark",
     "skills": [
       {
         "id": "teso-open-dataset-10-1",
-        "title": "Swadesh Core & Cultural Lexicon (Teso (Ateso))",
-        "icon": "Layers",
+        "title": "Core Swadesh & Cultural Vocabulary",
+        "icon": "Hash",
         "description": "Learn core Teso (Ateso) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
         "tips": "Focus on high-frequency roots shared across Teso (Ateso) dialects and everyday speech.",
         "words": [
@@ -1847,43 +2807,43 @@ export const TESO_UNITS: CourseUnit[] = [
             "target": "Anācăkēñe",
             "source": "Brother",
             "pronunciation": "a-nah-ca-keh e",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Emal; Akau",
             "source": "Bow",
             "pronunciation": "e-mal",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
-            "target": "Akωit",
+            "target": "Akoit",
             "source": "Bone",
             "pronunciation": "a-ko-hit",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Aqot",
             "source": "Blood",
             "pronunciation": "a-qot",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Atoroqót",
             "source": "Bird",
             "pronunciation": "a-to-ro t",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "Alaburu",
             "source": "Banana",
             "pronunciation": "a-la-bu-ru",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
-            "target": "Ekoyω",
+            "target": "Ekoyo",
             "source": "Arrow",
             "pronunciation": "e-ko-yoh",
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "target": "atomon",
@@ -1894,22 +2854,14 @@ export const TESO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Anācăkēñe — Emal; Akau.",
-            "source": "Brother — Bow."
-          },
-          {
-            "target": "Akωit • Aqot.",
-            "source": "Bone • Blood."
-          },
-          {
-            "target": "Atoroqót (Alaburu).",
-            "source": "Bird (Banana)."
+            "target": "Emal; Akau",
+            "source": "Bow"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Anācăkēñe\" in Teso (Ateso) (Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)?",
+            "prompt": "What is the English meaning of \"Anācăkēñe\" in Teso?",
             "correctAnswer": "Brother",
             "options": [
               "Brother",
@@ -1917,7 +2869,7 @@ export const TESO_UNITS: CourseUnit[] = [
               "Bone",
               "Blood"
             ],
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           },
           {
             "type": "match_pairs",
@@ -1933,7 +2885,7 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Bow"
               },
               {
-                "left": "Akωit",
+                "left": "Akoit",
                 "right": "Bone"
               },
               {
@@ -1952,14 +2904,14 @@ export const TESO_UNITS: CourseUnit[] = [
               "Anācăkēñe",
               "Emal; Akau"
             ],
-            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           }
         ]
       },
       {
         "id": "teso-open-dataset-10-2",
-        "title": "Agriculture, Community & Everyday Life (Teso (Ateso))",
-        "icon": "Sparkles",
+        "title": "Agriculture, Community & Everyday Life",
+        "icon": "TreePine",
         "description": "Practice Teso (Ateso) terms for agriculture, environment, social organization, and daily communication.",
         "tips": "Review how traditional Teso (Ateso) roots extend naturally to modern community, farming, and civic contexts.",
         "words": [
@@ -2014,22 +2966,26 @@ export const TESO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "kanyi-ki-ongwon or akanya kangwun — kanyi kauni.",
-            "source": "Nine — Eight."
+            "target": "kanyi-ki-ongwon or akanya kangwun",
+            "source": "Nine"
           },
           {
-            "target": "kanyi-kare • { kanyi or akanya } kape.",
-            "source": "Seven • Six."
+            "target": "kanyi kauni",
+            "source": "Eight"
           },
           {
-            "target": "ekan or akanyi (aungwen or ongwon).",
-            "source": "Five (Four)."
+            "target": "{ kanyi or akanya } kape",
+            "source": "Six"
+          },
+          {
+            "target": "ekan or akanyi",
+            "source": "Five"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kanyi-ki-ongwon or akanya kangwun\" in Teso (Ateso) (Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95))?",
+            "prompt": "What is the English meaning of \"kanyi-ki-ongwon or akanya kangwun\" in Teso?",
             "correctAnswer": "Nine",
             "options": [
               "Nine",

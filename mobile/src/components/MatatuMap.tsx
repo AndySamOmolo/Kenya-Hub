@@ -154,7 +154,7 @@ export function MatatuMap({
                 });
 
                 const popupHtml = '<div class="popup-title">Stage ' + stage.order + ': ' + stage.name + '</div>' +
-                  '<div class="popup-sub">' + (isFirst ? '🟢 Departure Terminus' : (isLast ? '🔴 Destination Terminus' : '🟡 Waypoint Stage')) + '</div>' +
+                  '<div class="popup-sub">' + (isFirst ? 'Departure Terminus' : (isLast ? 'Destination Terminus' : 'Waypoint Stage')) + '</div>' +
                   '<div class="popup-sub" style="font-size: 10px; margin-top: 2px;">Route ${routeNumber} • ${routeName}</div>';
 
                 L.marker([stage.lat, stage.lng], { icon: customIcon })

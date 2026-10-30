@@ -710,7 +710,7 @@ export function KplcTokenCalculator() {
       if (remainingAmount <= 0) break;
       const bandMax = band.max ?? 100000;
       const bandMin = band.min;
-      const bandCapacity = bandMax - bandMin + 1;
+      const bandCapacity = bandMin === 0 ? bandMax : bandMax - bandMin + 1;
 
       const unitCostBeforeVat = band.rate + levyPerUnit + fccPerUnit + ferfa;
       const unitCostWithVat = unitCostBeforeVat * (1 + vatRate);
@@ -1121,7 +1121,7 @@ function calcConveyancing(value: number) {
     if (remaining <= 0) break;
     const bandMax = band.max ?? Infinity;
     const bandMin = band.min;
-    const taxableInBand = Math.min(remaining, bandMax - bandMin + 1);
+    const taxableInBand = Math.min(remaining, bandMin === 0 ? bandMax : bandMax - bandMin + 1);
     if (taxableInBand > 0) {
       const fee = Math.round(taxableInBand * (band.rate / 100));
       totalFee += fee;

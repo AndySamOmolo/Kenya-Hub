@@ -175,7 +175,7 @@
         {
           "english": "One",
           "translation": "ków (adj. kaldai)",
-          "pronunciation": "kow / kal-dai",
+          "pronunciation": "kow",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -266,21 +266,21 @@
         {
           "english": "Man / Husband",
           "translation": "et (pl. rág)",
-          "pronunciation": "et (pl. rag)",
+          "pronunciation": "et",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
           "english": "Woman / Wife",
           "translation": "maxábal (pl. obórri)",
-          "pronunciation": "ma-xa-bal / o-bor-ri",
+          "pronunciation": "maxabal",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
           "english": "Child / Boy",
           "translation": "ínam (pl. yéyye)",
-          "pronunciation": "i-nam (pl. yey-ye)",
+          "pronunciation": "inam",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -357,7 +357,7 @@
         {
           "english": "Firstborn son (heir to the camel herd)",
           "translation": "inán weyn",
-          "pronunciation": "in n wey",
+          "pronunciation": "inan weyn",
           "context": "Rendille Kinship — Schlee (1979)",
           "audioFile": null
         }
@@ -378,7 +378,7 @@
         {
           "english": "Eye",
           "translation": "íl (pl. indó)",
-          "pronunciation": "il (pl. in-do)",
+          "pronunciation": "il",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -476,7 +476,7 @@
         {
           "english": "Cow / Cattle",
           "translation": "lólyo (sg. sáa)",
-          "pronunciation": "lol-yo / saa",
+          "pronunciation": "lolyo",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -539,14 +539,14 @@
         {
           "english": "Female milking camel",
           "translation": "ayyú",
-          "pronunciation": "ay",
+          "pronunciation": "ayyu",
           "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
           "audioFile": null
         },
         {
           "english": "Young camel calf",
           "translation": "nyiró",
-          "pronunciation": "nyir",
+          "pronunciation": "nyiro",
           "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
           "audioFile": null
         },
@@ -749,14 +749,14 @@
         {
           "english": "Enclosure / Kraal",
           "translation": "súm (pl. sumám)",
-          "pronunciation": "sum (pl. su-mam)",
+          "pronunciation": "sum",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
           "english": "House / Tent",
           "translation": "mính (pl. minán)",
-          "pronunciation": "minh (pl. mi-nan)",
+          "pronunciation": "minh",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -770,35 +770,35 @@
         {
           "english": "Wooden milk container / milking vessel",
           "translation": "madál",
-          "pronunciation": "mad l",
+          "pronunciation": "madal",
           "context": "Rendille Pastoral Lexicon — Schlee (1979)",
           "audioFile": null
         },
         {
           "english": "Smoked gourd for storing camel milk",
           "translation": "kullób",
-          "pronunciation": "kul b",
+          "pronunciation": "kullob",
           "context": "Rendille Pastoral Lexicon — Schlee (1979)",
           "audioFile": null
         },
         {
           "english": "Fresh camel milk",
           "translation": "caanó gaal",
-          "pronunciation": "caan gaal",
+          "pronunciation": "caano gaal",
           "context": "Rendille Pastoral Lexicon — Heine (1980)",
           "audioFile": null
         },
         {
           "english": "Curdled / sour milk",
           "translation": "kaleeló",
-          "pronunciation": "ka-leel",
+          "pronunciation": "kaleelo",
           "context": "Rendille Pastoral Lexicon — Heine (1980)",
           "audioFile": null
         },
         {
           "english": "Ghee / clarified butter",
           "translation": "subáh",
-          "pronunciation": "sub h",
+          "pronunciation": "subah",
           "context": "Rendille Pastoral Lexicon — Heine (1980)",
           "audioFile": null
         },
@@ -1055,31 +1055,10 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "The 7-Day Rendille Week (Saturday to Friday, Hobley 1910)",
-          "translation": "Seri (Sat), Serehakaw (Sun), Alhadi (Mon), Atanini (Tue), Talada (Wed), Arbah (Thu), Gum (Fri, auspicious camel-moving day)",
-          "pronunciation": "se-ri, se-re-ha-kaw, al-ha-di, a-ta-ni-ni, ta-la-da, ar-bah, gum",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', pp. 158–160",
-          "audioFile": null
-        },
-        {
           "english": "Auspicious camel-camp migration day in Rendille pastoral tradition",
           "translation": "Gum (Friday)",
           "pronunciation": "gum",
           "context": "C. W. Hobley (1910, p. 159) — Rendille camel management",
-          "audioFile": null
-        },
-        {
-          "english": "[Mogogodo / Yaaku — East Cushitic] Man / Person / Woman / Child",
-          "translation": "muq / kedi / eiyo / ikoko",
-          "pronunciation": "muq / ke-di / ei-yo / i-ko-ko",
-          "context": "C. W. Hobley (1910, pp. 137–142) — First published Mogogodo (Yaaku) vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "[Mogogodo / Yaaku — East Cushitic] Water / Fire / Sun / Moon",
-          "translation": "ach / iku / xo / le",
-          "pronunciation": "ach / i-ku / xo / le",
-          "context": "C. W. Hobley (1910, pp. 137–142) — Mogogodo (Yaaku) vocabulary",
           "audioFile": null
         },
         {
@@ -1209,13 +1188,6 @@
           "audioFile": null
         },
         {
-          "english": "The 7 Rendille (Rāndili) Names for the Days of the Week & Sabbath/Travel Prohibitions (Hobley 1910, pp. 162–163)",
-          "translation": "1st day: Hahat (fast day — no animals prepared for food; prayer to God) • 2nd day: Hura hakhan (Rendille Sabbath — no work done, though animals may be prepared; hura = sun) • 3rd day: Sere (sere =...",
-          "pronunciation": "ha-hat, hu-ra ha-khan, se-re, ku-mat, ser ha-khan, se-re a-di, se-re gal",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 162–163 | Additional items: 4th day: Kumat • 5th day: Ser hakhan (prohibited day — may not travel, move grazing ground, or make cattle medicine) • 6th day: Sere a...",
-          "audioFile": null
-        },
-        {
           "english": "First day of the week (fast and prayer day)",
           "translation": "Hahat",
           "pronunciation": "ha-hat",
@@ -1314,7 +1286,7 @@
           "audioFile": null
         },
         {
-          "english": "camel blessing / evening prayer assembly",
+          "english": "Camel blessing / evening prayer assembly",
           "translation": "waakh barid",
           "pronunciation": "waakh ba-rid",
           "context": "Rendille Oral & Ritual Tradition — Schlee (1979)",
@@ -1330,7 +1302,7 @@
         {
           "english": "Almadó (new year & ritual cleansing festival)",
           "translation": "Almadó",
-          "pronunciation": "al-mad",
+          "pronunciation": "almado",
           "context": "Rendille Ritual Calendar — Schlee (1979)",
           "audioFile": null
         }

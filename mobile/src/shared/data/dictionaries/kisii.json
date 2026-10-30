@@ -83,16 +83,9 @@
           "audioFile": null
         },
         {
-          "english": "Good morning! (lit. It has dawned! — It has dawned well!)",
-          "translation": "Bwakire! (resp. Bwakire buya!)",
-          "pronunciation": "bwakire! (resp. bwakire buya!)",
-          "context": "Ekegusii",
-          "audioFile": null
-        },
-        {
           "english": "Good evening! (lit. It has grown dark!)",
           "translation": "Bwairire! (resp. Bwairire buya!)",
-          "pronunciation": "bwairire! (resp. bwairire buya!)",
+          "pronunciation": "bwairire",
           "context": "Ekegusii",
           "audioFile": null
         },
@@ -259,8 +252,8 @@
         },
         {
           "english": "One",
-          "translation": "-mu, -mω / -mω, -mwe",
-          "pronunciation": "-mu, -mω / -mω, -mwe",
+          "translation": "-mu, -mo / -mo, -mwe",
+          "pronunciation": "-mu, -mo / -mo, -mwe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -287,29 +280,29 @@
         },
         {
           "english": "Five",
-          "translation": "-sanω, -tanu / -tanu",
-          "pronunciation": "-sanω, -tanu / -tanu",
+          "translation": "-sano, -tanu / -tanu",
+          "pronunciation": "-sano, -tanu / -tanu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Six",
-          "translation": "-sanω (-tanω) na i-mω / -sansaba",
-          "pronunciation": "-sanω (-tanω) na i-mω / -sansaba",
+          "translation": "-sano (-tano) na i-mo / -sansaba",
+          "pronunciation": "-sano",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Seven",
-          "translation": "-sanω (-tanω) na i-were (i-viri) / Mu-huṅgati",
-          "pronunciation": "-sanω (-tanω) na i-were (i-viri) / mu-huṅgati",
+          "translation": "-sano (-tano) na i-were (i-viri) / Mu-hunggati",
+          "pronunciation": "-sano",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "-sanω na i-satu (i-tatu) / Mω-nane",
-          "pronunciation": "-sanω na i-satu (i-tatu) / mω-nane",
+          "translation": "-sano na i-satu (i-tatu) / Mo-nane",
+          "pronunciation": "-sano na i-satu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -322,43 +315,43 @@
         },
         {
           "english": "Ten",
-          "translation": "I-kumi. Ωmu-roṅgω / I-kumi. Ωmu-roṅgu",
-          "pronunciation": "i-kumi. ωmu-roṅgω / i-kumi. ωmu-roṅgu",
+          "translation": "I-kumi. Ωmu-ronggo / I-kumi. Ωmu-ronggu",
+          "pronunciation": "i-kumi. omu-ronggo / i-kumi. omu-ronggu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Twenty",
-          "translation": "Ama-kumi a-were or Emi-roṅgω i-viri / Mi-roṅgu i-biri. Mi-roṅgu ni i-viri",
-          "pronunciation": "ama-kumi a-were or emi-roṅgω i-viri / mi-roṅgu i-biri. mi-roṅgu ni i-viri",
+          "translation": "Ama-kumi a-were or Emi-ronggo i-viri / Mi-ronggu i-biri. Mi-ronggu ni i-viri",
+          "pronunciation": "ama-kumi a-were or emi-ronggo i-viri / mi-ronggu i-biri. mi-ronggu ni i-viri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Thirty",
-          "translation": "Ama-kumi (or Emi-roṅgω) a-tatu (i-tatu) / Mi-roṅgω i-tatu",
-          "pronunciation": "ama-kumi (or emi-roṅgω) a-tatu (i-tatu) / mi-roṅgω i-tatu",
+          "translation": "Ama-kumi (or Emi-ronggo) a-tatu (i-tatu) / Mi-ronggo i-tatu",
+          "pronunciation": "ama-kumi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Forty",
-          "translation": "Ama-kumi a-nye or ga-nye. Emi-roṅgω i-nye / Mi-roṅgω i-nne",
-          "pronunciation": "ama-kumi a-nye or ga-nye. emi-roṅgω i-nye / mi-roṅgω i-nne",
+          "translation": "Ama-kumi a-nye or ga-nye. Emi-ronggo i-nye / Mi-ronggo i-nne",
+          "pronunciation": "ama-kumi a-nye or ga-nye. emi-ronggo i-nye / mi-ronggo i-nne",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Fifty",
-          "translation": "Ama-kumi a-tanu. Emi-roṅgω i-sanω / Mi-roṅgω i-tanω",
-          "pronunciation": "ama-kumi a-tanu. emi-roṅgω i-sanω / mi-roṅgω i-tanω",
+          "translation": "Ama-kumi a-tanu. Emi-ronggo i-sano / Mi-ronggo i-tano",
+          "pronunciation": "ama-kumi a-tanu. emi-ronggo i-sano / mi-ronggo i-tano",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Hundred",
-          "translation": "Emi-roṅgω i-kumi / Eri-gana",
-          "pronunciation": "emi-roṅgω i-kumi / eri-gana",
+          "translation": "Emi-ronggo i-kumi / Eri-gana",
+          "pronunciation": "emi-ronggo i-kumi / eri-gana",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -370,7 +363,7 @@
           "audioFile": null
         },
         {
-          "english": "traditional eight-stringed Gusii bass lyre",
+          "english": "Traditional eight-stringed Gusii bass lyre",
           "translation": "Obokano",
           "pronunciation": "obokano",
           "context": "Ekegusii",
@@ -378,8 +371,8 @@
         },
         {
           "english": "Eleven",
-          "translation": "I-kumi na i-mω / I-kumi na ω-mu. Nωi-kumi na o-mwe",
-          "pronunciation": "i-kumi na i-mω / i-kumi na ω-mu. nωi-kumi na o-mwe",
+          "translation": "I-kumi na i-mo / I-kumi na o-mu. Noi-kumi na o-mwe",
+          "pronunciation": "i-kumi na i-mo / i-kumi na o-mu. noi-kumi na o-mwe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -497,14 +490,14 @@
         },
         {
           "english": "One",
-          "translation": "mu, -mω",
+          "translation": "mu, -mo",
           "pronunciation": "mu moh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "One",
-          "translation": "mω, -mwe",
+          "translation": "mo, -mwe",
           "pronunciation": "moh mwe",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -553,7 +546,7 @@
         },
         {
           "english": "Five",
-          "translation": "sanω, -tanu",
+          "translation": "sano, -tanu",
           "pronunciation": "sa-noh ta-nu",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -567,7 +560,7 @@
         },
         {
           "english": "Six",
-          "translation": "sanω (-tanω) na i-mω",
+          "translation": "sano (-tano) na i-mo",
           "pronunciation": "sa-noh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -581,28 +574,28 @@
         },
         {
           "english": "Seven",
-          "translation": "sanω (-tanω) na i-were (i-viri)",
+          "translation": "sano (-tano) na i-were (i-viri)",
           "pronunciation": "sa-noh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Seven",
-          "translation": "Mu-huṅgati",
+          "translation": "Mu-hunggati",
           "pronunciation": "mu hung-a-ti",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "sanω na i-satu (i-tatu)",
+          "translation": "sano na i-satu (i-tatu)",
           "pronunciation": "sa-noh na i sa-tu",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Eight",
-          "translation": "Mω-nane",
+          "translation": "Mo-nane",
           "pronunciation": "moh na-ne",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -623,91 +616,91 @@
         },
         {
           "english": "Ten",
-          "translation": "I-kumi. Ωmu-roṅgω",
+          "translation": "I-kumi. Ωmu-ronggo",
           "pronunciation": "i ku-mi oh-mu rong-oh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Ten",
-          "translation": "I-kumi. Ωmu-roṅgu",
+          "translation": "I-kumi. Ωmu-ronggu",
           "pronunciation": "i ku-mi oh-mu rong-u",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Eleven",
-          "translation": "I-kumi na i-mω",
+          "translation": "I-kumi na i-mo",
           "pronunciation": "i ku-mi na i moh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Eleven",
-          "translation": "I-kumi na ω-mu. Nωi-kumi na o-mwe",
+          "translation": "I-kumi na o-mu. Noi-kumi na o-mwe",
           "pronunciation": "i ku-mi na oh mu no-hi",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Twenty",
-          "translation": "Ama-kumi a-were or Emi-roṅgω i-viri",
+          "translation": "Ama-kumi a-were or Emi-ronggo i-viri",
           "pronunciation": "a-ma ku-mi a we-re or e-mi",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Twenty",
-          "translation": "Mi-roṅgu i-biri. Mi-roṅgu ni i-viri",
+          "translation": "Mi-ronggu i-biri. Mi-ronggu ni i-viri",
           "pronunciation": "mi rong-u i bi-ri mi rong-u",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Thirty",
-          "translation": "Ama-kumi (or Emi-roṅgω) a-tatu (i-tatu)",
+          "translation": "Ama-kumi (or Emi-ronggo) a-tatu (i-tatu)",
           "pronunciation": "a-ma ku-mi",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Thirty",
-          "translation": "Mi-roṅgω i-tatu",
+          "translation": "Mi-ronggo i-tatu",
           "pronunciation": "mi rong-oh i ta-tu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Forty",
-          "translation": "Ama-kumi a-nye or ga-nye. Emi-roṅgω i-nye",
+          "translation": "Ama-kumi a-nye or ga-nye. Emi-ronggo i-nye",
           "pronunciation": "a-ma ku-mi a nye or ga",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Forty",
-          "translation": "Mi-roṅgω i-nne",
+          "translation": "Mi-ronggo i-nne",
           "pronunciation": "mi rong-oh i nne",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Fifty",
-          "translation": "Ama-kumi a-tanu. Emi-roṅgω i-sanω",
+          "translation": "Ama-kumi a-tanu. Emi-ronggo i-sano",
           "pronunciation": "a-ma ku-mi a ta-nu e-mi rong-oh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Fifty",
-          "translation": "Mi-roṅgω i-tanω",
+          "translation": "Mi-ronggo i-tano",
           "pronunciation": "mi rong-oh i ta-noh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Hundred",
-          "translation": "Emi-roṅgω i-kumi",
+          "translation": "Emi-ronggo i-kumi",
           "pronunciation": "e-mi rong-oh i ku-mi",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -755,27 +748,6 @@
           "audioFile": null
         },
         {
-          "english": "Six",
-          "translation": "„ ne mω",
-          "pronunciation": "ne moh",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Seven",
-          "translation": "„ na īwere",
-          "pronunciation": "na ee-we-re",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Eight",
-          "translation": "„ „ isatu",
-          "pronunciation": "i-sa-tu",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
           "english": "Nine",
           "translation": "Kianda",
           "pronunciation": "kiand-a",
@@ -790,37 +762,9 @@
           "audioFile": null
         },
         {
-          "english": "Eleven",
-          "translation": "„ ne mω",
-          "pronunciation": "ne moh",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
           "english": "Twenty",
           "translation": "Amakumi awirí",
-          "pronunciation": "a-ma-ku-mi a-wir",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Thirty",
-          "translation": "„ gatatu",
-          "pronunciation": "ga-ta-tu",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Forty",
-          "translation": "„ ganne",
-          "pronunciation": "gan-ne",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Fifty",
-          "translation": "„ gatano",
-          "pronunciation": "ga-ta-no",
+          "pronunciation": "amakumi awiri",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -876,7 +820,7 @@
         {
           "english": "Person / human (Class 1/2: omo-/aba-)",
           "translation": "omonto (pl. abanto)",
-          "pronunciation": "omonto (pl. abanto)",
+          "pronunciation": "omonto",
           "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
@@ -911,7 +855,7 @@
         {
           "english": "Girl (Class 9/2)",
           "translation": "omoiseke (pl. abaiseke)",
-          "pronunciation": "omoiseke (pl. abaiseke)",
+          "pronunciation": "omoiseke",
           "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
@@ -937,44 +881,44 @@
           "audioFile": null
         },
         {
-          "english": "child (pl. children)",
+          "english": "Child (pl. children)",
           "translation": "Omwana (pl. Abana)",
-          "pronunciation": "omwana (pl. abana)",
+          "pronunciation": "omwana",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
           "english": "Brother",
-          "translation": "N-dugi-ani. Omw-ana ωw-etu / Ωm-ura ωm-intu. Ωmω-mura ωm-intu",
-          "pronunciation": "n-dugi-ani. omw-ana ωw-etu / ωm-ura ωm-intu. ωmω-mura ωm-intu",
+          "translation": "N-dugi-ani. Omw-ana ow-etu / Ωm-ura om-intu. Ωmo-mura om-intu",
+          "pronunciation": "n-dugi-ani. omw-ana ow-etu / om-ura om-intu. omo-mura om-intu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Chief",
-          "translation": "Omw-ami; av-. Ωmu-nda; ava-nda. Umw-isia, Umw-isiki / Ωmω-kama; ava-",
-          "pronunciation": "omw-ami; av-. ωmu-nda; ava-nda. umw-isia, umw-isiki / ωmω-kama; ava-",
+          "translation": "Omw-ami; av-. Ωmu-nda; ava-nda. Umw-isia, Umw-isiki / Ωmo-kama; ava-",
+          "pronunciation": "omw-ami",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Sister",
-          "translation": "Nya-ruχa. Omw-iseke. Ωmω-subati. Ωmu-gωgω / Ωmω-subati; ava-",
-          "pronunciation": "nya-ruχa. omw-iseke. ωmω-subati. ωmu-gωgω / ωmω-subati; ava-",
+          "translation": "Nya-rukha. Omw-iseke. Ωmo-subati. Ωmu-gogo / Ωmo-subati; ava-",
+          "pronunciation": "nya-rukha. omw-iseke. omo-subati. omu-gogo / omo-subati; ava-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Son, boy",
-          "translation": "Omw-ana. Iωmω-isia / Omw-ana. Ωmω-risia",
-          "pronunciation": "omw-ana. iωmω-isia / omw-ana. ωmω-risia",
+          "translation": "Omw-ana. Iomo-isia / Omw-ana. Ωmo-risia",
+          "pronunciation": "omw-ana. iomo-isia / omw-ana. omo-risia",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Wife",
-          "translation": "Ωmω-ke. Ωmu-kuṅgu. Ωmu-ka / Ωmω-kare",
-          "pronunciation": "ωmω-ke. ωmu-kuṅgu. ωmu-ka / ωmω-kare",
+          "translation": "Ωmo-ke. Ωmu-kunggu. Ωmu-ka / Ωmo-kare",
+          "pronunciation": "mo-ke mu-kunggu mu-ka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -986,51 +930,51 @@
           "audioFile": null
         },
         {
-          "english": "woman, wife (pl. women)",
+          "english": "Woman, wife (pl. women)",
           "translation": "Omokungu (pl. Abakungu)",
-          "pronunciation": "omokungu (pl. abakungu)",
+          "pronunciation": "omokungu",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "man, husband (pl. men)",
+          "english": "Man, husband (pl. men)",
           "translation": "Omosacha (pl. Abasacha)",
-          "pronunciation": "omosacha (pl. abasacha)",
+          "pronunciation": "omosacha",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "respected male elder, grandfather",
+          "english": "Respected male elder, grandfather",
           "translation": "Omogaka (pl. Abagaka)",
-          "pronunciation": "omogaka (pl. abagaka)",
+          "pronunciation": "omogaka",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "respected female elder, grandmother, mother",
+          "english": "Respected female elder, grandmother, mother",
           "translation": "Omong'ina (pl. Abang'ina)",
-          "pronunciation": "omong'ina (pl. abang'ina)",
+          "pronunciation": "omong'ina",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
           "english": "Girl",
-          "translation": "Omw-iseke. Ωmω-subati / Ωmu-subati",
-          "pronunciation": "omw-iseke. ωmω-subati / ωmu-subati",
+          "translation": "Omw-iseke. Ωmo-subati / Ωmu-subati",
+          "pronunciation": "omw-iseke. omo-subati / omu-subati",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Twins",
           "translation": "Eki-sare; ebi- / E-sare, Eri-sare; (ci-, ama-)",
-          "pronunciation": "eki-sare; ebi- / e-sare, eri-sare; (ci-, ama-)",
+          "pronunciation": "eki-sare",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "White man",
-          "translation": "Ωmu-suṅgu / Ωmω-cuṅgu",
-          "pronunciation": "ωmu-suṅgu / ωmω-cuṅgu",
+          "translation": "Ωmu-sunggu / Ωmo-cunggu",
+          "pronunciation": "mu-sunggu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -1127,7 +1071,7 @@
         },
         {
           "english": "Breast (man's)",
-          "translation": "Ege-kuba; eve-. Eṅ-kuba; ciṅ",
+          "translation": "Ege-kuba; eve-. Eng-kuba; cing",
           "pronunciation": "e-ge ku-ba",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -1142,35 +1086,35 @@
         {
           "english": "Breast (woman's)",
           "translation": "Ωlu-bere; cim",
-          "pronunciation": "oh-lu be-re",
+          "pronunciation": "lu-bere",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Brother",
-          "translation": "N-dugi-ani. Omw-ana ωw-etu",
+          "translation": "N-dugi-ani. Omw-ana ow-etu",
           "pronunciation": "n du-gi a-ni om a-na oh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Brother",
-          "translation": "Ωm-ura ωm-intu. Ωmω-mura ωm-intu",
-          "pronunciation": "oh u-ra oh int-u oh-moh mu-ra",
+          "translation": "Ωm-ura om-intu. Ωmo-mura om-intu",
+          "pronunciation": "m-ura om-intu mo-mura om-intu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Chief",
           "translation": "Omw-ami; av-. Ωmu-nda; ava-nda. Umw-isia, Umw-isiki",
-          "pronunciation": "om a-mi",
+          "pronunciation": "omw-ami",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Chief",
-          "translation": "Ωmω-kama; ava",
-          "pronunciation": "oh-moh ka-ma",
+          "translation": "Ωmo-kama; ava",
+          "pronunciation": "mo-kama",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -1190,7 +1134,7 @@
         },
         {
           "english": "Girl",
-          "translation": "Omw-iseke. Ωmω-subati",
+          "translation": "Omw-iseke. Ωmo-subati",
           "pronunciation": "om i-se-ke oh-moh su-ba-ti",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -1198,48 +1142,48 @@
         {
           "english": "Girl",
           "translation": "Ωmu-subati",
-          "pronunciation": "oh-mu su-ba-ti",
+          "pronunciation": "mu-subati",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Man",
           "translation": "Ωmu-ntu; aba-, ava",
-          "pronunciation": "oh-mu ntu",
+          "pronunciation": "mu-ntu",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Man",
           "translation": "Ωmu-ntu; ava",
-          "pronunciation": "oh-mu ntu",
+          "pronunciation": "mu-ntu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Sister",
-          "translation": "Nya-ruχa. Omw-iseke. Ωmω-subati. Ωmu-gωgω",
-          "pronunciation": "nya rukh-a om i-se-ke oh-moh su-ba-ti",
+          "translation": "Nya-rukha. Omw-iseke. Ωmo-subati. Ωmu-gogo",
+          "pronunciation": "nya-rukha omw-iseke mo-subati mu-gogo",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Sister",
-          "translation": "Ωmω-subati; ava",
-          "pronunciation": "oh-moh su-ba-ti",
+          "translation": "Ωmo-subati; ava",
+          "pronunciation": "mo-subati",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Son, boy",
-          "translation": "Omw-ana. Iωmω-isia",
+          "translation": "Omw-ana. Iomo-isia",
           "pronunciation": "om a-na ioh-moh i-sia",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Son, boy",
-          "translation": "Omw-ana. Ωmω-risia",
+          "translation": "Omw-ana. Ωmo-risia",
           "pronunciation": "om a-na oh-moh ri-sia",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -1260,43 +1204,43 @@
         },
         {
           "english": "White man",
-          "translation": "Ωmu-suṅgu",
-          "pronunciation": "oh-mu sung-u",
+          "translation": "Ωmu-sunggu",
+          "pronunciation": "mu-sunggu",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "White man",
-          "translation": "Ωmω-cuṅgu",
-          "pronunciation": "oh-moh cung-u",
+          "translation": "Ωmo-cunggu",
+          "pronunciation": "mo-cunggu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Wife",
-          "translation": "Ωmω-ke. Ωmu-kuṅgu. Ωmu-ka",
-          "pronunciation": "oh-moh ke oh-mu kung-u oh-mu ka",
+          "translation": "Ωmo-ke. Ωmu-kunggu. Ωmu-ka",
+          "pronunciation": "mo-ke mu-kunggu mu-ka",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Wife",
-          "translation": "Ωmω-kare",
-          "pronunciation": "oh-moh ka-re",
+          "translation": "Ωmo-kare",
+          "pronunciation": "mo-kare",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Woman",
-          "translation": "Ωmω-ke; ava-. Ωmω-kuṅgu; ava",
-          "pronunciation": "oh-moh ke",
+          "translation": "Ωmo-ke; ava-. Ωmo-kunggu; ava",
+          "pronunciation": "mo-ke",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Woman",
-          "translation": "Ωmω-kare; ava",
-          "pronunciation": "oh-moh ka-re",
+          "translation": "Ωmo-kare; ava",
+          "pronunciation": "mo-kare",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -1365,22 +1309,15 @@
         },
         {
           "english": "Woman",
-          "translation": "Omωke",
+          "translation": "Omoke",
           "pronunciation": "o-moh-ke",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
         {
           "english": "This man",
-          "translation": "Omuntu ωyu",
+          "translation": "Omuntu oyu",
           "pronunciation": "o-munt-u oh-yu",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "That man",
-          "translation": "„ uuria",
-          "pronunciation": "uu-ria",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -1422,7 +1359,7 @@
         {
           "english": "Head (Class 3/4: omo-/eme-)",
           "translation": "omotwe (pl. emetwe)",
-          "pronunciation": "omotwe (pl. emetwe)",
+          "pronunciation": "omotwe",
           "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
@@ -1442,50 +1379,50 @@
         },
         {
           "english": "Arm",
-          "translation": "Ωmω-kωnω; ama- / Ωkω-bωkω",
-          "pronunciation": "ωmω-kωnω; ama- / ωkω-bωkω",
+          "translation": "Ωmo-kono; ama- / Ωko-boko",
+          "pronunciation": "mo-kono",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Back",
-          "translation": "Ωmω-goṅgω",
-          "pronunciation": "ωmω-goṅgω",
+          "translation": "Ωmo-gonggo",
+          "pronunciation": "mo-gonggo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Belly",
           "translation": "In-da, En-dā; cin-da / En-da; cin-da",
-          "pronunciation": "in-da, en-dā; cin-da / en-da; cin-da",
+          "pronunciation": "in-da en-da",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Blood",
-          "translation": "Amany-iṅga or Amainy-iṅga / Ama-sere. Amainy-iṅga",
-          "pronunciation": "amany-iṅga or amainy-iṅga / ama-sere. amainy-iṅga",
+          "translation": "Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga",
+          "pronunciation": "amany-ingga or amainy-ingga / ama-sere. amainy-ingga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Bone",
-          "translation": "Eri-gwa; ama-γwa. Eri-guha or Eri-ūga. Li-uga; ma-uga / Eri-guha; ama-",
-          "pronunciation": "eri-gwa; ama-γwa. eri-guha or eri-ūga. li-uga; ma-uga / eri-guha; ama-",
+          "translation": "Eri-gwa; ama-ghwa. Eri-guha or Eri-ūga. Li-uga; ma-uga / Eri-guha; ama-",
+          "pronunciation": "eri-gwa; ama-ghwa. eri-guha or eri-ūga. li-uga; ma-uga / eri-guha; ama-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Breast (man's)",
-          "translation": "Eki-kuba; evi- / Ege-kuba; eve-. Eṅ-kuba; ciṅ-",
-          "pronunciation": "eki-kuba; evi- / ege-kuba; eve-. eṅ-kuba; ciṅ-",
+          "translation": "Eki-kuba; evi- / Ege-kuba; eve-. Eng-kuba; cing-",
+          "pronunciation": "eki-kuba; evi- / ege-kuba; eve-. eng-kuba; cing-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Breast (woman's)",
           "translation": "Li-bere / Ωlu-bere; cim- ...",
-          "pronunciation": "li-bere / ωlu-bere; cim- ...",
+          "pronunciation": "li-bere",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -1505,57 +1442,57 @@
         },
         {
           "english": "Head",
-          "translation": "Ωmu-twe; emi- / Ωmω-tui, Ωmω-tu",
-          "pronunciation": "ωmu-twe; emi- / ωmω-tui, ωmω-tu",
+          "translation": "Ωmu-twe; emi- / Ωmo-tui, Ωmo-tu",
+          "pronunciation": "mu-twe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Heart",
-          "translation": "En-teme. Eṅ-korω / Eṅ-korω",
-          "pronunciation": "en-teme. eṅ-korω / eṅ-korω",
+          "translation": "En-teme. Eng-koro / Eng-koro",
+          "pronunciation": "en-teme. eng-koro / eng-koro",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Heel",
-          "translation": "Ye-tiṅgirω. Iki-taleṅgi / Ege-tiṅgirω. Eke-sugurω",
-          "pronunciation": "ye-tiṅgirω. iki-taleṅgi / ege-tiṅgirω. eke-sugurω",
+          "translation": "Ye-tinggiro. Iki-talenggi / Ege-tinggiro. Eke-suguro",
+          "pronunciation": "ye-tinggiro. iki-talenggi / ege-tinggiro. eke-suguro",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Knee",
           "translation": "Eri-ru / Eri-rū",
-          "pronunciation": "eri-ru / eri-rū",
+          "pronunciation": "eri-ru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Leg",
-          "translation": "Ωku-guru. Ekeny-ama / Ωkω-gorω; ama-",
-          "pronunciation": "ωku-guru. ekeny-ama / ωkω-gorω; ama-",
+          "translation": "Ωku-guru. Ekeny-ama / Ωko-goro; ama-",
+          "pronunciation": "ku-guru ekeny-ama",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Mouth",
-          "translation": "Ama-nωa",
-          "pronunciation": "ama-nωa",
+          "translation": "Ama-noa",
+          "pronunciation": "ama-noa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Nail (of finger or toe)",
-          "translation": "Eki-cara or Oru-cara / Ωrω-kωmω; ciṅ-kωmω",
-          "pronunciation": "eki-cara or oru-cara / ωrω-kωmω; ciṅ-kωmω",
+          "translation": "Eki-cara or Oru-cara / Ωro-komo; cing-komo",
+          "pronunciation": "eki-cara or oru-cara / oro-komo; cing-komo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Neck",
-          "translation": "Ebi-gωti, Eri-gωti / Eri-gωti",
-          "pronunciation": "ebi-gωti, eri-gωti / eri-gωti",
+          "translation": "Ebi-goti, Eri-goti / Eri-goti",
+          "pronunciation": "ebi-goti, eri-goti / eri-goti",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -1575,8 +1512,8 @@
         },
         {
           "english": "Skin",
-          "translation": "Eri-kωba. Eri-ω / Eri-serω. Eri-hu",
-          "pronunciation": "eri-kωba. eri-ω / eri-serω. eri-hu",
+          "translation": "Eri-koba. Eri-o / Eri-sero. Eri-hu",
+          "pronunciation": "eri-koba. eri-o / eri-sero. eri-hu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -1589,8 +1526,8 @@
         },
         {
           "english": "Thigh",
-          "translation": "Di-raṅgω / Ekeny-ama. Iki-gwatu; ivi-",
-          "pronunciation": "di-raṅgω / ekeny-ama. iki-gwatu; ivi-",
+          "translation": "Di-ranggo / Ekeny-ama. Iki-gwatu; ivi-",
+          "pronunciation": "di-ranggo / ekeny-ama. iki-gwatu; ivi-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -1603,15 +1540,15 @@
         },
         {
           "english": "Tongue",
-          "translation": "Ωlu-meme; ci- / Orω-reme; cin-deme",
-          "pronunciation": "ωlu-meme; ci- / orω-reme; cin-deme",
+          "translation": "Ωlu-meme; ci- / Oro-reme; cin-deme",
+          "pronunciation": "lu-meme",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Tooth",
-          "translation": "Ir-inω; gam-enω",
-          "pronunciation": "ir-inω; gam-enω",
+          "translation": "Ir-ino; gam-eno",
+          "pronunciation": "ir-ino; gam-eno",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -1624,8 +1561,8 @@
         },
         {
           "english": "Chin",
-          "translation": "Kanyenyωbω",
-          "pronunciation": "kanyenyωbω",
+          "translation": "Kanyenyobo",
+          "pronunciation": "kanyenyobo",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Igizii / Kisii)",
           "audioFile": null
         },
@@ -1637,7 +1574,7 @@
           "audioFile": null
         },
         {
-          "english": "cooked finger millet or maize cornmeal (ugali)",
+          "english": "Cooked finger millet or maize cornmeal (ugali)",
           "translation": "Obokima",
           "pronunciation": "obokima",
           "context": "Ekegusii",
@@ -1645,29 +1582,29 @@
         },
         {
           "english": "Beard",
-          "translation": "Ωbo-ya. Ωrω-reru; cin-deru. Kanye-nyωbω / Ωrω-kaya, Ωrω-ka; ciṅ-",
-          "pronunciation": "ωbo-ya. ωrω-reru; cin-deru. kanye-nyωbω / ωrω-kaya, ωrω-ka; ciṅ-",
+          "translation": "Ωbo-ya. Ωro-reru; cin-deru. Kanye-nyobo / Ωro-kaya, Ωro-ka; cing-",
+          "pronunciation": "bo-ya ro-reru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Body",
-          "translation": "Ωmu-biri or Ωmω-viri; emi- / Ωmω-vere; emi-",
-          "pronunciation": "ωmu-biri or ωmω-viri; emi- / ωmω-vere; emi-",
+          "translation": "Ωmu-biri or Ωmo-viri; emi- / Ωmo-vere; emi-",
+          "pronunciation": "mu-biri or mo-viri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Face, forehead",
-          "translation": "Ωbu-siω / Ωbω-siω",
-          "pronunciation": "ωbu-siω / ωbω-siω",
+          "translation": "Ωbu-sio / Ωbo-sio",
+          "pronunciation": "bu-sio",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Urine",
-          "translation": "Am-enyali. Usi-nyora / Amasi-nyorω, Esi-nyorω",
-          "pronunciation": "am-enyali. usi-nyora / amasi-nyorω, esi-nyorω",
+          "translation": "Am-enyali. Usi-nyora / Amasi-nyoro, Esi-nyoro",
+          "pronunciation": "am-enyali. usi-nyora / amasi-nyoro, esi-nyoro",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -1862,36 +1799,36 @@
         },
         {
           "english": "Arm",
-          "translation": "Ωmω-kωnω; ama",
-          "pronunciation": "oh-moh koh-noh",
+          "translation": "Ωmo-kono; ama",
+          "pronunciation": "mo-kono",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Arm",
-          "translation": "Ωkω-bωkω",
-          "pronunciation": "oh-koh boh-koh",
+          "translation": "Ωko-boko",
+          "pronunciation": "ko-boko",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Beard",
-          "translation": "Ωbo-ya. Ωrω-reru; cin-deru. Kanye-nyωbω",
-          "pronunciation": "oh-bo ya oh-roh re-ru",
+          "translation": "Ωbo-ya. Ωro-reru; cin-deru. Kanye-nyobo",
+          "pronunciation": "bo-ya ro-reru",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Beard",
-          "translation": "Ωrω-kaya, Ωrω-ka; ciṅ",
-          "pronunciation": "oh-roh ka-ya oh-roh ka",
+          "translation": "Ωro-kaya, Ωro-ka; cing",
+          "pronunciation": "ro-kaya ro-ka",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Belly",
           "translation": "In-da, En-dā; cin-da",
-          "pronunciation": "in da en dah",
+          "pronunciation": "in-da en-da",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -1904,35 +1841,35 @@
         },
         {
           "english": "Blood",
-          "translation": "Amany-iṅga or Amainy-iṅga",
+          "translation": "Amany-ingga or Amainy-ingga",
           "pronunciation": "a-many ing-a or a-mainy ing-a",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Blood",
-          "translation": "Ama-sere. Amainy-iṅga",
+          "translation": "Ama-sere. Amainy-ingga",
           "pronunciation": "a-ma se-re a-mainy ing-a",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Body",
-          "translation": "Ωmu-biri or Ωmω-viri; emi",
-          "pronunciation": "oh-mu bi-ri or oh-moh vi-ri",
+          "translation": "Ωmu-biri or Ωmo-viri; emi",
+          "pronunciation": "mu-biri or mo-viri",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Body",
-          "translation": "Ωmω-vere; emi",
-          "pronunciation": "oh-moh ve-re",
+          "translation": "Ωmo-vere; emi",
+          "pronunciation": "mo-vere",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Bone",
-          "translation": "Eri-gwa; ama-γwa. Eri-guha or Eri-ūga. Li-uga; ma-uga",
+          "translation": "Eri-gwa; ama-ghwa. Eri-guha or Eri-ūga. Li-uga; ma-uga",
           "pronunciation": "e-ri gwa",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -1946,36 +1883,36 @@
         },
         {
           "english": "Ear",
-          "translation": "Ω-utω, Ωg-utu, Ωg-ωtω; ama-tω",
-          "pronunciation": "oh u-toh oh u-tu oh oh-toh",
+          "translation": "Ω-uto, Ωg-utu, Ωg-oto; ama-to",
+          "pronunciation": "-uto g-utu g-oto",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Ear",
-          "translation": "Ωgω-tui; ama-tui",
-          "pronunciation": "oh-goh tui",
+          "translation": "Ωgo-tui; ama-tui",
+          "pronunciation": "go-tui",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Eye",
-          "translation": "Ir-isω; ama",
+          "translation": "Ir-iso; ama",
           "pronunciation": "ir i-soh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Face, forehead",
-          "translation": "Ωbu-siω",
-          "pronunciation": "oh-bu sioh",
+          "translation": "Ωbu-sio",
+          "pronunciation": "bu-sio",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Face, forehead",
-          "translation": "Ωbω-siω",
-          "pronunciation": "oh-boh sioh",
+          "translation": "Ωbo-sio",
+          "pronunciation": "bo-sio",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -1995,14 +1932,14 @@
         },
         {
           "english": "Foot",
-          "translation": "Eke-reṅge. Eke-sanyi",
+          "translation": "Eke-rengge. Eke-sanyi",
           "pronunciation": "e-ke reng-e e-ke sany-i",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Foot",
-          "translation": "Eke-sanyi. Eke-reṅge",
+          "translation": "Eke-sanyi. Eke-rengge",
           "pronunciation": "e-ke sany-i e-ke reng-e",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2016,14 +1953,14 @@
         },
         {
           "english": "Hand",
-          "translation": "Egi-sanyi. Ωmω-kωnω",
+          "translation": "Egi-sanyi. Ωmo-kono",
           "pronunciation": "e-gi sany-i oh-moh koh-noh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Hand",
-          "translation": "Eke-sanyi. Ωmω-kωnω",
+          "translation": "Eke-sanyi. Ωmo-kono",
           "pronunciation": "e-ke sany-i oh-moh koh-noh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2031,41 +1968,41 @@
         {
           "english": "Head",
           "translation": "Ωmu-twe; emi",
-          "pronunciation": "oh-mu twe",
+          "pronunciation": "mu-twe",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Head",
-          "translation": "Ωmω-tui, Ωmω-tu",
-          "pronunciation": "oh-moh tui oh-moh tu",
+          "translation": "Ωmo-tui, Ωmo-tu",
+          "pronunciation": "mo-tui mo-tu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Heart",
-          "translation": "En-teme. Eṅ-korω",
+          "translation": "En-teme. Eng-koro",
           "pronunciation": "en te-me eng ko-roh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Heart",
-          "translation": "Eṅ-korω",
+          "translation": "Eng-koro",
           "pronunciation": "eng ko-roh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Heel",
-          "translation": "Ye-tiṅgirω. Iki-taleṅgi",
+          "translation": "Ye-tinggiro. Iki-talenggi",
           "pronunciation": "ye ting-i-roh i-ki ta-leng-i",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Heel",
-          "translation": "Ege-tiṅgirω. Eke-sugurω",
+          "translation": "Ege-tinggiro. Eke-suguro",
           "pronunciation": "e-ge ting-i-roh e-ke su-gu-roh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2080,21 +2017,21 @@
         {
           "english": "Knee",
           "translation": "Eri-rū",
-          "pronunciation": "e-ri roo",
+          "pronunciation": "eri-ru",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Leg",
           "translation": "Ωku-guru. Ekeny-ama",
-          "pronunciation": "oh-ku gu-ru e-keny a-ma",
+          "pronunciation": "ku-guru ekeny-ama",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Leg",
-          "translation": "Ωkω-gorω; ama",
-          "pronunciation": "oh-koh go-roh",
+          "translation": "Ωko-goro; ama",
+          "pronunciation": "ko-goro",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -2107,35 +2044,35 @@
         },
         {
           "english": "Nail (of finger or toe)",
-          "translation": "Ωrω-kωmω; ciṅ-kωmω",
-          "pronunciation": "oh-roh koh-moh",
+          "translation": "Ωro-komo; cing-komo",
+          "pronunciation": "ro-komo",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Neck",
-          "translation": "Ebi-gωti, Eri-gωti",
+          "translation": "Ebi-goti, Eri-goti",
           "pronunciation": "e-bi goh-ti e-ri goh-ti",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Neck",
-          "translation": "Eri-gωti",
+          "translation": "Eri-goti",
           "pronunciation": "e-ri goh-ti",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Skin",
-          "translation": "Eri-kωba. Eri-ω",
+          "translation": "Eri-koba. Eri-o",
           "pronunciation": "e-ri koh-ba e-ri oh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Skin",
-          "translation": "Eri-serω. Eri-hu",
+          "translation": "Eri-sero. Eri-hu",
           "pronunciation": "e-ri se-roh e-ri hu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2156,7 +2093,7 @@
         },
         {
           "english": "Thigh",
-          "translation": "Di-raṅgω",
+          "translation": "Di-ranggo",
           "pronunciation": "di rang-oh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2185,13 +2122,13 @@
         {
           "english": "Tongue",
           "translation": "Ωlu-meme; ci",
-          "pronunciation": "oh-lu me-me",
+          "pronunciation": "lu-meme",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Tongue",
-          "translation": "Orω-reme; cin-deme",
+          "translation": "Oro-reme; cin-deme",
           "pronunciation": "o-roh re-me",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2205,21 +2142,21 @@
         },
         {
           "english": "Urine",
-          "translation": "Amasi-nyorω, Esi-nyorω",
+          "translation": "Amasi-nyoro, Esi-nyoro",
           "pronunciation": "a-ma-si nyo-roh e-si nyo-roh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Arm",
-          "translation": "Mokωno; Makono, pl",
+          "translation": "Mokono; Makono, pl",
           "pronunciation": "mo-koh-no",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
         {
           "english": "Back",
-          "translation": "Mωgongo",
+          "translation": "Mogongo",
           "pronunciation": "moh-gong-o",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -2234,7 +2171,7 @@
         {
           "english": "Belly",
           "translation": "Indá",
-          "pronunciation": "ind",
+          "pronunciation": "inda",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -2247,7 +2184,7 @@
         },
         {
           "english": "Bone",
-          "translation": "Erigwa; Maγwa, pl",
+          "translation": "Erigwa; Maghwa, pl",
           "pronunciation": "e-rig-wa",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -2262,20 +2199,20 @@
         {
           "english": "Ear",
           "translation": "Ωutu, Ogutu",
-          "pronunciation": "o-hu-tu o-gu-tu",
+          "pronunciation": "utu ogutu",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
         {
           "english": "Eye",
-          "translation": "Irisω; Amaisω, pl",
+          "translation": "Iriso; Amaiso, pl",
           "pronunciation": "i-ri-soh",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
         {
           "english": "Face",
-          "translation": "Obusiω",
+          "translation": "Obusio",
           "pronunciation": "o-bu-sioh",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -2318,7 +2255,7 @@
         {
           "english": "Heel",
           "translation": "Yetíngiro",
-          "pronunciation": "yet ngi-ro",
+          "pronunciation": "yetingiro",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -2345,14 +2282,14 @@
         },
         {
           "english": "Neck",
-          "translation": "Bigωti",
+          "translation": "Bigoti",
           "pronunciation": "bi-goh-ti",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
         {
           "english": "Nose",
-          "translation": "Miōlω",
+          "translation": "Miōlo",
           "pronunciation": "mioh-loh",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -2387,7 +2324,7 @@
         },
         {
           "english": "Tooth",
-          "translation": "Irinω",
+          "translation": "Irino",
           "pronunciation": "i-ri-noh",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -2430,14 +2367,14 @@
         {
           "english": "Cow / cattle (Class 9/10: e-/chi-)",
           "translation": "eng'ombe (pl. chiombe)",
-          "pronunciation": "eng'ombe (pl. chiombe)",
+          "pronunciation": "eng'ombe",
           "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Cat (Rogoro vs. Maate dialect)",
           "translation": "ekemoni (Rogoro) / ekebusi (Maate)",
-          "pronunciation": "ekemoni (Rogoro) / ekebusi (Maate)",
+          "pronunciation": "ekemoni",
           "context": "Wikipedia Gusii language — Dialectal lexicon",
           "audioFile": null
         },
@@ -2472,70 +2409,70 @@
         {
           "english": "Ant",
           "translation": "Ši-ndañgwe",
-          "pronunciation": "ši-ndañgwe",
+          "pronunciation": "shi-ndañgwe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Ant, white (termite)",
-          "translation": "I-ce; ama-ce / Cin-cωke (pl.). Isinzi Eri-ge Eri-geki",
-          "pronunciation": "i-ce; ama-ce / cin-cωke (pl.). isinzi eri-ge eri-geki",
+          "translation": "I-ce; ama-ce / Cin-coke (pl.). Isinzi Eri-ge Eri-geki",
+          "pronunciation": "i-ce",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Baboon",
-          "translation": "Eri-nω. Eṅ-gωge / Li-cōre. Li-wuṅgwi; ama-. I-bakω",
-          "pronunciation": "eri-nω. eṅ-gωge / li-cōre. li-wuṅgwi; ama-. i-bakω",
+          "translation": "Eri-no. Eng-goge / Li-cōre. Li-wunggwi; ama-. I-bako",
+          "pronunciation": "eri-no. eng-goge / li-cōre. li-wunggwi; ama-. i-bako",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Bee",
-          "translation": "En-juki or En-c'uke; pls. cin-juki, cin-cωke / En-cuke; cin-",
-          "pronunciation": "en-juki or en-c'uke; pls. cin-juki, cin-cωke / en-cuke; cin-",
+          "translation": "En-juki or En-c'uke; pls. cin-juki, cin-coke / En-cuke; cin-",
+          "pronunciation": "en-juki or en-c'uke; pls. cin-juki, cin-coke / en-cuke; cin-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Buffalo",
-          "translation": "En-era; cin-era / Eṅ-era; ciṅ-era",
-          "pronunciation": "en-era; cin-era / eṅ-era; ciṅ-era",
+          "translation": "En-era; cin-era / Eng-era; cing-era",
+          "pronunciation": "en-era; cin-era / eng-era; cing-era",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Bull",
           "translation": "Eri; pl. ici-eri",
-          "pronunciation": "eri; pl. ici-eri",
+          "pronunciation": "eri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Cat",
-          "translation": "Igi-simba; ivi-. Igi-cugu / E-kwōrω; ci-kwōrω. Ege-taṅgω; evi-",
-          "pronunciation": "igi-simba; ivi-. igi-cugu / e-kwōrω; ci-kwōrω. ege-taṅgω; evi-",
+          "translation": "Igi-simba; ivi-. Igi-cugu / E-kwōro; ci-kwōro. Ege-tanggo; evi-",
+          "pronunciation": "igi-simba",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Cow",
-          "translation": "En-ombe; ciṅ-. Eṅ-kombe, C-ombe / En-ombe",
-          "pronunciation": "en-ombe; ciṅ-. eṅ-kombe, c-ombe / en-ombe",
+          "translation": "En-ombe; cing-. Eng-kombe, C-ombe / En-ombe",
+          "pronunciation": "en-ombe; cing-. eng-kombe, c-ombe / en-ombe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Crocodile",
-          "translation": "E-gugbwie. En-oina; cin-oina / Eṅ-oina; ciṅ-",
-          "pronunciation": "e-gugbwie. en-oina; cin-oina / eṅ-oina; ciṅ-",
+          "translation": "E-gugbwie. En-oina; cin-oina / Eng-oina; cing-",
+          "pronunciation": "e-gugbwie. en-oina; cin-oina / eng-oina; cing-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Elephant",
-          "translation": "En-jωbu / En-jωgu, En-c'ugu",
-          "pronunciation": "en-jωbu / en-jωgu, en-c'ugu",
+          "translation": "En-jobu / En-jogu, En-c'ugu",
+          "pronunciation": "en-jobu / en-jogu, en-c'ugu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -2548,50 +2485,50 @@
         },
         {
           "english": "Fowl",
-          "translation": "Eṅ-kωkω. Aciṅ-gωkω / Eṅ-gωkω",
-          "pronunciation": "eṅ-kωkω. aciṅ-gωkω / eṅ-gωkω",
+          "translation": "Eng-koko. Acing-goko / Eng-goko",
+          "pronunciation": "eng-koko. acing-goko / eng-goko",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Guinea-fowl",
-          "translation": "Eri-kaṅga; ama-. Eṅ-kaṅga; ciṅ- / Eṅ-kaṅga; ciṅ-",
-          "pronunciation": "eri-kaṅga; ama-. eṅ-kaṅga; ciṅ- / eṅ-kaṅga; ciṅ-",
+          "translation": "Eri-kangga; ama-. Eng-kangga; cing- / Eng-kangga; cing-",
+          "pronunciation": "eri-kangga; ama-. eng-kangga; cing- / eng-kangga; cing-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Leopard",
-          "translation": "Eke-iri. Eṅ-gō / Eri-gwe",
-          "pronunciation": "eke-iri. eṅ-gō / eri-gwe",
+          "translation": "Eke-iri. Eng-gō / Eri-gwe",
+          "pronunciation": "eke-iri. eng-gō / eri-gwe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Monkey",
-          "translation": "Egi-kondω, Li-nyani / Ege-kembω. Eke-kondω",
-          "pronunciation": "egi-kondω, li-nyani / ege-kembω. eke-kondω",
+          "translation": "Egi-kondo, Li-nyani / Ege-kembo. Eke-kondo",
+          "pronunciation": "egi-kondo, li-nyani / ege-kembo. eke-kondo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Ox",
-          "translation": "En-ombe / I-nasu. In-ti N-taṅgana",
-          "pronunciation": "en-ombe / i-nasu. in-ti n-taṅgana",
+          "translation": "En-ombe / I-nasu. In-ti N-tanggana",
+          "pronunciation": "en-ombe / i-nasu. in-ti n-tanggana",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Pigeon",
-          "translation": "Eri-ruma / Eṅ-guti",
-          "pronunciation": "eri-ruma / eṅ-guti",
+          "translation": "Eri-ruma / Eng-guti",
+          "pronunciation": "eri-ruma / eng-guti",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Snake",
-          "translation": "In-jωka / En-cωka",
-          "pronunciation": "in-jωka / en-cωka",
+          "translation": "In-joka / En-coka",
+          "pronunciation": "in-joka / en-coka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -2619,7 +2556,7 @@
         {
           "english": "Which (fowl) will you give me ?",
           "translation": "ngoko eriri (fowl) (which) okonga (will you give)",
-          "pronunciation": "ngoko eriri (fowl) (which) okonga (will you give)",
+          "pronunciation": "ngoko eriri",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)",
           "audioFile": null
         },
@@ -2639,22 +2576,22 @@
         },
         {
           "english": "Hippopotamus",
-          "translation": "I-fubu or Eṅ-gubω / Eṅ-gubω",
-          "pronunciation": "i-fubu or eṅ-gubω / eṅ-gubω",
+          "translation": "I-fubu or Eng-gubo / Eng-gubo",
+          "pronunciation": "i-fubu or eng-gubo / eng-gubo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Horn",
-          "translation": "Ωru-gu-cala; pl. ciṅ-gu-in-jala / Ωrω-gu-cara; ciṅ-gω-cara. Ωru-tera; cin-",
-          "pronunciation": "ωru-gu-cala; pl. ciṅ-gu-in-jala / ωrω-gu-cara; ciṅ-gω-cara. ωru-tera; cin-",
+          "translation": "Ωru-gu-cala; pl. cing-gu-in-jala / Ωro-gu-cara; cing-go-cara. Ωru-tera; cin-",
+          "pronunciation": "ru-gu-cala",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Pig",
-          "translation": "Eṅ-kuru. Em-beci",
-          "pronunciation": "eṅ-kuru. em-beci",
+          "translation": "Eng-kuru. Em-beci",
+          "pronunciation": "eng-kuru. em-beci",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -2667,7 +2604,7 @@
         },
         {
           "english": "Ant",
-          "translation": "isinzi, white ant; kimonyo \"siafu\" soldier ant; kisanako, black ant",
+          "translation": "isinzi, white ant; kimonyo siafu soldier ant; kisanako, black ant",
           "pronunciation": "i-sin-zi whi-te ant",
           "context": "Kossova (Ekegusii) — C. W. Hobley, Eastern Uganda (1902, pp. 89–91)",
           "audioFile": null
@@ -2821,28 +2758,28 @@
         },
         {
           "english": "Ant, white (termite)",
-          "translation": "Cin-cωke (pl.). Isinzi Eri-ge Eri-geki",
+          "translation": "Cin-coke (pl.). Isinzi Eri-ge Eri-geki",
           "pronunciation": "cin coh-ke",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Baboon",
-          "translation": "Eri-nω. Eṅ-gωge",
+          "translation": "Eri-no. Eng-goge",
           "pronunciation": "e-ri noh eng goh-ge",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Baboon",
-          "translation": "Li-cōre. Li-wuṅgwi; ama-. I-bakω",
+          "translation": "Li-cōre. Li-wunggwi; ama-. I-bako",
           "pronunciation": "li coh-re li wung-wi",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Bee",
-          "translation": "En-juki or En-c'uke; pls. cin-juki, cin-cωke",
+          "translation": "En-juki or En-c'uke; pls. cin-juki, cin-coke",
           "pronunciation": "en ju-ki or en c'u-ke",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2856,14 +2793,14 @@
         },
         {
           "english": "Bird",
-          "translation": "Eciny-ωni, evi",
+          "translation": "Eciny-oni, evi",
           "pronunciation": "e-ciny oh-ni e-vi",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Bird",
-          "translation": "Ekiny-ωnyi; ama",
+          "translation": "Ekiny-onyi; ama",
           "pronunciation": "e-kiny oh-nyi",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2877,7 +2814,7 @@
         },
         {
           "english": "Buffalo",
-          "translation": "Eṅ-era; ciṅ-era",
+          "translation": "Eng-era; cing-era",
           "pronunciation": "eng e-ra",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2891,14 +2828,14 @@
         },
         {
           "english": "Cat",
-          "translation": "E-kwōrω; ci-kwōrω. Ege-taṅgω; evi",
-          "pronunciation": "e kwoh-roh",
+          "translation": "E-kwōro; ci-kwōro. Ege-tanggo; evi",
+          "pronunciation": "e-kworo",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Cow",
-          "translation": "En-ombe; ciṅ-. Eṅ-kombe, C-ombe",
+          "translation": "En-ombe; cing-. Eng-kombe, C-ombe",
           "pronunciation": "en omb-e",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2919,7 +2856,7 @@
         },
         {
           "english": "Crocodile",
-          "translation": "Eṅ-oina; ciṅ",
+          "translation": "Eng-oina; cing",
           "pronunciation": "eng oi-na",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2940,14 +2877,14 @@
         },
         {
           "english": "Elephant",
-          "translation": "En-jωbu",
+          "translation": "En-jobu",
           "pronunciation": "en joh-bu",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Elephant",
-          "translation": "En-jωgu, En-c'ugu",
+          "translation": "En-jogu, En-c'ugu",
           "pronunciation": "en joh-gu en c'u-gu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2968,14 +2905,14 @@
         },
         {
           "english": "Fowl",
-          "translation": "Eṅ-kωkω. Aciṅ-gωkω",
+          "translation": "Eng-koko. Acing-goko",
           "pronunciation": "eng koh-koh a-cing goh-koh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Fowl",
-          "translation": "Eṅ-gωkω",
+          "translation": "Eng-goko",
           "pronunciation": "eng goh-koh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -2983,76 +2920,76 @@
         {
           "english": "Goat",
           "translation": "Em-bōri, Em-buri; cim- or acim",
-          "pronunciation": "em boh-ri em bu-ri",
+          "pronunciation": "em-bori em-buri",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Goat",
           "translation": "Em-bōri; cim",
-          "pronunciation": "em boh-ri",
+          "pronunciation": "em-bori",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Guinea-fowl",
-          "translation": "Eri-kaṅga; ama-. Eṅ-kaṅga; ciṅ",
+          "translation": "Eri-kangga; ama-. Eng-kangga; cing",
           "pronunciation": "e-ri kang-a",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Guinea-fowl",
-          "translation": "Eṅ-kaṅga; ciṅ",
+          "translation": "Eng-kangga; cing",
           "pronunciation": "eng kang-a",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Hippopotamus",
-          "translation": "I-fubu or Eṅ-gubω",
+          "translation": "I-fubu or Eng-gubo",
           "pronunciation": "i fu-bu or eng gu-boh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Hippopotamus",
-          "translation": "Eṅ-gubω",
+          "translation": "Eng-gubo",
           "pronunciation": "eng gu-boh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Horn",
-          "translation": "Ωru-gu-cala; pl. ciṅ-gu-in-jala",
-          "pronunciation": "oh-ru gu ca-la",
+          "translation": "Ωru-gu-cala; pl. cing-gu-in-jala",
+          "pronunciation": "ru-gu-cala",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Horn",
-          "translation": "Ωrω-gu-cara; ciṅ-gω-cara. Ωru-tera; cin",
-          "pronunciation": "oh-roh gu ca-ra",
+          "translation": "Ωro-gu-cara; cing-go-cara. Ωru-tera; cin",
+          "pronunciation": "ro-gu-cara",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Hyena",
-          "translation": "Iny-anaω, Eny-anau",
+          "translation": "Iny-anao, Eny-anau",
           "pronunciation": "iny a-naoh eny a-nau",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Hyena",
-          "translation": "E-ṅiti",
+          "translation": "E-ngiti",
           "pronunciation": "e ngi-ti",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Leopard",
-          "translation": "Eke-iri. Eṅ-gō",
+          "translation": "Eke-iri. Eng-gō",
           "pronunciation": "e-ke i-ri eng goh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -3066,14 +3003,14 @@
         },
         {
           "english": "Monkey",
-          "translation": "Egi-kondω, Li-nyani",
+          "translation": "Egi-kondo, Li-nyani",
           "pronunciation": "e-gi kond-oh li nya-ni",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Monkey",
-          "translation": "Ege-kembω. Eke-kondω",
+          "translation": "Ege-kembo. Eke-kondo",
           "pronunciation": "e-ge kemb-oh e-ke kond-oh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -3087,7 +3024,7 @@
         },
         {
           "english": "Ox",
-          "translation": "I-nasu. In-ti N-taṅgana",
+          "translation": "I-nasu. In-ti N-tanggana",
           "pronunciation": "i na-su in ti n tang-a-na",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -3101,7 +3038,7 @@
         },
         {
           "english": "Pigeon",
-          "translation": "Eṅ-guti",
+          "translation": "Eng-guti",
           "pronunciation": "eng gu-ti",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -3129,21 +3066,21 @@
         },
         {
           "english": "Sheep",
-          "translation": "Eriṅ-ondi",
+          "translation": "Ering-ondi",
           "pronunciation": "e-ring ond-i",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Snake",
-          "translation": "In-jωka",
+          "translation": "In-joka",
           "pronunciation": "in joh-ka",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Snake",
-          "translation": "En-cωka",
+          "translation": "En-coka",
           "pronunciation": "en coh-ka",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -3165,7 +3102,7 @@
         {
           "english": "Baboon",
           "translation": "Riño",
-          "pronunciation": "ri o",
+          "pronunciation": "rino",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -3178,7 +3115,7 @@
         },
         {
           "english": "Bird",
-          "translation": "Cinyωni",
+          "translation": "Cinyoni",
           "pronunciation": "ciny-oh-ni",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -3200,7 +3137,7 @@
         {
           "english": "Cow",
           "translation": "Eñombe; Ciñombe, pl",
-          "pronunciation": "e omb-e",
+          "pronunciation": "enombe",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -3227,7 +3164,7 @@
         },
         {
           "english": "Elephant",
-          "translation": "Enjωbu",
+          "translation": "Enjobu",
           "pronunciation": "enj-oh-bu",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -3242,7 +3179,7 @@
         {
           "english": "Fowl",
           "translation": "Eñkoko",
-          "pronunciation": "e ko-ko",
+          "pronunciation": "enkoko",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -3277,7 +3214,7 @@
         {
           "english": "Hyena",
           "translation": "Iñyañaō",
-          "pronunciation": "i ya aoh",
+          "pronunciation": "inyanao",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -3298,7 +3235,7 @@
         {
           "english": "Pig",
           "translation": "Eñkurú",
-          "pronunciation": "e kur",
+          "pronunciation": "enkuru",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -3319,13 +3256,13 @@
         {
           "english": "Sheep",
           "translation": "Ñondi",
-          "pronunciation": "ond-i",
+          "pronunciation": "nondi",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
         {
           "english": "Snake",
-          "translation": "Injωka",
+          "translation": "Injoka",
           "pronunciation": "inj-oh-ka",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -3450,21 +3387,21 @@
           "audioFile": null
         },
         {
-          "english": "water (Class 6)",
+          "english": "Water (Class 6)",
           "translation": "Amache",
           "pronunciation": "amache",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "fire (Class 3)",
+          "english": "Fire (Class 3)",
           "translation": "Omororro",
           "pronunciation": "omororro",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "rain (Class 9)",
+          "english": "Rain (Class 9)",
           "translation": "Embura",
           "pronunciation": "embura",
           "context": "Ekegusii",
@@ -3473,28 +3410,28 @@
         {
           "english": "January (Month 1)",
           "translation": "Chanuari (Can)",
-          "pronunciation": "chanuari (can)",
+          "pronunciation": "chanuari",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "February (Month 2)",
           "translation": "Feburari (Feb)",
-          "pronunciation": "feburari (feb)",
+          "pronunciation": "feburari",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "March (Month 3)",
           "translation": "Machi (Mac)",
-          "pronunciation": "machi (mac)",
+          "pronunciation": "machi",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "April (Month 4)",
           "translation": "Apiriri (Apr)",
-          "pronunciation": "apiriri (apr)",
+          "pronunciation": "apiriri",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -3508,49 +3445,49 @@
         {
           "english": "June (Month 6)",
           "translation": "Juni (Jun)",
-          "pronunciation": "juni (jun)",
+          "pronunciation": "juni",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "July (Month 7)",
           "translation": "Chulai (Cul)",
-          "pronunciation": "chulai (cul)",
+          "pronunciation": "chulai",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "August (Month 8)",
           "translation": "Agosti (Agt)",
-          "pronunciation": "agosti (agt)",
+          "pronunciation": "agosti",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "September (Month 9)",
           "translation": "Septemba (Sep)",
-          "pronunciation": "septemba (sep)",
+          "pronunciation": "septemba",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "October (Month 10)",
           "translation": "Okitoba (Okt)",
-          "pronunciation": "okitoba (okt)",
+          "pronunciation": "okitoba",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "November (Month 11)",
           "translation": "Nobemba (Nob)",
-          "pronunciation": "nobemba (nob)",
+          "pronunciation": "nobemba",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "December (Month 12)",
           "translation": "Disemba (Dis)",
-          "pronunciation": "disemba (dis)",
+          "pronunciation": "disemba",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -3604,20 +3541,6 @@
           "audioFile": null
         },
         {
-          "english": "God / Supreme Creator (identified with the Sun in early records)",
-          "translation": "Engoro / Erioba (Johnston 1902 & 1919 #7 Ki-guzii) • iviricha (\"God\") & iriuba (\"Sky/Sun\") in Hobley (1902, pp. 89–90 Kossova)",
-          "pronunciation": "en-go-ro / e-ri-o-ba",
-          "context": "C. W. Hobley (1902, pp. 89–90 Kossova) & Sir Harry H. Johnston (1902, p. 905; 1919, Vol. I, p. 57 #7 Ki-guzii)",
-          "audioFile": null
-        },
-        {
-          "english": "Sir Harry Johnston's",
-          "translation": "Tribal distribution (p. 746, 993): known amongst themselves as Aba-kisii (and near Lake Victoria as Awa-kisingiri) and called Kósova by the Masai, inhabiting the hills between the Mau plateau and L...",
-          "pronunciation": "i-mu, ci-be-re, i-sa-tu, i-nye, i-sa-no, ki-an-da, i-ku-mi",
-          "context": "1902, Vol. II, pp. 746, 993–1000) Vocabulary Set 9 (#49 Igizii of Kōsōva & Lower Nyando Valley): Complete Lexicon, Numerals, Pronouns & Verbs — Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XX, Set 9 (#49 Igizii), pp. 993–1000 | Addit...",
-          "audioFile": null
-        },
-        {
           "english": "Forest",
           "translation": "Egi-saka; ebi- / Eke-saka; eve-",
           "pronunciation": "egi-saka; ebi- / eke-saka; eve-",
@@ -3626,15 +3549,15 @@
         },
         {
           "english": "Grass",
-          "translation": "Ωbu-nyanzi. Eke-nyanse / Eke-nyaṅke; pl. ama-",
-          "pronunciation": "ωbu-nyanzi. eke-nyanse / eke-nyaṅke; pl. ama-",
+          "translation": "Ωbu-nyanzi. Eke-nyanse / Eke-nyangke; pl. ama-",
+          "pronunciation": "bu-nyanzi eke-nyanse",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Ground",
-          "translation": "Eri-zωba. Ege-tie; eve- / Ege-koṅgω; eve-",
-          "pronunciation": "eri-zωba. ege-tie; eve- / ege-koṅgω; eve-",
+          "translation": "Eri-zoba. Ege-tie; eve- / Ege-konggo; eve-",
+          "pronunciation": "eri-zoba. ege-tie; eve- / ege-konggo; eve-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -3647,8 +3570,8 @@
         },
         {
           "english": "Island",
-          "translation": "Eri-wunju. Eki-nyorω / Eri- or Eke-giṅga",
-          "pronunciation": "eri-wunju. eki-nyorω / eri- or eke-giṅga",
+          "translation": "Eri-wunju. Eki-nyoro / Eri- or Eke-gingga",
+          "pronunciation": "eri-wunju. eki-nyoro / eri- or eke-gingga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -3661,22 +3584,22 @@
         },
         {
           "english": "Mountain",
-          "translation": "Egi-tunwa. Iki-lima / Eṅ-guku",
-          "pronunciation": "egi-tunwa. iki-lima / eṅ-guku",
+          "translation": "Egi-tunwa. Iki-lima / Eng-guku",
+          "pronunciation": "egi-tunwa. iki-lima / eng-guku",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Sky",
-          "translation": "Eri-guru. Eri-ωba / Eri-ωba",
-          "pronunciation": "eri-guru. eri-ωba / eri-ωba",
+          "translation": "Eri-guru. Eri-oba / Eri-oba",
+          "pronunciation": "eri-guru. eri-oba / eri-oba",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Smoke",
-          "translation": "Eri-ωki",
-          "pronunciation": "eri-ωki",
+          "translation": "Eri-oki",
+          "pronunciation": "eri-oki",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -3690,21 +3613,21 @@
         {
           "english": "Thorn",
           "translation": "Eri-gwa / Eri-gwa, Eri-hūa",
-          "pronunciation": "eri-gwa / eri-gwa, eri-hūa",
+          "pronunciation": "eri-gwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Wind",
-          "translation": "Em-behω. Omw-ieka / Em-behω. Ωmω-kama; eme-",
-          "pronunciation": "em-behω. omw-ieka / em-behω. ωmω-kama; eme-",
+          "translation": "Em-beho. Omw-ieka / Em-beho. Ωmo-kama; eme-",
+          "pronunciation": "em-beho. omw-ieka / em-beho. omo-kama; eme-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Wood",
-          "translation": "Ωru-kω; ciṅ-ku / Ωrω-kω, Ωrω-kwe; ciṅ-kwe",
-          "pronunciation": "ωru-kω; ciṅ-ku / ωrω-kω, ωrω-kwe; ciṅ-kwe",
+          "translation": "Ωru-ko; cing-ku / Ωro-ko, Ωro-kwe; cing-kwe",
+          "pronunciation": "ru-ko",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -3732,7 +3655,7 @@
         {
           "english": "I want a little stone",
           "translation": "ndetera, akagena (I want) (little stone)",
-          "pronunciation": "ndetera, akagena (i want) (little stone)",
+          "pronunciation": "ndetera akagena",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)",
           "audioFile": null
         },
@@ -3744,14 +3667,14 @@
           "audioFile": null
         },
         {
-          "english": "sun, sky, day (Class 5)",
+          "english": "Sun, sky, day (Class 5)",
           "translation": "Erioba",
           "pronunciation": "erioba",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "moon, month (Class 3)",
+          "english": "Moon, month (Class 3)",
           "translation": "Omotienyi",
           "pronunciation": "omotienyi",
           "context": "Ekegusii",
@@ -3878,15 +3801,15 @@
         },
         {
           "english": "Fire",
-          "translation": "Ωmu-rirω, Ωmω-rerω; emi",
-          "pronunciation": "oh-mu ri-roh oh-moh re-roh",
+          "translation": "Ωmu-riro, Ωmo-rero; emi",
+          "pronunciation": "mu-riro mo-rero",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Fire",
-          "translation": "Ωmω-rōrω or Ωmω-rerω; eme",
-          "pronunciation": "oh-moh roh-roh or oh-moh re-roh",
+          "translation": "Ωmo-rōro or Ωmo-rero; eme",
+          "pronunciation": "mo-roro or mo-rero",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -3907,41 +3830,41 @@
         {
           "english": "Grass",
           "translation": "Ωbu-nyanzi. Eke-nyanse",
-          "pronunciation": "oh-bu nyan-zi e-ke nyan-se",
+          "pronunciation": "bu-nyanzi eke-nyanse",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Grass",
-          "translation": "Eke-nyaṅke; pl. ama",
+          "translation": "Eke-nyangke; pl. ama",
           "pronunciation": "e-ke nyang-ke",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Ground",
-          "translation": "Eri-zωba. Ege-tie; eve",
+          "translation": "Eri-zoba. Ege-tie; eve",
           "pronunciation": "e-ri zoh-ba e-ge tie",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Ground",
-          "translation": "Ege-koṅgω; eve",
+          "translation": "Ege-konggo; eve",
           "pronunciation": "e-ge kong-oh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Island",
-          "translation": "Eri-wunju. Eki-nyorω",
+          "translation": "Eri-wunju. Eki-nyoro",
           "pronunciation": "e-ri wunj-u e-ki nyo-roh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Island",
-          "translation": "Eri- or Eke-giṅga",
+          "translation": "Eri- or Eke-gingga",
           "pronunciation": "e-ri or e-ke ging-a",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -3949,14 +3872,14 @@
         {
           "english": "Moon",
           "translation": "Ωmu-tienyi",
-          "pronunciation": "oh-mu tieny-i",
+          "pronunciation": "mu-tienyi",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Moon",
           "translation": "Ωmu-eri",
-          "pronunciation": "oh-mu e-ri",
+          "pronunciation": "mu-eri",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -3969,7 +3892,7 @@
         },
         {
           "english": "Mountain",
-          "translation": "Eṅ-guku",
+          "translation": "Eng-guku",
           "pronunciation": "eng gu-ku",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -3983,28 +3906,28 @@
         },
         {
           "english": "River",
-          "translation": "Ωr-ωci, Or-ωeci; cin-dωci",
-          "pronunciation": "oh oh-ci or o-he-ci",
+          "translation": "Ωr-oci, Or-oeci; cin-doci",
+          "pronunciation": "r-oci or-oeci",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "River",
-          "translation": "Ege-saka; eve-. Ωm-ōrω; emi-ōrω",
-          "pronunciation": "e-ge sa-ka",
+          "translation": "Ege-saka; eve-. Ωm-ōro; emi-ōro",
+          "pronunciation": "ege-saka",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Sky",
-          "translation": "Eri-guru. Eri-ωba",
+          "translation": "Eri-guru. Eri-oba",
           "pronunciation": "e-ri gu-ru e-ri oh-ba",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Sky",
-          "translation": "Eri-ωba",
+          "translation": "Eri-oba",
           "pronunciation": "e-ri oh-ba",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -4040,14 +3963,14 @@
         {
           "english": "Sun",
           "translation": "Ωmu-basu",
-          "pronunciation": "oh-mu ba-su",
+          "pronunciation": "mu-basu",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Sun",
-          "translation": "Ωmω-basu",
-          "pronunciation": "oh-moh ba-su",
+          "translation": "Ωmo-basu",
+          "pronunciation": "mo-basu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -4061,7 +3984,7 @@
         {
           "english": "Thorn",
           "translation": "Eri-gwa, Eri-hūa",
-          "pronunciation": "e-ri gwa e-ri hooa",
+          "pronunciation": "eri-gwa eri-hua",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -4074,21 +3997,21 @@
         },
         {
           "english": "Tree",
-          "translation": "Ωmω-ti; emi-ti",
-          "pronunciation": "oh-moh ti",
+          "translation": "Ωmo-ti; emi-ti",
+          "pronunciation": "mo-ti",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Wind",
-          "translation": "Em-behω. Omw-ieka",
+          "translation": "Em-beho. Omw-ieka",
           "pronunciation": "em be-hoh om ie-ka",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Wind",
-          "translation": "Em-behω. Ωmω-kama; eme",
+          "translation": "Em-beho. Ωmo-kama; eme",
           "pronunciation": "em be-hoh oh-moh ka-ma",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -4109,7 +4032,7 @@
         },
         {
           "english": "Ground",
-          "translation": "Rirωba",
+          "translation": "Riroba",
           "pronunciation": "ri-roh-ba",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -4144,7 +4067,7 @@
         },
         {
           "english": "River",
-          "translation": "Orωci",
+          "translation": "Oroci",
           "pronunciation": "o-roh-ci",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -4158,7 +4081,7 @@
         },
         {
           "english": "Smoke",
-          "translation": "Liωki",
+          "translation": "Lioki",
           "pronunciation": "lioh-ki",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -4166,7 +4089,7 @@
         {
           "english": "Star",
           "translation": "Etciñeneñene",
-          "pronunciation": "et-ci e-ne e-ne",
+          "pronunciation": "etcinenenene",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -4211,13 +4134,6 @@
           "pronunciation": "u-mu-te u-yu",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
-        },
-        {
-          "english": "That tree",
-          "translation": "„ ulia",
-          "pronunciation": "u-lia",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
         }
       ]
     },
@@ -4250,14 +4166,14 @@
         {
           "english": "Cup (Class 7/8: ege-/ebi-)",
           "translation": "egekombe (pl. ebikombe)",
-          "pronunciation": "egekombe (pl. ebikombe)",
+          "pronunciation": "egekombe",
           "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
         {
           "english": "Fruit (Class 5/6: ri-/ama-)",
           "translation": "ritunda (pl. amatunda)",
-          "pronunciation": "ritunda (pl. amatunda)",
+          "pronunciation": "ritunda",
           "context": "Wikipedia Gusii language — Noun classes",
           "audioFile": null
         },
@@ -4284,8 +4200,8 @@
         },
         {
           "english": "Banana",
-          "translation": "Ri-gωmia; ama-. Eri-tωki; ama- / Eri-tωke; ama-",
-          "pronunciation": "ri-gωmia; ama-. eri-tωki; ama- / eri-tωke; ama-",
+          "translation": "Ri-gomia; ama-. Eri-toki; ama- / Eri-toke; ama-",
+          "pronunciation": "ri-gomia; ama-. eri-toki; ama- / eri-toke; ama-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -4305,8 +4221,8 @@
         },
         {
           "english": "Maize",
-          "translation": "E-bandω; ci-. Erinya-mωdωma / Ama-dumω. Eri-tumwa",
-          "pronunciation": "e-bandω; ci-. erinya-mωdωma / ama-dumω. eri-tumwa",
+          "translation": "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
+          "pronunciation": "e-bando; ci-. erinya-modoma / ama-dumo. eri-tumwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -4410,13 +4326,13 @@
         },
         {
           "english": "Sweet potato",
-          "translation": "Libwωni",
-          "pronunciation": "libwωni",
+          "translation": "Libwoni",
+          "pronunciation": "libwoni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Igizii / Kisii)",
           "audioFile": null
         },
         {
-          "english": "milk (specifically sour/fermented milk)",
+          "english": "Milk (specifically sour/fermented milk)",
           "translation": "Amabere",
           "pronunciation": "amabere",
           "context": "Ekegusii",
@@ -4431,8 +4347,8 @@
         },
         {
           "english": "Tobacco",
-          "translation": "Tumbatω / Eri-kumbati",
-          "pronunciation": "tumbatω / eri-kumbati",
+          "translation": "Tumbato / Eri-kumbati",
+          "pronunciation": "tumbato / eri-kumbati",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -4445,8 +4361,8 @@
         },
         {
           "english": "Raphia palm",
-          "translation": "Licemω",
-          "pronunciation": "licemω",
+          "translation": "Licemo",
+          "pronunciation": "licemo",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Igizii / Kisii)",
           "audioFile": null
         },
@@ -4501,14 +4417,14 @@
         },
         {
           "english": "Banana",
-          "translation": "Ri-gωmia; ama-. Eri-tωki; ama",
+          "translation": "Ri-gomia; ama-. Eri-toki; ama",
           "pronunciation": "ri goh-mia",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Banana",
-          "translation": "Eri-tωke; ama",
+          "translation": "Eri-toke; ama",
           "pronunciation": "e-ri toh-ke",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -4550,15 +4466,15 @@
         },
         {
           "english": "Honey",
-          "translation": "Ωbu-sie. Ωbω-ke. Ama-na",
-          "pronunciation": "oh-bu sie oh-boh ke a-ma na",
+          "translation": "Ωbu-sie. Ωbo-ke. Ama-na",
+          "pronunciation": "bu-sie bo-ke ama-na",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Honey",
-          "translation": "Ωbω-ke",
-          "pronunciation": "oh-boh ke",
+          "translation": "Ωbo-ke",
+          "pronunciation": "bo-ke",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -4578,14 +4494,14 @@
         },
         {
           "english": "Maize",
-          "translation": "E-bandω; ci-. Erinya-mωdωma",
+          "translation": "E-bando; ci-. Erinya-modoma",
           "pronunciation": "e band-oh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Maize",
-          "translation": "Ama-dumω. Eri-tumwa",
+          "translation": "Ama-dumo. Eri-tumwa",
           "pronunciation": "a-ma du-moh e-ri tum-wa",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -4606,7 +4522,7 @@
         },
         {
           "english": "Tobacco",
-          "translation": "Tumbatω",
+          "translation": "Tumbato",
           "pronunciation": "tumb-a-toh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -4633,7 +4549,7 @@
           "audioFile": null
         },
         {
-          "english": "„ eat",
+          "english": "To eat",
           "translation": "lia",
           "pronunciation": "lia",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
@@ -4641,7 +4557,7 @@
         },
         {
           "english": "Banana",
-          "translation": "Rigωmia; Magωmia, pl",
+          "translation": "Rigomia; Magomia, pl",
           "pronunciation": "ri-goh-mia",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -4689,15 +4605,8 @@
           "audioFile": null
         },
         {
-          "english": "Tobacco",
-          "translation": "Tumbato",
-          "pronunciation": "tumb-a-to",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
           "english": "Yam",
-          "translation": "Libwωni",
+          "translation": "Libwoni",
           "pronunciation": "lib-woh-ni",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -4719,7 +4628,7 @@
         {
           "english": "Sandals / shoes (Rogoro vs. Maate dialect)",
           "translation": "chisiripasi (Rogoro) / chitaratara (Maate)",
-          "pronunciation": "chisiripasi (Rogoro) / chitaratara (Maate)",
+          "pronunciation": "chisiripasi",
           "context": "Wikipedia Gusii language — Dialectal lexicon",
           "audioFile": null
         },
@@ -4738,13 +4647,6 @@
           "audioFile": null
         },
         {
-          "english": "Seychellois Rupee (SCR)",
-          "translation": "Rupia ya Shelisheli",
-          "pronunciation": "rupia ya shelisheli",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
           "english": "Spear / Shield / Bow / Arrow / Sword-knife",
           "translation": "ritimo (pl. amatimo) / enguba / obota / omogwe / orobanga",
           "pronunciation": "ri-ti-mo / en-gu-ba / o-bo-ta / o-mo-gwe / o-ro-ban-ga",
@@ -4753,8 +4655,8 @@
         },
         {
           "english": "Arrow",
-          "translation": "Umu-gwe, Ωmω-gu; pl. eme- / Ωmω-gu; eme-gu",
-          "pronunciation": "umu-gwe, ωmω-gu; pl. eme- / ωmω-gu; eme-gu",
+          "translation": "Umu-gwe, Ωmo-gu; pl. eme- / Ωmo-gu; eme-gu",
+          "pronunciation": "umu-gwe mo-gu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -4767,22 +4669,22 @@
         },
         {
           "english": "Bow",
-          "translation": "Ubu-ta; ama-ta / Ωbω-ta; ama-",
-          "pronunciation": "ubu-ta; ama-ta / ωbω-ta; ama-",
+          "translation": "Ubu-ta; ama-ta / Ωbo-ta; ama-",
+          "pronunciation": "ubu-ta",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Canoe",
-          "translation": "Ωbw-atω / Eri-atω; am-atω. Ωbw-atω",
-          "pronunciation": "ωbw-atω / eri-atω; am-atω. ωbw-atω",
+          "translation": "Ωbw-ato / Eri-ato; am-ato. Ωbw-ato",
+          "pronunciation": "bw-ato",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Cloth",
-          "translation": "Eṅ-gωbω; ciṅ- / Eṅ-gibω; ciṅ-",
-          "pronunciation": "eṅ-gωbω; ciṅ- / eṅ-gibω; ciṅ-",
+          "translation": "Eng-gobo; cing- / Eng-gibo; cing-",
+          "pronunciation": "eng-gobo; cing- / eng-gibo; cing-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -4795,22 +4697,22 @@
         },
         {
           "english": "Drum",
-          "translation": "Eṅ-kωnω. Eke-gωma. Embegete / En-cōma",
-          "pronunciation": "eṅ-kωnω. eke-gωma. embegete / en-cōma",
+          "translation": "Eng-kono. Eke-goma. Embegete / En-cōma",
+          "pronunciation": "eng-kono. eke-goma. embegete / en-cōma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Iron",
-          "translation": "Eki-uma / Eki-ωma",
-          "pronunciation": "eki-uma / eki-ωma",
+          "translation": "Eki-uma / Eki-oma",
+          "pronunciation": "eki-uma / eki-oma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Knife",
-          "translation": "Umw-eyω / Ωm-oyω. Eke-gesω. Eke-kebi",
-          "pronunciation": "umw-eyω / ωm-oyω. eke-gesω. eke-kebi",
+          "translation": "Umw-eyo / Ωm-oyo. Eke-geso. Eke-kebi",
+          "pronunciation": "umw-eyo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -4823,15 +4725,15 @@
         },
         {
           "english": "Spear",
-          "translation": "Eri-tumω / Eri-timω",
-          "pronunciation": "eri-tumω / eri-timω",
+          "translation": "Eri-tumo / Eri-timo",
+          "pronunciation": "eri-tumo / eri-timo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Stick",
-          "translation": "Eny-imbω / Ωmω-naṅgi. En-imbω",
-          "pronunciation": "eny-imbω / ωmω-naṅgi. en-imbω",
+          "translation": "Eny-imbo / Ωmo-nanggi. En-imbo",
+          "pronunciation": "eny-imbo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -4859,7 +4761,7 @@
         {
           "english": "Cut me a small stick",
           "translation": "mbunira umuti (cut me) (stick) omoki (small)",
-          "pronunciation": "mbunira umuti (cut me) (stick) omoki (small)",
+          "pronunciation": "mbunira umuti",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)",
           "audioFile": null
         },
@@ -4963,15 +4865,15 @@
         },
         {
           "english": "Arrow",
-          "translation": "Umu-gwe, Ωmω-gu; pl. eme",
-          "pronunciation": "u-mu gwe oh-moh gu",
+          "translation": "Umu-gwe, Ωmo-gu; pl. eme",
+          "pronunciation": "umu-gwe mo-gu",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Arrow",
-          "translation": "Ωmω-gu; eme-gu",
-          "pronunciation": "oh-moh gu",
+          "translation": "Ωmo-gu; eme-gu",
+          "pronunciation": "mo-gu",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -4998,35 +4900,35 @@
         },
         {
           "english": "Bow",
-          "translation": "Ωbω-ta; ama",
-          "pronunciation": "oh-boh ta",
+          "translation": "Ωbo-ta; ama",
+          "pronunciation": "bo-ta",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Canoe",
-          "translation": "Ωbw-atω",
-          "pronunciation": "oh a-toh",
+          "translation": "Ωbw-ato",
+          "pronunciation": "bw-ato",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Canoe",
-          "translation": "Eri-atω; am-atω. Ωbw-atω",
-          "pronunciation": "e-ri a-toh",
+          "translation": "Eri-ato; am-ato. Ωbw-ato",
+          "pronunciation": "eri-ato",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Cloth",
-          "translation": "Eṅ-gωbω; ciṅ",
+          "translation": "Eng-gobo; cing",
           "pronunciation": "eng goh-boh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Cloth",
-          "translation": "Eṅ-gibω; ciṅ",
+          "translation": "Eng-gibo; cing",
           "pronunciation": "eng gi-boh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -5047,7 +4949,7 @@
         },
         {
           "english": "Drum",
-          "translation": "Eṅ-kωnω. Eke-gωma. Embegete",
+          "translation": "Eng-kono. Eke-goma. Embegete",
           "pronunciation": "eng koh-noh e-ke goh-ma emb-e-ge-te",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -5055,7 +4957,7 @@
         {
           "english": "Drum",
           "translation": "En-cōma",
-          "pronunciation": "en coh-ma",
+          "pronunciation": "en-coma",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -5082,64 +4984,64 @@
         },
         {
           "english": "Iron",
-          "translation": "Eki-ωma",
+          "translation": "Eki-oma",
           "pronunciation": "e-ki oh-ma",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Knife",
-          "translation": "Umw-eyω",
+          "translation": "Umw-eyo",
           "pronunciation": "um e-yoh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Knife",
-          "translation": "Ωm-oyω. Eke-gesω. Eke-kebi",
-          "pronunciation": "oh o-yoh e-ke ge-soh e-ke ke-bi",
+          "translation": "Ωm-oyo. Eke-geso. Eke-kebi",
+          "pronunciation": "m-oyo eke-geso eke-kebi",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Spear",
-          "translation": "Eri-tumω",
+          "translation": "Eri-tumo",
           "pronunciation": "e-ri tu-moh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Spear",
-          "translation": "Eri-timω",
+          "translation": "Eri-timo",
           "pronunciation": "e-ri ti-moh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Stick",
-          "translation": "Eny-imbω",
+          "translation": "Eny-imbo",
           "pronunciation": "eny imb-oh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Stick",
-          "translation": "Ωmω-naṅgi. En-imbω",
-          "pronunciation": "oh-moh nang-i en imb-oh",
+          "translation": "Ωmo-nanggi. En-imbo",
+          "pronunciation": "mo-nanggi en-imbo",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Wood",
-          "translation": "Ωru-kω; ciṅ-ku",
-          "pronunciation": "oh-ru koh",
+          "translation": "Ωru-ko; cing-ku",
+          "pronunciation": "ru-ko",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Wood",
-          "translation": "Ωrω-kω, Ωrω-kwe; ciṅ-kwe",
-          "pronunciation": "oh-roh koh oh-roh kwe",
+          "translation": "Ωro-ko, Ωro-kwe; cing-kwe",
+          "pronunciation": "ro-ko ro-kwe",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -5166,14 +5068,14 @@
         },
         {
           "english": "Canoe",
-          "translation": "Ebwatω",
+          "translation": "Ebwato",
           "pronunciation": "eb-wa-toh",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
         {
           "english": "Cloth",
-          "translation": "Eñgobω",
+          "translation": "Eñgobo",
           "pronunciation": "eng-o-boh",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -5188,7 +5090,7 @@
         {
           "english": "Drum",
           "translation": "Eñoma",
-          "pronunciation": "e o-ma",
+          "pronunciation": "enoma",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -5236,8 +5138,8 @@
         },
         {
           "english": "Wood",
-          "translation": "Ciñkω",
-          "pronunciation": "ci koh",
+          "translation": "Ciñko",
+          "pronunciation": "cinko",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -5245,20 +5147,6 @@
           "english": "My house",
           "translation": "Enyumba yane",
           "pronunciation": "eny-umb-a ya-ne",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Thy house",
-          "translation": "„ yāo",
-          "pronunciation": "ya-ho",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "His house",
-          "translation": "„ yake",
-          "pronunciation": "ya-ke",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         }
@@ -5314,42 +5202,42 @@
         {
           "english": "To miss (short vowel) vs. To say/tell (long vowel)",
           "translation": "bóra (to miss) vs. bóóra (to say)",
-          "pronunciation": "bóra (to miss) vs. bóóra (to say)",
+          "pronunciation": "bora",
           "context": "Wikipedia Gusii language — Contrastive vowel length",
           "audioFile": null
         },
         {
           "english": "To know",
           "translation": "komanya (-manya)",
-          "pronunciation": "komanya (-manya)",
+          "pronunciation": "komanya",
           "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
           "english": "To milk",
           "translation": "gokama (-kama)",
-          "pronunciation": "gokama (-kama)",
+          "pronunciation": "gokama",
           "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
           "english": "To dwell / live",
           "translation": "komenya (menya)",
-          "pronunciation": "komenya (menya)",
+          "pronunciation": "komenya",
           "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
           "english": "To stand",
           "translation": "gotenena (-tenena)",
-          "pronunciation": "gotenena (-tenena)",
+          "pronunciation": "gotenena",
           "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
         {
           "english": "To see",
           "translation": "korora (-rora)",
-          "pronunciation": "korora (-rora)",
+          "pronunciation": "korora",
           "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
@@ -5363,7 +5251,7 @@
         {
           "english": "To harvest / harvest season",
           "translation": "gesa (verb) / rigesa (noun)",
-          "pronunciation": "gesa (verb) / rigesa (noun)",
+          "pronunciation": "gesa",
           "context": "Wikipedia Gusii language — Sample phrases",
           "audioFile": null
         },
@@ -5389,21 +5277,21 @@
           "audioFile": null
         },
         {
-          "english": "to eat / to drink (Class 15 infinitives)",
+          "english": "To eat / to drink (Class 15 infinitives)",
           "translation": "okoria / okonywa",
           "pronunciation": "okoria / okonywa",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "to go / to come (illustrating Dahl's Law voicing okogenda vs. ogocha)",
+          "english": "To go / to come (illustrating Dahl's Law voicing okogenda vs. ogocha)",
           "translation": "okogenda / ogocha",
           "pronunciation": "okogenda / ogocha",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "to see / to hear, feel",
+          "english": "To see / to hear, feel",
           "translation": "okorora / okoigwa",
           "pronunciation": "okorora / okoigwa",
           "context": "Ekegusii",
@@ -5438,9 +5326,9 @@
           "audioFile": null
         },
         {
-          "english": "To —",
+          "english": "To",
           "translation": "Ωku- / Ωku-, Ku-",
-          "pronunciation": "ωku- / ωku-, ku-",
+          "pronunciation": "ku-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -5460,8 +5348,8 @@
         },
         {
           "english": "To dance",
-          "translation": "-teṅga / -vina",
-          "pronunciation": "-teṅga / -vina",
+          "translation": "-tengga / -vina",
+          "pronunciation": "-tengga / -vina",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -5516,15 +5404,15 @@
         },
         {
           "english": "To see",
-          "translation": "-rωra",
-          "pronunciation": "-rωra",
+          "translation": "-rora",
+          "pronunciation": "-rora",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "To sleep",
-          "translation": "-gωna / -lala",
-          "pronunciation": "-gωna / -lala",
+          "translation": "-gona / -lala",
+          "pronunciation": "-gona / -lala",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -5542,20 +5430,6 @@
       "name": "Adjectives, Qualities & Grammar",
       "icon": "✨",
       "entries": [
-        {
-          "english": "This, these",
-          "translation": "-nω (ω-nω, ava-nω; ωgω-nω, ge-nω; ri-nω, ga-nω; ke-nω, vi-nω; e-nω, ci-nω; rω-nω; ?, ke-nω; bω-nω; kω-nω; ha-nω). Ωyu, ava; uyu, eye; eri, a",
-          "pronunciation": "-nω (ω-nω, ava-nω; ωgω-nω, ge-nω; ri-nω, ga-nω; ke-nω, vi-nω; e-nω, ci-nω; rω-nω",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
-          "audioFile": null
-        },
-        {
-          "english": "That, those",
-          "translation": "-ria (ω-ria, ava-ria; u-ria, e-ria; ri-ria, a-ria; ke-ria, ve-ria; e-ria, ci-ria; ru-ria; ?, ke-ria; ωbω-ria; ωkω-ria; a-ria) / -ria (u-ria",
-          "pronunciation": "-ria (ω-ria, ava-ria; u-ria, e-ria; ri-ria, a-ria; ke-ria, ve-ria; e-ria, ci-ria",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
-          "audioFile": null
-        },
         {
           "english": "Great",
           "translation": "-kuru. -nene / -nene",
@@ -5630,20 +5504,6 @@
           "english": "This, these",
           "translation": "Uyu, ava, &c",
           "pronunciation": "u-yu a-va c",
-          "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
-          "english": "That, those",
-          "translation": "ria (ω-ria, ava-ria; u-ria, e-ria; ri-ria, a-ria; ke-ria, ve-ria; e-ria, ci-ria; ru-ria; ?, ke-ria; ωbω-ria; ωkω-ria; a-ria)",
-          "pronunciation": "ria",
-          "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
-          "english": "That, those",
-          "translation": "ria (u-ria, ava-ria; gu-ria, gi-ria; ri-ria, ga-ria; ke-ria, vi-ria; &c.) or -ra (u-ra, ava-ra; gu-ra; &c.)",
-          "pronunciation": "ria",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -5796,15 +5656,15 @@
       "entries": [
         {
           "english": "Country",
-          "translation": "Eki-bala. Orω-goṅgω. Ri-rωwa / Eki-bara; evi-",
-          "pronunciation": "eki-bala. orω-goṅgω. ri-rωwa / eki-bara; evi-",
+          "translation": "Eki-bala. Oro-gonggo. Ri-rowa / Eki-bara; evi-",
+          "pronunciation": "eki-bala. oro-gonggo. ri-rowa / eki-bara; evi-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Road",
-          "translation": "Iṅ-gira, En-cira / En-cira",
-          "pronunciation": "iṅ-gira, en-cira / en-cira",
+          "translation": "Ing-gira, En-cira / En-cira",
+          "pronunciation": "ing-gira, en-cira / en-cira",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -5845,7 +5705,7 @@
         },
         {
           "english": "Country",
-          "translation": "Eki-bala. Orω-goṅgω. Ri-rωwa",
+          "translation": "Eki-bala. Oro-gonggo. Ri-rowa",
           "pronunciation": "e-ki ba-la o-roh gong-oh ri roh-wa",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -5859,7 +5719,7 @@
         },
         {
           "english": "Road",
-          "translation": "Iṅ-gira, En-cira",
+          "translation": "Ing-gira, En-cira",
           "pronunciation": "ing gi-ra en ci-ra",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -5915,8 +5775,8 @@
       "entries": [
         {
           "english": "Ivory",
-          "translation": "Ir-inω / Er-inω",
-          "pronunciation": "ir-inω / er-inω",
+          "translation": "Ir-ino / Er-ino",
+          "pronunciation": "ir-ino / er-ino",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -5929,21 +5789,21 @@
         },
         {
           "english": "Ivory",
-          "translation": "Ir-inω",
+          "translation": "Ir-ino",
           "pronunciation": "ir i-noh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Ivory",
-          "translation": "Er-inω",
+          "translation": "Er-ino",
           "pronunciation": "er i-noh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Ivory",
-          "translation": "Irinω",
+          "translation": "Irino",
           "pronunciation": "i-ri-noh",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -5958,21 +5818,21 @@
         {
           "english": "Fear",
           "translation": "Ωmu-ti. I-ruka",
-          "pronunciation": "ωmu-ti. i-ruka",
+          "pronunciation": "mu-ti i-ruka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Thief",
-          "translation": "Omw-ibi / Ωmω-ivi; ava-ivi",
-          "pronunciation": "omw-ibi / ωmω-ivi; ava-ivi",
+          "translation": "Omw-ibi / Ωmo-ivi; ava-ivi",
+          "pronunciation": "omw-ibi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "War",
           "translation": "Ese-gi. (Ku-rua-na = to fight) / Eri-hi; ama-. (Ku-tema-na = to fight)",
-          "pronunciation": "ese-gi. (ku-rua-na = to fight) / eri-hi; ama-. (ku-tema-na = to fight)",
+          "pronunciation": "ese-gi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -6020,8 +5880,8 @@
         },
         {
           "english": "Thief",
-          "translation": "Ωmω-ivi; ava-ivi",
-          "pronunciation": "oh-moh i-vi",
+          "translation": "Ωmo-ivi; ava-ivi",
+          "pronunciation": "mo-ivi",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -6040,28 +5900,28 @@
           "audioFile": null
         },
         {
-          "english": "„ die",
+          "english": "To die",
           "translation": "kwa, -gu-kwa",
           "pronunciation": "kwa gu kwa",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ die",
+          "english": "To die",
           "translation": "gu-kwa",
           "pronunciation": "gu kwa",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ kill",
+          "english": "To kill",
           "translation": "ita",
           "pronunciation": "i-ta",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ steal",
+          "english": "To steal",
           "translation": "iba",
           "pronunciation": "i-ba",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
@@ -6070,7 +5930,7 @@
         {
           "english": "Fear",
           "translation": "Ωmutí (?)",
-          "pronunciation": "oh-mut",
+          "pronunciation": "muti",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -6104,22 +5964,22 @@
         },
         {
           "english": "To-day",
-          "translation": "Rerω",
-          "pronunciation": "rerω",
+          "translation": "Rero",
+          "pronunciation": "rero",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "To-morrow",
-          "translation": "Ancω / N-kiω. Icω",
-          "pronunciation": "ancω / n-kiω. icω",
+          "translation": "Anco / N-kio. Ico",
+          "pronunciation": "anco / n-kio. ico",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Year",
-          "translation": "Omw-aka / Ωmω-ka; eme-ka",
-          "pronunciation": "omw-aka / ωmω-ka; eme-ka",
+          "translation": "Omw-aka / Ωmo-ka; eme-ka",
+          "pronunciation": "omw-aka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -6153,42 +6013,42 @@
         },
         {
           "english": "Day",
-          "translation": "Ωbu-tukω. E-gorω; ama-. (E-tera = daylight)",
-          "pronunciation": "oh-bu tu-koh e go-roh",
+          "translation": "Ωbu-tuko. E-goro; ama-. (E-tera = daylight)",
+          "pronunciation": "bu-tuko e-goro",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Day",
-          "translation": "Orω-siku; cin",
+          "translation": "Oro-siku; cin",
           "pronunciation": "o-roh si-ku",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Night",
-          "translation": "Ωbu-tukω. (Eki-rima = darkness)",
-          "pronunciation": "oh-bu tu-koh",
+          "translation": "Ωbu-tuko. (Eki-rima = darkness)",
+          "pronunciation": "bu-tuko",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Night",
-          "translation": "Ωbω-tiku; ama",
-          "pronunciation": "oh-boh ti-ku",
+          "translation": "Ωbo-tiku; ama",
+          "pronunciation": "bo-tiku",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "To-morrow",
-          "translation": "Ancω",
+          "translation": "Anco",
           "pronunciation": "an-coh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "To-morrow",
-          "translation": "N-kiω. Icω",
+          "translation": "N-kio. Ico",
           "pronunciation": "n kioh i-coh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -6202,21 +6062,21 @@
         },
         {
           "english": "Year",
-          "translation": "Ωmω-ka; eme-ka",
-          "pronunciation": "oh-moh ka",
+          "translation": "Ωmo-ka; eme-ka",
+          "pronunciation": "mo-ka",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Yesterday",
-          "translation": "I-gorω",
+          "translation": "I-goro",
           "pronunciation": "i go-roh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Yesterday",
-          "translation": "Mu-gωrωba",
+          "translation": "Mu-goroba",
           "pronunciation": "mu goh-roh-ba",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -6230,15 +6090,8 @@
         },
         {
           "english": "Night",
-          "translation": "Obutukω",
+          "translation": "Obutuko",
           "pronunciation": "o-bu-tu-koh",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "To-day",
-          "translation": "Rero",
-          "pronunciation": "re-ro",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -6313,28 +6166,28 @@
           "audioFile": null
         },
         {
-          "english": "spiderplant / vine spinach (traditional Kisii leafy greens)",
+          "english": "Spiderplant / vine spinach (traditional Kisii leafy greens)",
           "translation": "Chinsaga / Enderema",
           "pronunciation": "chinsaga / enderema",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "house (pl. houses) (Class 9/10)",
+          "english": "House (pl. houses) (Class 9/10)",
           "translation": "Enyomba (pl. Chinyomba)",
-          "pronunciation": "enyomba (pl. chinyomba)",
+          "pronunciation": "enyomba",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "homestead, village (Class 3/4)",
+          "english": "Homestead, village (Class 3/4)",
           "translation": "Omochie (pl. Emechie)",
-          "pronunciation": "omochie (pl. emechie)",
+          "pronunciation": "omochie",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "traditional Gusii council of elders and community court",
+          "english": "Traditional Gusii council of elders and community court",
           "translation": "Etureti",
           "pronunciation": "etureti",
           "context": "Ekegusii",
@@ -6350,63 +6203,63 @@
         {
           "english": "Kisii person (pl. Kisii people) (Class 1/2)",
           "translation": "Omogusii (pl. Abagusii)",
-          "pronunciation": "omogusii (pl. abagusii)",
+          "pronunciation": "omogusii",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
-          "english": "chair, stool (Class 7/8)",
+          "english": "Chair, stool (Class 7/8)",
           "translation": "Ekerogo (pl. Ebirogo)",
-          "pronunciation": "ekerogo (pl. ebirogo)",
+          "pronunciation": "ekerogo",
           "context": "Ekegusii",
           "audioFile": null
         },
         {
           "english": "Sunday (Day of the week)",
           "translation": "Chumapiri (Cpr)",
-          "pronunciation": "chumapiri (cpr)",
+          "pronunciation": "chumapiri",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Monday (Day of the week)",
           "translation": "Chumatato (Ctt)",
-          "pronunciation": "chumatato (ctt)",
+          "pronunciation": "chumatato",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Tuesday (Day of the week)",
           "translation": "Chumaine (Cmn)",
-          "pronunciation": "chumaine (cmn)",
+          "pronunciation": "chumaine",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Wednesday (Day of the week)",
           "translation": "Chumatano (Cmt)",
-          "pronunciation": "chumatano (cmt)",
+          "pronunciation": "chumatano",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Thursday (Day of the week)",
           "translation": "Aramisi (Ars)",
-          "pronunciation": "aramisi (ars)",
+          "pronunciation": "aramisi",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Friday (Day of the week)",
           "translation": "Ichuma (Icm)",
-          "pronunciation": "ichuma (icm)",
+          "pronunciation": "ichuma",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
         {
           "english": "Saturday (Day of the week)",
           "translation": "Esabato (Est)",
-          "pronunciation": "esabato (est)",
+          "pronunciation": "esabato",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -6484,69 +6337,6 @@
           "english": "Kenyan Shilling (KES)",
           "translation": "Shilingi ya Kenya",
           "pronunciation": "shilingi ya kenya",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Ethiopian Birr (ETB)",
-          "translation": "Bir ya Uhabeshi",
-          "pronunciation": "bir ya uhabeshi",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Nigerian Naira (NGN)",
-          "translation": "Naira ya Nijeria",
-          "pronunciation": "naira ya nijeria",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Malagasy Ariary (MGA)",
-          "translation": "Ariary ya Bukini",
-          "pronunciation": "ariary ya bukini",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Algerian Dinar (DZD)",
-          "translation": "Dinari ya Aljeria",
-          "pronunciation": "dinari ya aljeria",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Sierra Leonean Leone (1964—2022) (SLL)",
-          "translation": "Leoni",
-          "pronunciation": "leoni",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "West African CFA Franc (XOF)",
-          "translation": "Faranga CFA BCEAO",
-          "pronunciation": "faranga cfa bceao",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Central African CFA Franc (XAF)",
-          "translation": "Faranga CFA BEAC",
-          "pronunciation": "faranga cfa beac",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Chinese Yuan (CNY)",
-          "translation": "Yuan Renminbi ya China",
-          "pronunciation": "yuan renminbi ya china",
-          "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
-          "audioFile": null
-        },
-        {
-          "english": "Japanese Yen (JPY)",
-          "translation": "Sarafu ya Kijapani",
-          "pronunciation": "sarafu ya kijapani",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
           "audioFile": null
         },
@@ -6860,8 +6650,8 @@
         },
         {
           "english": "Above, up, on top",
-          "translation": "I-gorω / Ke-riω. Ki-gorω",
-          "pronunciation": "i-gorω / ke-riω. ki-gorω",
+          "translation": "I-goro / Ke-rio. Ki-goro",
+          "pronunciation": "i-goro / ke-rio. ki-goro",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -6917,7 +6707,7 @@
         {
           "english": "The birds flew away",
           "translation": "chinyoni ngalai- (birds) (flew) chiri (away)",
-          "pronunciation": "chinyoni ngalai- (birds) (flew) chiri (away)",
+          "pronunciation": "chinyoni ngalai-",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)",
           "audioFile": null
         },
@@ -6937,14 +6727,14 @@
         },
         {
           "english": "Above, up, on top",
-          "translation": "I-gorω",
+          "translation": "I-goro",
           "pronunciation": "i go-roh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Above, up, on top",
-          "translation": "Ke-riω. Ki-gorω",
+          "translation": "Ke-rio. Ki-goro",
           "pronunciation": "ke rioh ki go-roh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -6964,44 +6754,9 @@
       "icon": "📜",
       "entries": [
         {
-          "english": "Mugirango Ancestral Genealogy Recorded by C. W. Hobley (1903, pp. 330–331)",
-          "translation": "Mugirango (recorded in Gori Kogalo's South Kavirondo genealogy as the ancestral progenitor of the Kisii [Abagusii], Bantu Kavirondo, and Waganda)",
-          "pronunciation": "mu-gi-ran-go",
-          "context": "C. W. Hobley (1903) 'Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33, pp. 330–331",
-          "audioFile": null
-        },
-        {
-          "english": "21 Kossova (Kisii / Abagusii) Clans & 1900 Chiefs Recorded by C. W. Hobley (1902, pp. 50–51)",
-          "translation": "(1) Ugirango (chief Yawanga), (2) Mukimusi (Kimaina), (3) Msasuri (Munari), (4) Magichana (Borura), (5) Manweni (Minyigo), (6) Mkanyimbo (Uturi & Mtaruki), (7) Nyaliwali (Yamombo)",
-          "pronunciation": "u-gi-ran-go / u-ma-cho-gi / u-ki-ta-a / ya-mu-ge-i / sa-ka-wa / mu-gu-se-ro",
-          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. I p. 9 & Ch. V § 1 pp. 50–51 — (8) Mowasi (Maina), (9) Umachogi (Kitubo), (10) Mukura (Maina & Ndieki), (11) Ukeiri (Mwesaba), (12) Wa Koma (Mwakwega), (13) Woyeki (Sianyo), (14) Mwachawi (Sa...",
-          "audioFile": null
-        },
-        {
-          "english": "6 Noun Classes in Kossova (Kisii) Recorded by C. W. Hobley (1902, p. 86)",
-          "translation": "Class I um- → aw- (umuntu → awantu 'person → people', umkungu → awakungu 'woman → women'); Class II o- → mi- (okuwoko → mikowoko 'arm → arms') & u- → i- (umogwe → imegwe 'arrow → arrows'",
-          "pronunciation": "u-mun-tu a-wan-tu / i-ki-si-ri i-vi-si-ri / li-gi-na a-ma-gi-na / im-bu-ri a-chim-bu-ri",
-          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. VI, p. 86 — umuchi → imichi 'town → towns'); Class III unchanged (muriro 'fire'); Class IV iki-, ichi- → ivi- (ikisiri → ivisiri 'axe → axes', ichiara → iviara 'finger → fingers', ikirandi →...",
-          "audioFile": null
-        },
-        {
-          "english": "Kossova (Kisii) Vocabulary, Numerals, Pronouns & Verb Phrases (Hobley 1902, pp. 89–91)",
-          "translation": "Lexicon (pp. 89–91): iviricha (God), iriuba (sky), insoih (sun), umweri (moon), tzinini (stars), imvula (rain), amachi (water), isekawa (chief), amaemba (dhurra/mtama), owoli (wimbi), matoki (banan...",
-          "pronunciation": "i-vi-ri-cha / i-se-ka-wa / e-je-mo / wa-wi-li / ki-en-da / e-ku-mi / n-cha ha-no",
-          "context": "C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Ch. VII § I, pp. 89–91",
-          "audioFile": null
-        },
-        {
-          "english": "Sir Harry Johnston's (1919–1922) Sub-Group A 6 (#7 Ki-guzii & #7a Ki-kωria) & #8 Ki-šaši Comparative Corpus",
-          "translation": "Vowel Lowering & Prefixes (Vol. I, p. 85 & Vol. II, pp. 24–25): Replacement of i by e and u by ω in prefixes (Ωmω-/Ava-, Ωmω-/Eme-, Eri-/Ama-, Eke-[Ege-]/Evi-, E-[En-]/Ci-[Cin-], Ωrω-/Cin-, Eke- [C...",
-          "pronunciation": "ki-gu-zii / ki-kω-ri-a / sa-nsa-ba / mu-hu-nga-ti / o-mω-su-ba-ti",
-          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 73–97; Vol. II, 1922, pp. 24–26, 497–498)",
-          "audioFile": null
-        },
-        {
           "english": "Brains",
-          "translation": "Ωw-oṅgω / Ωb-oṅgω",
-          "pronunciation": "ωw-oṅgω / ωb-oṅgω",
+          "translation": "Ωw-onggo / Ωb-onggo",
+          "pronunciation": "w-onggo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -7021,8 +6776,8 @@
         },
         {
           "english": "Dream",
-          "translation": "Kωmera",
-          "pronunciation": "kωmera",
+          "translation": "Komera",
+          "pronunciation": "komera",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -7036,49 +6791,42 @@
         {
           "english": "Ghost",
           "translation": "Ωmu-kira. Eki-riri / Eki-riri",
-          "pronunciation": "ωmu-kira. eki-riri / eki-riri",
+          "pronunciation": "mu-kira eki-riri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Gun",
-          "translation": "Ωmu-rondω. Umu-guṅgω",
-          "pronunciation": "ωmu-rondω. umu-guṅgω",
+          "translation": "Ωmu-rondo. Umu-gunggo",
+          "pronunciation": "mu-rondo umu-gunggo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Lips",
-          "translation": "Emi-nūa (pl.). Ege-kωba; eve- / Eke-nenevu",
-          "pronunciation": "emi-nūa (pl.). ege-kωba; eve- / eke-nenevu",
+          "translation": "Emi-nūa (pl.). Ege-koba; eve- / Eke-nenevu",
+          "pronunciation": "emi-nua",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Magic",
-          "translation": "Eri-rωgω. Obu-kaṅga / Eri-rωgω",
-          "pronunciation": "eri-rωgω. obu-kaṅga / eri-rωgω",
+          "translation": "Eri-rogo. Obu-kangga / Eri-rogo",
+          "pronunciation": "eri-rogo. obu-kangga / eri-rogo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Name",
-          "translation": "Eri-ema. Eri-ta. M-bareṅga / Eri-eta. Eri-na",
-          "pronunciation": "eri-ema. eri-ta. m-bareṅga / eri-eta. eri-na",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
-          "audioFile": null
-        },
-        {
-          "english": "Parrot",
-          "translation": "?",
-          "pronunciation": "?",
+          "translation": "Eri-ema. Eri-ta. M-barengga / Eri-eta. Eri-na",
+          "pronunciation": "eri-ema. eri-ta. m-barengga / eri-eta. eri-na",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Penis",
-          "translation": "Em-bōrω / Em-borω",
-          "pronunciation": "em-bōrω / em-borω",
+          "translation": "Em-bōro / Em-boro",
+          "pronunciation": "em-boro",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -7091,8 +6839,8 @@
         },
         {
           "english": "Song",
-          "translation": "Oru-embω; ciny-embω / Eri-vina; ama-",
-          "pronunciation": "oru-embω; ciny-embω / eri-vina; ama-",
+          "translation": "Oru-embo; ciny-embo / Eri-vina; ama-",
+          "pronunciation": "oru-embo; ciny-embo / eri-vina; ama-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -7112,29 +6860,29 @@
         },
         {
           "english": "Town",
-          "translation": "Ωmu-ji; emi- / Ωmω-ji, Ωmu-gi",
-          "pronunciation": "ωmu-ji; emi- / ωmω-ji, ωmu-gi",
+          "translation": "Ωmu-ji; emi- / Ωmo-ji, Ωmu-gi",
+          "pronunciation": "mu-ji",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Witch",
-          "translation": "Ωmu-rωki / Ωmω-rωgi",
-          "pronunciation": "ωmu-rωki / ωmω-rωgi",
+          "translation": "Ωmu-roki / Ωmo-rogi",
+          "pronunciation": "mu-roki",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "I, me, my",
-          "translation": "Nje, Inje, Nωxi. Na-, N-. -n-. -ane / Inci. Uni. N-. -n-. -ane",
-          "pronunciation": "nje, inje, nωxi. na-, n-. -n-. -ane / inci. uni. n-. -n-. -ane",
+          "translation": "Nje, Inje, Noxi. Na-, N-. -n-. -ane / Inci. Uni. N-. -n-. -ane",
+          "pronunciation": "nje, inje, noxi. na-, n-. -n-. -ane / inci. uni. n-. -n-. -ane",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "Thou, thee, thy",
-          "translation": "I-we, Uwe. U-. -ku-. -a-ω / A-iye, Uwe. U?. -ku-. -e-yω, -a-ω",
-          "pronunciation": "i-we, uwe. u-. -ku-. -a-ω / a-iye, uwe. u?. -ku-. -e-yω, -a-ω",
+          "translation": "I-we, Uwe. U-. -ku-. -a-o / A-iye, Uwe. U?. -ku-. -e-yo, -a-o",
+          "pronunciation": "i-we, uwe. u-. -ku-. -a-o / a-iye, uwe. u?. -ku-. -e-yo, -a-o",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -7155,14 +6903,14 @@
         {
           "english": "Ye, you, your",
           "translation": "I-nyūe, Nwe. Mu-?. -?-. -e-nu / I-nu. Mu-?. -?-. -e-nu",
-          "pronunciation": "i-nyūe, nwe. mu-?. -?-. -e-nu / i-nu. mu-?. -?-. -e-nu",
+          "pronunciation": "i-nyue nwe mu- - - -e-nu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
         {
           "english": "They, them, their",
-          "translation": "A-bω, A-ba. Ba-. -ba-. -a-bω / M-baiyu. A-bω. Ba-. -ba-. -a-bω, -a-u",
-          "pronunciation": "a-bω, a-ba. ba-. -ba-. -a-bω / m-baiyu. a-bω. ba-. -ba-. -a-bω, -a-u",
+          "translation": "A-bo, A-ba. Ba-. -ba-. -a-bo / M-baiyu. A-bo. Ba-. -ba-. -a-bo, -a-u",
+          "pronunciation": "a-bo, a-ba. ba-. -ba-. -a-bo / m-baiyu. a-bo. ba-. -ba-. -a-bo, -a-u",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -7176,7 +6924,7 @@
         {
           "english": "Male",
           "translation": "-saja. -gōre. -isia (children) / -saca?. -gōre. -risia (children)",
-          "pronunciation": "-saja. -gōre. -isia (children) / -saca?. -gōre. -risia (children)",
+          "pronunciation": "-saja -gore -isia",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
         },
@@ -7475,13 +7223,6 @@
           "audioFile": null
         },
         {
-          "english": "Dream",
-          "translation": "komera",
-          "pronunciation": "ko-me-ra",
-          "context": "Kossova (Ekegusii) — C. W. Hobley, Eastern Uganda (1902, pp. 89–91)",
-          "audioFile": null
-        },
-        {
           "english": "Excrement",
           "translation": "amawi",
           "pronunciation": "a-ma-wi",
@@ -7602,15 +7343,15 @@
         },
         {
           "english": "Brains",
-          "translation": "Ωw-oṅgω",
-          "pronunciation": "oh ong-oh",
+          "translation": "Ωw-onggo",
+          "pronunciation": "w-onggo",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Brains",
-          "translation": "Ωb-oṅgω",
-          "pronunciation": "oh ong-oh",
+          "translation": "Ωb-onggo",
+          "pronunciation": "b-onggo",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -7645,7 +7386,7 @@
         {
           "english": "Ghost",
           "translation": "Ωmu-kira. Eki-riri",
-          "pronunciation": "oh-mu ki-ra e-ki ri-ri",
+          "pronunciation": "mu-kira eki-riri",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -7665,15 +7406,15 @@
         },
         {
           "english": "God",
-          "translation": "Eri-ωba",
+          "translation": "Eri-oba",
           "pronunciation": "e-ri oh-ba",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Lips",
-          "translation": "Emi-nūa (pl.). Ege-kωba; eve",
-          "pronunciation": "e-mi nooa",
+          "translation": "Emi-nūa (pl.). Ege-koba; eve",
+          "pronunciation": "emi-nua",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -7686,21 +7427,21 @@
         },
         {
           "english": "Magic",
-          "translation": "Eri-rωgω. Obu-kaṅga",
+          "translation": "Eri-rogo. Obu-kangga",
           "pronunciation": "e-ri roh-goh o-bu kang-a",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Magic",
-          "translation": "Eri-rωgω",
+          "translation": "Eri-rogo",
           "pronunciation": "e-ri roh-goh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Name",
-          "translation": "Eri-ema. Eri-ta. M-bareṅga",
+          "translation": "Eri-ema. Eri-ta. M-barengga",
           "pronunciation": "e-ri e-ma e-ri ta m ba-reng-a",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -7714,28 +7455,28 @@
         },
         {
           "english": "Penis",
-          "translation": "Em-bōrω",
-          "pronunciation": "em boh-roh",
+          "translation": "Em-bōro",
+          "pronunciation": "em-boro",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Penis",
-          "translation": "Em-borω",
+          "translation": "Em-boro",
           "pronunciation": "em bo-roh",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Sleep",
-          "translation": "Eci-torω",
+          "translation": "Eci-toro",
           "pronunciation": "e-ci to-roh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Song",
-          "translation": "Oru-embω; ciny-embω",
+          "translation": "Oru-embo; ciny-embo",
           "pronunciation": "o-ru emb-oh",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -7778,34 +7519,34 @@
         {
           "english": "Town",
           "translation": "Ωmu-ji; emi",
-          "pronunciation": "oh-mu ji",
+          "pronunciation": "mu-ji",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Town",
-          "translation": "Ωmω-ji, Ωmu-gi",
-          "pronunciation": "oh-moh ji oh-mu gi",
+          "translation": "Ωmo-ji, Ωmu-gi",
+          "pronunciation": "mo-ji mu-gi",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Witch",
-          "translation": "Ωmu-rωki",
-          "pronunciation": "oh-mu roh-ki",
+          "translation": "Ωmu-roki",
+          "pronunciation": "mu-roki",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Witch",
-          "translation": "Ωmω-rωgi",
-          "pronunciation": "oh-moh roh-gi",
+          "translation": "Ωmo-rogi",
+          "pronunciation": "mo-rogi",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "I, me, my",
-          "translation": "Nje, Inje, Nωxi. Na-, N-. -n-. -ane",
+          "translation": "Nje, Inje, Noxi. Na-, N-. -n-. -ane",
           "pronunciation": "nje inj-e noh-xi na n n",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -7819,14 +7560,14 @@
         },
         {
           "english": "Thou, thee, thy",
-          "translation": "I-we, Uwe. U-. -ku-. -a-ω",
+          "translation": "I-we, Uwe. U-. -ku-. -a-o",
           "pronunciation": "i we u-we u ku a",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "Thou, thee, thy",
-          "translation": "A-iye, Uwe. U?. -ku-. -e-yω, -a-ω",
+          "translation": "A-iye, Uwe. U?. -ku-. -e-yo, -a-o",
           "pronunciation": "a i-ye u-we u ku e",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -7862,7 +7603,7 @@
         {
           "english": "Ye, you, your",
           "translation": "I-nyūe, Nwe. Mu-?. -?-. -e-nu",
-          "pronunciation": "i nyooe nwe mu e nu",
+          "pronunciation": "i-nyue nwe mu- - - -e-nu",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -7875,14 +7616,14 @@
         },
         {
           "english": "They, them, their",
-          "translation": "A-bω, A-ba. Ba-. -ba-. -a-bω",
+          "translation": "A-bo, A-ba. Ba-. -ba-. -a-bo",
           "pronunciation": "a boh a ba ba ba",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "They, them, their",
-          "translation": "M-baiyu. A-bω. Ba-. -ba-. -a-bω, -a-u",
+          "translation": "M-baiyu. A-bo. Ba-. -ba-. -a-bo, -a-u",
           "pronunciation": "m bai-yu a boh ba ba",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
@@ -7960,124 +7701,124 @@
         {
           "english": "To",
           "translation": "Ωku",
-          "pronunciation": "oh-ku",
+          "pronunciation": "ku",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
           "english": "To",
           "translation": "Ωku-, Ku",
-          "pronunciation": "oh-ku ku",
+          "pronunciation": "ku- ku",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ come",
+          "english": "To come",
           "translation": "ja, -ca",
           "pronunciation": "ja ca",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ come",
+          "english": "To come",
           "translation": "ja",
           "pronunciation": "ja",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ cut",
+          "english": "To cut",
           "translation": "butura. ? -tema",
           "pronunciation": "bu-tu-ra te-ma",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ cut",
+          "english": "To cut",
           "translation": "vitōra. -keba",
           "pronunciation": "vi-toh-ra ke-ba",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ dance",
-          "translation": "teṅga",
+          "english": "To dance",
+          "translation": "tengga",
           "pronunciation": "teng-a",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ dance",
+          "english": "To dance",
           "translation": "vina",
           "pronunciation": "vi-na",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ give",
+          "english": "To give",
           "translation": "wa",
           "pronunciation": "wa",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ go",
+          "english": "To go",
           "translation": "genda. -icia",
           "pronunciation": "gend-a i-cia",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ go",
+          "english": "To go",
           "translation": "genda",
           "pronunciation": "gend-a",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ know",
+          "english": "To know",
           "translation": "manya",
           "pronunciation": "many-a",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ laugh",
+          "english": "To laugh",
           "translation": "zeka",
           "pronunciation": "ze-ka",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ love, want",
+          "english": "To love, want",
           "translation": "e-tera. -hanca-na",
           "pronunciation": "e te-ra han-ca na",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ love, want",
+          "english": "To love, want",
           "translation": "mwanca, -hanca-na",
           "pronunciation": "mwan-ca han-ca na",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ see",
-          "translation": "rωra",
+          "english": "To see",
+          "translation": "rora",
           "pronunciation": "roh-ra",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ sleep",
-          "translation": "gωna",
+          "english": "To sleep",
+          "translation": "gona",
           "pronunciation": "goh-na",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
         {
-          "english": "„ sleep",
+          "english": "To sleep",
           "translation": "lala",
           "pronunciation": "la-la",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
@@ -8134,7 +7875,7 @@
         },
         {
           "english": "Magic",
-          "translation": "Rirωgo, Obukanga",
+          "translation": "Rirogo, Obukanga",
           "pronunciation": "ri-roh-go o-bu-kang-a",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -8147,30 +7888,16 @@
           "audioFile": null
         },
         {
-          "english": "Penis",
-          "translation": "Embωrω",
-          "pronunciation": "emb-oh-roh",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
           "english": "Place",
           "translation": "Hālia, Ahalia",
-          "pronunciation": "hah-lia a-ha-lia",
+          "pronunciation": "halia ahalia",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
         {
           "english": "Sleep",
-          "translation": "Citorω",
+          "translation": "Citoro",
           "pronunciation": "ci-to-roh",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "„ (my)",
-          "translation": "„ wane",
-          "pronunciation": "wa-ne",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -8204,7 +7931,7 @@
         },
         {
           "english": "Witch",
-          "translation": "Omurωki",
+          "translation": "Omuroki",
           "pronunciation": "o-mu-roh-ki",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -8226,7 +7953,7 @@
         {
           "english": "He",
           "translation": "Ωlia",
-          "pronunciation": "oh-lia",
+          "pronunciation": "lia",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -8246,7 +7973,7 @@
         },
         {
           "english": "They",
-          "translation": "Abω",
+          "translation": "Abo",
           "pronunciation": "a-boh",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -8275,7 +8002,7 @@
         {
           "english": "Here",
           "translation": "Aīya, Aiga",
-          "pronunciation": "aee-ya ai-ga",
+          "pronunciation": "aiya aiga",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -8289,7 +8016,7 @@
         {
           "english": "There",
           "translation": "Ariá",
-          "pronunciation": "a-ri",
+          "pronunciation": "aria",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -8316,7 +8043,7 @@
         },
         {
           "english": "I come",
-          "translation": "Ngωja",
+          "translation": "Ngoja",
           "pronunciation": "ngoh-ja",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
@@ -8330,7 +8057,7 @@
         },
         {
           "english": "I dance",
-          "translation": "Ngωtenga",
+          "translation": "Ngotenga",
           "pronunciation": "ngoh-teng-a",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null

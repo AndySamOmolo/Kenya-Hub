@@ -495,25 +495,25 @@ export default function CountyDetailScreen() {
             <View style={[styles.infoCard, { backgroundColor: theme.bgCard, borderColor: theme.border, padding: 14, gap: 8 }]}>
               {countySchools.length > 0 && (
                 <Text style={{ fontSize: 12, color: theme.textSecondary }}>
-                  🏆 <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Top KCSE Schools: </Text>
+                  <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Top KCSE Schools: </Text>
                   {countySchools.map((s: any) => `${s.name} (${s.meanScore.toFixed(2)})`).join(" · ")}
                 </Text>
               )}
               {(countyParks.length > 0 || countyForests.length > 0) && (
                 <Text style={{ fontSize: 12, color: theme.textSecondary }}>
-                  🦁 <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Parks & Forests: </Text>
+                  <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Parks & Forests: </Text>
                   {[...countyParks.map((p: any) => p.name), ...countyForests.map((f: any) => f.name)].join(" · ")}
                 </Text>
               )}
               {countyAgrovets.length > 0 && (
                 <Text style={{ fontSize: 12, color: theme.textSecondary }}>
-                  🏪 <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Licensed Agrovets: </Text>
+                  <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Licensed Agrovets: </Text>
                   {countyAgrovets.map((a: any) => `${a.name} (${a.town})`).join(" · ")}
                 </Text>
               )}
               {countyLanguages.length > 0 && (
                 <Text style={{ fontSize: 12, color: theme.textSecondary }}>
-                  🗣️ <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Local Languages: </Text>
+                  <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Local Languages: </Text>
                   {countyLanguages.map((l: any) => l.name).join(", ")}
                 </Text>
               )}

@@ -744,7 +744,7 @@ export default function HomeScreen() {
                 {greeting.sw.toUpperCase()} · KENYA SUPER-APP
               </Text>
               <Text style={[styles.greetingTitle, { color: theme.textPrimary }]}>
-                {greeting.en}, Mwananchi 👋
+                {greeting.en}, Mwananchi
               </Text>
             </View>
             <Pressable
@@ -789,7 +789,7 @@ export default function HomeScreen() {
               </Pressable>
             ) : (
               <Pressable
-                onPress={() => router.push("/(tabs)/tools")}
+                onPress={() => router.push({ pathname: "/(tabs)/tools", params: { category: "all" } })}
                 style={[
                   styles.searchCountChip,
                   { backgroundColor: theme.primaryContainer },
@@ -980,7 +980,7 @@ export default function HomeScreen() {
                 </Text>
               </View>
               <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.kenyaGreenLight }}>
-                {learnStats.streak > 0 ? `🔥 ${learnStats.streak}d streak` : "Interactive"}
+                {learnStats.streak > 0 ? `${learnStats.streak}d streak` : "Interactive"}
               </Text>
             </View>
 
@@ -1236,7 +1236,7 @@ export default function HomeScreen() {
           </View>
           <Pressable
             android_ripple={androidRipple(theme.rippleColor, true)}
-            onPress={() => router.push("/(tabs)/tools")}
+            onPress={() => router.push({ pathname: "/(tabs)/tools", params: { category: "all" } })}
             style={styles.seeAllBtn}
           >
             <Text style={[styles.seeAllText, { color: theme.gold }]}>

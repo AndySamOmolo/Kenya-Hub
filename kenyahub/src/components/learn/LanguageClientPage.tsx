@@ -2,9 +2,10 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useCallback, useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
-import { HelpCircle, PartyPopper, ChevronLeft, Flame } from "lucide-react";
+import { PartyPopper, ChevronLeft, ChevronDown, Flame, Lightbulb } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -67,6 +68,15 @@ const MODULES_PAGE_SIZE = 8;
 
 type PageView = "lessons" | "modules" | "games" | "playing" | "grammar" | "proverbs";
 
+function formatLanguageHeader(name: string, nativeName: string): string {
+  const cleanName = name.trim();
+  const cleanNative = (nativeName || "").trim();
+  if (!cleanNative || cleanName.toLowerCase().includes(cleanNative.toLowerCase())) {
+    return cleanName;
+  }
+  return `${cleanName} (${cleanNative})`;
+}
+
 export default function LanguageClientPage({ languageId }: { languageId: string }) {
   const course = getCourse(languageId);
   const router = useRouter();
@@ -99,179 +109,180 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         window.scrollTo(0, 0);
         document.documentElement.scrollTop = 0;
         document.body.scrollTop = 0;
-      });
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
         document.documentElement.style.scrollBehavior = prev;
-      }, 60);
+      });
     }
-  }, [view, activeLesson, selectedUnitFilter, languageId]);
+  }, [languageId, view]);
+
+  useEffect(() => {
+    if (!course) return;
+    const loaded = loadProgress(languageId);
+    const refilled = refillHearts(loaded);
+    if (refilled.hearts !== loaded.hearts) {
+      saveProgress(languageId, refilled);
+    }
+    setProgress(refilled);
+  }, [languageId, course]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev.hearts >= MAX_HEARTS) return prev;
+        const refilled = refillHearts(prev);
+        if (refilled.hearts !== prev.hearts) {
+          saveProgress(languageId, refilled);
+        }
+        return refilled;
+      });
+    }, 30_000);
+    return () => clearInterval(interval);
+  }, [languageId]);
+
+  const allSkillsFlat = useMemo(() => {
+    if (!course) return [];
+    const list: { unitId: string; unitTitle: string; skill: CourseSkill }[] = [];
+    course.units.forEach((unit) => {
+      unit.skills.forEach((skill) => {
+        list.push({ unitId: unit.id, unitTitle: unit.title, skill });
+      });
+    });
+    return list;
+  }, [course]);
+
+  const filteredModules = useMemo(() => {
+    const q = moduleSearch.trim().toLowerCase();
+    return allSkillsFlat.filter((item) => {
+      if (selectedUnitFilter !== "all" && item.unitId !== selectedUnitFilter) {
+        return false;
+      }
+      if (!q) return true;
+      if (
+        item.skill.title.toLowerCase().includes(q) ||
+        item.skill.description.toLowerCase().includes(q) ||
+        item.unitTitle.toLowerCase().includes(q)
+      ) {
+        return true;
+      }
+      return item.skill.words.some(
+        (w) =>
+          w.target.toLowerCase().includes(q) ||
+          w.source.toLowerCase().includes(q)
+      );
+    });
+  }, [allSkillsFlat, moduleSearch, selectedUnitFilter]);
 
   useEffect(() => {
     setModulesPage(1);
   }, [moduleSearch, selectedUnitFilter, languageId]);
-
-  useEffect(() => {
-    if (!languageId) return;
-    const p = loadProgress(languageId);
-    const withHearts = refillHearts(p);
-    setProgress(withHearts);
-    saveProgress(withHearts);
-  }, [languageId]);
-
-  const handleToggleUnlockAll = useCallback(() => {
-    const updated: UserProgress = {
-      ...progress,
-      unlockAll: !progress.unlockAll,
-    };
-    setProgress(updated);
-    saveProgress(updated);
-  }, [progress]);
-
-  const findSkill = useCallback(
-    (skillId: string): CourseSkill | null => {
-      if (!course) return null;
-      for (const unit of course.units) {
-        const skill = unit.skills.find((s) => s.id === skillId);
-        if (skill) return skill;
-      }
-      return null;
-    },
-    [course]
-  );
-
-  const handleStartLesson = useCallback(
-    (skillId: string, level: number) => {
-      const skill = findSkill(skillId);
-      if (!skill) return;
-      const reviewItems = getDueReviews(progress);
-      if (progress.hearts <= 0) {
-        const restored = { ...progress, hearts: MAX_HEARTS, heartsLastRefill: Date.now() };
-        setProgress(restored);
-        saveProgress(restored);
-      }
-      setActiveLesson({ skill, level, reviewItems, reviewOnly: false });
-      setView("playing");
-      if (typeof window !== "undefined") {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
-      }
-    },
-    [findSkill, progress]
-  );
-
-  const handleStartReview = useCallback(() => {
-    if (!course) return;
-    const reviewItems = getDueReviews(progress);
-    if (reviewItems.length === 0) return;
-
-    const skill = findSkill(reviewItems[0].skillId) || course.units[0]?.skills[0];
-    if (!skill) return;
-
-    setActiveLesson({ skill, level: progress.skillLevels[skill.id] || 1, reviewItems, reviewOnly: true });
-    setView("playing");
-    if (typeof window !== "undefined") {
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
-    }
-  }, [course, findSkill, progress]);
-
-  const handleLessonComplete = useCallback(
-    (result: LessonResult) => {
-      const updated = applyLessonResult(progress, result);
-      setProgress(updated);
-      saveProgress(updated);
-
-      const newAchievementIds = updated.achievements.filter(
-        (a) => !progress.achievements.includes(a)
-      );
-      if (newAchievementIds.length > 0) {
-        const ach = ACHIEVEMENTS.find((item) => item.id === newAchievementIds[0]);
-        const label = ach ? `${ach.name} (+${ach.xpReward} XP)` : newAchievementIds[0];
-        setShowCompletionToast(`Achievement unlocked: ${label}!`);
-        setTimeout(() => setShowCompletionToast(null), 4000);
-      }
-    },
-    [progress]
-  );
-
-  const handleQuitLesson = useCallback(() => {
-    setActiveLesson(null);
-    setView("lessons");
-    const refreshed = refillHearts(progress);
-    setProgress(refreshed);
-    saveProgress(refreshed);
-  }, [progress]);
-
-  const filteredModules = useMemo(() => {
-    if (!course) return [];
-    const q = moduleSearch.trim().toLowerCase();
-    const list: { unitTitle: string; unitId: string; skill: CourseSkill }[] = [];
-    for (const unit of course.units) {
-      if (selectedUnitFilter !== "all" && unit.id !== selectedUnitFilter) continue;
-      for (const skill of unit.skills) {
-        if (!q) {
-          list.push({ unitTitle: unit.title, unitId: unit.id, skill });
-        } else {
-          const matchesSkill =
-            skill.title.toLowerCase().includes(q) ||
-            skill.description.toLowerCase().includes(q) ||
-            (skill.tips && skill.tips.toLowerCase().includes(q)) ||
-            skill.words.some(
-              (w) =>
-                w.target.toLowerCase().includes(q) ||
-                w.source.toLowerCase().includes(q) ||
-                (w.example && w.example.toLowerCase().includes(q))
-            );
-          if (matchesSkill) {
-            list.push({ unitTitle: unit.title, unitId: unit.id, skill });
-          }
-        }
-      }
-    }
-    return list;
-  }, [course, moduleSearch, selectedUnitFilter]);
 
   const visibleModules = useMemo(
     () => filteredModules.slice(0, modulesPage * MODULES_PAGE_SIZE),
     [filteredModules, modulesPage]
   );
 
+  const handleStartLesson = useCallback(
+    (skillId: string, level: number) => {
+      if (!course) return;
+      const found = allSkillsFlat.find((s) => s.skill.id === skillId);
+      if (!found) return;
+      const due = getDueReviews(progress);
+      setActiveLesson({
+        skill: found.skill,
+        level,
+        reviewItems: due.slice(0, 3),
+        reviewOnly: false,
+      });
+      setView("playing");
+    },
+    [course, allSkillsFlat, progress]
+  );
+
+  const handleStartReview = useCallback(() => {
+    if (!course) return;
+    const due = getDueReviews(progress);
+    if (due.length === 0) return;
+    const fallbackSkill = course.units[0]?.skills[0];
+    if (!fallbackSkill) return;
+    setActiveLesson({
+      skill: fallbackSkill,
+      level: 1,
+      reviewItems: due.slice(0, 10),
+      reviewOnly: true,
+    });
+    setView("playing");
+  }, [course, progress]);
+
+  const handleToggleUnlockAll = useCallback(() => {
+    setProgress((prev) => {
+      const updated: UserProgress = {
+        ...prev,
+        unlockAll: !prev.unlockAll,
+      };
+      saveProgress(languageId, updated);
+      return updated;
+    });
+  }, [languageId]);
+
+  const handleLessonComplete = useCallback(
+    (result: LessonResult) => {
+      const prevAchievements = new Set(progress.achievements);
+      const updated = applyLessonResult(progress, result);
+      saveProgress(languageId, updated);
+      setProgress(updated);
+
+      const newlyUnlocked = updated.achievements.filter(
+        (id) => !prevAchievements.has(id)
+      );
+      if (newlyUnlocked.length > 0) {
+        const ach = ACHIEVEMENTS.find((a) => a.id === newlyUnlocked[0]);
+        if (ach) {
+          setShowCompletionToast(`Unlocked Badge: ${ach.name}!`);
+          setTimeout(() => setShowCompletionToast(null), 4000);
+        }
+      }
+    },
+    [languageId, progress]
+  );
+
+  const handleQuitLesson = useCallback(() => {
+    setActiveLesson(null);
+    setView("lessons");
+  }, []);
+
   if (!course) {
     return (
-      <div data-error-page="true" data-nosnippet="true">
-        <ToolShell tool={LEARN_TOOL} hideSource>
-          <div className="flex min-h-[50vh] flex-col items-center justify-center px-4 text-center">
-            <div className="flex justify-center mb-4"><HelpCircle className="w-14 h-14 text-text-muted" /></div>
-            <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary">
-              Course not found
-            </h2>
-            <p className="mt-2 text-sm text-text-secondary">
-              The {languageId} course is not available yet. Check back soon!
-            </p>
-            <a
-              href="/tools/learn/"
-              className="mt-4 rounded-xl bg-gold px-6 py-2.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110"
-            >
-              Browse languages
-            </a>
-          </div>
-        </ToolShell>
+      <div className="mx-auto max-w-2xl px-4 py-16 text-center">
+        <h1 className="text-xl font-bold text-text-primary">
+          Course Not Found
+        </h1>
+        <p className="mt-2 text-sm text-text-secondary">
+          The requested Kenyan language course could not be loaded.
+        </p>
+        <Link
+          href="/tools/learn/"
+          className="mt-4 inline-block rounded-xl bg-gold px-5 py-2.5 text-xs font-bold text-black"
+        >
+          Back to Language Hub
+        </Link>
       </div>
     );
   }
 
-  const hasGrammar = Boolean(course.grammarSections && course.grammarSections.length > 0);
+  const hasGrammar = Boolean(
+    course.grammarSections && course.grammarSections.length > 0
+  );
+
   const totalWords = course.units.reduce(
     (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
     0
   );
   const totalSkills = course.units.reduce((sum, u) => sum + u.skills.length, 0);
   const sources = getSourcesForLanguage(course.config.id);
+  const langHeading = formatLanguageHeader(course.config.name, course.config.nativeName);
 
   const courseTool: Tool = {
     ...LEARN_TOOL,
-    title: `Learn ${course.config.name} (${course.config.nativeName}) — Free Interactive Course`,
+    title: `Learn ${langHeading} — Free Interactive Course`,
     shortTitle: `Learn ${course.config.name}`,
     description: course.config.description,
     dataSource:
@@ -282,12 +293,12 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   const courseFaq = [
     {
-      question: `How is the ${course.config.name} (${course.config.nativeName}) course structured on KenyaHub?`,
+      question: `How is the ${langHeading} course structured on KenyaHub?`,
       answer: `The ${course.config.name} course is organized into ${course.units.length} structured units and ${totalSkills} skill modules teaching ${totalWords.toLocaleString()}+ verified vocabulary items, sentence patterns, grammar paradigms, and cultural proverbs. Learners progress from foundational greetings and numerals to verb conjugations, kinship, and oral literature.`,
     },
     {
       question: `Where is ${course.config.name} spoken in Kenya and which language family does it belong to?`,
-      answer: `${course.config.name} (${course.config.nativeName}) is a ${course.config.family} language spoken by approximately ${course.config.speakers} speakers across ${course.config.counties.join(", ")} in Kenya.`,
+      answer: `${langHeading} is a ${course.config.family} language spoken by approximately ${course.config.speakers} speakers across ${course.config.counties.join(", ")} in Kenya.`,
     },
     {
       question: `What primary linguistic sources are used for the ${course.config.name} lessons and grammar reference?`,
@@ -405,7 +416,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 All {course.config.name} Modules &amp; Vocabulary ({filteredModules.length})
               </h2>
               <p className="text-xs text-text-secondary">
-                Browse every module, grammar tip, and vocabulary word table, or launch any lesson directly.
+                Browse every module, grammar note, and vocabulary word table, or launch any lesson directly.
               </p>
             </div>
 
@@ -441,7 +452,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                   className="bg-bg-card border border-border rounded-2xl p-5 space-y-4"
                 >
                   <div className="flex flex-wrap items-start justify-between gap-3 border-b border-border pb-3">
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <span className="text-[0.65rem] font-bold uppercase tracking-wider text-gold">
                         {unitTitle}
                       </span>
@@ -454,17 +465,25 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                       onClick={() =>
                         handleStartLesson(skill.id, Math.min(skillLevel + 1, 5))
                       }
-                      className="rounded-xl bg-gold px-4 py-2 text-xs font-bold text-kenya-black hover:brightness-110 transition-all"
+                      className="rounded-xl bg-gold px-4 py-2 text-xs font-bold text-kenya-black hover:brightness-110 transition-all shrink-0"
                     >
                       Practice Module ({skill.words.length} words) →
                     </button>
                   </div>
 
                   {skill.tips && (
-                    <div className="rounded-xl bg-gold/5 border border-gold/20 p-3 text-xs text-text-secondary leading-relaxed">
-                      <strong className="text-gold">Module Tip: </strong>
-                      {skill.tips}
-                    </div>
+                    <details className="group rounded-xl bg-gold/5 border border-gold/20 px-3.5 py-2.5 text-xs text-text-secondary">
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 font-semibold text-gold">
+                        <span className="inline-flex items-center gap-1.5">
+                          <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold" />
+                          <span>Grammar &amp; Lesson Notes</span>
+                        </span>
+                        <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+                      </summary>
+                      <div className="mt-2 border-t border-gold/15 pt-2 leading-relaxed whitespace-pre-line">
+                        {skill.tips}
+                      </div>
+                    </details>
                   )}
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">

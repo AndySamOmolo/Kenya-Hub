@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 
 function countPillChildren(children: React.ReactNode): number {
@@ -35,11 +35,31 @@ export default function ExpandablePillRow({
   threshold = 5,
 }: ExpandablePillRowProps) {
   const [expanded, setExpanded] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const count = countPillChildren(children);
+
+  useEffect(() => {
+    if (expanded) return;
+    const container = scrollContainerRef.current;
+    if (!container) return;
+    const activeEl = container.querySelector<HTMLElement>(
+      '[data-active="true"], [aria-pressed="true"], [aria-selected="true"]'
+    );
+    if (!activeEl) return;
+    const targetLeft =
+      activeEl.offsetLeft -
+      container.clientWidth / 2 +
+      activeEl.clientWidth / 2;
+    container.scrollTo({
+      left: Math.max(0, targetLeft),
+      behavior: "smooth",
+    });
+  }, [children, expanded]);
 
   if (count <= threshold) {
     return (
       <div
+        ref={scrollContainerRef}
         className={`no-scrollbar ${className}`}
         style={{
           display: "flex",
@@ -49,6 +69,7 @@ export default function ExpandablePillRow({
           width: "100%",
           maxWidth: "100%",
           overflowX: "auto",
+          position: "relative",
           paddingTop: "2px",
           paddingBottom: "2px",
         }}
@@ -72,6 +93,7 @@ export default function ExpandablePillRow({
       }}
     >
       <div
+        ref={scrollContainerRef}
         className="no-scrollbar"
         style={
           expanded
@@ -82,6 +104,7 @@ export default function ExpandablePillRow({
                 flexWrap: "wrap",
                 alignItems: "center",
                 gap: "6px",
+                position: "relative",
                 paddingTop: "2px",
                 paddingBottom: "2px",
               }
@@ -93,6 +116,7 @@ export default function ExpandablePillRow({
                 alignItems: "center",
                 gap: "6px",
                 overflowX: "auto",
+                position: "relative",
                 paddingTop: "2px",
                 paddingBottom: "2px",
               }

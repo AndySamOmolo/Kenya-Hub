@@ -10,7 +10,6 @@ import {
   ChevronDown,
   Lightbulb,
   Heart,
-  Flame,
   Trophy,
   Target,
   Crown,
@@ -18,7 +17,6 @@ import {
   Layers,
   Lock,
   Unlock,
-  Zap,
   BookOpen,
 } from "lucide-react";
 import type { CourseUnit, UserProgress, LanguageConfig } from "@/data/courses/types";
@@ -88,46 +86,11 @@ export default function SkillTree({
 
   return (
     <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
-      {/* ─── Header ──────────────────────────────── */}
+      {/* ─── Progress & Sources Dashboard (Language title & description are already displayed in ToolShell above) ─── */}
       <div className="mb-6">
-        {/* Hero card */}
-        <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-5 sm:p-6">
-          <div className="flex items-center gap-4">
-            <div className="flex-1 min-w-0">
-              <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary sm:text-2xl">
-                {config.name} ({config.nativeName})
-              </h2>
-              <p className="text-xs text-text-secondary mt-0.5">{config.description}</p>
-              {sources.length > 0 && (
-                <details className="group mt-2.5 rounded-xl border border-border/70 bg-bg-elevated/50 px-3 py-2 text-xs">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-[0.7rem] font-semibold text-text-secondary hover:text-gold transition-colors">
-                    <span className="inline-flex items-center gap-1.5">
-                      <BookOpen className="h-3.5 w-3.5 text-gold shrink-0" />
-                      <span>
-                        Built from {sources.length} linguistic &amp; historical reference{" "}
-                        {sources.length === 1 ? "source" : "sources"}
-                      </span>
-                    </span>
-                    <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
-                  </summary>
-                  <ul className="mt-2 space-y-1.5 border-t border-border/50 pt-2 text-[0.65rem] leading-relaxed text-text-secondary">
-                    {sources.map((source) => (
-                      <li key={source.id} className="flex items-start gap-1.5">
-                        <span className="text-gold font-bold">•</span>
-                        <span>
-                          <span className="font-medium text-text-primary">{source.title}</span>{" "}
-                          <span className="text-text-muted">({source.published})</span>
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              )}
-            </div>
-          </div>
-
+        <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-4 sm:p-5">
           {/* Quick stats row */}
-          <div className="mt-4 grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-2">
             <div className="rounded-xl bg-bg-elevated/60 border border-border/50 p-2 text-center">
               <div className="text-base font-bold text-gold sm:text-lg flex items-center justify-center gap-1">
                 <DynamicIcon emoji={levelInfo.current.icon} className="w-[1em] h-[1em]" />
@@ -183,7 +146,9 @@ export default function SkillTree({
                   {levelInfo.next.title}
                 </span>
               ) : (
-                <span className="text-gold font-semibold flex items-center gap-1"><Crown className="w-3.5 h-3.5 inline text-gold" /> Max Level!</span>
+                <span className="text-gold font-semibold flex items-center gap-1">
+                  <Crown className="w-3.5 h-3.5 inline text-gold" /> Max Level!
+                </span>
               )}
             </div>
             <div className="h-2 w-full overflow-hidden rounded-full bg-bg-elevated">
@@ -232,6 +197,32 @@ export default function SkillTree({
               </button>
             </div>
           </div>
+
+          {sources.length > 0 && (
+            <details className="group mt-3 rounded-xl border border-border/70 bg-bg-elevated/50 px-3 py-2 text-xs">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-[0.7rem] font-semibold text-text-secondary hover:text-gold transition-colors">
+                <span className="inline-flex items-center gap-1.5">
+                  <BookOpen className="h-3.5 w-3.5 text-gold shrink-0" />
+                  <span>
+                    Built from {sources.length} linguistic &amp; historical reference{" "}
+                    {sources.length === 1 ? "source" : "sources"}
+                  </span>
+                </span>
+                <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+              </summary>
+              <ul className="mt-2 space-y-1.5 border-t border-border/50 pt-2 text-[0.65rem] leading-relaxed text-text-secondary">
+                {sources.map((source) => (
+                  <li key={source.id} className="flex items-start gap-1.5">
+                    <span className="text-gold font-bold">•</span>
+                    <span>
+                      <span className="font-medium text-text-primary">{source.title}</span>{" "}
+                      <span className="text-text-muted">({source.published})</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
         </div>
 
         {/* ─── Collapsible Achievements Drawer ─── */}
@@ -293,7 +284,9 @@ export default function SkillTree({
                         : "border-border bg-bg-elevated/30 opacity-50"
                     }`}
                   >
-                    <div className="text-xl flex items-center justify-center"><DynamicIcon emoji={ach.icon} className="w-5 h-5" /></div>
+                    <div className="text-xl flex items-center justify-center">
+                      <DynamicIcon emoji={ach.icon} className="w-5 h-5" />
+                    </div>
                     <div className="min-w-0 flex-1">
                       <div className="text-xs font-bold text-text-primary break-words">
                         {ach.name}
@@ -373,15 +366,14 @@ export default function SkillTree({
                   borderBottom: isExpanded ? "1px solid var(--border)" : "none",
                 }}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3.5 min-w-0">
                   <div
-                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-bold text-white shadow-sm"
-                    style={{ backgroundColor: unit.color || config.color }}
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gold/30 bg-gold/10 text-gold"
                   >
-                    U{unit.number ?? uIdx + 1}
+                    <DynamicIcon emoji={unit.icon} className="w-5 h-5" />
                   </div>
-                  <div>
-                    <div className="flex items-center gap-2">
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-2">
                       <h3 className="font-[family-name:var(--font-outfit)] text-base font-bold text-text-primary">
                         {unit.title}
                       </h3>
@@ -389,7 +381,7 @@ export default function SkillTree({
                         {unitCompleted}/{unit.skills.length}
                       </span>
                     </div>
-                    <p className="text-xs text-text-secondary">
+                    <p className="text-xs text-text-secondary mt-0.5 line-clamp-2">
                       {unit.description}
                     </p>
                   </div>
@@ -417,6 +409,7 @@ export default function SkillTree({
                     const currentLevel = progress.skillLevels[skill.id] || 0;
                     const isMastered = currentLevel >= MAX_SKILL_LEVEL;
                     const nextLevel = Math.min(currentLevel + 1, MAX_SKILL_LEVEL);
+                    const tipContent = skill.tips || skill.tip;
 
                     return (
                       <div
@@ -429,14 +422,14 @@ export default function SkillTree({
                           <div className="flex items-start gap-3 min-w-0 flex-1">
                             {/* Skill Icon Node */}
                             <div
-                              className={`relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-xl border-2 transition-transform ${
+                              className={`relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border-2 transition-transform ${
                                 isMastered
-                                  ? "border-gold bg-gold/15 shadow-sm shadow-gold/20"
+                                  ? "border-gold bg-gold/15 text-gold shadow-sm shadow-gold/20"
                                   : currentLevel > 0
-                                  ? "border-kenya-green bg-kenya-green/10"
+                                  ? "border-kenya-green bg-kenya-green/10 text-kenya-green-light"
                                   : unlocked
-                                  ? "border-border-light bg-bg-elevated"
-                                  : "border-border bg-bg-elevated/40"
+                                  ? "border-border-light bg-bg-elevated text-gold"
+                                  : "border-border bg-bg-elevated/40 text-text-muted"
                               }`}
                             >
                               {unlocked ? (
@@ -460,7 +453,7 @@ export default function SkillTree({
                                   ({skill.words.length} words)
                                 </span>
                               </div>
-                              <p className="text-xs text-text-secondary">
+                              <p className="text-xs text-text-secondary mt-0.5 leading-relaxed">
                                 {skill.description}
                               </p>
 
@@ -518,14 +511,25 @@ export default function SkillTree({
                           </div>
                         </div>
 
-                        {/* Tip Callout + Preview Vocabulary */}
+                        {/* Collapsible Grammar & Lesson Notes Dropdown + Preview Vocabulary */}
                         {unlocked && (
                           <div className="mt-2.5 pl-0 sm:pl-15 space-y-2">
-                            {(skill.tips || skill.tip) && (
-                              <div className="flex items-start gap-2 rounded-lg bg-bg-elevated/60 border border-border/50 px-3 py-2 text-[0.7rem] text-text-secondary">
-                                <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold mt-0.5" />
-                                <span>{skill.tips || skill.tip}</span>
-                              </div>
+                            {tipContent && (
+                              <details
+                                onClick={(e) => e.stopPropagation()}
+                                className="group rounded-xl bg-bg-elevated/60 border border-border/60 px-3 py-2 text-xs text-text-secondary"
+                              >
+                                <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-[0.7rem] font-semibold text-gold hover:text-gold-light transition-colors">
+                                  <span className="inline-flex items-center gap-1.5">
+                                    <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold" />
+                                    <span>Grammar &amp; Lesson Notes</span>
+                                  </span>
+                                  <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+                                </summary>
+                                <div className="mt-2 border-t border-border/50 pt-2 text-[0.7rem] leading-relaxed text-text-secondary whitespace-pre-line">
+                                  {tipContent}
+                                </div>
+                              </details>
                             )}
 
                             {/* Word chips preview */}

@@ -2,9 +2,10 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import { useState, useMemo, useEffect, useRef } from "react";
-import { scrollToTopIfScrolled } from "@/lib/scroll";
+import { Suspense, useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { scrollToPageTop, scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES, getCategoryInfo, getToolUsageScore } from "@/lib/tools-registry";
 import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import { ArrowDownAZ, LayoutList, Pin, TrendingUp, Wrench } from "lucide-react";
@@ -13,11 +14,30 @@ import SearchInput from "@/components/ui/SearchInput";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { useMounted } from "@/lib/useMounted";
 
+function ToolsUrlSync({
+  onSync,
+}: {
+  onSync: (category: string, query: string | null) => void;
+}) {
+  const searchParams = useSearchParams();
+  useEffect(() => {
+    const rawCat = searchParams.get("category");
+    const validCat =
+      rawCat && TOOL_CATEGORIES.some((c) => c.id === rawCat) ? rawCat : "all";
+    const q = searchParams.get("q");
+    onSync(validCat, q);
+  }, [searchParams, onSync]);
+  return null;
+}
+
 export default function ToolsHubPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const _scrollMountRef = useRef(false);
   useEffect(() => {
-    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    if (!_scrollMountRef.current) {
+      _scrollMountRef.current = true;
+      return;
+    }
     scrollToTopIfScrolled();
   }, [selectedCategory]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -26,22 +46,84 @@ export default function ToolsHubPage() {
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const mounted = useMounted();
 
+  const handleUrlSync = useCallback((cat: string, q: string | null) => {
+    setSelectedCategory(cat);
+    if (q !== null) {
+      setSearchQuery(q);
+    }
+  }, []);
+
+  const handleSelectCategory = useCallback((catId: string) => {
+    const nextCat =
+      catId !== "all" && TOOL_CATEGORIES.some((c) => c.id === catId)
+        ? catId
+        : "all";
+    setSelectedCategory(nextCat);
+    try {
+      const url = new URL(window.location.href);
+      if (nextCat === "all") {
+        url.searchParams.delete("category");
+      } else {
+        url.searchParams.set("category", nextCat);
+      }
+      window.history.replaceState(null, "", url.pathname + url.search);
+    } catch {
+      // ignore
+    }
+  }, []);
+
   useEffect(() => {
-    const syncFromUrl = () => {
+    const syncFromWindowLocation = () => {
       try {
         const params = new URLSearchParams(window.location.search);
-        const cat = params.get("category");
+        const rawCat = params.get("category");
+        const validCat =
+          rawCat && TOOL_CATEGORIES.some((c) => c.id === rawCat) ? rawCat : "all";
         const q = params.get("q");
-        if (cat) setSelectedCategory(cat);
-        if (q) setSearchQuery(q);
+        setSelectedCategory(validCat);
+        if (q !== null) setSearchQuery(q);
       } catch {
         // ignore
       }
     };
 
-    syncFromUrl();
-    window.addEventListener("popstate", syncFromUrl);
-    return () => window.removeEventListener("popstate", syncFromUrl);
+    const onCustomCategorySelect = (e: Event) => {
+      const detail = (e as CustomEvent<string>).detail;
+      if (typeof detail === "string") {
+        const validCat =
+          detail !== "all" && TOOL_CATEGORIES.some((c) => c.id === detail)
+            ? detail
+            : "all";
+        setSelectedCategory(validCat);
+        scrollToPageTop();
+      }
+    };
+
+    const onDocumentClick = (e: MouseEvent) => {
+      const anchor = (e.target as HTMLElement | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
+      if (!anchor) return;
+      try {
+        const url = new URL(anchor.href, window.location.origin);
+        if (url.origin === window.location.origin && (url.pathname === "/tools" || url.pathname === "/tools/")) {
+          const rawCat = url.searchParams.get("category");
+          const validCat = rawCat && TOOL_CATEGORIES.some((c) => c.id === rawCat) ? rawCat : "all";
+          setSelectedCategory(validCat);
+          scrollToPageTop();
+        }
+      } catch {
+        // ignore
+      }
+    };
+
+    syncFromWindowLocation();
+    window.addEventListener("popstate", syncFromWindowLocation);
+    window.addEventListener("kh-select-category", onCustomCategorySelect);
+    document.addEventListener("click", onDocumentClick);
+    return () => {
+      window.removeEventListener("popstate", syncFromWindowLocation);
+      window.removeEventListener("kh-select-category", onCustomCategorySelect);
+      document.removeEventListener("click", onDocumentClick);
+    };
   }, []);
 
   useEffect(() => {
@@ -72,6 +154,11 @@ export default function ToolsHubPage() {
       window.removeEventListener("kh-tool-visits-updated", loadVisits);
     };
   }, []);
+
+  const activeCategoryInfo = useMemo(
+    () => (selectedCategory !== "all" ? getCategoryInfo(selectedCategory) : undefined),
+    [selectedCategory]
+  );
 
   const filteredTools = useMemo(() => {
     let tools = TOOLS;
@@ -123,18 +210,46 @@ export default function ToolsHubPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-8">
+      <Suspense fallback={null}>
+        <ToolsUrlSync onSync={handleUrlSync} />
+      </Suspense>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       {/* Header */}
       <div className="mb-4 sm:mb-8">
-        <h1 className="text-2xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2">
-          <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools &amp; Calculators
-        </h1>
-        <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
-          Explore {TOOLS.length} free digital calculators, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 22 Kenyan language courses.
-        </p>
+        {activeCategoryInfo ? (
+          <>
+            <div className="flex items-center gap-2 text-xs text-text-muted mb-1.5">
+              <button
+                type="button"
+                onClick={() => handleSelectCategory("all")}
+                className="hover:text-gold transition-colors cursor-pointer"
+              >
+                All Tools
+              </button>
+              <span>/</span>
+              <span className="text-gold font-semibold">{activeCategoryInfo.name}</span>
+            </div>
+            <h1 className="text-2xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2 flex items-center gap-2.5">
+              <DynamicIcon emoji={activeCategoryInfo.icon} className="w-[0.9em] h-[0.9em] text-gold shrink-0" />
+              <span>{activeCategoryInfo.name}</span>
+            </h1>
+            <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
+              {activeCategoryInfo.description} — {filteredTools.length} verified tool{filteredTools.length !== 1 ? "s" : ""} built for Kenya.
+            </p>
+          </>
+        ) : (
+          <>
+            <h1 className="text-2xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2">
+              <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools &amp; Calculators
+            </h1>
+            <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
+              Explore {TOOLS.length} free digital calculators, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 22 Kenyan language courses.
+            </p>
+          </>
+        )}
       </div>
 
       {/* Pinned Tools */}
@@ -181,7 +296,7 @@ export default function ToolsHubPage() {
         </div>
       )}
 
-      {/* Search, Mobile Category Dropdown, and Sort */}
+      {/* Search and Sort */}
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-2.5 items-stretch sm:items-center justify-between mb-2.5 sm:mb-3">
         <div className="flex-1 max-w-lg">
           <SearchInput
@@ -226,7 +341,10 @@ export default function ToolsHubPage() {
       {/* Category Pills */}
       <ExpandablePillRow className="mb-3 sm:mb-3.5">
         <button
-          onClick={() => setSelectedCategory("all")}
+          type="button"
+          data-active={selectedCategory === "all"}
+          aria-pressed={selectedCategory === "all"}
+          onClick={() => handleSelectCategory("all")}
           className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-3.5 text-xs font-medium border transition-all ${
             selectedCategory === "all"
               ? "border-gold/50 bg-gold/15 text-gold font-semibold"
@@ -241,7 +359,10 @@ export default function ToolsHubPage() {
           return (
             <button
               key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
+              type="button"
+              data-active={active}
+              aria-pressed={active}
+              onClick={() => handleSelectCategory(cat.id)}
               className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-3.5 text-xs font-medium border transition-all ${
                 active
                   ? "border-gold/50 bg-gold/15 text-gold font-semibold"
@@ -258,13 +379,15 @@ export default function ToolsHubPage() {
       {(searchQuery || selectedCategory !== "all") && filteredTools.length > 0 && (
         <p className="text-xs text-text-muted mb-3 sm:mb-4">
           Showing {filteredTools.length} of {TOOLS.length} tools
+          {activeCategoryInfo && <> in <strong className="text-text-secondary">{activeCategoryInfo.name}</strong></>}
           {searchQuery && <> matching &quot;{searchQuery}&quot;</>}
           {selectedCategory !== "all" && (
             <button
-              onClick={() => setSelectedCategory("all")}
+              type="button"
+              onClick={() => handleSelectCategory("all")}
               className="ml-2 text-gold hover:underline font-medium"
             >
-              Clear filter
+              Show all categories
             </button>
           )}
         </p>
@@ -278,9 +401,10 @@ export default function ToolsHubPage() {
             No tools found matching &quot;{searchQuery}&quot;
           </p>
           <button
+            type="button"
             onClick={() => {
               setSearchQuery("");
-              setSelectedCategory("all");
+              handleSelectCategory("all");
             }}
             className="text-xs text-gold hover:underline font-medium"
           >

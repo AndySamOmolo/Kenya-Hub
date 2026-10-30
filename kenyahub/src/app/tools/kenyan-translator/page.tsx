@@ -865,14 +865,22 @@ export default function KenyanTranslatorPage() {
   const getRandomWord = useCallback(() => {
     if (activeDictList.length > 0) {
       const dict = activeDictList[Math.floor(Math.random() * activeDictList.length)];
-      const validCats = dict.categories.filter((c) => c.entries.length > 0);
-      if (validCats.length > 0) {
-        const cat = validCats[Math.floor(Math.random() * validCats.length)];
-        const entry = cat.entries[Math.floor(Math.random() * cat.entries.length)];
-        if (entry) {
-          setRandomWord({ entry, langName: dict.languageName });
-          return;
-        }
+      const cleanPool = dict.categories
+        .filter((c) => c.id !== "culture-history")
+        .flatMap((c) => c.entries)
+        .filter(
+          (e) =>
+            e.english.length >= 2 &&
+            e.english.length <= 32 &&
+            e.translation.length >= 2 &&
+            e.translation.length <= 36 &&
+            !/[();:/[\]"„—]/.test(e.english) &&
+            !/[();:[\]"„—]/.test(e.translation)
+        );
+      if (cleanPool.length > 0) {
+        const entry = cleanPool[Math.floor(Math.random() * cleanPool.length)];
+        setRandomWord({ entry, langName: dict.languageName });
+        return;
       }
     }
     const sample = INITIAL_RANDOM_WORDS[Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)];
@@ -896,7 +904,7 @@ export default function KenyanTranslatorPage() {
           <div className="bg-gradient-to-r from-gold/10 to-kenya-green/10 border border-gold/20 rounded-xl p-3.5 sm:p-4 flex items-center justify-between gap-3 sm:gap-4">
             <div className="min-w-0">
               <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-0.5 sm:mb-1 flex items-center gap-1.5"><Dices className="w-3 h-3" /> Discover a word ({ALL_DICT_METAS.length} Kenyan languages)</p>
-              <p className="text-sm font-bold text-text-primary">&ldquo;{randomWord.entry.english}&rdquo;</p>
+              <p className="text-sm font-bold text-text-primary">{randomWord.entry.english}</p>
               <p className="text-xs text-text-secondary mt-0.5">
                 <span className="text-gold font-medium">{randomWord.entry.translation}</span>
                 <span className="text-text-muted"> — {randomWord.langName}</span>
@@ -974,7 +982,7 @@ export default function KenyanTranslatorPage() {
                     value={targetLanguage}
                     onValueChange={setTargetLanguage}
                     options={[
-                      { value: "all", label: `✨ All ${ALL_DICT_METAS.length} Kenyan Languages` },
+                      { value: "all", label: `All ${ALL_DICT_METAS.length} Kenyan Languages` },
                       { value: "english", label: "English" },
                       ...ALL_DICT_METAS.map((d) => ({ value: d.languageId, label: d.languageName }))
                     ]}
@@ -986,7 +994,7 @@ export default function KenyanTranslatorPage() {
               {/* Bridge Indicator Badge when translating Kenyan -> Kenyan or Kenyan -> All */}
               {isPivotMode && (
                 <div className="mt-2.5 px-3 py-1.5 rounded-lg bg-gold/10 border border-gold/25 flex items-center gap-2 text-[0.6875rem] text-text-secondary">
-                  <span className="text-gold font-semibold">🔗 English Middleman Active:</span>
+                  <span className="text-gold font-semibold">English Middleman Active:</span>
                   <span>
                     Translating from <strong>{sourceMeta?.languageName}</strong>{" "}
                     <ArrowRight className="inline w-3 h-3 text-gold mx-0.5" /> <strong>English</strong>{" "}
@@ -1128,7 +1136,7 @@ export default function KenyanTranslatorPage() {
                             <div className="flex items-center gap-2 mb-1 flex-wrap">
                               <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[result.family] || "#C8961E" }} />
                               <span className="text-xs font-bold text-text-primary">{result.languageName}</span>
-                              <span className="text-[0.6rem] text-text-muted">· {result.categoryIcon} {result.categoryName}</span>
+                              <span className="text-[0.6rem] text-text-muted">· {result.categoryName}</span>
                               {result.matchType === "exact" && (
                                 <span className="text-[0.55rem] bg-gold/15 text-gold px-1.5 py-0.5 rounded font-medium">Exact</span>
                               )}
@@ -1533,7 +1541,6 @@ export default function KenyanTranslatorPage() {
                       onClick={() => setSearchQuery(word)}
                       className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/40 transition-all flex items-center gap-1.5"
                     >
-                      <span className="text-[0.7rem] text-gold">⚡</span>
                       <span>{word}</span>
                     </button>
                   ))}
@@ -1656,7 +1663,7 @@ export default function KenyanTranslatorPage() {
                       <p className="text-[0.6rem] text-text-muted mb-2">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
                       <div className="flex flex-wrap gap-1 mb-2">
                         {dict.categories.map((cat) => (
-                          <span key={cat.id} className="text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.count}</span>
+                          <span key={cat.id} className="inline-flex items-center gap-1 text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.count}</span>
                         ))}
                       </div>
                       <div className="h-1 bg-bg-elevated rounded-full overflow-hidden">

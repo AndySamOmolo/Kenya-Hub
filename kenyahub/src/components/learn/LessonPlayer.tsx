@@ -6,6 +6,7 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 import {
   Check,
   ChevronRight,
+  ChevronDown,
   Heart,
   Volume2,
   X,
@@ -565,13 +566,31 @@ export default function LessonPlayer({
         </div>
 
         <div className="flex-1">
-          <p className="text-xs font-bold uppercase tracking-wider text-gold">Learn first</p>
-          <h2 className="mt-2 font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
+          <p className="text-xs font-bold uppercase tracking-wider text-gold">Learn First</p>
+          <h2 className="mt-1.5 font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
             {skill.title}
           </h2>
-          <p className="mt-2 text-sm text-text-secondary">Study this card before practicing.</p>
+          <p className="mt-1.5 text-sm text-text-secondary">{skill.description || "Study this card before practicing."}</p>
 
-          <div className="mt-8 rounded-2xl border border-gold/30 bg-gold/5 p-6 sm:p-8">
+          {(skill.tips || skill.tip) && (
+            <details
+              open={teachingIndex === 0}
+              className="group mt-4 rounded-xl border border-gold/25 bg-gold/5 px-4 py-3 text-xs text-text-secondary"
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-2 font-semibold text-gold">
+                <span className="inline-flex items-center gap-1.5">
+                  <Lightbulb className="h-4 w-4 shrink-0 text-gold" />
+                  <span>Grammar &amp; Lesson Notes</span>
+                </span>
+                <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+              </summary>
+              <div className="mt-2.5 border-t border-gold/15 pt-2.5 text-xs leading-relaxed text-text-secondary whitespace-pre-line">
+                {skill.tips || skill.tip}
+              </div>
+            </details>
+          )}
+
+          <div className="mt-6 rounded-2xl border border-gold/30 bg-gold/5 p-6 sm:p-8">
             <p className="text-3xl font-bold text-gold sm:text-4xl">{teachingCard.target}</p>
             <p className="mt-4 text-lg font-semibold text-text-primary">{teachingCard.source}</p>
             {teachingCard.pronunciation && (
@@ -722,6 +741,22 @@ export default function LessonPlayer({
           </div>
         )}
       </div>
+
+      {/* ─── Optional Collapsible Lesson Notes during Practice ─── */}
+      {(skill.tips || skill.tip) && (
+        <details className="group mb-4 rounded-xl border border-border bg-bg-card px-3.5 py-2 text-xs text-text-secondary">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-[0.7rem] font-semibold text-gold">
+            <span className="inline-flex items-center gap-1.5">
+              <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold" />
+              <span>Grammar &amp; Lesson Notes ({skill.title})</span>
+            </span>
+            <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+          </summary>
+          <div className="mt-2 border-t border-border/60 pt-2 text-[0.7rem] leading-relaxed text-text-secondary whitespace-pre-line">
+            {skill.tips || skill.tip}
+          </div>
+        </details>
+      )}
 
       {/* ─── Exercise Content ────────────────────── */}
       <div className="flex-1">

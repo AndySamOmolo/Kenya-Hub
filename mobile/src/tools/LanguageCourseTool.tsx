@@ -1053,7 +1053,7 @@ export default function LanguageCourseTool({
               {streakCount >= 2 && (
                 <View style={[styles.streakComboPill, { backgroundColor: 'rgba(245,158,11,0.16)' }]}>
                   <Text style={{ fontSize: 11, fontWeight: '800', color: '#F59E0B' }}>
-                    🔥 {streakCount} in a row!
+                    {streakCount} in a row!
                   </Text>
                 </View>
               )}
@@ -1448,7 +1448,7 @@ export default function LanguageCourseTool({
                 ]}
               >
                 <Text style={[styles.completeMetricValue, { color: '#F59E0B' }]}>
-                  🔥 {progress.streak}
+                  {progress.streak}
                 </Text>
                 <Text style={[styles.completeMetricLabel, { color: colors.textMuted }]}>
                   DAY STREAK
@@ -1540,7 +1540,7 @@ export default function LanguageCourseTool({
       >
         <View style={styles.statsTopRow}>
           <View style={styles.levelBadgeWrap}>
-            <Text style={{ fontSize: 20 }}>{currentLevel.icon}</Text>
+            <DynamicIcon emoji={currentLevel.icon} size={20} color={langColor} />
             <View>
               <Text style={[styles.levelTitleText, { color: colors.text }]}>
                 {currentLevel.name} • {progress.totalXP} XP
@@ -1554,11 +1554,13 @@ export default function LanguageCourseTool({
           </View>
 
           <View style={styles.statsRightPills}>
-            <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh }]}>
-              <Text style={{ fontSize: 12 }}>🔥 {progress.streak}d</Text>
+            <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh, flexDirection: "row", alignItems: "center", gap: 4 }]}>
+              <Feather name="zap" size={12} color="#F59E0B" />
+              <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>{progress.streak}d</Text>
             </View>
-            <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh }]}>
-              <Text style={{ fontSize: 12 }}>❤️ {progress.hearts}</Text>
+            <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh, flexDirection: "row", alignItems: "center", gap: 4 }]}>
+              <Feather name="heart" size={12} color="#EF4444" />
+              <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>{progress.hearts}</Text>
               {progress.hearts < MAX_HEARTS && (
                 <Text style={{ fontSize: 10, color: colors.textMuted }}>
                   {' '}({`${minutesToNextHeart({ ...progress, version: 1, skillLevels: {}, xp: progress.totalXP, lastActiveDate: progress.lastPracticeDate, todayXp: progress.dailyXP, achievements: progress.unlockedAchievements, wordsLearned: [], lessonsCompleted: 0, streakFreezes: 0, reviewQueue: [] })}m`})
@@ -1577,9 +1579,12 @@ export default function LanguageCourseTool({
                 },
               ]}
             >
-              <Text style={{ fontSize: 12 }}>
-                🏆 {progress.unlockedAchievements.length}/{ACHIEVEMENTS.length}
-              </Text>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+                <Feather name="award" size={12} color={colors.gold} />
+                <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>
+                  {progress.unlockedAchievements.length}/{ACHIEVEMENTS.length}
+                </Text>
+              </View>
             </Pressable>
           </View>
         </View>
@@ -1621,7 +1626,7 @@ export default function LanguageCourseTool({
                     },
                   ]}
                 >
-                  <Text style={{ fontSize: 16 }}>{ach.icon}</Text>
+                  <DynamicIcon emoji={ach.icon} size={18} color={isUnlocked ? langColor : colors.textMuted} />
                   <View style={{ flex: 1 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
                       <Text style={{ fontSize: 11, fontWeight: '800', color: colors.text }}>
@@ -1697,7 +1702,7 @@ export default function LanguageCourseTool({
           <View style={styles.courseInfoHeader}>
             <View style={{ flex: 1 }}>
               <Text style={[styles.courseInfoTitle, { color: colors.text }]}>
-                {currentCourse.config.name} ({currentCourse.config.nativeName})
+                {currentCourse.config.nativeName && !currentCourse.config.name.toLowerCase().includes(currentCourse.config.nativeName.toLowerCase()) ? `${currentCourse.config.name} (${currentCourse.config.nativeName})` : currentCourse.config.name}
               </Text>
               <Text style={[styles.courseInfoMeta, { color: langColor }]}>
                 {currentCourse.config.family} • {currentCourse.config.speakers} speakers •{' '}
@@ -1814,7 +1819,7 @@ export default function LanguageCourseTool({
           >
             <View style={{ flex: 1 }}>
               <Text style={{ fontSize: 12.5, fontWeight: '800', color: colors.text }}>
-                {progress.unlockAll ? '🔓 All Modules Unlocked' : '🔒 Progressive Skill Path'}
+                {progress.unlockAll ? 'All Modules Unlocked' : 'Progressive Skill Path'}
               </Text>
               <Text style={{ fontSize: 11, color: colors.textSecondary, marginTop: 2 }}>
                 {progress.unlockAll
@@ -1917,9 +1922,7 @@ export default function LanguageCourseTool({
                   style={styles.unitHeaderPressable}
                 >
                   <View style={[styles.unitNumberBadge, { backgroundColor: `${langColor}22` }]}>
-                    <Text style={{ fontSize: 13, fontWeight: '800', color: langColor }}>
-                      {uIdx + 1}
-                    </Text>
+                    <DynamicIcon emoji={unit.icon} size={18} color={langColor} />
                   </View>
 
                   <View style={{ flex: 1 }}>
@@ -1977,23 +1980,15 @@ export default function LanguageCourseTool({
                           <View style={styles.skillNodeTop}>
                             <View style={{ flex: 1 }}>
                               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-                                <Feather
-                                  name={
-                                    skillLevel >= 1
-                                      ? 'check-circle'
-                                      : unlocked
-                                      ? 'play-circle'
-                                      : 'lock'
-                                  }
-                                  size={15}
-                                  color={
-                                    skillLevel >= 1
-                                      ? '#10B981'
-                                      : unlocked
-                                      ? langColor
-                                      : colors.textMuted
-                                  }
-                                />
+                                {unlocked ? (
+                                  <DynamicIcon
+                                    emoji={skill.icon}
+                                    size={16}
+                                    color={skillLevel >= 1 ? '#10B981' : langColor}
+                                  />
+                                ) : (
+                                  <Feather name="lock" size={15} color={colors.textMuted} />
+                                )}
                                 <Text style={[styles.skillNodeTitle, { color: colors.text }]}>
                                   {skill.title}
                                 </Text>
@@ -2009,15 +2004,13 @@ export default function LanguageCourseTool({
                             {/* 5-Star Mastery Row */}
                             <View style={styles.starsRow}>
                               {[1, 2, 3, 4, 5].map((star) => (
-                                <Text
+                                <Feather
                                   key={star}
-                                  style={{
-                                    fontSize: 11,
-                                    opacity: star <= skillLevel ? 1 : 0.25,
-                                  }}
-                                >
-                                  ⭐
-                                </Text>
+                                  name="star"
+                                  size={12}
+                                  color={star <= skillLevel ? "#F59E0B" : colors.textMuted}
+                                  style={{ opacity: star <= skillLevel ? 1 : 0.3 }}
+                                />
                               ))}
                             </View>
                           </View>
@@ -2856,7 +2849,7 @@ export default function LanguageCourseTool({
                     }}
                   >
                     {wordleStatus === 'won'
-                      ? '🎉 Solved! +25 XP'
+                      ? 'Solved! +25 XP'
                       : `Word was: ${wordleAnswer.toUpperCase()}`}
                   </Text>
                   <Pressable
@@ -3209,7 +3202,7 @@ export default function LanguageCourseTool({
                       </Text>
                       {p.explanation ? (
                         <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
-                          💡 {p.explanation}
+                          {p.explanation}
                         </Text>
                       ) : null}
                       {p.englishEquivalent ? (
@@ -3276,7 +3269,7 @@ export default function LanguageCourseTool({
                       </Text>
                       {(p.meaning || p.explanation) ? (
                         <Text style={{ fontSize: 12, color: colors.textMuted }}>
-                          💡 {p.meaning || p.explanation}
+                          {p.meaning || p.explanation}
                         </Text>
                       ) : null}
                     </View>
@@ -3466,7 +3459,7 @@ export default function LanguageCourseTool({
                         Literal: {item.literalTranslation}
                       </Text>
                       <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
-                        💡 {item.meaning}
+                        {item.meaning}
                       </Text>
                       {item.englishEquivalent ? (
                         <Text style={{ fontSize: 11.5, color: langColor, marginTop: 2 }}>

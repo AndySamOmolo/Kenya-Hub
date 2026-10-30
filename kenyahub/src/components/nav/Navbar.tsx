@@ -12,6 +12,12 @@ export default function Navbar() {
   const [toolsOpen, setToolsOpen] = useState(false);
   const { theme, toggle } = useTheme();
 
+  const notifyCategorySelect = (catId: string) => {
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("kh-select-category", { detail: catId }));
+    }
+  };
+
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -79,9 +85,13 @@ export default function Navbar() {
                           <div key={cat.id}>
                             <Link
                               href={`/tools/?category=${cat.id}`}
+                              onClick={() => {
+                                setToolsOpen(false);
+                                notifyCategorySelect(cat.id);
+                              }}
                               className="flex items-center gap-1.5 text-[0.8125rem] font-semibold text-text-primary hover:text-gold transition-colors mb-1.5"
                             >
-                              <span className="text-base"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
+                              <span className="text-gold"><DynamicIcon emoji={cat.icon} className="w-4 h-4 inline-block mb-[0.1em]" /></span>
                               {cat.name}
                             </Link>
                             <div className="space-y-0.5 pl-6">
@@ -89,6 +99,7 @@ export default function Navbar() {
                                 <Link
                                   key={tool.slug}
                                   href={`/tools/${tool.slug}/`}
+                                  onClick={() => setToolsOpen(false)}
                                   className="block text-xs text-text-muted hover:text-text-secondary transition-colors py-0.5"
                                 >
                                   {tool.shortTitle}
@@ -103,6 +114,10 @@ export default function Navbar() {
                     <div className="mt-5 pt-4 border-t border-border flex items-center justify-between">
                       <Link
                         href="/tools/"
+                        onClick={() => {
+                          setToolsOpen(false);
+                          notifyCategorySelect("all");
+                        }}
                         className="text-sm font-semibold text-gold hover:text-gold-light transition-colors flex items-center gap-1.5"
                       >
                         Browse All {TOOLS.length} Tools
@@ -149,6 +164,7 @@ export default function Navbar() {
 
               <Link
                 href="/tools/"
+                onClick={() => notifyCategorySelect("all")}
                 className="px-3.5 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
               >
                 All Tools
@@ -231,7 +247,14 @@ export default function Navbar() {
               <Link href="/contact/" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-7 flex items-center justify-center shrink-0"><Mail className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Contact
               </Link>
-              <Link href="/tools/" className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+              <Link
+                href="/tools/"
+                className="group flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors"
+                onClick={() => {
+                  setMobileOpen(false);
+                  notifyCategorySelect("all");
+                }}
+              >
                 <span className="w-7 flex items-center justify-center shrink-0"><Wrench className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> All Tools
               </Link>
 
@@ -245,9 +268,14 @@ export default function Navbar() {
                   key={cat.id}
                   href={`/tools/?category=${cat.id}`}
                   className="group flex items-center gap-2.5 px-3 py-2 text-sm text-text-secondary hover:text-text-primary rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={() => {
+                    setMobileOpen(false);
+                    notifyCategorySelect(cat.id);
+                  }}
                 >
-                  <span className="w-7 flex items-center justify-center shrink-0 text-base"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /></span>
+                  <span className="w-7 flex items-center justify-center shrink-0">
+                    <DynamicIcon emoji={cat.icon} className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" />
+                  </span>
                   {cat.name}
                 </Link>
               ))}
