@@ -170,10 +170,7 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
     "id": "kikuyu-mcgregor-1905-barlow-1914-dahl",
     "title": "Dahl's Law (K→G Dissimilation), Hinde (1904) Aspect Suffixes & Locative Classes (McGregor 1905 & Barlow 1914)",
     "summary": "Rev. A. W. McGregor (1905), A. R. Barlow (1914), and H. Hinde (1904) document Gĩkũyũ velar dissimilation (k → g before voiceless consonants), aspect suffixes (-ĩte perfect, -ire past), and spatial demonstratives.",
-    "content": "1. **Dahl's Law in Gĩkũyũ Prefixes (McGregor 1905 & Barlow 1914)**:
-   - The prefixes *ka-* (Class 12), *kĩ-* (Class 7), and *kũ-* (Class 15/17) voice to **ga-**, **gĩ-**, and **gũ-** when the next syllable begins with a voiceless consonant (*k, t, th, c*): *gĩ-thaka* (bushland), *gũ-tindĩka* (to push), *gũ-tinia* (to cut), *ga-kĩrĩma* (small hill), vs. *kĩ-rĩma* (mountain), *kũ-menya* (to know), *kũ-nyua* (to drink).
-2. **Completive vs. Preterite Suffixes (Hinde 1904, pp. xiii–xiv)**:
-   - Present Perfect uses **-ĩte / -ete** (*nĩ-ndĩ-tind-ĩte* 'I have conquered/stayed'), whereas Past Perfect/Preterite uses **-ire / -ere** (*nĩ-ndĩ-tind-ire*).Locatives distinguish *haha/gũkũ* (here) from *harĩa/kũrĩa* (yonder).",
+    "content": "1. **Dahl's Law in Gĩkũyũ Prefixes (McGregor 1905 & Barlow 1914)**:\n   - The prefixes *ka-* (Class 12), *kĩ-* (Class 7), and *kũ-* (Class 15/17) voice to **ga-**, **gĩ-**, and **gũ-** when the next syllable begins with a voiceless consonant (*k, t, th, c*): *gĩ-thaka* (bushland), *gũ-tindĩka* (to push), *gũ-tinia* (to cut), *ga-kĩrĩma* (small hill), vs. *kĩ-rĩma* (mountain), *kũ-menya* (to know), *kũ-nyua* (to drink).\n2. **Completive vs. Preterite Suffixes (Hinde 1904, pp. xiii–xiv)**:\n   - Present Perfect uses **-ĩte / -ete** (*nĩ-ndĩ-tind-ĩte* 'I have conquered/stayed'), whereas Past Perfect/Preterite uses **-ire / -ere** (*nĩ-ndĩ-tind-ire*).Locatives distinguish *haha/gũkũ* (here) from *harĩa/kũrĩa* (yonder).",
     "examples": [
       {
         "kikuyu": "gĩ-thaka, gũ-tinia, gũ-tindĩka vs. kĩ-rĩma, kũ-menya",

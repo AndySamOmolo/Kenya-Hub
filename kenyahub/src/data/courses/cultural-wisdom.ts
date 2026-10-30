@@ -6061,10 +6061,7 @@ export const SWAHILI_GRAMMAR_SECTIONS: SwahiliGrammarSection[] = [
     "id": "swahili-stigand-1915-wiktionary-tam",
     "title": "Kenyan Coastal Dialect Consonants (Stigand 1915) & Relative/Conditional TAM Paradigms (Wiktionary)",
     "summary": "Capt. C. H. Stigand (1915) and Sir Harry Johnston (1919) document systematic sound correspondences across Mombasa (Kimvita), Lamu (Kiamu), Pate, and Bajuni (Kitikuu), alongside tensed and tenseless relative verb constructions.",
-    "content": "1. **Coastal Dialect Sound Correspondences (Stigand 1915 & Johnston 1919 #21–21e)**:
-   - Standard Kiunguja *ch / sh* corresponds to dental *t* in Kiamu/Kipate and *c / ts* in Kitikuu/Kimvita: *mshale → mtale / mcale* (arrow), *shoka → toka / coka* (axe), *mchwa → mtswa / mtwa* (termite), *nyuki → nduki* (bee in Kitikuu).
-2. **Relative & Conditional TAM Markers (Wiktionary Appendix:Swahili verbs)**:
-   - Tensed relatives attach the *-o* of reference (*-ye-, -o-, -cho-, -vyo-, -po-*) after *-li-* (past), *-na-* (present), or *-taka-* (future); the general tenseless relative suffixes *-o* to the verb stem, and the negative relative inserts *-si-* + *-o* (*asiyesoma* 'he who does not read').",
+    "content": "1. **Coastal Dialect Sound Correspondences (Stigand 1915 & Johnston 1919 #21–21e)**:\n   - Standard Kiunguja *ch / sh* corresponds to dental *t* in Kiamu/Kipate and *c / ts* in Kitikuu/Kimvita: *mshale → mtale / mcale* (arrow), *shoka → toka / coka* (axe), *mchwa → mtswa / mtwa* (termite), *nyuki → nduki* (bee in Kitikuu).\n2. **Relative & Conditional TAM Markers (Wiktionary Appendix:Swahili verbs)**:\n   - Tensed relatives attach the *-o* of reference (*-ye-, -o-, -cho-, -vyo-, -po-*) after *-li-* (past), *-na-* (present), or *-taka-* (future); the general tenseless relative suffixes *-o* to the verb stem, and the negative relative inserts *-si-* + *-o* (*asiyesoma* 'he who does not read').",
     "examples": [
       {
         "swahili": "mshale (Kiunguja) • mtale (Kiamu) • mcale (Kitikuu)",
@@ -8717,10 +8714,7 @@ export const KALENJIN_GRAMMAR_SECTIONS: KalenjinGrammarSection[] = [
     "id": "kalenjin-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Kalenjin)",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Kalenjin.",
-    "content": "1. **Archival & Open-Dataset Integration for Kalenjin**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Kalenjin**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "kalenjin": "oloitigo (oloitiget), pl • neñgwañg, pl",
@@ -11535,10 +11529,7 @@ export const MIJIKENDA_GRAMMAR_SECTIONS: MijikendaGrammarSection[] = [
     "id": "mijikenda-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Mijikenda (Giriama))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Mijikenda (Giriama).",
-    "content": "1. **Archival & Open-Dataset Integration for Mijikenda (Giriama)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Mijikenda (Giriama)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "mijikenda": "as interjection, Be! • imbi",
@@ -13874,10 +13865,7 @@ export const MERU_GRAMMAR_SECTIONS: MeruGrammarSection[] = [
     "id": "meru-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Meru (Kĩmĩĩrũ))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Meru (Kĩmĩĩrũ).",
-    "content": "1. **Archival & Open-Dataset Integration for Meru (Kĩmĩĩrũ)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Meru (Kĩmĩĩrũ)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "meru": "Nyambeene / Jombeni • Angilo",
@@ -16711,10 +16699,7 @@ export const SOMALI_GRAMMAR_SECTIONS: SomaliGrammarSection[] = [
     "id": "somali-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Somali)",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Somali.",
-    "content": "1. **Archival & Open-Dataset Integration for Somali**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Somali**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "somali": "dalol • dalo",
@@ -18994,10 +18979,7 @@ export const EMBU_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "embu-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Embu (Kĩembu))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Embu (Kĩembu).",
-    "content": "1. **Archival & Open-Dataset Integration for Embu (Kĩembu)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Embu (Kĩembu)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "embu": "-īyā • -rūgāmā",
@@ -21768,10 +21750,7 @@ export const TAITA_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "taita-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Taita (Kidawida))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Taita (Kidawida).",
-    "content": "1. **Archival & Open-Dataset Integration for Taita (Kidawida)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Taita (Kidawida)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "taita": "koo • ako",
@@ -24027,10 +24006,7 @@ export const TAVETA_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "taveta-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Taveta (Kitaveta))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Taveta (Kitaveta).",
-    "content": "1. **Archival & Open-Dataset Integration for Taveta (Kitaveta)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Taveta (Kitaveta)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "taveta": "mshana (pl. vashana) • mbazi /ulosi",
@@ -26281,10 +26257,7 @@ export const POKOMO_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "pokomo-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Pokomo (Kipfokomo))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Pokomo (Kipfokomo).",
-    "content": "1. **Archival & Open-Dataset Integration for Pokomo (Kipfokomo)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Pokomo (Kipfokomo)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "pokomo": "kái • kifia",
@@ -29112,10 +29085,7 @@ export const BORANA_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "borana-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Borana (Oromo))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Borana (Oromo).",
-    "content": "1. **Archival & Open-Dataset Integration for Borana (Oromo)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Borana (Oromo)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "borana": "dúlatja • harreisa; harréti",
@@ -31370,10 +31340,7 @@ export const RENDILLE_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "rendille-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Rendille (Afi Ren'dille))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Rendille (Afi Ren'dille).",
-    "content": "1. **Archival & Open-Dataset Integration for Rendille (Afi Ren'dille)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Rendille (Afi Ren'dille)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "rendille": "buur (pl. buurbuur) • yar (nyirakh = young/small)",
@@ -33627,10 +33594,7 @@ export const SAMBURU_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "samburu-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Samburu (Sampur))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Samburu (Sampur).",
-    "content": "1. **Archival & Open-Dataset Integration for Samburu (Sampur)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Samburu (Sampur)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "samburu": "artam • otomoni uni",
@@ -35885,10 +35849,7 @@ export const ILCHAMUS_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "ilchamus-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Ilchamus (Njemps))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Ilchamus (Njemps).",
-    "content": "1. **Archival & Open-Dataset Integration for Ilchamus (Njemps)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Ilchamus (Njemps)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "ilchamus": "artam • otomoni uni",
@@ -38643,10 +38604,7 @@ export const POKOT_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "pokot-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Pokot (Pökoot))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Pokot (Pökoot).",
-    "content": "1. **Archival & Open-Dataset Integration for Pokot (Pökoot)**:
-   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
-2. **Phonetic & Orthographic Normalization**:
-   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Pokot (Pökoot)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "pokot": "che-marmar, pl • karachinin, pl",
