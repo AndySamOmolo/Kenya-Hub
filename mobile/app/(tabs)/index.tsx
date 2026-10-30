@@ -35,7 +35,7 @@ import {
   INITIAL_RANDOM_WORDS,
   TOTAL_DICTIONARY_ENTRIES,
   ALL_DICT_METAS,
-} from "../../src/shared/data/dictionaries/metadata";
+} from "../../src/shared/data/language-sources";
 import holidaysData from "../../src/shared/data/public-holidays.json";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 

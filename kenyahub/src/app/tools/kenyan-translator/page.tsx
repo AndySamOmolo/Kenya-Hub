@@ -19,7 +19,7 @@ import {
   type DictEntry,
   type DictCategory,
   type Dictionary,
-} from "@/data/dictionaries/metadata";
+} from "@/data/language-sources";
 import langData from "@/data/kenya-languages.json";
 import { addContribution } from "@/lib/contributions";
 import { scrollToPageTop, scrollToTopIfScrolled } from "@/lib/scroll";

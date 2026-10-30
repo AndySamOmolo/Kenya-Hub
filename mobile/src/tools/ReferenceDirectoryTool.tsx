@@ -32,7 +32,7 @@ import fertilizerData from "../shared/data/fertilizer-subsidy.json";
 import languagesData from "../shared/data/kenya-languages.json";
 import { useRouter } from "expo-router";
 import { getSourcesForLanguage, normalizeLanguageId } from "../shared/data/language-sources";
-import { hasCourse } from "../shared/data/courses/metadata";
+import { hasCourse } from "../shared/data/language-sources";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];

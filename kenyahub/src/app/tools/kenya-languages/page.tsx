@@ -2,7 +2,7 @@
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import SearchInput from "@/components/ui/SearchInput";
 import { getSourcesForLanguage, LANGUAGE_SOURCES } from "@/data/language-sources";
-import { hasCourse as checkHasCourse } from "@/data/courses/metadata";
+import { hasCourse as checkHasCourse } from "@/data/language-sources";
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";

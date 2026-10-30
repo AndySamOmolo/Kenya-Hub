@@ -40,6 +40,8 @@ const explicitDataFiles = [
   "tool-guides.json",
   "kikuyu-proverbs.json",
   "blog-posts.ts",
+  "courses/metadata.ts",
+  "dictionaries/metadata.ts",
 ];
 for (const df of explicitDataFiles) {
   writeFileSync(resolve(destination, "data", df), readFileSync(resolve(source, "data", df)));

@@ -19,7 +19,7 @@ import {
   TOTAL_DICTIONARY_ENTRIES,
   INITIAL_RANDOM_WORDS,
   DictMeta,
-} from "../shared/data/dictionaries/metadata";
+} from "../shared/data/language-sources";
 
 const CATEGORY_PAGE_SIZE = 40;
 const SEARCH_PAGE_SIZE = 40;
