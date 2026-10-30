@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: {
+    default: "Kenya Guides, Tax & Cultural Heritage Blog | KenyaHub",
+    template: "%s | KenyaHub",
+  },
   description: "Articles and guides on Kenyan topics — tools, government services, education, and more.",
   alternates: {
     canonical: "https://kenyahub.me/blog/",

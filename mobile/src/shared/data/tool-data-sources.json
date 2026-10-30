@@ -11,34 +11,49 @@
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "lastUpdated": "2026-10-21"
     },
-    "kra-car-import-calculator": {
-      "official": true,
-      "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
-      "lastUpdated": "2026-10-21"
-    },
-    "mjengo-construction-calculator": {
-      "official": true,
-      "sourceUrl": "https://nca.go.ke/",
-      "lastUpdated": "2026-10-21"
-    },
     "sacco-chama-calculator": {
       "official": true,
       "sourceUrl": "https://www.sasra.go.ke/",
       "lastUpdated": "2026-10-21"
     },
-    "passport-id-fees": {
+    "helb-calculator": {
       "official": true,
-      "sourceUrl": "https://immigration.go.ke/type-and-fees/",
+      "sourceUrl": "https://www.helb.co.ke/",
       "lastUpdated": "2026-10-20"
     },
-    "driving-license-guide": {
+    "stamp-duty-calculator": {
       "official": true,
-      "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence",
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
       "lastUpdated": "2026-10-20"
     },
-    "nhif-hospital-finder": {
+    "vehicle-insurance-calculator": {
       "official": true,
-      "sourceUrl": "https://provider.sha.go.ke/",
+      "sourceUrl": "https://www.ira.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "cbc-curriculum": {
+      "official": true,
+      "sourceUrl": "https://kicd.ac.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "cbc-grade-age": {
+      "official": true,
+      "sourceUrl": "https://kicd.ac.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kuccps-cluster-calculator": {
+      "official": true,
+      "sourceUrl": "https://students.kuccps.net/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kcse-grade-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.knec.ac.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kcse-school-rankings": {
+      "official": true,
+      "sourceUrl": "https://www.knec.ac.ke/",
       "lastUpdated": "2026-10-20"
     },
     "school-terms": {
@@ -46,14 +61,19 @@
       "sourceUrl": "https://education.go.ke/",
       "lastUpdated": "2026-10-20"
     },
-    "child-growth-schedule": {
+    "kra-car-import-calculator": {
       "official": true,
-      "sourceUrl": "https://guidelines.health.go.ke/",
+      "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
+      "lastUpdated": "2026-10-21"
+    },
+    "number-plate-decoder": {
+      "official": true,
+      "sourceUrl": "https://ntsa.go.ke/",
       "lastUpdated": "2026-10-20"
     },
-    "kplc-token-calculator": {
+    "driving-license-guide": {
       "official": true,
-      "sourceUrl": "https://kplc.co.ke/faq/tariff",
+      "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence",
       "lastUpdated": "2026-10-20"
     },
     "traffic-fines": {
@@ -61,9 +81,144 @@
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "lastUpdated": "2026-10-20"
     },
+    "national-parks-directory": {
+      "official": true,
+      "sourceUrl": "https://www.kws.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "crop-planting-calendar": {
+      "official": true,
+      "sourceUrl": "https://www.kalro.org/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kenya-soil-types": {
+      "official": true,
+      "sourceUrl": "https://www.kalro.org/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kenya-rainfall-patterns": {
+      "official": true,
+      "sourceUrl": "https://meteo.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "fertilizer-subsidy-guide": {
+      "official": true,
+      "sourceUrl": "https://ncpb.co.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "livestock-market-prices": {
+      "official": true,
+      "sourceUrl": "https://www.kilimo.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "agrovet-finder": {
+      "official": true,
+      "sourceUrl": "https://www.pcpb.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "forest-reserves-kenya": {
+      "official": true,
+      "sourceUrl": "https://www.kenyaforestservice.org/",
+      "lastUpdated": "2026-10-20"
+    },
+    "ward-constituency-finder": {
+      "official": true,
+      "sourceUrl": "https://www.iebc.or.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kenya-postal-codes": {
+      "official": true,
+      "sourceUrl": "https://www.posta.co.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "mobile-number-prefix": {
+      "official": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "learn": {
+      "official": false,
+      "sourceUrl": "https://archive.org/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kenyan-translator": {
+      "official": false,
+      "sourceUrl": "https://cldr.unicode.org/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kenya-languages": {
+      "official": true,
+      "sourceUrl": "https://www.knbs.or.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "mjengo-construction-calculator": {
+      "official": true,
+      "sourceUrl": "https://nca.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "trademark-cost-kenya": {
+      "official": true,
+      "sourceUrl": "https://www.kipi.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "real-estate-agent-checker": {
+      "official": true,
+      "sourceUrl": "https://earb.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "professional-bodies-kenya": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-10-20"
+    },
+    "economic-calendar": {
+      "official": true,
+      "sourceUrl": "https://www.centralbank.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
     "public-holidays": {
       "official": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-10-20"
+    },
+    "passport-id-fees": {
+      "official": true,
+      "sourceUrl": "https://immigration.go.ke/type-and-fees/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kenya-customs-restricted-items": {
+      "official": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "nhif-hospital-finder": {
+      "official": true,
+      "sourceUrl": "https://provider.sha.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "child-growth-schedule": {
+      "official": true,
+      "sourceUrl": "https://guidelines.health.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kenyan-food-nutrition": {
+      "official": true,
+      "sourceUrl": "https://www.kemri.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "kplc-token-calculator": {
+      "official": true,
+      "sourceUrl": "https://kplc.co.ke/faq/tariff",
+      "lastUpdated": "2026-10-20"
+    },
+    "water-bill-calculator": {
+      "official": true,
+      "sourceUrl": "https://wasreb.go.ke/",
+      "lastUpdated": "2026-10-20"
+    },
+    "solar-roi-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.epra.go.ke/",
       "lastUpdated": "2026-10-20"
     }
   }

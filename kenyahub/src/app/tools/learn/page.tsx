@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
-  Globe2,
   Users,
   BookOpen,
   Flame,
@@ -15,7 +14,6 @@ import {
   Zap,
   Layers,
   ChevronDown,
-  ScrollText,
 } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import ProverbsView from "@/components/learn/ProverbsView";
@@ -76,12 +74,12 @@ export default function LearnPage() {
             Kenyan Languages, Proverbs &amp; Oral Wisdom Hub
           </h2>
           <p className="mx-auto mt-1.5 sm:mt-2 max-w-lg text-xs sm:text-sm text-text-secondary">
-            Master Kenyan indigenous languages with step-by-step guided skill trees (plus a 1-click option to unlock all modules at once), grammar guides, and over 1,600 authentic Gĩkũyũ and Dholuo proverbs and riddles.
+            Master {readyLangs.length} Kenyan indigenous languages with step-by-step guided skill trees (plus a 1-click option to unlock all modules at once), reference grammar guides, and authentic proverbs, riddles, and oral wisdom.
           </p>
 
           {/* Compact stats line */}
           <p className="mt-2 sm:mt-3 text-xs font-medium text-gold">
-            {readyLangs.length} Courses · {totalModulesCount} Modules · 1,600+ Proverbs &amp; Riddles
+            {readyLangs.length} Courses · {totalModulesCount} Modules · 34 Historical Linguistic Sources (1842–1929)
           </p>
         </div>
 
@@ -142,7 +140,7 @@ export default function LearnPage() {
                       style={{ backgroundColor: lang.color }}
                     />
 
-                    <Link href={`/tools/learn/${lang.id}`} className="block">
+                    <Link href={`/tools/learn/${lang.id}/`} className="block">
                       <div className="flex items-center gap-3 sm:gap-4">
                         <div className="flex-1 min-w-0">
                           <h4 className="text-sm sm:text-base font-bold text-text-primary group-hover:text-gold transition-colors break-words">
@@ -201,7 +199,7 @@ export default function LearnPage() {
                             unit.skills.map((skill) => (
                               <Link
                                 key={skill.id}
-                                href={`/tools/learn/${lang.id}#unit-block-${unit.id}`}
+                                href={`/tools/learn/${lang.id}/#unit-block-${unit.id}`}
                                 className="inline-flex items-center gap-1 rounded-lg border border-border bg-bg-elevated/70 px-2 py-1 text-[0.65rem] text-text-secondary hover:border-gold hover:text-gold transition-colors"
                               >
                                 <DynamicIcon emoji={skill.icon} className="w-3 h-3" />
@@ -219,33 +217,31 @@ export default function LearnPage() {
 
             {/* Coming Soon */}
             {comingLangs.length > 0 && (
-              <>
-                <h3 className="mb-2.5 sm:mb-3 mt-5 sm:mt-8 flex items-center gap-2 text-sm font-bold text-text-primary">
-                  <Globe2 className="h-4 w-4 text-text-muted" /> Coming Soon
+              <div className="mt-8">
+                <h3 className="mb-3 text-sm font-bold text-text-secondary">
+                  Coming Soon ({comingLangs.length})
                 </h3>
-                <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-3 sm:grid-cols-3">
                   {comingLangs.map((lang) => (
                     <div
                       key={lang.id}
-                      className="rounded-xl border border-border/50 bg-bg-card/60 p-3.5 sm:p-4 opacity-70"
+                      className="rounded-xl border border-border bg-bg-card/50 p-4 opacity-60"
                     >
-                      <div className="flex items-center gap-3">
-                        <div className="flex-1 min-w-0">
-                          <h4 className="text-sm font-bold text-text-primary">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-2xl"><DynamicIcon emoji={lang.flag} className="w-6 h-6" /></span>
+                        <div>
+                          <div className="text-xs font-bold text-text-primary">
                             {lang.name}
-                          </h4>
-                          <p className="text-[0.65rem] text-text-muted mt-0.5">
-                            {lang.speakers} speakers • {lang.family}
-                          </p>
+                          </div>
+                          <div className="text-[0.6rem] text-text-muted">
+                            {lang.nativeName} · {lang.speakers}
+                          </div>
                         </div>
-                        <span className="rounded-full border border-border px-2 py-0.5 text-[0.55rem] font-semibold text-text-muted">
-                          Soon
-                        </span>
                       </div>
                     </div>
                   ))}
                 </div>
-              </>
+              </div>
             )}
           </>
         )}

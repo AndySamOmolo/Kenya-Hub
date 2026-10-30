@@ -1,6 +1,7 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
+import SearchInput from "@/components/ui/SearchInput";
 import { useState, useMemo, useEffect } from "react";
 import { Search, Shuffle, Eye, EyeOff, BookOpen, Compass } from "lucide-react";
 import kikuyuProverbsData from "@/data/kikuyu-proverbs.json";
@@ -299,7 +300,7 @@ export default function ProverbsView({
           </h2>
           <p className="text-xs text-[var(--text-secondary)] mt-0.5">
             {activeLang === "kikuyu"
-              ? `${KIKUYU_PROVERBS.length} public-domain Gĩkũyũ proverbs loaded (Barra 1939/KLB copyrighted entries removed; ready for public-domain additions).`
+              ? `${KIKUYU_PROVERBS.length} authentic Gĩkũyũ proverbs (Thimo cia Gĩkũyũ) with literal translations, cultural explanations, and English equivalents.`
               : activeLang === "luo"
               ? `${luoProverbs.length} Dholuo proverbs, ${luoRiddles.length} interactive riddles, and ${luoTongueTwisters.length} tongue twisters.`
               : `Authentic ${langDisplayName} (${langNativeName}) proverbs, moral sayings, and cultural traditions.`}
@@ -308,19 +309,19 @@ export default function ProverbsView({
 
         {/* Search + Random + Reset */}
         <div className="flex flex-col sm:flex-row gap-2">
-          <div className="relative flex-1">
-            <Search className="w-4 h-4 text-[var(--text-muted)] absolute left-3.5 top-1/2 -translate-y-1/2" />
-            <input
-              type="text"
-              value={search}
-              onChange={(e) => {
-                setSearch(e.target.value);
-                setPage(1);
-              }}
-              placeholder={`Search ${langDisplayName} proverb, meaning, or theme...`}
-              className="w-full pl-10 pr-4 py-2 rounded-xl bg-[var(--bg-elevated)] border border-[var(--border)] text-xs sm:text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--gold)]"
-            />
-          </div>
+          <SearchInput
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setPage(1);
+            }}
+            onClear={() => {
+              setSearch("");
+              setPage(1);
+            }}
+            placeholder={`Search ${langDisplayName} proverb, meaning, or theme...`}
+            className="flex-1 text-sm"
+          />
 
           <div className="flex items-center gap-2">
             <button

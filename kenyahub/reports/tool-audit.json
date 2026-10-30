@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T00:29:38.818Z",
+  "generatedAt": "2026-10-30T07:14:19.702Z",
   "summary": {
     "registryTools": 44,
     "routeDirectories": 44,
@@ -14,7 +14,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/paye-bands.json",
@@ -29,7 +29,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/mpesa-tariffs.json",
@@ -44,7 +44,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.sasra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 25,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/sacco-chama-rates.json",
@@ -57,9 +57,9 @@
     {
       "slug": "helb-calculator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.helb.co.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/helb-rates.json",
@@ -72,9 +72,9 @@
     {
       "slug": "stamp-duty-calculator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/stamp-duty-rates.json",
@@ -87,9 +87,9 @@
     {
       "slug": "vehicle-insurance-calculator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.ira.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/vehicle-insurance-rates.json",
@@ -102,9 +102,9 @@
     {
       "slug": "cbc-curriculum",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://kicd.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -117,9 +117,9 @@
     {
       "slug": "cbc-grade-age",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://kicd.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -132,9 +132,9 @@
     {
       "slug": "kuccps-cluster-calculator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://students.kuccps.net/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/kuccps-clusters.json",
@@ -147,7 +147,7 @@
     {
       "slug": "kcse-grade-calculator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.knec.ac.ke/",
       "maxAgeDays": 365,
       "ageDays": null,
       "data": [],
@@ -156,9 +156,9 @@
     {
       "slug": "kcse-school-rankings",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.knec.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/kcse-rankings.json",
@@ -173,7 +173,7 @@
       "routeExists": true,
       "sourceUrl": "https://education.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/school-terms.json",
@@ -188,7 +188,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
       "maxAgeDays": 365,
-      "ageDays": 25,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/kra-car-import-crsp.json",
@@ -201,9 +201,9 @@
     {
       "slug": "number-plate-decoder",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/number-plate-prefixes.json",
@@ -218,7 +218,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/driving-license-guide.json",
@@ -233,7 +233,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/traffic-fines.json",
@@ -246,9 +246,9 @@
     {
       "slug": "national-parks-directory",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kws.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/national-parks.json",
@@ -261,9 +261,9 @@
     {
       "slug": "crop-planting-calendar",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kalro.org/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/crop-planting-calendar.json",
@@ -276,9 +276,9 @@
     {
       "slug": "kenya-soil-types",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kalro.org/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/soil-types.json",
@@ -291,9 +291,9 @@
     {
       "slug": "kenya-rainfall-patterns",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://meteo.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/rainfall-patterns.json",
@@ -306,9 +306,9 @@
     {
       "slug": "fertilizer-subsidy-guide",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://ncpb.co.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/fertilizer-subsidy.json",
@@ -321,14 +321,14 @@
     {
       "slug": "livestock-market-prices",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kilimo.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/livestock-prices.json",
           "lastUpdated": "2026-10-20",
-          "source": "National Agriculture and Livestock Markets Commission (NALMC) 2026 Market Reports"
+          "source": "National Livestock Marketing Information System (NLMIS) & NALMC Market Reports"
         }
       ],
       "status": "ok"
@@ -336,9 +336,9 @@
     {
       "slug": "agrovet-finder",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.pcpb.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/agrovets.json",
@@ -351,9 +351,9 @@
     {
       "slug": "forest-reserves-kenya",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kenyaforestservice.org/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/forest-reserves.json",
@@ -366,9 +366,9 @@
     {
       "slug": "ward-constituency-finder",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.iebc.or.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/counties.json",
@@ -381,9 +381,9 @@
     {
       "slug": "kenya-postal-codes",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.posta.co.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/postal-codes.json",
@@ -396,9 +396,9 @@
     {
       "slug": "mobile-number-prefix",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/mobile-prefixes.json",
@@ -411,7 +411,7 @@
     {
       "slug": "learn",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://archive.org/",
       "maxAgeDays": 365,
       "ageDays": null,
       "data": [],
@@ -420,19 +420,19 @@
     {
       "slug": "kenyan-translator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://cldr.unicode.org/",
       "maxAgeDays": 365,
-      "ageDays": 1,
+      "ageDays": 0,
       "data": [
         {
           "file": "src/data/dictionaries/swahili.json",
-          "lastUpdated": "2026-10-25",
-          "source": "Public Domain Historical Lexicons (Krapf 1850/1882, Steere 1870/1894, Taylor 1891, Madan 1903/1917, Hinde 1904, Burt 1910 & Johnston 1919); Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages"
+          "lastUpdated": "2026-10-30",
+          "source": "Public Domain Historical Lexicons (Krapf 1850/1882, Steere 1870/1894, Taylor 1891, Madan 1903/1917, Hinde 1904, Burt 1910 & Johnston 1919)"
         },
         {
           "file": "src/data/dictionaries/kikuyu.json",
           "lastUpdated": "2026-10-25",
-          "source": "Public Domain Historical Lexicons (Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910 & Hobley 1910/1922); Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II; Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages; W. Scoresby & Katherine Routledge (1910) With a Prehistoric People: The Akikuyu of British East Africa"
+          "source": "Public Domain Historical Lexicons (Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910 & Hobley 1910/1922)"
         },
         {
           "file": "src/data/dictionaries/luo.json",
@@ -442,7 +442,7 @@
         {
           "file": "src/data/dictionaries/kalenjin.json",
           "lastUpdated": "2026-10-25",
-          "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, 1910, Johnston 1902, Hollis 1909 & Dundas 1910); Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II"
+          "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, 1910, Johnston 1902, Hollis 1909 & Dundas 1910)"
         },
         {
           "file": "src/data/dictionaries/luhya.json",
@@ -451,13 +451,13 @@
         },
         {
           "file": "src/data/dictionaries/kamba.json",
-          "lastUpdated": "2026-10-25",
+          "lastUpdated": "2026-10-30",
           "source": "Public Domain Historical Lexicons (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Johnston 1919 & Lindblom 1920); Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages"
         },
         {
           "file": "src/data/dictionaries/meru.json",
           "lastUpdated": "2026-10-25",
-          "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & CLDR mer.xml)"
+          "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & Unicode CLDR mer.xml)"
         },
         {
           "file": "src/data/dictionaries/maasai.json",
@@ -472,7 +472,7 @@
         {
           "file": "src/data/dictionaries/somali.json",
           "lastUpdated": "2026-10-25",
-          "source": "Public Domain Historical Lexicons (de Larajasse 1897, Johnston 1902 & Kirk 1905); Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II"
+          "source": "Public Domain Historical Lexicons (de Larajasse 1897, Johnston 1902 & Kirk 1905)"
         },
         {
           "file": "src/data/dictionaries/turkana.json",
@@ -481,8 +481,8 @@
         },
         {
           "file": "src/data/dictionaries/mijikenda.json",
-          "lastUpdated": "2026-10-25",
-          "source": "Public Domain Historical Lexicons (Krapf 1850, Krapf & Rebmann 1887, W. E. Taylor 1891 & Johnston 1919); Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (ed. Rev. T. H. Sparshott, SPCK, London, 1887)"
+          "lastUpdated": "2026-10-30",
+          "source": "Public Domain Historical Lexicons (Krapf 1850, Krapf & Rebmann 1887, W. E. Taylor 1891 & Johnston 1919)"
         },
         {
           "file": "src/data/dictionaries/teso.json",
@@ -506,33 +506,33 @@
         },
         {
           "file": "src/data/dictionaries/borana.json",
-          "lastUpdated": "2026-10-25",
+          "lastUpdated": "2026-10-30",
           "source": "Public Domain Historical Lexicons (Krapf 1842, 1850 & Tutschek 1844–1845)"
         },
         {
           "file": "src/data/dictionaries/rendille.json",
           "lastUpdated": "2026-10-25",
-          "source": null
+          "source": "Public Domain Historical Lexicons (Hobley 1910, Fleming 1964 & Heine 1976)"
         },
         {
           "file": "src/data/dictionaries/pokomo.json",
-          "lastUpdated": "2026-10-25",
-          "source": null
+          "lastUpdated": "2026-10-30",
+          "source": "Public Domain Historical Lexicons (Krapf 1850, Würtz 1895 & Johnston 1919)"
         },
         {
           "file": "src/data/dictionaries/ilchamus.json",
           "lastUpdated": "2026-10-25",
-          "source": null
+          "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Vossen 1982)"
         },
         {
           "file": "src/data/dictionaries/pokot.json",
           "lastUpdated": "2026-10-25",
-          "source": "; Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II"
+          "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)"
         },
         {
           "file": "src/data/dictionaries/taveta.json",
           "lastUpdated": "2026-10-25",
-          "source": null
+          "source": "Public Domain Historical Lexicons (Steggall 1892–1906, Hollis 1910–1911 & Johnston 1919)"
         },
         {
           "file": "src/data/kenya-languages.json",
@@ -545,19 +545,19 @@
     {
       "slug": "kenya-languages",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.knbs.or.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
-        {
-          "file": "src/data/kenya-languages.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
-        },
         {
           "file": "src/data/language-sources",
           "lastUpdated": null,
           "source": null
+        },
+        {
+          "file": "src/data/kenya-languages.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
         }
       ],
       "status": "ok"
@@ -567,7 +567,7 @@
       "routeExists": true,
       "sourceUrl": "https://nca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 25,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/mjengo-construction-rates.json",
@@ -580,14 +580,14 @@
     {
       "slug": "trademark-cost-kenya",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kipi.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/trademark-fees.json",
           "lastUpdated": "2026-10-20",
-          "source": "Kenya Industrial Property Institute (KIPI — Industrial Property Act)"
+          "source": "Kenya Industrial Property Institute (KIPI — Industrial Property Act) & Kenya Copyright Board (KECOBO)"
         }
       ],
       "status": "ok"
@@ -595,9 +595,9 @@
     {
       "slug": "real-estate-agent-checker",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://earb.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/real-estate-agents.json",
@@ -610,9 +610,9 @@
     {
       "slug": "professional-bodies-kenya",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/professional-bodies.json",
@@ -625,9 +625,9 @@
     {
       "slug": "economic-calendar",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.centralbank.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/economic-calendar.json",
@@ -642,7 +642,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/public-holidays.json",
@@ -657,7 +657,7 @@
       "routeExists": true,
       "sourceUrl": "https://immigration.go.ke/type-and-fees/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/passport-id-fees.json",
@@ -670,9 +670,9 @@
     {
       "slug": "kenya-customs-restricted-items",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/customs-restricted-items.json",
@@ -687,7 +687,7 @@
       "routeExists": true,
       "sourceUrl": "https://provider.sha.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/nhif-hospitals.json",
@@ -702,7 +702,7 @@
       "routeExists": true,
       "sourceUrl": "https://guidelines.health.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/vaccination-schedule.json",
@@ -715,9 +715,9 @@
     {
       "slug": "kenyan-food-nutrition",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.kemri.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/kenyan-foods-nutrition.json",
@@ -732,7 +732,7 @@
       "routeExists": true,
       "sourceUrl": "https://kplc.co.ke/faq/tariff",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/kplc-tariff.json",
@@ -745,9 +745,9 @@
     {
       "slug": "water-bill-calculator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://wasreb.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/water-tariffs.json",
@@ -760,9 +760,9 @@
     {
       "slug": "solar-roi-calculator",
       "routeExists": true,
-      "sourceUrl": null,
+      "sourceUrl": "https://www.epra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 6,
+      "ageDays": 10,
       "data": [
         {
           "file": "src/data/solar-irradiance.json",

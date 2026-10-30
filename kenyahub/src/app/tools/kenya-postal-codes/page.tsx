@@ -5,6 +5,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import postalData from "@/data/postal-codes.json";
 import CustomSelect from "@/components/ui/CustomSelect";
+import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "kenya-postal-codes")!;
 
@@ -69,13 +70,13 @@ export default function KenyaPostalCodesPage() {
             <label className="block text-sm font-medium text-text-secondary mb-2" htmlFor="search-input">
               Search Town or Code
             </label>
-            <input
+            <SearchInput
               id="search-input"
-              type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              onClear={() => setSearchQuery("")}
               placeholder="e.g. 'Westlands' or '00100'"
-              className="input-field"
+              className="input-field text-sm"
             />
           </div>
           <div>

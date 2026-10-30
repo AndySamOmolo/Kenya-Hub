@@ -118,7 +118,7 @@ export default function AboutPage() {
           While KenyaHub makes every effort to maintain absolute precision by cross-referencing published Gazette Notices and official publications, calculations provided on this site are for informational and educational purposes only. They do not constitute formal legal, tax, accounting, or professional financial advice. For official tax returns or legal compliance, consult a certified public accountant (CPA) or advocate of the High Court of Kenya.
         </p>
         <div className="pt-2 flex items-center gap-4 text-xs">
-          <Link href="/contact" className="font-semibold text-gold hover:underline">Have a suggestion or correction? Contact Us →</Link>
+          <Link href="/contact/" className="font-semibold text-gold hover:underline">Have a suggestion or correction? Contact Us →</Link>
         </div>
       </div>
     </div>

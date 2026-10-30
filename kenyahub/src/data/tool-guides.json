@@ -355,7 +355,7 @@
     },
     "kenya-languages": {
       "slug": "kenya-languages",
-      "notesTitle": "How to Use & Statutory Methodology",
+      "notesTitle": "How to Use & Demographic Methodology",
       "notes": [
         "Explore all major indigenous and official languages spoken across Kenya, categorized by linguistic family (Bantu, Nilotic, Cushitic, and Official/Sign languages).",
         "Filter by language family or search by county distribution to inspect speaker demographics, native autonyms, and linked primary historical linguistic sources.",
@@ -490,7 +490,7 @@
     },
     "kenyan-translator": {
       "slug": "kenyan-translator",
-      "notesTitle": "How to Use & Statutory Methodology",
+      "notesTitle": "How to Use & Lexical Methodology",
       "notes": [
         "Select any source and target language across 22 Kenyan languages (Swahili, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Kisii, Meru, Maasai, Somali, Turkana, Mijikenda, Ateso, Embu, Taita, Samburu, Borana, Rendille, Pokomo, Ilchamus, Pokot, and Taveta) plus English.",
         "Search words or phrases, browse by semantic category (Greetings, Numbers, Family, Food, Nature, Verbs, Proverbs), or compare translations side-by-side across all 22 languages.",
@@ -499,7 +499,7 @@
       "faq": [
         {
           "question": "What languages does this translator support?",
-          "answer": "Currently 12 Kenyan languages with seed vocabularies: Swahili, Kikuyu, Dholuo (Luo), Kalenjin, Luhya (Bukusu), Kamba, Meru, Maasai, Kisii, Somali, Turkana, and Mijikenda (Giriama). More languages and vocabulary are being added continuously."
+          "answer": "The translator supports 22 Kenyan languages alongside English: Swahili, Kikuyu (Gĩkũyũ), Dholuo (Luo), Kalenjin, Luhya, Kamba, Meru, Maasai, Kisii (Ekegusii), Somali, Turkana, Mijikenda (Giriama), Ateso (Teso), Embu, Taita, Samburu, Borana (Oromo), Rendille, Pokomo, Ilchamus, Pokot, and Taveta."
         },
         {
           "question": "Is this a machine translation tool?",
@@ -510,8 +510,8 @@
           "answer": "Yes! We're actively looking for native speakers to help expand the dictionaries. Use the 'Contribute' button on any language card to submit corrections or new vocabulary. All contributions are credited."
         },
         {
-          "question": "Why don't some languages have dictionaries yet?",
-          "answer": "We're building this project incrementally. Languages like Embu, Taita, Pokomo, Samburu, and others are planned. If you speak one of these languages, please reach out to help us build the dictionary!"
+          "question": "How can I translate directly between two Kenyan languages (e.g., Kikuyu to Dholuo)?",
+          "answer": "Select any Kenyan language as the Source Language and another Kenyan language (or All 22 Languages) as the Target Language. The tool automatically bridges the translation through verified English glosses so you can compare cognates and equivalents across Bantu, Nilotic, and Cushitic families."
         },
         {
           "question": "How accurate are the pronunciations?",
@@ -545,8 +545,8 @@
           "answer": "Each unit includes: Rural Electrification Levy (KES 0.12), REP Fund Levy (KES 0.03), EPRA Levy (KES 0.10), WARMA Levy (KES 0.03), Fuel Cost Charge (~KES 3.87), and Forex Adjustment (~KES 0.67). Plus 16% VAT on everything."
         },
         {
-          "question": "Why do I get fewer units than expected?",
-          "answer": "Three main reasons: (1) the KES 150 fixed charge is deducted from early purchases each month, (2) multiple levies and surcharges are added per unit, and (3) 16% VAT applies on top of everything. The effective cost per unit is much higher than the base tariff rate."
+          "question": "Why do I get fewer units than the base tariff rate suggests?",
+          "answer": "Three main reasons: (1) once your cumulative monthly consumption crosses 30 kWh (Lifeline DC1) or 100 kWh (Domestic Ordinary DC2), your tariff steps up to a higher per-unit energy rate, (2) EPRA pass-through surcharges (Fuel Energy Cost Charge, Forex Adjustment, Inflation Adjustment, WARMA, EPRA, and 5% REP levy) are added to every unit, and (3) 16% VAT is charged on the taxable components."
         }
       ]
     },
@@ -583,7 +583,7 @@
     },
     "learn": {
       "slug": "learn",
-      "notesTitle": "How to Use & Statutory Methodology",
+      "notesTitle": "How to Use & Linguistic Methodology",
       "notes": [
         "Choose any of 22 indigenous Kenyan language courses—spanning Bantu, Nilotic, and Cushitic language families—to practice structured units, interactive vocabulary drills, grammar lessons, and cultural proverbs.",
         "Each course combines spaced-repetition exercises (multiple choice, sentence building, pair matching, and translation) with comprehensive reference grammar chapters and authentic historical texts.",
@@ -617,7 +617,7 @@
       "notesTitle": "How to Use & Statutory Methodology",
       "notes": [
         "Filter livestock categories (beef cattle, dairy cows, Dorper/Red Maasai sheep, Galla/Small East African goats, camels, and indigenous poultry) by county market center.",
-        "Compare live-weight price ranges (KES) across major pastoral and terminal markets including Garissa, Isiolo, Kajiado, Dagoretti, Narok, Eldoret, andBomet.",
+        "Compare live-weight price ranges (KES) across major pastoral and terminal markets including Garissa, Isiolo, Kajiado, Dagoretti, Narok, Eldoret, and Bomet.",
         "Market benchmarks reflect State Department for Livestock Development and National Drought Management Authority (NDMA) market surveillance bulletins."
       ],
       "faq": [

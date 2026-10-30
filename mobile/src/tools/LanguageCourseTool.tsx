@@ -406,6 +406,7 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
   // ── Grammar Tab State ──
   const [grammarSearch, setGrammarSearch] = useState('');
   const [expandedGrammarId, setExpandedGrammarId] = useState<string | null>(null);
+  const [showSourcesDropdown, setShowSourcesDropdown] = useState(false);
 
   // ── Proverbs & Oral Wisdom Tab State ──
   const [wisdomLang, setWisdomLang] = useState<'kikuyu' | 'luo'>('kikuyu');
@@ -1683,11 +1684,28 @@ export default function LanguageCourseTool({ onScrollToTop }: { onScrollToTop?: 
           </Text>
 
           {languageSources.length > 0 && (
-            <View style={styles.sourcesRow}>
-              <Feather name="book" size={11} color={colors.textMuted} />
-              <Text style={[styles.sourcesText, { color: colors.textMuted }]} >
-                Built from: {languageSources.map((s) => `${s.title} (${s.published})`).join(' • ')}
-              </Text>
+            <View style={{ marginTop: 8 }}>
+              <Pressable
+                onPress={() => setShowSourcesDropdown((prev) => !prev)}
+                style={[styles.sourcesRow, { justifyContent: 'space-between', paddingVertical: 4 }]}
+              >
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6, flex: 1 }}>
+                  <Feather name="book" size={11} color={colors.gold} />
+                  <Text style={[styles.sourcesText, { color: colors.textSecondary, fontWeight: '600' }]}>
+                    Built from {languageSources.length} historical & linguistic {languageSources.length === 1 ? 'source' : 'sources'}
+                  </Text>
+                </View>
+                <Feather name={showSourcesDropdown ? 'chevron-up' : 'chevron-down'} size={13} color={colors.textMuted} />
+              </Pressable>
+              {showSourcesDropdown && (
+                <View style={{ marginTop: 4, paddingLeft: 8, gap: 3 }}>
+                  {languageSources.map((s) => (
+                    <Text key={s.id} style={[styles.sourcesText, { color: colors.textMuted }]}>
+                      • {s.title} ({s.published})
+                    </Text>
+                  ))}
+                </View>
+              )}
             </View>
           )}
         </View>

@@ -215,7 +215,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        <Link href="/county" className="hover:text-gold transition-colors">47 Counties Hub</Link>
+        <Link href="/county/" className="hover:text-gold transition-colors">47 Counties Hub</Link>
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
@@ -318,7 +318,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="📊" className="w-5 h-5 text-gold" /> FY {(budgetsData as any).fiscalYear || "2025/26"} Budget &amp; Fiscal Performance
             </h2>
-            <Link href="/county" className="text-xs font-semibold text-gold hover:underline">
+            <Link href="/county/" className="text-xs font-semibold text-gold hover:underline">
               Compare All 47 Budgets →
             </Link>
           </div>
@@ -372,7 +372,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🌧️" className="w-5 h-5 text-sky-light" /> Climate, Rainy Seasons &amp; 12-Month Rainfall ({rainfall.annualRainfall} mm/yr)
             </h2>
-            <Link href="/tools/kenya-rainfall-patterns" className="text-xs font-semibold text-gold hover:underline">
+            <Link href="/tools/kenya-rainfall-patterns/" className="text-xs font-semibold text-gold hover:underline">
               National Rainfall Guide →
             </Link>
           </div>
@@ -475,7 +475,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🌱" className="w-5 h-5 text-kenya-green-light" /> Agricultural Soils &amp; Best Crops in {county.name}
             </h2>
-            <Link href="/tools/crop-planting-calendar" className="text-xs font-semibold text-gold hover:underline">
+            <Link href="/tools/crop-planting-calendar/" className="text-xs font-semibold text-gold hover:underline">
               Crop Planting Calendar →
             </Link>
           </div>
@@ -507,7 +507,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🏥" className="w-5 h-5 text-kenya-green-light" /> SHA / SHIF Hospitals ({countyHospitals.length})
             </h2>
-            <Link href="/tools/nhif-hospital-finder" className="text-xs font-semibold text-gold hover:underline">
+            <Link href="/tools/nhif-hospital-finder/" className="text-xs font-semibold text-gold hover:underline">
               All Facilities →
             </Link>
           </div>
@@ -540,7 +540,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="📮" className="w-5 h-5 text-gold" /> Posta Postal Codes ({countyPostalCodes.length})
             </h2>
-            <Link href="/tools/kenya-postal-codes" className="text-xs font-semibold text-gold hover:underline">
+            <Link href="/tools/kenya-postal-codes/" className="text-xs font-semibold text-gold hover:underline">
               All Postal Codes →
             </Link>
           </div>
@@ -576,7 +576,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
               <div className="bg-bg-elevated/50 border border-border/60 rounded-xl p-4 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="font-bold text-gold uppercase tracking-wider">🏆 Top KCSE Schools</span>
-                  <Link href="/tools/kcse-school-rankings" className="text-gold hover:underline">Rankings →</Link>
+                  <Link href="/tools/kcse-school-rankings/" className="text-gold hover:underline">Rankings →</Link>
                 </div>
                 {countySchools.map((s: any) => (
                   <div key={s.name} className="flex justify-between text-text-secondary">
@@ -696,7 +696,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             {otherCounties.map((oc) => (
               <Link
                 key={oc.code}
-                href={`/county/${oc.slug}`}
+                href={`/county/${oc.slug}/`}
                 className="p-3 rounded-xl bg-bg-elevated/60 border border-border/60 hover:border-gold/50 transition-colors"
               >
                 <span className="text-xs font-mono text-gold font-bold">

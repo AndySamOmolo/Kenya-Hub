@@ -1,117 +1,122 @@
 "use client";
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import DynamicIcon from "@/components/ui/DynamicIcon";
+import SearchInput from "@/components/ui/SearchInput";
+import { getSourcesForLanguage, LANGUAGE_SOURCE_CORPUS } from "@/data/language-sources";
+import { COURSE_REGISTRY } from "@/data/courses/registry";
+
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import { ChevronDown, BookOpen } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
-import data from "@/data/kenya-languages.json";
-import SearchInput from "@/components/ui/SearchInput";
-import { getSourcesForLanguage, normalizeLanguageId } from "@/data/language-sources";
-import { COURSE_REGISTRY } from "@/data/courses/registry";
+import langData from "@/data/kenya-languages.json";
 
 const tool = TOOLS.find((t) => t.slug === "kenya-languages")!;
 
+interface Language { name: string; family: string; speakers: number; percentage: number; counties: string[]; status: string; notes: string; }
+interface Family { id: string; name: string; color: string; description: string; percentage: number; }
+
+const data = langData as { families: Family[]; languages: Language[]; notes: string[] };
+
 const faq = [
-  { question: "How many languages are spoken in Kenya?", answer: "Kenya has 42+ recognized ethnic groups speaking 60+ distinct languages and dialects. The two official languages are English and Swahili (Kiswahili). Swahili is also the national language." },
-  { question: "What are the main language families in Kenya?", answer: "Kenya's languages belong to three main families: Bantu (~65% of population — Kikuyu, Luhya, Kamba, Kisii, etc.), Nilotic (~30% — Kalenjin, Luo, Maasai, Turkana), and Cushitic (~3% — Somali, Rendille, Borana)." },
-  { question: "Are any Kenyan languages endangered?", answer: "Yes, several are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Suba, and Omotik. Language loss is accelerated by urbanization and the dominance of Swahili and English." },
-  { question: "What is the most spoken language in Kenya?", answer: "Swahili (Kiswahili) is the most widely spoken with ~15 million speakers. Among ethnic languages, Kikuyu (~8.1 million) and Luhya (~6.8 million) have the most speakers." },
+  { question: "How many languages are spoken in Kenya?", answer: "Kenya has over 42 indigenous language communities, broadly grouped into three major African language families: Bantu (~65% of population), Nilotic (~30%), and Cushitic (~4%). English and Kiswahili are the two official languages under the 2010 Constitution." },
+  { question: "What is the most spoken mother tongue in Kenya?", answer: "Kikuyu (Gĩkũyũ) is the largest mother tongue with approximately 8.1 million speakers (17.1%), followed by Luhya (6.8M, 14.3%), Kalenjin (6.4M, 13.4%), Dholuo (5.0M, 10.7%), and Kamba (4.7M, 9.8%). However, Kiswahili is the most widely spoken language overall as a lingua franca." },
+  { question: "What is the difference between Bantu, Nilotic, and Cushitic languages?", answer: "Bantu languages (Kikuyu, Luhya, Kamba, Kisii, Meru, Mijikenda, Swahili) belong to the Niger-Congo phylum and use noun-class prefixes (e.g., Mũ-Gĩkũyũ / A-Gĩkũyũ). Nilotic languages (Luo, Kalenjin, Maasai, Turkana, Samburu, Teso) belong to the Nilo-Saharan phylum. Cushitic languages (Somali, Oromo/Borana, Rendille) belong to the Afroasiatic phylum." },
+  { question: "What is Sheng?", answer: "Sheng is an urban youth sociolect that originated in Nairobi's Eastlands in the 1970s. It blends Kiswahili grammar with vocabulary drawn from English, Kikuyu, Dholuo, Kamba, and Luhya, constantly evolving across neighbourhoods and music culture." },
 ];
 
-function formatSpeakers(speakers: number): string {
-  if (speakers >= 1_000_000) {
-    return `${(speakers / 1_000_000).toFixed(1)}M`;
-  }
-  if (speakers >= 1_000) {
-    return `${Math.round(speakers / 1_000).toLocaleString()}K`;
-  }
-  return speakers.toLocaleString();
+function formatSpeakers(n: number) {
+  if (n >= 1000000) return `${(n / 1000000).toFixed(2)}M`;
+  if (n >= 1000) return `${(n / 1000).toFixed(0)}K`;
+  return n.toLocaleString();
+}
+
+function normalizeLanguageId(languageName: string): string {
+  const lower = languageName.toLowerCase();
+  if (lower.includes("kikuyu")) return "kikuyu";
+  if (lower.includes("luhya")) return "luhya";
+  if (lower.includes("kalenjin")) return "kalenjin";
+  if (lower.includes("luo")) return "luo";
+  if (lower.includes("kamba")) return "kamba";
+  if (lower.includes("somali")) return "somali";
+  if (lower.includes("kisii")) return "kisii";
+  if (lower.includes("mijikenda")) return "mijikenda";
+  if (lower.includes("meru")) return "meru";
+  if (lower.includes("maasai")) return "maasai";
+  if (lower.includes("turkana")) return "turkana";
+  if (lower.includes("teso")) return "teso";
+  if (lower.includes("embu") || lower.includes("mbeere")) return "embu";
+  if (lower.includes("taita")) return "taita";
+  if (lower.includes("samburu")) return "samburu";
+  if (lower.includes("borana") || lower.includes("oromo") || lower.includes("gabbra")) return "borana";
+  if (lower.includes("pokomo")) return "pokomo";
+  if (lower.includes("rendille")) return "rendille";
+  if (lower.includes("swahili")) return "swahili";
+  if (lower.includes("pokot")) return "pokot";
+  if (lower.includes("taveta")) return "taveta";
+  if (lower.includes("ilchamus") || lower.includes("njemps")) return "ilchamus";
+  return lower.replace(/[^a-z0-9]+/g, "-");
 }
 
 export default function KenyaLanguagesPage() {
-  const [familyFilter, setFamilyFilter] = useState("all");
   const [search, setSearch] = useState("");
+  const [familyFilter, setFamilyFilter] = useState("all");
+
   const filtered = useMemo(() => {
     return data.languages.filter((l) => {
-      if (familyFilter !== "all" && l.family !== familyFilter) return false;
-      if (search.trim()) {
-        const q = search.toLowerCase();
-        return (
-          l.name.toLowerCase().includes(q) ||
-          l.notes.toLowerCase().includes(q) ||
-          l.counties.some((c) => c.toLowerCase().includes(q))
-        );
-      }
-      return true;
-    }).sort((a, b) => b.speakers - a.speakers);
-  }, [familyFilter, search]);
-
-  const totalSpeakers = filtered.reduce((s, l) => s + l.speakers, 0);
+      const matchFamily = familyFilter === "all" || l.family === familyFilter;
+      const matchSearch = !search.trim() ||
+        l.name.toLowerCase().includes(search.toLowerCase()) ||
+        l.counties.some((c) => c.toLowerCase().includes(search.toLowerCase())) ||
+        l.notes.toLowerCase().includes(search.toLowerCase());
+      return matchFamily && matchSearch;
+    });
+  }, [search, familyFilter]);
 
   return (
     <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
-        {/* Official languages */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {data.officialLanguages.map((ol) => (
-            <div key={ol.language} className="bg-bg-card border border-gold/30 rounded-xl p-4">
-              <div className="flex items-center gap-2 mb-2">
-                <DynamicIcon emoji="🏛️" className="w-5 h-5 text-gold" />
-                <h3 className="text-sm font-bold text-text-primary">{ol.language}</h3>
-                <span className="text-[0.6rem] bg-gold/15 text-gold px-2 py-0.5 rounded">{ol.status}</span>
-              </div>
-              <p className="text-xs text-text-secondary">{ol.use}</p>
-            </div>
-          ))}
-        </div>
-        {/* Family filters */}
-        <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-          <ExpandablePillRow>
+        {/* Family breakdown cards */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {data.families.map((f) => (
             <button
-              onClick={() => setFamilyFilter("all")}
-              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
-                familyFilter === "all"
-                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
-                  : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+              key={f.id}
+              type="button"
+              onClick={() => setFamilyFilter(familyFilter === f.id ? "all" : f.id)}
+              className={`bg-bg-card border rounded-xl p-4 text-left transition-all cursor-pointer ${
+                familyFilter === f.id ? "border-gold ring-1 ring-gold/30" : "border-border hover:border-gold/30"
               }`}
             >
-              All Families
+              <div className="flex items-center justify-between mb-1">
+                <span className="w-3 h-3 rounded-full" style={{ backgroundColor: f.color }} />
+                <span className="text-lg font-bold text-gold font-[family-name:var(--font-outfit)]">{f.percentage}%</span>
+              </div>
+              <p className="text-xs font-bold text-text-primary">{f.name}</p>
+              <p className="text-[0.6rem] text-text-muted mt-0.5 line-clamp-2">{f.description}</p>
             </button>
-            {data.families.map((f) => {
-              const active = familyFilter === f.id;
-              return (
-                <button
-                  key={f.id}
-                  onClick={() => setFamilyFilter(f.id)}
-                  className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
-                    active
-                      ? "border-gold/50 bg-gold/15 text-gold font-semibold"
-                      : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
-                  }`}
-                >
-                  {f.name}
-                </button>
-              );
-            })}
-          </ExpandablePillRow>
+          ))}
+        </div>
+
+        {/* Search & Filter */}
+        <div className="bg-bg-card border border-border rounded-xl p-5 flex flex-col sm:flex-row gap-3">
           <SearchInput
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search languages, dialects, or counties..."
-            className="input-field text-sm"
+            placeholder="Search language or county..."
+            className="input-field text-sm flex-1"
             id="lang-search"
             onClear={() => setSearch("")}
           />
+          <ExpandablePillRow className="w-auto">
+            <button type="button" onClick={() => setFamilyFilter("all")} className={`shrink-0 whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-medium border transition-all ${familyFilter === "all" ? "border-gold/50 bg-gold/15 text-gold font-semibold" : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"}`}>All ({data.languages.length})</button>
+            {data.families.map((f) => (
+              <button key={f.id} type="button" onClick={() => setFamilyFilter(f.id)} className={`shrink-0 whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-medium border transition-all ${familyFilter === f.id ? "border-gold/50 bg-gold/15 text-gold font-semibold" : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"}`}>{f.name.split(" ")[0]}</button>
+            ))}
+          </ExpandablePillRow>
         </div>
-        {familyFilter !== "all" && (
-          <div className="bg-bg-elevated border border-border rounded-xl p-4">
-            <p className="text-xs text-text-secondary">{data.families.find((f) => f.id === familyFilter)?.description}</p>
-          </div>
-        )}
-        <p className="text-xs text-text-muted">{filtered.length} languages · ~{formatSpeakers(totalSpeakers)} speakers</p>
-        {/* Language cards */}
+
+        {/* Languages Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {filtered.map((lang) => {
             const family = data.families.find((f) => f.id === lang.family);
@@ -142,26 +147,25 @@ export default function KenyaLanguagesPage() {
                     ))}
                   </div>
                   {sources.length > 0 && (
-                    <div className="mt-3 border-t border-border pt-2">
-                      <p className="text-[0.6rem] font-semibold uppercase tracking-wide text-text-muted">
-                        Reference sources ({sources.length})
-                      </p>
-                      <div className="mt-1 space-y-1">
-                        {sources.slice(0, 4).map((source) => (
-                          <div key={source.id} className="flex items-start justify-between gap-2 text-[0.6rem]">
-                            <span className="text-text-secondary">
+                    <details className="group mt-3 border-t border-border pt-2">
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-[0.65rem] font-semibold text-text-muted hover:text-gold transition-colors">
+                        <span className="inline-flex items-center gap-1.5">
+                          <BookOpen className="h-3 w-3 text-gold shrink-0" />
+                          <span>Reference sources ({sources.length})</span>
+                        </span>
+                        <ChevronDown className="h-3 w-3 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+                      </summary>
+                      <ul className="mt-1.5 space-y-1 pl-1 text-[0.6rem] text-text-secondary">
+                        {sources.map((source) => (
+                          <li key={source.id} className="flex items-start gap-1.5">
+                            <span className="text-gold font-bold">•</span>
+                            <span>
                               {source.title} <span className="text-text-muted">({source.published})</span>
                             </span>
-                            <span className={source.ingestionStatus === "integrated" ? "shrink-0 text-green-400" : "shrink-0 text-gold"}>
-                              {source.ingestionStatus === "integrated" ? "Integrated" : "Research"}
-                            </span>
-                          </div>
+                          </li>
                         ))}
-                        {sources.length > 4 && (
-                          <p className="text-[0.55rem] text-text-muted">+{sources.length - 4} more historical &amp; lexical sources</p>
-                        )}
-                      </div>
-                    </div>
+                      </ul>
+                    </details>
                   )}
                 </div>
 
@@ -203,6 +207,12 @@ export default function KenyaLanguagesPage() {
                 <span>{n}</span>
               </li>
             ))}
+            <li className="flex items-start gap-2 text-xs text-text-secondary">
+              <span className="text-gold mt-0.5">•</span>
+              <span>
+                Cross-referenced with {LANGUAGE_SOURCE_CORPUS.length} historical grammars, dictionaries, and comparative vocabularies (1842–1929) plus Unicode CLDR &amp; CC0 lexical resources.
+              </span>
+            </li>
           </ul>
         </div>
       </div>

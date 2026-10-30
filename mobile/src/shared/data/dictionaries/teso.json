@@ -11,7 +11,7 @@
   "hasAudio": false,
   "dictionaryVersion": "3.0",
   "lastUpdated": "2026-10-25",
-  "contributorNote": "Teso (Ateso) dictionary structural scaffold. Non-public-domain or unverified entries removed; ready for public-domain data.",
+  "contributorNote": "Teso (Ateso) public-domain vocabulary compiled from C. W. Hobley (1902) \"Eastern Uganda: An Ethnological Survey\" and Sir Harry H. Johnston (1902) \"The Uganda Protectorate, Vol. II\".",
   "categories": [
     {
       "id": "greetings",
@@ -114,6 +114,20 @@
           "translation": "ereng (areng)",
           "pronunciation": "eh-rehng",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Peace",
+          "translation": "ekinok",
+          "pronunciation": "ekinok",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "finger millet; sacred symbol of peace and kinship among the Iteso",
+          "translation": "emuria",
+          "pronunciation": "emuria",
+          "context": "Ateso",
           "audioFile": null
         }
       ]
@@ -381,6 +395,41 @@
           "pronunciation": "isekonde",
           "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
           "audioFile": null
+        },
+        {
+          "english": "All",
+          "translation": "kajokisi",
+          "pronunciation": "kajokisi",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "How many ?",
+          "translation": "wa-mwasai",
+          "pronunciation": "wa-mwasai",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Many men",
+          "translation": "epu",
+          "pronunciation": "epu",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "One man",
+          "translation": "ebe",
+          "pronunciation": "ebe",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "hand, arm (root of ikany/akany 'five') (< Proto-Eastern Nilotic -kanɪ)",
+          "translation": "akan (pl. akanin)",
+          "pronunciation": "akan (pl. akanin)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
         }
       ]
     },
@@ -467,255 +516,17 @@
           "audioFile": null
         },
         {
-          "english": "sun, day (< Proto-Eastern Nilotic *-kɔlɔŋ)",
-          "translation": "akolong'",
-          "pronunciation": "akolong'",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "moon, month (< Proto-Eastern Nilotic *-lapa)",
-          "translation": "elap (pl. ilapio)",
-          "pronunciation": "elap (pl. ilapio)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "star (< Proto-Teso-Lotuko-Maa *-kacer)",
-          "translation": "akacer (pl. akacerin)",
-          "pronunciation": "akacer (pl. akacerin)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "rain (< Proto-Eastern Nilotic *-kɪrʊ)",
-          "translation": "akiru",
-          "pronunciation": "akiru",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "land, country, earth (< Proto-Eastern Nilotic *-kwap)",
-          "translation": "akwap",
-          "pronunciation": "akwap",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "stone, rock, hill (< Proto-Eastern Nilotic *-mɔrʊ)",
-          "translation": "amoru (pl. amor)",
-          "pronunciation": "amoru (pl. amor)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "tree, wood, medicine (< Proto-Eastern Nilotic *-kɛtɔyɪ)",
-          "translation": "ekitoi (pl. ikito)",
-          "pronunciation": "ekitoi (pl. ikito)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "grass (< Proto-Eastern Nilotic *-ɲa)",
-          "translation": "anyinya",
-          "pronunciation": "anyinya",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "road, path (< Proto-Teso-Turkana *-rɔt)",
+          "english": "road, path (< Proto-Teso-Turkana -rɔt)",
           "translation": "erot (pl. irotin)",
           "pronunciation": "erot (pl. irotin)",
           "context": "Ateso (Vossen 1982)",
           "audioFile": null
         },
         {
-          "english": "cow (pl. cattle) (< Proto-Eastern Nilotic *-kɪtɛŋ)",
-          "translation": "aiteng' (pl. akituk)",
-          "pronunciation": "aiteng' (pl. akituk)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "goat (< Proto-Eastern Nilotic *-kɪnɛ)",
-          "translation": "akinei (pl. akinei)",
-          "pronunciation": "akinei (pl. akinei)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "sheep (< Proto-Teso-Lotuko-Maa *-mɛrɛkɛk)",
-          "translation": "amerekek (pl. amerekekin)",
-          "pronunciation": "amerekek (pl. amerekekin)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "dog (< Proto-Teso-Turkana *-ŋɔk)",
-          "translation": "eing'ok (pl. iing'okwo)",
-          "pronunciation": "eing'ok (pl. iing'okwo)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "lion (< Proto-Eastern Nilotic *-ŋatʊɲ)",
-          "translation": "eng'atuny (pl. ing'atunyo)",
-          "pronunciation": "eng'atuny (pl. ing'atunyo)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "elephant (< Proto-Eastern Nilotic *-tɔmɛ)",
-          "translation": "etome (pl. itomei)",
-          "pronunciation": "etome (pl. itomei)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "buffalo (< Proto-Eastern Nilotic *-kɔsɔwan)",
-          "translation": "ekosowan",
-          "pronunciation": "ekosowan",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "bird (< Proto-Eastern Nilotic *-kwɛɲ)",
-          "translation": "ekweny (pl. ikweny)",
-          "pronunciation": "ekweny (pl. ikweny)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "snake (< Proto-Teso-Turkana *-mʊn)",
-          "translation": "emun (pl. imunuo)",
-          "pronunciation": "emun (pl. imunuo)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "meat, flesh (< Proto-Eastern Nilotic *-kɪrɪŋɔ)",
-          "translation": "akiring'",
-          "pronunciation": "akiring'",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "millet or cassava bread (ugali)",
-          "translation": "atap",
-          "pronunciation": "atap",
-          "context": "Ateso",
-          "audioFile": null
-        },
-        {
-          "english": "eye (pl. eyes) (< Proto-Eastern Nilotic *-kɔŋɛ)",
-          "translation": "akonye (pl. akonyen)",
-          "pronunciation": "akonye (pl. akonyen)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "ear (pl. ears) (< Proto-Eastern Nilotic *-kɪt)",
-          "translation": "akit (pl. akituk)",
-          "pronunciation": "akit (pl. akituk)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "nose (< Proto-Eastern Nilotic *-kʊmɛ)",
-          "translation": "ekume (pl. ikumes)",
-          "pronunciation": "ekume (pl. ikumes)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "mouth (< Proto-Eastern Nilotic *-kʊtʊk)",
-          "translation": "akituk",
-          "pronunciation": "akituk",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "tooth (pl. teeth) (< Proto-Eastern Nilotic *-kɛla)",
-          "translation": "ekelai (pl. ikela)",
-          "pronunciation": "ekelai (pl. ikela)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "tongue, language (< Proto-Eastern Nilotic *-ŋɛjɛp)",
-          "translation": "ang'ajep",
-          "pronunciation": "ang'ajep",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "head (< Proto-Eastern Nilotic *-kɔwʊ)",
-          "translation": "akou (pl. akwes)",
-          "pronunciation": "akou (pl. akwes)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "hand, arm (root of ikany/akany 'five') (< Proto-Eastern Nilotic *-kanɪ)",
-          "translation": "akan (pl. akanin)",
-          "pronunciation": "akan (pl. akanin)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "leg, foot (< Proto-Eastern Nilotic *-kɛjʊ)",
-          "translation": "akeju (pl. akejen)",
-          "pronunciation": "akeju (pl. akejen)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "heart, spirit (< Proto-Teso-Lotuko-Maa *-tawʊ)",
-          "translation": "etau (pl. itauon)",
-          "pronunciation": "etau (pl. itauon)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "blood (< Proto-Teso-Turkana *-kɔt)",
-          "translation": "aokot",
-          "pronunciation": "aokot",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "bone (< Proto-Eastern Nilotic *-kɔyɪtɔ)",
-          "translation": "akoit (pl. akoik)",
-          "pronunciation": "akoit (pl. akoik)",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "stomach, belly (< Proto-Eastern Nilotic *-kɔɛk)",
-          "translation": "akook",
-          "pronunciation": "akook",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "name (< Proto-Eastern Nilotic *-kɛrɪn)",
+          "english": "name (< Proto-Eastern Nilotic -kɛrɪn)",
           "translation": "ekiror (pl. ikiroria)",
           "pronunciation": "ekiror (pl. ikiroria)",
           "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "God, sky above (< Proto-Teso-Turkana *-kʊjɔ)",
-          "translation": "akujo",
-          "pronunciation": "akujo",
-          "context": "Ateso (Vossen 1982)",
-          "audioFile": null
-        },
-        {
-          "english": "finger millet; sacred symbol of peace and kinship among the Iteso",
-          "translation": "emuria",
-          "pronunciation": "emuria",
-          "context": "Ateso",
           "audioFile": null
         },
         {
@@ -1186,6 +997,34 @@
           "pronunciation": "ekiror (é-kɪ́-rɔ́-rɪ̀)",
           "context": "Wikipedia Teso language & Eastern Nilotic languages",
           "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "ndachakoni",
+          "pronunciation": "ndachakoni",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "edwe, epese, ekoko",
+          "pronunciation": "edwe, epese, ekoko",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "ndachakang epesi",
+          "pronunciation": "ndachakang epesi",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Ajakáit",
+          "pronunciation": "ajakáit",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
         }
       ]
     },
@@ -1283,6 +1122,258 @@
           "translation": "agaria (pl. agaria)",
           "pronunciation": "agaria (pl. agaria)",
           "context": "Ateso",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "masiniki",
+          "pronunciation": "masiniki",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle",
+          "translation": "akitekungulo",
+          "pronunciation": "akitekungulo",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "ekinoko",
+          "pronunciation": "ekinoko",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey",
+          "translation": "elimunyanga",
+          "pronunciation": "elimunyanga",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "etome latuk",
+          "pronunciation": "etome latuk",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Fowl",
+          "translation": "akokor",
+          "pronunciation": "akokor",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "okori",
+          "pronunciation": "okori",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "ekini",
+          "pronunciation": "ekini",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "ngatuni",
+          "pronunciation": "ngatuni",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "emunu",
+          "pronunciation": "emunu",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Ant",
+          "translation": "Selena",
+          "pronunciation": "selena",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Termite",
+          "translation": "Siaddω",
+          "pronunciation": "siaddω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Hartebeest",
+          "translation": "Omósomós",
+          "pronunciation": "omósomós",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Oryx",
+          "translation": "Sagute",
+          "pronunciation": "sagute",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Kudu",
+          "translation": "Atom",
+          "pronunciation": "atom",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Eland",
+          "translation": "Kipútirri",
+          "pronunciation": "kipútirri",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Bushbuck",
+          "translation": "Amori",
+          "pronunciation": "amori",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Reedbuck",
+          "translation": "Kiatáti",
+          "pronunciation": "kiatáti",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Waterbuck",
+          "translation": "Ecoria",
+          "pronunciation": "ecoria",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Baboon",
+          "translation": "Aωsin",
+          "pronunciation": "aωsin",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Bee",
+          "translation": "Ecucu",
+          "pronunciation": "ecucu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Ekωsogwan",
+          "pronunciation": "ekωsogwan",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Cat",
+          "translation": "Awalu",
+          "pronunciation": "awalu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "Atinyañ",
+          "pronunciation": "atinyañ",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Guinea-fowl",
+          "translation": "Ṣiasese",
+          "pronunciation": "ṣiasese",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Horse",
+          "translation": "Issigiria",
+          "pronunciation": "issigiria",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "Ebū",
+          "pronunciation": "ebū",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "cow (pl. cattle) (< Proto-Eastern Nilotic -kɪtɛŋ)",
+          "translation": "aiteng' (pl. akituk)",
+          "pronunciation": "aiteng' (pl. akituk)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "goat (< Proto-Eastern Nilotic -kɪnɛ)",
+          "translation": "akinei (pl. akinei)",
+          "pronunciation": "akinei (pl. akinei)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "sheep (< Proto-Teso-Lotuko-Maa -mɛrɛkɛk)",
+          "translation": "amerekek (pl. amerekekin)",
+          "pronunciation": "amerekek (pl. amerekekin)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "dog (< Proto-Teso-Turkana -ŋɔk)",
+          "translation": "eing'ok (pl. iing'okwo)",
+          "pronunciation": "eing'ok (pl. iing'okwo)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "lion (< Proto-Eastern Nilotic -ŋatʊɲ)",
+          "translation": "eng'atuny (pl. ing'atunyo)",
+          "pronunciation": "eng'atuny (pl. ing'atunyo)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "elephant (< Proto-Eastern Nilotic -tɔmɛ)",
+          "translation": "etome (pl. itomei)",
+          "pronunciation": "etome (pl. itomei)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "buffalo (< Proto-Eastern Nilotic -kɔsɔwan)",
+          "translation": "ekosowan",
+          "pronunciation": "ekosowan",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "bird (< Proto-Eastern Nilotic -kwɛɲ)",
+          "translation": "ekweny (pl. ikweny)",
+          "pronunciation": "ekweny (pl. ikweny)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "snake (< Proto-Teso-Turkana -mʊn)",
+          "translation": "emun (pl. imunuo)",
+          "pronunciation": "emun (pl. imunuo)",
+          "context": "Ateso (Vossen 1982)",
           "audioFile": null
         }
       ]
@@ -1592,6 +1683,118 @@
           "pronunciation": "ah-moh-roo",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
+        },
+        {
+          "english": "Earth",
+          "translation": "elipo",
+          "pronunciation": "elipo",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Hill",
+          "translation": "imulu",
+          "pronunciation": "imulu",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake",
+          "translation": "ekare",
+          "pronunciation": "ekare",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Stone",
+          "translation": "amuru",
+          "pronunciation": "amuru",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "Amōni",
+          "pronunciation": "amōni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Ground",
+          "translation": "Alūp",
+          "pronunciation": "alūp",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Island",
+          "translation": "Egipwarr",
+          "pronunciation": "egipwarr",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "sun, day (< Proto-Eastern Nilotic -kɔlɔŋ)",
+          "translation": "akolong'",
+          "pronunciation": "akolong'",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "moon, month (< Proto-Eastern Nilotic -lapa)",
+          "translation": "elap (pl. ilapio)",
+          "pronunciation": "elap (pl. ilapio)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "star (< Proto-Teso-Lotuko-Maa -kacer)",
+          "translation": "akacer (pl. akacerin)",
+          "pronunciation": "akacer (pl. akacerin)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "rain (< Proto-Eastern Nilotic -kɪrʊ)",
+          "translation": "akiru",
+          "pronunciation": "akiru",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "land, country, earth (< Proto-Eastern Nilotic -kwap)",
+          "translation": "akwap",
+          "pronunciation": "akwap",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "stone, rock, hill (< Proto-Eastern Nilotic -mɔrʊ)",
+          "translation": "amoru (pl. amor)",
+          "pronunciation": "amoru (pl. amor)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "tree, wood, medicine (< Proto-Eastern Nilotic -kɛtɔyɪ)",
+          "translation": "ekitoi (pl. ikito)",
+          "pronunciation": "ekitoi (pl. ikito)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "grass (< Proto-Eastern Nilotic -ɲa)",
+          "translation": "anyinya",
+          "pronunciation": "anyinya",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "God, sky above (< Proto-Teso-Turkana -kʊjɔ)",
+          "translation": "akujo",
+          "pronunciation": "akujo",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
         }
       ]
     },
@@ -1704,6 +1907,188 @@
           "pronunciation": "ajo",
           "context": "Wikipedia Teso language — Pluralia tantum",
           "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "ibokori",
+          "pronunciation": "ibokori",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "etim",
+          "pronunciation": "etim",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "akejen",
+          "pronunciation": "akejen",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "murising",
+          "pronunciation": "murising",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Skin",
+          "translation": "ejamu",
+          "pronunciation": "ejamu",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Teeth",
+          "translation": "ekela",
+          "pronunciation": "ekela",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Arm",
+          "translation": "Akan",
+          "pronunciation": "akan",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Añabet",
+          "pronunciation": "añabet",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Belly",
+          "translation": "Akōk",
+          "pronunciation": "akōk",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "Ekisin",
+          "pronunciation": "ekisin",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Esiḗpi",
+          "pronunciation": "esiḗpi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "Atutunyω",
+          "pronunciation": "atutunyω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "Akuñ",
+          "pronunciation": "akuñ",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "meat, flesh (< Proto-Eastern Nilotic -kɪrɪŋɔ)",
+          "translation": "akiring'",
+          "pronunciation": "akiring'",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "eye (pl. eyes) (< Proto-Eastern Nilotic -kɔŋɛ)",
+          "translation": "akonye (pl. akonyen)",
+          "pronunciation": "akonye (pl. akonyen)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "ear (pl. ears) (< Proto-Eastern Nilotic -kɪt)",
+          "translation": "akit (pl. akituk)",
+          "pronunciation": "akit (pl. akituk)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "nose (< Proto-Eastern Nilotic -kʊmɛ)",
+          "translation": "ekume (pl. ikumes)",
+          "pronunciation": "ekume (pl. ikumes)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "mouth (< Proto-Eastern Nilotic -kʊtʊk)",
+          "translation": "akituk",
+          "pronunciation": "akituk",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "tooth (pl. teeth) (< Proto-Eastern Nilotic -kɛla)",
+          "translation": "ekelai (pl. ikela)",
+          "pronunciation": "ekelai (pl. ikela)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "tongue, language (< Proto-Eastern Nilotic -ŋɛjɛp)",
+          "translation": "ang'ajep",
+          "pronunciation": "ang'ajep",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "head (< Proto-Eastern Nilotic -kɔwʊ)",
+          "translation": "akou (pl. akwes)",
+          "pronunciation": "akou (pl. akwes)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "leg, foot (< Proto-Eastern Nilotic -kɛjʊ)",
+          "translation": "akeju (pl. akejen)",
+          "pronunciation": "akeju (pl. akejen)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "heart, spirit (< Proto-Teso-Lotuko-Maa -tawʊ)",
+          "translation": "etau (pl. itauon)",
+          "pronunciation": "etau (pl. itauon)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "blood (< Proto-Teso-Turkana -kɔt)",
+          "translation": "aokot",
+          "pronunciation": "aokot",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "bone (< Proto-Eastern Nilotic -kɔyɪtɔ)",
+          "translation": "akoit (pl. akoik)",
+          "pronunciation": "akoit (pl. akoik)",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
+        },
+        {
+          "english": "stomach, belly (< Proto-Eastern Nilotic -kɔɛk)",
+          "translation": "akook",
+          "pronunciation": "akook",
+          "context": "Ateso (Vossen 1982)",
+          "audioFile": null
         }
       ]
     },
@@ -1815,6 +2200,69 @@
           "translation": "Epaunt lok’ Uingereza",
           "pronunciation": "epaunt lok’ uingereza",
           "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Salutations & Conversational Phrases (Hobley 1902 p. 94 & Johnston 1902 p. 851): Greetings! / Come here! / Go away! / Bring water! / What do you want?",
+          "translation": "Mata! / Yoka yoka! (Hobley 1902 p. 94) • Bia ne! / Kolot! / Koin akipi! / Icamit nyo? (Johnston 1902 p. 851)",
+          "pronunciation": "bi-a ne / ko-lot / ko-in a-ki-pi / i-ca-mit nyo",
+          "context": "C. W. Hobley (1902, p. 94) & Sir Harry Johnston (1902, p. 851)",
+          "audioFile": null
+        },
+        {
+          "english": "Maize",
+          "translation": "ekurididi",
+          "pronunciation": "ekurididi",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "akipi",
+          "pronunciation": "akipi",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Water-hole",
+          "translation": "echori",
+          "pronunciation": "echori",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Wild date",
+          "translation": "Erre",
+          "pronunciation": "erre",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Fat",
+          "translation": "Akinyet",
+          "pronunciation": "akinyet",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "Aω",
+          "pronunciation": "aω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger",
+          "translation": "Akorrω",
+          "pronunciation": "akorrω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "millet or cassava bread (ugali)",
+          "translation": "atap",
+          "pronunciation": "atap",
+          "context": "Ateso",
           "audioFile": null
         }
       ]
@@ -2448,13 +2896,6 @@
           "audioFile": null
         },
         {
-          "english": "Salutations & Conversational Phrases (Hobley 1902 p. 94 & Johnston 1902 p. 851): Greetings! / Come here! / Go away! / Bring water! / What do you want?",
-          "translation": "Mata! / Yoka yoka! (Hobley 1902 p. 94) • Bia ne! / Kolot! / Koin akipi! / Icamit nyo? (Johnston 1902 p. 851)",
-          "pronunciation": "bi-a ne / ko-lot / ko-in a-ki-pi / i-ca-mit nyo",
-          "context": "C. W. Hobley (1902, p. 94) & Sir Harry Johnston (1902, p. 851)",
-          "audioFile": null
-        },
-        {
           "english": "Wamia (Elgumi / Ateso) Sub-Tribes, 1900 Chiefs & Vocabulary in C. W. Hobley (1902, p. 57 & pp. 92–95)",
           "translation": "Sub-tribes & Chiefs (p. 57): Telemo (chief Nzoia), Ngoma (chiefs Pakala & Kuresi), Para (chief Kimi), plus chiefs Lemugi, Mwenyikoi, Babukori, Eten, and Oreddi • Elgumi Vocabulary (pp. 92–95): mata & yoka yoka (salutations), akipi (water), akimi (fire), akiteng (cow), akilli (milk), ekiring (meat), emumwa (mtama/sorghum), etapa (food/ugali), ekwara (spear), ekileng (knife), ebuku (shield), ere (village), elap (moon), ekiro (rain), amuru (stone), ekito (tree), ekinok (peace), ekinoko (dog), etome latuk (elephant), ngatuni (lion), okori (giraffe) • Elgumi Numerals (p. 95): 1 epe / apuru, 2 are, 3 auni / uni, 4 aungwen / ongwon, 5 ekan / akanyi, 6 kanyi-kape / akanya-kape, 7 kanyi-kare, 8 kanyi-kauni, 9 kanyi-ki-ongwon / akanya kangwun, 10 atomon",
           "pronunciation": "wa-mi-a / el-gu-mi / te-le-mo / ngo-ma / pa-ra / ma-ta / yo-ka yo-ka",
@@ -2466,6 +2907,720 @@
           "translation": "Ethnography (pp. 713, 853, 855, 886): the Elgumi (also called Wamia) dwell west and south-west of Mount Elgon, are agriculturalists and ardent hunters who keep many small hunting dogs (Fig. 480), and speak a Masai-Turkana-Karamojo group language • Complete #6 Elgumi Vocabulary Recorded by Johnston (pp. 904–906): Arm Akan • Arrow Ekoyω • Axe Aeb • Baboon Aωsin • Back Añabet • Banana Alaburu • Beard Apenok • Bee Ecucu • Belly Akōk • Bird Atoroqót • Blood Aqot • Body Akwán • Bone Akωit • Bow Emal / Akau • Brains Itim • Breast Ekisin • Brother Anācăkēñe • Buffalo Ekωsogwan • Buttocks Ewωsi • Canoe Atakerr • Cat Awalu • Chief Ajakáit • Child Ekōkō • Cloth Enañga • Country Warret • Cow Akiteñ (f. naberω) • Crocodile Atinyañ • Day Akenyanu • Devil Akiría • Dog Ekiñok • Door Ekek • Dream Adjω • Drum Atāget / Atēnus • Ear Akit • Egg Abei • Elephant Etom • Excrement Acin • Eye Akoñ • Face Akininyirr • Fat Akinyet • Fear Agātorūt • Finger Ebωkorit • Fire Akim • Fish Esessī • Foot Akeju • Forest Amōni • Fowl Ekokorr • Goat Aginé • God Akūt • Grass Inyā • Ground Alūp",
           "pronunciation": "a-kan / e-ko-yo / a-ja-kait / a-ki-teng / e-ki-nok / a-kim / a-kut",
           "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 853, 855 & Ch. XX, Set 1 (#6 Elgumi), pp. 903–906",
+          "audioFile": null
+        },
+        {
+          "english": "After",
+          "translation": "kanyanona",
+          "pronunciation": "kanyanona",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "ekoyo",
+          "pronunciation": "ekoyo",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Bad man; Bad men",
+          "translation": "erono",
+          "pronunciation": "erono",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Beads",
+          "translation": "etipi",
+          "pronunciation": "etipi",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Behind",
+          "translation": "kokao",
+          "pronunciation": "kokao",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Boma",
+          "translation": "eretata",
+          "pronunciation": "eretata",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "akawa",
+          "pronunciation": "akawa",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Brass wire",
+          "translation": "esinit",
+          "pronunciation": "esinit",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Brave",
+          "translation": "kadidengan",
+          "pronunciation": "kadidengan",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Bring",
+          "translation": "kwaiona",
+          "pronunciation": "kwaiona",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Bullock",
+          "translation": "emongo",
+          "pronunciation": "emongo",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Call",
+          "translation": "konyara",
+          "pronunciation": "konyara",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Cheap",
+          "translation": "echokima",
+          "pronunciation": "echokima",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth",
+          "translation": "mkuli",
+          "pronunciation": "mkuli",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "atakwa",
+          "pronunciation": "atakwa",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Day before yesterday",
+          "translation": "kolongoye",
+          "pronunciation": "kolongoye",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Die",
+          "translation": "atwanare",
+          "pronunciation": "atwanare",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Do you know ?",
+          "translation": "makerara",
+          "pronunciation": "makerara",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "abei",
+          "pronunciation": "abei",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Expensive",
+          "translation": "kiseja",
+          "pronunciation": "kiseja",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "False",
+          "translation": "ibileri",
+          "pronunciation": "ibileri",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Fast",
+          "translation": "noinoi",
+          "pronunciation": "noinoi",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Far",
+          "translation": "eluana",
+          "pronunciation": "eluana",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Finished",
+          "translation": "kadaona",
+          "pronunciation": "kadaona",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Fight (v.)",
+          "translation": "ejir",
+          "pronunciation": "ejir",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Game",
+          "translation": "etiang",
+          "pronunciation": "etiang",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Girl",
+          "translation": "epese",
+          "pronunciation": "epese",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Great",
+          "translation": "loka polon",
+          "pronunciation": "loka polon",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "He",
+          "translation": "ungolo",
+          "pronunciation": "ungolo",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "He is coming",
+          "translation": "ebuni",
+          "pronunciation": "ebuni",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "He is going",
+          "translation": "kolotong",
+          "pronunciation": "kolotong",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "He is telling",
+          "translation": "kiro",
+          "pronunciation": "kiro",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Here",
+          "translation": "ene",
+          "pronunciation": "ene",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "He will tell",
+          "translation": "kioro",
+          "pronunciation": "kioro",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "His",
+          "translation": "elango",
+          "pronunciation": "elango",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Hoe",
+          "translation": "emeleku",
+          "pronunciation": "emeleku",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Hunt",
+          "translation": "amej",
+          "pronunciation": "amej",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "I want",
+          "translation": "itungali",
+          "pronunciation": "itungali",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "In front",
+          "translation": "kingaren",
+          "pronunciation": "kingaren",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron",
+          "translation": "eswat",
+          "pronunciation": "eswat",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Knife",
+          "translation": "ekileng",
+          "pronunciation": "ekileng",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Make",
+          "translation": "borelo",
+          "pronunciation": "borelo",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "utalapai",
+          "pronunciation": "utalapai",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Mtama",
+          "translation": "emumwa",
+          "pronunciation": "emumwa",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "My",
+          "translation": "borangi",
+          "pronunciation": "borangi",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Near",
+          "translation": "koirera",
+          "pronunciation": "koirera",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "No",
+          "translation": "niamun",
+          "pronunciation": "niamun",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Price",
+          "translation": "akiseja",
+          "pronunciation": "akiseja",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "anusing",
+          "pronunciation": "anusing",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Road",
+          "translation": "eroto",
+          "pronunciation": "eroto",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Salutation",
+          "translation": "mata and yoka yoka",
+          "pronunciation": "mata and yoka yoka",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Shall reach",
+          "translation": "doliungni",
+          "pronunciation": "doliungni",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Shamba",
+          "translation": "emana",
+          "pronunciation": "emana",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "(chikumba) ebuku",
+          "pronunciation": "(chikumba) ebuku",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Slow",
+          "translation": "adio adio",
+          "pronunciation": "adio adio",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "ekwara",
+          "pronunciation": "ekwara",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Take away",
+          "translation": "konyono",
+          "pronunciation": "konyono",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Tell",
+          "translation": "kinera",
+          "pronunciation": "kinera",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Tobacco",
+          "translation": "taba",
+          "pronunciation": "taba",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "To-morrow",
+          "translation": "taparacho",
+          "pronunciation": "taparacho",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Trees",
+          "translation": "ekito",
+          "pronunciation": "ekito",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "True",
+          "translation": "ibelu",
+          "pronunciation": "ibelu",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Unripe",
+          "translation": "achanon",
+          "pronunciation": "achanon",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Village",
+          "translation": "ere",
+          "pronunciation": "ere",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Wait",
+          "translation": "kiteroono",
+          "pronunciation": "kiteroono",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Want",
+          "translation": "akikoto",
+          "pronunciation": "akikoto",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "War",
+          "translation": "ejori",
+          "pronunciation": "ejori",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "What",
+          "translation": "inyanangoro",
+          "pronunciation": "inyanangoro",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Where",
+          "translation": "eborana",
+          "pronunciation": "eborana",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Who",
+          "translation": "unguai",
+          "pronunciation": "unguai",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Whose",
+          "translation": "kanguai",
+          "pronunciation": "kanguai",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "eberu",
+          "pronunciation": "eberu",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "You",
+          "translation": "iong",
+          "pronunciation": "iong",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Your",
+          "translation": "langelo",
+          "pronunciation": "langelo",
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+          "audioFile": null
+        },
+        {
+          "english": "Gazella granti",
+          "translation": "Eddiri",
+          "pronunciation": "eddiri",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Gazella thomsoni",
+          "translation": "Iṣedana",
+          "pronunciation": "iṣedana",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Madoqua",
+          "translation": "Amiami",
+          "pronunciation": "amiami",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Pallah",
+          "translation": "Nanya",
+          "pronunciation": "nanya",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Roan",
+          "translation": "Siēgotω",
+          "pronunciation": "siēgotω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Colobus",
+          "translation": "Cila",
+          "pronunciation": "cila",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Axe",
+          "translation": "Aeb",
+          "pronunciation": "aeb",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Loins",
+          "translation": "Acirri",
+          "pronunciation": "acirri",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Apenok",
+          "pronunciation": "apenok",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Body",
+          "translation": "Akwán",
+          "pronunciation": "akwán",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Brains",
+          "translation": "Itim",
+          "pronunciation": "itim",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Buttocks",
+          "translation": "Ewωsi",
+          "pronunciation": "ewωsi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Canoe",
+          "translation": "Atakerr",
+          "pronunciation": "atakerr",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Country",
+          "translation": "Warret",
+          "pronunciation": "warret",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Daylight",
+          "translation": "Akirū",
+          "pronunciation": "akirū",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Devil",
+          "translation": "Akiría",
+          "pronunciation": "akiría",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Door",
+          "translation": "Ekek",
+          "pronunciation": "ekek",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Dream",
+          "translation": "Adjω",
+          "pronunciation": "adjω",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Drum",
+          "translation": "Atāget, Atēnus",
+          "pronunciation": "atāget, atēnus",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Excrement",
+          "translation": "Acin",
+          "pronunciation": "acin",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "Akininyirr",
+          "pronunciation": "akininyirr",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Fear",
+          "translation": "Agātorūt",
+          "pronunciation": "agātorūt",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Ghost",
+          "translation": "Elekes",
+          "pronunciation": "elekes",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Gun",
+          "translation": "Ágwarra",
+          "pronunciation": "ágwarra",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "Yokorr",
+          "pronunciation": "yokorr",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Horn",
+          "translation": "Sese",
+          "pronunciation": "sese",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyphæne palm",
+          "translation": "Nakōgies",
+          "pronunciation": "nakōgies",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Ivory",
+          "translation": "Ekel laige atom",
+          "pronunciation": "ekel laige atom",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
           "audioFile": null
         }
       ]

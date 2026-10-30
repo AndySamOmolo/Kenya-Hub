@@ -255,6 +255,62 @@
           "pronunciation": "ikumi",
           "context": "Wikipedia Embu_language — Kîembu numerals",
           "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Mī-rōṅgω ī-gīrī",
+          "pronunciation": "mī-rōṅgω ī-gīrī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Mī-rōṅgω ī-tātū",
+          "pronunciation": "mī-rōṅgω ī-tātū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Forty",
+          "translation": "Mī-rōṅgω ī-nā",
+          "pronunciation": "mī-rōṅgω ī-nā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fifty",
+          "translation": "Mī-rōṅgω ī-tānω",
+          "pronunciation": "mī-rōṅgω ī-tānω",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "I-gāna; ma-gāna",
+          "pronunciation": "i-gāna; ma-gāna",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thousand",
+          "translation": "Ngīrī; ma-ngīrī",
+          "pronunciation": "ngīrī; ma-ngīrī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "All",
+          "translation": "-ōþē",
+          "pronunciation": "-ōþē",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Plenty, many",
+          "translation": "-īṅgī",
+          "pronunciation": "-īṅgī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
         }
       ]
     },
@@ -338,6 +394,48 @@
           "translation": "Kiama kia Ngome",
           "pronunciation": "kiama kia ngome",
           "context": "Traditional Aembu council of elders",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "Mu-ru wa maiya (K.); a-rūa maiya. Mū-rata (M., Mw.)",
+          "pronunciation": "mu-ru wa maiya (k.); a-rūa maiya. mū-rata (m., mw.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Mu-þamaki; a-. Mu-nene; a-",
+          "pronunciation": "mu-þamaki; a-. mu-nene; a-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Mwana; ciana and aana. Ka-ana; tw-ana. Ka-hi; tū-hi. Ka-regω; tu-",
+          "pronunciation": "mwana; ciana and aana. ka-ana; tw-ana. ka-hi; tū-hi. ka-regω; tu-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "Mū-rū wa maiya (K.). Mū-ārī wa maitū",
+          "pronunciation": "mū-rū wa maiya (k.). mū-ārī wa maitū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Son, boy",
+          "translation": "Mū-rīū; a-rīū. Kī-hīī; i-hīī (boy)",
+          "pronunciation": "mū-rīū; a-rīū.  kī-hīī; i-hīī (boy)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Wife",
+          "translation": "Mū-kā; a-kā",
+          "pronunciation": "mū-kā; a-kā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
           "audioFile": null
         }
       ]
@@ -514,6 +612,111 @@
           "pronunciation": "nthithina",
           "context": "Wikipedia Embu_language",
           "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Mu-goṅgω; mi-. M-buta (Cuka)",
+          "pronunciation": "mu-goṅgω; mi-. m-buta (cuka)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Belly",
+          "translation": "N-da; ma-nda",
+          "pronunciation": "n-da; ma-nda",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast (man's)",
+          "translation": "Gi-þūri; i-þūri. Ki-ai; ci- (E.). Ru-ria; n-dia (M.). Ru-gωnω; ṅ- (Mw.)",
+          "pronunciation": "gi-þūri; i-þūri. ki-ai; ci- (e.). ru-ria; n-dia (m.). ru-gωnω; ṅ- (mw.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast (woman's)",
+          "translation": "Ny-ondω; cia- or ma-ny-ondω (see above)",
+          "pronunciation": "ny-ondω; cia- or ma-ny-ondω (see above)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "kī-ara; ci-ara",
+          "pronunciation": "kī-ara; ci-ara",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "I-kinya; ma-. Kū-gūrū; ma-",
+          "pronunciation": "i-kinya; ma-. kū-gūrū; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Ngorω; ma-",
+          "pronunciation": "ngorω; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "N-dīra, Gī-tīnyī; i-tīnyī. Gī-tūrwa (N.). Mū-þiginyω (E.). N-tωgigω (M.). Ki-soṅua (Mw.)",
+          "pronunciation": "n-dīra,  gī-tīnyī; i-tīnyī. gī-tūrwa (n.). mū-þiginyω (e.). n-tωgigω (m.). ki-so",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "I-rū; ma-rū",
+          "pronunciation": "i-rū; ma-rū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "Kū-gūrū; ma-. Mū-þīrīmω (shin). Kī-zimω",
+          "pronunciation": "kū-gūrū; ma-.  mū-þīrīmω (shin). kī-zimω",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Nail (of finger or toe)",
+          "translation": "Rū-ara; ndw-ara (N.: nj-ara)",
+          "pronunciation": "rū-ara; ndw-ara (n.: nj-ara)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "Kī-āndi; ci-āndi",
+          "pronunciation": "kī-āndi; ci-āndi",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tear",
+          "translation": "Rī-īþōrī; ma-īþōrī",
+          "pronunciation": "rī-īþōrī; ma-īþōrī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thigh",
+          "translation": "Kī-ērō; ci-ērō",
+          "pronunciation": "kī-ērō; ci-ērō",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Toe",
+          "translation": "Kī-ara; ci-ara",
+          "pronunciation": "kī-ara; ci-ara",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
         }
       ]
     },
@@ -625,6 +828,160 @@
           "translation": "ĩtumbĩ (pl. matumbĩ)",
           "pronunciation": "itumbi (pl. matumbi)",
           "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Ant",
+          "translation": "Þi-girriri, N-digirriri; cia-",
+          "pronunciation": "þi-girriri, n-digirriri; cia-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ant, white (termite)",
+          "translation": "Mu-þwa; mi-þwa. N-guiya. Mū-kω (Embu)",
+          "pronunciation": "mu-þwa; mi-þwa. n-guiya. mū-kω (embu)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Baboon",
+          "translation": "Nωgω or Nugu",
+          "pronunciation": "nωgω or nugu",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bee",
+          "translation": "N-juki; pl. same",
+          "pronunciation": "n-juki; pl. same",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "M-bωgω; pl. same",
+          "pronunciation": "m-bωgω; pl. same",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "N-degwa; pl. same. N-jamba (C., M.)",
+          "pronunciation": "n-degwa; pl. same. n-jamba (c., m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cat",
+          "translation": "Paka (Swahili). Ki-maṅga; ci- (wild)",
+          "pronunciation": "paka (swahili). ki-maṅga; ci- (wild)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "N-ombe; pl. same. Mori (heifer)",
+          "pronunciation": "n-ombe; pl. same. mori (heifer)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "Ki-ṅgaṅgi; i-",
+          "pronunciation": "ki-ṅgaṅgi; i-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey",
+          "translation": "M-būnda, Biūnda",
+          "pronunciation": "m-būnda, biūnda",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fowl",
+          "translation": "N-gūkū",
+          "pronunciation": "n-gūkū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Frog",
+          "translation": "Kī-ūra; ci-ūra",
+          "pronunciation": "kī-ūra; ci-ūra",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "N-dūiga",
+          "pronunciation": "n-dūiga",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat (he)",
+          "translation": "N-þeṅgi. Ki-hīa (M.)",
+          "pronunciation": "n-þeṅgi. ki-hīa (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat (she)",
+          "translation": "Mū-gωma; mī-. Mū-ka (N., M.)",
+          "pronunciation": "mū-gωma; mī-.  mū-ka (n., m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Guinea-fowl",
+          "translation": "N-gāṅga",
+          "pronunciation": "n-gāṅga",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "Hiti; ma-",
+          "pronunciation": "hiti; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "N-garī; ma- (N-gare (M.))",
+          "pronunciation": "n-garī; ma- (n-gare (m.))",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Monkey",
+          "translation": "N-gīma; ma- (N-kīma (M.))",
+          "pronunciation": "n-gīma; ma- (n-kīma (m.))",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ox",
+          "translation": "N-dēgwa",
+          "pronunciation": "n-dēgwa",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Pigeon",
+          "translation": "N-dūtūra (K.). N-jīwa (M.)",
+          "pronunciation": "n-dūtūra (k.).  n-jīwa (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Zebra",
+          "translation": "N-jāgī",
+          "pronunciation": "n-jāgī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
           "audioFile": null
         }
       ]
@@ -2138,6 +2495,111 @@
           "pronunciation": "ee-vyah",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
+        },
+        {
+          "english": "Charcoal",
+          "translation": "I-kara; ma-",
+          "pronunciation": "i-kara; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cold",
+          "translation": "Hehω; pl. same",
+          "pronunciation": "hehω; pl. same",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "Mū-titū; mī-titū. Gi-þaka (M.)",
+          "pronunciation": "mū-titū; mī-titū. gi-þaka (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "Ny-eki; ma-",
+          "pronunciation": "ny-eki; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ground",
+          "translation": "Þī; ma-þī. Tīri (soil)",
+          "pronunciation": "þī; ma-þī. tīri (soil)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ground-nut",
+          "translation": "N-jūgū (Cajanu Indicus)",
+          "pronunciation": "n-jūgū (cajanu indicus)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hill",
+          "translation": "Ka-rima; tū-",
+          "pronunciation": "ka-rima; tū-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Island",
+          "translation": "Gī-cigīrīra; i-",
+          "pronunciation": "gī-cigīrīra; i-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake",
+          "translation": "I-rīa; ma-rīa",
+          "pronunciation": "i-rīa; ma-rīa",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "Kī-rīma; i-rīma",
+          "pronunciation": "kī-rīma; i-rīma",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "N-jātā; pl. same or ma-",
+          "pronunciation": "n-jātā; pl. same or ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Stone",
+          "translation": "I-hīga; ma-",
+          "pronunciation": "i-hīga; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thorn",
+          "translation": "Mū-īgua; mī-īgua",
+          "pronunciation": "mū-īgua; mī-īgua",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Well, source",
+          "translation": "I-þīma; ma-",
+          "pronunciation": "i-þīma; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Wood",
+          "translation": "Rū-kū; ṅ-gū",
+          "pronunciation": "rū-kū; ṅ-gū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
         }
       ]
     },
@@ -2249,6 +2711,62 @@
           "translation": "ũtaro",
           "pronunciation": "utaro",
           "context": "Wikipedia Embu_language",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "I-rigω; ma-. Gi-tωke (fruit)",
+          "pronunciation": "i-rigω; ma-. gi-tωke (fruit)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fat, oil",
+          "translation": "Ma-guta. Ṅ-gorωnω (butter)",
+          "pronunciation": "ma-guta.  ṅ-gorωnω (butter)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "Ū-ūkī; mō-ūkī",
+          "pronunciation": "ū-ūkī; mō-ūkī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger",
+          "translation": "N-g'aragu. M-būta (M.)",
+          "pronunciation": "n-g'aragu.  m-būta (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Maize",
+          "translation": "M-bembē; ma-",
+          "pronunciation": "m-bembē; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm wine, beer",
+          "translation": "N-jωhi",
+          "pronunciation": "n-jωhi",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Yam",
+          "translation": "Gī-kwa; i-kwa",
+          "pronunciation": "gī-kwa; i-kwa",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To eat",
+          "translation": "-rīā",
+          "pronunciation": "-rīā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
           "audioFile": null
         }
       ]
@@ -2579,6 +3097,13 @@
           "pronunciation": "koo-veh",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
+        },
+        {
+          "english": "To —",
+          "translation": "Kū-, Gū-",
+          "pronunciation": "kū-, gū-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
         }
       ]
     },
@@ -2606,13 +3131,6 @@
           "translation": "Kiama kia Ngome & Mũtĩ wa Ngai (Mũgumo sacred fig tree)",
           "pronunciation": "ki-a-ma kia ngo-me / mu-gu-mo",
           "context": "C. W. Hobley (1910, pp. 146–155) & Johnston (1919)",
-          "audioFile": null
-        },
-        {
-          "english": "Mount Kenya Dialect Variants in Johnston (1919, Vol. I, pp. 98–112 #11 E. Embu, C. Cuka, Mw. Mwimbe, M. Meru #11a, Emb. Emberre, Þ. Þeraka, Ig. Igωji)",
-          "translation": "Dialectal Variants Recorded by Johnston (pp. 98–106): Mū-kω (white ant/termite, Embu), M-buta (back, Cuka), Ki-ai pl. ci- (man's breast, Embu) / Ru-ria pl. n-dia (Meru) / Ru-gωnω (Mwimbe), Mū-rata (brother, Meru/Mwimbe), N-jamba (bull, Cuka/Meru), Rū-sena (country, Meru), Mu-tinjire (doctor/diviner, Embu/Meru), Ṅ-giti (dog, Meru/Embu), Mū-raṅgω (door, Meru), A-va (father, Embu) / Ba-va (father/grandfather, Meru) / Ūma (grandfather, Embu), G-itigirra (fear, Meru) / Ṅ-korora (fear, Mwimbe), Gi-þaka (forest, Meru), N-kuā (ghost, Meru), Ki-hīa (he-goat, Meru), Mu-ruṅgu (God, Cuka/Embu/Meru), Mū-þiginyω (heel, Embu) / N-tωgigω (Meru) / Ki-soṅua (Mwimbe), Kī-būtū (hoe, Embu) / I-þanwa (hoe, Meru), Gī-þūnω (hut, Embu), M-būta (hunger, Meru), N-gatia (lion, Nyeri/Meru), Mami (mother, Meru), N-jīwa (pigeon, Meru), Kī-gwū/Gωcu (song, Embu) / Mū-ūmba (song, Meru), Kī-rāma (spear, Meru), Siyare (stick, Meru), N-twmōi (tail, Meru), Mā-zigūma (urine, Meru), Rω-e (water, Meru), Mū-gūrra (woman, Meru), Kī-šīī (womb, Meru)",
-          "pronunciation": "mu-kω / ki-ai / mu-ti-nji-re / gi-bu-tu / gi-thu-nω / ki-gwu",
-          "context": "Sir Harry H. Johnston, 'A Comparative Study of the Bantu and Semi-Bantu Languages' (Vol. I, 1919, pp. 98–112; Vol. II, 1922, pp. 28–30)",
           "audioFile": null
         }
       ]
@@ -2704,6 +3222,818 @@
           "translation": "va? (kũ?)",
           "pronunciation": "vah / koo",
           "context": "Verified comparative entry across Kenyan bantu corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Adze",
+          "translation": "Gi-tanda",
+          "pronunciation": "gi-tanda",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Animal, wild beast",
+          "translation": "Ny-ama, Ny-amω; pl. same. (M-bωra = game)",
+          "pronunciation": "ny-ama, ny-amω; pl. same. (m-bωra = game)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Mu-gui; mi-",
+          "pronunciation": "mu-gui; mi-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Axe",
+          "translation": "I-þanwa; ma-. Danŭa, I-tsanωa",
+          "pronunciation": "i-þanwa; ma-. danŭa, i-tsanωa",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "ki-reru; ci- (chin). N-deru",
+          "pronunciation": "ki-reru; ci- (chin). n-deru",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Body",
+          "translation": "Mw-īrī; mī-īrī",
+          "pronunciation": "mw-īrī; mī-īrī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Borassus palm",
+          "translation": "? Mu-þi (M.)",
+          "pronunciation": "? mu-þi (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "U-ta; mō-ta",
+          "pronunciation": "u-ta; mō-ta",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bowels",
+          "translation": "Ma-ra",
+          "pronunciation": "ma-ra",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Brains",
+          "translation": "Tombω; ma-. Kererīω (K.) or Kerriω",
+          "pronunciation": "tombω; ma-. kererīω (k.) or kerriω",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Buttocks",
+          "translation": "I-tina; ma-. Ma-takω. I-cuze; ma-",
+          "pronunciation": "i-tina; ma-. ma-takω. i-cuze; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Canoe",
+          "translation": "Mw-atω (K.) (wooden bee-hive). Gi-taru; i-",
+          "pronunciation": "mw-atω (k.) (wooden bee-hive). gi-taru; i-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth",
+          "translation": "Tama; ma-. N-guω",
+          "pronunciation": "tama; ma-. n-guω",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Country",
+          "translation": "Bū-rīrī; ma-. Gi-þaka. Rū-sena (M.)",
+          "pronunciation": "bū-rīrī; ma-. gi-þaka. rū-sena (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Mū-þi; mī-þi. Hiṅgω",
+          "pronunciation": "mū-þi; mī-þi. hiṅgω",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Devil, evil spirit",
+          "translation": "N-gωma; ma-",
+          "pronunciation": "n-gωma; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Doctor (medicine man)",
+          "translation": "Mū-ragūri; a-. Mu-tinjire (E., M.)",
+          "pronunciation": "mū-ragūri; a-. mu-tinjire (e., m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Door",
+          "translation": "Mū-rωmω, Mū-þωme (K.); mi-. Rigi (door). Mū-raṅgω (M.)",
+          "pronunciation": "mū-rωmω, mū-þωme (k.); mi-. rigi (door). mū-raṅgω (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Dream",
+          "translation": "Kī-rωtω; i-rωtω",
+          "pronunciation": "kī-rωtω; i-rωtω",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Drum",
+          "translation": "Ki-hembi; i-hembi. Nd-arama; ma-. Mū-gωkω. K-imbω (N.)",
+          "pronunciation": "ki-hembi; i-hembi. nd-arama; ma-. mū-gωkω.  k-imbω (n.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Excrement",
+          "translation": "Mai (K.); ma-mai. Mu-rua (N.)",
+          "pronunciation": "mai (k.); ma-mai.  mu-rua (n.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Face, forehead",
+          "translation": "Ū-þiū; mω-þiū. Ci-eri (M.)",
+          "pronunciation": "ū-þiū; mω-þiū. ci-eri (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fear",
+          "translation": "Gu-oya; mō-oya. G-itigirra (M.). Ṅ-korora (Mw.)",
+          "pronunciation": "gu-oya; mō-oya. g-itigirra (m.).  ṅ-korora (mw.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ghost",
+          "translation": "Ngωma; ma-. Ki-ruru. N-kuā (M.)",
+          "pronunciation": "ngωma; ma-. ki-ruru. n-kuā (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Girl",
+          "translation": "Mū-irītu; a-irītu. Kī-rigū; i-rigū",
+          "pronunciation": "mū-irītu; a-irītu.  kī-rigū; i-rigū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandparent",
+          "translation": "Gūka (E.: Ūma, M.: Ba-va) ♂. Cūcū ♀ (K.)",
+          "pronunciation": "gūka (e.: ūma, m.: ba-va) ♂.  cūcū ♀ (k.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Gun",
+          "translation": "Mū-ciṅga; mī-",
+          "pronunciation": "mū-ciṅga; mī-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hide",
+          "translation": "Rū-ūa; nj-ūa",
+          "pronunciation": "rū-ūa; nj-ūa",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "N-guū",
+          "pronunciation": "n-guū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hoe",
+          "translation": "I-cembī; ma-. Kī-būtū (E.). Mū-rō (wooden). I-þanwa (M.)",
+          "pronunciation": "i-cembī; ma-.  kī-būtū (e.). mū-rō (wooden). i-þanwa (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron",
+          "translation": "Kī-gera; i-gera. Kī-kama (iron ore)",
+          "pronunciation": "kī-gera; i-gera.  kī-kama (iron ore)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ivory",
+          "translation": "Mū-gūī; mī-",
+          "pronunciation": "mū-gūī; mī-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Lips",
+          "translation": "Kī-rωmω; i-. Mū-rωmω; mī- (mouth)",
+          "pronunciation": "kī-rωmω; i-. mū-rωmω; mī- (mouth)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Magic",
+          "translation": "Ū-rωgi; mō-rωgi",
+          "pronunciation": "ū-rωgi; mō-rωgi",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "Mū-ndū; a-ndū",
+          "pronunciation": "mū-ndū; a-ndū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Man, vir.",
+          "translation": "Mū-rūmē; a-",
+          "pronunciation": "mū-rūmē; a-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Medicine",
+          "translation": "Mū-þaiga; mī-",
+          "pronunciation": "mū-þaiga; mī-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Penis",
+          "translation": "Mū-þīta; mī-",
+          "pronunciation": "mū-þīta; mī-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Pig",
+          "translation": "N-gūrūwē",
+          "pronunciation": "n-gūrūwē",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Place",
+          "translation": "Ha-ndū; kū-ndū",
+          "pronunciation": "ha-ndū; kū-ndū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Rat",
+          "translation": "M-bīa; pl. same",
+          "pronunciation": "m-bīa; pl. same",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "Hūria; ma-",
+          "pronunciation": "hūria; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Road",
+          "translation": "N-jīra; ma-",
+          "pronunciation": "n-jīra; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Shame",
+          "translation": "Þωnī",
+          "pronunciation": "þωnī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "N-gō; ma-",
+          "pronunciation": "n-gō; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Slave",
+          "translation": "Ngōmbω; ma-",
+          "pronunciation": "ngōmbω; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "Tōrω; ma-",
+          "pronunciation": "tōrω; ma-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Song",
+          "translation": "Rū-īmbω; ny-īmbω. Kī-gwū, Gωcu (E.). Mū-ūmba (M.). Kī-suka (N.)",
+          "pronunciation": "rū-īmbω; ny-īmbω.  kī-gwū, gωcu (e.). mū-ūmba (m.).  kī-suka (n.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Spirit, soul",
+          "translation": "Ngōma; ma-. Kī-rūrū",
+          "pronunciation": "ngōma; ma-. kī-rūrū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Stick",
+          "translation": "Mū-tirīma; mī-. Rū-þanju; þanju. Siyare (M.)",
+          "pronunciation": "mū-tirīma; mī-.  rū-þanju; þanju.  siyare (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Stool",
+          "translation": "Gī-tī; i-tī",
+          "pronunciation": "gī-tī; i-tī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Testicles",
+          "translation": "Hēkkē (pl.)",
+          "pronunciation": "hēkkē (pl.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thief",
+          "translation": "Mū-īci; a-īci",
+          "pronunciation": "mū-īci; a-īci",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thing",
+          "translation": "Kī-ndū; i-ndū",
+          "pronunciation": "kī-ndū; i-ndū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tobacco",
+          "translation": "M-bāki",
+          "pronunciation": "m-bāki",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To-day",
+          "translation": "Ūmū-þi",
+          "pronunciation": "ūmū-þi",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To-morrow",
+          "translation": "Rū-ciū",
+          "pronunciation": "rū-ciū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Town",
+          "translation": "I-tūūra; ma-. Mū-ciī (homestead)",
+          "pronunciation": "i-tūūra; ma-.  mū-ciī (homestead)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Twins",
+          "translation": "Ma-haþa (pl.)",
+          "pronunciation": "ma-haþa (pl.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Vein",
+          "translation": "Mū-kīha; mī-",
+          "pronunciation": "mū-kīha; mī-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "White man",
+          "translation": "Mū-þūṅgū; a-",
+          "pronunciation": "mū-þūṅgū; a-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Witch",
+          "translation": "Mū-rōgi; a-",
+          "pronunciation": "mū-rōgi; a-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Witchcraft",
+          "translation": "Ū-rōgi",
+          "pronunciation": "ū-rōgi",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Mū-tūmia; a-. Mū-kā; a-. Kī-rēgω; i-. Mū-hīki (young). Mū-gūrra (M.)",
+          "pronunciation": "mū-tūmia; a-.  mū-kā; a-.  kī-rēgω; i-. mū-hīki (young).  mū-gūrra (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Womb",
+          "translation": "N-da. Ny-ūṅgū (K.). Kī-šīī (M.)",
+          "pronunciation": "n-da.  ny-ūṅgū (k.). kī-šīī (m.)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "Mw-āka; mī-āka. Kī-mēra (season)",
+          "pronunciation": "mw-āka; mī-āka.  kī-mēra (season)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven",
+          "translation": "I-kūmi na ī-mwe",
+          "pronunciation": "i-kūmi na ī-mwe",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "I, me, my",
+          "translation": "Nīī, Nīē. Ndi-, N-. -n-. -ākwa",
+          "pronunciation": "nīī, nīē.  ndi-, n-. -n-. -ākwa",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thou, thee, thy",
+          "translation": "We, Wee. Ū-. -kū-. -āku",
+          "pronunciation": "we, wee.  ū-. -kū-. -āku",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "He, him, his",
+          "translation": "We. A-, Ū-. -mū-. -ākē",
+          "pronunciation": "we. a-, ū-. -mū-. -ākē",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "We, us, our",
+          "translation": "I-þuī. Tū-. -tū-. -ītū",
+          "pronunciation": "i-þuī. tū-. -tū-. -ītū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ye, you, your",
+          "translation": "I-nyuī. Mū-. -mū-. -ānyū",
+          "pronunciation": "i-nyuī. mū-. -mū-. -ānyū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "They, them, their",
+          "translation": "O, Mō. A-, Mā-. -mā-. -āō",
+          "pronunciation": "o, mō. a-, mā-. -mā-. -āō",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "This, these",
+          "translation": "Ū-yū, ā-ā; ū-yū, ī-nō; rī-rī, mā-yā; gī-kī, ī-cī; ī-nō, ī-cī; rū-rū; tū-tū; kā-kā; ū-yū; kū-kū; hā-hā",
+          "pronunciation": "ū-yū, ā-ā; ū-yū, ī-nō; rī-rī, mā-yā; gī-kī, ī-cī; ī-nō, ī-cī; rū-rū; tū-tū; kā-k",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "That, those",
+          "translation": "Ū-cio, ā-cio; ū-cio, ī-cio; rī-rīa, mā-rīa; kī-rīa, cī-rīa; &c.",
+          "pronunciation": "ū-cio, ā-cio; ū-cio, ī-cio; rī-rīa, mā-rīa; kī-rīa, cī-rīa; &c.",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Female",
+          "translation": "-kā",
+          "pronunciation": "-kā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fierce, sharp",
+          "translation": "-ūrū. -ūgī (sharp)",
+          "pronunciation": "-ūrū. -ūgī (sharp)",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Great",
+          "translation": "-nēnē",
+          "pronunciation": "-nēnē",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Little",
+          "translation": "-nīīnī",
+          "pronunciation": "-nīīnī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Long",
+          "translation": "-raihū",
+          "pronunciation": "-raihū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Male",
+          "translation": "-rūmē",
+          "pronunciation": "-rūmē",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Old",
+          "translation": "-kūrū",
+          "pronunciation": "-kūrū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Rotten",
+          "translation": "-ōrū",
+          "pronunciation": "-ōrū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Short",
+          "translation": "-kūhī",
+          "pronunciation": "-kūhī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Sick",
+          "translation": "-rūārū",
+          "pronunciation": "-rūārū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Above, up, on top",
+          "translation": "I-gūrū",
+          "pronunciation": "i-gūrū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Before",
+          "translation": "M-bērē",
+          "pronunciation": "m-bērē",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Behind",
+          "translation": "Þūtha",
+          "pronunciation": "þūtha",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Below, down",
+          "translation": "Þī",
+          "pronunciation": "þī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Far",
+          "translation": "Kū-raihū",
+          "pronunciation": "kū-raihū",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Here",
+          "translation": "Hā-hā",
+          "pronunciation": "hā-hā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "In, inside",
+          "translation": "-þēnī",
+          "pronunciation": "-þēnī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Middle",
+          "translation": "Gā-tīgātī",
+          "pronunciation": "gā-tīgātī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Near",
+          "translation": "Hā-kūhī",
+          "pronunciation": "hā-kūhī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Outside",
+          "translation": "N-jā",
+          "pronunciation": "n-jā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "There",
+          "translation": "Hā-rīa, Kū-rīa",
+          "pronunciation": "hā-rīa, kū-rīa",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "No!",
+          "translation": "Ācā!, Tī-gō!",
+          "pronunciation": "ācā!, tī-gō!",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Not (with verb, as prefix, infix, or suffix)",
+          "translation": "Ndi-, Tī-, -tī-, -tā-",
+          "pronunciation": "ndi-, tī-, -tī-, -tā-",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To beat",
+          "translation": "-hūrā, -rīṅgā",
+          "pronunciation": "-hūrā, -rīṅgā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To buy / To sell",
+          "translation": "-gūrā, -ēndia",
+          "pronunciation": "-gūrā, -ēndia",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To come",
+          "translation": "-ūkā",
+          "pronunciation": "-ūkā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To cut",
+          "translation": "-tīniā, -tēmā",
+          "pronunciation": "-tīniā, -tēmā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To dance",
+          "translation": "-īnā",
+          "pronunciation": "-īnā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To die",
+          "translation": "-kūā",
+          "pronunciation": "-kūā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "-hē",
+          "pronunciation": "-hē",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To go",
+          "translation": "-þiī",
+          "pronunciation": "-þiī",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To kill",
+          "translation": "-ūragā",
+          "pronunciation": "-ūragā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "-mēnyā",
+          "pronunciation": "-mēnyā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To laugh",
+          "translation": "-þēkā",
+          "pronunciation": "-þēkā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To leave off / cease",
+          "translation": "-tīgā",
+          "pronunciation": "-tīgā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To love / want",
+          "translation": "-ēndā",
+          "pronunciation": "-ēndā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "-ōnā, -rōrā",
+          "pronunciation": "-ōnā, -rōrā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To sit / remain / abide",
+          "translation": "-īkāra",
+          "pronunciation": "-īkāra",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep",
+          "translation": "-kōmā",
+          "pronunciation": "-kōmā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To stand / stop",
+          "translation": "-rūgāmā",
+          "pronunciation": "-rūgāmā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "To steal",
+          "translation": "-īyā",
+          "pronunciation": "-īyā",
+          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
           "audioFile": null
         }
       ]

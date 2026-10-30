@@ -356,7 +356,7 @@ export default function CountyIndexPage() {
             {filtered.map((county) => (
               <Link
                 key={county.code}
-                href={`/county/${county.slug}`}
+                href={`/county/${county.slug}/`}
                 className="group block bg-bg-card border border-border rounded-xl p-5 hover:border-gold/50 transition-colors"
               >
                 <div className="flex items-start justify-between mb-3">
@@ -433,7 +433,7 @@ export default function CountyIndexPage() {
                     return (
                       <tr key={c.code} className="hover:bg-white/[0.02] transition-colors">
                         <td className="py-3 px-4 font-semibold text-text-primary">
-                          <Link href={`/county/${c.slug}`} className="hover:text-gold transition-colors">
+                          <Link href={`/county/${c.slug}/`} className="hover:text-gold transition-colors">
                             <span className="text-text-muted font-mono mr-1.5">
                               {String(c.code).padStart(3, "0")}
                             </span>
@@ -481,7 +481,7 @@ export default function CountyIndexPage() {
               <div className="flex items-center justify-between border-b border-border pb-3">
                 <div>
                   <Link
-                    href={`/county/${c.slug}`}
+                    href={`/county/${c.slug}/`}
                     className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary hover:text-gold transition-colors"
                   >
                     {String(c.code).padStart(3, "0")}. {c.name} County
@@ -489,7 +489,7 @@ export default function CountyIndexPage() {
                   <p className="text-xs text-text-muted">HQ: {c.capital} · {c.constituencies.length} Constituencies</p>
                 </div>
                 <Link
-                  href={`/county/${c.slug}`}
+                  href={`/county/${c.slug}/`}
                   className="text-xs font-semibold text-gold hover:underline"
                 >
                   Full Profile →
@@ -546,7 +546,7 @@ export default function CountyIndexPage() {
                 <div className="flex items-start justify-between">
                   <div>
                     <Link
-                      href={`/county/${c.slug}`}
+                      href={`/county/${c.slug}/`}
                       className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary hover:text-gold transition-colors"
                     >
                       {String(c.code).padStart(3, "0")}. {c.name} County
@@ -641,12 +641,12 @@ export default function CountyIndexPage() {
                 <tr className="border-b border-border bg-bg-elevated/60">
                   <th className="py-3 px-4 text-text-muted uppercase text-xs">Metric</th>
                   <th className="py-3 px-4 font-bold text-gold">
-                    <Link href={`/county/${countyA.slug}`} className="hover:underline">
+                    <Link href={`/county/${countyA.slug}/`} className="hover:underline">
                       {String(countyA.code).padStart(3, "0")}. {countyA.name} County →
                     </Link>
                   </th>
                   <th className="py-3 px-4 font-bold text-kenya-green-light">
-                    <Link href={`/county/${countyB.slug}`} className="hover:underline">
+                    <Link href={`/county/${countyB.slug}/`} className="hover:underline">
                       {String(countyB.code).padStart(3, "0")}. {countyB.name} County →
                     </Link>
                   </th>

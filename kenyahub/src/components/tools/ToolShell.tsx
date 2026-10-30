@@ -1,71 +1,51 @@
 import Link from "next/link";
-import { getRelatedTools, getCategoryInfo, TOOLS } from "@/lib/tools-registry";
-import type { Tool } from "@/lib/types";
-import toolGuidesData from "@/data/tool-guides.json";
-import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
-import PinToolButton from "./PinToolButton";
-import ToolAccessTracker from "./ToolAccessTracker";
+import { Tool } from "@/lib/types";
+import { getCategoryInfo, getRelatedTools } from "@/lib/tools-registry";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import toolGuidesData from "@/data/tool-guides.json";
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
 
 interface ToolShellProps {
   tool: Tool;
   children: React.ReactNode;
-  faq?: { question: string; answer: string }[];
-  breadcrumbSuffix?: { label: string; href?: string }[];
+  faq?: FAQItem[];
+  breadcrumbSuffix?: BreadcrumbItem[];
   hideHeader?: boolean;
   hideFooter?: boolean;
 }
 
-export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideHeader = false, hideFooter = false }: ToolShellProps) {
-  const related = getRelatedTools(tool.slug, 4);
+export default function ToolShell({
+  tool,
+  children,
+  faq = [],
+  breadcrumbSuffix = [],
+  hideHeader = false,
+  hideFooter = false,
+}: ToolShellProps) {
   const category = getCategoryInfo(tool.category);
+  const related = getRelatedTools(tool.slug, 4);
+  const guide = (
+    toolGuidesData.guides as Record<
+      string,
+      { notesTitle?: string; notes?: string[]; faq?: FAQItem[] }
+    >
+  )[tool.slug];
 
-  // Merge page FAQs with tool-guides.json FAQs so no tool ever lacks FAQ content
-  const guideEntry = (toolGuidesData as any)?.guides?.[tool.slug] || {};
-  const effectiveFaq: { question: string; answer: string }[] =
-    faq && faq.length > 0 ? faq : guideEntry.faq || [];
-  const guideNotes: string[] = guideEntry.notes || [];
+  const effectiveFaq: FAQItem[] =
+    faq.length > 0 ? faq : guide?.faq || [];
+  const guideNotes: string[] = guide?.notes || [];
+  const isCulturalOrLanguageTool = tool.category === "language-learning";
 
-  // Related blog posts for deep publisher content & internal SEO linking
-  const relatedPosts = STATIC_BLOG_POSTS.filter((post) => {
-    const text = `${post.title} ${post.excerpt} ${(post.tags || []).join(" ")}`.toLowerCase();
-    return (
-      text.includes(tool.shortTitle.toLowerCase()) ||
-      tool.keywords.some((kw) => text.includes(kw.split(" ")[0].toLowerCase()))
-    );
-  }).slice(0, 2);
-
-  const faqSchema =
-    effectiveFaq.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: effectiveFaq.map((q) => ({
-            "@type": "Question",
-            name: q.question,
-            acceptedAnswer: { "@type": "Answer", text: q.answer },
-          })),
-        }
-      : null;
-
-  const toolSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: tool.title,
-    url: `https://kenyahub.me/tools/${tool.slug}/`,
-    applicationCategory: "UtilityApplication",
-    operatingSystem: "All",
-    inLanguage: "en-KE",
-    isAccessibleForFree: true,
-    description: tool.description,
-    offers: { "@type": "Offer", price: "0", priceCurrency: "KES" },
-    provider: {
-      "@type": "Organization",
-      name: "KenyaHub",
-      url: "https://kenyahub.me",
-    },
-  };
-
+  // Build BreadcrumbList JSON-LD
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -82,26 +62,82 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
         name: "Tools",
         item: "https://kenyahub.me/tools/",
       },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: tool.shortTitle,
-        item: `https://kenyahub.me/tools/${tool.slug}/`,
-      },
+      ...(category
+        ? [
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: category.name,
+              item: `https://kenyahub.me/tools/?category=${tool.category}`,
+            },
+            {
+              "@type": "ListItem",
+              position: 4,
+              name: tool.shortTitle,
+              item: `https://kenyahub.me/tools/${tool.slug}/`,
+            },
+          ]
+        : [
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: tool.shortTitle,
+              item: `https://kenyahub.me/tools/${tool.slug}/`,
+            },
+          ]),
     ],
   };
 
+  // Build WebApplication JSON-LD
+  const appSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: tool.title,
+    description: tool.description,
+    url: `https://kenyahub.me/tools/${tool.slug}/`,
+    applicationCategory: "UtilityApplication",
+    operatingSystem: "Any",
+    inLanguage: "en-KE",
+    isAccessibleForFree: true,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "KES",
+    },
+    author: {
+      "@type": "Organization",
+      name: "KenyaHub",
+      url: "https://kenyahub.me",
+    },
+  };
+
+  // Build FAQPage JSON-LD if FAQs exist
+  const faqSchema =
+    effectiveFaq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: effectiveFaq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
+
   return (
-    <div className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-10">
-      <ToolAccessTracker tool={tool} />
-      {/* Structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
-      />
+    <div className={`max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 ${hideHeader ? "py-2 sm:py-4" : "py-3.5 sm:py-10"}`}>
+      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
       />
       {faqSchema && (
         <script
@@ -110,8 +146,9 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
         />
       )}
 
-      {/* Breadcrumbs */}
-      <nav className="flex items-center gap-1.5 text-xs text-text-muted mb-3.5 sm:mb-8">
+      {/* ── Breadcrumbs ── */}
+      {!hideHeader && (
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[0.6875rem] sm:text-xs text-text-muted mb-3 sm:mb-6 flex-wrap">
         <Link href="/" className="hover:text-gold transition-colors">
           Home
         </Link>
@@ -121,71 +158,78 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
         <Link href="/tools/" className="hover:text-gold transition-colors">
           Tools
         </Link>
+        {category && (
+          <>
+            <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+            <Link
+              href={`/tools/?category=${tool.category}`}
+              className="hover:text-gold transition-colors"
+            >
+              {category.name}
+            </Link>
+          </>
+        )}
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        {!breadcrumbSuffix ? (
-          <span className="text-text-secondary truncate">{tool.shortTitle}</span>
-        ) : (
+        {breadcrumbSuffix.length > 0 ? (
           <>
-            <Link href={`/tools/${tool.slug}/`} className="hover:text-gold transition-colors truncate">
+            <Link href={`/tools/${tool.slug}/`} className="hover:text-gold transition-colors">
               {tool.shortTitle}
             </Link>
-            {breadcrumbSuffix.map((crumb, idx) => (
-              <span key={idx} className="flex items-center gap-1.5 truncate">
-                <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            {breadcrumbSuffix.map((item, idx) => (
+              <span key={idx} className="inline-flex items-center gap-1.5">
+                <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
-                {crumb.href ? (
-                  <Link href={crumb.href} className="hover:text-gold transition-colors truncate">
-                    {crumb.label}
+                {item.href ? (
+                  <Link href={item.href} className="hover:text-gold transition-colors">
+                    {item.label}
                   </Link>
                 ) : (
-                  <span className="text-text-secondary truncate">{crumb.label}</span>
+                  <span className="text-text-secondary">{item.label}</span>
                 )}
               </span>
             ))}
           </>
+        ) : (
+          <span className="text-text-secondary">{tool.shortTitle}</span>
         )}
       </nav>
+      )}
 
-      {/* ── Header ── */}
+      {/* ── Tool Header ── */}
       {!hideHeader && (
       <header className="mb-4 sm:mb-8">
-        <div className="flex items-start gap-3 sm:gap-4 mb-2.5 sm:mb-4">
-          <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0">
-            <span className="text-2xl sm:text-[1.75rem]"><DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" /></span>
+        <div className="flex items-start gap-2.5 sm:gap-3.5 mb-2 sm:mb-3">
+          <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span className="text-xl sm:text-2xl"><DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
           </div>
-          <div className="min-w-0 flex-1">
-            <h1 className="text-lg sm:text-2xl lg:text-[1.75rem] font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-tight tracking-tight">
+          <div>
+            <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-tight tracking-tight">
               {tool.title}
             </h1>
           </div>
-          <div className="flex-shrink-0">
-            <PinToolButton toolSlug={tool.slug} />
-          </div>
         </div>
-
-        <p className="text-text-secondary text-xs sm:text-sm leading-relaxed mb-3 sm:mb-5 max-w-2xl">
+        <p className="text-text-secondary text-xs sm:text-base leading-relaxed max-w-3xl">
           {tool.description}
         </p>
-
-        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2.5">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-2.5 sm:mt-4">
           {category && (
-            <Link href={`/tools/?category=${category.id}`} className={`badge ${category.badgeClass} hover:opacity-90 transition-opacity`}>
+            <span className={`badge ${category.badgeClass}`}>
               <DynamicIcon emoji={category.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {category.name}
-            </Link>
+            </span>
           )}
-          <span className="inline-flex items-center gap-1 text-[0.625rem] text-text-muted bg-white/[0.02] border border-border rounded-full px-2 sm:px-2.5 py-0.5 sm:py-1">
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          <span className="text-[0.6875rem] text-text-muted flex items-center gap-1">
+            <svg className="w-3 h-3 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
             Source: {tool.dataSource}
           </span>
-          <span className="inline-flex items-center gap-1 text-[0.625rem] text-text-muted bg-white/[0.02] border border-border rounded-full px-2 sm:px-2.5 py-0.5 sm:py-1">
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
+          <span className="text-[0.6875rem] text-kenya-green-light flex items-center gap-1 font-medium">
+            <span className="w-1.5 h-1.5 rounded-full bg-kenya-green-light inline-block" />
             {tool.updateFrequency === "static"
               ? "Verified 2026 Reference"
               : tool.updateFrequency === "annual"
@@ -214,8 +258,17 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
           </span>
         </div>
         <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
-          The <strong>{tool.title}</strong> is maintained by the KenyaHub research team using official publications from{" "}
-          <strong>{tool.dataSource}</strong>. All calculations and lookups execute locally inside your browser for instant results and 100% data privacy.
+          {isCulturalOrLanguageTool ? (
+            <>
+              <strong>{tool.title}</strong> is curated by the KenyaHub linguistic and cultural research team using verified publications and open datasets from{" "}
+              <strong>{tool.dataSource}</strong>. All lessons, dictionary lookups, and exercises execute locally inside your browser for instant responses and 100% data privacy.
+            </>
+          ) : (
+            <>
+              The <strong>{tool.title}</strong> is maintained by the KenyaHub research team using official publications from{" "}
+              <strong>{tool.dataSource}</strong>. All calculations and lookups execute locally inside your browser for instant results and 100% data privacy.
+            </>
+          )}
         </p>
         {guideNotes.length > 0 && (
           <ul className="space-y-1.5 pt-2 border-t border-border/60 text-xs text-text-secondary">
@@ -228,7 +281,15 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
           </ul>
         )}
         <p className="text-[0.6875rem] text-text-muted pt-2 border-t border-border/50">
-          Editorial Disclaimer: Figures and reference data are provided for informational and educational purposes under Kenyan regulations. Always confirm formal filings with the relevant statutory authority ({tool.dataSource}).
+          {isCulturalOrLanguageTool ? (
+            <>
+              Editorial Note: Linguistic vocabularies, grammatical paradigms, and oral proverbs are compiled from verified public-domain monographs and open lexical corpora ({tool.dataSource}) for educational and cultural preservation purposes. Regional dialectal and orthographical variations exist across Kenyan communities.
+            </>
+          ) : (
+            <>
+              Editorial Disclaimer: Figures and reference data are provided for informational and educational purposes under Kenyan regulations. Always confirm formal filings with the relevant statutory authority ({tool.dataSource}).
+            </>
+          )}
         </p>
       </section>
 
@@ -251,19 +312,16 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
                 key={i}
                 className="group bg-bg-card border border-border rounded-xl overflow-hidden"
               >
-                <summary className="flex items-center justify-between px-4 py-3 sm:px-5 sm:py-4 cursor-pointer text-[0.8125rem] font-medium text-text-primary hover:text-gold transition-colors list-none">
-                  <span className="pr-3 sm:pr-4">{item.question}</span>
+                <summary className="flex items-center justify-between px-3.5 sm:px-5 py-3 sm:py-4 cursor-pointer text-xs sm:text-sm font-medium text-text-primary hover:text-gold transition-colors list-none">
+                  <span>{item.question}</span>
                   <svg
-                    className="w-4 h-4 text-text-muted group-open:rotate-180 transition-transform duration-200 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2.5}
+                    className="w-4 h-4 text-text-muted flex-shrink-0 ml-3 sm:ml-4 group-open:rotate-180 transition-transform duration-200"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-4 pb-3.5 sm:px-5 sm:pb-5 text-xs sm:text-sm text-text-secondary leading-relaxed border-t border-border pt-3 sm:pt-4">
+                <div className="px-3.5 sm:px-5 pb-3.5 sm:pb-4 text-xs sm:text-sm text-text-secondary leading-relaxed border-t border-border pt-2.5 sm:pt-3">
                   {item.answer}
                 </div>
               </details>
@@ -272,72 +330,36 @@ export default function ToolShell({ tool, children, faq, breadcrumbSuffix, hideH
         </section>
       )}
 
-      {/* ── Related Guides & Articles (from Blog) ── */}
-      {relatedPosts.length > 0 && (
-        <section className="mb-7 sm:mb-14">
-          <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3 sm:mb-4 flex items-center gap-2">
-            <DynamicIcon emoji="📖" className="w-4 h-4 sm:w-5 sm:h-5 text-gold" /> In-Depth Guides &amp; Articles
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
-            {relatedPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}/`}
-                className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 hover:border-gold/50 transition-colors block group"
-              >
-                <h3 className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors mb-1 line-clamp-2">
-                  {post.title}
-                </h3>
-                <p className="text-[0.6875rem] text-text-muted line-clamp-2">{post.excerpt}</p>
-                <span className="inline-block mt-2 text-[0.65rem] font-semibold text-gold">
-                  Read {post.readTime} min guide →
-                </span>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
       {/* ── Related Tools ── */}
       {related.length > 0 && (
         <section>
-          <div className="flex items-center gap-2.5 sm:gap-3 mb-3.5 sm:mb-6">
-            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-kenya-green/10 flex items-center justify-center">
-              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-              </svg>
-            </div>
-            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-              Related Tools
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
-            {related.map((rt) => {
-              const rtCat = getCategoryInfo(rt.category);
+          <div className="section-divider mb-6 sm:mb-10" />
+          <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3 sm:mb-5">
+            Related Tools
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
+            {related.map((rel) => {
+              const relCat = getCategoryInfo(rel.category);
               return (
                 <Link
-                  key={rt.slug}
-                  href={`/tools/${rt.slug}/`}
+                  key={rel.slug}
+                  href={`/tools/${rel.slug}/`}
                   className="tool-card bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 block group"
                 >
-                  <div className="flex items-start gap-2.5 sm:gap-3">
-                    <span className="text-xl tool-icon flex-shrink-0">
-                      <DynamicIcon emoji={rt.icon} className="w-[1em] h-[1em]" />
-                    </span>
-                    <div className="min-w-0">
-                      <h3 className="text-[0.8125rem] font-semibold text-text-primary mb-0.5 sm:mb-1 group-hover:text-gold transition-colors">
-                        {rt.shortTitle}
-                      </h3>
-                      <p className="text-[0.6875rem] text-text-muted line-clamp-2 leading-relaxed">
-                        {rt.description}
-                      </p>
-                      {rtCat && (
-                        <span className={`badge ${rtCat.badgeClass} mt-1.5 sm:mt-2`}>
-                          <DynamicIcon emoji={rtCat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {rtCat.name}
-                        </span>
-                      )}
-                    </div>
+                  <div className="flex items-center gap-2.5 mb-1.5 sm:mb-2">
+                    <span className="text-lg sm:text-xl tool-icon"><DynamicIcon emoji={rel.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
+                    <h3 className="text-xs sm:text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
+                      {rel.shortTitle}
+                    </h3>
                   </div>
+                  <p className="text-xs text-text-muted line-clamp-2 leading-relaxed mb-1.5 sm:mb-2">
+                    {rel.description}
+                  </p>
+                  {relCat && (
+                    <span className={`badge ${relCat.badgeClass}`}>
+                      {relCat.name}
+                    </span>
+                  )}
                 </Link>
               );
             })}

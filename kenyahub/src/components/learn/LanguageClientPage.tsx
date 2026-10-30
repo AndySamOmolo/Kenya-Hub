@@ -11,6 +11,7 @@ import GamesHub from "@/components/learn/GamesHub";
 import GrammarView from "@/components/learn/GrammarView";
 import ProverbsView from "@/components/learn/ProverbsView";
 import CustomSelect from "@/components/ui/CustomSelect";
+import SearchInput from "@/components/ui/SearchInput";
 import type {
   CourseSkill,
   UserProgress,
@@ -235,7 +236,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     description: course.config.description,
     dataSource:
       sources.length > 0
-        ? sources.slice(0, 2).map((s) => s.title.split("(")[0].trim()).join(" & ")
+        ? sources.map((s) => `${s.title.split("(")[0].trim()} (${s.published})`).join("; ")
         : LEARN_TOOL.dataSource,
   };
 
@@ -368,16 +369,13 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             </div>
 
             <div className="flex flex-col sm:flex-row gap-2.5">
-              <div className="relative flex-1">
-                <Search className="w-4 h-4 text-text-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
-                <input
-                  type="text"
-                  value={moduleSearch}
-                  onChange={(e) => setModuleSearch(e.target.value)}
-                  placeholder={`Search ${course.config.name} or English words...`}
-                  className="input-field w-full pl-10 text-sm"
-                />
-              </div>
+              <SearchInput
+                value={moduleSearch}
+                onChange={(e) => setModuleSearch(e.target.value)}
+                onClear={() => setModuleSearch("")}
+                placeholder={`Search ${course.config.name} or English words...`}
+                className="flex-1 text-sm"
+              />
               <CustomSelect
                 value={selectedUnitFilter}
                 onValueChange={(val) => setSelectedUnitFilter(val)}

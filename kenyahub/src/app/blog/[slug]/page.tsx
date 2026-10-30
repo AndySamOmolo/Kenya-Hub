@@ -40,9 +40,11 @@ export async function generateStaticParams() {
       [Query.limit(100)]
     );
 
-    appwriteSlugs = response.documents.map((doc) => ({
-      slug: doc.slug,
-    }));
+    appwriteSlugs = response.documents
+      .filter((doc: any) => (doc.readTime || 0) > 1 && (!doc.content || doc.content.length >= 800))
+      .map((doc) => ({
+        slug: doc.slug,
+      }));
   } catch (error) {
     console.error("Failed to fetch Appwrite blog posts:", error);
   }

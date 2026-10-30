@@ -885,28 +885,19 @@ export default function KenyanTranslatorPage() {
               )}
 
               {/* Search Input */}
-              <div className="mt-3 sm:mt-4 relative">
-                <Search className="absolute left-3.5 sm:left-4 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-text-muted" />
-                <input
-                  type="text"
+              <div className="mt-3 sm:mt-4">
+                <SearchInput
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
+                  onClear={() => setSearchQuery("")}
                   placeholder={
                     sourceLanguage === "english"
                       ? "Type an English word (e.g. Water, Sun, Mother, One, Fire)..."
                       : `Type a word in ${sourceDict?.languageName ?? "source language"} (or English)...`
                   }
-                  className="input-field text-sm w-full !pl-10 sm:!pl-12 !pr-10"
+                  className="text-sm w-full"
                   id="translator-search"
-                  autoComplete="off"
                 />
-                {searchQuery && (
-                  <button onClick={() => setSearchQuery("")} className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors">
-                    <svg className="w-3 h-3 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                )}
               </div>
 
               {/* Quick Suggestions & Recent Searches */}
@@ -1528,7 +1519,7 @@ export default function KenyanTranslatorPage() {
           </div>
           <ul className="space-y-1.5">
             <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Translate between any two Kenyan languages (or into all {ALL_DICTS.length} languages at once) using English as an automatic semantic bridge.</span></li>
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Grounded in verified public-domain monographs (1844–1927), Unicode CLDR, and community linguistic contributions.</span></li>
+            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Grounded in 34 verified public-domain monographs (1842–1929), Unicode CLDR, and community linguistic contributions.</span></li>
           </ul>
         </div>
 

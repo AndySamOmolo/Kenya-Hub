@@ -124,7 +124,7 @@ export default function MatatuPage() {
                 {searchResults.map((r) => (
                   <Link
                     key={`${r.townSlug}-${r.slug}`}
-                    href={`/matatu/${r.townSlug}/${r.slug}`}
+                    href={`/matatu/${r.townSlug}/${r.slug}/`}
                     className="flex items-center gap-3 px-4 py-3 hover:bg-bg-elevated transition-colors border-b border-border/50 last:border-0"
                   >
                     <DynamicIcon emoji="🚌" className="w-5 h-5 text-gold flex-shrink-0" />
@@ -154,10 +154,10 @@ export default function MatatuPage() {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
         {matatuData.towns.map((town) => (
           town.isActive ? (
-            <Link key={town.slug} href={`/matatu/${town.slug}`} className="bg-bg-card border border-gold/30 rounded-xl p-4 text-center group hover:border-gold transition-all hover:shadow-lg hover:shadow-gold/5">
+            <Link key={town.slug} href={`/matatu/${town.slug}/`} className="bg-bg-card border border-gold/30 rounded-xl p-4 text-center group hover:border-gold transition-all hover:shadow-lg hover:shadow-gold/5">
               <div className="flex justify-center mb-2"><DynamicIcon emoji="🚌" className="w-8 h-8 text-gold" /></div>
               <p className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{town.name}</p>
-              <p className="text-[0.6rem] text-gold mt-1 font-semibold">{town.routeCount} routes</p>
+              <p className="text-[0.6rem] text-gold mt-1 font-semibold">{((matatuData.routes as Record<string, unknown[]>)[town.slug]?.length ?? town.routeCount)} routes</p>
             </Link>
           ) : (
             <div key={town.slug} className="bg-bg-card border border-border rounded-xl p-4 text-center opacity-50">
@@ -173,7 +173,7 @@ export default function MatatuPage() {
       <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">Featured Verified Routes Across Kenya</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {featuredRoutes.map((route) => (
-          <Link key={`${route.townSlug}-${route.slug}`} href={`/matatu/${route.townSlug}/${route.slug}`} className="bg-bg-card border border-border rounded-xl p-4 group hover:border-gold/50 transition-all">
+          <Link key={`${route.townSlug}-${route.slug}`} href={`/matatu/${route.townSlug}/${route.slug}/`} className="bg-bg-card border border-border rounded-xl p-4 group hover:border-gold/50 transition-all">
             <div className="flex items-start gap-3">
               <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
                 <span className="text-xs font-bold text-gold">{route.routeNumber}</span>

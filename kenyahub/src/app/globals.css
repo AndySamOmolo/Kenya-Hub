@@ -94,23 +94,26 @@
   color-scheme: light;
 }
 
-/* ══════════════════════════════════════════════════
-   BASE / RESET
-   ══════════════════════════════════════════════════ */
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+@layer base {
+  /* ══════════════════════════════════════════════════
+     BASE / RESET
+     ══════════════════════════════════════════════════ */
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
 
-body {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
 }
 
-h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
-
+@layer components {
 /* ══════════════════════════════════════════════════
    KENYAN FLAG STRIPE — the iconic 5-band bar
    Black · Red · White · Green · Black
@@ -1088,4 +1091,5 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
   main .py-8 {
     padding-block: 0.9375rem;
   }
+}
 }

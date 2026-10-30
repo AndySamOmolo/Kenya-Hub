@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { Copy, Check } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import CustomSelect from "@/components/ui/CustomSelect";
 
@@ -9,6 +9,7 @@ const CONTACT_EMAIL = "andysamonyango@gmail.com";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,6 +22,14 @@ export default function ContactPage() {
     correction: "Data Discrepancy / Bug Report",
     suggestion: "New Tool Suggestion",
     advertising: "Advertising / Sponsorship",
+  };
+
+  const handleCopyEmail = () => {
+    if (typeof navigator !== "undefined" && navigator.clipboard) {
+      navigator.clipboard.writeText(CONTACT_EMAIL);
+      setCopiedEmail(true);
+      setTimeout(() => setCopiedEmail(false), 2500);
+    }
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -54,7 +63,7 @@ export default function ContactPage() {
           Contact <span className="gradient-text-kenya">KenyaHub</span>
         </h1>
         <p className="text-sm text-text-secondary max-w-xl mx-auto leading-relaxed">
-          Have feedback, found a data discrepancy, or interested in advertising opportunities? We would love to hear from you.
+          Have feedback, spotted a statutory rate update, or interested in partnership opportunities? Reach the KenyaHub editorial and engineering desk directly.
         </p>
       </div>
 
@@ -63,27 +72,44 @@ export default function ContactPage() {
         <div className="space-y-4">
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
             <DynamicIcon emoji="✉️" className="w-8 h-8 text-gold" />
-            <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Direct Email</h3>
-            <p className="text-xs text-text-muted">For general inquiries, editorial corrections, or media inquiries:</p>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="text-xs font-semibold text-gold hover:underline block">
+            <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Editorial &amp; Support Desk</h3>
+            <p className="text-xs text-text-muted">For general inquiries, data corrections, or media requests:</p>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-xs font-semibold text-gold hover:underline block break-all">
               {CONTACT_EMAIL}
             </a>
+            <button
+              type="button"
+              onClick={handleCopyEmail}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-bg-elevated border border-border hover:border-gold/50 text-[0.6875rem] font-medium text-text-secondary hover:text-gold transition-colors cursor-pointer"
+            >
+              {copiedEmail ? (
+                <>
+                  <Check className="w-3 h-3 text-kenya-green-light" />
+                  <span className="text-kenya-green-light">Copied to clipboard</span>
+                </>
+              ) : (
+                <>
+                  <Copy className="w-3 h-3" />
+                  <span>Copy Email Address</span>
+                </>
+              )}
+            </button>
           </div>
 
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
             <DynamicIcon emoji="📢" className="w-8 h-8 text-gold" />
             <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Advertising &amp; Partnerships</h3>
-            <p className="text-xs text-text-muted">Interested in reaching out to Kenyan digital audiences and decision-makers?</p>
-            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("[KenyaHub] Advertising Inquiry")}`} className="text-xs font-semibold text-gold hover:underline block">
+            <p className="text-xs text-text-muted">Interested in reaching Kenyan digital audiences and decision-makers?</p>
+            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("[KenyaHub] Advertising Inquiry")}`} className="text-xs font-semibold text-gold hover:underline block break-all">
               {CONTACT_EMAIL}
             </a>
           </div>
 
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
             <DynamicIcon emoji="🚩" className="w-8 h-8 text-gold" />
-            <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Report Data Errors</h3>
+            <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Report Data Updates</h3>
             <p className="text-xs text-text-muted">
-              Did a tax rate or matatu fare change recently? Let us know so our verification team can update the tool.
+              Did a KRA tax bracket, EPRA tariff, or matatu fare change recently? Let us know so our verification team can update the dataset.
             </p>
           </div>
         </div>
@@ -97,17 +123,28 @@ export default function ContactPage() {
               </div>
               <h2 className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)]">Opening Your Email Client</h2>
               <p className="text-xs text-text-muted max-w-sm mx-auto">
-                Your default email app should open with the message pre-filled. If it didn&apos;t open, you can email us directly at{" "}
+                Your default email app should open with the message pre-filled. If it didn&apos;t open, copy our address below or email{" "}
                 <a href={`mailto:${CONTACT_EMAIL}`} className="text-gold hover:underline font-semibold">
                   {CONTACT_EMAIL}
                 </a>.
               </p>
-              <button
-                onClick={() => { setSubmitted(false); setFormData({ name: "", email: "", subject: "general", message: "" }); }}
-                className="px-4 py-2 bg-bg-elevated text-xs font-semibold text-gold rounded-lg border border-border hover:border-gold transition-colors"
-              >
-                Send Another Message
-              </button>
+              <div className="flex flex-wrap items-center justify-center gap-2.5 pt-1">
+                <button
+                  type="button"
+                  onClick={handleCopyEmail}
+                  className="px-4 py-2 bg-bg-elevated text-xs font-semibold text-text-primary rounded-lg border border-border hover:border-gold transition-colors inline-flex items-center gap-1.5 cursor-pointer"
+                >
+                  {copiedEmail ? <Check className="w-3.5 h-3.5 text-kenya-green-light" /> : <Copy className="w-3.5 h-3.5 text-gold" />}
+                  <span>{copiedEmail ? "Email Copied!" : "Copy Email Address"}</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setSubmitted(false); setFormData({ name: "", email: "", subject: "general", message: "" }); }}
+                  className="px-4 py-2 bg-bg-elevated text-xs font-semibold text-gold rounded-lg border border-border hover:border-gold transition-colors cursor-pointer"
+                >
+                  Send Another Message
+                </button>
+              </div>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -173,13 +210,13 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full py-3 bg-gradient-to-r from-gold to-gold-vivid text-black font-bold text-sm rounded-xl shadow-lg hover:opacity-95 transition-opacity"
+                className="w-full py-3 bg-gradient-to-r from-gold to-gold-vivid text-black font-bold text-sm rounded-xl shadow-lg hover:opacity-95 transition-opacity cursor-pointer"
               >
                 Send Message →
               </button>
 
               <p className="text-[0.625rem] text-text-muted text-center">
-                This will open your default email client with the message pre-filled.
+                Opens your default email client pre-addressed to our editorial desk, or use the Copy Email button on the left.
               </p>
             </form>
           )}

@@ -13,6 +13,7 @@ export default function SearchInput({ className = "", onClear, value, ...props }
     .split(" ")
     .filter(
       (c) =>
+        Boolean(c) &&
         ![
           "input-field",
           "select-field",
@@ -22,6 +23,13 @@ export default function SearchInput({ className = "", onClear, value, ...props }
           "text-lg",
           "text-xl",
           "w-full",
+          "pl-9",
+          "pl-10",
+          "!pl-10",
+          "pr-8",
+          "pr-9",
+          "pr-10",
+          "!pr-10",
           "bg-transparent",
           "outline-none",
         ].includes(c)
@@ -32,11 +40,11 @@ export default function SearchInput({ className = "", onClear, value, ...props }
 
   return (
     <div className={`relative w-full ${wrapperClasses}`.trim()}>
-      <Search className="absolute left-3 sm:left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted pointer-events-none" />
+      <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted pointer-events-none" />
       <input
         type="text"
         value={value}
-        className={`input-field w-full !pl-9 sm:!pl-10 !pr-8 sm:!pr-9 ${
+        className={`input-field w-full !pl-10 !pr-9 ${
           isTextXs ? "!text-xs !py-1.5" : "text-xs sm:text-sm !py-2 sm:!py-2.5"
         }`}
         autoComplete="off"
@@ -46,7 +54,7 @@ export default function SearchInput({ className = "", onClear, value, ...props }
         <button
           type="button"
           onClick={onClear}
-          className="absolute right-2.5 sm:right-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors"
+          className="absolute right-2.5 sm:right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors cursor-pointer"
           aria-label="Clear search"
         >
           <X className="w-3 h-3 text-text-muted" />

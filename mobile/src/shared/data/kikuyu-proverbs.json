@@ -190,5 +190,53 @@
     "explanation": "Grounded in Rev. Fr. A. Hémery's 'English-Kikuyu Handbook' (1903) and McGregor (1904) on pastoral-agricultural stewardship in Gĩkũyũ society.",
     "englishEquivalent": "Diligence builds the home.",
     "category": "character"
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Aanake mathiĩ, athuri maikare? — Mũhu ũitwo, mahiga ma riiko matigare.",
+    "translation": "Riddle (Do you hear)! — The young men go, the old men stay? — Answer: The ashes are poured out, the three hearth-stones remain.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, 'With a Prehistoric People: The Akikuyu of British East Africa', p. 192): Kikuyu riddles are called 'Guso' ('Do you hear?'). Just as hot ashes are swept out while the three hearthstones (mahiga ma riiko) stay fixed, young warriors travel afar while the elders (kiama) remain at the homestead.",
+    "englishEquivalent": "Youth wanders, age endures.",
+    "category": "wisdom",
+    "id": 25
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩnyingĩtie? — Marigũ.",
+    "translation": "Riddle (Do you hear)! — What hangs down? — Answer: Bananas (marigũ).",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Traditional Kikuyu 'Guso' riddle reflecting the heavy banana bunches hanging in every homestead plantation (mũgũnda).",
+    "englishEquivalent": "Bountiful harvest bows low.",
+    "category": "character",
+    "id": 26
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Nĩkĩ ndĩraigua inegene? — Nyoni irĩ mũgũnda.",
+    "translation": "Riddle (Do you hear)! — Why do I hear a noise? — Answer: The birds are in the plantation (shamba).",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Refers to the commotion of grain-eating birds in the millet and maize fields, guarded by children on watch-platforms using the bull-roarer (kĩhuruta) and sling (kĩgũtha).",
+    "englishEquivalent": "Where there is commotion, there is a cause.",
+    "category": "caution",
+    "id": 27
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩgonderera njĩra-inĩ? — Ndorobo njĩra-inĩ.",
+    "translation": "Riddle (Do you hear)! — What takes a winding course? — Answer: A forest hunter (Ndorobo) on the path.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Describes the winding forest tracks of the Ogiek/Ndorobo hunters across Mount Kenya and the Aberdares.",
+    "englishEquivalent": "The forest path winds.",
+    "category": "patience",
+    "id": 28
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩambata kĩrĩma gĩkinye kĩrĩma kĩngĩ? — Kũgũrũ.",
+    "translation": "Riddle (Do you hear)! — What goes from hill to hill? — Answer: The human foot (kũgũrũ).",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): In the ridge-and-valley topography of Kikuyuland, the human foot crosses from ridge to ridge.",
+    "englishEquivalent": "Step by step crosses the mountains.",
+    "category": "work",
+    "id": 29
+  },
+  {
+    "kikuyu": "Warĩire kĩĩ ira, ka-Ndorobo? — Ũthĩ (ou-thi), na ngĩkoma. Wahuurire ta rwĩgĩ? — Ta rwĩgĩ rũtarĩ mũting'oe.",
+    "translation": "What did you eat yesterday, little Ndorobo? — Scraps of food (ou-thi), and went to sleep. Did you snatch up your food like a hawk? — Like a hawk that has lost its tail.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Traditional Kikuyu boys' rapid-fire antiphonal wordplay game.",
+    "englishEquivalent": "Quick wit parries every question.",
+    "category": "wisdom",
+    "id": 30
   }
 ]

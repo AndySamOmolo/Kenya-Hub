@@ -1,90 +1,91 @@
 "use client";
 
-import React, { useState, useRef, useEffect, ReactNode } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { ChevronDown, Check } from "lucide-react";
 
-interface Option {
+export interface SelectOption {
   value: string;
   label: string;
 }
 
-interface CustomSelectProps extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'onChange'> {
-  options?: Option[];
-  onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+interface CustomSelectProps {
+  id?: string;
+  value: string | number;
+  onChange?: (e: { target: { value: string } }) => void;
   onValueChange?: (value: string) => void;
+  options?: SelectOption[];
+  children?: React.ReactNode;
+  className?: string;
 }
 
-function extractText(node: ReactNode): string {
-  if (node === null || node === undefined || typeof node === "boolean") return "";
-  if (typeof node === "string" || typeof node === "number") return String(node);
-  if (Array.isArray(node)) return node.map(extractText).join("");
-  if (React.isValidElement(node)) {
-    return extractText((node.props as { children?: ReactNode }).children);
-  }
-  return "";
-}
-
-export default function CustomSelect({ 
-  value, 
-  onChange, 
+export default function CustomSelect({
+  id,
+  value,
+  onChange,
   onValueChange,
-  options, 
-  className = "", 
-  id, 
+  options,
   children,
+  className = "",
 }: CustomSelectProps) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  
-  const parsedOptions = React.useMemo(() => {
-    if (options) return options;
-    const items: Option[] = [];
-    
-    const traverse = (node: ReactNode) => {
-      React.Children.forEach(node, (child) => {
+
+  // Extract options from children (<option>) if `options` prop not provided
+  const parsedOptions: SelectOption[] = React.useMemo(() => {
+    if (options && options.length > 0) return options;
+    const list: SelectOption[] = [];
+
+    const extractFromNodes = (nodes: React.ReactNode) => {
+      React.Children.forEach(nodes, (child) => {
         if (!React.isValidElement(child)) return;
-        
-        const childProps = child.props as Record<string, unknown>;
-        if (child.type === "option") {
-          items.push({
-            value: childProps.value !== undefined && childProps.value !== null ? String(childProps.value) : "",
-            label: extractText(childProps.children as ReactNode),
-          });
-        } else if (childProps && childProps.children) {
-          traverse(childProps.children as ReactNode);
+        if (child.type === React.Fragment) {
+          const fragProps = child.props as { children?: React.ReactNode };
+          extractFromNodes(fragProps.children);
+        } else if (child.type === "option") {
+          const props = child.props as { value?: string | number; children?: React.ReactNode };
+          const val = props.value !== undefined ? String(props.value) : String(props.children ?? "");
+          const label =
+            typeof props.children === "string" || typeof props.children === "number"
+              ? String(props.children)
+              : Array.isArray(props.children)
+              ? props.children.map((c) => (typeof c === "string" || typeof c === "number" ? String(c) : "")).join("")
+              : val;
+          list.push({ value: val, label });
         }
       });
     };
-    
-    traverse(children);
-    return items;
-  }, [children, options]);
 
-  const selectedOption = parsedOptions.find((opt) => opt.value === String(value)) || parsedOptions[0];
+    extractFromNodes(children);
+    return list;
+  }, [options, children]);
+
+  const selectedOption = parsedOptions.find((o) => o.value === String(value)) || parsedOptions[0];
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
+    const handleClickOutside = (event: MouseEvent) => {
       if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
+    };
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
     }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
-  const handleSelect = (newValue: string) => {
+  const handleSelect = (val: string) => {
     if (onValueChange) {
-      onValueChange(newValue);
-    } else if (onChange) {
-      const event = {
-        target: { value: newValue },
-        currentTarget: { value: newValue }
-      } as React.ChangeEvent<HTMLSelectElement>;
-      onChange(event);
+      onValueChange(val);
+    }
+    if (onChange) {
+      onChange({ target: { value: val } });
     }
     setIsOpen(false);
   };
 
+  // Separate layout/width classes from input-field classes so the outer div sizes properly
   const filteredTokens = className
     .split(" ")
     .filter(
@@ -93,19 +94,19 @@ export default function CustomSelect({
         ![
           "input-field",
           "select-field",
+          "select-field--icon-left",
+          "has-leading-icon",
           "text-sm",
           "text-xs",
           "text-base",
           "text-lg",
-          "text-xl",
+          "bg-transparent",
+          "outline-none",
+          "cursor-pointer",
           "py-1.5",
-          "py-2",
-          "py-2.5",
           "px-3",
-          "has-leading-icon",
         ].includes(c)
-    )
-    .map((c) => (c === "w-auto" ? "w-auto min-w-[9.5rem]" : c));
+    );
 
   const hasWidthToken = filteredTokens.some(
     (c) => c.startsWith("w-") || c.includes(":w-") || c.startsWith("min-w-") || c.startsWith("flex-")
@@ -117,20 +118,27 @@ export default function CustomSelect({
   const wrapperClasses = filteredTokens.join(" ");
   const isTextXs = className.includes("text-xs");
   const isCompact = className.includes("py-1.5") || isTextXs;
-  const hasLeadingIcon = className.includes("has-leading-icon");
+  const hasLeadingIcon =
+    className.includes("has-leading-icon") || className.includes("select-field--icon-left");
+
+  const paddingAndFontClasses = isTextXs
+    ? hasLeadingIcon
+      ? "!text-xs !py-1.5 !pl-9 !pr-2.5"
+      : "!text-xs !py-1.5 !px-2.5"
+    : isCompact
+    ? hasLeadingIcon
+      ? "!py-1.5 !pl-9 !pr-3 text-xs sm:text-sm"
+      : "!py-1.5 !px-3 text-xs sm:text-sm"
+    : hasLeadingIcon
+    ? "!py-2 sm:!py-2.5 !pl-9 !pr-3 text-xs sm:text-sm"
+    : "!py-2 sm:!py-2.5 !px-3 text-xs sm:text-sm";
 
   return (
     <div className={`relative ${wrapperClasses}`.trim()} ref={containerRef} id={id}>
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`input-field flex items-center justify-between text-left cursor-pointer transition-colors w-full ${
-          isTextXs
-            ? "!text-xs !py-1.5 !px-2.5"
-            : isCompact
-            ? "!py-1.5 !px-3 text-xs sm:text-sm"
-            : "!py-2 sm:!py-2.5 !px-3 text-xs sm:text-sm"
-        } ${hasLeadingIcon ? "!pl-9" : ""} ${
+        className={`input-field flex items-center justify-between text-left cursor-pointer transition-colors w-full ${paddingAndFontClasses} ${
           isOpen ? "border-gold ring-1 ring-gold" : "hover:border-gold/50"
         }`}
       >
