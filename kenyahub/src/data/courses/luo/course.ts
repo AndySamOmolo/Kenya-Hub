@@ -2761,7 +2761,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         title: 'Action Clauses & Historical Transcriptions',
         icon: 'Zap',
         description: 'Practice short Dholuo verb clauses recorded in Johnston (1902) and the 1920 Mill-Hill Handbook.',
-        tips: 'Compare early 1902 phonetic transcriptions (such as "Wawaci" for modern "Wawacho" and "Ang'eyo" for "I know") with standard Dholuo subject prefixes a- (I) and wa- (we).',
+        tips: 'Compare early 1902 phonetic transcriptions (such as "Wawaci" for modern "Wawacho" and "Ang\'eyo" for "I know") with standard Dholuo subject prefixes a- (I) and wa- (we).',
         words: [
           {
             target: 'Ubei (totem: Rawo)',
