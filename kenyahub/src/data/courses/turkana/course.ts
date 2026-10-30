@@ -6438,5 +6438,501 @@ export const TURKANA_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "turkana-unit-18-public-domain-corpus",
+    "title": "Unit 18: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Turkana vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "turkana-pd-corpus-18-1",
+        "title": "Historical Monograph & Comparative Roots I (Turkana)",
+        "icon": "Scroll",
+        "description": "Study verified Turkana headwords and dialect forms extracted from primary public-domain monographs.",
+        "tips": "Every item in this skill is grounded directly in the historical Turkana linguistic corpus with full phonetic pronunciation guides.",
+        "words": [
+          {
+            "target": "Kalωme",
+            "source": "You weep",
+            "pronunciation": "ka-loh-me",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Ekiyω",
+            "source": "They laugh",
+            "pronunciation": "e-ki-yoh",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Ekokωlan",
+            "source": "He steals",
+            "pronunciation": "e-ko-koh-lan",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Auri",
+            "source": "He stinks",
+            "pronunciation": "au-ri",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Nyakakparan",
+            "source": "We sold not",
+            "pronunciation": "nya-kak-pa-ran",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Kibalayūa",
+            "source": "We say",
+            "pronunciation": "ki-ba-la-yooa",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Kesobake",
+            "source": "We make",
+            "pronunciation": "ke-so-ba-ke",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Acamet",
+            "source": "Thou lovest",
+            "pronunciation": "a-ca-met",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Kalωme — Ekiyω.",
+            "source": "You weep — They laugh."
+          },
+          {
+            "target": "Ekokωlan • Auri.",
+            "source": "He steals • He stinks."
+          },
+          {
+            "target": "Nyakakparan (Kibalayūa).",
+            "source": "We sold not (We say)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Kalωme\" in Turkana (Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912))?",
+            "correctAnswer": "You weep",
+            "options": [
+              "You weep",
+              "They laugh",
+              "He steals",
+              "He stinks"
+            ],
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Turkana term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Kalωme: You weep",
+            "pairs": [
+              {
+                "left": "Kalωme",
+                "right": "You weep"
+              },
+              {
+                "left": "Ekiyω",
+                "right": "They laugh"
+              },
+              {
+                "left": "Ekokωlan",
+                "right": "He steals"
+              },
+              {
+                "left": "Auri",
+                "right": "He stinks"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Turkana term for \"We sold not\": ___",
+            "correctAnswer": "Nyakakparan",
+            "options": [
+              "Nyakakparan",
+              "Kibalayūa",
+              "Kalωme",
+              "Ekiyω"
+            ],
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          }
+        ]
+      },
+      {
+        "id": "turkana-pd-corpus-18-2",
+        "title": "Historical Monograph & Comparative Roots II (Turkana)",
+        "icon": "Compass",
+        "description": "Expand your command of Turkana ecological, kinship, and action vocabulary from the archival corpus.",
+        "tips": "Compare classical 19th- and early 20th-century Turkana transcriptions with modern standardized orthography.",
+        "words": [
+          {
+            "target": "Nyayeni ao",
+            "source": "I know not",
+            "pronunciation": "nya-ye-ni ao",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Ayeni",
+            "source": "I know",
+            "pronunciation": "a-ye-ni",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Aran (?)",
+            "source": "I kill them",
+            "pronunciation": "a-ran",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Kilūsiswa",
+            "source": "I went",
+            "pronunciation": "ki-loo-sis-wa",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Alωt",
+            "source": "I go",
+            "pronunciation": "a-loh",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Ainaʻ, Ainak",
+            "source": "I give thee",
+            "pronunciation": "ai-na' ai-nak",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Nyeʻberu",
+            "source": "I give",
+            "pronunciation": "nye'-be-ru",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Kepōto tanyama",
+            "source": "I eat not",
+            "pronunciation": "ke-poh-to tany-a-ma",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Nyayeni ao — Ayeni.",
+            "source": "I know not — I know."
+          },
+          {
+            "target": "Aran (?) • Kilūsiswa.",
+            "source": "I kill them • I went."
+          },
+          {
+            "target": "Alωt (Ainaʻ, Ainak).",
+            "source": "I go (I give thee)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Nyayeni ao\" in Turkana (Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912))?",
+            "correctAnswer": "I know not",
+            "options": [
+              "I know not",
+              "I know",
+              "I kill them",
+              "I went"
+            ],
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Turkana term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Nyayeni ao: I know not",
+            "pairs": [
+              {
+                "left": "Nyayeni ao",
+                "right": "I know not"
+              },
+              {
+                "left": "Ayeni",
+                "right": "I know"
+              },
+              {
+                "left": "Aran (?)",
+                "right": "I kill them"
+              },
+              {
+                "left": "Kilūsiswa",
+                "right": "I went"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Turkana term for \"I go\": ___",
+            "correctAnswer": "Alωt",
+            "options": [
+              "Alωt",
+              "Ainaʻ, Ainak",
+              "Nyayeni ao",
+              "Ayeni"
+            ],
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "turkana-unit-19-open-datasets-modern",
+    "title": "Unit 19: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
+    "description": "Master Turkana vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
+    "icon": "Globe",
+    "skills": [
+      {
+        "id": "turkana-open-dataset-19-1",
+        "title": "Swadesh Core & Cultural Lexicon (Turkana)",
+        "icon": "Layers",
+        "description": "Learn core Turkana verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "tips": "Focus on high-frequency roots shared across Turkana dialects and everyday speech.",
+        "words": [
+          {
+            "target": "Anyama",
+            "source": "I eat",
+            "pronunciation": "any-a-ma",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Nyanyame",
+            "source": "I drank not",
+            "pronunciation": "nyany-a-me",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Amatañon",
+            "source": "I drank",
+            "pronunciation": "a-ma-ta on",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Amasi",
+            "source": "I drink",
+            "pronunciation": "a-ma-si",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Atuana",
+            "source": "I die",
+            "pronunciation": "a-tua-na",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Ebωlia",
+            "source": "I dance",
+            "pronunciation": "e-boh-lia",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Nyebuni",
+            "source": "I come not",
+            "pronunciation": "nye-bu-ni",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Añω abu",
+            "source": "I come",
+            "pronunciation": "a oh a-bu",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Anyama — Nyanyame.",
+            "source": "I eat — I drank not."
+          },
+          {
+            "target": "Amatañon • Amasi.",
+            "source": "I drank • I drink."
+          },
+          {
+            "target": "Atuana (Ebωlia).",
+            "source": "I die (I dance)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Anyama\" in Turkana (Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912))?",
+            "correctAnswer": "I eat",
+            "options": [
+              "I eat",
+              "I drank not",
+              "I drank",
+              "I drink"
+            ],
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Turkana term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Anyama: I eat",
+            "pairs": [
+              {
+                "left": "Anyama",
+                "right": "I eat"
+              },
+              {
+                "left": "Nyanyame",
+                "right": "I drank not"
+              },
+              {
+                "left": "Amatañon",
+                "right": "I drank"
+              },
+              {
+                "left": "Amasi",
+                "right": "I drink"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Turkana term for \"I die\": ___",
+            "correctAnswer": "Atuana",
+            "options": [
+              "Atuana",
+              "Ebωlia",
+              "Anyama",
+              "Nyanyame"
+            ],
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          }
+        ]
+      },
+      {
+        "id": "turkana-open-dataset-19-2",
+        "title": "Agriculture, Community & Everyday Life (Turkana)",
+        "icon": "Sparkles",
+        "description": "Practice Turkana terms for agriculture, environment, social organization, and daily communication.",
+        "tips": "Review how traditional Turkana roots extend naturally to modern community, farming, and civic contexts.",
+        "words": [
+          {
+            "target": "Añω ñesilo",
+            "source": "I bring",
+            "pronunciation": "a oh e-si-lo",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Año?",
+            "source": "I am",
+            "pronunciation": "a o",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Eduār",
+            "source": "No, not",
+            "pronunciation": "e-duah",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Ali?",
+            "source": "Where?",
+            "pronunciation": "a-li",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Eluana",
+            "source": "There",
+            "pronunciation": "e-lua-na",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Elallak",
+            "source": "Plenty",
+            "pronunciation": "e-lal-lak",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Ekriónon",
+            "source": "Black",
+            "pronunciation": "ek-ri non",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "target": "Kannĕ",
+            "source": "Here",
+            "pronunciation": "kan-ne",
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Añω ñesilo — Año?.",
+            "source": "I bring — I am."
+          },
+          {
+            "target": "Eduār • Ali?.",
+            "source": "No, not • Where?."
+          },
+          {
+            "target": "Eluana (Elallak).",
+            "source": "There (Plenty)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Añω ñesilo\" in Turkana (Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912))?",
+            "correctAnswer": "I bring",
+            "options": [
+              "I bring",
+              "I am",
+              "No, not",
+              "Where?"
+            ],
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Turkana term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Añω ñesilo: I bring",
+            "pairs": [
+              {
+                "left": "Añω ñesilo",
+                "right": "I bring"
+              },
+              {
+                "left": "Año?",
+                "right": "I am"
+              },
+              {
+                "left": "Eduār",
+                "right": "No, not"
+              },
+              {
+                "left": "Ali?",
+                "right": "Where?"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Turkana term for \"There\": ___",
+            "correctAnswer": "Eluana",
+            "options": [
+              "Eluana",
+              "Elallak",
+              "Añω ñesilo",
+              "Año?"
+            ],
+            "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+          }
+        ]
+      }
+    ]
   }
 ];

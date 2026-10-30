@@ -87,5 +87,26 @@ export const KISII_GRAMMAR_SECTIONS: KisiiGrammarSection[] = [
       { kisii: "Ndωzire (N-dozire-ge) • Ṅ-ka-rora • N-da-rora / N-di-rora • Ṅ-ku-rωzire", english: "I saw (I was seeing) • I had seen • I shall see / be seeing • I might have seen", explanation: "Preterite r → z mutation, Pluperfect, Future & Conditional (Johnston 1922, p. 498)" },
       { kisii: "Ω-ta-rora! • Ti-n-dora, T-ω-rora, T-a-rora, Ti-tu-rora, Ti-mu-rora, Ti-ba-rora • Ti-n-dozire • N-ta-rora", english: "See not! | I, thou, he, we, ye, they see not | I have not seen | I who see not", explanation: "Negative conjugation in #7 Ki-guzii & #7a Ki-kωria (Johnston 1922, p. 498)" }
     ]
+  },
+  {
+    "id": "kisii-public-domain-dataset-synthesis",
+    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Kisii (Ekegusii))",
+    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Kisii (Ekegusii).",
+    "content": "1. **Archival & Open-Dataset Integration for Kisii (Ekegusii)**:
+   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
+2. **Phonetic & Orthographic Normalization**:
+   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "examples": [
+      {
+        "kisii": "Ngωtenga • Nangire",
+        "english": "I dance • I come not",
+        "explanation": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+      },
+      {
+        "kisii": "Emuamu • Aīya, Aiga",
+        "english": "Black • Here",
+        "explanation": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+      }
+    ]
   }
 ];

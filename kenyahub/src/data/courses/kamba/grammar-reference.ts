@@ -175,5 +175,26 @@ export const KAMBA_GRAMMAR_SECTIONS: KambaGrammarSection[] = [
       { kamba: "Muluŋgu • Aīmu (Aiimu) • Mundu muə (Mũndũ mũe)", english: "Supreme Creator • Ancestral spirits • Diviner / medicine man", explanation: "Lindblom (1920, pp. 213–254) & Hobley (1910, pp. 85–95)" },
       { kamba: "Nðonī (Nthoni) • Mbai • Mwethya", english: "In-law respect/avoidance custom • Clan • Communal mutual-aid work party", explanation: "Core Akamba social institutions (Lindblom 1920)" }
     ]
+  },
+  {
+    "id": "kamba-public-domain-dataset-synthesis",
+    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Kamba (Kĩkamba))",
+    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Kamba (Kĩkamba).",
+    "content": "1. **Archival & Open-Dataset Integration for Kamba (Kĩkamba)**:
+   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
+2. **Phonetic & Orthographic Normalization**:
+   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "examples": [
+      {
+        "kamba": "wa téne • nsáu",
+        "english": "Old • New",
+        "explanation": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
+      },
+      {
+        "kamba": "muthenia monthe (Ulu) / matuk oonde (Nganyawa) • Nominal Damages",
+        "english": "always • Injury / Offence",
+        "explanation": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+      }
+    ]
   }
 ];

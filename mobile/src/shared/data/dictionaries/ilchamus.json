@@ -822,6 +822,20 @@
           "pronunciation": "ol loitikω",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
           "audioFile": null
+        },
+        {
+          "english": "Crocodile (Baringo & Ngingyang rivers)",
+          "translation": "l-kinyang'",
+          "pronunciation": "l kiny-ang'",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 49) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Fish eagle",
+          "translation": "l-kokoltim",
+          "pronunciation": "l ko-kol-tim",
+          "context": "Ilchamus Wildlife Lexicon — Heine (1980)",
+          "audioFile": null
         }
       ]
     },
@@ -1025,6 +1039,20 @@
           "pronunciation": "el gék",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
           "audioFile": null
+        },
+        {
+          "english": "Hot springs of Maji ya Moto (south Baringo)",
+          "translation": "Konyek ('the eyes / springs')",
+          "pronunciation": "kony-ek",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 51)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake Baringo (the great lake)",
+          "translation": "L-baringo / En-goni",
+          "pronunciation": "l ba-ring-o",
+          "context": "Ilchamus Geography — Dundas (1910) & Heine (1980)",
+          "audioFile": null
         }
       ]
     },
@@ -1115,6 +1143,34 @@
           "translation": "Eñ gare",
           "pronunciation": "eñ gare",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tilapia fish of Lake Baringo",
+          "translation": "l-bahe (pl. il-baheni)",
+          "pronunciation": "l ba-he",
+          "context": "Ilchamus Fishing Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Catfish / mudfish",
+          "translation": "l-kambani",
+          "pronunciation": "l kamb-a-ni",
+          "context": "Ilchamus Fishing Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Irrigation canal / furrow from Molo & Perkerra rivers",
+          "translation": "n-koriong' / l-chorro",
+          "pronunciation": "n ko-riong'",
+          "context": "Ilchamus Irrigation Agriculture — Dundas (1910, p. 54) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Irrigated grain field / shamba",
+          "translation": "n-kurma (pl. in-kurman)",
+          "pronunciation": "n kur-ma",
+          "context": "Ilchamus Agriculture — Heine (1980)",
           "audioFile": null
         }
       ]
@@ -1220,6 +1276,27 @@
           "translation": "a-ier (ier)",
           "pronunciation": "ah-ee-ehr",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To irrigate / channel river water",
+          "translation": "a-itoriori n-kare",
+          "pronunciation": "a i-to-rio-ri n ka-re",
+          "context": "Ilchamus Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To paddle a canoe / row",
+          "translation": "a-rem l-kadong'ot",
+          "pronunciation": "a rem l ka-dong'-ot",
+          "context": "Ilchamus Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To catch fish",
+          "translation": "a-ibung' il-baheni",
+          "pronunciation": "a i-bung' il ba-he-ni",
+          "context": "Ilchamus Core Verbs — Heine (1980)",
           "audioFile": null
         }
       ]
@@ -1360,6 +1437,328 @@
           "translation": "Enjámusi / Nyarusi ('wizards', p. 798 fn. 3): agricultural Masai settled at the south end of Lake Baringo alongside the Gwas' Ngishu (at Eldama Ravine) and Burkeneji • Architecture & economy (pp. 808–813, 835, Figs. 441, 450, 451, 463): permanent villages surrounded by strong palisades with doors of huge hewn planks, round wattle-and-daub huts with conical grass-thatched roofs, raised mud-and-dung-plastered granaries for corn, pumpkins, and beans, keeping humped zebu cattle, sheep, goats, and fowls, catching fish by trapping and spearing, basket-weaving, mat-making, and operating open-air charcoal iron forges with twin bellows (Fig. 463)",
           "pronunciation": "en-ja-mu-si / nya-ru-si / gwa-so en-gi-shu",
           "context": "Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', Ch. XIX, pp. 798–802, 810–813, 835",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Ambai",
+          "pronunciation": "amb-ai",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "As-sarge",
+          "pronunciation": "as sar-ge",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Oloitω; Eloik (pl.)",
+          "pronunciation": "o-loi-toh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "Angawu",
+          "pronunciation": "ang-a-wu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Kawārie",
+          "pronunciation": "ka-wah-rie",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Engiari",
+          "pronunciation": "eng-ia-ri",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Ol lañqaina",
+          "pronunciation": "ol la qai-na",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Angoño; Ngoinyek (pl.)",
+          "pronunciation": "ang-o o",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Olado-kiragada",
+          "pronunciation": "o-la-do ki-ra-ga-da",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "Ol kωjetá",
+          "pronunciation": "ol koh-jet",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Ol ñátūīn",
+          "pronunciation": "ol tooeen",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "Egwaso",
+          "pronunciation": "eg-wa-so",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "Enjō̃",
+          "pronunciation": "enj-oh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "Embere",
+          "pronunciation": "emb-e-re",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "El agerr",
+          "pronunciation": "el a-ger",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "El lala",
+          "pronunciation": "el la-la",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "Sobāt",
+          "pronunciation": "so-bah",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I bring",
+          "translation": "Aiao",
+          "pronunciation": "aiao",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I come",
+          "translation": "Alωtu",
+          "pronunciation": "a-loh-tu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I come not",
+          "translation": "Ma lωtu",
+          "pronunciation": "ma loh-tu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I drank",
+          "translation": "Atωgω",
+          "pronunciation": "a-toh-goh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I eat",
+          "translation": "Anωsa",
+          "pronunciation": "a-noh-sa",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I give",
+          "translation": "Aiṣo",
+          "pronunciation": "ai o",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I give you",
+          "translation": "Aiṣo 'yé",
+          "pronunciation": "ai o 'y",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I gave him",
+          "translation": "Aiṣō elle",
+          "pronunciation": "ai oh el-le",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I go",
+          "translation": "Aiṣomo",
+          "pronunciation": "ai o-mo",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I kill them",
+          "translation": "Atara ninje",
+          "pronunciation": "a-ta-ra ninj-e",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "We say",
+          "translation": "Kedjω iyω",
+          "pronunciation": "ked-joh i-yoh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "We sold not",
+          "translation": "Etu gimiriω",
+          "pronunciation": "e-tu gi-mi-rioh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "He stinks",
+          "translation": "Eñu",
+          "pronunciation": "e u",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "He steals",
+          "translation": "Eburiχo",
+          "pronunciation": "e-bu-rikh-o",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "What do you say?",
+          "translation": "Idja iye",
+          "pronunciation": "id-ja i-ye",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "He is taller than I",
+          "translation": "Eado te nanω",
+          "pronunciation": "ea-do te na-noh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Can you see me?",
+          "translation": "Keñworeta nanu",
+          "pronunciation": "ke wo-re-ta na-nu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Njemps Kubwa (downstream Ilchamus settlement on Molo River)",
+          "translation": "Njemps Liabori (liabori = downstream)",
+          "pronunciation": "njemp lia-bo-ri",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 49)",
+          "audioFile": null
+        },
+        {
+          "english": "Njemps Ndogo (upstream Ilchamus settlement on Tigrish River)",
+          "translation": "Njemps Lekepir (lekepir = upstream)",
+          "pronunciation": "njemp le-ke-pir",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Geroi (earliest hunting and fishing inhabitants of Lake Baringo)",
+          "translation": "Il Geroi",
+          "pronunciation": "il ge-roi",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Doigio (Samburu ancestral section of the Ilchamus)",
+          "translation": "Il Doigio",
+          "pronunciation": "il doi-gio",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Kabes (Ilchamus clan of Laikipiak origin)",
+          "translation": "Il Kabes",
+          "pronunciation": "il ka-bes",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 52)",
+          "audioFile": null
+        },
+        {
+          "english": "Loiborgishu ('People of the White Cattle' — Ilchamus clan)",
+          "translation": "Loiborgishu ('L-ooibor-kīshu)",
+          "pronunciation": "loi-bor-gish-u",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 52)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Barsegir (Ilchamus clan of Laikipiak origin)",
+          "translation": "Il Barsegir",
+          "pronunciation": "il bar-se-gir",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 52)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Mayek (Ilchamus clan of Samburu origin)",
+          "translation": "Il Mayek",
+          "pronunciation": "il ma-yek",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Loimüsse (Ilchamus clan of Samburu origin)",
+          "translation": "Loimüsse",
+          "pronunciation": "loim sse",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Ol Doimal (Ilchamus clan of Il Doigio origin)",
+          "translation": "Ol Doimal",
+          "pronunciation": "ol doi-mal",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Ambatch wood canoe of Lake Baringo (Aeschynomene elaphroxylon)",
+          "translation": "l-kadong'ot / nk-aboboki",
+          "pronunciation": "l ka-dong'-ot",
+          "context": "Ilchamus Lake Baringo Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Fishing harpoon / spear",
+          "translation": "l-kujita / m-pere",
+          "pronunciation": "l ku-ji-ta",
+          "context": "Ilchamus Material Culture — Heine (1980)",
           "audioFile": null
         }
       ]
@@ -1890,5 +2289,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Vossen 1982)"
+  "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Vossen 1982)",
+  "isoCode": "saq-ilc",
+  "glottocode": "chAM1234"
 }

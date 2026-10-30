@@ -59,5 +59,26 @@ export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
       { teso: "ekadukon → ikadukok • ekatubon → ikatubok", english: "builder → builders • judge → judges", explanation: "Agentive singular -on to plural -ok" },
       { teso: "idiope, iyarei, iuni, ioŋon, ikany, ikany-kape, ikany-kaare, ikany-kauni, ikany-kaoŋon, itomon", english: "1, 2, 3, 4, 5, 6 (5+1), 7 (5+2), 8 (5+3), 9 (5+4), 10", explanation: "Quinary-decimal cardinal numerals (Hobley (1902, p. 95) & Johnston 1902)" }
     ]
+  },
+  {
+    "id": "teso-public-domain-dataset-synthesis",
+    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Teso (Ateso))",
+    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Teso (Ateso).",
+    "content": "1. **Archival & Open-Dataset Integration for Teso (Ateso)**:
+   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
+2. **Phonetic & Orthographic Normalization**:
+   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "examples": [
+      {
+        "teso": "ateker (pl. atekerin) • Inyā",
+        "english": "Clan / exogamous kinship group • Grass",
+        "explanation": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)"
+      },
+      {
+        "teso": "Akoñ • Etom",
+        "english": "Eye • Elephant",
+        "explanation": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+      }
+    ]
   }
 ];

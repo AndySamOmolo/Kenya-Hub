@@ -75,5 +75,26 @@ export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
       { maasai: "aa-suj (I follow thee / he follows me) • ki-suj (thou followest me / we follow)", english: "Portmanteau subject-object prefixes on Class I verb a-suj ('to follow')", explanation: "Hollis (1905, p. 48)" },
       { maasai: "a-lo (sg.) / a-puo (pl.) • a-lotu (come hither) • a-lo-aa (go away)", english: "to go (sg./pl.) • to come towards speaker (-u) • to go away (-aa)", explanation: "Suppletive plural stem and directional extensions in Hollis (1905, pp. 71–75, 90)" }
     ]
+  },
+  {
+    "id": "maasai-public-domain-dataset-synthesis",
+    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Maasai (Maa))",
+    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Maasai (Maa).",
+    "content": "1. **Archival & Open-Dataset Integration for Maasai (Maa)**:
+   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
+2. **Phonetic & Orthographic Normalization**:
+   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "examples": [
+      {
+        "maasai": "Idya-ae-olong (that-other-day) • E-weji ne-yeng-ye-ki en-giteng",
+        "english": "the day before yesterday, the day after to-morrow • the place where the ox is slaughtered in",
+        "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+      },
+      {
+        "maasai": "Ol-alem liki-njo-sho • Ol-alem la-isho J",
+        "english": "the sword which you give to me • the sword which he, she, or they give to me",
+        "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+      }
+    ]
   }
 ];

@@ -1123,6 +1123,27 @@
           "pronunciation": "lu-kūni; ṅ-gūni",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)",
           "audioFile": null
+        },
+        {
+          "english": "Irrigation furrow / mountain water channel from Lumi River",
+          "translation": "mfongo (pl. mifongo)",
+          "pronunciation": "mfong-o",
+          "context": "A. C. Hollis, Taveta Sayings and Proverbs, Journal of the African Society Vol. 9 (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake Jipe (border lake of Taveta)",
+          "translation": "Ipe / Ziwa la Jipe",
+          "pronunciation": "i-pe",
+          "context": "Sir H. H. Johnston (1919, p. 112) & Hollis (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Lumi River (lifeline of Taveta forest)",
+          "translation": "Mto Lumi",
+          "pronunciation": "mto lu-mi",
+          "context": "Sir H. H. Johnston (1919, p. 112) & Hollis (1910)",
+          "audioFile": null
         }
       ]
     },
@@ -1269,6 +1290,27 @@
           "translation": "-lā",
           "pronunciation": "-lā",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)",
+          "audioFile": null
+        },
+        {
+          "english": "Ripe cooking banana grove",
+          "translation": "kigomba / madio",
+          "pronunciation": "ki-gomb-a",
+          "context": "Sir H. H. Johnston (1919, #15 Taveita) & Hollis (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Sugarcane beer for elders",
+          "translation": "mbege / wari wa muwa",
+          "pronunciation": "mbe-ge",
+          "context": "A. C. Hollis, Taveta Sayings and Proverbs (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Clay cooking pot",
+          "translation": "nyungu (pl. manyungu)",
+          "pronunciation": "nyung-u",
+          "context": "Sir H. H. Johnston (1919, #15 Taveita) & Hollis (1911)",
           "audioFile": null
         }
       ]
@@ -2369,9 +2411,942 @@
           "pronunciation": "-īvā",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)",
           "audioFile": null
+        },
+        {
+          "english": "Arm",
+          "translation": "Mu-kωnω; mi",
+          "pronunciation": "mu koh-noh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Ti; ma-ti",
+          "pronunciation": "ti",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Axe",
+          "translation": "I-zωka; ma",
+          "pronunciation": "i zoh-ka",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "I-diω; ma",
+          "pronunciation": "i dioh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Kωlω; ma-. Ki-lezu; vi",
+          "pronunciation": "koh-loh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Belly",
+          "translation": "I-deu; ma",
+          "pronunciation": "i deu",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Ny-ωnyi; ma",
+          "pronunciation": "ny oh-nyi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Poṅga",
+          "pronunciation": "pong-a",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Indi, I-windi; ma",
+          "pronunciation": "ind-i i wind-i",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "U-ta",
+          "pronunciation": "u ta",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast (man's)",
+          "translation": "M-bafu; mi",
+          "pronunciation": "m ba-fu",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast (woman's)",
+          "translation": "I-vele; ma",
+          "pronunciation": "i ve-le",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "M-riṅga; va",
+          "pronunciation": "m ring-a",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Buttocks",
+          "translation": "I-takω; ma",
+          "pronunciation": "i ta-koh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Charcoal",
+          "translation": "I-kala; ma",
+          "pronunciation": "i ka-la",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Mṅgwa; va",
+          "pronunciation": "mngwa",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Mwana; v-ana",
+          "pronunciation": "mwa-na",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Country",
+          "translation": "Tere; ma",
+          "pronunciation": "te-re",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "M-ri",
+          "pronunciation": "m ri",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Doctor (medicine man)",
+          "translation": "Mu-γaṅga; va",
+          "pronunciation": "mu ghang-a",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "M-baru. Kωši",
+          "pronunciation": "m ba-ru koh-shi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Ku-tu; ma-tu",
+          "pronunciation": "ku tu",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "I-tagi; ma",
+          "pronunciation": "i ta-gi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "N-zωvu",
+          "pronunciation": "n zoh-vu",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "R-isω; m-esω",
+          "pronunciation": "r i-soh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Va-va. I-še",
+          "pronunciation": "va va i she",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "M-ōtω; mi- (Errata)",
+          "pronunciation": "m oh-toh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "N-guluma",
+          "pronunciation": "n gu-lu-ma",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "M-situ; mi",
+          "pronunciation": "m si-tu",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Girl",
+          "translation": "M-ndele; va-. M-fωra; va",
+          "pronunciation": "m nde-le",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "M-buri",
+          "pronunciation": "m bu-ri",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "M-luṅgu",
+          "pronunciation": "m lung-u",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "M-kωnω. Lu-hi (palm); ma",
+          "pronunciation": "m koh-noh lu hi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "M-tūi; mi",
+          "pronunciation": "m tooi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Hill",
+          "translation": "Ki-dūwi; vi",
+          "pronunciation": "ki doo-wi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Hoe",
+          "translation": "I-yembe; ma",
+          "pronunciation": "i yemb-e",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "Ū-ki",
+          "pronunciation": "oo ki",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Ny-ūmba",
+          "pronunciation": "ny oomb-a",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena",
+          "translation": "Baω",
+          "pronunciation": "baoh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Island",
+          "translation": "Ki-dara; vi",
+          "pronunciation": "ki da-ra",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Knife",
+          "translation": "Ki-šū; vi",
+          "pronunciation": "ki shoo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake",
+          "translation": "I-rīwa; ma",
+          "pronunciation": "i ree-wa",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "N-keri",
+          "pronunciation": "n ke-ri",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Lips",
+          "translation": "Ki-lωmω; vi",
+          "pronunciation": "ki loh-moh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Man",
+          "translation": "M-ndū; va-ndū",
+          "pronunciation": "m ndoo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Man, vir",
+          "translation": "M-omi",
+          "pronunciation": "m o-mi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "Ny-ama",
+          "pronunciation": "ny a-ma",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "Ma-vēle",
+          "pronunciation": "ma veh-le",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Māyω",
+          "pronunciation": "mah-yoh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "Ki-dūwi; vi",
+          "pronunciation": "ki doo-wi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth",
+          "translation": "M-lωmω",
+          "pronunciation": "m loh-moh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "I-zīna; ma",
+          "pronunciation": "i zee-na",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "U-tūkū",
+          "pronunciation": "u too-koo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "M-būa",
+          "pronunciation": "m booa",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "M-vūa",
+          "pronunciation": "m vooa",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "M-furω; mi",
+          "pronunciation": "m fu-roh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "Ṅ-gōndzi",
+          "pronunciation": "ng goh-ndzi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Shoulder",
+          "translation": "I-vēga; ma",
+          "pronunciation": "i veh-ga",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "Ny-ωka",
+          "pronunciation": "ny oh-ka",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Son, boy",
+          "translation": "M-sōrω; va",
+          "pronunciation": "m soh-roh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "I-fūmu; ma",
+          "pronunciation": "i foo-mu",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "Ny-ōta",
+          "pronunciation": "ny oh-ta",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Sun",
+          "translation": "I-zūva",
+          "pronunciation": "i zoo-va",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Tail",
+          "translation": "Ki-tīze; vi",
+          "pronunciation": "ki tee-ze",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Tear",
+          "translation": "I-zōri; ma",
+          "pronunciation": "i zoh-ri",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Thigh",
+          "translation": "I-ga, I-γa; ma",
+          "pronunciation": "i ga i gha",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "Lu-līmi; ndīmi",
+          "pronunciation": "lu lee-mi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "I-jēγō; ma",
+          "pronunciation": "i jeh-ghoh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Town",
+          "translation": "M-oṅgω; mi",
+          "pronunciation": "m ong-oh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "M-tī; mi-tī",
+          "pronunciation": "m tee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Mā-zī",
+          "pronunciation": "mah zee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Witch",
+          "translation": "M-sāwi; va",
+          "pronunciation": "m sah-wi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "M-ndū m-kā",
+          "pronunciation": "m ndoo m kah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "I-gōlω",
+          "pronunciation": "i goh-loh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Zebra",
+          "translation": "I-tīkω; ma",
+          "pronunciation": "i tee-koh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "One",
+          "translation": "mwe",
+          "pronunciation": "mwe",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "vīrī",
+          "pronunciation": "vee-ree",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "tātū",
+          "pronunciation": "tah-too",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "nā, I-nnā",
+          "pronunciation": "nah i nnah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "sānω",
+          "pronunciation": "sah-noh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "Tāndātū",
+          "pronunciation": "tah-ndah-too",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "M-fūṅgātē",
+          "pronunciation": "m foong-ah-teh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "M-nānē",
+          "pronunciation": "m nah-neh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "K-ēnda",
+          "pronunciation": "k eh-nda",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "I-kūmi",
+          "pronunciation": "i koo-mi",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Mī-rōṅgω mī-vīrī",
+          "pronunciation": "mee roh-ngoh mee vee-ree",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Thousand",
+          "translation": "Ki-hīndē, Ki-hīndi; vi",
+          "pronunciation": "ki heend-eh ki heend-i",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "All",
+          "translation": "ōsē",
+          "pronunciation": "oh-seh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "That, those",
+          "translation": "Ū-lya, vā-lya; &c",
+          "pronunciation": "oo lya vah lya",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "vī",
+          "pronunciation": "vee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "īlū",
+          "pronunciation": "ee-loo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Female",
+          "translation": "kā",
+          "pronunciation": "kah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Fierce, sharp",
+          "translation": "kālī",
+          "pronunciation": "kah-lee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "zīdī",
+          "pronunciation": "zee-dee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Great",
+          "translation": "kūlū",
+          "pronunciation": "koo-loo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Little",
+          "translation": "tōtō",
+          "pronunciation": "toh-toh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Long",
+          "translation": "lē",
+          "pronunciation": "leh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Male",
+          "translation": "ōmī",
+          "pronunciation": "oh-mee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Old",
+          "translation": "kūlū",
+          "pronunciation": "koo-loo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "tūkū",
+          "pronunciation": "too-koo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Rotten",
+          "translation": "vōlū",
+          "pronunciation": "voh-loo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Short",
+          "translation": "fūhī",
+          "pronunciation": "foo-hee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Sick",
+          "translation": "kōṅgō",
+          "pronunciation": "koh-ngoh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "ēūpē",
+          "pronunciation": "e-hoo-peh",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Plenty, many",
+          "translation": "īṅgī",
+          "pronunciation": "eeng-ee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Where?",
+          "translation": "Kw-ī?",
+          "pronunciation": "kw ee",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Not (with verb, as prefix, infix, or suffix)",
+          "translation": "Sī-, Tā-, -sī",
+          "pronunciation": "see tah see",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "To",
+          "translation": "Kū",
+          "pronunciation": "koo",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ beat",
+          "translation": "kābā",
+          "pronunciation": "kah-bah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ buy, sell",
+          "translation": "gūlā",
+          "pronunciation": "goo-lah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ come",
+          "translation": "zā",
+          "pronunciation": "zah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ cut",
+          "translation": "tēmā",
+          "pronunciation": "teh-mah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ dance",
+          "translation": "vīnā",
+          "pronunciation": "vee-nah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ die",
+          "translation": "fwā",
+          "pronunciation": "fwah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ eat",
+          "translation": "lā",
+          "pronunciation": "lah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ give",
+          "translation": "iṅgā",
+          "pronunciation": "ing-ah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ go",
+          "translation": "gēndā",
+          "pronunciation": "geh-ndah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ kill",
+          "translation": "bwāgā",
+          "pronunciation": "bwah-gah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ know",
+          "translation": "mānyā",
+          "pronunciation": "mah-nyah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ laugh",
+          "translation": "sēkā",
+          "pronunciation": "seh-kah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ leave off, cease",
+          "translation": "lēkā",
+          "pronunciation": "leh-kah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ love, want",
+          "translation": "kūndā",
+          "pronunciation": "koond-ah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ see",
+          "translation": "ōnā",
+          "pronunciation": "oh-nah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ sit, remain, abide",
+          "translation": "kāā",
+          "pronunciation": "ka-hah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ sleep",
+          "translation": "lālā",
+          "pronunciation": "lah-lah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ stand, stop, be erect",
+          "translation": "īūkā",
+          "pronunciation": "eeoo-kah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "„ steal",
+          "translation": "īvā",
+          "pronunciation": "ee-vah",
+          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred forest grove of Taveta",
+          "translation": "mpungi / kireti",
+          "pronunciation": "mpung-i",
+          "context": "A. C. Hollis, Taveta Sayings and Proverbs (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Council of elders (Taveta governance)",
+          "translation": "njama yaekomi",
+          "pronunciation": "nja-ma yae-ko-mi",
+          "context": "A. C. Hollis, Taveta Sayings and Proverbs (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Age-set / ruling generation in Taveta",
+          "translation": "rika (pl. marika)",
+          "pronunciation": "ri-ka",
+          "context": "A. C. Hollis, Taveta Sayings and Proverbs (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Riddle / enigma (Taveta oral literature)",
+          "translation": "kigano / ndima",
+          "pronunciation": "ki-ga-no",
+          "context": "A. C. Hollis, Taveta Enigmas, Journal of the African Society Vol. 10 (1911)",
+          "audioFile": null
+        },
+        {
+          "english": "Proverb / wise saying (Kitaveta)",
+          "translation": "mbazi /ulosi",
+          "pronunciation": "mba-zi",
+          "context": "A. C. Hollis, Taveta Sayings and Proverbs (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Blacksmith / ironworker",
+          "translation": "mshana (pl. vashana)",
+          "pronunciation": "msha-na",
+          "context": "A. C. Hollis, Taveta Sayings and Proverbs (1910)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Steggall 1892–1906, Hollis 1910–1911 & Johnston 1919)"
+  "source": "Public Domain Historical Lexicons (Steggall 1892–1906, Hollis 1910–1911 & Johnston 1919)",
+  "isoCode": "tvs",
+  "glottocode": "tave1238"
 }

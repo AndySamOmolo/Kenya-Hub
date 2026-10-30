@@ -129,6 +129,34 @@
           "pronunciation": "emuria",
           "context": "Ateso",
           "audioFile": null
+        },
+        {
+          "english": "Peace / well-being",
+          "translation": "ainapakin",
+          "pronunciation": "ai-na-pa-kin",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Eyalama noi",
+          "pronunciation": "e-ya-la-ma noi",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "How are you? (singular / plural)",
+          "translation": "Ijai biai? / Ijaasi biai?",
+          "pronunciation": "i-jai biai",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "I am well / We are well",
+          "translation": "Ejokuna / Ejok",
+          "pronunciation": "e-jo-ku-na",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
         }
       ]
     },
@@ -1024,6 +1052,13 @@
           "translation": "Ajakáit",
           "pronunciation": "ajakáit",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
+          "audioFile": null
+        },
+        {
+          "english": "Chief / leader / elder",
+          "translation": "ejakait (pl. ijakaka)",
+          "pronunciation": "e-ja-kait",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
           "audioFile": null
         }
       ]
@@ -2264,6 +2299,48 @@
           "pronunciation": "atap",
           "context": "Ateso",
           "audioFile": null
+        },
+        {
+          "english": "Finger millet (wimbi — staple grain)",
+          "translation": "akima",
+          "pronunciation": "a-ki-ma",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "Sorghum (mtama)",
+          "translation": "imomwa",
+          "pronunciation": "i-mom-wa",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "Sweet potatoes",
+          "translation": "achok",
+          "pronunciation": "ach-ok",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "Cassava",
+          "translation": "emogo",
+          "pronunciation": "e-mo-go",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "Sesame / simsim",
+          "translation": "ikanyum",
+          "pronunciation": "i-kany-um",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "Groundnuts / peanuts",
+          "translation": "emaido",
+          "pronunciation": "e-mai-do",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
         }
       ]
     },
@@ -2382,6 +2459,20 @@
           "translation": "Ango’otol lok’ India",
           "pronunciation": "ango’otol lok’ india",
           "context": "Ateso — GitHub unicode-org/cldr (teo.xml)",
+          "audioFile": null
+        },
+        {
+          "english": "Granary for storing millet",
+          "translation": "edula (pl. idulan)",
+          "pronunciation": "e-du-la",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron hoe for cultivation",
+          "translation": "emeleku (pl. imelekes)",
+          "pronunciation": "e-me-le-ku",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
           "audioFile": null
         }
       ]
@@ -2858,6 +2949,132 @@
           "translation": "aipo (aipois)",
           "pronunciation": "ah-ee-poh",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To love / to want / to desire",
+          "translation": "amina",
+          "pronunciation": "a-mi-na",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (SPCK London, 1915 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "To go / walk",
+          "translation": "alosit",
+          "pronunciation": "a-lo-sit",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To come / arrive",
+          "translation": "abunore",
+          "pronunciation": "a-bu-no-re",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To speak / say",
+          "translation": "ainer",
+          "pronunciation": "ai-ner",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To hear / understand",
+          "translation": "aiirar",
+          "pronunciation": "aii-rar",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To see / look at",
+          "translation": "aanyun",
+          "pronunciation": "aany-un",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To eat food",
+          "translation": "anyam",
+          "pronunciation": "any-am",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To drink water or milk",
+          "translation": "aimat",
+          "pronunciation": "ai-mat",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To cultivate / dig with a hoe",
+          "translation": "akoru",
+          "pronunciation": "a-ko-ru",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To build a house",
+          "translation": "adukokinit",
+          "pronunciation": "a-du-ko-ki-nit",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To Herd cattle",
+          "translation": "ameonokin",
+          "pronunciation": "a-meo-no-kin",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To cook food",
+          "translation": "aipo",
+          "pronunciation": "ai-po",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To read / count / study",
+          "translation": "aisoma / aimar",
+          "pronunciation": "ai-so-ma",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To write",
+          "translation": "aiwadika",
+          "pronunciation": "ai-wa-di-ka",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To buy / trade",
+          "translation": "ang'arakin / agwel",
+          "pronunciation": "ang'-a-ra-kin",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To sell",
+          "translation": "agwelanar",
+          "pronunciation": "ag-we-la-nar",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To help / assist",
+          "translation": "aing'arakin",
+          "pronunciation": "aing'-a-ra-kin",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep",
+          "translation": "ajotoor",
+          "pronunciation": "a-jo-toor",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
           "audioFile": null
         }
       ]
@@ -3622,9 +3839,501 @@
           "pronunciation": "ekel laige atom",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Elgumi / Karamojo — Ateker)",
           "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "erono",
+          "pronunciation": "e-ro-no",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "alaboro",
+          "pronunciation": "a-la-bo-ro",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "egwenyi",
+          "pronunciation": "eg-weny-i",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "kirionan",
+          "pronunciation": "ki-rio-nan",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "dia",
+          "pronunciation": "dia",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "akiteng",
+          "pronunciation": "a-ki-teng",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "parani",
+          "pronunciation": "pa-ra-ni",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "kumata",
+          "pronunciation": "ku-ma-ta",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "akiti",
+          "pronunciation": "a-ki-ti",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "kunyama",
+          "pronunciation": "kuny-a-ma",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "akongo",
+          "pronunciation": "a-kong-o",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "papakana",
+          "pronunciation": "pa-pa-ka-na",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "akimi",
+          "pronunciation": "a-ki-mi",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "etapa",
+          "pronunciation": "e-ta-pa",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "akecho",
+          "pronunciation": "a-kech-o",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Go",
+          "translation": "koloto or alosito",
+          "pronunciation": "ko-lo-to or a-lo-si-to",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "jokuna or akajukan",
+          "pronunciation": "jo-ku-na or a-ka-ju-kan",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "enya",
+          "pronunciation": "eny-a",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "akani",
+          "pronunciation": "a-ka-ni",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "eko",
+          "pronunciation": "e-ko",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron wire",
+          "translation": "eswat",
+          "pronunciation": "es-wat",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "ekiring",
+          "pronunciation": "e-ki-ring",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "akilli",
+          "pronunciation": "a-kil-li",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "elap",
+          "pronunciation": "e-lap",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Now",
+          "translation": "lolo",
+          "pronunciation": "lo-lo",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "ekiro",
+          "pronunciation": "e-ki-ro",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "lokaranguan",
+          "pronunciation": "lo-ka-rang-uan",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "enguololo",
+          "pronunciation": "eng-uo-lo-lo",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "emerikeki",
+          "pronunciation": "e-me-ri-ke-ki",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "kupero",
+          "pronunciation": "ku-pe-ro",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "matit",
+          "pronunciation": "ma-tit",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "elap",
+          "pronunciation": "e-lap",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Speak",
+          "translation": "kioro",
+          "pronunciation": "kio-ro",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "There",
+          "translation": "eluana",
+          "pronunciation": "e-lua-na",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "To-day",
+          "translation": "lolo",
+          "pronunciation": "lo-lo",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "akwanguan",
+          "pronunciation": "ak-wang-uan",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "parani",
+          "pronunciation": "pa-ra-ni",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "One",
+          "translation": "epe also apuru",
+          "pronunciation": "e-pe al-so a-pu-ru",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "are",
+          "pronunciation": "a-re",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "auni or uni",
+          "pronunciation": "au-ni or u-ni",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "aungwen or ongwon",
+          "pronunciation": "aung-wen or ong-won",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "ekan or akanyi",
+          "pronunciation": "e-kan or a-kany-i",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "{ kanyi or akanya } kape",
+          "pronunciation": "kany-i or a-kany-a ka-pe",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "kanyi-kare",
+          "pronunciation": "kany-i ka-re",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "kanyi kauni",
+          "pronunciation": "kany-i kau-ni",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "kanyi-ki-ongwon or akanya kangwun",
+          "pronunciation": "kany-i ki ong-won or a-kany-a kang-wun",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "atomon",
+          "pronunciation": "a-to-mon",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Ekoyω",
+          "pronunciation": "e-ko-yoh",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "Alaburu",
+          "pronunciation": "a-la-bu-ru",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "Atoroqót",
+          "pronunciation": "a-to-ro t",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "Aqot",
+          "pronunciation": "a-qot",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Akωit",
+          "pronunciation": "a-ko-hit",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "Emal; Akau",
+          "pronunciation": "e-mal",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "Anācăkēñe",
+          "pronunciation": "a-nah-ca-keh e",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "Ekōkō",
+          "pronunciation": "e-koh-koh",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth",
+          "translation": "Enañga",
+          "pronunciation": "e-nang-a",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "Akiteñ; naberω",
+          "pronunciation": "a-ki-te",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Akenyanu",
+          "pronunciation": "a-keny-a-nu",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "Ekiñok",
+          "pronunciation": "e-ki ok",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Akit",
+          "pronunciation": "a-kit",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Etom",
+          "pronunciation": "e-tom",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Akoñ",
+          "pronunciation": "a-ko",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "Ebωkorit",
+          "pronunciation": "e-boh-ko-rit",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "Esessī",
+          "pronunciation": "e-ses-see",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "Akeju",
+          "pronunciation": "a-ke-ju",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Fowl",
+          "translation": "Ekokorr",
+          "pronunciation": "e-ko-kor",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "Aginé",
+          "pronunciation": "a-gin",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Akūt",
+          "pronunciation": "a-koot",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "Inyā",
+          "pronunciation": "iny-ah",
+          "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
+          "audioFile": null
+        },
+        {
+          "english": "Clan / exogamous kinship group",
+          "translation": "ateker (pl. atekerin)",
+          "pronunciation": "a-te-ker",
+          "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902)"
+  "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902)",
+  "isoCode": "teo",
+  "glottocode": "teso1247"
 }

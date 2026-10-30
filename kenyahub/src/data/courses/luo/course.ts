@@ -2408,10 +2408,512 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
   };
 })();
 
+
+export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
+  {
+  "id": "luo-unit-12-public-domain-corpus",
+  "title": "Unit 12: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+  "description": "Master newly extracted Dholuo (Luo) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+  "icon": "BookOpen",
+  "skills": [
+    {
+      "id": "luo-pd-corpus-12-1",
+      "title": "Historical Monograph & Comparative Roots I (Dholuo (Luo))",
+      "icon": "Scroll",
+      "description": "Study verified Dholuo (Luo) headwords and dialect forms extracted from primary public-domain monographs.",
+      "tips": "Every item in this skill is grounded directly in the historical Dholuo (Luo) linguistic corpus with full phonetic pronunciation guides.",
+      "words": [
+        {
+          "target": "Okinyi (m.) / Akinyi (f.)",
+          "source": "Born at dawn (6–10 a.m. — okinyi)",
+          "pronunciation": "o-kiny-i",
+          "hint": "Wiktionary Appendix:Luo surnames"
+        },
+        {
+          "target": "Onyango (m.) / Anyango (f.)",
+          "source": "Born in the mid-morning sun (9–11 a.m.)",
+          "pronunciation": "ony-ang-o",
+          "hint": "Wiktionary Appendix:Luo surnames"
+        },
+        {
+          "target": "Ochieng' (m.) / Achieng' (f.)",
+          "source": "Born when the midday sun shines fiercely (chieng')",
+          "pronunciation": "och-ieng'",
+          "hint": "Wiktionary Appendix:Luo surnames"
+        },
+        {
+          "target": "Odhiambo (m.) / Adhiambo (f.)",
+          "source": "Born in the late afternoon / evening (odhiambo)",
+          "pronunciation": "odh-iamb-o",
+          "hint": "Wiktionary Appendix:Luo surnames"
+        },
+        {
+          "target": "Otieno (m.) / Atieno (f.)",
+          "source": "Born at night (otieno)",
+          "pronunciation": "o-tie-no",
+          "hint": "Wiktionary Appendix:Luo surnames"
+        },
+        {
+          "target": "Opiyo (m.) / Apiyo (f.) & Odongo (m.) / Adongo (f.)",
+          "source": "First-born twin (piyo = quick) & Second-born twin",
+          "pronunciation": "o-pi-yo",
+          "hint": "Wiktionary Appendix:Luo surnames"
+        },
+        {
+          "target": "Okoth (m.) / Akoth (f.) & Ooro (m.) / Aoro (f.)",
+          "source": "Born during rain (koth) & Born during dry season (oro)",
+          "pronunciation": "o-koth",
+          "hint": "Wiktionary Appendix:Luo surnames"
+        },
+        {
+          "target": "Odero (m.) / Adero (f.) & Okeyo (m.) / Akeyo (f.)",
+          "source": "Born during granary abundance (dero) & Born at harvest (keyo)",
+          "pronunciation": "o-de-ro",
+          "hint": "Wiktionary Appendix:Luo surnames"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Okinyi (m.) / Akinyi (f.) — Onyango (m.) / Anyango (f.).",
+          "source": "Born at dawn (6–10 a.m. — okinyi) — Born in the mid-morning sun (9–11 a.m.)."
+        },
+        {
+          "target": "Ochieng' (m.) / Achieng' (f.) • Odhiambo (m.) / Adhiambo (f.).",
+          "source": "Born when the midday sun shines fiercely (chieng') • Born in the late afternoon / evening (odhiambo)."
+        },
+        {
+          "target": "Otieno (m.) / Atieno (f.) (Opiyo (m.) / Apiyo (f.) & Odongo (m.) / Adongo (f.)).",
+          "source": "Born at night (otieno) (First-born twin (piyo = quick) & Second-born twin)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "What is the English meaning of \"Okinyi (m.) / Akinyi (f.)\" in Dholuo (Luo) (Wiktionary Appendix:Luo surnames)?",
+          "correctAnswer": "Born at dawn (6–10 a.m. — okinyi)",
+          "options": [
+            "Born at dawn (6–10 a.m. — okinyi)",
+            "Born in the mid-morning sun (9–11 a.m.)",
+            "Born when the midday sun shines fiercely (chieng')",
+            "Born in the late afternoon / evening (odhiambo)"
+          ],
+          "hint": "Wiktionary Appendix:Luo surnames"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each verified Dholuo (Luo) term from the public-domain corpus to its English meaning:",
+          "correctAnswer": "Okinyi (m.) / Akinyi (f.): Born at dawn (6–10 a.m. — okinyi)",
+          "pairs": [
+            {
+              "left": "Okinyi (m.) / Akinyi (f.)",
+              "right": "Born at dawn (6–10 a.m. — okinyi)"
+            },
+            {
+              "left": "Onyango (m.) / Anyango (f.)",
+              "right": "Born in the mid-morning sun (9–11 a.m.)"
+            },
+            {
+              "left": "Ochieng' (m.) / Achieng' (f.)",
+              "right": "Born when the midday sun shines fiercely (chieng')"
+            },
+            {
+              "left": "Odhiambo (m.) / Adhiambo (f.)",
+              "right": "Born in the late afternoon / evening (odhiambo)"
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete the Dholuo (Luo) term for \"Born at night (otieno)\": ___",
+          "correctAnswer": "Otieno (m.) / Atieno (f.)",
+          "options": [
+            "Otieno (m.) / Atieno (f.)",
+            "Opiyo (m.) / Apiyo (f.) & Odongo (m.) / Adongo (f.)",
+            "Okinyi (m.) / Akinyi (f.)",
+            "Onyango (m.) / Anyango (f.)"
+          ],
+          "hint": "Wiktionary Appendix:Luo surnames"
+        }
+      ]
+    },
+    {
+      "id": "luo-pd-corpus-12-2",
+      "title": "Historical Monograph & Comparative Roots II (Dholuo (Luo))",
+      "icon": "Compass",
+      "description": "Expand your command of Dholuo (Luo) ecological, kinship, and action vocabulary from the archival corpus.",
+      "tips": "Compare classical 19th- and early 20th-century Dholuo (Luo) transcriptions with modern standardized orthography.",
+      "words": [
+        {
+          "target": "Dala wacho ang'o? — Dala oling'.",
+          "source": "What is the news of the homestead? — The homestead is peaceful.",
+          "pronunciation": "da-la wach-o ang'-o da-la o-ling'",
+          "hint": "Mill-Hill (1920, p. 102) — LibriVox Track 1"
+        },
+        {
+          "target": "Wach mos. We ruyo.",
+          "source": "Speak slowly. Do not hurry.",
+          "pronunciation": "wach mos we ru-yo",
+          "hint": "Mill-Hill (1920, p. 103) — LibriVox Track 1"
+        },
+        {
+          "target": "Polo otimo luoch; luoch oyawore.",
+          "source": "The sky is cloudy; the clouds are clearing up.",
+          "pronunciation": "po-lo o-ti-mo luoch",
+          "hint": "Mill-Hill (1920, p. 104) — LibriVox Track 1"
+        },
+        {
+          "target": "Maki kwer, wadhi puodho.",
+          "source": "Take a hoe, let us go to the garden.",
+          "pronunciation": "ma-ki kwer wadh-i puodh-o",
+          "hint": "Mill-Hill (1920, p. 112) — LibriVox Track 4"
+        },
+        {
+          "target": "Kuny rabuon mos, kik ipudhigi.",
+          "source": "Dig up the sweet potatoes carefully, do not cut them.",
+          "pronunciation": "kuny ra-buon mos kik i-pudh-i-gi",
+          "hint": "Mill-Hill (1920, p. 113) — LibriVox Track 4"
+        },
+        {
+          "target": "Aorani tut? D'wanyal yoro?",
+          "source": "Is this river deep? Can we wade across?",
+          "pronunciation": "ao-ra-ni tut d'-wany-al yo-ro",
+          "hint": "Mill-Hill (1920, p. 115) — LibriVox Track 5"
+        },
+        {
+          "target": "oro pesa e simu (M-Pesa)",
+          "source": "Sending money on a mobile phone",
+          "pronunciation": "o-ro pe-sa e si-mu",
+          "hint": "Kencorpus & Anv-ke Modern Dholuo"
+        },
+        {
+          "target": "od thieth mar gweng'",
+          "source": "Community health dispensary / clinic",
+          "pronunciation": "od thieth mar gweng'",
+          "hint": "Kencorpus & Anv-ke Healthcare"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Dala wacho ang'o? — Dala oling'. — Wach mos. We ruyo..",
+          "source": "What is the news of the homestead? — The homestead is peaceful. — Speak slowly. Do not hurry.."
+        },
+        {
+          "target": "Polo otimo luoch; luoch oyawore. • Maki kwer, wadhi puodho..",
+          "source": "The sky is cloudy; the clouds are clearing up. • Take a hoe, let us go to the garden.."
+        },
+        {
+          "target": "Kuny rabuon mos, kik ipudhigi. (Aorani tut? D'wanyal yoro?).",
+          "source": "Dig up the sweet potatoes carefully, do not cut them. (Is this river deep? Can we wade across?)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "What is the English meaning of \"Dala wacho ang'o? — Dala oling'.\" in Dholuo (Luo) (Mill-Hill (1920, p. 102) — LibriVox Track 1)?",
+          "correctAnswer": "What is the news of the homestead? — The homestead is peaceful.",
+          "options": [
+            "What is the news of the homestead? — The homestead is peaceful.",
+            "Speak slowly. Do not hurry.",
+            "The sky is cloudy; the clouds are clearing up.",
+            "Take a hoe, let us go to the garden."
+          ],
+          "hint": "Mill-Hill (1920, p. 102) — LibriVox Track 1"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each verified Dholuo (Luo) term from the public-domain corpus to its English meaning:",
+          "correctAnswer": "Dala wacho ang'o? — Dala oling'.: What is the news of the homestead? — The homestead is peaceful.",
+          "pairs": [
+            {
+              "left": "Dala wacho ang'o? — Dala oling'.",
+              "right": "What is the news of the homestead? — The homestead is peaceful."
+            },
+            {
+              "left": "Wach mos. We ruyo.",
+              "right": "Speak slowly. Do not hurry."
+            },
+            {
+              "left": "Polo otimo luoch; luoch oyawore.",
+              "right": "The sky is cloudy; the clouds are clearing up."
+            },
+            {
+              "left": "Maki kwer, wadhi puodho.",
+              "right": "Take a hoe, let us go to the garden."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete the Dholuo (Luo) term for \"Dig up the sweet potatoes carefully, do not cut them.\": ___",
+          "correctAnswer": "Kuny rabuon mos, kik ipudhigi.",
+          "options": [
+            "Kuny rabuon mos, kik ipudhigi.",
+            "Aorani tut? D'wanyal yoro?",
+            "Dala wacho ang'o? — Dala oling'.",
+            "Wach mos. We ruyo."
+          ],
+          "hint": "Mill-Hill (1920, p. 113) — LibriVox Track 4"
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "luo-unit-13-open-datasets-modern",
+  "title": "Unit 13: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
+  "description": "Master Dholuo (Luo) vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
+  "icon": "Globe",
+  "skills": [
+    {
+      "id": "luo-open-dataset-13-1",
+      "title": "Swadesh Core & Cultural Lexicon (Dholuo (Luo))",
+      "icon": "Layers",
+      "description": "Learn core Dholuo (Luo) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+      "tips": "Focus on high-frequency roots shared across Dholuo (Luo) dialects and everyday speech.",
+      "words": [
+        {
+          "target": "Ajuoga (pl. Ajuoge)",
+          "source": "Diviner / traditional healer (pl. ajuoge)",
+          "pronunciation": "a-juo-ga",
+          "hint": "G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907, p. 64)"
+        },
+        {
+          "target": "Keny / Dho keny",
+          "source": "Traditional bridewealth cattle settlement",
+          "pronunciation": "keny",
+          "hint": "G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907, p. 62)"
+        },
+        {
+          "target": "Chira / Kwer",
+          "source": "Ritual taboo / ceremonial uncleanness (Dholuo)",
+          "pronunciation": "chi-ra",
+          "hint": "G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907) & Hobley (1903)"
+        },
+        {
+          "target": "Okech (totem: Ng'ielo)",
+          "source": "Okech (Dholuo clan with python totem — Ng'ielo)",
+          "pronunciation": "o-kech",
+          "hint": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 348)"
+        },
+        {
+          "target": "Othiambo (totem: Agak)",
+          "source": "Othiambo (Dholuo clan with crow totem — Agak)",
+          "pronunciation": "oth-iamb-o",
+          "hint": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 348)"
+        },
+        {
+          "target": "Oguma (totem: Aïdho)",
+          "source": "Oguma (Dholuo clan with squirrel totem — Aïdho)",
+          "pronunciation": "o-gu-ma",
+          "hint": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 348)"
+        },
+        {
+          "target": "Unyango (totem: Ng'ech)",
+          "source": "Unyango (Dholuo clan with monitor lizard totem — Ng'ech)",
+          "pronunciation": "uny-ang-o",
+          "hint": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 347)"
+        },
+        {
+          "target": "Uwur",
+          "source": "Uwur (Dholuo clan withbushbuck totem)",
+          "pronunciation": "u-wur",
+          "hint": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 347)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Ajuoga (pl. Ajuoge) — Keny / Dho keny.",
+          "source": "Diviner / traditional healer (pl. ajuoge) — Traditional bridewealth cattle settlement."
+        },
+        {
+          "target": "Chira / Kwer • Okech (totem: Ng'ielo).",
+          "source": "Ritual taboo / ceremonial uncleanness (Dholuo) • Okech (Dholuo clan with python totem — Ng'ielo)."
+        },
+        {
+          "target": "Othiambo (totem: Agak) (Oguma (totem: Aïdho)).",
+          "source": "Othiambo (Dholuo clan with crow totem — Agak) (Oguma (Dholuo clan with squirrel totem — Aïdho))."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "What is the English meaning of \"Ajuoga (pl. Ajuoge)\" in Dholuo (Luo) (G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907, p. 64))?",
+          "correctAnswer": "Diviner / traditional healer (pl. ajuoge)",
+          "options": [
+            "Diviner / traditional healer (pl. ajuoge)",
+            "Traditional bridewealth cattle settlement",
+            "Ritual taboo / ceremonial uncleanness (Dholuo)",
+            "Okech (Dholuo clan with python totem — Ng'ielo)"
+          ],
+          "hint": "G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907, p. 64)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each verified Dholuo (Luo) term from the public-domain corpus to its English meaning:",
+          "correctAnswer": "Ajuoga (pl. Ajuoge): Diviner / traditional healer (pl. ajuoge)",
+          "pairs": [
+            {
+              "left": "Ajuoga (pl. Ajuoge)",
+              "right": "Diviner / traditional healer (pl. ajuoge)"
+            },
+            {
+              "left": "Keny / Dho keny",
+              "right": "Traditional bridewealth cattle settlement"
+            },
+            {
+              "left": "Chira / Kwer",
+              "right": "Ritual taboo / ceremonial uncleanness (Dholuo)"
+            },
+            {
+              "left": "Okech (totem: Ng'ielo)",
+              "right": "Okech (Dholuo clan with python totem — Ng'ielo)"
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete the Dholuo (Luo) term for \"Othiambo (Dholuo clan with crow totem — Agak)\": ___",
+          "correctAnswer": "Othiambo (totem: Agak)",
+          "options": [
+            "Othiambo (totem: Agak)",
+            "Oguma (totem: Aïdho)",
+            "Ajuoga (pl. Ajuoge)",
+            "Keny / Dho keny"
+          ],
+          "hint": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 348)"
+        }
+      ]
+    },
+    {
+      "id": "luo-open-dataset-13-2",
+      "title": "Agriculture, Community & Everyday Life (Dholuo (Luo))",
+      "icon": "Sparkles",
+      "description": "Practice Dholuo (Luo) terms for agriculture, environment, social organization, and daily communication.",
+      "tips": "Review how traditional Dholuo (Luo) roots extend naturally to modern community, farming, and civic contexts.",
+      "words": [
+        {
+          "target": "Ubei (totem: Ravo / hippo)",
+          "source": "Ubei (Dholuo clan with hippopotamus totem — Ravo)",
+          "pronunciation": "u-bei",
+          "hint": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 347)"
+        },
+        {
+          "target": "Go bul",
+          "source": "Beat the drum",
+          "pronunciation": "go bul",
+          "hint": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1920, Phraseology) — LibriVox CC0 Audi"
+        },
+        {
+          "target": "Weñyo orengo",
+          "source": "The birds flew away",
+          "pronunciation": "we yo o-reng-o",
+          "hint": "Ja-Luo (Nyifwa) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 926–935)"
+        },
+        {
+          "target": "Wawaci",
+          "source": "We say",
+          "pronunciation": "wa-wa-ci",
+          "hint": "Ja-Luo (Nyifwa) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 926–935)"
+        },
+        {
+          "target": "Akia",
+          "source": "I know not",
+          "pronunciation": "a-kia",
+          "hint": "Ja-Luo (Nyifwa) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 926–935)"
+        },
+        {
+          "target": "Añeyω",
+          "source": "I know",
+          "pronunciation": "a e-yoh",
+          "hint": "Ja-Luo (Nyifwa) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 926–935)"
+        },
+        {
+          "target": "Aiadi",
+          "source": "I went",
+          "pronunciation": "aia-di",
+          "hint": "Ja-Luo (Nyifwa) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 926–935)"
+        },
+        {
+          "target": "Adio",
+          "source": "I go",
+          "pronunciation": "a-dio",
+          "hint": "Ja-Luo (Nyifwa) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 926–935)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Ubei (totem: Ravo / hippo) — Go bul.",
+          "source": "Ubei (Dholuo clan with hippopotamus totem — Ravo) — Beat the drum."
+        },
+        {
+          "target": "Weñyo orengo • Wawaci.",
+          "source": "The birds flew away • We say."
+        },
+        {
+          "target": "Akia (Añeyω).",
+          "source": "I know not (I know)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "What is the English meaning of \"Ubei (totem: Ravo / hippo)\" in Dholuo (Luo) (C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 347))?",
+          "correctAnswer": "Ubei (Dholuo clan with hippopotamus totem — Ravo)",
+          "options": [
+            "Ubei (Dholuo clan with hippopotamus totem — Ravo)",
+            "Beat the drum",
+            "The birds flew away",
+            "We say"
+          ],
+          "hint": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 347)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each verified Dholuo (Luo) term from the public-domain corpus to its English meaning:",
+          "correctAnswer": "Ubei (totem: Ravo / hippo): Ubei (Dholuo clan with hippopotamus totem — Ravo)",
+          "pairs": [
+            {
+              "left": "Ubei (totem: Ravo / hippo)",
+              "right": "Ubei (Dholuo clan with hippopotamus totem — Ravo)"
+            },
+            {
+              "left": "Go bul",
+              "right": "Beat the drum"
+            },
+            {
+              "left": "Weñyo orengo",
+              "right": "The birds flew away"
+            },
+            {
+              "left": "Wawaci",
+              "right": "We say"
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete the Dholuo (Luo) term for \"I know not\": ___",
+          "correctAnswer": "Akia",
+          "options": [
+            "Akia",
+            "Añeyω",
+            "Ubei (totem: Ravo / hippo)",
+            "Go bul"
+          ],
+          "hint": "Ja-Luo (Nyifwa) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 926–935)"
+        }
+      ]
+    }
+  ]
+}
+];
+
 export const LUO_UNITS: CourseUnit[] = [
   ...GRAMMAR_MODULE_UNITS,
   PHRASEBOOK_UNIT,
   EXERCISES_UNIT,
+  ORAL_LITERATURE_UNIT,
+  ...PUBLIC_DOMAIN_DATASET_UNITS,
 ];
 
 export default LUO_COURSE;

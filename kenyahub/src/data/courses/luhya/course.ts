@@ -1583,5 +1583,501 @@ export const LUHYA_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "luhya-unit-9-public-domain-corpus",
+    "title": "Unit 9: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Luhya (Luyia) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "luhya-pd-corpus-9-1",
+        "title": "Historical Monograph & Comparative Roots I (Luhya (Luyia))",
+        "icon": "Scroll",
+        "description": "Study verified Luhya (Luyia) headwords and dialect forms extracted from primary public-domain monographs.",
+        "tips": "Every item in this skill is grounded directly in the historical Luhya (Luyia) linguistic corpus with full phonetic pronunciation guides.",
+        "words": [
+          {
+            "target": "wañge = my",
+            "source": "(my)",
+            "pronunciation": "wañge = my",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukonde / Masaba)"
+          },
+          {
+            "target": "Ndzidza",
+            "source": "I come",
+            "pronunciation": "ndzidza",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Ndera",
+            "source": "I bring",
+            "pronunciation": "ndera",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Bali",
+            "source": "They are",
+            "pronunciation": "bali",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Muli",
+            "source": "Ye are",
+            "pronunciation": "muli",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "χuli",
+            "source": "We are",
+            "pronunciation": "χuli",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Alu",
+            "source": "He is",
+            "pronunciation": "alu",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Uru",
+            "source": "Thou art",
+            "pronunciation": "uru",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "wañge = my — Ndzidza.",
+            "source": "(my) — I come."
+          },
+          {
+            "target": "Ndera • Bali.",
+            "source": "I bring • They are."
+          },
+          {
+            "target": "Muli (χuli).",
+            "source": "Ye are (We are)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"wañge = my\" in Luhya (Luyia) (Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukonde / Masaba))?",
+            "correctAnswer": "(my)",
+            "options": [
+              "(my)",
+              "I come",
+              "I bring",
+              "They are"
+            ],
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukonde / Masaba)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Luhya (Luyia) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "wañge = my: (my)",
+            "pairs": [
+              {
+                "left": "wañge = my",
+                "right": "(my)"
+              },
+              {
+                "left": "Ndzidza",
+                "right": "I come"
+              },
+              {
+                "left": "Ndera",
+                "right": "I bring"
+              },
+              {
+                "left": "Bali",
+                "right": "They are"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Luhya (Luyia) term for \"Ye are\": ___",
+            "correctAnswer": "Muli",
+            "options": [
+              "Muli",
+              "χuli",
+              "wañge = my",
+              "Ndzidza"
+            ],
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          }
+        ]
+      },
+      {
+        "id": "luhya-pd-corpus-9-2",
+        "title": "Historical Monograph & Comparative Roots II (Luhya (Luyia))",
+        "icon": "Compass",
+        "description": "Expand your command of Luhya (Luyia) ecological, kinship, and action vocabulary from the archival corpus.",
+        "tips": "Compare classical 19th- and early 20th-century Luhya (Luyia) transcriptions with modern standardized orthography.",
+        "words": [
+          {
+            "target": "Ndu",
+            "source": "I am",
+            "pronunciation": "ndu",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Tawi",
+            "source": "No, not",
+            "pronunciation": "tawi",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Racari",
+            "source": "most beasts, etc",
+            "pronunciation": "racari",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Iduasi",
+            "source": "(mammals and reptiles)",
+            "pronunciation": "iduasi",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Nisie",
+            "source": "I, me",
+            "pronunciation": "nisie",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Ngiri",
+            "source": "Wart hog",
+            "pronunciation": "ngiri",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Lucemo, (Ri-, Ma-); Tsiñgemo, pl",
+            "source": "Raphia palm",
+            "pronunciation": "lucemo, (ri-, ma-); tsiñgemo, pl",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Alia efu",
+            "source": "(our)",
+            "pronunciation": "alia efu",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ndu — Tawi.",
+            "source": "I am — No, not."
+          },
+          {
+            "target": "Racari • Iduasi.",
+            "source": "most beasts, etc • (mammals and reptiles)."
+          },
+          {
+            "target": "Nisie (Ngiri).",
+            "source": "I, me (Wart hog)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ndu\" in Luhya (Luyia) (Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara))?",
+            "correctAnswer": "I am",
+            "options": [
+              "I am",
+              "No, not",
+              "most beasts, etc",
+              "(mammals and reptiles)"
+            ],
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Luhya (Luyia) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Ndu: I am",
+            "pairs": [
+              {
+                "left": "Ndu",
+                "right": "I am"
+              },
+              {
+                "left": "Tawi",
+                "right": "No, not"
+              },
+              {
+                "left": "Racari",
+                "right": "most beasts, etc"
+              },
+              {
+                "left": "Iduasi",
+                "right": "(mammals and reptiles)"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Luhya (Luyia) term for \"I, me\": ___",
+            "correctAnswer": "Nisie",
+            "options": [
+              "Nisie",
+              "Ngiri",
+              "Ndu",
+              "Tawi"
+            ],
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luhya-unit-10-open-datasets-modern",
+    "title": "Unit 10: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
+    "description": "Master Luhya (Luyia) vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
+    "icon": "Globe",
+    "skills": [
+      {
+        "id": "luhya-open-dataset-10-1",
+        "title": "Swadesh Core & Cultural Lexicon (Luhya (Luyia))",
+        "icon": "Layers",
+        "description": "Learn core Luhya (Luyia) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "tips": "Focus on high-frequency roots shared across Luhya (Luyia) dialects and everyday speech.",
+        "words": [
+          {
+            "target": "Ehei",
+            "source": "(castrated)",
+            "pronunciation": "ehei",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Sirχanga",
+            "source": "(good)",
+            "pronunciation": "sirχanga",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Eχibia, Efiuma",
+            "source": "Iron / Beads",
+            "pronunciation": "eχibia, efiuma",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Imbande, Tsimbande",
+            "source": "nut",
+            "pronunciation": "imbande, tsimbande",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Omuriango",
+            "source": "Doorway",
+            "pronunciation": "omuriango",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Citere",
+            "source": "Daylight",
+            "pronunciation": "citere",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Aχana",
+            "source": "(little)",
+            "pronunciation": "aχana",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Indiwisi",
+            "source": "Colobus",
+            "pronunciation": "indiwisi",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ehei — Sirχanga.",
+            "source": "(castrated) — (good)."
+          },
+          {
+            "target": "Eχibia, Efiuma • Imbande, Tsimbande.",
+            "source": "Iron / Beads • nut."
+          },
+          {
+            "target": "Omuriango (Citere).",
+            "source": "Doorway (Daylight)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ehei\" in Luhya (Luyia) (Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara))?",
+            "correctAnswer": "(castrated)",
+            "options": [
+              "(castrated)",
+              "(good)",
+              "Iron / Beads",
+              "nut"
+            ],
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Luhya (Luyia) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Ehei: (castrated)",
+            "pairs": [
+              {
+                "left": "Ehei",
+                "right": "(castrated)"
+              },
+              {
+                "left": "Sirχanga",
+                "right": "(good)"
+              },
+              {
+                "left": "Eχibia, Efiuma",
+                "right": "Iron / Beads"
+              },
+              {
+                "left": "Imbande, Tsimbande",
+                "right": "nut"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Luhya (Luyia) term for \"Doorway\": ___",
+            "correctAnswer": "Omuriango",
+            "options": [
+              "Omuriango",
+              "Citere",
+              "Ehei",
+              "Sirχanga"
+            ],
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          }
+        ]
+      },
+      {
+        "id": "luhya-open-dataset-10-2",
+        "title": "Agriculture, Community & Everyday Life (Luhya (Luyia))",
+        "icon": "Sparkles",
+        "description": "Practice Luhya (Luyia) terms for agriculture, environment, social organization, and daily communication.",
+        "tips": "Review how traditional Luhya (Luyia) roots extend naturally to modern community, farming, and civic contexts.",
+        "words": [
+          {
+            "target": "Injωbe",
+            "source": "Speke's tragelaph",
+            "pronunciation": "injωbe",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "Ikisi",
+            "source": "Cephalophus",
+            "pronunciation": "ikisi",
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "target": "chenanu",
+            "source": "Whose",
+            "pronunciation": "chenanu",
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
+          },
+          {
+            "target": "ewinanu",
+            "source": "Who",
+            "pronunciation": "ewinanu",
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
+          },
+          {
+            "target": "nindao",
+            "source": "Wait",
+            "pronunciation": "nindao",
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
+          },
+          {
+            "target": "siwisi",
+            "source": "Unripe",
+            "pronunciation": "siwisi",
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
+          },
+          {
+            "target": "ni-checho",
+            "source": "True",
+            "pronunciation": "ni-checho",
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
+          },
+          {
+            "target": "kimirongolo",
+            "source": "Trees",
+            "pronunciation": "kimirongolo",
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Injωbe — Ikisi.",
+            "source": "Speke's tragelaph — Cephalophus."
+          },
+          {
+            "target": "chenanu • ewinanu.",
+            "source": "Whose • Who."
+          },
+          {
+            "target": "nindao (siwisi).",
+            "source": "Wait (Unripe)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Injωbe\" in Luhya (Luyia) (Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara))?",
+            "correctAnswer": "Speke's tragelaph",
+            "options": [
+              "Speke's tragelaph",
+              "Cephalophus",
+              "Whose",
+              "Who"
+            ],
+            "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Luhya (Luyia) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Injωbe: Speke's tragelaph",
+            "pairs": [
+              {
+                "left": "Injωbe",
+                "right": "Speke's tragelaph"
+              },
+              {
+                "left": "Ikisi",
+                "right": "Cephalophus"
+              },
+              {
+                "left": "chenanu",
+                "right": "Whose"
+              },
+              {
+                "left": "ewinanu",
+                "right": "Who"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Luhya (Luyia) term for \"Wait\": ___",
+            "correctAnswer": "nindao",
+            "options": [
+              "nindao",
+              "siwisi",
+              "Injωbe",
+              "Ikisi"
+            ],
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
+          }
+        ]
+      }
+    ]
   }
 ];

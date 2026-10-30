@@ -178,6 +178,27 @@
           "pronunciation": "too-neh",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
+        },
+        {
+          "english": "Good morning, how did you wake up?",
+          "translation": "Wĩ mwega, warauka atĩa?",
+          "pronunciation": "wee mwe-ga wa-rau-ka a-teea",
+          "context": "Kĩembu Everyday Greetings",
+          "audioFile": null
+        },
+        {
+          "english": "I woke up well, thank you",
+          "translation": "Ndarauka wega, nĩ wega mũno",
+          "pronunciation": "nda-rau-ka we-ga nee we-ga moo-no",
+          "context": "Kĩembu Everyday Greetings",
+          "audioFile": null
+        },
+        {
+          "english": "Safe journey / Go in peace",
+          "translation": "Thiĩ na thayũ",
+          "pronunciation": "thiee na tha-yoo",
+          "context": "Kĩembu Everyday Greetings",
+          "audioFile": null
         }
       ]
     },
@@ -716,6 +737,13 @@
           "translation": "Kī-ara; ci-ara",
           "pronunciation": "kī-ara; ci-ara",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Community health clinic / dispensary",
+          "translation": "nyũmba ya ũrigiti",
+          "pronunciation": "nyoomb-a ya oo-ri-gi-ti",
+          "context": "Kenyan Healthcare Lexicon (Anv-ke)",
           "audioFile": null
         }
       ]
@@ -1958,13 +1986,6 @@
           "audioFile": null
         },
         {
-          "english": "goat",
-          "translation": "mbũri",
-          "pronunciation": "mbũri",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
           "english": "sheep",
           "translation": "ng'ondu",
           "pronunciation": "ng'ondu",
@@ -1989,20 +2010,6 @@
           "english": "bird",
           "translation": "nyoni / nyũnyi",
           "pronunciation": "nyoni / nyũnyi",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "snake",
-          "translation": "njoka",
-          "pronunciation": "njoka",
-          "context": "Kîembu / Kĩmĩĩrũ",
-          "audioFile": null
-        },
-        {
-          "english": "elephant",
-          "translation": "njogu",
-          "pronunciation": "njogu",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
         },
@@ -2600,6 +2607,20 @@
           "pronunciation": "rū-kū; ṅ-gū",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
           "audioFile": null
+        },
+        {
+          "english": "Mount Kenya (God's dwelling mountain)",
+          "translation": "Kĩrĩnyaga",
+          "pronunciation": "kee-reeny-a-ga",
+          "context": "Sir H. H. Johnston (1919) & Hobley (1922)",
+          "audioFile": null
+        },
+        {
+          "english": "Tana River (great southern border river)",
+          "translation": "Rũũĩ rwa Thagana",
+          "pronunciation": "rooooee rwa tha-ga-na",
+          "context": "Sir H. H. Johnston (1919) & Embu Geography",
+          "audioFile": null
         }
       ]
     },
@@ -2612,13 +2633,6 @@
           "english": "House",
           "translation": "nyomba",
           "pronunciation": "nyomba",
-          "context": "Wikipedia Embu_language",
-          "audioFile": null
-        },
-        {
-          "english": "Meat",
-          "translation": "nyama",
-          "pronunciation": "nyama",
           "context": "Wikipedia Embu_language",
           "audioFile": null
         },
@@ -2767,6 +2781,55 @@
           "translation": "-rīā",
           "pronunciation": "-rīā",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
+          "audioFile": null
+        },
+        {
+          "english": "Pigeon peas (staple Mbeere & Embu pulse)",
+          "translation": "njũgũ",
+          "pronunciation": "njoo-goo",
+          "context": "Embu Agricultural Lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Arrowroot / taro grown along streams",
+          "translation": "ndũma",
+          "pronunciation": "ndoo-ma",
+          "context": "Embu Agricultural Lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Yams",
+          "translation": "gĩkwa (pl. ikwa)",
+          "pronunciation": "geek-wa",
+          "context": "Embu Agricultural Lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Millet porridge / gruel",
+          "translation": "ũcũrũ wa mwere",
+          "pronunciation": "oo-coo-roo wa mwe-re",
+          "context": "Embu Culinary Lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Honey beer for elders' council",
+          "translation": "njohi yaũkĩ",
+          "pronunciation": "njo-hi yaoo-kee",
+          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922)",
+          "audioFile": null
+        },
+        {
+          "english": "Agricultural extension officer",
+          "translation": "mũtaaramũ wa ũrĩmi",
+          "pronunciation": "moo-taa-ra-moo wa oo-ree-mi",
+          "context": "Kenyan Agricultural Lexicon (Anv-ke)",
+          "audioFile": null
+        },
+        {
+          "english": "Drought-resistant seeds",
+          "translation": "mbeũ cia kũkirĩrĩria riũa",
+          "pronunciation": "mbeoo cia koo-ki-ree-ree-ria riooa",
+          "context": "Kenyan Agricultural Lexicon (Anv-ke)",
           "audioFile": null
         }
       ]
@@ -3104,6 +3167,27 @@
           "pronunciation": "kū-, gū-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
           "audioFile": null
+        },
+        {
+          "english": "To plant crops before the rains",
+          "translation": "kũhanda mbura ĩtanoria",
+          "pronunciation": "koo-hand-a mbu-ra ee-ta-no-ria",
+          "context": "Kĩembu Core Verbs",
+          "audioFile": null
+        },
+        {
+          "english": "To harvest coffee and macadamia",
+          "translation": "kũgetha kahũa na makandamia",
+          "pronunciation": "koo-geth-a ka-hooa na ma-kand-a-mia",
+          "context": "Kĩembu Core Verbs",
+          "audioFile": null
+        },
+        {
+          "english": "Toirrigate / water crops",
+          "translation": "kũnyuithia mĩmera maĩ",
+          "pronunciation": "koony-uith-ia mee-me-ra maee",
+          "context": "Kĩembu Core Verbs",
+          "audioFile": null
         }
       ]
     },
@@ -3131,6 +3215,83 @@
           "translation": "Kiama kia Ngome & Mũtĩ wa Ngai (Mũgumo sacred fig tree)",
           "pronunciation": "ki-a-ma kia ngo-me / mu-gu-mo",
           "context": "C. W. Hobley (1910, pp. 146–155) & Johnston (1919)",
+          "audioFile": null
+        },
+        {
+          "english": "Ant, white (termite)",
+          "translation": "Mū-kω",
+          "pronunciation": "moo koh",
+          "context": "11. Embu / Mbeere (Embu) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast (man's)",
+          "translation": "ci",
+          "pronunciation": "ci",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "), A-va",
+          "pronunciation": "a va",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "Mū-þiginyω",
+          "pronunciation": "moo thi-giny-oh",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Hoe",
+          "translation": "Kī-būtū",
+          "pronunciation": "kee boo-too",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Gī-þūnω",
+          "pronunciation": "gee thoo-noh",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Song",
+          "translation": "Kī-gwū, Gωcu",
+          "pronunciation": "kee gwoo goh-cu",
+          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred grove for community sacrifices (Kĩembu)",
+          "translation": "kĩrĩti / mũtitũ wa igongona",
+          "pronunciation": "kee-ree-ti",
+          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "Council of elders (Kĩembu)",
+          "translation": "kiama kĩa athuri",
+          "pronunciation": "kia-ma keea ath-u-ri",
+          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922)",
+          "audioFile": null
+        },
+        {
+          "english": "Generational transfer ceremony (Embu & Mbeere)",
+          "translation": "nduĩko",
+          "pronunciation": "nduee-ko",
+          "context": "C. W. Hobley, Bantu Beliefs and Magic (1922)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional beehive hung in trees",
+          "translation": "mwatũ (pl. miatũ)",
+          "pronunciation": "mwa-too",
+          "context": "C. W. Hobley (1910, 1922)",
           "audioFile": null
         }
       ]
@@ -4035,9 +4196,25 @@
           "pronunciation": "-īyā",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
           "audioFile": null
+        },
+        {
+          "english": "Mobile money transfer / M-Pesa payment",
+          "translation": "kũtũma mbeca na thimũ",
+          "pronunciation": "koo-too-ma mbe-ca na thi-moo",
+          "context": "Kenyan Digital & Financial Lexicon (Anv-ke)",
+          "audioFile": null
+        },
+        {
+          "english": "To save money in a cooperative (SACCO)",
+          "translation": "kũiga mbeca ngwataniro-inĩ",
+          "pronunciation": "kooi-ga mbe-ca ngwa-ta-ni-ro i-nee",
+          "context": "Kenyan Financial Lexicon (Anv-ke)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & CLDR ebu.xml)"
+  "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & CLDR ebu.xml)",
+  "isoCode": "ebu",
+  "glottocode": "embu1242"
 }

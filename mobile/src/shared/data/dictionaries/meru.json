@@ -1670,6 +1670,34 @@
           "pronunciation": "koo / hah",
           "context": "Verified comparative entry across Kenyan bantu corpus",
           "audioFile": null
+        },
+        {
+          "english": "To cut / divide (Mweru)",
+          "translation": "Ku-ita",
+          "pronunciation": "ku i-ta",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 158 — Notes on Mweru)",
+          "audioFile": null
+        },
+        {
+          "english": "Mobile phone money transfer (Kĩmĩĩrũ)",
+          "translation": "Kũtũma mbeca na thimũ",
+          "pronunciation": "koo-too-ma mbe-ca na thi-moo",
+          "context": "African Next Voices (Anv-ke) Modern Kĩmĩĩrũ Corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Digital government service center (Huduma)",
+          "translation": "Kĩrũũngo kĩa ũtungata bwa thirikari",
+          "pronunciation": "kee-roooong-o keea oo-tung-a-ta bwa thi-ri-ka-ri",
+          "context": "African Next Voices (Anv-ke) Modern Kĩmĩĩrũ Corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Maternal and child health clinic",
+          "translation": "Thibitarĩ ya aka na twana",
+          "pronunciation": "thi-bi-ta-ree ya a-ka na twa-na",
+          "context": "African Next Voices (Anv-ke) Healthcare Domain",
+          "audioFile": null
         }
       ]
     },
@@ -3202,6 +3230,34 @@
           "pronunciation": "irio",
           "context": "Kîembu / Kĩmĩĩrũ",
           "audioFile": null
+        },
+        {
+          "english": "People / human beings (Mweru)",
+          "translation": "Antu (sg. Muntu)",
+          "pronunciation": "ant-u",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, p. 157 — Notes on Mweru)",
+          "audioFile": null
+        },
+        {
+          "english": "Ears (Mweru)",
+          "translation": "Matu (sg. Kũtũ)",
+          "pronunciation": "ma-tu",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 157 — Notes on Mweru)",
+          "audioFile": null
+        },
+        {
+          "english": "Louse / lice (Mweru)",
+          "translation": "Anda",
+          "pronunciation": "and-a",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 157 — Notes on Mweru)",
+          "audioFile": null
+        },
+        {
+          "english": "Soil conservation and terracing",
+          "translation": "Kũmenyeera mĩthetu na mĩtaro",
+          "pronunciation": "koo-meny-ee-ra meeth-e-tu na mee-ta-ro",
+          "context": "African Next Voices (Anv-ke) Agriculture Domain",
+          "audioFile": null
         }
       ],
       "icon": "👨‍👩‍👧‍👦"
@@ -4575,9 +4631,277 @@
           "pronunciation": "-īyā",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
           "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "M-buta",
+          "pronunciation": "m bu-ta",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (Cuka) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Borassus palm",
+          "translation": "? Mu-þi",
+          "pronunciation": "mu thi",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Breast (man's)",
+          "translation": "n-dia",
+          "pronunciation": "n dia",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Country",
+          "translation": "Rū-sena",
+          "pronunciation": "roo se-na",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Door",
+          "translation": "Mū-raṅgω",
+          "pronunciation": "moo rang-oh",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Face, forehead",
+          "translation": "Ci-eri",
+          "pronunciation": "ci e-ri",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "Baba, Ba-ba, Ba-va",
+          "pronunciation": "ba-ba ba ba ba va",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Fear",
+          "translation": "G-itigirra",
+          "pronunciation": "g i-ti-gir-ra",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Fear",
+          "translation": "Ṅ-korora",
+          "pronunciation": "ng ko-ro-ra",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "Gi-þaka",
+          "pronunciation": "gi tha-ka",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Ghost",
+          "translation": "N-kuā",
+          "pronunciation": "n kuah",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat (he)",
+          "translation": "Ki-hīa",
+          "pronunciation": "ki heea",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "N-tωgigω",
+          "pronunciation": "n toh-gi-goh",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "Ki-soṅua",
+          "pronunciation": "ki song-ua",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Hoe",
+          "translation": "I-þanwa",
+          "pronunciation": "i than-wa",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger",
+          "translation": "M-būta",
+          "pronunciation": "m boo-ta",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "ma- (N-gare",
+          "pronunciation": "ma",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Monkey",
+          "translation": "ma- (N-kīma",
+          "pronunciation": "ma",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "Mami",
+          "pronunciation": "ma-mi",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Pigeon",
+          "translation": "N-jīwa",
+          "pronunciation": "n jee-wa",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Song",
+          "translation": "Mū-ūmba",
+          "pronunciation": "moo oomb-a",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "Kī-rāma",
+          "pronunciation": "kee rah-ma",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Stick",
+          "translation": "Siyare",
+          "pronunciation": "si-ya-re",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Tail",
+          "translation": "N-twmōi",
+          "pronunciation": "n twmo-hi",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Urine",
+          "translation": "Mā-zigūma",
+          "pronunciation": "mah zi-goo-ma",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Mā-ī, Rω-e",
+          "pronunciation": "mah ee roh e",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "Mū-gūrra",
+          "pronunciation": "moo goor-ra",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Womb",
+          "translation": "Kī-šīī",
+          "pronunciation": "kee sheeee",
+          "context": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110)",
+          "audioFile": null
+        },
+        {
+          "english": "Totem / forbidden sacred thing (Mweru)",
+          "translation": "Netiri",
+          "pronunciation": "ne-ti-ri",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 157 — Notes on Mweru)",
+          "audioFile": null
+        },
+        {
+          "english": "Totemic clan division (Mweru)",
+          "translation": "Mwiria / Mwiriga",
+          "pronunciation": "mwi-ria",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 156 — Notes on Mweru)",
+          "audioFile": null
+        },
+        {
+          "english": "Ntowaita (dominant Meru clan of the red-sea crossing tradition)",
+          "translation": "Ntowaita",
+          "pronunciation": "nto-wai-ta",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, pp. 157–158)",
+          "audioFile": null
+        },
+        {
+          "english": "Athanya (Meru clan whose totem is basket twine)",
+          "translation": "Athanya",
+          "pronunciation": "ath-any-a",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 156)",
+          "audioFile": null
+        },
+        {
+          "english": "Njaru (Meru clan whose totem is white cattle)",
+          "translation": "Njaru",
+          "pronunciation": "nja-ru",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 156)",
+          "audioFile": null
+        },
+        {
+          "english": "Ntuni (Meru clan whose totem is red cattle)",
+          "translation": "Ntuni",
+          "pronunciation": "ntu-ni",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 156)",
+          "audioFile": null
+        },
+        {
+          "english": "Athinga (Meru clan whose totem is the giraffe)",
+          "translation": "Athinga",
+          "pronunciation": "ath-ing-a",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 156)",
+          "audioFile": null
+        },
+        {
+          "english": "Angilo (Meru clan whose totem is black cattle)",
+          "translation": "Angilo",
+          "pronunciation": "ang-i-lo",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 157)",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme council of Meru elders",
+          "translation": "Njuri Ncheke",
+          "pronunciation": "nju-ri nche-ke",
+          "context": "Meru Traditional Governance & Oral Tradition",
+          "audioFile": null
+        },
+        {
+          "english": "Nyambene Hills (Jombeni Range)",
+          "translation": "Nyambeene / Jombeni",
+          "pronunciation": "nyamb-ee-ne",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 155)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & Unicode CLDR mer.xml)"
+  "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & Unicode CLDR mer.xml)",
+  "isoCode": "mer",
+  "glottocode": "meru1245"
 }

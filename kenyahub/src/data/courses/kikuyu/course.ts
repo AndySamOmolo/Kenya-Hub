@@ -1884,5 +1884,501 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "kikuyu-unit-13-public-domain-corpus",
+    "title": "Unit 13: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Kikuyu (Gĩkũyũ) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "kikuyu-pd-corpus-13-1",
+        "title": "Historical Monograph & Comparative Roots I (Kikuyu (Gĩkũyũ))",
+        "icon": "Scroll",
+        "description": "Study verified Kikuyu (Gĩkũyũ) headwords and dialect forms extracted from primary public-domain monographs.",
+        "tips": "Every item in this skill is grounded directly in the historical Kikuyu (Gĩkũyũ) linguistic corpus with full phonetic pronunciation guides.",
+        "words": [
+          {
+            "target": "riika (pl. mariika)",
+            "source": "Age-grade / initiation generation",
+            "pronunciation": "rii-ka",
+            "hint": "Hobley (1922, p. 308) & Routledge (1910)"
+          },
+          {
+            "target": "ituĩka",
+            "source": "Generational transfer of governance ceremony",
+            "pronunciation": "i-tuee-ka",
+            "hint": "Hobley (1922) & Routledge (1910)"
+          },
+          {
+            "target": "thahu",
+            "source": "Ritual impurity / ceremonial curse",
+            "pronunciation": "tha-hu",
+            "hint": "Hobley (1922, p. 308)"
+          },
+          {
+            "target": "gũtahĩkia",
+            "source": "To purify ceremonially from thahu",
+            "pronunciation": "goo-ta-hee-kia",
+            "hint": "Hobley (1922, p. 308)"
+          },
+          {
+            "target": "thengira",
+            "source": "Unmarried men's bachelor hut / council hut",
+            "pronunciation": "theng-i-ra",
+            "hint": "Hobley (1922, p. 308)"
+          },
+          {
+            "target": "rũkwarũ",
+            "source": "Goat-skin wrist/waist strip of ceremonial peace",
+            "pronunciation": "rook-wa-roo",
+            "hint": "Hobley (1922, p. 308)"
+          },
+          {
+            "target": "rũenji / rũoro",
+            "source": "Traditional razor / Cattle-branding iron knife",
+            "pronunciation": "rooenj-i",
+            "hint": "Hobley (1922, p. 308)"
+          },
+          {
+            "target": "mũgũnda / gĩthaka",
+            "source": "Cultivated garden farm / Uncultivated bushland",
+            "pronunciation": "moo-goond-a",
+            "hint": "Wiktionary Bantu Swadesh & CGIAR Kikuyu"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "riika (pl. mariika) — ituĩka.",
+            "source": "Age-grade / initiation generation — Generational transfer of governance ceremony."
+          },
+          {
+            "target": "thahu • gũtahĩkia.",
+            "source": "Ritual impurity / ceremonial curse • To purify ceremonially from thahu."
+          },
+          {
+            "target": "thengira (rũkwarũ).",
+            "source": "Unmarried men's bachelor hut / council hut (Goat-skin wrist/waist strip of ceremonial peace)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"riika (pl. mariika)\" in Kikuyu (Gĩkũyũ) (Hobley (1922, p. 308) & Routledge (1910))?",
+            "correctAnswer": "Age-grade / initiation generation",
+            "options": [
+              "Age-grade / initiation generation",
+              "Generational transfer of governance ceremony",
+              "Ritual impurity / ceremonial curse",
+              "To purify ceremonially from thahu"
+            ],
+            "hint": "Hobley (1922, p. 308) & Routledge (1910)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kikuyu (Gĩkũyũ) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "riika (pl. mariika): Age-grade / initiation generation",
+            "pairs": [
+              {
+                "left": "riika (pl. mariika)",
+                "right": "Age-grade / initiation generation"
+              },
+              {
+                "left": "ituĩka",
+                "right": "Generational transfer of governance ceremony"
+              },
+              {
+                "left": "thahu",
+                "right": "Ritual impurity / ceremonial curse"
+              },
+              {
+                "left": "gũtahĩkia",
+                "right": "To purify ceremonially from thahu"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu (Gĩkũyũ) term for \"Unmarried men's bachelor hut / council hut\": ___",
+            "correctAnswer": "thengira",
+            "options": [
+              "thengira",
+              "rũkwarũ",
+              "riika (pl. mariika)",
+              "ituĩka"
+            ],
+            "hint": "Hobley (1922, p. 308)"
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-pd-corpus-13-2",
+        "title": "Historical Monograph & Comparative Roots II (Kikuyu (Gĩkũyũ))",
+        "icon": "Compass",
+        "description": "Expand your command of Kikuyu (Gĩkũyũ) ecological, kinship, and action vocabulary from the archival corpus.",
+        "tips": "Compare classical 19th- and early 20th-century Kikuyu (Gĩkũyũ) transcriptions with modern standardized orthography.",
+        "words": [
+          {
+            "target": "gũtũma mbeca na thimũ",
+            "source": "To send money via mobile phone (M-Pesa)",
+            "pronunciation": "goo-too-ma mbe-ca na thi-moo",
+            "hint": "Anv-ke Gĩkũyũ Financial Corpus"
+          },
+          {
+            "target": "ũrĩmi wa mĩmera na mahiũ",
+            "source": "Crop farming and livestock husbandry",
+            "pronunciation": "oo-ree-mi wa mee-me-ra na ma-hioo",
+            "hint": "CGIAR Kikuyu-English Translation Dataset"
+          },
+          {
+            "target": "mbeũ njega cia mbembe",
+            "source": "Certified / high-yield maize seeds",
+            "pronunciation": "mbeoo nje-ga cia mbemb-e",
+            "hint": "CGIAR & Anv-ke Agriculture Corpus"
+          },
+          {
+            "target": "thibitarĩ / nyũmba ya ũrigiti",
+            "source": "Hospital / health dispensary",
+            "pronunciation": "thi-bi-ta-ree",
+            "hint": "Anv-ke Healthcare Corpus"
+          },
+          {
+            "target": "gwĩciria / kũmenya",
+            "source": "To think / To know",
+            "pronunciation": "gwee-ci-ria",
+            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+          },
+          {
+            "target": "gũtindĩka / kũgucia",
+            "source": "To push / To pull",
+            "pronunciation": "goo-tind-ee-ka",
+            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+          },
+          {
+            "target": "kũatũra / gũtinia",
+            "source": "To split wood / To cut",
+            "pronunciation": "kooa-too-ra",
+            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+          },
+          {
+            "target": "kũnyoroka / kũrũnga",
+            "source": "To be smooth / To be straight",
+            "pronunciation": "koony-o-ro-ka",
+            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "gũtũma mbeca na thimũ — ũrĩmi wa mĩmera na mahiũ.",
+            "source": "To send money via mobile phone (M-Pesa) — Crop farming and livestock husbandry."
+          },
+          {
+            "target": "mbeũ njega cia mbembe • thibitarĩ / nyũmba ya ũrigiti.",
+            "source": "Certified / high-yield maize seeds • Hospital / health dispensary."
+          },
+          {
+            "target": "gwĩciria / kũmenya (gũtindĩka / kũgucia).",
+            "source": "To think / To know (To push / To pull)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"gũtũma mbeca na thimũ\" in Kikuyu (Gĩkũyũ) (Anv-ke Gĩkũyũ Financial Corpus)?",
+            "correctAnswer": "To send money via mobile phone (M-Pesa)",
+            "options": [
+              "To send money via mobile phone (M-Pesa)",
+              "Crop farming and livestock husbandry",
+              "Certified / high-yield maize seeds",
+              "Hospital / health dispensary"
+            ],
+            "hint": "Anv-ke Gĩkũyũ Financial Corpus"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kikuyu (Gĩkũyũ) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "gũtũma mbeca na thimũ: To send money via mobile phone (M-Pesa)",
+            "pairs": [
+              {
+                "left": "gũtũma mbeca na thimũ",
+                "right": "To send money via mobile phone (M-Pesa)"
+              },
+              {
+                "left": "ũrĩmi wa mĩmera na mahiũ",
+                "right": "Crop farming and livestock husbandry"
+              },
+              {
+                "left": "mbeũ njega cia mbembe",
+                "right": "Certified / high-yield maize seeds"
+              },
+              {
+                "left": "thibitarĩ / nyũmba ya ũrigiti",
+                "right": "Hospital / health dispensary"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu (Gĩkũyũ) term for \"To think / To know\": ___",
+            "correctAnswer": "gwĩciria / kũmenya",
+            "options": [
+              "gwĩciria / kũmenya",
+              "gũtindĩka / kũgucia",
+              "gũtũma mbeca na thimũ",
+              "ũrĩmi wa mĩmera na mahiũ"
+            ],
+            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-14-open-datasets-modern",
+    "title": "Unit 14: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
+    "description": "Master Kikuyu (Gĩkũyũ) vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
+    "icon": "Globe",
+    "skills": [
+      {
+        "id": "kikuyu-open-dataset-14-1",
+        "title": "Swadesh Core & Cultural Lexicon (Kikuyu (Gĩkũyũ))",
+        "icon": "Layers",
+        "description": "Learn core Kikuyu (Gĩkũyũ) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "tips": "Focus on high-frequency roots shared across Kikuyu (Gĩkũyũ) dialects and everyday speech.",
+        "words": [
+          {
+            "target": "Ku-Tahikia",
+            "source": "To purify. Ku is the infinitive prefix common to all verbs",
+            "pronunciation": "ku ta-hi-kia",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Ruoro",
+            "source": "Knife used for branding cattle",
+            "pronunciation": "ruo-ro",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Ruenji",
+            "source": "A razor",
+            "pronunciation": "ruenj-i",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Rika",
+            "source": "Generation—age grade",
+            "pronunciation": "ri-ka",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Njohi",
+            "source": "Native beer, usually made from sugar cane",
+            "pronunciation": "njo-hi",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Ngunga",
+            "source": "Caterpillars",
+            "pronunciation": "ngung-a",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Ndorume",
+            "source": "A ram, a favourite form of sacrifice",
+            "pronunciation": "ndo-ru-me",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Ngoma",
+            "source": "Ancestral spirit",
+            "pronunciation": "ngo-ma",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ku-Tahikia — Ruoro.",
+            "source": "To purify. Ku is the infinitive prefix common to all verbs — Knife used for branding cattle."
+          },
+          {
+            "target": "Ruenji • Rika.",
+            "source": "A razor • Generation—age grade."
+          },
+          {
+            "target": "Njohi (Ngunga).",
+            "source": "Native beer, usually made from sugar cane (Caterpillars)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ku-Tahikia\" in Kikuyu (Gĩkũyũ) (C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308))?",
+            "correctAnswer": "To purify. Ku is the infinitive prefix common to all verbs",
+            "options": [
+              "To purify. Ku is the infinitive prefix common to all verbs",
+              "Knife used for branding cattle",
+              "A razor",
+              "Generation—age grade"
+            ],
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kikuyu (Gĩkũyũ) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Ku-Tahikia: To purify. Ku is the infinitive prefix common to all verbs",
+            "pairs": [
+              {
+                "left": "Ku-Tahikia",
+                "right": "To purify. Ku is the infinitive prefix common to all verbs"
+              },
+              {
+                "left": "Ruoro",
+                "right": "Knife used for branding cattle"
+              },
+              {
+                "left": "Ruenji",
+                "right": "A razor"
+              },
+              {
+                "left": "Rika",
+                "right": "Generation—age grade"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu (Gĩkũyũ) term for \"Native beer, usually made from sugar cane\": ___",
+            "correctAnswer": "Njohi",
+            "options": [
+              "Njohi",
+              "Ngunga",
+              "Ku-Tahikia",
+              "Ruoro"
+            ],
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-open-dataset-14-2",
+        "title": "Agriculture, Community & Everyday Life (Kikuyu (Gĩkũyũ))",
+        "icon": "Sparkles",
+        "description": "Practice Kikuyu (Gĩkũyũ) terms for agriculture, environment, social organization, and daily communication.",
+        "tips": "Review how traditional Kikuyu (Gĩkũyũ) roots extend naturally to modern community, farming, and civic contexts.",
+        "words": [
+          {
+            "target": "Muburi",
+            "source": "Goat",
+            "pronunciation": "mu-bu-ri",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Murogi",
+            "source": "Medicine man who deals in black magic",
+            "pronunciation": "mu-ro-gi",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Mugumu",
+            "source": "Sacred fig tree, often called muti wa Engai",
+            "pronunciation": "mu-gu-mu",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Kiama",
+            "source": "Council of elders",
+            "pronunciation": "kia-ma",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Kita",
+            "source": "The power of the evil eye",
+            "pronunciation": "ki-ta",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Kihe",
+            "source": "An uncircumcised boy",
+            "pronunciation": "ki-he",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Kithangaona",
+            "source": "Sacred place",
+            "pronunciation": "kith-ang-ao-na",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "target": "Ichua",
+            "source": "A sacrificial fire",
+            "pronunciation": "ich-ua",
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Muburi — Murogi.",
+            "source": "Goat — Medicine man who deals in black magic."
+          },
+          {
+            "target": "Mugumu • Kiama.",
+            "source": "Sacred fig tree, often called muti wa Engai • Council of elders."
+          },
+          {
+            "target": "Kita (Kihe).",
+            "source": "The power of the evil eye (An uncircumcised boy)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Muburi\" in Kikuyu (Gĩkũyũ) (C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308))?",
+            "correctAnswer": "Goat",
+            "options": [
+              "Goat",
+              "Medicine man who deals in black magic",
+              "Sacred fig tree, often called muti wa Engai",
+              "Council of elders"
+            ],
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kikuyu (Gĩkũyũ) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Muburi: Goat",
+            "pairs": [
+              {
+                "left": "Muburi",
+                "right": "Goat"
+              },
+              {
+                "left": "Murogi",
+                "right": "Medicine man who deals in black magic"
+              },
+              {
+                "left": "Mugumu",
+                "right": "Sacred fig tree, often called muti wa Engai"
+              },
+              {
+                "left": "Kiama",
+                "right": "Council of elders"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu (Gĩkũyũ) term for \"The power of the evil eye\": ___",
+            "correctAnswer": "Kita",
+            "options": [
+              "Kita",
+              "Kihe",
+              "Muburi",
+              "Murogi"
+            ],
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          }
+        ]
+      }
+    ]
   }
 ];

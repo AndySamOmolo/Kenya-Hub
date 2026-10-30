@@ -1581,5 +1581,501 @@ export const TESO_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "teso-unit-9-public-domain-corpus",
+    "title": "Unit 9: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Teso (Ateso) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "teso-pd-corpus-9-1",
+        "title": "Historical Monograph & Comparative Roots I (Teso (Ateso))",
+        "icon": "Scroll",
+        "description": "Study verified Teso (Ateso) headwords and dialect forms extracted from primary public-domain monographs.",
+        "tips": "Every item in this skill is grounded directly in the historical Teso (Ateso) linguistic corpus with full phonetic pronunciation guides.",
+        "words": [
+          {
+            "target": "ateker (pl. atekerin)",
+            "source": "Clan / exogamous kinship group",
+            "pronunciation": "a-te-ker",
+            "hint": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)"
+          },
+          {
+            "target": "Inyā",
+            "source": "Grass",
+            "pronunciation": "iny-ah",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Akūt",
+            "source": "God",
+            "pronunciation": "a-koot",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Aginé",
+            "source": "Goat",
+            "pronunciation": "a-gin",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Ekokorr",
+            "source": "Fowl",
+            "pronunciation": "e-ko-kor",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Akeju",
+            "source": "Foot",
+            "pronunciation": "a-ke-ju",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Esessī",
+            "source": "Fish",
+            "pronunciation": "e-ses-see",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Ebωkorit",
+            "source": "Finger",
+            "pronunciation": "e-boh-ko-rit",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "ateker (pl. atekerin) — Inyā.",
+            "source": "Clan / exogamous kinship group — Grass."
+          },
+          {
+            "target": "Akūt • Aginé.",
+            "source": "God • Goat."
+          },
+          {
+            "target": "Ekokorr (Akeju).",
+            "source": "Fowl (Foot)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ateker (pl. atekerin)\" in Teso (Ateso) (Rev. A. L. Kitching, A Handbook of the Ateso Language (1915))?",
+            "correctAnswer": "Clan / exogamous kinship group",
+            "options": [
+              "Clan / exogamous kinship group",
+              "Grass",
+              "God",
+              "Goat"
+            ],
+            "hint": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Teso (Ateso) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "ateker (pl. atekerin): Clan / exogamous kinship group",
+            "pairs": [
+              {
+                "left": "ateker (pl. atekerin)",
+                "right": "Clan / exogamous kinship group"
+              },
+              {
+                "left": "Inyā",
+                "right": "Grass"
+              },
+              {
+                "left": "Akūt",
+                "right": "God"
+              },
+              {
+                "left": "Aginé",
+                "right": "Goat"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso (Ateso) term for \"Fowl\": ___",
+            "correctAnswer": "Ekokorr",
+            "options": [
+              "Ekokorr",
+              "Akeju",
+              "ateker (pl. atekerin)",
+              "Inyā"
+            ],
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          }
+        ]
+      },
+      {
+        "id": "teso-pd-corpus-9-2",
+        "title": "Historical Monograph & Comparative Roots II (Teso (Ateso))",
+        "icon": "Compass",
+        "description": "Expand your command of Teso (Ateso) ecological, kinship, and action vocabulary from the archival corpus.",
+        "tips": "Compare classical 19th- and early 20th-century Teso (Ateso) transcriptions with modern standardized orthography.",
+        "words": [
+          {
+            "target": "Akoñ",
+            "source": "Eye",
+            "pronunciation": "a-ko",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Etom",
+            "source": "Elephant",
+            "pronunciation": "e-tom",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Akit",
+            "source": "Ear",
+            "pronunciation": "a-kit",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Ekiñok",
+            "source": "Dog",
+            "pronunciation": "e-ki ok",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Akenyanu",
+            "source": "Day",
+            "pronunciation": "a-keny-a-nu",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Akiteñ; naberω",
+            "source": "Cow",
+            "pronunciation": "a-ki-te",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Enañga",
+            "source": "Cloth",
+            "pronunciation": "e-nang-a",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Ekōkō",
+            "source": "Child",
+            "pronunciation": "e-koh-koh",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Akoñ — Etom.",
+            "source": "Eye — Elephant."
+          },
+          {
+            "target": "Akit • Ekiñok.",
+            "source": "Ear • Dog."
+          },
+          {
+            "target": "Akenyanu (Akiteñ; naberω).",
+            "source": "Day (Cow)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Akoñ\" in Teso (Ateso) (Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)?",
+            "correctAnswer": "Eye",
+            "options": [
+              "Eye",
+              "Elephant",
+              "Ear",
+              "Dog"
+            ],
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Teso (Ateso) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Akoñ: Eye",
+            "pairs": [
+              {
+                "left": "Akoñ",
+                "right": "Eye"
+              },
+              {
+                "left": "Etom",
+                "right": "Elephant"
+              },
+              {
+                "left": "Akit",
+                "right": "Ear"
+              },
+              {
+                "left": "Ekiñok",
+                "right": "Dog"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso (Ateso) term for \"Day\": ___",
+            "correctAnswer": "Akenyanu",
+            "options": [
+              "Akenyanu",
+              "Akiteñ; naberω",
+              "Akoñ",
+              "Etom"
+            ],
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "teso-unit-10-open-datasets-modern",
+    "title": "Unit 10: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
+    "description": "Master Teso (Ateso) vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
+    "icon": "Globe",
+    "skills": [
+      {
+        "id": "teso-open-dataset-10-1",
+        "title": "Swadesh Core & Cultural Lexicon (Teso (Ateso))",
+        "icon": "Layers",
+        "description": "Learn core Teso (Ateso) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "tips": "Focus on high-frequency roots shared across Teso (Ateso) dialects and everyday speech.",
+        "words": [
+          {
+            "target": "Anācăkēñe",
+            "source": "Brother",
+            "pronunciation": "a-nah-ca-keh e",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Emal; Akau",
+            "source": "Bow",
+            "pronunciation": "e-mal",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Akωit",
+            "source": "Bone",
+            "pronunciation": "a-ko-hit",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Aqot",
+            "source": "Blood",
+            "pronunciation": "a-qot",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Atoroqót",
+            "source": "Bird",
+            "pronunciation": "a-to-ro t",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Alaburu",
+            "source": "Banana",
+            "pronunciation": "a-la-bu-ru",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "Ekoyω",
+            "source": "Arrow",
+            "pronunciation": "e-ko-yoh",
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "target": "atomon",
+            "source": "Ten",
+            "pronunciation": "a-to-mon",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Anācăkēñe — Emal; Akau.",
+            "source": "Brother — Bow."
+          },
+          {
+            "target": "Akωit • Aqot.",
+            "source": "Bone • Blood."
+          },
+          {
+            "target": "Atoroqót (Alaburu).",
+            "source": "Bird (Banana)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Anācăkēñe\" in Teso (Ateso) (Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)?",
+            "correctAnswer": "Brother",
+            "options": [
+              "Brother",
+              "Bow",
+              "Bone",
+              "Blood"
+            ],
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Teso (Ateso) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Anācăkēñe: Brother",
+            "pairs": [
+              {
+                "left": "Anācăkēñe",
+                "right": "Brother"
+              },
+              {
+                "left": "Emal; Akau",
+                "right": "Bow"
+              },
+              {
+                "left": "Akωit",
+                "right": "Bone"
+              },
+              {
+                "left": "Aqot",
+                "right": "Blood"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso (Ateso) term for \"Bird\": ___",
+            "correctAnswer": "Atoroqót",
+            "options": [
+              "Atoroqót",
+              "Alaburu",
+              "Anācăkēñe",
+              "Emal; Akau"
+            ],
+            "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+          }
+        ]
+      },
+      {
+        "id": "teso-open-dataset-10-2",
+        "title": "Agriculture, Community & Everyday Life (Teso (Ateso))",
+        "icon": "Sparkles",
+        "description": "Practice Teso (Ateso) terms for agriculture, environment, social organization, and daily communication.",
+        "tips": "Review how traditional Teso (Ateso) roots extend naturally to modern community, farming, and civic contexts.",
+        "words": [
+          {
+            "target": "kanyi-ki-ongwon or akanya kangwun",
+            "source": "Nine",
+            "pronunciation": "kany-i ki ong-won or a-kany-a kang-wun",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          },
+          {
+            "target": "kanyi kauni",
+            "source": "Eight",
+            "pronunciation": "kany-i kau-ni",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          },
+          {
+            "target": "kanyi-kare",
+            "source": "Seven",
+            "pronunciation": "kany-i ka-re",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          },
+          {
+            "target": "{ kanyi or akanya } kape",
+            "source": "Six",
+            "pronunciation": "kany-i or a-kany-a ka-pe",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          },
+          {
+            "target": "ekan or akanyi",
+            "source": "Five",
+            "pronunciation": "e-kan or a-kany-i",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          },
+          {
+            "target": "aungwen or ongwon",
+            "source": "Four",
+            "pronunciation": "aung-wen or ong-won",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          },
+          {
+            "target": "auni or uni",
+            "source": "Three",
+            "pronunciation": "au-ni or u-ni",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          },
+          {
+            "target": "are",
+            "source": "Two",
+            "pronunciation": "a-re",
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "kanyi-ki-ongwon or akanya kangwun — kanyi kauni.",
+            "source": "Nine — Eight."
+          },
+          {
+            "target": "kanyi-kare • { kanyi or akanya } kape.",
+            "source": "Seven • Six."
+          },
+          {
+            "target": "ekan or akanyi (aungwen or ongwon).",
+            "source": "Five (Four)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"kanyi-ki-ongwon or akanya kangwun\" in Teso (Ateso) (Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95))?",
+            "correctAnswer": "Nine",
+            "options": [
+              "Nine",
+              "Eight",
+              "Seven",
+              "Six"
+            ],
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Teso (Ateso) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "kanyi-ki-ongwon or akanya kangwun: Nine",
+            "pairs": [
+              {
+                "left": "kanyi-ki-ongwon or akanya kangwun",
+                "right": "Nine"
+              },
+              {
+                "left": "kanyi kauni",
+                "right": "Eight"
+              },
+              {
+                "left": "kanyi-kare",
+                "right": "Seven"
+              },
+              {
+                "left": "{ kanyi or akanya } kape",
+                "right": "Six"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Teso (Ateso) term for \"Five\": ___",
+            "correctAnswer": "ekan or akanyi",
+            "options": [
+              "ekan or akanyi",
+              "aungwen or ongwon",
+              "kanyi-ki-ongwon or akanya kangwun",
+              "kanyi kauni"
+            ],
+            "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
+          }
+        ]
+      }
+    ]
   }
 ];

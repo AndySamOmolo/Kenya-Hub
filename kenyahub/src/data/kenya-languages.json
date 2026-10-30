@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20",
+  "lastUpdated": "2026-10-30",
   "families": [
     {
       "id": "bantu",
@@ -42,7 +42,10 @@
         "Kirinyaga",
         "Nyandarua"
       ],
-      "notes": "Largest ethnic group. Central highlands."
+      "notes": "Largest ethnic group. Central highlands.",
+      "id": "kikuyu",
+      "isoCode": "kik",
+      "glottocode": "kiku1240"
     },
     {
       "name": "Dholuo (Luo)",
@@ -54,7 +57,10 @@
         "Homa Bay",
         "Migori"
       ],
-      "notes": "River-Lake Nilotes. Lake Victoria basin."
+      "notes": "River-Lake Nilotes. Lake Victoria basin.",
+      "id": "luo",
+      "isoCode": "luo",
+      "glottocode": "luoo1235"
     },
     {
       "name": "Kalenjin",
@@ -70,7 +76,10 @@
         "Trans Nzoia",
         "West Pokot"
       ],
-      "notes": "Highland Nilotes. Several sub-groups: Nandi, Kipsigis, Tugen, Pokot, Marakwet, Sabaot."
+      "notes": "Highland Nilotes. Several sub-groups: Nandi, Kipsigis, Tugen, Pokot, Marakwet, Sabaot.",
+      "id": "kalenjin",
+      "isoCode": "kln",
+      "glottocode": "kale1246"
     },
     {
       "name": "Luhya (Luyia)",
@@ -82,7 +91,10 @@
         "Vihiga",
         "Busia"
       ],
-      "notes": "17+ dialects including Bukusu, Maragoli, Idakho, Isukha, Tiriki."
+      "notes": "17+ dialects including Bukusu, Maragoli, Idakho, Isukha, Tiriki.",
+      "id": "luhya",
+      "isoCode": "luy",
+      "glottocode": "luyi1234"
     },
     {
       "name": "Kamba (Kĩkamba)",
@@ -93,7 +105,10 @@
         "Makueni",
         "Kitui"
       ],
-      "notes": "Eastern province. Known for wood carving and music."
+      "notes": "Eastern province. Known for wood carving and music.",
+      "id": "kamba",
+      "isoCode": "kam",
+      "glottocode": "kamb1297"
     },
     {
       "name": "Somali",
@@ -105,7 +120,10 @@
         "Mandera",
         "Isiolo (part)"
       ],
-      "notes": "Dominant in North Eastern. Cross-border with Somalia."
+      "notes": "Dominant in North Eastern. Cross-border with Somalia.",
+      "id": "somali",
+      "isoCode": "som",
+      "glottocode": "soma1255"
     },
     {
       "name": "Kisii (Ekegusii)",
@@ -115,7 +133,10 @@
         "Kisii",
         "Nyamira"
       ],
-      "notes": "Kisii Highlands. Known for soapstone carving."
+      "notes": "Kisii Highlands. Known for soapstone carving.",
+      "id": "kisii",
+      "isoCode": "guz",
+      "glottocode": "gusi1247"
     },
     {
       "name": "Meru (Kĩmĩĩrũ)",
@@ -125,7 +146,10 @@
         "Meru",
         "Tharaka-Nithi"
       ],
-      "notes": "Mt. Kenya eastern slopes. Several sub-dialects."
+      "notes": "Mt. Kenya eastern slopes. Several sub-dialects.",
+      "id": "meru",
+      "isoCode": "mer",
+      "glottocode": "meru1245"
     },
     {
       "name": "Maasai (Maa)",
@@ -136,7 +160,10 @@
         "Kajiado",
         "Samburu (Samburu dialect)"
       ],
-      "notes": "Plains Nilotes. Pastoralist culture. Samburu is a closely related dialect."
+      "notes": "Plains Nilotes. Pastoralist culture. Samburu is a closely related dialect.",
+      "id": "maasai",
+      "isoCode": "mas",
+      "glottocode": "masa1300"
     },
     {
       "name": "Turkana (Ng'aturukana)",
@@ -145,7 +172,10 @@
       "counties": [
         "Turkana"
       ],
-      "notes": "Plains Nilotes (Eastern Nilotic). Semi-nomadic pastoralists. Spoken across Turkana County in northwestern Kenya. Rich pastoralist vocabulary and oral traditions."
+      "notes": "Plains Nilotes (Eastern Nilotic). Semi-nomadic pastoralists. Spoken across Turkana County in northwestern Kenya. Rich pastoralist vocabulary and oral traditions.",
+      "id": "turkana",
+      "isoCode": "tuv",
+      "glottocode": "turk1308"
     },
     {
       "name": "Embu (Kĩembu)",
@@ -154,7 +184,10 @@
       "counties": [
         "Embu"
       ],
-      "notes": "Mt. Kenya southeastern slopes. Related to Kikuyu and Meru."
+      "notes": "Mt. Kenya southeastern slopes. Related to Kikuyu and Meru.",
+      "id": "embu",
+      "isoCode": "ebu",
+      "glottocode": "embu1242"
     },
     {
       "name": "Taita (Kidawida)",
@@ -163,7 +196,10 @@
       "counties": [
         "Taita-Taveta"
       ],
-      "notes": "Taita Hills. Three main dialects: Dawida, Sagala, Kasigau."
+      "notes": "Taita Hills. Three main dialects: Dawida, Sagala, Kasigau.",
+      "id": "taita",
+      "isoCode": "dav",
+      "glottocode": "tait1250"
     },
     {
       "name": "Swahili (Kiswahili)",
@@ -176,7 +212,10 @@
         "Kwale",
         "Tana River"
       ],
-      "notes": "National & official language. Native along the coast but spoken nationwide as lingua franca."
+      "notes": "National & official language. Native along the coast but spoken nationwide as lingua franca.",
+      "id": "swahili",
+      "isoCode": "swh",
+      "glottocode": "swah1253"
     },
     {
       "name": "Mijikenda",
@@ -187,35 +226,47 @@
         "Kwale",
         "Mombasa"
       ],
-      "notes": "Nine sub-groups: Giriama, Digo, Duruma, Chonyi, Jibana, Kambe, Ribe, Rabai, Kauma."
+      "notes": "Nine sub-groups: Giriama, Digo, Duruma, Chonyi, Jibana, Kambe, Ribe, Rabai, Kauma.",
+      "id": "mijikenda",
+      "isoCode": "nyf",
+      "glottocode": "miji1238"
     },
     {
       "name": "Borana (Oromo)",
       "family": "cushitic",
-      "speakers": 350000,
+      "speakers": 550000,
       "counties": [
         "Marsabit",
         "Isiolo"
       ],
-      "notes": "Cushitic pastoralists. Related to Ethiopian Oromo."
+      "notes": "Cushitic pastoralists. Related to Ethiopian Oromo.",
+      "id": "borana",
+      "isoCode": "gax",
+      "glottocode": "bora1271"
     },
     {
       "name": "Rendille",
       "family": "cushitic",
-      "speakers": 80000,
+      "speakers": 96000,
       "counties": [
         "Marsabit"
       ],
-      "notes": "Camel-herding pastoralists. Unique language between Somali and Afar."
+      "notes": "Camel-herding pastoralists. Unique language between Somali and Afar.",
+      "id": "rendille",
+      "isoCode": "rel",
+      "glottocode": "rend1243"
     },
     {
       "name": "Teso (Ateso)",
       "family": "nilotic",
-      "speakers": 450000,
+      "speakers": 468000,
       "counties": [
         "Busia"
       ],
-      "notes": "Cross-border with Uganda. Part of the broader Teso ethnic group."
+      "notes": "Cross-border with Uganda. Part of the broader Teso ethnic group.",
+      "id": "teso",
+      "isoCode": "teo",
+      "glottocode": "teso1247"
     },
     {
       "name": "Pokomo",
@@ -224,7 +275,10 @@
       "counties": [
         "Tana River"
       ],
-      "notes": "Tana River farmers. One of the smaller Bantu groups."
+      "notes": "Tana River farmers. One of the smaller Bantu groups.",
+      "id": "pokomo",
+      "isoCode": "pkb",
+      "glottocode": "poko1261"
     },
     {
       "name": "Samburu",
@@ -233,7 +287,10 @@
       "counties": [
         "Samburu"
       ],
-      "notes": "Closely related to Maasai. Semi-nomadic pastoralists."
+      "notes": "Closely related to Maasai. Semi-nomadic pastoralists.",
+      "id": "samburu",
+      "isoCode": "saq",
+      "glottocode": "samb1315"
     },
     {
       "name": "Ilchamus (Njemps)",
@@ -242,7 +299,10 @@
       "counties": [
         "Baringo"
       ],
-      "notes": "Lake Baringo fishermen/farmers. Related to Maasai/Samburu. Endangered language."
+      "notes": "Lake Baringo fishermen/farmers. Related to Maasai/Samburu. Endangered language.",
+      "id": "ilchamus",
+      "isoCode": "saq-ilc",
+      "glottocode": "chAM1234"
     },
     {
       "name": "Pokot (Pökoot)",
@@ -252,7 +312,10 @@
         "West Pokot",
         "Baringo"
       ],
-      "notes": "Highland Nilotes (Northern Kalenjin branch). Pastoralists and terrace farmers in West Pokot and Baringo counties; documented in Mervyn Beech's 1911 monograph."
+      "notes": "Highland Nilotes (Northern Kalenjin branch). Pastoralists and terrace farmers in West Pokot and Baringo counties; documented in Mervyn Beech's 1911 monograph.",
+      "id": "pokot",
+      "isoCode": "pko",
+      "glottocode": "poko1263"
     },
     {
       "name": "Taveta (Kitaveta)",
@@ -261,7 +324,10 @@
       "counties": [
         "Taita-Taveta"
       ],
-      "notes": "Northeast Coast Bantu (Pare-Taveta group) spoken around Taveta and Lake Jipe; rich oral proverb tradition documented by A. C. Hollis (1910)."
+      "notes": "Northeast Coast Bantu (Pare-Taveta group) spoken around Taveta and Lake Jipe; rich oral proverb tradition documented by A. C. Hollis (1910).",
+      "id": "taveta",
+      "isoCode": "tvs",
+      "glottocode": "tave1238"
     }
   ],
   "officialLanguages": [

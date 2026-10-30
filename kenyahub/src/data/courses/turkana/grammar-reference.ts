@@ -214,5 +214,26 @@ export const TURKANA_GRAMMAR_SECTIONS: GrammarSection[] = [
       { turkana: "epei, ari, uni, omwon, akhan, akhan ka pei, tomon", english: "1, 2, 3, 4, 5, 6 (5+1), 10", explanation: "Quinary-decimal numeral system built on akhan (5)" },
       { turkana: "Ageboro (Lodungi–Lopo) & Akamu (Lotiak–Lugwan)", english: "Rainy Season (Jan–Jun) & Dry Season (Jul–Dec)", explanation: "Traditional 12-month Turkana ecological calendar" }
     ]
+  },
+  {
+    "id": "turkana-public-domain-dataset-synthesis",
+    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Turkana)",
+    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Turkana.",
+    "content": "1. **Archival & Open-Dataset Integration for Turkana**:
+   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
+2. **Phonetic & Orthographic Normalization**:
+   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "examples": [
+      {
+        "turkana": "Kalωme • Ekiyω",
+        "english": "You weep • They laugh",
+        "explanation": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+      },
+      {
+        "turkana": "Nyayeni ao • Ayeni",
+        "english": "I know not • I know",
+        "explanation": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+      }
+    ]
   }
 ];

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T08:16:07.950Z",
+  "generatedAt": "2026-10-30T09:55:30.958Z",
   "summary": {
     "registryTools": 44,
     "routeDirectories": 44,
@@ -536,7 +536,7 @@
         },
         {
           "file": "src/data/kenya-languages.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-30",
           "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
         }
       ],
@@ -547,7 +547,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.knbs.or.ke/",
       "maxAgeDays": 365,
-      "ageDays": 10,
+      "ageDays": 0,
       "data": [
         {
           "file": "src/data/language-sources",
@@ -556,7 +556,7 @@
         },
         {
           "file": "src/data/kenya-languages.json",
-          "lastUpdated": "2026-10-20",
+          "lastUpdated": "2026-10-30",
           "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
         }
       ],

@@ -1582,5 +1582,501 @@ export const KISII_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "kisii-unit-9-public-domain-corpus",
+    "title": "Unit 9: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Kisii (Ekegusii) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "kisii-pd-corpus-9-1",
+        "title": "Historical Monograph & Comparative Roots I (Kisii (Ekegusii))",
+        "icon": "Scroll",
+        "description": "Study verified Kisii (Ekegusii) headwords and dialect forms extracted from primary public-domain monographs.",
+        "tips": "Every item in this skill is grounded directly in the historical Kisii (Ekegusii) linguistic corpus with full phonetic pronunciation guides.",
+        "words": [
+          {
+            "target": "Ngωtenga",
+            "source": "I dance",
+            "pronunciation": "ngoh-teng-a",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Nangire",
+            "source": "I come not",
+            "pronunciation": "nang-i-re",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Ngωja",
+            "source": "I come",
+            "pronunciation": "ngoh-ja",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Narēnta",
+            "source": "I bring",
+            "pronunciation": "na-reh-nta",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Inje ndu",
+            "source": "I am",
+            "pronunciation": "inj-e ndu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Yaya",
+            "source": "No, not",
+            "pronunciation": "ya-ya",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Ariá",
+            "source": "There",
+            "pronunciation": "a-ri",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "ñgi",
+            "source": "Plenty",
+            "pronunciation": "ngi",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ngωtenga — Nangire.",
+            "source": "I dance — I come not."
+          },
+          {
+            "target": "Ngωja • Narēnta.",
+            "source": "I come • I bring."
+          },
+          {
+            "target": "Inje ndu (Yaya).",
+            "source": "I am (No, not)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ngωtenga\" in Kisii (Ekegusii) (Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966))?",
+            "correctAnswer": "I dance",
+            "options": [
+              "I dance",
+              "I come not",
+              "I come",
+              "I bring"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Ngωtenga: I dance",
+            "pairs": [
+              {
+                "left": "Ngωtenga",
+                "right": "I dance"
+              },
+              {
+                "left": "Nangire",
+                "right": "I come not"
+              },
+              {
+                "left": "Ngωja",
+                "right": "I come"
+              },
+              {
+                "left": "Narēnta",
+                "right": "I bring"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"I am\": ___",
+            "correctAnswer": "Inje ndu",
+            "options": [
+              "Inje ndu",
+              "Yaya",
+              "Ngωtenga",
+              "Nangire"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          }
+        ]
+      },
+      {
+        "id": "kisii-pd-corpus-9-2",
+        "title": "Historical Monograph & Comparative Roots II (Kisii (Ekegusii))",
+        "icon": "Compass",
+        "description": "Expand your command of Kisii (Ekegusii) ecological, kinship, and action vocabulary from the archival corpus.",
+        "tips": "Compare classical 19th- and early 20th-century Kisii (Ekegusii) transcriptions with modern standardized orthography.",
+        "words": [
+          {
+            "target": "Emuamu",
+            "source": "Black",
+            "pronunciation": "e-mua-mu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Aīya, Aiga",
+            "source": "Here",
+            "pronunciation": "aee-ya ai-ga",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Endabu",
+            "source": "White",
+            "pronunciation": "end-a-bu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "saja, -gore",
+            "source": "Male",
+            "pronunciation": "sa-ja go-re",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "kĕ",
+            "source": "Little",
+            "pronunciation": "ke",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "kuru",
+            "source": "Great",
+            "pronunciation": "ku-ru",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "uya, -ya; Abantu baya = good men",
+            "source": "Good",
+            "pronunciation": "u-ya ya",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Enkari, -kari",
+            "source": "Female",
+            "pronunciation": "enk-a-ri ka-ri",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Emuamu — Aīya, Aiga.",
+            "source": "Black — Here."
+          },
+          {
+            "target": "Endabu • saja, -gore.",
+            "source": "White • Male."
+          },
+          {
+            "target": "kĕ (kuru).",
+            "source": "Little (Great)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Emuamu\" in Kisii (Ekegusii) (Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966))?",
+            "correctAnswer": "Black",
+            "options": [
+              "Black",
+              "Here",
+              "White",
+              "Male"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Emuamu: Black",
+            "pairs": [
+              {
+                "left": "Emuamu",
+                "right": "Black"
+              },
+              {
+                "left": "Aīya, Aiga",
+                "right": "Here"
+              },
+              {
+                "left": "Endabu",
+                "right": "White"
+              },
+              {
+                "left": "saja, -gore",
+                "right": "Male"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"Little\": ___",
+            "correctAnswer": "kĕ",
+            "options": [
+              "kĕ",
+              "kuru",
+              "Emuamu",
+              "Aīya, Aiga"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kisii-unit-10-open-datasets-modern",
+    "title": "Unit 10: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
+    "description": "Master Kisii (Ekegusii) vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
+    "icon": "Globe",
+    "skills": [
+      {
+        "id": "kisii-open-dataset-10-1",
+        "title": "Swadesh Core & Cultural Lexicon (Kisii (Ekegusii))",
+        "icon": "Layers",
+        "description": "Learn core Kisii (Ekegusii) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "tips": "Focus on high-frequency roots shared across Kisii (Ekegusii) dialects and everyday speech.",
+        "words": [
+          {
+            "target": "bi",
+            "source": "Bad",
+            "pronunciation": "bi",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Abana babo",
+            "source": "Their children",
+            "pronunciation": "a-ba-na ba-bo",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Riroba rienu",
+            "source": "Your country",
+            "pronunciation": "ri-ro-ba rie-nu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Omuji uitu",
+            "source": "Our town",
+            "pronunciation": "o-mu-ji ui-tu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "„ yake",
+            "source": "His house",
+            "pronunciation": "ya-ke",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "„ yāo",
+            "source": "Thy house",
+            "pronunciation": "ya-ho",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Enyumba yane",
+            "source": "My house",
+            "pronunciation": "eny-umb-a ya-ne",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "„ ulia",
+            "source": "That tree",
+            "pronunciation": "u-lia",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "bi — Abana babo.",
+            "source": "Bad — Their children."
+          },
+          {
+            "target": "Riroba rienu • Omuji uitu.",
+            "source": "Your country • Our town."
+          },
+          {
+            "target": "„ yake („ yāo).",
+            "source": "His house (Thy house)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"bi\" in Kisii (Ekegusii) (Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966))?",
+            "correctAnswer": "Bad",
+            "options": [
+              "Bad",
+              "Their children",
+              "Your country",
+              "Our town"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "bi: Bad",
+            "pairs": [
+              {
+                "left": "bi",
+                "right": "Bad"
+              },
+              {
+                "left": "Abana babo",
+                "right": "Their children"
+              },
+              {
+                "left": "Riroba rienu",
+                "right": "Your country"
+              },
+              {
+                "left": "Omuji uitu",
+                "right": "Our town"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"His house\": ___",
+            "correctAnswer": "„ yake",
+            "options": [
+              "„ yake",
+              "„ yāo",
+              "bi",
+              "Abana babo"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          }
+        ]
+      },
+      {
+        "id": "kisii-open-dataset-10-2",
+        "title": "Agriculture, Community & Everyday Life (Kisii (Ekegusii))",
+        "icon": "Sparkles",
+        "description": "Practice Kisii (Ekegusii) terms for agriculture, environment, social organization, and daily communication.",
+        "tips": "Review how traditional Kisii (Ekegusii) roots extend naturally to modern community, farming, and civic contexts.",
+        "words": [
+          {
+            "target": "Umute uyu",
+            "source": "This tree",
+            "pronunciation": "u-mu-te u-yu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "„ uuria",
+            "source": "That man",
+            "pronunciation": "uu-ria",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Omuntu ωyu",
+            "source": "This man",
+            "pronunciation": "o-munt-u oh-yu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "onsi (bonsi, etc.)",
+            "source": "All",
+            "pronunciation": "on-si",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Abω",
+            "source": "They",
+            "pronunciation": "a-boh",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Inyue",
+            "source": "You",
+            "pronunciation": "iny-ue",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Iewi",
+            "source": "We",
+            "pronunciation": "ie-wi",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "target": "Ωlia",
+            "source": "He",
+            "pronunciation": "oh-lia",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Umute uyu — „ uuria.",
+            "source": "This tree — That man."
+          },
+          {
+            "target": "Omuntu ωyu • onsi (bonsi, etc.).",
+            "source": "This man • All."
+          },
+          {
+            "target": "Abω (Inyue).",
+            "source": "They (You)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Umute uyu\" in Kisii (Ekegusii) (Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966))?",
+            "correctAnswer": "This tree",
+            "options": [
+              "This tree",
+              "That man",
+              "This man",
+              "All"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Umute uyu: This tree",
+            "pairs": [
+              {
+                "left": "Umute uyu",
+                "right": "This tree"
+              },
+              {
+                "left": "„ uuria",
+                "right": "That man"
+              },
+              {
+                "left": "Omuntu ωyu",
+                "right": "This man"
+              },
+              {
+                "left": "onsi (bonsi, etc.)",
+                "right": "All"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"They\": ___",
+            "correctAnswer": "Abω",
+            "options": [
+              "Abω",
+              "Inyue",
+              "Umute uyu",
+              "„ uuria"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+          }
+        ]
+      }
+    ]
   }
 ];

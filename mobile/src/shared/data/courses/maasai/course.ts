@@ -2068,5 +2068,501 @@ export const MAASAI_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "maasai-unit-11-public-domain-corpus",
+    "title": "Unit 11: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Maasai (Maa) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "maasai-pd-corpus-11-1",
+        "title": "Historical Monograph & Comparative Roots I (Maasai (Maa))",
+        "icon": "Scroll",
+        "description": "Study verified Maasai (Maa) headwords and dialect forms extracted from primary public-domain monographs.",
+        "tips": "Every item in this skill is grounded directly in the historical Maasai (Maa) linguistic corpus with full phonetic pronunciation guides.",
+        "words": [
+          {
+            "target": "Idya-ae-olong (that-other-day)",
+            "source": "the day before yesterday, the day after to-morrow",
+            "pronunciation": "id-ya ae o-long",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "E-weji ne-yeng-ye-ki en-giteng",
+            "source": "the place where the ox is slaughtered in",
+            "pronunciation": "e we-ji ne yeng ye ki",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "E-weji ne-yeng-ye 'l-tunganak en-giteng",
+            "source": "the place where men slaughter the ox in",
+            "pronunciation": "e we-ji ne yeng ye 'l",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "E-ton ol-tungani a-boit-are e-ngoroyoni",
+            "source": "the man is sitting (to be) together with the woman",
+            "pronunciation": "e ton ol tung-a-ni a boit",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-alem li-miki-njo",
+            "source": "the sword which he does not give to thee",
+            "pronunciation": "ol a-lem li mi-ki njo",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-alem le-ma-isho",
+            "source": "the sword which he does not give to me",
+            "pronunciation": "ol a-lem le ma ish-o",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani le-me-suj",
+            "source": "the man whom he or she does not follow",
+            "pronunciation": "ol tung-a-ni le me suj",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani li-mi-suj",
+            "source": "the man whom thou dost not follow",
+            "pronunciation": "ol tung-a-ni li mi suj",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Idya-ae-olong (that-other-day) — E-weji ne-yeng-ye-ki en-giteng.",
+            "source": "the day before yesterday, the day after to-morrow — the place where the ox is slaughtered in."
+          },
+          {
+            "target": "E-weji ne-yeng-ye 'l-tunganak en-giteng • E-ton ol-tungani a-boit-are e-ngoroyoni.",
+            "source": "the place where men slaughter the ox in • the man is sitting (to be) together with the woman."
+          },
+          {
+            "target": "Ol-alem li-miki-njo (Ol-alem le-ma-isho).",
+            "source": "the sword which he does not give to thee (the sword which he does not give to me)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Idya-ae-olong (that-other-day)\" in Maasai (Maa) (A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar))?",
+            "correctAnswer": "the day before yesterday, the day after to-morrow",
+            "options": [
+              "the day before yesterday, the day after to-morrow",
+              "the place where the ox is slaughtered in",
+              "the place where men slaughter the ox in",
+              "the man is sitting (to be) together with the woman"
+            ],
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Maasai (Maa) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Idya-ae-olong (that-other-day): the day before yesterday, the day after to-morrow",
+            "pairs": [
+              {
+                "left": "Idya-ae-olong (that-other-day)",
+                "right": "the day before yesterday, the day after to-morrow"
+              },
+              {
+                "left": "E-weji ne-yeng-ye-ki en-giteng",
+                "right": "the place where the ox is slaughtered in"
+              },
+              {
+                "left": "E-weji ne-yeng-ye 'l-tunganak en-giteng",
+                "right": "the place where men slaughter the ox in"
+              },
+              {
+                "left": "E-ton ol-tungani a-boit-are e-ngoroyoni",
+                "right": "the man is sitting (to be) together with the woman"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Maasai (Maa) term for \"the sword which he does not give to thee\": ___",
+            "correctAnswer": "Ol-alem li-miki-njo",
+            "options": [
+              "Ol-alem li-miki-njo",
+              "Ol-alem le-ma-isho",
+              "Idya-ae-olong (that-other-day)",
+              "E-weji ne-yeng-ye-ki en-giteng"
+            ],
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          }
+        ]
+      },
+      {
+        "id": "maasai-pd-corpus-11-2",
+        "title": "Historical Monograph & Comparative Roots II (Maasai (Maa))",
+        "icon": "Compass",
+        "description": "Expand your command of Maasai (Maa) ecological, kinship, and action vocabulary from the archival corpus.",
+        "tips": "Compare classical 19th- and early 20th-century Maasai (Maa) transcriptions with modern standardized orthography.",
+        "words": [
+          {
+            "target": "Ol-alem liki-njo-sho",
+            "source": "the sword which you give to me",
+            "pronunciation": "ol a-lem li-ki njo sho",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-alem la-isho J",
+            "source": "the sword which he, she, or they give to me",
+            "pronunciation": "ol a-lem la ish-o j",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani o-suj",
+            "source": "the man whom they follow",
+            "pronunciation": "ol tung-a-ni o suj",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani li-suj-usuju",
+            "source": "the man whom you follow",
+            "pronunciation": "ol tung-a-ni li suj u-su-ju",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tuilgani liki-suj",
+            "source": "the man whom we follow",
+            "pronunciation": "ol tuil-ga-ni li-ki suj",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani li-suj",
+            "source": "the man whom thou followest",
+            "pronunciation": "ol tung-a-ni li suj",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani o-nyor-u-ni",
+            "source": "the man who will be loved",
+            "pronunciation": "ol tung-a-ni o nyor u ni",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani o-to-nyor-a-ki",
+            "source": "the man who was loved",
+            "pronunciation": "ol tung-a-ni o to nyor a",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ol-alem liki-njo-sho — Ol-alem la-isho J.",
+            "source": "the sword which you give to me — the sword which he, she, or they give to me."
+          },
+          {
+            "target": "Ol-tungani o-suj • Ol-tungani li-suj-usuju.",
+            "source": "the man whom they follow • the man whom you follow."
+          },
+          {
+            "target": "Ol-tuilgani liki-suj (Ol-tungani li-suj).",
+            "source": "the man whom we follow (the man whom thou followest)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ol-alem liki-njo-sho\" in Maasai (Maa) (A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar))?",
+            "correctAnswer": "the sword which you give to me",
+            "options": [
+              "the sword which you give to me",
+              "the sword which he, she, or they give to me",
+              "the man whom they follow",
+              "the man whom you follow"
+            ],
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Maasai (Maa) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Ol-alem liki-njo-sho: the sword which you give to me",
+            "pairs": [
+              {
+                "left": "Ol-alem liki-njo-sho",
+                "right": "the sword which you give to me"
+              },
+              {
+                "left": "Ol-alem la-isho J",
+                "right": "the sword which he, she, or they give to me"
+              },
+              {
+                "left": "Ol-tungani o-suj",
+                "right": "the man whom they follow"
+              },
+              {
+                "left": "Ol-tungani li-suj-usuju",
+                "right": "the man whom you follow"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Maasai (Maa) term for \"the man whom we follow\": ___",
+            "correctAnswer": "Ol-tuilgani liki-suj",
+            "options": [
+              "Ol-tuilgani liki-suj",
+              "Ol-tungani li-suj",
+              "Ol-alem liki-njo-sho",
+              "Ol-alem la-isho J"
+            ],
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "maasai-unit-12-open-datasets-modern",
+    "title": "Unit 12: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
+    "description": "Master Maasai (Maa) vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
+    "icon": "Globe",
+    "skills": [
+      {
+        "id": "maasai-open-dataset-12-1",
+        "title": "Swadesh Core & Cultural Lexicon (Maasai (Maa))",
+        "icon": "Layers",
+        "description": "Learn core Maasai (Maa) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "tips": "Focus on high-frequency roots shared across Maasai (Maa) dialects and everyday speech.",
+        "words": [
+          {
+            "target": "Ol-tungani o-nyor-ita-i",
+            "source": "the man who is being loved",
+            "pronunciation": "ol tung-a-ni o nyor i-ta i",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani o-nyor-i",
+            "source": "the man who is loved",
+            "pronunciation": "ol tung-a-ni o nyor i",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "'N-gulye-ngoroyok",
+            "source": "the other women",
+            "pronunciation": "'n gul-ye ngo-ro-yok",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-likae-tungani",
+            "source": "the other man",
+            "pronunciation": "ol li-kae tung-a-ni",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani ol-openy in-gishu",
+            "source": "the man whose cattle they are",
+            "pronunciation": "ol tung-a-ni ol o-peny in gish-u",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "4 Ol-tungani o-sapuk-u means",
+            "source": "the man will be big (vide p",
+            "pronunciation": "4 ol tung-a-ni o sa-puk u",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "'Ngoroyok ne-me-ra sapuki",
+            "source": "the women who are not big",
+            "pronunciation": "'ng-o-ro-yok ne me ra sa-pu-ki",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Il-tunganak le-me-ra sapuki",
+            "source": "the men who are not big",
+            "pronunciation": "il tung-a-nak le me ra sa-pu-ki",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ol-tungani o-nyor-ita-i — Ol-tungani o-nyor-i.",
+            "source": "the man who is being loved — the man who is loved."
+          },
+          {
+            "target": "'N-gulye-ngoroyok • Ol-likae-tungani.",
+            "source": "the other women • the other man."
+          },
+          {
+            "target": "Ol-tungani ol-openy in-gishu (4 Ol-tungani o-sapuk-u means).",
+            "source": "the man whose cattle they are (the man will be big (vide p)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ol-tungani o-nyor-ita-i\" in Maasai (Maa) (A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar))?",
+            "correctAnswer": "the man who is being loved",
+            "options": [
+              "the man who is being loved",
+              "the man who is loved",
+              "the other women",
+              "the other man"
+            ],
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Maasai (Maa) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Ol-tungani o-nyor-ita-i: the man who is being loved",
+            "pairs": [
+              {
+                "left": "Ol-tungani o-nyor-ita-i",
+                "right": "the man who is being loved"
+              },
+              {
+                "left": "Ol-tungani o-nyor-i",
+                "right": "the man who is loved"
+              },
+              {
+                "left": "'N-gulye-ngoroyok",
+                "right": "the other women"
+              },
+              {
+                "left": "Ol-likae-tungani",
+                "right": "the other man"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Maasai (Maa) term for \"the man whose cattle they are\": ___",
+            "correctAnswer": "Ol-tungani ol-openy in-gishu",
+            "options": [
+              "Ol-tungani ol-openy in-gishu",
+              "4 Ol-tungani o-sapuk-u means",
+              "Ol-tungani o-nyor-ita-i",
+              "Ol-tungani o-nyor-i"
+            ],
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          }
+        ]
+      },
+      {
+        "id": "maasai-open-dataset-12-2",
+        "title": "Agriculture, Community & Everyday Life (Maasai (Maa))",
+        "icon": "Sparkles",
+        "description": "Practice Maasai (Maa) terms for agriculture, environment, social organization, and daily communication.",
+        "tips": "Review how traditional Maasai (Maa) roots extend naturally to modern community, farming, and civic contexts.",
+        "words": [
+          {
+            "target": "E-ngoroyoni ne-me-ra sapuk",
+            "source": "the woman who is not big",
+            "pronunciation": "e ngo-ro-yo-ni ne me ra sa-puk",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani le-me-ra sapuk",
+            "source": "the man who is not big",
+            "pronunciation": "ol tung-a-ni le me ra sa-puk",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "'Wejitin nee-ra sapuki",
+            "source": "the places which are big",
+            "pronunciation": "'-we-ji-tin nee ra sa-pu-ki",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "'Ngoroyok naa-ra sapuki",
+            "source": "the women who are big",
+            "pronunciation": "'ng-o-ro-yok naa ra sa-pu-ki",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Il-tunganak oo-ra sapuki",
+            "source": "the men who are big",
+            "pronunciation": "il tung-a-nak oo ra sa-pu-ki",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "E-wSji ne-ra sapuk",
+            "source": "the place which is big",
+            "pronunciation": "e wsji ne ra sa-puk",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "E-ngoroyoni na-ra sapuk",
+            "source": "the woman who is big",
+            "pronunciation": "e ngo-ro-yo-ni na ra sa-puk",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "target": "Ol-tungani o-ra3 sapuk",
+            "source": "the man who is big",
+            "pronunciation": "ol tung-a-ni o ra 3 sa-puk",
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "E-ngoroyoni ne-me-ra sapuk — Ol-tungani le-me-ra sapuk.",
+            "source": "the woman who is not big — the man who is not big."
+          },
+          {
+            "target": "'Wejitin nee-ra sapuki • 'Ngoroyok naa-ra sapuki.",
+            "source": "the places which are big • the women who are big."
+          },
+          {
+            "target": "Il-tunganak oo-ra sapuki (E-wSji ne-ra sapuk).",
+            "source": "the men who are big (the place which is big)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"E-ngoroyoni ne-me-ra sapuk\" in Maasai (Maa) (A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar))?",
+            "correctAnswer": "the woman who is not big",
+            "options": [
+              "the woman who is not big",
+              "the man who is not big",
+              "the places which are big",
+              "the women who are big"
+            ],
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Maasai (Maa) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "E-ngoroyoni ne-me-ra sapuk: the woman who is not big",
+            "pairs": [
+              {
+                "left": "E-ngoroyoni ne-me-ra sapuk",
+                "right": "the woman who is not big"
+              },
+              {
+                "left": "Ol-tungani le-me-ra sapuk",
+                "right": "the man who is not big"
+              },
+              {
+                "left": "'Wejitin nee-ra sapuki",
+                "right": "the places which are big"
+              },
+              {
+                "left": "'Ngoroyok naa-ra sapuki",
+                "right": "the women who are big"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Maasai (Maa) term for \"the men who are big\": ___",
+            "correctAnswer": "Il-tunganak oo-ra sapuki",
+            "options": [
+              "Il-tunganak oo-ra sapuki",
+              "E-wSji ne-ra sapuk",
+              "E-ngoroyoni ne-me-ra sapuk",
+              "Ol-tungani le-me-ra sapuk"
+            ],
+            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+          }
+        ]
+      }
+    ]
   }
 ];

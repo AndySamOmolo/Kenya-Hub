@@ -143,6 +143,27 @@
           "pronunciation": "shah-leh",
           "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
+        },
+        {
+          "english": "Peace be upon the settlement!",
+          "translation": "Goob nabad!",
+          "pronunciation": "goob na-bad",
+          "context": "Rendille Greetings — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Did the camels return safely?",
+          "translation": "Gaal nabad ma yimi?",
+          "pronunciation": "gaal na-bad ma yi-mi",
+          "context": "Rendille Greetings — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Has rain fallen in the pastures?",
+          "translation": "Roob ma da'ay?",
+          "pronunciation": "roob ma da'ay",
+          "context": "Rendille Greetings — Schlee (1979)",
+          "audioFile": null
         }
       ]
     },
@@ -303,6 +324,41 @@
           "translation": "magáh",
           "pronunciation": "ma-gah",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Main clan settlement / circular homestead",
+          "translation": "goob",
+          "pronunciation": "goob",
+          "context": "Rendille Social Organization — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Clan elder / ritual leader",
+          "translation": "makhaabal",
+          "pronunciation": "makh-aa-bal",
+          "context": "Rendille Social Organization — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Father's brother (paternal uncle)",
+          "translation": "abbo yar",
+          "pronunciation": "ab-bo yar",
+          "context": "Rendille Kinship — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Mother's brother (maternal uncle)",
+          "translation": "abti",
+          "pronunciation": "ab-ti",
+          "context": "Rendille Kinship — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Firstborn son (heir to the camel herd)",
+          "translation": "inán weyn",
+          "pronunciation": "in n wey",
+          "context": "Rendille Kinship — Schlee (1979)",
           "audioFile": null
         }
       ]
@@ -472,6 +528,41 @@
           "pronunciation": "in-jir",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
+        },
+        {
+          "english": "Male pack camel",
+          "translation": "oor",
+          "pronunciation": "oor",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Female milking camel",
+          "translation": "ayyú",
+          "pronunciation": "ay",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Young camel calf",
+          "translation": "nyiró",
+          "pronunciation": "nyir",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Herd of camels",
+          "translation": "gaal",
+          "pronunciation": "gaal",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Hobley (1910)",
+          "audioFile": null
+        },
+        {
+          "english": "Flock of sheep and goats (small stock)",
+          "translation": "adi",
+          "pronunciation": "a-di",
+          "context": "Rendille Pastoral Lexicon — Hobley (1910, p. 166) & Heine (1980)",
+          "audioFile": null
         }
       ]
     },
@@ -584,6 +675,48 @@
           "pronunciation": "wahr",
           "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
+        },
+        {
+          "english": "Water well / desert waterhole",
+          "translation": "tulluu / eel",
+          "pronunciation": "tul-luu",
+          "context": "Rendille Ecology — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Morning star / Venus",
+          "translation": "bakkalcha",
+          "pronunciation": "bak-kal-cha",
+          "context": "Rendille Astronomy — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Rainy season (long rains)",
+          "translation": "guu",
+          "pronunciation": "guu",
+          "context": "Rendille Seasonal Calendar — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Short rains season",
+          "translation": "yer",
+          "pronunciation": "yer",
+          "context": "Rendille Seasonal Calendar — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Long dry season",
+          "translation": "nabhai",
+          "pronunciation": "nab-hai",
+          "context": "Rendille Seasonal Calendar — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Lava desert / Kaisut & Chalbi plains",
+          "translation": "roxo / dida",
+          "pronunciation": "ro-xo",
+          "context": "Rendille Geography — Schlee (1979)",
+          "audioFile": null
         }
       ]
     },
@@ -632,6 +765,48 @@
           "translation": "tór",
           "pronunciation": "tor",
           "context": "Bernd Heine (1979) — Proto-Baz & Rendille",
+          "audioFile": null
+        },
+        {
+          "english": "Wooden milk container / milking vessel",
+          "translation": "madál",
+          "pronunciation": "mad l",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Smoked gourd for storing camel milk",
+          "translation": "kullób",
+          "pronunciation": "kul b",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Fresh camel milk",
+          "translation": "caanó gaal",
+          "pronunciation": "caan gaal",
+          "context": "Rendille Pastoral Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Curdled / sour milk",
+          "translation": "kaleeló",
+          "pronunciation": "ka-leel",
+          "context": "Rendille Pastoral Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Ghee / clarified butter",
+          "translation": "subáh",
+          "pronunciation": "sub h",
+          "context": "Rendille Pastoral Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood drawn for pastoral diet",
+          "translation": "dhiig",
+          "pronunciation": "dhiig",
+          "context": "Rendille Core Lexicon — Heine (1980)",
           "audioFile": null
         }
       ]
@@ -758,6 +933,62 @@
           "translation": "kari",
           "pronunciation": "kah-ree",
           "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To herd / graze livestock",
+          "translation": "akhwiy",
+          "pronunciation": "akh-wiy",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To milk a camel",
+          "translation": "maal",
+          "pronunciation": "maal",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To migrate / load pack camels",
+          "translation": "guur",
+          "pronunciation": "guur",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To draw water from a well",
+          "translation": "dhaam",
+          "pronunciation": "dhaam",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To pray / bless",
+          "translation": "bari",
+          "pronunciation": "ba-ri",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To build a nomadic house",
+          "translation": "dhis",
+          "pronunciation": "dhis",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To count livestock",
+          "translation": "tiri",
+          "pronunciation": "ti-ri",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To heal / treat illness",
+          "translation": "dawee",
+          "pronunciation": "da-wee",
+          "context": "Rendille Core Verbs — Heine (1980)",
           "audioFile": null
         }
       ]
@@ -927,6 +1158,125 @@
           "pronunciation": "ha-hat, hu-ra ha-khan, se-re, ku-mat, ser ha-khan, se-re a-di, se-re gal",
           "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, pp. 162–163",
           "audioFile": null
+        },
+        {
+          "english": "First day of the week (fast and prayer day)",
+          "translation": "Hahat",
+          "pronunciation": "ha-hat",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Second day of the week (day of rest / Sabbath)",
+          "translation": "Hura hakhan (hura = sun)",
+          "pronunciation": "hu-ra hakh-an",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Third day of the week",
+          "translation": "Sere",
+          "pronunciation": "se-re",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Fourth day of the week",
+          "translation": "Kumat",
+          "pronunciation": "ku-mat",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Fifth day of the week (no-travel / camel-rest day)",
+          "translation": "Ser hakhan",
+          "pronunciation": "ser hakh-an",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Sixth day of the week (day of sheep and goats)",
+          "translation": "Sere adi",
+          "pronunciation": "se-re a-di",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Seventh day of the week (day of the camel)",
+          "translation": "Sere gal",
+          "pronunciation": "se-re gal",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Naroshon (Rendille clan of the Sogota & Angata plains)",
+          "translation": "Naroshon",
+          "pronunciation": "na-rosh-on",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 51)",
+          "audioFile": null
+        },
+        {
+          "english": "White sheep / Ariaal Rendille-Samburu section (Naibor Keneji)",
+          "translation": "Burkeneji / Naibor Keneji",
+          "pronunciation": "bur-ke-ne-ji",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166)",
+          "audioFile": null
+        },
+        {
+          "english": "Camel bell carved from wood",
+          "translation": "koor",
+          "pronunciation": "koor",
+          "context": "Rendille Material Culture — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Woven camel-loading mat / thatch",
+          "translation": "daf",
+          "pronunciation": "daf",
+          "context": "Rendille Material Culture — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Portable curved house poles",
+          "translation": "ulukh",
+          "pronunciation": "u-lukh",
+          "context": "Rendille Material Culture — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Dry season pasture camp (satellite youth camp)",
+          "translation": "foor",
+          "pronunciation": "foor",
+          "context": "Rendille Pastoral Ecology — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Circumcised warrior age-set",
+          "translation": "her",
+          "pronunciation": "her",
+          "context": "Rendille Age-Set System — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "camel blessing / evening prayer assembly",
+          "translation": "waakh barid",
+          "pronunciation": "waakh ba-rid",
+          "context": "Rendille Oral & Ritual Tradition — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Sorriyo (sacred camel-blessing festival)",
+          "translation": "Sorriyo",
+          "pronunciation": "sor-ri-yo",
+          "context": "Rendille Ritual Calendar — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Almadó (new year & ritual cleansing festival)",
+          "translation": "Almadó",
+          "pronunciation": "al-mad",
+          "context": "Rendille Ritual Calendar — Schlee (1979)",
+          "audioFile": null
         }
       ]
     },
@@ -987,5 +1337,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1910, Fleming 1964 & Heine 1976)"
+  "source": "Public Domain Historical Lexicons (Hobley 1910, Fleming 1964 & Heine 1976)",
+  "isoCode": "rel",
+  "glottocode": "rend1243"
 }

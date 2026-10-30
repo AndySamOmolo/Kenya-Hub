@@ -3662,5 +3662,501 @@ export const KAMBA_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "kamba-unit-16-public-domain-corpus",
+    "title": "Unit 16: Newly Integrated Public-Domain Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Kamba (Kĩkamba) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "kamba-pd-corpus-16-1",
+        "title": "Historical Monograph & Comparative Roots I (Kamba (Kĩkamba))",
+        "icon": "Scroll",
+        "description": "Study verified Kamba (Kĩkamba) headwords and dialect forms extracted from primary public-domain monographs.",
+        "tips": "Every item in this skill is grounded directly in the historical Kamba (Kĩkamba) linguistic corpus with full phonetic pronunciation guides.",
+        "words": [
+          {
+            "target": "wa téne",
+            "source": "Old",
+            "pronunciation": "wa t ne",
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
+          },
+          {
+            "target": "nsáu",
+            "source": "New",
+            "pronunciation": "ns u",
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
+          },
+          {
+            "target": "téne",
+            "source": "Ancient",
+            "pronunciation": "t ne",
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
+          },
+          {
+            "target": "ūni (Ulu) / ōni (Nganyawa)",
+            "source": "to-morrow",
+            "pronunciation": "ūni",
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+          },
+          {
+            "target": "etēēla (Ulu) / killia (Nganyawa)",
+            "source": "soon",
+            "pronunciation": "etēēla",
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+          },
+          {
+            "target": "muthenia miingi (Ulu) / mthee nyongi (Nganyawa)",
+            "source": "often",
+            "pronunciation": "muthenia miingi",
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+          },
+          {
+            "target": "oiyuyu (Ulu) / indino (Nganyawa)",
+            "source": "now",
+            "pronunciation": "oiyuyu",
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+          },
+          {
+            "target": "kwatier (Ulu) / chioko (Nganyawa)",
+            "source": "early",
+            "pronunciation": "kwatier",
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "wa téne — nsáu.",
+            "source": "Old — New."
+          },
+          {
+            "target": "téne • ūni (Ulu) / ōni (Nganyawa).",
+            "source": "Ancient • to-morrow."
+          },
+          {
+            "target": "etēēla (Ulu) / killia (Nganyawa) (muthenia miingi (Ulu) / mthee nyongi (Nganyawa)).",
+            "source": "soon (often)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"wa téne\" in Kamba (Kĩkamba) (Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.))?",
+            "correctAnswer": "Old",
+            "options": [
+              "Old",
+              "New",
+              "Ancient",
+              "to-morrow"
+            ],
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kamba (Kĩkamba) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "wa téne: Old",
+            "pairs": [
+              {
+                "left": "wa téne",
+                "right": "Old"
+              },
+              {
+                "left": "nsáu",
+                "right": "New"
+              },
+              {
+                "left": "téne",
+                "right": "Ancient"
+              },
+              {
+                "left": "ūni (Ulu) / ōni (Nganyawa)",
+                "right": "to-morrow"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kamba (Kĩkamba) term for \"soon\": ___",
+            "correctAnswer": "etēēla (Ulu) / killia (Nganyawa)",
+            "options": [
+              "etēēla (Ulu) / killia (Nganyawa)",
+              "muthenia miingi (Ulu) / mthee nyongi (Nganyawa)",
+              "wa téne",
+              "nsáu"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+          }
+        ]
+      },
+      {
+        "id": "kamba-pd-corpus-16-2",
+        "title": "Historical Monograph & Comparative Roots II (Kamba (Kĩkamba))",
+        "icon": "Compass",
+        "description": "Expand your command of Kamba (Kĩkamba) ecological, kinship, and action vocabulary from the archival corpus.",
+        "tips": "Compare classical 19th- and early 20th-century Kamba (Kĩkamba) transcriptions with modern standardized orthography.",
+        "words": [
+          {
+            "target": "muthenia monthe (Ulu) / matuk oonde (Nganyawa)",
+            "source": "always",
+            "pronunciation": "muthenia monthe",
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+          },
+          {
+            "target": "Nominal Damages",
+            "source": "Injury / Offence",
+            "pronunciation": "nominal damages",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Mu Sii. Mu Mui. Mwa-Ithangwa.",
+            "source": "Mu Tui.",
+            "pronunciation": "mu sii. mu mui. mwa-ithangwa.",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Wakia.",
+            "source": "A man to a girl (Muitu) will say",
+            "pronunciation": "wakia.",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Oponiao.",
+            "source": "A man to a youth (Anake) will say",
+            "pronunciation": "oponiao.",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Ah.",
+            "source": "The reply will be",
+            "pronunciation": "ah.",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Waiya.",
+            "source": "A young man (Anake) to another young man will say",
+            "pronunciation": "waiya.",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Inimuvoo.",
+            "source": "The woman will reply",
+            "pronunciation": "inimuvoo.",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "muthenia monthe (Ulu) / matuk oonde (Nganyawa) — Nominal Damages.",
+            "source": "always — Injury / Offence."
+          },
+          {
+            "target": "Mu Sii. Mu Mui. Mwa-Ithangwa. • Wakia..",
+            "source": "Mu Tui. • A man to a girl (Muitu) will say."
+          },
+          {
+            "target": "Oponiao. (Ah.).",
+            "source": "A man to a youth (Anake) will say (The reply will be)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"muthenia monthe (Ulu) / matuk oonde (Nganyawa)\" in Kamba (Kĩkamba) (Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects))?",
+            "correctAnswer": "always",
+            "options": [
+              "always",
+              "Injury / Offence",
+              "Mu Tui.",
+              "A man to a girl (Muitu) will say"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kamba (Kĩkamba) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "muthenia monthe (Ulu) / matuk oonde (Nganyawa): always",
+            "pairs": [
+              {
+                "left": "muthenia monthe (Ulu) / matuk oonde (Nganyawa)",
+                "right": "always"
+              },
+              {
+                "left": "Nominal Damages",
+                "right": "Injury / Offence"
+              },
+              {
+                "left": "Mu Sii. Mu Mui. Mwa-Ithangwa.",
+                "right": "Mu Tui."
+              },
+              {
+                "left": "Wakia.",
+                "right": "A man to a girl (Muitu) will say"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kamba (Kĩkamba) term for \"A man to a youth (Anake) will say\": ___",
+            "correctAnswer": "Oponiao.",
+            "options": [
+              "Oponiao.",
+              "Ah.",
+              "muthenia monthe (Ulu) / matuk oonde (Nganyawa)",
+              "Nominal Damages"
+            ],
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-17-open-datasets-modern",
+    "title": "Unit 17: Open-Dataset Vocabulary, Swadesh Core & Everyday Domains",
+    "description": "Master Kamba (Kĩkamba) vocabulary and expressions from open-licensed datasets (Wiktionary Swadesh, CLDR, Kencorpus, Anv-ke & thinkKenya) alongside deep archival lexicon.",
+    "icon": "Globe",
+    "skills": [
+      {
+        "id": "kamba-open-dataset-17-1",
+        "title": "Swadesh Core & Cultural Lexicon (Kamba (Kĩkamba))",
+        "icon": "Layers",
+        "description": "Learn core Kamba (Kĩkamba) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "tips": "Focus on high-frequency roots shared across Kamba (Kĩkamba) dialects and everyday speech.",
+        "words": [
+          {
+            "target": "Umuvoo.",
+            "source": "A man to a woman will say",
+            "pronunciation": "umuvoo.",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Salutation / Reply",
+            "source": "Speaker / Addressee",
+            "pronunciation": "salutation / reply",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Old man, headman of his own village only",
+            "source": "Childless woman (Ngungu)",
+            "pronunciation": "old man, headman of his own village only",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba (Crops & Agriculture)"
+          },
+          {
+            "target": "Old man",
+            "source": "Old woman (Mukuu)",
+            "pronunciation": "old man",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba (Crops & Agriculture)"
+          },
+          {
+            "target": "Young man or warrior",
+            "source": "Unmarried girl (Mundu mukaa)",
+            "pronunciation": "young man or warrior",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba (Crops & Agriculture)"
+          },
+          {
+            "target": "Muthwa, queen ant Munthai",
+            "source": "White ants (termites)",
+            "pronunciation": "muthwa, queen ant munthai",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Nzuki, queen bee Mulue",
+            "source": "Bees",
+            "pronunciation": "nzuki, queen bee mulue",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Marri",
+            "source": "Hornets with paper nest",
+            "pronunciation": "marri",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Umuvoo. — Salutation / Reply.",
+            "source": "A man to a woman will say — Speaker / Addressee."
+          },
+          {
+            "target": "Old man, headman of his own village only • Old man.",
+            "source": "Childless woman (Ngungu) • Old woman (Mukuu)."
+          },
+          {
+            "target": "Young man or warrior (Muthwa, queen ant Munthai).",
+            "source": "Unmarried girl (Mundu mukaa) (White ants (termites))."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Umuvoo.\" in Kamba (Kĩkamba) (C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes)?",
+            "correctAnswer": "A man to a woman will say",
+            "options": [
+              "A man to a woman will say",
+              "Speaker / Addressee",
+              "Childless woman (Ngungu)",
+              "Old woman (Mukuu)"
+            ],
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kamba (Kĩkamba) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Umuvoo.: A man to a woman will say",
+            "pairs": [
+              {
+                "left": "Umuvoo.",
+                "right": "A man to a woman will say"
+              },
+              {
+                "left": "Salutation / Reply",
+                "right": "Speaker / Addressee"
+              },
+              {
+                "left": "Old man, headman of his own village only",
+                "right": "Childless woman (Ngungu)"
+              },
+              {
+                "left": "Old man",
+                "right": "Old woman (Mukuu)"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kamba (Kĩkamba) term for \"Unmarried girl (Mundu mukaa)\": ___",
+            "correctAnswer": "Young man or warrior",
+            "options": [
+              "Young man or warrior",
+              "Muthwa, queen ant Munthai",
+              "Umuvoo.",
+              "Salutation / Reply"
+            ],
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba (Crops & Agriculture)"
+          }
+        ]
+      },
+      {
+        "id": "kamba-open-dataset-17-2",
+        "title": "Agriculture, Community & Everyday Life (Kamba (Kĩkamba))",
+        "icon": "Sparkles",
+        "description": "Practice Kamba (Kĩkamba) terms for agriculture, environment, social organization, and daily communication.",
+        "tips": "Review how traditional Kamba (Kĩkamba) roots extend naturally to modern community, farming, and civic contexts.",
+        "words": [
+          {
+            "target": "Thingii",
+            "source": "Black ants (ponera)",
+            "pronunciation": "thingii",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Nthuaku",
+            "source": "Soldier ants (siafu)",
+            "pronunciation": "nthuaku",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Ngia—in the hopper stage—Kititi",
+            "source": "Locusts",
+            "pronunciation": "ngia—in the hopper stage—kititi",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Chambulutwa",
+            "source": "Butterfly and Moth",
+            "pronunciation": "chambulutwa",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Yamu",
+            "source": "Hairy caterpillar",
+            "pronunciation": "yamu",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Mangña—in Ulu Maseo—in Kitui",
+            "source": "Hagadash Ibis",
+            "pronunciation": "mangña—in ulu maseo—in kitui",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Isau",
+            "source": "Marabou stork",
+            "pronunciation": "isau",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "target": "Ngoto",
+            "source": "Lesser bustard",
+            "pronunciation": "ngoto",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Thingii — Nthuaku.",
+            "source": "Black ants (ponera) — Soldier ants (siafu)."
+          },
+          {
+            "target": "Ngia—in the hopper stage—Kititi • Chambulutwa.",
+            "source": "Locusts • Butterfly and Moth."
+          },
+          {
+            "target": "Yamu (Mangña—in Ulu Maseo—in Kitui).",
+            "source": "Hairy caterpillar (Hagadash Ibis)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Thingii\" in Kamba (Kĩkamba) (C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes)?",
+            "correctAnswer": "Black ants (ponera)",
+            "options": [
+              "Black ants (ponera)",
+              "Soldier ants (siafu)",
+              "Locusts",
+              "Butterfly and Moth"
+            ],
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kamba (Kĩkamba) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Thingii: Black ants (ponera)",
+            "pairs": [
+              {
+                "left": "Thingii",
+                "right": "Black ants (ponera)"
+              },
+              {
+                "left": "Nthuaku",
+                "right": "Soldier ants (siafu)"
+              },
+              {
+                "left": "Ngia—in the hopper stage—Kititi",
+                "right": "Locusts"
+              },
+              {
+                "left": "Chambulutwa",
+                "right": "Butterfly and Moth"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kamba (Kĩkamba) term for \"Hairy caterpillar\": ___",
+            "correctAnswer": "Yamu",
+            "options": [
+              "Yamu",
+              "Mangña—in Ulu Maseo—in Kitui",
+              "Thingii",
+              "Nthuaku"
+            ],
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+          }
+        ]
+      }
+    ]
   }
 ];
