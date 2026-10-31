@@ -12,8 +12,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Maasai (ɔl Maa) public-domain vocabulary compiled strictly from Hildegarde Hinde (1901) 'The Masai Language: Grammatical Notes Together with a Vocabulary' (Cambridge University Press), Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', A. C. Hollis (1905) 'The Masai: Their Language and Folklore' (Clarendon Press, Oxford), and C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes' (Cambridge University Press).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), C. W. Hobley (1910, 1922), and BFBS (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -5591,6 +5591,20 @@
           "pronunciation": "ol doiny-o o rok",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)",
           "audioFile": null
+        },
+        {
+          "english": "Mount Kenya ('Spotted / Dappled Mountain' in Maa)",
+          "translation": "Ol-doinyo Keri (Donyo Egere)",
+          "pronunciation": "ohl-doy-nyoh keh-ree",
+          "context": "Ven. J. P. Farler (1882, p. 743) & Lieut. Ludwig von Höhnel (1894, Vol. I, p. 363)",
+          "audioFile": null
+        },
+        {
+          "english": "Aberdare Range peak & Ngong Hills (1887 Maa toponyms)",
+          "translation": "Donyo Sattima (Ol-doinyo Satima) & Donyo Lamuyu",
+          "pronunciation": "dohn-yoh sah-tee-mah / lah-moo-yoo",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 286, 325) — Discovery of Lakes Rudolf and Stefanie",
+          "audioFile": null
         }
       ]
     },
@@ -7228,6 +7242,20 @@
           "translation": "Ol-alem li-miki-njo",
           "pronunciation": "ol a-lem li mi-ki njo",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)",
+          "audioFile": null
+        },
+        {
+          "english": "Ostrich-feather war face-frame worn by Maasai morans",
+          "translation": "en-gopiro",
+          "pronunciation": "en-goh-pee-roh",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, p. 246) & A. C. Hollis (1905)",
+          "audioFile": null
+        },
+        {
+          "english": "Wild olive tree used to smoke and sterilize milk gourds",
+          "translation": "ol-oirien (Olea europaea subsp. cuspidata)",
+          "pronunciation": "ohl-oy-ryen",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, p. 252) — Discovery of Lakes Rudolf and Stefanie",
           "audioFile": null
         }
       ]
@@ -16662,7 +16690,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hinde 1901, Johnston 1902, Hollis 1905 & Hobley 1910, 1922); Sir Harry H. Johnston (1902) Uganda Protectorate Vol. II",
+  "source": "Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Hobley 1910/1922 & BFBS 1921)",
   "isoCode": "mas",
   "glottocode": "masa1300"
 }

@@ -13,8 +13,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.2",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Luhya (Oluluyia / Luwanga / Luhanga / Lubukusu) public-domain vocabulary compiled strictly from C. W. Hobley (1902) 'Eastern Uganda: An Ethnological Survey', Sir Harry H. Johnston (1902) 'The Uganda Protectorate, Vol. II', C. W. Hobley (1903) 'British East Africa: Anthropological Studies in Kavirondo and Nandi' (JAI Vol. 33), Sir Harry H. Johnston (1919–1922) 'A Comparative Study of the Bantu and Semi-Bantu Languages' (#5–6a), and Rev. N. Stam (1929) 'The Bahanga' (Publications of the Catholic Anthropological Conference, Vol. I, No. 4, pp. 143–179).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15).",
   "categories": [
     {
       "id": "greetings",
@@ -2056,6 +2056,27 @@
           "translation": "Bushiere! /abwenao!",
           "pronunciation": "bushiere! /abwenao!",
           "context": "Luhya",
+          "audioFile": null
+        },
+        {
+          "english": "How have you slept? — I have slept well, how about you? (Lumasaba)",
+          "translation": "Wagonere oryena? — Nagonere bulahi, njebewe?",
+          "pronunciation": "wah-goh-neh-reh oh-ryeh-nah — nah-goh-neh-reh boo-lah-hee",
+          "context": "Rev. J. B. Purvis (1909, p. 276) — Through Uganda to Mount Elgon (Lumasaba)",
+          "audioFile": null
+        },
+        {
+          "english": "How have you passed the day? — I have passed it well (Lumasaba)",
+          "translation": "Wabuyire oryena? — Nabuyire bulahi",
+          "pronunciation": "wah-boo-yee-reh oh-ryeh-nah — nah-boo-yee-reh boo-lah-hee",
+          "context": "Rev. J. B. Purvis (1909, p. 277) — Through Uganda to Mount Elgon (Lumasaba)",
+          "audioFile": null
+        },
+        {
+          "english": "I am going, may I reach safely! — Go, may you reach safely! (Lumasaba)",
+          "translation": "Nitsya, nule bulahi! — Nutsye wule bulahi!",
+          "pronunciation": "nee-tsyah noo-leh boo-lah-hee",
+          "context": "Rev. J. B. Purvis (1909, p. 277) — Through Uganda to Mount Elgon (Lumasaba)",
           "audioFile": null
         }
       ]
@@ -4464,6 +4485,27 @@
           "translation": "mundu umuvi; awandu awawi",
           "pronunciation": "mundu umuvi; awandu awawi",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)",
+          "audioFile": null
+        },
+        {
+          "english": "My father / Your father / His or her father (Lumasaba & Bukusu)",
+          "translation": "Papa (Baba) / So (Sowo) / Sewe",
+          "pronunciation": "pah-pah / soh / seh-weh",
+          "context": "Rev. John Roscoe (1915, p. 291) — The Northern Bantu (Bagesu/Lumasaba Kinship Table)",
+          "audioFile": null
+        },
+        {
+          "english": "My mother / Your mother / His or her mother (Lumasaba & Bukusu)",
+          "translation": "Mayi / Nyoko / Ng'ina",
+          "pronunciation": "mah-yee / nyoh-koh / ngee-nah",
+          "context": "Rev. John Roscoe (1915, p. 291) — The Northern Bantu (Bagesu/Lumasaba Kinship Table)",
+          "audioFile": null
+        },
+        {
+          "english": "Maternal uncle (mother's brother) vs. Paternal aunt (father's sister) (Lumasaba)",
+          "translation": "Mama (pl. Bamama) vs. Senge (pl. Basenge)",
+          "pronunciation": "mah-mah / sehn-geh",
+          "context": "Rev. John Roscoe (1915, pp. 194, 291) — The Northern Bantu (Bagesu/Lumasaba)",
           "audioFile": null
         }
       ]
@@ -12312,6 +12354,13 @@
           "pronunciation": "lucemo",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)",
           "audioFile": null
+        },
+        {
+          "english": "Unfermented sweet banana drink vs. fermented banana-millet beer (Lumasaba)",
+          "translation": "indali inyana vs. indali indule (busera)",
+          "pronunciation": "een-dah-lee een-yah-nah / boo-seh-rah",
+          "context": "Rev. J. B. Purvis (1909, p. 281) — Through Uganda to Mount Elgon",
+          "audioFile": null
         }
       ]
     },
@@ -18381,6 +18430,27 @@
           "pronunciation": "akari",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
           "audioFile": null
+        },
+        {
+          "english": "You write vs. I write (Logoori /h/-plosivization: N + h > mb)",
+          "translation": "ohandekaa vs. mbandekaa",
+          "pronunciation": "oh-hahn-deh-kaa / m-bahn-deh-kaa",
+          "context": "Eleanor Glewwe & Hawa Aly (2016, Ch. 9, p. 171) — Consonant-Glide-Vowel Sequences in Logoori",
+          "audioFile": null
+        },
+        {
+          "english": "To close (transitive) vs. to close by itself (anticausative -Vk in Logoori)",
+          "translation": "kuhana vs. kuhanika (muriaŋgo gu-han-ik-i)",
+          "pronunciation": "koo-hah-nah / koo-hah-nee-kah",
+          "context": "John Gluckman & Margit Bowler (2016, Ch. 15, p. 293) — Anticausative Alternation in Luragooli",
+          "audioFile": null
+        },
+        {
+          "english": "To agree to / believe / have faith (Lumasaba)",
+          "translation": "kufukirira",
+          "pronunciation": "koo-foo-kee-ree-rah",
+          "context": "Rev. J. B. Purvis (1909, p. 353) — Through Uganda to Mount Elgon",
+          "audioFile": null
         }
       ]
     },
@@ -19297,6 +19367,20 @@
           "translation": "Sirkhanga",
           "pronunciation": "sirkhanga",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)",
+          "audioFile": null
+        },
+        {
+          "english": "Every (pre-nominal invariant vuri) vs. All/whole (post-nominal agreeing -oosi in Logoori)",
+          "translation": "vuri (vuri muundu) vs. -oosi (vaandu voosi)",
+          "pronunciation": "voo-ree / voo-see",
+          "context": "Meredith Landman (2016, Ch. 12, pp. 226–235) — Universal Quantification in Logoori",
+          "audioFile": null
+        },
+        {
+          "english": "Cleanness / Whiteness / Holiness (Lumasaba)",
+          "translation": "kikosefu",
+          "pronunciation": "kee-koh-seh-foo",
+          "context": "Rev. J. B. Purvis (1909, p. 353) — Through Uganda to Mount Elgon",
           "audioFile": null
         }
       ]
@@ -24916,7 +25000,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, Johnston 1902, 1919 & Stam 1929)",
+  "source": "Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016)",
   "isoCode": "luy",
   "glottocode": "luyi1234"
 }

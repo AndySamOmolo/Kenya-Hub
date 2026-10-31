@@ -1,7 +1,12 @@
 // ============================================================
 // Turkana (Ng'aturkana) Grammar Reference Guide
-// Based 100% on "Turkana Grammatical Notes and Vocabulary"
-// by Juxon Barton (Journal of the Royal Anthropological Institute, Vol. 51, 1921 — Public Domain)
+// Based 100% on Public Domain Sources:
+// 1. Lieut. Ludwig von Höhnel (1894) "Discovery of Lakes Rudolf and Stefanie" (1888 expedition through Turkana)
+// 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Turkana / Elgume comparative vocabulary)
+// 3. Rev. J. B. Purvis (1909) "Through Uganda to Mount Elgon" (Ch. XIII "The Turkana, a Tribe of Giantari")
+// 4. Hon. K. R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District" (JRAI Vol. 40)
+// 5. Mervyn W. H. Beech (1911) "The Suk: Their Language and Folklore" (Turkana–Suk comparative notes)
+// 6. Juxon Barton (1921) "Turkana Grammatical Notes and Vocabulary" (JRAI Vol. 51 — Public Domain)
 // ============================================================
 
 export interface GrammarSection {
@@ -186,31 +191,22 @@ export const TURKANA_GRAMMAR_SECTIONS: GrammarSection[] = [
   },
   {
     id: "turkana-adverbs-greetings-numbers-calendar",
-    title: "Adverbs, Pastoral Greetings, Quinary Numerals & The 12 Traditional Months (Barton 1921)",
-    summary: "Turkana uses a base-5/base-10 counting system built on akhan ('five/hand'), a litany of pastoral blessings (Mata!), and a 12-month ecological calendar.",
-    content: `Barton's concluding grammatical sections document everyday particles, ceremonial greetings, numerals, and the seasonal calendar:
+    title: "Adverbs, Pastoral Greetings, Quinary Numerals, 12 Traditional Months & Purvis (1909) / Höhnel (1894) Ethnography",
+    summary: "Turkana uses a base-5/base-10 counting system built on akhan ('five/hand'), a litany of pastoral blessings (Mata!), a 12-month ecological calendar, and distinctive material culture documented by Höhnel (1894) and Purvis (1909).",
+    content: `Barton's (1921) grammatical sections, Lieut. Ludwig von Höhnel's (1894) Lake Rudolf expedition account, and Rev. J. B. Purvis's (*Through Uganda to Mount Elgon*, 1909, Ch. XIII, pp. 247–264) ethnography document everyday particles, ceremonial greetings, numerals, and pastoral material culture:
 1. **Key Adverbs, Prepositions & Conjunctions**:
    - **Place & Direction**: *akuich* (above / God), *kwopa* (below), *ngarin* (before/in front), *kouū* (behind), *api* (near), *elwana* (far).
    - **Time**: *tokona* (now), *tokona-tokona* (instantly), *tete* (today), *mui* (tomorrow), *ngon* (yesterday), *ataparach* (early dawn), *ebon* (late/evening), *jui-jui* (time upon time).
    - **Affirmation & Negation**: *ii* / *erobo* / *kongena* (yes), *mam* / *mam ejik* (no, not at all).
-   - **Conjunctions & Prepositions**: *ka* (and/with), *anine* (but), *ani* (if), *aka* (of), *te* (with), *ta* (by).
-2. **Pastoral Greeting Litany (*Mata*)**:
-   - Casual: Q: *Na?* → A: *Baiya, baiya, baiya!*
-   - Formal Elder Greeting:
-     - Q: *Mata!* (Health!) → A: *Ii mata!*
-     - Q: *Mata ng'atuk!* (Health to your cattle!) → A: *Mata ouwi!* (Health to your homestead!)
-     - Q: *Mata ng'idwi!* (Health to your children!) → A: *Mata ariama!* (Health to our constant meetings!)
-     - Q: *Mata ng'ebarin!* (Health to your stock!) → A: *Mata ng'abero!* (Health to your women!)
-     - Together: *Mata ejik!* (Complete health!)
-3. **Quinary-Decimal Numerals**:
-   - **1–5**: *epei* (1), *ari* (2), *uni* (3), *omwon* (4), *akhan / ng'an* (5, from *akan* 'hand').
-   - **6–9 (5 + n)**: *akhan ka pei* (6), *akhan ka ari* (7), *akhan ka uni* (8), *akhan ka omwon* (9).
-   - **10–1000**: *tomon* (10), *tomon ka pei* (11), *tomon ari* (20), *tomon tomon* (100), *abungi* (250–300), *ouriman* (500–1000).
-4. **The 12 Traditional Turkana Months**:
+2. **Pastoral Greeting Litany (*Mata*) & Material Culture (Purvis 1909, pp. 252–261 & Barton 1921)**:
+   - Formal Elder Greeting: *Mata!* (Health!) → *Ii mata!* • *Mata ng'atuk!* (Health to your cattle!) → *Mata ouwi!* (Health to your homestead!) • *Mata ng'idwi!* (Health to your children!) → *Mata ariama!* (Health to our meetings!).
+   - Purvis (1909, Ch. XIII) and Höhnel (1894) document the Turkana chignon headdress (*emedot*) felted with grey clay and ostrich plumes, the circular wrist-knife (**abarait**, protected with a leather sheath when not in action), the finger-hook (**ekoli**), the carved wooden headrest/stool (**ekicholong**), and the Ateker linguistic unity linking Turkana and Teso.
+3. **Quinary-Decimal Numerals & 12 Traditional Months (Barton 1921)**:
+   - **1–10**: *epei* (1), *ari* (2), *uni* (3), *omwon* (4), *akhan / ng'an* (5), *akhan ka pei* (6), *akhan ka ari* (7), *akhan ka uni* (8), *akhan ka omwon* (9), *tomon* (10), *tomon ari* (20), *tomon tomon* (100).
    - **Ageboro (Rainy Season)**: *Lodungi* (Jan), *Lomoruk* (Feb), *Loichoto* (Mar), *Titima* (Apr), *Yeliyel* (May), *Lopo* (Jun).
    - **Akamu (Dry Season)**: *Lotiak* (Jul), *Lolingachunu* (Aug), *Lothaban* (Sep), *Lolongu* (Oct), *Lorarrar* (Nov), *Lugwan* (Dec).`,
     examples: [
-      { turkana: "Mata ng'atuk! — Mata ouwi!", english: "Health to your cattle! — Health to your village!", explanation: "Traditional pastoral greeting exchange (Barton 1921)" },
+      { turkana: "Mata ng'atuk! — Mata ouwi! • abarait • ekicholong • emedot", english: "Health to your cattle! — Health to your village! • circular wrist-knife • neck-stool • clay-felted headdress", explanation: "Traditional pastoral greeting and material culture (Purvis 1909, Ch. XIII & Barton 1921)" },
       { turkana: "epei, ari, uni, omwon, akhan, akhan ka pei, tomon", english: "1, 2, 3, 4, 5, 6 (5+1), 10", explanation: "Quinary-decimal numeral system built on akhan (5)" },
       { turkana: "Ageboro (Lodungi–Lopo) & Akamu (Lotiak–Lugwan)", english: "Rainy Season (Jan–Jun) & Dry Season (Jul–Dec)", explanation: "Traditional 12-month Turkana ecological calendar" }
     ]
@@ -219,7 +215,7 @@ export const TURKANA_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "turkana-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Turkana)",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Turkana.",
-    "content": "1. **Archival & Open-Dataset Integration for Turkana**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Turkana**:\n   - Combines primary historical documentation (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911, Barton 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "turkana": "Kalωme • Ekiyω",

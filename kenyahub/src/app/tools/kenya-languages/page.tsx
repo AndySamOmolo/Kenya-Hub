@@ -22,7 +22,7 @@ const data: { families: Family[]; languages: Language[]; notes: string[] } = lan
 const faq = [
   { question: "How many languages are spoken in Kenya?", answer: "Kenya has over 42 indigenous language communities, broadly grouped into three major African language families: Bantu (~65% of population), Nilotic (~30%), and Cushitic (~4%). English and Kiswahili are the two official languages under the 2010 Constitution." },
   { question: "What is the most spoken mother tongue in Kenya?", answer: "Kikuyu (Gĩkũyũ) is the largest mother tongue with approximately 8.1 million speakers (17.1%), followed by Luhya (6.8M, 14.3%), Kalenjin (6.4M, 13.4%), Dholuo (5.0M, 10.7%), and Kamba (4.7M, 9.8%). However, Kiswahili is the most widely spoken language overall as a lingua franca." },
-  { question: "What is the difference between Bantu, Nilotic, and Cushitic languages?", answer: "Bantu languages (Kikuyu, Luhya, Kamba, Kisii, Meru, Mijikenda, Swahili) belong to the Niger-Congo phylum and use noun-class prefixes (e.g., Mũ-Gĩkũyũ / A-Gĩkũyũ). Nilotic languages (Luo, Kalenjin, Maasai, Turkana, Samburu, Teso) belong to the Nilo-Saharan phylum. Cushitic languages (Somali, Oromo/Borana, Rendille) belong to the Afroasiatic phylum." },
+  { question: "What is the difference between Bantu, Nilotic, and Cushitic languages?", answer: "Bantu languages (Kikuyu, Luhya, Kamba, Kisii, Meru, Mijikenda, Swahili) belong to the Niger-Congo phylum and use noun-class prefixes (e.g., Mũ-Gĩkũyũ / A-Gĩkũyũ). Nilotic languages (Luo, Kalenjin, Maasai, Turkana, Samburu, Teso, Pokot, Ilchamus) belong to the Nilo-Saharan phylum. Cushitic languages (Somali, Oromo/Borana, Rendille, Daasanach) belong to the Afroasiatic phylum." },
   { question: "What is Sheng?", answer: "Sheng is an urban youth sociolect that originated in Nairobi's Eastlands in the 1970s. It blends Kiswahili grammar with vocabulary drawn from English, Kikuyu, Dholuo, Kamba, and Luhya, constantly evolving across neighbourhoods and music culture." },
 ];
 
@@ -56,6 +56,7 @@ function normalizeLanguageId(languageName: string): string {
   if (lower.includes("pokot")) return "pokot";
   if (lower.includes("taveta")) return "taveta";
   if (lower.includes("ilchamus") || lower.includes("njemps")) return "ilchamus";
+  if (lower.includes("daasanach") || lower.includes("dhaasanac") || lower.includes("dasanech")) return "daasanach";
   return lower.replace(/[^a-z0-9]+/g, "-");
 }
 
@@ -216,7 +217,7 @@ export default function KenyaLanguagesPage() {
             <li className="flex items-start gap-2 text-xs text-text-secondary">
               <span className="text-gold mt-0.5">•</span>
               <span>
-                Cross-referenced with {LANGUAGE_SOURCES.length} historical grammars, dictionaries, and comparative vocabularies (1842–1929) plus Unicode CLDR &amp; CC0 lexical resources.
+                Cross-referenced with {LANGUAGE_SOURCES.length} historical grammars, dictionaries, and comparative linguistic works (1840–2024) plus Unicode CLDR &amp; CC0 lexical resources.
               </span>
             </li>
           </ul>

@@ -14,8 +14,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-30",
-  "contributorNote": "Swahili (Kiswahili) public-domain vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882 \"A Dictionary of the Suahili Language\"), Bishop Edward Steere (1870, 1894), Rev. W. E. Taylor (1891), A. C. Madan (1903, 1917), Hildegarde Hinde (1904), Mrs. F. Burt (1910), and Sir Harry H. Johnston (1919).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
   "categories": [
     {
       "id": "greetings",
@@ -566,6 +566,27 @@
           "translation": "Fariji",
           "pronunciation": "fa-ri-ji",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "Greeting of sympathy in bereavement / Condolence formula",
+          "translation": "Mbirambi zako! (Reply: Binuru!) • Hana (pl. mahana) • Barua ya tanzia",
+          "pronunciation": "mbee-rahm-bee zah-koh — bee-noo-roo • hah-nah • bah-roo-ah yah tahn-zee-ah",
+          "context": "A. C. Madan (1902, p. 69 s.v. Condolence): customary Zanzibar condolence greeting Mbirambi zako! with reply Binuru!, mourning assembly (hana), and letter of condolence (barua ya tanzia)",
+          "audioFile": null
+        },
+        {
+          "english": "Congratulations / Good wishes on recovery or safe return",
+          "translation": "Kukupa mkono • Kuombea kheri (heri) • Barikiwa!",
+          "pronunciation": "koo-koo-pah m-koh-noh • koo-ohm-beh-ah kheh-ree",
+          "context": "A. C. Madan (1902, p. 71 s.v. Congratulate & p. 453 s.v. Welcome): kumpa mtu mkono ('to congratulate a person'), kukaribisha ('to bid welcome')",
+          "audioFile": null
+        },
+        {
+          "english": "To bid farewell / Take leave of one another",
+          "translation": "Kuaga (kuagana) • Kwaheri ya kuonana!",
+          "pronunciation": "koo-ah-gah (koo-ah-gah-nah) • kwah-heh-ree yah koo-oh-nah-nah",
+          "context": "A. C. Madan (1902, p. 136 s.v. Farewell & p. 158 s.v. Good-bye): kuagana ('to take leave of each other'), Kwaheri ya kuonana ('Good-bye till we meet again')",
           "audioFile": null
         }
       ]
@@ -4088,6 +4109,27 @@
           "pronunciation": "nje-le",
           "context": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)",
           "audioFile": null
+        },
+        {
+          "english": "Bantu vs. Arabic Cardinal Numerals (1–10)",
+          "translation": "-moja (mosi), -wili (pili), -tatu, -nne, -tano, sita, saba, -nane, kenda (tisa), kumi",
+          "pronunciation": "moh-jah, wee-lee, tah-too, n-neh, tah-noh, see-tah, sah-bah, nah-neh, kehn-dah, koo-mee",
+          "context": "A. C. Madan (1905 Swahili Grammar, §§ 72–74, pp. 26–27): -moja, -wili, -tatu, -nne, -tano, and -nane take adjectival concords, whereas sita (6), saba (7), kenda/tisa (9), and kumi (10) are invariable",
+          "audioFile": null
+        },
+        {
+          "english": "Higher Arabic & Bantu Tens (20–100, 1,000, 100,000)",
+          "translation": "Ishirini (makumi mawili, 20), thelathini (30), arobaini (40), hamsini (50), sitini (60), sabini (70), themanini (80), tisini (90), mia (100), elfu (1,000), lakki (100,000)",
+          "pronunciation": "ee-shee-ree-nee, theh-lah-thee-nee, ah-roh-bah-ee-nee, hahm-see-nee, see-tee-nee, sah-bee-nee, theh-mah-nee-nee, tee-see-nee, mee-ah, ehl-foo",
+          "context": "A. C. Madan (1905 Swahili Grammar, §§ 72–73, p. 26): compound numbers join units with na after the last item (mia na ishirini na moja = 121)",
+          "audioFile": null
+        },
+        {
+          "english": "Fractions & Adverbial Multipliers (Once, twice, half, third, quarter)",
+          "translation": "Mara moja (once), mara mbili (twice) • Nusu (1/2), theluthi (1/3), robo (1/4), thumuni (1/8)",
+          "pronunciation": "mah-rah moh-jah • noo-soo, theh-loo-thee, roh-boh, thoo-moo-nee",
+          "context": "A. C. Madan (1905 Swahili Grammar, §§ 75–77, p. 27): adverbial numerals use mara-, and fractions use Arabic loan nouns (nusu, theluthi, robo, humusi, sudusi, subui, thumuni)",
+          "audioFile": null
         }
       ]
     },
@@ -7462,6 +7504,41 @@
           "pronunciation": "mwana-m-ke",
           "context": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
+        },
+        {
+          "english": "Four generations of descendants (Grandchild, great-grandchild, 4th & 5th generations)",
+          "translation": "Mjukuu (grandchild) → Kijukuu (great-grandchild) → Kilembwe (great-great-grandchild) → Kining'ina (5th-generation descendant)",
+          "pronunciation": "m-joo-koo-oo • kee-joo-koo-oo • kee-lehm-bweh • kee-neeng-ee-nah",
+          "context": "A. C. Madan (1902, p. 160 s.v. Grandchild): four distinct Zanzibar Swahili generational terms descending from a grandparent (babu / bibi)",
+          "audioFile": null
+        },
+        {
+          "english": "Foster-sibling / Milk-brother or milk-sister",
+          "translation": "Ndugu kunyonya",
+          "pronunciation": "n-doo-goo koo-nyoh-nyah",
+          "context": "A. C. Madan (1902, p. 147 s.v. Foster-brother): ndugu kunyonya (lit. 'sibling by nursing at the same breast'), alongside mlezi ('foster-parent / nurse')",
+          "audioFile": null
+        },
+        {
+          "english": "Step-relation modifier (Stepfather, stepmother, stepchild)",
+          "translation": "Baba wa kambo • Mama wa kambo • Mtoto wa kambo",
+          "pronunciation": "bah-bah wah kahm-boh • mah-mah wah kahm-boh • m-toh-toh wah kahm-boh",
+          "context": "A. C. Madan (1902, p. 390 s.v. Step-father, Step-child): kambo attached via -a ('of') denotes any step-relationship",
+          "audioFile": null
+        },
+        {
+          "english": "Root derivation family of -za- ('bear / beget offspring')",
+          "translation": "Mzaa / mzazi (parent), mvyazi (begetter), mzao / mazao (offspring/produce), kizazi (generation), uzazi (parenthood), mzalia (native-born)",
+          "pronunciation": "m-zah-zee • m-vyah-zee • m-zah-oh • kee-zah-zee • oo-zah-zee • m-zah-lee-ah",
+          "context": "A. C. Madan (1905 Swahili Grammar, § 63, p. 23): complete morphological derivation family built from the root -za- (ku-zaa 'to bear/produce')",
+          "audioFile": null
+        },
+        {
+          "english": "Root derivation family of -tu ('person / being')",
+          "translation": "Mtu (watu, person), jitu (majitu, giant), kitu (vitu, thing), kijitu (vijitu, dwarf/manikin), utu (humanity/manhood)",
+          "pronunciation": "m-too • jee-too • kee-too • kee-jee-too • oo-too",
+          "context": "A. C. Madan (1905 Swahili Grammar, § 63, p. 22): demonstrates how prefixing different noun-class markers to the single root -tu yields person, giant, thing, dwarf, and abstract humanity",
+          "audioFile": null
         }
       ]
     },
@@ -10808,6 +10885,34 @@
           "pronunciation": "m-cipa",
           "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
+        },
+        {
+          "english": "Acclimatization fever (Experienced by newcomers on the East African coast)",
+          "translation": "Ukunguru (Homa ya ukunguru)",
+          "pronunciation": "oo-koon-goo-roo",
+          "context": "A. C. Madan (1902, p. 5 s.v. Acclimatize): ukunguru denotes the initial coastal fever through which a newcomer becomes seasoned (kuzoea tabia ya nchi)",
+          "audioFile": null
+        },
+        {
+          "english": "Dengue fever (Historic coastal epidemic of 1870)",
+          "translation": "Kidinga popo",
+          "pronunciation": "kee-deen-gah poh-poh",
+          "context": "A. C. Madan (1902, p. 94 s.v. Dengue): kidinga popo ('the cramp-like dengue fever'), remembered in Zanzibar oral history for the 1870 epidemic",
+          "audioFile": null
+        },
+        {
+          "english": "Pupil of the eye ('The little child of the eye')",
+          "translation": "Mboni ya jicho (Mtoto wa jicho)",
+          "pronunciation": "m-boh-nee yah jee-choh (m-toh-toh wah jee-choh)",
+          "context": "A. C. Madan (1902, p. 131 s.v. Eye & p. 305 s.v. Pupil): mboni ya jicho or mtoto wa jicho ('apple/pupil of the eye'); kope (eyelash), nyushi (eyebrow), ukigo wa jicho (eyelid)",
+          "audioFile": null
+        },
+        {
+          "english": "To pretend to be ill / Malinger / Force a cough",
+          "translation": "Kujigonjweza (kujifanya mgonjwa) • Kujikohoza",
+          "pronunciation": "koo-jee-gohn-jweh-zah • koo-jee-koh-hoh-zah",
+          "context": "A. C. Madan (1905 Swahili Grammar, § 226, p. 55): reflexive ji- combined with the causal stem (-ez-/-oz-) expresses feigning or self-induced bodily states (jigonjweza 'pretend illness', jikohoza 'cough intentionally')",
+          "audioFile": null
         }
       ]
     },
@@ -13509,6 +13614,34 @@
           "translation": "Pūnda-mīlīa",
           "pronunciation": "punda-milia",
           "context": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
+          "audioFile": null
+        },
+        {
+          "english": "Zoophyte / Coral polyp & Sea-anemone",
+          "translation": "Kiumbe cha baharini chenye umbo la mmea • Marijani (red coral) • Matumbawe (madrepore coral rock)",
+          "pronunciation": "kee-oom-beh chah bah-hah-ree-nee • mah-ree-jah-nee • mah-toom-bah-weh",
+          "context": "A. C. Madan (1902, p. 462 s.v. Zoophyte & p. 76 s.v. Coral): final headword of Madan's 1902 Dictionary, distinguishing living marine zoophytes, marijani (red coral of commerce), and matumbawe (islet/ragstone coral)",
+          "audioFile": null
+        },
+        {
+          "english": "Dugong / Indian Ocean sea-cow",
+          "translation": "Nguva",
+          "pronunciation": "n-goo-vah",
+          "context": "A. C. Madan (1902, p. 111 s.v. Dugong): nguva (Halicore dugong of the East African Indian Ocean coast)",
+          "audioFile": null
+        },
+        {
+          "english": "Firefly / Glow-worm",
+          "translation": "Kimulimuli (pl. vimulimuli)",
+          "pronunciation": "kee-moo-lee-moo-lee",
+          "context": "A. C. Madan (1902, p. 140 s.v. Firefly & p. 157 s.v. Glowworm): derived from kumulika ('to flash/gleam')",
+          "audioFile": null
+        },
+        {
+          "english": "Chameleon & Monitor Lizard",
+          "translation": "Kinyonga (lumbwi, chameleon) • Kenge (water monitor lizard) • Guruguru (burrowing lizard)",
+          "pronunciation": "kee-nyohn-gah • kehn-geh • goo-roo-goo-roo",
+          "context": "A. C. Madan (1902, p. 53 s.v. Chameleon & p. 221 s.v. Lizard): kinyonga/lumbwi (chameleon), kenge (large monitor lizard), mjusi (house gecko/lizard), guruguru (large burrowing lizard)",
           "audioFile": null
         }
       ]
@@ -22421,6 +22554,48 @@
           "pronunciation": "u-pepo",
           "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
+        },
+        {
+          "english": "Water (Kiamu / Lamu dialect form of maji)",
+          "translation": "mai",
+          "pronunciation": "mah-ee",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 241) & Capt. C. H. Stigand (1915) — Kiamu",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Ground / Floor (Kiamu dialect)",
+          "translation": "tiati",
+          "pronunciation": "tee-ah-tee",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 242) — Kiamu (Shela story)",
+          "audioFile": null
+        },
+        {
+          "english": "Spring tides vs. Neap tides (Zanzibar maritime hydrography)",
+          "translation": "Maji ya bamvua (spring tides) vs. Maji mafu / Maji ya mbande (neap tides)",
+          "pronunciation": "mah-jee yah bahm-voo-ah • mah-jee mah-foo / mah-jee yah m-bahn-deh",
+          "context": "A. C. Madan (1902, p. 409 s.v. Tide): maji kujaa (flood tide), maji kupwa (ebb tide), maji ya bamvua (high spring tides), maji mafu or maji ya mbande (low neap tides, lit. 'dead waters')",
+          "audioFile": null
+        },
+        {
+          "english": "North-East Monsoon vs. South-West Monsoon & Inter-Monsoon Calms",
+          "translation": "Kaskazi (NE monsoon, Nov–March) • Kusi (SW monsoon, April–Oct) • Maleleji / Dema (changeable winds between monsoons) • Matlai (east wind)",
+          "pronunciation": "kahs-kah-zee • koo-see • mah-leh-leh-jee • mah-tlah-ee",
+          "context": "A. C. Madan (1902, p. 244 s.v. Monsoon & p. 456 s.v. Wind): the seasonal Indian Ocean wind system governing dhow navigation and coastal agriculture",
+          "audioFile": null
+        },
+        {
+          "english": "Heavy rains vs. Lesser rains & Showers",
+          "translation": "Masika (heavy rains, March–May) • Vuli (mvuli, lesser rains, Oct–Nov) • Mvua ya rasharasha (driving showers) • Manyunyu (drizzle)",
+          "pronunciation": "mah-see-kah • voo-lee • m-voo-ah yah rah-shah-rah-shah • mah-nyoo-nyoo",
+          "context": "A. C. Madan (1902, p. 311 s.v. Rain & p. 350 s.v. Season): Zanzibar seasonal rain cycle",
+          "audioFile": null
+        },
+        {
+          "english": "Waterspout at sea & Rainbow",
+          "translation": "Chambembe (waterspout) • Upindi wa mvua (rainbow)",
+          "pronunciation": "chahm-behm-beh • oo-peen-dee wah m-voo-ah",
+          "context": "A. C. Madan (1902, p. 450 s.v. Waterspout & p. 311 s.v. Rainbow): chambembe ('marine waterspout') and upindi wa mvua ('bow of the rain')",
+          "audioFile": null
         }
       ]
     },
@@ -27902,6 +28077,48 @@
           "pronunciation": "lah",
           "context": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
+        },
+        {
+          "english": "Millet porridge (Kiamu / Shela dialect)",
+          "translation": "mkakambe",
+          "pronunciation": "m-kah-kahm-beh",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 247) — Kiamu (Shela story)",
+          "audioFile": null
+        },
+        {
+          "english": "To add meat/fish relish (kitoweo) to porridge (Kiamu dialect)",
+          "translation": "twelea (noun: kitoweo)",
+          "pronunciation": "tweh-leh-ah",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 248) — Kiamu",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger / Famine (Kimvita / Mombasa dialect form of njaa)",
+          "translation": "ndaa",
+          "pronunciation": "n-daa",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 251) & Capt. C. H. Stigand (1915) — Kimvita",
+          "audioFile": null
+        },
+        {
+          "english": "Cooperative meal where each guest contributes a dish (Potluck / Picnic club)",
+          "translation": "Kula bia • Kula kikoa",
+          "pronunciation": "koo-lah bee-ah • koo-lah kee-koh-ah",
+          "context": "A. C. Madan (1902, p. 59 s.v. Club & p. 283 s.v. Picnic): kula bia ('to share expenses or dishes jointly') and kula kikoa ('to eat in rotation, each member providing the feast in turn')",
+          "audioFile": null
+        },
+        {
+          "english": "Unleavened rice-flour cakes & Sweetmeats of Zanzibar",
+          "translation": "Mkate wa kumimina • Vitumbua (rice fritters) • Halwa (sweetmeat)",
+          "pronunciation": "m-kah-teh wah koo-mee-mee-nah • vee-toom-boo-ah • hahl-wah",
+          "context": "A. C. Madan (1902, p. 47 s.v. Cake & p. 400 s.v. Sweetmeat): traditional Zanzibar culinary preparations",
+          "audioFile": null
+        },
+        {
+          "english": "Relish eaten with staple grain porridge (Ugali or Wali)",
+          "translation": "Kitoweo (pl. vitoweo) • Mchuzi (curry/gravy)",
+          "pronunciation": "kee-toh-weh-oh • m-choo-zee",
+          "context": "A. C. Madan (1902, p. 322 s.v. Relish): kitoweo (fish, meat, or vegetable accompaniment eaten with wali or ugali; verb: kutowea)",
+          "audioFile": null
         }
       ]
     },
@@ -31065,6 +31282,34 @@
           "translation": "Ū-kūni; ndū-kūni",
           "pronunciation": "u-kuni",
           "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
+          "audioFile": null
+        },
+        {
+          "english": "Large earthen water-jar holding 20 mitungi (Kiamu / Coast)",
+          "translation": "kasiki",
+          "pronunciation": "kah-see-kee",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 241) — Kiamu (Shela story)",
+          "audioFile": null
+        },
+        {
+          "english": "Parts of a Swahili Dhow (Prow, stern, poop-deck, hold, ballast)",
+          "translation": "Gubeti / Omo (prow/bow) • Shetri / Tezi (stern) • Feuli (poop-deck/cabin) • Ngama (central hold/bilge) • Farumi (ballast)",
+          "pronunciation": "goo-beh-tee / oh-moh • sheh-tree / teh-zee • feh-oo-lee • n-gah-mah • fah-roo-mee",
+          "context": "A. C. Madan (1902, p. 33 s.v. Boat, p. 28 s.v. Ballast, p. 363 s.v. Ship & p. 390 s.v. Stern): technical Zanzibar dhow naval architecture",
+          "audioFile": null
+        },
+        {
+          "english": "Types of East African Dhows & Outrigger Canoes",
+          "translation": "Jahazi (large trading dhow) • Baghala (high-pooped ocean dhow) • Mtepe (sewn-plank Lamu/Bajun dhow) • Betela • Mashua (launch) • Ngalawa (double-outrigger canoe) • Mtumbwi (dugout)",
+          "pronunciation": "jah-hah-zee • bah-ghah-lah • m-teh-peh • beh-teh-lah • mah-shoo-ah • n-gah-lah-wah • m-toom-bwee",
+          "context": "A. C. Madan (1902, p. 33 s.v. Boat & p. 99 s.v. Dhow): full classification of Zanzibar and East Coast vessels",
+          "audioFile": null
+        },
+        {
+          "english": "Swahili Stone-House Entry Porch & Reception Bench",
+          "translation": "Baraza (stone bench & reception veranda) • Daka (recessed vestibule seat) • Sebule (reception room)",
+          "pronunciation": "bah-rah-zah • dah-kah • seh-boo-leh",
+          "context": "A. C. Madan (1902, p. 78 s.v. Council, p. 181 s.v. House & p. 292 s.v. Porch): architectural features of a Zanzibar stone house (nyumba ya mawe)",
           "audioFile": null
         }
       ]
@@ -54887,6 +55132,83 @@
           "pronunciation": "cee-nee",
           "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
+        },
+        {
+          "english": "To be full (Kiamu / Lamu dialect form of kujaa)",
+          "translation": "kuyaa (perfect: imeziye kuyaa)",
+          "pronunciation": "koo-yaa",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 242) — Kiamu",
+          "audioFile": null
+        },
+        {
+          "english": "To slaughter / cut throat (Kiamu & Kimvita form of kuchinja)",
+          "translation": "kutinda",
+          "pronunciation": "koo-teen-dah",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 247) & Capt. C. H. Stigand (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "To seek / look for (Kiamu dialect form of kutafuta)",
+          "translation": "kuzengea",
+          "pronunciation": "koo-zen-geh-ah",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 245) & Capt. C. H. Stigand (1915) — Kiamu",
+          "audioFile": null
+        },
+        {
+          "english": "To be spilled / wasted (Kimvita dialect form of kumwagika)",
+          "translation": "kumwayika",
+          "pronunciation": "koo-mwah-yee-kah",
+          "context": "Prof. Alice Werner (1919, Appendix I, p. 254) — Kimvita",
+          "audioFile": null
+        },
+        {
+          "english": "To pull out / draw out (Reversive extension with mid-vowel harmony)",
+          "translation": "kuchomoa (applicative: kuchomolea < kuchoma)",
+          "pronunciation": "koo-choh-moh-ah",
+          "context": "Deo Ngonyani & Nancy Ngowa (2016, Ch. 14, p. 274) — Reversive Extension in Swahili",
+          "audioFile": null
+        },
+        {
+          "english": "To unplug / unstop (Reversive extension)",
+          "translation": "kuzibua (applicative: kuzibulia < kuziba)",
+          "pronunciation": "koo-zee-boo-ah",
+          "context": "Deo Ngonyani & Nancy Ngowa (2016, Ch. 14, p. 273) — Reversive Extension in Swahili",
+          "audioFile": null
+        },
+        {
+          "english": "Root derivation family of -pend- ('love / like')",
+          "translation": "Kupenda (love), kupendelea (favour), kupendeza (please), kupendana (love one another) → mpenda, mpendaji, mpenzi, mpendwa, kipendo, kipenzi, mapenzi, mapendezi, upendo, pendo, pendeleo, upendano",
+          "pronunciation": "koo-pehn-dah • m-pehn-zee • mah-pehn-zee • oo-pehn-doh • oo-pehn-dah-noh",
+          "context": "A. C. Madan (1902 Introduction, p. viii & 1905 Grammar, § 63, p. 22): Madan's flagship example of Swahili morphological fertility from a single root",
+          "audioFile": null
+        },
+        {
+          "english": "Root derivation family of -shind- ('overcome / conquer')",
+          "translation": "Kushinda (conquer), kushindana (contend/compete), kushindania (strive for), kushindika (be conquered) → mshinda, mshindaji, mshinde (vanquished one), mshindani (competitor), shindo, mshindo (shock), ushindi (victory), mashindano (competition)",
+          "pronunciation": "koo-sheen-dah • m-sheen-dah-nee • oo-sheen-dee • mah-sheen-dah-noh",
+          "context": "A. C. Madan (1905 Swahili Grammar, § 63, p. 22): complete nominal and verbal derivation family from -shind-",
+          "audioFile": null
+        },
+        {
+          "english": "5 Semantic Sub-Types of the Causal/Intensive Stem (-isha / -esha / -za)",
+          "translation": "1. Simple Causal: kupasha moto (make hot) • 2. Compulsive: kumpigisha (force him to strike) • 3. Permissive: kupotesha (let get lost) • 4. Suasive: kuuzisha (persuade to sell) • 5. Consequential: kukumbusha (act so as to make remember) • Intensive: kuangaza (look intently)",
+          "pronunciation": "koo-pah-shah moh-toh • koo-m-pee-gee-shah • koo-poh-teh-shah • koo-koom-boo-shah • koo-ahn-gah-zah",
+          "context": "A. C. Madan (1905 Swahili Grammar, §§ 203–211, pp. 50–52): Madan's fivefold semantic classification of the Swahili Causative/Intensive extension",
+          "audioFile": null
+        },
+        {
+          "english": "Idiomatic Reflexive Stems with ji- (Spontaneous, Autobenefactive & Feigned action)",
+          "translation": "Kujienda (go off of itself, e.g. bunduki ilijienda) • Kujiendea (walk for one's own pleasure) • Kujikalia (sit idle by oneself) • Kujiona (be conceited) • Kujipendekeza (ingratiate oneself)",
+          "pronunciation": "koo-jee-ehn-dah • koo-jee-ehn-deh-ah • koo-jee-kah-lee-ah • koo-jee-oh-nah • koo-jee-pehn-deh-keh-zah",
+          "context": "A. C. Madan (1905 Swahili Grammar, § 226, pp. 54–55): idiomatic uses of the reflexive prefix ji- across simple, applied, and causal verb stems",
+          "audioFile": null
+        },
+        {
+          "english": "Stative (-ama) vs. Reversive (-ua) Verb Stems",
+          "translation": "Kufungama (be in a tangled/fastened state), kuinama (be bent/stoop), kuandama (follow in order), kushikamana (cleave together) • Kufungua (untie/open), kufunua (uncover), kuagua (predict/treat illness)",
+          "pronunciation": "koo-foon-gah-mah, koo-ee-nah-mah, koo-ahn-dah-mah • koo-foon-goo-ah, koo-foo-noo-ah",
+          "context": "A. C. Madan (1905 Swahili Grammar, §§ 216–222, pp. 53–54): Stative -ama expresses a fixed position/state, while Reversive -ua/-oa reverses the root action",
+          "audioFile": null
         }
       ]
     },
@@ -57938,6 +58260,34 @@
           "translation": "Kū-pī?",
           "pronunciation": "ku-pi",
           "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
+          "audioFile": null
+        },
+        {
+          "english": "Nasal (Noun-Set) vs. Non-Nasal (Pronoun-Set) Concord Prefixes",
+          "translation": "Nasal Set (Adjectives): m-/mw-, wa-, mi-, ma-, ki-, vi-, n-/ny-, u-, pa-/ku-/mu- vs. Non-Nasal Set (Pronouns/Verbs): a-/yu-, wa-, u-/w-, i-/y-, li-, ya-, ki-, vi-, i-/y-, zi-, u-/w-, pa-/ku-/mu-",
+          "pronunciation": "m- / wah- / mee- / mah- vs. ah- / wah- / oo- / ee- / lee- / yah- / kee- / vee- / zee-",
+          "context": "A. C. Madan (1905 Swahili Grammar, §§ 23–26 & § 101 Table of Concords, pp. 13–14, 32–33): foundational structural distinction between adjectival concords and pronominal/verbal concords",
+          "audioFile": null
+        },
+        {
+          "english": "Relative Verbal Nouns ('Movables and Immovables' / 'Imports and Exports')",
+          "translation": "Viendavyo na visivyokwenda (things movable and immovable / animate and inanimate) • Bithaa zijazo na zitokazo (imports and exports) • Vifanyizwavyo (manufactured articles)",
+          "pronunciation": "vee-ehn-dah-vyoh nah vee-see-vyoh-kwehn-dah • bee-thah-ah zee-jah-zoh nah zee-toh-kah-zoh • vee-fah-nyee-zwah-vyoh",
+          "context": "A. C. Madan (1905 Swahili Grammar, § 65, p. 23 & 1902 Dictionary, p. 187 s.v. Import): relative verb forms functioning directly as technical nouns",
+          "audioFile": null
+        },
+        {
+          "english": "Four-Way Personal Pronoun Paradigm (Full, Shorter, Enclitic, Emphatic)",
+          "translation": "Full: mimi, wewe, yeye, sisi, ninyi, wao • Shorter: miye, weye, yee, siye, nyie, wao • Enclitic: nami, nawe, naye, nasi, nanyi, nao • Emphatic: ndimi, ndiwe, ndiye, ndisi, ndinyi, ndio",
+          "pronunciation": "mee-mee / mee-yeh / nah-mee / n-dee-mee • weh-weh / weh-yeh / nah-weh / n-dee-weh",
+          "context": "A. C. Madan (1905 Swahili Grammar, §§ 79–83, pp. 28–29): complete four-column system of Swahili personal pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "Enclitic Possessive Suffixes (-angu → -ngu, -ako → -ko/-o, -ake → -ye/-e)",
+          "translation": "Mwenzangu / mwenzio / mwenziwe • Jinalo (jina lako, thy name) • Nyumbaye (nyumba yake, his/her house) • Babazo (baba zako, thy ancestors)",
+          "pronunciation": "mwehn-zahn-goo / mwehn-zee-oh / mwehn-zee-weh • jee-nah-loh • nyoom-bah-yeh • bah-bah-zoh",
+          "context": "A. C. Madan (1905 Swahili Grammar, § 97, p. 31): contracted enclitic possessives attached to kinship and household nouns",
           "audioFile": null
         }
       ]
@@ -61467,6 +61817,20 @@
           "pronunciation": "ngo-ma",
           "context": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)",
           "audioFile": null
+        },
+        {
+          "english": "To tack / Put a dhow about (Weather side vs. Lee side)",
+          "translation": "Kupiga mbisho (tacking against the wind) vs. Kukisi matanga (wearing ship / shifting sail) • Upande wa goshini (weather/windward side) vs. Upande wa demani (lee side)",
+          "pronunciation": "koo-pee-gah m-bee-shoh • koo-kee-see mah-tahn-gah • oo-pahn-deh wah goh-shee-nee vs. deh-mah-nee",
+          "context": "A. C. Madan (1902, p. 402 s.v. Tack, p. 452 s.v. Weather & p. 216 s.v. Lee): goshi is the tack-rope (front corner of the lateen sail), while demani is the sheet-rope (aft corner)",
+          "audioFile": null
+        },
+        {
+          "english": "Caravan leader, guide & porter stages",
+          "translation": "Kiongozi (guide/leader of caravan) • Mnyapara (headman of porters) • Mpagazi (caravan porter) • Kituo / Kambi (halting-place / camp) • Masafa (stage / day's march)",
+          "pronunciation": "kee-ohn-goh-zee • m-nyah-pah-rah • m-pah-gah-zee • kee-too-oh • mah-sah-fah",
+          "context": "A. C. Madan (1902, p. 50 s.v. Caravan, p. 163 s.v. Guide & p. 293 s.v. Porter): classical East African safari and trade-route vocabulary",
+          "audioFile": null
         }
       ]
     },
@@ -64609,6 +64973,27 @@
           "translation": "nūnūa, -ūzā",
           "pronunciation": "nunua -uza",
           "context": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
+          "audioFile": null
+        },
+        {
+          "english": "Handsel / Goodwill gift thrown in by the seller to close a bargain",
+          "translation": "Pukusa (pl. mapukusa) • Bakhshishi (bakshishi) • Kilemba",
+          "pronunciation": "poo-koo-sah (mah-poo-koo-sah) • bahk-shee-shee • kee-lehm-bah",
+          "context": "A. C. Madan (1902, p. 166 s.v. Handsel & p. 30 s.v. Bargain): pukusa is a customary bonus or extra measure given to seal a purchase; kushika (or kuweka) arubuni ('to pay earnest-money / deposit')",
+          "audioFile": null
+        },
+        {
+          "english": "Communal labour / Neighbourly mutual-aid bee",
+          "translation": "Ujima (Kufanya kazi kwa ujima)",
+          "pronunciation": "oo-jee-mah (koo-fah-nyah kah-zee kwah oo-jee-mah)",
+          "context": "A. C. Madan (1902, p. 59 s.v. Club, Co-operate): ujima denotes neighbours clubbing together to hoe a field or build a house for one another",
+          "audioFile": null
+        },
+        {
+          "english": "Dry grain & weight measures of Zanzibar (Kibaba, Kisaga, Pishi, Frasila, Jizla)",
+          "translation": "Kibaba (approx. 1 pint / 1.5 lb grain) → Kisaga (2 vibaba) → Pishi (4 vibaba ≈ 6 lbs) → Frasila (approx. 35 lbs) → Jizla (60 pishi ≈ 360 lbs)",
+          "pronunciation": "kee-bah-bah • kee-sah-gah • pee-shee • frah-see-lah • jeez-lah",
+          "context": "A. C. Madan (1902, p. 235 s.v. Measure & p. 453 s.v. Weight): standard Zanzibar volumetric and weight hierarchy",
           "audioFile": null
         }
       ]
@@ -68733,6 +69118,20 @@
           "pronunciation": "iva",
           "context": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
+        },
+        {
+          "english": "Arbitration, bail & surety in customary law",
+          "translation": "Kusuluhisha (arbitrate / reconcile) • Msuluhishi (arbitrator) • Dhamana (mdhamini, bail / surety / guarantor) • Kiapo (oath / ordeal)",
+          "pronunciation": "koo-soo-loo-hee-shah • m-soo-loo-hee-shee • dhah-mah-nah • kee-ah-poh",
+          "context": "A. C. Madan (1902, p. 20 s.v. Arbitrate, p. 28 s.v. Bail & p. 262 s.v. Oath): Zanzibar legal and dispute-resolution terminology",
+          "audioFile": null
+        },
+        {
+          "english": "Sanctuary / Safe refuge & Ransom",
+          "translation": "Kimbilio (place of refuge) • Fidia (ransom / redemption price, verb: kufidia)",
+          "pronunciation": "keem-bee-lee-oh • fee-dee-ah (koo-fee-dee-ah)",
+          "context": "A. C. Madan (1902, p. 312 s.v. Ransom & p. 320 s.v. Refuge): kimbilio ('refuge') and fidia ('ransom')",
+          "audioFile": null
         }
       ]
     },
@@ -71350,6 +71749,13 @@
           "translation": "zēē, -kūū",
           "pronunciation": "zee -kuu",
           "context": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
+          "audioFile": null
+        },
+        {
+          "english": "Swahili Daytime & Prayer-Time Reckoning (12-Hour Cycle from 6 a.m.)",
+          "translation": "Alfajiri (dawn, ~4:30–5:30 a.m.) → Asubuhi (morning, 6 a.m. = saa kumi na mbili) → Adhuhuri (noon, 12 p.m. = saa sita) → Alasiri (afternoon, ~3:30 p.m.) → Jioni (late afternoon) → Magharibi (sunset, 6 p.m. = saa kumi na mbili) → Esha (nightfall, ~7:30 p.m.)",
+          "pronunciation": "ahl-fah-jee-ree • ah-soo-boo-hee • ah-dhoo-hoo-ree • ah-lah-see-ree • jee-oh-nee • mah-ghah-ree-bee • eh-shah",
+          "context": "A. C. Madan (1902, p. 181 s.v. Hour & p. 410 s.v. Time): Swahili hours (saa) count from 6:00 a.m. (sunrise) and 6:00 p.m. (sunset), so 7:00 a.m. is saa moja ya asubuhi and noon is saa sita",
           "audioFile": null
         }
       ]
@@ -121121,6 +121527,34 @@
           "pronunciation": "soo-mah-mah",
           "context": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
+        },
+        {
+          "english": "Alliterative Concord Showcase ('All those four fine things of mine, let them be yours')",
+          "translation": "Vitu vile vyangu vilivyo vizuri viwe vyako, vyote vinne",
+          "pronunciation": "vee-too vee-leh vyahn-goo vee-lee-vyoh vee-zoo-ree vee-weh vyah-koh, vyoh-teh veen-neh",
+          "context": "A. C. Madan (1902 Introduction 'On the Swahili Language as Spoken in Zanzibar', p. x): classic 9-word sentence illustrating Class 8 (vi-) alliterative concord across noun, demonstrative, possessive, relative copula, adjective, subjunctive verb, quantifier, and numeral",
+          "audioFile": null
+        },
+        {
+          "english": "Polysynthetic 4-Prefix Verb Showcase ('Which he brought it with / for')",
+          "translation": "A-li-lo-i-letea (and Vi-li-vyo-vi-letea — 'the things which brought them to/for')",
+          "pronunciation": "ah-lee-loh-ee-leh-teh-ah • vee-lee-vyoh-vee-leh-teh-ah",
+          "context": "A. C. Madan (1902 Introduction, p. ix & p. xiii Table I): demonstrates how a single Swahili verb word combines Subject prefix (a-), Tense prefix (-li-), Relative object prefix (-lo-), Direct object prefix (-i-), Root (let-), Applied stem (-e-), and Mood suffix (-a)",
+          "audioFile": null
+        },
+        {
+          "english": "Proverb on Patience & Steadfast Accumulation ('Little by little fills the measure')",
+          "translation": "Haba na haba hujaza kibaba • Tone na tone huwa mchirizi",
+          "pronunciation": "hah-bah nah hah-bah hoo-jah-zah kee-bah-bah • toh-neh nah toh-neh hoo-wah m-chee-ree-zee",
+          "context": "A. C. Madan (1902, p. 109 s.v. Drop & p. 221 s.v. Little): verbatim Zanzibar proverbs teaching that small, steady efforts fill the kibaba measure and form a flowing stream",
+          "audioFile": null
+        },
+        {
+          "english": "Proverb on Irrevocable Action ('Spilt water cannot be gathered up')",
+          "translation": "Maji yaliyomwagika hayazoeleki",
+          "pronunciation": "mah-jee yah-lee-yoh-mwah-gee-kah hah-yah-zoh-eh-leh-kee",
+          "context": "A. C. Madan (1902, p. 382 s.v. Spill): equivalent to 'It is no use crying over spilt milk' (neut. pot. -eleki from kuzoa 'gather up')",
+          "audioFile": null
         }
       ]
     },
@@ -122185,11 +122619,67 @@
           "pronunciation": "yah-lah",
           "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
+        },
+        {
+          "english": "Classical 4-line epic stanza of 8 syllables per line (Swahili prosody)",
+          "translation": "utendi / utenzi (pl. tendi / tenzi)",
+          "pronunciation": "oo-ten-dee",
+          "context": "Prof. Alice Werner (1918, pp. 113–127) — Swahili Poetry (BSOS Vol. 1)",
+          "audioFile": null
+        },
+        {
+          "english": "Classical 5-line stanza built on an older couplet (Swahili prosody)",
+          "translation": "takhmisi",
+          "pronunciation": "tahkh-mee-see",
+          "context": "Prof. Alice Werner (1918, p. 119) & Bishop Edward Steere (1870) — Mashairi ya Liongo",
+          "audioFile": null
+        },
+        {
+          "english": "Ceremonial coastal night dance and song meter associated with Liongo Fumo",
+          "translation": "gungu (matoazi cymbals & tasa gongs)",
+          "pronunciation": "goon-goo",
+          "context": "Prof. Alice Werner (1933, Ch. X, pp. 149–152) — Myths and Legends of the Bantu",
+          "audioFile": null
+        },
+        {
+          "english": "Swahili written in Arabic script (historical coastal chancellery & poetic orthography)",
+          "translation": "Khati ya Kiswahili (Ajami)",
+          "pronunciation": "khah-tee yah kee-swah-hee-lee",
+          "context": "Mervyn W. H. Beech (1918, pp. 1–51) — Aids to the Study of Ki-Swahili",
+          "audioFile": null
+        },
+        {
+          "english": "Little by little fills the measure (proverbial equivalent of Kinika: Bandu na bandu ya mala gogo)",
+          "translation": "Haba na haba hujaza kibaba",
+          "pronunciation": "hah-bah nah hah-bah hoo-jah-zah kee-bah-bah",
+          "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, p. 10 s.v. Bandu — Kijomba/Swahili proverb comparison)",
+          "audioFile": null
+        },
+        {
+          "english": "Coastal Swahili language and people of Mombasa (in Mijikenda/Kinika usage)",
+          "translation": "Kijomba (Mjomba, pl. Wajomba / Ajomba)",
+          "pronunciation": "kee-johm-bah / m-johm-bah",
+          "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, pp. viii, 168 s.v. Kijomba)",
+          "audioFile": null
+        },
+        {
+          "english": "Madan's Holistic Definition of True Education (Malezi halisi)",
+          "translation": "Malezi halisi ni kumsitawisha killa mtu utu wake wote pamoja, akili, moyo, mwili, roho",
+          "pronunciation": "mah-leh-zee hah-lee-see nee koom-see-tah-wee-shah kee-lah m-too oo-too wah-keh woh-teh pah-moh-jah: ah-kee-lee, moh-yoh, mwee-lee, roh-hoh",
+          "context": "A. C. Madan (1902, p. 113 s.v. Education): verbatim Zanzibar Swahili definition of education — 'True education is to develop in every person their whole humanity together: intellect (akili), heart (moyo), body (mwili), and spirit (roho)'",
+          "audioFile": null
+        },
+        {
+          "english": "8 Dependent Adverbial Clause Constructions in Zanzibar Swahili Syntax",
+          "translation": "1. Temporal/Local (-po-) • 2. Final (subjunctive -e / ili) • 3. Conditional (kama / -ki- / -nge- / -ngali-) • 4. Causal (kwa sababu / kwani) • 5. Concessive (ijapo / ingawa / -nga-) • 6. Consecutive (-ka- / hata) • 7. Comparative (kama / jinsi / kadiri) • 8. 'Without' Clauses (pasipo / bila / -sije-)",
+          "pronunciation": "-poh- • ee-lee • -kee- / -n-geh- / -n-gah-lee- • ee-jah-poh / een-gah-wah • pah-see-poh",
+          "context": "A. C. Madan (1905 Swahili Grammar, Chapter VII 'Syntax — Dependent Sentences', §§ 247–262, pp. 59–62)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Krapf 1850/1882, Steere 1870/1894, Taylor 1891, Madan 1903/1917, Hinde 1904, Burt 1910 & Johnston 1919)",
+  "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
   "isoCode": "swh",
   "glottocode": "swah1253"
 }

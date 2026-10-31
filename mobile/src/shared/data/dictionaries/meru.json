@@ -11,8 +11,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Meru (Kĩmĩĩrũ) public-domain vocabulary compiled from C. W. Hobley (1910) \"Ethnology of A-Kamba and Other East African Tribes\", Sir Harry H. Johnston (1919) \"A Comparative Study of the Bantu and Semi-Bantu Languages\", and Unicode CLDR (mer.xml).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Meru (Kĩmĩĩrũ / Kĩtharaka / Kĩcuka / Kĩmwimbi) vocabulary compiled from C. W. Hobley (1910), Arthur M. Champion (1912 \"The Atharaka\"), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11–11a), Prof. Kithaka wa Mberia (2004 \"The Phonology of Borrowed Words in Kitharaka\"), and Unicode CLDR (mer.xml).",
   "categories": [
     {
       "id": "greetings",
@@ -4701,11 +4701,116 @@
           "pronunciation": "nyamb-ee-ne",
           "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 155)",
           "audioFile": null
+        },
+        {
+          "english": "Baptism (Kĩtharaka phonological adaptation)",
+          "translation": "ũbatitho",
+          "pronunciation": "oo-bah-tee-thoh [oβatiðɔ]",
+          "context": "Kithaka wa Mberia (2004, p. 78) — Kĩtharaka (< Swahili ubatizo)",
+          "audioFile": null
+        },
+        {
+          "english": "School (Kĩtharaka phonological adaptation)",
+          "translation": "thukuru",
+          "pronunciation": "thoo-koo-roo [ðukuru]",
+          "context": "Kithaka wa Mberia (2004, p. 81) — Kĩtharaka vowel epenthesis",
+          "audioFile": null
+        },
+        {
+          "english": "Generational ruling age-set in Chuka, Mwimbi, and Tharaka",
+          "translation": "ntuke",
+          "pronunciation": "n-too-keh",
+          "context": "Hon. Charles Dundas (1915, p. 239) — Organization and Laws of Some Bantu Tribes (JRAI Vol. 45)",
+          "audioFile": null
+        },
+        {
+          "english": "Hereditary clan forest and ridge land estate (Chuka & Mwimbi)",
+          "translation": "gĩthaka",
+          "pronunciation": "gee-thah-kah",
+          "context": "Hon. Charles Dundas (1915, p. 295) — Organization and Laws of Some Bantu Tribes (JRAI Vol. 45)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "shopping",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Market (Kĩtharaka loanword nativization: s > th)",
+          "translation": "thoko",
+          "pronunciation": "thoh-koh [ðɔkɔ]",
+          "context": "Kithaka wa Mberia (2004, p. 77) — The Phonology of Borrowed Words in Kitharaka (< Swahili soko)",
+          "audioFile": null
+        },
+        {
+          "english": "Zero (Kĩtharaka loanword nativization: s > k, f > β)",
+          "translation": "kĩbũrĩ",
+          "pronunciation": "kee-boo-ree [keβore]",
+          "context": "Kithaka wa Mberia (2004, p. 78) — Kĩtharaka (< Swahili sifuri)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "home",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Table (Kĩtharaka loanword nativization: z > th)",
+          "translation": "metha",
+          "pronunciation": "meh-thah [mɛða]",
+          "context": "Kithaka wa Mberia (2004, p. 77) — Kĩtharaka (< Swahili meza)",
+          "audioFile": null
+        },
+        {
+          "english": "Cup (Kĩtharaka)",
+          "translation": "gĩkombe (pl. ikombe)",
+          "pronunciation": "gee-kohm-beh",
+          "context": "Kithaka wa Mberia (2004, p. 79) — Kĩtharaka Dahl's Law voicing kĩ- > gĩ-",
+          "audioFile": null
+        },
+        {
+          "english": "Hollowed log beehive hung in baobab/acacia trees (Atharaka)",
+          "translation": "mwatũ (pl. miatũ)",
+          "pronunciation": "mwah-too",
+          "context": "Arthur M. Champion (1912, p. 79) — The Atharaka (JRAI Vol. 42)",
+          "audioFile": null
+        },
+        {
+          "english": "Bow and poisoned arrows (Atharaka)",
+          "translation": "ũta na mũgũĩ",
+          "pronunciation": "oo-tah nah moo-goo-ee",
+          "context": "Arthur M. Champion (1912, p. 84) — The Atharaka (JRAI Vol. 42)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "time",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Hour / Watch / Clock (Kĩtharaka)",
+          "translation": "thaa",
+          "pronunciation": "thaa [ðaa]",
+          "context": "Kithaka wa Mberia (2004, p. 77) — Kĩtharaka (< Swahili saa)",
+          "audioFile": null
+        },
+        {
+          "english": "Minute (Kĩtharaka)",
+          "translation": "ndagĩka",
+          "pronunciation": "ndah-gee-kah",
+          "context": "Kithaka wa Mberia (2004, p. 78) — Kĩtharaka (< Swahili dakika)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1910, Johnston 1919 & Unicode CLDR mer.xml)",
+  "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)",
   "isoCode": "mer",
   "glottocode": "meru1245"
 }

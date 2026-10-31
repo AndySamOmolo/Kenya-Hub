@@ -14,8 +14,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.4",
-  "lastUpdated": "2026-10-30",
-  "contributorNote": "Borana / Oromo (Afaan Borana / Afaan Oromoo) dictionary compiled and verified line-by-line from Rev. J. L. Krapf & Rev. C. W. Isenberg (\"Vocabulary of the Galla Language\", London, CMS, 1842, pp. i–ii, 1–42 & \"Vocabulary of Six East-African Languages\", Tübingen, 1850 — Public Domain), Karl & Lawrence Tutschek (\"Dictionary of the Galla Language, Part I: Galla–English–German [Munich, 1844, pp. i–lix, 1–205] & Part II: English–Galla [Munich, 1845, pp. 1–126]\" & \"A Grammar of the Galla Language\", Munich, 1845, pp. i–viii, 1–92 — Public Domain), Wiktionary's Afroasiatic Swadesh list, and Wikipedia's Oromo language grammatical & lexical tables.",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
   "categories": [
     {
       "id": "greetings",
@@ -27202,6 +27202,20 @@
           "pronunciation": "kan",
           "context": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [adv.]",
           "audioFile": null
+        },
+        {
+          "english": "Man (Absolutive nama vs. Nominative namni)",
+          "translation": "nama (nom. namni)",
+          "pronunciation": "nah-mah / nahm-nee",
+          "context": "Rev. J. L. Krapf (1840) Outline of the Galla Language & Griefenow-Mewis (1996)",
+          "audioFile": null
+        },
+        {
+          "english": "Girl / Daughter (Absolutive intala vs. Nominative intalti)",
+          "translation": "intala (nom. intalti)",
+          "pronunciation": "een-tah-lah / een-tahl-tee",
+          "context": "Rev. J. L. Krapf (1840) Outline of the Galla Language & Griefenow-Mewis (1996)",
+          "audioFile": null
         }
       ]
     },
@@ -54082,11 +54096,18 @@
           "pronunciation": "ab-baa her-re-gaa",
           "context": "Borana Pastoral Governance",
           "audioFile": null
+        },
+        {
+          "english": "Southern / Tana River Oromo dialect studied by Krapf & Wakefield",
+          "translation": "Orma / Bararetta (Equatorial Galla)",
+          "pronunciation": "ohr-mah / bah-rah-ret-tah",
+          "context": "R. N. Cust (1883, Vol. I, p. 124), Alice Werner (1915) & BFBS (1921, p. 44)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Krapf 1842, 1850 & Tutschek 1844–1845)",
+  "source": "Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845, Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
   "isoCode": "gax",
   "glottocode": "bora1271"
 }

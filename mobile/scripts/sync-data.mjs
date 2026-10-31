@@ -47,7 +47,7 @@ for (const df of explicitDataFiles) {
   writeFileSync(resolve(destination, "data", df), readFileSync(resolve(source, "data", df)));
 }
 
-for (const lang of ["swahili", "kalenjin", "mijikenda", "meru", "somali"]) {
+for (const lang of ["swahili", "kalenjin", "mijikenda", "meru", "somali", "daasanach"]) {
   ensureDir(resolve(destination, "data/courses", lang));
   for (const fn of ["course.ts", "grammar-reference.ts"]) {
     const s = resolve(source, "data/courses", lang, fn);

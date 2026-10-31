@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Ilchamus (Camus / Njemps / En-jemusi) dictionary compiled from Hon. K. R. Dundas ('Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, 1910 — Public Domain), Sir Harry H. Johnston ('The Uganda Protectorate, Vol. II', 1902 — Public Domain), Mervyn W. H. Beech ('The Suk: Their Language and Folklore', 1911 — Public Domain), and Rainer Vossen ('The Eastern Nilotes', 1982).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Ilchamus (Njemps / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
   "categories": [
     {
       "id": "greetings",
@@ -2229,11 +2229,25 @@
           "pronunciation": "l ku-ji-ta",
           "context": "Ilchamus Material Culture — Heine (1980)",
           "audioFile": null
+        },
+        {
+          "english": "Perkerra River brushwood-and-boulder irrigation dams & sluice-canals at Njemps (1887)",
+          "translation": "Guaso Tigerish (Perkerra) irrigation canals of En-jemusi",
+          "pronunciation": "gwah-soh tee-geh-reesh",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 390–402) — Discovery of Lakes Rudolf and Stefanie",
+          "audioFile": null
+        },
+        {
+          "english": "Central island of Lake Baringo inhabited by Ilchamus",
+          "translation": "Ol Kokwa",
+          "pronunciation": "ohl koh-kwah",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, p. 412) — Discovery of Lakes Rudolf and Stefanie",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Vossen 1982)",
+  "source": "Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
   "isoCode": "saq-ilc",
   "glottocode": "chAM1234"
 }

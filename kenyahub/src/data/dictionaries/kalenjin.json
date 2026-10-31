@@ -17,8 +17,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.2",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen) public-domain vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902) \"The Uganda Protectorate, Vol. II\", A. C. Hollis (1909) \"The Nandi: Their Language and Folk-Lore\", and Hon. K. R. Dundas (1910).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
   "categories": [
     {
       "id": "greetings",
@@ -5021,6 +5021,13 @@
           "translation": "walel (waleldo), pl",
           "pronunciation": "wa-lel",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "Self / Body (lexical source of the Kalenjin reflexive suffix -kee/-gee)",
+          "translation": "kɛɛy (definite: kɛɛ-t, pl. kɛɛ-wɛk)",
+          "pronunciation": "keey / keet / kee-wek",
+          "context": "Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024, pp. 438–442) — Giving a Body to the Kalenjin Reflexive",
           "audioFile": null
         }
       ]
@@ -16957,6 +16964,27 @@
           "pronunciation": "i-ro",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
           "audioFile": null
+        },
+        {
+          "english": "To wash oneself / bathe (Kalenjin reflexive-middle -kee)",
+          "translation": "i-un-kee (Tugen) / i-un-gee (Kipsigis)",
+          "pronunciation": "ee-oon-kee",
+          "context": "Zwarts, Chelimo & Jerono (2024, p. 432) — Kalenjin Reflexive",
+          "audioFile": null
+        },
+        {
+          "english": "To love each other (Kalenjin reciprocal -kee)",
+          "translation": "chɔɔm-kɛɛy (Kɪ-chɔɔm-kɛɛy laakwɛɛk)",
+          "pronunciation": "choom-keey",
+          "context": "Zwarts, Chelimo & Jerono (2024, p. 434) — Kalenjin Reflexive",
+          "audioFile": null
+        },
+        {
+          "english": "To open by itself (Kalenjin anticausative -kee)",
+          "translation": "yat-kee (Ka-yat-kee kurget)",
+          "pronunciation": "yaht-kee",
+          "context": "Zwarts, Chelimo & Jerono (2024, p. 435) — Kalenjin Reflexive",
+          "audioFile": null
         }
       ]
     },
@@ -18321,6 +18349,20 @@
           "translation": "tepes, pl",
           "pronunciation": "te-pes pl",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "Every / Each (singular count noun + age tugul in Kipsigis)",
+          "translation": "age tugul (e.g. lakwet age tugul \"every child\")",
+          "pronunciation": "ah-geh too-gool",
+          "context": "Meredith Landman (2019, Ch. 25, pp. 436–442) — Nominal Quantification in Kipsigis",
+          "audioFile": null
+        },
+        {
+          "english": "All (plural noun + tugul in Kipsigis)",
+          "translation": "tugul (e.g. lagok tugul \"all the children\")",
+          "pronunciation": "too-gool",
+          "context": "Meredith Landman (2019, Ch. 25, p. 436) — Nominal Quantification in Kipsigis",
           "audioFile": null
         }
       ]
@@ -36379,7 +36421,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, 1910, Johnston 1902, Hollis 1909 & Dundas 1910)",
+  "source": "Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024)",
   "isoCode": "kln",
   "glottocode": "kale1246"
 }

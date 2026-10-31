@@ -60,6 +60,9 @@ import {
   POKOT_CONFIG,
   POKOT_UNITS,
   POKOT_GRAMMAR_SECTIONS,
+  DAASANACH_CONFIG,
+  DAASANACH_UNITS,
+  DAASANACH_GRAMMAR_SECTIONS,
 } from "./cultural-wisdom";
 
 export interface CourseDefinition {
@@ -247,6 +250,14 @@ export const COURSE_REGISTRY: Record<string, CourseDefinition> = {
     validationIssues: [],
     sourceIds: getSourcesForLanguage(POKOT_CONFIG.id).map((source) => source.id),
     grammarSections: POKOT_GRAMMAR_SECTIONS as unknown as GrammarSection[],
+  },
+  daasanach: {
+    config: DAASANACH_CONFIG,
+    units: DAASANACH_UNITS,
+    ready: true,
+    validationIssues: [],
+    sourceIds: getSourcesForLanguage(DAASANACH_CONFIG.id).map((source) => source.id),
+    grammarSections: DAASANACH_GRAMMAR_SECTIONS as unknown as GrammarSection[],
   },
 };
 

@@ -11,8 +11,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Pokot (Pökoot / Suk) and Endo (Chep-bleñg) dictionary compiled line-by-line from Mervyn W. H. Beech ('The Suk: Their Language and Folklore', Clarendon Press Oxford, 1911 — Public Domain), Hon. K. R. Dundas ('Notes on the Tribes Inhabiting the Baringo District', JRAI Vol. 40, 1910 — Public Domain), Sir Harry H. Johnston ('The Uganda Protectorate, Vol. II', 1902 — Public Domain), Juxon Barton (1921 — Public Domain), and Roger van Otterloo (1979).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Pokot (Pökoot / Suk) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -22621,11 +22621,18 @@
           "pronunciation": "ke-we nioh-no",
           "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
           "audioFile": null
+        },
+        {
+          "english": "1882 caravan record of the Suk (Pökoot) pastoralists north of Baringo",
+          "translation": "Wasuku (Pökoot)",
+          "pronunciation": "wah-soo-koo / poh-koot",
+          "context": "Ven. J. P. Farler & Rev. T. Wakefield (1882, p. 739) — Native Routes in East Africa (PRGS Vol. 4)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
+  "source": "Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
   "isoCode": "pko",
   "glottocode": "poko1263"
 }

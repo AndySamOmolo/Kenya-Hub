@@ -5,6 +5,7 @@
 // - Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Hutchinson, London — Public Domain)
 // - C. W. Hobley (1903) "British East Africa: Anthropological Studies in Kavirondo and Nandi" (JAI Vol. 33 — Public Domain)
 // - G. A. S. Northcote (1907) "The Nilotic Kavirondo" (JRAI Vol. 37 — Public Domain)
+// - Rev. John Roscoe & Archdeacon J. J. Willis (1915) "The Northern Bantu" (Ch. XXV "The Nilotic Kavirondo" & Dholuo Kinship Table, pp. 275–293 — Public Domain)
 // - Mill-Hill Fathers (1920) "A Handbook of the Kavirondo Language" (London — Public Domain)
 // ============================================================
 
@@ -164,5 +165,12 @@ export const luoProverbs: ProverbEntry[] = [
     english: "The rain that falls brings coolness and peace (kwe) to the land.",
     meaning: "Reflects Dholuo ecological wisdom linking rain, harvest abundance, and social harmony (Northcote 1907, p. 65; Hobley 1903, p. 346).",
     category: "life"
+  },
+  {
+    id: 21,
+    luo: "Wuoro (Wuonwa / Wuonu / Wuon), Miyo (Minwa / Minu / Min), Owadwa, Nyaminwa, Nerwa (MB), Wayawa (FZ), Kwaro, Dayo, Orwa (Roscoe & Willis 1915).",
+    english: "Father (our/your/his father), Mother (our/your/his mother), Brother (son of my mother/father), Sister, Maternal Uncle (Nerwa), Paternal Aunt (Wayawa), Grandfather (Kwaro), Grandmother (Dayo), Brother-/Son-in-law (Orwa).",
+    meaning: "Recorded verbatim by Archdeacon J. J. Willis and Rev. John Roscoe in 'The Northern Bantu' (1915, Ch. XXV 'The Nilotic Kavirondo' & Kinship Table pp. 275–293), documenting Dholuo relational possessive inflection, strict clan exogamy, and in-law respect (lour).",
+    category: "family"
   }
 ];

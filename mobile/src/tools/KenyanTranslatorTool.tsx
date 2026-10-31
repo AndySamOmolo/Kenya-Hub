@@ -75,6 +75,7 @@ const DICT_LOADERS: Record<string, () => Promise<{ default: any }>> = {
   ilchamus: () => import("../shared/data/dictionaries/ilchamus.json"),
   pokot: () => import("../shared/data/dictionaries/pokot.json"),
   taveta: () => import("../shared/data/dictionaries/taveta.json"),
+  daasanach: () => import("../shared/data/dictionaries/daasanach.json"),
 };
 
 const LOADED_DICTS_CACHE: Record<string, Dictionary> = {};

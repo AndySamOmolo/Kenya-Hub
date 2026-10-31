@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30",
+  "lastUpdated": "2026-10-31",
   "families": [
     {
       "id": "bantu",
@@ -12,21 +12,21 @@
       "id": "nilotic",
       "name": "Nilotic",
       "color": "#C8961E",
-      "description": "Second largest family (~30%). Includes Plains Nilotes (Maasai), Highland Nilotes (Kalenjin), and River-Lake Nilotes (Luo).",
+      "description": "Second largest family (~30%). Includes Plains Nilotes (Maasai, Turkana, Samburu, Teso), Highland Nilotes (Kalenjin, Pokot), and River-Lake Nilotes (Luo).",
       "percentage": 30
     },
     {
       "id": "cushitic",
       "name": "Cushitic",
       "color": "#BE2126",
-      "description": "Found in northern and eastern Kenya (~3%). Includes Somali, Rendille, Oromo, and Borana.",
+      "description": "Found in northern and eastern Kenya (~3%). Includes Somali, Borana/Oromo, Rendille, and Daasanach (Dhaasanac).",
       "percentage": 3
     },
     {
       "id": "other",
       "name": "Other",
       "color": "#1A8BD1",
-      "description": "Includes Swahili (Bantu-based lingua franca), English (official), and minor language isolates.",
+      "description": "Includes Swahili (Bantu-based national & official lingua franca), English (official), and minor language isolates.",
       "percentage": 2
     }
   ],
@@ -42,7 +42,7 @@
         "Kirinyaga",
         "Nyandarua"
       ],
-      "notes": "Largest ethnic group. Central highlands.",
+      "notes": "Largest mother-tongue community in the central highlands; documented in Höhnel (1894), Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Dundas (1915), Johnston (1919), and BFBS (1921).",
       "id": "kikuyu",
       "isoCode": "kik",
       "glottocode": "kiku1240"
@@ -57,7 +57,7 @@
         "Homa Bay",
         "Migori"
       ],
-      "notes": "River-Lake Nilotes. Lake Victoria basin.",
+      "notes": "River-Lake Nilotes of the Lake Victoria basin; documented in Hobley (1902, 1903), Johnston (1902), Northcote (1907), Roscoe/Willis (1915), Mill-Hill Fathers (1920), and BFBS (1921).",
       "id": "luo",
       "isoCode": "luo",
       "glottocode": "luoo1235"
@@ -76,7 +76,7 @@
         "Trans Nzoia",
         "West Pokot"
       ],
-      "notes": "Highland Nilotes. Several sub-groups: Nandi, Kipsigis, Tugen, Pokot, Marakwet, Sabaot.",
+      "notes": "Highland Nilotes (Nandi, Kipsigis, Tugen, Marakwet, Keiyo, Sabaot); documented in Hollis (1909), Dundas (1910), BFBS (1921), Diercks & Rao (2019), Landman (2019), and Zwarts, Chelimo & Jerono (2024).",
       "id": "kalenjin",
       "isoCode": "kln",
       "glottocode": "kale1246"
@@ -91,7 +91,7 @@
         "Vihiga",
         "Busia"
       ],
-      "notes": "17+ dialects including Bukusu, Maragoli, Idakho, Isukha, Tiriki.",
+      "notes": "17+ Western Bantu dialects including Wanga, Bukusu/Masaba, and Maragoli (Logoori); documented in Hobley (1902, 1903), Purvis (1909), Roscoe (1915), Johnston (1919), Stam (1929), and Payne, Pacchiarotti & Bosire eds. (2016).",
       "id": "luhya",
       "isoCode": "luy",
       "glottocode": "luyi1234"
@@ -105,7 +105,7 @@
         "Makueni",
         "Kitui"
       ],
-      "notes": "Eastern province. Known for wood carving and music.",
+      "notes": "Central Bantu language of Eastern Kenya; documented in Krapf (1850), Last (1885), Hinde (1904), Hobley (1910), Dundas (1915), Johnston (1919), Lindblom (1920), BFBS (1921), and Jones & Freyer (2019).",
       "id": "kamba",
       "isoCode": "kam",
       "glottocode": "kamb1297"
@@ -120,7 +120,7 @@
         "Mandera",
         "Isiolo (part)"
       ],
-      "notes": "Dominant in North Eastern. Cross-border with Somalia.",
+      "notes": "Lowland East Cushitic language of North Eastern Kenya; documented in Cust (1883), de Larajasse (1897), Kirk (1903, 1905), BFBS (1921), Nilsson (2016), Kimper et al. (2019), and Nurse (2019).",
       "id": "somali",
       "isoCode": "som",
       "glottocode": "soma1255"
@@ -133,7 +133,7 @@
         "Kisii",
         "Nyamira"
       ],
-      "notes": "Kisii Highlands. Known for soapstone carving.",
+      "notes": "Eastern Lake Victoria Bantu language of the Kisii Highlands; documented in Hobley (1902) and Johnston (1902, 1919).",
       "id": "kisii",
       "isoCode": "guz",
       "glottocode": "gusi1247"
@@ -146,7 +146,7 @@
         "Meru",
         "Tharaka-Nithi"
       ],
-      "notes": "Mt. Kenya eastern slopes. Several sub-dialects.",
+      "notes": "Mount Kenya & Tana valley Bantu cluster (Imenti, Tigania, Igembe, Mwimbi, Chuka, and Kĩtharaka); documented in Hobley (1910), Champion (1912), Dundas (1915), Johnston (1919), and Kithaka wa Mberia (2004).",
       "id": "meru",
       "isoCode": "mer",
       "glottocode": "meru1245"
@@ -160,7 +160,7 @@
         "Kajiado",
         "Samburu (Samburu dialect)"
       ],
-      "notes": "Plains Nilotes. Pastoralist culture. Samburu is a closely related dialect.",
+      "notes": "Plains Nilotes (Eastern Nilotic); documented in Farler & Wakefield (1882), Cust (1883), Höhnel (1894), Hinde (1901), Hollis (1905), Hobley (1910), and BFBS (1921).",
       "id": "maasai",
       "isoCode": "mas",
       "glottocode": "masa1300"
@@ -172,7 +172,7 @@
       "counties": [
         "Turkana"
       ],
-      "notes": "Plains Nilotes (Eastern Nilotic). Semi-nomadic pastoralists. Spoken across Turkana County in northwestern Kenya. Rich pastoralist vocabulary and oral traditions.",
+      "notes": "Plains Nilotes (Ateker branch) across Turkana County; documented in Höhnel (1894), Johnston (1902), Purvis (1909), Dundas (1910), Beech (1911), and Barton (1921).",
       "id": "turkana",
       "isoCode": "tuv",
       "glottocode": "turk1308"
@@ -184,7 +184,7 @@
       "counties": [
         "Embu"
       ],
-      "notes": "Mt. Kenya southeastern slopes. Related to Kikuyu and Meru.",
+      "notes": "Mount Kenya southeastern slopes (Embu & Mbeere); documented in Dundas (1915), Johnston (1919), and Hobley (1922).",
       "id": "embu",
       "isoCode": "ebu",
       "glottocode": "embu1242"
@@ -196,7 +196,7 @@
       "counties": [
         "Taita-Taveta"
       ],
-      "notes": "Taita Hills. Three main dialects: Dawida, Sagala, Kasigau.",
+      "notes": "Taita Hills Bantu (Dawida, Sagala, Kasigau); documented in Shaw (1885), Taylor (1891), Wray (1894), Werner (1915), Johnston (1919), and BFBS (1921).",
       "id": "taita",
       "isoCode": "dav",
       "glottocode": "tait1250"
@@ -212,7 +212,7 @@
         "Kwale",
         "Tana River"
       ],
-      "notes": "National & official language. Native along the coast but spoken nationwide as lingua franca.",
+      "notes": "National & official language of Kenya (including Kiamu, Kimvita, Kitikuu/Bajuni, Kipate, Kingozi, and Kiunguja); documented in Krapf (1850, 1882), Steere (1870, 1894, 1918), Taylor (1891), Bateman (1901), Madan (1903, 1917), Burt (1910), Stigand (1915), Beech (1918), Werner (1918, 1919, 1933), Mwamzandi (2022), and Goldsmith & Mpiranya (2022).",
       "id": "swahili",
       "isoCode": "swh",
       "glottocode": "swah1253"
@@ -226,7 +226,7 @@
         "Kwale",
         "Mombasa"
       ],
-      "notes": "Nine sub-groups: Giriama, Digo, Duruma, Chonyi, Jibana, Kambe, Ribe, Rabai, Kauma.",
+      "notes": "Nine coastal Sabaki sub-groups (Giriama, Digo, Duruma, Chonyi, Jibana, Kambe, Ribe, Rabai, Kauma); documented in Krapf (1850), Krapf & Rebmann (1887), Taylor (1891), Werner (1915), Johnston (1919), BFBS (1921), and Nicolle (2016).",
       "id": "mijikenda",
       "isoCode": "nyf",
       "glottocode": "miji1238"
@@ -237,9 +237,10 @@
       "speakers": 550000,
       "counties": [
         "Marsabit",
-        "Isiolo"
+        "Isiolo",
+        "Tana River"
       ],
-      "notes": "Cushitic pastoralists. Related to Ethiopian Oromo.",
+      "notes": "Lowland East Cushitic language (Borana, Gabbra, Sakuye, and Tana River Orma/Bararetta); documented in Krapf (1840, 1842, 1850), Tutschek (1844–1845), Cust (1883), Foot (1913), Werner (1915), BFBS (1921), and Griefenow-Mewis (1996).",
       "id": "borana",
       "isoCode": "gax",
       "glottocode": "bora1271"
@@ -251,7 +252,7 @@
       "counties": [
         "Marsabit"
       ],
-      "notes": "Camel-herding pastoralists. Unique language between Somali and Afar.",
+      "notes": "Omo-Tana East Cushitic camel-herding pastoralists of the Kaisut and Chalbi plains; documented in Farler & Wakefield (1882), Höhnel (1894), Hobley (1910), Fleming (1964), and Heine (1976).",
       "id": "rendille",
       "isoCode": "rel",
       "glottocode": "rend1243"
@@ -263,7 +264,7 @@
       "counties": [
         "Busia"
       ],
-      "notes": "Cross-border with Uganda. Part of the broader Teso ethnic group.",
+      "notes": "Eastern Nilotic (Ateker) language spoken in Busia County and eastern Uganda; documented in Hobley (1902), Johnston (1902), Purvis (1909), Kitching (1915), Roscoe (1915), and BFBS (1921).",
       "id": "teso",
       "isoCode": "teo",
       "glottocode": "teso1247"
@@ -275,7 +276,7 @@
       "counties": [
         "Tana River"
       ],
-      "notes": "Tana River farmers. One of the smaller Bantu groups.",
+      "notes": "Tana River Sabaki Bantu language across 13 Upper and Lower Pokomo vyeti; documented in Krapf (1850), Würtz (1895), Werner (1913, 1915, 1933), Johnston (1919), BFBS (1921), and Mikael Samson & Darroch (1944).",
       "id": "pokomo",
       "isoCode": "pkb",
       "glottocode": "poko1261"
@@ -285,9 +286,10 @@
       "family": "nilotic",
       "speakers": 310000,
       "counties": [
-        "Samburu"
+        "Samburu",
+        "Marsabit"
       ],
-      "notes": "Closely related to Maasai. Semi-nomadic pastoralists.",
+      "notes": "Northern Maa (Plains Nilotic) pastoralists; documented in Farler & Wakefield (1882), Höhnel (1894), Johnston (1902), and Hobley (1910).",
       "id": "samburu",
       "isoCode": "saq",
       "glottocode": "samb1315"
@@ -299,7 +301,7 @@
       "counties": [
         "Baringo"
       ],
-      "notes": "Lake Baringo fishermen/farmers. Related to Maasai/Samburu. Endangered language.",
+      "notes": "Lake Baringo Maa-speaking irrigation farmers and fishermen (En-jemusi); documented in Farler & Wakefield (1882), Höhnel (1894), Johnston (1902), Dundas (1910), and Beech (1911).",
       "id": "ilchamus",
       "isoCode": "saq-ilc",
       "glottocode": "chAM1234"
@@ -312,7 +314,7 @@
         "West Pokot",
         "Baringo"
       ],
-      "notes": "Highland Nilotes (Northern Kalenjin branch). Pastoralists and terrace farmers in West Pokot and Baringo counties; documented in Mervyn Beech's 1911 monograph.",
+      "notes": "Highland Nilotes (Northern Kalenjin branch, historically Suk); documented in Farler & Wakefield (1882), Johnston (1902), Dundas (1910, 1915), Beech (1911), and Barton (1921).",
       "id": "pokot",
       "isoCode": "pko",
       "glottocode": "poko1263"
@@ -324,10 +326,22 @@
       "counties": [
         "Taita-Taveta"
       ],
-      "notes": "Northeast Coast Bantu (Pare-Taveta group) spoken around Taveta and Lake Jipe; rich oral proverb tradition documented by A. C. Hollis (1910).",
+      "notes": "Northeast Coast Bantu (Pare-Taveta group) around Taveta and Lake Jipe; documented in Höhnel (1894), Steggall (1892–1906), Hollis (1910–1911), Johnston (1919), and BFBS (1921).",
       "id": "taveta",
       "isoCode": "tvs",
       "glottocode": "tave1238"
+    },
+    {
+      "name": "Daasanach (Dhaasanac)",
+      "family": "cushitic",
+      "speakers": 65000,
+      "counties": [
+        "Marsabit"
+      ],
+      "notes": "Lowland East Cushitic (Western Omo-Tana) agropastoral and fishing community around Ileret on the northeastern shore of Lake Turkana; documented in Höhnel (1894 as Reshiat), Sasse (1974, 1976), Tosco (2001), Nishiguchi (2004), and Blažek (2011).",
+      "id": "daasanach",
+      "isoCode": "dsh",
+      "glottocode": "daas1238"
     }
   ],
   "officialLanguages": [
@@ -346,8 +360,8 @@
     "Kenya has 42+ recognized ethnic groups speaking 60+ distinct languages and dialects.",
     "Speaker numbers are estimates based on KNBS 2019 Census ethnic population data (language ≈ ethnicity for most groups).",
     "County-level language dominance is approximate. Urban areas (especially Nairobi, Mombasa) are highly multilingual.",
-    "Several Kenyan languages are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Suba, and Omotik.",
-    "Data compiled from KNBS 2019 Census and UNESCO Atlas of the World's Languages in Danger."
+    "Several Kenyan languages are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Dahalo (with dental clicks, documented in Werner 1915 and Sands & Güldemann 2019), Suba, Ilchamus, and Omotik.",
+    "Data compiled from KNBS 2019 Census, UNESCO Atlas of the World's Languages in Danger, and 65 historical & contemporary linguistic works (1840–2024)."
   ],
   "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
 }

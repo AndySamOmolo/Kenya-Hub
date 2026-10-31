@@ -3,7 +3,9 @@
 // Based on Public Domain & Open-Web Linguistic Sources:
 // 1. C. W. Hobley (1902) "Eastern Uganda: An Ethnological Survey" (Elgumi grammar, numerals & vocabulary)
 // 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Elgumi / Wamia comparative vocabulary & grammar)
-// 3. Wikipedia Teso_language & Eastern_Nilotic_languages (Vossen 1982)
+// 3. Rev. J. B. Purvis (1909) "Through Uganda to Mount Elgon" (Ch. XII on the Bateso / Wakedi)
+// 4. Archdeacon A. L. Kitching (1915) "A Handbook of the Ateso Language" & Kinship Table in Rev. John Roscoe (1915) "The Northern Bantu" (pp. 257–293)
+// 5. Wikipedia Teso_language & Eastern_Nilotic_languages (Vossen 1982)
 // ============================================================
 
 export interface TesoGrammarSection {
@@ -61,10 +63,27 @@ export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
     ]
   },
   {
+    id: "teso-roscoe-kitching-1915-kinship-clans",
+    title: "Ateso Kinship Terminology, Exogamous Clans (Atekerin) & Customary Institutions (Purvis 1909 & Roscoe/Kitching 1915)",
+    summary: "Rev. John Roscoe (The Northern Bantu, 1915, Part V, pp. 257–293, with Archdeacon A. L. Kitching's kinship table) and Rev. J. B. Purvis (1909, Ch. XII) document the complete Bateso kinship system, clan totems, and rain-making ceremonies.",
+    content: `From Rev. John Roscoe (*The Northern Bantu*, Cambridge University Press, 1915, Part V "The Bateso", pp. 257–293) and Archdeacon A. L. Kitching's Ateso Kinship Table (pp. 291–293):
+1. **Complete Ateso Kinship System (Kitching & Roscoe 1915, pp. 291–293)**:
+   - **Parents & Grandparents**: **Papa** (my father), **Papakon** (your father), **Papake** (his/her father); **Toto** (my mother), **Totokon** (your mother), **Totoke** (his/her mother); **Papaa** (grandfather, pl. *ataak*), **Tata** (grandmother, pl. *ataak*).
+   - **Siblings & Cousins**: **Onac** (full/clan brother or male parallel cousin, pl. *iinacan*), **Inac** (full/clan sister or female parallel cousin, pl. *iinacan*), **Okookai** (maternal half-brother), **Ikookai** (maternal half-sister); ** Ocen** (cross-cousin = mother's brother's son or father's sister's son, pl. *icen*), **Acen** (female cross-cousin, pl. *acen*).
+   - **Uncles, Aunts & In-Laws**: **Mamai** (maternal uncle = MB, pl. *imamain*), **Ejait / Ija** (paternal aunt = FZ, pl. *ijain*), **Totocici** (maternal aunt = MZ, lit. 'little mother'), ** Ekamuran** (father-in-law / son-in-law / brother-in-law, pl. *ikamurak*), **Akamuran** (mother-in-law / daughter-in-law / sister-in-law, pl. *akamurak*), **Ekainacan** (co-husband / wife's sister's husband), **Akainacan** (co-wife).
+2. **Bateso Clans, Agriculture & Rain-Making (Purvis 1909, pp. 227–246 & Roscoe 1915, pp. 259–285)**:
+   - Exogamous clans (*atekerin*) include *Abwor, Atekok, Igoria, Irarak, Ikomolo, Ikatekok, Inomu*; strict clan exogamy forbids marrying into either one's father's or mother's clan.
+   - Communal granaries and millet cultivation with long-handled hoes (*emelait*), age-set initiation ceremonies (*asapan*), and rain-making rituals led by the *ekasuban akiru* invoking *Akuj / Lokasuban*.`,
+    examples: [
+      { teso: "Papa / Papakon / Papake • Toto / Totokon / Totoke • Papaa (grandfather) • Tata (grandmother)", english: "My/your/his father • My/your/his mother • Grandfather • Grandmother", explanation: "Ateso generational kinship inflection (Kitching in Roscoe 1915, pp. 291–293)" },
+      { teso: "Onac / Inac • Mamai (MB) • Ejait / Ija (FZ) • Ocen / Acen • Ekamuran / Akamuran", english: "Brother / Sister • Maternal uncle • Paternal aunt • Cross-cousin (m./f.) • In-law (m./f.)", explanation: "Core Ateso kinship categories (Kitching in Roscoe 1915, pp. 291–293)" }
+    ]
+  },
+  {
     "id": "teso-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Teso (Ateso))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Teso (Ateso).",
-    "content": "1. **Archival & Open-Dataset Integration for Teso (Ateso)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Teso (Ateso)**:\n   - Combines primary historical documentation (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915, BFBS 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "teso": "ateker (pl. atekerin) • Inyā",
@@ -74,7 +93,7 @@ export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
       {
         "teso": "Akoñ • Etom",
         "english": "Eye • Elephant",
-        "explanation": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912"
+        "explanation": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
       }
     ]
   }

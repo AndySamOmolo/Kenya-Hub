@@ -11,8 +11,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.2",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Kisii (Ekegusii) public-domain vocabulary compiled from C. W. Hobley (1902) \"Eastern Uganda: An Ethnological Survey\" and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\" & 1919 \"A Comparative Study of the Bantu and Semi-Bantu Languages\").",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria).",
   "categories": [
     {
       "id": "greetings",
@@ -5422,6 +5422,13 @@
           "pronunciation": "-iba",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
           "audioFile": null
+        },
+        {
+          "english": "I saw (Preterite of oku-rora 'to see' with r > z mutation in Ekegusii)",
+          "translation": "Ndozire (2s O-rozire; neg. Ti-n-dozire)",
+          "pronunciation": "n-doh-zee-reh",
+          "context": "Sir Harry H. Johnston (1919–1922, #7 Ki-guzii verb paradigm)",
+          "audioFile": null
         }
       ]
     },
@@ -8065,7 +8072,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919)",
+  "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
   "isoCode": "guz",
   "glottocode": "gusi1247"
 }

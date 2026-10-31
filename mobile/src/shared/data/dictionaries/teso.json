@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Teso (Ateso) public-domain vocabulary compiled from C. W. Hobley (1902) \"Eastern Uganda: An Ethnological Survey\" and Sir Harry H. Johnston (1902) \"The Uganda Protectorate, Vol. II\".",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Teso (Ateso / Elgumi) vocabulary compiled from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\"), Archdeacon A. L. Kitching (1915 \"A Handbook of the Ateso Language\"), Rev. John Roscoe (1915 \"The Northern Bantu\", Part V \"The Bateso\" & Kinship Table pp. 257–293), and BFBS (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -548,6 +548,41 @@
           "translation": "ejakait (pl. ijakaka)",
           "pronunciation": "e-ja-kait",
           "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+          "audioFile": null
+        },
+        {
+          "english": "My father / Your father / His or her father (Ateso kinship table)",
+          "translation": "Papa / Papakon / Papake",
+          "pronunciation": "pah-pah / pah-pah-kohn / pah-pah-keh",
+          "context": "Archdeacon A. L. Kitching in Rev. John Roscoe (1915, p. 291) — The Northern Bantu (Bateso Kinship Table)",
+          "audioFile": null
+        },
+        {
+          "english": "My mother / Your mother / His or her mother (Ateso kinship table)",
+          "translation": "Toto / Totokon / Totoke",
+          "pronunciation": "toh-toh / toh-toh-kohn / toh-toh-keh",
+          "context": "Archdeacon A. L. Kitching in Rev. John Roscoe (1915, p. 291) — The Northern Bantu (Bateso Kinship Table)",
+          "audioFile": null
+        },
+        {
+          "english": "Full brother vs. full sister (Ateso kinship table)",
+          "translation": "Onac vs. Inac (maternal half-sibling: Okookai / Ikookai)",
+          "pronunciation": "oh-nach / ee-nach",
+          "context": "Archdeacon A. L. Kitching in Rev. John Roscoe (1915, p. 292) — The Northern Bantu",
+          "audioFile": null
+        },
+        {
+          "english": "Cross-cousin (male Ocen vs. female Acen) (Ateso kinship table)",
+          "translation": "Ocen (pl. icen) vs. Acen (pl. acen)",
+          "pronunciation": "oh-chen / ah-chen",
+          "context": "Archdeacon A. L. Kitching in Rev. John Roscoe (1915, p. 292) — The Northern Bantu",
+          "audioFile": null
+        },
+        {
+          "english": "Father-in-law / Brother-in-law (Ekamuran) vs. Mother-in-law / Sister-in-law (Akamuran)",
+          "translation": "Ekamuran (pl. ikamurak) vs. Akamuran (pl. akamurak)",
+          "pronunciation": "eh-kah-moo-rahn / ah-kah-moo-rahn",
+          "context": "Archdeacon A. L. Kitching in Rev. John Roscoe (1915, p. 293) — The Northern Bantu",
           "audioFile": null
         }
       ]
@@ -4067,7 +4102,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902)",
+  "source": "Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921)",
   "isoCode": "teo",
   "glottocode": "teso1247"
 }

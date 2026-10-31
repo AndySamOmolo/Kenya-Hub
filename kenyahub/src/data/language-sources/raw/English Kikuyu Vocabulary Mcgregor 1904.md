@@ -1,4 +1,8 @@
-&lt;!-- Page 1 (Google Book Search Notice) --&gt;
+# ENGLISH-KIKUYU VOCABULARY (McGregor, 1904)
+
+---
+
+*Page 1 (Google Book Search Notice)*
 
 This is a digital copy of a book that was preserved for generations on library shelves before it was carefully scanned by Google as part of a project to make the world's books discoverable online.
 
@@ -12,10 +16,10 @@ Google is proud to partner with libraries to digitize public domain materials an
 
 We also ask that you:
 
-+ *Make non-commercial use of the files* We designed Google Book Search for use by individuals, and we request that you use these files for personal, non-commercial purposes.
-+ *Refrain from automated querying* Do not send automated queries of any sort to Google's system: If you are conducting research on machine translation, optical character recognition or other areas where access to a large amount of text is helpful, please contact us. We encourage the use of public domain materials for these purposes and may be able to help.
-+ *Maintain attribution* The Google "watermark" you see on each file is essential for informing people about this project and helping them find additional materials through Google Book Search. Please do not remove it.
-+ *Keep it legal* Whatever your use, remember that you are responsible for ensuring that what you are doing is legal. Do not assume that just because we believe a book is in the public domain for users in the United States, that the work is also in the public domain for users in other countries. Whether a book is still in copyright varies from country to country, and we can't offer guidance on whether any specific use of any specific book is allowed. Please do not assume that a book's appearance in Google Book Search means it can be used in any manner anywhere in the world. Copyright infringement liability can be quite severe.
+- *Make non-commercial use of the files* We designed Google Book Search for use by individuals, and we request that you use these files for personal, non-commercial purposes.
+- *Refrain from automated querying* Do not send automated queries of any sort to Google's system: If you are conducting research on machine translation, optical character recognition or other areas where access to a large amount of text is helpful, please contact us. We encourage the use of public domain materials for these purposes and may be able to help.
+- *Maintain attribution* The Google "watermark" you see on each file is essential for informing people about this project and helping them find additional materials through Google Book Search. Please do not remove it.
+- *Keep it legal* Whatever your use, remember that you are responsible for ensuring that what you are doing is legal. Do not assume that just because we believe a book is in the public domain for users in the United States, that the work is also in the public domain for users in other countries. Whether a book is still in copyright varies from country to country, and we can't offer guidance on whether any specific use of any specific book is allowed. Please do not assume that a book's appearance in Google Book Search means it can be used in any manner anywhere in the world. Copyright infringement liability can be quite severe.
 
 **About Google Book Search**
 
@@ -23,65 +27,58 @@ Google's mission is to organize the world's information and to make it universal
 
 ---
 
-&lt;!-- Page 2 (Front Cover) --&gt;
+*Page 2 (Front Cover)*
 
-# ENGLISH-KIKUYU
-## VOCABULARY
+# ENGLISH-KIKUYU VOCABULARY
 
-**S P C K**
-
----
-
-&lt;!-- Page 3 (Library Bookplate) --&gt;
-
-In tribute to
-
-**Dr. & Mrs. Robert A. Rennie**
-
-from a gift by
-
-**Nationwide Foundation**
-
-### Stanford University Memorial Fund
+**S·P·C·K**
 
 ---
 
-&lt;!-- Page 4 (Flyleaf Marginalia) --&gt;
-*(Handwritten library mark)*  
-`A45-`  
-`47`
+*Page 3 (Bookplate)*
+
+In tribute to  
+**Dr. & Mrs. Robert A. Rennie**  
+from a gift by  
+**Nationwide Foundation**  
+Stanford University Memorial Fund
 
 ---
 
-&lt;!-- Page 5 --&gt;
-*(Blank page)*
+*Page 4 (Flyleaf)*
+
+*(Handwritten notation: A45- / U7)*
 
 ---
 
-&lt;!-- Page 6 (Title Page — p. i) --&gt;
-# ENGLISH-KIKUYU
-## VOCABULARY
-
-##### COMPILED FOR THE USE OF THE
-#### C.M.S. MISSIONS IN EAST AFRICA
-###### BY
-### A. W. McGREGOR
-###### OF THE CHURCH MISSIONARY SOCIETY
-
-#### SOCIETY FOR PROMOTING CHRISTIAN KNOWLEDGE,
-##### LONDON : NORTHUMBERLAND AVENUE, W.C.
-##### 1904
+*Page 5 (Blank)*
 
 ---
 
-&lt;!-- Page 7 (Title Verso — p. ii) --&gt;
-*(Handwritten library call number)*  
-`PL 8379.4`  
-`M3`
+*Page 6 (Title Page)*
+
+# ENGLISH-KIKUYU VOCABULARY
+
+COMPILED FOR THE USE OF THE  
+**C.M.S. MISSIONS IN EAST AFRICA**  
+BY  
+**A. W. McGREGOR**  
+OF THE CHURCH MISSIONARY SOCIETY
+
+**SOCIETY FOR PROMOTING CHRISTIAN KNOWLEDGE,**  
+LONDON: NORTHUMBERLAND AVENUE, W.C.  
+**1904**
 
 ---
 
-&lt;!-- Page 8 (p. iii) --&gt;
+*Page 7 (Title Verso)*
+
+*(Handwritten library call number: PL8379.4 / M3)*
+
+---
+
+*Page 8 (Page iii)*
+
 ## PREFACE
 
 THIS Vocabulary of the Kikuyu language is spoken by one of the most numerous tribes in the British East African Protectorate. Although many Europeans have from time to time either passed through the country or resided in it, nothing in the shape of a vocabulary of the language has so far appeared in print. The compiler therefore sends it forth with a certain amount of misgiving. Many mistakes will, no doubt, be found as this language is more fully known. Those, however, who know what it is to reduce a new language, and what it is to have to search for every word, and to get the same often from very unwilling and unintelligent natives, will not be too critical in this case.
@@ -92,8 +89,7 @@ The country of Kikuyu is one of the most fertile and healthy districts of Britis
 
 ---
 
-&lt;!-- Page 9 (p. iv) --&gt;
-**iv** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **PREFACE.**
+*Page 9 (Page iv)*
 
 through the south-western portion of the country, and forms almost the boundary of the same. The district over which this language is spoken, with few modifications, stretches away in a north-easterly direction from the railway until it embraces in its folds that great landmark, Mount Kenia (native name, Kirinyaga). The altitude of the country varies from 4000 feet to the 18,000 feet of Kenia. The inhabited parts are from 4000 to 7000 feet. The climate is one of the pleasantest and healthiest in Eastern Equatorial Africa, and is well suited for the residence of Europeans. It varies from moderate tropical heat to the cold of perpetual snow.
 
@@ -101,37 +97,36 @@ The people occupying this highly-favoured country are estimated to be anything f
 
 This Vocabulary is sent out tentatively in the earnest hope that it will not only be a help to these in their dealings with the inhabitants of the country, but also, and more especially, that it will be of value to those engaged in the great work of evangelizing Kikuyu.
 
-**A. W. MCGREGOR.**
-
+**A. W. MCGREGOR.**  
 *London, May 1903.*
 
 ---
 
-&lt;!-- Page 10 (p. 5) --&gt;
-# ENGLISH-KIKUYU VOCABULARY.
+*Page 10 (Page 5)*
+
+## ENGLISH-KIKUYU VOCABULARY.
 
 ### NOTE.
 
-THE system of orthography adopted in this Vocabulary is broadly that used by the Royal Geographical Society of Great Britain ; the main features of the same being, that the consonants are pronounced as in English, and the vowels as in Italian. Every letter is pronounced. In the district of Fort Smith (native name, Kabeti), where this collection was made, *S* and *Z* does not appear to be used, *Th* always taking their places. *L* and *R* are often indistinguishable, or are used interchangeably. The reader's attention is also called to the words in which *ng* occurs, as koteng'era, with a point after *ng*. This must be pronounced koteng-era, not koten-gera. Some words have both the nasal *ng* and the *g* hard sound, as kuing'gata.
+THE system of orthography adopted in this Vocabulary is broadly that used by the Royal Geographical Society of Great Britain; the main features of the same being, that the consonants are pronounced as in English, and the vowels as in Italian. Every letter is pronounced. In the district of Fort Smith (native name, Kabeti), where this collection was made, *S* and *Z* does not appear to be used, *Th* always taking their places. *L* and *R* are often indistinguishable, or are used interchangeably. The reader's attention is also called to the words in which *ng* occurs, as koteng'era, with a point after *ng*. This must be pronounced koteng-era, not koten-gera. Some words have both the nasal *ng* and the *g* hard sound, as kuing'gata.
 
 #### LIST OF ABBREVIATIONS, ETC.
 
 | Abbreviation | Meaning | Abbreviation | Meaning |
 | :--- | :--- | :--- | :--- |
-| *n.* | = noun. | *adv.* | = adverb. |
-| *pron.* | = pronoun. | *int.* | = interjection. |
-| *adj.* | = adjective. | *pass.* | = passive. |
-| *conj.* | = conjunction. | *neu.* | = neuter. |
-| *prep.* | = preposition. | &nbsp; | &nbsp; |
+| *n.* = | noun. | *adv.* = | adverb. |
+| *pron.* = | pronoun. | *int.* = | interjection. |
+| *adj.* = | adjective. | *pass.* = | passive. |
+| *conj.* = | conjunction. | *neu.* = | neuter. |
+| *prep.* = | preposition. | | |
 
-**OBSERVE :** *A.* The Infinitive of the verb is in all cases given.
+**OBSERVE:** *A.* The Infinitive of the verb is in all cases given.
 
 ---
 
-&lt;!-- Page 11 (p. 6) --&gt;
-**6** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 11 (Page 6)*
 
-*B.* Where the plural of the noun is the same as the singular, *s. & p.* appear after the singular. Where the plural takes a different form, the same appears in brackets after the singular, as "Servant, Mwetereri" (*Etereri*) ; or the particular prefix is given in brackets, as Gechunji (*I-*). In this case the plural prefix (*I-*) takes the place of the singular prefix *Ge-*, viz. *Gechunji* (singular) ; *Ichunji* (plural).
+*B.* Where the plural of the noun is the same as the singular, *s. & p.* appear after the singular. Where the plural takes a different form, the same appears in brackets after the singular, as "Servant, Mwetereri" (*Etereri*); or the particular prefix is given in brackets, as Gechunji (*I-*). In this case the plural prefix (*I-*) takes the place of the singular prefix *Ge-*, viz. *Gechunji* (singular); *Ichunji* (plural).
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -157,15 +152,14 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 12 (p. 7) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **7**
+*Page 12 (Page 7)*
 
 | English | Kikuyu |
 | :--- | :--- |
-| [Abo]riginal, *adj.* | -a mbere. |
-| [Abo]und, to | Koyuria. Kotwika -ngi. |
-| [Abo]und with, to | Kotwika na nyingi. Koyuria muno. |
-| [Abo]ut, *adv.* | Kothiururuka. Hakuhi. |
+| [Abor]iginal, *adj.* | -a mbere. |
+| [Abou]nd, to | Koyuria. Kotwika -ngi. |
+| [Abou]nd with, to | Kotwika na nyingi. Koyuria muno. |
+| [Abou]t, *adv.* | Kothiururuka. Hakuhi. |
 | „ (of time) | Hende ya. |
 | „ *prep.* | Kothiururuka. Hakuhi. |
 | „ (respecting) | Ohoro wa. Iguru rea. |
@@ -173,32 +167,31 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | [Abo]ve, *adv.* | Iguru. |
 | „ *prep.* | Iguru rea. |
 | „ (excelling) | Kori. |
-| [Abr]oad, *adv.* (outside) | Nja. |
+| [Abro]ad, *adv.* (outside) | Nja. |
 | „ to go | Kochera porori ungi. |
 | „ to scatter | Kohurunja. |
 | [Absc]ess, *n.* | Keronda (I-). |
-| [Abs]cond, to | Koteng'era. |
+| [Absc]ond, to | Koteng'era. |
 | [Abse]nt, to be | Kotwika (*negatively*). |
 | [Abso]lutely, *adv.* | Yothi. Chiothi. |
 | [Abso]lution, *n.* | Orekia wa mehiya. Korutuo kwa mehiya. |
 | [Abso]lve, to | Korekia mehiya. Koruta mehiya. |
 | [Abso]rb, to | Konyua. |
-| [Abst]ain, to (food). | Korega irio. |
+| [Abst]ain, to (food) | Korega irio. |
 | „ (leave) | Kotiga. |
 | [Abst]inence, from food | Oregi wa irio. |
 | [Absu]rd, *adj.* | -a okegu. |
 | „ to be | Kokega. |
 | [Absu]rdity, *n.* | Okegu. |
-| [Abu]ndance, *n.* | Wingi. Bothi. |
-| [Abu]ndantly, *adv.* | Nyingi. |
-| [Abu]se, to (by words) | Koruma. Korumana. Koteeta. |
+| [Abun]dance, *n.* | Wingi. Bothi. |
+| [Abun]dantly, *adv.* | Nyingi. |
+| [Abus]e, to (by words) | Koruma. Korumana. Koteeta. |
 | „ (by act) | Korutira muru. |
 | [Abu]se, *n.* | Oteti. Orumani. |
 
 ---
 
-&lt;!-- Page 13 (p. 8) --&gt;
-**8** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 13 (Page 8)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -235,8 +228,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 14 (p. 9) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **9**
+*Page 14 (Page 9)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -275,20 +267,19 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 15 (p. 10) --&gt;
-**10** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 15 (Page 10)*
 
 | English | Kikuyu |
 | :--- | :--- |
-| Adapt, to | Korutira. Kothonde[ka]. Kogarora. Kuiga[na]. |
+| Adapt, to | Korutira. Kothonde[kira.] Kogarora. Kuiga[na.] |
 | Add to | Kotara. (increase) [Kuo]ngerera. |
 | „ to, to | Kuikira iguru. |
 | Addition | Keongereri (I-). |
 | „ to, *n.* | Kori na. Iguru ria. |
 | Address, to | Kuaria. Kuera. K[one]gena na. Kuita. |
-| Adequate, *adj.* | -a kokinya. -a kuiga[na]. |
+| Adequate, *adj.* | -a kokinya. -a kuiga[na.] |
 | Adhere to, to | Kokwata. Kuitikia. |
-| Adhesion, *n.* | Kokwatana. Okwata[ni]. |
+| Adhesion, *n.* | Kokwatana. Okwata[ni.] |
 | Adhesive, *adj.* | -a kokwatana. |
 | Adjacent, *adj.* | -a hakuhi. |
 | Adjoin, to | Kohakana. Kotwika [ha]kuhi. |
@@ -296,10 +287,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Adjourn, to | Kuinuka. Kothie. |
 | Adjudge, to | Kochira. |
 | Adjudication, *n.* | Chira (Ma-). Ochiri. |
-| Adjust, to | Kothondekira. Kuig[ana]. |
-| „ a quarrel, to | Kokirania. Kotaitho[rana]. |
+| Adjust, to | Kothondekira. Kuig[ana.] |
+| „ a quarrel, to | Kokirania. Kotaitho[rana.] |
 | Administer, to | Kohee. Koruta. |
-| „ affairs, to | Kothondekira. Kuik[aria]. |
+| „ affairs, to | Kothondekira. Kuik[aria.] |
 | Administrator, *n.* | Muthamaki (A-). [Mui]karia (A-). Muth[onde]kiri (A-). |
 | Admirable, *adj.* | -ega. -a kuenduo. |
 | Admiration, *n.* | Kiendo. |
@@ -310,8 +301,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 16 (p. 11) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **11**
+*Page 16 (Page 11)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -344,8 +334,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 17 (p. 12) --&gt;
-**12** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 17 (Page 12)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -354,16 +343,16 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Afar, *adv.* | Koraiya. |
 | Affable, *adj.* | -ega. |
 | Affair, *n.* | Ndeto (*s. & p.*). [Undu] (Ma-). Uhoro (M[a-]). |
-| Affect, to | Kogarora. Kog[eria]. (pretend) Ku[iruta]. (like) Kuenda. |
+| Affect, to | Kogarora. Kog[eria.] (pretend) Ku[iruta.] (like) Kuenda. |
 | Affectation, *n.* (pretence) | Kuiruta. |
-| Affection, *n.* (love) | Kiendo. Mendo. W[endo]. |
+| Affection, *n.* (love) | Kiendo. Mendo. W[endi.] |
 | „ (mutual) | Wendano. |
 | Affectionate, *adj.* | -eni ngoro ya kuenda. |
 | Affinity, *n.* (likeness) | Muhianano (Mi-). [Mu]themba (Mi-). |
-| Affirm, to | Kuuga. Konegena n[a]. |
+| Affirm, to | Kuuga. Konegena n[a.] |
 | Affix, to | Kuikira. |
 | Afflict, to | Konogia. Korakaria. |
-| Affliction, *n.* | Otheni. Onogi. Ora[kari]. |
+| Affliction, *n.* | Otheni. Onogi. Ora[kari.] |
 | Affright, to | Kuitigiria. Kuikira [guo]ya. |
 | „ *n.* | Guoya. Keitigiri. |
 | Afoot, *adv.* | Kwa maguru. |
@@ -375,19 +364,18 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to search | Kocharia. |
 | Afternoon, *n.* | Miarahoko. |
 | Afterthought, *n.* | Uhoro wa keri. Uho[ro wa] thutha. |
-| Afterwards, *adv.* | Kahinda kokangi. Mb[ere]. |
+| Afterwards, *adv.* | Kahinda kokangi. Mu[thenya] |
 | Again, *adv.* | ringi. |
-| Against, *prep.* | Iguru ria, (facing) [rweri] rua, hakuhi na. |
+| Against, *prep.* | Iguru ria, (facing) [Rueri] rua, hakuhi na. |
 
 ---
 
-&lt;!-- Page 18 (p. 13) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **13**
+*Page 18 (Page 13)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Age, *n.* | Uikari. Mathirero. |
-| „ old *n.* | Othuri. |
+| „ old, *n.* | Othuri. |
 | „ to | Kogea muthuri. |
 | Aged, *adj.* | -thuri, -kuru. |
 | Agency, *n.* | (means, force) Hinya. Njira. Wera. |
@@ -407,7 +395,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Ahead, *adv.* | Mbere. |
 | Aid, *n.* | Ketaithi (I-). |
 | „ to | Kotaithia. |
-| Ailment, *n.* | Ndwari (*s. & p.*). Murimo. (Mi-). |
+| Ailment, *n.* | Ndwari (*s. & p.*). Murimo (Mi-). |
 | Aim at, to | Kogeria. (desire) Kuenda. |
 | Air, *n.* | Meruki. |
 | Alacrity, *n.* | Rua. |
@@ -418,45 +406,43 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 19 (p. 14) --&gt;
-**14** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 19 (Page 14)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Alien, *adj.* | -geni. -a koraiya. |
-| Alienate, to | (people) Kuikira m[bara]. |
+| Alienate, to | (people) Kuikira r[umena.] |
 | Alight, to | Kuuma. |
-| Alike, *adj.* | -a muthemba mw[e]. [-iga]naini. |
-| „ to be | (size) Kuiganain[a]. ([ap]pearance) Kuih[anana]. |
-| Alive, *adj.* | -gima. -muoyo. [-a ma]thirero. -a hin[ya]. |
+| Alike, *adj.* | -a muthemba mw[e. -ga]naini. |
+| „ to be | (size) Kuiganain[a. (ap]pearance) Kuih[anana.] |
+| Alive, *adj.* | -gima. -muoyo. [-a ma]thirero. -a hin[ya.] |
 | „ to be | Kogea na muoyo. [Kogea] na hinya *or* [mathire]ro. |
 | All, *adj.* | -othi. -gima. |
-| Allay, to | Korutaruta. Ko[kiria]. |
-| Allege, to | Konegena. Kuu[ga]. |
-| Alleviate, to | Kokiria. Kotait[hia]. |
-| Alley, *n.* | Njira munyinyi [wa] muchiyi (*s. & p.*). |
+| Allay, to | Korutaruta. Kok[iria.] |
+| Allege, to | Konegena. Kuug[a.] |
+| Alleviate, to | Kokiria. Kotaith[ia.] |
+| Alley, *n.* | Njira munyinyi wa [kati ka] muchiyi (*s. & p.*). |
 | Alliance, *n.* | Makwatano. |
 | Allot, to | Kogaiana. |
-| Allow, to | Kotiga. Kuitiki[a]. |
+| Allow, to | Kotiga. Kuitikia. |
 | Allude to, to | Kuugira. |
 | Allure, to | Koguchia kwa ogi. |
 | Almighty, *adj.* | -eni hinya yothi. |
 | Almost, *adv.* | Hakuhi. |
 | Alms, *n.* | Igongona (Ma-). |
 | Aloft, *adv.* | Iguru. |
-| Alone, *adj.* | Hatiri mundu. ([myself]) Nie nyiki, etc. |
-| „ to be | Kuikara wiki. Ko[twika wiki]. |
+| Alone, *adj.* | Hatiri mundu. ([by oneself]) Nie nyiki, etc. |
+| „ to be | Kuikara wiki. Ko[twika wiki.] |
 | Along. Let us go along | Tuthie kwitu. |
 | Alongside, *adv.* | Rueri. |
-| Aloof, *adv.* | Koraiya. Kwa w[iki]. |
-| Aloud, *adv.* | Kwa mugambo m[unene]. |
+| Aloof, *adv.* | Koraiya. Kwa w[iki.] |
+| Aloud, *adv.* | Kwa mugambo m[unene.] |
 | Also, *adv.* | Na. Ringi. |
 | Altar, *n.* | Kegongaini (I-). |
 
 ---
 
-&lt;!-- Page 20 (p. 15) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **15**
+*Page 20 (Page 15)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -494,8 +480,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 21 (p. 16) --&gt;
-**16** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 21 (Page 16)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -504,8 +489,8 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to | Korakaria. |
 | Angry, to be | Korakara. |
 | Animal, *n.* | Nyamo (*s. & p.*). |
-| Animate, *adj.* | -eni muoyo. -eni mat[hi]rero. |
-| „ to | Kuikira muoyo *or* hiny[a]. |
+| Animate, *adj.* | -eni muoyo. -eni math[i]rero. |
+| „ to | Kuikira muoyo *or* hinya. |
 | Animosity, *n.* | Othorani. Mbara. |
 | Ankle, *n.* | Irongo ria koguru (Ma-). |
 | „ ornament, *n.* | Dareto (*s. & p.*). |
@@ -529,20 +514,19 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Apart, *adj.* | Koraiya, mwe mwe. |
 | Ape, *n.* | Nogo (*s. & p.*). |
 | Apex, *n.* | Muthia (Mi-). |
-| Apostle, *n.* | Mutwaruo (A-). Mutum[wo] (A-). |
+| Apostle, *n.* | Mutwaruo (A-). Mutum[uo] (A-). |
 | Apparition, *n.* | Ngoma. Keruru (Chi-). |
 
 ---
 
-&lt;!-- Page 22 (p. 17) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **17**
+*Page 22 (Page 17)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Appear, to | Kuoneka. |
 | Appease, to | Kokiria. |
 | Appetite, *n.* | Ng'aragu. |
-| Applaud, to *n.* | Kogocha. Kokumia. Kogaithia. |
+| Applaud, to | Kogocha. Kokumia. Kogaithia. |
 | Apply for, to | Kohoya. Kuenda. |
 | „ to | Kuikira. |
 | Appreciate, to (understand) | Komenya wega. (like) Kuenda. |
@@ -567,16 +551,13 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Aunt, *n.* | Tata. |
 | Authority, *n.* | Hinya. |
 | Avail, to | Kuigana. |
-| Avoid, to | Kohitha. Kothema. (Go on side) Kaherera |
+| Avoid, to | Kohitha. Kothema. (Go on side) Kaherera. |
 | Await, to | Kueterera. |
 | Awake, to | Kuokira. |
 
-**B**
-
 ---
 
-&lt;!-- Page 23 (p. 18) --&gt;
-**18** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 23 (Page 18)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -613,8 +594,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 24 (p. 19) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **19**
+*Page 24 (Page 19)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -657,8 +637,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 25 (p. 20) --&gt;
-**20** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 25 (Page 20)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -675,7 +654,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ *n.* (white) | Mukathi wa mweru (Mi-). |
 | „ *n.* a string of | Kehahi (I-). |
 | Beak, *n.* | Muthechi (Mi-). |
-| Beam *n.* (post) | Getuki (I-). |
+| Beam, *n.* (post) | Getuki (I-). |
 | Beans, *n.* | Mbocho (*s. & p.*). |
 | Bear, to (carry) | Kokuua. (bring forth) Kochiara. |
 | Beard, *n.* | Nderu. |
@@ -695,8 +674,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 26 (p. 21) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **21**
+*Page 26 (Page 21)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -736,8 +714,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 27 (p. 22) --&gt;
-**22** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 27 (Page 22)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -753,8 +730,8 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Beseech, to | Kothaitha. Kohoya. |
 | Beside, *prep.* | Rueri rua. Iguru ria. |
 | Besides, *adv.* | Ringi. |
-| Best, *adj.* | -ega. (to surpass) Kokira ta nyamo. |
-| Bestial, *adj.* | &nbsp; |
+| Best, *adj.* | -ega. (to surpass) Kokira. |
+| Bestial, *adj.* | ta nyamo. |
 | Bestow, to | Kohee. Koruta. |
 | Bethink, to | Kuigua. Koririkana. |
 | Betimes, *adv.* | Rochiini. |
@@ -764,7 +741,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Between, *adv.* | Katakati. |
 | Beverage, *n.* | Kenyui (I-). |
 | Beware, to | Korora. |
-| Bewitch, to | Koroga. (*Pass.*) Koroguo |
+| Bewitch, to | Koroga. (*Pass.*) Koroguo. |
 | Beyond, *prep.* | iguru ya. |
 | Bid, to | Kuirera. |
 | Big, *adj.* | -nene. -kuru. |
@@ -776,8 +753,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 28 (p. 23) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **23**
+*Page 28 (Page 23)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -814,8 +790,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 29 (p. 24) --&gt;
-**24** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 29 (Page 24)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -854,8 +829,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 30 (p. 25) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **25**
+*Page 30 (Page 25)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -894,10 +868,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Bowl, *n.* | Kyuga (chi-). |
 | Box, *n.* | Ithanduku (Ma-). |
 
+
 ---
 
-&lt;!-- Page 31 (p. 26) --&gt;
-**26** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 31 (Page 26)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -912,7 +886,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Brand, to | Kuora. |
 | Brass, *n.* | Kechango (I-). |
 | Brave, *adj.* | -a mereru. |
-| „ to be | Komereria |
+| „ to be | Komereria. |
 | Bravery, *n.* | Omereru. Ojamba. |
 | Brawl, *n.* | Mbara. Ita. |
 | Bray, to | Korira ta ndigirri. |
@@ -939,8 +913,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 32 (p. 27) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **27**
+*Page 32 (Page 27)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -981,8 +954,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 33 (p. 28) --&gt;
-**28** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 33 (Page 28)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1023,8 +995,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 34 (p. 29) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **29**
+*Page 34 (Page 29)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1065,8 +1036,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 35 (p. 30) --&gt;
-**30** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 35 (Page 30)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1078,14 +1048,14 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Capacious, *adj.* | -neni theni. -a kuiki[ra] indu nyingi. |
 | Capital, *n.* | Muchiyi munene (Mi-). |
 | Capsize, to | Kogarora. |
-| Captivate, to | Kokennia muno. Kua[gi]rira. |
+| Captivate, to | Kokennia muno. Kuag[i]rira. |
 | Captive, *n.* | Mukwatuo (Mi-). |
 | Captivity, *n.* | Okwatuo. |
-| Capture, to | Kokwata. Kotaha. Kuon[a]. |
+| Capture, to | Kokwata. Kotaha. Kuon[a.] |
 | „ *n.* | Kokwata. Mataha. |
 | Caravan journey, *n.* | Kyaro (Chi-). |
 | Carcase, *n.* | Koimba (Chi-). |
-| Care for, to (love) | Kuenda. (nurse) Korer[a]. |
+| Care for, to (love) | Kuenda. (nurse) Korer[a.] |
 | „ of, to take | Kuikaria. |
 | „ to take | Korora. |
 | „ *n.* (trouble) | Otheni. Thena. |
@@ -1104,8 +1074,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 36 (p. 31) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **31**
+*Page 36 (Page 31)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1143,8 +1112,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 37 (p. 32) --&gt;
-**32** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 37 (Page 32)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1152,7 +1120,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to make | Kochina makara. |
 | Charge, to | Kuerera. |
 | „ (accuse) | Kochirithia. |
-| Charm, to | Koguchia. Kuagerer[a]. |
+| Charm, to | Koguchia. Kuagerer[a.] |
 | Charm, *n.* | Gethito (I-). |
 | Charmer, *n.* | Muguchia. Mwagereri. |
 | Chase, to (hunt) | Kogwima. |
@@ -1168,7 +1136,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Cheated, to be | Kohenio. |
 | Check, to | Kuigereria. (mark off) [Ku]ikira arama. |
 | Checkmate, to | Koteng'eria. |
-| Cheek, *n.* | Rothea (Thea). Ikai (M[a-]). |
+| Cheek, *n.* | Rothea (Thea). Ikai ([Ma-]). |
 | Cheer, to | Kokennia. |
 | Cheerless, *adj.* | -tari kekenni. |
 | Cherish, to | Kuikaria. Korera. |
@@ -1178,13 +1146,12 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Chicken, *n.* | Kaana ka nguku (Tw[ana]). |
 | Chief, *n.* | Muthamaki (A-). Mu[nene] (A-). |
 | Chieftainship, *n.* | Othamaki. Onene. |
-| Child, *n.* | Mwana (Chiana). K[ana] (Twana). (*fem.*) K[are]go (To). |
+| Child, *n.* | Mwana (Chiana). K[aana] (Twana). (*fem.*) K[are]go (To). |
 | Childhood, *n.* | Waana. |
 
 ---
 
-&lt;!-- Page 38 (p. 33) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **33**
+*Page 38 (Page 33)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1220,12 +1187,9 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Clay, *n.* | Ndaka. |
 | Clean, to | Kothambia. Kotheria. |
 
-**C**
-
 ---
 
-&lt;!-- Page 39 (p. 34) --&gt;
-**34** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 39 (Page 34)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1239,11 +1203,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Clever, to be | Kohega. |
 | „ *adj.* | -a ogi. -a kohega. |
 | Cleverness, *n.* | Ogi. Ohegi. |
-| Climax, *n.* | Mothia. Muhaka (Mihah[a]). |
+| Climax, *n.* | Mothia. Muhaka (Mihaka). |
 | Climb, to | Kohaicha. |
 | Clock, *n.* | Thaa. |
 | Close, *n.*, *adv.* | Hakuhi. |
-| „ to | Kohinga. (finish) Konin[a]. |
+| „ to | Kohinga. (finish) Konin[a.] |
 | Cloth, *n.* | Tama (Ma-). |
 | „ *n.* (red) | Tama mutuni (Ma-). |
 | Clothe, to | Koigwika. (oneself) K[oi]gwika. |
@@ -1265,8 +1229,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 40 (p. 35) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **35**
+*Page 40 (Page 35)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1286,11 +1249,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to | Kuikira mbiro. |
 | [Col]oured, *adj.* | -a mbiro nyingi. |
 | [Col]umn, *n.* (row) | Kotagana (Ma-). (post) Ketuki (I-). |
-| [Com]b, *n.* | Ketambarukio (I-). |
+| [Co]mb, *n.* | Ketambarukio (I-). |
 | „ to | Kotambarukia. Komameraria njueri. |
 | [Com]bat, *n.* | Ita. Mbara. Mahorano. |
-| [Com]e, to | Kuoka. |
-| „ along | Metuki ! |
+| [Co]me, to | Kuoka. |
+| „ along | Metuki! |
 | „ away, to | Kuinuka. Kochoka. |
 | „ back, to | Kochoka. Kuinuka. Kohunduka. |
 | „ down, to | Kuuma. |
@@ -1302,8 +1265,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 41 (p. 36) --&gt;
-**36** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 41 (Page 36)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1337,8 +1299,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 42 (p. 37) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **37**
+*Page 42 (Page 37)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1364,7 +1325,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Conform, to (follow after) | Kokinyira. |
 | Congregation, *n.* | Machokererio. Machaminio. |
 | „ *n.* (worshippers) | Gekundi kya ahoyi. |
-| Conjunction, *n.* (in conjunction with) | Hamwe na. |
+| Conjunction, *n.* (in conjunction with) | Hamwe ma. |
 | Connect, to | Kokwatania. |
 | Conquer, to | Kuing'gata. Kuhota. Koteng'eria. |
 | Conquest (spoils) | Mataha. |
@@ -1373,8 +1334,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 43 (p. 38) --&gt;
-**38** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 43 (Page 38)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1389,7 +1349,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Constantly, *adv.* | *Mithenya yothi. Hende chiothi. Matuku mothi.* |
 | Constellation | Gechigo kya njata (I-). |
 | Consternation, *n.* | Guoya nyingi. |
-| Construct, to | *(house) Kuaka. (make) Koruta.* |
+| Construct, to | (*house*) *Kuaka.* (*make*) *Koruta.* |
 | Consult, to | Kocharia uhoro. Kuenda uhoro. |
 | Consume, to (with fire) | Kochina, (*Pass.*) Kochinuo. |
 | Consumption, *n.* | Ndwari ya gethori. |
@@ -1409,8 +1369,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 44 (p. 39) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **39**
+*Page 44 (Page 39)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1447,8 +1406,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 45 (p. 40) --&gt;
-**40** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 45 (Page 40)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1456,7 +1414,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Cough, *n.* | Kikorora (I-). |
 | „ to | Kokorora. |
 | Council, *n.* | Chira (Ma-). |
-| Counsel, to | Kohee uhoro. Korut[a u]horo. |
+| Counsel, to | Kohee uhoro. Koruta [u]horo. |
 | „ *n.* | Uhoro. |
 | Countenance, *n.* | Othio (Mothio). |
 | Counterfeit, to | Kuiruta. Kuigarora. [Ko]ruta muhianano wa. |
@@ -1471,12 +1429,12 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Cousin, *n.* | Muthoni (A-). |
 | Cover, to | Kokunika. |
 | „ *n.* | Nguniko (*s. & p.*). |
-| Covet, to | Kuona oiru. Kuigua th[uti]. |
+| Covet, to | Kuona oiru. Kuigua th[uti.] |
 | Covetous person, *n.* | Mundu wa oiru (A-). |
 | Covetousness, *n.* | Oiru. |
 | Cow, *n.* | Ng'ombe (*s. & p.*). |
 | „ *n.* (young female) | Mori. |
-| „ *n.* (young male) | Kategwa. (old) Ndegw[a]. |
+| „ *n.* (young male) | Kategwa. (old) Ndegw[a.] |
 | Coward, *n.* | Eguoya (me-). Mundu [wa] guoya (A-). |
 | Cowardice, *n.* | Keguoya. |
 | Crack, to | Kuatuka. |
@@ -1487,8 +1445,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 46 (p. 41) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **41**
+*Page 46 (Page 41)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1525,8 +1482,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 47 (p. 42) --&gt;
-**42** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 47 (Page 42)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1564,8 +1520,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 48 (p. 43) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **43**
+*Page 48 (Page 43)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1597,8 +1552,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 49 (p. 44) --&gt;
-**44** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 49 (Page 44)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1636,8 +1590,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 50 (p. 45) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **45**
+*Page 50 (Page 45)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1671,8 +1624,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 51 (p. 46) --&gt;
-**46** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 51 (Page 46)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1711,8 +1663,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 52 (p. 47) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **47**
+*Page 52 (Page 47)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1748,8 +1699,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 53 (p. 48) --&gt;
-**48** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 53 (Page 48)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1784,8 +1734,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 54 (p. 49) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **49**
+*Page 54 (Page 49)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1816,12 +1765,9 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Distrust, to | Kuitikia (*negatively*). |
 | Disturb, to (annoy) | Konogia. Korakaria. |
 
-**D**
-
 ---
 
-&lt;!-- Page 55 (p. 50) --&gt;
-**50** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 55 (Page 50)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1830,7 +1776,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Ditch, *n.* | Mutaro (Mi-). |
 | Diurnal, *adj.* (daily) | -a mithenya yothi. -a matuko mothi. |
 | Diverge, to | Kothira njira ingi ingi. Kothie rueri. |
-| Diversion, *n.* (pastime) : | Kothaka (Mathako). |
+| Diversion, *n.* (pastime) | Kothaka (Mathako). |
 | Diversity, *n.* | Ohuhanani. |
 | Divert, to | Kogarurukia rueri. |
 | Divest, to (clothes) | Koruta. |
@@ -1851,12 +1797,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ *n.* (house) | Gwii (Ma-). |
 | Domestic, *adj.* | -a nyumbaini. |
 | Dominant, *adj.* | -kuru. -a hinya. |
-| Domination, *n.* | Ochiri. Hinya. Wathi ? |
+| Domination, *n.* | Ochiri. Hinya. Wathi? |
 
 ---
 
-&lt;!-- Page 56 (p. 51) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **51**
+*Page 56 (Page 51)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1864,7 +1809,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Dominion, *n.* | Onene. Othamaki. Okuru. |
 | Don, to (put on) | Kuigwika. |
 | Donation | Kiheo (Chi-). Otana. |
-| Done, to be (cooked) | Koruguo. Kuiyoha. (deceived) Kohenio |
+| Done, to be (cooked) | Koruguo. Kuiyoha. (deceived) Kohenio. |
 | „ to be (finished) | Kothira. (tired out) Konoga. |
 | Donkey, *n.* | Digirri (Ma-). |
 | Doom, *n.* | Ochirithio. |
@@ -1890,8 +1835,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 57 (p. 52) --&gt;
-**52** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 57 (Page 52)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1913,12 +1857,12 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to | Konyua. |
 | Drinker, *n.* | Munyui (A-). |
 | Drip, to | Kotata. |
-| Drive, to | Kuing'gata. Koteng'[eria]. |
-| Drop, to (of water) | Kotata. (let go) Koti[ga]. |
+| Drive, to | Kuing'gata. Koteng'[eria.] |
+| Drop, to (of water) | Kotata. (let go) Koti[ga.] |
 | „ (fall) | Kogoa. (make to [fall]) Kogoithia. |
 | Drop of water, *n.* | Itata (Ma-). |
 | Drought, *n.* | Nyota. |
-| „ (to have) | Kuaga mbura. Kue[heria] mbura. Kuigua ny[ota]. |
+| „ (to have) | Kuaga mbura. Kue[nda] mbura. Kuigua ny[ota.] |
 | Drowned, to be | Kokua maini. |
 | Drowsiness, *n.* | Ochungi. |
 | Drowsy, to be | Kochunga. |
@@ -1932,8 +1876,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 58 (p. 53) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **53**
+*Page 58 (Page 53)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1973,8 +1916,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 59 (p. 54) --&gt;
-**54** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 59 (Page 54)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -1991,7 +1933,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ of garment, *n.* | Dotirio. |
 | „ of knife, *n.* | Ogini (Ma-). Muina (M[i-]). |
 | Edict, *n.* | Uhoro. Kerera (Meere[ro]). |
-| Educate, to | Korutana. Komenyia. [Ko]menyithia. Kohee uh[oro]. |
+| Educate, to | Korutana. Komenyia. [Ko]menyithia. Kohee uh[oro.] |
 | Education, *n.* | Orutani. |
 | Educator, *n.* | Murutani (A-). |
 | Efface, to | Kothengia. |
@@ -2002,10 +1944,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Egotistic, *adj.* | -a kuigocha. |
 | Egress, *n.* | Njira ya kuuma (*s. & p.*). |
 | Eight | -nana. -nyanya. |
-| Eighteen | Ikumi na inyanya |
+| Eighteen | Ikumi na inyanya. |
 | Eighty | Mirungu inyanya. |
 | Either . . . or | Kana . . . kana. |
-| Ejaculate, to | Koruta mugambo na r[ua]. |
+| Ejaculate, to | Koruta mugambo na r[ua.] |
 | Eject, to | Koruta *or* kotee nja. |
 | „ to (vomit) | Kotaika. |
 | Elapse, to | Kohituka. |
@@ -2014,8 +1956,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 60 (p. 55) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **55**
+*Page 60 (Page 55)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2053,10 +1994,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ *n.* | Okunyi. Wetikiro. Ogwati. |
 | Emerge, to | Kuuma. Kuonekana. |
 
+
 ---
 
-&lt;!-- Page 61 (p. 56) --&gt;
-**56** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 61 (Page 56)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2091,8 +2032,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 62 (p. 57) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **57**
+*Page 62 (Page 57)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2133,8 +2073,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 63 (p. 58) --&gt;
-**58** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 63 (Page 58)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2168,12 +2107,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ *n.* | Ohonoki. Ohoni. |
 | Escarpment, *n.* | Kerima (I-). |
 | Esteem, to | Kotea. |
-| Eternal, *adj.* | -a tene. -tari kiamberer[ia] kana muthia. |
+| Eternal, *adj.* | -a tene. -tari kiamberer[io] kana muthia. |
 
 ---
 
-&lt;!-- Page 64 (p. 59) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **59**
+*Page 64 (Page 59)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2211,8 +2149,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 65 (p. 60) --&gt;
-**60** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 65 (Page 60)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2222,13 +2159,13 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to | Kotiga. |
 | Exchange, to | Kokorannia. |
 | Exclaim, to | Kuuga na mugambo [mu]nene. |
-| Exclude, to | Kotiga. Kuika harai[ya]. |
+| Exclude, to | Kotiga. Kuika harai[ya.] |
 | Exclusive, *adj.* | -a wiki. |
 | Excuse, *n.* | Uhoro wa kochokia. |
-| „ to make | Kuuga uhoro wa kochi[ra]. |
+| „ to make | Kuuga uhoro wa kochi[ra.] |
 | Excursion, *n.* | Kyaro (Chi-). |
 | Execrate, to | Kothetha. (loathe) [Ko]thora muno. |
-| Exemplify, to | Kuonia kwa muthemb[a]. |
+| Exemplify, to | Kuonia kwa muthemb[a.] |
 | Exert, to | Kogeria. |
 | Exhort, to | Kuonia. |
 | Exist, to | Kogea. Kotwika. |
@@ -2236,22 +2173,21 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Expand, to | Kuimba. |
 | Expansion, *n.* | Uimbi. |
 | Expect, to | Kuenda. |
-| Expectorate, to | Kotua mataa. Koko[rora]. |
+| Expectorate, to | Kotua mataa. Koko[rora.] |
 | Expedient, *n.* | Uhoro. Njira. |
-| Expel, to | Kuing'gata. Koruta |
+| Expel, to | Kuing'gata. Koruta [nja.] |
 | Expensive, *adj.* | -a goro mwingi. |
 | Explain, to | Komenyia. Kuerera. |
-| Expose, to | Koruta nja. Kuika [ha]otheri. (uncover) [Ku]ohera. Kokunara. |
+| Expose, to | Koruta nja. Kuika [kw]otheri. (uncover) [Ku]ohera. Kokunara. |
 | Expostulate, to | Kuonia rehiya. |
 | Expression, *n.* (face) | Othio. |
-| Extend, to (reach) | Kokinya. (spread) [Kua]nika. Kotambarar[ia]. |
-| Extent, *n.* | Okinyi. Onene. Ora[iya]. |
+| Extend, to (reach) | Kokinya. (spread) [Kua]nika. Kotambarar[ia.] |
+| Extent, *n.* | Okinyi. Onene. Ora[iya.] |
 | Exterior, *n.* | Nja. |
 
 ---
 
-&lt;!-- Page 66 (p. 61) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **61**
+*Page 66 (Page 61)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2283,8 +2219,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 67 (p. 62) --&gt;
-**62** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 67 (Page 62)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2319,8 +2254,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 68 (p. 63) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **63**
+*Page 68 (Page 63)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2330,7 +2264,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Fang, *n.* | Igego (Ma-). |
 | Far, *adv.* | Koraiya. Muno. |
 | „ to be | Koraiya. |
-| Farewell ! | Ndaimuka ! (I go). Thie na uhoro (go in peace). |
+| Farewell! | Ndaimuka! (I go). Thie na uhoro (go in peace). |
 | „ *adj.* | -muthia. |
 | Farm, *n.* | Mugunda (Mi-). |
 | „ to | Korima. |
@@ -2355,8 +2289,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 69 (p. 64) --&gt;
-**64** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 69 (Page 64)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2390,8 +2323,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 70 (p. 65) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **65**
+*Page 70 (Page 65)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2426,18 +2358,15 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Fill, to | Koyuria (*Pass.*). Koyurio. |
 | Filth, *n.* | Ndaka. Geko. |
 
-**E**
-
 ---
 
-&lt;!-- Page 71 (p. 66) --&gt;
-**66** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 71 (Page 66)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Filthiness, *n.* | Oru. Geko. |
 | Filthy, to be | Kogea ma geko. |
-| „ *adj.* (of speech) | -auhoro muru. (dirty). -a ndaka. -a geko. |
+| „ *adj.* (of speech) | -auhoro muru. (dirty) -a ndaka. -a geko. |
 | Final, *adj.* | -a muthia. -a kothira. |
 | Find, to | Kuona. (look for) Kocharia. |
 | Fine, to | Kotua chira. |
@@ -2467,8 +2396,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 72 (p. 67) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **67**
+*Page 72 (Page 67)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2509,8 +2437,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 73 (p. 68) --&gt;
-**68** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 73 (Page 68)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2542,13 +2469,12 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | For (*prep.*) | Kwa. (because of) Kwa undu wa. (in place of) Handu ha. |
 | Forbid, to | Korega. Kuima. |
 | Force, *n.* | Hinya. |
-| Ford, *n.* | Irioko ? (Ma-). Kihituki. |
+| Ford, *n.* | Irioko? (Ma-). Kihituki. |
 | [Fo]re, *n.* | Rueri rua mbere. |
 
 ---
 
-&lt;!-- Page 74 (p. 69) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **69**
+*Page 74 (Page 69)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2565,7 +2491,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Foreordain, to | Kuerera mbere. |
 | Forepart, *n.* | Gechunji kya mbere (Ichunji chia mbere). |
 | Foresee, to | Kuona mbere. |
-| Forest, *n.* | Mutito (M-). Kethaka (I-). |
+| Forest, *n.* | Mutito (Mi-). Kethaka (I-). |
 | Foretell, to | Koragura. |
 | Foreteller, *n.* | Muraguri (A-). |
 | For ever | Matuku mothi. Tene na tene. |
@@ -2586,8 +2512,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 75 (p. 70) --&gt;
-**70** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 75 (Page 70)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2626,8 +2551,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 76 (p. 71) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **71**
+*Page 76 (Page 71)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2653,7 +2577,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Fry, to | Kokaranga. |
 | Fuel, *n.* | Ngoo. |
 | Fugitive, *n.* | Muteng'eri (A-). |
-| Fulfil, to | Kombuka ? Kothira. |
+| Fulfil, to | Kombuka? Kothira. |
 | Full, to be | Kohona. Koyura. |
 | „ *adj.* | -eni koyura. |
 | Fully, *adv.* | Muno. |
@@ -2666,8 +2590,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 77 (p. 72) --&gt;
-**72** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 77 (Page 72)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2678,7 +2601,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Fury, *n.* | Orakari. |
 | Future, in the | Kahinda kokangi. Muthenya ungi. |
 | Gad about, to | Kocherachera. |
-| Gaily, *adv.* | Kwã kikenni. |
+| Gaily, *adv.* | Kwa kikenni. |
 | Gain, *n.* | Kiongereri (Chi). Uongereri (Ma-). |
 | „ to | Kuona uongereri. Kuongerera. Kuona. |
 | „ to (reach) | Kokinya. |
@@ -2700,8 +2623,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 78 (p. 73) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **73**
+*Page 78 (Page 73)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2741,8 +2663,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 79 (p. 74) --&gt;
-**74** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 79 (Page 74)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2783,8 +2704,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 80 (p. 75) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **75**
+*Page 80 (Page 75)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2820,8 +2740,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 81 (p. 76) --&gt;
-**76** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 81 (Page 76)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2830,17 +2749,17 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ luck, *n.* | Munyaka. |
 | Goods, *n.* | Indu. |
 | Gore, *n.* | Thakame. |
-| Gorge, to | Kohona. Koria na kohon[a]. |
+| Gorge, to | Kohona. Koria na kohon[a.] |
 | Gory, *adj.* | -a thakame. |
 | Gospel, *n.* | Uhoro mwega. |
 | Govern, to | Kuatha. Kochira. |
-| Governor | Munene (A-). Muth[a]maki (A-). Muathi (A-[). |
+| Governor | Munene (A-). Muth[a]maki (A-). Muathi (A-[-]). |
 | Grace, *n.* | Bothi. (year of) Mwak[a] wa kohona (Mi-). (lov[e]) Wendi. |
 | Graceless, *adj.* | -uru. |
-| Gradual, *adj.* | Kaninikanini. -a kahor[a] kahora. |
+| Gradual, *adj.* | Kaninikanini. -a kahor[a]kahora. |
 | Gradually, *adv.* | Kahorahora. Kaninik[a]nini. |
 | Grain | Mbeu. Matukanio. |
-| Grand, *adj.* | -nene. -kuru. -goch[i]. -ega. |
+| Grand, *adj.* | -nene. -kuru. -goch[i.] -ega. |
 | Grandchild, *n.* | Guka (Maguka). |
 | Grandmother, *n.* | Chocho (Machocho). |
 | Grant, to | Kohee. Kuitikia. |
@@ -2858,8 +2777,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 82 (p. 77) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **77**
+*Page 82 (Page 77)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2897,8 +2815,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 83 (p. 78) --&gt;
-**78** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 83 (Page 78)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2936,8 +2853,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 84 (p. 79) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **79**
+*Page 84 (Page 79)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -2975,13 +2891,12 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 85 (p. 80) --&gt;
-**80** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 85 (Page 80)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Hardy, *adj.* | -a hinya. |
-| Hark ! *int.* | Thikereria ! |
+| Hark! *int.* | Thikereria! |
 | Harm, to | Kuehiya. |
 | Harmless, to be | Kohorera. |
 | „ *adj.* | -horeri. |
@@ -2989,8 +2904,8 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Hartebeest, *n.* | Ngondi (*s. & p.*). |
 | Harvest (time) | Magetha. (produce) Magetho. Kimero. |
 | „ to | Kogetha. |
-| Haste ! | Metuki ! Na rua ! |
-| „ to make | Kothie na rua. Koruta n[a] rua. Kuika na, etc. |
+| Haste! | Metuki! Na rua! |
+| „ to make | Kothie na rua. Koruta na rua. Kuika na, etc. |
 | Hat, *n.* | Ngopia (*s. & p.*). |
 | Hatch, to | Kokomera. |
 | Hatchet, *n.* | Ithanwa (Ma-). |
@@ -3000,10 +2915,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Have, to | Kori na. Kogea na. Kotwika na. |
 | Having, *adj.* | -eni. |
 | Hawk, *n.* | Hungo (*s. & p.*). |
-| Haze, *n.* | Nduma. (fog) Kenund[u] (I-). |
+| Haze, *n.* | Nduma. (fog) Kenundu (I-). |
 | He, *pers. pron.* | Oria. (they) Aria. |
 | Head, *n.* | Mutui (Mi-). |
-| „ to | Kotwika mukuru wa. (g[o] before) Kotongoria. |
+| „ to | Kotwika mukuru wa. (go before) Kotongoria. |
 | „ -ache, *n.* | Murimo wa mutui (Mi-). |
 | „ man, *n.* | Murugamiri (A-). |
 | „ -ship, *n.* | Okuru. Othamaki. |
@@ -3014,8 +2929,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 86 (p. 81) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **81**
+*Page 86 (Page 81)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3052,12 +2966,9 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Hen, *n.* | Nguku ya mundu muka (*s. & p.*). |
 | Henceforth, *adv.* | Thima reu. |
 
-**F**
-
 ---
 
-&lt;!-- Page 87 (p. 82) --&gt;
-**82** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 87 (Page 82)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3100,8 +3011,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 88 (p. 83) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **83**
+*Page 88 (Page 83)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3137,8 +3047,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 89 (p. 84) --&gt;
-**84** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 89 (Page 84)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3162,13 +3071,13 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | House, *n.* | Nyumba (*s. & p.*). |
 | „ (for males) | Thingira (Ma-). |
 | Housebreaker, *n.* | Mwichi (A-). |
-| How ? | -atea (to, *verb*) (How doe[s] he speak ?) Akuugatea |
+| How? | -atea (to, *verb*) (How does he speak?) Akuugatea? |
 | However | Kake. |
-| How many ? | -igana ? |
-| How often ? | Kaigana ? |
+| How many? | -igana? |
+| How often? | Kaigana? |
 | Huge, *adj.* | -nene muno. |
 | Human, *adj.* | -a mundu. |
-| Humane, *adj.* | -a kahora. -ega. -horeria |
+| Humane, *adj.* | -a kahora. -ega. -horeria. |
 | „ to be | Kohoreria. |
 | Humble, to be | Kuinyihia. Konyuka. |
 | „ *adj.* | -nyuko. -inyihia. |
@@ -3177,8 +3086,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 90 (p. 85) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **85**
+*Page 90 (Page 85)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3192,7 +3100,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Hunter, *n.* | Mugwemi (A-). Mwathi (A-). |
 | Hurl, to | Kotee na hinya. Koruta na hinya. |
 | Hurry, to | Koruta na rua. Kotindika. |
-| „ up ! *interjec.* | Metuki ! Na rua ! |
+| „ up! *interjec.* | Metuki! Na rua! |
 | Hurt, to | Koria. Kotura. |
 | Husband, *n.* | Murumi (A-). |
 | Hush, *n.* | Makoro. |
@@ -3214,10 +3122,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Idler, *n.* | Kegota (I-). |
 | Idol, *n.* | Muhianano wa kohoyuo (Mi-). |
 
+
 ---
 
-&lt;!-- Page 91 (p. 86) --&gt;
-**86** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 91 (Page 86)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3253,8 +3161,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 92 (p. 87) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **87**
+*Page 92 (Page 87)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3294,13 +3201,12 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 93 (p. 88) --&gt;
-**88** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 93 (Page 88)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Inaudible, *adj.* | -a mugambo munyinyi. |
-| Inauspicious, *adj.* | -a nyoni njoru. -a mut[i]. |
+| Inauspicious, *adj.* | -a nyoni njoru. -a mut[iro.] |
 | Incantation, *n.* | Uino wa mundu m[ugo] (Ma-). |
 | Incapable, to be | Kohota (*negatively*). [Ko]gota. |
 | „ *adj.* | -tari hinya. -gota. |
@@ -3308,7 +3214,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Inclement, *adj.* | -aheho. |
 | Incline, to (like) | Kuenda. (lie down) [Ko]koma. |
 | „ *n.* | Kerima (I-). |
-| Inclose, to | Kuoha. Kuikira th[eni]. Kokunikira. |
+| Inclose, to | Kuoha. Kuikira th[eni.] Kokunikira. |
 | Include, to | Kuikira theni. Ku[iga] hamwe. |
 | Incorrect, *adj.* | -eni mehiya. |
 | Increase, to | Kuongerera. |
@@ -3333,8 +3239,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 94 (p. 89) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **89**
+*Page 94 (Page 89)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3370,12 +3275,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 95 (p. 90) --&gt;
-**90** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 95 (Page 90)*
 
 | English | Kikuyu |
 | :--- | :--- |
-| Inhabit, to | Kuikara theni. Ko[tura] theni. |
+| Inhabit, to | Kuikara theni. Kot[ura] theni. |
 | Inhabitable, *adj.* | -a kuikara theni. |
 | Inhabitant, *n.* | Muikari (A-). Muturi ([A-]). |
 | Inherent, *adj.* | -a theni. |
@@ -3394,11 +3298,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Innocency, Innocence, *n.* | Otheri. Otari rehiya. |
 | Innocent, *adj.* | -akihoto. -tari rehiya. |
 | „ to be | Kohota. Kothera. |
-| Inquire, to | Kuuria. Kocharia uh[oro]. |
+| Inquire, to | Kuuria. Kocharia uh[oro.] |
 | Inquirer, *n.* | Mweni kuuria. (Eni [ku]uria.) |
 | Inquiry, *n.* | Ourio (Ma-). |
 | Insane, *adj.* | -a okegu. -kegu. [-eni] ngoma. |
-| „ to be | Kori na ngoma. Kok[ega]. |
+| „ to be | Kori na ngoma. Kok[ega.] |
 | Inscribe, to | Kotema. Kuandika. |
 | Insect, *n.* (small) | Katutu (To-). Ndutu (*s. & [p.]*). |
 | Insecure, *adj.* | -eni ogwati. |
@@ -3411,8 +3315,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 96 (p. 91) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **91**
+*Page 96 (Page 91)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3451,8 +3354,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 97 (p. 92) --&gt;
-**92** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 97 (Page 92)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3461,7 +3363,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Intervene, to | Kuoka theni. |
 | Interweave, to | Kotukania. |
 | Intestines, *n.* | Maka. |
-| Inthral, to | Kuoha. Kuikira okom[b]oini. |
+| Inthral, to | Kuoha. Kuikira okomboini. |
 | Intimacy, *n.* | Ondugu. Wendi. |
 | Intimate, *adj.* | -a theni. -a ngoro. -a kendo. |
 | Intimation, *n.* | Uhoro. |
@@ -3479,7 +3381,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Inventor, *n.* | Mweni koruta mbere (A-). |
 | Investigate, to | Kuuria. Kucharia uhoro. Korora. |
 | Invigorate, to | Kuikira hinya *or* ngoro *or* muoyo. |
-| Invite, to | Kuita. Kuitira. Kuenda |
+| Invite, to | Kuita. Kuitira. Kuenda. |
 | Invitation, *n.* | Wito. |
 | Invoke, to | Kohoya. Kothaitha. |
 | Inward, *adj.* | -a theni. -a ngoroini. |
@@ -3490,8 +3392,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 98 (p. 93) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **93**
+*Page 98 (Page 93)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3525,8 +3426,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 99 (p. 94) --&gt;
-**94** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 99 (Page 94)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3562,8 +3462,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 100 (p. 95) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **95**
+*Page 100 (Page 95)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3586,7 +3485,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Kill, to | Kuuraga. |
 | „ (for food) | Kothenja. |
 | Kind, *n.* (species) | Muthemba (Mi-). Muhiriga (Mi-). |
-| Kind ? what, *inter.* | -riko ? with particular prefix. |
+| Kind? what, *inter.* | -riko? with particular prefix. |
 | Kindle, to (of fire) | Kuakia. |
 | Kindness, *n.* | Wega. Otani. |
 | Kindred, *n.* | Njiaroa. Muhiriga (Mi-). |
@@ -3597,8 +3496,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 101 (p. 96) --&gt;
-**96** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 101 (Page 96)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3606,7 +3504,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Knavery, *n.* | Okegu. |
 | Knead, to | Koringia. |
 | Knee, *n.* | Iru (Ma-). |
-| Kneel, to | Kuinamirira. Koturiandu ? |
+| Kneel, to | Kuinamirira. Koturiandu? |
 | Knife, *n.* | Kahiyu (To-). |
 | Knob, *n.* | Keungo (Chi-). |
 | Knobkerry, *n.* | Njoguma (*s. & p.*). |
@@ -3634,8 +3532,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 102 (p. 97) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **97**
+*Page 102 (Page 97)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3661,7 +3558,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Language, *n.* | Uhoro. |
 | „ bad, *n.* | Marumano. |
 | Lank, *adj.* | -cheki. |
-| Lanquish, to | Kuenda kokua. Kuoma. Kohoha. |
+| Languish, to | Kuenda kokua. Kuoma. Kohoha. |
 | Lantern, *n.* | Taa wa gwoko (Mataa). |
 | Lap, *n.* | Chiero ni. (Ma-). |
 | „ up, to | Kochonachona. |
@@ -3672,12 +3569,9 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ -heartedness, *n.* | Otani. |
 | „ to set at | Kuohora. |
 
-**G**
-
 ---
 
-&lt;!-- Page 103 (p. 98) --&gt;
-**98** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 103 (Page 98)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3685,7 +3579,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Lark, *n.* | Othaki. |
 | Lash, *n.* | Kegotha kya ndigi (I-). |
 | Lass, *n.* | Muiretu (A-). |
-| Last, *adj.* | -a muthia. -a keingand[a]. |
+| Last, *adj.* | -a muthia. -a keingand[a.] |
 | Lastly, *adv.* | Muthia. |
 | Late, to be | Kokeruo. |
 | „ *adj.* | -a muthia. (recent) [-a] mbere. (of late) Mithen[ya] eno. |
@@ -3715,8 +3609,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 104 (p. 99) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **99**
+*Page 104 (Page 99)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3724,7 +3617,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Lazy, *adj.* | -gota. |
 | Lead, *n.* | Mburomburo. |
 | „ astray, to | Kotee. |
-| „ to (go before | Kotongoria. Kotwara. |
+| „ to (go before) | Kotongoria. Kotwara. |
 | Leader, *n.* | Mutongoria (A-). |
 | Leaf, *n.* | Ithangu (Ma-). Ichoya (Ma-). |
 | Leafless, *adj.* | -tari mathangu. |
@@ -3754,8 +3647,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 105 (p. 100) --&gt;
-**100** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 105 (Page 100)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3794,8 +3686,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 106 (p. 101) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **101**
+*Page 106 (Page 101)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3830,8 +3721,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 107 (p. 102) --&gt;
-**102** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 107 (Page 102)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3866,8 +3756,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 108 (p. 103) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **103**
+*Page 108 (Page 103)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3905,8 +3794,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 109 (p. 104) --&gt;
-**104** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 109 (Page 104)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3940,8 +3828,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 110 (p. 105) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **105**
+*Page 110 (Page 105)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -3976,46 +3863,44 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 111 (p. 106) --&gt;
-**106** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 111 (Page 106)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Magnate, *n.* | Munene (A-). M[ukuru] (A-). |
 | Magnificence, *n.* | Ogochi. Onene. Ogathi. |
-| Magnify, to | Kogocha. Kokumi[a]. [Ko]gatha. |
+| Magnify, to | Kogocha. Kokumi[a. Ko]gatha. |
 | Magnitude, *n.* (little) | Onene. |
 | Maid, maiden, *n.* | Karega (To). Muire[tu (A-)]. |
-| Maimed, *adj.* (foot) | -thui. (in arm) -bo[ko]. |
+| Maimed, *adj.* (foot) | -thui. (in arm) -bo[ko.] |
 | Maintain, to (keep hold) | Kokwata. (preser[ve]) [Ku]ikaria. |
 | „ „ (assert) | Kuuga. |
 | Maize, *n.* | Mbembi. |
 | Majestic, *adj.* | -nene. |
-| Majesty, *n.* | Onene. Ogatha. O[gochi]. |
+| Majesty, *n.* | Onene. Ogatha. O[gochi.] |
 | Make, to | Koruta. Koumba. |
-| „ come down, to | Kogoithia. Korun[da]. |
+| „ come down, to | Kogoithia. Korun[da.] |
 | „ fire, to | Kuakia mwaki. |
 | „ go up, to | Kohaichia. |
 | „ haste, to | Kothie na rua. K[oteng']era. |
 | „ ill, to | Koroga. |
 | „ mistake, to | Kuehiya. |
 | „ „ in speech | Koreguo. |
-| „ „ to | &nbsp; |
+| „ „ to | |
 | „ signs, to | Koheneria. |
 | „ water, to | Kothukuma. |
 | „ well, to | Kohonia. |
 | „ wise, to | Kohegia. |
 | Maker, *n.* | Muruti (A-). Muum[bi (A-)]. |
 | Malady, *n.* | Murimo (Mi-). [Ndwari] (*s. & p.*). |
-| Male, *n.* | Mundu murume (A-[). |
+| Male, *n.* | Mundu murume (A-[-]). |
 | „ *adj.* | -rume. |
 | Malice, *n.* | Othori. Orakari. |
 | Malign, *adj.* | -uru. |
 
 ---
 
-&lt;!-- Page 112 (p. 107) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **107**
+*Page 112 (Page 107)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4044,21 +3929,20 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Manual, *adj.* | -a moko. |
 | Manure, *n.* | Rorua. |
 | Many | -ngi. |
-| „ how, *inter.* | -igana ? |
+| „ how, *inter.* | -igana? |
 
 ---
 
-&lt;!-- Page 113 (p. 108) --&gt;
-**108** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 113 (Page 108)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Map, *n.* | Muhianano wa p[orori] (Mi-). |
 | Mar, to | Kuehiya. |
 | Marauding, *adj.* | -a korehe ita *or* mbara. |
-| Mark, to (notice) | Korora. (sign) Kuor[a]. |
-| „ *n.* | Ruoro (Ndoro). [Rooro] (Nduori). |
-| Market, *n.* | King'ang' aini. |
+| Mark, to (notice) | Korora. (sign) Kuor[a.] |
+| „ *n.* | Ruoro (Ndoro). (Nduori). |
+| Market, *n.* | King'ang'aini. |
 | Mark out, to (choose) | Kocharia. |
 | Marriage, *n.* | Kirero (I-). |
 | Marrow, *n.* | Muthimo (Mi-). |
@@ -4066,7 +3950,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ „ (of woman) | Kohika. Koguruo. |
 | „ „ (perform ceremony) | Kohikania. |
 | Marsh, *n.* | Handu ha iria. |
-| Mart, *n.* | King'ang' aini (I-). |
+| Mart, *n.* | King'ang'aini (I-). |
 | Marvel, to | Komaka. |
 | Marvellous, *adj.* | -a komakia. |
 | Masculine | -a kirume. -rume. |
@@ -4086,8 +3970,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 114 (p. 109) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **109**
+*Page 114 (Page 109)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4096,7 +3979,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Matter, *n.* (affair) | Undu (Ma-). Kindu (I-). |
 | „ *n.* (pus) | Mahira. |
 | „ to | Kuigana. |
-| „ What is the | Nike ? Niatea ? |
+| „ What is the | Nike? Niatea? |
 | Mattress, *n.* | Ketandi (I-). Ndarao (*s. & p.*). |
 | Mature, to | Koheha. |
 | Maxim, *n.* | Uhoro wa ogi. |
@@ -4122,8 +4005,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 115 (p. 110) --&gt;
-**110** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 115 (Page 110)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4159,8 +4041,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 116 (p. 111) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **111**
+*Page 116 (Page 111)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4179,7 +4060,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Metropolis, *n.* | Muchiyi mukuru wa porori. |
 | Mid-day, *n.* | Miaraho. |
 | Middle, *n.* | Katakati. |
-| „ *adj.* | a- ghataghati. |
+| „ *adj.* | -a ghataghati. |
 | Midnight, *n.* | Otuku katakati. |
 | Midwife, *n.* | Muchiarithania (Achiarithania). |
 | Might, *n.* | Ohoti. Hinya. Onene. |
@@ -4201,8 +4082,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 117 (p. 112) --&gt;
-**112** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 117 (Page 112)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4212,7 +4092,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ (observe) | Korora. Koririkana. |
 | „ (take care of) | Kuikaria. |
 | „ (take to heart) | Kuikira ngoroini. |
-| Mine, *poss. pron.* | -akwa. (with partic prefix.) |
+| Mine, *poss. pron.* | -akwa. (with partic. prefix.) |
 | Minister, *n.* (of state) | Muthamaki. Mwathi (A-). |
 | „ *n.* (servant) | Ngombo (*s. & p.*). Mwetereri (Etereri). |
 | „ to, to | Kueterera. (supply) Koruta. Korehira. |
@@ -4240,8 +4120,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 118 (p. 113) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **113**
+*Page 118 (Page 113)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4277,12 +4156,9 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Moisture, *n.* | Mai. |
 | Mole, *n.* | Huko (Mahuko). |
 
-**H**
-
 ---
 
-&lt;!-- Page 119 (p. 114) --&gt;
-**114** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 119 (Page 114)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4316,8 +4192,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 120 (p. 115) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **115**
+*Page 120 (Page 115)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4354,10 +4229,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Mutilate, to | Kotemenga. |
 | Mutineer, *n.* | Muthori (A-). Muregi (A-). |
 
+
 ---
 
-&lt;!-- Page 121 (p. 116) --&gt;
-**116** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 121 (Page 116)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4394,8 +4269,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 122 (p. 117) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **117**
+*Page 122 (Page 117)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4417,11 +4291,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Necklace, *n.* | Mukonunga (Mi-). |
 | Necromancy, *n.* | Orogi. |
 | Need, to (want) | Kuenda. (not to have) Kuaga. Kori na (*negatively*). |
-| „ *n.* | Otheni. Thena. Mendi, Wagi. |
+| „ *n.* | Otheni. Thena. Mendi. Wagi. |
 | Needle, *n.* | Mukuha (Mi-). |
 | Needy, *adj.* | -a otheni. -a thena. |
 | Negative, *n.* | Uhoro wa kokana. Korega. Kuuga acha. |
-| „ *adj.* | -a korega, a kokana. |
+| „ *adj.* | -a korega, -a kokana. |
 | Neglect, to (not attend to) | Kuikaria *and* Kurora (*negatively*). |
 | „ (slight) | Kothora. Kotiga. |
 | „ (leave to perish) | Konyamaria. Kotiga. |
@@ -4430,8 +4304,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 123 (p. 118) --&gt;
-**118** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 123 (Page 118)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4444,7 +4317,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Neither, *adv.* | Kana. |
 | Nerve, *n.* | Mukiha (Mi-). |
 | „ *n.* (courage) | Hinya. Ngoro nene. |
-| Nervous, *adj.* | -a guoya. (of the nerves) a mikiha. |
+| Nervous, *adj.* | -a guoya. (of the nerves) -a mikiha. |
 | Nest, *n.* | Nyumba ya nyoni (*s. & p.*). |
 | „ *n.* | Getara kya nyoni (Itara chia). |
 | Net, *n.* | Muhendo (Mi-). Rotara rua mihendo (Ma-). |
@@ -4469,8 +4342,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 124 (p. 119) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **119**
+*Page 124 (Page 119)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4482,7 +4354,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Nipple, *n.* (of breast) | Nyondo (*s. & p.*). (of gun) Kahoro (To-). |
 | No, *adv.* | Acha. Cha. Kotiri. Hatiri. |
 | Noble, *adj.* | -kuru. -ega. |
-| Nobleman, *n.* | Munda munene *or* mukuru (Andu anene *or* akuru). |
+| Nobleman, *n.* | Mundu munene *or* mukuru (Andu anene *or* akuru). |
 | Nocturnal, *adj.* | -a otuko. |
 | Nod, to (as signal) | Koheneria. |
 | „ to | Kuinama mutui. (doze) Kochunga. |
@@ -4506,8 +4378,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 125 (p. 120) --&gt;
-**120** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 125 (Page 120)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4543,8 +4414,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 126 (p. 121) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **121**
+*Page 126 (Page 121)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4578,15 +4448,14 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 127 (p. 122) --&gt;
-**122** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 127 (Page 122)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Of late | Mithenya eno. Matuko maya. |
 | „ old | Tene. |
 | Offal, *n.* | Ndaa ya nyama. Rorua rua nyama. |
-| Offence, *n.* | Orakari. (fault) Rehiya. (Ma-). Wehiya (Ma-). Kindu kiuru (I-). |
+| Offence, *n.* | Orakari. (fault) Rehiya (Ma-). Wehiya (Ma-). Kindu kiuru (I-). |
 | Offend, to | Korakaria. (hurt, annoy) Konogia. |
 | „ (do wrong) | Koruta oru. Kuehiya. |
 | Offender, *n.* | Muruti oru (A-). Mweni mehiya (Eni mehiya). |
@@ -4610,8 +4479,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 128 (p. 123) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **123**
+*Page 128 (Page 123)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4648,8 +4516,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 129 (p. 124) --&gt;
-**124** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 129 (Page 124)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4685,8 +4552,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 130 (p. 125) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **125**
+*Page 130 (Page 125)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4722,8 +4588,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 131 (p. 126) --&gt;
-**126** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 131 (Page 126)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4750,8 +4615,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 132 (p. 127) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **127**
+*Page 132 (Page 127)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4779,7 +4643,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Palfrey, *n.* | Mbarathi munyinyi (*s. & p.*). |
 | Palm, *n.* (of hand) | Rohe (He-). |
 | „ *n.* (date) | Mukindu (Mi-). |
-| Paltry, *adj.* | -nyinyi muno. -nini muno |
+| Paltry, *adj.* | -nyinyi muno. -nini muno. |
 | Pamper, to | Kohonia. |
 | Panegyric, *n.* | Uhoro wa kogocha. |
 | Panel, *n.* | Kehengeri (I-). |
@@ -4787,8 +4651,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 133 (p. 128) --&gt;
-**128** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 133 (Page 128)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4807,7 +4670,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Parch, to | Kuomira. |
 | Pardon, to | Kotiga. |
 | „ *n.* | Getigi. |
-| Pare, to (of fruit) | Kuoa. (of nails) Koruta. nduara. |
+| Pare, to (of fruit) | Kuoa. (of nails) Koruta nduara. |
 | Parent, *n.* | Muchiari (A-). |
 | Parliament, *n.* | Machiraini. |
 | Parly, to | Koruta uhoro. |
@@ -4823,8 +4686,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 134 (p. 129) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **129**
+*Page 134 (Page 129)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4859,12 +4721,9 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ | -a kithaka. |
 | Pathway, *n.* | Njira (*s. & p.*). |
 
-**I**
-
 ---
 
-&lt;!-- Page 135 (p. 130) --&gt;
-**130** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 135 (Page 130)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4900,8 +4759,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 136 (p. 131) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **131**
+*Page 136 (Page 131)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4935,8 +4793,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 137 (p. 132) --&gt;
-**132** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 137 (Page 132)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -4973,8 +4830,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 138 (p. 133) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **133**
+*Page 138 (Page 133)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5010,8 +4866,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 139 (p. 134) --&gt;
-**134** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 139 (Page 134)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5043,12 +4898,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Poisonous, *adj.* | -a ororu. |
 | Pole, *n.* | Muti (Mi-). Getuki (I-). |
 | Polish, to | Kogiria. Kotheria. |
-| Pollute, to | Kuikira ndaka *or* geko- |
+| Pollute, to | Kuikira ndaka *or* geko. |
 
 ---
 
-&lt;!-- Page 140 (p. 135) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **135**
+*Page 140 (Page 135)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5089,8 +4943,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 141 (p. 136) --&gt;
-**136** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 141 (Page 136)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5126,8 +4979,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 142 (p. 137) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **137**
+*Page 142 (Page 137)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5165,8 +5017,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 143 (p. 138) --&gt;
-**138** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 143 (Page 138)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5203,8 +5054,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 144 (p. 139) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **139**
+*Page 144 (Page 139)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5242,20 +5092,19 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 145 (p. 140) --&gt;
-**140** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 145 (Page 140)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Purple, *adj.* | -tuni. |
-| Pursue, to | Koteng'eria. Koki[nyira]. Kogwima. |
-| „ (aim at ; want) | Kuenda. Kocharia. |
+| Pursue, to | Koteng'eria. Koki[nyira.] Kogwima. |
+| „ (aim at; want) | Kuenda. Kocharia. |
 | Push, to | Kuikia. Kotindika. |
 | Put, to | Kuiga. Kuikira. |
 | „ an end to, to | Konina. Kothira. |
 | „ aside, to | Kuiga rueraini. |
 | „ away, to | Kothengia. Koruta. |
-| „ down, to | Kogoithia. Kuigath[i]. |
+| „ down, to | Kogoithia. Kuigath[i.] |
 | „ forth, to | Komera. Kochiara. |
 | „ in a line, to | Kuiga na muhari. |
 | „ on clothes, to | Kogwika. |
@@ -5263,27 +5112,26 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ out fire, to | Kohoria mwaki. |
 | „ „ of joint, to | Kuuna. |
 | „ „ to | Koruta. |
-| „ „ to dry, to | Kuanika. Kotamba[rukia]. |
-| „ to flight, to | Koteng'eria. Kuing['gata]. |
+| „ „ to dry, to | Kuanika. Kotamba[raria.] |
+| „ to flight, to | Koteng'eria. Kuing['gata.] |
 | Putrefy, to | Kobutha. |
 | Puzzle, to | Komakia. |
 | Puzzled, to be | Komaka. |
 | Pygmy, *n.* | Kamundu (Tomundu). |
-| Python, *n.* | Nyamuathi (Nyam[u]athi). Ndamathia (*s. [& p.]*). |
+| Python, *n.* | Nyamuathi (Nyam[uchi]athi). Ndamathia (*s. [& p.]*). |
 | Quack, to | Kogamba ta bata. [Koga]mba ta thambiri. |
 | „ „ (boast) | Kuigocha. |
-| Quadruped, *n.* | Nyamo ya maguru m[ana]. |
+| Quadruped, *n.* | Nyamo ya maguru m[ana.] |
 | Quake, to | Kuinaina. |
 | Quality, *n.* | Muthemba (Mi-). |
-| Quarrel, to | Korumana. Kotetan[ia]. |
+| Quarrel, to | Korumana. Kotetan[ia.] |
 | „ *n.* | Kotetania. Mbara. |
 | Quarrelsome, *adj.* | -rumani. -a mbara. |
 | Quarter, *n.* | Gechunji kya ka nna. |
 
 ---
 
-&lt;!-- Page 146 (p. 141) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **141**
+*Page 146 (Page 141)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5317,8 +5165,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 147 (p. 142) --&gt;
-**142** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 147 (Page 142)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5350,8 +5197,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 148 (p. 143) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **143**
+*Page 148 (Page 143)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5388,12 +5234,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 149 (p. 144) --&gt;
-**144** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 149 (Page 144)*
 
 | English | Kikuyu |
 | :--- | :--- |
-| *[Realize, to (grasp)]* | Kuona ni tiitheru. Kuitikia. Komenya. |
+| *[Realize, to (continued)]* | Kuona ni tiitheru. Kuitikia. Komenya. |
 | Really, *adv.* | Tiitheru. Ti maheni. |
 | Realm, *n.* | Onene. Othamaki. Porori (Ma-). |
 | Re-animate, to | Koriyukia. Kuikira muoyo. |
@@ -5419,8 +5264,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 150 (p. 145) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **145**
+*Page 150 (Page 145)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5451,50 +5295,46 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Recreate, to | Koruta ringi. Kuumba ringi. |
 | Rectify, to | Kothondeka. |
 
-**K**
-
 ---
 
-&lt;!-- Page 151 (p. 146) --&gt;
-**146** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 151 (Page 146)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Red, *adj.* | -tuni. |
 | Redden, to | Kuikira otuni. |
-| Redeem, to | Kuigwithania. Kok[ora]. |
+| Redeem, to | Kuigwithania. Kok[ora.] |
 | Redeemer, *n.* | Mukori (Akori). |
 | Redemption, *n.* | Okori. |
 | Redemptive, *adj.* | -a kokora. |
 | Redound, to | Kochoka. |
 | Redress, to | Kothondeka. Korihira. |
-| Reduce, to | Korutaruta. Konyih[any]hia. |
+| Reduce, to | Korutaruta. Konyih[anyi]hia. |
 | Reduced, *adj.* | -henju. |
 | Reed, *n.* | Irura (*s. & p.*). |
-| Re-elect, to | Kothura keri *or* ring[i]. |
+| Re-elect, to | Kothura keri *or* ring[i.] |
 | Re-enter, to | Kotonya keri. |
 | Re-examine, to | Korora keri. |
 | Referee, *n.* | Muchiri (Achiri). |
 | Refine, to | Kotheria. |
 | Refit, to | Kothondeka ringi. |
-| Reform, to | Kogarora kotwika -e[ga]. |
+| Reform, to | Kogarora kotwika -e[ga.] |
 | Refrain, to | Kogirereria. |
-| Refuge pit, *n.* (of beast) | Irima (Marima). ([of]) (Ma-). |
+| Refuge pit, *n.* (of beast) | Irima (Marima). [Oruma] (Ma-). |
 | „ „ *n.* (of men) | Mungu (Miungu). |
 | Refugee, *n.* | Mori (Ori). |
 | Refuse, to | Korega. Kuima. |
 | Refute, to | Kuonia maheni. |
 | Regain, to | Kuona ringi. |
 | Regale, to | Korethia. Kokennia. [Ku]agerera. |
-| Regard, to (attend to) | Korora. (honour) K[otea]. (consider) Koririk[ana]. |
+| Regard, to (attend to) | Korora. (honour) K[otea.] (consider) Koririk[ana.] |
 | Regenerate, to | Kochiara keri. K[uikira] muoyo mutheru. |
 | Region, *n.* | Rueri (Marueri). [Porori] (Maporori). |
 | Regret, *n.* | Orakari (Marakari). |
 
 ---
 
-&lt;!-- Page 152 (p. 147) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **147**
+*Page 152 (Page 147)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5528,14 +5368,13 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 153 (p. 148) --&gt;
-**148** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 153 (Page 148)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Remind, to | Koririkania. |
 | Remit, to | Kotiga. (pay) Koriha. (lessen) Korutaruta. |
-| Remorse, *n.* | Marakaro |
+| Remorse, *n.* | Marakaro. |
 | Remote, *adj.* | -a koraiya. -a tene. |
 | Remove, to | Kothama. (take away) Kothengia. Kuiga haraiya. |
 | Rend, to | Kotembura. Kuehiya. |
@@ -5562,8 +5401,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 154 (p. 149) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **149**
+*Page 154 (Page 149)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5600,8 +5438,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 155 (p. 150) --&gt;
-**150** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 155 (Page 150)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5635,8 +5472,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 156 (p. 151) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **151**
+*Page 156 (Page 151)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5651,7 +5487,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to | Kothekerera. |
 | Rifle, *n.* | Muchinga (Mi-). |
 | „ to | Kotaha. Kuchiya. |
-| Right, *adj.* (good) | -ega. (side) -a kworio. (fitting) tiithenr. -a kuigana. |
+| Right, *adj.* (good) | -ega. (side) -a kworio. (fitting) tiitheru. -a kuigana. |
 | „ to | Kothondeka. |
 | Righteous, to be | Kuiganana. Kogea na mehiya (*negatively*). Kuega. |
 | „ *adj.* | -tari mehiya. -igananu. |
@@ -5671,8 +5507,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 157 (p. 152) --&gt;
-**152** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 157 (Page 152)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5708,12 +5543,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Rude, *adj.* | -guruki. |
 | Ruffian | Muturiko (A-). |
 | Ruin, *n.* | Gekuo. |
-| „ to | Kuuraga. Kuekiya. |
+| „ to | Kuuraga. Kuehiya. |
 
 ---
 
-&lt;!-- Page 158 (p. 153) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **153**
+*Page 158 (Page 153)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5751,8 +5585,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 159 (p. 154) --&gt;
-**154** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 159 (Page 154)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5788,8 +5621,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 160 (p. 155) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **155**
+*Page 160 (Page 155)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5809,7 +5641,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ up, to | Korugamia. |
 | Settle, to (decide) | Kochira. |
 | „ (quiet) | Kokiria. |
-| „ (reside | Kotura. Kuikara. |
+| „ (reside) | Kotura. Kuikara. |
 | Seven, *n.* | Mugwanja. |
 | Seventh | -a mugwanja. |
 | Seventy, *n.* | Merungu mugwanja. |
@@ -5825,8 +5657,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 161 (p. 156) --&gt;
-**156** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 161 (Page 156)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5843,30 +5674,29 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ (female, bearing) | Ng'ondu (*s. & p.*). |
 | „ (male, big) | Njamba (*s. & p.*). |
 | Shell, to | Kuoa. |
-| Shelter, to | Kuikaria. Kohith[a]. |
+| Shelter, to | Kuikaria. Kohith[a.] |
 | Shepherd, *n.* | Murethi (A-). |
 | Shield, *n.* | Ngo (*s. & p.*). |
 | Shin, *n.* | Muthimo (Mi-). |
-| Shine, to | Koruta merori. K[othera]. |
+| Shine, to | Koruta merori. K[othera.] |
 | Ship, *n.* | Muharati (Mi-). |
 | Shirt, *n.* | Tama wa theni ([Matama] ma theni). |
 | Shiver, to | Kuinaina. |
 | Shoe, *n.* | Keratu (I-). |
 | Shoot, to (plants) | Kothithuka. |
 | „ a gun, to | Koringa muchinga. [Kui]kia. |
-| „ game, to | Koratha. Kogwim[a]. |
+| „ game, to | Koratha. Kogwim[a.] |
 | Shop, *n.* | Kithogoroini (I-). |
-| Short, *adj.* | -kuhi. (small) -nyi[nyi]. |
+| Short, *adj.* | -kuhi. (small) -nyi[nyi.] |
 | Shorten, to | Kokuehia. |
 | Shoulder, *n.* | Kiandi (Chiandi). |
-| Shout, to | Kogamba. Kuitan[a]. [Ko]rira. Koruta mu[gambo]. |
-| Show, to | Kuonia. Kuikira [otheri]. |
+| Shout, to | Kogamba. Kuitar[a. Ko]rira. Koruta mb[u.] |
+| Show, to | Kuonia. Kuikira [otheri.] |
 | Shriek, to | Kokaiya. Korira. |
 
 ---
 
-&lt;!-- Page 162 (p. 157) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **157**
+*Page 162 (Page 157)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5886,7 +5716,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Sieze, to | Kokwata. Konyita. |
 | Sift, to | Kohuha. |
 | Sigh, to | Kochaia. |
-| Sign, *n.* | Kionia (Chionia). Kiama. (Chiama). Rori (Ma-). |
+| Sign, *n.* | Kionia (Chionia). Kiama (Chiama). Rori (Ma-). |
 | Signal, to | Koheneria. |
 | Silence, *n.* | Okiri. Makiro. |
 | Silent, to be | Kokira. |
@@ -5904,31 +5734,30 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 163 (p. 158) --&gt;
-**158** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 163 (Page 158)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Sip, to | Kochamachama. K[onyua] kahora. |
 | Sister, *n.* | Mwari wa maito (A[ri]). |
-| Sister-in-law | Mwari wa nyina. Maramu (A-). |
+| Sister-in-law | Mwari wa nyina [etc.] Maramu (A-). |
 | Sit, to | Kuikara. |
 | „ with sick, to | Kuikaria. |
-| Six | Ithathatu. Itandat[u]. |
+| Six | Ithathatu. Itandat[u.] |
 | Sixth, *adj.* | -a itandatu. |
 | Sixty | Merungu itandatu. |
 | Size, *n.* | Kigero (I-). |
 | Skill, *n.* | Ogi. |
-| Skin, to | Kothenja roa. Koru[ta roa]. |
+| Skin, to | Kothenja roa. Koru[ta roa.] |
 | „ *n.* | Roa (Njoa). |
 | Sky, *n.* | Matu. |
-| Slander, to | Kothorethia. Koch[uka]. |
+| Slander, to | Kothorethia. Koch[uka.] |
 | Slap, to | Kogotha na rohe. |
 | Slaughter, to | Kothenja (for food). |
 | „ (kill) | Kuuraga. |
 | Slay, to | *see* Slaughter |
 | Slave, *n.* | Ngombo (*s. & p.*). |
-| Sleep, to | Kokoma. Kochung[a]. |
+| Sleep, to | Kokoma. Kochunga. |
 | „ *n.* | Toro. |
 | Sleeping-place, *n.* | Kiraro (I-). |
 | Sleepy, to feel | Kochunga. |
@@ -5946,8 +5775,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 164 (p. 159) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **159**
+*Page 164 (Page 159)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -5988,8 +5816,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 165 (p. 160) --&gt;
-**160** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 165 (Page 160)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6003,7 +5830,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Sorry, to be | Korakara. |
 | Sort, *n.* | Muthemba (Mi-). (tribe) Muhiriga (Mi-). |
 | Sort of, what | -riko, with spec. prefix. |
-| Soul, *n.* | Ngoro (*s. & p.*). Muoyo (Mi-) |
+| Soul, *n.* | Ngoro (*s. & p.*). Muoyo (Mi-). |
 | Sound, *n.* | Mugambo (Mi-). |
 | „ *adj.* | -gima. |
 | Soup, *n.* | Thathi. |
@@ -6028,8 +5855,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 166 (p. 161) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **161**
+*Page 166 (Page 161)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6067,12 +5893,9 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to (set out) | Kothama. Kothie. |
 | [Sta]rve, to | Kuigua ng'aragu. |
 
-**L**
-
 ---
 
-&lt;!-- Page 167 (p. 162) --&gt;
-**162** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 167 (Page 162)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6087,7 +5910,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ for ear, *n.* | Ronyori (Nyori). |
 | Sting, to | Koratha. |
 | „ *n.* | Rowora (Mbora). (Marowora.) |
-| Stingy, *adj.* | -gagatu ? |
+| Stingy, *adj.* | -gagatu? |
 | Stir, to | Kuuruga. |
 | Stomach, *n.* | Ndaa. |
 | Stone, *n.* | Ihiga (Mahiga). (of fruit) Nyungo (*s. & p.*). |
@@ -6107,8 +5930,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 168 (p. 163) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **163**
+*Page 168 (Page 163)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6120,7 +5942,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Stream, *n.* | Roe (Njoe). |
 | Strength, *n.* | Hinya. Muoyo. |
 | Strengthen, to | Kuikira hinya. |
-| Stretch arms, to | Kotambararia |
+| Stretch arms, to | Kotambararia. |
 | „ a skin, to | Kuomba. Kuanika. Kuara roa. |
 | „ oneself, to | Kuinogora. |
 | „ out, to | Kuamba. Kuanika. Kotambararia. |
@@ -6148,8 +5970,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 169 (p. 164) --&gt;
-**164** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 169 (Page 164)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6188,8 +6009,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 170 (p. 165) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **165**
+*Page 170 (Page 165)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6228,8 +6048,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 171 (p. 166) --&gt;
-**166** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 171 (Page 166)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6269,8 +6088,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 172 (p. 167) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **167**
+*Page 172 (Page 167)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6298,7 +6116,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ (for that) | Kwa kogea. |
 | Thatch, to | Kogita nyumba. |
 | Theft, *n.* | Kuiya. Oichi. |
-| Them, *pron.* | -ria, with particular prefix. (*in verbs*) -ma, -chia, etc., according to class. |
+| Them, *pron.* | -ria, with particular prefix. (in *verbs*) -ma, -chia, etc., according to class. |
 | Themselves, *pron.* | -eni. |
 | Then, *adv.* | Otuku uchio. Riria. |
 | There, *adv.* | Koria. Haria. |
@@ -6309,15 +6127,14 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 173 (p. 168) --&gt;
-**168** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 173 (Page 168)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Thereby | Kwa undu uchio. Kwa oguo. |
 | Therefore | Kwa undu. |
 | Thereupon | Kwa undu uchio. Orimwe. |
-| These, *adj.* & *pron.* | Aya. Ichi. Maya. Haha. |
+| These, *adj. & pron.* | Aya. Ichi. Maya. Haha. |
 | They, *pron.* | Aria. Iria. Maria. Haria. |
 | Thick, *adj.* | -nene. -tungu. -are. |
 | Thicken, to | Koruta -tunga. Komatia. |
@@ -6333,7 +6150,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Third, *adj.* | -a katatu. |
 | Thirdly, *adv.* | Na katatu. |
 | Thirst, *n.* | Nyota. |
-| „ to | Konyota. Kuigua nyota. |
+| „ to | Konyota. Kuigua. nyota. |
 | Thirsty, *adj.* | -eni nyota. |
 | Thirteen, *n.* | Ikumi na ithathatu. |
 | Thirteenth, *adj.* | -ai kumi na ithathatu. |
@@ -6352,8 +6169,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 174 (p. 169) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **169**
+*Page 174 (Page 169)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6382,14 +6198,13 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Tie, to | Kuoha. |
 | Tighten, to | Kuoha. Konyitia. |
 | Till, to | Korima. |
-| „ *prep.* & *adv.* | Ota. Muhaka. |
+| „ *prep. & adv.* | Ota. Muhaka. |
 | Timber, *n.* | Muti (Miti). |
 | Time, *n.* (little space of) | Kahinda. (day) Muthenya (Mi-). (month) Mweri (Mi-). (year) Mwaka (Mi-). (hour) Hindi (Ma-). (life) Mathirero. (past) Tene. |
 
 ---
 
-&lt;!-- Page 175 (p. 170) --&gt;
-**170** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 175 (Page 170)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6398,7 +6213,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Timid, *adj.* | -a guoya. |
 | „ person, *n.* | Keguoya (Iguoya). |
 | Tin, *n.* | Kibaba (Ibaba). |
-| Tint, to | Kohaka therega. Kuikir[a] therega. |
+| Tint, to | Kohaka therega. Kuikira therega. |
 | Tiny, *adj.* | -a kanini. -nyinyi. |
 | Tip, *n.* | Muthia (Mithia). |
 | Tipsy, to be | Koreo. |
@@ -6409,7 +6224,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Toast, to | Kokaranga. |
 | Tobacco, *n.* | Mbaki. |
 | „ -pipe, *n.* | Mutung'i (Mi-). |
-| To-day, *n.* | Reu. Omothi. Mutheny[a] uyu. Otuko uyu. |
+| To-day, *n.* | Reu. Omothi. Muthenya uyu. Otuko uyu. |
 | Together, *adv.* | Hamwe na. |
 | Toil, *n.* | Wera (Mawera). |
 | „ to | Koruta wera. |
@@ -6423,13 +6238,12 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | To-morrow, *n.* | Rochio. |
 | „ *n.* day after | Oke. |
 | „ two days after | Matukwatatu. |
-| Tone, *n.* | Mugambo (Mi-). Muthe[mba] wa mugambo (Mi-). |
+| Tone, *n.* | Mugambo (Mi-). Muthemba wa mugambo (Mi-). |
 | Tongs, *n.* | Ngori (*s. & p.*). |
 
 ---
 
-&lt;!-- Page 176 (p. 171) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **171**
+*Page 176 (Page 171)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6466,15 +6280,14 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 177 (p. 172) --&gt;
-**172** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 177 (Page 172)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Tradition, *n.* | Kirera (I-). |
 | Traduce, to | Konegenia. |
 | Trail, *n.* | Makinya. |
-| Train, to | Korutana. Komenyith[ia]. Korera. |
+| Train, to | Korutana. Komenyith[ia.] Korera. |
 | Trainer, *n.* | Murutani (A-). |
 | Trait, *n.* | Kionio (Chionio). |
 | Traitor, *n.* | Muhinga (A-). Muthig[ani] (A-). Hinga (*s. & p.*). |
@@ -6482,10 +6295,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Trample, to | Kokinyanga. |
 | Tranquil, *adj.* | -a kahora. |
 | Transact, to | Koruta. |
-| Transaction, *n.* | Wera. Uhoro. Ndet[o]. |
-| Transfer, to | Kohee. Koruta. Ko[ga]rora. |
+| Transaction, *n.* | Wera. Uhoro. Ndeto. |
+| Transfer, to | Kohee. Koruta. K[oga]rora. |
 | Transfiguration, *n.* | Ogarori. Ogaruruki. |
-| Transfigure, to | Kogarora. Kogaruruk[ia]. |
+| Transfigure, to | Kogarora. Kogaruruk[ia.] |
 | Transform, to | Kogarora. Kokorania. |
 | Transgress, to | Kuehiya. |
 | Transgression, *n.* | Rehiya (Me-). |
@@ -6505,8 +6318,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 178 (p. 173) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **173**
+*Page 178 (Page 173)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6545,8 +6357,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 179 (p. 174) --&gt;
-**174** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 179 (Page 174)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6583,8 +6394,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 180 (p. 175) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **175**
+*Page 180 (Page 175)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6624,8 +6434,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 181 (p. 176) --&gt;
-**176** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 181 (Page 176)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6643,7 +6452,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Uncleanness, *n.* | Geko. Ndaka. |
 | Unclothe, to | Koruta tama. |
 | Uncomfortable, *adj.* | Ti -ega. -tarikuigana. |
-| Uncommon, *adj.* | -geni. -a komaka. -a -a wiki. |
+| Uncommon, *adj.* | -geni. -a komaka. -a wiki. |
 | Uncouth, *adj.* | -uru. -geni. -a muguruki. |
 | Uncover, to | Koguuria. Kokunora. |
 | Unctuous, *adj.* | -a maguta. |
@@ -6663,8 +6472,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 182 (p. 177) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **177**
+*Page 182 (Page 177)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6681,7 +6489,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Unformed, *adj.* | -thi. |
 | Unfriendly, *adj.* | -tari ndugu. |
 | Unfruitful, to be (barren) | Kothata. |
-| Unfruitful, *adj.* | -tari machiaro. -thata. |
+| Unfruitful, *adj.* | -tari machiaro. -t ata. |
 | Unhappy, *adj.* | -a otheni. -a thena. |
 | Unhinge, to | Koruta handu hake. Kohingura. |
 | Unholy, *adj.* | -a geko. -uru. -aganu. |
@@ -6697,14 +6505,11 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Unlearn, to | Koriganiruo. |
 | Unless, *conj.* | Hatari. |
 | Unlike | Koraiya. |
-| Unlimited, *adj.* | -tari kegero. -ngi muno. |
-
-**M**
+| Unlimited, *adj.* | -tari kegero. -ng munio. |
 
 ---
 
-&lt;!-- Page 183 (p. 178) --&gt;
-**178** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 183 (Page 178)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6745,8 +6550,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 184 (p. 179) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **179**
+*Page 184 (Page 179)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6781,8 +6585,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 185 (p. 180) --&gt;
-**180** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 185 (Page 180)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6820,8 +6623,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 186 (p. 181) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **181**
+*Page 186 (Page 181)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6830,7 +6632,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Victor, *n.* | Muhoti (A-). |
 | Victuals, *n.* | Irio. |
 | View, to | Kuona. Korora. |
-| Vigil, *n.* | Otuko wa nbere (wa muthenya). |
+| Vigil, *n.* | Otuko wa mbere (wa muthenya). |
 | Vigorous, *adj.* | -a hinya. |
 | Vile, *adj.* | -uru muno. -aganu. |
 | Vilify, to | Korumana. |
@@ -6859,8 +6661,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 187 (p. 182) --&gt;
-**182** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 187 (Page 182)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6895,8 +6696,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 188 (p. 183) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **183**
+*Page 188 (Page 183)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6930,8 +6730,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 189 (p. 184) --&gt;
-**184** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 189 (Page 184)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6959,14 +6758,13 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to be out of | Kogea haraiya. |
 | „ to make | Koeherera. |
 | Waylay, to | Kuoha. Korangira. |
-| We, *pron.* | Ithui. (*in verb*) To- Tu- Tw-. |
+| We, *pron.* | Ithui. (in verb) To- Tu- Tw-. |
 | Weak, *adj.* | -henju. -tari na hinya. |
 | „ to be | Kohenja. Kogea na hinya (*negatively*). |
 
 ---
 
-&lt;!-- Page 190 (p. 185) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **185**
+*Page 190 (Page 185)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -6982,7 +6780,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Weariness, *n.* | Onogi. |
 | Weary, to | Konogia. |
 | „ to be | Konoga. |
-| Weather, what kind of | Kotariatea ? |
+| Weather, what kind of | Kotariatea? |
 | „ *n.* | (cloudy) Kwena matu. (cold) Kwena heho. (hot) Ohiyo. |
 | Weave, to | Kotuma. |
 | Web, *n.* (spider) | Iramata (Ma-). |
@@ -7003,37 +6801,36 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 191 (p. 186) --&gt;
-**186** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 191 (Page 186)*
 
 | English | Kikuyu |
 | :--- | :--- |
 | Welcome, *adj.* | -a kikenni. |
 | Welfare, *n.* | Uhoro. Wega. Otongi. |
 | Well, *adv.* | Wega. Muno. |
-| „ *inter. pron.* | Niatea ? -atea after verb. |
+| „ *inter. pron.* | Niatea? -atea after verb. |
 | „ *n.* (of water) | Kethima (I-). |
 | „ -known, *adj.* | -menyeki. |
 | „ off (person), *n.* | Ketonga (Itonga). |
 | West, *n.* | Naruguru. Gothoa. |
 | Wet, to | Kuikira mai. |
-| What ? *inter.* | Nike ? Niatea ? (sort of) -riko with prefix. |
-| When ? *inter. pron.* | Niri ? |
+| What? *inter.* | Nike? Niatea? (sort of) -riko with prefix. |
+| When? *inter. pron.* | Niri? |
 | „ *adv.* | Riria. |
 | Whence, *conj.* | -ko. |
 | „ *inter.* | -ko to verb. |
 | Whenever, *adv.* | Mithenya yothi. |
 | Where | Handu. |
-| „ *inter.* | -ha. -ka. (where are they ?) Meha ? |
+| „ *inter.* | -ha. -ka. (where are they?) Meha? |
 | Whereas, *adv.* | Kwaundu. Kwaoguo. |
-| Wherefore, *adv.* | Kwa undu uyu. Kwaoguo |
-| Wherefrom ? *inter.* | -ko at end of verb. |
+| Wherefore, *adv.* | Kwa undu uyu. Kwaoguo. |
+| Wherefrom? *inter.* | -ko at end of verb. |
 | Whereon | Kahinda. |
 | Whereupon, *conj.* | Kahinda. Kokangi. |
 | Wherever, *conj.* | Handu hothi. |
 | Whet, to | Konora. |
 | Whetstone, *n.* | Inoro (Ma-). |
-| Which ? *inter. pron.* | -riko. |
+| Which? *inter. pron.* | -riko. |
 | While, *adv.* | Hindi ya. |
 | „ to be worth | Kuigana. |
 | „ *n.* (space of time) | Kahinda. |
@@ -7046,8 +6843,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 192 (p. 187) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **187**
+*Page 192 (Page 187)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -7063,10 +6859,10 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | Whithersoever, *conj.* | Handu hothi. Ho hothi. |
 | Whit-Sunday, *n.* | Otuko wa Pentekote. |
 | Whiz, to | Kothie na rua. |
-| Who ? *pron.* | No ? *Who are you ?* Niweo ? |
+| Who? *pron.* | No? *Who are you?* Niweo? |
 | Whole, *adj.* | -gima. -othi. |
-| Whose ? *inter.* | -ao. |
-| Why ? *inter.* | Kwa undu uriko ? Nike ? |
+| Whose? *inter.* | -ao. |
+| Why? *inter.* | Kwa undu uriko? Nike? |
 | Wicked, *adj.* | -uru. -aganu. -a kuehiya. |
 | Wickedness, *n.* | Oru. Waganu. |
 | Wide, *adj.* | -arie. -a kokinya haraiya. |
@@ -7080,8 +6876,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 193 (p. 188) --&gt;
-**188** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 193 (Page 188)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -7112,16 +6907,15 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 194 (p. 189) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **189**
+*Page 194 (Page 189)*
 
 | English | Kikuyu |
 | :--- | :--- |
-| *[Withdraw, to (retire)]* | thie. Kohunduka. (remove) Koruta. Kokuua. (recall) Kochokia. |
+| *[Withdraw, to (continued)]* | thie. Kohunduka. (remove) Koruta. Kokuua. (recall) Kochokia. |
 | Wither, to | Kuoma. |
 | Withhold, to | Konyima. Kuima. Korega. |
-| Within, *adv.* ; na, *prep.* | Theni. Theni ya. |
-| Without, *adv.* ; na, *prep.* | Nja. Nja ya. (not with) Hatari. |
+| Within, *adv.*; na, *prep.* | Theni. Theni ya. |
+| Without, *adv.*; na, *prep.* | Nja. Nja ya. (not with) Hatari. |
 | Witness, to | Kuona mweni. Korora. (attest) Kuruta uhoro. Kugira. |
 | „ *n.* | Muoni (Oni). Muugiri (Augiri). Mumenyi (amenyi). |
 | Wittingly, *adv.* | Kwa ngoro. Kwa ogi. |
@@ -7146,8 +6940,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 195 (p. 190) --&gt;
-**190** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 195 (Page 190)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -7166,7 +6959,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 | „ to | Konogia. Korakaria. |
 | Worse, *adj.* | -uru kori. |
 | Worship, to | Kohoya. Kogocha muno. |
-| Worth (what price ?) | Goro uriko ? |
+| Worth (what price?) | Goro uriko? |
 | Worthy, *adj.* | -a kuigana. |
 | „ to be | Kuigana. Kuageriruo. |
 | Wound, *n.* | Kerema (I-). |
@@ -7181,8 +6974,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 196 (p. 191) --&gt;
-**ENGLISH-KIKUYU VOCABULARY.** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **191**
+*Page 196 (Page 191)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -7218,8 +7010,7 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 197 (p. 192) --&gt;
-**192** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **ENGLISH-KIKUYU VOCABULARY.**
+*Page 197 (Page 192)*
 
 | English | Kikuyu |
 | :--- | :--- |
@@ -7252,44 +7043,51 @@ THE system of orthography adopted in this Vocabulary is broadly that used by the
 
 ---
 
-&lt;!-- Page 198 --&gt;
-*(Blank page)*
+*Page 198*
+
+*[Blank]*
 
 ---
 
-&lt;!-- Page 199 (Library Date Due Slip) --&gt;
+*Page 199 (Library Recall Slip)*
 
-> #### CECIL H. GREEN LIBRARY
-> #### STANFORD UNIVERSITY LIBRARIES
-> #### STANFORD, CALIFORNIA 94305-6063
-> #### (650) 723-1493
-> #### `grncirc@stanford.edu`
->
-> All books are subject to recall.
->
-> **DATE DUE**
-> * `JUN 15 2005`
-> * `DEC 05 2005`
+**CECIL H. GREEN LIBRARY**  
+**STANFORD UNIVERSITY LIBRARIES**  
+**STANFORD, CALIFORNIA 94305-6063**  
+**(650) 723-1493**  
+**grncirc@stanford.edu**  
+*All books are subject to recall.*
+
+| DATE DUE |
+| :---: |
+| JUN 15 2005 |
+| DEC 05 2005 |
 
 ---
 
-&lt;!-- Page 200 (Stanford University Libraries Barcode &amp; Circulation Card) --&gt;
+*Page 200 (Inside Back Cover)*
 
-`PL 8379.4 .M3` &nbsp;&nbsp;&nbsp;&nbsp; `C.1`  
+`PL 8379.4 .M3 C.1`  
 `English-Kikuyu vocabulary,`  
 `Stanford University Libraries`  
 `3 6105 037 215 303`
 
-### Stanford University Libraries
-### Stanford, California
+**PL 8379.4 .M3**
+
+**Stanford University Libraries**  
+**Stanford, California**
+
 `MAR 21 1991`
 
 **Return this book on or before date due.**
 
-* `SEP 17 1990`
-* `MAY 23 19[91]`
+| DATE DUE |
+| :---: |
+| SEP 17 1990 |
+| MAY 23 19[91] |
 
 ---
 
-&lt;!-- Page 201 (Back Flyleaf) --&gt;
-*(Blank page)*
+*Page 201*
+
+*[Blank]*

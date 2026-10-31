@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Turkana (Ng'aturukana) public-domain vocabulary compiled strictly from 'Turkana Grammatical Notes and Vocabulary' by Juxon Barton (Journal of the Royal Anthropological Institute, Vol. 51, 1921).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Juxon Barton (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -5476,6 +5476,27 @@
           "translation": "ebelebel, pl. ngebelebellai",
           "pronunciation": "ebelebel",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Circular iron wrist-knife worn with leather guard by Turkana men",
+          "translation": "abarait (pl. ngabaraitin)",
+          "pronunciation": "ah-bah-rah-eet",
+          "context": "Rev. J. B. Purvis (1909, Ch. XIII, p. 255) & Juxon Barton (1921)",
+          "audioFile": null
+        },
+        {
+          "english": "Carved wooden neck-stool / headrest carried by Turkana pastoralists",
+          "translation": "ekicholong (pl. ngikicholongis)",
+          "pronunciation": "eh-kee-choh-lohng",
+          "context": "Rev. J. B. Purvis (1909, Ch. XIII, p. 256) & Lieut. Ludwig von Höhnel (1894)",
+          "audioFile": null
+        },
+        {
+          "english": "Felted clay and ostrich-plume chignon headdress of Turkana elders/warriors",
+          "translation": "emedot",
+          "pronunciation": "eh-meh-doht",
+          "context": "Rev. J. B. Purvis (1909, Ch. XIII, p. 254) & Lieut. Ludwig von Höhnel (1894)",
           "audioFile": null
         }
       ]
@@ -14238,7 +14259,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Johnston 1902, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
+  "source": "Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
   "isoCode": "tuv",
   "glottocode": "turk1308"
 }

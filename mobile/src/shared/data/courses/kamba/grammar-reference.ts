@@ -5,8 +5,10 @@
 // 2. J. T. Last (1885) "Grammar of the Kamba Language" (SPCK, London — Public Domain)
 // 3. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages" (Cambridge — Public Domain)
 // 4. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
-// 5. Sir Harry H. Johnston (1919) "A Comparative Study of the Bantu and Semi-Bantu Languages" (#12 Kamba)
-// 6. Gerhard Lindblom (1920) "The Akamba in British East Africa: An Ethnological Monograph" (Uppsala — Public Domain)
+// 5. Hon. Charles Dundas (1915) "The Organization and Laws of Some Bantu Tribes in East Africa" (JRAI Vol. 45)
+// 6. Sir Harry H. Johnston (1919) "A Comparative Study of the Bantu and Semi-Bantu Languages" (#12 Kamba)
+// 7. Gerhard Lindblom (1920) "The Akamba in British East Africa: An Ethnological Monograph" (Uppsala — Public Domain)
+// 8. Patrick Jones & Jeremy Freyer (2019) "Kikamba Verb Stem Tonology" (Theory and Description in African Linguistics, Ch. 10)
 // ============================================================
 
 export interface KambaGrammarSection {
@@ -154,33 +156,48 @@ export const KAMBA_GRAMMAR_SECTIONS: KambaGrammarSection[] = [
   },
   {
     id: "kamba-verbal-extensions-locatives",
-    title: "Verbal Extensions (-ĩa, -ĩthya, -ana, -wa), Locative Suffix (-nĩ) & Lindblom (1920) / Hobley (1910) Ethnographic Lexicon",
-    summary: "Kĩkamba suffixes -nĩ to mark location, uses productive verbal extensions, and preserves rich institutional terminology for the 25 mbai clans, nžama council, kīþītū oath, and nðonī avoidance register.",
-    content: `Last (1885), Hobley (*Ethnology of A-Kamba*, 1910), and Gerhard Lindblom (*The Akamba in British East Africa*, 1920) document Kĩkamba verbal extensions and cultural terminology:
+    title: "Verbal Extensions (-ĩa, -ĩthya, -ana, -wa), Locative Suffix (-nĩ) & Lindblom (1920) / Dundas (1915) Ethnographic Lexicon",
+    summary: "Kĩkamba suffixes -nĩ to mark location, uses productive verbal extensions, and preserves rich institutional terminology for the 25 mbai clans, nžama council, king'ole communal justice, kīþītū oath, and nðonī avoidance register.",
+    content: `Last (1885), Hobley (*Ethnology of A-Kamba*, 1910), Hon. Charles Dundas (*The Organization and Laws of Some Bantu Tribes in East Africa*, JRAI Vol. 45, 1915), and Gerhard Lindblom (*The Akamba in British East Africa*, 1920) document Kĩkamba verbal extensions and cultural terminology:
 1. **Locative Suffix (*-nĩ*) & Verbal Extensions**:
    - *mũũnda* (farm) → **mũũndanĩ** (in the farm); *nyũmba* (house) → **nyũmbanĩ** (in the house).
    - **Applicative (*-ĩa / -ea*)**: *kũua* (cook) → **kũuĩa** (cook for); **Causative (*-ĩthya / -ya*)**: *kũsoma* → **kũsomethya** (teach); **Reciprocal (*-ana*)**: **kwendana** (love one another); **Passive (*-wa*)**: **kũonwa** (be seen).
-2. **Institutional, Ritual & Ecological Lexicon (Hobley 1910 & Lindblom 1920)**:
-   - **Mbai (Clans & Totems *Kindu kithuku / Uthuku*, Hobley 1910, pp. 4–6 & Lindblom 1920, pp. 113–136)**: 8 original Ulu clans (*Atui, Ethanga, Anzauni, Amutei, Amuti, Akimei, Amoi, Amwei*) with 16 sub-clans (*Aitangwa, Asii, Akitutu, Akitondo, Amoini, Amoni, Embua, Amui, Eombi, Evai, Aieni, Anzio, Eiwani, Amunda, Akua, Amuin, Akitemei*), 33 Mumoni *Ba-* clans, and 18 Kitui clans; the tortoise (*Ngu*) is taboo to all A-Kamba.
-   - **Social & Judicial Grades (Lindblom 1920, pp. 143–175)**: **Anake** (warriors) → **Nthele** (young married men) → **Atumĩa ma kisuka** → **Atumĩa ma nžama** (council elders) → **Atumĩa ma kīvalo** (district judges) → **Atumĩa ma ītiŋo** (custodians of the sacred shrine).
-   - **Oaths & Religion**: **Kīþītū (Kithito)** (supreme judicial oath) & **Muma** (peace/covenant oath); **Muluŋgu (Mulungu / Ngai)** (Supreme Creator); **Aīmu (Aiimu)** (ancestral spirits); **Ithembo (pl. Mathembo)** (sacred grove shrine); **Mundu muə (Mũndũ mũe)** (diviner/healer with divining gourd *ūtīwa*).
-   - **Nðonī (Nthoni), 14 Kwīua Name-Taboo Substitutions & 7 Women's Register Words (Lindblom 1920, pp. 89–98, 574)**:
-      - **Kwīua Substitutions (pp. 93–94)**: *kīoko* ("tomorrow") → *uī*; *kīlonžo* ("noise") → *ŋguaīa*; *īlondu* ("sheep") → *ŋgondu*; *nžukī* ("bee") → *ndoŋgoŋgi*; *nžoka* ("snake") → *nīamu īa nðī / īkīlu*; *wa mbua* ("of rain") → *nduþu*; *ŋgomo* ("adze") → *ndæβo*; *mbesa* ("pice") → *īβulī*; *nzau* ("white") → *ndeuβu*; *þomə* ("kraal yard") → *īβuβeonī / muumaloni*; *mwatū* ("beehive") → *mwaŋgo*; *ītwīku* ("ravine") → *wīnuka*; *mwæī* ("moon") → *musesīa nðī*.
-      - **Women's Register (p. 574)**: *mbunu* (castor seeds, for *mbaīkī*), *kīowu* (water, for *manžī*), *kīsīeelī* (wind, for *ŋgutanī*), *kwīsonoka* (be ashamed, for *kwīwīa nðonī*), *īma / īsuma mīno* (sheep, for *īlondu*), *mbuβaŋga* (firewood, old women's word for *ŋgu*), *ukaþi* (horn → uncircumcised girl's clitoris *uþuþu*).
-    - **Three Nžaīko Initiation Degrees & Six Kukula Meat-Grades (Lindblom 1920, pp. 42–71, 144–145)**:
-      - **(1) Nžaīko īla nīnī / īa kaβīu** (circumcision by *mwaīkī*), **(2) Nžaīko īla nænə / īa mbusīa** (Great Rhinoceros initiation in the *īþunu* hut with *musaī* pictographic sticks, roaring *mbusīa*, *mumbu* sap, and *ndoŋgu* Solanum raid), **(3) Nžaīko īa aumə / mbæβanī** (Men's secret initiation with V-shaped *kīusīa* pipes, 4 rank-fires *asīŋgī, ŋgala, aβwīkī, nžama*, and 5 secret recognition signs).
-      - **6 Kukula Meat-Eating Ranks**: (1) 1 goat → *mutumīa wa mutwə* (goat's head), (2) 1st bull → lower leg, (3) 2nd bull → upper leg, (4) 3rd bull → loins & brisket, (5) 4th bull → hump (*kīaə*), (6) 5th bull → cattle tongue & head.`,
+2. **Institutional, Judicial & Ecological Lexicon (Hobley 1910, Dundas 1915 & Lindblom 1920)**:
+   - **Mbai (Clans & Totems *Kindu kithuku / Uthuku*, Hobley 1910, pp. 4–6 & Lindblom 1920, pp. 113–136)**: 8 original Ulu clans (*Atui, Ethanga, Anzauni, Amutei, Amuti, Akimei, Amoi, Amwei*) with 16 sub-clans, 33 Mumoni *Ba-* clans, and 18 Kitui clans; the tortoise (*Ngu*) is taboo to all A-Kamba.
+   - **Social & Judicial Grades (Dundas 1915, pp. 244–253 & Lindblom 1920, pp. 143–175)**: **Anake** (warriors) → **Nthele** (young married men) → **Atumĩa ma kisuka** (beer-council elders) → **Atumĩa ma nžama** (judicial council elders) → **Atumĩa ma kīvalo** (district judges) → **Atumĩa ma ītiŋo** (custodians of the sacred *ithembo* shrine); **King'ole** (supreme communal justice assembly against habitual sorcerers or offenders, Dundas 1915, p. 262).
+   - **Oaths, Land (*Ng'undu*) & Religion**: **Ng'undu** (ancestral cultivated land estate, vs. *weu* open grazing commonage, Dundas 1915, p. 297); **Kīþītū (Kithito)** (supreme judicial oath) & **Muma** (peace/covenant oath); **Muluŋgu (Mulungu / Ngai)** (Supreme Creator); **Aīmu (Aiimu)** (ancestral spirits); **Ithembo (pl. Mathembo)** (sacred grove shrine); **Mundu muə (Mũndũ mũe)** (diviner/healer with divining gourd *ūtīwa*).`,
     examples: [
-      { kamba: "Atumĩa ma nžama • Atumĩa ma kīvalo • Kīþītū (Kithito) • Ithembo", english: "Council elders • District judges • Supreme oath • Sacred grove shrine", explanation: "Akamba governance and ritual lexicon (Hobley 1910 & Lindblom 1920)" },
+      { kamba: "Atumĩa ma nžama • Atumĩa ma kīvalo • King'ole • Ng'undu vs. Weu", english: "Council elders • District judges • Supreme communal tribunal • Ancestral farm estate vs. common grazing land", explanation: "Akamba governance and land law (Hobley 1910, Dundas 1915 & Lindblom 1920)" },
       { kamba: "Muluŋgu • Aīmu (Aiimu) • Mundu muə (Mũndũ mũe)", english: "Supreme Creator • Ancestral spirits • Diviner / medicine man", explanation: "Lindblom (1920, pp. 213–254) & Hobley (1910, pp. 85–95)" },
       { kamba: "Nðonī (Nthoni) • Mbai • Mwethya", english: "In-law respect/avoidance custom • Clan • Communal mutual-aid work party", explanation: "Core Akamba social institutions (Lindblom 1920)" }
+    ]
+  },
+  {
+    id: "kamba-melodic-tone-jones-freyer-2019",
+    title: "Kĩkamba Four-Level Surface Tone System (H, L, Super-High, Super-Low) & Five Verbal Stem Melodies (Jones & Freyer 2019)",
+    summary: "Patrick Jones & Jeremy Freyer (2019, Ch. 10 of Theory and Description in African Linguistics, pp. 163–181) demonstrate how Kĩkamba's four surface tone heights (High, Low, Super-High, Super-Low) derive from five underlying tonal melodies on the verb stem plus boundary tone Lφ.",
+    content: `From Patrick Jones & Jeremy Freyer (*"Kikamba Verb Stem Tonology"*, in *Theory and Description in African Linguistics*, ed. Clem, Jenks & Sande, Language Science Press, 2019, Ch. 10, pp. 163–181):
+1. **Four Surface Tone Levels & Assertive Boundary Tone (Lφ)**:
+   - Kĩkamba contrasts four surface pitch levels: **High (H, \`á\`)**, **Low (L, \`à\`)**, **Super-High (SH, \`a̋\`)**, and **Super-Low / Extra-Low (SL, \`ȁ\`)**.
+   - Phrase-final **Super-Low (\`ȁ\`)** arises when an assertive phrasal boundary tone **Lφ** docks onto a final Low tone (e.g., *ko-konȁ* 'to hit' in isolation vs. *ko-konà ma-i.ò* 'to hit bananas' when non-final).
+   - **Super-High (\`a̋\`)** and falling contour **SH-L (\`â\`)** arise when Lφ interacts with a final High or floating suffixal tone (e.g., *to-í-kon-ááng-á-â* 'we do not usually hit' vs. *to-í-kon-ááng-á-a̋ ma-i.ò* 'we do not usually hit bananas').
+2. **Five Core Verbal Stem Melodies**:
+   - Underlyingly, Kĩkamba verb roots are toneless; inflectional tense/aspect/mood categories assign one of five grammatical tone melodies to the verb stem:
+   - **(1) {LFV}**: Low tone on the final vowel (e.g., infinitive *ko-konȁ* 'to hit').
+   - **(2) {HFV}**: High tone on the final vowel.
+   - **(3) {HV2}**: High tone assigned to the second stem mora.
+   - **(4) {HV2 + LFV}**: High on the second stem mora plus Low on the final vowel.
+   - **(5) {HV2 + HFV}**: High on the second stem mora spreading to the final vowel, combined with floating suffixal tones ({LSuf} or {HSuf}).`,
+    examples: [
+      { kamba: "ko-konȁ (phrase-final SL) vs. ko-konà ma-i.ò (non-final L)", english: "to hit vs. to hit bananas", explanation: "Assertive phrasal boundary tone Lφ lowers phrase-final L to Super-Low (Jones & Freyer 2019, p. 165)" },
+      { kamba: "to-í-kon-ááng-á-â vs. to-í-kon-ááng-á-a̋ ma-i.ò", english: "we do not usually hit vs. we do not usually hit bananas", explanation: "Super-High (a̋) and falling contour realization before vs. at phrase boundary (Jones & Freyer 2019, p. 166)" }
     ]
   },
   {
     "id": "kamba-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Kamba (Kĩkamba))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Kamba (Kĩkamba).",
-    "content": "1. **Archival & Open-Dataset Integration for Kamba (Kĩkamba)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Kamba (Kĩkamba)**:\n   - Combines primary historical documentation (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920, BFBS 1921, Jones & Freyer 2019) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "kamba": "wa téne • nsáu",

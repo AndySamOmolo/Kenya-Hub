@@ -13,8 +13,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Somali (Af-Soomaali) public-domain vocabulary compiled from Fr. Evangeliste de Larajasse (1897) \"Somali–English and English–Somali Dictionary\", Sir Harry H. Johnston (1902), and J. W. C. Kirk (1905) \"A Grammar of the Somali Language\".",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
   "categories": [
     {
       "id": "greetings",
@@ -3401,6 +3401,20 @@
           "pronunciation": "si-la san",
           "context": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)",
           "audioFile": null
+        },
+        {
+          "english": "The boy (masculine penultimate tonal accent + -ka definite article)",
+          "translation": "ínanka (indef. ínan)",
+          "pronunciation": "ee-nahn-kah",
+          "context": "Morgan Nilsson (2016, Ch. 23, p. 453) — Somali Gender Polarity Revisited",
+          "audioFile": null
+        },
+        {
+          "english": "The girl (feminine final tonal accent + -ta definite article)",
+          "translation": "inánta (indef. inán)",
+          "pronunciation": "ee-nahn-tah",
+          "context": "Morgan Nilsson (2016, Ch. 23, p. 453) — Somali Gender Polarity Revisited",
+          "audioFile": null
         }
       ]
     },
@@ -5445,6 +5459,13 @@
           "pronunciation": "da-meir",
           "context": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)",
           "audioFile": null
+        },
+        {
+          "english": "The ox vs. the oxen (5th declension tonal & gender polarity)",
+          "translation": "díbiga (masc. sg.) → dibída (fem. coll. pl.)",
+          "pronunciation": "dee-bee-gah / dee-bee-dah",
+          "context": "Morgan Nilsson (2016, Ch. 23, p. 455) — Somali Gender Polarity Revisited",
+          "audioFile": null
         }
       ]
     },
@@ -7446,6 +7467,27 @@
           "translation": "addo, hajin",
           "pronunciation": "addo hajin",
           "context": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "Build! (Series A -ATR imp.) vs. He built (Series B +ATR past)",
+          "translation": "dhis (-ATR) vs. dhis (+ATR)",
+          "pronunciation": "dhis",
+          "context": "Wendell Kimper et al. (2019, Ch. 11, p. 186) — Acoustic Correlates of Vowel Harmony in Somali",
+          "audioFile": null
+        },
+        {
+          "english": "Song (Series A -ATR noun) vs. He sang (Series B +ATR verb)",
+          "translation": "hees (-ATR) vs. hees (+ATR)",
+          "pronunciation": "hees",
+          "context": "Wendell Kimper et al. (2019, Ch. 11, p. 186) — Acoustic Correlates of Vowel Harmony in Somali",
+          "audioFile": null
+        },
+        {
+          "english": "I fainted (Series A -ATR) vs. I refused (Series B +ATR)",
+          "translation": "diiday (-ATR) vs. diiday (+ATR)",
+          "pronunciation": "dee-day",
+          "context": "Wendell Kimper et al. (2019, Ch. 11, p. 186) — Acoustic Correlates of Vowel Harmony in Somali",
           "audioFile": null
         }
       ]
@@ -17566,7 +17608,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (de Larajasse 1897, Johnston 1902 & Kirk 1905)",
+  "source": "Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
   "isoCode": "som",
   "glottocode": "soma1255"
 }

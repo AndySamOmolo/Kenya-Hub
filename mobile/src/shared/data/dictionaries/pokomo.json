@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-30",
-  "contributorNote": "Pokomo (Kipfokomo) dictionary compiled line-by-line from Rev. Dr. J. L. Krapf ('Vocabulary of Six East-African Languages', Tübingen, 1850 — Public Domain), Ferdinand Würtz ('Wörterbuch des Ki-Tikuu und des Ki-Pokomo', 1895 — Public Domain), Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 98–112 & Vol. II, pp. 31–32, #13 Pωkωmω (Pfωkωmω), 1919 — Public Domain), and Nurse & Hinnebusch (1993).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73).",
   "categories": [
     {
       "id": "greetings",
@@ -16334,11 +16334,67 @@
           "pronunciation": "iva",
           "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
           "audioFile": null
+        },
+        {
+          "english": "Sub-tribe / riverine territorial alliance of the Pokomo (13 Vyeti along the Tana River)",
+          "translation": "keti (pl. vyeti)",
+          "pronunciation": "keh-tee / vyeh-tee",
+          "context": "Mikael Samson & R. G. Darroch (1944, pp. 119–149) — A History of the Pokomo (JRAI Vol. 73)",
+          "audioFile": null
+        },
+        {
+          "english": "Founding ancestor of the Buu sub-tribe of the Pokomo",
+          "translation": "SangoVere",
+          "pronunciation": "sahn-goh-veh-reh",
+          "context": "Mikael Samson & R. G. Darroch (1944, p. 122) — A History of the Pokomo (JRAI Vol. 73)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred friction-drum of the Wakijo elders' order",
+          "translation": "ngadzi",
+          "pronunciation": "ngah-dzee",
+          "context": "Prof. Alice Werner (1915, p. 342) & Mikael Samson (1944) — Kipfokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Senior council of elders among the Pokomo",
+          "translation": "kijo (members: wakijo)",
+          "pronunciation": "kee-joh / wah-kee-joh",
+          "context": "Prof. Alice Werner (1915, p. 339) & Mikael Samson (1944) — Kipfokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Pokomo healer-priest order",
+          "translation": "mugangana (pl. wagangana)",
+          "pronunciation": "moo-gahn-gah-nah",
+          "context": "Prof. Alice Werner (1915, p. 341) & Mikael Samson (1944) — Kipfokomo",
+          "audioFile": null
+        },
+        {
+          "english": "Pokomo age-set grade",
+          "translation": "luva (youth grade: nyere)",
+          "pronunciation": "loo-vah / nyeh-reh",
+          "context": "Prof. Alice Werner (1915, p. 338) — The Bantu Coast Tribes of the East Africa Protectorate",
+          "audioFile": null
+        },
+        {
+          "english": "Tall man (Pokomo epithet for the hero Liongo Fumo of Shaka)",
+          "translation": "muntu muyeya",
+          "pronunciation": "moon-too moo-yeh-yah",
+          "context": "Prof. Alice Werner (1933, Ch. X, p. 146) — Myths and Legends of the Bantu",
+          "audioFile": null
+        },
+        {
+          "english": "For God so loved the world (John 3:16 specimen in Kipokomo)",
+          "translation": "Kwani Muungu kahundza ulimwengu dza hivi",
+          "pronunciation": "kwah-nee moo-oon-goo kah-hoon-dzah oo-lee-mwen-goo",
+          "context": "The Gospel in Many Tongues (BFBS, London, 1921, p. 97 — Pokomo)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Krapf 1850, Würtz 1895 & Johnston 1919)",
+  "source": "Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
   "isoCode": "pkb",
   "glottocode": "poko1261"
 }

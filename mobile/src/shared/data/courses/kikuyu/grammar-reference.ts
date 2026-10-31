@@ -1,12 +1,14 @@
 // ============================================================
 // Kikuyu (Gĩkũyũ) Grammar Reference Guide
 // Based 100% on Public Domain Sources:
-// 1. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" & (1919) "Comparative Study of the Bantu Languages"
-// 2. Rev. Fr. A. Hémery, C.S.Sp. (1903) "English-Kikuyu Handbook: A Short Grammar, Vocabulary, and Phrase-Book"
-// 3. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages of East Africa" (Cambridge Univ. Press)
-// 4. Rev. A. W. McGregor (1904) "English-Kikuyu Vocabulary" (SPCK, London)
-// 5. W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikuyu of British East Africa" (London)
-// 6. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
+// 1. Lieut. Ludwig von Höhnel (1894) "Discovery of Lakes Rudolf and Stefanie, Vol. I" (1887 traverse of Kikuyuland)
+// 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" & (1919) "Comparative Study of the Bantu Languages"
+// 3. Rev. Fr. A. Hémery, C.S.Sp. (1903) "English-Kikuyu Handbook: A Short Grammar, Vocabulary, and Phrase-Book"
+// 4. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages of East Africa" (Cambridge Univ. Press)
+// 5. Rev. A. W. McGregor (1904) "English-Kikuyu Vocabulary" (SPCK, London)
+// 6. W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikuyu of British East Africa" (London)
+// 7. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
+// 8. Hon. Charles Dundas (1915) "The Organization and Laws of Some Bantu Tribes in East Africa" (JRAI Vol. 45)
 // ============================================================
 
 export interface KikuyuGrammarSection {
@@ -143,26 +145,23 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
   },
   {
     id: "kikuyu-cultural-lexicon-hobley",
-    title: "Classical Agĩkũyũ Social, Judicial, Seasonal, Clan & Ritual Terminology (McGregor 1904, Routledge 1910 & Hobley 1910, 1922)",
-    summary: "W. S. & K. Routledge (1910) and C. W. Hobley (1910, 1922) preserve the complete terminology of the 13 Agĩkũyũ clans (Mĩhĩrĩga), 10 generation ages (Rĩĩka), council system (Kiama), sacred ecology (Mũgumo), and oral literature (Ngano & Guso).",
-    content: `In *With a Prehistoric People: The Akikuyu of British East Africa* (1910) and *Bantu Beliefs and Customary Institutions* (1922, Glossary pp. 305–308), W. S. & K. Routledge and C. W. Hobley document the institutional vocabulary of Agĩkũyũ society:
-1. **The 13 Clans (*I-ri-ka* / *Mĩhĩrĩga*, Routledge 1910, pp. 20–23)**:
-   - **1. A-ché-ra** (Thomson’s gazelle totem), **2. A-ga-chí-ku** (forbidden to work iron or act as circumcisors; zebra totem), **3. A-ga-thi-gí-a** (warthog totem), **4. Ai-cha-ka-mú-yo**, **5. Ai-rí-mu**, **6. A-ki-ú-ru / M'we-sá-ga / M'bú-ru** (forbidden to work iron; males can see and stop rain, possess the evil eye cured with spittle-mud on temple, throat, and stomach, and preserve woodland; wild game totem), **7. Am-bú-i** (fish totem), **8. An-gá-ri / Ai-the-ka-hú-no** (sheep’s stomach totem), **9. An-jí-ru** (elephant & birds totem), **10. An-gó-i**, **11. E-thá-ga**, **12. Ai-ze-ran'-du** (hippo totem), and **13. Ai-zi-e-gé-ni** (impala totem).
-2. **The 10 Chronological Ages (*Rĩĩka*), 17 Initiation Years (1891–1907) & Life Stages (Routledge 1910, pp. 8–11, 25, 141, 237–238)**:
-   - **10 Ages Since Creation (p. 9)**: **1. Man-jí-ri** (God spoke to the first man **Mam'-ba**, who told his son **N'jí-ri** to dig channels and drain the land) → **2. Man-dó-ti** (evildoers) → **3. Chi-éra** (people multiplied) → **4. Masaí** (red earth became fashionable) → **5. Ma-thá-thi** (Akikúyu came from Akam'ba) → **6. N'dé-mi** ("to cut" forest trees) → **7. I-ré-gi** ("the revolters" against Somalis) → **8. Ma-í-na** → **9. Mwan'gi** → **10. Mu-i-run'-gu**, with the **Ai-twi-ka (Itwika)** ceremony held at the Mathioya River before the sacred river-creature **N'da-ma-thi-a** (pp. 237–238).
-   - **17 Annual Circumcision Initiation Years (1891–1907, pp. 10–11)**: *1891 Ngan'do, 1892 Ngi'-ge, 1893 Nyon'go, 1894 Mutung'o, 1895 Thungu'-ya, 1896 Ka-gi'-cha, 1897 Ki-angwa'chi, 1898 Nu'-thi, 1899 Ki-en-je'ku, 1900 Ndi'-mu, 1901 Hit'-ti, 1902 Ka-man'di, 1903 Mo-chi'-ri, 1904 Ki-hur'i-a, 1905 Kan-yo'-to, 1906 Nga'-ra, 1907 Ka-ban'go*.
-   - **10 Male & 7 Female Life Stages (pp. 25, 141)**: Male: *Ka'-he → Ki'-he (pl. i'-hee) → Mu'-mo → M'wa-na'-ke → Wa-ka-ny-u-ku → Mun'-du mu-ge'-ma → Ka-ra-bai' → M'zur'-i → M'zur'-i a ki-a-na → M'zur'-i a bou'i*; Female: *Ka-re'-go → Ki-ré-gu → Moi-re'-tu (pl. ai-) → Mu-hi'-ki → Wa-bai / M'wa-na-mú-ke → Mu-ti-mi'-a → I-he'-ti* ("filled with intelligence", p. 139).
-3. **Governance (*Mo-ran'-ja, Ki-á-ma, N'já-ma*), Religion (*N'gaí / Mwi-nin-ya-ga*), *Thá-hu* & Oral Literature (Routledge 1910, pp. 109–116, 178–281)**:
-   - **Three Ranks**: **Mo-ran'-ja** (or *N'dun'-du* / *Ke-thi-ga*, 1st rank, father of 2nd child), **Ki-á-ma** (council of elders/judges, father of initiated child), **N'já-ma** (co-opted warrior executive council; chief = *Mu-tha-má-ki*, spokesman = *Mo-chí-ri*); **Ki-tha-si** (14-holed curse stone with 7 holes per side held near Tú-su, pp. 273–275).
-   - **N'gaí / Mwi-nin-ya-ga** ("Possessor of Whiteness") on **Ki-ri-nya-ga / Ki-re-í-ra** (Mt. Kenya) and **Ny-an-da-rou** (Mt. Kinangop); **Mu-gú-mu**: sacred wild fig tree (sacrificial responses: *"N'ga-na!"* 'Amen' & *"Sa-i! Sa-i!"* 'Hear, hear!', p. 235); **N'gor'o** (living soul/breath) vs. **N'góma** (ancestral spirits in the underworld **Mi-i-ri-ni-ya Mi-kon-go-i**, p. 240); **Mũndũ Mũgo**: diviner using the **m'wá-no** lot-gourd and 5 **m'boo-thu** medicine gourds (*ru-sú-ku, gon'-du, u'-mu, u-then'-gi, í-ra*, p. 253); **Thá-hu**: 29 ritual defilements purged with *"Ta-hí-ka thá-hu!"* ("Vomit the sin!") and *"Ni-da-ni-na thá-hu wa-ku"* ("I have purged your sin", pp. 256–263); **Gĩcandĩ (Ki-shan'-di)**: enigmatic poetic gourd rattle with 47/37 pictographs (pp. 109–112).
-4. **Ecological Calendar, 7-Day Sequence, Marriage & Legal Lexicon (McGregor 1904, pp. 26, 36, 44, 66, 114, 142, 154, 170, 188)**:
-   - **Three Agricultural Cropping Seasons (p. 154)**: **Mwaka wa Njahi** (*Dolichos lablab* season), **Mwaka wa Mweri** (bulrush millet season), and **Mwaka wa Muheha / Mohea** (sorghum season).
-   - **Two Rainy Seasons (pp. 142, 188)**: Greater rainy/cold season = **Kathano** (*Mwaka wa heho*); Lesser rainy season = **Mwaka wa kehu**.
-   - **7-Day Relative Time Span (pp. 44, 114, 170)**: *Iyo* (day before yesterday) → *Ira* (yesterday) → *Reu / Omothi* (today) → *Rochio* (tomorrow) → *Oke* (day after tomorrow) → **Matukwatatu** (two days after tomorrow) → **Matukwana** (three days after tomorrow); Sunrise/East = **Itherero**, Sunset/West = **Naruguru / Gothoa** (pp. 54, 186).
-   - **Marriage, Inheritance & Law**: **Rorachio** (pl. *Marorachio*, bridewealth to bride's father), **Wathiomo** (ritual goat gift), **Kohikia / Kogurana** (to marry, of a man; *Mugurani* bridegroom) vs. **Kohika / Koguruo** (to marry, of a woman; *Muhiki / Muguruo* bride), **Magambo / Mugambo** (customary restitution fine for grave offence; general fine = **Irehi**, pl. *Ma-*), **Muramati** (heir; *Oramati* inheritance/birthright), **Mungu** (pl. *Miungu*, underground war refuge cavern, p. 146), **Kithigethi** (pl. *I-*, firesticks; *Kothigetha mwaki* 'twirl fire with sticks', p. 66).`,
+    title: "Classical Agĩkũyũ Social, Judicial, Seasonal, Clan & Ritual Terminology (Höhnel 1894, McGregor 1904, Routledge 1910, Dundas 1915 & Hobley 1922)",
+    summary: "Höhnel (1894), W. S. & K. Routledge (1910), Hon. Charles Dundas (1915), and C. W. Hobley (1910, 1922) preserve the complete terminology of the 13 Agĩkũyũ clans (Mĩhĩrĩga), generation ages (Rĩĩka), council grades (Kiama), land tenure (Gĩthaka), and peace covenants.",
+    content: `In *Discovery of Lakes Rudolf and Stefanie* (1894, Vol. I, Chs. V–VI), *With a Prehistoric People: The Akikuyu of British East Africa* (1910), *The Organization and Laws of Some Bantu Tribes in East Africa* (Hon. Charles Dundas, JRAI Vol. 45, 1915, pp. 234–306), and *Bantu Beliefs and Customary Institutions* (1922, Glossary pp. 305–308), primary accounts document the institutional vocabulary of Agĩkũyũ society:
+1. **1887 Traverse of Kikuyuland: Peace Covenants, Ridges & Homesteads (Höhnel 1894, Vol. I, pp. 286–365)**:
+   - Records the earliest south-to-north traverse from *Ngongo Bagas* (Ngong) to *Ndoro* at the western base of Mount Kenya (Aug–Oct 1887), meeting leaders *Miani*, *Karanja*, *Waiyaki*, *Kihara*, *Gathirimu*, *Karanja wa Maragua*, *Wamugunda* (Tetu), and *Kihura* (Ndoro).
+   - **Peace Litany & Covenants**: Greeting **Mirema!** and peace chorus **Thayu! Thayu!** ("Peace! Peace!") during the **kuhoria tatha** ceremony (sprinkling sheep stomach-contents over both parties) and the solemn **githathi** blood-and-peace covenant over a white ram and black goat (**mburi ya thayu**).
+   - **Landscape & Fortifications**: **rugongo** (pl. *migongo*, parallel mountain ridge bounded by streams), **Subugo** (primeval boundary forest belt), **itura** (fortified homestead ring inside the forest clearing), **kihingo** (thorny stockade gate barrier), **ngurunga** (camouflaged pitfall with sharpened stakes).
+2. **Council Grades (*Kiama kia Kamatimo* vs. *Kiama kia Athuri*), *Gĩthaka* Tenure & Customary Law (Dundas 1915, pp. 241–304)**:
+   - **Kiama Grades**: Junior council **Kiama kia Kamatimo** (initiated by presenting a goat after marriage) vs. senior judicial council **Kiama kia Athuri / Kiama kia Mataha** (carrying the ceremonial fly-whisk *mataha* and *mũthĩgi* staff), led by the spokesman **Mũthamaki**.
+   - **Land Tenure (*Gĩthaka*)**: Hereditary ridge estate (**gĩthaka**, administered by the *mũramati*), distinguishing an outright purchase (**kũgũra**) from redeemable cultivation tenancy (**mũhoi** 'borrower of land' and **mũthoni** 'in-law tenant').
+   - **Blood-Compensation (*Magambo / Ũhoro wa Njũgũma*)**: Fixed at 100 sheep/goats for a man and 30 for a woman, concluded with the **kũhoria** peace-ram sacrifice so kinship peace is restored.
+3. **The 13 Clans (*I-ri-ka* / *Mĩhĩrĩga*) & 10 Chronological Ages (*Rĩĩka*) (Routledge 1910, pp. 8–23)**:
+   - **13 Clans**: *A-ché-ra, A-ga-chí-ku, A-ga-thi-gí-a, Ai-cha-ka-mú-yo, Ai-rí-mu, A-ki-ú-ru (M'we-sá-ga / M'bú-ru), Am-bú-i, An-gá-ri (Ai-the-ka-hú-no), An-jí-ru, An-gó-i, E-thá-ga, Ai-ze-ran'-du, Ai-zi-e-gé-ni*.
+   - **10 Ages Since Creation**: *1. Man-jí-ri → 2. Man-dó-ti → 3. Chi-éra → 4. Masaí → 5. Ma-thá-thi → 6. N'dé-mi → 7. I-ré-gi → 8. Ma-í-na → 9. Mwan'gi → 10. Mu-i-run'-gu*, with the **Itwika** generational transfer ceremony.`,
     examples: [
-      { kikuyu: "Kiama • Chira • Muma • Gĩthathi (Kĩthathi)", english: "Council of elders • Legal case • Solemn oath • Sacred 7-holed oath-stone", explanation: "Classical Agĩkũyũ judicial terminology (Routledge 1910, pp. 195–220 & Hobley 1922)" },
-      { kikuyu: "Ndemi • Iregi • Maina • Mwangi • Itwika", english: "Historical ruling generations • Generational transfer ceremony", explanation: "Generational governance lexicon (Routledge 1910, p. 9 & Hobley 1922)" },
+      { kikuyu: "Thayu! Thayu! • kuhoria tatha • mburi ya thayu • rugongo (pl. migongo)", english: "Peace! Peace! • peace-sprinkling ceremony • peace-sheep • mountain ridge", explanation: "1887 Kikuyu peace covenant and landscape terms recorded by Höhnel (1894, Vol. I, pp. 295–350)" },
+      { kikuyu: "Kiama kia Kamatimo → Kiama kia Athuri (Mataha) • Gĩthaka • Mũramati • Mũhoi", english: "Junior council → Senior elders' council • Clan land estate • Estate trustee • Land tenant/borrower", explanation: "Agĩkũyũ judicial grades and Gĩthaka land law in Hon. Charles Dundas (1915, pp. 241–295)" },
       { kikuyu: "Gĩcandĩ (Kishandi) • Rũgano (pl. Ngano) • Guso!", english: "Poetic gourd rattle • Folktale • Riddle challenge ('Guess!')", explanation: "Agĩkũyũ oral literature & music (Routledge 1910, pp. 109, 285)" }
     ]
   },
@@ -170,7 +169,7 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
     "id": "kikuyu-mcgregor-1905-barlow-1914-dahl",
     "title": "Dahl's Law (K→G Dissimilation), Hinde (1904) Aspect Suffixes & Locative Classes (McGregor 1905 & Barlow 1914)",
     "summary": "Rev. A. W. McGregor (1905), A. R. Barlow (1914), and H. Hinde (1904) document Gĩkũyũ velar dissimilation (k → g before voiceless consonants), aspect suffixes (-ĩte perfect, -ire past), and spatial demonstratives.",
-    "content": "1. **Dahl's Law in Gĩkũyũ Prefixes (McGregor 1905 & Barlow 1914)**:\n   - The prefixes *ka-* (Class 12), *kĩ-* (Class 7), and *kũ-* (Class 15/17) voice to **ga-**, **gĩ-**, and **gũ-** when the next syllable begins with a voiceless consonant (*k, t, th, c*): *gĩ-thaka* (bushland), *gũ-tindĩka* (to push), *gũ-tinia* (to cut), *ga-kĩrĩma* (small hill), vs. *kĩ-rĩma* (mountain), *kũ-menya* (to know), *kũ-nyua* (to drink).\n2. **Completive vs. Preterite Suffixes (Hinde 1904, pp. xiii–xiv)**:\n   - Present Perfect uses **-ĩte / -ete** (*nĩ-ndĩ-tind-ĩte* 'I have conquered/stayed'), whereas Past Perfect/Preterite uses **-ire / -ere** (*nĩ-ndĩ-tind-ire*).Locatives distinguish *haha/gũkũ* (here) from *harĩa/kũrĩa* (yonder).",
+    "content": "1. **Dahl's Law in Gĩkũyũ Prefixes (McGregor 1905 & Barlow 1914)**:\n   - The prefixes *ka-* (Class 12), *kĩ-* (Class 7), and *kũ-* (Class 15/17) voice to **ga-**, **gĩ-**, and **gũ-** when the next syllable begins with a voiceless consonant (*k, t, th, c*): *gĩ-thaka* (bushland), *gũ-tindĩka* (to push), *gũ-tinia* (to cut), *ga-kĩrĩma* (small hill), vs. *kĩ-rĩma* (mountain), *kũ-menya* (to know), *kũ-nyua* (to drink).\n2. **Completive vs. Preterite Suffixes (Hinde 1904, pp. xiii–xiv)**:\n   - Present Perfect uses **-ĩte / -ete** (*nĩ-ndĩ-tind-ĩte* 'I have conquered/stayed'), whereas Past Perfect/Preterite uses **-ire / -ere** (*nĩ-ndĩ-tind-ire*). Locatives distinguish *haha/gũkũ* (here) from *harĩa/kũrĩa* (yonder).",
     "examples": [
       {
         "kikuyu": "gĩ-thaka, gũ-tinia, gũ-tindĩka vs. kĩ-rĩma, kũ-menya",

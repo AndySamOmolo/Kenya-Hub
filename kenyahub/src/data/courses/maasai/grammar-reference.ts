@@ -1,11 +1,14 @@
 // ============================================================
 // Maasai (ɔl Maa) Grammar Reference Guide
 // Based on Public Domain & Open-Web Linguistic Sources:
-// 1. Hildegarde Hinde (1901) "The Masai Language: Grammatical Notes Together with a Vocabulary" (Cambridge Univ. Press)
-// 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Masai & Njemps/Samburu comparative tables)
-// 3. A. C. Hollis (1905) "The Masai: Their Language and Folklore" (Clarendon Press, Oxford — Public Domain)
-// 4. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
-// 5. Wikipedia Maasai_language, Eastern_Nilotic_languages (Vossen 1982) & Nilotic_languages
+// 1. Ven. J. P. Farler & Rev. T. Wakefield (1882) "Native Routes in East Africa" (PRGS Vol. 4)
+// 2. Robert Needham Cust (1883) "A Sketch of the Modern Languages of Africa, Vol. I" (Kwafi & Masai historiography)
+// 3. Lieut. Ludwig von Höhnel (1894) "Discovery of Lakes Rudolf and Stefanie, Vol. I" (1887–1888 Maasai & Laikipia observations)
+// 4. Hildegarde Hinde (1901) "The Masai Language: Grammatical Notes Together with a Vocabulary" (Cambridge Univ. Press)
+// 5. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Masai & Njemps/Samburu comparative tables)
+// 6. A. C. Hollis (1905) "The Masai: Their Language and Folklore" (Clarendon Press, Oxford — Public Domain)
+// 7. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
+// 8. Wikipedia Maasai_language, Eastern_Nilotic_languages (Vossen 1982) & Nilotic_languages
 // ============================================================
 
 export interface MaasaiGrammarSection {
@@ -65,11 +68,7 @@ export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
    - **Class I Verbs** (roots not beginning with *i*, pp. 48–63): e.g., *a-suj* (to follow), *a-nyor* (to love), *a-lo* (to go, pl. *a-puo*).
    - **Class II Verbs** (roots beginning with *i*, pp. 63–71): e.g., *a-irorie* (to speak to), *a-ipot* (to call), *a-ining* (to hear).
    - **Subject-Object Portmanteau Prefixes (p. 48)**: **aa-** ("I...thee" or "he/they...me": *aa-suj*, I follow thee / he follows me), **ki-** ("thou...me" or "we": *ki-suj*, thou followest me / we follow).
-   - **Nine Derivative Stems (Hollis 1905, pp. 71–87)**: (1) Motion towards speaker (**-u / -unye**, pp. 71–73: *a-lotu* 'come hither', *a-nyorru* 'fall in love with'), (2) Motion away (**-aa / -aya / -oo**, pp. 73–75: *a-lo-aa* 'go away', *a-suj-aa* 'follow away'), (3) Dative/Applied "for/to" (**-aki / -oki**, pp. 75–77: *a-suj-aki* 'follow for'), (4) Instrumental/Locative "with/at" (**-ie**, pp. 77–79: *a-suj-ie* 'follow with'), (5) Inchoative/Become (**-u / -isho**, pp. 79–81: *a-rok-u* 'become black', *a-ibor-u* 'become white'), (6) Intransitive (**-isho / -asho / -osho**, pp. 81–83: *a-suj-isho*), (7) Neuter/Quasi-Passive (**-a / -o / -ye**, pp. 83–84: *a-dany-a* 'be broken/split'), (8) Reciprocal (**-ro / -no**, pp. 84–85: *a-nyor-ro* 'love one another'), and (9) Causative (**a-ita-** for Class I, **-ie** for Class II, pp. 85–87: *a-ita-suj* 'cause to follow').
-4. **Salutations, Departure Blessings, Clans, Age-Sets & 12-Month Calendar (Hollis 1905, pp. 101–102, 260–356 & Hinde 1901, pp. 41–43)**:
-   - **Salutations (Hollis 1905, pp. 101–102, 284–287 & Hinde 1901, p. 41)**: To men/warriors: **Sopai! — Epa! (Hepa!)**; To women/elders: **Takwenya! — Iko! (Igho!)**; Departure blessing (p. 287): **Sere! Toomonoi eng-Ai! I'nepu ake naaserian! Tapaashare 'l-modook! — Endepetai 'n-aishi oo kulle! — Esai!** ("Goodbye! Pray to God! Meet only with peace! Avoid fools! — May you have honey-wine and milk! — Amen!").
-   - **2 Moieties, 4 Genealogical Clans & 5 Geographical Districts (pp. 260–261)**: **(I) *'L-oodo-kishu* ("the blood-red cattle")**: (1) *'L-Aiser* (*'N-Gidongi* — the medicine-man's sub-clan, *Il-Parkeneti*, *Il-Lughumae*, *Il-Partimaro*), (2) *Il-Mengana* (*'L-Aitayok*, *'Siria*, *Il-Marumae*, *Il-Makuperia*); **(II) *'L-oorook-kishu* ("the black cattle")**: (3) *Il-Mokesen* (*Il-Mokesen-aate*, *Il-Partalale*, *Il-Tarosero*, *Il-Kiporon* — snake-charmers/rain-makers, *Il-Tanap-owaru* — lion-killers), (4) *Il-Molelyan* (*Il-Molelyan-aate*, *Il-Mamasita*, *Il-Pojos*, *Il-Kipuyoni* — the smiths' sub-clan, *Il-Moshono*, *Il-Masangua*, *Il-Mokorere*). **5 Districts (*il-oshon*)**: *Kaputiei*, *En-aiposha* (Naivasha), *Kisongo*, *'L-uasin-gishu*, and *'L-Aikipyak*.
-   - **12 Masai Months across 4 Seasons (pp. 333–334)**: (I) *Ol-okii* (Heavy rains): 1. *Kara-obo / Loo-'n-gokwa*, 2. *Kipern*, 3. *L'-iarat*; (II) *Ol-oiorujuj* (Drizzling season): 4. *Pushuke*, 5. *'N-dungus*, 6. *Ol-oiborare*; (III) *Ol-tumuret* (Short rains): 7. *Ol-gisan*, 8. *Ol-odalu*, 9. *Loo-'n-gushu*; (IV) *Ol-ameyu* (Dry/hunger season): 10. *Kuj-orok*, 11. *Oani-oingok*, 12. *Loo-'n-Gokwa (Ol-oingoni)*.`,
+   - **Nine Derivative Stems (Hollis 1905, pp. 71–87)**: (1) Motion towards speaker (**-u / -unye**, pp. 71–73: *a-lotu* 'come hither', *a-nyorru* 'fall in love with'), (2) Motion away (**-aa / -aya / -oo**, pp. 73–75: *a-lo-aa* 'go away', *a-suj-aa* 'follow away'), (3) Dative/Applied "for/to" (**-aki / -oki**, pp. 75–77: *a-suj-aki* 'follow for'), (4) Instrumental/Locative "with/at" (**-ie**, pp. 77–79: *a-suj-ie* 'follow with'), (5) Inchoative/Become (**-u / -isho**, pp. 79–81: *a-rok-u* 'become black', *a-ibor-u* 'become white'), (6) Intransitive (**-isho / -asho / -osho**, pp. 81–83: *a-suj-isho*), (7) Neuter/Quasi-Passive (**-a / -o / -ye**, pp. 83–84: *a-dany-a* 'be broken/split'), (8) Reciprocal (**-ro / -no**, pp. 84–85: *a-nyor-ro* 'love one another'), and (9) Causative (**a-ita-** for Class I, **-ie** for Class II, pp. 85–87: *a-ita-suj* 'cause to follow').`,
     examples: [
       { maasai: "Sopai! — Epa! (Hepa!) | Takwenya! — Iko! (Igho!)", english: "Greetings (to men/warriors)! — Reply! | Greetings (to women/elders)! — Reply!", explanation: "Traditional Maa salutations (Hinde 1901, p. 41 & Hollis 1905, pp. 101–102, 284–285)" },
       { maasai: "aa-suj (I follow thee / he follows me) • ki-suj (thou followest me / we follow)", english: "Portmanteau subject-object prefixes on Class I verb a-suj ('to follow')", explanation: "Hollis (1905, p. 48)" },
@@ -77,10 +76,27 @@ export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
     ]
   },
   {
+    id: "maasai-hohnel-1894-farler-1882-toponymy",
+    title: "19th-Century Maa Toponymy, Age-Grades & Kwafi/Loikop Historiography (Farler 1882, Cust 1883 & Höhnel 1894)",
+    summary: "Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), and Lieut. Ludwig von Höhnel (1894) record the earliest Maa mountain and river toponyms across Kenya alongside age-grade and pastoral institutions.",
+    content: `From Ven. J. P. Farler & Rev. T. Wakefield (*"Native Routes in East Africa"*, PRGS Vol. 4, 1882, pp. 742–746), R. N. Cust (*A Sketch of the Modern Languages of Africa*, Vol. I, 1883, pp. 146–150), and Lieut. Ludwig von Höhnel (*Discovery of Lakes Rudolf and Stefanie*, Vol. I, 1894, Ch. IV, pp. 226–285):
+1. **Classical Maa Mountain & River Toponymy in Kenya (Farler 1882 & Höhnel 1894)**:
+   - **Donyo Egere** (*Ol-doinyo Keri*, "Spotted/Dappled Mountain"): Mount Kenya, named from the black crags and white glaciers above the forest line (Farler 1882, p. 743 & Höhnel 1894, p. 363).
+   - **Donyo Erok** ("Black Mountain", at the southern border near Matumbato), **Donyo Longonot** (steep crater cone in the Rift Valley), **Donyo Suswa**, **Donyo Lamuyu** (Ngong Hills), and **Donyo Sattima** (highest peak of the Aberdare range, Höhnel 1894, p. 325).
+   - **Guaso Nyiro** (*Ewaso Ng'iro*, "Brown/Muddy River"), **Guaso Narok** ("Black River"), and **Guaso Nagut** (Rift Valley streams).
+2. **Age-Grades, Material Culture & Early Grammars (Cust 1883 & Höhnel 1894, pp. 242–265)**:
+   - Cust (1883, pp. 146–150) documents Krapf's 1854 *Vocabulary of the Engútuk Eloikób* (compiled at Mombasa from the Kwafi/Iloikop speaker *Lemásegnot* of *Enganglima*) and Erhardt's 1857 *Masai Vocabulary*.
+   - Höhnel (1894, pp. 242–265) describes the age-grades **Elmoran** (warriors), **Elmorua** (married elders), and **Ditto** (*en-dito*, unmarried maidens), the spokesman **Leigwanan** (*ol-aigwanani*) and ritual leader **Leibon** (*ol-oiboni*), the ostrich-feather face-halo (**en-gopiro**), thigh war-bell (**ol-twala**), and smoking milk-calabashes with wild olive (**ol-oirien**) embers.`,
+    examples: [
+      { maasai: "Donyo Egere (Ol-doinyo Keri) • Donyo Erok • Donyo Lamuyu • Donyo Sattima • Guaso Nyiro", english: "Mount Kenya ('Dappled Mountain') • Black Mountain • Ngong Hills • Aberdare Peak • Ewaso Ng'iro ('Brown River')", explanation: "19th-century Maa mountain and river names in Farler (1882) and Höhnel (1894)" },
+      { maasai: "Elmoran • Elmorua • Ditto • Leigwanan • Leibon • ol-oirien", english: "Warriors • Elders • Maidens • Spokesman • Ritual prophet • Wild olive tree", explanation: "Maa social grades and material culture recorded by Höhnel (1894, Vol. I, pp. 242–265)" }
+    ]
+  },
+  {
     "id": "maasai-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Maasai (Maa))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Maasai (Maa).",
-    "content": "1. **Archival & Open-Dataset Integration for Maasai (Maa)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Maasai (Maa)**:\n   - Combines primary historical documentation (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Hobley 1910/1922, BFBS 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "maasai": "Idya-ae-olong (that-other-day) • E-weji ne-yeng-ye-ki en-giteng",

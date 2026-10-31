@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.2",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Taita (Kidaw'ida & Kisagala) dictionary compiled from Rev. J. A. Wray ('An Elementary Introduction to the Taita Language', SPCK London, 1894 — Public Domain), A. Downes Shaw ('A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages', 1885 — Public Domain), Kunihiko Sakamoto (2003–2005), and Unicode CLDR (dav.xml).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -23831,11 +23831,25 @@
           "pronunciation": "a-ko",
           "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
           "audioFile": null
+        },
+        {
+          "english": "For God so loved the world (John 3:16 specimen in Kidabida / Taita)",
+          "translation": "Kwani Mlungu akukunda wandu wa mbuwa isho, hata akamfunya Mwana wake wa kizazi kimweri",
+          "pronunciation": "kwah-nee m-loon-goo ah-koo-koon-dah wahn-doo",
+          "context": "The Gospel in Many Tongues (BFBS, London, 1921, p. 116 — Taita: Dabida)",
+          "audioFile": null
+        },
+        {
+          "english": "For God so loved the world (John 3:16 specimen in Kisagalla / Taita)",
+          "translation": "Kwani Mlungu wamkunda wanthu wa isi ndžo, hata akamfunya Mwana wake wa mbeju imweri",
+          "pronunciation": "kwah-nee m-loon-goo wahm-koon-dah wahn-thoo",
+          "context": "The Gospel in Many Tongues (BFBS, London, 1921, p. 116 — Taita: Sagalla)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894 & Johnston 1919)",
+  "source": "Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
   "isoCode": "dav",
   "glottocode": "tait1250"
 }

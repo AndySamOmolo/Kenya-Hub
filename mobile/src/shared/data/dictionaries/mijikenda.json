@@ -12,8 +12,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-30",
-  "contributorNote": "Mijikenda (Kigiriama / Kinika / Kidigo) public-domain vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. Dr. L. Krapf & Rev. J. Rebmann (1887) \"A Nika–English Dictionary\", Rev. W. E. Taylor (1891) \"Girijama Vocabulary and Collections\", and Sir Harry H. Johnston (1919).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
   "categories": [
     {
       "id": "greetings",
@@ -2686,6 +2686,69 @@
           "pronunciation": "ku m' gadz-a-mi-ra",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
           "audioFile": null
+        },
+        {
+          "english": "Infant Development Stage 1: The baby sits upright on the ground",
+          "translation": "Muhoho yunasagala",
+          "pronunciation": "moo-hoh-hoh yoo-nah-sah-gah-lah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 188 s.v. Koko — 8-stage Mijikenda child motor development sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Infant Development Stage 2: The baby bends the knees to prepare for crawling",
+          "translation": "Muhoho yunafunsa mafuindi",
+          "pronunciation": "moo-hoh-hoh yoo-nah-foon-sah mah-fween-dee",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 188 s.v. Koko — 8-stage Mijikenda child motor development sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Infant Development Stage 3: The baby crawls on hands and knees",
+          "translation": "Muhoho yunahambala",
+          "pronunciation": "moo-hoh-hoh yoo-nah-hahm-bah-lah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 188 s.v. Koko — 8-stage Mijikenda child motor development sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Infant Development Stage 4: The toddler stands holding onto sticks or posts",
+          "translation": "Muhoho yunaima na mihi",
+          "pronunciation": "moo-hoh-hoh yoo-nah-ee-mah nah mee-hee",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 188 s.v. Koko — 8-stage Mijikenda child motor development sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Infant Development Stage 5: The toddler stands upright alone without support (koko!)",
+          "translation": "Muhoho yunaima koko",
+          "pronunciation": "moo-hoh-hoh yoo-nah-ee-mah koh-koh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 188 s.v. Koko — mothers chant 'koko!' to encourage the child to stand)",
+          "audioFile": null
+        },
+        {
+          "english": "Infant Development Stage 6: The toddler takes first tottering steps (suku-suku)",
+          "translation": "Muhoho yunasukula (suku-suku)",
+          "pronunciation": "moo-hoh-hoh yoo-nah-soo-koo-lah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 188 s.v. Koko — 8-stage Mijikenda child motor development sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Infant Development Stage 7: The child walks steadily",
+          "translation": "Muhoho yunaenenda",
+          "pronunciation": "moo-hoh-hoh yoo-nah-eh-nehn-dah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 188 s.v. Koko — 8-stage Mijikenda child motor development sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Infant Development Stage 8: The child is firm on his feet and runs swiftly",
+          "translation": "Muhoho yudziuma ku enenda, yunapiga malo",
+          "pronunciation": "moo-hoh-hoh yoo-dzee-oo-mah koo eh-nehn-dah yoo-nah-pee-gah mah-loh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 188 s.v. Koko — 8-stage Mijikenda child motor development sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Maternal clan lineage vs. paternal clan lineage",
+          "translation": "fugo (ra, pl. mafugo) / lukolo (lua, pl. nkolo)",
+          "pronunciation": "foo-goh / loo-koh-loh",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 88, 204 s.v. Fugo & Lukolo)",
+          "audioFile": null
         }
       ]
     },
@@ -3539,6 +3602,41 @@
           "translation": "ku-ts'etsera",
           "pronunciation": "ku ts'ets-e-ra",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "Thumb (Finger 1 of the hand)",
+          "translation": "chala cha dzalagumba (pl. viala via dzalagumba)",
+          "pronunciation": "chah-lah chah dzah-lah-goom-bah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 20 s.v. Chala — 5 indigenous Mijikenda finger names)",
+          "audioFile": null
+        },
+        {
+          "english": "Forefinger / index finger (Finger 2 — the pointing finger)",
+          "translation": "chala cha muoloho",
+          "pronunciation": "chah-lah chah mwoh-loh-hoh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 21 s.v. Chala — from ku oloha, to point with the finger)",
+          "audioFile": null
+        },
+        {
+          "english": "Middle finger (Finger 3 — the large/long finger)",
+          "translation": "chala kibomu",
+          "pronunciation": "chah-lah kee-boh-moo",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 21 s.v. Chala — 5 indigenous Mijikenda finger names)",
+          "audioFile": null
+        },
+        {
+          "english": "Ring finger (Finger 4 — literally, the finger that has no name)",
+          "translation": "chala kisicho dzina",
+          "pronunciation": "chah-lah kee-see-choh dzee-nah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 21 s.v. Chala — 5 indigenous Mijikenda finger names)",
+          "audioFile": null
+        },
+        {
+          "english": "Little finger / pinky (Finger 5)",
+          "translation": "chala cha kanda",
+          "pronunciation": "chah-lah chah kahn-dah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 21 s.v. Chala — 5 indigenous Mijikenda finger names)",
           "audioFile": null
         }
       ]
@@ -9846,6 +9944,104 @@
           "translation": "chakurya",
           "pronunciation": "cha-kur-ya",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
+          "audioFile": null
+        },
+        {
+          "english": "Coconut Growth Stage 1: Embryo coconut flower-bud just emerging on the spadix",
+          "translation": "pungapunga (ra, pl. mapungapunga)",
+          "pronunciation": "poon-gah-poon-gah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 325 s.v. Pungapunga — 7-stage coconut maturation taxonomy)",
+          "audioFile": null
+        },
+        {
+          "english": "Coconut Growth Stage 2: Very small newly formed coconut (smaller than a fist)",
+          "translation": "kidagna (cha, pl. vidagna)",
+          "pronunciation": "kee-dah-nyah",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 158, 325 s.v. Kidagna & Pungapunga — 7-stage coconut maturation taxonomy)",
+          "audioFile": null
+        },
+        {
+          "english": "Coconut Growth Stage 3: Young green coconut when water begins to form inside",
+          "translation": "kidale (cha, pl. vidale)",
+          "pronunciation": "kee-dah-leh",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 158, 325 s.v. Kidale & Pungapunga — 7-stage coconut maturation taxonomy)",
+          "audioFile": null
+        },
+        {
+          "english": "Coconut Growth Stage 4: Half-grown green coconut full of sweet drinking water and soft jelly",
+          "translation": "dafu (ra, pl. madafu)",
+          "pronunciation": "dah-foo",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 33, 325 s.v. Dafu & Pungapunga — 7-stage coconut maturation taxonomy)",
+          "audioFile": null
+        },
+        {
+          "english": "Coconut Growth Stage 5: Nearly ripe coconut with hardened shell and firm flesh",
+          "translation": "koloma (ra, pl. makoloma)",
+          "pronunciation": "koh-loh-mah",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 189, 325 s.v. Koloma & Pungapunga — 7-stage coconut maturation taxonomy)",
+          "audioFile": null
+        },
+        {
+          "english": "Coconut Growth Stage 6: Fully ripe coconut used for grating and squeezing coconut milk (tui)",
+          "translation": "nazi (ya, pl. nazi)",
+          "pronunciation": "nah-zee",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 301, 325 s.v. Nazi & Pungapunga — 7-stage coconut maturation taxonomy)",
+          "audioFile": null
+        },
+        {
+          "english": "Coconut Growth Stage 7: Completely dried coconut (copra) whose water has dried up",
+          "translation": "muvala (wa, pl. mivala) / mbata",
+          "pronunciation": "moo-vah-lah / m-bah-tah",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 244, 294, 325 s.v. Mbata, Muvala & Pungapunga — 7-stage coconut maturation taxonomy)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm-Wine Tapping Step 1: Cutting climbing notches (mavanda) into the coconut trunk",
+          "translation": "Nafunga vanda (ku funga mavanda)",
+          "pronunciation": "nah-foon-gah vahn-dah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 35 s.v. Dangadza — 8-stage palm-wine tapping sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm-Wine Tapping Step 2: Stripping the outer spathe from the flower-shoot (muanso) and binding it",
+          "translation": "Nadangadza muanso wangu",
+          "pronunciation": "nah-dahn-gah-dzah mwahn-soh wahn-goo",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 35 s.v. Dangadza — bound tightly with mlala wild date-palm leaf strips)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm-Wine Tapping Step 3: Carrying the small collecting calabashes (vibaria) up the palm",
+          "translation": "Nakueza vibaria (kibaria, pl. vibaria)",
+          "pronunciation": "nah-kweh-zah vee-bah-ree-ah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 35 s.v. Dangadza — 8-stage palm-wine tapping sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm-Wine Tapping Step 4: Trimming and beating the bound spadix tip at the crown to draw sap",
+          "translation": "Nanoerera dzulu",
+          "pronunciation": "nah-noh-eh-reh-rah dzoo-loo",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 35 s.v. Dangadza — 8-stage palm-wine tapping sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm-Wine Tapping Step 5: Hanging the small test calabash (kibaria) to test sap flow",
+          "translation": "Naonsa na kibaria",
+          "pronunciation": "nah-ohn-sah nah kee-bah-ree-ah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 35 s.v. Dangadza — 8-stage palm-wine tapping sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm-Wine Tapping Step 6: The flower-spadices foam (kifulo), showing sap is ready",
+          "translation": "Miansoyangu idzimuta kifulo",
+          "pronunciation": "mee-ahn-soh-yahn-goo ee-dzee-moo-tah kee-foo-loh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 35 s.v. Dangadza — 8-stage palm-wine tapping sequence)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm-Wine Tapping Steps 7–8: The shoots flow freely; going morning and evening to tap palm wine",
+          "translation": "Miansoyangu idzihumbuka; n'enda nikageme",
+          "pronunciation": "mee-ahn-soh-yahn-goo ee-dzee-hoom-boo-kah nehn-dah nee-kah-geh-meh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 35 s.v. Dangadza — 8-stage palm-wine tapping sequence)",
           "audioFile": null
         }
       ]
@@ -25877,6 +26073,146 @@
           "pronunciation": "machero",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
+        },
+        {
+          "english": "Stage 1 of Solar Clock (6:00 a.m.): Sunrise — the sun has come forth / risen",
+          "translation": "Dzua ridziupuka / Dzua ridziombola",
+          "pronunciation": "dzoo-ah ree-dzee-oo-poo-kah / ree-dzee-ohm-boh-lah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 2 of Solar Clock (c. 7:00 a.m.): The sun has separated from the earth (above the horizon)",
+          "translation": "Dzua ridzidana nadzi",
+          "pronunciation": "dzoo-ah ree-dzee-dah-nah nah-dzee",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 3 of Solar Clock (c. 7:30–8:00 a.m.): Early morning cattle-pasturing time",
+          "translation": "Dzua ridzifika murauko wa gnombe mudzanga",
+          "pronunciation": "dzoo-ah ree-dzee-fee-kah moo-rah-oo-koh wah ng'ohm-beh moo-dzahn-gah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — lit. young/early morning turning-out of cattle)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 4 of Solar Clock (c. 8:30–9:00 a.m.): Full morning cattle-pasturing time",
+          "translation": "Dzua ridzifika murauko wa gnombe wegnie",
+          "pronunciation": "dzoo-ah ree-dzee-fee-kah moo-rah-oo-koh wah ng'ohm-beh weh-nyeh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — lit. true/proper morning turning-out of cattle)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 5 of Solar Clock (c. 10:00 a.m.): Late morning when the sun begins to strike the head",
+          "translation": "Dzua ridzifika murauko wa gnombe mubomu wa ku radira vidzoa",
+          "pronunciation": "dzoo-ah ree-dzee-fee-kah moo-rah-oo-koh wah ng'ohm-beh moo-boh-moo",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 6 of Solar Clock (c. 11:00 a.m.): Forenoon — the sun darts rays upon the crowns of heads",
+          "translation": "Dzua rinaradira vidzoa",
+          "pronunciation": "dzoo-ah ree-nah-rah-dee-rah vee-dzoh-ah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 7 of Solar Clock (12:00 noon): High noon — the sun is perpendicular overhead",
+          "translation": "Dzua ridzifika vidzoani / Dzua ri-dididi na vidzoa",
+          "pronunciation": "dzoo-ah ree-dzee-fee-kah vee-dzoh-ah-nee / ree-dee-dee-dee nah vee-dzoh-ah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 8 of Solar Clock (c. 1:00 p.m.): Early afternoon — the sun has turned from the zenith",
+          "translation": "Dzua ridziogoka / Dzua ridzignola",
+          "pronunciation": "dzoo-ah ree-dzee-oh-goh-kah / ree-dzee-nyoh-lah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 9 of Solar Clock (c. 2:00 p.m.): Great afternoon heat",
+          "translation": "Dzua ridzifika lua mudzana lukulu",
+          "pronunciation": "dzoo-ah ree-dzee-fee-kah lwah moo-dzah-nah loo-koo-loo",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 10 of Solar Clock (c. 3:00 p.m.): Mid-afternoon (the true afternoon)",
+          "translation": "Dzua ridzifika lua mudzana luegnie",
+          "pronunciation": "dzoo-ah ree-dzee-fee-kah lwah moo-dzah-nah lweh-nyeh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 11 of Solar Clock (c. 4:00 p.m.): Cool of the late afternoon",
+          "translation": "Dzua ridzifika lua mudzana lua ku vola",
+          "pronunciation": "dzoo-ah ree-dzee-fee-kah lwah moo-dzah-nah lwah koo voh-lah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — lit. afternoon of cooling down)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 12 of Solar Clock (c. 5:30 p.m.): Near sunset — the sun declines and hovers low",
+          "translation": "Dzua ridzisama, rinalewalewa",
+          "pronunciation": "dzoo-ah ree-dzee-sah-mah ree-nah-leh-wah-leh-wah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Stage 13 of Solar Clock (6:00 p.m.): Sunset — the sun has gone down / set",
+          "translation": "Dzua ridzibodoka / Dzua ridzedzua",
+          "pronunciation": "dzoo-ah ree-dzee-boh-doh-kah / ree-dzeh-dzoo-ah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 66 s.v. Dzua — 13-stage Mijikenda solar timekeeping system)",
+          "audioFile": null
+        },
+        {
+          "english": "Night Watch 1 (c. 6:00–7:00 p.m.): Evening twilight watch",
+          "translation": "Kipindi cha dziloni (pindi ra dziloni)",
+          "pronunciation": "kee-peen-dee chah dzee-loh-nee",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 176 s.v. Kipindi — 6 watches of the night)",
+          "audioFile": null
+        },
+        {
+          "english": "Night Watch 2 (c. 8:00–9:00 p.m.): Bedtime watch",
+          "translation": "Kipindi cha kulala",
+          "pronunciation": "kee-peen-dee chah koo-lah-lah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 176 s.v. Kipindi — 6 watches of the night)",
+          "audioFile": null
+        },
+        {
+          "english": "Night Watch 3 (12:00 midnight): Dead of night / midnight watch",
+          "translation": "Kipindi cha usiku ukulu (usiku wa kahi)",
+          "pronunciation": "kee-peen-dee chah oo-see-koo oo-koo-loo",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 176 s.v. Kipindi — 6 watches of the night)",
+          "audioFile": null
+        },
+        {
+          "english": "Night Watch 4 (c. 2:00–3:00 a.m.): First cock-crowing watch",
+          "translation": "Kipindi cha kuika madzogolo ga mbele",
+          "pronunciation": "kee-peen-dee chah koo-ee-kah mah-dzoh-goh-loh gah m-beh-leh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 176 s.v. Kipindi — 6 watches of the night)",
+          "audioFile": null
+        },
+        {
+          "english": "Night Watch 5 (c. 4:00 a.m.): Second cock-crowing watch",
+          "translation": "Kipindi cha kuika madzogolo gairi",
+          "pronunciation": "kee-peen-dee chah koo-ee-kah mah-dzoh-goh-loh gah-ee-ree",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 176 s.v. Kipindi — 6 watches of the night)",
+          "audioFile": null
+        },
+        {
+          "english": "Night Watch 6 (c. 5:00 a.m.): Dawn / daybreak watch",
+          "translation": "Kipindi cha madzacha",
+          "pronunciation": "kee-peen-dee chah mah-dzah-chah",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 176 s.v. Kipindi — 6 watches of the night)",
+          "audioFile": null
+        },
+        {
+          "english": "New moon lying horizontally on its back (auspicious sign of a peaceful month)",
+          "translation": "Muezi udzilala kigongo (muezi udziandama)",
+          "pronunciation": "mweh-zee oo-dzee-lah-lah kee-gohn-goh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 265 s.v. Muezi: contrast muezi udziima, standing upright)",
+          "audioFile": null
         }
       ]
     },
@@ -34174,10 +34510,10 @@
           "audioFile": null
         },
         {
-          "english": "Daladala",
-          "translation": "daladala",
-          "pronunciation": "daladala",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [v.]",
+          "english": "To roam, rove, wander (= ku ralarala)",
+          "translation": "ku daladala (ku ralarala)",
+          "pronunciation": "koo dah-lah-dah-lah",
+          "context": "Krapf & Rebmann (1887, pp. 34, 329 s.v. Daladala & Ralarala) [v.n.]",
           "audioFile": null
         },
         {
@@ -34531,10 +34867,10 @@
           "audioFile": null
         },
         {
-          "english": "Dzadzu",
-          "translation": "dzadzu",
-          "pronunciation": "dzadzu",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
+          "english": "Dry thorn branches used to build a protective hedge (pl. madzadzu)",
+          "translation": "dzadzu / luadzu (pl. madzadzu)",
+          "pronunciation": "dzah-dzoo / lwah-dzoo",
+          "context": "Krapf & Rebmann (1887, pp. 54, 199 s.v. Dzadzu & Luadzu: luadzu lua miba, a hedge of thorns) [n.]",
           "audioFile": null
         },
         {
@@ -34608,10 +34944,10 @@
           "audioFile": null
         },
         {
-          "english": "Dzalankua",
-          "translation": "dzalankua",
-          "pronunciation": "dzalankua",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [adj.]",
+          "english": "Idle, lazy person (one who loves the shade rather than work)",
+          "translation": "dzalankua / muzalankua (Kig.)",
+          "pronunciation": "dzah-lahn-kwah / moo-zah-lahn-kwah",
+          "context": "Krapf & Rebmann (1887, pp. 55, 295 s.v. Dzalankua & Muzalankua) [adj./n.]",
           "audioFile": null
         },
         {
@@ -78113,44 +78449,128 @@
           "audioFile": null
         },
         {
-          "english": "Maternal uncle (mother's brother; Krapf & Rebmann 1887, p. 9)",
-          "translation": "maternal uncle (mother's brother; Krapf & Rebmann 1887, p. 9)",
-          "pronunciation": "avu",
-          "context": "In traditional Mijikenda matrilineal (fugo / lukolo) kinship, the maternal uncle (avu) exercised authority over his sister's children (muhua, pl. ahua).",
+          "english": "Maternal uncle (mother's brother)",
+          "translation": "avu (pl. maavu)",
+          "pronunciation": "ah-voo",
+          "context": "Krapf & Rebmann (1887, p. 9 s.v. Avu): In traditional Mijikenda matrilineal (fugo / lukolo) kinship, the maternal uncle (avu) exercised authority over his sister's children (muhua, pl. ahua).",
           "audioFile": null
         },
         {
-          "english": "Nephew or niece (a man's sister's son or daughter; Krapf & Rebmann 1887, p. 276)",
-          "translation": "nephew or niece (a man's sister's son or daughter; Krapf & Rebmann 1887, p. 276)",
-          "pronunciation": "muhua",
-          "context": "Hiyu ni muhua wangu, muana wa mumbuyangu (This is my nephew/niece, my sister's child).",
+          "english": "Nephew or niece (a man's sister's son or daughter)",
+          "translation": "muhua (pl. ahua)",
+          "pronunciation": "moo-hoo-ah",
+          "context": "Krapf & Rebmann (1887, p. 276 s.v. Muhua): Hiyu ni muhua wangu, muana wa mumbuyangu (This is my nephew/niece, my sister's child).",
           "audioFile": null
         },
         {
-          "english": "Welcome! (traditional Mijikenda greeting of hospitality; Krapf & Rebmann 1887, p. 390)",
-          "translation": "welcome! (traditional Mijikenda greeting of hospitality; Krapf & Rebmann 1887, p. 390)",
-          "pronunciation": "yoyo!",
-          "context": "Yoyo, mugeni! Yoyo mulumangu! udzihenda to kudza na afia. Yoyo baba! Yoyo nduguyangu!",
+          "english": "Welcome! (traditional Mijikenda greeting of hospitality)",
+          "translation": "Yoyo! (Yoyo, mugeni! Yoyo, baba!)",
+          "pronunciation": "yoh-yoh",
+          "context": "Krapf & Rebmann (1887, p. 390 s.v. Yoyo): Yoyo, mugeni! Yoyo mulumangu! udzihenda to kudza na afia. Yoyo baba! Yoyo nduguyangu!",
           "audioFile": null
         },
         {
-          "english": "Communal rain-making charm and three-day ritual restriction (Krapf & Rebmann 1887, p. 352)",
-          "translation": "communal rain-making charm and three-day ritual restriction (Krapf & Rebmann 1887, p. 352)",
-          "pronunciation": "sosonga",
-          "context": "Villagers gather food for two days because on the third day (muhondo) no one may go to the fields; they drag a skin (kichingo) and perform the sosonga rain rite.",
+          "english": "Communal rain-making charm and three-day ritual restriction (muhondo)",
+          "translation": "sosonga (ra)",
+          "pronunciation": "soh-sohn-gah",
+          "context": "Krapf & Rebmann (1887, p. 352 s.v. Sosonga): Villagers gather food for two days because on the third day (muhondo) no one may go to the fields; they drag a skin (kichingo) and perform the sosonga rain rite.",
           "audioFile": null
         },
         {
-          "english": "Traditional Rabai spicy condiment/vinegar (Krapf & Rebmann 1887, p. 346)",
-          "translation": "traditional Rabai spicy condiment/vinegar (Krapf & Rebmann 1887, p. 346)",
-          "pronunciation": "siki",
-          "context": "Pounded from sorghum flour (unga wa muhama), red pepper (pilipili), kilungakuku herb, palm-wine dregs (muniu zira za uchi), and lemon (ndimu) or makabu fruit.",
+          "english": "Traditional Rabai spicy vinegar condiment",
+          "translation": "siki (ya)",
+          "pronunciation": "see-kee",
+          "context": "Krapf & Rebmann (1887, p. 346 s.v. Siki): Pounded from sorghum flour (unga wa muhama), red pepper (pilipili), kilungakuku herb, palm-wine dregs (muniu zira za uchi), and lemon (ndimu) or makabu fruit.",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred friction-drum of the Mijikenda Kaya elders",
+          "translation": "mwanza",
+          "pronunciation": "mwahn-zah",
+          "context": "Prof. Alice Werner (1915, p. 342) — The Bantu Coast Tribes of the East Africa Protectorate",
+          "audioFile": null
+        },
+        {
+          "english": "Inner sacred council of Kaya elders (custodians of the fisi oath)",
+          "translation": "vaya (council of elders: kambi)",
+          "pronunciation": "vah-yah / kahm-bee",
+          "context": "Prof. Alice Werner (1915, p. 339) — The Bantu Coast Tribes of the East Africa Protectorate",
+          "audioFile": null
+        },
+        {
+          "english": "Carved wooden memorial post for deceased Kaya elders",
+          "translation": "kigango (pl. vigango)",
+          "pronunciation": "kee-gahn-goh / vee-gahn-goh",
+          "context": "Prof. Alice Werner (1915, p. 344) — The Bantu Coast Tribes of the East Africa Protectorate",
+          "audioFile": null
+        },
+        {
+          "english": "For God so loved the world (John 3:16 specimen in Giryama)",
+          "translation": "Kwani Mulungu arizhahendza at'u a ulimwengu hata akimupa Mwanawe waeri",
+          "pronunciation": "kwah-nee moo-loon-goo ah-ree-zhah-hen-dzah",
+          "context": "The Gospel in Many Tongues (BFBS, London, 1921, p. 47 — Giryama)",
+          "audioFile": null
+        },
+        {
+          "english": "Fortified narrow entrance gateway of a Mijikenda Kaya (with triple wooden doors)",
+          "translation": "mumfiria (wa, pl. mimfiria)",
+          "pronunciation": "moom-fee-ree-ah",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 259, 285 s.v. M'oro & Mumfiria: one of the three defining institutions of a Kaya alongside moro and rungu)",
+          "audioFile": null
+        },
+        {
+          "english": "Central deliberative assembly place and council green inside a Mijikenda Kaya",
+          "translation": "m'oro (wa, pl. mioro)",
+          "pronunciation": "moh-roh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 259 s.v. M'oro: M'oro mudzo ka-u-lavia dzua — A good council speech settles the matter before sunrise)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred elders' lodge inside a Mijikenda Kaya housing the friction-drum",
+          "translation": "rungu (ra, pl. marungu)",
+          "pronunciation": "roon-goo",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 259, 338 s.v. M'oro & Rungu: a village without mumfiria, m'oro, and rungu is merely a mudzi, not a kaya)",
+          "audioFile": null
+        },
+        {
+          "english": "Men's initiation rite and forest seclusion promoting youths (gniere) into the kambi order",
+          "translation": "ugnaro (wa)",
+          "pronunciation": "oo-nyah-roh",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 365 s.v. Ugnaro: initiates smear their bodies with white clay in the forest for two weeks)",
+          "audioFile": null
+        },
+        {
+          "english": "Women's initiation order and ceremonial dance corresponding to the men's ugnaro",
+          "translation": "gundi (ra)",
+          "pronunciation": "goon-dee",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 115 s.v. Gundi)",
+          "audioFile": null
+        },
+        {
+          "english": "Highest Rabai/Mijikenda elder investiture conferring the lumfo ivory/horn armlet (Mumondo → Govu)",
+          "translation": "ku thura (govu / lumfo)",
+          "pronunciation": "koo thoo-rah / goh-voo / loom-foh",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 111, 207, 356 s.v. Govu, Lumfo & Thura: performed every ~20 years during the niambura rains)",
+          "audioFile": null
+        },
+        {
+          "english": "Judicial trial by ordeal administered by the mganga (5 traditional forms)",
+          "translation": "kiravo (cha, pl. viravo: mundu, sindano, chungu cha moho, mbare, luemba)",
+          "pronunciation": "kee-rah-voh",
+          "context": "Krapf, Rebmann & Sparshott (1887, pp. 180–181 s.v. Kiravo: red-hot hatchet on tongue, hot needle through lips, stone in boiling pot, poisoned food, or dry meal)",
+          "audioFile": null
+        },
+        {
+          "english": "God, the Supreme Creator, the Sky/Heavens (Mulunguni), and Thunder (Mulungu yunaambira)",
+          "translation": "Mulungu (wa)",
+          "pronunciation": "moo-loon-goo",
+          "context": "Krapf, Rebmann & Sparshott (1887, p. 284 s.v. Mulungu: includes traditional Mijikenda prayers for rain, safe journeys, planting, and healing)",
           "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Krapf 1850, Krapf & Rebmann 1887, W. E. Taylor 1891 & Johnston 1919)",
+  "source": "Public Domain & Academic Lexicons (Krapf 1850, Krapf & Rebmann 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
   "isoCode": "nyf",
   "glottocode": "miji1238"
 }

@@ -10247,6 +10247,7 @@ export const SWAHILI_CONFIG: LanguageConfig = {
     "krapf-suahili-dictionary-1882",
     "taylor-aphorisms-1891",
     "steere-madan-swahili-handbook-1894",
+    "madan-english-swahili-dictionary-1902-grammar-1905",
     "madan-swahili-dictionary-1903",
     "kamba-kikuyu-vocabularies",
     "burt-swahili-grammar-1910",
@@ -23101,7 +23102,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "shongolokana",
-            "source": "(= Ku vongolokana), to wind with, i",
+            "source": "(= Ku vongolokana), to wind or coil around, as a creeper around a tree",
             "pronunciation": "shongolokana",
             "hint": "Krapf & Rebmann (1887) Nika-English Dictionary [v.n.]"
           },
@@ -23113,7 +23114,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "pugu",
-            "source": "(ya, za), the hollow of a tree, the inside of which is",
+            "source": "(ya, za), the hollow of a tree, the inside of which is rotten",
             "pronunciation": "pugu",
             "hint": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]"
           },
@@ -23127,7 +23128,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "shongolokana (shidua).",
-            "source": "(= Ku vongolokana), to wind with, i (to be set on fire)."
+            "source": "(= Ku vongolokana), to wind or coil around (to be set on fire)."
           }
         ],
         "authoredExercises": [
@@ -23168,7 +23169,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Mijikenda (Giriama) term for \"(= Ku vongolokana), to wind with, i\": ___",
+            "prompt": "Complete the Mijikenda (Giriama) term for \"(= Ku vongolokana), to wind or coil around, as a creeper around a tree\": ___",
             "correctAnswer": "shongolokana",
             "options": [
               "shongolokana",
@@ -60814,3 +60815,1260 @@ export const POKOT_GRAMMAR_SECTIONS: GrammarSection[] = [
     ]
   }
 ];
+
+// ============================================================
+// 23. DAASANACH (Dhaasanac / 'Af Dhaasanac) Course & Grammar
+// Grounded in Václav Blažek (2011) "Dasanech Language: State-of-the-Art" (citing Mauro Tosco 2001 & H.-J. Sasse 1974/1976),
+// Sumiyo Nishiguchi (2004) "Consonant Assimilation and Sonority: A Case Study in Daasanach" (Ileret, Marsabit County),
+// and Lieut. Ludwig von Höhnel (1894) "Discovery of Lakes Rudolf and Stefanie, Vol. I" (Reshiat / Buma / Marle, 1888)
+// ============================================================
+
+export const DAASANACH_CONFIG: LanguageConfig = {
+  id: "daasanach",
+  name: "Daasanach (Dhaasanac)",
+  nativeName: "'Af Dhaasanac",
+  family: "Cushitic",
+  counties: ["Marsabit"],
+  speakers: "65K",
+  speechLocale: "om-KE",
+  description: "Lowland East Cushitic (Western Omo-Tana) language spoken by the Daasanach agropastoral and fishing community around Ileret on the northeastern shore of Lake Turkana.",
+  color: "#991B1B",
+  sources: [
+    "blazek-dasanech-2011",
+    "nishiguchi-daasanach-2004",
+    "hohnel-lakes-rudolf-stefanie-1894",
+  ],
+};
+
+export const DAASANACH_UNITS: CourseUnit[] = [
+  {
+    id: "daasanach-unit-1",
+    title: "Unit 1: Greetings, Clusivity Pronouns & Numerals (1–1,000)",
+    description: "Master Daasanach ('Af Dhaasanac) greetings in Ileret, inclusive vs. exclusive 'we' pronouns (múu vs. nyíni), and numerals from Blažek (2011) & Tosco (2001).",
+    icon: "BookOpen",
+    skills: [
+      {
+        id: "daasanach-greetings-pronouns",
+        title: "Greetings & Inclusive/Exclusive Pronouns",
+        icon: "Users",
+        description: "Learn essential Daasanach greetings and the Cushitic distinction between inclusive and exclusive 1st person plural pronouns.",
+        tips: "Daasanach distinguishes inclusive 'we' (múu = 'you and I') from exclusive 'we' (nyíni = 'we without you').",
+        culturalNote: "Spoken around Ileret on the northeastern shore of Lake Turkana (Marsabit County) and the Omo River delta, Daasanach ('Af Dhaasanac, called Reshiat by Lieut. Ludwig von Höhnel in 1888) shares the greeting 'Ma nagaa? — Nagaa' across the northern pastoral frontier.",
+        words: [
+          {
+            target: "Ma nagaa? — Nagaa",
+            source: "Is it peace? (Are you well?) — It is peace",
+            pronunciation: "mah nah-gaa — nah-gaa",
+            hint: "Tosco (2001) & Nishiguchi (2004, Ileret fieldwork)"
+          },
+          {
+            target: "yáa (obj. yú)",
+            source: "I / me",
+            pronunciation: "yaa / yuu",
+            hint: "Blažek (2011, p. 3, Table of Pronouns, citing Tosco 2001 pp. 210–211)"
+          },
+          {
+            target: "kúu (obj. kú / kuo)",
+            source: "You (singular)",
+            pronunciation: "kuu / kuo",
+            hint: "Blažek (2011, p. 3, Table of Pronouns)"
+          },
+          {
+            target: "múu (obj. mú / muo)",
+            source: "We (inclusive: you and I)",
+            pronunciation: "muu / muo",
+            hint: "Blažek (2011, p. 3) & Sasse (1976, p. 208)"
+          },
+          {
+            target: "nyíni (obj. nyí)",
+            source: "We (exclusive: we without you)",
+            pronunciation: "nyee-nee / nyee",
+            hint: "Blažek (2011, p. 3) & Tosco (2001, p. 210)"
+          },
+          {
+            target: "'ítíni (obj. 'ití)",
+            source: "You (plural)",
+            pronunciation: "ee-tee-nee / ee-tee",
+            hint: "Blažek (2011, p. 3, Table of Pronouns)"
+          }
+        ],
+        sentences: [
+          {
+            target: "Ma nagaa? — Nagaa",
+            source: "Is it peace? — It is peace"
+          },
+          {
+            target: "múu vs. nyíni",
+            source: "we (inclusive) vs. we (exclusive)"
+          }
+        ],
+        authoredExercises: [
+          {
+            type: "multiple_choice",
+            prompt: "Which Daasanach pronoun means 'we (inclusive: you and I)'?",
+            correctAnswer: "múu (obj. mú / muo)",
+            options: [
+              "múu (obj. mú / muo)",
+              "nyíni (obj. nyí)",
+              "yáa (obj. yú)",
+              "'ítíni (obj. 'ití)"
+            ],
+            hint: "Blažek (2011, p. 3) & Tosco (2001, p. 210)"
+          },
+          {
+            type: "match_pairs",
+            prompt: "Match each Daasanach pronoun or greeting to its English meaning:",
+            correctAnswer: "yáa (obj. yú): I / me",
+            pairs: [
+              { left: "yáa (obj. yú)", right: "I / me" },
+              { left: "kúu (obj. kú / kuo)", right: "You (singular)" },
+              { left: "múu (obj. mú / muo)", right: "We (inclusive: you and I)" },
+              { left: "nyíni (obj. nyí)", right: "We (exclusive: we without you)" }
+            ]
+          }
+        ]
+      },
+      {
+        id: "daasanach-numerals-counting",
+        title: "Numerals & Counting (1–1,000)",
+        icon: "Hash",
+        description: "Count from 1 (tákàch) to 1,000 (kúùm) in Daasanach.",
+        tips: "Compound teens use the noun 'áf ('mouth'): tòmòn àf tákàch ('ten mouth one' = 11).",
+        culturalNote: "Václav Blažek (2011, p. 4) compares the Daasanach numerals recorded by Shackleton (1933), Sasse (1976), and Tosco (2001), showing Lowland East Cushitic cognates across Omo-Tana (Rendille, Somali, Arbore, Elmolo) and Oromo loans for 100 (dììb) and 1,000 (kúùm).",
+        words: [
+          {
+            target: "tákàch, nààmà, sèddí, 'àffúr, chén",
+            source: "1, 2, 3, 4, 5",
+            pronunciation: "tah-kach, naa-mah, sed-dee, af-foor, chen",
+            hint: "Blažek (2011, p. 4, citing Tosco 2001 p. 207)"
+          },
+          {
+            target: "líh, tìyyà, sììt, sààl, tòmòn",
+            source: "6, 7, 8, 9, 10",
+            pronunciation: "leeh, teey-yah, seet, saal, toh-mohn",
+            hint: "Blažek (2011, p. 4, citing Tosco 2001 p. 207)"
+          },
+          {
+            target: "tòmòn àf tákàch",
+            source: "Eleven (11, lit. 'ten mouth one')",
+            pronunciation: "toh-mohn ahf tah-kach",
+            hint: "Blažek (2011, p. 4)"
+          },
+          {
+            target: "tòmòná nààmà • dììb • kúùm",
+            source: "Twenty (20) • One hundred (100) • One thousand (1,000)",
+            pronunciation: "toh-moh-naa naa-mah • deeb • kuum",
+            hint: "Blažek (2011, p. 4)"
+          }
+        ],
+        sentences: [
+          {
+            target: "tákàch, nààmà, sèddí, 'àffúr, chén",
+            source: "One, two, three, four, five"
+          },
+          {
+            target: "líh, tìyyà, sììt, sààl, tòmòn",
+            source: "Six, seven, eight, nine, ten"
+          }
+        ],
+        authoredExercises: [
+          {
+            type: "multiple_choice",
+            prompt: "How do you say '1, 2, 3, 4, 5' in Daasanach?",
+            correctAnswer: "tákàch, nààmà, sèddí, 'àffúr, chén",
+            options: [
+              "tákàch, nààmà, sèddí, 'àffúr, chén",
+              "líh, tìyyà, sììt, sààl, tòmòn",
+              "tòmòn àf tákàch",
+              "tòmòná nààmà • dììb • kúùm"
+            ],
+            hint: "Blažek (2011, p. 4)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "daasanach-unit-2",
+    title: "Unit 2: Pastoral Ecology, Body Parts, Verbs & Sonority Assimilation",
+    description: "Explore Daasanach nouns, Lake Turkana & Omo delta ecology, and sonority-driven consonant assimilation from Nishiguchi (2004) and Blažek (2011).",
+    icon: "Compass",
+    skills: [
+      {
+        id: "daasanach-ecology-nouns-verbs",
+        title: "People, Livestock, Nature & Verbs",
+        icon: "TreePine",
+        description: "Master core Daasanach nouns and verbs with singulative/plurative suffixes and consonant assimilation.",
+        tips: "When a suffix beginning with /t/ (such as 2s/3f imperfective -ta) attaches to a verb stem ending in a nasal or liquid (m, n, l, r, f), /t/ assimilates completely: kom + -ta -> kon-na ('she eats'), maal + -ta -> maal-la ('she hears'), fur + -ta -> fur-ra ('she opens').",
+        culturalNote: "Sumiyo Nishiguchi's 2004 study conducted in Ileret (Marsabit County) demonstrates how the sonority hierarchy governs progressive and regressive consonant assimilation across Daasanach noun plurals and verb inflections.",
+        words: [
+          {
+            target: "màà (pl. mààddí / gál) • mìnní (pl. kààddí)",
+            source: "Person / man • Woman / wife",
+            pronunciation: "maa / min-nee",
+            hint: "Blažek (2011, pp. 8, 11)"
+          },
+          {
+            target: "sé (pl. gùù) • gáàl (pl. gáàllí) • chér (pl. chérrí)",
+            source: "Cow (pl. cattle) • Camel • Dog",
+            pronunciation: "seh / gaal / cher",
+            hint: "Blažek (2011, p. 6) & Nishiguchi (2004, pp. 4–6)"
+          },
+          {
+            target: "bíyé • gíè • 'áázù • gùùr • 'írr (Wáàg)",
+            source: "Water • Fire • Sun • Moon • Rain / Sky (God)",
+            pronunciation: "bee-yeh • gee-eh • aa-zuu • guur • eerr",
+            hint: "Blažek (2011, pp. 6–10)"
+          },
+          {
+            target: "kóm (2s/3f kón-nà) • 'íik • máàl (2s/3f máàl-là) • 'árg",
+            source: "To eat • To drink • To hear • To see",
+            pronunciation: "kohm (kohn-nah) • eek • maal (maal-lah) • ahrg",
+            hint: "Nishiguchi (2004, pp. 7–9) & Blažek (2011, pp. 6–9)"
+          }
+        ],
+        sentences: [
+          {
+            target: "kóm + -ta → kón-nà • máàl + -ta → máàl-là • fúr + -ta → fúr-rà",
+            source: "she eats • she hears • she opens (sonority-driven assimilation)"
+          },
+          {
+            target: "góng kór-iet • nèèt kór-iet",
+            source: "bark of tree ('skin of tree') • leaf ('ear of tree')"
+          }
+        ],
+        authoredExercises: [
+          {
+            type: "multiple_choice",
+            prompt: "What do 'bíyé • gíè • 'áázù' mean in Daasanach?",
+            correctAnswer: "Water • Fire • Sun",
+            options: [
+              "Water • Fire • Sun",
+              "Cow • Camel • Dog",
+              "Person • Woman • Child",
+              "To eat • To drink • To hear"
+            ],
+            hint: "Blažek (2011, pp. 6, 10)"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const DAASANACH_GRAMMAR_SECTIONS: GrammarSection[] = [
+  {
+    id: "daasanach-nishiguchi-2004-phonology-assimilation",
+    title: "Phonology, Implosives & Sonority-Driven Consonant Assimilation in Ileret Daasanach (Nishiguchi 2004 & Tosco 2001)",
+    summary: "Sumiyo Nishiguchi (2004, fieldwork at Ileret, Marsabit County) and Mauro Tosco (2001) document Daasanach's 7-vowel system, voiced implosives (b', d', j', g'), and progressive/regressive consonant assimilation governed by the sonority hierarchy.",
+    content: `From Sumiyo Nishiguchi (*"Consonant Assimilation and Sonority: A Case Study in Daasanach"*, Rutgers Optimality Archive, 2004, pp. 1–16) and Mauro Tosco (*The Dhaasanac Language*, Köppe, Cologne, 2001):
+1. **Vowel & Consonant Inventory**:
+   - **7 Vowels (short & long)**: /i, e, ɛ, a, ɔ, o, u/ with tonal accent (High \`á\` vs. Falling \`â\`).
+   - **Consonants**: Includes voiced implosives (*b' [ɓ], d' [ɗ], dy/j' [ʄ], g' [ɠ]*), voiced interdental fricative *dh [ð]*, glottal stop *' [ʔ]*, liquids *l, r*, glides *w, y*, and nasals *m, n, ny [ɲ], ng [ŋ]*.
+2. **Sonority-Governed Consonant Assimilation Across Morpheme Boundaries (Nishiguchi 2004, pp. 3–12)**:
+   - When inflectional suffixes beginning with coronal obstruent **/t/** (such as singulative *-ti* or 2s/3f imperfective verbal suffix *-ta*) attach to stems ending in a consonant, assimilation depends on the relative sonority of the stem-final consonant:
+   - **After Liquids (/l, r/) — Total Progressive Gemination**: *maal + -ta →* **maal-la** ('you/she hears'), *fur + -ta →* **fur-ra** ('you/she opens'), *baar + -ta →* **baar-ra** ('it flies'), *kor + -u →* **kor-ri** ('trees'), *gaal + -u →* **gaal-li** ('camels'), *bil + -u →* **bil-li** ('houses').
+   - **After Nasals (/m, n/) — Place & Manner Coalescence to Geminate *-nn-***: Labial /m/ assimilates in place to coronal /t/, while /t/ assimilates in nasality to the nasal, yielding geminate **-nn-**: *kom + -ta →* **kon-na** ('you/she eats'), *giin + -ta →* **giin-na** ('you/she bites').
+   - **After Labial Fricative (/f/) — Progressive Gemination**: *rif + -ta →* **rif-fa** ('you/she sleeps'), *kuf + -ta →* **kuf-fa** ('you/she dies').
+   - **After Coronal Sibilant/Fricative (/s, dh/)**: *gas + -u →* **gac-cu / gas-u** ('feet/legs'), *sedh + -ta →* **sete** ('you/she walks').`,
+    examples: [
+      { daasanach: "maal + -ta → maal-la • fur + -ta → fur-ra • kom + -ta → kon-na • rif + -ta → rif-fa", english: "you/she hears • you/she opens • you/she eats • you/she sleeps", explanation: "Sonority-driven consonant assimilation in 2s/3f imperfective verbs (Nishiguchi 2004, pp. 7–9)" },
+      { daasanach: "bil → bil-li • gaal → gaal-li • cher → cher-ri • kor → kor-ri", english: "house → houses • camel → camels • dog → dogs • tree → trees", explanation: "Liquid gemination in noun plural formation (Nishiguchi 2004, pp. 4–6)" }
+    ]
+  },
+  {
+    id: "daasanach-blazek-2011-morphology-lexicon",
+    title: "Western Omo-Tana Classification, Clusivity Pronouns, Number Marking & 100-Word Swadesh Etymologies (Blažek 2011 & Höhnel 1894)",
+    summary: "Václav Blažek (2011) synthesizes the genealogical position of Daasanach inside the Western Omo-Tana branch of Lowland East Cushitic alongside Arbore and Elmolo, detailing its pronominal clusivity, numerals, and core lexicon.",
+    content: `From Václav Blažek (*"Dasanech Language: State-of-the-Art"*, 2011, pp. 1–16, citing Sasse 1974/1976 and Tosco 2001) and Lieut. Ludwig von Höhnel (*Discovery of Lakes Rudolf and Stefanie*, Vol. I, 1894, pp. 161–175):
+1. **Genealogical Position in Lowland East Cushitic (Omo-Tana)**:
+   - Daasanach (*'Af Dhaasanac*) forms the **Western Omo-Tana (Galaboid)** sub-branch together with **Arbore** (*Marle*) and Kenya's endangered **Elmolo**, closely related to **Rendille** and **Somali**.
+   - Regular sound correspondences include Lowland East Cushitic *\*l → n* in initial position before nasals (*\*lam(m)a → nààmà* 'two'), loss of pharyngeal laryngeals with compensatory vowel length (*\*mathH- → mé* 'head', *\*magac- → mé* 'name'), and *\*k → ch* palatalization before front vowels (*\*ker- → chér* 'dog', *\*k(V)an- → chén* 'five').
+2. **Inclusive vs. Exclusive 1st Person Plural Pronouns (Blažek 2011, p. 3)**:
+   - **1s**: Subj. *yáa*, Obj. *yú*, Poss. *chú / kú* ('my').
+   - **2s**: Subj. *kúu*, Obj. *kú / kuo*, Poss. *kúo* ('thy').
+   - **1p Inclusive ('you and I')**: Subj. **múu**, Obj. **mú / muo**.
+   - **1p Exclusive ('we without you')**: Subj. **nyíni**, Obj. **nyí**.
+   - **2p**: Subj. **'ítíni**, Obj. **'ití**.
+3. **Three-Way Nominal Number System (Collectives, Singulatives *-ti/-iti*, Pluratives *-u/-ddi*)**:
+   - Many transnumeral collectives form a singulative in **-ti** and a plurative in **-u / -ddi**: e.g., *bêèch* ('fish [coll.]') → *bêèch-tì* ('a fish') → *bêèch-ù* ('fishes'); *kìdìny* ('bird') → *kìdìny-tì* → *kìdìny-ù*; *jáàr* ('stone') → *jáàr-tì* → *jáàr-ù*.
+   - Compound genitives use the suffix **-iet**: *góng kór-iet* ('bark of tree' = 'skin of tree'), *nèèt kór-iet* ('leaf' = 'ear of tree').`,
+    examples: [
+      { daasanach: "múu (inclusive) vs. nyíni (exclusive) • tákàch (1), nààmà (2), sèddí (3), 'àffúr (4), chén (5)", english: "we (incl. vs. excl.) • 1, 2, 3, 4, 5", explanation: "Pronominal clusivity and numerals in Blažek (2011, pp. 3–4)" },
+      { daasanach: "bêèch → bêèch-tì (sg.) → bêèch-ù (pl.) • góng kór-iet • nèèt kór-iet", english: "fish (coll. → sg. → pl.) • bark ('skin of tree') • leaf ('ear of tree')", explanation: "Tripartite number marking and genitive compounds (Blažek 2011, pp. 5–10)" }
+    ]
+  }
+];
+
+// ============================================================
+// Enriched Grammar Reference Sections from the 31 Newly Integrated Texts
+// ============================================================
+
+SWAHILI_GRAMMAR_SECTIONS.push(
+  {
+    id: "swahili-beech-1918-steere-1918-werner-1918-1919",
+    title: "Swahili Arabic Script (Ajami), Poetic Meters (Utendi, Shairi, Takhmisi) & Kiamu/Kimvita Narrative Texts (Beech 1918, Steere 1918 & Werner 1918–1933)",
+    summary: "Mervyn W. H. Beech (1918), Bishop Edward Steere (1918), and Prof. Alice Werner (1918, 1919, 1933) document Swahili Arabic-script (Ajami) orthography, classical coastal prosody, and interlinear Kiamu (Shela) and Kimvita (Mombasa) dialect texts.",
+    content: `From Mervyn W. H. Beech (*Aids to the Study of Ki-Swahili*, 1918, pp. 1–159), Bishop Edward Steere (*Swahili Exercises*, 1918), and Prof. Alice Werner (*"Swahili Poetry"*, BSOS 1918; *Introductory Sketch of the Bantu Languages*, 1919, Appendix I pp. 241–258; *Myths and Legends of the Bantu*, 1933, Ch. X):
+1. **Swahili Arabic Script (*Khati ya Kiswahili / Ajami*, Beech 1918, pp. 1–51)**:
+   - Arabic has only 3 vowel signs (*fatha = a*, *kasra = i/e*, *dhamma = u/o*) to represent Swahili's 5 vowels (*a, e, i, o, u*), and single Arabic letters represent multiple Swahili prenasalized, aspirated, and dental vs. cerebral consonants (e.g., *ب* for *b, p, p', mb, mp*; *ت* for dental *t, t', nt* and cerebral *t*; *ج* for *j, nj, ch, ch'*), requiring contextual mastery illustrated across Beech's 11 facsimile letters and legal deeds.
+2. **Classical Coastal Poetic Meters (Werner 1918, pp. 113–127 & Steere 1870)**:
+   - **(1) Utendi / Utenzi**: Epic/didactic 4-line stanzas of 8 syllables (*mizani*) per line, where the first three lines rhyme together (*a-a-a*) and the fourth line carries a constant rhyme (*-ya / -ia / -wa*) throughout the entire poem (e.g., *Utendi wa Mwana Kupona* by Mwana Kupona binti Msham of Siu, c. 1858; *Utendi wa Liongo*).
+   - **(2) Shairi / Mashairi**: Lyric/philosophical 4-line stanzas of 16 syllables per line divided by a medial caesura (*8 + 8*) with interlocking internal and end rhymes (e.g., Muyaka bin Haji of Mombasa, 1776–1840).
+   - **(3) Takhmisi**: 5-line stanzas built by adding three lines to an older couplet (as in Sheikh Abdallah bin Ali bin Nasir's *Mashairi ya Liongo*).
+   - **(4) Wimbo / Utumbuizo**: 12-syllable serenades and dance songs (*gungu* and *kipungu* meters).
+3. **Kiamu (Lamu/Shela) vs. Kimvita (Mombasa) Narrative Grammar (Werner 1919, Appendix I, pp. 241–258)**:
+   - **Kiamu (Three Stories of Shela dictated by Muhamadi Kijuma)**: *mai* ('water' = *maji*), *yaa* ('be full' = *jaa*, perfect *imeziye kuyaa* 'it has finished filling'), *yua* ('know' = *jua*, neg. future *hutoyua* 'you will not know'), *tinda* ('slaughter' = *chinja*), *tini* ('below' = *chini*), *tiati* ('ground/earth'), *vundika* ('break' = *vunjika*), *mkakambe* ('millet porridge'), *twelea* ('add *kitoweo* relish to porridge').
+   - **Kimvita (Mombasa tale dictated by Muhammad bin Ma'alim)**: Perfect tense with **-na-** (*simba anakonda na ndaa* 'the lion has grown thin with hunger', *nnakuja* 'I have come'), passive **pawa** ('be given' = *pewa*), *mato* ('eyes' = *macho*), *kitwani* ('in the head' = *kichwani*), *mangi* ('many' = *mengi*), *zakwe / yakwe* ('his' = *zake / yake*).`,
+    examples: [
+      { swahili: "Kasiki imeziye kuyaa mai • Mti ukavundika tini (Kiamu)", english: "The jar has finished filling with water • The pestle broke the bottom", explanation: "Kiamu dialect narrative from Shela in Alice Werner (1919, Appendix I, pp. 241–244)" },
+      { swahili: "Simba haoni, anakonda na ndaa • Apake mate yakwe matoni (Kimvita)", english: "The lion cannot see, he has grown thin with hunger • Let him smear his spittle on his eyes", explanation: "Kimvita (Mombasa) story in Alice Werner (1919, Appendix I, pp. 250–258)" },
+      { swahili: "Negema wangi matozi, kwa kilio na maozi (Muyaka, Werner 1918)", english: "Draw near, watching me with weeping and tears", explanation: "Classical Mombasa verse cited in Alice Werner ('Swahili Poetry', 1918)" }
+    ]
+  },
+  {
+    id: "swahili-modern-morphology-relatives-reversive-2016-2022",
+    title: "Computational Morpheme Discovery (Goldsmith & Mpiranya 2022), 3-Way Relative Clauses (Mwamzandi 2022; Riedel 2019) & Reversive Allomorphy (Ngonyani & Ngowa 2016)",
+    summary: "Recent peer-reviewed studies analyze Swahili's verbal template via Minimum Description Length (Goldsmith & Mpiranya 2022), the syntactic and discourse division of labor across Swahili's three relative clause strategies (Mwamzandi 2022), and vowel-height harmony in the reversive extension (Ngonyani & Ngowa 2016).",
+    content: `From John Goldsmith & Fidèle Mpiranya (*"Learning Swahili Morphology"*, 2022), Mohamed Mwamzandi (*"Discourse and Syntactic Properties of Swahili Relative Clauses"*, 2022), Deo Ngonyani & Nancy Ngowa (*"The Reversive Extension in Swahili"*, in *Diversity in African Languages*, 2016, Ch. 14, pp. 269–289), and Kristina Riedel / Hannah Sande et al. (*Theory and Description in African Linguistics*, 2019, Chs. 23, 29, 33):
+1. **Three Relative Clause Strategies & Discourse Accessibility (Mwamzandi 2022; Riedel 2019)**:
+   - **(Type 1) Tensed Prefixal Relative (*SM-TENSE-REL-OM-ROOT-FV*)**: Restricted to *-na-* (present), *-li-* (past), *-taka-* (future), and *-si-* (negative); favored in written Swahili when the relative clause subject is high in accessibility (pronoun/affix): *chakula a-li-cho-ki-pika* ('the food which s/he cooked').
+   - **(Type 2) Analytic *amba-REL* (*amba-cho a-me-ki-pika*)**: Mandatory with *-me-* (perfect), *-ja-* ('not yet'), *-nge-/-ngali-* (conditional), *hu-* (habitual), and non-standard TAMs; strongly favored when the relative clause contains a full lexical NP subject or non-core oblique argument.
+   - **(Type 3) Tenseless Suffixal Relative (*SM-OM-ROOT-a-REL*)**: Marks generic/habitual relative clauses: *kitabu a-soma-cho* ('the book which s/he reads').
+2. **Reversive Extension Allomorphy (*-u, -o, -ul, -ol*, Ngonyani & Ngowa 2016, Ch. 14)**:
+   - The reversive ("un-do") suffix has four allomorphs conditioned by **vowel height harmony** (mid *-o/-ol* after root mid back vowel /o/; high *-u/-ul* after /a, e, i, u/) and **consonant retention** (lateral /l/ surfaces before vowel-initial extensions like applicative *-i/-e*, causative *-ish*, and passive *-iw/-ew*, and deletes before final vowel *-a*):
+   - *fung-a* ('tie/shut') → **fung-u-a** ('untie/open') → applicative **fung-ul-i-a**, passive **fung-ul-iw-a**.
+   - *chom-a* ('stab/insert') → **chom-o-a** ('draw/pull out') → applicative **chom-ol-e-a**.
+   - *teg-a* ('set trap') → **teg-u-a** ('spring/disassemble trap'); *zib-a* ('plug') → **zib-u-a** ('unplug').`,
+    examples: [
+      { swahili: "chakula a-li-cho-ki-pika (Tensed) • chakula amba-cho a-me-ki-pika (amba-REL) • chakula a-pika-cho (Tenseless)", english: "the food which s/he cooked • the food which s/he has cooked • the food which s/he cooks", explanation: "Three Swahili relative clause constructions (Mwamzandi 2022, pp. 247–265)" },
+      { swahili: "funga → fungua (fungulia, funguliwa) • choma → chomoa (chomolea) • ziba → zibua", english: "shut → open (open for, be opened) • insert → pull out (pull out for) • plug → unplug", explanation: "Vowel height harmony (-u vs. -o) and /l/ retention (-ul-/-ol-) in the reversive extension (Ngonyani & Ngowa 2016, pp. 271–284)" }
+    ]
+  }
+);
+
+KALENJIN_GRAMMAR_SECTIONS.push(
+  {
+    id: "kalenjin-zwarts-2024-reflexive-kipsigis-2019",
+    title: "Grammaticalization of the Kalenjin Reflexive *-kee(y)* (Zwarts, Chelimo & Jerono 2024) & Kipsigis Quantification / Complementizer Agreement (Landman 2019; Diercks & Rao 2019)",
+    summary: "Recent Highland Nilotic research explains how the Kalenjin reflexive/middle suffix -kee(y) grammaticalized from the noun kɛɛy ('self/body'), how Kipsigis universal quantification contrasts tugul ('all') with age tugul ('every'), and how Kipsigis complementizers agree upward.",
+    content: `From Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (*"Giving a Body to the Kalenjin Reflexive"*, 2024, pp. 429–449), Meredith Landman (*"Nominal Quantification in Kipsigis"*, in *Theory and Description in African Linguistics*, 2019, Ch. 25, pp. 435–450), and Michael Diercks & Meghana Rao (*"Upward-Oriented Complementizer Agreement with Subjects and Objects in Kipsigis"*, 2019, Ch. 20, pp. 349–366):
+1. **Grammaticalization of the Kalenjin Reflexive/Middle Suffix *-kee(y)* (Zwarts, Chelimo & Jerono 2024)**:
+   - Across Kalenjin varieties (Tugen *-kee*, Nandi *-ke*, Kipsigis *-gee*, Pokot/Endo *-key / -kegh*), the invariant verbal suffix **-kee(y)** encodes four valency-reducing functions:
+     - **(a) Direct/Indirect Reflexive**: *Kɪ-ɪ-un-ɛɛn-kɛɛy Cheebet sɔɔpuun* ('Chebet washed herself with soap'); *Kɪ-rɪp-chɪ-kɛɛy Kɪbɛɛt tuga* ('Kibet watched the cows for himself').
+     - **(b) Reciprocal (with plural subjects)**: *Kɪ-chɔɔm-kɛɛy laakwɛɛk* ('The children loved each other'); *Ka-toret-kee piik* ('The people helped one another').
+     - **(c) Grooming / Body-Care Middle**: *ɪl-kɛɛy* ('anoint oneself'), *un-kɛɛy* ('bathe/wash oneself').
+     - **(d) Anticausative / Spontaneous Event**: *Ka-yat-kee kurget* ('The door opened by itself').
+   - Morphologically, *-kee(y)* derives from the Kalenjin noun **kɛɛy** (indefinite/primary) / **kɛɛ-t** (definite/secondary, pl. **kɛɛ-wɛk**) meaning 'self, body' (still used as an independent nominal in prepositional phrases like *ɛɛn kɛɛ-nyɪɪn* 'by himself/herself').
+2. **Kipsigis Universal Quantification: *tugul* ('all') vs. *age tugul* ('every') (Landman 2019, Ch. 25)**:
+   - The universal quantifier **tugul** ('all/whole') combines directly with plural definite noun phrases (*Ru-e lagok tugul* 'All the children are sleeping'; *Ko-gitiense echek tugul* 'All of us sang'), but **cannot** combine directly with singular count nouns (*\*Ru-e lakwet tugul* is ungrammatical).
+   - To quantify distributively over singular count nouns ('every/each'), Kipsigis requires the choice-function indefinite determiner **age** (pl. *alak*, 'some/other/a certain') before *tugul*: **Ru-e lakwet age tugul** ('Every child is sleeping'); **Ko-ger Chebet kitabut age tugul** ('Chebet saw every book').`,
+    examples: [
+      { kalenjin: "Kɪ-ɪ-un-ɛɛn-kɛɛy Cheebet sɔɔpuun • Kɪ-chɔɔm-kɛɛy laakwɛɛk • Ka-yat-kee kurget", english: "Chebet washed herself with soap • The children loved each other • The door opened by itself", explanation: "Reflexive, reciprocal, and anticausative uses of -kee(y) (Zwarts, Chelimo & Jerono 2024, pp. 431–437)" },
+      { kalenjin: "Ru-e lagok tugul (plural) vs. Ru-e lakwet age tugul (singular distributive)", english: "All the children are sleeping vs. Every child is sleeping", explanation: "Kipsigis universal quantification with tugul vs. age tugul (Landman 2019, pp. 436–442)" }
+    ]
+  }
+);
+
+MIJIKENDA_GRAMMAR_SECTIONS.push(
+  {
+    id: "mijikenda-werner-1915-nicolle-2016-digo",
+    title: "Kaya Age-Grades (Nyere, Khambi, Vaya) & Digo (Chidigo) Information Structure (Werner 1915 & Nicolle 2016)",
+    summary: "Prof. Alice Werner (1915) documents the nine Mijikenda Kaya age-grades and sacred mwanza friction-drum, while Steve Nicolle (2016) analyzes topic, focus, and constituent order in Chidigo.",
+    content: `From Prof. Alice Werner (*"The Bantu Coast Tribes of the East Africa Protectorate"*, JRAI Vol. 45, 1915, pp. 326–354) and Steve Nicolle (*"Information Structure in Digo and Other Eastern Bantu Languages"*, in *Diversity in African Languages*, 2016, Ch. 20, pp. 397–415):
+1. **The Nine Coastal *Kaya* Settlements, Age-Sets & the Sacred *Mwanza* Drum (Werner 1915, pp. 327–345)**:
+   - Documents the fortified hilltop *kaya* settlements of the *Wanyika* (Mijikenda: Giriama, Rabai, Duruma, Digo, Chonyi, Jibana, Kambe, Ribe, Kauma), their migration from *Shungwaya*, the generational *rika* cycles, the elder council grades **Kambi** and **Vaya** (custodians of the sacred *fisi* hyena oath and the friction-drum **mwanza**), and the carved wooden memorial posts (**vigango**).
+2. **Information Structure & Constituent Order in Digo / Chidigo (Nicolle 2016, Ch. 20)**:
+   - While canonical syntax is SVO, Digo uses left-dislocation for topicalized constituents (indexed by an object prefix on the verb) and post-verbal positioning for new/focal arguments, distinguishing argument focus from predicate/truth-value focus.`,
+    examples: [
+      { mijikenda: "Kaya • Kambi • Vaya • Mwanza • Vigango", english: "Fortified forest citadel • Elder ruling council • Inner sacred council • Sacred friction-drum • Carved memorial posts", explanation: "Mijikenda institutional terminology in Alice Werner (1915, pp. 327–345)" }
+    ]
+  }
+);
+
+MERU_GRAMMAR_SECTIONS.push(
+  {
+    id: "meru-kitharaka-champion-1912-mberia-2004-dundas-1915",
+    title: "Kĩtharaka Phonology & Loanword Nativization (Kithaka wa Mberia 2004), Atharaka Ethnography (Champion 1912) & Chuka/Mwimbi/Tharaka Law (Dundas 1915)",
+    summary: "Prof. Kithaka wa Mberia (2004) analyzes how Kĩtharaka's 7-vowel system, fricatives (/β, ð, ɣ/), and open-syllable constraints adapt borrowed words, complementing Arthur M. Champion's (1912) Atharaka ethnography and Charles Dundas's (1915) study of Chuka, Mwimbi, and Tharaka governance.",
+    content: `From Prof. Kithaka wa Mberia (*"The Phonology of Borrowed Words in Kitharaka"*, Nordic Journal of African Studies 13(1), 2004, pp. 74–85), Arthur M. Champion (*"The Atharaka"*, JRAI Vol. 42, 1912, pp. 68–90), and Hon. Charles Dundas (*"The Organization and Laws of Some Bantu Tribes in East Africa"*, JRAI Vol. 45, 1915, pp. 234–306):
+1. **Kĩtharaka Phonemic Inventory & Consonant Substitution Rules (Kithaka wa Mberia 2004, pp. 75–81)**:
+   - **7 Vowels (Short & Long)**: /i, e, ɛ, a, ɔ, o, u/.
+   - **Absence of Voiceless Labiodental/Alveolar Fricatives (/f, v, s, z/) & Voiced Non-Prenasalized Plosives (/b, d, g/)**:
+     - Foreign **/b, f, v/** nativize to bilabial fricative **/β/** (written *b*): English *baptism* / Swahili *ubatizo* → **ũbatitho** [oβatiðɔ]; Swahili *sifuri* ('zero') → **kĩbũrĩ** [keβore]; *taabu* ('trouble') → **ndaaβu**.
+     - Foreign **/s, z, θ, ð/** nativize to dental fricative **/ð/** (written *th*): Swahili *soko* ('market') → **thoko** [ðɔkɔ]; * saa* ('hour/watch') → **thaa** [ðaa]; *meza* ('table') → **metha** [mɛða]; *bunduki* ('gun') → **mũndũki** [mondoki].
+     - Foreign **/d/** nativizes to prenasalized **/nd/** or **/nt/** (*dakika* 'minute' → **ndagĩka**), and **/l/** nativizes to flap **/r/** (*skuli* 'school' → **thukuru** [ðukuru]).
+   - **Syllable Structure & Vowel Epenthesis**: Kĩtharaka permits only open **(C)V** syllables (no consonant clusters or codas); consonant clusters and final consonants are resolved by vowel epenthesis governed by labial attraction (/u/ after labial consonants) or vowel copy/coronal default (/i, e/).
+2. **Atharaka, Chuka & Mwimbi Ethnography & Customary Law (Champion 1912 & Dundas 1915)**:
+   - Champion (1912, pp. 68–90) documents the Atharaka settlements on both banks of the Tana River around the Grand Falls, their bee-keeping with hollowed log hives (**mwatũ**) hung in baobab and acacia trees, ironworking, bow-and-arrow hunting (*ũta* and *mũgũĩ* with *Acokanthera* poison), and circular granaries.
+   - Dundas (1915, pp. 238–304) records the generational age-sets (**ntuke**) of Chuka, Mwimbi, and Tharaka, the elder councils (**kiama**), and the unalienable forest/ridge estates (**gĩthaka**) of the Chuka on the eastern slopes of Mount Kenya.`,
+    examples: [
+      { meru: "soko → thoko [ðɔkɔ] • meza → metha [mɛða] • sifuri → kĩbũrĩ [keβore] • skuli → thukuru [ðukuru]", english: "market • table • zero • school", explanation: "Kĩtharaka consonant substitution and vowel epenthesis in borrowed words (Kithaka wa Mberia 2004, pp. 77–83)" },
+      { meru: "Ntuke (generational age-set) • Kiama • Gĩthaka • Mwatũ (log beehive)", english: "Ruling generation • Council of elders • Clan land estate • Hollowed log beehive", explanation: "Chuka, Mwimbi & Atharaka institutional and material vocabulary (Champion 1912 & Dundas 1915)" }
+    ]
+  }
+);
+
+SOMALI_GRAMMAR_SECTIONS.push(
+  {
+    id: "somali-kirk-1903-nilsson-2016-kimper-2019",
+    title: "Acoustic ATR Vowel Harmony (Kimper et al. 2019), Tonal Gender Polarity (Nilsson 2016), Kirk (1903) Notes & Marka/Af-Ashraaf (DiGarbo & Stamp 2019)",
+    summary: "Synthesizes Lt. J. W. C. Kirk's (1903) pioneering Somali grammatical notes with modern acoustic studies of Somali (+ATR/-ATR) vowel harmony minimal pairs (Kimper et al. 2019), tonal accent in gender polarity (Nilsson 2016), and southern Somali Af-Ashraaf morphology (DiGarbo & Stamp 2019).",
+    content: `From Lt. J. W. C. Kirk (*"Notes on the Somali Language"*, 1903), Morgan Nilsson (*"Somali Gender Polarity Revisited"*, in *Diversity in African Languages*, 2016, Ch. 23, pp. 451–466), Wendell Kimper et al. (*"Acoustic and Perceptual Correlates of Vowel Harmony in Somali"*, in *Theory and Description in African Linguistics*, 2019, Ch. 11, pp. 183–197), and Anna M. DiGarbo & Rose Stamp (*"A Description of Marka [Af-Ashraaf]"*, 2019, Ch. 7, pp. 115–130):
+1. **Series A (-ATR / Retracted) vs. Series B (+ATR / Fronted) Vowel Harmony Minimal Pairs (Kimper et al. 2019, Ch. 11)**:
+   - Somali divides its five vowel letters (*i, e, a, o, u*) into two harmonizing phonation/tongue-root series — **Series A (retracted/sphinctered, higher F1)** and **Series B (fronted/expanded +ATR, lower F1)** — which distinguish morphological and lexical minimal pairs (Andrzejewski 1955; Kimper et al. 2019, p. 186):
+     - **dhis**: Series A 'build! (imp.)' vs. Series B 'he built (past)'.
+     - **hel**: Series A 'find! (imp.)' vs. Series B 'he found (past)'.
+     - **qod**: Series A 'dig! (imp.)' vs. Series B 'he dug (past)'.
+     - **tus**: Series A 'show! (imp.)' vs. Series B 'he showed (past)'.
+     - **kab**: Series A 'sandal (n.)' vs. Series B 'he set a broken bone (v.)'.
+     - **hees**: Series A 'song (n.)' vs. Series B 'he sang (v.)'.
+     - **laab**: Series A 'chest/thorax (n.)' vs. Series B 'he folded (v.)'.
+     - **diiday**: Series A 'I fainted' vs. Series B 'I refused'.
+     - **duushay**: Series A 'she flew' vs. Series B 'she attacked'.
+2. **Tonal Accent & Definite Article Allomorphy in Gender Polarity (Nilsson 2016, Ch. 23)**:
+   - Masculine singular nouns place high tonal accent on the **penultimate mora** and take the *k*-series definite article (/k, g, h, Ø/): **ínan → ínanka** ('boy'), **gámbar → gámbarka** ('stool'), **díbi → díbiga** ('ox').
+   - Feminine singular nouns (and 5th-declension collectives) place high tonal accent on the **final mora** and take the *t*-series definite article (/t, d, ʃ/): **inán → inánta** ('girl'), **sabáb → sabábta** ('reason'), **dibí → dibída** ('oxen').`,
+    examples: [
+      { somali: "dhis ('build!' vs. 'he built') • hees ('song' vs. 'he sang') • diiday ('I fainted' vs. 'I refused')", english: "Series A (-ATR) vs. Series B (+ATR) vowel harmony minimal pairs", explanation: "Andrzejewski (1955) & Kimper et al. (2019, Ch. 11, p. 186)" },
+      { somali: "ínan → ínanka (masc. sg.) vs. inán → inánta (fem. sg.) • díbi → díbiga (ox) vs. dibí → dibída (oxen)", english: "the boy vs. the girl • the ox vs. the oxen", explanation: "Penultimate (masc.) vs. final (fem./collective) tonal accent and k/t article selection (Nilsson 2016, pp. 453–462)" }
+    ]
+  }
+);
+
+POKOMO_GRAMMAR_SECTIONS.push(
+  {
+    id: "pokomo-samson-1944-werner-1915-1933",
+    title: "The 13 Pokomo Sub-Tribes (Vyeti), Shungwaya & SangoVere Origins, Wakijo/Ngadzi Orders & Liongo Traditions (Mikael Samson 1944 & Werner 1915, 1933)",
+    summary: "Mikael Samson's indigenous Kipokomo history (translated by R. G. Darroch, JRAI 1944) and Prof. Alice Werner (1915, 1933) record the 13 Tana River Pokomo vyeti, the Wakijo council grades, the sacred ngadzi friction-drum, and the Pokomo oral traditions of Liongo Fumo.",
+    content: `From Mikael Samson & R. G. Darroch (*"Some Notes on the Early History of the Tribes Living on the Lower Tana, Engaged by Mikael Samson and Others"*, JRAI Vol. 73, 1944, pp. 119–149) and Prof. Alice Werner (*"The Bantu Coast Tribes of the East Africa Protectorate"*, JRAI Vol. 45, 1915, pp. 326–354 & *Myths and Legends of the Bantu*, 1933, Ch. X):
+1. **The 13 Pokomo Sub-Tribes (*Vyeti*) along the Tana River (*Muho wa Tsana*, Samson 1944 & Werner 1915)**:
+   - **Upper Pokomo (8 Vyeti)**: *Korokoro, Malankote, Malalulu, Zubaki, Ndura, Kinakomba, Gwano, Ndera*.
+   - **Lower Pokomo (5 Vyeti)**: *Mwina, Ngatana, Dzunza, Buu, Kalindi*.
+   - Mikael Samson (1944) preserves the indigenous history of the *Buu* clan descending from the founding ancestor **SangoVere** at **Shungwaya** and the formation of the *vyeti* alliances along the flood-plain bends (*maro*) of the Tana River.
+2. **Age-Sets (*Luva*), Council Orders (*Wakijo*), Healers (*Wagangana*) & the Sacred *Ngadzi* Drum (Werner 1915 & Samson 1944)**:
+   - Boys enter the *nyere* youth grade and advance through the **luva** age-sets into the **kijo** (*wakijo* elders' council), whose highest initiates guard the sacred friction-drum **ngadzi** inside the forest lodge alongside the **mugangana** (pl. *wagangana*) ritual healing order.
+3. **Pokomo Traditions of Liongo Fumo (*Muntu Muyeya*, Werner 1933, Ch. X)**:
+   - In Pokomo oral tradition recorded by Werner (1915, 1933), the hero **Liongo Fumo** of Shaka (near Kipini) was a giant (*muntu muyeya* 'tall man') who walked from Shaka to Gana (Chara) and back in a single day and imposed the *kikoa* tribute of *makoma* (doum-palm nuts) on the Wasanye and Wadahalo before shooting down the palm nuts with his bow.`,
+    examples: [
+      { pokomo: "SangoVere • Shungwaya • Vyeti (Buu, Kalindi, Dzunza, Ngatana, Mwina, Ndera, Gwano, Kinakomba, Ndura, Zubaki)", english: "Founding ancestor of the Buu • Ancestral homeland • Pokomo riverine sub-tribes", explanation: "Mikael Samson & R. G. Darroch (1944, JRAI Vol. 73, pp. 119–149)" },
+      { pokomo: "Wakijo • Ngadzi • Mugangana (pl. Wagangana) • Luva • Muntu muyeya", english: "Council elders • Sacred friction-drum • Traditional healer-priest • Age-set • Tall man (epithet of Liongo Fumo)", explanation: "Prof. Alice Werner (1915, pp. 336–350 & 1933, Ch. X)" }
+    ]
+  }
+);
+
+BORANA_GRAMMAR_SECTIONS.push(
+  {
+    id: "borana-krapf-1840-griefenow-mewis-1996-werner-1915",
+    title: "Krapf's 1840 Outline of the Galla (Oromo) Language, Case Suffixation & Tana River Orma/Bararetta Dialect (Krapf 1840, Griefenow-Mewis 1996 & Werner 1915)",
+    summary: "Rev. J. L. Krapf's pioneering 1840 treatise An Imperfect Outline of the Elements of the Galla Language (analyzed by Catherine Griefenow-Mewis 1996) established the first printed grammatical description of Oromo/Borana case suffixes, verb derivations, and pronouns.",
+    content: `From Rev. J. L. Krapf & Rev. C. W. Isenberg (*An Imperfect Outline of the Elements of the Galla Language*, CMS London, 1840, pp. i–xiv, 1–40), Catherine Griefenow-Mewis (*"J. L. Krapf and His Role in Researching and Describing East-African Languages"*, 1996), R. N. Cust (1883, Vol. I, pp. 122–126), and Prof. Alice Werner (1915):
+1. **First Printed Oromo/Borana Grammar (Krapf 1840 & Griefenow-Mewis 1996)**:
+   - Compiled by Krapf in Shoa (1839–1840) with his young Oromo assistant **Rufo** and later compared with the Equatorial / Tana River **Orma (*Bararetta*)** dialect in Kenya (1845–1850).
+   - Codifies Oromo's **Subjective/Nominative case markers** (*-ni* for masculine/consonant stems: *nama → namni* 'man', *muka → mukni* 'tree'; *-ti* for feminine stems: *intala → intalti* 'girl', *lafa → lafti* 'earth') vs. the **Base/Absolutive case** used for direct objects and predicates (*nama, muka, intala, lafa*).
+   - Documents the **Dative/Benefactive** (*-f / -ti*), **Ablative/Instrumental** (*-da / -ni*), and **Vocative** (*ya Waaqa!* 'O God!', *ya obboleessa!* 'O brother!').
+2. **Verbal Derivation & Moods in Krapf (1840, pp. 12–28)**:
+   - Distinguishes the Root stem (*dura / deema*), **Causative** (*-s- / -sis-*), **Autobenefactive/Middle** (*-at- / -ad'-*, e.g. *kad'at-* 'pray for oneself'), and **Passive** (*-am-*), with Negative prefix **hin-** (*hin-deemu* 'I do not go', past *hin-deemne* 'I did not go').`,
+    examples: [
+      { borana: "nama (absolutive) → namni (nominative) • intala → intalti • lafa → lafti • muka → mukni", english: "man • girl • earth • tree (Absolutive vs. Nominative case)", explanation: "Subjective case suffixation (-ni / -ti) in Krapf (1840) & Griefenow-Mewis (1996)" },
+      { borana: "ya Waaqa! • hin-deemu (pres. neg.) / hin-deemne (past neg.)", english: "O God! • I do not go / I did not go", explanation: "Vocative particle ya and negative prefix hin- in Krapf (1840)" }
+    ]
+  }
+);
+
+ILCHAMUS_GRAMMAR_SECTIONS.push(
+  {
+    id: "ilchamus-hohnel-1894-farler-1882-baringo",
+    title: "1887–1888 Njemps (En-jemusi) Irrigation Engineering, Ambatch Rafts & Lake Baringo Lexicon (Höhnel 1894 & Farler/Wakefield 1882)",
+    summary: "Lieut. Ludwig von Höhnel (1894, Vol. I, Ch. VI) and Ven. J. P. Farler & Rev. T. Wakefield (1882) provide the earliest detailed descriptions of the Ilchamus (En-jemusi) fortified villages Njemps Mkubwa and Njemps Ndogo, their Perkerra/Tigrish irrigation dams, and Lake Baringo ecology.",
+    content: `From Lieut. Ludwig von Höhnel (*Discovery of Lakes Rudolf and Stefanie*, Vol. I, 1894, pp. 388–425) and Ven. J. P. Farler & Rev. T. Wakefield (*"Native Routes in East Africa"*, PRGS Vol. 4, 1882, pp. 730–746):
+1. **Njemps Mkubwa & Njemps Ndogo on the Guaso Tigerish (Perkerra) and Molo Rivers (Höhnel 1894)**:
+   - Documents the two double-stockaded Maa-speaking settlements **Njemps Mkubwa** (*Njemps Liabori* on the Molo) and **Njemps Ndogo** (*Njemps Lekepir* on the *Guaso Tigerish* / Perkerra river) south of Lake Baringo.
+   - Describes the communal brushwood, pile, and boulder **irrigation dams** built across the Tigrish river with radiating main and secondary sluice-canals flooded prior to sowing **wimbi** (eleusine/finger millet), **mtama** (sorghum), melons, pumpkins, and beans.
+   - Records the use of light **ambatch-wood (*Aeschynomene elaphroxylon*) log rafts (*l-kadong'ot / oboro*)** to ferry people and livestock to **Ol Kokwa** island in the center of Lake Baringo.`,
+    examples: [
+      { ilchamus: "En-jemusi (Njemps Liabori & Njemps Lekepir) • Guaso Tigerish • Ol Kokwa • l-kadong'ot", english: "Lower & Upper Njemps • Perkerra River • Central island of Lake Baringo • Ambatch-wood canoe/raft", explanation: "Lake Baringo Ilchamus geography and irrigation culture in Höhnel (1894, Vol. I, pp. 388–425) & Dundas (1910)" }
+    ]
+  }
+);
+
+// ============================================================
+
+MIJIKENDA_UNITS.push(
+  {
+    id: "mijikenda-unit-13-krapf-rebmann-1887",
+    title: "Unit 13: 1887 Nika Dictionary — Solar Clock, Kaya Institutions & Ecological Taxonomies",
+    description: "Master the 13-stage Mijikenda solar clock (Dzua), the 5 indigenous finger names (Chala), the 7 coconut maturation stages (Pungapunga to Muvala), the 8 palm-tapping steps (Ugema), and Kaya governance from Krapf, Rebmann & Sparshott (1887).",
+    icon: "Sun",
+    skills: [
+      {
+        id: "mijikenda-1887-solar-clock-fingers",
+        title: "13-Stage Solar Clock (Dzua), Night Watches & 5 Finger Names (Chala)",
+        icon: "Clock",
+        description: "Learn how the Mijikenda reckon every hour of the day by the position of the sun (dzua) and cattle-pasturing cycles, alongside the five traditional finger names (Krapf & Rebmann 1887, pp. 20–21, 66, 176).",
+        tips: "In Kinika (Krapf & Rebmann 1887, p. 66), dzua ('sun', Class 5 ri-) takes the perfect prefix ri-dzi- (or ri-dza-) to mark each stage of the solar arc from sunrise (Dzua ridziupuka) to high noon (Dzua ridzifika vidzoani) and sunset (Dzua ridzedzua).",
+        words: [
+          {
+            target: "Dzua ridziupuka / Dzua ridziombola",
+            source: "Sunrise (6:00 a.m. — the sun has risen / come forth)",
+            pronunciation: "dzoo-ah ree-dzee-oo-poo-kah",
+            hint: "Stage 1 of the solar day (Krapf & Rebmann 1887, p. 66 s.v. Dzua)"
+          },
+          {
+            target: "Dzua ridzidana nadzi",
+            source: "Early morning (c. 7:00 a.m. — the sun has parted from the earth)",
+            pronunciation: "dzoo-ah ree-dzee-dah-nah nah-dzee",
+            hint: "Stage 2 of the solar day (Krapf & Rebmann 1887, p. 66)"
+          },
+          {
+            target: "Dzua ridzifika murauko wa gnombe wegnie",
+            source: "Morning cattle-turning-out time (c. 8:30–9:00 a.m.)",
+            pronunciation: "dzoo-ah ree-dzee-fee-kah moo-rah-oo-koh wah ng'ohm-beh weh-nyeh",
+            hint: "Stage 4 of the solar day (Krapf & Rebmann 1887, p. 66)"
+          },
+          {
+            target: "Dzua ridzifika vidzoani (ri-dididi na vidzoa)",
+            source: "High noon (12:00 p.m. — the sun is perpendicular overhead)",
+            pronunciation: "dzoo-ah ree-dzee-fee-kah vee-dzoh-ah-nee",
+            hint: "Stage 7 of the solar day (Krapf & Rebmann 1887, p. 66)"
+          },
+          {
+            target: "Dzua ridziogoka / Dzua ridzifika lua mudzana lua ku vola",
+            source: "Early afternoon (1:00 p.m.) / Cool of the late afternoon (4:00 p.m.)",
+            pronunciation: "dzoo-ah ree-dzee-oh-goh-kah",
+            hint: "Stages 8 & 11 of the solar day (Krapf & Rebmann 1887, p. 66)"
+          },
+          {
+            target: "Dzua ridzibodoka / Dzua ridzedzua",
+            source: "Sunset (6:00 p.m. — the sun has gone down / set)",
+            pronunciation: "dzoo-ah ree-dzee-boh-doh-kah / ree-dzeh-dzoo-ah",
+            hint: "Stage 13 of the solar day (Krapf & Rebmann 1887, p. 66)"
+          },
+          {
+            target: "Chala cha dzalagumba / Chala cha muoloho",
+            source: "Thumb (1st finger) / Forefinger or pointing finger (2nd finger)",
+            pronunciation: "chah-lah chah dzah-lah-goom-bah / mwoh-loh-hoh",
+            hint: "Krapf & Rebmann (1887, pp. 20–21 s.v. Chala)"
+          },
+          {
+            target: "Chala kibomu / Chala kisicho dzina / Chala cha kanda",
+            source: "Middle finger (3rd) / Ring finger ('nameless finger', 4th) / Little finger (5th)",
+            pronunciation: "chah-lah kee-boh-moo / kee-see-choh dzee-nah / chah kahn-dah",
+            hint: "Krapf & Rebmann (1887, p. 21 s.v. Chala)"
+          }
+        ],
+        sentences: [
+          {
+            target: "Dzua ridzifika vidzoani, ri-dididi na vidzoa.",
+            source: "The sun has reached the crown of the head; it is right overhead (high noon)."
+          },
+          {
+            target: "Kipindi cha kuika madzogolo ga mbele ni usiku.",
+            source: "The watch of the first cock-crowing is in the night."
+          }
+        ],
+        authoredExercises: [
+          {
+            type: "multiple_choice",
+            prompt: "How do the Mijikenda express "High noon (12:00 p.m. — the sun is perpendicular overhead)" in Krapf & Rebmann (1887, p. 66)?",
+            correctAnswer: "Dzua ridzifika vidzoani (ri-dididi na vidzoa)",
+            options: [
+              "Dzua ridziupuka / Dzua ridziombola",
+              "Dzua ridzifika vidzoani (ri-dididi na vidzoa)",
+              "Dzua ridzibodoka / Dzua ridzedzua",
+              "Dzua ridzidana nadzi"
+            ],
+            hint: "Literally: the sun has reached the crowns of the heads (vidzoani)"
+          },
+          {
+            type: "multiple_choice",
+            prompt: "What is the literal meaning of the Mijikenda name for the ring finger, "Chala kisicho dzina" (Krapf & Rebmann 1887, p. 21)?",
+            correctAnswer: "The finger that has no name",
+            options: [
+              "The pointing finger",
+              "The finger that has no name",
+              "The thumb",
+              "The great finger"
+            ],
+            hint: "kisicho = which has not; dzina = name"
+          },
+          {
+            type: "match_pairs",
+            prompt: "Match each Mijikenda solar timekeeping or finger expression (Krapf & Rebmann 1887) with its English meaning:",
+            correctAnswer: "Dzua ridziupuka: Sunrise (6:00 a.m.)",
+            pairs: [
+              {
+                left: "Dzua ridziupuka",
+                right: "Sunrise (6:00 a.m.)"
+              },
+              {
+                left: "Dzua ridzifika vidzoani",
+                right: "High noon (12:00 p.m.)"
+              },
+              {
+                left: "Dzua ridzedzua",
+                right: "Sunset (6:00 p.m.)"
+              },
+              {
+                left: "Chala cha muoloho",
+                right: "Forefinger (pointing finger)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: "mijikenda-1887-kaya-coconuts-ugema",
+        title: "Kaya Architecture (Mumfiria, M'oro, Rungu), Coconut Stages & Palm-Tapping",
+        icon: "TreePine",
+        description: "Explore the three defining institutions of a Mijikenda Kaya, the 7 stages of coconut maturation (Pungapunga to Muvala), the 8 stages of palm-wine tapping (Dangadza), and the 8 stages of child motor development (Koko).",
+        tips: "As recorded by Krapf & Rebmann (1887, p. 259 s.v. M'oro), a settlement without a fortified gate (mumfiria), central council green (m'oro), and sacred elders' lodge (rungu) is called merely a mudzi ('village'), never a kaya.",
+        words: [
+          {
+            target: "Mumfiria • M'oro • Rungu",
+            source: "Fortified narrow Kaya gate • Central council green • Sacred elders' lodge",
+            pronunciation: "moom-fee-ree-ah • moh-roh • roon-goo",
+            hint: "The three defining institutions of a Mijikenda Kaya (Krapf & Rebmann 1887, pp. 259, 285, 338)"
+          },
+          {
+            target: "Ugnaro (men) & Gundi (women) • Ku thura (Mumondo → Govu)",
+            source: "Youth initiation into Kambi • Highest elder investiture conferring the lumfo armlet",
+            pronunciation: "oo-nyah-roh • goon-dee • koo thoo-rah",
+            hint: "Mijikenda age-grades and ritual orders (Krapf & Rebmann 1887, pp. 111, 115, 356, 365)"
+          },
+          {
+            target: "Pungapunga → Kidagna → Kidale → Dafu → Koloma → Nazi → Muvala",
+            source: "7 stages of coconut maturation from embryo bud to ripe nut (nazi) and dried copra (muvala)",
+            pronunciation: "poon-gah-poon-gah • kee-dah-nyah • kee-dah-leh • dah-foo • koh-loh-mah • nah-zee • moo-vah-lah",
+            hint: "Krapf & Rebmann (1887, p. 325 s.v. Pungapunga)"
+          },
+          {
+            target: "Nafunga vanda → Nadangadza muanso → Nakueza vibaria → N'enda nikageme",
+            source: "Cutting trunk notches → Stripping/binding the spadix → Hanging calabashes → Tapping palm wine",
+            pronunciation: "nah-foon-gah vahn-dah • nah-dahn-gah-dzah mwahn-soh",
+            hint: "8-stage palm-wine tapping sequence (Krapf & Rebmann 1887, p. 35 s.v. Dangadza)"
+          },
+          {
+            target: "Muhoho yunasagala → yunahambala → yunaima koko → yunasukula → yunapiga malo",
+            source: "The child sits → crawls → stands alone (koko!) → totters (suku-suku) → runs swiftly",
+            pronunciation: "moo-hoh-hoh yoo-nah-sah-gah-lah • yoo-nah-ee-mah koh-koh",
+            hint: "8-stage child development sequence (Krapf & Rebmann 1887, p. 188 s.v. Koko)"
+          }
+        ],
+        sentences: [
+          {
+            target: "M'oro mudzo ka-u-lavia dzua.",
+            source: "A good council speech does not bring out the sun (it settles the matter early)."
+          },
+          {
+            target: "Bandu na bandu ya mala gogo.",
+            source: "Chip by chip finishes the log."
+          }
+        ],
+        authoredExercises: [
+          {
+            type: "multiple_choice",
+            prompt: "According to Krapf & Rebmann (1887, p. 259 s.v. M'oro), which three structures distinguish a sacred Mijikenda Kaya from an ordinary village (mudzi)?",
+            correctAnswer: "Mumfiria (fortified gateway), M'oro (central assembly green), and Rungu (sacred lodge)",
+            options: [
+              "Mumfiria (fortified gateway), M'oro (central assembly green), and Rungu (sacred lodge)",
+              "Kidagna, Kidale, and Dafu",
+              "Kibaria, Muanso, and Vanda",
+              "Chala, Koko, and Dzua"
+            ],
+            hint: "See Krapf & Rebmann (1887, p. 259 s.v. M'oro)"
+          },
+          {
+            type: "match_pairs",
+            prompt: "Match each stage of coconut maturation (Krapf & Rebmann 1887, p. 325) with its meaning:",
+            correctAnswer: "Pungapunga: Stage 1 — Embryo flower-bud on the spadix",
+            pairs: [
+              {
+                left: "Pungapunga",
+                right: "Stage 1 — Embryo flower-bud on the spadix"
+              },
+              {
+                left: "Dafu",
+                right: "Stage 4 — Half-grown green coconut full of sweet water"
+              },
+              {
+                left: "Nazi",
+                right: "Stage 6 — Fully ripe coconut used for coconut milk (tui)"
+              },
+              {
+                left: "Muvala",
+                right: "Stage 7 — Completely dried copra coconut"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+);
+
+MIJIKENDA_GRAMMAR_SECTIONS.push(
+  {
+    id: "mijikenda-krapf-rebmann-1887-grammar-ethnography",
+    title: "Krapf, Rebmann & Sparshott (1887) Nika-English Dictionary: Vowel-Elision Conjugation (ku enda), Vowel Harmony (-eka/-era vs. -ika/-ira), Continuative Copula (chari/chere/kari/kere) & Cultural Taxonomies",
+    summary: "Compiled at Rabbai Mpia by Rev. Dr. L. Krapf and Rev. J. Rebmann (1848–1875) and edited by Rev. T. H. Sparshott (SPCK London, 1887), the 391-page Nika-English Dictionary documents Kirabai, Kigiryama, Kiduruma, and Kidigo phonology, verb morphophonology, Kaya governance, and multi-stage indigenous taxonomies.",
+    content: `From Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott (*A Nika-English Dictionary*, SPCK London, 1887, pp. iii–vii, 1–391):
+1. **Phonology, Penultimate Stress & Nativization of Arabic Gutturals (Introduction, pp. v–vii)**:
+   - **Penultimate Accent**: Every Kinika word carries primary stress on the **penultimate syllable** (*gnómbe*, *muhóho*, *dzalagúmba*).
+   - **Dialect Abbreviations across the Mijikenda Continuum**: **Kir.** (*Kirabai* — Rabai), **Kig.** (*Kigiriama* — Giriama), **Kid.** (*Kiduruma / Kidigo* — Duruma & Digo), compared systematically with **Kij.** (*Kijomba* = Mombasa/Coastal Swahili) and **Kik.** (*Kikamba*).
+   - **Adaptation of Arabic Consonants**: Borrowed Arabic/Swahili words replace foreign gutturals and interdentals with native Mijikenda sounds: Arabic *ghain* becomes **g**, *kh* becomes **h** or **k** (*habari / kabari*), dental *th / dh* becomes **s / z** or **d**, and *q* becomes **k**.
+2. **Vowel-Harmony Law in Verbal Extensions (*-eka/-era/-eza* vs. *-ika/-ira/-iza*, p. 70 s.v. *E*)**:
+   - When a verb root has **e** or **o** in its penultimate syllable, the Stative/Neuter, Applicative/Prepositional, and Causative suffixes take the mid-vowel series **-eka, -era, -eza**:
+     - *ku ona* ('to see') → **ku oneka** ('to be visible'), **ku onera** ('to see for/at'), **ku oneza** ('to cause to see / show').
+     - *ku henda* ('to do/make') → **ku hendeka** ('to be practicable'), **ku hendera** ('to do for'), **ku hendeza** ('to cause to do').
+   - When the root vowel is **a, i, or u**, the suffixes take the high-vowel series **-ika, -ira, -iza**:
+     - *ku funga* ('to tie/shut') → **ku fungika**, **ku fungira**, **ku fungiza**.
+     - *ku rima* ('to cultivate') → **ku rimika**, **ku rimira**, **ku rimiza**.
+3. **Complete Vowel-Elision Conjugation Paradigm of *ku enda* ('to go', pp. 72–73 s.v. *Enda*)**:
+   - Before vowel-initial verb stems like *-enda* ('go'), subject and tense prefixes undergo regular vowel coalescence or elision:
+     - **Present Habitual/Immediate**: 1s **n'enda** (*ni-enda* 'I go / am going'), 2s **uenda**, 3s **yuenda** (or **enda**), 1p **huenda**, 2p **muenda**, 3p **aenda** (Class 4 *yenda*, Class 5 *renda*, Class 6 *genda*, Class 7 *chenda*, Class 8 *vienda*, Class 9 *yenda*, Class 10 *zenda*).
+     - **Perfect / Recent Past (*-dzi-* + *-enda* → *-dzenda*)**: 1s **nidzenda** ('I have gone / went'), 2s **udzenda**, 3s **yudzenda / adzenda**, 1p **hudzenda**, 2p **mudzenda**, 3p **adzenda** (Class 5 *ridzenda*, Class 7 *chidzenda*, Class 9 *idzenda*, Class 10 *zidzenda*).
+     - **Past (*-a-* + *-enda* → *-enda*)**: 1s **nenda**, 2s **waenda**, 3s **aenda**, 1p **huaenda**, 2p **muaenda**, 3p **aenda**.
+4. **The Continuative / Persistive Copula *Chari / Chere / Kari / Kere* ('still is / while yet', p. 22 s.v. *Chari*)**:
+   - Combines with subject prefixes to express 'still / yet': 1s **nichari / nichere** ('I am still'), 2s **uchari / uchere** ('thou art still'), 3s **yuchari / yuchere** or **kari / kere** ('he/she is still', e.g. *yuchere moyo* 'he is still alive'; *nichere muhoho* 'when I was still a child'), Class 7 **kichari / kichere**, Class 9 **ichari / ichere**.
+5. **Indigenous Mijikenda Taxonomies & Kaya Institutions in Krapf & Rebmann (1887)**:
+   - **13-Stage Solar Clock (*Dzua*, p. 66) & 6 Night Watches (*Kipindi*, p. 176)**: Reckons daytime from *Dzua ridziupuka* (6 a.m.) through the three cattle-turning-out stages (*murauko wa gnombe mudzanga / wegnie / mubomu*), high noon (*Dzua ridzifika vidzoani / ri-dididi na vidzoa*), afternoon cooling (*lua mudzana lua ku vola*), to sunset (*Dzua ridzedzua*), and nighttime by the 6 *vipindi*.
+   - **5 Finger Names (*Chala*, pp. 20–21)**: (1) *Chala cha dzalagumba* (thumb), (2) *Chala cha muoloho* (forefinger), (3) *Chala kibomu* (middle finger), (4) *Chala kisicho dzina* (ring finger — 'finger without a name'), (5) *Chala cha kanda* (little finger).
+   - **7 Coconut Maturation Stages (*Pungapunga*, p. 325)**: *Pungapunga* (embryo bud) → *Kidagna* (tiny nut) → *Kidale* (water forming) → *Dafu* (sweet drinking nut) → *Koloma* (hardening nut) → *Nazi* (ripe nut for *tui*) → *Muvala / Mbata* (dry copra).
+   - **8 Palm-Wine Tapping Steps (*Dangadza*, p. 35)** & **8 Infant Motor Development Stages (*Koko*, p. 188)**.
+   - **Kaya Triad (*M'oro*, p. 259)**: A true *kaya* requires (1) **mumfiria** (narrow triple-door fortified gate), (2) **m'oro** (central assembly green), and (3) **rungu** (sacred elders' lodge).`,
+    examples: [
+      { mijikenda: "n'enda, uenda, yuenda, huenda, muenda, aenda • nidzenda, udzenda, yudzenda, hudzenda, mudzenda, adzenda", english: "I go, you go, he/she goes, we go, you (pl.) go, they go • I have gone, you have gone, he/she has gone...", explanation: "Present and Perfect vowel-elision paradigms of ku enda in Krapf & Rebmann (1887, pp. 72–73)" },
+      { mijikenda: "ku ona → ku oneka, ku onera, ku oneza vs. ku funga → ku fungika, ku fungira, ku fungiza", english: "to see → be visible, see for, show vs. to tie → be tied, tie for, cause to tie", explanation: "Mid-vowel (-eka/-era/-eza) vs. high-vowel (-ika/-ira/-iza) harmony law (Krapf & Rebmann 1887, p. 70)" },
+      { mijikenda: "Dzua ridziupuka (6 a.m.) • Dzua ridzifika vidzoani (12 p.m.) • Dzua ridzedzua (6 p.m.)", english: "Sunrise • High noon (sun perpendicular on the head) • Sunset", explanation: "From the 13-stage Mijikenda solar timekeeping system (Krapf & Rebmann 1887, p. 66 s.v. Dzua)" },
+      { mijikenda: "Pungapunga → Kidagna → Kidale → Dafu → Koloma → Nazi → Muvala", english: "Embryo bud → Tiny nut → Young nut → Drinking coconut → Firm nut → Ripe coconut → Dried copra", explanation: "7-stage coconut maturation taxonomy (Krapf & Rebmann 1887, p. 325 s.v. Pungapunga)" }
+    ]
+  }
+);
+
+// Newly Curated Proverbs, Songs, Tales & Oral Wisdom from the 31 Texts
+// ============================================================
+
+const NEW_EXTRACTED_TEXTS_PROVERBS: ProverbItem[] = [
+  {
+    id: "mijikenda-krapf-1887-prov-1",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika — Krapf & Rebmann 1887)",
+    indigenous: "Angue nduguye ni ulongo • Muifi kaeleliua, sudi mu guire na kisuche.",
+    literalTranslation: "The brother of 'They-say' (hearsay) is a lie • A thief is not convicted by mere suspicion; you must catch him with the ear of corn.",
+    meaning: "Recorded verbatim by Rev. Dr. L. Krapf & Rev. J. Rebmann in 'A Nika-English Dictionary' (1887, p. 8 s.v. Angue & p. 71 s.v. Elelia): Mijikenda customary jurisprudence rejects unverified rumour (angue) and demands tangible proof before condemning anyone.",
+    englishEquivalent: "Hearsay is half a lie; innocent until proven guilty.",
+    theme: "justice",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, pp. 8, 71)"
+  },
+  {
+    id: "mijikenda-krapf-1887-prov-2",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika — Krapf & Rebmann 1887)",
+    indigenous: "Bandu na bandu ya mala gogo (Batubatu rinamala gogo) • Diekudieku rinamala pinda.",
+    literalTranslation: "Chip by chip finishes the great log • Taking out little by little (diekudieku) will at last empty the provision bag (pinda).",
+    meaning: "Recorded in Krapf & Rebmann's 'A Nika-English Dictionary' (1887, p. 10 s.v. Bandu, p. 12 s.v. Batubatu & p. 40 s.v. Diekudieku; compared with Swahili 'Haba na haba hujaza kibaba'): steady, patient effort overcomes the largest task, while small repeated extravagances exhaust even a full granary.",
+    englishEquivalent: "Little strokes fell great oaks; many a little makes a mickle.",
+    theme: "patience",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, pp. 10, 12, 40)"
+  },
+  {
+    id: "mijikenda-krapf-1887-prov-3",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika — Krapf & Rebmann 1887)",
+    indigenous: "Dzahasi ni menga, ela kula mutu yuna kidumbache mumo; be fugula kivindacho, ela usifugule cha muyao.",
+    literalTranslation: "The ship (dzahasi) is one, yet every person has his own little bag inside it; so untie your own bag, and do not untie your neighbour's.",
+    meaning: "Recorded in Krapf & Rebmann's 'A Nika-English Dictionary' (1887, p. 54 s.v. Dzahasi): while the community journeys together in one vessel, mutual respect requires honouring each person's private stewardship and boundaries.",
+    englishEquivalent: "Respect your neighbour's property while sharing the common journey.",
+    theme: "unity",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, p. 54)"
+  },
+  {
+    id: "mijikenda-krapf-1887-prov-4",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika — Krapf & Rebmann 1887)",
+    indigenous: "Muhi ukibua u-ekemera muyawe • Udugu ka-u-okua ukadzuka • Muana akignierera kiga, ka-ki-katua.",
+    literalTranslation: "When a tree falls, it leans upon its neighbour • Brotherhood (kinship) cannot be washed off so as to disappear • If a child soils the thigh, the thigh is not cut off.",
+    meaning: "Recorded in Krapf & Rebmann's 'A Nika-English Dictionary' (1887, p. 71 s.v. Ekemera, p. 104 s.v. Gnierera & p. 364 s.v. Udugu): in times of trouble neighbours support one another, kinship bonds are indelible, and family members forgive and correct rather than cast off an erring child.",
+    englishEquivalent: "Blood is thicker than water; no one is an island.",
+    theme: "family",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, pp. 71, 104, 364)"
+  },
+  {
+    id: "mijikenda-krapf-1887-prov-5",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika — Krapf & Rebmann 1887)",
+    indigenous: "Maneno madzo galafia mbulu pangoni • M'oro mudzo ka-u-lavia dzua • Madzi gaki muagika, ka-ga-dzoreka.",
+    literalTranslation: "Gentle words bring the monitor lizard (mbulu) out of its hole • A good council speech (m'oro) does not bring out the sun (it settles the matter early) • Water, once spilt, cannot be gathered up.",
+    meaning: "Recorded in Krapf & Rebmann's 'A Nika-English Dictionary' (1887, p. 63 s.v. Dzoreka, p. 249 s.v. Mbulu & p. 259 s.v. M'oro): persuasive kindness accomplishes what force cannot, wise Kaya deliberation resolves disputes swiftly, and spoken words or rash deeds cannot be recalled.",
+    englishEquivalent: "A soft answer turns away wrath; never cry over spilt milk.",
+    theme: "wisdom",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, pp. 63, 249, 259)"
+  },
+  {
+    id: "mijikenda-krapf-1887-prov-6",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika — Krapf & Rebmann 1887)",
+    indigenous: "Nchira mpiri ka zi duika, saremesa fisi • Fisi rikiria mukongo, nawe muzima sindika niumba to • Kilagane ni kilagane, Dzimba kamala mbala.",
+    literalTranslation: "Two paths cannot be followed at once; they baffled the hyena • When the hyena eats a sick man, do you who are well shut your door securely • A covenant is a covenant: even the lion leaves part of the bushbuck for those who have a compact with him.",
+    meaning: "Recorded in Krapf & Rebmann's 'A Nika-English Dictionary' (1887, p. 47 s.v. Duika, p. 82 s.v. Fisi & p. 171 s.v. Kilagane): warns against double-mindedness, urges foresight when danger strikes a neighbour, and upholds the sacredness of agreements (kilagane).",
+    englishEquivalent: "No man can serve two masters; forewarned is forearmed.",
+    theme: "courage",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, pp. 47, 82, 171)"
+  },
+  {
+    id: "mijikenda-krapf-1887-mulungu-prayers",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika Prayers & Fable — Krapf & Rebmann 1887)",
+    indigenous: "We Mulungu, hupigeazi, hufuirie mvula, mbeu zehu zisangamike! • Hukuenenda uriani, Mulungu ahuikire mburuga nadzo! • Pingi na kuku na ninga zali ndugu mmenga: Kuku akasagala mudzini, Ninga akakimbira tsakani.",
+    literalTranslation: "O Mulungu (God), make our earth cool and send us rain, that our seeds may not perish! • We are setting out on a journey; may Mulungu grant us a safe path! • The amulet-charm (pingi), the fowl (kuku), and the green wild pigeon (ninga) were once brothers: the fowl stayed in the village to scratch for food, while the wild pigeon fled to the forest to stay free.",
+    meaning: "Recorded verbatim in Krapf & Rebmann's 'A Nika-English Dictionary' (1887, p. 284 s.v. Mulungu & p. 320 s.v. Pingi): preserves traditional Mijikenda communal prayers to Mulungu for rain, planting, healing, and safe travel alongside the classic parable of domestic security (kuku) versus wild freedom (ninga).",
+    englishEquivalent: "Man proposes, God disposes; every choice carries its own price.",
+    theme: "wisdom",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, pp. 284, 320)"
+  },
+  {
+    id: "daasanach-cw-1",
+    languageId: "daasanach",
+    languageName: "Daasanach ('Af Dhaasanac)",
+    indigenous: "Ma nagaa? — Nagaa! • Múu (you and I) vs. Nyíni (we without you) • Bíyé nóòg-iet Dhaasanac.",
+    literalTranslation: "Is it peace? — It is peace! • Inclusive fellowship (múu) vs. exclusive group (nyíni) • The waters of the river/lake sustain the Daasanach.",
+    meaning: "Grounded in Mauro Tosco (2001), Sumiyo Nishiguchi (2004, Ileret fieldwork), Václav Blažek (2011), and Lieut. Ludwig von Höhnel (1894, Reshiat on Lake Turkana): celebrates peaceful coexistence (nagaa), inclusive community solidarity (múu), and the shared waters (bíyé) of the Omo delta and Lake Turkana.",
+    englishEquivalent: "Where there is peace and shared water, the community thrives.",
+    theme: "unity",
+    sourceCitation: "Mauro Tosco (2001), Sumiyo Nishiguchi (2004, Ileret) & Václav Blažek (2011) 'Dasanech Language: State-of-the-Art'"
+  },
+  {
+    id: "daasanach-cw-2",
+    languageId: "daasanach",
+    languageName: "Daasanach ('Af Dhaasanac)",
+    indigenous: "Dímì: Gáàl, sé, 'áyyì, súùb, bún • 'Ínkoria, Nààríc, Ràndál, Koro, 'Órò, Ríìlè, Ngólòbò, 'Éléle.",
+    literalTranslation: "The Dimi blessing ceremony: camels, cattle, small stock, butter, and roasted coffee beans • The eight territorial sections (shir) of the Daasanach.",
+    meaning: "In the annual Dimi festival documented among the Daasanach of Ileret and the Omo delta (Almagor 1978, Tosco 2001, Höhnel 1894), fathers bless their daughters for future marriage, anointing elders with butter (súùb) and sharing livestock across the eight tribal sections (shir).",
+    theme: "family",
+    sourceCitation: "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 163–167), Uri Almagor (1978) & Mauro Tosco (2001)"
+  },
+  {
+    id: "swahili-beech-1918-1",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili — Beech 1918)",
+    indigenous: "Mti hauanguki kwa pigo moja • Maji yakimwagika hayazoleki • Kila ndege huruka kwa ubawa wake.",
+    literalTranslation: "A tree does not fall with a single blow • Water once spilled cannot be gathered up • Every bird flies with its own wing.",
+    meaning: "Recorded by Mervyn W. H. Beech in 'Aids to the Study of Ki-Swahili' (1918, Part IV Swahili Aphorisms & Idioms): great undertakings require persistent effort, spoken words and deeds cannot be recalled once spilled, and self-reliance is essential.",
+    englishEquivalent: "Rome was not built in a day; little strokes fell great oaks.",
+    theme: "patience",
+    sourceCitation: "Mervyn W. H. Beech, Aids to the Study of Ki-Swahili (Kegan Paul, London, 1918)"
+  },
+  {
+    id: "swahili-werner-1919-kiamu-1",
+    languageId: "swahili",
+    languageName: "Swahili (Kiamu / Lamu Dialect — Werner 1919)",
+    indigenous: "Kasiki imeziye kuyaa mai; Bwana akamwambia: 'Twaa huu mti ushindilie mai!' Kasiki ikavundika tini. • Mwinda kungu akamfunga kisu na ukumbuu: 'Enenda kwa Mwana akutinde, aweke nso na ini, nitwelee mkakambe!'",
+    literalTranslation: "The large earthen water-jar has finished filling with water; the master told him: 'Take this wooden pestle and ram the water down!' And the jar broke at the bottom. • The bush-buck hunter tied his knife and girdle on the live bush-buck: 'Go to my wife so she may slaughter you and save the kidneys and liver as relish for my porridge!'",
+    meaning: "Recorded verbatim in the Kiamu dialect of Lamu from Muhamadi bin Abubakari (Kijuma) by Prof. Alice Werner in 'Introductory Sketch of the Bantu Languages' (1919, Appendix I, pp. 241–249): humorous coastal folktales warning against foolish stubbornness and counting one's catch before securing it.",
+    englishEquivalent: "Do not count your chickens before they are hatched.",
+    theme: "wisdom",
+    sourceCitation: "Prof. Alice Werner, Introductory Sketch of the Bantu Languages (1919, Appendix I: Three Stories about the People of Shela, pp. 241–249)"
+  },
+  {
+    id: "swahili-werner-1919-kimvita-1",
+    languageId: "swahili",
+    languageName: "Swahili (Kimvita / Mombasa Dialect — Werner 1919)",
+    indigenous: "Riziki zako ni nyingi, zamwayika; walakini huna akili! • Surutani mwanamke: 'Pata mume akuoe, raia watakusikiza.' • Nyoka: 'Natue johari iliyo kitwani.' • Simba: 'Apake mate yakwe matoni, atakachoona mbele nale!'",
+    literalTranslation: "Your blessings (riziki) are abundant, they are being spilled; but you lack discernment! • To the queen: 'Marry a wise partner and your subjects will heed you.' • To the snake: 'Let him lay down the jewel in his head.' • To the blind lion: 'Let him smear spittle on his eyes and eat whatever he sees first!'",
+    meaning: "Recorded verbatim in the Kimvita (Mombasa) dialect from Muhammad bin Ma'alim 'l Betawi by Prof. Alice Werner in 'Introductory Sketch of the Bantu Languages' (1919, Appendix I, pp. 250–258): the parable of the man who did not recognize the blessings placed right before him.",
+    englishEquivalent: "Opportunity knocks but once; know when you are well off.",
+    theme: "wisdom",
+    sourceCitation: "Prof. Alice Werner, Introductory Sketch of the Bantu Languages (1919, Appendix I: Mombasa Story, pp. 250–258)"
+  },
+  {
+    id: "swahili-bateman-1901-1",
+    languageId: "swahili",
+    languageName: "Swahili (Zanzibar Oral Tales — Bateman 1901)",
+    indigenous: "Sungura na Punda na Simba • Kima na Papa ('Moyo wangu nimeuacha mtini!') • Punda wa Dobi • Haambiliki na Hasseebu.",
+    literalTranslation: "The Hare, the Donkey, and the Lion • The Monkey and the Shark ('I left my heart hanging in the mchu tree!') • The Washerman's Donkey • He-Who-Takes-No-Counsel (Haambiliki) and Hasseebu.",
+    meaning: "Recorded in George W. Bateman's 'Zanzibar Tales Told by Natives of the East Coast of Africa' (1901, Tales I–X): teaches that quick wit rescues the weak from treachery (Kima outwitting Papa), and that heeding wise counsel (Hasseebu) succeeds where arrogance (Haambiliki) fails.",
+    englishEquivalent: "Wit surpasses brute strength; pride goes before a fall.",
+    theme: "wisdom",
+    sourceCitation: "George W. Bateman, Zanzibar Tales Told by Natives of the East Coast of Africa (1901, Tales I–X)"
+  },
+  {
+    id: "pokomo-samson-1944-1",
+    languageId: "pokomo",
+    languageName: "Pokomo (Kipfokomo — Mikael Samson 1944 & Werner 1915)",
+    indigenous: "SangoVere wa Buu • Vyeti kumi na vitahu vya Muho wa Tsana • Wakijo na Ngadzi • Liongo Fumo (Muntu muyeya wa Shaka).",
+    literalTranslation: "SangoVere, founder of the Buu clan • The thirteen sub-tribes (vyeti) of the Tana River • The Wakijo elders and the sacred Ngadzi drum • Liongo Fumo, the tall hero of Shaka.",
+    meaning: "Documented by Mikael Samson & R. G. Darroch in 'A History of the Pokomo (Vyuo vya Wapokomo)' (JRAI 1944, pp. 119–149) and Prof. Alice Werner (1915, 1933): preserves the historical charter of the 13 Tana River Pokomo vyeti, their covenant of hospitality between SangoVere and Mitsotsozini, and elder governance.",
+    theme: "unity",
+    sourceCitation: "Mikael Samson & R. G. Darroch, A History of the Pokomo, JRAI Vol. 73 (1944, pp. 119–149) & Alice Werner (1915, 1933)"
+  },
+  {
+    id: "meru-champion-1912-mberia-2004",
+    languageId: "meru",
+    languageName: "Meru / Kĩtharaka (Champion 1912, Dundas 1915 & Mberia 2004)",
+    indigenous: "Mwatũ wa njũkĩ mũtĩ-inĩ • Ntuke na Kiama kĩa Athuri • Gĩthaka gĩa Kĩrĩnyaga.",
+    literalTranslation: "The log beehive (mwatũ) in the baobab/acacia tree • The ruling generation (ntuke) and council of elders (kiama) • The ancestral ridge estate (gĩthaka).",
+    meaning: "Grounded in Arthur M. Champion's 'The Atharaka' (JRAI Vol. 42, 1912, pp. 68–90), Hon. Charles Dundas (JRAI Vol. 45, 1915), and Prof. Kithaka wa Mberia (2004): highlights Kĩtharaka, Chuka, and Mwimbi ecological stewardship, beekeeping, and deliberative elder justice.",
+    theme: "hard-work",
+    sourceCitation: "Arthur M. Champion, The Atharaka, JRAI Vol. 42 (1912, pp. 68–90), Hon. Charles Dundas (1915) & Kithaka wa Mberia (2004)"
+  },
+  {
+    id: "luhya-purvis-1909-1",
+    languageId: "luhya",
+    languageName: "Luhya (Lumasaba / Bukusu-Masaba — Purvis 1909)",
+    indigenous: "Mulembe? — Wagonere oryena? — Nagonere bulahi, njebewe? • Bengo baryena? — Baliyo balwakire • Nitsya, nule bulahi! — Nutsye wule bulahi!",
+    literalTranslation: "Peace? — How have you slept? — I have slept well, how about you? • How are those at home? — They are there and well • I am going, may I reach safely! — Go, and may you reach safely!",
+    meaning: "Recorded verbatim by Rev. J. B. Purvis in 'Through Uganda to Mount Elgon' (1909, pp. 276–278): the complete Lumasaba (Mount Elgon) etiquette of greeting and farewell, placing peace (mulembe) and household well-being first.",
+    theme: "unity",
+    sourceCitation: "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Ch. XIV, pp. 276–278)"
+  },
+  {
+    id: "luhya-purvis-1909-2",
+    languageId: "luhya",
+    languageName: "Luhya (Lumasaba — Purvis 1909 Native Letter)",
+    indigenous: "Nakuchyesere lugali mulebe wase: Wena? ugona oryena? Ne bimutsu barye? Ubambonere bosi, ni babolera ngana kubabona wangu. Byaweye. Ise wakyo, Nayu.",
+    literalTranslation: "I salute you very much, my brother/relative: How are you? How have you slept? And how are all in the house? See them all for me, and tell them I wish to see them soon. The words are finished. I am yours, Nayu.",
+    meaning: "Verbatim 1907 Lumasaba letter recorded by Rev. J. B. Purvis in 'Through Uganda to Mount Elgon' (1909, p. 355), illustrating double-prefix concord, kinship affection (mulebe wase), and epistolary style.",
+    theme: "family",
+    sourceCitation: "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Ch. XVII, p. 355)"
+  },
+  {
+    id: "kalenjin-kipsigis-2019-2024",
+    languageId: "kalenjin",
+    languageName: "Kalenjin (Kipsigis & Tugen — Landman 2019 & Zwarts et al. 2024)",
+    indigenous: "Ka-toret-kee piik tugul • Ru-e lakwet age tugul.",
+    literalTranslation: "All the people helped one another (-kee reciprocal) • Every child (lakwet age tugul) is sleeping.",
+    meaning: "Grounded in Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024) on the Kalenjin reflexive/reciprocal -kee(y) and Meredith Landman (2019) on Kipsigis universal quantification (tugul vs. age tugul).",
+    englishEquivalent: "Mutual aid strengthens the whole community.",
+    theme: "unity",
+    sourceCitation: "Zwarts, Chelimo & Jerono (2024) & Meredith Landman (2019, Theory and Description in African Linguistics, Ch. 25)"
+  },
+  {
+    id: "kikuyu-hohnel-1894-dundas-1915",
+    languageId: "kikuyu",
+    languageName: "Kikuyu (Gĩkũyũ — Höhnel 1894 & Dundas 1915)",
+    indigenous: "Mirema! — Thayu! Thayu! (Kuhoria tatha & Mbũri ya thayu) • Kiama kĩa Kamatimo na Kiama kĩa Athuri (Mataha).",
+    literalTranslation: "Peaceful greeting! — Peace! Peace! (The peace-sprinkling ceremony and the sheep of peace) • The junior council (Kamatimo) and senior elders' council (Athuri a Mataha).",
+    meaning: "Recorded firsthand by Lieut. Ludwig von Höhnel during the 1887 traverse of Kikuyuland ('Discovery of Lakes Rudolf and Stefanie', Vol. I, 1894, pp. 295–355) with elders Waiyaki, Karanja, and Wamugunda, and by Hon. Charles Dundas (JRAI Vol. 45, 1915): solemn peace covenants (gĩthathi / kuhoria) and deliberative justice sustain harmony across every ridge (rũgongo).",
+    theme: "unity",
+    sourceCitation: "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, pp. 295–355) & Hon. Charles Dundas, JRAI Vol. 45 (1915)"
+  },
+  {
+    id: "teso-roscoe-kitching-1915",
+    languageId: "teso",
+    languageName: "Teso (Ateso — Roscoe & Kitching 1915)",
+    indigenous: "Papa, Toto, Onac, Inac, Mamai, Ejait (Ija), Ocen, Ekamuran • Atekerin: Abwor, Atekok, Igoria, Irarak, Ikomolo.",
+    literalTranslation: "Father, Mother, Brother, Sister, Maternal Uncle (Mamai), Paternal Aunt (Ejait/Ija), Cross-Cousin (Ocen), In-Law (Ekamuran) • Exogamous clans (atekerin) of the Bateso.",
+    meaning: "Recorded by Archdeacon A. L. Kitching and Rev. John Roscoe in 'The Northern Bantu' (1915, Part V 'The Bateso' & Kinship Table pp. 257–293) and Rev. J. B. Purvis (1909, Ch. XII): honours Ateso kinship obligations, maternal uncle blessings (mamai), and clan exogamy.",
+    theme: "family",
+    sourceCitation: "Rev. John Roscoe & Archdeacon A. L. Kitching, The Northern Bantu (Cambridge UP, 1915, pp. 257–293)"
+  }
+];
+
+KENYAN_PROVERBS.push(...NEW_EXTRACTED_TEXTS_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...NEW_EXTRACTED_TEXTS_PROVERBS.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);
+
+// ============================================================
+// A. C. Madan (1902) English-Swahili Dictionary (2nd Ed., Revised, 462 pp.) &
+// A. C. Madan (1905) Swahili (Zanzibar) Grammar (62 pp., §§ 1–262)
+// ============================================================
+
+SWAHILI_GRAMMAR_SECTIONS.push(
+  {
+    id: "swahili-madan-1902-1905-zanzibar-grammar-lexicon",
+    title: "A. C. Madan (1902 & 1905) Zanzibar Swahili Grammar & Lexicon: Nasal vs. Non-Nasal Concord Sets, Root Derivation Families, 4-Way Pronouns, 8 Derived Verb Stems & Dependent Clause Syntax",
+    summary: "Compiled in Zanzibar and Fort Jameson by A. C. Madan, M.A., Student of Christ Church, Oxford (Clarendon Press, 1902 & 1905), these two companion volumes codify Zanzibar (Kiunguja) phonology, the Nasal vs. Non-Nasal concord split, root-family morphology, the 10-slot verb template, the 5 causal sub-types, idiomatic ji- reflexives, and dependent clause syntax (§§ 1–262).",
+    content: `From A. C. Madan, M.A. (*English-Swahili Dictionary*, 2nd ed., Oxford at the Clarendon Press, 1902, pp. iii–xv, 1–462) and A. C. Madan, M.A. (*Swahili [Zanzibar] Grammar*, Oxford at the Clarendon Press, 1905, pp. 1–62, §§ 1–262):
+1. **Phonology, Special Arabic/Bantu Consonants & Penultimate Accent (1905 Grammar, Ch. I, §§ 1–10)**:
+   - **Special Arabic Consonants**: *gh* (guttural trill, *ghali* 'dear/expensive'), *kh* (voiceless velar fricative, often replaced by *h* in Bantu speech, *khabari / habari*), and *th* (voiceless interdental in *thelathini* '30', *theluji* 'snow'; voiced interdental [ð] in *thambi / dhambi* 'sin', *thamani* 'value', *thahabu / dhahabu* 'gold').
+   - **Special Bantu Sounds**: Syllabic *m* before consonants (*mtu, mti, mbwa*), syllabic *n* (*nchi, nje, ndugu*), velar nasal *ng'* (*ng'ombe* 'ox/cattle', *ng'ambo* 'opposite bank', *ng'oa* 'root up'), and Swahili initial *h-* corresponding to mainland *k-* (*hapa, huyu, haba*).
+   - **Accentuation (§ 9)**: Native Bantu words carry invariant stress on the **penultimate syllable** (*kasha → makásha*), whereas unassimilated Arabic loans retain **ante-penultimate stress** (*ároba* 'four', *khatári* 'danger', *stáhimili* 'endure').
+2. **The Fundamental Split: Nasal (Noun-Set) vs. Non-Nasal (Pronoun-Set) Concords (1905 Grammar, Ch. II, §§ 23–26 & § 101)**:
+   - **(1) Nasal / Noun-Set Prefixes** (*m-/mw-, wa-, mi-, ma-, ki-, vi-, n-/ny-, u-, pa-/ku-/mu-*): Contain *m* or *n* in Classes 1, 2, 3, 5, and 6 and govern **nouns and qualifying adjectives proper** (*mtu mwema, miti mizuri, nyumba nzuri*).
+   - **(2) Non-Nasal / Pronoun-Set Prefixes** (*a-/yu-, wa-, u-/w-, i-/y-, li-, ya-, ki-, vi-, i-/y-, zi-, u-/w-, pa-/ku-/mu-*): Exclude *m* and *n* and govern **demonstratives, possessives, interrogatives, the associative preposition *-a* ('of'), the relative *-o*, and verb subject/object prefixes** (*Vitu vile vyangu vilivyo vizuri viwe vyako, vyote vinne*, 1902 Intro p. x).
+3. **Morphological Fertility of Swahili Roots & Relative Verbal Nouns (1902 Intro pp. vii–ix & 1905 Grammar, §§ 62–65)**:
+   - **From Noun Roots**: *-tu* → *mtu* (person), *jitu* (giant), *kitu* (thing), *kijitu* (dwarf/manikin), *utu* (humanity); *-zungu* → *Mzungu* (European), *kizungu* (European language/manner), *uzungu* (European world).
+   - **From Verb Roots**:
+     - *-pend-* ('love'): *mpenda, mpendaji, mpenzi, mpendwa, kipendo, kipenzi, mapenzi, mapendezi, upendo, pendo, pendeleo, upendano* (12 nouns + 7 verb stems).
+     - *-shind-* ('conquer'): *mshinda, mshindaji, mshinde, mshindani, shindo, mshindo, ushindi, mashindano*.
+     - *-za-* ('bear/beget'): *mzaa, mzazi, mvyazi, mzao, mazao, kizazi, uzazi, mzalia*.
+   - **Relative Verbal Nouns (§ 65)**: *viendavyo na visivyokwenda* ('things movable and immovable / animate and inanimate'), *vifanyizwavyo* ('manufactured goods'), *bithaa zijazo na zitokazo* ('imports and exports').
+4. **The 4-Way Personal Pronoun System & Enclitic Possessives (1905 Grammar, Ch. IV, §§ 78–100)**:
+   - **Full**: *mimi, wewe, yeye, sisi, ninyi, wao*; **Shorter**: *miye, weye, yee, siye, nyie, wao*; **Enclitic (with na-)**: *nami, nawe, naye, nasi, nanyi, nao*; **Emphatic (with ndi-)**: *ndimi, ndiwe, ndiye (ndio), ndisi, ndinyi, ndio*.
+   - **Enclitic Possessives (§ 97)**: *mwenzangu, mwenzio, mwenziwe*; *jinalo* (*jina lako*), *nyumbaye* (*nyumba yake*), *babazo* (*baba zako*).
+5. **The 10-Slot Verb Conspectus & 8 Derived Verb Stems (1902 Intro p. xiii & 1905 Grammar, Ch. V, §§ 102–226)**:
+   - **10 Positional Slots**: (1) Negative *ha-/si-*, (2) Subject prefix, (3) Negative *-si-*, (4) Tense prefix (*-na-, -me-, -li-, -ta-, -ka-, -nga-, -ngali-*), (5) Relative object (*-ye-, -o-, -cho-, -vyo-, -lo-*), (6) Object prefix (*-m-, -wa-, -ki-, -vi-, -ji-*), (7) Root, (8) Derived stem extension, (9) Voice/Mood suffix (*-w-, -a, -e, -i*), (10) Plural imperative *-ni* — e.g. **a-li-lo-i-letea** ('which he brought it with/for').
+   - **5 Semantic Sub-Types of the Causal/Intensive Stem (§§ 203–211)**: (1) *Simple Causal* (*kupasha moto* 'make hot'), (2) *Compulsive* (*kumpigisha* 'force him to strike'), (3) *Permissive* (*kupotesha* 'let get lost'), (4) *Suasive* (*kuuzisha* 'persuade to sell'), (5) *Consequential* (*kukumbusha* 'act so as to remind'), plus *Intensive* (*kuangaza* 'look intently', *kufukuza* 'drive right away').
+   - **Idiomatic Reflexives with *ji-* (§ 226)**: *kujienda* ('go off by itself'), *kujiendea* ('walk for one\'s own pleasure'), *kujikalia* ('sit idle by oneself'), *kujiona* ('be conceited'), *kujikohoza* ('cough intentionally'), *kujigonjweza* ('feign illness').`,
+    examples: [
+      { swahili: "Vitu vile vyangu vilivyo vizuri viwe vyako, vyote vinne", english: "All those four fine things of mine, let them be yours", explanation: "Madan's (1902, p. x) 9-word showcase of Class 8 (vi-) alliterative concord" },
+      { swahili: "mpenda, mpendaji, mpenzi, mpendwa, kipendo, kipenzi, mapenzi, mapendezi, upendo, pendo, pendeleo, upendano", english: "lover, habitual lover, beloved/darling, loved one, token of love, favourite, affection, pleasing things, love, loving act, favouritism, mutual love", explanation: "12 nouns derived from the single verb root -pend- ('love', Madan 1902, p. viii & 1905, § 63)" },
+      { swahili: "mimi / miye / nami / ndimi • jinalo (jina lako), nyumbaye (nyumba yake), babazo (baba zako)", english: "I / me / with me / it is I • thy name, his/her house, thy fathers", explanation: "4-way personal pronouns and enclitic possessives (Madan 1905, §§ 79–83, 97)" },
+      { swahili: "viendavyo na visivyokwenda • bithaa zijazo na zitokazo • aliloiletea", english: "movables and immovables • imports and exports • which he brought it with/for", explanation: "Relative verbal nouns and 4-prefix polysynthetic verb structure (Madan 1902, pp. ix, 187 & 1905, § 65)" }
+    ]
+  }
+);
+
+SWAHILI_UNITS.push(
+  {
+    id: "swahili-unit-madan-1902-1905",
+    title: "Unit 11: Madan (1902 & 1905) Zanzibar Swahili — Root Families, Dhow Navigation & Concord Mastery",
+    description: "Master Zanzibar Swahili morphological root families (-pend-, -shind-, -za-, -tu), Indian Ocean dhow navigation & tidal vocabulary, 4-generation kinship terms, and Nasal vs. Non-Nasal concords from A. C. Madan's 1902 Dictionary and 1905 Grammar.",
+    icon: "Compass",
+    skills: [
+      {
+        id: "swahili-madan-roots-concords",
+        title: "Root Derivation Families (-pend-, -shind-, -za-) & Alliterative Concord",
+        icon: "BookOpen",
+        description: "Learn how Zanzibar Swahili builds entire families of nouns and verbs from a single root and distinguishes Nasal (adjective) from Non-Nasal (pronoun/verb) concords (Madan 1902, pp. vii–xv & 1905, §§ 23–65).",
+        tips: "Adjectives proper take Nasal (Noun-Set) prefixes (m-, wa-, mi-, ma-, ki-, vi-, n-, u-), while demonstratives, possessives, -a ('of'), and verbs take Non-Nasal (Pronoun-Set) prefixes (a-/yu-, wa-, u-, i-, li-, ya-, ki-, vi-, i-, zi-).",
+        words: [
+          {
+            target: "mpenda • mpendaji • mpenzi • mpendwa • mapenzi • upendo • upendano",
+            source: "lover • habitual lover • darling/beloved • loved one • affection/desire • love • mutual love",
+            pronunciation: "m-pehn-dah • m-pehn-dah-jee • m-pehn-zee • m-pehn-dwah • mah-pehn-zee • oo-pehn-doh • oo-pehn-dah-noh",
+            hint: "Derived from the root -pend- ('love', Madan 1902, p. viii & 1905, § 63)"
+          },
+          {
+            target: "mshinda • mshinde • mshindani • ushindi • mashindano",
+            source: "conqueror • vanquished one • competitor/rival • victory • competition/race",
+            pronunciation: "m-sheen-dah • m-sheen-deh • m-sheen-dah-nee • oo-sheen-dee • mah-sheen-dah-noh",
+            hint: "Derived from the root -shind- ('overcome/conquer', Madan 1905, § 63)"
+          },
+          {
+            target: "mzazi (mzaa) • mzao (mazao) • kizazi • uzazi • mzalia",
+            source: "parent • offspring/produce • generation • parenthood • native-born resident",
+            pronunciation: "m-zah-zee • m-zah-oh • kee-zah-zee • oo-zah-zee • m-zah-lee-ah",
+            hint: "Derived from the root -za- ('bear/beget', Madan 1905, § 63)"
+          },
+          {
+            target: "viendavyo na visivyokwenda • bithaa zijazo na zitokazo",
+            source: "things movable and immovable (animate & inanimate) • imports and exports",
+            pronunciation: "vee-ehn-dah-vyoh nah vee-see-vyoh-kwehn-dah • bee-thah-ah zee-jah-zoh nah zee-toh-kah-zoh",
+            hint: "Relative verbal nouns in Zanzibar Swahili (Madan 1905, § 65 & 1902, p. 187)"
+          },
+          {
+            target: "mimi / miye / nami / ndimi • jinalo, nyumbaye, babazo",
+            source: "I / me / with me / it is I • thy name (jina lako), his/her house (nyumba yake), thy ancestors (baba zako)",
+            pronunciation: "mee-mee / mee-yeh / nah-mee / n-dee-mee • jee-nah-loh, nyoom-bah-yeh, bah-bah-zoh",
+            hint: "4-way personal pronouns & enclitic possessives (Madan 1905, §§ 79–83, 97)"
+          },
+          {
+            target: "kujienda • kujiendea • kujikalia • kujiona • kujigonjweza",
+            source: "go off by itself • walk for one's own pleasure • sit idle by oneself • be conceited • pretend to be ill",
+            pronunciation: "koo-jee-ehn-dah • koo-jee-ehn-deh-ah • koo-jee-kah-lee-ah • koo-jee-oh-nah • koo-jee-gohn-jweza",
+            hint: "Idiomatic reflexive verbs with ji- (Madan 1905, § 226)"
+          }
+        ],
+        sentences: [
+          {
+            target: "Vitu vile vyangu vilivyo vizuri viwe vyako, vyote vinne.",
+            source: "All those four fine things of mine, let them be yours."
+          },
+          {
+            target: "Malezi halisi ni kumsitawisha killa mtu utu wake wote pamoja, akili, moyo, mwili, roho.",
+            source: "True education is to develop in every person their whole humanity together: intellect, heart, body, and spirit."
+          }
+        ],
+        authoredExercises: [
+          {
+            type: "multiple_choice",
+            prompt: "In A. C. Madan's Swahili (Zanzibar) Grammar (1905, § 63), which derived noun from -shind- ('conquer') means 'the vanquished/defeated person' (with passive suffix -e)?",
+            correctAnswer: "mshinde",
+            options: [
+              "mshindaji",
+              "mshinde",
+              "mshindani",
+              "ushindi"
+            ],
+            hint: "Compare mpendwa / mshinde (passive derivative)"
+          },
+          {
+            type: "multiple_choice",
+            prompt: "What does the idiomatic reflexive verb 'kujigonjweza' mean in Madan's Grammar (1905, § 226)?",
+            correctAnswer: "To pretend to be ill / feign sickness",
+            options: [
+              "To heal oneself",
+              "To pretend to be ill / feign sickness",
+              "To walk for one's own pleasure",
+              "To cough unintentionally"
+            ],
+            hint: "ji- (reflexive) + gonjw- (sick) + -eza (causal)"
+          },
+          {
+            type: "match_pairs",
+            prompt: "Match each Zanzibar Swahili grammatical form from Madan (1902 & 1905) with its English meaning:",
+            correctAnswer: "viendavyo na visivyokwenda: Movables and immovables",
+            pairs: [
+              {
+                left: "viendavyo na visivyokwenda",
+                right: "Movables and immovables"
+              },
+              {
+                left: "bithaa zijazo na zitokazo",
+                right: "Imports and exports"
+              },
+              {
+                left: "jinalo / nyumbaye",
+                right: "Thy name / his or her house"
+              },
+              {
+                left: "kujiendea",
+                right: "To walk for one's own pleasure"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: "swahili-madan-maritime-kinship-customs",
+        title: "Zanzibar Dhow Navigation, Tidal Cycles, 4-Generation Kinship & Customary Life",
+        icon: "Anchor",
+        description: "Explore Indian Ocean dhow architecture, tacking & monsoon terms, spring vs. neap tides, four generations of descendants, and communal customs from Madan's 1902 English-Swahili Dictionary.",
+        tips: "In Zanzibar maritime Swahili (Madan 1902, pp. 402, 409, 452), goshi is the tack-rope at the prow (so upande wa goshini is the windward/weather side) and demani is the sheet-rope aft (so upande wa demani is the lee side).",
+        words: [
+          {
+            target: "Gubeti (omo) • Shetri (tezi) • Feuli • Ngama • Farumi",
+            source: "Prow/bow • Stern • Poop-deck cabin • Hold/bilge • Ballast",
+            pronunciation: "goo-beh-tee • sheh-tree • feh-oo-lee • n-gah-mah • fah-roo-mee",
+            hint: "Parts of a Swahili trading dhow (Madan 1902, pp. 28, 33, 363, 390)"
+          },
+          {
+            target: "Upande wa goshini vs. Upande wa demani • Kupiga mbisho vs. Kukisi matanga",
+            source: "Weather (windward) side vs. Lee side • To tack against the wind vs. To wear ship / shift sail",
+            pronunciation: "oo-pahn-deh wah goh-shee-nee vs. deh-mah-nee • koo-pee-gah m-bee-shoh",
+            hint: "Dhow sailing maneuvers in Madan (1902, pp. 216, 402, 452)"
+          },
+          {
+            target: "Maji ya bamvua vs. Maji mafu (maji ya mbande)",
+            source: "High spring tides vs. Low neap tides ('dead waters')",
+            pronunciation: "mah-jee yah bahm-voo-ah vs. mah-jee mah-foo",
+            hint: "Zanzibar tidal cycle (Madan 1902, p. 409 s.v. Tide)"
+          },
+          {
+            target: "Mjukuu → Kijukuu → Kilembwe → Kining'ina",
+            source: "Grandchild → Great-grandchild → Great-great-grandchild → 5th-generation descendant",
+            pronunciation: "m-joo-koo-oo • kee-joo-koo-oo • kee-lehm-bweh • kee-neeng-ee-nah",
+            hint: "Four generations of descendants (Madan 1902, p. 160 s.v. Grandchild)"
+          },
+          {
+            target: "Ujima • Kula bia / Kula kikoa • Pukusa (mapukusa)",
+            source: "Neighbourly mutual-aid work bee • Cooperative potluck / rotating feast • Handsel / goodwill bonus gift in trade",
+            pronunciation: "oo-jee-mah • koo-lah bee-ah / kee-koh-ah • poo-koo-sah",
+            hint: "Zanzibar social and commercial customs (Madan 1902, pp. 59, 166, 283)"
+          },
+          {
+            target: "Mbirambi zako! — Binuru! • Barua ya tanzia • Hana",
+            source: "Condolence salutation & reply • Letter of condolence • Mourning gathering",
+            pronunciation: "mbee-rahm-bee zah-koh — bee-noo-roo • bah-roo-ah yah tahn-zee-ah",
+            hint: "Customary bereavement etiquette (Madan 1902, p. 69 s.v. Condolence)"
+          }
+        ],
+        sentences: [
+          {
+            target: "Haba na haba hujaza kibaba; maji yaliyomwagika hayazoeleki.",
+            source: "Little by little fills the measure; spilt water cannot be gathered up."
+          }
+        ],
+        authoredExercises: [
+          {
+            type: "multiple_choice",
+            prompt: "In Zanzibar maritime Swahili (Madan 1902, p. 409 s.v. Tide), what is the term for high spring tides as opposed to neap tides (maji mafu / maji ya mbande)?",
+            correctAnswer: "Maji ya bamvua",
+            options: [
+              "Maji ya bamvua",
+              "Maji ya rasharasha",
+              "Upande wa demani",
+              "Farumi ya ngama"
+            ],
+            hint: "Bamvua = spring tide"
+          },
+          {
+            type: "match_pairs",
+            prompt: "Match each Zanzibar Swahili kinship or cultural term from Madan (1902) with its meaning:",
+            correctAnswer: "Kilembwe: Great-great-grandchild",
+            pairs: [
+              {
+                left: "Kilembwe",
+                right: "Great-great-grandchild"
+              },
+              {
+                left: "Ndugu kunyonya",
+                right: "Foster-sibling (milk-brother/sister)"
+              },
+              {
+                left: "Pukusa",
+                right: "Goodwill bonus gift closing a bargain"
+              },
+              {
+                left: "Ujima",
+                right: "Neighbourly mutual-aid work bee"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+);
+
+const MADAN_1902_1905_PROVERBS: ProverbItem[] = [
+  {
+    id: "swahili-madan-1902-prov-1",
+    languageId: "swahili",
+    languageName: "Swahili (Kiunguja — A. C. Madan 1902)",
+    indigenous: "Haba na haba hujaza kibaba • Maji yaliyomwagika hayazoeleki.",
+    literalTranslation: "Little and little habitually fills the kibaba (pint measure) • Water that has been spilt cannot be gathered up.",
+    meaning: "Recorded verbatim by A. C. Madan in the 'English-Swahili Dictionary' (2nd ed., Oxford, 1902, p. 109 s.v. Drop & p. 382 s.v. Spill): patient, steady accumulation achieves great results, whereas rash, irrevocable acts cannot be undone.",
+    englishEquivalent: "Many a little makes a mickle; it is no use crying over spilt milk.",
+    theme: "patience",
+    sourceCitation: "A. C. Madan, M.A., English-Swahili Dictionary (2nd ed., Clarendon Press, Oxford, 1902, pp. 109, 382)"
+  },
+  {
+    id: "swahili-madan-1902-prov-2",
+    languageId: "swahili",
+    languageName: "Swahili (Kiunguja — A. C. Madan 1902)",
+    indigenous: "Malezi halisi ni kumsitawisha killa mtu utu wake wote pamoja, akili, moyo, mwili, roho.",
+    literalTranslation: "True education (upbringing) is to cause every person to flourish in their whole humanity together: intellect, heart, body, and spirit.",
+    meaning: "Recorded verbatim by A. C. Madan in the 'English-Swahili Dictionary' (2nd ed., Oxford, 1902, p. 113 s.v. Education): holistic Swahili philosophy of human flourishing (utu) uniting mind (akili), heart (moyo), body (mwili), and spirit (roho).",
+    englishEquivalent: "True education nurtures mind, heart, body, and spirit together.",
+    theme: "wisdom",
+    sourceCitation: "A. C. Madan, M.A., English-Swahili Dictionary (2nd ed., Clarendon Press, Oxford, 1902, p. 113 s.v. Education)"
+  },
+  {
+    id: "swahili-madan-1902-1905-prov-3",
+    languageId: "swahili",
+    languageName: "Swahili (Kiunguja — A. C. Madan 1902 & 1905)",
+    indigenous: "Vitu vile vyangu vilivyo vizuri viwe vyako, vyote vinne • Kula bia na kufanya kazi kwa ujima.",
+    literalTranslation: "All those four fine things of mine, let them be yours • Sharing a communal meal (kula bia / kikoa) and working together in neighbourly mutual aid (ujima).",
+    meaning: "Recorded by A. C. Madan (1902 Introduction p. x & p. 59 s.v. Club, Co-operate): exemplifies both the musical alliterative harmony of Swahili concord and the coastal ethic of generosity, shared meals (bia/kikoa), and collective labour (ujima).",
+    englishEquivalent: "Generosity and mutual aid bind the community together.",
+    theme: "unity",
+    sourceCitation: "A. C. Madan, M.A., English-Swahili Dictionary (1902, pp. x, 59, 283) & Swahili (Zanzibar) Grammar (1905, § 101)"
+  }
+];
+
+KENYAN_PROVERBS.push(...MADAN_1902_1905_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...MADAN_1902_1905_PROVERBS.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);

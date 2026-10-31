@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Rendille (Afi Ren'dille) dictionary compiled from C. W. Hobley ('Ethnology of A-Kamba and Other East African Tribes', Cambridge University Press, 1910 — Public Domain, pp. 136–160 including Rendille 7-day week & Mogogodo/Yaaku Cushitic lexicon), Bernd Heine ('Notes on the Rendille Language', Afrika und Übersee 59, 1976 & 'Proto-Baz', 1979), Harold C. Fleming ('Baiso and Rendille', 1964), and Wikipedia Rendille_language.",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976).",
   "categories": [
     {
       "id": "greetings",
@@ -1305,11 +1305,18 @@
           "pronunciation": "almado",
           "context": "Rendille Ritual Calendar — Schlee (1979)",
           "audioFile": null
+        },
+        {
+          "english": "Early 1882–1888 records of the camel-herding Rendille east of Lake Samburu/Rudolf",
+          "translation": "Randile / Rendille",
+          "pronunciation": "rahn-dee-leh / ren-deel-leh",
+          "context": "Rev. T. Wakefield (1882, p. 745) & Lieut. Ludwig von Höhnel (1894)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1910, Fleming 1964 & Heine 1976)",
+  "source": "Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Hobley 1910, Fleming 1964 & Heine 1976)",
   "isoCode": "rel",
   "glottocode": "rend1243"
 }

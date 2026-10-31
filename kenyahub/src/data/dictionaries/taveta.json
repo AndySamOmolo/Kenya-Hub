@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Taveta (Kitaveta / Kituweta) dictionary compiled line-by-line from Sir Harry H. Johnston ('A Comparative Study of the Bantu and Semi-Bantu Languages', Vol. I, pp. 98–112 & Vol. II, pp. 33–34, #15 Taveita, 1919 — Public Domain), A. C. Hollis ('Taveta Sayings and Proverbs', Journal of the African Society 9, 1910 & 'Taveta Enigmas', Vol. 10, 1911 — Public Domain), Rev. A. R. Steggall (1892–1906 CMS Taveta translations — Public Domain), and Wikipedia Taveta_language.",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -3328,11 +3328,25 @@
           "pronunciation": "msha-na",
           "context": "A. C. Hollis, Taveta Sayings and Proverbs (1910)",
           "audioFile": null
+        },
+        {
+          "english": "Fortified forest gate barrier of Taveta on the Lumi River (documented in 1887)",
+          "translation": "mpungi ya Lumi (Taveta forest stockade)",
+          "pronunciation": "m-poon-gee yah loo-mee",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 99–118) — Discovery of Lakes Rudolf and Stefanie",
+          "audioFile": null
+        },
+        {
+          "english": "For God so loved the world (John 3:16 specimen in Kitaveta)",
+          "translation": "Kwani Izina aetieti wandu wa isi nha, hata akamwinkia Mwanawe wekibele",
+          "pronunciation": "kwah-nee ee-zee-nah ah-eh-tee-eh-tee wahn-doo",
+          "context": "The Gospel in Many Tongues (BFBS, London, 1921, p. 117 — Taveta)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Steggall 1892–1906, Hollis 1910–1911 & Johnston 1919)",
+  "source": "Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)",
   "isoCode": "tvs",
   "glottocode": "tave1238"
 }

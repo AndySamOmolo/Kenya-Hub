@@ -53,6 +53,7 @@ const DICT_LOADERS: Record<string, () => Promise<{ default: Dictionary }>> = {
   ilchamus: () => import("@/data/dictionaries/ilchamus.json") as Promise<{ default: Dictionary }>,
   pokot: () => import("@/data/dictionaries/pokot.json") as Promise<{ default: Dictionary }>,
   taveta: () => import("@/data/dictionaries/taveta.json") as Promise<{ default: Dictionary }>,
+  daasanach: () => import("@/data/dictionaries/daasanach.json") as Promise<{ default: Dictionary }>,
 };
 
 const DICT_CACHE: Record<string, Dictionary> = {};

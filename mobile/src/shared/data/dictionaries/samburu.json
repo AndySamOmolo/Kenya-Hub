@@ -13,8 +13,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Samburu (Sampur / North Maa) dictionary compiled from Rainer Vossen ('The Eastern Nilotes: Linguistic and Historical Reconstructions', 1982), Wikipedia Nilotic & Eastern Nilotic comparative tables, and Unicode CLDR (saq.xml).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), C. W. Hobley (1910), and Rainer Vossen (1982).",
   "categories": [
     {
       "id": "greetings",
@@ -4885,11 +4885,18 @@
           "pronunciation": "inj-an",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
           "audioFile": null
+        },
+        {
+          "english": "Mount Nyiro & Lorogi Plateau (Samburu highlands documented in 1882–1888)",
+          "translation": "Donyo Nyiro (Ol-doinyo Nyiro) & Lorogi",
+          "pronunciation": "dohn-yoh nyee-roh / loh-roh-gee",
+          "context": "Rev. T. Wakefield (1882, p. 744) & Lieut. Ludwig von Höhnel (1894)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Johnston 1902, Hobley 1910 & Vossen 1982)",
+  "source": "Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Hobley 1910 & Vossen 1982)",
   "isoCode": "saq",
   "glottocode": "samb1315"
 }

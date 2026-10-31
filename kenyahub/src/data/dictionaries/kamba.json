@@ -12,8 +12,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-30",
-  "contributorNote": "Kamba (Kĩkamba) public-domain vocabulary compiled strictly from \"Vocabulary of Six East-African Languages\" by Rev. Dr. J. L. Krapf (Tübingen, 1850), \"Grammar of the Kamba Language\" by J. T. Last (SPCK London, 1885), \"Vocabularies of the Kamba and Kikuyu Languages of East Africa\" by Hildegarde Hinde (Cambridge University Press, 1904), \"Ethnology of A-Kamba and Other East African Tribes\" by C. W. Hobley (Cambridge University Press, 1910), \"A Comparative Study of the Bantu and Semi-Bantu Languages\" by Sir Harry H. Johnston (Clarendon Press, 1919–1922, #12 Kamba), and \"The Akamba in British East Africa: An Ethnological Monograph\" by Gerhard Lindblom (Archives d’Études Orientales Vol. 17, Uppsala, 1920).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019).",
   "categories": [
     {
       "id": "greetings",
@@ -10798,6 +10798,13 @@
           "translation": "nenga ngóze",
           "pronunciation": "nenga ngoze",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
+          "audioFile": null
+        },
+        {
+          "english": "To hit (phrase-final Super-Low tone vs. non-final Low tone in Kĩkamba)",
+          "translation": "ko-konȁ (final) vs. ko-konà ma-i.ò (\"to hit bananas\")",
+          "pronunciation": "koh-koh-nah",
+          "context": "Patrick Jones & Jeremy Freyer (2019, Ch. 10, p. 165) — Kikamba Verb Stem Tonology",
           "audioFile": null
         }
       ]
@@ -28887,11 +28894,67 @@
           "pronunciation": "u-ki",
           "context": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)",
           "audioFile": null
+        },
+        {
+          "english": "Ancestral cultivated farm land estate vs. open grazing commonage (Kĩkamba)",
+          "translation": "ng'undu vs. weu",
+          "pronunciation": "ngoon-doo / weh-oo",
+          "context": "Hon. Charles Dundas (1915, p. 297) — Organization and Laws of Some Bantu Tribes (JRAI Vol. 45)",
+          "audioFile": null
+        },
+        {
+          "english": "Supreme communal tribunal assembly against habitual offenders (Kĩkamba)",
+          "translation": "king'ole",
+          "pronunciation": "keen-goh-leh",
+          "context": "Hon. Charles Dundas (1915, p. 262) — Organization and Laws of Some Bantu Tribes (JRAI Vol. 45)",
+          "audioFile": null
+        },
+        {
+          "english": "Coagulated blood cooked and eaten as food",
+          "translation": "kigila",
+          "pronunciation": "kee-gee-lah",
+          "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, p. 166 s.v. Kigila [Kik.])",
+          "audioFile": null
+        },
+        {
+          "english": "Ceremonial skin badge fastened on a traveller's breast after crossing a dangerous wilderness",
+          "translation": "ngonde",
+          "pronunciation": "ngohn-deh",
+          "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, p. 306 s.v. Ngonde [Kik.])",
+          "audioFile": null
+        },
+        {
+          "english": "Wooden mortar used by elders for pounding food (= kinu)",
+          "translation": "ndii",
+          "pronunciation": "n-dee-ee",
+          "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, p. 303 s.v. Ndii [Kik.])",
+          "audioFile": null
+        },
+        {
+          "english": "Game trap set to catch wild animals",
+          "translation": "kiweto",
+          "pronunciation": "kee-weh-toh",
+          "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, p. 186 s.v. Kiweto [Kik.])",
+          "audioFile": null
+        },
+        {
+          "english": "Sweet stalk of sorghum chewed like sugarcane (= muwa wa muhama)",
+          "translation": "mukota",
+          "pronunciation": "moo-koh-tah",
+          "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, p. 279 s.v. Mukota [Kik.])",
+          "audioFile": null
+        },
+        {
+          "english": "String or binding cord (= ugoue)",
+          "translation": "nzili",
+          "pronunciation": "n-zee-lee",
+          "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, p. 316 s.v. Nzili [Kik.])",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Johnston 1919 & Lindblom 1920); Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages",
+  "source": "Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
   "isoCode": "kam",
   "glottocode": "kamb1297"
 }

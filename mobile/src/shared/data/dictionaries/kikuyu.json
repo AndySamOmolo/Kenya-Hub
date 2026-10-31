@@ -14,8 +14,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Gĩkũyũ (Kikuyu) public-domain vocabulary compiled from Sir Harry H. Johnston (1902/1919), Rev. Fr. A. Hémery (1903), Hildegarde Hinde (1904) \"Vocabularies of the Kamba and Kikuyu Languages of East Africa\", A. W. McGregor (1904) \"English–Kikuyu Vocabulary\", W. Scoresby & Katherine Routledge (1910), and C. W. Hobley (1910/1922).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery (1903), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -237,6 +237,13 @@
           "translation": "Kegaithio (I-)",
           "pronunciation": "kegaithio",
           "context": "Rev. A. W. McGregor (1904) English-Kikuyu Vocabulary (CMS, London)",
+          "audioFile": null
+        },
+        {
+          "english": "Peace! Peace! (Litany response in the Kikuyu peace covenant recorded in 1887)",
+          "translation": "Thayu! Thayu! (Greeting: Mirema!)",
+          "pronunciation": "thah-yoo thah-yoo",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 295, 344) — Discovery of Lakes Rudolf and Stefanie",
           "audioFile": null
         }
       ]
@@ -75600,11 +75607,32 @@
           "pronunciation": "theng-i-ra",
           "context": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)",
           "audioFile": null
+        },
+        {
+          "english": "Peace ceremony sprinkling sheep stomach-contents to ratify friendship (1887)",
+          "translation": "kuhoria tatha (peace-sheep: mburi ya thayu)",
+          "pronunciation": "koo-hoh-ree-ah tah-thah",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, p. 344) & Hon. Charles Dundas (1915, p. 270)",
+          "audioFile": null
+        },
+        {
+          "english": "Junior elders' council grade vs. senior judicial council of elders (Gĩkũyũ)",
+          "translation": "Kiama kia Kamatimo vs. Kiama kia Athuri (Kiama kia Mataha)",
+          "pronunciation": "kee-ah-mah kee-ah kah-mah-tee-moh",
+          "context": "Hon. Charles Dundas (1915, p. 242) — Organization and Laws of Some Bantu Tribes (JRAI Vol. 45)",
+          "audioFile": null
+        },
+        {
+          "english": "Hereditary ridge land estate vs. land tenant/borrower (Gĩkũyũ land law)",
+          "translation": "gĩthaka (trustee: mũramati; tenant: mũhoi)",
+          "pronunciation": "gee-thah-kah / moo-rah-mah-tee / moo-hoh-ee",
+          "context": "Hon. Charles Dundas (1915, pp. 293–296) — Organization and Laws of Some Bantu Tribes (JRAI Vol. 45)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910 & Hobley 1910/1922)",
+  "source": "Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910, Dundas 1915 & Hobley 1910/1922)",
   "isoCode": "kik",
   "glottocode": "kiku1240"
 }

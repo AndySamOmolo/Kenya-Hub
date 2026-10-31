@@ -13,8 +13,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.2",
-  "lastUpdated": "2026-10-25",
-  "contributorNote": "Dholuo public-domain vocabulary compiled from 'A Handbook of the Kavirondo Language' by the Fathers of St. Joseph's Society (Mill-Hill, London / Kisumu, 1920).",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Mill-Hill Fathers (1920), and BFBS (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -1776,6 +1776,34 @@
           "translation": "Ñama ñongo",
           "pronunciation": "nama nongo",
           "context": "Ja-Luo (Nyifwa) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 926–935)",
+          "audioFile": null
+        },
+        {
+          "english": "Our father / Your father / His or her father (Dholuo relational kinship)",
+          "translation": "Wuonwa / Wuonu / Wuon (base: Wuoro)",
+          "pronunciation": "woon-wah / woo-noo / woon",
+          "context": "Archdeacon J. J. Willis in Rev. John Roscoe (1915, p. 291) — The Northern Bantu (Nilotic Kavirondo Kinship Table)",
+          "audioFile": null
+        },
+        {
+          "english": "Our mother / Your mother / His or her mother (Dholuo relational kinship)",
+          "translation": "Minwa / Minu / Min (base: Miyo)",
+          "pronunciation": "meen-wah / mee-noo / meen",
+          "context": "Archdeacon J. J. Willis in Rev. John Roscoe (1915, p. 291) — The Northern Bantu (Nilotic Kavirondo Kinship Table)",
+          "audioFile": null
+        },
+        {
+          "english": "Maternal uncle (mother's brother) vs. Paternal aunt (father's sister) (Dholuo)",
+          "translation": "Nerwa (pl. Nerewa) vs. Wayawa (pl. Weye)",
+          "pronunciation": "nehr-wah / wah-yah-wah",
+          "context": "Archdeacon J. J. Willis in Rev. John Roscoe (1915, pp. 291–292) — The Northern Bantu",
+          "audioFile": null
+        },
+        {
+          "english": "Father-in-law / Son-in-law / Brother-in-law (Dholuo)",
+          "translation": "Orwa (Oru / Ore)",
+          "pronunciation": "ohr-wah",
+          "context": "Archdeacon J. J. Willis in Rev. John Roscoe (1915, p. 293) — The Northern Bantu",
           "audioFile": null
         }
       ]
@@ -17713,7 +17741,7 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Hobley 1902, 1903, Johnston 1902, Northcote 1907 & Mill-Hill Fathers 1920)",
+  "source": "Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
   "isoCode": "luo",
   "glottocode": "luoo1235"
 }
