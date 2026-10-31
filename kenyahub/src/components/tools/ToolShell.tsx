@@ -291,7 +291,7 @@ export default function ToolShell({
             </>
           ) : (
             <>
-              Editorial Disclaimer: Figures and reference data are provided for informational and educational purposes under Kenyan regulations. Always confirm formal filings with the relevant statutory authority ({tool.dataSource}).
+              Editorial Disclaimer: Figures and reference data are provided for informational and educational purposes. Always verify official filings, tariffs, or statutory obligations against the latest published schedule from {tool.dataSource}.
             </>
           )}
         </p>

@@ -530,10 +530,10 @@ export default function CountyScreen() {
                       {r.annualRainfall} mm/yr
                     </Text>
                   </View>
-                  {r.monthly && (
+                  {(r.monthly || r.monthlyAvg) && (
                     <View style={{ flexDirection: "row", gap: 2 }}>
                       {MONTH_KEYS.map((mk, idx) => {
-                        const mm = r.monthly[mk] || 0;
+                        const mm = r.monthly?.[mk] ?? r.monthlyAvg?.[idx] ?? 0;
                         return (
                           <View
                             key={mk}

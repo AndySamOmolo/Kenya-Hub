@@ -314,7 +314,7 @@ Formerly known as Moi Day and later Huduma Day, it was designated Mazingira Day 
 Previously Kenyatta Day, renamed in 2010 to honour all heroes of Kenya's independence struggle and beyond. "Mashujaa" means "heroes" in Swahili.
 
 ### Jamhuri Day (December 12)
-Kenya's Independence Day — commemorating December 12, 1963, when Kenya became a republic. "Jamhuri" means "republic" in Swahili.
+Kenya's Independence and Republic Day — commemorating December 12, 1963 (when Kenya gained independence from Britain) and December 12, 1964 (when Kenya officially became a republic). "Jamhuri" means "republic" in Swahili.
 
 ## Holiday Pay Rules
 

@@ -106,7 +106,7 @@ const FAMILY_COLORS: Record<string, string> = {
   other: "#1A8BD1",
 };
 
-const CONTACT_EMAIL = "andysamonyango@gmail.com";
+const CONTACT_EMAIL = "contact@kenyahub.me";
 
 const ALL_CONTRIBUTE_LANGUAGES = Array.from(
   new Set([

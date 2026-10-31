@@ -45,6 +45,7 @@ const careerRequirements = [
 const subjectNames = [
   "English (compulsory)", "Kiswahili", "Mathematics",
   "Subject 4", "Subject 5", "Subject 6", "Subject 7", "Subject 8",
+  "Subject 9 (optional)",
 ];
 
 const faq = [
@@ -54,7 +55,7 @@ const faq = [
 ];
 
 export default function KCSEGradeCalculatorPage() {
-  const [subjectGrades, setSubjectGrades] = useState<string[]>(Array(8).fill(""));
+  const [subjectGrades, setSubjectGrades] = useState<string[]>(Array(9).fill(""));
 
   const updateGrade = (index: number, grade: string) => {
     setSubjectGrades((prev) => {
@@ -80,7 +81,7 @@ export default function KCSEGradeCalculatorPage() {
     const meanScore = totalPoints / 8;
 
     const meanGrade = meanGradeBoundaries.find(
-      (b) => meanScore >= b.min && meanScore <= b.max
+      (b) => meanScore >= b.min
     );
 
     return {

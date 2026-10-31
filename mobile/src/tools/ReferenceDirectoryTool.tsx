@@ -485,7 +485,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
                     </Text>
                   </View>
                   <Text style={styles.cardSubtitle}>
-                    Maturity: {c.maturityDays} days · Altitude: {c.altitudeM}m · Temp: {c.optimalTempC}°C
+                    Maturity: {c.maturityDays} days · Altitude: {c.optimalAltitude || `${c.altitudeM}m`} · Rain: {c.optimalRainfall || `${c.optimalTempC}°C`}
                   </Text>
                 </View>
                 <View style={[styles.badge, { backgroundColor: `${theme.kenyaGreenLight}20`, borderColor: theme.kenyaGreenLight }]}>
@@ -652,10 +652,10 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             </View>
 
             {/* 12-Month Rainfall Breakdown Grid */}
-            {c.monthly && (
+            {(c.monthly || c.monthlyAvg) && (
               <View style={{ flexDirection: "row", gap: 2, marginTop: 4 }}>
                 {MONTH_KEYS.map((mk, idx) => {
-                  const mm = c.monthly[mk] || 0;
+                  const mm = c.monthly?.[mk] ?? c.monthlyAvg?.[idx] ?? 0;
                   return (
                     <View
                       key={mk}
@@ -1206,12 +1206,14 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             </View>
             <View style={styles.detailsList}>
               <View style={styles.detailRow}>
-                <Text style={styles.detailLabel}>Services:</Text>
-                <Text style={styles.detailValue}>{(h.services || []).join(", ")}</Text>
+                <Text style={styles.detailLabel}>Sub-County:</Text>
+                <Text style={styles.detailValue}>{h.subcounty || h.county}</Text>
               </View>
               <View style={styles.detailRow}>
-                <Text style={styles.detailLabel}>Emergency Phone:</Text>
-                <Text style={[styles.detailValue, { color: theme.gold }]}>{h.phone || "—"}</Text>
+                <Text style={styles.detailLabel}>SHA / SHIF Status:</Text>
+                <Text style={[styles.detailValue, { color: theme.kenyaGreenLight }]}>
+                  {h.nhifAccredited !== false ? "✓ Accredited Facility" : "Pending"}
+                </Text>
               </View>
             </View>
           </View>
@@ -1573,7 +1575,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
               <Text style={{ fontSize: 12, fontWeight: "700", color: theme.textPrimary }}>
                 {m.name} ({m.county})
               </Text>
-              <Text style={{ fontSize: 11, color: theme.gold, fontWeight: "700" }}>{m.day}</Text>
+              <Text style={{ fontSize: 11, color: theme.gold, fontWeight: "700" }}>{m.marketDays || m.day}</Text>
             </View>
           ))}
         </View>
@@ -2002,10 +2004,11 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
       const q = search.trim().toLowerCase();
       return soils.filter((s) => {
         const matchType = filterA === "All" || s.name === filterA;
+        const countiesList: string[] = s.counties || s.whereFound || [];
         const matchQ =
           !q ||
           s.name.toLowerCase().includes(q) ||
-          (s.whereFound && s.whereFound.some((w: string) => w.toLowerCase().includes(q))) ||
+          countiesList.some((w: string) => w.toLowerCase().includes(q)) ||
           (s.bestCrops && s.bestCrops.some((c: string) => c.toLowerCase().includes(q)));
         return matchType && matchQ;
       });
@@ -2043,20 +2046,20 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             <View style={styles.cardTop}>
               <View style={{ flex: 1 }}>
                 <Text style={styles.cardTitle}>{s.name}</Text>
-                <Text style={styles.cardSubtitle}>{s.characteristics}</Text>
+                <Text style={styles.cardSubtitle}>{s.description || s.characteristics}</Text>
               </View>
               <View style={[styles.badge, { backgroundColor: `${theme.gold}20`, borderColor: theme.gold }]}>
-                <Text style={[styles.badgeText, { color: theme.gold }]}>pH {s.ph}</Text>
+                <Text style={[styles.badgeText, { color: theme.gold }]}>pH {s.pH || s.ph}</Text>
               </View>
             </View>
             <View style={styles.detailsList}>
               <View style={styles.detailRow}>
-                <Text style={styles.detailLabel}>Fertility & Drainage:</Text>
-                <Text style={styles.detailValue}>{s.fertility} fertility · {s.drainage} drainage</Text>
+                <Text style={styles.detailLabel}>Fertility & Texture:</Text>
+                <Text style={styles.detailValue}>{s.fertility} fertility · {s.texture || s.drainage}</Text>
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>Where Found:</Text>
-                <Text style={styles.detailValue}>{(s.whereFound || []).join(", ")}</Text>
+                <Text style={styles.detailValue}>{(s.counties || s.whereFound || []).join(", ")}</Text>
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>Best Crops:</Text>
@@ -2066,7 +2069,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>Common Deficiencies:</Text>
-                <Text style={styles.detailValue}>{s.commonDeficiencies}</Text>
+                <Text style={styles.detailValue}>{Array.isArray(s.deficiencies) ? s.deficiencies.join("; ") : s.commonDeficiencies}</Text>
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>How to Improve:</Text>
@@ -2206,7 +2209,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           a.name.toLowerCase().includes(q) ||
           a.town.toLowerCase().includes(q) ||
           a.county.toLowerCase().includes(q) ||
-          (a.specialties && a.specialties.some((s: string) => s.toLowerCase().includes(q)));
+          ((a.services || a.specialties || []).some((s: string) => s.toLowerCase().includes(q)));
         return matchCounty && matchQ;
       });
 
@@ -2277,8 +2280,8 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             </View>
             <View style={styles.detailsList}>
               <View style={styles.detailRow}>
-                <Text style={styles.detailLabel}>Specialties:</Text>
-                <Text style={styles.detailValue}>{(a.specialties || []).join(", ")}</Text>
+                <Text style={styles.detailLabel}>Services & Products:</Text>
+                <Text style={styles.detailValue}>{(a.services || a.specialties || []).join(", ")}</Text>
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>Phone:</Text>
@@ -2367,7 +2370,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>Annual Renewal:</Text>
-                <Text style={styles.detailValue}>{b.annualRenewal}</Text>
+                <Text style={styles.detailValue}>{b.renewalFee || b.annualRenewal}</Text>
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>Requirements:</Text>

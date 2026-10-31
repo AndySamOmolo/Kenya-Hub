@@ -800,16 +800,18 @@ export function KplcTokenCalculator() {
 
       <Text style={styles.subHeading}>Where Your Money Goes</Text>
       <View style={styles.card}>
+        {result.fixedCharge > 0 && (
+          <Row
+            label="Fixed Standing Charge (Monthly)"
+            value={`KES ${result.fixedCharge.toFixed(2)}`}
+          />
+        )}
         <Row
-          label="Fixed Standing Charge (Monthly)"
-          value={`KES ${result.fixedCharge.toFixed(2)}`}
-        />
-        <Row
-          label={`Energy Charges (${result.totalUnits} kWh)`}
+          label={`Base Energy Charges (${result.totalUnits} kWh)`}
           value={`KES ${result.totalEnergyCost.toFixed(2)}`}
         />
         <Row
-          label="Levies (REP + EPRA + WARMA)"
+          label="Levies & Inflation Adj. (REP + IA + EPRA + WRA)"
           value={`KES ${result.totalLevies.toFixed(2)}`}
         />
         <Row
@@ -896,10 +898,7 @@ export function HelbCalculator() {
         ? Math.ceil(currentBalance / monthlyObligation)
         : 0;
     const yearsToRepay = Math.round((monthsToRepay / 12) * 10) / 10;
-    const completionYear = Math.min(
-      currentYear + Math.ceil(yearsToRepay),
-      currentYear + helbData.maxRepaymentYears
-    );
+    const completionYear = currentYear + Math.ceil(yearsToRepay);
     const latePenalty = Math.round(
       currentBalance * (helbData.latePenaltyPercent / 100)
     );

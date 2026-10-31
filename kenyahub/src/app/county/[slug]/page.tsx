@@ -53,7 +53,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
   const countySoils = useMemo(
     () =>
       ((soilsData as any).soilTypes || []).filter((s: any) =>
-        (s.whereFound || []).some((w: string) =>
+        (s.counties || s.whereFound || []).some((w: string) =>
           w.toLowerCase().includes(county.name.toLowerCase())
         )
       ),
@@ -396,14 +396,14 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
               </div>
             </div>
 
-            {rainfall.monthly && (
+            {(rainfall.monthly || rainfall.monthlyAvg) && (
               <div>
                 <p className="text-xs text-text-muted mb-2 font-medium">
                   Average Monthly Rainfall (mm) — Kenya Meteorological Department
                 </p>
                 <div className="grid grid-cols-6 sm:grid-cols-12 gap-1.5">
                   {MONTH_KEYS.map((mk, idx) => {
-                    const mm = rainfall.monthly[mk] || 0;
+                    const mm = rainfall.monthly?.[mk] ?? rainfall.monthlyAvg?.[idx] ?? 0;
                     return (
                       <div
                         key={mk}
@@ -485,10 +485,10 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
                 <div className="flex items-center justify-between">
                   <h3 className="text-sm font-bold text-text-primary">{soil.name}</h3>
                   <span className="px-2 py-0.5 text-[0.65rem] font-bold rounded bg-gold/15 text-gold">
-                    pH {soil.ph} · {soil.fertility} Fertility
+                    pH {soil.pH || soil.ph} · {soil.fertility} Fertility
                   </span>
                 </div>
-                <p className="text-xs text-text-secondary leading-relaxed">{soil.characteristics}</p>
+                <p className="text-xs text-text-secondary leading-relaxed">{soil.description || soil.characteristics}</p>
                 <p className="text-xs text-text-muted">
                   <strong className="text-kenya-green-light">Best Crops: </strong>
                   {(soil.bestCrops || []).join(", ")}
@@ -518,7 +518,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
                   <div>
                     <p className="text-xs font-bold text-text-primary">{h.name}</p>
                     <p className="text-[0.6875rem] text-text-muted">
-                      {h.type} · {(h.services || []).slice(0, 4).join(", ")}
+                      {h.type} · {h.services?.length ? h.services.slice(0, 4).join(", ") : `${h.subcounty || county.name} Sub-County · SHA Accredited`}
                     </p>
                   </div>
                   <span className="px-2 py-0.5 rounded text-[0.65rem] font-bold bg-gold/15 text-gold shrink-0">

@@ -187,25 +187,29 @@ export default function KPLCTokenCalculatorPage() {
                 </tr>
               </thead>
               <tbody>
+                {results.fixedCharge > 0 && (
+                  <>
+                    <tr>
+                      <td className="text-kenya-red-light">Fixed Charge (monthly)</td>
+                      <td className="text-right text-kenya-red-light">{fmt(results.fixedCharge)}</td>
+                    </tr>
+                    <tr>
+                      <td className="text-text-muted pl-8 text-xs">VAT on fixed charge</td>
+                      <td className="text-right text-text-muted text-xs">{fmt(results.fixedChargeVat)}</td>
+                    </tr>
+                  </>
+                )}
                 <tr>
-                  <td className="text-kenya-red-light">Fixed Charge (monthly)</td>
-                  <td className="text-right text-kenya-red-light">{fmt(results.fixedCharge)}</td>
+                  <td className="text-text-primary font-medium">Base Energy Charges ({results.totalUnits} kWh)</td>
+                  <td className="text-right text-text-primary font-medium">{fmt(results.totalEnergyCost)}</td>
                 </tr>
                 <tr>
-                  <td className="text-text-muted pl-8 text-xs">VAT on fixed charge</td>
-                  <td className="text-right text-text-muted text-xs">{fmt(results.fixedChargeVat)}</td>
-                </tr>
-                <tr className="border-t border-border">
-                  <td className="text-text-primary">Energy charges ({results.totalUnits} units)</td>
-                  <td className="text-right text-text-primary">{fmt(results.totalEnergyCost)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-muted pl-8 text-xs">Levies (REP + EPRA + WARMA)</td>
-                  <td className="text-right text-text-muted text-xs">{fmt(results.totalLevies)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-muted pl-8 text-xs">Fuel Cost + Forex Adjustment</td>
+                  <td className="text-text-muted pl-8 text-xs">Fuel Cost + Forex Adjustment (FCC + FERFA)</td>
                   <td className="text-right text-text-muted text-xs">{fmt(results.totalFCC)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">Levies &amp; Inflation Adj. (REP + IA + EPRA + WRA)</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.totalLevies)}</td>
                 </tr>
                 <tr>
                   <td className="text-text-muted pl-8 text-xs">VAT (16%)</td>

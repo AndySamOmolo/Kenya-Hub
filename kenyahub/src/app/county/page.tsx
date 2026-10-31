@@ -28,7 +28,7 @@ const COUNTY_HUB_FAQS = [
   {
     question: "Which Kenyan county receives the highest equitable share budget allocation?",
     answer:
-      "Nairobi City County (#047) receives the largest equitable share allocation at KES 20,072 Million in FY 2025/26, followed by Nakuru, Turkana, Kakamega, and Kiambu counties based on the Commission on Revenue Allocation (CRA) formula.",
+      "Nairobi City County (#047) receives the largest equitable share allocation at KES 22,500 Million in FY 2025/26, followed by Kiambu (KES 15,800M), Nakuru (KES 15,200M), Kakamega (KES 14,500M), Mombasa (KES 14,200M), and Turkana (KES 13,500M) counties based on the Commission on Revenue Allocation (CRA) formula.",
   },
   {
     question: "How is county government funding divided in Kenya?",
@@ -564,10 +564,10 @@ export default function CountyIndexPage() {
                   </span>
                 </div>
 
-                {r.monthly && (
+                {(r.monthly || r.monthlyAvg) && (
                   <div className="grid grid-cols-12 gap-1 pt-2">
                     {MONTH_KEYS.map((mk, idx) => {
-                      const mm = r.monthly[mk] || 0;
+                      const mm = r.monthly?.[mk] ?? r.monthlyAvg?.[idx] ?? 0;
                       return (
                         <div
                           key={mk}

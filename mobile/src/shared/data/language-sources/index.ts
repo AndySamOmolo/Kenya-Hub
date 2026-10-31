@@ -502,7 +502,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     title: 'Turkana Grammatical Notes and Vocabulary',
     fileName: 'Turkana Grammatical Notes and Vocabulary (Barton) (1921)_extracted.txt',
     processedPath: 'language-sources/raw/Turkana Grammatical Notes and Vocabulary (Barton) (1921)_extracted.txt',
-    languages: ['turkana', 'pokot'],
+    languages: ['turkana'],
     published: '1921',
     contribution: 'Complete Turkana grammatical treatise (18 sections) and A–Z vocabulary of 1,427 lines with Suk/Pokot comparative notes (Juxon Barton, Journal of the Royal Anthropological Institute, Vol. 51, 1921 — Public Domain).',
     appUses: ['dictionary', 'course lessons', 'grammar lessons'],

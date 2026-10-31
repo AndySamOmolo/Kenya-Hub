@@ -180,8 +180,8 @@ export default function PrivacyPage() {
           </h2>
           <p>
             If you have questions, feedback, or concerns regarding this Privacy Policy or our analytics practices, please contact us at:{" "}
-            <a href="mailto:andysamonyango@gmail.com" className="text-gold hover:underline font-semibold">
-              andysamonyango@gmail.com
+            <a href="mailto:contact@kenyahub.me" className="text-gold hover:underline font-semibold">
+              contact@kenyahub.me
             </a>.
           </p>
         </section>

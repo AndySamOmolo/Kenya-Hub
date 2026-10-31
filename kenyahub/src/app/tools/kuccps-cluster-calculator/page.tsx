@@ -39,51 +39,62 @@ export default function KUCCPSCalculatorPage() {
     return kuccpsData.clusters.map((cluster) => {
       let totalWeight = 0;
       let calculable = true;
+      const usedActualSubjects = new Set<string>();
       const breakdown: { subject: string; grade: string; points: number; weight: number; weighted: number }[] = [];
 
       for (const req of cluster.subjects) {
-        // Handle OR subjects (e.g., "Physics/Mathematics")
-        const options = req.name.split("/").map((s) => s.trim());
-        let bestGrade = "";
-        let bestPoints = 0;
-
-        for (const opt of options) {
-          if (selectedGrades[opt] && gradePoints[selectedGrades[opt]] > bestPoints) {
-            bestGrade = selectedGrades[opt];
-            bestPoints = gradePoints[selectedGrades[opt]];
+        if (req.name.toLowerCase().includes("any other")) {
+          let bestAny = "";
+          let bestAnyPoints = 0;
+          let matchedSubj = "";
+          for (const [subj, grade] of Object.entries(selectedGrades)) {
+            if (!grade || usedActualSubjects.has(subj)) continue;
+            if (gradePoints[grade] > bestAnyPoints) {
+              bestAny = grade;
+              bestAnyPoints = gradePoints[grade];
+              matchedSubj = subj;
+            }
           }
-        }
-
-        if (bestPoints > 0) {
-          const weighted = bestPoints * req.weight;
-          totalWeight += weighted;
-          breakdown.push({
-            subject: req.name,
-            grade: bestGrade,
-            points: bestPoints,
-            weight: req.weight,
-            weighted,
-          });
+          if (bestAnyPoints > 0 && matchedSubj) {
+            usedActualSubjects.add(matchedSubj);
+            const weighted = bestAnyPoints * req.weight;
+            totalWeight += weighted;
+            breakdown.push({
+              subject: `${req.name} (${matchedSubj})`,
+              grade: bestAny,
+              points: bestAnyPoints,
+              weight: req.weight,
+              weighted,
+            });
+          } else {
+            calculable = false;
+          }
         } else {
-          // Check "Any other subject"
-          if (req.name.toLowerCase().includes("any other")) {
-            // Find best unallocated subject
-            const usedSubjects = breakdown.map((b) => b.subject);
-            let bestAny = "";
-            let bestAnyPoints = 0;
-            for (const [subj, grade] of Object.entries(selectedGrades)) {
-              if (!usedSubjects.some((u) => u.includes(subj)) && gradePoints[grade] > bestAnyPoints) {
-                bestAny = grade;
-                bestAnyPoints = gradePoints[grade];
-              }
+          // Handle OR subjects (e.g., "Physics/Mathematics") without reusing an already-allocated subject
+          const options = req.name.split("/").map((s) => s.trim());
+          let bestGrade = "";
+          let bestPoints = 0;
+          let matchedSubj = "";
+
+          for (const opt of options) {
+            if (selectedGrades[opt] && !usedActualSubjects.has(opt) && gradePoints[selectedGrades[opt]] > bestPoints) {
+              bestGrade = selectedGrades[opt];
+              bestPoints = gradePoints[selectedGrades[opt]];
+              matchedSubj = opt;
             }
-            if (bestAnyPoints > 0) {
-              const weighted = bestAnyPoints * req.weight;
-              totalWeight += weighted;
-              breakdown.push({ subject: req.name, grade: bestAny, points: bestAnyPoints, weight: req.weight, weighted });
-            } else {
-              calculable = false;
-            }
+          }
+
+          if (bestPoints > 0 && matchedSubj) {
+            usedActualSubjects.add(matchedSubj);
+            const weighted = bestPoints * req.weight;
+            totalWeight += weighted;
+            breakdown.push({
+              subject: options.length > 1 ? `${req.name} (${matchedSubj})` : req.name,
+              grade: bestGrade,
+              points: bestPoints,
+              weight: req.weight,
+              weighted,
+            });
           } else {
             calculable = false;
           }

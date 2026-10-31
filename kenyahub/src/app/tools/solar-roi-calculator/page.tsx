@@ -27,10 +27,10 @@ export default function SolarROIPage() {
     const irradiance = region.irradiance;
     const monthlyConsumption = monthlyBill / d.kplcAvgRatePerKwh;
     const dailyConsumption = monthlyConsumption / 30;
-    const systemSizeKw = dailyConsumption / (irradiance * d.panelEfficiency * (1 - d.systemLosses));
+    const systemSizeKw = dailyConsumption / (irradiance * (1 - d.systemLosses));
     const recommendedSize = Math.ceil(systemSizeKw * 10) / 10;
     const systemCost = Math.round(recommendedSize * systemCostPerKw);
-    const monthlyGeneration = Math.round(recommendedSize * irradiance * d.panelEfficiency * (1 - d.systemLosses) * 30);
+    const monthlyGeneration = Math.round(recommendedSize * irradiance * (1 - d.systemLosses) * 30);
     const monthlySavings = Math.round(monthlyGeneration * d.kplcAvgRatePerKwh);
     const effectiveMonthlySavings = Math.min(monthlySavings, monthlyBill);
     const paybackYears = systemCost / (effectiveMonthlySavings * 12);

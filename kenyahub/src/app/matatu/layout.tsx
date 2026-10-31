@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Kenya Matatu Routes, Stages & Fares — Interactive Transit Guide | KenyaHub",
-    template: "%s | KenyaHub",
-  },
+  title: "Kenya Matatu Routes, Stages & Fares — Interactive Transit Guide",
   description:
     "Find verified matatu routes across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika with interactive maps, CBD stages, peak vs off-peak fares, and SACCO operators.",
   keywords: [

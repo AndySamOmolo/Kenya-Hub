@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "All Tools — Free Online Tools for Kenya | KenyaHub",
-    template: "%s | KenyaHub",
-  },
+  title: "All Tools — Free Online Tools for Kenya",
   description:
     "Browse 44 free online tools built for Kenya — PAYE calculator, M-Pesa fees, KPLC token calculator, KCSE grades, CBC curriculum, matatu routes, number plate decoder and more. All powered by official data.",
   keywords: [

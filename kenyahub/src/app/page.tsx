@@ -29,7 +29,7 @@ export default function HomePage() {
     logo: "https://kenyahub.me/og-image.png",
     contactPoint: {
       "@type": "ContactPoint",
-      email: "andysamonyango@gmail.com",
+      email: "contact@kenyahub.me",
       contactType: "customer support",
       areaServed: "KE",
       availableLanguage: ["English", "Swahili"],

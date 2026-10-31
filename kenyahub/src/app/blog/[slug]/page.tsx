@@ -40,8 +40,9 @@ export async function generateStaticParams() {
       [Query.limit(100)]
     );
 
+    const EXCLUDED_SLUGS = new Set(["greatest-kenyan-hiphop-albums-of-all-time"]);
     appwriteSlugs = response.documents
-      .filter((doc: any) => (doc.readTime || 0) > 1 && (!doc.content || doc.content.length >= 800))
+      .filter((doc: any) => !EXCLUDED_SLUGS.has(doc.slug) && (doc.readTime || 0) > 1 && (!doc.content || doc.content.length >= 800))
       .map((doc) => ({
         slug: doc.slug,
       }));

@@ -105,9 +105,9 @@
           "law": "Public Health Act"
         },
         {
-          "item": "Currency exceeding KES 1,000,000 equivalent",
-          "permit": "Customs declaration required",
-          "law": "Proceeds of Crime and Anti-Money Laundering Act"
+          "item": "Currency exceeding USD 10,000 (or equivalent in KES / foreign currency)",
+          "permit": "Central Bank of Kenya (CBK) / Financial Reporting Centre Form F18 declaration at KRA Customs",
+          "law": "Proceeds of Crime and Anti-Money Laundering Act (POCAMLA)"
         },
         {
           "item": "Precious metals and gemstones (commercial quantities)",
@@ -181,8 +181,10 @@
       "icon": "📋",
       "items": [
         {
-          "item": "Cash exceeding KES 1,000,000 (or equivalent in foreign currency)",
-          "requirement": "Complete Customs Cash Declaration Form"
+          "item": "Cash exceeding USD 10,000 (or equivalent in KES / foreign currency)",
+          "requirement": "Complete Customs Cash Declaration Form",
+          "permit": "Must declare on KRA Customs Form F18 on arrival or departure (undeclared cash is subject to seizure)",
+          "law": "POCAMLA Regulations"
         },
         {
           "item": "Goods exceeding duty-free allowance (USD 500)",

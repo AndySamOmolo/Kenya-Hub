@@ -300,7 +300,7 @@ export default function KraCarImportCalculatorPage() {
               <span className="font-semibold text-[var(--text-primary)]">KES {formatKES(calc.crsp)}</span>
             </div>
             <div className="px-5 py-3 flex justify-between">
-              <span className="text-[var(--text-secondary)]">Depreciated Customs Value ({Math.round(calc.depBand.rate * 100)}% Depreciation)</span>
+              <span className="text-[var(--text-secondary)]">KRA Depreciated Customs Value (CRSP tax-backed value less {Math.round(calc.depBand.rate * 100)}% age depreciation)</span>
               <span className="font-semibold text-[var(--text-primary)]">KES {formatKES(calc.customsValue)}</span>
             </div>
             <div className="px-5 py-3 flex justify-between">

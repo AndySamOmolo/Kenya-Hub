@@ -81,7 +81,7 @@ export default function TrademarkCostKenyaPage() {
 
         {/* Total cost */}
         <div className="result-box">
-          <span className="text-sm text-text-secondary block mb-2">{currentIP.title} — Total KIPI Fees</span>
+          <span className="text-sm text-text-secondary block mb-2">{currentIP.title} — Total {selectedType === "copyright" ? "KECOBO" : "KIPI"} Fees</span>
           <p className="text-3xl sm:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-kenya-green-light">{fmt(totalCost)}</p>
           <div className="flex flex-wrap gap-4 mt-4">
             <span className="text-xs text-text-muted flex items-center gap-1"><DynamicIcon emoji="⏱️" className="w-3 h-3 text-gold shrink-0" /> {currentIP.processingTime}</span>

@@ -95,7 +95,7 @@ export default function CountyDetailScreen() {
   const countySoils = useMemo(
     () =>
       ((soilsData as any).soilTypes || []).filter((s: any) =>
-        (s.whereFound || []).some((w: string) => w.toLowerCase().includes(county.name.toLowerCase()))
+        (s.counties || s.whereFound || []).some((w: string) => w.toLowerCase().includes(county.name.toLowerCase()))
       ),
     [county]
   );
@@ -357,10 +357,10 @@ export default function CountyDetailScreen() {
               <Text style={{ fontSize: 11.5, color: theme.textSecondary }}>
                 Long Rains: {countyRainfall.longRains} · Short Rains: {countyRainfall.shortRains} · Dry: {countyRainfall.drySeason}
               </Text>
-              {countyRainfall.monthly && (
+              {(countyRainfall.monthly || countyRainfall.monthlyAvg) && (
                 <View style={{ flexDirection: "row", gap: 2, marginTop: 4 }}>
                   {MONTH_KEYS.map((mk, idx) => {
-                    const mm = countyRainfall.monthly[mk] || 0;
+                    const mm = countyRainfall.monthly?.[mk] ?? countyRainfall.monthlyAvg?.[idx] ?? 0;
                     return (
                       <View
                         key={mk}
@@ -420,7 +420,7 @@ export default function CountyDetailScreen() {
                   }}
                 >
                   <Text style={{ fontSize: 13, fontWeight: "800", color: theme.textPrimary }}>
-                    {s.name} (pH {s.ph} · {s.fertility} fertility)
+                    {s.name} (pH {s.pH || s.ph} · {s.fertility} fertility)
                   </Text>
                   <Text style={{ fontSize: 11.5, color: theme.kenyaGreenLight, marginTop: 2 }}>
                     Best Crops: {(s.bestCrops || []).join(", ")}
@@ -453,7 +453,7 @@ export default function CountyDetailScreen() {
                   <View style={{ flex: 1, paddingRight: 8 }}>
                     <Text style={{ fontSize: 13, fontWeight: "700", color: theme.textPrimary }}>{h.name}</Text>
                     <Text style={{ fontSize: 11, color: theme.textMuted }}>
-                      {h.type} · {(h.services || []).slice(0, 3).join(", ")}
+                      {h.type} · {h.services?.length ? h.services.slice(0, 3).join(", ") : `${h.subcounty || county.name} Sub-County · SHA Accredited`}
                     </Text>
                   </View>
                   <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>Level {h.level}</Text>

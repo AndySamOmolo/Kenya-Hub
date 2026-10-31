@@ -32,11 +32,11 @@ export function SolarRoiTool() {
     const irradiance = region.irradiance;
     const monthlyKwh = Math.round(billNum / d.kplcAvgRatePerKwh);
     const dailyKwh = monthlyKwh / 30;
-    const systemSizeKw = dailyKwh / (irradiance * d.panelEfficiency * (1 - d.systemLosses));
+    const systemSizeKw = dailyKwh / (irradiance * (1 - d.systemLosses));
     const recommendedSize = Math.ceil(systemSizeKw * 10) / 10;
     const systemCost = Math.round(recommendedSize * customCostPerKw);
     const monthlyGeneration = Math.round(
-      recommendedSize * irradiance * d.panelEfficiency * (1 - d.systemLosses) * 30
+      recommendedSize * irradiance * (1 - d.systemLosses) * 30
     );
     const monthlySavings = Math.round(monthlyGeneration * d.kplcAvgRatePerKwh);
     const effectiveSavings = Math.min(monthlySavings, billNum);
@@ -675,28 +675,33 @@ export function CbcCurriculumTool({ onScrollToTop }: { onScrollToTop?: () => voi
           { backgroundColor: theme.bgCard, borderColor: theme.border },
         ]}
       >
-        {gradeAgeMapping.map((row: any, idx: number) => (
-          <View
-            key={row.cbcGrade}
-            style={{
-              flexDirection: "row",
-              justifyContent: "space-between",
-              paddingVertical: 7,
-              borderBottomWidth: idx < gradeAgeMapping.length - 1 ? 1 : 0,
-              borderBottomColor: theme.border,
-            }}
-          >
-            <Text style={{ fontSize: 12, fontWeight: "800", color: theme.textPrimary, flex: 1 }}>
-              {row.cbcGrade} ({row.age} yrs)
-            </Text>
-            <Text style={{ fontSize: 12, color: theme.textSecondary, flex: 1 }}>
-              {row.old844}
-            </Text>
-            <Text style={{ fontSize: 11, fontWeight: "700", color: theme.gold, flex: 1, textAlign: "right" }}>
-              {row.level}
-            </Text>
-          </View>
-        ))}
+        {gradeAgeMapping.map((row: any, idx: number) => {
+          const gradeName = row.grade || row.cbcGrade;
+          const ageNum = row.turnsAge ?? row.age;
+          const prevEq = row.previousEquivalent || row.old844;
+          return (
+            <View
+              key={gradeName || idx}
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                paddingVertical: 7,
+                borderBottomWidth: idx < gradeAgeMapping.length - 1 ? 1 : 0,
+                borderBottomColor: theme.border,
+              }}
+            >
+              <Text style={{ fontSize: 12, fontWeight: "800", color: theme.textPrimary, flex: 1 }}>
+                {gradeName} ({ageNum} yrs)
+              </Text>
+              <Text style={{ fontSize: 12, color: theme.textSecondary, flex: 1 }}>
+                {prevEq}
+              </Text>
+              <Text style={{ fontSize: 11, fontWeight: "700", color: theme.gold, flex: 1, textAlign: "right" }}>
+                {row.level}
+              </Text>
+            </View>
+          );
+        })}
       </View>
     </View>
   );

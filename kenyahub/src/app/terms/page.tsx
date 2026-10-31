@@ -82,8 +82,8 @@ export default function TermsPage() {
           </h2>
           <p>
             For questions regarding these terms, please contact us at{" "}
-            <a href="mailto:andysamonyango@gmail.com" className="text-gold hover:underline font-semibold">
-              andysamonyango@gmail.com
+            <a href="mailto:contact@kenyahub.me" className="text-gold hover:underline font-semibold">
+              contact@kenyahub.me
             </a>.
           </p>
         </section>

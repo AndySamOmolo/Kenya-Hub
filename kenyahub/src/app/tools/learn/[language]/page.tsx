@@ -21,7 +21,10 @@ export async function generateMetadata({
   }
 
   const canonicalUrl = `https://kenyahub.me/tools/learn/${course.config.id}/`;
-  const title = `Learn ${course.config.name} (${course.config.nativeName}) — Free Interactive Course`;
+  const displayLang = course.config.name.toLowerCase().includes(course.config.nativeName.toLowerCase())
+    ? course.config.name
+    : `${course.config.name} (${course.config.nativeName})`;
+  const title = `Learn ${displayLang} — Free Interactive Course`;
 
   return {
     title,
@@ -65,7 +68,9 @@ export default async function LanguagePage({
     ? {
         "@context": "https://schema.org",
         "@type": "Course",
-        name: `Learn ${course.config.name} (${course.config.nativeName})`,
+        name: course.config.name.toLowerCase().includes(course.config.nativeName.toLowerCase())
+          ? `Learn ${course.config.name}`
+          : `Learn ${course.config.name} (${course.config.nativeName})`,
         description: course.config.description,
         provider: {
           "@type": "Organization",

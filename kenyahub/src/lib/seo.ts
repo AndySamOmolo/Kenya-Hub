@@ -18,10 +18,7 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
   const canonicalUrl = `${BASE_URL}/tools/${tool.slug}/`;
 
   return {
-    title: {
-      default: `${tool.title} | KenyaHub`,
-      template: "%s | KenyaHub",
-    },
+    title: tool.title,
     description: tool.description,
     keywords: tool.keywords,
     authors: [{ name: "KenyaHub Editorial Team", url: `${BASE_URL}/about/` }],

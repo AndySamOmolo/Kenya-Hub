@@ -38,8 +38,9 @@ export default async function BlogPage() {
       [Query.limit(100), Query.orderDesc("publishedAt")]
     );
 
+    const EXCLUDED_SLUGS = new Set(["greatest-kenyan-hiphop-albums-of-all-time"]);
     appwritePosts = response.documents
-      .filter((doc: any) => (doc.readTime || 0) > 1 && (!doc.content || doc.content.length >= 800))
+      .filter((doc: any) => !EXCLUDED_SLUGS.has(doc.slug) && (doc.readTime || 0) > 1 && (!doc.content || doc.content.length >= 800))
       .map((doc: any) => ({
       slug: doc.slug,
       title: doc.title,

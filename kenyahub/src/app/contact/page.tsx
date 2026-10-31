@@ -5,7 +5,7 @@ import { Copy, Check } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import CustomSelect from "@/components/ui/CustomSelect";
 
-const CONTACT_EMAIL = "andysamonyango@gmail.com";
+const CONTACT_EMAIL = "contact@kenyahub.me";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);

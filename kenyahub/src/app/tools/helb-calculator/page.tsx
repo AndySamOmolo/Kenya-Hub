@@ -61,7 +61,7 @@ export default function HELBCalculatorPage() {
       monthlyObligation,
       monthsToRepay,
       yearsToRepay,
-      completionYear: Math.min(completionYear, currentYear + helbData.maxRepaymentYears),
+      completionYear,
       totalPayment,
       effectiveInterest,
       latePenalty: Math.round(currentBalance * (helbData.latePenaltyPercent / 100)),

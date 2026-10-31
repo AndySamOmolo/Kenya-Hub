@@ -28,7 +28,16 @@ export function CbcGradeAgeTool() {
     age: number;
     old844: string;
     level: string;
-  }[] = (cbcData as any).gradeAgeMapping || [];
+  }[] = useMemo(
+    () =>
+      ((cbcData as any).gradeAgeMapping || []).map((m: any) => ({
+        cbcGrade: m.grade || m.cbcGrade,
+        age: m.turnsAge ?? m.age,
+        old844: m.previousEquivalent || m.old844,
+        level: m.level,
+      })),
+    []
+  );
 
   const gradeInfo = useMemo(() => {
     const matched = gradeAgeMapping.find((m) => m.age === age);
