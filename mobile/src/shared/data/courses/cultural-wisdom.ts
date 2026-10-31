@@ -61370,7 +61370,7 @@ MIJIKENDA_UNITS.push(
         authoredExercises: [
           {
             type: "multiple_choice",
-            prompt: "How do the Mijikenda express "High noon (12:00 p.m. — the sun is perpendicular overhead)" in Krapf & Rebmann (1887, p. 66)?",
+            prompt: "How do the Mijikenda express 'High noon (12:00 p.m. — the sun is perpendicular overhead)' in Krapf & Rebmann (1887, p. 66)?",
             correctAnswer: "Dzua ridzifika vidzoani (ri-dididi na vidzoa)",
             options: [
               "Dzua ridziupuka / Dzua ridziombola",
@@ -61382,7 +61382,7 @@ MIJIKENDA_UNITS.push(
           },
           {
             type: "multiple_choice",
-            prompt: "What is the literal meaning of the Mijikenda name for the ring finger, "Chala kisicho dzina" (Krapf & Rebmann 1887, p. 21)?",
+            prompt: "What is the literal meaning of the Mijikenda name for the ring finger, 'Chala kisicho dzina' (Krapf & Rebmann 1887, p. 21)?",
             correctAnswer: "The finger that has no name",
             options: [
               "The pointing finger",
@@ -61558,7 +61558,7 @@ const NEW_EXTRACTED_TEXTS_PROVERBS: ProverbItem[] = [
     literalTranslation: "The brother of 'They-say' (hearsay) is a lie • A thief is not convicted by mere suspicion; you must catch him with the ear of corn.",
     meaning: "Recorded verbatim by Rev. Dr. L. Krapf & Rev. J. Rebmann in 'A Nika-English Dictionary' (1887, p. 8 s.v. Angue & p. 71 s.v. Elelia): Mijikenda customary jurisprudence rejects unverified rumour (angue) and demands tangible proof before condemning anyone.",
     englishEquivalent: "Hearsay is half a lie; innocent until proven guilty.",
-    theme: "justice",
+    theme: "wisdom",
     sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, pp. 8, 71)"
   },
   {
@@ -61613,7 +61613,7 @@ const NEW_EXTRACTED_TEXTS_PROVERBS: ProverbItem[] = [
     literalTranslation: "Two paths cannot be followed at once; they baffled the hyena • When the hyena eats a sick man, do you who are well shut your door securely • A covenant is a covenant: even the lion leaves part of the bushbuck for those who have a compact with him.",
     meaning: "Recorded in Krapf & Rebmann's 'A Nika-English Dictionary' (1887, p. 47 s.v. Duika, p. 82 s.v. Fisi & p. 171 s.v. Kilagane): warns against double-mindedness, urges foresight when danger strikes a neighbour, and upholds the sacredness of agreements (kilagane).",
     englishEquivalent: "No man can serve two masters; forewarned is forearmed.",
-    theme: "courage",
+    theme: "hard-work",
     sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, pp. 47, 82, 171)"
   },
   {
