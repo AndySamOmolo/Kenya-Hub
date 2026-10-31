@@ -891,6 +891,7 @@ export function hasCourse(languageId: string): boolean {
 }
 
 // Auto-generated lightweight dictionary metadata and on-demand loaderwith O(1) search indexing
+// Auto-generated lightweight dictionary metadata and on-demand loader with O(1) search indexing
 export interface DictEntry {
   english: string;
   translation: string;
@@ -962,104 +963,104 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "hasAudio": false,
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
-    "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1903, 1917), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
-    "totalEntries": 17453,
+    "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
+    "totalEntries": 17507,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 78
+        "count": 81
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 502
+        "count": 505
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 481
+        "count": 486
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 477
+        "count": 481
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 385
+        "count": 389
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 1274
+        "count": 1278
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 785
+        "count": 788
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 452
+        "count": 455
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 3408
+        "count": 3413
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 435
+        "count": 439
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🚌",
-        "count": 503
+        "count": 505
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 448
+        "count": 451
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 588
+        "count": 590
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 373
+        "count": 374
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 7109
+        "count": 7113
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 155
+        "count": 159
       }
     ]
   },
@@ -1552,7 +1553,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019).",
-    "totalEntries": 4112,
+    "totalEntries": 4118,
     "categories": [
       {
         "id": "greetings",
@@ -1648,7 +1649,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 314
+        "count": 320
       }
     ]
   },
@@ -2197,7 +2198,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
-    "totalEntries": 11150,
+    "totalEntries": 11206,
     "categories": [
       {
         "id": "greetings",
@@ -2215,13 +2216,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 117
+        "count": 126
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 121
+        "count": 126
       },
       {
         "id": "animals",
@@ -2239,7 +2240,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 264
+        "count": 278
       },
       {
         "id": "home",
@@ -2281,7 +2282,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "count": 94
+        "count": 114
       },
       {
         "id": "phrases",
@@ -2293,7 +2294,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 293
+        "count": 301
       }
     ]
   },
@@ -3420,7 +3421,7 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 83017;
+export const TOTAL_DICTIONARY_ENTRIES: number = 83133;
 
 export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId: string }[] = [
   {

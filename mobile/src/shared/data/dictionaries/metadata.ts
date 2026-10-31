@@ -1,20 +1,58 @@
-// Auto-generated lightweight dictionary metadata index.
-// Avoids bundling all 23 full JSON dictionaries on the landing/grid page.
-import type { DictionaryLanguage } from './types';
+// Auto-generated lightweight dictionary metadata and on-demand loader with O(1) search indexing
+export interface DictEntry {
+  english: string;
+  translation: string;
+  pronunciation: string;
+  context: string;
+  audioFile?: string | null;
+}
 
-export interface DictionaryCategoryMeta {
+export interface DictCategory {
+  id: string;
+  name: string;
+  icon?: string;
+  entries: DictEntry[];
+}
+
+export interface Dictionary {
+  languageId: string;
+  languageName: string;
+  family: string;
+  nativeName: string;
+  script: string;
+  speakerCount: number;
+  counties: string[];
+  hasAudio: boolean;
+  dictionaryVersion: string;
+  lastUpdated: string;
+  contributorNote: string;
+  categories: DictCategory[];
+}
+
+export interface DictCategoryMeta {
   id: string;
   name: string;
   icon: string;
-  entryCount: number;
+  count: number;
 }
 
-export interface DictionaryMeta extends Omit<DictionaryLanguage, 'categories'> {
+export interface DictMeta {
+  languageId: string;
+  languageName: string;
+  family: string;
+  nativeName: string;
+  script: string;
+  speakerCount: number;
+  counties: string[];
+  hasAudio: boolean;
+  dictionaryVersion: string;
+  lastUpdated: string;
+  contributorNote: string;
   totalEntries: number;
-  categories: DictionaryCategoryMeta[];
+  categories: DictCategoryMeta[];
 }
 
-export const ALL_DICT_METAS: DictionaryMeta[] = [
+export const ALL_DICT_METAS: DictMeta[] = [
   {
     "languageId": "swahili",
     "languageName": "Swahili (Kiswahili)",
@@ -39,97 +77,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 81
+        "count": 81
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 505
+        "count": 505
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 486
+        "count": 486
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "entryCount": 481
+        "count": 481
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "entryCount": 389
+        "count": 389
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 1278
+        "count": 1278
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 788
+        "count": 788
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 455
+        "count": 455
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 3413
+        "count": 3413
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 439
+        "count": 439
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🚌",
-        "entryCount": 505
+        "count": 505
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 451
+        "count": 451
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 590
+        "count": 590
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 374
+        "count": 374
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 7113
+        "count": 7113
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 159
+        "count": 159
       }
     ]
   },
@@ -157,97 +195,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 32
+        "count": 32
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 212
+        "count": 212
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 250
+        "count": 250
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🧍",
-        "entryCount": 436
+        "count": 436
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "entryCount": 248
+        "count": 248
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 522
+        "count": 522
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 357
+        "count": 357
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 309
+        "count": 309
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "entryCount": 2918
+        "count": 2918
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 1212
+        "count": 1212
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 152
+        "count": 152
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 95
+        "count": 95
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 143
+        "count": 143
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 150
+        "count": 150
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 743
+        "count": 743
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 3007
+        "count": 3007
       }
     ]
   },
@@ -274,97 +312,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 50
+        "count": 50
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 74
+        "count": 74
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 129
+        "count": 129
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "entryCount": 134
+        "count": 134
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 166
+        "count": 166
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 160
+        "count": 160
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 123
+        "count": 123
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 138
+        "count": 138
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 466
+        "count": 466
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 70
+        "count": 70
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 32
+        "count": 32
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 27
+        "count": 27
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 85
+        "count": 85
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 460
+        "count": 460
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 386
+        "count": 386
       }
     ]
   },
@@ -395,97 +433,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 25
+        "count": 25
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 135
+        "count": 135
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 231
+        "count": 231
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "entryCount": 321
+        "count": 321
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "entryCount": 405
+        "count": 405
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 463
+        "count": 463
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 173
+        "count": 173
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 291
+        "count": 291
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 371
+        "count": 371
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 196
+        "count": 196
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 169
+        "count": 169
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 43
+        "count": 43
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 122
+        "count": 122
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 113
+        "count": 113
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 314
+        "count": 314
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 1812
+        "count": 1812
       }
     ]
   },
@@ -512,97 +550,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 294
+        "count": 294
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 169
+        "count": 169
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 176
+        "count": 176
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 319
+        "count": 319
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 355
+        "count": 355
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌳",
-        "entryCount": 257
+        "count": 257
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 187
+        "count": 187
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏡",
-        "entryCount": 212
+        "count": 212
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "entryCount": 656
+        "count": 656
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 132
+        "count": 132
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 56
+        "count": 56
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 32
+        "count": 32
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 71
+        "count": 71
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 74
+        "count": 74
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 140
+        "count": 140
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 423
+        "count": 423
       }
     ]
   },
@@ -628,97 +666,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 24
+        "count": 24
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 164
+        "count": 164
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 131
+        "count": 131
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🧍",
-        "entryCount": 189
+        "count": 189
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐾",
-        "entryCount": 188
+        "count": 188
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 309
+        "count": 309
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 174
+        "count": 174
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 145
+        "count": 145
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "entryCount": 209
+        "count": 209
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 139
+        "count": 139
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 124
+        "count": 124
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 54
+        "count": 54
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🏥",
-        "entryCount": 117
+        "count": 117
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "entryCount": 286
+        "count": 286
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 1545
+        "count": 1545
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 320
+        "count": 320
       }
     ]
   },
@@ -743,49 +781,49 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 25
+        "count": 25
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 21
+        "count": 21
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 212
+        "count": 212
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 177
+        "count": 177
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 234
+        "count": 234
       },
       {
         "id": "shopping",
         "name": "shopping",
         "icon": "📜",
-        "entryCount": 2
+        "count": 2
       },
       {
         "id": "home",
         "name": "home",
         "icon": "📜",
-        "entryCount": 4
+        "count": 4
       },
       {
         "id": "time",
         "name": "time",
         "icon": "📜",
-        "entryCount": 2
+        "count": 2
       }
     ]
   },
@@ -811,97 +849,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 92
+        "count": 92
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 160
+        "count": 160
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 158
+        "count": 158
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "entryCount": 201
+        "count": 201
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 166
+        "count": 166
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 130
+        "count": 130
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 104
+        "count": 104
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "entryCount": 181
+        "count": 181
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 108
+        "count": 108
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 27
+        "count": 27
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 15
+        "count": 15
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 67
+        "count": 67
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 38
+        "count": 38
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 275
+        "count": 275
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 628
+        "count": 628
       }
     ]
   },
@@ -926,97 +964,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 11
+        "count": 11
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 96
+        "count": 96
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 78
+        "count": 78
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🧠",
-        "entryCount": 143
+        "count": 143
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 133
+        "count": 133
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 122
+        "count": 122
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 67
+        "count": 67
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 76
+        "count": 76
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "entryCount": 39
+        "count": 39
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 31
+        "count": 31
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 5
+        "count": 5
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 19
+        "count": 19
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 21
+        "count": 21
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "entryCount": 91
+        "count": 91
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 187
+        "count": 187
       }
     ]
   },
@@ -1043,97 +1081,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 22
+        "count": 22
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 188
+        "count": 188
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 273
+        "count": 273
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "entryCount": 125
+        "count": 125
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "entryCount": 166
+        "count": 166
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 75
+        "count": 75
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 82
+        "count": 82
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 101
+        "count": 101
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 27
+        "count": 27
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 67
+        "count": 67
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 36
+        "count": 36
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 24
+        "count": 24
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 37
+        "count": 37
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 82
+        "count": 82
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 668
+        "count": 668
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 524
+        "count": 524
       }
     ]
   },
@@ -1157,97 +1195,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 27
+        "count": 27
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 63
+        "count": 63
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👥",
-        "entryCount": 101
+        "count": 101
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "👁️",
-        "entryCount": 124
+        "count": 124
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐾",
-        "entryCount": 154
+        "count": 154
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 141
+        "count": 141
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 62
+        "count": 62
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 104
+        "count": 104
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "entryCount": 532
+        "count": 532
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 78
+        "count": 78
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 12
+        "count": 12
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 5
+        "count": 5
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 9
+        "count": 9
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 47
+        "count": 47
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "entryCount": 343
+        "count": 343
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 217
+        "count": 217
       }
     ]
   },
@@ -1273,97 +1311,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 32
+        "count": 32
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 230
+        "count": 230
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 126
+        "count": 126
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "entryCount": 126
+        "count": 126
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "entryCount": 110
+        "count": 110
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🦁",
-        "entryCount": 524
+        "count": 524
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 278
+        "count": 278
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 128
+        "count": 128
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 1465
+        "count": 1465
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 189
+        "count": 189
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 136
+        "count": 136
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 79
+        "count": 79
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🏥",
-        "entryCount": 192
+        "count": 192
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "entryCount": 114
+        "count": 114
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "entryCount": 7176
+        "count": 7176
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 301
+        "count": 301
       }
     ]
   },
@@ -1387,67 +1425,67 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 20
+        "count": 20
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 33
+        "count": 33
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👥",
-        "entryCount": 26
+        "count": 26
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "👤",
-        "entryCount": 41
+        "count": 41
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐾",
-        "entryCount": 49
+        "count": 49
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 59
+        "count": 59
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 28
+        "count": 28
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 15
+        "count": 15
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "entryCount": 69
+        "count": 69
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 59
+        "count": 59
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 174
+        "count": 174
       }
     ]
   },
@@ -1471,61 +1509,61 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 26
+        "count": 26
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 18
+        "count": 18
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 17
+        "count": 17
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 40
+        "count": 40
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 37
+        "count": 37
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 218
+        "count": 218
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 29
+        "count": 29
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 50
+        "count": 50
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 130
+        "count": 130
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 13
+        "count": 13
       }
     ]
   },
@@ -1549,97 +1587,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 14
+        "count": 14
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 66
+        "count": 66
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 86
+        "count": 86
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 123
+        "count": 123
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 135
+        "count": 135
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 188
+        "count": 188
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 94
+        "count": 94
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 88
+        "count": 88
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 1307
+        "count": 1307
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 90
+        "count": 90
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 31
+        "count": 31
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 24
+        "count": 24
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 47
+        "count": 47
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 48
+        "count": 48
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "entryCount": 26
+        "count": 26
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 1022
+        "count": 1022
       }
     ]
   },
@@ -1666,61 +1704,61 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 15
+        "count": 15
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 45
+        "count": 45
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 37
+        "count": 37
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 111
+        "count": 111
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 12
+        "count": 12
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 79
+        "count": 79
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 340
+        "count": 340
       }
     ]
   },
@@ -1748,97 +1786,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 35
+        "count": 35
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 139
+        "count": 139
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 156
+        "count": 156
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 215
+        "count": 215
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 201
+        "count": 201
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 411
+        "count": 411
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 195
+        "count": 195
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 184
+        "count": 184
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 2166
+        "count": 2166
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 174
+        "count": 174
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 122
+        "count": 122
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 88
+        "count": 88
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🏥",
-        "entryCount": 168
+        "count": 168
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "entryCount": 1487
+        "count": 1487
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "entryCount": 1927
+        "count": 1927
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 43
+        "count": 43
       }
     ]
   },
@@ -1862,61 +1900,61 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 21
+        "count": 21
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 11
+        "count": 11
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 15
+        "count": 15
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 13
+        "count": 13
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 14
+        "count": 14
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 21
+        "count": 21
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 12
+        "count": 12
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 25
+        "count": 25
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 7
+        "count": 7
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 37
+        "count": 37
       }
     ]
   },
@@ -1940,97 +1978,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 30
+        "count": 30
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 85
+        "count": 85
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 59
+        "count": 59
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 64
+        "count": 64
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 34
+        "count": 34
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 205
+        "count": 205
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 80
+        "count": 80
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 36
+        "count": 36
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 104
+        "count": 104
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 67
+        "count": 67
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 72
+        "count": 72
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 37
+        "count": 37
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🏥",
-        "entryCount": 99
+        "count": 99
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "entryCount": 100
+        "count": 100
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "entryCount": 999
+        "count": 999
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 253
+        "count": 253
       }
     ]
   },
@@ -2054,61 +2092,61 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 14
+        "count": 14
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 30
+        "count": 30
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 37
+        "count": 37
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 30
+        "count": 30
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 17
+        "count": 17
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 74
+        "count": 74
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 59
+        "count": 59
       }
     ]
   },
@@ -2133,97 +2171,97 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 25
+        "count": 25
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 55
+        "count": 55
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 99
+        "count": 99
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 126
+        "count": 126
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 160
+        "count": 160
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 145
+        "count": 145
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 81
+        "count": 81
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 115
+        "count": 115
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 1118
+        "count": 1118
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 847
+        "count": 847
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "entryCount": 40
+        "count": 40
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "entryCount": 15
+        "count": 15
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "entryCount": 33
+        "count": 33
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 34
+        "count": 34
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "entryCount": 100
+        "count": 100
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 222
+        "count": 222
       }
     ]
   },
@@ -2247,61 +2285,61 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 20
+        "count": 20
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 22
+        "count": 22
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 16
+        "count": 16
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "entryCount": 31
+        "count": 31
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "entryCount": 29
+        "count": 29
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "entryCount": 36
+        "count": 36
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "entryCount": 23
+        "count": 23
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 23
+        "count": 23
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 11
+        "count": 11
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 255
+        "count": 255
       }
     ]
   },
@@ -2325,86 +2363,1437 @@ export const ALL_DICT_METAS: DictionaryMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "entryCount": 10
+        "count": 10
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "entryCount": 15
+        "count": 15
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "entryCount": 7
+        "count": 7
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "entryCount": 20
+        "count": 20
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "entryCount": 14
+        "count": 14
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "entryCount": 19
+        "count": 19
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "entryCount": 6
+        "count": 6
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "entryCount": 4
+        "count": 4
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "entryCount": 20
+        "count": 20
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "entryCount": 17
+        "count": 17
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "entryCount": 2
+        "count": 2
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "entryCount": 4
+        "count": 4
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "entryCount": 3
+        "count": 3
       }
     ]
   }
 ];
 
-export const DICT_META_BY_ID: Record<string, DictionaryMeta> = Object.fromEntries(
+export const DICT_META_MAP: Record<string, DictMeta> = Object.fromEntries(
   ALL_DICT_METAS.map((m) => [m.languageId, m])
 );
 
+export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
+  {
+    "id": "greetings",
+    "name": "Greetings & Farewells",
+    "icon": "👋"
+  },
+  {
+    "id": "numbers",
+    "name": "Numbers & Counting",
+    "icon": "🔢"
+  },
+  {
+    "id": "family",
+    "name": "Family, People & Kinship",
+    "icon": "👨‍👩‍👧‍👦"
+  },
+  {
+    "id": "body",
+    "name": "Body Parts & Health",
+    "icon": "🫁"
+  },
+  {
+    "id": "animals",
+    "name": "Animals, Livestock & Wildlife",
+    "icon": "🦁"
+  },
+  {
+    "id": "nature",
+    "name": "Nature, Environment & Geography",
+    "icon": "🌿"
+  },
+  {
+    "id": "food",
+    "name": "Food, Drink & Agriculture",
+    "icon": "🍲"
+  },
+  {
+    "id": "home",
+    "name": "Home, Tools & Material Culture",
+    "icon": "🏠"
+  },
+  {
+    "id": "verbs",
+    "name": "Core Verbs & Actions",
+    "icon": "🏃"
+  },
+  {
+    "id": "adjectives",
+    "name": "Adjectives, Qualities & Grammar",
+    "icon": "✨"
+  },
+  {
+    "id": "travel",
+    "name": "Travel, Directions & Navigation",
+    "icon": "🚌"
+  },
+  {
+    "id": "shopping",
+    "name": "Trade, Money & Measures",
+    "icon": "🛒"
+  },
+  {
+    "id": "emergency",
+    "name": "Health, Safety, Law & Conflict",
+    "icon": "🚨"
+  },
+  {
+    "id": "time",
+    "name": "Time, Seasons & Calendar",
+    "icon": "⏰"
+  },
+  {
+    "id": "phrases",
+    "name": "Common Expressions & Vocabulary",
+    "icon": "🗣️"
+  },
+  {
+    "id": "culture-history",
+    "name": "Culture, Clans & Historical Corpus",
+    "icon": "📜"
+  }
+];
+
 export const TOTAL_DICTIONARY_ENTRIES: number = 83133;
+
+export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId: string }[] = [
+  {
+    "entry": {
+      "english": "Welcome",
+      "translation": "Baga nagaan dhufte",
+      "pronunciation": "ba-ga na-gaan dhuf-te",
+      "context": "Borana / Oromo welcome",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "Tomorrow",
+      "translation": "bori / boru",
+      "pronunciation": "boh-ree / boh-roo",
+      "context": "Tutschek (1845, pp. 89–90)",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "Salute",
+      "translation": "hófu dáme",
+      "pronunciation": "hofu dame",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "Thank",
+      "translation": "gelatéfate",
+      "pronunciation": "gelatefate",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "News",
+      "translation": "ódu",
+      "pronunciation": "odu",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "You are educated",
+      "translation": "Wĩ mũthomũ",
+      "pronunciation": "wi muthomu",
+      "context": "Wikipedia Embu_language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "Stop the nonsense",
+      "translation": "Tiga wana / Tigana na ũrimũ",
+      "pronunciation": "tiga wana",
+      "context": "Wikipedia Embu_language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "Give me some money",
+      "translation": "Mve mbeca / Mva mbia",
+      "pronunciation": "mve mbeca / mva mbia",
+      "context": "Wikipedia Embu_language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "God is good",
+      "translation": "Ngai nĩ mwaro",
+      "pronunciation": "ngai ni mwaro",
+      "context": "Wikipedia Embu_language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "I am blessed",
+      "translation": "Nĩmũrathime",
+      "pronunciation": "nimurathime",
+      "context": "Wikipedia Embu_language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "Serian",
+      "pronunciation": "seh-ri-an",
+      "context": "Ilchamus (Camus) greeting & blessing",
+      "audioFile": null
+    },
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Ashe / Ashe oleng",
+      "pronunciation": "ah-sheh",
+      "context": "Ilchamus expression of gratitude",
+      "audioFile": null
+    },
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
+  },
+  {
+    "entry": {
+      "english": "Today",
+      "translation": "taata",
+      "pronunciation": "tah-tah",
+      "context": "Verified comparative entry across Kenyan nilotic corpus",
+      "audioFile": null
+    },
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
+  },
+  {
+    "entry": {
+      "english": "Tomorrow",
+      "translation": "taisere",
+      "pronunciation": "tah-ee-seh-reh",
+      "context": "Verified comparative entry across Kenyan nilotic corpus",
+      "audioFile": null
+    },
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
+  },
+  {
+    "entry": {
+      "english": "Yesterday",
+      "translation": "ngole",
+      "pronunciation": "ngoh-leh",
+      "context": "Verified comparative entry across Kenyan nilotic corpus",
+      "audioFile": null
+    },
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "Kalyet",
+      "pronunciation": "kahl-yeht",
+      "context": "Hollis 1909 Nandi vocabulary",
+      "audioFile": null
+    },
+    "langName": "Kalenjin",
+    "langId": "kalenjin"
+  },
+  {
+    "entry": {
+      "english": "Evening, nightfall",
+      "translation": "lakat",
+      "pronunciation": "lakat",
+      "context": "Nandi / Kalenjin (Hollis 1909, p. 153)",
+      "audioFile": null
+    },
+    "langName": "Kalenjin",
+    "langId": "kalenjin"
+  },
+  {
+    "entry": {
+      "english": "Thank",
+      "translation": "ile-chi kongoi",
+      "pronunciation": "ile-chi kongoi",
+      "context": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)",
+      "audioFile": null
+    },
+    "langName": "Kalenjin",
+    "langId": "kalenjin"
+  },
+  {
+    "entry": {
+      "english": "Pardon, to",
+      "translation": "mwaete",
+      "pronunciation": "mwaete",
+      "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Nandi)",
+      "audioFile": null
+    },
+    "langName": "Kalenjin",
+    "langId": "kalenjin"
+  },
+  {
+    "entry": {
+      "english": "All",
+      "translation": "tukul",
+      "pronunciation": "tukul",
+      "context": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)",
+      "audioFile": null
+    },
+    "langName": "Kalenjin",
+    "langId": "kalenjin"
+  },
+  {
+    "entry": {
+      "english": "Evening",
+      "translation": "wio",
+      "pronunciation": "wio",
+      "context": "Hildegarde Hinde (1904) — Kamba",
+      "audioFile": null
+    },
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
+  },
+  {
+    "entry": {
+      "english": "Morning",
+      "translation": "mthenia",
+      "pronunciation": "mthenia",
+      "context": "Hildegarde Hinde (1904) — Kamba",
+      "audioFile": null
+    },
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "amanni",
+      "pronunciation": "amanni",
+      "context": "Hildegarde Hinde (1904) — Kamba",
+      "audioFile": null
+    },
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
+  },
+  {
+    "entry": {
+      "english": "Please",
+      "translation": "kwendua",
+      "pronunciation": "kwendua",
+      "context": "Hildegarde Hinde (1904) — Kamba",
+      "audioFile": null
+    },
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
+  },
+  {
+    "entry": {
+      "english": "Salutation",
+      "translation": "o voo",
+      "pronunciation": "o voo",
+      "context": "Hildegarde Hinde (1904) — Kamba (Ulu dialect)",
+      "audioFile": null
+    },
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
+  },
+  {
+    "entry": {
+      "english": "Evening",
+      "translation": "waiini",
+      "pronunciation": "waiini",
+      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Friend",
+      "translation": "muratta, munduitu",
+      "pronunciation": "muratta, munduitu",
+      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Morning",
+      "translation": "mthenya",
+      "pronunciation": "mthenya",
+      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "naiita",
+      "pronunciation": "naiita",
+      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Please",
+      "translation": "kuenda",
+      "pronunciation": "kuenda",
+      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "Omorembe",
+      "pronunciation": "oh-moh-rehm-beh",
+      "context": "Hobley 1902 & Johnston 1919 #7",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Good morning",
+      "translation": "Bwakire buya",
+      "pronunciation": "Bwakire buya",
+      "context": "Wikipedia Gusii language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Good night",
+      "translation": "Obotuko obuya",
+      "pronunciation": "Obotuko obuya",
+      "context": "Wikipedia Gusii language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Evening",
+      "translation": "mogoroba",
+      "pronunciation": "mogoroba",
+      "context": "Wikipedia Gusii language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "One",
+      "translation": "-mu, -mo / -mo, -mwe",
+      "pronunciation": "-mu, -mo / -mo, -mwe",
+      "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Salutation",
+      "translation": "murembi",
+      "pronunciation": "mu-remb-i",
+      "context": "Ketosh (Lubukusu / Masaba) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)",
+      "audioFile": null
+    },
+    "langName": "Luhya (Luyia)",
+    "langId": "luhya"
+  },
+  {
+    "entry": {
+      "english": "Salutation",
+      "translation": "msawa, ekui",
+      "pronunciation": "msa-wa e-kui",
+      "context": "Lusinga / Chula (Suba-Luhya of Rusinga Island) — Hobley, Eastern Uganda (1902, pp. 92–95)",
+      "audioFile": null
+    },
+    "langName": "Luhya (Luyia)",
+    "langId": "luhya"
+  },
+  {
+    "entry": {
+      "english": "Bowels",
+      "translation": "Ama-la / Kama-la",
+      "pronunciation": "ama-la / kama-la",
+      "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
+      "audioFile": null
+    },
+    "langName": "Luhya (Luyia)",
+    "langId": "luhya"
+  },
+  {
+    "entry": {
+      "english": "Gun",
+      "translation": "Ωmu-rondo / Mundu. Kumu-rundu",
+      "pronunciation": "mu-rondo",
+      "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
+      "audioFile": null
+    },
+    "langName": "Luhya (Luyia)",
+    "langId": "luhya"
+  },
+  {
+    "entry": {
+      "english": "Place",
+      "translation": "A-handu / Esi-fo. Aha / Handu",
+      "pronunciation": "a-handu / esi-fo. aha / handu",
+      "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
+      "audioFile": null
+    },
+    "langName": "Luhya (Luyia)",
+    "langId": "luhya"
+  },
+  {
+    "entry": {
+      "english": "Elder",
+      "translation": "Jaduong'",
+      "pronunciation": "jah-dwong",
+      "context": "Respected elder",
+      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "Chief",
+      "translation": "Ruoth / Jatelo",
+      "pronunciation": "rwohth / jah-teh-loh",
+      "context": "Chief or leader",
+      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "King",
+      "translation": "Ruoth",
+      "pronunciation": "rwohth",
+      "context": "King, lord, or sovereign",
+      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "Work",
+      "translation": "Tich",
+      "pronunciation": "teech",
+      "context": "Work or labor (noun); Tiyo (to work)",
+      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "Market",
+      "translation": "Chiro",
+      "pronunciation": "chee-roh",
+      "context": "Marketplace",
+      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "Many black goats",
+      "translation": "kumuk ndari nārok",
+      "pronunciation": "kumuk ndari nārok",
+      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Many red cows",
+      "translation": "ngishu nyainyuki kumuk",
+      "pronunciation": "ngishu nyainyuki kumuk",
+      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Two big men",
+      "translation": "sabuki orrldongana ari",
+      "pronunciation": "sabuki orrldongana ari",
+      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Four good children",
+      "translation": "supati konengera ungwun",
+      "pronunciation": "supati konengera ungwun",
+      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Five large cows",
+      "translation": "sabuki ngishu miet",
+      "pronunciation": "sabuki ngishu miet",
+      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Thank you very much",
+      "translation": "Nĩwega mũno",
+      "pronunciation": "nĩwega mũno",
+      "context": "Kîembu / Kĩmĩĩrũ",
+      "audioFile": null
+    },
+    "langName": "Meru (Kĩmĩĩrũ)",
+    "langId": "meru"
+  },
+  {
+    "entry": {
+      "english": "Nine",
+      "translation": "kenda",
+      "pronunciation": "kehn-dah",
+      "context": "Johnston 1919 p. 72 #11a Meru",
+      "audioFile": null
+    },
+    "langName": "Meru (Kĩmĩĩrũ)",
+    "langId": "meru"
+  },
+  {
+    "entry": {
+      "english": "Eight",
+      "translation": "inyanya",
+      "pronunciation": "ee-nyah-nyah",
+      "context": "Johnston 1919 p. 72 #11a Meru",
+      "audioFile": null
+    },
+    "langName": "Meru (Kĩmĩĩrũ)",
+    "langId": "meru"
+  },
+  {
+    "entry": {
+      "english": "Seven",
+      "translation": "mũgwanja",
+      "pronunciation": "moo-gwahn-jah",
+      "context": "Johnston 1919 p. 72 #11a Meru",
+      "audioFile": null
+    },
+    "langName": "Meru (Kĩmĩĩrũ)",
+    "langId": "meru"
+  },
+  {
+    "entry": {
+      "english": "Six",
+      "translation": "ithanthatu",
+      "pronunciation": "ee-thahn-thah-too",
+      "context": "Johnston 1919 p. 72 #11a Meru",
+      "audioFile": null
+    },
+    "langName": "Meru (Kĩmĩĩrũ)",
+    "langId": "meru"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "Dheri / Amani",
+      "pronunciation": "dheh-ree",
+      "context": "Krapf & Rebmann 1887 Nika Dictionary",
+      "audioFile": null
+    },
+    "langName": "Mijikenda (Giriama)",
+    "langId": "mijikenda"
+  },
+  {
+    "entry": {
+      "english": "Farewell",
+      "translation": "koḥeri",
+      "pronunciation": "koheri",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka adv.)",
+      "audioFile": null
+    },
+    "langName": "Mijikenda (Giriama)",
+    "langId": "mijikenda"
+  },
+  {
+    "entry": {
+      "english": "Greet",
+      "translation": "lamúsa",
+      "pronunciation": "lamusa",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)",
+      "audioFile": null
+    },
+    "langName": "Mijikenda (Giriama)",
+    "langId": "mijikenda"
+  },
+  {
+    "entry": {
+      "english": "Thank",
+      "translation": "pa mumvéra",
+      "pronunciation": "pa mumvera",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)",
+      "audioFile": null
+    },
+    "langName": "Mijikenda (Giriama)",
+    "langId": "mijikenda"
+  },
+  {
+    "entry": {
+      "english": "News",
+      "translation": "c̣ábari",
+      "pronunciation": "c abari",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
+      "audioFile": null
+    },
+    "langName": "Mijikenda (Giriama)",
+    "langId": "mijikenda"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Asante / Nashukuru",
+      "pronunciation": "a-san-te",
+      "context": "Kipfokomo",
+      "audioFile": null
+    },
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
+  },
+  {
+    "entry": {
+      "english": "Welcome",
+      "translation": "Karibu mudzini",
+      "pronunciation": "ka-ri-bu mu-dzi-ni",
+      "context": "Kipfokomo ('Welcome to the village')",
+      "audioFile": null
+    },
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
+  },
+  {
+    "entry": {
+      "english": "Yesterday",
+      "translation": "dzana",
+      "pronunciation": "dzah-nah",
+      "context": "Verified comparative entry across Kenyan bantu corpus",
+      "audioFile": null
+    },
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
+  },
+  {
+    "entry": {
+      "english": "Farewell",
+      "translation": "mungu kahúve nágĕa",
+      "pronunciation": "mungu kahuve nagea",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adv.)",
+      "audioFile": null
+    },
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
+  },
+  {
+    "entry": {
+      "english": "Greet",
+      "translation": "kedéria",
+      "pronunciation": "kederia",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
+      "audioFile": null
+    },
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
+  },
+  {
+    "entry": {
+      "english": "Very fierce",
+      "translation": "Korom nyaman",
+      "pronunciation": "ko-rom nya-man",
+      "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+      "audioFile": null
+    },
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "mīs",
+      "pronunciation": "mīs",
+      "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
+      "audioFile": null
+    },
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
+  },
+  {
+    "entry": {
+      "english": "One hundred",
+      "translation": "pokol",
+      "pronunciation": "po-kol",
+      "context": "Beech (1911, pp. 66–68) — Pökoot (Suk)",
+      "audioFile": null
+    },
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
+  },
+  {
+    "entry": {
+      "english": "I am the best of all.",
+      "translation": "Ocha karam ma-mi-nye.",
+      "pronunciation": "ocha karam ma-mi-nye.",
+      "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)",
+      "audioFile": null
+    },
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
+  },
+  {
+    "entry": {
+      "english": "They don't amount to ten.",
+      "translation": "Me-t-ei-nye taman.",
+      "pronunciation": "me-t-ei-nye taman.",
+      "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)",
+      "audioFile": null
+    },
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
+  },
+  {
+    "entry": {
+      "english": "Yes",
+      "translation": "Aa",
+      "pronunciation": "aa",
+      "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "Tomorrow",
+      "translation": "barri",
+      "pronunciation": "bahr-ree",
+      "context": "Verified comparative entry across Kenyan cushitic corpus",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "Yesterday",
+      "translation": "shale",
+      "pronunciation": "shah-leh",
+      "context": "Verified comparative entry across Kenyan cushitic corpus",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "Two",
+      "translation": "láma",
+      "pronunciation": "la-ma",
+      "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "Three",
+      "translation": "séyyah",
+      "pronunciation": "sey-yah",
+      "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Ashe / Ashe oleng",
+      "pronunciation": "ah-sheh oh-leng",
+      "context": "Samburu expression of gratitude",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Five",
+      "translation": "ímɟêt / ímʄêt",
+      "pronunciation": "im-jet",
+      "context": "Wikipedia Nilotic_languages — Samburu numerals",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Six",
+      "translation": "ílê",
+      "pronunciation": "i-le",
+      "context": "Wikipedia Nilotic_languages — Samburu numerals",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Seven",
+      "translation": "sápâ",
+      "pronunciation": "sa-pa",
+      "context": "Wikipedia Nilotic_languages — Samburu numerals",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Eight",
+      "translation": "ísɟêt / ísʄêt",
+      "pronunciation": "is-jet",
+      "context": "Wikipedia Nilotic_languages — Samburu numerals",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "Nabad",
+      "pronunciation": "nah-bahd",
+      "context": "Kirk 1905 & Larajasse 1897",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Carry, bring",
+      "translation": "sid",
+      "pronunciation": "sid",
+      "context": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [v.tr.]",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Thank God",
+      "translation": "Illàhhi maháddi",
+      "pronunciation": "illàhhi maháddi",
+      "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Give news of yourself",
+      "translation": "'ss ka wárran",
+      "pronunciation": "'ss ka wárran",
+      "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Give news of the place",
+      "translation": "mèsha ka wárran",
+      "pronunciation": "mèsha ka wárran",
+      "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Evening",
+      "translation": "jioni",
+      "pronunciation": "jioni",
+      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "audioFile": null
+    },
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
+  },
+  {
+    "entry": {
+      "english": "Friend",
+      "translation": "rafiki, pl. marafiki",
+      "pronunciation": "rafiki",
+      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "audioFile": null
+    },
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
+  },
+  {
+    "entry": {
+      "english": "Morning",
+      "translation": "subui, assubui",
+      "pronunciation": "subui, assubui",
+      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "audioFile": null
+    },
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "amani",
+      "pronunciation": "amani",
+      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "audioFile": null
+    },
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
+  },
+  {
+    "entry": {
+      "english": "Please",
+      "translation": "kupendeza",
+      "pronunciation": "kupendeza",
+      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "audioFile": null
+    },
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Chavuche / Asante",
+      "pronunciation": "chavuche",
+      "context": "Taita (Kidawida) expression of gratitude",
+      "audioFile": null
+    },
+    "langName": "Taita (Kidawida)",
+    "langId": "taita"
+  },
+  {
+    "entry": {
+      "english": "Yes",
+      "translation": "Ee / Haya",
+      "pronunciation": "ee / haya",
+      "context": "Wray (1894) — Taita",
+      "audioFile": null
+    },
+    "langName": "Taita (Kidawida)",
+    "langId": "taita"
+  },
+  {
+    "entry": {
+      "english": "No",
+      "translation": "Ndu / A'a",
+      "pronunciation": "ndu",
+      "context": "Wray (1894) — Taita",
+      "audioFile": null
+    },
+    "langName": "Taita (Kidawida)",
+    "langId": "taita"
+  },
+  {
+    "entry": {
+      "english": "News",
+      "translation": "uvoro, ilago",
+      "pronunciation": "uvoro, ilago",
+      "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+      "audioFile": null
+    },
+    "langName": "Taita (Kidawida)",
+    "langId": "taita"
+  },
+  {
+    "entry": {
+      "english": "Pardon",
+      "translation": "ku-sigo",
+      "pronunciation": "ku-sigo",
+      "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+      "audioFile": null
+    },
+    "langName": "Taita (Kidawida)",
+    "langId": "taita"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Ni wega / Chavuche",
+      "pronunciation": "nee weh-gah / chah-voo-cheh",
+      "context": "Kitaveta gratitude",
+      "audioFile": null
+    },
+    "langName": "Taveta (Kitaveta)",
+    "langId": "taveta"
+  },
+  {
+    "entry": {
+      "english": "Hello",
+      "translation": "Jahako",
+      "pronunciation": "ja-ha-ko",
+      "context": "Wikipedia Taveta_language — Taveta greetings",
+      "audioFile": null
+    },
+    "langName": "Taveta (Kitaveta)",
+    "langId": "taveta"
+  },
+  {
+    "entry": {
+      "english": "Yesterday",
+      "translation": "igolo",
+      "pronunciation": "ee-goh-loh",
+      "context": "Verified comparative entry across Kenyan bantu corpus",
+      "audioFile": null
+    },
+    "langName": "Taveta (Kitaveta)",
+    "langId": "taveta"
+  },
+  {
+    "entry": {
+      "english": "Three",
+      "translation": "itatu",
+      "pronunciation": "i-ta-tu",
+      "context": "Johnston (1919) — Kitaveta numerals",
+      "audioFile": null
+    },
+    "langName": "Taveta (Kitaveta)",
+    "langId": "taveta"
+  },
+  {
+    "entry": {
+      "english": "Four",
+      "translation": "ina",
+      "pronunciation": "i-na",
+      "context": "Johnston (1919) — Kitaveta numerals",
+      "audioFile": null
+    },
+    "langName": "Taveta (Kitaveta)",
+    "langId": "taveta"
+  },
+  {
+    "entry": {
+      "english": "Hello",
+      "translation": "Yoga",
+      "pronunciation": "Yoga",
+      "context": "Wikipedia Teso language — Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
+  },
+  {
+    "entry": {
+      "english": "My name is",
+      "translation": "Eka'kiror",
+      "pronunciation": "Eka'kiror...",
+      "context": "Wikipedia Teso language — Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
+  },
+  {
+    "entry": {
+      "english": "See you again",
+      "translation": "Awanyunos bobo",
+      "pronunciation": "Awanyunos bobo",
+      "context": "Wikipedia Teso language — Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "ekinok",
+      "pronunciation": "ekinok",
+      "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+      "audioFile": null
+    },
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
+  },
+  {
+    "entry": {
+      "english": "Thank you very much",
+      "translation": "Eyalama noi",
+      "pronunciation": "e-ya-la-ma noi",
+      "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+      "audioFile": null
+    },
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
+  },
+  {
+    "entry": {
+      "english": "Health to your cattle",
+      "translation": "Mata ng'atuk",
+      "pronunciation": "mah-tah ngah-took",
+      "context": "Pastoral greeting inquiring after cattle herds. Response: 'Mata ouwi' (health to your village). (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Health to your village",
+      "translation": "Mata ouwi",
+      "pronunciation": "mah-tah oh-wee",
+      "context": "Pastoral blessing wishing wellbeing upon the homestead and kraal. (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Health to your children",
+      "translation": "Mata ng'idwi",
+      "pronunciation": "mah-tah ngee-dwee",
+      "context": "Pastoral blessing for family and children. Response: 'Mata ariama'. (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Health to our meetings",
+      "translation": "Mata ariama",
+      "pronunciation": "mah-tah ah-ree-ah-mah",
+      "context": "Greeting reply wishing health and prosperity to repeated gatherings and fellowship. (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Health to your property",
+      "translation": "Mata ng'ebarin",
+      "pronunciation": "mah-tah ngeh-bah-reen",
+      "context": "Greeting inquiring after livestock wealth and possessions. Response: 'Mata ng'abero'. (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Peace / Well-being",
+      "translation": "nagaa / nagaay",
+      "pronunciation": "nah-gaa / nah-gaay",
+      "context": "Daasanach greeting of peace shared across the Omo–Turkana pastoral frontier (Tosco 2001 / Nishiguchi 2004)",
+      "audioFile": null
+    },
+    "langName": "Daasanach (Dhaasanac)",
+    "langId": "daasanach"
+  },
+  {
+    "entry": {
+      "english": "Is it peace? / Are you well?",
+      "translation": "Ma nagaa?",
+      "pronunciation": "mah nah-gaa",
+      "context": "Standard Daasanach greeting in Ileret and North Horr, Marsabit County (Tosco 2001)",
+      "audioFile": null
+    },
+    "langName": "Daasanach (Dhaasanac)",
+    "langId": "daasanach"
+  },
+  {
+    "entry": {
+      "english": "It is peace / I am well",
+      "translation": "Nagaa",
+      "pronunciation": "nah-gaa",
+      "context": "Standard response to 'Ma nagaa?' (Tosco 2001)",
+      "audioFile": null
+    },
+    "langName": "Daasanach (Dhaasanac)",
+    "langId": "daasanach"
+  },
+  {
+    "entry": {
+      "english": "Yes (affirmative)",
+      "translation": "ee / ii",
+      "pronunciation": "ee / ii",
+      "context": "Daasanach affirmative particle (Tosco 2001 / Blažek 2011)",
+      "audioFile": null
+    },
+    "langName": "Daasanach (Dhaasanac)",
+    "langId": "daasanach"
+  },
+  {
+    "entry": {
+      "english": "No / Not (negative particle)",
+      "translation": "ma / m'ning",
+      "pronunciation": "mah / m-ning",
+      "context": "Daasanach negative particle (Tosco 2001 / Blažek 2011)",
+      "audioFile": null
+    },
+    "langName": "Daasanach (Dhaasanac)",
+    "langId": "daasanach"
+  }
+];
