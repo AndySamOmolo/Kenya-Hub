@@ -5473,12 +5473,11 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-401",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Mzungu Migeli, u muongo!",
+    "indigenous": "Mzungu Migeli, u muongo! Mato yako yana t'ongo! Kwani kuata mpango, kwenda kibanga uani?",
     "literalTranslation": "Miguel the European, thou art in the wrong! Thine eyes are blind on one side! Why leave the troop to go to a hut in a courtyard?",
     "meaning": "These ancient Mombasa lines date from the evacuation of Fort Jesus by the Portuguese, mocking a short-sighted defector who leaves the ranks of his comrades for a small courtyard shelter.",
     "theme": "wisdom",
-    "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #401",
-    "proverb": "Mzungu Migeli, u muongo! Mato yako yana t'ongo! Kwani kuata mpango, kwenda kibanga uani?"
+    "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #401"
   },
   {
     "id": "taylor-1891-swahili-402",
@@ -10845,10 +10844,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "source": "Girl"
           },
           {
-            "target": "kijana, pl. vijana",
-            "source": "boy",
-            "pronunciation": "ki-ja-na",
-            "hint": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili"
+            "target": "Hujambo / Jambo (pl. Hamjambo)",
+            "source": "Hello"
           },
           {
             "target": "hirim",
@@ -12832,14 +12829,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "sa-li-mia"
           },
           {
-            "target": "shukuru",
-            "source": "Thanks",
-            "pronunciation": "shu-ku-ru"
+            "target": "samehe, achilia",
+            "source": "Pardon"
           },
           {
-            "target": "samehe, achilia",
-            "source": "Pardon",
-            "pronunciation": "sa-me-he ach-i-lia"
+            "target": "Kwaheri (pl. Kwaherini)",
+            "source": "Goodbye"
           }
         ],
         "sentences": [
@@ -17745,9 +17740,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "kongoi a-sai"
           },
           {
-            "target": "Kongoi (Kongoi mising)",
-            "source": "Thank you (Thank you very much)",
-            "pronunciation": "kongoi"
+            "target": "Kalyet",
+            "source": "Peace"
           },
           {
             "target": "pirir (ne-pirir)",
@@ -23277,9 +23271,8 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "mwaki"
           },
           {
-            "target": "riũa",
-            "source": "Sun, day",
-            "pronunciation": "riua"
+            "target": "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
+            "source": "Hello"
           },
           {
             "target": "mweri (pl. mĩeri)",
@@ -34178,9 +34171,8 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Recorded verbatim by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, p. 115 under \"Salutation / kurogoa\"): traditional Taita dialogic greeting affirming mutual health and community peace before any business is discussed."
           },
           {
-            "target": "Kazi mbili zam'lema fisi.",
-            "source": "Two occupations were too many for the hyena (lit. were heavy on the hyena).",
-            "hint": "Cp. Nyika and other proverbs, § 647b, etc."
+            "target": "sere",
+            "source": "Peace"
           },
           {
             "target": "kulele, sa ndigi",
@@ -37086,9 +37078,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "pronunciation": "i-golo"
           },
           {
-            "target": "kucha",
-            "source": "Dawn / Daybreak",
-            "pronunciation": "koo-chah"
+            "target": "Jahako",
+            "source": "Hello"
           },
           {
             "target": "I-dīma",

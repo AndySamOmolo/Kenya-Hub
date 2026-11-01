@@ -296,7 +296,7 @@ export function generateExercises(
     .map((s) => ({
       target: s.target,
       source: s.source,
-      pronunciation: s.pronunciation,
+      ...(s.pronunciation ? { pronunciation: s.pronunciation } : {}),
     }));
   const allItems = [...allWords, ...sentenceItems];
 

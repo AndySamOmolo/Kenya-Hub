@@ -69,8 +69,9 @@ export interface WordPair {
 }
 
 export interface SentencePair {
-  target: string;  // Sentence in the target language
-  source: string;  // English translation
+  target: string;         // Sentence in the target language
+  source: string;         // English translation
+  pronunciation?: string; // Optional phonetic guide
   audio?: string;
 }
 
